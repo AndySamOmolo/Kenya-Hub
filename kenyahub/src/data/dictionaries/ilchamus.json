@@ -8,9 +8,9 @@
   "counties": [
     "Baringo"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-17",
   "contributorNote": "Ilchamus (Njemps / Njamus / Nyarusi / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55 — audited 100% line-by-line across all 3 settlements, 16 clans from 6 tribes, irrigation ditch & crop-medicine ceremonies, and 12-month Lare/Ngolong calendar), Mervyn W. H. Beech (1911), and Bernd Heine (1980). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0)).",
   "categories": [
     {
@@ -41,6 +41,26 @@
           "translation": "Sopa / Supa",
           "pronunciation": "soh-pah",
           "context": "Ilchamus (Camus / North Maa) greeting • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Hello / Peace (Men's greeting)",
+          "translation": "Supa",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Hello / Peace (Women's greeting)",
+          "translation": "Takwenya",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Ashe oleng",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Welcome",
+          "translation": "Karibu ang'",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
         }
       ]
     },
@@ -988,6 +1008,101 @@
           "translation": "lparingo / nkare",
           "pronunciation": "lparingo",
           "context": "African Next Voices Maa-Samburu-Chamus Transcript Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "March (When the bulls have to be tied up.)",
+          "translation": "Oäni-oingok",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "April (Much rain.)",
+          "translation": "Borgola",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "May (Pleiades disappear.)",
+          "translation": "Loo-'n Gokwa",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "July (Great rains.)",
+          "translation": "Lakodakol",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "September (Little rains.)",
+          "translation": "Lolrochorot",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Section. (Totem.)",
+          "translation": "Clan",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Beya ( — Kogai (the crow).)",
+          "translation": "Tallai",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Kaksegai ( — —)",
+          "translation": "Oreon",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Katut ( — Seran (the dikdik; a small antelope).)",
+          "translation": "Sirichon",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Kabioso ( — Kogai (the crow).)",
+          "translation": "Kamugo",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Bogorror ( — Kogai (the crow).)",
+          "translation": "Tallai",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Sibo ( — The elephant.)",
+          "translation": "Saban",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Kapsagat ( — The crow and jackal.)",
+          "translation": "Tallai or Tulin",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Kagsegom ( — Sirere (the kite).)",
+          "translation": "Kapsegom",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Kapsekerr ( — Kogai (the crow).)",
+          "translation": "Tallai",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Kamarein ( — Kogai (the crow).)",
+          "translation": "Tallai",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Kauwau ( — Sirere (the kite).)",
+          "translation": "Kapsegom",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Mareich ( — Crow and frog.)",
+          "translation": "Tallai and Legen",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Kabell ( — The buffalo.)",
+          "translation": "Chepbogamwoi",
+          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
         }
       ]
     },
@@ -1116,6 +1231,46 @@
           "translation": "nkang'",
           "pronunciation": "nkang",
           "context": "African Next Voices Maa-Samburu-Chamus Transcript Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Homestead / Boma",
+          "translation": "Ang' / Nkang'",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "House / Hut",
+          "translation": "Nkaji",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Sleeping hide / Bed",
+          "translation": "Erruat",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Milk calabash / Gourd",
+          "translation": "Nkokorri / Mala",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "Emoti",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Stool (elder's)",
+          "translation": "Orika",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Spear",
+          "translation": "Remet",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Herders' staff",
+          "translation": "Sobua",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
         }
       ]
     },
@@ -1249,6 +1404,353 @@
           "translation": "a-duŋ-ó / a-duŋ-á (Chamus North Maa middle)",
           "pronunciation": "a-duŋ-ó",
           "context": "Shared Maa middle voice morphology across Chamus, Samburu, and Maasai (Payne 2026) • Source: Doris L. Payne 2026 (Pamoja tena, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
+        },
+        {
+          "english": "To drink",
+          "translation": "Amat",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To eat",
+          "translation": "Anya / Ainos",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To see",
+          "translation": "Adol",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To hear",
+          "translation": "Aning'",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To go / Walk",
+          "translation": "Alo",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To come",
+          "translation": "Alotu",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To fish (in Lake Baringo)",
+          "translation": "Ares nsingirri",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To cut (transitive active)",
+          "translation": "a-dúŋ",
+          "pronunciation": "a-dung",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be in a cut state, demarcated, separated; cease flow (middle)",
+          "translation": "a-duŋ-ó",
+          "pronunciation": "a-dung-o",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To cut each other; be divided into portions (plural/antipassive middle)",
+          "translation": "áa-duŋ-o",
+          "pronunciation": "aa-dung-o",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To let out tiny amounts of liquid, sweat",
+          "translation": "a-ɪnyɪnyɪrʊ́",
+          "pronunciation": "a-inyinyiru",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be let out in tiny amounts (ventive middle)",
+          "translation": "a-ɪnyɪnyɪrʊnyɛ́",
+          "pronunciation": "a-inyinyirunye",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To enter a place",
+          "translation": "a-jɪ́ŋ",
+          "pronunciation": "a-jing",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be entered; be possessed by a spirit (middle)",
+          "translation": "a-jɪŋ-á",
+          "pronunciation": "a-jing-a",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To catch, arrest, touch",
+          "translation": "a-ɪbʊ́ŋ",
+          "pronunciation": "a-ibung",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To coagulate, be coagulated (middle)",
+          "translation": "a-ɪbʊŋ-á",
+          "pronunciation": "a-ibung-a",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be drunk, intoxicated (media tantum)",
+          "translation": "a-mɛrá",
+          "pronunciation": "a-mera",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make drunk, intoxicate (Class 1 causative)",
+          "translation": "a-ɪtɛ-mɛ́r",
+          "pronunciation": "a-ite-mer",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be pregnant, gravid (media tantum)",
+          "translation": "a-nʊtá",
+          "pronunciation": "a-nuta",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To impregnate (Class 1 causative)",
+          "translation": "a-ɪtʊ-nʊ́t",
+          "pronunciation": "a-itu-nut",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To fall down (media tantum)",
+          "translation": "a-rriá",
+          "pronunciation": "a-rria",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To ferment (media tantum)",
+          "translation": "a-isiijó",
+          "pronunciation": "a-isiijo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be conspicuous, unambiguous, likely to happen",
+          "translation": "a-ɪbalá",
+          "pronunciation": "a-ibala",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be piled up, crammed",
+          "translation": "a-ineníá",
+          "pronunciation": "a-inenia",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be visible, apparent",
+          "translation": "a-lioó",
+          "pronunciation": "a-lioo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be underfed (of cattle)",
+          "translation": "a-lubó",
+          "pronunciation": "a-lubo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To match, be advisable (dative middle)",
+          "translation": "a-narikinó",
+          "pronunciation": "a-narikino",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To quake, tremble (of the earth)",
+          "translation": "a-ɪkɪrɪkɪrá",
+          "pronunciation": "a-ikirikira",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be sickly, chronically unwell",
+          "translation": "a-sɛshá",
+          "pronunciation": "a-sesha",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To squat, sit down",
+          "translation": "a-ɪgʊtʊmá",
+          "pronunciation": "a-igutuma",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To vomit",
+          "translation": "a-gʊrrʊmá",
+          "pronunciation": "a-gurruma",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be inattentive; play joyfully",
+          "translation": "a-dalá",
+          "pronunciation": "a-dala",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be proud",
+          "translation": "a-ɪmasó",
+          "pronunciation": "a-imaso",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be happy, haughty, naughty",
+          "translation": "a-ŋɪdá",
+          "pronunciation": "a-ngida",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To obscure, hide behind something",
+          "translation": "a-ɪgará",
+          "pronunciation": "a-igara",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To hide with or behind (instrument applicative)",
+          "translation": "a-ɪgar-íé",
+          "pronunciation": "a-igar-ie",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be holy, perfect, spotless",
+          "translation": "a-sɪnyá",
+          "pronunciation": "a-sinya",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make holy, cleanse (causative)",
+          "translation": "a-ɪtɪ-sɪ́ny",
+          "pronunciation": "a-iti-siny",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Holy, blameless (singular / plural adjective)",
+          "translation": "sinyáti (pl. sinyát)",
+          "pronunciation": "sinyati",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be hot (stative)",
+          "translation": "a-ɪrowúá",
+          "pronunciation": "a-irowua",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To heat with, make hot (instrumental)",
+          "translation": "a-irowuaj-íé",
+          "pronunciation": "a-irowuaj-ie",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To become hot (inchoative)",
+          "translation": "a-irowuaj-ú",
+          "pronunciation": "a-irowuaj-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be long, tall, linearly extended",
+          "translation": "a-adɔ́",
+          "pronunciation": "a-ado",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Will become tall (inchoative)",
+          "translation": "ɛ-adór-ū",
+          "pronunciation": "e-ador-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be tender, soft, gentle",
+          "translation": "a-naná",
+          "pronunciation": "a-nana",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make soft, soften",
+          "translation": "a-ɪta-naná",
+          "pronunciation": "a-ita-nana",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To become soft",
+          "translation": "a-naná-ú",
+          "pronunciation": "a-nana-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To bathe oneself (grooming middle)",
+          "translation": "a-itukúó",
+          "pronunciation": "a-itukuo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To wash oneself / wash hands (grooming middle)",
+          "translation": "a-ɪsʊjá",
+          "pronunciation": "a-isuja",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To adorn oneself (grooming middle)",
+          "translation": "a-ɪsɪkarrá",
+          "pronunciation": "a-isikarra",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To dress oneself (grooming middle)",
+          "translation": "a-ishopó",
+          "pronunciation": "a-ishopo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To scratch oneself (grooming middle)",
+          "translation": "a-girró",
+          "pronunciation": "a-girro",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To emotionally cling to; elope (media tantum stem)",
+          "translation": "-raya",
+          "pronunciation": "raya",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be proud of, boast of (media tantum stem)",
+          "translation": "-ŋɪdarɛ",
+          "pronunciation": "ngidare",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be a troublemaker, loiter (media tantum stem)",
+          "translation": "-peepeeno",
+          "pronunciation": "peepeeno",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To overreact angrily, snap (media tantum stem)",
+          "translation": "-wuapa",
+          "pronunciation": "wuapa",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To sing about exploits (media tantum stem)",
+          "translation": "-oko",
+          "pronunciation": "oko",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To do slowly; be naturally quiet, silent",
+          "translation": "-gɪra",
+          "pronunciation": "gira",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be lonely (media tantum stem)",
+          "translation": "-liyio",
+          "pronunciation": "liyio",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
         }
       ]
     },
@@ -1569,6 +2071,31 @@
           "translation": "kaji?",
           "pronunciation": "kah-jee",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Path / Road",
+          "translation": "Nkoitoi",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Lake Baringo",
+          "translation": "Lparingo / Nkare Baringo",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Island (Ol Kokwe)",
+          "translation": "Lkokwe",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "River (Perkerra / Molo)",
+          "translation": "Lkeju",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Pastoral camp",
+          "translation": "Lale",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
         }
       ]
     },
@@ -1576,13 +2103,75 @@
       "id": "shopping",
       "name": "Shopping, Market & Money",
       "icon": "🛒",
-      "entries": []
+      "entries": [
+        {
+          "english": "Market / Trading center",
+          "translation": "Sokoni",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Money / Shillings",
+          "translation": "Ropiyiani / Silingi",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To buy / Barter",
+          "translation": "Ainyang'",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To sell",
+          "translation": "Amir",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Cattle wealth",
+          "translation": "Nkishu",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "To count",
+          "translation": "Aiken",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        }
+      ]
     },
     {
       "id": "emergency",
       "name": "Emergency, Safety & Civic",
       "icon": "🚨",
-      "entries": []
+      "entries": [
+        {
+          "english": "Danger / Flood alert",
+          "translation": "Batisho / Nkare sapuk",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Medicine / Healing tree",
+          "translation": "Lchani",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Sickness / Fever",
+          "translation": "Moyian",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Peace / Calm",
+          "translation": "Serian",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Help us!",
+          "translation": "Retoki iyiook!",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Hospital / Clinic",
+          "translation": "Sipitali",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        }
+      ]
     },
     {
       "id": "time",
@@ -1709,7 +2298,103 @@
       "id": "phrases",
       "name": "Everyday Phrases & Sentences",
       "icon": "💬",
-      "entries": []
+      "entries": [
+        {
+          "english": "Everything is at peace",
+          "translation": "Eserian pooki",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "I am going to Lake Baringo",
+          "translation": "Kalo Lparingo",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "May God bless our homestead",
+          "translation": "Metamayiana Nkai ang' ang'",
+          "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "Progressive verbal suffix (-ɪta / -ito)",
+          "translation": "-ɪta / -ito",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Antipassive verbal suffix (-ɪshɔ(r) / -isho(r))",
+          "translation": "-ɪshɔ(r) / -isho(r)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Ventive directional suffix 'motion towards' (-ʊ(n) / -u(n))",
+          "translation": "-ʊ(n) / -u(n)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Dative applicative suffix (-akɪ(n) / -oki(n))",
+          "translation": "-akɪ(n) / -oki(n)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Singular non-perfective middle suffix (-a(r) / -o(r) / -ɔ(r))",
+          "translation": "-a(r) / -o(r) / -ɔ(r)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Plural non-perfective middle suffix (-ata / -oto / -ɔtɔ)",
+          "translation": "-ata / -oto / -ɔtɔ",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Singular & plural perfective middle suffixes (-ɛ/-e, pl. -atɛ/-ote)",
+          "translation": "-ɛ / -e (pl. -atɛ / -ote)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Middle + inchoative suffix 'able to become' (-ayu / -oyu)",
+          "translation": "-ayu / -oyu",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "That man has a hard heart (unfeeling)",
+          "translation": "k-ɛ́-ɛ́ta ɔltáʊ́ ogól ɛlɛ́ tʊ́ŋání",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "What will you cut it with?",
+          "translation": "káa i-duŋ-íé?",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "A warrior does not get healed by his own medicines",
+          "translation": "m-ɛ́-ba-yú ɔlmʊ́rráni te nkeék enyénak",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "That house has been entered / is possessed",
+          "translation": "ɛ-jɪŋ-á ɛná áji",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The blood coagulated / clotted",
+          "translation": "ɛ-ɪbʊŋ-á ɔsárgɛ",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The ox was divided into portions yesterday",
+          "translation": "ɛ-duŋ-ó ɔlkɪtɛ́ŋ ŋolé",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The ceremonies have ended / ceased",
+          "translation": "ɛ-duŋ-óté intaléŋo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Conflict / chaos (noun)",
+          "translation": "ɛnk=arruoísho",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        }
+      ]
     },
     {
       "id": "culture-history",
@@ -2145,8 +2830,8 @@
       ]
     }
   ],
-  "source": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
+  "source": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)",
   "isoCode": "saq-ilc",
   "glottocode": "chAM1234",
-  "totalEntries": 337
+  "totalEntries": 463
 }

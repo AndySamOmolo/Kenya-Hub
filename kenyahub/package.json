@@ -12,7 +12,9 @@
     "audit:tools": "node scripts/audit-tools.mjs",
     "audit:tools:sources": "node scripts/audit-tools.mjs --check-sources",
     "audit:tools:strict": "node scripts/audit-tools.mjs --strict",
-    "deploy": "npm run build && npx wrangler pages deploy out --project-name kenyahub"
+    "deploy": "npm run build && npx wrangler pages deploy out --project-name kenyahub",
+    "ingest:datasets": "node scripts/ingest-external-datasets.mjs",
+    "sync:r2-audio": "node scripts/sync-cloudflare-r2-audio.mjs"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",

@@ -17,6 +17,7 @@ import {
   Shield,
 } from "lucide-react";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
+import { playLanguageAudio } from "@/lib/language-audio";
 import SkillTree from "@/components/learn/SkillTree";
 import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
@@ -942,9 +943,24 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                         className="rounded-xl bg-bg-elevated/60 border border-border/60 p-3.5 flex flex-col justify-between gap-1"
                       >
                         <div className="flex items-start justify-between gap-2">
-                          <span className="text-sm font-bold text-gold break-words min-w-0 flex-1">
-                            {w.target}
-                          </span>
+                          <div className="flex items-center gap-1.5 min-w-0 flex-1">
+                            <span className="text-sm font-bold text-gold break-words">
+                              {w.target}
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() =>
+                                playLanguageAudio(
+                                  { english: w.source, translation: w.target, pronunciation: w.pronunciation },
+                                  course.config.id
+                                )
+                              }
+                              className="inline-flex items-center justify-center rounded-md px-1.5 py-0.5 text-[0.65rem] text-sky hover:bg-sky/10 transition-colors shrink-0 cursor-pointer"
+                              title={`Listen to ${course.config.name} pronunciation`}
+                            >
+                              🔊
+                            </button>
+                          </div>
                           <span className="text-xs sm:text-sm font-medium text-text-primary text-right break-words max-w-[55%]">
                             {w.source}
                           </span>

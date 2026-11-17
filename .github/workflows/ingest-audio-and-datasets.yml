@@ -1,0 +1,134 @@
+name: Ingest Open-Access Audio & Text Datasets to Cloudflare R2 (One-Time)
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_reingest:
+        description: "Re-run ingestion even if .audio-ingested-lock.json already exists"
+        required: false
+        default: "false"
+        type: string
+      max_clips_per_dataset:
+        description: "Maximum audio clips to transcode & upload per dataset split (fits within 10GB R2 Free Tier)"
+        required: false
+        default: "2500"
+        type: string
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/ingest-audio-and-datasets.yml"
+      - "kenyahub/scripts/ci-ingest-audio-and-text-r2.py"
+
+concurrency:
+  group: ingest-r2-audio-once
+  cancel-in-progress: false
+
+jobs:
+  ingest-once:
+    name: Stream Open-Access Audio & Text Datasets -> Cloudflare R2 & Repo
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check One-Time Lockfile (Skip if already ingested unless forced)
+        id: lock_check
+        run: |
+          if [ -f "kenyahub/public/.audio-ingested-lock.json" ] && [ "${{ inputs.force_reingest }}" != "true" ]; then
+            echo "One-time audio & dataset ingestion has already completed (kenyahub/public/.audio-ingested-lock.json exists). Skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Verify Cloudflare Secrets Are Configured
+        id: secrets_check
+        if: steps.lock_check.outputs.skip != 'true'
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          R2_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          if [ -z "$CF_ACCOUNT_ID" ] && [ -z "$R2_KEY_ID" ]; then
+            echo "::warning::Cloudflare R2 secrets (CLOUDFLARE_ACCOUNT_ID + R2_ACCESS_KEY_ID/R2_SECRET_ACCESS_KEY or CLOUDFLARE_API_TOKEN) are not set yet. Skipping until secrets are added."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Node.js 20
+        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: kenyahub/package-lock.json
+
+      - name: Setup Python 3.11
+        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install FFmpeg & Python Audio/Dataset Dependencies
+        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libsndfile1
+          pip install --upgrade pip
+          pip install "datasets>=2.19.0,<4.0.0" soundfile librosa boto3 requests pyarrow huggingface_hub
+
+      - name: Install Web Dependencies
+        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        working-directory: kenyahub
+        run: npm ci --prefer-offline --no-audit --no-fund
+
+      - name: Run Commercially Permissive Text & IPA Dataset Streamer
+        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        working-directory: kenyahub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: node scripts/ingest-external-datasets.mjs
+
+      - name: Stream Open-Access Audio Datasets, Transcode to 24kbps Opus & Upload to Cloudflare R2
+        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        working-directory: kenyahub
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME || 'kenyahub-audio' }}
+          NEXT_PUBLIC_AUDIO_CDN_URL: ${{ secrets.NEXT_PUBLIC_AUDIO_CDN_URL }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '2500' }}
+        run: python3 scripts/ci-ingest-audio-and-text-r2.py
+
+      - name: Sync Mobile Data & Run Strict Tool/Course Audit
+        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        working-directory: kenyahub
+        run: |
+          node ../mobile/scripts/sync-data.mjs
+          npm run audit:tools:strict
+
+      - name: Commit Ingested Dictionaries, Audio Manifest & One-Time Lockfile
+        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kenyahub/src/data/dictionaries kenyahub/public/audio-manifest.json kenyahub/public/.audio-ingested-lock.json mobile/src/shared
+          if ! git diff --staged --quiet; then
+            git commit -m "feat(audio): one-time ingest of open-access audio & text datasets to Cloudflare R2"
+            git pull --rebase origin ${GITHUB_REF_NAME} || true
+            git push origin HEAD:${GITHUB_REF_NAME}
+          else
+            echo "No dictionary or manifest changes to commit."
+          fi

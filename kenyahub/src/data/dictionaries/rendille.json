@@ -8,9 +8,9 @@
   "counties": [
     "Marsabit"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-17",
   "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 51, 66), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0).",
   "categories": [
     {
@@ -56,7 +56,7 @@
         },
         {
           "english": "No / Not",
-          "translation": "Male / Ma-",
+          "translation": "Male / Ma",
           "pronunciation": "ma-le",
           "context": "Bernd Heine (1976) — Notes on the Rendille Language • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
@@ -156,6 +156,21 @@
           "translation": "lama",
           "pronunciation": "lama",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+        },
+        {
+          "english": "One",
+          "translation": "kou",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Two",
+          "translation": "lama",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Stone",
+          "translation": "dagah",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     },
@@ -277,6 +292,11 @@
           "translation": "lábo",
           "pronunciation": "lábo",
           "context": "CLDF ASJP v20 RENDILLE & Blažek (2011) East Cushitic Comparative Lexicon (CC-BY-4.0)"
+        },
+        {
+          "english": "Person",
+          "translation": "inyenyet",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     },
@@ -452,6 +472,46 @@
           "translation": "kursánte",
           "pronunciation": "kursánte",
           "context": "CLDF ASJP v20 RENDILLE & Blažek (2011) East Cushitic Comparative Lexicon (CC-BY-4.0)"
+        },
+        {
+          "english": "Skin",
+          "translation": "mahel",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Blood",
+          "translation": "dig",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Ear",
+          "translation": "dogo",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Nose",
+          "translation": "san",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Tongue",
+          "translation": "harap",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Knee",
+          "translation": "jilip",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Hand",
+          "translation": "faro",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Liver",
+          "translation": "halesi",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     },
@@ -609,6 +669,16 @@
           "translation": "lax",
           "pronunciation": "lax",
           "context": "CLDF ASJP v20 RENDILLE & SIL Bloom Rendille (CC-BY-4.0)"
+        },
+        {
+          "english": "Fish",
+          "translation": "bahag",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Louse",
+          "translation": "injir",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     },
@@ -784,6 +854,26 @@
           "translation": "bakál",
           "pronunciation": "bakál",
           "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+        },
+        {
+          "english": "Leaf",
+          "translation": "hadah",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Sun",
+          "translation": "ora",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Fire",
+          "translation": "dap",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Mountain",
+          "translation": "kur",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     },
@@ -869,6 +959,16 @@
           "translation": "gaal-kí / caanó",
           "pronunciation": "gaal-kí",
           "context": "Afi Rendille pastoral lexicon and Cushitic tone typology • Source: SIL International Bloom Library Rendille Collection (https://bloomlibrary.org, CC-BY-4.0) & Grambank v1.0.3 (https://grambank.clld.org, CC-BY-4.0)"
+        },
+        {
+          "english": "To drink",
+          "translation": "dam",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Water",
+          "translation": "biche",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     },
@@ -1141,6 +1241,11 @@
           "translation": "bolkha",
           "pronunciation": "bolkha",
           "context": "CLDF ASJP v20 RENDILLE & Blažek (2011) East Cushitic Comparative Lexicon (CC-BY-4.0)"
+        },
+        {
+          "english": "To see",
+          "translation": "ger",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     },
@@ -1391,6 +1496,11 @@
           "translation": "bolkha",
           "pronunciation": "bolkha",
           "context": "East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979, Rendille cognate)"
+        },
+        {
+          "english": "To die",
+          "translation": "yumut",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     },
@@ -1730,6 +1840,41 @@
           "translation": "magaca",
           "pronunciation": "magaca",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+        },
+        {
+          "english": "I (1sg pronoun)",
+          "translation": "ani",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "You (2sg pronoun)",
+          "translation": "ati",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "We (1pl pronoun)",
+          "translation": "ino",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "New",
+          "translation": "hosup",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "Name",
+          "translation": "magah",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "I (1sg)",
+          "translation": "an",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "We (1pl)",
+          "translation": "in",
+          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
     }
@@ -1737,5 +1882,5 @@
   "source": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
   "isoCode": "rel",
   "glottocode": "rend1243",
-  "totalEntries": 268
+  "totalEntries": 297
 }

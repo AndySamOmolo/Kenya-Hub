@@ -8,9 +8,9 @@
   "counties": [
     "Tana River"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-17",
   "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0).",
   "categories": [
     {
@@ -390,6 +390,91 @@
           "translation": "mbíi",
           "pronunciation": "mbíi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Conceal [Conecal]",
+          "translation": "fiza",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Frighten",
+          "translation": "angassa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Frighten",
+          "translation": "hissa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Bone",
+          "translation": "M-fupa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bone",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Stone",
+          "translation": "ma-wē",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hundred",
+          "translation": "Gāna",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hundred",
+          "translation": "ma-gāna",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thousand",
+          "translation": "Kī-kwī",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thousand",
+          "translation": "vi-kwī",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "One",
+          "translation": "moja",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Two",
+          "translation": "bili",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Bone",
+          "translation": "fuua",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "One (Lower Pokomo)",
+          "translation": "moca",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Two (Lower Pokomo)",
+          "translation": "wi",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Bone (Lower Pokomo)",
+          "translation": "fufa",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Stone (Lower Pokomo)",
+          "translation": "gaga",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
         }
       ]
     },
@@ -478,7 +563,7 @@
         },
         {
           "english": "Chief",
-          "translation": "Hacu, Haju; wa-",
+          "translation": "Hacu, Haju; wa",
           "pronunciation": "ha-cu ha-ju wa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -646,7 +731,7 @@
         },
         {
           "english": "White man",
-          "translation": "Mū-zūnggū; wa-",
+          "translation": "Mū-zūnggū; wa",
           "pronunciation": "mu-zunggu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -715,6 +800,196 @@
           "translation": "yáfia mimba",
           "pronunciation": "yáfia mimba",
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Young son",
+          "translation": "mána kadúdu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Young son",
+          "translation": "múráni",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Breast (man's)",
+          "translation": "Bagwi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Breast (man's)",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Breast (woman's)",
+          "translation": "Wē",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Breast (woman's)",
+          "translation": "ma-wē",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Brother",
+          "translation": "wa +",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Chief",
+          "translation": "Hacu, Haju",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Chief",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Child",
+          "translation": "Mwana",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Child",
+          "translation": "wana",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Doctor (medicine man)",
+          "translation": "Mu-gaṅga",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Doctor (medicine man)",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Father",
+          "translation": "I-se",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Girl",
+          "translation": "Mu-hīki",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Girl",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Grandparent",
+          "translation": "Bāba ♂",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Grandparent",
+          "translation": "Māma ♀",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Husband",
+          "translation": "Mu-yūme",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Husband",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Man",
+          "translation": "Mū-ntū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Man",
+          "translation": "wa-ntū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Man",
+          "translation": "Mu-yūme",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Man",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Man",
+          "translation": "M-umbe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Mother",
+          "translation": "Māma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Mother",
+          "translation": "Nīna",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Sister",
+          "translation": "Mū-rūmbū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Sister",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Sister",
+          "translation": "Ndūgu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Son, boy",
+          "translation": "Mwana",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Son, boy",
+          "translation": "wana",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Song",
+          "translation": "Kī-vīno",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Song",
+          "translation": "vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "White man",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Wife",
+          "translation": "wa-kē",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Woman",
+          "translation": "wa-kē",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Person",
+          "translation": "ntwu",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
         }
       ]
     },
@@ -815,7 +1090,7 @@
         },
         {
           "english": "Heel",
-          "translation": "Ki-tsigīno; vi-",
+          "translation": "Ki-tsigīno; vi",
           "pronunciation": "ki-tsigino",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -887,7 +1162,7 @@
         },
         {
           "english": "Vein",
-          "translation": "Mū-sīpa; mi-",
+          "translation": "Mū-sīpa; mi",
           "pronunciation": "mu-sipa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -917,7 +1192,7 @@
         },
         {
           "english": "Thigh",
-          "translation": "Kī-wēō; vi-",
+          "translation": "Kī-wēō; vi",
           "pronunciation": "ki-weo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -983,7 +1258,7 @@
         },
         {
           "english": "Finger",
-          "translation": "dóie, pl. ma-",
+          "translation": "dóie, pl. ma",
           "pronunciation": "doie",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -1061,7 +1336,7 @@
         },
         {
           "english": "Breast (man's)",
-          "translation": "Bagwi; ma-",
+          "translation": "Bagwi; ma",
           "pronunciation": "bagwi ma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -1085,7 +1360,7 @@
         },
         {
           "english": "Nail (of finger or toe)",
-          "translation": "Ū-kōmbe; ma-",
+          "translation": "Ū-kōmbe; ma",
           "pronunciation": "u-kombe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -1115,7 +1390,7 @@
         },
         {
           "english": "Borassus palm",
-          "translation": "Mu-humo; mi-",
+          "translation": "Mu-humo; mi",
           "pronunciation": "mu-humo mi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -1436,6 +1711,401 @@
           "translation": "juása",
           "pronunciation": "juása",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Finger",
+          "translation": "dóie",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Finger (plural)",
+          "translation": "ma",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Sole of the Foot",
+          "translation": "zuátjo",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Sole of the Foot (plural)",
+          "translation": "níátjo",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Skin",
+          "translation": "ngósi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Skin",
+          "translation": "jingo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Swear",
+          "translation": "yafa jiápo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Swear",
+          "translation": "yafiána",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Arm",
+          "translation": "Mu-kono",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Arm",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Back",
+          "translation": "Mu-oṅgo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Back",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Back",
+          "translation": "N-siṅgo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Beard",
+          "translation": "Ki-evu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Beard",
+          "translation": "vy-evu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Blood",
+          "translation": "Damu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Blood",
+          "translation": "Mw-atzi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Body",
+          "translation": "Mu-vī, Mu-i",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Body",
+          "translation": "mi-i, mi-vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Body",
+          "translation": "Lu-ci",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Body",
+          "translation": "nyu-ci",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ear",
+          "translation": "Ku-tu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ear",
+          "translation": "ma-tu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Eye",
+          "translation": "Dz-itso",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Eye",
+          "translation": "ma-tso",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Face, forehead",
+          "translation": "U-so",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Face, forehead",
+          "translation": "ny-uso",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Fear",
+          "translation": "Ku-tca",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Fear",
+          "translation": "Ki-wewe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Finger",
+          "translation": "n-dowe or k-owe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Finger",
+          "translation": "vy-owe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Foot",
+          "translation": "Ku-gū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Foot",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hair",
+          "translation": "N-zwii",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hair",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hair",
+          "translation": "Lu-jwi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hair",
+          "translation": "nyu-jwi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hand",
+          "translation": "Mu-kono",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hand",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hand",
+          "translation": "Ki-gandza",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hand",
+          "translation": "vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Head",
+          "translation": "Ki-tswa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Head",
+          "translation": "vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Heart",
+          "translation": "M-oyo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Heart",
+          "translation": "mi-oyo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Heart",
+          "translation": "Nko-lo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Heel",
+          "translation": "Ki-tsigīno",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Heel",
+          "translation": "vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Knee",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Leg",
+          "translation": "Ku-gū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Leg",
+          "translation": "ma-gū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Nail (of finger or toe)",
+          "translation": "Ū-kōmbe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Nail (of finger or toe)",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Neck",
+          "translation": "Siṅgo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Neck",
+          "translation": "L-oti",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Nose",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Nose",
+          "translation": "Mw-anzi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Shoulder",
+          "translation": "Wēga",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Shoulder",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Spear",
+          "translation": "Fūmo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Spear",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tear",
+          "translation": "Tsōzi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tear",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tongue",
+          "translation": "Lū-līmi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tongue",
+          "translation": "ndīmi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tooth",
+          "translation": "Dzēgo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tooth",
+          "translation": "ma-dzēgo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Year",
+          "translation": "Mw-āka",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Year",
+          "translation": "mi-āka",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Blood",
+          "translation": "wazi",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Ear",
+          "translation": "kilo",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Hand",
+          "translation": "kono",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Liver",
+          "translation": "ne",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Ear (Lower Pokomo)",
+          "translation": "kio",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Eye (Lower Pokomo)",
+          "translation": "ico",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Tongue (Lower Pokomo)",
+          "translation": "imi",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Knee (Lower Pokomo)",
+          "translation": "kuhi",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Breast (Lower Pokomo)",
+          "translation": "we",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Liver (Lower Pokomo)",
+          "translation": "ni",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
         }
       ]
     },
@@ -1935,6 +2605,156 @@
           "translation": "muéwe; ndéri",
           "pronunciation": "muéwe",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Hegoat",
+          "translation": "pée kóroma",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Hegoat",
+          "translation": "muyúme",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Want",
+          "translation": "mfungúfu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Want",
+          "translation": "mazakkoa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Want",
+          "translation": "fungúka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Want",
+          "translation": "zakka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Ant",
+          "translation": "Tsutsu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ant",
+          "translation": "Zunde",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ant, white (termite)",
+          "translation": "Mu-swa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ant, white (termite)",
+          "translation": "mi-swa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Baboon",
+          "translation": "M-fūwe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Baboon",
+          "translation": "pl",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Baboon",
+          "translation": "va-fūwe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bee",
+          "translation": "Ny-uki",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bee",
+          "translation": "pl",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bee",
+          "translation": "same",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bird",
+          "translation": "Ny-uni",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bird",
+          "translation": "pl",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bird",
+          "translation": "same",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Cow",
+          "translation": "Ṅ-ombe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Cow",
+          "translation": "pl",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Cow",
+          "translation": "same",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hyena",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Leopard",
+          "translation": "N-doze",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Sheep",
+          "translation": "ma-rē",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Fish",
+          "translation": "su",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Dog",
+          "translation": "ghe",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Louse",
+          "translation": "thwaba",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Fish (Lower Pokomo)",
+          "translation": "swi",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Dog (Lower Pokomo)",
+          "translation": "bwa",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
         }
       ]
     },
@@ -2077,7 +2897,7 @@
         },
         {
           "english": "Lake",
-          "translation": "Dzīwa; ma-",
+          "translation": "Dzīwa; ma",
           "pronunciation": "dziwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -2155,7 +2975,7 @@
         },
         {
           "english": "Cloud",
-          "translation": "wíngo pl. ma-",
+          "translation": "wíngo pl. ma",
           "pronunciation": "wingo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -2383,7 +3203,7 @@
         },
         {
           "english": "Well, source",
-          "translation": "Kī-sīma; vi-. K-angga; vy-",
+          "translation": "Kī-sīma; vi-. K-angga; vy",
           "pronunciation": "ki-sima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -2674,6 +3494,241 @@
           "translation": "muho wa Tana / mararani",
           "pronunciation": "muho-wa-tana",
           "context": "kipfokomo ecological and riverine lexicon (SIL International / Bloom Library) • Source: SIL International Kenya Pokomo Literacy Collection (https://bloomlibrary.org, CC-BY-4.0) & Tsammalex (https://tsammalex.clld.org, CC-BY-4.0)"
+        },
+        {
+          "english": "Stone",
+          "translation": "iwe",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Stone (plural)",
+          "translation": "máwe",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Disunite",
+          "translation": "tánia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Disunite",
+          "translation": "gáwa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sea",
+          "translation": "rokánga",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sea",
+          "translation": "ukánga",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Seam",
+          "translation": "sóno kawiwii",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Seam",
+          "translation": "utirífo zua kansu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Train, v. a. bring up",
+          "translation": "rera",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Train, v. a. bring up",
+          "translation": "kusa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wash",
+          "translation": "fuiya",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wash",
+          "translation": "jossa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Day",
+          "translation": "Mu-ntsi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Day",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Forest",
+          "translation": "Mu-situ",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Forest",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Lake",
+          "translation": "Dzīwa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Lake",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Moon",
+          "translation": "Mw-ēzi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Moon",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Mountain",
+          "translation": "Mu-lima",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Mountain",
+          "translation": "Gūba",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Mountain",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "River",
+          "translation": "Tsāna, Dzāna",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "River",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Sky",
+          "translation": "Mā-wiṅgū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Star",
+          "translation": "Ny-ōha, Yoha",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Star",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tree",
+          "translation": "mi-hī",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Well, source",
+          "translation": "Kī-sīma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Well, source",
+          "translation": "vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Well, source",
+          "translation": "K-aṅga",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Well, source",
+          "translation": "vy",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Wind",
+          "translation": "Mu-vūto",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Wind",
+          "translation": "Pēpho",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Wood",
+          "translation": "Lū-khūni, Lū-kūni",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Wood",
+          "translation": "khūni",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tree",
+          "translation": "rhi",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Star",
+          "translation": "thethe",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Fire",
+          "translation": "rho",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Mountain",
+          "translation": "lima",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Tree (Lower Pokomo)",
+          "translation": "hi",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Leaf (Lower Pokomo)",
+          "translation": "wani",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Sun (Lower Pokomo)",
+          "translation": "cua",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Star (Lower Pokomo)",
+          "translation": "yoha",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Fire (Lower Pokomo)",
+          "translation": "ho",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Night (Lower Pokomo)",
+          "translation": "siku",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
         }
       ]
     },
@@ -2954,18 +4009,18 @@
         },
         {
           "english": "To eat",
-          "translation": "-yā",
+          "translation": "yā",
           "pronunciation": "ya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Lay eggs.",
+          "english": "Lay eggs",
           "translation": "wia madji",
           "pronunciation": "wia mad-ji",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "To lay eggs.",
+          "english": "To lay eggs",
           "translation": "wia madji",
           "pronunciation": "wia mad-ji",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
@@ -3071,6 +4126,51 @@
           "translation": "wakulima wa mpunga",
           "pronunciation": "wak-ul-im-a-wa-mpung-a",
           "context": "Kipfokomo agricultural literacy series • Source: SIL International Kenya Pokomo Literacy Collection (https://bloomlibrary.org, CC-BY-4.0)"
+        },
+        {
+          "english": "Sheath",
+          "translation": "mfúko",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Banana",
+          "translation": "I-zuzu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Banana",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Banana",
+          "translation": "Mu-tobwia",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Egg",
+          "translation": "I-yai",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Egg",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Egg",
+          "translation": "Tswai?",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Water",
+          "translation": "aji",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Water (Lower Pokomo)",
+          "translation": "aci",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
         }
       ]
     },
@@ -3117,7 +4217,7 @@
         },
         {
           "english": "Hoe",
-          "translation": "Tsembe; ma-",
+          "translation": "Tsembe; ma",
           "pronunciation": "tsembe ma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -7340,7 +8440,7 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Pride, v. refl",
+          "english": "Pride",
           "translation": "zikúsa",
           "pronunciation": "zikúsa",
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
@@ -10080,6 +11180,141 @@
           "translation": "henda uifu",
           "pronunciation": "henda uifu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Shoe",
+          "translation": "kiáhu",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Shoe (plural)",
+          "translation": "wiáhu",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Sole of the",
+          "translation": "zuátjo",
+          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Sole of the (plural)",
+          "translation": "níátjo",
+          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Joint",
+          "translation": "úngo",
+          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Trace",
+          "translation": "zuátjo",
+          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Spot",
+          "translation": "vantu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Spot",
+          "translation": "nongo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Arrow",
+          "translation": "Dzahe, Tsahi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Arrow",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Axe",
+          "translation": "Tsoka",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Axe",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Axe",
+          "translation": "Berya",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bow",
+          "translation": "U-ta",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Bow",
+          "translation": "nyu-ta",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Charcoal",
+          "translation": "N-sinzi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Charcoal",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Charcoal",
+          "translation": "Kaa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Charcoal",
+          "translation": "ma-kaa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hoe",
+          "translation": "Tsembe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Hoe",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "House",
+          "translation": "Ny-ūmba",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "House",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Knife",
+          "translation": "vi-sū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Shield",
+          "translation": "Wānte",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Shield",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Stool",
+          "translation": "vi-tī",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         }
       ]
     },
@@ -10366,13 +11601,13 @@
         },
         {
           "english": "To cut",
-          "translation": "-kātā",
+          "translation": "kātā",
           "pronunciation": "ka-ta",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To see",
-          "translation": "-ōnā",
+          "translation": "ōnā",
           "pronunciation": "-ona",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -10420,19 +11655,19 @@
         },
         {
           "english": "To beat",
-          "translation": "-bīgā",
+          "translation": "bīgā",
           "pronunciation": "bi-ga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To give",
-          "translation": "-pā",
+          "translation": "pā",
           "pronunciation": "pa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To know",
-          "translation": "-mānyā",
+          "translation": "mānyā",
           "pronunciation": "manya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -10444,31 +11679,31 @@
         },
         {
           "english": "To kill",
-          "translation": "-ūlāgā",
+          "translation": "ūlāgā",
           "pronunciation": "-ulaga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To dance",
-          "translation": "-vīnā",
+          "translation": "vīnā",
           "pronunciation": "vi-na",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To laugh",
-          "translation": "-tsēkā",
+          "translation": "tsēkā",
           "pronunciation": "tse-ka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To sleep",
-          "translation": "-yālā",
+          "translation": "yālā",
           "pronunciation": "ya-la",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To steal",
-          "translation": "-īva",
+          "translation": "īva",
           "pronunciation": "-iva",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -10504,7 +11739,7 @@
         },
         {
           "english": "To love / want",
-          "translation": "-tsākā",
+          "translation": "tsākā",
           "pronunciation": "tsa-ka",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -10522,7 +11757,7 @@
         },
         {
           "english": "To stand / stop",
-          "translation": "-sūmāmā",
+          "translation": "sūmāmā",
           "pronunciation": "su-ma-ma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -10534,13 +11769,13 @@
         },
         {
           "english": "To leave off / cease",
-          "translation": "-yātā",
+          "translation": "yātā",
           "pronunciation": "ya-ta",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To sit / remain / abide",
-          "translation": "-kālā",
+          "translation": "kālā",
           "pronunciation": "ka-la",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -11169,12 +12404,6 @@
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
-          "english": "Sing",
-          "translation": "winna",
-          "pronunciation": "winna",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Sit",
           "translation": "kaa",
           "pronunciation": "kaa",
@@ -11407,6 +12636,26 @@
           "translation": "enda miátju",
           "pronunciation": "enda miátju",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. n.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "do not mind",
+          "translation": "yáze",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "do not mind",
+          "translation": "ka zámbo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "to make",
+          "translation": "henda arára",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "to make",
+          "translation": "nagea",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
         }
       ]
     },
@@ -11417,19 +12666,19 @@
       "entries": [
         {
           "english": "Big",
-          "translation": "-kuu (mukuu, kukuu)",
+          "translation": "kuu (mukuu, kukuu)",
           "pronunciation": "kuu",
           "context": "Krapf 1850 & Johnston 1919 pp. 107–109 #13 Pokomo • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Bad",
-          "translation": "-wi (muwi, mbwi)",
+          "translation": "wi (muwi, mbwi)",
           "pronunciation": "wi",
           "context": "Krapf 1850 & Johnston 1919 pp. 107–109 #13 Pokomo • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Red",
-          "translation": "-kundu (nyekundu)",
+          "translation": "kundu (nyekundu)",
           "pronunciation": "koon-doo",
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -11459,7 +12708,7 @@
         },
         {
           "english": "Good",
-          "translation": "-ema (muema, njema)",
+          "translation": "ema (muema, njema)",
           "pronunciation": "eh-mah",
           "context": "Krapf 1850 & Johnston 1919 pp. 107–109 #13 Pokomo • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -11531,19 +12780,19 @@
         },
         {
           "english": "Small",
-          "translation": "-dodo (mudodo, kadodo)",
+          "translation": "dodo (mudodo, kadodo)",
           "pronunciation": "dodo",
           "context": "Krapf 1850 & Johnston 1919 pp. 107–109 #13 Pokomo • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "White",
-          "translation": "-eupe",
+          "translation": "eupe",
           "pronunciation": "eh-oo-peh",
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Black",
-          "translation": "-iru (nyiru)",
+          "translation": "iru (nyiru)",
           "pronunciation": "ee-roo",
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -11651,7 +12900,7 @@
         },
         {
           "english": "Rotten",
-          "translation": "-wōvū",
+          "translation": "wōvū",
           "pronunciation": "wo-vu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -11669,13 +12918,13 @@
         },
         {
           "english": "Plenty, many",
-          "translation": "-īnggī",
+          "translation": "īnggī",
           "pronunciation": "-inggi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Fierce, sharp",
-          "translation": "-kāyī",
+          "translation": "kāyī",
           "pronunciation": "ka-yi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -12024,7 +13273,7 @@
         },
         {
           "english": "To go",
-          "translation": "-ēndā",
+          "translation": "ēndā",
           "pronunciation": "-enda",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -12096,13 +13345,13 @@
         },
         {
           "english": "Paddle",
-          "translation": "Kāfī; ma-",
+          "translation": "Kāfī; ma",
           "pronunciation": "kafi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To come",
-          "translation": "-dzā",
+          "translation": "dzā",
           "pronunciation": "dza",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -12315,6 +13564,61 @@
           "translation": "henda",
           "pronunciation": "henda",
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Ship",
+          "translation": "dau",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Ship",
+          "translation": "mzéfe",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Welfare",
+          "translation": "mambo ya nágĕa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Welfare",
+          "translation": "feia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Canoe",
+          "translation": "Hōri",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Canoe",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Canoe",
+          "translation": "Zefe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "To come",
+          "translation": "ja",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Path / Road",
+          "translation": "gia",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "To come (Lower Pokomo)",
+          "translation": "ca",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Path (Lower Pokomo)",
+          "translation": "jia",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
         }
       ]
     },
@@ -12397,7 +13701,7 @@
         },
         {
           "english": "Ivory",
-          "translation": "M-pembe; ma-",
+          "translation": "M-pembe; ma",
           "pronunciation": "m-pembe ma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -12463,13 +13767,13 @@
         },
         {
           "english": "Court, yard",
-          "translation": "mórro wa-",
+          "translation": "mórro wa",
           "pronunciation": "morro wa-",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To buy / To sell",
-          "translation": "-gūyā",
+          "translation": "gūyā",
           "pronunciation": "gu-ya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -12532,6 +13836,26 @@
           "translation": "géa",
           "pronunciation": "géa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Pay",
+          "translation": "va rando",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Pay",
+          "translation": "tjemfu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Riches",
+          "translation": "udurésa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Riches",
+          "translation": "mali",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
         }
       ]
     },
@@ -12620,13 +13944,13 @@
         },
         {
           "english": "Doctor (medicine man)",
-          "translation": "Mu-gangga; wa-",
+          "translation": "Mu-gangga; wa",
           "pronunciation": "mu-gangga wa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To die",
-          "translation": "-fā",
+          "translation": "fā",
           "pronunciation": "fa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -12815,6 +14139,56 @@
           "translation": "ṣáhidi",
           "pronunciation": "ṣáhidi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Procure",
+          "translation": "pāta",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Procure",
+          "translation": "huaa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Save",
+          "translation": "fósa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Save",
+          "translation": "yádia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sick",
+          "translation": "tjúa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sick",
+          "translation": "ana ndoári",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Medicine",
+          "translation": "Mu-hī",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Medicine",
+          "translation": "mi-hī",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thief",
+          "translation": "Mw-īzi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thief",
+          "translation": "w-īzi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         }
       ]
     },
@@ -13098,6 +14472,11 @@
           "translation": "zána",
           "pronunciation": "zána",
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Good morning!",
+          "translation": "múya nágaia",
+          "context": "Rev. Dr. J. L. Krapf (1850) \"Vocabulary of Six East-African Languages\", p. 29 • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         }
       ]
     },
@@ -13108,7 +14487,7 @@
       "entries": [
         {
           "english": "If",
-          "translation": "aki-",
+          "translation": "aki",
           "pronunciation": "a-ki",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo conj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13138,7 +14517,7 @@
         },
         {
           "english": "Our",
-          "translation": "-yéhu",
+          "translation": "yéhu",
           "pronunciation": "-yehu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo pron.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13162,7 +14541,7 @@
         },
         {
           "english": "Lips",
-          "translation": "Mu-yomo; mi-",
+          "translation": "Mu-yomo; mi",
           "pronunciation": "mu-yomo mi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13186,7 +14565,7 @@
         },
         {
           "english": "Lest",
-          "translation": "kuza ku-",
+          "translation": "kuza ku",
           "pronunciation": "ku-za ku",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo conj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13198,7 +14577,7 @@
         },
         {
           "english": "Kind",
-          "translation": "gósa; za-",
+          "translation": "gósa; za",
           "pronunciation": "gosa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13240,7 +14619,7 @@
         },
         {
           "english": "Craft",
-          "translation": "kulla pl. ma-",
+          "translation": "kulla pl. ma",
           "pronunciation": "kulla",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13276,7 +14655,7 @@
         },
         {
           "english": "Joint",
-          "translation": "úngo, pl. ma-",
+          "translation": "úngo, pl. ma",
           "pronunciation": "ungo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13372,7 +14751,7 @@
         },
         {
           "english": "Female",
-          "translation": "-kē",
+          "translation": "kē",
           "pronunciation": "ke",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13438,13 +14817,13 @@
         },
         {
           "english": "Parrot",
-          "translation": "Kwāru; ma-",
+          "translation": "Kwāru; ma",
           "pronunciation": "kwaru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Better",
-          "translation": "dánsa ka jia-",
+          "translation": "dánsa ka jia",
           "pronunciation": "dansa ka jia-",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13552,13 +14931,13 @@
         },
         {
           "english": "Imitate",
-          "translation": "engána na-",
+          "translation": "engána na",
           "pronunciation": "engana na-",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Instead",
-          "translation": "vantu va-",
+          "translation": "vantu va",
           "pronunciation": "vant-u va",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo prep.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13696,7 +15075,7 @@
         },
         {
           "english": "Buttocks",
-          "translation": "Tako; ma-",
+          "translation": "Tako; ma",
           "pronunciation": "ta-ko ma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13708,7 +15087,7 @@
         },
         {
           "english": "Threaten",
-          "translation": "héha na-",
+          "translation": "héha na",
           "pronunciation": "heha na-",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -13996,7 +15375,7 @@
         },
         {
           "english": "That, those",
-          "translation": "Hū-lē, hā-lē; hū-lē, hī-lē; &c.",
+          "translation": "Hū-lē, hā-lē; hū-lē, hī-lē; &c",
           "pronunciation": "hu-le ha-le",
           "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -14086,7 +15465,7 @@
         },
         {
           "english": "While; whilst",
-          "translation": "aki-",
+          "translation": "aki",
           "pronunciation": "a-ki",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -14272,7 +15651,7 @@
         },
         {
           "english": "Adverse, adj. to be",
-          "translation": "ku heha na-",
+          "translation": "ku heha na",
           "pronunciation": "ku he-ha na",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -14314,7 +15693,7 @@
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix)",
-          "translation": "Sī-, Kā-, Tā-, -sī-",
+          "translation": "Sī-, Kā-, Tā-, -sī",
           "pronunciation": "si- ka- ta- -si-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -14419,6 +15798,61 @@
           "translation": "gisa unguóni",
           "pronunciation": "gisa unguóni",
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Joint (plural)",
+          "translation": "ma",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Trace (plural)",
+          "translation": "niátjo",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "As, conj. like as",
+          "translation": "za",
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "what does it —?",
+          "translation": "ni jiási?",
+          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Marriage",
+          "translation": "ndósi ya muke",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Porter",
+          "translation": "mtukúsi wa msigo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sensuality",
+          "translation": "mazakkoa ya mui",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Subject",
+          "translation": "wantu wa hatju",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Temple",
+          "translation": "niumba ya Mungu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wedge",
+          "translation": "ku báya yukúni",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wherefore",
+          "translation": "ni kintu gá?",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
         }
       ]
     },
@@ -15539,7 +16973,7 @@
         },
         {
           "english": "Possessive Stems: My / Thy / His, Her / Our / Your / Their",
-          "translation": "-angu / -ako / -akwe / -ehu / -enyu / -ao",
+          "translation": "angu / -ako / -akwe / -ehu / -enyu / -ao",
           "pronunciation": "angu",
           "context": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #13 Pokomo • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -15569,7 +17003,7 @@
         },
         {
           "english": "Firewood / Wood (Erratum p. x)",
-          "translation": "-kuni, -khuni (Lu-kuni ; pl. N-khuni)",
+          "translation": "kuni, -khuni (Lu-kuni ; pl. N-khuni)",
           "pronunciation": "kuni",
           "context": "13. Pωkωmω (Pfωkωmω) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, Errata p. x & p. 106 col. 13) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
@@ -15584,12 +17018,1487 @@
           "translation": "Mū-uṅgu",
           "pronunciation": "mū-uṅgu",
           "context": "Comparative Kipokomo Vocabulary (Johnston 1919 Vol. I)"
+        },
+        {
+          "english": "Accept",
+          "translation": "huáa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Accept",
+          "translation": "hikísa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Accomplish",
+          "translation": "íssa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Accurately, exactly",
+          "translation": "to",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Accurately, exactly",
+          "translation": "múno",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Accurately, exactly",
+          "translation": "hálisi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "After",
+          "translation": "vadódo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "After",
+          "translation": "vadúdu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Ask",
+          "translation": "usa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Ask",
+          "translation": "zakka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Attempt",
+          "translation": "ansa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Attempt",
+          "translation": "yayóa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Battle",
+          "translation": "wíha",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Battle",
+          "translation": "mazuáno",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Beautiful",
+          "translation": "mema",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Beautiful",
+          "translation": "dansa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Completely",
+          "translation": "múno",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Completely",
+          "translation": "to",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Conclude",
+          "translation": "sia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Conclude",
+          "translation": "gudunífa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Crime",
+          "translation": "wíwi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Crime",
+          "translation": "wisúka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Deceive",
+          "translation": "kúlla",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Deceive",
+          "translation": "pumbása",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Descend",
+          "translation": "súka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Descend",
+          "translation": "yáwa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Despise",
+          "translation": "húmfia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Despise",
+          "translation": "zolla",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Devil",
+          "translation": "ṣetáni",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Devil",
+          "translation": "kóma",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Dirt",
+          "translation": "dóre",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Dirt",
+          "translation": "nónge",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Dissolve",
+          "translation": "fungúya",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Dissolve",
+          "translation": "gonzóa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Distort",
+          "translation": "mígnia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Distort",
+          "translation": "fihúya",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Divide",
+          "translation": "gáfia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Divide",
+          "translation": "henda koda",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Excavate",
+          "translation": "tūkura",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Excavate",
+          "translation": "humbuia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Experience",
+          "translation": "óna",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Ferment",
+          "translation": "iwifóa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Ferment",
+          "translation": "hokóya",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Find",
+          "translation": "óna",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Find",
+          "translation": "pata",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Fine",
+          "translation": "muzéke",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Fine",
+          "translation": "zekéfa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Fresh",
+          "translation": "jifía",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Fresh",
+          "translation": "kiwíti",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Grief",
+          "translation": "nánsu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Grumble",
+          "translation": "gugáa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Grumble",
+          "translation": "zisa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Happiness",
+          "translation": "nágea",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Happiness",
+          "translation": "delli",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "However",
+          "translation": "lakeni",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "However",
+          "translation": "aki",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Irritate",
+          "translation": "retjésa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Irritate",
+          "translation": "gisa ngóro",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Justice",
+          "translation": "hadji",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Justice",
+          "translation": "rongára",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Kind",
+          "translation": "gósa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Kind",
+          "translation": "za",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Lie",
+          "translation": "muongo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Lie",
+          "translation": "hadā",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Limits",
+          "translation": "múngo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Limits",
+          "translation": "mufáka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Marriage",
+          "translation": "niambúra",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Meal",
+          "translation": "kúja",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Meal",
+          "translation": "jakúja",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Means",
+          "translation": "njía",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Means",
+          "translation": "wíja",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Merit",
+          "translation": "kási",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Merit",
+          "translation": "ámala",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Molest",
+          "translation": "zokésa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Molest",
+          "translation": "kúka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Moreover",
+          "translation": "laken",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Moreover",
+          "translation": "zu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Neighbour",
+          "translation": "jirani",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Neighbour",
+          "translation": "óla",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Nothing",
+          "translation": "táfa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Nothing",
+          "translation": "taku",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Notice",
+          "translation": "mágu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Notice",
+          "translation": "iríga",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Observe",
+          "translation": "iyóa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Observe",
+          "translation": "óna",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Only",
+          "translation": "bassi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Only",
+          "translation": "kajejée",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Patient",
+          "translation": "nála",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Patient",
+          "translation": "yuna poepóe",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Penetrate",
+          "translation": "njía",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Penetrate",
+          "translation": "mánia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Perfect",
+          "translation": "henda kámili",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Perish",
+          "translation": "nangíka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Perish",
+          "translation": "ra",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Plan",
+          "translation": "makusudio",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Plan",
+          "translation": "mazakkoa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Plunder",
+          "translation": "darra",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Plunder",
+          "translation": "húna niára",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Porter",
+          "translation": "mká mjangóni",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Possession",
+          "translation": "milki",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Possession",
+          "translation": "hayóma",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Pound",
+          "translation": "bulleisa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Praise",
+          "translation": "hamdi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Praise",
+          "translation": "sadda?",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Precede",
+          "translation": "enda mbẹ",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Precede",
+          "translation": "yongóa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Prince",
+          "translation": "hátju",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Prince",
+          "translation": "heiu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Proceed",
+          "translation": "énda ussóni",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Proceed",
+          "translation": "yongóa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Put",
+          "translation": "weka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Put",
+          "translation": "gisa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Rag",
+          "translation": "sarra",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Rag",
+          "translation": "báika",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Raise",
+          "translation": "muiya",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Raise",
+          "translation": "simika",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Reach",
+          "translation": "pata",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Reach",
+          "translation": "fika",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Receive",
+          "translation": "huáa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Receive",
+          "translation": "hikísa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Rest",
+          "translation": "fumúa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Retaliate",
+          "translation": "úza",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Retaliate",
+          "translation": "ifia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Revenge",
+          "translation": "yafia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Revenge",
+          "translation": "ziífa kisási",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Right",
+          "translation": "kirongára",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Right",
+          "translation": "ja hadji",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Righteousness",
+          "translation": "wema",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Righteousness",
+          "translation": "háji",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Safe",
+          "translation": "táku ṣóga",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Safe",
+          "translation": "nágea",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Seek",
+          "translation": "látja",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Seek",
+          "translation": "zakka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Seethe out",
+          "translation": "ihokóha",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Seethe out",
+          "translation": "iwiwoa muno",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Seldom, adv. vid. scarcely",
+          "translation": "si wengi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Seldom, adv. vid. scarcely",
+          "translation": "vadúdu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sensuality",
+          "translation": "látjo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Shoot up",
+          "translation": "yáwa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Shoot up",
+          "translation": "uia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Shrink",
+          "translation": "konda",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Shrink",
+          "translation": "húka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "on every side",
+          "translation": "vántu vónse",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "on every side",
+          "translation": "kúntu konse",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Silent",
+          "translation": "gidiffa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Silent",
+          "translation": "mpóe",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sin",
+          "translation": "wiwi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sin",
+          "translation": "dambi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sinner",
+          "translation": "mnánsi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sinner",
+          "translation": "msúka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Smooth",
+          "translation": "djóo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Smooth",
+          "translation": "nzéke",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Soon",
+          "translation": "hárraka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Soon",
+          "translation": "fóda",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sour",
+          "translation": "jikái",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sour",
+          "translation": "ja zúnga",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Spurious",
+          "translation": "kizanganíka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Spurious",
+          "translation": "si háji",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Stamp",
+          "translation": "gisa aláma",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Stamp",
+          "translation": "funda",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "State",
+          "translation": "mámbo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "State",
+          "translation": "kintu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Subject",
+          "translation": "kintu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Suffer",
+          "translation": "géllitja",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sultry",
+          "translation": "huéka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Sultry",
+          "translation": "hokósa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Take",
+          "translation": "huáa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Take",
+          "translation": "gija",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Talk",
+          "translation": "zesa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Talk",
+          "translation": "hasawa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Teacher",
+          "translation": "mkufúndi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Teacher",
+          "translation": "muongoési",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Teaching",
+          "translation": "mafundo",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Teaching",
+          "translation": "maongoési",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Temple",
+          "translation": "msgihi",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Try",
+          "translation": "járibu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Turn",
+          "translation": "fihuia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Turn",
+          "translation": "fiokóza",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Unsafe",
+          "translation": "ina ṣóga",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Unsafe",
+          "translation": "tai wema",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Use",
+          "translation": "humía",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Use",
+          "translation": "hambuia",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Vain",
+          "translation": "burre",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Vain",
+          "translation": "itjiá",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Value",
+          "translation": "jima",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Value",
+          "translation": "gúrgura",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Vulture",
+          "translation": "muéwe",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Vulture",
+          "translation": "ndéri",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wait",
+          "translation": "inda",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wait",
+          "translation": "kambáa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Waste",
+          "translation": "nánga",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Waste",
+          "translation": "yáza",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wedge",
+          "translation": "kidínku ja",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wherefore",
+          "translation": "kuáni",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wilderness",
+          "translation": "mihu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wilderness",
+          "translation": "yuwánda",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wisdom",
+          "translation": "mánio",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wisdom",
+          "translation": "ákili",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "With",
+          "translation": "vamóza",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "With",
+          "translation": "na",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wither",
+          "translation": "yóma",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wither",
+          "translation": "fokuhíka",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Worth",
+          "translation": "ukúba",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Worth",
+          "translation": "udurésa",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wrath",
+          "translation": "ngóro",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wrath",
+          "translation": "rétja",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wretched",
+          "translation": "diéga",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Wretched",
+          "translation": "ka kintu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Yes",
+          "translation": "ndifio",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Yes",
+          "translation": "háji",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Zeal",
+          "translation": "uifu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Zeal",
+          "translation": "ngufu",
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Borassus palm",
+          "translation": "Mu-humo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Borassus palm",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Buttocks",
+          "translation": "Tako",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Buttocks",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Devil, evil spirit",
+          "translation": "Nkoma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Devil, evil spirit",
+          "translation": "Pepho",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Frog",
+          "translation": "C-ula",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Frog",
+          "translation": "vy-ula",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Horn",
+          "translation": "M-pembe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Horn",
+          "translation": "pl",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Horn",
+          "translation": "same",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Iron",
+          "translation": "C-ūma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Iron",
+          "translation": "vy-ūma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Island",
+          "translation": "Lūlū, Ki-lūlū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Island",
+          "translation": "vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Island",
+          "translation": "Tsāṅga",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Island",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ivory",
+          "translation": "M-pembe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ivory",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Lips",
+          "translation": "Mu-yomo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Lips",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Magic",
+          "translation": "U-tsāwi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Magic",
+          "translation": "U-gāṅga",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Name",
+          "translation": "Sāri, Dzīna",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Name",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Paddle",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Parrot",
+          "translation": "Kwāru",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Parrot",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Penis",
+          "translation": "Cīwa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Penis",
+          "translation": "ma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Pigeon",
+          "translation": "N-dzīwa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Pigeon",
+          "translation": "Kwe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Rat",
+          "translation": "N-dēzi, N-dūru",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Rat",
+          "translation": "Mpūku",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Slave",
+          "translation": "Mū-hūma",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Slave",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Spirit, soul",
+          "translation": "Mu-zīmū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Spirit, soul",
+          "translation": "M-ōyo",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tail",
+          "translation": "Mu-kīa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Tail",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thigh",
+          "translation": "vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thing",
+          "translation": "Kī-ntū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thing",
+          "translation": "vi-ntū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thorn",
+          "translation": "Mū-īwa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thorn",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Town",
+          "translation": "Mū-dzī",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Town",
+          "translation": "mi-dzī",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Vein",
+          "translation": "Mū-sīpa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Vein",
+          "translation": "mi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Witch",
+          "translation": "Mū-tsāwi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Witch",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "I, me, my",
+          "translation": "Mīmi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thou, thee, thy",
+          "translation": "Wēwe",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Thou, thee, thy",
+          "translation": "āko",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "He, him, his",
+          "translation": "Yēye",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "He, him, his",
+          "translation": "ākwē",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "We, us, our",
+          "translation": "Swīswi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ye, you, your",
+          "translation": "Nyīnyi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ye, you, your",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Ye, you, your",
+          "translation": "ēnyū",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "They, them, their",
+          "translation": "wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "This, these",
+          "translation": "Hū-yū, hā-wa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "This, these",
+          "translation": "hī-di, hā-ya",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "This, these",
+          "translation": "hī-ki, hī-vi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "This, these",
+          "translation": "hī-i, hī-zi",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "This, these",
+          "translation": "hū-lu",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "This, these",
+          "translation": "hā-ka",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "This, these",
+          "translation": "hū-ku",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "This, these",
+          "translation": "hā-fa",
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "Horn",
+          "translation": "pwembe",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "New",
+          "translation": "uya",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Name",
+          "translation": "ina",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Name (Lower Pokomo)",
+          "translation": "ri",
+          "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Pokomo sub-tribe / territorial alliance (singular & plural)",
+          "translation": "Keeti (pl. Vyeti — the 13 Pokomo sub-tribes along the Tana River)",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "Pokomo exogamous clan / lineage",
+          "translation": "Sindo (pl. Masindo)",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "River reach with steep banks (Upper Pokomo place-name element)",
+          "translation": "Fanga (e.g. Fanga Kuu)",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "Coconut seedlings (Pokomo / Lamu archival term)",
+          "translation": "Mite (Standard Swahili: miche)",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "All the same / nevertheless (Pokomo idiomatic phrase)",
+          "translation": "Ela wenda tu",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "The woman of Limotho took her mortar and pestle and went to pound (Pokomo song)",
+          "translation": "Muke wa Limotho, kahwaa kadzinu na kadzindi, kenda tsokoa, hii muke wa Limotho",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "Mortar and pestle (Pokomo diminutive nouns)",
+          "translation": "Kadzinu (mortar) na kadzindi (pestle)",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "To pound grain in a mortar (Pokomo verb)",
+          "translation": "Kutsokoa (kenda tsokoa 'she went to pound')",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "The 13 Pokomo Sub-Tribes (Vyeti) and their Clans (Masindo) along the Tana River",
+          "translation": "Kalindi (Mamboo, Gomeni, Nzamba, Palana, Mongwe, Bure, Mwiti); Buu (Karya, Kamwelo, Katsae, Deno, Chomo, Kale, Yuu, Katsoo/Kinamwiti); Dzunza (Mbura, Ngutsu, Viranga/Urunya); Ngatana (Kidziwi, Bure); Mwina (Mbaji, Kinambare, Kinahafa, Kinamongo, Kinambato, Kinangombe); Ndera; Zubaki; Kinakomba (Kinambolo, Kinamwiani); Ndura (Kinagava, Kinanato, Kinagasere, Kinambura); Malalulu (Meta, Ilani, Garijela, Uta, Wayu, Dulu, Karara); Korokoro",
+          "context": "Alice Werner (1915) 'The Bantu Coast Tribes of the East Africa Protectorate', Journal of the Royal Anthropological Institute Vol. 45, pp. 326–354 (Public Domain)"
+        },
+        {
+          "english": "For God so loved the world (John 3:16 — 1901 Kipokomo Specimen #401)",
+          "translation": "Koro hivihivi Muungu kajudsaka lumwengu, haṭa kamuyavya Mwanawe madiani, kwakwamba yuḍe jwonse amuhikizie jeje adsekwara, ela awe na mojo usiwosia.",
+          "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
         }
       ]
     }
   ],
-  "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944)",
+  "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "pkb",
   "glottocode": "poko1261",
-  "totalEntries": 2577
+  "totalEntries": 3159
 }

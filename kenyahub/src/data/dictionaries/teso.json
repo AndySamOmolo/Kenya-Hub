@@ -8,9 +8,9 @@
   "counties": [
     "Busia"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-17",
   "contributorNote": "Teso (Ateso / Elgumi) vocabulary compiled from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\"), Archdeacon A. L. Kitching (1915 \"A Handbook of the Ateso Language\"), Rev. John Roscoe (1915 \"The Northern Bantu\", Part V \"The Bateso\" & Kinship Table pp. 257–293), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0)).",
   "categories": [
     {
@@ -228,6 +228,21 @@
           "translation": "iare / are",
           "pronunciation": "iare",
           "context": "CLDF ASJP v20 Wordlist TESO (Vossen 1982 / Velupillai, CC-BY-4.0, https://asjp.clld.org/languages/TESO) & Sunbird AI SALT-31 (CC-BY-4.0)"
+        },
+        {
+          "english": "Six",
+          "translation": "kanyi or akanya kape",
+          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902) — Elgumi/Teso"
+        },
+        {
+          "english": "One",
+          "translation": "pei",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Stone",
+          "translation": "amoru",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
         }
       ]
     },
@@ -403,6 +418,111 @@
           "translation": "itunganan / atuan",
           "pronunciation": "itunganan",
           "context": "CLDF ASJP v20 Wordlist TESO (Vossen 1982 / Velupillai, CC-BY-4.0, https://asjp.clld.org/languages/TESO) & Sunbird AI SALT-31 (CC-BY-4.0)"
+        },
+        {
+          "english": "Person",
+          "translation": "atuan",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Father (Bateso kinship term)",
+          "translation": "Paka / Okoka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Mother (Bateso kinship term)",
+          "translation": "Totoka / Okoka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Elder brother / brother (man speaking, Bateso)",
+          "translation": "Onacika",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Elder sister (woman speaking, Bateso)",
+          "translation": "Kinacika / Konacika",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Sister (man speaking, Bateso)",
+          "translation": "Kinacika / Onacika",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Father's brother / paternal uncle (Bateso)",
+          "translation": "Onaci kapaka / Okoka / Amororuka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Father's sister / paternal aunt (Bateso)",
+          "translation": "Ejaka / Ojojayitika",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Father's sister's child / cross-cousin (Bateso)",
+          "translation": "Onacika (fem. Kinacika)",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Mother's brother / maternal uncle (Bateso)",
+          "translation": "Mamayika / Ocenika",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Mother's brother's wife / sister's son's wife (Bateso)",
+          "translation": "Amororuka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Mother's sister / maternal aunt (Bateso)",
+          "translation": "Totoka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Mother's sister's husband (Bateso)",
+          "translation": "Paka / Okoka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Sister's son's child (Bateso)",
+          "translation": "Etatayitika / Pataka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Sister's daughter's child (Bateso)",
+          "translation": "Epapayutika / Epapataka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Grandfather (father's father or mother's father, Bateso)",
+          "translation": "Papaka / Okokokoka",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Grandmother (father's mother or mother's mother, Bateso)",
+          "translation": "Tataka / Otatayitika",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Husband / wife (Bateso spouse terms)",
+          "translation": "Okilinika (husband) / Aberoka (wife)",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Father-in-law or mother-in-law (wife's parents, Bateso)",
+          "translation": "Akamuranika",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Brother-in-law (wife's brother or husband's brother, Bateso)",
+          "translation": "Ekamuran",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "Sister-in-law (wife's sister or husband's sister, Bateso)",
+          "translation": "Akamuran",
+          "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
         }
       ]
     },
@@ -728,6 +848,31 @@
           "translation": "Ebokorit",
           "pronunciation": "ebkorit",
           "context": "Elgumi (Ateso / Wamia) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
+        },
+        {
+          "english": "Skin",
+          "translation": "ajamun",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Tooth",
+          "translation": "ekialai",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Tongue",
+          "translation": "angatap",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Hand",
+          "translation": "akan",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "To hear",
+          "translation": "akarar",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
         }
       ]
     },
@@ -1065,6 +1210,26 @@
           "translation": "imongin",
           "pronunciation": "imongin",
           "context": "Sunbird AI SALT Ateso Agricultural Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Cow",
+          "translation": "Akiteñ",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Elgumi."
+        },
+        {
+          "english": "Cow",
+          "translation": "nabero",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Elgumi."
+        },
+        {
+          "english": "Fish",
+          "translation": "akolait",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Dog",
+          "translation": "ekingoku",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
         }
       ]
     },
@@ -1318,6 +1483,31 @@
           "translation": "emoru",
           "pronunciation": "emoru",
           "context": "CLDF ASJP v20 Wordlist TESO (Vossen 1982 / Velupillai, CC-BY-4.0, https://asjp.clld.org/languages/TESO) & Sunbird AI SALT-31 (CC-BY-4.0)"
+        },
+        {
+          "english": "Tree",
+          "translation": "akitoi",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Leaf",
+          "translation": "aliait",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Star",
+          "translation": "akanyirat",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Mountain",
+          "translation": "emoru",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Night",
+          "translation": "akwari",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
         }
       ]
     },
@@ -1529,6 +1719,11 @@
           "translation": "emare",
           "pronunciation": "emare",
           "context": "Sunbird AI SALT Ateso Agricultural Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "To drink",
+          "translation": "akimata",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
         }
       ]
     },
@@ -1644,6 +1839,16 @@
           "translation": "Acin",
           "pronunciation": "acin",
           "context": "Ateso / Elgumi Comparative Lexicon (Johnston 1902 Vol. II)"
+        },
+        {
+          "english": "Bow",
+          "translation": "Emal",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Elgumi."
+        },
+        {
+          "english": "Bow",
+          "translation": "Akau",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Elgumi."
         }
       ]
     },
@@ -1987,6 +2192,11 @@
           "translation": "ai-ngarakin / i-tunga",
           "pronunciation": "ai-ngar-ak-in",
           "context": "Sunbird AI SALT Ateso parallel corpus & Eastern Nilotic number typology • Source: Sunbird AI SALT Corpus (https://huggingface.co/datasets/Sunbird/salt, CC-BY-SA-4.0) & Jonathan Moodie 2016 (Language Science Press #121, Ch. 21, CC-BY-4.0)"
+        },
+        {
+          "english": "To see",
+          "translation": "alun",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
         }
       ]
     },
@@ -2261,6 +2471,11 @@
           "translation": "adekis",
           "pronunciation": "adekis",
           "context": "Sunbird AI SALT Ateso Healthcare Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "To die",
+          "translation": "atonare",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
         }
       ]
     },
@@ -3052,7 +3267,7 @@
         },
         {
           "english": "Clean boiled water prevents illness in the home",
-          "translation": "Akipi nuiporio  aijar toma ore",
+          "translation": "Akipi nuiporio aijar toma ore",
           "pronunciation": "akipi nuiporio  aijar toma ore",
           "context": "Sunbird AI SALT Ateso Healthcare Corpus (CC-BY-4.0)"
         },
@@ -3061,6 +3276,16 @@
           "translation": "ai-siom / e-itabo",
           "pronunciation": "ai-siom",
           "context": "Sunbird AI SALT English ↔ Ateso ↔ Swahili parallel corpus (25,000 sentence pairs) • Source: Sunbird AI SALT Corpus (https://huggingface.co/datasets/Sunbird/salt, CC-BY-SA-4.0)"
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Edola lok’Kanada",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
+        },
+        {
+          "english": "Australian Dollar (AUD)",
+          "translation": "Ango’otol lok’ Australia",
+          "context": "Ateso — GitHub unicode-org/cldr (teo.xml) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         }
       ]
     },
@@ -4076,12 +4301,57 @@
           "translation": "ekiror / akirori",
           "pronunciation": "ekiror",
           "context": "CLDF ASJP v20 Wordlist TESO (Vossen 1982 / Velupillai, CC-BY-4.0, https://asjp.clld.org/languages/TESO) & Sunbird AI SALT-31 (CC-BY-4.0)"
+        },
+        {
+          "english": "To-day",
+          "translation": "lolo",
+          "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
+        },
+        {
+          "english": "Drum",
+          "translation": "Atāget",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Elgumi."
+        },
+        {
+          "english": "Drum",
+          "translation": "Atēnus",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Elgumi."
+        },
+        {
+          "english": "I (1sg pronoun)",
+          "translation": "ong",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "You (2sg pronoun)",
+          "translation": "ijo",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "We (1pl pronoun)",
+          "translation": "siong",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Full",
+          "translation": "akilalab",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "Name",
+          "translation": "akirori",
+          "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "For God so loved the world (John 3:16 — 1916 Ateso Specimen #490)",
+          "translation": "Narai Elohim komina akwapisinei kwan'ini, ainakini koyinaki Okoke lokewurio ediopet boni, n'ini tun'anan leyuwuni n'es kiñeyi aoliori koñe kojai akijara na mam edaun.",
+          "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
         }
       ]
     }
   ],
-  "source": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921)",
+  "source": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921); Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Bateso Kinship & Ethnography (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "teo",
   "glottocode": "teso1247",
-  "totalEntries": 659
+  "totalEntries": 713
 }

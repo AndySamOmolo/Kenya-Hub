@@ -11,9 +11,9 @@
     "Isiolo",
     "Laikipia"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-17",
   "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), C. W. Hobley (1910), and Rainer Vossen (1982). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0).",
   "categories": [
     {
@@ -68,6 +68,26 @@
           "translation": "Lpayiani nemayiana lmurran peetum serian te nkop",
           "pronunciation": "lpayiani-nemayiana-lmurran-peetum",
           "context": "SIL Bloom Library Samburu (saq, CC-BY-4.0) & African Next Voices Kisamburu"
+        },
+        {
+          "english": "Hello (to a man)",
+          "translation": "Supa",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Hello (to a woman)",
+          "translation": "Takwenya",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Response: Fine / Peaceful",
+          "translation": "Ipa / Eiko",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Thank you very much",
+          "translation": "Ashe oleng",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
         }
       ]
     },
@@ -213,6 +233,16 @@
           "translation": "ímɟêt, ílê, sápâ, ísɟêt, sâːl, tômôn",
           "pronunciation": "ímɟêt",
           "context": "Samburu (North Maa) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Bone",
+          "translation": "Oloito",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "Bone",
+          "translation": "Eloik (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
         }
       ]
     },
@@ -617,6 +647,21 @@
           "translation": "Ol tuqai",
           "pronunciation": "ol tu-qai",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Eye",
+          "translation": "Angoño",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "Eye",
+          "translation": "Ngoinyek (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "Mouth",
+          "translation": "Ol ñejep",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
         }
       ]
     },
@@ -924,6 +969,16 @@
           "translation": "nker",
           "pronunciation": "nker",
           "context": "African Next Voices Kenya Kisamburu Transcript Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Baboon",
+          "translation": "Lotimi",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "Baboon",
+          "translation": "Lotini",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
         }
       ]
     },
@@ -1387,6 +1442,16 @@
           "translation": "nk-áí / n-kóp",
           "pronunciation": "nk-áí",
           "context": "Samburu North Maa tonal case system and tripartite number • Source: Mirella L. Blum 2026 (African Tone Phenomena, Language Science Press #621, Ch. 11, CC-BY-4.0)"
+        },
+        {
+          "english": "Canadian Dollar (CAD)",
+          "translation": "Njilingi eel Kanada",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Australian Dollar (AUD)",
+          "translation": "Njilingi eel Australia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         }
       ]
     },
@@ -1515,6 +1580,51 @@
           "translation": "nkang'",
           "pronunciation": "nkang",
           "context": "SIL Bloom Samburu Graded Readers (CC-BY-4.0)"
+        },
+        {
+          "english": "Manyatta / Homestead",
+          "translation": "Nkang'",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Traditional house",
+          "translation": "Nkaji",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Milk gourd (smoked with olive wood)",
+          "translation": "Nkokorri / Lmala",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Sleeping bed / Hide",
+          "translation": "Erruat",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Elder's stool",
+          "translation": "Lorika",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "Emoti",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Beaded necklace (Samburu women's collar)",
+          "translation": "Mporro / Nkarawa",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Herding staff",
+          "translation": "Sobua",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Thorn enclosure / Kraal",
+          "translation": "Boo",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
         }
       ]
     },
@@ -1660,6 +1770,348 @@
           "translation": "a-duŋ-ó / a-duŋ-á (Samburu / North Maa middle)",
           "pronunciation": "a-duŋ-ó",
           "context": "Shared Maa alternating middle voice and media tantum experiential verbs (Payne 2026) • Source: Doris L. Payne 2026 (Pamoja tena, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
+        },
+        {
+          "english": "To herd livestock",
+          "translation": "Airrita nkishu",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "To milk",
+          "translation": "Alep",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "To drink",
+          "translation": "Amat",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "To eat",
+          "translation": "Ainos",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "To walk / Migrate",
+          "translation": "Alo / Aivot",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "To sing",
+          "translation": "Arany",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "To cut (transitive active)",
+          "translation": "a-dúŋ",
+          "pronunciation": "a-dung",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be in a cut state, demarcated, separated; cease flow (middle)",
+          "translation": "a-duŋ-ó",
+          "pronunciation": "a-dung-o",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To cut each other; be divided into portions (plural/antipassive middle)",
+          "translation": "áa-duŋ-o",
+          "pronunciation": "aa-dung-o",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To let out tiny amounts of liquid, sweat",
+          "translation": "a-ɪnyɪnyɪrʊ́",
+          "pronunciation": "a-inyinyiru",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be let out in tiny amounts (ventive middle)",
+          "translation": "a-ɪnyɪnyɪrʊnyɛ́",
+          "pronunciation": "a-inyinyirunye",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To enter a place",
+          "translation": "a-jɪ́ŋ",
+          "pronunciation": "a-jing",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be entered; be possessed by a spirit (middle)",
+          "translation": "a-jɪŋ-á",
+          "pronunciation": "a-jing-a",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To catch, arrest, touch",
+          "translation": "a-ɪbʊ́ŋ",
+          "pronunciation": "a-ibung",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To coagulate, be coagulated (middle)",
+          "translation": "a-ɪbʊŋ-á",
+          "pronunciation": "a-ibung-a",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be drunk, intoxicated (media tantum)",
+          "translation": "a-mɛrá",
+          "pronunciation": "a-mera",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make drunk, intoxicate (Class 1 causative)",
+          "translation": "a-ɪtɛ-mɛ́r",
+          "pronunciation": "a-ite-mer",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be pregnant, gravid (media tantum)",
+          "translation": "a-nʊtá",
+          "pronunciation": "a-nuta",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To impregnate (Class 1 causative)",
+          "translation": "a-ɪtʊ-nʊ́t",
+          "pronunciation": "a-itu-nut",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To fall down (media tantum)",
+          "translation": "a-rriá",
+          "pronunciation": "a-rria",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To ferment (media tantum)",
+          "translation": "a-isiijó",
+          "pronunciation": "a-isiijo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be conspicuous, unambiguous, likely to happen",
+          "translation": "a-ɪbalá",
+          "pronunciation": "a-ibala",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be piled up, crammed",
+          "translation": "a-ineníá",
+          "pronunciation": "a-inenia",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be visible, apparent",
+          "translation": "a-lioó",
+          "pronunciation": "a-lioo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be underfed (of cattle)",
+          "translation": "a-lubó",
+          "pronunciation": "a-lubo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To match, be advisable (dative middle)",
+          "translation": "a-narikinó",
+          "pronunciation": "a-narikino",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To quake, tremble (of the earth)",
+          "translation": "a-ɪkɪrɪkɪrá",
+          "pronunciation": "a-ikirikira",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be sickly, chronically unwell",
+          "translation": "a-sɛshá",
+          "pronunciation": "a-sesha",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To squat, sit down",
+          "translation": "a-ɪgʊtʊmá",
+          "pronunciation": "a-igutuma",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To vomit",
+          "translation": "a-gʊrrʊmá",
+          "pronunciation": "a-gurruma",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be inattentive; play joyfully",
+          "translation": "a-dalá",
+          "pronunciation": "a-dala",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be proud",
+          "translation": "a-ɪmasó",
+          "pronunciation": "a-imaso",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be happy, haughty, naughty",
+          "translation": "a-ŋɪdá",
+          "pronunciation": "a-ngida",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To obscure, hide behind something",
+          "translation": "a-ɪgará",
+          "pronunciation": "a-igara",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To hide with or behind (instrument applicative)",
+          "translation": "a-ɪgar-íé",
+          "pronunciation": "a-igar-ie",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be holy, perfect, spotless",
+          "translation": "a-sɪnyá",
+          "pronunciation": "a-sinya",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make holy, cleanse (causative)",
+          "translation": "a-ɪtɪ-sɪ́ny",
+          "pronunciation": "a-iti-siny",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Holy, blameless (singular / plural adjective)",
+          "translation": "sinyáti (pl. sinyát)",
+          "pronunciation": "sinyati",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be hot (stative)",
+          "translation": "a-ɪrowúá",
+          "pronunciation": "a-irowua",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To heat with, make hot (instrumental)",
+          "translation": "a-irowuaj-íé",
+          "pronunciation": "a-irowuaj-ie",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To become hot (inchoative)",
+          "translation": "a-irowuaj-ú",
+          "pronunciation": "a-irowuaj-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be long, tall, linearly extended",
+          "translation": "a-adɔ́",
+          "pronunciation": "a-ado",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Will become tall (inchoative)",
+          "translation": "ɛ-adór-ū",
+          "pronunciation": "e-ador-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be tender, soft, gentle",
+          "translation": "a-naná",
+          "pronunciation": "a-nana",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make soft, soften",
+          "translation": "a-ɪta-naná",
+          "pronunciation": "a-ita-nana",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To become soft",
+          "translation": "a-naná-ú",
+          "pronunciation": "a-nana-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To bathe oneself (grooming middle)",
+          "translation": "a-itukúó",
+          "pronunciation": "a-itukuo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To wash oneself / wash hands (grooming middle)",
+          "translation": "a-ɪsʊjá",
+          "pronunciation": "a-isuja",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To adorn oneself (grooming middle)",
+          "translation": "a-ɪsɪkarrá",
+          "pronunciation": "a-isikarra",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To dress oneself (grooming middle)",
+          "translation": "a-ishopó",
+          "pronunciation": "a-ishopo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To scratch oneself (grooming middle)",
+          "translation": "a-girró",
+          "pronunciation": "a-girro",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To emotionally cling to; elope (media tantum stem)",
+          "translation": "-raya",
+          "pronunciation": "raya",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be proud of, boast of (media tantum stem)",
+          "translation": "-ŋɪdarɛ",
+          "pronunciation": "ngidare",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be a troublemaker, loiter (media tantum stem)",
+          "translation": "-peepeeno",
+          "pronunciation": "peepeeno",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To overreact angrily, snap (media tantum stem)",
+          "translation": "-wuapa",
+          "pronunciation": "wuapa",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To sing about exploits (media tantum stem)",
+          "translation": "-oko",
+          "pronunciation": "oko",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To do slowly; be naturally quiet, silent",
+          "translation": "-gɪra",
+          "pronunciation": "gira",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be lonely (media tantum stem)",
+          "translation": "-liyio",
+          "pronunciation": "liyio",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
         }
       ]
     },
@@ -1986,6 +2438,36 @@
           "translation": "kaji?",
           "pronunciation": "kah-jee",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Road / Path",
+          "translation": "Nkoitoi",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Sacred Mountain (Mount Nyiro)",
+          "translation": "Ldonyo Nyiro",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Mathews Range (Ldoinyo Lenkiyio)",
+          "translation": "Ldoinyo Lenkiyio",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Ewaso Ng'iro River",
+          "translation": "Lkeju Ngiro",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Cattle camp",
+          "translation": "Lale",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Water well (singing well)",
+          "translation": "Lkisima",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
         }
       ]
     },
@@ -1993,13 +2475,75 @@
       "id": "shopping",
       "name": "Shopping, Market & Money",
       "icon": "🛒",
-      "entries": []
+      "entries": [
+        {
+          "english": "Market / Livestock auction",
+          "translation": "Sokoni / Lmnada",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Money / Shillings",
+          "translation": "Ropiyiani",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "To buy",
+          "translation": "Ainyang'",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "To sell",
+          "translation": "Amir",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Price / Value",
+          "translation": "Lbeyi",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Shop / Store",
+          "translation": "Lduka",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        }
+      ]
     },
     {
       "id": "emergency",
       "name": "Emergency, Safety & Civic",
       "icon": "🚨",
-      "entries": []
+      "entries": [
+        {
+          "english": "Drought",
+          "translation": "Lamei",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Medicine / Herbal bark",
+          "translation": "Lchani",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Sickness",
+          "translation": "Moyian",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Hospital / Clinic",
+          "translation": "Sipitali",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Peace / Safety",
+          "translation": "Serian",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Help!",
+          "translation": "Retoki!",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        }
+      ]
     },
     {
       "id": "time",
@@ -2228,6 +2772,101 @@
           "translation": "Edakisho nkishu te lkeju",
           "pronunciation": "edakisho nkishu te lkeju",
           "context": "African Next Voices Kenya Kisamburu Transcript Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "We are at peace",
+          "translation": "Kiserian",
+          "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
+        },
+        {
+          "english": "Excrement",
+          "translation": "Ngik (of men)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "Excrement",
+          "translation": "Modī́ (of oxen)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "Progressive verbal suffix (-ɪta / -ito)",
+          "translation": "-ɪta / -ito",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Antipassive verbal suffix (-ɪshɔ(r) / -isho(r))",
+          "translation": "-ɪshɔ(r) / -isho(r)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Ventive directional suffix 'motion towards' (-ʊ(n) / -u(n))",
+          "translation": "-ʊ(n) / -u(n)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Dative applicative suffix (-akɪ(n) / -oki(n))",
+          "translation": "-akɪ(n) / -oki(n)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Singular non-perfective middle suffix (-a(r) / -o(r) / -ɔ(r))",
+          "translation": "-a(r) / -o(r) / -ɔ(r)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Plural non-perfective middle suffix (-ata / -oto / -ɔtɔ)",
+          "translation": "-ata / -oto / -ɔtɔ",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Singular & plural perfective middle suffixes (-ɛ/-e, pl. -atɛ/-ote)",
+          "translation": "-ɛ / -e (pl. -atɛ / -ote)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Middle + inchoative suffix 'able to become' (-ayu / -oyu)",
+          "translation": "-ayu / -oyu",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "That man has a hard heart (unfeeling)",
+          "translation": "k-ɛ́-ɛ́ta ɔltáʊ́ ogól ɛlɛ́ tʊ́ŋání",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "What will you cut it with?",
+          "translation": "káa i-duŋ-íé?",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "A warrior does not get healed by his own medicines",
+          "translation": "m-ɛ́-ba-yú ɔlmʊ́rráni te nkeék enyénak",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "That house has been entered / is possessed",
+          "translation": "ɛ-jɪŋ-á ɛná áji",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The blood coagulated / clotted",
+          "translation": "ɛ-ɪbʊŋ-á ɔsárgɛ",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The ox was divided into portions yesterday",
+          "translation": "ɛ-duŋ-ó ɔlkɪtɛ́ŋ ŋolé",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The ceremonies have ended / ceased",
+          "translation": "ɛ-duŋ-óté intaléŋo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Conflict / chaos (noun)",
+          "translation": "ɛnk=arruoísho",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
         }
       ]
     },
@@ -2529,12 +3168,1437 @@
           "translation": "Moruanghakhulakh ('Hill of Thieves')",
           "pronunciation": "mo-ru-a-ngha-khu-lakh",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 52) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Go (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Habi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "No (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Keiolei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "All (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tukutuk (tukul = all, in Nandi)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Arm (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tuggili",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Axe (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Hegoi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Bad (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tepiter",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Bee (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Keturit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Big (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tein or Tihin",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Bow (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Paha",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Cap (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Karanda (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Cow (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Wuat or Wāt",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Dog (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kwehen",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Ear (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nibe",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Egg (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kechoposhon?",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Far (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tisseggei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Fly (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Esanit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hut (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Hai",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Leg (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ochōt",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Man (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Iei or Sei (Ke-Sei = that is a man), N. = chii",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Now (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Auteti",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Rat (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Daroni",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Red (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Wehen",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Sun (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tezo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Yes (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ii",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Wēhet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Chei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Ten (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kapūn or Apūn",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Back (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tolo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Bird (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Legei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Bone (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Mucho",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Club (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kuma",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Cold (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Demato",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Eyes (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ila",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Fire (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Iku",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Fish (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Singiri (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Food (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Egetu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Foot (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Mijji",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Frog (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Temononi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Fowl (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ngoilet (N. = Ingokiet)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Goat (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Oto",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Good (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shoboshōn",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Grey (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kepuni",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hair (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Risit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hand (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tegei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Head (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Mitei (N. = Metit)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Here (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Taān",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hill (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kaiet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Horn (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Opet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Iron (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sengei (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Kudu (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Malo (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Lake (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ando (variant of Antu = water)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Lies (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sobare",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Lion (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sungai",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Meat (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Iyou",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Moon (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Lei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Milk (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Atta",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Name (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ishi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Near (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tetōō",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Neck (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tochono",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "News (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ogo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Nose (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nugha",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Oryx (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kimasarok (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Rain (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Soho",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Road (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Dar",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Salt (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ngabulei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Sick (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Lua",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Star (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Eso",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Tail (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kidongoi (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Tree (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Keded, tree = ketit in Nandi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Wind (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Dehamu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Work (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shasho",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Four (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shuen",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Five (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Hobi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Born (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Adilit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Above (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Aii",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Ashes (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Romi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Beads (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Siririm",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Beard (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Munyei (M.[])",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Belly (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Irei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Below (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Diberi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Black (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kumbu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Blood (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sogo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Camel (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Laūr",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Chain (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Monhorit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Chest (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shoo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Clean (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tetet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Cloth (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Karasha (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Dirty (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Duruk",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Earth (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tirri",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Eland (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kenetia",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Enemy (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Puri",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Grass (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Hilet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Heart (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ichei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hippo (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Langari",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Honey (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Seka",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Horse (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Barta (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Ivory (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Inji",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Knife (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sheou",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Nails (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sgilli",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "River (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nogoi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Sheep (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Abūr",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Small (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tinīn",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Snake (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Murhot",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Stick (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Siribit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Stone (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tebu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Stool (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Lorigha (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Teeth (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Injīt",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Thing (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kesi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "There (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Soōl",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Thorn (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Orulo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Thief (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shibindet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Truly (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kitēēgo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Water (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Antu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "White (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Pokenyei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Woman (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Damatut",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To go (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nkhana",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I eat (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ndeta",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I see (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ndoyia or Na waakhi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I say (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nokhāa",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I sit (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ngupehema",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Animal (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Henin",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Armlet (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Gaton",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Arrows (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Lah",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Baboon (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Titarit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Behind (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Rosomai",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Clouds (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Katamboi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Cowrie (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Segherai (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Donkey (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Libet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Forest (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sousou (small woods)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Friend (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Darit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Heifer (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Rehei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hyaena (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kotei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Inside (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Irei (N. = oriit)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Saliva (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Endo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Shield (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Reget",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Thirst (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Esho",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To-day (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Achei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Tongue (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Erei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To cut (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nakati",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To die (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Akehet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "We eat (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Egitai",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I know (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ngeheno",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "We say (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nini okan or ogoo okan",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "We sit (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nkupehemu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Beehive (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Merengo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Brother (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Buffalo (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Pie",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Fingers (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Hobi or Hubi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Giraffe (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shanga Dogirri",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Leopard (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shibin",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Not yet (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Erotit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Ostrich (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sida (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Outside (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Bor",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Pincers (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Putet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Quickly (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Habie",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Sandals (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Namoke",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "That is (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kisie",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Tobacco (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kumbahau",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Village (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Luata",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hundred (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Teta",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One axe (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Egoi kiwehet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One man (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kib wehet or kesei wehet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two men (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ke chei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To fall (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nachokei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To give (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Iin",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To love (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Mala",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To milk (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ndiksa",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He eats (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Egeto (giheji) = (food)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "We want (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Jejon",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "We know (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kegeheni or Gaiheno",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He says (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Okhoi or okhō",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I sleep (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nbomwa",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He sits (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Akupehem",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Buttocks (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kashi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Elephant (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sogome",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Firewood (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Keme",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Wart-hog (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kwehei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One bird (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Legei wehet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One hand (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tegei wehetu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One lion (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sungai kiwehet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two axes (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Egoi kechei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To awake (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nakahou",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To bathe (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tohodi, Ntoka",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To bring (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ilehei (cause to come)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They eat (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Egeto (gihechen)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He wants (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Jeji",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He knows (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Cheheno or chegekeheno",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They say (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Okoyan or yesaga okan",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "We sleep (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nabomi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They sit (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Akupehemit",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Crocodile (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Keinyang (M.), Nyang = crocodile in Tho-Luo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Snuff box (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ketil",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To-morrow (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Imehei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Yesterday (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Khalen",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two birds (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Legei kechei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One knife (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sheou wehetu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One house (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Hai wehet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two hands (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tegei cheion or jejon",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two lions (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sungai muchei or kechei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One spear (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tor kiwehet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Three men (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kha haat or kesei khahaat",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One woman (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Damatut wehetu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two women (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Damatuti chei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To follow (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Khabi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To forget (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nashanet, Shaanu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To obtain (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kendēr",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To return (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Naecho",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They want (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kejehen",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They know (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Chegehen or kisei chekehen (those people)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I am good (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kongo shoboshon",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He is bad (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ke tepiter",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He sleeps (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nbomi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Brass wire (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Oton",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Mogogodo (Il Mwesi / Yaaku) Chiefs Parmashu & Matungi and Mweru Laibon Lakaibe",
+          "translation": "Il Mwesi (Masai name for the Mogogodo) • Chiefs Parmashu & Matungi • Laibon Lakaibe",
+          "context": "Mogogodo ethnography — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. V, p. 146) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Long since (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Etirak",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Rhinoceros (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Orset",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Salutation (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Keshoboshon (Sobat of Masai)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Salutation (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Aishei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Woman, old (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tasat",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two knives (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sheou kechei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two houses (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Hai kechei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two spears (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tor kechei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "To scratch (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kahata",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He is good (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ke shoboshon",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They sleep (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nebomin",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Child, male (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Utei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Cooking pot (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Duru",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Father, own (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Pashi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Girl, young (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Eta",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Guinea fowl (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Keresure (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Mother, own (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Iyo (N. = eiyo)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Mogogodo (Yaaku) Numerals 1–100 (Hobley 1910, Part II, Ch. V, p. 152)",
+          "translation": "1 Kibwehet, 2 Kechei, 3 Khahaat, 4 Ikwani, 5 Imiet, 10 Tomon, 100 Ipp",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. V, p. 152) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Three lions (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sungai khahaat",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Three women (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Damatuti khahaat",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I do not go (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Niakhani",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "We are good (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kege shoboshonadi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Ye are good (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kabu shoboshonadi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I am coming (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nalehe",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Cover or lid (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Imni",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Forest (big) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kaiet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hide (of ox) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ata",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Moru (elder) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Roshei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Palm of hand (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Dab (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Simé (sword) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shutei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Woman, young (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Siangiki (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "One elephant (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sogomei kibwehet",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Three knives (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sheou khahaat",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Three spears (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Tor khahaat",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Thou knowest (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Geheno",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I do not see (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ila teetei or Ngñen a waakan",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He is coming (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Alehe",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Take hold of (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Injan",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Child, female (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kerai",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Country, land (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Dimin",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Quiver (noun) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ror",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Supreme being (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sokho or Engai (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Wild fig tree (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Chōl mokōt",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Two elephants (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sogomedi kechei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I do not know (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ishahanu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I do not want (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ngjeji",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I go to water (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Antu Khalkhani",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Thou art good (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kagu shoboshon",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They are good (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ke shoboshonadi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "We are coming (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nalehenu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Before (place) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ietu",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Father, else's (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Payisi (N. = Apoiyo)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Mother, else's (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Itigarai",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Present (noun) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Parna",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Zebra, Grevy's (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ol-Kanka kepuni (grey)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hide (any skin) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Keshi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Moran (warrior) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Oromishi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They are coming (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Lehei or keselehei",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I drink (water) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Nukha (antu)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Colobus (monkey) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Koroi (M.)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "He wants a thing (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kwi kijeji",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Generation or age (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Erei (Poror of Masai)",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Poison for arrows (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Morijoi (name of tree used) M. Akokanthera Schimperi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Zebra, Burchell's (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ol-oserat",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Where are you going (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Shilākhandi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Paa, Madoqua Gazelle (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Embaba",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "I can't see anything (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ngñen toiyi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Hide (of wild animal) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Omōt",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "They have come from afar (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Kesi Gedi",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Conversation between two people (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Maokhoten okōo",
+          "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Witch",
+          "translation": "Ol-labanani",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
         }
       ]
     }
   ],
-  "source": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982)",
+  "source": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)",
   "isoCode": "saq",
   "glottocode": "samb1315",
-  "totalEntries": 401
+  "totalEntries": 803
 }

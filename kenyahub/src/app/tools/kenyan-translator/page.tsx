@@ -22,6 +22,7 @@ import {
 } from "@/data/language-sources";
 import { getLanguageIdentity } from "@/data/language-identity";
 import { addContribution, subscribeContributions } from "@/lib/contributions";
+import { playLanguageAudio } from "@/lib/language-audio";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
 import {
@@ -251,18 +252,7 @@ export default function KenyanTranslatorPage() {
 
   // Copy to clipboard
   const playAudio = useCallback((entry: DictEntry, langId?: string) => {
-    if (entry.audioFile && typeof window !== "undefined") {
-      const audio = new Audio(entry.audioFile);
-      audio.play().catch(() => {});
-      return;
-    }
-    if (typeof window !== "undefined" && "speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-      const utter = new SpeechSynthesisUtterance(entry.translation.split(/[\/(]/)[0].trim());
-      utter.lang = langId === "swahili" ? "sw-KE" : "sw";
-      utter.rate = 0.92;
-      window.speechSynthesis.speak(utter);
-    }
+    playLanguageAudio(entry, langId || "swahili");
   }, []);
 
   const copyToClipboard = useCallback((text: string) => {
@@ -751,13 +741,12 @@ export default function KenyanTranslatorPage() {
                                   ) : (
                                     <>
                                       <p className="text-sm font-bold text-gold break-words">{result.entry.translation}</p>
-                                      {(result.entry.pronunciation || result.entry.audioFile) && (
+                                      {Boolean(result.entry.translation) && (
                                         <div className="flex items-center gap-1.5 mt-0.5">
                                           {result.entry.pronunciation && (
                                             <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
                                           )}
-                                          {result.entry.audioFile && (
-                                            <button
+                                          <button
                                               type="button"
                                               onClick={() => playAudio(result.entry, result.languageId)}
                                               className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
@@ -765,7 +754,6 @@ export default function KenyanTranslatorPage() {
                                             >
                                               🔊 Listen
                                             </button>
-                                          )}
                                         </div>
                                       )}
                                     </>
@@ -781,13 +769,12 @@ export default function KenyanTranslatorPage() {
                                 <div>
                                   <p className="text-[0.55rem] uppercase tracking-wider text-text-muted mb-0.5">{isReverseToEnglish ? "English" : result.languageName}</p>
                                   <p className="text-sm font-bold text-gold break-words">{isReverseToEnglish ? result.entry.english : result.entry.translation}</p>
-                                  {(result.entry.pronunciation || result.entry.audioFile) && (
+                                  {Boolean(result.entry.translation) && (
                                         <div className="flex items-center gap-1.5 mt-0.5">
                                           {result.entry.pronunciation && (
                                             <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
                                           )}
-                                          {result.entry.audioFile && (
-                                            <button
+                                          <button
                                               type="button"
                                               onClick={() => playAudio(result.entry, result.languageId)}
                                               className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
@@ -795,7 +782,6 @@ export default function KenyanTranslatorPage() {
                                             >
                                               🔊 Listen
                                             </button>
-                                          )}
                                         </div>
                                       )}
                                 </div>
@@ -954,13 +940,12 @@ export default function KenyanTranslatorPage() {
                                       <p className="text-[0.8125rem] text-gold font-bold break-words">{entry.translation}</p>
                                     </div>
                                     <div>
-                                      {(entry.pronunciation || entry.audioFile) && (
+                                      {Boolean(entry.translation) && (
                                         <div className="flex items-center gap-1.5 flex-wrap">
                                           {entry.pronunciation && (
                                             <p className="text-[0.75rem] text-text-muted italic break-words">/{entry.pronunciation}/</p>
                                           )}
-                                          {entry.audioFile && (
-                                            <button
+                                          <button
                                               type="button"
                                               onClick={() => playAudio(entry, browseDict.languageId)}
                                               className="inline-flex items-center gap-1 text-[0.65rem] text-sky hover:underline font-semibold"
@@ -968,7 +953,6 @@ export default function KenyanTranslatorPage() {
                                             >
                                               🔊 Listen
                                             </button>
-                                          )}
                                         </div>
                                       )}
                                       {entry.context && (
@@ -1196,20 +1180,18 @@ export default function KenyanTranslatorPage() {
                       </div>
                       <p className="text-xs font-medium text-text-secondary break-words">{item.entry.english}</p>
                       <p className="text-sm font-bold text-gold break-words mt-0.5">{item.entry.translation}</p>
-                      {(item.entry.pronunciation || item.entry.audioFile) && (
+                      {Boolean(item.entry.translation) && (
                         <div className="flex items-center gap-1.5 mt-0.5">
                           {item.entry.pronunciation && (
                             <p className="text-[0.65rem] text-text-muted italic">/{item.entry.pronunciation}/</p>
                           )}
-                          {item.entry.audioFile && (
-                            <button
+                          <button
                               type="button"
                               onClick={() => playAudio(item.entry, item.languageId)}
                               className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
                             >
                               🔊 Listen
                             </button>
-                          )}
                         </div>
                       )}
                     </div>

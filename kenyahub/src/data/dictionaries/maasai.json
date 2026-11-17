@@ -10,9 +10,9 @@
     "Kajiado",
     "Samburu"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-17",
   "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0).",
   "categories": [
     {
@@ -548,6 +548,96 @@
           "translation": "ari, or are",
           "pronunciation": "ari",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Number",
+          "translation": "Masai",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Two sixties =",
+          "translation": "īp ari",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We have not seen anyone",
+          "translation": "etiyo kidologonanyi",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bone",
+          "translation": "Oloito",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Bone",
+          "translation": "Eloik (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "One",
+          "translation": "Obώ (m.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "One",
+          "translation": "nabo (f.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Three",
+          "translation": "Oguni (m.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Three",
+          "translation": "uni (f.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Four",
+          "translation": "Uñwan",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Four",
+          "translation": "eoñwan",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Five",
+          "translation": "Amiet",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Five",
+          "translation": "imiet",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Sixty",
+          "translation": "otomon",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Seventy",
+          "translation": "obikitam",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Eighty",
+          "translation": "otomoni uni",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Ninety",
+          "translation": "artam",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "the small one",
+          "translation": "Ol-oti",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         }
       ]
     },
@@ -798,7 +888,7 @@
         },
         {
           "english": "Warrior Manyatta (Barracks)",
-          "translation": "e-manyata (pl. i-manyat)",
+          "translation": "e-manyata (pl i-manyat)",
           "pronunciation": "eh-mah-nyah-tah",
           "context": "Hollis 1905 p. 296 • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -996,14 +1086,8 @@
         },
         {
           "english": "The big man",
-          "translation": "Ol-kitok-tu5gani",
+          "translation": "Ol-kitok-tungani",
           "pronunciation": "ol-kitok-tu5gani",
-          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
-        },
-        {
-          "english": "The husband",
-          "translation": "The old man",
-          "pronunciation": "the ol man",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -1104,7 +1188,7 @@
         },
         {
           "english": "The strong man",
-          "translation": "Ol-oing5ni Il-oiflgok The bull",
+          "translation": "Ol-oingoni (pl. Il-oingok)",
           "pronunciation": "ol-oing5ni il-oiflgok the bull",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -1224,7 +1308,7 @@
         },
         {
           "english": "The man who is big",
-          "translation": "Ol-tungani o-ra3 sapuk",
+          "translation": "Ol-tungani o-ra sapuk",
           "pronunciation": "ol-tungani o-ra3 sa-puk",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -1374,13 +1458,13 @@
         },
         {
           "english": "The man who followed him",
-          "translation": "Ol-tuflgani o-tu-suj-a",
+          "translation": "Ol-tungani o-tu-suj-a",
           "pronunciation": "ol-tuflgani o-tu-suj-a",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "The man whom he followed",
-          "translation": "Ol-tungani 0-tu-suj-a",
+          "translation": "Ol-tungani o-tu-suj-a",
           "pronunciation": "ol-tungani 0-tu-suj-a",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -1565,12 +1649,6 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part II, pp. 103–237) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Accidental homicide within the same clan",
-          "translation": "14 to 29 cattle",
-          "pronunciation": "14-to-29-cattle",
-          "context": "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 310–312, 344–345) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
-        },
-        {
           "english": "Against the man addressed",
           "translation": "Djerrterrā",
           "pronunciation": "djerrterrā",
@@ -1677,6 +1755,131 @@
           "translation": "ngoirraion pl. ngoirroiok, term of opprobrium",
           "pronunciation": "ngoirraion pl ngoirroiok",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "essondā",
+          "translation": "= wall",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Where is your sister?",
+          "translation": "kore anganashe ingu?",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Where is the child?",
+          "translation": "kore ngerai?",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We have no children",
+          "translation": "miker ngera",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We have a father",
+          "translation": "kerrai iloababa",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring more children",
+          "translation": "torrigu gulegera",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We have seen many children",
+          "translation": "erradua ngera kumuk",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Brother",
+          "translation": "lalashe",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Brother",
+          "translation": "Añgargenna (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Chief",
+          "translation": "Embatiān",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Chief",
+          "translation": "Ol aitórienĭ",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Chief",
+          "translation": "Lagwainani",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Man / Men",
+          "translation": "Ol doñani",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Man / Men",
+          "translation": "El toñana",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Wife",
+          "translation": "Eñ getok",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Wife",
+          "translation": "En gedūa (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Their children",
+          "translation": "gera nyē",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "the little man",
+          "translation": "En-duSgani",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the little boy",
+          "translation": "Eng-ayoni",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the father or Eng-aputani",
+          "translation": "Ol-aputani",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "this girl",
+          "translation": "Enna-tito",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the young warrior",
+          "translation": "Ol-barnoti",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the daughter",
+          "translation": "En-dito",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the daughters",
+          "translation": "In-doiye",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "this child",
+          "translation": "Enna-kerai",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         }
       ]
     },
@@ -2467,7 +2670,7 @@
         },
         {
           "english": "The blood",
-          "translation": "0-sarge (for ol-sarge)",
+          "translation": "'L-osarge (for ol-sarge)",
           "pronunciation": "0 sar-ge",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -2716,6 +2919,106 @@
           "translation": "engolac",
           "pronunciation": "engolac",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "We have spears",
+          "translation": "ker erremeta",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring more chairs",
+          "translation": "iaw orrigaiishi",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "eyebrows / eyelashes",
+          "translation": "elbabit ngongo (literally, the hairs of the eyes)",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "hear",
+          "translation": "atorningu nani (sing.) / negining (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Body",
+          "translation": "sessin",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Body",
+          "translation": "O essessin (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Breast",
+          "translation": "Or rogho",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Eye",
+          "translation": "Añgoño",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Eye",
+          "translation": "Ngoinyek (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Nail (of finger or toe)",
+          "translation": "Ol oisotṓ",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Nail (of finger or toe)",
+          "translation": "Saiyet",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Toe",
+          "translation": "El gimojinno",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Toe",
+          "translation": "gimojik",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Toe",
+          "translation": "pl",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Tooth",
+          "translation": "Walale",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Tooth",
+          "translation": "Elalla",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Tooth",
+          "translation": "pl",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Year",
+          "translation": "Ol lari",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Year",
+          "translation": "El larin",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Year",
+          "translation": "pl",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         }
       ]
     },
@@ -3764,7 +4067,7 @@
         },
         {
           "english": "The elephant",
-          "translation": "Ol-le-'ng-aina (the-of-the-hand 1)",
+          "translation": "Ol-le-'ng-aina (lit. the-of-the-hand)",
           "pronunciation": "ol le 'ng ai-na",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -3991,12 +4294,6 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part III, Nos. 1–75, pp. 238–252) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Theft of a cow or ox",
-          "translation": "7 cattle restitution",
-          "pronunciation": "7-cattle-restitution",
-          "context": "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905, Part VI, pp. 310–312, 344–345) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
-        },
-        {
           "english": "Rotational grazing preserves grass and water pans for cattle and wildlife",
           "translation": "Erripata oo nkishu taa olpurkel oosupuko nerrip olkujita oo nboor",
           "pronunciation": "erripata-oo-nkishu-taa",
@@ -4073,6 +4370,186 @@
           "translation": "ngera",
           "pronunciation": "ngera",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Large bird",
+          "translation": "ol-motonyi (pl. il-motonyi)",
+          "context": "Maasai • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "We want to bathe",
+          "translation": "iyu negasoja",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to say",
+          "translation": "kiyu negero",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to fight",
+          "translation": "kiyu ngigerishu",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to buy cows",
+          "translation": "kiyu neginyawng ngishu",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to take away the things",
+          "translation": "kiyu iog naidaw ndogitin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to dance",
+          "translation": "kiyu negigorran",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to hear",
+          "translation": "kiyu negining",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to sing",
+          "translation": "kiyu negerran",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to look",
+          "translation": "kiyu negongorr",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to know",
+          "translation": "kiyu iog negiolog",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to give",
+          "translation": "kiyu negenjog",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to put",
+          "translation": "kiyu negiragi",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to spit",
+          "translation": "kiyu neginortagi",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to run away",
+          "translation": "kiyu negilwaiyer",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to hunt",
+          "translation": "kiyu iog negingorishu",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to sew",
+          "translation": "kiyu negerebeshu",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring more cows",
+          "translation": "terriaw gulegishu",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "catch",
+          "translation": "emboonga. nebong (sing.) / negibong (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Ant",
+          "translation": "Endirango",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Ant",
+          "translation": "Esemenja",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Ol osowan",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Buffalo",
+          "translation": "oisā",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Bull (white)",
+          "translation": "ĕñōni ĕpor",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Bullock",
+          "translation": "giteñ",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Dog",
+          "translation": "dia",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Dog",
+          "translation": "El dīeñ (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Giraffe",
+          "translation": "O' Nolenyok",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Ladokira-gata",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Giraffe",
+          "translation": "El jaña marai",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Goat",
+          "translation": "Eñginne",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Goat",
+          "translation": "Ndare (flock)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "the cow calf",
+          "translation": "Eng-ashe",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the coward",
+          "translation": "Ol-kuret",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the ox",
+          "translation": "En-giteng",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the cattle",
+          "translation": "In-gishu",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         }
       ]
     },
@@ -4754,8 +5231,8 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Enaibasha (lake)",
-          "translation": "the great water or sea",
+          "english": "the great water or sea",
+          "translation": "Enaibasha (lake)",
           "pronunciation": "the great water",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -4802,8 +5279,8 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Gwasso kidong (river)",
-          "translation": "the river of the ollokidong trees (the wood of these trees is used for making quivers)",
+          "english": "the river of the ollokidong trees (the wood of these trees is used for making quivers)",
+          "translation": "Gwasso kidong (river)",
           "pronunciation": "the river of the ollokidong trees",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -4992,6 +5469,86 @@
           "translation": "enk-áí / en-kóp (Maa tonal case)",
           "pronunciation": "enk-áí",
           "context": "Eastern Nilotic tonal case marking in Maa (Blum 2026, Ch. 11) • Source: Mirella L. Blum 2026 (African Tone Phenomena, Language Science Press #621, Ch. 11, https://langsci-press.org/catalog/book/621, CC-BY-4.0)"
+        },
+        {
+          "english": "Day",
+          "translation": "Ongolloñ",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Day",
+          "translation": "Emūto",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Mountain",
+          "translation": "Ol doinyo",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Mountain",
+          "translation": "El doinyo",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Mountain",
+          "translation": "pl",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Rain",
+          "translation": "Attashá",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Rain",
+          "translation": "? Ngai",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "River",
+          "translation": "Ehwaso",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "River",
+          "translation": "E'gwaso",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Smoke",
+          "translation": "Emburuwo",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Smoke",
+          "translation": "El burro",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Wind",
+          "translation": "Es sessiwi",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Wind",
+          "translation": "Eñ gijabe (cold)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "That tree",
+          "translation": "anḍā",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "the trees",
+          "translation": "Il-kak",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the small trees",
+          "translation": "In-gak",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         }
       ]
     },
@@ -5361,12 +5918,6 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "The meat",
-          "translation": "The animal",
-          "pronunciation": "the a-ni-mal",
-          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
-        },
-        {
           "english": "Why meat?",
           "translation": "ainyo bangirri?",
           "pronunciation": "ainyo bangirri",
@@ -5731,6 +6282,76 @@
           "translation": "ngūlē",
           "pronunciation": "ngūlē",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Cook",
+          "translation": "tiarra. (neyerr (sing.)) / (negiyerr (pl.), inf.)",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "They eat or will eat",
+          "translation": "kenya nenje / oō nenje / enosseje",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to drink",
+          "translation": "iyu ngiog",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to bring food",
+          "translation": "kiyu iog negiaw nda",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to cook the food",
+          "translation": "kiyu negiyen nda",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to steal meat",
+          "translation": "kiyu negibirro ngirri",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to pour out water",
+          "translation": "kiyu negibeg ngare",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring drinking water",
+          "translation": "iaw ngare nau",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring food",
+          "translation": "iaw nda",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring hot water",
+          "translation": "iaw ngare nairogua",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring more food",
+          "translation": "iaw iaida or eatatai",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring more cold water",
+          "translation": "iaw aiare nairobi",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We want to drink",
+          "translation": "kiju iog nkiog",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "cook",
+          "translation": "tiarra. neyerr (sing.) / negiyerr (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         }
       ]
     },
@@ -6077,7 +6698,7 @@
         },
         {
           "english": "The shield",
-          "translation": "El-loft1 go (for en-longo)",
+          "translation": "El-loño (for en-loño)",
           "pronunciation": "el lof 1 go",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -6508,44 +7129,44 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Sidai orlaiyon",
-          "translation": "= a good boy",
+          "english": "a good boy",
+          "translation": "Sidai orlaiyon",
           "pronunciation": "a good boy",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Sidai engitok",
-          "translation": "= a good woman",
+          "english": "a good woman",
+          "translation": "Sidai engitok",
           "pronunciation": "a good woman",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Sidai ngishu",
-          "translation": "= good cattle",
+          "english": "good cattle",
+          "translation": "Sidai ngishu",
           "pronunciation": "good cattle",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Sidai ngaji",
-          "translation": "= a good house",
+          "english": "a good house",
+          "translation": "Sidai ngaji",
           "pronunciation": "a good house",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Sidai nda",
-          "translation": "= good food",
+          "english": "good food",
+          "translation": "Sidai nda",
           "pronunciation": "good food",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Sidai orldia",
-          "translation": "= a good dog",
+          "english": "a good dog",
+          "translation": "Sidai orldia",
           "pronunciation": "a good dog",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Atwa ngaji",
-          "translation": "= in the house",
+          "english": "in the house",
+          "translation": "Atwa ngaji",
           "pronunciation": "in the house",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -6562,8 +7183,8 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Red cloth",
-          "translation": "Hot water",
+          "english": "Hot water",
+          "translation": "Red cloth",
           "pronunciation": "hot water",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -6980,6 +7601,51 @@
           "translation": "ainyēna?",
           "pronunciation": "ainyēna",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Adjudge",
+          "translation": "tudungu orrori (literally, to cut the noise or difficulty)",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Where is my knife?",
+          "translation": "kore olalim elai?",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "shut",
+          "translation": "tubuguru naigen (sing.) / nigingen (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Door",
+          "translation": "Ekotoraji",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Door",
+          "translation": "Kusugaji",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Thy house",
+          "translation": "linno",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "His house",
+          "translation": "lenye",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "the knife",
+          "translation": "Eng-alem",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "this shield",
+          "translation": "Enna-longo",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         }
       ]
     },
@@ -6990,7 +7656,7 @@
       "entries": [
         {
           "english": "Go",
-          "translation": "a-lo (pl. a-puo; Imperative: Shomo!)",
+          "translation": "a-lo (pl a-puo; Imperative: Shomo!)",
           "pronunciation": "a-lo",
           "context": "Hollis 1905 & Hinde 1901 • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -7008,7 +7674,7 @@
         },
         {
           "english": "Come",
-          "translation": "a-lotu (pl. a-ponu; Imperative: Wou!)",
+          "translation": "a-lotu (pl a-ponu; Imperative: Wou!)",
           "pronunciation": "a-lotu",
           "context": "Hollis 1905 & Hinde 1901 • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -7212,7 +7878,7 @@
         },
         {
           "english": "To know",
-          "translation": "A-iy5lo-u",
+          "translation": "A-iyolo-u",
           "pronunciation": "a-iy5lo-u",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -7368,7 +8034,7 @@
         },
         {
           "english": "To cause to hide",
-          "translation": "A-isud-6-rie",
+          "translation": "A-isud-o-rie",
           "pronunciation": "a i-sud 6 rie",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -7511,8 +8177,8 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "To chew, is sometimes also pronounced a-nyaal",
-          "translation": "1 A-nyal",
+          "english": "To chew",
+          "translation": "A-nyal (also a-nyaal)",
           "pronunciation": "1 a-nyal",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -7833,6 +8499,373 @@
           "translation": "media tantum (-a / -o experiential verbs)",
           "pronunciation": "med-ia-tant-um",
           "context": "Maa media tantum verbs lacking a simple unmarked transitive counterpart (Payne 2026, Ch. 12) • Source: Doris L. Payne 2026 (Pamoja tena, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
+        },
+        {
+          "english": "Spit",
+          "translation": "tornodoi nenordargi (sing.) / neginortargi (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Bathe",
+          "translation": "aisojai naisoja (sing.) / negasoja (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Shut",
+          "translation": "tubuguru (naigen (sing.)) / (nigingen (pl.), inf.)",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Bring thou",
+          "translation": "iau",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring ye",
+          "translation": "eau",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Carry thou",
+          "translation": "tanabo / yaua iye",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Open thou",
+          "translation": "taala / tobollo",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring more men",
+          "translation": "torrigu kelogaitungana",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Bring more bottles",
+          "translation": "iaw illigaidulet",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "bring forth (about to)",
+          "translation": "endua",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "take care of",
+          "translation": "ingorāī",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "To cut (transitive active)",
+          "translation": "a-dúŋ",
+          "pronunciation": "a-dung",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be in a cut state, demarcated, separated; cease flow (middle)",
+          "translation": "a-duŋ-ó",
+          "pronunciation": "a-dung-o",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To cut each other; be divided into portions (plural/antipassive middle)",
+          "translation": "áa-duŋ-o",
+          "pronunciation": "aa-dung-o",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To let out tiny amounts of liquid, sweat",
+          "translation": "a-ɪnyɪnyɪrʊ́",
+          "pronunciation": "a-inyinyiru",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be let out in tiny amounts (ventive middle)",
+          "translation": "a-ɪnyɪnyɪrʊnyɛ́",
+          "pronunciation": "a-inyinyirunye",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To enter a place",
+          "translation": "a-jɪ́ŋ",
+          "pronunciation": "a-jing",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be entered; be possessed by a spirit (middle)",
+          "translation": "a-jɪŋ-á",
+          "pronunciation": "a-jing-a",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To catch, arrest, touch",
+          "translation": "a-ɪbʊ́ŋ",
+          "pronunciation": "a-ibung",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To coagulate, be coagulated (middle)",
+          "translation": "a-ɪbʊŋ-á",
+          "pronunciation": "a-ibung-a",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be drunk, intoxicated (media tantum)",
+          "translation": "a-mɛrá",
+          "pronunciation": "a-mera",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make drunk, intoxicate (Class 1 causative)",
+          "translation": "a-ɪtɛ-mɛ́r",
+          "pronunciation": "a-ite-mer",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be pregnant, gravid (media tantum)",
+          "translation": "a-nʊtá",
+          "pronunciation": "a-nuta",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To impregnate (Class 1 causative)",
+          "translation": "a-ɪtʊ-nʊ́t",
+          "pronunciation": "a-itu-nut",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To fall down (media tantum)",
+          "translation": "a-rriá",
+          "pronunciation": "a-rria",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To ferment (media tantum)",
+          "translation": "a-isiijó",
+          "pronunciation": "a-isiijo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be conspicuous, unambiguous, likely to happen",
+          "translation": "a-ɪbalá",
+          "pronunciation": "a-ibala",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be piled up, crammed",
+          "translation": "a-ineníá",
+          "pronunciation": "a-inenia",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be visible, apparent",
+          "translation": "a-lioó",
+          "pronunciation": "a-lioo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be underfed (of cattle)",
+          "translation": "a-lubó",
+          "pronunciation": "a-lubo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To match, be advisable (dative middle)",
+          "translation": "a-narikinó",
+          "pronunciation": "a-narikino",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To quake, tremble (of the earth)",
+          "translation": "a-ɪkɪrɪkɪrá",
+          "pronunciation": "a-ikirikira",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be sickly, chronically unwell",
+          "translation": "a-sɛshá",
+          "pronunciation": "a-sesha",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To squat, sit down",
+          "translation": "a-ɪgʊtʊmá",
+          "pronunciation": "a-igutuma",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To vomit",
+          "translation": "a-gʊrrʊmá",
+          "pronunciation": "a-gurruma",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be inattentive; play joyfully",
+          "translation": "a-dalá",
+          "pronunciation": "a-dala",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be proud",
+          "translation": "a-ɪmasó",
+          "pronunciation": "a-imaso",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be happy, haughty, naughty",
+          "translation": "a-ŋɪdá",
+          "pronunciation": "a-ngida",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To obscure, hide behind something",
+          "translation": "a-ɪgará",
+          "pronunciation": "a-igara",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To hide with or behind (instrument applicative)",
+          "translation": "a-ɪgar-íé",
+          "pronunciation": "a-igar-ie",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be holy, perfect, spotless",
+          "translation": "a-sɪnyá",
+          "pronunciation": "a-sinya",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make holy, cleanse (causative)",
+          "translation": "a-ɪtɪ-sɪ́ny",
+          "pronunciation": "a-iti-siny",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Holy, blameless (singular / plural adjective)",
+          "translation": "sinyáti (pl. sinyát)",
+          "pronunciation": "sinyati",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be hot (stative)",
+          "translation": "a-ɪrowúá",
+          "pronunciation": "a-irowua",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To heat with, make hot (instrumental)",
+          "translation": "a-irowuaj-íé",
+          "pronunciation": "a-irowuaj-ie",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To become hot (inchoative)",
+          "translation": "a-irowuaj-ú",
+          "pronunciation": "a-irowuaj-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be long, tall, linearly extended",
+          "translation": "a-adɔ́",
+          "pronunciation": "a-ado",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Will become tall (inchoative)",
+          "translation": "ɛ-adór-ū",
+          "pronunciation": "e-ador-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be tender, soft, gentle",
+          "translation": "a-naná",
+          "pronunciation": "a-nana",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To make soft, soften",
+          "translation": "a-ɪta-naná",
+          "pronunciation": "a-ita-nana",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To become soft",
+          "translation": "a-naná-ú",
+          "pronunciation": "a-nana-u",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To bathe oneself (grooming middle)",
+          "translation": "a-itukúó",
+          "pronunciation": "a-itukuo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To wash oneself / wash hands (grooming middle)",
+          "translation": "a-ɪsʊjá",
+          "pronunciation": "a-isuja",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To adorn oneself (grooming middle)",
+          "translation": "a-ɪsɪkarrá",
+          "pronunciation": "a-isikarra",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To dress oneself (grooming middle)",
+          "translation": "a-ishopó",
+          "pronunciation": "a-ishopo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To scratch oneself (grooming middle)",
+          "translation": "a-girró",
+          "pronunciation": "a-girro",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To emotionally cling to; elope (media tantum stem)",
+          "translation": "-raya",
+          "pronunciation": "raya",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be proud of, boast of (media tantum stem)",
+          "translation": "-ŋɪdarɛ",
+          "pronunciation": "ngidare",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be a troublemaker, loiter (media tantum stem)",
+          "translation": "-peepeeno",
+          "pronunciation": "peepeeno",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To overreact angrily, snap (media tantum stem)",
+          "translation": "-wuapa",
+          "pronunciation": "wuapa",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To sing about exploits (media tantum stem)",
+          "translation": "-oko",
+          "pronunciation": "oko",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To do slowly; be naturally quiet, silent",
+          "translation": "-gɪra",
+          "pronunciation": "gira",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "To be lonely (media tantum stem)",
+          "translation": "-liyio",
+          "pronunciation": "liyio",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
         }
       ]
     },
@@ -8287,7 +9320,7 @@
         },
         {
           "english": "The white men",
-          "translation": "Il-tuftganak oo-ibor",
+          "translation": "Il-tuñganak oo-ibor",
           "pronunciation": "il tuf-tga-nak oo i-bor",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -8359,7 +9392,7 @@
         },
         {
           "english": "The small women",
-          "translation": "'ftgoroyok kutiti",
+          "translation": "'Ñgoroyok kutiti",
           "pronunciation": "'f-tgo-ro-yok ku-ti-ti",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -8729,6 +9762,26 @@
           "translation": "Gaji 'ṣomo?",
           "pronunciation": "gaji 'ṣmo",
           "context": "Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Return",
+          "translation": "torrinyoi or inyai (nairem (sing.)) / (nerrinyu (pl.), inf.)",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "return",
+          "translation": "torrinyoi or inyai nairem (sing.) / nerrinyu (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "run away",
+          "translation": "essdoi nilwaiyer (sing.) / negil waiyer (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "the small beast of the snatcher",
+          "translation": "Eng-owayu",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         }
       ]
     },
@@ -8844,6 +9897,16 @@
           "translation": "Olduka",
           "pronunciation": "olduka",
           "context": "African Next Voices Kimasaai Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Buy",
+          "translation": "enyāngu (nenyong (sing.)) / (neginawng (pl.), inf.)",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "buy",
+          "translation": "enyāngu nenyong (sing.) / neginawng (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         }
       ]
     },
@@ -9175,6 +10238,46 @@
           "translation": "Ol oborikho",
           "pronunciation": "ol oborio",
           "context": "Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Fight",
+          "translation": "etaara (naar (sing.)) / (negigerishu (pl.), inf.)",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "mowarrak",
+          "translation": "= horn",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "He she or it carries or will carry",
+          "translation": "kenaba nenye / ewadu nenye",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We look or will look",
+          "translation": "keyaw / kengora siog",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "fight",
+          "translation": "etaara naar (sing.) / negigerishu (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "He steals",
+          "translation": "Eburigho",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "He steals",
+          "translation": "Eburiṣo",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "the medicine",
+          "translation": "En-aibon",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         }
       ]
     },
@@ -9598,8 +10701,8 @@
           "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
-          "english": "I am yesterday",
-          "translation": "I have a cow last night",
+          "english": "I have a cow last night",
+          "translation": "I am yesterday",
           "pronunciation": "i have a cow last night",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -10038,7 +11141,7 @@
         },
         {
           "english": "Club (Rungu)",
-          "translation": "o-rinka (pl. i-rinkan)",
+          "translation": "o-rinka (pl i-rinkan)",
           "pronunciation": "oh-reen-kah",
           "context": "Hollis 1905 & Hinde 1901 • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -12012,19 +13115,19 @@
         },
         {
           "english": "Ngaina → ngaieg, ndāridigi → ndāridig",
-          "translation": "-g",
+          "translation": "g",
           "pronunciation": "-g",
           "context": "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, Rules 18–21, pp. 8–10) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Olashi → olasho, endōlit → endōlo",
-          "translation": "-o",
+          "translation": "o",
           "pronunciation": "-o",
           "context": "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, Rules 18–21, pp. 8–10) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Ollogurrto → ollogurrt, engumoru → engumurrt, engias → engiaset",
-          "translation": "-t",
+          "translation": "t",
           "pronunciation": "-t",
           "context": "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, Rules 18–21, pp. 8–10) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -12275,8 +13378,8 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Ngorroiok",
-          "translation": "= woman",
+          "english": "woman",
+          "translation": "Ngorroiok",
           "pronunciation": "woman",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -12287,8 +13390,8 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Ngerr",
-          "translation": "= sheep",
+          "english": "sheep",
+          "translation": "Ngerr",
           "pronunciation": "sheep",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -12906,19 +14009,19 @@
         },
         {
           "english": "Thou carriest or wilt carry",
-          "translation": "(tanaba iye /",
+          "translation": "tanaba iye /",
           "pronunciation": "tanaba iye",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "Carry thou",
-          "translation": "(tanabo /",
+          "translation": "tanabo /",
           "pronunciation": "tanabo",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "He she or it carries or will carry",
-          "translation": "(kenaba nenye /",
+          "translation": "kenaba nenye /",
           "pronunciation": "kenaba nenye",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -14142,7 +15245,7 @@
         },
         {
           "english": "They eat or will eat",
-          "translation": "(kenya nenje / (oō nenje /",
+          "translation": "kenya nenje / oō nenje",
           "pronunciation": "kenya nenje",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -14496,7 +15599,7 @@
         },
         {
           "english": "Open thou",
-          "translation": "(taala /",
+          "translation": "taala /",
           "pronunciation": "taala",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -14688,7 +15791,7 @@
         },
         {
           "english": "Remove thou",
-          "translation": "(todomo /",
+          "translation": "todomo /",
           "pronunciation": "todomo",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -16020,7 +17123,7 @@
         },
         {
           "english": "They begin to wash (him)",
-          "translation": "E-figas a-isuj",
+          "translation": "E-ñgas a-isuj",
           "pronunciation": "e-figas a-isuj",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
@@ -16031,7 +17134,7 @@
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "The elephant (lit. the-of-the-hand 1)",
+          "english": "The elephant (lit. the-of-the-hand)",
           "translation": "Ol-le-'ng-aina",
           "pronunciation": "ol-le-'ng-aina",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
@@ -16049,21 +17152,9 @@
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "The dappled grey's calf (lit. the sister. En-e-'n-dambu (the-of-the-dappled-grey)",
-          "translation": "En-e-yeyo J v ''",
-          "pronunciation": "en-e-yeyo j v ''",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
-        },
-        {
           "english": "Kineniya or En-gilinda (proper names) (lit. the small finger)",
           "translation": "Ol-kimojino oti",
           "pronunciation": "ol-kimojino oti",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
-        },
-        {
-          "english": "Live in German East Africa extending as far south as Mpapua (lit. the hard'teeth)",
-          "translation": "Oogol-ala",
-          "pronunciation": "oogol-ala",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
@@ -16115,13 +17206,13 @@
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "He has more than ten \"cows (lit. he has ten cows and the chain)",
+          "english": "He has more than ten cows (lit. he has ten cows and the chain)",
           "translation": "E-ata 'n-gishu tomon o ol-pisyai",
           "pronunciation": "e-ata",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "'he gave me over 100 rupees (lit. he gave me 100 rupees and the chain)",
+          "english": "He gave me over 100 rupees (lit. he gave me 100 rupees and the chain)",
           "translation": "A-isho-o 'rupiani ip o ol-pisyai",
           "pronunciation": "a-isho-o 'rupiani ip o ol-pisyai",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
@@ -16133,20 +17224,20 @@
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "He is the smallest* of all the warriors (lit. he the small from the warriors all)",
+          "english": "He is the smallest of all the warriors (lit. he the small from the warriors all)",
           "translation": "Ninye ol-oti too-'l-muran pokin",
           "pronunciation": "ninye ol-oti too-'l-muran pokin",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
           "english": "That man is good, but this one is the best (lit. good that one, but this one who surpasses in goodness)",
-          "translation": "C-lus-oo te-'supatishu",
+          "translation": "O-lus-oo te-'supatishu",
           "pronunciation": "c-lus-oo te-'supatishu",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
           "english": "This one is the best of all (lit. good this one to surpass all)",
-          "translation": "Supat elle a-lafig pokin",
+          "translation": "Supat elle a-lañg pokin",
           "pronunciation": "supat elle a-lafig pokin",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
@@ -16158,7 +17249,7 @@
         },
         {
           "english": "He has cut off my finger (lit. he-me-has-cut the-finger)",
-          "translation": "Aa-tu-duSg-o ol-kimojino",
+          "translation": "Aa-tu-duñg-o ol-kimojino",
           "pronunciation": "aa-tu-dusg-o ol-kimojino",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
@@ -16248,19 +17339,19 @@
         },
         {
           "english": "The man is or was on the point of death (lit. it became when he cuts himself the man the spirit)",
-          "translation": "E-ta-a en-n-e-duRg-o ol-tufigani ol-tau",
+          "translation": "E-ta-a en-n-e-duñg-o ol-tungani ol-tau",
           "pronunciation": "e-ta-a en-n-e-durg-o ol-tufigani ol-tau",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
           "english": "Do not forget (lit. do not give that it forgets to thee)",
-          "translation": "Mi-njo ki-ri-kl-no",
+          "translation": "Mi-njo ki-ri-ki-no",
           "pronunciation": "mi-njo ki-ri-kl-no",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
           "english": "Nowadays (lit. these-days)",
-          "translation": "Kunna-oloiigi",
+          "translation": "Kunna-oloñgi",
           "pronunciation": "kunna-oloiigi",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
@@ -16301,136 +17392,271 @@
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "After (lit. when it shall Te-polos, between, through. become finished)",
-          "translation": "Ten eidipayu",
-          "pronunciation": "ten eidipayu",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
-        },
-        {
-          "english": "Ti-alo, in the direction of, beside (lit. and it is not)",
-          "translation": "Leme or neme",
-          "pronunciation": "leme",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
-        },
-        {
-          "english": "Ki-any-u iye (lit. them)",
-          "translation": "Go bring",
+          "english": "Go bring",
+          "translation": "Ki-any-u iye (lit. them)",
           "pronunciation": "go bring",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "A-tur-u, to dig (tr (lit. intr.)",
+          "english": "A-tur-u, to dig (tr lit. intr.)",
           "translation": "A-tur is to dig",
           "pronunciation": "a-tur is to dig",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "The-others they-arrive-thither (lit. pi.)",
-          "translation": "They-give-not the-news",
-          "pronunciation": "they-give-not the-news",
+          "english": "Bend",
+          "translation": "torrīgu nerriu (sing.) / negirriü (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Samburu Canadian Dollar (CAD)",
+          "translation": "Njilingi eel Kanada",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Samburu Australian Dollar (AUD)",
+          "translation": "Njilingi eel Australia",
+          "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "He she or it climbs or will climb",
+          "translation": "karagedo nenye",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Salutation to a woman (literally “laugh”)",
+          "translation": "tagwenia",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Run away",
+          "translation": "essdoi (nilwaiyer (sing.)) / (negil waiyer (pl.), inf.)",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "He is the smallest of all the warriors (lit. he the small from the warriors all)",
+          "translation": "Ninye ol-oti too-'l-muran pokin",
           "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
         },
         {
-          "english": "Kaufmann (Schilderungen aus Central￾Afrika, p (lit. Le Nil Blanc, p. 244)",
-          "translation": "Brun-Rollet",
-          "pronunciation": "brun-rollet",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "he / she / it is",
+          "translation": "eerda eera or ata nenye",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "Il-Lughumae, Il-partimaro (lit. the counters ?)",
-          "translation": "Il-Parkeneti",
-          "pronunciation": "il-parkeneti",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "orlōrroi",
+          "translation": "= goat (male)",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "Il-Makuperia (the flesh on the ribs) (lit. the priers)",
-          "translation": "Il-Marumae",
-          "pronunciation": "il-marumae",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "Thou carriest or wilt carry",
+          "translation": "tanaba iye / eyaiyan iye",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "And the Mokesen and Molelyan clans as 'L-oorook klshu (the black cattle) (lit. the blood-red cattle)",
-          "translation": "Aiser and Mengana clans as 'L-oodo-kishu",
-          "pronunciation": "aiser",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "Remove thou",
+          "translation": "todomo / endaw",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "Matapato, H-kak￾Kaptiei (lit. the blood-red cloths)",
-          "translation": "Kaputiei or 'L-oodo-kilani",
-          "pronunciation": "kaputiei",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "bathe",
+          "translation": "aisojai naisoja (sing.) / negasoja (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "1 Some of these families are again divided into smaller sub-sections (lit. the mistakes)",
-          "translation": "Il-launyi",
-          "pronunciation": "il-launyi",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "bend",
+          "translation": "torrīgu nerriu (sing.) / negirriü (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "H-Komolo, KitSto, Il-ketu-'m-beine, Salei (lit. the bubbling spring)",
-          "translation": "Ol-oitokitok",
-          "pronunciation": "ol-oitokitok",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "bring",
+          "translation": "iaw, negiaw (Infin.)",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "Glshu1 (the 'L-uasin-glshu oonyokyo (the red striped cattle) (lit. the black striped cattle)",
-          "translation": "L-uasin 'L-uasin-gishu oorook",
-          "pronunciation": "l-uasin 'l-uasin-gishu oorook",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "cut",
+          "translation": "tudungu nadung (sing.) / negidung (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "H-loijo, 'L-aisi (lit. Lema's kraal)",
-          "translation": "Eng-ang e-Lema",
-          "pronunciation": "eng-ang e-lema",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "dance (v.)",
+          "translation": "nengorran (sing.) / negigorran (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "And that the old men were known as Elkijaro or Elkimirisho (lit. Il-Kieku)",
-          "translation": "Ekieko",
-          "pronunciation": "ekieko",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "give",
+          "translation": "enjoōgi nenjog (sing.) / negenjog (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "They rise in rain ; when they set in rain, they rise in sun (lit. sunny weather)",
-          "translation": "Pleiades set in sun",
-          "pronunciation": "pleiades set in sun",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "hunt",
+          "translation": "ngorrori nengorishu (sing.) / negingorishu (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "01-doinyo loo-'l-Aiser, and 01-doinyo lo-'l-le-Mweiya (lit. the eye or source of the Athi Eiver)",
-          "translation": "Eng-ongu e-'m-bagasi",
-          "pronunciation": "eng-ongu e-'m-bagasi",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "know",
+          "translation": "eeolo or iolu naiulu (sing.) / negiolog (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "With whom he lived for many years (lit. i. e. the Masai of the 'L-oita sub-district, near Kilima Njaro)",
-          "translation": "L-oitai",
-          "pronunciation": "l-oitai",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "laugh",
+          "translation": "atagwenia, or engwenia nakweni (sing.) / negigwena (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "October, 1900 (lit. Stordy)",
-          "translation": "A description of the operation was given in The Veterinarian",
-          "pronunciation": "a description of the operation was given in the veterinarian",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "like",
+          "translation": "ainyorr naanya (sing.) / negenyorr (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "272, 320 (lit. ol-lenywa)",
-          "translation": "Fan of old men",
-          "pronunciation": "fan of old men",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "look",
+          "translation": "engorāīi naingora (sing.) / negongorr (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "263, 305, 326 ; prayers to, 350 (lit. 01-Onana)",
-          "translation": "Lenana",
-          "pronunciation": "lenana",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "pour",
+          "translation": "tebego nabeg (sing.) / negibeg (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "263, 337 (lit. Sendeu)",
-          "translation": "Sendeyo",
-          "pronunciation": "sendeyo",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
+          "english": "put",
+          "translation": "eragi nebi (sing.) / negiragi (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "sew",
+          "translation": "tereba naribeshu (sing.) / negerebeshu (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "sit",
+          "translation": "tordona nardon (sing.) / netornyi (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "spit",
+          "translation": "tornodoi nenordargi (sing.) / neginortargi (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "stand",
+          "translation": "itashu naitashi (sing.) / negendaishi (pl.) Infin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Excrement",
+          "translation": "Ngik (of men)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Excrement",
+          "translation": "Mōdī (of oxen)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Stick",
+          "translation": "Eñ usidin (pl.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Where?",
+          "translation": "Gore",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Where?",
+          "translation": "kore",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "That's so!",
+          "translation": "Neʻidya",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "That's so!",
+          "translation": "nejā",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Progressive verbal suffix (-ɪta / -ito)",
+          "translation": "-ɪta / -ito",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Antipassive verbal suffix (-ɪshɔ(r) / -isho(r))",
+          "translation": "-ɪshɔ(r) / -isho(r)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Ventive directional suffix 'motion towards' (-ʊ(n) / -u(n))",
+          "translation": "-ʊ(n) / -u(n)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Dative applicative suffix (-akɪ(n) / -oki(n))",
+          "translation": "-akɪ(n) / -oki(n)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Singular non-perfective middle suffix (-a(r) / -o(r) / -ɔ(r))",
+          "translation": "-a(r) / -o(r) / -ɔ(r)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Plural non-perfective middle suffix (-ata / -oto / -ɔtɔ)",
+          "translation": "-ata / -oto / -ɔtɔ",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Singular & plural perfective middle suffixes (-ɛ/-e, pl. -atɛ/-ote)",
+          "translation": "-ɛ / -e (pl. -atɛ / -ote)",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Middle + inchoative suffix 'able to become' (-ayu / -oyu)",
+          "translation": "-ayu / -oyu",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "That man has a hard heart (unfeeling)",
+          "translation": "k-ɛ́-ɛ́ta ɔltáʊ́ ogól ɛlɛ́ tʊ́ŋání",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "What will you cut it with?",
+          "translation": "káa i-duŋ-íé?",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "A warrior does not get healed by his own medicines",
+          "translation": "m-ɛ́-ba-yú ɔlmʊ́rráni te nkeék enyénak",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "That house has been entered / is possessed",
+          "translation": "ɛ-jɪŋ-á ɛná áji",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The blood coagulated / clotted",
+          "translation": "ɛ-ɪbʊŋ-á ɔsárgɛ",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The ox was divided into portions yesterday",
+          "translation": "ɛ-duŋ-ó ɔlkɪtɛ́ŋ ŋolé",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "The ceremonies have ended / ceased",
+          "translation": "ɛ-duŋ-óté intaléŋo",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Conflict / chaos (noun)",
+          "translation": "ɛnk=arruoísho",
+          "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
         }
       ]
     },
@@ -19621,13 +20847,13 @@
         },
         {
           "english": "The rotten meats",
-          "translation": "'N-giri naa-tuflgwaita",
+          "translation": "'N-giri naa-tuñgwaita",
           "pronunciation": "'n gi-ri naa tuf-lgwai-ta",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Mining jangayenda",
-          "translation": "Against a man and his father",
+          "english": "Against a man and his father",
+          "translation": "Mining jangayenda",
           "pronunciation": "against a man",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -19740,8 +20966,8 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Eldonyo sabuk (mt.)",
-          "translation": "the big mountain",
+          "english": "the big mountain",
+          "translation": "Eldonyo sabuk (mt.)",
           "pronunciation": "the big mountain",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -19885,7 +21111,7 @@
         },
         {
           "english": "Masai Medicine Song Invoking Ngai & Great Prophet Mbatian (Hinde 1901, p. 42): 'We pray God, we pray Batian.'",
-          "translation": "Aamon yi ngai, aamon m'Batian.",
+          "translation": "Aamon yi ngai, aamon m'Batian",
           "pronunciation": "aamon yi ngai",
           "context": "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 42) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -19906,12 +21132,442 @@
           "translation": "ngai pl. ngai",
           "pronunciation": "ngai pl ngai",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Last",
+          "translation": "korom",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Cut",
+          "translation": "tudungu nadung (sing.) / negidung (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Put",
+          "translation": "eragi nebi (sing.) / negiragi (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Sew",
+          "translation": "tereba naribeshu (sing.) / negerebeshu (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Sit",
+          "translation": "tordona nardon (sing.) / netornyi (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Give",
+          "translation": "enjoōgi nenjog (sing.) / negenjog (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Hear",
+          "translation": "atorningu nani (sing.) / negining (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Hunt",
+          "translation": "ngorrori nengorishu (sing.) / negingorishu (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Know",
+          "translation": "eeolo or iolu naiulu (sing.) / negiolog (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Like",
+          "translation": "ainyorr naanya (sing.) / negenyorr (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Look",
+          "translation": "engorāīi naingora (sing.) / negongorr (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Pour",
+          "translation": "tebego nabeg (sing.) / negibeg (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Catch",
+          "translation": "emboonga. nebong (sing.) / negibong (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Laugh",
+          "translation": "atagwenia, or engwenia nakweni (sing.) / negigwena (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "Stand",
+          "translation": "itashu naitashi (sing.) / negendaishi (pl., inf.)",
+          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
+        },
+        {
+          "english": "his / hers / its",
+          "translation": "enenye, eno",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "i or oi or ni",
+          "translation": "engela",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "ndapi",
+          "translation": "= hand",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "a or ia",
+          "translation": "oldulet",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "essorudia",
+          "translation": "= earring",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "u, tu",
+          "translation": "ingobirr",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "emurrtu",
+          "translation": "= neck",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "elōnitu",
+          "translation": "= skin",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "n, in",
+          "translation": "ossesi",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "ergenossin",
+          "translation": "= crocodile",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "horse",
+          "translation": "mbarrdan",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "k, ak, ok",
+          "translation": "ngorraion",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "lamonok",
+          "translation": "= beggar",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "bird",
+          "translation": "ndāridig",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "r or rr",
+          "translation": "ngera",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "emossorr",
+          "translation": "= egg",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "endōluer",
+          "translation": "= axe",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "endōlo",
+          "translation": "= marrow",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "engumurrt",
+          "translation": "= hole",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "engiaset",
+          "translation": "= work",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "We have not anything",
+          "translation": "mieraiog",
+          "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Buttocks",
+          "translation": "gurūm",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Buttocks",
+          "translation": "otonyeke",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Devil",
+          "translation": "Ol oiyirwa",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Devil",
+          "translation": "manañani",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Palm wine or mead",
+          "translation": "En naishu",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Palm wine or mead",
+          "translation": "Na mōqa",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Stick",
+          "translation": "Eñ udi",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Thing",
+          "translation": "dogi",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Thing",
+          "translation": "Dogitin",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Thing",
+          "translation": "pl",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Thorn",
+          "translation": "El giokṓ",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Thorn",
+          "translation": "gigaret",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Town or settlement",
+          "translation": "Manyata (warriors')",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Town or settlement",
+          "translation": "Añgañ (tribal)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Thou",
+          "translation": "Oye",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Thou",
+          "translation": "iye",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "All",
+          "translation": "Pṓgi",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "All",
+          "translation": "Bōki",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "White",
+          "translation": "Eibor",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "White",
+          "translation": "epor",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "White",
+          "translation": "Oibor (m.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "White",
+          "translation": "naipor (f.)",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Black",
+          "translation": "Nārok",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "Black",
+          "translation": "ōrok",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "I am a Masai",
+          "translation": "lol Masai",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "I give",
+          "translation": "Kindyṓ",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "I give",
+          "translation": "Kinj'",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "We say",
+          "translation": "Kedyo iyok",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "We say",
+          "translation": "Kejo",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "They laugh",
+          "translation": "Ekuánni",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "They laugh",
+          "translation": "Ekwenni",
+          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+        },
+        {
+          "english": "the sword",
+          "translation": "Ol-alem",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the long",
+          "translation": "Il-kujit",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the ewe",
+          "translation": "En-gerr",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the wild olive Eng-oiien",
+          "translation": "Ol-oirien",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the black and white Eng-ayus",
+          "translation": "Ol-arus",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the trapper",
+          "translation": "Ol-areshoni",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the work",
+          "translation": "En-gias",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the reply",
+          "translation": "En-girukoto",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the grave",
+          "translation": "In-guraren",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the thirst",
+          "translation": "En-gure",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the adultery",
+          "translation": "En-giopo",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the dew",
+          "translation": "Eng-oilelio",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the kingdom",
+          "translation": "En-gitoo",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the kingdom",
+          "translation": "En-garsisishu",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the urine",
+          "translation": "In-gulak",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the land",
+          "translation": "En-gop",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "the lands",
+          "translation": "In-gwapi",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "that you may sit",
+          "translation": "En-do-ton-i",
+          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "For God so loved the world (John 3:16 — 1915 Masai Specimen #316)",
+          "translation": "Amu etonyora eng'Ai engop, neishorua engerai enye nabo, ore oloiruk poki nemeimin, naketum engishon nemeitiñg.",
+          "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
         }
       ]
     }
   ],
-  "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921)",
+  "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "mas",
   "glottocode": "masa1300",
-  "totalEntries": 3297
+  "totalEntries": 3623
 }
