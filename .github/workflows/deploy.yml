@@ -108,13 +108,20 @@ jobs:
       - name: Copy APK to repository root
         run: cp mobile/android/app/build/outputs/apk/release/app-release.apk kenyahub-release.apk
 
-      - name: Upload Android APK Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: kenyahub-android-apk
-          path: kenyahub-release.apk
-          if-no-files-found: error
-          retention-days: 90
+      - name: Upload Android APK to latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view latest >/dev/null 2>&1; then
+            gh release upload latest kenyahub-release.apk --clobber
+            gh release edit latest --title "Latest Android APK" --latest
+          else
+            gh release create latest kenyahub-release.apk \
+              --target "$GITHUB_SHA" \
+              --title "Latest Android APK" \
+              --notes "Automatically updated Android APK." \
+              --latest
+          fi
 
       - name: Commit synced mobile data to repository
         run: |
