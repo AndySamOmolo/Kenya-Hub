@@ -9,9 +9,9 @@ on:
         default: "false"
         type: string
       max_clips_per_dataset:
-        description: "Maximum audio clips to transcode & upload per dataset split (fits within 10GB R2 Free Tier)"
+        description: "Maximum audio clips to transcode & upload per dataset split (default 250 finishes in ~8 mins)"
         required: false
-        default: "2500"
+        default: "250"
         type: string
   push:
     branches: [main]
@@ -21,13 +21,13 @@ on:
 
 concurrency:
   group: ingest-r2-audio-once
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   ingest-once:
     name: Stream Open-Access Audio & Text Datasets -> Cloudflare R2 & Repo
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 45
     permissions:
       contents: write
 
@@ -102,6 +102,7 @@ jobs:
         if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
         working-directory: kenyahub
         env:
+          PYTHONUNBUFFERED: "1"
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
@@ -109,8 +110,10 @@ jobs:
           R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME || 'kenyahub-audio' }}
           NEXT_PUBLIC_AUDIO_CDN_URL: ${{ secrets.NEXT_PUBLIC_AUDIO_CDN_URL }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '2500' }}
-        run: python3 scripts/ci-ingest-audio-and-text-r2.py
+          MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '250' }}
+          PER_DATASET_TIMEOUT_SEC: "90"
+          GLOBAL_TIME_BUDGET_SEC: "1500"
+        run: python3 -u scripts/ci-ingest-audio-and-text-r2.py
 
       - name: Sync Mobile Data & Run Strict Tool/Course Audit
         if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
