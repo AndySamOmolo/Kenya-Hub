@@ -1,0 +1,28 @@
+{
+  "ingestedAt": "2026-11-18T06:02:35.733457+00:00",
+  "bucket": "kenyahub-audio",
+  "cdnBase": "[https://audio.kenyahub.me](https://audio.kenyahub.me)",
+  "elapsedSeconds": 1063,
+  "textEntriesAddedByLanguage": {
+    "kikuyu": 8318,
+    "luo": 10455,
+    "borana": 9014,
+    "swahili": 8519,
+    "somali": 7587,
+    "teso": 0,
+    "kamba": 2981,
+    "meru": 298
+  },
+  "uploadedAudioLanguageCounts": {
+    "kikuyu": 450,
+    "kamba": 449,
+    "luo": 907,
+    "meru": 250,
+    "somali": 443,
+    "swahili": 411,
+    "luhya": 153,
+    "borana": 384,
+    "teso": 115
+  },
+  "dictionaryEntriesLinked": 1254
+}

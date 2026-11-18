@@ -3,6 +3,7 @@ import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   Alert,
+  Linking,
   Platform,
   Pressable,
   ScrollView,
@@ -165,6 +166,27 @@ export default function SavedScreen() {
     );
   };
 
+  const handleClearAllAppData = () => {
+    triggerHaptic(12);
+    Alert.alert(
+      "Clear All App Data?",
+      "This will permanently erase all saved tools, language course progress, streaks, and local preferences from your device.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Clear All App Data",
+          style: "destructive",
+          onPress: async () => {
+            try {
+              await AsyncStorage.clear();
+              setSaved([]);
+            } catch {}
+          },
+        },
+      ]
+    );
+  };
+
   const tools = saved
     .map((slug) => TOOLS.find((tool) => tool.slug === slug))
     .filter(Boolean) as (typeof TOOLS)[number][];
@@ -300,6 +322,75 @@ export default function SavedScreen() {
             </View>
           </View>
         )}
+
+        {/* Privacy Policy & Local Data Controls (Google Play & Kenya DPA 2019 - P11-05) */}
+        <View style={styles.privacySection}>
+          <Text style={[styles.suggestHeading, { color: theme.gold, marginTop: 28 }]}>
+            PRIVACY & LOCAL DATA (KENYA DPA 2019)
+          </Text>
+          <View style={styles.suggestList}>
+            <View
+              style={[
+                styles.suggestCardWrap,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                accessibilityRole="link"
+                accessibilityLabel="Privacy Policy & Terms"
+                style={pressableStyle(styles.suggestCard)}
+                onPress={() => {
+                  triggerHaptic(8);
+                  Linking.openURL("https://kenyahub.me/privacy/").catch(() => {});
+                }}
+              >
+                <Ionicons name="shield-checkmark-outline" size={20} color={theme.gold} />
+                <View style={{ flex: 1, marginLeft: 12 }}>
+                  <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
+                    Privacy Policy & Terms
+                  </Text>
+                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                    Kenya Data Protection Act 2019 compliance & terms of service
+                  </Text>
+                </View>
+                <Ionicons name="open-outline" size={16} color={theme.textMuted} />
+              </Pressable>
+            </View>
+
+            <View
+              style={[
+                styles.suggestCardWrap,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: `${theme.kenyaRedLight}45`,
+                },
+              ]}
+            >
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                accessibilityRole="button"
+                accessibilityLabel="Clear All App Data"
+                style={pressableStyle(styles.suggestCard)}
+                onPress={handleClearAllAppData}
+              >
+                <Ionicons name="trash-outline" size={20} color={theme.kenyaRedLight} />
+                <View style={{ flex: 1, marginLeft: 12 }}>
+                  <Text style={[styles.suggestTitle, { color: theme.kenyaRedLight }]}>
+                    Clear All App Data
+                  </Text>
+                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                    Erase all offline saved tools, language progress, and preferences
+                  </Text>
+                </View>
+                <Ionicons name="chevron-forward" size={16} color={theme.kenyaRedLight} />
+              </Pressable>
+            </View>
+          </View>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -444,5 +535,8 @@ const styles = StyleSheet.create({
     fontFamily: "Inter_400Regular",
     fontSize: 11.5,
     marginTop: 1,
+  },
+  privacySection: {
+    width: "100%",
   },
 });

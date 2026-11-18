@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/blog/",
       en: "https://kenyahub.me/blog/",
-        "x-default": "https://kenyahub.me/blog/",
-      },
+      "x-default": "https://kenyahub.me/blog/",
+    },
   },
   openGraph: {
     title: "Kenya Guides, Tax, Finance & Cultural Heritage Blog | KenyaHub",
@@ -65,10 +65,12 @@ const EXCLUDED_SLUGS = new Set([
 
 function isHighQualityAppwritePost(doc: any): boolean {
   if (!doc || !doc.slug || EXCLUDED_SLUGS.has(doc.slug)) return false;
-  const content = String(doc.content || "");
-  if (content.length < 2500) return false;
+  const content = String(doc.content || "").trim();
+  const summary = String(doc.excerpt || doc.summary || "").trim();
+  const contentLen = content.length;
+  const summaryLen = summary.length;
+  if (!(contentLen >= 300 && summaryLen >= 30)) return false;
   if (content.toLowerCase().includes("<iframe")) return false;
-  if ((doc.readTime || 0) < 4) return false;
   return true;
 }
 
@@ -93,10 +95,13 @@ export default async function BlogPage() {
       .map((doc: any) => ({
         slug: doc.slug,
         title: doc.title,
-        excerpt: doc.excerpt,
+        excerpt: doc.excerpt || doc.summary,
         author: doc.author,
         publishedAt: doc.publishedAt,
-        readTime: doc.readTime,
+        updatedAt: doc.updatedAt || null,
+        readTime:
+          doc.readTime ||
+          Math.max(1, Math.ceil(String(doc.content || "").split(/\s+/).length / 200)),
         tags: doc.tags || [],
       }));
   } catch {
@@ -109,10 +114,10 @@ export default async function BlogPage() {
     allPostsMap.set(post.slug, post);
   }
 
+  // Allow Appwrite remote posts to update/override STATIC_BLOG_POSTS when post.slug matches
   for (const post of appwritePosts) {
-    if (!allPostsMap.has(post.slug)) {
-      allPostsMap.set(post.slug, post);
-    }
+    const existing = allPostsMap.get(post.slug);
+    allPostsMap.set(post.slug, existing ? { ...existing, ...post } : post);
   }
 
   const posts = Array.from(allPostsMap.values()).sort(

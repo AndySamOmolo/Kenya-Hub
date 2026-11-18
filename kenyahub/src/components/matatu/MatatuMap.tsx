@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import "leaflet/dist/leaflet.css";
+import { escapeHtml } from "@/lib/markdown";
 
 interface Stage {
   name: string;
@@ -30,6 +31,7 @@ export default function MatatuMap({
   const markersByOrderRef = useRef<Map<number, { openPopup: () => void }>>(new Map());
 
   useEffect(() => {
+    let cancelled = false;
     const container = mapContainerRef.current;
     if (typeof window === "undefined" || !container || stages.length === 0) return;
 
@@ -38,7 +40,7 @@ export default function MatatuMap({
 
     // Dynamically import Leaflet on client side
     import("leaflet").then((L) => {
-      if (!container) return;
+      if (cancelled || !container) return;
 
       try {
         // Clean up previous map instance if it exists
@@ -75,10 +77,14 @@ export default function MatatuMap({
 
         mapInstanceRef.current = map;
 
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-          maxZoom: 19,
-        }).addTo(map);
+        L.tileLayer(
+          "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+          {
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            maxZoom: 19,
+          }
+        ).addTo(map);
 
         const latLngs = stages.map((s) => [s.lat, s.lng] as [number, number]);
         L.polyline(latLngs, {
@@ -89,9 +95,14 @@ export default function MatatuMap({
           lineCap: "round",
         }).addTo(map);
 
+        const safeRouteNumber = escapeHtml(String(routeNumber || ""));
+        const safeRouteName = escapeHtml(String(routeName || ""));
+
         stages.forEach((stage, idx) => {
           const isTerminusA = idx === 0;
           const isTerminusB = idx === stages.length - 1;
+          const safeOrder = Number(stage.order) || idx + 1;
+          const safeStageName = escapeHtml(String(stage.name || ""));
 
           const customMarkerHtml = `
             <div style="
@@ -109,7 +120,7 @@ export default function MatatuMap({
               box-shadow: 0 4px 10px rgba(0,0,0,0.4);
               font-family: sans-serif;
             ">
-              ${stage.order}
+              ${safeOrder}
             </div>
           `;
 
@@ -122,9 +133,9 @@ export default function MatatuMap({
 
           const popupContent = `
             <div style="font-family: sans-serif; font-size: 12px; color: #111;">
-              <strong style="color: #BE2126;">Stage ${stage.order}: ${stage.name}</strong><br/>
+              <strong style="color: #BE2126;">Stage ${safeOrder}: ${safeStageName}</strong><br/>
               <span style="font-size: 11px; color: #555;">${isTerminusA ? "Start Terminus" : isTerminusB ? "End Terminus" : "Waypoint Stage"}</span><br/>
-              <span style="font-size: 10px; color: #888;">Route ${routeNumber} • ${routeName}</span>
+              <span style="font-size: 10px; color: #888;">Route ${safeRouteNumber} • ${safeRouteName}</span>
             </div>
           `;
 
@@ -146,6 +157,7 @@ export default function MatatuMap({
     });
 
     return () => {
+      cancelled = true;
       if (mapInstanceRef.current) {
         (mapInstanceRef.current as { remove: () => void }).remove();
         mapInstanceRef.current = null;
@@ -171,7 +183,7 @@ export default function MatatuMap({
   }, [activeStageOrder, stages]);
 
   return (
-    <div className="relative w-full h-[400px] sm:h-[480px] rounded-xl overflow-hidden border border-border shadow-lg">
+    <div className="isolate relative z-10 w-full h-[400px] sm:h-[480px] rounded-xl overflow-hidden border border-border shadow-lg">
       <div ref={mapContainerRef} className="w-full h-full z-10" />
 
       {/* Map Overlay Legend */}

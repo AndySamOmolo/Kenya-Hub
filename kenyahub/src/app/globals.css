@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* ── Flag & Cultural Colors (fixed) ── */
+  /* ── Flag & Cultural Colors (WCAG 2.2 AA themed tokens + fixed accents) ── */
   --color-kenya-black: #1A1108;
   --color-kenya-red: #BE2126;
-  --color-kenya-red-light: #E05A5A;
+  --color-kenya-red-light: var(--accent-red);
   --color-kenya-green: #006B3F;
-  --color-kenya-green-light: #2FA463;
+  --color-kenya-green-light: var(--accent-green);
   --color-kenya-white: #FAF7F2;
-  --color-gold: #C8961E;
-  --color-gold-light: #E8BE5A;
+  --color-gold: var(--accent-gold);
+  --color-gold-light: var(--accent-gold-light);
   --color-gold-vivid: #F5A623;
   --color-earth: #8B4513;
   --color-earth-light: #B87A4B;
-  --color-sky: #1A8BD1;
-  --color-sky-light: #5BBFEA;
+  --color-sky: var(--accent-sky);
+  --color-sky-light: var(--accent-sky-light);
   --color-savanna: #D4A96A;
   --color-terracotta: #C75B39;
   --color-baobab: #6B4423;
@@ -56,17 +56,24 @@
   --border-accent: #4D453C;
   --text-primary: #F2EDE6;
   --text-secondary: #B5ACA1;
-  --text-muted: #7E7367;
+  --text-muted: #94897B;
   --gold-text: #E8BE5A;
+  --accent-gold: #D4A437;
+  --accent-gold-light: #E8BE5A;
+  --accent-green: #2FA463;
+  --accent-red: #E05A5A;
+  --accent-sky: #2D9CDB;
+  --accent-sky-light: #5BBFEA;
   --glass-bg: rgba(12,10,8,0.96);
   --glass-border: rgba(255,255,255,0.06);
   color-scheme: dark;
 }
 
 /* ══════════════════════════════════════════════════
-   LIGHT THEME — Warm Kenyan afternoon light
+   LIGHT THEME — Warm Kenyan afternoon light (WCAG 2.2 AA >= 4.5:1)
    ══════════════════════════════════════════════════ */
-[data-theme="light"] {
+[data-theme="light"],
+html.light {
   --bg-primary: #FAF7F2;
   --bg-secondary: #F3EEE6;
   --bg-card: #FFFFFF;
@@ -78,8 +85,14 @@
   --border-accent: #C8BDB0;
   --text-primary: #1A1108;
   --text-secondary: #4E4333;
-  --text-muted: #786C5C;
-  --gold-text: #9A6B0A;
+  --text-muted: #6B5F50;
+  --gold-text: #8A620A;
+  --accent-gold: #8A620A;
+  --accent-gold-light: #735006;
+  --accent-green: #15733B;
+  --accent-red: #B82E2E;
+  --accent-sky: #0E6BA8;
+  --accent-sky-light: #0B588C;
   --glass-bg: rgba(250,247,242,0.97);
   --glass-border: rgba(0,0,0,0.06);
   color-scheme: light;
@@ -398,13 +411,13 @@
 :root .badge-agriculture   { background: rgba(0,107,63,0.12);    color: #5DD89A; }
 
 /* Light mode badges */
-[data-theme="light"] .badge-finance      { background: rgba(200,150,30,0.12);  color: #8B6914; }
+[data-theme="light"] .badge-finance      { background: rgba(200,150,30,0.12);  color: #8A620A; }
 [data-theme="light"] .badge-education    { background: rgba(0,107,63,0.10);    color: #006B3F; }
-[data-theme="light"] .badge-utilities    { background: rgba(26,139,209,0.10);  color: #1470A0; }
+[data-theme="light"] .badge-utilities    { background: rgba(26,139,209,0.10);  color: #0E6BA8; }
 [data-theme="light"] .badge-government   { background: rgba(190,33,38,0.10);   color: #A01A1E; }
 [data-theme="light"] .badge-transport    { background: rgba(139,69,19,0.10);   color: #8B4513; }
-[data-theme="light"] .badge-health       { background: rgba(190,33,38,0.08);   color: #BE2126; }
-[data-theme="light"] .badge-business     { background: rgba(26,139,209,0.10);  color: #1470A0; }
+[data-theme="light"] .badge-health       { background: rgba(190,33,38,0.08);   color: #B82E2E; }
+[data-theme="light"] .badge-business     { background: rgba(26,139,209,0.10);  color: #0E6BA8; }
 [data-theme="light"] .badge-reference    { background: rgba(107,68,35,0.10);   color: #6B4423; }
 [data-theme="light"] .badge-agriculture  { background: rgba(0,107,63,0.10);    color: #006B3F; }
 
@@ -1148,6 +1161,7 @@ table td.text-center {
   transform: scale(0.95) !important;
 }
 
+
 .btn-gold,
 .btn-primary,
 .btn-outline {
@@ -1187,6 +1201,11 @@ table td.text-center {
 
 .pill-expanded-stagger {
   animation: pill-stagger-in 0.24s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.reader-fullscreen {
+  height: 100vh;
+  height: 100dvh;
 }
 
 @keyframes details-reveal {

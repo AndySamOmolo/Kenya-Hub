@@ -58,7 +58,7 @@ interface GamesHubProps {
   languageId?: string;
   progress?: UserProgress;
   onUpdateProgress?: (updater: (prev: UserProgress) => UserProgress) => void;
-  onAwardXp?: (xp: number) => void;
+  onAwardXp?: (xp: number, sessionComplete?: boolean) => void;
   onBack: () => void;
 }
 

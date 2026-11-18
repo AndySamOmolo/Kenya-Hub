@@ -5,6 +5,31 @@ import type { Tool } from "./types";
 
 const BASE_URL = "https://kenyahub.me";
 
+function shortenSeoTitle(rawTitle: string, shortTitle: string): string {
+  // Strip any redundant trailing brand suffix since root layout template adds "| KenyaHub"
+  let cleaned = rawTitle
+    .replace(/\s*[|—–-]\s*KenyaHub.*$/i, "")
+    .trim();
+  // If title is still overly verbose (> 58 chars), prefer a concise version
+  if (cleaned.length > 58) {
+    const dashIndex = cleaned.indexOf(" — ");
+    if (dashIndex > 0 && dashIndex <= 54) {
+      cleaned = cleaned.slice(0, dashIndex).trim();
+    } else if (shortTitle) {
+      cleaned = `${shortTitle} Kenya (2026)`;
+    }
+  }
+  return cleaned;
+}
+
+function shortenSeoDescription(rawDesc: string): string {
+  const cleaned = rawDesc.replace(/\s+/g, " ").trim();
+  if (cleaned.length <= 155) return cleaned;
+  const truncated = cleaned.slice(0, 152);
+  const lastSpace = truncated.lastIndexOf(" ");
+  return `${(lastSpace > 110 ? truncated.slice(0, lastSpace) : truncated).replace(/[.,;:\s]+$/, "")}.`;
+}
+
 export function generateToolMetadata(slugOrTool: string | { slug: string }): Metadata {
   const slug = typeof slugOrTool === "string" ? slugOrTool : slugOrTool.slug;
   const tool = TOOLS.find((t) => t.slug === slug);
@@ -18,22 +43,23 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
   }
 
   const canonicalUrl = `${BASE_URL}/tools/${tool.slug}/`;
-  const effectiveTitle = tool.seoTitle || tool.title;
+  const effectiveTitle = shortenSeoTitle(tool.seoTitle || tool.title, tool.shortTitle);
+  const effectiveDescription = shortenSeoDescription(tool.description);
   const enrichedKeywords = Array.from(
     new Set([
       ...tool.keywords,
       `${tool.shortTitle} Kenya 2026`,
       `free ${tool.shortTitle} Kenya`,
       tool.dataSource,
-      "KenyaHub tools",
+      "KenyaHub",
     ])
   );
 
   return {
     title: effectiveTitle,
-    description: tool.description,
+    description: effectiveDescription,
     keywords: enrichedKeywords,
-    authors: [{ name: "KenyaHub Editorial & Statutory Research Desk", url: `${BASE_URL}/about/` }],
+    authors: [{ name: "KenyaHub Editorial Team", url: `${BASE_URL}/about/` }],
     creator: "KenyaHub",
     publisher: "KenyaHub",
     robots: {
@@ -49,7 +75,7 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
     },
     openGraph: {
       title: `${effectiveTitle} | KenyaHub`,
-      description: tool.description,
+      description: effectiveDescription,
       type: "website",
       locale: "en_KE",
       siteName: "KenyaHub",
@@ -59,14 +85,14 @@ export function generateToolMetadata(slugOrTool: string | { slug: string }): Met
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: `${tool.title} — KenyaHub`,
+          alt: "KenyaHub",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${effectiveTitle} | KenyaHub`,
-      description: tool.description,
+      description: effectiveDescription,
       images: ["/og-image.png"],
     },
     alternates: {

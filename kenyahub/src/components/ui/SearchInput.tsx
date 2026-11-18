@@ -89,7 +89,7 @@ export default function SearchInput({
             onClear?.();
             inputRef.current?.focus();
           }}
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
+          className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 min-w-6 min-h-6 shrink-0 rounded-full bg-bg-card border border-border hover:border-gold hover:bg-gold/15 hover:text-gold active:scale-90 flex items-center justify-center transition-all cursor-pointer z-10"
           aria-label="Clear search"
         >
           <X className="w-3.5 h-3.5 text-text-muted hover:text-gold shrink-0" />

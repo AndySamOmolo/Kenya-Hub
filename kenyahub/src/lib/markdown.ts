@@ -1,3 +1,22 @@
+export function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+export function sanitizeUrl(rawUrl: string): string {
+  const trimmed = (rawUrl || "").trim();
+  if (!trimmed) return "#";
+  // Allow only safe http(s), mailto, root-relative (/), or fragment (#) URLs
+  if (/^(https?:\/\/|mailto:|\/|#)/i.test(trimmed)) {
+    return trimmed.replace(/"/g, "&quot;").replace(/</g, "%3C").replace(/>/g, "%3E");
+  }
+  return "#";
+}
+
 export function slugifyHeading(text: string): string {
   return text
     .replace(/<[^>]+>/g, "")
@@ -54,40 +73,65 @@ function formatInlineMarkdown(text: string): string {
 
   // 1. Protect inline code spans first so asterisks/underscores inside `code` are untouched
   const codeSpans: string[] = [];
-  out = out.replace(/`([^`]+)`/g, (_match, code) => {
-    const escaped = code.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    codeSpans.push(`<code>${escaped}</code>`);
+  out = out.replace(/`([^`]+)`/g, (_match, code: string) => {
+    codeSpans.push(`<code>${escapeHtml(code)}</code>`);
     return `___INLINECODE_${codeSpans.length - 1}___`;
   });
 
-  // 2. Images (before links)
+  // 2. Extract and sanitize Markdown Images before escaping HTML
+  const mediaSpans: string[] = [];
   out = out.replace(
     /!\[([^\]]*)\]\(([^)]+)\)/g,
-    '<img src="$2" alt="$1" loading="lazy" class="rounded-xl my-6" />'
+    (_m, alt: string, src: string) => {
+      const safeSrc = sanitizeUrl(src);
+      const safeAlt = escapeHtml(alt);
+      mediaSpans.push(
+        `<img src="${safeSrc}" alt="${safeAlt}" loading="lazy" class="rounded-xl my-6" />`
+      );
+      return `___MEDIASPAN_${mediaSpans.length - 1}___`;
+    }
   );
 
-  // 3. Links (internal links open in same tab, external in new tab)
-  out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_m, label, href) => {
-    const isInternal = href.startsWith("/") || href.startsWith("#");
-    if (isInternal) {
-      return `<a href="${href}">${label}</a>`;
-    }
-    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+  // 3. Extract and sanitize Markdown Links before escaping HTML
+  const linkPlaceholders: { href: string; label: string }[] = [];
+  out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_m, label: string, href: string) => {
+    const safeHref = sanitizeUrl(href);
+    linkPlaceholders.push({ href: safeHref, label });
+    return `___LINKSPAN_${linkPlaceholders.length - 1}___`;
   });
 
-  // 4. Bold + Italic where *** wraps the entire phrase: ***text***
+  // 4. Escape all remaining raw HTML (<script>, <img onerror=...>, <iframe>, etc.)
+  out = escapeHtml(out);
+
+  // 5. Restore links with formatted & escaped labels
+  out = out.replace(/___LINKSPAN_(\d+)___/g, (_m, idx) => {
+    const item = linkPlaceholders[parseInt(idx, 10)];
+    if (!item) return "";
+    const formattedLabel = escapeHtml(item.label)
+      .replace(/\*\*\*([^\n*]+?)\*\*\*/g, "<strong><em>$1</em></strong>")
+      .replace(/\*\*([\s\S]+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/(?<!\*)\*(?!\*)([^\n*]+?)(?<!\*)\*(?!\*)/g, "<em>$1</em>");
+    const isInternal = item.href.startsWith("/") || item.href.startsWith("#");
+    if (isInternal) {
+      return `<a href="${item.href}">${formattedLabel}</a>`;
+    }
+    return `<a href="${item.href}" target="_blank" rel="noopener noreferrer">${formattedLabel}</a>`;
+  });
+
+  // 6. Bold + Italic where *** wraps the entire phrase: ***text***
   out = out.replace(/\*\*\*([^\n*]+?)\*\*\*/g, "<strong><em>$1</em></strong>");
 
-  // 5. Bold phrase ending with a nested italic phrase: e.g. **The Mark of *Ira*** or **Bead (*Chuma*) and *Kĩthathi***
+  // 7. Bold phrase ending with a nested italic phrase: e.g. **The Mark of *Ira***
   out = out.replace(/\*\*([^\n]*?\*[^\n*]+?)\*\*\*/g, "<strong>$1*</strong>");
 
-  // 6. Standard Bold: **text**
+  // 8. Standard Bold: **text**
   out = out.replace(/\*\*([\s\S]+?)\*\*/g, "<strong>$1</strong>");
 
-  // 7. Standard Italic: *text*
+  // 9. Standard Italic: *text*
   out = out.replace(/(?<!\*)\*(?!\*)([^\n*]+?)(?<!\*)\*(?!\*)/g, "<em>$1</em>");
 
-  // 8. Restore inline code spans
+  // 10. Restore sanitized images and inline code spans
+  out = out.replace(/___MEDIASPAN_(\d+)___/g, (_m, idx) => mediaSpans[parseInt(idx, 10)] || "");
   out = out.replace(/___INLINECODE_(\d+)___/g, (_m, idx) => codeSpans[parseInt(idx, 10)] || "");
 
   return out;
@@ -104,18 +148,12 @@ export function markdownToHtml(content: string): string {
   if (!content) return "";
   let raw = content.replace(/\r\n/g, "\n");
 
-  // Extract iframes to protect them from being mangled
-  const iframes: string[] = [];
-  raw = raw.replace(/<iframe[\s\S]*?<\/iframe>/gi, (match) => {
-    iframes.push(match);
-    return `\n\n___IFRAME_${iframes.length - 1}___\n\n`;
-  });
-
   // Extract fenced code blocks first
   const codeBlocks: string[] = [];
-  raw = raw.replace(/```(\w*)\n([\s\S]*?)```/gm, (_match, lang, code) => {
-    const escaped = code.replace(/</g, "&lt;").replace(/>/g, "&gt;").trim();
-    codeBlocks.push(`<pre><code class="language-${lang || "text"}">${escaped}</code></pre>`);
+  raw = raw.replace(/```(\w*)\n([\s\S]*?)```/gm, (_match, lang: string, code: string) => {
+    const safeLang = (lang || "text").replace(/[^a-zA-Z0-9_-]/g, "");
+    const escaped = escapeHtml(code.trim());
+    codeBlocks.push(`<pre><code class="language-${safeLang}">${escaped}</code></pre>`);
     return `\n\n___CODEBLOCK_${codeBlocks.length - 1}___\n\n`;
   });
 
@@ -135,13 +173,7 @@ export function markdownToHtml(content: string): string {
       continue;
     }
 
-    // 2. Protected placeholders (iframes / fenced code blocks)
-    if (/^___IFRAME_\d+___$/.test(trimmed)) {
-      const idx = parseInt(trimmed.replace(/\D/g, ""), 10);
-      blocks.push(`<div class="my-6 w-full">${iframes[idx] || ""}</div>`);
-      i++;
-      continue;
-    }
+    // 2. Protected code block placeholders
     if (/^___CODEBLOCK_\d+___$/.test(trimmed)) {
       const idx = parseInt(trimmed.replace(/\D/g, ""), 10);
       blocks.push(codeBlocks[idx] || "");
@@ -273,7 +305,6 @@ export function markdownToHtml(content: string): string {
           let liContent = formatInlineMarkdown(mainText);
           i++;
 
-          // Collect any indented sub-bullets, indented numbered items, or indented blockquotes belonging to this list item
           const subUlBullets: string[] = [];
           const subOlBullets: string[] = [];
           const subQuotes: string[] = [];
@@ -328,18 +359,7 @@ export function markdownToHtml(content: string): string {
       continue;
     }
 
-    // 8. Raw HTML block pass-through
-    if (
-      /^<(?:div|p|table|thead|tbody|tr|th|td|h[1-6]|ul|ol|li|pre|blockquote|hr|img|figure|section|article|aside|header|footer|nav)[\s>]/i.test(
-        trimmed
-      )
-    ) {
-      blocks.push(trimmed);
-      i++;
-      continue;
-    }
-
-    // 9. Standard Paragraph (collect consecutive non-special lines)
+    // 8. Standard Paragraph (all raw HTML is safely escaped via formatInlineMarkdown)
     const paraLines: string[] = [];
     while (i < lines.length) {
       const pLine = lines[i];
@@ -352,7 +372,7 @@ export function markdownToHtml(content: string): string {
         /^>\s*/.test(pTrim) ||
         /^[-*]\s+/.test(pTrim) ||
         /^\d+\.\s+/.test(pTrim) ||
-        /^___(?:IFRAME|CODEBLOCK)_\d+___$/.test(pTrim) ||
+        /^___CODEBLOCK_\d+___$/.test(pTrim) ||
         (i + 1 < lines.length &&
           pTrim.includes("|") &&
           /^\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?$/.test(

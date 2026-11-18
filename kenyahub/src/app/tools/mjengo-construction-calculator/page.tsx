@@ -30,7 +30,10 @@ export default function MjengoConstructionCalculatorPage() {
   );
 
   const calc = useMemo(() => {
-    const sqm = Math.max(15, Number(floorArea.replace(/,/g, "")) || 130);
+    const sqm =
+      floorArea.trim() === ""
+        ? 0
+        : Math.max(0, Number(floorArea.replace(/,/g, "")) || 0);
     const perimMeters = Math.max(0, Number(perimeterWallMeters.replace(/,/g, "")) || 0);
 
     const ratePerSqm = finish.costPerSqm * region.multiplier;
@@ -45,8 +48,10 @@ export default function MjengoConstructionCalculatorPage() {
     const mabatiSheets3m = Math.ceil((sqm * 1.38) / 2.4);
 
     const perimeterCost = perimMeters * 11500 * region.multiplier;
-    const totalProjectCost = houseCost + perimeterCost;
-    const ncaLevy = totalProjectCost > 5000000 ? totalProjectCost * 0.005 : 0;
+    const subtotal = houseCost + perimeterCost;
+    const ncaLevy = subtotal > 5000000 ? subtotal * 0.005 : 0;
+    const grandTotal = subtotal + ncaLevy;
+    const totalProjectCost = grandTotal;
 
     const stages = mjengoData.stageBreakdownPct.map((s) => ({
       ...s,
@@ -59,8 +64,10 @@ export default function MjengoConstructionCalculatorPage() {
       ratePerSqm,
       houseCost,
       perimeterCost,
-      totalProjectCost,
+      subtotal,
       ncaLevy,
+      grandTotal,
+      totalProjectCost,
       machineCutStones,
       cementBags,
       sandTonnes,
@@ -81,10 +88,12 @@ export default function MjengoConstructionCalculatorPage() {
             </label>
             <ExpandablePillRow>
               {mjengoData.housePresets.map((p) => {
-                const active = Number(floorArea) === p.sqm;
+                const active = floorArea !== "" && Number(floorArea) === p.sqm;
                 return (
                   <button
                     key={p.id}
+                    type="button"
+                    aria-pressed={active}
                     onClick={() => setFloorArea(String(p.sqm))}
                     className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
                       active
@@ -109,8 +118,10 @@ export default function MjengoConstructionCalculatorPage() {
                   type="text"
                   inputMode="numeric"
                   value={floorArea}
-                  placeholder="130"
-                  onChange={(e) => setFloorArea(e.target.value.replace(/[^0-9]/g, ""))}
+                  placeholder="0"
+                  onChange={(e) =>
+                    setFloorArea(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))
+                  }
                   className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
                   style={{ paddingRight: "2.5rem" }}
                 />
@@ -136,7 +147,11 @@ export default function MjengoConstructionCalculatorPage() {
                   inputMode="numeric"
                   value={perimeterWallMeters}
                   placeholder="0"
-                  onChange={(e) => setPerimeterWallMeters(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
+                  onChange={(e) =>
+                    setPerimeterWallMeters(
+                      e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "")
+                    )
+                  }
                   className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
                   style={{ paddingRight: "2.5rem" }}
                 />
@@ -192,10 +207,11 @@ export default function MjengoConstructionCalculatorPage() {
               Total Estimated Mjengo Cost
             </p>
             <p className="text-2xl font-extrabold text-[var(--gold)] font-[family-name:var(--font-display)]">
-              KES {formatKES(calc.totalProjectCost)}
+              KES {formatKES(calc.grandTotal)}
             </p>
             <p className="text-[11px] text-[var(--text-muted)] mt-1">
               KES {formatKES(calc.ratePerSqm)}/m² ({calc.sqm} m²)
+              {calc.ncaLevy > 0 ? ` · Incl. KES ${formatKES(calc.ncaLevy)} NCA Levy` : ""}
             </p>
           </div>
           <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-5">
@@ -293,6 +309,28 @@ export default function MjengoConstructionCalculatorPage() {
                 </span>
               </div>
             )}
+            <div className="px-5 py-3 flex justify-between items-start gap-3 bg-[var(--bg-elevated)]/40">
+              <span className="text-[var(--text-secondary)]">Construction Subtotal</span>
+              <span className="font-semibold text-[var(--text-primary)]">
+                KES {formatKES(calc.subtotal)}
+              </span>
+            </div>
+            <div className="px-5 py-3 flex justify-between items-start gap-3">
+              <span className="text-[var(--text-secondary)]">
+                NCA Construction Levy (0.5% over KES 5M)
+              </span>
+              <span className="font-semibold text-[var(--text-primary)]">
+                {calc.ncaLevy > 0 ? `KES ${formatKES(calc.ncaLevy)}` : "KES 0 (Exempt ≤ KES 5M)"}
+              </span>
+            </div>
+            <div className="px-5 py-4 flex justify-between items-center gap-4 bg-emerald-500/10 font-bold">
+              <span className="text-[var(--text-primary)]">
+                Grand Total Estimated Construction Cost (Incl. NCA Levy)
+              </span>
+              <span className="text-emerald-400 text-base">
+                KES {formatKES(calc.grandTotal)}
+              </span>
+            </div>
           </div>
         </div>
       </div>

@@ -71,11 +71,20 @@ export function MatatuMap({
     return () => clearTimeout(timer);
   }, [loading, offlineMode, reloadKey]);
 
+  // Toggle map dragging/zooming via injectJavaScript so unlocking pan doesn't reload the WebView (F-10)
+  useEffect(() => {
+    webViewRef.current?.injectJavaScript(
+      `window.__setMapDragging && window.__setMapDragging(${interactivePan}); true;`
+    );
+  }, [interactivePan]);
+
   const htmlContent = useMemo(() => {
     if (safeStages.length === 0) return "";
 
     const stagesJson = JSON.stringify(safeStages);
-    const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+    const tileUrl = isDark
+      ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+      : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
     const polylineColor = "#C8961E"; // KenyaHub Gold
 
     return `
@@ -143,13 +152,21 @@ export function MatatuMap({
           <div id="map"></div>
           <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            onerror="window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'offline' }))"
+            onerror="window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'mapError' }))"
           ></script>
           <script>
             (function() {
               if (typeof L === 'undefined') {
-                window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'offline' }));
+                window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'mapError' }));
                 return;
+              }
+              function escHtml(s) {
+                return String(s == null ? "" : s)
+                  .replace(/&/g, "&amp;")
+                  .replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;")
+                  .replace(/"/g, "&quot;")
+                  .replace(/'/g, "&#39;");
               }
               const stages = ${stagesJson};
               if (!stages || stages.length === 0) return;
@@ -159,7 +176,9 @@ export function MatatuMap({
                 center: [firstStage.lat, firstStage.lng],
                 zoom: 13,
                 zoomControl: true,
-                dragging: ${interactivePan ? "true" : "false"},
+                dragging: false,
+                touchZoom: false,
+                scrollWheelZoom: false,
                 attributionControl: false
               });
               map.zoomControl.setPosition('topright');
@@ -172,7 +191,7 @@ export function MatatuMap({
               tileLayer.on('tileerror', function() {
                 tileErrors++;
                 if (tileErrors >= 4) {
-                  window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'offline' }));
+                  window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'mapError' }));
                 }
               });
 
@@ -190,7 +209,8 @@ export function MatatuMap({
                 const isLast = idx === stages.length - 1;
                 const bgColor = isFirst ? '#2FA463' : (isLast ? '#BE2126' : '#C8961E');
 
-                const customHtml = '<div class="stage-circle" style="background-color:' + bgColor + ';">' + stage.order + '</div>';
+                const safeOrder = Number(stage.order) || (idx + 1);
+                const customHtml = '<div class="stage-circle" style="background-color:' + bgColor + ';">' + safeOrder + '</div>';
                 const customIcon = L.divIcon({
                   html: customHtml,
                   className: 'custom-stage-marker',
@@ -198,9 +218,9 @@ export function MatatuMap({
                   iconAnchor: [13, 13]
                 });
 
-                const popupHtml = '<div class="popup-title">Stage ' + stage.order + ': ' + stage.name + '</div>' +
+                const popupHtml = '<div class="popup-title">Stage ' + safeOrder + ': ' + escHtml(stage.name) + '</div>' +
                   '<div class="popup-sub">' + (isFirst ? 'Departure Terminus' : (isLast ? 'Destination Terminus' : 'Waypoint Stage')) + '</div>' +
-                  '<div class="popup-sub" style="font-size: 10px; margin-top: 2px;">Route ${routeNumber} • ${routeName}</div>';
+                  '<div class="popup-sub" style="font-size: 10px; margin-top: 2px;">Route ' + escHtml(${JSON.stringify(routeNumber)}) + ' • ' + escHtml(${JSON.stringify(routeName)}) + '</div>';
 
                 const marker = L.marker([stage.lat, stage.lng], { icon: customIcon })
                   .addTo(map)
@@ -222,8 +242,17 @@ export function MatatuMap({
               };
 
               window.__setMapDragging = function(enabled) {
-                if (enabled) map.dragging.enable();
-                else map.dragging.disable();
+                if (enabled) {
+                  map.dragging.enable();
+                  map.touchZoom.enable();
+                  map.doubleClickZoom.enable();
+                  map.scrollWheelZoom.enable();
+                } else {
+                  map.dragging.disable();
+                  map.touchZoom.disable();
+                  map.doubleClickZoom.disable();
+                  map.scrollWheelZoom.disable();
+                }
               };
 
               window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'ready' }));
@@ -232,7 +261,7 @@ export function MatatuMap({
         </body>
       </html>
     `;
-  }, [safeStages, routeName, routeNumber, isDark, interactivePan]);
+  }, [safeStages, routeName, routeNumber, isDark]);
 
   if (safeStages.length === 0) {
     return (
@@ -386,9 +415,16 @@ export function MatatuMap({
       <WebView
         key={`matatu-map-${reloadKey}`}
         ref={webViewRef}
-        originWhitelist={["*"]}
+        originWhitelist={["about:blank", "https://*", "http://*"]}
         source={{ html: htmlContent }}
-        onLoadEnd={() => setLoading(false)}
+        onLoadEnd={() => {
+          setLoading(false);
+          if (interactivePan) {
+            webViewRef.current?.injectJavaScript(
+              `window.__setMapDragging && window.__setMapDragging(true); true;`
+            );
+          }
+        }}
         onError={() => {
           setLoading(false);
           setOfflineMode(true);
@@ -402,7 +438,10 @@ export function MatatuMap({
             const payload = JSON.parse(event.nativeEvent.data);
             if (payload?.type === "ready") {
               setLoading(false);
-            } else if (payload?.type === "offline") {
+            } else if (
+              payload?.type === "offline" ||
+              payload?.type === "mapError"
+            ) {
               setLoading(false);
               setOfflineMode(true);
             } else if (payload?.type === "stage" && payload.stage) {
@@ -438,9 +477,6 @@ export function MatatuMap({
             triggerHaptic(8);
             const next = !interactivePan;
             setInteractivePan(next);
-            webViewRef.current?.injectJavaScript(
-              `window.__setMapDragging && window.__setMapDragging(${next}); true;`
-            );
           }}
           accessibilityRole="button"
           accessibilityLabel={
@@ -794,10 +830,10 @@ const styles = StyleSheet.create({
   schematicArrowWrap: {
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 4,
+    paddingHorizontal: 3,
   },
   schematicDash: {
-    width: 12,
+    width: 10,
     height: 2,
     borderRadius: 1,
   },

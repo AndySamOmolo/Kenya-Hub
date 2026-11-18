@@ -45,11 +45,12 @@ export function KplcTokenCalculator() {
       const unitCostBeforeVat = band.rate + levyPerUnit + fccPerUnit + ferfa;
       const unitCostWithVat = unitCostBeforeVat * (1 + vatRate);
 
-      const maxUnitsInBand = Math.min(
+      const rawUnitsInBand = Math.min(
         bandCapacity,
-        Math.floor(remainingAmount / unitCostWithVat)
+        remainingAmount / unitCostWithVat
       );
-      const costForBand = maxUnitsInBand * unitCostWithVat;
+      const maxUnitsInBand = Math.round(rawUnitsInBand * 100) / 100;
+      const costForBand = rawUnitsInBand * unitCostWithVat;
 
       if (maxUnitsInBand > 0) {
         breakdown.push({
@@ -58,8 +59,8 @@ export function KplcTokenCalculator() {
           rate: band.rate,
           cost: Math.round(costForBand * 100) / 100,
         });
-        totalUnits += maxUnitsInBand;
-        remainingAmount -= costForBand;
+        totalUnits = Math.round((totalUnits + rawUnitsInBand) * 100) / 100;
+        remainingAmount = Math.max(0, remainingAmount - costForBand);
       }
     }
 

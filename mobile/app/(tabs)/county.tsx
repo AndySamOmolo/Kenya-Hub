@@ -10,6 +10,7 @@ import {
   TextInput,
   Pressable,
   Modal,
+  useWindowDimensions,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -64,16 +65,24 @@ const MONTH_KEYS = [
   "dec",
 ];
 
+function normalizeCountyKey(name: string): string {
+  return String(name || "")
+    .toLowerCase()
+    .replace(/['’\-]+/g, "")
+    .replace(/\s+/g, "")
+    .trim();
+}
+
 // Precompute static lookups once at module level for instant tab loads
 const HOSPITAL_COUNT_MAP = new Map<string, number>();
 for (const h of (hospitalsData as any).hospitals || []) {
-  const k = String(h.county || "").toLowerCase().trim();
+  const k = normalizeCountyKey(h.county);
   HOSPITAL_COUNT_MAP.set(k, (HOSPITAL_COUNT_MAP.get(k) || 0) + 1);
 }
 
 const POSTAL_COUNT_MAP = new Map<string, number>();
 for (const p of (postalData as any).codes || []) {
-  const k = String(p.county || "").toLowerCase().trim();
+  const k = normalizeCountyKey(p.county);
   POSTAL_COUNT_MAP.set(k, (POSTAL_COUNT_MAP.get(k) || 0) + 1);
 }
 
@@ -92,8 +101,8 @@ const STATIC_ENRICHED_COUNTIES = countiesData.counties.map((c) => ({
   density: c.area > 0 ? Math.round(c.population / c.area) : 0,
   budget: BUDGET_MAP.get(c.code) || null,
   rain: RAIN_MAP.get(c.code) || null,
-  hospitalsCount: HOSPITAL_COUNT_MAP.get(c.name.toLowerCase().trim()) || 0,
-  postalCount: POSTAL_COUNT_MAP.get(c.name.toLowerCase().trim()) || 0,
+  hospitalsCount: HOSPITAL_COUNT_MAP.get(normalizeCountyKey(c.name)) || 0,
+  postalCount: POSTAL_COUNT_MAP.get(normalizeCountyKey(c.name)) || 0,
 }));
 
 const NATIONAL_TOTALS = (() => {
@@ -581,6 +590,7 @@ function renderClimateCard(item: any, router: any, theme: any) {
 export default function CountyScreen() {
   const router = useRouter();
   const { theme } = useTheme();
+  const { height: windowHeight } = useWindowDimensions();
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
   const scrollRef = useRef<ScrollView>(null);
   const [query, setQuery] = useState("");
@@ -1438,6 +1448,7 @@ export default function CountyScreen() {
         visible={pickerTarget !== null}
         animationType="slide"
         transparent
+        accessibilityViewIsModal={true}
         onRequestClose={() => setPickerTarget(null)}
       >
         <View style={styles.modalBackdrop}>
@@ -1445,6 +1456,7 @@ export default function CountyScreen() {
             style={[
               styles.pickerSheet,
               {
+                maxHeight: Math.round(windowHeight * 0.78),
                 backgroundColor: theme.bgPrimary,
                 borderColor: theme.outlineVariant,
               },

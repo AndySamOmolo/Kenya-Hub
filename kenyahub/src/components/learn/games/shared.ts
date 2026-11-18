@@ -10,7 +10,7 @@ export interface GameProps {
   languageName: string;
   languageId?: string;
   progress?: UserProgress;
-  onAwardXp?: (xp: number) => void;
+  onAwardXp?: (xp: number, sessionComplete?: boolean) => void;
   onRecordWordResult?: (word: WordPair, correct: boolean) => void;
   onUpdateGameStats?: (updater: (prev: GameStats) => GameStats) => void;
 }

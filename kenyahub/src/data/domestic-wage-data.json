@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-10-21",
-  "source": "Ministry of Labour Regulation of Wages (General) (Amendment) Order 2024/2026 (Legal Notice 108)",
+  "source": "Ministry of Labour Regulation of Wages (General) (Amendment) Order 2024/2026 (Legal Notice 108) & NSSF Act Cap 128",
   "sourceUrl": "https://www.labour.go.ke/",
   "zones": [
     {
@@ -27,7 +27,9 @@
   ],
   "statutoryDeductions": {
     "shaEmployeePercent": 0.0275,
-    "nssfTier1Matching": 420,
+    "nssfRate": 0.06,
+    "nssfMaxMonthly": 4320,
+    "nssfTier1Matching": 480,
     "leaveDaysAnnual": 21,
     "paidMaternityMonths": 3,
     "paidPaternityDays": 14

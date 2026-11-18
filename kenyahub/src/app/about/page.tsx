@@ -4,9 +4,9 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 import { TOOLS } from "@/lib/tools-registry";
 
 export const metadata: Metadata = {
-  title: "About Us — Mission, Official Data Sources & Editorial Methodology",
+  title: "About Us — Mission, Official Data Sources & Methodology",
   description:
-    "Learn about KenyaHub — Kenya's independent digital public utility platform providing free statutory calculators, county intelligence, matatu transit maps, and language tools.",
+    "Learn about KenyaHub — Kenya's independent digital public utility platform providing free statutory calculators, county intelligence, matatu maps, and language tools.",
   keywords: [
     "about KenyaHub",
     "Kenyan public data platform",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/about/",
       en: "https://kenyahub.me/about/",
-        "x-default": "https://kenyahub.me/about/",
-      },
+      "x-default": "https://kenyahub.me/about/",
+    },
   },
   openGraph: {
     title: "About Us — Mission, Official Data Sources & Methodology | KenyaHub",
@@ -29,14 +29,7 @@ export const metadata: Metadata = {
     locale: "en_KE",
     siteName: "KenyaHub",
     url: "https://kenyahub.me/about/",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "About KenyaHub — Free Tools & Public Data for Kenya",
-      },
-    ],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "KenyaHub" }],
   },
   twitter: {
     card: "summary_large_image",

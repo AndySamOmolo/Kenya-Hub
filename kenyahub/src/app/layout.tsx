@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kenyahub.me"),
   applicationName: "KenyaHub",
   title: {
-    default: "KenyaHub — Free Tools, Calculators & Public Data for Every Kenyan",
+    default: "KenyaHub — Free Tools, Calculators & Public Data for Kenya",
     template: "%s | KenyaHub",
   },
   description:
-    "Free online tools and verified public data built for Kenya — 23 Kenyan language courses & translator, 2026 PAYE salary calculator, M-Pesa fee calculator, KRA CRSP car import duty, 47 Counties Hub, CBC curriculum explorer, KUCCPS cluster points, Matatu routes, and more.",
+    "Free online tools and verified public data for Kenya — 23 language courses & translator, 2026 PAYE salary calculator, M-Pesa fees, KRA car import duty, 47 Counties Hub, and Matatu routes.",
   keywords: [
     "Kenya tools",
     "PAYE calculator Kenya 2026",
@@ -69,9 +69,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "KenyaHub — Free Tools, Calculators & Public Data for Every Kenyan",
+    title: "KenyaHub — Free Tools, Calculators & Public Data for Kenya",
     description:
-      "Free, accurate tools every Kenyan needs — 23 Kenyan language courses, 2026 PAYE salary calculator, KRA CRSP car import duty, 47 Counties Hub, CBC & KUCCPS education guides, Matatu routes, and more.",
+      "Free, accurate tools every Kenyan needs — 23 Kenyan language courses, 2026 PAYE salary calculator, KRA CRSP car import duty, 47 Counties Hub, CBC & KUCCPS guides, and Matatu routes.",
     type: "website",
     locale: "en_KE",
     url: "https://kenyahub.me/",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "KenyaHub — Free Tools, Calculators & Public Data for Every Kenyan",
+        alt: "KenyaHub",
       },
     ],
   },
@@ -139,7 +139,7 @@ gtag('consent', 'default', {
   'wait_for_update': 500
 });
 gtag('set', 'ads_data_redaction', true);
-gtag('set', 'url_passthrough', true);
+gtag('set', 'url_passthrough', false);
 try {
   var c = localStorage.getItem('kh-cookie-consent');
   var p = null;
@@ -175,11 +175,14 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        <script dangerouslySetInnerHTML={{ __html: consentModeScript }} />
         <Script
+          id="google-analytics"
           strategy="afterInteractive"
-          async
+          dangerouslySetInnerHTML={{ __html: consentModeScript }}
+        />
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Y069879V7Y"
+          strategy="afterInteractive"
         />
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
       </head>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kenya Matatu Routes, Stages & Fares — Interactive Transit Guide",
+  title: "Kenya Matatu Routes, Stages & Fares — Transit Guide",
   description:
     "Find verified matatu routes across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika with interactive maps, CBD stages, peak vs off-peak fares, and SACCO operators.",
   keywords: [
@@ -13,25 +13,18 @@ export const metadata: Metadata = {
     "Nairobi matatu route numbers",
   ],
   openGraph: {
-    title: "Kenya Matatu Routes, Stages & Fares — Interactive Transit Guide | KenyaHub",
+    title: "Kenya Matatu Routes, Stages & Fares — Transit Guide | KenyaHub",
     description:
       "Find verified matatu routes across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika with interactive stage maps, fares, and SACCO details.",
     type: "website",
     locale: "en_KE",
     siteName: "KenyaHub",
     url: "https://kenyahub.me/matatu/",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Kenya Matatu Routes, Stages & Fares — KenyaHub",
-      },
-    ],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "KenyaHub" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kenya Matatu Routes, Stages & Fares — Interactive Transit Guide | KenyaHub",
+    title: "Kenya Matatu Routes, Stages & Fares — Transit Guide | KenyaHub",
     description:
       "Find verified matatu routes across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika with interactive stage maps, fares, and SACCO details.",
     images: ["/og-image.png"],

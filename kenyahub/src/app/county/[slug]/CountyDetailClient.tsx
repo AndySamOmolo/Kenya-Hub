@@ -22,19 +22,30 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
+function normalizeCountyName(s: string): string {
+  return String(s || "")
+    .toLowerCase()
+    .replace(/['’\-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export default function CountyDetailClient({ slug }: { slug: string }) {
   const [constSort, setConstSort] = useState<"order" | "alpha">("order");
   const county = countiesData.counties.find((c) => c.slug === slug);
+  const normCounty = county ? normalizeCountyName(county.name) : "";
 
   // 1. County Budget (FY 2025/26)
   const budget = useMemo(
     () =>
       county
         ? ((budgetsData as any).budgets || []).find(
-            (b: any) => b.code === county.code || b.county.toLowerCase() === county.name.toLowerCase()
+            (b: any) =>
+              b.code === county.code ||
+              normalizeCountyName(b.county) === normCounty
           )
         : null,
-    [county]
+    [county, normCounty]
   );
 
   const perCapitaEquitableShare = useMemo(() => {
@@ -52,10 +63,12 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     () =>
       county
         ? ((rainfallData as any).counties || []).find(
-            (r: any) => r.code === county.code || r.name.toLowerCase() === county.name.toLowerCase()
+            (r: any) =>
+              r.code === county.code ||
+              normalizeCountyName(r.name) === normCounty
           )
         : null,
-    [county]
+    [county, normCounty]
   );
 
   // 3. Matching Agricultural Soil Types
@@ -64,11 +77,11 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
       county
         ? ((soilsData as any).soilTypes || []).filter((s: any) =>
             (s.counties || s.whereFound || []).some((w: string) =>
-              w.toLowerCase().includes(county.name.toLowerCase())
+              normalizeCountyName(w).includes(normCounty)
             )
           )
         : [],
-    [county]
+    [county, normCounty]
   );
 
   // 4. SHA / SHIF Accredited Hospitals in County
@@ -76,10 +89,10 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     () =>
       county
         ? ((hospitalsData as any).hospitals || []).filter(
-            (h: any) => h.county.toLowerCase() === county.name.toLowerCase()
+            (h: any) => normalizeCountyName(h.county) === normCounty
           )
         : [],
-    [county]
+    [county, normCounty]
   );
 
   // 5. Posta Kenya Postal Codes in County
@@ -87,10 +100,10 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     () =>
       county
         ? ((postalData as any).codes || []).filter(
-            (p: any) => p.county.toLowerCase() === county.name.toLowerCase()
+            (p: any) => normalizeCountyName(p.county) === normCounty
           )
         : [],
-    [county]
+    [county, normCounty]
   );
 
   // 6. Top KCSE Schools in County
@@ -98,10 +111,10 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     () =>
       county
         ? ((rankingsData as any).schools || []).filter(
-            (s: any) => s.county.toLowerCase() === county.name.toLowerCase()
+            (s: any) => normalizeCountyName(s.county) === normCounty
           )
         : [],
-    [county]
+    [county, normCounty]
   );
 
   // 7. National Parks, Forest Reserves & Agrovets in County
@@ -109,30 +122,30 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     () =>
       county
         ? ((parksData as any).parks || []).filter((p: any) =>
-            p.county.toLowerCase().includes(county.name.toLowerCase())
+            normalizeCountyName(p.county).includes(normCounty)
           )
         : [],
-    [county]
+    [county, normCounty]
   );
 
   const countyForests = useMemo(
     () =>
       county
         ? ((forestsData as any).forests || []).filter((f: any) =>
-            f.county.toLowerCase().includes(county.name.toLowerCase())
+            normalizeCountyName(f.county).includes(normCounty)
           )
         : [],
-    [county]
+    [county, normCounty]
   );
 
   const countyAgrovets = useMemo(
     () =>
       county
         ? ((agrovetsData as any).agrovets || []).filter(
-            (a: any) => a.county.toLowerCase() === county.name.toLowerCase()
+            (a: any) => normalizeCountyName(a.county) === normCounty
           )
         : [],
-    [county]
+    [county, normCounty]
   );
 
   // 8. Languages spoken in County
@@ -141,11 +154,11 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
       county
         ? ((languagesData as any).languages || []).filter((l: any) =>
             (l.counties || []).some((cn: string) =>
-              cn.toLowerCase().includes(county.name.toLowerCase())
+              normalizeCountyName(cn).includes(normCounty)
             )
           )
         : [],
-    [county]
+    [county, normCounty]
   );
 
   const sortedConstituencies = useMemo(() => {
@@ -523,6 +536,8 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
             ] as const).map((opt) => (
               <button
                 key={opt.id}
+                type="button"
+                aria-pressed={constSort === opt.id}
                 onClick={() => setConstSort(opt.id)}
                 className={`px-2.5 py-1 rounded-lg text-xs font-semibold ${
                   constSort === opt.id

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import {
+  AccessibilityInfo,
   LayoutAnimation,
   Linking,
   Platform,
@@ -32,6 +33,31 @@ if (
   UIManager.setLayoutAnimationEnabledExperimental
 ) {
   UIManager.setLayoutAnimationEnabledExperimental(true);
+}
+
+function useReduceMotionEnabled(): boolean {
+  const [reduceMotion, setReduceMotion] = useState(false);
+
+  useEffect(() => {
+    let mounted = true;
+    AccessibilityInfo.isReduceMotionEnabled()
+      .then((enabled) => {
+        if (mounted) setReduceMotion(Boolean(enabled));
+      })
+      .catch(() => {});
+    const sub = AccessibilityInfo.addEventListener(
+      "reduceMotionChanged",
+      (enabled) => {
+        if (mounted) setReduceMotion(Boolean(enabled));
+      }
+    );
+    return () => {
+      mounted = false;
+      sub.remove();
+    };
+  }, []);
+
+  return reduceMotion;
 }
 
 export const COURSE_NAMES: Record<string, string> = {
@@ -481,23 +507,29 @@ export function FeaturedLanguageWidget({
   const router = useRouter();
   const { theme } = useTheme();
   const isFocused = useIsFocused();
+  const reduceMotion = useReduceMotionEnabled();
   const [featuredLangIdx, setFeaturedLangIdx] = useState<number>(
     () => new Date().getDate() % ROTATING_LANGUAGES.length
   );
 
-  const rotateNext = useCallback((withHaptic = false) => {
-    if (withHaptic) triggerHaptic(8);
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-    setFeaturedLangIdx((i) => (i + 1) % ROTATING_LANGUAGES.length);
-  }, []);
+  const rotateNext = useCallback(
+    (withHaptic = false) => {
+      if (withHaptic) triggerHaptic(8);
+      if (!reduceMotion) {
+        LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+      }
+      setFeaturedLangIdx((i) => (i + 1) % ROTATING_LANGUAGES.length);
+    },
+    [reduceMotion]
+  );
 
   useEffect(() => {
-    if (!isFocused || paused) return;
+    if (!isFocused || paused || reduceMotion) return;
     const timer = setInterval(() => {
       rotateNext(false);
     }, 15000);
     return () => clearInterval(timer);
-  }, [isFocused, paused, rotateNext]);
+  }, [isFocused, paused, reduceMotion, rotateNext]);
 
   const currentFeatured =
     ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
@@ -611,21 +643,27 @@ export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) 
   const router = useRouter();
   const { theme } = useTheme();
   const isFocused = useIsFocused();
+  const reduceMotion = useReduceMotionEnabled();
   const [wordIdx, setWordIdx] = useState<number>(0);
 
-  const nextWord = useCallback((withHaptic = false) => {
-    if (withHaptic) triggerHaptic(8);
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-    setWordIdx((i) => (i + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length));
-  }, []);
+  const nextWord = useCallback(
+    (withHaptic = false) => {
+      if (withHaptic) triggerHaptic(8);
+      if (!reduceMotion) {
+        LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+      }
+      setWordIdx((i) => (i + 1) % Math.max(1, INITIAL_RANDOM_WORDS.length));
+    },
+    [reduceMotion]
+  );
 
   useEffect(() => {
-    if (!isFocused || paused) return;
+    if (!isFocused || paused || reduceMotion) return;
     const timer = setInterval(() => {
       nextWord(false);
     }, 15000);
     return () => clearInterval(timer);
-  }, [isFocused, paused, nextWord]);
+  }, [isFocused, paused, reduceMotion, nextWord]);
 
   if (!INITIAL_RANDOM_WORDS.length) return null;
   const currentWord =

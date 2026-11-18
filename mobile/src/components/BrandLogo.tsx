@@ -8,7 +8,7 @@ interface BrandLogoProps {
 }
 
 export function BrandLogo({ size = "md", showText = true }: BrandLogoProps) {
-  const { isDark } = useTheme();
+  const { colors, isDark } = useTheme();
 
   const isSmall = size === "sm";
   const isLarge = size === "lg";
@@ -30,6 +30,7 @@ export function BrandLogo({ size = "md", showText = true }: BrandLogoProps) {
             borderRadius: badgeSize / 2,
             backgroundColor: isDark ? "rgba(200, 150, 30, 0.15)" : "rgba(200, 150, 30, 0.1)",
             borderColor: isDark ? "rgba(200, 150, 30, 0.4)" : "rgba(200, 150, 30, 0.45)",
+            shadowColor: colors.gold,
           },
         ]}
       >
@@ -56,9 +57,9 @@ export function BrandLogo({ size = "md", showText = true }: BrandLogoProps) {
               },
             ]}
           >
-            <Text style={{ color: isDark ? "#2FA463" : "#006B3F" }}>Kenya</Text>
-            <Text style={{ color: "#C8961E" }}>H</Text>
-            <Text style={{ color: "#BE2126" }}>ub</Text>
+            <Text style={{ color: isDark ? colors.kenyaGreenLight : colors.kenyaGreen }}>Kenya</Text>
+            <Text style={{ color: colors.gold }}>H</Text>
+            <Text style={{ color: colors.kenyaRed }}>ub</Text>
           </Text>
         </View>
       )}
@@ -76,7 +77,6 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     alignItems: "center",
     justifyContent: "center",
-    shadowColor: "#C8961E",
     shadowOpacity: 0.25,
     shadowRadius: 5,
     shadowOffset: { width: 0, height: 1 },
@@ -92,4 +92,3 @@ const styles = StyleSheet.create({
     letterSpacing: -0.5,
   },
 });
-

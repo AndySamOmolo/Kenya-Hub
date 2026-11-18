@@ -19,7 +19,7 @@ interface GeoQuestion {
   fact: string;
 }
 
-export function CountiesGeoGame({ languageId, onAwardXp }: GameProps) {
+export function CountiesGeoGame({ languageId, onAwardXp, onUpdateGameStats }: GameProps) {
   const SESSION_ROUNDS = 8;
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
@@ -83,7 +83,7 @@ export function CountiesGeoGame({ languageId, onAwardXp }: GameProps) {
     if (isRight) {
       playCorrectSfx();
       setScore((s) => s + 20);
-      onAwardXp?.(20);
+      onAwardXp?.(20, false);
     } else {
       playWrongSfx();
     }
@@ -93,6 +93,8 @@ export function CountiesGeoGame({ languageId, onAwardXp }: GameProps) {
       if (round + 1 >= questions.length) {
         playCelebrationSfx();
         setSessionDone(true);
+        onAwardXp?.(0, true);
+        onUpdateGameStats?.((prev) => ({ ...prev, countiesBest: Math.max(prev.countiesBest || 0, score + (isRight ? 20 : 0)) }));
       } else {
         setRound((r) => r + 1);
       }

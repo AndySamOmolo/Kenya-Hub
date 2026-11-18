@@ -25,6 +25,7 @@ export function SentenceSafariGame({
   allUnits = [],
   languageName,
   onAwardXp,
+  onUpdateGameStats,
 }: GameProps) {
   const SESSION_ROUNDS = 8;
   const [round, setRound] = useState(0);
@@ -121,7 +122,8 @@ export function SentenceSafariGame({
     if (isRight) {
       playCorrectSfx();
       setScore((s) => s + 20);
-      onAwardXp?.(20);
+      onAwardXp?.(20, false);
+      onUpdateGameStats?.((prev) => ({ ...prev, safariCompleted: (prev.safariCompleted || 0) + 1 }));
     } else {
       playWrongSfx();
     }
@@ -131,6 +133,7 @@ export function SentenceSafariGame({
       if (round + 1 >= challenges.length) {
         playCelebrationSfx();
         setSessionDone(true);
+        onAwardXp?.(0, true);
       } else {
         setRound((r) => r + 1);
       }

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kenya 47 Counties Hub — Governors, FY 2025/26 Budgets, Constituencies & Climate",
+  title: "Kenya 47 Counties Hub — Governors, Budgets & Constituencies",
   description:
-    "Explore all 47 county governments of Kenya in one unified hub. Compare county governors, 290 constituencies, FY 2025/26 Controller of Budget allocations, rainfall patterns, SHA hospitals, and postal codes.",
+    "Explore all 47 county governments of Kenya: compare governors, 290 constituencies, FY 2025/26 Controller of Budget allocations, rainfall, SHA hospitals, and postal codes.",
   keywords: [
     "47 counties of Kenya",
     "Kenya county governments",
@@ -13,21 +13,14 @@ export const metadata: Metadata = {
     "Kenya counties population and area",
   ],
   openGraph: {
-    title: "Kenya 47 Counties Hub — Governors, Budgets, Constituencies & Climate | KenyaHub",
+    title: "Kenya 47 Counties Hub — Governors, Budgets & Constituencies | KenyaHub",
     description:
       "Unified directory and comparison hub for all 47 Kenyan counties — leadership, 290 constituencies, FY 2025/26 budgets, climate, and public services.",
     type: "website",
     locale: "en_KE",
     siteName: "KenyaHub",
     url: "https://kenyahub.me/county/",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Kenya 47 Counties Hub — KenyaHub",
-      },
-    ],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "KenyaHub" }],
   },
   twitter: {
     card: "summary_large_image",

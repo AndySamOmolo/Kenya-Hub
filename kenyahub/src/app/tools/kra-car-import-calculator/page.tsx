@@ -76,9 +76,9 @@ export default function KraCarImportCalculatorPage() {
     const ntsaFee = ntsaRow.fee;
     const portAndKebs = crspData.rates.kebsInspectionKes + crspData.rates.portClearingKes;
 
-    const cifKes =
-      (Math.max(0, Number(cifUsd.replace(/,/g, "")) || 0) || activePreset.avgCifUsd) *
-      (Math.max(1, Number(usdRate.replace(/,/g, "")) || 129));
+    const parsedCifUsd = cifUsd.trim() === "" ? 0 : Math.max(0, Number(cifUsd.replace(/,/g, "")) || 0);
+    const parsedUsdRate = usdRate.trim() === "" ? 0 : Math.max(0, Number(usdRate.replace(/,/g, "")) || 0);
+    const cifKes = parsedCifUsd * parsedUsdRate;
 
     const totalLandedCost = cifKes + totalKraDuty + ntsaFee + portAndKebs;
 
@@ -124,6 +124,8 @@ export default function KraCarImportCalculatorPage() {
                 return (
                   <button
                     key={m.label}
+                    type="button"
+                    aria-pressed={active}
                     onClick={() => setCustomMode(m.custom)}
                     className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
                       active
@@ -146,6 +148,8 @@ export default function KraCarImportCalculatorPage() {
                   return (
                     <button
                       key={m.id}
+                      type="button"
+                      aria-pressed={active}
                       onClick={() => {
                         setSelectedModelId(m.id);
                         setCifUsd(String(m.avgCifUsd));

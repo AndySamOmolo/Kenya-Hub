@@ -77,28 +77,55 @@ export default function KCSEGradeCalculatorPage() {
 
   const result = useMemo(() => {
     const english = subjectGrades[0];
+    const kiswahili = subjectGrades[1];
+    const math = subjectGrades[2];
     const otherGrades = subjectGrades.slice(1).filter(Boolean);
 
-    if (!english || otherGrades.length < 7) return null;
+    if (!english || otherGrades.length < 6) return null;
 
     const englishPoints = gradePoints[english];
-    const otherPoints = otherGrades
+    const mathPoints = math ? gradePoints[math] : 0;
+    const bestLangPoints = Math.max(englishPoints, kiswahili ? gradePoints[kiswahili] : 0);
+
+    // KNEC 7-subject aggregate (max 84): Best Language + Compulsory Math + Best 5 remaining subjects
+    const remainingPool = subjectGrades
+      .map((g, idx) => ({ idx, pts: g ? gradePoints[g] : 0 }))
+      .filter((item) => item.pts > 0);
+    const bestLangIdx =
+      kiswahili && (gradePoints[kiswahili] || 0) > englishPoints ? 1 : 0;
+    const nonCompulsory = remainingPool
+      .filter((item) => item.idx !== bestLangIdx && item.idx !== 2)
+      .map((item) => item.pts)
+      .sort((a, b) => b - a);
+    const best7Points =
+      bestLangPoints + mathPoints + nonCompulsory.slice(0, 5).reduce((a, b) => a + b, 0);
+
+    const otherPoints8 = otherGrades
       .map((g) => gradePoints[g])
       .sort((a, b) => b - a)
       .slice(0, 7);
 
-    const totalPoints = englishPoints + otherPoints.reduce((a, b) => a + b, 0);
-    const meanScore = totalPoints / 8;
+    const totalPoints =
+      otherGrades.length >= 7
+        ? englishPoints + otherPoints8.reduce((a, b) => a + b, 0)
+        : best7Points;
+    const divisor = otherGrades.length >= 7 ? 8 : 7;
+    const meanScore = totalPoints / divisor;
 
-    const meanGrade = meanGradeBoundaries.find(
+    const meanGradeObj = meanGradeBoundaries.find(
       (b) => meanScore >= b.min
     );
+    const meanGradeStr = meanGradeObj?.grade || "E";
+    const achievedGradePoints = gradePoints[meanGradeStr] || Math.round(meanScore);
 
     return {
       totalPoints,
+      best7Points,
+      divisor,
       meanScore: Math.round(meanScore * 100) / 100,
-      meanGrade: meanGrade?.grade || "E",
-      qualifyingCareers: careerRequirements.filter((c) => meanScore >= c.minPoints),
+      meanGrade: meanGradeStr,
+      achievedGradePoints,
+      qualifyingCareers: careerRequirements.filter((c) => achievedGradePoints >= c.minPoints),
     };
   }, [subjectGrades]);
 
@@ -163,7 +190,7 @@ export default function KCSEGradeCalculatorPage() {
                 {result.meanGrade}
               </p>
               <p className="text-sm text-text-secondary">
-                Aggregate Points: <strong>{result.totalPoints} / 96</strong> • Mean Score: <strong>{result.meanScore.toFixed(2)} / 12.00</strong>
+                Best 7 (KNEC): <strong>{result.best7Points} / 84</strong> • 8-Subject Aggregate: <strong>{result.totalPoints} / {result.divisor * 12}</strong> • Mean Score: <strong>{result.meanScore.toFixed(2)} / 12.00</strong>
               </p>
             </div>
 
@@ -185,7 +212,7 @@ export default function KCSEGradeCalculatorPage() {
                   </thead>
                   <tbody>
                     {careerRequirements.map((career) => {
-                      const qualifies = result.meanScore >= career.minPoints;
+                      const qualifies = result.achievedGradePoints >= career.minPoints;
                       return (
                         <tr key={career.career}>
                           <td className="text-text-secondary font-medium">{career.career}</td>

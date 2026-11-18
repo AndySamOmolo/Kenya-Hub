@@ -16,10 +16,12 @@ const EXCLUDED_SLUGS = new Set([
 
 function isHighQualityAppwritePost(doc: any): boolean {
   if (!doc || !doc.slug || EXCLUDED_SLUGS.has(doc.slug)) return false;
-  const content = String(doc.content || "");
-  if (content.length < 2500) return false;
+  const content = String(doc.content || "").trim();
+  const summary = String(doc.excerpt || doc.summary || "").trim();
+  const contentLen = content.length;
+  const summaryLen = summary.length;
+  if (!(contentLen >= 300 && summaryLen >= 30)) return false;
   if (content.toLowerCase().includes("<iframe")) return false;
-  if ((doc.readTime || 0) < 4) return false;
   return true;
 }
 
@@ -76,6 +78,71 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
 
   const staticPost = getStaticBlogPost(slug);
+
+  if (!EXCLUDED_SLUGS.has(slug)) {
+    try {
+      const client = new Client()
+        .setEndpoint("https://fra.cloud.appwrite.io/v1")
+        .setProject("6a3290500003e21b7fe1");
+
+      const databases = new Databases(client);
+
+      const response = await databases.listDocuments(DATABASE_ID, BLOGS_COLLECTION_ID, [
+        Query.equal("slug", slug),
+        Query.limit(1),
+      ]);
+
+      if (response.documents.length > 0 && isHighQualityAppwritePost(response.documents[0])) {
+        const post = response.documents[0];
+        const canonicalUrl = `https://kenyahub.me/blog/${post.slug}/`;
+        return {
+          title: post.title,
+          description: post.excerpt,
+          keywords: post.tags || staticPost?.tags || [],
+          authors: [{ name: post.author, url: "https://kenyahub.me/about/" }],
+          alternates: {
+            canonical: canonicalUrl,
+            languages: {
+              "en-KE": canonicalUrl,
+              en: canonicalUrl,
+              "x-default": canonicalUrl,
+            },
+          },
+          openGraph: {
+            title: `${post.title} | KenyaHub`,
+            description: post.excerpt,
+            type: "article",
+            locale: "en_KE",
+            siteName: "KenyaHub",
+            url: canonicalUrl,
+            publishedTime: post.publishedAt,
+            modifiedTime: post.updatedAt || post.publishedAt,
+            authors: [post.author],
+            tags: post.tags || staticPost?.tags || [],
+            images: post.coverImage
+              ? [post.coverImage]
+              : [
+                  {
+                    url: "/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                  },
+                ],
+          },
+          twitter: {
+            card: "summary_large_image",
+            title: `${post.title} | KenyaHub`,
+            description: post.excerpt,
+            images: post.coverImage ? [post.coverImage] : ["/og-image.png"],
+          },
+        };
+      }
+    } catch {
+      // Fallback to staticPost metadata below
+    }
+  }
+
   if (staticPost) {
     const canonicalUrl = `https://kenyahub.me/blog/${staticPost.slug}/`;
     return {
@@ -88,8 +155,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         languages: {
           "en-KE": canonicalUrl,
           en: canonicalUrl,
-        "x-default": canonicalUrl,
-      },
+          "x-default": canonicalUrl,
+        },
       },
       openGraph: {
         title: `${staticPost.title} | KenyaHub`,
@@ -120,70 +187,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
-  if (!EXCLUDED_SLUGS.has(slug)) {
-    try {
-      const client = new Client()
-        .setEndpoint("https://fra.cloud.appwrite.io/v1")
-        .setProject("6a3290500003e21b7fe1");
-
-      const databases = new Databases(client);
-
-      const response = await databases.listDocuments(DATABASE_ID, BLOGS_COLLECTION_ID, [
-        Query.equal("slug", slug),
-        Query.limit(1),
-      ]);
-
-      if (response.documents.length > 0 && isHighQualityAppwritePost(response.documents[0])) {
-        const post = response.documents[0];
-        const canonicalUrl = `https://kenyahub.me/blog/${post.slug}/`;
-        return {
-          title: post.title,
-          description: post.excerpt,
-          keywords: post.tags || [],
-          authors: [{ name: post.author, url: "https://kenyahub.me/about/" }],
-          alternates: {
-            canonical: canonicalUrl,
-            languages: {
-              "en-KE": canonicalUrl,
-              en: canonicalUrl,
-        "x-default": canonicalUrl,
-      },
-          },
-          openGraph: {
-            title: `${post.title} | KenyaHub`,
-            description: post.excerpt,
-            type: "article",
-            locale: "en_KE",
-            siteName: "KenyaHub",
-            url: canonicalUrl,
-            publishedTime: post.publishedAt,
-            modifiedTime: post.updatedAt || post.publishedAt,
-            authors: [post.author],
-            tags: post.tags || [],
-            images: post.coverImage
-              ? [post.coverImage]
-              : [
-                  {
-                    url: "/og-image.png",
-                    width: 1200,
-                    height: 630,
-                    alt: post.title,
-                  },
-                ],
-          },
-          twitter: {
-            card: "summary_large_image",
-            title: `${post.title} | KenyaHub`,
-            description: post.excerpt,
-            images: post.coverImage ? [post.coverImage] : ["/og-image.png"],
-          },
-        };
-      }
-    } catch {
-      // Fallback metadata below
-    }
-  }
-
   return {
     title: "Blog Post Not Found",
     robots: { index: false, follow: true },
@@ -211,7 +214,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     };
   }
 
-  if (!post && !EXCLUDED_SLUGS.has(slug)) {
+  // Allow Appwrite remote posts to update/override STATIC_BLOG_POSTS when post.slug matches and isHighQualityAppwritePost passes
+  if (!EXCLUDED_SLUGS.has(slug)) {
     try {
       const client = new Client()
         .setEndpoint("https://fra.cloud.appwrite.io/v1")
@@ -225,10 +229,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       ]);
 
       if (response.documents.length > 0 && isHighQualityAppwritePost(response.documents[0])) {
-        post = JSON.parse(JSON.stringify(response.documents[0]));
+        const remoteDoc = JSON.parse(JSON.stringify(response.documents[0]));
+        post = {
+          ...(post || {}),
+          ...remoteDoc,
+          sources: remoteDoc.sources || staticPost?.sources,
+        };
       }
     } catch {
-      post = null;
+      // Retain staticPost fallback if Appwrite is offline
     }
   }
 

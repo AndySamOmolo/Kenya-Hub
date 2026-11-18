@@ -22,6 +22,7 @@ export default function ContactPage() {
     general: "General Inquiry",
     correction: "Data Discrepancy / Bug Report",
     suggestion: "New Tool Suggestion",
+    privacy: "Data Protection & Privacy Inquiry (ODPC / GDPR)",
     advertising: "Advertising / Sponsorship",
   };
 
@@ -110,7 +111,7 @@ export default function ContactPage() {
           Contact <span className="gradient-text-kenya">KenyaHub</span>
         </h1>
         <p className="text-sm text-text-secondary max-w-xl mx-auto leading-relaxed">
-          Have feedback, spotted a statutory rate update, or interested in partnership opportunities? Reach the KenyaHub editorial and engineering desk directly.
+          Have feedback, spotted a statutory rate update, or have a data protection &amp; privacy inquiry? Reach the KenyaHub editorial and engineering desk directly.
         </p>
       </div>
 
@@ -141,6 +142,21 @@ export default function ContactPage() {
                 </>
               )}
             </button>
+          </div>
+
+          <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2.5">
+            <DynamicIcon emoji="🔒" className="w-8 h-8 text-gold" />
+            <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Data Protection &amp; Privacy</h3>
+            <p className="text-xs text-text-muted">
+              For inquiries under the Kenya Data Protection Act (2019), GDPR, or cookie consent preferences, email{" "}
+              <a
+                href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("[KenyaHub] Data Protection & Privacy Inquiry")}`}
+                className="text-gold hover:underline font-semibold"
+              >
+                {CONTACT_EMAIL}
+              </a>{" "}
+              or review our <Link href="/privacy/" className="text-gold hover:underline font-medium">Privacy Policy</Link>.
+            </p>
           </div>
 
           <div className="bg-bg-card border border-border rounded-xl p-5 space-y-3">
@@ -264,6 +280,7 @@ export default function ContactPage() {
                   <option value="general">General Inquiry</option>
                   <option value="correction">Report Data Discrepancy / Bug</option>
                   <option value="suggestion">Suggest a New Tool</option>
+                  <option value="privacy">Data Protection &amp; Privacy Inquiry (ODPC / GDPR)</option>
                   <option value="advertising">Advertising / Sponsorship</option>
                 </CustomSelect>
               </div>

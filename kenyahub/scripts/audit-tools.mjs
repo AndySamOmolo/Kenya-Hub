@@ -11,7 +11,7 @@ const proverbsRoot = join(coursesRoot, "proverbs");
 const dictionariesRoot = join(dataRoot, "dictionaries");
 const manifestPath = join(dataRoot, "tool-data-sources.json");
 const reportRoot = join(root, "reports");
-const checkSources = process.argv.includes("--check-sources");
+const checkSources = process.argv.includes("--check-sources") || process.argv.includes("--check-links");
 const strict = process.argv.includes("--strict");
 const today = new Date();
 
@@ -70,7 +70,11 @@ function inspectData(filePath, config = {}) {
 
 async function checkUrl(url) {
   try {
-    const response = await fetch(url, { method: "HEAD", redirect: "follow" });
+    const response = await fetch(url, {
+      method: "HEAD",
+      redirect: "follow",
+      signal: AbortSignal.timeout(8000),
+    });
     return { url, status: response.status, reachable: response.ok || response.status < 500 };
   } catch (error) {
     return { url, status: null, reachable: false, error: error.message };

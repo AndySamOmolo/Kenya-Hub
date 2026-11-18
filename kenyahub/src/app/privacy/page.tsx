@@ -3,32 +3,32 @@ import Link from "next/link";
 import CookiePreferencesButton from "@/components/CookiePreferencesButton";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Data Protection, Cookies & Google AdSense Disclosure",
+  title: "Privacy Policy — Data Protection & Cookies",
   description:
-    "KenyaHub Privacy Policy — how we handle user data, local browser calculations, Google Analytics 4 (GA4), Google AdSense DART cookies, and Google Consent Mode v2.",
+    "KenyaHub Privacy Policy — local browser calculations, client storage keys, Google Analytics 4 (GA4), Google AdSense cookies, and Consent Mode v2.",
   alternates: {
     canonical: "https://kenyahub.me/privacy/",
     languages: {
       "en-KE": "https://kenyahub.me/privacy/",
       en: "https://kenyahub.me/privacy/",
-        "x-default": "https://kenyahub.me/privacy/",
-      },
+      "x-default": "https://kenyahub.me/privacy/",
+    },
   },
   openGraph: {
     title: "Privacy Policy | KenyaHub",
     description:
-      "KenyaHub Privacy Policy — local browser calculations, Google Analytics 4 (GA4), Google AdSense DART cookies, and Google Consent Mode v2.",
+      "KenyaHub Privacy Policy — local browser calculations, client storage disclosures, Google Analytics 4 (GA4), Google AdSense cookies, and Consent Mode v2.",
     type: "website",
     locale: "en_KE",
     siteName: "KenyaHub",
     url: "https://kenyahub.me/privacy/",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "KenyaHub Privacy Policy" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "KenyaHub" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy | KenyaHub",
     description:
-      "KenyaHub Privacy Policy — local browser calculations, Google Analytics 4 (GA4), Google AdSense DART cookies, and Google Consent Mode v2.",
+      "KenyaHub Privacy Policy — local browser calculations, client storage disclosures, Google Analytics 4 (GA4), Google AdSense cookies, and Consent Mode v2.",
     images: ["/og-image.png"],
   },
 };
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
             All calculators and interactive tools on KenyaHub (including the PAYE tax calculator, M-Pesa fee comparisons, KRA CRSP car import duty calculator, HELB repayment calculator, KUCCPS cluster points evaluator, and Mjengo construction BoQ estimator) execute strictly within your local web browser using client-side JavaScript.
           </p>
           <p className="mt-2 text-text-muted">
-            We do not transmit, log, or store your entered financial figures, income amounts, phone numbers, or personal calculation parameters on our servers or external databases. Your calculation inputs stay on your device.
+            We do not transmit, log, or store your entered financial figures, income amounts, phone numbers, or personal calculation parameters on our servers or external databases. When you generate a shareable PAYE calculation link, salary parameters are encoded in the URL hash fragment (<code className="font-mono text-gold">#gross=...</code>) so they never leave your browser in HTTP Referer headers or server logs.
           </p>
         </section>
 
@@ -105,16 +105,16 @@ export default function PrivacyPage() {
             </div>
 
             <div className="p-3.5 rounded-xl bg-bg-card border border-border">
-              <h3 className="text-xs font-bold text-text-primary mb-1">IP Anonymization:</h3>
+              <h3 className="text-xs font-bold text-text-primary mb-1">IP Anonymization &amp; URL Passthrough Disabled:</h3>
               <p className="text-xs text-text-muted">
-                In Google Analytics 4, IP addresses are automatically masked and anonymized by default. Google does not log or store individual visitor IP addresses, ensuring that your online activity cannot be traced back to your individual internet connection.
+                In Google Analytics 4, IP addresses are automatically masked and anonymized by default, and <code className="font-mono text-gold">url_passthrough</code> is set to <code className="font-mono text-gold">false</code> so ad-click identifiers are never appended to internal URLs when consent is denied.
               </p>
             </div>
 
             <div className="p-3.5 rounded-xl bg-bg-card border border-border">
-              <h3 className="text-xs font-bold text-text-primary mb-1">Google Consent Mode v2:</h3>
+              <h3 className="text-xs font-bold text-text-primary mb-1">Google Consent Mode v2 &amp; Cookie Expiration:</h3>
               <p className="text-xs text-text-muted">
-                KenyaHub implements Google Consent Mode v2. By default, analytics storage (<code className="font-mono text-gold">analytics_storage</code>) and advertising storage (<code className="font-mono text-gold">ad_storage</code>, <code className="font-mono text-gold">ad_user_data</code>, <code className="font-mono text-gold">ad_personalization</code>) are set to <strong className="text-text-secondary">denied</strong> until you make a consent choice. You can accept all cookies, decline all non-essential cookies, or customize your preferences at any time via the Cookie Settings link in the footer.
+                KenyaHub implements Google Consent Mode v2. By default, analytics storage (<code className="font-mono text-gold">analytics_storage</code>) and advertising storage (<code className="font-mono text-gold">ad_storage</code>, <code className="font-mono text-gold">ad_user_data</code>, <code className="font-mono text-gold">ad_personalization</code>) are set to <strong className="text-text-secondary">denied</strong> until you make a consent choice. If you revoke analytics or advertising consent at any time, KenyaHub immediately expires existing Google cookies (<code className="font-mono text-gold">_ga</code>, <code className="font-mono text-gold">_gid</code>, <code className="font-mono text-gold">_gat</code>, <code className="font-mono text-gold">__gads</code>, <code className="font-mono text-gold">__gpi</code>).
               </p>
             </div>
           </div>
@@ -190,20 +190,36 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            5. Cookies, LocalStorage &amp; Consent Management
+            5. Cookies, LocalStorage Keys &amp; Third-Party Infrastructure Providers
           </h2>
           <p>
-            Cookies and browser local storage are small files stored on your device by your web browser. We categorize them into:
+            Cookies and browser local storage are small entries stored on your device by your web browser. We categorize them into:
           </p>
-          <ul className="mt-3 space-y-2 ml-4 list-disc text-text-muted">
+          <ul className="mt-3 space-y-2.5 ml-4 list-disc text-text-muted">
             <li>
-              <strong className="text-text-secondary">Essential &amp; Functional LocalStorage:</strong> Stored locally in your browser to remember your UI preferences—specifically <code className="font-mono text-gold">kh-theme</code> (light/dark mode), <code className="font-mono text-gold">kh-pinned-tools</code> (your pinned calculators), <code className="font-mono text-gold">kh-learn-progress-*</code> (your language lesson progress), and <code className="font-mono text-gold">kh-cookie-consent</code> / <code className="font-mono text-gold">kh-cookie-preferences</code>. These items are never transmitted to any server.
+              <strong className="text-text-secondary">Essential &amp; Functional LocalStorage Keys:</strong> Stored strictly on your device to preserve your UI preferences and learning progress without requiring an account:
+              <ul className="mt-1.5 ml-4 list-disc space-y-1 text-xs">
+                <li><code className="font-mono text-gold">kh-theme</code> — Remembers your chosen Dark or Light display theme.</li>
+                <li><code className="font-mono text-gold">kh-cookie-consent</code> &amp; <code className="font-mono text-gold">kh-cookie-preferences</code> — Stores your Google Consent Mode v2 cookie choices.</li>
+                <li><code className="font-mono text-gold">kh-learn-progress</code> (<code className="font-mono text-gold">kh-learn-progress-*</code>) — Saves your lesson completion, XP, streaks, and vocabulary review state across our 23 Kenyan language courses.</li>
+                <li><code className="font-mono text-gold">kh-sfx-muted</code> — Remembers whether lesson sound effects are muted.</li>
+                <li><code className="font-mono text-gold">kh-translator-recent</code> &amp; <code className="font-mono text-gold">kh-translator-favs</code> — Saves your recent lookups and bookmarked words in the 23-Language Translator &amp; Dictionary.</li>
+                <li><code className="font-mono text-gold">kh-user-contributions</code> — Stores your locally drafted community word or proverb suggestions prior to submission.</li>
+                <li><code className="font-mono text-gold">kh-pinned-tools</code> &amp; <code className="font-mono text-gold">kh-tool-usage</code> — Remembers your pinned calculators and recently used tools on the Tools Hub.</li>
+              </ul>
             </li>
             <li>
-              <strong className="text-text-secondary">Analytics Cookies (Optional):</strong> Cookies used by Google Analytics (e.g., <code className="font-mono text-gold">_ga</code>, <code className="font-mono text-gold">_ga_*</code>) to measure aggregated audience engagement. Activated only after explicit user consent.
+              <strong className="text-text-secondary">Third-Party Map &amp; Audio Content Providers:</strong>
+              <ul className="mt-1.5 ml-4 list-disc space-y-1 text-xs">
+                <li><strong className="text-text-primary">CartoDB &amp; OpenStreetMap:</strong> When viewing interactive Matatu route maps, your browser fetches map tiles directly from <strong className="text-text-primary">CartoDB</strong> (<code className="font-mono text-gold">basemaps.cartocdn.com</code>) and <strong className="text-text-primary">OpenStreetMap</strong> contributors.</li>
+                <li><strong className="text-text-primary">Cloudflare R2 &amp; Zenodo:</strong> When playing native speaker audio pronunciations in our language courses and translator, your browser streams audio files from our <strong className="text-text-primary">Cloudflare R2</strong> edge bucket (<code className="font-mono text-gold">audio.kenyahub.me</code>) and open academic archives hosted on <strong className="text-text-primary">Zenodo</strong> (<code className="font-mono text-gold">zenodo.org</code>).</li>
+              </ul>
             </li>
             <li>
-              <strong className="text-text-secondary">Advertising Cookies (Optional):</strong> Cookies used by Google AdSense to serve relevant ads, cap frequency, and measure ad performance. Activated according to your consent settings.
+              <strong className="text-text-secondary">Analytics Cookies (Optional):</strong> Cookies used by Google Analytics (e.g., <code className="font-mono text-gold">_ga</code>, <code className="font-mono text-gold">_gid</code>, <code className="font-mono text-gold">_gat</code>) to measure aggregated audience engagement. Activated only after explicit user consent.
+            </li>
+            <li>
+              <strong className="text-text-secondary">Advertising Cookies (Optional):</strong> Cookies used by Google AdSense (e.g., <code className="font-mono text-gold">__gads</code>, <code className="font-mono text-gold">__gpi</code>) to serve relevant ads, cap frequency, and measure ad performance. Activated according to your consent settings.
             </li>
           </ul>
 
@@ -212,7 +228,7 @@ export default function PrivacyPage() {
           </div>
 
           <p className="mt-2 text-xs text-text-muted">
-            You can also adjust your web browser settings to block or delete cookies at any time. Disabling cookies will not restrict or break any calculation tools on KenyaHub.
+            You can also clear local storage or adjust your web browser settings to block or delete cookies at any time. Disabling cookies will not restrict or break any calculation tools on KenyaHub.
           </p>
         </section>
 
@@ -253,7 +269,8 @@ export default function PrivacyPage() {
             If you have questions, data requests, or concerns regarding this Privacy Policy, please contact us at:{" "}
             <a href="mailto:contact@kenyahub.me" className="text-gold hover:underline font-semibold">
               contact@kenyahub.me
-            </a>.
+            </a>{" "}
+            or submit a request via our <Link href="/contact/" className="text-gold hover:underline font-semibold">Contact Page</Link>.
           </p>
         </section>
 

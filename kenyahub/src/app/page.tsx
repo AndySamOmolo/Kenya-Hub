@@ -178,7 +178,7 @@ export default function HomePage() {
                 Interactive Kenyan Languages, Translator &amp; Oral Wisdom Hub
               </h2>
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed mt-2">
-                Explore {PUBLISHED_COURSE_SUMMARIES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 4 vocabulary mini-games, and a 23-language bidirectional dictionary.
+                Explore {PUBLISHED_COURSE_SUMMARIES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 14 vocabulary mini-games, and a 23-language bidirectional dictionary.
               </p>
             </div>
             <div className="flex flex-wrap gap-2.5 shrink-0">
@@ -220,10 +220,10 @@ export default function HomePage() {
             <div className="rounded-xl border border-border bg-bg-elevated/50 p-4">
               <div className="flex items-center gap-2 text-sky-light font-bold text-sm mb-1">
                 <Gamepad2 className="w-4 h-4 shrink-0" />
-                <span>4 Language Mini-Games</span>
+                <span>14 Language Mini-Games</span>
               </div>
               <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
-                Play Wordle, Word Scramble, 60-Second Speed Match, and Memory Cards in any course.
+                Play Wordle, Word Scramble, Speed Match, Memory Cards, Riddles, Methali Builder & 8 more games.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/50 p-4">

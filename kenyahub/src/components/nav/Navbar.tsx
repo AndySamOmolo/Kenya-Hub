@@ -19,7 +19,9 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
 import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
+import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 import countiesData from "@/data/counties.json";
+import matatuRoutesData from "@/data/matatu-routes.json";
 import { useTheme } from "@/components/ThemeProvider";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 
@@ -30,6 +32,13 @@ interface QuickSearchItem {
   href: string;
   badge: string;
   icon: string;
+}
+
+function stripDiacritics(input: string): string {
+  return input
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
 }
 
 export default function Navbar() {
@@ -118,18 +127,54 @@ export default function Navbar() {
         icon: "🏛️",
       });
     }
+    for (const post of STATIC_BLOG_POSTS) {
+      items.push({
+        id: `blog-${post.slug}`,
+        title: post.title,
+        subtitle: post.excerpt,
+        href: `/blog/${post.slug}/`,
+        badge: "Guide",
+        icon: "📖",
+      });
+    }
+    const routesByTown = (matatuRoutesData.routes || {}) as Record<
+      string,
+      Array<{
+        id: string;
+        number: string;
+        name: string;
+        slug: string;
+        from: string;
+        to: string;
+        sacco?: string;
+      }>
+    >;
+    for (const [townSlug, townRoutes] of Object.entries(routesByTown)) {
+      if (!Array.isArray(townRoutes)) continue;
+      const townLabel = townSlug.charAt(0).toUpperCase() + townSlug.slice(1);
+      for (const route of townRoutes) {
+        items.push({
+          id: `matatu-${townSlug}-${route.slug}`,
+          title: `Route ${route.number}: ${route.name} (${townLabel})`,
+          subtitle: `${route.from} → ${route.to}${route.sacco ? ` • ${route.sacco}` : ""}`,
+          href: `/matatu/${townSlug}/${route.slug}/`,
+          badge: "Matatu",
+          icon: "🚌",
+        });
+      }
+    }
     return items;
   }, []);
 
   const filteredSearchResults = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
+    const q = stripDiacritics(searchQuery.trim());
     if (!q) return quickSearchItems.slice(0, 10);
     return quickSearchItems
       .filter(
         (item) =>
-          item.title.toLowerCase().includes(q) ||
-          item.subtitle.toLowerCase().includes(q) ||
-          item.badge.toLowerCase().includes(q)
+          stripDiacritics(item.title).includes(q) ||
+          stripDiacritics(item.subtitle).includes(q) ||
+          stripDiacritics(item.badge).includes(q)
       )
       .slice(0, 14);
   }, [quickSearchItems, searchQuery]);
@@ -154,7 +199,7 @@ export default function Navbar() {
       {/* Kenyan flag stripe */}
       <div className="kenya-stripe w-full" />
 
-      <nav className="sticky top-0 z-50 glass">
+      <nav aria-label="Primary navigation" className="sticky top-0 z-50 glass">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-12 sm:h-[54px]">
             {/* Logo */}
@@ -307,7 +352,7 @@ export default function Navbar() {
                 type="button"
                 onClick={() => setSearchOpen(true)}
                 className="ml-1 inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card/80 px-2.5 py-1.5 text-xs text-text-muted hover:border-gold/50 hover:text-text-primary transition-colors cursor-pointer"
-                aria-label="Quick search tools, languages, and counties (Ctrl+K)"
+                aria-label="Quick search tools, languages, counties, matatu routes, and guides (Ctrl+K)"
                 title="Quick search (⌘K / Ctrl+K)"
               >
                 <Search className="w-3.5 h-3.5 text-gold" />
@@ -342,7 +387,7 @@ export default function Navbar() {
                 type="button"
                 onClick={() => setSearchOpen(true)}
                 className="w-8 h-8 rounded-lg border border-border bg-bg-card/80 flex items-center justify-center text-gold hover:border-gold/50 transition-colors"
-                aria-label="Search tools, languages, and counties"
+                aria-label="Search tools, languages, counties, matatu routes, and guides"
               >
                 <Search className="w-4 h-4" />
               </button>
@@ -389,7 +434,7 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden absolute left-0 right-0 top-12 h-[calc(100dvh-48px)] border-t border-border bg-bg-card/98 backdrop-blur-xl animate-fade-in-up flex flex-col shadow-2xl">
+          <div className="md:hidden absolute left-0 right-0 top-12 h-[calc(100vh-48px)] h-[calc(100dvh-48px)] max-h-[calc(100vh-5rem)] max-h-[calc(100dvh-5rem)] border-t border-border bg-bg-card/98 backdrop-blur-xl animate-fade-in-up flex flex-col shadow-2xl">
             <div className="flex-1 overflow-y-auto px-4 py-4 pb-16 space-y-1">
               <Link href="/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-7 flex items-center justify-center shrink-0"><Home className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Home
@@ -461,13 +506,13 @@ export default function Navbar() {
           onClick={() => setSearchOpen(false)}
           role="dialog"
           aria-modal="true"
-          aria-label="Quick search"
+          aria-label="Site search"
         >
           <div
-            className="w-full max-w-xl rounded-2xl border border-border bg-bg-card shadow-2xl overflow-hidden animate-fade-in-up"
+            className="w-full max-w-xl max-h-[calc(100vh-5rem)] max-h-[calc(100dvh-5rem)] rounded-2xl border border-border bg-bg-card shadow-2xl overflow-hidden animate-fade-in-up flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-3 border-b border-border bg-bg-elevated/60">
+            <div className="flex items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-3 border-b border-border bg-bg-elevated/60 shrink-0">
               <Search className="w-4 h-4 text-gold shrink-0" />
               <input
                 ref={searchInputRef}
@@ -480,7 +525,7 @@ export default function Navbar() {
                     router.push(filteredSearchResults[0].href);
                   }
                 }}
-                placeholder="Search 25 tools, 23 languages, or 47 counties..."
+                placeholder="Search 25 tools, 23 languages, 47 counties, matatu routes, or guides..."
                 className="flex-1 min-w-0 bg-transparent text-sm text-text-primary placeholder:text-text-muted outline-none"
               />
               {searchQuery && (
@@ -505,10 +550,10 @@ export default function Navbar() {
               </button>
             </div>
 
-            <div className="max-h-[60vh] overflow-y-auto divide-y divide-border/50">
+            <div className="max-h-[60vh] overflow-y-auto divide-y divide-border/50 flex-1">
               {filteredSearchResults.length === 0 ? (
                 <div className="p-8 text-center text-sm text-text-muted">
-                  No matching tools, languages, or counties found for &ldquo;{searchQuery}&rdquo;.
+                  No matching tools, languages, counties, matatu routes, or guides found for &ldquo;{searchQuery}&rdquo;.
                 </div>
               ) : (
                 filteredSearchResults.map((item) => (

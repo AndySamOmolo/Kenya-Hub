@@ -180,11 +180,11 @@ export default function CustomSelect({
     <div
       className={`relative ${wrapperClasses}`.trim()}
       ref={containerRef}
-      id={id}
       onKeyDown={handleKeyDown}
     >
       <button
         type="button"
+        id={id}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
         onClick={() => {
@@ -235,7 +235,7 @@ export default function CustomSelect({
                     setHighlightedIndex(0);
                     filterInputRef.current?.focus();
                   }}
-                  className="shrink-0 w-5 h-5 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer"
+                  className="shrink-0 w-6 h-6 rounded-full bg-bg-card border border-border hover:border-gold hover:text-gold flex items-center justify-center text-text-muted transition-colors cursor-pointer"
                   aria-label="Clear filter"
                 >
                   <X className="w-3 h-3 shrink-0" />
@@ -251,9 +251,11 @@ export default function CustomSelect({
                 const isSelected = option.value === String(value);
                 const isHighlighted = idx === highlightedIndex;
                 return (
-                  <li key={`${option.value}-${idx}`} role="option" aria-selected={isSelected}>
+                  <li key={`${option.value}-${idx}`} role="presentation">
                     <button
                       type="button"
+                      role="option"
+                      aria-selected={isSelected}
                       onClick={() => handleSelect(option.value)}
                       onMouseEnter={() => setHighlightedIndex(idx)}
                       className={`w-full text-left px-3.5 py-2 text-xs sm:text-sm flex items-center justify-between gap-3 transition-colors cursor-pointer ${

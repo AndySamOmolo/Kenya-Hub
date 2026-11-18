@@ -1546,7 +1546,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
-        "icon": "Clock",
+        "icon": "⏰",
         "count": 112
       },
       {
@@ -1663,7 +1663,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
-        "icon": "Clock",
+        "icon": "⏰",
         "count": 102
       },
       {
@@ -2372,7 +2372,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
       {
         "id": "time",
         "name": "Time, Seasons & Calendar",
-        "icon": "Clock",
+        "icon": "⏰",
         "count": 100
       },
       {
@@ -2507,7 +2507,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     ],
     "source": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980)",
     "isoCode": "saq-ilc",
-    "glottocode": "chAM1234"
+    "glottocode": "samp1246"
   },
   {
     "languageId": "pokot",
@@ -2741,8 +2741,8 @@ export const ALL_DICT_METAS: DictMeta[] = [
       }
     ],
     "source": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons",
-    "isoCode": "",
-    "glottocode": ""
+    "isoCode": "dsh",
+    "glottocode": "daas1238"
   }
 ];
 
@@ -2833,7 +2833,7 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 157533;
+export const TOTAL_DICTIONARY_ENTRIES: number = 204705;
 
 const _swahiliMeta = ALL_DICT_METAS.find((m) => m.languageId === "swahili");
 if (_swahiliMeta) {
@@ -2985,10 +2985,10 @@ if (_tesoMeta) {
     'Also integrates Sunbird AI SALT (25,000 English ↔ Ateso [teo] ↔ Swahili parallel sentences, CC-BY-SA-4.0 / CC-BY-4.0) and SALT-31 (multi-turn Ateso discourse dialogues).';
 }
 
-// ── Synchronized Exact Entry & Category Counts Across All 23 Dictionaries (2026-11-17) ──
+// ── Synchronized Exact Entry & Category Counts Across All 23 Dictionaries (2026-11-18) ──
 const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, number> }> = {
   "borana": {
-    "total": 17427,
+    "total": 26441,
     "cats": {
       "greetings": 74,
       "numbers": 422,
@@ -3004,7 +3004,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 139,
       "emergency": 313,
       "time": 142,
-      "phrases": 4735,
+      "phrases": 13749,
       "culture-history": 4787
     }
   },
@@ -3093,28 +3093,28 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
     }
   },
   "kamba": {
-    "total": 6779,
+    "total": 9752,
     "cats": {
       "greetings": 21,
       "numbers": 131,
       "family": 269,
       "body": 379,
-      "animals": 371,
+      "animals": 370,
       "nature": 314,
-      "food": 228,
+      "food": 226,
       "home": 1546,
-      "verbs": 389,
+      "verbs": 388,
       "adjectives": 159,
-      "travel": 202,
+      "travel": 201,
       "shopping": 102,
       "emergency": 142,
       "time": 129,
-      "phrases": 1085,
+      "phrases": 4063,
       "culture-history": 1312
-    }
+}
   },
   "kikuyu": {
-    "total": 14710,
+    "total": 23028,
     "cats": {
       "greetings": 117,
       "numbers": 1704,
@@ -3130,7 +3130,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 150,
       "emergency": 210,
       "time": 272,
-      "phrases": 3342,
+      "phrases": 11660,
       "culture-history": 1302
     }
   },
@@ -3177,7 +3177,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
     }
   },
   "luo": {
-    "total": 4505,
+    "total": 14960,
     "cats": {
       "greetings": 19,
       "numbers": 103,
@@ -3193,7 +3193,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 36,
       "emergency": 61,
       "time": 104,
-      "phrases": 1499,
+      "phrases": 11954,
       "culture-history": 596
     }
   },
@@ -3219,7 +3219,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
     }
   },
   "meru": {
-    "total": 1366,
+    "total": 1664,
     "cats": {
       "greetings": 10,
       "numbers": 47,
@@ -3235,7 +3235,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 22,
       "emergency": 21,
       "time": 28,
-      "phrases": 259,
+      "phrases": 557,
       "culture-history": 361
     }
   },
@@ -3345,7 +3345,7 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
     }
   },
   "somali": {
-    "total": 5265,
+    "total": 12852,
     "cats": {
       "greetings": 17,
       "numbers": 146,
@@ -3361,16 +3361,16 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 42,
       "emergency": 36,
       "time": 154,
-      "phrases": 2012,
+      "phrases": 9599,
       "culture-history": 796
     }
   },
   "swahili": {
-    "total": 44542,
+    "total": 53051,
     "cats": {
       "greetings": 183,
       "numbers": 1510,
-      "family": 1208,
+      "family": 1207,
       "body": 1514,
       "animals": 1060,
       "nature": 1883,
@@ -3382,9 +3382,9 @@ const _EXACT_DICT_STATS: Record<string, { total: number; cats: Record<string, nu
       "shopping": 658,
       "emergency": 1099,
       "time": 416,
-      "phrases": 12202,
-      "culture-history": 12105
-    }
+      "phrases": 20713,
+      "culture-history": 12104
+}
   },
   "taita": {
     "total": 7689,
@@ -3476,7 +3476,7 @@ for (const _m of ALL_DICT_METAS) {
   if (_st) {
     _m.totalEntries = _st.total;
     _m.hasAudio = true;
-    _m.lastUpdated = "2026-11-17";
+    _m.lastUpdated = "2026-11-18";
     for (const _c of _m.categories) {
       if (_st.cats[_c.id] !== undefined) _c.count = _st.cats[_c.id];
     }

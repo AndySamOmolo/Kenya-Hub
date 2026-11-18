@@ -20,8 +20,8 @@ on:
       - "kenyahub/scripts/ci-ingest-audio-and-text-r2.py"
 
 concurrency:
-  group: ingest-r2-audio-once
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   ingest-once:
@@ -116,20 +116,19 @@ jobs:
 
       - name: Sync Mobile Data & Run Strict Tool/Course Audit
         if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
-        working-directory: kenyahub
         run: |
-          node ../mobile/scripts/sync-data.mjs
-          npm run audit:tools:strict
+          node mobile/scripts/sync-data.mjs
+          npm --prefix kenyahub run audit:tools:strict
 
       - name: Commit Ingested Dictionaries, Audio Manifest & One-Time Lockfile
         if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add kenyahub/src/data/dictionaries kenyahub/public/audio-manifest.json kenyahub/public/.audio-ingested-lock.json mobile/src/shared
+          git add kenyahub/src/data/dictionaries kenyahub/public/audio-manifest.json kenyahub/public/.audio-ingested-lock.json mobile/src/shared/
           if ! git diff --staged --quiet; then
             git commit -m "feat(audio): one-time ingest of open-access audio & text datasets to Cloudflare R2"
-            git pull --rebase origin ${GITHUB_REF_NAME} || true
+            git pull --rebase origin ${GITHUB_REF_NAME}
             git push origin HEAD:${GITHUB_REF_NAME}
           else
             echo "No dictionary or manifest changes to commit."

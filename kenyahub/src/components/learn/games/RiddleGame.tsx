@@ -60,7 +60,7 @@ export function RiddleGame({
       const earned = showEnglishClue ? 15 : 25;
       setScore((s) => s + earned);
       setCorrectCount((c) => c + 1);
-      onAwardXp?.(earned);
+      onAwardXp?.(earned, false);
       onUpdateGameStats?.((prev) => ({
         ...prev,
         riddlesSolved: prev.riddlesSolved + 1,
@@ -75,6 +75,7 @@ export function RiddleGame({
       if (round + 1 >= riddlesPool.length) {
         playCelebrationSfx();
         setSessionDone(true);
+        onAwardXp?.(0, true);
       } else {
         setRound((r) => r + 1);
       }

@@ -1,4 +1,6 @@
 import seedContributions from "@/data/contributions.json";
+import { databases } from "@/lib/appwrite";
+import { ID, Query } from "appwrite";
 
 export interface ContributionItem {
   id: string;
@@ -21,9 +23,12 @@ export interface ContributionItem {
 
 const STORAGE_KEY = "kenyahub_contributions_v1";
 const EVENT_NAME = "kenyahub_contributions_updated";
+const DATABASE_ID = "kenyahub-db";
+const CONTRIBUTIONS_COLLECTION_ID = "contributions";
 
 /**
- * Retrieve contributions list, initializing with seed data if not yet stored in localStorage.
+ * Retrieve contributions list across all 23 Kenyan languages,
+ * initializing with seed data if not yet stored in localStorage.
  */
 export function getStoredContributions(): ContributionItem[] {
   if (typeof window === "undefined") {
@@ -63,23 +68,104 @@ export function saveStoredContributions(items: ContributionItem[]): void {
 }
 
 /**
- * Submit a new contribution.
+ * Submit a new contribution locally and asynchronously sync to Appwrite Cloud if available.
  */
 export function addContribution(
   data: Omit<ContributionItem, "id" | "submittedAt" | "status" | "mergedToDictionary">
 ): ContributionItem {
   const current = getStoredContributions();
+  const submittedAt = new Date().toISOString();
   const newItem: ContributionItem = {
     ...data,
     id: `contrib-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
-    submittedAt: new Date().toISOString(),
+    submittedAt,
     status: "pending",
     mergedToDictionary: false,
   };
 
   const updated = [newItem, ...current];
   saveStoredContributions(updated);
+
+  if (typeof window !== "undefined") {
+    databases
+      .createDocument(DATABASE_ID, CONTRIBUTIONS_COLLECTION_ID, ID.unique(), {
+        language: newItem.language,
+        type: newItem.type,
+        english: newItem.english,
+        translation: newItem.translation,
+        pronunciation: newItem.pronunciation || null,
+        context: newItem.context || null,
+        category: newItem.category || "phrases",
+        contributorName: newItem.contributorName || "Community Contributor",
+        contributorEmail: newItem.contributorEmail || null,
+        submittedAt: newItem.submittedAt,
+        status: "pending",
+      })
+      .catch(() => {
+        // Offline or collection not yet pushed; local copy is already persisted
+      });
+  }
+
   return newItem;
+}
+
+/**
+ * Fetch cloud contributions from Appwrite (when authenticated as admin) and merge with local store.
+ */
+export async function syncCloudContributions(): Promise<ContributionItem[]> {
+  const local = getStoredContributions();
+  if (typeof window === "undefined") return local;
+
+  try {
+    const res = await databases.listDocuments(DATABASE_ID, CONTRIBUTIONS_COLLECTION_ID, [
+      Query.orderDesc("submittedAt"),
+      Query.limit(100),
+    ]);
+    if (!res.documents || res.documents.length === 0) return local;
+
+    const existingKeys = new Set(
+      local.map(
+        (i) =>
+          `${i.language.toLowerCase()}::${i.english.toLowerCase()}::${i.translation.toLowerCase()}`
+      )
+    );
+    const merged = [...local];
+    let added = false;
+
+    for (const doc of res.documents) {
+      const d = doc as Record<string, unknown>;
+      const lang = String(d.language || "swahili");
+      const eng = String(d.english || "");
+      const trans = String(d.translation || "");
+      const key = `${lang.toLowerCase()}::${eng.toLowerCase()}::${trans.toLowerCase()}`;
+      if (eng && trans && !existingKeys.has(key)) {
+        existingKeys.add(key);
+        merged.unshift({
+          id: String(d.$id || `cloud-${Date.now()}`),
+          language: lang,
+          type: (d.type as ContributionItem["type"]) || "new_word",
+          english: eng,
+          translation: trans,
+          pronunciation: d.pronunciation ? String(d.pronunciation) : undefined,
+          context: d.context ? String(d.context) : undefined,
+          category: d.category ? String(d.category) : "phrases",
+          contributorName: String(d.contributorName || "Community Contributor"),
+          contributorEmail: d.contributorEmail ? String(d.contributorEmail) : undefined,
+          submittedAt: String(d.submittedAt || new Date().toISOString()),
+          status: (d.status as ContributionItem["status"]) || "pending",
+          mergedToDictionary: false,
+        });
+        added = true;
+      }
+    }
+
+    if (added) {
+      saveStoredContributions(merged);
+    }
+    return merged;
+  } catch {
+    return local;
+  }
 }
 
 /**

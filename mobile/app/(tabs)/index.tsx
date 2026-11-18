@@ -35,6 +35,7 @@ import {
 } from "../../src/shared/data/blog-posts";
 import holidaysData from "../../src/shared/data/public-holidays.json";
 import matatuData from "../../src/shared/data/matatu-routes.json";
+import { PUBLISHED_COURSE_SUMMARIES } from "../../src/shared/data/courses/catalog-summary";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 
 import {
@@ -120,12 +121,17 @@ export default function HomeScreen() {
           if (!parsed || typeof parsed !== "object") return;
           let totalXP = 0;
           let bestStreak = 0;
-          let activeLang = "kikuyu";
+          let activeLang = "swahili";
           let latestPractice = 0;
+          let highestLangXP = 0;
           for (const [lid, prog] of Object.entries(parsed) as [string, any][]) {
             const xp = Number(prog?.totalXP) || 0;
             const st = Number(prog?.streak) || 0;
             totalXP += xp;
+            if (xp > highestLangXP && latestPractice === 0) {
+              highestLangXP = xp;
+              activeLang = lid;
+            }
             if (st > bestStreak) bestStreak = st;
             const skills = Object.values(prog?.skills || {}) as any[];
             for (const sk of skills) {
@@ -232,8 +238,8 @@ export default function HomeScreen() {
     (href: string) => {
       const clean = href.trim();
       if (clean.startsWith("http://") || clean.startsWith("https://")) {
-        if (clean.includes("kenyahub.me/")) {
-          const pathPart = clean.split("kenyahub.me")[1] || "/";
+        if (/^https?:\/\/(www\.)?kenyahub\.me\//i.test(clean)) {
+          const pathPart = clean.replace(/^https?:\/\/(www\.)?kenyahub\.me/i, "") || "/";
           handleBlogLinkNavigation(pathPart);
           return;
         }
@@ -361,6 +367,45 @@ export default function HomeScreen() {
         t.category.toLowerCase().includes(q) ||
         (t.keywords || []).some((k) => k.toLowerCase().includes(q))
     ).slice(0, 6);
+  }, [searchQuery]);
+
+  const matchingCourses = useMemo(() => {
+    const norm = (s: string) =>
+      String(s || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f'’]/g, "")
+        .toLowerCase();
+    const q = norm(searchQuery.trim());
+    if (!q) return [];
+    return PUBLISHED_COURSE_SUMMARIES.filter(
+      ({ config }) =>
+        norm(config.name).includes(q) ||
+        norm(config.nativeName || "").includes(q) ||
+        norm(config.family).includes(q) ||
+        (config.counties || []).some((c) => norm(c).includes(q))
+    ).slice(0, 3);
+  }, [searchQuery]);
+
+  const matchingMatatuRoutes = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    if (!q) return [];
+    const allRoutes = Object.entries(matatuData.routes || {}).flatMap(
+      ([townSlug, routes]) =>
+        ((routes as any[]) || []).map((r) => ({ ...r, townSlug }))
+    );
+    return allRoutes
+      .filter(
+        (r) =>
+          String(r.name || "").toLowerCase().includes(q) ||
+          String(r.routeNumber || "").toLowerCase().includes(q) ||
+          String(r.terminusA || "").toLowerCase().includes(q) ||
+          String(r.terminusB || "").toLowerCase().includes(q) ||
+          (r.saccos || []).some((s: string) => s.toLowerCase().includes(q)) ||
+          (r.stages || []).some((st: any) =>
+            String(st.name || "").toLowerCase().includes(q)
+          )
+      )
+      .slice(0, 3);
   }, [searchQuery]);
 
   const popular = useMemo(() => {
@@ -579,7 +624,11 @@ export default function HomeScreen() {
               <View style={styles.instantResultsHeader}>
                 <Text style={[styles.instantResultsLabel, { color: theme.gold }]}>
                   INSTANT MATCHES (
-                  {inlineSearchResults.length + (matchesMatatuSearch ? 1 : 0)})
+                  {inlineSearchResults.length +
+                    matchingCourses.length +
+                    matchingMatatuRoutes.length +
+                    (matchesMatatuSearch ? 1 : 0)}
+                  )
                 </Text>
                 <Pressable
                   onPress={() =>
@@ -723,13 +772,137 @@ export default function HomeScreen() {
                     </Pressable>
                   );
                 })
-              ) : !matchesMatatuSearch ? (
-                <View style={{ paddingVertical: 14, alignItems: "center" }}>
-                  <Text style={{ fontSize: 12.5, color: theme.textSecondary }}>
-                    No tool found matching &ldquo;{searchQuery}&rdquo;
-                  </Text>
-                </View>
               ) : null}
+
+              {matchingCourses.map(({ config, skillCount, wordsCount }) => (
+                <Pressable
+                  key={`course-${config.id}`}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    setSearchQuery("");
+                    router.push({
+                      pathname: "/tools/[slug]",
+                      params: { slug: "learn", lang: config.id },
+                    });
+                  }}
+                  style={pressableStyle([
+                    styles.instantResultRow,
+                    {
+                      borderTopWidth: 1,
+                      borderTopColor: theme.outlineVariant,
+                    },
+                  ])}
+                >
+                  <View
+                    style={[
+                      styles.instantResultIcon,
+                      { backgroundColor: `${config.color || theme.gold}22` },
+                    ]}
+                  >
+                    <Ionicons
+                      name="school"
+                      size={18}
+                      color={config.color || theme.gold}
+                    />
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text
+                      style={[
+                        styles.instantResultTitle,
+                        { color: theme.textPrimary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      Learn {config.name}
+                      {config.nativeName &&
+                      config.nativeName.toLowerCase() !==
+                        config.name.toLowerCase()
+                        ? ` (${config.nativeName})`
+                        : ""}
+                    </Text>
+                    <Text
+                      style={[
+                        styles.instantResultSub,
+                        { color: theme.textSecondary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      {config.family} · {skillCount} modules · {wordsCount} words
+                    </Text>
+                  </View>
+                  <Ionicons
+                    name="chevron-forward"
+                    size={16}
+                    color={theme.textMuted}
+                  />
+                </Pressable>
+              ))}
+
+              {matchingMatatuRoutes.map((route: any) => (
+                <Pressable
+                  key={`route-${route.slug}`}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    setSearchQuery("");
+                    router.push({
+                      pathname: "/matatu/[slug]",
+                      params: { slug: route.slug },
+                    });
+                  }}
+                  style={pressableStyle([
+                    styles.instantResultRow,
+                    {
+                      borderTopWidth: 1,
+                      borderTopColor: theme.outlineVariant,
+                    },
+                  ])}
+                >
+                  <View
+                    style={[
+                      styles.instantResultIcon,
+                      { backgroundColor: "rgba(14, 165, 233, 0.18)" },
+                    ]}
+                  >
+                    <Ionicons name="navigate" size={18} color="#0EA5E9" />
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text
+                      style={[
+                        styles.instantResultTitle,
+                        { color: theme.textPrimary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      Route {route.routeNumber}: {route.name}
+                    </Text>
+                    <Text
+                      style={[
+                        styles.instantResultSub,
+                        { color: theme.textSecondary },
+                      ]}
+                      numberOfLines={1}
+                    >
+                      {route.terminusA} ↔ {route.terminusB} · KES {route.fareMin}–{route.fareMax}
+                    </Text>
+                  </View>
+                  <Ionicons
+                    name="chevron-forward"
+                    size={16}
+                    color={theme.textMuted}
+                  />
+                </Pressable>
+              ))}
+
+              {inlineSearchResults.length === 0 &&
+                matchingCourses.length === 0 &&
+                matchingMatatuRoutes.length === 0 &&
+                !matchesMatatuSearch && (
+                  <View style={{ paddingVertical: 14, alignItems: "center" }}>
+                    <Text style={{ fontSize: 12.5, color: theme.textSecondary }}>
+                      No tool, course, or route found matching &ldquo;{searchQuery}&rdquo;
+                    </Text>
+                  </View>
+                )}
             </View>
           )}
         </View>
@@ -1267,6 +1440,7 @@ export default function HomeScreen() {
       <Modal
         visible={showHolidaysModal}
         animationType="slide"
+        accessibilityViewIsModal={true}
         onRequestClose={() => setShowHolidaysModal(false)}
       >
         <SafeAreaView
@@ -1347,6 +1521,7 @@ export default function HomeScreen() {
       <Modal
         visible={!!selectedPost}
         animationType="slide"
+        accessibilityViewIsModal={true}
         onRequestClose={() => setSelectedPost(null)}
       >
         <SafeAreaView

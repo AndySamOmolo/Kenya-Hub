@@ -1,6 +1,6 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import { DynamicIcon } from "../components/DynamicIcon";
-import React, { useState, useMemo, useCallback, useEffect } from "react";
+import React, { useState, useMemo, useCallback, useEffect, useDeferredValue } from "react";
 import {
   Text,
   View,
@@ -59,6 +59,7 @@ export function KenyanTranslatorTool({
   const [sourceLanguage, setSourceLanguage] = useState<string>("english");
   const [targetLanguage, setTargetLanguage] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   const [activeCategory, setActiveCategory] = useState<string>("greetings");
   const [categoryPage, setCategoryPage] = useState(1);
   const [categoryFilter, setCategoryFilter] = useState("");
@@ -83,7 +84,16 @@ export function KenyanTranslatorTool({
 
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
-  const [userContributionsCount, setUserContributionsCount] = useState(0);
+  const [userContributions, setUserContributions] = useState<{
+    id: string;
+    language: string;
+    english: string;
+    translation: string;
+    pronunciation?: string;
+    context?: string;
+    contributor?: string;
+  }[]>([]);
+  const userContributionsCount = userContributions.length;
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [showSourcePicker, setShowSourcePicker] = useState(false);
   const [showTargetPicker, setShowTargetPicker] = useState(false);
@@ -215,7 +225,7 @@ export function KenyanTranslatorTool({
       if (raw) {
         try {
           const parsed = JSON.parse(raw);
-          if (Array.isArray(parsed)) setUserContributionsCount(parsed.length);
+          if (Array.isArray(parsed)) setUserContributions(parsed);
         } catch {}
       }
     });
@@ -335,36 +345,68 @@ export function KenyanTranslatorTool({
   const browseMeta: DictMeta =
     DICT_META_MAP[browseDictId] || DICT_META_MAP.swahili || ALL_DICT_METAS[0];
 
-  // Unified Search Results (Single-pair synchronous index OR batched All-23-Languages stream)
+  // Unified Search Results (Single-pair synchronous index OR batched All-23-Languages stream + local custom words)
   const searchResults = useMemo(() => {
-    if (!searchQuery.trim()) return [];
-    if (targetLanguage === "all") {
-      return allLangSearchResults;
-    }
-    return runTranslatorSearch({
-      query: searchQuery,
-      sourceLanguage,
-      targetLanguage,
-      sourceDict,
-      targetDict,
-      activeDictList: loadedDictList,
-      maxSingleDictResults: 100,
-    }).searchResults;
+    const q = deferredSearchQuery.trim();
+    if (!q) return [];
+    const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const qNorm = stripDia(q);
+    const customMatches: TranslationResultItem[] = userContributions
+      .filter((item) => {
+        const langId = item.language.toLowerCase().trim();
+        if (targetLanguage !== "all" && targetLanguage !== "english" && langId !== targetLanguage) {
+          return false;
+        }
+        return stripDia(item.english).includes(qNorm) || stripDia(item.translation).includes(qNorm);
+      })
+      .map((item) => {
+        const langId = item.language.toLowerCase().trim();
+        const meta = DICT_META_MAP[langId];
+        return {
+          languageId: meta?.languageId || langId,
+          languageName: meta?.languageName || item.language,
+          family: meta?.family || "custom",
+          categoryName: "My Device Dictionary",
+          matchType: "exact",
+          entry: {
+            english: item.english,
+            translation: item.translation,
+            pronunciation: item.pronunciation || "",
+            context: item.context ? `${item.context} (Added on this device)` : "Added on this device",
+          },
+        };
+      });
+
+    const baseResults =
+      targetLanguage === "all"
+        ? allLangSearchResults
+        : runTranslatorSearch({
+            query: deferredSearchQuery,
+            sourceLanguage,
+            targetLanguage,
+            sourceDict,
+            targetDict,
+            activeDictList: loadedDictList,
+            maxSingleDictResults: 100,
+          }).searchResults;
+
+    return [...customMatches, ...baseResults];
   }, [
-    searchQuery,
+    deferredSearchQuery,
     sourceLanguage,
     targetLanguage,
     targetDict,
     sourceDict,
     loadedDictList,
     allLangSearchResults,
+    userContributions,
   ]);
 
   // Fuzzy "Did you mean?" suggestions when search returns 0 results
   const fuzzySuggestions = useMemo(() => {
     if (
-      !searchQuery.trim() ||
-      searchQuery.trim().length < 3 ||
+      !deferredSearchQuery.trim() ||
+      deferredSearchQuery.trim().length < 3 ||
       searchResults.length > 0 ||
       isSearchingAll
     )
@@ -377,9 +419,9 @@ export function KenyanTranslatorTool({
         : sourceDict
         ? [sourceDict]
         : loadedDictList;
-    return getFuzzySuggestions(searchQuery, pool, sourceLanguage, 5);
+    return getFuzzySuggestions(deferredSearchQuery, pool, sourceLanguage, 5);
   }, [
-    searchQuery,
+    deferredSearchQuery,
     searchResults.length,
     isSearchingAll,
     sourceLanguage,
@@ -479,13 +521,14 @@ export function KenyanTranslatorTool({
       browseDict.categories.find((c) => c.id === activeCategory) ||
       browseDict.categories[0];
     if (!cat) return [];
-    const q = categoryFilter.trim().toLowerCase();
+    const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const q = stripDia(categoryFilter.trim());
     if (!q) return cat.entries;
     return cat.entries.filter(
       (e) =>
-        e.english.toLowerCase().includes(q) ||
-        e.translation.toLowerCase().includes(q) ||
-        (e.context && e.context.toLowerCase().includes(q))
+        stripDia(e.english).includes(q) ||
+        stripDia(e.translation).includes(q) ||
+        (e.context && stripDia(e.context).includes(q))
     );
   }, [browseDict, activeCategory, categoryFilter]);
 
@@ -530,7 +573,7 @@ export function KenyanTranslatorTool({
         "kh-user-contributions",
         JSON.stringify(updatedList)
       );
-      setUserContributionsCount(updatedList.length);
+      setUserContributions(updatedList);
       setContribSubmitted(true);
       showToast("Saved locally to your device dictionary!");
       setTimeout(() => {
@@ -1067,31 +1110,17 @@ export function KenyanTranslatorTool({
                         : item.entry.english}
                     </Text>
 
-                    {(item.entry.pronunciation || item.entry.audioFile) ? (
-                      <Pressable
-                        disabled={!item.entry.audioFile}
-                        onPress={() =>
-                          item.entry.audioFile &&
-                          Linking.openURL(item.entry.audioFile)
-                        }
-                        style={styles.pronounceRow}
-                      >
+                    {item.entry.pronunciation ? (
+                      <View style={styles.pronounceRow}>
                         <Ionicons
-                          name={
-                            item.entry.audioFile
-                              ? "volume-high"
-                              : "chatbubble-ellipses-outline"
-                          }
+                          name="chatbubble-ellipses-outline"
                           size={14}
                           color={theme.sky}
                         />
                         <Text style={styles.pronounceText}>
-                          {item.entry.pronunciation
-                            ? `Pronunciation: /${item.entry.pronunciation}/`
-                            : "Listen to archival audio"}
-                          {item.entry.audioFile ? " · Tap to play" : ""}
+                          Pronunciation: /{item.entry.pronunciation}/
                         </Text>
-                      </Pressable>
+                      </View>
                     ) : null}
 
                     {item.entry.context ? (
@@ -1525,30 +1554,17 @@ export function KenyanTranslatorTool({
 
                   <Text style={styles.resultTranslation}>{e.translation}</Text>
 
-                  {(e.pronunciation || e.audioFile) ? (
-                    <Pressable
-                      disabled={!e.audioFile}
-                      onPress={() =>
-                        e.audioFile && Linking.openURL(e.audioFile)
-                      }
-                      style={styles.pronounceRow}
-                    >
+                  {e.pronunciation ? (
+                    <View style={styles.pronounceRow}>
                       <Ionicons
-                        name={
-                          e.audioFile
-                            ? "volume-high"
-                            : "chatbubble-ellipses-outline"
-                        }
+                        name="chatbubble-ellipses-outline"
                         size={14}
                         color={theme.sky}
                       />
                       <Text style={styles.pronounceText}>
-                        {e.pronunciation
-                          ? `Pronunciation: /${e.pronunciation}/`
-                          : "Listen to archival audio"}
-                        {e.audioFile ? " · Tap to play" : ""}
+                        Pronunciation: /{e.pronunciation}/
                       </Text>
-                    </Pressable>
+                    </View>
                   ) : null}
 
                   {e.context ? (
@@ -1680,6 +1696,48 @@ export function KenyanTranslatorTool({
                   </View>
                 );
               })
+            )}
+
+            {userContributions.length > 0 && (
+              <View style={{ marginTop: 14, gap: 10 }}>
+                <Text style={styles.resultsCount}>
+                  My Added Device Words ({userContributions.length})
+                </Text>
+                {userContributions.map((uItem) => (
+                  <View key={uItem.id} style={styles.resultCard}>
+                    <View style={styles.resultHeader}>
+                      <View style={styles.resultTagRow}>
+                        <View style={styles.catBadge}>
+                          <Text style={styles.catBadgeText}>My Device Dictionary</Text>
+                        </View>
+                        <View style={[styles.familyBadge, { backgroundColor: `${theme.gold}20` }]}>
+                          <Text style={[styles.familyBadgeText, { color: theme.gold }]}>
+                            {uItem.language}
+                          </Text>
+                        </View>
+                      </View>
+                      <Pressable
+                        onPress={async () => {
+                          const next = userContributions.filter((x) => x.id !== uItem.id);
+                          setUserContributions(next);
+                          await AsyncStorage.setItem("kh-user-contributions", JSON.stringify(next));
+                          showToast("Removed from device dictionary");
+                        }}
+                        hitSlop={8}
+                      >
+                        <Ionicons name="trash-outline" size={18} color={theme.kenyaRedLight} />
+                      </Pressable>
+                    </View>
+                    <Text style={styles.resultTranslation}>{uItem.translation}</Text>
+                    <Text style={styles.resultEnglish}>{uItem.english}</Text>
+                    {uItem.pronunciation ? (
+                      <Text style={styles.pronounceText}>
+                        Pronunciation: /{uItem.pronunciation}/
+                      </Text>
+                    ) : null}
+                  </View>
+                ))}
+              </View>
             )}
           </View>
         </View>

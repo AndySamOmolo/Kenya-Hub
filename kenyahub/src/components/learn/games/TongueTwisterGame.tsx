@@ -86,6 +86,7 @@ export function TongueTwisterGame({
   languageId = "swahili",
   languageName,
   onAwardXp,
+  onUpdateGameStats,
 }: GameProps) {
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
@@ -144,7 +145,7 @@ export function TongueTwisterGame({
         playCorrectSfx();
         setSolved(true);
         setScore((s) => s + 25);
-        onAwardXp?.(25);
+        onAwardXp?.(25, false);
       } else {
         playWrongSfx();
         setSolved(false);
@@ -274,6 +275,8 @@ export function TongueTwisterGame({
               if (round + 1 >= deck.length) {
                 playCelebrationSfx();
                 setSessionDone(true);
+                onAwardXp?.(0, true);
+                onUpdateGameStats?.((prev) => ({ ...prev, twisterBest: Math.max(prev.twisterBest || 0, score) }));
               } else {
                 setRound((r) => r + 1);
               }

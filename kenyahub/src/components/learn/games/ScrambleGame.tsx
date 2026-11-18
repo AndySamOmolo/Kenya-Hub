@@ -100,7 +100,7 @@ export function ScrambleGame({
         const earnedXp = Math.max(15 - nextHintsUsed * 4, 5);
         setScore((s) => s + earnedPts);
         if (nextHintsUsed === 0) setPerfectWords((p) => p + 1);
-        onAwardXp?.(earnedXp);
+        onAwardXp?.(earnedXp, false);
         onRecordWordResult?.(targetWord, nextHintsUsed === 0);
         onUpdateGameStats?.((prev) => ({
           ...prev,
@@ -171,6 +171,7 @@ export function ScrambleGame({
     if (round + 1 >= SESSION_ROUNDS) {
       playCelebrationSfx();
       setSessionDone(true);
+      onAwardXp?.(0, true);
     } else {
       setRound((r) => r + 1);
       initRound();

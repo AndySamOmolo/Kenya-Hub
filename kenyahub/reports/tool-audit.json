@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T05:26:03.999Z",
+  "generatedAt": "2026-11-18T11:36:35.185Z",
   "registryCount": 25,
   "routeCount": 25,
   "courseCount": 23,
@@ -14,14 +14,8 @@
       "routeExists": true,
       "sourceUrl": "https://archive.org/",
       "maxAgeDays": 365,
-      "ageDays": 18,
-      "data": [
-        {
-          "file": "src/data/language-sources",
-          "lastUpdated": "2026-10-31",
-          "source": "https://archive.org/"
-        }
-      ],
+      "ageDays": null,
+      "data": [],
       "status": "ok"
     },
     {
@@ -29,14 +23,8 @@
       "routeExists": true,
       "sourceUrl": "https://cldr.unicode.org/",
       "maxAgeDays": 365,
-      "ageDays": 29,
-      "data": [
-        {
-          "file": "src/data/language-sources",
-          "lastUpdated": "2026-10-20",
-          "source": "https://cldr.unicode.org/"
-        }
-      ],
+      "ageDays": null,
+      "data": [],
       "status": "ok"
     },
     {
@@ -424,7 +412,7 @@
         {
           "file": "src/data/domestic-wage-data.json",
           "lastUpdated": "2026-10-21",
-          "source": "Ministry of Labour Regulation of Wages (General) (Amendment) Order 2024/2026 (Legal Notice 108)"
+          "source": "Ministry of Labour Regulation of Wages (General) (Amendment) Order 2024/2026 (Legal Notice 108) & NSSF Act Cap 128"
         }
       ],
       "status": "ok"
@@ -467,7 +455,7 @@
       "grammarFile": "src/data/courses/swahili/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/swahili.ts",
       "dictionaryFile": "src/data/dictionaries/swahili.json",
-      "dictionaryEntries": 44542,
+      "dictionaryEntries": 53051,
       "status": "ok"
     },
     {
@@ -476,7 +464,7 @@
       "grammarFile": "src/data/courses/kikuyu/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kikuyu.ts",
       "dictionaryFile": "src/data/dictionaries/kikuyu.json",
-      "dictionaryEntries": 14710,
+      "dictionaryEntries": 23028,
       "status": "ok"
     },
     {
@@ -485,7 +473,7 @@
       "grammarFile": "src/data/courses/luo/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/luo.ts",
       "dictionaryFile": "src/data/dictionaries/luo.json",
-      "dictionaryEntries": 4505,
+      "dictionaryEntries": 14960,
       "status": "ok"
     },
     {
@@ -503,7 +491,7 @@
       "grammarFile": "src/data/courses/kamba/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kamba.ts",
       "dictionaryFile": "src/data/dictionaries/kamba.json",
-      "dictionaryEntries": 6779,
+      "dictionaryEntries": 9752,
       "status": "ok"
     },
     {
@@ -530,7 +518,7 @@
       "grammarFile": "src/data/courses/meru/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/meru.ts",
       "dictionaryFile": "src/data/dictionaries/meru.json",
-      "dictionaryEntries": 1366,
+      "dictionaryEntries": 1664,
       "status": "ok"
     },
     {
@@ -539,7 +527,7 @@
       "grammarFile": "src/data/courses/somali/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/somali.ts",
       "dictionaryFile": "src/data/dictionaries/somali.json",
-      "dictionaryEntries": 5265,
+      "dictionaryEntries": 12852,
       "status": "ok"
     },
     {
@@ -620,7 +608,7 @@
       "grammarFile": "src/data/courses/borana/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/borana.ts",
       "dictionaryFile": "src/data/dictionaries/borana.json",
-      "dictionaryEntries": 17427,
+      "dictionaryEntries": 26441,
       "status": "ok"
     },
     {

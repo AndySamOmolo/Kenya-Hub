@@ -56,8 +56,9 @@ function calculateTokens(amountPaid: number) {
     const unitCostBeforeVat = band.rate + levyPerUnit + fccPerUnit + ferfa;
     const unitCostWithVat = unitCostBeforeVat * (1 + vatRate);
 
-    const maxUnitsInBand = Math.min(bandCapacity, Math.floor(remainingAmount / unitCostWithVat));
-    const costForBand = maxUnitsInBand * unitCostWithVat;
+    const rawUnitsInBand = Math.min(bandCapacity, remainingAmount / unitCostWithVat);
+    const maxUnitsInBand = Math.round(rawUnitsInBand * 100) / 100;
+    const costForBand = rawUnitsInBand * unitCostWithVat;
 
     if (maxUnitsInBand > 0) {
       breakdown.push({
@@ -66,8 +67,8 @@ function calculateTokens(amountPaid: number) {
         rate: band.rate,
         cost: Math.round(costForBand * 100) / 100,
       });
-      totalUnits += maxUnitsInBand;
-      remainingAmount -= costForBand;
+      totalUnits = Math.round((totalUnits + rawUnitsInBand) * 100) / 100;
+      remainingAmount = Math.max(0, remainingAmount - costForBand);
     }
   }
 

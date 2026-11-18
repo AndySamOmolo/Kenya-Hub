@@ -44,6 +44,7 @@ export function NounClassSorterGame({
   languageName,
   languageId = "swahili",
   onAwardXp,
+  onUpdateGameStats,
 }: GameProps) {
   const SESSION_ROUNDS = 10;
   const [round, setRound] = useState(0);
@@ -163,7 +164,7 @@ export function NounClassSorterGame({
     if (isRight) {
       playCorrectSfx();
       setScore((s) => s + 20);
-      onAwardXp?.(20);
+      onAwardXp?.(20, false);
     } else {
       playWrongSfx();
     }
@@ -173,6 +174,8 @@ export function NounClassSorterGame({
       if (round + 1 >= sortItems.length) {
         playCelebrationSfx();
         setSessionDone(true);
+        onAwardXp?.(0, true);
+        onUpdateGameStats?.((prev) => ({ ...prev, nounClassBest: Math.max(prev.nounClassBest || 0, score + (isRight ? 20 : 0)) }));
       } else {
         setRound((r) => r + 1);
       }

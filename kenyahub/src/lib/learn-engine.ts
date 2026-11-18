@@ -159,6 +159,14 @@ function buildNonLeakingHint(word: WordPair): string {
 
 function getBaseStemKey(str: string): string {
   return str
+    .replace(/ñ/g, 'ng')
+    .replace(/ŋ/g, 'ng')
+    .replace(/ɲ/g, 'ny')
+    .replace(/ɔ/g, 'o')
+    .replace(/ɛ/g, 'e')
+    .replace(/ɗ/g, 'd')
+    .replace(/ɠ/g, 'g')
+    .replace(/ɓ/g, 'b')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()

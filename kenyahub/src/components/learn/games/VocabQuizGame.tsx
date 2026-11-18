@@ -27,6 +27,7 @@ export function VocabQuizGame({
   const [feedback, setFeedback] = useState<string | null>(null);
   const [gameOver, setGameOver] = useState(false);
   const [sessionSeed, setSessionSeed] = useState(0);
+  const [untimed, setUntimed] = useState(false);
   const [timeLeftMs, setTimeLeftMs] = useState(7000);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const awardedRef = useRef(false);
@@ -102,9 +103,12 @@ export function VocabQuizGame({
     [lives, currentWord, onRecordWordResult]
   );
 
-  // Per-question shot clock timer
+  // Per-question shot clock timer (pauses/disables when untimed mode is enabled - WCAG 2.2.1 A-06)
   useEffect(() => {
-    if (gameOver || feedback !== null || !currentWord) return;
+    if (untimed || gameOver || feedback !== null || !currentWord) {
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
     setTimeLeftMs(maxShotClockMs);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
@@ -120,7 +124,7 @@ export function VocabQuizGame({
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [round, gameOver, feedback, currentWord, maxShotClockMs, triggerLossOfLife]);
+  }, [untimed, round, gameOver, feedback, currentWord, maxShotClockMs, triggerLossOfLife]);
 
   // Session XP award once on game over
   useEffect(() => {
@@ -147,7 +151,7 @@ export function VocabQuizGame({
       const nextStreak = streak + 1;
       setStreak(nextStreak);
       setBestStreak((b) => Math.max(b, nextStreak));
-      const speedBonus = timeLeftMs > maxShotClockMs * 0.5 ? 5 : 0;
+      const speedBonus = !untimed && timeLeftMs > maxShotClockMs * 0.5 ? 5 : 0;
       setScore((s) => s + 15 + speedBonus);
       onRecordWordResult?.(currentWord, true);
       if (nextStreak > 0 && nextStreak % 5 === 0) playStreakSfx();
@@ -223,12 +227,12 @@ export function VocabQuizGame({
   }
 
   const expected = isReverse ? currentWord.source : currentWord.target;
-  const clockPct = Math.max(0, Math.min(100, (timeLeftMs / maxShotClockMs) * 100));
+  const clockPct = untimed ? 100 : Math.max(0, Math.min(100, (timeLeftMs / maxShotClockMs) * 100));
 
   return (
     <div>
-      {/* Top Status Row: 3 Hearts + Streak + Score */}
-      <div className="mb-3 flex items-center justify-between gap-2">
+      {/* Top Status Row: 3 Hearts + Streak + Untimed Toggle + Score */}
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-1.5">
           {Array.from({ length: MAX_LIVES }).map((_, idx) => (
             <Heart
@@ -247,9 +251,23 @@ export function VocabQuizGame({
           )}
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+          <button
+            type="button"
+            onClick={() => setUntimed((u) => !u)}
+            aria-pressed={untimed}
+            className={`rounded-full border px-2.5 py-1 text-xs font-semibold transition-colors cursor-pointer ${
+              untimed
+                ? "border-kenya-green/50 bg-kenya-green/15 text-kenya-green-light"
+                : "border-border bg-bg-card text-text-secondary hover:border-gold/40"
+            }`}
+          >
+            {untimed ? "Untimed / Relaxed Mode: ON" : "Untimed / Relaxed Mode"}
+          </button>
           <span className="text-xs font-semibold text-text-muted">
-            Wave {round + 1} ({(maxShotClockMs / 1000).toFixed(1)}s clock)
+            {untimed
+              ? `Wave ${round + 1} (Relaxed)`
+              : `Wave ${round + 1} (${(maxShotClockMs / 1000).toFixed(1)}s clock)`}
           </span>
           <div className="flex items-center gap-1 rounded-full border border-gold/30 bg-gold/10 px-3 py-1">
             <Zap className="h-3.5 w-3.5 text-gold" />
@@ -262,7 +280,13 @@ export function VocabQuizGame({
       <div className="mb-4 h-2 w-full overflow-hidden rounded-full bg-bg-elevated">
         <div
           className={`h-full transition-all duration-100 ${
-            clockPct < 30 ? "bg-red-500" : clockPct < 60 ? "bg-amber-400" : "bg-kenya-green"
+            untimed
+              ? "bg-kenya-green/60"
+              : clockPct < 30
+              ? "bg-red-500"
+              : clockPct < 60
+              ? "bg-amber-400"
+              : "bg-kenya-green"
           }`}
           style={{ width: `${clockPct}%` }}
         />

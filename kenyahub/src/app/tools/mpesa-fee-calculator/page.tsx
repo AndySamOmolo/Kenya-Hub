@@ -13,7 +13,7 @@ const tool = TOOLS.find((t) => t.slug === "mpesa-fee-calculator")!;
 
 type TransactionType = keyof typeof mpesaData.transactionTypes;
 
-function calculateFee(amount: number, type: TransactionType): number | null {
+function getFee(amount: number, type: TransactionType): number | null {
   const bands = mpesaData.transactionTypes[type].bands;
   for (const band of bands) {
     if (amount >= band.min && amount <= band.max) {
@@ -23,25 +23,33 @@ function calculateFee(amount: number, type: TransactionType): number | null {
   return null;
 }
 
-function findOptimalSplit(amount: number, type: TransactionType) {
-  const singleFee = calculateFee(amount, type);
-  if (singleFee === null || singleFee === 0 || amount <= 100) return null;
+const calculateFee = getFee;
 
-  let bestTotalFee = singleFee;
+function findOptimalSplit(amount: number, type: TransactionType) {
+  if (amount <= 100 || amount > 500000) return null;
+  const singleFee = getFee(amount, type);
+  if (singleFee === 0) return null;
+
+  let bestTotalFee = singleFee ?? Infinity;
   let bestSplitDesc: string | null = null;
 
-  // Test splitting into 2 parts at band upper limits
+  // Test splitting into 2 parts at band upper limits (each part <= 250,000 within 500,000 daily limit)
   const bands = mpesaData.transactionTypes[type].bands;
   for (const b of bands) {
     if (b.max >= amount) break;
     const part1 = b.max;
     const part2 = amount - part1;
-    const fee1 = calculateFee(part1, type);
-    const fee2 = calculateFee(part2, type);
+    if (part1 > 250000 || part2 > 250000) continue;
+    const fee1 = getFee(part1, type);
+    const fee2 = getFee(part2, type);
     if (fee1 !== null && fee2 !== null && fee1 + fee2 < bestTotalFee) {
       bestTotalFee = fee1 + fee2;
-      const saved = singleFee - bestTotalFee;
-      bestSplitDesc = `Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee — saving you KES ${saved.toLocaleString()}!`;
+      if (singleFee !== null) {
+        const saved = singleFee - bestTotalFee;
+        bestSplitDesc = `Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee — saving you KES ${saved.toLocaleString()}!`;
+      } else {
+        bestSplitDesc = `Exceeds KES 250,000 single-tx limit: Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee (within KES 500,000 daily limit).`;
+      }
     }
   }
 
@@ -72,35 +80,54 @@ export default function MpesaFeeCalculatorPage() {
   const [includeWithdrawal, setIncludeWithdrawal] = useState<boolean>(false);
 
   const results = useMemo(() => {
+    const numAmount = Math.max(0, amount);
     const withdrawalFeeForTarget =
-      calculateFee(amount, "withdrawAgent") ?? 0;
+      calculateFee(numAmount, "withdrawAgent") ?? 0;
     const amountToSend = includeWithdrawal
-      ? amount + withdrawalFeeForTarget
-      : amount;
+      ? numAmount + withdrawalFeeForTarget
+      : numAmount;
 
     // Check if adding withdrawal fee pushed recipient into next withdrawal band!
     const actualAgentWithdrawFee =
-      calculateFee(amountToSend, "withdrawAgent") ?? withdrawalFeeForTarget;
+      calculateFee(Math.min(250000, amountToSend), "withdrawAgent") ??
+      withdrawalFeeForTarget;
     const adjustedAmountToSend =
       includeWithdrawal && actualAgentWithdrawFee > withdrawalFeeForTarget
-        ? amount + actualAgentWithdrawFee
+        ? numAmount + actualAgentWithdrawFee
         : amountToSend;
 
-    const fee = calculateFee(adjustedAmountToSend, txType);
-    const splitTip = findOptimalSplit(adjustedAmountToSend, txType);
+    const withdrawalFee = includeWithdrawal ? actualAgentWithdrawFee : 0;
+    const sendFee =
+      includeWithdrawal && numAmount <= 250000
+        ? getFee(Math.min(250000, adjustedAmountToSend), txType)
+        : getFee(adjustedAmountToSend, txType);
+    const fee =
+      sendFee !== null ? sendFee + withdrawalFee : null;
+    const splitTip = findOptimalSplit(
+      includeWithdrawal && numAmount <= 250000
+        ? Math.min(250000, adjustedAmountToSend)
+        : adjustedAmountToSend,
+      txType
+    );
     const totalSenderWalletNeeded =
-      fee !== null ? adjustedAmountToSend + fee : null;
+      sendFee !== null ? adjustedAmountToSend + sendFee : null;
 
     const allFees = Object.entries(mpesaData.transactionTypes).map(
       ([key, value]) => {
-        const f = calculateFee(adjustedAmountToSend, key as TransactionType);
+        const f = getFee(
+          includeWithdrawal && numAmount <= 250000
+            ? Math.min(250000, adjustedAmountToSend)
+            : adjustedAmountToSend,
+          key as TransactionType
+        );
         return { key: key as TransactionType, label: value.label, fee: f };
       }
     );
 
     return {
       amountToSend: adjustedAmountToSend,
-      agentWithdrawalFee: includeWithdrawal ? actualAgentWithdrawFee : 0,
+      agentWithdrawalFee: withdrawalFee,
+      sendFee,
       fee,
       splitTip,
       totalSenderWalletNeeded,
@@ -139,7 +166,7 @@ export default function MpesaFeeCalculatorPage() {
                 className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
                 style={{ paddingRight: "2.75rem" }}
                 min={0}
-                max={250000}
+                max={500000}
                 id="mpesa-amount-input"
               />
               {amount > 0 && (
@@ -156,9 +183,11 @@ export default function MpesaFeeCalculatorPage() {
           </div>
 
           <ExpandablePillRow>
-            {[500, 1000, 2500, 5000, 10000, 20000, 50000].map((preset) => (
+            {[500, 1000, 2500, 5000, 10000, 20000, 50000, 250000].map((preset) => (
               <button
                 key={preset}
+                type="button"
+                aria-pressed={amount === preset}
                 onClick={() => setAmount(preset)}
                 className={`shrink-0 whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-medium border transition-all cursor-pointer ${
                   amount === preset
@@ -188,6 +217,25 @@ export default function MpesaFeeCalculatorPage() {
             <label className="block text-sm font-medium text-text-secondary mb-2">
               Transaction Type
             </label>
+            <div className="mb-3">
+              <ExpandablePillRow>
+                {txTypeOptions.map((opt) => (
+                  <button
+                    key={opt.key}
+                    type="button"
+                    aria-pressed={txType === opt.key}
+                    onClick={() => setTxType(opt.key)}
+                    className={`shrink-0 whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-medium border transition-all cursor-pointer ${
+                      txType === opt.key
+                        ? "border-gold/50 bg-gold/15 text-gold font-semibold"
+                        : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary hover:border-border-light"
+                    }`}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </ExpandablePillRow>
+            </div>
             <CustomSelect
               value={txType}
               onChange={(e) => setTxType(e.target.value as TransactionType)}
@@ -220,12 +268,19 @@ export default function MpesaFeeCalculatorPage() {
               )}
             </div>
             <div>
-              <p className="text-xs text-text-muted mb-1">Sending / Tx Fee</p>
+              <p className="text-xs text-text-muted mb-1">
+                {includeWithdrawal ? "Total Fee (Send + Withdrawal)" : "Sending / Tx Fee"}
+              </p>
               <p className="text-xl font-bold text-kenya-red-light font-[family-name:var(--font-outfit)]">
                 {results.fee !== null
                   ? `KES ${results.fee.toLocaleString()}`
                   : "N/A"}
               </p>
+              {includeWithdrawal && results.sendFee !== null && (
+                <p className="text-[0.65rem] text-text-muted mt-0.5">
+                  KES {results.sendFee.toLocaleString()} + KES {results.agentWithdrawalFee.toLocaleString()} = KES {results.fee?.toLocaleString()}
+                </p>
+              )}
             </div>
             <div>
               <p className="text-xs text-text-muted mb-1">

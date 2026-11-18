@@ -28,7 +28,7 @@ import { luoRiddles } from '../shared/data/courses/luo/riddles';
 import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
 import { getCulturalWisdomForLanguage, type CulturalWisdomItem } from '../shared/data/courses/cultural-wisdom';
 import { getRiddlesForLanguage } from '../shared/data/courses/riddles-bank';
-import { generateExercises, checkAnswer, checkAnswerWithFeedback, getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair, KENYAN_SPECIAL_CHARS } from '../shared/lib/learn-engine';
+import { generateExercises, checkAnswer, checkAnswerWithFeedback, getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair, isSingleWordLexical, KENYAN_SPECIAL_CHARS } from '../shared/lib/learn-engine';
 import {
   isSkillUnlocked,
   getXpLevel,
@@ -270,8 +270,6 @@ export default function LanguageCourseTool({
 
   // ── Skill Tree State ──
   const [expandedUnitIds, setExpandedUnitIds] = useState<Record<string, boolean>>({});
-  const [showLangPicker, setShowLangPicker] = useState<boolean>(false);
-  const [showThemePicker, setShowThemePicker] = useState<boolean>(false);
   const [activeSkillId, setActiveSkillId] = useState<string>('');
 
   const [loadedDict, setLoadedDict] = useState<Dictionary | null>(
@@ -427,7 +425,6 @@ export default function LanguageCourseTool({
   const [showSourcesDropdown, setShowSourcesDropdown] = useState(false);
 
   // ── Proverbs & Oral Wisdom Tab State ──
-  const [wisdomLang, setWisdomLang] = useState<'kikuyu' | 'luo'>('kikuyu');
   const [luoSubTab, setLuoSubTab] = useState<'proverbs' | 'riddles' | 'twisters'>('proverbs');
   const [proverbSearch, setProverbSearch] = useState('');
   const [proverbCategory, setProverbCategory] = useState('All');
@@ -472,11 +469,6 @@ export default function LanguageCourseTool({
         const maxStart = Math.max(0, skill.words.length - batchSize);
         const savedCursor = progress.dictCursors?.[skill.id] ?? 0;
         const offset = Math.min(maxStart, savedCursor);
-        const nextCursor = offset + batchSize <= maxStart ? offset + batchSize : 0;
-        saveLanguageProgress((prev) => ({
-          ...prev,
-          dictCursors: { ...(prev.dictCursors || {}), [skill.id]: nextCursor },
-        }));
         effectiveSkill = {
           ...skill,
           words: skill.words.slice(offset, offset + batchSize),
@@ -664,12 +656,25 @@ export default function LanguageCourseTool({
         saveLanguageProgress((prev) => {
           const today = getLocalDateString();
           const yesterday = getLocalDateString(new Date(Date.now() - 86400000));
-          const newStreak =
-            prev.lastPracticeDate === today
-              ? Math.max(1, prev.streak)
-              : prev.lastPracticeDate === yesterday
-              ? prev.streak + 1
-              : 1;
+          let newStreak = prev.streak;
+          let streakFreezes = prev.streakFreezes ?? 1;
+          if (prev.lastPracticeDate === today) {
+            newStreak = Math.max(1, prev.streak);
+          } else if (prev.lastPracticeDate === yesterday) {
+            newStreak = prev.streak + 1;
+          } else if (prev.lastPracticeDate && streakFreezes > 0 && prev.streak > 0) {
+            const diffDays = Math.round(
+              (new Date(today + "T00:00:00").getTime() - new Date(prev.lastPracticeDate + "T00:00:00").getTime()) / 86400000
+            );
+            if (diffDays === 2) {
+              streakFreezes -= 1;
+              newStreak = prev.streak + 1;
+            } else {
+              newStreak = 1;
+            }
+          } else {
+            newStreak = 1;
+          }
 
           const prevSkill: SkillProgress = prev.skills[activeSkill.id] || {
             skillId: activeSkill.id,
@@ -681,13 +686,24 @@ export default function LanguageCourseTool({
 
           const newLessonsCompleted = prevSkill.lessonsCompleted + 1;
           const newLevel = Math.min(5, prevSkill.level + 1);
+          let nextDictCursors = prev.dictCursors || {};
+          if (activeSkill.words.length > 14) {
+            const batchSize = 12;
+            const maxStart = Math.max(0, activeSkill.words.length - batchSize);
+            const savedCursor = nextDictCursors[activeSkill.id] ?? 0;
+            const offset = Math.min(maxStart, savedCursor);
+            const nextCursor = offset + batchSize <= maxStart ? offset + batchSize : 0;
+            nextDictCursors = { ...nextDictCursors, [activeSkill.id]: nextCursor };
+          }
 
           return {
             ...prev,
+            dictCursors: nextDictCursors,
             totalXP: prev.totalXP + finalLessonXP,
             dailyXP: (prev.dailyDate === today ? prev.dailyXP : 0) + finalLessonXP,
             dailyDate: today,
             streak: newStreak,
+            streakFreezes,
             lastPracticeDate: today,
             perfectLessons: accuracy === 100 ? prev.perfectLessons + 1 : prev.perfectLessons,
             skills: {
@@ -741,9 +757,10 @@ export default function LanguageCourseTool({
 
   const startScrambleRound = useCallback(() => {
     const eligible = allCourseWords
+      .filter((w) => isSingleWordLexical(w.target))
       .map((w) => ({
         ...w,
-        target: getPrimaryForm(w.target).trim().split(/\s+/)[0].replace(/[^a-zA-Z\u00C0-\u024F\u1E00-\u1EFF']/g, ""),
+        target: getPrimaryForm(w.target).trim().replace(/[^a-zA-Z\u00C0-\u024F\u1E00-\u1EFF']/g, ""),
         source: getPrimaryForm(w.source),
       }))
       .filter((w) => w.target.length >= 3 && w.target.length <= 10);
@@ -826,6 +843,7 @@ export default function LanguageCourseTool({
         .toLowerCase();
 
     const eligible = allCourseWords
+      .filter((w) => isSingleWordLexical(w.target))
       .map((w) => ({ ...w, asciiTarget: toAscii(w.target) }))
       .filter((w) => w.asciiTarget.length >= 4 && w.asciiTarget.length <= 7);
     if (eligible.length === 0) return;
@@ -1017,6 +1035,7 @@ export default function LanguageCourseTool({
       <Modal
         visible={true}
         animationType="fade"
+        accessibilityViewIsModal={true}
         onRequestClose={() => setLessonStage('idle')}
       >
         <SafeAreaView style={{ flex: 1, backgroundColor: colors.bgPrimary }} edges={['top', 'left', 'right', 'bottom']}>
@@ -1794,16 +1813,18 @@ export default function LanguageCourseTool({
   }, []);
 
   const filteredMenuCourses = useMemo(() => {
-    const q = menuSearchQuery.trim().toLowerCase();
+    const normSearch = (s: string) =>
+      s.normalize("NFD").replace(/[\u0300-\u036f'’]/g, "").toLowerCase();
+    const q = normSearch(menuSearchQuery.trim());
     return PUBLISHED_COURSES.filter((c) => {
       if (menuFamilyFilter !== 'All' && c.config.family !== menuFamilyFilter) return false;
       if (!q) return true;
       return (
-        c.config.name.toLowerCase().includes(q) ||
-        (c.config.nativeName || '').toLowerCase().includes(q) ||
-        c.config.description.toLowerCase().includes(q) ||
-        c.config.family.toLowerCase().includes(q) ||
-        (c.config.counties || []).some((cnt) => cnt.toLowerCase().includes(q))
+        normSearch(c.config.name).includes(q) ||
+        normSearch(c.config.nativeName || '').includes(q) ||
+        normSearch(c.config.description).includes(q) ||
+        normSearch(c.config.family).includes(q) ||
+        (c.config.counties || []).some((cnt) => normSearch(cnt).includes(q))
       );
     });
   }, [menuFamilyFilter, menuSearchQuery]);

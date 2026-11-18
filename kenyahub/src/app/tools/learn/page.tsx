@@ -2,7 +2,6 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 import { useState, useEffect, useMemo, useCallback } from "react";
 import dynamic from "next/dynamic";
@@ -22,9 +21,9 @@ import {
 } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import type { LanguageConfig } from "@/data/courses/types";
-import { COURSE_REGISTRY, PUBLISHED_COURSES } from "@/data/courses/registry";
+import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import { getLanguageIdentity } from "@/data/language-identity";
-import { INITIAL_RANDOM_WORDS, DICT_META_MAP, ALL_DICT_METAS, TOTAL_DICTIONARY_ENTRIES } from "@/data/language-sources";
+import { INITIAL_RANDOM_WORDS, DICT_META_MAP, ALL_DICT_METAS, TOTAL_DICTIONARY_ENTRIES } from "@/data/dictionaries/metadata";
 import { TOOLS } from "@/lib/tools-registry";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 
@@ -38,16 +37,18 @@ const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
-const AVAILABLE_LANGUAGES: (LanguageConfig & { ready: boolean; skills: number; wordsCount: number })[] =
-  Object.values(COURSE_REGISTRY).map(({ config, units, ready }) => ({
-    ...config,
-    ready,
-    skills: units.reduce((total, unit) => total + unit.skills.length, 0),
-    wordsCount: units.reduce(
-      (total, unit) => total + unit.skills.reduce((s, sk) => s + sk.words.length, 0),
-      0
-    ),
-  }));
+const AVAILABLE_LANGUAGES: (LanguageConfig & {
+  ready: boolean;
+  unitCount: number;
+  skills: number;
+  wordsCount: number;
+})[] = PUBLISHED_COURSE_SUMMARIES.map(({ config, ready, unitCount, skillCount, wordsCount }) => ({
+  ...config,
+  ready,
+  unitCount,
+  skills: skillCount,
+  wordsCount,
+}));
 
 interface StoredLangStats {
   xp: number;
@@ -87,6 +88,10 @@ function formatLanguageDisplay(name: string, nativeName: string): { primary: str
   return { primary: cleanName, secondary: cleanNative };
 }
 
+function normalizeLanguageQuery(str: string): string {
+  return str.normalize("NFD").replace(/[\u0300-\u036f'’]/g, "").toLowerCase();
+}
+
 export default function LearnPage() {
   const [progressMap, setProgressMap] = useState<Record<string, StoredLangStats>>({});
   const [showAllModules, setShowAllModules] = useState(false);
@@ -114,16 +119,16 @@ export default function LearnPage() {
   }, [readyLangs]);
 
   const filteredLangs = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
+    const q = normalizeLanguageQuery(searchQuery.trim());
     return readyLangs.filter((l) => {
       if (familyFilter !== "All" && l.family !== familyFilter) return false;
       if (!q) return true;
       return (
-        l.name.toLowerCase().includes(q) ||
-        (l.nativeName || "").toLowerCase().includes(q) ||
-        l.description.toLowerCase().includes(q) ||
-        l.family.toLowerCase().includes(q) ||
-        l.counties.some((c) => c.toLowerCase().includes(q))
+        normalizeLanguageQuery(l.name).includes(q) ||
+        normalizeLanguageQuery(l.nativeName || "").includes(q) ||
+        normalizeLanguageQuery(l.description).includes(q) ||
+        normalizeLanguageQuery(l.family).includes(q) ||
+        l.counties.some((c) => normalizeLanguageQuery(c).includes(q))
       );
     });
   }, [readyLangs, familyFilter, searchQuery]);
@@ -176,7 +181,7 @@ export default function LearnPage() {
                   : `Start learning any of ${readyLangs.length} interactive Kenyan language courses`}
               </h2>
               <p className="text-xs sm:text-sm text-text-secondary mt-1 leading-relaxed">
-                Every course includes guided skill trees, 3D vocabulary flashcards, written phonetic guides, grammar tables, 4 mini-games, and oral proverbs.
+                Every course includes guided skill trees, 3D vocabulary flashcards, written phonetic guides, grammar tables, 14 mini-games, and oral proverbs.
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2.5 shrink-0">
@@ -352,9 +357,9 @@ export default function LearnPage() {
                   wordsLearned: 0,
                   completedSkills: 0,
                 };
-                const courseObj = PUBLISHED_COURSES.find((c) => c.config.id === lang.id);
                 const display = formatLanguageDisplay(lang.name, lang.nativeName);
                 const identity = getLanguageIdentity(lang.id);
+                const dictCats = DICT_META_MAP[lang.id]?.categories || [];
 
                 return (
                   <div
@@ -365,13 +370,13 @@ export default function LearnPage() {
                       <Link href={`/tools/learn/${lang.id}/`} className="block">
                         <div className="flex items-start justify-between gap-2.5">
                           <div className="min-w-0 flex-1">
-                            {/* Cultural greeting and regional motif badges (cool, fun language differentiation) */}
+                            {/* Cultural greeting and regional motif badges */}
                             <div className="flex items-center gap-1.5 mb-1.5 flex-wrap">
                               <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.6875rem] font-bold bg-gold/10 border border-gold/30 text-gold shadow-xs">
                                 “{identity.greeting}”
                               </span>
                               <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/70 px-2 py-0.5 text-[0.625rem] text-text-secondary">
-                                                                <span>{identity.region}</span>
+                                <span>{identity.region}</span>
                               </span>
                             </div>
 
@@ -431,24 +436,22 @@ export default function LearnPage() {
                         </div>
                       )}
 
-                      {showAllModules && courseObj && (
+                      {showAllModules && (
                         <div className="mt-3.5 pt-3 border-t border-border/60 space-y-2">
                           <p className="text-xs font-bold uppercase tracking-wider text-text-muted">
-                            {courseObj.units.length} Units · Direct Module Preview:
+                            {lang.unitCount} Units · {lang.skills} Skill Modules · Direct Preview:
                           </p>
                           <div className="flex flex-wrap gap-1.5">
-                            {courseObj.units.map((unit) =>
-                              unit.skills.map((skill) => (
-                                <Link
-                                  key={skill.id}
-                                  href={`/tools/learn/${lang.id}/#unit-block-${unit.id}`}
-                                  className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-bg-elevated/70 px-2.5 py-1 text-xs text-text-secondary hover:border-gold hover:text-gold transition-colors"
-                                >
-                                  <DynamicIcon emoji={skill.icon} className="w-3.5 h-3.5 shrink-0" />
-                                  <span>{skill.title}</span>
-                                </Link>
-                              ))
-                            )}
+                            {dictCats.slice(0, 8).map((cat) => (
+                              <Link
+                                key={cat.id}
+                                href={`/tools/learn/${lang.id}/`}
+                                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-bg-elevated/70 px-2.5 py-1 text-xs text-text-secondary hover:border-gold hover:text-gold transition-colors"
+                              >
+                                <span>{cat.icon}</span>
+                                <span>{cat.name}</span>
+                              </Link>
+                            ))}
                           </div>
                         </div>
                       )}

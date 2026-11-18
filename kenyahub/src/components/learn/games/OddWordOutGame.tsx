@@ -24,6 +24,7 @@ export function OddWordOutGame({
   allUnits = [],
   languageName,
   onAwardXp,
+  onUpdateGameStats,
 }: GameProps) {
   const SESSION_ROUNDS = 8;
   const [round, setRound] = useState(0);
@@ -89,7 +90,7 @@ export function OddWordOutGame({
     if (isRight) {
       playCorrectSfx();
       setScore((s) => s + 20);
-      onAwardXp?.(20);
+      onAwardXp?.(20, false);
     } else {
       playWrongSfx();
     }
@@ -99,6 +100,8 @@ export function OddWordOutGame({
       if (round + 1 >= rounds.length) {
         playCelebrationSfx();
         setSessionDone(true);
+        onAwardXp?.(0, true);
+        onUpdateGameStats?.((prev) => ({ ...prev, oddWordBest: Math.max(prev.oddWordBest || 0, score + (isRight ? 20 : 0)) }));
       } else {
         setRound((r) => r + 1);
       }

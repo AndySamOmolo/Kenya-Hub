@@ -93,8 +93,8 @@ export function normalizePhoneticLookup(raw: string): string {
  * Normalizes an English or indigenous headword into clean, comparable lookup tokens
  * so English can serve as an accurate bridge between any two Kenyan languages.
  */
-export function extractNormalizedTerms(raw: string): string[] {
-  const cleaned = normalizePhoneticLookup(raw)
+export function extractNormalizedTerms(raw: string, preNormalized?: string): string[] {
+  const cleaned = (preNormalized ?? normalizePhoneticLookup(raw))
     .toLowerCase()
     .replace(/^\[[^\]]*\]\s*/g, "")
     .replace(/\s*\([^)]*\)/g, "")
@@ -187,8 +187,8 @@ const INDIGENOUS_PREFIXES = [
  * Extracts normalized lookup terms for an indigenous translation field, including
  * morphological root stems (stripping common Bantu/Nilotic infinitive and noun-class prefixes).
  */
-export function extractIndigenousTerms(raw: string): string[] {
-  const baseTerms = extractNormalizedTerms(raw);
+export function extractIndigenousTerms(raw: string, preNormalized?: string): string[] {
+  const baseTerms = extractNormalizedTerms(raw, preNormalized);
   const out = new Set<string>(baseTerms);
   for (const term of baseTerms) {
     if (term.includes(" ") || term.length < 5) continue;
@@ -206,6 +206,8 @@ export function extractIndigenousTerms(raw: string): string[] {
 export interface IndexedDictEntry {
   entry: DictEntry;
   cat: DictCategory;
+  normEngPhonetic: string;
+  normTransPhonetic: string;
   engLower: string;
   transLower: string;
   engTerms: string[];
@@ -214,6 +216,7 @@ export interface IndexedDictEntry {
 
 export interface DictSearchIndex {
   all: IndexedDictEntry[];
+  allFlat: IndexedDictEntry[];
   byEngTerm: Map<string, IndexedDictEntry[]>;
   byTransTerm: Map<string, IndexedDictEntry[]>;
 }
@@ -230,7 +233,8 @@ export function invalidateDictIndex(dict?: Dictionary): void {
 
 /**
  * Returns a WeakMap-memoized O(1) lookup index for a loaded dictionary,
- * with exact buckets sorted by headword conciseness so primary headwords rank first.
+ * precomputing `normEngPhonetic` and `normTransPhonetic` on each item in `idx.allFlat` (`PERF-04`)
+ * and sorting exact buckets by headword conciseness so primary headwords rank first.
  */
 export function getDictIndex(dict: Dictionary): DictSearchIndex {
   const cached = DICT_INDEX_CACHE.get(dict);
@@ -242,13 +246,17 @@ export function getDictIndex(dict: Dictionary): DictSearchIndex {
 
   for (const cat of dict.categories) {
     for (const entry of cat.entries) {
-      const engLower = normalizePhoneticLookup(entry.english).toLowerCase().trim();
-      const transLower = normalizePhoneticLookup(entry.translation).toLowerCase().trim();
-      const engTerms = extractNormalizedTerms(entry.english);
-      const transTerms = extractIndigenousTerms(entry.translation);
+      const normEngPhonetic = normalizePhoneticLookup(entry.english);
+      const normTransPhonetic = normalizePhoneticLookup(entry.translation);
+      const engLower = normEngPhonetic.toLowerCase().trim();
+      const transLower = normTransPhonetic.toLowerCase().trim();
+      const engTerms = extractNormalizedTerms(entry.english, normEngPhonetic);
+      const transTerms = extractIndigenousTerms(entry.translation, normTransPhonetic);
       const item: IndexedDictEntry = {
         entry,
         cat,
+        normEngPhonetic,
+        normTransPhonetic,
         engLower,
         transLower,
         engTerms,
@@ -293,7 +301,7 @@ export function getDictIndex(dict: Dictionary): DictSearchIndex {
     });
   }
 
-  const index: DictSearchIndex = { all, byEngTerm, byTransTerm };
+  const index: DictSearchIndex = { all, allFlat: all, byEngTerm, byTransTerm };
   DICT_INDEX_CACHE.set(dict, index);
   return index;
 }
@@ -368,7 +376,7 @@ export function findInDictByEnglishPivots(
         (pw) => new RegExp(`\\b${pw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i")
       );
       // Pass 1: word-boundary matches
-      for (const item of idx.all) {
+      for (const item of idx.allFlat) {
         if (seen.has(item.entry)) continue;
         if (wordBoundaryRegexes.some((rx) => rx.test(item.engLower))) {
           seen.add(item.entry);
@@ -388,7 +396,7 @@ export function findInDictByEnglishPivots(
       }
       // Pass 2: substring fallback for 4+ char queries
       if (exactMatches.length + partialMatches.length < maxResults) {
-        for (const item of idx.all) {
+        for (const item of idx.allFlat) {
           if (seen.has(item.entry)) continue;
           if (
             longPivots.some(
@@ -450,12 +458,12 @@ export function runTranslatorSearch(params: {
   }
 
   const q = normalizePhoneticLookup(query).toLowerCase().trim();
-  const qClean = extractNormalizedTerms(q)[0] || q;
+  const qClean = extractNormalizedTerms(q, q)[0] || q;
   const results: TranslationResultItem[] = [];
   const pivotWordsSet = new Set<string>();
 
   if (sourceLanguage === "english") {
-    const pivots = extractNormalizedTerms(q);
+    const pivots = extractNormalizedTerms(q, q);
     if (targetLanguage === "all" || targetLanguage === "english") {
       for (const dict of activeDictList) {
         const matches = findInDictByEnglishPivots(dict, pivots, undefined, 1);
@@ -472,7 +480,7 @@ export function runTranslatorSearch(params: {
     const partialSourceMatches: { entry: DictEntry; cat: DictCategory }[] = [];
     const seenSource = new Set<DictEntry>();
 
-    const transTerms = extractIndigenousTerms(q);
+    const transTerms = extractIndigenousTerms(q, q);
     for (const tt of transTerms) {
       const transBucket = sourceIdx.byTransTerm.get(tt);
       if (transBucket) {
@@ -489,7 +497,7 @@ export function runTranslatorSearch(params: {
         ? new RegExp(`\\b${qClean.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i")
         : null;
 
-    for (const item of sourceIdx.all) {
+    for (const item of sourceIdx.allFlat) {
       if (seenSource.has(item.entry)) continue;
       if (item.transLower === q) {
         seenSource.add(item.entry);
@@ -502,7 +510,7 @@ export function runTranslatorSearch(params: {
     }
 
     if (partialSourceMatches.length < 60 && qClean.length >= 4) {
-      for (const item of sourceIdx.all) {
+      for (const item of sourceIdx.allFlat) {
         if (seenSource.has(item.entry)) continue;
         if (item.transLower.includes(q) || item.transTerms.some((t) => t.includes(qClean))) {
           seenSource.add(item.entry);
@@ -522,7 +530,7 @@ export function runTranslatorSearch(params: {
         }
       }
       if (exactSourceMatches.length === 0) {
-        for (const item of sourceIdx.all) {
+        for (const item of sourceIdx.allFlat) {
           if (qBoundaryRx ? qBoundaryRx.test(item.engLower) : item.engLower.includes(q)) {
             partialSourceMatches.push({ entry: item.entry, cat: item.cat });
             if (partialSourceMatches.length >= 60) break;
@@ -626,7 +634,7 @@ export function runTranslatorSearch(params: {
         const pronParts: string[] = [];
         let matchedCount = 0;
         for (const tok of wordTokens) {
-          const tokMatches = findInDictByEnglishPivots(dict, extractNormalizedTerms(tok), undefined, 1);
+          const tokMatches = findInDictByEnglishPivots(dict, extractNormalizedTerms(tok, tok), undefined, 1);
           const exact = tokMatches.find((m) => m.matchType === "exact") || tokMatches[0];
           if (exact) {
             matchedCount++;
@@ -667,7 +675,7 @@ export function runTranslatorSearch(params: {
         const syn = synthesizeForDict(targetDict);
         if (syn) results.unshift(syn);
         for (const tok of wordTokens) {
-          const tokMatches = findInDictByEnglishPivots(targetDict, extractNormalizedTerms(tok), undefined, 1);
+          const tokMatches = findInDictByEnglishPivots(targetDict, extractNormalizedTerms(tok, tok), undefined, 1);
           if (tokMatches.length > 0) results.push(tokMatches[0]);
         }
       }
@@ -677,7 +685,7 @@ export function runTranslatorSearch(params: {
       const englishPivotTokens: { rawTok: string; engHead: string; sourceEntry: DictEntry }[] = [];
 
       for (const tok of wordTokens) {
-        const tokTerms = extractIndigenousTerms(tok);
+        const tokTerms = extractIndigenousTerms(tok, tok);
         let matchedEntry: DictEntry | undefined;
         for (const tt of tokTerms) {
           const bucket = sourceIdx.byTransTerm.get(tt);

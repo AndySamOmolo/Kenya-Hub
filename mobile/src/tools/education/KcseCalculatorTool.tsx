@@ -67,12 +67,17 @@ export function KcseCalculatorTool() {
 
   const calc = useMemo(() => {
     const englishPoints = gradePoints[grades[0]] || 0;
-    const otherPoints = grades
-      .slice(1)
-      .map((g) => gradePoints[g] || 0)
+    const kiswahiliPoints = gradePoints[grades[1]] || 0;
+    const mathPoints = gradePoints[grades[2]] || 0;
+    const bestLangIdx = kiswahiliPoints > englishPoints ? 1 : 0;
+    const bestLangPoints = Math.max(englishPoints, kiswahiliPoints);
+    const remainingPoints = grades
+      .map((g, idx) => ({ idx, pts: gradePoints[g] || 0 }))
+      .filter((item) => item.idx !== bestLangIdx && item.idx !== 2)
+      .map((item) => item.pts)
       .sort((a, b) => b - a);
-    // KNEC counts English (or Kiswahili) + best 6 other subjects = 7 subjects (max 84), plus 8-subject total out of 96
-    const best7Points = englishPoints + otherPoints.slice(0, 6).reduce((s, p) => s + p, 0);
+    // KNEC counts Best Language (English/Kiswahili) + Compulsory Mathematics + best 5 other subjects = 7 subjects (max 84)
+    const best7Points = bestLangPoints + mathPoints + remainingPoints.slice(0, 5).reduce((s, p) => s + p, 0);
     const all8Points = grades.reduce((sum, g) => sum + (gradePoints[g] || 0), 0);
     const meanPointsNum = best7Points / 7;
     const meanPoints = meanPointsNum.toFixed(2);

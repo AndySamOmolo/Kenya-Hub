@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Admin",
+  title: "Admin Dashboard | KenyaHub",
   description: "Content management for KenyaHub.",
   robots: {
     index: false,

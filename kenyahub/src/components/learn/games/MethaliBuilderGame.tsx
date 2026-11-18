@@ -21,6 +21,7 @@ export function MethaliBuilderGame({
   languageName,
   languageId,
   onAwardXp,
+  onUpdateGameStats,
 }: GameProps) {
   const SESSION_ROUNDS = 6;
   const [mode, setMode] = useState<"tiles" | "complete">("tiles");
@@ -122,7 +123,8 @@ export function MethaliBuilderGame({
         playCorrectSfx();
         setSolved(true);
         setScore((s) => s + 25);
-        onAwardXp?.(25);
+        onAwardXp?.(25, false);
+        onUpdateGameStats?.((prev) => ({ ...prev, methaliSolved: (prev.methaliSolved || 0) + 1 }));
       } else {
         playWrongSfx();
         setSolved(false);
@@ -142,7 +144,8 @@ export function MethaliBuilderGame({
       playCorrectSfx();
       setSolved(true);
       setScore((s) => s + 20);
-      onAwardXp?.(20);
+      onAwardXp?.(20, false);
+      onUpdateGameStats?.((prev) => ({ ...prev, methaliSolved: (prev.methaliSolved || 0) + 1 }));
     } else {
       playWrongSfx();
       setSolved(false);
@@ -153,6 +156,7 @@ export function MethaliBuilderGame({
     if (round + 1 >= SESSION_ROUNDS) {
       playCelebrationSfx();
       setSessionDone(true);
+      onAwardXp?.(0, true);
     } else {
       setRound((r) => r + 1);
       initRound(mode);

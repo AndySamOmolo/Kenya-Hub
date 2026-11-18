@@ -31,7 +31,11 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
   const { theme, isDark, themeReady } = useTheme();
 
   if (!fontsLoaded || !themeReady) {
-    return <View style={styles.splashFallback} />;
+    return (
+      <View
+        style={[styles.splashFallback, { backgroundColor: theme.bgPrimary }]}
+      />
+    );
   }
 
   return (
@@ -56,7 +60,7 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
 }
 
 export default function RootLayout() {
-  const [fontsLoaded] = useFonts({
+  const [fontsLoaded, fontError] = useFonts({
     Outfit_400Regular,
     Outfit_500Medium,
     Outfit_600SemiBold,
@@ -72,7 +76,7 @@ export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <ThemeProvider>
-        <LayoutContent fontsLoaded={fontsLoaded} />
+        <LayoutContent fontsLoaded={fontsLoaded || Boolean(fontError)} />
       </ThemeProvider>
     </SafeAreaProvider>
   );
@@ -80,18 +84,22 @@ export default function RootLayout() {
 
 export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
   const router = useRouter();
+  const { colors } = useTheme();
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: colors.bgPrimary }]}>
       <Ionicons
         name="warning-outline"
         size={48}
-        color="#F59E0B"
+        color={colors.gold}
         style={{ marginBottom: 16 }}
       />
-      <Text style={styles.title}>Something went wrong</Text>
-      <Text style={styles.message}>
-        {error?.message || "An unexpected error occurred while rendering this screen."}
+      <Text style={[styles.title, { color: colors.textPrimary }]}>
+        Something went wrong
+      </Text>
+      <Text style={[styles.message, { color: colors.textSecondary }]}>
+        {error?.message ||
+          "An unexpected error occurred while rendering this screen."}
       </Text>
       <View style={styles.actionsRow}>
         <Pressable
@@ -99,10 +107,15 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
           accessibilityRole="button"
           accessibilityLabel="Try loading screen again"
           android_ripple={androidRipple()}
-          style={pressableStyle(styles.retryButton)}
+          style={pressableStyle([
+            styles.retryButton,
+            { backgroundColor: colors.gold },
+          ])}
         >
-          <Ionicons name="refresh" size={16} color={darkColors.kenyaBlack} />
-          <Text style={styles.retryText}>Try again</Text>
+          <Ionicons name="refresh" size={16} color={colors.kenyaBlack} />
+          <Text style={[styles.retryText, { color: colors.kenyaBlack }]}>
+            Try again
+          </Text>
         </Pressable>
         <Pressable
           onPress={() => {
@@ -115,10 +128,18 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
           accessibilityRole="button"
           accessibilityLabel="Return to KenyaHub Home screen"
           android_ripple={androidRipple()}
-          style={pressableStyle(styles.homeButton)}
+          style={pressableStyle([
+            styles.homeButton,
+            {
+              backgroundColor: colors.surfaceContainerHigh,
+              borderColor: colors.outlineVariant,
+            },
+          ])}
         >
-          <Ionicons name="home-outline" size={16} color={darkColors.textPrimary} />
-          <Text style={styles.homeButtonText}>Go Home</Text>
+          <Ionicons name="home-outline" size={16} color={colors.textPrimary} />
+          <Text style={[styles.homeButtonText, { color: colors.textPrimary }]}>
+            Go Home
+          </Text>
         </Pressable>
       </View>
     </View>

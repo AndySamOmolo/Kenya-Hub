@@ -38,8 +38,8 @@ if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(line_buffering=True)
 
 START_MONOTONIC = time.monotonic()
-GLOBAL_TIME_BUDGET_SEC = int(os.environ.get("GLOBAL_TIME_BUDGET_SEC", str(25 * 60)))
-PER_DATASET_TIMEOUT_SEC = int(os.environ.get("PER_DATASET_TIMEOUT_SEC", "90"))
+GLOBAL_TIME_BUDGET_SEC = int(os.environ.get("GLOBAL_TIME_BUDGET_SEC") or str(25 * 60))
+PER_DATASET_TIMEOUT_SEC = int(os.environ.get("PER_DATASET_TIMEOUT_SEC") or "90")
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DICT_DIR = ROOT_DIR / "src" / "data" / "dictionaries"
@@ -54,8 +54,8 @@ R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY", "").strip()
 R2_BUCKET = os.environ.get("R2_BUCKET_NAME", "kenyahub-audio").strip() or "kenyahub-audio"
 CDN_BASE = os.environ.get("NEXT_PUBLIC_AUDIO_CDN_URL", "").strip().rstrip("/")
 HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
-MAX_CLIPS = int(os.environ.get("MAX_CLIPS_PER_DATASET", "250"))
-MAX_TEXT_ROWS = int(os.environ.get("MAX_TEXT_ROWS_PER_DATASET", "3000"))
+MAX_CLIPS = int(os.environ.get("MAX_CLIPS_PER_DATASET") or "250")
+MAX_TEXT_ROWS = int(os.environ.get("MAX_TEXT_ROWS_PER_DATASET") or "3000")
 
 HTTP_SESSION = requests.Session()
 R2_UPLOAD_DISABLED = False

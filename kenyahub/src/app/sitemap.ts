@@ -48,7 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const matatuModified = toIsoDate((matatuData as { lastUpdated?: string }).lastUpdated || (toolSourcesData as { lastAudit?: string }).lastAudit);
   const auditModified = toIsoDate((toolSourcesData as { lastAudit?: string }).lastAudit);
 
-  // Core Hub & Static pages
+  // Core Hub & Static pages (including /privacy/ and /terms/ with priority: 0.3)
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/`,

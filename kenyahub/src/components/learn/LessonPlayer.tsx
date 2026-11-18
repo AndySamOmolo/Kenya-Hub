@@ -103,6 +103,7 @@ export default function LessonPlayer({
   const [heartsLeft, setHeartsLeft] = useState(() => Math.max(1, progress?.hearts || MAX_HEARTS));
   const [wordsLearned, setWordsLearned] = useState<string[]>([]);
   const [startTime] = useState(Date.now());
+  const isPracticeMode = Boolean(reviewOnly);
 
   // Current exercise state
   const [userAnswer, setUserAnswer] = useState("");
@@ -282,7 +283,7 @@ export default function LessonPlayer({
         perfectLesson: perfect,
         timeSpent: Math.round((Date.now() - startTime) / 1000),
         newWordsLearned: wordsLearned,
-        heartsRemaining: Math.max(1, heartsLeft),
+        heartsRemaining: isPracticeMode ? MAX_HEARTS : Math.max(0, heartsLeft),
         reviewItems: missedExercises
           .filter((item) => item.type !== "match_pairs" && item.correctAnswer.trim())
           .map((item): ReviewItem => ({
@@ -363,6 +364,7 @@ export default function LessonPlayer({
           } else {
             setWrongMatch(true);
             setMistakes((v) => v + 1);
+            setHeartsLeft((h) => Math.max(0, h - 1));
             setTimeout(() => {
               setSelectedLeft(null);
               setSelectedRight(null);
@@ -404,6 +406,7 @@ export default function LessonPlayer({
           } else {
             setWrongMatch(true);
             setMistakes((v) => v + 1);
+            setHeartsLeft((h) => Math.max(0, h - 1));
             setTimeout(() => {
               setSelectedLeft(null);
               setSelectedRight(null);
@@ -427,6 +430,7 @@ export default function LessonPlayer({
   const handleSkip = useCallback(() => {
     if (!exercise || isChecked) return;
     setMistakes((v) => v + 1);
+    setHeartsLeft((h) => Math.max(0, h - 1));
     setStreak(0);
     setMissedExercises((items) =>
       items.some((item) => item.prompt === exercise.prompt && item.correctAnswer === exercise.correctAnswer)
@@ -664,7 +668,7 @@ export default function LessonPlayer({
           </div>
         </div>
 
-        <div className="mt-6 flex items-center gap-3">
+        <div className="mt-6 flex flex-wrap items-center gap-3">
           <button
             type="button"
             disabled={teachingIndex === 0}
@@ -673,6 +677,15 @@ export default function LessonPlayer({
           >
             <ChevronLeft className="h-4 w-4" /> Prev
           </button>
+          {!isLastTeachingCard && (
+            <button
+              type="button"
+              onClick={() => setLessonStage("practice")}
+              className="flex items-center justify-center gap-1.5 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3.5 text-sm font-bold text-gold hover:bg-gold/20 transition-all cursor-pointer"
+            >
+              Skip to Quiz →
+            </button>
+          )}
           <button
             type="button"
             onClick={() => {
@@ -760,6 +773,16 @@ export default function LessonPlayer({
         <span className="text-xs font-semibold text-text-secondary shrink-0">
           {currentIndex + 1}/{exercises.length}
         </span>
+
+        {!isPracticeMode && (
+          <span
+            className="inline-flex items-center gap-1 rounded-full border border-red-500/30 bg-red-500/10 px-2.5 py-1 text-xs font-bold text-red-400 shrink-0"
+            title="Remaining hearts"
+            aria-label={`${heartsLeft} hearts remaining`}
+          >
+            ❤️ {heartsLeft}
+          </span>
+        )}
 
         {streak > 1 && (
           <div className="flex items-center gap-1 rounded-full border border-gold/30 bg-gold/10 px-2.5 py-1">

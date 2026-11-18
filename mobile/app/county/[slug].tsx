@@ -92,10 +92,14 @@ export default function CountyDetailScreen() {
   const scrollRef = useRef<ScrollView>(null);
   const sectionOffsetsRef = useRef<Record<string, number>>({});
   const [activeSection, setActiveSection] = useState("overview");
+  const [visibleCount, setVisibleCount] = useState(30);
+  const [postalVisibleCount, setPostalVisibleCount] = useState(30);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ y: 0, animated: false });
     setActiveSection("overview");
+    setVisibleCount(30);
+    setPostalVisibleCount(30);
   }, [slug]);
 
   const county: County | undefined = countiesData.counties.find(
@@ -138,25 +142,36 @@ export default function CountyDetailScreen() {
     [county]
   );
 
-  const countyHospitals = useMemo(
+  const normalizeCountyName = (val: string) =>
+    String(val || "")
+      .toLowerCase()
+      .replace(/['’\-]+/g, "")
+      .replace(/\s+/g, "")
+      .trim();
+
+  const filteredHospitals = useMemo(
     () =>
       county
         ? ((hospitalsData as any).hospitals || []).filter(
-            (h: any) => h.county.toLowerCase() === county.name.toLowerCase()
+            (h: any) =>
+              normalizeCountyName(h.county) === normalizeCountyName(county.name)
           )
         : [],
     [county]
   );
+  const countyHospitals = filteredHospitals;
 
-  const countyPostalCodes = useMemo(
+  const filteredPostal = useMemo(
     () =>
       county
         ? ((postalData as any).codes || []).filter(
-            (p: any) => p.county.toLowerCase() === county.name.toLowerCase()
+            (p: any) =>
+              normalizeCountyName(p.county) === normalizeCountyName(county.name)
           )
         : [],
     [county]
   );
+  const countyPostalCodes = filteredPostal;
 
   const countySchools = useMemo(
     () =>
@@ -974,15 +989,15 @@ export default function CountyDetailScreen() {
                 },
               ]}
             >
-              {countyHospitals.map((h: any, idx: number) => (
+              {filteredHospitals.slice(0, visibleCount).map((h: any, idx: number, arr: any[]) => (
                 <View
                   key={idx}
                   style={{
                     flexDirection: "row",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    paddingBottom: idx < countyHospitals.length - 1 ? 8 : 0,
-                    borderBottomWidth: idx < countyHospitals.length - 1 ? 1 : 0,
+                    paddingBottom: idx < arr.length - 1 ? 8 : 0,
+                    borderBottomWidth: idx < arr.length - 1 ? 1 : 0,
                     borderBottomColor: theme.border,
                   }}
                 >
@@ -1014,6 +1029,35 @@ export default function CountyDetailScreen() {
                   </Text>
                 </View>
               ))}
+              {filteredHospitals.length > visibleCount && (
+                <Pressable
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    triggerHaptic(8);
+                    setVisibleCount((prev) => prev + 30);
+                  }}
+                  style={pressableStyle({
+                    marginTop: 8,
+                    paddingVertical: 10,
+                    paddingHorizontal: 16,
+                    borderRadius: 10,
+                    borderWidth: 1,
+                    borderColor: theme.gold,
+                    alignItems: "center",
+                    backgroundColor: `${theme.gold}14`,
+                  })}
+                >
+                  <Text
+                    style={{
+                      fontSize: 12,
+                      fontFamily: "Outfit_700Bold",
+                      color: theme.gold,
+                    }}
+                  >
+                    Load More ({filteredHospitals.length - visibleCount} remaining)
+                  </Text>
+                </Pressable>
+              )}
             </View>
           </View>
         )}
@@ -1030,7 +1074,7 @@ export default function CountyDetailScreen() {
               {countyPostalCodes.length})
             </Text>
             <View style={styles.constituenciesWrap}>
-              {countyPostalCodes.map((p: any, idx: number) => (
+              {filteredPostal.slice(0, postalVisibleCount).map((p: any, idx: number) => (
                 <View
                   key={idx}
                   style={[
@@ -1057,6 +1101,35 @@ export default function CountyDetailScreen() {
                 </View>
               ))}
             </View>
+            {filteredPostal.length > postalVisibleCount && (
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                onPress={() => {
+                  triggerHaptic(8);
+                  setPostalVisibleCount((prev) => prev + 30);
+                }}
+                style={pressableStyle({
+                  marginBottom: 14,
+                  paddingVertical: 10,
+                  paddingHorizontal: 16,
+                  borderRadius: 10,
+                  borderWidth: 1,
+                  borderColor: theme.gold,
+                  alignItems: "center",
+                  backgroundColor: `${theme.gold}14`,
+                })}
+              >
+                <Text
+                  style={{
+                    fontSize: 12,
+                    fontFamily: "Outfit_700Bold",
+                    color: theme.gold,
+                  }}
+                >
+                  Load More ({filteredPostal.length - postalVisibleCount} remaining)
+                </Text>
+              </Pressable>
+            )}
           </View>
         )}
 

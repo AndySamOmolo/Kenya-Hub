@@ -1,6 +1,6 @@
 // ============================================================
 // Language Learning Progress Manager
-// Handles localStorage persistence, SRS review boxes, XP, streaks, Daily Quests, and GameStats
+// Handles localStorage persistence, SRS review boxes, XP, streaks, Daily Quests, GameStats, and Cross-Device Backup
 // ============================================================
 
 import type {
@@ -232,7 +232,7 @@ function migrateProgress(languageId: string, value: unknown): UserProgress {
   return refillHearts(migrated);
 }
 
-/* ─── Load / Save ──────────────────────────────────── */
+/* ─── Load / Save / Backup Export & Import ─────────── */
 
 export function loadProgress(languageId: string): UserProgress {
   if (typeof window === 'undefined') return createDefaultProgress(languageId);
@@ -251,6 +251,58 @@ export function saveProgress(progress: UserProgress): void {
     localStorage.setItem(`${STORAGE_KEY}-${progress.languageId}`, JSON.stringify(progress));
   } catch {
     // localStorage full or unavailable
+  }
+}
+
+/**
+ * Exports all stored language course progress into a compact Base64 backup code
+ * so learners can transfer streaks, XP, and skill levels across devices (PROD-01).
+ */
+export function exportAllProgressBackup(languageIds: string[]): string {
+  if (typeof window === 'undefined') return '';
+  const payload: Record<string, UserProgress> = {};
+  for (const langId of languageIds) {
+    const raw = localStorage.getItem(`${STORAGE_KEY}-${langId}`);
+    if (raw) {
+      try {
+        const parsed = migrateProgress(langId, JSON.parse(raw));
+        if (parsed.xp > 0 || parsed.lessonsCompleted > 0 || parsed.gamesPlayed > 0) {
+          payload[langId] = parsed;
+        }
+      } catch {
+        // Ignore malformed language entry
+      }
+    }
+  }
+  const json = JSON.stringify({ v: PROGRESS_VERSION, ts: Date.now(), courses: payload });
+  return typeof btoa === 'function'
+    ? btoa(encodeURIComponent(json))
+    : Buffer.from(json, 'utf-8').toString('base64');
+}
+
+/**
+ * Restores language course progress from a Base64 backup code.
+ * Returns the number of language courses restored.
+ */
+export function importAllProgressBackup(backupCode: string): number {
+  if (typeof window === 'undefined' || !backupCode.trim()) return 0;
+  try {
+    const clean = backupCode.trim();
+    const json =
+      typeof atob === 'function'
+        ? decodeURIComponent(atob(clean))
+        : Buffer.from(clean, 'base64').toString('utf-8');
+    const parsed = JSON.parse(json);
+    if (!isRecord(parsed) || !isRecord(parsed.courses)) return 0;
+    let count = 0;
+    for (const [langId, data] of Object.entries(parsed.courses)) {
+      const migrated = migrateProgress(langId, data);
+      saveProgress(migrated);
+      count++;
+    }
+    return count;
+  } catch {
+    return 0;
   }
 }
 
@@ -352,10 +404,14 @@ function evaluateAchievementsAndBonuses(
 ): UserProgress {
   if (updated.dailyQuests) {
     updated.dailyQuests.xpToday = updated.todayXp;
+    // All 3 Daily Quests displayed in SkillTree.tsx must be satisfied:
+    // 1. Complete 1 Lesson (lessonsToday >= 1)
+    // 2. Play 2 Mini-Games (gamesToday >= 2)
+    // 3. Earn Daily XP Goal (xpToday >= dailyGoal)
     const all3Done =
-      (updated.dailyQuests.lessonDone || updated.dailyQuests.lessonsToday >= 1) &&
-      (updated.dailyQuests.gameDone || updated.dailyQuests.gamesToday >= 2) &&
-      (updated.dailyQuests.memoryOrCardsDone || updated.dailyQuests.xpToday >= updated.dailyGoal);
+      updated.dailyQuests.lessonsToday >= 1 &&
+      updated.dailyQuests.gamesToday >= 2 &&
+      updated.dailyQuests.xpToday >= updated.dailyGoal;
     if (all3Done && !updated.dailyQuests.chestClaimed) {
       updated.dailyQuests = { ...updated.dailyQuests, chestClaimed: true };
       updated.xp += XP_DAILY_QUEST_CHEST;
@@ -395,6 +451,9 @@ function evaluateAchievementsAndBonuses(
   if (wasBelowDailyGoal && updated.todayXp >= updated.dailyGoal) {
     updated.xp += XP_DAILY_GOAL_BONUS;
     updated.todayXp += XP_DAILY_GOAL_BONUS;
+    if (updated.dailyQuests) {
+      updated.dailyQuests.xpToday = updated.todayXp;
+    }
   }
 
   return updated;
@@ -489,11 +548,14 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
   return evaluateAchievementsAndBonuses(updated, wasBelowDailyGoal);
 }
 
-/** Award XP from mini-games or flashcard practice */
+/**
+ * Award XP from mini-games or flashcard practice.
+ * Only increments `gamesPlayed` and `dailyQuests.gamesToday` when `isGameSessionComplete` is true.
+ */
 export function awardActivityXp(
   progress: UserProgress,
   bonusXp: number,
-  isGame = false
+  isGameSessionComplete = false
 ): UserProgress {
   const today = getTodayString();
   const baseTodayXp = progress.lastActiveDate === today ? progress.todayXp : 0;
@@ -505,18 +567,22 @@ export function awardActivityXp(
       ? progress.dailyQuests
       : createDefaultDailyQuests(today);
 
+  const nextGamesToday = isGameSessionComplete
+    ? (currentQuests.gamesToday || 0) + 1
+    : currentQuests.gamesToday || 0;
+
   const updated: UserProgress = {
     ...progress,
     todayXp: baseTodayXp + bonusXp,
     xp: progress.xp + bonusXp,
     ...streakInfo,
-    gamesPlayed: isGame ? (progress.gamesPlayed || 0) + 1 : progress.gamesPlayed || 0,
+    gamesPlayed: isGameSessionComplete ? (progress.gamesPlayed || 0) + 1 : progress.gamesPlayed || 0,
     gameStats: { ...(progress.gameStats || createDefaultGameStats()) },
     dailyQuests: {
       ...currentQuests,
-      gameDone: currentQuests.gameDone || isGame,
-      memoryOrCardsDone: currentQuests.memoryOrCardsDone || !isGame || bonusXp >= 20,
-      gamesToday: isGame ? (currentQuests.gamesToday || 0) + 1 : currentQuests.gamesToday || 0,
+      gameDone: currentQuests.gameDone || nextGamesToday >= 2,
+      memoryOrCardsDone: currentQuests.memoryOrCardsDone || !isGameSessionComplete || bonusXp >= 20,
+      gamesToday: nextGamesToday,
       xpToday: baseTodayXp + bonusXp,
     },
   };

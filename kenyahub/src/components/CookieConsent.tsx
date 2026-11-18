@@ -16,13 +16,43 @@ interface CookiePreferences {
   advertising: boolean;
 }
 
-function updateConsent(preferences: CookiePreferences) {
+function expireCookieNames(names: string[]) {
+  if (typeof document === "undefined" || typeof window === "undefined") return;
+  const host = window.location.hostname;
+  const domains = ["", `; domain=${host}`, `; domain=.${host}`, "; domain=.kenyahub.me"];
+  for (const name of names) {
+    for (const domainAttr of domains) {
+      document.cookie = `${name}=; Path=/; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT${domainAttr}; SameSite=Lax`;
+    }
+  }
+  // Also expire any dynamic _ga_* measurement cookies if analytics cookies are being cleared
+  if (names.includes("_ga") && document.cookie) {
+    const allCookies = document.cookie.split(";");
+    for (const rawCookie of allCookies) {
+      const cookieName = rawCookie.split("=")[0]?.trim();
+      if (cookieName && (cookieName.startsWith("_ga_") || cookieName.startsWith("_gat_"))) {
+        for (const domainAttr of domains) {
+          document.cookie = `${cookieName}=; Path=/; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT${domainAttr}; SameSite=Lax`;
+        }
+      }
+    }
+  }
+}
+
+export function applyGoogleConsent(prefs: CookiePreferences) {
   window.gtag?.("consent", "update", {
-    ad_storage: preferences.advertising ? "granted" : "denied",
-    ad_user_data: preferences.advertising ? "granted" : "denied",
-    ad_personalization: preferences.advertising ? "granted" : "denied",
-    analytics_storage: preferences.analytics ? "granted" : "denied",
+    ad_storage: prefs.advertising ? "granted" : "denied",
+    ad_user_data: prefs.advertising ? "granted" : "denied",
+    ad_personalization: prefs.advertising ? "granted" : "denied",
+    analytics_storage: prefs.analytics ? "granted" : "denied",
   });
+
+  if (!prefs.analytics) {
+    expireCookieNames(["_ga", "_gid", "_gat"]);
+  }
+  if (!prefs.advertising) {
+    expireCookieNames(["__gads", "__gpi"]);
+  }
 }
 
 export default function CookieConsent() {
@@ -55,17 +85,17 @@ export default function CookieConsent() {
           advertising: parsed.advertising === true,
         };
         setPreferences(next);
-        updateConsent(next);
+        applyGoogleConsent(next);
       } catch {
-        updateConsent({ analytics: false, advertising: false });
+        applyGoogleConsent({ analytics: false, advertising: false });
       }
     } else if (stored === "accepted") {
       const next = { analytics: true, advertising: true };
       setPreferences(next);
-      updateConsent(next);
+      applyGoogleConsent(next);
     } else if (stored === "declined" || stored === "essential") {
       setPreferences({ analytics: false, advertising: false });
-      updateConsent({ analytics: false, advertising: false });
+      applyGoogleConsent({ analytics: false, advertising: false });
     } else if (!hasTcfCmp) {
       setVisible(true);
     }
@@ -94,7 +124,7 @@ export default function CookieConsent() {
     setPreferences(next);
     localStorage.setItem("kh-cookie-preferences", JSON.stringify(next));
     localStorage.setItem("kh-cookie-consent", legacyStatus);
-    updateConsent(next);
+    applyGoogleConsent(next);
     window.dispatchEvent(new Event("kh-cookie-consent-updated"));
     setVisible(false);
   };
@@ -106,11 +136,11 @@ export default function CookieConsent() {
       data-adsense-ignore="true"
       className="fixed bottom-3 inset-x-3 sm:inset-x-auto sm:right-5 sm:bottom-5 z-[100] sm:max-w-md animate-fade-in-up"
       role="dialog"
-      aria-label="Cookie consent"
+      aria-label={showSettings ? "Cookie preferences" : "Cookie consent"}
     >
       <div className="bg-bg-card/95 backdrop-blur-xl border border-border rounded-2xl shadow-2xl shadow-black/40 p-3.5 sm:p-4">
         {showSettings ? (
-          <>
+          <div role="dialog" aria-label="Cookie preferences">
             <div className="flex items-start gap-2.5 mb-3">
               <Settings2 className="w-4 h-4 text-gold shrink-0 mt-0.5" />
               <div>
@@ -183,7 +213,7 @@ export default function CookieConsent() {
                 Save Preferences
               </button>
             </div>
-          </>
+          </div>
         ) : (
           <div className="space-y-2.5">
             <div className="flex items-start gap-2.5">

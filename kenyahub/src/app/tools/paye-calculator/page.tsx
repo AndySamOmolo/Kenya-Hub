@@ -180,18 +180,24 @@ export default function PAYECalculatorPage() {
   const [copiedSummary, setCopiedSummary] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
 
-  // Hydrate initial salary from ?gross= or ?net= query parameters
+  // Hydrate initial salary from URL hash (#gross=...) or legacy query parameters (?gross=...)
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const params = new URLSearchParams(window.location.search);
+    const rawParams = (window.location.hash || window.location.search).replace(/^[#?]/, "");
+    const params = new URLSearchParams(rawParams);
     const grossParam = Number(params.get("gross"));
     const netParam = Number(params.get("net"));
+    const pensionParam = Number(params.get("pension"));
     if (Number.isFinite(grossParam) && grossParam > 0) {
       setCalcMode("grossToNet");
       setGrossInput(grossParam);
     } else if (Number.isFinite(netParam) && netParam > 0) {
       setCalcMode("netToGross");
       setTargetNetInput(netParam);
+    }
+    if (Number.isFinite(pensionParam) && pensionParam > 0) {
+      setPensionContribution(pensionParam);
+      setShowAdvanced(true);
     }
   }, []);
 
@@ -231,6 +237,19 @@ export default function PAYECalculatorPage() {
     })}`;
   };
 
+  const buildShareHash = () => {
+    const hashParams = new URLSearchParams();
+    if (calcMode === "netToGross") {
+      hashParams.set("net", String(targetNetInput));
+    } else {
+      hashParams.set("gross", String(results.gross));
+    }
+    if (pensionContribution > 0) {
+      hashParams.set("pension", String(pensionContribution));
+    }
+    return `#${hashParams.toString()}`;
+  };
+
   const handleCopySummary = async () => {
     const periodLabel = showAnnual ? "Annual" : "Monthly";
     const summaryText = [
@@ -243,7 +262,7 @@ export default function PAYECalculatorPage() {
       `Taxable Pay: ${fmt(results.taxableIncome)}`,
       `Net PAYE Tax: -${fmt(results.paye)} (${results.effectiveTaxRate}% effective)`,
       `Net Take-Home Pay: ${fmt(results.netPay)}`,
-      `https://kenyahub.me/tools/paye-calculator/?gross=${results.gross}`,
+      `https://kenyahub.me/tools/paye-calculator/${buildShareHash()}`,
     ].join("\n");
     try {
       await navigator.clipboard.writeText(summaryText);
@@ -255,9 +274,7 @@ export default function PAYECalculatorPage() {
   };
 
   const handleShareUrl = async () => {
-    const shareUrl = `${window.location.origin}/tools/paye-calculator/?${
-      calcMode === "netToGross" ? `net=${targetNetInput}` : `gross=${results.gross}`
-    }`;
+    const shareUrl = `${window.location.origin}/tools/paye-calculator/${buildShareHash()}`;
     try {
       await navigator.clipboard.writeText(shareUrl);
       setCopiedLink(true);
@@ -288,6 +305,8 @@ export default function PAYECalculatorPage() {
               return (
                 <button
                   key={m.id}
+                  type="button"
+                  aria-pressed={active}
                   onClick={() => setCalcMode(m.id)}
                   className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
                     active
@@ -303,7 +322,7 @@ export default function PAYECalculatorPage() {
 
           {calcMode === "grossToNet" ? (
             <div>
-              <label className="block text-sm font-medium text-text-secondary mb-2">
+              <label htmlFor="gross-salary-input" className="block text-sm font-medium text-text-secondary mb-2">
                 Monthly Gross Salary (KES)
               </label>
               <div className="relative">
@@ -335,6 +354,7 @@ export default function PAYECalculatorPage() {
               </div>
               <input
                 type="range"
+                aria-label="Monthly Gross Salary Slider"
                 min={0}
                 max={500000}
                 step={5000}
@@ -348,6 +368,7 @@ export default function PAYECalculatorPage() {
                   <button
                     key={amt}
                     type="button"
+                    aria-pressed={grossInput === amt}
                     onClick={() => setGrossInput(amt)}
                     className={`px-2.5 py-1 rounded-lg text-xs font-semibold border transition-colors cursor-pointer ${
                       grossInput === amt
@@ -362,11 +383,12 @@ export default function PAYECalculatorPage() {
             </div>
           ) : (
             <div>
-              <label className="block text-sm font-medium text-text-secondary mb-2">
+              <label htmlFor="target-net-input" className="block text-sm font-medium text-text-secondary mb-2">
                 Desired Monthly Net Take-Home Pay in Bank (KES)
               </label>
               <div className="relative">
                 <input
+                  id="target-net-input"
                   type="number"
                   inputMode="numeric"
                   value={targetNetInput === 0 ? "" : targetNetInput}
@@ -401,6 +423,8 @@ export default function PAYECalculatorPage() {
           {/* Optional Reliefs & Allowable Deductions Drawer */}
           <div className="pt-2 border-t border-border">
             <button
+              type="button"
+              aria-expanded={showAdvanced}
               onClick={() => setShowAdvanced(!showAdvanced)}
               className="text-xs font-semibold text-gold hover:underline"
             >
@@ -412,11 +436,12 @@ export default function PAYECalculatorPage() {
             {showAdvanced && (
               <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div>
-                  <label className="block text-xs text-text-secondary mb-1">
+                  <label htmlFor="pension-contribution-input" className="block text-xs text-text-secondary mb-1">
                     Voluntary Pension (KES/mo, max 30k tax-free)
                   </label>
                   <div className="relative">
                     <input
+                      id="pension-contribution-input"
                       type="number"
                       inputMode="numeric"
                       value={pensionContribution === 0 ? "" : pensionContribution}
@@ -441,11 +466,12 @@ export default function PAYECalculatorPage() {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-xs text-text-secondary mb-1">
+                  <label htmlFor="mortgage-interest-input" className="block text-xs text-text-secondary mb-1">
                     Mortgage Interest (KES/mo, max 30k deductible)
                   </label>
                   <div className="relative">
                     <input
+                      id="mortgage-interest-input"
                       type="number"
                       inputMode="numeric"
                       value={mortgageInterest === 0 ? "" : mortgageInterest}
@@ -470,11 +496,12 @@ export default function PAYECalculatorPage() {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-xs text-text-secondary mb-1">
+                  <label htmlFor="insurance-premium-input" className="block text-xs text-text-secondary mb-1">
                     Life/Education Insurance Premium (15% relief)
                   </label>
                   <div className="relative">
                     <input
+                      id="insurance-premium-input"
                       type="number"
                       inputMode="numeric"
                       value={insurancePremium === 0 ? "" : insurancePremium}
@@ -518,6 +545,8 @@ export default function PAYECalculatorPage() {
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2.5">
             <button
+              type="button"
+              aria-pressed={!showAnnual}
               onClick={() => setShowAnnual(false)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 !showAnnual
@@ -528,6 +557,8 @@ export default function PAYECalculatorPage() {
               Monthly
             </button>
             <button
+              type="button"
+              aria-pressed={showAnnual}
               onClick={() => setShowAnnual(true)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 showAnnual

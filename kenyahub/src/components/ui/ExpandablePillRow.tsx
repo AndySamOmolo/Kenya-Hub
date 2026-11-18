@@ -36,7 +36,7 @@ function enhanceCollapsedChildren(children: React.ReactNode): React.ReactNode {
         style?: React.CSSProperties;
       }>,
       {
-        className: `${rawClass} pill-interactive-item`.trim(),
+        className: `${rawClass} pill-interactive-item min-h-6`.trim(),
       }
     );
   });
@@ -70,7 +70,7 @@ function prepareExpandedChildren(
         style?: React.CSSProperties;
       }>,
       {
-        className: `${cleanedClass} pill-interactive-item pill-expanded-stagger max-w-full min-w-0 break-words text-center inline-flex items-center justify-center`.trim(),
+        className: `${cleanedClass} pill-interactive-item pill-expanded-stagger min-h-6 max-w-full min-w-0 break-words text-center inline-flex items-center justify-center`.trim(),
         style: {
           ...(props.style || {}),
           whiteSpace: "normal",
@@ -496,7 +496,7 @@ export default function ExpandablePillRow({
           onClick={() => scrollByStep("left")}
           aria-label="Scroll pills left"
           title="Scroll left"
-          className="hidden sm:inline-flex w-7 h-7 rounded-full border border-border bg-bg-elevated/90 text-gold hover:border-gold hover:bg-gold/15 active:scale-90 items-center justify-center shrink-0 transition-all cursor-pointer shadow-xs"
+          className="hidden sm:inline-flex w-7 h-7 min-w-6 min-h-6 rounded-full border border-border bg-bg-elevated/90 text-gold hover:border-gold hover:bg-gold/15 active:scale-90 items-center justify-center shrink-0 transition-all cursor-pointer shadow-xs"
         >
           <ChevronLeft className="w-3.5 h-3.5" />
         </button>
@@ -593,7 +593,7 @@ export default function ExpandablePillRow({
           onClick={() => scrollByStep("right")}
           aria-label="Scroll pills right"
           title="Scroll right"
-          className="hidden sm:inline-flex w-7 h-7 rounded-full border border-border bg-bg-elevated/90 text-gold hover:border-gold hover:bg-gold/15 active:scale-90 items-center justify-center shrink-0 transition-all cursor-pointer shadow-xs"
+          className="hidden sm:inline-flex w-7 h-7 min-w-6 min-h-6 rounded-full border border-border bg-bg-elevated/90 text-gold hover:border-gold hover:bg-gold/15 active:scale-90 items-center justify-center shrink-0 transition-all cursor-pointer shadow-xs"
         >
           <ChevronRight className="w-3.5 h-3.5" />
         </button>
@@ -618,7 +618,7 @@ export default function ExpandablePillRow({
           alignSelf: expanded ? "flex-start" : "center",
           marginTop: expanded ? "4px" : "0px",
         }}
-        className={`border transition-all duration-200 active:scale-90 cursor-pointer shadow-xs ${
+        className={`w-8 h-8 min-w-6 min-h-6 border transition-all duration-200 active:scale-90 cursor-pointer shadow-xs ${
           expanded
             ? "border-gold bg-gold/20 text-gold shadow-[0_0_10px_rgba(200,150,30,0.2)]"
             : "border-border bg-bg-elevated text-gold hover:border-gold hover:bg-gold/10 hover:scale-105"

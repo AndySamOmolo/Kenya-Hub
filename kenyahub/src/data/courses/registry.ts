@@ -77,6 +77,9 @@ export interface CourseDefinition {
   validationIssues: CourseValidationIssue[];
   sourceIds: string[];
   grammarSections?: GrammarSection[];
+  unitCount?: number;
+  skillCount?: number;
+  wordCount?: number;
 }
 
 function buildCourseEntry(
@@ -84,14 +87,27 @@ function buildCourseEntry(
   units: CourseUnit[],
   grammarSections?: unknown
 ): CourseDefinition {
-  const validationIssues = validateCourse(units);
+  const isProdBrowser =
+    typeof window !== "undefined" && process.env.NODE_ENV === "production";
+  const unitCount = units.length;
+  const skillCount = units.reduce((sum, u) => sum + u.skills.length, 0);
+  const wordCount = units.reduce(
+    (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
+    0
+  );
+  const validationIssues = isProdBrowser ? [] : validateCourse(units);
   return {
     config,
     units,
-    ready: validationIssues.length === 0,
+    ready: isProdBrowser
+      ? unitCount > 0 && skillCount > 0 && wordCount > 0
+      : validationIssues.length === 0,
     validationIssues,
     sourceIds: getSourcesForLanguage(config.id).map((source) => source.id),
     grammarSections: grammarSections as GrammarSection[] | undefined,
+    unitCount,
+    skillCount,
+    wordCount,
   };
 }
 

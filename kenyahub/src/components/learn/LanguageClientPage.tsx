@@ -17,6 +17,7 @@ import {
   Shield,
 } from "lucide-react";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
+import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
 import { playLanguageAudio } from "@/lib/language-audio";
 import SkillTree from "@/components/learn/SkillTree";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -83,6 +84,12 @@ const MODULES_PAGE_SIZE = 8;
 
 type PageView = "lessons" | "flashcards" | "modules" | "games" | "playing" | "grammar" | "proverbs";
 
+function resetLanguageProgress(languageId: string): UserProgress {
+  const fresh = createDefaultProgress(languageId);
+  saveProgress(fresh);
+  return fresh;
+}
+
 function formatLanguageHeader(name: string, nativeName: string): string {
   const cleanName = name.trim();
   const cleanNative = (nativeName || "").trim();
@@ -133,6 +140,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     level: number;
     reviewItems: ReturnType<typeof getDueReviews>;
     reviewOnly: boolean;
+    nextDictCursor?: number;
   } | null>(null);
   const [showCompletionToast, setShowCompletionToast] = useState<string | null>(
     null
@@ -260,13 +268,17 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   const flashcardDeck = useMemo(() => {
     if (flashcardSkillId === "all") {
-      return allSkillsFlat.flatMap((s) =>
-        s.skill.words.map((w) => ({ ...w, skillTitle: s.skill.title }))
-      );
+      return allSkillsFlat
+        .flatMap((s) =>
+          s.skill.words.map((w) => ({ ...w, skillTitle: s.skill.title }))
+        )
+        .slice(0, 300);
     }
     const found = allSkillsFlat.find((s) => s.skill.id === flashcardSkillId);
     if (!found) return [];
-    return found.skill.words.map((w) => ({ ...w, skillTitle: found.skill.title }));
+    return found.skill.words
+      .slice(0, 300)
+      .map((w) => ({ ...w, skillTitle: found.skill.title }));
   }, [allSkillsFlat, flashcardSkillId]);
 
   const currentFlashcard =
@@ -339,6 +351,14 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     [filteredModules, modulesPage]
   );
 
+  const advanceDictCursor = useCallback(
+    (prog: UserProgress, skillId: string, nextCursor: number): UserProgress => ({
+      ...prog,
+      dictCursors: { ...(prog.dictCursors || {}), [skillId]: nextCursor },
+    }),
+    []
+  );
+
   const handleStartLesson = useCallback(
     (skillId: string, level: number) => {
       if (!course) return;
@@ -346,6 +366,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       if (!found) return;
       const due = getDueReviews(progress);
       let lessonSkill = found.skill;
+      let nextDictCursor: number | undefined;
       if (lessonSkill.words.length > 14) {
         const batchSize = 12;
         const maxStart = Math.max(0, lessonSkill.words.length - batchSize);
@@ -354,13 +375,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           savedCursor !== undefined
             ? Math.min(maxStart, savedCursor)
             : ((level - 1) * batchSize) % Math.max(1, maxStart + 1);
-        const nextCursor = offset + batchSize <= maxStart ? offset + batchSize : 0;
-        const nextProg: UserProgress = {
-          ...progress,
-          dictCursors: { ...(progress.dictCursors || {}), [skillId]: nextCursor },
-        };
-        saveProgress(nextProg);
-        setProgress(nextProg);
+        nextDictCursor = offset + batchSize <= maxStart ? offset + batchSize : 0;
         lessonSkill = {
           ...lessonSkill,
           words: lessonSkill.words.slice(offset, offset + batchSize),
@@ -371,6 +386,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         level,
         reviewItems: due.slice(0, 3),
         reviewOnly: false,
+        nextDictCursor,
       });
       setView("playing");
     },
@@ -403,15 +419,34 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     });
   }, []);
 
+  const handleResetProgress = useCallback(() => {
+    if (!course) return;
+    if (
+      typeof window !== "undefined" &&
+      window.confirm(
+        `Reset all your ${course.config.name} course progress, XP, and skill levels? This cannot be undone.`
+      )
+    ) {
+      const fresh = resetLanguageProgress(course.config.id);
+      setProgress(fresh);
+      setShowCompletionToast(`${course.config.name} progress has been reset.`);
+      setTimeout(() => setShowCompletionToast(null), 3000);
+    }
+  }, [course]);
+
   const handleLessonComplete = useCallback(
     (result: LessonResult) => {
       const prevAchievements = [...progress.achievements];
-      const updated = applyLessonResult(progress, result);
+      const baseProg =
+        activeLesson?.nextDictCursor !== undefined && !result.reviewOnly
+          ? advanceDictCursor(progress, result.skillId, activeLesson.nextDictCursor)
+          : progress;
+      const updated = applyLessonResult(baseProg, result);
       saveProgress(updated);
       setProgress(updated);
       checkAndNotifyNewAchievements(prevAchievements, updated.achievements);
     },
-    [progress, checkAndNotifyNewAchievements]
+    [progress, activeLesson, advanceDictCursor, checkAndNotifyNewAchievements]
   );
 
   const handleQuitLesson = useCallback(() => {
@@ -562,6 +597,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       hideFooter={view === "playing"}
       hideSource
     >
+      <ToolAccessTracker tool={courseTool} {...({ slug: "learn" } as Record<string, string>)} />
       {/* Top Bar: Compact Language Dropdown on Left + XP, Hearts, Shield & Streak on Right */}
       {view !== "playing" && (
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
@@ -610,6 +646,17 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 <Flame className="h-3.5 w-3.5" />
                 {progress.streak}d
               </span>
+            )}
+            {(progress.xp > 0 || progress.lessonsCompleted > 0) && (
+              <button
+                type="button"
+                onClick={handleResetProgress}
+                className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-card hover:border-red-400/50 hover:text-red-400 px-2.5 py-1.5 text-text-muted transition-colors cursor-pointer"
+                title={`Reset ${course.config.name} progress`}
+              >
+                <RotateCcw className="h-3.5 w-3.5" />
+                <span>Reset Progress</span>
+              </button>
             )}
           </div>
         </div>
@@ -1004,8 +1051,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             languageId={course.config.id}
             progress={progress}
             onUpdateProgress={handleUpdateProgress}
-            onAwardXp={(xp) => {
-              handleUpdateProgress((prev) => awardActivityXp(prev, xp, true));
+            onAwardXp={(xp, sessionComplete = true) => {
+              handleUpdateProgress((prev) => awardActivityXp(prev, xp, sessionComplete));
             }}
             onBack={() => setView("lessons")}
           />

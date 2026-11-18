@@ -85,6 +85,8 @@ export default function SaccoChamaCalculatorPage() {
                 return (
                   <button
                     key={s.id}
+                    type="button"
+                    aria-pressed={active}
                     onClick={() => setSelectedSaccoId(s.id)}
                     className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-medium border transition-all cursor-pointer ${
                       active
@@ -162,7 +164,7 @@ export default function SaccoChamaCalculatorPage() {
                   inputMode="numeric"
                   value={monthlyDeposit}
                   placeholder="0"
-                  onChange={(e) => setMonthlyDeposit(e.target.value.replace(/[^0-9]/g, ""))}
+                  onChange={(e) => setMonthlyDeposit(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
                   className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
                   style={{ paddingRight: "2.5rem" }}
                 />

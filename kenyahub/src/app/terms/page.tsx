@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Usage Terms, Disclaimers & Governing Law",
+  title: "Terms of Service — Usage Terms & Disclaimers",
   description:
     "KenyaHub Terms of Service — terms of use, statutory and financial disclaimers, non-affiliation notice, intellectual property, and governing law.",
   alternates: {
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     languages: {
       "en-KE": "https://kenyahub.me/terms/",
       en: "https://kenyahub.me/terms/",
-        "x-default": "https://kenyahub.me/terms/",
-      },
+      "x-default": "https://kenyahub.me/terms/",
+    },
   },
   openGraph: {
     title: "Terms of Service | KenyaHub",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: "en_KE",
     siteName: "KenyaHub",
     url: "https://kenyahub.me/terms/",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "KenyaHub Terms of Service" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "KenyaHub" }],
   },
   twitter: {
     card: "summary_large_image",

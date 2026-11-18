@@ -1,5 +1,12 @@
 import { StyleSheet } from "react-native";
-import type { ThemeColors } from "../../theme";
+import { fonts as themeFonts, type ThemeColors } from "../../theme";
+
+const fonts = {
+  ...themeFonts,
+  displayBold: (themeFonts as any).displayBold ?? themeFonts.headingExtraBold,
+  sansMedium: (themeFonts as any).sansMedium ?? themeFonts.bodyMedium,
+  monoMedium: (themeFonts as any).monoMedium ?? "monospace",
+};
 
 export function createStyles(colors: ThemeColors) {
   return StyleSheet.create({
@@ -11,7 +18,7 @@ export function createStyles(colors: ThemeColors) {
     },
     inputLabel: {
       fontSize: 12,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.displayBold,
       fontWeight: "700",
       color: colors.textSecondary,
       marginBottom: 6,
@@ -22,7 +29,7 @@ export function createStyles(colors: ThemeColors) {
       borderColor: colors.border,
       borderRadius: 12,
       fontSize: 16,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.displayBold,
       fontWeight: "700",
       color: colors.textPrimary,
       paddingHorizontal: 14,
@@ -38,7 +45,7 @@ export function createStyles(colors: ThemeColors) {
     },
     statLabel: {
       fontSize: 11,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "800",
       letterSpacing: 1,
       color: colors.gold,
@@ -46,12 +53,13 @@ export function createStyles(colors: ThemeColors) {
     },
     statValue: {
       fontSize: 24,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "900",
       color: colors.textPrimary,
     },
     statSubtext: {
       fontSize: 11,
+      fontFamily: fonts.sansMedium,
       color: colors.textMuted,
       marginTop: 4,
       textAlign: "center",
@@ -64,7 +72,7 @@ export function createStyles(colors: ThemeColors) {
     },
     qualificationText: {
       fontSize: 11,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.displayBold,
       fontWeight: "700",
     },
     card: {
@@ -83,13 +91,14 @@ export function createStyles(colors: ThemeColors) {
     },
     rowLabel: {
       fontSize: 12,
+      fontFamily: fonts.sansMedium,
       color: colors.textSecondary,
       flexShrink: 0,
       maxWidth: "46%",
     },
     rowValue: {
       fontSize: 13,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.monoMedium,
       fontWeight: "700",
       color: colors.textPrimary,
       flex: 1,
@@ -97,7 +106,7 @@ export function createStyles(colors: ThemeColors) {
     },
     subHeading: {
       fontSize: 13,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "800",
       color: colors.gold,
       letterSpacing: 0.5,
@@ -110,7 +119,7 @@ export function createStyles(colors: ThemeColors) {
     },
     subjectLabel: {
       fontSize: 12,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.displayBold,
       fontWeight: "700",
       color: colors.textPrimary,
     },
@@ -128,7 +137,7 @@ export function createStyles(colors: ThemeColors) {
     },
     gradeChipText: {
       fontSize: 11,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "800",
       color: colors.textSecondary,
     },
@@ -150,7 +159,7 @@ export function createStyles(colors: ThemeColors) {
     },
     featuredLabel: {
       fontSize: 10,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "800",
       color: colors.gold,
       letterSpacing: 0.8,
@@ -166,25 +175,27 @@ export function createStyles(colors: ThemeColors) {
     },
     randomBtnText: {
       fontSize: 11,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.displayBold,
       fontWeight: "700",
       color: colors.gold,
     },
     kikuyuText: {
       fontSize: 16,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "800",
       color: colors.textPrimary,
       lineHeight: 22,
     },
     translationText: {
       fontSize: 13,
+      fontFamily: fonts.sansMedium,
       color: colors.gold,
       marginTop: 6,
       lineHeight: 18,
     },
     explanationText: {
       fontSize: 12,
+      fontFamily: fonts.sansMedium,
       color: colors.textMuted,
       marginTop: 6,
       lineHeight: 16,
@@ -206,6 +217,7 @@ export function createStyles(colors: ThemeColors) {
       marginRight: 6,
       color: colors.textPrimary,
       fontSize: 13,
+      fontFamily: fonts.sansMedium,
       paddingVertical: 0,
       paddingHorizontal: 0,
       textAlignVertical: "center",
@@ -221,16 +233,18 @@ export function createStyles(colors: ThemeColors) {
     },
     cardKikuyu: {
       fontSize: 14,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.displayBold,
       fontWeight: "700",
       color: colors.textPrimary,
     },
     cardTranslation: {
       fontSize: 12,
+      fontFamily: fonts.sansMedium,
       color: colors.gold,
     },
     cardExplanation: {
       fontSize: 11,
+      fontFamily: fonts.sansMedium,
       color: colors.textMuted,
       lineHeight: 15,
     },
@@ -254,7 +268,7 @@ export function createStyles(colors: ThemeColors) {
     },
     pillBtnText: {
       fontSize: 11,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.displayBold,
       fontWeight: "700",
       color: colors.textSecondary,
     },
@@ -280,18 +294,19 @@ export function createStyles(colors: ThemeColors) {
     },
     rankNum: {
       fontSize: 12,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "900",
       color: colors.gold,
     },
     schoolName: {
       fontSize: 14,
-      fontFamily: "Outfit_700Bold",
+      fontFamily: fonts.displayBold,
       fontWeight: "700",
       color: colors.textPrimary,
     },
     schoolMeta: {
       fontSize: 11,
+      fontFamily: fonts.sansMedium,
       color: colors.textMuted,
       marginTop: 1,
     },
@@ -300,12 +315,13 @@ export function createStyles(colors: ThemeColors) {
     },
     meanScore: {
       fontSize: 16,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.monoMedium,
       fontWeight: "900",
       color: colors.gold,
     },
     meanLabel: {
       fontSize: 10,
+      fontFamily: fonts.sansMedium,
       color: colors.textMuted,
     },
     termCard: {
@@ -325,7 +341,7 @@ export function createStyles(colors: ThemeColors) {
     },
     termName: {
       fontSize: 16,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "800",
       color: colors.textPrimary,
       flexShrink: 1,
@@ -338,7 +354,7 @@ export function createStyles(colors: ThemeColors) {
     },
     weeksText: {
       fontSize: 11,
-      fontFamily: "Outfit_800ExtraBold",
+      fontFamily: fonts.displayBold,
       fontWeight: "800",
       color: colors.sky,
     },
@@ -346,15 +362,17 @@ export function createStyles(colors: ThemeColors) {
     termDates: {
       fontSize: 13,
       color: colors.gold,
-      fontFamily: "Inter_600SemiBold",
+      fontFamily: fonts.sansMedium,
       fontWeight: "600",
     },
     midTermText: {
       fontSize: 11,
+      fontFamily: fonts.sansMedium,
       color: colors.textSecondary,
     },
     termNotes: {
       fontSize: 11,
+      fontFamily: fonts.sansMedium,
       color: colors.textMuted,
     },
   });

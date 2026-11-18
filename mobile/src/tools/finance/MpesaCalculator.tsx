@@ -1,6 +1,6 @@
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
-import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
+import { Text, View, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles } from "../../theme";
 import { KESInput, StatCard, Row, createStyles } from "./shared";
@@ -24,19 +24,32 @@ function calcMpesaFee(amount: number, type: MpesaTxType): number | null {
 }
 
 function findMpesaSavingTip(amount: number, type: MpesaTxType): string | null {
+  if (amount <= 100 || amount > 500000) return null;
+  const singleFee = calcMpesaFee(amount, type);
+  if (singleFee === 0) return null;
+
+  let bestTotalFee = singleFee ?? Infinity;
+  let bestSplitDesc: string | null = null;
+
   const bands = (mpesaData.transactionTypes as any)[type]?.bands || [];
-  for (let i = 0; i < bands.length - 1; i++) {
-    const currentBand = bands[i];
-    const nextBand = bands[i + 1];
-    if (amount >= nextBand.min && amount <= nextBand.min + 100) {
-      if (currentBand.fee < nextBand.fee) {
-        return `Sending KES ${currentBand.max.toLocaleString()} instead of KES ${amount.toLocaleString()} would save you KES ${(
-          nextBand.fee - currentBand.fee
-        ).toLocaleString()} in fees (same band boundary).`;
+  for (const b of bands) {
+    if (b.max >= amount) break;
+    const part1 = b.max;
+    const part2 = amount - part1;
+    if (part1 > 250000 || part2 > 250000) continue;
+    const fee1 = calcMpesaFee(part1, type);
+    const fee2 = calcMpesaFee(part2, type);
+    if (fee1 !== null && fee2 !== null && fee1 + fee2 < bestTotalFee) {
+      bestTotalFee = fee1 + fee2;
+      if (singleFee !== null) {
+        const saved = singleFee - bestTotalFee;
+        bestSplitDesc = `Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee — saving you KES ${saved.toLocaleString()}!`;
+      } else {
+        bestSplitDesc = `Exceeds KES 250,000 single-tx limit: Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee (within KES 500,000 daily limit).`;
       }
     }
   }
-  return null;
+  return bestSplitDesc;
 }
 
 export function MpesaCalculator() {
@@ -52,22 +65,45 @@ export function MpesaCalculator() {
   >;
 
   const results = useMemo(() => {
-    const baseFee = calcMpesaFee(amount, tab);
-    const withdrawFee = includeWithdrawal ? calcMpesaFee(amount, "withdrawAgent") : 0;
-    const fee =
-      baseFee === null
-        ? null
-        : baseFee + (withdrawFee !== null ? withdrawFee : 0);
-    const savingTip = findMpesaSavingTip(amount, tab);
-    const totalCost = fee !== null ? amount + fee : null;
+    const withdrawalFeeForTarget = calcMpesaFee(amount, "withdrawAgent") ?? 0;
+    const amountToSend = includeWithdrawal
+      ? amount + withdrawalFeeForTarget
+      : amount;
+
+    // Check if adding withdrawal fee pushed recipient into next withdrawal band!
+    const actualAgentWithdrawFee =
+      calcMpesaFee(Math.min(250000, amountToSend), "withdrawAgent") ??
+      withdrawalFeeForTarget;
+    const adjustedAmountToSend =
+      includeWithdrawal && actualAgentWithdrawFee > withdrawalFeeForTarget
+        ? amount + actualAgentWithdrawFee
+        : amountToSend;
+
+    const withdrawFee = includeWithdrawal ? actualAgentWithdrawFee : 0;
+    const effectiveSendAmount =
+      includeWithdrawal && amount <= 250000
+        ? Math.min(250000, adjustedAmountToSend)
+        : adjustedAmountToSend;
+    const sendFee = calcMpesaFee(effectiveSendAmount, tab);
+    const fee = sendFee === null ? null : sendFee + withdrawFee;
+    const savingTip = findMpesaSavingTip(effectiveSendAmount, tab);
+    const totalCost = sendFee !== null ? adjustedAmountToSend + sendFee : null;
     const allFees = (Object.entries(txTypes) as [MpesaTxType, any][]).map(
       ([key, val]) => ({
         key,
         label: val.label,
-        fee: calcMpesaFee(amount, key),
+        fee: calcMpesaFee(effectiveSendAmount, key),
       })
     );
-    return { fee, savingTip, totalCost, allFees };
+    return {
+      sendFee,
+      fee,
+      withdrawFee,
+      adjustedAmountToSend,
+      savingTip,
+      totalCost,
+      allFees,
+    };
   }, [amount, tab, txTypes, includeWithdrawal]);
 
   return (
@@ -85,6 +121,7 @@ export function MpesaCalculator() {
         {(Object.entries(txTypes) as [MpesaTxType, any][]).map(([id, info]) => (
           <Pressable
             key={id}
+            accessibilityState={{ selected: tab === id }}
             onPress={() => setTab(id)}
             style={[styles.pillBtn, tab === id && styles.pillBtnActive]}
           >
@@ -129,7 +166,9 @@ export function MpesaCalculator() {
         highlight
         subtext={
           results.totalCost !== null
-            ? `Amount: KES ${amount.toLocaleString()} · Total Cost: KES ${results.totalCost.toLocaleString()}`
+            ? includeWithdrawal
+              ? `Send: KES ${results.adjustedAmountToSend.toLocaleString()} · Total Cost: KES ${results.totalCost.toLocaleString()}`
+              : `Amount: KES ${amount.toLocaleString()} · Total Cost: KES ${results.totalCost.toLocaleString()}`
             : `Check minimum/maximum band limits below`
         }
       />
@@ -144,7 +183,7 @@ export function MpesaCalculator() {
 
       {/* Fee Comparison Across All 6 Transaction Types */}
       <Text style={styles.subHeading}>
-        Fee Comparison for KES {amount.toLocaleString()}
+        Fee Comparison for KES {results.adjustedAmountToSend.toLocaleString()}
       </Text>
       <View style={styles.card}>
         {results.allFees.map((item) => (
@@ -213,4 +252,3 @@ export function MpesaCalculator() {
     </View>
   );
 }
-

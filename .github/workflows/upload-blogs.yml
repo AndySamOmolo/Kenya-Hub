@@ -5,15 +5,18 @@ on:
     branches:
       - main
     paths:
-      - 'kenyahub/content/blogs/**'
+      - 'kenyahub/src/data/blog-posts.ts'
       - 'kenyahub/scripts/upload-blogs.ts'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   sync:
-    name: Sync Markdown Blogs
+    name: Sync Static Blogs to Appwrite
     runs-on: ubuntu-latest
-    
+
     defaults:
       run:
         working-directory: ./kenyahub
@@ -30,7 +33,7 @@ jobs:
           cache-dependency-path: './kenyahub/package-lock.json'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --prefer-offline --no-audit --no-fund
 
       - name: Run Upload Script
         env:

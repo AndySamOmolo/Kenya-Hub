@@ -139,7 +139,7 @@ const KENYAN_COGNATE_BANK: CognateRow[] = [
   },
 ];
 
-export function PolyglotBridgeGame({ onAwardXp }: GameProps) {
+export function PolyglotBridgeGame({ onAwardXp, onUpdateGameStats }: GameProps) {
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -165,7 +165,7 @@ export function PolyglotBridgeGame({ onAwardXp }: GameProps) {
     if (isRight) {
       playCorrectSfx();
       setScore((s) => s + 25);
-      onAwardXp?.(25);
+      onAwardXp?.(25, false);
     } else {
       playWrongSfx();
     }
@@ -176,6 +176,8 @@ export function PolyglotBridgeGame({ onAwardXp }: GameProps) {
     if (round + 1 >= deck.length) {
       playCelebrationSfx();
       setSessionDone(true);
+      onAwardXp?.(0, true);
+      onUpdateGameStats?.((prev) => ({ ...prev, polyglotBest: Math.max(prev.polyglotBest || 0, score) }));
     } else {
       setRound((r) => r + 1);
     }

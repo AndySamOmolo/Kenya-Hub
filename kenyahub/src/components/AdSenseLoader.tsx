@@ -173,11 +173,13 @@ export default function AdSenseLoader() {
   const pathname = usePathname();
   const lastPausedRef = useRef<boolean | null>(null);
   const tcfDeniedRef = useRef<boolean | null>(null);
+  const scriptLoadedRef = useRef<boolean>(false);
 
   useEffect(() => {
     if (typeof window === "undefined" || typeof document === "undefined") return;
 
     let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+    let mutationObserver: MutationObserver | null = null;
 
     const setAdSensePausedState = (paused: boolean) => {
       window.adsbygoogle = window.adsbygoogle || [];
@@ -242,9 +244,18 @@ export default function AdSenseLoader() {
         script.crossOrigin = "anonymous";
         document.head.appendChild(script);
       }
+
+      scriptLoadedRef.current = true;
+      if (scriptLoadedRef.current && mutationObserver) {
+        mutationObserver.disconnect();
+      }
     };
 
     const scheduleEvaluation = () => {
+      if (scriptLoadedRef.current) {
+        mutationObserver?.disconnect();
+        return;
+      }
       if (debounceTimer) clearTimeout(debounceTimer);
       debounceTimer = setTimeout(evaluatePageCompliance, 250);
     };
@@ -270,27 +281,31 @@ export default function AdSenseLoader() {
 
     evaluatePageCompliance();
 
-    // Re-evaluate if DOM state or async/dynamic child content changes, ignoring AdSense's own DOM mutations
+    // Re-evaluate if DOM state or async/dynamic child content changes before script initialization
     const observeRoot = document.body || document.getElementById("main-content");
-    if (!observeRoot) return;
-
-    const observer = new MutationObserver((mutations) => {
-      if (isAdSenseMutation(mutations)) return;
-      scheduleEvaluation();
-    });
-    observer.observe(observeRoot, {
-      attributes: true,
-      childList: true,
-      subtree: true,
-      attributeFilter: ["data-error-page", "data-adsense-pause", "open"],
-    });
+    if (observeRoot && !scriptLoadedRef.current) {
+      mutationObserver = new MutationObserver((mutations) => {
+        if (scriptLoadedRef.current) {
+          mutationObserver?.disconnect();
+          return;
+        }
+        if (isAdSenseMutation(mutations)) return;
+        scheduleEvaluation();
+      });
+      mutationObserver.observe(observeRoot, {
+        attributes: true,
+        childList: true,
+        subtree: true,
+        attributeFilter: ["data-error-page", "data-adsense-pause", "open"],
+      });
+    }
 
     const handleConsentChange = () => evaluatePageCompliance();
     window.addEventListener("kh-cookie-consent-updated", handleConsentChange);
 
     return () => {
       if (debounceTimer) clearTimeout(debounceTimer);
-      observer.disconnect();
+      mutationObserver?.disconnect();
       window.removeEventListener(
         "kh-cookie-consent-updated",
         handleConsentChange

@@ -299,8 +299,8 @@ export default function ToolDetailScreen() {
     (href: string) => {
       const clean = href.trim();
       if (clean.startsWith("http://") || clean.startsWith("https://")) {
-        if (clean.includes("kenyahub.me/")) {
-          const pathPart = clean.split("kenyahub.me")[1] || "/";
+        if (/^https?:\/\/(www\.)?kenyahub\.me\//i.test(clean)) {
+          const pathPart = clean.replace(/^https?:\/\/(www\.)?kenyahub\.me/i, "") || "/";
           handleBlogLinkNavigation(pathPart);
           return;
         }
@@ -1246,6 +1246,7 @@ export default function ToolDetailScreen() {
       <Modal
         visible={!!selectedPost}
         animationType="slide"
+        accessibilityViewIsModal={true}
         onRequestClose={() => setSelectedPost(null)}
       >
         <SafeAreaView

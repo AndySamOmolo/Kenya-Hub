@@ -22,6 +22,7 @@ export function MatatuShengGame({
   allWords,
   languageName,
   onAwardXp,
+  onUpdateGameStats,
 }: GameProps) {
   const SESSION_ROUNDS = 6;
   const [round, setRound] = useState(0);
@@ -86,7 +87,7 @@ export function MatatuShengGame({
     if (isRight) {
       playCorrectSfx();
       setScore((s) => s + 20);
-      onAwardXp?.(20);
+      onAwardXp?.(20, false);
     } else {
       playWrongSfx();
     }
@@ -96,6 +97,8 @@ export function MatatuShengGame({
       if (round + 1 >= scenarios.length) {
         playCelebrationSfx();
         setSessionDone(true);
+        onAwardXp?.(0, true);
+        onUpdateGameStats?.((prev) => ({ ...prev, matatuBest: Math.max(prev.matatuBest || 0, score + (isRight ? 20 : 0)) }));
       } else {
         setRound((r) => r + 1);
       }

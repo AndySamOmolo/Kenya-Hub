@@ -514,6 +514,8 @@ export default function SkillTree({
             >
               {/* Unit Header Banner */}
               <button
+                type="button"
+                aria-expanded={isExpanded}
                 onClick={() => toggleUnit(unit.id)}
                 className="w-full flex items-start sm:items-center justify-between gap-3 p-4 sm:p-5 text-left transition-colors hover:bg-white/[0.02]"
                 style={{

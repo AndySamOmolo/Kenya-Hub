@@ -10,7 +10,7 @@ import cbcData from "../../shared/data/cbc-curriculum.json";
 export function CbcCurriculumTool({ onScrollToTop }: { onScrollToTop?: () => void } = {}) {
   const { theme } = useTheme();
   const [levelId, setLevelId] = useState(cbcData.levels[0].id);
-  const currentYear = 2026;
+  const currentYear = new Date().getFullYear();
   const [birthYear, setBirthYear] = useState("2017");
 
   const year = Number(birthYear) || 2017;
@@ -66,7 +66,7 @@ export function CbcCurriculumTool({ onScrollToTop }: { onScrollToTop?: () => voi
       ageGroup: "18+ years",
       nextMilestone: "Higher Education / Career Placement",
     };
-  }, [age, year, gradeAgeMapping]);
+  }, [age, year, currentYear, gradeAgeMapping]);
 
   return (
     <View style={styles.toolWrap}>

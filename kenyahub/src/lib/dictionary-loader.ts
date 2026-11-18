@@ -3,7 +3,7 @@ import {
   DICT_META_MAP,
   type DictEntry,
   type Dictionary,
-} from "@/data/language-sources";
+} from "@/data/dictionaries/metadata";
 import langData from "@/data/kenya-languages.json";
 import { getStoredContributions } from "@/lib/contributions";
 import {
@@ -17,27 +17,38 @@ export const CATEGORY_PAGE_SIZE = 50;
 export const SEARCH_PAGE_SIZE = 50;
 export const CONTACT_EMAIL = "contact@kenyahub.me";
 
+type ContribDictEntry = DictEntry & { _userContrib?: boolean };
+
 /**
  * Overlays approved community contributions (`status === "approved"` and `mergedToDictionary === true`)
  * from `localStorage` onto a loaded Dictionary in memory so approved entries immediately appear
- * in translator searches and category browsing.
+ * in translator searches and category browsing, while stripping any previously injected entries
+ * that were subsequently rejected or removed (`F-12`).
  */
 export function applyApprovedContributionsToDict(dict: Dictionary): Dictionary {
   if (typeof window === "undefined") return dict;
   try {
+    let modified = false;
+    for (const cat of dict.categories) {
+      const beforeLen = cat.entries.length;
+      cat.entries = cat.entries.filter(
+        (e) => !(e as ContribDictEntry)._userContrib
+      );
+      if (cat.entries.length !== beforeLen) {
+        modified = true;
+      }
+    }
+
     const contributions = getStoredContributions();
     const langBase = dict.languageName.split("(")[0].trim().toLowerCase();
     const approved = contributions.filter((item) => {
-      if (item.status !== "approved" || !item.mergedToDictionary || item.type === "reviewer") {
+      if ((item.status !== "approved" && item.status !== "pending") || item.type === "reviewer") {
         return false;
       }
       const itemLang = item.language.split("(")[0].trim().toLowerCase();
       return itemLang === dict.languageId.toLowerCase() || itemLang === langBase;
     });
 
-    if (approved.length === 0) return dict;
-
-    let modified = false;
     for (const contrib of approved) {
       const targetCatId = contrib.category || "phrases";
       const cat =
@@ -52,13 +63,14 @@ export function applyApprovedContributionsToDict(dict: Dictionary): Dictionary {
           e.translation.toLowerCase().trim() === contrib.translation.toLowerCase().trim()
       );
       if (!exists && contrib.english.trim() && contrib.translation.trim()) {
-        const newEntry: DictEntry = {
+        const newEntry: ContribDictEntry = {
           english: contrib.english.trim(),
           translation: contrib.translation.trim(),
           pronunciation: contrib.pronunciation?.trim() || "",
           context: contrib.context?.trim()
             ? `${contrib.context.trim()} (Contributed by ${contrib.contributorName || "Community"})`
             : `Community contribution (${contrib.contributorName || "Verified"})`,
+          _userContrib: true,
         };
         cat.entries.unshift(newEntry);
         modified = true;
@@ -102,22 +114,29 @@ const DICT_LOADERS: Record<string, () => Promise<{ default: Dictionary }>> = {
 };
 
 export const DICT_CACHE: Record<string, Dictionary> = {};
-const DICT_PROMISES: Record<string, Promise<Dictionary>> = {};
+const IN_FLIGHT: Record<string, Promise<Dictionary | null>> = {};
 
-export async function loadDictionary(langId: string): Promise<Dictionary | null> {
-  if (DICT_CACHE[langId]) {
-    return applyApprovedContributionsToDict(DICT_CACHE[langId]);
+export async function loadDictionary(languageId: string): Promise<Dictionary | null> {
+  if (DICT_CACHE[languageId]) {
+    return applyApprovedContributionsToDict(DICT_CACHE[languageId]);
   }
-  const loader = DICT_LOADERS[langId];
+  const loader = DICT_LOADERS[languageId];
   if (!loader) return null;
-  if (!DICT_PROMISES[langId]) {
-    DICT_PROMISES[langId] = loader().then((mod) => {
-      const dict = (mod.default || mod) as Dictionary;
-      DICT_CACHE[langId] = applyApprovedContributionsToDict(dict);
-      return DICT_CACHE[langId];
-    });
+  if (!IN_FLIGHT[languageId]) {
+    IN_FLIGHT[languageId] = loader()
+      .then((mod) => {
+        const dict = (mod.default || mod) as Dictionary;
+        DICT_CACHE[languageId] = applyApprovedContributionsToDict(dict);
+        delete IN_FLIGHT[languageId];
+        return DICT_CACHE[languageId];
+      })
+      .catch((err) => {
+        delete IN_FLIGHT[languageId];
+        console.warn(`Failed to load dictionary ${languageId}:`, err);
+        return null;
+      });
   }
-  return DICT_PROMISES[langId];
+  return IN_FLIGHT[languageId];
 }
 
 // Languages that have no dictionary yet

@@ -4,7 +4,8 @@ import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useDeferredValue } from "react";
+import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -19,7 +20,7 @@ import {
   type DictEntry,
   type DictCategory,
   type Dictionary,
-} from "@/data/language-sources";
+} from "@/data/dictionaries/metadata";
 import { getLanguageIdentity } from "@/data/language-identity";
 import { addContribution, subscribeContributions } from "@/lib/contributions";
 import { playLanguageAudio } from "@/lib/language-audio";
@@ -52,6 +53,7 @@ export default function KenyanTranslatorPage() {
   const [sourceLanguage, setSourceLanguage] = useState("english");
   const [targetLanguage, setTargetLanguage] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [categoryPage, setCategoryPage] = useState(1);
   const [categorySearch, setCategorySearch] = useState("");
@@ -259,7 +261,7 @@ export default function KenyanTranslatorPage() {
     navigator.clipboard.writeText(text).then(() => {
       setCopiedText(text);
       setTimeout(() => setCopiedText(null), 2000);
-    });
+    }).catch(() => {});
   }, []);
 
   const targetMeta = targetLanguage !== "english" && targetLanguage !== "all" ? DICT_META_MAP[targetLanguage] : null;
@@ -275,7 +277,7 @@ export default function KenyanTranslatorPage() {
   const { searchResults, detectedPivotWords } = useMemo(
     () =>
       runTranslatorSearch({
-        query: searchQuery,
+        query: deferredSearchQuery,
         sourceLanguage,
         targetLanguage,
         sourceDict,
@@ -283,12 +285,12 @@ export default function KenyanTranslatorPage() {
         activeDictList,
         maxSingleDictResults: 150,
       }),
-    [searchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, activeDictList]
+    [deferredSearchQuery, sourceLanguage, targetLanguage, targetDict, sourceDict, activeDictList]
   );
 
   // Fuzzy "Did you mean?" suggestions when search returns 0 results
   const fuzzySuggestions = useMemo(() => {
-    if (!searchQuery.trim() || searchQuery.trim().length < 3 || searchResults.length > 0) return [];
+    if (!deferredSearchQuery.trim() || deferredSearchQuery.trim().length < 3 || searchResults.length > 0) return [];
     const pool =
       sourceLanguage === "english"
         ? targetDict
@@ -297,8 +299,8 @@ export default function KenyanTranslatorPage() {
         : sourceDict
         ? [sourceDict]
         : activeDictList;
-    return getFuzzySuggestions(searchQuery, pool, sourceLanguage, 5);
-  }, [searchQuery, searchResults.length, sourceLanguage, targetDict, sourceDict, activeDictList]);
+    return getFuzzySuggestions(deferredSearchQuery, pool, sourceLanguage, 5);
+  }, [deferredSearchQuery, searchResults.length, sourceLanguage, targetDict, sourceDict, activeDictList]);
 
   // Swap languages while preserving or flipping the active query
   const swapLanguages = useCallback(() => {
@@ -383,13 +385,14 @@ export default function KenyanTranslatorPage() {
     if (!activeCategory || !browseDict) return [];
     const cat = browseDict.categories.find((c) => c.id === activeCategory);
     if (!cat) return [];
-    const q = categorySearch.trim().toLowerCase();
+    const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const q = stripDia(categorySearch.trim());
     if (!q) return cat.entries;
     return cat.entries.filter(
       (e) =>
-        e.english.toLowerCase().includes(q) ||
-        e.translation.toLowerCase().includes(q) ||
-        (e.context && e.context.toLowerCase().includes(q))
+        stripDia(e.english).includes(q) ||
+        stripDia(e.translation).includes(q) ||
+        (e.context && stripDia(e.context).includes(q))
     );
   }, [activeCategory, browseDict, categorySearch]);
 
@@ -422,29 +425,31 @@ export default function KenyanTranslatorPage() {
   const getRandomWord = useCallback(() => {
     if (activeDictList.length > 0) {
       const dict = activeDictList[Math.floor(Math.random() * activeDictList.length)];
-      const cleanPool = dict.categories
-        .filter((c) => c.id !== "culture-history")
-        .flatMap((c) => c.entries)
-        .filter(
-          (e) =>
-            e.english.length >= 2 &&
-            e.english.length <= 32 &&
-            e.translation.length >= 2 &&
-            e.translation.length <= 36 &&
-            !/[();:/[\]"„—]/.test(e.english) &&
-            !/[();:[\]"„—]/.test(e.translation)
-        );
-      if (cleanPool.length > 0) {
-        const entry = cleanPool[Math.floor(Math.random() * cleanPool.length)];
-        setRandomWord({ entry, langName: dict.languageName });
-        return;
+      const validCats = dict.categories.filter(
+        (c) => c.id !== "culture-history" && c.entries.length > 0
+      );
+      if (validCats.length > 0) {
+        for (let attempt = 0; attempt < 24; attempt++) {
+          const cat = validCats[Math.floor(Math.random() * validCats.length)];
+          const candidate = cat.entries[Math.floor(Math.random() * cat.entries.length)];
+          if (
+            candidate &&
+            candidate.english.length >= 2 &&
+            candidate.english.length <= 32 &&
+            candidate.translation.length >= 2 &&
+            candidate.translation.length <= 36 &&
+            !/[();:/[\]"„—]/.test(candidate.english) &&
+            !/[();:[\]"„—]/.test(candidate.translation)
+          ) {
+            setRandomWord({ entry: candidate, langName: dict.languageName });
+            return;
+          }
+        }
       }
     }
     const sample = INITIAL_RANDOM_WORDS[Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)];
     if (sample) setRandomWord({ entry: sample.entry, langName: sample.langName });
   }, [activeDictList]);
-
-  useEffect(() => { getRandomWord(); }, [getRandomWord]);
 
   useEffect(() => {
     scrollToTopIfScrolled();
@@ -454,6 +459,7 @@ export default function KenyanTranslatorPage() {
 
   return (
     <ToolShell tool={tool} faq={faq}>
+      <ToolAccessTracker tool={tool} {...({ slug: "kenyan-translator" } as Record<string, string>)} />
       <div className="space-y-4 sm:space-y-6">
 
         {/* ── Random Word of the Moment ── */}
@@ -1259,6 +1265,13 @@ export default function KenyanTranslatorPage() {
       {isContributeOpen && (
         <div
           data-adsense-pause="true"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="contribute-modal-title"
+          tabIndex={-1}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") closeContributeModal();
+          }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-kenya-black/80 backdrop-blur-sm p-4 overflow-y-auto"
           onClick={(e) => {
             if (e.target === e.currentTarget) closeContributeModal();
@@ -1281,7 +1294,7 @@ export default function KenyanTranslatorPage() {
                     <span className="w-2 h-2 rounded-full bg-gold" />
                     <span className="text-[0.65rem] uppercase tracking-wider text-gold font-bold">Community Linguistic Contribution</span>
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                  <h3 id="contribute-modal-title" className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
                     Contribute to {contributeLanguage}
                   </h3>
                   <p className="text-xs text-text-muted mt-0.5">

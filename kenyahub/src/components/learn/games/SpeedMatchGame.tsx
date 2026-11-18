@@ -26,6 +26,7 @@ export function SpeedMatchGame({
 
   const [direction, setDirection] = useState<SpeedDirection>("mixed");
   const [gameState, setGameState] = useState<"ready" | "playing" | "done">("ready");
+  const [untimed, setUntimed] = useState(false);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
@@ -85,7 +86,14 @@ export function SpeedMatchGame({
     setCorrect(0);
     setFlash(null);
     generateRound(direction);
+  };
 
+  // Manage countdown timer and respect Untimed / Relaxed Mode (WCAG 2.2.1 A-06)
+  useEffect(() => {
+    if (gameState !== "playing" || untimed) {
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
       setTimeLeft((t) => {
@@ -97,7 +105,10 @@ export function SpeedMatchGame({
         return Number((t - 1).toFixed(1));
       });
     }, 1000);
-  };
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [gameState, untimed]);
 
   useEffect(() => {
     if (gameState === "done" && !awardedRef.current) {
@@ -140,9 +151,11 @@ export function SpeedMatchGame({
 
         if (newStreak > 0 && newStreak % 5 === 0) {
           playStreakSfx();
-          setTimeLeft((t) => Math.min(90, Number((t + 2).toFixed(1))));
-          setTimeBonusPop("+2s Combo! ⚡");
-          setTimeout(() => setTimeBonusPop(null), 900);
+          if (!untimed) {
+            setTimeLeft((t) => Math.min(90, Number((t + 2).toFixed(1))));
+            setTimeBonusPop("+2s Combo! ⚡");
+            setTimeout(() => setTimeBonusPop(null), 900);
+          }
         } else {
           playCorrectSfx();
         }
@@ -156,9 +169,11 @@ export function SpeedMatchGame({
         setStreak(0);
         setFlash("wrong");
         onRecordWordResult?.(currentWord, false);
-        setTimeLeft((t) => Math.max(1, Number((t - 1).toFixed(1))));
-        setTimeBonusPop("-1s");
-        setTimeout(() => setTimeBonusPop(null), 700);
+        if (!untimed) {
+          setTimeLeft((t) => Math.max(1, Number((t - 1).toFixed(1))));
+          setTimeBonusPop("-1s");
+          setTimeout(() => setTimeBonusPop(null), 700);
+        }
 
         // 400ms anti-mashing penalty lock
         setTimeout(() => {
@@ -167,7 +182,7 @@ export function SpeedMatchGame({
         }, 400);
       }
     },
-    [currentWord, gameState, flash, roundDir, streak, generateRound, onRecordWordResult]
+    [currentWord, gameState, flash, roundDir, streak, untimed, generateRound, onRecordWordResult]
   );
 
   // Desktop keyboard shortcuts [1] [2] [3] [4]
@@ -223,13 +238,30 @@ export function SpeedMatchGame({
           ))}
         </div>
 
+        {/* Untimed / Relaxed Mode Toggle (WCAG 2.2.1 A-06) */}
+        <div className="mt-3">
+          <button
+            type="button"
+            onClick={() => setUntimed((u) => !u)}
+            aria-pressed={untimed}
+            className={`rounded-full border px-3.5 py-1.5 text-xs font-semibold transition-colors cursor-pointer ${
+              untimed
+                ? "border-kenya-green/50 bg-kenya-green/15 text-kenya-green-light"
+                : "border-border bg-bg-card text-text-secondary hover:border-gold/40"
+            }`}
+          >
+            {untimed ? "Untimed / Relaxed Mode: ON" : "Untimed / Relaxed Mode"}
+          </button>
+        </div>
+
         <button
           type="button"
           onClick={startGame}
           disabled={allWords.length < 4}
           className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 sm:hover:brightness-110 mx-auto cursor-pointer"
         >
-          <span>Start 60s Blitz</span> <DynamicIcon emoji="🚀" className="w-4 h-4" />
+          <span>{untimed ? "Start Relaxed Practice" : "Start 60s Blitz"}</span>{" "}
+          <DynamicIcon emoji="🚀" className="w-4 h-4" />
         </button>
       </div>
     );
@@ -244,7 +276,7 @@ export function SpeedMatchGame({
           <DynamicIcon emoji="🏆" className="w-14 h-14 text-gold" />
         </div>
         <h3 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary">
-          Time&apos;s Up! (+{earnedXp} XP)
+          {untimed ? "Session Complete!" : "Time's Up!"} (+{earnedXp} XP)
         </h3>
 
         <div className="mt-5 grid grid-cols-3 gap-3 w-full max-w-sm">
@@ -278,28 +310,49 @@ export function SpeedMatchGame({
 
   return (
     <div>
-      <div className="mb-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <div
             className={`flex items-center gap-1 rounded-full border px-3 py-1.5 ${
-              timeLeft <= 10
+              !untimed && timeLeft <= 10
                 ? "border-red-400/50 bg-red-400/5"
                 : "border-border bg-bg-card"
             }`}
           >
             <Clock
               className={`h-3.5 w-3.5 ${
-                timeLeft <= 10 ? "text-red-400 animate-countdown-pulse" : "text-text-muted"
+                !untimed && timeLeft <= 10 ? "text-red-400 animate-countdown-pulse" : "text-text-muted"
               }`}
             />
             <span
               className={`text-sm font-bold tabular-nums ${
-                timeLeft <= 10 ? "text-red-400" : "text-text-primary"
+                !untimed && timeLeft <= 10 ? "text-red-400" : "text-text-primary"
               }`}
             >
-              {Math.ceil(timeLeft)}s
+              {untimed ? "Relaxed" : `${Math.ceil(timeLeft)}s`}
             </span>
           </div>
+          <button
+            type="button"
+            onClick={() => setUntimed((u) => !u)}
+            aria-pressed={untimed}
+            className={`rounded-full border px-2.5 py-1 text-xs font-semibold transition-colors cursor-pointer ${
+              untimed
+                ? "border-kenya-green/50 bg-kenya-green/15 text-kenya-green-light"
+                : "border-border bg-bg-card text-text-secondary hover:border-gold/40"
+            }`}
+          >
+            {untimed ? "Untimed / Relaxed Mode: ON" : "Untimed / Relaxed Mode"}
+          </button>
+          {untimed && (
+            <button
+              type="button"
+              onClick={() => setGameState("done")}
+              className="rounded-full border border-gold/40 bg-gold/10 px-2.5 py-1 text-xs font-bold text-gold hover:bg-gold/20 transition-colors cursor-pointer"
+            >
+              Finish Session
+            </button>
+          )}
           {timeBonusPop && (
             <span
               className={`rounded-full px-2.5 py-1 text-xs font-extrabold animate-bounce-in ${
