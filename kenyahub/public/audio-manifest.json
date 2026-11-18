@@ -7,8 +7,8 @@
   "languages": {
     "borana": {
       "languageName": "Borana (Oromo)",
-      "totalEntries": 17427,
-      "addressableR2Keys": 17427,
+      "totalEntries": 26441,
+      "addressableR2Keys": 26440,
       "r2Prefix": "audio/borana/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -64,10 +64,10 @@
     },
     "kamba": {
       "languageName": "Kamba (Kĩkamba)",
-      "totalEntries": 6779,
-      "addressableR2Keys": 6776,
+      "totalEntries": 9760,
+      "addressableR2Keys": 9757,
       "r2Prefix": "audio/kamba/",
-      "directAudioEntries": 0,
+      "directAudioEntries": 250,
       "openAccessDatasets": [
         {
           "id": "thiomi-kam",
@@ -97,10 +97,10 @@
     },
     "kikuyu": {
       "languageName": "Kikuyu (Gĩkũyũ)",
-      "totalEntries": 14710,
-      "addressableR2Keys": 14702,
+      "totalEntries": 23028,
+      "addressableR2Keys": 23020,
       "r2Prefix": "audio/kikuyu/",
-      "directAudioEntries": 0,
+      "directAudioEntries": 253,
       "openAccessDatasets": [
         {
           "id": "thiomi-kik",
@@ -156,10 +156,10 @@
     },
     "luo": {
       "languageName": "Dholuo (Luo)",
-      "totalEntries": 4505,
-      "addressableR2Keys": 4505,
+      "totalEntries": 14960,
+      "addressableR2Keys": 14957,
       "r2Prefix": "audio/luo/",
-      "directAudioEntries": 0,
+      "directAudioEntries": 257,
       "openAccessDatasets": [
         {
           "id": "thiomi-luo",
@@ -205,10 +205,10 @@
     },
     "meru": {
       "languageName": "Meru (Kĩmĩĩrũ)",
-      "totalEntries": 1366,
-      "addressableR2Keys": 1366,
+      "totalEntries": 1664,
+      "addressableR2Keys": 1664,
       "r2Prefix": "audio/meru/",
-      "directAudioEntries": 0,
+      "directAudioEntries": 248,
       "openAccessDatasets": [
         {
           "id": "thiomi-mer",
@@ -262,10 +262,10 @@
     },
     "somali": {
       "languageName": "Somali",
-      "totalEntries": 5265,
-      "addressableR2Keys": 5264,
+      "totalEntries": 12852,
+      "addressableR2Keys": 12850,
       "r2Prefix": "audio/somali/",
-      "directAudioEntries": 0,
+      "directAudioEntries": 246,
       "openAccessDatasets": [
         {
           "id": "thiomi-som",
@@ -295,8 +295,8 @@
     },
     "swahili": {
       "languageName": "Swahili (Kiswahili)",
-      "totalEntries": 44542,
-      "addressableR2Keys": 44542,
+      "totalEntries": 53061,
+      "addressableR2Keys": 53059,
       "r2Prefix": "audio/swahili/",
       "directAudioEntries": 10,
       "openAccessDatasets": [

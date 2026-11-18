@@ -5707,6 +5707,1744 @@
           "english": "The Njuri elders spoke about charcoal",
           "translation": "Akũrũ ba Njũrĩ nĩbaaririe ũhoro bwa I-kara",
           "context": "The Thiomi Dataset Kimeru (CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k), Sunbird AI SALT-31 Kimeru (CC-BY-4.0) & Open-Access Kitharaka Corpus"
+        },
+        {
+          "english": "Yaya and Yemi discussed deeply about his Situationships.",
+          "translation": "yaya na yemi barĩria nkũrũki ngwatanĩro yao",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/yaya-na-yemi-bariria-nkuruki-ngwataniro-yao.opus"
+        },
+        {
+          "english": "All this time.",
+          "translation": "kagita gaka konthe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kagita-gaka-konthe.opus"
+        },
+        {
+          "english": "Early Saturday, more units were waiting in Kuwait to smash through any Iraqi resistance.",
+          "translation": "jumamosi rũũkĩrĩ njeshi iingĩ ciarĩ kuwait cieterete kũrũa na antũ ba iraq barĩa bakaregana na njeshi",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/jumamosi-ruukiri-njeshi-iingi-ciari-kuwait-cieterete-kurua-na-an.opus"
+        },
+        {
+          "english": "It was tough.",
+          "translation": "ĩbwomi",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ibwomi.opus"
+        },
+        {
+          "english": "Sovereign power belongs to the people and the people through Parliament have prescribed the manner in which the power shall be exercised.",
+          "translation": "ũnene nĩ bwa antũ na antũ gũkũrũkĩra bũnge bakaũga ũrĩa ũnene bũgetĩthũa mbere",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/unene-ni-bwa-antu-na-antu-gukurukira-bunge-bakauga-uria-unene-bu.opus"
+        },
+        {
+          "english": "I'm still not sure why this happened.",
+          "translation": "mwanka nandĩ ntĩna ũmenyo nĩkĩ ũntũ bũu bwakarĩkĩre",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mwanka-nandi-ntina-umenyo-niki-untu-buu-bwakarikire.opus"
+        },
+        {
+          "english": "Why not negotiate with the school on that access issue?",
+          "translation": "nĩkĩ ũtaria na cukuru kĩrĩ gĩntũ kĩĩ kĩa gũkũrũka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/niki-utaria-na-cukuru-kiri-gintu-kii-kia-gukuruka.opus"
+        },
+        {
+          "english": "No budget for referendum yet.",
+          "translation": "gũtĩ kĩgĩna kia kura e maoni mwonka nandi",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/guti-kigina-kia-kura-e-maoni-mwonka-nandi.opus"
+        },
+        {
+          "english": "You just have to out truth him. Believe, declare, and act upon the truth of God's Word, and you will thwart Satan's strategy.",
+          "translation": "ũbati kwaria ũũma gwĩtĩkia na kũũga atĩ ũũma ii rũteto rwa mũrungu na ukombana na mĩbango ya nkoma",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ubati-kwaria-uuma-gwitikia-na-kuuga-ati-uuma-ii-ruteto-rwa-murun.opus"
+        },
+        {
+          "english": "I can't wait to see their faces when I'm saved again on Sunday.",
+          "translation": "ntĩetera kwona mothiu jao kaĩri ntukũ e kimia ndonoka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntietera-kwona-mothiu-jao-kairi-ntuku-e-kimia-ndonoka.opus"
+        },
+        {
+          "english": "The cholera outbreak has mainly affected people living in slum areas since such areas lack proper drainage systems",
+          "translation": "mbithũkiri ya mũrimo jwa kwarwa ijũangaratanĩrie antũ barĩa bakaraa mabandene nũntũ ntere iu rũko rũtĩtejagwa bwega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mbithukiri-ya-murimo-jwa-kwarwa-ijuangaratanirie-antu-baria-baka.opus"
+        },
+        {
+          "english": "The matter is now in the court of public opinion.",
+          "translation": "ũntũ bũũ nandĩ bũrĩgambithũa nĩ mwĩngĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/untu-buu-nandi-burigambithua-ni-mwingi.opus"
+        },
+        {
+          "english": "Did he call you and told you all these things?",
+          "translation": "akũrĩngĩre akwĩra jaja jonthe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/akuringire-akwira-jaja-jonthe.opus"
+        },
+        {
+          "english": "A pickup truck driven by a white farmer rumbles past with a load of black workers bouncing in the back.",
+          "translation": "ngarĩ itithĩtue ii ndereba ũmũtune ĩkeja ĩkamatĩte ariti ngũgĩ babairu",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ngari-itithitue-ii-ndereba-umutune-ikeja-ikamatite-ariti-ngugi-b.opus"
+        },
+        {
+          "english": "I am a small scale farmer.",
+          "translation": "ndĩ mũrĩmi ũmunini",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndi-murimi-umunini.opus"
+        },
+        {
+          "english": "Even when the plane was only half-full or they had bought an extra ticket especially for the baby.",
+          "translation": "kinya rĩrĩa ndege ĩtĩna antũ ba kũng'ana kana rĩrĩa bagũrĩte tigiti ya kaana",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kinya-riria-ndege-itina-antu-ba-kung-ana-kana-riria-bagurite-tig.opus"
+        },
+        {
+          "english": "Our God is a wonderfully faithful Heavenly Father.",
+          "translation": "mũrungu wetũ ii mwĩtĩkĩkua",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/murungu-wetu-ii-mwitikikua.opus"
+        },
+        {
+          "english": "We are revising geography books.",
+          "translation": "gaũtũgũcokera mauku ja geography",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/gautugucokera-mauku-ja-geography.opus"
+        },
+        {
+          "english": "Got to go.",
+          "translation": "tiga mbĩte",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/tiga-mbite.opus"
+        },
+        {
+          "english": "\"The God of Tems\" has now become a popular phrase that her fans use whenever Tems scores yet another win.",
+          "translation": "mũrungu wa tems ĩkũwa kĩũgo kia ĩgweta kĩrĩ mashabĩkĩ bawe o rionthe tems acinda",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/murungu-wa-tems-ikuwa-kiugo-kia-igweta-kiri-mashabiki-bawe-o-rio.opus"
+        },
+        {
+          "english": "And you Kevin, you wait!",
+          "translation": "nagwe kevin wetere",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nagwe-kevin-wetere.opus"
+        },
+        {
+          "english": "The natural world teaches us things.",
+          "translation": "mantũ ja nthigũrũ ijatũritanaga",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mantu-ja-nthiguru-ijaturitanaga.opus"
+        },
+        {
+          "english": "Congratulations for making it to the final list.",
+          "translation": "ingũgwĩkiira igũkinya orothene e mũthia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ingugwikiira-igukinya-orothene-e-muthia.opus"
+        },
+        {
+          "english": "She asked her what her name was",
+          "translation": "akoria urĩa getagwa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/akoria-uria-getagwa.opus"
+        },
+        {
+          "english": "Impossible, impossible, say the Conradies, an elderly couple who have run the general store for decades.",
+          "translation": "conradies bariũga ii ũntũ butĩumbĩka gũkara batĩna ariti ngũgĩ babairũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/conradies-bariuga-ii-untu-butiumbika-gukara-batina-ariti-ngugi-b.opus"
+        },
+        {
+          "english": "Our walls are load bearing and compromise is a no-no",
+          "translation": "rũthingo rwetũ irũtũgwatirite kwou no mwanka rũmenyerwe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ruthingo-rwetu-irutugwatirite-kwou-no-mwanka-rumenyerwe.opus"
+        },
+        {
+          "english": "Mr. Noriega would organize the province's first intelligence service.",
+          "translation": "mrnoriega abati kwambĩria abangaga",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mrnoriega-abati-kwambiria-abangaga.opus"
+        },
+        {
+          "english": "Why can’t we ensure it is up there on our national agenda so that Parliament appropriates for it?",
+          "translation": "nĩkĩ tũtĩkũjenga ĩgũrũ kĩ mĩbango e kĩthirikarĩ kenda mbũnge ĩjagaĩra kĩgĩna",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/niki-tutikujenga-iguru-ki-mibango-e-kithirikari-kenda-mbunge-ija.opus"
+        },
+        {
+          "english": "He would leave abruptly without informing us where he was going.",
+          "translation": "akauma nja na ageta atĩrĩte antũ narea eeta",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/akauma-nja-na-ageta-atirite-antu-narea-eeta.opus"
+        },
+        {
+          "english": "He actually is serving his country diligently.",
+          "translation": "niakwatha nthĩgũrũ yawe na kĩrĩra",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/niakwatha-nthiguru-yawe-na-kirira.opus"
+        },
+        {
+          "english": "Some are in normal casual clothes, while others are in uniform.",
+          "translation": "bamwe barĩ na nguo cĩa wĩthĩre na bangĩ barĩ na cia mbĩrarũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/bamwe-bari-na-nguo-cia-withire-na-bangi-bari-na-cia-mbiraru.opus"
+        },
+        {
+          "english": "The day I step there with Kenneth.",
+          "translation": "ntunkũ ĩria ngeetania na kenneth",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntunku-iria-ngeetania-na-kenneth.opus"
+        },
+        {
+          "english": "Probably the first zero is missing so the number is incomplete.",
+          "translation": "yomba kwĩthĩrwa kĩbũgũ kĩa mbele ikĩo kĩũrite kwou namba iu itĩng'ani",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/yomba-kwithirwa-kibugu-kia-mbele-ikio-kiurite-kwou-namba-iu-itin.opus"
+        },
+        {
+          "english": "His declaration that he was running for president lit the internet on fire, even as pundits were trying to discern how serious he was.",
+          "translation": "ĩtũa rĩawe ria kuuga akarungama gĩtĩ kia mũnene o nthĩgũrũ irĩ gwetie mwanki mĩtandaone ona rĩrĩa ataaramu bagũgeria gũtwaũra kethĩra ena mma akarũngama",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/itua-riawe-ria-kuuga-akarungama-giti-kia-munene-o-nthiguru-iri-g.opus"
+        },
+        {
+          "english": "Let us practice and live that unalienable truth.",
+          "translation": "gatũgerie na tũtũrĩre ũmma bũu bũtĩ bwagũciathũra",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/gatugerie-na-tuturire-umma-buu-buti-bwaguciathura.opus"
+        },
+        {
+          "english": "You might need an eye check up?",
+          "translation": "nũũkwenda ũtegerĩ metho",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nuukwenda-utegeri-metho.opus"
+        },
+        {
+          "english": "Review how right or how wrong the position was.",
+          "translation": "gũtegera kaĩrĩ wega kana ũuĩ bwa mũrũngamo jũu",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/gutegera-kairi-wega-kana-uui-bwa-murungamo-juu.opus"
+        },
+        {
+          "english": "She died a painful death, forgotten and desolate. I saw her at the National Spinal Injury Hospital at her lowest.",
+          "translation": "akuire gĩkũo kĩa mũrimo orĩrĩtũe na atĩ inya ndamwonĩre national spinal injũry hospital arĩ nthi bũrũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/akuire-gikuo-kia-murimo-oriritue-na-ati-inya-ndamwonire-national.opus"
+        },
+        {
+          "english": "She worked very hard for food.",
+          "translation": "naitĩte ngũgĩ mono nũntũ bwa irio",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/naitite-ngugi-mono-nuntu-bwa-irio.opus"
+        },
+        {
+          "english": "His daughter fought me.",
+          "translation": "mwana wa  mwarĩ owe narũĩre nani",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mwana-wa-mwari-owe-naruire-nani.opus"
+        },
+        {
+          "english": "People will be brought together more by ideas not tribe.",
+          "translation": "antũ bakaretwa amwe nkũrũki na mathũganio tĩ kabila",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/antu-bakaretwa-amwe-nkuruki-na-mathuganio-ti-kabila.opus"
+        },
+        {
+          "english": "Who can help you do that?",
+          "translation": "nũũ ũmba kũgũtethia kũthithia ũu",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nuu-umba-kugutethia-kuthithia-uu.opus"
+        },
+        {
+          "english": "The ball hits the bar and comes back into play.",
+          "translation": "mũbira jũkaringa ngoru na jũgacoka rĩngĩ gũcethwa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mubira-jukaringa-ngoru-na-jugacoka-ringi-gucethwa.opus"
+        },
+        {
+          "english": "Innocent.",
+          "translation": "atĩ na maĩtia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ati-na-maitia.opus"
+        },
+        {
+          "english": "Should we help her out?",
+          "translation": "tũmũtetherie",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/tumutetherie.opus"
+        },
+        {
+          "english": "They exist.",
+          "translation": "barĩo",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/bario.opus"
+        },
+        {
+          "english": "I was so cute when I was a baby my Mum said people used to think I was..humm",
+          "translation": "ndathongi mono ndĩ mũniini antũ beraga mamiokwa ũũni ndĩhumm",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndathongi-mono-ndi-muniini-antu-beraga-mamiokwa-uuni-ndihumm.opus"
+        },
+        {
+          "english": "I am sure creators outside Kenya make content that does not rub off badly on us just to be on the safe side, you know.",
+          "translation": "ndina mma atĩ athithia kuuma ome ya kenya bathithagia mantũ jatĩtũthuria kenda mantũ jao jakara bwega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndina-mma-ati-athithia-kuuma-ome-ya-kenya-bathithagia-mantu-jati.opus"
+        },
+        {
+          "english": "Congressman Lewis called it Good trouble.",
+          "translation": "mũteti lewis ajwĩtĩre thĩna i njega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/muteti-lewis-ajwitire-thina-i-njega.opus"
+        },
+        {
+          "english": "You touch whatever side which you desire.",
+          "translation": "ũrigithagia onderea ũkenda",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/urigithagia-onderea-ukenda.opus"
+        },
+        {
+          "english": "Let's ask for directions!",
+          "translation": "reka turĩthĩrĩe njĩra",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/reka-turithirie-njira.opus"
+        },
+        {
+          "english": "I also noticed you didn’t use the term “halali “and instead used “fake”.",
+          "translation": "indaigĩrue inya ũtatumĩre riĩtwa halali utumĩre fake",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/indaigirue-inya-utatumire-riitwa-halali-utumire-fake.opus"
+        },
+        {
+          "english": "I only noticed how proud he is of his humility.",
+          "translation": "ndonĩre ũrĩa arĩ na wĩĩrũ kĩrĩ ũkĩrĩ bwawe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndonire-uria-ari-na-wiiru-kiri-ukiri-bwawe.opus"
+        },
+        {
+          "english": "The hit-maker appreciates support she has received from fans and family",
+          "translation": "mwekũrũ ũrĩa ũrĩna rwĩmbo rũtambĩte nagũcokia nkatho nũntũ bũa kũgwatwa mbaru nĩ athingati na nja yawe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mwekuru-uria-urina-rwimbo-rutambite-nagucokia-nkatho-nuntu-bua-k.opus"
+        },
+        {
+          "english": "Some critics like Gore advisor Bruce Jentelson worry that the Bush team will be out of step with today's issues.",
+          "translation": "ameneria ta gore mũejani mũerekera ja brũce jentelson ibakũmaka atĩ gikundi kĩa bũsh gũkethĩrũa kĩrĩ ome ya mũkinyo kĩrĩ nteto cia naaria",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ameneria-ta-gore-muejani-muerekera-ja-bruce-jentelson-ibakumaka-.opus"
+        },
+        {
+          "english": "Truck drivers are the most affected group as new coronavirus cases are being reported",
+          "translation": "mandereba ja malori ibo antũ barea bagurarĩtue mono ũrĩa kwĩna thitango injerũ cia corona ciriboti",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mandereba-ja-malori-ibo-antu-barea-baguraritue-mono-uria-kwina-t.opus"
+        },
+        {
+          "english": "He decided to drop out of school.",
+          "translation": "na bangĩre gũta cukuru",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/na-bangire-guta-cukuru.opus"
+        },
+        {
+          "english": "This particular pollution is best known for exacerbating asthma symptoms,",
+          "translation": "rũko rũrũ iru ruretaga thĩna cia asthma",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ruko-ruru-iru-ruretaga-thina-cia-asthma.opus"
+        },
+        {
+          "english": "What if someone is preparing propaganda against you?",
+          "translation": "okethirwa muntũ akũbangĩrite mũcene",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/okethirwa-muntu-akubangirite-mucene.opus"
+        },
+        {
+          "english": "It's case of having wrong people in right places.",
+          "translation": "nĩ kwĩthirwa ũrĩ na antũ babathũkũ antũ aega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ni-kwithirwa-uri-na-antu-babathuku-antu-aega.opus"
+        },
+        {
+          "english": "The first people who came screaming are not Raila's people, they were state House operatives led by Murathe a common man.",
+          "translation": "antũ bambeere barĩa ambĩrĩe kũringa gĩtũma tĩ antũ ba raila baarĩ ariti ngũgĩ ba statehouse batongeretũe i murathe ntomũrũme o kawaida",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/antu-bambeere-baria-ambirie-kuringa-gituma-ti-antu-ba-raila-baar.opus"
+        },
+        {
+          "english": "He has very high fever.",
+          "translation": "ena mũrũtiira mono",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ena-murutiira-mono.opus"
+        },
+        {
+          "english": "Idealism with politics requires the persona of the likes of Jacob.",
+          "translation": "mathũganio na siasa ciendaga mũntũ ta jacob",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mathuganio-na-siasa-ciendaga-muntu-ta-jacob.opus"
+        },
+        {
+          "english": "I am drunk in a Harvard bathroom.",
+          "translation": "ĩmbogiti na ndĩ ndeene e kanyumba ga kwĩria ka harvard",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/imbogiti-na-ndi-ndeene-e-kanyumba-ga-kwiria-ka-harvard.opus"
+        },
+        {
+          "english": "Some will be terrified because of how great and swift it is.",
+          "translation": "bamue bakarigara nĩ ũrĩa jũnenei na jwĩna mpwĩi",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/bamue-bakarigara-ni-uria-junenei-na-jwina-mpwii.opus"
+        },
+        {
+          "english": "Fantastic.",
+          "translation": "bũthongi",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/buthongi.opus"
+        },
+        {
+          "english": "You could say the same about them.",
+          "translation": "ũkũkubati kuuga o ũu ĩgũrũ ebo",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ukukubati-kuuga-o-uu-iguru-ebo.opus"
+        },
+        {
+          "english": "It's too much, we can still have a great connection outside the house.",
+          "translation": "ii mantũ jamaingi no twĩthĩrwe twina rwaria oome",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ii-mantu-jamaingi-no-twithirwe-twina-rwaria-oome.opus"
+        },
+        {
+          "english": "A screenshot from Temu's commercial unveiled during the Super Bowl encouraging consumers to shop like a billionaire.",
+          "translation": "ntũmwa thimũne kuuma temu yonanĩrue kĩrĩ super bowl ĩkĩrombaga antũ bagũre ja itonga",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntumwa-thimune-kuuma-temu-yonanirue-kiri-super-bowl-ikirombaga-a.opus"
+        },
+        {
+          "english": "Happy Father’s Day to all Fathers here!",
+          "translation": "ntũkũ ĩnjega ya ba baba bonthe aja",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntuku-injega-ya-ba-baba-bonthe-aja.opus"
+        },
+        {
+          "english": "You have to be careful, though.",
+          "translation": "ĩndĩ nũbati kũmenyera",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/indi-nubati-kumenyera.opus"
+        },
+        {
+          "english": "How the current trend has shown that younger judges are being appointed to influence for a longer period and SC judges are retiring much later than before.",
+          "translation": "ũrĩa gũkari nandĩ agambĩthia babethĩ barĩthũrwa kenda bakara na ĩnya ĩgita rĩraaja na agambĩthia ba sc barĩtĩga ngũgĩ nyũma nkũrũkĩ ya aũ nyũma",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/uria-gukari-nandi-agambithia-babethi-barithurwa-kenda-bakara-na-.opus"
+        },
+        {
+          "english": "Since the guards have been refusing to cooperate with those involved in the syndicate.",
+          "translation": "nontũ akaria nĩbakũrega kũgwatanĩra na baria barĩ kĩrĩ wamba bũũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nontu-akaria-nibakurega-kugwatanira-na-baria-bari-kiri-wamba-buu.opus"
+        },
+        {
+          "english": "Each of these items is covered in the Transfer Agreement quite clearly.",
+          "translation": "jaja jonthe ijaandĩki gwatanĩrone e ũgai bwa mainya tarĩiria",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/jaja-jonthe-ijaandiki-gwatanirone-e-ugai-bwa-mainya-tariiria.opus"
+        },
+        {
+          "english": "Any Egyptian friend here on this channel? Any Egyptian friend here on this channel?",
+          "translation": "kwĩna mũcore wa kuuma egypt kĩrĩ gĩpindi mũcore oo wonthe wa kuuma egypt kĩrĩ gĩpindi",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kwina-mucore-wa-kuuma-egypt-kiri-gipindi-mucore-oo-wonthe-wa-kuu.opus"
+        },
+        {
+          "english": "I am not optimistic though seeing how the judiciary has been hamstrung.",
+          "translation": "ntĩ na weterĩ mono ĩndĩ ndona ũrĩa kotĩ ĩgwati",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nti-na-weteri-mono-indi-ndona-uria-koti-igwati.opus"
+        },
+        {
+          "english": "We belong up there, among the very best.",
+          "translation": "twĩbegũrũ arĩa amũe na barea bega buru",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/twibeguru-aria-amue-na-barea-bega-buru.opus"
+        },
+        {
+          "english": "Have a seat.",
+          "translation": "kara nthĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kara-nthi.opus"
+        },
+        {
+          "english": "And said the government’s ban constituted “a declaration to destroy the church once and for all”.",
+          "translation": "na bauga thirikarĩ gaĩkwenda gũkĩria kanisa bũrũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/na-bauga-thirikari-gaikwenda-gukiria-kanisa-buru.opus"
+        },
+        {
+          "english": "There's a rising number of coronavirus cases in Uganda daily",
+          "translation": "thitango cia coronavirus iciongerekete uganda o ntukũ cionthe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/thitango-cia-coronavirus-iciongerekete-uganda-o-ntuku-cionthe.opus"
+        },
+        {
+          "english": "Have a successful day everyone, won't you?",
+          "translation": "gieni ntũkũ ĩnjega antũ tĩũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/gieni-ntuku-injega-antu-tiu.opus"
+        },
+        {
+          "english": "Also do you need a thermometer if you have a thermal scanner?",
+          "translation": "kaĩrĩ kogwĩtia kathimi ka mũrutĩra wĩna thermal scanner",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kairi-kogwitia-kathimi-ka-murutira-wina-thermal-scanner.opus"
+        },
+        {
+          "english": "Afrobeat history, millions can only sit, watch and learn from a woman who decided to be defiantly herself,",
+          "translation": "kĩrĩ rũgono rwa afrobeat mamillioni bakara kwona na kũthoma kũũma kĩrĩ mwekũrũ wekĩre ĩtũa kwĩthirwa arĩ we",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kiri-rugono-rwa-afrobeat-mamillioni-bakara-kwona-na-kuthoma-kuum.opus"
+        },
+        {
+          "english": "You cannot put the lives of millions of us in danger and run away with it.",
+          "translation": "ũtĩũmba gwĩkĩra mĩtũrĩre e antũ mirioni inyingĩ ũgwatine na umatũka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/utiumba-gwikira-miturire-e-antu-mirioni-inyingi-ugwatine-na-umat.opus"
+        },
+        {
+          "english": "Before they showed a ruthless streak to punish Arsenal.",
+          "translation": "riu bacetha bwega na baũra arsenal",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/riu-bacetha-bwega-na-baura-arsenal.opus"
+        },
+        {
+          "english": "Dear God, two wome ... he is courageous.",
+          "translation": "mũrungu baaba ekũrũ baĩrĩ aĩna ĩnya mono",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/murungu-baaba-ekuru-bairi-aina-inya-mono.opus"
+        },
+        {
+          "english": "A TikToker took to his socials and made a video of how Kenyans and Ghanaians were supposedly feeling when they realised they were not part of the Big Brother show.",
+          "translation": "muntũ umwe kĩrĩ tiktok aretĩre na athithia video ya ũrĩa antũ ba ghana na kenya barathithĩrie nyuma ya kurega kwĩthĩrwa barĩ kĩrĩ big brother",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/muntu-umwe-kiri-tiktok-aretire-na-athithia-video-ya-uria-antu-ba.opus"
+        },
+        {
+          "english": "We acknowledge that and recognise him as a politician of great promise.",
+          "translation": "itũgwĩtĩkĩria ii mũtongeria urĩna kĩoneki na ukeja kunenea",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/itugwitikiria-ii-mutongeria-urina-kioneki-na-ukeja-kunenea.opus"
+        },
+        {
+          "english": "We are well trained to campaign aggresively.",
+          "translation": "itũritani kũringa siasa na njĩra ya inya",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ituritani-kuringa-siasa-na-njira-ya-inya.opus"
+        },
+        {
+          "english": "Yes we are thankful.",
+          "translation": "ĩĩ itũgũcokia nkatho",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ii-itugucokia-nkatho.opus"
+        },
+        {
+          "english": "Proponents of safety seats are turning up the heat on the FAA.",
+          "translation": "ateterĩ ba ĩtĩ bia ũkaria bakwongera mwankĩ kĩrĩ faa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ateteri-ba-iti-bia-ukaria-bakwongera-mwanki-kiri-faa.opus"
+        },
+        {
+          "english": "Completely unnecessary talking this much sense in the morning.",
+          "translation": "gũtina gĩtũmi kwaria jaja jonthe rũkĩrĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/gutina-gitumi-kwaria-jaja-jonthe-rukiri.opus"
+        },
+        {
+          "english": "Secondly, it's easy to point to a number of persons who will have leading positions who have had extensive experience in East Asian affairs.",
+          "translation": "bwa jaĩrĩ ii ũntũ bũbũthũ mono kwonania antũ babakai barea bagatongeria mantũ jakonie east asia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/bwa-jairi-ii-untu-bubuthu-mono-kwonania-antu-babakai-barea-bagat.opus"
+        },
+        {
+          "english": "After the revelations I made yesterday while addressing the public.",
+          "translation": "nyuma e kũguũrĩrwa kũrĩa ndĩrathitherie egoro nkĩarĩria mũingĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nyuma-e-kuguurirwa-kuria-ndirathitherie-egoro-nkiariria-muingi.opus"
+        },
+        {
+          "english": "Scientists are finding more and more evidence",
+          "translation": "ataalam ibakwona ũkũjĩ nkũrũki",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ataalam-ibakwona-ukuji-nkuruki.opus"
+        },
+        {
+          "english": "His chief advantage in the fight: his intimate knowledge of American ways and weaknesses.",
+          "translation": "wega bwawe ii kwĩthĩrwa naijĩ njĩra cia america",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/wega-bwawe-ii-kwithirwa-naiji-njira-cia-america.opus"
+        },
+        {
+          "english": "He was buying the loyalty of government officials.",
+          "translation": "aagũraa wĩokeku bwa anene a thirikari",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/aaguraa-wiokeku-bwa-anene-a-thirikari.opus"
+        },
+        {
+          "english": "Hopefully we improve and I think we will and in three weeks time we can take the game at Stamford Bridge.",
+          "translation": "nandĩ tũciumie na ĩngwĩtĩkia nyuma ya biumia bĩĩri tũkajũkia mũcetho stamford bridge",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nandi-tuciumie-na-ingwitikia-nyuma-ya-biumia-biiri-tukajukia-muc.opus"
+        },
+        {
+          "english": "Mr. Briggs, on vacation after resigning his position at the National Security Council, couldn't be reached for comment.",
+          "translation": "mr briggs arĩ rũũtha nyuma e gũtugana na ngũgĩ ewe gĩ nkĩama e ũkaria bwa kĩthĩgũrũ naremete gũkinyĩrĩka aejana kanyua kawe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mr-briggs-ari-ruutha-nyuma-e-gutugana-na-ngugi-ewe-gi-nkiama-e-u.opus"
+        },
+        {
+          "english": "As their protests resulted in destruction of property of unknown value.",
+          "translation": "nĩũtũ mũrũrũngano jũjũ jũratũmĩre wĩnyangĩa bwa into bia ũgũri bũtĩkũmenyeka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/niutu-mururungano-juju-juratumire-winyangia-bwa-into-bia-uguri-b.opus"
+        },
+        {
+          "english": "We are anticipating turbulent times ahead as a country.",
+          "translation": "nĩtũkwona magita jarĩna kĩmako na kwinaina mbere jetu ta nthĩgũrũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nitukwona-magita-jarina-kimako-na-kwinaina-mbere-jetu-ta-nthigur.opus"
+        },
+        {
+          "english": "The constitutional amendments and anything else that has been canvassed in the legislative houses has had little to do with improving the livelihoods of the common citizen.",
+          "translation": "mogarũrũku ma kĩambi watho na mantũ jangĩ jonthe jarĩa jethĩrĩtwe jakĩarĩrio kambũnine cia watho jatĩthĩrĩtwe na moimĩro ja mega kĩ kwagĩria mũtũũrĩre jwa mũingĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mogaruruku-ma-kiambi-watho-na-mantu-jangi-jonthe-jaria-jethiritw.opus"
+        },
+        {
+          "english": "Good stories take time.",
+          "translation": "ngono injega icijũkagia ĩgita",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ngono-injega-icijukagia-igita.opus"
+        },
+        {
+          "english": "My encounter with corona was most unexpected.",
+          "translation": "ntathũganagia ngatĩrĩmana na corona",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntathuganagia-ngatirimana-na-corona.opus"
+        },
+        {
+          "english": "It allows you to use your mobile phone for the day to day school operations.",
+          "translation": "ĩgũtethagia ũgatũmĩra thimũ yakũ kĩrĩ ngũgĩ cia o ntũkũ cia cukuru",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/igutethagia-ugatumira-thimu-yaku-kiri-ngugi-cia-o-ntuku-cia-cuku.opus"
+        },
+        {
+          "english": "Saddened by the loss of a colleague and her mother to Covid so sad let's be vigilant",
+          "translation": "kwithikĩra nontũ bwa gĩkũo kĩa muntũ twitaga nwe ngũgĩ na ng'ĩna nontũ bwa covid tumenyereni",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kwithikira-nontu-bwa-gikuo-kia-muntu-twitaga-nwe-ngugi-na-ng-ina.opus"
+        },
+        {
+          "english": "Fella Kuti once said, people don't eat numbers.",
+          "translation": "fella kuti aũgĩre antũ batĩrĩjaa namba",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/fella-kuti-augire-antu-batirijaa-namba.opus"
+        },
+        {
+          "english": "I do know that this is the same narrative men try to push thru like the 'women are their worst enemies' nonsense!",
+          "translation": "ntĩkũmenya kethĩra ũjũ nĩũ arũme baũgaga atĩ ekũrũ nĩ anthũ bao barea banene ũcĩnka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntikumenya-kethira-uju-niu-arume-baugaga-ati-ekuru-ni-anthu-bao-.opus"
+        },
+        {
+          "english": "He also tells her some stories about his personal life.",
+          "translation": "ntũmũrũme ũu neraa mwarĩ ũu nteto ciawe cia karaaja",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntumurume-uu-neraa-mwari-uu-nteto-ciawe-cia-karaaja.opus"
+        },
+        {
+          "english": "Did I miss any successful prosecution?",
+          "translation": "kũrĩ igamba rĩombanĩre ntĩkũmenya",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kuri-igamba-riombanire-ntikumenya.opus"
+        },
+        {
+          "english": "I thought I was supposed to be a doctor.",
+          "translation": "ndĩthũganagia mbati kwaa dagĩtarĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndithuganagia-mbati-kwaa-dagitari.opus"
+        },
+        {
+          "english": "The god of our age; materialism has blurred this truth.",
+          "translation": "mũrungu wa mĩaka yetũ ũtonga bũkwitha ũũma",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/murungu-wa-miaka-yetu-utonga-bukwitha-uuma.opus"
+        },
+        {
+          "english": "Other temperature data show similar unexplained swings.",
+          "translation": "ũcunkũni bũngĩ bukonie mantũ ja mũrutĩra bũrĩonania mantũ jangĩ mwanya",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ucunkuni-bungi-bukonie-mantu-ja-murutira-burionania-mantu-jangi-.opus"
+        },
+        {
+          "english": "The relationship between your government and we the People became irretrievably broken down.",
+          "translation": "ndugu gatigati ka thirikari yaku na batwi raia yaunĩkangire buru",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndugu-gatigati-ka-thirikari-yaku-na-batwi-raia-yaunikangire-buru.opus"
+        },
+        {
+          "english": "Our obsession with politics when we can’t provide healthcare to our people.",
+          "translation": "kũjũrwa i mantũ ja ciaca rĩrĩa tũtĩkũmba kũmenyera ũgima bwa mwiri bwa antũ betũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kujurwa-i-mantu-ja-ciaca-riria-tutikumba-kumenyera-ugima-bwa-mwi.opus"
+        },
+        {
+          "english": "She added that the two had apparently been having marital problems due to Githua's drunkenness",
+          "translation": "arongera atĩ ibethirĩtwe na ndwaa cia njaa nĩuntũ bwa urebi bwa githua",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/arongera-ati-ibethiritwe-na-ndwaa-cia-njaa-niuntu-bwa-urebi-bwa-.opus"
+        },
+        {
+          "english": "Kyle Lafferty has been backed to re-discover his form at Linfield by boss David Healy.",
+          "translation": "kyle lafferty akũgwatwa mbarũ kwona njota yawe kaĩrĩ arĩ linfield nĩ mũnene david healy",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kyle-lafferty-akugwatwa-mbaru-kwona-njota-yawe-kairi-ari-linfiel.opus"
+        },
+        {
+          "english": "Whoever is in jail in Sengal is there because they committed a crime",
+          "translation": "ũrĩa wĩ nchera sengal arĩ noo nontũ bwa kũthithia mobatũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/uria-wi-nchera-sengal-ari-noo-nontu-bwa-kuthithia-mobatu.opus"
+        },
+        {
+          "english": "And threats to our multi-party politics, all perpetuated by the JUDA administration.",
+          "translation": "na thirikarĩ ya juda kũrega kũgwata mbaru ciaca injega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/na-thirikari-ya-juda-kurega-kugwata-mbaru-ciaca-injega.opus"
+        },
+        {
+          "english": "The fact that the losing presidential candidate can't fall back on a Senate, Cabinet, or Governorship means that the system kicks out older politicians.",
+          "translation": "kwethĩrwa atĩ ũrĩa ũcindi kĩ macindanone ja mũnene o nthĩgũrũ atĩcokera gĩtĩ kĩa mbunge cabinet kana ngabana ikuonania atĩ mũbango ijuikagia oome ateti barĩa bakũri",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kwethirwa-ati-uria-ucindi-ki-macindanone-ja-munene-o-nthiguru-at.opus"
+        },
+        {
+          "english": "I think she offers him advice on how to ignore the constitution.",
+          "translation": "mbuga amwejaa nkũagaya cia kũrega kũthingata gatiba",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mbuga-amwejaa-nkuagaya-cia-kurega-kuthingata-gatiba.opus"
+        },
+        {
+          "english": "This is a disaster.",
+          "translation": "bũũ nĩ kũthũka bũrũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/buu-ni-kuthuka-buru.opus"
+        },
+        {
+          "english": "You think your parents don't know?",
+          "translation": "ũrithũgania aciari baku batĩje",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/urithugania-aciari-baku-batije.opus"
+        },
+        {
+          "english": "Can I afford this program?",
+          "translation": "ndombana na gĩpindi gĩkĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndombana-na-gipindi-giki.opus"
+        },
+        {
+          "english": "The FAA encourages the use of safety seats, but in the past many parents have run into problems trying to use them,",
+          "translation": "faa nĩkũendekithĩria ũtumĩri bũa itĩ bia ũkaria ĩndĩ kabere aciari ibatonyete thĩnene kũgeria kũbitumĩra",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/faa-nikuendekithiria-utumiri-bua-iti-bia-ukaria-indi-kabere-acia.opus"
+        },
+        {
+          "english": "And the information of the alleged impending arrest went viral on social media platforms.",
+          "translation": "na nteto cia mũbango jwa kũgwatwa kwawe ĩkwambĩria kwarĩrua kĩrĩ mĩtandao",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/na-nteto-cia-mubango-jwa-kugwatwa-kwawe-ikwambiria-kwarirua-kiri.opus"
+        },
+        {
+          "english": "And more research would be needed to see whether there would be a difference among diverse populations.",
+          "translation": "kwou ũcunkũni nkũrũki ibũbati kũthithua kwona kethĩra antũ ba rangi mwanya bakethĩrwa barĩna thĩna mwanya",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kwou-ucunkuni-nkuruki-ibubati-kuthithua-kwona-kethira-antu-ba-ra.opus"
+        },
+        {
+          "english": "So what exactly is your issue with that name?",
+          "translation": "imbi yogwa thĩĩna eku na riĩtwa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/imbi-yogwa-thiina-eku-na-riitwa.opus"
+        },
+        {
+          "english": "Let's see if you will make it next time.",
+          "translation": "twone kethĩrwa ũkomba ĩgita rĩu rĩĩngĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/twone-kethirwa-ukomba-igita-riu-riingi.opus"
+        },
+        {
+          "english": "Incident told Igwe that I went to Michael's house a long time ago.",
+          "translation": "incident erĩre igwe atĩ ndetĩre kwa ba michael njaa ĩgiita mma",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/incident-erire-igwe-ati-ndetire-kwa-ba-michael-njaa-igiita-mma.opus"
+        },
+        {
+          "english": "I know that game!",
+          "translation": "imbijĩ ĩtinda rĩu",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/imbiji-itinda-riu.opus"
+        },
+        {
+          "english": "Here, wedged between shifting dunes and pounding waves at the world's most inhospitable diamond dig, lies the earth's most precious jewel box.",
+          "translation": "aja twarĩ gatĩgatĩ ga kũthamua kwa marinya na kabubani kĩrĩ ĩrinya rĩrĩa rinene bũrũ na rĩrĩna goro nkũrũki",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/aja-twari-gatigati-ga-kuthamua-kwa-marinya-na-kabubani-kiri-irin.opus"
+        },
+        {
+          "english": "He will appraise the panel on his intellectual and ethical prowess.",
+          "translation": "akeereca oria biũria e ũmenyo na mwitĩre ngũgĩ jwawe jwa bata",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/akeereca-oria-biuria-e-umenyo-na-mwitire-ngugi-jwawe-jwa-bata.opus"
+        },
+        {
+          "english": "The old man pauses, clearly unwilling to help.",
+          "translation": "m'mũrũme ũrĩa mũkũrũ akarũngama akĩonagia buru atĩkwenda gũtethia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/m-murume-uria-mukuru-akarungama-akionagia-buru-atikwenda-gutethi.opus"
+        },
+        {
+          "english": "Carol, your opinion is needed, I am avoiding noise from the other neighbors.",
+          "translation": "carol kĩũgo gĩakũ nĩgĩkwendeka ĩndĩ ntĩkwenda gĩtũma kũũma atũrĩ bangĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/carol-kiugo-giaku-nigikwendeka-indi-ntikwenda-gituma-kuuma-aturi.opus"
+        },
+        {
+          "english": "It was great meeting you, have a lovely week ahead.",
+          "translation": "nĩ wĩrũ gũtirimana na ũgwe gĩa na mũthĩa jwa kĩũmĩa jũmwega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ni-wiru-gutirimana-na-ugwe-gia-na-muthia-jwa-kiumia-jumwega.opus"
+        },
+        {
+          "english": "It's the only long lasting option",
+          "translation": "barĩ na ũntũ bwa gũkara kenya na kenya",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/bari-na-untu-bwa-gukara-kenya-na-kenya.opus"
+        },
+        {
+          "english": "New clothes.",
+          "translation": "nguo injerũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nguo-injeru.opus"
+        },
+        {
+          "english": "There are increasing cases of violence throughout Uganda.",
+          "translation": "kũrĩna woongereku bwa antũ kũroa nteere cia uganda",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kurina-woongereku-bwa-antu-kuroa-nteere-cia-uganda.opus"
+        },
+        {
+          "english": "It is not shifting; it remains that they are not in cahoots.",
+          "translation": "ũtĩũgarũka nĩ atĩ batĩthaĩrwa na ũrũmwe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/utiugaruka-ni-ati-batithairwa-na-urumwe.opus"
+        },
+        {
+          "english": "He also called for further assistance in order to effectively operationalize the new office.",
+          "translation": "nkũrũki aromba ũtethio kenda obisi njerũ yũmba gwĩta ngũgĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nkuruki-aromba-utethio-kenda-obisi-njeru-yumba-gwita-ngugi.opus"
+        },
+        {
+          "english": "Don't worry, I have plenty for us.",
+          "translation": "ũkamaka ndĩ na cing'ani gĩtwĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ukamaka-ndi-na-cing-ani-gitwi.opus"
+        },
+        {
+          "english": "Call me when you are ready to take action and bring the change we desire in how our history is portrayed.",
+          "translation": "mbiteni bwa tayarĩ tũjũkie itagaria na tũrete ũgarũrũkũ bũrea tũkwenda rũgono rwetũ rwaandĩkwa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mbiteni-bwa-tayari-tujukie-itagaria-na-turete-ugaruruku-burea-tu.opus"
+        },
+        {
+          "english": "If it matters at all, just know that I know you.",
+          "translation": "kethĩrwa nĩ e bata kinya anini menya tu atĩ inkwije",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kethirwa-ni-e-bata-kinya-anini-menya-tu-ati-inkwije.opus"
+        },
+        {
+          "english": "We shall be shamed.",
+          "translation": "tũgatuĩka a nthoni",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/tugatuika-a-nthoni.opus"
+        },
+        {
+          "english": "She is not so sure of how much it is.",
+          "translation": "atĩĩjĩ yũmaga atia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/atiiji-yumaga-atia.opus"
+        },
+        {
+          "english": "The small guys understood that their only chance was to first kick out the big guy.",
+          "translation": "antũ barĩa banini ibaataũkĩri atĩ kanya kao kabujaa bagerete oome muntũ ũrĩa mũnene mbere",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/antu-baria-banini-ibaataukiri-ati-kanya-kao-kabujaa-bagerete-oom.opus"
+        },
+        {
+          "english": "He is a man on a trajectory and is destined for greatness.",
+          "translation": "ii mũtongerĩa ukwonania ageta kũraja",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ii-mutongeria-ukwonania-ageta-kuraja.opus"
+        },
+        {
+          "english": "It's just our bad manners finding a fissure point.",
+          "translation": "nĩ mitugo yetũ ĩ mĩai ĩkũona antũ agũtharũkĩra",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ni-mitugo-yetu-i-miai-ikuona-antu-agutharukira.opus"
+        },
+        {
+          "english": "Huge machines that look as though they came from the Star Wars desert-battle scene lumber among the dunes.",
+          "translation": "machini inene irea ikaraga jaka ciumĩte njotene kĩrĩ gĩpindi kĩa star wars desert battle",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/machini-inene-irea-ikaraga-jaka-ciumite-njotene-kiri-gipindi-kia.opus"
+        },
+        {
+          "english": "We have a problem.",
+          "translation": "twĩ na thĩna",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/twi-na-thina.opus"
+        },
+        {
+          "english": "Look at this tie.",
+          "translation": "tega tai ĩjĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/tega-tai-iji.opus"
+        },
+        {
+          "english": "Right now, he’s with you from all angles,",
+          "translation": "kuuma narua arĩnagũe kuuma ntere cionthe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kuuma-narua-arinague-kuuma-ntere-cionthe.opus"
+        },
+        {
+          "english": "White women serve tea and coffee, and then wash the cups and saucers afterwards.",
+          "translation": "eekũrũ acũnkũ nabo bagakundania  chai na bakathambia ikombe barĩkia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/eekuru-acunku-nabo-bagakundania-chai-na-bakathambia-ikombe-barik.opus"
+        },
+        {
+          "english": "Not sure they will compensate us for damages!",
+          "translation": "ntiĩkũmenya kethĩra bagatũrĩa i hasara ĩrĩa twonete",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntiikumenya-kethira-bagaturia-i-hasara-iria-twonete.opus"
+        },
+        {
+          "english": "The clashes began Wednesday, when the rebel revolutionary armed forces of Colombia launched attacks on a number of northwestern towns.",
+          "translation": "ndoa ĩu yambĩrĩria ntũkũ ya jumatano rĩrĩa arũi aregani na thirikarĩ ba nthĩgũrũ ya colombia bambĩrĩrie kwithũkĩra mĩciĩ ntere cia ĩgũrũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndoa-iu-yambiriria-ntuku-ya-jumatano-riria-arui-aregani-na-thiri.opus"
+        },
+        {
+          "english": "Hello, everyone, welcome to the Soccer City Stadium here in the beautiful city of Johannesburg.",
+          "translation": "mũgeni  bwinthe nĩnkũbũgwata ũgenĩ kĩrĩ kĩenĩ kĩa mũbĩra aja mũciĩ mũnene jũrĩ nkanya jwa johannesbũrg",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mugeni-bwinthe-ninkubugwata-ugeni-kiri-kieni-kia-mubira-aja-muci.opus"
+        },
+        {
+          "english": "Or just like Bolsonaro still has high ratings despite screwing up Brazil's pandemic response",
+          "translation": "kana o ja ũrĩa bolsonaro ethirĩtwe na nkumo i njega o na kethĩrwa nĩ aathũkirie rĩcokia rĩa mũrimũ jwa corona nthigũrũne wa brazil",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kana-o-ja-uria-bolsonaro-ethiritwe-na-nkumo-i-njega-o-na-kethirw.opus"
+        },
+        {
+          "english": "You will not need to carry any card or any information on you again because you have been digitally connected to a central server ready for the one world government, one world economy and one world religion.",
+          "translation": "ũtĩthĩrwa ũrĩ na haja ya gũkamata kadi nontũ mantũ jakũ jonthe jakethĩrwa jarĩ amwe kĩrĩ thirikarĩ ĩmwe ũchũmĩ bũmwe bwa nthĩ na wĩtĩkio bũmwe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/utithirwa-uri-na-haja-ya-gukamata-kadi-nontu-mantu-jaku-jonthe-j.opus"
+        },
+        {
+          "english": "What is a legal regime?",
+          "translation": "ĩmbi ĩĩtagwa thirikarĩ ĩgwĩtania na waatho",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/imbi-iitagwa-thirikari-igwitania-na-waatho.opus"
+        },
+        {
+          "english": "We thank God and happy it’s not here and therefore measures should be put in place it doesn’t get in. That’s all Kenyans are saying.",
+          "translation": "itũgũcokeria mũrungu nkatho na gĩkeno atĩ tĩ aja na kwoũ ntaira icibati gũcũwa kũrigĩria jũkinya aja bũu nobũ kenyans bakuga",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/itugucokeria-murungu-nkatho-na-gikeno-ati-ti-aja-na-kwou-ntaira-.opus"
+        },
+        {
+          "english": "Do we expect him to respect institutions given the precedent that was set by him?",
+          "translation": "no twĩrĩgĩrĩre atĩ nĩ agatĩaga mĩbango ĩrĩa ĩrutagwa nĩ ũntũ bwa kĩoneria kĩrĩa aejanĩte",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/no-twirigirire-ati-ni-agatiaga-mibango-iria-irutagwa-ni-untu-bwa.opus"
+        },
+        {
+          "english": "But I'd be paying for it later.",
+          "translation": "ĩndĩ nkaarĩa nyumene",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/indi-nkaaria-nyumene.opus"
+        },
+        {
+          "english": "Look at that, bad luck you say?",
+          "translation": "ona ũjũ ũkuuga mbati ĩmbĩĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ona-uju-ukuuga-mbati-imbii.opus"
+        },
+        {
+          "english": "Phew! that will be fun to share!",
+          "translation": "phew bũũ bũkagwĩrĩa kũnenkanĩra",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/phew-buu-bukagwiria-kunenkanira.opus"
+        },
+        {
+          "english": "Uganda has started to receive community spread cases of coronavirus",
+          "translation": "uganda ĩkwambĩria kũgwata riboti cia nthitango cia kũgwatithanua gwa coronavirus na wingĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/uganda-ikwambiria-kugwata-riboti-cia-nthitango-cia-kugwatithanua.opus"
+        },
+        {
+          "english": "The region was disappointed by the district leaders.",
+          "translation": "rũtere rũu irũathũrĩtue nĩ atongeria ba mũkoa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/rutere-ruu-iruathuritue-ni-atongeria-ba-mukoa.opus"
+        },
+        {
+          "english": "Someone says corona is not demonic.",
+          "translation": "muntũ ũmwe ariũga corona tĩ ya nkoma",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/muntu-umwe-ariuga-corona-ti-ya-nkoma.opus"
+        },
+        {
+          "english": "Education adds value to you.",
+          "translation": "kĩthomo kiongaĩra gĩtũmi kĩrĩ gwe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kithomo-kiongaira-gitumi-kiri-gwe.opus"
+        },
+        {
+          "english": "We have done nothing to anyone.",
+          "translation": "ũtũe tũcokothete",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/utue-tucokothete.opus"
+        },
+        {
+          "english": "We have to enable the next generation by challenging this one.",
+          "translation": "itũbati kũmbithania nthukĩ e rũjũ na kũregana na jaa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/itubati-kumbithania-nthuki-e-ruju-na-kuregana-na-jaa.opus"
+        },
+        {
+          "english": "I think I will start documenting them on daily basis.",
+          "translation": "ndĩthũgania kũbajũkia mbica cia mũcibi o ntukũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndithugania-kubajukia-mbica-cia-mucibi-o-ntuku.opus"
+        },
+        {
+          "english": "Zeraki provides an exciting opportunity for school administrators to transform their institutions.",
+          "translation": "zeraki iejanaga kanya kathongĩ ka arũngamĩri cukuru kũgarũra cukuru ciao",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/zeraki-iejanaga-kanya-kathongi-ka-arungamiri-cukuru-kugarura-cuk.opus"
+        },
+        {
+          "english": "Their best security given the current trends, is to stay on in their current positions and wait for another person to finally appoint them.",
+          "translation": "ũkaria bwao bũrĩa bũkabua ii gũkara itĩne birĩa baarĩ beterete muntũ ũngĩ abathuura",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ukaria-bwao-buria-bukabua-ii-gukara-itine-biria-baari-beterete-m.opus"
+        },
+        {
+          "english": "I'd like to think we shall have some interesting new.",
+          "translation": "nĩnkũthũgania tũkethĩra tũrĩna mantũ jamerũ jakũgwĩria",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ninkuthugania-tukethira-turina-mantu-jameru-jakugwiria.opus"
+        },
+        {
+          "english": "Is what Incident says true or not?",
+          "translation": "ĩkarĩka rĩũ rirĩũga mma kana ũrongo",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ikarika-riu-ririuga-mma-kana-urongo.opus"
+        },
+        {
+          "english": "The Kakamega County Pathologist Dr Dickson Mchana said samples had been obtained from the body for DNA tests before the identity of the deceased could be confirmed.",
+          "translation": "mũcũnkũni mũnene wa mĩĩrĩ kakamega dickson mchana araugĩre atĩ mũtigairĩ arĩngĩ menyekana nyuma ya ũcunkũni kũrĩka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mucunkuni-munene-wa-miiri-kakamega-dickson-mchana-araugire-ati-m.opus"
+        },
+        {
+          "english": "And your pollens have not poured!",
+          "translation": "na mbeũ cia maũa citagwa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/na-mbeu-cia-maua-citagwa.opus"
+        },
+        {
+          "english": "The Food and Drug Administration banned all imports of mushrooms from China in response to a rash of food-poisoning outbreaks linked to canned Chinese mushrooms.",
+          "translation": "kanbuni ya dawa na ĩrĩo yareganĩre na kuletwa kwa ikuno kuuma china nontũ bwa mĩrimo kuuma kĩrĩ ikuno bia china",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kanbuni-ya-dawa-na-irio-yareganire-na-kuletwa-kwa-ikuno-kuuma-ch.opus"
+        },
+        {
+          "english": "But it is thought that some other detainees at the facility have refused the vaccine",
+          "translation": "ĩndĩ ĩrĩrĩkana abũngwa bangĩ ibaregete dawa ĩu ya kũrigĩrĩa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/indi-iririkana-abungwa-bangi-ibaregete-dawa-iu-ya-kurigiria.opus"
+        },
+        {
+          "english": "I trust these political leaders to do nasty things",
+          "translation": "nĩmbĩtĩkĩtie atongeria baa ba siasa bathithia mantũ jarĩana",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nimbitikitie-atongeria-baa-ba-siasa-bathithia-mantu-jariana.opus"
+        },
+        {
+          "english": "I don't have to say anything.",
+          "translation": "ntĩbũta kuuga kinya atea",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntibuta-kuuga-kinya-atea.opus"
+        },
+        {
+          "english": "Features or articles are longer pieces of a news story and cover an issue in greater depth and might look like an ongoing story from a different angle.",
+          "translation": "into na ntũmĩri nĩ bimũe bia ngono indaaja na bikarũngamĩra na ũndene na ĩkoneka ta rũgono rũe ndereete  kuuma ũtegeri bũa mũanya",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/into-na-ntumiri-ni-bimue-bia-ngono-indaaja-na-bikarungamira-na-u.opus"
+        },
+        {
+          "english": "What they are doing is selective enforcement.",
+          "translation": "barĩthithia kũrikithia kwa mataaro",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/barithithia-kurikithia-kwa-mataaro.opus"
+        },
+        {
+          "english": "So this House has got no choice but to begin the process of removing the Speaker.",
+          "translation": "kwou nyomba ĩĩjĩ ĩtĩna ũntũ bũngĩ tiga kwambĩria mĩbango ya kũmwita gĩtĩne",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kwou-nyomba-iiji-itina-untu-bungi-tiga-kwambiria-mibango-ya-kumw.opus"
+        },
+        {
+          "english": "Who is at the door?",
+          "translation": "nũũ arĩ mũrangone",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nuu-ari-murangone.opus"
+        },
+        {
+          "english": "The members are also expected to be well matched.",
+          "translation": "amemba iberĩgĩri kwĩthirua na ũmenyo bũkinyanirite",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/amemba-iberigiri-kwithirua-na-umenyo-bukinyanirite.opus"
+        },
+        {
+          "english": "Every week there's something new about her, she's a reality TV star.",
+          "translation": "biumia bionthe kũrĩra gĩntũ gĩkĩ erũ ĩgũrũ rĩaweinjũrũa ya tv",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/biumia-bionthe-kurira-gintu-giki-eru-iguru-riaweinjurua-ya-tv.opus"
+        },
+        {
+          "english": "Here.",
+          "translation": "ke",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ke.opus"
+        },
+        {
+          "english": "Seen another way, Oparanya doesn’t seem to have been consulted. He is offering his views in an open letter.",
+          "translation": "kwĩũ ndonere operanya atĩkari jeka araĩjĩ aandĩkĩte barũga kweejana maoni jawe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kwiu-ndonere-operanya-atikari-jeka-araiji-aandikite-baruga-kweej.opus"
+        },
+        {
+          "english": "In either case, ask yourself whether you have become better informed on the issues under protest by watching the act of civil disobedience.",
+          "translation": "kĩrĩ ũntũ bũbũ ciurĩe kethĩra no umenye mantũ na kwona antũ bakĩthithia mantũ jakonie wagu bwa ũkaria",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kiri-untu-bubu-ciurie-kethira-no-umenye-mantu-na-kwona-antu-baki.opus"
+        },
+        {
+          "english": "Boil the water by putting the jebena on the femelo with the charcoal on it.",
+          "translation": "therũkia rũũjĩ wĩkĩrĩte jebena kĩrĩ famelo ĩrĩ na makara ndene",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/therukia-ruuji-wikirite-jebena-kiri-famelo-iri-na-makara-ndene.opus"
+        },
+        {
+          "english": "The Door.",
+          "translation": "mũlango",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mulango.opus"
+        },
+        {
+          "english": "Blinken says US has ‘no doubt’ China was conducting surveillance with balloon.",
+          "translation": "blinkena ariuga us ĩtĩna nkanja china nĩategaĩra na baloon",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/blinkena-ariuga-us-itina-nkanja-china-niategaira-na-baloon.opus"
+        },
+        {
+          "english": "I have contacted few of them and they seem confused.",
+          "translation": "nkwaria na bakai na ijaka baangaratani",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nkwaria-na-bakai-na-ijaka-baangaratani.opus"
+        },
+        {
+          "english": "I am not very sure that is how it works so you can verify.",
+          "translation": "ntĩna ũũma ũu nĩu itaga ngũgĩ kwou ũrithĩria",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ntina-uuma-uu-niu-itaga-ngugi-kwou-urithiria.opus"
+        },
+        {
+          "english": "I see some facilities close forever.",
+          "translation": "ikwona babwe bakiinga kenya",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ikwona-babwe-bakiinga-kenya.opus"
+        },
+        {
+          "english": "Please give me a little more time to request the funds be rerouted to your account.",
+          "translation": "itobu mpa kaanya nkũrũki ndombe mbeca iu itũmwe kĩrĩ ni",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/itobu-mpa-kaanya-nkuruki-ndombe-mbeca-iu-itumwe-kiri-ni.opus"
+        },
+        {
+          "english": "For all her tears & laughter, her wishes and endeavours",
+          "translation": "nontũ bwa methori na ntheko ciawe wĩrĩgĩro na ngũgĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nontu-bwa-methori-na-ntheko-ciawe-wirigiro-na-ngugi.opus"
+        },
+        {
+          "english": "Blue think we are stupid.",
+          "translation": "blue arĩthũgania batwĩ nĩ acinka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/blue-arithugania-batwi-ni-acinka.opus"
+        },
+        {
+          "english": "The Kioo crooner was interviewed by Kiss FM’s Shaffie Weru two weeks ago.",
+          "translation": "mwini wa kioo oragua kĩrĩ kiss fm nĩ shaffie weru biũmia biĩrĩ bithirĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/mwini-wa-kioo-oragua-kiri-kiss-fm-ni-shaffie-weru-biumia-biiri-b.opus"
+        },
+        {
+          "english": "Fresh cow, freshly slaughtered just today!",
+          "translation": "ng'ombe nĩĩ njeru ĩthĩnjĩ werũ o narua",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ng-ombe-nii-njeru-ithinji-weru-o-narua.opus"
+        },
+        {
+          "english": "Why is that a concern of yours?",
+          "translation": "nĩkĩ kĩu kĩrĩ gĩtũmi kĩrĩgũe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/niki-kiu-kiri-gitumi-kirigue.opus"
+        },
+        {
+          "english": "The National Transportation Safety Board will take a close look at the issue during four days of hearings that begin today",
+          "translation": "kamĩtĩ ya nthĩgũrũ ya wĩtĩ na ũkarĩa ĩgategera ũntũ bũũ bwega ĩgita rĩa ũcunkũni bwa ntũkũ ĩnya bũkwambĩrĩa narũa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kamiti-ya-nthiguru-ya-witi-na-ukaria-igategera-untu-buu-bwega-ig.opus"
+        },
+        {
+          "english": "All services except electricity pass through the disputed space.",
+          "translation": "into bonthe akĩ stima ĩkũrũkĩrĩte antũ aũ kũrĩ na ĩgamba",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/into-bonthe-aki-stima-ikurukirite-antu-au-kuri-na-igamba.opus"
+        },
+        {
+          "english": "Saul was a high-strung student of ethnography, a Jew marked doubly as an outsider because of a huge wine-dark birthmark on his face, for which people called him Mascarita, Mask Face",
+          "translation": "saul arĩ mũritwa wa ethnography na arĩ mũntũ wa kuuma israel ĩndĩ antũ bonaga ja muntũ wa kuuma oome nontũ bwa kĩrema kĩria arĩ nakio ũthiũne mwanka antũ bakamwĩta mascarita kana mask face",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/saul-ari-muritwa-wa-ethnography-na-ari-muntu-wa-kuuma-israel-ind.opus"
+        },
+        {
+          "english": "All the records are entered manually for now.",
+          "translation": "rekodĩ cionthe ĩrĩkĩrwa ĩmwe ĩmwe nandĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/rekodi-cionthe-irikirwa-imwe-imwe-nandi.opus"
+        },
+        {
+          "english": "It's going to be a sensational thing, says Mr. Krishnamurthy of P&G in Bombay.",
+          "translation": "bũkethĩrwa bũrĩ ũntũ bwa maĩcĩria nakũũga mr krishnamurthy wa pg bombay",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/bukethirwa-buri-untu-bwa-maiciria-nakuuga-mr-krishnamurthy-wa-pg.opus"
+        },
+        {
+          "english": "Guys watch news and see our competitors.",
+          "translation": "antũ oneni ntento bwone tũgũcindana nabo",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/antu-oneni-ntento-bwone-tugucindana-nabo.opus"
+        },
+        {
+          "english": "Focus on topic of discussion. We will be happy to moderate a topic if necessary. Mostly We are happy to pick on a topic of interest you bring up. No forwards of any kind: traffic, security, emergency, etc",
+          "translation": "tega rwaria tũkethĩrwa tũrĩ na nkero kũrwĩtithia kwendeka mono twĩ na wiru kũleta rwarĩa rũrĩa bũkenda gũtĩ kũleta mbere buru njĩra ũkaria mpwĩna jangĩ etc",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/tega-rwaria-tukethirwa-turi-na-nkero-kurwitithia-kwendeka-mono-t.opus"
+        },
+        {
+          "english": "Hey guys, we have started a countdown to the opening of our online shop for the herbs and spices which we produce and process.",
+          "translation": "antũ tũrĩakuĩ kũrugũra nduka yetũ e mũtandaone kwendia dawa cia mĩtĩ na biungo bia kũruga birea tũgĩtaira aja",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/antu-turiakui-kurugura-nduka-yetu-e-mutandaone-kwendia-dawa-cia-.opus"
+        },
+        {
+          "english": "Polyne was right, Okiya has done it, If Okiya can challenge Papa then times really change.",
+          "translation": "polyne namenyaa okiya akũbũthithia kethĩra okiya no ete gĩũtatĩ na papa magita ijagarũkaga",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/polyne-namenyaa-okiya-akubuthithia-kethira-okiya-no-ete-giutati-.opus"
+        },
+        {
+          "english": "Even as we loud the news, I commend Gilbert and team for the amazing job.",
+          "translation": "kĩnya tũkĩũga ntento nĩngũkũbĩrĩa gilbert na gĩkũndĩ kĩawe nontũ bwa ngũgĩ ĩnjega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kinya-tukiuga-ntento-ningukubiria-gilbert-na-gikundi-kiawe-nontu.opus"
+        },
+        {
+          "english": "You should have just said that in the first place.",
+          "translation": "ũrĩndĩ ũũga ũ kũũma mbere",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/urindi-uuga-u-kuuma-mbere.opus"
+        },
+        {
+          "english": "I tried my best to be friends with the girls, with people in this house but whenever i get into spaces, they keep quiet.",
+          "translation": "ndĩrageretie mono kwa mucore o arĩ baũ na antũ baba be gũnku ĩndĩ barakiraga rĩonthe bambona",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndirageretie-mono-kwa-mucore-o-ari-bau-na-antu-baba-be-gunku-ind.opus"
+        },
+        {
+          "english": "What are your relationships?",
+          "translation": "ndũgũ ciakũ nirĩkũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ndugu-ciaku-niriku.opus"
+        },
+        {
+          "english": "She won the tight game in sets.",
+          "translation": "nĩ aatooririe gĩcindano kĩu na njĩra ya mũcetho",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ni-aatooririe-gicindano-kiu-na-njira-ya-mucetho.opus"
+        },
+        {
+          "english": "So we cannot live, I mean, we are really totally paralyzed right now.",
+          "translation": "kwou tũtĩũmba gwĩta thaa ii twĩ bionje",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kwou-tutiumba-gwita-thaa-ii-twi-bionje.opus"
+        },
+        {
+          "english": "Because reading is tied to everything from cognitive development to the ability to focus.",
+          "translation": "kũthoma ni gũtethairia akiri kũrita ngugĩ bwega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kuthoma-ni-gutethairia-akiri-kurita-ngugi-bwega.opus"
+        },
+        {
+          "english": "Why didn't you tell me?",
+          "translation": "nĩkĩ nĩũntũ ũraregere kũũmbĩra",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/niki-niuntu-uraregere-kuumbira.opus"
+        },
+        {
+          "english": "They might have already changed their minds.",
+          "translation": "no kwĩthirũe nĩbaranchĩchĩrie mathũganio",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/no-kwithirue-nibaranchichirie-mathuganio.opus"
+        },
+        {
+          "english": "Laziness is comfortable in the short term but always costs you in the long term.",
+          "translation": "ũthao ibũreta kũboreria o kagita gagakũĩ indĩ bũkareta mithangiko na kagita gakaraja",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/uthao-ibureta-kuboreria-o-kagita-gagakui-indi-bukareta-mithangik.opus"
+        },
+        {
+          "english": "A guy by the name Mike.",
+          "translation": "mũntũ wĩtagwa mike",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/muntu-witagwa-mike.opus"
+        },
+        {
+          "english": "Had it been another president, he would be gone the day after the letter leaked to the media.",
+          "translation": "ũkĩĩthĩra nĩ mũnene ũngĩ o nthĩgũrũ agĩĩta ntũkũ ĩmwe nyuma ya barũga kũmenyekana nĩ antũ ba nteto",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ukiithira-ni-munene-ungi-o-nthiguru-agiita-ntuku-imwe-nyuma-ya-b.opus"
+        },
+        {
+          "english": "Eilish worked at the horse stable in exchange for riding lessons.",
+          "translation": "eilish aĩtaga nkanata ya mbarathi kenda ona kĩthomo kĩa kĩmĩĩtĩthia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/eilish-aitaga-nkanata-ya-mbarathi-kenda-ona-kithomo-kia-kimiitit.opus"
+        },
+        {
+          "english": "Now what rubbish is that?",
+          "translation": "bũu nĩ ũoro bwa rũko",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/buu-ni-uoro-bwa-ruko.opus"
+        },
+        {
+          "english": "One of the champions of East Africa's democratic recession lies cold in a freezer tonight.",
+          "translation": "nchamba ĩmwe ya gũcoka nyũma kwa thirikarĩ ya antũ amamĩ mbarabũne narũa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nchamba-imwe-ya-gucoka-nyuma-kwa-thirikari-ya-antu-amami-mbarabu.opus"
+        },
+        {
+          "english": "Pregnant mothers risk death if not transferred immediately to the hospital.",
+          "translation": "ekũrũ babarito bethagĩrwa ũgwatine bwa gĩkuũ kethĩrwa batĩkũmatũkua cibitarĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ekuru-babarito-bethagirwa-ugwatine-bwa-gikuu-kethirwa-batikumatu.opus"
+        },
+        {
+          "english": "Cancelled events.",
+          "translation": "biatho gutejanĩrua",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/biatho-gutejanirua.opus"
+        },
+        {
+          "english": "Could we discuss the legal options available here?",
+          "translation": "notwarĩrĩe sheria irĩa twĩnacio aja",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/notwaririe-sheria-iria-twinacio-aja.opus"
+        },
+        {
+          "english": "Why are you all holding your breath?",
+          "translation": "nĩkĩ bwinthe bũgwatĩrĩte mĩrũkĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/niki-bwinthe-bugwatirite-miruki.opus"
+        },
+        {
+          "english": "This is the demo account they shared with schools.",
+          "translation": "ĩjĩ nĩ akoũntĩ ya kwonania baejana kĩrĩ cukuru",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/iji-ni-akounti-ya-kwonania-baejana-kiri-cukuru.opus"
+        },
+        {
+          "english": "One that will bring an end to the senseless chaos and lead to a much more inclusive society.",
+          "translation": "bũũ bũkathĩrĩa ndwa citathĩra na kwĩthĩrwe kũrĩ na kũgwatanĩra kwa antũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/buu-bukathiria-ndwa-citathira-na-kwithirwe-kuri-na-kugwatanira-k.opus"
+        },
+        {
+          "english": "I am visiting them in a special way.",
+          "translation": "nkabariungĩr na njĩra mwanya",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nkabariungir-na-njira-mwanya.opus"
+        },
+        {
+          "english": "From that point on, the U.S. would make a practice of overlooking the Panamanian's misadventures.",
+          "translation": "kuuma rĩu us yambĩria gũtegera mantũ ja panama",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kuuma-riu-us-yambiria-gutegera-mantu-ja-panama.opus"
+        },
+        {
+          "english": "To eliminate them but they were increasing in number every day.",
+          "translation": "kenda baithiria ĩndĩ gaikwongereka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/kenda-baithiria-indi-gaikwongereka.opus"
+        },
+        {
+          "english": "I gently closed the door behind me and just thanked God for this man.",
+          "translation": "indaingĩre murango jũu na ĩnguchokeria mũrungu nkatho",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/indaingire-murango-juu-na-inguchokeria-murungu-nkatho.opus"
+        },
+        {
+          "english": "Some FAA officials note that few infants have been killed in plane crashes, raising the question of whether safety seats really are needed.",
+          "translation": "atongeria bamwe ba faa ibamenyete aana bakai iboragi kuumania na kũgũa kũa ndege na kureta kĩũria kĩa wethĩrũa itĩ bia ũkaria ibikũendeka",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/atongeria-bamwe-ba-faa-ibamenyete-aana-bakai-iboragi-kuumania-na.opus"
+        },
+        {
+          "english": "At State House.",
+          "translation": "nyomba e thirikarĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nyomba-e-thirikari.opus"
+        },
+        {
+          "english": "They improved after the break and had a penalty of their own ruled out for offside against Erling Haaland.",
+          "translation": "bacetha bwega nyuma ya kunogoka na kinya nyuma ya ngoru ya erling haaland kuregerwa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/bacetha-bwega-nyuma-ya-kunogoka-na-kinya-nyuma-ya-ngoru-ya-erlin.opus"
+        },
+        {
+          "english": "Let me just say we're unlucky to live in the age of such a malevolent genius.",
+          "translation": "reka nkwĩre atĩ tũtĩ na kĩĩrĩgĩro kĩega gĩa gũtũũra ĩgitene ja rĩu rĩa muntũ wĩ na ũmenyo mũnene ũu",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/reka-nkwire-ati-tuti-na-kiirigiro-kiega-gia-gutuura-igitene-ja-r.opus"
+        },
+        {
+          "english": "Good advice there. Painful truth",
+          "translation": "nkuagaya injega au umma bwina ũrũrũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/nkuagaya-injega-au-umma-bwina-ururu.opus"
+        },
+        {
+          "english": "Khosi later came around and called Thabang for a conversation.",
+          "translation": "khosi nyũmene eja na gwĩta thabang baria",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/khosi-nyumene-eja-na-gwita-thabang-baria.opus"
+        },
+        {
+          "english": "See he didn't talk about how the Executive doesn't follow court orders.",
+          "translation": "ũkwona ataria ũrĩa ũnene bwa nthigũrũ bũtĩthingataga mawatho ja koti",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/ukwona-ataria-uria-unene-bwa-nthiguru-butithingataga-mawatho-ja-.opus"
+        },
+        {
+          "english": "A student who spoke to us said that after supper their colleague was sad and he didn’t want to speak to anyone.",
+          "translation": "mũrĩtwa ũria watwarĩĩrie aũgĩre nyuma ya kũria ũgoro mũrĩtwa ũũ narĩ na kwĩthikĩra na atendaga kwaria na mũntũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/muritwa-uria-watwariirie-augire-nyuma-ya-kuria-ugoro-muritwa-uu-.opus"
+        },
+        {
+          "english": "The Director of Quality Assurance can be of help. See inbox",
+          "translation": "mũrũngamĩrĩ wa quality assurance atethia tega ntũmwa yakũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/murungamiri-wa-quality-assurance-atethia-tega-ntumwa-yaku.opus"
+        },
+        {
+          "english": "Those he refused to appoint are the best that we deserve.",
+          "translation": "barĩa aregere kũthuura ibo barĩ babega",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/baria-aregere-kuthuura-ibo-bari-babega.opus"
+        },
+        {
+          "english": "Where did you get this one?",
+          "translation": "inaa waitĩre bũbũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
+          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/meru/inaa-waitire-bubu.opus"
+        },
+        {
+          "english": "To enter the U.S. until satisfactory sanitation-control measures are implemented in China",
+          "translation": "gũtonya us mwanka mantũ jang'anĩ ja ũtherũ kũthithũa china",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Next thing we are amending the Constitution.",
+          "translation": "au angĩ gatũgucĩcia katiba",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Once that is achieved the rest can be rather easily",
+          "translation": "jũũ jwombĩka jangĩ nĩ rahĩsĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "I have heard a lot about Tanzanian cuisine!",
+          "translation": "imbigĩtwe mono ĩgũrũ e mĩrũgĩre e nthĩgũrũ e tanzania",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "According to your own public admission recently, our country loses money daily to corruption under your watch.",
+          "translation": "kũringana na rwaria rwenu bwingwa kĩrĩ mwingĩ nthĩgũrũ yeetũ ĩtejaga beca ntunkũ cionthe nkũnkũmone",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "The only thing I lack is grey hair.",
+          "translation": "ũntũ burĩa akĩ ntĩna bu ii mbwĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Here are our Parliamentary Group meeting resolutions.",
+          "translation": "jaja ijo mantũ jarea turetĩkanĩrĩrie kĩrĩ mũcemanio jwetũ jwa  abunge",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "India and China showed the way. There’s no reason why we can’t or shouldn’t do the same in Africa",
+          "translation": "india na china ibatũonerie njĩra gũtĩna gĩtũmi gĩa kũrega kana kũremwa kũgĩta ja bũu afrika",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Who got married?",
+          "translation": "no aragũrĩrwe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "It is the greatest village in East Africa.",
+          "translation": "ni ntũra ĩria nene bũrũ east africa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "The police arrested a man suspected of killing his wife.",
+          "translation": "borithi bakũgwata mtũ ũũragite mwekũrũ waawe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Northern Uganda had less positive cases in the last days of August.",
+          "translation": "rũtere rwa ũrio rwa ũganda rwarĩ na nthitango inkai cia mũrimo mũthiene jwa mweri jwa ĩnana",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "You really have excessive faith in Hon. Raila Odinga. Temper it.",
+          "translation": "wĩna wĩtĩkio mono na raila odinga nyia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "In the capital, Islamabad Police issued a security high-alert and said security at all entry and exit points to the city had been increased.",
+          "translation": "kĩrĩ muciĩ mũnene abicaa ba borici ba islamabad baraũgĩre atĩ kũrĩna ũkaria bũrĩ ĩgũrũ mono na ntere cionthe cia kũũma na gũtonya muciĩ mũnene niikarĩtue",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Addressing journalists after storming out of the chambers, the Senators turned on Speaker Kingi, accusing him of being partisan.",
+          "translation": "bakĩaragia na aandĩki ba nteto nyuma ya kuuma kĩrĩ gĩkaro kĩu maseneta bau baraũgĩre kingi nakwendera rũtere rũmwe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "This is prudent, the neighbouring estate did the same and cases of mischief have since reduced.",
+          "translation": "aturi bathithirie uu mantũ jaa mathũku janyia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "There is no dull day in Kenya",
+          "translation": "imbi ĩgũkũmakia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Every teacher belongs to a savings group.",
+          "translation": "mwarimũ wonthe ethagĩrwa arĩ gĩkundine kia wonjorithia",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "He's full.",
+          "translation": "akũnyira",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Media exposes thugs and you still elect them into office.",
+          "translation": "nyomba cĩa nteto ĩmũrĩkaga amba na bũgeeta na mbeere kũbathuura obĩcĩne",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "He hasn’t hidden his new found love for Naomi.",
+          "translation": "ataĩtha wendo bwawe bũbwerũ kĩrĩ naomi",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "The issue you have raised is one which shouldn't be taken lightly.",
+          "translation": "mantũ jaria jaarirua jatibatii kũjũkua na ruugo",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "In not-so-hushed tones our conversations will warm our hearts, our lives and our Country.",
+          "translation": "tĩ na kĩoe ndwaria cietũ ikathũkia nkoro ũtũro na nthĩ yetũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Work accomplished.",
+          "translation": "ngũgĩ kũthira",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "We're not afraid, because if Russia wanted to take Moldova, they'd do it in half a day.",
+          "translation": "tũtĩna ũgwaa nontũ kethĩra russia ibakwenda kũjũkĩa moldova bathithia uu na ntukũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Next, add water to the jebena.",
+          "translation": "rĩũ ũgekĩra rũũjĩ kĩrĩ jebena",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "In the tie breaker, the girl raised her game again to win.",
+          "translation": "gĩathĩne gĩa kũrũa mwarĩ ũu nĩ aacokire aota gũtooria",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Hassan is a good mobilizer and strategy on grassroots ground up campaigns.",
+          "translation": "hassan nĩ mũthũranĩa ũmwega na mũbangi wa kũũma nthĩ mwanka ĩgũrũ wa kampeni",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "The effect was so powerful in the mind of the oppressed that even when the very privileges which were denied them became available.",
+          "translation": "mpumi ciarĩ na inya mono mathũganione ja barea barĩ ũkombone kinya rĩrĩa into birea baati bionekere",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Although this arrangement has worked.",
+          "translation": "kinya kethĩra mũbangĩre jũu jũgwita ngũgĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Testing for Human Immune Virus is the only way of knowing if one's infected or not",
+          "translation": "kũthimwa mukingo nĩo njĩra yonka ya kũmenya wethĩrwa muntũ najĩtue kana arĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Mya, are you an anti-vaxxer?",
+          "translation": "mya ũgwe ũrĩregana na chanjo",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "I can't use terms like majority, most, a number, few.",
+          "translation": "ntĩũmba gũtumira mariĩtwa ta mwĩngĩ babaingĩ namba bakai",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "The number of cases from contacts is high.",
+          "translation": "namba e makarĩka ja barea bakarenie na barea bagwatĩlene na mũrimo ĩrĩgũrũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Do you want to be struggling in life?",
+          "translation": "nũ ũkwenda kũria thĩna ũtũrone bwaku",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "To begin with, the popularity of Kisumu real estate market is currently being driven by the county’s tourism sector.",
+          "translation": "kwambĩria unene bwa kisumu kĩrĩ mantũ ja wonjorithia jaumenie na wĩĩti na mbele bwa kauntĩ iu kĩrĩ ũtalii",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "May the Lord protect us.",
+          "translation": "mũrungu natũkarie",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Impunity will carry the day.",
+          "translation": "kũrega kũmaka kugacinda",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Raila is part of the decision.",
+          "translation": "raila arĩ ũmwe wa kũgita ĩtũa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "It’s the sad reality of the audience.",
+          "translation": "nĩo mma e kwithikĩra kĩ athikĩri",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "He controls this counterpoint like a novelistic Bach, reaching an audacious extreme in a hilarious chapter in which the \"Vargas Llosa\" voice relates his adventures as an inept television newsman.",
+          "translation": "agwataga rutere rwawe ja muandĩki urĩ nkuma na akaandika mantũ jagukenia ja urĩa vargas llosa aandikaga",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "It’s served its purpose!",
+          "translation": "nĩitĩre ngũgĩ eyo",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "I will not rest easy until I see the order.",
+          "translation": "ntĩnogoka mwanka mbone ĩromba",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "We shall not relent on the war against this vice.",
+          "translation": "tũtĩnoga kĩrĩ ndũa na thina ĩjĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "You will see a three-way split in the path.",
+          "translation": "ũkoona maathũkano jathatũ kajĩrene",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "On a serious note I know folks who used to travel upcountry often to see parents, chicken and children.",
+          "translation": "na kũinyiria imbijĩ antũ beeta ricabu kwona aciari ngũkũ na aana",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Capturing Nairobi has been a desire of the national government.",
+          "translation": "kũjũkĩa nairobi yarĩ wendo mono bwa thirikarĩ ya nthigũrũ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "We shall be civil. We shall be open to different viewpoints.",
+          "translation": "tũri na heshima tũkaigua biũgo bionthe",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "The spy network would serve two clients:",
+          "translation": "agwati ba nteto ba witho batethagĩa antũ baĩrĩ",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Teenagers paying rent? Are they orphans?",
+          "translation": "aana bakĩrĩa kodi ka barĩ ntĩgwa",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         }
       ]
     },
@@ -7716,5 +9454,5 @@
   "source": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml); Arthur M. Champion (1912) The Atharaka (JRAI Vol. 42, Public Domain)",
   "isoCode": "mer",
   "glottocode": "meru1245",
-  "totalEntries": 1366
+  "totalEntries": 1664
 }
