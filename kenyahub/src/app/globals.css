@@ -45,6 +45,8 @@
    ══════════════════════════════════════════════════ */
 :root,
 [data-theme="dark"] {
+  --font-inter: "Inter";
+  --font-outfit: "Outfit";
   --bg-primary: #0C0A08;
   --bg-secondary: #141210;
   --bg-card: #1C1916;
