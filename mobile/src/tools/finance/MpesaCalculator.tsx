@@ -71,15 +71,15 @@ export function MpesaCalculator() {
       : amount;
 
     // Check if adding withdrawal fee pushed recipient into next withdrawal band!
-    const actualAgentWithdrawFee =
+    const escalatedWithdrawFee =
       calcMpesaFee(Math.min(250000, amountToSend), "withdrawAgent") ??
       withdrawalFeeForTarget;
     const adjustedAmountToSend =
-      includeWithdrawal && actualAgentWithdrawFee > withdrawalFeeForTarget
-        ? amount + actualAgentWithdrawFee
+      includeWithdrawal && escalatedWithdrawFee > withdrawalFeeForTarget
+        ? amount + escalatedWithdrawFee
         : amountToSend;
 
-    const withdrawFee = includeWithdrawal ? actualAgentWithdrawFee : 0;
+    const withdrawFee = includeWithdrawal ? escalatedWithdrawFee : 0;
     const effectiveSendAmount =
       includeWithdrawal && amount <= 250000
         ? Math.min(250000, adjustedAmountToSend)
