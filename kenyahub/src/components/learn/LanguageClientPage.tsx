@@ -1118,7 +1118,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       )}
 
       {/* Always-Indexable Core Vocabulary & Expressions Reference Table for Search Engines */}
-      {(view === "skill-tree" || view === "vocab") && sampleWords.length > 0 && (
+      {(view === "lessons" || view === "modules") && sampleWords.length > 0 && (
         <section className="mt-8 bg-bg-card border border-border rounded-2xl p-4 sm:p-6 space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">

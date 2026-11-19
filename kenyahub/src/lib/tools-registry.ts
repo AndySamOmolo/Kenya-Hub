@@ -45,7 +45,7 @@ export const TOOLS: Tool[] = [
     seoTitle: 'EUDR GeoJSON Polygon Validator Kenya Coffee Cooperatives 2026',
     shortTitle: 'EUDR GeoJSON Packager',
     description: 'Validate smallholder farm GPS polygons (>=4ha vs <4ha), check closure, self-intersections, <10m GNSS accuracy, and export EU TRACES-ready GeoJSON ahead of Dec 2026 / Jun 2027 EUDR deadlines.',
-    category: 'finance',
+    category: 'finance-tax',
     keywords: ['EUDR compliance Kenya coffee', 'EU TRACES GeoJSON polygon validator', 'coffee cooperative geolocation Kenya', 'EUDR 2026 2027 deadline'],
     updateFrequency: 'annual',
     dataSource: 'EU Deforestation Regulation (EU 2023/1115)',

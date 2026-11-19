@@ -130,6 +130,7 @@ def load_hf_stream(repo: str, config: str, split: str = "train", revision: str =
     kwargs = {"split": split, "streaming": True, "token": HF_TOKEN}
     if revision:
         kwargs["revision"] = revision
+    kwargs.setdefault("trust_remote_code", True)
     try:
         return load_dataset(repo, config, **kwargs)
     except TypeError:
@@ -498,7 +499,7 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
         {"lang_id": "swahili", "repo": "google/WaxalNLP", "config": "swa_tts", "split": "train", "text_col": "text"},
         {"lang_id": "kikuyu", "repo": "google/WaxalNLP", "config": "kik_tts", "split": "train", "text_col": "text"},
         {"lang_id": "luo", "repo": "google/WaxalNLP", "config": "luo_tts", "split": "train", "text_col": "text"},
-        {"lang_id": "maasai", "repo": "google/WaxalNLP", "config": "mas_asr", "split": "train", "text_col": "transcription"},
+        {"lang_id": "luhya", "repo": "google/WaxalNLP", "config": "mas_asr", "split": "train", "text_col": "transcription"},
         {"lang_id": "borana", "repo": "google/WaxalNLP", "config": "orm_asr_v2", "split": "train", "text_col": "transcription"},
         # 2. CLEAR Global BibleTTS Dholuo (Parquet native, studio 24kHz)
         {"lang_id": "luo", "repo": "CLEAR-Global/BibleTTS-Luo", "config": "read", "split": "train", "text_col": "text"},
@@ -517,9 +518,7 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
         {"lang_id": "teso", "repo": "Sunbird/salt", "config": "studio-teo", "split": "train", "text_col": "text", "gated": True},
         {"lang_id": "swahili", "repo": "Sunbird/salt", "config": "studio-swa", "split": "train", "text_col": "text", "gated": True},
         # 7. Phase 1 New Zero-Gate Commercially Permissive Audio Corpora (Nov 2026 Audit)
-        {"lang_id": "kikuyu", "repo": "multilingual-tts/open-bible", "config": "kik", "split": "train", "text_col": "text", "gated": False},
-        {"lang_id": "swahili", "repo": "multilingual-tts/open-bible", "config": "swh", "split": "train", "text_col": "text", "gated": False},
-        {"lang_id": "borana", "repo": "multilingual-tts/open-bible", "config": "gaz", "split": "train", "text_col": "text", "gated": False},
+        {"lang_id": "luo", "repo": "multilingual-tts/open-bible", "config": "Dholuo", "split": "train", "text_col": "text", "gated": False},
         {"lang_id": "swahili", "repo": "michsethowusu/swahili-words-speech-text-parallel", "config": "default", "split": "train", "text_col": "text", "gated": False},
         {"lang_id": "swahili", "repo": "stem-content-ai-project/swahili-speech", "config": "default", "split": "train", "text_col": "transcription", "gated": False},
         {"lang_id": "swahili", "repo": "Kencorpus/KenCorpus_audio", "config": "default", "split": "train", "text_col": "transcript", "gated": False},

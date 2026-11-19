@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02",
+  "lastUpdated": "2026-11-19",
   "guides": {
     "learn": {
       "slug": "learn",
@@ -926,6 +926,14 @@
         {
           "question": "Do I pay out of pocket at Level 2 and Level 3 health centres?",
           "answer": "No. Primary healthcare services at empanelled Level 2 dispensaries and Level 3 health centres are covered under the Primary Healthcare Fund without co-payment."
+        },
+        {
+          "question": "How much is the monthly SHIF contribution in Kenya in 2026?",
+          "answer": "Salaried employees contribute 2.75% of gross monthly salary (with a minimum of KES 300/month and no upper cap), while non-salaried households contribute based on the SHA Means Testing Instrument (minimum KES 300/month)."
+        },
+        {
+          "question": "Is SHIF tax-deductible when calculating monthly KRA PAYE?",
+          "answer": "Yes. Under the Tax Laws (Amendment) Act 2024/2025, mandatory SHIF contributions (2.75% of gross pay) are fully tax-deductible before computing chargeable income for PAYE."
         }
       ]
     },
@@ -967,6 +975,14 @@
         {
           "question": "Can I sue my landlord for an unrefunded rent deposit in Small Claims Court?",
           "answer": "Yes. Claims for refund of tenancy security deposits under KES 1,000,000 explicitly fall within Small Claims Court jurisdiction."
+        },
+        {
+          "question": "Do I need a lawyer to file a case in Kenya's Small Claims Court?",
+          "answer": "No. Small Claims Court proceedings are designed for self-representation in English or Kiswahili without strict technical rules of evidence, though parties may choose to hire an advocate if they wish."
+        },
+        {
+          "question": "How long does a Small Claims Court case take in Kenya?",
+          "answer": "Section 34 of the Small Claims Court Act mandates that every claim be heard and determined within 60 days from the date of filing."
         }
       ]
     },
@@ -1008,6 +1024,14 @@
         {
           "question": "Who pays for the NTSA logbook transfer fee?",
           "answer": "By market convention in Kenya, the buyer typically pays the eCitizen transfer fee upon accepting the transfer, unless agreed otherwise in the Sale Agreement."
+        },
+        {
+          "question": "How long does an NTSA TIMS / eCitizen logbook transfer take?",
+          "answer": "Once both the seller and buyer accept the transfer on eCitizen TIMS and pay the statutory fee, approval typically takes 3 to 7 working days, after which the new logbook is printed for collection at the selected NTSA centre."
+        },
+        {
+          "question": "What documents are required for a forced or deceased-owner vehicle transfer?",
+          "answer": "Forced transfers require a court order or auctioneer's certificate of sale, while deceased-owner transfers require a Confirmed Grant of Letters of Administration (or Probate) plus a certified copy of the death certificate."
         }
       ]
     },
@@ -1045,6 +1069,18 @@
         {
           "question": "How do I check my Boma Yangu savings balance?",
           "answer": "Dial *832# on your phone or log in to bomayangu.go.ke using your National ID number to view both voluntary savings and statutory levy credits."
+        },
+        {
+          "question": "What is the minimum deposit required for a Boma Yangu Affordable Housing unit?",
+          "answer": "Applicants save voluntarily through the Boma Yangu portal (PayBill 522522) toward a 10% deposit of the unit price, with flexible monthly tenant-purchase (TPS) repayment plans of up to 25–30 years."
+        },
+        {
+          "question": "Are Affordable Housing Levy (1.5%) payroll deductions credited to my Boma Yangu savings?",
+          "answer": "No. The mandatory 1.5% Affordable Housing Levy is a statutory tax funding national housing construction; voluntary Boma Yangu deposits are tracked separately toward your personal home purchase deposit."
+        },
+        {
+          "question": "What interest rates apply to Boma Yangu Tenant Purchase Schemes (TPS)?",
+          "answer": "Social Housing units attract 3% p.a. fixed interest, Affordable Housing units attract 6% p.a., and Affordable Middle-Class units attract 9% p.a. under the Affordable Housing Act."
         }
       ]
     },
@@ -1082,6 +1118,18 @@
         {
           "question": "Can I deduct repair costs or mortgage interest under the 7.5% MRI tax?",
           "answer": "No. The 7.5% MRI tax is charged on gross residential rent without expense deductions. However, a landlord may write to the KRA Commissioner to opt out of MRI and be taxed on net rental profit under standard income tax rates."
+        },
+        {
+          "question": "What is the Monthly Rental Income (MRI) tax rate in Kenya in 2026?",
+          "answer": "Resident landlords earning between KES 288,000 and KES 15,000,000 per year in gross residential rent pay a flat 7.5% Monthly Rental Income (MRI) tax on gross rent collected, filed on iTax by the 20th of the following month."
+        },
+        {
+          "question": "Can landlords deduct repairs or mortgage interest under the 7.5% MRI regime?",
+          "answer": "No. The 7.5% MRI tax is a final tax calculated on gross rent without expense deductions. Landlords with high maintenance or mortgage costs may elect in writing to be taxed under the regular corporate/individual income tax regime instead."
+        },
+        {
+          "question": "What is the penalty for late filing of Monthly Rental Income tax?",
+          "answer": "Late filing attracts a penalty of KES 2,000 (individuals) or KES 20,000 (companies) or 5% of tax due (whichever is higher), plus 5% late payment penalty and 1% monthly interest."
         }
       ]
     },
@@ -1119,6 +1167,18 @@
         {
           "question": "Is a landlord allowed to lock my house or switch off water for late rent?",
           "answer": "No. Kenyan courts have consistently ruled that locking a tenant out or disconnecting water/electricity is unlawful self-help and violates constitutional and statutory tenancy protections."
+        },
+        {
+          "question": "Can a Kenyan landlord lock out a residential tenant or seize furniture without a court order?",
+          "answer": "No. Illegal lockouts, disconnecting water/electricity, or seizing household goods without a licensed auctioneer acting under the Distress for Rent Act (Cap 293) is unlawful and actionable before the Rent Restriction Tribunal."
+        },
+        {
+          "question": "How long should a landlord take to refund a security deposit after vacating?",
+          "answer": "While the exact timeline is governed by the tenancy agreement, standard Kenyan practice and tribunal rulings require landlords to inspect the premises and refund the security deposit (less itemized, receipted damage repairs) within 14 to 30 days of handover."
+        },
+        {
+          "question": "Which tribunal handles commercial shop leases versus residential disputes?",
+          "answer": "Commercial controlled tenancies (less than 5 years or lacking a written agreement) are handled by the Business Premises Rent Tribunal (BPRT), whereas residential disputes under statutory limits go to the Rent Restriction Tribunal or Small Claims Court."
         }
       ]
     },
@@ -1156,6 +1216,18 @@
         {
           "question": "Must I register my househelp for SHA and NSSF in Kenya?",
           "answer": "Yes. Under Kenyan labour and social security laws, every employer of a domestic worker is required to remit monthly NSSF and SHA contributions."
+        },
+        {
+          "question": "Are domestic workers in Kenya entitled to paid annual leave and maternity leave?",
+          "answer": "Yes. Under the Employment Act (Cap 226), every domestic worker who completes 12 consecutive months of service is entitled to at least 21 working days of paid annual leave, 1 rest day per week, and 3 months paid maternity leave (or 2 weeks paternity leave)."
+        },
+        {
+          "question": "Do employers have to remit NSSF and SHA for house helps and gardeners?",
+          "answer": "Yes. Employers of domestic workers are legally required to register as employers and remit monthly NSSF Tier I/II contributions and 2.75% SHIF contributions (minimum KES 300/month) by the 9th of each month."
+        },
+        {
+          "question": "Does the statutory minimum wage differ between Nairobi, Mombasa, Kisumu, and rural areas?",
+          "answer": "Yes. Kenya's Regulation of Wages Order sets three geographic tiers: Cities (Nairobi, Mombasa, Kisumu), Former Municipalities & Urban Councils, and All Other Areas (rural), with higher minimum wages in cities."
         }
       ]
     },
@@ -1193,6 +1265,18 @@
         {
           "question": "How do I check which phone numbers are registered under my ID in Kenya?",
           "answer": "Dial *106# on Safaricom, Airtel, or Telkom and select Option 1 to view all mobile numbers linked to your National ID."
+        },
+        {
+          "question": "How do I stop premium SMS and Skiza Tunes from deducting my Safaricom airtime?",
+          "answer": "Dial *456# → Stop Services (or *100# → My Subscriptions) to view and unsubscribe from all active premium SMS shortcodes, Skiza Tunes, and third-party content services immediately."
+        },
+        {
+          "question": "Why does my airtime disappear even when I didn't make calls?",
+          "answer": "The most common cause is out-of-bundle mobile data usage when a data bundle expires while background apps stay active. Enable Safaricom Data Manager (*544# → Data Manager) to block automatic out-of-bundle airtime charges."
+        },
+        {
+          "question": "How do I unsubscribe from promotional services on Airtel Kenya?",
+          "answer": "Dial *100# → Manage My Account → Subscriptions, or send STOP to the offending 5-digit shortcode. You can also activate Airtel's out-of-bundle data lock via the MyAirtel app."
         }
       ]
     },
@@ -1229,115 +1313,279 @@
         {
           "question": "Which network is 0110 to 0115 in Kenya?",
           "answer": "Prefixes 0110, 0111, 0112, 0113, 0114, and 0115 are allocated to Safaricom PLC, while 0100 to 0106 are allocated to Airtel Kenya."
+        },
+        {
+          "question": "Can a 0722 or 0733 number belong to a different network due to Mobile Number Portability?",
+          "answer": "Yes. Although the Communications Authority (CA) originally allocated specific blocks (e.g., 0700–0729 to Safaricom, 0730–0739 to Airtel), Mobile Number Portability (MNP) lets subscribers switch operators while keeping their original prefix."
+        },
+        {
+          "question": "What are the newer 01xx mobile prefixes in Kenya?",
+          "answer": "After 07xx ranges neared exhaustion, CA opened the 01xx block: 0110–0115 are assigned to Safaricom and 0100–0106 are assigned to Airtel Kenya."
+        },
+        {
+          "question": "How do I identify a Faiba 4G (Jamii Telecom) or Equitel number?",
+          "answer": "Faiba 4G (Jamii Telecom) uses the 0747 prefix, while Equitel (Finserve / Equity Bank MVNO) uses the 0763–0766 prefixes."
+        }
+      ]
+    },
+    "etims-mpesa-reconciler": {
+      "notesTitle": "2026 KRA eTIMS Disallowed-Expense Rules",
+      "overview": [
+        "Under KRA's 2026 automated eTIMS cross-matching rules, business expenses lacking a validated eTIMS invoice are disallowed for corporate income tax, triggering a 30% corporate tax penalty on unreceipted spend."
+      ],
+      "howItWorks": [
+        "Paste or edit M-Pesa Paybill/Till outflows and KRA eTIMS buyer invoice records.",
+        "Tag statutory exemptions (emoluments, imports, airline tickets, investment allowances, interest).",
+        "Review unmatched spend, live 30% tax exposure, and export a Buyer-Initiated (Reverse) eTIMS CSV or WhatsApp supplier chase list."
+      ],
+      "complianceTips": [
+        "Every KES 1,000,000 in unreceipted business expenses adds KES 300,000 in corporate income tax.",
+        "All reconciliation runs 100% locally in your browser/device with zero cloud upload."
+      ],
+      "slug": "etims-mpesa-reconciler",
+      "faq": [
+        {
+          "question": "Why does KRA disallow business expenses that lack an eTIMS invoice?",
+          "answer": "Under the Finance Act and KRA's 2026 automated eTIMS cross-matching rules, every deductible business expense must be backed by a valid eTIMS-transmitted tax invoice bearing the buyer's KRA PIN. Unreceipted expenses are added back to taxable profit, creating an immediate 30% corporate income tax exposure."
+        },
+        {
+          "question": "Which expenses are legally exempt from KRA eTIMS invoicing?",
+          "answer": "Statutory exemptions include employee emoluments (PAYE payroll), imported goods cleared via KRA iCMS customs entries, international airline passenger tickets, bank interest and financial charges, and capital investment allowances."
+        },
+        {
+          "question": "How does Buyer-Initiated (Reverse) eTIMS invoicing work for small suppliers?",
+          "answer": "When purchasing from small-scale or informal suppliers who are not onboarded onto eTIMS (such as farmers or casual artisans), a VAT-registered or corporate buyer can generate a Buyer-Initiated eTIMS invoice on the KRA eTIMS portal using the supplier's ID/PIN and M-Pesa payment reference."
+        },
+        {
+          "question": "Is my M-Pesa statement or KRA invoice data uploaded to any server?",
+          "answer": "No. All Paybill/Till matching, statutory exemption tagging, and CSV exports execute 100% locally inside your browser or device for complete financial privacy."
+        }
+      ]
+    },
+    "odpc-hr-retention-vault": {
+      "notesTitle": "Employment Act 2007 vs. Data Protection Act 2019",
+      "overview": [
+        "Kenyan employers with 10+ staff or >KES 5M annual turnover must register with the ODPC and balance mandatory 5-year post-termination employment record locks (Employment Act s.10(6)) against strict DPA 2019 deletion mandates."
+      ],
+      "howItWorks": [
+        "Enter your staff headcount and annual turnover to check ODPC registration requirements and statutory fine ceiling (up to KES 5M or 1% turnover).",
+        "Generate a Dual-Statute Retention Schedule separating 5-year locked payroll/contract records from auto-purge items like rejected CVs and exit recordings."
+      ],
+      "complianceTips": [
+        "ODPC determinations include KES 700,000 (Alston v Liquid Telecom, exit call recording) and KES 500,000 (Kirima v Solar Panda, unconsented staff photo)."
+      ],
+      "slug": "odpc-hr-retention-vault",
+      "faq": [
+        {
+          "question": "How long must Kenyan employers keep employee payroll and HR records?",
+          "answer": "Under the Kenya Employment Act (Cap 226) and Tax Procedures Act, employers must retain employee contracts, payroll, PAYE, NSSF, and SHA records for at least 5 years (and up to 7 years for tax and statutory audit defense), while unsuccessful job applicant CVs should be purged once the recruitment window closes unless explicit consent is given."
+        },
+        {
+          "question": "What are the penalties for non-compliance with the Kenya Data Protection Act (2019)?",
+          "answer": "The Office of the Data Protection Commissioner (ODPC) can issue enforcement notices and administrative fines of up to KES 5,000,000 or 1% of annual turnover (whichever is lower) for unlawful retention, unauthorized disclosure, or failure to register as a data controller/processor."
+        },
+        {
+          "question": "When is a Kenyan business legally required to register with the ODPC?",
+          "answer": "Mandatory registration applies to any organization with annual turnover above KES 5 million or more than 10 employees, as well as all entities in sensitive sectors (healthcare, education, financial services, hospitality, real estate, and direct marketing) regardless of size."
+        },
+        {
+          "question": "What should an employer do when a retention period expires?",
+          "answer": "Once the statutory retention period ends and no legal dispute or KRA audit is pending, personal records must be securely anonymized or permanently destroyed, and the disposal logged in your ODPC retention register."
+        }
+      ]
+    },
+    "eudr-coop-geojson-packager": {
+      "notesTitle": "EUDR (EU 2023/1115) Coffee Cooperative Compliance",
+      "overview": [
+        "55%–60% of Kenya's coffee exports go to the EU. Large operators face a Dec 30, 2026 deadline and small/micro cooperatives face a Jun 30, 2027 deadline to submit deforestation-free (Dec 31, 2020 cutoff) geolocation data."
+      ],
+      "howItWorks": [
+        "Select farm size (<4ha single GPS point vs >=4ha closed WGS84 polygon).",
+        "Validate GNSS accuracy (<10m), polygon closure, self-intersections, and Shoelace hectare area.",
+        "Export EU TRACES-ready GeoJSON FeatureCollection for cooperative Due Diligence Statements (DDS)."
+      ],
+      "complianceTips": [
+        "Farms >=4 hectares strictly require closed multi-vertex polygons, not single centroids."
+      ],
+      "slug": "eudr-coop-geojson-packager",
+      "faq": [
+        {
+          "question": "When do EU Deforestation Regulation (EUDR) geolocation rules take effect for Kenyan coffee?",
+          "answer": "Under EU Regulation 2023/1115 (as amended), large operators and traders must comply by 30 December 2026, while micro and small enterprises have until 30 June 2027. Every coffee shipment to the EU must prove plots were not deforested after 31 December 2020."
+        },
+        {
+          "question": "When do I need a closed GPS polygon versus a single GPS point under EUDR?",
+          "answer": "Smallholder coffee farms under 4 hectares (< 4 ha) may submit either a single WGS84 latitude/longitude point or a polygon. Any plot of 4 hectares or larger (>= 4 ha) strictly requires a closed GeoJSON polygon with at least 4 vertices where the first and last coordinates match."
+        },
+        {
+          "question": "Why does RFC 7946 GeoJSON use [longitude, latitude] ordering?",
+          "answer": "The EU TRACES NT portal validates uploaded files against the RFC 7946 GeoJSON specification, which mandates [longitude, latitude] order (e.g., [36.95, -0.4167] for Nyeri) in WGS84 (EPSG:4326) with at least 6 decimal places of precision."
+        },
+        {
+          "question": "What happens if my declared plot area differs from the computed polygon area?",
+          "answer": "EU TRACES validates the actual polygon geometry rather than the self-reported acreage. If the computed polygon area crosses the 4-hectare threshold or differs significantly from the cooperative register, re-walk the farm perimeter with a <10m GNSS receiver before exporting."
+        }
+      ]
+    },
+    "icms-landed-cost-arbitrage": {
+      "notesTitle": "KRA iCMS Cascading Tax vs. Consolidator Math",
+      "overview": [
+        "Independent China-to-Kenya imports incur cascading KRA iCMS taxes: Import Duty (0%–35%), 16% VAT on (CIF + Duty), 2.5% IDF, 2.0% RDL, plus mandatory clearing agent fees (KES 19,500–52,000)."
+      ],
+      "howItWorks": [
+        "Select an EAC CET HS category (including the 35% mobile phone duty under EAC Gazette Notice No. 19 of 2025).",
+        "Enter FOB value, volume (CBM) or weight (kg), and compare independent iCMS clearance against all-in sea (KES 65,000/CBM) or air (KES 1,700/kg) consolidators."
+      ],
+      "complianceTips": [
+        "On a benchmark 1.5 CBM shipment, independent clearance can total ~KES 499,975 vs ~KES 357,500 via consolidator — a KES 142,475 spread."
+      ],
+      "slug": "icms-landed-cost-arbitrage",
+      "faq": [
+        {
+          "question": "How does KRA iCMS calculate cascading import taxes on commercial cargo?",
+          "answer": "KRA computes Customs Value (CIF = FOB + Freight + 1.5% Insurance), then applies EAC CET Import Duty (0%, 10%, 25%, or 35%) on CIF, 16% VAT on (CIF + Import Duty + Excise), plus 2.5% Import Declaration Fee (IDF) and 2.0% Railway Development Levy (RDL) on CIF."
+        },
+        {
+          "question": "Why are China-to-Kenya consolidators often cheaper for small shipments?",
+          "answer": "Consolidators pool multiple SME orders into shared containers and quote an all-in rate per CBM (typically KES 60,000–70,000/CBM by sea) or per kg by air (KES 1,500–1,900/kg) that bundles freight, clearing, and consolidated customs clearance—avoiding fixed KES 30,000+ minimum clearing agent and port handling charges on small volumes."
+        },
+        {
+          "question": "When is independent KRA iCMS clearing better than using a consolidator?",
+          "answer": "Independent clearing usually wins for high-volume shipments (3+ CBM or full containers), 0%-duty industrial machinery/raw materials, or VAT-registered businesses that need an official KRA iCMS Entry C17B to claim 16% input VAT and eTIMS-compliant cost of goods sold."
+        },
+        {
+          "question": "Does the calculator include Kenya Bureau of Standards (KEBS) PVoC inspection fees?",
+          "answer": "No—KEBS Pre-Export Verification of Conformity (PVoC) fees (typically 0.5% of FOB, minimum USD 250) and local Mombasa-to-Nairobi haulage should be added separately when clearing independently."
+        }
+      ]
+    },
+    "sha-claim-scrubber": {
+      "notesTitle": "SHA Level 3–5 Provider Claim Rejection Prevention",
+      "overview": [
+        "Roughly 1 in 5 (~20%) Kenyan hospital claims submitted to SHA are rejected or queried (KES 3.43B declined). Scrubbing claims across 6 pre-discharge triggers dramatically cuts revenue leakage."
+      ],
+      "howItWorks": [
+        "Verify facility contract tier on sha.go.ke/contracted-facilities, KEML medicine coverage, *147# / Paybill 200222 M-Pesa remittance lag, attachments, and submission window.",
+        "Generate a real-time Rejection Risk Score and a structured appeal/resubmission packet."
+      ],
+      "complianceTips": [
+        "Confirm M-Pesa Paybill 200222 contribution reflection before discharge to avoid automated beneficiary-inactive rejections."
+      ],
+      "slug": "sha-claim-scrubber",
+      "faq": [
+        {
+          "question": "What are the most common reasons SHA rejects Kenyan hospital claims in 2026?",
+          "answer": "The top rejection triggers are missing or expired pre-authorization codes for surgical/inpatient procedures, ICD-11 diagnosis codes that do not match billed SHA benefit tariffs, unverified biometric/OTP member sign-off, and late submission past the 7-day statutory discharge window."
+        },
+        {
+          "question": "How does the Social Health Authority (SHA) 7-day submission rule work?",
+          "answer": "Health facilities are required to lodge completed inpatient and surgical claims on the SHA Provider Portal within 7 days of patient discharge, complete with itemized invoices, discharge summaries, and signed biometric/OTP confirmation."
+        },
+        {
+          "question": "Does SHA cover both primary healthcare (PHC) and inpatient SHIF benefits?",
+          "answer": "Yes. Primary Healthcare Fund (PHC) covers Level 2 and Level 3 outpatient visits for all registered Kenyans, while the Social Health Insurance Fund (SHIF) covers Level 4–6 inpatient care, maternity, surgical packages, and chronic care via the Emergency, Chronic & Critical Illness Fund (ECCIF)."
+        },
+        {
+          "question": "Is patient clinical data uploaded when running the SHA Claim Scrubber?",
+          "answer": "No. All pre-submission validation checks run 100% locally in your browser so no protected health information (PHI) leaves the facility's computer."
+        }
+      ]
+    },
+    "ppra-egp-tender-serializer": {
+      "notesTitle": "PPRA Preliminary Mandatory Stage (MR1–MR15) & ITT 20.3",
+      "overview": [
+        "Most Kenyan tender disqualifications happen at the Preliminary Mandatory Stage due to unserialized pages (ITT 20.3), expired CR12/TCC, wrong NCA tier, or missing Form SD1/SD2 and 300-day bid validity."
+      ],
+      "howItWorks": [
+        "Toggle each mandatory document (MR1–MR11) and enter page counts.",
+        "Compute exact continuous Bates page ranges (0001–0XXX) and inspect readiness before uploading to e-gp.go.ke."
+      ],
+      "complianceTips": [
+        "Every single page of the bid—including dividers and appendices—must be chronologically serialized and initialed per ITT 20.3."
+      ],
+      "slug": "ppra-egp-tender-serializer",
+      "faq": [
+        {
+          "question": "What documents are mandatory for Kenyan public procurement tenders under PPRA e-GP?",
+          "answer": "Standard mandatory requirements include a valid KRA Tax Compliance Certificate (TCC), Certificate of Incorporation/Registration, CR12 (issued within 6–12 months), valid County Single Business Permit, AGPO certificate (for Youth/Women/PWD reserved tenders), and signed Form of Tender and Confidential Business Questionnaire."
+        },
+        {
+          "question": "Why are Kenyan tenders frequently disqualified at the Preliminary Evaluation stage?",
+          "answer": "Under the Public Procurement and Asset Disposal Act (PPADA), failure to sequentially paginate/serialize the entire bid document (e.g., 1 of N), missing commissioner-of-oaths stamps on statutory affidavits, or an expired KRA TCC results in automatic preliminary disqualification regardless of price."
+        },
+        {
+          "question": "How does Kenya's AGPO 30% reservation preference work?",
+          "answer": "At least 30% of all national and county government procurement budgets are legally reserved for enterprises at least 70% owned by Youth, Women, or Persons with Disabilities (PWDs) holding a valid National Treasury AGPO certificate, with exemptions from bid bonds."
+        },
+        {
+          "question": "Does this tool upload my company's bid PDFs or pricing schedules?",
+          "answer": "No. All checklist verification, pagination indexing, and tender binder serialization run strictly offline inside your browser."
+        }
+      ]
+    },
+    "kjsea-pathway-engine": {
+      "notesTitle": "KNEC 20-20-60 CBE Senior School Placement Formula",
+      "overview": [
+        "Over 1.04M Grade 9 learners transition into Senior School pathways (STEM 49%, Social Sciences 40%, Arts & Sports 11%) using KNEC's 20-20-60 composite formula."
+      ],
+      "howItWorks": [
+        "Enter Grade 6 KPSEA (20%), Grade 7–8 SBA (20%), and Grade 9 KJSEA (60%) scores plus top learning areas.",
+        "View the official CBE rubric tier (EE1–BE2), recommended Senior School pathway, and compatible KUCCPS degree clusters."
+      ],
+      "complianceTips": [
+        "Complete pathway diagnostics ahead of the August Grade 9 selection window to avoid post-placement transfer bottlenecks."
+      ],
+      "slug": "kjsea-pathway-engine",
+      "faq": [
+        {
+          "question": "How does KJSEA place Grade 9 learners into Senior School pathways under CBC?",
+          "answer": "The Kenya Junior School Education Assessment (KJSEA) combines School-Based Assessments (SBA) from Grades 7–8 (40% total weight, with 20% from KPSEA/lower SBA) and the summative Grade 9 KNEC exam (60% weight) to place learners into STEM, Social Sciences, or Arts & Sports Science."
+        },
+        {
+          "question": "What are the three Senior School pathways in Kenya's CBC Grade 10–12 system?",
+          "answer": "The three KICD pathways are: (1) STEM (Pure Sciences, Applied Sciences, Technical Studies), (2) Social Sciences (Humanities & Business Studies, Languages & Literature), and (3) Arts & Sports Science (Performing Arts, Visual Arts, Sports Science)."
+        },
+        {
+          "question": "How do KJSEA performance levels map to points?",
+          "answer": "KNEC reports KJSEA performance across four core bands subdivided into 8 levels: Exceeding Expectations (EE1 = 8, EE2 = 7), Meeting Expectations (ME1 = 6, ME2 = 5), Approaching Expectations (AE1 = 4, AE2 = 3), and Below Expectations (BE1 = 2, BE2 = 1)."
+        },
+        {
+          "question": "Can a student switch Senior School pathways after Grade 10 placement?",
+          "answer": "Limited transfers are permitted within the first term of Grade 10 subject to school capacity, Ministry of Education guidelines, and whether the learner meets the prerequisite subject performance levels for the target track."
+        }
+      ]
+    },
+    "ardhisasa-cad-title-auditor": {
+      "notesTitle": "Ardhisasa GIS/CAD Topology & Root-of-Title Due Diligence",
+      "overview": [
+        "85%–87% of buildings in rapidly urbanizing Kenyan zones lack full compliance/deformation sign-offs, and Ardhisasa rejects sectional CAD/GIS plans with unclosed polygons or datum errors."
+      ],
+      "howItWorks": [
+        "Paste parcel beacon coordinates to validate polygon closure, self-intersections, and computed area tolerance.",
+        "Complete the Root-of-Title (Kenya Gazette succession, Ndung'u Report) and NCA/EBK/BORAQS/ISK structural sign-off checklist."
+      ],
+      "complianceTips": [
+        "Verify Cassini-Soldner to ARC1960 / UTM Zone 37S datum shifts before submitting sectional mutation plans on Ardhisasa."
+      ],
+      "slug": "ardhisasa-cad-title-auditor",
+      "faq": [
+        {
+          "question": "What causes a parcel survey plan to fail Ardhisasa geospatial validation?",
+          "answer": "Common rejection reasons include unclosed beacon traverses (misclosure exceeding Survey of Kenya linear tolerance), self-intersecting boundary lines, mismatched UTM Zone 37S / Arc 1960 vs. WGS84 datum coordinates, or area discrepancies exceeding statutory tolerance."
+        },
+        {
+          "question": "What is the difference between a Title Deed search on Ardhisasa and a physical green card search?",
+          "answer": "For converted Nairobi and digitized registry blocks, official land searches are conducted online via Ardhisasa (ardhisasa.lands.go.ke) for KES 500. For counties not yet migrated onto Ardhisasa, buyers must still conduct an official search at the respective County Land Registry and verify the physical green card."
+        },
+        {
+          "question": "Which professional bodies must sign off on a compliant Kenyan building & land project?",
+          "answer": "Licensed land surveyors (ISK / Survey of Kenya) certify beacon coordinates and mutations; BORAQS registers Architects and Quantity Surveyors; EBK registers Structural and Civil Engineers; and NCA registers the project site and contractor before construction begins."
+        },
+        {
+          "question": "Does the Ardhisasa CAD Title Auditor replace a licensed surveyor?",
+          "answer": "No. It is a pre-validation engineering tool to catch beacon closure errors, self-intersections, and root-of-title checklist gaps early—formal mutation forms and Rim/FR plans must still be signed by a licensed Kenyan surveyor."
         }
       ]
     }
-  },
-  "etims-mpesa-reconciler": {
-    "notesTitle": "2026 KRA eTIMS Disallowed-Expense Rules",
-    "overview": [
-      "Under KRA's 2026 automated eTIMS cross-matching rules, business expenses lacking a validated eTIMS invoice are disallowed for corporate income tax, triggering a 30% corporate tax penalty on unreceipted spend."
-    ],
-    "howItWorks": [
-      "Paste or edit M-Pesa Paybill/Till outflows and KRA eTIMS buyer invoice records.",
-      "Tag statutory exemptions (emoluments, imports, airline tickets, investment allowances, interest).",
-      "Review unmatched spend, live 30% tax exposure, and export a Buyer-Initiated (Reverse) eTIMS CSV or WhatsApp supplier chase list."
-    ],
-    "complianceTips": [
-      "Every KES 1,000,000 in unreceipted business expenses adds KES 300,000 in corporate income tax.",
-      "All reconciliation runs 100% locally in your browser/device with zero cloud upload."
-    ]
-  },
-  "odpc-hr-retention-vault": {
-    "notesTitle": "Employment Act 2007 vs. Data Protection Act 2019",
-    "overview": [
-      "Kenyan employers with 10+ staff or >KES 5M annual turnover must register with the ODPC and balance mandatory 5-year post-termination employment record locks (Employment Act s.10(6)) against strict DPA 2019 deletion mandates."
-    ],
-    "howItWorks": [
-      "Enter your staff headcount and annual turnover to check ODPC registration requirements and statutory fine ceiling (up to KES 5M or 1% turnover).",
-      "Generate a Dual-Statute Retention Schedule separating 5-year locked payroll/contract records from auto-purge items like rejected CVs and exit recordings."
-    ],
-    "complianceTips": [
-      "ODPC determinations include KES 700,000 (Alston v Liquid Telecom, exit call recording) and KES 500,000 (Kirima v Solar Panda, unconsented staff photo)."
-    ]
-  },
-  "eudr-coop-geojson-packager": {
-    "notesTitle": "EUDR (EU 2023/1115) Coffee Cooperative Compliance",
-    "overview": [
-      "55%–60% of Kenya's coffee exports go to the EU. Large operators face a Dec 30, 2026 deadline and small/micro cooperatives face a Jun 30, 2027 deadline to submit deforestation-free (Dec 31, 2020 cutoff) geolocation data."
-    ],
-    "howItWorks": [
-      "Select farm size (<4ha single GPS point vs >=4ha closed WGS84 polygon).",
-      "Validate GNSS accuracy (<10m), polygon closure, self-intersections, and Shoelace hectare area.",
-      "Export EU TRACES-ready GeoJSON FeatureCollection for cooperative Due Diligence Statements (DDS)."
-    ],
-    "complianceTips": [
-      "Farms >=4 hectares strictly require closed multi-vertex polygons, not single centroids."
-    ]
-  },
-  "icms-landed-cost-arbitrage": {
-    "notesTitle": "KRA iCMS Cascading Tax vs. Consolidator Math",
-    "overview": [
-      "Independent China-to-Kenya imports incur cascading KRA iCMS taxes: Import Duty (0%–35%), 16% VAT on (CIF + Duty), 2.5% IDF, 2.0% RDL, plus mandatory clearing agent fees (KES 19,500–52,000)."
-    ],
-    "howItWorks": [
-      "Select an EAC CET HS category (including the 35% mobile phone duty under EAC Gazette Notice No. 19 of 2025).",
-      "Enter FOB value, volume (CBM) or weight (kg), and compare independent iCMS clearance against all-in sea (KES 65,000/CBM) or air (KES 1,700/kg) consolidators."
-    ],
-    "complianceTips": [
-      "On a benchmark 1.5 CBM shipment, independent clearance can total ~KES 499,975 vs ~KES 357,500 via consolidator — a KES 142,475 spread."
-    ]
-  },
-  "sha-claim-scrubber": {
-    "notesTitle": "SHA Level 3–5 Provider Claim Rejection Prevention",
-    "overview": [
-      "Roughly 1 in 5 (~20%) Kenyan hospital claims submitted to SHA are rejected or queried (KES 3.43B declined). Scrubbing claims across 6 pre-discharge triggers dramatically cuts revenue leakage."
-    ],
-    "howItWorks": [
-      "Verify facility contract tier on sha.go.ke/contracted-facilities, KEML medicine coverage, *147# / Paybill 200222 M-Pesa remittance lag, attachments, and submission window.",
-      "Generate a real-time Rejection Risk Score and a structured appeal/resubmission packet."
-    ],
-    "complianceTips": [
-      "Confirm M-Pesa Paybill 200222 contribution reflection before discharge to avoid automated beneficiary-inactive rejections."
-    ]
-  },
-  "ppra-egp-tender-serializer": {
-    "notesTitle": "PPRA Preliminary Mandatory Stage (MR1–MR15) & ITT 20.3",
-    "overview": [
-      "Most Kenyan tender disqualifications happen at the Preliminary Mandatory Stage due to unserialized pages (ITT 20.3), expired CR12/TCC, wrong NCA tier, or missing Form SD1/SD2 and 300-day bid validity."
-    ],
-    "howItWorks": [
-      "Toggle each mandatory document (MR1–MR11) and enter page counts.",
-      "Compute exact continuous Bates page ranges (0001–0XXX) and inspect readiness before uploading to e-gp.go.ke."
-    ],
-    "complianceTips": [
-      "Every single page of the bid—including dividers and appendices—must be chronologically serialized and initialed per ITT 20.3."
-    ]
-  },
-  "kjsea-pathway-engine": {
-    "notesTitle": "KNEC 20-20-60 CBE Senior School Placement Formula",
-    "overview": [
-      "Over 1.04M Grade 9 learners transition into Senior School pathways (STEM 49%, Social Sciences 40%, Arts & Sports 11%) using KNEC's 20-20-60 composite formula."
-    ],
-    "howItWorks": [
-      "Enter Grade 6 KPSEA (20%), Grade 7–8 SBA (20%), and Grade 9 KJSEA (60%) scores plus top learning areas.",
-      "View the official CBE rubric tier (EE1–BE2), recommended Senior School pathway, and compatible KUCCPS degree clusters."
-    ],
-    "complianceTips": [
-      "Complete pathway diagnostics ahead of the August Grade 9 selection window to avoid post-placement transfer bottlenecks."
-    ]
-  },
-  "ardhisasa-cad-title-auditor": {
-    "notesTitle": "Ardhisasa GIS/CAD Topology & Root-of-Title Due Diligence",
-    "overview": [
-      "85%–87% of buildings in rapidly urbanizing Kenyan zones lack full compliance/deformation sign-offs, and Ardhisasa rejects sectional CAD/GIS plans with unclosed polygons or datum errors."
-    ],
-    "howItWorks": [
-      "Paste parcel beacon coordinates to validate polygon closure, self-intersections, and computed area tolerance.",
-      "Complete the Root-of-Title (Kenya Gazette succession, Ndung'u Report) and NCA/EBK/BORAQS/ISK structural sign-off checklist."
-    ],
-    "complianceTips": [
-      "Verify Cassini-Soldner to ARC1960 / UTM Zone 37S datum shifts before submitting sectional mutation plans on Ardhisasa."
-    ]
   }
 }
