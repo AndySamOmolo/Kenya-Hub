@@ -248,13 +248,13 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-3.5">
-              {PUBLISHED_COURSE_SUMMARIES.map(({ config, skillCount }) => {
+              {PUBLISHED_COURSE_SUMMARIES.map(({ config, skillCount }, idx) => {
                 const identity = getLanguageIdentity(config.id);
                 return (
                   <Link
                     key={config.id}
                     href={`/tools/learn/${config.id}/`}
-                    className="group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-3 sm:p-3.5 transition-all flex flex-col justify-between shadow-xs"
+                    className={`${idx >= 6 ? "hidden sm:flex " : ""}group rounded-xl border border-border bg-bg-card hover:border-gold/50 p-3 sm:p-3.5 transition-all flex flex-col justify-between shadow-xs`}
                   >
                     <div>
                       <div className="flex items-center justify-between gap-1.5 mb-1.5">

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T15:18:13.842Z",
+  "generatedAt": "2026-11-19T17:19:58.772Z",
   "registryCount": 33,
   "routeCount": 33,
   "courseCount": 23,
@@ -433,21 +433,6 @@
           "file": "src/data/small-claims-data.json",
           "lastUpdated": "2026-10-21",
           "source": "Judiciary of Kenya Small Claims Court Act (2016) & Court Fees Rules"
-        },
-        {
-          "file": "src/data/passport-id-fees.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Directorate of Immigration Services & National Registration Bureau (eCitizen 2026)"
-        },
-        {
-          "file": "src/data/trademark-fees.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Kenya Industrial Property Institute (KIPI — Industrial Property Act) & Kenya Copyright Board (KECOBO)"
-        },
-        {
-          "file": "src/data/professional-bodies.json",
-          "lastUpdated": "2026-10-20",
-          "source": "Statutory Professional Regulatory Bodies of Kenya"
         }
       ],
       "status": "ok"

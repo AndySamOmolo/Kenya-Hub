@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack, ErrorBoundaryProps, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { Appearance, StyleSheet, Text, View, Pressable } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import {
@@ -23,6 +23,7 @@ import {
   ThemeProvider,
   useTheme,
   darkColors,
+  lightColors,
   androidRipple,
   pressableStyle,
 } from "../src/theme";
@@ -86,7 +87,12 @@ export default function RootLayout() {
 
 export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
   const router = useRouter();
-  const { colors } = useTheme();
+  const scheme = Appearance.getColorScheme();
+  const colors = scheme === "light" ? lightColors : darkColors;
+  const displayMessage =
+    __DEV__ && error?.message
+      ? error.message
+      : "We ran into an unexpected issue loading this screen. Tap Try again to recover.";
 
   return (
     <View style={[styles.container, { backgroundColor: colors.bgPrimary }]}>
@@ -100,8 +106,7 @@ export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
         Something went wrong
       </Text>
       <Text style={[styles.message, { color: colors.textSecondary }]}>
-        {error?.message ||
-          "An unexpected error occurred while rendering this screen."}
+        {displayMessage}
       </Text>
       <View style={styles.actionsRow}>
         <Pressable

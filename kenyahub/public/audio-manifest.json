@@ -7,8 +7,8 @@
   "languages": {
     "borana": {
       "languageName": "Borana (Oromo)",
-      "totalEntries": 27537,
-      "addressableR2Keys": 27535,
+      "totalEntries": 27531,
+      "addressableR2Keys": 27529,
       "r2Prefix": "audio/borana/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -48,8 +48,8 @@
     },
     "daasanach": {
       "languageName": "Daasanach (Dhaasanac)",
-      "totalEntries": 879,
-      "addressableR2Keys": 878,
+      "totalEntries": 838,
+      "addressableR2Keys": 837,
       "r2Prefix": "audio/daasanach/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
@@ -72,8 +72,8 @@
     },
     "kalenjin": {
       "languageName": "Kalenjin",
-      "totalEntries": 8114,
-      "addressableR2Keys": 8112,
+      "totalEntries": 8034,
+      "addressableR2Keys": 8032,
       "r2Prefix": "audio/kalenjin/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -105,8 +105,8 @@
     },
     "kamba": {
       "languageName": "Kamba (Kĩkamba)",
-      "totalEntries": 10114,
-      "addressableR2Keys": 10114,
+      "totalEntries": 10086,
+      "addressableR2Keys": 10086,
       "r2Prefix": "audio/kamba/",
       "directAudioEntries": 250,
       "openAccessDatasets": [
@@ -138,8 +138,8 @@
     },
     "kikuyu": {
       "languageName": "Kikuyu (Gĩkũyũ)",
-      "totalEntries": 22997,
-      "addressableR2Keys": 22989,
+      "totalEntries": 22224,
+      "addressableR2Keys": 22216,
       "r2Prefix": "audio/kikuyu/",
       "directAudioEntries": 253,
       "openAccessDatasets": [
@@ -171,8 +171,8 @@
     },
     "kisii": {
       "languageName": "Kisii (Ekegusii)",
-      "totalEntries": 1595,
-      "addressableR2Keys": 1595,
+      "totalEntries": 1551,
+      "addressableR2Keys": 1551,
       "r2Prefix": "audio/kisii/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -188,8 +188,8 @@
     },
     "luhya": {
       "languageName": "Luhya (Luyia)",
-      "totalEntries": 7183,
-      "addressableR2Keys": 7175,
+      "totalEntries": 6957,
+      "addressableR2Keys": 6949,
       "r2Prefix": "audio/luhya/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -221,8 +221,8 @@
     },
     "luo": {
       "languageName": "Dholuo (Luo)",
-      "totalEntries": 15079,
-      "addressableR2Keys": 15076,
+      "totalEntries": 14853,
+      "addressableR2Keys": 14850,
       "r2Prefix": "audio/luo/",
       "directAudioEntries": 257,
       "openAccessDatasets": [
@@ -278,8 +278,8 @@
     },
     "maasai": {
       "languageName": "Maasai (Maa)",
-      "totalEntries": 4816,
-      "addressableR2Keys": 4814,
+      "totalEntries": 4805,
+      "addressableR2Keys": 4803,
       "r2Prefix": "audio/maasai/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -295,8 +295,8 @@
     },
     "meru": {
       "languageName": "Meru (Kĩmĩĩrũ)",
-      "totalEntries": 4301,
-      "addressableR2Keys": 4301,
+      "totalEntries": 4294,
+      "addressableR2Keys": 4294,
       "r2Prefix": "audio/meru/",
       "directAudioEntries": 248,
       "openAccessDatasets": [
@@ -312,32 +312,32 @@
     },
     "mijikenda": {
       "languageName": "Mijikenda (Giriama)",
-      "totalEntries": 17116,
-      "addressableR2Keys": 17106,
+      "totalEntries": 17078,
+      "addressableR2Keys": 17068,
       "r2Prefix": "audio/mijikenda/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "pokomo": {
       "languageName": "Pokomo (Kipfokomo)",
-      "totalEntries": 3122,
-      "addressableR2Keys": 3122,
+      "totalEntries": 3070,
+      "addressableR2Keys": 3070,
       "r2Prefix": "audio/pokomo/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "pokot": {
       "languageName": "Pokot (Pökoot)",
-      "totalEntries": 5644,
-      "addressableR2Keys": 5644,
+      "totalEntries": 5627,
+      "addressableR2Keys": 5627,
       "r2Prefix": "audio/pokot/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "rendille": {
       "languageName": "Rendille (Afi Ren'dille)",
-      "totalEntries": 297,
-      "addressableR2Keys": 297,
+      "totalEntries": 296,
+      "addressableR2Keys": 296,
       "r2Prefix": "audio/rendille/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
@@ -361,8 +361,8 @@
     },
     "somali": {
       "languageName": "Somali",
-      "totalEntries": 14033,
-      "addressableR2Keys": 14019,
+      "totalEntries": 13609,
+      "addressableR2Keys": 13595,
       "r2Prefix": "audio/somali/",
       "directAudioEntries": 293,
       "openAccessDatasets": [
@@ -410,10 +410,10 @@
     },
     "swahili": {
       "languageName": "Swahili (Kiswahili)",
-      "totalEntries": 53365,
-      "addressableR2Keys": 53363,
+      "totalEntries": 53226,
+      "addressableR2Keys": 53224,
       "r2Prefix": "audio/swahili/",
-      "directAudioEntries": 419,
+      "directAudioEntries": 412,
       "openAccessDatasets": [
         {
           "id": "waxal-swa-tts",
@@ -505,16 +505,16 @@
     },
     "taita": {
       "languageName": "Taita (Kidawida)",
-      "totalEntries": 7673,
-      "addressableR2Keys": 7673,
+      "totalEntries": 7571,
+      "addressableR2Keys": 7571,
       "r2Prefix": "audio/taita/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "taveta": {
       "languageName": "Taveta (Kitaveta)",
-      "totalEntries": 727,
-      "addressableR2Keys": 727,
+      "totalEntries": 667,
+      "addressableR2Keys": 667,
       "r2Prefix": "audio/taveta/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
@@ -546,8 +546,8 @@
     },
     "turkana": {
       "languageName": "Turkana",
-      "totalEntries": 3232,
-      "addressableR2Keys": 3232,
+      "totalEntries": 3231,
+      "addressableR2Keys": 3231,
       "r2Prefix": "audio/turkana/",
       "directAudioEntries": 0,
       "openAccessDatasets": []

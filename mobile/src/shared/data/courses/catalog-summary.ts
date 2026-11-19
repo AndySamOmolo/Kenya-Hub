@@ -42,9 +42,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 19,
+    "skillCount": 39,
+    "wordsCount": 407
   },
   {
     "config": {
@@ -64,9 +64,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       "color": "#D4A843"
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 67
+    "unitCount": 7,
+    "skillCount": 12,
+    "wordsCount": 250
   },
   {
     "config": {
@@ -95,9 +95,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 20,
+    "skillCount": 41,
+    "wordsCount": 489
   },
   {
     "config": {
@@ -117,9 +117,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 15,
+    "skillCount": 42,
+    "wordsCount": 579
   },
   {
     "config": {
@@ -163,9 +163,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 29,
+    "skillCount": 67,
+    "wordsCount": 741
   },
   {
     "config": {
@@ -197,9 +197,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 15,
+    "skillCount": 31,
+    "wordsCount": 355
   },
   {
     "config": {
@@ -237,9 +237,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 16,
+    "skillCount": 32,
+    "wordsCount": 372
   },
   {
     "config": {
@@ -263,9 +263,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 11,
+    "skillCount": 23,
+    "wordsCount": 276
   },
   {
     "config": {
@@ -293,9 +293,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 12,
+    "skillCount": 28,
+    "wordsCount": 336
   },
   {
     "config": {
@@ -325,9 +325,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 16,
+    "skillCount": 32,
+    "wordsCount": 345
   },
   {
     "config": {
@@ -355,9 +355,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 15,
+    "skillCount": 34,
+    "wordsCount": 446
   },
   {
     "config": {
@@ -390,9 +390,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 16,
+    "skillCount": 35,
+    "wordsCount": 423
   },
   {
     "config": {
@@ -415,8 +415,8 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     },
     "ready": true,
     "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "skillCount": 22,
+    "wordsCount": 249
   },
   {
     "config": {
@@ -442,8 +442,8 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     },
     "ready": true,
     "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "skillCount": 22,
+    "wordsCount": 247
   },
   {
     "config": {
@@ -470,7 +470,7 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     "ready": true,
     "unitCount": 12,
     "skillCount": 27,
-    "wordsCount": 289
+    "wordsCount": 323
   },
   {
     "config": {
@@ -495,7 +495,7 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     "ready": true,
     "unitCount": 10,
     "skillCount": 22,
-    "wordsCount": 201
+    "wordsCount": 232
   },
   {
     "config": {
@@ -522,7 +522,7 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     "ready": true,
     "unitCount": 11,
     "skillCount": 23,
-    "wordsCount": 242
+    "wordsCount": 264
   },
   {
     "config": {
@@ -551,9 +551,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 16,
+    "skillCount": 33,
+    "wordsCount": 414
   },
   {
     "config": {
@@ -576,8 +576,8 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     },
     "ready": true,
     "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "skillCount": 21,
+    "wordsCount": 229
   },
   {
     "config": {
@@ -605,8 +605,8 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     },
     "ready": true,
     "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "skillCount": 21,
+    "wordsCount": 230
   },
   {
     "config": {
@@ -630,8 +630,8 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     },
     "ready": true,
     "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "skillCount": 22,
+    "wordsCount": 214
   },
   {
     "config": {
@@ -656,9 +656,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 13,
+    "skillCount": 27,
+    "wordsCount": 306
   },
   {
     "config": {
@@ -681,7 +681,7 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     },
     "ready": true,
     "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "skillCount": 21,
+    "wordsCount": 262
   }
 ];

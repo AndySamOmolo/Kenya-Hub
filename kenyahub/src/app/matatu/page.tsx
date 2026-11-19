@@ -197,7 +197,7 @@ export default function MatatuPage() {
             Kenya Matatu Routes &amp; Stages
           </h1>
           <p className="text-text-secondary max-w-lg text-sm sm:text-base leading-relaxed mb-6">
-            Find matatu routes across Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika. Search by destination, plan point-to-point stage trips, and view interactive Leaflet maps.
+            Find matatu routes across Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika. Search by destination, plan point-to-point stage trips, and view interactive route maps.
           </p>
 
           {/* Stats */}

@@ -18,7 +18,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather, Ionicons } from '@expo/vector-icons';
 import { playVerifiedAudio, hasVerifiedAudio } from '../lib/mobile-audio';
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
-import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getPlaceholderCourse } from './language-course/courseLoader';
+import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getGrammarSectionsLazy, getPlaceholderCourse } from './language-course/courseLoader';
 import { getLanguageIdentity } from '../shared/data/language-identity';
 import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared/data/language-sources';
 import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
@@ -219,7 +219,7 @@ export default function LanguageCourseTool({
 
         // Check all achievements (including cross-language Centurion, Polyglot & Gamer badges)
         const tempAll = { ...prevAll, [selectedLangId]: updated };
-        const unlocked = new Set(updated.unlockedAchievements);
+        const unlocked = new Set(updated.unlockedAchievements || []);
         const totalLessonsAll = Object.values(tempAll).reduce(
           (sum, lp) => sum + Object.values(lp.skills || {}).reduce((s, k) => s + k.lessonsCompleted, 0),
           0
@@ -244,7 +244,7 @@ export default function LanguageCourseTool({
           hearts: updated.hearts,
           heartsLastRefill: updated.heartsLastRefill,
           achievements: Array.from(unlocked),
-          wordsLearned: Object.keys(updated.wordStrengths),
+          wordsLearned: Object.keys(updated.wordStrengths || {}),
           lessonsCompleted: totalLessonsAll,
           perfectLessons: updated.perfectLessons,
           gamesPlayed: Math.max(updated.gamesPlayed, totalGamesAll),
@@ -281,18 +281,24 @@ export default function LanguageCourseTool({
   );
 
   useEffect(() => {
+    if (showLanguageMenu || (activeTab !== 'cards' && activeTab !== 'games')) {
+      return;
+    }
     let active = true;
     if (LOADED_DICTS_CACHE[selectedLangId]) {
       setLoadedDict(LOADED_DICTS_CACHE[selectedLangId]);
-    } else {
+      return;
+    }
+    const timer = setTimeout(() => {
       loadDictionary(selectedLangId).then((d) => {
         if (active && d) setLoadedDict(d);
       });
-    }
+    }, 60);
     return () => {
       active = false;
+      clearTimeout(timer);
     };
-  }, [selectedLangId]);
+  }, [selectedLangId, showLanguageMenu, activeTab]);
 
   const dictSkills: CourseSkill[] = useMemo(() => {
     if (!loadedDict) return [];
@@ -745,27 +751,36 @@ export default function LanguageCourseTool({
     setMissedItems((prev) => [...prev, { prompt: ex.prompt, correct: ex.correctAnswer }]);
   }, [exercises, exIndex, isSubmitted]);
 
-  // ── Mini-Games Pool & Launchers ──
+  // ── Mini-Games Pool & Launchers (Fast curated pool + capped dictionary sample) ──
   const allCourseWords = useMemo(() => {
+    if (showLanguageMenu) return [];
     const words: Word[] = [];
     const seenTargets = new Set<string>();
     const seenSources = new Set<string>();
-    for (const s of allSkills) {
-      for (const w of s.words) {
-        if (!isCleanLexicalWordPair(w.target, w.source)) continue;
-        const target = getPrimaryForm(w.target).trim();
-        const source = cleanExerciseText(getPrimaryForm(w.source)).trim();
-        const tKey = target.toLowerCase();
-        const sKey = source.toLowerCase();
-        if (target && source && !seenTargets.has(tKey) && !seenSources.has(sKey)) {
-          seenTargets.add(tKey);
-          seenSources.add(sKey);
-          words.push({ ...w, target, source });
+    const courseSkills = currentCourse?.units.flatMap((u) => u.skills) || [];
+    const addSkillWords = (skillsList: CourseSkill[], maxTotal: number) => {
+      for (const sk of skillsList) {
+        for (const w of sk.words) {
+          if (words.length >= maxTotal) return;
+          if (!isCleanLexicalWordPair(w.target, w.source)) continue;
+          const target = getPrimaryForm(w.target).trim();
+          const source = cleanExerciseText(getPrimaryForm(w.source)).trim();
+          const tKey = target.toLowerCase();
+          const sKey = source.toLowerCase();
+          if (target && source && !seenTargets.has(tKey) && !seenSources.has(sKey)) {
+            seenTargets.add(tKey);
+            seenSources.add(sKey);
+            words.push({ ...w, target, source });
+          }
         }
       }
+    };
+    addSkillWords(courseSkills, 600);
+    if (words.length < 400 && dictSkills.length > 0) {
+      addSkillWords(dictSkills, 500);
     }
-    return words.length >= 4 ? words : allSkills.flatMap((s) => s.words);
-  }, [allSkills]);
+    return words.length >= 4 ? words : courseSkills.flatMap((sk) => sk.words).slice(0, 200);
+  }, [showLanguageMenu, currentCourse, dictSkills]);
 
   const startScrambleRound = useCallback(() => {
     const eligible = allCourseWords
@@ -979,7 +994,10 @@ export default function LanguageCourseTool({
 
   const currentFlashcard = flashcardDeck[cardIndex] || flashcardDeck[0];
 
-  const grammarSections: GrammarSection[] = currentCourse?.grammarSections || [];
+  const grammarSections: GrammarSection[] = useMemo(
+    () => (showLanguageMenu || activeTab !== 'grammar' ? [] : getGrammarSectionsLazy(selectedLangId)),
+    [showLanguageMenu, activeTab, selectedLangId]
+  );
   const filteredGrammar = useMemo(() => {
     const q = grammarSearch.trim().toLowerCase();
     if (!q) return grammarSections;
@@ -1033,6 +1051,72 @@ export default function LanguageCourseTool({
       },
     });
   }, [showLanguageMenu, currentCourse, activeGame, onNavigationStateChange, onScrollToTop]);
+
+  // ── Derived Language Menu Data (All 23 Courses, Search, Family Filter & Overall Stats) ──
+  const menuFamilies = useMemo(() => {
+    const set = new Set<string>();
+    PUBLISHED_COURSE_SUMMARIES.forEach((c) => {
+      if (c.config.family) set.add(c.config.family);
+    });
+    return ['All', ...Array.from(set)];
+  }, []);
+
+  const filteredMenuCourses = useMemo(() => {
+    const normSearch = (s: string) =>
+      s.normalize("NFD").replace(/[\u0300-\u036f'’]/g, "").toLowerCase();
+    const q = normSearch(menuSearchQuery.trim());
+    return PUBLISHED_COURSE_SUMMARIES.filter((c) => {
+      if (menuFamilyFilter !== 'All' && c.config.family !== menuFamilyFilter) return false;
+      if (!q) return true;
+      return (
+        normSearch(c.config.name).includes(q) ||
+        normSearch(c.config.nativeName || '').includes(q) ||
+        normSearch(c.config.description).includes(q) ||
+        normSearch(c.config.family).includes(q) ||
+        (c.config.counties || []).some((cnt) => normSearch(cnt).includes(q))
+      );
+    });
+  }, [menuFamilyFilter, menuSearchQuery]);
+
+  const overallMenuStats = useMemo(() => {
+    let totalXp = 0;
+    let bestStreak = 0;
+    let totalWords = 0;
+    let topLangId = PUBLISHED_COURSE_SUMMARIES[0]?.config.id || 'swahili';
+    let topLangXp = -1;
+
+    for (const course of PUBLISHED_COURSE_SUMMARIES) {
+      const lid = course.config.id;
+      const st = allProgress[lid];
+      if (!st) continue;
+      totalXp += st.totalXP || 0;
+      totalWords += Object.keys(st.wordStrengths || {}).length;
+      if ((st.streak || 0) > bestStreak) bestStreak = st.streak || 0;
+      if ((st.totalXP || 0) > topLangXp) {
+        topLangXp = st.totalXP || 0;
+        topLangId = lid;
+      }
+    }
+    const resumeCourse =
+      PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === topLangId) || PUBLISHED_COURSE_SUMMARIES[0];
+    return { totalXp, bestStreak, totalWords, resumeCourse };
+  }, [allProgress]);
+
+  const handleSelectLanguageFromMenu = useCallback(
+    (langId: string) => {
+      setSelectedLangId(langId);
+      setShowLanguageMenu(false);
+      setProverbCategory('All');
+      setProverbSearch('');
+      setProverbPage(1);
+      setCardIndex(0);
+      setIsCardFlipped(false);
+      setActiveGame('menu');
+      onScrollToTop?.();
+    },
+    [onScrollToTop]
+  );
+
 
   if (lessonStage !== 'idle' && activeSkill) {
     const currentEx = exercises[exIndex];
@@ -1875,71 +1959,6 @@ export default function LanguageCourseTool({
     );
   }
 
-  // ── Derived Language Menu Data (All 23 Courses, Search, Family Filter & Overall Stats) ──
-  const menuFamilies = useMemo(() => {
-    const set = new Set<string>();
-    PUBLISHED_COURSE_SUMMARIES.forEach((c) => {
-      if (c.config.family) set.add(c.config.family);
-    });
-    return ['All', ...Array.from(set)];
-  }, []);
-
-  const filteredMenuCourses = useMemo(() => {
-    const normSearch = (s: string) =>
-      s.normalize("NFD").replace(/[\u0300-\u036f'’]/g, "").toLowerCase();
-    const q = normSearch(menuSearchQuery.trim());
-    return PUBLISHED_COURSE_SUMMARIES.filter((c) => {
-      if (menuFamilyFilter !== 'All' && c.config.family !== menuFamilyFilter) return false;
-      if (!q) return true;
-      return (
-        normSearch(c.config.name).includes(q) ||
-        normSearch(c.config.nativeName || '').includes(q) ||
-        normSearch(c.config.description).includes(q) ||
-        normSearch(c.config.family).includes(q) ||
-        (c.config.counties || []).some((cnt) => normSearch(cnt).includes(q))
-      );
-    });
-  }, [menuFamilyFilter, menuSearchQuery]);
-
-  const overallMenuStats = useMemo(() => {
-    let totalXp = 0;
-    let bestStreak = 0;
-    let totalWords = 0;
-    let topLangId = PUBLISHED_COURSE_SUMMARIES[0]?.config.id || 'swahili';
-    let topLangXp = -1;
-
-    for (const course of PUBLISHED_COURSE_SUMMARIES) {
-      const lid = course.config.id;
-      const st = allProgress[lid];
-      if (!st) continue;
-      totalXp += st.totalXP || 0;
-      totalWords += Object.keys(st.wordStrengths || {}).length;
-      if ((st.streak || 0) > bestStreak) bestStreak = st.streak || 0;
-      if ((st.totalXP || 0) > topLangXp) {
-        topLangXp = st.totalXP || 0;
-        topLangId = lid;
-      }
-    }
-    const resumeCourse =
-      PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === topLangId) || PUBLISHED_COURSE_SUMMARIES[0];
-    return { totalXp, bestStreak, totalWords, resumeCourse };
-  }, [allProgress]);
-
-  const handleSelectLanguageFromMenu = useCallback(
-    (langId: string) => {
-      setSelectedLangId(langId);
-      setShowLanguageMenu(false);
-      setProverbCategory('All');
-      setProverbSearch('');
-      setProverbPage(1);
-      setCardIndex(0);
-      setIsCardFlipped(false);
-      setActiveGame('menu');
-      onScrollToTop?.();
-    },
-    [onScrollToTop]
-  );
-
   // ============================================================================
   // LANGUAGE SELECTION MENU (FIRST VIEW IN MOBILE LEARN TAB)
   // ============================================================================
@@ -2538,9 +2557,7 @@ export default function LanguageCourseTool({
             { id: 'learn', label: 'Path' },
             { id: 'cards', label: 'Vocab' },
             { id: 'games', label: 'Games' },
-            ...(grammarSections.length > 0
-              ? [{ id: 'grammar', label: 'Grammar' }]
-              : []),
+            { id: 'grammar', label: 'Grammar' },
             { id: 'proverbs', label: 'Wisdom' },
           ] as { id: MainTab; label: string }[]
         ).map((tab) => {
@@ -2576,8 +2593,8 @@ export default function LanguageCourseTool({
         })}
       </ExpandablePillRow>
 
-      {/* 3. Selected Language Banner + Verified Sources (Compact on non-Path tabs - UX-9) */}
-      {currentCourse && (
+      {/* 3. Selected Language Banner + Verified Sources (Path tab only to maximize mobile viewport) */}
+      {currentCourse && activeTab === 'learn' && (
         <View
           style={[
             styles.courseInfoCard,
@@ -3537,6 +3554,32 @@ export default function LanguageCourseTool({
               </View>
             </View>
           )}
+
+          {activeGame !== 'menu' &&
+            ((activeGame === 'scramble' && !scrambleWord) ||
+              (activeGame === 'speed' && !speedQuestion) ||
+              (activeGame === 'memory' && memoryCards.length === 0) ||
+              (activeGame === 'wordle' && !wordleTarget) ||
+              (activeGame === 'riddles' && !riddleQuestion) ||
+              (activeGame === 'vocabQuiz' && !vocabQuestion)) && (
+              <View
+                style={[
+                  styles.gameBoardCard,
+                  { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant, alignItems: 'center', paddingVertical: 28 },
+                ]}
+              >
+                <Feather name="info" size={24} color={colors.textMuted} />
+                <Text style={{ color: colors.text, fontWeight: '700', fontSize: 15, textAlign: 'center' }}>
+                  No eligible words available for this mini-game yet
+                </Text>
+                <Pressable
+                  onPress={() => setActiveGame('menu')}
+                  style={[styles.m3OutlinedBtn, { borderColor: colors.outlineVariant, marginTop: 8 }]}
+                >
+                  <Text style={{ color: colors.text, fontWeight: '700' }}>Back to Games Menu</Text>
+                </Pressable>
+              </View>
+            )}
 
           {/* GAME 2: SPEED MATCH */}
           {activeGame === 'speed' && speedQuestion && (

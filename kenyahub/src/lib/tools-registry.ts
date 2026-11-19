@@ -9,7 +9,9 @@ export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; de
   { id: 'utilities-energy', name: 'Utilities & Energy', icon: '⚡', description: 'KPLC prepaid electricity token calculator, appliance estimator & airtime protector', badgeClass: 'badge-utilities' },
   { id: 'government-legal', name: 'Government & Legal Rights', icon: '⚖️', description: 'Small claims court fees, tenant rights, domestic worker contracts & public services', badgeClass: 'badge-finance' },
   { id: 'health-wellness', name: 'Healthcare & SHA', icon: '🏥', description: 'Social Health Authority (SHA) benefit packages, hospital levels & co-pay tariffs', badgeClass: 'badge-education' },
+];
 
+export const TOOLS: Tool[] = [
   // ── 8. 2026–2027 High-Impact Kenyan Compliance, Trade, Health, Education & Land Utilities (8 tools) ──
   {
     slug: 'etims-mpesa-reconciler',
@@ -43,7 +45,7 @@ export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; de
     seoTitle: 'EUDR GeoJSON Polygon Validator Kenya Coffee Cooperatives 2026',
     shortTitle: 'EUDR GeoJSON Packager',
     description: 'Validate smallholder farm GPS polygons (>=4ha vs <4ha), check closure, self-intersections, <10m GNSS accuracy, and export EU TRACES-ready GeoJSON ahead of Dec 2026 / Jun 2027 EUDR deadlines.',
-    category: 'business-investment',
+    category: 'finance',
     keywords: ['EUDR compliance Kenya coffee', 'EU TRACES GeoJSON polygon validator', 'coffee cooperative geolocation Kenya', 'EUDR 2026 2027 deadline'],
     updateFrequency: 'annual',
     dataSource: 'EU Deforestation Regulation (EU 2023/1115)',
@@ -115,9 +117,6 @@ export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; de
     isLive: true,
     icon: '📐',
   },
-];
-
-export const TOOLS: Tool[] = [
   // ── 1. Languages, Proverbs & Culture (Flagship Main Feature — 2 tools) ──
   {
     slug: 'learn',

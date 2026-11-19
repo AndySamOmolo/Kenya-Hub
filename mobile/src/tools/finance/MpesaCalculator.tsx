@@ -189,7 +189,7 @@ export function MpesaCalculator() {
         {results.allFees.map((item) => (
           <Row
             key={item.key}
-            label={`${item.label}${item.key === tab ? " ← Selected" : ""}`}
+            label={`${item.label}${item.key === tab ? " (Active)" : ""}`}
             value={
               item.fee === null
                 ? "N/A"
@@ -247,7 +247,7 @@ export function MpesaCalculator() {
           label="Minimum ATM Withdrawal"
           value={`KES ${mpesaData.limits.minWithdrawATM.toLocaleString()}`}
         />
-        <Row label="Receiving Money" value="Always FREE" isPositive isTotal />
+        <Row label="Receiving Money" value="Always FREE" isPositive />
       </View>
     </View>
   );

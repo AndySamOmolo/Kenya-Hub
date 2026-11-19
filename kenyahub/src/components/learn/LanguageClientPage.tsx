@@ -653,7 +653,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               <button
                 type="button"
                 onClick={handleResetProgress}
-                className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-card hover:border-red-400/50 hover:text-red-400 px-2.5 py-1.5 text-text-muted transition-colors cursor-pointer"
+                className="inline-flex items-center gap-1 rounded-full border border-border/50 bg-transparent hover:border-red-400/50 hover:text-red-400 px-2 py-1 text-[0.6875rem] text-text-muted/70 transition-colors cursor-pointer ml-auto"
                 title={`Reset ${course.config.name} progress`}
               >
                 <RotateCcw className="h-3.5 w-3.5" />
@@ -739,7 +739,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 setIsCardFlipped(false);
               }}
               options={[
-                { value: "all", label: `All Modules (${totalWords} words)` },
+                { value: "all", label: `All Modules (${totalWords.toLocaleString()} words)` },
                 ...allSkillsFlat.map((s) => ({
                   value: s.skill.id,
                   label: `${s.skill.title} (${s.skill.words.length})`,
@@ -1118,7 +1118,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       )}
 
       {/* Always-Indexable Core Vocabulary & Expressions Reference Table for Search Engines */}
-      {view !== "playing" && sampleWords.length > 0 && (
+      {(view === "skill-tree" || view === "vocab") && sampleWords.length > 0 && (
         <section className="mt-8 bg-bg-card border border-border rounded-2xl p-4 sm:p-6 space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
@@ -1151,7 +1151,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                       <td className="font-medium text-text-primary">{w.source}</td>
                       <td className="text-xs text-text-secondary">
                         {w.pronunciation ? `[${w.pronunciation}] ` : ""}
-                        {w.example || course.config.family}
+                        {w.example || "—"}
                       </td>
                     </tr>
                   ))}

@@ -180,7 +180,14 @@ export function KcseCalculatorTool() {
       </View>
 
       {/* Career Eligibility Table */}
-      <Text style={styles.subHeading}>Degree & Career Eligibility Check</Text>
+      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 8 }}>
+        <Text style={[styles.subHeading, { marginTop: 0, marginBottom: 0 }]}>Degree & Career Eligibility Check</Text>
+        <View style={{ backgroundColor: theme.gold + "22", paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999 }}>
+          <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
+            Mean: {calc.meanGrade} ({calc.best7Points} pts)
+          </Text>
+        </View>
+      </View>
       <View style={styles.card}>
         {KCSE_CAREERS.map((item) => {
           const eligible = calc.roundedPoints >= item.minPoints;
@@ -193,7 +200,7 @@ export function KcseCalculatorTool() {
               ]}
             >
               <View style={{ flex: 1, paddingRight: 8 }}>
-                <Text style={[styles.rowValue, { fontSize: 12 }]}>{item.career}</Text>
+                <Text style={[styles.rowValue, { fontSize: 13, textAlign: "left" }]}>{item.career}</Text>
                 <Text style={{ fontSize: 10, color: theme.textMuted }}>
                   Min Grade: {item.minGrade} ({item.minPoints} pts)
                 </Text>

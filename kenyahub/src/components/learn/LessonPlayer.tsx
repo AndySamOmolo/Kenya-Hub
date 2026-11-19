@@ -138,6 +138,14 @@ export default function LessonPlayer({
     () => getTeachingDeckForLevel(skill, level),
     [skill, level]
   );
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    document.body.dataset.khFocusMode = "true";
+    return () => {
+      delete document.body.dataset.khFocusMode;
+    };
+  }, []);
+
   const [lessonStage, setLessonStage] = useState<"learn" | "practice">(
     reviewOnly || teachingDeck.length === 0 ? "practice" : "learn"
   );
@@ -715,15 +723,7 @@ export default function LessonPlayer({
           >
             <ChevronLeft className="h-4 w-4" /> Prev
           </button>
-          {!isLastTeachingCard && (
-            <button
-              type="button"
-              onClick={() => setLessonStage("practice")}
-              className="flex items-center justify-center gap-1.5 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3.5 text-sm font-bold text-gold hover:bg-gold/20 transition-all cursor-pointer"
-            >
-              Skip to Quiz →
-            </button>
-          )}
+
           <button
             type="button"
             onClick={() => {

@@ -130,14 +130,27 @@ const RouteCard = React.memo(function RouteCard({
                   KES {route.fareMin}–{route.fareMax}
                 </Text>
               </View>
-              <Text style={[styles.saccoText, { color: theme.textSecondary }]}>
+              {route.operatingHours ? (
+                <Text
+                  numberOfLines={1}
+                  style={{ fontSize: 11, color: theme.textMuted, fontWeight: "500" }}
+                >
+                  {route.operatingHours}
+                </Text>
+              ) : null}
+            </View>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 4 }}>
+              <Text
+                numberOfLines={1}
+                style={[styles.saccoText, { color: theme.textSecondary, flexShrink: 1 }]}
+              >
                 {route.saccoName}
               </Text>
-              {route.stages && (
-                <Text style={{ fontSize: 11, color: theme.textMuted }}>
-                  · {route.stages.length} stages
+              {route.stages ? (
+                <Text style={{ fontSize: 11, color: theme.textMuted, flexShrink: 0 }}>
+                  • {route.stages.length} stages
                 </Text>
-              )}
+              ) : null}
             </View>
           </View>
           <View

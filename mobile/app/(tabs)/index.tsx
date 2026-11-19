@@ -469,18 +469,23 @@ export default function HomeScreen() {
   );
 
   const blogTags = useMemo(() => {
-    const tags = new Set<string>();
-    STATIC_BLOG_POSTS.forEach((p) =>
-      (p.tags || []).forEach((t) => tags.add(t))
-    );
-    return ["All", ...Array.from(tags)];
+    const primary = new Set<string>();
+    STATIC_BLOG_POSTS.forEach((p) => {
+      const cat = (p as any).category || p.tags?.[0];
+      if (cat) primary.add(cat);
+    });
+    return ["All", ...Array.from(primary).slice(0, 10)];
   }, []);
 
   const sortedPosts = useMemo(() => {
     const list =
       selectedBlogTag === "All"
         ? STATIC_BLOG_POSTS
-        : STATIC_BLOG_POSTS.filter((p) => p.tags?.includes(selectedBlogTag));
+        : STATIC_BLOG_POSTS.filter(
+            (p) =>
+              (p as any).category === selectedBlogTag ||
+              p.tags?.includes(selectedBlogTag)
+          );
     return [...list].sort(
       (a, b) =>
         new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()

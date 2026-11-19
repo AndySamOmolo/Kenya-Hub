@@ -168,14 +168,21 @@ export default function Navbar() {
   const filteredSearchResults = useMemo(() => {
     const q = stripDiacritics(searchQuery.trim());
     if (!q) return quickSearchItems.slice(0, 10);
-    return quickSearchItems
-      .filter(
-        (item) =>
-          stripDiacritics(item.title).includes(q) ||
-          stripDiacritics(item.subtitle).includes(q) ||
-          stripDiacritics(item.badge).includes(q)
-      )
-      .slice(0, 14);
+    const scored: { item: QuickSearchItem; score: number }[] = [];
+    for (const item of quickSearchItems) {
+      const title = stripDiacritics(item.title);
+      const badge = stripDiacritics(item.badge);
+      const sub = stripDiacritics(item.subtitle);
+      let score = 0;
+      if (title.startsWith(q)) score = 100;
+      else if (title.split(/[\s\-–—/]+/).some((w) => w.startsWith(q))) score = 75;
+      else if (title.includes(q)) score = 50;
+      else if (badge.includes(q)) score = 25;
+      else if (sub.includes(q)) score = 10;
+      if (score > 0) scored.push({ item, score });
+    }
+    scored.sort((a, b) => b.score - a.score || a.item.title.localeCompare(b.item.title));
+    return scored.slice(0, 14).map((x) => x.item);
   }, [quickSearchItems, searchQuery]);
 
   const isActivePath = (href: string) => {
@@ -433,7 +440,7 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden absolute left-0 right-0 top-12 h-[calc(100vh-48px)] h-[calc(100dvh-48px)] max-h-[calc(100vh-5rem)] max-h-[calc(100dvh-5rem)] border-t border-border bg-bg-card/98 backdrop-blur-xl animate-fade-in-up flex flex-col shadow-2xl">
+          <div className="md:hidden absolute left-0 right-0 top-12 z-[70] h-[calc(100vh-48px)] h-[calc(100dvh-48px)] max-h-[calc(100vh-5rem)] max-h-[calc(100dvh-5rem)] border-t border-border bg-bg-card flex flex-col shadow-2xl" style={{ backgroundColor: "var(--bg-card)" }}>
             <div className="flex-1 overflow-y-auto px-4 py-4 pb-16 space-y-1">
               <Link href="/" className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-text-primary rounded-xl hover:bg-black/[0.04] dark:hover:bg-white/[0.04] transition-colors" onClick={() => setMobileOpen(false)}>
                 <span className="w-7 flex items-center justify-center shrink-0"><Home className="w-4 h-4 text-text-muted group-hover:text-gold transition-colors shrink-0" /></span> Home
@@ -524,7 +531,7 @@ export default function Navbar() {
                     router.push(filteredSearchResults[0].href);
                   }
                 }}
-                placeholder="Search 33 tools, 23 languages, 47 counties, matatu routes, or guides..."
+                placeholder="Search tools, languages, or counties..."
                 className="flex-1 min-w-0 bg-transparent text-sm text-text-primary placeholder:text-text-muted outline-none"
               />
               {searchQuery && (

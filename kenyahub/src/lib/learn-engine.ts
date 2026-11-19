@@ -109,6 +109,19 @@ export function isCleanLexicalWordPair(rawTarget: string, rawSource: string): bo
  * Check whether a sentence pair is a clean conversational/proverbial sentence
  * (excluding academic tables, page citations, and em-dash vocabulary definitions).
  */
+
+/**
+ * Returns true if the primary form of a target entry is a clean single lexical word
+ * (suitable for Word Scramble and Wordle mini-games).
+ */
+export function isSingleWordLexical(raw: string): boolean {
+  if (!raw || typeof raw !== 'string') return false;
+  const primary = getPrimaryForm(raw).trim();
+  if (!primary || /\s/.test(primary)) return false;
+  const cleaned = primary.replace(/[^a-zA-Z\u00C0-\u024F\u1E00-\u1EFF']/g, '');
+  return cleaned.length >= 3 && cleaned.length <= 14;
+}
+
 export function isCleanSentencePair(rawTarget: string, rawSource: string): boolean {
   const target = cleanExerciseText(rawTarget).trim();
   const source = cleanExerciseText(rawSource).trim();

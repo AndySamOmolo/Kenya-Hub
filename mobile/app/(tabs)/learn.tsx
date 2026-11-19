@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import { Pressable, ScrollView, StyleSheet, Text } from "react-native";
+import { Platform, Pressable, ScrollView, StatusBar, StyleSheet, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   useTheme,
   KenyaStripe,
@@ -17,6 +17,8 @@ import {
 
 export default function LearnTabScreen() {
   const { theme } = useTheme();
+  const insets = useSafeAreaInsets();
+  const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
   const scrollRef = useRef<ScrollView>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [navState, setNavState] = useState<CourseNavigationState>({
@@ -32,7 +34,7 @@ export default function LearnTabScreen() {
 
   return (
     <SafeAreaView
-      style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+      style={[styles.screen, { backgroundColor: theme.bgPrimary, paddingTop: insets.top === 0 ? safeTop : 0 }]}
       edges={["top", "left", "right"]}
     >
       <KenyaStripe />
@@ -57,8 +59,8 @@ export default function LearnTabScreen() {
         scrollEventThrottle={16}
         onScroll={(e) => {
           const y = e.nativeEvent.contentOffset.y;
-          if (y > 420 && !showBackToTop) setShowBackToTop(true);
-          else if (y <= 420 && showBackToTop) setShowBackToTop(false);
+          if (y > 700 && !showBackToTop) setShowBackToTop(true);
+          else if (y <= 700 && showBackToTop) setShowBackToTop(false);
         }}
       >
         <LanguageLearningTool
@@ -93,7 +95,7 @@ export default function LearnTabScreen() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1 },
-  content: { padding: 14, paddingBottom: 40 },
+  content: { padding: 14, paddingBottom: 96 },
   fabTopBtn: {
     position: "absolute",
     bottom: 18,

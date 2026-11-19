@@ -27,12 +27,13 @@ import {
   Platform,
   Pressable,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   View,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   useTheme,
   categoryColorMap,
@@ -244,6 +245,8 @@ export default function ToolDetailScreen() {
   }>();
   const router = useRouter();
   const { theme } = useTheme();
+  const insets = useSafeAreaInsets();
+  const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
   const effectiveSlug = slug === "cbc-grade-age" ? "cbc-curriculum" : slug;
   const tool = TOOLS.find((item) => item.slug === effectiveSlug);
   const isLanguageCourseScreen = tool?.slug === "learn";
@@ -509,7 +512,7 @@ export default function ToolDetailScreen() {
 
   return (
     <SafeAreaView
-      style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
+      style={[styles.screen, { backgroundColor: theme.bgPrimary, paddingTop: insets.top === 0 ? safeTop : 0 }]}
       edges={["top", "left", "right", "bottom"]}
     >
       <KenyaStripe />
@@ -558,8 +561,8 @@ export default function ToolDetailScreen() {
         onScroll={(e) => {
           const y = e.nativeEvent.contentOffset.y;
           scrollYRef.current = y;
-          if (y > 420 && !showBackToTop) setShowBackToTop(true);
-          else if (y <= 420 && showBackToTop) setShowBackToTop(false);
+          if (y > 700 && !showBackToTop) setShowBackToTop(true);
+          else if (y <= 700 && showBackToTop) setShowBackToTop(false);
         }}
         onLayout={(e) => {
           viewportHeightRef.current = e.nativeEvent.layout.height;
@@ -1391,7 +1394,7 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 10,
-    paddingBottom: 40,
+    paddingBottom: 96,
   },
   toolHeaderCard: {
     borderRadius: 20,

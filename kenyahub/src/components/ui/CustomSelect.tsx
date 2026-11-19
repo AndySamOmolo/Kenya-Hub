@@ -79,7 +79,7 @@ export default function CustomSelect({
     };
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
-      if (showTypeahead) {
+      if (showTypeahead && typeof window !== "undefined" && window.matchMedia?.("(pointer: fine)").matches) {
         setTimeout(() => filterInputRef.current?.focus(), 30);
       }
     } else {
@@ -211,7 +211,7 @@ export default function CustomSelect({
       {isOpen && (
         <div
           role="listbox"
-          className="absolute left-0 right-0 sm:right-auto z-50 min-w-full sm:w-max max-w-[calc(100vw-1.75rem)] sm:max-w-[85vw] mt-1 bg-bg-card border border-border rounded-xl shadow-xl shadow-black/25 max-h-72 flex flex-col overflow-hidden animate-fade-in-up"
+          className="absolute left-0 right-0 sm:right-auto z-[80] min-w-full sm:w-max max-w-[calc(100vw-1.75rem)] sm:max-w-[85vw] mt-1 bg-bg-card border border-border rounded-xl shadow-2xl shadow-black/40 max-h-72 flex flex-col overflow-hidden" style={{ backgroundColor: "var(--bg-card)" }}
         >
           {showTypeahead && (
             <div className="flex items-center gap-2 px-3 py-2 border-b border-border bg-bg-elevated/60 shrink-0">

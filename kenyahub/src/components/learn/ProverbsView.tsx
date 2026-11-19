@@ -390,7 +390,7 @@ export default function ProverbsView({
               setSearch("");
               setPage(1);
             }}
-            placeholder={`Search ${langDisplayName} proverb, meaning, or theme...`}
+            placeholder="Search proverbs or meanings..."
             className="flex-1 text-sm"
           />
 

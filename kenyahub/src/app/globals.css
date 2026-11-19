@@ -1246,3 +1246,21 @@ summary:focus-visible {
 html[data-adsense-state="active"] .kh-back-to-top {
   bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)) !important;
 }
+
+/* Distraction-free mode for active lessons & mini-games */
+body[data-kh-focus-mode="true"] footer { display: none !important; }
+
+/* Mobile table scroll hint */
+@media (max-width: 640px) {
+  .table-responsive {
+    position: relative;
+    background:
+      linear-gradient(to right, var(--bg-card) 30%, transparent),
+      linear-gradient(to left, var(--bg-card) 30%, transparent) 100% 0,
+      radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.18), transparent),
+      radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.18), transparent) 100% 0;
+    background-repeat: no-repeat;
+    background-size: 28px 100%, 28px 100%, 10px 100%, 10px 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
+}

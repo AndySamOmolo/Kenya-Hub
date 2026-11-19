@@ -7,7 +7,6 @@ import { X } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import mpesaData from "@/data/mpesa-tariffs.json";
-import CustomSelect from "@/components/ui/CustomSelect";
 
 const tool = TOOLS.find((t) => t.slug === "mpesa-fee-calculator")!;
 
@@ -236,18 +235,7 @@ export default function MpesaFeeCalculatorPage() {
                 ))}
               </ExpandablePillRow>
             </div>
-            <CustomSelect
-              value={txType}
-              onChange={(e) => setTxType(e.target.value as TransactionType)}
-              className="select-field"
-              id="mpesa-type-select"
-            >
-              {txTypeOptions.map((opt) => (
-                <option key={opt.key} value={opt.key}>
-                  {opt.label}
-                </option>
-              ))}
-            </CustomSelect>
+
           </div>
         </div>
 

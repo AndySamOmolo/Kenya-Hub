@@ -116001,109 +116001,109 @@
         {
           "english": "Sunday",
           "translation": "Jumapili",
-          "pronunciation": "",
+          "pronunciation": "ʄumapili",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "Monday",
           "translation": "Jumatatu",
-          "pronunciation": "",
+          "pronunciation": "Jumatatu",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "Tuesday",
           "translation": "Jumanne",
-          "pronunciation": "",
+          "pronunciation": "Jumanne",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "Wednesday",
           "translation": "Jumatano",
-          "pronunciation": "",
+          "pronunciation": "Jumatano",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "Friday",
           "translation": "Ijumaa",
-          "pronunciation": "",
+          "pronunciation": "Iʄumaa",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "Saturday",
           "translation": "Jumamosi",
-          "pronunciation": "",
+          "pronunciation": "Jumamosi",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "January",
           "translation": "Januari",
-          "pronunciation": "",
+          "pronunciation": "Januaɾi",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "February",
           "translation": "Februari",
-          "pronunciation": "",
+          "pronunciation": "Feɓɾuaɾi",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "March",
           "translation": "Machi",
-          "pronunciation": "",
+          "pronunciation": "Matʃi",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "April",
           "translation": "Aprili",
-          "pronunciation": "",
+          "pronunciation": "Apɾili",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "May",
           "translation": "Mei",
-          "pronunciation": "",
+          "pronunciation": "Mei",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "June",
           "translation": "Juni",
-          "pronunciation": "",
+          "pronunciation": "Juni",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "July",
           "translation": "Julai",
-          "pronunciation": "",
+          "pronunciation": "Julai",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "August",
           "translation": "Agosti",
-          "pronunciation": "",
+          "pronunciation": "Aɠosti",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "September",
           "translation": "Septemba",
-          "pronunciation": "",
+          "pronunciation": "Septeᵐɓa",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "October",
           "translation": "Oktoba",
-          "pronunciation": "",
+          "pronunciation": "Oktoɓa",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "November",
           "translation": "Novemba",
-          "pronunciation": "",
+          "pronunciation": "Noveᵐɓa",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         },
         {
           "english": "December",
           "translation": "Desemba",
-          "pronunciation": "",
+          "pronunciation": "Deseᵐɓa",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         }
       ]

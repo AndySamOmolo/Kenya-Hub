@@ -90,6 +90,17 @@ export default function GamesHub({
   onBack,
 }: GamesHubProps) {
   const [activeGame, setActiveGame] = useState<GameType>("menu");
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    if (activeGame) {
+      document.body.dataset.khFocusMode = "true";
+    } else {
+      delete document.body.dataset.khFocusMode;
+    }
+    return () => {
+      delete document.body.dataset.khFocusMode;
+    };
+  }, [activeGame]);
   const [scope, setScope] = useState<VocabScopeMode>("course");
   const [selectedUnitId, setSelectedUnitId] = useState<string>(
     () => (courseUnits?.[0] || units[0])?.id || ""
