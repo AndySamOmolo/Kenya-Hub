@@ -23,7 +23,7 @@ import { SAMBURU_PROVERBS } from "./samburu";
 import { RENDILLE_PROVERBS } from "./rendille";
 import { DAASANACH_PROVERBS } from "./daasanach";
 
-export type { ProverbItem, CulturalWisdomItem } from "./types";
+export type { Proverb, ProverbItem, CulturalWisdomItem } from "./types";
 export { NORTHCOTE_1907_ETHNOGRAPHIC_WISDOM } from "./ethnographic-wisdom";
 export { MAASAI_PROVERBS } from "./maasai";
 export { KALENJIN_PROVERBS } from "./kalenjin";
