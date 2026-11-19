@@ -61,6 +61,32 @@ def sanitize_cdn_base(raw: str) -> str:
 
 CDN_BASE = sanitize_cdn_base(os.environ.get("NEXT_PUBLIC_AUDIO_CDN_URL", ""))
 ONLY_UNGATED = os.environ.get("ONLY_UNGATED", "").strip().lower() in {"1", "true", "yes"}
+FORCE_REINGEST = os.environ.get("FORCE_REINGEST", "").strip().lower() in {"1", "true", "yes"}
+RETRY_PENDING_ONLY = os.environ.get("RETRY_PENDING_ONLY", "true").strip().lower() in {"1", "true", "yes"}
+AUDIO_INDEX_PATH = PUBLIC_DIR / "r2-audio-index.json"
+
+
+def load_existing_dataset_status() -> dict:
+    if not LOCK_PATH.exists():
+        return {}
+    try:
+        return json.loads(LOCK_PATH.read_text(encoding="utf-8")).get("datasetStatus", {}) or {}
+    except Exception:
+        return {}
+
+
+def load_existing_audio_index() -> dict:
+    if not AUDIO_INDEX_PATH.exists():
+        return {}
+    try:
+        return json.loads(AUDIO_INDEX_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def is_gated_error(exc: Exception) -> bool:
+    msg = str(exc).lower()
+    return any(tok in msg for tok in ("gated", "401", "403", "forbidden", "access to dataset", "authorized", "must be authenticated"))
 
 # Hard Commercial-License Guardrail (24 Audited Non-Commercial Traps)
 BLOCKED_NON_COMMERCIAL_REPOS = frozenset({
@@ -463,7 +489,7 @@ def ingest_zenodo_kiamu(s3_client, uploaded_keys: dict):
             log(f"  [warn] Zenodo Kiamu ingest skipped: {exc}")
 
 
-def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict):
+def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: dict, text_counts: dict):
     if R2_UPLOAD_DISABLED or global_budget_exceeded():
         return
 
@@ -472,7 +498,7 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict):
         {"lang_id": "swahili", "repo": "google/WaxalNLP", "config": "swa_tts", "split": "train", "text_col": "text"},
         {"lang_id": "kikuyu", "repo": "google/WaxalNLP", "config": "kik_tts", "split": "train", "text_col": "text"},
         {"lang_id": "luo", "repo": "google/WaxalNLP", "config": "luo_tts", "split": "train", "text_col": "text"},
-        {"lang_id": "luhya", "repo": "google/WaxalNLP", "config": "mas_asr", "split": "train", "text_col": "transcription"},
+        {"lang_id": "maasai", "repo": "google/WaxalNLP", "config": "mas_asr", "split": "train", "text_col": "transcription"},
         {"lang_id": "borana", "repo": "google/WaxalNLP", "config": "orm_asr_v2", "split": "train", "text_col": "transcription"},
         # 2. CLEAR Global BibleTTS Dholuo (Parquet native, studio 24kHz)
         {"lang_id": "luo", "repo": "CLEAR-Global/BibleTTS-Luo", "config": "read", "split": "train", "text_col": "text"},
@@ -511,17 +537,24 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict):
     ]
 
     for job in hf_jobs:
-        if R2_UPLOAD_DISABLED or global_budget_exceeded():
-            break
         lang_id = job["lang_id"]
         repo = job["repo"]
+        cfg = job["config"]
+        job_key = f"{repo}::{cfg}::{lang_id}"
+        if R2_UPLOAD_DISABLED or global_budget_exceeded():
+            if dataset_status.get(job_key, {}).get("status") != "completed":
+                dataset_status[job_key] = {"status": "skipped_budget", "gated": bool(job.get("gated")), "lang_id": lang_id}
+            continue
         if repo.strip().lower() in BLOCKED_NON_COMMERCIAL_REPOS:
             log(f"  [BLOCKED-NC] Refusing non-commercial repo: {repo}")
             continue
+        if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") == "completed":
+            log(f"  [skip-done] Already ingested {job_key} in prior run.")
+            continue
         if ONLY_UNGATED and job.get("gated"):
             log(f"  [skip-gated] Skipping gated repo {repo} (ONLY_UNGATED=true)")
+            dataset_status[job_key] = {"status": "pending_gated_approval", "gated": True, "lang_id": lang_id}
             continue
-        cfg = job["config"]
         rev = job.get("revision")
         log(f"[HF Audio Stream] {repo} ({cfg}) -> {lang_id} (max {MAX_CLIPS} clips, {PER_DATASET_TIMEOUT_SEC}s cap)...")
         ds_start = time.monotonic()
@@ -572,9 +605,24 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict):
                         s_key, a_url = res
                         uploaded_keys.setdefault(lang_id, {})[s_key] = a_url
                         count += 1
+            dataset_status[job_key] = {
+                "status": "completed" if count > 0 else "completed_no_new_clips",
+                "clipsUploaded": count,
+                "gated": bool(job.get("gated")),
+                "lang_id": lang_id,
+                "updatedAt": datetime.now(timezone.utc).isoformat(),
+            }
             log(f"  -> Uploaded {count} Opus 24kbps clips for {lang_id} from {repo}/{cfg} in {int(time.monotonic() - ds_start)}s.")
         except Exception as exc:
-            log(f"  [warn] Streaming {repo}/{cfg} skipped or gated: {exc}")
+            st = "pending_gated_approval" if (job.get("gated") or is_gated_error(exc)) else "failed"
+            dataset_status[job_key] = {
+                "status": st,
+                "gated": bool(job.get("gated") or is_gated_error(exc)),
+                "lang_id": lang_id,
+                "reason": str(exc)[:220],
+                "updatedAt": datetime.now(timezone.utc).isoformat(),
+            }
+            log(f"  [{st}] Streaming {repo}/{cfg}: {exc}")
 
 
 def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
@@ -606,7 +654,8 @@ def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
             modified = True
         if modified:
             dict_file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-        exact_stats[lang_id] = {"total": tot, "cats": cats_map}
+        audio_cnt = sum(1 for c in data.get("categories", []) for e in c.get("entries", []) if (e.get("audioFile") or "").strip())
+        exact_stats[lang_id] = {"total": tot, "cats": cats_map, "audio": audio_cnt}
         grand_total += tot
 
     cat_path = DICT_DIR / "catalog.ts"
@@ -620,12 +669,12 @@ def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
         stats_json = json.dumps(exact_stats, indent=2)
         today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         new_tail = f"""// ── Synchronized Exact Entry & Category Counts Across All 23 Dictionaries (2026-11-18) ──
-const _EXACT_DICT_STATS: Record<string, {{ total: number; cats: Record<string, number> }}> = {stats_json};
+const _EXACT_DICT_STATS: Record<string, {{ total: number; cats: Record<string, number>; audio?: number }}> = {stats_json};
 for (const _m of ALL_DICT_METAS) {{
   const _st = _EXACT_DICT_STATS[_m.languageId];
   if (_st) {{
     _m.totalEntries = _st.total;
-    _m.hasAudio = true;
+    _m.hasAudio = (_st.audio ?? 0) > 0;
     _m.lastUpdated = "{today_str}";
     for (const _c of _m.categories) {{
       if (_st.cats[_c.id] !== undefined) _c.count = _st.cats[_c.id];
@@ -659,17 +708,20 @@ def main():
         return
 
     s3_client = get_s3_client()
-    uploaded_keys = {}
+    uploaded_keys = load_existing_audio_index()
+    dataset_status = load_existing_dataset_status()
     text_counts = {}
 
     ingest_hf_text_repositories(text_counts)
     ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys, text_counts)
     ingest_zenodo_kiamu(s3_client, uploaded_keys)
-    ingest_hf_streaming_audio(s3_client, uploaded_keys)
+    ingest_hf_streaming_audio(s3_client, uploaded_keys, dataset_status, text_counts)
+    AUDIO_INDEX_PATH.write_text(json.dumps(uploaded_keys, ensure_ascii=False, indent=2), encoding="utf-8")
     attached = attach_audio_urls_and_sync_catalog(uploaded_keys)
 
     subprocess.run(["node", str(ROOT_DIR / "scripts" / "sync-cloudflare-r2-audio.mjs"), "--dry-run"], check=True)
 
+    pending_gated = sorted([k for k, v in dataset_status.items() if v.get("status") == "pending_gated_approval"])
     lock_payload = {
         "ingestedAt": datetime.now(timezone.utc).isoformat(),
         "scriptsHash": os.environ.get("INGESTION_SCRIPTS_HASH", "").strip(),
@@ -679,6 +731,8 @@ def main():
         "textEntriesAddedByLanguage": text_counts,
         "uploadedAudioLanguageCounts": {k: len(v) for k, v in uploaded_keys.items()},
         "dictionaryEntriesLinked": attached,
+        "pendingGatedDatasets": pending_gated,
+        "datasetStatus": dataset_status,
     }
     LOCK_PATH.write_text(json.dumps(lock_payload, indent=2), encoding="utf-8")
     log(f"Wrote one-time lockfile to {LOCK_PATH} (total elapsed: {int(time.monotonic() - START_MONOTONIC)}s)")

@@ -557,12 +557,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Chief",
-          "translation": "Hacu, Haju; wa",
-          "pronunciation": "ha-cu ha-ju wa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Guest",
           "translation": "mgéni",
           "pronunciation": "mgeni",
@@ -723,12 +717,6 @@
           "translation": "mána kadúdu; múráni",
           "pronunciation": "mana kadudu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "White man",
-          "translation": "Mū-zūnggū; wa",
-          "pronunciation": "mu-zunggu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Young daughter",
@@ -1046,12 +1034,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Heel",
-          "translation": "Ki-tsigīno; vi",
-          "pronunciation": "ki-tsigino",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Back",
           "translation": "móngo",
           "pronunciation": "mongo",
@@ -1118,12 +1100,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Vein",
-          "translation": "Mū-sīpa; mi",
-          "pronunciation": "mu-sipa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Skin",
           "translation": "ngósi; jingo",
           "pronunciation": "ngosi",
@@ -1146,12 +1122,6 @@
           "translation": "moyo (pl. mioyo)",
           "pronunciation": "mo-yo",
           "context": "Krapf (1850) & Würtz (1895) — Kipokomo • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Thigh",
-          "translation": "Kī-wēō; vi",
-          "pronunciation": "ki-weo",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Belly",
@@ -1292,12 +1262,6 @@
           "context": "Krapf (1850) & Würtz (1895) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Breast (man's)",
-          "translation": "Bagwi; ma",
-          "pronunciation": "bagwi ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Face, forehead",
           "translation": "U-so; ny-uso",
           "pronunciation": "u-so ny-uso",
@@ -1313,12 +1277,6 @@
           "english": "Breast (woman's)",
           "translation": "Wē; ma-wē",
           "pronunciation": "we ma-we",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Nail (of finger or toe)",
-          "translation": "Ū-kōmbe; ma",
-          "pronunciation": "u-kombe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -1344,12 +1302,6 @@
           "translation": "ífu ja mío",
           "pronunciation": "ifu ja mio",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Borassus palm",
-          "translation": "Mu-humo; mi",
-          "pronunciation": "mu-humo mi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Wipe ones nose",
@@ -1584,12 +1536,6 @@
           "translation": "dingída",
           "pronunciation": "dingída",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Finger",
-          "translation": "dóie, pl. ma",
-          "pronunciation": "dóie",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Flesh",
@@ -2783,12 +2729,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Lake",
-          "translation": "Dzīwa; ma",
-          "pronunciation": "dziwa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Clay",
           "translation": "mzánga",
           "pronunciation": "mzanga",
@@ -3089,12 +3029,6 @@
           "context": "Krapf (1850), Würtz (1895) & Johnston (1919) — Kipokomo • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Well, source",
-          "translation": "Kī-sīma; vi-. K-angga; vy",
-          "pronunciation": "ki-sima",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Mountain / Hill",
           "translation": "mlima (pl. milima)",
           "pronunciation": "m-lee-mah",
@@ -3279,12 +3213,6 @@
           "translation": "Mu-vūto. Pēpho",
           "pronunciation": "mu-vūto pēph",
           "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Cloud",
-          "translation": "wíngo pl. ma",
-          "pronunciation": "wíngo pl ma",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Copper",
@@ -3928,12 +3856,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "To eat",
-          "translation": "yā",
-          "pronunciation": "ya",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Lay eggs",
           "translation": "wia madji",
           "pronunciation": "wia mad-ji",
@@ -4130,12 +4052,6 @@
           "translation": "niúmba kadúdu",
           "pronunciation": "niumba kadudu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Hoe",
-          "translation": "Tsembe; ma",
-          "pronunciation": "tsembe ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Tent",
@@ -4594,12 +4510,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Adverse, adj. to be",
-          "translation": "ku heha na",
-          "pronunciation": "ku heha na",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Advise",
           "translation": "va ṣauíri",
           "pronunciation": "va ṣauíri",
@@ -4916,12 +4826,6 @@
           "translation": "huáa múke",
           "pronunciation": "huáa múke",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Better",
-          "translation": "dánsa ka jia",
-          "pronunciation": "dánsa ka jia",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Between",
@@ -5354,12 +5258,6 @@
           "translation": "muóga",
           "pronunciation": "muóga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Craft",
-          "translation": "kulla pl. ma",
-          "pronunciation": "kulla pl ma",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Creep",
@@ -6694,21 +6592,9 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "If",
-          "translation": "aki",
-          "pronunciation": "aki",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Ill-treate",
           "translation": "henda wiwi",
           "pronunciation": "henda wiwi",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
-        },
-        {
-          "english": "Imitate",
-          "translation": "engána na",
-          "pronunciation": "engána na",
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
@@ -6862,12 +6748,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adv.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Instead",
-          "translation": "vantu va",
-          "pronunciation": "vantu va",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Instruct",
           "translation": "funda",
           "pronunciation": "funda",
@@ -6956,12 +6836,6 @@
           "translation": "zikúna",
           "pronunciation": "zikúna",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Joint",
-          "translation": "úngo, pl. ma",
-          "pronunciation": "úngo",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Joke",
@@ -7154,12 +7028,6 @@
           "translation": "fungusa",
           "pronunciation": "fungusa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Lest",
-          "translation": "kuza ku",
-          "pronunciation": "kuza ku",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Let",
@@ -7936,12 +7804,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Our",
-          "translation": "yéhu",
-          "pronunciation": "yéhu",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Pan",
           "translation": "niungu",
           "pronunciation": "niungu",
@@ -8354,12 +8216,6 @@
           "translation": "kwansa",
           "pronunciation": "kwansa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Pride",
-          "translation": "zikúsa",
-          "pronunciation": "zikúsa",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Priest",
@@ -10162,12 +10018,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Threaten",
-          "translation": "héha na",
-          "pronunciation": "héha na",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Three times",
           "translation": "mieda miháhu",
           "pronunciation": "mieda miháhu",
@@ -10796,12 +10646,6 @@
           "translation": "kinóo",
           "pronunciation": "kinóo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "While; whilst",
-          "translation": "aki",
-          "pronunciation": "aki",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Whip",
@@ -11492,18 +11336,6 @@
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "To cut",
-          "translation": "kātā",
-          "pronunciation": "ka-ta",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To see",
-          "translation": "ōnā",
-          "pronunciation": "-ona",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "To hear",
           "translation": "kusikia (-sikia)",
           "pronunciation": "kusikia",
@@ -11546,58 +11378,10 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "To beat",
-          "translation": "bīgā",
-          "pronunciation": "bi-ga",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To give",
-          "translation": "pā",
-          "pronunciation": "pa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To know",
-          "translation": "mānyā",
-          "pronunciation": "manya",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "To pass",
           "translation": "kóza",
           "pronunciation": "koza",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To kill",
-          "translation": "ūlāgā",
-          "pronunciation": "-ulaga",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To dance",
-          "translation": "vīnā",
-          "pronunciation": "vi-na",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To laugh",
-          "translation": "tsēkā",
-          "pronunciation": "tse-ka",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To sleep",
-          "translation": "yālā",
-          "pronunciation": "ya-la",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To steal",
-          "translation": "īva",
-          "pronunciation": "-iva",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Aside, to lay",
@@ -12791,12 +12575,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Rotten",
-          "translation": "wōvū",
-          "pronunciation": "wo-vu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Each other",
           "translation": "wawáde hawáde",
           "pronunciation": "wawade hawade",
@@ -12807,18 +12585,6 @@
           "translation": "wónse vamóza",
           "pronunciation": "wonse vamoza",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Plenty, many",
-          "translation": "īnggī",
-          "pronunciation": "-inggi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Fierce, sharp",
-          "translation": "kāyī",
-          "pronunciation": "ka-yi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Flat, adj. to be",
@@ -12933,12 +12699,6 @@
           "translation": "ana ngúfu sa mui",
           "pronunciation": "ana ngúfu sa mui",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Kind",
-          "translation": "gósa; za",
-          "pronunciation": "gósa",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Mad",
@@ -13176,12 +12936,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "To go",
-          "translation": "ēndā",
-          "pronunciation": "-enda",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Where?",
           "translation": "hapi? (ku?)",
           "pronunciation": "hah-pee",
@@ -13246,18 +13000,6 @@
           "translation": "henda njia",
           "pronunciation": "hend-a njia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Paddle",
-          "translation": "Kāfī; ma",
-          "pronunciation": "kafi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To come",
-          "translation": "dzā",
-          "pronunciation": "dza",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "To become surety",
@@ -13599,12 +13341,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Ivory",
-          "translation": "M-pembe; ma",
-          "pronunciation": "m-pembe ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Weight",
           "translation": "mtánge ya ku pimía",
           "pronunciation": "mtange ya ku pimia",
@@ -13705,12 +13441,6 @@
           "translation": "tálella",
           "pronunciation": "tálella",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Court, yard",
-          "translation": "mórro wa",
-          "pronunciation": "mórro wa",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Fine",
@@ -13840,18 +13570,6 @@
           "translation": "ṣóga",
           "pronunciation": "soga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Doctor (medicine man)",
-          "translation": "Mu-gangga; wa",
-          "pronunciation": "mu-gangga wa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "To die",
-          "translation": "fā",
-          "pronunciation": "fa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Rise from the dead",
@@ -14433,12 +14151,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Lips",
-          "translation": "Mu-yomo; mi",
-          "pronunciation": "mu-yomo mi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Espy",
           "translation": "enda dóya",
           "pronunciation": "enda doya",
@@ -14643,12 +14355,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Female",
-          "translation": "kē",
-          "pronunciation": "ke",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Burial",
           "translation": "mbéra",
           "pronunciation": "mbera",
@@ -14707,12 +14413,6 @@
           "translation": "ka rá",
           "pronunciation": "ka ra",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Parrot",
-          "translation": "Kwāru; ma",
-          "pronunciation": "kwaru",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Better",
@@ -14965,12 +14665,6 @@
           "translation": "oga",
           "pronunciation": "o-ga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Buttocks",
-          "translation": "Tako; ma",
-          "pronunciation": "ta-ko ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "One-eyed",
@@ -15583,12 +15277,6 @@
           "translation": "Kingozi",
           "pronunciation": "kin-go-zi",
           "context": "Wikipedia Pokomo_language & Krapf (1882) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
-          "english": "Not (with verb, as prefix, infix, or suffix)",
-          "translation": "Sī-, Kā-, Tā-, -sī",
-          "pronunciation": "si- ka- ta- -si-",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Uta clan (Malalulu / Zubaki — Bakai Galgalo at Fumboni above Dafoma → Galgalo & Kofa)",
@@ -18348,5 +18036,5 @@
   "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "pkb",
   "glottocode": "poko1261",
-  "totalEntries": 3122
+  "totalEntries": 3070
 }

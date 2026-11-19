@@ -140,13 +140,12 @@ export default function Navbar() {
     const routesByTown = (matatuRoutesData.routes || {}) as Record<
       string,
       Array<{
-        id: string;
-        number: string;
+        routeNumber: string;
         name: string;
         slug: string;
-        from: string;
-        to: string;
-        sacco?: string;
+        terminusA: string;
+        terminusB: string;
+        saccoName?: string;
       }>
     >;
     for (const [townSlug, townRoutes] of Object.entries(routesByTown)) {
@@ -155,8 +154,8 @@ export default function Navbar() {
       for (const route of townRoutes) {
         items.push({
           id: `matatu-${townSlug}-${route.slug}`,
-          title: `Route ${route.number}: ${route.name} (${townLabel})`,
-          subtitle: `${route.from} → ${route.to}${route.sacco ? ` • ${route.sacco}` : ""}`,
+          title: `Route ${route.routeNumber}: ${route.name} (${townLabel})`,
+          subtitle: `${route.terminusA} → ${route.terminusB}${route.saccoName ? ` • ${route.saccoName}` : ""}`,
           href: `/matatu/${townSlug}/${route.slug}/`,
           badge: "Matatu",
           icon: "🚌",
@@ -525,7 +524,7 @@ export default function Navbar() {
                     router.push(filteredSearchResults[0].href);
                   }
                 }}
-                placeholder="Search 25 tools, 23 languages, 47 counties, matatu routes, or guides..."
+                placeholder="Search 33 tools, 23 languages, 47 counties, matatu routes, or guides..."
                 className="flex-1 min-w-0 bg-transparent text-sm text-text-primary placeholder:text-text-muted outline-none"
               />
               {searchQuery && (

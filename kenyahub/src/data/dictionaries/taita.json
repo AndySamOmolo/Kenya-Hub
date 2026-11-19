@@ -561,12 +561,6 @@
           "context": "Comparative Kidaw'ida/Kisagala Vocabulary (Johnston 1919 Vol. I)"
         },
         {
-          "english": "Both",
-          "translation": "ose -ile",
-          "pronunciation": "ose -ile",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "First",
           "translation": "hambiri; [in point of time], jako, jandi, jakundi; muka jako, wait first; lima jakundi",
           "pronunciation": "hambiri",
@@ -1826,12 +1820,6 @@
           "english": "Father",
           "translation": "aba, my father; tatio, thy father; tatie, his father; aba wetu, or tatietu",
           "pronunciation": "aba",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Grand",
-          "translation": "loli",
-          "pronunciation": "loli",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -7913,12 +7901,6 @@
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "Raw",
-          "translation": "ishi; makes mbishi with nouns of the third class",
-          "pronunciation": "ishi",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "Egg",
           "translation": "igi",
           "pronunciation": "igi",
@@ -8537,12 +8519,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Gourd",
-          "translation": "kishori",
-          "pronunciation": "kishori [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Hoe",
           "translation": "igembe, an iron hoe; mulo, a small stick for digging; mwando, *a larger stick used in",
           "pronunciation": "igembe",
@@ -8552,12 +8528,6 @@
           "english": "Honey",
           "translation": "uki; *native honey consists of honey, beeswax, etc",
           "pronunciation": "uki",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Indian corn",
-          "translation": "ibemba",
-          "pronunciation": "ibemba [",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -8576,12 +8546,6 @@
           "english": "Milk",
           "translation": "maziwa; [new milk], maziwa maishi; [curdled milk], maziwa 'gairwiro; [butter milk]",
           "pronunciation": "maziwa",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Millet",
-          "translation": "mwemba,; [a small kind of millet], msele",
-          "pronunciation": "mwemba",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -9242,11 +9206,6 @@
         {
           "english": "[a small helping of porridge]",
           "translation": "itongi",
-          "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
-        },
-        {
-          "english": "Maize",
-          "translation": "ibemba",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -10233,12 +10192,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "To be bitter (irregular stative present)",
-          "translation": "kuhara ('gwa-na-har-are, it is bitter)",
-          "pronunciation": "to be bitter",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Kukalla",
           "translation": "with its various parts, is used to express continuity; it is followed by either the infini",
           "pronunciation": "with its various parts",
@@ -10305,18 +10258,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Abundance",
-          "translation": "ngi, henga",
-          "pronunciation": "ngi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Aged",
-          "translation": "'gosi",
-          "pronunciation": "'gosi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Aloft",
           "translation": "igulu",
           "pronunciation": "igulu",
@@ -10326,12 +10267,6 @@
           "english": "Ants",
           "translation": "sambiro, very small black ants; salafu, brown biting ants; tlyeha, white ants; ngumb",
           "pronunciation": "sambiro",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Any",
-          "translation": "ose",
-          "pronunciation": "ose",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10395,12 +10330,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Common",
-          "translation": "a wandu wose",
-          "pronunciation": "a wandu wose",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Companion",
           "translation": "mbetu, ours; mbenu, yours; mbao, *theirs",
           "pronunciation": "mbetu",
@@ -10431,27 +10360,9 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Feeble",
-          "translation": "nyongi",
-          "pronunciation": "nyongi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Female",
-          "translation": "ke",
-          "pronunciation": "ke",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Foods",
           "translation": "kimanga, cooked beans; mswara, porridge; kinolo, bread from Indian corn; kinaburi, *",
           "pronunciation": "kimanga",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Foreign",
-          "translation": "geni",
-          "pronunciation": "geni",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10473,12 +10384,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Having",
-          "translation": "enyi, -esi",
-          "pronunciation": "enyi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Heap",
           "translation": "kitungu; [of weeds], mbii; [of firewood], cheta",
           "pronunciation": "kitungu",
@@ -10497,57 +10402,9 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Idle",
-          "translation": "mgadi",
-          "pronunciation": "mgadi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "If",
-          "translation": "ngera, sala, kamba, nda, -ka-, inserted in the verb",
-          "pronunciation": "ngera",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Immature",
-          "translation": "koo",
-          "pronunciation": "koo",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "In",
           "translation": "kele, case in -ni, followed by pronouns in kw-, as : ngoloni kwangu; in front, kwa",
           "pronunciation": "kele",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Infirm",
-          "translation": "nyongi",
-          "pronunciation": "nyongi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Ingenious",
-          "translation": "lachu",
-          "pronunciation": "lachu",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Instead of",
-          "translation": "andu kwa",
-          "pronunciation": "andu kwa",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Into",
-          "translation": "kele, amwēn, case in -ni, followed by pronouns in kw",
-          "pronunciation": "kele",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "It",
-          "translation": "ichi, icho",
-          "pronunciation": "ichi",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10569,24 +10426,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Lovely",
-          "translation": "loli",
-          "pronunciation": "loli",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Lowly",
-          "translation": "nyongi",
-          "pronunciation": "nyongi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Male",
-          "translation": "lume",
-          "pronunciation": "lume",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Matter affairs",
           "translation": "vilambo, uvoro, shuli; [what is the matter?] n'ini ao? [what is the matter with you?]",
           "pronunciation": "vilambo",
@@ -10599,33 +10438,9 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Might power",
-          "translation": "ku-dima",
-          "pronunciation": "ku-dima [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Mild",
-          "translation": "a mbeo",
-          "pronunciation": "a mbeo",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Much",
-          "translation": "ingi",
-          "pronunciation": "ingi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Musical instruments",
           "translation": "ngoma, drum; gunda, a large kudu horn; nderere, a small horn used in fighting; nguli",
           "pronunciation": "ngoma",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "My",
-          "translation": "angu",
-          "pronunciation": "angu",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10647,18 +10462,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Next",
-          "translation": "a kaili",
-          "pronunciation": "a kaili",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Nice",
-          "translation": "loli",
-          "pronunciation": "loli",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Nickname",
           "translation": "izina lya sare; *almost every man has two names, one given to him at his birth, the other",
           "pronunciation": "izina lya sare",
@@ -10668,12 +10471,6 @@
           "english": "Not",
           "translation": "si-, su- and sa-, *prefixed to verbs",
           "pronunciation": "si-",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Of",
-          "translation": "a, with the variable prefix",
-          "pronunciation": "a",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10695,39 +10492,9 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Our",
-          "translation": "etu",
-          "pronunciation": "etu",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Own",
-          "translation": "angu mwēn, -ako umwēn",
-          "pronunciation": "angu mwēn",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Patch",
           "translation": "mrafu",
           "pronunciation": "mrafu",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Pile",
-          "translation": "kitungu",
-          "pronunciation": "kitungu [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Plenty",
-          "translation": "ingi",
-          "pronunciation": "ingi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Pocket",
-          "translation": "kikuchu",
-          "pronunciation": "kikuchu [",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10743,12 +10510,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Reason",
-          "translation": "kwa kimuni",
-          "pronunciation": "kwa kimuni [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Relations relatives",
           "translation": "wa mzetu",
           "pronunciation": "wa mzetu etc",
@@ -10758,12 +10519,6 @@
           "english": "Remainder",
           "translation": "a'ga 'gahangalika",
           "pronunciation": "a'ga 'gahangalika",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Sack",
-          "translation": "wararo",
-          "pronunciation": "wararo [",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10779,39 +10534,9 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Self",
-          "translation": "ēn",
-          "pronunciation": "ēn",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Shall",
-          "translation": "je",
-          "pronunciation": "je- [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "She",
-          "translation": "iye",
-          "pronunciation": "iye [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Should",
-          "translation": "mangu, macha",
-          "pronunciation": "mangu",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Side [the sides]",
           "translation": "mbalembale; [this side], igasi kunu; [the other side], chambuko",
           "pronunciation": "mbalembale",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Slender",
-          "translation": "suse",
-          "pronunciation": "suse",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10839,34 +10564,10 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Temperate",
-          "translation": "a karakara",
-          "pronunciation": "a karakara",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "That thing",
-          "translation": "kindu kilya",
-          "pronunciation": "kindu kilya [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Their",
-          "translation": "awe",
-          "pronunciation": "awe",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "These",
           "translation": "awa",
           "pronunciation": "awa",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "They",
-          "translation": "ao, waio",
-          "pronunciation": "ao",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
           "english": "Thing",
@@ -10881,12 +10582,6 @@
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "Thither",
-          "translation": "aho",
-          "pronunciation": "aho [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Those",
           "translation": "awa",
           "pronunciation": "awa",
@@ -10899,45 +10594,9 @@
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "Thy",
-          "translation": "ako",
-          "pronunciation": "ako",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Timid",
-          "translation": "oga",
-          "pronunciation": "oga",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Total",
-          "translation": "ose, putu",
-          "pronunciation": "ose",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Towel",
           "translation": "nguo ya ku-kuagila",
           "pronunciation": "nguo ya ku-kuagila",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Unto",
-          "translation": "kwa",
-          "pronunciation": "kwa [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Upon",
-          "translation": "na lugulu; case in -ni",
-          "pronunciation": "na lugulu",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Uppermost",
-          "translation": "a lugulu",
-          "pronunciation": "a lugulu",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -10953,18 +10612,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Was [I was]",
-          "translation": "neluo",
-          "pronunciation": "neluo [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Were [we were]",
-          "translation": "teluo",
-          "pronunciation": "teluo [",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Whatever",
           "translation": "ingi, used only in the negative sense, as si kindu chingi",
           "pronunciation": "ingi",
@@ -10974,18 +10621,6 @@
           "english": "Whether — or",
           "translation": "ango — ango; if, ngera, nda",
           "pronunciation": "ango ango",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Wicked",
-          "translation": "a lagelage",
-          "pronunciation": "a lagelage",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Wild",
-          "translation": "a sakeni",
-          "pronunciation": "a sakeni",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -11004,24 +10639,6 @@
           "english": "Woe",
           "translation": "vilambo",
           "pronunciation": "vilambo",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Would",
-          "translation": "mangu, macha",
-          "pronunciation": "mangu",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Yonder",
-          "translation": "alya, kulya",
-          "pronunciation": "alya",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Your",
-          "translation": "ako",
-          "pronunciation": "ako",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -12191,11 +11808,6 @@
         {
           "english": "Nickname",
           "translation": "izina lya sare; almost every man has two names, one given to him at his birth, the other",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Not",
-          "translation": "si-, su- and sa-, prefixed to verbs",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -15893,24 +15505,6 @@
           "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "All",
-          "translation": "ose, putu",
-          "pronunciation": "ose pu-tu",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Few",
-          "translation": "chache",
-          "pronunciation": "chache",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Hot",
-          "translation": "a moto",
-          "pronunciation": "a mo-to",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "Hot",
           "translation": "a moto",
           "pronunciation": "a mo-to",
@@ -15941,27 +15535,9 @@
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "Tall",
-          "translation": "lele; with nouns of the third class, ndele",
-          "pronunciation": "lele",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Thin",
-          "translation": "suse",
-          "pronunciation": "su-se",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "True",
           "translation": "fulo",
           "pronunciation": "fu-lo",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Wide",
-          "translation": "shabwa",
-          "pronunciation": "shabwa",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -16013,12 +15589,6 @@
           "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "Many",
-          "translation": "ngi",
-          "pronunciation": "ngi",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "Small",
           "translation": "ke (-tini)",
           "pronunciation": "ke",
@@ -16043,12 +15613,6 @@
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "Brave",
-          "translation": "lume; a brave man, ngumbao, ing'oni",
-          "pronunciation": "lume",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "Broad",
           "translation": "shabwa",
           "pronunciation": "shabwa",
@@ -16061,45 +15625,15 @@
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "Every",
-          "translation": "ose, killa",
-          "pronunciation": "ose killa",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Great",
-          "translation": "bwaa",
-          "pronunciation": "bwaa",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "Green",
           "translation": "rangi ya nyasi",
           "pronunciation": "rangi ya nya-si",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "Large",
-          "translation": "bwaa",
-          "pronunciation": "bwaa",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "Other",
           "translation": "zima",
           "pronunciation": "zi-ma",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Short",
-          "translation": "vui",
-          "pronunciation": "vui",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Thick",
-          "translation": "rifu; with nouns of the third class, ndifu",
-          "pronunciation": "rifu",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -16184,18 +15718,6 @@
           "english": "False",
           "translation": "ndimi",
           "pronunciation": "ndi-mi",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Little",
-          "translation": "chache; [very little], -chachere",
-          "pronunciation": "-chache",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Narrow",
-          "translation": "suse",
-          "pronunciation": "su-se",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -16523,18 +16045,6 @@
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "New",
-          "translation": "ishi; with nouns of the third class, mbishi",
-          "pronunciation": "ishi",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Old",
-          "translation": "a kale",
-          "pronunciation": "a ka-le",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "Old",
           "translation": "kūlū",
           "pronunciation": "koo-loo",
@@ -16556,19 +16066,7 @@
           "english": "Young",
           "translation": "koo",
           "pronunciation": "koo",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Young",
-          "translation": "koo",
-          "pronunciation": "koo",
           "context": "Rev. J. A. Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894 — Public Domain) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Ancient",
-          "translation": "a kale na kale",
-          "pronunciation": "a ka-le na ka-le",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
           "english": "Ancient",
@@ -16631,21 +16129,9 @@
           "context": "Comparative Kidaw'ida/Kisagala Vocabulary (Johnston 1919 Vol. I)"
         },
         {
-          "english": "Another's",
-          "translation": "a wandu",
-          "pronunciation": "a wandu",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Bad",
           "translation": "lagelage; -wasi, chanawasi, it is bad; — to make, ku-wasisa; [to use bad language]",
           "pronunciation": "lagelage",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Beautiful",
-          "translation": "loli",
-          "pronunciation": "loli",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -16655,39 +16141,9 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Bold",
-          "translation": "lume",
-          "pronunciation": "lume",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Fair white",
-          "translation": "mnyangi",
-          "pronunciation": "mnyangi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Fresh",
-          "translation": "ishi",
-          "pronunciation": "ishi",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Bad",
           "translation": "ku-ola; — before, ku-kaiai; — by, ku-ita; — down, ku-selela, ku-jika",
           "pronunciation": "ku-ola",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Handsome",
-          "translation": "loli",
-          "pronunciation": "loli",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Humble",
-          "translation": "nyongi",
-          "pronunciation": "nyongi",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -16697,27 +16153,9 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Mad",
-          "translation": "zimo",
-          "pronunciation": "zimo",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Small thin",
-          "translation": "suse; little, -chache",
-          "pronunciation": "suse",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "White",
           "translation": "mnynge; [the white neck of a raven], ikombe",
           "pronunciation": "mnynge",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Whole sound",
-          "translation": "zima, -a banana, maana",
-          "pronunciation": "zima",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -16995,12 +16433,6 @@
           "english": "East",
           "translation": "andu ijua lyifuma",
           "pronunciation": "andu ijua lyifuma",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Inside",
-          "translation": "amwēn, case in -ni, followed by kwa",
-          "pronunciation": "amwēn",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -18097,12 +17529,6 @@
       "icon": "Siren",
       "entries": [
         {
-          "english": "Ill",
-          "translation": "kongo",
-          "pronunciation": "kongo",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
           "english": "War",
           "translation": "uta",
           "pronunciation": "uta",
@@ -18430,12 +17856,6 @@
           "english": "Danger",
           "translation": "asara, buga",
           "pronunciation": "asara",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
-          "english": "Innocent",
-          "translation": "a banana",
-          "pronunciation": "a banana",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
@@ -19474,12 +18894,6 @@
           "context": "Wray (1894, p. 106) Moon • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "May",
-          "translation": "ngera",
-          "pronunciation": "nge-ra",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Now directly",
           "translation": "ilyēn (short for ilyi lyēn), ndam, ndakwēn; [to-day], lelo kwēn; [these days], a'ga matuku",
           "pronunciation": "ilyēn",
@@ -19522,11 +18936,6 @@
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Time",
-          "translation": "ngelo, hawa, mbaza, luma (present time); igeri, ituku (past time)",
-          "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
-        },
-        {
           "english": "Before Christ (BC / Historical Era)",
           "translation": "Kabla ya Kristo (KK)",
           "pronunciation": "ka-bla ya kri-sto",
@@ -19537,6 +18946,120 @@
           "translation": "Baada ya Kristo (BK)",
           "pronunciation": "ba-a-da ya kri-sto",
           "context": "Unicode CLDR / ICU Locale dav_KE (Unicode-3.0, https://www.localeplanet.com/icu/dav-KE/index.html)"
+        },
+        {
+          "english": "Sunday",
+          "translation": "Ituku ja jumwa",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Monday",
+          "translation": "Kuramuka jimweri",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Tuesday",
+          "translation": "Kuramuka kawi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Wednesday",
+          "translation": "Kuramuka kadadu",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Thursday",
+          "translation": "Kuramuka kana",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Friday",
+          "translation": "Kuramuka kasanu",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Saturday",
+          "translation": "Kifula nguwo",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "January",
+          "translation": "Mori ghwa imbiri",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "February",
+          "translation": "Mori ghwa kawi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "March",
+          "translation": "Mori ghwa kadadu",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "April",
+          "translation": "Mori ghwa kana",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "May",
+          "translation": "Mori ghwa kasanu",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "June",
+          "translation": "Mori ghwa karandadu",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "July",
+          "translation": "Mori ghwa mfungade",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "August",
+          "translation": "Mori ghwa wunyanya",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "September",
+          "translation": "Mori ghwa ikenda",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "October",
+          "translation": "Mori ghwa ikumi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "November",
+          "translation": "Mori ghwa ikumi na imweri",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "December",
+          "translation": "Mori ghwa ikumi na iwi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         }
       ]
     },
@@ -19610,12 +19133,6 @@
           "translation": "ndai? (nani?)",
           "pronunciation": "n-dah-ee",
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Fine",
-          "translation": "loli",
-          "pronunciation": "lo-li",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
           "english": "Oath",
@@ -23617,12 +23134,6 @@
           "english": "Chastise, to",
           "translation": "ku-'disa, ku-rasha",
           "pronunciation": "ku-'disa ku-rasha",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Cheap, to be",
-          "translation": "a bule, ku-angua, ku-hanyua",
-          "pronunciation": "a bu-le ku-angua ku-hanyua",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -30560,12 +30071,6 @@
           "english": "Already",
           "translation": "ndamu, ndakwēn, ilyēn",
           "pronunciation": "ndamu ndakwen ilyen",
-          "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
-        },
-        {
-          "english": "Another",
-          "translation": "zima",
-          "pronunciation": "zi-ma",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -42696,5 +42201,5 @@
   "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 7654
+  "totalEntries": 7571
 }

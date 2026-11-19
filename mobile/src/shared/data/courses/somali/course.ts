@@ -4520,6 +4520,176 @@ export const SOMALI_UNITS: CourseUnit[] = [
           }
         ]
       }
+,
+      {
+        "id": "somali-audio-4-expanded",
+        "title": "Expanded Native Af-Soomaali Audio Practice",
+        "icon": "Volume2",
+        "description": "Train your ear on newly ingested native Af-Soomaali recordings added to the KenyaHub dictionary.",
+        "tips": "Distinguish Somali long vowels (aa, ee, ii, oo, uu) and pharyngeal consonants (c, x) directly from native speaker audio.",
+        "culturalNote": "Newly ingested verified Af-Soomaali native recordings from commercially permissive speech corpora.",
+        "words": [
+          {
+            "target": "eber",
+            "source": "Zero (0)",
+            "pronunciation": "eber",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/eber.opus"
+          },
+          {
+            "target": "ilko",
+            "source": "Teeth",
+            "pronunciation": "ilko",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/ilko.opus"
+          },
+          {
+            "target": "bisad",
+            "source": "Cat",
+            "pronunciation": "bisad",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/bisad.opus"
+          },
+          {
+            "target": "Webi (wide one)",
+            "source": "River",
+            "pronunciation": "",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/webi.opus"
+          },
+          {
+            "target": "hèl",
+            "source": "Get, find",
+            "pronunciation": "hèl",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/hel.opus"
+          },
+          {
+            "target": "Maalin (pl. Maalino)",
+            "source": "Day",
+            "pronunciation": "maa-lin",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/maalin.opus"
+          },
+          {
+            "target": "maalin",
+            "source": "Day (calendar unit)",
+            "pronunciation": "maa-lin",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/maalin.opus"
+          },
+          {
+            "target": "roob",
+            "source": "Rain",
+            "pronunciation": "roob",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/roob.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "eber",
+            "source": "Zero (0)",
+            "audio": "https://audio.kenyahub.me/audio/somali/eber.opus"
+          },
+          {
+            "target": "ilko",
+            "source": "Teeth",
+            "audio": "https://audio.kenyahub.me/audio/somali/ilko.opus"
+          },
+          {
+            "target": "bisad",
+            "source": "Cat",
+            "audio": "https://audio.kenyahub.me/audio/somali/bisad.opus"
+          },
+          {
+            "target": "Webi (wide one)",
+            "source": "River",
+            "audio": "https://audio.kenyahub.me/audio/somali/webi.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native recording and select its English meaning:",
+            "correctAnswer": "Zero (0)",
+            "options": [
+              "Zero (0)",
+              "Teeth",
+              "Cat",
+              "River"
+            ],
+            "audioText": "eber",
+            "sourceWord": {
+              "target": "eber",
+              "source": "Zero (0)",
+              "pronunciation": "eber",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/somali/eber.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native recording and select its English meaning:",
+            "correctAnswer": "Teeth",
+            "options": [
+              "Teeth",
+              "Zero (0)",
+              "Cat",
+              "River"
+            ],
+            "audioText": "ilko",
+            "sourceWord": {
+              "target": "ilko",
+              "source": "Teeth",
+              "pronunciation": "ilko",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/somali/ilko.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which expression means \"Cat\"?",
+            "correctAnswer": "bisad",
+            "options": [
+              "bisad",
+              "eber",
+              "ilko",
+              "Webi (wide one)"
+            ],
+            "sourceWord": {
+              "target": "bisad",
+              "source": "Cat",
+              "pronunciation": "bisad",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/somali/bisad.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "eber",
+                "right": "Zero (0)"
+              },
+              {
+                "left": "ilko",
+                "right": "Teeth"
+              },
+              {
+                "left": "bisad",
+                "right": "Cat"
+              },
+              {
+                "left": "Webi (wide one)",
+                "right": "River"
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 ];

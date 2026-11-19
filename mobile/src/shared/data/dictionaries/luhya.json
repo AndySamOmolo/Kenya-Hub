@@ -60,18 +60,6 @@
         {
           "english": "Pardon, to",
           "translation": "leshiri",
-          "pronunciation": "leshi-ri",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Salute, to",
-          "translation": "shesia",
-          "pronunciation": "she-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pardon, to",
-          "translation": "leshiri",
           "pronunciation": "lesh-i-ri",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -80,12 +68,6 @@
           "translation": "shesia",
           "pronunciation": "she-sia",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Forgive, to",
-          "translation": "leshe",
-          "pronunciation": "leshe",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Forgive, to",
@@ -1198,19 +1180,7 @@
           "english": "Ease one's self, to",
           "translation": "nia",
           "pronunciation": "nia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Ease one's self, to",
-          "translation": "nia",
-          "pronunciation": "nia",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Clothe one's self, to",
-          "translation": "ifwali",
-          "pronunciation": "ifwa-li",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Clothe one's self, to",
@@ -2014,16 +1984,6 @@
           "english": "Hundred (Luwanga)",
           "translation": "esha kumira",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
-          "english": "Two",
-          "translation": "wa-wiri vi-wiri; ki-viri tzi-wiri",
-          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902) — Lu-Wanga"
-        },
-        {
-          "english": "Three",
-          "translation": "wa-taru tzi-taru; ki-taru vi-taru",
-          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902) — Lu-Wanga"
         },
         {
           "english": "Bone",
@@ -3936,11 +3896,6 @@
           "english": "That man (Luwanga)",
           "translation": "mundu ulia",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
-          "english": "Bad man; Bad men",
-          "translation": "mundu umuvi; awandu awawi",
-          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902) — Ketosh/Bukusu"
         },
         {
           "english": "Brother",
@@ -6043,12 +5998,6 @@
           "translation": "ewekha",
           "pronunciation": "e-wekh-a",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Skin, to",
-          "translation": "waka",
-          "pronunciation": "wa-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Skin, to",
@@ -9068,12 +9017,6 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Toad",
-          "translation": "akusheri",
-          "pronunciation": "a-kushe-ri",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Shell",
           "translation": "likongolo",
           "pronunciation": "li-kongo-lo",
@@ -9850,12 +9793,6 @@
         {
           "english": "Fly, to",
           "translation": "lukha",
-          "pronunciation": "lukha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Fly, to",
-          "translation": "lukha",
           "pronunciation": "lukh-a",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -10253,12 +10190,6 @@
           "english": "That cow is mine",
           "translation": "ingonbe inianje",
           "pronunciation": "ingonbe i-nianje",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Graze cattle, to",
-          "translation": "waya",
-          "pronunciation": "wa-ya",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -13530,12 +13461,6 @@
           "english": "Clap of thunder",
           "translation": "ekupa",
           "pronunciation": "e-ku-pa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Clap of thunder",
-          "translation": "ekupa",
-          "pronunciation": "e-ku-pa",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -15130,12 +15055,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Fat",
-          "translation": "nuru",
-          "pronunciation": "nu-ru",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Oil",
           "translation": "mafura (ghee); zinunu (semsem)",
           "pronunciation": "mafura",
@@ -15781,12 +15700,6 @@
           "english": "Fry, to",
           "translation": "siira",
           "pronunciation": "sii-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Fry, to",
-          "translation": "siira",
-          "pronunciation": "sii-ra",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -15841,12 +15754,6 @@
           "english": "Cook, to",
           "translation": "teeka",
           "pronunciation": "tee-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Milk, to",
-          "translation": "shera",
-          "pronunciation": "she-ra",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -15908,18 +15815,6 @@
           "translation": "amanulu / amafura",
           "pronunciation": "amanulu",
           "context": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Grind, to",
-          "translation": "sia",
-          "pronunciation": "sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pound, to",
-          "translation": "swaka",
-          "pronunciation": "swa-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Roast, to",
@@ -16953,11 +16848,6 @@
           "english": "Yam (Luwanga)",
           "translation": "ifukwa",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
-          "english": "Fruit",
-          "translation": "makuya; tzinduri (different kinds)",
-          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902) — Lu-Wanga"
         },
         {
           "english": "Banana",
@@ -22464,11 +22354,6 @@
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
         {
-          "english": "We, us, our (Lunyala)",
-          "translation": "E-fwe. Kho-. -khu-. -e-fu, -e-fwe",
-          "context": "Comparative Bantu Vocabulary — Lunyala (Johnston 1919 Vol. I)"
-        },
-        {
           "english": "We, us, our (Luwanga/Lukabras)",
           "translation": "I-fwe, E-fwe. Ku-, Khu-. -ku-. -e-rū or -e-fū",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
@@ -24959,18 +24844,6 @@
           "english": "Do, to",
           "translation": "kola",
           "pronunciation": "ko-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Go, to",
-          "translation": "chenda",
-          "pronunciation": "chenda",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Do, to",
-          "translation": "kola",
-          "pronunciation": "ko-la",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -24980,21 +24853,9 @@
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Ask, to",
-          "translation": "rewa",
-          "pronunciation": "re-wa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Buy, to",
           "translation": "kula",
           "pronunciation": "ku-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Cry, to",
-          "translation": "lira",
-          "pronunciation": "li-ra",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -25004,87 +24865,15 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Dig, to",
-          "translation": "iawa",
-          "pronunciation": "ia-wa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Eat, to",
-          "translation": "lia",
-          "pronunciation": "lia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Hit, to",
-          "translation": "kuya",
-          "pronunciation": "ku-ya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pay, to",
-          "translation": "runga",
-          "pronunciation": "runga",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Put, to",
-          "translation": "ramu",
-          "pronunciation": "ra-mu",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Rob, to",
-          "translation": "iwa",
-          "pronunciation": "iwa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Rot, to",
-          "translation": "kuwa",
-          "pronunciation": "ku-wa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Rub, to",
-          "translation": "ulukunya",
-          "pronunciation": "u-lu-kunya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Say, to",
-          "translation": "sunga",
-          "pronunciation": "sunga",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Set, to",
           "translation": "wikha",
           "pronunciation": "wikha",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Sew, to",
-          "translation": "naba",
-          "pronunciation": "na-ba",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Sit, to",
           "translation": "ikala",
           "pronunciation": "i-ka-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Sow, to",
-          "translation": "laka",
-          "pronunciation": "la-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Tie, to",
-          "translation": "ieko",
-          "pronunciation": "ie-ko",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -25166,147 +24955,15 @@
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Beat, to",
-          "translation": "khuya",
-          "pronunciation": "khu-ya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Bind, to",
-          "translation": "kuboha",
-          "pronunciation": "ku-bo-ha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Bury, to",
-          "translation": "iavira",
-          "pronunciation": "ia-vi-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Call, to",
-          "translation": "langa",
-          "pronunciation": "langa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Chew, to",
-          "translation": "nyanya",
-          "pronunciation": "nyanya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Come, to",
           "translation": "ku-widza",
           "pronunciation": "ku-widza",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Drop, to",
-          "translation": "kwa (I drop, Nangwe)",
-          "pronunciation": "-kwa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Fall, to",
-          "translation": "kwa",
-          "pronunciation": "kwa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Fear, to",
-          "translation": "iri",
-          "pronunciation": "iri",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Fill, to",
-          "translation": "itūsia",
-          "pronunciation": "i-tu-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Flee, to",
-          "translation": "irukha",
-          "pronunciation": "i-rukha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Give, to",
-          "translation": "erisie",
-          "pronunciation": "e-ri-sie",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Hide, to",
-          "translation": "fisa",
-          "pronunciation": "fi-sa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Jump, to",
-          "translation": "sira",
-          "pronunciation": "si-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Kick, to",
-          "translation": "sena; luwas (foot)",
-          "pronunciation": "-sena",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Kill, to",
-          "translation": "ira",
-          "pronunciation": "ira",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Lick, to",
-          "translation": "khomba",
-          "pronunciation": "khomba",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Love, to",
-          "translation": "chama",
-          "pronunciation": "cha-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Open, to",
           "translation": "wolula",
           "pronunciation": "wo-lu-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pray, to",
-          "translation": "sawa",
-          "pronunciation": "sa-wa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pull, to",
-          "translation": "kwesa",
-          "pronunciation": "kwe-sa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Push, to",
-          "translation": "sindīkha",
-          "pronunciation": "sindikha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Reap, to",
-          "translation": "chesa",
-          "pronunciation": "che-sa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Rule, to",
-          "translation": "ingisua",
-          "pronunciation": "ingi-sua",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -25319,42 +24976,6 @@
           "english": "Sing, to",
           "translation": "imbha",
           "pronunciation": "imbha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Spit, to",
-          "translation": "fudza",
-          "pronunciation": "fudza",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Suck, to",
-          "translation": "nuna",
-          "pronunciation": "nu-na",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Take, to",
-          "translation": "bukula",
-          "pronunciation": "bu-ku-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Tell, to",
-          "translation": "sungira",
-          "pronunciation": "sungi-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Want, to",
-          "translation": "enya or -sawa",
-          "pronunciation": "enya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Wash, to",
-          "translation": "osia",
-          "pronunciation": "o-sia",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -25568,153 +25189,15 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Awake, to",
-          "translation": "wuka",
-          "pronunciation": "wu-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Break, to",
-          "translation": "funa",
-          "pronunciation": "fu-na",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Bring, to",
-          "translation": "lera",
-          "pronunciation": "le-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Build, to",
-          "translation": "mbakha",
-          "pronunciation": "mbakha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Carry, to",
-          "translation": "chinga",
-          "pronunciation": "chinga",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Catch, to",
-          "translation": "tira",
-          "pronunciation": "ti-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Count, to",
-          "translation": "kuwala",
-          "pronunciation": "ku-wa-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Dance, to",
-          "translation": "shina",
-          "pronunciation": "shi-na",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Drink, to",
-          "translation": "nywa",
-          "pronunciation": "nywa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Empty, to",
-          "translation": "tzukha",
-          "pronunciation": "tzukha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Enter, to",
-          "translation": "ingira",
-          "pronunciation": "ingi-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Laugh, to",
-          "translation": "zekha",
-          "pronunciation": "zekha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Loose, to",
-          "translation": "wolula",
-          "pronunciation": "wo-lu-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Marry, to",
-          "translation": "kua",
-          "pronunciation": "kua",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Place, to",
-          "translation": "whika",
-          "pronunciation": "whi-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Plait, to",
-          "translation": "wassa",
-          "pronunciation": "wassa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Plant, to",
-          "translation": "rāka",
-          "pronunciation": "ra-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Seize, to",
-          "translation": "otira",
-          "pronunciation": "o-ti-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Sleep, to",
           "translation": "khono",
           "pronunciation": "kho-no",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Smell, to",
-          "translation": "unya",
-          "pronunciation": "unya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Spill, to",
-          "translation": "tsukha",
-          "pronunciation": "tsukha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Split, to",
-          "translation": "alasia",
-          "pronunciation": "a-la-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Sweep, to",
-          "translation": "eya",
-          "pronunciation": "eya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Teach, to",
           "translation": "manyisia",
           "pronunciation": "manyi-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Vomit, to",
-          "translation": "tsala",
-          "pronunciation": "tsa-la",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -25856,84 +25339,6 @@
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Answer, to",
-          "translation": "kalusi",
-          "pronunciation": "ka-lu-si",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Arrive, to",
-          "translation": "nzulire",
-          "pronunciation": "nzu-li-re",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Assist, to",
-          "translation": "konya",
-          "pronunciation": "konya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Cleave, to",
-          "translation": "rasia",
-          "pronunciation": "ra-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Fasten, to",
-          "translation": "boha",
-          "pronunciation": "bo-ha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Follow, to",
-          "translation": "londa",
-          "pronunciation": "londa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Forget, to",
-          "translation": "ivira",
-          "pronunciation": "i-vi-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Gather, to",
-          "translation": "ngania",
-          "pronunciation": "nga-nia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Go out, to",
-          "translation": "rula",
-          "pronunciation": "ru-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Kindle, to",
-          "translation": "wana",
-          "pronunciation": "wa-na",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Refuse, to",
-          "translation": "lowa",
-          "pronunciation": "lo-wa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Search, to",
-          "translation": "enya",
-          "pronunciation": "enya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Select, to",
-          "translation": "lowola",
-          "pronunciation": "lo-wo-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Strike, to",
           "translation": "kuya",
           "pronunciation": "ku-ya",
@@ -25994,45 +25399,9 @@
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Believe, to",
-          "translation": "kwiama",
-          "pronunciation": "kwia-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Breathe, to",
           "translation": "yera",
           "pronunciation": "ye-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Collect, to",
-          "translation": "solosia",
-          "pronunciation": "so-lo-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Consent, to",
-          "translation": "njameri",
-          "pronunciation": "nja-me-ri",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Descend, to",
-          "translation": "kwika",
-          "pronunciation": "kwi-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Measure, to",
-          "translation": "chera",
-          "pronunciation": "che-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Receive, to",
-          "translation": "pochera",
-          "pronunciation": "poche-ra",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -26069,24 +25438,6 @@
           "english": "Lay eggs, to",
           "translation": "rera",
           "pronunciation": "re-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pour out, to",
-          "translation": "tsuka",
-          "pronunciation": "tsu-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pull out, to",
-          "translation": "kula",
-          "pronunciation": "ku-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Lay eggs, to",
-          "translation": "rera",
-          "pronunciation": "re-ra",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -26108,24 +25459,6 @@
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Cultivate, to",
-          "translation": "lhima",
-          "pronunciation": "lhi-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Draw water, to",
-          "translation": "ta amadzi",
-          "pronunciation": "ta a-madzi",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Extinguish, to",
-          "translation": "simia",
-          "pronunciation": "si-mia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Stop, to (act)",
           "translation": "ekalira",
           "pronunciation": "e-ka-li-ra",
@@ -26136,18 +25469,6 @@
           "translation": "simia",
           "pronunciation": "si-mia",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Set, to (of sun)",
-          "translation": "ukwa",
-          "pronunciation": "ukwa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Return, to (act.)",
-          "translation": "kalusia",
-          "pronunciation": "ka-lu-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Come (Imperative)",
@@ -26165,24 +25486,6 @@
           "english": "Return, to (pass.)",
           "translation": "kalūkha",
           "pronunciation": "ka-lukha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Cross (a river), to",
-          "translation": "ambukha",
-          "pronunciation": "ambukha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Kill (for food), to",
-          "translation": "kalakha",
-          "pronunciation": "ka-lakha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Wash one's self, to",
-          "translation": "isawa",
-          "pronunciation": "i-sa-wa",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -26207,31 +25510,7 @@
           "english": "Bear, to bring forth",
           "translation": "ivula",
           "pronunciation": "i-vu-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Shoot, to (an arrow)",
-          "translation": "lasso",
-          "pronunciation": "lasso",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Bear, to bring forth",
-          "translation": "ivula",
-          "pronunciation": "i-vu-la",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Burn, to (set on fire)",
-          "translation": "kwaka",
-          "pronunciation": "kwa-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Send, to (man on business)",
-          "translation": "ruma",
-          "pronunciation": "ru-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "I say",
@@ -26598,12 +25877,6 @@
           "translation": "iba",
           "pronunciation": "iba",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "To steal",
-          "translation": "iba",
-          "pronunciation": "i-ba",
-          "context": "5. Lu-nyara — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "To breathe",
@@ -27068,12 +26341,6 @@
           "context": "Comparative Bantu Vocabulary — Lunyala (Johnston 1919 Vol. I)"
         },
         {
-          "english": "To die",
-          "translation": "fwa",
-          "pronunciation": "fwa",
-          "context": "5. Lu-nyara — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "To die(Lumasaba/Bukusu)",
           "translation": "fwa",
           "pronunciation": "fwa",
@@ -27108,12 +26375,6 @@
           "translation": "manya",
           "pronunciation": "manya",
           "context": "Comparative Bantu Vocabulary — Lunyala (Johnston 1919 Vol. I)"
-        },
-        {
-          "english": "To know",
-          "translation": "manya",
-          "pronunciation": "manya",
-          "context": "5. Lu-nyara — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "To know(Lumasaba/Bukusu)",
@@ -27492,11 +26753,6 @@
           "translation": "lol-ekh-a / kai- (Tiriki perception & hyperraising)",
           "pronunciation": "lol-ekh-a",
           "context": "Tiriki perception verbs and hyperraising across finite clause boundaries • Source: Michael Diercks et al. 2026 (Pamoja tena, Language Science Press #491, Ch. 18, DOI: 10.5281/zenodo.20285218, CC-BY-4.0)"
-        },
-        {
-          "english": "Kick, to",
-          "translation": "sena; luwas (foot)",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Dream (Luwanga/Lukabras)",
@@ -28659,12 +27915,6 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Wide",
-          "translation": "wambalifu",
-          "pronunciation": "wamba-li-fu",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Blue",
           "translation": "si-usi",
           "pronunciation": "si-usi",
@@ -28974,12 +28224,6 @@
           "english": "Dry up, to",
           "translation": "isinga",
           "pronunciation": "i-singa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Dry up, to",
-          "translation": "isinga",
-          "pronunciation": "i-singa",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -28993,12 +28237,6 @@
           "translation": "Sirkhanga",
           "pronunciation": "sirkhanga",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Lean, to be",
-          "translation": "ngha",
-          "pronunciation": "ngha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Plenty, many",
@@ -29029,12 +28267,6 @@
           "translation": "kali or mukhongo",
           "pronunciation": "kali",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Fierce, sharp",
-          "translation": "lulu",
-          "pronunciation": "lu-lu",
-          "context": "5. Lu-nyara — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Fierce, sharp",
@@ -29119,12 +28351,6 @@
           "translation": "toro",
           "pronunciation": "to-ro",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Young",
-          "translation": "toro",
-          "pronunciation": "to-ro",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Black (Lunyala)",
@@ -29383,11 +28609,6 @@
           "translation": "si-ewange",
           "pronunciation": "si-ewange",
           "context": "Lubukusu / Ketosh Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
-          "english": "How many",
-          "translation": "fi-nga, wa-nga",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Black (Luwanga/Lukabras)",
@@ -31555,12 +30776,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Sick",
-          "translation": "luwala",
-          "pronunciation": "lu-wa-la",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Cold",
           "translation": "nyifu",
           "pronunciation": "nyi-fu",
@@ -31639,18 +30854,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Boil, to",
-          "translation": "kuyera",
-          "pronunciation": "ku-ye-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Hurt, to",
-          "translation": "luma",
-          "pronunciation": "lu-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Hurt, to",
           "translation": "luma",
           "pronunciation": "lu-ma",
@@ -31660,25 +30863,7 @@
           "english": "Fight, to",
           "translation": "pana",
           "pronunciation": "pa-na",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Swell, to",
-          "translation": "fimba",
-          "pronunciation": "fimba",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Fight, to",
-          "translation": "pana",
-          "pronunciation": "pa-na",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Ill, to be",
-          "translation": "luala",
-          "pronunciation": "lua-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Afraid, to be",
@@ -33077,6 +32262,120 @@
           "translation": "bulano",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Sunday",
+          "translation": "Jumapiri",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Monday",
+          "translation": "Jumatatu",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Tuesday",
+          "translation": "Jumanne",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Wednesday",
+          "translation": "Jumatano",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Thursday",
+          "translation": "Murwa wa Kanne",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Friday",
+          "translation": "Murwa wa Katano",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Saturday",
+          "translation": "Jumamosi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "January",
+          "translation": "Januari",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "February",
+          "translation": "Februari",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "March",
+          "translation": "Machi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "April",
+          "translation": "Aprili",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "May",
+          "translation": "Mei",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "June",
+          "translation": "Juni",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "July",
+          "translation": "Julai",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "August",
+          "translation": "Agosti",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "September",
+          "translation": "Septemba",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "October",
+          "translation": "Oktoba",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "November",
+          "translation": "Novemba",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "December",
+          "translation": "Desemba",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         }
       ]
     },
@@ -33323,12 +32622,6 @@
           "english": "Green",
           "translation": "chishi",
           "pronunciation": "chishi",
-          "context": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "White",
-          "translation": "lafu",
-          "pronunciation": "la-fu",
           "context": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -33608,30 +32901,6 @@
           "context": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Err, to",
-          "translation": "suviri",
-          "pronunciation": "su-vi-ri",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Get, to",
-          "translation": "nyola",
-          "pronunciation": "nyo-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Owe, to",
-          "translation": "wanza",
-          "pronunciation": "wanza",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Vex, to",
-          "translation": "nyasi",
-          "pronunciation": "nya-si",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "He told",
           "translation": "kirumuchoweri",
           "pronunciation": "ki-ru-mucho-we-ri",
@@ -33642,12 +32911,6 @@
           "translation": "Li-dakho; ama- / Li-dako; ama- / Kama-takho; sing. Li-takho",
           "pronunciation": "li-dakho",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Complete",
-          "translation": "aweni",
-          "pronunciation": "a-we-ni",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Ignorant",
@@ -33692,78 +32955,6 @@
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Daub, to",
-          "translation": "oma",
-          "pronunciation": "oma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Feed, to",
-          "translation": "lisya",
-          "pronunciation": "lisya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Flay, to",
-          "translation": "wakha",
-          "pronunciation": "wakha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Hunt, to",
-          "translation": "iima",
-          "pronunciation": "ii-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Leak, to",
-          "translation": "ronya",
-          "pronunciation": "ronya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Move, to",
-          "translation": "sitia",
-          "pronunciation": "si-tia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Show, to",
-          "translation": "manyisia",
-          "pronunciation": "manyi-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Slip, to",
-          "translation": "erera",
-          "pronunciation": "e-re-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Swim, to",
-          "translation": "irama",
-          "pronunciation": "i-ra-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Tame, to",
-          "translation": "rukha",
-          "pronunciation": "rukha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Undo, to",
-          "translation": "owolula",
-          "pronunciation": "o-wo-lu-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Wear, to",
-          "translation": "ivwala",
-          "pronunciation": "ivwa-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Mwami ()",
           "translation": "awami",
           "pronunciation": "a-wa-mi",
@@ -33800,114 +32991,6 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Begin, to",
-          "translation": "ranjirira",
-          "pronunciation": "ranji-ri-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Burst, to",
-          "translation": "randuka",
-          "pronunciation": "randu-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Cheat, to",
-          "translation": "katie",
-          "pronunciation": "ka-tie",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Curse, to",
-          "translation": "nyeka",
-          "pronunciation": "nye-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Dream, to",
-          "translation": "rora",
-          "pronunciation": "ro-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Drown, to",
-          "translation": "fwa amadzi",
-          "pronunciation": "fwa a-madzi",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Enjoy, to",
-          "translation": "seka",
-          "pronunciation": "se-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Extol, to",
-          "translation": "chamiri",
-          "pronunciation": "cha-mi-ri",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Forge, to",
-          "translation": "iranya",
-          "pronunciation": "i-ranya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Kneel, to",
-          "translation": "masikama",
-          "pronunciation": "ma-si-ka-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pinch, to",
-          "translation": "linya",
-          "pronunciation": "linya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Press, to",
-          "translation": "suta",
-          "pronunciation": "su-ta",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Serve, to",
-          "translation": "rumīkha",
-          "pronunciation": "ru-mikha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Smart, to",
-          "translation": "iyaka",
-          "pronunciation": "i-ya-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Snare, to",
-          "translation": "reka",
-          "pronunciation": "re-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Stoop, to",
-          "translation": "inama",
-          "pronunciation": "i-na-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Trade, to",
-          "translation": "kūla",
-          "pronunciation": "ku-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Tread, to",
-          "translation": "seno",
-          "pronunciation": "se-no",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Umurui ()",
           "translation": "imirui",
           "pronunciation": "i-mi-rui",
@@ -33924,12 +33007,6 @@
           "translation": "nyeka",
           "pronunciation": "nye-ka",
           "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Beautiful",
-          "translation": "lai",
-          "pronunciation": "lai",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "To-morrow",
@@ -33978,84 +33055,6 @@
           "translation": "ne / nende",
           "pronunciation": "ne",
           "context": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Defend, to",
-          "translation": "linda",
-          "pronunciation": "linda",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Divide, to",
-          "translation": "kawa",
-          "pronunciation": "ka-wa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Encamp, to",
-          "translation": "ula",
-          "pronunciation": "ula",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Finish, to",
-          "translation": "uwa",
-          "pronunciation": "uwa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Govern, to",
-          "translation": "inkisua",
-          "pronunciation": "inki-sua",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Lessen, to",
-          "translation": "kakbasia",
-          "pronunciation": "kakba-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Linger, to",
-          "translation": "shinda",
-          "pronunciation": "shinda",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Molest, to",
-          "translation": "nyasia",
-          "pronunciation": "nya-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "To take life / slay (historical lexicon)",
-          "translation": "wira",
-          "pronunciation": "wi-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Pursue, to",
-          "translation": "mulonda",
-          "pronunciation": "mu-londa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Ransom, to",
-          "translation": "nunulula",
-          "pronunciation": "nu-nu-lu-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Shiver, to",
-          "translation": "renga",
-          "pronunciation": "renga",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Starve, to",
-          "translation": "fire nzala",
-          "pronunciation": "fi-re nza-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Mugongo ()",
@@ -34122,78 +33121,6 @@
           "translation": "engila / omuanda",
           "pronunciation": "engila",
           "context": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Attempt, to",
-          "translation": "tema",
-          "pronunciation": "te-ma",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Born, to be",
-          "translation": "iluiwa",
-          "pronunciation": "i-lui-wa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Destroy, to",
-          "translation": "ononya",
-          "pronunciation": "o-nonya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Enlarge, to",
-          "translation": "tosa",
-          "pronunciation": "to-sa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Observe, to",
-          "translation": "linga",
-          "pronunciation": "linga",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Plug up, to",
-          "translation": "kwikala",
-          "pronunciation": "kwi-ka-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Plunder, to",
-          "translation": "nula",
-          "pronunciation": "nu-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Precede, to",
-          "translation": "imira",
-          "pronunciation": "i-mi-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Quarrel, to",
-          "translation": "solana",
-          "pronunciation": "so-la-na",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Sharpen, to",
-          "translation": "iakala",
-          "pronunciation": "ia-ka-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Squeeze, to",
-          "translation": "tinya",
-          "pronunciation": "tinya",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Suffice, to",
-          "translation": "wera",
-          "pronunciation": "we-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Tzi-taru ()",
@@ -34274,72 +33201,6 @@
           "context": "Response: Ndi mulayi (I am well) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Assemble, to",
-          "translation": "solola",
-          "pronunciation": "so-lo-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Castrate, to",
-          "translation": "lata",
-          "pronunciation": "la-ta",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Consider, to",
-          "translation": "biririsia",
-          "pronunciation": "bi-ri-ri-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Drunk, to be",
-          "translation": "mera",
-          "pronunciation": "me-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Generate, to",
-          "translation": "iwula",
-          "pronunciation": "i-wu-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Miscarry, to",
-          "translation": "ruludza",
-          "pronunciation": "ru-ludza",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Overturn, to",
-          "translation": "kalukasia",
-          "pronunciation": "ka-lu-ka-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Prohibit, to",
-          "translation": "kania",
-          "pronunciation": "ka-nia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Ready, to be",
-          "translation": "irengeka",
-          "pronunciation": "i-renge-ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Sorry, to be",
-          "translation": "alubiri",
-          "pronunciation": "a-lu-bi-ri",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Surround, to",
-          "translation": "wotokhana",
-          "pronunciation": "wo-tokha-na",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Muwano ( II)",
           "translation": "miwano",
           "pronunciation": "mi-wa-no",
@@ -34374,18 +33235,6 @@
           "translation": "wasimanya",
           "pronunciation": "wa-si-manya",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Ketosh / Bukusu) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Enough, to be",
-          "translation": "yera",
-          "pronunciation": "ye-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Recollect, to",
-          "translation": "itselira",
-          "pronunciation": "itse-li-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Inzuki ( III)",
@@ -34448,18 +33297,6 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Circumcise, to",
-          "translation": "shewa",
-          "pronunciation": "she-wa",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Patient, to be",
-          "translation": "ikhala",
-          "pronunciation": "ikha-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Day of the week",
           "translation": "Mrisiza",
           "pronunciation": "mri-si-za",
@@ -34478,21 +33315,9 @@
           "context": "Oluluyia — GitHub unicode-org/cldr (luy.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
         },
         {
-          "english": "Fatigued, to be",
-          "translation": "tora",
-          "pronunciation": "to-ra",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Halt (rest), to",
           "translation": "lūkha",
           "pronunciation": "lukha",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Strive with, to",
-          "translation": "ingana",
-          "pronunciation": "inga-na",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -34571,12 +33396,6 @@
           "english": "Extend, to (act)",
           "translation": "lolosia",
           "pronunciation": "lo-lo-sia",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Satisfied, to be",
-          "translation": "ikura",
-          "pronunciation": "i-ku-ra",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -34758,12 +33577,6 @@
           "translation": "Sirinji ya Uganda",
           "pronunciation": "si-rinji ya u-ganda",
           "context": "Oluluyia — GitHub unicode-org/cldr (luy.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
-        },
-        {
-          "english": "Start, to (on caravan)",
-          "translation": "samūla",
-          "pronunciation": "sa-mu-la",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Not (negation particle)",
@@ -35600,24 +34413,6 @@
           "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
         },
         {
-          "english": "Who did the men send the books to?",
-          "translation": "Naanu ni-ye ba-saani ba-rum-ir-a bi-tabu?",
-          "pronunciation": "lubukusu q: naanu ni-ye ba-saani ba-rum-ir-a bi-tabu",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
-          "english": "Who did the men beat fiercely?",
-          "translation": "Naanu ni-ye ba-saani ba-a-pa lukali?",
-          "pronunciation": "lubukusu q: naanu ni-ye ba-saani ba-a-pa lukali",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
-          "english": "The men beat John fiercely",
-          "translation": "Ba-saani ba-a-pa Yohana lukali",
-          "pronunciation": "c2-man c2-tns-beat john fiercely",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
           "english": "The mother likes the children",
           "translation": "Mayi a-siima ba-ba-ana",
           "pronunciation": "1mother 1sm-like2-2-children",
@@ -35815,11 +34610,6 @@
           "english": "He wants ()",
           "translation": "inyenya",
           "context": "Lu-Wanga verb conjugation — Hobley, Eastern Uganda (1902, p. 85) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "We, us, our",
-          "translation": "I-fwe, E-fwe. Ku-, Khu-. -ku-. -e-rū or -e-fū / E-fwe. Kho-. -khu-. -e-fu, -e-fwe / I-fwe, Fwe. Ku-. -ku",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
         },
         {
           "english": "Matter (pus)",
@@ -36137,11 +34927,6 @@
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "All",
-          "translation": "wosi (people); viosi (things)",
-          "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902) — Lu-Wanga"
-        },
-        {
           "english": "Place",
           "translation": "Ahandu hangi (my place)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
@@ -36309,11 +35094,6 @@
         {
           "english": "What did they give to Sipho?",
           "translation": "Q: bá-m-níké:-ni ú-Sî:phó?",
-          "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Lubukusu & Bantu (Ch. 32)"
-        },
-        {
-          "english": "The men sent Mary books",
-          "translation": "ba-saani ba-rum-ir-a Maria bi-tabu",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Lubukusu & Bantu (Ch. 32)"
         },
         {
@@ -39035,16 +37815,6 @@
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "We, us, our",
-          "translation": "E-fwe. Kho-. -khu-. -e-fu, -e-fwe",
-          "context": "5. Lu-nyara — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "We, us, our",
-          "translation": "I-fwe, E-fwe. Ku-, Khu-. -ku-. -e-rū or -e-fū",
-          "context": "5a. Lu-wanga / Lu-kabarasi — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Devil, evil spirit (Luwanga/Lukabras)",
           "translation": "Omu-sambwa; emi-. U-sewi (5 b)",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
@@ -40785,5 +39555,5 @@
   "source": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016); Johnson & Diercks (2026) LSP #491 Ch. 18 Tiriki Perception Verbs & Liu (2024) LSP #438 Ch. 15 Tiriki Double Objects (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Lubukusu Corpus (Baker 2022, CC-BY-4.0)",
   "isoCode": "luy",
   "glottocode": "luyi1234",
-  "totalEntries": 7164
+  "totalEntries": 6957
 }

@@ -1232,5 +1232,112 @@
         }
       ]
     }
+  },
+  "etims-mpesa-reconciler": {
+    "notesTitle": "2026 KRA eTIMS Disallowed-Expense Rules",
+    "overview": [
+      "Under KRA's 2026 automated eTIMS cross-matching rules, business expenses lacking a validated eTIMS invoice are disallowed for corporate income tax, triggering a 30% corporate tax penalty on unreceipted spend."
+    ],
+    "howItWorks": [
+      "Paste or edit M-Pesa Paybill/Till outflows and KRA eTIMS buyer invoice records.",
+      "Tag statutory exemptions (emoluments, imports, airline tickets, investment allowances, interest).",
+      "Review unmatched spend, live 30% tax exposure, and export a Buyer-Initiated (Reverse) eTIMS CSV or WhatsApp supplier chase list."
+    ],
+    "complianceTips": [
+      "Every KES 1,000,000 in unreceipted business expenses adds KES 300,000 in corporate income tax.",
+      "All reconciliation runs 100% locally in your browser/device with zero cloud upload."
+    ]
+  },
+  "odpc-hr-retention-vault": {
+    "notesTitle": "Employment Act 2007 vs. Data Protection Act 2019",
+    "overview": [
+      "Kenyan employers with 10+ staff or >KES 5M annual turnover must register with the ODPC and balance mandatory 5-year post-termination employment record locks (Employment Act s.10(6)) against strict DPA 2019 deletion mandates."
+    ],
+    "howItWorks": [
+      "Enter your staff headcount and annual turnover to check ODPC registration requirements and statutory fine ceiling (up to KES 5M or 1% turnover).",
+      "Generate a Dual-Statute Retention Schedule separating 5-year locked payroll/contract records from auto-purge items like rejected CVs and exit recordings."
+    ],
+    "complianceTips": [
+      "ODPC determinations include KES 700,000 (Alston v Liquid Telecom, exit call recording) and KES 500,000 (Kirima v Solar Panda, unconsented staff photo)."
+    ]
+  },
+  "eudr-coop-geojson-packager": {
+    "notesTitle": "EUDR (EU 2023/1115) Coffee Cooperative Compliance",
+    "overview": [
+      "55%–60% of Kenya's coffee exports go to the EU. Large operators face a Dec 30, 2026 deadline and small/micro cooperatives face a Jun 30, 2027 deadline to submit deforestation-free (Dec 31, 2020 cutoff) geolocation data."
+    ],
+    "howItWorks": [
+      "Select farm size (<4ha single GPS point vs >=4ha closed WGS84 polygon).",
+      "Validate GNSS accuracy (<10m), polygon closure, self-intersections, and Shoelace hectare area.",
+      "Export EU TRACES-ready GeoJSON FeatureCollection for cooperative Due Diligence Statements (DDS)."
+    ],
+    "complianceTips": [
+      "Farms >=4 hectares strictly require closed multi-vertex polygons, not single centroids."
+    ]
+  },
+  "icms-landed-cost-arbitrage": {
+    "notesTitle": "KRA iCMS Cascading Tax vs. Consolidator Math",
+    "overview": [
+      "Independent China-to-Kenya imports incur cascading KRA iCMS taxes: Import Duty (0%–35%), 16% VAT on (CIF + Duty), 2.5% IDF, 2.0% RDL, plus mandatory clearing agent fees (KES 19,500–52,000)."
+    ],
+    "howItWorks": [
+      "Select an EAC CET HS category (including the 35% mobile phone duty under EAC Gazette Notice No. 19 of 2025).",
+      "Enter FOB value, volume (CBM) or weight (kg), and compare independent iCMS clearance against all-in sea (KES 65,000/CBM) or air (KES 1,700/kg) consolidators."
+    ],
+    "complianceTips": [
+      "On a benchmark 1.5 CBM shipment, independent clearance can total ~KES 499,975 vs ~KES 357,500 via consolidator — a KES 142,475 spread."
+    ]
+  },
+  "sha-claim-scrubber": {
+    "notesTitle": "SHA Level 3–5 Provider Claim Rejection Prevention",
+    "overview": [
+      "Roughly 1 in 5 (~20%) Kenyan hospital claims submitted to SHA are rejected or queried (KES 3.43B declined). Scrubbing claims across 6 pre-discharge triggers dramatically cuts revenue leakage."
+    ],
+    "howItWorks": [
+      "Verify facility contract tier on sha.go.ke/contracted-facilities, KEML medicine coverage, *147# / Paybill 200222 M-Pesa remittance lag, attachments, and submission window.",
+      "Generate a real-time Rejection Risk Score and a structured appeal/resubmission packet."
+    ],
+    "complianceTips": [
+      "Confirm M-Pesa Paybill 200222 contribution reflection before discharge to avoid automated beneficiary-inactive rejections."
+    ]
+  },
+  "ppra-egp-tender-serializer": {
+    "notesTitle": "PPRA Preliminary Mandatory Stage (MR1–MR15) & ITT 20.3",
+    "overview": [
+      "Most Kenyan tender disqualifications happen at the Preliminary Mandatory Stage due to unserialized pages (ITT 20.3), expired CR12/TCC, wrong NCA tier, or missing Form SD1/SD2 and 300-day bid validity."
+    ],
+    "howItWorks": [
+      "Toggle each mandatory document (MR1–MR11) and enter page counts.",
+      "Compute exact continuous Bates page ranges (0001–0XXX) and inspect readiness before uploading to e-gp.go.ke."
+    ],
+    "complianceTips": [
+      "Every single page of the bid—including dividers and appendices—must be chronologically serialized and initialed per ITT 20.3."
+    ]
+  },
+  "kjsea-pathway-engine": {
+    "notesTitle": "KNEC 20-20-60 CBE Senior School Placement Formula",
+    "overview": [
+      "Over 1.04M Grade 9 learners transition into Senior School pathways (STEM 49%, Social Sciences 40%, Arts & Sports 11%) using KNEC's 20-20-60 composite formula."
+    ],
+    "howItWorks": [
+      "Enter Grade 6 KPSEA (20%), Grade 7–8 SBA (20%), and Grade 9 KJSEA (60%) scores plus top learning areas.",
+      "View the official CBE rubric tier (EE1–BE2), recommended Senior School pathway, and compatible KUCCPS degree clusters."
+    ],
+    "complianceTips": [
+      "Complete pathway diagnostics ahead of the August Grade 9 selection window to avoid post-placement transfer bottlenecks."
+    ]
+  },
+  "ardhisasa-cad-title-auditor": {
+    "notesTitle": "Ardhisasa GIS/CAD Topology & Root-of-Title Due Diligence",
+    "overview": [
+      "85%–87% of buildings in rapidly urbanizing Kenyan zones lack full compliance/deformation sign-offs, and Ardhisasa rejects sectional CAD/GIS plans with unclosed polygons or datum errors."
+    ],
+    "howItWorks": [
+      "Paste parcel beacon coordinates to validate polygon closure, self-intersections, and computed area tolerance.",
+      "Complete the Root-of-Title (Kenya Gazette succession, Ndung'u Report) and NCA/EBK/BORAQS/ISK structural sign-off checklist."
+    ],
+    "complianceTips": [
+      "Verify Cassini-Soldner to ARC1960 / UTM Zone 37S datum shifts before submitting sectional mutation plans on Ardhisasa."
+    ]
   }
 }

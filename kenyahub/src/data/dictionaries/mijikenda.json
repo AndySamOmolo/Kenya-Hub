@@ -1785,11 +1785,6 @@
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
-          "english": "Contented",
-          "translation": "ku-kala radi",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
           "english": "Count",
           "translation": "ku-tala",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
@@ -5058,12 +5053,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Knee",
-          "translation": "fuíndi, pl. ma",
-          "pronunciation": "fuíndi",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Medicine",
           "translation": "muhásso",
           "pronunciation": "muhásso",
@@ -6023,11 +6012,6 @@
         {
           "english": "Disc (of brass, worn on head)",
           "translation": "mweri",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
-          "english": "Ear-ache",
-          "translation": "kudzwa ni sikio",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
@@ -7179,12 +7163,6 @@
         },
         {
           "english": "The name of a species of lizard",
-          "translation": "kifumbulusa arima",
-          "pronunciation": "ki-fumbu-lu-sa a-ri-ma",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "The name of a species of lizard",
           "translation": "Kifumbulusa arima",
           "pronunciation": "ki-fumb-u-lu-sa a-ri-ma",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
@@ -7530,12 +7508,6 @@
           "translation": "gnónsi",
           "pronunciation": "gnónsi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Toad",
-          "translation": "tjúloa, pl. vi",
-          "pronunciation": "tjúloa",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Vulture",
@@ -10538,12 +10510,6 @@
           "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
-          "english": "Leaf",
-          "translation": "kóza, pl. ma",
-          "pronunciation": "kóza",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Low country",
           "translation": "zi izoyohambalála",
           "pronunciation": "zi izoyohambalála",
@@ -13293,12 +13259,6 @@
         },
         {
           "english": "The name of a calabash of a particular size",
-          "translation": "chatahu",
-          "pronunciation": "cha-ta-hu",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "The name of a calabash of a particular size",
           "translation": "sobo",
           "pronunciation": "so-bo",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
@@ -13380,12 +13340,6 @@
           "translation": "lungirua",
           "pronunciation": "lungi-rua",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [v.p.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "A cocoa-nut grown on a branch from which toddy has been drawn",
-          "translation": "mariapamba",
-          "pronunciation": "ma-ria-pamba",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [n.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
           "english": "The fruit of a shrub called mutula, similar to the love-apple",
@@ -13616,12 +13570,6 @@
           "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
-          "english": "Egg",
-          "translation": "ídji pl. ma",
-          "pronunciation": "ídji pl ma",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Field",
           "translation": "nika; múnda",
           "pronunciation": "nika",
@@ -13721,11 +13669,6 @@
           "english": "Gruel",
           "translation": "Uche (wa)",
           "pronunciation": "uche",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Hoe-boundary",
-          "translation": "Muvakajembe",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -14476,11 +14419,6 @@
         {
           "english": "Cake (of fresh corn-cobs)",
           "translation": "kinolo",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
-          "english": "Calabash (with a long neck, used to carry water on a journey)",
-          "translation": "kitete",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
@@ -15949,12 +15887,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Adverse, adj. to be",
-          "translation": "ku héha na",
-          "pronunciation": "ku héha na",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Advise",
           "translation": "va ṣauíri",
           "pronunciation": "va ṣauíri",
@@ -16241,12 +16173,6 @@
           "translation": "lola mutu múje",
           "pronunciation": "lola mutu múje",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Better",
-          "translation": "múzo seídi ya",
-          "pronunciation": "múzo seídi ya",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Between",
@@ -17071,12 +16997,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Equal",
-          "translation": "karakára na",
-          "pronunciation": "karakára na",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Equalise, va",
           "translation": "henda karakara",
           "pronunciation": "henda karakara",
@@ -17653,12 +17573,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Goose",
-          "translation": "bádda, pl. ma",
-          "pronunciation": "bádda",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Govern",
           "translation": "kúnsa; amúla",
           "pronunciation": "kúnsa",
@@ -18175,12 +18089,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka adv.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Instead",
-          "translation": "vatu va",
-          "pronunciation": "vatu va",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Instruct",
           "translation": "fúnda; onia; fiomésa",
           "pronunciation": "fúnda",
@@ -18217,28 +18125,10 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Intestine",
-          "translation": "uhúmbo, pl. mi",
-          "pronunciation": "uhúmbo",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
-          "english": "Into",
-          "translation": "ndáni; kahi ya",
-          "pronunciation": "ndáni",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Intoxicated",
           "translation": "mréfi",
           "pronunciation": "mréfi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka adj.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Introduce",
-          "translation": "búma",
-          "pronunciation": "búma",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Invent",
@@ -18485,12 +18375,6 @@
           "translation": "vungusa",
           "pronunciation": "vungusa",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Lest",
-          "translation": "kuza ku; kussa",
-          "pronunciation": "kuza ku",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Let",
@@ -18761,12 +18645,6 @@
           "translation": "mpatánisi",
           "pronunciation": "mpatánisi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Meet",
-          "translation": "onána na",
-          "pronunciation": "onána na",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Melt",
@@ -19285,12 +19163,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Our",
-          "translation": "yéhu",
-          "pronunciation": "yéhu",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Pan",
           "translation": "niungu",
           "pronunciation": "niungu",
@@ -19685,12 +19557,6 @@
           "translation": "muanso",
           "pronunciation": "muanso",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka adj.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pride",
-          "translation": "zihénda mbómu",
-          "pronunciation": "zihénda mbómu",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Prince",
@@ -20135,12 +20001,6 @@
           "translation": "malóndo",
           "pronunciation": "malóndo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Resemble",
-          "translation": "halána na",
-          "pronunciation": "halána na",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Residence",
@@ -20995,12 +20855,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Stalk",
-          "translation": "mgúa, pl. mi",
-          "pronunciation": "mgúa",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Stamp",
           "translation": "piga aláma; wónda",
           "pronunciation": "piga aláma",
@@ -21737,12 +21591,6 @@
           "translation": "mrinsi",
           "pronunciation": "mrinsi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Twig",
-          "translation": "zánsu, pl. ma",
-          "pronunciation": "zánsu",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Udder",
@@ -35666,12 +35514,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka adj.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Weak",
-          "translation": "kinionge",
-          "pronunciation": "ki-nionge",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [adj.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Long",
           "translation": "kire",
           "pronunciation": "ki-re",
@@ -38837,11 +38679,6 @@
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
-          "english": "Almighty God",
-          "translation": "Mwenye",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
           "english": "Alongside ((to go))",
           "translation": "ku-kira na k'anda-k'anda (ya)",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
@@ -39519,12 +39356,6 @@
           "translation": "alánga; tára",
           "pronunciation": "alánga",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Court, yard",
-          "translation": "jánsa ja",
-          "pronunciation": "jánsa ja",
-          "context": "Kiníka / Mijikenda Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Fine",
@@ -45011,12 +44842,6 @@
           "english": "Angel",
           "translation": "muhumiki wa Mulungu",
           "pronunciation": "mu-hu-mi-ki wa mu-lungu",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Angry",
-          "translation": "yu-tsukirwe, yuna k'oro",
-          "pronunciation": "[",
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -55332,12 +55157,6 @@
           "translation": "hima",
           "pronunciation": "hi-ma",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [v.n.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Again, also",
-          "translation": "kaviri",
-          "pronunciation": "ka-vi-ri",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [adv.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
           "english": "Rarely used",
@@ -73565,11 +73384,6 @@
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
-          "english": "Alert",
-          "translation": "ku-kala matso",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
           "english": "Ambassador (mu-humwa)",
           "translation": "or muhumwi (the \"particular\" and \"habitual\" passive verbals of ku-huma)",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
@@ -73657,11 +73471,6 @@
         {
           "english": "Both (osi airi)",
           "translation": "osini (of animates)",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
-          "english": "Bottle",
-          "translation": "ts'azi ya m'ongolo",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
@@ -73957,11 +73766,6 @@
         {
           "english": "Inn",
           "translation": "ahu ra ajeni",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
-          "english": "Instep",
-          "translation": "dzulu za lwayo",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
@@ -90896,11 +90700,6 @@
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
-          "english": "Gall",
-          "translation": "chodokera",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
           "english": "Game (sport, quarry, uindza)",
           "translation": "ukala",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
@@ -91158,11 +90957,6 @@
         {
           "english": "Horn",
           "translation": "p'embe",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
-          "english": "Hornet (black)",
-          "translation": "chara",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
@@ -91756,11 +91550,6 @@
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
-          "english": "Mead",
-          "translation": "uchi",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
           "english": "Meal ((a))",
           "translation": "chakurya",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
@@ -91893,11 +91682,6 @@
         {
           "english": "Music (as of an instrument, mimiro midzo)",
           "translation": "kurira kudzo",
-          "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
-        },
-        {
-          "english": "Must",
-          "translation": "uchi witsi",
           "context": "Rev. W. E. Taylor, Giryama Vocabulary and Collections (1891)"
         },
         {
@@ -95331,5 +95115,5 @@
   "source": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "nyf",
   "glottocode": "miji1238",
-  "totalEntries": 17116
+  "totalEntries": 17078
 }

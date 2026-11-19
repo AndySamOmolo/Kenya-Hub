@@ -3978,12 +3978,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
-          "english": "Liver",
-          "translation": "itemma, pl. ma",
-          "pronunciation": "itemma",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Medicine",
           "translation": "muddi",
           "pronunciation": "muddi",
@@ -6508,12 +6502,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
-          "english": "Lizard",
-          "translation": "kakái, pl. ma",
-          "pronunciation": "kakái",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Louse",
           "translation": "ndá, pl. id",
           "pronunciation": "ndá",
@@ -6524,12 +6512,6 @@
           "translation": "mánda ndá",
           "pronunciation": "mánda ndá",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Monkey",
-          "translation": "ngóli, pl. ma",
-          "pronunciation": "ngóli",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Mount a horse",
@@ -6566,12 +6548,6 @@
           "translation": "ombolojía; mbúngu",
           "pronunciation": "ombolojía",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Wing",
-          "translation": "uzéa, pl. nzéa; uwéa, pl. ma",
-          "pronunciation": "uzéa",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Fish (plural)",
@@ -8401,12 +8377,6 @@
           "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
-          "english": "Grass",
-          "translation": "idángu, pl. ma",
-          "pronunciation": "idángu",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Iron",
           "translation": "jā",
           "pronunciation": "jā",
@@ -8423,12 +8393,6 @@
           "translation": "ndi",
           "pronunciation": "ndi",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Lead, s. (metal)",
-          "translation": "iwúo, pl. ma",
-          "pronunciation": "iwúo",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Low country",
@@ -8465,12 +8429,6 @@
           "translation": "íkia; kuataníjia; kuatána",
           "pronunciation": "íkia",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. n.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Thorn",
-          "translation": "kamíloa (pl. tumíloa)",
-          "pronunciation": "kamíloa (pl. tumíloa)",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Water",
@@ -10032,12 +9990,6 @@
           "english": "Eat, va",
           "translation": "ía; éza",
           "pronunciation": "ía",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
-        },
-        {
-          "english": "Egg",
-          "translation": "itúmbi pl. ma",
-          "pronunciation": "itúmbi pl ma",
           "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
@@ -11852,12 +11804,6 @@
           "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
         },
         {
-          "english": "Idle",
-          "translation": "wia",
-          "pronunciation": "wia",
-          "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
-        },
-        {
           "english": "In",
           "translation": "ndjanue / ndani",
           "pronunciation": "ndjanue",
@@ -11903,12 +11849,6 @@
           "english": "Knuckles",
           "translation": "ngokolla / mwaongo",
           "pronunciation": "ngokolla",
-          "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
-        },
-        {
-          "english": "Lazy",
-          "translation": "urrtullu",
-          "pronunciation": "urrtullu",
           "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
         },
         {
@@ -12552,12 +12492,6 @@
           "translation": "muái; mukáu",
           "pronunciation": "muái",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Adverse, adj. to be",
-          "translation": "ku igída na",
-          "pronunciation": "ku igída na",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Advise",
@@ -14792,12 +14726,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adv.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
-          "english": "Instead",
-          "translation": "wandu wa",
-          "pronunciation": "wandu wa",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Instruct",
           "translation": "táwia",
           "pronunciation": "táwia",
@@ -15030,12 +14958,6 @@
           "translation": "kitúi ja ku lízila",
           "pronunciation": "kitúi ja ku lízila",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Lance",
-          "translation": "idúmo, pl. ma",
-          "pronunciation": "idúmo",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Landlord",
@@ -15890,12 +15812,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
-          "english": "Our",
-          "translation": "yáido",
-          "pronunciation": "yáido",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Pan",
           "translation": "niungu",
           "pronunciation": "niungu",
@@ -15912,12 +15828,6 @@
           "translation": "wida",
           "pronunciation": "wida",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Passion",
-          "translation": "mudáto, pl. mi",
-          "pronunciation": "mudáto",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Pasturage",
@@ -16310,12 +16220,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
-          "english": "Pride",
-          "translation": "ikujía; izeuwia mnene",
-          "pronunciation": "ikujía",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Priest",
           "translation": "id",
           "pronunciation": "id",
@@ -16374,12 +16278,6 @@
           "translation": "ikália muno",
           "pronunciation": "ikália muno",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Promise",
-          "translation": "iánia na",
-          "pronunciation": "iánia na",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Proper",
@@ -16584,12 +16482,6 @@
           "translation": "ígida na zumbe",
           "pronunciation": "ígida na zumbe",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. n.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Rebel",
-          "translation": "muigída na",
-          "pronunciation": "muigída na",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Rebound",
@@ -17570,12 +17462,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
-          "english": "Splint",
-          "translation": "ikóle, pl. ma",
-          "pronunciation": "ikóle",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "Spot",
           "translation": "wándu; kamála",
           "pronunciation": "wándu",
@@ -17736,12 +17622,6 @@
           "translation": "uziégi uúmu, pl. niegi niumu",
           "pronunciation": "uziégi uúmu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Strength",
-          "translation": "iwínia, pl. ma",
-          "pronunciation": "iwínia",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Strengthen",
@@ -18780,12 +18660,6 @@
           "translation": "ndúgu",
           "pronunciation": "ndúgu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "While; whilst",
-          "translation": "aki",
-          "pronunciation": "aki",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Whip",
@@ -23179,12 +23053,6 @@
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
-          "english": "Broad",
-          "translation": "nene",
-          "pronunciation": "nene",
-          "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
-        },
-        {
           "english": "Dark",
           "translation": "kibiindu / tumanna",
           "pronunciation": "kibiindu",
@@ -23206,24 +23074,6 @@
           "english": "Game (alive)",
           "translation": "nyamma / nama",
           "pronunciation": "nyamma",
-          "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
-        },
-        {
-          "english": "Gentle",
-          "translation": "yana",
-          "pronunciation": "yana",
-          "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
-        },
-        {
-          "english": "High",
-          "translation": "wasa",
-          "pronunciation": "wasa",
-          "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
-        },
-        {
-          "english": "Large",
-          "translation": "nene",
-          "pronunciation": "nene",
           "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
         },
         {
@@ -23315,12 +23165,6 @@
           "translation": "muima",
           "pronunciation": "muima",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Kind",
-          "translation": "kiwia? ta",
-          "pronunciation": "kiwia ta",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Good",
@@ -25077,12 +24921,6 @@
           "translation": "tála",
           "pronunciation": "tála",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba v. a.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
-        },
-        {
-          "english": "Court, yard",
-          "translation": "kiníaka ja",
-          "pronunciation": "kiníaka ja",
-          "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
           "english": "Fine",
@@ -26876,12 +26714,6 @@
           "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
         },
         {
-          "english": "Old",
-          "translation": "ku, -nu",
-          "pronunciation": "ku",
-          "context": "Kikamba Multi-Dialect Lexicon (Ulu, Central & Nganyawa; Hinde 1904)"
-        },
-        {
           "english": "To-day",
           "translation": "umunthi / moonthu, endimo",
           "pronunciation": "umunthi",
@@ -26946,6 +26778,120 @@
           "translation": "izó",
           "pronunciation": "izó",
           "context": "Kikámba Comparative Lexicon (Krapf 1850)"
+        },
+        {
+          "english": "Sunday",
+          "translation": "Wa kyumwa",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Monday",
+          "translation": "Wa kwambĩlĩlya",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Tuesday",
+          "translation": "Wa kelĩ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Wednesday",
+          "translation": "Wa katatũ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Thursday",
+          "translation": "Wa kana",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Friday",
+          "translation": "Wa katano",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Saturday",
+          "translation": "Wa thanthatũ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "January",
+          "translation": "Mwai wa mbee",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "February",
+          "translation": "Mwai wa kelĩ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "March",
+          "translation": "Mwai wa katatũ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "April",
+          "translation": "Mwai wa kana",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "May",
+          "translation": "Mwai wa katano",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "June",
+          "translation": "Mwai wa thanthatũ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "July",
+          "translation": "Mwai wa muonza",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "August",
+          "translation": "Mwai wa nyaanya",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "September",
+          "translation": "Mwai wa kenda",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "October",
+          "translation": "Mwai wa ĩkumi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "November",
+          "translation": "Mwai wa ĩkumi na ĩmwe",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "December",
+          "translation": "Mwai wa ĩkumi na ilĩ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         }
       ]
     },
@@ -55888,5 +55834,5 @@
   "source": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019); Roberts-Kohno & Bickmore (2019) LSP #190 Ch. 10 Kikamba Melodic Tone (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kam",
   "glottocode": "kamb1297",
-  "totalEntries": 10095
+  "totalEntries": 10086
 }

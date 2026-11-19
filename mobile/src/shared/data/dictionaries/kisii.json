@@ -87,24 +87,6 @@
       "icon": "🔢",
       "entries": [
         {
-          "english": "One",
-          "translation": "mu, -mo",
-          "pronunciation": "mu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Two",
-          "translation": "beri, -viri",
-          "pronunciation": "beri",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Six",
-          "translation": "sano (-tano) na i-mo",
-          "pronunciation": "-sano",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Ten",
           "translation": "I-kumi. Omu-ronggo",
           "pronunciation": "i-kumi. omu-ronggo",
@@ -171,18 +153,6 @@
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Four",
-          "translation": "nye, -nne",
-          "pronunciation": "nye",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Five",
-          "translation": "sano, -tanu",
-          "pronunciation": "sano",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Nine",
           "translation": "Ki-anda",
           "pronunciation": "ki-anda",
@@ -235,24 +205,6 @@
           "translation": "Kianda",
           "pronunciation": "kiand-a",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Three",
-          "translation": "satu, -tatu",
-          "pronunciation": "satu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Seven",
-          "translation": "sano (-tano) na i-were (i-viri)",
-          "pronunciation": "-sano",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Eight",
-          "translation": "sano na i-satu (i-tatu)",
-          "pronunciation": "-sano na i-satu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Forty",
@@ -966,12 +918,6 @@
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Twins",
-          "translation": "Eki-sare; ebi",
-          "pronunciation": "eki-sare",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Chief",
           "translation": "isekawa",
           "pronunciation": "i-se-ka-wa",
@@ -1544,22 +1490,10 @@
           "context": "Wikipedia Gusii language — Sample phrases • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Arm",
-          "translation": "Omo-kono; ama",
-          "pronunciation": "mo-kono",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Leg",
           "translation": "Oku-guru. Ekeny-ama",
           "pronunciation": "ku-guru ekeny-ama",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Toe",
-          "translation": "Eki-ara; ebi",
-          "pronunciation": "eki-ara",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Ear",
@@ -1670,18 +1604,6 @@
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Hair",
-          "translation": "E-tukia; ci",
-          "pronunciation": "e-tukia ci",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Head",
-          "translation": "Omu-twe; emi",
-          "pronunciation": "mu-twe",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Heel",
           "translation": "Ye-tinggiro. Iki-talenggi",
           "pronunciation": "ye-tinggiro. iki-talenggi",
@@ -1722,12 +1644,6 @@
           "translation": "Kanyenyobo",
           "pronunciation": "kanyenyo-bo",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Igizii / Kisii) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Body",
-          "translation": "Omu-biri or Omo-viri; emi",
-          "pronunciation": "omu-biri",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Face",
@@ -2012,18 +1928,6 @@
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Finger",
-          "translation": "Eki-ara; evi- or ebi",
-          "pronunciation": "eki-ara",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Tongue",
-          "translation": "Olu-meme; ci",
-          "pronunciation": "lu-meme",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Breast",
           "translation": "kikua",
           "pronunciation": "ki-kua",
@@ -2082,12 +1986,6 @@
           "translation": "Munua",
           "pronunciation": "mu-nua",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Igizii / Kisii) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Breast (man's)",
-          "translation": "Eki-kuba; evi",
-          "pronunciation": "eki-kuba",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Face, forehead",
@@ -3219,12 +3117,6 @@
         },
         {
           "english": "Guinea-fowl",
-          "translation": "Eri-kangga; ama-. Eng-kangga; cing",
-          "pronunciation": "eri-kangga",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Guinea-fowl",
           "translation": "ikanga, chikanga",
           "pronunciation": "i-kang-a chi-kang-a",
           "context": "Kossova (Ekegusii) — C. W. Hobley, Eastern Uganda (1902, pp. 89–91) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
@@ -4012,18 +3904,6 @@
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Forest",
-          "translation": "Egi-saka; ebi",
-          "pronunciation": "egi-saka",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Ground",
-          "translation": "Eri-zoba. Ege-tie; eve",
-          "pronunciation": "eri-zoba. ege-tie",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Island",
           "translation": "Eri-wunju. Eki-nyoro",
           "pronunciation": "eri-wunju. eki-nyoro",
@@ -4100,12 +3980,6 @@
           "translation": "enyancha",
           "pronunciation": "enyancha",
           "context": "Wikipedia Gusii language — Sample phrases • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Ground-nut",
-          "translation": "Im-bande; cim",
-          "pronunciation": "im-bande cim",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Ground nut",
@@ -4625,12 +4499,6 @@
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Banana",
-          "translation": "Ri-gomia; ama-. Eri-toki; ama",
-          "pronunciation": "ri-gomia",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Hunger",
           "translation": "In-jala, en-jara",
           "pronunciation": "in-jala",
@@ -4737,12 +4605,6 @@
           "translation": "nkuliandi",
           "pronunciation": "nku-liandi",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To eat",
-          "translation": "lia",
-          "pronunciation": "lia",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "To eat",
@@ -5066,22 +4928,10 @@
           "context": "Hobley 1902 p. 64 & Johnston 1919 #7 • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Arrow",
-          "translation": "Umu-gwe, Omo-gu; pl. eme",
-          "pronunciation": "umu-gwe mo-gu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Canoe",
           "translation": "Obw-ato",
           "pronunciation": "bw-ato",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Cloth",
-          "translation": "Eng-gobo; cing",
-          "pronunciation": "eng-gobo",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Knife",
@@ -5755,12 +5605,6 @@
           "context": "Hobley 1902 & Johnston 1919 #7 • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "To go",
-          "translation": "genda. -icia",
-          "pronunciation": "genda. -icia",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "To see",
           "translation": "korora (-rora)",
           "pronunciation": "korora",
@@ -5771,24 +5615,6 @@
           "translation": "rera",
           "pronunciation": "re-ra",
           "context": "Wikipedia Gusii language — Sample phrases • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To cut",
-          "translation": "butura. ? -tema",
-          "pronunciation": "butura. ? -tema",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To die",
-          "translation": "kwa, -gu-kwa",
-          "pronunciation": "kwa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To see",
-          "translation": "rora",
-          "pronunciation": "ro-ra",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "To know",
@@ -5815,30 +5641,6 @@
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "To come",
-          "translation": "ja, -ca",
-          "pronunciation": "ja",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To give",
-          "translation": "wa",
-          "pronunciation": "wa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To kill",
-          "translation": "ita",
-          "pronunciation": "ita",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To know",
-          "translation": "manya",
-          "pronunciation": "manya",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "To kill",
           "translation": "ita",
           "pronunciation": "i-ta",
@@ -5849,30 +5651,6 @@
           "translation": "gotenena (-tenena)",
           "pronunciation": "gotenena",
           "context": "Wikipedia Gusii language — Sample phrases • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To dance",
-          "translation": "tengga",
-          "pronunciation": "tengga",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To laugh",
-          "translation": "zeka",
-          "pronunciation": "ze-ka",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To sleep",
-          "translation": "gona",
-          "pronunciation": "gona",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "To steal",
-          "translation": "iba",
-          "pronunciation": "iba",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "To steal",
@@ -6120,12 +5898,6 @@
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "All",
-          "translation": "onsi",
-          "pronunciation": "onsi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Good",
           "translation": "uya, -ya",
           "pronunciation": "u-ya ya",
@@ -6148,12 +5920,6 @@
           "translation": "mwamu (emwamu)",
           "pronunciation": "mwah-moo",
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Great",
-          "translation": "kuru. -nene",
-          "pronunciation": "kuru. -nene",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Great",
@@ -6208,12 +5974,6 @@
           "translation": "Emuamu",
           "pronunciation": "e-mua-mu",
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Little",
-          "translation": "ke, -ki",
-          "pronunciation": "ke",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Little",
@@ -6926,6 +6686,120 @@
           "english": "Yesterday (Kuria)",
           "translation": "Mu-goroba",
           "context": "7a. Ki-koria (Kuria/Suba) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
+        },
+        {
+          "english": "Sunday",
+          "translation": "Chumapiri",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Monday",
+          "translation": "Chumatato",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Tuesday",
+          "translation": "Chumaine",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Wednesday",
+          "translation": "Chumatano",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Thursday",
+          "translation": "Aramisi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Friday",
+          "translation": "Ichuma",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Saturday",
+          "translation": "Esabato",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "January",
+          "translation": "Chanuari",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "February",
+          "translation": "Feburari",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "March",
+          "translation": "Machi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "April",
+          "translation": "Apiriri",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "May",
+          "translation": "Mei",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "June",
+          "translation": "Juni",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "July",
+          "translation": "Chulai",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "August",
+          "translation": "Agosti",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "September",
+          "translation": "Septemba",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "October",
+          "translation": "Okitoba",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "November",
+          "translation": "Nobemba",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "December",
+          "translation": "Disemba",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         }
       ]
     },
@@ -7453,12 +7327,6 @@
         {
           "english": "Not (with verb, as prefix, infix, or suffix)",
           "translation": "Ti-, -ti",
-          "pronunciation": "ti- -ti",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Not (with verb, as prefix, infix, or suffix)",
-          "translation": "Ti-, -ti",
           "pronunciation": "ti ti",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
@@ -7672,12 +7540,6 @@
           "context": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Lips",
-          "translation": "Emi-nūa (pl.). Ege-koba; eve",
-          "pronunciation": "emi-nua",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
           "english": "Name",
           "translation": "Eri-ema. Eri-ta. M-barengga",
           "pronunciation": "eri-ema. eri-ta. m-barengga",
@@ -7688,18 +7550,6 @@
           "translation": "Oru-embo; ciny-embo",
           "pronunciation": "oru-embo",
           "context": "7. Ki-guzii (Ekegusii) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Town",
-          "translation": "Omu-ji; emi",
-          "pronunciation": "mu-ji",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
-        },
-        {
-          "english": "Male",
-          "translation": "saja. -gōre. -isia (children)",
-          "pronunciation": "-saja -gore -isia",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
           "english": "Here",
@@ -8997,5 +8847,5 @@
   "source": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
   "isoCode": "guz",
   "glottocode": "gusi1247",
-  "totalEntries": 1576
+  "totalEntries": 1551
 }

@@ -545,23 +545,8 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Quite right! Well done!",
-          "translation": "Ero! Ber!",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "About six o'clock",
           "translation": "Ka piny odwaro yawore",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Arrange your account with me in the evening",
-          "translation": "Wang' nilosna pesani odhiambo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I will give you six florins a month",
-          "translation": "Dwe achiel nicham florin auchiel",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -575,23 +560,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "I want about six",
-          "translation": "Adwaro kata auchiel",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Bring some stones",
-          "translation": "Kel kite moko",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Five hundred",
           "translation": "Mia abich",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They have gone to the fields",
-          "translation": "Gisedhi puothegi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -645,11 +615,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "He sees me",
-          "translation": "Onenoa",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "one, any, some, a certain",
           "translation": "Moro",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -697,16 +662,6 @@
         {
           "english": "On behalf of, on account of, concerning",
           "translation": "Nikwop / Kwop",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Therefore he cannot come",
-          "translation": "Momone biro",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "His sickness is bad",
-          "translation": "Tuwone rach",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -1685,12 +1640,6 @@
           "context": "G. A. S. Northcote, The Nilotic Kavirondo, JRAI Vol. 37 (1907, p. 64) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
         },
         {
-          "english": "Great man",
-          "translation": "Ñama ñongo",
-          "pronunciation": "ñama ñongo",
-          "context": "Dholuo Comparative Lexicon (Johnston 1902 Vol. II)"
-        },
-        {
           "english": "That man",
           "translation": "Jalo",
           "pronunciation": "ja-lo",
@@ -1708,18 +1657,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "This / That",
-          "translation": "Ma (Mani) / Mano",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "This man / That man",
           "translation": "Jali (Jal) / Jalo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Which? (sing. / pl.)",
-          "translation": "Mane / Mage",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -1728,28 +1667,13 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "How many people?",
-          "translation": "Jo dalani gin adi?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "How many houses?",
           "translation": "Udi gin adi?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "How many do you want?",
-          "translation": "Idwaro adi?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Get a good headman",
           "translation": "Dwar nyapara maber",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Where is the chief?",
-          "translation": "Ruoth ni kanye?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -1848,11 +1772,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Take this outside",
-          "translation": "Ter mano oko",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "a person stays, delays",
           "translation": "Ng'ato odeko",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -1860,11 +1779,6 @@
         {
           "english": "Peter stops a girl",
           "translation": "Petrus ochungo nyako",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Which you gave",
-          "translation": "Mane imiyo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -2870,11 +2784,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Come when you hear the bell",
-          "translation": "Bi k'iwinjo okot",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Come early in the morning",
           "translation": "Kiny nibi okinyi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -2882,11 +2791,6 @@
         {
           "english": "Is there anybody sick?",
           "translation": "Nitiye ng'ato matuwo?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Come early in the morning",
-          "translation": "Kiny nibi okinyi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -2952,11 +2856,6 @@
         {
           "english": "the nail of the finger",
           "translation": "Kok lwedo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "To be in need",
-          "translation": "Chandore",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -4042,11 +3941,6 @@
         },
         {
           "english": "Call my servant",
-          "translation": "Luongi bocha, obi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Call my servant",
           "translation": "Luongi bocha",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
@@ -4056,58 +3950,13 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Do the sheep sleep in the house?",
-          "translation": "Rombe ninde e odini koso?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "The cattle rest outside",
-          "translation": "Dhok nindo oko",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "If you want anything, tell me",
-          "translation": "K'idwara gimoro, wachina",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Do you want work?",
-          "translation": "Idwaro tich?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Ask if you want to go out",
           "translation": "K'dwaro bayo, ikwa wach",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "What do you want for dinner?",
-          "translation": "Wang' nicham ang'o otieno?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You have been a long time getting dinner",
-          "translation": "Manyakanende ichak teko, dak anwang' chiemo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Ask him what he wants",
           "translation": "Penje gi m'odwaro",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Do they sell sheep?",
-          "translation": "Nitiye rombe m'ing'iewo?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "How much a goat?",
-          "translation": "Diek ing'iewo nade?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "How much does he want for that?",
-          "translation": "Magi ing'iewo pesa adi?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -5148,38 +4997,8 @@
           "context": "Dholuo Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "Good-morning",
-          "translation": "Misawa. Okwe",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Good-evening",
-          "translation": "Misawa. Okwe",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I do not understand Kavirondo well",
-          "translation": "Dholuo okawinjo maber",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "This is your duty every day",
-          "translation": "Mani tichni pilepile",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I have a bath every day?",
-          "translation": "Alwokora pile",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "This is not properly washed",
           "translation": "Mani okolwoki maber",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Are you well?",
-          "translation": "Ringri ber?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -5200,26 +5019,6 @@
         {
           "english": "You can rest a little in the middle of the day",
           "translation": "Unyalo yweyo matin odiechieng",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Make haste, it will rain",
-          "translation": "Reti, wang' koth nochwe",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Send it home before the rain",
-          "translation": "Ter dala ka koth podi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They will have 6 florins a month",
-          "translation": "Ginicham florin auchiel dwe achiel",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Is this river deep?",
-          "translation": "Aorani tut?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -6129,18 +5928,8 @@
           "context": "Dholuo Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "Bring some hot water",
-          "translation": "Kel pi maliet",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Dish up the food at once",
           "translation": "Kel chiemo koro",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Where does this water come from?",
-          "translation": "Pigini oa kanye?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -6154,43 +5943,13 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Are there any beans?",
-          "translation": "Oganda nitiye?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "And meal and Indian corn?",
           "translation": "Gi mogo gi banda?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Do you boil the water beforehand?",
-          "translation": "Ikwongo itedo pi koso?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Throw away this banana-plant",
           "translation": "Wit raboloni oko",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Bring the banana",
-          "translation": "Kel rabolono",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I will beat you",
-          "translation": "Wang' nagoi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Take out the potatoes",
-          "translation": "Kuny rabuon",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "This water is muddy",
-          "translation": "Pigeni rach (or Pigeni oduore)",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -6201,11 +5960,6 @@
         {
           "english": "Tell him to buy some potatoes",
           "translation": "Wachine ong'iew rabuon",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Let the porters have the meat",
-          "translation": "Jotich gikaw ring'o duto",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -7840,33 +7594,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Come in",
-          "translation": "Donjiye",
-          "pronunciation": "don-ji-ye",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Who is there?",
           "translation": "In ng'a?",
           "pronunciation": "in ng'a",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Sit down",
-          "translation": "Bedi piny",
-          "pronunciation": "be-di piny",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you want to speak to me?",
-          "translation": "Idwaro wacho koda?",
-          "pronunciation": "i-dwa-ro wa-cho ko-da",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "What do you want?",
-          "translation": "Idwaro ang'o?",
-          "pronunciation": "i-dwa-ro ang'-o",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -7876,75 +7606,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Tell me what you want",
-          "translation": "Wachna gi m'idwaro",
-          "pronunciation": "wach-na gi m'-i-dwa-ro",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I do not understand",
-          "translation": "Okawinjo maber",
-          "pronunciation": "o-ka-win-jo ma-ber",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Go away. Be off",
           "translation": "Dhiyo",
           "pronunciation": "dhi-yo",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you understand?",
-          "translation": "Iwinjo?",
-          "pronunciation": "i-win-jo",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I must go now",
-          "translation": "Koro onego adhi",
-          "pronunciation": "ko-ro o-ne-go a-dhi",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I do not know",
-          "translation": "Akia",
-          "pronunciation": "a-kia",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I will not",
-          "translation": "Adagi, Akwer, Okadwar",
-          "pronunciation": "a-da-gi, a-kwer, o-ka-dwar",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "What do you say?",
-          "translation": "Iwacho ang'o?",
-          "pronunciation": "i-wa-cho ang'-o",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Say it again",
-          "translation": "Wachina kendo",
-          "pronunciation": "wa-chi-na ken-do",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Answer me",
-          "translation": "Duokina wach",
-          "pronunciation": "duo-ki-na wach",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Make haste",
-          "translation": "Ret piyo",
-          "pronunciation": "ret pi-yo",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I cannot tell you",
-          "translation": "Okanyal wachoni",
-          "pronunciation": "o-ka-nyal wa-cho-ni",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -7972,12 +7636,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Where do you come from?",
-          "translation": "Ia kanye?",
-          "pronunciation": "where do you come from",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Idhi kanye?",
           "translation": "Where are you going to?",
           "pronunciation": "where are you going to",
@@ -7996,18 +7654,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "I have forgotten",
-          "translation": "Wiya owil",
-          "pronunciation": "i have forgotten",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "You have made a mistake",
-          "translation": "Ibayo wachno",
-          "pronunciation": "you have made a mistake",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Quite right! Well done!",
           "translation": "Ero! Ber!",
           "pronunciation": "quite right well done",
@@ -8017,12 +7663,6 @@
           "english": "Ling! we wach!",
           "translation": "Silence! Keep quiet!",
           "pronunciation": "silence keep quiet",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "That will do! That is enough!",
-          "translation": "Oromo",
-          "pronunciation": "that will do! that is enough",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8122,27 +7762,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "The rain is over",
-          "translation": "Koth ochok",
-          "pronunciation": "the rain is over",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "I do not understand Kavirondo well",
           "translation": "Dholuo okawinjo maber",
           "pronunciation": "i do not understand kavirondo well",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Tell the cook",
-          "translation": "Wach ni jatedo",
-          "pronunciation": "tell the cook",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I want something to eat",
-          "translation": "Adwaro chiemo",
-          "pronunciation": "i want something to eat",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8218,12 +7840,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "The water is not boiling",
-          "translation": "Pi pok'oyienyo",
-          "pronunciation": "the water is not boiling",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Tedi tong'gwen moko",
           "translation": "Boil some eggs",
           "pronunciation": "boil some eggs",
@@ -8278,21 +7894,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Get me some fish",
-          "translation": "Dhi omna rech",
-          "pronunciation": "get me some fish",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Gwen nitiye mang'eny",
           "translation": "There is plenty of fowl",
           "pronunciation": "there is plenty of fowl",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Are there any vegetables?",
-          "translation": "Mboga bende nitiye?",
-          "pronunciation": "are there any vegetables",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8320,21 +7924,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Give me the keys",
-          "translation": "Mia funguo",
-          "pronunciation": "give me the keys",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Lwok lepegi",
           "translation": "Wash these clothes",
           "pronunciation": "wash these clothes",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Have you washed yourself?",
-          "translation": "Iselwokori?",
-          "pronunciation": "have you washed yourself",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8377,12 +7969,6 @@
           "english": "Kiny nibi okinyi",
           "translation": "Come early in the morinng",
           "pronunciation": "come early in the morinng",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Do as I tell you",
-          "translation": "Tim kak'awachoni",
-          "pronunciation": "do as i tell you",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8440,27 +8026,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Are the people quiet?",
-          "translation": "Pacho okwe?",
-          "pronunciation": "are the people quiet",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Mia gimoro, amadhi",
           "translation": "May I get something to drink?",
           "pronunciation": "may i get something to drink",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "This is not clear water",
-          "translation": "Pi oduore, oklew",
-          "pronunciation": "this is not clear water",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Do you get the water from the river?",
-          "translation": "Iumbo pi aora?",
-          "pronunciation": "do you get the water from the river",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8530,12 +8098,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "I have pains all over my body",
-          "translation": "Ringra duto rama",
-          "pronunciation": "i have pains all over my body",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Ringra rama ka",
           "translation": "I feel a pain here",
           "pronunciation": "i feel a pain here",
@@ -8557,12 +8119,6 @@
           "english": "I have dysentry",
           "translation": "Adiewo remo",
           "pronunciation": "i have dysentry",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I cannot sleep during the night",
-          "translation": "Nindo otama otieno",
-          "pronunciation": "i cannot sleep during the night",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8608,21 +8164,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Do you understand cultivation?",
-          "translation": "Ing'eyo pur?",
-          "pronunciation": "do you understand cultivation",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Ing'eyo tong'o yien",
           "translation": "Do you know how to cut trees?",
           "pronunciation": "do you know how to cut trees",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I know a little",
-          "translation": "Ang'eyo matintin",
-          "pronunciation": "i know a little",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8677,12 +8221,6 @@
           "english": "Take a hoe",
           "translation": "Maki kwer",
           "pronunciation": "take a hoe",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Put the grass aside",
-          "translation": "Ket lum tenge",
-          "pronunciation": "put the grass aside",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8743,18 +8281,6 @@
           "english": "I will cut your wages",
           "translation": "Nang'adi musachi",
           "pronunciation": "i will cut your wages",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "This man works well",
-          "translation": "Ng'atni otiyo maber",
-          "pronunciation": "this man works well",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Go and plant there",
-          "translation": "Dhi pidhi kacha",
-          "pronunciation": "go",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8866,12 +8392,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Tell him I want to see him",
-          "translation": "Wachne adwaro nene",
-          "pronunciation": "tell him i want to",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Have they come?",
           "translation": "Gisebiro?",
           "pronunciation": "have they come",
@@ -8893,12 +8413,6 @@
           "english": "Take care you are all ready",
           "translation": "Ng'iuru, ubi udoto",
           "pronunciation": "take care you are all ready",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Have you all the loads ready?",
-          "translation": "Isetweyo gikmoko duto?",
-          "pronunciation": "have you all the loads ready",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -8953,12 +8467,6 @@
           "english": "Atieko, kaw oko",
           "translation": "I have finished, take it away",
           "pronunciation": "i have finished",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Take this tent down",
-          "translation": "Pudhi hema",
-          "pronunciation": "take this tent down",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -9279,33 +8787,13 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "This house is very small",
-          "translation": "Odini tin ahinya",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "How can I get in by this door",
           "translation": "Ti adonji nade e dhoodini?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Your house is very dirty",
-          "translation": "Odi chido ahinya",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "What is the matter with him?",
           "translation": "Otuwo ang'o?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I have diarrhoea",
-          "translation": "Adiewo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Take a hoe",
-          "translation": "Maki kwer",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -11835,21 +11323,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Say on!",
-          "translation": "Wachi!",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Answer when I call you",
-          "translation": "Duokina wach k'aluongi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Take this florin",
-          "translation": "Kaw florinni",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Do not use dirty dusters",
           "translation": "Kik iywe gi ywech mochido",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -11865,33 +11338,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Do you know how to work?",
-          "translation": "Ing'eyo tich?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "To chiemo onge",
           "translation": "But no food",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Bring some more men",
-          "translation": "Kel ji moko",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Take care not to cut them",
-          "translation": "Kuny mos, kik ipudhigi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Take care you are all ready",
-          "translation": "Ng'iuru, ubi udoto",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Take out some things",
-          "translation": "Gol moko (or we moko)",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -11902,11 +11350,6 @@
         {
           "english": "Tell him he shall get it to-morrow",
           "translation": "Wachine, kiny nonwang'",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Do they take florins?",
-          "translation": "Giyiye florin?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -13138,16 +12581,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Good-bye!",
-          "translation": "Inindi!",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Go away. Be off",
-          "translation": "Dhiyo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Do not go out without permission",
           "translation": "Kik idhi bayo ka podi k'amiyi wach",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -13168,11 +12601,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "I shall come over again",
-          "translation": "Naduogi kendo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Good-bye",
           "translation": "Inindi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -13188,11 +12616,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Go and look for some more",
-          "translation": "Dhi dwar joting' moko",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "If you are good, I shall reward you",
           "translation": "K'iber, namii gir tiendi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -13200,16 +12623,6 @@
         {
           "english": "If you steal, you shall go to jail",
           "translation": "K'ikwalo, notwei",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Have they come?",
-          "translation": "Gisebiro?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Go and bring some others",
-          "translation": "Dhi, om moko",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -13233,18 +12646,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "When did he go?",
-          "translation": "Nopondo karang'o?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Which is the best road to go by?",
           "translation": "Yo maber ere?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "This road is blocked",
-          "translation": "Yorni odinore",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -13308,16 +12711,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "The same road",
-          "translation": "Yoronogo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "The child you beat",
-          "translation": "Nyathi m'igoyo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "We shall go soon",
           "translation": "Wang' wanadhi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -13368,11 +12761,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "They ran away again",
-          "translation": "Negichako giringo kendo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Jale nokwongo biro",
           "translation": "He came here first",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -13420,11 +12808,6 @@
         {
           "english": "to go out",
           "translation": "Wuok",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "The trees fell down",
-          "translation": "Yedhe nogore piny",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -13613,28 +12996,8 @@
           "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
         },
         {
-          "english": "And make another load",
-          "translation": "Gi m'igolo itwe kanyakachiel",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Bring out the loads",
-          "translation": "Gol gikmoko duto",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Whose load is this?",
-          "translation": "Won gigi ere?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Yes, strangers are attacked and their loads stolen",
           "translation": "Ee, jomodong' chien omakigi, omagi gik ma giting'o",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Put the loads together",
-          "translation": "Chokuru gikmoko kanyakachiel",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -13943,28 +13306,13 @@
           "context": "CLEAR Global Dholuo Speech-Text Corpus (CC-BY-4.0, https://huggingface.co/datasets/CLEAR-Global/Luo-Synthetic-ASR-Dataset)"
         },
         {
-          "english": "I will sleep in this room",
-          "translation": "Nanindi e odini",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "I feel a pain here",
           "translation": "Ringra rama ka",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "I have fever",
-          "translation": "Midusi maka",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "If you can get into a perspiration, you will feel better",
           "translation": "K'ineno ringri golo luya, Wang' nikwo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I will cut your wages",
-          "translation": "Nang'adi musachi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -14665,6 +14013,78 @@
           "translation": "kauon",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Thursday",
+          "translation": "Tich Ang’wen",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Saturday",
+          "translation": "Ngeso",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "February",
+          "translation": "Dwe mar Ariyo",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "March",
+          "translation": "Dwe mar Adek",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "April",
+          "translation": "Dwe mar Ang’wen",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "May",
+          "translation": "Dwe mar Abich",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "July",
+          "translation": "Dwe mar Abiriyo",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "August",
+          "translation": "Dwe mar Aboro",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "September",
+          "translation": "Dwe mar Ochiko",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "October",
+          "translation": "Dwe mar Apar",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "November",
+          "translation": "Dwe mar gi achiel",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "December",
+          "translation": "Dwe mar Apar gi ariyo",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         }
       ]
     },
@@ -21977,18 +21397,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "How do you do?",
-          "translation": "Iriyo nade? Inindo nade?",
-          "pronunciation": "how do you do",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I am well",
-          "translation": "Ariyo maber. Anindo maber",
-          "pronunciation": "i am well",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Dala (or: Pacho) wacho ang'o?",
           "translation": "What's the news of the day?",
           "pronunciation": "what's the news of the day",
@@ -22004,12 +21412,6 @@
           "english": "Adonji e ot koso?",
           "translation": "May I come in?",
           "pronunciation": "may i come in",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Have you something to say?",
-          "translation": "In gi wach moro? Wachni moro nitiye?",
-          "pronunciation": "have you something to say",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -22031,12 +21433,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Speak slowly",
-          "translation": "Wach mos. We ruyo",
-          "pronunciation": "speak slowly",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Wothimos. Maki mos. Kaw mos",
           "translation": "Be careful, take care",
           "pronunciation": "be careful",
@@ -22049,21 +21445,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Never mind!",
-          "translation": "Ber, oromo. Onge gimoro",
-          "pronunciation": "never mind",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Dhi ne. Dhi ng'i",
           "translation": "Go and look",
           "pronunciation": "go",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Put the water on the fire",
-          "translation": "Ket pi e kendo. Mur pi",
-          "pronunciation": "put the water on the fire",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -22079,21 +21463,9 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Lay the table",
-          "translation": "Pedhi mesa. Ndiki mesa",
-          "pronunciation": "lay the table",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Om binika mar chai",
           "translation": "Fetch the teapot",
           "pronunciation": "fetch the teapot",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "At what time do you have your meals?",
-          "translation": "Pile ichiemo sa adi?",
-          "pronunciation": "at what time do you have your meals",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -22211,12 +21583,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Have you a good number of cattle?",
-          "translation": "In gi dhok mang'eny?",
-          "pronunciation": "have you a good number of cattle",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Gi mogo gi banda?",
           "translation": "And meal and Indian corn?",
           "pronunciation": "and",
@@ -22235,12 +21601,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Where do you get the honey?",
-          "translation": "Mor kich inwang'o kanye?",
-          "pronunciation": "where do you get the honey",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Ti adonji nade e dhoodini?",
           "translation": "How can I get in by this door",
           "pronunciation": "how can i get in by this door",
@@ -22250,12 +21610,6 @@
           "english": "Do the sheep sleep in the house?",
           "translation": "Rombe ninde e odini koso?",
           "pronunciation": "do the sheep sleep in the house",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "I cannot take any food",
-          "translation": "Chiemo duto tinde otama",
-          "pronunciation": "i cannot take any food",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -22292,12 +21646,6 @@
           "english": "Pur nyaka a kaeni nyaka chopi kacha",
           "translation": "Dig from here to there",
           "pronunciation": "dig from here to there",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Take the potatoes to the garden",
-          "translation": "Ter rabuon e puodho",
-          "pronunciation": "take the potatoes to the garden",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -22418,12 +21766,6 @@
           "english": "This water is muddy",
           "translation": "Pigeni rach (or Pigeni oduore)",
           "pronunciation": "this water is muddy",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
-          "english": "Go and look for some clean water",
-          "translation": "Dhi, dwar pi malew",
-          "pronunciation": "go",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
@@ -22668,11 +22010,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "That I love",
-          "translation": "A-her",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "I-her",
           "translation": "That thou love",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -22695,21 +22032,6 @@
         {
           "english": "Ohera",
           "translation": "I am loved",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I am without. I have not",
-          "translation": "Aonge",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I have sufficient",
-          "translation": "Oroma",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "What is that?",
-          "translation": "Ma ang'o?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -22738,11 +22060,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Where is the tumbler?",
-          "translation": "Ere birauli?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Don't break the glass",
           "translation": "Kik inegi chimni",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -22763,11 +22080,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "How do you make this liquor?",
-          "translation": "Iloso kong'o nade?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Tie it up with this bandage",
           "translation": "Itwe gi nangani",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -22775,11 +22087,6 @@
         {
           "english": "Dig from here to there",
           "translation": "Pur nyaka a kaeni nyaka chopi kacha",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I shall engage you again",
-          "translation": "Namedi tich dwe moro (or) Namedi tich kendo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -22820,11 +22127,6 @@
         {
           "english": "Are there crocodiles?",
           "translation": "Nyang' sitiye?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Did you see him take anything?",
-          "translation": "Ineno odhi kodi gimoro?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -22898,16 +22200,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "The house we build",
-          "translation": "Ot m'wagero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "The man whose house",
-          "translation": "Ng'ato ma ode",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Dhi, iluongi ng'ato moro",
           "translation": "Go and call somebody",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -22920,11 +22212,6 @@
         {
           "english": "Moko biro",
           "translation": "Some are coming",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "He came this morning",
-          "translation": "Obiro okinyi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -22955,11 +22242,6 @@
         {
           "english": "Chalo d'abi (or) D'abi",
           "translation": "Perhaps I shall come",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Come and see",
-          "translation": "Bi, ine",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -23003,18 +22285,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "That I love not",
-          "translation": "Kik aher",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Kik idhi",
           "translation": "Do not go",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Their cattle was stolen",
-          "translation": "Nope dhogi",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -23093,11 +22365,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "The house was built",
-          "translation": "Ot noger",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Pipa noom",
           "translation": "The barrel was fetched",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -23130,11 +22397,6 @@
         {
           "english": "Olwokore alwoka",
           "translation": "He is simply bathing",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "There is enough stone",
-          "translation": "Kite romo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -23213,16 +22475,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "They came and went",
-          "translation": "Negibiro kendo negidhi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Do you think that",
-          "translation": "Igalo ka",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "It is dufficult",
           "translation": "Tek to tek",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -23230,11 +22482,6 @@
         {
           "english": "Watiyo tich ka",
           "translation": "We work here",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They all came",
-          "translation": "Negibiro giduto",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -23248,23 +22495,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "It is all right",
-          "translation": "Ber ni ber",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "This house here",
-          "translation": "Ot makani",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "These people here",
           "translation": "Ji makagi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "The road is muddy",
-          "translation": "Yo otimo chuodho",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -23275,16 +22507,6 @@
         {
           "english": "Inaina, Enaena, Wanawana, Unauna, Ginagina",
           "translation": "It is simply myself",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "This my house",
-          "translation": "Odani",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Between us and you",
-          "translation": "Kindwa kodu",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -23368,11 +22590,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Peter builds the house",
-          "translation": "Petrus ogero ot",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "An em'odonjona",
           "translation": "She accused me",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -23393,18 +22610,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Tell the headman",
-          "translation": "Wachniuru nyapara",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Bring the lamp",
           "translation": "Kelu taya",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Take away the chairs",
-          "translation": "Kawu kombe",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -23438,31 +22645,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Who is there?",
-          "translation": "In ng'a?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921) — Phrase Book"
-        },
-        {
-          "english": "Who are you?",
-          "translation": "In ng'a?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921) — Phrase Book"
-        },
-        {
-          "english": "Clean the table",
-          "translation": "Ywe ot. (Note: printed as in original; lines shifted by one row below)",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921) — Phrase Book"
-        },
-        {
-          "english": "Did you break the saucer?",
-          "translation": "In maninenogo san?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921) — Phrase Book"
-        },
-        {
-          "english": "Where do you come from?",
-          "translation": "In jakanye?",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921) — Phrase Book"
-        },
-        {
           "english": "What village?",
           "translation": "In jadala ng'a?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921) — Phrase Book"
@@ -23475,11 +22657,6 @@
         {
           "english": "You are a lazy man",
           "translation": "In jasamuoyo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921) — Phrase Book"
-        },
-        {
-          "english": "Beat the drum again",
-          "translation": "Go bul kendo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921) — Phrase Book"
         },
         {
@@ -78220,46 +77397,6 @@
           "context": "Dholuo Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "Thou",
-          "translation": "In",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We",
-          "translation": "Wan",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You",
-          "translation": "Un",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They",
-          "translation": "Gin",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We, Us",
-          "translation": "Wa",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They, Them",
-          "translation": "Gi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I myself",
-          "translation": "Awon",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Thou thyself",
-          "translation": "Iwon",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "I myself (alone)",
           "translation": "Kenda",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -78330,21 +77467,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "These / Those",
-          "translation": "Magi / Mago",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I love",
-          "translation": "A—hero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Thou lovest",
-          "translation": "I—hero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "I loved",
           "translation": "Ne ahero",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -78395,48 +77517,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "He/she loves / He/she does not love",
-          "translation": "Ohero / Okohero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We love / We do not love",
-          "translation": "Wahero / Okwahero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You (pl.) love / You (pl.) do not love",
-          "translation": "Uhero / Okuhero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They love / They do not love",
-          "translation": "Gihero / Okigihero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Thou lovedst / Thou didst not love",
           "translation": "Nihero / Ne okihero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "He/she loved / He/she did not love",
-          "translation": "Nohero / Ne okohero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We loved / We did not love",
-          "translation": "Newahero / Ne okwahero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You (pl.) loved / You (pl.) did not love",
-          "translation": "Nuhero (Ne uhero) / Ne okuhero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They loved / They did not love",
-          "translation": "Negihero / Ne okigihero",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -78445,43 +77527,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "He/she has loved / He/she has not loved",
-          "translation": "Osehero / Okosehero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We have loved / We have not loved",
-          "translation": "Wasehero / Okwasehero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You (pl.) have loved / You (pl.) have not loved",
-          "translation": "Usehero / Okusehero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They have loved / They have not loved",
-          "translation": "Gisehero / Okigisehero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Thou hadst loved / Thou hadst not loved",
           "translation": "Nisehero / Ne okisehero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We had loved / We had not loved",
-          "translation": "Newasehero / Ne okwasehero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You (pl.) had loved / You (pl.) had not loved",
-          "translation": "Neusehero / Ne okusehero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They had loved / They had not loved",
-          "translation": "Negisehero / Ne okigisehero",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -78490,38 +77537,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "He/she will love / He/she will not love",
-          "translation": "Noher / Okanoher",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We will love / We will not love",
-          "translation": "Wanaher / Okwanaher",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You (pl.) will love / You (pl.) will not love",
-          "translation": "Unuher / Okanuher",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "That thou mayest love / That thou mayest not love",
           "translation": "Iher / Kik iher",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "That he/she may love / That he/she may not love",
-          "translation": "Oher / Kik oher",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "That we may love / That we may not love",
-          "translation": "Waher / Kik waher",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "That you (pl.) may love / That you (pl.) may not love",
-          "translation": "Uher / Kik uher",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -78585,21 +77602,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "I think so",
-          "translation": "Agalo kamano",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I do not think so",
-          "translation": "Okagalo kamo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "That is your fault",
-          "translation": "Mano wachni",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Sweep the room",
           "translation": "Kwadhi mesa",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -78615,18 +77617,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "I have dysentry",
-          "translation": "Adiewo remo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Put on this ointment",
           "translation": "Wiriye yadhini",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You do not know how to work",
-          "translation": "Ikia tich",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -78637,16 +77629,6 @@
         {
           "english": "I cannot get any men",
           "translation": "Ji otama",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "I cannot wait for them",
-          "translation": "Okanyal ritogi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You have deceived me",
-          "translation": "Niwuonda",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -78715,11 +77697,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ja-Luo."
         },
         {
-          "english": "Twelve",
-          "translation": "apar ga reyo",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ja-Luo."
-        },
-        {
           "english": "White",
           "translation": "Racar",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ja-Luo."
@@ -78745,11 +77722,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Father's chairs",
-          "translation": "Kombe mag won",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Peter's hat",
           "translation": "Kondo Petrus",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -78757,11 +77729,6 @@
         {
           "english": "the pipe of the Luo's",
           "translation": "Kwesi Luo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "the hole of a rat",
-          "translation": "Bur oyieyo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -78802,11 +77769,6 @@
         {
           "english": "Amolo's district",
           "translation": "Gweng Amolo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "Orphan",
-          "translation": "Kich",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -78875,11 +77837,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Once",
-          "translation": "dichiel",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Twice",
           "translation": "diriyo or nyadiriyo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -78902,21 +77859,6 @@
         {
           "english": "Your garden / Your gardens",
           "translation": "Puothu / Puotheu",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "The other (definite)",
-          "translation": "Machielo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We love",
-          "translation": "Wahero",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "They love",
-          "translation": "Gihero",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -78952,11 +77894,6 @@
         {
           "english": "Peter built a house",
           "translation": "Petrus nogero ot",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "To open",
-          "translation": "Yawo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -79017,16 +77954,6 @@
         {
           "english": "Simply work",
           "translation": "Tiuru atiya",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We are",
-          "translation": "Wan",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We were",
-          "translation": "Ne wan",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -79145,11 +78072,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "it is inside",
-          "translation": "Ni iye",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Don't enter",
           "translation": "Obetiye",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -79182,11 +78104,6 @@
         {
           "english": "truly, really",
           "translation": "Putuputu",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You too",
-          "translation": "In bende",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -79336,23 +78253,8 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Chocolate brown",
-          "translation": "silwal (m), malando (f)",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Crushed matama",
           "translation": "Bel moyo",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "We came",
-          "translation": "Wan newabiro",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "You too",
-          "translation": "Un bende",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -79386,11 +78288,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Every where",
-          "translation": "Kwonde duto",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Everything",
           "translation": "Gikmoko dundo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -79403,11 +78300,6 @@
         {
           "english": "To lead",
           "translation": "telo ni",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
-          "english": "To accuse",
-          "translation": "donjo ni",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
@@ -79466,11 +78358,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "ancestor",
-          "translation": "Kwar",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "hippo",
           "translation": "Rawo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -79491,5 +78378,5 @@
   "source": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921); Rev. John Roscoe & Bishop J. J. Willis (1915) The Northern Bantu — Nilotic Kavirondo Kinship & Clans (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Dholuo Corpus (Mackenzie 2016, CC-BY-4.0)",
   "isoCode": "luo",
   "glottocode": "luoo1235",
-  "totalEntries": 15067
+  "totalEntries": 14853
 }

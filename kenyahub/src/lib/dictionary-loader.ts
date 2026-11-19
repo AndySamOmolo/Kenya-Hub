@@ -1,3 +1,4 @@
+import { DICT_LOADERS } from "./dictionary-loaders";
 import {
   ALL_DICT_METAS,
   DICT_META_MAP,
@@ -87,31 +88,7 @@ export function applyApprovedContributionsToDict(dict: Dictionary): Dictionary {
 }
 
 // ─── Dynamic Dictionary Loader & In-Memory Cache ───
-const DICT_LOADERS: Record<string, () => Promise<{ default: Dictionary }>> = {
-  swahili: () => import("@/data/dictionaries/swahili.json") as Promise<{ default: Dictionary }>,
-  kikuyu: () => import("@/data/dictionaries/kikuyu.json") as Promise<{ default: Dictionary }>,
-  luo: () => import("@/data/dictionaries/luo.json") as Promise<{ default: Dictionary }>,
-  kalenjin: () => import("@/data/dictionaries/kalenjin.json") as Promise<{ default: Dictionary }>,
-  luhya: () => import("@/data/dictionaries/luhya.json") as Promise<{ default: Dictionary }>,
-  kamba: () => import("@/data/dictionaries/kamba.json") as Promise<{ default: Dictionary }>,
-  meru: () => import("@/data/dictionaries/meru.json") as Promise<{ default: Dictionary }>,
-  maasai: () => import("@/data/dictionaries/maasai.json") as Promise<{ default: Dictionary }>,
-  kisii: () => import("@/data/dictionaries/kisii.json") as Promise<{ default: Dictionary }>,
-  somali: () => import("@/data/dictionaries/somali.json") as Promise<{ default: Dictionary }>,
-  turkana: () => import("@/data/dictionaries/turkana.json") as Promise<{ default: Dictionary }>,
-  mijikenda: () => import("@/data/dictionaries/mijikenda.json") as Promise<{ default: Dictionary }>,
-  teso: () => import("@/data/dictionaries/teso.json") as Promise<{ default: Dictionary }>,
-  embu: () => import("@/data/dictionaries/embu.json") as Promise<{ default: Dictionary }>,
-  taita: () => import("@/data/dictionaries/taita.json") as Promise<{ default: Dictionary }>,
-  samburu: () => import("@/data/dictionaries/samburu.json") as Promise<{ default: Dictionary }>,
-  borana: () => import("@/data/dictionaries/borana.json") as Promise<{ default: Dictionary }>,
-  rendille: () => import("@/data/dictionaries/rendille.json") as Promise<{ default: Dictionary }>,
-  pokomo: () => import("@/data/dictionaries/pokomo.json") as Promise<{ default: Dictionary }>,
-  ilchamus: () => import("@/data/dictionaries/ilchamus.json") as Promise<{ default: Dictionary }>,
-  pokot: () => import("@/data/dictionaries/pokot.json") as Promise<{ default: Dictionary }>,
-  taveta: () => import("@/data/dictionaries/taveta.json") as Promise<{ default: Dictionary }>,
-  daasanach: () => import("@/data/dictionaries/daasanach.json") as Promise<{ default: Dictionary }>,
-};
+
 
 export const DICT_CACHE: Record<string, Dictionary> = {};
 const IN_FLIGHT: Record<string, Promise<Dictionary | null>> = {};

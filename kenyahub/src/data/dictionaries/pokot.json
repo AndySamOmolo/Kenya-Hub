@@ -937,12 +937,6 @@
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "Family",
-          "translation": "ôr, pl. ôr-ten",
-          "pronunciation": "ôr",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
-        },
-        {
           "english": "Brother",
           "translation": "weri, pl. werkoʻ",
           "pronunciation": "weri",
@@ -17488,12 +17482,6 @@
           "context": "Pökoot / Suk Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
-          "english": "I am good",
-          "translation": "Ane aca karām",
-          "pronunciation": "ane aca karām",
-          "context": "Pökoot / Suk Comparative Lexicon (Johnston 1902 Vol. II)"
-        },
-        {
           "english": "Dead body",
           "translation": "porto, pur, pl. por-wei. Vide Corpse",
           "pronunciation": "porto",
@@ -29627,18 +29615,8 @@
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
-          "english": "Rabbit",
-          "translation": "blĕrkw-a, pl. blĕrkw-oi",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
           "english": "Rat (of all kinds, and mice)",
           "translation": "mer-ian, pl. mer",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "Ring",
-          "translation": "kai-moron, pl. kai-morin, kai-moris-ai",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29654,11 +29632,6 @@
         {
           "english": "Scabbard (of sword)",
           "translation": "melot, pl. melut",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "She",
-          "translation": "nyende",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29687,63 +29660,8 @@
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
-          "english": "Thee",
-          "translation": "nyī",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "Their",
-          "translation": "nyeñgwa, pl. chekwa",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "Them",
-          "translation": "chane",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "These",
-          "translation": "chu",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "Thine",
-          "translation": "nyeñgmwunyi, pl. chekunyi",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "This",
-          "translation": "nyĭ",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "Thou",
-          "translation": "nyī",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "Town",
-          "translation": "kau, pl. kiston",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "Us",
-          "translation": "acha",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
           "english": "Value (what is this worth?)",
           "translation": "ke-mi-chī-nyi-ne?",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "Voice",
-          "translation": "kôt",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "We",
-          "translation": "acha",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29764,11 +29682,6 @@
         {
           "english": "Witch",
           "translation": "pon-in, pl. pon-ŭ",
-          "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
-        },
-        {
-          "english": "You",
-          "translation": "nyī",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -31326,5 +31239,5 @@
   "source": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
   "isoCode": "pko",
   "glottocode": "poko1263",
-  "totalEntries": 5644
+  "totalEntries": 5627
 }

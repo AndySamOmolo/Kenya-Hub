@@ -89,18 +89,6 @@
           "english": "One",
           "translation": "mwe",
           "pronunciation": "mwe",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Two",
-          "translation": "vīrī",
-          "pronunciation": "vi-ri",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "One",
-          "translation": "mwe",
-          "pronunciation": "mwe",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -239,12 +227,6 @@
           "english": "Thousand",
           "translation": "Ki-hīndē, Ki-hīndi; vi",
           "pronunciation": "ki-hinde ki-hindi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Thousand",
-          "translation": "Ki-hīndē, Ki-hīndi; vi",
-          "pronunciation": "ki-hinde ki-hindi",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -362,12 +344,6 @@
         {
           "english": "Girl",
           "translation": "M-ndele; va-. M-fora; va",
-          "pronunciation": "m-ndele va- m-fora va",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Girl",
-          "translation": "M-ndele; va-. M-fora; va",
           "pronunciation": "m nde-le",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -382,12 +358,6 @@
           "translation": "mwana (pl. wana)",
           "pronunciation": "mwa-na",
           "context": "Hollis (1910) & Johnston (1919) — Kitaveta • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Chief",
-          "translation": "Mnggwa; va",
-          "pronunciation": "mnggwa va",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Chief",
@@ -450,12 +420,6 @@
           "context": "Hollis 1910 Taveta Proverbs • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Brother",
-          "translation": "M-ringga; va",
-          "pronunciation": "m-ringga va",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Husband",
           "translation": "M-omi",
           "pronunciation": "m-omi",
@@ -466,12 +430,6 @@
           "translation": "M-ringga; va",
           "pronunciation": "m ring-a",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Son, boy",
-          "translation": "M-sōro; va",
-          "pronunciation": "m-soro",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Son, boy",
@@ -508,12 +466,6 @@
           "translation": "I-vele; ma",
           "pronunciation": "i ve-le",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Doctor (medicine man)",
-          "translation": "Mu-ghangga; va",
-          "pronunciation": "mu-ghangga va",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Doctor (medicine man)",
@@ -679,12 +631,6 @@
           "context": "Johnston (1919) — Kitaveta • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Arm",
-          "translation": "Mu-kono; mi",
-          "pronunciation": "mu-kono mi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Leg",
           "translation": "Ku-gu; ma-gu",
           "pronunciation": "ku-gu ma-gu",
@@ -733,12 +679,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Bone",
-          "translation": "Indi, I-windi; ma",
-          "pronunciation": "indi i-windi ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Foot",
           "translation": "Lu-wayo; ny-ayo",
           "pronunciation": "lu-wayo ny-ayo",
@@ -748,12 +688,6 @@
           "english": "Hair",
           "translation": "N-zwi (pl.)",
           "pronunciation": "n-zwi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Hand",
-          "translation": "M-kono. Lu-hi (palm); ma",
-          "pronunciation": "m-kono lu-hi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -778,12 +712,6 @@
           "english": "Skin",
           "translation": "C-oni",
           "pronunciation": "c-oni",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Tear",
-          "translation": "I-zōri; ma",
-          "pronunciation": "i-zori",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -847,27 +775,9 @@
           "context": "Johnston (1919) — Kitaveta • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Belly",
-          "translation": "I-deu; ma",
-          "pronunciation": "i-deu ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Heart",
           "translation": "Ngolo",
           "pronunciation": "ngo-lo",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Thigh",
-          "translation": "I-ga, I-gha; ma",
-          "pronunciation": "i-ga i-gha ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Beard",
-          "translation": "Kolo; ma-. Ki-lezu; vi",
-          "pronunciation": "ko-lo ma- ki-lezu vi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -928,12 +838,6 @@
           "english": "Shoulder",
           "translation": "I-vēga; ma",
           "pronunciation": "i-vega",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Shoulder",
-          "translation": "I-vēga; ma",
-          "pronunciation": "i-vega",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -949,21 +853,9 @@
           "context": "Johnston (1919) — Kitaveta • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Breast (man's)",
-          "translation": "M-bafu; mi",
-          "pronunciation": "m-bafu mi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Face, forehead",
           "translation": "U-so; ny-uso",
           "pronunciation": "u-so ny-uso",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Breast (woman's)",
-          "translation": "I-vele; ma",
-          "pronunciation": "i-vele ma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -1353,12 +1245,6 @@
           "english": "Tail",
           "translation": "Ki-tīze; vi",
           "pronunciation": "ki-tize",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Tail",
-          "translation": "Ki-tīze; vi",
-          "pronunciation": "ki-tize",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -1378,12 +1264,6 @@
           "translation": "ibau (pl. mabau)",
           "pronunciation": "i-bau",
           "context": "A. C. Hollis (1910) Taveta Proverb #8 • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Zebra",
-          "translation": "I-tīko; ma",
-          "pronunciation": "i-tiko",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Hyena",
@@ -1640,18 +1520,6 @@
           "context": "Johnston (1919) — Kitaveta • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Hill",
-          "translation": "Ki-dūwi; vi",
-          "pronunciation": "ki-duwi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Lake",
-          "translation": "I-rīwa; ma",
-          "pronunciation": "i-riwa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Moon",
           "translation": "Mw-ēli",
           "pronunciation": "mw-eli",
@@ -1766,12 +1634,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Island",
-          "translation": "Ki-dara; vi",
-          "pronunciation": "ki-dara vi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Forest",
           "translation": "M-situ; mi",
           "pronunciation": "m si-tu",
@@ -1782,18 +1644,6 @@
           "translation": "Ki-dara; vi",
           "pronunciation": "ki da-ra",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Charcoal",
-          "translation": "I-kala; ma",
-          "pronunciation": "i-kala ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Mountain",
-          "translation": "Ki-dūwi; vi",
-          "pronunciation": "ki-duwi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Charcoal",
@@ -2041,12 +1891,6 @@
         {
           "english": "Egg",
           "translation": "I-tagi; ma",
-          "pronunciation": "i-tagi ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Egg",
-          "translation": "I-tagi; ma",
           "pronunciation": "i ta-gi",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -2145,12 +1989,6 @@
           "translation": "kigomba / madio",
           "pronunciation": "ki-gomb-a",
           "context": "Sir H. H. Johnston (1919, #15 Taveita) & Hollis (1910) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To eat",
-          "translation": "lā",
-          "pronunciation": "la",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "To eat",
@@ -2268,21 +2106,9 @@
           "context": "Hollis 1910 & Johnston 1919 #15 Taveita • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Axe",
-          "translation": "I-zoka; ma",
-          "pronunciation": "i-zoka ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Gun",
           "translation": "M-zingga",
           "pronunciation": "m-zingga",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Hoe",
-          "translation": "I-yembe; ma",
-          "pronunciation": "i-yembe ma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -2330,12 +2156,6 @@
         {
           "english": "Town",
           "translation": "M-onggo; mi",
-          "pronunciation": "m-onggo mi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Town",
-          "translation": "M-onggo; mi",
           "pronunciation": "m ong-oh",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -2367,12 +2187,6 @@
           "english": "Cloth",
           "translation": "Suke",
           "pronunciation": "su-ke",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Knife",
-          "translation": "Ki-shū; vi",
-          "pronunciation": "ki-shu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -2682,24 +2496,6 @@
         {
           "english": "To cut",
           "translation": "tēmā",
-          "pronunciation": "te-ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To die",
-          "translation": "fwā",
-          "pronunciation": "fwa",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To see",
-          "translation": "ōnā",
-          "pronunciation": "-ona",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To cut",
-          "translation": "tēmā",
           "pronunciation": "teh-mah",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -2736,30 +2532,6 @@
         {
           "english": "To beat",
           "translation": "kābā",
-          "pronunciation": "ka-ba",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To give",
-          "translation": "inggā",
-          "pronunciation": "ingga",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To kill",
-          "translation": "bwāgā",
-          "pronunciation": "bwa-ga",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To know",
-          "translation": "mānyā",
-          "pronunciation": "manya",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To beat",
-          "translation": "kābā",
           "pronunciation": "kah-bah",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -2784,24 +2556,6 @@
         {
           "english": "To dance",
           "translation": "vīnā",
-          "pronunciation": "vi-na",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To laugh",
-          "translation": "sēkā",
-          "pronunciation": "se-ka",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To sleep",
-          "translation": "lālā",
-          "pronunciation": "la-la",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To dance",
-          "translation": "vīnā",
           "pronunciation": "vee-nah",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -2816,12 +2570,6 @@
           "translation": "lālā",
           "pronunciation": "lah-lah",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To steal",
-          "translation": "īvā",
-          "pronunciation": "-iva",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "To steal",
@@ -2978,12 +2726,6 @@
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Old",
-          "translation": "kūlū",
-          "pronunciation": "ku-lu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Bad",
           "translation": "vī",
           "pronunciation": "vee",
@@ -3004,12 +2746,6 @@
         {
           "english": "All",
           "translation": "ōsē",
-          "pronunciation": "-ose",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "All",
-          "translation": "ōsē",
           "pronunciation": "oh-seh",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -3018,12 +2754,6 @@
           "translation": "edi (-idzi)",
           "pronunciation": "edi",
           "context": "Johnston 1919 pp. 106–109 #15 Taveita • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Long",
-          "translation": "lē",
-          "pronunciation": "le",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Good",
@@ -3056,18 +2786,6 @@
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Great",
-          "translation": "kūlū",
-          "pronunciation": "ku-lu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Short",
-          "translation": "fūhī",
-          "pronunciation": "fu-hi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Black",
           "translation": "īlū",
           "pronunciation": "ilu",
@@ -3090,18 +2808,6 @@
           "translation": "ēūpē",
           "pronunciation": "e-hoo-peh",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Little",
-          "translation": "tōtō",
-          "pronunciation": "to-to",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Rotten",
-          "translation": "vōlū",
-          "pronunciation": "vo-lu",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Little",
@@ -3130,20 +2836,8 @@
         {
           "english": "Plenty, many",
           "translation": "īnggī",
-          "pronunciation": "-inggi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Plenty, many",
-          "translation": "īnggī",
           "pronunciation": "inggi",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Fierce, sharp",
-          "translation": "kālī",
-          "pronunciation": "ka-li",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Fierce, sharp",
@@ -3203,12 +2897,6 @@
         {
           "english": "To go",
           "translation": "gēndā",
-          "pronunciation": "genda",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To go",
-          "translation": "gēndā",
           "pronunciation": "geh-ndah",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -3237,21 +2925,9 @@
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Country",
-          "translation": "Tere; ma",
-          "pronunciation": "te-re ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Outside",
           "translation": "N-zē",
           "pronunciation": "n-ze",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "To come",
-          "translation": "zā",
-          "pronunciation": "za",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -3387,12 +3063,6 @@
           "english": "War",
           "translation": "Nkōndō",
           "pronunciation": "nkondo",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Sick",
-          "translation": "kōnggō",
-          "pronunciation": "konggo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -3581,21 +3251,9 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
-          "english": "Lips",
-          "translation": "Ki-lomo; vi",
-          "pronunciation": "ki-lomo vi",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
           "english": "Song",
           "translation": "Lu-īmbo; ny-īmbo",
           "pronunciation": "lu-imbo",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Male",
-          "translation": "ōmī",
-          "pronunciation": "-omi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -3655,12 +3313,6 @@
         {
           "english": "Female",
           "translation": "kā",
-          "pronunciation": "ka",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Female",
-          "translation": "kā",
           "pronunciation": "kah",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -3675,12 +3327,6 @@
           "translation": "iswi (prefix tu-)",
           "pronunciation": "ee-swee",
           "context": "Verified comparative entry across Kenyan bantu corpus • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Buttocks",
-          "translation": "I-tako; ma",
-          "pronunciation": "i-tako ma",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "He / She",
@@ -3843,12 +3489,6 @@
           "translation": "viteto (sg. kiteto)",
           "pronunciation": "vi-te-to",
           "context": "Rev. A. R. Steggall (1905) — viteto vya kituweta • Cross-verified with CLDF ASJP v20 TAVETA"
-        },
-        {
-          "english": "Not (with verb, as prefix, infix, or suffix)",
-          "translation": "Sī-, Tā-, -sī",
-          "pronunciation": "si- ta- -si-",
-          "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix)",
@@ -4292,5 +3932,5 @@
   "source": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "tvs",
   "glottocode": "tave1238",
-  "totalEntries": 727
+  "totalEntries": 667
 }

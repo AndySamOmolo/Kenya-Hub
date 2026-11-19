@@ -58,6 +58,7 @@ export default function KenyanTranslatorPage() {
   const [categoryPage, setCategoryPage] = useState(1);
   const [categorySearch, setCategorySearch] = useState("");
   const [searchPage, setSearchPage] = useState(1);
+  const [audioOnly, setAudioOnly] = useState(false);
   const [viewMode, setViewMode] = useState<"translate" | "browse" | "favorites">("translate");
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
@@ -366,9 +367,29 @@ export default function KenyanTranslatorPage() {
     return out;
   }, [favorites, loadedDicts]);
 
+  const dedupedSearchResults = useMemo(() => {
+    const seen = new Set<string>();
+    return searchResults.filter((r) => {
+      const k = `${r.languageId}|${r.entry.english.trim().toLowerCase()}|${r.entry.translation.trim().toLowerCase()}`;
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
+  }, [searchResults]);
+
+  const audioSearchCount = useMemo(
+    () => dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry)).length,
+    [dedupedSearchResults]
+  );
+
+  const filteredSearchResults = useMemo(
+    () => (audioOnly ? dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry)) : dedupedSearchResults),
+    [dedupedSearchResults, audioOnly]
+  );
+
   const visibleSearchResults = useMemo(
-    () => searchResults.slice(0, searchPage * SEARCH_PAGE_SIZE),
-    [searchResults, searchPage]
+    () => filteredSearchResults.slice(0, searchPage * SEARCH_PAGE_SIZE),
+    [filteredSearchResults, searchPage]
   );
 
   // ─── Category Browser (Supports direct browsing OR Kenyan-to-Kenyan pivot browsing!) ───
@@ -381,20 +402,48 @@ export default function KenyanTranslatorPage() {
   const browseMeta = DICT_META_MAP[browseLangId] || DICT_META_MAP.swahili;
   const browseDict = loadedDicts[browseLangId] || null;
 
+  const browseAudioEntries = useMemo(() => {
+    if (!browseDict) return [];
+    const seen = new Set<string>();
+    const list: DictEntry[] = [];
+    for (const c of browseDict.categories) {
+      for (const e of c.entries) {
+        if (!hasVerifiedAudio(e)) continue;
+        const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
+        if (seen.has(k)) continue;
+        seen.add(k);
+        list.push(e);
+      }
+    }
+    return list;
+  }, [browseDict]);
+
   const categoryEntries = useMemo(() => {
     if (!activeCategory || !browseDict) return [];
-    const cat = browseDict.categories.find((c) => c.id === activeCategory);
-    if (!cat) return [];
+    let baseEntries: DictEntry[];
+    if (activeCategory === "__audio__") {
+      baseEntries = browseAudioEntries;
+    } else {
+      const cat = browseDict.categories.find((c) => c.id === activeCategory);
+      if (!cat) return [];
+      const seen = new Set<string>();
+      baseEntries = cat.entries.filter((e) => {
+        const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
+        if (seen.has(k)) return false;
+        seen.add(k);
+        return true;
+      });
+    }
     const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     const q = stripDia(categorySearch.trim());
-    if (!q) return cat.entries;
-    return cat.entries.filter(
+    if (!q) return baseEntries;
+    return baseEntries.filter(
       (e) =>
         stripDia(e.english).includes(q) ||
         stripDia(e.translation).includes(q) ||
         (e.context && stripDia(e.context).includes(q))
     );
-  }, [activeCategory, browseDict, categorySearch]);
+  }, [activeCategory, browseDict, browseAudioEntries, categorySearch]);
 
   const totalCategoryPages = Math.max(1, Math.ceil(categoryEntries.length / CATEGORY_PAGE_SIZE));
   const paginatedCategoryEntries = useMemo(() => {
@@ -678,7 +727,21 @@ export default function KenyanTranslatorPage() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between flex-wrap gap-2">
                   <p className="text-xs text-text-muted">
-                    Showing {visibleSearchResults.length} of {searchResults.length} result{searchResults.length !== 1 ? "s" : ""} for &ldquo;{searchQuery}&rdquo;
+                    Showing {visibleSearchResults.length} of {filteredSearchResults.length} result{filteredSearchResults.length !== 1 ? "s" : ""} for &ldquo;{searchQuery}&rdquo;
+                    {audioSearchCount > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => { setAudioOnly((v) => !v); setSearchPage(1); }}
+                        className={`ml-3 inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.7rem] font-semibold border transition-all cursor-pointer ${
+                          audioOnly
+                            ? "border-sky-400/60 bg-sky-500/20 text-sky-300"
+                            : "border-border bg-bg-card text-text-secondary hover:text-text-primary"
+                        }`}
+                      >
+                        <DynamicIcon emoji="🔊" className="w-3 h-3" />
+                        With Audio ({audioSearchCount})
+                      </button>
+                    )}
                     {targetLanguage === "all" ? (
                       <span> across all Kenyan languages</span>
                     ) : targetMeta ? (
@@ -870,14 +933,14 @@ export default function KenyanTranslatorPage() {
                   })}
                 </div>
 
-                {searchResults.length > visibleSearchResults.length && (
+                {filteredSearchResults.length > visibleSearchResults.length && (
                   <div className="text-center pt-2">
                     <button
                       type="button"
                       onClick={() => setSearchPage((p) => p + 1)}
                       className="px-4 py-2 rounded-xl bg-bg-card border border-border hover:border-gold/40 text-xs font-semibold text-gold transition-colors cursor-pointer"
                     >
-                      Show More Results ({searchResults.length - visibleSearchResults.length} remaining)
+                      Show More Results ({filteredSearchResults.length - visibleSearchResults.length} remaining)
                     </button>
                   </div>
                 )}
@@ -892,6 +955,20 @@ export default function KenyanTranslatorPage() {
                     Browse {browseMeta.languageName} by Category
                   </h3>
                   <ExpandablePillRow>
+                    {browseAudioEntries.length > 0 && (
+                      <button
+                        key="__audio__"
+                        onClick={() => { setActiveCategory(activeCategory === "__audio__" ? null : "__audio__"); setCategoryPage(1); }}
+                        className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center gap-1.5 text-xs font-medium border transition-all cursor-pointer ${
+                          activeCategory === "__audio__"
+                            ? "border-sky-400/60 bg-sky-500/20 text-sky-300 font-semibold"
+                            : "border-sky-500/35 bg-sky-500/10 text-sky-300 hover:bg-sky-500/20"
+                        }`}
+                      >
+                        <DynamicIcon emoji="🔊" className="w-3.5 h-3.5" />
+                        With Audio ({browseAudioEntries.length})
+                      </button>
+                    )}
                     {ALL_CATEGORY_IDS.map((cat) => {
                       const catMeta = browseMeta.categories.find((c) => c.id === cat.id);
                       const hasEntries = Boolean(catMeta && catMeta.count > 0);
@@ -923,7 +1000,7 @@ export default function KenyanTranslatorPage() {
                       <div>
                         <h4 className="text-sm font-semibold text-text-primary flex items-center gap-2">
                           <span><DynamicIcon emoji={ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.icon} className="w-[1em] h-[1em]" /></span>
-                          {ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name} — {browseMeta.languageName}
+                          {activeCategory === "__audio__" ? "Entries with Native Audio" : ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name} — {browseMeta.languageName}
                           <span className="text-[0.65rem] text-text-muted font-normal">
                             ({categoryEntries.length.toLocaleString()} entries)
                           </span>

@@ -107,6 +107,7 @@ jobs:
         working-directory: mobile/android
         env:
           NODE_ENV: production
+          NODE_OPTIONS: --max-old-space-size=4096
         run: ./gradlew assembleRelease --no-daemon
 
       - name: Copy APK to repository root
@@ -134,7 +135,7 @@ jobs:
           git add mobile/src/shared
           if ! git diff --staged --quiet; then
             git commit -m "chore(mobile): sync web course data [skip ci]"
-            git pull --rebase origin ${GITHUB_REF_NAME}
+            git pull --rebase --autostash origin ${GITHUB_REF_NAME}
             git push origin HEAD:${GITHUB_REF_NAME}
           else
             echo "No changes to mobile/src/shared"

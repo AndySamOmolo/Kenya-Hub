@@ -1858,12 +1858,6 @@
           "context": "Rev. T. Wakefield (1882, p. 745) & Lieut. Ludwig von Höhnel (1894) • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "Name",
-          "translation": "magáh",
-          "pronunciation": "ma-gah",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
-        },
-        {
           "english": "I (1sg pronoun)",
           "translation": "ani",
           "pronunciation": "a-ni",
@@ -1911,5 +1905,5 @@
   "source": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
   "isoCode": "rel",
   "glottocode": "rend1243",
-  "totalEntries": 297
+  "totalEntries": 296
 }

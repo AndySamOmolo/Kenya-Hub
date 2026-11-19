@@ -1,4 +1,14 @@
 import {
+  EtimsMpesaReconcilerTool,
+  OdpcHrRetentionVaultTool,
+  EudrCoopGeojsonPackagerTool,
+  IcmsLandedCostArbitrageTool,
+  ShaClaimScrubberTool,
+  PpraEgpTenderSerializerTool,
+  KjseaPathwayEngineTool,
+  ArdhisasaCadTitleAuditorTool,
+} from "../../src/tools/KenyaUtilityTools2026";
+import {
   ShaBenefitEstimatorTool,
   SmallClaimsTool,
   NtsaTransferTool,
@@ -475,6 +485,23 @@ export default function ToolDetailScreen() {
       case "domestic-wage-calculator":
         return <DomesticWageTool />;
       case "airtime-drain-guide":
+        return <AirtimeDrainTool />;
+      case "etims-mpesa-reconciler":
+        return <EtimsMpesaReconcilerTool />;
+      case "odpc-hr-retention-vault":
+        return <OdpcHrRetentionVaultTool />;
+      case "eudr-coop-geojson-packager":
+        return <EudrCoopGeojsonPackagerTool />;
+      case "icms-landed-cost-arbitrage":
+        return <IcmsLandedCostArbitrageTool />;
+      case "sha-claim-scrubber":
+        return <ShaClaimScrubberTool />;
+      case "ppra-egp-tender-serializer":
+        return <PpraEgpTenderSerializerTool />;
+      case "kjsea-pathway-engine":
+        return <KjseaPathwayEngineTool />;
+      case "ardhisasa-cad-title-auditor":
+        return <ArdhisasaCadTitleAuditorTool />;
       default:
         return <AirtimeDrainTool />;
     }

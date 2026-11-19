@@ -65,6 +65,7 @@ export function KenyanTranslatorTool({
   const [categoryPage, setCategoryPage] = useState(1);
   const [categoryFilter, setCategoryFilter] = useState("");
   const [searchPage, setSearchPage] = useState(1);
+  const [audioOnly, setAudioOnly] = useState(false);
 
   useEffect(() => {
     setCategoryPage(1);
@@ -504,14 +505,56 @@ export function KenyanTranslatorTool({
     return out;
   }, [favorites, loadedDicts]);
 
+  const dedupedSearchResults = useMemo(() => {
+    const seen = new Set<string>();
+    return searchResults.filter((r) => {
+      const k = `${r.languageId}|${r.entry.english.trim().toLowerCase()}|${r.entry.translation.trim().toLowerCase()}`;
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
+  }, [searchResults]);
+
+  const audioSearchCount = useMemo(
+    () => dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry)).length,
+    [dedupedSearchResults]
+  );
+
+  const filteredSearchResults = useMemo(
+    () => (audioOnly ? dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry)) : dedupedSearchResults),
+    [dedupedSearchResults, audioOnly]
+  );
+
   const visibleSearchResults = useMemo(
-    () => searchResults.slice(0, searchPage * SEARCH_PAGE_SIZE),
-    [searchResults, searchPage]
+    () => filteredSearchResults.slice(0, searchPage * SEARCH_PAGE_SIZE),
+    [filteredSearchResults, searchPage]
   );
 
   const totalEntriesCount = TOTAL_DICTIONARY_ENTRIES;
 
+  const browseAudioEntries = useMemo(() => {
+    if (!browseDict) return [];
+    const seen = new Set<string>();
+    const list: DictEntry[] = [];
+    for (const c of browseDict.categories) {
+      for (const e of c.entries) {
+        if (!hasVerifiedAudio(e)) continue;
+        const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
+        if (seen.has(k)) continue;
+        seen.add(k);
+        list.push(e);
+      }
+    }
+    return list;
+  }, [browseDict]);
+
   useEffect(() => {
+    if (activeCategory === "__audio__") {
+      if (browseDict && browseAudioEntries.length === 0 && browseDict.categories.length > 0) {
+        setActiveCategory(browseDict.categories[0].id);
+      }
+      return;
+    }
     if (browseDict && browseDict.categories.length > 0) {
       const exists = browseDict.categories.some(
         (c) => c.id === activeCategory && c.entries.length > 0
@@ -520,24 +563,36 @@ export function KenyanTranslatorTool({
         setActiveCategory(browseDict.categories[0].id);
       }
     }
-  }, [browseDict, activeCategory]);
+  }, [browseDict, activeCategory, browseAudioEntries.length]);
 
   const categoryEntries = useMemo(() => {
     if (!browseDict) return [];
-    const cat =
-      browseDict.categories.find((c) => c.id === activeCategory) ||
-      browseDict.categories[0];
-    if (!cat) return [];
+    let baseEntries: DictEntry[];
+    if (activeCategory === "__audio__") {
+      baseEntries = browseAudioEntries;
+    } else {
+      const cat =
+        browseDict.categories.find((c) => c.id === activeCategory) ||
+        browseDict.categories[0];
+      if (!cat) return [];
+      const seen = new Set<string>();
+      baseEntries = cat.entries.filter((e) => {
+        const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
+        if (seen.has(k)) return false;
+        seen.add(k);
+        return true;
+      });
+    }
     const stripDia = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     const q = stripDia(categoryFilter.trim());
-    if (!q) return cat.entries;
-    return cat.entries.filter(
+    if (!q) return baseEntries;
+    return baseEntries.filter(
       (e) =>
         stripDia(e.english).includes(q) ||
         stripDia(e.translation).includes(q) ||
         (e.context && stripDia(e.context).includes(q))
     );
-  }, [browseDict, activeCategory, categoryFilter]);
+  }, [browseDict, activeCategory, browseAudioEntries, categoryFilter]);
 
   const visibleCategoryEntries = useMemo(
     () => categoryEntries.slice(0, categoryPage * CATEGORY_PAGE_SIZE),
@@ -997,13 +1052,36 @@ export function KenyanTranslatorTool({
           {/* Search Results List (Paginated) */}
           {searchQuery.trim().length > 0 && (
             <View style={styles.resultsWrap}>
-              <Text style={styles.resultsCount}>
-                {isSearchingAll && searchResults.length === 0
-                  ? `Searching across ${ALL_DICT_METAS.length} Kenyan languages...`
-                  : `Showing ${visibleSearchResults.length} of ${searchResults.length} translation${
-                      searchResults.length !== 1 ? "s" : ""
-                    }${isSearchingAll ? " (scanning remaining dictionaries...)" : ""}`}
-              </Text>
+              <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
+                <Text style={styles.resultsCount}>
+                  {isSearchingAll && filteredSearchResults.length === 0
+                    ? `Searching across ${ALL_DICT_METAS.length} Kenyan languages...`
+                    : `Showing ${visibleSearchResults.length} of ${filteredSearchResults.length} translation${
+                        filteredSearchResults.length !== 1 ? "s" : ""
+                      }${isSearchingAll ? " (scanning remaining dictionaries...)" : ""}`}
+                </Text>
+                {audioSearchCount > 0 && (
+                  <Pressable
+                    onPress={() => { triggerHaptic(6); setAudioOnly((v) => !v); setSearchPage(1); }}
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: 5,
+                      paddingHorizontal: 10,
+                      paddingVertical: 5,
+                      borderRadius: 999,
+                      borderWidth: 1,
+                      borderColor: audioOnly ? "#38BDF8" : theme.border,
+                      backgroundColor: audioOnly ? "rgba(56,189,248,0.18)" : theme.bgCard,
+                    }}
+                  >
+                    <Ionicons name="volume-high-outline" size={13} color={audioOnly ? "#38BDF8" : theme.textSecondary} />
+                    <Text style={{ fontSize: 11.5, fontWeight: "700", color: audioOnly ? "#38BDF8" : theme.textSecondary }}>
+                      With Audio ({audioSearchCount})
+                    </Text>
+                  </Pressable>
+                )}
+              </View>
 
               {visibleSearchResults.map((item, idx) => {
                 const isFav = favoritesSet.has(
@@ -1156,14 +1234,14 @@ export function KenyanTranslatorTool({
                 );
               })}
 
-              {searchResults.length > visibleSearchResults.length && (
+              {filteredSearchResults.length > visibleSearchResults.length && (
                 <Pressable
                   onPress={() => setSearchPage((p) => p + 1)}
                   style={pressableStyle(styles.loadMoreBtn)}
                 >
                   <Text style={styles.loadMoreBtnText}>
                     Load More Results (
-                    {searchResults.length - visibleSearchResults.length}{" "}
+                    {filteredSearchResults.length - visibleSearchResults.length}{" "}
                     remaining)
                   </Text>
                 </Pressable>
@@ -1447,6 +1525,31 @@ export function KenyanTranslatorTool({
           </ExpandablePillRow>
 
           <ExpandablePillRow contentContainerStyle={styles.horizontalPills}>
+            {browseAudioEntries.length > 0 && (
+              <Pressable
+                key="__audio__"
+                onPress={() => {
+                  triggerHaptic(6);
+                  setActiveCategory("__audio__");
+                  setCategoryPage(1);
+                  onScrollToTop?.();
+                }}
+                style={pressableStyle([
+                  styles.catPill,
+                  {
+                    borderColor: activeCategory === "__audio__" ? "#38BDF8" : "rgba(56,189,248,0.45)",
+                    backgroundColor: activeCategory === "__audio__" ? "rgba(56,189,248,0.22)" : "rgba(56,189,248,0.10)",
+                  },
+                ])}
+              >
+                <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+                  <Ionicons name="volume-high-outline" size={13} color="#38BDF8" />
+                  <Text style={[styles.catPillText, { color: "#38BDF8", fontWeight: "700" }]}>
+                    With Audio ({browseAudioEntries.length})
+                  </Text>
+                </View>
+              </Pressable>
+            )}
             {(browseDict?.categories || browseMeta.categories).map((c: any) => {
               const active = c.id === activeCategory;
               return (

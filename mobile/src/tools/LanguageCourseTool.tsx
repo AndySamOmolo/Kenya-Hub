@@ -2280,7 +2280,7 @@ export default function LanguageCourseTool({
                   >
                     <Feather name="book-open" size={11} color="#10B981" />
                     <Text style={{ fontSize: 11, fontWeight: '700', color: '#10B981' }}>
-                      {units.length} units · {skillsCount} modules · {wordsCount} words
+                      {course.unitCount} units · {skillsCount} modules · {wordsCount} words
                     </Text>
                   </View>
 

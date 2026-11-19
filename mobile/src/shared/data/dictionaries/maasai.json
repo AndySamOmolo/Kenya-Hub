@@ -682,16 +682,6 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Number",
-          "translation": "engeena",
-          "context": "Hildegarde Hinde, The Masai Language (1901)"
-        },
-        {
-          "english": "One hundred and twenty (Two sixties)",
-          "translation": "īp ari",
-          "context": "Hildegarde Hinde, The Masai Language (1901)"
-        },
-        {
           "english": "We have not seen anyone",
           "translation": "etiyo kidologonanyi",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
@@ -3726,11 +3716,6 @@
         {
           "english": "Bring more chairs",
           "translation": "iaw orrigaiishi",
-          "context": "Hildegarde Hinde, The Masai Language (1901)"
-        },
-        {
-          "english": "eyebrows / eyelashes",
-          "translation": "elbabit ngongo (literally, the hairs of the eyes)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
@@ -9379,11 +9364,6 @@
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "cook",
-          "translation": "tiarra (sing. inf. neyerr / pl. inf. negiyerr)",
-          "context": "Hildegarde Hinde, The Masai Language (1901)"
-        },
-        {
           "english": "Honey",
           "translation": "naischu",
           "pronunciation": "nigh-shoo",
@@ -10309,12 +10289,6 @@
           "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
-          "english": "Devil",
-          "translation": "Ol oiyirwa, manañani",
-          "pronunciation": "ol oiyirwa",
-          "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
-        },
-        {
           "english": "Excrement",
           "translation": "Ngik (of men), Mōdī (of oxen)",
           "pronunciation": "ngik",
@@ -11198,12 +11172,6 @@
           "english": "To come",
           "translation": "A-lotu",
           "pronunciation": "a lo-tu",
-          "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
-        },
-        {
-          "english": "To know",
-          "translation": "A-iyolo-u",
-          "pronunciation": "a-iyolo-u",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -15673,6 +15641,120 @@
           "translation": "tengai",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 249"
+        },
+        {
+          "english": "Sunday",
+          "translation": "Jumapílí",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Monday",
+          "translation": "Jumatátu",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Tuesday",
+          "translation": "Jumane",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Wednesday",
+          "translation": "Jumatánɔ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Thursday",
+          "translation": "Alaámisi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Friday",
+          "translation": "Jumáa",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Saturday",
+          "translation": "Jumamósi",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "January",
+          "translation": "Oladalʉ́",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "February",
+          "translation": "Arát",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "March",
+          "translation": "Ɔɛnɨ́ɔɨŋɔk",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "April",
+          "translation": "Olodoyíóríê inkókúâ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "May",
+          "translation": "Oloilépūnyīē inkókúâ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "June",
+          "translation": "Kújúɔrɔk",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "July",
+          "translation": "Mórusásin",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "August",
+          "translation": "Ɔlɔ́ɨ́bɔ́rárɛ",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "September",
+          "translation": "Kúshîn",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "October",
+          "translation": "Olgísan",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "November",
+          "translation": "Pʉshʉ́ka",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "December",
+          "translation": "Ntʉ́ŋʉ́s",
+          "pronunciation": "",
+          "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
         }
       ]
     },
@@ -22378,16 +22460,6 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "He is the smallest of all the warriors (lit. he the small from the warriors all)",
-          "translation": "Ninye ol-oti too-'l-muran pokin",
-          "context": "Maa / Maasai Grammar, Proverbs & Folklore (Hollis 1905) • Cross-verified with Thiomi & ANV Kimasaai (CC-BY-4.0)"
-        },
-        {
-          "english": "he / she / it is",
-          "translation": "eerda eera or ata nenye",
-          "context": "Hildegarde Hinde, The Masai Language (1901)"
-        },
-        {
           "english": "orlōrroi",
           "translation": "= goat (male)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
@@ -27872,12 +27944,6 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Against a man and his father",
-          "translation": "Mining jangayenda",
-          "pronunciation": "mi-ning ja-nga-yen-da",
-          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
-        },
-        {
           "english": "Conceal (v. Imp.)",
           "translation": "essudōīi",
           "pronunciation": "essu-doii",
@@ -28154,11 +28220,6 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Last",
-          "translation": "korom",
-          "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
-        },
-        {
           "english": "Cut",
           "translation": "tudungu nadung (sing.) / negidung (pl., inf.)",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -28227,11 +28288,6 @@
           "english": "Stand",
           "translation": "itashu naitashi (sing.) / negendaishi (pl., inf.)",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
-        },
-        {
-          "english": "his / hers / its",
-          "translation": "enenye, eno",
-          "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
           "english": "Garment / Cloth (pl. engelani)",
@@ -28613,5 +28669,5 @@
   "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "mas",
   "glottocode": "masa1300",
-  "totalEntries": 4797
+  "totalEntries": 4805
 }

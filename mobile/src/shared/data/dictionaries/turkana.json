@@ -11412,12 +11412,6 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Dawn / Early morning",
-          "translation": "ataparach",
-          "pronunciation": "a-ta-pa-rach",
-          "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
-        },
-        {
           "english": "Late / Evening",
           "translation": "ebon",
           "pronunciation": "e-bon",
@@ -18360,5 +18354,5 @@
   "source": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
   "isoCode": "tuv",
   "glottocode": "turk1308",
-  "totalEntries": 3232
+  "totalEntries": 3231
 }

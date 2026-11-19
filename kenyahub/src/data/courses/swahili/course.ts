@@ -7368,6 +7368,514 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           }
         ]
       }
+,
+      {
+        "id": "swahili-native-audio-r2-everyday",
+        "title": "Everyday Kiswahili Listening (Verified Native Audio)",
+        "icon": "Volume2",
+        "description": "Practice listening comprehension with newly ingested verified native Kiswahili recordings.",
+        "tips": "Pay attention to penultimate syllable stress (second-to-last syllable) in Standard Kiswahili words and clear vowel articulation (a, e, i, o, u).",
+        "culturalNote": "Verified native Kiswahili recordings streamed via KenyaHub Cloudflare R2 from commercially permissive East African speech corpora.",
+        "words": [
+          {
+            "target": "saba",
+            "source": "Seven",
+            "pronunciation": "sa-ba",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/saba.opus"
+          },
+          {
+            "target": "elfu",
+            "source": "Thousand",
+            "pronunciation": "el-fu",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/elfu.opus"
+          },
+          {
+            "target": "mbíli",
+            "source": "Two",
+            "pronunciation": "mbíli",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/mbili.opus"
+          },
+          {
+            "target": "nchi",
+            "source": "= nti, land, country, earth",
+            "pronunciation": "ntʃi",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/nchi.opus"
+          },
+          {
+            "target": "Hao",
+            "source": "or Hawo, these or those before mentioned, referring to animate beings",
+            "pronunciation": "hao",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/hao.opus"
+          },
+          {
+            "target": "Hayo",
+            "source": "these or those before mentioned, referring to plural substantives in ma",
+            "pronunciation": "hajo",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/hayo.opus"
+          },
+          {
+            "target": "mbele",
+            "source": "First",
+            "pronunciation": "ᵐɓele",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/mbele.opus"
+          },
+          {
+            "target": "mfálme; sultani",
+            "source": "King",
+            "pronunciation": "mfalme",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/mfalme.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "saba",
+            "source": "Seven",
+            "audio": "https://audio.kenyahub.me/audio/swahili/saba.opus"
+          },
+          {
+            "target": "elfu",
+            "source": "Thousand",
+            "audio": "https://audio.kenyahub.me/audio/swahili/elfu.opus"
+          },
+          {
+            "target": "mbíli",
+            "source": "Two",
+            "audio": "https://audio.kenyahub.me/audio/swahili/mbili.opus"
+          },
+          {
+            "target": "nchi",
+            "source": "= nti, land, country, earth",
+            "audio": "https://audio.kenyahub.me/audio/swahili/nchi.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native recording and select its English meaning:",
+            "correctAnswer": "Seven",
+            "options": [
+              "Seven",
+              "Thousand",
+              "Two",
+              "= nti, land, country, earth"
+            ],
+            "audioText": "saba",
+            "sourceWord": {
+              "target": "saba",
+              "source": "Seven",
+              "pronunciation": "sa-ba",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/saba.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native recording and select its English meaning:",
+            "correctAnswer": "Thousand",
+            "options": [
+              "Thousand",
+              "Seven",
+              "Two",
+              "= nti, land, country, earth"
+            ],
+            "audioText": "elfu",
+            "sourceWord": {
+              "target": "elfu",
+              "source": "Thousand",
+              "pronunciation": "el-fu",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/elfu.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which expression means \"Two\"?",
+            "correctAnswer": "mbíli",
+            "options": [
+              "mbíli",
+              "saba",
+              "elfu",
+              "nchi"
+            ],
+            "sourceWord": {
+              "target": "mbíli",
+              "source": "Two",
+              "pronunciation": "mbíli",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/mbili.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "saba",
+                "right": "Seven"
+              },
+              {
+                "left": "elfu",
+                "right": "Thousand"
+              },
+              {
+                "left": "mbíli",
+                "right": "Two"
+              },
+              {
+                "left": "nchi",
+                "right": "= nti, land, country, earth"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "swahili-native-audio-r2-conversation",
+        "title": "Spoken Kiswahili Phrases & Expressions",
+        "icon": "Volume2",
+        "description": "Build natural listening fluency with verified native Kiswahili conversational phrases.",
+        "tips": "Notice how subject prefixes (ni-, u-, a-, tu-, wa-) and tense markers (-na-, -li-, -ta-) blend smoothly in natural spoken Kiswahili.",
+        "culturalNote": "Covers everyday Kenyan Kiswahili phrasing recorded by native speakers and verified in the KenyaHub audio corpus.",
+        "words": [
+          {
+            "target": "watu",
+            "source": "People",
+            "pronunciation": "wa-tu",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/watu.opus"
+          },
+          {
+            "target": "mfalme (pl. wafalme) / jumbe / sultani",
+            "source": "King / Chief",
+            "pronunciation": "mfalme",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/mfalme.opus"
+          },
+          {
+            "target": "wewe",
+            "source": "You (2nd person singular)",
+            "pronunciation": "we-we",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/wewe.opus"
+          },
+          {
+            "target": "wátu",
+            "source": "Man (plural)",
+            "pronunciation": "",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/watu.opus"
+          },
+          {
+            "target": "wafalme",
+            "source": "Chief (plural)",
+            "pronunciation": "wafalme",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/wafalme.opus"
+          },
+          {
+            "target": "jemadári",
+            "source": "a commander, commanding-officer, a general",
+            "pronunciation": "",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/jemadari.opus"
+          },
+          {
+            "target": "Mwanawe",
+            "source": "his or her child",
+            "pronunciation": "mwanawe",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/mwanawe.opus"
+          },
+          {
+            "target": "Jemadari",
+            "source": "commanding officer (of soldiers), general",
+            "pronunciation": "ʄemaɗaɾi",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/jemadari.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "watu",
+            "source": "People",
+            "audio": "https://audio.kenyahub.me/audio/swahili/watu.opus"
+          },
+          {
+            "target": "mfalme (pl. wafalme) / jumbe / sultani",
+            "source": "King / Chief",
+            "audio": "https://audio.kenyahub.me/audio/swahili/mfalme.opus"
+          },
+          {
+            "target": "wewe",
+            "source": "You (2nd person singular)",
+            "audio": "https://audio.kenyahub.me/audio/swahili/wewe.opus"
+          },
+          {
+            "target": "wátu",
+            "source": "Man (plural)",
+            "audio": "https://audio.kenyahub.me/audio/swahili/watu.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native recording and select its English meaning:",
+            "correctAnswer": "People",
+            "options": [
+              "People",
+              "King / Chief",
+              "You (2nd person singular)",
+              "Man (plural)"
+            ],
+            "audioText": "watu",
+            "sourceWord": {
+              "target": "watu",
+              "source": "People",
+              "pronunciation": "wa-tu",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/watu.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native recording and select its English meaning:",
+            "correctAnswer": "King / Chief",
+            "options": [
+              "King / Chief",
+              "People",
+              "You (2nd person singular)",
+              "Man (plural)"
+            ],
+            "audioText": "mfalme (pl. wafalme) / jumbe / sultani",
+            "sourceWord": {
+              "target": "mfalme (pl. wafalme) / jumbe / sultani",
+              "source": "King / Chief",
+              "pronunciation": "mfalme",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/mfalme.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which expression means \"You (2nd person singular)\"?",
+            "correctAnswer": "wewe",
+            "options": [
+              "wewe",
+              "watu",
+              "mfalme (pl. wafalme) / jumbe / sultani",
+              "wátu"
+            ],
+            "sourceWord": {
+              "target": "wewe",
+              "source": "You (2nd person singular)",
+              "pronunciation": "we-we",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/wewe.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "watu",
+                "right": "People"
+              },
+              {
+                "left": "mfalme (pl. wafalme) / jumbe / sultani",
+                "right": "King / Chief"
+              },
+              {
+                "left": "wewe",
+                "right": "You (2nd person singular)"
+              },
+              {
+                "left": "wátu",
+                "right": "Man (plural)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "swahili-native-audio-r2-fluency",
+        "title": "Extended Kiswahili Audio Vocabulary",
+        "icon": "Volume2",
+        "description": "Expand your listening recognition with additional verified native Kiswahili vocabulary and expressions.",
+        "tips": "Replay each clip once without looking at the translation, then confirm the spelling and noun-class agreement.",
+        "culturalNote": "Part of the 400+ verified native Kiswahili recordings now indexed in the KenyaHub Dictionary.",
+        "words": [
+          {
+            "target": "sababu",
+            "source": "Reason",
+            "pronunciation": "saɓaɓu",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/sababu.opus"
+          },
+          {
+            "target": "áskari",
+            "source": "Warrior",
+            "pronunciation": "",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/askari.opus"
+          },
+          {
+            "target": "móyo",
+            "source": "Heart",
+            "pronunciation": "moyo",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/moyo.opus"
+          },
+          {
+            "target": "Ndevu",
+            "source": "Beard",
+            "pronunciation": "nde-vu",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/ndevu.opus"
+          },
+          {
+            "target": "Nyuma",
+            "source": "Behind, afterwards, later, back, backwards",
+            "pronunciation": "nyu-ma",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/nyuma.opus"
+          },
+          {
+            "target": "uso",
+            "source": "Face",
+            "pronunciation": "uso",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/uso.opus"
+          },
+          {
+            "target": "Katika",
+            "source": "implies nearness at least at the beginning of the action",
+            "pronunciation": "katika",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/katika.opus"
+          },
+          {
+            "target": "Pake",
+            "source": "his, hers, or its, after mahali, or the case in -ni signifying nearness",
+            "pronunciation": "pake",
+            "partOfSpeech": "word",
+            "audioFile": "https://audio.kenyahub.me/audio/swahili/pake.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "sababu",
+            "source": "Reason",
+            "audio": "https://audio.kenyahub.me/audio/swahili/sababu.opus"
+          },
+          {
+            "target": "áskari",
+            "source": "Warrior",
+            "audio": "https://audio.kenyahub.me/audio/swahili/askari.opus"
+          },
+          {
+            "target": "móyo",
+            "source": "Heart",
+            "audio": "https://audio.kenyahub.me/audio/swahili/moyo.opus"
+          },
+          {
+            "target": "Ndevu",
+            "source": "Beard",
+            "audio": "https://audio.kenyahub.me/audio/swahili/ndevu.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native recording and select its English meaning:",
+            "correctAnswer": "Reason",
+            "options": [
+              "Reason",
+              "Warrior",
+              "Heart",
+              "Beard"
+            ],
+            "audioText": "sababu",
+            "sourceWord": {
+              "target": "sababu",
+              "source": "Reason",
+              "pronunciation": "saɓaɓu",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/sababu.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native recording and select its English meaning:",
+            "correctAnswer": "Warrior",
+            "options": [
+              "Warrior",
+              "Reason",
+              "Heart",
+              "Beard"
+            ],
+            "audioText": "áskari",
+            "sourceWord": {
+              "target": "áskari",
+              "source": "Warrior",
+              "pronunciation": "",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/askari.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which expression means \"Heart\"?",
+            "correctAnswer": "móyo",
+            "options": [
+              "móyo",
+              "sababu",
+              "áskari",
+              "Ndevu"
+            ],
+            "sourceWord": {
+              "target": "móyo",
+              "source": "Heart",
+              "pronunciation": "moyo",
+              "partOfSpeech": "word",
+              "audioFile": "https://audio.kenyahub.me/audio/swahili/moyo.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "sababu",
+                "right": "Reason"
+              },
+              {
+                "left": "áskari",
+                "right": "Warrior"
+              },
+              {
+                "left": "móyo",
+                "right": "Heart"
+              },
+              {
+                "left": "Ndevu",
+                "right": "Beard"
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 ];
