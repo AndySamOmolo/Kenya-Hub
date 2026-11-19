@@ -1,4 +1,4 @@
-import type { ProverbItem, CulturalWisdomItem } from "./types";
+import type { Proverb, ProverbItem, CulturalWisdomItem } from "./types";
 import { MAASAI_PROVERBS } from "./maasai";
 import { KALENJIN_PROVERBS } from "./kalenjin";
 import { POKOT_PROVERBS } from "./pokot";
@@ -49,6 +49,18 @@ export { SAMBURU_PROVERBS } from "./samburu";
 export { RENDILLE_PROVERBS } from "./rendille";
 export { DAASANACH_PROVERBS } from "./daasanach";
 
+const normalizeProverbs = (proverbs: Proverb[]): ProverbItem[] =>
+  proverbs.map((proverb) => ({
+    id: proverb.id,
+    languageId: proverb.languageCode,
+    languageName: proverb.languageName,
+    indigenous: proverb.indigenous,
+    literalTranslation: proverb.literalTranslation,
+    meaning: proverb.meaning,
+    theme: proverb.category as ProverbItem["theme"],
+    sourceCitation: proverb.culturalNote,
+  }));
+
 // ============================================================
 // Aggregated Kenyan Proverbs & Cultural Wisdom Corpus
 // ============================================================
@@ -62,11 +74,11 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
   ...TAITA_PROVERBS,
   ...TAVETA_PROVERBS,
   ...SWAHILI_PROVERBS,
-  ...TURKANA_PROVERBS,
-  ...ILCHAMUS_PROVERBS,
+  ...normalizeProverbs(TURKANA_PROVERBS),
+  ...normalizeProverbs(ILCHAMUS_PROVERBS),
   ...LUHYA_PROVERBS,
   ...KISII_PROVERBS,
-  ...TESO_PROVERBS,
+  ...normalizeProverbs(TESO_PROVERBS),
   ...MERU_PROVERBS,
   ...SOMALI_PROVERBS,
   ...BORANA_PROVERBS,
@@ -74,7 +86,7 @@ export const KENYAN_PROVERBS: ProverbItem[] = [
   ...LUO_PROVERBS,
   ...POKOMO_PROVERBS,
   ...EMBU_PROVERBS,
-  ...SAMBURU_PROVERBS,
+  ...normalizeProverbs(SAMBURU_PROVERBS),
   ...RENDILLE_PROVERBS,
   ...DAASANACH_PROVERBS,
 ];
