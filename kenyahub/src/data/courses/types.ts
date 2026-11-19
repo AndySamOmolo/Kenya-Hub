@@ -65,6 +65,7 @@ export interface WordPair {
   pronunciation?: string; // Phonetic guide
   partOfSpeech?: string;  // noun, verb, adj, etc.
   audio?: string;         // Optional audio file path
+  audioFile?: string | null; // Optional verified HTTPS recording URL
   hint?: string;          // Contextual hint
   example?: string;       // Teaching example; not assumed to be a translation pair
   response?: string;      // Expected response for dialogue cards

@@ -48,25 +48,25 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Mirembe!",
             "source": "Peace!",
-            "pronunciation": "mi-rembe / mu-lembe",
+            "pronunciation": "mi-rembe",
             "hint": "Universal Luhya greeting of peace (Hobley 1902)"
           },
           {
             "target": "Mulembe!",
             "source": "Greetings!",
-            "pronunciation": "mi-rembe / mu-lembe",
+            "pronunciation": "mu-lembe",
             "hint": "Universal Luhya greeting of peace (Hobley 1902)"
           },
           {
             "target": "esie",
             "source": "I",
-            "pronunciation": "e-sie / ise",
+            "pronunciation": "e-sie",
             "hint": "Wanga/Kisa esie, Nyole/Bukusu ise, Logoli inze (Johnston 1919)"
           },
           {
             "target": "ise",
             "source": "me",
-            "pronunciation": "e-sie / ise",
+            "pronunciation": "i-se",
             "hint": "Wanga/Kisa esie, Nyole/Bukusu ise, Logoli inze (Johnston 1919)"
           },
           {
@@ -78,13 +78,13 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "efwe",
             "source": "We",
-            "pronunciation": "efwe / ifwe",
+            "pronunciation": "efwe",
             "hint": "1st person plural pronoun"
           },
           {
             "target": "ifwe",
             "source": "us",
-            "pronunciation": "efwe / ifwe",
+            "pronunciation": "ifwe",
             "hint": "1st person plural pronoun"
           },
           {
@@ -120,13 +120,13 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "mama",
             "source": "Mother",
-            "pronunciation": "ma-ma / pa-pa",
+            "pronunciation": "ma-ma",
             "hint": "Core kinship terms (Hobley 1902)"
           },
           {
             "target": "papa (sese)",
             "source": "Father",
-            "pronunciation": "ma-ma / pa-pa",
+            "pronunciation": "pa-pa / se-se",
             "hint": "Core kinship terms (Hobley 1902)"
           }
         ],
@@ -298,19 +298,31 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "tsisaasaba",
             "source": "Six (6)",
-            "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
+            "pronunciation": "tsi-saa-sa-ba",
             "hint": "Johnston (1919, Vol. I, p. 81) Luwanga/Lunyara numerals 6–10"
           },
           {
             "target": "mufungate",
             "source": "Seven (7)",
-            "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
+            "pronunciation": "mu-funga-te",
             "hint": "Johnston (1919, Vol. I, p. 81) Luwanga/Lunyara numerals 6–10"
           },
           {
             "target": "munane",
             "source": "Eight (8)",
-            "pronunciation": "tsi-saa-sa-ba mu-funga-te mu-na-ne shenda ikhu-mi",
+            "pronunciation": "mu-na-ne",
+            "hint": "Johnston (1919, Vol. I, p. 81) Luwanga/Lunyara numerals 6–10"
+          },
+          {
+            "target": "shenda",
+            "source": "Nine (9)",
+            "pronunciation": "shenda",
+            "hint": "Johnston (1919, Vol. I, p. 81) Luwanga/Lunyara numerals 6–10"
+          },
+          {
+            "target": "ikhumi",
+            "source": "Ten (10)",
+            "pronunciation": "ikhu-mi",
             "hint": "Johnston (1919, Vol. I, p. 81) Luwanga/Lunyara numerals 6–10"
           },
           {
@@ -322,13 +334,13 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "-titi",
             "source": "Small",
-            "pronunciation": "ti-ti / tu-tu",
+            "pronunciation": "ti-ti",
             "hint": "Zone J30 Swadesh #32"
           },
           {
             "target": "-tutu",
-            "source": "few",
-            "pronunciation": "ti-ti / tu-tu",
+            "source": "Few",
+            "pronunciation": "tu-tu",
             "hint": "Zone J30 Swadesh #32"
           },
           {
@@ -520,68 +532,68 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Were ankhonyere",
             "source": "May God help me",
-            "pronunciation": "we-re ankhonye-re / na-sa-yi akhu-linde",
+            "pronunciation": "we-re ankhonye-re",
             "hint": "Rev. N. Stam (1929, p. 160) traditional blessing"
           },
           {
             "target": "Nasayi akhulinde",
             "source": "May God guard you",
-            "pronunciation": "we-re ankhonye-re / na-sa-yi akhu-linde",
+            "pronunciation": "na-sa-yi akhu-linde",
             "hint": "Rev. N. Stam (1929, p. 160) traditional blessing"
           },
           {
             "target": "musiro (muziro)",
             "source": "Clan totem (thing abstained from)",
-            "pronunciation": "mu-si-ro / ekhyi-nekha",
+            "pronunciation": "mu-si-ro",
             "hint": "Stam (1929, pp. 162, 176) & Hobley (1903, p. 347)"
           },
           {
             "target": "ekhyinekha",
             "source": "Soul or shadow",
-            "pronunciation": "mu-si-ro / ekhyi-nekha",
+            "pronunciation": "ekhyi-nekha",
             "hint": "Stam (1929, pp. 162, 176) & Hobley (1903, p. 347)"
           },
           {
             "target": "okhunywa",
             "source": "To drink",
-            "pronunciation": "okhunywa / okhu-lii-ra",
+            "pronunciation": "okhunywa",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "okhuliira",
             "source": "To eat",
-            "pronunciation": "okhunywa / okhu-lii-ra",
+            "pronunciation": "okhu-lii-ra",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "okhulola",
             "source": "To see",
-            "pronunciation": "okhu-lo-la / okhu-manya",
+            "pronunciation": "okhu-lo-la",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "okhumanya",
             "source": "To know",
-            "pronunciation": "okhu-lo-la / okhu-manya",
+            "pronunciation": "okhu-manya",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "okhwitsa",
             "source": "To come",
-            "pronunciation": "okhwitsa / okhuchenda",
+            "pronunciation": "okhwitsa",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "okhuchenda",
             "source": "To walk",
-            "pronunciation": "okhwitsa / okhuchenda",
+            "pronunciation": "okhuchenda",
             "hint": "Class 15 infinitives"
           }
         ],
         "sentences": [
           {
             "target": "Were ankhonyere; Nasayi akhulinde.",
-            "source": "May God help me; may the Creator guard you ."
+            "source": "May God help me; may the Creator guard you."
           },
           {
             "target": "Okhunywa amaatsi.",
@@ -713,7 +725,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Luhya (Luyia) (Oluluyia) in C. W. Hobley (1902 Eastern Uganda & 1903), Sir Harry Johnston (1902 & 1919 Sub-group A5) & Rev. N. Stam (1929 The Bahanga) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kakamega, Bungoma, Vihiga.",
         "words": [
           {
-            "target": "Omwami (Nabongo",
+            "target": "Omwami (Nabongo, pl. Abami)",
             "source": "King / Chief",
             "pronunciation": "omwa-mi",
             "hint": "Rev. N. Stam 1929 pp. 148–149 Wanga royal title"
@@ -725,15 +737,15 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Hobley 1902 & Stam 1929"
           },
           {
-            "target": "omwana",
+            "target": "omwana (pl. abana / baana)",
             "source": "Child",
             "pronunciation": "omwa-na",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
-            "target": "baana)",
-            "source": "children",
-            "pronunciation": "omwa-na",
+            "target": "abana / baana",
+            "source": "Children",
+            "pronunciation": "a-ba-na / baa-na",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -1061,7 +1073,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
-            "target": "-bili /tsimbili",
+            "target": "-bili / tsimbili",
             "source": "Two",
             "pronunciation": "bi-li / tsimbi-li",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
@@ -1505,12 +1517,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Ama-duma",
             "source": "Maize",
-            "pronunciation": "ama-duma ka-duma / ama-dumwa / nabu-kubo"
+            "pronunciation": "ama-duma"
           },
           {
-            "target": "Omw-engge",
+            "target": "Omw-engge. Ama-lua",
             "source": "Palm wine, beer",
-            "pronunciation": "omw-engge ama-lua / omw-engge / kama-rwa"
+            "pronunciation": "omw-engge ama-lua"
           },
           {
             "target": "Ifukwa",
@@ -1564,7 +1576,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             ],
             "hint": "Starts with \"Am…\" (16 letters)",
             "acceptedAnswers": [
-              "Amaduma",
+              "Ama-duma",
               "Amaduma"
             ]
           },
@@ -1776,7 +1788,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
-            "target": "ingini",
+            "target": "ing'ining'ini",
             "source": "Star",
             "pronunciation": "ing'i-ning'i-ni",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
@@ -1808,13 +1820,13 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "eshi",
             "source": "Earth",
-            "pronunciation": "eshi / eshia-lo",
+            "pronunciation": "eshi",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "eshialo",
-            "source": "country",
-            "pronunciation": "eshi / eshia-lo",
+            "source": "Country",
+            "pronunciation": "eshia-lo",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -1824,9 +1836,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
-            "target": "loingong'we",
+            "target": "loing'ong'we",
             "source": "Fog / mist",
-            "pronunciation": "loing'ong'ong'we",
+            "pronunciation": "lo-ing'ong'we",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           }
         ],
@@ -2009,7 +2021,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Efi-tere",
             "source": "Toe",
-            "pronunciation": "efi-tere olu-ala / olu-ala / si-tere"
+            "pronunciation": "efi-tere"
           }
         ],
         "sentences": [
@@ -2113,13 +2125,13 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "eshilenje",
             "source": "Leg",
-            "pronunciation": "eshi-lenje / li-rango",
+            "pronunciation": "eshi-lenje",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
             "target": "lirango",
-            "source": "thigh",
-            "pronunciation": "eshi-lenje / li-rango",
+            "source": "Thigh",
+            "pronunciation": "li-rango",
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
@@ -2565,7 +2577,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each Luhya expression with its English meaning:",
-            "correctAnswer": "okhusala: To vomit",
+            "correctAnswer": "okhusala: To cough",
             "pairs": [
               {
                 "left": "okhusala",
@@ -2862,7 +2874,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Imbande, Tsimbande",
-            "source": "nut",
+            "source": "Ground-nut",
             "pronunciation": "imbande tsimbande",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           },
@@ -2886,7 +2898,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Indiwisi",
-            "source": "Colobus",
+            "source": "Colobus monkey",
             "pronunciation": "indi-wi-si",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
           }
@@ -2899,7 +2911,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "options": [
               "Good",
               "Iron",
-              "nut",
+              "Ground-nut",
               "Castrated ox"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Lukabarasi / Luwanga / Lunyara)"
@@ -2923,7 +2935,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "Imbande, Tsimbande",
-                "right": "nut"
+                "right": "Ground-nut"
               }
             ]
           },
@@ -3125,7 +3137,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Murembe! Were ankhonyere.",
-            "source": "Peace! May God help me ."
+            "source": "Peace! May God help me."
           }
         ],
         "authoredExercises": [
@@ -3221,7 +3233,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Muziro wa Kisesi ni Imbongo.",
-            "source": "The clan totem (muziro) of the Kisesi clan of Awa-Wanga is the bushbuck (imbongo) ."
+            "source": "The clan totem (muziro) of the Kisesi clan of Awa-Wanga is the bushbuck (imbongo)."
           }
         ],
         "authoredExercises": [
@@ -3263,7 +3275,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
   {
     "id": "luhya-unit-12",
     "unitNumber": 12,
-    "title": "Set 8 (Lukonde, Lusōkwia, Lunyara, Lukabarasi, Lurimi), 16",
+    "title": "Set 8 Vocabularies & the 16 Lukonde Noun Prefixes (Johnston 1902)",
     "description": "Master the 16 archaic disyllabic prefixes of Lukonde (p. 1001), Set 8 comparative vocabulary across 5 Luhya/Masaba dialects (pp. 980–992), and Chapter XVII Bantu Kavirondo ethnography (pp. 722–755).",
     "icon": "Layers",
     "color": "#2FA463",
@@ -3276,14 +3288,14 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "tips": "West Elgon Lukonde/Masaba preserves full disyllabic prefixes: Umu- (Cl. 1), Baba- (Cl. 2), Gumu- (Cl. 3), Gimi- (Cl. 4), Ili- (Cl. 5), Gama- (Cl. 6), Bibi- (Cl. 8), Lulu- (Cl. 11), Ruru-/Tutu- (Cl. 12), Kaka- (Cl. 13), Bubu- (Cl. 14), Kuku- (Cl. 15).",
         "words": [
           {
-            "target": "Kuku",
-            "source": "Gu",
-            "pronunciation": "kuku-"
+            "target": "Kuku- (Gu-)",
+            "source": "Class 15 prefix (concord ku-, gu-)",
+            "pronunciation": "ku-ku / gu"
           },
           {
-            "target": "Ha",
-            "source": "Wa",
-            "pronunciation": "ha-"
+            "target": "Ha- (Wa-)",
+            "source": "Class 16 locative prefix (concord ha-, wa-)",
+            "pronunciation": "ha / wa"
           },
           {
             "target": "Kamagumi kabili (20)",
@@ -3354,7 +3366,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Lidala liefu (Esialo siefwe) — Ingo yeru — Ingo yefu — Alia efu.",
-            "source": "Our town (Lunyara, Lukabarasi, Lurimi) — Our eating ."
+            "source": "Our town (Lunyara, Lukabarasi, Lurimi) — Our eating."
           }
         ]
       }
@@ -3456,7 +3468,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Okhusenera ekhyirindwa ekhyo mwami khu Matungo.",
-            "source": "To fix the grave of the chief at Matungo ."
+            "source": "To fix the grave of the chief at Matungo."
           }
         ]
       },
@@ -3504,7 +3516,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "target": "abakuku mulire omu",
-            "source": "'Grandfathers, eat here",
+            "source": "Grandfathers, eat here",
             "pronunciation": "abakuku-mulire-omu"
           },
           {
@@ -3514,7 +3526,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "target": "evisoni mulire omu",
-            "source": "Great-great-grandfathers, eat here'",
+            "source": "Great-great-grandfathers, eat here",
             "pronunciation": "evisoni-mulire-omu"
           },
           {
@@ -3591,11 +3603,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Abakuku mulire omu; evinambwa mulire omu; evisoni mulire omu.",
-            "source": "Grandfathers, eat here; great-grandfathers, eat here; great-great-grandfathers, eat here ."
+            "source": "Grandfathers, eat here; great-grandfathers, eat here; great-great-grandfathers, eat here."
           },
           {
             "target": "Were ankhonyere! Nasayi akhulinde.",
-            "source": "God has helped me! May God protect you ."
+            "source": "God has helped me! May God protect you."
           }
         ]
       },
@@ -3608,7 +3620,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Makokha",
-            "source": "Name given to an illegitimate child exposed on a road junction and adopted by",
+            "source": "Name ('rubbish') given to a foundling child adopted at a road junction",
             "pronunciation": "ma-ko-kha",
             "hint": "Stam (1929, p. 171)"
           },
@@ -3661,7 +3673,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Okhutekherana nende okhukhua omukhana: okhusira imbusi.",
-            "source": "To marry ('boil for one another') and to pay the bride-dowry: jumping over the goat ."
+            "source": "To marry ('boil for one another') and to pay the bride-dowry: jumping over the goat."
           }
         ]
       }
@@ -3685,32 +3697,32 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Nj̪-anz-aa → n̪anzaa",
             "source": "I like",
-            "pronunciation": "nj-anz-aa-nanzaa"
+            "pronunciation": "nj-anz-aa / nanzaa"
           },
           {
             "target": "N-man̪-aa → man̪aa vs. N-man̪-i → maɲi",
             "source": "I know vs. I knew",
-            "pronunciation": "n-man-aa-manaa-vs-n-man-i"
+            "pronunciation": "n-man-aa / manaa vs. ma-nyi"
           },
           {
             "target": "ka-n̪un̪i → kaɲuɲi",
             "source": "small bird",
-            "pronunciation": "ka-nuni-kaui"
+            "pronunciation": "ka-nu-ni / ka-nyu-nyi"
           },
           {
             "target": "a-hir-aa → aʃiɾaa",
             "source": "s/he is taking",
-            "pronunciation": "a-hir-aa-aiaa"
+            "pronunciation": "a-hi-raa / a-shi-raa"
           },
           {
             "target": "ko-roh-a → koroha vs. ko-roh-i → koroʃi",
             "source": "to get tired vs. we got tired (h → ʃ / __ i)",
-            "pronunciation": "ko-roh-a-koroha-vs-ko-roh-i"
+            "pronunciation": "ko-ro-ha vs. ko-ro-shi"
           },
           {
             "target": "ke-hia → keʃa vs. eN-hia → embja",
             "source": "new in Class 7 (hj → ʃ) vs. Class 9 (N-h → mb)",
-            "pronunciation": "ke-hia-kea-vs-en-hia"
+            "pronunciation": "ke-hia / ke-sha vs. e-mbja"
           },
           {
             "target": "ko-siɛ-a → koʃja vs. ko-he-a → koʃa",
@@ -3719,29 +3731,29 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Glewwe & Aly (2016, Ch. 9, pp. 176–179, Ex. 22, 26)"
           },
           {
-            "target": "SP-ra- -a (Near/General)",
-            "source": "Mu-gamba, a-ra-zj-a mʊ ɪ-skuru & V-oosi va-ra-ɲor-a ɪ-taʤi",
-            "pronunciation": "sp-ra---a"
+            "target": "Mu-gamba, a-ra-zj-a mʊ ɪ-skuru / V-oosi va-ra-ɲor-a ɪ-taʤi",
+            "source": "Tomorrow s/he will go to school / Everyone will get a crown (Near/General Future SP-ra- -a)",
+            "pronunciation": "mu-ga-mba a-ra-zja mu i-sku-ru"
           },
           {
-            "target": "na-SP- -e (Middle)",
-            "source": "Na-kʊ-sjaj-e Majki w-etu ma-uwa",
-            "pronunciation": "na-sp---e"
+            "target": "Na-kʊ-sjaj-e Majki w-etu ma-uwa",
+            "source": "We will plant flowers for our Mike (Middle Future na-SP- -e)",
+            "pronunciation": "na-ku-sja-je maj-ki we-tu ma-u-wa"
           },
           {
-            "target": "SP-raka- -e / SP-aaka- -e (Remote)",
-            "source": "a-raka-ataɲ-e kʊ ɪ-sjoŋgo ɪ-jɪ, n-daka-mu-ʃir-e wa gʊ-nani",
-            "pronunciation": "sp-raka---e"
+            "target": "A-raka-ataɲ-e kʊ ɪ-sjoŋgo ɪ-jɪ, n-daka-mu-ʃir-e wa gʊ-nani",
+            "source": "If s/he breaks this waterpot, I will take him/her to the ogre (Remote Future SP-raka- -e)",
+            "pronunciation": "a-ra-ka-a-ta-nye ku i-sjo-ngo i-ji"
           },
           {
-            "target": "naa-SP- -e (Long-Vowel Remote)",
-            "source": "Naa-a-kor-e ɪ-gaasi",
-            "pronunciation": "naa-sp---e"
+            "target": "Naa-a-kor-e ɪ-gaasi",
+            "source": "S/he will do the work (Long-Vowel Remote Future naa-SP- -e)",
+            "pronunciation": "naa-a-ko-re i-gaa-si"
           },
           {
-            "target": "SP-ri- -a (Indefinite)",
-            "source": "si va-ri-ɲar-a mba",
-            "pronunciation": "sp-ri---a"
+            "target": "Si va-ri-ɲar-a mba",
+            "source": "They will never manage (Indefinite Future SP-ri- -a)",
+            "pronunciation": "si va-ri-nya-ra mba"
           },
           {
             "target": "Mu-gamba, man̪-a n-zj-e mʊ ɪ-skuru",
@@ -3786,12 +3798,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "n-eny-a murianggo gu-han-ek-ɛ",
             "source": "I want the door to be in a closed state",
-            "pronunciation": "n-eny-a-murianggo-gu-han-ek-"
+            "pronunciation": "n-eny-a-murianggo-gu-han-ek-e"
           },
           {
-            "target": "Class Ia vs. Class Ib",
-            "source": "Luragooli Class Ia experiencer verbs vs. Class Ib affected-object verbs taking -Vk",
-            "pronunciation": "class-ia-vs-class",
+            "target": "ku-ɲig-ik-a vs. ku-vun-ik-a",
+            "source": "to be ticklish (Class Ia experiencer) vs. to break (Class Ib affected-object taking -Vk)",
+            "pronunciation": "ku-nyi-gi-ka vs. ku-vu-ni-ka",
             "hint": "Gluckman & Bowler (2016, Ch. 15, p. 283, Table 4)"
           },
           {
@@ -3806,7 +3818,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           },
           {
             "target": "kuipia mama mja mzito",
-            "source": "Smart Joker, Ex. 9",
+            "source": "To steal from an expectant mother (Luhya-accented Swahili in Smart Joker, Ex. 9)",
             "pronunciation": "kuipia-mama-mja-mzito"
           }
         ],
@@ -3826,14 +3838,14 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Wekesa a-a-ra embeba kalaha vs. Wekesa a-ki-ra kalaha (ekikombe)",
-            "source": "Lubukusu nominal DP vs. non-nominal manner adjunct IAV focus asymmetry explained via",
+            "source": "Lubukusu nominal DP vs. non-nominal manner adjunct IAV focus asymmetry",
             "pronunciation": "we-ke-sa a-a-ra e-mbe-ba ka-la-ha / a-ki-ra ka-la-ha",
             "hint": "Naga Selvanathan (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191, consultant Justine Sikuku)"
           },
           {
-            "target": "Ibaruwa ya Nayu: 'Nakuchyesere lugali mulebe wase: Wena? ugona oryena?",
+            "target": "Ibaruwa ya Nayu: 'Nakuchyesere lugali mulebe wase: Wena? ugona oryena?'",
             "source": "Verbatim 1907 Lumasaba letter",
-            "pronunciation": "ibaruwa-ya-nayu-'nakuchyesere",
+            "pronunciation": "i-ba-ru-wa ya na-yu na-ku-chye-se-re",
             "hint": "Rev. J. B. Purvis, Through Uganda to Mount Elgon (1909, Ch. XV, pp. 324–325)"
           },
           {
@@ -3856,13 +3868,13 @@ export const LUHYA_UNITS: CourseUnit[] = [
     "unitNumber": 15,
     "title": "Modern Luhya Conversation & Civic Life",
     "description": "Everyday Marachi, Maragoli, Wanga, and Bukusu sentences, riddles, and civic vocabulary from Project Tafsiri v2.0 and Kencorpus",
-    "icon": "💬",
+    "icon": "MessageCircle",
     "color": "#10B981",
     "skills": [
       {
         "id": "luhya-open-skill-1",
         "title": "Everyday Conversation & Community",
-        "icon": "🗣️",
+        "icon": "MessageSquare",
         "description": "Conversational expressions across Lumarachi, Lulogooli, Luwanga, and Lubukusu",
         "grammarTip": "In Luhya dialects, 'Mirembe' expresses peace and greeting, while 'tawe' (Lubukusu/Lumarachi) and 'dave' (Lulogooli) mark clause-final negation.",
         "culturalNote": "Sourced from Dr. Moody Amakobe's Project Tafsiri v2.0 (mamakobe/luhya-multilingual-dataset, CC-BY-4.0) and Kencorpus (Wanjawa et al. 2022/2023, CC-BY-4.0).",
@@ -4009,7 +4021,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "source": "Thank you very much (Mulembe)."
           },
           {
-            "target": "murembe and yoga",
+            "target": "Murembe, yoga!",
             "source": "Salutation (Luwanga)."
           }
         ]

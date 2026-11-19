@@ -708,7 +708,7 @@ export const LESSONS: Lesson[] = [
             { luo: 'Got', english: 'Mountain / Hill', hint: 'Pl: Gode' },
             { luo: 'Koth', english: 'Rain', hint: 'Koth chwe = it is raining' },
             { luo: 'Yamo', english: 'Wind' },
-            { luo: 'Yath', english: 'Tree / Medicine', hint: 'Pl: Yedhe (construct: Yadhe)' },
+            { luo: 'Yath', english: 'Tree / Medicine', hint: 'Pl: Yedhe (construct sg.: Yadh, pl.: Yadhe)' },
             { luo: 'Lum', english: 'Grass' },
             { luo: 'Bungu', english: 'Forest' },
             { luo: 'Mach', english: 'Fire' }

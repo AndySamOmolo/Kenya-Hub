@@ -161,6 +161,12 @@ export default function LearnPage() {
     return INITIAL_RANDOM_WORDS[wordIndex % INITIAL_RANDOM_WORDS.length];
   }, [wordIndex]);
 
+  useEffect(() => {
+    if (INITIAL_RANDOM_WORDS && INITIAL_RANDOM_WORDS.length > 1) {
+      setWordIndex(Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length));
+    }
+  }, []);
+
   const nextSpotlightWord = useCallback(() => {
     setWordIndex((prev) => prev + 1);
   }, []);

@@ -1139,7 +1139,7 @@ export const PHRASEBOOK_SECTIONS: DialogueSection[] = [
     exchanges: [
       { english: "How do you do?", luo: "Iriyo nade? Inindo nade?" },
       { english: "I am well.", luo: "Ariyo maber. Anindo maber." },
-      { english: "How are you (to a woman friend)? — I am all right, my friend, and you?", luo: "Ingima? — Angima, Omera, to in?" },
+      { english: "How are you (to a woman friend)? — I am all right, my friend, and you?", luo: "Ingima? — Angima, Nyamera (Omera), to in?" },
       { english: "Good-morning. / Good-evening.", luo: "Misawa. Okwe. / Oyawore. Oimore." },
       { english: "Good-bye!", luo: "Inindi! / Oriti!" },
       { english: "Thank you.", luo: "Ero kamano." },
@@ -1614,7 +1614,7 @@ export function conjugateVerb(infinitive: string): Record<string, Record<string,
       "1p": `wana${futureStem}`,
       "2p": `unu${futureStem}`,
       "3p": `gini${futureStem}`,
-      "1s_neg": `okanaher`.replace("her", futureStem),
+      "1s_neg": `okana${futureStem}`,
       "2s_neg": `okani${futureStem}`,
       "3s_neg": `okano${futureStem}`,
       "1p_neg": `okwana${futureStem}`,
@@ -3094,7 +3094,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
           },
           {
             "target": "Chindu • Anyango • Rajoki • Jimbo • Uyua • Mbunga",
-            "source": "Genealogical patriarchs linking Apōdtho and Ramogi across Usakwa, Korando, and",
+            "source": "Genealogical patriarchs linking Apōdtho and Ramogi across Usakwa, Korando, and Kanyamwa",
             "pronunciation": "chin-du / a-nya-ngo / ra-jo-ki / jim-bo / u-yu-a / m-bu-nga",
             "hint": "Hobley (1903, pp. 327–331 — Chindu cf. Luganda Kintu, p. 332)"
           },
@@ -3349,14 +3349,14 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "luo-u14-northcote-1907-skill-1",
-        "title": "Northcote: Naming, Shamba & Askari Law, Succession Case A–F &",
+        "title": "Northcote: Naming, Shamba & Askari Law, Succession Case A–F & Customary Rites",
         "icon": "Scale",
         "description": "Master all 12 indigenous terms, naming traditions, customary land/succession rules, and ethnographic records from G. A. S. Northcote (1907, pp. 58–66).",
         "tips": "Northcote (1907, p. 62) records the 4 time-of-day birth names (onyango, oching, odiambo, otieno) alongside 3 hereditary nicknames: obele (\"the man who owned much mtama [millet]\"), oliech (\"the man who killed an elephant\"), and obonyo (\"the man like a locust\").",
         "words": [
           {
             "target": "Jaluo",
-            "source": "Nilotic Kavirondo (Northcote 1907, p. 58)",
+            "source": "Proper endonym of the Nilotic Kavirondo",
             "pronunciation": "ja-lu-o",
             "hint": "Northcote (1907, JRAI Vol. 37, p. 58)"
           },
@@ -3430,13 +3430,13 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
     "unitNumber": 5,
     "title": "Modern Dholuo Verbs, Broadcast & Proverbs",
     "description": "Core Dholuo action verbs, Dala FM civic vocabulary, and oral proverbs from Kencorpus, Google SMOL/GATITOS, and The Thiomi Dataset",
-    "icon": "📻",
+    "icon": "Radio",
     "color": "#0EA5E9",
     "skills": [
       {
         "id": "luo-open-skill-1",
         "title": "Core Action Verbs & Civic Terms",
-        "icon": "⚡",
+        "icon": "Zap",
         "description": "Essential Dholuo verbs and public life vocabulary from Kencorpus and GATITOS",
         "grammarTip": "Most Dholuo transitive verbs in the citation form end in -o (e.g., chamo 'to eat', chulo 'to pay', doyo 'to weed', fwenyo 'to discover').",
         "culturalNote": "Compiled from Kencorpus/KenCorpus_text & KenPOS (Wanjawa et al. 2022/2023, CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), and The Thiomi Dataset (CC-BY-4.0).",
@@ -3602,7 +3602,7 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
                   },
                   {
                             "target": "Inindo nade? — Anindo maber.",
-                            "source": "How did you sleep? — I slept well (unwell)."
+                            "source": "How did you sleep? — I slept well."
                   },
                   {
                             "target": "Tich mar programu",
@@ -3670,36 +3670,36 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
         ],
         "sentences": [
                   {
-                            "target": "nyadi chiel",
-                            "source": "Once"
+                            "target": "Ringri ber? — Ringra ber ahinya.",
+                            "source": "Is your body well? — My body is very well."
                   },
                   {
-                            "target": "abichi gangwen",
-                            "source": "Nine"
+                            "target": "Tuo omaka, adwaro yath mar chango.",
+                            "source": "Sickness has caught me; I need medicine for healing."
                   },
                   {
-                            "target": "Pir' añwen",
-                            "source": "Forty"
+                            "target": "Kiny wanadhi wuoth nyaka Kisumo.",
+                            "source": "Tomorrow we shall travel all the way to Kisumu."
                   },
                   {
-                            "target": "Pir abitc",
-                            "source": "Fifty"
+                            "target": "Aorani tut, ok wanyal ng'ado gi tielo.",
+                            "source": "This river is deep; we cannot cross on foot."
                   },
                   {
-                            "target": "abichigario or abirio",
-                            "source": "Seven"
+                            "target": "Jopuonjre odhi e skul gokinyi mang'ich.",
+                            "source": "The students went to school early in the cool morning."
                   },
                   {
-                            "target": "abichi gadek or aboru",
-                            "source": "Eight"
+                            "target": "Jopur osekwayo kony kuom Migao mar Pith gi Pur.",
+                            "source": "The farmers have requested support from the Ministry of Agriculture and Livestock."
                   },
                   {
-                            "target": "Piero ariyo",
-                            "source": "Twenty"
+                            "target": "Ruoth ochoko jodongo e bura mar gweng'.",
+                            "source": "The chief gathered the elders at the village council."
                   },
                   {
-                            "target": "Mar ariyo",
-                            "source": "Second"
+                            "target": "Jofwambo olando wach maber mar kwe e piny.",
+                            "source": "The journalists broadcast good news of peace in the land."
                   }
         ]
 }

@@ -468,9 +468,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 12,
+    "skillCount": 27,
+    "wordsCount": 289
   },
   {
     "config": {
@@ -494,8 +494,8 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
     },
     "ready": true,
     "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "skillCount": 22,
+    "wordsCount": 201
   },
   {
     "config": {
@@ -520,9 +520,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 10,
-    "skillCount": 20,
-    "wordsCount": 250
+    "unitCount": 11,
+    "skillCount": 23,
+    "wordsCount": 242
   },
   {
     "config": {

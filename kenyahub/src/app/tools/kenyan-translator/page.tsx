@@ -9,7 +9,7 @@ import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
-import { BarChart, BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { BarChart, BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight, Volume2 } from "lucide-react";
 
 import {
   ALL_DICT_METAS,
@@ -23,7 +23,7 @@ import {
 } from "@/data/dictionaries/metadata";
 import { getLanguageIdentity } from "@/data/language-identity";
 import { addContribution, subscribeContributions } from "@/lib/contributions";
-import { playLanguageAudio } from "@/lib/language-audio";
+import { playLanguageAudio, hasVerifiedAudio } from "@/lib/language-audio";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
 import {
@@ -416,40 +416,62 @@ export default function KenyanTranslatorPage() {
   // Stats
   const totalEntries = TOTAL_DICTIONARY_ENTRIES;
 
-  // ─── Random Word Feature ───
-  const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string } | null>(() => {
+  // ─── Random Word Feature (Balanced Across All 23 Kenyan Languages) ───
+  const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string; langId: string } | null>(() => {
     const sample = INITIAL_RANDOM_WORDS[0];
-    return sample ? { entry: sample.entry, langName: sample.langName } : null;
+    return sample ? { entry: sample.entry, langName: sample.langName, langId: sample.langId } : null;
   });
 
-  const getRandomWord = useCallback(() => {
-    if (activeDictList.length > 0) {
-      const dict = activeDictList[Math.floor(Math.random() * activeDictList.length)];
-      const validCats = dict.categories.filter(
-        (c) => c.id !== "culture-history" && c.entries.length > 0
-      );
-      if (validCats.length > 0) {
-        for (let attempt = 0; attempt < 24; attempt++) {
-          const cat = validCats[Math.floor(Math.random() * validCats.length)];
-          const candidate = cat.entries[Math.floor(Math.random() * cat.entries.length)];
-          if (
-            candidate &&
-            candidate.english.length >= 2 &&
-            candidate.english.length <= 32 &&
-            candidate.translation.length >= 2 &&
-            candidate.translation.length <= 36 &&
-            !/[();:/[\]"„—]/.test(candidate.english) &&
-            !/[();:[\]"„—]/.test(candidate.translation)
-          ) {
-            setRandomWord({ entry: candidate, langName: dict.languageName });
-            return;
+  const pickBalancedRandomWord = useCallback(
+    (excludeLangId?: string) => {
+      // Only pull from loaded dictionaries when a broad multi-language set (>= 10) is loaded;
+      // otherwise use INITIAL_RANDOM_WORDS which is evenly balanced across all 23 Kenyan languages.
+      if (activeDictList.length >= 10) {
+        const eligibleDicts = activeDictList.filter((d) => d.languageId !== excludeLangId);
+        const pool = eligibleDicts.length > 0 ? eligibleDicts : activeDictList;
+        const dict = pool[Math.floor(Math.random() * pool.length)];
+        const validCats = dict.categories.filter(
+          (c) => c.id !== "culture-history" && c.entries.length > 0
+        );
+        if (validCats.length > 0) {
+          for (let attempt = 0; attempt < 24; attempt++) {
+            const cat = validCats[Math.floor(Math.random() * validCats.length)];
+            const candidate = cat.entries[Math.floor(Math.random() * cat.entries.length)];
+            if (
+              candidate &&
+              candidate.english.length >= 2 &&
+              candidate.english.length <= 32 &&
+              candidate.translation.length >= 2 &&
+              candidate.translation.length <= 36 &&
+              !/[();:/[\]"„—]/.test(candidate.english) &&
+              !/[();:[\]"„—]/.test(candidate.translation)
+            ) {
+              return { entry: candidate, langName: dict.languageName, langId: dict.languageId };
+            }
           }
         }
       }
+      const candidates = INITIAL_RANDOM_WORDS.filter((w) => w.langId !== excludeLangId);
+      const sourcePool = candidates.length > 0 ? candidates : INITIAL_RANDOM_WORDS;
+      const sample = sourcePool[Math.floor(Math.random() * sourcePool.length)];
+      return sample ? { entry: sample.entry, langName: sample.langName, langId: sample.langId } : null;
+    },
+    [activeDictList]
+  );
+
+  // Pick a balanced random language on initial client mount so users don't always see Swahili first
+  useEffect(() => {
+    if (INITIAL_RANDOM_WORDS.length > 1) {
+      const sample = INITIAL_RANDOM_WORDS[Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)];
+      if (sample) {
+        setRandomWord({ entry: sample.entry, langName: sample.langName, langId: sample.langId });
+      }
     }
-    const sample = INITIAL_RANDOM_WORDS[Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)];
-    if (sample) setRandomWord({ entry: sample.entry, langName: sample.langName });
-  }, [activeDictList]);
+  }, []);
+
+  const getRandomWord = useCallback(() => {
+    setRandomWord((prev) => pickBalancedRandomWord(prev?.langId));
+  }, [pickBalancedRandomWord]);
 
   useEffect(() => {
     scrollToTopIfScrolled();
@@ -472,8 +494,23 @@ export default function KenyanTranslatorPage() {
                 <span className="text-gold font-medium">{randomWord.entry.translation}</span>
                 <span className="text-text-muted"> — {randomWord.langName}</span>
               </p>
-              {randomWord.entry.pronunciation && (
-                <p className="text-[0.65rem] text-text-muted mt-0.5 italic">/{randomWord.entry.pronunciation}/</p>
+              {(randomWord.entry.pronunciation || hasVerifiedAudio(randomWord.entry)) && (
+                <div className="flex items-center gap-2 mt-0.5 flex-wrap">
+                  {randomWord.entry.pronunciation && (
+                    <p className="text-[0.65rem] text-text-muted italic">/{randomWord.entry.pronunciation}/</p>
+                  )}
+                  {hasVerifiedAudio(randomWord.entry) && (
+                    <button
+                      type="button"
+                      onClick={() => playAudio(randomWord.entry, randomWord.langId)}
+                      className="inline-flex items-center gap-1 text-[0.65rem] text-sky hover:underline font-semibold cursor-pointer"
+                      title="Play verified native-speaker recording"
+                    >
+                      <Volume2 className="w-3 h-3" />
+                      <span>Listen</span>
+                    </button>
+                  )}
+                </div>
               )}
             </div>
             <button onClick={getRandomWord} className="flex-shrink-0 w-8 h-8 rounded-lg bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-colors" title="Get another word">
@@ -752,14 +789,17 @@ export default function KenyanTranslatorPage() {
                                           {result.entry.pronunciation && (
                                             <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
                                           )}
-                                          <button
+                                          {hasVerifiedAudio(result.entry) && (
+                                            <button
                                               type="button"
                                               onClick={() => playAudio(result.entry, result.languageId)}
-                                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
-                                              title="Play recorded pronunciation"
+                                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold cursor-pointer"
+                                              title="Play verified native-speaker recording"
                                             >
-                                              🔊 Listen
+                                              <Volume2 className="w-3 h-3" />
+                                              <span>Listen</span>
                                             </button>
+                                          )}
                                         </div>
                                       )}
                                     </>
@@ -780,14 +820,17 @@ export default function KenyanTranslatorPage() {
                                           {result.entry.pronunciation && (
                                             <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
                                           )}
-                                          <button
+                                          {hasVerifiedAudio(result.entry) && (
+                                            <button
                                               type="button"
                                               onClick={() => playAudio(result.entry, result.languageId)}
-                                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
-                                              title="Play recorded pronunciation"
+                                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold cursor-pointer"
+                                              title="Play verified native-speaker recording"
                                             >
-                                              🔊 Listen
+                                              <Volume2 className="w-3 h-3" />
+                                              <span>Listen</span>
                                             </button>
+                                          )}
                                         </div>
                                       )}
                                 </div>
@@ -951,14 +994,17 @@ export default function KenyanTranslatorPage() {
                                           {entry.pronunciation && (
                                             <p className="text-[0.75rem] text-text-muted italic break-words">/{entry.pronunciation}/</p>
                                           )}
-                                          <button
+                                          {hasVerifiedAudio(entry) && (
+                                            <button
                                               type="button"
                                               onClick={() => playAudio(entry, browseDict.languageId)}
-                                              className="inline-flex items-center gap-1 text-[0.65rem] text-sky hover:underline font-semibold"
-                                              title="Play recorded pronunciation"
+                                              className="inline-flex items-center gap-1 text-[0.65rem] text-sky hover:underline font-semibold cursor-pointer"
+                                              title="Play verified native-speaker recording"
                                             >
-                                              🔊 Listen
+                                              <Volume2 className="w-3 h-3" />
+                                              <span>Listen</span>
                                             </button>
+                                          )}
                                         </div>
                                       )}
                                       {entry.context && (
@@ -1191,13 +1237,17 @@ export default function KenyanTranslatorPage() {
                           {item.entry.pronunciation && (
                             <p className="text-[0.65rem] text-text-muted italic">/{item.entry.pronunciation}/</p>
                           )}
-                          <button
+                          {hasVerifiedAudio(item.entry) && (
+                            <button
                               type="button"
                               onClick={() => playAudio(item.entry, item.languageId)}
-                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold"
+                              className="inline-flex items-center gap-1 text-[0.6rem] text-sky hover:underline font-semibold cursor-pointer"
+                              title="Play verified native-speaker recording"
                             >
-                              🔊 Listen
+                              <Volume2 className="w-3 h-3" />
+                              <span>Listen</span>
                             </button>
+                          )}
                         </div>
                       )}
                     </div>

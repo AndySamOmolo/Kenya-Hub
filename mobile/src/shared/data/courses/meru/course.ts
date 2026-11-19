@@ -44,13 +44,13 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Muuga!",
             "source": "Hello!",
-            "pronunciation": "muu-ga / uri mwe-ga",
+            "pronunciation": "muu-ga",
             "hint": "Standard Kĩmĩĩrũ greeting"
           },
           {
             "target": "Ũrĩ mwega? (resp. Ndĩ mwega)",
             "source": "Are you well? (I am well)",
-            "pronunciation": "muu-ga / uri mwe-ga",
+            "pronunciation": "u-ri mwe-ga / ndi mwe-ga",
             "hint": "Standard Kĩmĩĩrũ greeting"
           },
           {
@@ -68,67 +68,67 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "mũrũme (pl. arũme)",
             "source": "man, husband",
-            "pronunciation": "mu-ru-me / mu-ka",
+            "pronunciation": "mu-ru-me",
             "hint": "Johnston (1919, Vol. I, pp. 100, 106) #11a Meru & Embu"
           },
           {
             "target": "mũka (pl. aka)",
             "source": "woman, wife",
-            "pronunciation": "mu-ru-me / mu-ka",
+            "pronunciation": "mu-ka",
             "hint": "Johnston (1919, Vol. I, pp. 100, 106) #11a Meru & Embu"
           },
           {
             "target": "mwana (pl. aana)",
             "source": "child",
-            "pronunciation": "mwa-na / kaa-na",
+            "pronunciation": "mwa-na",
             "hint": "Class 1/2 vs. Class 12/13 ka-/tũ-"
           },
           {
             "target": "kaana (pl. tũana)",
             "source": "small child (diminutive)",
-            "pronunciation": "mwa-na / kaa-na",
+            "pronunciation": "kaa-na",
             "hint": "Class 1/2 vs. Class 12/13 ka-/tũ-"
           },
           {
             "target": "mũtĩ (pl. mĩtĩ)",
             "source": "tree (pl. trees)",
-            "pronunciation": "mu-ti / ii-ga",
+            "pronunciation": "mu-ti",
             "hint": "Johnston (1919, Vol. I, pp. 104–105) Class 3/4 & 5/6"
           },
           {
             "target": "ĩiga (pl. maiga)",
             "source": "stone (pl. stones)",
-            "pronunciation": "mu-ti / ii-ga",
+            "pronunciation": "ii-ga",
             "hint": "Johnston (1919, Vol. I, pp. 104–105) Class 3/4 & 5/6"
           },
           {
-            "target": "rũũji",
+            "target": "rũũji (maĩ)",
             "source": "water (river)",
-            "pronunciation": "ruu-ji / mwanki",
+            "pronunciation": "ruu-ji",
             "hint": "Johnston (1919, Vol. I, pp. 99, 106) Meru & Tharaka"
           },
           {
-            "target": "maĩ)",
+            "target": "mwanki",
             "source": "fire",
-            "pronunciation": "ruu-ji / mwanki",
+            "pronunciation": "mwanki",
             "hint": "Johnston (1919, Vol. I, pp. 99, 106) Meru & Tharaka"
           },
           {
             "target": "riũa",
             "source": "sun",
-            "pronunciation": "riua / mwe-ri / nja-ta",
+            "pronunciation": "ri-ua",
             "hint": "Johnston (1919, Vol. I, pp. 101, 104) cosmological nouns"
           },
           {
             "target": "mweri",
             "source": "moon",
-            "pronunciation": "riua / mwe-ri / nja-ta",
+            "pronunciation": "mwe-ri",
             "hint": "Johnston (1919, Vol. I, pp. 101, 104) cosmological nouns"
           },
           {
             "target": "njata",
             "source": "star",
-            "pronunciation": "riua / mwe-ri / nja-ta",
+            "pronunciation": "nja-ta",
             "hint": "Johnston (1919, Vol. I, pp. 101, 104) cosmological nouns"
           },
           {
@@ -282,73 +282,97 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "imwe",
             "source": "One (1)",
-            "pronunciation": "imwe ii-ri itha-tu inya itha-no",
+            "pronunciation": "imwe",
             "hint": "Johnston (1919, Vol. I, p. 107) #11a Meru numerals"
           },
           {
             "target": "iiri (bairi)",
             "source": "Two (2)",
-            "pronunciation": "imwe ii-ri itha-tu inya itha-no",
+            "pronunciation": "ii-ri",
             "hint": "Johnston (1919, Vol. I, p. 107) #11a Meru numerals"
           },
           {
             "target": "ithatu",
             "source": "Three (3)",
-            "pronunciation": "imwe ii-ri itha-tu inya itha-no",
+            "pronunciation": "itha-tu",
+            "hint": "Johnston (1919, Vol. I, p. 107) #11a Meru numerals"
+          },
+          {
+            "target": "inya",
+            "source": "Four (4)",
+            "pronunciation": "inya",
+            "hint": "Johnston (1919, Vol. I, p. 107) #11a Meru numerals"
+          },
+          {
+            "target": "ithano",
+            "source": "Five (5)",
+            "pronunciation": "itha-no",
             "hint": "Johnston (1919, Vol. I, p. 107) #11a Meru numerals"
           },
           {
             "target": "ithanthatu",
             "source": "Six (6)",
-            "pronunciation": "ithantha-tu mugwanja inyanya kenda i-ku-mi",
+            "pronunciation": "ithantha-tu",
             "hint": "Johnston (1919, Vol. I, p. 107) numerals 6–10"
           },
           {
             "target": "mũgwanja",
             "source": "Seven (7)",
-            "pronunciation": "ithantha-tu mugwanja inyanya kenda i-ku-mi",
+            "pronunciation": "mugwanja",
             "hint": "Johnston (1919, Vol. I, p. 107) numerals 6–10"
           },
           {
             "target": "inyanya",
             "source": "Eight (8)",
-            "pronunciation": "ithantha-tu mugwanja inyanya kenda i-ku-mi",
+            "pronunciation": "inyanya",
+            "hint": "Johnston (1919, Vol. I, p. 107) numerals 6–10"
+          },
+          {
+            "target": "kenda",
+            "source": "Nine (9)",
+            "pronunciation": "kenda",
+            "hint": "Johnston (1919, Vol. I, p. 107) numerals 6–10"
+          },
+          {
+            "target": "ikũmi",
+            "source": "Ten (10)",
+            "pronunciation": "i-ku-mi",
             "hint": "Johnston (1919, Vol. I, p. 107) numerals 6–10"
           },
           {
             "target": "igana",
             "source": "100",
-            "pronunciation": "i-ga-na / ngi-ri",
+            "pronunciation": "i-ga-na",
             "hint": "Johnston (1919, Vol. I, p. 107)"
           },
           {
             "target": "ngiri",
             "source": "1,000",
-            "pronunciation": "i-ga-na / ngi-ri",
+            "pronunciation": "ngi-ri",
             "hint": "Johnston (1919, Vol. I, p. 107)"
           },
           {
             "target": "kũruga",
             "source": "to cook",
-            "pronunciation": "ku-ru-ga / ku-ria / kunyua / guthii",
+            "pronunciation": "ku-ru-ga",
             "hint": "Dahl’s Law: kũ- voices to gũ- before voiceless th"
           },
           {
             "target": "kũrĩa",
             "source": "to eat",
-            "pronunciation": "ku-ru-ga / ku-ria / kunyua / guthii",
+            "pronunciation": "ku-ria",
             "hint": "Dahl’s Law: kũ- voices to gũ- before voiceless th"
           },
           {
             "target": "kũnyua",
             "source": "to drink",
-            "pronunciation": "ku-ru-ga / ku-ria / kunyua / guthii",
+            "pronunciation": "kunyua",
             "hint": "Dahl’s Law: kũ- voices to gũ- before voiceless th"
           },
           {
             "target": "gũthiĩ",
             "source": "to go",
-            "pronunciation": "ku-ru-ga / ku-ria / kunyua / guthii",
+            "pronunciation": "guthii",
             "hint": "Dahl’s Law: kũ- voices to gũ- before voiceless th"
           },
           {
@@ -534,7 +558,7 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Mu-thamaki; a-. Mu-nene",
             "source": "Chief",
-            "pronunciation": "mu-thamaki a- mu-nene a"
+            "pronunciation": "mu-thamaki / mu-nene"
           },
           {
             "target": "Mū-rū wa maiya (K.). Mū-ārī wa maitū",
@@ -1161,7 +1185,7 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Cūmbī",
             "source": "Salt",
-            "pronunciation": "cumbi i-gata"
+            "pronunciation": "cumbi"
           },
           {
             "target": "Ū-ūkī; mō-ūkī",
@@ -1254,7 +1278,7 @@ export const MERU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Meru (Kĩmĩĩrũ) (Kĩmĩĩrũ) in C. W. Hobley (1910 Notes on Mweru & Tharaka) & Sir Harry Johnston (1919 Group C #11a Meru & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Meru, Tharaka-Nithi.",
         "words": [
           {
-            "target": "M-bembē; ma",
+            "target": "M-bembē; ma-",
             "source": "Maize",
             "pronunciation": "m-bembe"
           },
@@ -1269,9 +1293,9 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "i-rigo"
           },
           {
-            "target": "N-g'aragu",
+            "target": "N-g'aragu. M-būta",
             "source": "Hunger",
-            "pronunciation": "n-g'aragu m-buta"
+            "pronunciation": "n-g'aragu / m-buta"
           },
           {
             "target": "Ma-guta. Ṅ-gorono (butter)",
@@ -1425,9 +1449,9 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "mwaki"
           },
           {
-            "target": "Muuga! / Ũrĩ mwega? (resp. Ndĩ mwega)",
-            "source": "Hello",
-            "pronunciation": "muuga"
+            "target": "itũ (pl. matũ)",
+            "source": "Cloud",
+            "pronunciation": "i-tu"
           },
           {
             "target": "mweri (pl. mĩeri)",
@@ -1699,7 +1723,7 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "kanyua"
           },
           {
-            "target": "njara /oko (pl. moko)",
+            "target": "njara / oko (pl. moko)",
             "source": "Hand, arm",
             "pronunciation": "njara"
           },
@@ -1954,13 +1978,13 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Uma nja",
             "source": "Get out",
-            "pronunciation": "uma nja / tu-ra",
+            "pronunciation": "uma nja",
             "hint": "Wikipedia Meru language — Dialects"
           },
           {
             "target": "Tũra",
-            "source": "go outside (Imenti/Chuka/Tharaka: Uma nja; Tigania: Tũra)",
-            "pronunciation": "uma nja / tu-ra",
+            "source": "Go outside (Tigania; Imenti/Chuka/Tharaka: Uma nja)",
+            "pronunciation": "tu-ra",
             "hint": "Wikipedia Meru language — Dialects"
           },
           {
@@ -2093,7 +2117,7 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Njĩtagwa",
             "source": "My name is",
-            "pronunciation": "njĩtagwa..."
+            "pronunciation": "nji-ta-gwa"
           },
           {
             "target": "kwenda (Inkwendete = I love you)",
@@ -2108,12 +2132,12 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "kũrora",
             "source": "To look",
-            "pronunciation": "kurora"
+            "pronunciation": "ku-ro-ra"
           },
           {
             "target": "kwona",
-            "source": "to see",
-            "pronunciation": "kurora"
+            "source": "To see",
+            "pronunciation": "kwo-na"
           },
           {
             "target": "kwenda",
@@ -2133,12 +2157,12 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "kũruta wĩra",
             "source": "To work",
-            "pronunciation": "ku-ru-ta wi-ra / ku-ri-ma"
+            "pronunciation": "ku-ru-ta wi-ra"
           },
           {
             "target": "kũrĩma",
-            "source": "to cultivate",
-            "pronunciation": "ku-ru-ta wi-ra / ku-ri-ma"
+            "source": "To cultivate",
+            "pronunciation": "ku-ri-ma"
           }
         ],
         "sentences": [
@@ -2207,7 +2231,7 @@ export const MERU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "kũrora",
-                "right": "To look at"
+                "right": "To look"
               }
             ]
           }
@@ -2356,7 +2380,7 @@ export const MERU_UNITS: CourseUnit[] = [
       {
         "id": "meru-time-calendar-journey-navigation-8",
         "title": "Travel, Directions, Paths & Landmarks",
-        "icon": "Droplets",
+        "icon": "Compass",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Notes on Mweru & Tharaka) & Sir Harry Johnston (1919 Group C #11a Meru & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Meru (Kĩmĩĩrũ) (Kĩmĩĩrũ) in C. W. Hobley (1910 Notes on Mweru & Tharaka) & Sir Harry Johnston (1919 Group C #11a Meru & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Meru, Tharaka-Nithi.",
@@ -2552,7 +2576,7 @@ export const MERU_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Mwiria wa Njaru, Ntuni, Angilo, Athinga, Athanya na Ntowaita (Netiri).",
-            "source": "The Mweru totemic clans (Mwiria) and their sacred totems (Netiri) ."
+            "source": "The Mweru totemic clans (Mwiria) and their sacred totems (Netiri)."
           },
           {
             "target": "Akũrũ nĩbaaria ũhoro wa Angilo.",
@@ -2755,14 +2779,14 @@ export const MERU_UNITS: CourseUnit[] = [
             "pronunciation": "ma-mi"
           },
           {
-            "target": "ma- N-kīma",
+            "target": "N-kīma",
             "source": "Monkey",
-            "pronunciation": "ma n-kima"
+            "pronunciation": "n-kima"
           },
           {
-            "target": "ma- N-gare",
+            "target": "N-gare",
             "source": "Leopard",
-            "pronunciation": "ma n-gare"
+            "pronunciation": "n-gare"
           },
           {
             "target": "M-būta",
@@ -2817,7 +2841,7 @@ export const MERU_UNITS: CourseUnit[] = [
                 "right": "Mother"
               },
               {
-                "left": "ma- N-kīma",
+                "left": "N-kīma",
                 "right": "Monkey"
               }
             ]
@@ -2825,10 +2849,10 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Meru (Kĩmĩĩrũ) term for \"Leopard\": ___",
-            "correctAnswer": "ma- N-gare",
+            "correctAnswer": "N-gare",
             "options": [
               "M-būta",
-              "ma- N-gare",
+              "N-gare",
               "Mū-ūmba",
               "N-jīwa"
             ],
@@ -2968,70 +2992,70 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "movira (< mpira)",
             "source": "ball",
-            "pronunciation": "moira"
+            "pronunciation": "mo-βi-ra"
           },
           {
             "target": "vaði (< pasi)",
             "source": "iron box",
-            "pronunciation": "aði"
+            "pronunciation": "βa-ði"
           },
           {
             "target": "movukɔ (< mfukɔ)",
             "source": "bag/pocket",
-            "pronunciation": "mouk"
+            "pronunciation": "mo-βu-kɔ"
           },
           {
             "target": "vurana (< fulana)",
             "source": "vest/undershirt",
-            "pronunciation": "urana"
+            "pronunciation": "βu-ra-na"
           },
           {
             "target": "vaisikiri (< baiskɛli)",
             "source": "bicycle",
-            "pronunciation": "aisikiri"
+            "pronunciation": "βai-si-ki-ri"
           },
           {
             "target": "vetɛrɔri (< petrəl)",
             "source": "petrol",
-            "pronunciation": "etrri"
+            "pronunciation": "βe-tɛ-rɔ-ri"
           },
           {
             "target": "mbuŋgɛ (< buŋgɛ)",
             "source": "parliament",
-            "pronunciation": "mbuŋg"
+            "pronunciation": "mbu-ŋgɛ"
           },
           {
             "target": "mbureki (< breɪk)",
             "source": "brake",
-            "pronunciation": "mbureki"
+            "pronunciation": "mbu-re-ki"
           },
           {
             "target": "mbɔksi (< bɔks) | ðimo (< simu)",
             "source": "box (Ex. 2: [b] after N-) | telephone",
-            "pronunciation": "mbksi-ðimo"
+            "pronunciation": "mbɔ-ksi / ði-mo"
           },
           {
             "target": "mɛða (< mɛza)",
             "source": "table",
-            "pronunciation": "mða"
+            "pronunciation": "mɛ-ða"
           },
           {
             "target": "ða: (< sa:)",
             "source": "hour/watch",
-            "pronunciation": "ða"
+            "pronunciation": "ða:"
           },
           {
             "target": "monaði (< mnazi)",
             "source": "coconut tree",
-            "pronunciation": "monaði"
+            "pronunciation": "mo-na-ði"
           },
           {
             "target": "mosɛðɔ (< mtʃɛzɔ)",
             "source": "game (Ex. 6: /s, z/ → /ð/)",
-            "pronunciation": "mosð"
+            "pronunciation": "mo-sɛ-ðɔ"
           },
           {
-            "target": "moɣatɛ (< mkatɛ) & karaɣita (< træktə) vs. karamu (< kalamu), motuka",
+            "target": "moɣatɛ (< mkatɛ) & karaɣita (< træktə) vs. karamu (< kalamu), motukaa (< motəka:) & sukuru (< sku:l)",
             "source": "bread & tractor vs. pen, motorcar & school (/k/ retained)",
             "pronunciation": "mo-ɣa-tɛ / ka-ra-ɣi-ta / ka-ra-mu / mo-tu-kaa / su-ku-ru",
             "hint": "Kithaka wa Mberia (2004, OPLL Vol. 2, pp. 50–51, Ex. 8–9)"
@@ -3039,27 +3063,27 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "ndawa (< dawa)",
             "source": "medicine",
-            "pronunciation": "ndawa"
+            "pronunciation": "nda-wa"
           },
           {
             "target": "nderesa (< dirisha)",
             "source": "window",
-            "pronunciation": "nderesa"
+            "pronunciation": "nde-re-sa"
           },
           {
             "target": "ndasita (< dʌstə)",
             "source": "duster",
-            "pronunciation": "ndasita"
+            "pronunciation": "nda-si-ta"
           },
           {
             "target": "ndiŋgiri (< digri:) | duka → ruka (Cl. 11) → pl. nduka (Cl. 10)",
             "source": "degree | shop → shops",
-            "pronunciation": "ndiŋgiri-duka-ruka-pl"
+            "pronunciation": "ndi-ŋgi-ri / ru-ka / ndu-ka"
           },
           {
             "target": "sanduku → esanduku (Cl. 5)",
             "source": "box",
-            "pronunciation": "sanduku-esanduku"
+            "pronunciation": "sa-ndu-ku / e-sa-ndu-ku"
           }
         ],
         "sentences": [
@@ -3077,31 +3101,31 @@ export const MERU_UNITS: CourseUnit[] = [
         "tips": "Champion (1912, pp. 72–89) documents the 5 male grades (Karna, Kaegi, Ntheka/Ngoromo, Ntheka Nguru, Kisungi/Mundu Mukuru), 6 female grades (Karna, Kali, Idika [pl. Matika], Mwiki, Mukaa/Mubiki, Mwekuru), the Mutialu smithy (kianda), the 5th-night death rite Thela Luku, and all 14 Atharaka clans.",
         "words": [
           {
-            "target": "Male Grades: Karna → Kaegi → Ntheka/Ngoromo (Mbabu & Mkilamana) →",
-            "source": "Complete Atharaka male and female life-stage grades and circumcision-year sets (pp. 72–73)",
-            "pronunciation": "male-grades-karna-kaegi",
+            "target": "Karna → Kaegi → Ntheka/Ngoromo → Ntheka Nguru → Kisungi (Mundu Mukuru)",
+            "source": "Five Atharaka male life-stage grades from infancy to elderhood",
+            "pronunciation": "kar-na / ka-e-gi / nthe-ka / ki-su-ngi",
             "hint": "Arthur M. Champion (1912, JRAI Vol. 42, pp. 72–73)"
           },
           {
-            "target": "Mutialu Smithy (kianda, pp. 77–78): longo (bellows), ngao (nozzle)",
-            "source": "Complete blacksmithing terminology at Mutialu in Atharaka",
-            "pronunciation": "mutialu-smithy-longo",
+            "target": "Kianda: longo (bellows), ngao (nozzle), kiria (tongs), nondo (hammer)",
+            "source": "Atharaka blacksmith's smithy (kianda) and ironworking tools at Mutialu",
+            "pronunciation": "kia-nda / lo-ngo / nga-o / ki-ria",
             "hint": "Arthur M. Champion (1912, JRAI Vol. 42, pp. 77–78)"
           },
           {
             "target": "Thela Luku",
-            "source": "5th-night burial purification, p. 85",
+            "source": "5th-night burial purification rite",
             "pronunciation": "thela-luku"
           },
           {
             "target": "Chiama",
-            "source": "Mukuru ya Chiama, Ngoromo ya Chiama, Akuru ya Nthuli, Ithembo, pp. 86–87",
+            "source": "Supreme council of elders (Mukuru ya Chiama, Ngoromo ya Chiama, Akuru ya Nthuli) at the Ithembo grove",
             "pronunciation": "chiama"
           },
           {
-            "target": "14 Atharaka Clans (pp. 88–89): Utonga, Kandi, Mululu, Nyaga, Mbula",
-            "source": "Complete table of 14 Atharaka clans and Plate X material artifacts",
-            "pronunciation": "14-atharaka-clans-utonga",
+            "target": "Utonga, Kandi, Mululu, Nyaga, Mbula, Kanyeri, Mgombe, Nthambu, Mauthia, Kathugu, Kamugwe, Igoki, Kijige, Gantue",
+            "source": "The 14 exogamous clans of the Atharaka",
+            "pronunciation": "u-to-nga / ka-ndi / mu-lu-lu / nya-ga",
             "hint": "Arthur M. Champion (1912, JRAI Vol. 42, pp. 88–90 & Plate X)"
           }
         ],
@@ -3203,7 +3227,7 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "Tigwa na wega",
             "source": "Stay well / Go well (Goodbye)",
-            "pronunciation": "tigwa na we-ga / thii na we-ga"
+            "pronunciation": "tigwa na we-ga"
           },
           {
             "target": "Muuga rũũkũ",
@@ -3273,7 +3297,7 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "iiri",
             "source": "Two",
-            "pronunciation": "ee-ree / bah-ee-ree"
+            "pronunciation": "ee-ree"
           },
           {
             "target": "imwe",

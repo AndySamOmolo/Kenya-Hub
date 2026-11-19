@@ -106,7 +106,7 @@
         {
           "english": "Nine",
           "translation": "ikany-kaoŋon (5+4)",
-          "pronunciation": "ikany-kao on",
+          "pronunciation": "i-ka-ny ka-o-ngon",
           "context": "Hobley 1902 p. 95 (Elgumi) & Johnston 1902 p. 851 (Elgumi/Wamia) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -118,7 +118,7 @@
         {
           "english": "Four",
           "translation": "ioŋon (m.) / aoŋon (f.)",
-          "pronunciation": "io on",
+          "pronunciation": "i-o-ngon",
           "context": "Hobley 1902 p. 95 (Elgumi) & Johnston 1902 p. 851 (Elgumi/Wamia) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -196,7 +196,7 @@
         {
           "english": "Nine (9, lit. 5+4)",
           "translation": "ikany-kaoŋon (m.) / akany-kaoŋon (f.)",
-          "pronunciation": "ikany-kao on",
+          "pronunciation": "i-ka-ny ka-o-ngon",
           "context": "Wikipedia Teso language — Cardinal numbers • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -231,7 +231,7 @@
         },
         {
           "english": "Six",
-          "translation": "kanyi or akanya kape",
+          "translation": "kanyi kape / akanya kape",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902) — Elgumi/Teso"
         },
         {
@@ -300,9 +300,9 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "Baby / infant",
-          "translation": "imukeru / ipese (baby girl)",
-          "pronunciation": "imukeru",
+          "english": "Baby / infant (or baby girl)",
+          "translation": "imukeru / ipese",
+          "pronunciation": "i-mu-ke-ru / i-pe-se",
           "context": "Wikipedia Teso language — Neuter nouns • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -349,8 +349,8 @@
         },
         {
           "english": "Person / man (pl. people; generic mankind)",
-          "translation": "etuŋanan / ituŋanan (pl. ituŋa; mankind: ituŋasinei)",
-          "pronunciation": "etu anan",
+          "translation": "etuŋanan / ituŋanan (pl. ituŋa / ituŋasinei)",
+          "pronunciation": "e-tu-nga-nan",
           "context": "Wikipedia Teso language — Plural formation • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -366,9 +366,9 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "Full brother vs. full sister (Ateso kinship table)",
-          "translation": "Onac vs. Inac (maternal half-sibling: Okookai / Ikookai)",
-          "pronunciation": "onac vs. inac",
+          "english": "Full brother vs. full sister (or maternal half-sibling)",
+          "translation": "Onac vs. Inac (Okookai / Ikookai)",
+          "pronunciation": "o-nac vs. i-nac",
           "context": "Archdeacon A. L. Kitching in Rev. John Roscoe (1915, p. 292) — The Northern Bantu • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -506,7 +506,7 @@
         },
         {
           "english": "Husband / wife (Bateso spouse terms)",
-          "translation": "Okilinika (husband) / Aberoka (wife)",
+          "translation": "Okilinika / Aberoka",
           "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
         },
         {
@@ -1122,9 +1122,9 @@
           "context": "Ateso (Vossen 1982) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "Cock / rooster (m.) / hen (f.) / chick",
-          "translation": "ekokor (m.) / akokor (f.) / imiot (chick)",
-          "pronunciation": "ekokor",
+          "english": "Cock / rooster (m.) / hen (f.) / chick (n.)",
+          "translation": "ekokor (m.) / akokor (f.) / imiot (n.)",
+          "pronunciation": "e-ko-kor",
           "context": "Wikipedia Teso language — Gender classes • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -1141,8 +1141,8 @@
         },
         {
           "english": "Dog (masc.) / bitch (fem.) / puppy (neut.)",
-          "translation": "ekingok (m.) / akingok (f.) / ikiŋok (puppy)",
-          "pronunciation": "ekingok",
+          "translation": "ekingok (m.) / akingok (f.) / ikiŋok (n.)",
+          "pronunciation": "e-ki-ngok",
           "context": "Wikipedia Teso language — Gender classes • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -1401,9 +1401,9 @@
           "context": "Ateso (Vossen 1982) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "Earth / country / land (pl. countries; the world)",
-          "translation": "akwap (pl. akwapin; world: akwapisinei)",
-          "pronunciation": "akwap",
+          "english": "Earth / country / land (pl. countries / the world)",
+          "translation": "akwap (pl. akwapin / akwapisinei)",
+          "pronunciation": "a-kwap",
           "context": "Wikipedia Teso language — Plural formation • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -1614,8 +1614,8 @@
         },
         {
           "english": "Tea / coffee",
-          "translation": "ecaai (tea) / akaawa (coffee)",
-          "pronunciation": "ecaai",
+          "translation": "ecaai / akaawa",
+          "pronunciation": "e-caai / a-kaa-wa",
           "context": "Wikipedia Teso language — Masculine nouns • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -1858,9 +1858,9 @@
       "icon": "🏃",
       "entries": [
         {
-          "english": "Go",
-          "translation": "alosit (kolot! = go!)",
-          "pronunciation": "alosit",
+          "english": "Go (imperative: go!)",
+          "translation": "alosit (kolot!)",
+          "pronunciation": "a-lo-sit",
           "context": "Johnston 1902 p. 851 (Elgumi/Wamia) & Hobley 1902 pp. 92–95 • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -1870,9 +1870,9 @@
           "context": "Hobley 1902 & Johnston 1902 • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "Come",
-          "translation": "abunore (bia ne! = come here!)",
-          "pronunciation": "abunore",
+          "english": "Come (imperative: come here!)",
+          "translation": "abunore (bia ne!)",
+          "pronunciation": "a-bu-no-re",
           "context": "Johnston 1902 p. 851 (Elgumi/Wamia) & Hobley 1902 pp. 92–95 • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -2111,20 +2111,20 @@
         },
         {
           "english": "To kick (close e) vs. To lay out (open ɛ)",
-          "translation": "aipet e (kick) vs. aipet [ɛ] (lay out)",
-          "pronunciation": "aipet",
+          "translation": "aipet [e] vs. aipet [ɛ]",
+          "pronunciation": "ai-pet",
           "context": "Wikipedia Teso language — Vowel contrast • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
           "english": "To share (open ɔ) vs. To insult (close o)",
-          "translation": "aimor [ɔ] (share) vs. aimor o (insult)",
-          "pronunciation": "aimor",
+          "translation": "aimor [ɔ] vs. aimor [o]",
+          "pronunciation": "ai-mor",
           "context": "Wikipedia Teso language — Vowel contrast • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
           "english": "To scratch the earth / scoop (close u) vs. To blow (open ʊ)",
-          "translation": "aikut u (scoop) vs. aikut [ʊ] (blow)",
-          "pronunciation": "aikut",
+          "translation": "aikut [u] vs. aikut [ʊ]",
+          "pronunciation": "ai-kut",
           "context": "Wikipedia Teso language — Vowel contrast • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -2482,7 +2482,7 @@
     {
       "id": "time",
       "name": "Time, Seasons & Calendar",
-      "icon": "Clock",
+      "icon": "⏰",
       "entries": [
         {
           "english": "Day",
@@ -2714,8 +2714,8 @@
           "context": "Wikipedia Teso language — Adverbs of place • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "I / me",
-          "translation": "eong / ayong (prefix a-)",
+          "english": "I / me (verbal prefix a-)",
+          "translation": "eong / ayong (a-)",
           "pronunciation": "eh-ohng",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
@@ -2726,8 +2726,8 @@
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "We / us",
-          "translation": "isio / oni (prefix ki-)",
+          "english": "We / us (verbal prefix ki-)",
+          "translation": "isio / oni (ki-)",
           "pronunciation": "isio",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
@@ -2744,8 +2744,8 @@
           "context": "Wikipedia Teso language — Abstract nouns • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "He / She",
-          "translation": "ngesi (prefix e-)",
+          "english": "He / She (verbal prefix e-)",
+          "translation": "ngesi (e-)",
           "pronunciation": "ngesi",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
@@ -2762,14 +2762,14 @@
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "Zero / naught",
-          "translation": "esupur (traditional) / enoot",
-          "pronunciation": "esupur",
+          "english": "Zero (traditional) / naught",
+          "translation": "esupur / enoot",
+          "pronunciation": "e-su-pur / e-noot",
           "context": "Wikipedia Teso language — Numerals • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "You (singular)",
-          "translation": "ijo (ion, prefix i-)",
+          "english": "You (singular, verbal prefix i-)",
+          "translation": "ijo / ion (i-)",
           "pronunciation": "ee-joh",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
@@ -2871,8 +2871,8 @@
         },
         {
           "english": "Again / No / Because",
-          "translation": "bobo (again) / mam (no) / naarai (because)",
-          "pronunciation": "bobo",
+          "translation": "bobo / mam / naarai",
+          "pronunciation": "bo-bo / mam / naa-rai",
           "context": "Wikipedia Teso language — Alphabet & Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -2949,8 +2949,8 @@
         },
         {
           "english": "Right side / Left side",
-          "translation": "teten (right) / kediany (left)",
-          "pronunciation": "teten",
+          "translation": "teten / kediany",
+          "pronunciation": "te-ten / ke-dia-ny",
           "context": "Wikipedia Teso language — Adverbs of place • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -3016,7 +3016,7 @@
         {
           "english": "Thursday (Day of the week)",
           "translation": "Nakaung’on (Ung)",
-          "pronunciation": "nakaung on",
+          "pronunciation": "na-ka-u-ngon",
           "context": "Ateso — GitHub unicode-org/cldr (teo.xml) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -3171,8 +3171,8 @@
         },
         {
           "english": "Where? / There (not far) / Over there",
-          "translation": "ai, aibo? (where?) / nen (there) / ngina (over there)",
-          "pronunciation": "ai aibo",
+          "translation": "ai?, aibo? / nen / ngina",
+          "pronunciation": "ai / ai-bo / nen / ngi-na",
           "context": "Wikipedia Teso language — Adverbs of place • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -3207,8 +3207,8 @@
         },
         {
           "english": "Inside / In the middle (between) / Behind / In front",
-          "translation": "toma (inside) / kiding (between) / kau (behind) / ngaren (in front)",
-          "pronunciation": "toma",
+          "translation": "toma / kiding / kau / ngaren",
+          "pronunciation": "to-ma / ki-ding / kau / nga-ren",
           "context": "Wikipedia Teso language — Adverbs of place • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -3440,8 +3440,8 @@
         },
         {
           "english": "One",
-          "translation": "epe also apuru",
-          "pronunciation": "e-pe al-so a-pu-ru",
+          "translation": "epe / apuru",
+          "pronunciation": "e-pe / a-pu-ru",
           "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -3949,7 +3949,7 @@
           "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
-          "english": "Smoke",
+          "english": "Moon / Month",
           "translation": "elap",
           "pronunciation": "e-lap",
           "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
@@ -3974,8 +3974,8 @@
         },
         {
           "english": "Three",
-          "translation": "auni or uni",
-          "pronunciation": "auni",
+          "translation": "auni / uni",
+          "pronunciation": "au-ni / u-ni",
           "context": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -4034,8 +4034,8 @@
         },
         {
           "english": "Shield",
-          "translation": "(chikumba) ebuku",
-          "pronunciation": "chikumba ebuku",
+          "translation": "ebuku (chikumba)",
+          "pronunciation": "e-bu-ku",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -4184,8 +4184,8 @@
         },
         {
           "english": "Salutation",
-          "translation": "mata and yoka yoka",
-          "pronunciation": "mata",
+          "translation": "mata / yoka yoka",
+          "pronunciation": "ma-ta / yo-ka yo-ka",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Elgumi / Ateso) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {
@@ -4292,8 +4292,8 @@
         },
         {
           "english": "Elgumi (Ateso / Wamia) Quinary-Decimal Numerals 1–10 in Hobley (1902, Ch. VII § II, p. 95)",
-          "translation": "1 epe (also apuru), 2 are, 3 auni (or uni), 4 aungwen (or ongwon), 5 ekan (or akanyi), 6 kanyi kape (or akanya kape), 7 kanyi-kare, 8 kanyi kauni, 9 kanyi-ki-ongwon (or akanya kangwun), 10 atomon",
-          "pronunciation": "1 epe",
+          "translation": "1 epe / apuru, 2 are, 3 auni / uni, 4 aungwen / ongwon, 5 ekan / akanyi, 6 kanyi kape / akanya kape, 7 kanyi-kare, 8 kanyi kauni, 9 kanyi-ki-ongwon / akanya kangwun, 10 atomon",
+          "pronunciation": "e-pe / a-re / au-ni / au-ngwen / e-kan / a-to-mon",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. VII § II, p. 95) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
         },
         {

@@ -544,8 +544,8 @@
         },
         {
           "english": "Six",
-          "translation": "Ikumi ne mo",
-          "pronunciation": "ne m",
+          "translation": "Isano ne mo",
+          "pronunciation": "i-sa-no ne mo",
           "context": "Ekegusii / Igizii Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
@@ -556,8 +556,8 @@
         },
         {
           "english": "Eight",
-          "translation": "Isano Isano isatu",
-          "pronunciation": "isatu",
+          "translation": "Isano na isatu",
+          "pronunciation": "i-sa-no na i-sa-tu",
           "context": "Ekegusii / Igizii Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
@@ -761,18 +761,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Bone",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Country",
           "translation": "Ekibala",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Country",
-          "translation": "Ebi",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
@@ -783,36 +773,6 @@
         {
           "english": "One",
           "translation": "Yemu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Six",
-          "translation": "ne mo",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Seven",
-          "translation": "na īwere",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Eight",
-          "translation": "isatu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Thirty",
-          "translation": "gatatu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Forty",
-          "translation": "ganne",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Fifty",
-          "translation": "gatano",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
@@ -1420,11 +1380,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Man",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Son (my)",
           "translation": "wane",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
@@ -1440,11 +1395,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Song",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "That man",
           "translation": "uuria",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
@@ -1452,11 +1402,6 @@
         {
           "english": "Breast (man's)",
           "translation": "Eki-kuba",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Breast (man's)",
-          "translation": "evi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -1472,11 +1417,6 @@
         {
           "english": "Chief",
           "translation": "Omw-ami",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Chief",
-          "translation": "av",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -1517,11 +1457,6 @@
         {
           "english": "Man",
           "translation": "Omu-ntu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Man",
-          "translation": "aba-, ava",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -1582,11 +1517,6 @@
         {
           "english": "Woman",
           "translation": "Omo-ke",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Woman",
-          "translation": "ava",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -2565,11 +2495,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Arm",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Ear",
           "translation": "Outu",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
@@ -2590,18 +2515,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Eye",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Finger",
           "translation": "Ekiala",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Finger",
-          "translation": "Ebi",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
@@ -2610,18 +2525,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Toe",
-          "translation": "Ebi",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Arm",
           "translation": "Omo-kono",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Arm",
-          "translation": "ama",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -2660,11 +2565,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "Body",
-          "translation": "emi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "Ear",
           "translation": "O-uto, Og-utu, Og-oto",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
@@ -2677,11 +2577,6 @@
         {
           "english": "Eye",
           "translation": "Ir-iso",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Eye",
-          "translation": "ama",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -2700,11 +2595,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "Finger",
-          "translation": "evi- or ebi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "Foot",
           "translation": "Eke-reṅge",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
@@ -2720,11 +2610,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "Hair",
-          "translation": "ci",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "Hand",
           "translation": "Egi-sanyi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
@@ -2737,11 +2622,6 @@
         {
           "english": "Head",
           "translation": "Omu-twe",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Head",
-          "translation": "emi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -2802,11 +2682,6 @@
         {
           "english": "Tongue",
           "translation": "Olu-meme",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Tongue",
-          "translation": "ci",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -3368,8 +3243,8 @@
         },
         {
           "english": "Which (fowl) will you give me ?",
-          "translation": "ngoko eriri (fowl) (which) okonga (will you give)",
-          "pronunciation": "ngoko eriri",
+          "translation": "ngoko eriri okonga",
+          "pronunciation": "ngoko eriri okonga",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
@@ -3713,11 +3588,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Cow",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Ant, white (termite)",
           "translation": "I-ce",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
@@ -3744,11 +3614,6 @@
         },
         {
           "english": "Bee",
-          "translation": "pls",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Bee",
           "translation": "cin-juki, cin-coke",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
@@ -3769,11 +3634,6 @@
         },
         {
           "english": "Bull",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Bull",
           "translation": "ici-eri",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
@@ -3784,22 +3644,12 @@
         },
         {
           "english": "Cat",
-          "translation": "ivi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Cat",
           "translation": "Igi-cugu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
           "english": "Cow",
           "translation": "En-ombe",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Cow",
-          "translation": "ciṅ",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -3854,17 +3704,7 @@
         },
         {
           "english": "Guinea-fowl",
-          "translation": "ama",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Guinea-fowl",
           "translation": "Eṅ-kaṅga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Guinea-fowl",
-          "translation": "ciṅ",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -4359,7 +4199,7 @@
         },
         {
           "english": "I want a little stone",
-          "translation": "ndetera, akagena (I want) (little stone)",
+          "translation": "ndetera akagena",
           "pronunciation": "ndetera akagena",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
@@ -4537,11 +4377,6 @@
         },
         {
           "english": "Tree",
-          "translation": "Ri",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Tree",
           "translation": "Umute",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
@@ -4561,28 +4396,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "Day",
-          "translation": "ama",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "Fire",
           "translation": "Omu-riro, Omo-rero",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "Fire",
-          "translation": "emi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "Forest",
           "translation": "Egi-saka",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Forest",
-          "translation": "ebi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -4643,11 +4463,6 @@
         {
           "english": "Tree",
           "translation": "Eri-tumbe or Eli-tumbe",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Tree",
-          "translation": "ama",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -5087,28 +4902,13 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Banana",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Egg",
           "translation": "Irige",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Egg",
-          "translation": "Ama",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Banana",
           "translation": "Ri-gomia",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Banana",
-          "translation": "ama",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -5144,11 +4944,6 @@
         {
           "english": "Maize",
           "translation": "E-bando",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Maize",
-          "translation": "ci",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -5680,8 +5475,8 @@
         },
         {
           "english": "His house",
-          "translation": "peke yake",
-          "pronunciation": "yake",
+          "translation": "Enyumba yake",
+          "pronunciation": "enyumba yake",
           "context": "Ekegusii / Igizii Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
@@ -5857,11 +5652,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Arrow",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Axe",
           "translation": "Igizire",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
@@ -5882,11 +5672,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "Arrow",
-          "translation": "eme",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "Bow",
           "translation": "Ubu-ta",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
@@ -5899,11 +5684,6 @@
         {
           "english": "Cloth",
           "translation": "Eṅ-gobo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Cloth",
-          "translation": "ciṅ",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -5929,11 +5709,6 @@
         {
           "english": "House",
           "translation": "Eny-umba",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "House",
-          "translation": "cin",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         }
       ]
@@ -6687,11 +6462,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "God",
-          "translation": "ciny",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "To go",
           "translation": "genda",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
@@ -6908,11 +6678,6 @@
         {
           "english": "Thief",
           "translation": "Abaibi",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Thief",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
@@ -7381,8 +7146,8 @@
         },
         {
           "english": "The birds flew away",
-          "translation": "chinyoni ngalai- (birds) (flew) chiri (away)",
-          "pronunciation": "chinyoni ngalai-",
+          "translation": "chinyoni ngalaichiri",
+          "pronunciation": "chinyoni ngalaichiri",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
@@ -7814,7 +7579,7 @@
         },
         {
           "english": "In the afternoon / evening (PM day period)",
-          "translation": "Mog",
+          "translation": "Moirigore (Mog)",
           "context": "Ekegusii — GitHub unicode-org/cldr (guz.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
         },
         {
@@ -8447,127 +8212,127 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii (Ekegusii)) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Yawanga",
+          "english": "Kisii sub-clan under Chief Yawanga (Hobley 1902)",
           "translation": "Ugirango",
           "pronunciation": "ugirango",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Kimaina",
+          "english": "Kisii sub-clan under Chief Kimaina (Hobley 1902)",
           "translation": "Mukimusi",
           "pronunciation": "mukimusi",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Munari",
+          "english": "Kisii sub-clan under Chief Munari (Hobley 1902)",
           "translation": "Msasuri",
           "pronunciation": "msasuri",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Borura",
+          "english": "Kisii sub-clan under Chief Borura (Hobley 1902)",
           "translation": "Magichana",
           "pronunciation": "magichana",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Minyigo",
+          "english": "Kisii sub-clan under Chief Minyigo (Hobley 1902)",
           "translation": "Manweni",
           "pronunciation": "manweni",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chiefs Uturi & Mtaruki",
+          "english": "Kisii sub-clan under Chiefs Uturi & Mtaruki (Hobley 1902)",
           "translation": "Mkanyimbo",
           "pronunciation": "mkanyimbo",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Yamombo",
+          "english": "Kisii sub-clan under Chief Yamombo (Hobley 1902)",
           "translation": "Nyaliwali",
           "pronunciation": "nyaliwali",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Maina",
+          "english": "Kisii sub-clan under Chief Maina (Hobley 1902)",
           "translation": "Mowasi",
           "pronunciation": "mowasi",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Kitubo",
+          "english": "Kisii sub-clan under Chief Kitubo (Hobley 1902)",
           "translation": "Umachogi",
           "pronunciation": "umachogi",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chiefs Maina & Ndieki",
+          "english": "Kisii sub-clan under Chiefs Maina & Ndieki (Hobley 1902)",
           "translation": "Mukura",
           "pronunciation": "mukura",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Mwesaba",
+          "english": "Kisii sub-clan under Chief Mwesaba (Hobley 1902)",
           "translation": "Ukeiri",
           "pronunciation": "ukeiri",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Mwakwega",
+          "english": "Kisii sub-clan under Chief Mwakwega (Hobley 1902)",
           "translation": "Wa Koma",
           "pronunciation": "wa-koma",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Sianyo",
+          "english": "Kisii sub-clan under Chief Sianyo (Hobley 1902)",
           "translation": "Woyeki",
           "pronunciation": "woyeki",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Samevita",
+          "english": "Kisii sub-clan under Chief Samevita (Hobley 1902)",
           "translation": "Mwachawi",
           "pronunciation": "mwachawi",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Morema",
+          "english": "Kisii sub-clan under Chief Morema (Hobley 1902)",
           "translation": "Ukitaa",
           "pronunciation": "ukitaa",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Uroo",
+          "english": "Kisii sub-clan under Chief Uroo (Hobley 1902)",
           "translation": "Umwaliwa",
           "pronunciation": "umwaliwa",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Munyanja",
+          "english": "Kisii sub-clan under Chief Munyanja (Hobley 1902)",
           "translation": "Umulenda",
           "pronunciation": "umulenda",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Wato",
+          "english": "Kisii sub-clan under Chief Wato (Hobley 1902)",
           "translation": "Mugika",
           "pronunciation": "mugika",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Sakawa",
+          "english": "Kisii sub-clan under Chief Sakawa (Hobley 1902)",
           "translation": "Yamugei",
           "pronunciation": "yamugei",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Umbachi — sent representatives to Kisumu in November 1900 to request protection",
+          "english": "Kisii sub-clan under Chief Umbachi — sent representatives to Kisumu in November 1900 to request protection (Hobley 1902)",
           "translation": "Mugusero",
           "pronunciation": "mugusero",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
         },
         {
-          "english": "Chief Siambe",
+          "english": "Kisii sub-clan under Chief Siambe (Hobley 1902)",
           "translation": "Matala",
           "pronunciation": "matala",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, p. 51) • Cross-verified with DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0)"
@@ -8832,11 +8597,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
-          "english": "Devil",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
           "english": "Magic",
           "translation": "Rirogo",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
@@ -8864,16 +8624,6 @@
         {
           "english": "Thing",
           "translation": "Ebintu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Thing",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
-        },
-        {
-          "english": "Eleven",
-          "translation": "ne mo",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Igizii."
         },
         {
@@ -8942,18 +8692,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "Ground",
-          "translation": "eve",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "Ground-nut",
           "translation": "Im-bande",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Ground-nut",
-          "translation": "cim",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -8969,11 +8709,6 @@
         {
           "english": "Horn",
           "translation": "Oru-gu-cala",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Horn",
-          "translation": "pl",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -8994,11 +8729,6 @@
         {
           "english": "Lips",
           "translation": "Ege-koba",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Lips",
-          "translation": "eve",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -9057,18 +8787,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "Town",
-          "translation": "emi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "Twins",
           "translation": "Eki-sare",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Twins",
-          "translation": "ebi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -9134,11 +8854,6 @@
         {
           "english": "Ye, you, your",
           "translation": "I-nyūe, Nwe",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
-          "english": "Ye, you, your",
-          "translation": "Mu-?",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
@@ -9232,11 +8947,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
         },
         {
-          "english": "This, these",
-          "translation": "oko, ?",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
-        },
-        {
           "english": "That, those",
           "translation": "u-ria, e-ria",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
@@ -9287,5 +8997,5 @@
   "source": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
   "isoCode": "guz",
   "glottocode": "gusi1247",
-  "totalEntries": 1634
+  "totalEntries": 1576
 }

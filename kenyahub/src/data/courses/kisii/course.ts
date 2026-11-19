@@ -58,97 +58,97 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "omosacha (pl. abasacha)",
             "source": "Man, husband",
-            "pronunciation": "o-mo-sacha / o-mo-kungu",
+            "pronunciation": "o-mo-sacha",
             "hint": "Hobley (1902) & Johnston (1919 #7)"
           },
           {
             "target": "omokungu (pl. abakungu)",
             "source": "Woman, wife",
-            "pronunciation": "o-mo-sacha / o-mo-kungu",
+            "pronunciation": "o-mo-kungu",
             "hint": "Hobley (1902) & Johnston (1919 #7)"
           },
           {
             "target": "omoiseke (pl. abaiseke)",
             "source": "Girl",
-            "pronunciation": "o-moi-se-ke / o-mo-sia",
+            "pronunciation": "o-moi-se-ke",
             "hint": "Class 1/2 nouns (Johnston 1919)"
           },
           {
             "target": "omosia (pl. abasia)",
             "source": "Boy",
-            "pronunciation": "o-moi-se-ke / o-mo-sia",
+            "pronunciation": "o-mo-sia",
             "hint": "Class 1/2 nouns (Johnston 1919)"
           },
           {
             "target": "omogaka (pl. abagaka)",
             "source": "Elder",
-            "pronunciation": "o-mo-ga-ka / ba-ba / ta-ta",
+            "pronunciation": "o-mo-ga-ka",
             "hint": "Kinship & elder nouns (Hobley 1902)"
           },
           {
             "target": "baba",
             "source": "Mother",
-            "pronunciation": "o-mo-ga-ka / ba-ba / ta-ta",
+            "pronunciation": "ba-ba",
             "hint": "Kinship & elder nouns (Hobley 1902)"
           },
           {
             "target": "tata",
             "source": "Father",
-            "pronunciation": "o-mo-ga-ka / ba-ba / ta-ta",
+            "pronunciation": "ta-ta",
             "hint": "Kinship & elder nouns (Hobley 1902)"
           },
           {
             "target": "amache",
             "source": "Water",
-            "pronunciation": "a-mache / a-ma-be-re / o-mo-re-ro",
+            "pronunciation": "a-mache",
             "hint": "Hobley (1902) & Johnston (1919)"
           },
           {
             "target": "amabere",
             "source": "Milk",
-            "pronunciation": "a-mache / a-ma-be-re / o-mo-re-ro",
+            "pronunciation": "a-ma-be-re",
             "hint": "Hobley (1902) & Johnston (1919)"
           },
           {
             "target": "omorero",
             "source": "Fire",
-            "pronunciation": "a-mache / a-ma-be-re / o-mo-re-ro",
+            "pronunciation": "o-mo-re-ro",
             "hint": "Hobley (1902) & Johnston (1919)"
           },
           {
             "target": "enyomba (pl. chinyomba)",
             "source": "House (pl. Houses)",
-            "pronunciation": "enyomba / inka",
+            "pronunciation": "enyomba",
             "hint": "Class 9/10 e-/chi- (Johnston 1919)"
           },
           {
             "target": "inka",
             "source": "Homestead",
-            "pronunciation": "enyomba / inka",
+            "pronunciation": "inka",
             "hint": "Class 9/10 e-/chi- (Johnston 1919)"
           },
           {
             "target": "rigena (pl. amagena)",
             "source": "Stone (pl. Stones)",
-            "pronunciation": "ri-ge-na / o-mo-te",
+            "pronunciation": "ri-ge-na",
             "hint": "Class 5/6 ri-/ama- & Class 3/4 omo-/eme-"
           },
           {
             "target": "omote (pl. emete)",
             "source": "Tree (pl. Trees)",
-            "pronunciation": "ri-ge-na / o-mo-te",
+            "pronunciation": "o-mo-te",
             "hint": "Class 5/6 ri-/ama- & Class 3/4 omo-/eme-"
           },
           {
             "target": "Engoro",
             "source": "God",
-            "pronunciation": "engo-ro / e-rio-ba",
+            "pronunciation": "engo-ro",
             "hint": "Hobley (1902) & Johnston (1919)"
           },
           {
             "target": "Erioba",
             "source": "The Sun",
-            "pronunciation": "engo-ro / e-rio-ba",
+            "pronunciation": "e-rio-ba",
             "hint": "Hobley (1902) & Johnston (1919)"
           }
         ],
@@ -322,61 +322,61 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "isano na ibere",
             "source": "Seven (7, lit. 5+2)",
-            "pronunciation": "i-sa-no na i-be-re / i-sa-no na i-sa-to",
+            "pronunciation": "i-sa-no na i-be-re",
             "hint": "Cardinals 7 & 8"
           },
           {
             "target": "isano na isato",
             "source": "Eight (8, lit. 5+3)",
-            "pronunciation": "i-sa-no na i-be-re / i-sa-no na i-sa-to",
+            "pronunciation": "i-sa-no na i-sa-to",
             "hint": "Cardinals 7 & 8"
           },
           {
             "target": "kianda",
             "source": "Nine (9)",
-            "pronunciation": "kianda / i-ko-mi",
+            "pronunciation": "kianda",
             "hint": "Cardinals 9 & 10"
           },
           {
             "target": "ikomi",
             "source": "Ten (10)",
-            "pronunciation": "kianda / i-ko-mi",
+            "pronunciation": "i-ko-mi",
             "hint": "Cardinals 9 & 10"
           },
           {
             "target": "emerongo ebere",
             "source": "Twenty (20)",
-            "pronunciation": "e-me-rongo e-be-re / ri-ga-na",
+            "pronunciation": "e-me-rongo e-be-re",
             "hint": "Cardinals 20 & 100 (Johnston 1919)"
           },
           {
             "target": "rigana",
             "source": "One hundred (100)",
-            "pronunciation": "e-me-rongo e-be-re / ri-ga-na",
+            "pronunciation": "ri-ga-na",
             "hint": "Cardinals 20 & 100 (Johnston 1919)"
           },
           {
             "target": "okomanya",
             "source": "To know",
-            "pronunciation": "o-ko-manya / o-ko-ro-ra / o-ko-ria / o-konywa",
+            "pronunciation": "o-ko-manya",
             "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
           },
           {
             "target": "okorora",
             "source": "To see",
-            "pronunciation": "o-ko-manya / o-ko-ro-ra / o-ko-ria / o-konywa",
+            "pronunciation": "o-ko-ro-ra",
             "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
           },
           {
             "target": "okoria",
             "source": "To eat",
-            "pronunciation": "o-ko-manya / o-ko-ro-ra / o-ko-ria / o-konywa",
+            "pronunciation": "o-ko-ria",
             "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
           },
           {
             "target": "okonywa",
             "source": "To drink",
-            "pronunciation": "o-ko-manya / o-ko-ro-ra / o-ko-ria / o-konywa",
+            "pronunciation": "o-konywa",
             "hint": "Core verbs (Hobley 1902 & Johnston 1919)"
           }
         ],
@@ -517,115 +517,133 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "inche",
             "source": "I",
-            "pronunciation": "inche aye ere intwe inywe ba-rabwo",
+            "pronunciation": "inche",
             "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
           },
           {
             "target": "aye",
             "source": "you (sg.)",
-            "pronunciation": "inche aye ere intwe inywe ba-rabwo",
+            "pronunciation": "aye",
             "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
           },
           {
             "target": "ere",
             "source": "s/he",
-            "pronunciation": "inche aye ere intwe inywe ba-rabwo",
+            "pronunciation": "ere",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "intwe",
+            "source": "we",
+            "pronunciation": "intwe",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "inywe",
+            "source": "you (pl.)",
+            "pronunciation": "inywe",
+            "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
+          },
+          {
+            "target": "barabwo",
+            "source": "they",
+            "pronunciation": "ba-rabwo",
             "hint": "Johnston (1919, Vol. I, p. 82 #7 Ki-guzii) pronouns"
           },
           {
             "target": "obori",
             "source": "Finger-millet (wimbi)",
-            "pronunciation": "o-bo-ri / a-maemba / e-ra-buo-ni",
+            "pronunciation": "o-bo-ri",
             "hint": "Hobley (1902, pp. 89–91) highland staples"
           },
           {
             "target": "amaemba",
             "source": "Sorghum",
-            "pronunciation": "o-bo-ri / a-maemba / e-ra-buo-ni",
+            "pronunciation": "a-maemba",
             "hint": "Hobley (1902, pp. 89–91) highland staples"
           },
           {
             "target": "erabuoni",
             "source": "Sweet potato",
-            "pronunciation": "o-bo-ri / a-maemba / e-ra-buo-ni",
+            "pronunciation": "e-ra-buo-ni",
             "hint": "Hobley (1902, pp. 89–91) highland staples"
           },
           {
             "target": "obokima",
             "source": "Millet ugali",
-            "pronunciation": "o-bo-ki-ma / o-bou-ki",
+            "pronunciation": "o-bo-ki-ma",
             "hint": "Hobley (1902, pp. 89–91)"
           },
           {
             "target": "obouki",
             "source": "Honey",
-            "pronunciation": "o-bo-ki-ma / o-bou-ki",
+            "pronunciation": "o-bou-ki",
             "hint": "Hobley (1902, pp. 89–91)"
           },
           {
             "target": "ritimo (pl. amatimo)",
             "source": "Spear (pl. Spears)",
-            "pronunciation": "ri-ti-mo / engu-ba",
+            "pronunciation": "ri-ti-mo",
             "hint": "Hobley (1902, pp. 89–91) & Johnston (1919 #7)"
           },
           {
             "target": "enguba",
             "source": "Shield",
-            "pronunciation": "ri-ti-mo / engu-ba",
+            "pronunciation": "engu-ba",
             "hint": "Hobley (1902, pp. 89–91) & Johnston (1919 #7)"
           },
           {
             "target": "obota",
             "source": "Bow",
-            "pronunciation": "o-bo-ta / o-mogwe / o-ro-banga",
+            "pronunciation": "o-bo-ta",
             "hint": "Hobley (1902, pp. 89–91)"
           },
           {
             "target": "omogwe",
             "source": "Arrow",
-            "pronunciation": "o-bo-ta / o-mogwe / o-ro-banga",
+            "pronunciation": "o-mogwe",
             "hint": "Hobley (1902, pp. 89–91)"
           },
           {
             "target": "orobanga",
             "source": "Sword-knife (panga)",
-            "pronunciation": "o-bo-ta / o-mogwe / o-ro-banga",
+            "pronunciation": "o-ro-banga",
             "hint": "Hobley (1902, pp. 89–91)"
           },
           {
             "target": "risaga",
             "source": "Cooperative community work-party",
-            "pronunciation": "ri-sa-ga / e-ge-sa-ra-te",
+            "pronunciation": "ri-sa-ga",
             "hint": "Traditional Gusii institutions"
           },
           {
             "target": "egesarate",
             "source": "Cattle boma",
-            "pronunciation": "ri-sa-ga / e-ge-sa-ra-te",
+            "pronunciation": "e-ge-sa-ra-te",
             "hint": "Traditional Gusii institutions"
           },
           {
             "target": "rogoro",
             "source": "Upperside (Northern standard dialect)",
-            "pronunciation": "ro-go-ro / maa-te",
+            "pronunciation": "ro-go-ro",
             "hint": "Two main Ekegusii dialect zones"
           },
           {
             "target": "maate",
             "source": "Lowerside (South-western dialect)",
-            "pronunciation": "ro-go-ro / maa-te",
+            "pronunciation": "maa-te",
             "hint": "Two main Ekegusii dialect zones"
           },
           {
             "target": "gokama (-kama)",
             "source": "To milk (Dahl’s Law ogo-)",
-            "pronunciation": "go-ka-ma / o-ko-ru-ga",
+            "pronunciation": "go-ka-ma",
             "hint": "Dahl’s Law voicing before voiceless k"
           },
           {
             "target": "okoruga (-ruga)",
             "source": "To cook (oko-)",
-            "pronunciation": "go-ka-ma / o-ko-ru-ga",
+            "pronunciation": "o-ko-ru-ga",
             "hint": "Dahl’s Law voicing before voiceless k"
           },
           {
@@ -983,24 +1001,24 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "N-dugi-ani",
+            "target": "N-dugi-ani. Omw-ana ow-etu",
             "source": "Brother",
-            "pronunciation": "n-dugi-ani omw-ana ow-etu / om-ura om-intu omo-mura om-intu"
+            "pronunciation": "n-dugi-ani / omw-ana ow-etu"
           },
           {
-            "target": "Nya-rukha",
+            "target": "Nya-rukha. Omw-iseke",
             "source": "Sister",
-            "pronunciation": "nya-rukha omw-iseke omo-subati omu-gogo / omo-subati"
+            "pronunciation": "nya-rukha / omw-iseke"
           },
           {
-            "target": "Omw-ana",
+            "target": "Omw-ana (Omo-isia)",
             "source": "Son, boy",
-            "pronunciation": "omw-ana iomo-isia / omw-ana omo-risia"
+            "pronunciation": "omw-ana / omo-isia"
           },
           {
-            "target": "Omo-ke",
+            "target": "Omo-ke (Omu-kunggu)",
             "source": "Wife",
-            "pronunciation": "omo-ke omu-kunggu omu-ka / omo-kare"
+            "pronunciation": "omo-ke / omu-kunggu"
           },
           {
             "target": "umwisia",
@@ -1479,7 +1497,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "Ri-gomia; ama-. Eri-toki; ama- / Eri-toke; ama",
+            "target": "Ri-gomia; ama-. Eri-toki; ama- / Eri-toke; ama-",
             "source": "Banana",
             "pronunciation": "ri-gomia"
           }
@@ -1603,9 +1621,9 @@ export const KISII_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Ege-tinia",
+            "target": "Ege-tinia. Ama-guta / Ege-tinia; evi-",
             "source": "Fat, oil",
-            "pronunciation": "ege-tinia ama-guta / ege-tinia"
+            "pronunciation": "ege-tinia / ama-guta"
           },
           {
             "target": "In-jala, en-jara / En-cara",
@@ -1806,7 +1824,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Hobley 1902 p. 63 & Johnston 1919 #7"
           },
           {
-            "target": "engeni",
+            "target": "eng'enang'eni",
             "source": "Star",
             "pronunciation": "eng'e-nang'e-ni",
             "hint": "Hobley 1902 p. 67 & Johnston 1919 #7"
@@ -1826,7 +1844,7 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "Eri-guru",
             "source": "Sky",
-            "pronunciation": "eri-guru eri-oba / eri-oba"
+            "pronunciation": "eri-guru"
           }
         ],
         "sentences": [
@@ -1918,13 +1936,13 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "risase",
             "source": "Sun",
-            "pronunciation": "ri-sa-se / o-mo-ba-so",
+            "pronunciation": "ri-sa-se",
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
             "target": "omobaso",
-            "source": "daytime",
-            "pronunciation": "ri-sa-se / o-mo-ba-so",
+            "source": "Daytime",
+            "pronunciation": "o-mo-ba-so",
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
@@ -1963,7 +1981,7 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "Em-beho",
             "source": "Wind",
-            "pronunciation": "em-beho omw-ieka / em-beho omo-kama eme"
+            "pronunciation": "em-beho"
           }
         ],
         "sentences": [
@@ -2093,31 +2111,31 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "obori",
             "source": "Finger-millet (wimbi)",
-            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "pronunciation": "o-bo-ri",
             "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
           },
           {
             "target": "amaemba",
             "source": "Sorghum",
-            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "pronunciation": "a-maemba",
             "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
           },
           {
             "target": "rigomia (ritoke)",
             "source": "Banana",
-            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "pronunciation": "ri-go-mia / ri-to-ke",
             "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
           },
           {
             "target": "erabuoni",
             "source": "Sweet potato",
-            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "pronunciation": "e-ra-buo-ni",
             "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
           },
           {
             "target": "obouki",
             "source": "Honey",
-            "pronunciation": "o-bo-ri / a-maemba / ri-go-mia / e-ra-buo-ni / o-bou-ki",
+            "pronunciation": "o-bou-ki",
             "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
           },
           {
@@ -2195,17 +2213,17 @@ export const KISII_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Amany-ingga / Amainy-ingga / Ama-sere. Amainy-ingga",
+            "target": "Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga",
             "source": "Blood",
             "pronunciation": "amany-ingga"
           },
           {
-            "target": "Eki-kuba; evi- / Ege-kuba; eve-. Eng-kuba; cing",
+            "target": "Eki-kuba; evi- / Ege-kuba; eve-. Eng-kuba; cing-",
             "source": "Breast (man's)",
             "pronunciation": "eki-kuba"
           },
           {
-            "target": "Li-bere / Olu-bere; cim",
+            "target": "Li-bere / Olu-bere; cim-",
             "source": "Breast (woman's)",
             "pronunciation": "li-bere / olu-bere"
           },
@@ -2215,7 +2233,7 @@ export const KISII_UNITS: CourseUnit[] = [
             "pronunciation": "eki-ara"
           },
           {
-            "target": "E-tukia; ci",
+            "target": "E-tukia; ci-",
             "source": "Hair",
             "pronunciation": "e-tukia"
           },
@@ -2227,12 +2245,12 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "En-teme",
             "source": "Heart",
-            "pronunciation": "en-teme eng-koro / eng-koro"
+            "pronunciation": "en-teme"
           },
           {
             "target": "Ye-tinggiro",
             "source": "Heel",
-            "pronunciation": "ye-tinggiro iki-talenggi / ege-tinggiro eke-suguro"
+            "pronunciation": "ye-tinggiro"
           },
           {
             "target": "Eri-ru / Eri-rū",
@@ -2512,13 +2530,13 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "gesa",
             "source": "To harvest",
-            "pronunciation": "ge-sa / ri-ge-sa",
+            "pronunciation": "ge-sa",
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
             "target": "rigesa",
-            "source": "harvest season",
-            "pronunciation": "ge-sa / ri-ge-sa",
+            "source": "Harvest season",
+            "pronunciation": "ri-ge-sa",
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
@@ -2542,13 +2560,13 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "okoria",
             "source": "to eat",
-            "pronunciation": "o-ko-ria / o-konywa",
+            "pronunciation": "o-ko-ria",
             "hint": "Ekegusii"
           },
           {
             "target": "okonywa",
             "source": "to drink (Class 15 infinitives)",
-            "pronunciation": "o-ko-ria / o-konywa",
+            "pronunciation": "o-konywa",
             "hint": "Ekegusii"
           }
         ],
@@ -2683,49 +2701,49 @@ export const KISII_UNITS: CourseUnit[] = [
             "target": "Ngotenga",
             "source": "I dance",
             "pronunciation": "ngo-tenga",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Nangire",
             "source": "I come not",
             "pronunciation": "nangi-re",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Ngoja",
             "source": "I come",
             "pronunciation": "ngo-ja",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Narēnta",
             "source": "I bring",
             "pronunciation": "na-renta",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Inje ndu",
             "source": "I am",
             "pronunciation": "inje ndu",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Yaya",
             "source": "No, not",
             "pronunciation": "ya-ya",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Ariá",
             "source": "There",
             "pronunciation": "a-ria",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "ñgi",
             "source": "Plenty",
             "pronunciation": "nggi",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           }
         ],
         "sentences": [
@@ -2745,7 +2763,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "I dance",
               "I bring"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "type": "match_pairs",
@@ -2780,7 +2798,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "Inje ndu",
               "Nangire"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           }
         ]
       },
@@ -2795,49 +2813,49 @@ export const KISII_UNITS: CourseUnit[] = [
             "target": "Emuamu",
             "source": "Black",
             "pronunciation": "e-mua-mu",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Aīya, Aiga",
             "source": "Here",
             "pronunciation": "ai-ya ai-ga",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Endabu",
             "source": "White",
             "pronunciation": "enda-bu",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "saja, -gore",
             "source": "Male",
             "pronunciation": "sa-ja go-re",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "kĕ",
             "source": "Little",
             "pronunciation": "ke",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "kuru",
             "source": "Great",
             "pronunciation": "ku-ru",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "uya, -ya; Abantu baya = good men",
             "source": "Good",
             "pronunciation": "uya ya",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Enkari, -kari",
             "source": "Female",
             "pronunciation": "enka-ri ka-ri",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           }
         ],
         "authoredExercises": [
@@ -2851,7 +2869,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "Black",
               "Male"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "type": "match_pairs",
@@ -2886,7 +2904,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "kĕ",
               "Aīya"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           }
         ]
       }
@@ -2911,49 +2929,49 @@ export const KISII_UNITS: CourseUnit[] = [
             "target": "bi",
             "source": "Bad",
             "pronunciation": "bi",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Abana babo",
             "source": "Their children",
             "pronunciation": "a-ba-na ba-bo",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Riroba rienu",
             "source": "Your country",
             "pronunciation": "ri-ro-ba rie-nu",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Omuji uitu",
             "source": "Our town",
             "pronunciation": "o-mu-ji ui-tu",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "yake (-ake)",
             "source": "His / Her (possessive)",
             "pronunciation": "ya-ke",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "yāo (-ao)",
             "source": "Your (singular possessive)",
             "pronunciation": "yao",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Enyumba yane",
             "source": "My house",
             "pronunciation": "enyumba ya-ne",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "ulia",
             "source": "That (yonder, Class 3)",
             "pronunciation": "u-lia",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           }
         ],
         "sentences": [
@@ -2985,7 +3003,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "Our town",
               "Bad"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "type": "match_pairs",
@@ -3020,7 +3038,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "Abana babo",
               "Riroba rienu"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)",
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)",
             "acceptedAnswers": [
               "yake (-ake)",
               "yake"
@@ -3039,49 +3057,49 @@ export const KISII_UNITS: CourseUnit[] = [
             "target": "Umute uyu",
             "source": "This tree",
             "pronunciation": "u-mu-te uyu",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "uuria",
             "source": "That person (yonder, Class 1)",
             "pronunciation": "uu-ria",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Omuntu oyu",
             "source": "This man",
             "pronunciation": "o-muntu oyu",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "onsi (bonsi, etc.)",
             "source": "All",
             "pronunciation": "onsi",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Abo",
             "source": "They",
             "pronunciation": "abo",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Inyue",
             "source": "You",
             "pronunciation": "inyue",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Iewi",
             "source": "We",
             "pronunciation": "ie-wi",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "target": "Olia",
             "source": "He",
             "pronunciation": "o-lia",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           }
         ],
         "sentences": [
@@ -3105,7 +3123,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "This man",
               "All"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
             "type": "match_pairs",
@@ -3140,7 +3158,7 @@ export const KISII_UNITS: CourseUnit[] = [
               "uuria",
               "Omuntu oyu"
             ],
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 958–966)"
+            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           }
         ]
       }
@@ -3179,7 +3197,7 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "Erioba",
             "source": "Sun",
-            "pronunciation": "engoro"
+            "pronunciation": "e-rio-ba"
           },
           {
             "target": "Amace",
@@ -3260,7 +3278,7 @@ export const KISII_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Omuntu oyu — Umute uyu — Omuji uitu — Riroba rienu — Abana babo.",
-            "source": "This man — This tree — Our town — Your country — Their children ."
+            "source": "This man — This tree — Our town — Your country — Their children."
           }
         ]
       },
@@ -3339,7 +3357,7 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "Bwakire!",
             "source": "Hello",
-            "pronunciation": "bwah-kee-reh / m-boo-yah moh-noh"
+            "pronunciation": "bwah-kee-reh"
           },
           {
             "target": "Mbuya mono",
@@ -3419,52 +3437,52 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "target": "-mu, -mo",
             "source": "One",
-            "pronunciation": "mu -mo / -mo -mwe"
+            "pronunciation": "mu / mo"
           },
           {
             "target": "-beri, -viri",
             "source": "Two",
-            "pronunciation": "be-ri -viri / -viri"
+            "pronunciation": "be-ri / vi-ri"
           },
           {
             "target": "-sano na i-mo",
             "source": "Six",
-            "pronunciation": "-sano"
+            "pronunciation": "sa-no na i-mo"
           },
           {
             "target": "I-kumi",
             "source": "Ten",
-            "pronunciation": "i-kumi omu-ronggo / i-kumi omu-ronggu"
+            "pronunciation": "i-kumi"
           },
           {
             "target": "-nye, -nne",
             "source": "Four",
-            "pronunciation": "nye -nne / -nne"
+            "pronunciation": "nye / nne"
           },
           {
             "target": "-sano, -tanu",
             "source": "Five",
-            "pronunciation": "sa-no -tanu / -tanu"
+            "pronunciation": "sa-no / ta-nu"
           },
           {
             "target": "Ki-anda",
             "source": "Nine",
-            "pronunciation": "ki-anda / ki-anda k-enda"
+            "pronunciation": "ki-anda"
           },
           {
             "target": "-satu, -tatu",
             "source": "Three",
-            "pronunciation": "sa-tu -tatu / -tatu"
+            "pronunciation": "sa-tu / ta-tu"
           },
           {
             "target": "-sano na i-were",
             "source": "Seven",
-            "pronunciation": "-sano"
+            "pronunciation": "sa-no na i-we-re"
           },
           {
             "target": "-sano na i-satu",
             "source": "Eight",
-            "pronunciation": "-sano na i-satu"
+            "pronunciation": "sa-no na i-sa-tu"
           }
         ],
         "sentences": []

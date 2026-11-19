@@ -1926,7 +1926,7 @@
         },
         {
           "english": "How many (Luwanga)",
-          "translation": "fi-nga, wa-nga¹",
+          "translation": "fi-nga, wa-nga",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
@@ -2036,11 +2036,6 @@
         },
         {
           "english": "Country",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "Country",
           "translation": "Eṣibala",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lurimi (A Dialect Of Luwanga)."
         },
@@ -2096,11 +2091,6 @@
         },
         {
           "english": "Bone",
-          "translation": "ama",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Bone",
           "translation": "Iṅ-kumba",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
@@ -2112,11 +2102,6 @@
         {
           "english": "Country",
           "translation": "Eši-bala, Esi-wala",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
-          "english": "Country",
-          "translation": "fi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
         {
@@ -2215,7 +2200,7 @@
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 11)"
         },
         {
-          "english": "You (will) give it water … when (the time) arrives at one o",
+          "english": "You (will) give it water … when (the time) arrives at one o'clock",
           "translation": "ʊ-gɪ-h-e a-ma-aze… nɪ-ɪ-dook-a saa saba",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 11)"
         },
@@ -2258,26 +2243,6 @@
           "english": "There is one particular window that is in all rooms",
           "translation": "ri-dirisha lla-ra ri-vey-e mu zi-rumu zy-oosi",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
-        },
-        {
-          "english": "The chocolate melted for a few seconds/in a few seconds",
-          "translation": "Il cioccolato è fuso per pochi secondi/in pochi secondi",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The chocolate melted for a few seconds/in a few seconds",
-          "translation": "Il cioccolato si è fuso per pochi secondi/in pochi secondi",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The temperature altered for two hours",
-          "translation": "Italian (Schäfer 2008)",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "They gave Sipho money",
-          "translation": "bá-níké ú-Síphó í-mà:li. IO-DO",
-          "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Lubukusu & Bantu (Ch. 32)"
         }
       ]
     },
@@ -2809,12 +2774,6 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Father",
-          "translation": "baba",
-          "pronunciation": "ba-ba",
-          "context": "Lu-Wanga (Awa-Rimi dialect) — C. W. Hobley, Eastern Uganda (1902, Ch. VI) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Friend",
           "translation": "umwidza",
           "pronunciation": "um-widz-a",
@@ -2846,7 +2805,7 @@
         },
         {
           "english": "Father",
-          "translation": "Baba. [Addenda: Omu-kofu]",
+          "translation": "Baba.; Omu-kofu",
           "pronunciation": "ba-ba ad-dend-a o-mu koh-fu",
           "context": "5a. Lu-wanga / Lu-kabarasi — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -3193,12 +3152,6 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Step-father",
-          "translation": "baba",
-          "pronunciation": "ba-ba",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
           "english": "Medicine man",
           "translation": "mfumo",
           "pronunciation": "mfu-mo",
@@ -3272,7 +3225,7 @@
         },
         {
           "english": "Doctor (medicine man)",
-          "translation": "Umu-fumu. [Addenda: Omu-mali]",
+          "translation": "Umu-fumu.; Omu-mali",
           "pronunciation": "umu-fumu. [addenda: omu-mali]",
           "context": "5a. Lu-wanga / Lu-kabarasi — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -3284,7 +3237,7 @@
         },
         {
           "english": "Doctor (medicine man)",
-          "translation": "Umu-fumu. [Addenda: Omu-mali] / Umu-sanje",
+          "translation": "Umu-fumu.; Omu-mali / Umu-sanje",
           "pronunciation": "umu-fumu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -3760,12 +3713,12 @@
         },
         {
           "english": "Doctor (medicine man) (Luwanga/Lukabras)",
-          "translation": "Umu-fumu. [Addenda: Omu-mali]",
+          "translation": "Umu-fumu.; Omu-mali",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
         {
           "english": "Father (Luwanga/Lukabras)",
-          "translation": "Baba. [Addenda: Omu-kofu]",
+          "translation": "Baba.; Omu-kofu",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
         {
@@ -3839,11 +3792,6 @@
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "Father (Luwanga)",
-          "translation": "baba",
-          "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
           "english": "Friend (Luwanga)",
           "translation": "umwidza",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
@@ -3899,11 +3847,6 @@
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "Step-father (Luwanga)",
-          "translation": "baba",
-          "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
           "english": "Uncle (Luwanga)",
           "translation": "baba or tata",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
@@ -3941,11 +3884,6 @@
         {
           "english": "Brother",
           "translation": "Awana befu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Brother",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
@@ -3995,11 +3933,6 @@
         },
         {
           "english": "Man",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Man",
           "translation": "Mundu",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
@@ -4021,11 +3954,6 @@
         {
           "english": "Song",
           "translation": "Tsinyimbo",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "Song",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
@@ -4079,18 +4007,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Little child",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Breast (woman's)",
           "translation": "Li-duru",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Breast (woman's)",
-          "translation": "ama",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -4116,11 +4034,6 @@
         {
           "english": "Brother",
           "translation": "Omu-terwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Brother",
-          "translation": "aba",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -4185,12 +4098,12 @@
         },
         {
           "english": "Doctor (medicine man)",
-          "translation": "[Addenda: Omu-mali]",
+          "translation": "; Omu-mali",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
           "english": "Father",
-          "translation": "[Addenda: Omu-kofu]",
+          "translation": "; Omu-kofu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -4342,11 +4255,6 @@
           "english": "Woman",
           "translation": "Omu-khasi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Woman",
-          "translation": "aba",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
         {
           "english": "Plenty, many",
@@ -7492,11 +7400,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Back",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Beard",
           "translation": "Bunyasi",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
@@ -7514,11 +7417,6 @@
         {
           "english": "Beard",
           "translation": "Bi",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "Beard",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
@@ -7552,11 +7450,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
-          "english": "Ear",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
           "english": "Eye",
           "translation": "Cimoni",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -7569,11 +7462,6 @@
         {
           "english": "Finger",
           "translation": "Cindala",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Finger",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
@@ -7594,11 +7482,6 @@
         {
           "english": "Foot",
           "translation": "Amakulu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Foot",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
@@ -7629,11 +7512,6 @@
         {
           "english": "Hair",
           "translation": "Amasu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "Hair",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
@@ -7693,11 +7571,6 @@
         },
         {
           "english": "Nose / Nostrils",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Nose / Nostrils",
           "translation": "Esiulu",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
@@ -7733,17 +7606,7 @@
         },
         {
           "english": "Arm",
-          "translation": "emi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Arm",
           "translation": "Kumu-kono",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
-          "english": "Arm",
-          "translation": "pl",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
         {
@@ -7754,11 +7617,6 @@
         {
           "english": "Back",
           "translation": "Omu-goṅgo, Om-goṅgo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Back",
-          "translation": "emi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
         },
         {
@@ -7843,16 +7701,6 @@
         },
         {
           "english": "Eye",
-          "translation": "ci",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Eye",
-          "translation": "tsi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Eye",
           "translation": "Er-iso",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
@@ -7898,11 +7746,6 @@
         },
         {
           "english": "Finger",
-          "translation": "tsin",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Finger",
           "translation": "Udu-wala",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
@@ -7914,11 +7757,6 @@
         {
           "english": "Foot",
           "translation": "Okhu-kulu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Foot",
-          "translation": "ama",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
         },
         {
@@ -7964,11 +7802,6 @@
         {
           "english": "Hand",
           "translation": "Esi-kala",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Hand",
-          "translation": "ebi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
         },
         {
@@ -8053,17 +7886,7 @@
         },
         {
           "english": "Nail (of finger or toe)",
-          "translation": "ama",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Nail (of finger or toe)",
           "translation": "Exi-tere",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Nail (of finger or toe)",
-          "translation": "efi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -11625,11 +11448,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Baboon",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Bee",
           "translation": "Injuki",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -11637,11 +11455,6 @@
         {
           "english": "Bee",
           "translation": "Cinjuki",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Bee",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
@@ -11662,11 +11475,6 @@
         {
           "english": "Bird",
           "translation": "Amanoni",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "Bird",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
@@ -11705,11 +11513,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Cow",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Hyena",
           "translation": "Yiñu",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -11730,11 +11533,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
-          "english": "Monkey",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
           "english": "Zebra",
           "translation": "Apoto",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -11742,11 +11540,6 @@
         {
           "english": "Zebra",
           "translation": "Kipoto",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Zebra",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
@@ -11851,17 +11644,7 @@
         },
         {
           "english": "Bird",
-          "translation": "zin",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Bird",
           "translation": "Ki-noni",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Bird",
-          "translation": "bi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -11977,11 +11760,6 @@
         {
           "english": "Elephant",
           "translation": "In-dzofu, In-jofu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Elephant",
-          "translation": "tsin",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -12170,36 +11948,6 @@
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
         },
         {
-          "english": "The dog was dried (with a towel)",
-          "translation": "passive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The dog dried (with a towel)",
-          "translation": "plain intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The dog dried (with a towel)",
-          "translation": "Vk intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "I want the door to be closed",
-          "translation": "passive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "I want the door to close",
-          "translation": "plain intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "I want the door closed",
-          "translation": "Vk intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
           "english": "I want the dog to be dry",
           "translation": "complement of want",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
@@ -12222,16 +11970,6 @@
         {
           "english": "The hunters despise each other more than the fishermen despise each other",
           "translation": "Chichewa",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
-        },
-        {
-          "english": "The hunter and the giraffe saw each other",
-          "translation": "Lubukusu",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
-        },
-        {
-          "english": "The hunter and the giraffe saw themselves",
-          "translation": "Lubukusu",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
         }
       ]
@@ -14823,11 +14561,6 @@
         },
         {
           "english": "Day",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Day",
           "translation": "Indalo",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
@@ -14852,11 +14585,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
-          "english": "Mountain",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
           "english": "Night",
           "translation": "Esiro",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -14874,11 +14602,6 @@
         {
           "english": "River",
           "translation": "Imicara",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "River",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
@@ -14924,11 +14647,6 @@
         {
           "english": "Day",
           "translation": "In-dalo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Day",
-          "translation": "tsi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -15154,26 +14872,6 @@
         {
           "english": "The door was opened by Peter/⁇by the gust of wind",
           "translation": "German (Schäfer 2008)",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door was opened by Peter/⁇by the gust of wind",
-          "translation": "passive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door was opened (because of/from the wind)",
-          "translation": "passive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door opened (because of/from the wind)",
-          "translation": "plain intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door opened (because of/from the wind)",
-          "translation": "Vk intransitive",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
         },
         {
@@ -17061,11 +16759,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
-          "english": "Egg",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
           "english": "Great",
           "translation": "kulu",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lurimi (A Dialect Of Luwanga)."
@@ -17108,11 +16801,6 @@
         {
           "english": "Egg",
           "translation": "Li-buyu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Egg",
-          "translation": "ama",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -17172,7 +16860,7 @@
         },
         {
           "english": "Great",
-          "translation": "[Addenda: -kulundu]",
+          "translation": "; -kulundu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -17204,21 +16892,6 @@
           "english": "You will find in it milk as you desire",
           "translation": "ʊ-man̪-a ʊ-n̪or-e mʊ a-ma-veere sja w-eɲ-aŋg-a",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 11)"
-        },
-        {
-          "english": "I bought every (bottle of) water",
-          "translation": "MASS",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
-        },
-        {
-          "english": "I bought all the water",
-          "translation": "MASS",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
-        },
-        {
-          "english": "Who did the men beat fiercely?",
-          "translation": "Lubukusu",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
         },
         {
           "english": "How did the men beat John?",
@@ -19231,7 +18904,7 @@
         },
         {
           "english": "Thing (Luwanga/Lukabras)",
-          "translation": "Eši-ndu, Exi-ndu; efi-ndu. [Addenda: Ama-khuwa (pl.)]",
+          "translation": "Eši-ndu, Exi-ndu; efi-ndu.; Ama-khuwa (pl.)",
           "pronunciation": "eši-ndu",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
@@ -19939,8 +19612,8 @@
         },
         {
           "english": "Thy house",
-          "translation": "peke yao",
-          "pronunciation": "yao",
+          "translation": "Inyumba yao",
+          "pronunciation": "inyumba yao",
           "context": "Lunyala Luhya Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
@@ -22164,45 +21837,15 @@
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "O (Luwanga)",
-          "translation": "mi",
-          "pronunciation": "mi",
-          "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
           "english": "Iki or ichi (Luwanga)",
           "translation": "ivi",
           "pronunciation": "ivi",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "U (Luwanga)",
-          "translation": "ama",
-          "pronunciation": "ama",
-          "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
-          "english": "Or ki (Luwanga)",
-          "translation": "mi",
-          "pronunciation": "mi",
-          "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
-          "english": "Or e (Luwanga)",
-          "translation": "ama",
-          "pronunciation": "ama",
-          "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
           "english": "E or i (Luwanga)",
           "translation": "chi or achi",
           "pronunciation": "chi",
-          "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
-          "english": "E (Luwanga)",
-          "translation": "si",
-          "pronunciation": "si",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
@@ -24656,11 +24299,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Axe",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Bow",
           "translation": "Uwingo",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
@@ -24693,11 +24331,6 @@
         {
           "english": "Hippopotamus",
           "translation": "Cifubu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
-        },
-        {
-          "english": "Hippopotamus",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
         },
         {
@@ -24763,11 +24396,6 @@
         {
           "english": "Arrow",
           "translation": "Kumu-bano",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
-          "english": "Arrow",
-          "translation": "kimi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
         {
@@ -24907,16 +24535,6 @@
         },
         {
           "english": "Hippopotamus",
-          "translation": "ci",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Hippopotamus",
-          "translation": "tsi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Hippopotamus",
           "translation": "In-gidi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
@@ -24961,16 +24579,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
         {
-          "english": "Knife",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
-          "english": "Knife",
-          "translation": "kimi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
           "english": "Shield",
           "translation": "Ki-kumbi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
@@ -24991,63 +24599,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
         {
-          "english": "Sira closed the door",
-          "translation": "Luragooli",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "Sira closed the door",
-          "translation": "causative",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door closed",
-          "translation": "anticausative",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door closed",
-          "translation": "plain intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door closed",
-          "translation": "Vk intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
           "english": "The door opened by Peter",
           "translation": "marked anticausative",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door was closed (by Sira)",
-          "translation": "passive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door closed (by Sira)",
-          "translation": "plain intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door closed (by Sira)",
-          "translation": "Vk intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door wasn",
-          "translation": "passive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door didn",
-          "translation": "plain intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The door didn",
-          "translation": "Vk intransitive",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
         }
       ]
@@ -27687,7 +27240,7 @@
         },
         {
           "english": "Kick, to",
-          "translation": "sena; luwas (foot)¹",
+          "translation": "sena; luwas (foot)",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -27917,7 +27470,7 @@
         },
         {
           "english": "Kick, to (Luwanga)",
-          "translation": "sena; luwas (foot)¹",
+          "translation": "sena; luwas (foot)",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
@@ -28267,11 +27820,6 @@
         },
         {
           "english": "To give",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "To give",
           "translation": "ha",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
@@ -28540,12 +28088,6 @@
         },
         {
           "english": "Bad",
-          "translation": "bi",
-          "pronunciation": "bi",
-          "context": "5. Lu-nyara — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
-        },
-        {
-          "english": "Bad",
           "translation": "bī",
           "pronunciation": "bee",
           "context": "5a. Lu-wanga / Lu-kabarasi — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
@@ -28678,7 +28220,7 @@
         },
         {
           "english": "Good",
-          "translation": "lai. [Addenda: -lahi]",
+          "translation": "lai.; -lahi",
           "pronunciation": "lai ad-dend-a la-hi",
           "context": "5a. Lu-wanga / Lu-kabarasi — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -28864,7 +28406,7 @@
         },
         {
           "english": "Great",
-          "translation": "kulu, -kali. [Addenda: -kulundu]",
+          "translation": "kulu, -kali.; -kulundu",
           "pronunciation": "ku-lu ka-li ad-dend-a ku-lund-u",
           "context": "5a. Lu-wanga / Lu-kabarasi — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -28936,7 +28478,7 @@
         },
         {
           "english": "Great",
-          "translation": "kulu, -kali. [Addenda: -kulundu] / -kali / -gali. -tsohe",
+          "translation": "kulu, -kali.; -kulundu / -kali / -gali. -tsohe",
           "pronunciation": "-kulu -kali",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -29199,18 +28741,6 @@
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Bad (Lunyala)",
-          "translation": "bi",
-          "pronunciation": "bi",
-          "context": "Comparative Bantu Vocabulary — Lunyala (Johnston 1919 Vol. I)"
-        },
-        {
-          "english": "Bad (Lumasaba/Bukusu)",
-          "translation": "bi",
-          "pronunciation": "bi",
-          "context": "Comparative Bantu Vocabulary — Lumasaba/Bukusu (Johnston 1919 Vol. I)"
-        },
-        {
           "english": "Black (Lunyala)",
           "translation": "mari. Ra-tenyi",
           "pronunciation": "mari ra-tenyi",
@@ -29470,7 +29000,7 @@
         },
         {
           "english": "How many",
-          "translation": "fi-nga, wa-nga¹",
+          "translation": "fi-nga, wa-nga",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Lu-Wanga) • Cross-verified with Kencorpus Lumarachi"
         },
         {
@@ -29480,12 +29010,12 @@
         },
         {
           "english": "Good (Luwanga/Lukabras)",
-          "translation": "lai. [Addenda: -lahi]",
+          "translation": "lai.; -lahi",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
         {
           "english": "Great (Luwanga/Lukabras)",
-          "translation": "kulu, -kali. [Addenda: -kulundu]",
+          "translation": "kulu, -kali.; -kulundu",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
         {
@@ -30878,11 +30408,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Canoe",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Magic (good)",
           "translation": "Olumutana",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -30964,7 +30489,7 @@
         },
         {
           "english": "God",
-          "translation": "[Addenda: Nya-saye]",
+          "translation": "; Nya-saye",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -30979,7 +30504,7 @@
         },
         {
           "english": "Good",
-          "translation": "[Addenda: -lahi]",
+          "translation": "; -lahi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -32047,11 +31572,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Thief",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "War",
           "translation": "Diye",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lurimi (A Dialect Of Luwanga)."
@@ -32115,11 +31635,6 @@
           "english": "S/he will do work (at a later date)",
           "translation": "Naa-a-kor-e ɪ-gaasi",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 11)"
-        },
-        {
-          "english": "The women helped each other and themselves",
-          "translation": "Lubukusu",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
         },
         {
           "english": "Wekesa killed the rat slowly",
@@ -33203,7 +32718,7 @@
         },
         {
           "english": "Thing",
-          "translation": "Eshi-ndu, Exi-ndu; efi-ndu. [Addenda: Ama-khuwa (pl.)] / Esi-ndu; ebi-ndu / Isi-ndu or Kiki-ndu; bibi-ndu",
+          "translation": "Eshi-ndu, Exi-ndu; efi-ndu.; Ama-khuwa (pl.) / Esi-ndu; ebi-ndu / Isi-ndu or Kiki-ndu; bibi-ndu",
           "pronunciation": "eshi-ndu exi-ndu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -35340,13 +34855,13 @@
         {
           "english": "Sira closed the door",
           "translation": "Sira a-han-i muriaŋgo",
-          "pronunciation": "sira a-han-i muriaŋgo causative",
+          "pronunciation": "sira a-han-i muriaŋgo",
           "context": "Luragooli Anticausative Corpus (Gluckman & Bowler 2016, Diversity in African Languages Ch. 15, CC-BY-4.0, https://langsci-press.org/catalog/book/121)"
         },
         {
           "english": "The door closed",
           "translation": "muriaŋgo gu-han-ik-i",
-          "pronunciation": "muriaŋgo gu-han-ik-i anticausative",
+          "pronunciation": "muriaŋgo gu-han-ik-i",
           "context": "Luragooli Anticausative Corpus (Gluckman & Bowler 2016, Diversity in African Languages Ch. 15, CC-BY-4.0, https://langsci-press.org/catalog/book/121)"
         },
         {
@@ -35465,7 +34980,7 @@
         },
         {
           "english": "John slept in the field quickly",
-          "translation": "Yohana a-kona mu-sikuri bwangu. (PP adj-Adverb)",
+          "translation": "Yohana a-kona mu-sikuri bwangu.",
           "pronunciation": "yohana a-kona mu-sikuri bwangu",
           "context": "Lubukusu Reciprocal & Reflexive Corpus (Safir & Selvanathan 2016, Diversity in African Languages Ch. 25, CC-BY-4.0, https://langsci-press.org/catalog/book/121)"
         },
@@ -35477,7 +34992,7 @@
         },
         {
           "english": "John put the book on the table quickly",
-          "translation": "Yohana a-a-ra si-tabu khu-mesa bwangu. (PP arg-Adverb)",
+          "translation": "Yohana a-a-ra si-tabu khu-mesa bwangu.",
           "pronunciation": "yohana a-a-ra si-tabu khu-mesa bwangu",
           "context": "Lubukusu Reciprocal & Reflexive Corpus (Safir & Selvanathan 2016, Diversity in African Languages Ch. 25, CC-BY-4.0, https://langsci-press.org/catalog/book/121)"
         },
@@ -35542,38 +35057,26 @@
           "context": "Lubukusu Reciprocal & Reflexive Corpus (Safir & Selvanathan 2016, Diversity in African Languages Ch. 25, CC-BY-4.0, https://langsci-press.org/catalog/book/121)"
         },
         {
-          "english": "What are you cooking for the visitors?",
-          "translation": "Zulu Q: ízi-vakâ:shi u-zi-phekéla:-ni?",
-          "pronunciation": "8-visitor you-8obj-cookfor-what",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
-          "english": "I am cooking visitors some meat",
-          "translation": "ízi-vakáshi ngi-zi-phekél’ í-nya:ma",
-          "pronunciation": "8-visitor i-8obj-cookfor 9-meat",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
           "english": "The men sent Mary books",
-          "translation": "Lubukusu ba-saani ba-bi-rum-ir-a Maria bi-tabu IO-DO",
+          "translation": "ba-saani ba-bi-rum-ir-a Maria bi-tabu",
           "pronunciation": "c2-men c2tns-send-appl-fv mary c8-book",
           "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
         },
         {
           "english": "Who did the men send the books to?",
-          "translation": "Lubukusu Q: Naanu ni-ye ba-saani ba-rum-ir-a bi-tabu?",
+          "translation": "Naanu ni-ye ba-saani ba-rum-ir-a bi-tabu?",
           "pronunciation": "lubukusu q: naanu ni-ye ba-saani ba-rum-ir-a bi-tabu",
           "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
         },
         {
           "english": "Who did the men beat fiercely?",
-          "translation": "Lubukusu Q: Naanu ni-ye ba-saani ba-a-pa lukali?",
+          "translation": "Naanu ni-ye ba-saani ba-a-pa lukali?",
           "pronunciation": "lubukusu q: naanu ni-ye ba-saani ba-a-pa lukali",
           "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
         },
         {
           "english": "The men beat John fiercely",
-          "translation": "Ba-saani ba-a-pa Yohana lukali DO-ADV",
+          "translation": "Ba-saani ba-a-pa Yohana lukali",
           "pronunciation": "c2-man c2-tns-beat john fiercely",
           "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
         },
@@ -35591,44 +35094,14 @@
         },
         {
           "english": "How did Wekesa kill the rat?",
-          "translation": "Lubukusu Q: Wekesa e-ra embeba aryeena?",
+          "translation": "Wekesa e-ra embeba aryeena?",
           "pronunciation": "lubukusu q: wekesa e-ra embeba aryeena",
           "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
         },
         {
           "english": "Wekesa killed the rat slowly",
-          "translation": "Wekesa e-ra kalaha embeba ADJ-DO",
+          "translation": "Wekesa e-ra kalaha embeba",
           "pronunciation": "wekesa sm-om-killslowly the rat",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
-          "english": "How did s/he cook the soup?",
-          "translation": "ú-lí-phéké kánja:n’ í-só:bh’ Adv-DO",
-          "pronunciation": "1subj-5om-cooked how 5-soup",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
-          "english": "To which room did you take my stuff to?",
-          "translation": "U-leth-e [PP ku-liphi ikamelo] izimpahla zami?",
-          "pronunciation": "u-leth-e [pp ku-liphi ikamelo] izimpahla zami",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
-          "english": "Old people live in these houses",
-          "translation": "[Lezi zindlu] zi-hlala abantu abadala",
-          "pronunciation": "[lezi zindlu] zi-hlala abantu abadala",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
-          "english": "Quickly",
-          "translation": "ngo-kushesha",
-          "pronunciation": "ngaaug-15speed",
-          "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
-        },
-        {
-          "english": "Painfully",
-          "translation": "ngo-buhlungu",
-          "pronunciation": "ngaaug-14pain",
           "context": "Lubukusu Focus & Syntax Corpus (Selvanathan 2019, Theory & Description in African Linguistics Ch. 32, CC-BY-4.0, https://langsci-press.org/catalog/book/202)"
         },
         {
@@ -35669,13 +35142,13 @@
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix) (Lunyala)",
-          "translation": "tawe. Si- (Si-, So-, Sa-, Sikhu-, Simu-, Siba-, with the different pronouns). [Addenda: -ta, -kata (neither)]",
+          "translation": "tawe. Si- (Si-, So-, Sa-, Sikhu-, Simu-, Siba-, with the different pronouns).; -ta, -kata (neither)",
           "pronunciation": "tawe si- addenda -ta",
           "context": "Comparative Bantu Vocabulary — Lunyala (Johnston 1919 Vol. I)"
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix) (Luwanga/Lukabras)",
-          "translation": "tawi. -ta. Si- (Si-, So-, Sa-, Siku-, Simu-, Siba-). [Addenda: -tawe, -ṅga, -kata (neither), Oxu-buta (to be without)]",
+          "translation": "tawi. -ta. Si- (Si-, So-, Sa-, Siku-, Simu-, Siba-).; -tawe, -ṅga, -kata (neither), Oxu-buta (to be without)",
           "pronunciation": "tawi. -ta. si- . [addenda: -tawe",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
@@ -35686,40 +35159,34 @@
           "context": "Comparative Bantu Vocabulary — Lumasaba/Bukusu (Johnston 1919 Vol. I)"
         },
         {
-          "english": "Not leave off, cease (Luwanga/Lukabras)",
+          "english": "To leave off, cease (Luwanga/Lukabras)",
           "translation": "leka",
           "pronunciation": "leka",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
         {
-          "english": "Not leave off leave off, cease (Lumasaba/Bukusu)",
+          "english": "To leave off, cease (Lumasaba/Bukusu)",
           "translation": "leka",
           "pronunciation": "leka",
           "context": "Comparative Bantu Vocabulary — Lumasaba/Bukusu (Johnston 1919 Vol. I)"
         },
         {
-          "english": "Not leave off leave off sit, remain, abide (Luwanga/Lukabras)",
+          "english": "To sit, remain, abide (Luwanga/Lukabras)",
           "translation": "ikala",
           "pronunciation": "ikala",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
         {
-          "english": "Not leave off leave off sit sit, remain, abide (Lumasaba/Bukusu)",
+          "english": "To sit, remain, abide (Lumasaba/Bukusu)",
           "translation": "ikala",
           "pronunciation": "ikala",
           "context": "Comparative Bantu Vocabulary — Lumasaba/Bukusu (Johnston 1919 Vol. I)"
         },
         {
-          "english": "Not leave off leave off sit sit stand, stop, be erect (Luwanga/Lukabras)",
+          "english": "To stand, stop, be erect (Luwanga/Lukabras)",
           "translation": "ema",
           "pronunciation": "ema",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
-        },
-        {
-          "english": "He is taller than I",
-          "translation": "Eado te nano",
-          "pronunciation": "eado te nan",
-          "context": "Lumasaba / Bukusu Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
           "english": "I want (Luwanga)",
@@ -35737,12 +35204,6 @@
           "english": "I do not want (Luwanga)",
           "translation": "sinyienya",
           "pronunciation": "sinyienya",
-          "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
-        },
-        {
-          "english": "Or li or ili (Luwanga)",
-          "translation": "ma",
-          "pronunciation": "ma",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
@@ -36230,12 +35691,12 @@
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix)",
-          "translation": "[Addenda: -ta, -kata ]",
+          "translation": "; -ta, -kata ",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix)",
-          "translation": "[Addenda: -tawe, -ṅga, -kata , Oxu-buta ]",
+          "translation": "; -tawe, -ṅga, -kata , Oxu-buta ",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -36264,7 +35725,7 @@
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 9)"
         },
         {
-          "english": "Once I",
+          "english": "Once I have finished, I will weave",
           "translation": "N-daaka-rik-a, man̪-a n-duk-e",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 11)"
         },
@@ -36279,38 +35740,23 @@
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
         },
         {
-          "english": "He doesn",
+          "english": "He doesn't like everyone",
           "translation": "ya-yaanz-a vaandu v-oosi mba",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
         },
         {
-          "english": "Where did John sleep quickly?",
-          "translation": "Lubukusu",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
-        },
-        {
           "english": "John slept in the field quickly",
-          "translation": "A1: Yohana a-kona mu-sikuri bwangu. (PP adj-Adverb)",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
-        },
-        {
-          "english": "Where did John put the book quickly?",
-          "translation": "Lubukusu",
+          "translation": "A1: Yohana a-kona mu-sikuri bwangu.",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
         },
         {
           "english": "John put the book on the table quickly",
-          "translation": "A1: Yohana a-a-ra si-tabu khu-mesa bwangu. (PP arg-Adverb)",
+          "translation": "A1: Yohana a-a-ra si-tabu khu-mesa bwangu.",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
         },
         {
           "english": "The men sent Mary books",
           "translation": "A1: Ba-saani ba-rum-ir-a Maria bi-tabu. (IO-DO)",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
-        },
-        {
-          "english": "Who did the men praise fiercely?",
-          "translation": "Lubukusu",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
         },
         {
@@ -36330,7 +35776,7 @@
         },
         {
           "english": "The men sent Mary books",
-          "translation": "ba-saani ba-rum-ir-a Maria bi-tabu IO-DO",
+          "translation": "ba-saani ba-rum-ir-a Maria bi-tabu",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Lubukusu & Bantu (Ch. 32)"
         },
         {
@@ -36746,7 +36192,7 @@
         },
         {
           "english": "God",
-          "translation": "Eri-uwa, Edi-uba. [Addenda: Nya-saye]",
+          "translation": "Eri-uwa, Edi-uba.; Nya-saye",
           "pronunciation": "eri-uwa",
           "context": "5a. Lu-wanga / Lu-kabarasi — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -37340,7 +36786,7 @@
         },
         {
           "english": "Thing",
-          "translation": "Eshi-ndu, Exi-ndu; efi-ndu. [Addenda: Ama-khuwa (pl.)]",
+          "translation": "Eshi-ndu, Exi-ndu; efi-ndu.; Ama-khuwa (pl.)",
           "pronunciation": "esh-i ndu e-xi ndu",
           "context": "5a. Lu-wanga / Lu-kabarasi — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 73–84) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -38533,14 +37979,14 @@
           "context": "C. W. Hobley, Anthropological Studies in Kavirondo and Nandi, JAI Vol. 33 (1903, pp. 336, 343) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Pattern No. 3 in Kakumega",
-          "translation": "3 stool patterns",
+          "english": "Three traditional carved wooden stool patterns (including Pattern No. 3 in Kakamega)",
+          "translation": "Ebisala / Ebitumbi (Kakumega Pattern No. 3)",
           "pronunciation": "3-stool-patterns",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. II, pp. 15–19, Figs. 1–3, 5–6) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "4-ft sticks, goat-skin covers, clay tuyere",
-          "translation": "Double-chamber wooden log bellows",
+          "english": "Double-chamber wooden log bellows (4-ft sticks, goat-skin covers, clay tuyere)",
+          "translation": "Omukuba (iron-smelting bellows)",
           "pronunciation": "double-chamber-wooden-log-bellows",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. II, pp. 15–19, Figs. 1–3, 5–6) • Cross-verified with Kencorpus Lumarachi"
         },
@@ -38551,43 +37997,43 @@
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. II, pp. 21–23, Fig. 7) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "Fig. 7: Heap A = visitors, Heap B = country, Heap C = host/chief",
-          "translation": "3-heap small-intestine divination",
+          "english": "Three-heap entrail divination (Heap A = visitors, Heap B = country, Heap C = host/chief)",
+          "translation": "Okhulola mu mala (entrail divination)",
           "pronunciation": "3-heap-small-intestine-divination",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. II, pp. 21–23, Fig. 7) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "4 clans: Manhulia, Kunzulu, Chero, Siroza",
+          "english": "Kisa sub-nation (4 clans: Manhulia, Kunzulu, Chero, Siroza)",
           "translation": "Awa-Kisa",
           "pronunciation": "awa-kisa",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, pp. 44–48) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "6 clans: Mkoya, Elekea, Kambuli, Wawara, Chisa, Cheni",
+          "english": "Marama sub-nation (6 clans: Mkoya, Elekea, Kambuli, Wawara, Chisa, Cheni)",
           "translation": "Awa-Marama",
           "pronunciation": "awa-marama",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, pp. 44–48) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "7 clans under Mgahanya",
+          "english": "Banyore sub-nation (7 clans under Chief Mgahanya)",
           "translation": "Awa-Nyole",
           "pronunciation": "awa-nyole",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, pp. 44–48) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "6 clans under Njira & Namonja",
+          "english": "Banyala sub-nation (6 clans under Chiefs Njira & Namonja)",
           "translation": "Awa-Nyala",
           "pronunciation": "awa-nyala",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, pp. 44–48) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "6 clans: Mbiakalo, Machina, Toho I & II, Sonji, Muliuli",
+          "english": "Kabras sub-nation (6 clans: Mbiakalo, Machina, Toho I & II, Sonji, Muliuli)",
           "translation": "Awa-Kabras",
           "pronunciation": "awa-kabras",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, pp. 44–48) • Cross-verified with Kencorpus Lumarachi"
         },
         {
-          "english": "6 clans",
+          "english": "Batsotso sub-nation (6 clans)",
           "translation": "Awa-Tsoso",
           "pronunciation": "awa-tsoso",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902, Ch. V § 1, pp. 44–48) • Cross-verified with Kencorpus Lumarachi"
@@ -38867,7 +38313,7 @@
         },
         {
           "english": "God (Luwanga/Lukabras)",
-          "translation": "Eri-uwa, Edi-uba. [Addenda: Nya-saye]",
+          "translation": "Eri-uwa, Edi-uba.; Nya-saye",
           "context": "Comparative Bantu Vocabulary — Luwanga & Lukabras (Johnston 1919 Vol. I)"
         },
         {
@@ -39011,11 +38457,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Termite",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Ape",
           "translation": "Bim",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -39076,11 +38517,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Face",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Ghost",
           "translation": "Esikhienu",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -39093,11 +38529,6 @@
         {
           "english": "Ghost",
           "translation": "Fikhienu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "Ghost",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
@@ -39128,11 +38559,6 @@
         {
           "english": "Horn",
           "translation": "Tsinzika",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "Horn",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
@@ -39171,11 +38597,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Name",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Penis",
           "translation": "Imbolo",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lunyara."
@@ -39211,11 +38632,6 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
-          "english": "Raphia palm",
-          "translation": "pl",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
           "english": "Stick",
           "translation": "Indábukhi",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
@@ -39233,11 +38649,6 @@
         {
           "english": "Thing",
           "translation": "Ifindu",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
-        },
-        {
-          "english": "Thing",
-          "translation": "pl",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Lukabarasi (Luwanga)."
         },
         {
@@ -39412,11 +38823,6 @@
         },
         {
           "english": "Buttocks",
-          "translation": "ama",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Buttocks",
           "translation": "Li-dakho",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
@@ -39442,17 +38848,7 @@
         },
         {
           "english": "Crocodile",
-          "translation": "ci",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "Crocodile",
           "translation": "I-gwina",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Devil, evil spirit",
-          "translation": "emi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -39463,11 +38859,6 @@
         {
           "english": "Devil, evil spirit",
           "translation": "Kumu-sambwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
-          "english": "Devil, evil spirit",
-          "translation": "kimi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
         {
@@ -39523,11 +38914,6 @@
         {
           "english": "Ghost",
           "translation": "Eši-zienu, Eši-xienu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "Ghost",
-          "translation": "efi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -39891,11 +39277,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
         {
-          "english": "Witch",
-          "translation": "aba",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
           "english": "Witchcraft",
           "translation": "Obu-losi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
@@ -39972,11 +39353,6 @@
         },
         {
           "english": "Thou, thee, thy",
-          "translation": "ku",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
-          "english": "Thou, thee, thy",
           "translation": "o-wo, -o",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
@@ -40032,11 +39408,6 @@
         },
         {
           "english": "He, him, his",
-          "translation": "mu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
-        },
-        {
-          "english": "He, him, his",
           "translation": "e-we, -e",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 6. Lu-masaba or Lu-gišū, &c."
         },
@@ -40068,11 +39439,6 @@
         {
           "english": "We, us, our",
           "translation": "Ku-, Khu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
-        },
-        {
-          "english": "We, us, our",
-          "translation": "ku",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5 a. Lu-waṅga, Lu-kabarasi, and Lu-rimi (R.), and 5 b Lu-siṅga"
         },
         {
@@ -40133,11 +39499,6 @@
         {
           "english": "They, them, their",
           "translation": "Ba-, Wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
-        },
-        {
-          "english": "They, them, their",
-          "translation": "ba",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 5. Lu-nyara"
         },
         {
@@ -40676,56 +40037,6 @@
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 9)"
         },
         {
-          "english": "I read every book",
-          "translation": "SG count",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
-        },
-        {
-          "english": "I read every group of books",
-          "translation": "PL count",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
-        },
-        {
-          "english": "I read all of the book",
-          "translation": "SG count",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
-        },
-        {
-          "english": "I read all the books",
-          "translation": "PL count",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
-        },
-        {
-          "english": "The ball was being dropped",
-          "translation": "passive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The ball is dropping",
-          "translation": "plain intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The ball is being dropped",
-          "translation": "Vk intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The truck was seen by Sira",
-          "translation": "passive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The truck was seen (by Sira)",
-          "translation": "Vk intransitive",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
-        },
-        {
-          "english": "The men hate each other more than the women hate each other",
-          "translation": "Lubukusu",
-          "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
-        },
-        {
           "english": "For God so loved the world (John 3:16 — 1910 Masaba Specimen #164 & 1916 Luhanga Specimen #177)",
           "translation": "Masaba (1910): Kubanga Were nagana kikyalo ari, ni kuhayo wahayo Umwanawe uwasaliwa mutwera yenyene, buli mundu yesi amufukirira aleke kugora, ne abe ni bulamu bukahwaho. • Luhanga (1916 Lk. 15:10): Toto mwene emusungīre mbu Balik'oya baryo mumonimwa Abamalaika aba Nyasaye.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
@@ -40736,5 +40047,5 @@
   "source": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016); Johnson & Diercks (2026) LSP #491 Ch. 18 Tiriki Perception Verbs & Liu (2024) LSP #438 Ch. 15 Tiriki Double Objects (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "luy",
   "glottocode": "luyi1234",
-  "totalEntries": 7170
+  "totalEntries": 7036
 }

@@ -42,13 +42,13 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "Wĩ mwega? (resp. Ndĩ mwega)",
             "source": "How are you? (I am well)",
-            "pronunciation": "wi mwe-ga / mu-ri ega",
+            "pronunciation": "wi mwe-ga",
             "hint": "Standard Kîembu salutation"
           },
           {
             "target": "Mũrĩ ega?",
             "source": "How are you all?",
-            "pronunciation": "wi mwe-ga / mu-ri ega",
+            "pronunciation": "mu-ri ega",
             "hint": "Standard Kîembu salutation"
           },
           {
@@ -66,73 +66,73 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "mũrũme (pl. arũme)",
             "source": "Man, husband",
-            "pronunciation": "mu-ru-me / mu-ka",
+            "pronunciation": "mu-ru-me",
             "hint": "Johnston (1919, Vol. I, pp. 100, 106 #11 Embu)"
           },
           {
             "target": "mũka (pl. aka)",
             "source": "Woman, wife",
-            "pronunciation": "mu-ru-me / mu-ka",
+            "pronunciation": "mu-ka",
             "hint": "Johnston (1919, Vol. I, pp. 100, 106 #11 Embu)"
           },
           {
-            "target": "mwana",
-            "source": "Child",
-            "pronunciation": "mwa-na / ba-ba / mai-tu",
-            "hint": "Johnston (1919 #11 Embu)"
-          },
-          {
-            "target": "aana)",
-            "source": "Father",
-            "pronunciation": "mwa-na / ba-ba / mai-tu",
+            "target": "mwana (pl. ciana / aana)",
+            "source": "Child (pl. Children)",
+            "pronunciation": "mwa-na / cia-na",
             "hint": "Johnston (1919 #11 Embu)"
           },
           {
             "target": "baba",
+            "source": "Father",
+            "pronunciation": "ba-ba",
+            "hint": "Johnston (1919 #11 Embu)"
+          },
+          {
+            "target": "maitũ",
             "source": "Mother",
-            "pronunciation": "mwa-na / ba-ba / mai-tu",
+            "pronunciation": "mai-tu",
             "hint": "Johnston (1919 #11 Embu)"
           },
           {
             "target": "maĩ (manjĩ)",
             "source": "Water",
-            "pronunciation": "mai / mwa-ki / riua",
+            "pronunciation": "mai / ma-nji",
             "hint": "Johnston (1919, Vol. I, pp. 99, 104, 106 #11 Embu)"
           },
           {
             "target": "mwaki",
             "source": "Fire",
-            "pronunciation": "mai / mwa-ki / riua",
+            "pronunciation": "mwa-ki",
             "hint": "Johnston (1919, Vol. I, pp. 99, 104, 106 #11 Embu)"
           },
           {
             "target": "riũa",
             "source": "Sun",
-            "pronunciation": "mai / mwa-ki / riua",
+            "pronunciation": "riua",
             "hint": "Johnston (1919, Vol. I, pp. 99, 104, 106 #11 Embu)"
           },
           {
             "target": "mũtĩ (pl. mĩtĩ)",
             "source": "Tree (pl. Trees)",
-            "pronunciation": "mu-ti / i-via",
+            "pronunciation": "mu-ti",
             "hint": "Johnston (1919, Vol. I, pp. 104–105 #11 Embu)"
           },
           {
             "target": "ĩvia (pl. mavia)",
             "source": "Stone (pl. Stones)",
-            "pronunciation": "mu-ti / i-via",
+            "pronunciation": "i-via",
             "hint": "Johnston (1919, Vol. I, pp. 104–105 #11 Embu)"
           },
           {
             "target": "Ngai (Murungu)",
             "source": "God",
-            "pronunciation": "ngai / ki-rinya-ga",
+            "pronunciation": "ngai / mu-ru-ngu",
             "hint": "Johnston (1919, Vol. I, p. 100 #11) & Hobley (1910)"
           },
           {
             "target": "Kĩrĩnyaga",
             "source": "Mount Kenya",
-            "pronunciation": "ngai / ki-rinya-ga",
+            "pronunciation": "ki-rinya-ga",
             "hint": "Johnston (1919, Vol. I, p. 100 #11) & Hobley (1910)"
           }
         ],
@@ -259,6 +259,7 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919 #11 Embu)",
             "acceptedAnswers": [
               "mwana (pl. ciana / aana) / baba / maitũ",
+              "mwana (pl. ciana / aana)",
               "mwana"
             ]
           }
@@ -274,73 +275,97 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "ĩmwe",
             "source": "One (1)",
-            "pronunciation": "imwe i-gi-ri itha-tu inya itha-no",
+            "pronunciation": "imwe",
             "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
           },
           {
             "target": "igĩrĩ",
             "source": "Two (2)",
-            "pronunciation": "imwe i-gi-ri itha-tu inya itha-no",
+            "pronunciation": "i-gi-ri",
             "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
           },
           {
             "target": "ithatũ",
             "source": "Three (3)",
-            "pronunciation": "imwe i-gi-ri itha-tu inya itha-no",
+            "pronunciation": "itha-tu",
+            "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
+          },
+          {
+            "target": "inya",
+            "source": "Four (4)",
+            "pronunciation": "inya",
+            "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
+          },
+          {
+            "target": "ithano",
+            "source": "Five (5)",
+            "pronunciation": "itha-no",
             "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
           },
           {
             "target": "ithanthatũ",
             "source": "Six (6)",
-            "pronunciation": "ithantha-tu mugwanja inyanya kenda i-ku-mi",
+            "pronunciation": "ithantha-tu",
             "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
           },
           {
             "target": "mũgwanja",
             "source": "Seven (7)",
-            "pronunciation": "ithantha-tu mugwanja inyanya kenda i-ku-mi",
+            "pronunciation": "mugwanja",
             "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
           },
           {
             "target": "inyanya",
             "source": "Eight (8)",
-            "pronunciation": "ithantha-tu mugwanja inyanya kenda i-ku-mi",
+            "pronunciation": "inyanya",
+            "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
+          },
+          {
+            "target": "kenda",
+            "source": "Nine (9)",
+            "pronunciation": "kenda",
+            "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
+          },
+          {
+            "target": "ikũmi",
+            "source": "Ten (10)",
+            "pronunciation": "i-ku-mi",
             "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)"
           },
           {
             "target": "kũrĩa",
             "source": "To eat",
-            "pronunciation": "ku-ria / kunyua / ku-ru-ga",
+            "pronunciation": "ku-ria",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "kũnyua",
             "source": "To drink",
-            "pronunciation": "ku-ria / kunyua / ku-ru-ga",
+            "pronunciation": "kunyua",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "kũruga",
             "source": "To cook",
-            "pronunciation": "ku-ria / kunyua / ku-ru-ga",
+            "pronunciation": "ku-ru-ga",
             "hint": "Class 15 infinitives"
           },
           {
             "target": "gũthiĩ",
             "source": "To go",
-            "pronunciation": "guthii / guu-ka / kwa-ria",
+            "pronunciation": "guthii",
             "hint": "Dahl’s Law voicing on gũthiĩ and gũũka"
           },
           {
             "target": "gũũka",
             "source": "To come",
-            "pronunciation": "guthii / guu-ka / kwa-ria",
+            "pronunciation": "guu-ka",
             "hint": "Dahl’s Law voicing on gũthiĩ and gũũka"
           },
           {
             "target": "kwaria",
             "source": "To speak",
-            "pronunciation": "guthii / guu-ka / kwa-ria",
+            "pronunciation": "kwa-ria",
             "hint": "Dahl’s Law voicing on gũthiĩ and gũũka"
           },
           {
@@ -360,10 +385,10 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ĩmwe, igĩrĩ, ithatũ, inya, ithano\" in Embu?",
-            "correctAnswer": "1",
+            "correctAnswer": "1, 2, 3, 4, 5",
             "options": [
-              "1",
-              "6",
+              "1, 2, 3, 4, 5",
+              "6, 7, 8, 9, 10",
               "To eat",
               "To go"
             ],
@@ -376,12 +401,12 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"ithanthatũ, mũgwanja, inyanya, kenda, ikũmi\" in Embu?",
-            "correctAnswer": "6",
+            "correctAnswer": "6, 7, 8, 9, 10",
             "options": [
               "To eat",
               "To go",
-              "6",
-              "1"
+              "6, 7, 8, 9, 10",
+              "1, 2, 3, 4, 5"
             ],
             "hint": "Johnston (1919, Vol. I, p. 107 #11 Embu)",
             "acceptedAnswers": [
@@ -490,7 +515,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "mũndũ (pl. andũ)",
@@ -506,14 +531,14 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "target": "mũtumia (pl. atumia)",
-            "source": "Woman",
-            "pronunciation": "mu-tu-mia / mundu mu-ka",
+            "source": "Woman / Married woman (pl. Women)",
+            "pronunciation": "mu-tu-mia",
             "hint": "Wikipedia Embu_language"
           },
           {
             "target": "mũndũ mũka (pl. andũ aka)",
-            "source": "Women",
-            "pronunciation": "mu-tu-mia / mundu mu-ka",
+            "source": "Woman / Female person (pl. Women)",
+            "pronunciation": "mundu mu-ka",
             "hint": "Wikipedia Embu_language"
           },
           {
@@ -598,6 +623,7 @@ export const EMBU_UNITS: CourseUnit[] = [
             ],
             "hint": "Wikipedia Embu_language",
             "acceptedAnswers": [
+              "Woman / Married woman (pl. Women)",
               "Woman / Women",
               "Woman"
             ]
@@ -681,7 +707,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "Ngai",
@@ -700,14 +726,14 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "mu-thamaki"
           },
           {
-            "target": "Mwana; ciana and aana. Ka-ana; tw-ana. Ka-hi; tū-hi. Ka-rego; tu",
+            "target": "Mwana; ciana and aana. Ka-ana; tw-ana. Ka-hi; tū-hi. Ka-rego; tũ-rego",
             "source": "Child",
             "pronunciation": "mwa-na"
           },
           {
-            "target": "Mū-rū wa maiya (K.). Mū-ārī wa maitū",
+            "target": "Mwarĩ wa maitũ (Mū-ārī wa maitū)",
             "source": "Sister",
-            "pronunciation": "mu-ru wa mai-ya mu-ari wa mai-tu"
+            "pronunciation": "mwa-ri wa mai-tu"
           },
           {
             "target": "Mū-rīū; a-rīū. Kī-hīī; i-hīī (boy)",
@@ -732,12 +758,12 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Ngai — Mu-ru wa maiya",
-            "source": "God — Brother."
+            "target": "Mũthamaki nĩakũtongoria andũ na thayũ.",
+            "source": "The chief leads the people in peace."
           },
           {
-            "target": "Mu-thamaki — Mwana",
-            "source": "Chief — Child."
+            "target": "Mwarĩ wa maitũ na mũrũ wa maiya marĩ mũciĩ.",
+            "source": "My sister and my brother are at home."
           }
         ],
         "authoredExercises": [
@@ -768,7 +794,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Mu-thamaki\"",
             "correctAnswer": "Chief",
             "acceptedAnswers": [
-              "Chief",
               "Chief"
             ],
             "hint": "Review Clans, Marriage & Community Life"
@@ -795,7 +820,7 @@ export const EMBU_UNITS: CourseUnit[] = [
                 "right": "Child"
               },
               {
-                "left": "Mū-rū wa maiya. Mū-ārī wa maitū",
+                "left": "Mwarĩ wa maitũ (Mū-ārī wa maitū)",
                 "right": "Sister"
               }
             ]
@@ -818,7 +843,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "Ĩmwe",
@@ -979,7 +1004,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "Ikũmi",
@@ -1142,7 +1167,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "nyama",
@@ -1198,12 +1223,12 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "nyama — irio",
-            "source": "Meat — Food."
+            "target": "Mũtumia nĩakũruga irio na nyama.",
+            "source": "The woman is cooking food and meat."
           },
           {
-            "target": "cumbĩ — maguta",
-            "source": "Salt — Oil."
+            "target": "Ĩkĩra cumbĩ na maguta nyũngũ-inĩ.",
+            "source": "Put salt and oil in the cooking pot."
           }
         ],
         "authoredExercises": [
@@ -1224,7 +1249,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Food\"",
             "correctAnswer": "irio",
             "acceptedAnswers": [
-              "irio",
               "irio"
             ],
             "hint": "Starts with \"ir\""
@@ -1234,7 +1258,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"cumbĩ\"",
             "correctAnswer": "Salt",
             "acceptedAnswers": [
-              "Salt",
               "Salt"
             ],
             "hint": "Review Staple Foods, Cookery & Beverages"
@@ -1274,7 +1297,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "I-rigo; ma-. Gi-toke (fruit)",
@@ -1297,14 +1320,14 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "nya-ma"
           },
           {
-            "target": "M-bembē; ma",
+            "target": "M-bembē (pl. ma-bembē)",
             "source": "Maize",
             "pronunciation": "m-bembe"
           },
           {
             "target": "N-g'aragu",
             "source": "Hunger",
-            "pronunciation": "n-g'aragu m-buta"
+            "pronunciation": "n-g'aragu"
           },
           {
             "target": "mbembe",
@@ -1319,22 +1342,22 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "mboso",
             "source": "Beans",
-            "pronunciation": "mbo-so / nthoo-ko"
+            "pronunciation": "mbo-so"
           },
           {
             "target": "nthooko",
-            "source": "cowpeas",
-            "pronunciation": "mbo-so / nthoo-ko"
+            "source": "Cowpeas",
+            "pronunciation": "nthoo-ko"
           }
         ],
         "sentences": [
           {
-            "target": "I-rigo — Ma-guta. Ṅ-gorono",
-            "source": "Banana — Fat, oil."
+            "target": "Arĩmi nĩmavandaga mbembe, mboso, na nthooko mũgũnda-inĩ.",
+            "source": "Farmers plant maize, beans, and cowpeas in the garden."
           },
           {
-            "target": "Ū-ūkī — nyama",
-            "source": "Honey — Meat."
+            "target": "Njũkĩ nĩciũmbaga ũũkĩ mũtĩ-inĩ.",
+            "source": "Bees make honey in the tree."
           }
         ],
         "authoredExercises": [
@@ -1365,7 +1388,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Ū-ūkī\"",
             "correctAnswer": "Honey",
             "acceptedAnswers": [
-              "Honey",
               "Honey"
             ],
             "hint": "Review Crops, Cultivation & Pastoral Livestock"
@@ -1415,7 +1437,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "ĩria (pl. maria)",
@@ -1588,30 +1610,30 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "karĩma",
             "source": "Hill",
-            "pronunciation": "ka-ri-ma / ki-ri-ma",
+            "pronunciation": "ka-ri-ma",
             "hint": "Wikipedia Embu_language"
           },
           {
             "target": "kĩrĩma",
             "source": "Mountain",
-            "pronunciation": "ka-ri-ma / ki-ri-ma",
+            "pronunciation": "ki-ri-ma",
             "hint": "Wikipedia Embu_language"
           },
           {
             "target": "karũnjĩ",
             "source": "Stream",
-            "pronunciation": "ka-runji / runji",
+            "pronunciation": "ka-runji",
             "hint": "Wikipedia Embu_language"
           },
           {
             "target": "rũnjĩ",
             "source": "River",
-            "pronunciation": "ka-runji / runji",
+            "pronunciation": "runji",
             "hint": "Wikipedia Embu_language"
           },
           {
@@ -1658,12 +1680,12 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "karĩma — karũnjĩ",
-            "source": "Hill — Stream."
+            "target": "Rũnjĩ rũu rũfumaga kĩrĩma-inĩ gĩa Kĩrĩnyaga.",
+            "source": "That river flows from the mountain of Mount Kenya."
           },
           {
-            "target": "mũthanga — nthĩ",
-            "source": "Sand — Ground."
+            "target": "Mbura nĩĩkuura na nthĩ ĩkaiyũra maĩ.",
+            "source": "The rain is falling and the ground is filling with water."
           }
         ],
         "authoredExercises": [
@@ -1689,7 +1711,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "correctAnswer": "karũnjĩ",
             "acceptedAnswers": [
               "karũnjĩ / rũnjĩ",
-              "karũnjĩ"
+              "karũnjĩ",
+              "rũnjĩ"
             ],
             "hint": "Starts with \"ka\""
           },
@@ -1698,7 +1721,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"mũthanga\"",
             "correctAnswer": "Sand",
             "acceptedAnswers": [
-              "Sand",
               "Sand"
             ],
             "hint": "Review East African Fauna, Birds & Sacred Trees"
@@ -1748,7 +1770,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "kanyua",
@@ -1917,7 +1939,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "njara",
@@ -1952,25 +1974,25 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "kũgũrũ (pl. magũrũ)",
             "source": "Leg",
-            "pronunciation": "ku-gu-ru / gi-tende",
+            "pronunciation": "ku-gu-ru",
             "hint": "Wikipedia Embu_language"
           },
           {
             "target": "gĩtende (pl. itende)",
             "source": "Foot",
-            "pronunciation": "ku-gu-ru / gi-tende",
+            "pronunciation": "gi-tende",
             "hint": "Wikipedia Embu_language"
           },
           {
             "target": "nda",
             "source": "Belly",
-            "pronunciation": "nda / ivu",
+            "pronunciation": "nda",
             "hint": "Wikipedia Embu_language"
           },
           {
             "target": "ĩvũ",
             "source": "Stomach",
-            "pronunciation": "nda / ivu",
+            "pronunciation": "ivu",
             "hint": "Wikipedia Embu_language"
           },
           {
@@ -1987,12 +2009,12 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "njara — kĩvĩ",
-            "source": "Hand — Arm."
+            "target": "Thambia njara ciaku na maĩ mbere ya kũrĩa.",
+            "source": "Wash your hands with water before eating."
           },
           {
-            "target": "mũmero — nyondo",
-            "source": "Throat — Breast."
+            "target": "Kũgũrũ gwake nĩkũrũaru, nĩakũthiĩ kũrĩ mũgo.",
+            "source": "His leg is sore, he is going to the healer."
           }
         ],
         "authoredExercises": [
@@ -2023,7 +2045,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"mũmero\"",
             "correctAnswer": "Throat",
             "acceptedAnswers": [
-              "Throat",
               "Throat"
             ],
             "hint": "Review Health, Traditional Medicine & Emergency Terms"
@@ -2073,7 +2094,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "ũka",
@@ -2114,13 +2135,13 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "rĩnga",
             "source": "Strike",
-            "pronunciation": "ringa / ku-go-ma",
+            "pronunciation": "ringa",
             "hint": "Wikipedia Embu_language"
           },
           {
             "target": "kũgoma",
             "source": "Hit",
-            "pronunciation": "ringa / ku-go-ma",
+            "pronunciation": "ku-go-ma",
             "hint": "Wikipedia Embu_language"
           },
           {
@@ -2137,12 +2158,12 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ũka — tũma",
-            "source": "Come — Send."
+            "target": "Ũka haha tũthiĩ mũgũnda-inĩ.",
+            "source": "Come here so that we may go to the farm."
           },
           {
-            "target": "thiĩ — gũa",
-            "source": "Walk — Fall."
+            "target": "Itũrũra maĩ ma kũnyua gĩkombe-inĩ.",
+            "source": "Pour drinking water into the cup."
           }
         ],
         "authoredExercises": [
@@ -2163,7 +2184,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Send\"",
             "correctAnswer": "tũma",
             "acceptedAnswers": [
-              "tũma",
               "tũma"
             ],
             "hint": "Starts with \"tũ\""
@@ -2213,7 +2233,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "thambia",
@@ -2271,12 +2291,12 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "thambia — atũra",
-            "source": "Wash — Split."
+            "target": "Andũ nĩmarĩmaga mũgũnda mbura yakinya.",
+            "source": "People cultivate the farm when the rain arrives."
           },
           {
-            "target": "va — ĩĩa",
-            "source": "Give — Steal."
+            "target": "Atũra ngũũ na ũva mũgeni irio.",
+            "source": "Split firewood and give the guest food."
           }
         ],
         "authoredExercises": [
@@ -2297,7 +2317,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Split\"",
             "correctAnswer": "atũra",
             "acceptedAnswers": [
-              "atũra",
               "atũra"
             ],
             "hint": "Starts with \"at\""
@@ -2307,7 +2326,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"va\"",
             "correctAnswer": "Give",
             "acceptedAnswers": [
-              "Give",
               "Give"
             ],
             "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
@@ -2357,7 +2375,7 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "ũtukũ",
@@ -2381,38 +2399,38 @@ export const EMBU_UNITS: CourseUnit[] = [
           },
           {
             "target": "Gĩthaa",
-            "source": "Time zone",
+            "source": "Hour / Time",
             "pronunciation": "githaa"
           },
           {
-            "target": "Mweri wa gatano (Gat)",
+            "target": "Mweri wa gatano",
             "source": "May (Month 5)",
             "pronunciation": "mweri wa gatano"
           },
           {
-            "target": "Mweri wa gatantatũ (Gan)",
+            "target": "Mweri wa gatantatũ",
             "source": "June (Month 6)",
             "pronunciation": "mweri wa gatantatu"
           },
           {
-            "target": "Mweri wa mũgwanja (Mug)",
+            "target": "Mweri wa mũgwanja",
             "source": "July (Month 7)",
             "pronunciation": "mweri wa mugwanja"
           },
           {
-            "target": "Mweri wa kathatũ (Kat)",
+            "target": "Mweri wa kathatũ",
             "source": "March (Month 3)",
             "pronunciation": "mweri wa kathatu"
           }
         ],
         "sentences": [
           {
-            "target": "ũtukũ — Ũmũnthĩ",
-            "source": "Night — Today."
+            "target": "Ũmũnthĩ nĩtũkũruta wĩra, rũciũ tũkahurũka.",
+            "source": "Today we are working, tomorrow we will rest."
           },
           {
-            "target": "Rũciũ — Ĩgoro",
-            "source": "Tomorrow — Yesterday."
+            "target": "Ĩgoro mbura nĩyoirire ũtukũ.",
+            "source": "Yesterday rain fell at night."
           }
         ],
         "authoredExercises": [
@@ -2433,7 +2451,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Today\"",
             "correctAnswer": "Ũmũnthĩ",
             "acceptedAnswers": [
-              "Ũmũnthĩ",
               "Ũmũnthĩ"
             ],
             "hint": "Starts with \"Ũm\""
@@ -2443,7 +2460,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Rũciũ\"",
             "correctAnswer": "Tomorrow",
             "acceptedAnswers": [
-              "Tomorrow",
               "Tomorrow"
             ],
             "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
@@ -2471,7 +2487,7 @@ export const EMBU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "Gĩthaa",
-                "right": "Time zone"
+                "right": "Hour / Time"
               }
             ]
           }
@@ -2483,15 +2499,15 @@ export const EMBU_UNITS: CourseUnit[] = [
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Embu (Kĩembu) (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
+        "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
             "target": "ũtukũ",
             "source": "Night",
-            "pronunciation": "ũtukũ"
+            "pronunciation": "utuku"
           },
           {
-            "target": "Mweri wa kana (Kan)",
+            "target": "Mweri wa kana",
             "source": "April (Month 4)",
             "pronunciation": "mweri wa kana"
           },
@@ -2501,7 +2517,7 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "muthenya kiumia-ini"
           },
           {
-            "target": "Mweri wa kanana (Knn)",
+            "target": "Mweri wa kanana",
             "source": "August (Month 8)",
             "pronunciation": "mweri wa kanana"
           },
@@ -2511,17 +2527,17 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "ithaa"
           },
           {
-            "target": "Mweri wa mbere (Mbe)",
+            "target": "Mweri wa mbere",
             "source": "January (Month 1)",
             "pronunciation": "mweri wa mbere"
           },
           {
-            "target": "Mweri wa kaĩri (Kai)",
+            "target": "Mweri wa kaĩri",
             "source": "February (Month 2)",
             "pronunciation": "mweri wa kairi"
           },
           {
-            "target": "Mweri wa ikũmi (Iku)",
+            "target": "Mweri wa ikũmi",
             "source": "October (Month 10)",
             "pronunciation": "mweri wa ikumi"
           },
@@ -2533,12 +2549,12 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ũtukũ — Mweri wa kana",
-            "source": "Night — April."
+            "target": "Mweri wa kana nĩ mweri wa mbura.",
+            "source": "April is a month of rain."
           },
           {
-            "target": "Mũthenya kiumia-inĩ — Mweri wa kanana",
-            "source": "Day of the week — August."
+            "target": "Mweri wa mbere nĩ kĩambĩrĩria kĩa mwaka.",
+            "source": "January is the beginning of the year."
           }
         ],
         "authoredExercises": [
@@ -2559,7 +2575,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"April (Month 4)\"",
             "correctAnswer": "Mweri wa kana",
             "acceptedAnswers": [
-              "Mweri wa kana (Kan)",
               "Mweri wa kana"
             ],
             "hint": "Starts with \"Mw\""
@@ -2569,7 +2584,6 @@ export const EMBU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Mũthenya kiumia-inĩ\"",
             "correctAnswer": "Day of the week",
             "acceptedAnswers": [
-              "Day of the week",
               "Day of the week"
             ],
             "hint": "Review Travel, Directions, Paths & Landmarks"
@@ -2841,7 +2855,7 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "hu-ra ringga"
           },
           {
-            "target": "Ndi-, Tī-, -tī-, -tā",
+            "target": "Ndi-, Tī-, -tī-, -tā-",
             "source": "Not (with verb, as prefix, infix, or suffix)",
             "pronunciation": "ndi ti ti ta"
           },
@@ -3046,7 +3060,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "Nĩ wega",
             "source": "Thank you",
-            "pronunciation": "nee weh-gah moo-noh"
+            "pronunciation": "nee weh-gah"
           },
           {
             "target": "Thayũ",
@@ -3056,7 +3070,7 @@ export const EMBU_UNITS: CourseUnit[] = [
           {
             "target": "Tigwa na wega",
             "source": "Goodbye, be blessed",
-            "pronunciation": "tigwa na wega / tigwaa na thayu"
+            "pronunciation": "tigwa na wega"
           },
           {
             "target": "Nĩwega mũno",
@@ -3111,8 +3125,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "source": "Safe journey / Go in peace."
           },
           {
-            "target": "Ma-guta. Ṅ-gorono",
-            "source": "Fat, oil."
+            "target": "Mũtumia nĩakũruga irio na maguta.",
+            "source": "The woman is cooking food with oil."
           }
         ]
       },
@@ -3176,12 +3190,12 @@ export const EMBU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
+            "target": "Ithathatũ, mũgwanja, inyanya, kenda, ikũmi.",
             "source": "Six (6), seven (7), eight (8), nine (9), ten (10)."
           },
           {
-            "target": "mũndũ mũrũme",
-            "source": "Man / Men."
+            "target": "Andũ arũme ikũmi nĩmarĩ kĩama-inĩ.",
+            "source": "Ten men are in the council of elders."
           }
         ]
       }

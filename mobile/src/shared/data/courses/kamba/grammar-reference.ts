@@ -295,12 +295,12 @@ export const KAMBA_GRAMMAR_SECTIONS: GrammarSection[] = [
     summary: 'Complete line-by-line synthesis of C. W. Hobley’s Ethnology of A-Kamba and Other East African Tribes (1910, Part I, Chapters I–XXI, pp. 1–118 & Appendix pp. 165–169), preserving every indigenous term, table, clan totem, livestock brand, stool pattern, initiation code word, riddle, and folktale.',
     content: `In *Ethnology of A-Kamba and Other East African Tribes* (Cambridge University Press, 1910, Part I, pp. 1–118 & Appendix pp. 165–169), C. W. Hobley recorded the ethnographic and linguistic heritage of the A-Kamba across **Ulu (Machakos)**, **Kitui**, **Mumoni**, **Kikumbuliu**, and **Thaka (Chuka)**:
 1. **Chapters I–II — Geography, Sub-Tribes, 62 Clans (*Mbai*), Totems (*Kindu kithuku / Uthuku*) & Origin Migrations (pp. 1–8, 165–167)**:
-   - **Homeland, Rivers & Hills**: Bounded by the **Athi (*Sabaki*)** and **Tana (*Kiluluma*)** rivers and the **Tsavo** river, across the **Ulu** hills (**Machakos, Mbooni, Kilungu, Nzaui, Mukaa,iba**), **Kitui**, **Mumoni**, and **Kikumbuliu (*Chulu*)**. Population (p. 2): Ulu ~110,000, Kitui ~115,000 (total ~225,000), plus diasporas in Rabai, Usambara, and Usagara.
-   - **Original Clans (*Mbai*) & Sub-Divisions of Ulu (pp. 4–5)**: 8 primary clans (**Atui** [sub-clans *Asii, Amui, Aethangwa*], **Ethanga**, **Anzauni** [with *Atangwa*], **Amutei** [sub-clans *Amambua, Akoli, Aiveti, Nzioki*], **Amuti** [sub-clans *Akitutu, Ambua, Aiini, Amathunzi, Akanga, Athunzu*], **Akimei** [sub-clans *Awani, Atwii, Athanga,uluku*], **Amoi**, **Amwei**) totaling 25 Ulu divisions, plus 33 **Mumoni** *Ba-* clans and 18 **Kitui** clans (total 62 named clans, pp. 4–6, 165–167). The **Tortoise (*Ngu*)** is strictly taboo to all A-Kamba.
+   - **Homeland, Rivers & Hills**: Bounded by the **Athi (*Sabaki*)** and **Tana (*Kiluluma*)** rivers and the **Tsavo** river, across the **Ulu** hills (**Machakos, Mbooni, Kilungu, Nzaui, Mukaa, Kalama, Iveti**), **Kitui**, **Mumoni**, and **Kikumbuliu (*Chulu*)**. Population (p. 2): Ulu ~110,000, Kitui ~115,000 (total ~225,000), plus diasporas in Rabai, Usambara, and Usagara.
+   - **Original Clans (*Mbai*) & Sub-Divisions of Ulu (pp. 4–5)**: 8 primary clans (**Atui** [sub-clans *Asii, Amui, Aethangwa*], **Ethanga**, **Anzauni** [with *Atangwa*], **Amutei** [sub-clans *Amambua, Akoli, Aiveti, Nzioki*], **Amuti** [sub-clans *Akitutu, Ambua, Aiini, Amathunzi, Akanga, Athunzu*], **Akimei** [sub-clans *Awani, Atwii, Athanga, Amuluku*], **Amoi**, **Amwei**) totaling 25 Ulu divisions, plus 33 **Mumoni** *Ba-* clans and 18 **Kitui** clans (total 62 named clans, pp. 4–6, 165–167). The **Tortoise (*Ngu*)** is strictly taboo to all A-Kamba.
 2. **Chapters III–V — Homestead (*Musi*), Meteorology, 19 Crops (*Mbeke*) & 63 Animals (pp. 9–26)**:
    - **Village (*Musi*)**: **Thomi** (shaded approach path and men's council clearing), **Muumo** (outer kraal gate), **Kisuku** (cattle kraal), **Nyumba** (circular thatched hut with **Wea** eave-verandah), **Mulingo** (partition), **Kiko** (3-stone hearth), **Kiengo** (raised sleeping platform), **Ikumbi** (wicker granary inside hut).
    - **19 Cultivated Crops (Ch. IV, p. 17)**: **Mbia** (*Sorghum*), **Mwee** (*Pennisetum*), **Wimbi** (*Eleusine coracana*), **Bemba** (*Zea mays*), **Mbumbu** (fiwi beans), **Nzu** (*Cajanus indicus* pigeon pea), **Mbosho** (maharagwe beans), **Ngina** (pojo pulse), **Kikuu** (calabash), **Malengi** (pumpkins), **Mongu** (vegetable marrow), **Kiwa** (sugar cane), **Maiu** (bananas), **Matuma** (*Colocasia edulis*), **Kikwa** (yams), **Makwasi** (sweet potatoes), **Manga** (manioc), **Mbaki** (tobacco), **Ndata** (red Sorghum for **uki** beer).
-   - **63 Mammals, Birds, Reptiles & Insects (Ch. V, pp. 18–23)**: **Nzou**, **Mbuzya**, **Nguu**, **Mboo**, **Munyambu**, ** Ngo**, **Ikomi**, **Mbiti**, **Mbawa**, **Mbiwa**, **Mbuzya**, **Ngunu**, **Kinyongo**, **Kibungu**, **Nzai**, **Ndata**, **Nthia**, **Ndwaya**, **Kitonga**, **Mbuku (Wa-paruku)**, **Nzee**, **Kithangathi**, **Ngaa**, **Mboo**, **Ilimba**, **Nguluku**, **Nziu**, **Nthonzi**, **Mwe**, **Nganga**, **Ikunguu**, **Ndei**, **Nthungululu**, **Mbau**, **Itaa**, **Kimbu**, **Kovoi**, **Kinyamkuti**, **Nduu**, **Mbuibui**, **Nzuki**, **Ngulamei**, **Muthwa**, **Ngie**, ** Siafu**, **Ngala**, **Kinyonga**.
+   - **63 Mammals, Birds, Reptiles & Insects (Ch. V, pp. 18–23)**: **Nzou**, **Mbuzya**, **Nguu**, **Mboo**, **Munyambu**, **Ngo**, **Ikomi**, **Mbiti**, **Mbawa**, **Mbiwa**, **Mbuzya**, **Ngunu**, **Kinyongo**, **Kibungu**, **Nzai**, **Ndata**, **Nthia**, **Ndwaya**, **Kitonga**, **Mbuku (Wa-paruku)**, **Nzee**, **Kithangathi**, **Ngaa**, **Mboo**, **Ilimba**, **Nguluku**, **Nziu**, **Nthonzi**, **Mwe**, **Nganga**, **Ikunguu**, **Ndei**, **Nthungululu**, **Mbau**, **Itaa**, **Kimbu**, **Kovoi**, **Kinyamkuti**, **Nduu**, **Mbuibui**, **Nzuki**, **Ngulamei**, **Muthwa**, **Ngie**, **Siafu**, **Ngala**, **Kinyonga**.
 3. **Chapters VI–IX — Pastoralism, Industries, Traps, Musical Instruments, 8 Milia Stool Patterns & Weapons (pp. 24–48)**:
    - **Cattle & Dairy**: **Ngombe**, **Mbui**, **Ilondu**, **Koko**; **Ia** (fresh milk), **Kalia** (sour milk), **Mauta** (ghee/butter).
    - **Industries, Traps & Instruments (Ch. VII, pp. 29–38)**: **Chondo (pl. Vyondo)** basket; **Ibia & Nthio** grindstones; **Uwindi** & **Kika** fire-drill; 4 traps (**Mukwa, Ikehengi, Mwito, Kisungula**); **Uki** beer fermented with **Miatini** (*Kigelia Africana*); **Mbebe** bowed fiddle, **Soo** horn, **Nguli** & **Zomali** whistles, and 4 drums (**Kithembi, Ngutha, Engoma, Muvungu / Cha**); **Mwatu** beehive; **Ibila / Ivila** stools carved from **Kiwazi (Muasi), Muinga, Kivuti, Mana, Mutungu** with 8 **Milia** wire-inlay patterns (**Kithaitha, Vioo, Eumu, Kitui, Katungi, upper-arm pattern, Keinga, Kizoro/Kisolo**).
@@ -335,27 +335,40 @@ export const KAMBA_GRAMMAR_SECTIONS: GrammarSection[] = [
   },
   {
     id: 'kamba-melodic-tone-jones-freyer-2019',
-    title: 'Kĩkamba Four-Level Surface Tone System (H, L, Super-High, Super-Low) & Five Verbal Stem Melodies (Jones & Freyer 2019)',
-    summary: 'Patrick Jones & Jeremy Freyer (2019, Ch. 10 of Theory and Description in African Linguistics, pp. 163–181) demonstrate how Kĩkamba’s four surface tone heights (High, Low, Super-High, Super-Low) derive from five underlying tonal melodies on the verb stem plus boundary tone Lφ.',
-    content: `From Patrick Jones & Jeremy Freyer (*"Kikamba Verb Stem Tonology"*, in *Theory and Description in African Linguistics*, ed. Clem, Jenks & Sande, Language Science Press, 2019, Ch. 10, pp. 163–181):
-1. **Four Surface Tone Levels & Assertive Boundary Tone (Lφ)**:
-   - Kĩkamba contrasts four surface pitch levels: **High (H, \`á\`)**, **Low (L, \`à\`)**, **Super-High (SH, \`a̋\`)**, and **Super-Low / Extra-Low (SL, \`ȁ\`)**.
-   - Phrase-final **Super-Low (\`ȁ\`)** arises when an assertive phrasal boundary tone **Lφ** docks onto a final Low tone (e.g., *ko-konȁ* 'to hit' in isolation vs. *ko-konà ma-i.ò* 'to hit bananas' when non-final).
-   - **Super-High (\`a̋\`)** and falling contour **SH-L (\`â\`)** arise when Lφ interacts with a final High or floating suffixal tone (e.g., *to-í-kon-ááng-á-â* 'we do not usually hit' vs. *to-í-kon-ááng-á-a̋ ma-i.ò* 'we do not usually hit bananas').
-2. **Five Core Verbal Stem Melodies**:
-   - **(1) {LFV}**: Low tone on the final vowel (e.g., infinitive *ko-konȁ* 'to hit').
-   - **(2) {HFV}**: High tone on the final vowel.
-   - **(3) {HV2}**: High tone assigned to the second stem mora.
-   - **(4) {HV2 + LFV}**: High on the second stem mora plus Low on the final vowel.
-   - **(5) {HV2 + HFV}**: High on the second stem mora spreading to the final vowel, combined with floating suffixal tones ({LSuf} or {HSuf}).`,
+    title: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138): 'Reconsidering tone and melodies in Kikamba' — Four Surface Tone Levels (H, L, Super-High, Super-Low), Reduction of 10 Melodies to 5 Primary Stem Melodies, Final H Lowering, Long Retraction & Assertive Boundary Tone Lφ",
+    summary: "Patrick Jones & Jake Freyer (in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics, Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138, Tables 1–7, Examples 1–16, Fig. 1) reanalyze Roberts-Kohno's (2000, 2014) 10 Kikamba verbal tone melodies into 5 primary stem melodies ({HV2}, {HFV}, {LFV}, {HV2+HFV}, {HV2+LFV}) interacting with Final H Lowering, Long Retraction in -eet-ɛ, Assertive phrasal boundary tone Lφ, and suffixal floating tones {LSuf} & {HSuf}.",
+    content: `From Patrick Jones & Jake Freyer (*"Reconsidering tone and melodies in Kikamba"*, in Emily Clem, Peter Jenks & Hannah Sande, eds., *Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics*, Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: \`10.5281/zenodo.3367138\`, Tables 1–7, Examples 1–16, Fig. 1):
+1. **Four Surface Tone Levels & Assertive Phrasal Boundary Tone (\`Lφ\`, pp. 177–182, Tables 1–2, Ex. 1–4)**:
+   - Kĩkamba contrasts four surface tone heights: **High (H, \`á\`)**, **Low (L, \`à\`)**, **Super-High (SH, \`a̋\`)**, and **Super-Low / Extra-Low (SL, \`ȁ\`)**.
+   - Phrase-final **Super-Low (\`ȁ\`)** is derived when the assertive phrasal boundary tone **\`Lφ\`** docks onto a phrase-final Low tone (\`ko-konȁ\` 'to hit' in isolation vs. \`ko-konà ma-i.ò\` 'to hit bananas' when non-final, Ex. 1).
+   - Phrase-final **Super-High–Low falling contour (\`â\`)** vs. medial **Super-High (\`a̋\`)** arises when a floating suffixal Low tone \`{LSuf}\` or \`Lφ\` interacts with a final High tone (\`to-í-kon-ááng-á-â\` 'we do not usually hit' vs. \`to-í-kon-ááng-á-a̋ ma-i.ò\` 'we do not usually hit bananas', Ex. 2).
+2. **Reduction of Roberts-Kohno's (2000, 2014) 10 Melodies to 5 Primary Verbal Stem Melodies (pp. 182–196, Tables 3–7, Ex. 5–16, Fig. 1)**:
+   - Rather than positing 10 arbitrary tense/aspect melodies, Jones & Freyer show that Kĩkamba verb stems use **5 compositional primary melodies** combining two locus positions—the **second stem mora (\`V2\`)** and the **final vowel (\`FV\`)**:
+     1. **\`{LFV}\`**: Low on the final vowel (e.g., Infinitive \`ko-konȁ\` [L-stem] vs. \`ko-tálȁ\` [H-stem]).
+     2. **\`{HFV}\`**: High on the final vowel.
+     3. **\`{HV2}\`**: High on the second stem mora.
+     4. **\`{HV2 + HFV}\`**: High on the second stem mora and High on the final vowel (with plateauing across intervening moras).
+     5. **\`{HV2 + LFV}\`**: High on the second stem mora and Low on the final vowel.
+   - **Three Regular Phonological/Morphophonological Processes Account for All Remaining Alternations**:
+     - **(a) Final H Lowering (pp. 186–190)**: Lowers \`{HFV}\` to Low in **object-focus / non-assertive contexts** and with **3SG Class 1 subjects (\`a-\` / \`n-a-\`)**.
+     - **(b) Long Retraction in Anterior \`-eet-ɛ\` (pp. 190–192)**: Retracts \`{HFV}\` from \`-ɛ\` onto the long penultimate suffix vowel \`-eet-\` (\`-éét-ɛ̀\`).
+     - **(c) Floating Suffixal Tones \`{LSuf}\` & \`{HSuf}\` (pp. 192–196)**: Dock at the right edge of the verb word to trigger Super-High raising (\`a̋\`) or contour formation (\`â\`).`,
     examples: [
-      { kamba: "ko-konȁ (phrase-final SL) vs. ko-konà ma-i.ò (non-final L)", english: "to hit vs. to hit bananas", explanation: "Assertive phrasal boundary tone Lφ lowers phrase-final L to Super-Low (Jones & Freyer 2019, p. 165)" },
-      { kamba: "to-í-kon-ááng-á-â vs. to-í-kon-ááng-á-a̋ ma-i.ò", english: "we do not usually hit vs. we do not usually hit bananas", explanation: "Super-High (a̋) and falling contour realization before vs. at phrase boundary (Jones & Freyer 2019, p. 166)" }
+      {
+        kamba: "ko-konȁ (phrase-final SL) vs. ko-konà ma-i.ò (non-final L) • to-í-kon-ááng-á-â vs. to-í-kon-ááng-á-a̋ ma-i.ò",
+        english: "to hit vs. to hit bananas • we do not usually hit vs. we do not usually hit bananas",
+        explanation: "Assertive phrasal boundary tone Lφ and floating suffixal tone {LSuf} in Kĩkamba (Patrick Jones & Jake Freyer 2019, Ch. 10, pp. 179–181, Ex. 1–2)"
+      },
+      {
+        kamba: "5 Primary Stem Melodies: {LFV}, {HFV}, {HV2}, {HV2 + HFV}, {HV2 + LFV} + Final H Lowering (3SG & object focus) + Long Retraction (-éét-ɛ̀) + {LSuf}/{HSuf}",
+        english: "Compositional reanalysis of Roberts-Kohno's 10 Kikamba verb melodies into 5 stem melodies",
+        explanation: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 182–196, Tables 3–7 & Fig. 1)"
+      }
     ]
   },
   {
     id: 'kamba-public-domain-dataset-synthesis',
-    title: 'Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Kamba (Kĩkamba))',
+    title: 'Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Kamba / Kĩkamba)',
     summary: 'Synthesizes phonological correspondences, morphological patterns, and lexical roots across the integrated public-domain monographs and open-web datasets for Kamba (Kĩkamba).',
     content: `1. **Archival & Open-Dataset Integration for Kamba (Kĩkamba)**:
    - Combines primary historical documentation (Krapf 1850, Last 1885, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920, BFBS 1921, Jones & Freyer 2019) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).
@@ -373,8 +386,7 @@ export const KAMBA_GRAMMAR_SECTIONS: GrammarSection[] = [
         explanation: "Hildegarde Hinde (1904) & C. W. Hobley (1910, pp. 47–48, 78, 95)"
       }
     ]
-  }
-  ,
+  },
   {
     id: "kamba-johnston-1919-1922-group-c-12",
     title: "Sir Harry H. Johnston (1919–1922) Group C #12 Kamba: Erratum p. x ('Frog' Cua), Intervocalic Consonant Elision, 16-Class Prefix/Concord Table (p. 111), Numerals, Pronouns, Noteworthy Roots (Vol. II, pp. 30–31) & Bibliography (p. 788)",
@@ -439,16 +451,14 @@ export const KAMBA_GRAMMAR_SECTIONS: GrammarSection[] = [
       { kamba: "n-di-tinda • n-di-na-tinda • n-di-ka / ga-tinda • di / ndi-tinda (pl. di / ndi-tindani / tindai) • n-di-tinde", english: "I do not conquer • I did not conquer • I shall not conquer • conquer not! • that I may not conquer", explanation: "Negative paradigms of ku or gu-tinda in Hinde (1904, pp. xvi–xviii)" },
       { kamba: "wita wata? • uthi naku? • wendakki? • uomanakko? • o voo — o voo nēza / nēza", english: "What is your name? • Where are you going? • What do you want? • Where do you come from? • Salutation — Reply", explanation: "Ulu Kamba conversational phrases in Hinde (1904, pp. 73, 75)" }
     ]
-  }
-];
-
-KAMBA_GRAMMAR_SECTIONS.push({
-  id: "kamba-lindblom-1920-complete-monograph",
-  title:
-    "Gerhard Lindblom (1920) 'The Akamba in British East Africa: An Ethnological Monograph' (2nd Ed., Enlarged, Archives d'Études Orientales Vol. 17, Uppsala, pp. I–XII, 1–607, Figs. 1–167): Complete 35-Chapter Line-by-Line Synthesis",
-  summary:
-    "Comprehensive line-by-line documentation of Gerhard Lindblom's 607-page monograph (Uppsala 1918–1920, 1st ed. defended May 27, 1916; dedicated to Count Eric von Rosen): Lundell phonetic transcription (þ, ð, β, ŋ, ž, ś, ī, ū, æ, ə), 7 named Kamba informants, 4 regional dialects, 12 neighbour ethnonyms, 3 Nžaīko initiations (Musaī sticks Figs. 1–8, sand drawings Figs. 9–16 & Mbæβanī), Nðonī & 11 Kwiūa pairs, 7 women's words, kinship table, 25+ Mbaī clans & brands (Figs. 17–51), 5 Atumīa meat-sharing grades, Nsīlī law, Kīþītū (Fig. 52) & 6 ordeals, Kīŋgolə, 3 war divisions & Mutīætumo honours, Aīmu, Īþæmbo & Muluŋgu/Mumbī/Mwatwaŋgagī prayers, Kuausīa divination, Unīka/Mwītano arch, 17 Ŋgondu substances, 45+ medicinal plants, 9 famines, 3 11-month calendars, Kuseuβīa Maīo teeth-chipping & bone false teeth, 11 musical instruments, Kīūīśī board game, 13-part Nyumba hut plan (Fig. 125), 7 traps, 28 livestock terms, Mwatu beekeeping, Munīo S-link chains, Rabai reading-book text, and Addenda color/market lexicon.",
-  content: `From Gerhard Lindblom (*The Akamba in British East Africa: An Ethnological Monograph*, 2nd Edition, Enlarged, *Archives d'Études Orientales* publiées par J.-A. Lundell, Vol. 17, Uppsala: Appelbergs Boktryckeri Aktiebolag, 1918–1920, pp. I–XII, 1–607, Figs. 1–167):
+  },
+  {
+    id: "kamba-lindblom-1920-complete-monograph",
+    title:
+      "Gerhard Lindblom (1920) 'The Akamba in British East Africa: An Ethnological Monograph' (2nd Ed., Enlarged, Archives d'Études Orientales Vol. 17, Uppsala, pp. I–XII, 1–607, Figs. 1–167): Complete 35-Chapter Line-by-Line Synthesis",
+    summary:
+      "Comprehensive line-by-line documentation of Gerhard Lindblom's 607-page monograph (Uppsala 1918–1920, 1st ed. defended May 27, 1916; dedicated to Count Eric von Rosen): Lundell phonetic transcription (þ, ð, β, ŋ, ž, ś, ī, ū, æ, ə), 7 named Kamba informants, 4 regional dialects, 12 neighbour ethnonyms, 3 Nžaīko initiations (Musaī sticks Figs. 1–8, sand drawings Figs. 9–16 & Mbæβanī), Nðonī & 11 Kwiūa pairs, 7 women's words, kinship table, 25+ Mbaī clans & brands (Figs. 17–51), 5 Atumīa meat-sharing grades, Nsīlī law, Kīþītū (Fig. 52) & 6 ordeals, Kīŋgolə, 3 war divisions & Mutīætumo honours, Aīmu, Īþæmbo & Muluŋgu/Mumbī/Mwatwaŋgagī prayers, Kuausīa divination, Unīka/Mwītano arch, 17 Ŋgondu substances, 45+ medicinal plants, 9 famines, 3 11-month calendars, Kuseuβīa Maīo teeth-chipping & bone false teeth, 11 musical instruments, Kīūīśī board game, 13-part Nyumba hut plan (Fig. 125), 7 traps, 28 livestock terms, Mwatu beekeeping, Munīo S-link chains, Rabai reading-book text, and Addenda color/market lexicon.",
+    content: `From Gerhard Lindblom (*The Akamba in British East Africa: An Ethnological Monograph*, 2nd Edition, Enlarged, *Archives d'Études Orientales* publiées par J.-A. Lundell, Vol. 17, Uppsala: Appelbergs Boktryckeri Aktiebolag, 1918–1920, pp. I–XII, 1–607, Figs. 1–167):
 1. **Front Matter, Phonetic Alphabet, 7 Named Informants, 4 Dialects, 12 Neighbour Ethnonyms & Ikutha Rainfall Table (pp. I–XII, 1–26 & Addenda pp. 569–574)**:
    - **Publication & Fieldwork**: Published at the expense of Forges et Aciéries d'Avesta (M. Axel Ax:son Johnson), Phil. Dr. Frans Kempe, A. B. Svenska Kullager-Fabriken (SKF), Fabrique de Cuir de L. A. Matton, and Soc. anon. Nordstjernan; 1st edition defended at Upsala on **May 27, 1916**; 2nd enlarged edition dedicated **"TO COUNT ERIC VON ROSEN IN GRATEFUL AFFECTION."** Based on 1911–1912 fieldwork in Ukamba. Custom formula: **ni matindu ma andu ala ma tænə** ("It is a custom handed down from our fathers", p. 3).
    - **7 Named Kamba Informants (p. 6)**: **Kioko wa Malata** (Machakos), **Malata wa Kiambi** (father of Kioko, specialist in *ŋgondu* & cow twin-birth rites, p. 489), **Mbonge wa Kithome** (*ītīma* herbal doctor, Machakos, p. 319), **Muhindi** (respected elder, Machakos), **Mbindia / Vindia** (*mundu muə* at Kibwezi who initiated Lindblom into the secret 3rd *nžaīko* [*mbæβanī*] & performed *kīama* conjuring tricks, pp. 61, 266–268), **Makiti** (headman at Kibwezi, *þaβu* purification case pp. 299–300), and **Muli** (near Ikutha, Atharaka *kīþītū* rock crevice, pp. 170–171).
@@ -467,67 +477,27 @@ KAMBA_GRAMMAR_SECTIONS.push({
 4. **Parts III–VI & Addenda (Chs. XIII–XXXV & Addenda, pp. 207–607, Figs. 55–167)**:
    - **Religion, Divination, Medicine, Famines & Calendars (Chs. XIII–XIX, pp. 207–354)**: **kīu** (soul) vs. **þaīu / mīæβa** (breath), **aīmu** spirits & **īþæmbo** sacred fig groves (Figs. 55–56, 14-piece **kīþaŋgona** & **mboka** banana festival), **kīlumi** exorcism (Figs. 57–58) & **kīesu**, **Muluŋgu / Ŋgaī = Mumbī & Mwatwaŋgagī** (verbatim childbirth & rain prayers pp. 244–245 & calabash Fig. 59); **mundu muə** bow-and-gourd divination (**kuausīa**, Fig. 60), **mutī** vs. **muþæa** (**kīþīao**), **unīka / mwītano** epidemic arch & one-legged spirit **Mwītualalī**, **kūtīea** name magic, **ŋgomakomī** woodpecker augury (6 directions), **17 \`ŋgondu\` substances** (curing **þaβu** & **makwa**), snake-charmers **Kimia & Kivuvu** (Fig. 62), odd-number magic (**mwa** & 7), surgery & **45+ medicinal plants**, solar observatory (**kīsūæsīo kīa sīua**), **9 historical famines (1836–1909)**, and **3 lists of the 11-month calendar (pp. 341–342)**.
    - **Art, Dress, Teeth-Chipping, Music, Games, Economy & Addenda (Chs. XX–XXXV & Addenda, pp. 355–607)**: Dress (**ua, muþīta**, 700-cylinder brass apron **kīmæŋgo** Fig. 78), ornaments, **kuseuβīa maīo** teeth-chipping with **ŋæsa** chisel & pegged bone false teeth (Figs. 104–108), **11 musical instruments** (4 drums *mbalīa, kīþæmbə, ŋgoma, kīa*; *uta* bow; *mbæβə* fiddle played by blind bard **Kieti**; *ŋgulī, mutulælə, so, nžumalī*), dances & games (**kīūīśī** mancala); **13-part \`Nyumba\` hut plan (Fig. 125)**, 20-sec fire-drilling (**ulīndī & kīka** Fig. 126), **īβaī** arrow poison & **7 traps (Figs. 127–138)**, **28 livestock terms** & Malata's twin-calf rite, **mwatu** beekeeping, agriculture, food & beer/snuff, ironworking & **munīo** S-link chains (Figs. 156–161), **kīondə/nduŋgū** bags (Figs. 166–167), verbatim Rabai reading-book text (pp. 543–545), Backman's anthropometry & 60 Kitui prisoners' weights (mean **117.56 lbs**), German East Africa diaspora & Chagga lineages (**Mareale & Ngovi**, pp. 569–573), **īþaβu** wayside stone custom (p. 576), **3 basic color roots (\`-īu\` black = soot \`mbīo\`, \`-æu / nžaū\` white = lime \`īea\`, \`-tunə\` red = clay \`ndo\`, p. 580)**, and women's market day (**kīŋgaŋga**, p. 580).`,
-  examples: [
-    {
-      kamba: "ni matindu ma andu ala ma tænə • kīma kīa nžaβī (Donyo Sabuk) • mutītu wa ndeī (Mtoto Andei)",
-      english:
-        "It is a custom handed down from our fathers (p. 3) • The nžaβī bean mountain • The vulture forest (p. 9)",
-      explanation: "Lindblom (1920, Introduction p. 3 & Ch. I p. 9)",
-    },
-    {
-      kamba:
-        "kīoko→unī, kīlonžo→ŋguaīa, īlondu→ŋgondu, nžukī→ndoŋgoŋgī, nžoka→niamu īa ndī, þomə→īβuβeonī, mwatū→mwaŋgo • mbunu, kīβwū, kīseβə, kusonolīa, īŋa, mbuþæŋgə, ukatī",
-      english:
-        "Married women's kwiūa name-taboo substitutions (pp. 93–94) • 7 special women's vocabulary words (Addenda p. 574)",
-      explanation: "Lindblom (1920, Ch. V pp. 93–94 & Addenda p. 574)",
-    },
-    {
-      kamba:
-        "Muluŋgu / Ŋgaī = Mumbī & Mwatwaŋgagī • kuna kīþītū (7 stones) vs. ndundu • muena, ŋgīla & īta (mutīætumo) • -īu (mbīo), -æu/nžaū (īea), -tunə (ndo)",
-      english:
-        "Supreme Creator ('Fashioner' & 'Cleaver', p. 244) • 7-stone kīþītū oath vs. relative's gall-bladder oath • 3 war divisions & spear-slayer title • 3 basic color roots (p. 580)",
-      explanation: "Lindblom (1920, pp. 169–172, 191–198, 244, 580)",
-    },
-  ],
-});
-
-// ── Update kamba-melodic-tone-jones-freyer-2019 with exact author name (Patrick Jones & Jake Freyer), title ("Reconsidering tone and melodies in Kikamba"), page numbers (Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138), and Tables 1–7 / Examples 1–16 ──
-const _kamToneSec = KAMBA_GRAMMAR_SECTIONS.find(
-  (s) => s.id === "kamba-melodic-tone-jones-freyer-2019"
-);
-if (_kamToneSec) {
-  _kamToneSec.title =
-    "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138): 'Reconsidering tone and melodies in Kikamba' — Four Surface Tone Levels (H, L, Super-High, Super-Low), Reduction of 10 Melodies to 5 Primary Stem Melodies, Final H Lowering, Long Retraction & Assertive Boundary Tone Lφ";
-  _kamToneSec.summary =
-    "Patrick Jones & Jake Freyer (in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics, Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: 10.5281/zenodo.3367138, Tables 1–7, Examples 1–16, Fig. 1) reanalyze Roberts-Kohno's (2000, 2014) 10 Kikamba verbal tone melodies into 5 primary stem melodies ({HV2}, {HFV}, {LFV}, {HV2+HFV}, {HV2+LFV}) interacting with Final H Lowering, Long Retraction in -eet-ɛ, Assertive phrasal boundary tone Lφ, and suffixal floating tones {LSuf} & {HSuf}.";
-  _kamToneSec.content = [
-    "From Patrick Jones & Jake Freyer (*\"Reconsidering tone and melodies in Kikamba\"*, in Emily Clem, Peter Jenks & Hannah Sande, eds., *Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics*, Berlin: Language Science Press, 2019, Ch. 10, pp. 177–198, DOI: `10.5281/zenodo.3367138`, Tables 1–7, Examples 1–16, Fig. 1):",
-    "1. **Four Surface Tone Levels & Assertive Phrasal Boundary Tone (`Lφ`, pp. 177–182, Tables 1–2, Ex. 1–4)**:",
-    "   - Kĩkamba contrasts four surface tone heights: **High (H, `á`)**, **Low (L, `à`)**, **Super-High (SH, `a̋`)**, and **Super-Low / Extra-Low (SL, `ȁ`)**.",
-    "   - Phrase-final **Super-Low (`ȁ`)** is derived when the assertive phrasal boundary tone **`Lφ`** docks onto a phrase-final Low tone (`ko-konȁ` 'to hit' in isolation vs. `ko-konà ma-i.ò` 'to hit bananas' when non-final, Ex. 1).",
-    "   - Phrase-final **Super-High–Low falling contour (`â`)** vs. medial **Super-High (`a̋`)** arises when a floating suffixal Low tone `{LSuf}` or `Lφ` interacts with a final High tone (`to-í-kon-ááng-á-â` 'we do not usually hit' vs. `to-í-kon-ááng-á-a̋ ma-i.ò` 'we do not usually hit bananas', Ex. 2).",
-    "2. **Reduction of Roberts-Kohno's (2000, 2014) 10 Melodies to 5 Primary Verbal Stem Melodies (pp. 182–196, Tables 3–7, Ex. 5–16, Fig. 1)**:",
-    "   - Rather than positing 10 arbitrary tense/aspect melodies, Jones & Freyer show that Kĩkamba verb stems use **5 compositional primary melodies** combining two locus positions—the **second stem mora (`V2`)** and the **final vowel (`FV`)**:",
-    "     1. **`{LFV}`**: Low on the final vowel (e.g., Infinitive `ko-konȁ` [L-stem] vs. `ko-tálȁ` [H-stem]).",
-    "     2. **`{HFV}`**: High on the final vowel.",
-    "     3. **`{HV2}`**: High on the second stem mora.",
-    "     4. **`{HV2 + HFV}`**: High on the second stem mora and High on the final vowel (with plateauing across intervening moras).",
-    "     5. **`{HV2 + LFV}`**: High on the second stem mora and Low on the final vowel.",
-    "   - **Three Regular Phonological/Morphophonological Processes Account for All Remaining Alternations**:",
-    "     - **(a) Final H Lowering (pp. 186–190)**: Lowers `{HFV}` to Low in **object-focus / non-assertive contexts** and with **3SG Class 1 subjects (`a-` / `n-a-`)**.",
-    "     - **(b) Long Retraction in Anterior `-eet-ɛ` (pp. 190–192)**: Retracts `{HFV}` from `-ɛ` onto the long penultimate suffix vowel `-eet-` (`-éét-ɛ̀`).",
-    "     - **(c) Floating Suffixal Tones `{LSuf}` & `{HSuf}` (pp. 192–196)**: Dock at the right edge of the verb word to trigger Super-High raising (`a̋`) or contour formation (`â`)."
-  ].join("\n");
-  _kamToneSec.examples = [
-    {
-      kamba: "ko-konȁ (phrase-final SL) vs. ko-konà ma-i.ò (non-final L) • to-í-kon-ááng-á-â vs. to-í-kon-ááng-á-a̋ ma-i.ò",
-      english: "to hit vs. to hit bananas • we do not usually hit vs. we do not usually hit bananas",
-      explanation: "Assertive phrasal boundary tone Lφ and floating suffixal tone {LSuf} in Kĩkamba (Patrick Jones & Jake Freyer 2019, Ch. 10, pp. 179–181, Ex. 1–2)"
-    },
-    {
-      kamba: "5 Primary Stem Melodies: {LFV}, {HFV}, {HV2}, {HV2 + HFV}, {HV2 + LFV} + Final H Lowering (3SG & object focus) + Long Retraction (-éét-ɛ̀) + {LSuf}/{HSuf}",
-      english: "Compositional reanalysis of Roberts-Kohno's 10 Kikamba verb melodies into 5 stem melodies",
-      explanation: "Patrick Jones & Jake Freyer (2019, Ch. 10, pp. 182–196, Tables 3–7 & Fig. 1)"
-    }
-  ];
-}
+    examples: [
+      {
+        kamba: "ni matindu ma andu ala ma tænə • kīma kīa nžaβī (Donyo Sabuk) • mutītu wa ndeī (Mtoto Andei)",
+        english:
+          "It is a custom handed down from our fathers (p. 3) • The nžaβī bean mountain • The vulture forest (p. 9)",
+        explanation: "Lindblom (1920, Introduction p. 3 & Ch. I p. 9)",
+      },
+      {
+        kamba:
+          "kīoko→unī, kīlonžo→ŋguaīa, īlondu→ŋgondu, nžukī→ndoŋgoŋgī, nžoka→niamu īa ndī, þomə→īβuβeonī, mwatū→mwaŋgo • mbunu, kīβwū, kīseβə, kusonolīa, īŋa, mbuþæŋgə, ukatī",
+        english:
+          "Married women's kwiūa name-taboo substitutions (pp. 93–94) • 7 special women's vocabulary words (Addenda p. 574)",
+        explanation: "Lindblom (1920, Ch. V pp. 93–94 & Addenda p. 574)",
+      },
+      {
+        kamba:
+          "Muluŋgu / Ŋgaī = Mumbī & Mwatwaŋgagī • kuna kīþītū (7 stones) vs. ndundu • muena, ŋgīla & īta (mutīætumo) • -īu (mbīo), -æu/nžaū (īea), -tunə (ndo)",
+        english:
+          "Supreme Creator ('Fashioner' & 'Cleaver', p. 244) • 7-stone kīþītū oath vs. relative's gall-bladder oath • 3 war divisions & spear-slayer title • 3 basic color roots (p. 580)",
+        explanation: "Lindblom (1920, pp. 169–172, 191–198, 244, 580)",
+      },
+    ],
+  }
+];

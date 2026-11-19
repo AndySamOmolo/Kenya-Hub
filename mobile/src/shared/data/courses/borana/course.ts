@@ -30,7 +30,7 @@ export const BORANA_UNITS: CourseUnit[] = [
   {
     "id": "borana-unit-1",
     "unitNumber": 1,
-    "title": "Nagaa Borana Greetings, Cushitic Cases, Numerals, 3 Conjugations",
+    "title": "Nagaa Borana Greetings, Cushitic Cases, Numerals & 3 Conjugations",
     "description": "Master Afaan Borana greetings (Akkam jirta? / Nagaa!), Nominative vs. Accusative cases, Cardinals/Ordinals (-tiana), Social Numerals (-anu), Amole salt-bar fractions, 8 Derived Verbal Forms, 3 Conjugations, 5 Particle Modes, 4 Negative Verbs, and Verbatim 1840–1845 Prayers & Letters.",
     "icon": "BookOpen",
     "color": "#B45309",
@@ -46,161 +46,161 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "Akkam jirta?",
             "source": "How are you?",
-            "pronunciation": "akkam-jirta",
+            "pronunciation": "ak-kam jir-ta",
             "hint": "Tutschek (1845, p. 88, Otshu Aga’s Letter of Oct. 16, 1840) & Borana salutation"
           },
           {
             "target": "Naga, naga! Fayaketi!",
             "source": "Peace, peace! Thy health!",
-            "pronunciation": "akkam-jirta",
+            "pronunciation": "na-ga na-ga fa-ya-ke-ti",
             "hint": "Tutschek (1845, p. 88, Otshu Aga’s Letter of Oct. 16, 1840) & Borana salutation"
           },
           {
             "target": "Ati naga olte had'a?",
             "source": "Hast thou passed this day in peace?",
-            "pronunciation": "akkam-jirta",
+            "pronunciation": "a-ti na-ga ol-te ha-d'a",
             "hint": "Tutschek (1845, p. 88, Otshu Aga’s Letter of Oct. 16, 1840) & Borana salutation"
           },
           {
             "target": "Galatoomi",
             "source": "Thank you",
-            "pronunciation": "galatoomi",
+            "pronunciation": "ga-la-too-mi",
             "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
           },
           {
             "target": "Wacayon iza ha tolu",
             "source": "May God do good to him",
-            "pronunciation": "galatoomi",
+            "pronunciation": "wa-ca-yon i-za ha to-lu",
             "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
           },
           {
             "target": "Nagaiti buli!",
             "source": "Good night!",
-            "pronunciation": "galatoomi",
+            "pronunciation": "na-gai-ti bu-li",
             "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
           },
           {
-            "target": "Nagan hafi hama nu",
+            "target": "Nagan hafi hama nu wal agaruti!",
             "source": "Rest in peace until we meet again!",
-            "pronunciation": "galatoomi",
+            "pronunciation": "na-gan ha-fi ha-ma nu wal a-ga-ru-ti",
             "hint": "Tutschek (1845, pp. 90–91, Aga’s & Akafed’e’s Letters)"
           },
           {
             "target": "nama (nom. namni)",
             "source": "Person",
-            "pronunciation": "na-ma / dhii-ra / du-bartii / man-gu-do / dar-ga-go",
+            "pronunciation": "na-ma",
             "hint": "Tutschek (1845, §§ 177–184, 191, 231) & Krapf (1842)"
           },
           {
             "target": "dhiira (d'ira, nom. d'irri)",
             "source": "Man",
-            "pronunciation": "na-ma / dhii-ra / du-bartii / man-gu-do / dar-ga-go",
+            "pronunciation": "dhii-ra",
             "hint": "Tutschek (1845, §§ 177–184, 191, 231) & Krapf (1842)"
           },
           {
             "target": "dubartii (niti)",
             "source": "Woman, wife",
-            "pronunciation": "na-ma / dhii-ra / du-bartii / man-gu-do / dar-ga-go",
+            "pronunciation": "du-bar-tii",
             "hint": "Tutschek (1845, §§ 177–184, 191, 231) & Krapf (1842)"
           },
           {
-            "target": "abbaa",
+            "target": "abbaa (nom. aban)",
             "source": "Father (my/thy father)",
-            "pronunciation": "abbaa / haadha / mutsha / hi-djo-le",
+            "pronunciation": "ab-baa",
             "hint": "Tutschek (1845, §§ 180, 184, 186, 230)"
           },
           {
-            "target": "haadha",
+            "target": "haadha (had'a, nom. had'i)",
             "source": "Mother (my/thy mother)",
-            "pronunciation": "abbaa / haadha / mutsha / hi-djo-le",
+            "pronunciation": "haa-dha",
             "hint": "Tutschek (1845, §§ 180, 184, 186, 230)"
           },
           {
             "target": "mutsha (pl. hidjole)",
             "source": "Child (pl. collective children)",
-            "pronunciation": "abbaa / haadha / mutsha / hi-djo-le",
+            "pronunciation": "mut-sha",
             "hint": "Tutschek (1845, §§ 180, 184, 186, 230)"
           },
           {
             "target": "kaniza (nom. kanifni)",
             "source": "Bee",
-            "pronunciation": "ka-ni-if-ni / bar-zif-ni / gof-ni / laf-ti / bo-ke-nyi",
+            "pronunciation": "ka-ni-za / ka-nif-ni",
             "hint": "Tutschek (1845, § 184, pp. 55–56)"
           },
           {
             "target": "barziza (nom. barzifni)",
             "source": "Teacher",
-            "pronunciation": "ka-ni-if-ni / bar-zif-ni / gof-ni / laf-ti / bo-ke-nyi",
+            "pronunciation": "bar-zi-za / bar-zif-ni",
             "hint": "Tutschek (1845, § 184, pp. 55–56)"
           },
           {
             "target": "gawa (nom. gofni)",
             "source": "Hole (-fni Nominative)",
-            "pronunciation": "ka-ni-if-ni / bar-zif-ni / gof-ni / laf-ti / bo-ke-nyi",
+            "pronunciation": "ga-wa / gof-ni",
             "hint": "Tutschek (1845, § 184, pp. 55–56)"
           },
           {
             "target": "bishaan (biz'an)",
             "source": "Water",
-            "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
+            "pronunciation": "bi-shaan",
             "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
           },
           {
             "target": "ibidda (ibida)",
             "source": "Fire",
-            "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
+            "pronunciation": "i-bid-da",
             "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
           },
           {
             "target": "aduu (biftu)",
             "source": "Sun",
-            "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
+            "pronunciation": "a-duu",
             "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
           },
           {
             "target": "baatii",
             "source": "Moon",
-            "pronunciation": "bishaan / i-bidda / a-duu / baa-tii",
+            "pronunciation": "baa-tii",
             "hint": "Tutschek (1845, §§ 184, 254, Prayer 1)"
           },
           {
             "target": "loon (godiyo)",
             "source": "Cattle",
-            "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
+            "pronunciation": "loon / go-di-yo",
             "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
           },
           {
             "target": "gaala",
             "source": "Camel",
-            "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
+            "pronunciation": "gaa-la",
             "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
           },
           {
             "target": "reeʿ",
             "source": "Goat",
-            "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
+            "pronunciation": "ree'",
             "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
           },
           {
-            "target": "rooni)",
+            "target": "farda (pl. faratoni; faratoni d'êd'ti)",
             "source": "Horse (the horses graze — fem. sg. concord)",
-            "pronunciation": "loon / gaa-la / ree' / farda / fa-ra-to-ni",
+            "pronunciation": "far-da / fa-ra-to-ni",
             "hint": "Tutschek (1845, §§ 179, 181–182, pp. 54–55, 86)"
           },
           {
             "target": "Ya Waca nagan na bultshite nagan na oltshi ... milkiko na gadyêlzi!",
-            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace ...",
+            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace, guide my steps straight!",
             "pronunciation": "ya wa-ca na-gan na bultshi-te na-gan na oltshi",
             "hint": "Tutschek (1845, pp. 87–88, Morning Prayer)"
           },
           {
-            "target": "Wacayo laftana, goftako! Ho haman nati d'ufe, aka mukni adu narra cabu",
-            "source": "Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the sun",
+            "target": "Wacayo laftana, goftako! Ho haman nati d'ufe, aka mukni adu narra cabu, gadiza na tai!",
+            "source": "Good God of this earth, my Lord! When misfortune comes to me, as a tree keeps off the sun from me, be thou my shade!",
             "pronunciation": "wa-ca-yo laf-ta-na gof-ta-ko ... ga-di-za na tai",
             "hint": "Tutschek (1845, p. 84, Akafed'e's Prayer after the Hambo–Hamaya War)"
           },
           {
-            "target": "Dan ibidti bue hindebiu",
+            "target": "D'ad'an ibidti bue hindebiu",
             "source": "Butter fallen into the fire comes not back",
             "pronunciation": "d'ad'an i-bidti bue hinde-biu",
             "hint": "Tutschek (1845, p. 90, Letter 5)"
@@ -209,11 +209,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ya Waca nagan na bultshite nagan na oltshi; ede inand'aca karakora kan naga naf god'te, ya Waca, milkiko na gadyêlzi.",
-            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me."
+            "source": "O God, thou hast let me pass the night in peace, let me pass the day in peace; wherever I may go upon my way which thou madest peaceable for me, O God, guide my steps straight."
           },
           {
             "target": "Ya Waca nagan na oltshite, nagan na bultshi, gofta goftan cabne; harkake dyaladan ola, harkake dyaladan bula, had'ikozi, abankozi.",
-            "source": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under."
+            "source": "O God, thou hast let me pass the day in peace, let me pass the night in peace, O Lord who hast no Lord; under thy hand I pass the day, under thy hand I pass the night, thou art my mother, thou art my father."
           },
           {
             "target": "Wara Hambo fi wara Hamaya waliti ararzi, goftako! Lola biyakeña baza, naga biyakeñati debizi!",
@@ -221,7 +221,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "D'ad'an ibidti bue hindebiu.",
-            "source": "Butter fallen into the fire comes not back ."
+            "source": "Butter fallen into the fire comes not back."
           }
         ],
         "authoredExercises": [
@@ -283,7 +283,7 @@ export const BORANA_UNITS: CourseUnit[] = [
               "nama",
               "abbaa"
             ],
-            "hint": "nah-mah / dhee-rah / doo-bahr-tee",
+            "hint": "na-ma",
             "acceptedAnswers": [
               "nama (nom. namni) / dhiira (d'ira) / dubartii (niti)",
               "nama"
@@ -299,7 +299,7 @@ export const BORANA_UNITS: CourseUnit[] = [
               "nama",
               "abbaa"
             ],
-            "hint": "ahb-bah / hah-dhah / moo-chah",
+            "hint": "ab-baa",
             "acceptedAnswers": [
               "abbaa (nom. aban) / haadha (had'a, nom. had'i) / mutsha (pl. hidjole)",
               "abbaa"
@@ -344,19 +344,19 @@ export const BORANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "borana-numbers-verbs",
-        "title": "Numerals, Ordinals (-tiana), 21 Social Numbers (-anu), Amole",
+        "title": "Numerals, Ordinals (-tiana), 21 Social Numbers (-anu) & Amole Fractions",
         "icon": "Hash",
         "description": "Count in Afaan Borana and master Tutschek’s (1845) ordinals, 21 social numbers, 4 salt-bar fractions, 8 derived verb stems, 3 conjugations, 5 particle modes, and 4 negative verbs.",
         "tips": "Tutschek (1845, §§ 38–176, 201–215, pp. 9–53, 58–63) documents cardinals 1–100,000, ordinals in -tiana (tokotiana '2nd', lamatiana '3rd', while '1st' is ini dura or hangafa, opposed to gudiru 'youngest' & ini boda 'last'), 21 social numbers in -anu (latshanu '2 together' ... kumatanu '1,000 together' + ladz'u 'both'), 4 amole fractions: tchabnana (1/2), karmana (1/4), gimaz'i (3/4), gedele/gadele (1/8), 3 conjugations (adema, tshiza, tà/boa), 5 particle modes (-re, -mi, -ti, -yi, -ni), and 4 negative verbs (dida, bad'a, d'aba, ola).",
         "words": [
           {
-            "target": "tokko (toko, 1), lama (2), sadii (zadi, 3), afur (afuri, 4), shan",
+            "target": "tokko (toko, 1), lama (2), sadii (zadi, 3), afur (afuri, 4), shan (z'ani, 5)",
             "source": "Cardinals 1 to 5",
             "pronunciation": "tokko la-ma sa-dii a-fur shan",
             "hint": "Tutschek (1845, § 201, p. 58) & Krapf (1842)"
           },
           {
-            "target": "ja'a (dya, 6), torba (7; torban = week), saddeet (zadeta, 8), sagal",
+            "target": "ja'a (dya, 6), torba (7; torban = week), saddeet (zadeta, 8), sagal (zagala, 9), kudhan (kudan, 10)",
             "source": "Cardinals 6 to 10 (plus 7-day week & 10-day decade)",
             "pronunciation": "ja'a torba saddeet sa-gal kudhan",
             "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
@@ -368,13 +368,13 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, §§ 7, 202, pp. 3, 59)"
           },
           {
-            "target": "digetama (20), zodoma (30), afurtama (40), z'antama (50), dyatama (60)",
+            "target": "digetama (20), zodoma (30), afurtama (40), z'antama (50), dyatama (60), d'iba (100), kuma (1,000), kuntuma (100,000)",
             "source": "20 to 90, 100, 1,000, and 100,000 ('a fist-full of thousands')",
             "pronunciation": "digda-ma so-do-ma dhibba ku-ma kuntu-ma",
             "hint": "Tutschek (1845, §§ 203–204, pp. 59–60)"
           },
           {
-            "target": "ini dura / hangafa, tokotiana (2nd), lamatiana (3rd), zaditiana (4th)",
+            "target": "ini dura / hangafa, tokotiana (2nd), lamatiana (3rd), zaditiana (4th) ... kudanatiana (11th)",
             "source": "Ordinals 1st to 11th (-tiana = 'hanging on')",
             "pronunciation": "ini du-ra / hanga-fa to-ko-tia-na la-ma-tia-na za-di-tia-na",
             "hint": "Tutschek (1845, §§ 207–208, pp. 60–61)"
@@ -391,31 +391,31 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, § 212, p. 62)"
           },
           {
-            "target": "gafatoko (once), gafalama (twice), gafazadi (thrice), irgataka",
+            "target": "gafatoko (once), gafalama (twice), gafazadi (thrice); diriba, lamefad'a, zadefad'a",
             "source": "Numeral adverbs & numeral verbs (double; do for the 2nd, 3rd, 4th, 5th time)",
             "pronunciation": "ga-fa-to-ko / di-ri-ba / la-me-fad'a",
             "hint": "Tutschek (1845, §§ 213–215, pp. 62–63)"
           },
           {
             "target": "bâ → bad'a → baza → bafad'a → baziza → bazifad'a → baziziza → bazizifad'a",
-            "source": "The 8 derived verbal forms of bâ",
+            "source": "The 8 derived verbal forms of bâ ('go out')",
             "pronunciation": "bâ-bad'a-baza-bafad'a",
             "hint": "Tutschek (1845, §§ 44–50, 98, 105, pp. 11–12, 28, 30)"
           },
           {
-            "target": "Conj",
+            "target": "I. adema (ademta, ademna); II. tshiza (tshifta, tshifna); III. tà (teza, teña)",
             "source": "The 3 Verbal Conjugations (1s, 2s, 1p Present Indicative)",
             "pronunciation": "a-de-ma / tshi-za tshif-ta / ta te-za te-nya",
             "hint": "Tutschek (1845, §§ 132–135, pp. 38–42)"
           },
           {
-            "target": "Modes: -u (subj.), -re (interrog.), -mi (nonne), -ti (until), -yi",
+            "target": "Modes: -u (subj.), -re (interrog.), -mi (nonne), -ti (until), -yi, -ni",
             "source": "Subjunctive in -u & the 5 affixed particle modes",
             "pronunciation": "-u / -re / -mi / -ti / -yi / -ni",
             "hint": "Tutschek (1845, §§ 113–119, pp. 32–34)"
           },
           {
-            "target": "dida / badaba / ola",
+            "target": "dida / bad'a / d'aba / ola",
             "source": "The 4 negative auxiliary verbs in Galla/Borana",
             "pronunciation": "di-da / bad'a / d'a-ba / ola",
             "hint": "Tutschek (1845, § 176, pp. 52–53)"
@@ -424,19 +424,19 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Nu arfanu teñeti walwadjin kana hazofna.",
-            "source": "There are four of us sitting and conversing together ."
+            "source": "There are four of us sitting and conversing together."
           },
           {
             "target": "Wacayo mid'an magarziza.",
-            "source": "God causes the grain to grow ."
+            "source": "God causes the grain to grow."
           },
           {
             "target": "Oto izan homa hiñad'ini galani.",
-            "source": "They went home without having eaten anything ."
+            "source": "They went home without having eaten anything."
           },
           {
             "target": "Muca Djulule boe hinrafne, malif aannan obaftani, aka ini rafufi? — Muca Gadiyo hud'eti kan ini boe; gara d'ukubeti, kan ini boe.",
-            "source": "Why do you not give Djulule's child milk to drink that it may sleep, as it weeps and does not sleep? — Gadiyo's child has a cough, therefore it."
+            "source": "Why do you not give Djulule's child milk to drink that it may sleep, as it weeps and does not sleep? — Gadiyo's child has a cough, therefore it weeps; its belly aches, therefore it weeps."
           }
         ],
         "authoredExercises": [
@@ -489,7 +489,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Kinship Terms, Elders & Household Roles",
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -507,17 +507,17 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "dubartii",
             "source": "Woman",
-            "pronunciation": "du-bartii / nii-tii / haadha warraa",
+            "pronunciation": "du-bar-tii",
             "hint": "Tutschek (1845, § 191, p. 56) & Borana / Oromo"
           },
           {
             "target": "niitii (niti)",
             "source": "Wife",
-            "pronunciation": "du-bartii / nii-tii / haadha warraa",
+            "pronunciation": "nii-tii",
             "hint": "Tutschek (1845, § 191, p. 56) & Borana / Oromo"
           },
           {
-            "target": "barsiisaa / barziza (nom. barzifni",
+            "target": "barsiisaa / barziza (nom. barzifni, pl. barsiisota)",
             "source": "Teacher",
             "pronunciation": "barsii-saa / barzi-za",
             "hint": "Tutschek (1845, § 184.2, p. 55)"
@@ -551,6 +551,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Brother",
             "pronunciation": "o-bo-le-sa",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "ilma — obboleettii",
+            "source": "Son — Sister."
+          },
+          {
+            "target": "dubartii — barsiisaa",
+            "source": "Woman — Teacher."
           }
         ],
         "authoredExercises": [
@@ -672,7 +682,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Clans, Marriage & Community Life",
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -696,13 +706,13 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "oboleza",
             "source": "Brother",
-            "pronunciation": "o-bo-le-za / o-bo-le-ti",
+            "pronunciation": "o-bo-le-za",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
           },
           {
             "target": "oboleti",
             "source": "Sister",
-            "pronunciation": "o-bo-le-za / o-bo-le-ti",
+            "pronunciation": "o-bo-le-ti",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
           },
           {
@@ -734,6 +744,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Husband",
             "pronunciation": "dirsa",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla s.)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "ílma — worra",
+            "source": "Child — Family."
+          },
+          {
+            "target": "aba — oboleza",
+            "source": "Father — Brother."
           }
         ],
         "authoredExercises": [
@@ -805,7 +825,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Cardinal & Ordinal Numerals",
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -861,6 +881,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Nine",
             "pronunciation": "sa-gal",
             "hint": "Tutschek (1845, § 201, p. 58)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "tokko, lama, sadii, afur, shan",
+            "source": "One, two, three, four, five."
+          },
+          {
+            "target": "jaha, torba, saddeet, sagal",
+            "source": "Six, seven, eight, nine."
           }
         ],
         "authoredExercises": [
@@ -978,19 +1008,13 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Trade, Barter, Currency & Traditional Measures",
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
-            "target": "kudhan",
-            "source": "Ten",
-            "pronunciation": "kudhan",
-            "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
-          },
-          {
-            "target": "10-day period)",
-            "source": "Decade)",
-            "pronunciation": "kudhan",
+            "target": "kudhan (kudan; kudani = 10-day period)",
+            "source": "Ten (and 10-day Period / Decade)",
+            "pronunciation": "ku-dhan",
             "hint": "Tutschek (1845, §§ 201, 203, pp. 58–59)"
           },
           {
@@ -1127,7 +1151,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Staple Foods, Cookery & Beverages",
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -1257,7 +1281,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Crops, Cultivation & Pastoral Livestock",
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -1285,7 +1309,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "cabad'u",
-            "source": "Fat",
+            "source": "To seize / hold",
             "pronunciation": "ca-bad'u"
           },
           {
@@ -1304,15 +1328,15 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "bakse"
           },
           {
-            "target": "bubba",
+            "target": "bubba (bubba bafte = to lay an egg)",
             "source": "Egg",
-            "pronunciation": "bub-ba to lay eg bub-ba baf-te"
+            "pronunciation": "bub-ba"
           }
         ],
         "sentences": [
           {
             "target": "kurkurio mideise — sórate",
-            "source": "Bake, v. a. -bread — Eat."
+            "source": "Bake bread — Eat."
           },
           {
             "target": "damfe — korkorío",
@@ -1323,16 +1347,16 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"kurkurio mideise\" mean in English?",
-            "correctAnswer": "Bake",
+            "correctAnswer": "Bake bread",
             "options": [
               "Eat",
-              "Bake",
+              "Bake bread",
               "Boil",
               "Bread"
             ],
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock",
             "acceptedAnswers": [
-              "Bake, v. a. -bread",
+              "Bake bread",
               "Bake"
             ]
           },
@@ -1363,7 +1387,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pairs": [
               {
                 "left": "kurkurio mideise",
-                "right": "Bake, v. a. -bread"
+                "right": "Bake bread"
               },
               {
                 "left": "sórate",
@@ -1379,7 +1403,7 @@ export const BORANA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "cabad'u",
-                "right": "Fat"
+                "right": "To seize / hold"
               }
             ]
           }
@@ -1400,7 +1424,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Sky, Weather, Rivers & Landforms",
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -1416,15 +1440,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Oromo_language"
           },
           {
-            "target": "Waaqa",
-            "source": "Sky",
-            "pronunciation": "waa-qa",
-            "hint": "Tutschek (1845, § 6, p. 3)"
-          },
-          {
-            "target": "Wacayo)",
-            "source": "God",
-            "pronunciation": "waa-qa",
+            "target": "Waaqa (Waca / Wacayo)",
+            "source": "Sky / God",
+            "pronunciation": "waa-qa / wa-ca-yo",
             "hint": "Tutschek (1845, § 6, p. 3)"
           },
           {
@@ -1454,13 +1472,13 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "aara (ara = steam, smoke; III arza)",
             "source": "Smoke",
-            "pronunciation": "aa-ra / ca-ca",
+            "pronunciation": "aa-ra",
             "hint": "Tutschek (1845, §§ 12, 75, pp. 4, 20)"
           },
           {
             "target": "caca (soot)",
             "source": "Soot",
-            "pronunciation": "aa-ra / ca-ca",
+            "pronunciation": "ca-ca",
             "hint": "Tutschek (1845, §§ 12, 75, pp. 4, 20)"
           },
           {
@@ -1468,6 +1486,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Ash",
             "pronunciation": "barba-daa / daa-raa",
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "bishaan — urjii",
+            "source": "Water — Star."
+          },
+          {
+            "target": "Waaqa — duumessa",
+            "source": "Sky / God — Cloud."
           }
         ],
         "authoredExercises": [
@@ -1585,7 +1613,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "East African Fauna, Birds & Sacred Trees",
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -1726,7 +1754,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Parts of the Body & Physical Senses",
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -1737,14 +1765,14 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "afaan (afan, mouth, language)",
-            "source": "Mouth",
-            "pronunciation": "a-faan / manga-ga",
+            "source": "Mouth / Language",
+            "pronunciation": "a-faan",
             "hint": "Tutschek (1845, § 4, p. 2 & p. 85)"
           },
           {
             "target": "mangaga (ma˜gaga, jaw)",
-            "source": "Language",
-            "pronunciation": "a-faan / manga-ga",
+            "source": "Jaw",
+            "pronunciation": "man-ga-ga",
             "hint": "Tutschek (1845, § 4, p. 2 & p. 85)"
           },
           {
@@ -1772,15 +1800,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, §§ 52, 97, pp. 13, 27)"
           },
           {
-            "target": "harka",
-            "source": "Hand",
-            "pronunciation": "harka",
-            "hint": "Tutschek (1845, § 97, p. 28)"
-          },
-          {
-            "target": "harkifad'a = drag, pull)",
-            "source": "Arm",
-            "pronunciation": "harka",
+            "target": "harka (harkifad'a = drag, pull)",
+            "source": "Hand / Arm",
+            "pronunciation": "har-ka",
             "hint": "Tutschek (1845, § 97, p. 28)"
           },
           {
@@ -1794,6 +1816,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Guts / Intestines",
             "pronunciation": "mar'u-maan",
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "gurra — afaan",
+            "source": "Ear — Mouth / Language."
+          },
+          {
+            "target": "ilkaan — arraba",
+            "source": "Tooth — Tongue."
           }
         ],
         "authoredExercises": [
@@ -1821,7 +1853,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             ],
             "hint": "Tutschek (1845, § 4, p. 2 & p. 85)",
             "acceptedAnswers": [
-              "Mouth / Language / Jaw",
+              "Mouth / Language",
               "Mouth"
             ]
           },
@@ -1875,8 +1907,8 @@ export const BORANA_UNITS: CourseUnit[] = [
                 "right": "Ear"
               },
               {
-                "left": "afaan (afan, mouth, language) / mangaga (ma˜gaga, jaw)",
-                "right": "Mouth / Language / Jaw"
+                "left": "afaan (afan, mouth, language)",
+                "right": "Mouth / Language"
               },
               {
                 "left": "ilkaan",
@@ -1907,19 +1939,19 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Health, Traditional Medicine & Emergency Terms",
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
             "target": "qoosee",
             "source": "Neck",
-            "pronunciation": "qoo-see / morma",
+            "pronunciation": "qoo-see",
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           },
           {
             "target": "morma",
             "source": "Throat",
-            "pronunciation": "qoo-see / morma",
+            "pronunciation": "mor-ma",
             "hint": "Wiktionary Afroasiatic Swadesh list — Oromo"
           },
           {
@@ -1955,13 +1987,13 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "gogaa",
             "source": "Skin",
-            "pronunciation": "go-gaa / ittillee",
+            "pronunciation": "go-gaa",
             "hint": "Tutschek (1845, § 74, p. 20) & Swadesh list"
           },
           {
             "target": "ittillee",
             "source": "Hide",
-            "pronunciation": "go-gaa / ittillee",
+            "pronunciation": "it-til-lee",
             "hint": "Tutschek (1845, § 74, p. 20) & Swadesh list"
           },
           {
@@ -1975,6 +2007,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Bald-head",
             "pronunciation": "mo-lo",
             "hint": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [s.]"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "qoosee — dugda",
+            "source": "Neck — Back."
+          },
+          {
+            "target": "onnee — dhiiga",
+            "source": "Heart — Blood."
           }
         ],
         "authoredExercises": [
@@ -2098,19 +2140,19 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Essential Action & Motion Verbs",
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
             "target": "baruu",
             "source": "Learn",
-            "pronunciation": "ba-ruu / ba-ra",
+            "pronunciation": "ba-ruu",
             "hint": "Tutschek (1845, § 76, p. 20 & Prayer 1 v. 7, p. 85)"
           },
           {
             "target": "bara (learn; III barziza = teach)",
             "source": "Teach",
-            "pronunciation": "ba-ruu / ba-ra",
+            "pronunciation": "ba-ra / bar-zi-za",
             "hint": "Tutschek (1845, § 76, p. 20 & Prayer 1 v. 7, p. 85)"
           },
           {
@@ -2127,8 +2169,8 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "enantshalate",
-            "source": "Like",
-            "pronunciation": "i should — e-nantsha-la-te",
+            "source": "I should like",
+            "pronunciation": "e-nan-tsha-la-te",
             "hint": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [v.]"
           },
           {
@@ -2162,11 +2204,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "baruu — bieksíse",
-            "source": "Learn — Known, to make."
+            "source": "Learn — To make known."
           },
           {
-            "target": "dese, harka baie — I should —, enantshalate",
-            "source": "Escape — Like."
+            "target": "dese, harka baie — enantshalate",
+            "source": "Escape — I should like."
           }
         ],
         "authoredExercises": [
@@ -2175,9 +2217,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"baruu\" mean in English?",
             "correctAnswer": "Learn",
             "options": [
-              "Known",
+              "To make known",
               "Escape",
-              "Like",
+              "I should like",
               "Learn"
             ],
             "hint": "Core vocabulary in Essential Action & Motion Verbs",
@@ -2188,10 +2230,9 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "translate_to_target",
-            "prompt": "Translate to the target language: \"Known, to make-\"",
+            "prompt": "Translate to the target language: \"To make known\"",
             "correctAnswer": "bieksíse",
             "acceptedAnswers": [
-              "bieksíse",
               "bieksíse"
             ],
             "hint": "Starts with \"bi\""
@@ -2201,7 +2242,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"dese, harka baie\"",
             "correctAnswer": "Escape",
             "acceptedAnswers": [
-              "Escape",
               "Escape"
             ],
             "hint": "Review Essential Action & Motion Verbs"
@@ -2217,19 +2257,19 @@ export const BORANA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "bieksíse",
-                "right": "Known, to make-"
+                "right": "To make known"
               },
               {
                 "left": "dese, harka baie",
                 "right": "Escape"
               },
               {
-                "left": "I should —, enantshalate",
-                "right": "Like"
+                "left": "enantshalate",
+                "right": "I should like"
               },
               {
                 "left": "dekame",
-                "right": "Upbraid, find fault with"
+                "right": "Upbraid, find fault"
               }
             ]
           }
@@ -2240,7 +2280,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Applied, Causative, Reciprocal & Stative Verbs",
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -2269,7 +2309,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ada",
-            "source": "to groan, sigh, esp",
+            "source": "to groan, sigh (especially of sick persons)",
             "pronunciation": "ada",
             "hint": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I"
           },
@@ -2287,7 +2327,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "afa",
-            "source": "to spread, extent, partic",
+            "source": "to spread, extend (particularly of mats or hides)",
             "pronunciation": "afa",
             "hint": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I"
           },
@@ -2367,7 +2407,7 @@ export const BORANA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "ada",
-                "right": "to groan, sigh, esp"
+                "right": "to groan, sigh (especially of sick persons)"
               }
             ]
           }
@@ -2388,7 +2428,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Day Divisions, Lunar Months & Agricultural Seasons",
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -2418,13 +2458,13 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "barii",
             "source": "Morning",
-            "pronunciation": "ba-rii / ga-na-ma",
+            "pronunciation": "ba-rii",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           },
           {
             "target": "ganama",
             "source": "Dawn",
-            "pronunciation": "ba-rii / ga-na-ma",
+            "pronunciation": "ga-na-ma",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           },
           {
@@ -2526,7 +2566,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Travel, Directions, Paths & Landmarks",
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -2668,7 +2708,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Everyday Conversational Phrases & Questions",
         "icon": "CheckCircle2",
         "description": "Practice authentic questions, answers, and idiomatic expressions from historical phrasebooks.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -2680,7 +2720,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "gubba / irra",
             "source": "Above",
-            "pronunciation": "gubba",
+            "pronunciation": "gubba / ir-ra",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla prep.)"
           },
           {
@@ -2725,7 +2765,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "tāe — gubba or irra",
+            "target": "tāe — gubba / irra",
             "source": "Abide — Above."
           },
           {
@@ -2749,10 +2789,11 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"Above\"",
-            "correctAnswer": "gubba or irra",
+            "correctAnswer": "gubba / irra",
             "acceptedAnswers": [
-              "gubba or irra",
-              "gubba or irra"
+              "gubba / irra",
+              "gubba",
+              "irra"
             ],
             "hint": "Starts with \"gu\""
           },
@@ -2776,7 +2817,7 @@ export const BORANA_UNITS: CourseUnit[] = [
                 "right": "Abide"
               },
               {
-                "left": "gubba or irra",
+                "left": "gubba / irra",
                 "right": "Above"
               },
               {
@@ -2800,7 +2841,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Hospitality, Requests & Social Discourse",
         "icon": "Handshake",
         "description": "Converse naturally in home, village, market, and travel settings.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -2858,7 +2899,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "oddu or gurri oddese — hútji",
+            "target": "oddu / gurri oddese — hútji",
             "source": "Acquaint — Act, action."
           },
           {
@@ -2869,7 +2910,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"oddu or gurri oddese\" mean in English?",
+            "prompt": "What does \"oddu / gurri oddese\" mean in English?",
             "correctAnswer": "Acquaint",
             "options": [
               "Act",
@@ -2905,7 +2946,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "oddu or gurri oddese",
+                "left": "oddu / gurri oddese",
                 "right": "Acquaint"
               },
               {
@@ -2943,7 +2984,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Traditional Proverbs, Riddles & Aphorisms",
         "icon": "Award",
         "description": "Study verbatim oral wisdom, riddles, and moral aphorisms from the historical collections.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -2955,25 +2996,25 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "damma (dagma)",
             "source": "Honey",
-            "pronunciation": "damma / daadhii / farsoo / bu-na qa-laa",
+            "pronunciation": "dam-ma",
             "hint": "Tutschek (1844–1845) & Krapf (1842)"
           },
           {
             "target": "daadhii",
             "source": "Hydromel (Honey-wine)",
-            "pronunciation": "damma / daadhii / farsoo / bu-na qa-laa",
+            "pronunciation": "daa-dhii",
             "hint": "Tutschek (1844–1845) & Krapf (1842)"
           },
           {
             "target": "farsoo",
             "source": "Barley beer",
-            "pronunciation": "damma / daadhii / farsoo / bu-na qa-laa",
+            "pronunciation": "far-soo",
             "hint": "Tutschek (1844–1845) & Krapf (1842)"
           },
           {
             "target": "buna qalaa",
             "source": "Coffee ceremonies",
-            "pronunciation": "damma / daadhii / farsoo / bu-na qa-laa",
+            "pronunciation": "bu-na qa-laa",
             "hint": "Tutschek (1844–1845) & Krapf (1842)"
           },
           {
@@ -2985,13 +3026,13 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "Waaqa",
             "source": "Supreme Creator",
-            "pronunciation": "waa-qa / wa-ca-yo",
+            "pronunciation": "waa-qa",
             "hint": "Krapf 1842 & Tutschek 1844–1845 Oromo/Borana"
           },
           {
             "target": "Wacayo (Yaa Waaqa! = O God!)",
             "source": "Sky God",
-            "pronunciation": "waa-qa / wa-ca-yo",
+            "pronunciation": "wa-ca-yo",
             "hint": "Krapf 1842 & Tutschek 1844–1845 Oromo/Borana"
           },
           {
@@ -3015,13 +3056,13 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "garbuu",
             "source": "Barley",
-            "pronunciation": "garbuu / midhaan",
+            "pronunciation": "gar-buu",
             "hint": "Tutschek 1844 & 1845"
           },
           {
             "target": "midhaan (mid'an)",
             "source": "Grain",
-            "pronunciation": "garbuu / midhaan",
+            "pronunciation": "mi-dhaan",
             "hint": "Tutschek 1844 & 1845"
           },
           {
@@ -3031,10 +3072,20 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf 1842 & Tutschek 1844"
           }
         ],
+        "sentences": [
+          {
+            "target": "Nagaa Borana — Gadaa",
+            "source": "Peace of the Borana — Traditional Generation System."
+          },
+          {
+            "target": "Waaqa — odaa",
+            "source": "Supreme Creator — Wild fig tree."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Gadaa  & Jila\" in Borana?",
+            "prompt": "What is the English meaning of \"Gadaa & Jila\" in Borana?",
             "correctAnswer": "Sovereign Assembly",
             "options": [
               "Honey",
@@ -3085,7 +3136,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Wild fig tree\" in Borana?",
             "correctAnswer": "odaa",
             "options": [
-              "Gadaa  & Jila",
+              "Gadaa & Jila",
               "odaa",
               "damma",
               "Waaqa"
@@ -3102,11 +3153,11 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Waaqa",
             "options": [
               "Waaqa",
-              "Gadaa  & Jila",
+              "Gadaa & Jila",
               "damma",
               "odaa"
             ],
-            "hint": "wah-qah / wa-ca-yo",
+            "hint": "waa-qa",
             "acceptedAnswers": [
               "Waaqa / Wacayo (Yaa Waaqa! = O God!)",
               "Waaqa"
@@ -3141,7 +3192,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Nagaa",
             "options": [
               "Nagaa",
-              "Gadaa  & Jila",
+              "Gadaa & Jila",
               "damma",
               "odaa"
             ],
@@ -3158,7 +3209,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "title": "Customary Law, Rituals & Historical Lexicon",
         "icon": "ShieldCheck",
         "description": "Master specialized cultural, legal, musical, and historical vocabulary.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language). Pay close attention to Nominative case suffixes (-n, -ni, -ti, -fni, -ñi), gender concord, derived verbal stems (-d'a, -za, -fad'a), and root consonants.",
         "culturalNote": "Primary historical documentation for Borana (Oromo) (Afaan Borana / Afaan Oromoo) in Rev. J. L. Krapf (1842, 1850) & Karl and Lawrence Tutschek (1844–1845 Dictionary & Grammar of the Galla Language) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit, Isiolo, Moyale.",
         "words": [
           {
@@ -3214,6 +3265,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "To be fast",
             "pronunciation": "furda-te",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "ada; duri duri — sírbe",
+            "source": "Custom — Dance."
+          },
+          {
+            "target": "awále — díbbe",
+            "source": "Bury — Drum."
           }
         ],
         "authoredExercises": [
@@ -3361,13 +3422,13 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "ot'a",
-            "source": "Yelk",
+            "source": "Yolk (of an egg)",
             "pronunciation": "ot'a",
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
           },
           {
-            "target": "duma",
-            "source": "Yard",
+            "target": "d'und'uma",
+            "source": "Yard / Cubit",
             "pronunciation": "d'und'u-ma",
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
           },
@@ -3382,6 +3443,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Wrestling",
             "pronunciation": "wa-lanzo",
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "dúlatja — harreisa",
+            "source": "Old — New."
+          },
+          {
+            "target": "dargago — walanzo",
+            "source": "Youth — Wrestling."
           }
         ],
         "authoredExercises": [
@@ -3422,7 +3493,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Borana (Afaan Borana) term for \"Yelk\": ___",
+            "prompt": "Complete the Borana (Afaan Borana) term for \"Yolk (of an egg)\": ___",
             "correctAnswer": "ot'a",
             "options": [
               "dúlatja",
@@ -3488,6 +3559,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Wild",
             "pronunciation": "ti-ra",
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [adj.]"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "gingo — darba",
+            "source": "Wreath / Garland — Winnowing-shovel."
+          },
+          {
+            "target": "habube — halaltu",
+            "source": "Windy — Willow."
           }
         ],
         "authoredExercises": [
@@ -3610,6 +3691,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [adv.]"
           }
         ],
+        "sentences": [
+          {
+            "target": "eñu — eza",
+            "source": "Who? — Where."
+          },
+          {
+            "target": "faya — bidiru",
+            "source": "Wholesomeness — Wherry."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3716,6 +3807,16 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [s.]"
           }
         ],
+        "sentences": [
+          {
+            "target": "arama — cotoma",
+            "source": "Weeding — Watch-cottage."
+          },
+          {
+            "target": "cabeza — mitchitu",
+            "source": "Wealthy — Washer-woman."
+          }
+        ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
@@ -3775,7 +3876,7 @@ export const BORANA_UNITS: CourseUnit[] = [
   {
     "id": "borana-unit-13",
     "unitNumber": 13,
-    "title": "Tutschek Dictionary Parts I & II",
+    "title": "Tutschek Dictionary Parts I & II: Solar Clock, Oaths, Magm. & Wetu",
     "description": "Master the complete 1844–1845 Galla Dictionary of Charles & Lawrence Tutschek: the 4 redeemed youths and 3 Galla authorities, the daily solar clock (ganama aboro to oba lamuti–z'aniti), the kalatcha and tili oaths, amole & biri currency, het'o/d'ogonu ethnomedicine, and all 23 Magm. proverbs and 9 Wetu songs.",
     "icon": "BookOpen",
     "color": "#B45309",
@@ -3789,28 +3890,28 @@ export const BORANA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "ganama aboro → ganama → dirama → ware → ware korate → oba (oba dyabi)",
-            "source": "Very early dawn → Morning (to ~8 a.m.) → Forenoon (~8–9 a.m.) → ~9–10 a.m. → Late",
-            "pronunciation": "ganama-aboro-ganama-dirama",
+            "source": "Very early dawn → Morning (to ~8 a.m.) → Forenoon (~8–9 a.m.) → ~9–10 a.m. → Late forenoon (~10–11 a.m.) → Noon (12 o'clock)",
+            "pronunciation": "ga-na-ma a-bo-ro / di-ra-ma / wa-re / o-ba",
             "hint": "Tutschek (1844, Part I, pp. 23, 59, 100, 148–149)"
           },
           {
             "target": "oba lamuti",
-            "source": "2nd hour after noon",
+            "source": "2nd hour after noon (2 o'clock p.m.)",
             "pronunciation": "oba-lamuti"
           },
           {
             "target": "oba zaditi",
-            "source": "3rd hour",
+            "source": "3rd hour after noon (3 o'clock p.m.)",
             "pronunciation": "oba-zaditi"
           },
           {
             "target": "oba afuriti",
-            "source": "4th hour",
+            "source": "4th hour after noon (4 o'clock p.m.)",
             "pronunciation": "oba-afuriti"
           },
           {
             "target": "oba z'aniti",
-            "source": "5th hour",
+            "source": "5th hour after noon (5 o'clock p.m.)",
             "pronunciation": "oba-z'aniti"
           },
           {
@@ -3844,8 +3945,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "kalatcha"
           },
           {
-            "target": "wu — aki — t",
-            "source": "Grass-spitting oath",
+            "target": "t'wu — aki — t'wu — tili!",
+            "source": "Grass-spitting oath ('May I wither like this blade of grass if I break my word!')",
             "pronunciation": "t'wu-aki-t'wu-tili"
           },
           {
@@ -3862,7 +3963,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Gadyo lafto Michaila dyalati kalatchan kakad'e; ini kalatcha mut'ad'a: 'Hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!' djed'eti.",
-            "source": "Under the lafto Michaila before the priest Gadyo he swore by the kalatcha staff, licking it and saying: 'May Wacayo lick up and destroy all."
+            "source": "Under the lafto Michaila before the priest Gadyo he swore by the kalatcha staff, licking it and saying: 'May Wacayo lick up and destroy all goods that I possess!'"
           }
         ],
         "authoredExercises": [
@@ -3889,7 +3990,7 @@ export const BORANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "borana-tutschek-1844-medicine-songs-proverbs-13-2",
-        "title": "Ethnomedicine (Het'o & D'ogonu), Botanical Lore, 23 Magm.",
+        "title": "Ethnomedicine (Het'o & D'ogonu), Botanical Lore, 23 Magm. Proverbs & 9 Wetu Songs",
         "icon": "Sparkles",
         "description": "Study Akafed'e Dalle's treatise on curing tapeworm (mini/d'uma) with het'o and d'ogonu, Duke Paul of Württemberg's plant identifications, and the complete Magm. proverbs and Wetu songs.",
         "tips": "Akafed'e Dalle (from Botchi in Hambo, province of Liban), Otshu Aga (from Urgeza in Sibu), Bilile (from Guma), and Aman Gonda (from Hibi in Goma) contributed the 23 proverbs (Magm.) and 9 rhyming songs (Wetu) in Part I (1844).",
@@ -3936,8 +4037,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "bokeni-mit'ilen-adjezu"
           },
           {
-            "target": "Zila zimalan yaba, Zimali dameṅ cabu",
-            "source": "Were I to climb the bamboo, the bamboo has no branches; were I to go home through",
+            "target": "Zila zimalan yaba, Zimali dameṅ cabu; zila dirmamun gala, dirmamun galaṅ cabu",
+            "source": "Were I to climb the bamboo, the bamboo has no branches; were I to go home through the twilight, the twilight has no path home",
             "pronunciation": "zi-la zi-ma-lan ya-ba / co-ta-ni co-ta-ni yaa ba-ba-za-ni",
             "hint": "Tutschek (1844, Part I, pp. 127, 148 — Wetu songs)"
           }
@@ -4074,12 +4175,12 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "mukabe",
             "source": "To pray",
-            "pronunciation": "mukabe"
+            "pronunciation": "mu-ka-be"
           },
           {
             "target": "mukaba",
             "source": "prayer (to God)",
-            "pronunciation": "mukabe"
+            "pronunciation": "mu-ka-ba"
           },
           {
             "target": "kaletsha vs. kêsi sidāma & Iltshāma",
@@ -4110,7 +4211,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Wak' nagaia si kakennu! Naga ambulte! Mali odu harraia duffe?",
-            "source": "May God give thee peace! Good morning! What is the news? ."
+            "source": "May God give thee peace! Good morning! What is the news?"
           }
         ]
       }
@@ -4119,7 +4220,7 @@ export const BORANA_UNITS: CourseUnit[] = [
   {
     "id": "borana-unit-15",
     "unitNumber": 15,
-    "title": "Robert Needham Cust",
+    "title": "Robert Needham Cust (1883): The 5 Chief Oromo Dialects, Huma & Wata",
     "description": "Explore Robert Needham Cust's 1883 Volume I (pp. [i]–xvi, 1–287, Portrait Plates I–VI & Trübner Catalogue): the 5 Chief Dialects of Galla/Orómo (pp. 122–125, including the Equatorial/Tana River dialect studied by Krapf & Wakefield at Ribé), Huma royal lineages, Wata 'Helot Races', Somáli (p. 121), Kwáfi & Masai (pp. 149–152), and Kavirondo/Luoh (pp. 275–285).",
     "icon": "Globe",
     "color": "#B45309",
@@ -4132,13 +4233,13 @@ export const BORANA_UNITS: CourseUnit[] = [
         "tips": "In Chapter IX.C.II (pp. 122–125), Cust records that while in war the Galla call themselves 'Sons of Galla' (per D'Abbadie), their national autonym is Orma or Oromo ('men', p. 12 & p. 122), stretching from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása.",
         "words": [
           {
-            "target": "Orma / Oromo vs.",
-            "source": "Indigenous Oromo self-designation vs. wartime title in Cust",
+            "target": "Orma / Oromo vs. Ilma Ormaa",
+            "source": "Indigenous Oromo self-designation ('men / people') vs. wartime title in Cust (1883)",
             "pronunciation": "or-ma / o-ro-mo",
             "hint": "Cust (1883, Vol. I, Ch. I p. 12 & Ch. IX.C.II p. 122)"
           },
           {
-            "target": "1. North of Shoa",
+            "target": "Shoa, Hawash, Godjeb, Maccha & Equatorial/Tana (Orma)",
             "source": "The 5 Chief Galla/Orómo Dialects enumerated by Krapf, Schmidt & Cust",
             "pronunciation": "sho-a / ha-wash / go-djeb / da-na / ri-be",
             "hint": "Cust (1883, Vol. I, Ch. IX.C.II, pp. 122–123)"
@@ -4146,7 +4247,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "Huma",
             "source": "Great Lakes royal dynasty of Galla origin and King Mtesa's 7-language polyglottism",
-            "pronunciation": "hu-ma / m-te-sa",
+            "pronunciation": "hu-ma",
             "hint": "Cust (1883, Vol. I, Ch. I p. 16 & Ch. IX.C.II pp. 122–123)"
           },
           {
@@ -4156,31 +4257,31 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Orma",
-            "source": "Borana people",
-            "pronunciation": "o-ro-mo"
+            "source": "Borana / Orma people",
+            "pronunciation": "or-ma"
           },
           {
             "target": "dubbii",
-            "source": "Speech",
+            "source": "Speech / word",
             "pronunciation": "dub-bii",
             "hint": "Cust (1883, Vol. I, Ch. IX.C, pp. 119–125)"
           },
           {
             "target": "afaan",
-            "source": "language",
-            "pronunciation": "dub-bii",
+            "source": "Language / mouth",
+            "pronunciation": "a-faan",
             "hint": "Cust (1883, Vol. I, Ch. IX.C, pp. 119–125)"
           },
           {
-            "target": "Enguduk Iloigob",
-            "source": "Masai — Erhardt 1857 & Thomson 1883, pp. 149–152",
-            "pronunciation": "enguduk-iloigob"
+            "target": "Waata (Wata)",
+            "source": "Waata hunter-gatherer community speaking Afaan Borana/Orma (Cust 1883, Vol. I, p. 124)",
+            "pronunciation": "waa-ta"
           }
         ],
         "sentences": [
           {
-            "target": "Orma (Oromo = 'men') stretches from 10° N. Lat. to the mouth of the Dana (Tana) River near Mombása across 5 chief dialects.",
-            "source": "Cust  on the geographic extent and 5 dialects of Galla or Orómo."
+            "target": "Oromo fi Orma afaan tokko dubbatu.",
+            "source": "The Oromo and Orma speak one language (stretching from Shoa to the Tana River)."
           }
         ]
       }
@@ -4189,14 +4290,14 @@ export const BORANA_UNITS: CourseUnit[] = [
   {
     "id": "borana-unit-16",
     "unitNumber": 16,
-    "title": "Krapf & Isenberg",
+    "title": "Krapf & Isenberg (1840): An Imperfect Outline of the Galla Language",
     "description": "Master the first printed Oromo/Galla grammar (London: CMS / L. & G. Seeley / Richard Watts, 1840, pp. [i]–xiv, [1]–16): Isenberg's 50-tribe geographic table, Queen Tshāmê of Moolofallada, Anko-ber, Wāk & Kalitshas, pit-and-lance oaths, Wodanābè tree, Berkiè of Gelān, Aito Berkiè & Aito Meretch, and Krapf's Sections I–XI.",
     "icon": "BookOpen",
     "color": "#B45309",
     "skills": [
       {
         "id": "borana-krapf-isenberg-1840-preface-50-tribes-16-1",
-        "title": "Isenberg's 1840 Preface",
+        "title": "Isenberg's 1840 Preface: 50 Tribes, Wāk, Kalitshas & Oaths",
         "icon": "Compass",
         "description": "Explore Rev. C. W. Isenberg's June–Nov. 1839 Shoa ethnography (pp. [iii]–xiv): the 50 Galla tribes across 6 regions, Queen Tshāmê, Anko-ber, Wāk & Kalitshas, haruspicy, pit-and-lance oaths, 100-cattle homicide law, vegetating grave-wood, Wodanābè tree, and informants Berkiè, Aito Berkiè & Aito Meretch.",
         "tips": "In Isenberg's 1840 Preface (pp. iv–v), 50 Galla tribes are grouped into 6 geographical regions around Tigrè, Shoa, the Hawāsh, and the Abyssinian Nile (Abaÿ), including #5 Karraīo, #16 Ittoo, #17 Aroosi, #20 Alla, #22 Adāī, #23 Soddo, #25 Lēbān, #29 Yerrer, #30 Gelān, #31 Mêta, #32 Moolofallada, #33 Mughir, #44 Mêtcha, #45 Gooderoo, #48 Borenna, and #50 Anko.",
@@ -4209,76 +4310,76 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "lafa",
-            "source": "homeland",
-            "pronunciation": "biy-ya",
+            "source": "homeland / earth",
+            "pronunciation": "la-fa",
             "hint": "Isenberg in Krapf (1840, pp. iv–v)"
           },
           {
-            "target": "21–24 Abedjoo, Adāī, Soddo, Abbo (S/SW on Hawāsh)",
-            "source": "Tribes 21–50 in Isenberg's 1840 Table",
-            "pronunciation": "2124-abedjoo",
+            "target": "Karraīo, Ittoo, Aroosi, Gelān, Mêtcha, Gooderoo & Borenna",
+            "source": "Regional Oromo tribes in Isenberg's 1840 50-Tribe Table",
+            "pronunciation": "kar-ra-yo / it-too / a-roo-si / ge-lan / bo-ren-na",
             "hint": "Isenberg in Krapf (1840, p. v)"
           },
           {
-            "target": "Queen Tshāmê of Moolofallada",
-            "source": "and her son",
-            "pronunciation": "queen-tshāmê-of-moolofallada"
+            "target": "Tshāmê (Mootittii Mul'u-Faladaa)",
+            "source": "Queen Tshāmê of Moolofallada and her son",
+            "pronunciation": "tsha-me"
           },
           {
-            "target": "Wāk",
-            "source": "Supreme Being",
-            "pronunciation": "wāk"
+            "target": "Wāk (Waaqa) & Kalitshas (Qaalluu)",
+            "source": "Supreme Being & traditional ritual priests",
+            "pronunciation": "wak / ka-lit-shas"
           },
           {
-            "target": "Pit-and-Lance Oath covered with an animal's hide",
-            "source": "Oaths, homicide law-suits, peace ratification, burial customs, and afterlife beliefs",
-            "pronunciation": "wak / ka-lit-shas / wo-da-na-be",
+            "target": "Wodanābè (Odaa Nabee) & Kakaa boollaa fi eeboo",
+            "source": "Sacred Wodanābè tree on the Hawāsh & Pit-and-Lance oath covered with an animal's hide",
+            "pronunciation": "wo-da-na-be / ka-kaa",
             "hint": "Isenberg in Krapf (1840, pp. vii–viii)"
           },
           {
-            "target": "Commander-in-chief Aito Meretch",
-            "source": "on the river Tchātchā, treated by Isenberg & M. Rochet",
-            "pronunciation": "commander-in-chief-aito-meretch"
+            "target": "Berkiè (of Gelān) & Abbaa Duulaa Aito Meretch",
+            "source": "Krapf's Oromo teacher from Gelān & Commander-in-chief on the river Tchātchā",
+            "pronunciation": "ber-kie / ai-to me-retch"
           }
         ],
         "sentences": [
           {
-            "target": "Berkiè, Mr. Krapf's Galla servant, could converse with Dankali people, both parties speaking their own language and yet understanding",
-            "source": "Isenberg on the close East Cushitic affinity between Galla, Dankali (Afar), and Somāl ."
+            "target": "Wāk nagaia nu ha kennu! Berkiè afaan Oromoo dubbate.",
+            "source": "May Wāk grant us peace! Berkiè of Gelān spoke the Oromo language (mutually intelligible with Dankali and Somali)."
           }
         ]
       },
       {
         "id": "borana-krapf-1840-grammar-sections-1-to-11-16-2",
-        "title": "Krapf's 1840 Grammatical Outline",
+        "title": "Krapf's 1840 Grammatical Outline: Sections I–XI & 31 Sentences",
         "icon": "Languages",
         "description": "Master all 11 sections of Krapf's 1840 Outline (pp. [1]–16): 4 origin traditions (Abaÿ & Jidda), Roman script, 6 pronoun classes, Gofta declension, 17 adverb classes, prepositions/conjunctions/interjections, verb paradigms (Active, Passive -ame, Causative -sisse, Negative), cardinals & -fa ordinals, Small Syntax, and all 31 expressions & sentences.",
         "tips": "In Section V (p. 4), Krapf declines 'Gofta' (Lord/Master): Sing. N. Gofta, G. Goftāda, D. Goftafi, Ac. Goftan, V. Goftako!; Plur. N. Goftawon, G. Goftawōni, D. Goftawonifi, Ac. Goftawon, V. Goftawonko! In Section IX (p. 11), ordinals are formed with '-fa' (toko, lamafa, sadīfa, afrafa, shanafa, tshaifa, torbafa, sadēfa, sagalafa, kudanifa... dibbafa, kumafa).",
         "words": [
           {
-            "target": "isi",
-            "source": "isifi",
-            "pronunciation": "isi"
+            "target": "isi (dat. isifi)",
+            "source": "she (dative: to her)",
+            "pronunciation": "i-si / i-si-fi"
           },
           {
-            "target": "nu",
-            "source": "nufi, garra kenin, nu irra",
-            "pronunciation": "nu"
+            "target": "nu (nufi, garra kenin, nu irra)",
+            "source": "we (to us, toward us, from us)",
+            "pronunciation": "nu / nu-fi"
           },
           {
-            "target": "issini",
-            "source": "issinifi, garra kesani, issin irra",
-            "pronunciation": "issini"
+            "target": "issini (issinifi, garra kesani, issin irra)",
+            "source": "you (pl.; to you, toward you, from you)",
+            "pronunciation": "is-si-ni"
           },
           {
-            "target": "isan",
-            "source": "isanifi, garra isani, isan irra",
-            "pronunciation": "isan"
+            "target": "isan (isanifi, garra isani, isan irra)",
+            "source": "they (to them, toward them, from them)",
+            "pronunciation": "i-san"
           },
           {
             "target": "manakiya (manako, manakoti), manaka / manakanketi, manasa, manisita",
-            "source": "Inseparable pronouns affixed to Mana ('house') and joined to verbs ('beat' & 'give')",
-            "pronunciation": "manakiya",
+            "source": "Inseparable possessive pronouns affixed to Mana ('house': my, thy, his, her house)",
+            "pronunciation": "ma-na-ki-ya / ma-na-ko",
             "hint": "Krapf (1840, Sect. IV.VI, pp. 3–4)"
           },
           {
@@ -4304,9 +4405,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1840, Sect. VIII, pp. 8–9)"
           },
           {
-            "target": "Cardinals: tok. (fem. tak.), lama, sadi, afur, shani, tshā, torba",
+            "target": "tok. (fem. tak.), lama, sadi, afur, shani, tshā, torba; lamafa, sadīfa",
             "source": "Complete Cardinal (1–2,000) and Ordinal (-fa, 1st–1,000th) numeral tables in Krapf",
-            "pronunciation": "cardinals-tok",
+            "pronunciation": "tok la-ma sa-di a-fur sha-ni",
             "hint": "Krapf (1840, Sect. IX, p. 11)"
           },
           {
@@ -4320,8 +4421,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "gofta-regariti-dau-tshalate"
           },
           {
-            "target": "Naga ambulte",
-            "source": "All 31 Galla conversational expressions, salutations, and sentences in Krapf",
+            "target": "Naga ambulte! — Bulla bulte naguma!",
+            "source": "Good morning! — Thanks to God, we passed the night in peace!",
             "pronunciation": "naga-ambulte",
             "hint": "Krapf (1840, Sect. XI, p. 16)"
           }
@@ -4333,7 +4434,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Naga ambulte! — Bulla bulte naguma! — Gondi kuni mekan eniu? — Metātit tsheddan. — Anda atam tshirte?",
-            "source": "Good morning! — Thanks to God! — How do they call this village? — It is called Metātit. — How are you to-day? ."
+            "source": "Good morning! — Thanks to God! — How do they call this village? — It is called Metātit. — How are you to-day?"
           }
         ],
         "authoredExercises": [
@@ -4511,7 +4612,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "jaha",
             "source": "Six",
-            "pronunciation": "ja-ha / dya"
+            "pronunciation": "ja-ha"
           },
           {
             "target": "kudan",
@@ -4544,12 +4645,21 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "tchabna-na"
           },
           {
-            "target": "lamma",
+            "target": "ladz'u",
             "source": "Both",
-            "pronunciation": "lam-ma"
+            "pronunciation": "ladz'u"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "tokko, lama, sadii, afur, shan",
+            "source": "One, two, three, four, five."
+          },
+          {
+            "target": "jaha, torba, saddeet, sagal, kudan",
+            "source": "Six, seven, eight, nine, ten."
+          }
+        ]
       }
     ]
   }

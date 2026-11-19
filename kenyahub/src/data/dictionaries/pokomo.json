@@ -16,7 +16,7 @@
     {
       "id": "greetings",
       "name": "Greetings & Farewells",
-      "icon": "👋",
+      "icon": "Hand",
       "entries": [
         {
           "english": "Greet",
@@ -107,7 +107,7 @@
     {
       "id": "numbers",
       "name": "Numbers & Counting",
-      "icon": "🔢",
+      "icon": "Hash",
       "entries": [
         {
           "english": "One",
@@ -298,7 +298,7 @@
         {
           "english": "Five",
           "translation": "tsāno",
-          "pronunciation": "tsān",
+          "pronunciation": "tsāno",
           "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -310,25 +310,25 @@
         {
           "english": "Twenty",
           "translation": "Mī-rōṅgo mī-wīī",
-          "pronunciation": "mī-rōṅg mī-wīī",
+          "pronunciation": "mī-rōṅgo mī-wīī",
           "context": "Comparative Kipokomo Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Thirty",
           "translation": "Mī-rōṅgo mī-hāhū",
-          "pronunciation": "mī-rōṅg mī-hāhū",
+          "pronunciation": "mī-rōṅgo mī-hāhū",
           "context": "Comparative Kipokomo Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Forty",
           "translation": "Mī-rōṅgo mī-nē",
-          "pronunciation": "mī-rōṅg mī-nē",
+          "pronunciation": "mī-rōṅgo mī-nē",
           "context": "Comparative Kipokomo Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Fifty",
           "translation": "Mī-rōṅgo mī-tsāno",
-          "pronunciation": "mī-rōṅg mī-tsān",
+          "pronunciation": "mī-rōṅgo mī-tsāno",
           "context": "Comparative Kipokomo Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -412,11 +412,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Bone",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Stone",
           "translation": "ma-wē",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -481,7 +476,7 @@
     {
       "id": "family",
       "name": "Family, People & Kinship",
-      "icon": "👨‍👩‍👧‍👦",
+      "icon": "Users",
       "entries": [
         {
           "english": "Boy",
@@ -760,7 +755,7 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Malalulu [→ Bauru] & brother Bashora [→ Muda] at Galomani",
+          "english": "Ilani clan (Upper Pokomo Malalulu — Bauru & brother Bashora at Galomani)",
           "translation": "Ilani",
           "pronunciation": "ilani",
           "context": "Mikael Samson & R. G. Darroch, 'A History of the Pokomo by Mikael Samson — Continued' (1944, pp. 378–394 & Notes 5, 10–13) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
@@ -817,11 +812,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Breast (man's)",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Breast (woman's)",
           "translation": "Wē",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -832,18 +822,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Brother",
-          "translation": "wa +",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Chief",
           "translation": "Hacu, Haju",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Chief",
-          "translation": "wa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -862,11 +842,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Doctor (medicine man)",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Father",
           "translation": "I-se",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -874,11 +849,6 @@
         {
           "english": "Girl",
           "translation": "Mu-hīki",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Girl",
-          "translation": "wa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -897,11 +867,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Husband",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Man",
           "translation": "Mū-ntū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -914,11 +879,6 @@
         {
           "english": "Man",
           "translation": "Mu-yūme",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Man",
-          "translation": "wa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -943,11 +903,6 @@
         },
         {
           "english": "Sister",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Sister",
           "translation": "Ndūgu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
@@ -964,16 +919,6 @@
         {
           "english": "Song",
           "translation": "Kī-vīno",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Song",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "White man",
-          "translation": "wa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -996,7 +941,7 @@
     {
       "id": "body",
       "name": "Body Parts & Health",
-      "icon": "🫁",
+      "icon": "Heart",
       "entries": [
         {
           "english": "Eye",
@@ -1873,18 +1818,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Foot",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Hair",
           "translation": "N-zwii",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Hair",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -1904,27 +1839,12 @@
         },
         {
           "english": "Hand",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Hand",
           "translation": "Ki-gandza",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Hand",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
           "english": "Head",
           "translation": "Ki-tswa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Head",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -1948,16 +1868,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Heel",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Knee",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Leg",
           "translation": "Ku-gū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -1973,11 +1883,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Nail (of finger or toe)",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Neck",
           "translation": "Siṅgo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -1985,11 +1890,6 @@
         {
           "english": "Neck",
           "translation": "L-oti",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Nose",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -2003,28 +1903,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Shoulder",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Spear",
           "translation": "Fūmo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Spear",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Tear",
           "translation": "Tsōzi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Tear",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -2112,7 +1997,7 @@
     {
       "id": "animals",
       "name": "Animals, Livestock & Wildlife",
-      "icon": "🦁",
+      "icon": "PawPrint",
       "entries": [
         {
           "english": "Dog",
@@ -2663,11 +2548,6 @@
         },
         {
           "english": "Baboon",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Baboon",
           "translation": "va-fūwe",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
@@ -2677,48 +2557,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Bee",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Bee",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Bird",
           "translation": "Ny-uni",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Bird",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Bird",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Cow",
           "translation": "Ṅ-ombe",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Cow",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Cow",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Hyena",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -2761,7 +2606,7 @@
     {
       "id": "nature",
       "name": "Nature, Environment & Geography",
-      "icon": "🌿",
+      "icon": "Leaf",
       "entries": [
         {
           "english": "Sun",
@@ -3561,18 +3406,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Day",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Forest",
           "translation": "Mu-situ",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Forest",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -3581,18 +3416,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Lake",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Moon",
           "translation": "Mw-ēzi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Moon",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -3606,18 +3431,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Mountain",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "River",
           "translation": "Tsāna, Dzāna",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "River",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -3628,11 +3443,6 @@
         {
           "english": "Star",
           "translation": "Ny-ōha, Yoha",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Star",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -3647,17 +3457,7 @@
         },
         {
           "english": "Well, source",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Well, source",
           "translation": "K-aṅga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Well, source",
-          "translation": "vy",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -3735,7 +3535,7 @@
     {
       "id": "food",
       "name": "Food, Drink & Agriculture",
-      "icon": "🍲",
+      "icon": "Utensils",
       "entries": [
         {
           "english": "Eat",
@@ -4046,7 +3846,7 @@
         {
           "english": "Tobacco",
           "translation": "Tūmbāko",
-          "pronunciation": "tūmbāk",
+          "pronunciation": "tūmbāko",
           "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -4116,12 +3916,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo v. a.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Wheat",
-          "translation": "id",
-          "pronunciation": "id",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
-        },
-        {
           "english": "rice farmers of the Tana Delta (Lower Pokomo agricultural lexicon)",
           "translation": "wakulima wa mpunga",
           "pronunciation": "wak-ul-im-a-wa-mpung-a",
@@ -4139,22 +3933,12 @@
         },
         {
           "english": "Banana",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Banana",
           "translation": "Mu-tobwia",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
           "english": "Egg",
           "translation": "I-yai",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Egg",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -4177,7 +3961,7 @@
     {
       "id": "home",
       "name": "Home, Tools & Material Culture",
-      "icon": "🏠",
+      "icon": "Home",
       "entries": [
         {
           "english": "Awl",
@@ -11227,18 +11011,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Arrow",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Axe",
           "translation": "Tsoka",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Axe",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -11263,11 +11037,6 @@
         },
         {
           "english": "Charcoal",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Charcoal",
           "translation": "Kaa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
@@ -11282,18 +11051,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Hoe",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "House",
           "translation": "Ny-ūmba",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "House",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -11307,11 +11066,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Shield",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Stool",
           "translation": "vi-tī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -11321,7 +11075,7 @@
     {
       "id": "verbs",
       "name": "Core Verbs & Actions",
-      "icon": "🏃",
+      "icon": "Activity",
       "entries": [
         {
           "english": "Go",
@@ -12662,7 +12416,7 @@
     {
       "id": "adjectives",
       "name": "Adjectives, Qualities & Grammar",
-      "icon": "✨",
+      "icon": "Sparkles",
       "entries": [
         {
           "english": "Big",
@@ -13125,7 +12879,7 @@
     {
       "id": "travel",
       "name": "Travel, Directions & Navigation",
-      "icon": "🧭",
+      "icon": "Compass",
       "entries": [
         {
           "english": "Go",
@@ -13592,11 +13346,6 @@
         },
         {
           "english": "Canoe",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Canoe",
           "translation": "Zefe",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
@@ -13625,7 +13374,7 @@
     {
       "id": "shopping",
       "name": "Trade, Money & Measures",
-      "icon": "🛒",
+      "icon": "ShoppingCart",
       "entries": [
         {
           "english": "Buy",
@@ -13862,7 +13611,7 @@
     {
       "id": "emergency",
       "name": "Health, Safety, Law & Conflict",
-      "icon": "🚨",
+      "icon": "Siren",
       "entries": [
         {
           "english": "War",
@@ -14195,7 +13944,7 @@
     {
       "id": "time",
       "name": "Time, Seasons & Calendar",
-      "icon": "⏰",
+      "icon": "Clock",
       "entries": [
         {
           "english": "Day",
@@ -14434,7 +14183,7 @@
         {
           "english": "To-day",
           "translation": "Yēo",
-          "pronunciation": "yē",
+          "pronunciation": "yēo",
           "context": "13. Pokomo (Kipfokomo) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -14453,12 +14202,6 @@
           "english": "After to",
           "translation": "késo kútoa",
           "pronunciation": "késo kútoa",
-          "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
-        },
-        {
-          "english": "Year",
-          "translation": "id",
-          "pronunciation": "id",
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
@@ -14483,7 +14226,7 @@
     {
       "id": "phrases",
       "name": "Common Expressions & Vocabulary",
-      "icon": "🗣️",
+      "icon": "MessageCircle",
       "entries": [
         {
           "english": "If",
@@ -15698,19 +15441,19 @@
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Bakai Galgalo at Fumboni above Dafoma → Galgalo & Kofa",
+          "english": "Uta clan (Malalulu / Zubaki — Bakai Galgalo at Fumboni above Dafoma → Galgalo & Kofa)",
           "translation": "Uta",
           "pronunciation": "uta",
           "context": "Mikael Samson & R. G. Darroch, 'A History of the Pokomo by Mikael Samson — Continued' (1944, pp. 378–394 & Notes 5, 10–13) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Kuyo at Bohoni → Bashora & Didha",
+          "english": "Meta clan (Upper Pokomo — Kuyo at Bohoni → Bashora & Didha)",
           "translation": "Meta",
           "pronunciation": "meta",
           "context": "Mikael Samson & R. G. Darroch, 'A History of the Pokomo by Mikael Samson — Continued' (1944, pp. 378–394 & Notes 5, 10–13) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Boran Ganyare at Haretha opposite Kumbi → Babuya & Dae",
+          "english": "Garjeda clan (Ndura / Zubaki — Boran Ganyare at Haretha opposite Kumbi → Babuya & Dae)",
           "translation": "Garjeda",
           "pronunciation": "garjeda",
           "context": "Mikael Samson & R. G. Darroch, 'A History of the Pokomo by Mikael Samson — Continued' (1944, pp. 378–394 & Notes 5, 10–13) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
@@ -15800,11 +15543,6 @@
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
-          "english": "Joint (plural)",
-          "translation": "ma",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Trace (plural)",
           "translation": "niátjo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo s.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
@@ -15859,7 +15597,7 @@
     {
       "id": "culture-history",
       "name": "Culture, Clans & Historical Corpus",
-      "icon": "📜",
+      "icon": "BookOpen",
       "entries": [
         {
           "english": "Ox",
@@ -18085,18 +17823,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Borassus palm",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Buttocks",
           "translation": "Tako",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Buttocks",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -18125,16 +17853,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Horn",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Horn",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Iron",
           "translation": "C-ūma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -18151,17 +17869,7 @@
         },
         {
           "english": "Island",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Island",
           "translation": "Tsāṅga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Island",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -18170,18 +17878,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Ivory",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Lips",
           "translation": "Mu-yomo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Lips",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -18200,33 +17898,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Name",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Paddle",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Parrot",
           "translation": "Kwāru",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Parrot",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Penis",
           "translation": "Cīwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Penis",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -18255,11 +17933,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Slave",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Spirit, soul",
           "translation": "Mu-zīmū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -18272,16 +17945,6 @@
         {
           "english": "Tail",
           "translation": "Mu-kīa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Tail",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Thigh",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -18300,11 +17963,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Thorn",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Town",
           "translation": "Mū-dzī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
@@ -18320,18 +17978,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
-          "english": "Vein",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
           "english": "Witch",
           "translation": "Mū-tsāwi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Witch",
-          "translation": "wa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -18371,17 +18019,7 @@
         },
         {
           "english": "Ye, you, your",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "Ye, you, your",
           "translation": "ēnyū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
-        },
-        {
-          "english": "They, them, their",
-          "translation": "wa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
         },
         {
@@ -18500,5 +18138,5 @@
   "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "pkb",
   "glottocode": "poko1261",
-  "totalEntries": 3159
+  "totalEntries": 3087
 }

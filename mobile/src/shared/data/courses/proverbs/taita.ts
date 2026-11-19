@@ -1,7 +1,8 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Taita (Kidawida / Kisagala) Proverbs & Oral Literature (8 verified entries)
+// Taita (Kidawida / Kisagala) Proverbs & Oral Literature (9 verified entries)
+// Declarative proverb collection (zero runtime mutations)
 // ============================================================
 
 export const TAITA_PROVERBS: ProverbItem[] = [
@@ -22,7 +23,7 @@ export const TAITA_PROVERBS: ProverbItem[] = [
     "languageName": "Taita (Kisagala)",
     "indigenous": "Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba.",
     "literalTranslation": "A riddle, a riddle—my son went to the coast, he has not yet come back. — Answer: Kilamba (the seed vessel of the baobab tree).",
-    "meaning": "Recorded verbatim by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, p. 93 under \"Enigma\" & p. 114 under \"Riddle\"): the traditional Kisagala riddle-telling ceremony. Wray notes: \"A person failing to guess it pretends to offer the questioner the choice of several towns, till the riddle is explained\" (cf. Shaw 1885: \"Wada! — Na wada! Nyumba yangu siiwesi mjango? — Ni-hawe muzi. — Igi\").",
+    "meaning": "Recorded verbatim by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, p. 93 under \"Enigma\" & p. 114 under \"Riddle\"): the traditional Kisagala riddle-telling ceremony. Wray notes: \"A person failing to guess it pretends to offer the questioner the choice of several towns, till the riddle is explained.\"",
     "theme": "nature",
     "sourceCitation": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (1894, pp. 93 & 114, Enigma / Riddle)"
   },
@@ -32,7 +33,7 @@ export const TAITA_PROVERBS: ProverbItem[] = [
     "languageName": "Taita (Kisagala & Kidawida)",
     "indigenous": "Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani. — Uvoro wa kisirani? — Ni 'gwaloli. — Una maana? — Na maana. — Kukeja maana? — Kweja maana.",
     "literalTranslation": "May I come in? — Come in! Come near! Sit down. Where do you come from? — I come from the hill-top. — What is the news from the hill-top? — It is good (or Sikwesi, there is none). — Are you well? — I am well. — Are they well at your village? — It is well.",
-    "meaning": "Recorded verbatim by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, pp. 115–116 under \"Salutation, kurogoa\"), alongside morning (\"Walamsaje? — Nalamuka banana\"), evening (\"Wasindaje? — Nasinda banana\"), and parting (\"Ko mbole — Haya ko mbole, genda banana\") salutations, and Rev. A. Downes Shaw's (1885) greeting \"Voro! — Voro! Mzima? — Mzima. — Ndo vidzo!\"",
+    "meaning": "Recorded verbatim by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, pp. 115–116 under \"Salutation, kurogoa\"), alongside morning (\"Walamsaje? — Nalamuka banana\"), evening (\"Wasindaje? — Nasinda banana\"), and parting (\"Ko mbole — Haya ko mbole, genda banana\") salutations.",
     "theme": "unity",
     "sourceCitation": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (1894, pp. 115–116, Salutation / kurogoa)"
   },
@@ -42,60 +43,63 @@ export const TAITA_PROVERBS: ProverbItem[] = [
     "languageName": "Taita (Kisagala)",
     "indigenous": "Mwasasi, mwasasi wome, mwana wa ng'anya mbareni ngolo, mwasasi wome!",
     "literalTranslation": "Warrior of the lineage, stand firm in heart, child of such-a-one, take courage in the clan!",
-    "meaning": "Recorded verbatim by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, p. 89 under \"Cry, a, kilio\"): the traditional Kisagala war-cry and alarm rallying the hillside lineages (mbari / kikuku / lukolo) to collective defense, paired with Wray's narrative idioms \"Ando kungi... nikotū\" (\"Wait a bit and you will hear...\", p. 59) and \"Angoije?\" (\"Is it not so?\", p. 59).",
-    "theme": "unity",
-    "sourceCitation": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (1894, pp. 59 & 89, Narrative Idioms & War-Cry)"
+    "meaning": "Recorded verbatim by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, p. 89 under \"Cry, a, kilio\"): the traditional Kisagala war-cry and alarm rallying the hillside lineages (mbari / kikuku / lukolo) to collective defense.",
+    "theme": "courage",
+    "sourceCitation": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (1894, p. 89, War-Cry / kilio)"
   },
   {
-    "id": "taylor-1891-taita-665",
+    "id": "shaw-1885-taita-egg-riddle",
     "languageId": "taita",
-    "languageName": "Taita (Kidawida / Kisagalla)",
-    "indigenous": "Kazi mbili zam'lema fisi.",
-    "literalTranslation": "Two occupations were too many for the hyena (lit. were heavy on the hyena).",
-    "meaning": "Proverbial teaching: 'Two occupations were too many for the hyena' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Nyika and other proverbs, § 647b, etc.)",
-    "theme": "unity",
-    "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Taita Proverb #665"
+    "languageName": "Taita (Kisagala / Ndara)",
+    "indigenous": "Wada! — Na wada! Nyumba yangu siiwesi mjango? — Ni-hawe muzi. — Igi.",
+    "literalTranslation": "A riddle! — Let it come! My house has no door? — Give me a town. — An egg.",
+    "meaning": "Recorded verbatim by Rev. A. Downes Shaw in \"A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages\" (SPCK, London, 1885, p. x): illustrates the Taita riddle challenge where the respondent forfeits a symbolic hilltop town (muzi) before learning the answer (igi, an egg).",
+    "englishEquivalent": "A house without a door or window — an egg.",
+    "theme": "wisdom",
+    "sourceCitation": "Rev. A. Downes Shaw, A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages (1885, p. x)"
   },
   {
-    "id": "wray-1894-taita-riddle",
+    "id": "shaw-1885-taita-greeting-dialogue",
     "languageId": "taita",
-    "languageName": "Taita (Kisagalla)",
-    "indigenous": "Wada na wada—mwanangu agendele ujombani ela sauja. — Kilamba.",
-    "literalTranslation": "A riddle, a riddle—my son went to the coast, he has not yet come back. — The seed vessel of the baobab tree.",
-    "meaning": "Recorded verbatim by Rev. J. Alfred Wray (1894, p. 93 under 'Enigma' & p. 114 under 'Riddle'): 'A person failing to guess it pretends to offer the questioner the choice of several towns, till the riddle is explained.'",
+    "languageName": "Taita (Kisagala / Ndara)",
+    "indigenous": "Voro! — Voro! Mzima? — Mzima. — Ndo vidzo!",
+    "literalTranslation": "Peace / News! — Peace! Are you well? — I am well. — That is very good!",
+    "meaning": "Recorded verbatim by Rev. A. Downes Shaw at Ndara (Sagalla) in \"A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages\" (1885, p. x): the classic hilltop exchange affirming peace (uvoro / voro) and health (mzima) between travelers.",
+    "englishEquivalent": "Peace be with you, and good health to your household.",
+    "theme": "unity",
+    "sourceCitation": "Rev. A. Downes Shaw, A Pocket Vocabulary of the Ki-Swahili, Ki-Nyika, Ki-Taita, and Ki-Kamba Languages (1885, p. x)"
+  },
+  {
+    "id": "wray-1894-taita-narrative-idiom",
+    "languageId": "taita",
+    "languageName": "Taita (Kisagala)",
+    "indigenous": "Ando kungi... nikotū! • Angoije? — Isūo!",
+    "literalTranslation": "Wait a bit and you will hear... it is nothing at all! • Is it not so? — It is so indeed!",
+    "meaning": "Recorded by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, p. 59): conversational idioms used by elders during fireside storytelling and council deliberations to call for patience and audience agreement.",
+    "englishEquivalent": "Patience reveals the whole story.",
+    "theme": "patience",
+    "sourceCitation": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (1894, p. 59, Idiomatic Phrases)"
+  },
+  {
+    "id": "wray-1894-taita-wayfarer-omens",
+    "languageId": "taita",
+    "languageName": "Taita (Kisagala)",
+    "indigenous": "Ndege ya kwita na ndege ya kuuya • Mfingiri wa njiani.",
+    "literalTranslation": "The omen-bird of going forward and the omen-bird of turning back • The wayside cairn of stones.",
+    "meaning": "Recorded by Rev. J. Alfred Wray in \"An Elementary Introduction to the Taita Language\" (1894, pp. 99, 108): Taita travelers observed the call and direction of the road-omen bird (ndege ya kwita vs. ndege ya kuuya) and cast a stone upon the wayside cairn (mfingiri) for safe passage across the plains.",
+    "englishEquivalent": "Heed the signs of the road before you journey far.",
     "theme": "nature",
-    "sourceCitation": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language' (SPCK, London), pp. 93 & 114"
+    "sourceCitation": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (1894, pp. 99 & 108)"
   },
   {
-    "id": "wray-1894-taita-salutation",
+    "id": "taita-thinkkenya-prov-1",
     "languageId": "taita",
-    "languageName": "Taita (Kisagalla)",
-    "indigenous": "Hodi? — Hodi! karibu! Uka kitembo. Ufuma kwihi? — Nafuma kisirani. — Uvoro wa kisirani? — Ni 'gwaloli (or Sikwesi). — Una maana? — Na maana. — Kukeja maana? — Kweja maana.",
-    "literalTranslation": "May I come in? — Come in! Come near! Sit down. Where do you come from? — I come from the hill-top. — What is the news from the hill-top? — It is good (or There is none). — Are you well? — I am well. — Are they well at your village? — It is well.",
-    "meaning": "Recorded verbatim by Rev. J. Alfred Wray (1894, pp. 115–116 under 'Salutation, kurogoa'), alongside morning ('Walamsaje? — Nalamuka banana'), evening ('Wasindaje? — Nasinda banana'), and parting ('Ko mbole — Haya ko mbole, genda banana') greetings.",
+    "languageName": "Taita (Kidaw'ida)",
+    "indigenous": "Chawia cha kudighana ni chuo cha wandru wose.",
+    "literalTranslation": "Peaceful cooperation is the school of all people.",
+    "meaning": "Working together in harmony teaches wisdom to the entire community.",
+    "englishEquivalent": "Unity is strength.",
     "theme": "unity",
-    "sourceCitation": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language' (SPCK, London), pp. 115–116"
-  },
-  {
-    "id": "wray-1894-taita-warcry-customs",
-    "languageId": "taita",
-    "languageName": "Taita (Kisagalla)",
-    "indigenous": "Mwasasi, mwasasi wome, mwana wa ng'anya mbareni ngolo, mwasasi wome!",
-    "literalTranslation": "Warrior of the lineage, stand firm in heart, child of such-a-one, take courage in the clan!",
-    "meaning": "Traditional Kisagala war-cry recorded by Rev. J. Alfred Wray (1894, p. 89 under 'Cry, a, kilio'), preserved alongside ancestral skull cave customs ('ngoma / ngomeni', p. 118), wayside stone cairns ('mfingiri', p. 99), road bird-omens ('ndege ya kwita / ndege ya kuuya', p. 108), and the 7-day post-partum naming seclusion ('ku-jora mwana', p. 84).",
-    "theme": "unity",
-    "sourceCitation": "Rev. J. Alfred Wray (1894) 'An Elementary Introduction to the Taita Language' (SPCK, London), pp. 84, 89, 99, 108, 118"
+    "sourceCitation": "Mozilla Common Voice 25.0 Kidaw'ida Corpus (CC0-1.0) & ThinkKenya Kidaw'ida"
   }
 ];
-
-TAITA_PROVERBS.push({
-  "id": "taita-thinkkenya-prov-1",
-  "languageId": "taita",
-  "languageName": "Taita (Kidaw'ida)",
-  "indigenous": "Chawia cha kudighana ni chuo cha wandru wose.",
-  "literalTranslation": "Peaceful cooperation is the school of all people.",
-  "meaning": "Working together in harmony teaches wisdom to the entire community.",
-  "englishEquivalent": "Unity is strength.",
-  "theme": "unity",
-  "sourceCitation": "Mozilla Common Voice 25.0 Kidaw'ida Corpus (CC0-1.0) & ThinkKenya Kidaw'ida"
-});

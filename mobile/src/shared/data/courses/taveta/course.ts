@@ -40,67 +40,67 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "target": "Mwakucha!",
             "source": "Good morning!",
-            "pronunciation": "mwa-kucha / uko mwidzi",
+            "pronunciation": "mwa-ku-cha",
             "hint": "Kitaveta salutation"
           },
           {
             "target": "Uko mwidzi?",
             "source": "Are you well?",
-            "pronunciation": "mwa-kucha / uko mwidzi",
+            "pronunciation": "u-ko mwi-dzi",
             "hint": "Kitaveta salutation"
           },
           {
             "target": "mndu (pl. wandu)",
             "source": "Person (pl. People)",
-            "pronunciation": "mndu / mche",
+            "pronunciation": "mndu",
             "hint": "Johnston (1919, Vol. I, pp. 101, 106 #15 Taveita)"
           },
           {
             "target": "mche (pl. wache)",
             "source": "Woman (pl. Women)",
-            "pronunciation": "mndu / mche",
+            "pronunciation": "mche",
             "hint": "Johnston (1919, Vol. I, pp. 101, 106 #15 Taveita)"
           },
           {
             "target": "mazi",
             "source": "Water",
-            "pronunciation": "ma-zi / mo-to / mbe-ho",
+            "pronunciation": "ma-zi",
             "hint": "Hollis (1910 Proverb #4) & Johnston (1919, Vol. I, pp. 98–112 #15 Taveita)"
           },
           {
             "target": "moto",
             "source": "Fire",
-            "pronunciation": "ma-zi / mo-to / mbe-ho",
+            "pronunciation": "mo-to",
             "hint": "Hollis (1910 Proverb #4) & Johnston (1919, Vol. I, pp. 98–112 #15 Taveita)"
           },
           {
             "target": "mbeho",
             "source": "Cold",
-            "pronunciation": "ma-zi / mo-to / mbe-ho",
+            "pronunciation": "mbe-ho",
             "hint": "Hollis (1910 Proverb #4) & Johnston (1919, Vol. I, pp. 98–112 #15 Taveita)"
           },
           {
             "target": "ideghe (pl. madeghe)",
             "source": "Bird (pl. Birds)",
-            "pronunciation": "i-deghe / kucha",
+            "pronunciation": "i-de-ghe",
             "hint": "Hollis (1910 Proverb #10)"
           },
           {
             "target": "kucha",
             "source": "Dawn, daybreak",
-            "pronunciation": "i-deghe / kucha",
+            "pronunciation": "ku-cha",
             "hint": "Hollis (1910 Proverb #10)"
           },
           {
             "target": "rutoke (pl. matoke)",
             "source": "Banana",
-            "pronunciation": "ru-to-ke / nyumba",
+            "pronunciation": "ru-to-ke",
             "hint": "Hollis (1911 Taveta Enigmas)"
           },
           {
             "target": "nyumba",
             "source": "House",
-            "pronunciation": "ru-to-ke / nyumba",
+            "pronunciation": "nyu-mba",
             "hint": "Hollis (1911 Taveta Enigmas)"
           },
           {
@@ -125,11 +125,11 @@ export const TAVETA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Esikie mbeho niye esongeria moto.",
-            "source": "It is the one who feels the cold who draws near to the fire ."
+            "source": "It is the one who feels the cold who draws near to the fire."
           },
           {
             "target": "Ideghe imwe likaremwa kuiya teheshigha kucha.",
-            "source": "If one bird fails to sing, it does not stop the dawn from breaking ."
+            "source": "If one bird fails to sing, it does not stop the dawn from breaking."
           }
         ],
         "authoredExercises": [
@@ -260,7 +260,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
     "id": "taveta-unit-2",
     "unitNumber": 2,
     "title": "Family, Kinship, Clans & Social Organization",
-    "description": "Master family, kinship, clans & social organization in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A.",
+    "description": "Master family, kinship, clans & social organization in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A. C. Hollis (1910–1911).",
     "icon": "Users",
     "color": "#15803D",
     "skills": [
@@ -293,7 +293,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "target": "momi (pl. waomi)",
             "source": "Man",
-            "pronunciation": "mo-mi / mche",
+            "pronunciation": "mo-mi",
             "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 100–106) — #15 Taveta"
           },
           {
@@ -321,9 +321,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Hollis (1910) & Johnston (1919) — Kitaveta"
           },
           {
-            "target": "M-ndele; va-. M-fora; va",
+            "target": "M-ndele (pl. va-ndele) / M-fora (pl. va-fora)",
             "source": "Girl",
-            "pronunciation": "m-ndele va- m-fora va"
+            "pronunciation": "m-nde-le / m-fo-ra"
           }
         ],
         "sentences": [
@@ -413,13 +413,13 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919) — Kitaveta"
           },
           {
-            "target": "M-ringga; va",
+            "target": "M-ringga; va-",
             "source": "Brother",
             "pronunciation": "m-ringga",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "Mnggwa; va",
+            "target": "Mnggwa (pl. va-nggwa)",
             "source": "Chief",
             "pronunciation": "mnggwa",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -437,7 +437,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "M-sōro; va",
+            "target": "M-sōro (pl. va-sōro)",
             "source": "Son, boy",
             "pronunciation": "m-soro",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -455,9 +455,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Hollis 1910 Taveta Proverbs"
           },
           {
-            "target": "M-ndele; va-. M-fora; va",
+            "target": "M-ndele (pl. va-ndele) / M-fora (pl. va-fora)",
             "source": "Girl",
-            "pronunciation": "m nde-le"
+            "pronunciation": "m-nde-le"
           }
         ],
         "sentences": [
@@ -538,7 +538,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
     "id": "taveta-unit-3",
     "unitNumber": 3,
     "title": "Numbers, Counting, Currency & Measures",
-    "description": "Master numbers, counting, currency & measures in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A.",
+    "description": "Master numbers, counting, currency & measures in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A. C. Hollis (1910–1911).",
     "icon": "Scale",
     "color": "#15803D",
     "skills": [
@@ -727,14 +727,14 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "target": "mirongo miwi (20)",
-            "source": "Twenty",
-            "pronunciation": "mi-rongo mi-wi / i-ga-na",
+            "source": "Twenty (dialect variant)",
+            "pronunciation": "mi-rongo mi-wi",
             "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta"
           },
           {
             "target": "igana (100)",
-            "source": "One hundred",
-            "pronunciation": "mi-rongo mi-wi / i-ga-na",
+            "source": "One hundred (full numeral)",
+            "pronunciation": "i-ga-na",
             "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta"
           },
           {
@@ -806,6 +806,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 107–108) — #15 Taveta",
             "acceptedAnswers": [
               "Twenty / One hundred",
+              "Twenty (dialect variant)",
               "Twenty"
             ]
           },
@@ -855,12 +856,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
                 "right": "Ten"
               },
               {
-                "left": "mirongo miwi (20) / igana (100)",
-                "right": "Twenty / One hundred"
-              },
-              {
                 "left": "mirongo miwiri",
                 "right": "Twenty"
+              },
+              {
+                "left": "Mī-rōnggo mī-tātū",
+                "right": "Thirty"
               },
               {
                 "left": "igana",
@@ -888,7 +889,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
     "id": "taveta-unit-4",
     "unitNumber": 4,
     "title": "Food, Cuisine, Crops & Livestock Husbandry",
-    "description": "Master food, cuisine, crops & livestock husbandry in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A.",
+    "description": "Master food, cuisine, crops & livestock husbandry in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A. C. Hollis (1910–1911).",
     "icon": "Tractor",
     "color": "#15803D",
     "skills": [
@@ -934,9 +935,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "pronunciation": "u-ki"
           },
           {
-            "target": "I-dio; ma",
+            "target": "I-dio (pl. ma-dio)",
             "source": "Banana",
-            "pronunciation": "i dioh"
+            "pronunciation": "i-dio"
           },
           {
             "target": "Tūmbātu",
@@ -1074,7 +1075,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "target": "M-nyū",
             "source": "Salt",
-            "pronunciation": "m-nyu i-gadi",
+            "pronunciation": "m-nyu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
@@ -1355,13 +1356,13 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "target": "mlima",
             "source": "Mountain",
-            "pronunciation": "mli-ma / fumvu",
+            "pronunciation": "mli-ma",
             "hint": "Verified comparative entry across Kenyan bantu corpus"
           },
           {
             "target": "fumvu",
             "source": "Hill",
-            "pronunciation": "mli-ma / fumvu",
+            "pronunciation": "fu-mvu",
             "hint": "Verified comparative entry across Kenyan bantu corpus"
           },
           {
@@ -1383,7 +1384,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Hollis 1910 & 1911 Taveta"
           },
           {
-            "target": "I-kala; ma",
+            "target": "I-kala (pl. ma-kala)",
             "source": "Charcoal",
             "pronunciation": "i-kala",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1511,7 +1512,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
     "id": "taveta-unit-6",
     "unitNumber": 6,
     "title": "The Human Body, Health, Medicine & Safety",
-    "description": "Master the human body, health, medicine & safety in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A.",
+    "description": "Master the human body, health, medicine & safety in Taveta (Kitaveta) built directly from Sir Harry Johnston (1886 & 1919 Group C #15 Ki-Taveita) & A. C. Hollis (1910–1911).",
     "icon": "User",
     "color": "#15803D",
     "skills": [
@@ -1695,7 +1696,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919) — Kitaveta"
           },
           {
-            "target": "Mu-kono; mi",
+            "target": "Mu-kono; mi-",
             "source": "Arm",
             "pronunciation": "mu-kono",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1707,25 +1708,25 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "I-deu; ma",
+            "target": "I-deu; ma-",
             "source": "Belly",
             "pronunciation": "i-deu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "Indi, I-windi; ma",
+            "target": "Indi, I-windi; ma-",
             "source": "Bone",
-            "pronunciation": "indi i-windi",
+            "pronunciation": "indi / i-windi",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "M-bafu; mi",
+            "target": "M-bafu; mi-",
             "source": "Breast (man's)",
             "pronunciation": "m-bafu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "I-vele; ma",
+            "target": "I-vele; ma-",
             "source": "Breast (woman's)",
             "pronunciation": "i-vele",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1912,13 +1913,13 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "target": "kukoma",
             "source": "Kill",
-            "pronunciation": "ku-ko-ma / ku-ho-ma",
+            "pronunciation": "ku-ko-ma",
             "hint": "A. C. Hollis (1910) Taveta Proverb #6"
           },
           {
             "target": "kuhoma",
             "source": "Strike",
-            "pronunciation": "ku-ko-ma / ku-ho-ma",
+            "pronunciation": "ku-ho-ma",
             "hint": "A. C. Hollis (1910) Taveta Proverb #6"
           },
           {
@@ -2095,8 +2096,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "target": "C-oni; vy-oni",
-            "source": "Hide",
-            "pronunciation": "c-oni vy-oni"
+            "source": "Hide / Animal skin",
+            "pronunciation": "cho-ni / vyo-ni"
           }
         ],
         "sentences": [
@@ -2331,9 +2332,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan bantu corpus"
           },
           {
-            "target": "igolo (kesho)",
+            "target": "kesho / igama (igolo)",
             "source": "Tomorrow",
-            "pronunciation": "i-go-lo",
+            "pronunciation": "ke-sho / i-ga-ma",
             "hint": "Verified comparative entry across Kenyan bantu corpus"
           },
           {
@@ -2374,7 +2375,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "source": "Day — Today."
           },
           {
-            "target": "igolo — igolo",
+            "target": "kesho — igolo",
             "source": "Tomorrow — Yesterday."
           }
         ],
@@ -2403,7 +2404,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "translate_to_english",
-            "prompt": "Translate to English: \"igolo\"",
+            "prompt": "Translate to English: \"kesho / igama\"",
             "correctAnswer": "Tomorrow",
             "acceptedAnswers": [
               "Tomorrow",
@@ -2425,7 +2426,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
                 "right": "Today"
               },
               {
-                "left": "igolo",
+                "left": "kesho / igama",
                 "right": "Tomorrow"
               },
               {
@@ -2464,7 +2465,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "A. C. Hollis, Taveta Sayings and Proverbs (1910)"
           },
           {
-            "target": "mbazi /ulosi",
+            "target": "mbazi / ulosi",
             "source": "Proverb / wise saying (Kitaveta)",
             "pronunciation": "mba-zi / u-lo-si",
             "hint": "A. C. Hollis, Taveta Sayings and Proverbs (1910)"
@@ -2472,13 +2473,13 @@ export const TAVETA_UNITS: CourseUnit[] = [
           {
             "target": "kigano",
             "source": "Riddle",
-            "pronunciation": "ki-ga-no / ndi-ma",
+            "pronunciation": "ki-ga-no",
             "hint": "A. C. Hollis, Taveta Enigmas, Journal of the African Society Vol. 10 (1911)"
           },
           {
             "target": "ndima",
-            "source": "enigma (Taveta oral literature)",
-            "pronunciation": "ki-ga-no / ndi-ma",
+            "source": "Enigma (Taveta oral literature)",
+            "pronunciation": "ndi-ma",
             "hint": "A. C. Hollis, Taveta Enigmas, Journal of the African Society Vol. 10 (1911)"
           },
           {
@@ -2543,12 +2544,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
                 "right": "Blacksmith / ironworker"
               },
               {
-                "left": "mbazi /ulosi",
+                "left": "mbazi / ulosi",
                 "right": "Proverb / wise saying (Kitaveta)"
               },
               {
                 "left": "kigano / ndima",
-                "right": "Riddle / enigma (Taveta oral literature)"
+                "right": "Riddle / Enigma (Taveta oral literature)"
               },
               {
                 "left": "rika (pl. marika)",
@@ -2998,37 +2999,37 @@ export const TAVETA_UNITS: CourseUnit[] = [
       },
       {
         "id": "taveta-hohnel-1894-vol1-lesson",
-        "title": "Höhnel: Kiruvu 7-Turn Greeting Dialogue, Taveta",
+        "title": "Höhnel (1894): Kiruvu 7-Turn Greeting Dialogue, Taveta Governance & Trade",
         "icon": "Compass",
         "description": "Master the verbatim 7-turn Kiruvu greeting dialogue with Sultan Sedenga (p. 66), the 4-prefix Bantu rule (p. 61), Taveta forest governance and trade units (pp. 94–205), Sultan Miriali's Kichaga phrases (p. 113), and the first ascent of Kilimanjaro to 17,387 ft. in Lieut. Ludwig von Höhnel (1894, Vol. I).",
         "tips": "On p. 66 of Volume I (1894), Höhnel records the exact 7-question Kiruvu greeting ceremony at Mafi with Sultan Sedenga of Mkarama, where every line is answered by a resonant nasal 'Hm! — Hm!' before closing with 'Yambo!'.",
         "culturalNote": "During their three-month stay in Taveta (March 31–July 15, 1887), Count Teleki and Lieut. von Höhnel documented the peaceful coexistence of >1,500 Bantu Wataveta (governed by 10 Wazee elders) with agricultural Wakwafi settled toward Lake Jipe, as well as the Kahe people whose Bantu dialect was identical to Kitaveta (pp. 100–104, 167–169).",
         "words": [
           {
-            "target": "Kilo vedi?",
-            "source": "7-Turn Kiruvu Greeting Dialogue with Sultan Sedenga of Mkarama: 'Did you have a good",
+            "target": "Kilo vedi? — Hm! Si vedi? — Hm! Ho kaja? — Hm!",
+            "source": "7-Turn Kiruvu Greeting Dialogue with Sultan Sedenga of Mkarama: 'Did you have a good night? Did you have a good day? Is all well at home?'",
             "pronunciation": "ki-lo ve-di / si ve-di / ho ka-ja / m-zi-ma / sa-na / yam-bo",
             "hint": "Höhnel (1894, Vol. I, Ch. II, p. 66; Europeans = Wasangu)"
           },
           {
-            "target": "Wazee",
-            "source": "10 elders, Mkamba",
-            "pronunciation": "wazee"
+            "target": "Wazee (pl. of Mzee)",
+            "source": "Council of 10 elders governing Taveta (assisted by Mkamba and 4–5 Wakwafi headmen)",
+            "pronunciation": "wa-zee"
           },
           {
             "target": "pombo",
-            "source": "10 strings of 21–22 in. beads",
-            "pronunciation": "pombo"
+            "source": "10 strings of 21–22 in. beads (Taveta caravan currency unit)",
+            "pronunciation": "pom-bo"
           },
           {
-            "target": "Mangi",
-            "source": "Sultan Miriali of Marangu",
-            "pronunciation": "mangi"
+            "target": "Mangi (Sultan Miriali of Marangu)",
+            "source": "Hereditary Chaga ruler / chief ('Mangi')",
+            "pronunciation": "ma-ngi"
           },
           {
-            "target": "'wasunga Kana wanaona ugombe a mafuta, saua kana mafissi' & 'mtschunga",
-            "source": "Sultan Mandara of Mochi's Swahili Taunts & First High Ascent of Kilimanjaro with Two",
-            "pronunciation": "'wasunga-kana-wanaona-ugombe",
+            "target": "'Wasunga kana wanaona ng'ombe a mafuta, sawa kana mafisi' & 'mchunga'",
+            "source": "Sultan Mandara of Moshi's Swahili taunts & First High Ascent of Kilimanjaro with Two Guides",
+            "pronunciation": "wa-su-nga ka-na wa-na-o-na ngom-be",
             "hint": "Höhnel (1894, Vol. I, Ch. III, pp. 183–199)"
           }
         ],
@@ -3039,7 +3040,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Yambo, Yambo, sana! Sabalcheir! Uhali ghani? Habari ghani? — Tonga mbuya!",
-            "source": "Good day! God bless you! How are you? What's the news?  — Off with you now, friend! (Sultan Miriali, p. 113)."
+            "source": "Good day! God bless you! How are you? What's the news? — Off with you now, friend! (Sultan Miriali, p. 113)."
           }
         ]
       },
@@ -3190,7 +3191,20 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "pronunciation": "mna-ne"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Wandu ikumi wagenda Msitu wa Lumi.",
+            "source": "Ten people are going to the Lumi River Forest."
+          },
+          {
+            "target": "Njama yaekomi ikala mpungi.",
+            "source": "The council of elders sits in the sacred forest grove."
+          },
+          {
+            "target": "Njia ya Taveta ni hafuhi na mto.",
+            "source": "The road to Taveta is near the river."
+          }
+        ]
       }
     ]
   }

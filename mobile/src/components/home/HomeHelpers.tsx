@@ -644,7 +644,11 @@ export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) 
   const { theme } = useTheme();
   const isFocused = useIsFocused();
   const reduceMotion = useReduceMotionEnabled();
-  const [wordIdx, setWordIdx] = useState<number>(0);
+  const [wordIdx, setWordIdx] = useState<number>(() =>
+    INITIAL_RANDOM_WORDS.length > 0
+      ? Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)
+      : 0
+  );
 
   const nextWord = useCallback(
     (withHaptic = false) => {

@@ -40,134 +40,134 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "target": "Supai! (resp. Epa!)",
             "source": "Greetings!",
-            "pronunciation": "su-pai / se-rian",
+            "pronunciation": "su-pai",
             "hint": "Ilchamus salutation"
           },
           {
             "target": "Serian!",
             "source": "Peace!",
-            "pronunciation": "su-pai / se-rian",
+            "pronunciation": "se-rian",
             "hint": "Ilchamus salutation"
           },
           {
             "target": "Njemps Liabori (Njemps Kubwa)",
             "source": "Downstream Njemps (on the Molo)",
-            "pronunciation": "njemps lia-bo-ri / njemps le-ke-pir / korvan",
+            "pronunciation": "njemps lia-bo-ri",
             "hint": "Dundas (1910, pp. 49–50, 53)"
           },
           {
             "target": "Njemps Lekepir (Njemps Ndogo)",
             "source": "Upstream Njemps (on the Tigrish)",
-            "pronunciation": "njemps lia-bo-ri / njemps le-ke-pir / korvan",
+            "pronunciation": "njemps le-ke-pir",
             "hint": "Dundas (1910, pp. 49–50, 53)"
           },
           {
             "target": "Korvan",
-            "source": "Island & Tim",
-            "pronunciation": "njemps lia-bo-ri / njemps le-ke-pir / korvan",
+            "source": "Island & River Tim settlement",
+            "pronunciation": "kor-van",
             "hint": "Dundas (1910, pp. 49–50, 53)"
           },
           {
             "target": "Mparingo",
             "source": "Lake Baringo",
-            "pronunciation": "mpa-ringo / l-kadich / l-singiri",
+            "pronunciation": "mpa-ri-ngo",
             "hint": "Lake Baringo maritime & fishing lexicon"
           },
           {
             "target": "l-kadich",
             "source": "Ambatch balsa-reed canoe",
-            "pronunciation": "mpa-ringo / l-kadich / l-singiri",
+            "pronunciation": "l-ka-dich",
             "hint": "Lake Baringo maritime & fishing lexicon"
           },
           {
             "target": "l-singiri",
             "source": "Fish",
-            "pronunciation": "mpa-ringo / l-kadich / l-singiri",
+            "pronunciation": "l-si-ngi-ri",
             "hint": "Lake Baringo maritime & fishing lexicon"
           },
           {
             "target": "nkare",
             "source": "Water (River)",
-            "pronunciation": "nka-re / n-kima / n-kolong / nkai",
+            "pronunciation": "nka-re",
             "hint": "Johnston (1902 Njemps) & Dundas (1910)"
           },
           {
             "target": "n-kima",
             "source": "Fire",
-            "pronunciation": "nka-re / n-kima / n-kolong / nkai",
+            "pronunciation": "n-ki-ma",
             "hint": "Johnston (1902 Njemps) & Dundas (1910)"
           },
           {
             "target": "n-kolong",
             "source": "Sun",
-            "pronunciation": "nka-re / n-kima / n-kolong / nkai",
+            "pronunciation": "n-ko-long",
             "hint": "Johnston (1902 Njemps) & Dundas (1910)"
           },
           {
             "target": "Nkai",
             "source": "God",
-            "pronunciation": "nka-re / n-kima / n-kolong / nkai",
+            "pronunciation": "nkai",
             "hint": "Johnston (1902 Njemps) & Dundas (1910)"
           },
           {
             "target": "n-kiteng (pl. n-kishu)",
             "source": "Cow (pl. Cattle)",
-            "pronunciation": "n-kiteng / l-kinos / l-makau",
+            "pronunciation": "n-ki-teng",
             "hint": "Johnston (1902 Njemps) & Dundas (1910, p. 49 n. 1)"
           },
           {
             "target": "l-kinos (ngingyang)",
             "source": "Crocodile",
-            "pronunciation": "n-kiteng / l-kinos / l-makau",
+            "pronunciation": "l-ki-nos",
             "hint": "Johnston (1902 Njemps) & Dundas (1910, p. 49 n. 1)"
           },
           {
             "target": "l-makau",
             "source": "Hippopotamus",
-            "pronunciation": "n-kiteng / l-kinos / l-makau",
+            "pronunciation": "l-ma-kau",
             "hint": "Johnston (1902 Njemps) & Dundas (1910, p. 49 n. 1)"
           },
           {
             "target": "nabo (obo)",
             "source": "One (1)",
-            "pronunciation": "na-bo are uni ongwan i-miet",
+            "pronunciation": "na-bo",
             "hint": "Johnston (1902 Njemps) numerals 1–5"
           },
           {
             "target": "are",
             "source": "Two (2)",
-            "pronunciation": "na-bo are uni ongwan i-miet",
+            "pronunciation": "a-re",
             "hint": "Johnston (1902 Njemps) numerals 1–5"
           },
           {
             "target": "uni",
             "source": "Three (3)",
-            "pronunciation": "na-bo are uni ongwan i-miet",
+            "pronunciation": "u-ni",
             "hint": "Johnston (1902 Njemps) numerals 1–5"
           },
           {
             "target": "ile",
             "source": "Six (6)",
-            "pronunciation": "ile sa-pa-na i-siet saal to-mon",
+            "pronunciation": "i-le",
             "hint": "Johnston (1902 Njemps) numerals 6–10"
           },
           {
             "target": "sapana",
             "source": "Seven (7)",
-            "pronunciation": "ile sa-pa-na i-siet saal to-mon",
+            "pronunciation": "sa-pa-na",
             "hint": "Johnston (1902 Njemps) numerals 6–10"
           },
           {
             "target": "isiet",
             "source": "Eight (8)",
-            "pronunciation": "ile sa-pa-na i-siet saal to-mon",
+            "pronunciation": "i-siet",
             "hint": "Johnston (1902 Njemps) numerals 6–10"
           }
         ],
         "sentences": [
           {
             "target": "Njemps Liabori o Njemps Lekepir: Il Mayek oo Il Derito.",
-            "source": "Downstream Njemps and Upstream Njemps: The Il Mayek clan and Il Derito elders open the irrigation furrow ."
+            "source": "Downstream Njemps and Upstream Njemps: The Il Mayek clan and Il Derito elders open the irrigation furrow."
           }
         ],
         "authoredExercises": [
@@ -206,19 +206,23 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each Ilchamus expression with its English meaning:",
-            "correctAnswer": "Supai! (resp. Epa!) / Serian!: Greetings! / Peace!",
+            "correctAnswer": "Supai! (resp. Epa!): Greetings!",
             "pairs": [
               {
-                "left": "Supai! (resp. Epa!) / Serian!",
-                "right": "Greetings! / Peace!"
+                "left": "Supai! (resp. Epa!)",
+                "right": "Greetings!"
               },
               {
-                "left": "Mparingo / l-kadich / l-singiri",
-                "right": "Lake Baringo / Ambatch balsa-reed canoe / Fish"
+                "left": "Mparingo",
+                "right": "Lake Baringo"
               },
               {
-                "left": "nkare / n-kima / n-kolong / Nkai",
-                "right": "Water (River) / Fire / Sun / God"
+                "left": "l-kadich",
+                "right": "Ambatch balsa-reed canoe"
+              },
+              {
+                "left": "nkare",
+                "right": "Water (River)"
               }
             ]
           },
@@ -246,7 +250,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "id": "ilchamus-unit-2",
     "unitNumber": 2,
     "title": "Family, Kinship, Clans & Social Organization",
-    "description": "Master family, kinship, clans & social organization in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master family, kinship, clans & social organization in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Users",
     "color": "#0284C7",
     "skills": [
@@ -256,7 +260,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "n-gitok (pl. n-gituak)",
@@ -265,9 +269,9 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Dundas 1910 & Johnston 1902 Njemps"
           },
           {
-            "target": "l-payian (elder) / l-murani (warrior) / l-tungani (person)",
-            "source": "Man",
-            "pronunciation": "l-payian / l-murani / l-tungani",
+            "target": "l-payian / l-murani / l-tungani",
+            "source": "Man (elder / warrior / person)",
+            "pronunciation": "l-pa-yian / l-mu-ra-ni / l-tu-nga-ni",
             "hint": "Dundas 1910 & Johnston 1902 Njemps"
           },
           {
@@ -429,7 +433,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "Embatiān, Ol aitórienĭ, Lagwainani",
@@ -462,7 +466,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Dundas 1910 & Maa Baringo corpus"
           },
           {
-            "target": "Ilchamus (sg. Olchamus); Suk exonym: En-jemusi",
+            "target": "Ilchamus (sg. Olchamus) / En-jemusi",
             "source": "People of Ilchamus ('People who see far')",
             "pronunciation": "il-cha-mus / en-je-mu-si"
           },
@@ -550,7 +554,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "id": "ilchamus-unit-3",
     "unitNumber": 3,
     "title": "Numbers, Counting, Currency & Measures",
-    "description": "Master numbers, counting, currency & measures in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master numbers, counting, currency & measures in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Scale",
     "color": "#0284C7",
     "skills": [
@@ -560,7 +564,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "nabo (fem.) / obo (masc.)",
@@ -729,7 +733,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "tomon",
@@ -852,7 +856,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "id": "ilchamus-unit-4",
     "unitNumber": 4,
     "title": "Food, Cuisine, Crops & Livestock Husbandry",
-    "description": "Master food, cuisine, crops & livestock husbandry in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master food, cuisine, crops & livestock husbandry in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Tractor",
     "color": "#0284C7",
     "skills": [
@@ -862,7 +866,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "n-daa",
@@ -995,7 +999,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "El bāek",
@@ -1118,7 +1122,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "id": "ilchamus-unit-5",
     "unitNumber": 5,
     "title": "Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master nature, landscape, flora & east african wildlife in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "PawPrint",
     "color": "#0284C7",
     "skills": [
@@ -1128,7 +1132,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "n-golong",
@@ -1301,7 +1305,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "nkop",
@@ -1478,7 +1482,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "id": "ilchamus-unit-6",
     "unitNumber": 6,
     "title": "The Human Body, Health, Medicine & Safety",
-    "description": "Master the human body, health, medicine & safety in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master the human body, health, medicine & safety in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "User",
     "color": "#0284C7",
     "skills": [
@@ -1488,7 +1492,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "ŋ-kɔŋ-ʊ́ (nkong'u)",
@@ -1661,7 +1665,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "nkaina",
@@ -1830,7 +1834,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "id": "ilchamus-unit-7",
     "unitNumber": 7,
     "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
-    "description": "Master core verbs, tenses, negation & verbal extensions in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master core verbs, tenses, negation & verbal extensions in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "BookOpen",
     "color": "#0284C7",
     "skills": [
@@ -1840,7 +1844,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "a-iro (a-jo)",
@@ -1953,7 +1957,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "a-ning (ning)",
@@ -2084,7 +2088,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "id": "ilchamus-unit-8",
     "unitNumber": 8,
     "title": "Time, Indigenous Calendar, Seasons & Navigation",
-    "description": "Master time, indigenous calendar, seasons & navigation in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master time, indigenous calendar, seasons & navigation in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Compass",
     "color": "#0284C7",
     "skills": [
@@ -2094,7 +2098,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "Ol lari (pl. El larin)",
@@ -2203,7 +2207,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Ilchamus (Njemps) (Ilchamus / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
+        "culturalNote": "Primary historical documentation for Ilchamus (Njemps / Camus) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910 Njemps) & Mervyn W. H. Beech (1911 En-Jemusi Customs & Comparative Notes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Baringo.",
         "words": [
           {
             "target": "n-golong",
@@ -2312,33 +2316,33 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "tips": "Every item in this skill is grounded directly in the historical Ilchamus (Njemps) linguistic corpus with full phonetic pronunciation guides.",
         "words": [
           {
-            "target": "artam",
+            "target": "Onnom artam",
             "source": "Ninety",
-            "pronunciation": "artam",
+            "pronunciation": "on-nom ar-tam",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
-            "target": "otomoni uni",
+            "target": "Onnom otomoni uni",
             "source": "Eighty",
-            "pronunciation": "o-to-mo-ni uni",
+            "pronunciation": "on-nom o-to-mo-ni u-ni",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
-            "target": "obikitam",
+            "target": "Onnom obikitam",
             "source": "Seventy",
-            "pronunciation": "o-bi-ki-tam",
+            "pronunciation": "on-nom o-bi-ki-tam",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
-            "target": "otomon",
+            "target": "Onnom otomon",
             "source": "Sixty",
-            "pronunciation": "o-to-mon",
+            "pronunciation": "on-nom o-to-mon",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
             "target": "Tomon obo",
             "source": "Eleven",
-            "pronunciation": "to-mon obo",
+            "pronunciation": "to-mon o-bo",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
@@ -2349,21 +2353,21 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           },
           {
             "target": "Endīto",
-            "source": "young",
-            "pronunciation": "endi-to",
+            "source": "Girl / Young woman",
+            "pronunciation": "en-di-to",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
             "target": "Ol-labanani",
             "source": "Diviner",
-            "pronunciation": "ol-labanani",
+            "pronunciation": "ol-la-ba-na-ni",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"artam\" in Ilchamus (Njemps)?",
+            "prompt": "What is the English meaning of \"Onnom artam\" in Ilchamus (Njemps)?",
             "correctAnswer": "Ninety",
             "options": [
               "Eighty",
@@ -2376,22 +2380,22 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each verified Ilchamus (Njemps) term to its English meaning:",
-            "correctAnswer": "artam: Ninety",
+            "correctAnswer": "Onnom artam: Ninety",
             "pairs": [
               {
-                "left": "artam",
+                "left": "Onnom artam",
                 "right": "Ninety"
               },
               {
-                "left": "otomoni uni",
+                "left": "Onnom otomoni uni",
                 "right": "Eighty"
               },
               {
-                "left": "obikitam",
+                "left": "Onnom obikitam",
                 "right": "Seventy"
               },
               {
-                "left": "otomon",
+                "left": "Onnom otomon",
                 "right": "Sixty"
               }
             ]
@@ -2401,10 +2405,10 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Complete the Ilchamus (Njemps) term for \"Eleven\": ___",
             "correctAnswer": "Tomon obo",
             "options": [
-              "artam",
-              "otomoni uni",
+              "Onnom artam",
+              "Onnom otomoni uni",
               "Tomon obo",
-              "obikitam"
+              "Onnom obikitam"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
@@ -2419,8 +2423,8 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Lesuñgu",
-            "source": "Traveler",
-            "pronunciation": "le-sunggu",
+            "source": "White man / European",
+            "pronunciation": "le-su-nggu",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
@@ -2448,38 +2452,38 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
-            "target": "Manyata (warriors'), Añgañ (tribal)",
-            "source": "Town or settlement",
-            "pronunciation": "manya-ta anggang",
+            "target": "Manyata / Añgañ",
+            "source": "Town or settlement (warriors' / tribal)",
+            "pronunciation": "ma-nya-ta / a-nggang",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
             "target": "Entakolla",
-            "source": "molar",
-            "pronunciation": "enta-kolla",
+            "source": "Molar tooth",
+            "pronunciation": "en-ta-kol-la",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
             "target": "Or gumbao",
             "source": "Tobacco",
-            "pronunciation": "or gumbao",
+            "pronunciation": "or gum-bao",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           }
         ],
         "sentences": [
           {
-            "target": "El mau (Manyata (warriors'), Añgañ (tribal)).",
-            "source": "Twins (Town or settlement)."
+            "target": "El mau — Manyata / Añgañ.",
+            "source": "Twins — Town or settlement."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Lesuñgu\" in Ilchamus?",
-            "correctAnswer": "Traveler",
+            "correctAnswer": "White man / European",
             "options": [
               "Wart hog",
-              "Traveler",
+              "White man / European",
               "War",
               "Spring water"
             ],
@@ -2488,11 +2492,11 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each verified Ilchamus (Njemps) term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "Lesuñgu: White man",
+            "correctAnswer": "Lesuñgu: White man / European",
             "pairs": [
               {
                 "left": "Lesuñgu",
-                "right": "Traveler"
+                "right": "White man / European"
               },
               {
                 "left": "Ol gūya",
@@ -2560,7 +2564,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "target": "Os singolio",
             "source": "Song",
-            "pronunciation": "os",
+            "pronunciation": "os si-ngo-lio",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu)"
           },
           {
@@ -2774,30 +2778,33 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Njemps Mkubwa & Njemps Ndogo",
-            "source": "The Two Double-Stockaded Njemps Villages & Their Population in Nov.–Dec. 1887",
-            "pronunciation": "njemps-mkubwa-njemps-ndogo",
+            "source": "Great Njemps and Little Njemps settlements",
+            "pronunciation": "njemps m-ku-bwa / njemps n-do-go",
             "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 381–383)"
           },
           {
-            "target": "Guaso Tigerish Timber-Pile, Brushwood & Boulder Dam",
-            "source": "Njemps Hydraulic Engineering & Irrigated Crops",
-            "pronunciation": "wim-bi / m-ta-ma / gua-so ti-ge-rish",
+            "target": "Guaso Tigerish / Perkerra",
+            "source": "Dammed irrigation river of Njemps",
+            "pronunciation": "gua-so ti-ge-rish / per-ker-ra",
             "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 382–383)"
           },
           {
-            "target": "Ol Kokwa island",
-            "source": "2½ mi. long, 400 ft. high, boiling sulphur springs",
-            "pronunciation": "ol-kokwa-island"
+            "target": "Ol Kokwa",
+            "source": "Central volcanic island of Lake Baringo",
+            "pronunciation": "ol ko-kwa",
+            "hint": "Höhnel (1894, Vol. I, Ch. VI, p. 384)"
           },
           {
             "target": "oboro",
-            "source": "6–8-log ambatch raft, Herminiera elaphroxylon, pp. 384–385",
-            "pronunciation": "oboro"
+            "source": "Ambatch log raft (Herminiera elaphroxylon)",
+            "pronunciation": "o-bo-ro",
+            "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 384–385)"
           },
           {
-            "target": "Leikipia plateau",
-            "source": "6,000–6,850 ft., Il Leikipiak kraals",
-            "pronunciation": "leikipia-plateau"
+            "target": "Leikipia (Il Leikipiak)",
+            "source": "Highland plateau east of Baringo",
+            "pronunciation": "lei-ki-pia / il lei-ki-piak",
+            "hint": "Höhnel (1894, Vol. I, Ch. VI, pp. 367–376)"
           }
         ],
         "sentences": [
@@ -2938,7 +2945,20 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "pronunciation": "i-siet"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Eserian pooki.",
+            "source": "Everything is at peace."
+          },
+          {
+            "target": "Kalo Lparingo.",
+            "source": "I am going to Lake Baringo."
+          },
+          {
+            "target": "Metamayiana Nkai ang' ang'.",
+            "source": "May God bless our homestead."
+          }
+        ]
       }
     ]
   }

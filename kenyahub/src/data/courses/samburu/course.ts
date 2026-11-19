@@ -44,127 +44,127 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "target": "Supai! (resp. Epa!)",
             "source": "Greetings to men/warriors!",
-            "pronunciation": "su-pai / takwenya",
+            "pronunciation": "su-pai",
             "hint": "Hinde (1901) & Hollis (1905) Maa salutations"
           },
           {
             "target": "Takwenya! (resp. Iko!)",
             "source": "Greetings to women/elders!",
-            "pronunciation": "su-pai / takwenya",
+            "pronunciation": "ta-kwe-nya",
             "hint": "Hinde (1901) & Hollis (1905) Maa salutations"
           },
           {
             "target": "Ashe oleng",
             "source": "Thank you very much",
-            "pronunciation": "ashe o-leng / se-rian",
+            "pronunciation": "a-she o-leng",
             "hint": "Gratitude & peace"
           },
           {
             "target": "Serian",
             "source": "Peace",
-            "pronunciation": "ashe o-leng / se-rian",
+            "pronunciation": "se-rian",
             "hint": "Gratitude & peace"
           },
           {
             "target": "saamburr (Sampur)",
             "source": "Traditional leather bag",
-            "pronunciation": "saamburr / loi-kop",
+            "pronunciation": "saam-burr",
             "hint": "Hinde (1901) & Johnston (1902)"
           },
           {
             "target": "Loikop",
             "source": "Samburu self-designation (owners of the land)",
-            "pronunciation": "saamburr / loi-kop",
+            "pronunciation": "loi-kop",
             "hint": "Hinde (1901) & Johnston (1902)"
           },
           {
             "target": "l-murani (pl. l-muran)",
             "source": "Warrior",
-            "pronunciation": "l-murani / l-payian / n-gitok",
+            "pronunciation": "l-mu-ra-ni",
             "hint": "Northern Maa l-/n- prefixes"
           },
           {
             "target": "l-payian",
             "source": "Elder",
-            "pronunciation": "l-murani / l-payian / n-gitok",
+            "pronunciation": "l-pa-yian",
             "hint": "Northern Maa l-/n- prefixes"
           },
           {
             "target": "n-gitok",
             "source": "Woman",
-            "pronunciation": "l-murani / l-payian / n-gitok",
+            "pronunciation": "n-gi-tok",
             "hint": "Northern Maa l-/n- prefixes"
           },
           {
             "target": "Nkai",
             "source": "God (Sky/Rain)",
-            "pronunciation": "nkai / nka-re / ku-le / nkishu",
+            "pronunciation": "nkai",
             "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
           },
           {
             "target": "nkare",
             "source": "Water",
-            "pronunciation": "nkai / nka-re / ku-le / nkishu",
+            "pronunciation": "nka-re",
             "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
           },
           {
             "target": "kule",
             "source": "Milk",
-            "pronunciation": "nkai / nka-re / ku-le / nkishu",
+            "pronunciation": "ku-le",
             "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
           },
           {
             "target": "nkishu",
             "source": "Cattle",
-            "pronunciation": "nkai / nka-re / ku-le / nkishu",
+            "pronunciation": "nki-shu",
             "hint": "Johnston (1902 Burkeneji) & Hollis (1905)"
           },
           {
             "target": "Ol-doinyo Nyiro",
             "source": "Mount Nyiro (sacred mountain)",
-            "pronunciation": "ol-doinyo nyi-ro / e-waso ngi-ro",
+            "pronunciation": "ol-doi-nyo nyi-ro",
             "hint": "Dundas (1910) & Hinde (1901)"
           },
           {
             "target": "E-waso Ngiro",
             "source": "Ewaso Ng'iro River",
-            "pronunciation": "ol-doinyo nyi-ro / e-waso ngi-ro",
+            "pronunciation": "e-wa-so ngi-ro",
             "hint": "Dundas (1910) & Hinde (1901)"
           },
           {
             "target": "nabo (obo)",
             "source": "One (1)",
-            "pronunciation": "na-bo are uni ongwan i-miet",
+            "pronunciation": "na-bo",
             "hint": "Johnston (1902) & Hollis (1905) numerals 1–5"
           },
           {
             "target": "are (aare)",
             "source": "Two (2)",
-            "pronunciation": "na-bo are uni ongwan i-miet",
+            "pronunciation": "a-re",
             "hint": "Johnston (1902) & Hollis (1905) numerals 1–5"
           },
           {
             "target": "uni (okuni)",
             "source": "Three (3)",
-            "pronunciation": "na-bo are uni ongwan i-miet",
+            "pronunciation": "u-ni",
             "hint": "Johnston (1902) & Hollis (1905) numerals 1–5"
           },
           {
             "target": "ile",
             "source": "Six (6)",
-            "pronunciation": "ile sa-pa-na i-siet saal to-mon",
+            "pronunciation": "i-le",
             "hint": "Northern Maa preserves sapana (7) & saal (9)"
           },
           {
             "target": "sapana",
             "source": "Seven (7)",
-            "pronunciation": "ile sa-pa-na i-siet saal to-mon",
+            "pronunciation": "sa-pa-na",
             "hint": "Northern Maa preserves sapana (7) & saal (9)"
           },
           {
             "target": "isiet",
             "source": "Eight (8)",
-            "pronunciation": "ile sa-pa-na i-siet saal to-mon",
+            "pronunciation": "i-siet",
             "hint": "Northern Maa preserves sapana (7) & saal (9)"
           }
         ],
@@ -258,19 +258,23 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each Samburu expression with its English meaning:",
-            "correctAnswer": "Supai! (resp. Epa!) / Takwenya! (resp. Iko!): Greetings to men/warriors! / Greetings to women/elders!",
+            "correctAnswer": "Supai! (resp. Epa!): Greetings to men/warriors!",
             "pairs": [
               {
-                "left": "Supai! (resp. Epa!) / Takwenya! (resp. Iko!)",
-                "right": "Greetings to men/warriors! / Greetings to women/elders!"
+                "left": "Supai! (resp. Epa!)",
+                "right": "Greetings to men/warriors!"
               },
               {
-                "left": "Ashe oleng / Serian",
-                "right": "Thank you very much / Peace"
+                "left": "Takwenya! (resp. Iko!)",
+                "right": "Greetings to women/elders!"
               },
               {
-                "left": "l-murani (pl. l-muran) / l-payian / n-gitok",
-                "right": "Warrior / Elder / Woman"
+                "left": "Ashe oleng",
+                "right": "Thank you very much"
+              },
+              {
+                "left": "l-murani (pl. l-muran)",
+                "right": "Warrior"
               }
             ]
           },
@@ -298,7 +302,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     "id": "samburu-unit-2",
     "unitNumber": 2,
     "title": "Family, Kinship, Clans & Social Organization",
-    "description": "Master family, kinship, clans & social organization in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
+    "description": "Master family, kinship, clans & social organization in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
     "icon": "Users",
     "color": "#E11D48",
     "skills": [
@@ -308,18 +312,18 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "ltung'ani (pl. ltung'ana)",
             "source": "Person",
-            "pronunciation": "ltung'a-ni / lo-kop",
+            "pronunciation": "l-tu-nga-ni",
             "hint": "Samburu (North Maa)"
           },
           {
             "target": "Lokop",
             "source": "People (Owners of the land)",
-            "pronunciation": "ltung'a-ni / lo-kop",
+            "pronunciation": "lo-kop",
             "hint": "Samburu (North Maa)"
           },
           {
@@ -447,11 +451,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each Samburu expression with its English meaning:",
-            "correctAnswer": "ltung'ani (pl. ltung'ana) / Lokop: Person / People (Owners of the land)",
+            "correctAnswer": "ltung'ani (pl. ltung'ana): Person",
             "pairs": [
               {
-                "left": "ltung'ani (pl. ltung'ana) / Lokop",
-                "right": "Person / People (Owners of the land)"
+                "left": "ltung'ani (pl. ltung'ana)",
+                "right": "Person"
               },
               {
                 "left": "papa / menye",
@@ -491,7 +495,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "ŋ-kárn-á (nkárná)",
@@ -624,7 +628,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     "id": "samburu-unit-3",
     "unitNumber": 3,
     "title": "Numbers, Counting, Currency & Measures",
-    "description": "Master numbers, counting, currency & measures in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
+    "description": "Master numbers, counting, currency & measures in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
     "icon": "Scale",
     "color": "#E11D48",
     "skills": [
@@ -634,7 +638,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "naɓô (fem.) / oɓô (masc.) / noɓô (place)",
@@ -657,7 +661,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "target": "onɠwán (fem.) / oónɠwan (masc.)",
             "source": "Four",
-            "pronunciation": "onɠwan / oonɠwan",
+            "pronunciation": "on-gwan / oon-gwan",
             "hint": "Wikipedia Nilotic_languages — Samburu numerals"
           },
           {
@@ -807,7 +811,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "tômôn",
@@ -935,7 +939,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     "id": "samburu-unit-4",
     "unitNumber": 4,
     "title": "Food, Cuisine, Crops & Livestock Husbandry",
-    "description": "Master food, cuisine, crops & livestock husbandry in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
+    "description": "Master food, cuisine, crops & livestock husbandry in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
     "icon": "Milk",
     "color": "#E11D48",
     "skills": [
@@ -945,7 +949,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "kule",
@@ -991,12 +995,12 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "target": "ŋ-kár-ɛ́",
             "source": "Water, stream",
-            "pronunciation": "-kar-"
+            "pronunciation": "ng-kar-e"
           },
           {
-            "target": "a-ɲá (Samburu & Maasai)",
+            "target": "a-ɲá (anya)",
             "source": "To eat",
-            "pronunciation": "a- a"
+            "pronunciation": "a-nya"
           }
         ],
         "sentences": [
@@ -1077,7 +1081,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "Ol lameyu",
@@ -1210,7 +1214,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     "id": "samburu-unit-5",
     "unitNumber": 5,
     "title": "Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
+    "description": "Master nature, landscape, flora & east african wildlife in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
     "icon": "PawPrint",
     "color": "#E11D48",
     "skills": [
@@ -1220,7 +1224,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "l-akira (pl. l-akir)",
@@ -1393,7 +1397,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "nkop",
@@ -1440,9 +1444,9 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "pronunciation": "ol ja-ta"
           },
           {
-            "target": "Alasagutoni (cold)",
-            "source": "Wind",
-            "pronunciation": "alasagutoni"
+            "target": "Alasagutoni",
+            "source": "Cold wind",
+            "pronunciation": "a-la-sa-gu-to-ni"
           }
         ],
         "sentences": [
@@ -1527,7 +1531,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     "id": "samburu-unit-6",
     "unitNumber": 6,
     "title": "The Human Body, Health, Medicine & Safety",
-    "description": "Master the human body, health, medicine & safety in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
+    "description": "Master the human body, health, medicine & safety in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
     "icon": "User",
     "color": "#E11D48",
     "skills": [
@@ -1537,7 +1541,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "ŋ-kɔŋ-ʊ́ (nkong'u)",
@@ -1710,7 +1714,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "nkaina (pl. nkainito)",
@@ -1732,25 +1736,25 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "target": "ŋ-kɔŋ-ʊ́",
-            "source": "eye",
+            "source": "Eye",
             "pronunciation": "ng-kong-u",
             "hint": "Samburu & Maasai (Vossen 1982)"
           },
           {
             "target": "ŋ-kɪ́-yyɔk",
-            "source": "ear",
+            "source": "Ear",
             "pronunciation": "ng-ki-yyok",
             "hint": "Samburu & Maasai (Vossen 1982)"
           },
           {
             "target": "l-alá-ɪ̀",
-            "source": "tooth",
+            "source": "Tooth",
             "pronunciation": "l-ala-i",
             "hint": "Samburu & Maasai (Vossen 1982)"
           },
           {
             "target": "l-ŋɛ́jɛ́p",
-            "source": "tongue",
+            "source": "Tongue",
             "pronunciation": "l-ngejep",
             "hint": "Samburu & Maasai (Vossen 1982)"
           },
@@ -1772,7 +1776,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "target": "ltau — ŋ-kɔŋ-ʊ́",
-            "source": "Heart — eye."
+            "source": "Heart — Eye."
           }
         ],
         "authoredExercises": [
@@ -1783,7 +1787,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "options": [
               "Leg",
               "Heart",
-              "eye",
+              "Eye",
               "Hand"
             ],
             "hint": "Core vocabulary in Health, Traditional Medicine & Emergency Terms",
@@ -1831,11 +1835,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "ŋ-kɔŋ-ʊ́",
-                "right": "eye"
+                "right": "Eye"
               },
               {
                 "left": "ŋ-kɪ́-yyɔk",
-                "right": "ear"
+                "right": "Ear"
               }
             ]
           }
@@ -1847,7 +1851,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     "id": "samburu-unit-7",
     "unitNumber": 7,
     "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
-    "description": "Master core verbs, tenses, negation & verbal extensions in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
+    "description": "Master core verbs, tenses, negation & verbal extensions in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
     "icon": "BookOpen",
     "color": "#E11D48",
     "skills": [
@@ -1857,7 +1861,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "a-ɲá (anya)",
@@ -2030,7 +2034,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "a-iyiolo (aiyiolo)",
@@ -2071,7 +2075,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "target": "ŋ-kárn-á",
             "source": "Name",
-            "pronunciation": "-karn-a"
+            "pronunciation": "ng-karn-a"
           },
           {
             "target": "Kurét",
@@ -2162,7 +2166,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     "id": "samburu-unit-8",
     "unitNumber": 8,
     "title": "Time, Indigenous Calendar, Seasons & Navigation",
-    "description": "Master time, indigenous calendar, seasons & navigation in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A.",
+    "description": "Master time, indigenous calendar, seasons & navigation in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
     "icon": "Compass",
     "color": "#E11D48",
     "skills": [
@@ -2172,7 +2176,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
             "target": "mpari",
@@ -2298,12 +2302,12 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Samburu (Sampur) (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
+        "culturalNote": "Primary historical documentation for Samburu (Sampur / ɔl Maa) in Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905) & C. W. Hobley (1910 Notes on the Sambur & Gilat Clans) preserves pre-1930 phonological, grammatical, and ethnographic usage across Samburu, Marsabit, Isiolo.",
         "words": [
           {
-            "target": "mpari",
-            "source": "Day",
-            "pronunciation": "mpari"
+            "target": "Nyamata",
+            "source": "Era / Historical age",
+            "pronunciation": "nya-ma-ta"
           },
           {
             "target": "Lapa le okuni (Oku)",
@@ -2348,8 +2352,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mpari — Lapa le okuni",
-            "source": "Day — March."
+            "target": "Nyamata — Lapa le okuni",
+            "source": "Era — March."
           },
           {
             "target": "Lapa le ong’wan — Lapa le isiet",
@@ -2359,11 +2363,11 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"mpari\" mean in English?",
-            "correctAnswer": "Day",
+            "prompt": "What does \"Nyamata\" mean in English?",
+            "correctAnswer": "Era / Historical age",
             "options": [
               "March",
-              "Day",
+              "Era / Historical age",
               "April",
               "August"
             ],
@@ -2395,8 +2399,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "mpari",
-                "right": "Day"
+                "left": "Nyamata",
+                "right": "Era / Historical age"
               },
               {
                 "left": "Lapa le okuni",
@@ -2436,33 +2440,33 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         "tips": "Every item in this skill is grounded directly in the historical Samburu (Sampur) linguistic corpus with full phonetic pronunciation guides.",
         "words": [
           {
-            "target": "artam",
+            "target": "Onnom artam",
             "source": "Ninety",
-            "pronunciation": "artam",
+            "pronunciation": "on-nom ar-tam",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
-            "target": "otomoni uni",
+            "target": "Onnom otomoni uni",
             "source": "Eighty",
-            "pronunciation": "o-to-mo-ni uni",
+            "pronunciation": "on-nom o-to-mo-ni u-ni",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
-            "target": "obikitam",
+            "target": "Onnom obikitam",
             "source": "Seventy",
-            "pronunciation": "o-bi-ki-tam",
+            "pronunciation": "on-nom o-bi-ki-tam",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
-            "target": "otomon",
+            "target": "Onnom otomon",
             "source": "Sixty",
-            "pronunciation": "o-to-mon",
+            "pronunciation": "on-nom o-to-mon",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
             "target": "Tomon obo",
             "source": "Eleven",
-            "pronunciation": "to-mon obo",
+            "pronunciation": "to-mon o-bo",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
@@ -2473,21 +2477,21 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "target": "Endīto",
-            "source": "young",
-            "pronunciation": "endi-to",
+            "source": "Girl / Young woman",
+            "pronunciation": "en-di-to",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
             "target": "Eñgitok",
             "source": "Woman",
-            "pronunciation": "enggi-tok",
+            "pronunciation": "eng-gi-tok",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"artam\" in Samburu (Sampur)?",
+            "prompt": "What is the English meaning of \"Onnom artam\" in Samburu (Sampur)?",
             "correctAnswer": "Ninety",
             "options": [
               "Eighty",
@@ -2500,22 +2504,22 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each verified Samburu (Sampur) term to its English meaning:",
-            "correctAnswer": "artam: Ninety",
+            "correctAnswer": "Onnom artam: Ninety",
             "pairs": [
               {
-                "left": "artam",
+                "left": "Onnom artam",
                 "right": "Ninety"
               },
               {
-                "left": "otomoni uni",
+                "left": "Onnom otomoni uni",
                 "right": "Eighty"
               },
               {
-                "left": "obikitam",
+                "left": "Onnom obikitam",
                 "right": "Seventy"
               },
               {
-                "left": "otomon",
+                "left": "Onnom otomon",
                 "right": "Sixty"
               }
             ]
@@ -2525,10 +2529,10 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Complete the Samburu (Sampur) term for \"Eleven\": ___",
             "correctAnswer": "Tomon obo",
             "options": [
-              "artam",
+              "Onnom artam",
               "Tomon obo",
-              "otomoni uni",
-              "obikitam"
+              "Onnom otomoni uni",
+              "Onnom obikitam"
             ],
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           }
@@ -2549,8 +2553,8 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "target": "Lesuñgu",
-            "source": "Traveler",
-            "pronunciation": "le-sunggu",
+            "source": "White man / European",
+            "pronunciation": "le-su-nggu",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
@@ -2578,15 +2582,15 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
-            "target": "Manyata (warriors'), Añgañ (tribal)",
-            "source": "Town or settlement",
-            "pronunciation": "manya-ta anggang",
+            "target": "Manyata / Añgañ",
+            "source": "Town or settlement (warriors' / tribal)",
+            "pronunciation": "ma-nya-ta / a-nggang",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
             "target": "Entakolla",
-            "source": "molar",
-            "pronunciation": "enta-kolla",
+            "source": "Molar tooth",
+            "pronunciation": "en-ta-kol-la",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           }
         ],
@@ -2606,7 +2610,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "What is the English meaning of \"Ol-labanani\" in Samburu?",
             "correctAnswer": "Diviner",
             "options": [
-              "Traveler",
+              "White man / European",
               "Wart hog",
               "War",
               "Diviner"
@@ -2624,7 +2628,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "Lesuñgu",
-                "right": "Traveler"
+                "right": "White man / European"
               },
               {
                 "left": "Ol gūya",
@@ -2700,7 +2704,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "target": "Os singolio",
             "source": "Song",
-            "pronunciation": "os",
+            "pronunciation": "os si-ngo-lio",
             "hint": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu)"
           },
           {
@@ -2902,7 +2906,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "target": "Ashe",
             "source": "Thank you",
-            "pronunciation": "ah-sheh oh-leng"
+            "pronunciation": "a-she"
           },
           {
             "target": "Epa",
@@ -2925,9 +2929,9 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "pronunciation": "ki-seh-ri-an"
           },
           {
-            "target": "Chamge",
+            "target": "Nabo",
             "source": "Greetings to elders / Respectful greeting",
-            "pronunciation": "nah-boh"
+            "pronunciation": "na-bo"
           },
           {
             "target": "Supa",
@@ -2983,7 +2987,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           {
             "target": "naɓô",
             "source": "One",
-            "pronunciation": "na o"
+            "pronunciation": "na-bo"
           },
           {
             "target": "aré",
@@ -3031,7 +3035,20 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "pronunciation": "is-jet"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Nkare naibor oo lkujita onyori ntarikini nkishu ang'.",
+            "source": "Clean water and green pasture sustain our livestock."
+          },
+          {
+            "target": "Lpayiani nemayiana lmurran peetum serian te nkop.",
+            "source": "Elders bless the warriors so that peace prevails across the land."
+          },
+          {
+            "target": "Kejaa ngera oo nkishu?",
+            "source": "How are the children and the cattle?"
+          }
+        ]
       }
     ]
   }

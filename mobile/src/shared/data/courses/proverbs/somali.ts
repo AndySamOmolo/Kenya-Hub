@@ -1,7 +1,7 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Somali (Af-Soomaali) Proverbs & Oral Literature (12 verified entries)
+// Somali (Af-Soomaali) Proverbs & Oral Literature (13 verified entries)
 // ============================================================
 
 export const SOMALI_PROVERBS: ProverbItem[] = [
@@ -42,7 +42,7 @@ export const SOMALI_PROVERBS: ProverbItem[] = [
     "id": "somali-4",
     "languageId": "somali",
     "languageName": "Somali (Af-Soomaali)",
-    "indigenous": "Nin aan dhul marin dhaayo ma leh (Kirk 1905).",
+    "indigenous": "Nin aan dhul marin dhaayo ma leh.",
     "literalTranslation": "A man who has not travelled the land has no eyes (insight).",
     "meaning": "Experience and observation of the wider world broaden human understanding (grounded in J. W. C. Kirk’s 1905 Somali prose & Gabei/Gerar oral poetry).",
     "englishEquivalent": "Travel broadens the mind.",
@@ -116,7 +116,7 @@ export const SOMALI_PROVERBS: ProverbItem[] = [
     "id": "somali-larajasse-1897-idioms-oaths-customs",
     "languageId": "somali",
     "languageName": "Somali (Af-Soomaali)",
-    "indigenous": "Wa dantisi / Wa isagi iyo danti • Aya dan leh? — Ana dan leh • Nin o dan u ma lihi • Sadehda dalahod bad igaga furaisantahai • Wa debai / Wa i debai (Ogaden, Dulbanteh & Darod, p. 293) • War san ban ku sida • Dilimihi wa simanyihin / Iss ku simanyihin (p. 127)",
+    "indigenous": "Wa dantisi / Wa isagi iyo danti • Aya dan leh? — Ana dan leh • Nin o dan u ma lihi • Sadehda dalahod bad igaga furaisantahai • Wa debai / Wa i debai • War san ban ku sida • Dilimihi wa simanyihin / Iss ku simanyihin.",
     "literalTranslation": "It is his concern • Who has anything to say? — I have something to say • I care for nobody • By the triple divorce thou art divorced from me (a solemn oath) • He has committed fornication/adultery (Ogaden, Dulbanteh & Darod dialect locution) • I bring to you good news • The lines are parallel / They are equal.",
     "meaning": "Recorded verbatim in Rev. Fr. Evangelist de Larajasse's Somali-English and English-Somali Dictionary (London: Kegan Paul, Trench, Trübner & Co., 1897, Preface pp. v–xiii, Part I pp. 26, 118, 123, 127, Part II pp. 242, 266, and Supplement p. 293): preserves 19th-century Somali conversational idioms, the Ogaden/Darod/Dulbanteh dialectal locution wa debai / wa i debai (p. 293), the triple-divorce oath formula sadehda dalahod bad igaga furaisantahai (p. 293), the paediatric therapeutic skin-incision custom sarsar (p. 123), camel suckling separation dabsi/dabsin/dabsis (p. 26), 7 specialized skin/hide terms (dub, harag, sān, dereb, furad, weilalis, gibil, p. 266), Swahili coastal reference (sawaheli,—gi / sawahili,—gi, pp. 123, 242, 266), Galla/Oromo reference (daba galla,—hi, pp. 26, 270), and East African antelope taxonomy (si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro).",
     "theme": "wisdom",
@@ -132,18 +132,16 @@ export const SOMALI_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "Many individuals act as one body, and one species speaks for all its kind.",
     "theme": "unity",
     "sourceCitation": "Morgan Nilsson, 'Somali gender polarity revisited', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 23, pp. 451–466, DOI: 10.17169/langsci.b121.494)"
+  },
+  {
+    "id": "somali-kirk-1903-two-fools-and-orphans-clem-2019",
+    "languageId": "somali",
+    "languageName": "Somali (Af-Soomaali & Af-Ashraaf — Kirk 1903 & Clem et al. 2019)",
+    "indigenous": "Labadi Dabaal • Labadi Agoon • Innaga vs. Annaga • -ki / -ti, -ka / -ta, -ku / -tu • dhis, hel, qod, tus, kab, hees, laab, diiday, duushay.",
+    "literalTranslation": "The Two Fools (who argued over imaginary herds of camels until they fought) and The Two Starving Orphans (recorded in Burao by Lt. J. W. C. Kirk, 1903, pp. 80–83) • Inclusive 'we' (innaga) vs. Exclusive 'we' (annaga) • Definite article temporal/case vowels (-ki/-ti past/remote, -ka/-ta present, -ku/-tu subject) • Somali [+ATR]/[-ATR] vowel harmony forms (Kimper, Bennett, Green & Yu 2019).",
+    "meaning": "Synthesizes Lt. J. W. C. Kirk's Notes on the Somali Language (London: Henry Frowde / OUP, 1903, pp. i–xii, 1–83, recorded from Drawish, Gibaneh, Dualeh, and Abdi) with Chapters 7, 11, and 33 of Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics (Berlin: Language Science Press, 2019, DOI: 10.5281/zenodo.3365789).",
+    "englishEquivalent": "Do not quarrel over uncounted camels before the herd is yours.",
+    "theme": "wisdom",
+    "sourceCitation": "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. i–xii, 1–83) & Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics (Language Science Press, 2019, Chs. 7, 11 & 33)"
   }
 ];
-
-// ── Append Lt. J. W. C. Kirk (1903, pp. 80–83: Two Fools & Two Starving Orphans) & Clem, Jenks & Sande (2019: Green & Jones Ch. 7, Kimper et al. Ch. 11 & Nurse Ch. 33) to SOMALI_PROVERBS ──
-SOMALI_PROVERBS.push({
-  "id": "somali-kirk-1903-two-fools-and-orphans-clem-2019",
-  "languageId": "somali",
-  "languageName": "Somali (Af-Soomaali & Af-Ashraaf — Kirk 1903 & Clem et al. 2019)",
-  "indigenous": "Kirk (1903, pp. 80–83): Labadi Dabaal ('The Two Fools') & Labadi Agoon ('The Two Starving Orphans') • Inclusive innaga vs. Exclusive annaga • Article vowels -ki/-ti (past/remote), -ka/-ta (present), -ku/-tu (subject) • ATR Harmony Minimal Pairs (Kimper et al. 2019, Ch. 11, pp. 199–212): dhis, hel, qod, tus, kab, hees, laab, diiday, duushay • Marka / Af-Ashraaf Morphology (Green & Jones 2019, Ch. 7, pp. 119–134) & Northern Swahili–Southern Somali Contact (Nurse 2019, Ch. 33, pp. 649–665).",
-  "literalTranslation": "The Two Fools (who argued over imaginary herds of camels until they fought) and The Two Starving Orphans (recorded in Burao by Lt. J. W. C. Kirk, 1903, pp. 80–83) • Acoustic correlates of Somali [+ATR]/[-ATR] vowel harmony (Kimper, Bennett, Green & Yu 2019), Marka (Af-Ashraaf) coastal morphology (Green & Jones 2019), and Northern Swahili–southern Somali historical contact (Nurse 2019).",
-  "meaning": "Synthesizes Lt. J. W. C. Kirk's Notes on the Somali Language (London: Henry Frowde / OUP, 1903, pp. i–xii, 1–83, recorded from Drawish, Gibaneh, Dualeh, and Abdi) with Chapters 7, 11, and 33 of Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics (Berlin: Language Science Press, 2019, DOI: 10.5281/zenodo.3365789).",
-  "englishEquivalent": "Do not quarrel over uncounted camels before the herd is yours.",
-  "theme": "wisdom",
-  "sourceCitation": "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. i–xii, 1–83) & Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics (Language Science Press, 2019, Chs. 7, 11 & 33)"
-});

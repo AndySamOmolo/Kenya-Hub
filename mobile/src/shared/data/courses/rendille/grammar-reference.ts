@@ -26,19 +26,19 @@ export const RENDILLE_GRAMMAR_SECTIONS: GrammarSection[] = [
   },
   {
     "id": "rendille-public-domain-dataset-synthesis",
-    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Rendille (Afi Ren'dille))",
-    "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Rendille (Afi Ren'dille).",
-    "content": "1. **Archival & Open-Dataset Integration for Rendille (Afi Ren'dille)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "title": "Comparative Omo-Tana (Sam) Phonology, Prefix/Suffix Verbal Morphology & Archival Corpus Synthesis (Af-Rendille / Afi Ren'dille)",
+    "summary": "Synthesizes Omo-Tana (Western Sam) phonological correspondences, prefix and suffix verb conjugations, gender-polarity nominals, and lexical roots across primary historical and linguistic sources for Af-Rendille (Afi Ren'dille).",
+    "content": "1. **Archival & Open-Dataset Integration for Af-Rendille (*Afi Ren'dille*)**:\n   - Combines primary historical documentation — Rev. Thomas Wakefield (*JRGS* 1870; *PRGS* 1882), Lieut. Ludwig von Höhnel (*Discovery of Lakes Rudolf and Stefanie*, 1894), Sir Harry H. Johnston (*The Uganda Protectorate*, 1902), Hon. Kenneth R. Dundas (*JRAI* Vol. 40, 1910), and C. W. Hobley (*Ethnology of A-Kamba and Other East African Tribes*, 1910, Part II, Ch. VI, pp. 162–163) — with comparative Omo-Tana and Sam scholarship (Harold C. Fleming 1964, Bernd Heine 1976/1978/1980, Günther Schlee 1979, Antoinette Oomen 1981, Ronald J. Sim 1981, and Steve Pillinger & Letiwa Galboran 1999) and open-licensed digital lexicons (CLDF ASJP v20 `RENDILLE` & `RENDILLE_2`, Grambank `rend1243`, and Wiktionary Swadesh).\n2. **Western Sam Phonology & Morphosyntax**:\n   - As the sole surviving member of the **Western Sam** branch of Omo-Tana Lowland East Cushitic (diverging from Eastern Sam [Somali–Boni–Jiddu] at *c.* 400 BC with 64.1% 100-word core cognates, Blažek 1997/2011), Af-Rendille preserves a high proportion of **prefix-conjugated verbs** (over 50 verbs taking `y- / t- / a- / n-` subject prefixes) alongside suffix-conjugated verbs, a two-gender system (**Masculine `-k-` / Feminine `-t-`**) with gender polarity and plural agreement, focus particles (**`á`** predicate focus, **`-é`** nominal focus), and strict **Subject–Object–Verb (SOV)** constituent order.",
     "examples": [
       {
         "rendille": "buur (pl. buurbuur) • yar (nyirakh = young/small)",
         "english": "Big • Small",
-        "explanation": "Hobley 1910 Rendille vocabulary"
+        "explanation": "Hobley 1910 & comparative Western Sam Rendille vocabulary"
       },
       {
-        "rendille": "daf • koor",
-        "english": "Woven camel-loading mat / thatch • Camel bell carved from wood",
-        "explanation": "Rendille Material Culture — Schlee (1979)"
+        "rendille": "daf • koor • madál",
+        "english": "Woven palm-fibre roof mat • Wooden camel bell • Woven milk container",
+        "explanation": "Rendille Pastoral Material Culture — Schlee (1979) & Heine (1980)"
       }
     ]
   },

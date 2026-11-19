@@ -1649,8 +1649,8 @@
         },
         {
           "english": "Man, vir",
-          "translation": "Mū-ūmē; a",
-          "pronunciation": "mū-ūmē",
+          "translation": "Mū-ūmē (pl. a-ūmē)",
+          "pronunciation": "mū-ūmē (pl. a-ūmē)",
           "context": "Comparative Kikamba Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -2462,7 +2462,7 @@
           "translation": "muómo",
           "pronunciation": "muomo",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba s.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muomo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muomo.opus"
         },
         {
           "english": "Rib",
@@ -2715,7 +2715,7 @@
           "translation": "Mũomo",
           "pronunciation": "moo-oh-moh",
           "context": "Hinde: moomo • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muomo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muomo.opus"
         },
         {
           "english": "Tooth",
@@ -4855,7 +4855,7 @@
           "translation": "muomo",
           "pronunciation": "muo-mo",
           "context": "Hildegarde Hinde (1904) — Kamba • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muomo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muomo.opus"
         },
         {
           "english": "Sheep",
@@ -7814,8 +7814,8 @@
         },
         {
           "english": "Thorn",
-          "translation": "kamíloa, pl. tu",
-          "pronunciation": "kamíloa",
+          "translation": "kamíloa (pl. tumíloa)",
+          "pronunciation": "kamíloa (pl. tumíloa)",
           "context": "Kikámba Comparative Lexicon (Krapf 1850)"
         },
         {
@@ -31872,1477 +31872,1477 @@
           "english": "Yaya and Yemi discussed deeply about his Situationships.",
           "translation": "yaya en yemi maneelesye kinthini kil mendeesye",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/yaya-en-yemi-maneelesye-kinthini-kil-mendeesye.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/yaya-en-yemi-maneelesye-kinthini-kil-mendeesye.opus"
         },
         {
           "english": "All this time.",
           "translation": "ĩvinda yonthe yĩu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ivinda-yonthe-yiu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ivinda-yonthe-yiu.opus"
         },
         {
           "english": "Early Saturday, more units were waiting in Kuwait to smash through any Iraqi resistance.",
           "translation": "mũthenya wa wathanthatu kwakya asikalĩ aingĩ maĩ kuwait meteele kũkita na ita sya iraq",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muthenya-wa-wathanthatu-kwakya-asikali-aingi-mai-kuwait-meteele-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muthenya-wa-wathanthatu-kwakya-asikali-aingi-mai-kuwait-meteele-.opus"
         },
         {
           "english": "It was tough.",
           "translation": "wai vinya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/wai-vinya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/wai-vinya.opus"
         },
         {
           "english": "Sovereign power belongs to the people and the people through Parliament have prescribed the manner in which the power shall be exercised.",
           "translation": "andũ nĩmo me na ũkũmũ na nĩmo maseũvasya ũndũ ũkũtũmĩwa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-nimo-me-na-ukumu-na-nimo-maseuvasya-undu-ukutumiwa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-nimo-me-na-ukumu-na-nimo-maseuvasya-undu-ukutumiwa.opus"
         },
         {
           "english": "I'm still not sure why this happened.",
           "translation": "o na yu ndyaaelewa nesa nĩkĩ maũndũ asu meekĩkie",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-yu-ndyaaelewa-nesa-niki-maundu-asu-meekikie.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-yu-ndyaaelewa-nesa-niki-maundu-asu-meekikie.opus"
         },
         {
           "english": "Why not negotiate with the school on that access issue?",
           "translation": "nĩkĩ ũtatavasya sukulu ũndũ ũsu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niki-utatavasya-sukulu-undu-usu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niki-utatavasya-sukulu-undu-usu.opus"
         },
         {
           "english": "No budget for referendum yet.",
           "translation": "o na ũu wĩ o vo tũi na mbesa sya kwĩka ũmbano ũsu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-uu-wi-o-vo-tui-na-mbesa-sya-kwika-umbano-usu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-uu-wi-o-vo-tui-na-mbesa-sya-kwika-umbano-usu.opus"
         },
         {
           "english": "You just have to out truth him. Believe, declare, and act upon the truth of God's Word, and you will thwart Satan's strategy.",
           "translation": "no nginya ũmũtavye ũw'o ĩkĩĩa ũw'o ũla wĩ ndetonĩ ya ngai ũtavasya angĩ na ũyĩka maũndũ kwosana naw'o weeka ũu ũkeethĩawa ũtonya kũsiĩĩa satani ndakese kũũsinda",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/no-nginya-umutavye-uw-o-ikiia-uw-o-ula-wi-ndetoni-ya-ngai-utavas.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/no-nginya-umutavye-uw-o-ikiia-uw-o-ula-wi-ndetoni-ya-ngai-utavas.opus"
         },
         {
           "english": "I can't wait to see their faces when I'm saved again on Sunday.",
           "translation": "nĩnĩthĩawa na mea ma kwona mothyũ moo ĩla ngatangĩĩwa ĩngĩ wakyumwa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninithiawa-na-mea-ma-kwona-mothyu-moo-ila-ngatangiiwa-ingi-wakyu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninithiawa-na-mea-ma-kwona-mothyu-moo-ila-ngatangiiwa-ingi-wakyu.opus"
         },
         {
           "english": "The cholera outbreak has mainly affected people living in slum areas since such areas lack proper drainage systems",
           "translation": "uwau wa kolela ula umbukite wikathiite isakini muno nundu  kuyingwa mitao ya utwaa kiwu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/uwau-wa-kolela-ula-umbukite-wikathiite-isakini-muno-nundu-kuying.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/uwau-wa-kolela-ula-umbukite-wikathiite-isakini-muno-nundu-kuying.opus"
         },
         {
           "english": "The matter is now in the court of public opinion.",
           "translation": "ũndũ ũsu yu wĩ mbee wa andũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/undu-usu-yu-wi-mbee-wa-andu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/undu-usu-yu-wi-mbee-wa-andu.opus"
         },
         {
           "english": "Did he call you and told you all these things?",
           "translation": "nĩweũkũneenaa maũndũ asu onthe",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niweukuneenaa-maundu-asu-onthe.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niweukuneenaa-maundu-asu-onthe.opus"
         },
         {
           "english": "A pickup truck driven by a white farmer rumbles past with a load of black workers bouncing in the back.",
           "translation": "ngalĩ ĩmwe ĩkuĩtwe nĩ mũĩmi waĩ mũsũngũ nĩyavĩtie na ĩtina wayo vaĩ andũ aingĩ aiũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngali-imwe-ikuitwe-ni-muimi-wai-musungu-niyavitie-na-itina-wayo-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngali-imwe-ikuitwe-ni-muimi-wai-musungu-niyavitie-na-itina-wayo-.opus"
         },
         {
           "english": "I am a small scale farmer.",
           "translation": "nyie nĩ mũĩmi",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nyie-ni-muimi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nyie-ni-muimi.opus"
         },
         {
           "english": "Even when the plane was only half-full or they had bought an extra ticket especially for the baby.",
           "translation": "o na ĩla ndeke yĩ na andũ anini kana ĩla mathooete tikiti wa kũkua mwana",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-ila-ndeke-yi-na-andu-anini-kana-ila-mathooete-tikiti-wa-kuk.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-ila-ndeke-yi-na-andu-anini-kana-ila-mathooete-tikiti-wa-kuk.opus"
         },
         {
           "english": "Our God is a wonderfully faithful Heavenly Father.",
           "translation": "ngai witũ nĩ ĩthe witũ wa ĩtunĩ wĩ kĩthito",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngai-witu-ni-ithe-witu-wa-ituni-wi-kithito.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngai-witu-ni-ithe-witu-wa-ituni-wi-kithito.opus"
         },
         {
           "english": "We are revising geography books.",
           "translation": "tũsomaa mavuku ma maũndũ ma nthĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/tusomaa-mavuku-ma-maundu-ma-nthi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/tusomaa-mavuku-ma-maundu-ma-nthi.opus"
         },
         {
           "english": "Got to go.",
           "translation": "nĩnaĩle kũthi",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninaile-kuthi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninaile-kuthi.opus"
         },
         {
           "english": "\"The God of Tems\" has now become a popular phrase that her fans use whenever Tems scores yet another win.",
           "translation": "ndeto ngai wa tems nĩsyambĩĩe kũtũmĩwa nĩ andũ aingĩ ĩla tems wakwata ũsindi ũngĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ndeto-ngai-wa-tems-nisyambiie-kutumiwa-ni-andu-aingi-ila-tems-wa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ndeto-ngai-wa-tems-nisyambiie-kutumiwa-ni-andu-aingi-ila-tems-wa.opus"
         },
         {
           "english": "And you Kevin, you wait!",
           "translation": "na we kevin eteela",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/na-we-kevin-eteela.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/na-we-kevin-eteela.opus"
         },
         {
           "english": "The natural world teaches us things.",
           "translation": "syĩndũ ila syĩ yayayanĩ nitũmanyĩasya maũndũ maingĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/syindu-ila-syi-yayayani-nitumanyiasya-maundu-maingi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/syindu-ila-syi-yayayani-nitumanyiasya-maundu-maingi.opus"
         },
         {
           "english": "Congratulations for making it to the final list.",
           "translation": "nĩngũũtũngĩa mũvea nũndũ wa kũlika kĩlungunĩ kya mũthya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninguutungia-muvea-nundu-wa-kulika-kilunguni-kya-muthya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninguutungia-muvea-nundu-wa-kulika-kilunguni-kya-muthya.opus"
         },
         {
           "english": "She asked her what her name was",
           "translation": "amũkũlilye ĩsyĩtwa yake",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/amukulilye-isyitwa-yake.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/amukulilye-isyitwa-yake.opus"
         },
         {
           "english": "Impossible, impossible, say the Conradies, an elderly couple who have run the general store for decades.",
           "translation": "mũndũ na mũka conradi ala methĩĩtwe me akũangũ na me na nduka ĩsu kwa myaka mingĩ maisye ũu nĩ ũndũ ũtonyeka",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/mundu-na-muka-conradi-ala-methiitwe-me-akuangu-na-me-na-nduka-is.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/mundu-na-muka-conradi-ala-methiitwe-me-akuangu-na-me-na-nduka-is.opus"
         },
         {
           "english": "Our walls are load bearing and compromise is a no-no",
           "translation": "mĩsyĩ yitũ yĩthĩawa na ngũta ndũmu na nĩtwĩthĩawa na syĩndũ itoetye kũtũvĩngĩĩsa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/misyi-yitu-yithiawa-na-nguta-ndumu-na-nitwithiawa-na-syindu-itoe.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/misyi-yitu-yithiawa-na-nguta-ndumu-na-nitwithiawa-na-syindu-itoe.opus"
         },
         {
           "english": "Mr. Noriega would organize the province's first intelligence service.",
           "translation": "nĩnĩsĩ ũu noriega nĩwe wambĩĩisye mũvĩa wa mbee wa ũkunĩkĩli kĩsionĩ kĩu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninisi-uu-noriega-niwe-wambiiisye-muvia-wa-mbee-wa-ukunikili-kis.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninisi-uu-noriega-niwe-wambiiisye-muvia-wa-mbee-wa-ukunikili-kis.opus"
         },
         {
           "english": "Why can’t we ensure it is up there on our national agenda so that Parliament appropriates for it?",
           "translation": "nkya ttemyosa na kmykilya ta ya vata kwa nth yit nkana mbunge vange mbesa syayo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nkya-ttemyosa-na-kmykilya-ta-ya-vata-kwa-nth-yit-nkana-mbunge-va.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nkya-ttemyosa-na-kmykilya-ta-ya-vata-kwa-nth-yit-nkana-mbunge-va.opus"
         },
         {
           "english": "He would leave abruptly without informing us where he was going.",
           "translation": "nĩwatũtiaa ataeo ttavya vala ũendete",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niwatutiaa-ataeo-ttavya-vala-uendete.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niwatutiaa-ataeo-ttavya-vala-uendete.opus"
         },
         {
           "english": "He actually is serving his country diligently.",
           "translation": "kwa w'o e na kĩthito kingĩ mũno wĩanĩ wa kũngam nth",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kwa-w-o-e-na-kithito-kingi-muno-wiani-wa-kungam-nth.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kwa-w-o-e-na-kithito-kingi-muno-wiani-wa-kungam-nth.opus"
         },
         {
           "english": "Some are in normal casual clothes, while others are in uniform.",
           "translation": "amwe mekĩĩte ngũa ite sya lasima namo angĩ mekĩĩte ngũa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/amwe-mekiite-ngua-ite-sya-lasima-namo-angi-mekiite-ngua.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/amwe-mekiite-ngua-ite-sya-lasima-namo-angi-mekiite-ngua.opus"
         },
         {
           "english": "The day I step there with Kenneth.",
           "translation": "mũthenya ũla ngaathi vau nna kenneth",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muthenya-ula-ngaathi-vau-nna-kenneth.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muthenya-ula-ngaathi-vau-nna-kenneth.opus"
         },
         {
           "english": "Probably the first zero is missing so the number is incomplete.",
           "translation": "vathei mwe vo kwoou nĩvatonyeka ũkethĩa namba su teyonze",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/vathei-mwe-vo-kwoou-nivatonyeka-ukethia-namba-su-teyonze.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/vathei-mwe-vo-kwoou-nivatonyeka-ukethia-namba-su-teyonze.opus"
         },
         {
           "english": "His declaration that he was running for president lit the internet on fire, even as pundits were trying to discern how serious he was.",
           "translation": "ndeto' ila neenie sya kwasya onake nkkita kvla kya sumb syakanisye mwaki mavoo ma nzeven o ymwe na and maiseng'a kana ou n waw'o",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ndeto-ila-neenie-sya-kwasya-onake-nkkita-kvla-kya-sumb-syakanisy.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ndeto-ila-neenie-sya-kwasya-onake-nkkita-kvla-kya-sumb-syakanisy.opus"
         },
         {
           "english": "Let us practice and live that unalienable truth.",
           "translation": "twvundisye kwka na kwkala na w'o su tavndwa n knd",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/twvundisye-kwka-na-kwkala-na-w-o-su-tavndwa-n-knd.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/twvundisye-kwka-na-kwkala-na-w-o-su-tavndwa-n-knd.opus"
         },
         {
           "english": "You might need an eye check up?",
           "translation": "nũtonya kwĩthĩwa ũyenda kũsiw'a metho",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nutonya-kwithiwa-uyenda-kusiw-a-metho.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nutonya-kwithiwa-uyenda-kusiw-a-metho.opus"
         },
         {
           "english": "Review how right or how wrong the position was.",
           "translation": "kkunkla thku kana seo wa two su",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kkunkla-thku-kana-seo-wa-two-su.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kkunkla-thku-kana-seo-wa-two-su.opus"
         },
         {
           "english": "She died a painful death, forgotten and desolate. I saw her at the National Spinal Injury Hospital at her lowest.",
           "translation": "akwie kĩkw'ũ kĩ woo mũno ateũlilikanaa mũndũ o na ũmwe nĩnamwonie e mũwau mũno e sivitalĩ ya national spinal injury",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/akwie-kikw-u-ki-woo-muno-ateulilikanaa-mundu-o-na-umwe-ninamwoni.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/akwie-kikw-u-ki-woo-muno-ateulilikanaa-mundu-o-na-umwe-ninamwoni.opus"
         },
         {
           "english": "She worked very hard for food.",
           "translation": "anathukumie mun nundu wa leu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/anathukumie-mun-nundu-wa-leu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/anathukumie-mun-nundu-wa-leu.opus"
         },
         {
           "english": "His daughter fought me.",
           "translation": "mwiitu wake nunambukitie",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/mwiitu-wake-nunambukitie.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/mwiitu-wake-nunambukitie.opus"
         },
         {
           "english": "People will be brought together more by ideas not tribe.",
           "translation": "andũ makatanĩa kwĩthĩwa vamwe nũndũ wa mawoni moo ĩndĩ ti nũndũ wa mbaĩ syoo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-makatania-kwithiwa-vamwe-nundu-wa-mawoni-moo-indi-ti-nundu-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-makatania-kwithiwa-vamwe-nundu-wa-mawoni-moo-indi-ti-nundu-.opus"
         },
         {
           "english": "Who can help you do that?",
           "translation": "nũũ ũtonya kũũtetheesya wĩke ũu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nuu-utonya-kuutetheesya-wike-uu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nuu-utonya-kuutetheesya-wike-uu.opus"
         },
         {
           "english": "The ball hits the bar and comes back into play.",
           "translation": "ĩla mũvĩla wesa kũkiita mũsinga ũsyokaa ĩngĩ ĩthaũnĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ila-muvila-wesa-kukiita-musinga-usyokaa-ingi-ithauni.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ila-muvila-wesa-kukiita-musinga-usyokaa-ingi-ithauni.opus"
         },
         {
           "english": "Innocent.",
           "translation": "nĩ mũndũ ũte na ĩvĩtyo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-mundu-ute-na-ivityo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-mundu-ute-na-ivityo.opus"
         },
         {
           "english": "Should we help her out?",
           "translation": "nĩtwaĩle kũmũtethya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nitwaile-kumutethya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nitwaile-kumutethya.opus"
         },
         {
           "english": "They exist.",
           "translation": "syũmbe isu syĩ thayũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/syumbe-isu-syi-thayu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/syumbe-isu-syi-thayu.opus"
         },
         {
           "english": "I was so cute when I was a baby my Mum said people used to think I was..humm",
           "translation": "ĩla naĩ mũnini naĩ mwanake mũno na inyia wakwa aisye kana andũ masũanĩaa nĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ila-nai-munini-nai-mwanake-muno-na-inyia-wakwa-aisye-kana-andu-m.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ila-nai-munini-nai-mwanake-muno-na-inyia-wakwa-aisye-kana-andu-m.opus"
         },
         {
           "english": "I am sure creators outside Kenya make content that does not rub off badly on us just to be on the safe side, you know.",
           "translation": "nĩnĩsĩ nesa vyũ kana andũ ala maumasya syĩndũ sya kũseũvya ala mate ma kenya nĩmaumasya syĩndũ iteũtũũmĩsya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninisi-nesa-vyu-kana-andu-ala-maumasya-syindu-sya-kuseuvya-ala-m.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninisi-nesa-vyu-kana-andu-ala-maumasya-syindu-sya-kuseuvya-ala-m.opus"
         },
         {
           "english": "Congressman Lewis called it Good trouble.",
           "translation": "mũũngamĩi wa kyama kya congress lewis eetie ũndũ ũsu mathĩna maseo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muungamii-wa-kyama-kya-congress-lewis-eetie-undu-usu-mathina-mas.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muungamii-wa-kyama-kya-congress-lewis-eetie-undu-usu-mathina-mas.opus"
         },
         {
           "english": "You touch whatever side which you desire.",
           "translation": "no ũtate kũkiita ngalĩko ĩla ũkwenda",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/no-utate-kukiita-ngaliko-ila-ukwenda.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/no-utate-kukiita-ngaliko-ila-ukwenda.opus"
         },
         {
           "english": "Let's ask for directions!",
           "translation": "tukulye nzia",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/tukulye-nzia.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/tukulye-nzia.opus"
         },
         {
           "english": "I also noticed you didn’t use the term “halali “and instead used “fake”.",
           "translation": "o na ĩngĩ nĩnonete kana ndeto ĩla yatũmĩĩtwe kũelesya ũndũ ũilyĩ ta  w'o vatili wa vathei",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-ingi-ninonete-kana-ndeto-ila-yatumiitwe-kuelesya-undu-uilyi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-ingi-ninonete-kana-ndeto-ila-yatumiitwe-kuelesya-undu-uilyi.opus"
         },
         {
           "english": "I only noticed how proud he is of his humility.",
           "translation": "kĩla noonie no ũndũ we mwene weenyivĩtye",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kila-noonie-no-undu-we-mwene-weenyivitye.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kila-noonie-no-undu-we-mwene-weenyivitye.opus"
         },
         {
           "english": "The hit-maker appreciates support she has received from fans and family",
           "translation": "mwĩĩtu-a-asa ũsu wĩ nguma nĩwatũngĩaa mũvea mũno nũndũ wa kũtetheew'a nĩ endwa make na andũ ma mũsyĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/mwiitu-a-asa-usu-wi-nguma-niwatungiaa-muvea-muno-nundu-wa-kuteth.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/mwiitu-a-asa-usu-wi-nguma-niwatungiaa-muvea-muno-nundu-wa-kuteth.opus"
         },
         {
           "english": "Some critics like Gore advisor Bruce Jentelson worry that the Bush team will be out of step with today's issues.",
           "translation": "andũ amwe ta bruce jentelson ũla waĩ mũtai wa gore nĩmathĩnĩkaa mũno mayona ta ũtonya kũvĩndũa woni wa ala maũngamĩe silikalĩ ya bush",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-amwe-ta-bruce-jentelson-ula-wai-mutai-wa-gore-nimathinikaa-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-amwe-ta-bruce-jentelson-ula-wai-mutai-wa-gore-nimathinikaa-.opus"
         },
         {
           "english": "Truck drivers are the most affected group as new coronavirus cases are being reported",
           "translation": "ndeleva sya maloli nikyo kikundi kinene  kya al meukwatwa uwau wa korona kmana na livoti sya yu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ndeleva-sya-maloli-nikyo-kikundi-kinene-kya-al-meukwatwa-uwau-wa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ndeleva-sya-maloli-nikyo-kikundi-kinene-kya-al-meukwatwa-uwau-wa.opus"
         },
         {
           "english": "He decided to drop out of school.",
           "translation": "anamuiye kukola sukulu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/anamuiye-kukola-sukulu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/anamuiye-kukola-sukulu.opus"
         },
         {
           "english": "This particular pollution is best known for exacerbating asthma symptoms,",
           "translation": "ũthuku ũsu wĩ nguma mũno nũndũ nũtumaa mũndũ ethĩwa na ũwau wa asthma",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/uthuku-usu-wi-nguma-muno-nundu-nutumaa-mundu-ethiwa-na-uwau-wa-a.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/uthuku-usu-wi-nguma-muno-nundu-nutumaa-mundu-ethiwa-na-uwau-wa-a.opus"
         },
         {
           "english": "What if someone is preparing propaganda against you?",
           "translation": "nao nata mũndũ akambĩĩa kũkũneeny'a naĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nao-nata-mundu-akambiia-kukuneeny-a-nai.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nao-nata-mundu-akambiia-kukuneeny-a-nai.opus"
         },
         {
           "english": "It's case of having wrong people in right places.",
           "translation": "nĩ ũndũ wa kwikia andũ ala matale knd kla kwale",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-undu-wa-kwikia-andu-ala-matale-knd-kla-kwale.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-undu-wa-kwikia-andu-ala-matale-knd-kla-kwale.opus"
         },
         {
           "english": "The first people who came screaming are not Raila's people, they were state House operatives led by Murathe a common man.",
           "translation": "andũ ala mookie mbee na maĩa mayaĩ andũ ma raila ĩndĩ maĩ athũkũmi ma nyũmba ya ũsumbĩ matongoew'e nĩ murathe ũla waĩ mũndũ wa kĩlasi kya nthĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-ala-mookie-mbee-na-maia-mayai-andu-ma-raila-indi-mai-athuku.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-ala-mookie-mbee-na-maia-mayai-andu-ma-raila-indi-mai-athuku.opus"
         },
         {
           "english": "He has very high fever.",
           "translation": "ena ũvyũvu mwingĩ mũno",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ena-uvyuvu-mwingi-muno.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ena-uvyuvu-mwingi-muno.opus"
         },
         {
           "english": "Idealism with politics requires the persona of the likes of Jacob.",
           "translation": "nĩ kana mũndũ ethĩwe na woni ũla waĩle ĩũlũ wa siasa no nginya ethĩwe na mũndũ ũilyĩ ta yakovo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-kana-mundu-ethiwe-na-woni-ula-waile-iulu-wa-siasa-no-nginya-e.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-kana-mundu-ethiwe-na-woni-ula-waile-iulu-wa-siasa-no-nginya-e.opus"
         },
         {
           "english": "I am drunk in a Harvard bathroom.",
           "translation": "nĩnĩnyw'ĩte mũno nĩ ũtee wa nyũmba ya kũthambĩa ya harvard",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nininyw-ite-muno-ni-utee-wa-nyumba-ya-kuthambia-ya-harvard.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nininyw-ite-muno-ni-utee-wa-nyumba-ya-kuthambia-ya-harvard.opus"
         },
         {
           "english": "Some will be terrified because of how great and swift it is.",
           "translation": "andũ amwe nĩmatonya kũkwatwa nĩ wia nũndũ wa ũndũ yĩthĩawa yĩ nene na yĩ na vinya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-amwe-nimatonya-kukwatwa-ni-wia-nundu-wa-undu-yithiawa-yi-ne.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-amwe-nimatonya-kukwatwa-ni-wia-nundu-wa-undu-yithiawa-yi-ne.opus"
         },
         {
           "english": "Fantastic.",
           "translation": "nĩ ũndũ mũseo mũno",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-undu-museo-muno.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-undu-museo-muno.opus"
         },
         {
           "english": "You could say the same about them.",
           "translation": "no wasye o namo mailyĩ ũu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/no-wasye-o-namo-mailyi-uu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/no-wasye-o-namo-mailyi-uu.opus"
         },
         {
           "english": "It's too much, we can still have a great connection outside the house.",
           "translation": "o na kau nĩ ũndũ wĩ vinya kwĩka ũu no tũendeee kwĩthĩwa na ngwatanĩo nzeo nza wa nyũmba",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-kau-ni-undu-wi-vinya-kwika-uu-no-tuendeee-kwithiwa-na-ngwat.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-kau-ni-undu-wi-vinya-kwika-uu-no-tuendeee-kwithiwa-na-ngwat.opus"
         },
         {
           "english": "A screenshot from Temu's commercial unveiled during the Super Bowl encouraging consumers to shop like a billionaire.",
           "translation": "visa wa ũndũ temu wathanaa ĩla super bowl ĩendeee kuwa syĩndũ t athui",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/visa-wa-undu-temu-wathanaa-ila-super-bowl-iendeee-kuwa-syindu-t-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/visa-wa-undu-temu-wathanaa-ila-super-bowl-iendeee-kuwa-syindu-t-.opus"
         },
         {
           "english": "Happy Father’s Day to all Fathers here!",
           "translation": "mũthenya mũseo wa asa kwa aaĩthe onthe ala me vaa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muthenya-museo-wa-asa-kwa-aaithe-onthe-ala-me-vaa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muthenya-museo-wa-asa-kwa-aaithe-onthe-ala-me-vaa.opus"
         },
         {
           "english": "You have to be careful, though.",
           "translation": "ĩndĩ nĩwaĩle kwĩthĩwa wĩ metho o na kau",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/indi-niwaile-kwithiwa-wi-metho-o-na-kau.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/indi-niwaile-kwithiwa-wi-metho-o-na-kau.opus"
         },
         {
           "english": "How the current trend has shown that younger judges are being appointed to influence for a longer period and SC judges are retiring much later than before.",
           "translation": "nĩ kyaũ kĩtumĩte twona kana ũmũnthĩ asili ala me na ũkũũ wa katĩ wa myaka ĩkũmi na kĩndũ nĩmanyuvawa kwa ĩvinda ĩasa namo ala me na ũkũũ wa katĩ wa myaka ĩkũmi na kĩndũ nĩmaekaa kũthũkũma ĩtina wa ĩvinda yĩasa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-kyau-kitumite-twona-kana-umunthi-asili-ala-me-na-ukuu-wa-kati.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-kyau-kitumite-twona-kana-umunthi-asili-ala-me-na-ukuu-wa-kati.opus"
         },
         {
           "english": "Since the guards have been refusing to cooperate with those involved in the syndicate.",
           "translation": "kuma ĩla asungi asu maleile kũtetheanĩsya na ala maĩ nzamanĩ ĩsu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kuma-ila-asungi-asu-maleile-kutetheanisya-na-ala-mai-nzamani-isu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kuma-ila-asungi-asu-maleile-kutetheanisya-na-ala-mai-nzamani-isu.opus"
         },
         {
           "english": "Each of these items is covered in the Transfer Agreement quite clearly.",
           "translation": "maũndũ asu onthe nĩmonanĩtw'e nesa nthĩnĩ wa ũtianĩo ũsu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/maundu-asu-onthe-nimonanitw-e-nesa-nthini-wa-utianio-usu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/maundu-asu-onthe-nimonanitw-e-nesa-nthini-wa-utianio-usu.opus"
         },
         {
           "english": "Any Egyptian friend here on this channel? Any Egyptian friend here on this channel?",
           "translation": "ve munyanyae wa kma egypt kikundini kii",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ve-munyanyae-wa-kma-egypt-kikundini-kii.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ve-munyanyae-wa-kma-egypt-kikundini-kii.opus"
         },
         {
           "english": "I am not optimistic though seeing how the judiciary has been hamstrung.",
           "translation": "ona vailyĩ ũu ndyĩw'aa nĩ mwĩanĩe nũndũ wa kwona ũndũ sila wa katĩ ũendeee kwanangĩka",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ona-vailyi-uu-ndyiw-aa-ni-mwianie-nundu-wa-kwona-undu-sila-wa-ka.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ona-vailyi-uu-ndyiw-aa-ni-mwianie-nundu-wa-kwona-undu-sila-wa-ka.opus"
         },
         {
           "english": "We belong up there, among the very best.",
           "translation": "tw ma nth no tanene na aang ala aseo vy",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/tw-ma-nth-no-tanene-na-aang-ala-aseo-vy.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/tw-ma-nth-no-tanene-na-aang-ala-aseo-vy.opus"
         },
         {
           "english": "Have a seat.",
           "translation": "ĩkala nthĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ikala-nthi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ikala-nthi.opus"
         },
         {
           "english": "And said the government’s ban constituted “a declaration to destroy the church once and for all”.",
           "translation": "na asya kana kũsiĩĩwa kũu kwaũngamĩwe nĩ silikalĩ nĩkwatumie makanisa asu manangwa tene na tene",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/na-asya-kana-kusiiiwa-kuu-kwaungamiwe-ni-silikali-nikwatumie-mak.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/na-asya-kana-kusiiiwa-kuu-kwaungamiwe-ni-silikali-nikwatumie-mak.opus"
         },
         {
           "english": "There's a rising number of coronavirus cases in Uganda daily",
           "translation": "vena kwingv kwa uwau wa korona nthi ya uganda kila muthenya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/vena-kwingv-kwa-uwau-wa-korona-nthi-ya-uganda-kila-muthenya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/vena-kwingv-kwa-uwau-wa-korona-nthi-ya-uganda-kila-muthenya.opus"
         },
         {
           "english": "Have a successful day everyone, won't you?",
           "translation": "ithwai na muthenya wa mand maseoni mukwithwa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ithwai-na-muthenya-wa-mand-maseoni-mukwithwa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ithwai-na-muthenya-wa-mand-maseoni-mukwithwa.opus"
         },
         {
           "english": "Also do you need a thermometer if you have a thermal scanner?",
           "translation": "na ethĩwa wĩ na thermometer ve vata wa kũtũmĩa thermometer",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/na-ethiwa-wi-na-thermometer-ve-vata-wa-kutumia-thermometer.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/na-ethiwa-wi-na-thermometer-ve-vata-wa-kutumia-thermometer.opus"
         },
         {
           "english": "Afrobeat history, millions can only sit, watch and learn from a woman who decided to be defiantly herself,",
           "translation": "andũ milioni mbingĩ no mekale nthĩ masyaĩĩsye na mayĩmanyĩsya kuma kwa mũndũ mũka ũmwe watwie kwĩthĩwa e kyũmbe kyake",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-milioni-mbingi-no-mekale-nthi-masyaiisye-na-mayimanyisya-ku.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-milioni-mbingi-no-mekale-nthi-masyaiisye-na-mayimanyisya-ku.opus"
         },
         {
           "english": "You cannot put the lives of millions of us in danger and run away with it.",
           "translation": "ndwĩsa kũlikya thayũ wa andũ milioni mbingĩ mũisyonĩ na ũisemba",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ndwisa-kulikya-thayu-wa-andu-milioni-mbingi-muisyoni-na-uisemba.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ndwisa-kulikya-thayu-wa-andu-milioni-mbingi-muisyoni-na-uisemba.opus"
         },
         {
           "english": "Before they showed a ruthless streak to punish Arsenal.",
           "translation": "mbee wa kwonany'a kana maĩ na wendi mwingĩ wa kũsilĩla arsenal",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/mbee-wa-kwonany-a-kana-mai-na-wendi-mwingi-wa-kusilila-arsenal.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/mbee-wa-kwonany-a-kana-mai-na-wendi-mwingi-wa-kusilila-arsenal.opus"
         },
         {
           "english": "Dear God, two wome ... he is courageous.",
           "translation": "ngai wakwa mũndũ mũka ũsu aĩ na ũkũmbaũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngai-wakwa-mundu-muka-usu-ai-na-ukumbau.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngai-wakwa-mundu-muka-usu-ai-na-ukumbau.opus"
         },
         {
           "english": "We acknowledge that and recognise him as a politician of great promise.",
           "translation": "nĩtwĩsĩ ũu na nĩtwĩsĩ kana nĩ mũtongoi wĩ ũtonyi mwingĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nitwisi-uu-na-nitwisi-kana-ni-mutongoi-wi-utonyi-mwingi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nitwisi-uu-na-nitwisi-kana-ni-mutongoi-wi-utonyi-mwingi.opus"
         },
         {
           "english": "We are well trained to campaign aggresively.",
           "translation": "nĩtũmanyĩĩtw'e kũkna kambeini twĩ na ũkũmbaũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nitumanyiitw-e-kukna-kambeini-twi-na-ukumbau.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nitumanyiitw-e-kukna-kambeini-twi-na-ukumbau.opus"
         },
         {
           "english": "Yes we are thankful.",
           "translation": "niwo nitutunga muvea",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niwo-nitutunga-muvea.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niwo-nitutunga-muvea.opus"
         },
         {
           "english": "Proponents of safety seats are turning up the heat on the FAA.",
           "translation": "andũ ala makwataa mbau ivĩla sya kũsiĩĩa mĩisyo nĩmatataa mũno kũsiĩĩa mũvĩa wa kũsiĩĩa mĩisyo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-ala-makwataa-mbau-ivila-sya-kusiiia-miisyo-nimatataa-muno-k.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-ala-makwataa-mbau-ivila-sya-kusiiia-miisyo-nimatataa-muno-k.opus"
         },
         {
           "english": "Completely unnecessary talking this much sense in the morning.",
           "translation": "ti lasima tũneene mũno wĩana ũu kwakya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ti-lasima-tuneene-muno-wiana-uu-kwakya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ti-lasima-tuneene-muno-wiana-uu-kwakya.opus"
         },
         {
           "english": "Secondly, it's easy to point to a number of persons who will have leading positions who have had extensive experience in East Asian affairs.",
           "translation": "ũndũ wa kelĩ nĩ laisi mũno kwona andũ me na ũmanyi mwingĩ maũndũnĩ ma ngali ya meloni wa sua wa asia",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/undu-wa-keli-ni-laisi-muno-kwona-andu-me-na-umanyi-mwingi-maundu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/undu-wa-keli-ni-laisi-muno-kwona-andu-me-na-umanyi-mwingi-maundu.opus"
         },
         {
           "english": "After the revelations I made yesterday while addressing the public.",
           "translation": "ĩtina wa kũvuany'a maũndũ ala neekie ĩyoo nĩneena na andũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/itina-wa-kuvuany-a-maundu-ala-neekie-iyoo-nineena-na-andu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/itina-wa-kuvuany-a-maundu-ala-neekie-iyoo-nineena-na-andu.opus"
         },
         {
           "english": "Scientists are finding more and more evidence",
           "translation": "andũ ma saenzi nĩmaendeee kũkwata maũndũ maingĩ maĩkĩĩthasya kana nd su n wa w'o",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-ma-saenzi-nimaendeee-kukwata-maundu-maingi-maikiithasya-kan.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-ma-saenzi-nimaendeee-kukwata-maundu-maingi-maikiithasya-kan.opus"
         },
         {
           "english": "His chief advantage in the fight: his intimate knowledge of American ways and weaknesses.",
           "translation": "ũndũ ũla wamũtetheeisye mũno kaũnĩ ũsu nĩ kũmanya nesa ũndũ amelika yendete kaũ na mawonzu mayo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/undu-ula-wamutetheeisye-muno-kauni-usu-ni-kumanya-nesa-undu-amel.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/undu-ula-wamutetheeisye-muno-kauni-usu-ni-kumanya-nesa-undu-amel.opus"
         },
         {
           "english": "He was buying the loyalty of government officials.",
           "translation": "aũme asu meethĩawa mekĩte ũu nĩ kana monany'e ndaĩa kwa athũkũmi ma silikalĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/aume-asu-meethiawa-mekite-uu-ni-kana-monany-e-ndaia-kwa-athukumi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/aume-asu-meethiawa-mekite-uu-ni-kana-monany-e-ndaia-kwa-athukumi.opus"
         },
         {
           "english": "Hopefully we improve and I think we will and in three weeks time we can take the game at Stamford Bridge.",
           "translation": "nĩĩkwatya nĩtũkũendeea nesa na ĩtina wa syumwa itatũ no tũsinde ĩthaũnĩ ya stamford bridge",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niikwatya-nitukuendeea-nesa-na-itina-wa-syumwa-itatu-no-tusinde-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niikwatya-nitukuendeea-nesa-na-itina-wa-syumwa-itatu-no-tusinde-.opus"
         },
         {
           "english": "Mr. Briggs, on vacation after resigning his position at the National Security Council, couldn't be reached for comment.",
           "translation": "nĩnĩsĩ ũu briggs ũla waĩ savalĩnĩ ĩtina wa kũtia kĩanda kyake nthĩnĩ wa nzama ya ũsũvĩo wa nthĩ yonthe ndaaĩsa kũtavw'a ũndũ ũkwĩka",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninisi-uu-briggs-ula-wai-savalini-itina-wa-kutia-kianda-kyake-nt.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninisi-uu-briggs-ula-wai-savalini-itina-wa-kutia-kianda-kyake-nt.opus"
         },
         {
           "english": "As their protests resulted in destruction of property of unknown value.",
           "translation": "o na ĩngĩ andũ asu nĩmaanangie syĩndũ sya thooa mũnene",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-ingi-andu-asu-nimaanangie-syindu-sya-thooa-munene.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-ingi-andu-asu-nimaanangie-syindu-sya-thooa-munene.opus"
         },
         {
           "english": "We are anticipating turbulent times ahead as a country.",
           "translation": "twĩna ĩvinda ya thĩna ta nthĩ ĩno vnda ykte",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/twina-ivinda-ya-thina-ta-nthi-ino-vnda-ykte.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/twina-ivinda-ya-thina-ta-nthi-ino-vnda-ykte.opus"
         },
         {
           "english": "The constitutional amendments and anything else that has been canvassed in the legislative houses has had little to do with improving the livelihoods of the common citizen.",
           "translation": "maũndũ ala mawetetwe makonetye kũvĩndũa mĩao ya nthĩ na maũndũ angĩ ala maneeneawa nĩ nzama sya mĩao mayaĩ matonya kũete moalyũku manene maũndũnĩ ma andũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/maundu-ala-mawetetwe-makonetye-kuvindua-miao-ya-nthi-na-maundu-a.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/maundu-ala-mawetetwe-makonetye-kuvindua-miao-ya-nthi-na-maundu-a.opus"
         },
         {
           "english": "Good stories take time.",
           "translation": "ngewa sya kũtanĩthya syakwataa ĩvinda",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngewa-sya-kutanithya-syakwataa-ivinda.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngewa-sya-kutanithya-syakwataa-ivinda.opus"
         },
         {
           "english": "My encounter with corona was most unexpected.",
           "translation": "ĩla nakomanie na ũwau ũsu ndyaĩ naasũanĩa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ila-nakomanie-na-uwau-usu-ndyai-naasuania.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ila-nakomanie-na-uwau-usu-ndyai-naasuania.opus"
         },
         {
           "english": "It allows you to use your mobile phone for the day to day school operations.",
           "translation": "yitikilathasya ktmia sim mawiani ma skl",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/yitikilathasya-ktmia-sim-mawiani-ma-skl.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/yitikilathasya-ktmia-sim-mawiani-ma-skl.opus"
         },
         {
           "english": "Saddened by the loss of a colleague and her mother to Covid so sad let's be vigilant",
           "translation": "nĩ na kyeva nũndũ wa kũkw'ĩĩwa nĩ mũndũ twathũkũmaa ĩmwe na inyia wake nũndũ wa ũwau wa covid",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-na-kyeva-nundu-wa-kukw-iiwa-ni-mundu-twathukumaa-imwe-na-inyi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-na-kyeva-nundu-wa-kukw-iiwa-ni-mundu-twathukumaa-imwe-na-inyi.opus"
         },
         {
           "english": "Fella Kuti once said, people don't eat numbers.",
           "translation": "fella kuti vinda ymwe aisye kana andũ mayĩsaa namba",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/fella-kuti-vinda-ymwe-aisye-kana-andu-mayisaa-namba.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/fella-kuti-vinda-ymwe-aisye-kana-andu-mayisaa-namba.opus"
         },
         {
           "english": "I do know that this is the same narrative men try to push thru like the 'women are their worst enemies' nonsense!",
           "translation": "nĩnĩsĩ kana ndeto isu nĩsyo aũme matũmĩaa kũelesya andũ kana aka nĩmo amaitha moo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninisi-kana-ndeto-isu-nisyo-aume-matumiaa-kuelesya-andu-kana-aka.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninisi-kana-ndeto-isu-nisyo-aume-matumiaa-kuelesya-andu-kana-aka.opus"
         },
         {
           "english": "He also tells her some stories about his personal life.",
           "translation": "o na nĩwaneenaa nake ĩũlũ wa maũndũ amwe make",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-niwaneenaa-nake-iulu-wa-maundu-amwe-make.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-niwaneenaa-nake-iulu-wa-maundu-amwe-make.opus"
         },
         {
           "english": "Did I miss any successful prosecution?",
           "translation": "nĩnavĩtĩw'e nĩ ũndũ mũna",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninavitiw-e-ni-undu-muna.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninavitiw-e-ni-undu-muna.opus"
         },
         {
           "english": "I thought I was supposed to be a doctor.",
           "translation": "nslasya kana nyie naltwe kwthwa ndakĩtalĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nslasya-kana-nyie-naltwe-kwthwa-ndakitali.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nslasya-kana-nyie-naltwe-kwthwa-ndakitali.opus"
         },
         {
           "english": "The god of our age; materialism has blurred this truth.",
           "translation": "ngai wa ĩvinda yĩĩ yitũ wendi wa malĩ nũtumĩte ũw'o ũsu wĩthĩwa wĩ wa ũvũngũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngai-wa-ivinda-yii-yitu-wendi-wa-mali-nutumite-uw-o-usu-withiwa-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngai-wa-ivinda-yii-yitu-wendi-wa-mali-nutumite-uw-o-usu-withiwa-.opus"
         },
         {
           "english": "Other temperature data show similar unexplained swings.",
           "translation": "ve o maũndũ angĩ monanĩtye kana nzeve ĩsu nĩvĩndũkaa kwa nzĩa o ĩsu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ve-o-maundu-angi-monanitye-kana-nzeve-isu-nivindukaa-kwa-nzia-o-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ve-o-maundu-angi-monanitye-kana-nzeve-isu-nivindukaa-kwa-nzia-o-.opus"
         },
         {
           "english": "The relationship between your government and we the People became irretrievably broken down.",
           "translation": "ngwatanĩo katĩ wa silikalĩ yenyu na andũ ma ngai nĩyaanangĩkie vyũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngwatanio-kati-wa-silikali-yenyu-na-andu-ma-ngai-niyaanangikie-v.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngwatanio-kati-wa-silikali-yenyu-na-andu-ma-ngai-niyaanangikie-v.opus"
         },
         {
           "english": "Our obsession with politics when we can’t provide healthcare to our people.",
           "translation": "o na kau andũ maitũ mayĩthĩawa na ũsũvĩo wa ũiiti nĩtwĩthĩawa na wendi mwingĩ wa siasa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-kau-andu-maitu-mayithiawa-na-usuvio-wa-uiiti-nitwithiawa-na.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-kau-andu-maitu-mayithiawa-na-usuvio-wa-uiiti-nitwithiawa-na.opus"
         },
         {
           "english": "She added that the two had apparently been having marital problems due to Githua's drunkenness",
           "translation": "o na asyokie asya kana andũ asu elĩ maĩ na mathĩna ma mũtwaano nũndũ wa githua kũnyw'a mũno",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-asyokie-asya-kana-andu-asu-eli-mai-na-mathina-ma-mutwaano-n.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-asyokie-asya-kana-andu-asu-eli-mai-na-mathina-ma-mutwaano-n.opus"
         },
         {
           "english": "Kyle Lafferty has been backed to re-discover his form at Linfield by boss David Healy.",
           "translation": "kyle lafferty nĩwatetheeiw'e nĩ mũnene wake david healy nĩ kana atũngĩĩe vinya wake linfield",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kyle-lafferty-niwatetheeiw-e-ni-munene-wake-david-healy-ni-kana-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kyle-lafferty-niwatetheeiw-e-ni-munene-wake-david-healy-ni-kana-.opus"
         },
         {
           "english": "Whoever is in jail in Sengal is there because they committed a crime",
           "translation": "ala me kolokolon  sengal mekalĩte nũndũ nĩmeekie naĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ala-me-kolokolon-sengal-mekalite-nundu-nimeekie-nai.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ala-me-kolokolon-sengal-mekalite-nundu-nimeekie-nai.opus"
         },
         {
           "english": "And threats to our multi-party politics, all perpetuated by the JUDA administration.",
           "translation": "o na ĩngĩ silikalĩ ya juda nĩyambĩĩie kũthĩny'a andũ aingĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-ingi-silikali-ya-juda-niyambiiie-kuthiny-a-andu-aingi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-ingi-silikali-ya-juda-niyambiiie-kuthiny-a-andu-aingi.opus"
         },
         {
           "english": "The fact that the losing presidential candidate can't fall back on a Senate, Cabinet, or Governorship means that the system kicks out older politicians.",
           "translation": "nũndũ mũndũ ũla ũkwĩtya mwanya wa kũsumbĩka ndesa kwĩthĩwa e wa nzama ĩla ĩtongoesye kana e wa kamitii ya ũvonge ũu wĩonany'a kana nthĩ ĩno nĩleaa andũ ala akũũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nundu-mundu-ula-ukwitya-mwanya-wa-kusumbika-ndesa-kwithiwa-e-wa-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nundu-mundu-ula-ukwitya-mwanya-wa-kusumbika-ndesa-kwithiwa-e-wa-.opus"
         },
         {
           "english": "I think she offers him advice on how to ignore the constitution.",
           "translation": "no nasye kana amũtavasya ũndũ ũtonya kũvũthĩĩsya mĩao ya silikalĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/no-nasye-kana-amutavasya-undu-utonya-kuvuthiisya-miao-ya-silikal.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/no-nasye-kana-amutavasya-undu-utonya-kuvuthiisya-miao-ya-silikal.opus"
         },
         {
           "english": "This is a disaster.",
           "translation": "ũsu nĩ mũisyo mũnene",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/usu-ni-muisyo-munene.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/usu-ni-muisyo-munene.opus"
         },
         {
           "english": "You think your parents don't know?",
           "translation": "woona asyai maku ta matesi",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/woona-asyai-maku-ta-matesi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/woona-asyai-maku-ta-matesi.opus"
         },
         {
           "english": "Can I afford this program?",
           "translation": "ndonya kumya mbesa siana ata kwondũ wa mũvango ũũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ndonya-kumya-mbesa-siana-ata-kwondu-wa-muvango-uu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ndonya-kumya-mbesa-siana-ata-kwondu-wa-muvango-uu.opus"
         },
         {
           "english": "The FAA encourages the use of safety seats, but in the past many parents have run into problems trying to use them,",
           "translation": "ũkunĩkĩli wa faa wĩonany'a kana asyai aingĩ nĩmakwatawa nĩ mathĩna ĩla mekũtata kũtũmĩa nzĩa syĩ kĩvathũkany'o sya kũsiĩĩa syana syoo iikelikye mũisyonĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ukunikili-wa-faa-wionany-a-kana-asyai-aingi-nimakwatawa-ni-mathi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ukunikili-wa-faa-wionany-a-kana-asyai-aingi-nimakwatawa-ni-mathi.opus"
         },
         {
           "english": "And the information of the alleged impending arrest went viral on social media platforms.",
           "translation": "na ũvoo ĩũlũ wa kũawa kwa mũndũ ũsu nĩwatambĩĩie kũtangaasawa mũno isesenĩ sya kũea ngewa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/na-uvoo-iulu-wa-kuawa-kwa-mundu-usu-niwatambiiie-kutangaasawa-mu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/na-uvoo-iulu-wa-kuawa-kwa-mundu-usu-niwatambiiie-kutangaasawa-mu.opus"
         },
         {
           "english": "And more research would be needed to see whether there would be a difference among diverse populations.",
           "translation": "na ve vata wa kwĩka ũkunĩkĩli mwingĩ nĩ kana tũmanye kana andũ me kĩvathũkany'o no methĩwe na kĩvathũkany'o",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/na-ve-vata-wa-kwika-ukunikili-mwingi-ni-kana-tumanye-kana-andu-m.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/na-ve-vata-wa-kwika-ukunikili-mwingi-ni-kana-tumanye-kana-andu-m.opus"
         },
         {
           "english": "So what exactly is your issue with that name?",
           "translation": "kwoou-ĩ we wonaa ĩsyĩtwa yĩu yĩtonya kũũtethya ata",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kwoou-i-we-wonaa-isyitwa-yiu-yitonya-kuutethya-ata.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kwoou-i-we-wonaa-isyitwa-yiu-yitonya-kuutethya-ata.opus"
         },
         {
           "english": "Let's see if you will make it next time.",
           "translation": "ekai twone ethĩwa ĩvinda yĩla ykte ũkeeka ũu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ekai-twone-ethiwa-ivinda-yila-ykte-ukeeka-uu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ekai-twone-ethiwa-ivinda-yila-ykte-ukeeka-uu.opus"
         },
         {
           "english": "Incident told Igwe that I went to Michael's house a long time ago.",
           "translation": "kwa ngelekany'o igwe nĩwataviw'e nĩ mũsikalĩ ũmwe kana nĩnaendie kwa michael myaka mingĩ mĩvĩtu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kwa-ngelekany-o-igwe-niwataviw-e-ni-musikali-umwe-kana-ninaendie.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kwa-ngelekany-o-igwe-niwataviw-e-ni-musikali-umwe-kana-ninaendie.opus"
         },
         {
           "english": "I know that game!",
           "translation": "nĩnĩsĩ ĩthaũ yĩu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninisi-ithau-yiu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninisi-ithau-yiu.opus"
         },
         {
           "english": "Here, wedged between shifting dunes and pounding waves at the world's most inhospitable diamond dig, lies the earth's most precious jewel box.",
           "translation": "kĩtheka kĩu kĩ na mavia ma thooa mũnene mũno kĩũngamĩwe nĩ mavia ma thooa mũnene mũno ma thooa mũnene mũno",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kitheka-kiu-ki-na-mavia-ma-thooa-munene-muno-kiungamiwe-ni-mavia.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kitheka-kiu-ki-na-mavia-ma-thooa-munene-muno-kiungamiwe-ni-mavia.opus"
         },
         {
           "english": "He will appraise the panel on his intellectual and ethical prowess.",
           "translation": "nĩwe ũkasilĩlaa kamitii ĩsu nũndũ wa ũmanyi wake na mwĩkalĩle wake",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niwe-ukasililaa-kamitii-isu-nundu-wa-umanyi-wake-na-mwikalile-wa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niwe-ukasililaa-kamitii-isu-nundu-wa-umanyi-wake-na-mwikalile-wa.opus"
         },
         {
           "english": "The old man pauses, clearly unwilling to help.",
           "translation": "mndume mukuu aungama atekwivitha ndaneenda kumutethya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/mndume-mukuu-aungama-atekwivitha-ndaneenda-kumutethya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/mndume-mukuu-aungama-atekwivitha-ndaneenda-kumutethya.opus"
         },
         {
           "english": "Carol, your opinion is needed, I am avoiding noise from the other neighbors.",
           "translation": "carol nĩ na vata wa kũmanya woni waku nĩnĩtataa ndikethĩwe na kĩlonzo kya atũi ala angĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/carol-ni-na-vata-wa-kumanya-woni-waku-ninitataa-ndikethiwe-na-ki.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/carol-ni-na-vata-wa-kumanya-woni-waku-ninitataa-ndikethiwe-na-ki.opus"
         },
         {
           "english": "It was great meeting you, have a lovely week ahead.",
           "translation": "nĩnatanie mũno kũkomana nakuithwa na kymwa kseo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninatanie-muno-kukomana-nakuithwa-na-kymwa-kseo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninatanie-muno-kukomana-nakuithwa-na-kymwa-kseo.opus"
         },
         {
           "english": "It's the only long lasting option",
           "translation": "nĩw'o ũndũ ũla ũtonya kũtũtethya kwa ĩvinda ĩasa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niw-o-undu-ula-utonya-kututethya-kwa-ivinda-iasa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niw-o-undu-ula-utonya-kututethya-kwa-ivinda-iasa.opus"
         },
         {
           "english": "New clothes.",
           "translation": "ngũa nzaũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngua-nzau.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngua-nzau.opus"
         },
         {
           "english": "There are increasing cases of violence throughout Uganda.",
           "translation": "ũng'endu nũendeee kwongeleka nthĩ ya uganda yonthe",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ung-endu-nuendeee-kwongeleka-nthi-ya-uganda-yonthe.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ung-endu-nuendeee-kwongeleka-nthi-ya-uganda-yonthe.opus"
         },
         {
           "english": "It is not shifting; it remains that they are not in cahoots.",
           "translation": "t l wa kvndka ĩndĩ o na ũu wĩ o vo mayĩthĩawa makanĩtw'e nĩ ngai",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/t-l-wa-kvndka-indi-o-na-uu-wi-o-vo-mayithiawa-makanitw-e-ni-ngai.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/t-l-wa-kvndka-indi-o-na-uu-wi-o-vo-mayithiawa-makanitw-e-ni-ngai.opus"
         },
         {
           "english": "He also called for further assistance in order to effectively operationalize the new office.",
           "translation": "o na ĩngĩ nĩwendaa andũ ma ngai matetheew'e nĩ kana wĩa ũsu ũtethw'e nesa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-ingi-niwendaa-andu-ma-ngai-matetheew-e-ni-kana-wia-usu-utet.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-ingi-niwendaa-andu-ma-ngai-matetheew-e-ni-kana-wia-usu-utet.opus"
         },
         {
           "english": "Don't worry, I have plenty for us.",
           "translation": "ndũkemakĩe nĩna syĩndũ mbingĩ itonya kũtũtethya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ndukemakie-nina-syindu-mbingi-itonya-kututethya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ndukemakie-nina-syindu-mbingi-itonya-kututethya.opus"
         },
         {
           "english": "Call me when you are ready to take action and bring the change we desire in how our history is portrayed.",
           "translation": "thi wmbta weethia wymbanitye kwka nd wa kete walyko la tkwenda wa nd ngewa yit tavanw'a",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/thi-wmbta-weethia-wymbanitye-kwka-nd-wa-kete-walyko-la-tkwenda-w.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/thi-wmbta-weethia-wymbanitye-kwka-nd-wa-kete-walyko-la-tkwenda-w.opus"
         },
         {
           "english": "If it matters at all, just know that I know you.",
           "translation": "ethĩwa wĩ na thĩna manya kana nyie nngws we",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ethiwa-wi-na-thina-manya-kana-nyie-nngws-we.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ethiwa-wi-na-thina-manya-kana-nyie-nngws-we.opus"
         },
         {
           "english": "We shall be shamed.",
           "translation": "tũkeethĩwa na nthoni mũno",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/tukeethiwa-na-nthoni-muno.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/tukeethiwa-na-nthoni-muno.opus"
         },
         {
           "english": "She is not so sure of how much it is.",
           "translation": "ndesi iteewa ata",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ndesi-iteewa-ata.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ndesi-iteewa-ata.opus"
         },
         {
           "english": "The small guys understood that their only chance was to first kick out the big guy.",
           "translation": "andũ ala anini nĩmeesĩ kana no nginya mambe kũmumya ũla mũnene",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/andu-ala-anini-nimeesi-kana-no-nginya-mambe-kumumya-ula-munene.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/andu-ala-anini-nimeesi-kana-no-nginya-mambe-kumumya-ula-munene.opus"
         },
         {
           "english": "He is a man on a trajectory and is destined for greatness.",
           "translation": "nĩ mũndũ wĩ na ũmanyi mwingĩ na wĩ na kĩeleelo kya kwĩthĩwa e mũnene",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-mundu-wi-na-umanyi-mwingi-na-wi-na-kieleelo-kya-kwithiwa-e-mu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-mundu-wi-na-umanyi-mwingi-na-wi-na-kieleelo-kya-kwithiwa-e-mu.opus"
         },
         {
           "english": "It's just our bad manners finding a fissure point.",
           "translation": "ĩndĩ nũndũ wa mwĩkalĩle witũ mũthũku nĩtwambĩĩe kwĩthĩwa na woni ũtaĩle",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/indi-nundu-wa-mwikalile-witu-muthuku-nitwambiie-kwithiwa-na-woni.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/indi-nundu-wa-mwikalile-witu-muthuku-nitwambiie-kwithiwa-na-woni.opus"
         },
         {
           "english": "Huge machines that look as though they came from the Star Wars desert-battle scene lumber among the dunes.",
           "translation": "masinĩ nene mũno syoonekaa ta syumĩte nthĩnĩ wa sinema ya star wars ka wa yalatan na ndumba ng sya mthanga",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/masini-nene-muno-syoonekaa-ta-syumite-nthini-wa-sinema-ya-star-w.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/masini-nene-muno-syoonekaa-ta-syumite-nthini-wa-sinema-ya-star-w.opus"
         },
         {
           "english": "We have a problem.",
           "translation": "twina thina",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/twina-thina.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/twina-thina.opus"
         },
         {
           "english": "Look at this tie.",
           "translation": "sisya ta no",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/sisya-ta-no.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/sisya-ta-no.opus"
         },
         {
           "english": "Right now, he’s with you from all angles,",
           "translation": "oyu e vamwe naku kuma ngalĩko syonthe",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/oyu-e-vamwe-naku-kuma-ngaliko-syonthe.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/oyu-e-vamwe-naku-kuma-ngaliko-syonthe.opus"
         },
         {
           "english": "White women serve tea and coffee, and then wash the cups and saucers afterwards.",
           "translation": "aka asũngũ nĩmanengae  andũ kyai na kaawa na ĩtina wa ũu mathambya mĩio ĩsu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/aka-asungu-nimanengae-andu-kyai-na-kaawa-na-itina-wa-uu-mathamby.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/aka-asungu-nimanengae-andu-kyai-na-kaawa-na-itina-wa-uu-mathamby.opus"
         },
         {
           "english": "Not sure they will compensate us for damages!",
           "translation": "ĩndĩ o na ũu wĩ o vo tũyĩsa kũĩkĩĩa kana mo nĩmekũtũĩvĩa kĩla kyanangikie",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/indi-o-na-uu-wi-o-vo-tuyisa-kuikiia-kana-mo-nimekutuivia-kila-ky.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/indi-o-na-uu-wi-o-vo-tuyisa-kuikiia-kana-mo-nimekutuivia-kila-ky.opus"
         },
         {
           "english": "The clashes began Wednesday, when the rebel revolutionary armed forces of Colombia launched attacks on a number of northwestern towns.",
           "translation": "ngwatanĩo isu syambĩĩie wakatat ĩla ita sya colombia syambĩĩe kũkita na amaitha masyo nĩwambĩĩe kũvithũkĩa taoni imwe sya ngalĩ ya ĩũlũ ya amelika",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngwatanio-isu-syambiiie-wakatat-ila-ita-sya-colombia-syambiie-ku.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngwatanio-isu-syambiiie-wakatat-ila-ita-sya-colombia-syambiie-ku.opus"
         },
         {
           "english": "Hello, everyone, welcome to the Soccer City Stadium here in the beautiful city of Johannesburg.",
           "translation": "aiee inyw'onthe na nĩtũmũthokasya mũke kĩwanzanĩ kya soccer city kĩla kĩ taoninĩ mbanake ya johannesburg",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/aiee-inyw-onthe-na-nitumuthokasya-muke-kiwanzani-kya-soccer-city.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/aiee-inyw-onthe-na-nitumuthokasya-muke-kiwanzani-kya-soccer-city.opus"
         },
         {
           "english": "Or just like Bolsonaro still has high ratings despite screwing up Brazil's pandemic response",
           "translation": "kana o tondũ bolsonaro ũendeee kwĩthĩwa na woni mũseo o na kau nĩwaanangie ũndũ nthĩ ya brazil ĩendeee kũkitana na ũwau ũsu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kana-o-tondu-bolsonaro-uendeee-kwithiwa-na-woni-museo-o-na-kau-n.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kana-o-tondu-bolsonaro-uendeee-kwithiwa-na-woni-museo-o-na-kau-n.opus"
         },
         {
           "english": "You will not need to carry any card or any information on you again because you have been digitally connected to a central server ready for the one world government, one world economy and one world religion.",
           "translation": "ndwĩsa kwĩthĩwa na vata wa kũkua kaati o na ĩmwe kana ũvoo o na wĩva ĩũlũ waku nũndũ ũkeethĩawa ũseũvĩtw'e na nzĩa ya digitali nĩ kana ũtetheesye kũũngamĩa silikalĩ ĩmwe ya nthĩ yonthe ũmanthe mbesa mbingĩ na ndĩni ĩmwe",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ndwisa-kwithiwa-na-vata-wa-kukua-kaati-o-na-imwe-kana-uvoo-o-na-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ndwisa-kwithiwa-na-vata-wa-kukua-kaati-o-na-imwe-kana-uvoo-o-na-.opus"
         },
         {
           "english": "What is a legal regime?",
           "translation": "mĩao nĩ kyaũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/miao-ni-kyau.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/miao-ni-kyau.opus"
         },
         {
           "english": "We thank God and happy it’s not here and therefore measures should be put in place it doesn’t get in. That’s all Kenyans are saying.",
           "translation": "nĩtũmũtũngĩaa ngai mũvea na nĩtũtanaa mũno nũndũ ndwĩ vaa na kwoou nĩtwaĩle kwosa ĩtambya nĩ kana ndũkalike ũu now'o andũ ma kenya maasya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nitumutungiaa-ngai-muvea-na-nitutanaa-muno-nundu-ndwi-vaa-na-kwo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nitumutungiaa-ngai-muvea-na-nitutanaa-muno-nundu-ndwi-vaa-na-kwo.opus"
         },
         {
           "english": "Do we expect him to respect institutions given the precedent that was set by him?",
           "translation": "we nũkwona ta waĩle kũnenga ndaĩa silikalĩ nũndũ wa motwi ma ũsengy'a ala weekie",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/we-nukwona-ta-waile-kunenga-ndaia-silikali-nundu-wa-motwi-ma-use.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/we-nukwona-ta-waile-kunenga-ndaia-silikali-nundu-wa-motwi-ma-use.opus"
         },
         {
           "english": "But I'd be paying for it later.",
           "translation": "ĩndĩ ĩtina wa ĩvinda nĩneekũĩva",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/indi-itina-wa-ivinda-nineekuiva.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/indi-itina-wa-ivinda-nineekuiva.opus"
         },
         {
           "english": "Look at that, bad luck you say?",
           "translation": "sisya ũndũ ũũ wĩona ata t mukosi",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/sisya-undu-uu-wiona-ata-t-mukosi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/sisya-undu-uu-wiona-ata-t-mukosi.opus"
         },
         {
           "english": "Phew! that will be fun to share!",
           "translation": "ĩĩ no tũtanĩe mũno kũea ngewa sya mũthemba ũsu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ii-no-tutanie-muno-kuea-ngewa-sya-muthemba-usu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ii-no-tutanie-muno-kuea-ngewa-sya-muthemba-usu.opus"
         },
         {
           "english": "Uganda has started to receive community spread cases of coronavirus",
           "translation": "uganda niyaambiya ukwata usambasi wa korona isono",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/uganda-niyaambiya-ukwata-usambasi-wa-korona-isono.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/uganda-niyaambiya-ukwata-usambasi-wa-korona-isono.opus"
         },
         {
           "english": "The region was disappointed by the district leaders.",
           "translation": "kisio kinekiwe na ni atongoi ma ivalo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kisio-kinekiwe-na-ni-atongoi-ma-ivalo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kisio-kinekiwe-na-ni-atongoi-ma-ivalo.opus"
         },
         {
           "english": "Someone says corona is not demonic.",
           "translation": "ve mũndũ waasya kana ũwau ũsu ti wa ndaimoni",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ve-mundu-waasya-kana-uwau-usu-ti-wa-ndaimoni.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ve-mundu-waasya-kana-uwau-usu-ti-wa-ndaimoni.opus"
         },
         {
           "english": "Education adds value to you.",
           "translation": "kwĩmanyĩsya nĩkũtumaa wĩthĩwa wĩ wa vata",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kwimanyisya-nikutumaa-withiwa-wi-wa-vata.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kwimanyisya-nikutumaa-withiwa-wi-wa-vata.opus"
         },
         {
           "english": "We have done nothing to anyone.",
           "translation": "vai mũndũ ona ũmwe tweeka naĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/vai-mundu-ona-umwe-tweeka-nai.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/vai-mundu-ona-umwe-tweeka-nai.opus"
         },
         {
           "english": "We have to enable the next generation by challenging this one.",
           "translation": "twale ktethesya mika la kte kwa kthing'sya mika",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/twale-ktethesya-mika-la-kte-kwa-kthing-sya-mika.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/twale-ktethesya-mika-la-kte-kwa-kthing-sya-mika.opus"
         },
         {
           "english": "I think I will start documenting them on daily basis.",
           "translation": "nĩona nĩngwambĩĩa kũmasoma kĩla mũthenya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niona-ningwambiia-kumasoma-kila-muthenya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niona-ningwambiia-kumasoma-kila-muthenya.opus"
         },
         {
           "english": "Zeraki provides an exciting opportunity for school administrators to transform their institutions.",
           "translation": "zeraki yithaa na mvango mseo wa anene ma skl ksoovya skl syoo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/zeraki-yithaa-na-mvango-mseo-wa-anene-ma-skl-ksoovya-skl-syoo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/zeraki-yithaa-na-mvango-mseo-wa-anene-ma-skl-ksoovya-skl-syoo.opus"
         },
         {
           "english": "Their best security given the current trends, is to stay on in their current positions and wait for another person to finally appoint them.",
           "translation": "nũndũ wa maũndũ ala maendeee ũmũnthĩ no mekale me asũvĩĩku mũno maendeea kwĩthĩwa na mawĩa ala me namo na mayĩkala meteele mũndũ ũngĩ amaũngamĩe",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nundu-wa-maundu-ala-maendeee-umunthi-no-mekale-me-asuviiku-muno-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nundu-wa-maundu-ala-maendeee-umunthi-no-mekale-me-asuviiku-muno-.opus"
         },
         {
           "english": "I'd like to think we shall have some interesting new.",
           "translation": "no nende kũsũanĩa kana tũkeethĩwa na ũvoo mũseo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/no-nende-kusuania-kana-tukeethiwa-na-uvoo-museo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/no-nende-kusuania-kana-tukeethiwa-na-uvoo-museo.opus"
         },
         {
           "english": "Is what Incident says true or not?",
           "translation": "kĩla msyo wawetie nĩ kya w'o kana ti kya w'o",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kila-msyo-wawetie-ni-kya-w-o-kana-ti-kya-w-o.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kila-msyo-wawetie-ni-kya-w-o-kana-ti-kya-w-o.opus"
         },
         {
           "english": "The Kakamega County Pathologist Dr Dickson Mchana said samples had been obtained from the body for DNA tests before the identity of the deceased could be confirmed.",
           "translation": "mũsomi wa maũndũ ma ũiiti wa kaundi ya kakamega  dickson m dchana aisye kana andũ nĩmoosie ngelekany'o sya mwĩĩ wa mũndũ ũsu nĩ kana matũmĩe kwĩka ũkunĩkĩli wa dna",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/musomi-wa-maundu-ma-uiiti-wa-kaundi-ya-kakamega-dickson-m-dchana.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/musomi-wa-maundu-ma-uiiti-wa-kaundi-ya-kakamega-dickson-m-dchana.opus"
         },
         {
           "english": "And your pollens have not poured!",
           "translation": "na kĩtoo kyaku kĩyaathemba",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/na-kitoo-kyaku-kiyaathemba.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/na-kitoo-kyaku-kiyaathemba.opus"
         },
         {
           "english": "But it is thought that some other detainees at the facility have refused the vaccine",
           "translation": "ĩndĩ veonekana kana avungwa angĩ ala maĩ kambinĩ ĩsu nĩmaleile kũiitwa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/indi-veonekana-kana-avungwa-angi-ala-mai-kambini-isu-nimaleile-k.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/indi-veonekana-kana-avungwa-angi-ala-mai-kambini-isu-nimaleile-k.opus"
         },
         {
           "english": "I trust these political leaders to do nasty things",
           "translation": "nĩnĩĩkĩĩaa kana atongoi asu ma siasa mekaa maũndũ mathũku",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niniikiiaa-kana-atongoi-asu-ma-siasa-mekaa-maundu-mathuku.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niniikiiaa-kana-atongoi-asu-ma-siasa-mekaa-maundu-mathuku.opus"
         },
         {
           "english": "I don't have to say anything.",
           "translation": "ti lasima nĩelesye kĩndũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ti-lasima-nielesye-kindu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ti-lasima-nielesye-kindu.opus"
         },
         {
           "english": "Features or articles are longer pieces of a news story and cover an issue in greater depth and might look like an ongoing story from a different angle.",
           "translation": "ũvoo ũla wĩ ilungun sya maũvoo wĩthĩawa wĩ mũasa kwĩ ũvoo ũla wĩ mavukunĩ ma maũvoo na no woneke ta ũvoo ũendeee kũelew'a",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/uvoo-ula-wi-ilungun-sya-mauvoo-withiawa-wi-muasa-kwi-uvoo-ula-wi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/uvoo-ula-wi-ilungun-sya-mauvoo-withiawa-wi-muasa-kwi-uvoo-ula-wi.opus"
         },
         {
           "english": "What they are doing is selective enforcement.",
           "translation": "kĩla mekwĩka no kũvĩndũa mĩao kwa nzĩa ya ũko",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kila-mekwika-no-kuvindua-miao-kwa-nzia-ya-uko.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kila-mekwika-no-kuvindua-miao-kwa-nzia-ya-uko.opus"
         },
         {
           "english": "So this House has got no choice but to begin the process of removing the Speaker.",
           "translation": "kwoou nyũmba imo yiina mwanya indi kuambiaya muvango wa kumya muneeni",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kwoou-nyumba-imo-yiina-mwanya-indi-kuambiaya-muvango-wa-kumya-mu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kwoou-nyumba-imo-yiina-mwanya-indi-kuambiaya-muvango-wa-kumya-mu.opus"
         },
         {
           "english": "Who is at the door?",
           "translation": "nũũ ũla wĩ mũomonĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nuu-ula-wi-muomoni.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nuu-ula-wi-muomoni.opus"
         },
         {
           "english": "The members are also expected to be well matched.",
           "translation": "o na ĩngĩ andũ ala me kĩkundinĩ kĩu nĩmaĩle kwĩthĩwa na ngwatanĩo nzeo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-ingi-andu-ala-me-kikundini-kiu-nimaile-kwithiwa-na-ngwatani.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-ingi-andu-ala-me-kikundini-kiu-nimaile-kwithiwa-na-ngwatani.opus"
         },
         {
           "english": "Every week there's something new about her, she's a reality TV star.",
           "translation": "kĩla kyumwa ve ũndũ mweũ ũkonetye mwĩĩtu-a-asa ũsu nĩ mũndũ mũka wĩ nguma mũno",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kila-kyumwa-ve-undu-mweu-ukonetye-mwiitu-a-asa-usu-ni-mundu-muka.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kila-kyumwa-ve-undu-mweu-ukonetye-mwiitu-a-asa-usu-ni-mundu-muka.opus"
         },
         {
           "english": "Here.",
           "translation": "vaa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/vaa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/vaa.opus"
         },
         {
           "english": "Seen another way, Oparanya doesn’t seem to have been consulted. He is offering his views in an open letter.",
           "translation": "ĩndĩ o na vailyĩ ũu oparanya ndatavw'a ũndũ ũsu aandĩkie valũa ũeleetye woni wake",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/indi-o-na-vailyi-uu-oparanya-ndatavw-a-undu-usu-aandikie-valua-u.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/indi-o-na-vailyi-uu-oparanya-ndatavw-a-undu-usu-aandikie-valua-u.opus"
         },
         {
           "english": "In either case, ask yourself whether you have become better informed on the issues under protest by watching the act of civil disobedience.",
           "translation": "o na ethĩwa vailyĩ ata ĩkũlye ethĩwa nĩwĩsĩ nesa maũndũ ala mawetwa nĩ andũ ala maleanaa na silikalĩ nũndũ wa kũsisya ũndũ andũ ma nthĩ ĩsu mekwĩka",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-ethiwa-vailyi-ata-ikulye-ethiwa-niwisi-nesa-maundu-ala-mawe.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-ethiwa-vailyi-ata-ikulye-ethiwa-niwisi-nesa-maundu-ala-mawe.opus"
         },
         {
           "english": "Boil the water by putting the jebena on the femelo with the charcoal on it.",
           "translation": "wĩkye kĩw'ũ na ũivaka jebena kĩkavũnĩ kĩu kĩna makaa ma mwaki",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/wikye-kiw-u-na-uivaka-jebena-kikavuni-kiu-kina-makaa-ma-mwaki.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/wikye-kiw-u-na-uivaka-jebena-kikavuni-kiu-kina-makaa-ma-mwaki.opus"
         },
         {
           "english": "The Door.",
           "translation": "mũomo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muomo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muomo.opus"
         },
         {
           "english": "Blinken says US has ‘no doubt’ China was conducting surveillance with balloon.",
           "translation": "blinken anaisye us mayina nzika  china ineeka wia wake na mathangũ ma nzeve",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/blinken-anaisye-us-mayina-nzika-china-ineeka-wia-wake-na-mathang.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/blinken-anaisye-us-mayina-nzika-china-ineeka-wia-wake-na-mathang.opus"
         },
         {
           "english": "I have contacted few of them and they seem confused.",
           "translation": "nĩnaneenie na amwe moo na neethĩa nĩ ta ma mavvanu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninaneenie-na-amwe-moo-na-neethia-ni-ta-ma-mavvanu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninaneenie-na-amwe-moo-na-neethia-ni-ta-ma-mavvanu.opus"
         },
         {
           "english": "I am not very sure that is how it works so you can verify.",
           "translation": "ĩndĩ o na ũu wĩ o vo ndyĩsa kũĩkĩĩa kana ũu nĩw'o vailyĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/indi-o-na-uu-wi-o-vo-ndyisa-kuikiia-kana-uu-niw-o-vailyi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/indi-o-na-uu-wi-o-vo-ndyisa-kuikiia-kana-uu-niw-o-vailyi.opus"
         },
         {
           "english": "I see some facilities close forever.",
           "translation": "nona ve and matesyoka wan",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nona-ve-and-matesyoka-wan.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nona-ve-and-matesyoka-wan.opus"
         },
         {
           "english": "Please give me a little more time to request the funds be rerouted to your account.",
           "translation": "nĩngũkwĩsũva ũnenge ĩvinda yĩngĩ nĩ kana n klye mbesa su itngwe kwa akaondi yaku",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ningukwisuva-unenge-ivinda-yingi-ni-kana-n-klye-mbesa-su-itngwe-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ningukwisuva-unenge-ivinda-yingi-ni-kana-n-klye-mbesa-su-itngwe-.opus"
         },
         {
           "english": "For all her tears & laughter, her wishes and endeavours",
           "translation": "o na kau nĩwaĩaa na atheka eew'aa e mwĩanĩe na e na mea maingĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-kau-niwaiaa-na-atheka-eew-aa-e-mwianie-na-e-na-mea-maingi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-kau-niwaiaa-na-atheka-eew-aa-e-mwianie-na-e-na-mea-maingi.opus"
         },
         {
           "english": "Blue think we are stupid.",
           "translation": "blue asũanĩaa twĩ atumanu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/blue-asuaniaa-twi-atumanu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/blue-asuaniaa-twi-atumanu.opus"
         },
         {
           "english": "The Kioo crooner was interviewed by Kiss FM’s Shaffie Weru two weeks ago.",
           "translation": "mũandĩki ũsu wa wathi wa kioo nĩwaneenie na shaffie weru wa kiss fm syumwa ilĩ mĩvĩtu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muandiki-usu-wa-wathi-wa-kioo-niwaneenie-na-shaffie-weru-wa-kiss.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muandiki-usu-wa-wathi-wa-kioo-niwaneenie-na-shaffie-weru-wa-kiss.opus"
         },
         {
           "english": "Fresh cow, freshly slaughtered just today!",
           "translation": "ngombe nzanzamukuyathinzwa umunthi",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngombe-nzanzamukuyathinzwa-umunthi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngombe-nzanzamukuyathinzwa-umunthi.opus"
         },
         {
           "english": "Why is that a concern of yours?",
           "translation": "nĩkĩ ũsu nĩ ũndũ ũkwendeesya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niki-usu-ni-undu-ukwendeesya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niki-usu-ni-undu-ukwendeesya.opus"
         },
         {
           "english": "The National Transportation Safety Board will take a close look at the issue during four days of hearings that begin today",
           "translation": "kamitii ya national transportation safety board national transportation safety board ĩkasisya mũno ũndũ ũsu ĩvindanĩ ya ũmbano wa mĩthenya ĩna ũla ũkambĩĩa ũmũnthĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kamitii-ya-national-transportation-safety-board-national-transpo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kamitii-ya-national-transportation-safety-board-national-transpo.opus"
         },
         {
           "english": "All services except electricity pass through the disputed space.",
           "translation": "wĩa w'onthe eka wa sitima ũvĩtaa kĩwanzanĩ kĩla kĩ na ngusanĩsyo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/wia-w-onthe-eka-wa-sitima-uvitaa-kiwanzani-kila-ki-na-ngusanisyo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/wia-w-onthe-eka-wa-sitima-uvitaa-kiwanzani-kila-ki-na-ngusanisyo.opus"
         },
         {
           "english": "Saul was a high-strung student of ethnography, a Jew marked doubly as an outsider because of a huge wine-dark birthmark on his face, for which people called him Mascarita, Mask Face",
           "translation": "saulo aĩ mũmanyĩw'a wĩ kĩthito mũno wa maũndũ ma ũko wa andũ aĩ mũyuti na aĩ mũeni nũndũ aĩ na ĩlanga ĩnene ũthyũnĩ wake na nĩkyo kĩtumi andũ mamwĩtaa mascarita thy  mvithe",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/saulo-ai-mumanyiw-a-wi-kithito-muno-wa-maundu-ma-uko-wa-andu-ai-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/saulo-ai-mumanyiw-a-wi-kithito-muno-wa-maundu-ma-uko-wa-andu-ai-.opus"
         },
         {
           "english": "All the records are entered manually for now.",
           "translation": "livoti is siandikitwe na kwoko kwa oyu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/livoti-is-siandikitwe-na-kwoko-kwa-oyu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/livoti-is-siandikitwe-na-kwoko-kwa-oyu.opus"
         },
         {
           "english": "It's going to be a sensational thing, says Mr. Krishnamurthy of P&G in Bombay.",
           "translation": "aĩtye atĩĩ ũndũ ũsu ũkeethĩwa wĩ mũnene mũno krishnamurthy wa pg bombay",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/aitye-atii-undu-usu-ukeethiwa-wi-munene-muno-krishnamurthy-wa-pg.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/aitye-atii-undu-usu-ukeethiwa-wi-munene-muno-krishnamurthy-wa-pg.opus"
         },
         {
           "english": "Guys watch news and see our competitors.",
           "translation": "sisyai mavoo mwone ala tsindanaa namo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/sisyai-mavoo-mwone-ala-tsindanaa-namo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/sisyai-mavoo-mwone-ala-tsindanaa-namo.opus"
         },
         {
           "english": "Focus on topic of discussion. We will be happy to moderate a topic if necessary. Mostly We are happy to pick on a topic of interest you bring up. No forwards of any kind: traffic, security, emergency, etc",
           "translation": "ĩkalaa ũisũanĩa mũno kĩla mũkwĩneenea tũkatanĩa mũno kũneenea ũndũ mũna ethĩwa ve vata mavinda maingĩ nĩtũtanaa mũno ĩla twakomana na mũndũ ũkwendeew'a ndũkatindĩe kũũngamĩa maũndũ ma lelũnĩ ma ũsũvĩo ma mĩtũkĩ na angĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ikalaa-uisuania-muno-kila-mukwineenea-tukatania-muno-kuneenea-un.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ikalaa-uisuania-muno-kila-mukwineenea-tukatania-muno-kuneenea-un.opus"
         },
         {
           "english": "Hey guys, we have started a countdown to the opening of our online shop for the herbs and spices which we produce and process.",
           "translation": "nayu inywe no matuk manini matyala tvinge nduka ya nzeven yathoosya mt ya ndawa na lu la tvandaa na ksevya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nayu-inywe-no-matuk-manini-matyala-tvinge-nduka-ya-nzeven-yathoo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nayu-inywe-no-matuk-manini-matyala-tvinge-nduka-ya-nzeven-yathoo.opus"
         },
         {
           "english": "Polyne was right, Okiya has done it, If Okiya can challenge Papa then times really change.",
           "translation": "polyne aĩ na ũw'o okiya nĩwe weekie ũu na ethĩwa okiya no atate kũmũmina tata ĩvinda yĩkaalyũka vyũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/polyne-ai-na-uw-o-okiya-niwe-weekie-uu-na-ethiwa-okiya-no-atate-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/polyne-ai-na-uw-o-okiya-niwe-weekie-uu-na-ethiwa-okiya-no-atate-.opus"
         },
         {
           "english": "Even as we loud the news, I commend Gilbert and team for the amazing job.",
           "translation": "o na kau yu twĩ na ũvoo mũseo nĩngũtũngĩa mũvea gilbert na ala angĩ nũndũ wa wĩa woo mũseo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-kau-yu-twi-na-uvoo-museo-ningutungia-muvea-gilbert-na-ala-a.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-kau-yu-twi-na-uvoo-museo-ningutungia-muvea-gilbert-na-ala-a.opus"
         },
         {
           "english": "You should have just said that in the first place.",
           "translation": "waĩle kwĩthĩwa wawetie ũu mwambĩĩonĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/waile-kwithiwa-wawetie-uu-mwambiioni.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/waile-kwithiwa-wawetie-uu-mwambiioni.opus"
         },
         {
           "english": "I tried my best to be friends with the girls, with people in this house but whenever i get into spaces, they keep quiet.",
           "translation": "nĩnatataa ũndũ ndonya nĩthĩwe nĩ mũnyanyae wa eĩtu asu na andũ ala angĩ ĩndĩ ĩla navika kũndũ kũngĩ mayĩthĩawa na wasya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninatataa-undu-ndonya-nithiwe-ni-munyanyae-wa-eitu-asu-na-andu-a.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninatataa-undu-ndonya-nithiwe-ni-munyanyae-wa-eitu-asu-na-andu-a.opus"
         },
         {
           "english": "What are your relationships?",
           "translation": "ngwatanĩo syenyu nĩ syĩva",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ngwatanio-syenyu-ni-syiva.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ngwatanio-syenyu-ni-syiva.opus"
         },
         {
           "english": "She won the tight game in sets.",
           "translation": "o na kau ĩthaũ yĩu yaĩ na andũ aingĩ yaĩ no nginya ĩthi vyũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/o-na-kau-ithau-yiu-yai-na-andu-aingi-yai-no-nginya-ithi-vyu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/o-na-kau-ithau-yiu-yai-na-andu-aingi-yai-no-nginya-ithi-vyu.opus"
         },
         {
           "english": "So we cannot live, I mean, we are really totally paralyzed right now.",
           "translation": "kwoou tũitonya kwĩkala thayũ nũndũ twĩ na thĩna mwingĩ mũno wa mwĩĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kwoou-tuitonya-kwikala-thayu-nundu-twi-na-thina-mwingi-muno-wa-m.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kwoou-tuitonya-kwikala-thayu-nundu-twi-na-thina-mwingi-muno-wa-m.opus"
         },
         {
           "english": "Because reading is tied to everything from cognitive development to the ability to focus.",
           "translation": "nũndũ kũsoma nĩkũtetheeasya mũndũ kũmanya maũndũ maingĩ na nĩkũtetheeasya mũndũ aisũanĩa nesa",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nundu-kusoma-nikutetheeasya-mundu-kumanya-maundu-maingi-na-nikut.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nundu-kusoma-nikutetheeasya-mundu-kumanya-maundu-maingi-na-nikut.opus"
         },
         {
           "english": "Why didn't you tell me?",
           "translation": "niki utanaandavya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niki-utanaandavya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niki-utanaandavya.opus"
         },
         {
           "english": "They might have already changed their minds.",
           "translation": "nĩvatonyeka makethĩwa mavĩndũie mosũanĩo moo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nivatonyeka-makethiwa-mavinduie-mosuanio-moo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nivatonyeka-makethiwa-mavinduie-mosuanio-moo.opus"
         },
         {
           "english": "Laziness is comfortable in the short term but always costs you in the long term.",
           "translation": "ũvũngũ no ũtume mũndũ ew'a e mwĩanĩe kwa ĩvinda ĩkuvĩ ĩndĩ ĩtina no ũtume ew'a e mũisyonĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/uvungu-no-utume-mundu-ew-a-e-mwianie-kwa-ivinda-ikuvi-indi-itina.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/uvungu-no-utume-mundu-ew-a-e-mwianie-kwa-ivinda-ikuvi-indi-itina.opus"
         },
         {
           "english": "A guy by the name Mike.",
           "translation": "mndme witawa mike",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/mndme-witawa-mike.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/mndme-witawa-mike.opus"
         },
         {
           "english": "Had it been another president, he would be gone the day after the letter leaked to the media.",
           "translation": "takethĩwa aĩ mũsumbĩ ũngĩ aĩ akw'e mũthenya ũmwe ĩtina wa valũa ũsu kũvuanw'a",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/takethiwa-ai-musumbi-ungi-ai-akw-e-muthenya-umwe-itina-wa-valua-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/takethiwa-ai-musumbi-ungi-ai-akw-e-muthenya-umwe-itina-wa-valua-.opus"
         },
         {
           "english": "Eilish worked at the horse stable in exchange for riding lessons.",
           "translation": "eilish athũkũmaa ovisinĩ wa kũthoosya mbalasi nĩ kana emanyĩsye kũkuwa nĩ mbalasi",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/eilish-athukumaa-ovisini-wa-kuthoosya-mbalasi-ni-kana-emanyisye-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/eilish-athukumaa-ovisini-wa-kuthoosya-mbalasi-ni-kana-emanyisye-.opus"
         },
         {
           "english": "Now what rubbish is that?",
           "translation": "ũsu nĩ ũvũngũ wĩva",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/usu-ni-uvungu-wiva.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/usu-ni-uvungu-wiva.opus"
         },
         {
           "english": "One of the champions of East Africa's democratic recession lies cold in a freezer tonight.",
           "translation": "ũmwe wa andũ ala matongoesye maũndũ ma siasa sya east africa nũkomete kasũmbanĩ ka kũthithya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/umwe-wa-andu-ala-matongoesye-maundu-ma-siasa-sya-east-africa-nuk.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/umwe-wa-andu-ala-matongoesye-maundu-ma-siasa-sya-east-africa-nuk.opus"
         },
         {
           "english": "Pregnant mothers risk death if not transferred immediately to the hospital.",
           "translation": "iveti ngito nisikia kikwo male utwawa sivitali mituki",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/iveti-ngito-nisikia-kikwo-male-utwawa-sivitali-mituki.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/iveti-ngito-nisikia-kikwo-male-utwawa-sivitali-mituki.opus"
         },
         {
           "english": "Cancelled events.",
           "translation": "maũndũ ala mavetetwe",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/maundu-ala-mavetetwe.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/maundu-ala-mavetetwe.opus"
         },
         {
           "english": "Could we discuss the legal options available here?",
           "translation": "no tũneene ĩũlũ wa maũndũ ala tũtonya kwĩka nĩ kana tũtetheesye andũ ala angĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/no-tuneene-iulu-wa-maundu-ala-tutonya-kwika-ni-kana-tutetheesye-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/no-tuneene-iulu-wa-maundu-ala-tutonya-kwika-ni-kana-tutetheesye-.opus"
         },
         {
           "english": "Why are you all holding your breath?",
           "translation": "nĩkĩ inyw'onthe mũtekũusya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niki-inyw-onthe-mutekuusya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niki-inyw-onthe-mutekuusya.opus"
         },
         {
           "english": "This is the demo account they shared with schools.",
           "translation": "no niyo akaond ila nanengiwe maskl",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/no-niyo-akaond-ila-nanengiwe-maskl.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/no-niyo-akaond-ila-nanengiwe-maskl.opus"
         },
         {
           "english": "One that will bring an end to the senseless chaos and lead to a much more inclusive society.",
           "translation": "ũũ nĩw'o ũkethĩwa wĩ mũthya wa mathĩna ala matũkwataa ũmũnthĩ na ũituma twĩthĩwa na ngwatanĩo nzeo na andũ onthe",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/uu-niw-o-ukethiwa-wi-muthya-wa-mathina-ala-matukwataa-umunthi-na.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/uu-niw-o-ukethiwa-wi-muthya-wa-mathina-ala-matukwataa-umunthi-na.opus"
         },
         {
           "english": "I am visiting them in a special way.",
           "translation": "nĩenda kũmatetheesya kwa nzĩa ya mwanya",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/nienda-kumatetheesya-kwa-nzia-ya-mwanya.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/nienda-kumatetheesya-kwa-nzia-ya-mwanya.opus"
         },
         {
           "english": "From that point on, the U.S. would make a practice of overlooking the Panamanian's misadventures.",
           "translation": "kuma ivinda yiu us niyambiiye undu wa ukunikili mwingi wa mavityo ma panama",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kuma-ivinda-yiu-us-niyambiiye-undu-wa-ukunikili-mwingi-wa-mavity.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kuma-ivinda-yiu-us-niyambiiye-undu-wa-ukunikili-mwingi-wa-mavity.opus"
         },
         {
           "english": "To eliminate them but they were increasing in number every day.",
           "translation": "nĩ kana mamine ĩndĩ kĩla mũthenya maĩ aingĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-kana-mamine-indi-kila-muthenya-mai-aingi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-kana-mamine-indi-kila-muthenya-mai-aingi.opus"
         },
         {
           "english": "I gently closed the door behind me and just thanked God for this man.",
           "translation": "nĩnavingũie mũomo wakwa nesa na namũtũngĩa ngai mũvea nũndũ wa kũndetheesya kwona mũndũme ũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ninavinguie-muomo-wakwa-nesa-na-namutungia-ngai-muvea-nundu-wa-k.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ninavinguie-muomo-wakwa-nesa-na-namutungia-ngai-muvea-nundu-wa-k.opus"
         },
         {
           "english": "Some FAA officials note that few infants have been killed in plane crashes, raising the question of whether safety seats really are needed.",
           "translation": "namo anene amwe ma ndeke faa maasya kana ti tũũkenge twingĩ tũaũawa nĩ ndeke na ũu ũituma andũ mambĩĩa kwĩkũlya kana ve vata wa kwĩkĩa ivĩla sya kũsiĩĩa ndeke",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/namo-anene-amwe-ma-ndeke-faa-maasya-kana-ti-tuukenge-twingi-tuau.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/namo-anene-amwe-ma-ndeke-faa-maasya-kana-ti-tuukenge-twingi-tuau.opus"
         },
         {
           "english": "At State House.",
           "translation": "ni nyumba ya musumbi",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ni-nyumba-ya-musumbi.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-nyumba-ya-musumbi.opus"
         },
         {
           "english": "They improved after the break and had a penalty of their own ruled out for offside against Erling Haaland.",
           "translation": "ĩtina wa ĩvinda ya kũthyũmũa nĩmambĩĩie kwĩthĩwa na woni mũseo na nũndũ wa ũu nĩmasindiwe mũvĩla wa kũthaũkĩa erling haaland",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/itina-wa-ivinda-ya-kuthyumua-nimambiiie-kwithiwa-na-woni-museo-n.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/itina-wa-ivinda-ya-kuthyumua-nimambiiie-kwithiwa-na-woni-museo-n.opus"
         },
         {
           "english": "Let me just say we're unlucky to live in the age of such a malevolent genius.",
           "translation": "kwaeka ngũtavye kana twĩ na ũwau mũthũku mũno nũndũ wa kwĩkala ĩvindanĩ ya mũndũ wĩ vinya mũno",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/kwaeka-ngutavye-kana-twi-na-uwau-muthuku-muno-nundu-wa-kwikala-i.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/kwaeka-ngutavye-kana-twi-na-uwau-muthuku-muno-nundu-wa-kwikala-i.opus"
         },
         {
           "english": "Good advice there. Painful truth",
           "translation": "usu n tao mseo w'o w woo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/usu-n-tao-mseo-w-o-w-woo.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/usu-n-tao-mseo-w-o-w-woo.opus"
         },
         {
           "english": "Khosi later came around and called Thabang for a conversation.",
           "translation": "ĩtina khosi nĩwesie kũka na amwĩta thabang nĩ kana maneene",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/itina-khosi-niwesie-kuka-na-amwita-thabang-ni-kana-maneene.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/itina-khosi-niwesie-kuka-na-amwita-thabang-ni-kana-maneene.opus"
         },
         {
           "english": "See he didn't talk about how the Executive doesn't follow court orders.",
           "translation": "nĩwoona kana ndaaneena ĩũlũ wa ũndũ silikalĩ ĩtetĩkĩlaa mĩao ya koti",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/niwoona-kana-ndaaneena-iulu-wa-undu-silikali-itetikilaa-miao-ya-.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/niwoona-kana-ndaaneena-iulu-wa-undu-silikali-itetikilaa-miao-ya-.opus"
         },
         {
           "english": "A student who spoke to us said that after supper their colleague was sad and he didn’t want to speak to anyone.",
           "translation": "mũmanyĩw'a ũmwe ũla waneenie naitũ aisye kana ĩtina wa kũya mwana-a-asa ũsu woo aĩ na kyeva na ndeew'aa ayenda kũneena na mũndũ o na wĩva",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/mumanyiw-a-umwe-ula-waneenie-naitu-aisye-kana-itina-wa-kuya-mwan.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/mumanyiw-a-umwe-ula-waneenie-naitu-aisye-kana-itina-wa-kuya-mwan.opus"
         },
         {
           "english": "The Director of Quality Assurance can be of help. See inbox",
           "translation": "mũũngamĩi wa mũvĩa wa kũĩkĩĩthya nesa wĩa no aũtetheesye sisya ĩsandũkũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/muungamii-wa-muvia-wa-kuikiithya-nesa-wia-no-autetheesye-sisya-i.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/muungamii-wa-muvia-wa-kuikiithya-nesa-wia-no-autetheesye-sisya-i.opus"
         },
         {
           "english": "Those he refused to appoint are the best that we deserve.",
           "translation": "ala waleile kũnyuva nĩmo aseo vyũ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/ala-waleile-kunyuva-nimo-aseo-vyu.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/ala-waleile-kunyuva-nimo-aseo-vyu.opus"
         },
         {
           "english": "Where did you get this one?",
           "translation": "in unaumisye va",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/in-unaumisye-va.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/in-unaumisye-va.opus"
         },
         {
           "english": "To enter the U.S. until satisfactory sanitation-control measures are implemented in China",
@@ -47034,14 +47034,14 @@
         },
         {
           "english": "Axe",
-          "translation": "I-thoka; ma-. Anggi (pl.)",
-          "pronunciation": "i thoh-ka",
+          "translation": "I-thoka (pl. ma-thoka); Anggi (pl.)",
+          "pronunciation": "i-thoka (pl. ma-thoka); anggi (pl.)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
           "english": "Bee",
-          "translation": "N-zūki; pl. same or ma",
-          "pronunciation": "n-zuki",
+          "translation": "N-zūki (pl. n-zūki / ma-nzūki)",
+          "pronunciation": "n-zūki (pl. n-zūki / ma-nzūki)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47064,8 +47064,8 @@
         },
         {
           "english": "Egg",
-          "translation": "I-tumbī; ma-. I-vaa (ostrich)",
-          "pronunciation": "i-tumbi",
+          "translation": "I-tumbī (pl. ma-tumbī); I-vaa (ostrich)",
+          "pronunciation": "i-tumbī (pl. ma-tumbī); i-vaa (ostrich)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47076,8 +47076,8 @@
         },
         {
           "english": "Gun",
-          "translation": "Mū-singga; mi-. I-vūti; ma",
-          "pronunciation": "mu-singga",
+          "translation": "Mū-singga (pl. mi-singga); I-vūti (pl. ma-vūti)",
+          "pronunciation": "mū-singga (pl. mi-singga); i-vūti (pl. ma-vūti)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47094,8 +47094,8 @@
         },
         {
           "english": "Man",
-          "translation": "Mū-ūmē; a",
-          "pronunciation": "mu-ume",
+          "translation": "Mū-ūmē (pl. a-ūmē)",
+          "pronunciation": "mū-ūmē (pl. a-ūmē)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47106,8 +47106,8 @@
         },
         {
           "english": "Rat",
-          "translation": "M-bīa; ma",
-          "pronunciation": "m-bia",
+          "translation": "M-bīa (pl. ma-bīa)",
+          "pronunciation": "m-bīa (pl. ma-bīa)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47118,8 +47118,8 @@
         },
         {
           "english": "Sun",
-          "translation": "Sy-ūa; ma",
-          "pronunciation": "sy-ua",
+          "translation": "Sy-ūa (pl. ma-syūa)",
+          "pronunciation": "sy-ūa (pl. ma-syūa)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47196,8 +47196,8 @@
         },
         {
           "english": "Back",
-          "translation": "Mu-onggo; mi-. Edina",
-          "pronunciation": "mu ong-oh",
+          "translation": "Mu-onggo (pl. mi-onggo); Edina",
+          "pronunciation": "mu-onggo (pl. mi-onggo); edina",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47214,8 +47214,8 @@
         },
         {
           "english": "Bone",
-          "translation": "I-vindi; ma",
-          "pronunciation": "i vind-i",
+          "translation": "I-vindi (pl. ma-vindi)",
+          "pronunciation": "i-vindi (pl. ma-vindi)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47226,20 +47226,20 @@
         },
         {
           "english": "Fish",
-          "translation": "I-kūyū; ma",
-          "pronunciation": "i-kuyu",
+          "translation": "I-kūyū (pl. ma-kūyū)",
+          "pronunciation": "i-kūyū (pl. ma-kūyū)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
           "english": "Foot",
-          "translation": "U-nyaī; ma-. Maa (pl.)",
-          "pronunciation": "u-nyai",
+          "translation": "U-nyaī (pl. ma-nyaī); Maa (pl.)",
+          "pronunciation": "u-nyaī (pl. ma-nyaī); maa (pl.)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
           "english": "Fowl",
-          "translation": "Ṅ-gūkū; ma",
-          "pronunciation": "n-guku",
+          "translation": "Ṅ-gūkū (pl. ma-ngūkū)",
+          "pronunciation": "ṅ-gūkū (pl. ma-ngūkū)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47256,20 +47256,20 @@
         },
         {
           "english": "Goat",
-          "translation": "M-būi; ma",
-          "pronunciation": "m-bui",
+          "translation": "M-būi (pl. ma-mbūi)",
+          "pronunciation": "m-būi (pl. ma-mbūi)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
           "english": "Hair",
-          "translation": "N-zwiī; pl. same or ma-. I-diku",
-          "pronunciation": "n-zwii",
+          "translation": "N-zwiī (pl. n-zwiī / ma-nzwiī); I-diku",
+          "pronunciation": "n-zwiī (pl. n-zwiī / ma-nzwiī); i-diku",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
           "english": "Head",
-          "translation": "Mū-tūe; mi",
-          "pronunciation": "mu-tue",
+          "translation": "Mū-tūe (pl. mi-tūe)",
+          "pronunciation": "mū-tūe (pl. mi-tūe)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47280,8 +47280,8 @@
         },
         {
           "english": "Hill",
-          "translation": "Ka-īma; tū",
-          "pronunciation": "ka-ima",
+          "translation": "Ka-īma (pl. tū-īma)",
+          "pronunciation": "ka-īma (pl. tū-īma)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47316,20 +47316,20 @@
         },
         {
           "english": "Name",
-          "translation": "Ī-sīetwa; ma-. Dzitwa",
-          "pronunciation": "i-sietwa",
+          "translation": "Ī-sīetwa (pl. ma-sīetwa); Dzitwa",
+          "pronunciation": "ī-sīetwa (pl. ma-sīetwa); dzitwa",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
           "english": "Neck",
-          "translation": "N-ginggo; ma",
-          "pronunciation": "n ging-oh",
+          "translation": "N-ginggo (pl. ma-nginggo)",
+          "pronunciation": "n-ginggo (pl. ma-nginggo)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
           "english": "Nose",
-          "translation": "Ī-nyūū; ma",
-          "pronunciation": "i-nyuu",
+          "translation": "Ī-nyūū (pl. ma-nyūū)",
+          "pronunciation": "ī-nyūū (pl. ma-nyūū)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47340,8 +47340,8 @@
         },
         {
           "english": "Road",
-          "translation": "N-zīa; ma",
-          "pronunciation": "n-zia",
+          "translation": "N-zīa (pl. ma-nzīa)",
+          "pronunciation": "n-zīa (pl. ma-nzīa)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47358,8 +47358,8 @@
         },
         {
           "english": "Star",
-          "translation": "N-dātā; ma",
-          "pronunciation": "n-data",
+          "translation": "N-dātā (pl. ma-ndātā)",
+          "pronunciation": "n-dātā (pl. ma-ndātā)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47376,8 +47376,8 @@
         },
         {
           "english": "Vein",
-          "translation": "Mū-kīva; mi",
-          "pronunciation": "mu-kiva",
+          "translation": "Mū-kīva (pl. mi-kīva)",
+          "pronunciation": "mū-kīva (pl. mi-kīva)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47502,8 +47502,8 @@
         },
         {
           "english": "Thorn",
-          "translation": "kamíloa, pl. tu",
-          "pronunciation": "kamiloa",
+          "translation": "kamíloa (pl. tumíloa)",
+          "pronunciation": "kamíloa (pl. tumíloa)",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47514,8 +47514,8 @@
         },
         {
           "english": "Arrow",
-          "translation": "Mu-sī; mi",
-          "pronunciation": "mu-si",
+          "translation": "Mu-sī (pl. mi-sī)",
+          "pronunciation": "mu-sī (pl. mi-sī)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47562,8 +47562,8 @@
         },
         {
           "english": "Grass",
-          "translation": "Ny-īki; ma",
-          "pronunciation": "ny-iki",
+          "translation": "Ny-īki (pl. ma-nyīki)",
+          "pronunciation": "ny-īki (pl. ma-nyīki)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47574,14 +47574,14 @@
         },
         {
           "english": "Hyena",
-          "translation": "M-biti; ma",
-          "pronunciation": "m bi-ti",
+          "translation": "M-biti (pl. ma-mbiti)",
+          "pronunciation": "m-biti (pl. ma-mbiti)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
           "english": "Ivory",
-          "translation": "Mū-vea; mi",
-          "pronunciation": "mu-vea",
+          "translation": "Mū-vea (pl. mi-vea)",
+          "pronunciation": "mū-vea (pl. mi-vea)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47598,8 +47598,8 @@
         },
         {
           "english": "Maize",
-          "translation": "M-bembā; ma",
-          "pronunciation": "m-bemba",
+          "translation": "M-bembā (pl. ma-mbembā)",
+          "pronunciation": "m-bembā (pl. ma-mbembā)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47628,8 +47628,8 @@
         },
         {
           "english": "Sheep",
-          "translation": "Ī-lōndū; ma",
-          "pronunciation": "i-londu",
+          "translation": "Ī-lōndū (pl. ma-lōndū)",
+          "pronunciation": "ī-lōndū (pl. ma-lōndū)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47646,8 +47646,8 @@
         },
         {
           "english": "Stone",
-          "translation": "Ī-vīa, Ī-bīa; ma",
-          "pronunciation": "i-via i-bia",
+          "translation": "Ī-vīa, Ī-bīa (pl. ma-vīa)",
+          "pronunciation": "ī-vīa, ī-bīa (pl. ma-vīa)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47658,8 +47658,8 @@
         },
         {
           "english": "Thief",
-          "translation": "Kī-nggēēu; i-. Mū-ūī; a-ūī. Mū-veni",
-          "pronunciation": "ki-nggeeu",
+          "translation": "Kī-nggēēu (pl. i-nggēēu); Mū-ūī (pl. a-ūī); Mū-veni",
+          "pronunciation": "kī-nggēēu (pl. i-nggēēu); mū-ūī (pl. a-ūī); mū-veni",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47808,8 +47808,8 @@
         },
         {
           "english": "Banana",
-          "translation": "I-iyu; ma-. I-iū; ma-iū",
-          "pronunciation": "i-iyu",
+          "translation": "I-iyu (pl. ma-iyu); I-iū (pl. ma-iū)",
+          "pronunciation": "i-iyu (pl. ma-iyu); i-iū (pl. ma-iū)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47826,8 +47826,8 @@
         },
         {
           "english": "Donkey",
-          "translation": "I-onggōi; ma",
-          "pronunciation": "i-onggoi",
+          "translation": "I-onggōi (pl. ma-onggōi)",
+          "pronunciation": "i-onggōi (pl. ma-onggōi)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47874,8 +47874,8 @@
         },
         {
           "english": "Pigeon",
-          "translation": "Ī-vūī, Ī-vōī, Ī-wūī; ma",
-          "pronunciation": "i-vui i-voi i-wui",
+          "translation": "Ī-vūī, Ī-vōī, Ī-wūī (pl. ma-vūī)",
+          "pronunciation": "ī-vūī, ī-vōī, ī-wūī (pl. ma-vūī)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -47970,8 +47970,8 @@
         },
         {
           "english": "Leopard",
-          "translation": "N-gō; ma",
-          "pronunciation": "n-go",
+          "translation": "N-gō (pl. ma-ngō)",
+          "pronunciation": "n-gō (pl. ma-ngō)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -48006,8 +48006,8 @@
         },
         {
           "english": "Charcoal",
-          "translation": "I-kaa; ma",
-          "pronunciation": "i kaa",
+          "translation": "I-kaa (pl. ma-kaa)",
+          "pronunciation": "i-kaa (pl. ma-kaa)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -48036,8 +48036,8 @@
         },
         {
           "english": "Son, boy",
-          "translation": "Mwana; syana. Kī-vīsī; i- (boy)",
-          "pronunciation": "mwa-na",
+          "translation": "Mwana (pl. syana); Kī-vīsī (pl. i-vīsī, boy)",
+          "pronunciation": "mwana (pl. syana); kī-vīsī (pl. i-vīsī, boy)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -48072,8 +48072,8 @@
         },
         {
           "english": "Crocodile",
-          "translation": "Ki-ngganggi; i",
-          "pronunciation": "ki ngang-i",
+          "translation": "Ki-ngganggi (pl. i-ngganggi)",
+          "pronunciation": "ki-ngganggi (pl. i-ngganggi)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -48090,8 +48090,8 @@
         },
         {
           "english": "White man",
-          "translation": "Mū-sūnggū; a",
-          "pronunciation": "mu-sunggu",
+          "translation": "Mū-sūnggū (pl. a-sūnggū)",
+          "pronunciation": "mū-sūnggū (pl. a-sūnggū)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -48126,8 +48126,8 @@
         },
         {
           "english": "Rhinoceros",
-          "translation": "M-būzya; ma",
-          "pronunciation": "m-buzya",
+          "translation": "M-būzya (pl. ma-mbūzya)",
+          "pronunciation": "m-būzya (pl. ma-mbūzya)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -48150,8 +48150,8 @@
         },
         {
           "english": "Guinea-fowl",
-          "translation": "Ṅ-gāngga; ma",
-          "pronunciation": "n-gangga",
+          "translation": "Ṅ-gāngga (pl. ma-ngāngga)",
+          "pronunciation": "ṅ-gāngga (pl. ma-ngāngga)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -48168,8 +48168,8 @@
         },
         {
           "english": "Hippopotamus",
-          "translation": "N-gūū; ma",
-          "pronunciation": "n-guu",
+          "translation": "N-gūū (pl. ma-ngūū)",
+          "pronunciation": "n-gūū (pl. ma-ngūū)",
           "context": "12. Kamba — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
         },
         {
@@ -49325,7 +49325,7 @@
           "english": "here",
           "translation": "vaa",
           "context": "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages (1904) — Kamba (Nganyawa dialect)",
-          "audioFile": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/audio/kamba/vaa.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/vaa.opus"
         },
         {
           "english": "hide (v.)",
@@ -52749,22 +52749,12 @@
         },
         {
           "english": "Gun",
-          "translation": "Mū-siṅga",
+          "translation": "Mū-siṅga (pl. mi-siṅga)",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 12. Kamba"
         },
         {
           "english": "Gun",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 12. Kamba"
-        },
-        {
-          "english": "Gun",
-          "translation": "I-vūti",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 12. Kamba"
-        },
-        {
-          "english": "Gun",
-          "translation": "ma",
+          "translation": "I-vūti (pl. ma-vūti)",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 12. Kamba"
         },
         {
@@ -53828,5 +53818,5 @@
   "source": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019); Roberts-Kohno & Bickmore (2019) LSP #190 Ch. 10 Kikamba Melodic Tone (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kam",
   "glottocode": "kamb1297",
-  "totalEntries": 9752
+  "totalEntries": 9750
 }

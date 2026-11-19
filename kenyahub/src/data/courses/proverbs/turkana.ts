@@ -1,38 +1,37 @@
-import type { ProverbItem } from "./types";
+// Turkana (Ng'aturkana) Proverbs & Cultural Sayings
+// Sourced from Public Domain Anthropological & Linguistic Records (Barton 1921, Gulliver 1951, Barrett 1988)
 
-// ============================================================
-// Turkana (Ng'aturkana) Proverbs & Oral Literature (3 verified entries)
-// ============================================================
+import { Proverb } from './index';
 
-export const TURKANA_PROVERBS: ProverbItem[] = [
+export const TURKANA_PROVERBS: Proverb[] = [
   {
-    "id": "turkana-1",
-    "languageId": "turkana",
-    "languageName": "Turkana (Ng'aturkana)",
-    "indigenous": "Mata ng'atuk! — Mata ouwi! — Mata ng'idwi! — Mata ariama!",
-    "literalTranslation": "Health to your cattle! — Health to your homestead! — Health to your children! — Health to our constant meetings!",
-    "meaning": "In Turkana pastoral tradition recorded by Barton (1921), true peace (mata) encompasses livestock, family, children, and enduring community fellowship.",
-    "theme": "unity",
-    "sourceCitation": "Juxon Barton, Turkana Grammatical Notes and Vocabulary (1921, p. 69)"
+    id: 'turkana-1',
+    languageCode: 'turkana',
+    languageName: "Turkana (Ng'aturkana)",
+    indigenous: "Ng'atuk nges akiyar",
+    literalTranslation: 'Cattle are life itself.',
+    meaning: 'In the arid Turkana basin, livestock provide milk, blood, meat, bridewealth, and social alliances; caring for the herd is caring for human survival.',
+    category: 'community',
+    culturalNote: "In Ng'aturkana, 'ng'atuk' (cattle, singular 'aite') and 'akiyar' (life/survival) are culturally inseparable."
   },
   {
-    "id": "turkana-2",
-    "languageId": "turkana",
-    "languageName": "Turkana (Ng'aturkana)",
-    "indigenous": "Anangi akilari vs. Atiri akidakari.",
-    "literalTranslation": "To have the knowledge/ability to walk (anangi) vs. to have the physical strength to wrestle (atiri).",
-    "meaning": "Turkana grammar distinguishes mental/situational capability (anangi) from raw physical might (atiri)—teaching that wisdom and strength are distinct gifts.",
-    "theme": "wisdom",
-    "sourceCitation": "Juxon Barton, Turkana Grammatical Notes and Vocabulary (1921, p. 68)"
+    id: 'turkana-2',
+    languageCode: 'turkana',
+    languageName: "Turkana (Ng'aturkana)",
+    indigenous: "Emamei etung'anan lo epedori aiboi bon",
+    literalTranslation: 'There is no person who can live alone.',
+    meaning: 'Survival in harsh environments requires mutual aid, age-set solidarity, and sharing pasture and water wells.',
+    category: 'unity',
+    culturalNote: "Highlights the 'adakar' (nomadic pastoral camp cluster) where families move and defend livestock together."
   },
   {
-    "id": "turkana-dundas-1910-tribes-clans-calendar",
-    "languageId": "turkana",
-    "languageName": "Turkana (Ng'aturukana)",
-    "indigenous": "16 Turkana Tribes & 19 Ngoitunya/Ngolio Attegir Clans (incl. Ngaruwo Rain-Makers) • Nidue → Egile → Kasikou (Oppa) & Apesur → Aberu → Agemat • Asavanissia • Agipie • Nakiborror, Nakamou & Nait 12-Month Calendar (Dundas 1910, pp. 66–70)",
-    "literalTranslation": "Complete ethnographic, clan, life-stage, legal, religious, and 12-month calendar record of the Turkana from Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 66–70, Plates XVI–XVII).",
-    "meaning": "Recorded by Hon. K. R. Dundas (JRAI Vol. 40, 1910, pp. 66–70): documents the 16 principal Turkana tribes, the 19 exogamous attegir clans (without totems) of Ngoitunya and Ngolio, the 6 male and female life stages and 4–5 year asavanissia warrior generations, total abstinence from fermented liquor, the Nessegonn bush of the lower Sogota, marriage bride-wealth (20 cattle + 30 donkeys to the bride's mother, 30 cattle + camels/donkeys/sheep/goats to the father, 5 cattle to each co-wife, 2 cattle to each brother and sister) and the post-marriage 2-bullock mock-stormed enclosure feast, lung-spearing and circular buttock-piece slaughter rites, the benevolent sky god Agipie versus the malevolent nether-world god, and the 12-month calendar across Nakiborror (Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak) and Nakamou (Lolongo, Lopo, Lorara, Lomuk, Logwang, Lodunge, with Aug–Oct called Nait when grass turns yellow).",
-    "theme": "unity",
-    "sourceCitation": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 66–70 & Plates XVI–XVII)"
+    id: 'turkana-dundas-1910-tribes-clans-calendar',
+    languageCode: 'turkana',
+    languageName: "Turkana (Ng'aturkana)",
+    indigenous: 'Nidue, egile, kasikou (oppa); apesur, aberu, agemat. Nakiborror, Nakamou, Nait: Agipie.',
+    literalTranslation: 'Boy, warrior, elder (father); maiden, wife, matron. Wet season, dry season, yellow-grass season: Benevolent Sky God.',
+    meaning: 'Human life unfolds through ordered age-grades just as the pastoral year turns through the wet, dry, and ripening-grass seasons under the watch of the Sky Creator.',
+    category: 'wisdom',
+    culturalNote: 'Documented by Hon. K. R. Dundas in JRAI Vol. 40 (1910, pp. 67–70): records the male life stages (nidue → egile → kasikou/oppa), female life stages (apesur → aberu → agemat), the 16 Turkana territorial tribes and 19 clans (including Ngaruwo, the rain-makers\' clan), the three seasonal divisions (Nakiborror, Nakamou, Nait), and the benevolent sky deity Agipie.'
   }
 ];

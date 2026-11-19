@@ -64,9 +64,9 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "Hollis (1909, pp. 90–91, 230) & universal Kalenjin greeting"
           },
           {
-            "target": "Epa!)",
-            "source": "Epa!)",
-            "pronunciation": "chamgei / so-pai",
+            "target": "Epa! / Eiko!",
+            "source": "Peace! (Male greeting response to Sopai!)",
+            "pronunciation": "eh-pah / ey-koh",
             "hint": "Hollis (1909, pp. 90–91, 230) & universal Kalenjin greeting"
           },
           {
@@ -82,19 +82,19 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "Hollis (1909, pp. 43, 90–91, 230–231)"
           },
           {
-            "target": "chiito (indef. chi",
+            "target": "chiito (indef. chi, pl. piik)",
             "source": "the person (pl. the people)",
             "pronunciation": "chii-to",
             "hint": "Class I irregular noun (Hollis 1909, pp. 160, 168)"
           },
           {
-            "target": "lakwet (indef. lakwa",
+            "target": "lakwet (indef. lakwa, pl. lakōk)",
             "source": "the child (pl. the children)",
             "pronunciation": "lakwet",
             "hint": "Class II noun (Hollis 1909, p. 169)"
           },
           {
-            "target": "teta (indef. tany",
+            "target": "teta (indef. tany, pl. tuka)",
             "source": "the cow, ox (pl. the cattle)",
             "pronunciation": "te-ta",
             "hint": "Class XI irregular noun (Hollis 1909, p. 180)"
@@ -159,7 +159,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Cham-ke sapon, cham-ke lakōk, cham-ke tuka, cham-ke ka.",
-            "source": "May your health be good, and may the children, cattle, and all at home be well ."
+            "source": "May your health be good, and may the children, cattle, and all at home be well."
           }
         ],
         "authoredExercises": [
@@ -274,19 +274,19 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "target": "akeenge (akeng)",
             "source": "One (1)",
-            "pronunciation": "a-keenge aeng' so-mok ang'wan muut",
+            "pronunciation": "a-keenge (a-keng)",
             "hint": "Cardinals 1–5 (Hollis 1909, pp. 88, 183)"
           },
           {
             "target": "aeng' (oieñg)",
             "source": "Two (2)",
-            "pronunciation": "a-keenge aeng' so-mok ang'wan muut",
+            "pronunciation": "a-eng' (oi-engg)",
             "hint": "Cardinals 1–5 (Hollis 1909, pp. 88, 183)"
           },
           {
             "target": "somok",
             "source": "Three (3)",
-            "pronunciation": "a-keenge aeng' so-mok ang'wan muut",
+            "pronunciation": "so-mok",
             "hint": "Cardinals 1–5 (Hollis 1909, pp. 88, 183)"
           },
           {
@@ -297,7 +297,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "target": "Ii-e ñgetuny lel",
-            "source": "The lion bears a hyena/jackal (Hollis 1909, p. 124, Proverb #2)",
+            "source": "The lion bears a hyena/jackal",
             "pronunciation": "ii-e ngge-tuny lel",
             "hint": "ñgetuny = lion, lel = jackal/hyena"
           },
@@ -315,7 +315,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "target": "Iput-i tany aku pa-kelek angwan",
-            "source": "The ox falls in spite of its four legs (Hollis 1909, p. 125, Proverb #8)",
+            "source": "The ox falls in spite of its four legs",
             "pronunciation": "iput-i tany aku pa-kelek angwan",
             "hint": "Even the strong can stumble"
           }
@@ -323,11 +323,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Iput-i tany aku pa-kelek angwan.",
-            "source": "The ox falls in spite of its four legs ."
+            "source": "The ox falls in spite of its four legs."
           },
           {
             "target": "Inga-i ñgom, i-ker-i-ke kumut-i?",
-            "source": "However clever you may be, can you see the back of your neck? ."
+            "source": "However clever you may be, can you see the back of your neck?"
           }
         ],
         "authoredExercises": [
@@ -502,11 +502,11 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "'Ñgi-'om-e-chi pôton kel-ok.",
-            "source": "Let us put our trembling legs together in one place, and we shall obtain support one from the other ."
+            "source": "Let us put our trembling legs together in one place, and we shall obtain support one from the other."
           },
           {
             "target": "'Ñgo-samis-it muria kwa ko.",
-            "source": "If a rat stinks, it goes home; and if a man is ill, he goes to his relations to be attended to ."
+            "source": "If a rat stinks, it goes home; and if a man is ill, he goes to his relations to be attended to."
           }
         ],
         "authoredExercises": [
@@ -625,7 +625,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "ngeta"
           },
           {
-            "target": "or. (See Road .)",
+            "target": "oret (indef. or, pl. ortinuek)",
             "source": "Clan",
             "pronunciation": "or"
           }
@@ -711,7 +711,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kalenjin (Kalenjin) in C. W. Hobley (1902, 1903), Sir Harry Johnston (1902), A. C. Hollis & Sir Charles Eliot (1909) & Hon. K. R. Dundas (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Uasin Gishu, Nandi, Kericho.",
         "words": [
           {
-            "target": "chiito (indef. chii",
+            "target": "chiito (indef. chii, pl. piik)",
             "source": "person (pl. people)",
             "pronunciation": "chii-to",
             "hint": "Nandi / Kipsigis"
@@ -758,7 +758,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "target": "oo",
             "source": "Elder",
-            "pronunciation": "or eldest oo"
+            "pronunciation": "oh-oh"
           }
         ],
         "sentences": [
@@ -1247,7 +1247,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "target": "kām",
             "source": "Eat",
-            "pronunciation": "kah"
+            "pronunciation": "kahm"
           },
           {
             "target": "Mwaitā",
@@ -1271,7 +1271,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "source": "Goat — Cow."
           },
           {
-            "target": "koii. — mwaita",
+            "target": "koii — mwaita",
             "source": "Egg — Oil."
           }
         ],
@@ -1300,7 +1300,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "type": "translate_to_english",
-            "prompt": "Translate to English: \"koii.\"",
+            "prompt": "Translate to English: \"koii\"",
             "correctAnswer": "Egg",
             "acceptedAnswers": [
               "Egg",
@@ -1322,7 +1322,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
                 "right": "Cow"
               },
               {
-                "left": "koii.",
+                "left": "koii",
                 "right": "Egg"
               },
               {
@@ -1650,12 +1650,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "lapcha"
           },
           {
-            "target": "nianja. (See Lake .)",
+            "target": "nyanja (nyanjet)",
             "source": "Sea",
             "pronunciation": "nianja"
           },
           {
-            "target": "parak. (See Heaven .)",
+            "target": "parak",
             "source": "Sky",
             "pronunciation": "parak"
           },
@@ -2304,7 +2304,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "target": "petōt",
             "source": "Day",
-            "pronunciation": "pe-toh"
+            "pronunciation": "peh-toht"
           },
           {
             "target": "korirun (korirunet)",
@@ -2756,7 +2756,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
               "inyol-chi (pr. inyol-chi-n, p.p. ka-inyol-chi)",
               "inyol-chi"
             ],
-            "hint": "Starts with \", \""
+            "hint": "Starts with \"in\""
           },
           {
             "type": "translate_to_english",
@@ -2904,7 +2904,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kalenjin term for \"Yesterday\": ___",
             "correctAnswer": "amut",
             "options": [
-              "oloitigo  )",
+              "oloitigo",
               "neñgwañg",
               "ñgwañg",
               "amut"
@@ -3010,7 +3010,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "prompt": "Complete the Kalenjin term for \"Wrinkle\": ___",
             "correctAnswer": "siriny",
             "options": [
-              "akania  )",
+              "akania",
               "nyulnyul-ke",
               "sir",
               "siriny"
@@ -3131,8 +3131,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "correctAnswer": "tañgany",
             "options": [
               "iim",
-              "kia  )",
-              "poiisio  )",
+              "kia",
+              "poiisio",
               "tañgany"
             ],
             "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
@@ -3247,7 +3247,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "options": [
               "imelel",
               "res",
-              "ponin  )",
+              "ponin",
               "ipuch"
             ],
             "hint": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain)",
@@ -3292,7 +3292,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "target": "Chebkukusiot",
-            "source": "Buzzard (Nandi totems #1–4)",
+            "source": "Buzzard",
             "pronunciation": "chebkukusiot"
           },
           {
@@ -3355,7 +3355,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Arab Kibosone (Arab = lakwet-ap / son of).",
-            "source": "Son of Kibosone — country where the lightning spirit Ilet died after being wounded by the Oggiek on Mount Tinderet ."
+            "source": "Son of Kibosone — country where the lightning spirit Ilet died after being wounded by the Oggiek on Mount Tinderet."
           }
         ],
         "authoredExercises": [
@@ -3389,7 +3389,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
   {
     "id": "kalenjin-unit-14",
     "unitNumber": 14,
-    "title": "Nandi, Kamásia & Dorobo",
+    "title": "Johnston (1902): Nandi, Kamásia & Dorobo Sentences & Lexicon",
     "description": "Master all 19 Nandi conversational sentences from p. 925 of Sir Harry Johnston's The Uganda Protectorate, Vol. II (1902), alongside Set 2 Nandi/Kamásia/Dorobo vocabulary (pp. 913–924) and Chapter XIX ethnography (pp. 855–884).",
     "icon": "Shield",
     "color": "#9333EA",
@@ -3402,7 +3402,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "tips": "Notice how Nandi distinguishes singular and plural imperatives and salutations: Tiamge! (singular 'How do you do?') vs. Otyamge! (plural, with 2nd person plural prefix O-), and attaches reflexive -ge in Ribge! ('Take care!') and istoge ēñor! ('Get out of the road!').",
         "words": [
           {
-            "target": "Tiamge (sg.), Otyamge",
+            "target": "Tiamge! (sg.) / Otyamge! (pl.)",
             "source": "How do you do? (sg./pl.)",
             "pronunciation": "tiamge"
           },
@@ -3520,7 +3520,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Tiamge, Cōriōnyo! Kanyīte — kōnō pek āē. Kongoi, Eñgōñgōi! Kātigē!",
-            "source": "How do you do, my good friend! Wait a bit — give me water to drink. Thank you! Goodbye! ."
+            "source": "How do you do, my good friend! Wait a bit — give me water to drink. Thank you! Goodbye!"
           }
         ]
       }
@@ -3529,7 +3529,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
   {
     "id": "kalenjin-unit-15",
     "unitNumber": 15,
-    "title": "& Sir Charles Eliot",
+    "title": "A. C. Hollis & Sir Charles Eliot (1909): Nandi Monograph",
     "description": "Master Nandi salutations (Sopai! / Takwenya!), the 6 Emet counties, 15 Pororiet districts, 17 Oret clans, 7 Ipinda age-sets, 12 ecological months, 57 Atindonik proverbs, 76 Tongōchik enigmas, and 5 interlinear Nandi stories from A. C. Hollis (1909).",
     "icon": "BookOpen",
     "color": "#9333EA",
@@ -3563,7 +3563,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "Hollis (1909, Tongōchik-ap-Nandi, p. 133)"
           },
           {
-            "target": "Kiptamo, Iwat-kut, Wake, Ñgei, Rob-tui, Puret, Epeso, Kipsunde",
+            "target": "Kiptamo, Iwat-kut, Wake, Ñgei, Rob-tui, Puret, Epeso, Kipsunde, Kipsunde oieñg, Mulkul, Mulkulik oieñg, Ñgotioto",
             "source": "The 12 Nandi ecological months (February to January)",
             "pronunciation": "kiptamo",
             "hint": "Hollis (1909, pp. 94–95)"
@@ -3578,7 +3578,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Sopai, murén-ju! Takwenya, chepiosō-chu! Asis! kōn-ech sapon, ak tuka, ak cheko, ak lakōk!",
-            "source": "Greetings, O warriors! Greetings, O women! O God (Asis), give us health, and cattle, and milk, and children! ."
+            "source": "Greetings, O warriors! Greetings, O women! O God (Asis), give us health, and cattle, and milk, and children!"
           }
         ]
       }
@@ -3587,7 +3587,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
   {
     "id": "kalenjin-unit-16",
     "unitNumber": 16,
-    "title": "Zwarts, Chelimo & Jerono",
+    "title": "Zwarts, Chelimo & Jerono (2024): The Reflexive kee(y) in Kalenjin",
     "description": "Master all 18 pages (pp. 539–556) of Joost Zwarts, Andrew Chelimo & Prisca Jerono's 2024 study 'The reflexive in Kalenjin: Its syntactic status and semantic functions' across Endo-Marakwet (1,815 NT tokens), Keiyo, Tugen, Pökoot, Nandi, Kipsigis, and Cherang'any: enclitic vs. suffix status, ATR opacity, nominal/prepositional/pronoun uses, middle voice & inanimate anticausatives, arity reduction, and three-way typological polysemy.",
     "icon": "BookOpen",
     "color": "#9333EA",
@@ -3611,12 +3611,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "target": "ATR Opacity : neet-eech vs. toorēt-ēēch",
-            "source": "1PL suffix -eech and contemporative -yō/-sōōt harmonise in +ATR, whereas enclitic",
+            "source": "1PL suffix -eech and contemporative -yō/-sōōt harmonise in +ATR, whereas enclitic keey is opaque to ATR harmony",
             "pronunciation": "atr-opacity-neet-eech-vs"
           },
           {
             "target": "Lexicalised Stems (pp. 541, 543) & (3) i-kerkeéy keè laak-o-chu",
-            "source": "karkeey, cheepaykeey(aan) ('prostitute'), peerkeey(aan) ('virgin'), kimekeyaan",
+            "source": "karkeey ('be similar'), cheepaykeey(aan) ('prostitute'), peerkeey(aan) ('virgin'), kimekeyaan ('widower')",
             "pronunciation": "i-ker-ke-ey ke-e laa-ko-chu / ki-ng'war kee / ki-iim kee",
             "hint": "Zwarts, Chelimo & Jerono (2024, §§2–3, pp. 541, 543–544, Examples 3–4)"
           },
@@ -3687,7 +3687,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "hint": "Zwarts, Chelimo & Jerono (2024, §5, pp. 546–547, Example 11)"
           },
           {
-            "target": "(13a–f) Endo-Marakwet Middle Categories (p. 547): Spontaneous: takus",
+            "target": "(13a–f) Endo-Marakwet Middle Categories (p. 547): Spontaneous: takus keey ('sprout')",
             "source": "Complete classification of Endo-Marakwet middle voice constructions with keey",
             "pronunciation": "endo-marakwet-middle-categories-spontaneous",
             "hint": "Zwarts, Chelimo & Jerono (2024, §5, p. 547, Example 13a–f)"
@@ -3708,8 +3708,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "mil-kee-koyin"
           },
           {
-            "target": "(16) Contemporative -yō Natural Reciprocals (p. 549): choomnyō",
-            "source": "Natural reciprocal verbs in -yō (Rottland 1982: 127) and their",
+            "target": "(16) Contemporative -yō Natural Reciprocals (p. 549): choomnyō ('love each other')",
+            "source": "Natural reciprocal verbs in -yō (Rottland 1982: 127) and their interaction with enclitic keey",
             "pronunciation": "contemporative--yō-natural-reciprocals",
             "hint": "Zwarts, Chelimo & Jerono (2024, §5, pp. 548–549, Examples 16–17)"
           },
@@ -3791,7 +3791,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           },
           {
             "target": "Obj-CA: -lɛ-ndʒ-ɑn (1SG), -lɛ-ndʒ-in (2SG), -lɛ-ndʒ-i (3SG/PL)",
-            "source": "Suffixed Object Complementizer Agreement parasitic on Subj-CA: 'I told you [2SG]",
+            "source": "Suffixed Object Complementizer Agreement parasitic on Subj-CA: 'I told you [2SG] that...'",
             "pronunciation": "a-lɛ-ndʒin / kɔ-lɛ-ndʒi / kɛ-lɛ-ndʒɛtʃ / o-lɛ-ndʒɔɔɣ",
             "hint": "Michael Diercks & Meghana Rao (2019, Ch. 20, pp. 376–385, DOI: 10.5281/zenodo.3367166)"
           },
@@ -4003,7 +4003,24 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "somok"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Ka-a-we sipitali amu miani metit.",
+            "source": "I went to the hospital because my head is aching."
+          },
+          {
+            "target": "Ripge eng' oret ye iwendi taonit.",
+            "source": "Take care on the road when you travel to town."
+          },
+          {
+            "target": "Ki-ruok-chin-i kiruogik piik tugul eng' kalyet.",
+            "source": "The council elders judge all people in peace."
+          },
+          {
+            "target": "Kōn-ech Asis sapon ak kalyet eng' emet.",
+            "source": "May God grant us health and peace in the land."
+          }
+        ]
       }
     ]
   }

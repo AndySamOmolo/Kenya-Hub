@@ -26,6 +26,7 @@ import {
   androidRipple,
   pressableStyle,
 } from "../src/theme";
+import { VerifiedAudioPlayer } from "../src/components/VerifiedAudioPlayer";
 
 function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
   const { theme, isDark, themeReady } = useTheme();
@@ -45,6 +46,7 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
         translucent
         backgroundColor="transparent"
       />
+      <VerifiedAudioPlayer />
       <Stack
         screenOptions={{
           headerShown: false,

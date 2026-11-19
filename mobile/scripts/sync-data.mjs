@@ -47,6 +47,7 @@ const libFiles = [
   "learn-engine.ts",
   "learn-progress.ts",
   "dictionary-search.ts",
+  "language-audio.ts",
 ];
 for (const file of libFiles) {
   const srcPath = resolve(source, "lib", file);
@@ -68,6 +69,13 @@ if (existsSync(registryPath)) {
     registryContent.replace(/from\s+(['"])@\/data\/language-sources(['"])/g, "from $1../language-sources$2"),
     "utf8"
   );
+}
+
+
+// Sync verified audio manifest metadata from kenyahub/public/audio-manifest.json
+const audioManifestSrc = resolve(root, "kenyahub/public/audio-manifest.json");
+if (existsSync(audioManifestSrc)) {
+  writeFileSync(resolve(destination, "data/audio-manifest.json"), readFileSync(audioManifestSrc));
 }
 
 console.log("Synchronized KenyaHub modular tool registry, 23 language courses, proverbs, dictionaries, and datasets to mobile/src/shared.");

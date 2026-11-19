@@ -667,7 +667,7 @@ export const MWAMZANDI_2022_LEXICAL_HIGHLIGHTS = [
     "page": 237
   },
   {
-    "word": "Table 2 (p. 240): HN = Subj, topic (28 amba vs. 70 tensed, χ²=18, p<0.001) • HN = Obj, topic (65 amba vs. 36 tensed, shift transition) • HN = Obj, non-topic (27 amba vs. 99 tensed) • HN = PP, topic (23 amba vs. 18 tensed) • HN = PP, non-topic (11 amba vs. 57 tensed, χ²=31, p<0.001) • Examples (25a–c)–(32): Nyumba [a-li-yo-kaa Beneti], Adili a-li-vunja amri [a-li-yo-p-ew-a], Waandishi [wa-li-o-fuata], Waandamanaji... polisi [amba-o wa-li-jibu mapigo], Rehema... Bikiza [a-li-ye-leta taarifa ya kifo], ghadhabu ya ndugu yake amba-ye a-li-u-kosa u-rithi huo, Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luand",
+    "word": "Table 2 (p. 240): HN = Subj, topic (28 amba vs. 70 tensed, χ²=18, p<0.001) • HN = Obj, topic (65 amba vs. 36 tensed, shift transition) • HN = Obj, non-topic (27 amba vs. 99 tensed) • HN = PP, topic (23 amba vs. 18 tensed) • HN = PP, non-topic (11 amba vs. 57 tensed, χ²=31, p<0.001) • Examples (25a–c)–(32): Nyumba [a-li-yo-kaa Beneti], Adili a-li-vunja amri [a-li-yo-p-ew-a], Waandishi [wa-li-o-fuata], Waandamanaji... polisi [amba-o wa-li-jibu mapigo], Rehema... Bikiza [a-li-ye-leta taarifa ya kifo], ghadhabu ya ndugu yake amba-ye a-li-u-kosa u-rithi huo, Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luanda",
     "translation": "Information-structure and topic transition matrix across all 440 HCS relative clauses (continue vs. shift transitions) and verbatim discourse examples (25)–(32) (pp. 238–242)",
     "language": "swahili",
     "page": 240

@@ -15,7 +15,8 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Feather } from '@expo/vector-icons';
+import { Feather, Ionicons } from '@expo/vector-icons';
+import { playVerifiedAudio, hasVerifiedAudio } from '../lib/mobile-audio';
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
 import { PUBLISHED_COURSES, getCourse } from '../shared/data/courses/registry';
 import { getLanguageIdentity } from '../shared/data/language-identity';
@@ -312,6 +313,7 @@ export default function LanguageCourseTool({
             source: s,
             pronunciation: e.pronunciation || undefined,
             example: e.context || undefined,
+            audioFile: e.audioFile || undefined,
           });
         }
         return {
@@ -1150,9 +1152,34 @@ export default function LanguageCourseTool({
                   </View>
                 ) : null}
 
-                <Text style={[styles.teachTargetWord, { color: colors.text }]}>
-                  {activeSkill.words[learnCardIdx].target}
-                </Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+                  <Text style={[styles.teachTargetWord, { color: colors.text }]}>
+                    {activeSkill.words[learnCardIdx].target}
+                  </Text>
+                  {hasVerifiedAudio({
+                    translation: activeSkill.words[learnCardIdx].target,
+                    audioFile: activeSkill.words[learnCardIdx].audioFile || activeSkill.words[learnCardIdx].audio,
+                  }) ? (
+                    <Pressable
+                      onPress={() =>
+                        playVerifiedAudio({
+                          translation: activeSkill.words[learnCardIdx].target,
+                          audioFile: activeSkill.words[learnCardIdx].audioFile || activeSkill.words[learnCardIdx].audio,
+                        })
+                      }
+                      accessibilityRole="button"
+                      accessibilityLabel={`Play verified recording for ${activeSkill.words[learnCardIdx].target}`}
+                      hitSlop={10}
+                      style={{
+                        padding: 6,
+                        borderRadius: 999,
+                        backgroundColor: `${langColor}18`,
+                      }}
+                    >
+                      <Ionicons name="volume-high-outline" size={20} color={langColor} />
+                    </Pressable>
+                  ) : null}
+                </View>
 
                 {(() => {
                   const currentWord = activeSkill.words[learnCardIdx];
@@ -3127,9 +3154,36 @@ export default function LanguageCourseTool({
                   </Text>
                 </View>
 
-                <Text style={[styles.flashcardMainWord, { color: colors.text }]}>
-                  {isCardFlipped ? currentFlashcard.source : currentFlashcard.target}
-                </Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+                  <Text style={[styles.flashcardMainWord, { color: colors.text }]}>
+                    {isCardFlipped ? currentFlashcard.source : currentFlashcard.target}
+                  </Text>
+                  {!isCardFlipped &&
+                  hasVerifiedAudio({
+                    translation: currentFlashcard.target,
+                    audioFile: currentFlashcard.audioFile || currentFlashcard.audio,
+                  }) ? (
+                    <Pressable
+                      onPress={(ev) => {
+                        ev.stopPropagation?.();
+                        playVerifiedAudio({
+                          translation: currentFlashcard.target,
+                          audioFile: currentFlashcard.audioFile || currentFlashcard.audio,
+                        });
+                      }}
+                      accessibilityRole="button"
+                      accessibilityLabel={`Play verified recording for ${currentFlashcard.target}`}
+                      hitSlop={10}
+                      style={{
+                        padding: 6,
+                        borderRadius: 999,
+                        backgroundColor: `${langColor}18`,
+                      }}
+                    >
+                      <Ionicons name="volume-high-outline" size={20} color={langColor} />
+                    </Pressable>
+                  ) : null}
+                </View>
 
                 {!isCardFlipped && currentFlashcard.pronunciation ? (
                   <Text style={{ fontSize: 13, color: langColor, marginTop: 6 }}>

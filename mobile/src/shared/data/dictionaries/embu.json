@@ -176,41 +176,6 @@
           "context": "Kîembu / Kĩmĩĩrũ • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Bone",
-          "translation": "I-hīndī",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Bone",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Bone",
-          "translation": "Gi-ende",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Country",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Country",
-          "translation": "Gi-thaka",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Stone",
-          "translation": "I-hīga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Stone",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "One",
           "translation": "mwe",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -310,13 +275,13 @@
         },
         {
           "english": "Chief",
-          "translation": "Mu-thamaki; a-. Mu-nene; a",
-          "pronunciation": "mu-thamaki a- mu-nene a",
+          "translation": "Mu-thamaki (pl. a-thamaki); Mu-nene (pl. a-nene)",
+          "pronunciation": "mu-thamaki / mu-nene",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Child",
-          "translation": "Mwana; ciana and aana. Ka-ana; tw-ana. Ka-hi; tū-hi. Ka-rego; tu",
+          "translation": "Mwana (pl. ciana / aana); Ka-ana (pl. tw-ana); Ka-hi (pl. tū-hi); Ka-rego (pl. tū-rego)",
           "pronunciation": "mwana",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -340,8 +305,8 @@
         },
         {
           "english": "Sister",
-          "translation": "Mū-rū wa maiya (K.). Mū-ārī wa maitū",
-          "pronunciation": "mu-ru wa maiya",
+          "translation": "Mwarĩ wa maitũ (Mū-ārī wa maitū)",
+          "pronunciation": "mwari wa maitu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -511,11 +476,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Brother",
-          "translation": "Mw",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Chief",
           "translation": "Mu-thamaki",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -561,28 +521,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Child",
-          "translation": "tu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Doctor (medicine man)",
           "translation": "Mū-ragūri",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
           "english": "Father",
-          "translation": "), A-va (E",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Father",
           "translation": "Da-ta",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Father",
-          "translation": "Nu-, I-the",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -603,11 +548,6 @@
         {
           "english": "Girl",
           "translation": "i-rigū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Grandparent",
-          "translation": "Ūma, M",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -707,7 +647,7 @@
         },
         {
           "english": "Leg",
-          "translation": "Kū-gūrū; ma-. Mū-thīrīmo (shin). Kī-zimo",
+          "translation": "Kū-gūrū (pl. ma-gūrū); Mū-thīrīmo (shin); Kī-zimo",
           "pronunciation": "ku-guru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -761,13 +701,13 @@
         },
         {
           "english": "Back",
-          "translation": "Mu-gonggo; mi-. M-buta (Cuka)",
+          "translation": "Mu-gonggo (pl. mi-gonggo); M-buta (Cuka)",
           "pronunciation": "mu-gonggo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Foot",
-          "translation": "I-kinya; ma-. Kū-gūrū; ma",
+          "translation": "I-kinya (pl. ma-kinya); Kū-gūrū (pl. ma-gūrū)",
           "pronunciation": "i-kinya",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -839,8 +779,8 @@
         },
         {
           "english": "Heart",
-          "translation": "Ngoro; ma",
-          "pronunciation": "ngo-ro ma",
+          "translation": "Ngoro (pl. ma-ngoro)",
+          "pronunciation": "ngo-ro",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -887,7 +827,7 @@
         },
         {
           "english": "Hand, arm",
-          "translation": "njara /oko (pl. moko)",
+          "translation": "njara / guoko (pl. moko)",
           "pronunciation": "njara",
           "context": "Kîembu / Kĩmĩĩrũ • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -986,22 +926,12 @@
         },
         {
           "english": "Back",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Back",
           "translation": "M-buta",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
           "english": "Beard",
           "translation": "ki-reru",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Beard",
-          "translation": "ci",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1080,23 +1010,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Foot",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Hair",
           "translation": "N-juīrī",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Hair",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Hair",
-          "translation": "same or ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1120,11 +1035,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Heart",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Heel",
           "translation": "N-dīra, Gī-tīnyī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -1137,11 +1047,6 @@
         {
           "english": "Knee",
           "translation": "ma-rū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Leg",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1165,16 +1070,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Neck",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Nose",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Shoulder",
           "translation": "Kī-āndi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -1192,11 +1087,6 @@
         {
           "english": "Spear",
           "translation": "I-tīmu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Spear",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1235,11 +1125,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Tooth",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Year",
           "translation": "Mw-āka",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -1275,8 +1160,8 @@
         },
         {
           "english": "Ant",
-          "translation": "Thi-girriri, N-digirriri; cia",
-          "pronunciation": "i-girriri n-digirriri",
+          "translation": "Thi-girriri, N-digirriri (pl. cia-)",
+          "pronunciation": "thi-girriri / n-digirriri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -1371,8 +1256,8 @@
         },
         {
           "english": "Hyena",
-          "translation": "Hiti; ma",
-          "pronunciation": "hi-ti ma",
+          "translation": "Hiti (pl. ma-hiti)",
+          "pronunciation": "hi-ti",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -1449,8 +1334,8 @@
         },
         {
           "english": "Crocodile",
-          "translation": "Ki-ngganggi; i",
-          "pronunciation": "ki-ngganggi i",
+          "translation": "Ki-ngganggi (pl. i-ngganggi)",
+          "pronunciation": "ki-ngganggi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -1495,11 +1380,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Ant",
-          "translation": "cia",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Ant, white (termite)",
           "translation": "Mu-thwa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -1520,16 +1400,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Bee",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Bee",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Bird",
           "translation": "ka-nyoni",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -1545,28 +1415,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Buffalo",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Buffalo",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Bull",
           "translation": "N-degwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Bull",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Bull",
-          "translation": "same",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1580,23 +1430,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Cat",
-          "translation": "ci",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Cow",
           "translation": "N-ombe",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Cow",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Cow",
-          "translation": "same",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1610,23 +1445,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Dog",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Elephant",
           "translation": "N-jogū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Elephant",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Elephant",
-          "translation": "same",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1635,23 +1455,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Fish",
-          "translation": "ci",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Goat",
           "translation": "M-būri",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Goat",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Goat",
-          "translation": "same",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1675,11 +1480,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Hyena",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Leopard",
           "translation": "N-garī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -1700,23 +1500,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Rhinoceros",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Sheep",
           "translation": "Ngōndū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Sheep",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Sheep",
-          "translation": "same",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -1840,7 +1625,7 @@
         },
         {
           "english": "Hill",
-          "translation": "Ka-rima; tū",
+          "translation": "Ka-rima (pl. tū-rima)",
           "pronunciation": "ka-rima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -1852,7 +1637,7 @@
         },
         {
           "english": "Star",
-          "translation": "N-jātā; pl. same or ma",
+          "translation": "N-jātā (pl. same or ma-njātā)",
           "pronunciation": "n-jata",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -1894,13 +1679,13 @@
         },
         {
           "english": "Grass",
-          "translation": "Ny-eki; ma",
-          "pronunciation": "ny-eki ma",
+          "translation": "Ny-eki (pl. ma-nyeki)",
+          "pronunciation": "ny-eki",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Stone",
-          "translation": "I-hīga; ma",
+          "translation": "I-hīga (pl. ma-hīga)",
           "pronunciation": "i-higa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -1919,12 +1704,12 @@
         {
           "english": "Ground",
           "translation": "Thī; ma-thī. Tīri (soil)",
-          "pronunciation": "i",
+          "pronunciation": "thi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Island",
-          "translation": "Gī-cigīrīra; i",
+          "translation": "Gī-cigīrīra (pl. i-cigīrīra)",
           "pronunciation": "gi-cigirira",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -1948,8 +1733,8 @@
         },
         {
           "english": "Charcoal",
-          "translation": "I-kara; ma",
-          "pronunciation": "i-kara ma",
+          "translation": "I-kara (pl. ma-kara)",
+          "pronunciation": "i-kara",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -1996,7 +1781,7 @@
         },
         {
           "english": "Well, source",
-          "translation": "I-thīma; ma",
+          "translation": "I-thīma (pl. ma-thīma)",
           "pronunciation": "i-thima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -2258,11 +2043,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Brains",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Day",
           "translation": "Mū-thi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -2300,11 +2080,6 @@
         {
           "english": "Grass",
           "translation": "Ny-eki",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Grass",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -2359,27 +2134,12 @@
         },
         {
           "english": "Sky",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Sky",
           "translation": "Kī-rūmbī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
           "english": "Smoke",
           "translation": "N-dogo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Star",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Star",
-          "translation": "same or ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -2395,11 +2155,6 @@
         {
           "english": "Well, source",
           "translation": "I-thīma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Well, source",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         }
       ]
@@ -2453,13 +2208,13 @@
         },
         {
           "english": "Maize",
-          "translation": "M-bembē; ma",
+          "translation": "M-bembē (pl. ma-bembē)",
           "pronunciation": "m-bembe",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Banana",
-          "translation": "I-rigo; ma-. Gi-toke (fruit)",
+          "translation": "I-rigo (pl. ma-rigo); Gi-toke (fruit)",
           "pronunciation": "i-rigo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -2566,7 +2321,7 @@
           "context": "Wikipedia Embu_language — Sample phrases • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Toirrigate / water crops",
+          "english": "To irrigate / water crops",
           "translation": "kũnyuithia mĩmera maĩ",
           "pronunciation": "koony-uith-ia mee-me-ra maee",
           "context": "Kĩembu Core Verbs • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
@@ -2602,22 +2357,12 @@
         },
         {
           "english": "Banana",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Banana",
           "translation": "Gi-toke",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
           "english": "Egg",
           "translation": "I-tumbī",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Egg",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -2633,11 +2378,6 @@
         {
           "english": "Maize",
           "translation": "M-bembē",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Maize",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -2754,18 +2494,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Arrow",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Axe",
           "translation": "I-thanwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Axe",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -2789,28 +2519,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Charcoal",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Cloth",
           "translation": "Tama",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
           "english": "Cloth",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Cloth",
           "translation": "N-guo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Door",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -2821,11 +2536,6 @@
         {
           "english": "Hoe",
           "translation": "I-cembī",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Hoe",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -2846,11 +2556,6 @@
         {
           "english": "Knife",
           "translation": "hiū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Shield",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         }
       ]
@@ -3371,16 +3076,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Animal, wild beast",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Animal, wild beast",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Canoe",
           "translation": "Gi-taru",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -3393,11 +3088,6 @@
         {
           "english": "Road",
           "translation": "N-jīra",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Road",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -3557,11 +3247,6 @@
           "english": "War",
           "translation": "M-bāra",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "War",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         }
       ]
     },
@@ -3595,38 +3280,38 @@
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
-          "english": "Time zone",
+          "english": "Hour / Time",
           "translation": "Gĩthaa",
           "pronunciation": "githaa",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "May (Month 5)",
-          "translation": "Mweri wa gatano (Gat)",
+          "translation": "Mweri wa gatano",
           "pronunciation": "mweri wa gatano",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "June (Month 6)",
-          "translation": "Mweri wa gatantatũ (Gan)",
+          "translation": "Mweri wa gatantatũ",
           "pronunciation": "mweri wa gatantatu",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "July (Month 7)",
-          "translation": "Mweri wa mũgwanja (Mug)",
+          "translation": "Mweri wa mũgwanja",
           "pronunciation": "mweri wa mugwanja",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "March (Month 3)",
-          "translation": "Mweri wa kathatũ (Kat)",
+          "translation": "Mweri wa kathatũ",
           "pronunciation": "mweri wa kathatu",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "April (Month 4)",
-          "translation": "Mweri wa kana (Kan)",
+          "translation": "Mweri wa kana",
           "pronunciation": "mweri wa kana",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
@@ -3638,7 +3323,7 @@
         },
         {
           "english": "August (Month 8)",
-          "translation": "Mweri wa kanana (Knn)",
+          "translation": "Mweri wa kanana",
           "pronunciation": "mweri wa kanana",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
@@ -3650,19 +3335,19 @@
         },
         {
           "english": "January (Month 1)",
-          "translation": "Mweri wa mbere (Mbe)",
+          "translation": "Mweri wa mbere",
           "pronunciation": "mweri wa mbere",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "February (Month 2)",
-          "translation": "Mweri wa kaĩri (Kai)",
+          "translation": "Mweri wa kaĩri",
           "pronunciation": "mweri wa kairi",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "October (Month 10)",
-          "translation": "Mweri wa ikũmi (Iku)",
+          "translation": "Mweri wa ikũmi",
           "pronunciation": "mweri wa ikumi",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
@@ -3674,19 +3359,19 @@
         },
         {
           "english": "September (Month 9)",
-          "translation": "Mweri wa kenda (Ken)",
+          "translation": "Mweri wa kenda",
           "pronunciation": "mweri wa kenda",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "November (Month 11)",
-          "translation": "Mweri wa ikũmi na ũmwe (Imw)",
+          "translation": "Mweri wa ikũmi na ũmwe",
           "pronunciation": "mweri wa ikũmi na ũmwe",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "December (Month 12)",
-          "translation": "Mweri wa ikũmi na Kaĩrĩ (Igi)",
+          "translation": "Mweri wa ikũmi na Kaĩrĩ",
           "pronunciation": "mweri wa ikũmi na kaĩrĩ",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
@@ -3716,43 +3401,43 @@
         },
         {
           "english": "Sunday (Day of the week)",
-          "translation": "Kiumia (Kma)",
+          "translation": "Kiumia",
           "pronunciation": "kiumia",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "Monday (Day of the week)",
-          "translation": "Njumatatu (Tat)",
+          "translation": "Njumatatu",
           "pronunciation": "njumatatu",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "Friday (Day of the week)",
-          "translation": "Njumaa (Maa)",
+          "translation": "Njumaa",
           "pronunciation": "njumaa",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "Tuesday (Day of the week)",
-          "translation": "Njumaine (Ine)",
+          "translation": "Njumaine",
           "pronunciation": "njumaine",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "Thursday (Day of the week)",
-          "translation": "Aramithi (Arm)",
+          "translation": "Aramithi",
           "pronunciation": "aramithi",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "Saturday (Day of the week)",
-          "translation": "NJumamothii (NMM)",
+          "translation": "Njumamothii",
           "pronunciation": "njumamothii",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
           "english": "Wednesday (Day of the week)",
-          "translation": "Njumatano (Tan)",
+          "translation": "Njumatano",
           "pronunciation": "njumatano",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
@@ -3770,8 +3455,8 @@
         },
         {
           "english": "In the morning (AM day period)",
-          "translation": "KI",
-          "pronunciation": "ki",
+          "translation": "Kĩrooko (KI)",
+          "pronunciation": "ki-roo-ko",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         },
         {
@@ -3782,8 +3467,8 @@
         },
         {
           "english": "In the afternoon / evening (PM day period)",
-          "translation": "UT",
-          "pronunciation": "ut",
+          "translation": "Ũtukũ / Hwaĩ-inĩ (UT)",
+          "pronunciation": "u-tu-ku / hwai-i-ni",
           "context": "Kîembu (Mount Kenya Bantu) — GitHub unicode-org/cldr (ebu.xml) & PanLex CC0"
         }
       ]
@@ -3807,7 +3492,7 @@
         },
         {
           "english": "Axe",
-          "translation": "I-thanwa; ma-. Danŭa, I-tsanoa",
+          "translation": "I-thanwa (pl. ma-thanwa); Danŭa, I-tsanoa",
           "pronunciation": "i-thanwa",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -3825,13 +3510,13 @@
         },
         {
           "english": "Gun",
-          "translation": "Mū-cingga; mī",
+          "translation": "Mū-cingga (pl. mī-cingga)",
           "pronunciation": "mu-cingga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Hoe",
-          "translation": "I-cembī; ma-. Kī-būtū (E.). Mū-rō (wooden). I-thanwa (M.)",
+          "translation": "I-cembī (pl. ma-cembī); Kī-būtū (E.); Mū-rō (wooden); I-thanwa (M.)",
           "pronunciation": "i-cembi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -3843,7 +3528,7 @@
         },
         {
           "english": "Man",
-          "translation": "Mū-rūmē; a",
+          "translation": "Mū-rūmē (pl. a-rūmē)",
           "pronunciation": "mu-rume",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -3909,7 +3594,7 @@
         },
         {
           "english": "Door",
-          "translation": "Mū-romo, Mū-thome (K.); mi-. Rigi (door). Mū-ranggo (M.)",
+          "translation": "Mū-romo, Mū-thome (K.) (pl. mi-); Rigi (door); Mū-ranggo (M.)",
           "pronunciation": "mu-romo mu-thome",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -3945,13 +3630,13 @@
         },
         {
           "english": "Lips",
-          "translation": "Kī-romo; i-. Mū-romo; mī- (mouth)",
+          "translation": "Kī-romo (pl. i-romo); Mū-romo (pl. mī-romo, mouth)",
           "pronunciation": "ki-romo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Road",
-          "translation": "N-jīra; ma",
+          "translation": "N-jīra (pl. ma-njīra)",
           "pronunciation": "n-jira",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -3963,13 +3648,13 @@
         },
         {
           "english": "Town",
-          "translation": "I-tūūra; ma-. Mū-ciī (homestead)",
+          "translation": "I-tūūra (pl. ma-tūūra); Mū-ciī (homestead)",
           "pronunciation": "i-tuura",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Vein",
-          "translation": "Mū-kīha; mī",
+          "translation": "Mū-kīha (pl. mī-kīha)",
           "pronunciation": "mu-kiha",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4047,26 +3732,26 @@
         },
         {
           "english": "Arrow",
-          "translation": "Mu-gui; mi",
-          "pronunciation": "mu-gui mi",
+          "translation": "Mu-gui (pl. mi-gui)",
+          "pronunciation": "mu-gui",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Beard",
-          "translation": "ki-reru; ci- (chin). N-deru",
+          "translation": "ki-reru (pl. ci-reru, chin); N-deru",
           "pronunciation": "ki-reru",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Canoe",
-          "translation": "Mw-ato (K.) (wooden bee-hive). Gi-taru; i",
+          "translation": "Mw-ato (K., wooden bee-hive); Gi-taru (pl. i-taru)",
           "pronunciation": "mw-ato",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Cloth",
-          "translation": "Tama; ma-. N-guo",
-          "pronunciation": "ta-ma ma- n-guo",
+          "translation": "Tama (pl. ma-tama); N-guo",
+          "pronunciation": "ta-ma / n-guo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -4077,13 +3762,13 @@
         },
         {
           "english": "Ghost",
-          "translation": "Ngoma; ma-. Ki-ruru. N-kuā (M.)",
+          "translation": "Ngoma (pl. ma-ngoma); Ki-ruru; N-kuā (M.)",
           "pronunciation": "ngoma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Ivory",
-          "translation": "Mū-gūī; mī",
+          "translation": "Mū-gūī (pl. mī-gūī)",
           "pronunciation": "mu-gui",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4107,19 +3792,19 @@
         },
         {
           "english": "Slave",
-          "translation": "Ngōmbo; ma",
+          "translation": "Ngōmbo (pl. ma-ngōmbo)",
           "pronunciation": "ngombo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Sleep",
-          "translation": "Tōro; ma",
+          "translation": "Tōro (pl. ma-tōro)",
           "pronunciation": "toro",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Stick",
-          "translation": "Mū-tirīma; mī-. Rū-thanju; thanju. Siyare (M.)",
+          "translation": "Mū-tirīma (pl. mī-tirīma); Rū-thanju (pl. thanju); Siyare (M.)",
           "pronunciation": "mu-tirima",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4149,7 +3834,7 @@
         },
         {
           "english": "Woman",
-          "translation": "Mū-tūmia; a-. Mū-kā; a-. Kī-rēgo; i-. Mū-hīki (young). Mū-gūrra (M.)",
+          "translation": "Mū-tūmia (pl. a-tūmia); Mū-kā (pl. a-kā); Kī-rēgo (pl. i-rēgo); Mū-hīki (young); Mū-gūrra (M.)",
           "pronunciation": "mu-tumia",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4209,13 +3894,13 @@
         },
         {
           "english": "Brains",
-          "translation": "Tombo; ma-. Kererīo (K.) or Kerrio",
+          "translation": "Tombo (pl. ma-tombo); Kererīo (K.) or Kerrio",
           "pronunciation": "tombo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Shield",
-          "translation": "N-gō; ma",
+          "translation": "N-gō (pl. ma-ngō)",
           "pronunciation": "n-go",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4258,7 +3943,7 @@
         {
           "english": "Behind",
           "translation": "Thūtha",
-          "pronunciation": "utha",
+          "pronunciation": "thutha",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -4317,7 +4002,7 @@
         },
         {
           "english": "Country",
-          "translation": "Bū-rīrī; ma-. Gi-thaka. Rū-sena (M.)",
+          "translation": "Bū-rīrī (pl. ma-būrīrī); Gi-thaka; Rū-sena (M.)",
           "pronunciation": "bu-riri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4383,13 +4068,13 @@
         },
         {
           "english": "Buttocks",
-          "translation": "I-tina; ma-. Ma-tako. I-cuze; ma",
+          "translation": "I-tina (pl. ma-tina); Ma-tako; I-cuze (pl. ma-cuze)",
           "pronunciation": "i-tina",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
           "english": "Medicine",
-          "translation": "Mū-thaiga; mī",
+          "translation": "Mū-thaiga (pl. mī-thaiga)",
           "pronunciation": "mu-thaiga",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4425,7 +4110,7 @@
         },
         {
           "english": "White man",
-          "translation": "Mū-thūnggū; a",
+          "translation": "Mū-thūnggū (pl. a-thūnggū)",
           "pronunciation": "mu-thunggu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4437,7 +4122,7 @@
         },
         {
           "english": "Rhinoceros",
-          "translation": "Hūria; ma",
+          "translation": "Hūria (pl. ma-hūria)",
           "pronunciation": "huria",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4480,7 +4165,7 @@
         {
           "english": "Below, down",
           "translation": "Thī",
-          "pronunciation": "i",
+          "pronunciation": "thi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -4497,7 +4182,7 @@
         },
         {
           "english": "Spirit, soul",
-          "translation": "Ngōma; ma-. Kī-rūrū",
+          "translation": "Ngōma (pl. ma-ngōma); Kī-rūrū",
           "pronunciation": "ngoma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4527,7 +4212,7 @@
         },
         {
           "english": "Borassus palm",
-          "translation": "? Mu-thi (M.)",
+          "translation": "Mu-thi (M.)",
           "pronunciation": "mu-thi",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4755,8 +4440,8 @@
         },
         {
           "english": "Devil, evil spirit",
-          "translation": "N-goma; ma",
-          "pronunciation": "n-goma ma",
+          "translation": "N-goma (pl. ma-ngoma)",
+          "pronunciation": "n-goma",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
@@ -4851,7 +4536,7 @@
         },
         {
           "english": "Doctor (medicine man)",
-          "translation": "Mū-ragūri; a-. Mu-tinjire (E., M.)",
+          "translation": "Mū-ragūri (pl. a-ragūri); Mu-tinjire (E., M.)",
           "pronunciation": "mu-raguri",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -4935,7 +4620,7 @@
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix)",
-          "translation": "Ndi-, Tī-, -tī-, -tā",
+          "translation": "Ndi-, Tī-, -tī-, -tā-",
           "pronunciation": "ndi- ti- -ti- -ta-",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
@@ -5016,12 +4701,6 @@
           "context": "Wikipedia Embu_language — Sample phrases • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
         },
         {
-          "english": "Breast (man's)",
-          "translation": "ci",
-          "pronunciation": "ci",
-          "context": "11. Embu / Mbeere (E.) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, pp. 98–110) • Cross-verified with CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Ant, white (termite)",
           "translation": "Mū-ko",
           "pronunciation": "mu-ko",
@@ -5070,11 +4749,6 @@
         },
         {
           "english": "Buttocks",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Buttocks",
           "translation": "Ma-tako",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
@@ -5089,16 +4763,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Cold",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Cold",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Crocodile",
           "translation": "Ki-ṅgaṅgi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
@@ -5106,11 +4770,6 @@
         {
           "english": "Devil, evil spirit",
           "translation": "N-goma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Devil, evil spirit",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -5140,11 +4799,6 @@
         },
         {
           "english": "Drum",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Drum",
           "translation": "Mū-goko",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
@@ -5166,11 +4820,6 @@
         {
           "english": "Ghost",
           "translation": "Ngoma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Ghost",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -5206,11 +4855,6 @@
         {
           "english": "Horn",
           "translation": "Coro",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Horn",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -5294,23 +4938,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Rat",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Rat",
-          "translation": "same",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Slave",
           "translation": "Ngōmbo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Slave",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -5319,18 +4948,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
-          "english": "Sleep",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
           "english": "Spirit, soul",
           "translation": "Ngōma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Spirit, soul",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -5385,11 +5004,6 @@
         },
         {
           "english": "Town",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
-        },
-        {
-          "english": "Town",
           "translation": "Mū-ciī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
@@ -5415,7 +5029,7 @@
         },
         {
           "english": "I, me, my",
-          "translation": "Ndi-, N",
+          "translation": "Nīī, Nīē (Ndi-, N-)",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
         },
         {
@@ -5474,5 +5088,5 @@
   "source": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
   "isoCode": "ebu",
   "glottocode": "embu1242",
-  "totalEntries": 947
+  "totalEntries": 870
 }

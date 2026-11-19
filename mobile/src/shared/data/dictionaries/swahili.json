@@ -3100,12 +3100,6 @@
           "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)"
         },
         {
-          "english": "(of), one of the genitive particles standing after substant",
-          "translation": "wa",
-          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
-          "pronunciation": "wa"
-        },
-        {
           "english": "one",
           "translation": "wāhed",
           "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)"
@@ -5371,12 +5365,6 @@
           "translation": "Mfuto",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
           "pronunciation": "mfuto"
-        },
-        {
-          "english": "an objective suffix denoting the first person singular",
-          "translation": "mi",
-          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "mi"
         },
         {
           "english": "in bathing, to duck down and throw over one leg, striking the water with it",
@@ -9269,12 +9257,6 @@
           "english": "Bone",
           "translation": "M-fūpa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Bone",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
         },
         {
           "english": "Country",
@@ -15934,29 +15916,14 @@
         },
         {
           "english": "Breast (man's)",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Breast (man's)",
           "translation": "N-dari",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
-        },
-        {
-          "english": "Breast (man's)",
-          "translation": "zi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
         },
         {
           "english": "Breast (woman's)",
           "translation": "Ziwa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
           "pronunciation": "ziwa"
-        },
-        {
-          "english": "Breast (woman's)",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
           "english": "Breast (woman's)",
@@ -15985,18 +15952,7 @@
         },
         {
           "english": "Chief",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "wa"
-        },
-        {
-          "english": "Chief",
           "translation": "Jūmbe",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Chief",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -16010,25 +15966,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Child",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "wa"
-        },
-        {
           "english": "Doctor (medicine man)",
           "translation": "M-gāṅga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Doctor (medicine man)",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "wa"
-        },
-        {
-          "english": "Girl",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -16088,11 +16027,6 @@
         },
         {
           "english": "Sister",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Sister",
           "translation": "N-dūgu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
@@ -16130,12 +16064,6 @@
           "english": "Song",
           "translation": "nd-īmbo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
-          "english": "White man",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "wa"
         },
         {
           "english": "Wife",
@@ -24139,21 +24067,9 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Arm",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Back",
           "translation": "M-goṅgo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Back",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
         },
         {
           "english": "Back",
@@ -24172,17 +24088,7 @@
         },
         {
           "english": "Beard",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Beard",
           "translation": "N-devu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Belly",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -24203,12 +24109,6 @@
         },
         {
           "english": "Body",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Body",
           "translation": "Mu-īlī, Mu-ī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
         },
@@ -24220,11 +24120,6 @@
         {
           "english": "Ear",
           "translation": "Sīkio",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Ear",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -24294,11 +24189,6 @@
         },
         {
           "english": "Finger",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Finger",
           "translation": "K-ānda",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
         },
@@ -24306,12 +24196,6 @@
           "english": "Finger",
           "translation": "z-ānda",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
-          "english": "Foot",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
         },
         {
           "english": "Foot",
@@ -24431,22 +24315,7 @@
         },
         {
           "english": "Heel",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Heel",
           "translation": "Kī-fūndo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Heel",
-          "translation": "zi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
-          "english": "Knee",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -24471,12 +24340,6 @@
         },
         {
           "english": "Leg",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Leg",
           "translation": "ma-gūū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
         },
@@ -24487,17 +24350,7 @@
         },
         {
           "english": "Mouth",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Mouth",
           "translation": "Kī-nwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
-          "english": "Mouth",
-          "translation": "zi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
         },
         {
@@ -24537,11 +24390,6 @@
         },
         {
           "english": "Neck",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Neck",
           "translation": "Tīṅgo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
         },
@@ -24552,22 +24400,12 @@
         },
         {
           "english": "Nose",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Nose",
           "translation": "Phūa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
         },
         {
           "english": "Shoulder",
           "translation": "Bēga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Shoulder",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -24587,18 +24425,7 @@
         },
         {
           "english": "Spear",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Spear",
           "translation": "Fūmo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Spear",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -24609,11 +24436,6 @@
         {
           "english": "Tear",
           "translation": "Cōzi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Tear",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -29183,12 +29005,6 @@
           "pronunciation": "wa"
         },
         {
-          "english": "the objective plural prefix referring to substantives which denote animate beings",
-          "translation": "wa",
-          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "wa"
-        },
-        {
           "english": "rebellion",
           "translation": "Wasi",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)"
@@ -29198,11 +29014,6 @@
           "translation": "Weu",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
           "pronunciation": "weu"
-        },
-        {
-          "english": "the objective prefix denoting a plural substantive either of that class which does not change to form the plural or of that which makes its singular in u",
-          "translation": "zi",
-          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)"
         },
         {
           "english": "to commit adultery or fornication",
@@ -30542,11 +30353,6 @@
         },
         {
           "english": "Ant",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Ant",
           "translation": "Siafu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
           "pronunciation": "siafu"
@@ -30573,12 +30379,6 @@
         },
         {
           "english": "Ant, white (termite)",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Ant, white (termite)",
           "translation": "M-tswa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
         },
@@ -30590,11 +30390,6 @@
         {
           "english": "Baboon",
           "translation": "Ny-ani",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Baboon",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -30619,11 +30414,6 @@
         },
         {
           "english": "Bull",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Bull",
           "translation": "N-dūme",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
@@ -30638,11 +30428,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Cat",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
           "english": "Elephant",
           "translation": "Tēmbo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
@@ -30650,16 +30435,6 @@
         {
           "english": "Fish",
           "translation": "Samāki",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Fowl",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Goat (he)",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -30675,11 +30450,6 @@
         {
           "english": "Hyena",
           "translation": "Fīsi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Hyena",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -30700,11 +30470,6 @@
         {
           "english": "Rhinoceros",
           "translation": "Kī-fāru",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Rhinoceros",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -41312,18 +41077,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Fire",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Forest",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Forest",
           "translation": "Mw-ītū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
@@ -41331,11 +41084,6 @@
         {
           "english": "Forest",
           "translation": "Tsāka",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
-        },
-        {
-          "english": "Forest",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
         },
         {
@@ -41365,27 +41113,12 @@
         },
         {
           "english": "Hill",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Hill",
           "translation": "Kī-īma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
         },
         {
-          "english": "Hill",
-          "translation": "zi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
           "english": "Lake",
           "translation": "Zīwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Lake",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -41399,21 +41132,9 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Moon",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Mountain",
           "translation": "M-līma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Mountain",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
         },
         {
           "english": "Mountain",
@@ -41441,12 +41162,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Smoke",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Tree",
           "translation": "mi-tī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
@@ -41455,16 +41170,6 @@
           "english": "Well, source",
           "translation": "Kī-sīma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Well, source",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Well, source",
-          "translation": "zi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
         },
         {
           "english": "Wind",
@@ -49905,11 +49610,6 @@
         },
         {
           "english": "Banana",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
-        },
-        {
-          "english": "Banana",
           "translation": "I-sīta",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
         },
@@ -49934,21 +49634,9 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Maize",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Oil palm",
           "translation": "M-cīkīci",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Oil palm",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
         },
         {
           "english": "Oil palm",
@@ -60883,12 +60571,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
         },
         {
-          "english": "Door (plural)",
-          "translation": "mi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Shoe",
           "translation": "kiátu",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
@@ -64294,18 +63976,7 @@
         },
         {
           "english": "Arrow",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Arrow",
           "translation": "Cembē",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Arrow",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -64331,11 +64002,6 @@
         {
           "english": "Axe",
           "translation": "Šoka",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Axe",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -64375,20 +64041,9 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Charcoal",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
-        },
-        {
           "english": "Door",
           "translation": "M-lāṅgo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Door",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
         },
         {
           "english": "Door",
@@ -64396,23 +64051,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
         },
         {
-          "english": "Hippopotamus",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Hippopotamus",
-          "translation": "zi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
           "english": "Hoe",
           "translation": "Jēmbē",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Hoe",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -85411,11 +85051,6 @@
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)"
         },
         {
-          "english": "See -me",
-          "translation": "ma",
-          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)"
-        },
-        {
           "english": "to remember, think about",
           "translation": "Kutia maanani",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)"
@@ -97623,11 +97258,6 @@
           "pronunciation": "miziɠo"
         },
         {
-          "english": "Goose (plural)",
-          "translation": "ma",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
           "english": "Border",
           "translation": "mpaka",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
@@ -97899,12 +97529,6 @@
           "translation": "uwe",
           "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
           "pronunciation": "uwe"
-        },
-        {
-          "english": "kúā or ku wā, to be, to have, to become",
-          "translation": "wa",
-          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
-          "pronunciation": "wa"
         },
         {
           "english": "God forbid that I should glory, Gal",
@@ -102689,12 +102313,6 @@
         },
         {
           "english": "Canoe",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Canoe",
           "translation": "Galāwa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
@@ -102702,11 +102320,6 @@
           "english": "Canoe",
           "translation": "Hōri",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
-        },
-        {
-          "english": "Canoe",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
         },
         {
           "english": "Road",
@@ -108799,11 +108412,6 @@
         {
           "english": "Grave",
           "translation": "káburi",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
-          "english": "Grave (plural)",
-          "translation": "ma",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
         },
         {
@@ -115312,12 +114920,6 @@
           "translation": "makumi kenda or tissaini",
           "pronunciation": "makumi kenda",
           "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
-          "english": "Be",
-          "translation": "wa",
-          "pronunciation": "wa",
-          "context": "Madan (1917) English-Swahili Vocabulary (v.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
         },
         {
           "english": "On",
@@ -126538,12 +126140,6 @@
           "translation": "uzuri",
           "pronunciation": "u-zu-ri",
           "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
-          "english": "Become",
-          "translation": "wa",
-          "pronunciation": "wa",
-          "context": "Madan (1917) English-Swahili Vocabulary (v.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
         },
         {
           "english": "Behave",
@@ -178020,11 +177616,6 @@
           "pronunciation": "vifuniko"
         },
         {
-          "english": "Lap (plural)",
-          "translation": "ma",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
           "english": "Paw (plural)",
           "translation": "kuja",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
@@ -178176,16 +177767,6 @@
           "translation": "jina (pl. majina)",
           "context": "Wiktionary Appendix:Swahili Swadesh list • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
           "pronunciation": "ʄina"
-        },
-        {
-          "english": "Part (plural)",
-          "translation": "ma",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
-          "english": "Twig (plural)",
-          "translation": "ma",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
         },
         {
           "english": "Wool (plural)",
@@ -178362,11 +177943,6 @@
           "translation": "baharia",
           "context": "Madan (1917) English-Swahili Vocabulary (under Sea) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
           "pronunciation": "ɓahaɾia"
-        },
-        {
-          "english": "Window (plural)",
-          "translation": "ma",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
         },
         {
           "english": "Beggar",
@@ -236484,16 +236060,6 @@
           "pronunciation": "vema"
         },
         {
-          "english": "prefixes which make their singular in ch or ki",
-          "translation": "vi",
-          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)"
-        },
-        {
-          "english": "= vy",
-          "translation": "vi",
-          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)"
-        },
-        {
           "english": "thy",
           "translation": "viako",
           "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)"
@@ -236578,24 +236144,6 @@
           "english": "adj",
           "translation": "vungu",
           "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)"
-        },
-        {
-          "english": "Arab",
-          "translation": "wa",
-          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
-          "pronunciation": "wa"
-        },
-        {
-          "english": "they are",
-          "translation": "wa",
-          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
-          "pronunciation": "wa"
-        },
-        {
-          "english": "you or they",
-          "translation": "wa",
-          "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
-          "pronunciation": "wa"
         },
         {
           "english": "free-born people, lit",
@@ -266259,11 +265807,6 @@
           "pronunciation": "vazi"
         },
         {
-          "english": "the objective prefix representing nouns in vi- or vy",
-          "translation": "vi",
-          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)"
-        },
-        {
           "english": "necessaries, useful things",
           "translation": "Vifaa",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
@@ -278329,12 +277872,6 @@
         },
         {
           "english": "Happen",
-          "translation": "wa",
-          "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "wa"
-        },
-        {
-          "english": "Happen",
           "translation": "tukia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
           "pronunciation": "tukia"
@@ -286340,17 +285877,6 @@
         },
         {
           "english": "Them",
-          "translation": "wa",
-          "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "wa"
-        },
-        {
-          "english": "Them",
-          "translation": "vi",
-          "context": "A. C. Madan, English-Swahili Vocabulary (1917)"
-        },
-        {
-          "english": "Them",
           "translation": "etc",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)"
         },
@@ -286481,17 +286007,6 @@
         {
           "english": "These",
           "translation": "etc",
-          "context": "A. C. Madan, English-Swahili Vocabulary (1917)"
-        },
-        {
-          "english": "They",
-          "translation": "wa",
-          "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "wa"
-        },
-        {
-          "english": "They",
-          "translation": "vi",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)"
         },
         {
@@ -288332,12 +287847,6 @@
           "english": "You",
           "translation": "mw",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)"
-        },
-        {
-          "english": "You",
-          "translation": "wa",
-          "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "wa"
         },
         {
           "english": "You not",
@@ -294502,11 +294011,6 @@
         },
         {
           "english": "Adze",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Adze",
           "translation": "Šezo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
         },
@@ -294522,19 +294026,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Borassus palm",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Buttocks",
           "translation": "Tāko",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Buttocks",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -294559,23 +294052,12 @@
         },
         {
           "english": "Crocodile",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Crocodile",
           "translation": "Ngwēna",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
           "english": "Devil, evil spirit",
           "translation": "Pēpo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Devil, evil spirit",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -294615,12 +294097,6 @@
         },
         {
           "english": "Ghost",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Ghost",
           "translation": "Kōma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
@@ -294656,11 +294132,6 @@
         },
         {
           "english": "Horn",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Horn",
           "translation": "Phēmbē",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
         },
@@ -294690,25 +294161,9 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Island",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Island",
-          "translation": "zi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
           "english": "Lips",
           "translation": "M-dōmo",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Lips",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
         },
         {
           "english": "Lips",
@@ -294742,11 +294197,6 @@
         },
         {
           "english": "Name",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Name",
           "translation": "Ī-na",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
         },
@@ -294758,21 +294208,6 @@
         {
           "english": "Navel",
           "translation": "Kī-tōvu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Navel",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Navel",
-          "translation": "zi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
-          "english": "Paddle",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -294806,12 +294241,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Slave",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "wa"
-        },
-        {
           "english": "Spirit, soul",
           "translation": "Rōho",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
@@ -294832,30 +294261,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
         },
         {
-          "english": "Spirit, soul",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Stick",
           "translation": "Bakōra",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
-          "english": "Tail",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
           "english": "Testicles",
           "translation": "Pūmbū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Testicles",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
         {
@@ -294866,21 +294278,6 @@
         {
           "english": "Testicles",
           "translation": "I-pūmbū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
-          "english": "Thigh",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Thigh",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Thigh",
-          "translation": "zi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
         },
         {
@@ -294935,11 +294332,6 @@
         },
         {
           "english": "Twins",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Twins",
           "translation": "Phātsa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 a. Ki-mvita (Mombasa)"
         },
@@ -294960,12 +294352,6 @@
         },
         {
           "english": "Vein",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "mi"
-        },
-        {
-          "english": "Vein",
           "translation": "M-tīpa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 b. Ki-amu, 21 c. Ki-siu, 21 d. Ki-pate"
         },
@@ -294978,12 +294364,6 @@
           "english": "Witch",
           "translation": "M-cāwi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
-        },
-        {
-          "english": "Witch",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "wa"
         },
         {
           "english": "Witch",
@@ -295082,12 +294462,6 @@
         },
         {
           "english": "Ye, you, your",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "wa"
-        },
-        {
-          "english": "Ye, you, your",
           "translation": "ēnū, -ēnyū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
         },
@@ -295105,12 +294479,6 @@
           "english": "Ye, you, your",
           "translation": "Ī-nywi, Nyīnyi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
-        },
-        {
-          "english": "They, them, their",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
-          "pronunciation": "wa"
         },
         {
           "english": "This, these",
@@ -295174,5 +294542,5 @@
   "source": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022); Goldsmith & Mpiranya (2022) LSP #306 Ch. 5, Mwamzandi (2022) Ch. 13, Nurse (2019) LSP #190 Ch. 33, Ustadh Mau (2013) Kiamu Poetics, Beech (1918), TICO-19 & Stanford PACS (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "swh",
   "glottocode": "swah1253",
-  "totalEntries": 53051
+  "totalEntries": 52934
 }

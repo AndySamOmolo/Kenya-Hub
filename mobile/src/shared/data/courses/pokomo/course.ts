@@ -42,115 +42,115 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "target": "Habari!",
             "source": "Greetings!",
-            "pronunciation": "ha-ba-ri / uko bwe-ma",
+            "pronunciation": "ha-ba-ri",
             "hint": "Kipfokomo salutation"
           },
           {
             "target": "Uko bwema? (resp. Niko bwema)",
             "source": "Are you well? (I am well)",
-            "pronunciation": "ha-ba-ri / uko bwe-ma",
+            "pronunciation": "u-ko bwe-ma",
             "hint": "Kipfokomo salutation"
           },
           {
             "target": "munt’u (pl. want’u)",
             "source": "Person (pl. People)",
-            "pronunciation": "munt’u / mwa-na",
+            "pronunciation": "mu-ntu",
             "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo)"
           },
           {
             "target": "mwana (pl. wana)",
             "source": "Child (pl. Children)",
-            "pronunciation": "munt’u / mwa-na",
+            "pronunciation": "mwa-na",
             "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo)"
           },
           {
             "target": "madzi",
             "source": "Water",
-            "pronunciation": "madzi / mo-ho / mu-ho",
+            "pronunciation": "ma-dzi",
             "hint": "Sabaki dzi- & *t > h shift (Krapf 1850)"
           },
           {
             "target": "moho",
             "source": "Fire",
-            "pronunciation": "madzi / mo-ho / mu-ho",
+            "pronunciation": "mo-ho",
             "hint": "Sabaki dzi- & *t > h shift (Krapf 1850)"
           },
           {
             "target": "muho",
             "source": "River (Muho wa Tsana = Tana River)",
-            "pronunciation": "madzi / mo-ho / mu-ho",
+            "pronunciation": "mu-ho",
             "hint": "Sabaki dzi- & *t > h shift (Krapf 1850)"
           },
           {
             "target": "waho (pl. mawaho)",
             "source": "Dugout canoe",
-            "pronunciation": "wa-ho / nswi / mamba",
+            "pronunciation": "wa-ho",
             "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo) riverine lexicon"
           },
           {
             "target": "nswi",
             "source": "Fish",
-            "pronunciation": "wa-ho / nswi / mamba",
+            "pronunciation": "nswi",
             "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo) riverine lexicon"
           },
           {
             "target": "mamba",
             "source": "Crocodile",
-            "pronunciation": "wa-ho / nswi / mamba",
+            "pronunciation": "ma-mba",
             "hint": "Krapf (1850) & Johnston (1919, Vol. I, pp. 98–112 #13 Pokomo) riverine lexicon"
           },
           {
             "target": "mudzi (pl. midzi)",
             "source": "Village",
-            "pronunciation": "mudzi / nyumba / wa-ki-jo",
+            "pronunciation": "mu-dzi",
             "hint": "Krapf (1850) & Pokomo governance"
           },
           {
             "target": "nyumba",
             "source": "House",
-            "pronunciation": "mudzi / nyumba / wa-ki-jo",
+            "pronunciation": "nyu-mba",
             "hint": "Krapf (1850) & Pokomo governance"
           },
           {
             "target": "Wakijo",
             "source": "Council of Elders",
-            "pronunciation": "mudzi / nyumba / wa-ki-jo",
+            "pronunciation": "wa-ki-jo",
             "hint": "Krapf (1850) & Pokomo governance"
           },
           {
             "target": "imwe",
             "source": "One (1)",
-            "pronunciation": "imwe mbi-ri ta-hu nne tsa-no",
+            "pronunciation": "i-mwe",
             "hint": "Johnston (1919, Vol. I, p. 107 #13 Pokomo) numerals"
           },
           {
             "target": "mbiri",
             "source": "Two (2)",
-            "pronunciation": "imwe mbi-ri ta-hu nne tsa-no",
+            "pronunciation": "mbi-ri",
             "hint": "Johnston (1919, Vol. I, p. 107 #13 Pokomo) numerals"
           },
           {
             "target": "tahu",
             "source": "Three (3)",
-            "pronunciation": "imwe mbi-ri ta-hu nne tsa-no",
+            "pronunciation": "ta-hu",
             "hint": "Johnston (1919, Vol. I, p. 107 #13 Pokomo) numerals"
           },
           {
             "target": "handahu",
             "source": "Six (6)",
-            "pronunciation": "handa-hu funga-he na-ne kenda ku-mi",
+            "pronunciation": "ha-nda-hu",
             "hint": "Johnston (1919, Vol. I, p. 107 #13 Pokomo)"
           },
           {
             "target": "fungahe",
             "source": "Seven (7)",
-            "pronunciation": "handa-hu funga-he na-ne kenda ku-mi",
+            "pronunciation": "fu-nga-he",
             "hint": "Johnston (1919, Vol. I, p. 107 #13 Pokomo)"
           },
           {
             "target": "nane",
             "source": "Eight (8)",
-            "pronunciation": "handa-hu funga-he na-ne kenda ku-mi",
+            "pronunciation": "na-ne",
             "hint": "Johnston (1919, Vol. I, p. 107 #13 Pokomo)"
           },
           {
@@ -792,18 +792,18 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "target": "mirongo miwili (20)",
             "source": "Twenty",
-            "pronunciation": "mi-rongo mi-wi-li / ga-na",
+            "pronunciation": "mi-rongo mi-wi-li",
             "hint": "Krapf (1850) & Johnston (1919, pp. 107–108) — #13 Pokomo"
           },
           {
             "target": "gana (100)",
             "source": "One hundred",
-            "pronunciation": "mi-rongo mi-wi-li / ga-na",
+            "pronunciation": "ga-na",
             "hint": "Krapf (1850) & Johnston (1919, pp. 107–108) — #13 Pokomo"
           },
           {
             "target": "biga sikío",
-            "source": "To box give one",
+            "source": "To box the ear / slap (Krapf 1850)",
             "pronunciation": "bi-ga si-kio",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)"
           },
@@ -845,7 +845,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "target": "biga sikío — motsi",
-            "source": "Box, to give one- — One."
+            "source": "To box the ear — One."
           }
         ],
         "authoredExercises": [
@@ -874,9 +874,10 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_english",
             "prompt": "Translate to English: \"biga sikío\"",
-            "correctAnswer": "Box, to give one-",
+            "correctAnswer": "To box the ear",
             "acceptedAnswers": [
-              "Box, to give one-",
+              "To box the ear / slap (Krapf 1850)",
+              "To box the ear",
               "Box, to give one-"
             ],
             "hint": "Review Trade, Barter, Currency & Traditional Measures"
@@ -896,7 +897,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
               },
               {
                 "left": "biga sikío",
-                "right": "Box, to give one-"
+                "right": "To box the ear"
               },
               {
                 "left": "motsi",
@@ -1112,7 +1113,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "henda mkáhe — ja",
-            "source": "Bake, v. a. -bread — Eat."
+            "source": "Bake bread — Eat."
           },
           {
             "target": "hokossa — mukahe",
@@ -1133,6 +1134,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock",
             "acceptedAnswers": [
               "Bake, v. a. -bread",
+              "Bake bread",
               "Bake"
             ]
           },
@@ -1163,7 +1165,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "pairs": [
               {
                 "left": "henda mkáhe",
-                "right": "Bake, v. a. -bread"
+                "right": "Bake bread"
               },
               {
                 "left": "ja",
@@ -1544,13 +1546,13 @@ export const POKOMO_UNITS: CourseUnit[] = [
           {
             "target": "mulomo (pl. milomo)",
             "source": "Mouth",
-            "pronunciation": "mu-lo-mo / kanwa",
+            "pronunciation": "mu-lo-mo",
             "hint": "Krapf (1850), Würtz (1895) & Nurse & Hinnebusch (1993)"
           },
           {
             "target": "kanwa",
             "source": "Lip",
-            "pronunciation": "mu-lo-mo / kanwa",
+            "pronunciation": "ka-nwa",
             "hint": "Krapf (1850), Würtz (1895) & Nurse & Hinnebusch (1993)"
           },
           {
@@ -1717,7 +1719,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) & Würtz (1895) — Kipokomo"
           },
           {
-            "target": "Bagwi; ma",
+            "target": "Bagwi; ma-",
             "source": "Breast (man's)",
             "pronunciation": "bagwi",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -1735,13 +1737,13 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Ki-tsigīno; vi",
+            "target": "Ki-tsigīno; vi-",
             "source": "Heel",
             "pronunciation": "ki-tsigino",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Ū-kōmbe; ma",
+            "target": "Ū-kōmbe; ma-",
             "source": "Nail (of finger or toe)",
             "pronunciation": "u-kombe",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -2719,7 +2721,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "tips": "Focus on high-frequency roots shared across Pokomo (Kipfokomo) dialects and everyday speech.",
         "words": [
           {
-            "target": "Sī-, Kā-, Tā-, -sī",
+            "target": "Sī-, Kā-, Tā-, -sī-",
             "source": "Not (with verb, as prefix, infix, or suffix)",
             "pronunciation": "si ka ta si",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -2835,13 +2837,13 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Wāō",
+            "target": "Wāō. Wā-. -wa-. -āō",
             "source": "They, them, their",
             "pronunciation": "wao wa wa ao",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Nyīnyi",
+            "target": "Nyīnyi. Mū-. -wa-. -ēnyū",
             "source": "Ye, you, your",
             "pronunciation": "nyinyi mu wa enyu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -2853,19 +2855,19 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Yēye",
+            "target": "Yēye. Kā-, A-. -mū-. -ākwē",
             "source": "He, him, his",
             "pronunciation": "ye-ye ka a mu akwe",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Wēwe",
+            "target": "Wēwe. Kū-, Ū-. -kū-. -āko",
             "source": "Thou, thee",
             "pronunciation": "we-we ku u ku ako",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Mīmi",
+            "target": "Mīmi. N-, Nī-. -n-. -ānggu",
             "source": "I, me",
             "pronunciation": "mi-mi n ni n anggu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -2954,8 +2956,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "culturalNote": "Mikael Samson (a Buu clerk at Kipini) drew a 4+ foot map with Garsen school-teacher Johana Daji and elder Luluta documenting all 14 river sections from Elwana to Ras Shaka, and recorded the verbatim Kipokomo lament sung by Buu elders and women with tears in their eyes for their lost village of Chikovu (p. 385).",
         "words": [
           {
-            "target": "Mumaitha kadza ndio odu / Mbuu ni mzuka, endani / mukayowe kumea mani",
-            "source": "If an enemy comes the Buu have bad news, go and look, the grass has grown, it has",
+            "target": "Mumaitha kadza ndio odu / Mbuu ni mzuka, endani / mukayowe kumea mani / kubfaa miima",
+            "source": "If an enemy comes the Buu have bad news, go and look, the grass has grown, it has climbed the hills",
             "pronunciation": "mu-mai-tha ka-dza ndi-o o-du m-bu-u ni m-zu-ka",
             "hint": "Mikael Samson & R. G. Darroch (1944, p. 385) — Verbatim Buu lament song for Chikovu"
           },
@@ -2996,7 +2998,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Shaka (Waungwana wa Mashaa)",
-            "source": "Shaka",
+            "source": "Ancient coastal settlement at Ras Shaka",
             "pronunciation": "shaka"
           },
           {
@@ -3016,17 +3018,17 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kiriole",
-            "source": "at Meli",
+            "source": "Historic battle site at Meli",
             "pronunciation": "kiriole"
           },
           {
             "target": "Rangi",
-            "source": "at Bura / Golbanti",
+            "source": "Canal channel at Bura / Golbanti",
             "pronunciation": "rangi"
           },
           {
             "target": "Kombo Mitambo",
-            "source": "at Belezoni",
+            "source": "Elder who excavated the canal at Belezoni",
             "pronunciation": "kombo-mitambo"
           },
           {
@@ -3036,22 +3038,22 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Oromo",
-            "source": "not Galla",
+            "source": "Indigenous name of the Oromo people (rather than exonym 'Galla')",
             "pronunciation": "oromo"
           },
           {
             "target": "Wata",
-            "source": "not Boni",
+            "source": "Hunter-gatherer allies of the Buu (also called Sanye / Boni)",
             "pronunciation": "wata"
           },
           {
             "target": "Elwana",
-            "source": "not Malakote",
+            "source": "Upper Tana riverine community (also called Malakote)",
             "pronunciation": "elwana"
           },
           {
             "target": "Munyo",
-            "source": "not Korokoro",
+            "source": "Upper Tana group at Korokoro (Munyo Yaya)",
             "pronunciation": "munyo"
           }
         ],
@@ -3093,108 +3095,108 @@ export const POKOMO_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Abamogo!",
-            "source": "Mutual greeting used to this day between Malachini and Upper Pokomo commemorating",
+            "source": "Mutual greeting ('Wayfarer!') used between Malachini and Upper Pokomo commemorating Sango Vere and Ana Dima",
             "pronunciation": "a-ba-mo-go",
             "hint": "Mikael Samson & R. G. Darroch (1944, p. 376 & Note 8 p. 392)"
           },
           {
             "target": "Kinambare",
-            "source": "Karara / Uta — Mzuka Wayu",
+            "source": "Ndera Bantu clan (Oromo name: Karara / Uta — Mzuka Wayu)",
             "pronunciation": "kinambare"
           },
           {
             "target": "Kinankaru",
-            "source": "Sukana",
+            "source": "Ndera Bantu clan (Oromo name: Sukana)",
             "pronunciation": "kinankaru"
           },
           {
             "target": "Kinauru",
-            "source": "Gamadho",
+            "source": "Gwano Bantu clan of Ana Dima (Oromo name: Gamadho)",
             "pronunciation": "kinauru"
           },
           {
             "target": "Kinanato",
-            "source": "from Gashiro & Hadiribo, freed by Ana Abio / Karara — Omara Oda & Chief Dadho Bahola",
+            "source": "Gwano Bantu clan (from Gashiro & Hadiribo, freed by Ana Abio; Oromo name: Karara — Omara Oda & Chief Dadho Bahola)",
             "pronunciation": "kinanato"
           },
           {
             "target": "Kinadyasi",
-            "source": "Karayu — Kokane Didha",
+            "source": "Kinakomba Bantu clan (Oromo name: Karayu — Kokane Didha)",
             "pronunciation": "kinadyasi"
           },
           {
             "target": "Kinamuyani",
-            "source": "Garjeda",
+            "source": "Kinakomba Bantu clan (Oromo name: Garjeda)",
             "pronunciation": "kinamuyani"
           },
           {
             "target": "Kinamulunde",
-            "source": "Uta",
+            "source": "Kinakomba Bantu clan (Oromo name: Uta)",
             "pronunciation": "kinamulunde"
           },
           {
             "target": "Kinambura",
-            "source": "Wayu — Kokane Ware / Wayole",
+            "source": "Ndura Bantu clan (Oromo name: Wayu — Kokane Ware / Wayole)",
             "pronunciation": "kinambura"
           },
           {
             "target": "Kinagasere",
-            "source": "Baretu / Baretu wa Maji",
+            "source": "Ndura Bantu clan (Oromo name: Baretu / Baretu wa Maji)",
             "pronunciation": "kinagasere"
           },
           {
             "target": "Kinajasi",
-            "source": "Hajeji",
+            "source": "Ndura Bantu clan (Oromo name: Hajeji)",
             "pronunciation": "kinajasi"
           },
           {
             "target": "Kinambolo",
-            "source": "Karara",
+            "source": "Ndura Bantu clan (Oromo name: Karara)",
             "pronunciation": "kinambolo"
           },
           {
             "target": "Ilani",
-            "source": "Gavere / Malalulu & Bashora",
+            "source": "Zubaki & Malalulu clan (Gavere / Malalulu & Bashora)",
             "pronunciation": "ilani"
           },
           {
             "target": "Karayu",
-            "source": "Mtabashi",
+            "source": "Boran Royal Clan in Upper Pokomo (ancestor: Mtabashi)",
             "pronunciation": "karayu"
           },
           {
             "target": "Jaba",
-            "source": "Munyo",
+            "source": "Upper Pokomo clan associated with Munyo",
             "pronunciation": "jaba"
           },
           {
             "target": "Kinakaliani",
-            "source": "Garjeda — Maro Wayu, Dulo Maro, Sarumbe & Kamba Machika Mwemwere",
+            "source": "Zubaki Bantu clan (Oromo name: Garjeda — Maro Wayu, Dulo Maro, Sarumbe & Kamba Machika Mwemwere)",
             "pronunciation": "kinakaliani"
           },
           {
             "target": "Meta",
-            "source": "Komora Eba / Kuyo",
+            "source": "Upper Pokomo clan (ancestors: Komora Eba / Kuyo)",
             "pronunciation": "meta"
           },
           {
             "target": "Kinagaiba",
-            "source": "Wayu Abae",
+            "source": "Zubaki Bantu clan (ancestor: Wayu Abae)",
             "pronunciation": "kinagaiba"
           },
           {
             "target": "Karara",
-            "source": "Komora Diribo",
+            "source": "Malalulu clan (ancestor: Komora Diribo)",
             "pronunciation": "karara"
           },
           {
             "target": "Uta",
-            "source": "Bakai Galgalo",
+            "source": "Malalulu clan (ancestor: Bakai Galgalo)",
             "pronunciation": "uta"
           },
           {
             "target": "Garjeda",
-            "source": "Ganyare",
+            "source": "Malalulu clan (ancestor: Ganyare)",
             "pronunciation": "garjeda"
           },
           {
@@ -3337,7 +3339,20 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "pronunciation": "ta-hu"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Wantu kumi wakwenda Muho wa Tsana kwa mawaho.",
+            "source": "Ten people are going to the Tana River by dugout canoes."
+          },
+          {
+            "target": "Wakijo wakala mudzini.",
+            "source": "The council of elders sits in the village."
+          },
+          {
+            "target": "Wawíi wakuteka madzi muhoni.",
+            "source": "Both of them are drawing water at the river."
+          }
+        ]
       }
     ]
   }

@@ -23,7 +23,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
   {
     "id": "rendille-unit-1",
     "unitNumber": 1,
-    "title": "Greetings, Hobley’s Rendille Camel & Desert Lexicon & Cushitic",
+    "title": "Greetings, Hobley’s Rendille Camel & Desert Lexicon & Numerals",
     "description": "Master Af-Rendille greetings, camel husbandry vocabulary, wildlife, and numerals 1–10 from C. W. Hobley (1910).",
     "icon": "Tractor",
     "color": "#DC2626",
@@ -39,169 +39,193 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "Nabad!",
             "source": "Peace!",
-            "pronunciation": "na-bad / ba-ri-ya",
+            "pronunciation": "na-bad",
             "hint": "Af-Rendille salutation"
           },
           {
             "target": "Bariya? (resp. Waa nabad!)",
             "source": "Good morning? (It is peace!)",
-            "pronunciation": "na-bad / ba-ri-ya",
+            "pronunciation": "ba-ri-ya — waa na-bad",
             "hint": "Af-Rendille salutation"
           },
           {
             "target": "gaal",
             "source": "Camels (collective)",
-            "pronunciation": "gaal / ayyu / oor / nyi-rakh",
+            "pronunciation": "gaal",
             "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
           },
           {
             "target": "ayyu",
             "source": "She-camel",
-            "pronunciation": "gaal / ayyu / oor / nyi-rakh",
+            "pronunciation": "ay-yu",
             "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
           },
           {
             "target": "oor",
             "source": "Burden camel",
-            "pronunciation": "gaal / ayyu / oor / nyi-rakh",
+            "pronunciation": "oor",
             "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
           },
           {
             "target": "nyirakh",
             "source": "Camel calf",
-            "pronunciation": "gaal / ayyu / oor / nyi-rakh",
+            "pronunciation": "nyi-rakh",
             "hint": "Hobley (1910, p. 156) Rendille camel lexicon"
           },
           {
             "target": "gob",
             "source": "Clan settlement",
-            "pronunciation": "gob / naa-bo / min",
+            "pronunciation": "gob",
             "hint": "Hobley (1910, p. 156)"
           },
           {
             "target": "naabo",
             "source": "Sacred ritual enclosure",
-            "pronunciation": "gob / naa-bo / min",
+            "pronunciation": "naa-bo",
             "hint": "Hobley (1910, p. 156)"
           },
           {
             "target": "min",
             "source": "House",
-            "pronunciation": "gob / naa-bo / min",
+            "pronunciation": "min",
             "hint": "Hobley (1910, p. 156)"
           },
           {
-            "target": "biyo",
+            "target": "biyo (biché)",
             "source": "Water",
-            "pronunciation": "bi-yo / caa-no / soor",
+            "pronunciation": "bi-yo / bi-che",
             "hint": "Hobley (1910, p. 156)"
           },
           {
-            "target": "caano",
+            "target": "caano (háan)",
             "source": "Milk",
-            "pronunciation": "bi-yo / caa-no / soor",
+            "pronunciation": "caa-no / haan",
             "hint": "Hobley (1910, p. 156)"
           },
           {
             "target": "soor (huun)",
             "source": "Food",
-            "pronunciation": "bi-yo / caa-no / soor",
+            "pronunciation": "soor / huun",
             "hint": "Hobley (1910, p. 156)"
           },
           {
             "target": "tor",
             "source": "Spear",
-            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "pronunciation": "tor",
             "hint": "Hobley (1910, p. 156) Rendille material culture"
           },
           {
             "target": "gashan",
             "source": "Shield",
-            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "pronunciation": "ga-shan",
             "hint": "Hobley (1910, p. 156) Rendille material culture"
           },
           {
             "target": "bilau",
             "source": "Sword-knife",
-            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "pronunciation": "bi-lau",
             "hint": "Hobley (1910, p. 156) Rendille material culture"
           },
           {
             "target": "biso",
             "source": "Bow",
-            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "pronunciation": "bi-so",
             "hint": "Hobley (1910, p. 156) Rendille material culture"
           },
           {
             "target": "laho",
             "source": "Arrow",
-            "pronunciation": "tor / gashan / bi-lau / bi-so / la-ho",
+            "pronunciation": "la-ho",
             "hint": "Hobley (1910, p. 156) Rendille material culture"
           },
           {
             "target": "bahasi",
             "source": "Lion",
-            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "pronunciation": "ba-ha-si",
             "hint": "Hobley (1910, p. 157) northern wildlife"
           },
           {
             "target": "kabih",
             "source": "Leopard",
-            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "pronunciation": "ka-bih",
             "hint": "Hobley (1910, p. 157) northern wildlife"
           },
           {
             "target": "arbah",
             "source": "Elephant",
-            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "pronunciation": "ar-bah",
             "hint": "Hobley (1910, p. 157) northern wildlife"
           },
           {
             "target": "worsis",
             "source": "Rhinoceros",
-            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "pronunciation": "wor-sis",
             "hint": "Hobley (1910, p. 157) northern wildlife"
           },
           {
             "target": "nyugul",
             "source": "Ostrich",
-            "pronunciation": "ba-ha-si / ka-bih / arbah / worsis / nyu-gul",
+            "pronunciation": "nyu-gul",
             "hint": "Hobley (1910, p. 157) northern wildlife"
           },
           {
             "target": "kow",
             "source": "One (1)",
-            "pronunciation": "kow lamma seyya affar chan",
+            "pronunciation": "kow",
             "hint": "Cushitic numerals 1–5"
           },
           {
             "target": "lamma",
             "source": "Two (2)",
-            "pronunciation": "kow lamma seyya affar chan",
+            "pronunciation": "lam-ma",
             "hint": "Cushitic numerals 1–5"
           },
           {
             "target": "seyya",
             "source": "Three (3)",
-            "pronunciation": "kow lamma seyya affar chan",
+            "pronunciation": "sey-ya",
+            "hint": "Cushitic numerals 1–5"
+          },
+          {
+            "target": "affar",
+            "source": "Four (4)",
+            "pronunciation": "af-far",
+            "hint": "Cushitic numerals 1–5"
+          },
+          {
+            "target": "chan",
+            "source": "Five (5)",
+            "pronunciation": "chan",
             "hint": "Cushitic numerals 1–5"
           },
           {
             "target": "lih",
             "source": "Six (6)",
-            "pronunciation": "lih te-ba siddet saa-gal to-mon",
+            "pronunciation": "lih",
             "hint": "Cushitic numerals 6–10"
           },
           {
             "target": "teba",
             "source": "Seven (7)",
-            "pronunciation": "lih te-ba siddet saa-gal to-mon",
+            "pronunciation": "te-ba",
             "hint": "Cushitic numerals 6–10"
           },
           {
             "target": "siddet",
             "source": "Eight (8)",
-            "pronunciation": "lih te-ba siddet saa-gal to-mon",
+            "pronunciation": "sid-det",
+            "hint": "Cushitic numerals 6–10"
+          },
+          {
+            "target": "saagal",
+            "source": "Nine (9)",
+            "pronunciation": "saa-gal",
+            "hint": "Cushitic numerals 6–10"
+          },
+          {
+            "target": "tomon",
+            "source": "Ten (10)",
+            "pronunciation": "to-mon",
             "hint": "Cushitic numerals 6–10"
           }
         ],
@@ -289,6 +313,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "bee-yoh / ah-noh / sohr",
             "acceptedAnswers": [
               "biyo / caano / soor (huun)",
+              "biyo (biché)",
               "biyo"
             ]
           },
@@ -348,13 +373,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Kinship Terms, Elders & Household Roles",
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "enyenyet (pl. enyenyó)",
             "source": "Person / People",
-            "pronunciation": "enyenyet",
+            "pronunciation": "en-yen-yet",
             "hint": "Bernd Heine (1976) & Fleming (1964) — Rendille"
           },
           {
@@ -384,25 +409,25 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "abá",
             "source": "Father",
-            "pronunciation": "aba",
+            "pronunciation": "a-ba",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
             "target": "ayó",
             "source": "Mother",
-            "pronunciation": "ayo",
+            "pronunciation": "a-yo",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
             "target": "Waaq",
             "source": "God",
-            "pronunciation": "waaq / waax",
+            "pronunciation": "waaq",
             "hint": "Rendille Cushitic sky/Supreme Being"
           },
           {
             "target": "Waax",
             "source": "Sky",
-            "pronunciation": "waaq / waax",
+            "pronunciation": "waax",
             "hint": "Rendille Cushitic sky/Supreme Being"
           },
           {
@@ -492,8 +517,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Clans, Marriage & Community Life",
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "magáh",
@@ -615,8 +640,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Cardinal & Ordinal Numerals",
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "ków (adj. kaldai)",
@@ -633,7 +658,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "séyyah",
             "source": "Three",
-            "pronunciation": "seyyah",
+            "pronunciation": "sey-yah",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
@@ -663,7 +688,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "síet",
             "source": "Eight",
-            "pronunciation": "siet",
+            "pronunciation": "si-et",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
@@ -776,8 +801,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Trade, Barter, Currency & Traditional Measures",
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "tomón",
@@ -830,7 +855,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Eleven (Ten plus one)\"",
             "correctAnswer": "tomón icóú kow",
             "acceptedAnswers": [
-              "tomón icóú kow",
               "tomón icóú kow"
             ],
             "hint": "Starts with \"to\""
@@ -840,7 +864,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"ków\"",
             "correctAnswer": "One",
             "acceptedAnswers": [
-              "One",
               "One"
             ],
             "hint": "Review Trade, Barter, Currency & Traditional Measures"
@@ -885,8 +908,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Staple Foods, Cookery & Beverages",
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "huun (soor)",
@@ -978,7 +1001,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"jíid\"",
             "correctAnswer": "Meat",
             "acceptedAnswers": [
-              "Meat",
               "Meat"
             ],
             "hint": "Review Staple Foods, Cookery & Beverages"
@@ -1017,24 +1039,24 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Crops, Cultivation & Pastoral Livestock",
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "óno",
             "source": "Sheep",
-            "pronunciation": "ono",
+            "pronunciation": "o-no",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
             "target": "kullób",
             "source": "Smoked gourd for storing camel milk",
-            "pronunciation": "kullob"
+            "pronunciation": "kul-lob"
           },
           {
             "target": "madál",
             "source": "Wooden milk container / milking vessel",
-            "pronunciation": "madal"
+            "pronunciation": "ma-dal"
           },
           {
             "target": "huun (soor)",
@@ -1070,7 +1092,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Smoked gourd for storing camel milk\"",
             "correctAnswer": "kullób",
             "acceptedAnswers": [
-              "kullób",
               "kullób"
             ],
             "hint": "Starts with \"ku\""
@@ -1125,13 +1146,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Sky, Weather, Rivers & Landforms",
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "biche (biché)",
             "source": "Water",
-            "pronunciation": "biche",
+            "pronunciation": "bi-che",
             "hint": "Bernd Heine (1976) & Fleming (1964) — Rendille"
           },
           {
@@ -1143,7 +1164,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "orráh",
             "source": "Sun",
-            "pronunciation": "orrah",
+            "pronunciation": "or-rah",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
@@ -1283,16 +1304,16 @@ export const RENDILLE_UNITS: CourseUnit[] = [
       },
       {
         "id": "rendille-nature-wildlife-wildlife-flora-5",
-        "title": "East African Fauna, Birds & Sacred Trees",
+        "title": "Desert Ecology, Wells & Kaisut Landforms",
         "icon": "PawPrint",
-        "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "description": "Identify indigenous desert landforms, wells, and seasonal indicators recorded in the primary texts.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "hárra",
             "source": "Earth / Ground / Sand",
-            "pronunciation": "harra",
+            "pronunciation": "har-ra",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
@@ -1310,13 +1331,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "ukur",
             "source": "Mountain",
-            "pronunciation": "u-kur / hal",
+            "pronunciation": "u-kur",
             "hint": "Verified comparative entry across Kenyan cushitic corpus"
           },
           {
             "target": "hal",
             "source": "Hill",
-            "pronunciation": "u-kur / hal",
+            "pronunciation": "hal",
             "hint": "Verified comparative entry across Kenyan cushitic corpus"
           },
           {
@@ -1332,8 +1353,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "target": "eel",
-            "source": "desert waterhole",
-            "pronunciation": "tul-luu"
+            "source": "Desert waterhole",
+            "pronunciation": "eel"
           },
           {
             "target": "bakkalcha",
@@ -1341,9 +1362,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "pronunciation": "bak-kal-cha"
           },
           {
-            "target": "Roob ma da'ay?",
+            "target": "Hír ma da'ay?",
             "source": "Has rain fallen in the pastures?",
-            "pronunciation": "roob ma da'ay"
+            "pronunciation": "hir ma da-ay"
           },
           {
             "target": "roxo",
@@ -1353,7 +1374,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "dida",
             "source": "Kaisut & Chalbi plains",
-            "pronunciation": "ro-xo"
+            "pronunciation": "di-da"
           }
         ],
         "sentences": [
@@ -1377,7 +1398,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
               "Mountain",
               "Earth"
             ],
-            "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
+            "hint": "Core vocabulary in Desert Ecology, Wells & Kaisut Landforms",
             "acceptedAnswers": [
               "Earth / Ground / Sand",
               "Earth"
@@ -1388,7 +1409,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Night\"",
             "correctAnswer": "ibéen",
             "acceptedAnswers": [
-              "ibéen",
               "ibéen"
             ],
             "hint": "Starts with \"ib\""
@@ -1398,14 +1418,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"sáah\"",
             "correctAnswer": "Day",
             "acceptedAnswers": [
-              "Day",
               "Day"
             ],
-            "hint": "Review East African Fauna, Birds & Sacred Trees"
+            "hint": "Review Desert Ecology, Wells & Kaisut Landforms"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each expression from East African Fauna, Birds & Sacred Trees with its English meaning:",
+            "prompt": "Match each expression from Desert Ecology, Wells & Kaisut Landforms with its English meaning:",
             "correctAnswer": "all_matched",
             "pairs": [
               {
@@ -1447,8 +1466,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Parts of the Body & Physical Senses",
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "sám",
@@ -1465,13 +1484,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "íllax",
             "source": "Tooth",
-            "pronunciation": "illax",
+            "pronunciation": "il-lax",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
             "target": "harráb",
             "source": "Tongue",
-            "pronunciation": "harrab",
+            "pronunciation": "har-rab",
             "hint": "Bernd Heine (1976) — Notes on the Rendille Language"
           },
           {
@@ -1612,8 +1631,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Health, Traditional Medicine & Emergency Terms",
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "wáam",
@@ -1680,7 +1699,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"nábah\"",
             "correctAnswer": "Ear",
             "acceptedAnswers": [
-              "Ear",
               "Ear"
             ],
             "hint": "Review Health, Traditional Medicine & Emergency Terms"
@@ -1729,8 +1747,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Essential Action & Motion Verbs",
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, prefix vs. suffix verb conjugations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "urúd (a-urud)",
@@ -1771,7 +1789,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "jecla",
             "source": "To love / like",
-            "pronunciation": "jecla",
+            "pronunciation": "jec-la",
             "hint": "Verified comparative entry across Kenyan cushitic corpus"
           },
           {
@@ -1894,8 +1912,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Applied, Causative, Reciprocal & Stative Verbs",
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, prefix vs. suffix verb conjugations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "irdá (a-irda)",
@@ -1981,7 +1999,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"agár\"",
             "correctAnswer": "See",
             "acceptedAnswers": [
-              "See",
               "See"
             ],
             "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
@@ -2030,13 +2047,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Day Divisions, Lunar Months & Agricultural Seasons",
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "ibéen",
             "source": "Night",
-            "pronunciation": "ibéen"
+            "pronunciation": "i-been"
           },
           {
             "target": "sáah",
@@ -2071,7 +2088,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "barri",
             "source": "Tomorrow",
-            "pronunciation": "barri"
+            "pronunciation": "bar-ri"
           }
         ],
         "sentences": [
@@ -2102,7 +2119,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Day\"",
             "correctAnswer": "sáah",
             "acceptedAnswers": [
-              "sáah",
               "sáah"
             ],
             "hint": "Starts with \"sá\""
@@ -2112,7 +2128,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"gúu\"",
             "correctAnswer": "Year",
             "acceptedAnswers": [
-              "Year",
               "Year"
             ],
             "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
@@ -2151,8 +2166,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "title": "Travel, Directions, Paths & Landmarks",
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
-        "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Ch. XVII: Notes on the Randili, Weekdays & Sub-tribes) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
+        "tips": "Every lexical entry in this module is drawn from C. W. Hobley (1910), Bernd Heine (1976), and Günther Schlee (1979). Pay close attention to masculine (-ki) and feminine (-ti) gender suffixes, plural formations, and pitch accent.",
+        "culturalNote": "Primary historical documentation for Rendille (Afi Ren'dille) in C. W. Hobley (1910 Ethnology of A-Kamba, Part II, Ch. VI: Randili [Rendile], pp. 162–163) preserves pre-1930 phonological, grammatical, and ethnographic usage across Marsabit.",
         "words": [
           {
             "target": "jit (pl. jitat)",
@@ -2169,13 +2184,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "harra",
             "source": "Today",
-            "pronunciation": "harra",
+            "pronunciation": "har-ra",
             "hint": "Heine (1976) Rendille"
           },
           {
             "target": "barri",
             "source": "Tomorrow",
-            "pronunciation": "barri",
+            "pronunciation": "bar-ri",
             "hint": "Heine (1976) Rendille"
           },
           {
@@ -2187,7 +2202,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "orrah",
             "source": "Sun / Daytime",
-            "pronunciation": "orrah",
+            "pronunciation": "or-rah",
             "hint": "Heine (1976) Rendille"
           }
         ],
@@ -2223,7 +2238,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Outlying mobile camel camp\"",
             "correctAnswer": "foor",
             "acceptedAnswers": [
-              "foor",
               "foor"
             ],
             "hint": "Starts with \"fo\""
@@ -2233,7 +2247,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"harra\"",
             "correctAnswer": "Today",
             "acceptedAnswers": [
-              "Today",
               "Today"
             ],
             "hint": "Review Travel, Directions, Paths & Landmarks"
@@ -2299,18 +2312,18 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "Almadó",
             "source": "Almadó (new year & ritual cleansing festival)",
-            "pronunciation": "alma-do",
+            "pronunciation": "al-ma-do",
             "hint": "Rendille Ritual Calendar — Schlee (1979)"
           },
           {
             "target": "Sorriyo",
             "source": "Sorriyo (sacred camel-blessing festival)",
-            "pronunciation": "sorri-yo",
+            "pronunciation": "sor-ri-yo",
             "hint": "Rendille Ritual Calendar — Schlee (1979)"
           },
           {
             "target": "waakh barid",
-            "source": "camel blessing / evening prayer assembly",
+            "source": "Camel blessing / evening prayer assembly",
             "pronunciation": "waakh ba-rid",
             "hint": "Rendille Oral & Ritual Tradition — Schlee (1979)"
           },
@@ -2336,7 +2349,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "waakh barid",
-            "source": "camel blessing / evening prayer assembly."
+            "source": "Camel blessing / evening prayer assembly."
           }
         ],
         "authoredExercises": [
@@ -2410,38 +2423,38 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "target": "Burkeneji",
-            "source": "White sheep",
-            "pronunciation": "burke-ne-ji / nai-bor ke-ne-ji",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166)"
+            "source": "White sheep (Ariaal Rendille-Samburu section)",
+            "pronunciation": "bur-ke-ne-ji",
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 162)"
           },
           {
             "target": "Naibor Keneji",
-            "source": "Ariaal Rendille-Samburu section (Naibor Keneji)",
-            "pronunciation": "burke-ne-ji / nai-bor ke-ne-ji",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166)"
+            "source": "Ariaal Rendille-Samburu section ('White Sheep')",
+            "pronunciation": "nai-bor ke-ne-ji",
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 162)"
           },
           {
             "target": "Naroshon",
             "source": "Naroshon (Rendille clan of the Sogota & Angata plains)",
-            "pronunciation": "na-roshon",
-            "hint": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 1910, p."
+            "pronunciation": "na-ro-shon",
+            "hint": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 51, 66)"
           },
           {
             "target": "Sere gal",
             "source": "Seventh day of the week (day of the camel)",
             "pronunciation": "se-re gal",
-            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, p. 166 — Randili calendar)"
+            "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
             "target": "Sere adi",
             "source": "Sixth day of the week (day of sheep and goats; Almadó & Sorio begin)",
-            "pronunciation": "se-re adi",
+            "pronunciation": "se-re a-di",
             "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
             "target": "Ser hakhan",
             "source": "Fifth day of the week (no-travel / no camp-move / no cattle-medicine day)",
-            "pronunciation": "ser hakhan",
+            "pronunciation": "ser ha-khan",
             "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
@@ -2454,7 +2467,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "1. Hahat, 2. Hura hakhan, 3. Sere, 4. Kumat, 5. Ser hakhan, 6. Sere adi, 7. Sere gal.",
-            "source": "The seven days of the Randili (Rendille) pastoral week recorded by C. W. Hobley ."
+            "source": "The seven days of the Randili (Rendille) pastoral week recorded by C. W. Hobley."
           }
         ],
         "authoredExercises": [
@@ -2535,9 +2548,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
-            "target": "Hura hakhan (hura = sun)",
-            "source": "Second day of the week (day of rest / Sabbath)",
-            "pronunciation": "hu-ra hakhan",
+            "target": "Hura hakhan",
+            "source": "Second day of the week (day of rest / Sabbath; hura = sun)",
+            "pronunciation": "hu-ra ha-khan",
             "hint": "C. W. Hobley, Ethnology of A-Kamba (1910, Part II, Ch. VI, p. 163 — Randili calendar)"
           },
           {
@@ -2548,7 +2561,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "tumbo",
             "source": "Tobacco",
-            "pronunciation": "tumbo",
+            "pronunciation": "tum-bo",
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           },
           {
@@ -2560,7 +2573,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "birlab",
             "source": "Iron",
-            "pronunciation": "birlab",
+            "pronunciation": "bir-lab",
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           },
           {
@@ -2603,8 +2616,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
                 "right": "Third day of the week (sere = day)"
               },
               {
-                "left": "Hura hakhan (hura = sun)",
-                "right": "Second day of the week (day of rest / Sabbath)"
+                "left": "Hura hakhan",
+                "right": "Second day of the week (day of rest / Sabbath; hura = sun)"
               },
               {
                 "left": "Hahat",
@@ -2646,7 +2659,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "gashan",
             "source": "Shield",
-            "pronunciation": "gashan",
+            "pronunciation": "ga-shan",
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           },
           {
@@ -2658,13 +2671,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "worsis",
             "source": "Rhinoceros",
-            "pronunciation": "worsis",
+            "pronunciation": "wor-sis",
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           },
           {
             "target": "arbah",
             "source": "Elephant",
-            "pronunciation": "arbah",
+            "pronunciation": "ar-bah",
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           },
           {
@@ -2682,7 +2695,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "eyhel",
             "source": "Donkey",
-            "pronunciation": "eyhel",
+            "pronunciation": "ey-hel",
             "hint": "Johnston (1902, Vol. II) & Hobley (1910, pp. 162–163) — Rendille pastoral lexicon"
           }
         ],
@@ -2750,7 +2763,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "Nabad",
             "source": "Hello / Peace",
-            "pronunciation": "na-bad / soo-ri-yo"
+            "pronunciation": "na-bad"
           },
           {
             "target": "Goob nabad!",
@@ -2780,7 +2793,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "huun",
             "source": "Food",
-            "pronunciation": "hoon / sohr"
+            "pronunciation": "huun"
           },
           {
             "target": "haan",
@@ -2795,13 +2808,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           {
             "target": "subáh",
             "source": "Ghee / clarified butter",
-            "pronunciation": "subah"
+            "pronunciation": "su-bah"
           }
         ],
         "sentences": [
           {
             "target": "Waaq a ku barikoy",
-            "source": "Thank you / Blessing."
+            "source": "Thank you / May God bless you."
           },
           {
             "target": "Goob nabad!",
@@ -2813,7 +2826,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "target": "Ma nabad?",
-            "source": "How are you? (Is it peace?)."
+            "source": "How are you? (Is it peace?)"
           },
           {
             "target": "Nabad gobsan gaal barako u keenti",
@@ -2909,7 +2922,7 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "source": "Rendille language."
           },
           {
-            "target": "Roob ma da'ay?",
+            "target": "Hír ma da'ay?",
             "source": "Has rain fallen in the pastures?"
           },
           {

@@ -47,6 +47,7 @@ import {
   searchAcrossAllDictionaries,
 } from "./translator/loader";
 import { createStyles } from "./translator/styles";
+import { playVerifiedAudio, hasVerifiedAudio } from "../lib/mobile-audio";
 
 export function KenyanTranslatorTool({
   onScrollToTop,
@@ -100,14 +101,17 @@ export function KenyanTranslatorTool({
 
   const favoritesSet = useMemo(() => new Set(favorites), [favorites]);
 
-  // Random word of the day (instant from INITIAL_RANDOM_WORDS)
+  // Random word of the day (balanced across all 23 Kenyan languages)
   const [randomWord, setRandomWord] = useState<{
     entry: DictEntry;
     langName: string;
     langId: string;
   } | null>(() => {
     if (INITIAL_RANDOM_WORDS.length === 0) return null;
-    const item = INITIAL_RANDOM_WORDS[0];
+    const item =
+      INITIAL_RANDOM_WORDS[
+        Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)
+      ];
     return {
       entry: item.entry,
       langName: item.langName,
@@ -298,14 +302,17 @@ export function KenyanTranslatorTool({
   const rollRandomWord = useCallback(() => {
     triggerHaptic(8);
     if (INITIAL_RANDOM_WORDS.length > 0) {
-      const pick =
-        INITIAL_RANDOM_WORDS[
-          Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)
-        ];
-      setRandomWord({
-        entry: pick.entry,
-        langName: pick.langName,
-        langId: pick.langId,
+      setRandomWord((prev) => {
+        const candidates = INITIAL_RANDOM_WORDS.filter(
+          (w) => w.langId !== prev?.langId
+        );
+        const pool = candidates.length > 0 ? candidates : INITIAL_RANDOM_WORDS;
+        const pick = pool[Math.floor(Math.random() * pool.length)];
+        return {
+          entry: pick.entry,
+          langName: pick.langName,
+          langId: pick.langId,
+        };
       });
       return;
     }
@@ -1041,7 +1048,7 @@ export function KenyanTranslatorTool({
                         </View>
                       </View>
 
-                      {/* Action Buttons: Share + Favorite Star (MOB-12, UX-9) */}
+                      {/* Action Buttons: Verified Audio (when available) + Share + Favorite Star */}
                       <View
                         style={{
                           flexDirection: "row",
@@ -1049,6 +1056,23 @@ export function KenyanTranslatorTool({
                           gap: 12,
                         }}
                       >
+                        {hasVerifiedAudio(item.entry) ? (
+                          <Pressable
+                            onPress={() => {
+                              triggerHaptic(8);
+                              playVerifiedAudio(item.entry);
+                            }}
+                            accessibilityRole="button"
+                            accessibilityLabel={`Play verified ${cleanLangName} recording`}
+                            hitSlop={8}
+                          >
+                            <Ionicons
+                              name="volume-high-outline"
+                              size={19}
+                              color={theme.gold}
+                            />
+                          </Pressable>
+                        ) : null}
                         <Pressable
                           onPress={() =>
                             handleShareEntry(
@@ -1258,6 +1282,23 @@ export function KenyanTranslatorTool({
                         gap: 8,
                       }}
                     >
+                      {hasVerifiedAudio(randomWord.entry) ? (
+                        <Pressable
+                          onPress={() => {
+                            triggerHaptic(8);
+                            playVerifiedAudio(randomWord.entry);
+                          }}
+                          accessibilityRole="button"
+                          accessibilityLabel="Play verified pronunciation recording"
+                          hitSlop={8}
+                        >
+                          <Ionicons
+                            name="volume-high-outline"
+                            size={16}
+                            color={theme.gold}
+                          />
+                        </Pressable>
+                      ) : null}
                       <Pressable
                         onPress={() =>
                           handleShareEntry(
@@ -1509,6 +1550,23 @@ export function KenyanTranslatorTool({
                         gap: 12,
                       }}
                     >
+                      {hasVerifiedAudio(e) ? (
+                        <Pressable
+                          onPress={() => {
+                            triggerHaptic(8);
+                            playVerifiedAudio(e);
+                          }}
+                          accessibilityRole="button"
+                          accessibilityLabel={`Play verified ${cleanLang} recording`}
+                          hitSlop={8}
+                        >
+                          <Ionicons
+                            name="volume-high-outline"
+                            size={18}
+                            color={theme.gold}
+                          />
+                        </Pressable>
+                      ) : null}
                       <Pressable
                         onPress={() =>
                           handleShareEntry(
@@ -1656,6 +1714,23 @@ export function KenyanTranslatorTool({
                           gap: 12,
                         }}
                       >
+                        {hasVerifiedAudio(item.entry) ? (
+                          <Pressable
+                            onPress={() => {
+                              triggerHaptic(8);
+                              playVerifiedAudio(item.entry);
+                            }}
+                            accessibilityRole="button"
+                            accessibilityLabel={`Play verified ${cleanLang} recording`}
+                            hitSlop={8}
+                          >
+                            <Ionicons
+                              name="volume-high-outline"
+                              size={19}
+                              color={theme.gold}
+                            />
+                          </Pressable>
+                        ) : null}
                         <Pressable
                           onPress={() =>
                             handleShareEntry(

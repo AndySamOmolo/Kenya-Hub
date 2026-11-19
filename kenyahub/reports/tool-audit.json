@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T11:36:35.185Z",
+  "generatedAt": "2026-11-19T05:55:28.834Z",
   "registryCount": 25,
   "routeCount": 25,
   "courseCount": 23,
@@ -32,7 +32,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/paye-bands.json",
@@ -52,7 +52,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/mpesa-tariffs.json",
@@ -67,7 +67,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.sasra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/sacco-chama-rates.json",
@@ -87,7 +87,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.helb.co.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/helb-rates.json",
@@ -102,7 +102,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/stamp-duty-rates.json",
@@ -122,7 +122,7 @@
       "routeExists": true,
       "sourceUrl": "https://kicd.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -147,7 +147,7 @@
       "routeExists": true,
       "sourceUrl": "https://students.kuccps.net/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/kuccps-clusters.json",
@@ -162,7 +162,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.knec.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/kcse-rankings.json",
@@ -177,7 +177,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/kra-car-import-crsp.json",
@@ -202,7 +202,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/number-plate-prefixes.json",
@@ -217,7 +217,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/traffic-fines.json",
@@ -232,7 +232,7 @@
       "routeExists": true,
       "sourceUrl": "https://nca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 48,
+      "ageDays": 49,
       "data": [
         {
           "file": "src/data/mjengo-construction-rates.json",
@@ -247,7 +247,7 @@
       "routeExists": true,
       "sourceUrl": "https://kplc.co.ke/faq/tariff",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/kplc-tariff.json",
@@ -267,7 +267,7 @@
       "routeExists": true,
       "sourceUrl": "https://wasreb.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/water-tariffs.json",
@@ -282,7 +282,7 @@
       "routeExists": true,
       "sourceUrl": "https://sha.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 28,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/sha-benefit-data.json",
@@ -307,7 +307,7 @@
       "routeExists": true,
       "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
       "maxAgeDays": 365,
-      "ageDays": 28,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/small-claims-data.json",
@@ -337,7 +337,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 28,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/ntsa-transfer-data.json",
@@ -357,7 +357,7 @@
       "routeExists": true,
       "sourceUrl": "https://bomayangu.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 28,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/boma-yangu-data.json",
@@ -377,7 +377,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 28,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/rental-tax-data.json",
@@ -392,7 +392,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 28,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/tenant-rights-data.json",
@@ -407,7 +407,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.labour.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 28,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/domestic-wage-data.json",
@@ -422,7 +422,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 28,
+      "ageDays": 29,
       "data": [
         {
           "file": "src/data/airtime-drain-data.json",
@@ -437,7 +437,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/mobile-prefixes.json",
@@ -455,7 +455,7 @@
       "grammarFile": "src/data/courses/swahili/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/swahili.ts",
       "dictionaryFile": "src/data/dictionaries/swahili.json",
-      "dictionaryEntries": 53051,
+      "dictionaryEntries": 52934,
       "status": "ok"
     },
     {
@@ -464,7 +464,7 @@
       "grammarFile": "src/data/courses/kikuyu/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kikuyu.ts",
       "dictionaryFile": "src/data/dictionaries/kikuyu.json",
-      "dictionaryEntries": 23028,
+      "dictionaryEntries": 22960,
       "status": "ok"
     },
     {
@@ -482,7 +482,7 @@
       "grammarFile": "src/data/courses/luhya/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/luhya.ts",
       "dictionaryFile": "src/data/dictionaries/luhya.json",
-      "dictionaryEntries": 7170,
+      "dictionaryEntries": 7036,
       "status": "ok"
     },
     {
@@ -491,7 +491,7 @@
       "grammarFile": "src/data/courses/kamba/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kamba.ts",
       "dictionaryFile": "src/data/dictionaries/kamba.json",
-      "dictionaryEntries": 9752,
+      "dictionaryEntries": 9750,
       "status": "ok"
     },
     {
@@ -509,7 +509,7 @@
       "grammarFile": "src/data/courses/kisii/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/kisii.ts",
       "dictionaryFile": "src/data/dictionaries/kisii.json",
-      "dictionaryEntries": 1634,
+      "dictionaryEntries": 1576,
       "status": "ok"
     },
     {
@@ -518,7 +518,7 @@
       "grammarFile": "src/data/courses/meru/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/meru.ts",
       "dictionaryFile": "src/data/dictionaries/meru.json",
-      "dictionaryEntries": 1664,
+      "dictionaryEntries": 1590,
       "status": "ok"
     },
     {
@@ -554,7 +554,7 @@
       "grammarFile": "src/data/courses/mijikenda/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/mijikenda.ts",
       "dictionaryFile": "src/data/dictionaries/mijikenda.json",
-      "dictionaryEntries": 18200,
+      "dictionaryEntries": 17055,
       "status": "ok"
     },
     {
@@ -572,7 +572,7 @@
       "grammarFile": "src/data/courses/embu/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/embu.ts",
       "dictionaryFile": "src/data/dictionaries/embu.json",
-      "dictionaryEntries": 947,
+      "dictionaryEntries": 870,
       "status": "ok"
     },
     {
@@ -581,7 +581,7 @@
       "grammarFile": "src/data/courses/taita/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/taita.ts",
       "dictionaryFile": "src/data/dictionaries/taita.json",
-      "dictionaryEntries": 7689,
+      "dictionaryEntries": 7598,
       "status": "ok"
     },
     {
@@ -590,7 +590,7 @@
       "grammarFile": "src/data/courses/taveta/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/taveta.ts",
       "dictionaryFile": "src/data/dictionaries/taveta.json",
-      "dictionaryEntries": 775,
+      "dictionaryEntries": 727,
       "status": "ok"
     },
     {
@@ -599,7 +599,7 @@
       "grammarFile": "src/data/courses/pokomo/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/pokomo.ts",
       "dictionaryFile": "src/data/dictionaries/pokomo.json",
-      "dictionaryEntries": 3159,
+      "dictionaryEntries": 3087,
       "status": "ok"
     },
     {
@@ -635,7 +635,7 @@
       "grammarFile": "src/data/courses/ilchamus/grammar-reference.ts",
       "proverbsFile": "src/data/courses/proverbs/ilchamus.ts",
       "dictionaryFile": "src/data/dictionaries/ilchamus.json",
-      "dictionaryEntries": 463,
+      "dictionaryEntries": 449,
       "status": "ok"
     },
     {

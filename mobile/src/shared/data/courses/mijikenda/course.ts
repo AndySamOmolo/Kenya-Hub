@@ -70,37 +70,37 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "mwalume (pl. alume)",
             "source": "man",
-            "pronunciation": "mwa-lu-me / muche",
+            "pronunciation": "mwa-lu-me",
             "hint": "W. E. Taylor (1891)"
           },
           {
             "target": "muche (pl. ache)",
             "source": "woman",
-            "pronunciation": "mwa-lu-me / muche",
+            "pronunciation": "mu-che",
             "hint": "W. E. Taylor (1891)"
           },
           {
             "target": "madzi",
             "source": "water",
-            "pronunciation": "madzi / mo-ho",
+            "pronunciation": "madzi",
             "hint": "Krapf (1850), Krapf & Rebmann (1887), & Taylor (1891)"
           },
           {
             "target": "moho",
             "source": "fire",
-            "pronunciation": "madzi / mo-ho",
+            "pronunciation": "mo-ho",
             "hint": "Krapf (1850), Krapf & Rebmann (1887), & Taylor (1891)"
           },
           {
             "target": "dziwe (pl. mawe)",
             "source": "stone (pl. stones)",
-            "pronunciation": "dzi-we / dzua",
+            "pronunciation": "dzi-we",
             "hint": "Class 5 dzi-"
           },
           {
             "target": "dzua",
             "source": "sun",
-            "pronunciation": "dzi-we / dzua",
+            "pronunciation": "dzua",
             "hint": "Class 5 dzi-"
           },
           {
@@ -112,13 +112,13 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "chakurya",
             "source": "food",
-            "pronunciation": "cha-kurya / wa-ri",
+            "pronunciation": "cha-kurya",
             "hint": "W. E. Taylor (1891, p. 138)"
           },
           {
             "target": "wari",
             "source": "cooked cornmeal (ugali)",
-            "pronunciation": "cha-kurya / wa-ri",
+            "pronunciation": "wa-ri",
             "hint": "W. E. Taylor (1891, p. 138)"
           },
           {
@@ -131,7 +131,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Fw-alume ahahu, akiuka mumwenga, k'afurya wari. Ni mafigo.",
-            "source": "We are three men; when one goes away, we eat no cornmeal. It is the three hearthstones ."
+            "source": "We are three men; when one goes away, we eat no cornmeal. It is the three hearthstones."
           }
         ],
         "authoredExercises": [
@@ -258,19 +258,19 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "katsungula",
             "source": "little hare",
-            "pronunciation": "katsungu-la / simba / fi-si",
+            "pronunciation": "katsungu-la",
             "hint": "W. E. Taylor (1891) folktale characters"
           },
           {
             "target": "simba",
             "source": "lion",
-            "pronunciation": "katsungu-la / simba / fi-si",
+            "pronunciation": "simba",
             "hint": "W. E. Taylor (1891) folktale characters"
           },
           {
             "target": "fisi",
             "source": "hyena",
-            "pronunciation": "katsungu-la / simba / fi-si",
+            "pronunciation": "fi-si",
             "hint": "W. E. Taylor (1891) folktale characters"
           },
           {
@@ -300,34 +300,34 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "kurya",
             "source": "to eat",
-            "pronunciation": "kurya / ku-git'i-ra",
+            "pronunciation": "kurya",
             "hint": "Taylor (1891, p. 138)"
           },
           {
             "target": "kugit'ira",
             "source": "to cook",
-            "pronunciation": "kurya / ku-git'i-ra",
+            "pronunciation": "ku-git'i-ra",
             "hint": "Taylor (1891, p. 138)"
           },
           {
             "target": "kugula",
             "source": "to buy",
-            "pronunciation": "ku-gu-la / ku-gu-za",
+            "pronunciation": "ku-gu-la",
             "hint": "Krapf & Rebmann (1887) & Taylor (1891)"
           },
           {
             "target": "kuguza",
             "source": "to sell",
-            "pronunciation": "ku-gu-la / ku-gu-za",
+            "pronunciation": "ku-gu-za",
             "hint": "Krapf & Rebmann (1887) & Taylor (1891)"
           },
           {
-            "target": "Bandzu, bandzu rámala gogo (#602)",
+            "target": "Bandzu, bandzu rámala gogo",
             "source": "Chip, chip finished the block",
             "pronunciation": "bandzu"
           },
           {
-            "target": "Chuwo k'akina mumwenga (#602a)",
+            "target": "Chuwo k'akina mumwenga",
             "source": "Counsel is not of one alone (Taylor 1891)",
             "pronunciation": "chuwo-k'akina-mumwenga"
           },
@@ -347,7 +347,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Katsungula na Simba; Fisi na Simba na Katsungula.",
-            "source": "The Little Hare and the Lion; The Hyena, the Lion, and the Little Hare ."
+            "source": "The Little Hare and the Lion; The Hyena, the Lion, and the Little Hare."
           }
         ],
         "authoredExercises": [
@@ -369,17 +369,17 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mumwenga, mairi, ahahu, an-ne, atsano, handahu, fungahe, nane, chenda, kumi\" in Mijikenda?",
-            "correctAnswer": "1",
+            "prompt": "What is the English meaning of \"mumwenga\" in Mijikenda?",
+            "correctAnswer": "One (1)",
             "options": [
               "to eat",
               "little hare",
               "lion",
-              "1"
+              "One (1)"
             ],
             "hint": "Mijikenda numerals 1–10 (Taylor 1891 & Krapf 1887)",
             "acceptedAnswers": [
-              "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+              "One (1)",
               "1"
             ]
           },
@@ -499,13 +499,13 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "lukolo (pl. k'olo)",
             "source": "Family",
-            "pronunciation": "lu-ko-lo / mba-ri",
+            "pronunciation": "lu-ko-lo",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           },
           {
             "target": "mbari",
             "source": "Clan",
-            "pronunciation": "lu-ko-lo / mba-ri",
+            "pronunciation": "mba-ri",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           },
           {
@@ -751,15 +751,15 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Taylor 1891 & Krapf & Rebmann 1887"
           },
           {
-            "target": "chenda",
-            "source": "Nine",
-            "pronunciation": "chenda / kenda",
+            "target": "hahu (-hahu)",
+            "source": "Three",
+            "pronunciation": "ha-hu",
             "hint": "Wikipedia Sabaki languages & Bantu numeral cognates"
           },
           {
-            "target": "kenda",
-            "source": "Kenda in Mijikenda)",
-            "pronunciation": "chenda / kenda",
+            "target": "tsano (ts'ano)",
+            "source": "Five",
+            "pronunciation": "tsa-no / ts'a-no",
             "hint": "Wikipedia Sabaki languages & Bantu numeral cognates"
           },
           {
@@ -851,8 +851,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                 "right": "Six"
               },
               {
-                "left": "chenda",
-                "right": "Nine"
+                "left": "tsano (ts'ano)",
+                "right": "Five"
               }
             ]
           }
@@ -868,7 +868,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "piga sikíro",
-            "source": "To box give one",
+            "source": "To box the ears",
             "pronunciation": "pi-ga si-ki-ro",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
           },
@@ -916,7 +916,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "piga sikíro — kumi",
-            "source": "Box, to give one- — Ten."
+            "source": "To box the ears — Ten."
           },
           {
             "target": "menga — tandahu",
@@ -927,16 +927,16 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"piga sikíro\" mean in English?",
-            "correctAnswer": "Box",
+            "correctAnswer": "To box the ears",
             "options": [
               "Ten",
               "One",
               "Six",
-              "Box"
+              "To box the ears"
             ],
             "hint": "Core vocabulary in Trade, Barter, Currency & Traditional Measures",
             "acceptedAnswers": [
-              "Box, to give one-",
+              "To box the ears",
               "Box"
             ]
           },
@@ -967,7 +967,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pairs": [
               {
                 "left": "piga sikíro",
-                "right": "Box, to give one-"
+                "right": "To box the ears"
               },
               {
                 "left": "kumi",
@@ -1014,9 +1014,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
           },
           {
-            "target": "ídji pl. ma",
+            "target": "ídji (pl. mádji)",
             "source": "Egg",
-            "pronunciation": "ídji-pl-ma-"
+            "pronunciation": "i-dji / ma-dji"
           },
           {
             "target": "jíta; jăkána",
@@ -1059,8 +1059,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "henda mukáhe — ídji pl. ma",
-            "source": "Bake, v. a. -bread — Egg."
+            "target": "henda mukáhe — ídji (pl. mádji)",
+            "source": "Bake bread — Egg."
           },
           {
             "target": "jíta — mukáhe",
@@ -1071,26 +1071,26 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"henda mukáhe\" mean in English?",
-            "correctAnswer": "Bake",
+            "correctAnswer": "Bake bread",
             "options": [
               "Egg",
-              "Bake",
+              "Bake bread",
               "Boil",
               "Bread"
             ],
             "hint": "Core vocabulary in Staple Foods, Cookery & Beverages",
             "acceptedAnswers": [
-              "Bake, v. a. -bread",
+              "Bake bread",
               "Bake"
             ]
           },
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"Egg\"",
-            "correctAnswer": "ídji pl. ma-",
+            "correctAnswer": "ídji",
             "acceptedAnswers": [
-              "ídji pl. ma-",
-              "ídji pl. ma-"
+              "ídji (pl. mádji)",
+              "ídji"
             ],
             "hint": "Starts with \"íd\""
           },
@@ -1100,7 +1100,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "correctAnswer": "Boil",
             "acceptedAnswers": [
               "Boil",
-              "Boil"
+              "Cook"
             ],
             "hint": "Review Staple Foods, Cookery & Beverages"
           },
@@ -1111,14 +1111,14 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pairs": [
               {
                 "left": "henda mukáhe",
-                "right": "Bake, v. a. -bread"
+                "right": "Bake bread"
               },
               {
-                "left": "ídji pl. ma-",
+                "left": "ídji (pl. mádji)",
                 "right": "Egg"
               },
               {
-                "left": "jíta",
+                "left": "jíta; jăkána",
                 "right": "Boil"
               },
               {
@@ -1149,13 +1149,13 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "mazerre",
-            "source": "Corn, (turkish)",
+            "source": "Corn (maize)",
             "pronunciation": "ma-zerre",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
           },
           {
             "target": "muháma",
-            "source": "maize",
+            "source": "Millet / sorghum",
             "pronunciation": "mu-ha-ma",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
           },
@@ -1172,7 +1172,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
           },
           {
-            "target": "ídji pl. ma",
+            "target": "ídji (pl. mádji)",
             "source": "Egg",
             "pronunciation": "idji",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
@@ -1197,11 +1197,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "mjíti — mazerre",
-            "source": "Cook — Corn."
+            "source": "Cook — Corn (maize)."
           },
           {
             "target": "muháma — nóa",
-            "source": "maize — Drink."
+            "source": "Millet / sorghum — Drink."
           }
         ],
         "authoredExercises": [
@@ -1210,8 +1210,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "prompt": "What does \"mjíti\" mean in English?",
             "correctAnswer": "Cook",
             "options": [
-              "Corn",
-              "maize",
+              "Corn (maize)",
+              "Millet / sorghum",
               "Cook",
               "Drink"
             ],
@@ -1219,7 +1219,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "translate_to_target",
-            "prompt": "Translate to the target language: \"Corn, (turkish)\"",
+            "prompt": "Translate to the target language: \"Corn (maize)\"",
             "correctAnswer": "mazerre",
             "acceptedAnswers": [
               "mazerre",
@@ -1230,10 +1230,10 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_english",
             "prompt": "Translate to English: \"muháma\"",
-            "correctAnswer": "maize",
+            "correctAnswer": "Millet / sorghum",
             "acceptedAnswers": [
-              "maize",
-              "maize"
+              "Millet / sorghum",
+              "Millet"
             ],
             "hint": "Review Crops, Cultivation & Pastoral Livestock"
           },
@@ -1248,11 +1248,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "mazerre",
-                "right": "Corn,"
+                "right": "Corn (maize)"
               },
               {
                 "left": "muháma",
-                "right": "maize"
+                "right": "Millet / sorghum"
               },
               {
                 "left": "nóa",
@@ -1260,7 +1260,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "ría",
-                "right": "Eat, va"
+                "right": "Eat"
               }
             ]
           }
@@ -1334,7 +1334,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kánda — gnombe mulúme",
-            "source": "Bank, s. — Ox."
+            "source": "Bank (of a river) — Ox."
           },
           {
             "target": "dzua — ng'ombe",
@@ -1345,16 +1345,16 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"kánda\" mean in English?",
-            "correctAnswer": "Bank",
+            "correctAnswer": "Bank (of a river)",
             "options": [
               "Ox",
               "Sun",
-              "Bank",
+              "Bank (of a river)",
               "Cow"
             ],
             "hint": "Core vocabulary in Sky, Weather, Rivers & Landforms",
             "acceptedAnswers": [
-              "Bank, s. (of a river)",
+              "Bank (of a river)",
               "Bank"
             ]
           },
@@ -1385,7 +1385,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pairs": [
               {
                 "left": "kánda",
-                "right": "Bank, s."
+                "right": "Bank (of a river)"
               },
               {
                 "left": "gnombe mulúme",
@@ -1471,7 +1471,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "gáu — dia uzípiga kulúlu",
-            "source": "Bark, s. — Bark, v."
+            "source": "Bark (of a tree) — Bark (like a dog)."
           },
           {
             "target": "niúji — niúni",
@@ -1482,22 +1482,22 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What does \"gáu\" mean in English?",
-            "correctAnswer": "Bark",
+            "correctAnswer": "Bark (of a tree)",
             "options": [
-              "Bark",
+              "Bark (of a tree)",
               "Bee",
               "Bird",
-              "Blow"
+              "Blow (wind)"
             ],
             "hint": "Core vocabulary in East African Fauna, Birds & Sacred Trees",
             "acceptedAnswers": [
-              "Bark, s. (of a tree)",
+              "Bark (of a tree)",
               "Bark"
             ]
           },
           {
             "type": "translate_to_target",
-            "prompt": "Translate to the target language: \"Bark, v. (like a dog)\"",
+            "prompt": "Translate to the target language: \"Bark (like a dog)\"",
             "correctAnswer": "dia uzípiga kulúlu",
             "acceptedAnswers": [
               "dia uzípiga kulúlu",
@@ -1522,11 +1522,11 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pairs": [
               {
                 "left": "gáu",
-                "right": "Bark, s."
+                "right": "Bark (of a tree)"
               },
               {
                 "left": "dia uzípiga kulúlu",
-                "right": "Bark, v."
+                "right": "Bark (like a dog)"
               },
               {
                 "left": "niúji",
@@ -1538,7 +1538,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "fúma",
-                "right": "Blow, v."
+                "right": "Blow (wind)"
               }
             ]
           }
@@ -1882,102 +1882,114 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"ságala\" in Mijikenda?",
-            "correctAnswer": "Abide",
+            "prompt": "What is the English meaning of \"kuhenda (-henda)\" in Mijikenda?",
+            "correctAnswer": "To do / To make",
             "options": [
-              "Able",
-              "Abolish",
-              "Abide",
-              "Above"
+              "To go / To walk",
+              "To come",
+              "To do / To make",
+              "To cultivate / To hoe"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. n.)"
+            "hint": "Krapf & Rebmann (1887) & Taylor (1891) Giryama"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"idíma\" in Mijikenda?",
-            "correctAnswer": "Able",
+            "prompt": "What is the English meaning of \"kwenda (-enda)\" in Mijikenda?",
+            "correctAnswer": "To go / To walk",
             "options": [
-              "Able",
-              "Abolish",
-              "Above",
-              "Abide"
+              "To go / To walk",
+              "To come",
+              "To buy / To trade",
+              "To do / To make"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)",
+            "hint": "Krapf (1850) Kinika & Taylor (1891) Giryama",
             "acceptedAnswers": [
-              "Able, to be-",
-              "Able"
+              "To go / To walk",
+              "To go"
             ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"fúnsa\" in Mijikenda?",
-            "correctAnswer": "Abolish",
+            "prompt": "What is the English meaning of \"kudza (-dza)\" in Mijikenda?",
+            "correctAnswer": "To come",
             "options": [
-              "Above",
-              "Abide",
-              "Able",
-              "Abolish"
+              "To cultivate / To hoe",
+              "To do / To make",
+              "To go / To walk",
+              "To come"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)"
+            "hint": "Taylor (1891) Giryama Vocabulary"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Abolish\" in Mijikenda?",
-            "correctAnswer": "fúnsa",
+            "prompt": "How do you say \"To come\" in Mijikenda?",
+            "correctAnswer": "kudza",
             "options": [
-              "ságala",
-              "idíma",
-              "zúlu",
-              "fúnsa"
+              "kuhenda",
+              "kwenda",
+              "kurima",
+              "kudza"
             ],
-            "hint": "Starts with \"fú…\" (5 letters)"
+            "hint": "Starts with \"ku…\" (5 letters)",
+            "acceptedAnswers": [
+              "kudza (-dza)",
+              "kudza"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Above\" in Mijikenda?",
-            "correctAnswer": "zúlu",
+            "prompt": "How do you say \"To cultivate / To hoe\" in Mijikenda?",
+            "correctAnswer": "kurima",
             "options": [
-              "zúlu",
-              "ságala",
-              "idíma",
-              "fúnsa"
+              "kurima",
+              "kuhenda",
+              "kwenda",
+              "kudza"
             ],
-            "hint": "Starts with \"zú…\" (4 letters)"
+            "hint": "Starts with \"ku…\" (6 letters)",
+            "acceptedAnswers": [
+              "kurima (-rima)",
+              "kurima"
+            ]
           },
           {
             "type": "match_pairs",
             "prompt": "Match each Mijikenda expression with its English meaning:",
-            "correctAnswer": "ságala: Abide",
+            "correctAnswer": "kuhenda (-henda): To do / To make",
             "pairs": [
               {
-                "left": "ságala",
-                "right": "Abide"
+                "left": "kuhenda (-henda)",
+                "right": "To do / To make"
               },
               {
-                "left": "idíma",
-                "right": "Able, to be-"
+                "left": "kwenda (-enda)",
+                "right": "To go / To walk"
               },
               {
-                "left": "fúnsa",
-                "right": "Abolish"
+                "left": "kudza (-dza)",
+                "right": "To come"
               },
               {
-                "left": "zúlu",
-                "right": "Above"
+                "left": "kurima (-rima)",
+                "right": "To cultivate / To hoe"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Mijikenda term for \"Abound\": ___",
-            "correctAnswer": "izála",
+            "prompt": "Complete the Mijikenda term for \"To buy / To trade\": ___",
+            "correctAnswer": "kugula",
             "options": [
-              "ságala",
-              "idíma",
-              "izála",
-              "fúnsa"
+              "kuhenda",
+              "kwenda",
+              "kugula",
+              "kudza"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. n.)"
+            "hint": "Krapf (1850) Kinika",
+            "acceptedAnswers": [
+              "kugula (-gula)",
+              "kugula"
+            ]
           }
         ]
       },
@@ -2237,7 +2249,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
       {
         "id": "mijikenda-time-calendar-journey-navigation-8",
         "title": "Travel, Directions, Paths & Landmarks",
-        "icon": "Droplets",
+        "icon": "Compass",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
         "tips": "Every lexical entry in this module is drawn verbatim from Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891 Giryama & Aphorisms), Johnston (1919) & Hobley (1922). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
         "culturalNote": "Primary historical documentation for Mijikenda (Giriama) (Kigiriama) in Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891 Giryama & Aphorisms), Johnston (1919) & Hobley (1922) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kilifi, Kwale, Mombasa.",
@@ -2282,102 +2294,98 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kuzéja; kuzignála\" in Mijikenda?",
-            "correctAnswer": "Dawn",
+            "prompt": "What is the English meaning of \"mwaka (pl. miaka)\" in Mijikenda?",
+            "correctAnswer": "Year / Seasonal cycle",
             "options": [
-              "Dawn",
-              "Known",
-              "Last day",
-              "Late"
+              "Year / Seasonal cycle",
+              "Star",
+              "Morning-star",
+              "Early morning / Tomorrow"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. n.)"
+            "hint": "Krapf (1850) Kinika"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"mánisa\" in Mijikenda?",
-            "correctAnswer": "Known",
+            "prompt": "What is the English meaning of \"nyondo (nyota)\" in Mijikenda?",
+            "correctAnswer": "Star",
             "options": [
-              "Last day",
-              "Late",
-              "Known",
-              "Dawn"
+              "Morning-star",
+              "Early morning / Tomorrow",
+              "Star",
+              "Year / Seasonal cycle"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)",
-            "acceptedAnswers": [
-              "Known, to make-",
-              "Known"
-            ]
+            "hint": "Taylor (1891) Giryama Vocabulary"
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"zíku ya ku sira\" in Mijikenda?",
-            "correctAnswer": "Last day",
+            "prompt": "What is the English meaning of \"niegnési ya jiramúko\" in Mijikenda?",
+            "correctAnswer": "Morning-star",
             "options": [
-              "Late",
-              "Dawn",
-              "Last day",
-              "Known"
+              "Early morning / Tomorrow",
+              "Year / Seasonal cycle",
+              "Morning-star",
+              "Star"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
+            "hint": "Krapf (1850) Kinika"
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Last day\" in Mijikenda?",
-            "correctAnswer": "zíku ya ku sira",
+            "prompt": "How do you say \"Morning-star\" in Mijikenda?",
+            "correctAnswer": "niegnési ya jiramúko",
             "options": [
-              "majira gavojira",
+              "majéro",
               "niegnési ya jiramúko",
-              "zíku ya ku sira",
+              "nyondo",
               "mwaka"
             ],
-            "hint": "Starts with \"zí…\" (15 letters)"
+            "hint": "Starts with \"ni…\""
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Late\" in Mijikenda?",
-            "correctAnswer": "majira gavojira",
+            "prompt": "How do you say \"Before / In front\" in Mijikenda?",
+            "correctAnswer": "mbere",
             "options": [
-              "kuzéja",
-              "mánisa",
-              "majira gavojira",
-              "zíku ya ku sira"
+              "majéro",
+              "nyondo",
+              "mbere",
+              "nyuma"
             ],
-            "hint": "Starts with \"ma…\" (15 letters)"
+            "hint": "Starts with \"mb…\" (5 letters)"
           },
           {
             "type": "match_pairs",
             "prompt": "Match each Mijikenda expression with its English meaning:",
-            "correctAnswer": "kuzéja; kuzignála: Dawn",
+            "correctAnswer": "mwaka (pl. miaka): Year / Seasonal cycle",
             "pairs": [
               {
-                "left": "kuzéja; kuzignála",
-                "right": "Dawn"
+                "left": "mwaka (pl. miaka)",
+                "right": "Year / Seasonal cycle"
               },
               {
-                "left": "mánisa",
-                "right": "Known, to make-"
+                "left": "nyondo (nyota)",
+                "right": "Star"
               },
               {
-                "left": "zíku ya ku sira",
-                "right": "Last day"
+                "left": "niegnési ya jiramúko",
+                "right": "Morning-star"
               },
               {
-                "left": "majira gavojira",
-                "right": "Late"
+                "left": "majéro",
+                "right": "Early morning / Tomorrow"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Mijikenda term for \"Legislate\": ___",
-            "correctAnswer": "henda pore ya zi",
+            "prompt": "Complete the Mijikenda term for \"Behind / Afterwards\": ___",
+            "correctAnswer": "nyuma",
             "options": [
-              "henda pore ya zi",
-              "zíku ya ku sira",
+              "nyuma",
+              "mbere",
               "niegnési ya jiramúko",
               "mwaka"
             ],
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)"
+            "hint": "Krapf (1850) Kinika"
           }
         ]
       }
@@ -2419,7 +2427,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "kahénsa",
-            "source": "Against, he is",
+            "source": "He is against",
             "pronunciation": "ka-hensa",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
           },
@@ -2431,7 +2439,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "wízo",
-            "source": "Agreable",
+            "source": "Agreeable",
             "pronunciation": "wi-zo",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka adj.)"
           },
@@ -2459,7 +2467,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "púnde — kahénsa",
-            "source": "After — Against, he is."
+            "source": "After — He is against."
           }
         ],
         "authoredExercises": [
@@ -2471,7 +2479,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
               "Advise",
               "Affirm",
               "After",
-              "Against"
+              "He is against"
             ],
             "hint": "Core vocabulary in Everyday Conversational Phrases & Questions"
           },
@@ -2514,7 +2522,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "kahénsa",
-                "right": "Against, he is-"
+                "right": "He is against"
               },
               {
                 "left": "lagána",
@@ -2570,7 +2578,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "búma kóro",
-            "source": "to make",
+            "source": "To make angry",
             "pronunciation": "bu-ma ko-ro",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
           },
@@ -3201,9 +3209,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           },
           {
-            "target": "weru)",
+            "target": "weru",
             "source": "Wilderness",
-            "pronunciation": "ku-m'-richa ha-ke-ye",
+            "pronunciation": "we-ru",
             "hint": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections"
           }
         ],
@@ -3537,14 +3545,14 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Dzua ridziupuka",
-            "source": "Sunrise",
+            "source": "Sunrise (6:00 a.m.)",
             "pronunciation": "dzoo-ah ree-dzee-oo-poo-kah",
             "hint": "Stage 1 of the solar day (Krapf & Rebmann 1887, p. 66 s.v. Dzua)"
           },
           {
             "target": "Dzua ridziombola",
-            "source": "come forth)",
-            "pronunciation": "dzoo-ah ree-dzee-oo-poo-kah",
+            "source": "Sunrise (the sun has come forth, 6:00 a.m.)",
+            "pronunciation": "dzoo-ah ree-dzee-ohm-boh-lah",
             "hint": "Stage 1 of the solar day (Krapf & Rebmann 1887, p. 66 s.v. Dzua)"
           },
           {
@@ -3574,49 +3582,49 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "Dzua ridzifika lua mudzana lua ku vola",
             "source": "Cool of the late afternoon (4:00 p.m.)",
-            "pronunciation": "dzoo-ah ree-dzee-oh-goh-kah",
+            "pronunciation": "dzoo-ah ree-dzee-fee-kah loo-ah moo-dzah-nah",
             "hint": "Stages 8 & 11 of the solar day (Krapf & Rebmann 1887, p. 66)"
           },
           {
             "target": "Dzua ridzibodoka",
-            "source": "Sunset",
-            "pronunciation": "dzoo-ah ree-dzee-boh-doh-kah / ree-dzeh-dzoo-ah",
+            "source": "Sunset (6:00 p.m.)",
+            "pronunciation": "dzoo-ah ree-dzee-boh-doh-kah",
             "hint": "Stage 13 of the solar day (Krapf & Rebmann 1887, p. 66)"
           },
           {
             "target": "Dzua ridzedzua",
-            "source": "set)",
-            "pronunciation": "dzoo-ah ree-dzee-boh-doh-kah / ree-dzeh-dzoo-ah",
+            "source": "Sunset (the sun has set, 6:00 p.m.)",
+            "pronunciation": "dzoo-ah ree-dzeh-dzoo-ah",
             "hint": "Stage 13 of the solar day (Krapf & Rebmann 1887, p. 66)"
           },
           {
             "target": "Chala cha dzalagumba",
             "source": "Thumb (1st finger)",
-            "pronunciation": "chah-lah chah dzah-lah-goom-bah / mwoh-loh-hoh",
+            "pronunciation": "chah-lah chah dzah-lah-goom-bah",
             "hint": "Krapf & Rebmann (1887, pp. 20–21 s.v. Chala)"
           },
           {
             "target": "Chala cha muoloho",
             "source": "Forefinger or pointing finger (2nd finger)",
-            "pronunciation": "chah-lah chah dzah-lah-goom-bah / mwoh-loh-hoh",
+            "pronunciation": "chah-lah chah mwoh-loh-hoh",
             "hint": "Krapf & Rebmann (1887, pp. 20–21 s.v. Chala)"
           },
           {
             "target": "Chala kibomu",
             "source": "Middle finger (3rd)",
-            "pronunciation": "chah-lah kee-boh-moo / kee-see-choh dzee-nah / chah kahn-dah",
+            "pronunciation": "chah-lah kee-boh-moo",
             "hint": "Krapf & Rebmann (1887, p. 21 s.v. Chala)"
           },
           {
             "target": "Chala kisicho dzina",
             "source": "Ring finger ('nameless finger', 4th)",
-            "pronunciation": "chah-lah kee-boh-moo / kee-see-choh dzee-nah / chah kahn-dah",
+            "pronunciation": "chah-lah kee-see-choh dzee-nah",
             "hint": "Krapf & Rebmann (1887, p. 21 s.v. Chala)"
           },
           {
             "target": "Chala cha kanda",
             "source": "Little finger (5th)",
-            "pronunciation": "chah-lah kee-boh-moo / kee-see-choh dzee-nah / chah kahn-dah",
+            "pronunciation": "chah-lah chah kahn-dah",
             "hint": "Krapf & Rebmann (1887, p. 21 s.v. Chala)"
           }
         ],
@@ -3789,64 +3797,64 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "tips": "In Kinika (p. 126 s.v. Hongoza), three verbs for 'to answer' (ku hongoza, ku runga, ku shudia) are used strictly in negative clauses ('he did not answer a word'), whereas ku lungukiza, ku udzikiza, and ku udzira are used in both affirmative and negative clauses.",
         "words": [
           {
-            "target": "Ku hongoza, Ku runga, Ku shudia (neg.) vs. Ku lungukiza, Ku udzikiza",
-            "source": "3 negative-only verbs for 'to answer' vs. 3 affirmative & negative verbs for 'to",
+            "target": "Ku hongoza, Ku runga, Ku shudia (neg.) vs. Ku lungukiza, Ku udzikiza, Ku udzira",
+            "source": "3 negative-only verbs for 'to answer' vs. 3 affirmative & negative verbs for 'to answer'",
             "pronunciation": "koo hohn-goh-zah / koo loon-goo-kee-zah",
             "hint": "Krapf, Rebmann & Sparshott (1887, p. 126 s.v. Hongoza)"
           },
           {
             "target": "Ku funa",
-            "source": "7 harvesting verbs: reap stalks",
+            "source": "To reap grain stalks (harvesting)",
             "pronunciation": "ku-funa"
           },
           {
             "target": "Ku guha",
-            "source": "break cobs",
+            "source": "To break maize cobs",
             "pronunciation": "ku-guha"
           },
           {
             "target": "Ku tola",
-            "source": "pick pods",
+            "source": "To pick bean pods",
             "pronunciation": "ku-tola"
           },
           {
             "target": "Ku poa",
-            "source": "thresh pods",
+            "source": "To thresh pods",
             "pronunciation": "ku-poa"
           },
           {
             "target": "Ku hunda",
-            "source": "pluck fruit",
+            "source": "To pluck fruit",
             "pronunciation": "ku-hunda"
           },
           {
             "target": "Ku kwachula",
-            "source": "strip clusters",
+            "source": "To strip clusters",
             "pronunciation": "ku-kwachula"
           },
           {
             "target": "Ku kopa",
-            "source": "cut fronds/bunches",
+            "source": "To cut palm fronds/bunches",
             "pronunciation": "ku-kopa"
           },
           {
             "target": "Ku bonda",
-            "source": "4 pounding verbs: mash soft food",
+            "source": "To mash soft food (pounding)",
             "pronunciation": "ku-bonda"
           },
           {
             "target": "Ku vonda",
-            "source": "1st husking pound",
+            "source": "First husking pound of grain",
             "pronunciation": "ku-vonda"
           },
           {
             "target": "Ku huaga",
-            "source": "2nd cleaning pound",
+            "source": "Second cleaning pound of grain",
             "pronunciation": "ku-huaga"
           },
           {
             "target": "Ku pura",
-            "source": "final flour pounding",
+            "source": "Final flour pounding",
             "pronunciation": "ku-pura"
           },
           {
@@ -3926,7 +3934,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Kiravo cha mukate",
-            "source": "kikahe",
+            "source": "Ordeal of the poisoned bread (kikahe) and the 6 Mijikenda judicial ordeals",
             "pronunciation": "kiravo-cha-mukate"
           },
           {
@@ -3940,8 +3948,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "ku-funsa-chala"
           },
           {
-            "target": "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo",
-            "source": "9 graded sizes of calabashes from the smallest palm-tapping gourd (kibaria) to",
+            "target": "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo →uku",
+            "source": "9 graded sizes of calabashes from the smallest palm-tapping gourd (kibaria) to the largest storage gourd",
             "pronunciation": "kibaria-kirea-tumbi-ndzoma",
             "hint": "Krapf, Rebmann & Sparshott (1887, pp. 151–152 s.v. Kibaria)"
           },
@@ -3957,7 +3965,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Nundu",
-            "source": "bat, p. 314",
+            "source": "Sacred bat of the Kaya (kifudu emblem)",
             "pronunciation": "nundu"
           }
         ],
@@ -3992,33 +4000,33 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "target": "[Barabara]_TOPIC ndipho [a-ka-i-rich-a]_COMMENT",
             "source": "The main road, that is when he left it",
-            "pronunciation": "topic-ndipho-comment"
+            "pronunciation": "ba-ra-ba-ra ndi-pho a-ka-i-ri-cha"
           },
           {
             "target": "[Pesa]_TOPIC sino [hu-na-Ø-hew-a]_COMMENT",
             "source": "That money, we have been given [it]",
-            "pronunciation": "topic-sino-comment"
+            "pronunciation": "pe-sa si-no hu-na-he-wa"
           },
           {
             "target": "ela [go mafuha ga taa]_TOPIC ndo [n’yarya?]_COMMENT",
             "source": "but that lamp oil, what was it? (switch topic)",
-            "pronunciation": "ela-topic-ndo-comment"
+            "pronunciation": "e-la go ma-fu-ha ga taa ndo nya-rya"
           },
           {
             "target": "Lakini [achinyamala]_COMMENT [mutu yuyu]_TOPIC wala kayagomba na mutu",
             "source": "However, he kept quiet, this person, and didn't speak with anyone",
-            "pronunciation": "lakini-comment-topic-wala",
+            "pronunciation": "la-ki-ni a-chi-nya-ma-la mu-tu yu-yu",
             "hint": "Nicolle (2016, Ch. 20, p. 383, Ex. 11)"
           },
           {
-            "target": "Ndipho atu achimanya kukala [iye]_FOCUS [ndi=ye ariyehenda mambo",
+            "target": "Ndipho atu achimanya kukala [iye]_FOCUS [ndi=ye ariyehenda mambo gano]",
             "source": "That is when people knew that [it was] he [who did these things]",
-            "pronunciation": "ndipho-atu-achimanya-kukala",
+            "pronunciation": "ndi-pho a-tu a-chi-ma-nya ku-ka-la i-ye",
             "hint": "Nicolle (2016, Ch. 20, p. 388, Ex. 22)"
           },
           {
-            "target": "Phahi rero, chisha chindi, [ratuluka] [fisi], rina chitswa dza cha",
-            "source": "Then today, after a short time, out came a giant hyena, having a head like",
+            "target": "Phahi rero, chisha chindi, [ratuluka] [fisi], rina chitswa dza cha mutu",
+            "source": "Then today, after a short time, out came a giant hyena, having a head like a person's",
             "pronunciation": "ra-tu-lu-ka fi-si ri-na chi-tswa dza cha mu-tu",
             "hint": "Nicolle (2016, Ch. 20, p. 390, Ex. 25)"
           }
@@ -4037,13 +4045,13 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
     "unitNumber": 16,
     "title": "Kigiryama Agriculture & Homestead Life",
     "description": "Curated Kigiryama farming, irrigation, and natural-world vocabulary from the Lingua-Connect English–Giriama Corpus",
-    "icon": "🌾",
+    "icon": "Sprout",
     "color": "#D97706",
     "skills": [
       {
         "id": "mijikenda-open-skill-1",
         "title": "Farming, Harvest & Coastal Nature",
-        "icon": "🌱",
+        "icon": "Leaf",
         "description": "Agricultural extension terms and everyday Kigiryama nouns",
         "grammarTip": "In Kigiryama, locative and genitive phrases use 'wa / za / cha' agreeing with the head noun class (e.g., mwambolero wa dzuwa 'sunrise / east', uchi wa nyuchi 'wild bee honey').",
         "culturalNote": "Sourced from the Lingua-Connect/English-Giriama-Dataset (2025, CC-BY-4.0).",
@@ -4175,7 +4183,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "target": "pa mumvéra",
-            "source": "Thank, v."
+            "source": "To give thanks."
           }
         ]
       },

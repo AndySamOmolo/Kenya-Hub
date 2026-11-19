@@ -10,7 +10,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-18",
   "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 51, 66), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0).",
   "categories": [
     {
@@ -67,7 +67,7 @@
           "context": "SIL Bloom Library Rendille Literacy Corpus (sil-ai/bloom-lm, rel, CC-BY-4.0)"
         },
         {
-          "english": "peace, wellness greeting / the elephant (masculine definite suffix -kí with high pitch accent)",
+          "english": "Peace, wellness greeting / the elephant (masculine definite suffix -kí with high pitch accent)",
           "translation": "nabáh / arab-kí",
           "pronunciation": "nab-áh",
           "context": "Afi Rendille Cushitic pitch-accent & gender suffixation (-kí masculine / -tí feminine) • Source: Christopher R. Green 2026 (African Tone Phenomena, Language Science Press #621, Ch. 9, CC-BY-4.0) & SIL International Bloom Library Rendille Collection"
@@ -160,17 +160,20 @@
         {
           "english": "One",
           "translation": "kou",
+          "pronunciation": "kou",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Two",
           "translation": "lama",
+          "pronunciation": "la-ma",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
-          "english": "Stone",
-          "translation": "dagah",
-          "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+          "english": "One hundred (100)",
+          "translation": "boqol",
+          "pronunciation": "bo-qol",
+          "context": "Bernd Heine (1976) — Notes on the Rendille Language"
         }
       ]
     },
@@ -282,7 +285,7 @@
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
         },
         {
-          "english": "Man; = vir",
+          "english": "Man (male)",
           "translation": "lábo",
           "pronunciation": "lábo",
           "context": "East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979, Rendille cognate)"
@@ -296,6 +299,7 @@
         {
           "english": "Person",
           "translation": "inyenyet",
+          "pronunciation": "in-yen-yet",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
@@ -476,41 +480,49 @@
         {
           "english": "Skin",
           "translation": "mahel",
+          "pronunciation": "ma-hel",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Blood",
           "translation": "dig",
+          "pronunciation": "dig",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Ear",
           "translation": "dogo",
+          "pronunciation": "do-go",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Nose",
           "translation": "san",
+          "pronunciation": "san",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Tongue",
           "translation": "harap",
+          "pronunciation": "ha-rap",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Knee",
           "translation": "jilip",
+          "pronunciation": "ji-lip",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Hand",
           "translation": "faro",
+          "pronunciation": "fa-ro",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Liver",
           "translation": "halesi",
+          "pronunciation": "ha-le-si",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
@@ -606,8 +618,8 @@
         },
         {
           "english": "Camels endure long journeys across the Kaisut desert without water",
-          "translation": "Gaal maalin badan biyo la'aan dhul qallalan ku socda",
-          "pronunciation": "gaal-maalin-badan-biyo",
+          "translation": "Gaal séré badan biché male hárra qallalan ku irda",
+          "pronunciation": "gaal se-re ba-dan bi-che ma-le har-ra qal-la-lan ku ir-da",
           "context": "SIL Bloom Library Rendille Literacy Corpus (rel, CC-BY-4.0)"
         },
         {
@@ -673,11 +685,13 @@
         {
           "english": "Fish",
           "translation": "bahag",
+          "pronunciation": "ba-hag",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Louse",
           "translation": "injir",
+          "pronunciation": "in-jir",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
@@ -779,8 +793,8 @@
         },
         {
           "english": "Has rain fallen in the pastures?",
-          "translation": "Roob ma da'ay?",
-          "pronunciation": "roob ma da'ay",
+          "translation": "Hír ma da'ay?",
+          "pronunciation": "hir ma da-ay",
           "context": "Rendille Greetings — Schlee (1979) • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -858,21 +872,25 @@
         {
           "english": "Leaf",
           "translation": "hadah",
+          "pronunciation": "ha-dah",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Sun",
           "translation": "ora",
+          "pronunciation": "o-ra",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Fire",
           "translation": "dap",
+          "pronunciation": "dap",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Mountain",
           "translation": "kur",
+          "pronunciation": "kur",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
@@ -963,11 +981,13 @@
         {
           "english": "To drink",
           "translation": "dam",
+          "pronunciation": "dam",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Water",
           "translation": "biche",
+          "pronunciation": "bi-che",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
@@ -981,49 +1001,49 @@
           "english": "Nomadic house / Mat-covered frame tent",
           "translation": "Minda / Min",
           "pronunciation": "minda",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Material Culture — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Camel bell (wooden)",
           "translation": "Koor",
           "pronunciation": "koor",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Material Culture — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Milk container (woven fibre)",
           "translation": "Jiiq / Soroor",
           "pronunciation": "jiiq",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Material Culture — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Water container (strapped on camel)",
           "translation": "Butee",
           "pronunciation": "butee",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Material Culture — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Wooden headrest / Stool",
           "translation": "Karin / Karam",
           "pronunciation": "karin",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Material Culture — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Sleeping hide",
           "translation": "Maqar / Maxel",
           "pronunciation": "maqar",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Material Culture — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Walking stick / Herding staff",
           "translation": "Ulo / Siimbo",
           "pronunciation": "ulo",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Material Culture — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Cooking pot",
           "translation": "Dhari",
           "pronunciation": "dhari",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Material Culture — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Nomadic settlement / Manyatta enclosure",
@@ -1033,15 +1053,15 @@
         },
         {
           "english": "Woven mat roof of the Rendille house",
-          "translation": "min",
-          "pronunciation": "min",
-          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+          "translation": "daf",
+          "pronunciation": "daf",
+          "context": "SIL Bloom Rendille Graded Readers & Schlee (1979) (CC-BY-4.0)"
         },
         {
           "english": "Wooden milk container / Camel-milk vessel",
-          "translation": "koor",
-          "pronunciation": "koor",
-          "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+          "translation": "madál",
+          "pronunciation": "ma-dal",
+          "context": "SIL Bloom Rendille Graded Readers & Schlee (1979) (CC-BY-4.0)"
         }
       ]
     },
@@ -1245,6 +1265,7 @@
         {
           "english": "To see",
           "translation": "ger",
+          "pronunciation": "ger",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
@@ -1373,37 +1394,37 @@
           "english": "Camel caravan / Migration",
           "translation": "Foor / Guur",
           "pronunciation": "foor",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Waterhole / Well",
           "translation": "Ceel / Bice",
           "pronunciation": "ceel",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Desert plain (Kaisut / Chalbi)",
           "translation": "Diid / Hedad",
           "pronunciation": "diid",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Camp enclosure / Kraal",
           "translation": "Gob / Gaal",
           "pronunciation": "gob",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Far / Distant",
           "translation": "Fog",
           "pronunciation": "fog",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1976 / 1980)"
         },
         {
           "english": "Near / Close",
           "translation": "Dhow",
           "pronunciation": "dhow",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1976 / 1980)"
         }
       ]
     },
@@ -1416,37 +1437,37 @@
           "english": "Market / Trading center",
           "translation": "Suug",
           "pronunciation": "suug",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1980)"
         },
         {
           "english": "Money / Livestock value",
           "translation": "Besa / Xoolo",
           "pronunciation": "besa",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1980)"
         },
         {
           "english": "To buy / Exchange",
           "translation": "Iibso / Gado",
           "pronunciation": "iibso",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1980)"
         },
         {
           "english": "To sell",
           "translation": "Iibi",
           "pronunciation": "iibi",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1980)"
         },
         {
           "english": "To count",
           "translation": "Tiri",
           "pronunciation": "tiri",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1980)"
         },
         {
           "english": "Camel bridewealth / Livestock wealth",
           "translation": "Gaal / Maal",
           "pronunciation": "gaal",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)"
         }
       ]
     },
@@ -1459,37 +1480,37 @@
           "english": "Drought / Dry spell",
           "translation": "Abaar",
           "pronunciation": "abaar",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Medicine / Herbal remedy",
           "translation": "Dawo / Gey dawo",
           "pronunciation": "dawo",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1980)"
         },
         {
           "english": "Sickness / Fever",
           "translation": "Jiro / Qandho",
           "pronunciation": "jiro",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1980)"
         },
         {
           "english": "Peace / Community safety",
           "translation": "Nabad",
           "pronunciation": "nabad",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Schlee (1979) & Heine (1980)"
         },
         {
           "english": "Help / Assistance",
           "translation": "Gargaar",
           "pronunciation": "gargaar",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1980)"
         },
         {
           "english": "Watch out! / Come here!",
           "translation": "Kale! / Eeg!",
           "pronunciation": "kale",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "context": "Rendille Pastoral Lexicon — Heine (1976 / 1980)"
         },
         {
           "english": "Burn",
@@ -1500,6 +1521,7 @@
         {
           "english": "To die",
           "translation": "yumut",
+          "pronunciation": "yu-mut",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]
@@ -1614,33 +1636,33 @@
       "entries": [
         {
           "english": "We are at peace, thank God",
-          "translation": "Nabad, Waaq ha mahadiyo",
-          "pronunciation": "nabad",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "translation": "Aa nabad, Waaq a ku barikoy",
+          "pronunciation": "aa na-bad waaq a ku ba-ri-koy",
+          "context": "Rendille Conversational Corpus (Heine 1976 / Pillinger & Galboran 1999)"
         },
         {
           "english": "Where are you going?",
-          "translation": "Xagee u socota?",
-          "pronunciation": "xagee u socota",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "translation": "Inte a irdatta?",
+          "pronunciation": "in-te a ir-dat-ta",
+          "context": "Rendille Conversational Corpus (Heine 1976 / Pillinger & Galboran 1999)"
         },
         {
           "english": "Give me water to drink",
-          "translation": "Bice i sii aan dhugo",
-          "pronunciation": "bice i sii aan dhugo",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "translation": "Biché i sii a bhugo",
+          "pronunciation": "bi-che i sii a bhu-go",
+          "context": "Rendille Conversational Corpus (Heine 1976 / Pillinger & Galboran 1999)"
         },
         {
           "english": "The camels have returned to the enclosure",
-          "translation": "Gaalkii gob buu ku soo noqday",
-          "pronunciation": "gaalkii gob buu ku soo noqday",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "translation": "Gaal-kí goob a ku soo noqday",
+          "pronunciation": "gaal-ki goob a ku soo noq-day",
+          "context": "Rendille Conversational Corpus (Heine 1976 / Pillinger & Galboran 1999)"
         },
         {
           "english": "May God bless our livestock and children",
-          "translation": "Waaq gaalka iyo carruurta ha barakeeyo",
-          "pronunciation": "waaq gaalka iyo carruurta ha barakeeyo",
-          "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
+          "translation": "Waaq gaal-kí icóú yéyye ha barikoy",
+          "pronunciation": "waaq gaal-ki i-cou yey-ye ha ba-ri-koy",
+          "context": "Rendille Conversational Corpus (Heine 1976 / Pillinger & Galboran 1999)"
         },
         {
           "english": "Peace be with you (Rendille greeting)",
@@ -1795,7 +1817,7 @@
         },
         {
           "english": "Second day of the week (day of rest / Sabbath; hura = sun)",
-          "translation": "Hura hakhan (hura = sun)",
+          "translation": "Hura hakhan",
           "pronunciation": "hu-ra hakh-an",
           "context": "C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 163 — Randili calendar) • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
@@ -1819,7 +1841,7 @@
         },
         {
           "english": "Naroshon (Rendille clan that migrated with the Samburu Lorogishu / Kwakituk from Angata e-'m-barta across the Sogota and Lomello plains)",
-          "translation": "Naroshon (migrated alongside Samburu Lorogishu [Suk Kwakituk] to the Sogota & Lomello plains until driven out by Turkana & Suk; Rendile-Samburu physical admixture among southern Turkana)",
+          "translation": "Naroshon",
           "pronunciation": "naroshon",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 51, 66) • Cross-verified with CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0)"
         },
@@ -1837,43 +1859,50 @@
         },
         {
           "english": "Name",
-          "translation": "magaca",
-          "pronunciation": "magaca",
+          "translation": "magáh",
+          "pronunciation": "ma-gah",
           "context": "CLDF ASJP v20 Wordlist RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/RENDILLE_2)"
         },
         {
           "english": "I (1sg pronoun)",
           "translation": "ani",
+          "pronunciation": "a-ni",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "You (2sg pronoun)",
           "translation": "ati",
+          "pronunciation": "a-ti",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "We (1pl pronoun)",
           "translation": "ino",
+          "pronunciation": "i-no",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "New",
           "translation": "hosup",
+          "pronunciation": "ho-sup",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "Name",
           "translation": "magah",
+          "pronunciation": "ma-gah",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "I (1sg)",
           "translation": "an",
+          "pronunciation": "an",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         },
         {
           "english": "We (1pl)",
           "translation": "in",
+          "pronunciation": "in",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
         }
       ]

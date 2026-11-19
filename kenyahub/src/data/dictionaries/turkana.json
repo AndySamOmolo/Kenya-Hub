@@ -61,9 +61,9 @@
           "context": "Simple parting farewell 'Abe' answered with affirmative 'Ii'. (Barton 1921) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Of farewell",
-          "translation": "tolot-ion, go thou ; answer, ejok alothi, good, I go",
-          "pronunciation": "tolot-ion",
+          "english": "Farewell exchange (Go thou! — Good, I go)",
+          "translation": "Tolot-ion! — Ejok alothi",
+          "pronunciation": "to-lot-i-on — e-jok a-lo-thi",
           "context": "Juxon Barton (1921) — Interjections • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -86,8 +86,8 @@
         },
         {
           "english": "Complete health! (Unison greeting response)",
-          "translation": "mata ejik (complete health)",
-          "pronunciation": "mata ejik",
+          "translation": "mata ejik",
+          "pronunciation": "ma-ta e-jik",
           "context": "Juxon Barton (1921) — Greetings • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         }
       ]
@@ -387,8 +387,8 @@
         },
         {
           "english": "Youth",
-          "translation": "akarachonait, pl. ngarachona (? Suk karachona = youths)",
-          "pronunciation": "akarachonait",
+          "translation": "akarachonait, pl. ngarachona",
+          "pronunciation": "a-ka-ra-cho-nait",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -416,9 +416,9 @@
           "context": "Close friend or peer. (Barton 1921) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Family",
-          "translation": "ngitunga akan (lit. people my)",
-          "pronunciation": "ngitunga akan",
+          "english": "Family (lit. my people)",
+          "translation": "ngitunga akan",
+          "pronunciation": "ngi-tu-nga a-kan",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -698,9 +698,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Poor person",
-          "translation": "ebotonait, pl. ngaboto; berry pickers, egulukit, pl. ngaluk",
-          "pronunciation": "ebotonait",
+          "english": "Poor person (or berry-picker)",
+          "translation": "ebotonait, pl. ngaboto; egulukit, pl. ngaluk",
+          "pronunciation": "e-bo-to-nait",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -1402,8 +1402,9 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Turkana."
         },
         {
-          "english": "Man",
-          "translation": "pl",
+          "english": "Men (plural)",
+          "translation": "Ngitunga / Ngiliok",
+          "pronunciation": "ngi-tu-nga / ngi-li-ok",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Turkana."
         },
         {
@@ -1555,9 +1556,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Foot",
-          "translation": "adapal akeju, pl. nyadapal ngakeju, sole, shoe",
-          "pronunciation": "adapal akeju",
+          "english": "Foot / Sole / Sandal",
+          "translation": "adapal akeju, pl. nyadapal ngakeju",
+          "pronunciation": "a-da-pal a-ke-ju",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -1789,9 +1790,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Throat",
-          "translation": "edokoli, pl. ngadokoli, see mouth",
-          "pronunciation": "edokoli",
+          "english": "Throat / Gullet",
+          "translation": "edokoli, pl. ngadokoli",
+          "pronunciation": "e-do-ko-li",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -1837,9 +1838,9 @@
           "context": "Hand or whole arm. Plural: Ngakanin. (Barton 1921) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Head-dress",
-          "translation": "amedok, pl. ngemedoi, the distinctive Turkana coiffure",
-          "pronunciation": "amedok",
+          "english": "Head-dress (distinctive Turkana clay coiffure)",
+          "translation": "amedok, pl. ngemedoi",
+          "pronunciation": "a-me-dok",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -1981,9 +1982,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Mud, head-dress",
-          "translation": "emunyan, hair",
-          "pronunciation": "emunyan hair",
+          "english": "Mud / Ochre clay for head-dress",
+          "translation": "emunyan",
+          "pronunciation": "e-mu-nyan",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -2930,8 +2931,8 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Bee",
-          "translation": "Oūū (coll. bees)",
+          "english": "Bee (collective: bees)",
+          "translation": "Oūū",
           "pronunciation": "oh-oo-oo",
           "context": "Wild honeybee swarms. (Barton 1921) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
@@ -3051,8 +3052,8 @@
         },
         {
           "english": "Hoof",
-          "translation": "emargoit, pl. ngemagor (?)",
-          "pronunciation": "emargoit",
+          "translation": "emargoit, pl. ngemagor",
+          "pronunciation": "e-mar-go-it",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -3483,8 +3484,8 @@
         },
         {
           "english": "Monkey (colobus)",
-          "translation": "elala, pl. ngelali (? found in Turkana)",
-          "pronunciation": "elala",
+          "translation": "elala, pl. ngelali",
+          "pronunciation": "e-la-la",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -4649,18 +4650,21 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Turkana."
         },
         {
-          "english": "Cow",
-          "translation": "Ebero = ♀",
+          "english": "Cow (female)",
+          "translation": "Abero",
+          "pronunciation": "a-be-ro",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Turkana."
         },
         {
           "english": "Dog",
-          "translation": "Kiñok",
+          "translation": "Kiñok / Eingok",
+          "pronunciation": "ki-ngok / ei-ngok",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Turkana."
         },
         {
-          "english": "Dog",
-          "translation": "epēro = ♀",
+          "english": "Bitch / Female dog",
+          "translation": "epēro",
+          "pronunciation": "e-pe-ro",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Turkana."
         },
         {
@@ -4713,9 +4717,9 @@
           "context": "Rain mud or river silt. (Barton 1921) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Sky",
-          "translation": "akuich, God",
-          "pronunciation": "akuich god",
+          "english": "Sky / God",
+          "translation": "akuich",
+          "pronunciation": "a-kuich",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -4839,9 +4843,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Twig",
-          "translation": "akitoi jiji (lit. tree small)",
-          "pronunciation": "akitoi jiji",
+          "english": "Twig (lit. small tree)",
+          "translation": "akitoi jiji",
+          "pronunciation": "a-ki-toi ji-ji",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -4917,9 +4921,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Water",
-          "translation": "agipi, pl. ngagipi, spring, swamp",
-          "pronunciation": "agipi",
+          "english": "Water (or spring / swamp)",
+          "translation": "agipi, pl. ngagipi",
+          "pronunciation": "a-gi-pi",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -4936,8 +4940,8 @@
         },
         {
           "english": "Flower",
-          "translation": "angolipus, pl. ngoliputhia (?)",
-          "pronunciation": "angolipus",
+          "translation": "angolipus, pl. ngoliputhia",
+          "pronunciation": "a-ngo-li-pus",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -5091,9 +5095,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Water fall",
-          "translation": "eruma agipi (lit. snoring water)",
-          "pronunciation": "eruma agipi",
+          "english": "Waterfall (lit. snoring water)",
+          "translation": "eruma agipi",
+          "pronunciation": "e-ru-ma a-gi-pi",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -6233,9 +6237,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Butter",
-          "translation": "akimet, pl. ngakajonon (? plural form)",
-          "pronunciation": "akimet",
+          "english": "Butter / Ghee",
+          "translation": "akimet, pl. ngakajonon",
+          "pronunciation": "a-ki-met",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -6263,9 +6267,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Tobacco",
-          "translation": "etom, pl. ngetomian (? tobacco plant)",
-          "pronunciation": "etom",
+          "english": "Tobacco plant",
+          "translation": "etom, pl. ngetomian",
+          "pronunciation": "e-tom",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -6329,9 +6333,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Tobacco box",
-          "translation": "eburiangan, pl. ngeburianganga ; of oryx-horn, atom, pl. ngetom, elephant (?)",
-          "pronunciation": "eburiangan",
+          "english": "Tobacco box (or oryx-horn / ivory container)",
+          "translation": "eburiangan, pl. ngeburianganga / atom, pl. ngetom",
+          "pronunciation": "e-bu-ri-a-ngan",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -6371,9 +6375,9 @@
           "context": "Drinking water drawn from wells. (Barton 1921) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Corn (cereals)",
-          "translation": "mumwa (millet, scarcely any other kind grown)",
-          "pronunciation": "mumwa",
+          "english": "Corn / Sorghum grain",
+          "translation": "mumwa",
+          "pronunciation": "mum-wa",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -6498,20 +6502,20 @@
         },
         {
           "english": "Honey",
-          "translation": "Āo, Nyao",
-          "pronunciation": "ā",
+          "translation": "Āo / Nyao",
+          "pronunciation": "a-o / nya-o",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
           "english": "Hunger",
-          "translation": "Ekurro",
-          "pronunciation": "ekurr",
+          "translation": "Ekurro / Akoro",
+          "pronunciation": "e-kur-ro / a-ko-ro",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Palm wine or mead",
+          "english": "Palm wine or honey mead",
           "translation": "Nyao",
-          "pronunciation": "nya",
+          "pronunciation": "nya-o",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -6802,9 +6806,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Home",
-          "translation": "ngakwabokothi (? two words)",
-          "pronunciation": "ngakwabokothi",
+          "english": "Home / Our country",
+          "translation": "ngakwap akothi",
+          "pronunciation": "nga-kwap a-ko-thi",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -7342,9 +7346,9 @@
           "context": "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (1911, pp. xxiii–xxiv, 150–151) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Turkana: anañga / enañga, cloth",
-          "translation": "Anañga",
-          "pronunciation": "anañga",
+          "english": "Cloth / Garment",
+          "translation": "Anañga / Enañga",
+          "pronunciation": "a-na-nga / e-na-nga",
           "context": "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (1911, pp. xxiii–xxiv, 150–151) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -7360,9 +7364,9 @@
           "context": "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (1911, pp. xxiii–xxiv, 150–151) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Turkana: e-kicholông / ngicholong, stool",
-          "translation": "Ñgechĕr",
-          "pronunciation": "ñgechĕr",
+          "english": "Stool / Headrest",
+          "translation": "Ekicholong (pl. ngicholong)",
+          "pronunciation": "e-ki-cho-long",
           "context": "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (1911, pp. xxiii–xxiv, 150–151) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -8279,8 +8283,8 @@
         },
         {
           "english": "Know, to",
-          "translation": "aiyeni, who knows, aiye",
-          "pronunciation": "aiyeni who knows aiye",
+          "translation": "aiyeni",
+          "pronunciation": "ai-ye-ni",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -8417,8 +8421,8 @@
         },
         {
           "english": "Stop, to",
-          "translation": "arotagini (?)",
-          "pronunciation": "arotagini",
+          "translation": "arotagini",
+          "pronunciation": "a-ro-ta-gi-ni",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -8561,8 +8565,8 @@
         },
         {
           "english": "Fetch, to",
-          "translation": "ayoni (?)",
-          "pronunciation": "ayoni",
+          "translation": "ayoni",
+          "pronunciation": "a-yo-ni",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -8710,9 +8714,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Accept, to",
-          "translation": "achami, ? to like, to love",
-          "pronunciation": "achami",
+          "english": "Accept / Like / Love, to",
+          "translation": "achami",
+          "pronunciation": "a-cha-mi",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -8746,9 +8750,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Desire, to",
-          "translation": "achemi (, love, etc.)",
-          "pronunciation": "achemi",
+          "english": "Desire / Love, to",
+          "translation": "achemi",
+          "pronunciation": "a-che-mi",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -9035,8 +9039,8 @@
         },
         {
           "english": "Fall into, to",
-          "translation": "ebosogini (?)",
-          "pronunciation": "ebosogini",
+          "translation": "ebosogini",
+          "pronunciation": "e-bo-so-gi-ni",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -9214,9 +9218,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Leave, to (thing)",
-          "translation": "athikini. Leave it alone! Towa thik",
-          "pronunciation": "athikini. leave it alone! towa thik",
+          "english": "Leave alone, to (Imperative: Towa thik!)",
+          "translation": "athikini (Towa thik!)",
+          "pronunciation": "a-thi-ki-ni (to-wa thik)",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -9442,9 +9446,9 @@
           "context": "Fasten with cord or tether. (Barton 1921) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "War, to go to",
-          "translation": "abeli (? to fight with sticks)",
-          "pronunciation": "abeli",
+          "english": "Fight with sticks / Go to war, to",
+          "translation": "abeli",
+          "pronunciation": "a-be-li",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -9689,26 +9693,26 @@
         },
         {
           "english": "Sleep",
-          "translation": "Ecoto",
-          "pronunciation": "ect",
+          "translation": "Ecoto / Akidor",
+          "pronunciation": "e-co-to / a-ki-dor",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
           "english": "I bring",
           "translation": "Año ñesilo",
-          "pronunciation": "añ ñesilo",
+          "pronunciation": "a-ngo nge-si-lo",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "They laugh",
+          "english": "Weeping / Tears",
           "translation": "Ekiyo",
-          "pronunciation": "ekiy",
+          "pronunciation": "e-ki-yo",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "You weep",
+          "english": "Dwell / Reside",
           "translation": "Kalome",
-          "pronunciation": "kalme",
+          "pronunciation": "ka-lo-me",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -9874,9 +9878,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Pure",
-          "translation": "mum aloth (lit. no dirt)",
-          "pronunciation": "mum aloth",
+          "english": "Pure / Clean (lit. no dirt)",
+          "translation": "mum aloth",
+          "pronunciation": "mum a-loth",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -9916,9 +9920,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Dark",
-          "translation": "eriono, pl. ngerioko (black)",
-          "pronunciation": "eriono",
+          "english": "Dark / Black",
+          "translation": "eriono, pl. ngerioko",
+          "pronunciation": "e-ri-o-no",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -9934,9 +9938,9 @@
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Alone",
-          "translation": "ayon bon (I by myself)",
-          "pronunciation": "ayon bon",
+          "english": "Alone (I by myself)",
+          "translation": "ayon bon",
+          "pronunciation": "a-yon bon",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -9976,9 +9980,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Empty",
-          "translation": "elosikongen (? two words)",
-          "pronunciation": "elosikongen",
+          "english": "Empty / Bare",
+          "translation": "elosi kongen",
+          "pronunciation": "e-lo-si ko-ngen",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -10826,9 +10830,9 @@
           "context": "Juxon Barton (1921) — Pronouns • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Southern Cross",
-          "translation": "ngeringatom (? Great Bear)",
-          "pronunciation": "ngeringatom",
+          "english": "Southern Cross / Ursa Major constellation",
+          "translation": "ngeringatom",
+          "pronunciation": "nge-ri-nga-tom",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -10862,9 +10866,9 @@
           "context": "CLDF ASJP v20 Wordlist TURKANA (Best 1983 / Brown, CC-BY-4.0, https://asjp.clld.org/languages/TURKANA) & Sunbird AI SALT-31 (CC-BY-4.0)"
         },
         {
-          "english": "Canoe",
+          "english": "Canoe / Dugout boat",
           "translation": "Nyagibole",
-          "pronunciation": "nyagible",
+          "pronunciation": "nya-gi-bo-le",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Turkana) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -10876,13 +10880,13 @@
         {
           "english": "I come",
           "translation": "Año abu",
-          "pronunciation": "añ abu",
+          "pronunciation": "a-ngo a-bu",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
           "english": "I go",
           "translation": "Alot",
-          "pronunciation": "alt",
+          "pronunciation": "a-lot",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -11112,9 +11116,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Care, to",
-          "translation": "agiteri. It does not matter, ikotinini",
-          "pronunciation": "agiteri. it does not matter",
+          "english": "Care, to (It does not matter: ikotinini)",
+          "translation": "agiteri (ikotinini)",
+          "pronunciation": "a-gi-te-ri (i-ko-ti-ni-ni)",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -11137,8 +11141,8 @@
         },
         {
           "english": "Bleed, to",
-          "translation": "apoti nakot (?)",
-          "pronunciation": "apoti nakot",
+          "translation": "apoti nakot",
+          "pronunciation": "a-po-ti na-kot",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -11366,9 +11370,9 @@
           "context": "At the present moment. Instantly: 'Tokona-tokona'. (Barton 1921) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Day",
-          "translation": "erwait, pl. ngurwa, time",
-          "pronunciation": "erwait",
+          "english": "Day / Time",
+          "translation": "erwait, pl. ngurwa",
+          "pronunciation": "er-wait",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -11396,9 +11400,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Time",
-          "translation": "orwa, pl. orwathin (?)",
-          "pronunciation": "orwa",
+          "english": "Time / Season",
+          "translation": "orwa, pl. orwathin",
+          "pronunciation": "or-wa",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -11408,15 +11412,15 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Dawn",
-          "translation": "ataparach, early morning generally",
-          "pronunciation": "a-ta-pa-rach early morning ge-ne-rally",
+          "english": "Dawn / Early morning",
+          "translation": "ataparach",
+          "pronunciation": "a-ta-pa-rach",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Late",
-          "translation": "ebon (evening)",
-          "pronunciation": "ebon",
+          "english": "Late / Evening",
+          "translation": "ebon",
+          "pronunciation": "e-bon",
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -11474,15 +11478,15 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Early",
-          "translation": "ataparach (dawn), ebai",
-          "pronunciation": "ataparach",
+          "english": "Early (at dawn)",
+          "translation": "ataparach / ebai",
+          "pronunciation": "a-ta-pa-rach / e-bai",
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "After",
-          "translation": "affix -ta, and anita",
-          "pronunciation": "affix -ta",
+          "english": "After / And then (narrative affix -ta)",
+          "translation": "anita / -ta",
+          "pronunciation": "a-ni-ta / ta",
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -11763,8 +11767,8 @@
         },
         {
           "english": "Every time",
-          "translation": "ebunichi (? two words)",
-          "pronunciation": "ebunichi",
+          "translation": "ebunichi",
+          "pronunciation": "e-bu-ni-chi",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12055,9 +12059,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Up",
-          "translation": "akuich, God",
-          "pronunciation": "akuich god",
+          "english": "Up / Skyward",
+          "translation": "akuich",
+          "pronunciation": "a-kuich",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12093,19 +12097,19 @@
         {
           "english": "Thirty (30)",
           "translation": "Tomon uni",
-          "pronunciation": "tomon uni, etc",
+          "pronunciation": "to-mon u-ni",
           "context": "Juxon Barton (1921) — Numbers • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
           "english": "Forty (40)",
           "translation": "Tomon omwon",
-          "pronunciation": "tomon omwon, etc",
+          "pronunciation": "to-mon o-mwon",
           "context": "Juxon Barton (1921) — Numbers • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
           "english": "Fifty (50)",
           "translation": "Tomon akhan",
-          "pronunciation": "tomon akhan, etc",
+          "pronunciation": "to-mon a-khan",
           "context": "Juxon Barton (1921) — Numbers • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12133,9 +12137,9 @@
           "context": "Juxon Barton (1921) — Numbers • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "No",
-          "translation": "mam (which reduplicates greatly for emphasis, or else mam ejik)",
-          "pronunciation": "mam",
+          "english": "No (emphatic: mam ejik)",
+          "translation": "mam / mam ejik",
+          "pronunciation": "mam / mam e-jik",
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12175,9 +12179,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "But",
-          "translation": "mam ejok (? lit. not good)",
-          "pronunciation": "mam ejok",
+          "english": "Bad / Not good",
+          "translation": "mam ejok",
+          "pronunciation": "mam e-jok",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12205,9 +12209,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "God",
-          "translation": "akuich (? if there is any idea of Supreme Being)",
-          "pronunciation": "akuich",
+          "english": "God / Supreme Sky Deity",
+          "translation": "Akuich / Akuj",
+          "pronunciation": "a-kuich / a-kuj",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12259,9 +12263,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Yes",
-          "translation": "ii, erobo and kongena affirmatives in conversation",
-          "pronunciation": "ii",
+          "english": "Yes (conversational affirmatives)",
+          "translation": "ii / erobo / kongena",
+          "pronunciation": "ii / e-ro-bo / ko-nge-na",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12289,9 +12293,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Yes",
-          "translation": "ii (in following speech approved by hearer kongena or erobo)",
-          "pronunciation": "ii",
+          "english": "Yes / Indeed (hearer's assent)",
+          "translation": "ii (kongena / erobo)",
+          "pronunciation": "ii (ko-nge-na / e-ro-bo)",
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12325,9 +12329,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Bare",
-          "translation": "eloithi kongen, pl. eloithi kongena (? two words)",
-          "pronunciation": "eloithi kongen",
+          "english": "Bare / Empty",
+          "translation": "eloithi kongen, pl. eloithi kongena",
+          "pronunciation": "e-loi-thi ko-ngen",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12379,9 +12383,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Rash",
-          "translation": "ngoikoi (? measles or chicken-pox)",
-          "pronunciation": "ngoikoi",
+          "english": "Rash (measles or chicken-pox)",
+          "translation": "ngoikoi",
+          "pronunciation": "ngoi-koi",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12469,9 +12473,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Mica",
-          "translation": "amoro paripari, lit. stone-shining",
-          "pronunciation": "amoro paripari",
+          "english": "Mica (lit. shining stone)",
+          "translation": "amoro paripari",
+          "pronunciation": "a-mo-ro pa-ri-pa-ri",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12505,9 +12509,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Arab",
-          "translation": "emarambot, pl. ngemaramba, borrowed word from Suk",
-          "pronunciation": "emarambot",
+          "english": "Arab / Swahili trader",
+          "translation": "emarambot, pl. ngemaramba",
+          "pronunciation": "e-ma-ram-bot",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12536,8 +12540,8 @@
         },
         {
           "english": "Womb",
-          "translation": "eperi korko (? as korko is a Suk word = wife)",
-          "pronunciation": "eperi korko",
+          "translation": "eperi korko",
+          "pronunciation": "e-pe-ri kor-ko",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12583,15 +12587,15 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Claw",
-          "translation": "emargoit, pl. ngemagor (?)",
-          "pronunciation": "emargoit",
+          "english": "Claw / Hoof",
+          "translation": "emargoit, pl. ngemagor",
+          "pronunciation": "e-mar-go-it",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Mole",
-          "translation": "ekemer, pl. ?",
-          "pronunciation": "ekemer",
+          "english": "Mole (skin blemish)",
+          "translation": "ekemer",
+          "pronunciation": "e-ke-mer",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12607,9 +12611,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Very",
-          "translation": "noie (follows another adverb)",
-          "pronunciation": "noie",
+          "english": "Very / Exceedingly",
+          "translation": "noie / noi",
+          "pronunciation": "noi-e / noi",
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12679,9 +12683,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "After",
-          "translation": "anita, or affix, ta",
-          "pronunciation": "anita",
+          "english": "After / Afterwards",
+          "translation": "anita / -ta",
+          "pronunciation": "a-ni-ta",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12763,9 +12767,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Lover",
-          "translation": "akoni, pl. ngakoni (woman), epay, pl. ngepaylon",
-          "pronunciation": "akoni",
+          "english": "Lover / Sweetheart (female: akoni; male friend: epay)",
+          "translation": "akoni, pl. ngakoni / epay, pl. ngepaylon",
+          "pronunciation": "a-ko-ni / e-pay",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12865,9 +12869,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "There",
-          "translation": "lalo (near), ama (distant)",
-          "pronunciation": "lalo",
+          "english": "There (near: lalo; distant: ama)",
+          "translation": "lalo / ama",
+          "pronunciation": "la-lo / a-ma",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -12991,9 +12995,9 @@
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Above",
-          "translation": "akuich (God)",
-          "pronunciation": "akuich",
+          "english": "Above / Overhead",
+          "translation": "akuich",
+          "pronunciation": "a-kuich",
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -13027,9 +13031,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Those",
-          "translation": "ekwa (near), kwagwa (remote)",
-          "pronunciation": "ekwa",
+          "english": "Those (near: ekwa; remote: kwagwa)",
+          "translation": "ekwa / kwagwa",
+          "pronunciation": "e-kwa / kwa-gwa",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -13057,15 +13061,15 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Colour",
-          "translation": "emunyan (? see clay)",
-          "pronunciation": "emunyan",
+          "english": "Colour / Coloured clay pigment",
+          "translation": "emunyan",
+          "pronunciation": "e-mu-nyan",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Purple",
-          "translation": "angolipus, pl. ngoliputhia (? probably means flower)",
-          "pronunciation": "angolipus",
+          "english": "Purple / Violet blossom",
+          "translation": "angolipus, pl. ngoliputhia",
+          "pronunciation": "a-ngo-li-pus",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -13123,9 +13127,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Uvular",
-          "translation": "aligoret (pl. ?)",
-          "pronunciation": "aligoret",
+          "english": "Uvula",
+          "translation": "aligoret",
+          "pronunciation": "a-li-go-ret",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -13231,15 +13235,15 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Kikuyu",
-          "translation": "akokoit, pl. ngoko, borrowed word (?)",
-          "pronunciation": "akokoit",
+          "english": "Kikuyu person",
+          "translation": "akokoit, pl. ngoko",
+          "pronunciation": "a-ko-ko-it",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Njemps",
-          "translation": "emathait, pl. ngematha, Kamasia",
-          "pronunciation": "emathait",
+          "english": "Ilchamus (Njemps) or Tugen (Kamasia) person",
+          "translation": "emathait, pl. ngematha",
+          "pronunciation": "e-ma-tha-it",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -13279,9 +13283,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Weapon",
-          "translation": "athowa (lit. iron), knife",
-          "pronunciation": "athowa",
+          "english": "Weapon / Iron blade",
+          "translation": "athowa",
+          "pronunciation": "a-tho-wa",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -13297,8 +13301,8 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "I / me",
-          "translation": "ayong (eong, prefix a-)",
+          "english": "I / me (1st person singular pronoun; verbal prefix a-)",
+          "translation": "ayong / eong",
           "pronunciation": "ah-yohng",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
@@ -14149,9 +14153,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Kavirondo",
-          "translation": "ekavirondoit, pl. ngikavirondo, borrowed word",
-          "pronunciation": "ekavirondoit",
+          "english": "Kavirondo person (Western Kenya)",
+          "translation": "ekavirondoit, pl. ngikavirondo",
+          "pronunciation": "e-ka-vi-ron-do-it",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -14167,9 +14171,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Whetstone",
-          "translation": "skin is used as strop",
-          "pronunciation": "skin is used as strop",
+          "english": "To strop / Sharpen on leather hide",
+          "translation": "erukududi (elou)",
+          "pronunciation": "e-ru-ku-du-di",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -14186,8 +14190,8 @@
         },
         {
           "english": "Annoy, to",
-          "translation": "etabur (?)",
-          "pronunciation": "etabur",
+          "translation": "etabur",
+          "pronunciation": "e-ta-bur",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -14245,9 +14249,9 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Enjoy, to",
-          "translation": "achemi (, love, desire)",
-          "pronunciation": "achemi",
+          "english": "Enjoy / Love / Desire, to",
+          "translation": "achemi",
+          "pronunciation": "a-che-mi",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -14365,9 +14369,9 @@
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Presently",
-          "translation": "eringa adojigi (before a little)",
-          "pronunciation": "eringa adojigi",
+          "english": "Presently / In a little while",
+          "translation": "eringa adojigi",
+          "pronunciation": "e-ri-nga a-do-ji-gi",
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -14383,9 +14387,9 @@
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "who are these ?",
-          "translation": "Ngai-eth ?",
-          "pronunciation": "who are the-se",
+          "english": "Who are these?",
+          "translation": "Ngai-eth?",
+          "pronunciation": "ngai-eth",
           "context": "Juxon Barton (1921) — Pronouns • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -14414,8 +14418,8 @@
         },
         {
           "english": "Frequently",
-          "translation": "ebon ini jui (? two or three words)",
-          "pronunciation": "ebon ini jui",
+          "translation": "ebon ini jui",
+          "pronunciation": "e-bon i-ni ju-i",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -14461,15 +14465,15 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Abyssinian",
-          "translation": "ekorothinait, pl. ngarothi, because they cut off tails of living sheep",
-          "pronunciation": "ekorothinait",
+          "english": "Abyssinian / Northern borderlander",
+          "translation": "ekorothinait, pl. ngarothi",
+          "pronunciation": "e-ko-ro-thi-nait",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Vegetables",
-          "translation": "akidit, pl. ngadi (marrow tribe)",
-          "pronunciation": "akidit",
+          "english": "Vegetables / Gourd-marrow plant",
+          "translation": "akidit, pl. ngadi",
+          "pronunciation": "a-ki-dit",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -14683,32 +14687,32 @@
           "context": "Juxon Barton (1921) — Pronouns • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "who is this ?",
-          "translation": "Ngai-ayon ?",
-          "pronunciation": "who is this",
+          "english": "Who is this?",
+          "translation": "Ngai-ayon?",
+          "pronunciation": "ngai-a-yon",
           "context": "Juxon Barton (1921) — Pronouns • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "whose is this ?",
-          "translation": "A-ngai-lo ?",
-          "pronunciation": "who-se is this",
+          "english": "Whose is this?",
+          "translation": "A-ngai-lo?",
+          "pronunciation": "a-ngai-lo",
           "context": "Juxon Barton (1921) — Pronouns • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "whose are these ?",
-          "translation": "A-ngai-lu ?",
-          "pronunciation": "who-se are the-se",
+          "english": "Whose are these?",
+          "translation": "A-ngai-lu?",
+          "pronunciation": "a-ngai-lu",
           "context": "Juxon Barton (1921) — Pronouns • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Of surprise",
-          "translation": "oitokoi totoken, O my mother",
-          "pronunciation": "oitokoi totoken",
+          "english": "Exclamation of surprise (lit. O my mother!)",
+          "translation": "Oitokoi totoken!",
+          "pronunciation": "oi-to-koi to-to-ken",
           "context": "Juxon Barton (1921) — Interjections • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Of contempt",
-          "translation": "je-je, followed by expulsion of breath",
+          "english": "Exclamation of contempt",
+          "translation": "Je-je!",
           "pronunciation": "je-je",
           "context": "Juxon Barton (1921) — Interjections • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
@@ -15547,9 +15551,9 @@
           "context": "Juxon Barton (1921) — Pronouns • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Of acknowledgment",
-          "translation": "wō, by man ; yēāi, by woman",
-          "pronunciation": "wo by man",
+          "english": "Exclamation of acknowledgment (by man: wō; by woman: yēāi)",
+          "translation": "Wō! / Yēāi!",
+          "pronunciation": "wo / ye-ai",
           "context": "Juxon Barton (1921) — Interjections • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -15739,15 +15743,15 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "The sound is similar, but possibly should be written",
-          "translation": "sing. ani-ke-karam-itai-ayon",
-          "pronunciation": "ani-ke-karam-itai-ayon",
+          "english": "If I am struck (conditional passive singular)",
+          "translation": "ani-ke-karam-itai-ayon",
+          "pronunciation": "a-ni-ke-ka-ram-i-tai-a-yon",
           "context": "Juxon Barton (1921) — Regular Verbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Turkana: ateker, wooden trough",
+          "english": "Wooden watering trough / Clan section",
           "translation": "Atekēr",
-          "pronunciation": "atekēr",
+          "pronunciation": "a-te-ker",
           "context": "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (1911, pp. xxiii–xxiv, 150–151) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -15763,15 +15767,15 @@
           "context": "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (1911, pp. xxiii–xxiv, 150–151) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Turkana: ngi-muren, warriors",
-          "translation": "Muren",
-          "pronunciation": "muren",
+          "english": "Warriors (Ngimuren)",
+          "translation": "Ngimuren",
+          "pronunciation": "ngi-mu-ren",
           "context": "Mervyn W. H. Beech & Sir Charles Eliot, The Suk: Their Language and Folklore (1911, pp. xxiii–xxiv, 150–151) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Via Hon. A. Bruce",
-          "translation": "Chief Aijigwa",
-          "pronunciation": "chief-aijigwa",
+          "english": "Turkana Chief Aijigwa (historical informant via Hon. A. Bruce, Beech 1911)",
+          "translation": "Ejakait Aijigwa",
+          "pronunciation": "e-ja-kait ai-ji-gwa",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911, pp. 7–9, 21, 27–37) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -17920,8 +17924,8 @@
         },
         {
           "english": "I give",
-          "translation": "Nyeʻberu",
-          "pronunciation": "nye beru",
+          "translation": "Kainakini / Ainak",
+          "pronunciation": "kai-na-ki-ni / ai-nak",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -18160,8 +18164,8 @@
         },
         {
           "english": "I kill them",
-          "translation": "Aran (?)",
-          "pronunciation": "a-ran",
+          "translation": "Aar kesi",
+          "pronunciation": "a-ar ke-si",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -18202,8 +18206,8 @@
         },
         {
           "english": "Their children",
-          "translation": "Ñedwe (children) akōsi (their)",
-          "pronunciation": "nedwe",
+          "translation": "Ñedwe akōsi",
+          "pronunciation": "nge-dwe a-ko-si",
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
@@ -18213,15 +18217,15 @@
           "context": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Ngaruwo (The Rain-Makers' Clan of the Turkana) in Dundas (1910, p. 67)",
-          "translation": "Ngaruwo (12th clan of the Ngoitunya and Ngolio tribes)",
+          "english": "Rain-makers' clan of the Turkana (12th clan of the Ngoitunya and Ngolio divisions, Dundas 1910)",
+          "translation": "Ngaruwo (Ngoitunya • Ngolio)",
           "pronunciation": "nga-ru-wo",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 67) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Agipie (Benevolent Sky God) & the Malevolent Nether-World God of Rocks and Rivers in Dundas (1910, p. 69)",
-          "translation": "Agipie (benevolent god of the skies, prayed to with an ox, sheep, or goat sacrifice in sickness) vs. the malevolent god dwelling in the nether world, rocks, and rivers (a thunderstorm is the two gods fighting and hurling lightning at each other)",
-          "pronunciation": "a-gi-pi-e",
+          "english": "Benevolent sky deity invoked with livestock sacrifice in sickness (Dundas 1910)",
+          "translation": "Agipie / Akuj",
+          "pronunciation": "a-gi-pi-e / a-kuj",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 69) • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {

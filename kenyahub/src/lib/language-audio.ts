@@ -1,31 +1,14 @@
 /**
  * src/lib/language-audio.ts
  *
- * 100% Free ($0.00/month, $0.00 egress) Multi-Tier Audio Resolution & Playback Engine
- * for all 23 Kenyan Languages in KenyaHub:
+ * Verified Native-Speaker Audio Resolution & Playback Engine for KenyaHub
+ * across all 23 Kenyan Languages.
  *
- * Tier 1 — Direct Open-Access Audio or Cloudflare R2 Zero-Egress CDN:
- *   - Plays `entry.audioFile` directly if present (e.g., Zenodo CC-BY-4.0 Kiamu audio
- *     https://zenodo.org/records/19828379/files/Piste%202.wma?download=1 or R2 clip URL).
- *   - If `NEXT_PUBLIC_AUDIO_CDN_URL` is configured (Cloudflare R2 Free Tier: 10 GB free storage
- *     = ~925 hours / ~660,000 clips at 24 kbps Opus, 10M free Class B reads/month, $0.00 egress),
- *     resolves deterministic clip URLs: `${CDN}/audio/${langId}/${slug}.opus`.
- *
- * Tier 2 — Hugging Face Datasets Server On-Demand Clip Metadata:
- *   - Maps every language to verified public & gated datasets on Hugging Face:
- *     * `thiomi/thiomi-5k` (CC-BY-4.0, Public: kik_Latn, kam_Latn, luo_Latn, mer_Latn, som_Latn)
- *     * `google/fleurs` (CC-BY-4.0, Public: sw_ke, luo_ke, kam_ke, so_so, om_et)
- *     * `google/WaxalNLP` (CC-BY-4.0 / CC-BY-SA-4.0, Public: swa_tts, kik_tts, luo_tts, mas_asr, orm_asr_v2)
- *     * `CLEAR-Global/BibleTTS-Luo` (CC-BY-SA-4.0, Public: read)
- *     * `Kencorpus/KenSpeech` (CC-BY-4.0, Public: default)
- *     * `deepdml/common_voice_26_0` (CC0-1.0, Gated: sw)
- *     * `Sunbird/salt` (CC-BY-SA-4.0, Gated: studio-teo, multispeaker-teo, studio-swa)
- *     * `Digital-Divide-Data/Kamba-ASR-Data-Subset-484H`, `Somali-ASR-Subset-68H`, `Gusii-ASR-Data-Subset-470H` (Gated)
- *
- * Tier 3 — Browser Native Web Speech API (`window.speechSynthesis`) Fallback:
- *   - Uses East African BCP-47 voice profiles (`sw-KE`, `sw-TZ`, `so-SO`, `om-KE`, `en-KE`)
- *     with orthographic normalization so every word and phrase across all 23 languages
- *     can be pronounced immediately offline without paid TTS API keys.
+ * Policy:
+ * - Plays audio ONLY when a verified recording URL (`entry.audioFile`) from
+ *   commercially permissive open-access corpora (Cloudflare R2 `audio.kenyahub.me`,
+ *   Zenodo CC-BY-4.0 archives, or Hugging Face public datasets) is present.
+ * - Never falls back to synthetic browser Text-to-Speech (`window.speechSynthesis`).
  */
 
 export interface AudioPlayableEntry {
@@ -256,33 +239,16 @@ export const KENYA_AUDIO_DATASET_SOURCES: Record<string, AudioDatasetSourceInfo[
 };
 
 /**
- * BCP-47 voice preference chain per KenyaHub language ID for Web Speech API fallback
+ * Verified hostnames allowed for direct native-speaker audio playback.
  */
-const VOICE_LOCALE_CHAIN: Record<string, string[]> = {
-  swahili: ["sw-KE", "sw-TZ", "sw"],
-  mijikenda: ["sw-KE", "sw-TZ", "sw"],
-  pokomo: ["sw-KE", "sw-TZ", "sw"],
-  taita: ["sw-KE", "sw-TZ", "sw"],
-  taveta: ["sw-KE", "sw-TZ", "sw"],
-  kikuyu: ["sw-KE", "en-KE", "sw"],
-  kamba: ["sw-KE", "en-KE", "sw"],
-  meru: ["sw-KE", "en-KE", "sw"],
-  embu: ["sw-KE", "en-KE", "sw"],
-  luhya: ["sw-KE", "en-KE", "sw"],
-  kisii: ["sw-KE", "en-KE", "sw"],
-  luo: ["sw-KE", "en-KE", "sw"],
-  kalenjin: ["sw-KE", "en-KE", "sw"],
-  pokot: ["sw-KE", "en-KE", "sw"],
-  maasai: ["sw-KE", "en-KE", "sw"],
-  samburu: ["sw-KE", "en-KE", "sw"],
-  ilchamus: ["sw-KE", "en-KE", "sw"],
-  turkana: ["sw-KE", "en-KE", "sw"],
-  teso: ["sw-KE", "en-UG", "en-KE", "sw"],
-  somali: ["so-SO", "so-KE", "so", "sw-KE"],
-  borana: ["om-KE", "om-ET", "om", "so-SO", "sw-KE"],
-  rendille: ["so-SO", "sw-KE", "en-KE"],
-  daasanach: ["so-SO", "sw-KE", "en-KE"],
-};
+const VERIFIED_AUDIO_HOSTS = [
+  "audio.kenyahub.me",
+  "zenodo.org",
+  "huggingface.co",
+  "cdn-lfs.huggingface.co",
+  "cdn-lfs-us-1.huggingface.co",
+  "kenyahub.me",
+];
 
 /**
  * Normalizes a dictionary headword or phrase into a deterministic Cloudflare R2 slug
@@ -299,8 +265,8 @@ export function toAudioSlug(text: string): string {
 }
 
 /**
- * Strips parenthetical grammar notes, class numbers, and alternate forms so TTS / R2
- * targets the primary headword or sentence cleanly.
+ * Strips parenthetical grammar notes, class numbers, and alternate forms so R2 keys
+ * target the primary headword or sentence cleanly.
  */
 export function extractSpeakableText(rawTranslation: string): string {
   if (!rawTranslation) return "";
@@ -317,117 +283,112 @@ export function extractSpeakableText(rawTranslation: string): string {
 }
 
 /**
- * Resolves the Cloudflare R2 CDN URL for a given entry if `NEXT_PUBLIC_AUDIO_CDN_URL` is set
- * or if `entry.audioFile` is directly populated.
+ * Resolves a verified HTTPS audio URL ONLY when `entry.audioFile` is explicitly
+ * present and points to a trusted audio source. Returns `null` when no verified
+ * recording exists (never guesses unverified URLs and never falls back to TTS).
+ */
+export function getVerifiedAudioUrl(entry?: AudioPlayableEntry | null): string | null {
+  if (!entry || !entry.audioFile || typeof entry.audioFile !== "string") {
+    return null;
+  }
+  let raw = entry.audioFile.trim();
+  if (!raw) return null;
+
+  // Guard against accidental Markdown link syntax `[url](url)/path`
+  const mdMatch = raw.match(/^\[[^\]]+\]\(([^)]+)\)(.*)$/);
+  if (mdMatch) {
+    raw = `${mdMatch[1].trim()}${mdMatch[2].trim()}`;
+  }
+
+  if (!/^https:\/\//i.test(raw)) {
+    return null;
+  }
+
+  try {
+    const parsed = new URL(raw);
+    const host = parsed.hostname.toLowerCase();
+    const isVerified = VERIFIED_AUDIO_HOSTS.some(
+      (allowed) => host === allowed || host.endsWith(`.${allowed}`)
+    );
+    return isVerified ? parsed.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Returns true if the entry has a verified native-speaker recording available.
+ */
+export function hasVerifiedAudio(entry?: AudioPlayableEntry | null): boolean {
+  return getVerifiedAudioUrl(entry) !== null;
+}
+
+/**
+ * Backwards-compatible alias for `getVerifiedAudioUrl`.
  */
 export function resolveCloudflareR2AudioUrl(
   entry: AudioPlayableEntry,
-  langId?: string | null
+  _langId?: string | null
 ): string | null {
-  if (entry.audioFile) {
-    return entry.audioFile;
-  }
-  const cdnBase =
-    typeof process !== "undefined" && process.env?.NEXT_PUBLIC_AUDIO_CDN_URL
-      ? process.env.NEXT_PUBLIC_AUDIO_CDN_URL.replace(/\/+$/, "")
-      : "";
-  if (cdnBase && langId) {
-    const slug = toAudioSlug(entry.translation);
-    if (slug) {
-      return `${cdnBase}/audio/${langId}/${slug}.opus`;
-    }
-  }
-  return null;
+  return getVerifiedAudioUrl(entry);
 }
 
 let activeHtmlAudio: HTMLAudioElement | null = null;
 
 /**
- * Plays pronunciation audio for any dictionary or course entry using the 3-tier free pipeline:
- *   1. Direct `entry.audioFile` or Cloudflare R2 zero-egress `.opus` stream (`NEXT_PUBLIC_AUDIO_CDN_URL`)
- *   2. Automatic fallback to Web Speech API (`window.speechSynthesis`) with East African voice selection
+ * Stops any currently playing verified audio clip.
+ */
+export function stopLanguageAudio(): void {
+  if (activeHtmlAudio) {
+    try {
+      activeHtmlAudio.pause();
+      activeHtmlAudio.currentTime = 0;
+    } catch {
+      // ignore
+    }
+    activeHtmlAudio = null;
+  }
+}
+
+/**
+ * Plays pronunciation audio ONLY when a verified native-speaker recording URL exists
+ * on `entry.audioFile`. Never falls back to synthetic Web Speech API TTS.
+ * Returns `true` if verified audio playback started, `false` otherwise.
  */
 export function playLanguageAudio(
   entry: AudioPlayableEntry,
-  langId: string | null = "swahili",
+  _langId: string | null = null,
   onEnd?: () => void
-): void {
-  if (typeof window === "undefined") return;
-  const resolvedLangId = langId || "swahili";
+): boolean {
+  if (typeof window === "undefined") return false;
 
-  if (activeHtmlAudio) {
-    activeHtmlAudio.pause();
+  stopLanguageAudio();
+
+  const verifiedUrl = getVerifiedAudioUrl(entry);
+  if (!verifiedUrl) {
+    onEnd?.();
+    return false;
+  }
+
+  try {
+    const audio = new Audio(verifiedUrl);
+    activeHtmlAudio = audio;
+    audio.onended = () => {
+      activeHtmlAudio = null;
+      onEnd?.();
+    };
+    audio.onerror = () => {
+      activeHtmlAudio = null;
+      onEnd?.();
+    };
+    audio.play().catch(() => {
+      activeHtmlAudio = null;
+      onEnd?.();
+    });
+    return true;
+  } catch {
     activeHtmlAudio = null;
-  }
-  if ("speechSynthesis" in window) {
-    window.speechSynthesis.cancel();
-  }
-
-  const cdnOrDirectUrl = resolveCloudflareR2AudioUrl(entry, resolvedLangId);
-  if (cdnOrDirectUrl) {
-    try {
-      const audio = new Audio(cdnOrDirectUrl);
-      activeHtmlAudio = audio;
-      audio.onended = () => {
-        activeHtmlAudio = null;
-        onEnd?.();
-      };
-      audio.onerror = () => {
-        activeHtmlAudio = null;
-        speakWithBrowserTts(entry, resolvedLangId, onEnd);
-      };
-      audio.play().catch(() => {
-        activeHtmlAudio = null;
-        speakWithBrowserTts(entry, resolvedLangId, onEnd);
-      });
-      return;
-    } catch {
-      // Fall through to browser TTS
-    }
-  }
-
-  speakWithBrowserTts(entry, resolvedLangId, onEnd);
-}
-
-function speakWithBrowserTts(
-  entry: AudioPlayableEntry,
-  langId: string,
-  onEnd?: () => void
-): void {
-  if (typeof window === "undefined" || !("speechSynthesis" in window)) {
     onEnd?.();
-    return;
+    return false;
   }
-
-  const speakable = extractSpeakableText(entry.translation);
-  if (!speakable) {
-    onEnd?.();
-    return;
-  }
-
-  const utter = new SpeechSynthesisUtterance(speakable);
-  const preferredLocales = VOICE_LOCALE_CHAIN[langId] || ["sw-KE", "sw", "en-KE"];
-  utter.lang = preferredLocales[0];
-  utter.rate = 0.9;
-
-  const voices = window.speechSynthesis.getVoices();
-  if (voices && voices.length > 0) {
-    for (const loc of preferredLocales) {
-      const matched = voices.find(
-        (v) => v.lang.toLowerCase() === loc.toLowerCase() || v.lang.toLowerCase().startsWith(loc.toLowerCase() + "-")
-      );
-      if (matched) {
-        utter.voice = matched;
-        utter.lang = matched.lang;
-        break;
-      }
-    }
-  }
-
-  if (onEnd) {
-    utter.onend = () => onEnd();
-    utter.onerror = () => onEnd();
-  }
-
-  window.speechSynthesis.speak(utter);
 }

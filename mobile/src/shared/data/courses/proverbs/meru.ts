@@ -39,6 +39,17 @@ export const MERU_PROVERBS: ProverbItem[] = [
     "sourceCitation": "Wikipedia Meru_language — Imenti Proverb"
   },
   {
+    "id": "meru-4",
+    "languageId": "meru",
+    "languageName": "Meru (Kĩmĩĩrũ — Njũri Ncheke)",
+    "indigenous": "Mũrĩmi ndathũũraga mũgũnda.",
+    "literalTranslation": "A farmer does not despise the garden.",
+    "meaning": "Patience and respect for one's livelihood bring an abundant harvest.",
+    "englishEquivalent": "Do not quarrel with your bread and butter.",
+    "theme": "hard-work",
+    "sourceCitation": "Traditional Kĩmĩĩrũ Agricultural Proverb"
+  },
+  {
     "id": "meru-champion-1912-mberia-2004",
     "languageId": "meru",
     "languageName": "Meru / Kĩtharaka (Champion 1912, Dundas 1915 & Mberia 2004)",
@@ -52,7 +63,7 @@ export const MERU_PROVERBS: ProverbItem[] = [
     "id": "meru-mberia-2004-kitharaka-loanwords-ex1-18",
     "languageId": "meru",
     "languageName": "Kĩtharaka (Prof. Kithaka wa Mberia 2004, OPLL Vol. 2, pp. 45–57)",
-    "indigenous": "(1) moβira, βaði, moβukɔ, βurana, βaisikiri, βetɛrɔri, βesti • (2) mbuŋgɛ, mbureki, mbɔksi • (4) ŋkengɛrɛ, ŋkare, βiriŋgi, suruare, karamu, ɔiri • (6) ðimo, mɛða, ða:, monaði, mosɛðɔ • (7) so:βa, saβusiβo, sati, ɲɟɛrikani • (9) moɣatɛ & karaɣita (Dahl's Law) • (14) ndawa, nderesa, ndasita, ndiŋgiri • (18) duka → ruka → nduka, sanduku → esanduku.",
+    "indigenous": "moβira, βaði, moβukɔ, βurana, βaisikiri, βetɛrɔri, βesti • mbuŋgɛ, mbureki, mbɔksi • ŋkengɛrɛ, ŋkare, βiriŋgi, suruare, karamu, ɔiri • ðimo, mɛða, ða:, monaði, mosɛðɔ • so:βa, saβusiβo, sati, ɲɟɛrikani • moɣatɛ, karaɣita • ndawa, nderesa, ndasita, ndiŋgiri • ruka, nduka, esanduku.",
     "literalTranslation": "All 18 numbered loanword phonology sets in Kĩtharaka: bilabial lenition (/p,b,f,v/ → /β/), post-nasal [b], liquid adaptation (/l/ → /r/), dentalization (/s,z/ → /ð/), productive Dahl's Law (/k/ → /ɣ/ before voiceless consonant in moɣatɛ 'bread' & karaɣita 'tractor'), n-propping of /d/ (ndawa, nderesa), and noun-class reanalysis (ruka → nduka).",
     "meaning": "Documented line-by-line by Prof. Kithaka wa Mberia in 'The Phonology of Borrowed Words in Kitharaka' (Occasional Papers in Language and Linguistics, Vol. 2, 2004, pp. 45–57, Examples 1–18): demonstrates how Kĩtharaka's 7-vowel system, 14 consonants, Dahl's Law, and open (C)V syllable structure systematically reshape borrowed vocabulary.",
     "englishEquivalent": "Every language adapts new tools to the harmony of its own voice.",

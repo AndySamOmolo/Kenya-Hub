@@ -1,7 +1,7 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Kisii (Ekegusii) Proverbs & Oral Literature (5 verified entries)
+// Kisii (Ekegusii) Proverbs & Oral Literature (6 verified entries)
 // ============================================================
 
 export const KISII_PROVERBS: ProverbItem[] = [
@@ -29,7 +29,7 @@ export const KISII_PROVERBS: ProverbItem[] = [
     "id": "kisii-3",
     "languageId": "kisii",
     "languageName": "Kisii (Ekegusii / Igizii)",
-    "indigenous": "Amaboko abere nigo agokora egesieri • Abantu baya; Enyumba yane, Omuji uitu (Johnston 1902 #49 Igizii).",
+    "indigenous": "Amaboko abere nigo agokora egesieri • Abantu baya; Enyumba yane, Omuji uitu.",
     "literalTranslation": "Two hands together build the doorway (gesie / ekige) • Good people; my house, our homestead/town (Johnston 1902, pp. 995, 999–1000).",
     "meaning": "Cooperation (risaga) accomplishes what no solitary worker can finish alone, grounded in Sir Harry Johnston’s 1902 Igizii (Kósova) corpus.",
     "englishEquivalent": "Many hands make light work.",
@@ -51,22 +51,21 @@ export const KISII_PROVERBS: ProverbItem[] = [
     "id": "kisii-hobley-1902-1",
     "languageId": "kisii",
     "languageName": "Kisii (Ekegusii / Kossova — Hobley 1902 21 Clans & Chiefs, Kitoto Migration & 6 Noun Classes)",
-    "indigenous": "21 Kossova Clans: Ugirango (Yawanga), Mukimusi (Kimaina), Msasuri (Munari), Magichana (Borura), Manweni (Minyigo), Mkanyimbo (Uturi, Mtaruki), Nyaliwali (Yamombo), Mowasi (Maina), Umachogi (Kitubo), Mukura (Maina, Ndieki), Ukeiri (Mwesaba), Wa Koma (Mwakwega), Woyeki (Sianyo), Mwachawi (Samevita), Ukitaa (Morema), Umwaliwa (Uroo), Umulenda (Munyanja), Mugika (Wato), Yamugei (Sakawa), Mugusero (Umbachi, Nov. 1900), Matala (Siambe) • Chief Kitoto (Nyamoga).",
+    "indigenous": "Ugirango (Yawanga), Mukimusi (Kimaina), Msasuri (Munari), Magichana (Borura), Manweni (Minyigo), Mkanyimbo (Uturi, Mtaruki), Nyaliwali (Yamombo), Mowasi (Maina), Umachogi (Kitubo), Mukura (Maina, Ndieki), Ukeiri (Mwesaba), Wa Koma (Mwakwega), Woyeki (Sianyo), Mwachawi (Samevita), Ukitaa (Morema), Umwaliwa (Uroo), Umulenda (Munyanja), Mugika (Wato), Yamugei (Sakawa), Mugusero (Umbachi), Matala (Siambe) • Nyamoga (Kitoto).",
     "literalTranslation": "The 21 Kossova (Kisii) clans and chiefs recorded in 1902, including Sakawa of Yamugei and Umbachi of Mugusero (who sent an embassy to Kisumu in November 1900), and Chief Kitoto of the Kitoto plain (Hobley 1902, pp. 8–9, 51, 86, 89–91).",
     "meaning": "Recorded by C. W. Hobley in 'Eastern Uganda: An Ethnological Survey' (1902, pp. 8–9, 51, 86, 89–91): preserves the earliest published directory of all 21 Kisii (Kossova) clans and chiefs, the discovery that Chief Kitoto of the Kano plain was a pure-bred Kisii, the 6 Kossova noun plural classes, and the 1902 Kossova vocabulary and sentence paradigm.",
     "theme": "family",
     "sourceCitation": "C. W. Hobley, Eastern Uganda: An Ethnological Survey, Anthropological Institute Occasional Papers No. 1 (1902, pp. 8–9, 51, 86, 89–91)"
+  },
+  {
+    "id": "kisii-ddd-prov-1",
+    "languageId": "kisii",
+    "languageName": "Kisii (Ekegusii)",
+    "indigenous": "Omokungu omonyabwango tagotama nyomba.",
+    "literalTranslation": "A diligent homemaker never lacks provisions in the house.",
+    "meaning": "Foresight and steady industry protect the household from scarcity.",
+    "englishEquivalent": "A stitch in time saves nine.",
+    "theme": "hard-work",
+    "sourceCitation": "Ekegusii Oral Wisdom & SIL Bloom Ekegusii Corpus (CC-BY-4.0)"
   }
 ];
-
-KISII_PROVERBS.push({
-  "id": "kisii-ddd-prov-1",
-  "languageId": "kisii",
-  "languageName": "Kisii (Ekegusii)",
-  "indigenous": "Omokungu omonyabwango tagotama nyomba.",
-  "literalTranslation": "A diligent homemaker never lacks provisions in the house.",
-  "meaning": "Foresight and steady industry protect the household from scarcity.",
-  "englishEquivalent": "A stitch in time saves nine.",
-  "theme": "hard-work",
-  "sourceCitation": "Ekegusii Oral Wisdom & SIL Bloom Ekegusii Corpus (CC-BY-4.0)"
-});

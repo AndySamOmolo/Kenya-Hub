@@ -74,37 +74,37 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "toto",
             "source": "Mother",
-            "pronunciation": "to-to / pa-pa",
+            "pronunciation": "to-to",
             "hint": "Prefixless kinship nouns (Hobley 1902)"
           },
           {
             "target": "papa",
             "source": "Father",
-            "pronunciation": "to-to / pa-pa",
+            "pronunciation": "pa-pa",
             "hint": "Prefixless kinship nouns (Hobley 1902)"
           },
           {
             "target": "ekile (pl. ikiliok)",
             "source": "Man (pl. Men)",
-            "pronunciation": "e-ki-le / a-be-ru",
+            "pronunciation": "e-ki-le",
             "hint": "Hobley (1902) & Johnston (1902) Elgumi/Wamia"
           },
           {
             "target": "aberu (pl. angor)",
             "source": "Woman (pl. Women)",
-            "pronunciation": "e-ki-le / a-be-ru",
+            "pronunciation": "a-be-ru",
             "hint": "Hobley (1902) & Johnston (1902) Elgumi/Wamia"
           },
           {
             "target": "etelepat (pl. itelepai)",
             "source": "Boy (pl. Boys)",
-            "pronunciation": "e-te-le-pat / a-pe-se",
+            "pronunciation": "e-te-le-pat",
             "hint": "Masculine e- → i- vs. Feminine a-"
           },
           {
             "target": "apese (pl. apesur)",
             "source": "Girl (pl. Girls)",
-            "pronunciation": "e-te-le-pat / a-pe-se",
+            "pronunciation": "a-pe-se",
             "hint": "Masculine e- → i- vs. Feminine a-"
           },
           {
@@ -274,97 +274,97 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "ikany-kape",
             "source": "6 (5+1)",
-            "pronunciation": "ikany-kape ikany-kaare ikany-kauni ikany-kaongon i-to-mon",
+            "pronunciation": "i-kany-ka-pe",
             "hint": "Hobley (1902, p. 95) & Johnston (1902, p. 851) quinary numerals 6–10"
           },
           {
             "target": "ikany-kaare",
             "source": "7 (5+2)",
-            "pronunciation": "ikany-kape ikany-kaare ikany-kauni ikany-kaongon i-to-mon",
+            "pronunciation": "i-kany-kaa-re",
             "hint": "Hobley (1902, p. 95) & Johnston (1902, p. 851) quinary numerals 6–10"
           },
           {
             "target": "ikany-kauni",
             "source": "8 (5+3)",
-            "pronunciation": "ikany-kape ikany-kaare ikany-kauni ikany-kaongon i-to-mon",
+            "pronunciation": "i-kany-kau-ni",
             "hint": "Hobley (1902, p. 95) & Johnston (1902, p. 851) quinary numerals 6–10"
           },
           {
             "target": "kide",
             "source": "East",
-            "pronunciation": "ki-de / too / nya-koi / a-go-li-to-mei",
+            "pronunciation": "ki-de",
             "hint": "Cardinal directions"
           },
           {
             "target": "too",
             "source": "West",
-            "pronunciation": "ki-de / too / nya-koi / a-go-li-to-mei",
+            "pronunciation": "too",
             "hint": "Cardinal directions"
           },
           {
             "target": "nyakoi",
             "source": "North",
-            "pronunciation": "ki-de / too / nya-koi / a-go-li-to-mei",
+            "pronunciation": "nya-koi",
             "hint": "Cardinal directions"
           },
           {
             "target": "agolitomei",
             "source": "South",
-            "pronunciation": "ki-de / too / nya-koi / a-go-li-to-mei",
+            "pronunciation": "a-go-li-to-mei",
             "hint": "Cardinal directions"
           },
           {
             "target": "akipi",
             "source": "Water",
-            "pronunciation": "a-ki-pi / a-ki-le / a-kim / a-ko-long",
+            "pronunciation": "a-ki-pi",
             "hint": "Hobley (1902) & Johnston (1902) core feminine nouns"
           },
           {
             "target": "akile",
             "source": "Milk",
-            "pronunciation": "a-ki-pi / a-ki-le / a-kim / a-ko-long",
+            "pronunciation": "a-ki-le",
             "hint": "Hobley (1902) & Johnston (1902) core feminine nouns"
           },
           {
             "target": "akim",
             "source": "Fire",
-            "pronunciation": "a-ki-pi / a-ki-le / a-kim / a-ko-long",
+            "pronunciation": "a-kim",
             "hint": "Hobley (1902) & Johnston (1902) core feminine nouns"
           },
           {
             "target": "akolong",
             "source": "Sun",
-            "pronunciation": "a-ki-pi / a-ki-le / a-kim / a-ko-long",
+            "pronunciation": "a-ko-long",
             "hint": "Hobley (1902) & Johnston (1902) core feminine nouns"
           },
           {
             "target": "akiteng (pl. aatuk)",
             "source": "Cow (pl. Cattle)",
-            "pronunciation": "a-ki-teng / e-mong",
+            "pronunciation": "a-ki-teng",
             "hint": "Hobley (1902) pastoral nouns"
           },
           {
             "target": "emong (pl. imongin)",
             "source": "Bull, Ox (pl. Oxen)",
-            "pronunciation": "a-ki-teng / e-mong",
+            "pronunciation": "e-mong",
             "hint": "Hobley (1902) pastoral nouns"
           },
           {
             "target": "akinyam",
             "source": "To eat",
-            "pronunciation": "a-kinyam / a-ki-mat / aanyun",
+            "pronunciation": "a-ki-nyam",
             "hint": "Core verbs (Hobley 1902)"
           },
           {
             "target": "akimat",
             "source": "To drink",
-            "pronunciation": "a-kinyam / a-ki-mat / aanyun",
+            "pronunciation": "a-ki-mat",
             "hint": "Core verbs (Hobley 1902)"
           },
           {
             "target": "aanyun",
             "source": "To see",
-            "pronunciation": "a-kinyam / a-ki-mat / aanyun",
+            "pronunciation": "aa-nyun",
             "hint": "Core verbs (Hobley 1902)"
           }
         ],
@@ -521,43 +521,43 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "eong (ayong)",
             "source": "I",
-            "pronunciation": "eong ijo nge-si i-sio ye-si ke-si",
+            "pronunciation": "e-ong",
             "hint": "Hobley (1902) & Johnston (1902) personal pronouns"
           },
           {
             "target": "ijo",
-            "source": "you (sg.)",
-            "pronunciation": "eong ijo nge-si i-sio ye-si ke-si",
+            "source": "You (sg.)",
+            "pronunciation": "i-jo",
             "hint": "Hobley (1902) & Johnston (1902) personal pronouns"
           },
           {
             "target": "ngesi",
-            "source": "s/he",
-            "pronunciation": "eong ijo nge-si i-sio ye-si ke-si",
+            "source": "He / She",
+            "pronunciation": "nge-si",
             "hint": "Hobley (1902) & Johnston (1902) personal pronouns"
           },
           {
             "target": "Bia ne!",
             "source": "Come here!",
-            "pronunciation": "bia ne / ko-lot",
+            "pronunciation": "bia ne",
             "hint": "Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) conversational imperatives"
           },
           {
             "target": "Kolot!",
             "source": "Go!",
-            "pronunciation": "bia ne / ko-lot",
+            "pronunciation": "ko-lot",
             "hint": "Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) conversational imperatives"
           },
           {
             "target": "Koin akipi!",
             "source": "Bring water!",
-            "pronunciation": "koin a-ki-pi / i-ca-mit nyo",
+            "pronunciation": "koin a-ki-pi",
             "hint": "Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) phrases"
           },
           {
             "target": "Icamit nyo?",
             "source": "What do you want?",
-            "pronunciation": "koin a-ki-pi / i-ca-mit nyo",
+            "pronunciation": "i-ca-mit nyo",
             "hint": "Johnston (1902, p. 851) & Hobley (1902, pp. 92–95) phrases"
           },
           {
@@ -569,61 +569,61 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "atap",
             "source": "Millet bread (ugali)",
-            "pronunciation": "a-tap / a-ki-ma / a-jon",
+            "pronunciation": "a-tap",
             "hint": "Ateso culinary staples"
           },
           {
             "target": "akima",
             "source": "Finger-millet",
-            "pronunciation": "a-tap / a-ki-ma / a-jon",
+            "pronunciation": "a-ki-ma",
             "hint": "Ateso culinary staples"
           },
           {
             "target": "ajon",
             "source": "Traditional cereal brew",
-            "pronunciation": "a-tap / a-ki-ma / a-jon",
+            "pronunciation": "a-jon",
             "hint": "Ateso culinary staples"
           },
           {
             "target": "akwara (pl. ngakwaras)",
             "source": "Spear",
-            "pronunciation": "akwa-ra / aupwal",
+            "pronunciation": "a-kwa-ra",
             "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
           },
           {
             "target": "aupwal (ebuku)",
             "source": "Shield",
-            "pronunciation": "akwa-ra / aupwal",
+            "pronunciation": "au-pwal",
             "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
           },
           {
             "target": "akalabai",
             "source": "Bow",
-            "pronunciation": "a-ka-la-bai / e-mal / e-ki-leng",
+            "pronunciation": "a-ka-la-bai",
             "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
           },
           {
             "target": "emal",
             "source": "Arrow",
-            "pronunciation": "a-ka-la-bai / e-mal / e-ki-leng",
+            "pronunciation": "e-mal",
             "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
           },
           {
             "target": "ekileng",
             "source": "Knife",
-            "pronunciation": "a-ka-la-bai / e-mal / e-ki-leng",
+            "pronunciation": "e-ki-leng",
             "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
           },
           {
             "target": "etogo (pl. itogoi)",
             "source": "House (pl. Houses)",
-            "pronunciation": "e-to-go / e-kek",
+            "pronunciation": "e-to-go",
             "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
           },
           {
             "target": "ekek (pl. ikekia)",
             "source": "Door (pl. Doors)",
-            "pronunciation": "e-to-go / e-kek",
+            "pronunciation": "e-kek",
             "hint": "Hobley (1902, pp. 92–95) & Johnston (1902)"
           },
           {
@@ -727,19 +727,19 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each Teso expression with its English meaning:",
-            "correctAnswer": "eong (ayong), ijo, ngesi, isio (oni), yesi, kesi: I, you (sg.), s/he, we, you (pl.), they",
+            "correctAnswer": "eong (ayong): I",
             "pairs": [
               {
-                "left": "eong (ayong), ijo, ngesi, isio (oni), yesi, kesi",
-                "right": "I, you (sg.), s/he, we, you (pl.), they"
+                "left": "eong (ayong)",
+                "right": "I"
               },
               {
-                "left": "Bia ne! / Kolot!",
-                "right": "Come here! / Go!"
+                "left": "Bia ne!",
+                "right": "Come here!"
               },
               {
-                "left": "Koin akipi! / Icamit nyo?",
-                "right": "Bring water! / What do you want?"
+                "left": "Koin akipi!",
+                "right": "Bring water!"
               },
               {
                 "left": "Akuj / Edeke (Lokasuban)",
@@ -781,7 +781,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "toto",
@@ -804,13 +804,13 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "inac",
             "source": "Sister",
-            "pronunciation": "i-nac / o-nac",
+            "pronunciation": "i-nac",
             "hint": "Wikipedia Teso language — Gender and noun prefix"
           },
           {
             "target": "onac",
-            "source": "brother (sibling)",
-            "pronunciation": "i-nac / o-nac",
+            "source": "Brother (sibling)",
+            "pronunciation": "o-nac",
             "hint": "Wikipedia Teso language — Gender and noun prefix"
           },
           {
@@ -840,13 +840,13 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "imukeru",
             "source": "Baby",
-            "pronunciation": "i-mu-ke-ru / i-pe-se",
+            "pronunciation": "i-mu-ke-ru",
             "hint": "Wikipedia Teso language — Neuter nouns"
           },
           {
-            "target": "ipese (baby girl)",
-            "source": "infant",
-            "pronunciation": "i-mu-ke-ru / i-pe-se",
+            "target": "ipese",
+            "source": "Baby girl / Infant",
+            "pronunciation": "i-pe-se",
             "hint": "Wikipedia Teso language — Neuter nouns"
           }
         ],
@@ -962,7 +962,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "aberu (pl. aŋor)",
@@ -1012,12 +1012,12 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "etuŋanan",
             "source": "Person",
-            "pronunciation": "etu anan"
+            "pronunciation": "e-tu-nga-nan"
           },
           {
-            "target": "ituŋanan (pl. ituŋa; mankind: ituŋasinei)",
-            "source": "man (pl. people; generic mankind)",
-            "pronunciation": "etu anan"
+            "target": "ituŋanan (pl. ituŋa / ituŋasinei)",
+            "source": "Man (pl. people; generic mankind)",
+            "pronunciation": "i-tu-nga-nan"
           }
         ],
         "sentences": [
@@ -1112,7 +1112,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "itomon (atomon)",
@@ -1145,33 +1145,33 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Hobley 1902 p. 95 (Elgumi) & Johnston 1902 p. 851 (Elgumi/Wamia)"
           },
           {
-            "target": "esupur (traditional)",
-            "source": "Zero",
-            "pronunciation": "e-su-pur / e-noot",
+            "target": "esupur",
+            "source": "Zero (traditional)",
+            "pronunciation": "e-su-pur",
             "hint": "Wikipedia Teso language — Numerals"
           },
           {
             "target": "enoot",
-            "source": "naught",
-            "pronunciation": "e-su-pur / e-noot",
+            "source": "Naught / Zero",
+            "pronunciation": "e-noot",
             "hint": "Wikipedia Teso language — Numerals"
           },
           {
             "target": "idiope(t) (m.)",
             "source": "One (1) — masculine",
-            "pronunciation": "i-dio-pe / a-dio-pe / ye-ni-so-dit",
+            "pronunciation": "i-dio-pe",
             "hint": "Wikipedia Teso language — Cardinal numbers"
           },
           {
             "target": "adiope(t) (f.)",
-            "source": "feminine",
-            "pronunciation": "i-dio-pe / a-dio-pe / ye-ni-so-dit",
+            "source": "One (1) — feminine",
+            "pronunciation": "a-dio-pe",
             "hint": "Wikipedia Teso language — Cardinal numbers"
           },
           {
             "target": "yenisodit (n.)",
-            "source": "neuter",
-            "pronunciation": "i-dio-pe / a-dio-pe / ye-ni-so-dit",
+            "source": "One (1) — neuter",
+            "pronunciation": "ye-ni-so-dit",
             "hint": "Wikipedia Teso language — Cardinal numbers"
           },
           {
@@ -1303,7 +1303,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "ikany-kauni (m.) / akany-kauni (f.)",
@@ -1498,7 +1498,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "akiring",
@@ -1667,7 +1667,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "amunyu",
@@ -1676,15 +1676,15 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Adverbs of place"
           },
           {
-            "target": "ecaai (tea)",
+            "target": "ecaai",
             "source": "Tea",
-            "pronunciation": "e-caai / a-kaa-wa",
+            "pronunciation": "e-caai",
             "hint": "Wikipedia Teso language — Masculine nouns"
           },
           {
-            "target": "akaawa (coffee)",
-            "source": "coffee",
-            "pronunciation": "e-caai / a-kaa-wa",
+            "target": "akaawa",
+            "source": "Coffee",
+            "pronunciation": "a-kaa-wa",
             "hint": "Wikipedia Teso language — Masculine nouns"
           },
           {
@@ -1834,7 +1834,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "apaaran",
@@ -1887,13 +1887,13 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "akuj",
             "source": "Heaven",
-            "pronunciation": "a-kuj / e-de-ke",
+            "pronunciation": "a-kuj",
             "hint": "Wikipedia Teso language — Vocabulary"
           },
           {
             "target": "Edeke",
-            "source": "sky",
-            "pronunciation": "a-kuj / e-de-ke",
+            "source": "Sky / God",
+            "pronunciation": "e-de-ke",
             "hint": "Wikipedia Teso language — Vocabulary"
           }
         ],
@@ -2009,7 +2009,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "ekitoi (ɛ́-kɪ́tɔ́-ɪ̀)",
@@ -2155,7 +2155,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "akou (pl. akwes)",
@@ -2328,7 +2328,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "aakot (á-àkɔ́t)",
@@ -2472,7 +2472,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
             "target": "ainer (alimun)",
@@ -2481,14 +2481,14 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Hobley 1902 & Ateso vocabulary"
           },
           {
-            "target": "abunore (bia ne! = come here!)",
-            "source": "Come",
+            "target": "abunore (bia ne!)",
+            "source": "Come (imperative: come here!)",
             "pronunciation": "a-bu-no-re",
             "hint": "Johnston 1902 p. 851 (Elgumi/Wamia) & Hobley 1902 pp. 92–95"
           },
           {
-            "target": "alosit (kolot! = go!)",
-            "source": "Go",
+            "target": "alosit (kolot!)",
+            "source": "Go (imperative: go!)",
             "pronunciation": "a-lo-sit",
             "hint": "Johnston 1902 p. 851 (Elgumi/Wamia) & Hobley 1902 pp. 92–95"
           },
@@ -2578,7 +2578,7 @@ export const TESO_UNITS: CourseUnit[] = [
             ],
             "hint": "ah-loh-seet / koh-loht",
             "acceptedAnswers": [
-              "alosit (kolot! = go!)",
+              "alosit (kolot!)",
               "alosit"
             ]
           },
@@ -2608,12 +2608,12 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Speak"
               },
               {
-                "left": "abunore (bia ne! = come here!)",
-                "right": "Come"
+                "left": "abunore (bia ne!)",
+                "right": "Come (imperative: come here!)"
               },
               {
-                "left": "alosit (kolot! = go!)",
-                "right": "Go"
+                "left": "alosit (kolot!)",
+                "right": "Go (imperative: go!)"
               },
               {
                 "left": "akimat (aimat)",
@@ -2645,10 +2645,10 @@ export const TESO_UNITS: CourseUnit[] = [
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
         "tips": "Every lexical entry in this module is drawn verbatim from C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Teso (Ateso) (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
+        "culturalNote": "Primary historical documentation for Teso (Ateso) in C. W. Hobley (1902 Elgumi Vocabulary) & Sir Harry Johnston (1902 Elgumi & Karamojo Comparative Vocabularies) preserves pre-1930 phonological, grammatical, and ethnographic usage across Busia.",
         "words": [
           {
-            "target": "aipet [e] (kick) vs. aipet [ɛ] (lay out)",
+            "target": "aipet [e] vs. aipet [ɛ]",
             "source": "To kick (close e) vs. To lay out (open ɛ)",
             "pronunciation": "ai-pet vs ai-pet",
             "hint": "Wikipedia Teso language — Vowel contrast"
@@ -2660,13 +2660,13 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Alphabet"
           },
           {
-            "target": "aimor [ɔ] (share) vs. aimor [o] (insult)",
+            "target": "aimor [ɔ] vs. aimor [o]",
             "source": "To share (open ɔ) vs. To insult (close o)",
             "pronunciation": "ai-mor vs ai-mor",
             "hint": "Wikipedia Teso language — Vowel contrast"
           },
           {
-            "target": "aikut [u] (scoop) vs. aikut [ʊ] (blow)",
+            "target": "aikut [u] vs. aikut [ʊ]",
             "source": "To scratch the earth / scoop (close u) vs. To blow (open ʊ)",
             "pronunciation": "ai-kut vs ai-kut",
             "hint": "Wikipedia Teso language — Vowel contrast"
@@ -2705,18 +2705,18 @@ export const TESO_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"aipet [e] (kick) vs. aipet [ɛ] (lay out)\" in Teso?",
-            "correctAnswer": "To kick  vs. To lay out",
+            "prompt": "What is the English meaning of \"aipet [e] vs. aipet [ɛ]\" in Teso?",
+            "correctAnswer": "To kick vs. To lay out",
             "options": [
-              "To share  vs. To insult",
-              "To kick  vs. To lay out",
+              "To share vs. To insult",
+              "To kick vs. To lay out",
               "To scratch the earth",
               "To hit"
             ],
             "hint": "Wikipedia Teso language — Vowel contrast",
             "acceptedAnswers": [
               "To kick (close e) vs. To lay out (open ɛ)",
-              "To kick  vs. To lay out"
+              "To kick vs. To lay out"
             ]
           },
           {
@@ -2733,59 +2733,57 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"aimor [ɔ] (share) vs. aimor [o] (insult)\" in Teso?",
-            "correctAnswer": "To share  vs. To insult",
+            "prompt": "What is the English meaning of \"aimor [ɔ] vs. aimor [o]\" in Teso?",
+            "correctAnswer": "To share vs. To insult",
             "options": [
               "To scratch the earth",
-              "To share  vs. To insult",
-              "To kick  vs. To lay out",
+              "To share vs. To insult",
+              "To kick vs. To lay out",
               "To tell lies"
             ],
             "hint": "Wikipedia Teso language — Vowel contrast",
             "acceptedAnswers": [
               "To share (open ɔ) vs. To insult (close o)",
-              "To share  vs. To insult"
+              "To share vs. To insult"
             ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To share (open ɔ) vs. To insult (close o)\" in Teso?",
-            "correctAnswer": "aimor   vs. aimor",
+            "correctAnswer": "aimor [ɔ] vs. aimor [o]",
             "options": [
-              "aimor   vs. aimor",
-              "aipet   vs. aipet",
+              "aimor [ɔ] vs. aimor [o]",
+              "aipet [e] vs. aipet [ɛ]",
               "aidip",
-              "aikut   vs. aikut"
+              "aikut [u] vs. aikut [ʊ]"
             ],
-            "hint": "Starts with \"ai…\" (16 letters)",
+            "hint": "Starts with \"ai…\"",
             "acceptedAnswers": [
-              "aimor [ɔ] (share) vs. aimor [o] (insult)",
-              "aimor   vs. aimor"
+              "aimor [ɔ] vs. aimor [o]"
             ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"To scratch the earth / scoop (close u) vs. To blow (open ʊ)\" in Teso?",
-            "correctAnswer": "aikut   vs. aikut",
+            "correctAnswer": "aikut [u] vs. aikut [ʊ]",
             "options": [
-              "aipet   vs. aipet",
+              "aipet [e] vs. aipet [ɛ]",
               "aidip",
-              "aikut   vs. aikut",
-              "aimor   vs. aimor"
+              "aikut [u] vs. aikut [ʊ]",
+              "aimor [ɔ] vs. aimor [o]"
             ],
-            "hint": "Starts with \"ai…\" (16 letters)",
+            "hint": "Starts with \"ai…\"",
             "acceptedAnswers": [
-              "aikut [u] (scoop) vs. aikut [ʊ] (blow)",
-              "aikut   vs. aikut"
+              "aikut [u] vs. aikut [ʊ]"
             ]
           },
           {
             "type": "match_pairs",
             "prompt": "Match each Teso expression with its English meaning:",
-            "correctAnswer": "aipet [e] (kick) vs. aipet [ɛ] (lay out): To kick (close e) vs. To lay out (open ɛ)",
+            "correctAnswer": "aipet [e] vs. aipet [ɛ]: To kick (close e) vs. To lay out (open ɛ)",
             "pairs": [
               {
-                "left": "aipet [e] (kick) vs. aipet [ɛ] (lay out)",
+                "left": "aipet [e] vs. aipet [ɛ]",
                 "right": "To kick (close e) vs. To lay out (open ɛ)"
               },
               {
@@ -2793,11 +2791,11 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "To hit"
               },
               {
-                "left": "aimor [ɔ] (share) vs. aimor [o] (insult)",
+                "left": "aimor [ɔ] vs. aimor [o]",
                 "right": "To share (open ɔ) vs. To insult (close o)"
               },
               {
-                "left": "aikut [u] (scoop) vs. aikut [ʊ] (blow)",
+                "left": "aikut [u] vs. aikut [ʊ]",
                 "right": "To scratch the earth / scoop (close u) vs. To blow (open ʊ)"
               }
             ]
@@ -2808,9 +2806,9 @@ export const TESO_UNITS: CourseUnit[] = [
             "correctAnswer": "abal",
             "options": [
               "abal",
-              "aipet   vs. aipet",
+              "aipet [e] vs. aipet [ɛ]",
               "aidip",
-              "aimor   vs. aimor"
+              "aimor [ɔ] vs. aimor [o]"
             ],
             "hint": "Wikipedia Teso language — Alphabet"
           }
@@ -3184,9 +3182,9 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
           },
           {
-            "target": "{ kanyi / akanya } kape",
+            "target": "kanyi kape / akanya kape",
             "source": "Six",
-            "pronunciation": "ka-pe",
+            "pronunciation": "ka-nyi ka-pe / a-ka-nya ka-pe",
             "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
           },
           {
@@ -3217,7 +3215,7 @@ export const TESO_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"kanyi-ki-ongwon or akanya kangwun\" in Teso?",
+            "prompt": "What is the English meaning of \"kanyi-ki-ongwon / akanya kangwun\" in Teso?",
             "correctAnswer": "Nine",
             "options": [
               "Eight",
@@ -3230,10 +3228,10 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each verified Teso (Ateso) term from the public-domain corpus to its English meaning:",
-            "correctAnswer": "kanyi-ki-ongwon or akanya kangwun: Nine",
+            "correctAnswer": "kanyi-ki-ongwon / akanya kangwun: Nine",
             "pairs": [
               {
-                "left": "kanyi-ki-ongwon or akanya kangwun",
+                "left": "kanyi-ki-ongwon / akanya kangwun",
                 "right": "Nine"
               },
               {
@@ -3245,7 +3243,7 @@ export const TESO_UNITS: CourseUnit[] = [
                 "right": "Seven"
               },
               {
-                "left": "{ kanyi or akanya } kape",
+                "left": "kanyi kape / akanya kape",
                 "right": "Six"
               }
             ]
@@ -3253,12 +3251,12 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Teso (Ateso) term for \"Five\": ___",
-            "correctAnswer": "ekan or akanyi",
+            "correctAnswer": "ekan / akanyi",
             "options": [
-              "ekan or akanyi",
-              "aungwen or ongwon",
-              "kanyi-ki-ongwon or akanya kangwun",
-              "kape"
+              "ekan / akanyi",
+              "aungwen / ongwon",
+              "kanyi-ki-ongwon / akanya kangwun",
+              "kanyi kape / akanya kape"
             ],
             "hint": "Elgumi (Ateso / Wamia) — C. W. Hobley, Eastern Uganda (1902, pp. 92–95)"
           }
@@ -3344,7 +3342,7 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "Eyalama",
             "source": "Thank you",
-            "pronunciation": "eh-yah-lah-mah noy"
+            "pronunciation": "e-ya-la-ma"
           },
           {
             "target": "ainapakin",
@@ -3401,7 +3399,7 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Epaunt lok’ Misri",
-            "source": "Traditional exchange and trade."
+            "source": "Egyptian Pound (EGP)."
           },
           {
             "target": "Akipi nuekaleete",
@@ -3447,7 +3445,7 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "ikany-kaoŋon",
             "source": "Nine",
-            "pronunciation": "ikany-kao on"
+            "pronunciation": "i-ka-ny ka-o-ngon"
           },
           {
             "target": "ikany",
@@ -3457,7 +3455,7 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "target": "ioŋon",
             "source": "Four",
-            "pronunciation": "io on"
+            "pronunciation": "i-o-ngon"
           },
           {
             "target": "ikany-kauni",

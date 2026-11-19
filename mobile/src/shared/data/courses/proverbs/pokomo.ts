@@ -2,6 +2,7 @@ import type { ProverbItem } from "./types";
 
 // ============================================================
 // Pokomo (Kipfokomo) Proverbs, Songs & Oral Literature (7 verified entries)
+// Declarative proverb collection (zero runtime mutations)
 // ============================================================
 
 export const POKOMO_PROVERBS: ProverbItem[] = [
@@ -9,7 +10,7 @@ export const POKOMO_PROVERBS: ProverbItem[] = [
     "id": "pokomo-1",
     "languageId": "pokomo",
     "languageName": "Pokomo (Kipfokomo)",
-    "indigenous": "Muho wa Tsana ni muyo wa mudzi (Krapf 1850 & Johnston 1919 #13 Pokomo).",
+    "indigenous": "Muho wa Tsana ni muyo wa mudzi.",
     "literalTranslation": "The Tana River (Muho wa Tsana) is the lifeblood of the village (mudzi).",
     "meaning": "Grounded in Rev. Dr. J. L. Krapf’s 1850 Pokomo vocabulary and Sir Harry Johnston’s 1919 Kipfokomo (#13) study: riverine stewardship and Wakijo elder counsel sustain the flood-plain communities.",
     "theme": "nature",
@@ -19,7 +20,7 @@ export const POKOMO_PROVERBS: ProverbItem[] = [
     "id": "pokomo-2",
     "languageId": "pokomo",
     "languageName": "Pokomo (Kipfokomo)",
-    "indigenous": "Chanda kimwe hakibandi ntsaha (Kipfokomo Sabaki Proverb).",
+    "indigenous": "Chanda kimwe hakibandi ntsaha.",
     "literalTranslation": "One finger alone cannot crush a louse.",
     "meaning": "Shared Sabaki Bantu proverb across Kipfokomo, Kigiryama (Taylor 1891 #603), and Kiswahili: unity in paddling the dugout canoe (waho) and tending the flood-plain harvest brings success.",
     "englishEquivalent": "United we stand, divided we fall.",
@@ -30,7 +31,7 @@ export const POKOMO_PROVERBS: ProverbItem[] = [
     "id": "pokomo-3",
     "languageId": "pokomo",
     "languageName": "Pokomo (Kipokómo — Lower Tana / Kalindi)",
-    "indigenous": "Ku dsáka ni ku dsáka, ku Bféni ni ku Bféni! • Muáka wa bfúla (Krapf 1850).",
+    "indigenous": "Ku dsáka ni ku dsáka, ku Bféni ni ku Bféni! • Muáka wa bfúla.",
     "literalTranslation": "Going downstream (southward to the coast) is ku dsáka; going upstream (northward up the Pokómo / Dána River) is ku Bféni! • The season of rain and flood (muáka wa bfúla).",
     "meaning": "Recorded verbatim by Rev. Dr. J. L. Krapf in \"Vocabulary of Six East-African Languages\" (Tübingen, 1850, pp. vii–viii, 1–64) from Hadji Omar, exiled brother of Chief Bonnaia Dadia of Kalindi: documents how Pokomo directional orientation, trade (exchanging mpunga rice and mahindi maize with the Galla of Berraráta for ivory), and governance by elders (msée / muana Bféni) are anchored to the flow of the Tana River (called Pokómo by the Pokomo and Máro by the Galla).",
     "theme": "nature",
@@ -40,9 +41,9 @@ export const POKOMO_PROVERBS: ProverbItem[] = [
     "id": "pokomo-samson-1944-1",
     "languageId": "pokomo",
     "languageName": "Pokomo (Kipfokomo — Mikael Samson & R. G. Darroch 1944, pp. 370–394)",
-    "indigenous": "Abamogo! ('Wayfarer!' — greeting of Sango Vere of Buu & Ana Dima of Gwano at Lake Lemu / Mitole, pp. 376, 392) • Galana Maro ('Maro's river') • Kijo na Ngaji • Liongo Fumo wa Shaka (Waungwana wa Mashaa) na Ozi.",
+    "indigenous": "Abamogo! • Galana Maro • Kijo na Ngaji • Liongo Fumo wa Shaka (Waungwana wa Mashaa) na Ozi.",
     "literalTranslation": "Abamogo ('Wayfarer!') • Galana Maro ('Maro's river', the true Pokomo name of the Tana) • The Kijo elder-priests and the honey-barrel Ngaji drum • Liongo Fumo of Shaka and Ozi.",
-    "meaning": "Documented by Mikael Samson & R. G. Darroch in 'A History of the Pokomo by Mikael Samson — Continued, with an Introduction and Notes by R. G. Darroch' (1944, pp. 370–394): preserves the meeting of Sango Vere (or his father Vere), ancestor of the Buu, and Ana Dima, ancestor of the Kinauru clan of the Gwano, when Ana Dima followed his lost canoe downstream to Lake Lemu (or Mitole on the Ngambwa) and they greeted each other as 'Abamogo' ('wayfarer'), which remains the mutual greeting between Malachini and Upper Pokomo to this day.",
+    "meaning": "Documented by Mikael Samson & R. G. Darroch in \"A History of the Pokomo by Mikael Samson — Continued, with an Introduction and Notes by R. G. Darroch\" (1944, pp. 370–394): preserves the meeting of Sango Vere (or his father Vere), ancestor of the Buu, and Ana Dima, ancestor of the Kinauru clan of the Gwano, when Ana Dima followed his lost canoe downstream to Lake Lemu (or Mitole on the Ngambwa) and they greeted each other as 'Abamogo' ('wayfarer'), which remains the mutual greeting between Malachini and Upper Pokomo to this day.",
     "theme": "unity",
     "sourceCitation": "Mikael Samson & R. G. Darroch, 'A History of the Pokomo by Mikael Samson — Continued', Journal of the East Africa Natural History Society Vol. XVII, Nos. 5 & 6 (1944, pp. 370–394)"
   },

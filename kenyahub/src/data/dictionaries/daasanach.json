@@ -10,7 +10,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-18",
   "contributorNote": "Daasanach ('Af Dhaasanac / d’áasannæc / Dasanech / Dasenech / Galab / Geleba / Reshiat) Lowland East Cushitic (Western Omo-Tana / Galaboid) dictionary compiled manually and audited 100% line-by-line from Václav Blažek (2011) 'Dasanech Language – State-of-the-Art' (Folia Orientalia, Vol. 48, 2011, Masaryk University, Brno, reviewing Mauro Tosco 2001 'The Dhaasanac Language. Grammar, Texts, Vocabulary of a Cushitic Language of Ethiopia', Kuschitische Sprachstudien Band 17, Rüdiger Köppe Verlag, Köln, xiv + 598 pp. + 20 photos, ISBN 3-89645-064-6, and comparing Gabriele da Trento 1941 [60 units], Eike Haberland 1966 [91], Harold C. Fleming 1965 [102] & 1971 [146], M. Lionel Bender 1971 [97], Hans-Jürgen Sasse 1973–1982 [ca. 11 studies], and Mauro Tosco 2001 [c. 1,400 units] across 101 Swadesh glosses, 48 Abbreviations & 50 References), Sumiyo Nishiguchi (2004) 'Consonant Assimilation and Sonority : A Case Study in Daasanach' (OUPEL: Osaka University Papers in English Linguistics, Vol. 9, pp. 39–51, Osaka University Knowledge Archive [OUKA], DOI: 10.18910/70792 — fieldwork carried out in New York State from September 2004 to May 2005 with a native Daasanach speaker from Kenya; audited 100% line-by-line across Sections 1–5, Examples 1–34, Tableaux 1–4, Footnotes 1–9, and all 13 References), and Lieut. Ludwig von Höhnel (1894) 'Discovery of Lakes Rudolf and Stefanie' (Reshiat / Buma / Marle on the northeastern shore of Lake Turkana). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0).",
   "categories": [
     {
@@ -57,7 +57,7 @@
         {
           "english": "Welcome to our home",
           "translation": "Káɗe bila / Káɗe geer",
-          "pronunciation": "káe bila",
+          "pronunciation": "ka-dhe bi-la",
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         }
       ]
@@ -147,21 +147,21 @@
         },
         {
           "english": "One",
-          "translation": "(T) tacar / (H) tákkač & / tíkkidə",
-          "pronunciation": "textttacarbrtexthtákkač-brtíkkid",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$tacar<br>$^{\\text{H}}$tákkač &<br>tíkkidə • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "tacar / tákkač / tíkkidə",
+          "pronunciation": "ta-car / tak-kach",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento tacar, Haberland tákkač & tíkkidə • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Three",
-          "translation": "(T) sedde / (H) sédde",
-          "pronunciation": "texttseddebrtexthsédde",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$sedde<br>$^{\\text{H}}$sédde • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "sedde / sédde",
+          "pronunciation": "sed-de",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento sedde, Haberland sédde • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Two",
-          "translation": "(T) naama / (H) nắma",
-          "pronunciation": "texttnaamabrtexthnma",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$naama<br>$^{\\text{H}}$nắma • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "naama / nắma",
+          "pronunciation": "naa-ma",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento naama, Haberland nắma • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "One (1)",
@@ -183,32 +183,32 @@
         },
         {
           "english": "Many",
-          "translation": "burne / burrnay / búrnab; be many",
-          "pronunciation": "textburne",
+          "translation": "burne / burrnay / búrnab",
+          "pronunciation": "bur-nab",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Many",
-          "translation": "luule = all",
-          "pronunciation": "luule all",
+          "english": "Many / All",
+          "translation": "luule",
+          "pronunciation": "luu-le",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "One",
-          "translation": "tacar; tákkač &; tíkkidə / tɪgɪdi / taqac",
-          "pronunciation": "texttacar",
+          "translation": "tacar / tákkač / tíkkidə / tɪgɪdi / taqac",
+          "pronunciation": "ta-car / tak-kach",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Three",
-          "translation": "sedde; sédde / sɛd(d)e / seddi",
-          "pronunciation": "textsedde",
+          "translation": "sedde / sédde / sɛd(d)e / seddi",
+          "pronunciation": "sed-di",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Two",
-          "translation": "naama; nắma / nama / naama",
-          "pronunciation": "textnaama",
+          "translation": "naama / nắma / nama",
+          "pronunciation": "naa-ma",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -286,116 +286,139 @@
         {
           "english": "bone",
           "translation": "lɛfi-te",
+          "pronunciation": "le-fi-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bone",
           "translation": "lafite",
+          "pronunciation": "la-fi-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bone",
           "translation": "láf-iti",
+          "pronunciation": "laf-i-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bone",
           "translation": "láff-ù",
+          "pronunciation": "laf-fu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "one",
           "translation": "tacar",
+          "pronunciation": "ta-car",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "one",
           "translation": "tákkač",
+          "pronunciation": "tak-kach",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "one",
           "translation": "tɪgɪdi",
+          "pronunciation": "ti-gi-di",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "one",
           "translation": "taqac",
+          "pronunciation": "ta-qac",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "one",
           "translation": "takac",
+          "pronunciation": "ta-kac",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "one",
           "translation": "tikiɗ-ɗi",
+          "pronunciation": "ti-kidh-dhi",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "one",
+          "english": "People / Men (plural)",
           "translation": "gal",
+          "pronunciation": "gal",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "one",
+          "english": "People / Men (plural)",
           "translation": "gáal",
+          "pronunciation": "gaal",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "stone",
-          "translation": "waa rr",
+          "translation": "waarr",
+          "pronunciation": "waarr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "stone",
           "translation": "wáar",
+          "pronunciation": "waar",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "three",
           "translation": "sedde",
+          "pronunciation": "sed-de",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "three",
           "translation": "sédde",
+          "pronunciation": "sed-de",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "three",
           "translation": "sed-di",
+          "pronunciation": "sed-di",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "two",
           "translation": "naama",
+          "pronunciation": "naa-ma",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "two",
           "translation": "nắma",
+          "pronunciation": "na-ma",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "two",
           "translation": "nama",
+          "pronunciation": "na-ma",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "One",
           "translation": "takach",
+          "pronunciation": "ta-kach",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Bone",
           "translation": "lafiti",
+          "pronunciation": "la-fi-ti",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Stone",
           "translation": "war",
+          "pronunciation": "war",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         }
       ]
@@ -407,8 +430,8 @@
       "entries": [
         {
           "english": "Woman / Wife (pl. women / wives)",
-          "translation": "min-ni",
-          "pronunciation": "min-ni",
+          "translation": "min-ni (pl. ɗég-i)",
+          "pronunciation": "min-ni / dhe-gi",
           "context": "Blažek (2011, Comparative Table 'woman': min-ni < HEC *mento, Bu mand-ây, Iraqw amena, maybe from *min- 'house', cf. So min-ka weyn 'first [= big] wife'; ɗég-i < *dazk- EC 41 & EC_Z 139; sʌlle cf. Arb saallé, El sáále) — min-ni (Sasse mìnnì, Hb mínnə 'Ehefrau', dT minni) • pl. ɗég-i ('women', Sasse ɗágì 'wifes'; Fl sʌlle, Hb mādədət, Fl maḍeṭi 'thou f.', Bd maaḍIðit, Fl galyiɛt) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -425,14 +448,14 @@
         },
         {
           "english": "Man / Husband (male, vir — pl. males)",
-          "translation": "mí ~ mu",
-          "pronunciation": "mí ~ mu",
+          "translation": "mí ~ mu (pl. yáb)",
+          "pronunciation": "mi ~ mu / yab",
           "context": "Blažek (2011, Comparative Table 'man = vir': cf. *megel MS 220 < *mV- & *gVl-; yáb cf. El mɔ-lɛpa, So lab, Rd lábo, Af lab 'male', Om: Sheko ya:b 'man, person') — mí ~ mu (cf. maaðát 'somebody', Sasse máá, Bender maaðət < *maa- & *-zat 'people') • pl. yáb ('males', Fl mayɛp, Hb māyop 'vir', dT maliab 'homo') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Person / Human being (homo — pl. people / men)",
           "translation": "máa (Sasse mú) • pl. gáal ('people', Sasse gáál 'men', Fleming gal)",
-          "pronunciation": "máa  •",
+          "pronunciation": "maa / gaal",
           "context": "Blažek (2011, Comparative Table 'person = homo': cf. El mố id., Arb mó(h) 'id., man'; gáal cf. *megel- 'man' MS 220) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -444,31 +467,31 @@
         {
           "english": "I (1st person singular pronoun: absolute, subject, object, possessive)",
           "translation": "abs. yú | subj. yáa | obj. ye | poss. cú / cu (Hb/Fl/Bd yu, Sa/To yú)",
-          "pronunciation": "abs. yú | subj. yáa | obj. ye | poss. cú",
+          "pronunciation": "yu / yaa / ye / cu",
           "context": "Blažek (2011, lines 110–112 & Comparative Table 'I', citing Tosco 2001 p. 211: cf. Arb yé, El yesé < ECu obj. *yi / *yu, Bl_P 49–50) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Ye / You (2nd person plural pronoun: absolute, subject, object, possessive)",
           "translation": "abs. ʔitíni | subj. ʔití | obj. ʔitíni | poss. kíccu (Fl/Bd itini, Sa/To ʔitíni)",
-          "pronunciation": "abs. ʔitíni | subj. ʔití | obj. ʔitíni | poss. kíccu",
+          "pronunciation": "i-ti-ni / i-ti / kic-cu",
           "context": "Blažek (2011, lines 110–116 & Comparative Table 'ye', citing Tosco 2001 p. 211 < *ʔatin- EC 11) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Thou / You (2nd person singular pronoun: absolute, subject, object, possessive)",
           "translation": "abs. kúuni (kúun-i) | subj. kúo | obj. ko | poss. kú / ku (Hb kuno, Fl kuˑni, Bd kuuni, Sa kúúni; Fl maḍeṭi 'thou f.')",
-          "pronunciation": "abs. kúuni  | subj. kúo | obj. ko | poss. kú",
+          "pronunciation": "kuu-ni / ku-o / ko / ku",
           "context": "Blažek (2011, lines 110–113 & Comparative Table 'thou', citing Tosco 2001 p. 211: cf. Arb ké, El kesé, Ya ʔaáçuk < *ʔa-ki-ku < ECu obj. *ki/*ku, Bl_P 49–50) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "We (1st person plural inclusive: 'you and I')",
           "translation": "abs. múuni | subj. (ⁿé) ké ~ kí | poss. kúnnu (Sa múúni, To múuni incl.)",
-          "pronunciation": "abs. múuni | subj.  ké ~ kí | poss. kúnnu",
+          "pronunciation": "muu-ni / ke ~ ki / kun-nu",
           "context": "Blažek (2011, lines 110–114 & Comparative Table 'we', citing Tosco 2001 p. 211 < AA *muni, Bl_P 41, 49–50) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "We (1st person plural exclusive: 'we without you')",
           "translation": "abs. ɲíini (ɲiini) | subj. ɲaaɲi | obj. ɲí | poss. kíɲɲu (Bd ńiina, Sa ɲíínì, To ɲiini excl.)",
-          "pronunciation": "abs. ɲíini  | subj. ɲaaɲi | obj. ɲí | poss. kíɲɲu",
+          "pronunciation": "nyii-ni / nyaa-nyi / nyi / kiny-nyu",
           "context": "Blažek (2011, lines 110–115 & Comparative Table 'we', citing Tosco 2001 p. 211: cf. Bu naanu, Ya nííni’, Dah ɲáɲi, *ʔinno Sm 87) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -490,10 +513,10 @@
           "context": "Nishiguchi (2004, p. 41, Ex. 6c & p. 42 fn. 3: Sonorant + Obstruent N + F /ns/ within morpheme; corrects Tosco 2001's typo putting 'L' instead of 'F' as the cooccurring consonant of nasals) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "Person / pronoun",
-          "translation": "absolute",
-          "pronunciation": "absolute",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): absolute • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "english": "Somebody / Person",
+          "translation": "maaðát (Sasse máá, Bender maaðət)",
+          "pronunciation": "maa-dhat",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "I / First-person singular pronoun",
@@ -510,7 +533,7 @@
         {
           "english": "We / First-person plural pronoun",
           "translation": "ɲiɲi",
-          "pronunciation": "ii",
+          "pronunciation": "nyi-nyi",
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         },
         {
@@ -520,102 +543,111 @@
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         },
         {
-          "english": "Man; = vir",
-          "translation": "maaðət <; \\maa- &; \\-zat people; (EC_Z 140) / máá / mí ~ mu; cf. maaðát; somebody",
-          "pronunciation": "maaðt",
+          "english": "Man (male)",
+          "translation": "maaðət / máá / mí ~ mu / maaðát",
+          "pronunciation": "maa-dhat / mi ~ mu",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Man; = vir",
-          "translation": "māyop vir; maliab; homo / mayɛp / yáb males",
-          "pronunciation": "textmāyop vir",
+          "english": "Man (male, pl. males)",
+          "translation": "māyop / maliab / mayɛp / yáb",
+          "pronunciation": "ma-yop / yab",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Person; = homo",
+          "english": "Person (human being)",
           "translation": "mú / máa",
-          "pronunciation": "mú",
+          "pronunciation": "mu / maa",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Person; = homo",
-          "translation": "gal / gáál men / gáal people",
-          "pronunciation": "gal",
-          "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
-        },
-        {
-          "english": "Woman",
-          "translation": "sʌlle; (1971)",
-          "pronunciation": "slle",
+          "english": "People / Men (plural)",
+          "translation": "gal / gáál / gáal",
+          "pronunciation": "gal / gaal",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Woman",
-          "translation": "minni; mínnə; Ehefrau / mìnnì / min-ni",
-          "pronunciation": "textminni",
+          "translation": "sʌlle",
+          "pronunciation": "sal-le",
+          "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
+        },
+        {
+          "english": "Woman / Wife",
+          "translation": "minni / mínnə / mìnnì / min-ni",
+          "pronunciation": "min-ni",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Woman",
-          "translation": "mādədət / maḍeṭi; thou f.; (1971) / maaḍIðit",
-          "pronunciation": "textmālt",
+          "translation": "mādədət / maḍeṭi / maaḍIðit",
+          "pronunciation": "ma-dhe-ti",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Woman",
           "translation": "galyiɛt",
-          "pronunciation": "galyit",
+          "pronunciation": "gal-yiet",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Woman",
-          "translation": "ɗágì wifes / ɗég-i women",
-          "pronunciation": "ágì wifes",
+          "english": "Women / Wives (plural)",
+          "translation": "ɗágì / ɗég-i",
+          "pronunciation": "dha-gi / dhe-gi",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "many",
           "translation": "burne",
+          "pronunciation": "bur-ne",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "many",
           "translation": "burrnay",
+          "pronunciation": "burr-nay",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "many",
           "translation": "búrnab",
+          "pronunciation": "bur-nab",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "woman",
           "translation": "minni",
+          "pronunciation": "min-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "woman",
           "translation": "mìnnì",
+          "pronunciation": "min-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "woman",
           "translation": "min-ni",
+          "pronunciation": "min-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "woman",
           "translation": "maḍeṭi",
+          "pronunciation": "ma-dhe-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "woman",
           "translation": "maaḍIðit",
+          "pronunciation": "maa-dhi-dhit",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "Person",
           "translation": "mu",
+          "pronunciation": "mu",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         }
       ]
@@ -705,20 +737,20 @@
         },
         {
           "english": "Foot / Leg",
-          "translation": "ɠás (Sasse g’ás, pl. g’àssu, Bender g’ɛs, Fleming g’as = kəs, k’əs, gəs, Haberland ḳas 'Bein') & Fleming beḍi",
-          "pronunciation": "ɠás  & fleming beḍi",
+          "translation": "ɠás (Sasse g’ás, pl. g’àssu, Bender g’ɛs, Fleming g’as = kəs, k’əs, gəs, Haberland ḳas) & beḍi",
+          "pronunciation": "gas / be-dhi",
           "context": "Blažek (2011, Comparative Table 'foot': cf. Om: Di ḳus 'bone', Shako ʔus, Hozo kɛšɪ 'foot'; beḍi cf. Kf batto, Amh bat 'calf of leg') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Skin / Hide",
           "translation": "r/lokóɗ (Sasse lòkóddi, pl. lòkòrù, Fleming ro’odi, Bender tuude)",
-          "pronunciation": "r",
+          "pronunciation": "lo-kodh",
           "context": "Blažek (2011, Comparative Table 'skin': ?Yaaku pl. hréktô’) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Breast (human), Udder (animal) & Chest",
           "translation": "ʔóðu ('human breast', Sasse pl. ʔòt-ù, Bd ɔðo, Fl oto = oðo) • ɠán ('animal breast/udder') • bál ('chest', Fl bəl)",
-          "pronunciation": "ʔóðu  • ɠán  • bál",
+          "pronunciation": "o-dhu / gan / bal",
           "context": "Blažek (2011, Comparative Table 'breast': ʔóðu cf. Arb ʔeɗú, Af-Boon edhum, Du *ʕaɗum-, Ya ɛdu’; ɠán < Du *g’an-te 'udder'; bál ?HEC *alba 'face') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -742,7 +774,7 @@
         {
           "english": "Fingernail, Claw, Hoof & Finger",
           "translation": "ⁿáɗ ('fingernail/claw', Sa ⁿáɗ, Bd aɗo, Fl addo < *ʕiddi Sm 99) • konof ('hoof, finger, claw', Sa kònòf, Fl gənif)",
-          "pronunciation": "ⁿáɗ  • konof",
+          "pronunciation": "nadh / ko-nof",
           "context": "Blažek (2011, Comparative Table 'claw': konof cf. Arb kunúf, El kúnuf, Rd góffan 'claw') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -765,45 +797,45 @@
         },
         {
           "english": "Ear",
-          "translation": "(H) nēte",
-          "pronunciation": "texthnēte",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$nēte • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "nēte",
+          "pronunciation": "nee-te",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland nēte • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Eye",
-          "translation": "(H) il",
-          "pronunciation": "texthil",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$il • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "il",
+          "pronunciation": "il",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland il • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "Foot",
-          "translation": "(H) ḳas Bein",
-          "pronunciation": "texthas-bein",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$ḳas Bein • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "english": "Foot / Leg",
+          "translation": "ḳas",
+          "pronunciation": "kas",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland ḳas 'Bein' • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Hair",
-          "translation": "(H) zūra",
-          "pronunciation": "texthzūra",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$zūra • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "zūra",
+          "pronunciation": "zuu-ra",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland zūra • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Hand",
-          "translation": "(H) gil",
-          "pronunciation": "texthgil",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$gil • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "gil",
+          "pronunciation": "gil",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland gil • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Head",
-          "translation": "(H) mē",
-          "pronunciation": "texthmē",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$mē • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "mē",
+          "pronunciation": "mee",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland mē • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Mouth",
-          "translation": "(H) āf",
-          "pronunciation": "texthāf",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$āf • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "āf",
+          "pronunciation": "aaf",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland āf • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Skin / Hide",
@@ -886,96 +918,96 @@
         {
           "english": "Blood",
           "translation": "fʌs / fəs / fás",
-          "pronunciation": "fs",
+          "pronunciation": "fas",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Bone",
-          "translation": "lɛfi-te / lafite / láf-iti,; pl. láff-ù",
-          "pronunciation": "lfi-te",
+          "translation": "lɛfi-te / lafite / láf-iti (pl. láff-ù)",
+          "pronunciation": "la-fi-ti",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Breast",
-          "translation": "oto =; oðo (1971) / ɔðo / ʔóðu,; pl. ʔòt-ù",
-          "pronunciation": "oto",
+          "translation": "oto / oðo / ɔðo / ʔóðu (pl. ʔòt-ù)",
+          "pronunciation": "o-dhu",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Breast",
-          "translation": "ɠán (animal)",
-          "pronunciation": "án",
+          "english": "Udder / Animal breast",
+          "translation": "ɠán",
+          "pronunciation": "gan",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Breast",
-          "translation": "bəl chest / bál chest",
-          "pronunciation": "bl chest",
+          "english": "Chest",
+          "translation": "bəl / bál",
+          "pronunciation": "bal",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Cold",
           "translation": "ḍen / deeɲ / ɗéeɲ",
-          "pronunciation": "ḍen",
+          "pronunciation": "dheeny",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Cold",
-          "translation": "ʔabbúnab; be cold",
-          "pronunciation": "abbúnab",
+          "english": "Be cold",
+          "translation": "ʔabbúnab",
+          "pronunciation": "ab-bu-nab",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Ear",
           "translation": "nēte / nɛte / nɛɛte",
-          "pronunciation": "textnēte",
+          "pronunciation": "nee-te",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Eye",
-          "translation": "il / il =; ʔɪl (1971) / iil",
-          "pronunciation": "textil",
+          "translation": "il / ʔɪl / iil",
+          "pronunciation": "il / iil",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Foot",
-          "translation": "ḳas Bein / g’as = kəs,; k’əs, gəs; (1971) / g’ɛs",
-          "pronunciation": "textḳas bein",
+          "english": "Foot / Leg",
+          "translation": "ḳas / g’as / kəs / k’əs / gəs / g’ɛs",
+          "pronunciation": "kas / gas",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Foot",
+          "english": "Foot / Calf of leg",
           "translation": "beḍi",
-          "pronunciation": "beḍi",
+          "pronunciation": "be-dhi",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Hair",
-          "translation": "zūra / zur; = feather / zuurr/u",
-          "pronunciation": "textzūra",
+          "translation": "zūra / zur / zurr",
+          "pronunciation": "zuu-ra / zur",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Hand",
-          "translation": "gil / gɪl / gil",
-          "pronunciation": "textgil",
+          "translation": "gil / gɪl / gíl",
+          "pronunciation": "gil",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Head",
           "translation": "mē / mɛ / mɛɛ",
-          "pronunciation": "textmē",
+          "pronunciation": "mee",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Heart",
-          "translation": "woðini / wəðɔne / wòzinni; < \\*wozin-ti",
-          "pronunciation": "woðini",
+          "translation": "woðini / wəðɔne / wòzinni",
+          "pronunciation": "wo-dhi-ni",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Knee",
-          "translation": "kur / kuurr/u / kúr,; pl. kùrr-àm",
+          "translation": "kur / kurr / kúr (pl. kùrr-àm)",
           "pronunciation": "kur",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
@@ -988,31 +1020,31 @@
         {
           "english": "Liver",
           "translation": "čira / cira / círá",
-          "pronunciation": "čira",
+          "pronunciation": "chi-ra",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Mouth",
           "translation": "āf / afu / af(o)",
-          "pronunciation": "textāf",
+          "pronunciation": "aaf / a-fu",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Neck",
-          "translation": "luuti / luute / lúut-i,; pl. lug-u",
-          "pronunciation": "luuti",
+          "translation": "luuti / luute / lúut-i (pl. lug-u)",
+          "pronunciation": "luu-ti",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Nose",
           "translation": "sono / sɔɔno / sòònò",
-          "pronunciation": "sono",
+          "pronunciation": "soo-no",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Skin",
-          "translation": "ro’odi / lòkóddi,; pl. lòkòrù / r/lokóɗ",
-          "pronunciation": "ro’odi",
+          "translation": "ro’odi / lòkóddi (pl. lòkòrù) / r/lokóɗ",
+          "pronunciation": "lo-kod-di",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -1024,19 +1056,19 @@
         {
           "english": "Tongue",
           "translation": "ɛrre / ɛre / ʔere",
-          "pronunciation": "rre",
+          "pronunciation": "e-re",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Tooth",
-          "translation": "kaço / qaco / kácìntì,; pl. kacu",
-          "pronunciation": "kaço",
+          "translation": "kaço / qaco / kácìntì (pl. kacu)",
+          "pronunciation": "ka-cho",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "To tear off",
           "translation": "isu (/it + su/) • fuute (/fuus + te/)",
-          "pronunciation": "middle",
+          "pronunciation": "i-su / fuu-te",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
@@ -1126,336 +1158,403 @@
         {
           "english": "belly",
           "translation": "gere",
+          "pronunciation": "ge-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "belly",
           "translation": "geere",
+          "pronunciation": "gee-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "belly",
           "translation": "geer-e",
+          "pronunciation": "gee-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ear",
           "translation": "nēte",
+          "pronunciation": "nee-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ear",
           "translation": "nɛte",
+          "pronunciation": "ne-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ear",
           "translation": "nɛɛte",
+          "pronunciation": "nee-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ear",
           "translation": "neti",
+          "pronunciation": "ne-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ear",
           "translation": "nee",
+          "pronunciation": "nee",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "earth",
           "translation": "les",
+          "pronunciation": "les",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "earth",
-          "translation": "les",
+          "translation": "lès",
+          "pronunciation": "les",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "earth",
-          "translation": "land",
+          "english": "Earth / Land",
+          "translation": "lés",
+          "pronunciation": "les",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "earth",
-          "translation": "ground",
+          "english": "Earth / Ground",
+          "translation": "bii",
+          "pronunciation": "bii",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "earth",
           "translation": "bii",
+          "pronunciation": "bii",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "earth",
-          "translation": "soil",
+          "english": "Earth / Soil",
+          "translation": "bii (lés)",
+          "pronunciation": "bii",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "eye",
           "translation": "il",
+          "pronunciation": "il",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "eye",
           "translation": "iil",
+          "pronunciation": "iil",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "eye",
+          "english": "eyes (plural)",
           "translation": "ʔinnù",
+          "pronunciation": "in-nu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "foot",
           "translation": "ḳas",
+          "pronunciation": "kas",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "foot",
+          "english": "feet (plural)",
           "translation": "g’àssu",
+          "pronunciation": "gas-su",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hair",
           "translation": "zūra",
+          "pronunciation": "zuu-ra",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hair",
           "translation": "zur",
+          "pronunciation": "zur",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hair",
-          "translation": "zu rr",
+          "translation": "zurr",
+          "pronunciation": "zurr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hair",
           "translation": "ðúur",
+          "pronunciation": "dhuur",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hand",
           "translation": "gil",
+          "pronunciation": "gil",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hand",
-          "translation": "gil",
+          "translation": "gíl",
+          "pronunciation": "gil",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "head",
           "translation": "mē",
+          "pronunciation": "mee",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "head",
+          "english": "heads (plural)",
           "translation": "met-u",
+          "pronunciation": "me-tu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hear",
           "translation": "yāmāl",
+          "pronunciation": "yaa-maal",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hear",
           "translation": "malu",
+          "pronunciation": "ma-lu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hear",
           "translation": "maale",
+          "pronunciation": "maa-le",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "hear",
           "translation": "maal",
+          "pronunciation": "maal",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "heart",
           "translation": "woðini",
+          "pronunciation": "wo-dhi-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "heart",
           "translation": "wòzinni",
+          "pronunciation": "wo-zin-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "heart",
-          "translation": "< wozin-ti",
+          "translation": "wòzinni (< *wozin-ti)",
+          "pronunciation": "wo-zin-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "knee",
-          "translation": "ku rr",
+          "translation": "kurr",
+          "pronunciation": "kurr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "knee",
+          "english": "knees (plural)",
           "translation": "kùrr-àm",
+          "pronunciation": "kur-ram",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "knee",
+          "english": "knees (plural)",
           "translation": "kurram",
+          "pronunciation": "kur-ram",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "liver",
           "translation": "čira",
+          "pronunciation": "chi-ra",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "liver",
           "translation": "cira",
+          "pronunciation": "chi-ra",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mouth",
           "translation": "āf",
+          "pronunciation": "aaf",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mouth",
           "translation": "afu",
+          "pronunciation": "a-fu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mouth",
           "translation": "af(o)",
+          "pronunciation": "a-fo",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "neck",
           "translation": "luuti",
+          "pronunciation": "luu-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "neck",
           "translation": "luute",
+          "pronunciation": "luu-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "neck",
           "translation": "lúut-i",
+          "pronunciation": "luu-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "neck",
+          "english": "necks (plural)",
           "translation": "lug-u",
+          "pronunciation": "lu-gu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "nose",
           "translation": "sɔɔno",
+          "pronunciation": "soo-no",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "skin",
           "translation": "ro’odi",
+          "pronunciation": "ro-o-di",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "skin",
           "translation": "lòkóddi",
+          "pronunciation": "lo-kod-di",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "skin",
           "translation": "r/lokóɗ",
+          "pronunciation": "lo-kodh",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tongue",
           "translation": "ɛrre",
+          "pronunciation": "er-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tongue",
           "translation": "ɛre",
+          "pronunciation": "e-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tongue",
           "translation": "ʔere",
+          "pronunciation": "e-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tongue",
           "translation": "ʔére",
+          "pronunciation": "e-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "tongue",
+          "english": "tongues (plural)",
           "translation": "ʔerbu",
+          "pronunciation": "er-bu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tooth",
           "translation": "kaço",
+          "pronunciation": "ka-cho",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tooth",
           "translation": "qaco",
+          "pronunciation": "qa-co",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "tooth",
+          "english": "tooth (singulative)",
           "translation": "kácìntì",
+          "pronunciation": "ka-chin-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "tooth",
+          "english": "teeth (plural)",
           "translation": "kacu",
+          "pronunciation": "ka-chu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "warm",
           "translation": "kul",
+          "pronunciation": "kul",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "warm",
           "translation": "kulláʔ",
+          "pronunciation": "kul-la",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "Skin",
           "translation": "lokodi",
+          "pronunciation": "lo-ko-di",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Eye",
           "translation": "il",
+          "pronunciation": "il",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Tooth",
           "translation": "kachinti",
+          "pronunciation": "ka-chin-ti",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Breast",
           "translation": "ozu",
+          "pronunciation": "o-zu",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Liver",
           "translation": "chira",
+          "pronunciation": "chi-ra",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "To hear",
           "translation": "mal",
+          "pronunciation": "mal",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         }
       ]
@@ -1479,14 +1578,14 @@
         },
         {
           "english": "Bird (Small bird & Big bird)",
-          "translation": "kimír-ri",
-          "pronunciation": "kimír-ri",
+          "translation": "kimír-ri (small bird) • ⁿurum (big bird)",
+          "pronunciation": "ki-mir-ri / nu-rum",
           "context": "Blažek (2011, Comparative Table 'bird') — kimír-ri (Sasse sg. kimiɗɗi, pl. kimírri 'small bird', Bd kImIlde, Fl kimirre < *kimbir- EC 13) • ⁿurum ('big bird', Hb húrum, dT urrin) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Fish",
-          "translation": "bée (Sasse béé, coll. bèè-c, Bender bɛɛc, Fleming beič, Haberland bēč, da Trento bèc < *bahag- LEC 262) • Haberland kāra",
-          "pronunciation": "bée  • haberland kāra",
+          "translation": "bée (Sasse béé, coll. bèè-c, Bender bɛɛc, Fleming beič, Haberland bēč, da Trento bèc) • kāra",
+          "pronunciation": "bee / ka-ra",
           "context": "Blažek (2011, Comparative Table 'fish': kāra cf. Du *xaar-, SOm: Bn kaara, Hm kara) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1498,7 +1597,7 @@
         {
           "english": "Tail, Tip of the tail & Back",
           "translation": "wáas ('tail', Sa wáás, Bd waas) • dúm ('tip of the tail' < *dub- EC 16) • sugu ('back', Sa sugu, Fl sugo)",
-          "pronunciation": "wáas  • dúm  • sugu",
+          "pronunciation": "waas / dum / su-gu",
           "context": "Blažek (2011, Comparative Table 'tail': wáas cf. Arb was 'penis', ?So was 'copulate'; sugu cf. D’i sukunna, OrW saggoo, Agaw *säg-) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1581,15 +1680,15 @@
         },
         {
           "english": "Dog",
-          "translation": "(T) cer = (H) čer",
-          "pronunciation": "texttcer-texthčer",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$cer = $^{\\text{H}}$čer • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "cer / čer",
+          "pronunciation": "cher",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento cer, Haberland čer • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Fish",
-          "translation": "(T) bèc = (H) bēč",
-          "pronunciation": "texttbèc-texthbēč",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$bèc = $^{\\text{H}}$bēč • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "bèc / bēč",
+          "pronunciation": "beech",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento bèc, Haberland bēč • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Fish",
@@ -1616,81 +1715,81 @@
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         },
         {
-          "english": "Bird",
-          "translation": "kimirre / kImIlde / kimiɗɗi,; pl. kimírri; small bird",
-          "pronunciation": "kimirre",
+          "english": "Bird (small bird)",
+          "translation": "kimirre / kImIlde / kimiɗɗi (pl. kimírri)",
+          "pronunciation": "ki-mir-ri",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Bird",
-          "translation": "urrin; húrum / ⁿurum; big bird",
-          "pronunciation": "texturrin",
+          "english": "Bird (big bird)",
+          "translation": "urrin / húrum / ⁿurum",
+          "pronunciation": "hu-rum / nu-rum",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Claw",
+          "english": "Claw / Fingernail",
           "translation": "addo / aɗo / ⁿáɗ",
-          "pronunciation": "addo",
+          "pronunciation": "a-dho / nadh",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Claw",
-          "translation": "gənif / kònòf; hoof, claw / konof; hoof, finger",
-          "pronunciation": "gnif",
+          "english": "Claw / Hoof / Finger",
+          "translation": "gənif / kònòf / konof",
+          "pronunciation": "ko-nof",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Dog",
-          "translation": "cer = čer / čere (1971) / cIIurr/u",
-          "pronunciation": "textcer textčer",
+          "translation": "cer / čer / čere / cIIrr",
+          "pronunciation": "cher",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Feather",
           "translation": "bààlli / bal-li",
-          "pronunciation": "bààlli",
+          "pronunciation": "baal-li",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Feather",
-          "translation": "zur = hair",
-          "pronunciation": "zur hair",
+          "english": "Feather / Hair",
+          "translation": "zur",
+          "pronunciation": "zur",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Fish",
-          "translation": "bèc = bēč / beič / bɛɛc",
-          "pronunciation": "textbèc textbēč",
+          "translation": "bèc / bēč / beič / bɛɛc",
+          "pronunciation": "beech",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Fish",
           "translation": "kāra",
-          "pronunciation": "textkāra",
+          "pronunciation": "kaa-ra",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Fly n",
+          "english": "Fly (insect)",
           "translation": "kiiðin / kííðiɲ / kiiðiɲ",
-          "pronunciation": "kiiðin",
+          "pronunciation": "kii-dhiny",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Horn",
           "translation": "gas / gaaso / gáás",
-          "pronunciation": "gas",
+          "pronunciation": "gaas",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Louse",
-          "translation": "izire / izIurr/u / ʔìðiɗɗi,; pl. ʔìðírè",
-          "pronunciation": "izire",
+          "translation": "izire / izIrr / ʔìðiɗɗi (pl. ʔìðírè)",
+          "pronunciation": "i-dhir-ri",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Snake",
-          "translation": "caurr/u / cár,; pl. cààrà / cár",
-          "pronunciation": "calt",
+          "translation": "carr / cár (pl. cààrà)",
+          "pronunciation": "char",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -1700,137 +1799,159 @@
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Tail",
-          "translation": "dúm; tip of the tail",
+          "english": "Tip of the tail",
+          "translation": "dúm",
           "pronunciation": "dúm",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Tail",
-          "translation": "sugo / sugu back",
-          "pronunciation": "sugo",
+          "english": "Back (of body/tail)",
+          "translation": "sugo / sugu",
+          "pronunciation": "su-gu",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "The gazelle",
           "translation": "inti (/inti + e/)",
-          "pronunciation": "def",
+          "pronunciation": "in-ti",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "Mosquito",
           "translation": "ɗuuninti (/ɗuunin + ti/)",
-          "pronunciation": "sg",
+          "pronunciation": "dhuu-nin-ti",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "Fish",
-          "translation": "bée (Sasse béé, coll. bèè-c, Bender bɛɛc, Fleming beič, Haberland bēč, da Trento bèc < bahag- LEC 262) • Haberland kāra",
+          "translation": "bée (Sasse béé, coll. bèè-c, Bender bɛɛc, Fleming beič, Haberland bēč, da Trento bèc < *bahag- LEC 262) • kāra",
+          "pronunciation": "bee / ka-ra",
           "context": "Blažek (2011, Comparative Table 'fish': kāra cf. Du *xaar-, SOm: Bn kaara, Hm kara) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Tail, Tip of the tail & Back",
-          "translation": "wáas ('tail', Sa wáás, Bd waas) • dúm ('tip of the tail' < dub- EC 16) • sugu ('back', Sa sugu, Fl sugo)",
+          "translation": "wáas ('tail', Sa wáás, Bd waas) • dúm ('tip of the tail' < *dub- EC 16) • sugu ('back', Sa sugu, Fl sugo)",
+          "pronunciation": "waas / dum / su-gu",
           "context": "Blažek (2011, Comparative Table 'tail': wáas cf. Arb was 'penis', ?So was 'copulate'; sugu cf. D’i sukunna, OrW saggoo, Agaw *säg-) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Feather",
-          "translation": "bal-li (Sasse bààlli < baal- EC_B 31; Fleming zur = 'hair')",
+          "translation": "bal-li (Sasse bààlli < *baal- EC_B 31; Fleming zur = 'hair')",
+          "pronunciation": "bal-li",
           "context": "Blažek (2011, Comparative Table 'feather') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "bird",
           "translation": "kimirre",
+          "pronunciation": "ki-mir-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bird",
           "translation": "kImIlde",
+          "pronunciation": "ki-mil-de",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "bird",
+          "english": "bird (singulative)",
           "translation": "kimiɗɗi",
+          "pronunciation": "ki-midh-dhi",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "bird",
+          "english": "birds (plural)",
           "translation": "kimírri",
+          "pronunciation": "ki-mir-ri",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "bird",
+          "english": "big bird",
           "translation": "urrin",
+          "pronunciation": "ur-rin",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "bird",
+          "english": "big bird",
           "translation": "húrum",
+          "pronunciation": "hu-rum",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "bird",
+          "english": "big bird",
           "translation": "ⁿurum",
+          "pronunciation": "nu-rum",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "dog",
-          "translation": "čere (1971)",
+          "translation": "čere",
+          "pronunciation": "che-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "dog",
-          "translation": "cII rr",
+          "translation": "cIIrr",
+          "pronunciation": "chiirr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "dog",
           "translation": "cir",
+          "pronunciation": "chir",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "fish",
           "translation": "beič",
+          "pronunciation": "beich",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "fish",
-          "translation": "coll. bèè-c",
+          "english": "fish (collective)",
+          "translation": "bèè-c",
+          "pronunciation": "beech",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "fish",
           "translation": "kāra",
+          "pronunciation": "kaa-ra",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "louse",
           "translation": "izire",
+          "pronunciation": "i-zi-re",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "louse",
-          "translation": "izI rr",
+          "translation": "izIrr",
+          "pronunciation": "i-zirr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "louse",
           "translation": "ʔiðír-ri",
+          "pronunciation": "i-dhir-ri",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "snake",
-          "translation": "ca rr",
+          "translation": "carr",
+          "pronunciation": "charr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "Fish",
           "translation": "bech",
+          "pronunciation": "bech",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Dog",
           "translation": "chir",
+          "pronunciation": "chir",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         }
       ]
@@ -1903,7 +2024,7 @@
         {
           "english": "Ashes & Hot ashes",
           "translation": "ʔége ('ashes', Sa ʔege, Bd ɛɛge, Fl ɛk) • ɗíl ('hot ashes' < Dullay *ɗil- 'burn')",
-          "pronunciation": "ʔége  • ɗíl",
+          "pronunciation": "e-ge / dhil",
           "context": "Blažek (2011, Comparative Table 'ashes': cf. Arb ʔeeg, El éek 'fire', Ya íkú, Dah ʔeega) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1914,20 +2035,20 @@
         },
         {
           "english": "Stone / Rock",
-          "translation": "wáar (= 'mountain', Sasse wáár, Bender waarr) • Fleming dʌb",
-          "pronunciation": "wáar  • fleming dʌb",
+          "translation": "wáar (= 'mountain', Sasse wáár, Bender waarr) • dʌb",
+          "pronunciation": "waar / dab",
           "context": "Blažek (2011, Comparative Table 'stone': dʌb cf. Yaaku tépú, ?Sam *daddaab- 'rock' Sm₁ 185) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Bark of tree",
           "translation": "boort-i (Sasse boorti, Bender buurte, Fleming bor) • ɓokot-i",
-          "pronunciation": "boort-i  • ɓokot-i",
+          "pronunciation": "boor-ti / bo-ko-ti",
           "context": "Blažek (2011, Comparative Table 'bark': boort-i ?Qwara ber; ɓokot-i ?Bo-Baddey g’afóód, Bo-Jara g’ofo’ód or Kb buku(-ta)) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Mountain / Hill",
-          "translation": "gummuti",
-          "pronunciation": "gummuti",
+          "translation": "gummuti (pl. gùmù) • wār • labur • siri (pl. sirgam)",
+          "pronunciation": "gum-mu-ti / waar / la-bur / si-ri",
           "context": "Blažek (2011, Comparative Table 'mountain': gummuti cf. Arb/Or gubba, So gumbur, Om Ari gemar, Hm gɛ:mɛr; wār cf. Ts wóro; siri cf. So seeri) — gummuti ('hill', Sa gùmìti, pl. gùmù) • wār (Hb wār, Fl wɔr, Bd warr) • labur (dT labur, Hb lābur) • siri (pl. sirgam 'hill') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1939,7 +2060,7 @@
         {
           "english": "Earth / Land / Soil / Ground",
           "translation": "lés ('land, ground', Sa lès, Fl lɛs, dT/Hb les, cf. Or lafa EC_G 245) • bii ('soil, ground', Sa bii < *biy- EC_B 37)",
-          "pronunciation": "lés  • bii",
+          "pronunciation": "les / bii",
           "context": "Blažek (2011, Comparative Table 'earth') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1968,51 +2089,51 @@
         },
         {
           "english": "Earth",
-          "translation": "(T) les / (H) les",
-          "pronunciation": "texttlesbrtexthles",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$les<br>$^{\\text{H}}$les • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "les",
+          "pronunciation": "les",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento & Haberland les • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Fire",
-          "translation": "(T) iete / (H) iyēta",
-          "pronunciation": "texttietebrtexthiyēta",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$iete<br>$^{\\text{H}}$iyēta • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "iete / iyēta",
+          "pronunciation": "i-e-te / i-yee-ta",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento iete, Haberland iyēta • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Grass",
-          "translation": "(H) īs",
-          "pronunciation": "texthīs",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$īs • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "īs",
+          "pronunciation": "iis",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland īs • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Moon",
-          "translation": "(T) cui / (H) gúiyo",
-          "pronunciation": "texttcuibrtexthgúiyo",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$cui<br>$^{\\text{H}}$gúiyo • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "cui / gúiyo",
+          "pronunciation": "cui / gui-yo",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento cui, Haberland gúiyo • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Star",
-          "translation": "(T) izinò / (H) yí",
-          "pronunciation": "texttizinòbrtexthyílt",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$izinò<br>$^{\\text{H}}$yí&lt;u&gt;d&lt;/u&gt;əno • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "izinò / yídəno",
+          "pronunciation": "i-zi-no / yi-da-no",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento izinò, Haberland yídəno • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Sun",
-          "translation": "(T) azo = (H) ā",
-          "pronunciation": "texttazo-texthālt",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$azo = $^{\\text{H}}$ā&lt;u&gt;d&lt;/u&gt;o • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "azo / ādo",
+          "pronunciation": "a-zo / aa-do",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento azo, Haberland ādo • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Tree",
-          "translation": "(T) gor / (H) g/kʷor",
-          "pronunciation": "texttgorbrtexthg",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$gor<br>$^{\\text{H}}$g/kʷor • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "gor / gʷor / kʷor",
+          "pronunciation": "gor / gwor",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento gor, Haberland g/kʷor • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Water",
-          "translation": "(T) bie / (H) bīya",
-          "pronunciation": "texttbiebrtexthbīya",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$bie<br>$^{\\text{H}}$bīya • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "bie / bīya",
+          "pronunciation": "bi-e / bii-ya",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento bie, Haberland bīya • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Tree / Wood",
@@ -2065,7 +2186,7 @@
         {
           "english": "Bark",
           "translation": "ɓokot-i",
-          "pronunciation": "okot-i",
+          "pronunciation": "bo-ko-ti",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -2076,38 +2197,38 @@
         },
         {
           "english": "Cloud",
-          "translation": "ñʌdo =; ñebo!; (1971)",
-          "pronunciation": "ñdo",
+          "translation": "ñʌdo / ñebo",
+          "pronunciation": "nya-do / nye-bo",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Cloud",
-          "translation": "irr = rain",
-          "pronunciation": "ilt",
-          "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
-        },
-        {
-          "english": "Earth",
-          "translation": "les; les / lɛs / lès",
-          "pronunciation": "textles",
+          "english": "Rain / Raincloud",
+          "translation": "irr / ʔír",
+          "pronunciation": "irr",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Earth",
-          "translation": "bii / bii; soil, ground",
+          "translation": "les / lɛs / lès",
+          "pronunciation": "les",
+          "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
+        },
+        {
+          "english": "Earth / Soil / Ground",
+          "translation": "bii",
           "pronunciation": "bii",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Fire",
-          "translation": "iete; iyēta / giete / g’iɛtɛ",
-          "pronunciation": "textiete",
+          "translation": "iete / iyēta / giete / g’iɛtɛ",
+          "pronunciation": "gie-te",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Grass",
           "translation": "īs / iiš / ʔííš",
-          "pronunciation": "textīs",
+          "pronunciation": "iish",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -2117,51 +2238,51 @@
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Leaf",
-          "translation": "iš = grass",
-          "pronunciation": "iš grass",
+          "english": "Grass / Foliage",
+          "translation": "iš / ʔíiš",
+          "pronunciation": "iish",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Leaf",
-          "translation": "nɛɛte = ear / neti = ear / nee = ear",
-          "pronunciation": "nte ear",
+          "english": "Leaf / Ear",
+          "translation": "nɛɛte / neti / nee",
+          "pronunciation": "ne-ti / nee",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Moon",
-          "translation": "cui; gúiyo / g’ui / g’wi",
-          "pronunciation": "textcui",
+          "translation": "cui / gúiyo / g’ui / g’wi",
+          "pronunciation": "gui-yo / gwi",
+          "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
+        },
+        {
+          "english": "Mountain / Hill",
+          "translation": "gùmìti (pl. gùmù) / gummuti",
+          "pronunciation": "gu-mi-ti",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Mountain",
-          "translation": "gùmìti,; pl. gùmù / gummuti; hill",
-          "pronunciation": "gùmìti",
+          "translation": "wār / wɔr / warr",
+          "pronunciation": "waar",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Mountain",
-          "translation": "wār / wɔr / waurr/u",
-          "pronunciation": "textwār",
+          "translation": "labur / lābur",
+          "pronunciation": "la-bur",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Mountain",
-          "translation": "labur; lābur",
-          "pronunciation": "textlabur",
-          "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
-        },
-        {
-          "english": "Mountain",
-          "translation": "siri, pl.; sirgam hill",
+          "english": "Mountain / Hill",
+          "translation": "siri (pl. sirgam)",
           "pronunciation": "siri",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Rain n",
-          "translation": "ir = ʔɪr; (1971) / Iurr/u / ʔir",
-          "pronunciation": "ir r",
+          "english": "Rain",
+          "translation": "ir / ʔɪr / Irr / ʔir",
+          "pronunciation": "ir",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -2185,61 +2306,61 @@
         {
           "english": "Seed",
           "translation": "rruba",
-          "pronunciation": "lt",
+          "pronunciation": "rru-ba",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Seed",
           "translation": "ʔár",
-          "pronunciation": "ár",
+          "pronunciation": "ar",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Smoke",
-          "translation": "err / ɛurr/u / ʔeer",
+          "translation": "err / ɛrr / ʔeer",
           "pronunciation": "err",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Star",
-          "translation": "izinò; yídəno / yizɛno / izInte",
-          "pronunciation": "textizinò",
+          "translation": "izinò / yídəno / yizɛno / izInte",
+          "pronunciation": "i-zin-te",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Stone",
-          "translation": "waaurr/u / wáár / wáar",
-          "pronunciation": "waalt",
+          "translation": "waarr / wáár / wáar",
+          "pronunciation": "waar",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Stone",
           "translation": "dʌb",
-          "pronunciation": "db",
+          "pronunciation": "dab",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Sun",
-          "translation": "azo = ādo / aazo / ʔaaðu",
-          "pronunciation": "textazo textālt",
+          "translation": "azo / ādo / aazo / ʔaaðu",
+          "pronunciation": "aa-dhu",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Tree",
-          "translation": "gor; g/kʷor / gor / kuurr/u",
-          "pronunciation": "textgor",
+          "translation": "gor / gʷor / kʷor / kurr",
+          "pronunciation": "gor",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Water",
-          "translation": "bie; bīya / biye / biiyɛ",
-          "pronunciation": "textbie",
+          "translation": "bie / bīya / biye / biiyɛ",
+          "pronunciation": "bi-e",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Kind of grass",
           "translation": "balsam (/balt + sam/)",
-          "pronunciation": "pl",
+          "pronunciation": "bal-sam",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
@@ -2352,257 +2473,308 @@
         },
         {
           "english": "Ashes & Hot ashes",
-          "translation": "ʔége ('ashes', Sa ʔege, Bd ɛɛge, Fl ɛk) • ɗíl ('hot ashes' < Dullay ɗil- 'burn')",
+          "translation": "ʔége ('ashes', Sa ʔege, Bd ɛɛge, Fl ɛk) • ɗíl ('hot ashes' < Dullay *ɗil- 'burn')",
+          "pronunciation": "e-ge / dhil",
           "context": "Blažek (2011, Comparative Table 'ashes': cf. Arb ʔeeg, El éek 'fire', Ya íkú, Dah ʔeega) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Rain / Sky / God",
-          "translation": "ʔír (Sasse ʔir, Bender Irr, Fleming ir = ʔɪr < ʕír- Sm₁ 200; Wáàg 'God/Sky')",
+          "translation": "ʔír (Sasse ʔir, Bender Irr, Fleming ir = ʔɪr < *ʕír- Sm₁ 200; Wáàg 'God/Sky')",
+          "pronunciation": "ir / waag",
           "context": "Blažek (2011, Comparative Table 'rain n.': cf. Arb ʔirí, El íri id.) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Earth / Land / Soil / Ground",
-          "translation": "lés ('land, ground', Sa lès, Fl lɛs, dT/Hb les, cf. Or lafa EC_G 245) • bii ('soil, ground', Sa bii < biy- EC_B 37)",
+          "translation": "lés ('land, ground', Sa lès, Fl lɛs, dT/Hb les, cf. Or lafa EC_G 245) • bii ('soil, ground', Sa bii < *biy- EC_B 37)",
+          "pronunciation": "les / bii",
           "context": "Blažek (2011, Comparative Table 'earth') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "ashes",
           "translation": "ɛɛge",
+          "pronunciation": "ee-ge",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ashes",
           "translation": "ʔege",
+          "pronunciation": "e-ge",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ashes",
           "translation": "ʔége",
+          "pronunciation": "e-ge",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "cloud",
-          "translation": "ñebo!",
+          "translation": "ñebo",
+          "pronunciation": "nye-bo",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "fire",
           "translation": "iete",
+          "pronunciation": "i-e-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "fire",
           "translation": "iyēta",
+          "pronunciation": "i-yee-ta",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "fire",
           "translation": "giete",
+          "pronunciation": "gie-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "fire",
           "translation": "ʄíet",
+          "pronunciation": "jiet",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "grass",
           "translation": "īs",
+          "pronunciation": "iis",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "grass",
           "translation": "iiš",
+          "pronunciation": "iish",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "moon",
           "translation": "cui",
+          "pronunciation": "cui",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "moon",
           "translation": "gúiyo",
+          "pronunciation": "gui-yo",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "moon",
           "translation": "g’ui",
+          "pronunciation": "gwi",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "moon",
           "translation": "g’wi",
+          "pronunciation": "gwi",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mountain",
           "translation": "gùmìti",
+          "pronunciation": "gu-mi-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mountain",
           "translation": "gummuti",
+          "pronunciation": "gum-mu-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mountain",
           "translation": "wār",
+          "pronunciation": "waar",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mountain",
-          "translation": "wa rr",
+          "translation": "warr",
+          "pronunciation": "warr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mountain",
           "translation": "labur",
+          "pronunciation": "la-bur",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mountain",
           "translation": "lābur",
+          "pronunciation": "laa-bur",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "mountain",
           "translation": "siri",
+          "pronunciation": "si-ri",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "mountain",
-          "translation": "pl",
+          "english": "mountains (plural)",
+          "translation": "gùmù",
+          "pronunciation": "gu-mu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "mountain",
+          "english": "mountains (plural)",
           "translation": "sirgam",
+          "pronunciation": "sir-gam",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "night",
           "translation": "čuri",
+          "pronunciation": "chu-ri",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "night",
           "translation": "cuuri",
+          "pronunciation": "chuu-ri",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "night",
           "translation": "cúúri",
+          "pronunciation": "chuu-ri",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "rain n",
-          "translation": "I rr",
+          "english": "rain",
+          "translation": "Irr",
+          "pronunciation": "irr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "rain n",
+          "english": "rain",
           "translation": "ʔir",
+          "pronunciation": "ir",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "root",
           "translation": "yiz",
+          "pronunciation": "yiz",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sand",
           "translation": "yuč",
+          "pronunciation": "yuch",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "seed",
-          "translation": "rr uba",
+          "translation": "rruba",
+          "pronunciation": "rru-ba",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "smoke",
           "translation": "err",
+          "pronunciation": "err",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "smoke",
-          "translation": "ɛ rr",
+          "translation": "ɛrr",
+          "pronunciation": "err",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "smoke",
           "translation": "ʔeer",
+          "pronunciation": "eer",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "star",
           "translation": "izinò",
+          "pronunciation": "i-zi-no",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "star",
           "translation": "yizɛno",
+          "pronunciation": "yi-ze-no",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "star",
           "translation": "izInte",
+          "pronunciation": "i-zin-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "star",
           "translation": "ⁿizintti",
+          "pronunciation": "ni-zint-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sun",
           "translation": "aazo",
+          "pronunciation": "aa-zo",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sun",
           "translation": "ʔaaðu",
+          "pronunciation": "aa-dhu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tree",
           "translation": "gor",
+          "pronunciation": "gor",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tree",
-          "translation": "g/kʷor",
+          "translation": "gʷor / kʷor",
+          "pronunciation": "gwor",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tree",
-          "translation": "gor",
+          "translation": "g’òr",
+          "pronunciation": "gor",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tree",
-          "translation": "ku rr",
+          "translation": "kurr",
+          "pronunciation": "kurr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "Tree",
           "translation": "chor",
+          "pronunciation": "chor",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Fire",
           "translation": "chiete",
+          "pronunciation": "chie-te",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Mountain",
           "translation": "gumiti",
+          "pronunciation": "gu-mi-ti",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Night",
           "translation": "churi",
+          "pronunciation": "chu-ri",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         }
       ]
@@ -2633,7 +2805,7 @@
         {
           "english": "Fat / Oil / Butter",
           "translation": "sálab (Tosco) • buoddi (< *buor-ti, Sasse; Bender b’ɔdo) • giɛ (Fleming)",
-          "pronunciation": "sálab  • buoddi  • giɛ",
+          "pronunciation": "sa-lab / buod-di / gie",
           "context": "Blažek (2011, Comparative Table 'fat n.': giɛ cf. Arb gehen 'fat meat', El gɛ́’ní’da; buoddi cf. So bur, Si bur-o, EC_S 10) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -2650,15 +2822,15 @@
         },
         {
           "english": "Drink",
-          "translation": "(T) igh = (H) ik",
-          "pronunciation": "texttigh-texthik-",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$igh = $^{\\text{H}}$ik- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "igh / ik",
+          "pronunciation": "ik",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento igh, Haberland ik- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Eat",
-          "translation": "(T) cocom / (H) kom",
-          "pronunciation": "texttcocombrtexthkom-",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$cocom<br>$^{\\text{H}}$kom- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "cocom / kom",
+          "pronunciation": "co-com / kom",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento cocom, Haberland kom- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Water",
@@ -2668,14 +2840,14 @@
         },
         {
           "english": "Drink",
-          "translation": "igh = ik / ik / Ik",
-          "pronunciation": "textigh textik",
+          "translation": "igh / ik / Ik",
+          "pronunciation": "ik",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Eat",
-          "translation": "cocom; kom / kom / qʷɔye",
-          "pronunciation": "textcocom",
+          "translation": "cocom / kom / qʷɔye",
+          "pronunciation": "kom / qwo-ye",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -2685,152 +2857,177 @@
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Fat n",
+          "english": "Fat / Oil",
           "translation": "giɛ",
-          "pronunciation": "gi",
+          "pronunciation": "gie",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Fat n",
-          "translation": "b’ɔdo / buoddi <; \\*buor-ti",
-          "pronunciation": "b’do",
+          "english": "Fat / Butter",
+          "translation": "b’ɔdo / buoddi",
+          "pronunciation": "buod-di",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Fat n",
+          "english": "Fat / Oil",
           "translation": "sálab",
           "pronunciation": "sálab",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Meat",
-          "translation": "so / sú / só,; pl. sogim",
-          "pronunciation": "so",
+          "translation": "so / sú / só (pl. sogim)",
+          "pronunciation": "so / so-gim",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Fat / Oil / Butter",
-          "translation": "sálab (Tosco) • buoddi (< buor-ti, Sasse; Bender b’ɔdo) • giɛ (Fleming)",
+          "translation": "sálab (Tosco) • buoddi (< *buor-ti, Sasse; Bender b’ɔdo) • giɛ (Fleming)",
+          "pronunciation": "sa-lab / buod-di / gie",
           "context": "Blažek (2011, Comparative Table 'fat n.': giɛ cf. Arb gehen 'fat meat', El gɛ́’ní’da; buoddi cf. So bur, Si bur-o, EC_S 10) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Flood-recession sorghum cultivation along the Omo delta and Lake Turkana",
           "translation": "Guurube haa gaa Basaan af-ka",
+          "pronunciation": "guu-ru-be haa gaa ba-saan af-ka",
           "context": "CLDF ASJP v20 Daasanach & Blažek (2011) Open Lexicon (CC-BY-4.0)"
         },
         {
-          "english": "Fat n",
-          "translation": "b’ɔdo / buoddi <; buor-ti",
+          "english": "Fat / Butter",
+          "translation": "b’ɔdo / buoddi (< *buor-ti)",
+          "pronunciation": "buod-di",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "drink",
           "translation": "ik",
+          "pronunciation": "ik",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "drink",
           "translation": "ʔik",
+          "pronunciation": "ik",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "eat",
           "translation": "cocom",
+          "pronunciation": "co-com",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "eat",
           "translation": "kom",
+          "pronunciation": "kom",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "eat",
-          "translation": "kom",
+          "translation": "kóm",
+          "pronunciation": "kom",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "eat",
           "translation": "qʷɔye",
+          "pronunciation": "qwo-ye",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "egg",
           "translation": "gòngo",
+          "pronunciation": "gon-go",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "egg",
           "translation": "g’ong’o",
+          "pronunciation": "gon-go",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "egg",
           "translation": "g’òng’ó",
+          "pronunciation": "gon-go",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "egg",
           "translation": "ɠonɠ-o",
+          "pronunciation": "gon-go",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "fat n",
+          "english": "fat",
           "translation": "b’ɔdo",
+          "pronunciation": "bo-do",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "fat n",
-          "translation": "buoddi <",
+          "english": "fat",
+          "translation": "buoddi",
+          "pronunciation": "buod-di",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "fat n",
-          "translation": "buor-ti",
+          "english": "fat (underlying form)",
+          "translation": "buor-ti (buoddi)",
+          "pronunciation": "buor-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "feather",
           "translation": "bààlli",
+          "pronunciation": "baal-li",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "feather",
           "translation": "bal-li",
+          "pronunciation": "bal-li",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "meat",
           "translation": "so",
+          "pronunciation": "so",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "meat",
+          "english": "meats (plural)",
           "translation": "sogim",
+          "pronunciation": "so-gim",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "water",
           "translation": "bie",
+          "pronunciation": "bi-e",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "water",
           "translation": "bīya",
+          "pronunciation": "bii-ya",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "water",
           "translation": "biye",
+          "pronunciation": "bi-ye",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "water",
           "translation": "biiyɛ",
+          "pronunciation": "bii-ye",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "To drink",
           "translation": "chik",
+          "pronunciation": "chik",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         }
       ]
@@ -2890,55 +3087,55 @@
         },
         {
           "english": "Cooking pot / Clay vessel",
-          "translation": "Okoko /Disti",
+          "translation": "Okoko / Disti",
           "pronunciation": "okoko",
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         },
         {
           "english": "Water gourd / Calabash",
           "translation": "Kόdo / Gongo",
-          "pronunciation": "kdo",
+          "pronunciation": "ko-do / gon-go",
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         },
         {
           "english": "Ashes",
           "translation": "ɛk / ɛɛge / ʔege",
-          "pronunciation": "k",
+          "pronunciation": "e-ge",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Ashes",
-          "translation": "ɗíl hot ashes",
-          "pronunciation": "íl hot ashes",
+          "english": "Hot ashes",
+          "translation": "ɗíl",
+          "pronunciation": "dhil",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Name",
           "translation": "mɛ / maaya / mé",
-          "pronunciation": "m",
+          "pronunciation": "me / maa-ya",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "This",
-          "translation": "yē/hē m./f / ello / ela",
-          "pronunciation": "textyē",
+          "english": "This (masculine & feminine)",
+          "translation": "yē / hē / ello / ela",
+          "pronunciation": "yee / hee / el-lo",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Thou",
           "translation": "kuno / kuˑni / kuuni",
-          "pronunciation": "textkuno",
+          "pronunciation": "kuu-ni",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "We",
-          "translation": "ńiina / ɲíínì / ɲiini excl",
-          "pronunciation": "ńiina",
+          "english": "We (exclusive)",
+          "translation": "ńiina / ɲíínì / ɲiini",
+          "pronunciation": "nyii-ni",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "We",
-          "translation": "múúni / múuni incl",
+          "english": "We (inclusive)",
+          "translation": "múúni / múuni",
           "pronunciation": "múúni",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
@@ -2963,72 +3160,73 @@
         {
           "english": "Farted",
           "translation": "duuti (/duus + ti/)",
-          "pronunciation": "perf",
+          "pronunciation": "duu-ti",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
-          "english": "Arbore",
+          "english": "Arbore woman",
           "translation": "marli (/mar + li/)",
-          "pronunciation": "fem",
+          "pronunciation": "mar-li",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "The knife for circumcision",
           "translation": "bilti (/bilt + e/)",
-          "pronunciation": "def",
+          "pronunciation": "bil-ti",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "Ankles",
           "translation": "kuɗfu (/kuɗf + o/)",
-          "pronunciation": "pl",
+          "pronunciation": "kudh-fu",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "Shaved oneself",
           "translation": "ʕuurti (/ʕuur + ti/)",
-          "pronunciation": "perf",
+          "pronunciation": "uur-ti",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "Bows",
           "translation": "bilo (/bil + t + o/)",
-          "pronunciation": "pl",
+          "pronunciation": "bi-lo",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "You held for yourself",
           "translation": "ciɗɗi (/cir + t + i/)",
-          "pronunciation": "sg",
+          "pronunciation": "cidh-dhi",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "You asked",
           "translation": "heeti (/hees + t + i/)",
-          "pronunciation": "perf",
+          "pronunciation": "hee-ti",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "You built for yourself",
           "translation": "ɗiti (/ɗis + t + i/)",
-          "pronunciation": "perf",
+          "pronunciation": "dhi-ti",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "You farted",
           "translation": "duuti (/duus + t + i/)",
-          "pronunciation": "perf",
+          "pronunciation": "duu-ti",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "You went and bought",
           "translation": "maɗɗi (/maɗ + t + i/)",
-          "pronunciation": "perf",
+          "pronunciation": "madh-dhi",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "Water gourd / Calabash",
-          "translation": "Kόdo /ongo",
+          "translation": "Kόdo / Gongo",
+          "pronunciation": "ko-do / gon-go",
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         }
       ]
@@ -3058,8 +3256,8 @@
         },
         {
           "english": "To die",
-          "translation": "kúf (Sasse kuf, Bender kufe < *kuf- 'fall' EC 11) • Fleming dɛd",
-          "pronunciation": "kúf  • fleming dɛd",
+          "translation": "kúf (Sasse kuf, Bender kufe < *kuf- 'fall' EC 11) • dɛd",
+          "pronunciation": "kuf / ded",
           "context": "Blažek (2011, Comparative Table 'die') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3094,8 +3292,8 @@
         },
         {
           "english": "To come (Prefix-conjugated verb & Imperative)",
-          "translation": "káɗe!",
-          "pronunciation": "káɗe",
+          "translation": "káɗe! (3sg. m. impf. yimii / yimeðe)",
+          "pronunciation": "ka-dhe / yi-mii",
           "context": "Blažek (2011, line 118 & Comparative Table 'come'; yimii is one of the 4 prefix-conjugated verbs in Tosco 2001 pp. 320–475) — káɗe! (Sasse kári!, Fleming kade! < *káálèè! Sm 87) • 3sg. m. impf. yimii (Sasse 3sg. yimeðe < *-mtii EC_B 105; Fl Raim-, Bd qayImi) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3118,8 +3316,8 @@
         },
         {
           "english": "To stand (Prefix-conjugated verb) & Get up",
-          "translation": "yáal",
-          "pronunciation": "yáal",
+          "translation": "yáal (3sg. m. impf. yaalla) • ɠeé (get up)",
+          "pronunciation": "yaal / yaal-la / gee",
           "context": "Blažek (2011, line 118 & Comparative Table 'stand'; yaalla is one of the 4 prefix-conjugated verbs in Tosco 2001 pp. 320–475) — yáal (3sg. m. impf. yaalla, Bender aligIdi < *-aall- EC_HL 67; Fl dogigildɛ) • ɠeé (Sasse ke-em- < *kaʕ- 'get up' EC_B 112) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3142,14 +3340,14 @@
         },
         {
           "english": "To sleep (spend the night) & Lie down",
-          "translation": "ráf",
-          "pronunciation": "ráf",
+          "translation": "ráf (spend the night) • ɗínaʔ (lie down)",
+          "pronunciation": "raf / dhi-na",
           "context": "Blažek (2011, Comparative Table 'sleep') — ráf (Sasse raf- 'spend the night', dT raf, Hb raf- < *raf- EC 22) • ɗínaʔ ('lie down', Sa ɗiin-ik, Bd ḍine, Fl ḍin-, cf. Af ḍiine) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "To burn",
           "translation": "bólob (Tosco) • duun-ay- (Sasse; Bender dunay, Fleming dunay-)",
-          "pronunciation": "bólob  • duun-ay",
+          "pronunciation": "bo-lob / duun-ay",
           "context": "Blažek (2011, Comparative Table 'burn': bólob cf. Rd bolkha, Saho bolol-, Beja balool, So belbel 'flame') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3239,7 +3437,7 @@
         {
           "english": "You held for yourself (hold + Mid Perf Sg)",
           "translation": "[ciɗɗi] (or ciri fn. 9) < /cir + t + i/ (r + t → ɗɗ)",
-          "pronunciation": "[ciɗɗi]  <",
+          "pronunciation": "cidh-dhi / chi-ri",
           "context": "Nishiguchi (2004, p. 47 Ex. 27b & pp. 49–50 Tableaux 3–4, fn. 9; Tosco 2001: 187) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3286,33 +3484,33 @@
         },
         {
           "english": "Go",
-          "translation": "(T) sasen / (H) si",
-          "pronunciation": "texttsasenbrtexthsi-",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$sasen<br>$^{\\text{H}}$si- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "sasen / si",
+          "pronunciation": "sa-sen / si",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento sasen, Haberland si- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Hear",
-          "translation": "(H) yāmāl",
-          "pronunciation": "texthyāmāl-",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$yāmāl- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "yāmāl",
+          "pronunciation": "yaa-maal",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland yāmāl- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Kill",
-          "translation": "(T) az = (H) ās",
-          "pronunciation": "texttaz-texthās-",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$az = $^{\\text{H}}$ās- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "az / ās",
+          "pronunciation": "az / aas",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento az, Haberland ās- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Know",
-          "translation": "(T) iàarghe",
-          "pronunciation": "texttiàarghe",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$iàarghe • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "iàarghe",
+          "pronunciation": "ya-ar-ge",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento iàarghe • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Sleep",
-          "translation": "(T) raf = (H) raf",
-          "pronunciation": "texttraf-texthraf-",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$raf = $^{\\text{H}}$raf- • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "raf",
+          "pronunciation": "raf",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento & Haberland raf • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "To drink",
@@ -3359,7 +3557,7 @@
         {
           "english": "Die",
           "translation": "dɛd",
-          "pronunciation": "dd",
+          "pronunciation": "ded",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -3377,13 +3575,13 @@
         {
           "english": "Hear",
           "translation": "yāmāl / malu / maale",
-          "pronunciation": "textyāmāl",
+          "pronunciation": "yaa-maal / maa-le",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Know",
           "translation": "iàarghe",
-          "pronunciation": "textiàarghe",
+          "pronunciation": "ya-ar-ge",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -3393,15 +3591,15 @@
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Say",
-          "translation": "y / yeeðe 3sg.; ʔát! / ʔát",
-          "pronunciation": "y",
+          "english": "Say (3sg. & Imperative)",
+          "translation": "yeeðe / ʔát!",
+          "pronunciation": "yee-dhe / at",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Say",
-          "translation": "toconàchi-; ror",
-          "pronunciation": "texttoconàchi-",
+          "translation": "toconàchiror",
+          "pronunciation": "to-co-na-chi-ror",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -3419,7 +3617,7 @@
         {
           "english": "See",
           "translation": "ilid",
-          "pronunciation": "textilid",
+          "pronunciation": "i-lid",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -3429,15 +3627,15 @@
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Sleep",
-          "translation": "raf = raf / raf- spend; the night / ráf",
-          "pronunciation": "textraf textraf",
+          "english": "Sleep / Spend the night",
+          "translation": "raf / ráf",
+          "pronunciation": "raf",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Sleep",
+          "english": "Sleep / Lie down",
           "translation": "ḍin / ḍine / ɗiin-ik",
-          "pronunciation": "ḍin",
+          "pronunciation": "dhiin-ik",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -3453,7 +3651,7 @@
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Stand",
+          "english": "Stand / Get up",
           "translation": "ke-em / ɠeé",
           "pronunciation": "ke-em",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
@@ -3465,69 +3663,69 @@
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Wet",
-          "translation": "nyuraan / ɲuru; wet, weak / ɲuru",
-          "pronunciation": "nyuraan",
+          "english": "Wet / Weak",
+          "translation": "nyuraan / ɲuru",
+          "pronunciation": "nyuu-ru",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "To peep",
           "translation": "ɗolmisu (/ɗolis + miso/)",
-          "pronunciation": "intensive",
+          "pronunciation": "dhol-mi-su",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "To feed oneself",
           "translation": "uolmosu (/olol + mo + su/) • ololso (/olol + so/)",
-          "pronunciation": "middle",
+          "pronunciation": "u-ol-mo-su / o-lol-so",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "Make black",
           "translation": "ʔoʔorsis (/ʔoʔor + sis/)",
-          "pronunciation": "caus",
+          "pronunciation": "o-or-sis",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "To fart",
           "translation": "duusma (/duus + m + a/)",
-          "pronunciation": "impf",
+          "pronunciation": "duus-ma",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "To refuse",
           "translation": "diiɗma (/diit + m + a/)",
-          "pronunciation": "impf",
+          "pronunciation": "diidh-ma",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "To rub",
           "translation": "sʔuudmis (/sʔuudis-/)",
-          "pronunciation": "ext",
+          "pronunciation": "suud-mis",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "You sew",
           "translation": "zaaya (/zaaby + t + a/)",
-          "pronunciation": "sg",
+          "pronunciation": "zaa-ya",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "(You) hear",
           "translation": "maala (/maal + t + a/)",
-          "pronunciation": "sg",
+          "pronunciation": "maa-la",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "You open",
           "translation": "fuuɗɗa (/fuur + t + a/)",
-          "pronunciation": "sg",
+          "pronunciation": "fuudh-dha",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "You see",
           "translation": "zaasanna (/zaas + am + t + a/)",
-          "pronunciation": "sg",
+          "pronunciation": "zaa-san-na",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
@@ -3640,22 +3838,26 @@
         },
         {
           "english": "To see",
-          "translation": "ʔárik (Sasse/Fleming arg-, Bender argiiyɛ; Haberland ilid- < ʔil- 'eye')",
+          "translation": "ʔárik (Sasse/Fleming arg-, Bender argiiyɛ; Haberland ilid- < *ʔil- 'eye')",
+          "pronunciation": "a-rik / arg",
           "context": "Blažek (2011, Comparative Table 'see' < *ʔarg- EC_B 26) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "To die",
-          "translation": "kúf (Sasse kuf, Bender kufe < kuf- 'fall' EC 11) • Fleming dɛd",
+          "translation": "kúf (Sasse kuf, Bender kufe < *kuf- 'fall' EC 11) • dɛd",
+          "pronunciation": "kuf / ded",
           "context": "Blažek (2011, Comparative Table 'die') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "To know",
-          "translation": "ʔók (Sasse ʔok, Bender ɔk, Fleming onn- < ʔog- EC_B 154; da Trento iàarghe < ʔarg- 'see')",
+          "translation": "ʔók (Sasse ʔok, Bender ɔk, Fleming onn- < *ʔog- EC_B 154; da Trento iàarghe < *ʔarg- 'see')",
+          "pronunciation": "ok / onn",
           "context": "Blažek (2011, Comparative Table 'know') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "To say / speak (Prefix-conjugated verb & Imperative)",
-          "translation": "ʔát (Sasse imp. ʔát!, 3sg. m. impf. yeeðe, Fl y- < -ḍh- EC 41; dT toconàchiror, Bd liija)",
+          "translation": "ʔát (Sasse imp. ʔát!, 3sg. m. impf. yeeðe, Fl y- < *-ḍh- EC 41; dT toconàchiror, Bd liija)",
+          "pronunciation": "at / yee-dhe",
           "context": "Blažek (2011, line 118 & Comparative Table 'say'; yeeðe is one of the 4 prefix-conjugated verbs in Tosco 2001 pp. 320–475) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         }
       ]
@@ -3692,7 +3894,7 @@
         {
           "english": "Cold & Be cold",
           "translation": "ɗéeɲ ('cold', Sasse deeɲ, Fleming/Bender ḍen < *damh- EC 25) • ʔabbúnab ('be cold' < *ḳab(b)- EC_B 112)",
-          "pronunciation": "ɗéeɲ  • ʔabbúnab - ec_b 112)",
+          "pronunciation": "dheeny / ab-bu-nab",
           "context": "Blažek (2011, Comparative Table 'cold') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3728,7 +3930,7 @@
         {
           "english": "Good / Fine & Pretty",
           "translation": "miðáb ('good', Sasse miðáb, Bender mIðəp, Fleming miðup, Haberland midap) • ɗabán ('pretty', Sasse ɗabaan)",
-          "pronunciation": "miðáb  • ɗabán",
+          "pronunciation": "mi-dhab / dha-ban",
           "context": "Blažek (2011, Comparative Table 'good': miðáb cf. Om: Kc mode, Ky mɔde) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3739,8 +3941,8 @@
         },
         {
           "english": "Small / Little (with -gV- plural)",
-          "translation": "níni / niní",
-          "pronunciation": "níni",
+          "translation": "níni / niní (pl. niiginí / nigginí)",
+          "pronunciation": "ni-ni / nii-gi-ni",
           "context": "Blažek (2011, line 118 & Comparative Table 'small', citing Tosco 2001 p. 207: cf. El ninina, Ya -ni’in) — níni / niní (pl. niiginí / nigginí; Sasse nini pl. nigini, Bender niini, Fleming ninɛn, Haberland níní, da Trento eninigà) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -3781,51 +3983,51 @@
         },
         {
           "english": "24 Consonant Phonemes, 5 Short/Long Vowels & 2 Diphthongs (ie, uo) in Dasanech (d’áasannæc)",
-          "translation": "Oral plosives: b, d, t, j, c, g, k, ʔ",
-          "pronunciation": "oral plosives: b",
+          "translation": "Oral plosives: b, d, t, j, c, g, k, ʔ • Implosives: ɓ, ɗ, ʄ, ɠ • Nasals: m, n, ɲ, ŋ • Fricatives: f, ð, s, š • Liquids/Glides: r, l, w, y",
+          "pronunciation": "b d t j c g k / b' d' j' g' / m n ny ng / f dh s sh / r l w y",
           "context": "Blažek (2011, lines 97–106, citing Tosco 2001 pp. 16–18, 25–26) — Oral plosives: b, d, t, j, c, g, k, ʔ • Implosives: ɓ, ɗ, ʄ, ɠ • Nasals: m, n, ɲ, ŋ • Fricatives: f, ð, s, š • Trill: r • Approximants: w, y, l • Vowels: i, e, a, o, u (short & long) • Diphthongs: ie, uo • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Singulative & Plural Nominal Suffixes in Dasanech",
-          "translation": "Singulative: m",
-          "pronunciation": "singulative: m",
+          "translation": "Singulative: m. -(i)c / -(i)ɲ, -(a)c / -(a)ɲ; f. -ti • Plural: -u, -a, -i, -V(V)m (m.) / -sV(V)m (f.), -anu, -ono, -s, -tu",
+          "pronunciation": "-ic -iny -ti / -u -a -i -am -sam -anu -ono -s -tu",
           "context": "Blažek (2011, line 108, citing Tosco 2001 Ch. 3 pp. 63–110) — Singulative: m. -(i)c / -(i)ɲ, -(a)c / -(a)ɲ; f. -ti (pp. 75–82) • Plural: -u (with final C gemination), -a, -i, -V(V)m (m.) / -sV(V)m (f.), -anu, -ono, -s, -tu (pp. 83–93) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Sonority Hierarchy & Geminate Inventory in Daasanach",
           "translation": "L > N, F, C (*N, F, C > L); Geminates: GG (yy, ww), LL (ll, rr), NN (mm, nn), FF (ʃʃ), CC (gg, dd, bb, tt, ɟɟ)",
-          "pronunciation": "sonority hierarchy & geminates",
+          "pronunciation": "yy ww / ll rr / mm nn / sh-sh / gg dd bb tt jj",
           "context": "Nishiguchi (2004, p. 42, Ex. 9–13, citing Sasse 1974: 409 & Tosco 2001: 52 — only liquids strictly obey the sonority cooccurrence restriction) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Optimality Theory Constraint Ranking for Daasanach Consonant Assimilation & Deletion",
-          "translation": "*Complex, Onset >> SyllCon",
-          "pronunciation": "optimality theory constraints",
+          "translation": "*Complex, Onset >> SyllCon; *CC_Obs, Max-C_son-IO, Faith-affix-IO >> Max-IO, Ident-IO",
+          "pronunciation": "maala / fuuɗɗa / tuunna / zaasanna / duuti / isu",
           "context": "Nishiguchi (2004, pp. 42–50, Ex. 14–18, 22, 31–34 & Tableaux 1–4) — *Complex, Onset >> SyllCon (Sec. 2); *C_ObsC_Obs (Sec. 3); *CC_Obs, Max-C_son-IO, Faith-affix-IO >> Max-IO, Ident-IO (Sec. 4) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Big",
-          "translation": "(T) gudogà / (H) gūdo",
-          "pronunciation": "texttgudogàbrtexthgūdo",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$gudogà<br>$^{\\text{H}}$gūdo • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "gudogà / gūdo",
+          "pronunciation": "gu-do-ga / guu-do",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento gudogà, Haberland gūdo • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Good",
-          "translation": "(H) mi",
-          "pronunciation": "texthmilt",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$mi&lt;u&gt;d&lt;/u&gt;ap • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "midap",
+          "pronunciation": "mi-dap",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland midap • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Many",
-          "translation": "(H) burne",
-          "pronunciation": "texthburne",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$burne • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "burne",
+          "pronunciation": "bur-ne",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland burne • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Small",
-          "translation": "(T) eninigà / (H) níní",
-          "pronunciation": "textteninigàbrtexthníní",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{T}}$eninigà<br>$^{\\text{H}}$níní • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "eninigà / níní",
+          "pronunciation": "e-ni-ni-ga / ni-ni",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): da Trento eninigà, Haberland níní • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "New",
@@ -3835,8 +4037,8 @@
         },
         {
           "english": "Big",
-          "translation": "gudogà; gūdo / guddo / guddu",
-          "pronunciation": "textgudogà",
+          "translation": "gudogà / gūdo / guddo / guddu",
+          "pronunciation": "gud-du",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -3854,55 +4056,55 @@
         {
           "english": "Good",
           "translation": "midap / miðup / mIðəp",
-          "pronunciation": "textmilt",
+          "pronunciation": "mi-dhab",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Good",
-          "translation": "ɗabaan; pretty / ɗabán",
-          "pronunciation": "abaan",
+          "english": "Pretty / Good",
+          "translation": "ɗabaan / ɗabán",
+          "pronunciation": "dha-baan",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "(be) long",
-          "translation": "dir / dIurr/u / ɗér",
-          "pronunciation": "dir",
+          "translation": "dir / dIrr / ɗér",
+          "pronunciation": "dher",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Red",
-          "translation": "bur / buurr/u / búr",
+          "translation": "bur / burr / búr",
           "pronunciation": "bur",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Small",
-          "translation": "eninigà; níní / ninɛn / niini",
-          "pronunciation": "texteninigà",
+          "translation": "eninigà / níní / ninɛn / niini",
+          "pronunciation": "ni-ni",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Thin",
-          "translation": "dáɗab; become thin",
-          "pronunciation": "dáab",
+          "english": "Thin / Become thin",
+          "translation": "dáɗab",
+          "pronunciation": "da-dhab",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "White",
-          "translation": "ɛð / ʔeð / ʔéð,; pl. ʔéegeð",
-          "pronunciation": "ð",
+          "translation": "ɛð / ʔeð / ʔéð (pl. ʔéegeð)",
+          "pronunciation": "edh / ee-gedh",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Yellow",
-          "translation": "ráar,; pl. ráagar",
-          "pronunciation": "ráar",
+          "translation": "ráar (pl. ráagar)",
+          "pronunciation": "raar / raa-gar",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Round calabashes",
           "translation": "duɗmo (/dudum + o/)",
-          "pronunciation": "pl",
+          "pronunciation": "dudh-mo",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
@@ -3979,22 +4181,26 @@
         },
         {
           "english": "Cold & Be cold",
-          "translation": "ɗéeɲ ('cold', Sasse deeɲ, Fleming/Bender ḍen < damh- EC 25) • ʔabbúnab ('be cold' < ḳab(b)- EC_B 112)",
+          "translation": "ɗéeɲ ('cold', Sasse deeɲ, Fleming/Bender ḍen < *damh- EC 25) • ʔabbúnab ('be cold' < *ḳab(b)- EC_B 112)",
+          "pronunciation": "dheeny / ab-bu-nab",
           "context": "Blažek (2011, Comparative Table 'cold') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Round",
-          "translation": "múùl (and kurs- 'round' in kur 'knee')",
+          "translation": "múùl (and *kurs- 'round' in kur 'knee')",
+          "pronunciation": "muul",
           "context": "Tosco (2001, p. 511) & Blažek (2011, Comparative Table 'knee' < *kurs- 'round') • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Sonority Hierarchy & Geminate Inventory in Daasanach",
-          "translation": "L > N, F, C (N, F, C > L); Geminates: GG (yy, ww), LL (ll, rr), NN (mm, nn), FF (ʃʃ), CC (gg, dd, bb, tt, ɟɟ)",
+          "translation": "L > N, F, C (*N, F, C > L); Geminates: GG (yy, ww), LL (ll, rr), NN (mm, nn), FF (ʃʃ), CC (gg, dd, bb, tt, ɟɟ)",
+          "pronunciation": "yy ww / ll rr / mm nn / sh-sh / gg dd bb tt jj",
           "context": "Nishiguchi (2004, p. 42, Ex. 9–13, citing Sasse 1974: 409 & Tosco 2001: 52 — only liquids strictly obey the sonority cooccurrence restriction) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Optimality Theory Constraint Ranking for Daasanach Consonant Assimilation & Deletion",
-          "translation": "Complex, Onset >> SyllCon",
+          "translation": "*Complex, Onset >> SyllCon; *CC_Obs, Max-C_son-IO, Faith-affix-IO >> Max-IO, Ident-IO",
+          "pronunciation": "maala / fuuɗɗa / tuunna / zaasanna / duuti / isu",
           "context": "Nishiguchi (2004, pp. 42–50, Ex. 14–18, 22, 31–34 & Tableaux 1–4) — *Complex, Onset >> SyllCon (Sec. 2); *C_ObsC_Obs (Sec. 3); *CC_Obs, Max-C_son-IO, Faith-affix-IO >> Max-IO, Ident-IO (Sec. 4) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         }
       ]
@@ -4041,15 +4247,15 @@
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         },
         {
-          "english": "Come",
-          "translation": "kade! / kári! / káɗe",
-          "pronunciation": "kade",
+          "english": "Come!",
+          "translation": "kade! / kári! / káɗe!",
+          "pronunciation": "ka-dhe",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Come",
-          "translation": "yimeðe 3sg",
-          "pronunciation": "yimeðe 3sg",
+          "english": "He comes (3sg.)",
+          "translation": "yimeðe / yimii",
+          "pronunciation": "yi-me-dhe / yi-mii",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -4060,125 +4266,146 @@
         },
         {
           "english": "Go",
-          "translation": "sasen; si / si / seðe",
-          "pronunciation": "textsasen",
+          "translation": "sasen / si / seðe",
+          "pronunciation": "sa-sen / si / se-dhe",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "Road",
-          "translation": "gerič / g’yeeric / g’íér-ic,; pl. g’íér-im",
-          "pronunciation": "gerič",
+          "translation": "gerič / g’yeeric / g’íér-ic (pl. g’íér-im)",
+          "pronunciation": "ge-rich",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "(YOU) enter",
           "translation": "həlaa (/həl + ta/)",
-          "pronunciation": "pl",
+          "pronunciation": "ha-laa",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
-          "english": "come",
+          "english": "come!",
           "translation": "kade!",
+          "pronunciation": "ka-de",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "come",
+          "english": "come!",
           "translation": "kári!",
+          "pronunciation": "ka-ri",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "come",
           "translation": "Raim",
+          "pronunciation": "raim",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "come",
           "translation": "qayImi",
+          "pronunciation": "qa-yi-mi",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "go",
           "translation": "sasen",
+          "pronunciation": "sa-sen",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "go",
           "translation": "si",
+          "pronunciation": "si",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "go",
-          "translation": "si",
+          "translation": "sí",
+          "pronunciation": "si",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "go",
           "translation": "seðe",
+          "pronunciation": "se-dhe",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "go",
           "translation": "se-eme",
+          "pronunciation": "se-e-me",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "good",
-          "translation": "mi d ap",
+          "translation": "midap",
+          "pronunciation": "mi-dap",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "good",
           "translation": "miðup",
+          "pronunciation": "mi-dhup",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "good",
           "translation": "miðáb",
+          "pronunciation": "mi-dhab",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "good",
+          "english": "pretty / good",
           "translation": "ɗabaan",
+          "pronunciation": "dha-baan",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "good",
+          "english": "pretty / good",
           "translation": "ɗabán",
+          "pronunciation": "dha-ban",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "road",
           "translation": "gerič",
+          "pronunciation": "ge-rich",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "road",
           "translation": "g’eeric",
+          "pronunciation": "gee-rich",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "road",
           "translation": "g’íér-ic",
+          "pronunciation": "gie-rich",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "road",
+          "english": "roads (plural)",
           "translation": "g’íér-im",
+          "pronunciation": "gie-rim",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "road",
           "translation": "ɠíeric",
+          "pronunciation": "gie-rich",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "To come",
           "translation": "imez",
+          "pronunciation": "i-mez",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "Path / Road",
           "translation": "chierich",
+          "pronunciation": "chie-rich",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         }
       ]
@@ -4220,7 +4447,8 @@
         },
         {
           "english": "To count / Measure grain",
-          "translation": "Ták /ak",
+          "translation": "Ták / Lak",
+          "pronunciation": "tak / lak",
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         }
       ]
@@ -4245,7 +4473,7 @@
         {
           "english": "Help us! / Come quickly!",
           "translation": "Káɗe! / Ɲiɲi gargaar!",
-          "pronunciation": "káe",
+          "pronunciation": "ka-dhe",
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         },
         {
@@ -4274,34 +4502,38 @@
         },
         {
           "english": "Kill",
-          "translation": "az = ās / s / yIs",
-          "pronunciation": "textaz textās",
+          "translation": "az / ās / yIs",
+          "pronunciation": "az / aas / yis",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
           "english": "You beat",
           "translation": "tuunna (/tuun + t + a/)",
-          "pronunciation": "sg",
+          "pronunciation": "tuun-na",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
           "english": "die",
           "translation": "kufe",
+          "pronunciation": "ku-fe",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "die",
           "translation": "kuf",
+          "pronunciation": "kuf",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "kill",
           "translation": "yIs",
+          "pronunciation": "yis",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "kill",
-          "translation": "es-: yeese",
+          "english": "kill (3sg.)",
+          "translation": "yeese",
+          "pronunciation": "yee-se",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         }
       ]
@@ -4332,7 +4564,7 @@
         {
           "english": "Morning / Sunrise",
           "translation": "Azu káɗe / Subax",
-          "pronunciation": "azu káe",
+          "pronunciation": "a-zu ka-dhe",
           "context": "CLDF ASJP v20 Wordlist DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0, https://asjp.clld.org/languages/DAASANACH)"
         },
         {
@@ -4366,9 +4598,9 @@
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
-          "english": "Warm",
-          "translation": "kul / kulláʔ hot",
-          "pronunciation": "kul",
+          "english": "Warm / Hot",
+          "translation": "kul / kulláʔ",
+          "pronunciation": "kul / kul-la",
           "context": "Dasanech Lexical Corpus (Tosco 2001 / Sasse 1982 / Blažek 2011, Folia Orientalia 48)"
         },
         {
@@ -4433,63 +4665,63 @@
           "context": "Blažek (2011, Comparative Table 'what' < *maʔ waha 'what thing' EC_B 146) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "Voice",
-          "translation": "labial: bilabial",
-          "pronunciation": "labial-bilabial",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): labial: bilabial (+ / -) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "english": "Voice / Speech / Word",
+          "translation": "ʔaf-u / ʔát",
+          "pronunciation": "ah-fuu",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "1 sg",
+          "english": "I (1st person singular pronoun)",
           "translation": "yú",
           "pronunciation": "yú",
           "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): yú • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "2 sg",
+          "english": "You (2nd person singular pronoun)",
           "translation": "kúuni",
           "pronunciation": "kúuni",
           "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): kúuni • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "1 pl. incl",
+          "english": "We (1st person plural inclusive pronoun)",
           "translation": "múuni",
           "pronunciation": "múuni",
           "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): múuni • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "1 pl. excl",
+          "english": "We (1st person plural exclusive pronoun)",
           "translation": "ɲíini",
-          "pronunciation": "íini",
+          "pronunciation": "nyii-ni",
           "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): ɲíini • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "2 pl",
+          "english": "You (2nd person plural pronoun)",
           "translation": "ʔitíni",
-          "pronunciation": "itíni",
+          "pronunciation": "i-ti-ni",
           "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): ʔitíni • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "I",
-          "translation": "(H) yu",
-          "pronunciation": "texthyu",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$yu • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "yu",
+          "pronunciation": "yu",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland yu • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "This",
-          "translation": "(H) yē/hē m./f",
-          "pronunciation": "texthyē",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$yē/hē m./f. • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "english": "This (masculine & feminine)",
+          "translation": "yē / hē",
+          "pronunciation": "yee / hee",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland yē/hē m./f. • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Thou",
-          "translation": "(H) kuno",
-          "pronunciation": "texthkuno",
-          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): $^{\\text{H}}$kuno • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
+          "translation": "kuno",
+          "pronunciation": "ku-no",
+          "context": "Václav Blažek, Dasanech Language – State-of-the-Art (Folia Orientalia Vol. 48, 2011): Haberland kuno • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
           "english": "Bone",
           "translation": "láf-iti / láf-u",
-          "pronunciation": "bone-láf-u",
+          "pronunciation": "laf-i-ti / laf-u",
           "context": "Václav Blažek, 'Dasanech Language – State-of-the-Art' (Folia Orientalia, Vol. 48, 2011, lines 122–338) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -4501,17 +4733,19 @@
         {
           "english": "To tear off for oneself",
           "translation": "isu (/it + su/)",
-          "pronunciation": "middle",
+          "pronunciation": "i-su",
           "context": "Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, OUKA DOI:10.18910/70792, Open Access)"
         },
         {
-          "english": "Sa láf-iti",
-          "translation": "bone láf-u",
+          "english": "Bone (singulative & plural)",
+          "translation": "láf-iti / láf-u",
+          "pronunciation": "laf-i-ti / laf-u",
           "context": "Václav Blažek, 'Dasanech Language – State-of-the-Art' (Folia Orientalia, Vol. 48, 2011, lines 122–338) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "Sa neti",
-          "translation": "ear nee",
+          "english": "Ear (singulative & base)",
+          "translation": "neti / nee",
+          "pronunciation": "ne-ti / nee",
           "context": "Václav Blažek, 'Dasanech Language – State-of-the-Art' (Folia Orientalia, Vol. 48, 2011, lines 122–338) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         }
       ]
@@ -4541,8 +4775,8 @@
         },
         {
           "english": "Six Historical Wordlists of Dasanech Compared in Blažek (2011) & Structure of Mauro Tosco (2001)",
-          "translation": "da Trento 1941",
-          "pronunciation": "da trento 1941",
+          "translation": "da Trento 1941, Haberland 1966, Fleming 1965/1971, Bender 1971, Sasse 1973–1982, Tosco 2001",
+          "pronunciation": "d’áasannæc",
           "context": "Václav Blažek (Folia Orientalia Vol. 48, 2011, lines 9–15, 120–335: 101-gloss table, 48 Abbreviations & 50 References) — da Trento 1941 (60 units) • Haberland 1966 (91) • Fleming 1965 (102) & 1971 (146) • Bender 1971 (97) • Sasse 1973–1982 (ca. 11 studies) • Tosco 2001 (c. 1,400 units, xiv + 598 pp. + 20 photos, € 65.45, ISBN 3-89645-064-6) • Cross-verified with CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -4554,506 +4788,607 @@
         {
           "english": "all",
           "translation": "luule",
+          "pronunciation": "luu-le",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "all",
           "translation": "luulli",
+          "pronunciation": "luul-li",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "all",
           "translation": "lulli",
+          "pronunciation": "lul-li",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bark",
           "translation": "bor",
+          "pronunciation": "bor",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bark",
           "translation": "buurte",
+          "pronunciation": "buur-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bark",
           "translation": "boorti",
+          "pronunciation": "boor-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bark",
           "translation": "boort-i",
+          "pronunciation": "boor-ti",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "big",
           "translation": "gudogà",
+          "pronunciation": "gu-do-ga",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "big",
           "translation": "gūdo",
+          "pronunciation": "guu-do",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "big",
           "translation": "guddo",
+          "pronunciation": "gud-do",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "big",
           "translation": "guddu",
+          "pronunciation": "gud-du",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bite",
           "translation": "g’inin",
+          "pronunciation": "gi-nin",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "bite",
           "translation": "gInIne",
+          "pronunciation": "gi-ni-ne",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "black",
           "translation": "oŋor",
+          "pronunciation": "o-ngor",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "burn",
           "translation": "dunay",
+          "pronunciation": "du-nay",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "burn",
           "translation": "duun-ay",
+          "pronunciation": "duu-nay",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "claw",
           "translation": "addo",
+          "pronunciation": "ad-do",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "claw",
-          "translation": "hoof",
+          "english": "Claw / Hoof",
+          "translation": "kònòf",
+          "pronunciation": "ko-nof",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "claw",
           "translation": "konof",
+          "pronunciation": "ko-nof",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "claw",
-          "translation": "finger",
+          "english": "Claw / Finger",
+          "translation": "konof (gənif)",
+          "pronunciation": "ko-nof",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "cold",
           "translation": "ḍen",
+          "pronunciation": "dhen",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "cold",
           "translation": "deeɲ",
+          "pronunciation": "deeny",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "cold",
           "translation": "ʔabbúnab",
+          "pronunciation": "ab-bu-nab",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "dry",
           "translation": "gogo",
+          "pronunciation": "go-go",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "dry",
           "translation": "gogɔy",
+          "pronunciation": "go-goy",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "dry",
           "translation": "gogu",
+          "pronunciation": "go-gu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "fly n",
+          "english": "fly (insect)",
           "translation": "kiiðin",
+          "pronunciation": "kii-dhin",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "fly n",
+          "english": "fly (insect)",
           "translation": "kiiðiɲ",
+          "pronunciation": "kii-dhiny",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "give",
           "translation": "šiyɛ",
+          "pronunciation": "shi-ye",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "give",
           "translation": "šii-š",
+          "pronunciation": "shiish",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "horn",
           "translation": "gas",
+          "pronunciation": "gas",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "horn",
           "translation": "gaaso",
+          "pronunciation": "gaa-so",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "horn",
           "translation": "gáas",
+          "pronunciation": "gaas",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "know",
           "translation": "iàarghe",
+          "pronunciation": "ya-ar-ge",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "know",
           "translation": "onn",
+          "pronunciation": "onn",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "know",
           "translation": "ʔok",
+          "pronunciation": "ok",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "(be) long",
           "translation": "dir",
+          "pronunciation": "dir",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "(be) long",
-          "translation": "dI rr",
+          "translation": "dIrr",
+          "pronunciation": "dirr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "name",
           "translation": "maaya",
+          "pronunciation": "maa-ya",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "new",
           "translation": "kaana",
+          "pronunciation": "kaa-na",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "red",
           "translation": "bur",
+          "pronunciation": "bur",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "red",
-          "translation": "bu rr",
+          "translation": "burr",
+          "pronunciation": "burr",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "say",
-          "translation": "toconàchi",
+          "translation": "toconàchiror",
+          "pronunciation": "to-co-na-chi-ror",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "say",
-          "translation": "ror",
+          "translation": "yeeðe (3sg.) / ʔát!",
+          "pronunciation": "yee-dhe / at",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "see",
           "translation": "argiiyɛ",
+          "pronunciation": "ar-gii-ye",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "see",
           "translation": "ilid",
+          "pronunciation": "i-lid",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sit",
           "translation": "ledik",
+          "pronunciation": "le-dik",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sit",
           "translation": "ɛledi",
+          "pronunciation": "e-le-di",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sit",
           "translation": "dik",
+          "pronunciation": "dik",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sleep",
           "translation": "raf",
+          "pronunciation": "raf",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sleep",
           "translation": "ḍin",
+          "pronunciation": "dhin",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sleep",
           "translation": "ḍine",
+          "pronunciation": "dhi-ne",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sleep",
           "translation": "ɗiin-ik",
+          "pronunciation": "dhiin-ik",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "sleep",
           "translation": "ɗínaʔ",
+          "pronunciation": "dhi-na",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "small",
           "translation": "eninigà",
+          "pronunciation": "e-ni-ni-ga",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "small",
           "translation": "níní",
+          "pronunciation": "ni-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "small",
           "translation": "ninɛn",
+          "pronunciation": "ni-nen",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "small",
           "translation": "niini",
+          "pronunciation": "nii-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "small",
           "translation": "nini",
+          "pronunciation": "ni-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "small",
+          "english": "small (plural)",
           "translation": "nigini",
+          "pronunciation": "ni-gi-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "small",
           "translation": "níni",
+          "pronunciation": "ni-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "small",
+          "english": "small (plural)",
           "translation": "nigginí",
+          "pronunciation": "nig-gi-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "stand",
           "translation": "aligIdi",
+          "pronunciation": "a-li-gi-di",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "stand",
           "translation": "yáal",
+          "pronunciation": "yaal",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "stand",
+          "english": "stand / get up",
           "translation": "ke-em",
+          "pronunciation": "ke-em",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "swim",
           "translation": "aðaanða",
+          "pronunciation": "a-dhaan-dha",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "swim",
           "translation": "ðaanða",
+          "pronunciation": "dhaan-dha",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tail",
           "translation": "waas",
+          "pronunciation": "waas",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "tail",
           "translation": "wáas",
+          "pronunciation": "waas",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "tail",
+          "english": "back / tail",
           "translation": "sugo",
+          "pronunciation": "su-go",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "tail",
+          "english": "back / tail",
           "translation": "sugu",
+          "pronunciation": "su-gu",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "thin",
           "translation": "dáɗab",
+          "pronunciation": "da-dhab",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "this",
-          "translation": "yē/hē m./f",
+          "english": "this (masculine & feminine)",
+          "translation": "yē / hē",
+          "pronunciation": "yee / hee",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "this",
           "translation": "ello",
+          "pronunciation": "el-lo",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "this",
           "translation": "ela",
+          "pronunciation": "e-la",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "thou",
           "translation": "kuno",
+          "pronunciation": "ku-no",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "thou",
           "translation": "kuˑni",
+          "pronunciation": "kuu-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "thou",
           "translation": "kuuni",
+          "pronunciation": "kuu-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "thou",
           "translation": "kúúni",
+          "pronunciation": "kuu-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "thou",
           "translation": "kúun-i",
+          "pronunciation": "kuu-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "we",
+          "english": "we (exclusive)",
           "translation": "ńiina",
+          "pronunciation": "nyii-na",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "we",
-          "translation": "ɲiini excl",
+          "english": "we (exclusive)",
+          "translation": "ɲiini",
+          "pronunciation": "nyii-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "we",
+          "english": "we (inclusive)",
           "translation": "múúni",
+          "pronunciation": "muu-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "we",
-          "translation": "múuni incl",
+          "english": "we (inclusive)",
+          "translation": "múuni",
+          "pronunciation": "muu-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "wet",
           "translation": "nyuraan",
+          "pronunciation": "nyu-raan",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "wet",
           "translation": "ɲuru",
+          "pronunciation": "nyu-ru",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "wet",
-          "translation": "weak",
+          "english": "Wet / Weak",
+          "translation": "ɲuru (nyuraan)",
+          "pronunciation": "nyu-ru",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "what",
           "translation": "mete",
+          "pronunciation": "me-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "what",
           "translation": "meyte",
+          "pronunciation": "mey-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "what",
           "translation": "méete",
+          "pronunciation": "mee-te",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "white",
+          "english": "white (plural)",
           "translation": "ʔéegeð",
+          "pronunciation": "ee-gedh",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "who",
           "translation": "maya",
+          "pronunciation": "ma-ya",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "who",
           "translation": "maaya",
+          "pronunciation": "maa-ya",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "who",
           "translation": "máaya",
+          "pronunciation": "maa-ya",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ye",
           "translation": "itini",
+          "pronunciation": "i-ti-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "ye",
           "translation": "ʔitíni",
+          "pronunciation": "i-ti-ni",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "yellow",
           "translation": "ráar",
+          "pronunciation": "raar",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
-          "english": "yellow",
+          "english": "yellow (plural)",
           "translation": "ráagar",
+          "pronunciation": "raa-gar",
           "context": "Václav Blažek, Dasanech Language: State of the Art (Folia Orientalia 48, 2011)"
         },
         {
           "english": "I (1sg pronoun)",
           "translation": "yu",
+          "pronunciation": "yu",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "You (2sg pronoun)",
           "translation": "kuni",
+          "pronunciation": "ku-ni",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         },
         {
           "english": "We (1pl pronoun)",
           "translation": "nyinyi",
+          "pronunciation": "nyi-nyi",
           "context": "CLDF ASJP v20 Wordlist (DAASANACH, CC-BY-4.0)"
         }
       ]

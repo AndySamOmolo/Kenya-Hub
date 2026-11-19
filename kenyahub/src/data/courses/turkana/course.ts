@@ -764,9 +764,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "4th month of the traditional Turkana calendar; marks wet season rains and lush grass. (Barton 1921)"
           },
           {
-            "target": "Erwait (pl. ngurwa)",
-            "source": "Day",
-            "pronunciation": "erwait"
+            "target": "Yeliyel",
+            "source": "May",
+            "pronunciation": "ye-li-yel",
+            "hint": "5th month of the traditional Turkana calendar. (Barton 1921)"
           },
           {
             "target": "Lopo",
@@ -929,25 +930,25 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Naparan",
             "source": "Midday",
-            "pronunciation": "na-pa-ran / ewi a-ko-lon",
+            "pronunciation": "na-pa-ran",
             "hint": "Midday when the sun is directly overhead. (Barton 1921)"
           },
           {
             "target": "Ewi akolon",
             "source": "Noon",
-            "pronunciation": "na-pa-ran / ewi a-ko-lon",
+            "pronunciation": "e-wi a-ko-lon",
             "hint": "Midday when the sun is directly overhead. (Barton 1921)"
           },
           {
             "target": "Ebon",
             "source": "Afternoon",
-            "pronunciation": "e-bon / e-bong",
+            "pronunciation": "e-bon",
             "hint": "Late afternoon approaching dusk. (Barton 1921)"
           },
           {
             "target": "Ebong",
             "source": "Evening",
-            "pronunciation": "e-bon / e-bong",
+            "pronunciation": "e-bong",
             "hint": "Late afternoon approaching dusk. (Barton 1921)"
           },
           {
@@ -1295,37 +1296,37 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Etunganan",
             "source": "Person",
-            "pronunciation": "e-tunga-nan / e-tonga-nan",
+            "pronunciation": "e-tu-nga-nan",
             "hint": "Human being or person. Plural: Ngitunga (people). (Barton 1921)"
           },
           {
             "target": "Etonganan (pl. ngitunga)",
             "source": "Mankind",
-            "pronunciation": "e-tunga-nan / e-tonga-nan",
+            "pronunciation": "e-to-nga-nan",
             "hint": "Human being or person. Plural: Ngitunga (people). (Barton 1921)"
           },
           {
             "target": "Ekili",
             "source": "Man",
-            "pronunciation": "e-ki-li / e'ki-li",
+            "pronunciation": "e-ki-li",
             "hint": "Adult male or warrior. Plural: Ngiliok. (Barton 1921)"
           },
           {
             "target": "E'kili (pl. ngiliok)",
             "source": "Male",
-            "pronunciation": "e-ki-li / e'ki-li",
+            "pronunciation": "e'ki-li",
             "hint": "Adult male or warrior. Plural: Ngiliok. (Barton 1921)"
           },
           {
             "target": "Abero",
             "source": "Woman",
-            "pronunciation": "a-be-ro / a'be-ro",
+            "pronunciation": "a-be-ro",
             "hint": "Adult female or woman. Plural: Ngabero. (Barton 1921)"
           },
           {
             "target": "A'bero (pl. ngabero)",
             "source": "Female",
-            "pronunciation": "a-be-ro / a'be-ro",
+            "pronunciation": "a'be-ro",
             "hint": "Adult female or woman. Plural: Ngabero. (Barton 1921)"
           },
           {
@@ -1349,25 +1350,25 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Edit",
             "source": "Son",
-            "pronunciation": "e-dit / lo-ko-ku",
+            "pronunciation": "e-dit",
             "hint": "Male child or youth. (Barton 1921)"
           },
           {
             "target": "Lokoku",
             "source": "Young boy",
-            "pronunciation": "e-dit / lo-ko-ku",
+            "pronunciation": "lo-ko-ku",
             "hint": "Male child or youth. (Barton 1921)"
           },
           {
             "target": "Apethe",
             "source": "Daughter",
-            "pronunciation": "a-pethe / a-pe-se",
+            "pronunciation": "a-pe-the",
             "hint": "Girl or unmarried daughter. (Barton 1921)"
           },
           {
             "target": "Apese",
             "source": "Girl",
-            "pronunciation": "a-pethe / a-pe-se",
+            "pronunciation": "a-pe-se",
             "hint": "Girl or unmarried daughter. (Barton 1921)"
           },
           {
@@ -1578,13 +1579,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Ekasiko",
             "source": "Old man",
-            "pronunciation": "e-ka-si-ko / a-ka-si-kot",
+            "pronunciation": "e-ka-si-ko",
             "hint": "Respected elder in traditional age-set hierarchy. (Barton 1921)"
           },
           {
             "target": "Akasikot",
             "source": "Elder",
-            "pronunciation": "e-ka-si-ko / a-ka-si-kot",
+            "pronunciation": "a-ka-si-kot",
             "hint": "Respected elder in traditional age-set hierarchy. (Barton 1921)"
           },
           {
@@ -1596,13 +1597,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Akarachonait",
             "source": "Young warrior",
-            "pronunciation": "a-ka-racho-nait / e-ka-su-ra-ni",
+            "pronunciation": "a-ka-ra-cho-nait",
             "hint": "Initiated young pastoral warrior of the age-grade. (Barton 1921)"
           },
           {
             "target": "Ekasurani",
             "source": "Youth",
-            "pronunciation": "a-ka-racho-nait / e-ka-su-ra-ni",
+            "pronunciation": "e-ka-su-ra-ni",
             "hint": "Initiated young pastoral warrior of the age-grade. (Barton 1921)"
           },
           {
@@ -1614,46 +1615,50 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Eirkatungan",
             "source": "Chief",
-            "pronunciation": "eirka-tungan / e-ro-toit",
+            "pronunciation": "eir-ka-tu-ngan",
             "hint": "Community leader, raid scout, or prominent elder. (Barton 1921)"
           },
           {
             "target": "Erotoit",
             "source": "Leader",
-            "pronunciation": "eirka-tungan / e-ro-toit",
+            "pronunciation": "e-ro-toit",
             "hint": "Community leader, raid scout, or prominent elder. (Barton 1921)"
           },
           {
             "target": "Ebayunan",
             "source": "Guest",
-            "pronunciation": "e-ba-yu-nan / e-pe-yo-non",
+            "pronunciation": "e-ba-yu-nan",
             "hint": "Traveller or visiting guest hosted at the kraal. (Barton 1921)"
           },
           {
             "target": "Epeyonon",
             "source": "Stranger",
-            "pronunciation": "e-ba-yu-nan / e-pe-yo-non",
+            "pronunciation": "e-pe-yo-non",
             "hint": "Traveller or visiting guest hosted at the kraal. (Barton 1921)"
           },
           {
-            "target": "edit",
-            "source": "Son",
-            "pronunciation": "edit"
+            "target": "Akamuranika (pl. ngamurak)",
+            "source": "Mother-in-law",
+            "pronunciation": "a-ka-mu-ra-ni-ka",
+            "hint": "Mother-in-law. (Barton 1921)"
           },
           {
-            "target": "ikoko",
-            "source": "Baby",
-            "pronunciation": "ikoko"
+            "target": "Emorothi (pl. ngemoroka)",
+            "source": "Neighbour",
+            "pronunciation": "e-mo-ro-thi",
+            "hint": "Neighbouring homestead resident. (Barton 1921)"
           },
           {
-            "target": "atageri",
+            "target": "Atageri (pl. ngatagerin)",
             "source": "Clan",
-            "pronunciation": "atageri"
+            "pronunciation": "a-ta-ge-ri",
+            "hint": "Exogamous patrilineal clan. (Barton 1921)"
           },
           {
-            "target": "apethi",
-            "source": "Girl",
-            "pronunciation": "apethi"
+            "target": "Ebusorut (pl. ngebusorito)",
+            "source": "Widow",
+            "pronunciation": "e-bu-so-rut",
+            "hint": "Widow. (Barton 1921)"
           }
         ],
         "sentences": [
@@ -2625,10 +2630,22 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Livestock tick. (Barton 1921)"
           },
           {
-            "target": "Oūū (coll. bees)",
-            "source": "Bee",
-            "pronunciation": "ouu",
+            "target": "Oūū",
+            "source": "Bee (collective: bees)",
+            "pronunciation": "o-uu",
             "hint": "Wild honeybee swarms. (Barton 1921)"
+          },
+          {
+            "target": "Atapeng / Akukor (pl. ngatapengo / ngakukoroi)",
+            "source": "Chicken / Fowl",
+            "pronunciation": "a-ta-peng / a-ku-kor",
+            "hint": "Domestic fowl. (Barton 1921)"
+          },
+          {
+            "target": "Apoo (pl. ngapooi)",
+            "source": "Hare / Rabbit",
+            "pronunciation": "a-poo",
+            "hint": "Savannah hare. (Barton 1921)"
           }
         ],
         "sentences": [
@@ -2730,13 +2747,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Angalul",
             "source": "River",
-            "pronunciation": "anga-lul / ango-lul",
+            "pronunciation": "a-nga-lul",
             "hint": "Permanent or seasonal river channel. (Barton 1921)"
           },
           {
             "target": "Angolul (pl. ngangolulio)",
             "source": "Stream",
-            "pronunciation": "anga-lul / ango-lul",
+            "pronunciation": "a-ngo-lul",
             "hint": "Permanent or seasonal river channel. (Barton 1921)"
           },
           {
@@ -2760,13 +2777,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Aro",
             "source": "Plain",
-            "pronunciation": "aro / e-tot",
+            "pronunciation": "a-ro",
             "hint": "Vast open arid plain. (Barton 1921)"
           },
           {
             "target": "Etot",
             "source": "Savannah",
-            "pronunciation": "aro / e-tot",
+            "pronunciation": "e-tot",
             "hint": "Vast open arid plain. (Barton 1921)"
           },
           {
@@ -2800,9 +2817,10 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Bright morning planet Venus visible before sunrise. (Barton 1921)"
           },
           {
-            "target": "akuich, God",
-            "source": "Sky",
-            "pronunciation": "akuich god"
+            "target": "Ayonay (pl. ngiyonay)",
+            "source": "Dry riverbed (Laga)",
+            "pronunciation": "a-yo-nay",
+            "hint": "Seasonal sandy riverbed where subsurface wells are dug. (Barton 1921)"
           }
         ],
         "sentences": [
@@ -2888,13 +2906,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Akuich",
             "source": "Sky",
-            "pronunciation": "a-kuich / a-kuj",
+            "pronunciation": "a-kuich",
             "hint": "The vault of heaven and celestial abode of God. (Barton 1921)"
           },
           {
             "target": "Akuj",
             "source": "Heaven",
-            "pronunciation": "a-kuich / a-kuj",
+            "pronunciation": "a-kuj",
             "hint": "The vault of heaven and celestial abode of God. (Barton 1921)"
           },
           {
@@ -2930,13 +2948,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Elup",
             "source": "Earth",
-            "pronunciation": "e-lup / nga-lup",
+            "pronunciation": "e-lup",
             "hint": "Soil and ground surface. (Barton 1921)"
           },
           {
             "target": "Ngalup",
             "source": "Soil",
-            "pronunciation": "e-lup / nga-lup",
+            "pronunciation": "nga-lup",
             "hint": "Soil and ground surface. (Barton 1921)"
           },
           {
@@ -2954,13 +2972,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Ebur",
             "source": "Rock pool",
-            "pronunciation": "e-bur / ejwa",
+            "pronunciation": "e-bur",
             "hint": "Natural rock pool or perennial freshwater spring. (Barton 1921)"
           },
           {
             "target": "Ejwa",
             "source": "Spring",
-            "pronunciation": "e-bur / ejwa",
+            "pronunciation": "e-jwa",
             "hint": "Natural rock pool or perennial freshwater spring. (Barton 1921)"
           },
           {
@@ -3145,13 +3163,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Amel",
             "source": "Grass",
-            "pronunciation": "a-mel / a-me-lu",
+            "pronunciation": "a-mel",
             "hint": "Fresh tender pasture for cattle and sheep. (Barton 1921)"
           },
           {
             "target": "Amelu",
             "source": "Pasture",
-            "pronunciation": "a-mel / a-me-lu",
+            "pronunciation": "a-me-lu",
             "hint": "Fresh tender pasture for cattle and sheep. (Barton 1921)"
           },
           {
@@ -3163,19 +3181,20 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Akwap",
             "source": "Land",
-            "pronunciation": "akwap / akwop",
+            "pronunciation": "a-kwap",
             "hint": "Ancestral homeland or territory. (Barton 1921)"
           },
           {
             "target": "Akwop (pl. ngakwapa)",
             "source": "Country",
-            "pronunciation": "akwap / akwop",
+            "pronunciation": "a-kwop",
             "hint": "Ancestral homeland or territory. (Barton 1921)"
           },
           {
-            "target": "akolon",
-            "source": "Sun",
-            "pronunciation": "akolon"
+            "target": "Achokor (pl. ngachokoritho)",
+            "source": "Grazing ground",
+            "pronunciation": "a-cho-kor",
+            "hint": "Open grazing pastureland. (Barton 1921)"
           }
         ],
         "sentences": [
@@ -3681,13 +3700,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Emargoit",
             "source": "Fingernail",
-            "pronunciation": "e-margoit / e-ma-ga-rit",
+            "pronunciation": "e-mar-goit",
             "hint": "Fingernail, claw, or animal hoof. (Barton 1921)"
           },
           {
             "target": "Emagarit (pl. ngemagor)",
             "source": "Claw",
-            "pronunciation": "e-margoit / e-ma-ga-rit",
+            "pronunciation": "e-ma-ga-rit",
             "hint": "Fingernail, claw, or animal hoof. (Barton 1921)"
           },
           {
@@ -3705,13 +3724,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Adapal akeju",
             "source": "Foot",
-            "pronunciation": "a-da-pal a-ke-ju / e-tou ya ke-ju",
+            "pronunciation": "a-da-pal a-ke-ju",
             "hint": "Sole of foot. (Barton 1921)"
           },
           {
             "target": "Etou ya keju",
             "source": "Sole",
-            "pronunciation": "a-da-pal a-ke-ju / e-tou ya ke-ju",
+            "pronunciation": "e-tou ya ke-ju",
             "hint": "Sole of foot. (Barton 1921)"
           },
           {
@@ -3735,13 +3754,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Akwan (pl. ngouwat)",
             "source": "Body",
-            "pronunciation": "akwan / a-ki-rin",
+            "pronunciation": "a-kwan",
             "hint": "Human body or flesh. (Barton 1921)"
           },
           {
             "target": "Akirin (pl. ngakir)",
             "source": "Flesh",
-            "pronunciation": "akwan / a-ki-rin",
+            "pronunciation": "a-ki-rin",
             "hint": "Human body or flesh. (Barton 1921)"
           },
           {
@@ -3918,15 +3937,15 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Sour fermented milk curd, a dietary staple. (Barton 1921)"
           },
           {
-            "target": "Akimet",
+            "target": "Akimet (pl. ngakajonon)",
             "source": "Butter",
             "pronunciation": "a-ki-met",
             "hint": "Clarified butter or melted fat. (Barton 1921)"
           },
           {
-            "target": "ngameta)",
-            "source": "Ghee",
-            "pronunciation": "a-ki-met",
+            "target": "Ngameta",
+            "source": "Ghee / Clarified fat",
+            "pronunciation": "nga-me-ta",
             "hint": "Clarified butter or melted fat. (Barton 1921)"
           },
           {
@@ -3944,13 +3963,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Mumwa",
             "source": "Millet",
-            "pronunciation": "mumwa / ngi-mumwa",
+            "pronunciation": "mu-mwa",
             "hint": "Drought-hardy sorghum grain cultivated in river floodplains. (Barton 1921)"
           },
           {
             "target": "Ngimumwa",
             "source": "Sorghum (grain)",
-            "pronunciation": "mumwa / ngi-mumwa",
+            "pronunciation": "ngi-mu-mwa",
             "hint": "Drought-hardy sorghum grain cultivated in river floodplains. (Barton 1921)"
           },
           {
@@ -4286,79 +4305,79 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Ouwi",
             "source": "Homestead",
-            "pronunciation": "ou-wi / na-wi",
+            "pronunciation": "ou-wi",
             "hint": "Nomadic pastoral kraal and family settlement. (Barton 1921)"
           },
           {
             "target": "Nawi",
             "source": "Village",
-            "pronunciation": "ou-wi / na-wi",
+            "pronunciation": "na-wi",
             "hint": "Nomadic pastoral kraal and family settlement. (Barton 1921)"
           },
           {
             "target": "Akie",
             "source": "House",
-            "pronunciation": "a-kie / a-kai",
+            "pronunciation": "a-kie",
             "hint": "Domed sleeping shelter framed with bent branches and thatched. (Barton 1921)"
           },
           {
             "target": "Akai",
             "source": "Family hut",
-            "pronunciation": "a-kie / a-kai",
+            "pronunciation": "a-kai",
             "hint": "Domed sleeping shelter framed with bent branches and thatched. (Barton 1921)"
           },
           {
-            "target": "Akidor",
+            "target": "Akidor (pl. ngidorin)",
             "source": "Door",
             "pronunciation": "a-ki-dor",
             "hint": "Entrance gate in the thorn bush perimeter of the kraal. (Barton 1921)"
           },
           {
-            "target": "ngikidoria)",
+            "target": "Ekidor (pl. ngikidoria)",
             "source": "Kraal gate",
-            "pronunciation": "a-ki-dor",
+            "pronunciation": "e-ki-dor",
             "hint": "Entrance gate in the thorn bush perimeter of the kraal. (Barton 1921)"
           },
           {
             "target": "Anuk",
             "source": "Cattle kraal",
-            "pronunciation": "a-nuk / a-nok",
+            "pronunciation": "a-nuk",
             "hint": "Thorn barrier enclosing livestock overnight. (Barton 1921)"
           },
           {
             "target": "Anok",
             "source": "Enclosure",
-            "pronunciation": "a-nuk / a-nok",
+            "pronunciation": "a-nok",
             "hint": "Thorn barrier enclosing livestock overnight. (Barton 1921)"
           },
           {
             "target": "Achokor (pl. ngachokoritho)",
             "source": "Grazing ground",
-            "pronunciation": "acho-kor",
+            "pronunciation": "a-cho-kor",
             "hint": "Designated pasture territory for herds. (Barton 1921)"
           },
           {
             "target": "Ipem",
             "source": "Bed",
-            "pronunciation": "i-pem / e-pem",
+            "pronunciation": "i-pem",
             "hint": "Raised wooden platform bed. (Barton 1921)"
           },
           {
             "target": "Epem",
             "source": "Sleeping mat",
-            "pronunciation": "i-pem / e-pem",
+            "pronunciation": "e-pem",
             "hint": "Raised wooden platform bed. (Barton 1921)"
           },
           {
             "target": "Ekijolon",
             "source": "Carved headrest",
-            "pronunciation": "e-ki-jo-lon / e-kicho-long",
+            "pronunciation": "e-ki-jo-lon",
             "hint": "Iconic carved wooden headrest carried everywhere by Turkana men. (Barton 1921)"
           },
           {
             "target": "Ekicholong",
             "source": "Stool",
-            "pronunciation": "e-ki-jo-lon / e-kicho-long",
+            "pronunciation": "e-ki-cho-long",
             "hint": "Iconic carved wooden headrest carried everywhere by Turkana men. (Barton 1921)"
           },
           {
@@ -4370,25 +4389,25 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Etu",
             "source": "Calabash",
-            "pronunciation": "etu / itu",
+            "pronunciation": "e-tu",
             "hint": "Dried gourd vessel used for churning and drinking milk. (Barton 1921)"
           },
           {
             "target": "Itu",
             "source": "Milk gourd",
-            "pronunciation": "etu / itu",
+            "pronunciation": "i-tu",
             "hint": "Dried gourd vessel used for churning and drinking milk. (Barton 1921)"
           },
           {
             "target": "Edera",
             "source": "Half gourd",
-            "pronunciation": "e-de-ra / e-bo-li",
+            "pronunciation": "e-de-ra",
             "hint": "Hemispherical gourd cup. (Barton 1921)"
           },
           {
             "target": "Eboli",
             "source": "Drinking cup",
-            "pronunciation": "e-de-ra / e-bo-li",
+            "pronunciation": "e-bo-li",
             "hint": "Hemispherical gourd cup. (Barton 1921)"
           },
           {
@@ -4768,8 +4787,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Echui (pl. ngechuin)",
             "source": "Skin pouch / Bag",
-            "pronunciation": "echui",
+            "pronunciation": "e-chui",
             "hint": "Leather carrying pouch. (Barton 1921)"
+          },
+          {
+            "target": "Echiro (pl. ngichiroi)",
+            "source": "Market",
+            "pronunciation": "e-chi-ro",
+            "hint": "Trading place or market center. (Barton 1921)"
           }
         ],
         "sentences": [
@@ -5127,13 +5152,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Ewuno",
             "source": "Animal snare",
-            "pronunciation": "e-wu-no / a-loit",
+            "pronunciation": "e-wu-no",
             "hint": "Noose snare or pitfall trap for wild game. (Barton 1921)"
           },
           {
             "target": "Aloit",
             "source": "Trap",
-            "pronunciation": "e-wu-no / a-loit",
+            "pronunciation": "a-loit",
             "hint": "Noose snare or pitfall trap for wild game. (Barton 1921)"
           }
         ],
@@ -5332,25 +5357,25 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Erari",
             "source": "To hear",
-            "pronunciation": "e-ra-ri / era",
+            "pronunciation": "e-ra-ri",
             "hint": "Listen or perceive sound. Present: 'Erari ayon' (I hear). (Barton 1921)"
           },
           {
             "target": "Era",
-            "source": "listen",
-            "pronunciation": "e-ra-ri / era",
+            "source": "To listen",
+            "pronunciation": "e-ra",
             "hint": "Listen or perceive sound. Present: 'Erari ayon' (I hear). (Barton 1921)"
           },
           {
             "target": "Erworo",
             "source": "To speak",
-            "pronunciation": "erwo-ro / a-kirwor",
+            "pronunciation": "er-wo-ro",
             "hint": "Speak in words or talk together. (Barton 1921)"
           },
           {
             "target": "Akirwor",
-            "source": "talk",
-            "pronunciation": "erwo-ro / a-kirwor",
+            "source": "To talk",
+            "pronunciation": "a-kir-wor",
             "hint": "Speak in words or talk together. (Barton 1921)"
           },
           {
@@ -5368,13 +5393,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Eboigini",
             "source": "To sit",
-            "pronunciation": "e-boi-gi-ni / a-boi-ki-ni",
+            "pronunciation": "e-boi-gi-ni",
             "hint": "Sit down or settle in an area. (Barton 1921)"
           },
           {
             "target": "Aboikini",
-            "source": "dwell",
-            "pronunciation": "e-boi-gi-ni / a-boi-ki-ni",
+            "source": "To dwell",
+            "pronunciation": "a-boi-ki-ni",
             "hint": "Sit down or settle in an area. (Barton 1921)"
           }
         ],
@@ -5525,49 +5550,49 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Alemari",
             "source": "To take",
-            "pronunciation": "a-le-ma-ri / a-tachi",
+            "pronunciation": "a-le-ma-ri",
             "hint": "Pick up or accept. (Barton 1921)"
           },
           {
             "target": "Atachi",
-            "source": "receive",
-            "pronunciation": "a-le-ma-ri / a-tachi",
+            "source": "To receive",
+            "pronunciation": "a-ta-chi",
             "hint": "Pick up or accept. (Barton 1921)"
           },
           {
             "target": "Arami",
             "source": "To hit",
-            "pronunciation": "a-ra-mi / ka-ram",
+            "pronunciation": "a-ra-mi",
             "hint": "Strike with club or stick. Passive: 'Karamitai ayon' (I am struck). (Barton 1921)"
           },
           {
             "target": "Karam",
-            "source": "beat",
-            "pronunciation": "a-ra-mi / ka-ram",
+            "source": "To beat",
+            "pronunciation": "ka-ram",
             "hint": "Strike with club or stick. Passive: 'Karamitai ayon' (I am struck). (Barton 1921)"
           },
           {
             "target": "Ari",
             "source": "To kill",
-            "pronunciation": "ari",
+            "pronunciation": "a-ri",
             "hint": "Kill or dispatch an animal. (Barton 1921)"
           },
           {
             "target": "Achomi",
             "source": "To spear",
-            "pronunciation": "acho-mi / echo-mi",
+            "pronunciation": "a-cho-mi",
             "hint": "Strike with spear blade. (Barton 1921)"
           },
           {
             "target": "Echomi",
-            "source": "stab",
-            "pronunciation": "acho-mi / echo-mi",
+            "source": "To stab",
+            "pronunciation": "e-cho-mi",
             "hint": "Strike with spear blade. (Barton 1921)"
           },
           {
             "target": "Igi / Ajori",
             "source": "To fight",
-            "pronunciation": "igi / a-jo-ri",
+            "pronunciation": "i-gi / a-jo-ri",
             "hint": "Fight in combat or cattle defense. (Barton 1921)"
           },
           {
@@ -5579,25 +5604,25 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Adungi",
             "source": "To cut",
-            "pronunciation": "a-dungi / a-dongai",
+            "pronunciation": "a-du-ngi",
             "hint": "Cut. Reduplicative: 'Adungi-dungi' (chop into small pieces). (Barton 1921)"
           },
           {
             "target": "Adongai",
-            "source": "chop",
-            "pronunciation": "a-dungi / a-dongai",
+            "source": "To chop",
+            "pronunciation": "a-do-ngai",
             "hint": "Cut. Reduplicative: 'Adungi-dungi' (chop into small pieces). (Barton 1921)"
           },
           {
             "target": "Elatari",
             "source": "To wash",
-            "pronunciation": "e-la-ta-ri / a-lo-ta-ri",
+            "pronunciation": "e-la-ta-ri",
             "hint": "Wash with water. 'Elatari ngakan' (wash hands). (Barton 1921)"
           },
           {
             "target": "Alotari",
-            "source": "clean",
-            "pronunciation": "e-la-ta-ri / a-lo-ta-ri",
+            "source": "To clean",
+            "pronunciation": "a-lo-ta-ri",
             "hint": "Wash with water. 'Elatari ngakan' (wash hands). (Barton 1921)"
           },
           {
@@ -5758,13 +5783,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Alachari",
             "source": "To untie",
-            "pronunciation": "a-lacha-ri / a-la-ka-ri",
+            "pronunciation": "a-la-cha-ri",
             "hint": "Release or untie. (Barton 1921)"
           },
           {
             "target": "Alakari",
-            "source": "loosen",
-            "pronunciation": "a-lacha-ri / a-la-ka-ri",
+            "source": "To loosen",
+            "pronunciation": "a-la-ka-ri",
             "hint": "Release or untie. (Barton 1921)"
           },
           {
@@ -5776,13 +5801,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Aiyoki",
             "source": "To graze",
-            "pronunciation": "ai-yo-ki / e-yo-gi",
+            "pronunciation": "ai-yo-ki",
             "hint": "Drive stock out to pasture. (Barton 1921)"
           },
           {
             "target": "Eyogi",
-            "source": "herd",
-            "pronunciation": "ai-yo-ki / e-yo-gi",
+            "source": "To herd",
+            "pronunciation": "e-yo-gi",
             "hint": "Drive stock out to pasture. (Barton 1921)"
           },
           {
@@ -5800,13 +5825,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Achami",
             "source": "To like",
-            "pronunciation": "acha-mi / ache-mi",
+            "pronunciation": "a-cha-mi",
             "hint": "Assent, like, love, or desire. (Barton 1921)"
           },
           {
             "target": "Achemi",
-            "source": "love",
-            "pronunciation": "acha-mi / ache-mi",
+            "source": "To love",
+            "pronunciation": "a-che-mi",
             "hint": "Assent, like, love, or desire. (Barton 1921)"
           },
           {
@@ -5985,6 +6010,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Enquiring someone's identity. (Barton 1921)"
           },
           {
+            "target": "Ekiro kang erai...",
+            "source": "My name is...",
+            "pronunciation": "e-ki-ro kang e-rai",
+            "hint": "Stating one's personal name. (Barton 1921)"
+          },
+          {
             "target": "Alothi ai? / Ilotit iwon ai?",
             "source": "Where are you going?",
             "pronunciation": "a-lothi ai / i-lo-tit i-won ai",
@@ -5992,14 +6023,14 @@ export const TURKANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Eyyey ngeth?",
-            "source": "Where is he",
-            "pronunciation": "eyyey ngeth / ali ngeth",
+            "source": "Where is he?",
+            "pronunciation": "ey-yey ngeth",
             "hint": "Asking the location of a person. (Barton 1921)"
           },
           {
             "target": "Ali ngeth?",
-            "source": "she?",
-            "pronunciation": "eyyey ngeth / ali ngeth",
+            "source": "Where is she?",
+            "pronunciation": "a-li ngeth",
             "hint": "Asking the location of a person. (Barton 1921)"
           },
           {
@@ -6017,13 +6048,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Ngolik!",
             "source": "Look out!",
-            "pronunciation": "ngo-lik / engo-li-ki-ni",
+            "pronunciation": "ngo-lik",
             "hint": "Warning to be watchful. (Barton 1921)"
           },
           {
             "target": "Engolikini!",
             "source": "Take care!",
-            "pronunciation": "ngo-lik / engo-li-ki-ni",
+            "pronunciation": "e-ngo-li-ki-ni",
             "hint": "Warning to be watchful. (Barton 1921)"
           },
           {
@@ -6176,13 +6207,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Ngeyai?",
             "source": "How much?",
-            "pronunciation": "nge-yai / nye-yai / e-rai ngiai",
+            "pronunciation": "nge-yai",
             "hint": "Asking quantity, headcount, or price. (Barton 1921)"
           },
           {
             "target": "Nyeyai?",
             "source": "How many?",
-            "pronunciation": "nge-yai / nye-yai / e-rai ngiai",
+            "pronunciation": "nye-yai",
             "hint": "Asking quantity, headcount, or price. (Barton 1921)"
           },
           {
@@ -6377,13 +6408,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Noi",
             "source": "Very",
-            "pronunciation": "noi / ke-re",
+            "pronunciation": "noi",
             "hint": "Intensifier adverb denoting thoroughly or very. (Barton 1921)"
           },
           {
             "target": "Kere",
             "source": "Truly",
-            "pronunciation": "noi / ke-re",
+            "pronunciation": "ke-re",
             "hint": "Intensifier adverb denoting thoroughly or very. (Barton 1921)"
           },
           {
@@ -6425,13 +6456,13 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Erot",
             "source": "Road",
-            "pronunciation": "e-rot / ee-rot",
+            "pronunciation": "e-rot",
             "hint": "Path, road, or pastoral cattle route. (Barton 1921)"
           },
           {
             "target": "Eerot (pl. ngerotin)",
             "source": "Path",
-            "pronunciation": "e-rot / ee-rot",
+            "pronunciation": "ee-rot",
             "hint": "Path, road, or pastoral cattle route. (Barton 1921)"
           },
           {
@@ -6588,10 +6619,28 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "culturalNote": "Source attribution: Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' (Bulletin of the School of Oriental Studies) and 'A Classified Vocabulary of Turkana'.",
         "words": [
           {
+            "target": "Kidyeny",
+            "source": "Left",
+            "pronunciation": "ki-dyeny",
+            "hint": "Direction left (akan na lo kidyeny = left hand). (Barton 1921)"
+          },
+          {
             "target": "Teten",
             "source": "Right",
             "pronunciation": "te-ten",
             "hint": "Direction right (akan na lo teten = right hand). (Barton 1921)"
+          },
+          {
+            "target": "Ngeselekin / Pesa",
+            "source": "Money",
+            "pronunciation": "nge-se-le-kin / pe-sa",
+            "hint": "Currency or trade coins. (Barton 1921)"
+          },
+          {
+            "target": "Togangai! / Torimokakithai!",
+            "source": "Help!",
+            "pronunciation": "to-ga-ngai / to-ri-mo-ka-ki-thai",
+            "hint": "Cry for assistance or rescue. (Barton 1921)"
           },
           {
             "target": "Akim!",
@@ -6814,7 +6863,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           },
           {
-            "target": "Aran (?)",
+            "target": "Aran",
             "source": "I kill them",
             "pronunciation": "a-ran",
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
@@ -6838,9 +6887,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           },
           {
-            "target": "Nyeʻberu",
+            "target": "Ainak",
             "source": "I give",
-            "pronunciation": "nye'be-ru",
+            "pronunciation": "ai-nak",
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           },
           {
@@ -6887,7 +6936,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
                 "right": "I know"
               },
               {
-                "left": "Aran (?)",
+                "left": "Aran",
                 "right": "I kill them"
               },
               {
@@ -7046,9 +7095,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           },
           {
-            "target": "Año?",
+            "target": "Año",
             "source": "I am",
-            "pronunciation": "ango",
+            "pronunciation": "a-ngo",
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           },
           {
@@ -7117,7 +7166,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
                 "right": "I bring"
               },
               {
-                "left": "Año?",
+                "left": "Año",
                 "right": "I am"
               },
               {
@@ -7138,7 +7187,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Eluana",
               "Elallak",
               "Año ñesilo",
-              "Año?"
+              "Año"
             ],
             "hint": "Turkana (Elgume) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912)"
           }
@@ -7169,8 +7218,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "hint": "Hon. K. R. Dundas (1910, p. 66)"
           },
           {
-            "target": "Attegir (19 clans): Nitegorr, Molereto, Tuduya, Ellelet, Ebalang",
-            "source": "All 19 exogamous clans (attegir, without totems) of the Ngoitunya & Ngolio tribes",
+            "target": "Attegir: Nitegorr, Molereto, Tuduya, Ellelet, Ebalang, Ngaruwo",
+            "source": "Exogamous clans (attegir, without totems) of the Ngoitunya & Ngolio tribes",
             "pronunciation": "at-te-gir / ni-te-gorr / mo-le-re-to / tu-du-ya / nga-ru-wo",
             "hint": "Hon. K. R. Dundas (1910, p. 67)"
           },
@@ -7195,9 +7244,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "pronunciation": "nessegonn"
           },
           {
-            "target": "Agipie vs. Nether-world god",
-            "source": "Benevolent sky god vs. malevolent god of rocks and rivers",
-            "pronunciation": "agipie-vs-nether-world-god"
+            "target": "Agipie",
+            "source": "Benevolent sky god prayed to in sickness",
+            "pronunciation": "a-gi-pie"
           }
         ],
         "sentences": [
@@ -7241,28 +7290,28 @@ export const TURKANA_UNITS: CourseUnit[] = [
         "culturalNote": "Source attribution: Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 70).",
         "words": [
           {
-            "target": "Nakiborror (Wet season, Mar–Aug): 1. Lomaruk, 2. Tetimaru, 3. Eliel, 4.",
+            "target": "Nakiborror: Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak",
             "source": "The 6 Wet-Season months of the Turkana year (March to August)",
-            "pronunciation": "nakiborror-1-lomaruk",
+            "pronunciation": "na-ki-bor-ror / lo-ma-ruk / te-ti-ma-ru / e-li-el",
             "hint": "Hon. K. R. Dundas (1910, p. 70)"
           },
           {
-            "target": "Nakamou: 7. Lolongo, 8. Lopo, 9. Lorara, 10. Lomuk, 11. Logwang, 12.",
+            "target": "Nakamou: Lolongo, Lopo, Lorara, Lomuk, Logwang, Lodunge",
             "source": "The 6 Dry-Season months of the Turkana year (September to February)",
-            "pronunciation": "nakamou-7-lolongo",
+            "pronunciation": "na-ka-mou / lo-lo-ngo / lo-po / lo-ra-ra",
             "hint": "Hon. K. R. Dundas (1910, p. 70)"
           },
           {
-            "target": "Nait (Loitiak, Lolongo & Lopo — August, September & October)",
-            "source": "Three-month transitional period so called because the grass turns yellow",
+            "target": "Nait (Loitiak, Lolongo, Lopo)",
+            "source": "Three-month transitional period (August–October) when the grass turns yellow",
             "pronunciation": "nait / loi-ti-ak / lo-lo-ngo / lo-po",
             "hint": "Hon. K. R. Dundas (1910, p. 70)"
           }
         ],
         "sentences": [
           {
-            "target": "Nakiborror: Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak",
-            "source": "Wet Season (March–August) & Dry Season (September–February) in Dundas ."
+            "target": "Nakiborror: Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak.",
+            "source": "Wet Season (March–August): Lomaruk, Tetimaru, Eliel, Loichoto, Loisoban, Loitiak."
           }
         ]
       },
@@ -7281,7 +7330,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
           {
             "target": "Alakara",
             "source": "Thank you",
-            "pronunciation": "ah-lah-kah-rah noy"
+            "pronunciation": "a-la-ka-ra"
           },
           {
             "target": "emala",
@@ -7309,9 +7358,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "pronunciation": "ah-beh / ee-ee"
           },
           {
-            "target": "tolot-ion, go thou",
-            "source": "Of farewell",
-            "pronunciation": "tolot-ion go thou answer e-jok a-lothi good i go"
+            "target": "Ejok alothi",
+            "source": "Farewell response (Good, I go)",
+            "pronunciation": "e-jok a-lo-thi"
           },
           {
             "target": "Na?",
@@ -7326,8 +7375,8 @@ export const TURKANA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "tolot-ion, go thou",
-            "source": "Of farewell."
+            "target": "Tolot-ion! — Ejok alothi.",
+            "source": "Go well! — Good, I go."
           },
           {
             "target": "Ii mata",
@@ -7409,7 +7458,20 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "pronunciation": "ngah-kah-nee-kah-ah-reh-ee"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Ejok akwap na a Turkana.",
+            "source": "This land of Turkana is good."
+          },
+          {
+            "target": "Eyakasi ngatuk nawi.",
+            "source": "The cattle are in the homestead kraal."
+          },
+          {
+            "target": "Elosi ekile akimuj.",
+            "source": "The man goes for food."
+          }
+        ]
       }
     ]
   }

@@ -59,12 +59,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "Hujambo!",
             "source": "Hello!",
-            "pronunciation": "hu-jambo / ha-ba-ri ya-ko"
+            "pronunciation": "hu-jambo"
           },
           {
             "target": "Habari yako?",
             "source": "How is your news?",
-            "pronunciation": "hu-jambo / ha-ba-ri ya-ko"
+            "pronunciation": "ha-ba-ri ya-ko"
           },
           {
             "target": "Asante sana",
@@ -94,12 +94,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "maji",
             "source": "water",
-            "pronunciation": "ma-ji / mo-to"
+            "pronunciation": "ma-ji"
           },
           {
             "target": "moto",
             "source": "fire",
-            "pronunciation": "ma-ji / mo-to"
+            "pronunciation": "mo-to"
           },
           {
             "target": "nyumba (pl. nyumba)",
@@ -254,82 +254,82 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "moja",
             "source": "One (1)",
-            "pronunciation": "mo-ja mbi-li ta-tu nne ta-no"
+            "pronunciation": "mo-ja"
           },
           {
             "target": "mbili",
             "source": "Two (2)",
-            "pronunciation": "mo-ja mbi-li ta-tu nne ta-no"
+            "pronunciation": "mbi-li"
           },
           {
             "target": "tatu",
             "source": "Three (3)",
-            "pronunciation": "mo-ja mbi-li ta-tu nne ta-no"
+            "pronunciation": "ta-tu"
           },
           {
             "target": "sita",
             "source": "Six (6)",
-            "pronunciation": "si-ta sa-ba na-ne kenda ku-mi"
+            "pronunciation": "si-ta"
           },
           {
             "target": "saba (mfungate)",
             "source": "Seven (7)",
-            "pronunciation": "si-ta sa-ba na-ne kenda ku-mi"
+            "pronunciation": "sa-ba (m-fu-nga-te)"
           },
           {
             "target": "nane",
             "source": "Eight (8)",
-            "pronunciation": "si-ta sa-ba na-ne kenda ku-mi"
+            "pronunciation": "na-ne"
           },
           {
             "target": "ninashinda",
             "source": "I pass the day",
-            "pronunciation": "ni-nashinda / ni-lishinda / ni-tashinda"
+            "pronunciation": "ni-na-shi-nda"
           },
           {
             "target": "nilishinda",
             "source": "I passed",
-            "pronunciation": "ni-nashinda / ni-lishinda / ni-tashinda"
+            "pronunciation": "ni-li-shi-nda"
           },
           {
             "target": "nitashinda",
             "source": "I shall pass",
-            "pronunciation": "ni-nashinda / ni-lishinda / ni-tashinda"
+            "pronunciation": "ni-ta-shi-nda"
           },
           {
             "target": "sishindi",
-            "source": "I do not",
-            "pronunciation": "sishindi / si-kushinda / si-jashinda"
+            "source": "I do not pass the day / conquer",
+            "pronunciation": "si-shi-ndi"
           },
           {
             "target": "sikushinda",
-            "source": "I did not",
-            "pronunciation": "sishindi / si-kushinda / si-jashinda"
+            "source": "I did not pass the day / conquer",
+            "pronunciation": "si-ku-shi-nda"
           },
           {
             "target": "sijashinda",
             "source": "I have not yet passed the day",
-            "pronunciation": "sishindi / si-kushinda / si-jashinda"
+            "pronunciation": "si-ja-shi-nda"
           },
           {
             "target": "kula",
             "source": "to eat",
-            "pronunciation": "ku-la / kunywa / ku-ja / kwenda"
+            "pronunciation": "ku-la"
           },
           {
             "target": "kunywa",
             "source": "to drink",
-            "pronunciation": "ku-la / kunywa / ku-ja / kwenda"
+            "pronunciation": "ku-nywa"
           },
           {
             "target": "kuja",
             "source": "to come",
-            "pronunciation": "ku-la / kunywa / ku-ja / kwenda"
+            "pronunciation": "ku-ja"
           },
           {
             "target": "kwenda",
             "source": "to go",
-            "pronunciation": "ku-la / kunywa / ku-ja / kwenda"
+            "pronunciation": "kwe-nda"
           },
           {
             "target": "Haraka haraka haina baraka",
@@ -353,8 +353,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "source": "Little by little fills the measure ."
           },
           {
-            "target": "Mzee alitaja sita nyumbani.",
-            "source": "The elder mentioned 6 at home."
+            "target": "Watoto sita wanasoma darasani.",
+            "source": "Six children are studying in the classroom."
           }
         ],
         "authoredExercises": [
@@ -513,17 +513,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "shokangwa",
             "source": "someone else's axe",
-            "pronunciation": "sho-kangwa / jembengwa / ki-tingwa"
+            "pronunciation": "sho-ka-ngwa"
           },
           {
             "target": "jembengwa",
-            "source": "hoe",
-            "pronunciation": "sho-kangwa / jembengwa / ki-tingwa"
+            "source": "someone else's hoe",
+            "pronunciation": "je-mbe-ngwa"
           },
           {
             "target": "kitingwa (Taylor 1891 -ngwa)",
-            "source": "stool (possessive pronoun of alienation = -a wat'u)",
-            "pronunciation": "sho-kangwa / jembengwa / ki-tingwa"
+            "source": "someone else's stool (possessive pronoun of alienation = -a wat'u)",
+            "pronunciation": "ki-ti-ngwa"
           },
           {
             "target": "Kinyume (Steere 1894 Appendix I, pp. 425–426)",
@@ -552,8 +552,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "source": "All the people love one another and help one another."
           },
           {
-            "target": "Mzee alitaja kufunga → kufungia → kufungua → kufunguka nyumbani.",
-            "source": "The elder mentioned to fasten at home."
+            "target": "Mlango ule umefunguliwa na mgeni.",
+            "source": "That door has been opened by the guest."
           }
         ],
         "authoredExercises": [
@@ -669,22 +669,22 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Kinship Terms, Elders & Household Roles",
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "mfalme (pl. wafalme)",
             "source": "King",
-            "pronunciation": "mfalme / jumbe / sulta-ni"
+            "pronunciation": "m-fa-lme"
           },
           {
             "target": "jumbe",
-            "source": "Chief",
-            "pronunciation": "mfalme / jumbe / sulta-ni"
+            "source": "Chief / Headman",
+            "pronunciation": "ju-mbe"
           },
           {
-            "target": "mtu",
-            "source": "Man",
-            "pronunciation": "mtu"
+            "target": "mtu, pl. watu",
+            "source": "Man / Person",
+            "pronunciation": "m-tu"
           },
           {
             "target": "mwana, mtoto, (mume)",
@@ -692,9 +692,9 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "mwana"
           },
           {
-            "target": "kijana",
-            "source": "Girl",
-            "pronunciation": "kijana"
+            "target": "kijana, pl. vijana",
+            "source": "Youth (boy or girl)",
+            "pronunciation": "ki-ja-na"
           },
           {
             "target": "Hujambo / Jambo (pl. Hamjambo)",
@@ -724,12 +724,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mfalme — mtu, pl. watu",
-            "source": "King — Man."
+            "target": "Mfalme aliwaita watu wote barazani.",
+            "source": "The king summoned all the people to the council."
           },
           {
-            "target": "mwana, mtoto, — kijana, pl. vijana",
-            "source": "Son — Girl."
+            "target": "Vijana wanamsaidia baba yao shambani.",
+            "source": "The youths are helping their father in the field."
           }
         ],
         "authoredExercises": [
@@ -803,10 +803,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Clans, Marriage & Community Life",
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "mtoto",
+            "target": "mtoto, pl. watoto",
             "source": "child",
             "pronunciation": "mto-to"
           },
@@ -816,7 +816,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ku-tambaa"
           },
           {
-            "target": "mzee",
+            "target": "mzee, pl. wazee",
             "source": "elder",
             "pronunciation": "mzee"
           },
@@ -826,8 +826,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ba-ba"
           },
           {
-            "target": "mkwe",
-            "source": "father-in-law",
+            "target": "mkwe, pl. wakwe",
+            "source": "father-in-law / mother-in-law",
             "pronunciation": "mkwe"
           },
           {
@@ -853,12 +853,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mtoto, pl. watoto — kutambaa",
-            "source": "child — crawl."
+            "target": "Mtoto mdogo ameanza kutambaa chini.",
+            "source": "The small child has started to crawl on the ground."
           },
           {
-            "target": "mzee, pl. wazee — baba",
-            "source": "elder — father."
+            "target": "Baba na wazee wa mji walizungumza na mganga.",
+            "source": "Father and the town elders spoke with the healer."
           }
         ],
         "authoredExercises": [
@@ -938,7 +938,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Cardinal & Ordinal Numerals",
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "-ote",
@@ -988,12 +988,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "-ote — sisi sote",
-            "source": "all — all of us."
+            "target": "Sisi sote tulihesabu vitu vyote pamoja.",
+            "source": "All of us counted all the things together."
           },
           {
-            "target": "moja — sita",
-            "source": "One — Six."
+            "target": "Kuna nyumba kumi na moja katika kijiji hiki.",
+            "source": "There are eleven houses in this village."
           }
         ],
         "authoredExercises": [
@@ -1063,7 +1063,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Trade, Barter, Currency & Traditional Measures",
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "hamsini",
@@ -1113,8 +1113,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja kwanza nyumbani.",
-            "source": "The elder mentioned first at home."
+            "target": "Hii ni mara ya kwanza kufika sokoni.",
+            "source": "This is the first time arriving at the market."
           }
         ],
         "authoredExercises": [
@@ -1230,17 +1230,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Staple Foods, Cookery & Beverages",
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "ugali",
-            "source": "Porridge",
-            "pronunciation": "u-ga-li / uji / si-ma"
+            "source": "Stiff porridge (Ugali)",
+            "pronunciation": "u-ga-li"
           },
           {
             "target": "uji",
-            "source": "Ugali",
-            "pronunciation": "u-ga-li / uji / si-ma"
+            "source": "Thin porridge / Gruel",
+            "pronunciation": "u-ji"
           },
           {
             "target": "ndizi",
@@ -1285,8 +1285,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja ndizi nyumbani.",
-            "source": "The elder mentioned banana at home."
+            "target": "Mama alipika ugali na ndizi mbivu.",
+            "source": "Mother cooked ugali and ripe bananas."
           }
         ],
         "authoredExercises": [
@@ -1400,10 +1400,10 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Crops, Cultivation & Pastoral Livestock",
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "mahogo",
+            "target": "mahogo, pl. hogo",
             "source": "cassava",
             "pronunciation": "ma-ho-go"
           },
@@ -1450,12 +1450,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mahogo, pl. hogo — mbarika",
-            "source": "cassava — castor-oil tree."
+            "target": "Wakulima walivuna mahogo mengi shambani.",
+            "source": "The farmers harvested plenty of cassava in the field."
           },
           {
-            "target": "kutafuna — kupika",
-            "source": "chew — cook."
+            "target": "Tunapenda kupika chakula kizuri na kunywa maji safi.",
+            "source": "We like to cook good food and drink clean water."
           }
         ],
         "authoredExercises": [
@@ -1535,7 +1535,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Sky, Weather, Rivers & Landforms",
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "fisi",
@@ -1585,12 +1585,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "fisi — popo",
-            "source": "Hyena — Bat."
+            "target": "Fisi na popo hutoka nje wakati wa usiku.",
+            "source": "The hyena and the bat come out at night."
           },
           {
-            "target": "ngwiro — chungu",
-            "source": "ant — ant."
+            "target": "Siafu na chungu wanajenga viota ardhini.",
+            "source": "Red ants and black ants build nests in the ground."
           }
         ],
         "authoredExercises": [
@@ -1660,7 +1660,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "East African Fauna, Birds & Sacred Trees",
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "nyani",
@@ -1668,7 +1668,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "nya-ni"
           },
           {
-            "target": "mbuyu",
+            "target": "mbuyu, pl. mibuyu",
             "source": "baobab tree",
             "pronunciation": "mbu-yu"
           },
@@ -1710,12 +1710,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "nyani — mbuyu, pl. mibuyu",
-            "source": "baboon — baobab tree."
+            "target": "Nyani walipanda juu ya mbuyu mkubwa.",
+            "source": "The baboons climbed up the large baobab tree."
           },
           {
-            "target": "kulia — ganda, gome",
-            "source": "bark — bark."
+            "target": "Nyuki wengi wako juu ya gome la mti.",
+            "source": "Many bees are on the bark of the tree."
           }
         ],
         "authoredExercises": [
@@ -1795,27 +1795,27 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Parts of the Body & Physical Senses",
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "maumivu",
             "source": "Pain",
-            "pronunciation": "mau-mi-vu / uchungu"
+            "pronunciation": "mau-mi-vu"
           },
           {
             "target": "uchungu",
-            "source": "Ache",
-            "pronunciation": "mau-mi-vu / uchungu"
+            "source": "Ache / Bitterness",
+            "pronunciation": "u-chu-ngu"
           },
           {
             "target": "ugonjwa",
             "source": "Sickness",
-            "pronunciation": "u-gonjwa / ma-radhi"
+            "pronunciation": "u-gonjwa"
           },
           {
             "target": "maradhi",
-            "source": "Illness",
-            "pronunciation": "u-gonjwa / ma-radhi"
+            "source": "Illness / Disease",
+            "pronunciation": "ma-radhi"
           },
           {
             "target": "dawa",
@@ -1824,13 +1824,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "mganga (pl. waganga)",
-            "source": "Healer",
-            "pronunciation": "mganga / ta-bi-bu"
+            "source": "Healer / Traditional doctor",
+            "pronunciation": "m-ga-nga"
           },
           {
             "target": "tabibu",
             "source": "Physician",
-            "pronunciation": "mganga / ta-bi-bu"
+            "pronunciation": "ta-bi-bu"
           },
           {
             "target": "msaada (Nisaidie! = Help me!)",
@@ -1860,12 +1860,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "maumivu — ugonjwa",
-            "source": "Pain — Sickness."
+            "target": "Mganga alimpa mgonjwa dawa ya kupunguza maumivu.",
+            "source": "The healer gave the patient medicine to reduce the pain."
           },
           {
-            "target": "dawa — mganga",
-            "source": "Medicine — Healer."
+            "target": "Tabibu alimtibu mtoto aliyekuwa na ugonjwa.",
+            "source": "The physician treated the child who had an illness."
           }
         ],
         "authoredExercises": [
@@ -1939,11 +1939,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Health, Traditional Medicine & Emergency Terms",
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "tumbo, plur. ma",
-            "source": "Bowels",
+            "target": "tumbo, plur. ma-",
+            "source": "Bowels / Abdomen",
             "pronunciation": "tumbo"
           },
           {
@@ -1957,12 +1957,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "a-me-ku-fa"
           },
           {
-            "target": "jicho",
+            "target": "jicho, pl. macho",
             "source": "Eye",
             "pronunciation": "jicho"
           },
           {
-            "target": "mguu",
+            "target": "mguu, pl. miguu",
             "source": "Leg",
             "pronunciation": "mguu"
           },
@@ -1989,12 +1989,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "tumbo, plur. ma- — fa",
-            "source": "Bowels — become Dead."
+            "target": "Mtu huyo aliumia mguu na mkono.",
+            "source": "That person hurt his leg and arm."
           },
           {
-            "target": "amekufa — jicho, pl. macho",
-            "source": "He is dead — Eye."
+            "target": "Tunaona kwa macho na kusikia kwa masikio.",
+            "source": "We see with eyes and hear with ears."
           }
         ],
         "authoredExercises": [
@@ -2074,7 +2074,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Essential Action & Motion Verbs",
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "kusema / kunena",
@@ -2124,12 +2124,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "kusema — kulala",
-            "source": "Speak — Sleep."
+            "target": "Watoto walikwenda kulala baada ya kusema na mama.",
+            "source": "The children went to sleep after speaking with mother."
           },
           {
-            "target": "kwenda — tenda, fanya, faa",
-            "source": "Go — Do."
+            "target": "Mgeni aliuliza njia ya kwenda mjini.",
+            "source": "The guest asked for the way to go to town."
           }
         ],
         "authoredExercises": [
@@ -2199,7 +2199,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Applied, Causative, Reciprocal & Stative Verbs",
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "tia",
@@ -2249,12 +2249,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "tia — oza",
-            "source": "Put — Rot."
+            "target": "Mkulima alipanda mbegu nzuri shambani.",
+            "source": "The farmer sowed good seeds in the field."
           },
           {
-            "target": "sugua — piga mbio, kimbia, toroka",
-            "source": "Rub — Run."
+            "target": "Fundi anashona nguo mpya huku akitazama nje.",
+            "source": "The tailor is sewing new clothes while looking outside."
           }
         ],
         "authoredExercises": [
@@ -2334,7 +2334,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Day Divisions, Lunar Months & Agricultural Seasons",
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "mwongo (pl. miongo)",
@@ -2349,27 +2349,27 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "leo",
             "source": "Today",
-            "pronunciation": "leo / ja-na / kesho"
+            "pronunciation": "le-o"
           },
           {
             "target": "jana",
             "source": "Yesterday",
-            "pronunciation": "leo / ja-na / kesho"
+            "pronunciation": "ja-na"
           },
           {
             "target": "kesho",
             "source": "Tomorrow",
-            "pronunciation": "leo / ja-na / kesho"
+            "pronunciation": "ke-sho"
           },
           {
             "target": "jioni",
             "source": "Evening",
-            "pronunciation": "jio-ni / magha-ri-bi"
+            "pronunciation": "jio-ni"
           },
           {
             "target": "magharibi",
             "source": "Sunset (6 p.m.)",
-            "pronunciation": "jio-ni / magha-ri-bi"
+            "pronunciation": "ma-gha-ri-bi"
           },
           {
             "target": "alasiri",
@@ -2389,12 +2389,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "alfajiri",
             "source": "Dawn",
-            "pronunciation": "alfa-ji-ri / ma-pamba-zu-ko"
+            "pronunciation": "al-fa-ji-ri"
           },
           {
             "target": "mapambazuko",
             "source": "Daybreak",
-            "pronunciation": "alfa-ji-ri / ma-pamba-zu-ko"
+            "pronunciation": "ma-pa-mba-zu-ko"
           },
           {
             "target": "síku",
@@ -2404,12 +2404,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mwongo — Siku ya Mwaka",
-            "source": "Ten-Day Agricultural Decade — Solar New Year Festival."
+            "target": "Watu wote walisherehekea Siku ya Mwaka kwa furaha.",
+            "source": "All the people celebrated the Solar New Year Festival with joy."
           },
           {
-            "target": "leo — jioni",
-            "source": "Today — Evening."
+            "target": "Tutaanza safari yetu kesho alfajiri.",
+            "source": "We will begin our journey tomorrow at dawn."
           }
         ],
         "authoredExercises": [
@@ -2479,7 +2479,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Travel, Directions, Paths & Landmarks",
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "tangu siku kumi, leo siku kumi",
@@ -2529,12 +2529,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "tangu siku kumi, leo siku kumi — mchana kuchwa",
-            "source": "Ten days ago — All day."
+            "target": "Wavuvi walifanya kazi baharini mchana kuchwa.",
+            "source": "The fishermen worked at sea all day long."
           },
           {
-            "target": "Juma — baadaye, halafu yake",
-            "source": "Friday — At a future time."
+            "target": "Tutaonana tena siku ya Juma saa nne.",
+            "source": "We will see each other again on Friday at ten o'clock."
           }
         ],
         "authoredExercises": [
@@ -2614,7 +2614,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Everyday Conversational Phrases & Questions",
         "icon": "CheckCircle2",
         "description": "Practice authentic questions, answers, and idiomatic expressions from historical phrasebooks.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "Hujambo / Jambo (pl. Hamjambo)",
@@ -2664,12 +2664,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Hujambo — amani",
-            "source": "Hello — Peace."
+            "target": "Walimsalimia mgeni kwa amani na furaha.",
+            "source": "They greeted the guest with peace and joy."
           },
           {
-            "target": "shukuru — salimía",
-            "source": "Thank — Greet."
+            "target": "Ninakushukuru sana kwa msaada wako.",
+            "source": "I thank you very much for your help."
           }
         ],
         "authoredExercises": [
@@ -2739,7 +2739,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Hospitality, Requests & Social Discourse",
         "icon": "Handshake",
         "description": "Converse naturally in home, village, market, and travel settings.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "pendeza, furahisha",
@@ -2789,12 +2789,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "pendeza, furahisha — ata",
-            "source": "Please — Pardon."
+            "target": "Karibu nyumbani kwetu na ukae kitini.",
+            "source": "Welcome to our home and sit on the chair."
           },
           {
-            "target": "Kwaheri — Karibu",
-            "source": "Goodbye — Welcome."
+            "target": "Kwaheri ya kuonana, tutarudi kesho.",
+            "source": "Goodbye until we meet again, we will return tomorrow."
           }
         ],
         "authoredExercises": [
@@ -2874,7 +2874,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Traditional Proverbs, Riddles & Aphorisms",
         "icon": "Award",
         "description": "Study verbatim oral wisdom, riddles, and moral aphorisms from the historical collections.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "wingi, tele",
@@ -2882,7 +2882,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "wingi te-le"
           },
           {
-            "target": "talasimu, plur. ma",
+            "target": "talasimu, plur. ma-",
             "source": "Amulet",
             "pronunciation": "ta-la-si-mu"
           },
@@ -2902,7 +2902,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ta-la-si-mu hi-ri-zi"
           },
           {
-            "target": "kanisa, plur. ma",
+            "target": "kanisa, plur. ma-",
             "source": "Church",
             "pronunciation": "ka-ni-sa"
           },
@@ -2924,8 +2924,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja talasimu nyumbani.",
-            "source": "The elder mentioned amulet at home."
+            "target": "Wazee walikutana kwenye baraza la mji.",
+            "source": "The elders met at the town council."
           }
         ],
         "authoredExercises": [
@@ -3039,7 +3039,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Customary Law, Rituals & Historical Lexicon",
         "icon": "ShieldCheck",
         "description": "Master specialized cultural, legal, musical, and historical vocabulary.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "upesi, hima",
@@ -3089,8 +3089,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja funga nyumbani.",
-            "source": "The elder mentioned fasten at home."
+            "target": "Funga mlango huo upesi kabla ya mvua.",
+            "source": "Fasten that door quickly before the rain."
           }
         ],
         "authoredExercises": [
@@ -3210,7 +3210,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Ironworking, Pottery, Basketry & Ornaments",
         "icon": "Amphora",
         "description": "Learn terms for traditional smithing, pottery, weaving, and personal ornamentation.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "moskiti",
@@ -3253,15 +3253,15 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "u-tumwa"
           },
           {
-            "target": "pepo, jini, plur. ma",
+            "target": "pepo, jini, plur. ma-",
             "source": "Spirit",
             "pronunciation": "pe-po ji-ni"
           }
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja bora nyumbani.",
-            "source": "The elder mentioned noble at home."
+            "target": "Watu wote waliingia msikitini kuomba na kusali.",
+            "source": "All the people entered the mosque to pray."
           }
         ],
         "authoredExercises": [
@@ -3363,7 +3363,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Homestead Layout, Building & Domestic Implements",
         "icon": "Home",
         "description": "Describe traditional house construction, hearthstones, granaries, and utensils.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "(liquor) mvinyo",
@@ -3413,8 +3413,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja furahi nyumbani.",
-            "source": "The elder mentioned be in good spirits at home."
+            "target": "Bibi alitusimulia hadithi nzuri jioni.",
+            "source": "Grandmother told us a wonderful story in the evening."
           }
         ],
         "authoredExercises": [
@@ -3472,7 +3472,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-13",
     "unitNumber": 13,
-    "title": "Extended Historical Lexicon II: Governance, Law & Oral",
+    "title": "Extended Historical Lexicon II: Governance, Law & Oral Narrative",
     "description": "Master extended historical lexicon ii: governance, law & oral narrative in Swahili (Kiswahili) built directly from Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919).",
     "icon": "Crown",
     "color": "#10B981",
@@ -3482,7 +3482,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Elders' Councils, Oaths, Covenants & Customary Justice",
         "icon": "Handshake",
         "description": "Explore indigenous governance, peace ceremonies, and legal terminology.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "fungua",
@@ -3532,8 +3532,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja mtu gani yeye? nyumbani.",
-            "source": "The elder mentioned of what tribe is he? at home."
+            "target": "Watu walipiga ngoma na kucheza kwa furaha.",
+            "source": "The people played drums and danced with joy."
           }
         ],
         "authoredExercises": [
@@ -3643,7 +3643,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Folktale Discourse, Poetic Registers & Narrative Style",
         "icon": "ScrollText",
         "description": "Read and analyze classical narrative vocabulary and dialectal registers.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "fúnga (sc. kánoa)",
@@ -3693,8 +3693,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja nóna nyumbani.",
-            "source": "The elder mentioned fast at home."
+            "target": "Mwalimu alituambia kisa cha zamani.",
+            "source": "The teacher told us an ancient historical tale."
           }
         ],
         "authoredExercises": [
@@ -3822,7 +3822,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Comparative Roots, Sound Shifts & Dialectal Nuances",
         "icon": "Volume2",
         "description": "Compare dialectal forms and historical sound correspondences documented before 1930.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "u-shinde",
@@ -3872,8 +3872,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja a-shinde nyumbani.",
-            "source": "The elder mentioned that he or she may conquer at home."
+            "target": "Tunafanya bidii ili tushinde mashindano hayo.",
+            "source": "We work hard so that we may win that competition."
           }
         ],
         "authoredExercises": [
@@ -3979,7 +3979,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "title": "Comprehensive Corpus Mastery & Idiomatic Fluency",
         "icon": "ScrollText",
         "description": "Synthesize advanced vocabulary, idioms, and grammatical structures across all primary sources.",
-        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
+        "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
             "target": "ham-shindi",
@@ -4029,8 +4029,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja hawa-shindi nyumbani.",
-            "source": "The elder mentioned they do not conquer at home."
+            "target": "Wao hawakushinda mchezo wa jana.",
+            "source": "They did not win yesterday's game."
           }
         ],
         "authoredExercises": [
@@ -4149,68 +4149,68 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Sezo",
-            "source": "Adze",
-            "pronunciation": "se-zo / she-zo / te-zo"
+            "source": "Adze (Standard)",
+            "pronunciation": "se-zo"
           },
           {
             "target": "Šezo",
-            "source": "Kimvita",
-            "pronunciation": "se-zo / she-zo / te-zo"
+            "source": "Adze (Kimvita)",
+            "pronunciation": "she-zo"
           },
           {
             "target": "Tezo",
-            "source": "Kiamu-Kitikuu)",
-            "pronunciation": "se-zo / she-zo / te-zo"
+            "source": "Adze (Kiamu / Kitikuu)",
+            "pronunciation": "te-zo"
           },
           {
             "target": "M-shale",
-            "source": "Arrow",
-            "pronunciation": "m-shale / m-tale / m-cale"
+            "source": "Arrow (Kimvita / Standard)",
+            "pronunciation": "m-sha-le"
           },
           {
             "target": "M-tale",
-            "source": "Kiamu",
-            "pronunciation": "m-shale / m-tale / m-cale"
+            "source": "Arrow (Kiamu)",
+            "pronunciation": "m-ta-le"
           },
           {
             "target": "M-cale",
-            "source": "Kitikuu)",
-            "pronunciation": "m-shale / m-tale / m-cale"
+            "source": "Arrow (Kitikuu)",
+            "pronunciation": "m-ca-le"
           },
           {
             "target": "Ny-uni",
-            "source": "Bird",
-            "pronunciation": "ny-uni / n-dege"
+            "source": "Bird (Classical Kingozi & Kimvita)",
+            "pronunciation": "ny-u-ni"
           },
           {
             "target": "N-dege",
-            "source": "Standard)",
-            "pronunciation": "ny-uni / n-dege"
+            "source": "Bird (Standard Kiswahili)",
+            "pronunciation": "n-de-ge"
           },
           {
             "target": "Mw-atzi",
-            "source": "Blood",
-            "pronunciation": "mw-atzi / da-mu"
+            "source": "Blood (Archaic Kingozi)",
+            "pronunciation": "mw-a-tzi"
           },
           {
             "target": "Dāmu",
-            "source": "Standard Kiswahili)",
-            "pronunciation": "mw-atzi / da-mu"
+            "source": "Blood (Standard Kiswahili)",
+            "pronunciation": "da-mu"
           },
           {
             "target": "I-zūzū",
-            "source": "Banana",
-            "pronunciation": "i-zuzu / i-sita / n-dizi"
+            "source": "Banana (Archaic / Dialectal)",
+            "pronunciation": "i-zu-zu"
           },
           {
             "target": "I-sīta",
-            "source": "Kitikuu-Bajuni",
-            "pronunciation": "i-zuzu / i-sita / n-dizi"
+            "source": "Banana (Kitikuu / Bajuni)",
+            "pronunciation": "i-si-ta"
           },
           {
             "target": "N-dizi",
-            "source": "Standard)",
-            "pronunciation": "i-zuzu / i-sita / n-dizi"
+            "source": "Banana (Standard Kiswahili)",
+            "pronunciation": "n-di-zi"
           },
           {
             "target": "Bakuli (pl. mabakuli)",
@@ -4220,12 +4220,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "Balamwezi",
             "source": "Moonlight",
-            "pronunciation": "ba-lamwe-zi / mba-lamwe-zi"
+            "pronunciation": "ba-la-mwe-zi"
           },
           {
             "target": "Mbalamwezi",
-            "source": "full moonshine",
-            "pronunciation": "ba-lamwe-zi / mba-lamwe-zi"
+            "source": "Full moonshine",
+            "pronunciation": "mba-la-mwe-zi"
           },
           {
             "target": "Bamvua (pl. mabamvua)",
@@ -4235,8 +4235,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja M-shale nyumbani.",
-            "source": "The elder mentioned arrow at home."
+            "target": "Seremala alitumia sezo kuchonga mtumbwi.",
+            "source": "The carpenter used an adze to carve a dugout canoe."
           }
         ],
         "authoredExercises": [
@@ -4321,42 +4321,42 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "ku-tiririka",
             "source": "To flow",
-            "pronunciation": "ku-tiririka / ku-elea"
+            "pronunciation": "ku-ti-ri-ri-ka"
           },
           {
             "target": "ku-elea",
             "source": "To float on water",
-            "pronunciation": "ku-tiririka / ku-elea"
+            "pronunciation": "ku-e-le-a"
           },
           {
             "target": "ku-vuta",
             "source": "To pull",
-            "pronunciation": "ku-vuta / ku-sukuma"
+            "pronunciation": "ku-vu-ta"
           },
           {
             "target": "ku-sukuma",
             "source": "To push",
-            "pronunciation": "ku-vuta / ku-sukuma"
+            "pronunciation": "ku-su-ku-ma"
           },
           {
             "target": "ku-futa",
             "source": "To wipe",
-            "pronunciation": "ku-futa / ku-pangusa"
+            "pronunciation": "ku-fu-ta"
           },
           {
             "target": "ku-pangusa",
             "source": "To dust off",
-            "pronunciation": "ku-futa / ku-pangusa"
+            "pronunciation": "ku-pa-ngu-sa"
           },
           {
             "target": "ku-pasua",
             "source": "To split",
-            "pronunciation": "ku-pasua / ku-atua"
+            "pronunciation": "ku-pa-su-a"
           },
           {
             "target": "ku-atua",
             "source": "To cleave wood",
-            "pronunciation": "ku-pasua / ku-atua"
+            "pronunciation": "ku-a-tu-a"
           },
           {
             "target": "huduma za serikali mtandaoni",
@@ -4366,20 +4366,20 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ku-tuma pesa kwa simu",
-            "source": "To send money by mobile phone (M-Pesa)."
+            "target": "Unaweza kutuma pesa kwa simu haraka na salama.",
+            "source": "You can send money by mobile phone quickly and safely."
           },
           {
-            "target": "kituo cha afya cha jamii",
-            "source": "Community health center / clinic."
+            "target": "Wanakijiji walijenga kituo cha afya cha jamii.",
+            "source": "The villagers built a community health center."
           },
           {
-            "target": "kilimo cha kisasa cha umwagiliaji",
-            "source": "Modern irrigation agriculture."
+            "target": "Wakulima wanatumia kilimo cha kisasa cha umwagiliaji.",
+            "source": "The farmers use modern irrigation agriculture."
           },
           {
-            "target": "huduma za serikali mtandaoni",
-            "source": "Online digital government services (eCitizen)."
+            "target": "Wananchi wanapata huduma za serikali mtandaoni.",
+            "source": "Citizens access government services online."
           }
         ],
         "authoredExercises": [
@@ -4499,8 +4499,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja īva nyumbani.",
-            "source": "The elder mentioned to steal at home."
+            "target": "Wageni walikaa kitini na kuona ngoma nzuri.",
+            "source": "The guests sat on the chair and watched a fine dance."
           }
         ],
         "authoredExercises": [
@@ -4654,8 +4654,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mzee alitaja yūā nyumbani.",
-            "source": "The elder mentioned to know at home."
+            "target": "Watoto walicheka na kucheza uwanjani.",
+            "source": "The children laughed and danced in the courtyard."
           }
         ],
         "authoredExercises": [
@@ -4765,14 +4765,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-17",
     "unitNumber": 17,
-    "title": "Krapf Suahili Dictionary — Outline of Grammar, 7",
+    "title": "Krapf Suahili Dictionary — Outline of Grammar, 7 Salutations & Calendar",
     "description": "Master the complete grammatical, lexical, and ethnographic wealth of Rev. Dr. L. Krapf's 1882 'A Dictionary of the Suahili Language' (pp. i–xl, 1–431): the 7 Modes of Salutation (p. xx), 8 Noun Classes & Post-Prefixes, Kimvita verb paradigms & enclitic objects (-mi, -we, -e, -sui, -nui, -o), 12 Swahili & 12 Wanika Months, Siku ya Muaka (Nairuz), 24-hour time divisions, Marine & Lover's Songs, and coastal taxonomies.",
     "icon": "Compass",
     "color": "#10B981",
     "skills": [
       {
         "id": "swahili-krapf-1882-salutations-grammar-calendar",
-        "title": "Krapf 7 Salutations, Post-Prefixes, Enclitic Pronouns & Coastal",
+        "title": "Krapf 7 Salutations, Post-Prefixes, Enclitic Pronouns & Coastal Calendar",
         "icon": "MessageCircle",
         "description": "Learn the 7 hierarchical salutations (p. xx), Kimvita passive -oa and enclitic object suffixes (p. xxx), the 12 Swahili lunar months (pp. 223–224), 6 monsoon seasons (p. 248), and 24-hour time divisions (pp. 252–253, 318).",
         "words": [
@@ -4790,47 +4790,47 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Ramatháni",
-            "source": "11th",
+            "source": "Ramadan (11th month in Krapf's Swahili calendar, p. 224)",
             "pronunciation": "ramatháni"
           },
           {
             "target": "Hajji",
-            "source": "12th",
+            "source": "Dhu al-Hijjah / Pilgrimage month (12th month, Krapf 1882, p. 224)",
             "pronunciation": "hajji"
           },
           {
             "target": "Masíka",
-            "source": "Mar–May",
+            "source": "Heavy rainy season (March–May, Krapf 1882, p. 248)",
             "pronunciation": "masíka"
           },
           {
             "target": "Kipúpue",
-            "source": "Jun–Aug",
+            "source": "Cold season after the rains (June–August, Krapf 1882, p. 248)",
             "pronunciation": "kipúpue"
           },
           {
             "target": "mafungulia ngombe",
-            "source": "8 AM",
+            "source": "Cattle-unloosing time (approx. 8:00 a.m., Krapf 1882, p. 252)",
             "pronunciation": "mafungulia-ngombe"
           },
           {
             "target": "athóhuri",
-            "source": "12 PM",
+            "source": "Midday / Noon prayer time (12:00 p.m., Krapf 1882, p. 253)",
             "pronunciation": "athóhuri"
           },
           {
             "target": "elásiri",
-            "source": "3:30 PM",
+            "source": "Mid-afternoon prayer time (3:30 p.m., Krapf 1882, p. 253)",
             "pronunciation": "elásiri"
           },
           {
             "target": "magháribi",
-            "source": "6 PM",
+            "source": "Sunset prayer time (6:00 p.m., Krapf 1882, p. 253)",
             "pronunciation": "magháribi"
           },
           {
             "target": "esha",
-            "source": "7–8 PM",
+            "source": "Nightfall prayer time (7:00–8:00 p.m., Krapf 1882, p. 253)",
             "pronunciation": "esha"
           }
         ],
@@ -4867,7 +4867,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-krapf-1882-songs-taxonomies-topography",
-        "title": "Krapf Marine & Lover's Songs, Coastal Taxonomies & Mombasa",
+        "title": "Krapf Marine & Lover's Songs, Coastal Taxonomies & Mombasa Topography",
         "icon": "Compass",
         "description": "Explore the verbatim songs (Muakaje, Killefi, Mguáme, Simba ya Mungu), 5 coconut & 8 rice stages, 6 handful measures, 13 ornaments, and Mombasa/Rabai historical ethnography.",
         "words": [
@@ -4891,32 +4891,32 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Mvita",
-            "source": "Shehe Mvita",
+            "source": "Mombasa (associated with historic ruler Shehe Mvita, Krapf 1882, p. 241)",
             "pronunciation": "mvita"
           },
           {
             "target": "Kongowéa",
-            "source": "Makame iwe / Kiwemtu / Mku gnombe",
+            "source": "Ancient poetic name of Mombasa (Krapf 1882, p. 241)",
             "pronunciation": "kongowéa"
           },
           {
             "target": "Kiziwáni",
-            "source": "Kin.",
+            "source": "Mombasa Island ('On the Island', Kinika name in Krapf 1882, p. 241)",
             "pronunciation": "kiziwáni"
           },
           {
             "target": "Kidiamóni",
-            "source": "Kik.",
+            "source": "Mombasa (Kikamba name in Krapf 1882, p. 241)",
             "pronunciation": "kidiamóni"
           },
           {
             "target": "Ngoméni",
-            "source": "Kisamb.",
+            "source": "Mombasa ('At the Fortress', Kisambara name in Krapf 1882, p. 241)",
             "pronunciation": "ngoméni"
           },
           {
             "target": "Worra Mombása",
-            "source": "Galla",
+            "source": "People of Mombasa (Oromo/Galla name in Krapf 1882, p. 241)",
             "pronunciation": "worra-mombása"
           },
           {
@@ -4967,14 +4967,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-18",
     "unitNumber": 18,
-    "title": "Madan Zanzibar Swahili — Root Families, Dhow Navigation",
+    "title": "Madan Zanzibar Swahili — Root Families, Dhow Navigation & Kinship",
     "description": "Master Zanzibar Swahili morphological root families (-pend-, -shind-, -za-, -tu), Indian Ocean dhow navigation & tidal vocabulary, 4-generation kinship terms, and Nasal vs. Non-Nasal concords from A. C. Madan's 1902 Dictionary and 1905 Grammar.",
     "icon": "Compass",
     "color": "#10B981",
     "skills": [
       {
         "id": "swahili-madan-roots-concords",
-        "title": "Root Derivation Families (-pend-, -shind-, -za-) & Alliterative",
+        "title": "Root Derivation Families (-pend-, -shind-, -za-) & Alliterative Concord",
         "icon": "BookOpen",
         "description": "Learn how Zanzibar Swahili builds entire families of nouns and verbs from a single root and distinguishes Nasal (adjective) from Non-Nasal (pronoun/verb) concords (Madan 1902, pp. vii–xv & 1905, §§ 23–65).",
         "words": [
@@ -5009,13 +5009,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "mashindano"
           },
           {
-            "target": "mzazi",
-            "source": "mzaa",
+            "target": "mzazi (mzaa)",
+            "source": "parent / progenitor (from root -zaa 'bear/produce')",
             "pronunciation": "mzazi"
           },
           {
-            "target": "mzao",
-            "source": "mazao",
+            "target": "mzao (pl. mazao)",
+            "source": "offspring / crop produce (from root -zaa)",
             "pronunciation": "mzao"
           },
           {
@@ -5108,18 +5108,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-madan-maritime-kinship-customs",
-        "title": "Zanzibar Dhow Navigation, Tidal Cycles, 4-Generation Kinship",
+        "title": "Zanzibar Dhow Navigation, Tidal Cycles & 4-Generation Kinship",
         "icon": "Anchor",
         "description": "Explore Indian Ocean dhow architecture, tacking & monsoon terms, spring vs. neap tides, four generations of descendants, and communal customs from Madan's 1902 English-Swahili Dictionary.",
         "words": [
           {
-            "target": "Gubeti",
-            "source": "omo",
+            "target": "Gubeti (omo)",
+            "source": "Prow / stem-head of a dhow (Madan 1902)",
             "pronunciation": "gubeti"
           },
           {
-            "target": "Shetri",
-            "source": "tezi",
+            "target": "Shetri (tezi)",
+            "source": "Stern / poop-deck of a dhow (Madan 1902)",
             "pronunciation": "shetri"
           },
           {
@@ -5138,8 +5138,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "mjukuu-kijukuu-kilembwe-kining'ina"
           },
           {
-            "target": "Pukusa",
-            "source": "mapukusa",
+            "target": "Pukusa (pl. mapukusa)",
+            "source": "Goodwill bonus gift closing a bargain (Madan 1902)",
             "pronunciation": "pukusa"
           },
           {
@@ -5280,28 +5280,28 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-taylor-1891-rarer-words-history",
-        "title": "Supplementary Indexes 1",
+        "title": "Supplementary Indexes 1–4: Rare Words, Seasons & Historical Figures",
         "icon": "Award",
         "description": "Explore the 145 rarer Swahili words (pp. 175–177), the 5 monsoon/rain seasons (§ 128), the 10 marks of Swahili beauty (§ 425), and the 66 historical figures and places (pp. 179–180) in Taylor (1891).",
         "words": [
           {
             "target": "Kaskazi",
-            "source": "Nov.–Mar.",
+            "source": "North-East Monsoon hot season (November–March, Taylor 1891, p. 28)",
             "pronunciation": "kaskazi"
           },
           {
             "target": "Kusi",
-            "source": "May–Oct.",
+            "source": "South-West Monsoon cool season (May–October, Taylor 1891, p. 28)",
             "pronunciation": "kusi"
           },
           {
             "target": "Mchoo",
-            "source": "Sept.",
+            "source": "Showery season between Kusi and Vuli (September, Taylor 1891, p. 28)",
             "pronunciation": "mchoo"
           },
           {
             "target": "Vuli",
-            "source": "Oct.–Nov.",
+            "source": "Lesser rainy season (October–November, Taylor 1891, p. 28)",
             "pronunciation": "vuli"
           },
           {
@@ -5346,12 +5346,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Mwana Mkisi",
-            "source": "Kongowea",
+            "source": "Ancient pre-Islamic queen of Kongowea (Mombasa, Taylor 1891, p. 179)",
             "pronunciation": "mwana-mkisi"
           },
           {
             "target": "Bwana Mataka",
-            "source": "Siu",
+            "source": "Historic Sheikh of Siu in the Lamu Archipelago (Taylor 1891, p. 179)",
             "pronunciation": "bwana-mataka"
           }
         ],
@@ -5412,75 +5412,75 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-20",
     "unitNumber": 20,
-    "title": "Madan English-Swahili Vocabulary — Bishop Steere's",
+    "title": "Madan English-Swahili Vocabulary — Bishop Steere's Sarufi & Idioms",
     "description": "Master Bishop Steere's 13 bilingual Swahili grammatical definitions (Sarufi, p. 11), reversive -ua verbs, marriage voice derivations, dhow/tide/coral taxonomies, calico grades, arithmetic terms, and 120+ conversational idioms from A. C. Madan's 1917 English-Swahili Vocabulary.",
     "icon": "BookOpen",
     "color": "#10B981",
     "skills": [
       {
         "id": "swahili-madan-1917-sarufi-grammar-idioms-18-1",
-        "title": "Bishop Steere's 13 Sarufi Definitions, Reversive '-ua' Verbs",
+        "title": "Bishop Steere's 13 Sarufi Definitions & Reversive '-ua' Verbs",
         "icon": "Sparkles",
         "description": "Study the 13 Swahili grammatical definitions from Steere's Grammar in Swahili (p. 11) and key morphological and syntactic idioms across Madan (1917, pp. 1–56).",
         "words": [
           {
-            "target": "Rejeo",
-            "source": "-ye, -o, -cho",
+            "target": "Rejeo (-ye, -o, -cho)",
+            "source": "Relative pronoun / referrer (Steere's Sarufi definition, Madan 1917, p. 11)",
             "pronunciation": "rejeo"
           },
           {
             "target": "fungua",
-            "source": "lock/tie",
+            "source": "unfasten / untie / unlock (reversive of funga, Madan 1917, p. 33)",
             "pronunciation": "fungua"
           },
           {
             "target": "sindua",
-            "source": "door",
+            "source": "open / unbar a door (Madan 1917, p. 33)",
             "pronunciation": "sindua"
           },
           {
             "target": "zibua",
-            "source": "bottle",
+            "source": "uncork / unplug a bottle or pipe (reversive of ziba, Madan 1917, p. 33)",
             "pronunciation": "zibua"
           },
           {
             "target": "fumbua",
-            "source": "eyes/mouth",
+            "source": "open the eyes, mouth, or hand (reversive of fumba, Madan 1917, p. 33)",
             "pronunciation": "fumbua"
           },
           {
             "target": "funua",
-            "source": "cover",
+            "source": "uncover / remove a lid (reversive of funika, Madan 1917, p. 33)",
             "pronunciation": "funua"
           },
           {
             "target": "shonua",
-            "source": "sew",
+            "source": "unsew / rip out seams (reversive of shona, Madan 1917, p. 52)",
             "pronunciation": "shonua"
           },
           {
             "target": "kunjua",
-            "source": "fold",
+            "source": "unfold / smooth out (reversive of kunja, Madan 1917, p. 51)",
             "pronunciation": "kunjua"
           },
           {
             "target": "fumua",
-            "source": "unpick",
+            "source": "unweave / unpick / unravel (reversive of fuma, Madan 1917, p. 52)",
             "pronunciation": "fumua"
           },
           {
             "target": "oa",
-            "source": "man",
+            "source": "marry (said of the husband, active voice, Madan 1917, p. 28)",
             "pronunciation": "oa"
           },
           {
             "target": "olewa",
-            "source": "woman",
+            "source": "be married (said of the wife, passive voice, Madan 1917, p. 28)",
             "pronunciation": "olewa"
           },
           {
             "target": "oana",
-            "source": "couple",
+            "source": "marry each other (said of the couple, reciprocal voice, Madan 1917, p. 28)",
             "pronunciation": "oana"
           },
           {
@@ -5538,18 +5538,18 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "amerikano"
           },
           {
-            "target": "jumla",
-            "source": "jumlisha",
+            "target": "jumla (jumlisha)",
+            "source": "sum / total (to add up in arithmetic, Madan 1917)",
             "pronunciation": "jumla"
           },
           {
-            "target": "baki",
-            "source": "kutoa",
+            "target": "baki (kutoa)",
+            "source": "remainder / difference (to subtract in arithmetic, Madan 1917)",
             "pronunciation": "baki"
           },
           {
-            "target": "tháruba",
-            "source": "zidisha / saba fi saba",
+            "target": "tháruba (zidisha / saba fi saba)",
+            "source": "multiplication (to multiply / seven times seven, Madan 1917)",
             "pronunciation": "tháruba"
           },
           {
@@ -5591,7 +5591,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-21",
     "unitNumber": 21,
-    "title": "Bishop Edward Steere's 'Swahili Tales, as Told",
+    "title": "Bishop Edward Steere's 'Swahili Tales, as Told by Natives of Zanzibar'",
     "description": "Master the complete oral narratives, 20 verbatim Mifano proverbs (pp. 191–195), 14 Vitendawili riddles (pp. 417–421 & p. 492), Kimvita vs. Kiunguja vs. Kingozi/Kiamu poetics, 37 italicized terms (p. 490), 103 ethnographic notes (pp. 490–503), and 12 corrigenda (p. 504) of Steere (1870).",
     "icon": "BookOpen",
     "color": "#10B981",
@@ -5619,7 +5619,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kitendawili!",
-            "source": "Riddle challenge & prize-town protocol + all 14 riddle solutions: (1) Egg, (2)",
+            "source": "Riddle challenge & prize-town protocol + all 14 riddle solutions: (1) Egg, (2) Pineapple, (3) Stars, (4) Bedstead, (5) Well",
             "pronunciation": "kitendawili"
           }
         ],
@@ -5664,12 +5664,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Liongo Fumo",
-            "source": "Shanga / Ozi",
+            "source": "Hero-king & poet of Shanga and Ozi on the Kenyan coast (Steere 1870, pp. 439–471)",
             "pronunciation": "liongo-fumo"
           },
           {
             "target": "Mashairi ya Liongo",
-            "source": "Muyuweni",
+            "source": "Classical 5-line takhmisi poem by Sheikh Abdallah bin Ali bin Nasir Muyuweni (Steere 1870, pp. 455–471)",
             "pronunciation": "mashairi-ya-liongo"
           },
           {
@@ -5679,7 +5679,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Fungate",
-            "source": "Note 1",
+            "source": "Seven-day wedding honeymoon period (Steere 1870, Note 1, p. 491)",
             "pronunciation": "fungate"
           }
         ],
@@ -5734,7 +5734,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "upunga → kidaka → kitale → dafu → koroma → nazi → joya → mbata (pp. 33–34)",
-            "source": "The 8 maturation stages of the coconut: flower-embryo → tiny nut → half-grown →",
+            "source": "The 8 maturation stages of the coconut: flower-embryo → tiny nut → half-grown → drinking nut (dafu) → full-grown (koroma) → ripe nut (nazi) → sprouted sponge (joya) → dried copra (mbata)",
             "pronunciation": "upunga-kidaka-kitale-dafu"
           },
           {
@@ -5753,8 +5753,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "bora-kupata"
           },
           {
-            "target": "Siku a mwaka",
-            "source": "Kigunzi",
+            "target": "Siku ya mwaka (Kigunzi)",
+            "source": "Swahili Solar New Year festival & preceding decade (Steere & Madan 1894)",
             "pronunciation": "siku-a-mwaka"
           },
           {
@@ -5829,23 +5829,23 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "description": "Master the 9-language Bantu prefix table (p. 234), dialect sound correspondences (p. 243), the 18 named parts of a man's Kanzu (p. 299), and all 41 named Mita of Zanzibar Town (pp. 346–347).",
         "words": [
           {
-            "target": "Badani",
-            "source": "Kimo",
+            "target": "Badani (Kimo)",
+            "source": "Main body panels of a man's tailored kanzu robe (Steere & Madan 1894, p. 299)",
             "pronunciation": "badani"
           },
           {
-            "target": "Kazi ya shingo",
-            "source": "Tiki, Mrera, Viboko, Vinara",
+            "target": "Kazi ya shingo (Tiki, Mrera, Viboko, Vinara)",
+            "source": "Embroidered collar & neck-stitching patterns of a kanzu (Steere & Madan 1894, p. 299)",
             "pronunciation": "kazi-ya-shingo"
           },
           {
-            "target": "Mjuzi",
-            "source": "shararaji",
+            "target": "Mjuzi (shararaji)",
+            "source": "Decorative seam-stitching on a kanzu (Steere & Madan 1894, p. 299)",
             "pronunciation": "mjuzi"
           },
           {
-            "target": "Vipaji",
-            "source": "viguu",
+            "target": "Vipaji (viguu)",
+            "source": "Side gusset gores of a kanzu (Steere & Madan 1894, p. 299)",
             "pronunciation": "vipaji"
           },
           {
@@ -5855,17 +5855,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "30 Peninsula Mita of Zanzibar Town: Shangani, Baghani, Gerezani",
-            "source": "All 30 named quarters (Mita) on the Stone Town peninsula of Zanzibar documented",
+            "source": "All 30 named quarters (Mita) on the Stone Town peninsula of Zanzibar documented in Steere & Madan (1894, pp. 346–347)",
             "pronunciation": "30-peninsula-mita-of"
           },
           {
-            "target": "11 Ng'ambo Mita Across the Creek: Ng'ambo, Mchangani, Gulioni, Kwa",
-            "source": "All 11 named quarters (Mita) on the other side of the creek at Ng'ambo in Zanzibar Town",
+            "target": "11 Ng'ambo Mita Across the Creek: Ng'ambo, Mchangani, Gulioni, Kwa Boko",
+            "source": "All 11 named quarters (Mita) on the other side of the creek at Ng'ambo in Zanzibar Town (Steere & Madan 1894, p. 347)",
             "pronunciation": "11-ng'ambo-mita-across"
           },
           {
             "target": "Zanzibar ch = t (M.)",
-            "source": "Steere's Coastal Dialect Sound-Correspondence Table linking Zanzibar (Kiunguja)",
+            "source": "Steere's Coastal Dialect Sound-Correspondence Table linking Zanzibar (Kiunguja), Mombasa (Kimvita), Lamu (Kiamu), Merima, Patta, and Ozi (p. 243)",
             "pronunciation": "za-nzi-bar / mo-mba-sa / la-mu / me-ri-ma / pa-tta / o-zi"
           }
         ],
@@ -5878,7 +5878,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-steere-1894-appendices-1-to-5",
-        "title": "Appendices I",
+        "title": "Appendices I–V: Kinyume, Epistles, Sinébar, Phrases & 32-Point Compass",
         "icon": "Compass",
         "description": "Master Johari's 52 Merima Kinyume specimens (pp. 425–426), the 4 letters/poems (pp. 427–429), the interlinear tale of Sinébar (pp. 431–442), the 197 phrases (pp. 443–453), and Appendix V's weights, measures, and 32-Point Compass (pp. 455–458).",
         "words": [
@@ -5894,7 +5894,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "47 dollars (reale) = 100 rupees (rupia)",
-            "source": "Appendix V currency scale, walking-hour distances in Zanzibar, and regional",
+            "source": "Appendix V currency scale, walking-hour distances in Zanzibar, and regional weights & measures (pp. 455–457)",
             "pronunciation": "47-dollars-100-rupees"
           },
           {
@@ -5940,14 +5940,14 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-23",
     "unitNumber": 23,
-    "title": "Mrs. F. Burt & Rev. W. E. Taylor — Mombasa (Ki-Mvita)",
+    "title": "Mrs. F. Burt & Rev. W. E. Taylor — Mombasa (Ki-Mvita) Grammar",
     "description": "Master the complete Mombasa (Ki-Mvita) Swahili grammar, Rev. W. E. Taylor's Dialect Tables I–IV & Phonetic Exercises 1–21, all 21 Daily-Life Studies, 10 Noun Classes (including Class VI Monster Class), the 23-form kufunga derivative table, Mombasa Money/Weights/Measures, the 3 Mombasa Letters of A.H. 1324 (1906 CE), Synonym Groups, and all 44 Aspirated/Dental Homonym Groups from Mrs. F. Burt's 'Swahili Grammar and Vocabulary' (SPCK London, 1910).",
     "icon": "BookOpen",
     "color": "#10B981",
     "skills": [
       {
         "id": "swahili-burt-1910-taylor-dialects-phonetics-21",
-        "title": "Rev. W. E. Taylor's Dialect Tables I",
+        "title": "Rev. W. E. Taylor's Dialect Tables I–IV & Phonetic Exercises",
         "icon": "Volume2",
         "description": "Compare Southern (Ki-Unguja, Ki-P'emba, Ki-Mrima), Central (Ki-Mvita), and Northern (Ki-Amu, Ki-Pate, Ki-Gunya, Ki-ti-kuu) Swahili across Tables I–IV and master Taylor's 21 graded ear/voice exercises.",
         "culturalNote": "Drawn up by Mrs. F. Burt (signed A. E. B., Bourne End Parsonage, Boxmoor, 1910) on the Berlitz method, with Part I and the Syllabary contributed by Rev. W. E. Taylor, M.A. (author of African Aphorisms, 1891, and Giryama Vocabulary and Collections, 1891).",
@@ -6234,7 +6234,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "29 Gift/Present/Bribe/Fee Terms under *Bakshishi (p. 21): zawadi, tunu",
-            "source": "Complete classification of gifts, keepsakes, hospitality offerings, wedding/work",
+            "source": "Complete classification of gifts, keepsakes, hospitality offerings, wedding/work fees, and bribes (Madan 1903, p. 21)",
             "pronunciation": "29-gift"
           },
           {
@@ -6279,7 +6279,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kitanda cha mfumi (Loom, pp. 165–166): mdoshi (treadle), faraka/mfariki",
-            "source": "Complete technical anatomy of the Zanzibari weaver's loom, bow-drill, water-pipe",
+            "source": "Complete technical anatomy of the Zanzibari weaver's loom, bow-drill, and water-pipe (Madan 1903, pp. 165–166)",
             "pronunciation": "kitanda-cha-mfumi-mdoshi"
           },
           {
@@ -6389,7 +6389,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-25",
     "unitNumber": 25,
-    "title": "Mohamed Mwamzandi — The Pragmatics of Swahili Relative",
+    "title": "Mohamed Mwamzandi — The Pragmatics of Swahili Relative Clauses",
     "description": "Master all 20 pages (pp. 227–246) of Mohamed Mwamzandi's 2022 study 'The pragmatics of Swahili relative clauses' (in Sibanda, Ngonyani, Choti & Biersteker, eds., Language Science Press): the 3 RC strategies (tensed, amba, general), TAM & subject-postposing rules, Russell's (1992) disambiguation test, the 440-RC Helsinki Corpus of Swahili study, Figure 1 (restrictiveness), Table 1 (word length & adverbial fronting), Table 2 (grammatical role & continue vs. shift topic transitions), all 32 interlinear examples, 20 abbreviations, and 27 references.",
     "icon": "BookOpen",
     "color": "#10B981",
@@ -6440,13 +6440,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-mwamzandi-2022-corpus-restrictiveness-length-23",
-        "title": "Helsinki Corpus Methodology, Restrictiveness (Figure 1) & RC",
+        "title": "Helsinki Corpus Methodology, Restrictiveness (Figure 1) & RC Length",
         "icon": "BarChart2",
         "description": "Study Mwamzandi's (2022, pp. 233–238) methodology using the 25M-word Helsinki Corpus of Swahili (HCS 2.0) and Korp, the Chi-squared distribution of restrictive vs. non-restrictive RCs (Figure 1), ANOVA word-length results (Table 1), and fronted adverbial phrases across Examples (14)–(24).",
         "words": [
           {
             "target": "Helsinki Corpus of Swahili 2.0: N = 440 RCs",
-            "source": "Primary corpus dataset of mid-20th-century to 2015 Swahili newspaper, literary",
+            "source": "Primary corpus dataset of mid-20th-century to 2015 Swahili newspaper, literary, and parliamentary texts (Mwamzandi 2022, p. 233)",
             "pronunciation": "he-lsi-nki co-rpus / ko-rp"
           },
           {
@@ -6456,8 +6456,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "ambao",
-            "source": "which (analytic relative pronoun)",
-            "pronunciation": "a-mba-ye"
+            "source": "who (plural) / which (analytic relative pronoun)",
+            "pronunciation": "a-mba-o"
           },
           {
             "target": "(14) Bwana yule [a-na-ye-sinzia] (p. 234)",
@@ -6465,7 +6465,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "bwana-yule"
           },
           {
-            "target": "(17) A-li-kuwa a-me-va-li-a rubega nyeupe [amba-yo i-li-anza ku-poteza",
+            "target": "(17) A-li-kuwa a-me-va-li-a rubega nyeupe [amba-yo i-li-anza ku-poteza weupe wake]",
             "source": "He was wearing a white cloak that had started to lose its whiteness (amba non-restrictive)",
             "pronunciation": "a-li-kuwa-a-me-va-li-a-rubega-nyeupe"
           },
@@ -6489,7 +6489,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-mwamzandi-2022-topic-transitions-table2-23",
-        "title": "Information Structure, Grammatical Role & Continue vs. Shift",
+        "title": "Information Structure, Grammatical Role & Continue vs. Shift Transitions",
         "icon": "Compass",
         "description": "Master Section 4.3 and Section 5 of Mwamzandi (2022, pp. 238–246): Table 2 (Head Noun grammatical role × topic status), continue transitions (HN = Subj, topic) vs. shift transitions (HN = Obj/PP, topic), Examples (25a–c)–(32), and all 27 scholarly references.",
         "words": [
@@ -6509,7 +6509,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "waandishi-wa-me-ach-an-a-na-m-tindo"
           },
           {
-            "target": "(29) Bali Rehema a-li-po-nyanyua macho ku-m-tazama Bikiza [a-li-ye-leta",
+            "target": "(29) Bali Rehema a-li-po-nyanyua macho ku-m-tazama Bikiza [a-li-ye-leta taarifa ya kifo]",
             "source": "But when Rehema raised her eyes to look at Bikiza who brought the message of death...",
             "pronunciation": "bali-rehema-a-li-po-nyanyua-macho"
           },
@@ -6531,7 +6531,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
   {
     "id": "swahili-unit-26",
     "unitNumber": 26,
-    "title": "Beech 'Aids to the Study of Ki-Swahili' — Swahili",
+    "title": "Beech 'Aids to the Study of Ki-Swahili' — Swahili Traditions & Pemba",
     "description": "Master Mervyn W. H. Beech's 1918 'Aids to the Study of Ki-Swahili' line by line: Preface & Three Stages of Swahili Traditions (Thelatha Taifa, Tissa Taifa, Ki-Jezirati, Wa-ungwana vs. Mzalia), Study I (28-Letter Ajami Alphabet, 16 Letters, 6 Ki-Amu terms & the 4-stream Ki-Jizirat story), Study II (Banawasi, 8-Point Wind Compass, 7 Uses of -ka-, Past Tense Note & Fathili za Punda ni Mashuzi), Study III (67 Mafumbo, 4 Enigmas/Tambo & 30 Kitendawili), and Study IV (Magic in Pemba: Ngoma ya Pepo, Kikoa kia Wachawi & Sihiri).",
     "icon": "BookOpen",
     "color": "#0F766E",
@@ -6544,7 +6544,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Preface: Higher Standard Exam",
-            "source": "Compiler's Preface, examination context, Ovid quotation, and five named Arab/Swahili",
+            "source": "Compiler's Preface, examination context, Ovid quotation, and five named Arab/Swahili contributors (Beech 1918, pp. v–xvi)",
             "pronunciation": "preface-higher-standard-exam"
           },
           {
@@ -6564,12 +6564,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "28-Letter Alphabet (p. 5): Alifu, Bei, Tei, Thei, Jîmu, Hhei, Khei",
-            "source": "Ki-Swahili 28-letter Ajami alphabet, left-to-right Arabic numerals, 10 epistolary",
+            "source": "Ki-Swahili 28-letter Ajami alphabet, left-to-right Arabic numerals, and 10 epistolary honorifics (Beech 1918, pp. 5–11)",
             "pronunciation": "a-li-fu bei tei thei ji-mu / l-ha-thwa-rat l-je-nab l-mo-heb"
           },
           {
             "target": "Letters 1–16 (pp. 12–43) & 6 Ki-Amu Terms in Letter 16",
-            "source": "All 16 original administrative/legal/personal letters, the 6 Lamu coconut-toddy",
+            "source": "All 16 original administrative/legal/personal letters and the 6 Lamu coconut-toddy terms (Beech 1918, pp. 12–43)",
             "pronunciation": "letters-116-6-ki-amu"
           }
         ],
@@ -6599,16 +6599,16 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "Kusi",
             "source": "South monsoon wind",
-            "pronunciation": "ka-si-ka-zi"
+            "pronunciation": "ku-si"
           },
           {
             "target": "Matlai",
             "source": "East wind",
-            "pronunciation": "ka-si-ka-zi"
+            "pronunciation": "ma-tla-i"
           },
           {
             "target": "7 Uses of Connective -ka- (fn. 59-9): (a) Narrative (akaondoka akaenda)",
-            "source": "Seven grammatical functions of the connective -ka- tense (fn. 59-9) and the Note on",
+            "source": "Seven grammatical functions of the connective -ka- tense (fn. 59-9) and the Note on Past Tense Infixes (p. 85)",
             "pronunciation": "a-ka-o-ndo-ka / n-na-kwe-nda / n-me-kwe-nda / ka-na"
           },
           {
@@ -6723,8 +6723,8 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "description": "Master all 67 Mafumbo, 4 Enigmas/Tambo, 30 Kitendawili, and the bilingual Ki-Jizirat treatise on Ngoma ya Pepo, Kikoa kia Wachawi, and Sihiri charms in Pemba.",
         "words": [
           {
-            "target": "Study III Aphorisms: (1) Mpiga la kuanza hunyamaziwa / Mpiga la pili",
-            "source": "Representative aphorisms across the 67 numbered Mafumbo in Ki-Jizirat and Ki-Mvita",
+            "target": "Study III Aphorisms: (1) Mpiga la kuanza hunyamaziwa / Mpiga la pili huitwa akambiwa",
+            "source": "Representative aphorisms across the 67 numbered Mafumbo in Ki-Jizirat and Ki-Mvita (Beech 1918, pp. 117–126)",
             "pronunciation": "study-iii-aphorisms-mpiga"
           },
           {
@@ -6734,17 +6734,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "7 Ki-Jizirat & 23 Ki-Mvita Kitendawili (pp. 129–132): Ki-Jizirat (1)",
-            "source": "Representative riddles across the 7 Ki-Jizirat and 23 Ki-Mvita Kitendawili in Study",
+            "source": "Representative riddles across the 7 Ki-Jizirat and 23 Ki-Mvita Kitendawili in Study III (Beech 1918, pp. 129–132)",
             "pronunciation": "7-ki-jizirat-23-ki-mvita"
           },
           {
             "target": "Study IV §1–§2 (pp. 134–149): Ngoma ya Pepo",
-            "source": "Complete terminology of the Pemba Spirit-Dance (Ngoma ya Pepo) and Witches' Sabbath",
+            "source": "Complete terminology of the Pemba Spirit-Dance (Ngoma ya Pepo) and Witches' Guild (Kikoa kia Wachawi, pp. 134–149)",
             "pronunciation": "study-iv-12-ngoma"
           },
           {
             "target": "Study IV §3–§5 (pp. 150–159): Sihiri Charms",
-            "source": "All botanical, astrological, and talismanic Sihiri charms and true Pemba case",
+            "source": "All botanical, astrological, and talismanic Sihiri charms and true Pemba case histories (Beech 1918, pp. 150–159)",
             "pronunciation": "study-iv-35-sihiri"
           }
         ],
@@ -6812,7 +6812,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "Vitimbi",
-            "source": "Historical evolution of Kenyan television and stand-up comedy from 1980s KBC Vitimbi",
+            "source": "Historical evolution of Kenyan television and stand-up comedy from 1980s KBC Vitimbi and 1990s Redykyulass to Churchill Show (Michieka & Muaka 2016)",
             "pronunciation": "vi-ti-mbi / m-zee o-jwa-ng / ma-ma ka-ya-i / chu-rchi-ll"
           },
           {
@@ -6827,12 +6827,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Nyanza Prefixes vs. Central Suffixes",
-            "source": "Morphological wordplay contrasting Nyanza academic titles (prefixes) with Central",
+            "source": "Morphological wordplay contrasting Nyanza academic titles (prefixes) with Central Kenya occupational epithets (suffixes, Michieka & Muaka 2016)",
             "pronunciation": "mwa-ngi wa e-qui-ty / wa-nji-ku wa ma-ka-ra"
           },
           {
             "target": "Sheng 'shrubbing / srub' (Owago-Onyiro Ex. 13): sida (< shida)",
-            "source": "Metalinguistic routine on [ʃ] ↔ [s] substitution ('shrubbing'), humorous claim that",
+            "source": "Metalinguistic routine on [ʃ] ↔ [s] substitution ('shrubbing') in Kenyan English and Sheng (Michieka & Muaka 2016, Ex. 13)",
             "pronunciation": "si-da / shi-ti-ka-shel / a-i-shi-shi"
           }
         ],
@@ -6845,23 +6845,23 @@ export const SWAHILI_UNITS: CourseUnit[] = [
       },
       {
         "id": "swahili-clem-2019-pesetsky-gould-scott-nurse-skill",
-        "title": "Semantic Gender & Kinship Possessors, Relative Scope & Northern",
+        "title": "Semantic Gender & Kinship Possessors, Relative Scope & Northern Contact",
         "icon": "Sparkles",
         "description": "Master Jonathan Pesetsky's (2019, Ch. 29, pp. 555–570) analysis of Class 9/10 kinship possessor agreement, Isaac Gould & Tessa Scott's (2019, Ch. 23, pp. 441–462) Kenyan Swahili relative clause scope diagnostics, and Derek Nurse's (2019, Ch. 33, pp. 649–665) Northern Swahili–southern Somali contact study.",
         "words": [
           {
             "target": "N-dugu y-angu m-refu a-li-anguka vs. N-dugu m-refu w-angu a-li-anguka",
-            "source": "Class 9/10 kinship possessor immunity when immediately post-nominal vs. Class 1/2",
+            "source": "Class 9/10 kinship possessor agreement when immediately post-nominal vs. Class 1/2 animate agreement when separated (Pesetsky 2019)",
             "pronunciation": "n-du-gu ya-ngu m-re-fu a-li-a-ngu-ka / w-a-ngu / za-ngu"
           },
           {
             "target": "kitabu amba-cho kila mwanafunzi a-li-(ki)-soma",
-            "source": "Three Kenyan Swahili relative clause strategies and Object Marker (OM) scope",
+            "source": "Three Kenyan Swahili relative clause strategies and Object Marker (OM) scope reconstruction (Gould & Scott 2019)",
             "pronunciation": "ki-ta-bu a-mba-cho / a-li-cho-ki-so-ma / a-ki-so-ma-cho"
           },
           {
             "target": "Northern Swahili ↔ Southern Somali",
-            "source": "Historical phonological, morphological, and lexical contact along the Benadir",
+            "source": "Historical phonological, morphological, and lexical contact along the Benadir and Tana–Juba coast (Nurse 2019)",
             "pronunciation": "mwii-ni / ba-ju-ni / ti-kuu / si-u / pa-te / a-mu"
           }
         ],
@@ -6879,13 +6879,13 @@ export const SWAHILI_UNITS: CourseUnit[] = [
     "unitNumber": 28,
     "title": "Indian Ocean Loanwords & Modern Kenyan Swahili",
     "description": "WOLD etymological vocabulary, coastal geography, and contemporary Kenyan civic & urban expressions from Kaikki.org and Kencorpus",
-    "icon": "🌊",
+    "icon": "Waves",
     "color": "#2563EB",
     "skills": [
       {
         "id": "swahili-open-skill-1",
         "title": "Coastal Geography & Contemporary Swahili",
-        "icon": "🧭",
+        "icon": "Compass",
         "description": "Natural world terminology and modern Kenyan professional & everyday nouns",
         "grammarTip": "Abstract nouns of profession, civic status, and quality in Swahili are productively formed in Class 11/14 with the prefix u- (e.g., ualimu 'teaching', uaminifu 'honesty', uananchi 'citizenship').",
         "culturalNote": "Compiled from Thilo Schadeberg's WOLD Swahili Vocabulary (CC-BY-4.0), Tatu Ylönen's Kaikki.org Swahili Dictionary (CC-BY-SA-4.0), and Kencorpus (CC-BY-4.0).",
@@ -7031,7 +7031,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Marahaba !",
-            "source": ". Thank you ! it is well !"
+            "source": "Thank you! It is well!"
           }
         ]
       },
@@ -7093,7 +7093,16 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ma-ra mo-ja"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Watu wawili waligawana mkate huo nusu kwa nusu.",
+            "source": "The two people shared that bread half and half."
+          },
+          {
+            "target": "Wageni wote kumi wamefika nyumbani salama.",
+            "source": "All ten guests have arrived home safely."
+          }
+        ]
       }
     ]
   }

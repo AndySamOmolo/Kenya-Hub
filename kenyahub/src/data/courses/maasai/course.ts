@@ -36,7 +36,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "maasai-nouns-society",
-        "title": "Salutations & Masculine (Ol-) / Feminine (En-) Nouns in Pastoral",
+        "title": "Salutations & Masculine (Ol-) / Feminine (En-) Nouns in Pastoral Maa",
         "icon": "Tractor",
         "description": "Learn greetings and core nouns for society, wildlife, and landscape from Hinde (1901), Hollis (1905), and Hobley (1922).",
         "tips": "In ɔl Maa (Hollis 1905, pp. 9–14), masculine/augmentative nouns carry the prefix 'ol- / ɔl-' (plural 'il-') and feminine/diminutive nouns carry 'en- / ɛn-' (plural 'in-'): ol-murani → il-muran (warrior → warriors), ol-oiboni → il-oibonok (medicine-man/prophet), Eng-ai (God/sky/rain), en-gare (water/river). Hinde (1901, p. 41) and Hollis (1905, pp. 101–102, 284–285) record 'Sopai! — Epa! (Hepa!)' and 'Takwenya! — Iko! (Igho!)'.",
@@ -48,9 +48,9 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Hinde (1901, p. 41) & Hollis (1905, pp. 101–102, 284–285) salutations"
           },
           {
-            "target": "Hepa!)",
-            "source": "Greetings to women/elders!",
-            "pronunciation": "so-pai / takwenya",
+            "target": "Takwenya! (resp. Iko! / Igho!)",
+            "source": "Greetings to women/elders! (and reply)",
+            "pronunciation": "ta-kwe-nya / ee-koh",
             "hint": "Hinde (1901, p. 41) & Hollis (1905, pp. 101–102, 284–285) salutations"
           },
           {
@@ -264,7 +264,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
       },
       {
         "id": "maasai-numbers-proverbs",
-        "title": "Gendered Numerals 1",
+        "title": "Gendered Numerals 1–10 & Classical Maa Proverbs",
         "icon": "Award",
         "description": "Count from 1 to 10 across feminine and masculine genders and study classical 1905 proverbs.",
         "tips": "In Maa (Hollis 1905, pp. 41–45), numbers 1–4, 7, 8, and 9 change form for masculine vs. feminine/place nouns: nabo f. / obo m. / nebo pl. (1), are f. / aare m. (2), uni f. / okuni m. (3), ongwan f. / oongwan m. (4), naapishana f. / oopishana m. (7), isyet f. / oisyet m. (8), and naaudo f. / oudo m. (9), whereas 5 (imiet), 6 (ile), and 10 (tomon) are invariable.",
@@ -351,11 +351,11 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Eata en-gewarie 'n-giyaa.",
-            "source": "The night has ears ."
+            "source": "The night has ears."
           },
           {
             "target": "Ekwenikye 'n-guk in-guruon.",
-            "source": "Coals laugh at the ashes ."
+            "source": "Coals laugh at the ashes."
           }
         ],
         "authoredExercises": [
@@ -506,7 +506,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Ngongo Bagas",
-            "source": "Stream)",
+            "source": "Ngong Hills / Spring of the Athi River ('The Eye of the Spring')",
             "pronunciation": "en-gare nyro-bi / ngongo ba-gas",
             "hint": "Hinde (1901, p. 42) & Hollis (1905)"
           },
@@ -616,7 +616,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Medany ol-kimojino obo el-lashei.",
-            "source": "One finger will not kill a louse ."
+            "source": "One finger will not kill a louse."
           }
         ],
         "authoredExercises": [
@@ -660,7 +660,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-3",
     "unitNumber": 3,
     "title": "Family, Kinship, Clans & Social Organization",
-    "description": "Master family, kinship, clans & social organization in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
+    "description": "Master family, kinship, clans & social organization in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "User",
     "color": "#DC2626",
     "skills": [
@@ -977,7 +977,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-4",
     "unitNumber": 4,
     "title": "Numbers, Counting, Currency & Measures",
-    "description": "Master numbers, counting, currency & measures in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
+    "description": "Master numbers, counting, currency & measures in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "Scale",
     "color": "#DC2626",
     "skills": [
@@ -1027,13 +1027,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "obô (masc.)",
-            "source": "masculine",
+            "source": "One (1) — masculine",
             "pronunciation": "na-bo / obo / ne-bo",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "nebô (place)",
-            "source": "place",
+            "source": "One (1) — place",
             "pronunciation": "na-bo / obo / ne-bo",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
@@ -1045,7 +1045,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "aàre, ɔáre (masc.)",
-            "source": "masculine",
+            "source": "Two (2) — masculine",
             "pronunciation": "are / aa-re oa-re",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
@@ -1057,7 +1057,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "okúni (masc.)",
-            "source": "masculine",
+            "source": "Three (3) — masculine",
             "pronunciation": "uni / o-ku-ni",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
@@ -1069,7 +1069,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "oóŋwan (masc.)",
-            "source": "masculine",
+            "source": "Four (4) — masculine",
             "pronunciation": "ongwan / oongwan",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           }
@@ -1180,7 +1180,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "oópishana (masc.)",
-            "source": "masculine",
+            "source": "Seven (7) — masculine",
             "pronunciation": "naa-pisha-na / oo-pisha-na",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
@@ -1198,7 +1198,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "oódó (masc.)",
-            "source": "masculine",
+            "source": "Nine (9) — masculine",
             "pronunciation": "naau-do / oo-do",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
@@ -1356,7 +1356,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-5",
     "unitNumber": 5,
     "title": "Food, Cuisine, Crops & Livestock Husbandry",
-    "description": "Master food, cuisine, crops & livestock husbandry in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
+    "description": "Master food, cuisine, crops & livestock husbandry in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "Tractor",
     "color": "#DC2626",
     "skills": [
@@ -1637,7 +1637,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-6",
     "unitNumber": 6,
     "title": "Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
+    "description": "Master nature, landscape, flora & east african wildlife in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "PawPrint",
     "color": "#DC2626",
     "skills": [
@@ -1914,7 +1914,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-7",
     "unitNumber": 7,
     "title": "The Human Body, Health, Medicine & Safety",
-    "description": "Master the human body, health, medicine & safety in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
+    "description": "Master the human body, health, medicine & safety in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "Heart",
     "color": "#DC2626",
     "skills": [
@@ -1933,7 +1933,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           },
           {
-            "target": "ɛŋ-kɪ-ɔɔk (enkiook",
+            "target": "ɛŋ-kɪ-ɔɔk (enkiook, pl. in-giyaa)",
             "source": "Ear",
             "pronunciation": "eng-ki-ook",
             "hint": "Wikipedia Eastern Nilotic languages & Hollis (1905)"
@@ -2276,7 +2276,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-8",
     "unitNumber": 8,
     "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
-    "description": "Master core verbs, tenses, negation & verbal extensions in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
+    "description": "Master core verbs, tenses, negation & verbal extensions in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "BookOpen",
     "color": "#DC2626",
     "skills": [
@@ -2590,7 +2590,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-9",
     "unitNumber": 9,
     "title": "Time, Indigenous Calendar, Seasons & Navigation",
-    "description": "Master time, indigenous calendar, seasons & navigation in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
+    "description": "Master time, indigenous calendar, seasons & navigation in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "Map",
     "color": "#DC2626",
     "skills": [
@@ -2624,12 +2624,12 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "pronunciation": "e-ta-wanga"
           },
           {
-            "target": "eronongorr, / engorr",
+            "target": "eronongorr / engorr",
             "source": "Soon",
             "pronunciation": "e-ro-nongorr"
           },
           {
-            "target": "ngatitin, / ngatijin",
+            "target": "ngatitin / ngatijin",
             "source": "Time",
             "pronunciation": "nga-ti-tin"
           },
@@ -2857,7 +2857,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-10",
     "unitNumber": 10,
     "title": "Conversational Phrases, Idioms & Daily Dialogue",
-    "description": "Master conversational phrases, idioms & daily dialogue in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A.",
+    "description": "Master conversational phrases, idioms & daily dialogue in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "MessageCircle",
     "color": "#DC2626",
     "skills": [
@@ -3758,7 +3758,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Ino! ṣōmō!",
             "source": "Go away!",
-            "pronunciation": "ino-ōmō"
+            "pronunciation": "ino-shōmō"
           },
           {
             "target": "Wōu tāsīū!",
@@ -3813,12 +3813,12 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Ṣomo erriita ngiṣu!",
             "source": "Go and herd the cattle!",
-            "pronunciation": "omo-erriita-ngiu"
+            "pronunciation": "shomo-erriita-ngishu"
           },
           {
             "target": "Ol aṣe (m.), eñgaṣe (f.)",
             "source": "Calf (m./f.)",
-            "pronunciation": "ol-ae"
+            "pronunciation": "ol-ashe / eng-ashe"
           },
           {
             "target": "Ol airini",
@@ -3864,7 +3864,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Sopai! — Eépa! Totóna enné! Injohi maōko! — Asai! Elotu taīsere. Biado!",
-            "source": "Good morning! — Reply! Sit here! Give me to drink! — Many thanks! He will return to-morrow. Goodbye! ."
+            "source": "Good morning! — Reply! Sit here! Give me to drink! — Many thanks! He will return to-morrow. Goodbye!"
           }
         ]
       }
@@ -3873,14 +3873,14 @@ export const MAASAI_UNITS: CourseUnit[] = [
   {
     "id": "maasai-unit-14",
     "unitNumber": 14,
-    "title": "Complete Monograph",
+    "title": "A. C. Hollis (1905): Complete Masai Monograph",
     "description": "Master the complete linguistic, literary, and ethnographic corpus of A. C. Hollis's 'The Masai: Their Language and Folklore' (Oxford: Clarendon Press, 1905, pp. i–xxviii, 1–359), dictated by Justin Ol-omeni.",
     "icon": "BookOpen",
     "color": "#DC2626",
     "skills": [
       {
         "id": "maasai-hollis-1905-grammar-classes-fingers",
-        "title": "Part I Grammar",
+        "title": "Part I Grammar: Noun Classes, Numerals & Verb Prefixes",
         "icon": "BookOpen",
         "description": "Master the 6 substantive plural classes, kinship morphology, 5 finger names, finger-counting signs (1–60), 27 subject–object verb prefixes, and 8 derivative verb formations in Hollis (1905, pp. 1–102).",
         "tips": "In Hollis (1905, pp. 18–34), substantives are divided into 6 Plural Classes: Class I (drops -i/-ni or adds -i/-n/-o/-k), Class II (adds -a/-na/-ishi/-shi/-sin/-tin), Class III (-a/-o → -i, -i/-oi → -ok, -i → -on), Class IV (reduplicates final consonant before -i/-o/-u: ol-alem → il-alema, en-geju → in-gejek), Class V (collective plurals forming singulars in -i/-ni/-oi), and Class VI (irregular/suppletive plurals: en-giteng → in-gishu). Numerals (pp. 41–45) inflect for gender on 1, 2, 3, 4, 7, 8 (oisyet m. / isyet f.), and 9 (oudo m. / naaudo f.), while 5 (imiet), 6 (ile), and 10 (tomon) are invariable.",
@@ -4058,24 +4058,24 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "aa-suj",
-            "source": "Portmanteau Subject–Object Verb Prefixes",
+            "source": "I follow thee (portmanteau 1SG→2SG prefix aa-)",
             "pronunciation": "aa-suj / ki-suj"
           }
         ],
         "sentences": [
           {
-            "target": "Aa-suj nanu iyie, ne-ki-suj ninye iyie .",
+            "target": "Aa-suj nanu iyie, ne-ki-suj ninye iyie.",
             "source": "I follow thee, and he follows thee (illustrating portmanteau prefixes aa- and ki-)."
           },
           {
-            "target": "Ol-morijoi, ol-le-'ng-ojine, ol-kimojino o-ado, ol-le-'n-gila, o en-gildipet .",
+            "target": "Ol-morijoi, ol-le-'ng-ojine, ol-kimojino o-ado, ol-le-'n-gila, o en-gildipet.",
             "source": "The thumb, the index finger ('hyena's finger'), the middle finger, the ring finger, and the little finger."
           }
         ]
       },
       {
         "id": "maasai-hollis-1905-20-stories-proverbs-enigmas",
-        "title": "Parts II & III",
+        "title": "Parts II & III: 20 Stories, 75 Proverbs & 24 Enigmas",
         "icon": "Award",
         "description": "Study the 20 interlinear Masai stories (pp. 103–237), all 75 proverbs and sayings (pp. 238–252), and all 24 riddles/enigmas (pp. 253–259) in Hollis (1905).",
         "tips": "In Part III of Hollis (1905, p. 253), every riddle contest opens with the call 'Oiyote!' ('Are you ready?') and the response 'E-euo!' ('It has come!'), or 'Ki-te-jo!' ('We have spoken — propound your riddle!').",
@@ -4087,7 +4087,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "pronunciation": "stories-15-en-gitojo-oo"
           },
           {
-            "target": "l-muran o en-gukuu",
+            "target": "'L-omon loo-'l-muran o en-gukuu (2)",
             "source": "The Warriors & the Nine-Headed Devil (Ol-le-tepes-apau)",
             "pronunciation": "'l-omon-loo-'l-muran-o-en-gukuu"
           },
@@ -4097,7 +4097,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "pronunciation": "ol-kurto-oo-'l-changit"
           },
           {
-            "target": "E-ngoroyoni oo l-ngaboli",
+            "target": "E-ngoroyoni oo-'n-gera le-'l-ngaboli (4)",
             "source": "The Woman & the Children of the Sycamore Tree",
             "pronunciation": "e-ngoroyoni-oo-'n-gera-le-'l-ngaboli"
           },
@@ -4189,7 +4189,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Oiyote! — E-euo! E-muny-iny-a ol-kumbau kutuk-aji. — En-gume e-'ng-ashe .",
+            "target": "Oiyote! — E-euo! E-muny-iny-a ol-kumbau kutuk-aji. — En-gume e-'ng-ashe.",
             "source": "Are you ready? — It has come! The projecting rafter constantly moves at the entrance to the hut. — The calf's nose."
           },
           {
@@ -4200,7 +4200,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
       },
       {
         "id": "maasai-hollis-1905-clans-ages-myths",
-        "title": "Parts IV & V",
+        "title": "Parts IV & V: Clans, Moieties, Generation Ages & Cosmology",
         "icon": "Crown",
         "description": "Master the 4 Masai clans ('Orot), 19 sub-families (Il-gilat), 2 cattle-dividing moieties, 5 districts, 15 remembered generation ages (1791–1904), and cosmological myths of Eng-ai, Naiteru-kop, Le-eyo, and the stars.",
         "tips": "In Hollis (1905, pp. 260–261), the 4 Clans ('Orot oo-'l-Maasae) are 'L-Aiser (4 sub-families incl. 'N-Gidoñgi of the Oloiboni), Il-Meñgana (4 sub-families), Il-Mokesen (5 sub-families incl. Il-Kiporon snake-charmers/rain-makers), and Il-Molelyan (7 sub-families incl. Il-Kipuyoni smiths). When dividing raided cattle, 'L-Aiser + Il-Meñgana form 'L-oodo-kishu ('the blood-red cattle') and Il-Mokesen + Il-Molelyan form 'L-oorook-kishu ('the black cattle').",
@@ -4218,7 +4218,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "pronunciation": "il-mokesen-il-molelyan-'l-oorook-kishu"
           },
           {
-            "target": "Il-nyangusi (1791) → Il-merisho (1798) → Il-kidotu (1806) → Il-tiekere",
+            "target": "Il-nyangusi (1791) → Il-merisho (1798) → Il-kidotu (1806) → Il-tiekere → Il-tuati (1889/1896)",
             "source": "All 15 Remembered Masai Generation Ages",
             "pronunciation": "il-nyangusi-il-merisho-il-kidotu-il-tiekere"
           },
@@ -4240,7 +4240,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "Eng-akakwai (Orion's Sword)",
-            "source": "Orion's Sword ('old men'sloin-cloths')",
+            "source": "Orion's Sword ('old men's loin-cloths')",
             "pronunciation": "eng-akakwai"
           },
           {
@@ -4266,7 +4266,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "E-jo Eng-ai Nanyokye: \"To-joo m-a-ar!\" Ne-jo Eng-ai Narok: \"Ta-pala, m-i-ar, amu ki-ata te-'l-likai-ari!\" .",
+            "target": "E-jo Eng-ai Nanyokye: \"To-joo m-a-ar!\" Ne-jo Eng-ai Narok: \"Ta-pala, m-i-ar, amu ki-ata te-'l-likai-ari!\"",
             "source": "The Red God says: \"Say that I may slay them!\" And the Black God says: \"Leave them alone, slay them not, for we shall have them another year!\""
           }
         ]
@@ -4295,14 +4295,14 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "pronunciation": "il-kipulul"
           },
           {
-            "target": "Ol-le-Mweiya → Kidongoi → Sitonik → Kipepete → Parnyombe → Subet →",
+            "target": "Ol-le-Mweiya → Kidongoi → Sitonik → Kipepete → Parnyombe → Subet → Mbatiany → Lenana & Sendeyo",
             "source": "The 9-Generation Genealogy of the 'N-Gidoñgi Chief Medicine-Men",
             "pronunciation": "ol-le-mweiya-kidongoi-sitonik-kipepete",
             "hint": "Hollis (1905, Part VI, pp. 324–330)"
           },
           {
-            "target": "Eng-akwai",
-            "source": "4–6: Le-erat, O-sarurungai, Oi-nxok",
+            "target": "Eng-akwai, Le-erat, O-sarurungai, Oi-noxok",
+            "source": "Masai Ecological Months & Seasons (Hollis 1905, pp. 333–334)",
             "pronunciation": "eng-akwai"
           },
           {
@@ -4312,7 +4312,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Hollis (1905, Part VI, pp. 335–344)"
           },
           {
-            "target": "\"Na-ai, ki-omon-o i-ye, k-i-njo-o iyiook e-ishoi! Na-ai, m-i-ar-aki",
+            "target": "\"Na-ai, ki-omon-o i-ye, k-i-njo-o iyiook e-ishoi! Na-ai, m-i-ar-aki iyiook!\"",
             "source": "Women's Rain & Child Fertility Prayer to Eng-ai & Prayer to the Pleiades",
             "pronunciation": "na-ai",
             "hint": "All 8 Songs & Prayers ('Singolioitin, Hollis 1905, pp. 345–356)"
@@ -4320,7 +4320,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Na-ai, ki-omon-o i-ye, k-i-njo-o iyiook e-ishoi! Ol-kokua, taa e-na-ishi! .",
+            "target": "Na-ai, ki-omon-o i-ye, k-i-njo-o iyiook e-ishoi! Ol-kokua, taa e-na-ishi!",
             "source": "O God, we pray Thee, give us offspring! O Pleiades, be like honey-wine to us!"
           }
         ]
@@ -4330,22 +4330,22 @@ export const MAASAI_UNITS: CourseUnit[] = [
   {
     "id": "maasai-unit-15",
     "unitNumber": 15,
-    "title": "Hildegarde Hinde",
+    "title": "Hildegarde Hinde (1901): The Masai Language & Ethnography",
     "description": "Master the complete line-by-line corpus of Hildegarde Hinde's 'The Masai Language: Grammatical Notes Together with a Vocabulary' (Cambridge University Press, 1901, pp. i–xii, 1–75): Rules §§ 1–23, base-60 counting (īp = 60), 9 plural suffix methods, 65 verb conjugations, 340 phrases, salutations, 3 traditional songs, 8 Kenyan toponyms, 10 curses, and vocabulary footnotes.",
-    "icon": "🏔️",
+    "icon": "Mountain",
     "color": "#B45309",
     "skills": [
       {
         "id": "maasai-u15-s1",
         "title": "Hinde Grammatical Rules",
-        "icon": "📐",
+        "icon": "Compass",
         "description": "Learn Hinde's 1901 grammatical rules (pp. 1–10), sexagesimal warrior-company counting (īp = 60), 9 regular noun plural suffix methods, singular vs. plural n- infinitives, and 65 verb conjugation tables (pp. 11–30).",
         "tips": "In Hinde (1901, pp. 4–5), īp means 60 ('which equals our 100. The Masai count in sixties, and a company of warriors is composed of 60 men'), signaled in finger-counting by snapping the fingers of one hand!",
         "culturalNote": "Compiled during two years among the Masai without interpreters (Preface pp. v–ix, dated British East Africa, 1900; Tipped-in Errata slip between pp. viii and ix; Editor's Note by E. C. M., p. xi), Hinde tested every rule across 20–30 parallel sentences and conjugated over 70 verbs (publishing 65 full tables on pp. 11–30 and 340 conversational phrases on pp. 31–40).",
         "words": [
           {
-            "target": "nanu (I), iye (thou), nenye / ninyi (he/she/it), iog / eeog (we), ndai",
-            "source": "Personal Pronouns & Euphonic Conjunction o/oi: nan oiye ('you and I'), neny oiye",
+            "target": "nanu (I), iye (thou), nenye / ninyi (he/she/it), iog / eeog (we), ndai (you pl.), nenje (they)",
+            "source": "Personal Pronouns & Euphonic Conjunction o/oi: nan oiye ('you and I'), neny oiye ('he and you')",
             "pronunciation": "na-nu / i-ye / ne-nye / i-og / ndai / ne-nje",
             "hint": "Rule (1) & Rule (4) in Hinde (1901, pp. 2–3)"
           },
@@ -4356,7 +4356,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "hint": "Abbreviated from meti ('not', Rule 3, pp. 2–3)"
           },
           {
-            "target": "nabu (1), ari (2), ūni (3), ungwun (4), miet (5), elle (6), nabishāna",
+            "target": "nabu (1), ari (2), ūni (3), ungwun (4), miet (5), elle (6), nabishāna (7), isiet (8), naudo (9), tomon (10), īp (60)",
             "source": "Sexagesimal Numerals & Finger-Counting Signs: closed fist = 5, two closed fists = 10",
             "pronunciation": "nabu",
             "hint": "Arradua ngishu iīp = 'I see a hundred [60] cows' (p. 4)"
@@ -4387,8 +4387,8 @@ export const MAASAI_UNITS: CourseUnit[] = [
       },
       {
         "id": "maasai-u15-s2",
-        "title": "Hinde Salutations, 3 Songs, 3 Ethnonyms, 8 Geographical",
-        "icon": "🎶",
+        "title": "Hinde Salutations, 3 Songs, 3 Ethnonyms & 8 Geographical Names",
+        "icon": "Music",
         "description": "Explore the salutations, 3 traditional songs (Children's Rain Song, Medicine Song to Mbatian, and Warriors' Song against Sendeyo), 3 ethnonyms, 8 Kenyan geographical names, 10 curses, and 5 vocabulary footnotes on pp. 41–75.",
         "tips": "Notice how three major Rift Valley / Central Highlands mountains are named by colour on p. 42: Mt. Kenya = oldonyo gēri ('the striped mountain'), Kilimanjaro = oldonyo eborr ('the white mountain'), and Mt. Suswa = oldonyo kenyuki ('the red mountain').",
         "culturalNote": "Page 42 of Hinde (1901) preserves three historic songs from the 1890s—including the Medicine Song invoking the great prophet Mbatian ('Aamon yi ngai, aamon m'Batian') and the Warriors' War-Song when marching against Mbatian's son Sendeyo ('Sendeyo manoloimoti tendeboi errakenja bonik oldash irremeta').",
@@ -4401,7 +4401,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "1. \"Siumbi aielisiumbi ngai kijaiga eo!\"",
-            "source": "All 3 Traditional Songs on p. 42: Children's Rain Song, Medicine Song, and Warriors'",
+            "source": "All 3 Traditional Songs on p. 42: Children's Rain Song, Medicine Song, and Warriors' Song",
             "pronunciation": "1-siumbi-aielisiumbi-ngai",
             "hint": "Recorded verbatim on p. 42 of Hinde (1901)"
           },
@@ -4447,12 +4447,12 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "ngwashin",
-            "source": "Kikuyu potato, p. 65",
+            "source": "Sweet potato (borrowed from Kikuyu ngwaci)",
             "pronunciation": "ngwashin"
           },
           {
             "target": "ndudu",
-            "source": "Swahili jigger, p. 59",
+            "source": "Jigger flea (borrowed from Swahili mdudu)",
             "pronunciation": "ndudu"
           }
         ],
@@ -4493,7 +4493,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           },
           {
             "target": "kibuyu smoked with ol-oirien",
-            "source": "wild olive, p. 229",
+            "source": "Milk gourd (kibuyu) smoked with wild olive wood (ol-oirien)",
             "pronunciation": "kibuyu-smoked-with-ol-oirien"
           },
           {
@@ -4628,7 +4628,24 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "pronunciation": "ol-mosorri"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Sopai! — Epa! Eserian ingishu oo ngera.",
+            "source": "Greetings! — Peace! The cattle and the children are at peace."
+          },
+          {
+            "target": "Ashe oleng' te nkaraki kule oo enkare.",
+            "source": "Thank you very much for the milk and water."
+          },
+          {
+            "target": "Eshomo ilmuran olpurkel airrita inkishu.",
+            "source": "The warriors have gone to the lowland pasture to herd the cattle."
+          },
+          {
+            "target": "Sere! Entasere te serian!",
+            "source": "Goodbye! Go in peace!"
+          }
+        ]
       },
       {
         "id": "maasai-corpus-sentences-skill-2",
@@ -4688,7 +4705,24 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "pronunciation": "na-bu"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Kejaa enkop? Eserian olosho pooki.",
+            "source": "How is the land? The whole community is at peace."
+          },
+          {
+            "target": "Elo enkitok esipitali peyie etum ilkeek le biotisho.",
+            "source": "The woman is going to the hospital so that she may get medicine for health."
+          },
+          {
+            "target": "Epuo intoyie oo layiok enkisoma tenebo.",
+            "source": "The girls and boys go to school together."
+          },
+          {
+            "target": "Egirai aiguan te nkiguana oo lpayiani.",
+            "source": "Deliberations are taking place at the council of elders."
+          }
+        ]
       }
     ]
   }

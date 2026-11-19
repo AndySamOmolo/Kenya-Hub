@@ -490,7 +490,7 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "First =",
+          "english": "First",
           "translation": "tangasaino",
           "pronunciation": "tangasaino",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
@@ -551,11 +551,11 @@
         },
         {
           "english": "Number",
-          "translation": "Masai",
+          "translation": "engeena",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "Two sixties =",
+          "english": "One hundred and twenty (Two sixties)",
           "translation": "īp ari",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
@@ -1337,7 +1337,7 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "The young warrior, i",
+          "english": "The young warrior (shaved initiate)",
           "translation": "Ol-barnoti",
           "pronunciation": "ol bar-no-ti",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -1422,8 +1422,8 @@
         },
         {
           "english": "The man whom we follow",
-          "translation": "Ol-tuilgani liki-suj",
-          "pronunciation": "ol tuil-ga-ni li-ki suj",
+          "translation": "Ol-tungani liki-suj",
+          "pronunciation": "ol-tungani li-ki-suj",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -1459,13 +1459,13 @@
         {
           "english": "The man who followed him",
           "translation": "Ol-tungani o-tu-suj-a",
-          "pronunciation": "ol-tuflgani o-tu-suj-a",
+          "pronunciation": "ol-tungani o-tu-suj-a",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "The man whom he followed",
           "translation": "Ol-tungani o-tu-suj-a",
-          "pronunciation": "ol-tungani 0-tu-suj-a",
+          "pronunciation": "ol-tungani o-tu-suj-a",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -1685,9 +1685,9 @@
           "context": "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 43) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Attacking Arab child-kidnapping caravans",
-          "translation": "neither practise nor tolerate slavery",
-          "pronunciation": "neither-practise-nor-tolerate",
+          "english": "Free person / Warrior who neither practices nor tolerates slavery",
+          "translation": "Ol-murani (Ol-Maasae)",
+          "pronunciation": "ol-mu-ra-ni",
           "context": "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (London: Trübner & Co., 1883, Ch. X.A.V–VI, pp. 149–152) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -1752,13 +1752,13 @@
         },
         {
           "english": "Woman",
-          "translation": "ngoirraion pl. ngoirroiok, term of opprobrium",
+          "translation": "ngoirraion pl. ngoirroiok",
           "pronunciation": "ngoirraion pl ngoirroiok",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "essondā",
-          "translation": "= wall",
+          "english": "Wall (pl.)",
+          "translation": "essondā (sg. essondai)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
@@ -1843,7 +1843,7 @@
         },
         {
           "english": "the little man",
-          "translation": "En-duSgani",
+          "translation": "En-dungani",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         },
         {
@@ -1852,7 +1852,7 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         },
         {
-          "english": "the father or Eng-aputani",
+          "english": "The wife's father / parent-in-law (f. Eng-aputani)",
           "translation": "Ol-aputani",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         },
@@ -2671,7 +2671,7 @@
         {
           "english": "The blood",
           "translation": "'L-osarge (for ol-sarge)",
-          "pronunciation": "0 sar-ge",
+          "pronunciation": "l-o-sar-ge",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -2904,7 +2904,7 @@
         },
         {
           "english": "Spit (v. Imp.)",
-          "translation": "tornodoi (nenordargi (sing.)) / (neginortargi (pl.), inf.)",
+          "translation": "tornodoi (sing. inf. nenordargi / pl. inf. neginortargi)",
           "pronunciation": "tornodoi nenordargi",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -2937,7 +2937,7 @@
         },
         {
           "english": "hear",
-          "translation": "atorningu nani (sing.) / negining (pl.) Infin",
+          "translation": "atorningu (sing. inf. nani / pl. inf. negining)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
@@ -2986,8 +2986,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
-          "english": "Toe",
-          "translation": "pl",
+          "english": "Toes (pl.)",
+          "translation": "Il-kimojik (gimojik)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
@@ -3001,8 +3001,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
-          "english": "Tooth",
-          "translation": "pl",
+          "english": "Teeth (pl.)",
+          "translation": "Il-ala (Elalla)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
@@ -3016,8 +3016,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
-          "english": "Year",
-          "translation": "pl",
+          "english": "Years (pl.)",
+          "translation": "Il-arin (El larin)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         }
       ]
@@ -4301,13 +4301,13 @@
         },
         {
           "english": "Buffalo",
-          "translation": "Ol osowan, MASAI. oisā",
+          "translation": "Ol osowan, oisā",
           "pronunciation": "ol swan",
           "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
           "english": "Dog",
-          "translation": "Damma dia; El dīeñ (pl.)",
+          "translation": "Ol dia; El dīeñ (pl.)",
           "pronunciation": "dia",
           "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
         },
@@ -4463,7 +4463,7 @@
         },
         {
           "english": "catch",
-          "translation": "emboonga. nebong (sing.) / negibong (pl.) Infin",
+          "translation": "emboonga (sing. inf. nebong / pl. inf. negibong)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
@@ -5491,8 +5491,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
-          "english": "Mountain",
-          "translation": "pl",
+          "english": "Mountains (pl.)",
+          "translation": "Il-doinyo (El doinyo)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
@@ -5502,7 +5502,7 @@
         },
         {
           "english": "Rain",
-          "translation": "? Ngai",
+          "translation": "Ngai (Eng-ai)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
@@ -5937,7 +5937,7 @@
         },
         {
           "english": "The fruit",
-          "translation": "Il-nganaiyo (for il-Sganaiyok)",
+          "translation": "Il-nganaiyo (for il-nganaiyok)",
           "pronunciation": "il nga-nai-yo",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -6236,9 +6236,9 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "The log of wood, the heart of a tree",
-          "translation": "Ol-oirien Il-oirieuito The wild olive-tree",
-          "pronunciation": "ol-oirien il-oirieuito the wild olive-tree",
+          "english": "The wild olive-tree (pl. Il-oirienito)",
+          "translation": "Ol-oirien (pl. Il-oirienito)",
+          "pronunciation": "ol-oi-rien",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -6285,7 +6285,7 @@
         },
         {
           "english": "Cook",
-          "translation": "tiarra. (neyerr (sing.)) / (negiyerr (pl.), inf.)",
+          "translation": "tiarra (sing. inf. neyerr / pl. inf. negiyerr)",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
@@ -6350,7 +6350,7 @@
         },
         {
           "english": "cook",
-          "translation": "tiarra. neyerr (sing.) / negiyerr (pl.) Infin",
+          "translation": "tiarra (sing. inf. neyerr / pl. inf. negiyerr)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         }
       ]
@@ -6680,8 +6680,8 @@
         },
         {
           "english": "The gate",
-          "translation": "Kishomi J",
-          "pronunciation": "kish-o-mi j",
+          "translation": "Kishomi",
+          "pronunciation": "kish-o-mi",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -6699,7 +6699,7 @@
         {
           "english": "The shield",
           "translation": "El-loño (for en-loño)",
-          "pronunciation": "el lof 1 go",
+          "pronunciation": "el-lo-ngo",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -6968,8 +6968,8 @@
         },
         {
           "english": "The sword which he, she, or they give to me",
-          "translation": "Ol-alem la-isho J",
-          "pronunciation": "ol-alem la-isho j",
+          "translation": "Ol-alem la-isho",
+          "pronunciation": "ol-alem la-isho",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -7010,7 +7010,7 @@
         },
         {
           "english": "Buttocks",
-          "translation": "MASAI. gurūm, MASAI. otonyeke",
+          "translation": "Ol-kurum (gurūm), otonyeke",
           "pronunciation": "gurūm",
           "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
         },
@@ -7022,7 +7022,7 @@
         },
         {
           "english": "Devil",
-          "translation": "Ol oiyirwa, Damma manañani",
+          "translation": "Ol oiyirwa, manañani",
           "pronunciation": "ol oiyirwa",
           "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
         },
@@ -7082,14 +7082,14 @@
         },
         {
           "english": "Thy house",
-          "translation": "Eñ Eñ linno",
-          "pronunciation": "linn",
+          "translation": "Eñ gaji inno (linno)",
+          "pronunciation": "en gaji inno",
           "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
           "english": "His house",
-          "translation": "Eñ Eñ lenye",
-          "pronunciation": "lenye",
+          "translation": "Eñ gaji enye (lenye)",
+          "pronunciation": "en gaji enye",
           "context": "Maa / Maasai Comparative Lexicon (Johnston 1902 Vol. II)"
         },
         {
@@ -7123,87 +7123,87 @@
           "context": "Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Masai",
-          "translation": "English",
-          "pronunciation": "english",
+          "english": "The Masai language",
+          "translation": "Ol-Maa (En-gutuk oo-'l-Maasae)",
+          "pronunciation": "ol-maa",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "a good boy",
           "translation": "Sidai orlaiyon",
-          "pronunciation": "a good boy",
+          "pronunciation": "si-dai or-lai-yon",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "a good woman",
           "translation": "Sidai engitok",
-          "pronunciation": "a good woman",
+          "pronunciation": "si-dai en-gi-tok",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "good cattle",
           "translation": "Sidai ngishu",
-          "pronunciation": "good cattle",
+          "pronunciation": "si-dai ngi-shu",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "a good house",
           "translation": "Sidai ngaji",
-          "pronunciation": "a good house",
+          "pronunciation": "si-dai nga-ji",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "good food",
           "translation": "Sidai nda",
-          "pronunciation": "good food",
+          "pronunciation": "si-dai nda",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "a good dog",
           "translation": "Sidai orldia",
-          "pronunciation": "a good dog",
+          "pronunciation": "si-dai orl-dia",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "in the house",
           "translation": "Atwa ngaji",
-          "pronunciation": "in the house",
+          "pronunciation": "a-twa nga-ji",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Atwa ngoshogi",
-          "translation": "= in the stomach",
-          "pronunciation": "in the stomach",
+          "english": "in the stomach",
+          "translation": "Atwa ngoshogi",
+          "pronunciation": "a-twa ngo-sho-gi",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Atwa engang",
-          "translation": "= in the kraal",
-          "pronunciation": "in the kraal",
+          "english": "in the kraal",
+          "translation": "Atwa engang",
+          "pronunciation": "a-twa en-gang",
+          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
+        },
+        {
+          "english": "Red cloth",
+          "translation": "Engela kenyuki",
+          "pronunciation": "en-ge-la ke-nyu-ki",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "Hot water",
-          "translation": "Red cloth",
-          "pronunciation": "hot water",
-          "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
-        },
-        {
-          "english": "Engela kenyuki",
           "translation": "ngare nairogua",
-          "pronunciation": "ngare nairogua",
+          "pronunciation": "nga-re nai-ro-gua",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "A long house",
-          "translation": "A black goat",
-          "pronunciation": "a black goat",
+          "translation": "Ērdo ngāiji",
+          "pronunciation": "er-do ngai-ji",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Ērdo ngāiji",
+          "english": "A black goat",
           "translation": "ndari nārok",
-          "pronunciation": "ndari nārok",
+          "pronunciation": "nda-ri na-rok",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
@@ -7291,7 +7291,7 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Last =",
+          "english": "Last",
           "translation": "korom",
           "pronunciation": "korom",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -7351,55 +7351,55 @@
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Example 1",
-          "translation": "Example 2",
-          "pronunciation": "example 2",
+          "english": "One / Another (singular vs. plural)",
+          "translation": "obo / kulikai",
+          "pronunciation": "o-bo / ku-li-kai",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Yeyu",
-          "translation": "noiyeyu",
+          "english": "Mother / Mothers",
+          "translation": "Yeyu (pl. noiyeyu)",
           "pronunciation": "noiyeyu",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Loom",
-          "translation": "eloom",
+          "english": "Rafter / Rafters of a house",
+          "translation": "eloom (il-loom)",
           "pronunciation": "eloom",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Occasion / Addressee",
-          "translation": "Masai",
-          "pronunciation": "masai",
+          "english": "Salutation to a man",
+          "translation": "Soboi! (resp. Epa!)",
+          "pronunciation": "so-boi / e-pa",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "(plural)",
+          "english": "Salutation to women (plural)",
           "translation": "tagwenia bōōgi",
           "pronunciation": "tagwenia bōōgi",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Reply",
+          "english": "Reply to women's salutation",
           "translation": "eber",
           "pronunciation": "eber",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Geographic Name",
-          "translation": "Masai Name & Meaning",
-          "pronunciation": "masai name meaning",
+          "english": "Rift Valley / Naivasha Region",
+          "translation": "En-aiposha ('The Heaving Water')",
+          "pronunciation": "en-ai-po-sha",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Kirrigūmini",
-          "translation": "A curse on the father saying the person cursed is a bastard",
-          "pronunciation": "a curse on the father saying the person cursed is a bastard",
+          "english": "A curse on the father",
+          "translation": "Kirrigūmini",
+          "pronunciation": "kir-ri-gu-mi-ni",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
-          "english": "Adjudge\\* (v. Imp.)",
+          "english": "Adjudge (v. Imp.)",
           "translation": "tudungu orrori (literally, to cut the noise or difficulty)",
           "pronunciation": "tudungu orrori",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -7424,13 +7424,13 @@
         },
         {
           "english": "Bathe (v. Imp.)",
-          "translation": "aisojai (naisoja (sing.)) / (negasoja (pl.), inf.)",
+          "translation": "aisojai (sing. inf. naisoja / pl. inf. negasoja)",
           "pronunciation": "aisojai naisoja",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Bend (v. Imp.)",
-          "translation": "torrīgu (nerriu (sing.)) / (negirriü (pl.), inf.)",
+          "translation": "torrīgu (sing. inf. nerriu / pl. inf. negirriü)",
           "pronunciation": "torrīgu nerriu",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -7466,7 +7466,7 @@
         },
         {
           "english": "Hunt (v. Imp.)",
-          "translation": "ngorrori (nengorishu (sing.)) / (negingorishu (pl.), inf.)",
+          "translation": "ngorrori (sing. inf. nengorishu / pl. inf. negingorishu)",
           "pronunciation": "ngorrori nengorishu",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -7520,8 +7520,8 @@
         },
         {
           "english": "Pray (v. Imp.)",
-          "translation": "tassai ngai. namon Infin. or āamon. namor Infin",
-          "pronunciation": "tassai ngai. namon infin",
+          "translation": "tassai ngai (inf. namon) / āamon (inf. namor)",
+          "pronunciation": "tassai ngai / aamon",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -7771,7 +7771,7 @@
         {
           "english": "To eat",
           "translation": "a-ɲá (anya)",
-          "pronunciation": "a- a",
+          "pronunciation": "a-nya",
           "context": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -7879,7 +7879,7 @@
         {
           "english": "To know",
           "translation": "A-iyolo-u",
-          "pronunciation": "a-iy5lo-u",
+          "pronunciation": "a-iyolo-u",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -7908,8 +7908,8 @@
         },
         {
           "english": "To sit on",
-          "translation": "A-tonfe (for a-tonye)",
-          "pronunciation": "a ton-fe",
+          "translation": "A-tonie (for a-tonye)",
+          "pronunciation": "a-ton-ie",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -8035,7 +8035,7 @@
         {
           "english": "To cause to hide",
           "translation": "A-isud-o-rie",
-          "pronunciation": "a i-sud 6 rie",
+          "pronunciation": "a i-sud-o-rie",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -8123,7 +8123,7 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "To go, and a-lotu, to come",
+          "english": "To go (cf. a-lotu, to come)",
           "translation": "A-lo",
           "pronunciation": "a lo",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -8149,7 +8149,7 @@
         {
           "english": "To eat (< Proto-Eastern Nilotic -ɲa)",
           "translation": "a-ɲá (Samburu & Maasai)",
-          "pronunciation": "a- a",
+          "pronunciation": "a-nya",
           "context": "Samburu & Maasai (Vossen 1982) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -8179,7 +8179,7 @@
         {
           "english": "To chew",
           "translation": "A-nyal (also a-nyaal)",
-          "pronunciation": "1 a-nyal",
+          "pronunciation": "a-nyal",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -8189,7 +8189,7 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "To cause to fol low for (some one) to (a place)",
+          "english": "To cause to follow for (someone) to (a place)",
           "translation": "A-itu-suj-aki-nye",
           "pronunciation": "a-itu-suj-aki-nye",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -8237,7 +8237,7 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "To a man",
+          "english": "Salutation to a man",
           "translation": "soboi",
           "pronunciation": "so-boi",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -8359,7 +8359,7 @@
         {
           "english": "To prosper (-ATR stem)",
           "translation": "ɛ́bʉ́l (S/he will prosper)",
-          "pronunciation": "b l",
+          "pronunciation": "e-bul",
           "context": "Wikipedia Maasai language — ATR vowel harmony • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -8400,61 +8400,61 @@
         },
         {
           "english": "Catch (v. Imp.)",
-          "translation": "emboonga. (nebong (sing.)) / (negibong (pl.), inf.)",
+          "translation": "emboonga (sing. inf. nebong / pl. inf. negibong)",
           "pronunciation": "emboonga nebong",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Cut (v. Imp.)",
-          "translation": "tudungu (nadung (sing.)) / (negidung (pl.), inf.)",
+          "translation": "tudungu (sing. inf. nadung / pl. inf. negidung)",
           "pronunciation": "tudungu nadung",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Give (v. Imp.)",
-          "translation": "enjoōgi (nenjog (sing.)) / (negenjog (pl.), inf.)",
+          "translation": "enjoōgi (sing. inf. nenjog / pl. inf. negenjog)",
           "pronunciation": "enjoōgi nenjog",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Hear (v. Imp.)",
-          "translation": "atorningu (nani (sing.)) / (negining (pl.), inf.)",
+          "translation": "atorningu (sing. inf. nani / pl. inf. negining)",
           "pronunciation": "atorningu nani",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Know (v. Imp.)",
-          "translation": "eeolo or iolu (naiulu (sing.)) / (negiolog (pl.), inf.)",
+          "translation": "eeolo or iolu (sing. inf. naiulu / pl. inf. negiolog)",
           "pronunciation": "eeolo",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Laugh (v. Imp.)",
-          "translation": "atagwenia, or engwenia (nakweni (sing.)) / (negigwena (pl.), inf.)",
+          "translation": "atagwenia or engwenia (sing. inf. nakweni / pl. inf. negigwena)",
           "pronunciation": "atagwenia",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Like (v. Imp.)",
-          "translation": "ainyorr (naanya (sing.)) / (negenyorr (pl.), inf.)",
+          "translation": "ainyorr (sing. inf. naanya / pl. inf. negenyorr)",
           "pronunciation": "ainyorr naanya",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Look (v. Imp.)",
-          "translation": "engorāīi (naingora (sing.)) / (negongorr (pl.), inf.)",
+          "translation": "engorāīi (sing. inf. naingora / pl. inf. negongorr)",
           "pronunciation": "engorāīi naingora",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Pour (v. Imp.)",
-          "translation": "tebego (nabeg (sing.)) / (negibeg (pl.), inf.)",
+          "translation": "tebego (sing. inf. nabeg / pl. inf. negibeg)",
           "pronunciation": "tebego nabeg",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Put (v. Imp.)",
-          "translation": "eragi (nebi (sing.)) / (negiragi (pl.), inf.)",
+          "translation": "eragi (sing. inf. nebi / pl. inf. negiragi)",
           "pronunciation": "eragi nebi",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -8466,25 +8466,25 @@
         },
         {
           "english": "Sew (v. Imp.)",
-          "translation": "tereba (naribeshu (sing.)) / (negerebeshu (pl.), inf.)",
+          "translation": "tereba (sing. inf. naribeshu / pl. inf. negerebeshu)",
           "pronunciation": "tereba naribeshu",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Sing (v. Imp.)",
-          "translation": "ossungoliu (neeran (sing.)) / (negerran (pl.)) Infin., tarranya",
+          "translation": "tarranya / ossungoliu (sing. inf. neeran / pl. inf. negerran)",
           "pronunciation": "ossungoliu neeran",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Sit (v. Imp.)",
-          "translation": "tordona (nardon (sing.)) / (netornyi (pl.), inf.)",
+          "translation": "tordona (sing. inf. nardon / pl. inf. netornyi)",
           "pronunciation": "tordona nardon",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Stand (v. Imp.)",
-          "translation": "itashu (naitashi (sing.)) / (negendaishi (pl.), inf.)",
+          "translation": "itashu (sing. inf. naitashi / pl. inf. negendaishi)",
           "pronunciation": "itashu naitashi",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -8495,9 +8495,9 @@
           "context": "Maa alternating transitive vs. middle voice (-a / -o): reflexive, reciprocal, anticausative, and result-state • Source: Doris L. Payne 2026 ('Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
         },
         {
-          "english": "non-alternating Maa middle-marked verbs of posture, grooming, emotion, and spontaneous bodily experience",
-          "translation": "media tantum (-a / -o experiential verbs)",
-          "pronunciation": "med-ia-tant-um",
+          "english": "To sit down / rest / stay (Maa media tantum middle-marked posture verb)",
+          "translation": "a-tón-a / a-irúrá (media tantum middle verbs)",
+          "pronunciation": "a-ton-a / a-i-ru-ra",
           "context": "Maa media tantum verbs lacking a simple unmarked transitive counterpart (Payne 2026, Ch. 12) • Source: Doris L. Payne 2026 (Pamoja tena, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
         },
         {
@@ -8512,7 +8512,7 @@
         },
         {
           "english": "Shut",
-          "translation": "tubuguru (naigen (sing.)) / (nigingen (pl.), inf.)",
+          "translation": "tubuguru (sing. inf. naigen / pl. inf. nigingen)",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
@@ -11124,7 +11124,7 @@
         {
           "english": "Cooking pot",
           "translation": "ɛmʊtí (emuti)",
-          "pronunciation": "m ti",
+          "pronunciation": "e-mu-ti",
           "context": "Wikipedia Maasai language — Morphosyntax • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -11381,8 +11381,8 @@
         },
         {
           "english": "The wild animals",
-          "translation": "Il-chaSgit le-'n-dim",
-          "pronunciation": "il-chasgit le",
+          "translation": "Il-changit le-'n-dim",
+          "pronunciation": "il-changit le-'n-dim",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -11993,8 +11993,8 @@
         },
         {
           "english": "The place which is big",
-          "translation": "E-wSji ne-ra sapuk",
-          "pronunciation": "e-wsji ne-ra sapuk",
+          "translation": "E-weji ne-ra sapuk",
+          "pronunciation": "e-weji ne-ra sapuk",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -18644,9 +18644,9 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Mbarra",
-          "translation": "This is accompanied by spitting and is the equivalent of damn",
-          "pronunciation": "this is accompanied by spitting",
+          "english": "Exclamation of disgust (accompanied by spitting)",
+          "translation": "Mbarra!",
+          "pronunciation": "mbar-ra",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -19202,7 +19202,7 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Masai) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "To (my)",
+          "english": "My child / My son",
           "translation": "Eñgaraiai",
           "pronunciation": "eng-a-raiai",
           "context": "Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -19245,8 +19245,8 @@
         },
         {
           "english": "The men",
-          "translation": "H-tungana (for il-tunganak)",
-          "pronunciation": "h tung-a-na",
+          "translation": "'L-tungana (for il-tunganak)",
+          "pronunciation": "l-tung-a-na",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -19257,8 +19257,8 @@
         },
         {
           "english": "The pit",
-          "translation": "E-uliilu (for en-ululu)",
-          "pronunciation": "e u-lii-lu",
+          "translation": "E-ululu (for en-ululu)",
+          "pronunciation": "e-u-lu-lu",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -19280,9 +19280,9 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Injeraii",
-          "translation": "This curse is supposed to cause the death of a brother or sister",
-          "pronunciation": "this curse is supposed to cause the death of a brother",
+          "english": "Curse against a sibling",
+          "translation": "Injeraii",
+          "pronunciation": "in-je-raii",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -19502,7 +19502,7 @@
           "context": "Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "To molar",
+          "english": "Molar tooth",
           "translation": "Entakolla",
           "pronunciation": "ent-a-kol-la",
           "context": "Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
@@ -19736,15 +19736,15 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Djerrterrā",
-          "translation": "A curse against the man addressed",
-          "pronunciation": "a curse against the man addressed",
+          "english": "A curse against the man addressed",
+          "translation": "Djerrterrā",
+          "pronunciation": "djerr-ter-ra",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Njertērrda",
-          "translation": "Against the man addressed",
-          "pronunciation": "a-gainst the man addressed",
+          "english": "Curse against the man addressed",
+          "translation": "Njertērrda",
+          "pronunciation": "njer-terr-da",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -19850,15 +19850,15 @@
           "context": "Masai — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "The middle",
-          "translation": "The loin",
-          "pronunciation": "the loin",
+          "english": "The middle / The loin",
+          "translation": "Em-polos (pl. Im-polosi)",
+          "pronunciation": "em-po-los",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "The belief",
-          "translation": "In-girukot En-girukoto iruk The reply",
-          "pronunciation": "in-girukot en-girukoto iruk the reply",
+          "english": "The belief / The reply (from a-iruk, to believe/reply)",
+          "translation": "En-girukoto (pl. In-girukot)",
+          "pronunciation": "en-gi-ru-ko-to",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -20036,9 +20036,9 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "The buttocks",
-          "translation": "The seat",
-          "pronunciation": "the seat",
+          "english": "The buttocks / The seat",
+          "translation": "Ol-kurum (pl. Il-kurumi)",
+          "pronunciation": "ol-ku-rum",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -20054,9 +20054,9 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Mbussa bwaara",
-          "translation": "Fool",
-          "pronunciation": "fool",
+          "english": "Fool! (exclamation)",
+          "translation": "Mbussa bwaara",
+          "pronunciation": "mbus-sa bwaa-ra",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -20180,9 +20180,9 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Injerai kordai",
-          "translation": "A child's curse",
-          "pronunciation": "a child's curse",
+          "english": "A child's curse",
+          "translation": "Injerai kordai",
+          "pronunciation": "in-je-rai kor-dai",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -20848,13 +20848,13 @@
         {
           "english": "The rotten meats",
           "translation": "'N-giri naa-tuñgwaita",
-          "pronunciation": "'n gi-ri naa tuf-lgwai-ta",
+          "pronunciation": "n-gi-ri naa-tung-wai-ta",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905, Part I Grammar) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
           "english": "Against a man and his father",
           "translation": "Mining jangayenda",
-          "pronunciation": "against a man",
+          "pronunciation": "mi-ning ja-nga-yen-da",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -20924,9 +20924,9 @@
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Miinjirria nigiruk",
-          "translation": "A child's curse",
-          "pronunciation": "a child's curse",
+          "english": "A child's curse (mild exclamation)",
+          "translation": "Miinjirria nigiruk",
+          "pronunciation": "miin-jir-ria ni-gi-ruk",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -20968,13 +20968,13 @@
         {
           "english": "the big mountain",
           "translation": "Eldonyo sabuk (mt.)",
-          "pronunciation": "the big mountain",
+          "pronunciation": "el-do-nyo sa-buk",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Tadui munigilidoigi",
-          "translation": "This curse is supposed to cause the person addressed to die",
-          "pronunciation": "this curse is supposed to cause the person addressed to die",
+          "english": "Severe curse against the person addressed",
+          "translation": "Tadui munigilidoigi",
+          "pronunciation": "ta-dui mu-ni-gi-li-doi-gi",
           "context": "Hildegarde Hinde (1901) The Masai Language: Grammatical Notes together with a Vocabulary • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
@@ -21075,7 +21075,7 @@
         },
         {
           "english": "Forest-dwelling hunting communities (Dorobo / Il-Torobo) & The Mogogodo (Il Mwesi) of Northern Mount Kenya in Hobley (1910, pp. 146–155 & 1922, p. 305)",
-          "translation": "Dorobo (Il-Torobo) • Il Mwesi (Masai name for the Mogogodo of northern Mount Kenya under chiefs Parmashu and Matungi, Part II, Ch. V, pp. 146–155)",
+          "translation": "Il-Torobo (Dorobo) • Il-Mwesi (Maa name for the Mogogodo of northern Mount Kenya)",
           "pronunciation": "dorobo  • il mwesi",
           "context": "C. W. Hobley (1910) Ethnology of A-Kamba and Other East African Tribes, Part II, Ch. V, pp. 146–155 & (1922) Bantu Beliefs, Glossary p. 305 • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
@@ -21116,14 +21116,14 @@
           "context": "Hildegarde Hinde, The Masai Language: Grammatical Notes Together with a Vocabulary (Cambridge University Press, 1901, p. 42) • Cross-verified with The Thiomi Dataset Maa (CC-BY-4.0)"
         },
         {
-          "english": "Masai Curse",
-          "translation": "Meaning / Usage",
-          "pronunciation": "meaning",
+          "english": "Curse / Imprecation",
+          "translation": "Ol-deket (pl. Il-deketa)",
+          "pronunciation": "ol-de-ket",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
         {
           "english": "Dance (v.)",
-          "translation": "(nengorran (sing.)) / (negigorran (pl.), inf.)",
+          "translation": "nengorran (sing.) / negigorran (pl., inf.)",
           "pronunciation": "nengorran",
           "context": "Maa / Maasai Lexicon & Phrasebook (Hinde 1901) • Cross-verified with African Next Voices Kimasaai & Thiomi (CC-BY-4.0)"
         },
@@ -21214,48 +21214,48 @@
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "i or oi or ni",
+          "english": "Garment / Cloth (pl. engelani)",
           "translation": "engela",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "ndapi",
-          "translation": "= hand",
+          "english": "Palm of hand / Hands",
+          "translation": "ndap (pl. ndapi)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "a or ia",
+          "english": "Bottle / Gourd (pl. olduleta)",
           "translation": "oldulet",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "essorudia",
-          "translation": "= earring",
+          "english": "Earring / Earrings",
+          "translation": "essurutie (pl. essorudia)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "u, tu",
-          "translation": "ingobirr",
+          "english": "Feather / Feathers",
+          "translation": "engobiro (pl. ingobirr)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "emurrtu",
-          "translation": "= neck",
+          "english": "Neck / Necks",
+          "translation": "emurrt (pl. emurrtu)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "elōnitu",
-          "translation": "= skin",
+          "english": "Hide / Skins",
+          "translation": "oldonyi (pl. elōnitu)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "n, in",
+          "english": "Body (pl. essessin)",
           "translation": "ossesi",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "ergenossin",
-          "translation": "= crocodile",
+          "english": "Crocodile / Crocodiles",
+          "translation": "ergenossi (pl. ergenossin)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
@@ -21264,13 +21264,13 @@
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "k, ak, ok",
+          "english": "Woman / Wife (pl. ngorraiok)",
           "translation": "ngorraion",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "lamonok",
-          "translation": "= beggar",
+          "english": "Beggar / Beggars",
+          "translation": "ol-amononi (pl. lamonok)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
@@ -21279,33 +21279,33 @@
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "r or rr",
-          "translation": "ngera",
+          "english": "Child / Children",
+          "translation": "ngerai (pl. ngera)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "emossorr",
-          "translation": "= egg",
+          "english": "Egg / Eggs",
+          "translation": "emossorri (pl. emossorr)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "endōluer",
-          "translation": "= axe",
+          "english": "Axe / Axes",
+          "translation": "endōlu (pl. endōluer)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "endōlo",
-          "translation": "= marrow",
+          "english": "Marrow",
+          "translation": "endōlit (pl. endōlo)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "engumurrt",
-          "translation": "= hole",
+          "english": "Hole / Pit",
+          "translation": "engūmoto (pl. engumurrt)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
-          "english": "engiaset",
-          "translation": "= work",
+          "english": "Work / Deeds",
+          "translation": "engias (pl. engiaset)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
         },
         {
@@ -21359,8 +21359,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
-          "english": "Thing",
-          "translation": "pl",
+          "english": "Things (pl.)",
+          "translation": "In-dokitin (Dogitin)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
         },
         {
@@ -21474,7 +21474,7 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         },
         {
-          "english": "the long",
+          "english": "the grass / the long grass",
           "translation": "Il-kujit",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         },
@@ -21484,12 +21484,12 @@
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         },
         {
-          "english": "the wild olive Eng-oiien",
+          "english": "the wild olive (diminutive: Eng-oirien)",
           "translation": "Ol-oirien",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         },
         {
-          "english": "the black and white Eng-ayus",
+          "english": "the black-and-white bull (fem. Eng-arus)",
           "translation": "Ol-arus",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
         },

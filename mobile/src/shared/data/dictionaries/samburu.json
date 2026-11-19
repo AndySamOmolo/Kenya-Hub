@@ -53,7 +53,7 @@
         },
         {
           "english": "Greetings to elders / Respectful greeting",
-          "translation": "Chamge / Nabo",
+          "translation": "Nabo / Takwenya",
           "pronunciation": "nah-boh",
           "context": "Samburu respectful address • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
@@ -97,9 +97,9 @@
       "icon": "🔢",
       "entries": [
         {
-          "english": "One",
-          "translation": "naɓô (fem.) / oɓô (masc.) / noɓô (place)",
-          "pronunciation": "na o",
+          "english": "One (fem. / masc. / place)",
+          "translation": "naɓô (f.) / oɓô (m.) / noɓô (loc.)",
+          "pronunciation": "na-bo",
           "context": "Wikipedia Nilotic_languages — Samburu numerals • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -170,8 +170,8 @@
         },
         {
           "english": "Sixty",
-          "translation": "otomon",
-          "pronunciation": "o-to-mon",
+          "translation": "Onnom otomon",
+          "pronunciation": "on-nom o-to-mon",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -194,14 +194,14 @@
         },
         {
           "english": "Eighty",
-          "translation": "otomoni uni",
-          "pronunciation": "o-to-mo-ni uni",
+          "translation": "Onnom otomoni uni",
+          "pronunciation": "on-nom o-to-mo-ni u-ni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "Ninety",
-          "translation": "artam",
-          "pronunciation": "artam",
+          "translation": "Onnom artam",
+          "pronunciation": "on-nom ar-tam",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -212,8 +212,8 @@
         },
         {
           "english": "Seventy",
-          "translation": "obikitam",
-          "pronunciation": "o-bi-ki-tam",
+          "translation": "Onnom obikitam",
+          "pronunciation": "on-nom o-bi-ki-tam",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -435,7 +435,7 @@
         {
           "english": "Nose",
           "translation": "ŋ-kwar-íé (nkwarie)",
-          "pronunciation": "-kwar-ie",
+          "pronunciation": "ng-kwar-ie",
           "context": "Rainer Vossen (1982) — Sampur • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -459,7 +459,7 @@
         {
           "english": "Nose",
           "translation": "ŋ-kwar-íé",
-          "pronunciation": "-kwar-ie",
+          "pronunciation": "ng-kwar-ie",
           "context": "Samburu (North Maa) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -555,13 +555,13 @@
         {
           "english": "Tooth",
           "translation": "l-alá-ɪ̀",
-          "pronunciation": "l-ala-",
+          "pronunciation": "l-a-la-i",
           "context": "Samburu & Maasai (Vossen 1982) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "Blood",
-          "translation": "l-ɔɗɔ́ / osarge (Maasai)",
-          "pronunciation": "l-ɔɗɔ́",
+          "translation": "l-ɔɗɔ́ / osarge",
+          "pronunciation": "l-o-do",
           "context": "Samburu & Maasai (Vossen 1982) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -660,7 +660,7 @@
         },
         {
           "english": "Mouth",
-          "translation": "Ol ñejep",
+          "translation": "En-gutuk / N-kutuk",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
         }
       ]
@@ -1036,9 +1036,9 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Wind",
-          "translation": "Alasagutoni (cold)",
-          "pronunciation": "alasagutoni",
+          "english": "Cold wind",
+          "translation": "Alasagutoni",
+          "pronunciation": "a-la-sa-gu-to-ni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -1056,7 +1056,7 @@
         {
           "english": "Water",
           "translation": "ŋ-kár-ɛ́ (nkare)",
-          "pronunciation": "-kar-",
+          "pronunciation": "ng-kar-e",
           "context": "Rainer Vossen (1982) — Sampur • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -1511,7 +1511,7 @@
         {
           "english": "Tobacco",
           "translation": "Or gumbao",
-          "pronunciation": "or",
+          "pronunciation": "or gum-bao",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -1523,7 +1523,7 @@
         {
           "english": "Water, stream",
           "translation": "ŋ-kár-ɛ́",
-          "pronunciation": "-kar-",
+          "pronunciation": "ng-kar-e",
           "context": "Samburu & Maasai (Hollis 1905 & Vossen 1982) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -1534,8 +1534,8 @@
         },
         {
           "english": "To eat",
-          "translation": "a-ɲá (Samburu & Maasai)",
-          "pronunciation": "a- a",
+          "translation": "a-ɲá (anya)",
+          "pronunciation": "a-nya",
           "context": "Samburu & Maasai (Vossen 1982) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -1672,13 +1672,13 @@
         {
           "english": "Name",
           "translation": "ŋ-kárn-á (nkárná)",
-          "pronunciation": "-karn-a",
+          "pronunciation": "ng-karn-a",
           "context": "Rainer Vossen (1982) — Sampur • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "Name",
           "translation": "ŋ-kárn-á",
-          "pronunciation": "-karn-a",
+          "pronunciation": "ng-karn-a",
           "context": "Samburu & Maasai (Vossen 1982) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -1766,9 +1766,9 @@
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "to be cut, get cut, cut oneself (North Maa alternating middle verb with ATR-harmonizing -o / -a suffix)",
-          "translation": "a-duŋ-ó / a-duŋ-á (Samburu / North Maa middle)",
-          "pronunciation": "a-duŋ-ó",
+          "english": "To be cut, get cut, cut oneself (North Maa alternating middle verb with ATR-harmonizing -o / -a suffix)",
+          "translation": "a-duŋ-ó / a-duŋ-á",
+          "pronunciation": "a-dung-o / a-dung-a",
           "context": "Shared Maa alternating middle voice and media tantum experiential verbs (Payne 2026) • Source: Doris L. Payne 2026 (Pamoja tena, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
         },
         {
@@ -2163,9 +2163,9 @@
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Young",
+          "english": "Girl / Young woman",
           "translation": "Endīto",
-          "pronunciation": "endi-to",
+          "pronunciation": "en-di-to",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -2200,8 +2200,8 @@
         },
         {
           "english": "War",
-          "translation": "En dyore (or Jore)",
-          "pronunciation": "en dyore",
+          "translation": "En dyore / Jore",
+          "pronunciation": "en dyo-re",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -2319,14 +2319,14 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Molar",
+          "english": "Molar tooth",
           "translation": "Entakolla",
-          "pronunciation": "enta-kolla",
+          "pronunciation": "en-ta-kol-la",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "I / me",
-          "translation": "nanu (prefix a-)",
+          "english": "I / me (verbal prefix a-)",
+          "translation": "nanu (a-)",
           "pronunciation": "nah-noo",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
@@ -2349,14 +2349,14 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Doctor",
-          "translation": "Ol leiboni (medicine-man)",
-          "pronunciation": "ol leiboni",
+          "english": "Doctor / medicine-man",
+          "translation": "Ol leiboni",
+          "pronunciation": "ol lei-bo-ni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "We / us",
-          "translation": "iyook (prefix ki-)",
+          "english": "We / us (verbal prefix ki-)",
+          "translation": "iyook (ki-)",
           "pronunciation": "ee-yohk",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
@@ -2373,8 +2373,8 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "He / She",
-          "translation": "ninye (prefix e-)",
+          "english": "He / She (verbal prefix e-)",
+          "translation": "ninye (e-)",
           "pronunciation": "nee-nyeh",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
@@ -2403,8 +2403,8 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "You (singular)",
-          "translation": "iyie (prefix i-)",
+          "english": "You (singular, verbal prefix i-)",
+          "translation": "iyie (i-)",
           "pronunciation": "ee-yeh",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
@@ -2421,9 +2421,9 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Town or settlement",
-          "translation": "Manyata (warriors'), Añgañ (tribal)",
-          "pronunciation": "manyata",
+          "english": "Town or settlement (warriors' / tribal)",
+          "translation": "Manyata / Añgañ",
+          "pronunciation": "ma-nya-ta / a-nggang",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (North Maa / Ngishu) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         }
       ]
@@ -2548,7 +2548,7 @@
     {
       "id": "time",
       "name": "Time, Seasons & Calendar",
-      "icon": "Clock",
+      "icon": "⏰",
       "entries": [
         {
           "english": "Day",
@@ -2779,13 +2779,13 @@
           "context": "African Next Voices Kenya — Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke)"
         },
         {
-          "english": "Excrement",
-          "translation": "Ngik (of men)",
+          "english": "Excrement (of humans)",
+          "translation": "Ngik",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
         },
         {
-          "english": "Excrement",
-          "translation": "Modī́ (of oxen)",
+          "english": "Dung / Excrement (of cattle)",
+          "translation": "Modī́",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
         },
         {
@@ -2902,7 +2902,7 @@
         {
           "english": "Lion",
           "translation": "Ol ñátūīn",
-          "pronunciation": "ol tooeen",
+          "pronunciation": "ol nga-tuin",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -3040,7 +3040,7 @@
         {
           "english": "I gave him",
           "translation": "Aiṣō elle",
-          "pronunciation": "ai oh el-le",
+          "pronunciation": "ai-so el-le",
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -3068,8 +3068,8 @@
           "context": "Ñgishu / North Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Ewaso Ng'iro River",
-          "translation": "E-waso Ngiro ('Brown/Muddy River')",
+          "english": "Ewaso Ng'iro River ('Brown / Muddy River')",
+          "translation": "E-waso Ngiro",
           "pronunciation": "eh-wah-soh n-gee-roh",
           "context": "Hinde 1901 p. 36 & Hollis 1905 • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
@@ -3098,8 +3098,8 @@
           "context": "Samburu pastoral architecture • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Sacred Mountain of Northern Kenya",
-          "translation": "Ol-doinyo Nyiro (Mount Nyiro)",
+          "english": "Sacred Mountain of Northern Kenya (Mount Nyiro)",
+          "translation": "Ol-doinyo Nyiro",
           "pronunciation": "ohl-doy-nyoh nyee-roh",
           "context": "Dundas 1910 & Samburu cosmology • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
@@ -3117,20 +3117,20 @@
         },
         {
           "english": "The 3 Sambur Gilat (Clans) & Chief Laibon Ol Segeteti in Hobley (1910, Part II, Ch. VI, p. 159)",
-          "translation": "Gilat: 1. Sitat, 2. Ol Lesilali, 3. Maletis • Chief Laibon: Ol Segeteti",
-          "pronunciation": "gilat: 1. sitat",
+          "translation": "Gilat: Sitat, Ol Lesilali, Maletis • Ol Segeteti",
+          "pronunciation": "gi-lat / si-tat / ol le-si-la-li / ma-le-tis / ol se-ge-te-ti",
           "context": "Sambur ethnography — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, p. 159) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "The 6 Laikipiak Sub-Tribes, 3 Gilat (Bartaolin, Sioma, Kisengeni), Irimba (Lorian Swamp) & El Keriet in Hobley (1910, pp. 159–160)",
-          "translation": "6 Sub-Tribes: 1. L'ngwesi, 2. L'tikirri, 3. L'leleta, 4. L'purko, 5. L'oodokishu, 6. L'momonyot (extending to Irimba, the Lorian Swamp) • 3 Gilat: Bartaolin, Sioma, Kisengeni • Mariti Hills section: El Keriet",
-          "pronunciation": "6 sub-tribes: 1. l'ngwesi",
+          "translation": "L'ngwesi, L'tikirri, L'leleta, L'purko, L'oodokishu, L'momonyot (Irimba) • Gilat: Bartaolin, Sioma, Kisengeni • El Keriet",
+          "pronunciation": "l-ngwe-si / l-ti-kir-ri / l-le-le-ta / l-pur-ko",
           "context": "Laikipiak ethnography — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. VI, pp. 159–160) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "Sacred Mountain of the Samburu (Mount Nyiro) & Marsabit",
-          "translation": "Ol-doinyo Mara (Mt. Nyiro) & Saku (Marsabit)",
-          "pronunciation": "ol-doinyo mara  & saku",
+          "translation": "Ol-doinyo Mara & Saku",
+          "pronunciation": "ol-doi-nyo ma-ra & sa-ku",
           "context": "C. W. Hobley (1910, p. 156) & Johnston (1902) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -3141,31 +3141,31 @@
         },
         {
           "english": "Historical Ethnonyms in 1902–1910 Records: People of the White Goats / Butterfly People",
-          "translation": "Il-oikop / Il-Burkeneji (Naibor Keneji = 'white sheep/goats') / Sampur",
-          "pronunciation": "il-oikop",
+          "translation": "Il-oikop / Il-Burkeneji (Naibor Keneji) / Sampur",
+          "pronunciation": "il-oi-kop",
           "context": "Sir Harry H. Johnston (1902, Vol. II) & C. W. Hobley (1910, pp. 159–160, 162 n.) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "Ngingyang (dry river bed north of Lake Baringo; Samburu name for the crocodile, which burrows beneath the sand during the dry season)",
-          "translation": "Ngingyang (crocodile / Ngingyang River — crocodiles burrow beneath the sand in the dry season and emerge when the river flows)",
+          "translation": "Ngingyang",
           "pronunciation": "ngi-ngyang",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 49 & fn. 1) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "Lorogishu (second Samburu section, called Kwakituk by the Suk, on the 4,000-ft Angata e-'m-barta plateau north of Loroghi)",
-          "translation": "Lorogishu (Suk: Kwakituk) & Angata e-'m-barta (migrated across the Sogota and Lomello plains alongside the Rendille clan Naroshon)",
-          "pronunciation": "lorogishu  & angata e-'m-barta",
+          "translation": "Lorogishu (Kwakituk) & Angata e-'m-barta",
+          "pronunciation": "lo-ro-gi-shu & a-nga-ta e-m-bar-ta",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 50–51) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "Lobbeyok (third Samburu section — Lobbeyok being the Suk name for the Samburu — who occupied Ngingyang, Sogota–Lomello, and Tiati / Il Maruroi)",
-          "translation": "Lobbeyok & Il Maruroi (Samburu name for Tiati; driven south to El Bogoi by the Masai Segellai of Nakuru/Mau)",
-          "pronunciation": "lobbeyok & il maruroi",
+          "translation": "Lobbeyok & Il Maruroi",
+          "pronunciation": "lob-be-yok & il ma-ru-roi",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 51) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
           "english": "Moruanghakhulakh ('Hill of Thieves') — mountain refuge where defeated Samburu / Doigio lived as Dorobo hunters after Turkana and Suk raids",
-          "translation": "Moruanghakhulakh ('Hill of Thieves')",
+          "translation": "Moruanghakhulakh",
           "pronunciation": "mo-ru-a-ngha-khu-lakh",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 52) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
@@ -3180,8 +3180,8 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "All (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Tukutuk (tukul = all, in Nandi)",
+          "english": "All (Mogogodo / Dorobo of Mt. Kenya; cf. Nandi tukul)",
+          "translation": "Tukutuk",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -3261,7 +3261,7 @@
         },
         {
           "english": "Man (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Iei or Sei (Ke-Sei = that is a man), N. = chii",
+          "translation": "Iei / Sei (Ke-Sei)",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -3421,7 +3421,7 @@
         },
         {
           "english": "Lake (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Ando (variant of Antu = water)",
+          "translation": "Ando (Antu)",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -3510,8 +3510,8 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Tree (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Keded, tree = ketit in Nandi",
+          "english": "Tree (Mogogodo / Dorobo of Mt. Kenya; cf. Nandi ketit)",
+          "translation": "Keded",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -3556,7 +3556,7 @@
         },
         {
           "english": "Beard (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Munyei (M.[])",
+          "translation": "Munyei",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -3810,8 +3810,8 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Forest (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Sousou (small woods)",
+          "english": "Forest / Small woods (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Sousou",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -4005,8 +4005,8 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "He eats (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Egeto (giheji) = (food)",
+          "english": "He eats (food) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Egeto (giheji)",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -4085,8 +4085,8 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "To bring (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Ilehei (cause to come)",
+          "english": "To bring (lit. cause to come) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ilehei",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -4120,8 +4120,8 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Crocodile (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Keinyang (M.), Nyang = crocodile in Tho-Luo",
+          "english": "Crocodile (Mogogodo / Dorobo of Mt. Kenya; cf. Dholuo nyang')",
+          "translation": "Keinyang",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -4211,7 +4211,7 @@
         },
         {
           "english": "They know (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Chegehen or kisei chekehen (those people)",
+          "translation": "Chegehen / kisei chekehen",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -4236,7 +4236,7 @@
         },
         {
           "english": "Mogogodo (Il Mwesi / Yaaku) Chiefs Parmashu & Matungi and Mweru Laibon Lakaibe",
-          "translation": "Il Mwesi (Masai name for the Mogogodo) • Chiefs Parmashu & Matungi • Laibon Lakaibe",
+          "translation": "Il Mwesi • Parmashu & Matungi • Laibon Lakaibe",
           "context": "Mogogodo ethnography — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, Part II, Ch. V, p. 146) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -4250,8 +4250,8 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Salutation (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Keshoboshon (Sobat of Masai)",
+          "english": "Salutation (Mogogodo / Dorobo of Mt. Kenya; cf. Maa Sobat)",
+          "translation": "Keshoboshon",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -4510,8 +4510,8 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Zebra, Grevy's (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Ol-Kanka kepuni (grey)",
+          "english": "Zebra, Grevy's (lit. grey zebra) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Ol-Kanka kepuni",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
@@ -4545,13 +4545,13 @@
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Generation or age (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Erei (Poror of Masai)",
+          "english": "Generation or age-set (Mogogodo / Dorobo of Mt. Kenya; cf. Maa Poror)",
+          "translation": "Erei",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {
-          "english": "Poison for arrows (Mogogodo / Dorobo of Mt. Kenya)",
-          "translation": "Morijoi (name of tree used) M. Akokanthera Schimperi",
+          "english": "Poison for arrows (Acokanthera schimperi tree) (Mogogodo / Dorobo of Mt. Kenya)",
+          "translation": "Morijoi",
           "context": "Mogogodo vocabulary — C. W. Hobley, Ethnology of A-Kamba and Other East African Tribes (1910, pp. 147–154) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
         },
         {

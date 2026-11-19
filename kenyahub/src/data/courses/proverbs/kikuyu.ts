@@ -1,7 +1,7 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Kikuyu (Gĩkũyũ) Proverbs & Oral Literature (11 verified entries)
+// Kikuyu (Gĩkũyũ) Proverbs & Oral Literature (13 verified entries)
 // ============================================================
 
 export const KIKUYU_PROVERBS: ProverbItem[] = [
@@ -74,9 +74,9 @@ export const KIKUYU_PROVERBS: ProverbItem[] = [
     "languageName": "Kikuyu (Gĩkũyũ — Höhnel 1894 & Dundas 1915)",
     "indigenous": "Mirema! — Thayu! Thayu! (Kuhoria tatha & Mbũri ya thayu) • Kiama kĩa Kamatimo na Kiama kĩa Athuri (Mataha).",
     "literalTranslation": "Peaceful greeting! — Peace! Peace! (The peace-sprinkling ceremony and the sheep of peace) • The junior council (Kamatimo) and senior elders' council (Athuri a Mataha).",
-    "meaning": "Recorded firsthand by Lieut. Ludwig von Höhnel during the 1887 traverse of Kikuyuland ('Discovery of Lakes Rudolf and Stefanie', Vol. I, 1894, pp. 295–355) with elders Waiyaki, Karanja, and Wamugunda, and by Hon. Charles Dundas (JRAI Vol. 45, 1915): solemn peace covenants (gĩthathi / kuhoria) and deliberative justice sustain harmony across every ridge (rũgongo).",
+    "meaning": "Recorded firsthand by Lieut. Ludwig von Höhnel during the 1887 traverse of Kikuyuland ('Discovery of Lakes Rudolf and Stefanie', Vol. I, 1894, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375) with elders Miani, Karanja, Waiyaki, Kihara, Gathirimu, Karanja wa Maragua, Wamugunda (Tetu), and Kihura (Ndoro), and by Hon. Charles Dundas (JRAI Vol. 45, 1915): solemn peace covenants (gĩthathi / kuhoria tatha over mburi ya thayu) and deliberative justice sustain harmony across all 68 parallel ravines and ridges (mĩgongo).",
     "theme": "unity",
-    "sourceCitation": "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, pp. 295–355) & Hon. Charles Dundas, JRAI Vol. 45 (1915)"
+    "sourceCitation": "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375) & Hon. Charles Dundas, JRAI Vol. 45 (1915)"
   },
   {
     "id": "kikuyu-hemery-1903-1",
@@ -121,39 +121,27 @@ export const KIKUYU_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "Every generation, year, symbol, and tally-stick preserves the law and memory of the ridges.",
     "theme": "wisdom",
     "sourceCitation": "W. Scoresby & Katherine Routledge, With a Prehistoric People: The Akikúyu of British East Africa (London: Edward Arnold, 1910, pp. i–xxxii, 1–392)"
+  },
+  {
+    "id": "kikuyu-mcgregor-1904-3",
+    "languageId": "kikuyu",
+    "languageName": "Kikuyu (Gĩkũyũ — Rev. A. W. McGregor, 1904 Fort Smith / Kabeti Vocabulary: Orthography, Religion & Material Culture)",
+    "indigenous": "koteng'era (velar ng') vs. kuing'gata & ketung'guru (ng' + hard g) (p. 5) • Mwetereri (Etereri) & Gechunji (I-) → Ichunji (p. 6) • Ngai (Makai), Kegongaini (I-), Igongona (Magongona), Thahu / Mugiru (Migiri) & Nyoni njega / Nyoni njoru (pp. 14, 75, 88, 112, 122–123, 157) • Thingira (Ma-), Itara (Ma-), Ikombi (Ma-), Kyugo (Chiugo), Mungu (Miungu) & Kegandaini (pp. 31, 71–72, 84–85, 103, 146, 162, 183).",
+    "literalTranslation": "To abscond/run (pronounced koteng-era, not koten-gera) vs. to banish/conquer/drive away & ball/sphere (p. 5) • Servant (pl. Etereri) & Portion (pl. Ichunji, p. 6) • God, altar, sacrifice/offering, ceremonial taboo/sin, and good vs. bad omens • Man's hut (Thingira), granaries (Itara & Ikombi), livestock fold (Kyugo), refuge pit of men (Mungu), and smith's furnace (Kegandaini).",
+    "meaning": "Audited 100% line-by-line from Rev. A. W. McGregor's 'English-Kikuyu Vocabulary' (SPCK London, 1904, printed by Richard Clay & Sons, Limited, London and Bungay, pp. [i]–iv, 5–192 [PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1, Dr. & Mrs. Robert A. Rennie bookplate]): documents the Royal Geographical Society (R.G.S.) orthography of Kabeti (Fort Smith) where Th replaces S and Z, L and R alternate, and ng' vs. ng'g distinguishes the pure velar nasal from prenasalized hard g, alongside the full ritual, medical, architectural, and metallurgical lexicon and all 9 original printer's errata.",
+    "englishEquivalent": "Precision in speech and reverence for sacred custom preserve the wisdom of the community.",
+    "theme": "wisdom",
+    "sourceCitation": "Rev. A. W. McGregor, English-Kikuyu Vocabulary (C.M.S. / SPCK London, 1904, Fort Smith / Kabeti 1901–1902, PDF pp. 1–201 / Book pp. [i]–iv, 5–192)"
+  },
+  {
+    "id": "kikuyu-tsammalex-kaikki-smol-thiomi-cgiar-2026",
+    "languageId": "kikuyu",
+    "languageName": "Kikuyu (Gĩkũyũ — Tsammalex, Kaikki.org, Google SMOL/GATITOS, Thiomi & CGIAR, CC-BY-4.0 / Apache-2.0)",
+    "indigenous": "Tsammalex Ethnobiology (https://tsammalex.clld.org/languages/kik): kui / gwii / hu (Canis lupus familiaris) • m-bori / m-buri (Capra hircus), k-ori ('kid'), ka-harika / a-gωma / mu-gωma ('female goat') • n-degwa / ma-tekwa (Bos taurus 'bull, ox'), mori ('heifer, young cow') • n-durume / n-dωromi (Ovis aries 'sheep') • Kaikki.org (1,497 Gĩkũyũ headwords & 15 proverbs) • Google GATITOS (3,994 Gĩkũyũ items) & Thiomi (102,294 Gĩkũyũ–English sentence pairs).",
+    "literalTranslation": "Domestic dog, goat, kid, female goat, bull/ox, heifer, and ram/sheep in Kikuyu ethnobiology, paired with 1,497 Kaikki.org Wiktionary headwords, 3,994 Google GATITOS lexical items, 102,294 Thiomi sentences, and CGIAR agricultural translations.",
+    "meaning": "Synthesizes the open-access English-glossed Kikuyu lexical and sentence corpora across Tsammalex (CC-BY-4.0), Kaikki.org / Wiktextract (CC-BY-SA-4.0), Google Research SMOL & GATITOS (arXiv:2502.12301v2, CC-BY-4.0), The Thiomi Dataset (arXiv:2603.29244v1, CC-BY-4.0), and CGIAR/KikuyuEnglish_translation (Vineet Singh 2024, Apache-2.0).",
+    "englishEquivalent": "Every creature of the homestead and harvest of the ridge is named with care.",
+    "theme": "nature",
+    "sourceCitation": "Tsammalex Kikuyu (https://tsammalex.clld.org/languages/kik, CC-BY-4.0), Kaikki.org Kikuyu (CC-BY-SA-4.0), Google SMOL/GATITOS (CC-BY-4.0), Thiomi (CC-BY-4.0) & CGIAR (Apache-2.0)"
   }
 ];
-
-const _existingHohnelKikuyuProvIdx = KIKUYU_PROVERBS.findIndex(
-  (p) => p.id === "kikuyu-hohnel-1894-dundas-1915"
-);
-if (_existingHohnelKikuyuProvIdx >= 0) {
-  KIKUYU_PROVERBS[_existingHohnelKikuyuProvIdx].meaning =
-    "Recorded firsthand by Lieut. Ludwig von Höhnel during the 1887 traverse of Kikuyuland ('Discovery of Lakes Rudolf and Stefanie', Vol. I, 1894, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375) with elders Miani, Karanja, Waiyaki, Kihara, Gathirimu, Karanja wa Maragua, Wamugunda (Tetu), and Kihura (Ndoro), and by Hon. Charles Dundas (JRAI Vol. 45, 1915): solemn peace covenants (gĩthathi / kuhoria tatha over mburi ya thayu) and deliberative justice sustain harmony across all 68 parallel ravines and ridges (mĩgongo).";
-  KIKUYU_PROVERBS[_existingHohnelKikuyuProvIdx].sourceCitation =
-    "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–366, 371–375) & Hon. Charles Dundas, JRAI Vol. 45 (1915)";
-}
-
-KIKUYU_PROVERBS.push({
-  "id": "kikuyu-mcgregor-1904-3",
-  "languageId": "kikuyu",
-  "languageName": "Kikuyu (Gĩkũyũ — Rev. A. W. McGregor, 1904 Fort Smith / Kabeti Vocabulary: Orthography, Religion & Material Culture)",
-  "indigenous": "koteng'era (velar ng') vs. kuing'gata & ketung'guru (ng' + hard g) (p. 5) • Mwetereri (Etereri) & Gechunji (I-) → Ichunji (p. 6) • Ngai (Makai), Kegongaini (I-), Igongona (Magongona), Thahu / Mugiru (Migiri) & Nyoni njega / Nyoni njoru (pp. 14, 75, 88, 112, 122–123, 157) • Thingira (Ma-), Itara (Ma-), Ikombi (Ma-), Kyugo (Chiugo), Mungu (Miungu) & Kegandaini (pp. 31, 71–72, 84–85, 103, 146, 162, 183).",
-  "literalTranslation": "To abscond/run (pronounced koteng-era, not koten-gera) vs. to banish/conquer/drive away & ball/sphere (p. 5) • Servant (pl. Etereri) & Portion (pl. Ichunji, p. 6) • God, altar, sacrifice/offering, ceremonial taboo/sin, and good vs. bad omens • Man's hut (Thingira), granaries (Itara & Ikombi), livestock fold (Kyugo), refuge pit of men (Mungu), and smith's furnace (Kegandaini).",
-  "meaning": "Audited 100% line-by-line from Rev. A. W. McGregor's 'English-Kikuyu Vocabulary' (SPCK London, 1904, printed by Richard Clay & Sons, Limited, London and Bungay, pp. [i]–iv, 5–192 [PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1, Dr. & Mrs. Robert A. Rennie bookplate]): documents the Royal Geographical Society (R.G.S.) orthography of Kabeti (Fort Smith) where Th replaces S and Z, L and R alternate, and ng' vs. ng'g distinguishes the pure velar nasal from prenasalized hard g, alongside the full ritual, medical, architectural, and metallurgical lexicon and all 9 original printer's errata.",
-  "englishEquivalent": "Precision in speech and reverence for sacred custom preserve the wisdom of the community.",
-  "theme": "wisdom",
-  "sourceCitation": "Rev. A. W. McGregor, English-Kikuyu Vocabulary (C.M.S. / SPCK London, 1904, Fort Smith / Kabeti 1901–1902, PDF pp. 1–201 / Book pp. [i]–iv, 5–192)"
-});
-
-KIKUYU_PROVERBS.push({
-  "id": "kikuyu-tsammalex-kaikki-smol-thiomi-cgiar-2026",
-  "languageId": "kikuyu",
-  "languageName": "Kikuyu (Gĩkũyũ — Tsammalex, Kaikki.org, Google SMOL/GATITOS, Thiomi & CGIAR, CC-BY-4.0 / Apache-2.0)",
-  "indigenous": "Tsammalex Ethnobiology (https://tsammalex.clld.org/languages/kik): kui / gwii / hu (Canis lupus familiaris) • m-bori / m-buri (Capra hircus), k-ori ('kid'), ka-harika / a-gωma / mu-gωma ('female goat') • n-degwa / ma-tekwa (Bos taurus 'bull, ox'), mori ('heifer, young cow') • n-durume / n-dωromi (Ovis aries 'sheep') • Kaikki.org (1,497 Gĩkũyũ headwords & 15 proverbs) • Google GATITOS (3,994 Gĩkũyũ items) & Thiomi (102,294 Gĩkũyũ–English sentence pairs).",
-  "literalTranslation": "Domestic dog, goat, kid, female goat, bull/ox, heifer, and ram/sheep in Kikuyu ethnobiology, paired with 1,497 Kaikki.org Wiktionary headwords, 3,994 Google GATITOS lexical items, 102,294 Thiomi sentences, and CGIAR agricultural translations.",
-  "meaning": "Synthesizes the open-access English-glossed Kikuyu lexical and sentence corpora across Tsammalex (CC-BY-4.0), Kaikki.org / Wiktextract (CC-BY-SA-4.0), Google Research SMOL & GATITOS (arXiv:2502.12301v2, CC-BY-4.0), The Thiomi Dataset (arXiv:2603.29244v1, CC-BY-4.0), and CGIAR/KikuyuEnglish_translation (Vineet Singh 2024, Apache-2.0).",
-  "englishEquivalent": "Every creature of the homestead and harvest of the ridge is named with care.",
-  "theme": "nature",
-  "sourceCitation": "Tsammalex Kikuyu (https://tsammalex.clld.org/languages/kik, CC-BY-4.0), Kaikki.org Kikuyu (CC-BY-SA-4.0), Google SMOL/GATITOS (CC-BY-4.0), Thiomi (CC-BY-4.0) & CGIAR (Apache-2.0)"
-});

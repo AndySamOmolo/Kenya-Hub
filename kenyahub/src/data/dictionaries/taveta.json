@@ -10,13 +10,13 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-18",
   "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
       "id": "greetings",
       "name": "Greetings & Farewells",
-      "icon": "👋",
+      "icon": "Hand",
       "entries": [
         {
           "english": "Hello",
@@ -71,7 +71,7 @@
     {
       "id": "numbers",
       "name": "Numbers & Counting",
-      "icon": "🔢",
+      "icon": "Hash",
       "entries": [
         {
           "english": "Six",
@@ -256,25 +256,25 @@
         {
           "english": "Twenty",
           "translation": "Mī-rōṅgo mī-vīrī",
-          "pronunciation": "mī-rōṅg mī-vīrī",
+          "pronunciation": "mī-rōṅgo mī-vīrī",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Thirty",
           "translation": "Mī-rōṅgo mī-tātū",
-          "pronunciation": "mī-rōṅg mī-tātū",
+          "pronunciation": "mī-rōṅgo mī-tātū",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Forty",
           "translation": "Mī-rōṅgo mī-nā",
-          "pronunciation": "mī-rōṅg mī-nā",
+          "pronunciation": "mī-rōṅgo mī-nā",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Fifty",
           "translation": "Mī-rōṅgo mī-sāno",
-          "pronunciation": "mī-rōṅg mī-sān",
+          "pronunciation": "mī-rōṅgo mī-sāno",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -289,18 +289,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Bone",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Country",
           "translation": "Tere",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Country",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -324,11 +314,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Thousand",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Two",
           "translation": "iri",
           "context": "CLDF ASJP v20 Wordlist (TAVETA, CC-BY-4.0)"
@@ -348,7 +333,7 @@
     {
       "id": "family",
       "name": "Family, People & Kinship",
-      "icon": "👨‍👩‍👧‍👦",
+      "icon": "Users",
       "entries": [
         {
           "english": "Man",
@@ -551,7 +536,7 @@
         {
           "english": "Doctor (medicine man)",
           "translation": "Mu-ghaṅga; va",
-          "pronunciation": "mu-aṅga",
+          "pronunciation": "mu-ghaṅga",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -590,18 +575,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Breast (man's)",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Breast (woman's)",
           "translation": "I-vele",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Breast (woman's)",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -610,18 +585,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Brother",
-          "translation": "va",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Chief",
           "translation": "Mṅgwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Chief",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -635,11 +600,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Doctor (medicine man)",
-          "translation": "va",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Father",
           "translation": "Va-va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
@@ -647,11 +607,6 @@
         {
           "english": "Girl",
           "translation": "M-ndele",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Girl",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -672,11 +627,6 @@
         {
           "english": "Son, boy",
           "translation": "M-sōro",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Son, boy",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -714,7 +664,7 @@
     {
       "id": "body",
       "name": "Body Parts & Health",
-      "icon": "🫁",
+      "icon": "Heart",
       "entries": [
         {
           "english": "Eye",
@@ -1025,7 +975,7 @@
         {
           "english": "Back",
           "translation": "Mu-oṅgo",
-          "pronunciation": "mu-oṅg",
+          "pronunciation": "mu-oṅgo",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -1037,7 +987,7 @@
         {
           "english": "Cold",
           "translation": "M-pepo",
-          "pronunciation": "m-pep",
+          "pronunciation": "m-pepo",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -1049,7 +999,7 @@
         {
           "english": "Neck",
           "translation": "Sīṅgo",
-          "pronunciation": "sīṅg",
+          "pronunciation": "sīṅgo",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -1070,18 +1020,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Arm",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Beard",
           "translation": "Kolo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Beard",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -1090,18 +1030,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Beard",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Belly",
           "translation": "I-deu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Belly",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -1165,16 +1095,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Hand",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Head",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Leg",
           "translation": "Ku-gu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
@@ -1200,28 +1120,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Shoulder",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Spear",
           "translation": "I-fūmu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Spear",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Tear",
           "translation": "I-zōri",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Tear",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -1247,11 +1152,6 @@
         {
           "english": "Tooth",
           "translation": "I-jēghō",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Tooth",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -1339,7 +1239,7 @@
     {
       "id": "animals",
       "name": "Animals, Livestock & Wildlife",
-      "icon": "🦁",
+      "icon": "PawPrint",
       "entries": [
         {
           "english": "Ox",
@@ -1626,7 +1526,7 @@
         {
           "english": "Dog",
           "translation": "M-baru. Koši",
-          "pronunciation": "m-baru kši",
+          "pronunciation": "m-baru koši",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -1652,22 +1552,12 @@
         },
         {
           "english": "Baboon",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Baboon",
           "translation": "N-ragiñ",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
           "english": "Bird",
           "translation": "Ny-onyi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Bird",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -1683,11 +1573,6 @@
         {
           "english": "Zebra",
           "translation": "I-tīko",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Zebra",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -1710,7 +1595,7 @@
     {
       "id": "nature",
       "name": "Nature, Environment & Geography",
-      "icon": "🌿",
+      "icon": "Leaf",
       "entries": [
         {
           "english": "Sun",
@@ -2031,28 +1916,13 @@
           "context": "Kitaveta ecological and agricultural lexicon • Source: Bantu Basic Vocabulary Database (https://bantu.clld.org, CC-BY-4.0) & African Storybook Project (https://www.africanstorybook.org, CC-BY-4.0)"
         },
         {
-          "english": "Fire",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Forest",
           "translation": "M-situ",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Forest",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Hill",
           "translation": "Ki-dūwi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Hill",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -2061,18 +1931,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Lake",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Mountain",
           "translation": "Ki-dūwi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Mountain",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -2081,18 +1941,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "River",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Sky",
           "translation": "I-rīva",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Sky",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -2180,7 +2030,7 @@
     {
       "id": "food",
       "name": "Food, Drink & Agriculture",
-      "icon": "🍲",
+      "icon": "Utensils",
       "entries": [
         {
           "english": "Yam",
@@ -2350,18 +2200,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Banana",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Egg",
           "translation": "I-tagi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Egg",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -2419,7 +2259,7 @@
     {
       "id": "home",
       "name": "Home, Tools & Material Culture",
-      "icon": "🏠",
+      "icon": "Home",
       "entries": [
         {
           "english": "Bow",
@@ -2586,13 +2426,13 @@
         {
           "english": "Brains",
           "translation": "M-zoṅgo",
-          "pronunciation": "m-zoṅg",
+          "pronunciation": "m-zoṅgo",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Buttocks",
           "translation": "I-tako; ma",
-          "pronunciation": "i-tak",
+          "pronunciation": "i-tako",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -2622,7 +2462,7 @@
         {
           "english": "Ivory",
           "translation": "Ndovu",
-          "pronunciation": "ndvu",
+          "pronunciation": "ndovu",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -2634,25 +2474,25 @@
         {
           "english": "Lips",
           "translation": "Ki-lomo; vi",
-          "pronunciation": "ki-lm",
+          "pronunciation": "ki-lomo",
           "context": "15. Taveita (Kitaveta) — Sir H. H. Johnston, Comparative Study of the Bantu Languages (1919, Vol. I, pp. 98–110) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Penis",
           "translation": "M-bolo",
-          "pronunciation": "m-bl",
+          "pronunciation": "m-bolo",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Shame",
           "translation": "Sonī",
-          "pronunciation": "snī",
+          "pronunciation": "sonī",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
           "english": "Slave",
           "translation": "M-zōro; va-. M-sīṅga",
-          "pronunciation": "m-zōr",
+          "pronunciation": "m-zōro",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -2670,7 +2510,7 @@
         {
           "english": "Thou, thee, thy",
           "translation": "I-we. Ū-. -kū-. -āko",
-          "pronunciation": "i-we ū- -kū- -āk",
+          "pronunciation": "i-we ū- -kū- -āko",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -2701,18 +2541,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Axe",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Charcoal",
           "translation": "I-kala",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Charcoal",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -2731,18 +2561,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Hoe",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Knife",
           "translation": "Ki-šū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Knife",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -2755,7 +2575,7 @@
     {
       "id": "verbs",
       "name": "Core Verbs & Actions",
-      "icon": "🏃",
+      "icon": "Activity",
       "entries": [
         {
           "english": "Go",
@@ -3078,7 +2898,7 @@
         {
           "english": "Dream",
           "translation": "Ku-lota (verb)",
-          "pronunciation": "ku-lta",
+          "pronunciation": "ku-lota",
           "context": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
         {
@@ -3137,7 +2957,7 @@
     {
       "id": "adjectives",
       "name": "Adjectives, Qualities & Grammar",
-      "icon": "✨",
+      "icon": "Sparkles",
       "entries": [
         {
           "english": "Big",
@@ -3342,7 +3162,7 @@
     {
       "id": "travel",
       "name": "Travel, Directions & Navigation",
-      "icon": "🧭",
+      "icon": "Compass",
       "entries": [
         {
           "english": "Far",
@@ -3473,17 +3293,12 @@
         {
           "english": "Town",
           "translation": "M-oṅgo; mi",
-          "pronunciation": "m-oṅg",
+          "pronunciation": "m-oṅgo",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Canoe",
           "translation": "M-kuṅgu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Canoe",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -3511,7 +3326,7 @@
     {
       "id": "shopping",
       "name": "Trade, Money & Measures",
-      "icon": "🛒",
+      "icon": "ShoppingCart",
       "entries": [
         {
           "english": "To buy, sell",
@@ -3566,7 +3381,7 @@
     {
       "id": "emergency",
       "name": "Health, Safety, Law & Conflict",
-      "icon": "🚨",
+      "icon": "Siren",
       "entries": [
         {
           "english": "War",
@@ -3648,7 +3463,7 @@
     {
       "id": "time",
       "name": "Time, Seasons & Calendar",
-      "icon": "⏰",
+      "icon": "Clock",
       "entries": [
         {
           "english": "Day",
@@ -3751,7 +3566,7 @@
     {
       "id": "phrases",
       "name": "Common Expressions & Vocabulary",
-      "icon": "🗣️",
+      "icon": "MessageCircle",
       "entries": [
         {
           "english": "God",
@@ -4070,7 +3885,7 @@
     {
       "id": "culture-history",
       "name": "Culture, Clans & Historical Corpus",
-      "icon": "📜",
+      "icon": "BookOpen",
       "entries": [
         {
           "english": "God",
@@ -4116,7 +3931,7 @@
         },
         {
           "english": "Proverb / wise saying (Kitaveta)",
-          "translation": "mbazi /ulosi",
+          "translation": "mbazi / ulosi",
           "pronunciation": "mba-zi",
           "context": "A. C. Hollis, Taveta Sayings and Proverbs (1910) • Cross-verified with CLDF ASJP v20 TAVETA"
         },
@@ -4192,11 +4007,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Buttocks",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Dream",
           "translation": "Ku-lota",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
@@ -4227,18 +4037,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Island",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Lips",
           "translation": "Ki-lomo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Lips",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -4247,18 +4047,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Name",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Slave",
           "translation": "M-zōro",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Slave",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -4277,18 +4067,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Tail",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Thigh",
           "translation": "I-ga, I-gha",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Thigh",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -4312,18 +4092,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
-          "english": "Town",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
           "english": "Witch",
           "translation": "M-sāwi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Witch",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -4368,17 +4138,7 @@
         },
         {
           "english": "Ye, you, your",
-          "translation": "va",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "Ye, you, your",
           "translation": "ēnyū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
-        },
-        {
-          "english": "They, them, their",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
         },
         {
@@ -4532,5 +4292,5 @@
   "source": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "tvs",
   "glottocode": "tave1238",
-  "totalEntries": 775
+  "totalEntries": 727
 }

@@ -626,8 +626,8 @@
         },
         {
           "english": "Hundred",
-          "translation": "Pokol = countless",
-          "pronunciation": "po-kol count-les",
+          "translation": "Pokol",
+          "pronunciation": "po-kol",
           "context": "Kamásia (Tūken / Tugen) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with ThinkKenya/Waleghwa Kalenjin (35,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -638,8 +638,8 @@
         },
         {
           "english": "Thousand",
-          "translation": "Pokol = countless",
-          "pronunciation": "po-kol count-les",
+          "translation": "Pokol",
+          "pronunciation": "po-kol",
           "context": "Nandi — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with ThinkKenya/Waleghwa Kalenjin (35,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -757,9 +757,9 @@
           "context": "Nandi / Kalenjin Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
-          "english": "Hundred",
-          "translation": "40-aratam; 50-konom; 60-taman akolo; 70 sosom tisap; 100-pokol",
-          "pronunciation": "40-aratam",
+          "english": "Tens & Hundred (40, 50, 60, 70, 100)",
+          "translation": "artam (40); konom (50); tamanwogik lo (60); tamanwogik tisap (70); pokol (100)",
+          "pronunciation": "ar-tam / ko-nom / po-kol",
           "context": "Nandi / Kalenjin Vocabulary (Hobley 1902, Eastern Uganda)"
         },
         {
@@ -843,12 +843,12 @@
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
-          "english": "Attend (paternal)",
+          "english": "Aunt (paternal)",
           "translation": "senge (senget)",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
-          "english": "Attend (maternal)",
+          "english": "Aunt (maternal)",
           "translation": "kamet or kametit, pl. angut-kamet",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
@@ -1299,17 +1299,17 @@
         },
         {
           "english": "Seventy",
-          "translation": "akonom",
+          "translation": "Konom ak tiptem",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Nandi."
         },
         {
           "english": "Eighty",
-          "translation": "oen",
+          "translation": "Artam oen",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Nandi."
         },
         {
           "english": "Ninety",
-          "translation": "aksogol",
+          "translation": "Taman aksogol",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Nandi."
         },
         {
@@ -1333,7 +1333,7 @@
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Kipsigis (Ch. 25)"
         },
         {
-          "english": "child.PL some.PL three all",
+          "english": "Every one of us sang",
           "translation": "ko-gitiense echek age/alak tugul",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Kipsigis (Ch. 25)"
         },
@@ -43479,8 +43479,8 @@
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
-          "english": "The",
-          "translation": "def. article",
+          "english": "The (definite article suffix)",
+          "translation": "-t / -ta / -to / -do (sg.), -k / -ik / -ek (pl.)",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
@@ -43620,7 +43620,7 @@
         },
         {
           "english": "Turn, Turn over",
-          "translation": "(act.), iwech",
+          "translation": "iwech",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
@@ -44134,7 +44134,7 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Nandi."
         },
         {
-          "english": "She doesn",
+          "english": "She doesn't like the book",
           "translation": "mo-cham kitabut",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Kipsigis (Ch. 25)"
         },

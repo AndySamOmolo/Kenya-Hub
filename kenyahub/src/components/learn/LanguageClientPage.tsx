@@ -15,10 +15,11 @@ import {
   Layers,
   Heart,
   Shield,
+  Volume2,
 } from "lucide-react";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
-import { playLanguageAudio } from "@/lib/language-audio";
+import { playLanguageAudio, hasVerifiedAudio } from "@/lib/language-audio";
 import SkillTree from "@/components/learn/SkillTree";
 import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
@@ -224,6 +225,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           source: s,
           pronunciation: e.pronunciation || undefined,
           example: e.context || undefined,
+          audioFile: e.audioFile || undefined,
         });
       }
       if (words.length === 0) continue;
@@ -994,19 +996,27 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                             <span className="text-sm font-bold text-gold break-words">
                               {w.target}
                             </span>
-                            <button
-                              type="button"
-                              onClick={() =>
-                                playLanguageAudio(
-                                  { english: w.source, translation: w.target, pronunciation: w.pronunciation },
-                                  course.config.id
-                                )
-                              }
-                              className="inline-flex items-center justify-center rounded-md px-1.5 py-0.5 text-[0.65rem] text-sky hover:bg-sky/10 transition-colors shrink-0 cursor-pointer"
-                              title={`Listen to ${course.config.name} pronunciation`}
-                            >
-                              🔊
-                            </button>
+                            {hasVerifiedAudio({ translation: w.target, audioFile: w.audioFile || w.audio }) && (
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  playLanguageAudio(
+                                    {
+                                      english: w.source,
+                                      translation: w.target,
+                                      pronunciation: w.pronunciation,
+                                      audioFile: w.audioFile || w.audio,
+                                    },
+                                    course.config.id
+                                  )
+                                }
+                                className="inline-flex items-center justify-center rounded-md p-1 text-sky hover:bg-sky/10 transition-colors shrink-0 cursor-pointer"
+                                title={`Play verified ${course.config.name} recording`}
+                                aria-label={`Play verified ${course.config.name} recording for ${w.target}`}
+                              >
+                                <Volume2 className="w-3.5 h-3.5" />
+                              </button>
+                            )}
                           </div>
                           <span className="text-xs sm:text-sm font-medium text-text-primary text-right break-words max-w-[55%]">
                             {w.source}

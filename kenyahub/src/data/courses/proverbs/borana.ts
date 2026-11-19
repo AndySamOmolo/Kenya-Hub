@@ -1,7 +1,7 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Borana / Oromo (Afaan Borana) Proverbs & Oral Literature (14 verified entries)
+// Borana / Oromo (Afaan Borana) Proverbs & Oral Literature (16 verified entries)
 // ============================================================
 
 export const BORANA_PROVERBS: ProverbItem[] = [
@@ -71,7 +71,7 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "id": "borana-7",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana)",
-    "indigenous": "Idya Wacᵃ kaba ura; hadarinza kaba ura (pp. 27, 190) • Uma Wacayoti hinkolfin! (p. 28) • Mukni Wacᵃ careṅ domu (p. 102) • Tchaba ati murte Naman bad'z'izin; — Liqi ati fud'te Naman bazizin (p. 72).",
+    "indigenous": "Idya Wacᵃ kaba ura; hadarinza kaba ura • Uma Wacayoti hinkolfin! • Mukni Wacᵃ careṅ domu • Tchaba ati murte Naman bad'z'izin; — Liqi ati fud'te Naman bazizin.",
     "literalTranslation": "The eye of God penetrates the wall; His wisdom penetrates a wall (pp. 27, 190) • Do thou not laugh at any of God's works! (p. 28) • The edge of the spear of God is not blunted (p. 102) • The wood which thou didst hew, let nobody carry; — The loan which thou didst take, let nobody pay (p. 72).",
     "meaning": "Recorded verbatim by Karl & Lawrence Tutschek in 'Dictionary of the Galla Language' (Part I, Munich, 1844, pp. 27–28, 72, 102, 190): teaches reverence for Wacayo's omniscience and creation, and personal accountability for one's own burdens and debts.",
     "englishEquivalent": "Nothing is hidden from God's eye; bear your own burden and pay your own debt.",
@@ -82,7 +82,7 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "id": "borana-8",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana)",
-    "indigenous": "Ilkanin namni gitᵃumtu fira (pp. 20, 121) • Tchitinif ibida waliṅ gain; biçanif ibidi wali ha gau (p. 74) • Ibidif biçan hirmiṅ cabu, fulif gongon d'okzaṅ cabu (p. 114) • Namni ho bola lit'e hadaroma (p. 190).",
+    "indigenous": "Ilkanin namni gitᵃumtu fira • Tchitinif ibida waliṅ gain; biçanif ibidi wali ha gau • Ibidif biçan hirmiṅ cabu, fulif gongon d'okzaṅ cabu • Namni ho bola lit'e hadaroma.",
     "literalTranslation": "By the teeth all men are related/friends (pp. 20, 121) • Chaff and fire shall not come near each other; water and fire may approach each other (p. 74) • Fire and water have no prohibition, face and throat have no concealment (p. 114) • When a man has fallen into the pit, he becomes wise (p. 190).",
     "meaning": "Recorded verbatim by Karl & Lawrence Tutschek in 'Dictionary of the Galla Language' (Part I, Munich, 1844, pp. 20, 74, 114, 121, 190): warns against trusting every smiling face, urges peacemakers to bring water rather than chaff to a quarrel, affirms that water and fire must never be denied to a stranger, and notes how adversity teaches wisdom.",
     "englishEquivalent": "All that glitters is not gold; a soft answer turns away wrath; experience teaches fools.",
@@ -93,7 +93,7 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "id": "borana-9",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana)",
-    "indigenous": "Koromin wal ate, Latshu gugurod'a; — Nadeṅ wal arate, Latshu muzurod'a (p. 1) • Ombo z'an bared'a, Maf baretu d'abe? Dyalalti d'ukuba, Maf arera d'abe? (p. 10) • Galani na ñad'e, Giben na gezize; — Ano d'ufa djenan, D'iben na tezize (p. 61).",
+    "indigenous": "Koromin wal ate, Latshu gugurod'a; — Nadeṅ wal arate, Latshu muzurod'a • Ombo z'an bared'a, Maf baretu d'abe? Dyalalti d'ukuba, Maf arera d'abe? • Galani na ñad'e, Giben na gezize; — Ano d'ufa djenan, D'iben na tezize.",
     "literalTranslation": "Bulls gore each other, both are black; — Women altercate, both are newly married (p. 1) • Ombo z'an is handsome, why does he not find a fair maiden? Love is an illness, why does it not find medicine [arera]? (p. 10) • The river devoured me and carried me to the Gibe lake; — I said 'I shall come', but an obstacle detained me (p. 61).",
     "meaning": "Verbatim traditional Galla songs (wetu) recorded by Karl & Lawrence Tutschek in 'Dictionary of the Galla Language' (Part I, Munich, 1844, pp. 1, 10, 61, 117–118, 127, 148, 158) from Akafed'e Dalle, Otshu Aga, Aman Gonda, and Bilile, alongside the storytelling call 'rago rag!' (p. 152) and riddle call 'hibo hib!' (p. 198).",
     "theme": "family",
@@ -103,7 +103,7 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "id": "borana-10",
     "languageId": "borana",
     "languageName": "Borana / Orma (Dana River Kigálla)",
-    "indigenous": "Nagaia bulte? — Wakne nágaia si kennu! • Nágaia & arára (ka arársu); tába & makmáksa; soda Wakáti (Krapf 1850).",
+    "indigenous": "Nagaia bulte? — Wakne nágaia si kennu! • Nágaia & arára (ka arársu); tába & makmáksa; soda Wakáti.",
     "literalTranslation": "Hast thou passed the night in peace (Good morning)? — Farewell! May God (Wāka) give thee peace! • Peace and reconciliation (ka arársu = mediator/peacemaker); story and proverb (makmáksa); reverence for God (soda Wakáti).",
     "meaning": "Recorded verbatim by Rev. Dr. J. L. Krapf in \"Vocabulary of Six East-African Languages\" (Tübingen, 1850, pp. viii–ix, 20, 23–24, 33, 36, 39) from the Dana (Tana) River Galla (Orma) near Berraráta in 1845: proves the unity of Southern Kenyan Oromo (Orma/Borana) with Northern Shoan Oromo and highlights the centrality of peace (nágaia), mediation (arára), and covenant oaths (kákăno).",
     "theme": "unity",
@@ -113,7 +113,7 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "id": "borana-tutschek-1844-prov-complete-1",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana — Tutschek 1844 Proverbs on Speech, Sincerity & Diligence)",
-    "indigenous": "Afan agabudan kadad'u (p. 3) • Yo argite ebizi, yo d'abte abari (p. 16) • Ini aka kozi tȧ (p. 37) • Yo canqen gaya keza ut'ale namni indua (p. 45) • Ini aka gararati bifaza didirad'a (p. 56) • Dubino d'abaṅ cabu (p. 107) • Ini aka falʿanati afan nama dyala d'abad'a & Ini fando afaniti caba (p. 120) • Hodjadz'u wayo mo tau wai? (pp. 146, 201) • Lubun lamaṅ dyirtu (p. 161) • Madirati hinkolfini (p. 163) • Bokeṅi mit'ileṅ adjezu, zi adjeza? (p. 170) • Handangon qilenza ufiti naqeti ilman god'ad'a? (p. 177) • Ini hadarid'a aka zarendida (p. 190).",
+    "indigenous": "Afan agabudan kadad'u • Yo argite ebizi, yo d'abte abari • Ini aka kozi tȧ • Yo canqen gaya keza ut'ale namni indua • Ini aka gararati bifaza didirad'a • Dubino d'abaṅ cabu • Ini aka falʿanati afan nama dyala d'abad'a & Ini fando afaniti caba • Hodjadz'u wayo mo tau wai? • Lubun lamaṅ dyirtu • Madirati hinkolfini • Bokeṅi mit'ileṅ adjezu, zi adjeza? • Handangon qilenza ufiti naqeti ilman god'ad'a? • Ini hadarid'a aka zarendida.",
     "literalTranslation": "Run with a fasting mouth (p. 3) • When thou receivest, bless; when thou findest not, curse (p. 16) • He is as clear/transparent as the bottom of a beaker [kozi] (p. 37) • If a spark leaps out of the tobacco-pipe, a man dies (p. 45) • He changes his colour like a chameleon [garara] (p. 56) • And speech has no end / stands not still (p. 107) • He stands under people's mouths like a spoon [falʿana] (of an eavesdropper/parasite) & He has horse-dung in his mouth (of a foul speaker, p. 120) • Is it better to work or to sit idle? (pp. 146, 201) • There are not two lives/souls (p. 161) • Laugh not at a scar/wound [mada]! (p. 163) • The rain does not kill an ant [mit'ili]; will it kill thee? (p. 170) • Does a hen take wind into herself and lay eggs? (p. 177) • He is as cunning as a jackal [zarendida] (p. 190).",
     "meaning": "Recorded verbatim across Part I of Charles & Lawrence Tutschek's 'Dictionary of the Galla Language' (Munich, 1844, pp. 3, 16, 37, 45, 56, 107, 120, 146, 161, 163, 170, 177, 190, 201): completes the full canonical set of 23 Galla proverbs (Magm.) documented from Akafed'e Dalle, Otshu Aga, and Aman Gonda, praising candour (aka kozi), diligence (hodjadz'u wayo), fortitude in rain or hardship (bokeṅi mit'ileṅ adjezu), and compassion for the wounded (madirati hinkolfini).",
     "englishEquivalent": "Still waters run deep; actions speak louder than words; mock not another's scar.",
@@ -124,7 +124,7 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "id": "borana-tutschek-1844-songs-oaths-2",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana — Tutschek 1844 Verbatim Songs [Wetu] & Kalatcha / Tili Oaths)",
-    "indigenous": "Wanin korriza / Muka cabad'a; / Diarzi roriza / Durba kad'ad'a (p. 36) • Gaya t'ut'uko, / Tambo na d'abi, / Fag'afuftuko / Yambo na wami! (p. 117) • Cotani cotani yaa babazani; / Djed'ani djed'ani gargar nu bazani (p. 127) • Zila zimalan yaba, / Zimali dameṅ cabu; — / Zila gandaran gala / Gandatu wareṅ cabu (p. 148) • Lenzan lon guza / Bia gubati; / D'enzan lon buza / Iya nafati (p. 158) • Kalatcha Oath: Gadyo lafto Michaila dyalati kalatchan kakad'e; ini kalatcha mut'ad'a „hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!\" djed'eti (p. 31) • „t'wu — aki — t'wu — tili!\" (p. 91).",
+    "indigenous": "Wanin korriza / Muka cabad'a; / Diarzi roriza / Durba kad'ad'a • Gaya t'ut'uko, / Tambo na d'abi, / Fag'afuftuko / Yambo na wami! • Cotani cotani yaa babazani; / Djed'ani djed'ani gargar nu bazani • Zila zimalan yaba, / Zimali dameṅ cabu; — / Zila gandaran gala / Gandatu wareṅ cabu • Lenzan lon guza / Bia gubati; / D'enzan lon buza / Iya nafati • Gadyo lafto Michaila dyalati kalatchan kakad'e; ini kalatcha mut'ad'a „hori ani cabu Wacayo géekoti ha mut'ad'u ha balʿezu!\" djed'eti • „t'wu — aki — t'wu — tili!\".",
     "literalTranslation": "The baboon (wanin) chatters and catches hold of the tree; the old man (diarzi) jests and woos a maiden (p. 36) • My little smoking-pipe, plant tobacco for me; my little horn-blower (fag'afuftu), call Yambo for me! (p. 117) • They ploughed and ploughed and dug up the yaa-weed; they talked and talked and parted us asunder (p. 127) • Were I to climb the bamboo (zimala), the bamboo has no branches; — were I to go home through the village (ganda), the village has no inhabitants (p. 148) • With the lion I dry up the cattle on the highland; fleeing I drive down the cattle when the cry of distress sounds (p. 158) • Under the lafto Michaila tree before the priest Gadyo he swore by the kalatcha staff, licking it and saying: 'May Wacayo lick up and destroy all the cattle and goods I possess!' (p. 31) • 'T'wu — so be it — t'wu — grass!' (spitting chewed grass to ratify a covenant, p. 91).",
     "meaning": "Recorded verbatim by Charles & Lawrence Tutschek in 'Dictionary of the Galla Language' (Part I, Munich, 1844, pp. 31, 36, 91, 117, 127, 148, 158): preserves the complete corpus of traditional Galla rhyming songs (wetu, including Bilile's songs taught to Otshu Aga) on love, slander parting friends (cotani cotani), exile (zila zimalan yaba), and pastoral courage, together with the solemn kalatcha and tili oaths.",
     "theme": "unity",
@@ -134,8 +134,8 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "id": "borana-tutschek-1844-heto-medicine-3",
     "languageId": "borana",
     "languageName": "Borana / Oromo (Afaan Borana — Akafed'e Dalle's Ethnomedical Treatise on Het'o & D'ogonu, 1844)",
-    "indigenous": "Het'o (Brayera anthelminthica / Kosso) fi D'ogonu: Mini → D'uma („aka zimalati, walaka walakati d'uka caba\", pp. 101, 110, 170, 196–197) • Kelo (Stevia orientalis, Birra & Magzala, p. 34) • Wandabiu & Nadaduda (pp. 77, 147) • Handode (Phytolacca abyssinica, p. 192).",
-    "literalTranslation": "Het'o flowers and D'ogonu mallow bark for curing the tapeworm (early stage mini, mature stage d'uma: 'like a bamboo reed, having marrow between every joint', pp. 101, 110, 170, 196–197) • Kelo yellow spring flower heralding Birra and the Magzala festival (p. 34) • Wandabiu tree yielding sweet white manna (nadaduda, pp. 77, 147) • Handode soap-berry plant (p. 192).",
+    "indigenous": "Het'o fi D'ogonu: Mini → D'uma („aka zimalati, walaka walakati d'uka caba\") • Kelo (Birra & Magzala) • Wandabiu & Nadaduda • Handode.",
+    "literalTranslation": "Het'o flowers (Brayera anthelminthica / Kosso) and D'ogonu mallow bark for curing the tapeworm (early stage mini, mature stage d'uma: 'like a bamboo reed, having marrow between every joint', pp. 101, 110, 170, 196–197) • Kelo yellow spring flower (Stevia orientalis) heralding Birra and the Magzala festival (p. 34) • Wandabiu tree yielding sweet white manna (nadaduda, pp. 77, 147) • Handode soap-berry plant (Phytolacca abyssinica, p. 192).",
     "meaning": "Recorded verbatim from Akafed'e Dalle of Hambo (and botanically identified with Duke Paul William of Württemberg, 'H. P.') in Charles & Lawrence Tutschek's 'Dictionary of the Galla Language' (Part I, Munich, 1844, pp. 34, 77, 101, 110, 147, 170, 192, 196–197): documents indigenous Oromo pharmacology, in which the dried, pounded, and sieved flowers of the het'o tree are mixed in a mucilaginous bark infusion of d'ogonu and drunk fasting at dawn while resting in the shade and drinking farzo.",
     "theme": "nature",
     "sourceCitation": "Charles & Lawrence Tutschek, Dictionary of the Galla Language, Part I (Munich, 1844, pp. 34, 77, 101, 110, 147, 170, 192, 196–197)"
@@ -144,35 +144,33 @@ export const BORANA_PROVERBS: ProverbItem[] = [
     "id": "borana-krapf-isenberg-1842-farewell-benediction-cw",
     "languageId": "borana",
     "languageName": "Borana (Oromo)",
-    "indigenous": "Wak' nagaia si kakennu! • Nagaia hafu tshedde • Naga ambulte! (Orma / Oromo • Waka • Kaletsha • Mukaba)",
+    "indigenous": "Wak' nagaia si kakennu! • Nagaia hafu tshedde • Naga ambulte! • Orma / Oromo • Waka • Kaletsha • Mukaba.",
     "literalTranslation": "May God (Waka) grant thee peace (nagaia)! • To bid farewell ('Remain in peace') • Good morning ('Hast thou spent the night in peace?') — Rev. J. L. Krapf & Rev. C. W. Isenberg (1842, pp. i–ii, 13, 15, 24, 28).",
     "meaning": "Recorded in Rev. J. L. Krapf's Vocabulary of the Galla Language (compiled in Shoa in summer 1841, translated from German and edited with Preface and comparative Amharic, Dankali, Somāli, Ethiopic, Arabic, and Hebrew annotations by Rev. C. W. Isenberg, London: Church Missionary Society / Richard Watts, 1842, pp. i–ii, 1–42, Colophon p. [43]; digitized copy bearing the bookplate of the Baptist Missionary Society Library No. P. 1. 5 and the ink signature of S. F. Hassan, Advocate, Mombasa): preserves the traditional Oromo farewell benediction Wak' nagaia si kakennu! ('May God give thee peace!', p. 13), the morning greeting Naga ambulte! ('Good morning!', p. 24), the news inquiry Mali odu harraia duffe? ('What is the news?', p. 25), the autonym Ormo / pl. Orma ('This is a Galla: kuni ormōda', p. 15), the indigenous priesthood kaletsha and prayer mukaba (p. 28), and the 7-day calendar and relative year system (berdingata 'last year', berekan 'the year before last', p. 42).",
     "englishEquivalent": "Peace and the blessing of God accompany both the greeting of dawn and the parting of ways.",
     "theme": "unity",
     "sourceCitation": "Rev. J. L. Krapf & Rev. C. W. Isenberg, Vocabulary of the Galla Language (London: Printed for the Church Missionary Society by Richard Watts, 1842, Preface pp. i–ii & Vocabulary pp. 1–42)"
+  },
+  {
+    "id": "borana-cust-1883-vol1-oromo-dialects-huma-cw",
+    "languageId": "borana",
+    "languageName": "Borana / Oromo (Afaan Borana / Equatorial Orma)",
+    "indigenous": "Orma / Oromo • Ilm' Orma • Borenna • Wata.",
+    "literalTranslation": "Self-designation Orma or Oromo ('men', matched with Bantu abántu 'men' on p. 12) and Ilm' Orma ('Sons of Orma/Men') vs. exonym 'Galla' • The 5 Chief Oromo Dialects from 10° N to the mouth of the Dana (Tana) River near Mombása, alongside the Wata hunter communities — Robert Needham Cust (1883, Vol. I, Ch. I p. 12 & Ch. IX.C.II pp. 122–125).",
+    "meaning": "Recorded in Robert Needham Cust's A Sketch of the Modern Languages of Africa, Accompanied by a Language-Map, Vol. I (London: Trübner & Co., 1883, Ch. I pp. 12, 16 & Ch. IX.C.II pp. 122–125): synthesizes how the 5–6 million Oromo stretch from Abyssinia (10° N) to the Dana (Tana) River mouth near Mombása across 5 chief dialects (I. North of Shoa, II. East of Shoa, III. South of Shoa on the Hawash [Schmidt], IV. River Godjeb [Tutschek], V. Equatorial / Dana River Galla [Krapf 1850 & Wakefield at Ribé]), how hunting 'Helot Races' (Wata) live among and speak Galla (per Charles New), and how Cust had a manuscript copy of Krapf's rare 1840 'Elements of the Galla Language' transcribed from the sole Royal Geographical Society copy and sent to Rev. Thomas Wakefield at Ribé.",
+    "englishEquivalent": "One language and five dialects unite the Oromo from the highlands of Shoa to the mouth of the Tana River.",
+    "theme": "unity",
+    "sourceCitation": "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (London: Trübner & Co., 1883, Ch. I pp. 12, 16 & Ch. IX.C.II pp. 122–125)"
+  },
+  {
+    "id": "borana-krapf-isenberg-1840-queen-tshame-wodanabe-salutations",
+    "languageId": "borana",
+    "languageName": "Borana / Oromo (Afaan Borana / Shoa & Gelān Galla)",
+    "indigenous": "Anko-ber • Wāk, Kalitsha & Wodanābè • Workef meti; Dagaf maka; Kan duef kan tshira; Namma garif namma duga • Naga ambulte! — Bulla bulte naguma! — Marabatis, nagana oli / nagaia ole! — Gondi kuni mekan eniu? Metātit tsheddan.",
+    "literalTranslation": "Anko-ber ('Gate of the Anko', p. vi) & Queen Tshāmê of Moolofallada's royal reply to King Sahhela Selassieh • God (Wāk), priests (Kalitsha), and the sacred pan-Oromo tree Wodanābè on the Hawāsh (pp. vii–ix) • Gold and silver; Stone and wood; The living and the dead; A good and upright man (p. 15) • Good morning! — Thanks to God! — Good bye (sg./pl.)! — How do they call this village? It is called Metātit (p. 16).",
+    "meaning": "Recorded in Rev. J. L. Krapf & Rev. C. W. Isenberg's pioneering 1840 monograph 'An Imperfect Outline of the Elements of the Galla Language' (London: CMS / L. & G. Seeley / Richard Watts, 1840, pp. [i]–xiv, [1]–16, compiled in Shoa in 1839–1840 with Berkiè of the Gelān tribe): preserves the 50 Galla tribes across 6 regions (including #48 Borenna, #5 Karraīo, #30 Gelān, #31 Mêta, #32 Moolofallada, #44 Mêtcha, #50 Anko), Queen Tshāmê's royal dignity, the etymology of Ankober ('Gate of the Anko'), worship of Wāk and the Kalitshas priests, goat-intestine haruspicy, the pit-and-lance oath covered with an animal's hide, the 100-cattle homicide settlement ratified by opening a sheep's belly, belief in afterlife happiness when the burnt wood heaped on a grave sprouts anew, the pan-Galla pilgrimage tree Wodanābè on the Hawāsh in Soddo, and all 31 conversational salutations and sentences in Section XI.",
+    "englishEquivalent": "Royal dignity demands mutual honour; peace and uprightness bind the living community together.",
+    "theme": "wisdom",
+    "sourceCitation": "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (London: Printed for the Church Missionary Society by Richard Watts, 1840, pp. [i]–xiv, [1]–16)"
   }
 ];
-
-BORANA_PROVERBS.push({
-  id: "borana-cust-1883-vol1-oromo-dialects-huma-cw",
-  languageId: "borana",
-  languageName: "Borana / Oromo (Afaan Borana / Equatorial Orma)",
-  indigenous: "Orma / Oromo ('men') vs. 'Sons of Galla' (D'Abbadie) • 5 Chief Dialects (I. North of Shoa, II. East of Shoa, III. South of Shoa on the Hawash [Schmidt], IV. River Godjeb [Tutschek], V. Equatorial / Dana River Galla [Krapf 1850 & Wakefield at Ribé]) • Huma Royal Race (U-Ganda, U-Nyoro, Karagwe) & Wata 'Helot Races' (Charles New)",
-  literalTranslation: "Self-designation Orma or Oromo ('men', matched with Bantu abántu 'men' on p. 12 and Masai/Kwáfi Loikób/Eloikób 'men' on p. 150) vs. war-title 'Sons of Galla' • The 5 Chief Dialects from 10° N to the mouth of the Dana (Tana) River near Mombása — Robert Needham Cust (1883, Vol. I, Ch. I p. 12 & Ch. IX.C.II pp. 122–125).",
-  meaning: "Recorded in Robert Needham Cust's A Sketch of the Modern Languages of Africa, Accompanied by a Language-Map, Vol. I (London: Trübner & Co., 1883, Ch. I pp. 12, 16 & Ch. IX.C.II pp. 122–125): synthesizes how the 5–6 million Oromo stretch from Abyssinia (10° N) to the Dana (Tana) River mouth near Mombása across 5 chief dialects, how the Huma royal dynasties of U-Ganda (where King Mtesa spoke Galla alongside Nyoro, Ganda, Swahíli, Soga, Zulu, and Arabic), U-Nyoro, and Karagwe belong to the Galla race, how hunting 'Helot Races' (Wata) live among and speak Galla (per Charles New), and how Cust had a manuscript copy of Krapf's rare 1840 'Elements of the Galla Language' transcribed from the sole Royal Geographical Society copy and sent to Rev. Thomas Wakefield at Ribé.",
-  englishEquivalent: "One language and five dialects unite the Oromo from the highlands of Shoa to the mouth of the Tana River.",
-  theme: "unity",
-  sourceCitation: "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (London: Trübner & Co., 1883, Ch. I pp. 12, 16 & Ch. IX.C.II pp. 122–125)"
-});
-
-BORANA_PROVERBS.push({
-  id: "borana-krapf-isenberg-1840-queen-tshame-wodanabe-salutations",
-  languageId: "borana",
-  languageName: "Borana / Oromo (Afaan Borana / Shoa & Gelān Galla)",
-  indigenous: "Queen Tshāmê of Moolofallada & Anko-ber ('Gate of the Anko', p. vi) • Wāk, Kalitshas, Pit-and-Lance Oath, 100-Cattle Fine & Sacred Tree Wodanābè on the Hawāsh (pp. vii–ix) • Workef meti; Dagaf maka; Kan duef kan tshira; Namma garif namma duga (p. 15) • Naga ambulte! — Bulla bulte naguma! — Marabatis, nagana oli / nagaia ole! — Gondi kuni mekan eniu? Metātit tsheddan (p. 16)",
-  literalTranslation: "Queen Tshāmê's reply to King Sahhela Selassieh: 'If he wished to see her at his capital, it would be proper for him, as a king, to overlay all the road from Moolofallada to his palace with silk and velvet; as she would certainly have done, if she had invited him' (p. vi) • Gold and silver; Stone and wood; The living and the dead; A good and upright man (p. 15) • Good morning! — Thanks to God! — Good bye (sg./pl.)! — How do they call this village? It is called Metātit (p. 16).",
-  meaning: "Recorded in Rev. J. L. Krapf & Rev. C. W. Isenberg's pioneering 1840 monograph 'An Imperfect Outline of the Elements of the Galla Language' (London: CMS / L. & G. Seeley / Richard Watts, 1840, pp. [i]–xiv, [1]–16, compiled in Shoa in 1839–1840 with Berkiè of the Gelān tribe): preserves the 50 Galla tribes across 6 regions (including #48 Borenna, #5 Karraīo, #30 Gelān, #31 Mêta, #32 Moolofallada, #44 Mêtcha, #50 Anko), Queen Tshāmê's royal dignity, the etymology of Ankober ('Gate of the Anko'), worship of Wāk and the Kalitshas priests, goat-intestine haruspicy, the pit-and-lance oath covered with an animal's hide, the 100-cattle homicide settlement ratified by opening a sheep's belly, belief in afterlife happiness when the burnt wood heaped on a grave sprouts anew, the pan-Galla pilgrimage tree Wodanābè on the Hawāsh in Soddo, and all 31 conversational salutations and sentences in Section XI.",
-  englishEquivalent: "Royal dignity demands mutual honour; peace and uprightness bind the living community together.",
-  theme: "wisdom",
-  sourceCitation: "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (London: Printed for the Church Missionary Society by Richard Watts, 1840, pp. [i]–xiv, [1]–16)"
-});

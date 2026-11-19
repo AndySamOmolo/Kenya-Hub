@@ -16,7 +16,7 @@
     {
       "id": "greetings",
       "name": "Greetings & Farewells",
-      "icon": "👋",
+      "icon": "Hand",
       "entries": [
         {
           "english": "Peace",
@@ -150,24 +150,24 @@
     {
       "id": "numbers",
       "name": "Numbers & Counting",
-      "icon": "🔢",
+      "icon": "Hash",
       "entries": [
         {
           "english": "One",
           "translation": "mosi / -moju (Kisagala) • imweri / -mweri (Kidawida)",
-          "pronunciation": "imweri",
+          "pronunciation": "mo-si / i-mwe-ri",
           "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
           "english": "Two",
           "translation": "pili / mbili / -ili (Kisagala) • iwi / -wi (Kidawida)",
-          "pronunciation": "iwi",
+          "pronunciation": "pi-li / i-wi",
           "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
           "english": "Six",
           "translation": "tandatu / ndandatu / -tandatu (Kisagala) • irandadu (Kidawida)",
-          "pronunciation": "irandadu",
+          "pronunciation": "tan-da-tu / i-ran-da-du",
           "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -227,13 +227,13 @@
         {
           "english": "Four",
           "translation": "ine / -ne (Kisagala) • ina / -na (Kidawida)",
-          "pronunciation": "ina",
+          "pronunciation": "i-ne / i-na",
           "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
           "english": "Five",
           "translation": "sano / -sano (Kisagala) • isanu / -sanu (Kidawida)",
-          "pronunciation": "isanu",
+          "pronunciation": "sa-no / i-sa-nu",
           "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -299,19 +299,19 @@
         {
           "english": "Three",
           "translation": "tatu / ndatu / -tatu (Kisagala) • idadu / -dadu (Kidawida)",
-          "pronunciation": "idadu",
+          "pronunciation": "ta-tu / i-da-du",
           "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
           "english": "Seven",
           "translation": "mfungate (Kisagala) • mfungade (Kidawida)",
-          "pronunciation": "mfungade",
+          "pronunciation": "m-fun-ga-te / m-fun-ga-de",
           "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
           "english": "Eight",
           "translation": "nane / -nane (Kisagala) • wunyanya / inyanya (Kidawida)",
-          "pronunciation": "wunyanya",
+          "pronunciation": "na-ne / wu-nya-nya",
           "context": "Wray (1894, pp. 20–21) Kisagala & Johnston (1919 #14) / Sakamoto (2003) Kidawida • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
@@ -327,8 +327,8 @@
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
         {
-          "english": "mirongo mine",
-          "translation": "Forty",
+          "english": "Forty",
+          "translation": "mirongo mine",
           "pronunciation": "mi-rongo mi-ne",
           "context": "Rev. J. Alfred Wray (1894) An Elementary Introduction to the Taita Language (Sagalla Dialect) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,000+ sentences, CC-BY-4.0)"
         },
@@ -533,25 +533,25 @@
         {
           "english": "Twenty",
           "translation": "Mī-rōṅgo mī-wīrī",
-          "pronunciation": "mī-rōṅg mī-wīrī",
+          "pronunciation": "mī-rōṅgo mī-wīrī",
           "context": "Comparative Kidaw'ida/Kisagala Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Thirty",
           "translation": "Mī-rōṅgo mī-dātū",
-          "pronunciation": "mī-rōṅg mī-dātū",
+          "pronunciation": "mī-rōṅgo mī-dātū",
           "context": "Comparative Kidaw'ida/Kisagala Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Forty",
           "translation": "Mī-rōṅgo mī-nā",
-          "pronunciation": "mī-rōṅg mī-nā",
+          "pronunciation": "mī-rōṅgo mī-nā",
           "context": "Comparative Kidaw'ida/Kisagala Vocabulary (Johnston 1919 Vol. I)"
         },
         {
           "english": "Fifty",
           "translation": "Mī-rōṅgo mī-sāno",
-          "pronunciation": "mī-rōṅg mī-sān",
+          "pronunciation": "mī-rōṅgo mī-sāno",
           "context": "Comparative Kidaw'ida/Kisagala Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -1205,18 +1205,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Bone",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Country",
           "translation": "I-saṅga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Country",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -1227,11 +1217,6 @@
         {
           "english": "Stone",
           "translation": "I-gogo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Stone",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -1259,7 +1244,7 @@
     {
       "id": "family",
       "name": "Family, People & Kinship",
-      "icon": "👨‍👩‍👧‍👦",
+      "icon": "Users",
       "entries": [
         {
           "english": "Son",
@@ -2021,11 +2006,6 @@
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
-          "english": "Brother",
-          "translation": "etc",
-          "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
-        },
-        {
           "english": "Chief",
           "translation": "mzuri",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
@@ -2067,7 +2047,7 @@
         },
         {
           "english": "Father",
-          "translation": "my father",
+          "translation": "aba (my father); iso (thy father); ise (his father)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -2081,8 +2061,8 @@
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
-          "english": "his grandmother",
-          "translation": "Grandchild, a grandson calls his grandfather",
+          "english": "Grandmother (as called by a grandson)",
+          "translation": "mama",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -2097,7 +2077,7 @@
         },
         {
           "english": "a granddaughter calls her grandfather",
-          "translation": "her grandmother",
+          "translation": "mama (her grandmother)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -2111,8 +2091,8 @@
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
-          "english": "his granddaughter",
-          "translation": "a grandfather calls his grandson",
+          "english": "Granddaughter (as called by a grandfather)",
+          "translation": "ake",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -2127,7 +2107,7 @@
         },
         {
           "english": "a grandmother calls her grandson",
-          "translation": "her granddaughter",
+          "translation": "wawa (her granddaughter)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -2317,27 +2297,12 @@
         },
         {
           "english": "Breast (man's)",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Breast (man's)",
           "translation": "Ki-kua",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Breast (man's)",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
           "english": "Breast (woman's)",
           "translation": "Ny-odo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Breast (woman's)",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -2352,11 +2317,6 @@
         },
         {
           "english": "Brother",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Brother",
           "translation": "M-rūṅgu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -2367,17 +2327,7 @@
         },
         {
           "english": "Chief",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Chief",
           "translation": "M-fumwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Chief",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -2393,11 +2343,6 @@
         {
           "english": "Doctor (medicine man)",
           "translation": "M-gaṅga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Doctor (medicine man)",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -2417,27 +2362,12 @@
         },
         {
           "english": "Girl",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Girl",
           "translation": "Ka-bōra",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Girl",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
           "english": "Husband",
           "translation": "M-lume",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Husband",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -2477,11 +2407,6 @@
         },
         {
           "english": "Sister",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Sister",
           "translation": "M-rūmbū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -2506,11 +2431,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "White man",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Wife",
           "translation": "va-kā",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
@@ -2530,7 +2450,7 @@
     {
       "id": "body",
       "name": "Body Parts & Health",
-      "icon": "🫁",
+      "icon": "Heart",
       "entries": [
         {
           "english": "Eye",
@@ -4000,18 +3920,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Arm",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Beard",
           "translation": "Ki-reru",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Beard",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -4045,11 +3955,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Body",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Ear",
           "translation": "Ku-tu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
@@ -4062,11 +3967,6 @@
         {
           "english": "Ear",
           "translation": "Ki-sikilo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Ear",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -4135,18 +4035,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Foot",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Hair",
           "translation": "I-ridia",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Hair",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -4162,11 +4052,6 @@
         {
           "english": "Hand",
           "translation": "M-kono",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Hand",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -4187,11 +4072,6 @@
         {
           "english": "Heel",
           "translation": "Ki-jimbe",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Heel",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -4226,11 +4106,6 @@
         },
         {
           "english": "Mouth",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Mouth",
           "translation": "Mw-ana",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -4250,23 +4125,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Nail (of finger or toe)",
-          "translation": "vy",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Nose",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Shoulder",
           "translation": "I-vēga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Shoulder",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -4285,18 +4145,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Spear",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Tear",
           "translation": "I-bōri",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Tear",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -4330,11 +4180,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Tooth",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Year",
           "translation": "Mw-āka",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
@@ -4349,7 +4194,7 @@
     {
       "id": "animals",
       "name": "Animals, Livestock & Wildlife",
-      "icon": "🦁",
+      "icon": "PawPrint",
       "entries": [
         {
           "english": "Ox",
@@ -5761,11 +5606,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Ant",
-          "translation": "wa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Ant, white (termite)",
           "translation": "M-swa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
@@ -5801,28 +5641,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Bee",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Bee",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Bird",
           "translation": "Ny-onyi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Bird",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Bird",
-          "translation": "same",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -5852,11 +5672,6 @@
         },
         {
           "english": "Fish",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Fish",
           "translation": "N-guluma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -5873,11 +5688,6 @@
         {
           "english": "Goat (he)",
           "translation": "M-fogo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Goat (he)",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -5903,11 +5713,6 @@
         {
           "english": "Hyena",
           "translation": "I-bau",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Hyena",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -5945,7 +5750,7 @@
     {
       "id": "nature",
       "name": "Nature, Environment & Geography",
-      "icon": "🌿",
+      "icon": "Leaf",
       "entries": [
         {
           "english": "Sun",
@@ -7812,27 +7617,12 @@
         },
         {
           "english": "Brains",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Brains",
           "translation": "M-zoṅgo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Brains",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
           "english": "Day",
           "translation": "Ki-lavu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Day",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -7851,18 +7641,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Fire",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Forest",
           "translation": "M-situ",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Forest",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -7877,11 +7657,6 @@
         },
         {
           "english": "Hill",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Hill",
           "translation": "M-gondi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -7891,28 +7666,13 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Lake",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Moon",
           "translation": "Mw-ēri",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Moon",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Mountain",
           "translation": "M-gondi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Mountain",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -7926,11 +7686,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "River",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Sky",
           "translation": "M-lūṅgu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
@@ -7938,11 +7693,6 @@
         {
           "english": "Sky",
           "translation": "I-vuṅgū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Sky",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -7961,11 +7711,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Well, source",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Wood",
           "translation": "Lu-kūni",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
@@ -7979,18 +7724,13 @@
           "english": "Wood",
           "translation": "I-bāndē",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Wood",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         }
       ]
     },
     {
       "id": "food",
       "name": "Food, Drink & Agriculture",
-      "icon": "🍲",
+      "icon": "Utensils",
       "entries": [
         {
           "english": "Fat",
@@ -9578,22 +9318,12 @@
         },
         {
           "english": "Banana",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Banana",
           "translation": "I-toke",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
           "english": "Egg",
           "translation": "I-tagi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Egg",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -9636,7 +9366,7 @@
     {
       "id": "home",
       "name": "Home, Tools & Material Culture",
-      "icon": "🏠",
+      "icon": "Home",
       "entries": [
         {
           "english": "Axe",
@@ -12765,17 +12495,7 @@
         },
         {
           "english": "Arrow",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Arrow",
           "translation": "M-rio",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Arrow",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -12794,23 +12514,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Axe",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Bow",
           "translation": "N-dana",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Bow",
-          "translation": "pl",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Bow",
-          "translation": "same",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -12819,18 +12524,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Charcoal",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Door",
           "translation": "M-laṅgo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Door",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -12859,11 +12554,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Hoe",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "House",
           "translation": "Ny-ūmba",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
@@ -12876,11 +12566,6 @@
         {
           "english": "Knife",
           "translation": "Ki-šū, Ki-šu",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Knife",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -12903,7 +12588,7 @@
     {
       "id": "verbs",
       "name": "Core Verbs & Actions",
-      "icon": "🏃",
+      "icon": "Activity",
       "entries": [
         {
           "english": "Go",
@@ -15810,8 +15495,8 @@
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
-          "english": "the war-cry is nothing",
-          "translation": "to nothing, to",
+          "english": "Come to nothing, to (the war-cry is nothing)",
+          "translation": "lu-kungu lwauya oa",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -15896,7 +15581,7 @@
         },
         {
           "english": "Open space",
-          "translation": "generally at the entrance to a village",
+          "translation": "kianzi (open space at the entrance to a village)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -15929,7 +15614,7 @@
     {
       "id": "adjectives",
       "name": "Adjectives, Qualities & Grammar",
-      "icon": "✨",
+      "icon": "Sparkles",
       "entries": [
         {
           "english": "Big",
@@ -16842,7 +16527,7 @@
     {
       "id": "travel",
       "name": "Travel, Directions & Navigation",
-      "icon": "🧭",
+      "icon": "Compass",
       "entries": [
         {
           "english": "Far",
@@ -17051,7 +16736,7 @@
         {
           "english": "Canoe",
           "translation": "M-soṅgolo; mi-. Galawa",
-          "pronunciation": "m-soṅgl",
+          "pronunciation": "m-soṅgolo",
           "context": "Comparative Kidaw'ida/Kisagala Vocabulary (Johnston 1919 Vol. I)"
         },
         {
@@ -17849,11 +17534,6 @@
         },
         {
           "english": "Canoe",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Canoe",
           "translation": "Galawa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         }
@@ -17862,7 +17542,7 @@
     {
       "id": "shopping",
       "name": "Trade, Money & Measures",
-      "icon": "🛒",
+      "icon": "ShoppingCart",
       "entries": [
         {
           "english": "Dear",
@@ -18057,7 +17737,7 @@
         },
         {
           "english": "Bag",
-          "translation": "a small bag sewn up one side",
+          "translation": "mkoba (a small bag sewn up one side)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -18180,7 +17860,7 @@
     {
       "id": "emergency",
       "name": "Health, Safety, Law & Conflict",
-      "icon": "🚨",
+      "icon": "Siren",
       "entries": [
         {
           "english": "Ill",
@@ -18671,22 +18351,22 @@
         },
         {
           "english": "Cry, [a war-cry]",
-          "translation": "i. e. now for it",
+          "translation": "Bafta! Subai! (war-cry: now for it, men!)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
           "english": "Cry, [a war-cry]",
-          "translation": "men",
+          "translation": "lukungu (war-cry / alarm)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
           "english": "Cry, [a war-cry]",
-          "translation": "let the son of everybody strike to the heart",
+          "translation": "mwana wa mdu naatlyaie ngolo! (let the son of everybody strike to the heart)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
-          "english": "now is the time",
-          "translation": "Cry, [a war-cry]",
+          "english": "Cry [a war-cry: now is the time!]",
+          "translation": "Bafta! Subai!",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -19059,7 +18739,7 @@
     {
       "id": "time",
       "name": "Time, Seasons & Calendar",
-      "icon": "⏰",
+      "icon": "Clock",
       "entries": [
         {
           "english": "Day",
@@ -19562,24 +19242,24 @@
         {
           "english": "May",
           "translation": "ngera",
-          "pronunciation": "ngera [",
+          "pronunciation": "nge-ra",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
           "english": "Now directly",
-          "translation": "ilyēn, short for ilyli lyēn, ndam, ndakwēn; [to-day], lelo kwēn; [these days], a'ga",
+          "translation": "ilyēn (short for ilyi lyēn), ndam, ndakwēn; [to-day], lelo kwēn; [these days], a'ga matuku",
           "pronunciation": "ilyēn",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
           "english": "Then afterwards",
-          "translation": "nao, konyuma, nyuma yake, aho, ahoba; [after this], niko; [in those days], matuku 'gal",
+          "translation": "nao, konyuma, nyuma yake, aho, ahoba; [after this], niko; [in those days], matuku 'galya",
           "pronunciation": "nao",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
         {
           "english": "Time",
-          "translation": "ngelo, hawa, mbaza, luma, these refer more especially to present time; igeri, ituku, *th",
+          "translation": "ngelo, hawa, mbaza, luma (present time); igeri, ituku (past time)",
           "pronunciation": "ngelo",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         },
@@ -19609,7 +19289,7 @@
         },
         {
           "english": "Time",
-          "translation": "ngelo, hawa, mbaza, luma, these refer more especially to present time; igeri, ituku, th",
+          "translation": "ngelo, hawa, mbaza, luma (present time); igeri, ituku (past time)",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
         }
       ]
@@ -19617,7 +19297,7 @@
     {
       "id": "phrases",
       "name": "Common Expressions & Vocabulary",
-      "icon": "🗣️",
+      "icon": "MessageCircle",
       "entries": [
         {
           "english": "No",
@@ -27320,13 +27000,13 @@
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
-          "english": "the small black kind",
-          "translation": "Ticks",
+          "english": "Ticks (the small black kind)",
+          "translation": "ng'arita (mbala, mbawa, mburuga)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
           "english": "Time",
-          "translation": "these refer more especially to present time",
+          "translation": "ngelo, hawa, mbaza, luma (present time)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -27341,7 +27021,7 @@
         },
         {
           "english": "Tribe",
-          "translation": "a tribe of wild people supposed to have once inhabited Taita",
+          "translation": "kabila; Wasi (a tribe of wild people supposed to have once inhabited Taita)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -27356,22 +27036,22 @@
         },
         {
           "english": "[to lie awake]",
-          "translation": "ku-lavile : this verb is past in form",
+          "translation": "ku-lavile (past in form, present in meaning)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
           "english": "[to lie awake]",
-          "translation": "but present in meaning",
+          "translation": "ku-kalla miso (to stay awake)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
           "english": "Whatever",
-          "translation": "used only in the negative sense",
+          "translation": "-ose (used in negative sense: si kindu chingi)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
           "english": "Whatever",
-          "translation": "as si kindu chingi",
+          "translation": "si kindu chingi (nothing whatever)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         },
         {
@@ -27386,7 +27066,7 @@
         },
         {
           "english": "Whole [all]",
-          "translation": "with nouns of the third class",
+          "translation": "-ose (with Class III nouns: yose / jose)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
         }
       ]
@@ -27394,7 +27074,7 @@
     {
       "id": "culture-history",
       "name": "Culture, Clans & Historical Corpus",
-      "icon": "📜",
+      "icon": "BookOpen",
       "entries": [
         {
           "english": "As",
@@ -42240,18 +41920,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Adze",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Borassus palm",
           "translation": "Mu-goma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Borassus palm",
-          "translation": "mi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42270,18 +41940,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Buttocks",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Crocodile",
           "translation": "Kiny-aṅgwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Crocodile",
-          "translation": "viny",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42291,17 +41951,7 @@
         },
         {
           "english": "Devil, evil spirit",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Devil, evil spirit",
           "translation": "Śe-tani",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Devil, evil spirit",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42336,11 +41986,6 @@
         },
         {
           "english": "Ghost",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Ghost",
           "translation": "Ki-ruli",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -42361,11 +42006,6 @@
         },
         {
           "english": "Gun",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Gun",
           "translation": "Futi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -42376,27 +42016,12 @@
         },
         {
           "english": "Hide",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Hide",
           "translation": "C-oṅgo",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Hide",
-          "translation": "vy",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
           "english": "Horn",
           "translation": "Lu-embe, N-dove",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Horn",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42421,27 +42046,12 @@
         },
         {
           "english": "Iron",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Iron",
           "translation": "C-ūma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Iron",
-          "translation": "vy",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
           "english": "Island",
           "translation": "Ki-sīwa",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Island",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42461,17 +42071,7 @@
         },
         {
           "english": "Lips",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Lips",
           "translation": "C-omī",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Lips",
-          "translation": "vy",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42490,18 +42090,8 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Name",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Penis",
           "translation": "Ki-šuṅga",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Penis",
-          "translation": "vi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42520,11 +42110,6 @@
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
-          "english": "Pigeon",
-          "translation": "vi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
           "english": "Rat",
           "translation": "M-būku",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
@@ -42537,11 +42122,6 @@
         {
           "english": "Slave",
           "translation": "M-sūmba",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Slave",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42571,11 +42151,6 @@
         },
         {
           "english": "Stick",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Stick",
           "translation": "Lu-gōdī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -42586,22 +42161,12 @@
         },
         {
           "english": "Tail",
-          "translation": "mi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Tail",
           "translation": "Ki-rensi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
           "english": "Thigh",
           "translation": "I-bāra",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Thigh",
-          "translation": "ma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42646,11 +42211,6 @@
         },
         {
           "english": "Twins",
-          "translation": "ma",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Twins",
           "translation": "Mā-pāsa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
@@ -42667,11 +42227,6 @@
         {
           "english": "Witch",
           "translation": "M-sāwi",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
-        },
-        {
-          "english": "Witch",
-          "translation": "wa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
         },
         {
@@ -42716,17 +42271,7 @@
         },
         {
           "english": "Ye, you, your",
-          "translation": "va",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita"
-        },
-        {
-          "english": "Ye, you, your",
           "translation": "ēnyū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita"
-        },
-        {
-          "english": "They, them, their",
-          "translation": "va",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita"
         },
         {
@@ -42815,5 +42360,5 @@
   "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 7689
+  "totalEntries": 7598
 }

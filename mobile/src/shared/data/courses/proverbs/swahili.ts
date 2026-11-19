@@ -1,7 +1,7 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Swahili (Kiswahili) Proverbs & Oral Literature (672 verified entries)
+// Swahili (Kiswahili) Proverbs & Oral Literature (692 verified entries)
 // ============================================================
 
 export const SWAHILI_PROVERBS: ProverbItem[] = [
@@ -9,12 +9,12 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "swahili-1",
     "languageId": "swahili",
     "languageName": "Swahili (Kiswahili)",
-    "indigenous": "Haraka, haraka, haina mbaraka (archaic: Kakakaka haina baraka).",
+    "indigenous": "Haraka, haraka, haina baraka (Taylor 1891 #86: haina mbaraka; archaic: Kakakaka haina baraka).",
     "literalTranslation": "Hurry, hurry has no blessing.",
-    "meaning": "Rushing through important work leads to mistakes; care and deliberation bring lasting results (Taylor 1891, p. 16, § 86).",
+    "meaning": "First proverb (Mifano #1) in Bishop Edward Steere's 'Swahili Tales' (1870, pp. 192–193) and Proverb #86 in Rev. W. E. Taylor's 'African Aphorisms' (1891, p. 16): rushing through work leads to mistakes; care and deliberation bring lasting blessing.",
     "englishEquivalent": "Haste makes waste.",
     "theme": "patience",
-    "sourceCitation": "Rev. W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891, p. 16, Proverb #86)"
+    "sourceCitation": "Bishop Edward Steere, Swahili Tales (1870, pp. 192–193, Mifano #1) & Rev. W. E. Taylor, African Aphorisms (1891, p. 16, Proverb #86)"
   },
   {
     "id": "swahili-2",
@@ -75,12 +75,12 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "swahili-7",
     "languageId": "swahili",
     "languageName": "Swahili (Kiswahili)",
-    "indigenous": "Mtaka cha mvunguni huinama (Steere 1870: sharti ainame).",
+    "indigenous": "Mtaka cha mvunguni huinama (Steere & Madan 1894: sharti ainame).",
     "literalTranslation": "Whoever wants what is under the bedstead must stoop.",
-    "meaning": "Worthwhile goals require humility, effort, and willingness to bend down and work (Steere 1870, p. 192 & Taylor 1891, p. 71 § 316).",
+    "meaning": "Worthwhile goals require humility, effort, and willingness to bend down and work (W. E. Taylor 1891, p. 71 § 316 & Steere & Madan 1894 Handbook).",
     "englishEquivalent": "No pain, no gain.",
     "theme": "hard-work",
-    "sourceCitation": "Bishop Edward Steere, Swahili Tales (1870, p. 192) & W. E. Taylor, African Aphorisms (1891, p. 71, Proverb #316)"
+    "sourceCitation": "Rev. W. E. Taylor, African Aphorisms (1891, p. 71, Proverb #316) & Steere & Madan, A Handbook of the Swahili Language (1894)"
   },
   {
     "id": "swahili-8",
@@ -160,11 +160,11 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "swahili-15",
     "languageId": "swahili",
     "languageName": "Swahili (Kiswahili)",
-    "indigenous": "Kikulacho ki nguoni mwako.",
-    "literalTranslation": "That which bites you is inside your own garment.",
-    "meaning": "Betrayal or trouble often comes from someone close within one’s own circle rather than a stranger (Steere 1870, p. 192 & Taylor 1891, p. 31 § 146 & p. 118 § 502).",
+    "indigenous": "Kikulacho kinguoni mwako (Taylor 1891 #146: ki nguoni mwako).",
+    "literalTranslation": "What bites is in your own clothes.",
+    "meaning": "Mifano #17 in Bishop Edward Steere's 'Swahili Tales' (1870, pp. 194–195) and Proverb #146 in W. E. Taylor (1891, p. 31 & p. 118 § 502): betrayal or trouble often comes from someone within one's own household or circle rather than a stranger.",
     "theme": "wisdom",
-    "sourceCitation": "Bishop Edward Steere, Swahili Tales (1870, p. 192) & W. E. Taylor, African Aphorisms (1891, p. 31, Proverb #146)"
+    "sourceCitation": "Bishop Edward Steere, Swahili Tales (1870, pp. 194–195, Mifano #17) & Rev. W. E. Taylor, African Aphorisms (1891, p. 31, Proverb #146)"
   },
   {
     "id": "swahili-16",
@@ -172,10 +172,10 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Swahili (Kiswahili)",
     "indigenous": "Haba na haba hujaza kibaba (#70) • Bandu, bandu,—humala gogo (#44).",
     "literalTranslation": "Little by little fills the measure (#70) • Chip, chip finishes the log (#44).",
-    "meaning": "Small, consistent efforts accumulate into great achievements (Steere 1870, p. 192 & Taylor 1891, p. 9 § 44, p. 13 § 70, p. 118 § 503).",
+    "meaning": "Small, consistent efforts accumulate into great achievements (W. E. Taylor 1891, p. 9 § 44, p. 13 § 70, p. 118 § 503 & Steere & Madan 1894).",
     "englishEquivalent": "Many a mickle makes a muckle.",
     "theme": "patience",
-    "sourceCitation": "Bishop Edward Steere, Swahili Tales (1870, p. 192) & W. E. Taylor, African Aphorisms (1891, p. 13, Proverb #70)"
+    "sourceCitation": "Rev. W. E. Taylor, African Aphorisms (1891, p. 9 #44 & p. 13 #70) & Steere & Madan, A Handbook of the Swahili Language (1894)"
   },
   {
     "id": "swahili-17",
@@ -233,56 +233,56 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "swahili-22",
     "languageId": "swahili",
     "languageName": "Swahili (Kiswahili — Steere 1870 Mifano)",
-    "indigenous": "(1) Kufaa hakufaiki. (2) Ulimi hauna mfupa. (3) Mvumbika changa hula mbovu. (4) Kitu kipya ki chema, ingawa kidonda. (5) Mbio za sakafuni zikoma ukingoni. (6) Kulla ndege huruka kwa bawa lakwe. (7) Kamba hukatikia pembamba. (8) Nazi mbovu harabu ya nzima. (9) Mstahimilivu hula mbivu. (10) Mpanda ngazi hushuka.",
-    "literalTranslation": "(1) Being of use does not profit oneself. (2) The tongue has no bone (Note 62, p. 499). (3) He who stores unripe fruit eats rotten ones. (4) A new thing is good, though it be a sore (Note 63, p. 499). (5) Running on a flat stone roof ends at the edge (Note 64, p. 499). (6) Every bird flies with its own wing. (7) The rope breaks at its thinnest place. (8) A rotten coconut spoils the sound ones. (9) The patient person eats ripe fruit. (10) He who climbs a ladder comes down again.",
-    "meaning": "First ten of the twenty verbatim Swahili proverbs (Mifano) recorded by Bishop Edward Steere in 'Swahili Tales, as Told by Natives of Zanzibar' (1870, pp. 191–193 & Notes 62–64, p. 499).",
-    "englishEquivalent": "Everything comes to him who waits; pride goes before a fall.",
+    "indigenous": "(1) Haraka, haraka, haina baraka. (2) Ulimi hauna mfupa. (3) Mvunda nti mwana nti, mgeni mzo mpima. (4) Kipya kinyemi, kigawa kionda. (5) Mbio za sakafuni hwisha ukingoni. (6) Kazi mbi si mtezo mwema? (7) Si taajabuni, waana Adamu, mambo yalio duniani. (8) Kilimia kikizama kwa jua, huzuka kwa mvua; kikizama kwa mvua, huzuka kwa jua. (9) Sahani iliofunikwa, kilichomo kimestirika. (10) Hakuna msiba asiokuwa mwenziwe.",
+    "literalTranslation": "(1) Hurrying, hurrying, has no blessing. (2) The tongue has no bone (Note 62, p. 499: 'Therefore there is nothing to check a man's talk or to make him tell the truth'). (3) The destroyer of the country is a child of the country; a stranger does not weigh two hundred-weight. (4) A new thing is good, though it be a sore place (Note 63, p. 499: 'A sore is an amusement the first day, and only a trouble when its novelty is over'). (5) Running on a roof ends at the edge of it (Note 64, p. 499: 'The stone houses have always flat stone roofs, generally without parapets'). (6) Is not poor work good play? (Preface p. x: 'Is it not better worth while to quilt a scull cap however badly, than to go to a dance however good!'). (7) Wonder not, children of men, at the things that are in this world. (8) If the Pleiades (Kilimia) set in sun, they rise in rain; if they set in rain, they rise in sun (Corrigenda p. 504: 'P. 193, No. 8, for rise read set, and vice versâ'). (9) If a dish is covered, what is in it is hidden. (10) There is no grief without a companion.",
+    "meaning": "First ten of the twenty verbatim Swahili proverbs (Mifano #1–#10) recorded from Hamisi wa Kayi by Bishop Edward Steere in 'Swahili Tales, as Told by Natives of Zanzibar' (1870, pp. 191–193, Notes 62–64 p. 499, and Corrigenda p. 504).",
+    "englishEquivalent": "Haste makes waste; misfortunes never come singly.",
     "theme": "patience",
-    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 191–193, Mifano #1–#10)"
+    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 191–193, Mifano #1–#10, Notes 62–64 p. 499 & Corrigenda p. 504)"
   },
   {
     "id": "swahili-23",
     "languageId": "swahili",
     "languageName": "Swahili (Kiswahili — Steere 1870 Mifano)",
-    "indigenous": "(11) Mwenyi kisu kikali ndiye atakayekula nyama. (12) Kikulacho ki nguoni mwako. (13) Mtaka cha mvunguni sharti ainame. (14) Haba na haba hujaza kibaba. (15) Kucha Mungu si kilemba cheupe. (16) Kawaida ni kama sheria. (17) Kazi mbi si mchezo mwema? (18) Chururu si ndo! ndo! ndo! (19) Kulla mwenyi kusubiri hupata mwisho mwema. (20) Amekula nini hatta ameingia kisimani?",
-    "literalTranslation": "(11) He who has a sharp knife is the one who will eat meat. (12) That which bites you is inside your clothes. (13) He who wants what is under the bedstead must stoop. (14) Little and little fills the measure. (15) Fearing God is not wearing a white turban. (16) Custom is like law. (17) Is not bad work better than good play? (18) A trickle is not drop! drop! drop! (19) Everyone who is patient gets a good end. (20) What has he eaten that he has fallen into a well (got into a scrape, Note 66, p. 499)?",
-    "meaning": "Second ten of the twenty verbatim Swahili proverbs (Mifano) recorded by Bishop Edward Steere in 'Swahili Tales' (1870, pp. 192–195 & Notes 65–66, p. 499).",
-    "englishEquivalent": "The cowl does not make the monk; custom is second nature.",
+    "indigenous": "(11) Angurumapo simba, mteza nani? (12) Saburi ni ufunguo wa faraja. (13) Abadi, abadi, ukambaa watinda jiwe. (14) Ndovu wawili wakisongana ziumiazo nyika. (15) Udongo upate uli maji. (16) Mlevi wa mvinyo hulevuka, mlevi wa mali halevuki. (17) Kikulacho kinguoni mwako. (18) Maombolezo katika kilio si mwema. (19) Usubi aweza kupenya mote. (20) Ametumbukia kisimani.",
+    "literalTranslation": "(11) Who will dance to a lion's roaring? (12) Patience is the key of consolation. (13) Continually, continually, the cord cuts the stone (Note 65, p. 499: 'Referring especially to the cord by which the calabashes are let down into the wells'). (14) When two elephants struggle it is the grass that suffers. (15) Use your clay while it is wet. (16) He that is drunk with wine gets sober, he that is drunk with wealth does not. (17) What bites is in your own clothes. (18) Loud lamentations are not becoming in mourning. (19) A sand-fly (usubi) can get through anything. (20) He has fallen into a well (Note 66, p. 499: 'This is used of any calamity, as we say, he has got into a scrape').",
+    "meaning": "Second ten of the twenty verbatim Swahili proverbs (Mifano #11–#20) recorded from Hamisi wa Kayi by Bishop Edward Steere in 'Swahili Tales, as Told by Natives of Zanzibar' (1870, pp. 192–195 & Notes 65–66, p. 499).",
+    "englishEquivalent": "Constant dropping wears away a stone; strike while the iron is hot; when elephants fight, the grass suffers.",
     "theme": "hard-work",
-    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 192–195, Mifano #11–#20)"
+    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 192–195, Mifano #11–#20 & Notes 65–66, p. 499)"
   },
   {
     "id": "swahili-24",
     "languageId": "swahili",
     "languageName": "Swahili (Kiswahili — Steere 1870 Narrative Proverbs)",
-    "indigenous": "Atendaye mema humtendea nafusi yake (p. 22) • Killa kitu kwa kiasi chakwe (p. 40) • Mume ni kazi, mke ni nguo (p. 48) • Nzi kufa tuini (kidondani) si hasara (p. 90 & Note 43, p. 497) • Bilisi wa mtu ni mtu (p. 114) • Ulimwenguni ni mawili, ni kuwa mzima na kufa (p. 274).",
-    "literalTranslation": "He who does good does it to himself (p. 22) • Everything in its proper measure (p. 40) • A husband is work, a wife is clothes (p. 48) • For a fly to die in coconut cream (or on a sore) is no loss (p. 90 & Note 43, p. 497) • The devil/tempter of a person is a person (p. 114) • In the world there are two things: living and dying (p. 274).",
-    "meaning": "Proverbs embedded in the narratives of 'Sultani Darai' and 'Sultani Majnuni' in Bishop Edward Steere’s 'Swahili Tales' (1870, pp. 22, 40, 48, 90, 114, 244, 274, 497).",
-    "englishEquivalent": "Moderation in all things; virtue is its own reward.",
+    "indigenous": "Atendaye mema humtendea nafusi yake (p. 22) • Killa kitu kwa kiasi chakwe (p. 40) • Mume ni kazi, mke ni nguo (p. 48) • Nzi kufa tuini si hasara (p. 90 & Note 43, p. 497: Nzi kufa kidondani si hasara) • Bilisi wa mtu ni mtu (p. 114) • Mtenda mema cha nina (p. 120 & Note 45, p. 497) • Katika ulimwengu asio mengi ana machache, na mtu wazimu wake ndio akili yake; Shauri mbaraka tu (p. 122) • Mngwana akitendwa jema kulipa jema (p. 126) • Ukuu si pembe kama mtu ataota, ukuu shuti astahamili, na huyu mkuu ni jaa, killa mwenyi taka yake humwaga (p. 128) • Mpanda ngazi hushuka (p. 244) • Ulimwenguni ni mawili, ni kuwa mzima na kufa (p. 274).",
+    "literalTranslation": "He who does good does it to himself (p. 22) • Everything in its proper measure (p. 40) • A husband is work, a wife is clothes (p. 48) • For a fly to die in coconut cream (or on a sore) is no loss (p. 90 & Note 43, p. 497) • The tempter of a person is a person (p. 114) • The doer of good is mother's food (p. 120 & Note 45, p. 497) • In the world he who has not much has little, and a man's madness is his understanding; Counsel is a blessing (p. 122) • When a gentleman has good done to him he repays good (p. 126) • Greatness is not a horn that a man will sprout; greatness must be patient, and a great man is the dust-heap (jaa) where everyone with rubbish throws it (p. 128) • He who climbs a stair comes down again (p. 244) • In the world there are two things: living and dying (p. 274).",
+    "meaning": "All eleven narrative proverbs embedded in 'Sultani Darai' (pp. 22, 40, 48, 90, 114, 120, 122, 126, 128 & Notes 43, 45, p. 497) and 'Sultani Majinuni' (pp. 244, 274) in Bishop Edward Steere's 'Swahili Tales' (1870).",
+    "englishEquivalent": "Moderation in all things; noblesse oblige; heavy lies the head that wears a crown.",
     "theme": "wisdom",
-    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 22, 40, 48, 90, 114, 274, 497)"
+    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 22, 40, 48, 90, 114, 120, 122, 126, 128, 244, 274, 497)"
   },
   {
     "id": "swahili-25",
     "languageId": "swahili",
     "languageName": "Swahili (Kiswahili — Kimvita & Mrima Tales in Steere 1870)",
-    "indigenous": "Asiyojua maana, haambiwi maana; Akataaye witwa hakataa aitiwalo (pp. 296, 304) • Nawaza yale mawe mawili, moja kubwa na moja dogo, lile dogo halendi juu, wala lile kubwa halendi tini; Siwezi kuja kukula upande wa mbeleni, mato yaona haya (pp. 326, 328) • Niponye wa jua nitakuponya wa mvua (pp. 402, 424).",
-    "literalTranslation": "He who does not know the meaning will not be told the meaning; he who refuses to be called refuses what he is called for (pp. 296, 304) • I am thinking about those two stones, one big and one little; the little one [earth] does not go up, nor does the big one [sky] go down; I cannot come eating you in front, the eyes feel shame (Kimvita tale \"Kititi, na Fisi, na Simba\", pp. 326, 328) • Save me from the sun, and I will save you from the rain (\"Ao Rathi, Ao Mali\" & \"Nyani, na Simba, na Nyoka\", pp. 402, 424).",
-    "meaning": "Recorded verbatim by Bishop Edward Steere in 'Swahili Tales' (1870, pp. 296, 304, 326–328, 402, 424): combines the maxims of 'Uza Ghali', the Mombasa (Kimvita) philosophical riddles and proverb of 'Kititi, na Fisi, na Simba' told by Kathi Mohammed bin Abd en Nuri (grandson of Sheikh Muhyiddin of Mombasa), and the gratitude refrain of 'Ao Rathi, Ao Mali' and Munyi Khatibu’s 'Nyani, na Simba, na Nyoka'.",
-    "englishEquivalent": "One good turn deserves another.",
+    "indigenous": "Wakilindini si watu, ni punda wa milia... • Kijiti chema cha mnga / Chaota kumbi na kumbi, / Mtu mjinga mjinga / Aweza kutinda jombi (Preface p. xii) • Asiyojua maana, haambiwi maana; Akataaye witwa hakataa aitiwalo (pp. 296, 304) • Nawaza yale mawe mawili, moja kubwa na moja dogo, lile dogo halendi juu, wala lile kubwa halendi tini; Siwezi kuja kukula upande wa mbeleni, mato yaona haya (Kimvita, pp. 326, 328) • Niponye la jua, nitakuponya la mvua (pp. 392, 402) • Mwanadamu hana fadhili (pp. 424–426) • Kucheka na kununa ni ipi ilio njema? (p. 436).",
+    "literalTranslation": "The Wakilindini are not men, they are striped zebras... • A good stick of the acacia tree grows where the gardens join; a very foolish man can cut down a great tree (Preface p. xii) • He who does not know the meaning will not be told the meaning; he who refuses to be called refuses what he is called for ('Uza Ghali', pp. 296, 304) • I am thinking about those two stones, one big [sky] and one little [earth]: the little one does not go up, nor does the big one go down; I cannot come eating you in front, the eyes feel shame (Kimvita tale 'Kititi, na Fisi, na Simba', pp. 326, 328) • Save me from the sun, and I will save you from the rain ('Ao Rathi, Ao Mali', pp. 392, 402) • A child of Adam has no gratitude ('Nyani, na Simba, na Nyoka', pp. 424–426) • Grinning and snarling, which is better? ('Simba na Kulungu', p. 436).",
+    "meaning": "Recorded verbatim by Bishop Edward Steere in 'Swahili Tales' (1870, pp. xii, 296, 304, 326–328, 392, 402, 424–426, 436): combines the Mombasa secular verses from the Preface, the maxims of 'Uza Ghali', Kathi Mohammed bin Abd en Nuri's Kimvita tale 'Kititi, na Fisi, na Simba', and Munyi Khatibu's Mtang'ata fables 'Nyani, na Simba, na Nyoka' and 'Simba na Kulungu'.",
+    "englishEquivalent": "One good turn deserves another; ingratitude is the way of the world.",
     "theme": "family",
-    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 296, 304, 326–328, 402, 424)"
+    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. xii, 296, 304, 326–328, 392, 402, 424–426, 436)"
   },
   {
     "id": "swahili-26",
     "languageId": "swahili",
     "languageName": "Swahili (Kingozi / Kiamu & Kimvita — Steere 1870 Poetry)",
-    "indigenous": "Kushindwa na mashujaa si unyonge (p. xiii) • Ni upi mchayi kicho chakwe kimokoao? Na mjasiri umurie upunguwao? ... Bolewe mchayi mcha kufa hapati heshima (Mashairi ya Liongo, pp. 464–469) • Si simba mikia wameao vuzi na singa; simba mashujaa wasahili ngozi na nyama (p. 468).",
-    "literalTranslation": "To be beaten by heroes is no mean thing (p. xiii) • Who that fears has been saved by his fear? Or what bold man’s life has been shortened by courage? ... Woe to the coward, he who fears death gets no honour (pp. 464–465) • They are not lions with tails and hair growing on neck and back; true lions are heroes who care not for skins and flesh (pp. 468–469).",
-    "meaning": "Heroic epigram and classical Kingozi/Kiamu 5-line takhmisi stanzas from 'Mashairi ya Liongo' (composed by Sheikh Abdallah bin Ali bin Nasir Muyuweni concerning Liongo Fumo of Shanga and Ozi on the Kenyan coast) in Bishop Edward Steere’s 'Swahili Tales' (1870, pp. xiii, 439–471).",
+    "indigenous": "Kushindwa na mashujaa si unyonge (p. xiii) • Ewe kijakazi nakutuma, ukatumike, / Kamwambie mama, mwana muinga amelimuka, / Afanye mkate, katikati tupa aike, / Nikeze pingu na minyororo ikinemuka (Hadithi ya Liongo, p. 442) • Ni upi mchayi kicho chakwe kimokoao? Na mjasiri umurie upunguwao? ... Bolewe mchayi mcha kufa hapati heshima (Mashairi ya Liongo, pp. 464–465) • Si simba mikia wameao vuzi na singa; simba mashujaa wasahili ngozi na nyama (pp. 468–469) • Mama, nipeeke, haoe kwa mato mahaba ya bwana! (Utumbuizo wa Gungu, pp. 478–483).",
+    "literalTranslation": "To be beaten by heroes is no mean thing (p. xiii) • O slave-girl (Kijakazi Saa), I send you to be sent: go tell my mother her simple son has grown wise; let her make a loaf and put a file (tupa) in the middle, that I may cut the fetters (pingu) and the chains (minyororo) may snap (p. 442) • Who that fears has been saved by his fear? Or what bold man's life has been shortened by courage? ... Woe to the coward, he who fears death gets no honour (pp. 464–465) • They are not lions with tails and hair growing on neck and back; true lions are heroes who care not for skins and flesh (pp. 468–469) • Mother, take me that I may behold with my eyes the love of my lord! (Utumbuizo wa Gungu, pp. 478–483).",
+    "meaning": "Heroic prison song and classical Kingozi/Kiamu 5-line takhmisi stanzas from 'Hadithi ya Liongo' (pp. 439–453) and 'Mashairi ya Liongo' (composed by Sheikh Abdallah bin Ali bin Nasir Muyuweni concerning Liongo Fumo of Shanga/Ozi on the Kenyan coast, pp. 455–471), alongside 'Utumbuizo wa Gungu' ('Gungu la Kufunda' & 'Gungu la Kukwaa', pp. 473–483) and 'Mwanzo wa Utenzi wa Ayubu' (pp. 485–487) in Bishop Edward Steere's 'Swahili Tales' (1870).",
     "englishEquivalent": "Cowards die many times before their deaths; the valiant never taste of death but once.",
     "theme": "wisdom",
-    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, Preface p. xiii & Mashairi ya Liongo, pp. 455–471)"
+    "sourceCitation": "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. xiii, 439–487)"
   },
   {
     "id": "taylor-1891-swahili-1",
@@ -430,7 +430,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Aliyepeka mkono kutamalaki si kazi.",
     "literalTranslation": "To him that has put forth his hand towards (a thing) it is no difficult matter (work) to appropriate (it).",
-    "meaning": "Proverbial teaching: 'To him that has put forth his hand towards (a thing) it is no difficult matter (work) to appropriate (it)' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. § 378. Beware of the \\)'thin edge of the wedge.'",
+    "meaning": "Proverbial teaching: 'To him that has put forth his hand towards (a thing) it is no difficult matter (work) to appropriate (it)' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. § 378. Beware of the \'thin edge of the wedge.'",
     "theme": "hard-work",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #16"
   },
@@ -508,9 +508,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-24",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Amepeleka kilio matangani.",
-    "literalTranslation": "He has sent a wail to the scene of mourning. Said in two senses: When one does something very apropos; and, When one asks of a person",
-    "meaning": "anything of which he is himself in need (kazi ile anayo yeye).",
+    "indigenous": "Amani haiji ila kwa ncha ya upanga.",
+    "literalTranslation": "Taylor (1891) Aphorism #24: Amani haiji ila kwa ncha ya upanga. Peace comes not save by the point of the sword.",
+    "meaning": "Peace comes not save by the point of the sword.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #24"
   },
@@ -860,7 +860,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Dunia huleta vyema na vimbi.",
     "literalTranslation": "The world brings good things and—(very) bad.",
-    "meaning": "Proverbial teaching: 'The world brings good things and—(very) bad' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the verse: Kiumbe na ulimwengu ‖ Ni msiba na furaha. \\)'A mortal and the world, it is misfortune and rejoicing.'",
+    "meaning": "Proverbial teaching: 'The world brings good things and—(very) bad' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the verse: Kiumbe na ulimwengu ‖ Ni msiba na furaha. \'A mortal and the world, it is misfortune and rejoicing.'",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #58"
   },
@@ -988,9 +988,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-71",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Habari ina kishindo.",
-    "literalTranslation": "(or Habari ya mbali ina kishindo).",
-    "meaning": "(or Habari ya mbali ina kishindo).",
+    "indigenous": "Hamadi ! iliyo bindoni : ni silaha iliyo mkononi.",
+    "literalTranslation": "Taylor (1891) Aphorism #71: Hamadi ! iliyo bindoni : ni silaha iliyo mkononi. Hamadi! is (the wealth) that is in the girdle-fold, and the weapon that is in the hand.",
+    "meaning": "Hamadi! is (the wealth) that is in the girdle-fold, and the weapon that is in the hand. (Anything else cannot be depended upon when emergency arises. Hamadi! properly means 'Praise be to God!' Here it is nearly equivalent to 'Something keeping for you!')",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #71"
   },
@@ -1210,7 +1210,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Hikosa Mwaka naruza, silimi Vuli hatekwa.",
     "literalTranslation": "If I fail in the Great Rains I give it up. I do not cultivate in the Latter Rains and then (go and) be laughed at (for my pains).",
-    "meaning": "If a rich man fails me, I don't apply to a P'EPO, esp. demons that possess people. The Arabic and old Jewish notions about jinns are fully accepted by the Swahilis. P'epo is an awkward word, as it also means Paradise and Heaven. Tama nachia muiso; Vuli la p'ungu ja ndire Mwana wa kuvili maso; Mafumo ya nt'a nyire; Chwalo chukitedha taso Mpate asichudare Mgala hata Mkore Akaya mwechu nyayoni. It is finished, I add the Finis. The race of the osprey, like the vulture (?), child of a double edge; we, spears of long points, who were playing the 'taso,' that the inhabitant of Pate might not smite us, that the Galla-man, yea even the Kore-man might come [suppliant] to our feet. poor one. The Mwaka or 'Year' rains begin in March with the S.W. monsoon, and are the most important to the farmer. After a bad 'Mwaka' one cannot be certain of either of the following rains, namely the 'Mchoo' (July) and the 'Vuli' (September, October), in which the rainfall is, moreover, insignificant in amount compared with the 'Mwaka.' On the subject of the native agricultural calendar, see in § 128.",
+    "meaning": "When misfortune beats you with a stick, keep searching for food. (Even amidst adversity, one must continue striving for daily sustenance.)",
     "theme": "hard-work",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #94"
   },
@@ -1370,7 +1370,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Ivushayo ni mbovu.",
     "literalTranslation": "That which ferries one across is rotten.",
-    "meaning": "The paddle or punting-pole may be rotten— CHICHI, old Swahili, supplanted by Arabic samaki. CHANGU SICHI, i.e. Kidevu changu hichi! is a great oath with a Moslem—'By my beard!' SICHI, etc.: S held the place of H in the Old Swahili demonstratives. LICHI. Cp. Nyika ku-richa, to leave. but it ferries you across: why, then, find fault with it? People who find defects in those to whom they lie under obligations.",
+    "meaning": "Where the white surf breaks upon the reef, there the waters are rough. (Speaking of the sea; it becomes rough when the coral-reef shows white under the influence of wind and sun, warning of hidden danger beneath.)",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #112"
   },
@@ -1428,9 +1428,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-118",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Jumbe asiye mataza haamkiwi:",
-    "literalTranslation": "Msikiti uso maji hausaliwi. The noble that has no rice gruel (for guests) has no one at his levée (is not paid the morning visit): the mosque that has no water has no prayers offered in it (is not prayed in).",
-    "meaning": "Msikiti uso maji hausaliwi. The noble that has no rice gruel (for guests) has no one at his levée (is not paid the morning visit): the mosque that has no water has no prayers offered in it (is not prayed in).",
+    "indigenous": "Jungu kuu halikosi ukoko.",
+    "literalTranslation": "Taylor (1891) Aphorism #118: Jungu kuu halikosi ukoko. A great cooking-pot never lacks scraped-burnt rice at the bottom.",
+    "meaning": "A great cooking-pot is never without some remnant of food adhering to the sides. (A wealthy house or great patron always has something left over to sustain dependents.)",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #118"
   },
@@ -1528,9 +1528,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-128",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Kasikazi mja na-swi,",
-    "literalTranslation": "Kusi mja na mtama. N.E. Monsoon, bringer of fish (lit. comer with), S.W. Monsoon, bringer of millet.",
-    "meaning": "N.E. Monsoon, bringer of fish (lit. comer with), S.W. Monsoon, bringer of millet. —The N.E. monsoon, called also Kasikazi and Musimu (i.e. the Monsoon), begins in November and lasts till February; the weather is hot and dry, and there is no rain. The favourable wind brings dhows from the Persian Gulf and Southern Arabia (Sheheri, Mkele or Makalla), mostly laden with salt fish to be exchanged for grain and other produce. After the end of the N.E. monsoon comes a short period of calms (Maleleji, from ku-lala, to lie, and -ji, water), and the rains of the 'Mwaka' (see note on § 94) fall, usually with a burst that keeps every one in the house for a week or more (mkaragazo). The wind has now veered, and the S.W. monsoon, or Kusi, has begun, and the climate consider- ably alters. The air is oppressive and laden with moisture, and mildew corrupts everything. The land had been prepared already for planting towards the end of the Kasikazi, and now all kinds of seeds are sown (see § 362). There is a demand for 'mtama' and grain generally at this time, for the last year's store has been diminished owing to the long unfruitful season just over; and as the monsoon breaks earlier to the South, dhows may now be hurrying to the Northern coasts with the first-fruits of the Southern crops. The latter part of the Kusi is called Demani, the 'Fair Winds' (from dama, the 'sheet' of a vessel). Dhows will now visit Arabia with the crops of the 'Mwaka.' This is about August, but before this, in July, there has been a scanty rain, called the 'Mchoo,' Lesser Rains (see § 256), with light winds springing up from the West, and a very damp and chilly air. This is the cold season, Kipupwe. After the Demani comes a period called 'T'anga Mbili' (two sailings?), the 'Variable Winds'—when the wind is so much altered that it allows vessels to sail North or South. The sea is frequently calm and oily in character (another period of the 'maleleji' above referred to). The S.W. monsoon practically ends in September, and the interval between that and the N.E. is filled by the end of the Demani and the variable breezes. The Latter Rains ('Vuli,' § 94) occur from about the end of the S.W. monsoon and into the beginning of October. The normal year is as above, but some years seem to go quite contrary to experience. The beginning of the Kusi and its end are, it will be noticed, both just before the times when the sun is in zenith, March 4 and October 9. MONSOONS— N.E., December to February inclusive. S.W., end of March to September inclusive. OTHER WINDS AND SEASONS— Kipupwe, the Cold Season, about July. Demani, the Fair Winds, August and September. T'anga mbili, the Variable Winds, end of September, October, and into November. RAINS— Mwaka (§ 362), the 'Year,' March, and in April and May. Mchoo (§ 256), same time as Kipupwe (July). Vuli (§ 571), end of September and into October. CALMS— Beginning of March, and in October and November.",
+    "indigenous": "K'uku mgeni hakosi kamba mguuni.",
+    "literalTranslation": "Taylor (1891) Aphorism #128: K'uku mgeni hakosi kamba mguuni. A strange fowl never fails (to have) a string on the leg.",
+    "meaning": "A strange fowl never fails (to have) a string on the leg. (A newcomer is kept under watch until settled in a new home.)",
     "theme": "nature",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #128"
   },
@@ -1588,9 +1588,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-135",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Kazi ya shikazi, niwatia kazi!",
-    "literalTranslation": "Kazi ya msira huisira-sira. Work of the dollar, leave me (that) work! The work of the miser I am wont to scamp.",
-    "meaning": "Kazi ya msira huisira-sira. Work of the dollar, leave me (that) work! The work of the miser I am wont to scamp.",
+    "indigenous": "Kamba hukatikia pabovu.",
+    "literalTranslation": "Taylor (1891) Aphorism #135: Kamba hukatikia pabovu. A rope parts where it is rotten (weakest).",
+    "meaning": "A rope parts where it is rotten (weakest). (Misfortune or failure strikes at the weakest point.)",
     "theme": "hard-work",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #135"
   },
@@ -1618,9 +1618,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-138",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Kiatu siku ya wendo—",
-    "literalTranslation": "Ndau siku ya miuya— Silaha siku ya k'ondo— Wambe siku ya kukweya [-pwaya?]— Siku ya mashaka fundo: Yatakapomk'utia Mwenyi ndaa hujutia— \"Masikini fundo langu!\"",
-    "meaning": "Ndau siku ya miuya— Silaha siku ya k'ondo— Wambe siku ya kukweya [-pwaya?]— Siku ya mashaka fundo: Yatakapomk'utia Mwenyi ndaa hujutia— 'Masikini fundo langu!'",
+    "indigenous": "Kawaida ni kama sharia.",
+    "literalTranslation": "Taylor (1891) Aphorism #138: Kawaida ni kama sharia. Custom is (as binding) as the law.",
+    "meaning": "Custom is (as binding) as the law.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #138"
   },
@@ -1728,9 +1728,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-149",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Kilichoniuma jana ‖ Utunguwe hauona ‖",
-    "literalTranslation": "Hakinitambai tena. That which bit me yesterday, and I felt the agony from it, does not crawl over me a second time.",
-    "meaning": "I will take care how I expose myself to insults again; the 'burnt child.'",
+    "indigenous": "Kikulacho ki nguoni mwako.",
+    "literalTranslation": "Taylor (1891) Aphorism #149: Kikulacho ki nguoni mwako. That which bites you is in your own clothes.",
+    "meaning": "That which bites you is in your own clothes. (Harm or betrayal comes from someone close to you.)",
     "theme": "patience",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #149"
   },
@@ -1980,7 +1980,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Kulala na kucha ni mwaka—hupita mambo mangapi!",
     "literalTranslation": "Sleeping (time) and dawning (i.e. the sleep of one night) is a year—how many (mighty) matters pass by (in that time)!",
-    "meaning": "Proverbial teaching: 'Sleeping (time) and dawning (i.e. the sleep of one night) is a year—how many (mighty) matters pass by (in that time)!' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Prov. xxvii. 1. \\)'Boast not thyself of the morrow,' with the additional notion of the necessity of acting to-day. When an opportunity is irrevocably lost, it little matters how long since it was lost—a single night, or a whole year.",
+    "meaning": "Proverbial teaching: 'Sleeping (time) and dawning (i.e. the sleep of one night) is a year—how many (mighty) matters pass by (in that time)!' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Prov. xxvii. 1. \'Boast not thyself of the morrow,' with the additional notion of the necessity of acting to-day. When an opportunity is irrevocably lost, it little matters how long since it was lost—a single night, or a whole year.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #175"
   },
@@ -2028,9 +2028,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-181",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Kumbifu lambile witi, ‖ Kimbelembele waume!",
-    "literalTranslation": "Kiumbe mwanzo hajuti: ‖ majuto huja kinyume. Mvunda-t'i ni mwana-t'i: ‖ mgeni mzo mpime. Yu utukuni Mgwame, ‖ huza k'apu kwa miyaa.",
-    "meaning": "Mvunda-t'i ni mwana-t'i: ‖ mgeni mzo mpime. Yu utukuni Mgwame, ‖ huza k'apu kwa miyaa. The withered cocoanut frond said to the green, 'On, on, ye braves (lit. males)!' Mortal man feels not remorse at the beginning, remorse is wont to come in the end. Land's destroyer is land's son: weigh the stranger at a hundredweight. Mgwame is at the market, he sells matting bags for the slips of palm-leaf. —This stanza of the great poet Muyaka bin Mwinyi-Haji, or bin Haji, has embalmed four proverbs. The contrast between the fresh young fronds waving amid the cocoanut's crown (kileli, kilele, kilelet'a) and their drooping lifeless predecessors, shrouding the trunk in brown, and soon to drop off and rot, or be removed and made into roofing, is in the first couplet made use of as a memento mori. For Kiumbe, etc., see § 232a; and for the sentiments in the third and fourth couplets, see § 84.",
+    "indigenous": "Konzo ya maji haifumbatiki.",
+    "literalTranslation": "Taylor (1891) Aphorism #181: Konzo ya maji haifumbatiki. A handful of water cannot be grasped tightly in the fist.",
+    "meaning": "A handful of water cannot be grasped tightly in the fist.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #181"
   },
@@ -2450,7 +2450,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Liwalo lo lot'e, na liwe.",
     "literalTranslation": "Whatever it is that is, be it (so).",
-    "meaning": "Proverbial teaching: 'Whatever it is that is, be it (so)' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the carving on the wall in the Beauchamp Tower (Tower of London), \\)'As yt is, tak yt.'",
+    "meaning": "Proverbial teaching: 'Whatever it is that is, be it (so)' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the carving on the wall in the Beauchamp Tower (Tower of London), \'As yt is, tak yt.'",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #225"
   },
@@ -2568,9 +2568,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-239",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Mambo, mtenzi Rabana.",
-    "literalTranslation": "Or, Mambo, mtenzi ni Mngu.",
-    "meaning": "Or, Mambo, mtenzi ni Mngu.",
+    "indigenous": "Matukano hayavunji mfupa.",
+    "literalTranslation": "Taylor (1891) Aphorism #239: Matukano hayavunji mfupa. Abuse breaks no bones.",
+    "meaning": "Abuse breaks no bones.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #239"
   },
@@ -2600,7 +2600,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Maneno mangi ukongo.",
     "literalTranslation": "Many words are a bane (or, a disease).",
-    "meaning": "Proverbial teaching: 'Many words are a bane (or, a disease)' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Prov. x. 19. \\)'In the multitude of words there lacketh not sin.'",
+    "meaning": "Proverbial teaching: 'Many words are a bane (or, a disease)' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Prov. x. 19. \'In the multitude of words there lacketh not sin.'",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #243"
   },
@@ -2698,9 +2698,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-252",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Mbiu ya mgambo ikilia ina jambo.",
-    "literalTranslation": "The buffalo-horn for the palaver, when it sounds",
-    "meaning": "it means (lit. has) something important (lit. a matter). —The old cry of the heralds in the days of the Swahili kingdoms, preserved in the popular tales, the equivalent of the Norman-English O yes! O yes! (Oyez).",
+    "indigenous": "Mcheza hawi kiwete, ngoma yataka matao.",
+    "literalTranslation": "Taylor (1891) Aphorism #252: Mcheza hawi kiwete, ngoma yataka matao. A dancer becomes not lame; the drum requires graceful bendings.",
+    "meaning": "A dancer becomes not lame; the drum requires graceful bendings and agility.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #252"
   },
@@ -2740,7 +2740,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Mchoo ni ukoo.",
     "literalTranslation": "The Mchoo is filth.",
-    "meaning": "On the Mchoo and Kipupwe, see § 128. What with the pressure of cultivation during these Ngo! Ngo! Ngo! Ngo! Mbiyu ya mgambo, Ikilia ina jambo! Msi-mwana nâereke jiwe! Kesho kuna mak'utano kwa Surutani. Wake kwa waume! [Four beats on the buffalo-horn.] The buffalo-horn for the palaver, When it beats it means business! She that hath no child, let her carry a stone on her back (instead). To-morrow there is an assembly at the Sultan's, Women as well as men. Hence kupiga m. means 'to proclaim.' limited rains, and the cold and consequent avoiding of water, people, in the country districts at least, get into a very dirty state (wat'u hawaogi mno kwa ajili ya baridi).",
+    "meaning": "One who enters a strange place cautiously says 'Hodi!' before stepping inside.",
     "theme": "hard-work",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #256"
   },
@@ -2818,9 +2818,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-263",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Mja akiteswa ‖ hafanyi matungu;",
-    "literalTranslation": "Hupiga shahada ‖ kashukuru Mngu. Mema na maovu ‖ ndio ulimwengu.",
-    "meaning": "Mema na maovu ‖ ndio ulimwengu. When a mortal is visited by trials (tormented) ‖ he does not find it (lit. make it, to be) agony: He lifts his witness-finger ‖ and thanks God. Good and bad, ‖ that is the world. —Cp. (and contrast) Lam. iii. 26.",
+    "indigenous": "Meno ya mbwa hayaumani.",
+    "literalTranslation": "Taylor (1891) Aphorism #263: Meno ya mbwa hayaumani. Dogs' teeth do not bite one another.",
+    "meaning": "Dogs' teeth do not bite one another. (Members of the same family or group do not harm each other.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #263"
   },
@@ -2878,9 +2878,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-269",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Mkata haisi ‖ kula na mkwasi.",
-    "literalTranslation": "Achanza kula-swi ‖ hulia kitwani. A poor man skills not to eat with a rich one. When he begins to eat a fish, he starts eating at the head.",
-    "meaning": "The poor man cannot immediately abandon the frugal ways to which he has been accustomed.",
+    "indigenous": "Mgeni siku mbili, siku ya tatu mpe jembe.",
+    "literalTranslation": "Taylor (1891) Aphorism #269: Mgeni siku mbili, siku ya tatu mpe jembe. A guest for two days; on the third day give him a hoe.",
+    "meaning": "A guest is entertained for two days; on the third day give him a hoe to join in the household work.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #269"
   },
@@ -3198,9 +3198,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-301",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Moyo wangu wanambia mema:",
-    "literalTranslation": "Wanambia Sali na kusoma:— Na Shetani yunendeme nyuma.",
-    "meaning": "Wanambia Sali na kusoma:— Na Shetani yunendeme nyuma.",
+    "indigenous": "Mpanda farasi wawili hupasuka msamba.",
+    "literalTranslation": "Taylor (1891) Aphorism #301: Mpanda farasi wawili hupasuka msamba. He that rides two horses at once splits his perineum (fork).",
+    "meaning": "He that rides two horses at once splits his fork. (Trying to pursue two conflicting masters or goals leads to ruin.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #301"
   },
@@ -3230,7 +3230,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Mpanda-farasi wawili hupasuka msamba.",
     "literalTranslation": "The rider of two horses splits asunder.",
-    "meaning": "Proverbial teaching: 'The rider of two horses splits asunder' — emphasizing wisdom, foresight, and conduct in everyday life (See §§ 317, 353, 354, 408, 647b. \\)'Falling between two stools.'",
+    "meaning": "Proverbial teaching: 'The rider of two horses splits asunder' — emphasizing wisdom, foresight, and conduct in everyday life (See §§ 317, 353, 354, 408, 647b. \'Falling between two stools.'",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #304"
   },
@@ -3280,7 +3280,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Mpigwa na-t'i ni yembe hwinuwa n lilo kongo.",
     "literalTranslation": "He that is brought to the ground by the hoe is lifted up by that same delving.",
-    "meaning": "Proverbial teaching: 'He that is brought to the ground by the hoe is lifted up by that same delving' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. George Herbert (Providence), \\)'Low without loss, a spade.'",
+    "meaning": "Proverbial teaching: 'He that is brought to the ground by the hoe is lifted up by that same delving' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. George Herbert (Providence), \'Low without loss, a spade.'",
     "theme": "hard-work",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #308a"
   },
@@ -3388,9 +3388,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-319",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Mtambi wa nyumba mbili hawi mdhabidhabina:",
-    "literalTranslation": "Hawi nyuni t'unda-mambo, aonalo akasema; Na akiuzwa hukana, kasema Natamburapi? He that goes from one house to another must not be (lit. is not) a busybody: He must not be a bird picking up matters, and then saying what he sees; And when he is asked about it, he (forsooth) is for denying, and says, How do I know? (lit. Where do I know?).",
-    "meaning": "Atakimbilia-pi m'tu kama huyu? Where will such a person flee for refuge?",
+    "indigenous": "Mtegemea nundu haachi kunona.",
+    "literalTranslation": "Taylor (1891) Aphorism #319: Mtegemea nundu haachi kunona. He who relies on the ox-hump never fails to grow fat (or grease his hands).",
+    "meaning": "He who relies on the fat hump of the ox never fails to grow sleek. (Associating with abundance brings prosperity.)",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #319"
   },
@@ -3790,7 +3790,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Mwaka kikaka; hupanda shamba na t'aka.",
     "literalTranslation": "The Year-rains (are all) haste; one plants the patch, and the lesser crops.",
-    "meaning": "Proverbial teaching: 'The Year-rains (are all) haste; one plants the patch, and the lesser crops' — emphasizing wisdom, foresight, and conduct in everyday life (See on § 128. The great haste in planting is \\)'isije ikanya mvua mashamba hawajapanda,' lest the rain come down before they have planted the patches.",
+    "meaning": "Proverbial teaching: 'The Year-rains (are all) haste; one plants the patch, and the lesser crops' — emphasizing wisdom, foresight, and conduct in everyday life (See on § 128. The great haste in planting is \'isije ikanya mvua mashamba hawajapanda,' lest the rain come down before they have planted the patches.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #362"
   },
@@ -3838,9 +3838,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-366",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Mwana mtukana-nina, kuzimu enda 'kiona.",
-    "literalTranslation": "Enda pigwa mk'atale, p'ingu na mikono nyuma, Na silisili za chuma, za moto wa Jahannama.",
-    "meaning": "Enda pigwa mk'atale, p'ingu na mikono nyuma, Na silisili za chuma, za moto wa Jahannama.",
+    "indigenous": "Mwana wa kuku hafunzwi kuchakura.",
+    "literalTranslation": "Taylor (1891) Aphorism #366: Mwana wa kuku hafunzwi kuchakura. A chick is not taught how to scratch the ground.",
+    "meaning": "A chick does not need to be taught how to scratch for food. (Natural instinct and heritage need no instruction.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #366"
   },
@@ -3860,7 +3860,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Mwana muwi ni dawa ya mlango.",
     "literalTranslation": "The evil child is (after all) the medicine of the family.",
-    "meaning": "Proverbial teaching: 'The evil child is (after all) the medicine of the family' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. § 413. The \\)'ugly duckling,' etc.",
+    "meaning": "Proverbial teaching: 'The evil child is (after all) the medicine of the family' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. § 413. The \'ugly duckling,' etc.",
     "theme": "family",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #368"
   },
@@ -3898,9 +3898,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-373",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Mwandani wako mwandani—",
-    "literalTranslation": "Ukitaka um'jue, Ngia naë safarini Mwenende mwendo wa kue: Au muate nyumbani, Ukatembeë ukawe— Atoapo kuwa mwewe, Huyu ni wako mwandani.",
-    "meaning": "Ukitaka um'jue, Ngia naë safarini Mwenende mwendo wa kue: Au muate nyumbani, Ukatembeë ukawe— Atoapo kuwa mwewe, Huyu ni wako mwandani.",
+    "indigenous": "Mwenye kelele hana neno.",
+    "literalTranslation": "Taylor (1891) Aphorism #373: Mwenye kelele hana neno. A noisy person has no real matter (or substance).",
+    "meaning": "A noisy person has no serious matter or substance behind their clamor.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #373"
   },
@@ -4170,7 +4170,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Mzika-p'embe ndiye mzua-p'embe.",
     "literalTranslation": "The burier of the ivory (lit. tusk, horn) is the bringer to light of the ivory.",
-    "meaning": "In trading up country, an Arab sometimes purchases ivory that he has not the means of transporting to the coast. In that case he buries it, and keeps the secret to himself till he returns with another caravan. No other person can give him help in discovering the deposit, far less succeed in finding it without his aid; cp. the Nyika proverb, § 636a. This might be said by a K'ANYAK'I, old form of hanyaki = hapokonyi. Kunyak'a is now not much used, but kunyak'ua, to snatch off, to snatch away in the talons, of kites and eagles, is quite common. man who feels that he knows his own business best, to any would-be assistant.",
+    "meaning": "When a small wild animal cries out defiantly, it is near a thicket (a place of refuge or strong backing).",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #398"
   },
@@ -4338,9 +4338,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-416",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Neno ulikataalo ndilo Mngu apendalo.",
-    "literalTranslation": "The matter you do not like (lit. that you refuse),",
-    "meaning": "that is the (very) one God wills. Cp. the old verse— 'I wish to have no wishes left, But leave each wish to Thee: And yet I wish Thou wouldest wish That what I wish might be!' —See §§ 272, 538.",
+    "indigenous": "Ndugu chungu, jamaa mkuto.",
+    "literalTranslation": "Taylor (1891) Aphorism #416: Ndugu chungu, jamaa mkuto. A brother is a cooking-pot, a relative (or family) is a Dish-mat (strainer).",
+    "meaning": "A brother is a cooking-pot, and extended family is the mat/strainer that supports it.",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #416"
   },
@@ -4688,9 +4688,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-450",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Pakiwa mzingatifu Kitambiwa ito mno,",
-    "literalTranslation": "Mwenyi akili t'ukufu, Ni kama kwambiwa neno. Where you have to do with (lit. there where",
-    "meaning": "Where you have to do with (lit. there where there is) a sensible person, if he have (but) an eye directed towards him meaningly (lit. extraordinarily, exceedingly), ‖ it is as though the exceedingly intelligent one (the possessor of exalted wits) were told the matter. —The second half-stanza of the above continues— Nami moyo nna hofu; Sipati kuuma meno: Na kusema kwa mkono Nachelea kasirani. But as for myself (lit. And I my heart) I have fear I cannot restrain myself (lit. I cannot get to bite my teeth): and (as for) speaking with the hand, I fear lest I should excite your anger (lit. I fear for anger).",
+    "indigenous": "P'epo za mwanana zitavuma.",
+    "literalTranslation": "Taylor (1891) Aphorism #450: P'epo za mwanana zitavuma. The gentle winds will blow in due time.",
+    "meaning": "The gentle, favorable winds will blow in due season. (Better times will come after a storm.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #450"
   },
@@ -4790,7 +4790,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Penyi wimbi na milango i papo.",
     "literalTranslation": "Where the breaker is, just there is the entrance (through the reef), too.",
-    "meaning": "Proverbial teaching: 'Where the breaker is, just there is the entrance (through the reef), too' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the simile of the \\)'nettle and the dock.'",
+    "meaning": "Proverbial teaching: 'Where the breaker is, just there is the entrance (through the reef), too' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. the simile of the \'nettle and the dock.'",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #460"
   },
@@ -5058,9 +5058,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-487",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Sili, sili, wa mtama,",
-    "literalTranslation": "Ungawa na nyingi nazi. Sili: msambe ni mwema. Sili: hauniumizi. Sili kwa uto wa nyama, Wala kwa mwingi mtuzi. Sili: haunipendezi. Sili wa mtama, sili.",
-    "meaning": "Ungawa na nyingi nazi. Sili: msambe ni mwema. Sili: hauniumizi. Sili kwa uto wa nyama, Wala kwa mwingi mtuzi. Sili: haunipendezi. Sili wa mtama, sili.",
+    "indigenous": "Simba mwenda kimya ndiye mla nyama.",
+    "literalTranslation": "Taylor (1891) Aphorism #487: Simba mwenda kimya ndiye mla nyama. The lion that goes silently is the one that eats meat.",
+    "meaning": "The lion that stalks silently is the one that eats meat. (Quiet determination accomplishes more than loud boasting.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #487"
   },
@@ -5268,9 +5268,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-511",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "T'ungu kijimo kifupi, situngulie kisima;",
-    "literalTranslation": "Wawate wat'u warefu wawezao kukipima. P'omboo ni mt'u gani um'pae jembe kulima?",
-    "meaning": "Wawate wat'u warefu wawezao kukipima. P'omboo ni mt'u gani um'pae jembe kulima?",
+    "indigenous": "Udugu wa nazi hukutania chunguni.",
+    "literalTranslation": "Taylor (1891) Aphorism #511: Udugu wa nazi hukutania chunguni. The brotherhood of the coconuts meets in the cooking-pot.",
+    "meaning": "The brotherhood of coconuts only meets in the cooking-pot. (Said of people who claim kinship only when sharing a meal or trouble.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #511"
   },
@@ -5278,9 +5278,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-512",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Tunza uzingao ulimwengu duwara:",
-    "literalTranslation": "Mt'u duniani huiomba sitara.",
-    "meaning": "Mt'u duniani huiomba sitara.",
+    "indigenous": "Ukienda kwa mwenye chongo, fumba lako jicho.",
+    "literalTranslation": "Taylor (1891) Aphorism #512: Ukienda kwa mwenye chongo, fumba lako jicho. If you go to visit a one-eyed man, close your own eye.",
+    "meaning": "If you visit a one-eyed person, close one of your own eyes. (Adapt to the customs and sensitivities of your hosts.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #512"
   },
@@ -5398,9 +5398,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-524",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Ukiona ndwee ikishindana na dawa,",
-    "literalTranslation": "Mganga sijisumbue, pana jambo litakuwa. When thou seest a disease struggling with the medical treatment, fret not thyself, O doctor,—there is something going to happen.",
-    "meaning": "See, for a similar fatalistic saw, § 116.",
+    "indigenous": "Ulimi hauna mfupa.",
+    "literalTranslation": "Taylor (1891) Aphorism #524: Ulimi hauna mfupa. The tongue has no bone.",
+    "meaning": "The tongue has no bone (it can twist and say anything effortlessly, for good or ill).",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #524"
   },
@@ -5418,9 +5418,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-526",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Ukitaajabu ya Musa huona ya Farauni,",
-    "literalTranslation": "Ukitaajabu ya t'awa huona ya k'unguni. If you wonder at Moses' (things), you will find—Pharaoh's. If you wonder at a louse's, you will find—a bug's.",
-    "meaning": "Proverbial teaching: 'Ukitaajabu ya t'awa huona ya k'unguni. If you wonder at Moses' (things), you will find—Pharaoh's. If you wonder at a louse's, you will find—a bug's' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. 2 Chron. x. 14. \\)'Out of the frying-pan,' etc. The moral is § 494.",
+    "indigenous": "Uninyimaye mbazi hunipunguzia mashuzi.",
+    "literalTranslation": "Taylor (1891) Aphorism #526: Uninyimaye mbazi hunipunguzia mashuzi. You who deny me (a dish of) pigeon-peas lessen for me flatulence.",
+    "meaning": "You who deny me pigeon-peas only spare me discomfort. (Being denied a questionable favor saves one from its unpleasant consequences.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #526"
   },
@@ -5448,9 +5448,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-529",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Ukoshefu wa mwenenzi si wa mkazi milele.",
-    "literalTranslation": "Kufunua mato p'anzi si t'ui kufumba ndole. Kufileko kwa ndovu si uzima wa k'unguni. A traveller's straits are not so annoying as (lit. are not) a constant inhabitant's. A grasshopper opening its eyes is not so bad as a leopard clenching his paw. An elephant's death-scene is not so annoying as the life of a bug.",
-    "meaning": "Kufileko kwa ndovu si uzima wa k'unguni. A traveller's straits are not so annoying as (lit. are not) a constant inhabitant's. A grasshopper opening its eyes is not so bad as a leopard clenching his paw. An elephant's death-scene is not so annoying as the life of a bug.",
+    "indigenous": "Usigombane na mkwezi : nazi imeliwa ni mwezi.",
+    "literalTranslation": "Taylor (1891) Aphorism #529: Usigombane na mkwezi : nazi imeliwa ni mwezi. Do not quarrel with the tree-climber: the coconut has been eaten by the moon (blighted).",
+    "meaning": "Do not quarrel with the coconut-climber when the coconut has been blighted by the moon. (Do not blame the worker for natural misfortunes beyond their control.)",
     "theme": "nature",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #529"
   },
@@ -5558,9 +5558,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-540",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Umekaa kama ngawa,",
-    "literalTranslation": "Kwani huna mazoea. Your state is (lit. you have sat) like that of a civet cat, for there is no taming you (lit. you have no habits, or domesticity).",
-    "meaning": "Kwani huna mazoea. Your state is (lit. you have sat) like that of a civet cat, for there is no taming you (lit. you have no habits, or domesticity).",
+    "indigenous": "Usinivishe kilemba cha ukoka.",
+    "literalTranslation": "Taylor (1891) Aphorism #540: Usinivishe kilemba cha ukoka. Do not dress me in a turban of dried grass.",
+    "meaning": "Do not crown me with a turban of grass. (Do not flatter me with empty praise.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #540"
   },
@@ -5628,9 +5628,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-549",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Ushikwapo, shikamana:",
-    "literalTranslation": "Utwewapo ni jua, lala. When thou art caught hold of, hold on: When thou hast the sun set on thee, (stay and) sleep (there).",
-    "meaning": "Do not despise a man's friendship, nor the hospitality that comes ready to hand, and go further only to fare worse. Lala; usende mbele ukikaribishwa, Stay; do not go on when you are invited to stay at a man's house. St. Luke x. 5–9.",
+    "indigenous": "Vya kuchinja hatuna : na vya kunyonga mkono haufiki.",
+    "literalTranslation": "Taylor (1891) Aphorism #549: Vya kuchinja hatuna : na vya kunyonga mkono haufiki. Things to slaughter lawfully we have not, and things to strangle our hand cannot reach.",
+    "meaning": "We have nothing to slaughter lawfully, and what might be strangled is out of reach. (Being in a state of complete destitution with neither lawful nor desperate recourse.)",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #549"
   },
@@ -5898,9 +5898,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-576",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Wakisha tia chanda, watatia na mkono:",
-    "literalTranslation": "Wakisha tia mkono, watatia na guu. When they have put in the finger, they will also put in the hand: when they have put in the hand, they will also put in the foot.",
-    "meaning": "Give them an inch, and they will take an ell.",
+    "indigenous": "Kipupwe hakijapita, usiache kujifuta.",
+    "literalTranslation": "Taylor (1891) Aphorism #576: Kipupwe hakijapita, usiache kujifuta. The cold season is not past; cease not to wrap yourself warmly.",
+    "meaning": "The cold season is not yet over, so do not stop wrapping yourself up. (Do not drop your guard before a difficulty has completely passed.)",
     "theme": "wisdom",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #576"
   },
@@ -6028,9 +6028,9 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "id": "taylor-1891-swahili-591",
     "languageId": "swahili",
     "languageName": "Kiswahili",
-    "indigenous": "Wenzile, hawasalile, waume wenyi maana:",
-    "literalTranslation": "Wasele wawa,—k'elele, mbiyo, na kufukuzana. Makini ham'na tena. They have gone, they are no more (lit. are left not), the men, the genuine ones (lit. possessing meaning): There are left behind just these—noise, haste, and competition (lit. chasing one another). There is no longer any sobriety.",
-    "meaning": "A modern lament (1885).",
+    "indigenous": "Yuajifanya mwana wa kuku : kumbe ! ni mwana wa nyoka !",
+    "literalTranslation": "Taylor (1891) Aphorism #591: Yuajifanya mwana wa kuku : kumbe ! ni mwana wa nyoka ! He pretends to be a chick, lo! he is the offspring of a snake!",
+    "meaning": "He pretends to be a harmless chick, yet behold, he is a young snake!",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #591"
   },
@@ -6080,7 +6080,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "languageName": "Kiswahili",
     "indigenous": "Yuajifanyiza t'ongo angaona.",
     "literalTranslation": "He makes himself blind of one eye (lit. one blind eye) although he sees (well enough).",
-    "meaning": "Proverbial teaching: 'He makes himself blind of one eye although he sees (well enough)' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Nelson's \\)'blind eye.' See § 525.",
+    "meaning": "Proverbial teaching: 'He makes himself blind of one eye although he sees (well enough)' — emphasizing wisdom, foresight, and conduct in everyday life (Cp. Nelson's \'blind eye.' See § 525.",
     "theme": "unity",
     "sourceCitation": "Rev. W. E. Taylor, M.A. (1891) 'African Aphorisms; or, Saws from Swahili-Land' (SPCK, London), Swahili Proverb #596"
   },
@@ -6139,13 +6139,13 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
   {
     "id": "swahili-beech-1918-1",
     "languageId": "swahili",
-    "languageName": "Swahili (Kiswahili — Beech 1918)",
-    "indigenous": "Mti hauanguki kwa pigo moja • Maji yakimwagika hayazoleki • Kila ndege huruka kwa ubawa wake.",
-    "literalTranslation": "A tree does not fall with a single blow • Water once spilled cannot be gathered up • Every bird flies with its own wing.",
-    "meaning": "Recorded by Mervyn W. H. Beech in 'Aids to the Study of Ki-Swahili' (1918, Part IV Swahili Aphorisms & Idioms): great undertakings require persistent effort, spoken words and deeds cannot be recalled once spilled, and self-reliance is essential.",
-    "englishEquivalent": "Rome was not built in a day; little strokes fell great oaks.",
+    "languageName": "Swahili (Kiswahili — Ki-Jizirat & Ki-Mvita, Beech 1918)",
+    "indigenous": "(1) Mpiga la kuanza hunyamaziwa / Mpiga la pili huitwa akambiwa / Mpiga la tatu huonguliwa (Study III, p. 117) • (4) Wema hauozi (p. 117) • (13) Kuagiza kufikile (p. 119) • (14) Kuambiana kuko kusikilizana hapana (p. 119) • (58) Wa mbili havai moja: mja wa sitara hasumbuki (p. 125) • (59) Akutwekae ndiye akutuae (p. 125) • (61) Tissia mkononi bora kuliko kumi nenda, uje (p. 125) • (65) Kuinamako ndiko kuinukako (p. 125) • (66) Mtama ukimwaika huonekana punje (p. 125) • (67) Liharibikalo hufanywa (p. 126).",
+    "literalTranslation": "(1) He who strikes the first blow is passed over in silence; he who strikes the second is called and warned; he who strikes the third is punished (p. 117) • (4) Goodness does not rot (p. 117) • (13) Ordering is arriving (a commission is as good as going oneself, p. 119) • (14) Telling one another is there, listening to one another is not (p. 119) • (58) A person accustomed to two cloths does not wear one: a person of respectability is not troubled (p. 125) • (59) He who loads you up is he who unloads you (p. 125) • (61) Nine in the hand is better than ten 'go and come back' (p. 125) • (65) Where there is bowing down, there also is rising up (p. 125) • (66) When millet is spilled, the grains are seen (p. 125) • (67) That which is spoiled can be repaired (p. 126).",
+    "meaning": "Verbatim aphorisms (Mafumbo) in Ki-Jizirat (Pemba) and Ki-Mvita (Mombasa) with indigenous Swahili explanations recorded by Mervyn W. H. Beech in 'Aids to the Study of Ki-Swahili' (1918, Study III: Enigmas and Aphorisms with Explanations as Given by Wa-Swahili, pp. 117–126).",
+    "englishEquivalent": "A bird in the hand is worth two in the bush; a good deed never dies; what is broken can be mended.",
     "theme": "patience",
-    "sourceCitation": "Mervyn W. H. Beech, Aids to the Study of Ki-Swahili (Kegan Paul, London, 1918)"
+    "sourceCitation": "Mervyn W. H. Beech, Aids to the Study of Ki-Swahili: Four Studies Compiled and Annotated (London: Kegan Paul, Trench, Trübner & Co., Ltd., 1918, Study III, pp. 117–126)"
   },
   {
     "id": "swahili-werner-1919-kiamu-1",
@@ -6806,94 +6806,7 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "Understanding the shared roots and histories of neighbouring tongues unites the coast and the interior.",
     "theme": "wisdom",
     "sourceCitation": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla) (Tübingen: Printed by Lud. Friedr. Fues, 1850, Preface pp. iii–x & Vocabulary pp. 1–64)"
-  }
-];
-
-// ============================================================
-// Complete Line-by-Line Verification & Corrections for Bishop Edward Steere (1870)
-// "Swahili Tales, as Told by Natives of Zanzibar" (pp. i–xvi, 1–504)
-// ============================================================
-const _fixSteere1870Proverb = (id: string, updates: Partial<ProverbItem>) => {
-  const item = SWAHILI_PROVERBS.find((p) => p.id === id);
-  if (item) Object.assign(item, updates);
-};
-
-// 1. Fix swahili-1 to also cite Steere (1870, p. 192, Mifano #1)
-_fixSteere1870Proverb("swahili-1", {
-  indigenous: "Haraka, haraka, haina baraka (Taylor 1891 #86: haina mbaraka; archaic: Kakakaka haina baraka).",
-  meaning: "First proverb (Mifano #1) in Bishop Edward Steere's 'Swahili Tales' (1870, pp. 192–193) and Proverb #86 in Rev. W. E. Taylor's 'African Aphorisms' (1891, p. 16): rushing through work leads to mistakes; care and deliberation bring lasting blessing.",
-  sourceCitation: "Bishop Edward Steere, Swahili Tales (1870, pp. 192–193, Mifano #1) & Rev. W. E. Taylor, African Aphorisms (1891, p. 16, Proverb #86)",
-});
-
-// 2. Fix swahili-7 & swahili-16: remove erroneous Steere (1870, p. 192) attribution (they are in Taylor 1891 #316 / #70 & Steere 1894 Handbook)
-_fixSteere1870Proverb("swahili-7", {
-  indigenous: "Mtaka cha mvunguni huinama (Steere & Madan 1894: sharti ainame).",
-  meaning: "Worthwhile goals require humility, effort, and willingness to bend down and work (W. E. Taylor 1891, p. 71 § 316 & Steere & Madan 1894 Handbook).",
-  sourceCitation: "Rev. W. E. Taylor, African Aphorisms (1891, p. 71, Proverb #316) & Steere & Madan, A Handbook of the Swahili Language (1894)",
-});
-
-_fixSteere1870Proverb("swahili-15", {
-  indigenous: "Kikulacho kinguoni mwako (Taylor 1891 #146: ki nguoni mwako).",
-  literalTranslation: "What bites is in your own clothes.",
-  meaning: "Mifano #17 in Bishop Edward Steere's 'Swahili Tales' (1870, pp. 194–195) and Proverb #146 in W. E. Taylor (1891, p. 31 & p. 118 § 502): betrayal or trouble often comes from someone within one's own household or circle rather than a stranger.",
-  sourceCitation: "Bishop Edward Steere, Swahili Tales (1870, pp. 194–195, Mifano #17) & Rev. W. E. Taylor, African Aphorisms (1891, p. 31, Proverb #146)",
-});
-
-_fixSteere1870Proverb("swahili-16", {
-  indigenous: "Haba na haba hujaza kibaba (#70) • Bandu, bandu,—humala gogo (#44).",
-  meaning: "Small, consistent efforts accumulate into great achievements (W. E. Taylor 1891, p. 9 § 44, p. 13 § 70, p. 118 § 503 & Steere & Madan 1894).",
-  sourceCitation: "Rev. W. E. Taylor, African Aphorisms (1891, p. 9 #44 & p. 13 #70) & Steere & Madan, A Handbook of the Swahili Language (1894)",
-});
-
-// 3. Replace swahili-22 and swahili-23 with the exact verbatim 20 Mifano (#1–#20) from Steere (1870, pp. 191–195 & Notes 62–66, p. 499)
-_fixSteere1870Proverb("swahili-22", {
-  indigenous: "(1) Haraka, haraka, haina baraka. (2) Ulimi hauna mfupa. (3) Mvunda nti mwana nti, mgeni mzo mpima. (4) Kipya kinyemi, kigawa kionda. (5) Mbio za sakafuni hwisha ukingoni. (6) Kazi mbi si mtezo mwema? (7) Si taajabuni, waana Adamu, mambo yalio duniani. (8) Kilimia kikizama kwa jua, huzuka kwa mvua; kikizama kwa mvua, huzuka kwa jua. (9) Sahani iliofunikwa, kilichomo kimestirika. (10) Hakuna msiba asiokuwa mwenziwe.",
-  literalTranslation: "(1) Hurrying, hurrying, has no blessing. (2) The tongue has no bone (Note 62, p. 499: 'Therefore there is nothing to check a man's talk or to make him tell the truth'). (3) The destroyer of the country is a child of the country; a stranger does not weigh two hundred-weight. (4) A new thing is good, though it be a sore place (Note 63, p. 499: 'A sore is an amusement the first day, and only a trouble when its novelty is over'). (5) Running on a roof ends at the edge of it (Note 64, p. 499: 'The stone houses have always flat stone roofs, generally without parapets'). (6) Is not poor work good play? (Preface p. x: 'Is it not better worth while to quilt a scull cap however badly, than to go to a dance however good!'). (7) Wonder not, children of men, at the things that are in this world. (8) If the Pleiades (Kilimia) set in sun, they rise in rain; if they set in rain, they rise in sun (Corrigenda p. 504: 'P. 193, No. 8, for rise read set, and vice versâ'). (9) If a dish is covered, what is in it is hidden. (10) There is no grief without a companion.",
-  meaning: "First ten of the twenty verbatim Swahili proverbs (Mifano #1–#10) recorded from Hamisi wa Kayi by Bishop Edward Steere in 'Swahili Tales, as Told by Natives of Zanzibar' (1870, pp. 191–193, Notes 62–64 p. 499, and Corrigenda p. 504).",
-  englishEquivalent: "Haste makes waste; misfortunes never come singly.",
-  theme: "patience",
-  sourceCitation: "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 191–193, Mifano #1–#10, Notes 62–64 p. 499 & Corrigenda p. 504)",
-});
-
-_fixSteere1870Proverb("swahili-23", {
-  indigenous: "(11) Angurumapo simba, mteza nani? (12) Saburi ni ufunguo wa faraja. (13) Abadi, abadi, ukambaa watinda jiwe. (14) Ndovu wawili wakisongana ziumiazo nyika. (15) Udongo upate uli maji. (16) Mlevi wa mvinyo hulevuka, mlevi wa mali halevuki. (17) Kikulacho kinguoni mwako. (18) Maombolezo katika kilio si mwema. (19) Usubi aweza kupenya mote. (20) Ametumbukia kisimani.",
-  literalTranslation: "(11) Who will dance to a lion's roaring? (12) Patience is the key of consolation. (13) Continually, continually, the cord cuts the stone (Note 65, p. 499: 'Referring especially to the cord by which the calabashes are let down into the wells'). (14) When two elephants struggle it is the grass that suffers. (15) Use your clay while it is wet. (16) He that is drunk with wine gets sober, he that is drunk with wealth does not. (17) What bites is in your own clothes. (18) Loud lamentations are not becoming in mourning. (19) A sand-fly (usubi) can get through anything. (20) He has fallen into a well (Note 66, p. 499: 'This is used of any calamity, as we say, he has got into a scrape').",
-  meaning: "Second ten of the twenty verbatim Swahili proverbs (Mifano #11–#20) recorded from Hamisi wa Kayi by Bishop Edward Steere in 'Swahili Tales, as Told by Natives of Zanzibar' (1870, pp. 192–195 & Notes 65–66, p. 499).",
-  englishEquivalent: "Constant dropping wears away a stone; strike while the iron is hot; when elephants fight, the grass suffers.",
-  theme: "hard-work",
-  sourceCitation: "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 192–195, Mifano #11–#20 & Notes 65–66, p. 499)",
-});
-
-// 4. Enrich swahili-24, swahili-25, swahili-26 with complete narrative proverbs, Mombasa Preface poems, and Liongo/Gungu/Ayubu stanzas
-_fixSteere1870Proverb("swahili-24", {
-  indigenous: "Atendaye mema humtendea nafusi yake (p. 22) • Killa kitu kwa kiasi chakwe (p. 40) • Mume ni kazi, mke ni nguo (p. 48) • Nzi kufa tuini si hasara (p. 90 & Note 43, p. 497: Nzi kufa kidondani si hasara) • Bilisi wa mtu ni mtu (p. 114) • Mtenda mema cha nina (p. 120 & Note 45, p. 497) • Katika ulimwengu asio mengi ana machache, na mtu wazimu wake ndio akili yake; Shauri mbaraka tu (p. 122) • Mngwana akitendwa jema kulipa jema (p. 126) • Ukuu si pembe kama mtu ataota, ukuu shuti astahamili, na huyu mkuu ni jaa, killa mwenyi taka yake humwaga (p. 128) • Mpanda ngazi hushuka (p. 244) • Ulimwenguni ni mawili, ni kuwa mzima na kufa (p. 274).",
-  literalTranslation: "He who does good does it to himself (p. 22) • Everything in its proper measure (p. 40) • A husband is work, a wife is clothes (p. 48) • For a fly to die in coconut cream (or on a sore) is no loss (p. 90 & Note 43, p. 497) • The tempter of a person is a person (p. 114) • The doer of good is mother's food (p. 120 & Note 45, p. 497) • In the world he who has not much has little, and a man's madness is his understanding; Counsel is a blessing (p. 122) • When a gentleman has good done to him he repays good (p. 126) • Greatness is not a horn that a man will sprout; greatness must be patient, and a great man is the dust-heap (jaa) where everyone with rubbish throws it (p. 128) • He who climbs a stair comes down again (p. 244) • In the world there are two things: living and dying (p. 274).",
-  meaning: "All eleven narrative proverbs embedded in 'Sultani Darai' (pp. 22, 40, 48, 90, 114, 120, 122, 126, 128 & Notes 43, 45, p. 497) and 'Sultani Majinuni' (pp. 244, 274) in Bishop Edward Steere's 'Swahili Tales' (1870).",
-  englishEquivalent: "Moderation in all things; noblesse oblige; heavy lies the head that wears a crown.",
-  theme: "wisdom",
-  sourceCitation: "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. 22, 40, 48, 90, 114, 120, 122, 126, 128, 244, 274, 497)",
-});
-
-_fixSteere1870Proverb("swahili-25", {
-  indigenous: "Wakilindini si watu, ni punda wa milia... • Kijiti chema cha mnga / Chaota kumbi na kumbi, / Mtu mjinga mjinga / Aweza kutinda jombi (Preface p. xii) • Asiyojua maana, haambiwi maana; Akataaye witwa hakataa aitiwalo (pp. 296, 304) • Nawaza yale mawe mawili, moja kubwa na moja dogo, lile dogo halendi juu, wala lile kubwa halendi tini; Siwezi kuja kukula upande wa mbeleni, mato yaona haya (Kimvita, pp. 326, 328) • Niponye la jua, nitakuponya la mvua (pp. 392, 402) • Mwanadamu hana fadhili (pp. 424–426) • Kucheka na kununa ni ipi ilio njema? (p. 436).",
-  literalTranslation: "The Wakilindini are not men, they are striped zebras... • A good stick of the acacia tree grows where the gardens join; a very foolish man can cut down a great tree (Preface p. xii) • He who does not know the meaning will not be told the meaning; he who refuses to be called refuses what he is called for ('Uza Ghali', pp. 296, 304) • I am thinking about those two stones, one big [sky] and one little [earth]: the little one does not go up, nor does the big one go down; I cannot come eating you in front, the eyes feel shame (Kimvita tale 'Kititi, na Fisi, na Simba', pp. 326, 328) • Save me from the sun, and I will save you from the rain ('Ao Rathi, Ao Mali', pp. 392, 402) • A child of Adam has no gratitude ('Nyani, na Simba, na Nyoka', pp. 424–426) • Grinning and snarling, which is better? ('Simba na Kulungu', p. 436).",
-  meaning: "Recorded verbatim by Bishop Edward Steere in 'Swahili Tales' (1870, pp. xii, 296, 304, 326–328, 392, 402, 424–426, 436): combines the Mombasa secular verses from the Preface, the maxims of 'Uza Ghali', Kathi Mohammed bin Abd en Nuri's Kimvita tale 'Kititi, na Fisi, na Simba', and Munyi Khatibu's Mtang'ata fables 'Nyani, na Simba, na Nyoka' and 'Simba na Kulungu'.",
-  englishEquivalent: "One good turn deserves another; ingratitude is the way of the world.",
-  theme: "family",
-  sourceCitation: "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. xii, 296, 304, 326–328, 392, 402, 424–426, 436)",
-});
-
-_fixSteere1870Proverb("swahili-26", {
-  indigenous: "Kushindwa na mashujaa si unyonge (p. xiii) • Ewe kijakazi nakutuma, ukatumike, / Kamwambie mama, mwana muinga amelimuka, / Afanye mkate, katikati tupa aike, / Nikeze pingu na minyororo ikinemuka (Hadithi ya Liongo, p. 442) • Ni upi mchayi kicho chakwe kimokoao? Na mjasiri umurie upunguwao? ... Bolewe mchayi mcha kufa hapati heshima (Mashairi ya Liongo, pp. 464–465) • Si simba mikia wameao vuzi na singa; simba mashujaa wasahili ngozi na nyama (pp. 468–469) • Mama, nipeeke, haoe kwa mato mahaba ya bwana! (Utumbuizo wa Gungu, pp. 478–483).",
-  literalTranslation: "To be beaten by heroes is no mean thing (p. xiii) • O slave-girl (Kijakazi Saa), I send you to be sent: go tell my mother her simple son has grown wise; let her make a loaf and put a file (tupa) in the middle, that I may cut the fetters (pingu) and the chains (minyororo) may snap (p. 442) • Who that fears has been saved by his fear? Or what bold man's life has been shortened by courage? ... Woe to the coward, he who fears death gets no honour (pp. 464–465) • They are not lions with tails and hair growing on neck and back; true lions are heroes who care not for skins and flesh (pp. 468–469) • Mother, take me that I may behold with my eyes the love of my lord! (Utumbuizo wa Gungu, pp. 478–483).",
-  meaning: "Heroic prison song and classical Kingozi/Kiamu 5-line takhmisi stanzas from 'Hadithi ya Liongo' (pp. 439–453) and 'Mashairi ya Liongo' (composed by Sheikh Abdallah bin Ali bin Nasir Muyuweni concerning Liongo Fumo of Shanga/Ozi on the Kenyan coast, pp. 455–471), alongside 'Utumbuizo wa Gungu' ('Gungu la Kufunda' & 'Gungu la Kukwaa', pp. 473–483) and 'Mwanzo wa Utenzi wa Ayubu' (pp. 485–487) in Bishop Edward Steere's 'Swahili Tales' (1870).",
-  englishEquivalent: "Cowards die many times before their deaths; the valiant never taste of death but once.",
-  theme: "wisdom",
-  sourceCitation: "Bishop Edward Steere, Swahili Tales, as Told by Natives of Zanzibar (1870, pp. xiii, 439–487)",
-});
-
-// ── Complete Line-by-Line Verification of Proverbs, Bird Calls, Poetic Quatrains & Idioms in Bishop Edward Steere & A. C. Madan's "A Handbook of the Swahili Language, as Spoken at Zanzibar" (4th Ed., SPCK London, 1894, pp. i–xxii, 1–458) ──
-SWAHILI_PROVERBS.push(
+  },
   {
     "id": "steere-madan-1894-delay-krapf-p48",
     "languageId": "swahili",
@@ -6937,11 +6850,7 @@ SWAHILI_PROVERBS.push(
     "englishEquivalent": "Fine words butter no parsnips; long life and happiness to you.",
     "theme": "unity",
     "sourceCitation": "Bishop Edward Steere & A. C. Madan, A Handbook of the Swahili Language (4th Ed., SPCK London, 1894, Appendices II & IV, pp. 427–429, 443–453)"
-  }
-);
-
-// ── Complete Line-by-Line Proverbs, Maxims & Epistolary Sayings from Mrs. F. Burt & Rev. W. E. Taylor's "Swahili Grammar and Vocabulary" (SPCK London, 1910, pp. 1–252) ──
-SWAHILI_PROVERBS.push(
+  },
   {
     "id": "burt-1910-studies-proverbs-pp29-151",
     "languageId": "swahili",
@@ -6963,11 +6872,7 @@ SWAHILI_PROVERBS.push(
     "englishEquivalent": "A letter is half a meeting; grasping all does not hurt the hand.",
     "theme": "unity",
     "sourceCitation": "Mrs. F. Burt & Rev. W. E. Taylor, Swahili Grammar and Vocabulary (SPCK London, 1910, pp. 154–155, 191, 236)"
-  }
-);
-
-// ── Complete Line-by-Line Proverbs, Riddles & Maxims from A. C. Madan's "Swahili-English Dictionary" (Clarendon Press Oxford, 1903, Book pp. i–xix, 1–238, 442) ──
-SWAHILI_PROVERBS.push(
+  },
   {
     "id": "madan-1903-proverbs-a-to-g-pp9-86",
     "languageId": "swahili",
@@ -7000,11 +6905,7 @@ SWAHILI_PROVERBS.push(
     "englishEquivalent": "Knowledge is power; the shoemaker's children go barefoot; deeds, not words.",
     "theme": "unity",
     "sourceCitation": "A. C. Madan, M.A., Swahili-English Dictionary (Clarendon Press Oxford, 1903, Sections L–M, pp. 191–237)"
-  }
-);
-
-// ── Complete Line-by-Line Discourse & Literary Corpus Examples from Mohamed Mwamzandi's "The pragmatics of Swahili relative clauses" (Language Science Press, 2022, Ch. 13, pp. 227–246, DOI: 10.5281/zenodo.6393758) ──
-SWAHILI_PROVERBS.push(
+  },
   {
     "id": "mwamzandi-2022-examples-1-to-24-pp228-238",
     "languageId": "swahili",
@@ -7021,36 +6922,12 @@ SWAHILI_PROVERBS.push(
     "languageId": "swahili",
     "languageName": "Kiswahili",
     "indigenous": "(25a) Nyumba [a-li-yo-kaa Beneti]. (25b) I-li-kuwa ya Kiswahili kabisa, (25c) I-li-on-ek-an-a kuukuu (pp. 238–239) • (26) Adili a-li-vunja amri [a-li-yo-p-ew-a] (p. 239) • (27) Waandishi [wa-li-o-fuata] wa-me-ach-an-a na m-tindo huu (p. 240) • (28) [Waandamanaji wa-li-kaidi amri hiyo]₁ [na ku-wa-rush-i-a mawe polisi]₂ [amba-o wa-li-jibu mapigo]₃ [kwa ku-fyatua risasi za moto]₄ (p. 241) • (29) Bali Rehema a-li-po-nyanyua macho ku-m-tazama Bikiza [a-li-ye-leta taarifa ya kifo]... (p. 241) • (30) A-li-anza ku-safiri ili ku-epuka ghadhabu ya ndugu yake amba-ye a-li-u-kosa u-rithi huo (p. 242) • (31) A-li-ji-ona katika nyumba kubwa sana i-li-yo-kuwa n-zuri ajabu (p. 242) • (32) Katika hukumu i-li-yo-to-lew-a jana na Jaji Bernard Luand (p. 242).",
-    "literalTranslation": "(25a–c) The house which Beneti stayed. It was a typical Swahili house, it looked old (pp. 238–239) • (26) Adili broke the command he was given (p. 239) • (27) The writers who followed have abandoned this style (of writing) (p. 240) • (28) The demonstrators disobeyed the command and threw stones to the policemen who responded to the beatings (of stones) by shooting live bullets (p. 241) • (29) But when Rehema raised her eyes to look at Bikiza who brought the meassage of death... (p. 241) • (30) He started traveling to avoid the anger of his sibling who had missed the inheritance (p. 242) • (31) He found himself in a very big house that was surprisingly beautiful (p. 242) • (32) In a ruling that was given yesterday by Judge Bernard Luand (p. 242).",
+    "literalTranslation": "(25a–c) The house which Beneti stayed. It was a typical Swahili house, it looked old (pp. 238–239) • (26) Adili broke the command he was given (p. 239) • (27) The writers who followed have abandoned this style (of writing) (p. 240) • (28) The demonstrators disobeyed the command and threw stones to the policemen who responded to the beatings (of stones) by shooting live bullets (p. 241) • (29) But when Rehema raised her eyes to look at Bikiza who brought the message of death... (p. 241) • (30) He started traveling to avoid the anger of his sibling who had missed the inheritance (p. 242) • (31) He found himself in a very big house that was surprisingly beautiful (p. 242) • (32) In a ruling that was given yesterday by Judge Bernard Luand (p. 242).",
     "meaning": "Verbatim literary and newspaper discourse examples (25a–c)–(32) extracted from the 25-million-word Helsinki Corpus of Swahili 2.0 in Mohamed Mwamzandi (2022, Ch. 13, §4.3, pp. 238–242 & Table 2 p. 240), demonstrating how tensed RCs maintain topic continuity (continue transitions) while amba RCs signal topic shift transitions.",
     "englishEquivalent": "Discourse topic continuity and topic shift in Swahili prose.",
     "theme": "unity",
     "sourceCitation": "Mohamed Mwamzandi, 'The pragmatics of Swahili relative clauses', in Sibanda, Ngonyani, Choti & Biersteker (eds.), Descriptive and theoretical approaches to African linguistics (Berlin: Language Science Press, 2022, Ch. 13, pp. 238–242, Table 2 & Examples 25–32)"
-  }
-);
-
-// ── Complete Line-by-Line Aphorisms (Mafumbo Nos. 1–67), Enigmas/Tambo (Nos. 1–4), and Kitendawili (7 Ki-Jizirat + 23 Ki-Mvita) from Mervyn W. H. Beech's "Aids to the Study of Ki-Swahili: Four Studies Compiled and Annotated" (London: Kegan Paul, Trench, Trübner & Co., Ltd., [1918], Studies I–III, Book pp. 1–132 [PDF pp. 21–152]) ──
-const _existingBeech1918Entry = SWAHILI_PROVERBS.find(
-  (p) => p.id === "swahili-beech-1918-1"
-);
-if (_existingBeech1918Entry) {
-  Object.assign(_existingBeech1918Entry, {
-    languageName: "Swahili (Kiswahili — Ki-Jizirat & Ki-Mvita, Beech 1918)",
-    indigenous:
-      "(1) Mpiga la kuanza hunyamaziwa / Mpiga la pili huitwa akambiwa / Mpiga la tatu huonguliwa (Study III, p. 117) • (4) Wema hauozi (p. 117) • (13) Kuagiza kufikile (p. 119) • (14) Kuambiana kuko kusikilizana hapana (p. 119) • (58) Wa mbili havai moja: mja wa sitara hasumbuki (p. 125) • (59) Akutwekae ndiye akutuae (p. 125) • (61) Tissia mkononi bora kuliko kumi nenda, uje (p. 125) • (65) Kuinamako ndiko kuinukako (p. 125) • (66) Mtama ukimwaika huonekana punje (p. 125) • (67) Liharibikalo hufanywa (p. 126).",
-    literalTranslation:
-      "(1) He who strikes the first blow is passed over in silence; he who strikes the second is called and warned; he who strikes the third is punished (p. 117) • (4) Goodness does not rot (p. 117) • (13) Ordering is arriving (a commission is as good as going oneself, p. 119) • (14) Telling one another is there, listening to one another is not (p. 119) • (58) A person accustomed to two cloths does not wear one: a person of respectability is not troubled (p. 125) • (59) He who loads you up is he who unloads you (p. 125) • (61) Nine in the hand is better than ten 'go and come back' (p. 125) • (65) Where there is bowing down, there also is rising up (p. 125) • (66) When millet is spilled, the grains are seen (p. 125) • (67) That which is spoiled can be repaired (p. 126).",
-    meaning:
-      "Verbatim aphorisms (Mafumbo) in Ki-Jizirat (Pemba) and Ki-Mvita (Mombasa) with indigenous Swahili explanations recorded by Mervyn W. H. Beech in 'Aids to the Study of Ki-Swahili' (1918, Study III: Enigmas and Aphorisms with Explanations as Given by Wa-Swahili, pp. 117–126).",
-    englishEquivalent:
-      "A bird in the hand is worth two in the bush; a good deed never dies; what is broken can be mended.",
-    theme: "patience",
-    sourceCitation:
-      "Mervyn W. H. Beech, Aids to the Study of Ki-Swahili: Four Studies Compiled and Annotated (London: Kegan Paul, Trench, Trübner & Co., Ltd., 1918, Study III, pp. 117–126)",
-  });
-}
-
-SWAHILI_PROVERBS.push(
+  },
   {
     "id": "beech-1918-study3-mafumbo-1-to-20-pp117-120",
     "languageId": "swahili",
@@ -7105,10 +6982,7 @@ SWAHILI_PROVERBS.push(
     "englishEquivalent": "Complete Mombasa (Ki-Mvita) riddle canon in Beech (1918).",
     "theme": "patience",
     "sourceCitation": "Mervyn W. H. Beech, Aids to the Study of Ki-Swahili (London: Kegan Paul, 1918, Study III, Ki-Mvita Kitendawili Nos. 1–23, pp. 129–132)"
-  }
-);
-
-SWAHILI_PROVERBS.push(
+  },
   {
     "id": "payne-2016-ch14-ngonyani-ngowa-reversive-proverbs",
     "languageId": "swahili",
@@ -7130,31 +7004,27 @@ SWAHILI_PROVERBS.push(
     "englishEquivalent": "Shared laughter bridges diverse tongues and turns stereotypes into national camaraderie.",
     "theme": "unity",
     "sourceCitation": "Martha Michieka & Leonard Muaka, 'Humor in Kenyan comedy', in Diversity in African languages (Berlin: Language Science Press, 2016, Ch. 28, pp. 559–576, Ex. 1–16)"
+  },
+  {
+    "id": "swahili-clem-2019-pesetsky-gould-scott-nurse",
+    "languageId": "swahili",
+    "languageName": "Kiswahili (Clem, Jenks & Sande, eds., 2019, Chs. 23, 29 & 33)",
+    "indigenous": "N-dugu y-angu m-refu a-li-anguka vs. N-dugu m-refu w-angu a-li-anguka • N-dugu z-angu wa-refu wa-li-anguka (Pesetsky 2019, Ch. 29, pp. 555–570) • Kitabu amba-cho kila mwanafunzi a-li-(ki)-soma / Kitabu a-li-cho-(ki)-soma kila mwanafunzi (Gould & Scott 2019, Ch. 23, pp. 441–462, consultant David Mburu) • Northern Swahili (Mwiini, Bajuni/Tikuu, Siu, Pate, Amu) & Southern Somali Contact (Nurse 2019, Ch. 33, pp. 649–665).",
+    "literalTranslation": "My tall sibling fell (where immediately post-nominal possessive y-angu/z-angu takes Class 9/10 morphological agreement while m-refu/wa-refu and a-li-/wa-li- take Class 1/2 semantic animate agreement) • Kenyan Swahili relative clause scope and OM reconstruction • Northern Swahili and southern Somali contact along the Benadir and Tana–Juba coast.",
+    "meaning": "Documented in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics (Berlin: Language Science Press, 2019, Ch. 23 pp. 441–462, DOI: 10.5281/zenodo.3367173; Ch. 29 pp. 555–570, DOI: 10.5281/zenodo.3367185; Ch. 33 pp. 649–665, DOI: 10.5281/zenodo.3367193).",
+    "englishEquivalent": "Close kin keep their ancient bond even when the wider world shifts around them.",
+    "theme": "family",
+    "sourceCitation": "Isaac Gould & Tessa Scott (Ch. 23, pp. 441–462), Jonathan Pesetsky (Ch. 29, pp. 555–570) & Derek Nurse (Ch. 33, pp. 649–665), in Theory and description in African linguistics (2019)"
+  },
+  {
+    "id": "swahili-wold-schadeberg-kaikki-2026",
+    "languageId": "swahili",
+    "languageName": "Kiswahili (WOLD Swahili Loanword Database & Kaikki.org — Schadeberg & Ylönen, CC-BY-4.0 / CC-BY-SA-4.0)",
+    "indigenous": "Native Bantu vs. Indian Ocean Loanword Doublets (WOLD Vocabulary #1, https://wold.clld.org/vocabulary/1): nchi kavu (native) vs. dunia (< Arabic dunyā) & bara (< Arabic barr / Persian bar) • ziwa, mto, wangwa & maji (ya) kujaa na kupwa (native) vs. bahari (< Arabic baḥr), ghuba (< Indian Ocean Arabic ġubb/ġubba[t]) & rasi (< Arabic raˀs) • umeme, ngurumo & kimbunga (native) vs. radi (< Arabic raˁd) & tufani (< Arabic ṭūfān / Persian tūfān / Hindi-Urdu tofān / Cantonese tai fung) • mwanga (native) vs. nuru (< Arabic nūr) • mbuga (< Nyamwezi mbʊgá 'savanna').",
+    "literalTranslation": "Earth/mainland, sea/bay/cape, lightning/storm, light, and savanna across native East Coast Bantu roots and Indian Ocean Arabic, Persian, Hindi-Urdu, and interior Bantu loanwords.",
+    "meaning": "Documented across 1,815 Swahili meaning-word pairs in Thilo Schadeberg's World Loanword Database (WOLD, Max Planck Institute for Evolutionary Anthropology, https://wold.clld.org/vocabulary/1, CC-BY-4.0) and 20,625 Swahili word forms (including 34 proverbs and 44 idiomatic phrases) in Tatu Ylönen's Kaikki.org / Wiktextract English Wiktionary Dictionary (https://kaikki.org/dictionary/Swahili/index.html, CC-BY-SA-4.0).",
+    "englishEquivalent": "A maritime crossroads weaves the speech of many shores onto a steadfast Bantu foundation.",
+    "theme": "wisdom",
+    "sourceCitation": "Thilo Schadeberg, WOLD Swahili Vocabulary (https://wold.clld.org/vocabulary/1, CC-BY-4.0) & Tatu Ylönen, Kaikki.org Swahili Dictionary (https://kaikki.org/dictionary/Swahili/index.html, CC-BY-SA-4.0)"
   }
-);
-
-// ── Append Clem, Jenks & Sande (2019: Gould & Scott Ch. 23, Pesetsky Ch. 29 & Nurse Ch. 33) and Goldsmith & Mpiranya (2022) to SWAHILI_PROVERBS ──
-SWAHILI_PROVERBS.push({
-  "id": "swahili-clem-2019-pesetsky-gould-scott-nurse",
-  "languageId": "swahili",
-  "languageName": "Kiswahili (Clem, Jenks & Sande, eds., 2019, Chs. 23, 29 & 33)",
-  "indigenous": "N-dugu y-angu m-refu a-li-anguka vs. N-dugu m-refu w-angu a-li-anguka • N-dugu z-angu wa-refu wa-li-anguka (Pesetsky 2019, Ch. 29, pp. 555–570) • Kitabu amba-cho kila mwanafunzi a-li-(ki)-soma / Kitabu a-li-cho-(ki)-soma kila mwanafunzi (Gould & Scott 2019, Ch. 23, pp. 441–462, consultant David Mburu) • Northern Swahili (Mwiini, Bajuni/Tikuu, Siu, Pate, Amu) & Southern Somali Contact (Nurse 2019, Ch. 33, pp. 649–665).",
-  "literalTranslation": "My tall sibling fell (where immediately post-nominal possessive y-angu/z-angu takes Class 9/10 morphological agreement while m-refu/wa-refu and a-li-/wa-li- take Class 1/2 semantic animate agreement) • Kenyan Swahili relative clause scope and OM reconstruction • Northern Swahili and southern Somali contact along the Benadir and Tana–Juba coast.",
-  "meaning": "Documented in Emily Clem, Peter Jenks & Hannah Sande, eds., Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics (Berlin: Language Science Press, 2019, Ch. 23 pp. 441–462, DOI: 10.5281/zenodo.3367173; Ch. 29 pp. 555–570, DOI: 10.5281/zenodo.3367185; Ch. 33 pp. 649–665, DOI: 10.5281/zenodo.3367193).",
-  "englishEquivalent": "Close kin keep their ancient bond even when the wider world shifts around them.",
-  "theme": "family",
-  "sourceCitation": "Isaac Gould & Tessa Scott (Ch. 23, pp. 441–462), Jonathan Pesetsky (Ch. 29, pp. 555–570) & Derek Nurse (Ch. 33, pp. 649–665), in Theory and description in African linguistics (2019)"
-});
-
-// ── Append WOLD Swahili Loanword Typology (Thilo Schadeberg, CC-BY-4.0) & Kaikki.org Swahili Dictionary (Tatu Ylönen, CC-BY-SA-4.0) to SWAHILI_PROVERBS ──
-SWAHILI_PROVERBS.push({
-  "id": "swahili-wold-schadeberg-kaikki-2026",
-  "languageId": "swahili",
-  "languageName": "Kiswahili (WOLD Swahili Loanword Database & Kaikki.org — Schadeberg & Ylönen, CC-BY-4.0 / CC-BY-SA-4.0)",
-  "indigenous": "Native Bantu vs. Indian Ocean Loanword Doublets (WOLD Vocabulary #1, https://wold.clld.org/vocabulary/1): nchi kavu (native) vs. dunia (< Arabic dunyā) & bara (< Arabic barr / Persian bar) • ziwa, mto, wangwa & maji (ya) kujaa na kupwa (native) vs. bahari (< Arabic baḥr), ghuba (< Indian Ocean Arabic ġubb/ġubba[t]) & rasi (< Arabic raˀs) • umeme, ngurumo & kimbunga (native) vs. radi (< Arabic raˁd) & tufani (< Arabic ṭūfān / Persian tūfān / Hindi-Urdu tofān / Cantonese tai fung) • mwanga (native) vs. nuru (< Arabic nūr) • mbuga (< Nyamwezi mbʊgá 'savanna').",
-  "literalTranslation": "Earth/mainland, sea/bay/cape, lightning/storm, light, and savanna across native East Coast Bantu roots and Indian Ocean Arabic, Persian, Hindi-Urdu, and interior Bantu loanwords.",
-  "meaning": "Documented across 1,815 Swahili meaning-word pairs in Thilo Schadeberg's World Loanword Database (WOLD, Max Planck Institute for Evolutionary Anthropology, https://wold.clld.org/vocabulary/1, CC-BY-4.0) and 20,625 Swahili word forms (including 34 proverbs and 44 idiomatic phrases) in Tatu Ylönen's Kaikki.org / Wiktextract English Wiktionary Dictionary (https://kaikki.org/dictionary/Swahili/index.html, CC-BY-SA-4.0).",
-  "englishEquivalent": "A maritime crossroads weaves the speech of many shores onto a steadfast Bantu foundation.",
-  "theme": "wisdom",
-  "sourceCitation": "Thilo Schadeberg, WOLD Swahili Vocabulary (https://wold.clld.org/vocabulary/1, CC-BY-4.0) & Tatu Ylönen, Kaikki.org Swahili Dictionary (https://kaikki.org/dictionary/Swahili/index.html, CC-BY-SA-4.0)"
-});
+];

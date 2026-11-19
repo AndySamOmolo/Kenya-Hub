@@ -118,7 +118,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "pogh"
           },
           {
-            "target": "maʻ (mat",
+            "target": "maʻ (mat)",
             "source": "Fire",
             "pronunciation": "ma"
           },
@@ -140,7 +140,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "teta (pl. toka)",
             "source": "Cow",
-            "pronunciation": "tainy"
+            "pronunciation": "te-ta (pl. to-ka)"
           },
           {
             "target": "cheghwa (verb: lu)",
@@ -155,29 +155,29 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "musong",
             "source": "Millet",
-            "pronunciation": "pagh"
+            "pronunciation": "mu-song"
           },
           {
             "target": "matai",
             "source": "Eleusine",
-            "pronunciation": "pagh"
+            "pronunciation": "ma-tai"
           },
           {
             "target": "okoñgô",
             "source": "One (1)",
-            "pronunciation": "o-konggo oghiengg so-mok anggwan mut",
+            "pronunciation": "o-ko-nggo",
             "hint": "Beech (1911, pp. 66–67) cardinals 1–5"
           },
           {
             "target": "oghieñg",
             "source": "Two (2)",
-            "pronunciation": "o-konggo oghiengg so-mok anggwan mut",
+            "pronunciation": "o-ghi-engg",
             "hint": "Beech (1911, pp. 66–67) cardinals 1–5"
           },
           {
             "target": "somok",
             "source": "Three (3)",
-            "pronunciation": "o-konggo oghiengg so-mok anggwan mut",
+            "pronunciation": "so-mok",
             "hint": "Beech (1911, pp. 66–67) cardinals 1–5"
           },
           {
@@ -212,7 +212,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-2",
     "unitNumber": 2,
     "title": "Family, Kinship, Clans & Social Organization",
-    "description": "Master family, kinship, clans & social organization in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master family, kinship, clans & social organization in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Users",
     "color": "#7C3AED",
     "skills": [
@@ -526,7 +526,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-3",
     "unitNumber": 3,
     "title": "Numbers, Counting, Currency & Measures",
-    "description": "Master numbers, counting, currency & measures in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master numbers, counting, currency & measures in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Scale",
     "color": "#7C3AED",
     "skills": [
@@ -898,7 +898,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-4",
     "unitNumber": 4,
     "title": "Food, Cuisine, Crops & Livestock Husbandry",
-    "description": "Master food, cuisine, crops & livestock husbandry in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master food, cuisine, crops & livestock husbandry in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Tractor",
     "color": "#7C3AED",
     "skills": [
@@ -1050,9 +1050,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
           {
-            "target": "wild, sasur-wa",
+            "target": "sasur-wa (pl. sasôr)",
             "source": "Banana",
-            "pronunciation": "wild sasur-wa",
+            "pronunciation": "sa-sur-wa",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
@@ -1068,9 +1068,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
-            "target": "mwai'-pa-cheʻ, lit. fat of milk",
+            "target": "mwai'-pa-cheʻ",
             "source": "Butter",
-            "pronunciation": "mwai'-pa-che' lit fat of milk",
+            "pronunciation": "mwai-pa-che",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
@@ -1119,7 +1119,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"wild, sasur-wa, pl. sasôr\" in Pokot?",
+            "prompt": "What is the English meaning of \"sasur-wa (pl. sasôr)\" in Pokot?",
             "correctAnswer": "Banana",
             "options": [
               "Bitter",
@@ -1151,8 +1151,8 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "ñgwan",
             "options": [
               "Rir-ei oyu omisioʻ?",
-              "wild",
-              "Vide under Cook",
+              "sasur-wa",
+              "ki-war",
               "ñgwan"
             ],
             "hint": "Starts with \"ñg…\" (5 letters)",
@@ -1163,15 +1163,15 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Boil ( trans. )\" in Pokot?",
-            "correctAnswer": "Vide under Cook",
+            "prompt": "How do you say \"To boil (meat or water)\" in Pokot?",
+            "correctAnswer": "ki-war",
             "options": [
               "Rir-ei oyu omisioʻ?",
-              "Vide under Cook",
-              "wild",
+              "ki-war",
+              "sasur-wa",
               "ñgwan"
             ],
-            "hint": "Starts with \"Vi…\" (15 letters)"
+            "hint": "Starts with \"ki…\" (6 letters)"
           },
           {
             "type": "match_pairs",
@@ -1183,7 +1183,7 @@ export const POKOT_UNITS: CourseUnit[] = [
                 "right": "When will food be ready?"
               },
               {
-                "left": "wild, sasur-wa, pl. sasôr",
+                "left": "sasur-wa (pl. sasôr)",
                 "right": "Banana"
               },
               {
@@ -1191,8 +1191,8 @@ export const POKOT_UNITS: CourseUnit[] = [
                 "right": "Bitter ( adj. )"
               },
               {
-                "left": "Vide under Cook",
-                "right": "Boil ( trans. )"
+                "left": "ki-war / ke-ip",
+                "right": "To boil (meat or water)"
               }
             ]
           },
@@ -1202,13 +1202,13 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "mwai'-pa-cheʻ",
             "options": [
               "Rir-ei oyu omisioʻ?",
-              "wild",
+              "sasur-wa",
               "mwai'-pa-cheʻ",
               "ñgwan"
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
             "acceptedAnswers": [
-              "mwai'-pa-cheʻ, lit. fat of milk",
+              "mwai'-pa-cheʻ",
               "mwai'-pa-cheʻ"
             ]
           }
@@ -1220,7 +1220,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-5",
     "unitNumber": 5,
     "title": "Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master nature, landscape, flora & east african wildlife in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "PawPrint",
     "color": "#7C3AED",
     "skills": [
@@ -1547,7 +1547,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-6",
     "unitNumber": 6,
     "title": "The Human Body, Health, Medicine & Safety",
-    "description": "Master the human body, health, medicine & safety in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master the human body, health, medicine & safety in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "User",
     "color": "#7C3AED",
     "skills": [
@@ -1560,25 +1560,25 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
-            "target": "koːŋ (kong'",
+            "target": "koːŋ (kong', pl. konyen)",
             "source": "Eye",
             "pronunciation": "kong",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
           {
-            "target": "yiːt (yit",
+            "target": "yiːt (yit, pl. yitwen)",
             "source": "Ear",
             "pronunciation": "yit",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
           {
-            "target": "sa̱r̃ (sar",
+            "target": "sa̱r̃ (sar, pl. sarin)",
             "source": "Nose",
             "pronunciation": "sar",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
           {
-            "target": "ke̱ːla̱t (kelat",
+            "target": "ke̱ːla̱t (kelat, pl. kelek)",
             "source": "Tooth",
             "pronunciation": "ke-lat",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
@@ -1590,7 +1590,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
           },
           {
-            "target": "ku̱ːt (kut",
+            "target": "ku̱ːt (kut, pl. kutwek)",
             "source": "Mouth",
             "pronunciation": "kut",
             "hint": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979)"
@@ -1602,13 +1602,13 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech (1911) & van Otterloo (1979)"
           },
           {
-            "target": "kaːwaʔ (kawa",
+            "target": "kaːwaʔ (kawa, pl. kawok)",
             "source": "Bone",
             "pronunciation": "ka-waʔ",
             "hint": "Beech (1911) & van Otterloo (1979)"
           },
           {
-            "target": "met (metit",
+            "target": "met (metit, pl. metowek)",
             "source": "Head",
             "pronunciation": "met",
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
@@ -1733,7 +1733,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
-            "target": "egh (eghit",
+            "target": "egh (eghit, pl. eghin)",
             "source": "Hand / Arm",
             "pronunciation": "egh",
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
@@ -1921,7 +1921,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-7",
     "unitNumber": 7,
     "title": "Core Verbs, Tenses, Negation & Verbal Extensions",
-    "description": "Master core verbs, tenses, negation & verbal extensions in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master core verbs, tenses, negation & verbal extensions in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "BookOpen",
     "color": "#7C3AED",
     "skills": [
@@ -2063,9 +2063,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan nilotic corpus"
           },
           {
-            "target": "kesow (nget)",
+            "target": "kenget (nget)",
             "source": "To know",
-            "pronunciation": "ke-sow",
+            "pronunciation": "ke-nget",
             "hint": "Verified comparative entry across Kenyan nilotic corpus"
           },
           {
@@ -2108,7 +2108,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "source": "To see — To hear."
           },
           {
-            "target": "kesow — kecham",
+            "target": "kenget — kecham",
             "source": "To know — To love."
           }
         ],
@@ -2137,7 +2137,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "translate_to_english",
-            "prompt": "Translate to English: \"kesow\"",
+            "prompt": "Translate to English: \"kenget\"",
             "correctAnswer": "To know",
             "acceptedAnswers": [
               "To know",
@@ -2159,7 +2159,7 @@ export const POKOT_UNITS: CourseUnit[] = [
                 "right": "To hear"
               },
               {
-                "left": "kesow",
+                "left": "kenget",
                 "right": "To know"
               },
               {
@@ -2180,7 +2180,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-8",
     "unitNumber": 8,
     "title": "Time, Indigenous Calendar, Seasons & Navigation",
-    "description": "Master time, indigenous calendar, seasons & navigation in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master time, indigenous calendar, seasons & navigation in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Compass",
     "color": "#7C3AED",
     "skills": [
@@ -2193,9 +2193,9 @@ export const POKOT_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
-            "target": "yĕ",
+            "target": "yĕ (kīleʻ)",
             "source": "Now",
-            "pronunciation": "ye intro-du-cing a fresh pa-ragraph ki-le'"
+            "pronunciation": "ye / ki-le"
           },
           {
             "target": "asis",
@@ -2225,10 +2225,10 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "asis-ei / asis-yetei / asis-ye (now: yē)",
             "source": "Today",
-            "pronunciation": "ah-chehk"
+            "pronunciation": "a-sis-ei / a-sis-ye"
           },
           {
-            "target": "takwagha (= before day-break), kôrun; dawn, kiwasan",
+            "target": "takwagha / kôrun / kiwasan",
             "source": "Early",
             "pronunciation": "takwagha"
           },
@@ -2240,7 +2240,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "yĕ. Introducing a fresh paragraph, kīleʻ — asis, pl. ōsis",
+            "target": "yĕ (kīleʻ) — asis, pl. ōsis",
             "source": "Now — Day."
           },
           {
@@ -2251,7 +2251,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"yĕ. Introducing a fresh paragraph, kīleʻ\" mean in English?",
+            "prompt": "What does \"yĕ (kīleʻ)\" mean in English?",
             "correctAnswer": "Now",
             "options": [
               "Now",
@@ -2287,7 +2287,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "yĕ. Introducing a fresh paragraph, kīleʻ",
+                "left": "yĕ (kīleʻ)",
                 "right": "Now"
               },
               {
@@ -2334,9 +2334,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "ogha"
           },
           {
-            "target": "again / again, ñgat: ñgat-ñgat",
+            "target": "ñgat / ñgat-ñgat",
             "source": "Again",
-            "pronunciation": "a-gain and a-gain nggat nggat-nggat"
+            "pronunciation": "nggat / nggat-nggat"
           },
           {
             "target": "ñgat",
@@ -2344,9 +2344,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "ngat"
           },
           {
-            "target": "suffix -yăʻ; o-wet-an (-ei)-yăʻ, I will come afterwards",
+            "target": "-yăʻ (o-wet-an-yăʻ)",
             "source": "After",
-            "pronunciation": "suffix -ya"
+            "pronunciation": "ya / o-wet-an-ya"
           },
           {
             "target": "peñgat",
@@ -2370,7 +2370,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "source": "Often — Never."
           },
           {
-            "target": "ŏghaʻ — again and again, ñgat: ñgat-ñgat",
+            "target": "ŏghaʻ — ñgat / ñgat-ñgat",
             "source": "Night — Again."
           }
         ],
@@ -2425,7 +2425,7 @@ export const POKOT_UNITS: CourseUnit[] = [
                 "right": "Night"
               },
               {
-                "left": "again and again, ñgat: ñgat-ñgat",
+                "left": "ñgat / ñgat-ñgat",
                 "right": "Again"
               },
               {
@@ -2442,7 +2442,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-9",
     "unitNumber": 9,
     "title": "Conversational Phrases, Idioms & Daily Dialogue",
-    "description": "Master conversational phrases, idioms & daily dialogue in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master conversational phrases, idioms & daily dialogue in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "MessageCircle",
     "color": "#7C3AED",
     "skills": [
@@ -2490,9 +2490,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "mis"
           },
           {
-            "target": "kō-rôt-on! Ans. i-rôt-enyi!",
+            "target": "Kō-rôt-on! — I-rôt-enyi!",
             "source": "Goodbye!",
-            "pronunciation": "ko-rot-on ans i-rot-enyi"
+            "pronunciation": "ko-rot-on / i-rot-enyi"
           },
           {
             "target": "Sĕra! / Sĕre! (verb: o-soiyen-an) / Kanyul / Kongoi",
@@ -2500,7 +2500,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "sera"
           },
           {
-            "target": "r. takwes, pr. o-tokwes-an, -ei, p.p. ka-takwes-an",
+            "target": "takwes (o-tokwes-an, p.p. ka-takwes-an)",
             "source": "To greet",
             "pronunciation": "takwes"
           }
@@ -2638,7 +2638,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Beech 1911 & Johnston 1902 Suk"
           },
           {
-            "target": "r. soiyen, pr. o-soiyen-an, p.p. kô-soiyen-an",
+            "target": "soiyen (o-soiyen-an, p.p. kô-soiyen-an)",
             "source": "To thank",
             "pronunciation": "soi-yen"
           }
@@ -2721,7 +2721,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-10",
     "unitNumber": 10,
     "title": "Classical Proverbs, Riddles & Ethnographic Heritage",
-    "description": "Master classical proverbs, riddles & ethnographic heritage in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon.",
+    "description": "Master classical proverbs, riddles & ethnographic heritage in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "Globe",
     "color": "#7C3AED",
     "skills": [
@@ -2747,23 +2747,23 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon.",
-            "source": "Riddle (Tiangoi! — Tia!): What is the unstable thing (which is strong)",
+            "source": "Riddle (Tiangoi! — Tia!): What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain (Sirim-nyon).",
             "pronunciation": "tiangoi-tia-nyelnyel-ma-ke-lany"
           },
           {
             "target": "Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
-            "source": "Riddle: When may I be said to be washing myself in a cup made of a goat’s horn?",
+            "source": "Riddle: When may I be said to be washing myself in a cup made of a goat’s horn? — Answer: On an ant-hill (Tŭl).",
             "pronunciation": "tiangoi-tia-o-wund-oi-a'-sogho"
           },
           {
-            "target": "Tiangoi!",
+            "target": "Tiangoi! — Tia! Rel-e-chu lopai, pirir kirokit. — Kelat ngô ñgaliep.",
             "source": "Riddle: White are all my cows, red is the bull. — Answer: The teeth and the tongue",
             "pronunciation": "tiangoi",
             "hint": "Pastoral Pökoot riddle recorded verbatim by Mervyn W. H. Beech (1911, p. 44, Riddle #3)."
           },
           {
-            "target": "Tiangoi! (Riddle #4)",
-            "source": "Riddle: I threw away a chain and it went far into the open plain. — Answer",
+            "target": "Tiangoi! — Tia! K-o-wir-ta sirim-nyon kô-wô opel. — Ôr.",
+            "source": "Riddle: I threw away a chain and it went far into the open plain. — Answer: A road (Ôr).",
             "pronunciation": "tiangoi"
           },
           {
@@ -2774,7 +2774,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Tiangoi! — Tia! Ki-meriensi-oʻ. — Nekergh-is.",
-            "source": "Riddle: They stood in a threatening attitude. — Answer: The three cooking-pot",
+            "source": "Riddle: They stood in a threatening attitude. — Answer: The three cooking-pot stones (Nekergh-is).",
             "pronunciation": "tiangoi-tia-ki-meriensi-o-nekergh-is"
           },
           {
@@ -2791,7 +2791,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Tiangoi! — Tia! Nyelnyel ma-ke-lany. — Sirim-nyon. — Tiangoi! — Tia! O-wund-oi-a' soghoʻ. — Tŭl.",
-            "source": "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain. — Riddle: When may I be said to be washing myself in a cup made."
+            "source": "Riddle: What is the unstable thing so-it-may-not-be-climbed? — Answer: A chain. — Riddle: When may I be said to be washing myself in a cup made of a goat's horn? — Answer: On an ant-hill."
           }
         ],
         "authoredExercises": [
@@ -3217,7 +3217,7 @@ export const POKOT_UNITS: CourseUnit[] = [
               "siñgir",
               "mô",
               "wu",
-              "igh-isioʻ ut)"
+              "igh-isioʻ"
             ],
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)",
             "acceptedAnswers": [
@@ -3263,9 +3263,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           },
           {
-            "target": "yamat coll",
+            "target": "yamat (coll.)",
             "source": "Wind",
-            "pronunciation": "ya-mat coll",
+            "pronunciation": "ya-mat",
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           },
           {
@@ -3324,7 +3324,7 @@ export const POKOT_UNITS: CourseUnit[] = [
                 "right": "Windpipe"
               },
               {
-                "left": "yamat coll",
+                "left": "yamat (coll.)",
                 "right": "Wind"
               }
             ]
@@ -3373,7 +3373,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           },
           {
-            "target": "oyu; ole with verb",
+            "target": "oyu / ole",
             "source": "When",
             "pronunciation": "oyu",
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
@@ -3397,7 +3397,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
           },
           {
-            "target": "ôr (pl. ôr-ten (vide Road))",
+            "target": "ôr (pl. ôr-ten)",
             "source": "Way",
             "pronunciation": "or",
             "hint": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain)"
@@ -3434,7 +3434,7 @@ export const POKOT_UNITS: CourseUnit[] = [
                 "right": "White"
               },
               {
-                "left": "oyu; ole with verb",
+                "left": "oyu / ole",
                 "right": "When"
               }
             ]
@@ -3462,7 +3462,7 @@ export const POKOT_UNITS: CourseUnit[] = [
   {
     "id": "pokot-unit-13",
     "unitNumber": 13,
-    "title": "— Salutations, Planting Hymn, 18 Tiangoi! Riddles, 55 Phrases",
+    "title": "Beech (1911): Salutations, Planting Hymn, 18 Tiangoi! Riddles & 55 Phrases",
     "description": "Master the greetings (Tokwes! / Chamke! / Korôton!), the Planting Hymn to Torôrut, the Potters' Chant, all 18 Tiangoi! riddles, 55 idiomatic phrases, and the 2 interlinear Suk stories from Mervyn W. H. Beech's 1911 monograph.",
     "icon": "BookOpen",
     "color": "#7C3AED",
@@ -3505,7 +3505,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "tiangoi-tia-donguch"
           },
           {
-            "target": "Rel-e-chu lopai / pirir kirokit → Kelat ngô ñgaliep",
+            "target": "Rel-e-'ti'-chu lopai, pirir kirokit → Kelat ngô ñgaliep",
             "source": "All my cows are white, the bull is red → Teeth and tongue",
             "pronunciation": "rel-e'-ti'-chu-lopai"
           },
@@ -3543,7 +3543,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Tokwes! — Eia! Chamke! Ki-lend-e-ne kainat-nyeñgmwunyi?",
-            "source": "Hail! — Yes! Health to thee! What is your name? ."
+            "source": "Hail! — Yes! Health to thee! What is your name?"
           }
         ]
       },
@@ -3620,9 +3620,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "mis"
           },
           {
-            "target": "kō-rôt-on! Ans. i-rôt-enyi!",
+            "target": "Kō-rôt-on! — I-rôt-enyi!",
             "source": "Goodbye!",
-            "pronunciation": "ko-rot-on ans i-rot-enyi"
+            "pronunciation": "ko-rot-on / i-rot-enyi"
           },
           {
             "target": "Sĕra!",
@@ -3667,12 +3667,12 @@ export const POKOT_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "r. rur, pr. o-rur-an, -ei, p.p. kô-rur-an",
-            "source": "Ripe, to be."
+            "target": "Kô-rur-an matai eng' mbar.",
+            "source": "The finger millet has ripened in the field."
           },
           {
-            "target": "pogh pa maʻ",
-            "source": "Hot water."
+            "target": "Kô-na' pogh pa maʻ!",
+            "source": "Give me hot water!"
           }
         ]
       },
@@ -3724,9 +3724,9 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "ka-re-ran"
           },
           {
-            "target": "all three, &c",
-            "source": "Both",
-            "pronunciation": "al three c"
+            "target": "tukul (oghieñg tukul)",
+            "source": "Both / All together",
+            "pronunciation": "tu-kul"
           },
           {
             "target": "sä́mä́k",
@@ -3734,7 +3734,24 @@ export const POKOT_UNITS: CourseUnit[] = [
             "pronunciation": "sa-mak"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Per-ana' met; o-wet-an sipitali.",
+            "source": "My head aches; I am going to the hospital."
+          },
+          {
+            "target": "Ka-kowir-inyi kel kogh eng' ôr?",
+            "source": "Did you hit your foot against a stone on the road?"
+          },
+          {
+            "target": "Nyur-o se-kebe tukul kōkwa!",
+            "source": "Let us all come together to the village council!"
+          },
+          {
+            "target": "Kō-rôt-on! — I-rôt-enyi eng' kalyon!",
+            "source": "I have gone (Good-bye)! — Go in peace!"
+          }
+        ]
       }
     ]
   }

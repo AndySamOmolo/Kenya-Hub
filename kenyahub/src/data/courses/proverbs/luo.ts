@@ -1,7 +1,7 @@
 import type { ProverbItem } from "./types";
 
 // ============================================================
-// Luo (Dholuo) Proverbs & Oral Literature (7 verified entries)
+// Luo (Dholuo) Proverbs & Oral Literature (12 verified entries)
 // ============================================================
 
 export const LUO_PROVERBS: ProverbItem[] = [

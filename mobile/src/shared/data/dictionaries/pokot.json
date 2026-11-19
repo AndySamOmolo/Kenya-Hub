@@ -27,8 +27,8 @@
         },
         {
           "english": "Goodbye!",
-          "translation": "kō-rôt-on! Ans. i-rôt-enyi!",
-          "pronunciation": "ko-rot-on ans i-rot-enyi",
+          "translation": "Kō-rôt-on! — I-rôt-enyi!",
+          "pronunciation": "ko-rot-on / i-rot-enyi",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -601,7 +601,7 @@
         },
         {
           "english": "Alone (by oneself)",
-          "translation": "Ande-ungit, &c. Vide p. 73",
+          "translation": "Ande-ungit (1sg), nyi-ungit (2sg), inye-ungit (3sg)",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -691,9 +691,9 @@
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "Man",
-          "translation": "nya-man corresponds to the Nandi mising, and can be used as many adverbs in English",
-          "pronunciation": "nya-man corresponds to the nandi mising",
+          "english": "Very / Truly (adverbial intensifier)",
+          "translation": "nya-man (man)",
+          "pronunciation": "nya-man",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -716,7 +716,7 @@
         },
         {
           "english": "Clan",
-          "translation": "ôr, pl. ôr-ten (vide Road)",
+          "translation": "ôr, pl. ôr-ten",
           "pronunciation": "ôr",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
@@ -878,7 +878,7 @@
         },
         {
           "english": "Family",
-          "translation": "ôr, pl. ôr-ten (vide Road)",
+          "translation": "ôr, pl. ôr-ten",
           "pronunciation": "ôr",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
@@ -938,7 +938,7 @@
         },
         {
           "english": "Neighbour",
-          "translation": "perer, pl. perer-tin. Cf. Clan , perer-is",
+          "translation": "perer, pl. perer-tin (cf. perer-is)",
           "pronunciation": "perer",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
@@ -980,8 +980,8 @@
         },
         {
           "english": "Brother-in-law",
-          "translation": "wife's brother or sister's husband, ŏra, pl. ŏra-tin",
-          "pronunciation": "wife's brother",
+          "translation": "ŏra, pl. ŏra-tin",
+          "pronunciation": "o-ra",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -1268,8 +1268,8 @@
         },
         {
           "english": "Race a person, to",
-          "translation": "r. pel, overcome, pr. o-pel-jin-soi-an (pertitioʻ), p.p. ko-pel-j-an",
-          "pronunciation": "pel o-verco-me",
+          "translation": "pel (o-pel-jin-soi-an / pertitioʻ, p.p. ko-pel-j-an)",
+          "pronunciation": "pel / pertitio",
           "context": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -2362,8 +2362,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Sūk."
         },
         {
-          "english": "Child",
-          "translation": "also Nuno",
+          "english": "Child (young child)",
+          "translation": "Nuno",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Sūk."
         },
         {
@@ -2387,8 +2387,8 @@
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Sūk."
         },
         {
-          "english": "Man",
-          "translation": "pl",
+          "english": "People (men, plural)",
+          "translation": "Pik (sg. Kitō)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Sūk."
         },
         {
@@ -2560,7 +2560,7 @@
         },
         {
           "english": "Hair",
-          "translation": "put-ion, pl. and coll",
+          "translation": "put-ion, pl. pūt",
           "pronunciation": "put-ion",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
@@ -2740,7 +2740,7 @@
         },
         {
           "english": "Sweat",
-          "translation": "kiwot-ion, pl. and coll",
+          "translation": "kiwot-ion, pl. kiwot",
           "pronunciation": "kiwot-ion",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
@@ -2801,7 +2801,7 @@
         {
           "english": "Tongue",
           "translation": "ŋa̱lya̱p (ng'alyap)",
-          "pronunciation": "a lya p",
+          "pronunciation": "nga-lyap",
           "context": "Beech (1911, pp. 58–62, 99–149) & van Otterloo (1979) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
@@ -29148,7 +29148,7 @@
         },
         {
           "english": "Rabbit",
-          "translation": "blĕrkw-a, pl. blĕrkw-oi. Vide Hare",
+          "translation": "blĕrkw-a, pl. blĕrkw-oi",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29158,12 +29158,12 @@
         },
         {
           "english": "Ring",
-          "translation": "kai-moron,¹ pl. kai-morin, kai-moris-ai",
+          "translation": "kai-moron, pl. kai-morin, kai-moris-ai",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Room",
-          "translation": "kô, pl. kôr. Vide House, id",
+          "translation": "kô, pl. kôr",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29178,7 +29178,7 @@
         },
         {
           "english": "She",
-          "translation": "nyende. Vide He, id",
+          "translation": "nyende",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29188,7 +29188,7 @@
         },
         {
           "english": "Sore",
-          "translation": "tasôs, pl. tesūs. Vide Abscess, id",
+          "translation": "tasôs, pl. tesūs",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29208,47 +29208,47 @@
         },
         {
           "english": "Thee",
-          "translation": "nyī. Vide p. 69",
+          "translation": "nyī",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Their",
-          "translation": "nyeñgwa, pl. chekwa. Vide p. 70",
+          "translation": "nyeñgwa, pl. chekwa",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Them",
-          "translation": "chane. Vide p. 69",
+          "translation": "chane",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "These",
-          "translation": "chu. Vide p. 71",
+          "translation": "chu",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Thine",
-          "translation": "nyeñgmwunyi, pl. chekunyi. Vide p. 70",
+          "translation": "nyeñgmwunyi, pl. chekunyi",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "This",
-          "translation": "nyĭ. Vide p. 71",
+          "translation": "nyĭ",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Thou",
-          "translation": "nyī. Vide p. 69",
+          "translation": "nyī",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Town",
-          "translation": "kau, pl. kiston. Vide Village",
+          "translation": "kau, pl. kiston",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Us",
-          "translation": "acha. Vide p. 69",
+          "translation": "acha",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29258,17 +29258,17 @@
         },
         {
           "english": "Voice",
-          "translation": "kôt. Vide Mouth, id",
+          "translation": "kôt",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "We",
-          "translation": "acha. Vide p. 69",
+          "translation": "acha",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Which",
-          "translation": "nya, pl. cha. Vide p. 73, rel",
+          "translation": "nya, pl. cha",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29288,7 +29288,7 @@
         },
         {
           "english": "You",
-          "translation": "nyī. Vide p. 69",
+          "translation": "nyī",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
@@ -29917,7 +29917,7 @@
         },
         {
           "english": "Forest",
-          "translation": "U !",
+          "translation": "Wū (Būl)",
           "pronunciation": "u",
           "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
@@ -29983,7 +29983,7 @@
         },
         {
           "english": "Female",
-          "translation": "Poiyon; Nyo, particle",
+          "translation": "Poiyon; Nyo (female prefix)",
           "pronunciation": "poi-yon",
           "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
@@ -30084,7 +30084,7 @@
           "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "To good",
+          "english": "I am good",
           "translation": "Ane aca karām",
           "pronunciation": "a-ne a-ca ka-rah",
           "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
@@ -30108,7 +30108,7 @@
           "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "To young",
+          "english": "Young girl",
           "translation": "Ciēbē",
           "pronunciation": "cieh-beh",
           "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
@@ -30240,7 +30240,7 @@
           "context": "Beech 1911 p. 19 ('son/servant of Torôrut who carries water') • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
         },
         {
-          "english": "To (female)",
+          "english": "Child (female) / Girl",
           "translation": "Ciebī, Cep",
           "pronunciation": "ciebi cep",
           "context": "Sūk (Pökoot) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
@@ -30457,17 +30457,17 @@
         },
         {
           "english": "Cock",
-          "translation": "nil",
+          "translation": "kŏkŏk (mathwon)",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Depart, to",
-          "translation": "vide Go",
+          "translation": "we (pr. o-wet-an, p.p. ka-rôt-on)",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {
           "english": "Drum",
-          "translation": "nil",
+          "translation": "tögō (tokö)",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
         },
         {

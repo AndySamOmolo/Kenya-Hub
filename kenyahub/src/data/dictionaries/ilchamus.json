@@ -143,8 +143,8 @@
         },
         {
           "english": "Sixty",
-          "translation": "otomon",
-          "pronunciation": "o-to-mon",
+          "translation": "Onnom otomon",
+          "pronunciation": "on-nom o-to-mon",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -167,14 +167,14 @@
         },
         {
           "english": "Eighty",
-          "translation": "otomoni uni",
-          "pronunciation": "o-to-mo-ni uni",
+          "translation": "Onnom otomoni uni",
+          "pronunciation": "on-nom o-to-mo-ni u-ni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "Ninety",
-          "translation": "artam",
-          "pronunciation": "artam",
+          "translation": "Onnom artam",
+          "pronunciation": "on-nom ar-tam",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -185,8 +185,8 @@
         },
         {
           "english": "Seventy",
-          "translation": "obikitam",
-          "pronunciation": "o-bi-ki-tam",
+          "translation": "Onnom obikitam",
+          "pronunciation": "on-nom o-bi-ki-tam",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -203,9 +203,9 @@
       "icon": "👨‍👩‍👧‍👦",
       "entries": [
         {
-          "english": "Man",
-          "translation": "l-payian (elder) / l-murani (warrior) / l-tungani (person)",
-          "pronunciation": "l-payian",
+          "english": "Man (elder / warrior / person)",
+          "translation": "l-payian / l-murani / l-tungani",
+          "pronunciation": "l-payian / l-murani / l-tungani",
           "context": "Dundas 1910 & Johnston 1902 Njemps • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -216,7 +216,7 @@
         },
         {
           "english": "Wife",
-          "translation": "Eñ getok; En gedūa (pl.)",
+          "translation": "Eñ getok (pl. En gedūa)",
           "pronunciation": "en getok",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -270,7 +270,7 @@
         },
         {
           "english": "Brother",
-          "translation": "lalashe; Añgargenna (pl.)",
+          "translation": "lalashe (pl. Añgargenna)",
           "pronunciation": "lalashe",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -288,7 +288,7 @@
         },
         {
           "english": "People of Ilchamus ('People who see far')",
-          "translation": "Ilchamus (sg. Olchamus); Suk exonym: En-jemusi",
+          "translation": "Ilchamus (sg. Olchamus) / En-jemusi",
           "pronunciation": "ilchamus",
           "context": "Dundas (1910), Beech (1911) & Wikipedia Ilchamus_people • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -326,7 +326,7 @@
         {
           "english": "Ear",
           "translation": "ŋ-ké-ok (nkeok)",
-          "pronunciation": "-ke-ok",
+          "pronunciation": "ng-ke-ok",
           "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -350,7 +350,7 @@
         {
           "english": "Nose",
           "translation": "ŋ-kawar-íé (nkawarie)",
-          "pronunciation": "-kawar-ie",
+          "pronunciation": "ng-kawar-ie",
           "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -872,9 +872,9 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Wind",
-          "translation": "Alasagutoni (cold)",
-          "pronunciation": "alasagutoni",
+          "english": "Cold wind",
+          "translation": "Alasagutoni",
+          "pronunciation": "a-la-sa-gu-to-ni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -988,7 +988,7 @@
         {
           "english": "Water / Lake / River",
           "translation": "ŋ-kár-ɛ́ (nkare)",
-          "pronunciation": "-kar-",
+          "pronunciation": "ng-kar-e",
           "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -1032,76 +1032,6 @@
         {
           "english": "September (Little rains.)",
           "translation": "Lolrochorot",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Section. (Totem.)",
-          "translation": "Clan",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Beya ( — Kogai (the crow).)",
-          "translation": "Tallai",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Kaksegai ( — —)",
-          "translation": "Oreon",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Katut ( — Seran (the dikdik; a small antelope).)",
-          "translation": "Sirichon",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Kabioso ( — Kogai (the crow).)",
-          "translation": "Kamugo",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Bogorror ( — Kogai (the crow).)",
-          "translation": "Tallai",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Sibo ( — The elephant.)",
-          "translation": "Saban",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Kapsagat ( — The crow and jackal.)",
-          "translation": "Tallai or Tulin",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Kagsegom ( — Sirere (the kite).)",
-          "translation": "Kapsegom",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Kapsekerr ( — Kogai (the crow).)",
-          "translation": "Tallai",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Kamarein ( — Kogai (the crow).)",
-          "translation": "Tallai",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Kauwau ( — Sirere (the kite).)",
-          "translation": "Kapsegom",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Mareich ( — Crow and frog.)",
-          "translation": "Tallai and Legen",
-          "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
-        },
-        {
-          "english": "Kabell ( — The buffalo.)",
-          "translation": "Chepbogamwoi",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
         }
       ]
@@ -1168,7 +1098,7 @@
         {
           "english": "Tobacco",
           "translation": "Or gumbao",
-          "pronunciation": "or",
+          "pronunciation": "or gum-bao",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -1312,7 +1242,7 @@
         {
           "english": "Name",
           "translation": "ŋ-kárn-á (nkarna)",
-          "pronunciation": "-karn-a",
+          "pronunciation": "ng-karn-a",
           "context": "Wikipedia Eastern_Nilotic_languages — Vossen (1982) Camus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -1401,7 +1331,7 @@
         },
         {
           "english": "to be cut, get cut, cut oneself (Ilchamus North Maa middle voice suffix -o / -a on transitive action roots)",
-          "translation": "a-duŋ-ó / a-duŋ-á (Chamus North Maa middle)",
+          "translation": "a-duŋ-ó / a-duŋ-á",
           "pronunciation": "a-duŋ-ó",
           "context": "Shared Maa middle voice morphology across Chamus, Samburu, and Maasai (Payne 2026) • Source: Doris L. Payne 2026 (Pamoja tena, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
         },
@@ -1802,7 +1732,7 @@
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Young",
+          "english": "Girl / Young woman",
           "translation": "Endīto",
           "pronunciation": "endi-to",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
@@ -1820,8 +1750,8 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Hot springs of Maji ya Moto (south Baringo)",
-          "translation": "Konyek ('the eyes / springs')",
+          "english": "Hot springs of Maji ya Moto (south Baringo, 'the eyes / springs')",
+          "translation": "Konyek",
           "pronunciation": "kony-ek",
           "context": "Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 51) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -1839,7 +1769,7 @@
         },
         {
           "english": "War",
-          "translation": "En dyore (or Jore)",
+          "translation": "En dyore / Jore",
           "pronunciation": "en dyore",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -1935,7 +1865,7 @@
         },
         {
           "english": "Stick",
-          "translation": "Eñ udi; Eñ usidin (pl.)",
+          "translation": "Eñ udi (pl. Eñ usidin)",
           "pronunciation": "en udi",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -1952,14 +1882,14 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Molar",
+          "english": "Molar tooth",
           "translation": "Entakolla",
           "pronunciation": "enta-kolla",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "I / me",
-          "translation": "nanu (prefix a-)",
+          "english": "I / me (subject prefix a-)",
+          "translation": "nanu (a-)",
           "pronunciation": "nah-noo",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -1982,14 +1912,14 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Doctor",
-          "translation": "Ol leiboni (medicine-man)",
+          "english": "Doctor / Medicine-man",
+          "translation": "Ol leiboni",
           "pronunciation": "ol leiboni",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "We / us",
-          "translation": "iyook (prefix ki-)",
+          "english": "We / us (subject prefix ki-)",
+          "translation": "iyook (ki-)",
           "pronunciation": "ee-yohk",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -2006,8 +1936,8 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "He / She",
-          "translation": "ninye (prefix e-)",
+          "english": "He / She (subject prefix e-)",
+          "translation": "ninye (e-)",
           "pronunciation": "nee-nyeh",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -2036,8 +1966,8 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "You (singular)",
-          "translation": "iyie (prefix i-)",
+          "english": "You (singular; subject prefix i-)",
+          "translation": "iyie (i-)",
           "pronunciation": "ee-yeh",
           "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -2054,9 +1984,9 @@
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Town or settlement",
-          "translation": "Manyata (warriors'), Añgañ (tribal)",
-          "pronunciation": "manyata",
+          "english": "Town or settlement (warriors' / tribal)",
+          "translation": "Manyata / Añgañ",
+          "pronunciation": "manyata / anggang",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         }
       ]
@@ -2234,43 +2164,43 @@
         },
         {
           "english": "March — 1st month of the Njamus year ('When the bulls have to be tied up')",
-          "translation": "Oäni-oingok (When the bulls have to be tied up)",
+          "translation": "Oäni-oingok",
           "pronunciation": "o-a-ni oi-ngok",
           "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "April — 2nd month of the Njamus year ('Much rain')",
-          "translation": "Borgola (Much rain)",
+          "translation": "Borgola",
           "pronunciation": "bor-go-la",
           "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "May — 3rd month of the Njamus year ('Pleiades disappear')",
-          "translation": "Loo-'n Gokwa (Pleiades disappear)",
+          "translation": "Loo-'n Gokwa",
           "pronunciation": "loo-n go-kwa",
           "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "June — 4th month of the Njamus year ('Pleiades reappear in the east in the early morning')",
-          "translation": "Lorigine (Pleiades reappear in the east in the early morning)",
+          "translation": "Lorigine",
           "pronunciation": "lo-ri-gi-ne",
           "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "July — 5th month of the Njamus year ('Great rains')",
-          "translation": "Lakodakol (Great rains)",
+          "translation": "Lakodakol",
           "pronunciation": "la-ko-da-kol",
           "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "August — 6th month of the Njamus year ('Great rains')",
-          "translation": "Lekepirn (Great rains)",
+          "translation": "Lekepirn",
           "pronunciation": "le-ke-pirn",
           "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "September, October & November — 7th, 8th & 9th months of the Njamus year ('Little rains')",
-          "translation": "Lolrochorot (Little rains — 3 months sharing one name)",
+          "translation": "Lolrochorot",
           "pronunciation": "lol-ro-cho-rot",
           "context": "Njamus Lare (Wet season) calendar — Hon. K. R. Dundas, JRAI Vol. 40 (1910, p. 55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -2421,7 +2351,7 @@
         },
         {
           "english": "Eye",
-          "translation": "Angoño; Ngoinyek (pl.)",
+          "translation": "Angoño (pl. Ngoinyek)",
           "pronunciation": "angono",
           "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
@@ -2439,14 +2369,14 @@
         },
         {
           "english": "Bone",
-          "translation": "Oloito; Eloik (pl.)",
+          "translation": "Oloito (pl. Eloik)",
           "pronunciation": "o-loi-toh",
           "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "Lion",
           "translation": "Ol ñátūīn",
-          "pronunciation": "ol tooeen",
+          "pronunciation": "ol nga-tuin",
           "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -2614,7 +2544,7 @@
         {
           "english": "I gave him",
           "translation": "Aiṣō elle",
-          "pronunciation": "ai oh el-le",
+          "pronunciation": "ai-so el-le",
           "context": "Ñgishu / Baringo Maa cognate — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 913–923) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -2679,38 +2609,38 @@
         },
         {
           "english": "Nyarusi (Laikipiak name for the Njamus, corrupted by Swahili ivory traders to Njamus / Njemps)",
-          "translation": "Nyarusi (Njamus / Njemps — population not exceeding 1,500 souls in 1910)",
-          "pronunciation": "nyarusi",
+          "translation": "Nyarusi (Njamus / Njemps)",
+          "pronunciation": "nya-ru-si",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 49) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Njemps Kubwa (downstream Ilchamus settlement on the Molo River)",
-          "translation": "Njemps Liabori (liabori = 'down stream')",
+          "english": "Njemps Kubwa (downstream Ilchamus settlement on the Molo River; liabori = 'down stream')",
+          "translation": "Njemps Liabori",
           "pronunciation": "njemps li-a-bo-ri",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 49) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Njemps Ndogo (upstream Ilchamus settlement on the Tigrish River)",
-          "translation": "Njemps Lekepir (lekepir = 'up stream')",
+          "english": "Njemps Ndogo (upstream Ilchamus settlement on the Tigrish River; lekepir = 'up stream')",
+          "translation": "Njemps Lekepir",
           "pronunciation": "njemps le-ke-pir",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 49–50) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "Korvan (3rd Ilchamus settlement on the Lake Baringo islands & mainland near the River Tim, first settled by Logogwa)",
-          "translation": "Korvan & Logogwa (first island settler, followed by an Uasin Gishu / Il Moiven, using basketwork canoes)",
-          "pronunciation": "korvan & logogwa",
+          "translation": "Korvan / Logogwa",
+          "pronunciation": "kor-van / lo-go-gwa",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 50) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "Il Geroi (earliest hunting, fishing, and cultivating inhabitants of Lake Baringo)",
-          "translation": "Il Geroi (massacred while hunting by the Laikipiak & Il Doigio; survivors fled to Nakuro and Il Kakesan [Lumbwa/Kipsikis])",
-          "pronunciation": "il geroi",
+          "translation": "Il Geroi",
+          "pronunciation": "il ge-roi",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 50, 52) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Il Doigio (Samburu ancestral section on Loroghi whose 40 warriors migrated to Lake Baringo & Konyek / Maji a Moto)",
-          "translation": "Il Doigio & Konyek (Maji a Moto — migrated after an old man saw a bird with a green blade of grass in its beak and blew the village horn)",
-          "pronunciation": "il doigio & konyek",
+          "english": "Il Doigio (Samburu ancestral section on Loroghi whose 40 warriors migrated to Lake Baringo & Konyek / Maji ya Moto)",
+          "translation": "Il Doigio / Konyek",
+          "pronunciation": "il doi-gio / ko-nyek",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 50–52) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -2721,20 +2651,20 @@
         },
         {
           "english": "Loiborgishu (Njamus clan #2 of Laikipiak origin, a branch of the 'Ngang Elima division)",
-          "translation": "Loiborgishu ('L-ooibor-kīshu, branch of 'Ngang Elima)",
-          "pronunciation": "loiborgishu",
+          "translation": "Loiborgishu ('L-ooibor-kīshu / 'Ngang Elima)",
+          "pronunciation": "loi-bor-gi-shu",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 52–53) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "Il Barsegir (Njamus clan #3 of Laikipiak origin, a branch of the Lornying division)",
-          "translation": "Il Barsegir (branch of Lornying)",
-          "pronunciation": "il barsegir",
+          "translation": "Il Barsegir (Lornying)",
+          "pronunciation": "il bar-se-gir",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 52–53) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
           "english": "Il Mayek (Njamus clan #4 of Samburu origin; first resided with the Il Chabichab section of Kamasia; irrigation furrow priests)",
-          "translation": "Il Mayek (first with Il Chabichab of Kamasia; hereditary furrow-opening clan)",
-          "pronunciation": "il mayek",
+          "translation": "Il Mayek",
+          "pronunciation": "il ma-yek",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 53–55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -2745,8 +2675,8 @@
         },
         {
           "english": "Ol Ouara (Njamus clan #6 of Samburu origin, corresponding to the Lugumai clan of the Masai)",
-          "translation": "Ol Ouara (= Lugumai of the Masai)",
-          "pronunciation": "ol ouara",
+          "translation": "Ol Ouara (Lugumai)",
+          "pronunciation": "ol o-ua-ra",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -2787,8 +2717,8 @@
         },
         {
           "english": "Masari (Njamus clan #13 of Kamasia origin, from the Owolell section)",
-          "translation": "Masari (from the Owolell section of Kamasia)",
-          "pronunciation": "masari",
+          "translation": "Masari",
+          "pronunciation": "ma-sa-ri",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, p. 53) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -2805,20 +2735,20 @@
         },
         {
           "english": "'Ngang Ngissegir / Lebarkilenya (Njamus clan #16 of Il Geroi origin; officiates crop-medicine ceremony towards Campi ya Samaki)",
-          "translation": "'Ngang Ngissegir (or Lebarkilenya)",
-          "pronunciation": "ngang ngissegir",
+          "translation": "'Ngang Ngissegir / Lebarkilenya",
+          "pronunciation": "ngang ngis-se-gir / le-bar-ki-le-nya",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 53, 55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Waterbuck, eland, oryx, zebra, rhino, hippo",
-          "translation": "6 game taboos",
-          "pronunciation": "6-game-taboos",
+          "english": "Six sacred game animals protected from hunting near Njemps irrigation fields (waterbuck, eland, oryx, zebra, rhinoceros, hippopotamus)",
+          "translation": "Olgipulugen, osirwa, olkimosorok, oloitiko, emuny, lmakau",
+          "pronunciation": "ol-gi-pu-lu-gen / o-sir-wa / ol-ki-mo-so-rok / o-loi-ti-ko / e-muny / l-ma-kau",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District, JRAI Vol. 40 (1910, pp. 54–55) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
-          "english": "Central island of Lake Baringo (Ol Kokwa) & Perkerra River (Guaso Tigerish) brushwood-and-boulder irrigation dams at Njemps (1887)",
-          "translation": "Ol Kokwa & Guaso Tigerish (Perkerra) irrigation canals of En-jemusi",
-          "pronunciation": "ol kokwa & guaso tigerish  irrigation canals of en-jemusi",
+          "english": "Central island of Lake Baringo (Ol Kokwa) & Perkerra River (Guaso Tigerish) irrigation canals at Njemps (1887)",
+          "translation": "Ol Kokwa / Guaso Tigerish (En-jemusi)",
+          "pronunciation": "ol ko-kwa / gua-so ti-ge-rish",
           "context": "Lieut. Ludwig von Höhnel (1894, Vol. I, pp. 390–412) — Discovery of Lakes Rudolf and Stefanie • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
         },
         {
@@ -2833,5 +2763,5 @@
   "source": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)",
   "isoCode": "saq-ilc",
   "glottocode": "chAM1234",
-  "totalEntries": 463
+  "totalEntries": 449
 }

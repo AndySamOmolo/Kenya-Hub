@@ -34,7 +34,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
   {
     "id": "somali-unit-1",
     "unitNumber": 1,
-    "title": "Greetings (Nabad!), Definite Articles",
+    "title": "Greetings (Nabad!), Definite Articles (-ka/-ta), Numerals & Maahmaahyo",
     "description": "Master Af-Soomaali greetings, Kirk’s three suffixed article vowels (-i, -a, -u) and four demonstratives (kan, kèr, kas, kò), inclusive/exclusive pronouns, numerals, fractions, and classical Maahmaahyo.",
     "icon": "BookOpen",
     "color": "#2563EB",
@@ -49,19 +49,19 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "Nabad!",
             "source": "Peace!",
-            "pronunciation": "na-bad / ma na-bad baa / ma ba-ri-den",
+            "pronunciation": "na-bad",
             "hint": "Kirk (1905, § 102, p. 51 & p. 113) morning & general greeting"
           },
           {
             "target": "Ma nabad baa?",
             "source": "Is it peace?",
-            "pronunciation": "na-bad / ma na-bad baa / ma ba-ri-den",
+            "pronunciation": "ma na-bad baa",
             "hint": "Kirk (1905, § 102, p. 51 & p. 113) morning & general greeting"
           },
           {
             "target": "Ma bariden? (resp. Wa nabad!)",
             "source": "Have you passed the night well? (It is peace!)",
-            "pronunciation": "na-bad / ma na-bad baa / ma ba-ri-den",
+            "pronunciation": "ma ba-ri-den",
             "hint": "Kirk (1905, § 102, p. 51 & p. 113) morning & general greeting"
           },
           {
@@ -73,46 +73,46 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "Soo dhawoow!",
             "source": "Welcome!",
-            "pronunciation": "soo dha-woow / na-bad gelyo",
+            "pronunciation": "soo dha-woow",
             "hint": "Hospitality phrases"
           },
           {
             "target": "Nabad gelyo!",
             "source": "Goodbye!",
-            "pronunciation": "soo dha-woow / na-bad gelyo",
+            "pronunciation": "na-bad gel-yo",
             "hint": "Hospitality phrases"
           },
           {
             "target": "aniga (an)",
             "source": "I",
-            "pronunciation": "aniga"
+            "pronunciation": "a-ni-ga"
           },
           {
             "target": "adiga (ad)",
             "source": "you (sg.)",
-            "pronunciation": "aniga"
+            "pronunciation": "a-di-ga"
           },
           {
             "target": "ínnagu (-einu incl.) / ánnagu (-annu excl.)",
             "source": "we (inclusive vs. exclusive)",
-            "pronunciation": "ínnagu"
+            "pronunciation": "in-na-gu / an-na-gu"
           },
           {
             "target": "isaga (u)",
             "source": "he",
-            "pronunciation": "i-sa-ga / i-ya-da / i-ya-ga",
+            "pronunciation": "i-sa-ga",
             "hint": "Kirk (1905, § 53, p. 29) 3rd person pronouns"
           },
           {
             "target": "iyada (ai)",
             "source": "she",
-            "pronunciation": "i-sa-ga / i-ya-da / i-ya-ga",
+            "pronunciation": "i-ya-da",
             "hint": "Kirk (1905, § 53, p. 29) 3rd person pronouns"
           },
           {
             "target": "iyaga (ai)",
             "source": "they",
-            "pronunciation": "i-sa-ga / i-ya-da / i-ya-ga",
+            "pronunciation": "i-ya-ga",
             "hint": "Kirk (1905, § 53, p. 29) 3rd person pronouns"
           },
           {
@@ -128,13 +128,13 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "biyo (biyaha)",
             "source": "water",
-            "pronunciation": "bi-yo / ‘a-no",
+            "pronunciation": "bi-yo",
             "hint": "Kirk (1905) essential pastoral liquids"
           },
           {
             "target": "‘àno (‘anaha)",
             "source": "milk",
-            "pronunciation": "bi-yo / ‘a-no",
+            "pronunciation": "‘a-no",
             "hint": "Kirk (1905) essential pastoral liquids"
           },
           {
@@ -145,35 +145,35 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "lo‘",
             "source": "cattle",
-            "pronunciation": "lo"
+            "pronunciation": "lo‘"
           },
           {
             "target": "fardo (sg. faras)",
             "source": "horses",
-            "pronunciation": "fardo"
+            "pronunciation": "far-do"
           },
           {
             "target": "garanug",
             "source": "gerenuk",
-            "pronunciation": "ga-ra-nug / go-dir / b‘e-‘id / sa-ga-ro",
+            "pronunciation": "ga-ra-nug",
             "hint": "Kirk (1905, p. 194) & de Larajasse (1897) East African wildlife"
           },
           {
             "target": "godir",
             "source": "greater kudu",
-            "pronunciation": "ga-ra-nug / go-dir / b‘e-‘id / sa-ga-ro",
+            "pronunciation": "go-dir",
             "hint": "Kirk (1905, p. 194) & de Larajasse (1897) East African wildlife"
           },
           {
             "target": "b‘e‘id",
             "source": "beisa oryx",
-            "pronunciation": "ga-ra-nug / go-dir / b‘e-‘id / sa-ga-ro",
+            "pronunciation": "b‘e-‘id",
             "hint": "Kirk (1905, p. 194) & de Larajasse (1897) East African wildlife"
           },
           {
-            "target": "sagaro (Kirk 1905 & Larajasse 1897)",
+            "target": "sagaro",
             "source": "dik-dik",
-            "pronunciation": "ga-ra-nug / go-dir / b‘e-‘id / sa-ga-ro",
+            "pronunciation": "sa-ga-ro",
             "hint": "Kirk (1905, p. 194) & de Larajasse (1897) East African wildlife"
           },
           {
@@ -186,11 +186,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ma bariden? Wa nabad, mahadsanid.",
-            "source": "Have you passed the night well? It is peace, thank you ."
+            "source": "Have you passed the night well? It is peace, thank you."
           },
           {
             "target": "Hawl adun ma đamáto ninba wa intis.",
-            "source": "The work of the world finishes not, each man has his share ."
+            "source": "The work of the world finishes not, each man has his share."
           }
         ],
         "authoredExercises": [
@@ -252,7 +252,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
               "Mahadsanid",
               "aniga"
             ],
-            "hint": "soh dhah-wow / nah-bahd gehl-yoh",
+            "hint": "soo dha-woow",
             "acceptedAnswers": [
               "Soo dhawoow! / Nabad gelyo!",
               "Soo dhawoow!"
@@ -268,7 +268,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
               "aniga",
               "Soo dhawoow!"
             ],
-            "hint": "ah-nee-gah / een-nah-goo / ahn-nah-goo",
+            "hint": "a-ni-ga",
             "acceptedAnswers": [
               "aniga (an) / adiga (ad) • ínnagu (-einu incl.) / ánnagu (-annu excl.)",
               "aniga"
@@ -333,31 +333,31 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "hint": "Kirk (1905, Erratum p. xii & § 15b, p. 13)"
           },
           {
-            "target": "rubiad-di (16a), rubi-gi (8a), bòlad-di (4a), antìn-ti (2a), gambo-di",
-            "source": "Rupee (16 annas), 1/2 rupee, 4 annas, 2 annas, 1 anna, 2 pies, 1 pie",
-            "pronunciation": "rubiad-di",
+            "target": "rubiad-di (16a), rubi-gi (8a), bòlad-di (4a), antìn-ti (2a), gambo-di (1a), bèsad-di (2p), bardi-gi (1p)",
+            "source": "Rupee (16 annas), 1/2 rupee (8a), 4 annas, 2 annas, 1 anna, 2 pies, 1 pie",
+            "pronunciation": "ru-bi-ad-di / ru-bi-gi / bo-lad-di / an-tin-ti / gam-bo-di",
             "hint": "Kirk (1905, Appendix II, p. 136) Somaliland currency table"
           },
           {
-            "target": "wà beri / arorti, subahh-di, barghád-di, hađ-ki (gàdid-ki), duhur-ki",
+            "target": "wà beri / arorti, subahh-di, barghád-di, hađ-ki (gàdid-ki), duhur-ki, ‘ásar-ki, gabbal đah-hi",
             "source": "Dawn, early morning, forenoon, midday, afternoon, late afternoon, sunset",
-            "pronunciation": "wà-beri",
+            "pronunciation": "wa be-ri / su-bahh-di / bar-ghad-di / hadh-ki / du-hur-ki",
             "hint": "Kirk (1905, Appendix I, p. 135) divisions of the day (‘asho-di)"
           },
           {
             "target": "fìdki, aweisin-ki, sakhdi hore, sakhđi dehh, sakhdi dambe, arorti hore",
-            "source": "Twilight (6–7 p.m.), evening (7–10 p.m.), 1st watch (10–12), midnight (12–2), 3rd",
-            "pronunciation": "fìdki",
+            "source": "Twilight (6–7 p.m.), evening (7–10 p.m.), 1st watch (10–12), midnight (12–2), 3rd watch (2–4), early dawn (4–6)",
+            "pronunciation": "fid-ki / a-wei-sin-ki / sakh-di ho-re / sakh-dhi dehh",
             "hint": "Kirk (1905, Appendix I, p. 135) watches of the night (habèn-ki)"
           },
           {
-            "target": "labàton (20), sóddon (30), afárton (40), kónton (50), bóghol (100), kun",
+            "target": "labàton (20), sóddon (30), afárton (40), kónton (50), bóghol (100), kun (1,000)",
             "source": "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
             "pronunciation": "la-ba-ton soddon a-farton konton boghol kun",
             "hint": "Kirk (1905, § 46, pp. 26–27) tens & subtractive numerals"
           },
           {
-            "target": "bađ-ki (1/2), dalòl-ki (1/3), wahh-di (1/4), fallad-di (1/8), rima-di",
+            "target": "bađ-ki (1/2), dalòl-ki (1/3), wahh-di (1/4), fallad-di (1/8), rima-di (1/16)",
             "source": "Fractions: 1/2, 1/3, 1/4, 1/8, 1/16",
             "pronunciation": "badh-ki dalol-ki wahh-di fallad-di rima-di",
             "hint": "Kirk (1905, § 52, p. 28) Somali fractions"
@@ -369,9 +369,9 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "hint": "Kirk (1905, Appendix I, p. 134)"
           },
           {
-            "target": "Dago, Durahh hore, Durahh dambe, Rajal (hore/dehhe/dambe), Sà buha, Wà",
+            "target": "Dago, Durahh hore, Durahh dambe, Rajal (hore/dehhe/dambe), Sà buha, Wà barìs, Sòn, Sòn fur, Sidatal, Arafo",
             "source": "The 12 traditional Somali lunar months (Muharram to Dhu al-Hijjah)",
-            "pronunciation": "dago",
+            "pronunciation": "da-go / du-rahh / ra-jal / sa bu-ha / wa ba-ris / son / a-ra-fo",
             "hint": "Kirk (1905, Appendix I, p. 135)"
           },
           {
@@ -390,56 +390,53 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Gerar wa bogholal, wa bađwein iyo môjad, wa babùrki sidìsa.",
-            "source": "Songs (Geeraar) are in hundreds, like the great sea and waves, like the ships ."
+            "source": "Songs (Geeraar) are in hundreds, like the great sea and waves, like the ships."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kô (mid), lába, sádehh, áfar, shan\" in Somali?",
-            "correctAnswer": "1",
+            "correctAnswer": "1, 2, 3, 4, 5",
             "options": [
-              "6",
-              "20",
-              "Fractions: 1",
-              "1"
+              "6, 7, 8, 9, 10",
+              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
+              "Fractions: 1/2, 1/3, 1/4, 1/8, 1/16",
+              "1, 2, 3, 4, 5"
             ],
             "hint": "Kirk (1905, § 46, p. 26) cardinals 1–5",
             "acceptedAnswers": [
-              "1, 2, 3, 4, 5",
-              "1"
+              "1, 2, 3, 4, 5"
             ]
           },
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"lehh, todòba, sidèd, sagàl, tòban\" in Somali?",
-            "correctAnswer": "6",
+            "correctAnswer": "6, 7, 8, 9, 10",
             "options": [
-              "20",
-              "Fractions: 1",
-              "6",
-              "1"
+              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
+              "Fractions: 1/2, 1/3, 1/4, 1/8, 1/16",
+              "6, 7, 8, 9, 10",
+              "1, 2, 3, 4, 5"
             ],
             "hint": "Kirk (1905, § 46, p. 26) cardinals 6–10",
             "acceptedAnswers": [
-              "6, 7, 8, 9, 10",
-              "6"
+              "6, 7, 8, 9, 10"
             ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"labàton, sóddon (30), afárton (40), kónton (50), bóghol (100), kun (1,000)\" in Somali?",
-            "correctAnswer": "20",
+            "prompt": "What is the English meaning of \"labàton (20), sóddon (30), afárton (40), kónton (50), bóghol (100), kun (1,000)\" in Somali?",
+            "correctAnswer": "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
             "options": [
-              "20",
-              "Fractions: 1",
-              "1",
-              "6"
+              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
+              "Fractions: 1/2, 1/3, 1/4, 1/8, 1/16",
+              "1, 2, 3, 4, 5",
+              "6, 7, 8, 9, 10"
             ],
             "hint": "Kirk (1905, § 46, pp. 26–27) tens & subtractive numerals",
             "acceptedAnswers": [
-              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)",
-              "20"
+              "20, 30, 40, 50, 100, 1,000 (19 = labàton midla)"
             ]
           },
           {
@@ -490,7 +487,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Kinship Terms, Elders & Household Roles",
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -526,13 +523,13 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "wiil (def. wiilka)",
             "source": "Boy",
-            "pronunciation": "wiil / i-nan",
+            "pronunciation": "wiil",
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
           {
             "target": "ínan",
             "source": "son",
-            "pronunciation": "wiil / i-nan",
+            "pronunciation": "i-nan",
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
           {
@@ -628,19 +625,19 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Clans, Marriage & Community Life",
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
             "target": "gabadh",
             "source": "Girl",
-            "pronunciation": "ga-badh / i-nan",
+            "pronunciation": "ga-badh",
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
           {
             "target": "inán",
             "source": "daughter",
-            "pronunciation": "ga-badh / i-nan",
+            "pronunciation": "i-nan",
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
           },
           {
@@ -779,7 +776,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Cardinal & Ordinal Numerals",
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -835,6 +832,16 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "source": "Seven",
             "pronunciation": "toddo-ba",
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "kow, laba, saddex, afar, shan",
+            "source": "One, two, three, four, five."
+          },
+          {
+            "target": "aurtaidi lába",
+            "source": "Two of my camels."
           }
         ],
         "authoredExercises": [
@@ -948,7 +955,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Trade, Barter, Currency & Traditional Measures",
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -1003,6 +1010,16 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "source": "Thirty (30), Forty (40), Fifty (50)",
             "pronunciation": "soddon a-farton konton",
             "hint": "Lt. J. W. C. Kirk (1905) A Grammar of the Somali Language § 46, p. 26"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "siddeed, sagaal, toban, labaatan",
+            "source": "Eight, nine, ten, twenty."
+          },
+          {
+            "target": "sóddon, afárton, kónton, boqol, kun",
+            "source": "Thirty, forty, fifty, hundred, thousand."
           }
         ],
         "authoredExercises": [
@@ -1118,7 +1135,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Staple Foods, Cookery & Beverages",
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -1245,7 +1262,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Crops, Cultivation & Pastoral Livestock",
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -1381,7 +1398,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Sky, Weather, Rivers & Landforms",
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -1440,9 +1457,9 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "we-bi"
           },
           {
-            "target": "Dōh'",
-            "source": "pond)",
-            "pronunciation": "we-bi"
+            "target": "Dōh' (balli)",
+            "source": "Valley / Seasonal riverbed (pond)",
+            "pronunciation": "doh"
           }
         ],
         "sentences": [
@@ -1522,7 +1539,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "East African Fauna, Birds & Sacred Trees",
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -1539,7 +1556,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "Rōp",
             "source": "Rain",
-            "pronunciation": "roh"
+            "pronunciation": "rohp"
           },
           {
             "target": "Hedig",
@@ -1554,7 +1571,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "Dabēl",
             "source": "Wind",
-            "pronunciation": "da-beh"
+            "pronunciation": "da-behl"
           },
           {
             "target": "ban",
@@ -1659,7 +1676,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Parts of the Body & Physical Senses",
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -1785,7 +1802,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Health, Traditional Medicine & Emergency Terms",
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -1796,17 +1813,17 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "madah-hi (Yibir/Midgan: bakhrin-ki)",
             "source": "Head",
-            "pronunciation": "bakhrin"
+            "pronunciation": "ma-dah-hi"
           },
           {
             "target": "ga‘an-ti (Yibir: gànad-di)",
             "source": "Hand",
-            "pronunciation": "ga-nad"
+            "pronunciation": "ga-‘an-ti"
           },
           {
             "target": "ag-ti / lug-ti (Yibir/Midgan: yal-shi)",
             "source": "Foot",
-            "pronunciation": "yal"
+            "pronunciation": "ag-ti / lug-ti"
           },
           {
             "target": "laf-ti (Yibir: lafil-shi, Midgan: lafeiti-di)",
@@ -1836,11 +1853,11 @@ export const SOMALI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "timo-hi — bakhrin",
+            "target": "timo-hi — madah-hi",
             "source": "Hair — Head."
           },
           {
-            "target": "gànad — yal",
+            "target": "ga‘an-ti — ag-ti",
             "source": "Hand — Foot."
           }
         ],
@@ -1860,19 +1877,18 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"Head\"",
-            "correctAnswer": "bakhrin",
+            "correctAnswer": "madah-hi",
             "acceptedAnswers": [
-              "bakhrin",
-              "bakhrin"
+              "madah-hi",
+              "madah-hi (Yibir/Midgan: bakhrin-ki)"
             ],
-            "hint": "Starts with \"ba\""
+            "hint": "Starts with \"ma\""
           },
           {
             "type": "translate_to_english",
-            "prompt": "Translate to English: \"gànad\"",
+            "prompt": "Translate to English: \"ga‘an-ti\"",
             "correctAnswer": "Hand",
             "acceptedAnswers": [
-              "Hand",
               "Hand"
             ],
             "hint": "Review Health, Traditional Medicine & Emergency Terms"
@@ -1887,15 +1903,15 @@ export const SOMALI_UNITS: CourseUnit[] = [
                 "right": "Hair"
               },
               {
-                "left": "bakhrin",
+                "left": "madah-hi",
                 "right": "Head"
               },
               {
-                "left": "gànad",
+                "left": "ga‘an-ti",
                 "right": "Hand"
               },
               {
-                "left": "yal",
+                "left": "ag-ti / lug-ti",
                 "right": "Foot"
               },
               {
@@ -1921,7 +1937,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Essential Action & Motion Verbs",
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -2053,7 +2069,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Applied, Causative, Reciprocal & Stative Verbs",
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -2189,7 +2205,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Day Divisions, Lunar Months & Agricultural Seasons",
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -2315,7 +2331,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Travel, Directions, Paths & Landmarks",
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -2451,7 +2467,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Everyday Conversational Phrases & Questions",
         "icon": "CheckCircle2",
         "description": "Practice authentic questions, answers, and idiomatic expressions from historical phrasebooks.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -2577,7 +2593,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Hospitality, Requests & Social Discourse",
         "icon": "Handshake",
         "description": "Converse naturally in home, village, market, and travel settings.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -2633,6 +2649,16 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "source": "Foot",
             "pronunciation": "cag",
             "hint": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "af — carrab",
+            "source": "Mouth / language — Tongue."
+          },
+          {
+            "target": "madax — il (pl. indho)",
+            "source": "Head / leader — Eye."
           }
         ],
         "authoredExercises": [
@@ -2704,7 +2730,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Traditional Proverbs, Riddles & Aphorisms",
         "icon": "Award",
         "description": "Study verbatim oral wisdom, riddles, and moral aphorisms from the historical collections.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -2726,9 +2752,10 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "hint": "Every master or elder was once a beginner; be patient with learners and humble in success."
           },
           {
-            "target": "Nin aan dhul marin dhaayo ma leh (Kirk 1905).",
+            "target": "Nin aan dhul marin dhaayo ma leh.",
             "source": "A man who has not travelled the land has no eyes (insight).",
-            "pronunciation": "nin-aan-dhul-marin"
+            "pronunciation": "nin-aan-dhul-marin",
+            "hint": "Lt. J. W. C. Kirk (1905)"
           },
           {
             "target": "Hawl adun ma đamáto ninba wa intis.",
@@ -2736,8 +2763,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "pronunciation": "hawl-adun-ma-đamáto"
           },
           {
-            "target": "Tollimòno ka dòrne, o sàmir bannu dèdallei",
-            "source": "We must choose brotherhood as one tribe, and strive for peace — O ye tribes, desist",
+            "target": "Tollimòno ka dòrne, o sàmir bannu dèdallei — warya! tòlow, ‘ashada joja!",
+            "source": "We must choose brotherhood as one tribe, and strive for peace — O ye tribes, desist today!",
             "pronunciation": "tollimòno-ka-dòrne"
           },
           {
@@ -2833,7 +2860,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "title": "Customary Law, Rituals & Historical Lexicon",
         "icon": "ShieldCheck",
         "description": "Master specialized cultural, legal, musical, and historical vocabulary.",
-        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
+        "tips": "Every lexical entry in this module is drawn verbatim from Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905). Pay close attention to suffixed definite articles (-ka/-ta, -ki/-ti, -ku/-tu), gender polarity, focus particles (waa, baa, ayaa), and root consonants.",
         "culturalNote": "Primary historical documentation for Somali (Af-Soomaali) in Rev. Fr. Evangelist de Larajasse (1897), Sir Harry Johnston (1902) & Lt. J. W. C. Kirk (1905) preserves pre-1930 phonological, grammatical, and ethnographic usage across Garissa, Wajir, Mandera.",
         "words": [
           {
@@ -2861,8 +2888,8 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "hint": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [m.n.]"
           },
           {
-            "target": "daba galla",
-            "source": "squirrel.—hi (earth squirrel living in holes)",
+            "target": "daba galla (def. daba galla-hi)",
+            "source": "earth squirrel (living in burrows)",
             "pronunciation": "da-ba galla",
             "hint": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [m.n.]"
           },
@@ -2889,6 +2916,16 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "source": "be covered",
             "pronunciation": "da-bo-law",
             "hint": "Rev. Fr. Evangelist de Larajasse (1897) Somali-English and English-Somali Dictionary [v.tr.]"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "dadab — dabol",
+            "source": "dream — lid, cover."
+          },
+          {
+            "target": "daba halloh — dabagelis",
+            "source": "scorpion — crupper of a camel's saddle."
           }
         ],
         "authoredExercises": [
@@ -2929,7 +2966,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Somali (Af-Soomaali) term for \"squirrel.—hi (earth squirrel living in holes)\": ___",
+            "prompt": "Complete the Somali (Af-Soomaali) term for \"earth squirrel (living in burrows)\": ___",
             "correctAnswer": "daba galla",
             "options": [
               "dādis",
@@ -2972,7 +3009,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "dalan",
-            "source": "children (m.n.pl)",
+            "source": "children (plural noun)",
             "pronunciation": "da-lan",
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
@@ -2990,13 +3027,13 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "dembabi",
-            "source": "make him sin (v.c)",
+            "source": "make him sin (causative verb)",
             "pronunciation": "demba-bi",
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
           {
             "target": "daha",
-            "source": "often (ad)",
+            "source": "often (adverb)",
             "pronunciation": "da-ha",
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
@@ -3044,7 +3081,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"dalan\"",
             "correctAnswer": "children",
             "acceptedAnswers": [
-              "children (m.n.pl)",
+              "children (plural noun)",
               "children"
             ],
             "hint": "Review Classical Roots & Naming Traditions"
@@ -3132,6 +3169,16 @@ export const SOMALI_UNITS: CourseUnit[] = [
             "source": "sacrifice, victim",
             "pronunciation": "da-bi-had",
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "dembab — dagihi",
+            "source": "sin, commit a sin — throw stones, stone."
+          },
+          {
+            "target": "dadki dintai — dabīhad",
+            "source": "the dead — sacrifice, victim."
           }
         ],
         "authoredExercises": [
@@ -3231,7 +3278,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "dabai",
-            "source": "affirm, assure; kaga —, make certain",
+            "source": "affirm, assure; kaga dabai: make certain",
             "pronunciation": "da-bai",
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
@@ -3362,7 +3409,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "buro iss ku yal",
-            "source": "a range of mountains; burihi iss ku yil plur",
+            "source": "a range of mountains (pl. burihi iss ku yil)",
             "pronunciation": "bu-ro iss ku yal",
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
@@ -3374,7 +3421,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "buro‘",
-            "source": "a mound of sand; bura‘ha",
+            "source": "a mound of sand (def. bura‘ha)",
             "pronunciation": "bu-ro‘",
             "hint": "Rev. Fr. Evangelist de Larajasse, Somali-English Dictionary (1897 — Public Domain)"
           },
@@ -3388,7 +3435,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Wahha inđála, ninki an oghòn lahain, ya inđala.",
-            "source": "He that is blind is the man who knows nothing, he is blind ."
+            "source": "He that is blind is the man who knows nothing, he is blind."
           }
         ],
         "authoredExercises": [
@@ -3433,7 +3480,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Somali term for \"a range of mountains; burihi iss ku yil\": ___",
+            "prompt": "Complete the Somali term for \"a range of mountains (pl. burihi iss ku yil)\": ___",
             "correctAnswer": "buro iss ku yal",
             "options": [
               "da‘nin",
@@ -3457,101 +3504,98 @@ export const SOMALI_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "somali-larajasse-1897-preface-fauna-currency",
-        "title": "Preface Minimal Pairs, East African Fauna, Currency & Clan",
+        "title": "Preface Minimal Pairs, East African Fauna, Currency & Clan Idioms",
         "icon": "Compass",
         "description": "Learn the vowel-length minimal pairs in De Larajasse's 1897 Preface, East African antelope names, rupee currency, and Ogaden/Darod dialect idioms.",
         "tips": "De Larajasse (1897, pp. vii–viii) contrasts long vs. short vowels in sōr ('food') vs. kol ('time') and gūr ('marriage') vs. gur ('pick up'), and notes on p. 118 that rubiad ('rupee', pl. rubabi) contracts to rubod in counting.",
         "culturalNote": "Source attribution: Rev. Fr. Evangelist de Larajasse, 'Somali-English and English-Somali Dictionary' (London: Kegan Paul, Trench, Trübner & Co., 1897 — Public Domain).",
         "words": [
           {
-            "target": "ader (ah-dare)",
+            "target": "ader",
             "source": "Paternal uncle",
-            "pronunciation": "ader"
+            "pronunciation": "ah-dare"
           },
           {
             "target": "sōr vs. kol",
             "source": "Food vs. time",
-            "pronunciation": "sōr-vs-kol"
+            "pronunciation": "sohr vs. kol"
           },
           {
             "target": "gūr vs. gur",
             "source": "Marriage vs. pick up",
-            "pronunciation": "gūr-vs-gur"
+            "pronunciation": "goor vs. gur"
           },
           {
             "target": "maya (matha)",
             "source": "No",
-            "pronunciation": "maya"
+            "pronunciation": "ma-ya"
           },
           {
             "target": "si‘g,—gi",
             "source": "Coke's hartebeest",
-            "pronunciation": "sig"
+            "pronunciation": "si‘g"
           },
           {
             "target": "garanug,—ti & lig,—gi",
             "source": "Female & male gerenuk",
-            "pronunciation": "garanug"
+            "pronunciation": "ga-ra-nug & lig"
           },
           {
             "target": "adéryo,—adi, adéryo ‘ari,—gi & godir,—ki",
             "source": "Female, lesser & male greater kudu",
-            "pronunciation": "adéryo"
+            "pronunciation": "a-der-yo & go-dir"
           },
           {
             "target": "b‘e‘id / bi‘‘id,—ki",
             "source": "Beisa oryx",
-            "pronunciation": "beid"
+            "pronunciation": "b‘e-‘id"
           },
           {
             "target": "sagaro / sakaro,—adi",
             "source": "Dik-dik",
-            "pronunciation": "sagaro"
+            "pronunciation": "sa-ga-ro"
           },
           {
             "target": "dabatag,—ti",
             "source": "Clarke's roebuck",
-            "pronunciation": "dabatag"
+            "pronunciation": "da-ba-tag"
           },
           {
-            "target": "rubiad,—di & rubi,—gi",
-            "source": "Rupee & half-rupee",
-            "pronunciation": "rubiad"
-          },
-          {
-            "target": "8 annas)",
-            "source": "8 annas)",
-            "pronunciation": "rubiad"
+            "target": "rubiad,—di (16a) & rubi,—gi (8a)",
+            "source": "Rupee (16 annas) & half-rupee (8 annas)",
+            "pronunciation": "ru-bi-ad & ru-bi"
           },
           {
             "target": "rubiadda i sarrif!",
             "source": "Change me the rupee!",
-            "pronunciation": "rubiadda-i-sarrif"
+            "pronunciation": "ru-bi-ad-da i sar-rif"
           },
           {
             "target": "wa debai / wa i debai",
-            "source": "Ogaden, Dulbanteh & Darod dialect locution",
-            "pronunciation": "wa-debai"
+            "source": "He gave me (Ogaden, Dulbanteh & Darod dialect locution)",
+            "pronunciation": "wa de-bai / wa i de-bai"
           },
           {
-            "target": "daba galla,—hi vs. walo,—adi (pp. 26, 270)",
+            "target": "daba galla,—hi vs. walo,—adi",
             "source": "Earth squirrel ('Galla-tail') vs. rock squirrel",
-            "pronunciation": "daba-galla"
+            "pronunciation": "da-ba gal-la vs. wa-lo",
+            "hint": "De Larajasse (1897, pp. 26, 270)"
           },
           {
-            "target": "sawaheli,—gi / sawahili,—gi (pp. 123, 242, 266)",
+            "target": "sawaheli,—gi / sawahili,—gi",
             "source": "Swahili coast reference",
-            "pronunciation": "sawaheli"
+            "pronunciation": "sa-wa-he-li",
+            "hint": "De Larajasse (1897, pp. 123, 242, 266)"
           }
         ],
         "sentences": [
           {
             "target": "War san ban ku sida! Rubiadda i sarrif.",
-            "source": "I bring to you good news! Change me the rupee ."
+            "source": "I bring to you good news! Change me the rupee."
           },
           {
             "target": "Wa dantisi; aya dan leh? — Ana dan leh.",
-            "source": "It is his concern; who has anything to say? — I have something to say ."
+            "source": "It is his concern; who has anything to say? — I have something to say."
           }
         ],
         "authoredExercises": [
@@ -3588,7 +3632,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "somali-nilsson-2016-16-1-articles-tone-syllables",
-        "title": "Tonal Accent, Corbett's Agreement Criterion & Stem-Syllable",
+        "title": "Tonal Accent, Corbett's Agreement Criterion & Stem-Syllable Plural Rules",
         "icon": "BookOpen",
         "description": "Learn why Somali nouns have a single invariant gender and how the plural definite article {k} vs. {t} is predicted from singular gender and stem syllable count.",
         "tips": "In Nilsson (2016, Ch. 23, Table 5, p. 454), plural agreement targets have a single gender-neutral form: verb -aan/-een, pronoun ay/iyaga, demonstrative kuwan, possessive -ood. The plural definite article is {k} for all feminine nouns and for masculine nouns with monosyllabic stems before the plural suffix, and {t} for masculine nouns with polysyllabic stems (Tables 6 & 15).",
@@ -3596,67 +3640,67 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "ínan → ínan-k-a (M) vs. inán → inán-t-a (F)",
             "source": "the boy (penultimate H tone + {k}) vs. the girl (final H tone + {t})",
-            "pronunciation": "ínan-ínan-k-a-vs-inán"
+            "pronunciation": "i-nan-ka vs. i-nan-ta"
           },
           {
             "target": "gámbar-k-a (M) vs. sabáb-t-a (F)",
             "source": "the stool vs. the reason",
-            "pronunciation": "gámbar-k-a-vs-sabáb-t-a"
+            "pronunciation": "gam-bar-ka vs. sa-bab-ta"
           },
           {
             "target": "kuwan",
-            "source": "demonstrative",
-            "pronunciation": "kuwan"
+            "source": "these (gender-neutral plural demonstrative)",
+            "pronunciation": "ku-wan"
           },
           {
             "target": "-ood",
-            "source": "possessive",
+            "source": "their (gender-neutral 3PL possessive suffix)",
             "pronunciation": "-ood"
           },
           {
-            "target": "Feminine Plurals with {k}: sabab-a-h-a",
-            "source": "the reasons",
-            "pronunciation": "feminine-plurals-with-k"
+            "target": "sabab-a-h-a",
+            "source": "the reasons (feminine plural taking {k})",
+            "pronunciation": "sa-ba-ba-ha"
           },
           {
             "target": "mindi-ya-h-a",
             "source": "the knives",
-            "pronunciation": "mindi-ya-h-a"
+            "pronunciation": "min-di-ya-ha"
           },
           {
             "target": "hooyo-oyin-k-a",
             "source": "the mothers",
-            "pronunciation": "hooyo-oyin-k-a"
+            "pronunciation": "hoo-yo-o-yin-ka"
           },
           {
-            "target": "Masculine Monosyllabic Stems with {k}: miis-as-k-a",
-            "source": "the tables",
-            "pronunciation": "masculine-monosyllabic-stems-with"
+            "target": "miis-as-k-a",
+            "source": "the tables (masculine monosyllabic stem taking {k})",
+            "pronunciation": "mii-sas-ka"
           },
           {
             "target": "geed-a-h-a",
             "source": "the trees",
-            "pronunciation": "geed-a-h-a"
+            "pronunciation": "gee-da-ha"
           },
           {
             "target": "jilb-a-h-a",
             "source": "the knees",
-            "pronunciation": "jilb-a-h-a"
+            "pronunciation": "jil-ba-ha"
           },
           {
-            "target": "Masculine Polysyllabic Stems with {t}: gambar-ra-d-a",
-            "source": "the stools",
-            "pronunciation": "masculine-polysyllabic-stems-with"
+            "target": "gambar-ra-d-a",
+            "source": "the stools (masculine polysyllabic stem taking {t})",
+            "pronunciation": "gam-bar-ra-da"
           },
           {
             "target": "derbi-ya-d-a",
             "source": "the walls",
-            "pronunciation": "derbi-ya-d-a"
+            "pronunciation": "der-bi-ya-da"
           },
           {
             "target": "aabba-yaa-sh-a",
             "source": "the fathers",
-            "pronunciation": "aabba-yaa-sh-a"
+            "pronunciation": "aab-ba-yaa-sha"
           }
         ],
         "sentences": [
@@ -3668,7 +3712,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
       },
       {
         "id": "somali-nilsson-2016-16-2-collectives-corporates-generics",
-        "title": "5th-Declension Collectives, Arabic Broken Plurals, Corporate",
+        "title": "5th-Declension Collectives, Arabic Broken Plurals & Corporate Nouns",
         "icon": "Users",
         "description": "Practice syntactic (3SG) vs. semantic (3PL) agreement across 5th-declension collectives, Arabic broken plurals, lexical collectives, corporate nouns, and generic singulars.",
         "tips": "In Nilsson (2016, Ch. 23, pp. 458–460, Ex. 4), 5th-declension collectives like dibí-d-u ('the oxen') allow both 3PL (daaq-ay-aan) and 3SG.F (daaq-ay-saa) agreement, whereas regular plurals like dibi-ya-d-u allow ONLY 3PL (*Dibi-ya-d-u w-ay daaq-ay-saa is ungrammatical).",
@@ -3676,79 +3720,79 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "díbi-g-a → coll. dibí-d-a vs. pl. dibi-yá-d-a",
             "source": "the ox → collective vs. regular plural",
-            "pronunciation": "díbi-g-a-coll-dibí-d-a-vs"
+            "pronunciation": "di-bi-ga / di-bi-da / di-bi-ya-da"
           },
           {
             "target": "báabuur-k-a → coll. baabuúr-t-a vs. pl. baabuur-rá-d-a",
             "source": "the truck → collective vs. regular plural",
-            "pronunciation": "báabuur-k-a-coll-baabuúr-t-a-vs"
+            "pronunciation": "baa-buur-ka / baa-buur-ta / baa-buur-ra-da"
           },
           {
             "target": "búug-g-a → coll. buúg-t-a vs. pl. buug-ág-g-a",
             "source": "the book → collective vs. regular plural",
-            "pronunciation": "búug-g-a-coll-buúg-t-a-vs"
+            "pronunciation": "buug-ga / buug-ta / buu-gag-ga"
           },
           {
-            "target": "Dibí-d-u waa ay daaq-ay-aan / daaq-ay-saa vs. Dibi-ya-d-u w-ay",
-            "source": "The oxen (collective) are grazing [3PL or 3SG.F] vs. The oxen (true plural) are",
+            "target": "Dibí-d-u waa ay daaq-ay-aan / daaq-ay-saa vs. Dibi-ya-d-u w-ay daaq-ay-aan",
+            "source": "The oxen (collective) are grazing [3PL or 3SG.F] vs. The oxen (true plural) are grazing [3PL only]",
             "pronunciation": "di-bí-du waa ay daa-qa-yaan / daa-qay-saa / di-bi-ya-du",
             "hint": "Nilsson (2016, Ch. 23, pp. 458–460, Ex. 2 & 4)"
           },
           {
             "target": "kuraas-t-a (broken pl. coll.) vs. kursi-ya-d-a (regular pl.)",
             "source": "the chairs",
-            "pronunciation": "kuraas-t-a-vs-kursi-ya-d-a"
+            "pronunciation": "ku-raas-ta vs. kur-si-ya-da"
           },
           {
             "target": "culima-d-a / culimo-d-a",
             "source": "the scholars",
-            "pronunciation": "culima-d-a"
+            "pronunciation": "cu-li-ma-da"
           },
           {
             "target": "macallimiin-t-a",
             "source": "the teachers",
-            "pronunciation": "macallimiin-t-a"
+            "pronunciation": "ma-cal-li-miin-ta"
           },
           {
             "target": "lo’-d-a",
             "source": "dairy cattle",
-            "pronunciation": "lo-d-a"
+            "pronunciation": "lo’-da"
           },
           {
             "target": "dumar-k-a",
             "source": "women",
-            "pronunciation": "dumar-k-a"
+            "pronunciation": "du-mar-ka"
           },
           {
             "target": "dad-k-a",
             "source": "people",
-            "pronunciation": "dad-k-a"
+            "pronunciation": "dad-ka"
           },
           {
             "target": "rag-g-a",
             "source": "men",
-            "pronunciation": "rag-g-a"
+            "pronunciation": "rag-ga"
           },
           {
             "target": "koox-d-a",
             "source": "group/team",
-            "pronunciation": "koox-d-a"
+            "pronunciation": "koox-da"
           },
           {
             "target": "geel-a",
             "source": "camel herd",
-            "pronunciation": "geel-a"
+            "pronunciation": "gee-la"
           },
           {
             "target": "Diin-k-u",
             "source": "the turtle",
-            "pronunciation": "diin-k-u"
+            "pronunciation": "diin-ku"
           }
         ],
         "sentences": [
           {
             "target": "Carruur-t-u waa ay qayli-n-ay-aan",
-            "source": "The children are shouting [3PL semantic agreement vs. 3SG.F syntactic agreement] ."
+            "source": "The children are shouting [3PL semantic agreement vs. 3SG.F syntactic agreement]."
           }
         ]
       }
@@ -3770,26 +3814,28 @@ export const SOMALI_UNITS: CourseUnit[] = [
         "tips": "In Kirk (1903, pp. 5–12), -ki/-ti marks remote or previously mentioned referents, -ka/-ta marks present/general referents, and -ku/-tu marks the grammatical subject before the focus marker wa (nin-ku wa yimi 'the man came').",
         "words": [
           {
-            "target": "nin-ki / naag-ti (remote/past)",
+            "target": "nin-ki / naag-ti (-i), nin-ka / naag-ta (-a), nin-ku / naag-tu (-u); isha, usha",
             "source": "Three vowel grades of the Somali definite article and feminine l + t → sh fusion",
             "pronunciation": "nin-ki / nin-ka / nin-ku / i-sha / u-sha",
             "hint": "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. 5–8)"
           },
           {
-            "target": "4 Demonstratives: kan / tan",
+            "target": "kan / tan, kèr / tèr, kas / tas, kò / tò; innaga vs. annaga",
             "source": "Four distance grades of Somali demonstratives and inclusive vs. exclusive 1PL pronouns",
             "pronunciation": "kan tan / ker ter / kas tas / ko to / in-na-ga / an-na-ga",
             "hint": "Lt. J. W. C. Kirk, Notes on the Somali Language (OUP, 1903, pp. 9–12)"
           },
           {
-            "target": "ATR Vowel Harmony Minimal Pairs: dhis, hel, qod, tus, kab, hees, laab",
-            "source": "Series A (-ATR, higher F1) vs. Series B (+ATR, lower F1) morphological and lexical",
-            "pronunciation": "atr-vowel-harmony-minimal"
+            "target": "dhis, hel, qod, tus, kab (-ATR) vs. dhis-i, hel-i, qod-i, tus-i, kab-id (+ATR)",
+            "source": "Series A (-ATR, higher F1) vs. Series B (+ATR, lower F1) morphological and lexical harmony pairs",
+            "pronunciation": "dhis hel qod tus kab",
+            "hint": "Kimper et al. (2019, Ch. 11, pp. 199–212)"
           },
           {
-            "target": "Marka / Af-Ashraaf Morphology & Northern Swahili–Southern Somali Contact",
-            "source": "Southern Somali Af-Ashraaf nominal/verbal paradigms and historical contact",
-            "pronunciation": "af-ash-raaf / mwii-ni / ba-ju-ni"
+            "target": "Af-Ashraaf (Marka) & Brava (Chimiini / Bajuni)",
+            "source": "Southern Somali Af-Ashraaf nominal/verbal paradigms and Northern Swahili contact",
+            "pronunciation": "af-ash-raaf / mwii-ni / ba-ju-ni",
+            "hint": "Green & Jones (2019, Ch. 7) & Nurse (2019, Ch. 33)"
           }
         ],
         "sentences": [
@@ -3878,7 +3924,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "Nabad!",
             "source": "Hello",
-            "pronunciation": "nah-bahd / mah nah-bahd bah"
+            "pronunciation": "nah-bahd"
           },
           {
             "target": "soo dhawoow",
@@ -3954,7 +4000,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "kow",
             "source": "One",
-            "pronunciation": "kow / hal"
+            "pronunciation": "kow"
           },
           {
             "target": "laba",

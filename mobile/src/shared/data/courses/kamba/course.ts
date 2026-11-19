@@ -1992,7 +1992,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
               "Mother",
               "Child"
             ],
-            "hint": "Starts with \"Ch…\" (5 letters)"
+            "hint": "Plural: Twana (Class 12/13 diminutive ka-/tũ-)"
           },
           {
             "type": "multiple_choice",
@@ -2092,6 +2092,12 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "Hinde: mume akwa ('my husband')"
           },
           {
+            "target": "Mũtanya",
+            "source": "Judge / Arbitrator",
+            "pronunciation": "mu-tanya",
+            "hint": "Elder who arbitrates disputes in the council"
+          },
+          {
             "target": "Mũtongoi",
             "source": "Guide / Caravan leader",
             "pronunciation": "mu-tongoi",
@@ -2103,19 +2109,19 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "ka-bi-si"
           },
           {
-            "target": "mundu",
-            "source": "Man",
+            "target": "mundu, pl. andu",
+            "source": "Man (pl. People)",
             "pronunciation": "mundu"
           }
         ],
         "sentences": [
           {
-            "target": "Mũnyanya — Mũme",
-            "source": "Friend — Husband."
+            "target": "Mũnyanya wakwa na mũme wake me mũsyĩ.",
+            "source": "My friend and her husband are at home."
           },
           {
-            "target": "Mũtongoi — kabisi",
-            "source": "Guide — Boy."
+            "target": "Mũtongoi nũũtongoesya andũ na kavĩsĩ nzĩanĩ.",
+            "source": "The guide is leading the people and the boy on the path."
           }
         ],
         "authoredExercises": [
@@ -2326,7 +2332,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
               "Star",
               "Moon"
             ],
-            "hint": "Starts with \"St…\" (4 letters)"
+            "hint": "Night sky body recorded by Hinde (1904)"
           },
           {
             "type": "multiple_choice",
@@ -2844,13 +2850,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Nthoogo",
             "source": "Beans",
-            "pronunciation": "nthoo-go / nthzuu",
+            "pronunciation": "nthoo-go",
             "hint": "Hinde: inthoogo; tree beans: nthzuu"
           },
           {
             "target": "Nthzũũ",
-            "source": "pulses)",
-            "pronunciation": "nthoo-go / nthzuu",
+            "source": "Pigeon peas / Tree beans (pulses)",
+            "pronunciation": "nthzuu",
             "hint": "Hinde: inthoogo; tree beans: nthzuu"
           },
           {
@@ -2939,7 +2945,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
               "Maize",
               "Food"
             ],
-            "hint": "Starts with \"Mi…\" (4 letters)"
+            "hint": "Fresh dairy liquid (Hinde: iya; sour milk: kalia)"
           },
           {
             "type": "multiple_choice",
@@ -3501,13 +3507,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Kĩvĩla",
             "source": "Stool",
-            "pronunciation": "ki-vi-la / ki-tumbi",
+            "pronunciation": "ki-vi-la",
             "hint": "Hinde Ulu: kibilla; Nganyawa: kitumbi"
           },
           {
             "target": "Kĩtũmbĩ",
             "source": "Chair",
-            "pronunciation": "ki-vi-la / ki-tumbi",
+            "pronunciation": "ki-tumbi",
             "hint": "Hinde Ulu: kibilla; Nganyawa: kitumbi"
           },
           {
@@ -3519,13 +3525,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Kĩkũũ",
             "source": "Calabash",
-            "pronunciation": "ki-kuu / kithanzya",
+            "pronunciation": "ki-kuu",
             "hint": "Hinde Ulu: kikuu; Nganyawa: kithalzia"
           },
           {
             "target": "Kĩthanzya",
             "source": "Gourd",
-            "pronunciation": "ki-kuu / kithanzya",
+            "pronunciation": "kithanzya",
             "hint": "Hinde Ulu: kikuu; Nganyawa: kithalzia"
           },
           {
@@ -3555,13 +3561,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Ũlĩ",
             "source": "Rope",
-            "pronunciation": "uli / ndi",
+            "pronunciation": "uli",
             "hint": "Hinde Ulu: uli; Nganyawa: ndi"
           },
           {
             "target": "Ndi",
             "source": "Cord",
-            "pronunciation": "uli / ndi",
+            "pronunciation": "ndi",
             "hint": "Hinde Ulu: uli; Nganyawa: ndi"
           }
         ],
@@ -4327,13 +4333,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Thi",
             "source": "Go away",
-            "pronunciation": "thi / enda",
+            "pronunciation": "thi",
             "hint": "Hinde Ulu: eenda or thi"
           },
           {
             "target": "Enda",
             "source": "Leave",
-            "pronunciation": "thi / enda",
+            "pronunciation": "enda",
             "hint": "Hinde Ulu: eenda or thi"
           },
           {
@@ -4616,13 +4622,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "muthenia monthe (Ulu)",
             "source": "Always",
-            "pronunciation": "muthe-nia monthe / ma-tu-ku onthe",
+            "pronunciation": "muthe-nia monthe",
             "hint": "Hildegarde Hinde (1904) — Kamba"
           },
           {
             "target": "matuku onthe",
             "source": "Every day",
-            "pronunciation": "muthe-nia monthe / ma-tu-ku onthe",
+            "pronunciation": "ma-tu-ku onthe",
             "hint": "Hildegarde Hinde (1904) — Kamba"
           },
           {
@@ -4774,13 +4780,13 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Muitu (pl. Weitu)",
             "source": "Young unmarried girl",
-            "pronunciation": "mui-tu / mu-ndu mu-kaa",
+            "pronunciation": "mui-tu",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
             "target": "Mundu mukaa",
-            "source": "maiden",
-            "pronunciation": "mui-tu / mu-ndu mu-kaa",
+            "source": "Maiden / Young unmarried woman",
+            "pronunciation": "mu-ndu mu-kaa",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, p. 49"
           },
           {
@@ -4823,7 +4829,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kivisi → Mwanake → Nthele → Mutumia wa Kisuka → Mutumia wa Nzama → Mutumia wa Ithembo.",
-            "source": "Boy → Young warrior → Married householder → Bereavement-council elder → Judicial-council elder → Sacred grove elder ."
+            "source": "Boy → Young warrior → Married householder → Bereavement-council elder → Judicial-council elder → Sacred grove elder."
           }
         ],
         "authoredExercises": [
@@ -4922,8 +4928,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Ngia (hopper stage: Kititi)",
-            "source": "Locusts (and hopper stage Kititi)."
+            "target": "Ngia na kititi nĩsyonaniwe mũũndanĩ.",
+            "source": "Locusts and their hopper stage were seen in the farm."
           }
         ],
         "authoredExercises": [
@@ -4992,7 +4998,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "kamba-hobley-1910-crafts-calendar-riddles-18-1",
-        "title": "Ibila Stools (8 Milia Patterns), 8 Musical Instruments, 11",
+        "title": "Ibila Stools (8 Milia Patterns), 8 Musical Instruments & 11-Month Calendar",
         "icon": "Music",
         "description": "Study the 5 stool woods, 8 wire-inlay patterns (Milia), 8 musical instruments, 11-month calendar, and 5 Kweta ndai riddles recorded by Hobley (1910, pp. 30–38, 52–55).",
         "tips": "In Chapter VII (pp. 35–38), Hobley documents how Kamba elders carve stools (Ibila, sg. Kivila) from 5 woods (Kiwazi/Muasi, Muinga, Kivuti, Mana, Mutungu) and inlay coiled brass and iron wire in 8 named symmetry patterns (Milia). In Chapter X (pp. 53–54), he records the 11 months (Mwa to Mubiu) and 5 Kweta ndai riddles.",
@@ -5003,14 +5009,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "ibila"
           },
           {
-            "target": "5 Woods: Kiwazi (Muasi), Muinga, Kivuti, Mana, Mutungu",
+            "target": "Kiwazi (Muasi), Muinga, Kivuti, Mana, Mutungu",
             "source": "5 traditional stool-carving woods",
-            "pronunciation": "5-woods-kiwazi"
+            "pronunciation": "kiwazi-muinga-kivuti-mana-mutungu"
           },
           {
-            "target": "8 Milia Patterns: Kithaitha, Vioo, Eumu, Kitui, Katungi, Keinga, Kizoro",
+            "target": "Milia: Kithaitha, Vioo, Eumu, Kitui, Katungi, Keinga, Kizoro",
             "source": "Eight named brass/copper/iron wire-inlay designs on Kamba elders' stools",
-            "pronunciation": "8-milia-patterns-kithaitha",
+            "pronunciation": "milia-kithaitha-vioo",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. VII, pp. 36–38"
           },
           {
@@ -5020,34 +5026,34 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. VI, pp. 30–31"
           },
           {
-            "target": "11 Months: 1. Mwa, 2. Wima, 3. Wiu, 4. Mweu, 5. Onkonono, 6. Thandatu",
+            "target": "Mwa, Wima, Wiu, Mweu, Onkonono, Thandatu, Muonza, Nyanya, Kenda, Ikumi, Mubiu",
             "source": "The 11 traditional Kamba months and the 2 rainy seasons (Oct–Dec & Mar–May)",
-            "pronunciation": "11-months-1-mwa",
+            "pronunciation": "mwa-wima-wiu-mweu",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. X, p. 53"
           },
           {
             "target": "Kweta ndai: (1) Nduma — Muumbi",
-            "source": "Five Kamba riddles: (1) Clouds hiding moon",
+            "source": "Riddle (1): Clouds hiding the moon",
             "pronunciation": "kweta-ndai-nduma-muumbi"
           },
           {
             "target": "(2) O-Selia — Kimbu",
-            "source": "(2) Chameleon",
+            "source": "Riddle (2): Chameleon",
             "pronunciation": "o-selia-kimbu"
           },
           {
             "target": "(3) Mwetu etiki — Kulotoi",
-            "source": "(3) Mirage",
+            "source": "Riddle (3): Mirage",
             "pronunciation": "mwetu-etiki-kulotoi"
           },
           {
             "target": "(4) Tuna Kwatana — Nzia na nzia",
-            "source": "(4) Crossing paths",
+            "source": "Riddle (4): Crossing paths",
             "pronunciation": "tuna-kwatana-nzia-na"
           },
           {
             "target": "(5) Wo wiwa — Kinto Kitheo",
-            "source": "(5) Bare earth patch",
+            "source": "Riddle (5): Bare earth patch",
             "pronunciation": "wo-wiwa-kinto-kitheo"
           }
         ],
@@ -5097,7 +5103,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
       },
       {
         "id": "kamba-hobley-1910-nzaiko-law-religion-18-2",
-        "title": "Nzaiko Initiation (27 Secret Words & Musai Sticks), Kithito",
+        "title": "Nzaiko Initiation (27 Secret Words & Musai Sticks) & Kithito Oath",
         "icon": "Scale",
         "description": "Master the ceremonial vocabulary of Nzaikonini, Nzaikoneni & Mbabani (pp. 68–76), Kamba customary law & blood-money (pp. 77–84), religion & medicine (pp. 85–105), and the 6 Wano folktales (pp. 107–118).",
         "tips": "During Nzaiko initiation (Ch. XIII, pp. 68–76), initiates learn 27 ceremonial code words (e.g., Muoi 'sun', Kielelo 'moon', Ngai 'water', Kioni 'eye', Kiweto 'bow') and interpret pictographic Musai sticks. In Ch. XIV (pp. 77–84) and Appendix (4) (p. 168), Hobley documents the Kithito oath and blood-compensation (Kiti).",
@@ -5113,14 +5119,14 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "musai"
           },
           {
-            "target": "Nzaiko Secret Lexicon: Muoi (sun), Kielelo (moon), Ngai (water), Kioni",
-            "source": "Ceremonial code words taught to initiates during the Nzaiko seclusion",
-            "pronunciation": "nzaiko-secret-lexicon-muoi",
+            "target": "Muoi, Kielelo, Ngai, Kioni, Kiweto",
+            "source": "Nzaiko ceremonial code words (sun, moon, water, eye, bow) taught during seclusion",
+            "pronunciation": "muoi-kielelo-ngai-kioni-kiweto",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIII, pp. 71–72"
           },
           {
-            "target": "Kiti (Blood-Money): 11 cows & 1 bull (man) / 4 cows & 1 bull (woman)",
-            "source": "Traditional homicide blood-compensation and peace-reconciliation sacrifice",
+            "target": "Kiti (Ndiu)",
+            "source": "Traditional homicide blood-compensation (11 cows & 1 bull for a man; 4 cows & 1 bull for a woman) & peace sacrifice",
             "pronunciation": "ki-ti / ndi-u",
             "hint": "C. W. Hobley (1910) Ethnology of A-Kamba, Ch. XIV, pp. 78–80"
           },
@@ -5150,15 +5156,15 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "mundu-mue"
           },
           {
-            "target": "Makwa & Thabu (purified by Ngondu)",
-            "source": "Ritual taboos & herbal purification",
+            "target": "Makwa & Thabu (Ngondu)",
+            "source": "Ritual taboos & Ngondu herbal purification",
             "pronunciation": "makwa-thabu"
           }
         ],
         "sentences": [
           {
             "target": "Ku-ringa Kithito: \"Ethiwa nusembie... Kithito kiu nikimwue!\"",
-            "source": "Swearing on the Kithito upon seven stones: \"If he has lied or stolen... may this Kithito strike him!\" ."
+            "source": "Swearing on the Kithito upon seven stones: \"If he has lied or stolen... may this Kithito strike him!\""
           }
         ]
       }
@@ -5174,7 +5180,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "kamba-lindblom-1920-dialects-nzaiko-nthoni-19-1",
-        "title": "4 Dialects, 12 Ethnonyms, 3 Nžaīko Initiations",
+        "title": "4 Dialects, 12 Ethnonyms & 3 Nžaīko Initiations",
         "icon": "Users",
         "description": "Study Ukamba's 4 regional divisions, 12 neighbour ethnonyms, childbirth rites, the 3 Nžaīko initiations, marriage, the 11 Kwiūa name-taboo pairs, 7 women's words, and kinship terms (pp. 1–110, 569–574).",
         "tips": "In Chapters I–VII (pp. 9–110) and Addenda (pp. 569–574), Lindblom documents the 4 divisions (Ulu/Yulu, Kitui/Aþaisu, Kīkumbuliu, Mumonī), the 3 Nžaīko degrees (Kaβīu, Mbusīa with Musaī sticks Figs. 1–8 & sand drawings Figs. 9–16, and secret men's Mbæβanī), and the 11 Kwiūa in-law avoidance substitutions.",
@@ -5182,38 +5188,38 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "kīma kīa nžavī (Donyo Sabuk)",
             "source": "The nžavī bean mountain",
-            "pronunciation": "kīma-kīa-nžaī"
+            "pronunciation": "kīma-kīa-nžavī"
           },
           {
-            "target": "mutītu wa ndeī (Mtoto Andei)",
+            "target": "mutītu wa ndeī (Mtito Andei)",
             "source": "The vulture forest",
             "pronunciation": "mutītu-wa-ndeī"
           },
           {
             "target": "Ulu, Kitui, Kīkumbuliu & Mumonī",
             "source": "The 4 Kamba divisions and dialects",
-            "pronunciation": "ulu"
+            "pronunciation": "ulu-kitui-kikumbuliu-mumoni"
           },
           {
-            "target": "aswī",
-            "source": "kīswī / uswīnī",
+            "target": "aswī (kīswī / uswīnī)",
+            "source": "Wagiriama people (Giriama language / Giriama country)",
             "pronunciation": "aswī"
           },
           {
-            "target": "1. nžaīko īla nīnī (kavīu / īekondə) → 2. nžaīko īla nænə → 3. nžaīko",
-            "source": "The 3 Kamba initiations: knife circumcision, 7-day rhinoceros-roar initiation",
-            "pronunciation": "1-nžaīko-īla-nīnī",
+            "target": "1. nžaīko īla nīnī (kavīu / īekondə) → 2. nžaīko īla nænə (mbusīa) → 3. nžaīko īa aumə (mbævanī)",
+            "source": "The 3 Kamba initiations: 1st circumcision, 2nd 7-day rhinoceros-roar initiation, and 3rd secret men's initiation",
+            "pronunciation": "nzaiko-ila-nini-ila-nene",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. III, pp. 42–71 & Figs. 1–16"
           },
           {
             "target": "nðonī",
-            "source": "In-law avoidance, 11 married women's name-taboo substitutions (pp. 93–94), and 7",
+            "source": "In-law avoidance, 11 married women's name-taboo substitutions (pp. 93–94), and 7 women's vocabulary items (p. 574)",
             "pronunciation": "nðonī",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. V pp. 89–98 & Addenda p. 574"
           },
           {
             "target": "naū/tata/asa (au, īthə)",
-            "source": "Kinship terms, young bride (ŋga-) & mother teknonym (sīo-) prefixes, flexed",
+            "source": "Kinship terms, young bride (ŋga-) & mother teknonym (sīo-) prefixes, flexed burial & homestead abandonment",
             "pronunciation": "naū",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. VI–VII, pp. 99–110"
           }
@@ -5221,7 +5227,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Ni matindu ma andu ala ma tænə. | Nīnīonīə nðakamə nīnaolulə kana.",
-            "source": "It is a custom handed down from our fathers . | I saw blood, I turned the child (olula kana rite, p. 34)."
+            "source": "It is a custom handed down from our fathers. | I saw blood, I turned the child (olula kana rite, p. 34)."
           },
           {
             "target": "Kīumbu kī, nītukīə ukuvoīa, utunæŋgə wumbu wa uīkīīa asīŋgī!",
@@ -5231,51 +5237,51 @@ export const KAMBA_UNITS: CourseUnit[] = [
       },
       {
         "id": "kamba-lindblom-1920-clans-law-warfare-19-2",
-        "title": "25+ Mbaī Clans & Brands",
+        "title": "25+ Mbaī Clans, Brands, Ordeals & Warfare",
         "icon": "Shield",
         "description": "Master the 25+ Kamba clans, totems, taboos, cattle/arrow/beehive marks, 5 meat-sharing grades of Atumīa, blood-money, Kīthītū & Ndundu oaths, 6 ordeals, Kīŋgolə, and the 3 war divisions (pp. 111–205).",
         "tips": "In Chapters VIII–XII (pp. 113–205), Lindblom documents the 23 Machakos clans & sub-clans, the 5 meat-sharing promotions (kukula/kukusa), the 7-stone kīþītū oath (Fig. 52), the 6 judicial ordeals, kīŋgolə lynch-law, and the 3 tactical war divisions (muena, ŋgīla, īta).",
         "words": [
           {
-            "target": "mbaī",
-            "source": "niamu īaku nī īaū?",
+            "target": "mbaī (niamu īaku nī īaū?)",
+            "source": "Clan / Totem ('What is your clan animal?')",
             "pronunciation": "mbaī"
           },
           {
             "target": "aæī",
-            "source": "never swing a child",
+            "source": "Clan taboo: never swing a child lest it vanish in the air",
             "pronunciation": "aæī"
           },
           {
             "target": "kīo",
-            "source": "cattle brands, Figs. 17–22",
+            "source": "Clan cattle brands (Figs. 17–22)",
             "pronunciation": "kīo"
           },
           {
-            "target": "mwatū beehive marks",
-            "source": "Figs. 39–51",
-            "pronunciation": "mwatū-beehive-marks"
+            "target": "mwatū",
+            "source": "Hollowed log beehive with clan marks (Figs. 39–51)",
+            "pronunciation": "mwatū"
           },
           {
-            "target": "Nsīlī Law: Ulu man = 11 cows + 1 bull; Ulu woman = 4–5 cows + 1 bull",
-            "source": "Homicide blood-money schedule in Ulu and Kitui, widow's 'cow of the broken bow'",
+            "target": "nsīlī (ŋgombə īa ndulota / ŋgombə īa wumo / mukoə)",
+            "source": "Homicide blood-money schedule (Ulu: 11 cows + 1 bull for a man, 4–5 cows + 1 bull for a woman) & widow's 'cow of the broken bow'",
             "pronunciation": "nsi-li / ngo-mbe ia ndu-lo-ta / ngo-mbe ia wu-mo / mu-ko-e",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XI, pp. 154–161"
           },
           {
-            "target": "6 Ordeals",
-            "source": "kīthītū kīa kīvīu, lip needle, kīuma, ŋgunīko, mbæŋgolo, burning basket",
-            "pronunciation": "6-ordeals"
+            "target": "kīthītū kīa kīvīu, kīuma, ŋgunīko, mbæŋgolo",
+            "source": "Six traditional judicial ordeals (red-hot knife, lip needle, iron bead, medicine lid, gizzard, burning basket)",
+            "pronunciation": "kithitu-kia-kiviu"
           },
           {
-            "target": "4 kīumo curses",
-            "source": "revoked by kīathīmo",
-            "pronunciation": "4-kīumo-curses"
+            "target": "kīumo (revoked by kīathīmo)",
+            "source": "Four grades of traditional curse (revoked by kīathīmo blessing)",
+            "pronunciation": "kīumo-kīathīmo"
           },
           {
-            "target": "3 War Divisions: 1. muena, 2. ŋgīla (seizing cattle), 3. īta",
-            "source": "Three tactical attack divisions, gazelle-horn war-flute, weapon purification",
-            "pronunciation": "3-war-divisions-1",
+            "target": "muena, ŋgīla & īta",
+            "source": "Three tactical war divisions (flank, cattle-seizing detachment, main force)",
+            "pronunciation": "muena-ngila-ita",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XII, pp. 186–205 & Figs. 53–54"
           }
         ],
@@ -5286,7 +5292,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Aka-vī, aka-vī, mæ-kuka, mæ-kuka! | Nītusæuvīə uta wa mwana.",
-            "source": "The Masai, the Masai, they are coming, they are coming! (blown on the ŋgulī war-flute, p. 192) | We shall purify our son's bow ."
+            "source": "The Masai, the Masai, they are coming, they are coming! (blown on the ŋgulī war-flute, p. 192) | We shall purify our son's bow."
           }
         ],
         "authoredExercises": [
@@ -5306,93 +5312,93 @@ export const KAMBA_UNITS: CourseUnit[] = [
       },
       {
         "id": "kamba-lindblom-1920-religion-medicine-calendar-19-3",
-        "title": "Religion (Aīmu, Īthæmbo & Muluŋgu/Mumbī/Mwatwaŋgagī), Kuausīa",
+        "title": "Religion (Aīmu, Īthæmbo & Muluŋgu/Mumbī/Mwatwaŋgagī) & Kuausīa",
         "icon": "Sparkles",
         "description": "Learn Kamba soul/breath dualism, sacred grove sacrifices, foreign spirit exorcism, Supreme Creator epithets, divination, epidemic expulsion, 17 ŋgondu substances, 45+ medicinal plants, 9 famines, and the 3 11-month calendars (pp. 207–354).",
         "tips": "In Chapters XIII–XIX (pp. 209–354), Lindblom documents Muluŋgu/Ŋgaī's epithets Mumbī ('Potter') and Mwatwaŋgagī ('Cleaver'), bow-and-gourd divination (kuausīa, Fig. 60), the unīka/mwītano epidemic arch, 17 ŋgondu purification herbs, 9 named famines (1836–1909), and 3 lists of the 11-month calendar.",
         "words": [
           {
             "target": "kīu (soul/shadow) vs. thaīu / mīæva (breath/life)",
-            "source": "Soul vs. breath, ancestral spirits & sacred groves, exorcism dances, and Supreme",
-            "pronunciation": "kīu-vs-þaīu",
+            "source": "Soul/shadow vs. breath/life, ancestral spirits & sacred groves, exorcism dances, and Supreme Creator epithets",
+            "pronunciation": "kīu-vs-thaīu",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Ch. XIII, pp. 209–253 & Figs. 55–59"
           },
           {
-            "target": "kuausīa",
-            "source": "uta musical bow + kītītī gourd with mbu pebbles, Fig. 60",
+            "target": "kuausīa (uta + kītītī + mbu)",
+            "source": "Divination with musical bow and calabash gourd containing mbu pebbles (Fig. 60)",
             "pronunciation": "kuausīa"
           },
           {
-            "target": "ŋgomakomī woodpecker augury",
-            "source": "6 directions: mīsīa, ŋguŋguo, īna, vwathī wa aumə, womu, vwathī wa aka",
-            "pronunciation": "ŋgomakomī-woodpecker-augury"
+            "target": "ŋgomakomī (mīsīa, ŋguŋguo, īna, vwathī wa aumə, womu, vwathī wa aka)",
+            "source": "Woodpecker augury across 6 directional bearings",
+            "pronunciation": "ŋgomakomī"
           },
           {
-            "target": "Odd number taboo",
-            "source": "mwa & 7",
-            "pronunciation": "odd-number-taboo"
+            "target": "mwa & mũonza (7)",
+            "source": "Ritual odd-number taboo and auspicious numeral seven",
+            "pronunciation": "mwa-muonza"
           },
           {
-            "target": "9 Historical Famines (īoa): 1. malakwə (1908–09), 2. muvuŋga / ŋgalī",
-            "source": "The 9 named historical famines (1836–1909), 3 regional lists of the 11-month",
-            "pronunciation": "9-historical-famines-1",
+            "target": "īoa (1. malakwə 1908–09, 2. muvuŋga / ŋgalī 1898–99)",
+            "source": "The 9 named historical famines (1836–1909) and 3 regional lists of the 11-month calendar",
+            "pronunciation": "ioa-malakwe-muvunga",
             "hint": "Gerhard Lindblom (1920) The Akamba in British East Africa, Chs. XVII–XVIII, pp. 338–342"
           }
         ],
         "sentences": [
           {
             "target": "Mumbī, we umbīə mwana uyu, umuīkīə næsa! | Mwænə mwīmu, osa nusu!",
-            "source": "O Fashioner (Mumbī), Thou who hast fashioned this child, keep it well!  | Owner of the spirit, take a half-rupee!"
+            "source": "O Fashioner (Mumbī), Thou who hast fashioned this child, keep it well! | Owner of the spirit, take a half-rupee!"
           }
         ]
       },
       {
         "id": "kamba-lindblom-1920-arts-economy-addenda-19-4",
-        "title": "Dress, Teeth-Chipping & Bone False Teeth, 11 Instruments",
+        "title": "Dress, Teeth-Chipping, 11 Instruments & Material Culture",
         "icon": "Hammer",
         "description": "Master Kamba dress, teeth-chipping (kuseuvīa maīo) & pegged false teeth, 11 musical instruments, games, the 13-part nyumba floor plan, archery & 7 traps, 28 livestock terms, beekeeping, iron/chain-making, and Addenda (pp. 355–607).",
         "tips": "In Parts IV–VI and Addenda (pp. 355–607, Figs. 64–167), Lindblom documents the 700-cylinder brass apron (kīmæŋgo), bone false teeth pegged into tooth roots, 11 musical instruments, the 13-part hut plan (Fig. 125), 7 traps (Figs. 134–138), 28 livestock terms (pp. 486–487), munīo S-link chains (Fig. 159), and the 3 basic color roots (p. 580).",
         "words": [
           {
-            "target": "ua",
-            "source": "stretched on kīvao",
+            "target": "ua (kīvao)",
+            "source": "Animal hide stretched on kīvao pegs",
             "pronunciation": "ua"
           },
           {
             "target": "muthīta",
-            "source": "rear bifurcated tail, Fig. 77",
-            "pronunciation": "muþīta"
+            "source": "Woman's rear bifurcated leather dress-tail (Fig. 77)",
+            "pronunciation": "muthīta"
           },
           {
-            "target": "kīmæŋgo",
-            "source": "4.5-lb apron of 700 brass nžalī cylinders, Fig. 78",
+            "target": "kīmæŋgo (nžalī)",
+            "source": "Girl's 4.5-lb apron of ~700 brass nžalī wire cylinders (Fig. 78)",
             "pronunciation": "kīmæŋgo"
           },
           {
-            "target": "kīūīśī",
-            "source": "mancala with ŋgaīə seeds",
+            "target": "kīūīśī (ŋgaīə)",
+            "source": "Board game (mancala) played with ŋgaīə seeds",
             "pronunciation": "kīūīśī"
           },
           {
-            "target": "20-sec Fire-Drilling",
-            "source": "male ulīndī + female kīka, Fig. 126",
-            "pronunciation": "20-sec-fire-drilling"
+            "target": "ulīndī & kīka",
+            "source": "Male fire-drill stick & female hearth-stick (20-sec fire-drilling, Fig. 126)",
+            "pronunciation": "ulindi-kika"
           },
           {
-            "target": "maŋgī bird-arrows",
-            "source": "Fig. 129",
-            "pronunciation": "maŋgī-bird-arrows"
+            "target": "maŋgī",
+            "source": "Wooden blunted bird-arrows (Fig. 129)",
+            "pronunciation": "maŋgī"
           },
           {
-            "target": "ukī beer",
-            "source": "nde mortar, kīkælə strainer, mwatīnə sausage fruit",
-            "pronunciation": "ukī-beer"
+            "target": "ukī (nde, kīkælə, mwatīnə)",
+            "source": "Honey/sugarcane beer (brewed with nde mortar, kīkælə strainer & mwatīnə sausage fruit)",
+            "pronunciation": "ukī"
           }
         ],
         "sentences": [
           {
             "target": "Tali, talita, katali, mbonge, kasonzo, moli, kanyange, ngila, ngilili, mwitango!",
-            "source": "10-word children's counting-out rhyme recorded verbatim by Lindblom ."
+            "source": "10-word children's counting-out rhyme recorded verbatim by Lindblom."
           }
         ],
         "authoredExercises": [
@@ -5564,7 +5570,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Nĩ mũvea",
             "source": "Thank you",
-            "pronunciation": "nee moo-veh-ah moo-noh"
+            "pronunciation": "nee moo-veh-ah"
           },
           {
             "target": "o voo",
@@ -5574,20 +5580,12 @@ export const KAMBA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Nĩ mũvea",
-            "source": "Thank you."
+            "target": "Nĩ mũvea mũno nĩ ũndũ wa ũtethyo waku mũseo.",
+            "source": "Thank you very much for your kind assistance."
           },
           {
-            "target": "O voo",
-            "source": "Hello / Salutation."
-          },
-          {
-            "target": "Ũtethyo mũseo",
-            "source": "Compassion / Kindness / Helpfulness."
-          },
-          {
-            "target": "nenga muwéa",
-            "source": "Thank, v."
+            "target": "O voo? Nĩ mũseo, thi na mũuo.",
+            "source": "How is the news? I am fine, go in peace."
           }
         ]
       },
@@ -5649,7 +5647,16 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "eli"
           }
         ],
-        "sentences": []
+        "sentences": [
+          {
+            "target": "Andũ elĩ nĩmathi sivitalĩ kwakya.",
+            "source": "Both people went to the hospital in the morning."
+          },
+          {
+            "target": "Tũĩ na masaa ĩkũmi ma kyalo kĩĩ.",
+            "source": "We have ten hours for this journey."
+          }
+        ]
       }
     ]
   }
