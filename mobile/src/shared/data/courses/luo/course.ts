@@ -1881,7 +1881,7 @@ interface SkillWord {
   partOfSpeech?: string;
   hint?: string;
   audio?: string;
-  audioFile?: string;
+  audioFile?: string | null;
   example?: string;
   response?: string;
 }
