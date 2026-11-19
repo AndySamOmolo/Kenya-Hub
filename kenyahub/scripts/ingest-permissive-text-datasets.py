@@ -229,9 +229,12 @@ def merge_entries_into_dictionary(lang_id: str, new_entries: list[dict[str, Any]
         if key in existing:
             continue
         existing.add(key)
-        entry_obj: dict[str, Any] = {"english": en, "translation": tr, "context": item["context"]}
-        if item.get("pronunciation"):
-            entry_obj["pronunciation"] = str(item["pronunciation"]).strip()
+        entry_obj: dict[str, Any] = {
+            "english": en,
+            "translation": tr,
+            "pronunciation": str(item.get("pronunciation") or "").strip(),
+            "context": item["context"],
+        }
         target_cat["entries"].append(entry_obj)
         added += 1
 

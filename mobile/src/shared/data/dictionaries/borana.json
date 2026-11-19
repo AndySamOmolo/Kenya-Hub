@@ -14,7 +14,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996). Expanded and cross-verified with Commercially Permissive Datasets (Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0)).",
   "categories": [
     {
@@ -427,6 +427,12 @@
           "english": "Language / Mouth",
           "translation": "afaan",
           "context": "Kaikki.org Oromo Machine-Readable Dictionary (https://kaikki.org/dictionary/Oromo/categories-other/ww/Oromo%20pluralia%20tantum/index.html, CC-BY-SA)"
+        },
+        {
+          "english": "Salutation",
+          "translation": "nagaya / kabla",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -2639,6 +2645,54 @@
           "english": "Whetstone",
           "translation": "sewo",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "One",
+          "translation": "tāka",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Two",
+          "translation": "lam",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Three",
+          "translation": "sādi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Five",
+          "translation": "shān",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Six",
+          "translation": "jā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eight",
+          "translation": "sadēt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Nine",
+          "translation": "săgăl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Ten",
+          "translation": "kūdăn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -4590,6 +4644,60 @@
           "english": "Young son",
           "translation": "(galba) gurba",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "Child",
+          "translation": "ojole",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Father",
+          "translation": "abo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Mother",
+          "translation": "ayo, hada",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Man",
+          "translation": "sifeda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Woman",
+          "translation": "intala",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Child",
+          "translation": "jōle",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Brother",
+          "translation": "ōbōles",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Son",
+          "translation": "mūchā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Father",
+          "translation": "abaki",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -7663,6 +7771,24 @@
           "english": "Yearly",
           "translation": "bara dumisáti",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "Head",
+          "translation": "matā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Hand",
+          "translation": "hărkă",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Foot",
+          "translation": "lūkū",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -10844,6 +10970,96 @@
           "english": "Want",
           "translation": "berbáde",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "Cows",
+          "translation": "lawon",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Goat",
+          "translation": "ree",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Hen",
+          "translation": "luku",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Lion",
+          "translation": "neka",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Snake",
+          "translation": "borfa",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Cattle",
+          "translation": "lawōni",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Cow",
+          "translation": "kōrămsa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bull",
+          "translation": "kibich",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Goat",
+          "translation": "khrēē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Sheep",
+          "translation": "khōlā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Donkey",
+          "translation": "ărĕ",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Camel",
+          "translation": "gāl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Dog",
+          "translation": "săre",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Lion",
+          "translation": "nĕk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Snake",
+          "translation": "băfu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -14357,6 +14573,132 @@
           "english": "Lice",
           "translation": "injiraan",
           "context": "Kaikki.org Oromo Machine-Readable Dictionary (https://kaikki.org/dictionary/Oromo/categories-other/ww/Oromo%20pluralia%20tantum/index.html, CC-BY-SA)"
+        },
+        {
+          "english": "Hill",
+          "translation": "tulu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Moon",
+          "translation": "jii",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Plantation",
+          "translation": "oru",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sky",
+          "translation": "waka",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Stars",
+          "translation": "urji",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Stone",
+          "translation": "dakatsha",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Water",
+          "translation": "bisan",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sacred tree",
+          "translation": "Woda",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 76"
+        },
+        {
+          "english": "Sycamore fig tree (Ficus sycamorus)",
+          "translation": "Worka",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 77"
+        },
+        {
+          "english": "Water",
+          "translation": "bishan",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Road",
+          "translation": "tirbū",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Smoke",
+          "translation": "ār",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Plantation",
+          "translation": "ōru",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Waterhole",
+          "translation": "kōno",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "River",
+          "translation": "endata",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Rain",
+          "translation": "bōkē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Trees",
+          "translation": "mūku",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Grass",
+          "translation": "būyo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Earth",
+          "translation": "biye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Fire",
+          "translation": "ibită",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Lake Stephanie",
+          "translation": "Boyi",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 213"
         }
       ]
     },
@@ -16710,6 +17052,36 @@
           "english": "Meat / Flesh",
           "translation": "foon",
           "context": "Kaikki.org Oromo Machine-Readable Dictionary (https://kaikki.org/dictionary/Oromo/categories-other/ww/Oromo%20pluralia%20tantum/index.html, CC-BY-SA)"
+        },
+        {
+          "english": "Food",
+          "translation": "sagale",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Food",
+          "translation": "sagāle",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Millet",
+          "translation": "machabo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Milk",
+          "translation": "ānăn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Meat",
+          "translation": "fōn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -29693,6 +30065,12 @@
           "english": "Village",
           "translation": "worra guddio",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "House",
+          "translation": "mina",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
         }
       ]
     },
@@ -37616,6 +37994,120 @@
           "english": "make wet",
           "translation": "bisa késa gise",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "Come (imperative)",
+          "translation": "koi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Eat",
+          "translation": "yat",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Go",
+          "translation": "ben",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Sleep",
+          "translation": "rāfi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bring",
+          "translation": "kotim",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Come",
+          "translation": "koi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Want",
+          "translation": "malefet",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Go",
+          "translation": "ējem",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Will reach",
+          "translation": "bōrō",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Wait",
+          "translation": "ēch",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Tell",
+          "translation": "bobifeda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Call",
+          "translation": "wām",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Finished",
+          "translation": "injirtu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Take away",
+          "translation": "fūdādu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Speak",
+          "translation": "dubadu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Drink",
+          "translation": "bishanduki",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eat",
+          "translation": "nyādū",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To fight",
+          "translation": "walola",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Make",
+          "translation": "kāpi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -39292,6 +39784,102 @@
           "english": "Old / Worn out",
           "translation": "moofaa",
           "context": "Kaikki.org Oromo Machine-Readable Dictionary (https://kaikki.org/dictionary/Oromo/pos-adj/index.html, CC-BY-SA)"
+        },
+        {
+          "english": "Bad",
+          "translation": "hama, hamtu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Good",
+          "translation": "dansa, midaga",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "All",
+          "translation": "wasuntutu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Near",
+          "translation": "tai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Far",
+          "translation": "bāyā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Cheap",
+          "translation": "wāndiko",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Fast",
+          "translation": "hūrisi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Slow",
+          "translation": "lānijem",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Unripe",
+          "translation": "dēdi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Good",
+          "translation": "tănsā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Bad",
+          "translation": "hāmā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Red",
+          "translation": "dīma",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "White",
+          "translation": "āti",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Black",
+          "translation": "kūrach",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Blue",
+          "translation": "gănălĕ",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Brave",
+          "translation": "jābā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -44835,6 +45423,66 @@
           "english": "Time",
           "translation": "guya; zawani , gafa. This time, gafa kana, zawani kanati. In time to come, zawaniti kanati",
           "context": "Rev. J. L. Krapf, Vocabulary of the Galla Language (1842 — Public Domain) • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
+        },
+        {
+          "english": "Sunday",
+          "translation": "Sanbata",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 79"
+        },
+        {
+          "english": "Saturday",
+          "translation": "Kedami",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 79"
+        },
+        {
+          "english": "Sunday (greater Sabbath)",
+          "translation": "Sanbata gudda",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 82"
+        },
+        {
+          "english": "Saturday (lesser Sabbath)",
+          "translation": "Sanbata kenna",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 82"
+        },
+        {
+          "english": "Day",
+          "translation": "guyan",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "To-day",
+          "translation": "bōru",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Yesterday",
+          "translation": "bōrtirām?",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To-morrow",
+          "translation": "bortirom?",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "After",
+          "translation": "endufine",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Now",
+          "translation": "wānsum",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -117466,6 +118114,246 @@
           "english": "5. Schedule follow-up appointment in 3 years or sooner if needed.",
           "translation": "5. Beellama hordoffii waggaa 3 keessatti ykn yoo barbaachise sana duraaf qabachuu.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+        },
+        {
+          "english": "The first man in Galla creation folklore (variant of Adam)",
+          "translation": "Zadami",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 356"
+        },
+        {
+          "english": "Chief",
+          "translation": "heiyu, moti",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Cold",
+          "translation": "damotsha",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Man",
+          "translation": "enama",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Rain",
+          "translation": "boke",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Shield",
+          "translation": "wonta",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Slave",
+          "translation": "boitsha",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Spear",
+          "translation": "worana",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Woman",
+          "translation": "niti, nadien",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Priest",
+          "translation": "Luba",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 76"
+        },
+        {
+          "english": "Magician / medicine-man / exorcist",
+          "translation": "Kalija",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 76"
+        },
+        {
+          "english": "God / Highest Deity / Heaven",
+          "translation": "Waka, Wak",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), pp. 77, 80"
+        },
+        {
+          "english": "Evil spirit",
+          "translation": "Sar",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 77"
+        },
+        {
+          "english": "Satan",
+          "translation": "Setani, Sintan",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), pp. 77, 79"
+        },
+        {
+          "english": "Masculine divinity under Wak",
+          "translation": "Oglie",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 81"
+        },
+        {
+          "english": "Goddess of fecundity",
+          "translation": "Atetie",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 81"
+        },
+        {
+          "english": "Village",
+          "translation": "karang",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Cloth",
+          "translation": "wāya",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Spear",
+          "translation": "warān",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Shield",
+          "translation": "wantē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "War",
+          "translation": "nyābiadufe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Peace",
+          "translation": "nagējira",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Where",
+          "translation": "kulote",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "How many",
+          "translation": "nagăm",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "What",
+          "translation": "wansūm",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "In front",
+          "translation": "dăbări",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Behind",
+          "translation": "jēbe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "No",
+          "translation": "imbeku",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Here",
+          "translation": "ărma",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "There",
+          "translation": "kulothi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Who",
+          "translation": "wansūn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Whose",
+          "translation": "kaunuti",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "My",
+          "translation": "kānkiya",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Your",
+          "translation": "kanketi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "His",
+          "translation": "kahebelutie",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is coming",
+          "translation": "adufĭ",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is going",
+          "translation": "nidiēmi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Do you know",
+          "translation": "nimbēka",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "God (Supreme Being)",
+          "translation": "Wak",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 178"
+        },
+        {
+          "english": "Master or chief",
+          "translation": "Leibon",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 244"
         }
       ]
     },
@@ -141509,5 +142397,5 @@
   "source": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "gax",
   "glottocode": "bora1271",
-  "totalEntries": 26441
+  "totalEntries": 26589
 }

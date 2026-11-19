@@ -12,7 +12,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
@@ -141,6 +141,12 @@
           "english": "Pardon",
           "translation": "ekéa",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kikámba"
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Dzitwa iyago nuwe?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
         }
       ]
     },
@@ -883,6 +889,210 @@
           "english": "the fourth insect",
           "translation": "Kaindo ka kana",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "One",
+          "translation": "Mondi or Umwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Two",
+          "translation": "Kele",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Three",
+          "translation": "Kadatu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Four",
+          "translation": "Kana",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Five",
+          "translation": "Kathano",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Seven",
+          "translation": "Monza",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Ten",
+          "translation": "Ikumi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Twenty",
+          "translation": "Milongo ile",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Fifty",
+          "translation": "Milongo ithano",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Hundred",
+          "translation": "Iyana",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "One",
+          "translation": "Monde",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Two",
+          "translation": "Keli",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Three",
+          "translation": "Hati",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Four",
+          "translation": "Ena",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Five",
+          "translation": "Hano",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Ten",
+          "translation": "Kumi, -mwongo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Eleven",
+          "translation": "Kumi na kimwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Twelve",
+          "translation": "Kumi na eli",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Thirteen",
+          "translation": "Kumi na hati",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Fourteen",
+          "translation": "Kumi na ena",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Fifteen",
+          "translation": "Kumi na hano",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Sixteen",
+          "translation": "Kumi na thandatu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Seventeen",
+          "translation": "Kumi na monya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Eighteen",
+          "translation": "Kumi na nyanya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Nineteen",
+          "translation": "Kumi na kenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Twenty",
+          "translation": "Mlongo eli",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Thirty",
+          "translation": "Mlongo hati",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Forty",
+          "translation": "Mlongo ena",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Fifty",
+          "translation": "Mlongo hano",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Sixty",
+          "translation": "Mlongo thandatu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Seventy",
+          "translation": "Mlongo monya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Eighty",
+          "translation": "Mlongo nyanya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Ninety",
+          "translation": "Mlongo kenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "One hundred",
+          "translation": "Mlongo Iyana",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
         }
       ]
     },
@@ -2377,6 +2587,150 @@
           "english": "that man there",
           "translation": "Mtu uuya",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "Baby",
+          "translation": "Kana",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350"
+        },
+        {
+          "english": "Lad / boy",
+          "translation": "Evezi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350"
+        },
+        {
+          "english": "Middle-aged man",
+          "translation": "Mwant' o' theli",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350"
+        },
+        {
+          "english": "Fashionable young lady who has had no children",
+          "translation": "Mvinto",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350"
+        },
+        {
+          "english": "Woman who has had one child",
+          "translation": "Gungu",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350"
+        },
+        {
+          "english": "Elderly woman who has had more than one child",
+          "translation": "Mwintu maka (kibeti)",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350"
+        },
+        {
+          "english": "Father",
+          "translation": "Acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Mother",
+          "translation": "Mwaito, pl. Aito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Brother",
+          "translation": "Mwanatha, pl. A-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Sister",
+          "translation": "Mwitwáĭya, pl. Aitwáĭya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Wife",
+          "translation": "Muka, pl. Aka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Child",
+          "translation": "Kana katiti, pl. Iwana ititi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Son",
+          "translation": "Mwana kiume, pl. Ana aume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Daughter",
+          "translation": "Mwanaka kaletu, pl. Anaka aletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "A father",
+          "translation": "Acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Fathers",
+          "translation": "Acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "A daughter",
+          "translation": "Mwanaka kaletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Daughters",
+          "translation": "Anaka aletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Man (male)",
+          "translation": "Mundu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Woman",
+          "translation": "Munaumka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Baby",
+          "translation": "Ribazi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Girl",
+          "translation": "Mwitu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Old man",
+          "translation": "Mutimia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Old woman",
+          "translation": "Kiwando",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
         }
       ]
     },
@@ -4500,6 +4854,132 @@
           "english": "searchingly",
           "translation": "Kwa-ku-manda",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "Hand",
+          "translation": "Kwoko, pl. Mmoko",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Foot",
+          "translation": "Unyai, pl. Nyai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Nose",
+          "translation": "Inyúu, pl. Manyúu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Eye",
+          "translation": "Itho, pl. Mentho",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Mouth",
+          "translation": "Kanwa, pl. Makanwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Tooth",
+          "translation": "Iyeo, pl. Mayeo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Ear",
+          "translation": "Kutu, pl. Matu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Hair",
+          "translation": "Utuíi, pl. Nzwíi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Head",
+          "translation": "Chongo, pl. Chongo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Tongue",
+          "translation": "Ngumba, pl. Ngumba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Belly",
+          "translation": "Ivu, pl. Mavu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Back",
+          "translation": "Mmongo, pl. Mimongo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Head",
+          "translation": "Mutwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Arms",
+          "translation": "Koko",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Legs",
+          "translation": "Kuu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Mouth",
+          "translation": "Kanwi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Nose",
+          "translation": "Nyu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Eyes",
+          "translation": "Ithu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Chest",
+          "translation": "Kithwi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Breasts (of women)",
+          "translation": "Nondo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Belly",
+          "translation": "Ibu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
         }
       ]
     },
@@ -6622,6 +7102,180 @@
           "english": "the king's own oxen",
           "translation": "Ndong'ola zakwe kithwia",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "Cow",
+          "translation": "Morma, pl. Miorma",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Dog",
+          "translation": "Ngiti, pl. Magiti",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Cat",
+          "translation": "Mbaka, pl. Mabuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Cock",
+          "translation": "Injogola, pl. Majogola",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Duck",
+          "translation": "Ikuanyungu, pl. Ma-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Ass",
+          "translation": "Ing'oi, pl. Mang'oi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Bird",
+          "translation": "Nyunyi, pl. Manyunyi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "A bull",
+          "translation": "Nthau, pl. Nthau",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "A cow",
+          "translation": "Morma",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Bulls",
+          "translation": "Nthau",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Cows",
+          "translation": "Miorma",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "A dog",
+          "translation": "Ngiti mdume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "A bitch",
+          "translation": "Ngiti ndetu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Dogs",
+          "translation": "Mangiti malume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Bitches",
+          "translation": "Mangiti maletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "A he-goat",
+          "translation": "Mbui mlume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "A female (goat)",
+          "translation": "Mbui ndetu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Goats",
+          "translation": "Mabui or Mbui",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Cow",
+          "translation": "Mora",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Goat",
+          "translation": "Mboi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Sheep",
+          "translation": "Ngondu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Donkey",
+          "translation": "Njoi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Hen",
+          "translation": "Ibolomai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Cock",
+          "translation": "Ivola",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Dog",
+          "translation": "Geti",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Leopard",
+          "translation": "Ningu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Hyena",
+          "translation": "Mbere",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Lion",
+          "translation": "Munabwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Elephant",
+          "translation": "Munambu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
         }
       ]
     },
@@ -8400,6 +9054,114 @@
           "english": "those trees",
           "translation": "Miti iyu",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "Hill",
+          "translation": "kitundwa",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "River",
+          "translation": "utzi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Plateau",
+          "translation": "ulu",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Iron",
+          "translation": "Kia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Sun",
+          "translation": "Ichina",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Moon",
+          "translation": "Mwe, pl. Mie",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54 [contracted from Mwezi, pl. Miezi]"
+        },
+        {
+          "english": "Star",
+          "translation": "Kiimia, pl. Iimia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Fire",
+          "translation": "Mwaki, pl. Miaki",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Water",
+          "translation": "Manzi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Valley",
+          "translation": "Nianda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "River",
+          "translation": "Odzi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Forest",
+          "translation": "Nyika",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Lake",
+          "translation": "Iwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Tree",
+          "translation": "Muti",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Iron",
+          "translation": "Ziar",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Brass",
+          "translation": "Zangu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Clouds",
+          "translation": "Ibu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Heaven",
+          "translation": "Molongo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
         }
       ]
     },
@@ -9689,6 +10451,36 @@
           "english": "those eggs",
           "translation": "Matumbi gayu",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "Finger millet / grain",
+          "translation": "wimbé",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 349"
+        },
+        {
+          "english": "Food",
+          "translation": "Edzio",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Meat",
+          "translation": "Ndume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Indian corn",
+          "translation": "Mbemba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Millet (Holcus Sorghum)",
+          "translation": "Moviya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
         }
       ]
     },
@@ -21160,6 +21952,480 @@
           "english": "to flog severely",
           "translation": "Ku-kuna muno",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "Go",
+          "translation": "Enda, pl. Endai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Eat",
+          "translation": "Iya, pl. Iyai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Sit",
+          "translation": "Kala, pl. Kalai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Come",
+          "translation": "Uka, pl. Ukai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Beat",
+          "translation": "Atha, pl. Athai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Stand",
+          "translation": "Umaina, pl. Umainai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Die",
+          "translation": "Kuga, pl. Kugai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Give",
+          "translation": "Umba, pl. Umbai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Run",
+          "translation": "Ima, pl. Imai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "I am",
+          "translation": "Ni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Thou art",
+          "translation": "Ni or Wa, U",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "He is",
+          "translation": "Ni or Yu-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "We are",
+          "translation": "Ni or Tu-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "You are",
+          "translation": "Ni or Mu-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "They are",
+          "translation": "Ni or Ma-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I was",
+          "translation": "Nguuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Thou wast",
+          "translation": "Ukuuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "He was",
+          "translation": "Akuuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "We were",
+          "translation": "Tukuuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "You were",
+          "translation": "Mukuuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "They were",
+          "translation": "Makuuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Be",
+          "translation": "Uka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "To be",
+          "translation": "Kuuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Being",
+          "translation": "Kuuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I may be",
+          "translation": "Niuke",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I shall be",
+          "translation": "Ngauka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Beat (imperative)",
+          "translation": "Atha, pl. Athai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "To beat",
+          "translation": "Kuatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Beating",
+          "translation": "Kuatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Having beaten",
+          "translation": "Nguuka ninaathie",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I beat",
+          "translation": "Naatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Thou beatest",
+          "translation": "Waatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "He beats",
+          "translation": "Yaatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "We beat",
+          "translation": "Twaatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "You beat",
+          "translation": "Mwaatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "They beat",
+          "translation": "Maatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I am beating",
+          "translation": "Nikiatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I was beating",
+          "translation": "Nguatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I had beaten",
+          "translation": "Ninaathie",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I may beat",
+          "translation": "Niathe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I shall beat",
+          "translation": "Ngaatha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I am beaten",
+          "translation": "Naathwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I was beaten",
+          "translation": "Nguathwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I shall be beaten",
+          "translation": "Ngaathwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I go",
+          "translation": "Nathi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Thou goest",
+          "translation": "Wathi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "He goes",
+          "translation": "Yathi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I went",
+          "translation": "Ninathie",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Thou wentest",
+          "translation": "Unathie",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "He went",
+          "translation": "Yunathie",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Go (imperative)",
+          "translation": "Thi, pl. Thai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Going",
+          "translation": "Kuthi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Gone",
+          "translation": "Kthui",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "To kill",
+          "translation": "Ku-aa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To fight",
+          "translation": "Ku-kita",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To build",
+          "translation": "Ku-aka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To hoe",
+          "translation": "Ku-imia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To plant",
+          "translation": "Ku-vanda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To run",
+          "translation": "Ku-dzemba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To walk",
+          "translation": "Ku-anganga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To fall down",
+          "translation": "Ka-valuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To cut",
+          "translation": "Ku-kalaithi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To say",
+          "translation": "Ku-nenu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To tell to",
+          "translation": "Ku-tavia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To pray",
+          "translation": "Ku-salama",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To beg",
+          "translation": "Ku-voya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To give",
+          "translation": "Ku-nenga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To want",
+          "translation": "Ku-mantha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To love",
+          "translation": "Ku-enda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To take",
+          "translation": "Ku-gua",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To forget",
+          "translation": "Ku-nilwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To steal",
+          "translation": "Ku-nya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To buy",
+          "translation": "Ku-aa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To sell",
+          "translation": "Ku-thwana",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To sit",
+          "translation": "Ku-ikala",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To stand",
+          "translation": "Ku-somama",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To grind (corn)",
+          "translation": "Ku-thia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "To cook",
+          "translation": "Ku-aa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Go away",
+          "translation": "Thee",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
         }
       ]
     },
@@ -22121,6 +23387,258 @@
           "translation": "onde; wió",
           "pronunciation": "onde",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kikámba adj.) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
+        },
+        {
+          "english": "Up",
+          "translation": "Ulu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Near",
+          "translation": "Bakovi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Down",
+          "translation": "Hasi, Ndi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Far",
+          "translation": "Kuacha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Before",
+          "translation": "Mbee",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Behind",
+          "translation": "Ithina",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Good",
+          "translation": "-cheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Better",
+          "translation": "-cheo, Kukila",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55 [good, surpassing]"
+        },
+        {
+          "english": "Best",
+          "translation": "-cheo, Kukila -ondi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55 [good, surpassing all]"
+        },
+        {
+          "english": "High",
+          "translation": "-ulu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Higher",
+          "translation": "-ulu kukila",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Highest",
+          "translation": "-ulu kukila -ondi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Cold",
+          "translation": "Bevo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Black",
+          "translation": "-yeu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "White",
+          "translation": "-elu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Grey",
+          "translation": "-chalutanu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Red",
+          "translation": "-mwou",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Green",
+          "translation": "-mazangu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Good",
+          "translation": "-zera",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Bad",
+          "translation": "-thuka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "High",
+          "translation": "-chadza",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Low",
+          "translation": "-ima",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Sharp",
+          "translation": "-wai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Wide",
+          "translation": "-vamu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Clean",
+          "translation": "-zera",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Dirty",
+          "translation": "-iko",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Hard",
+          "translation": "-vungu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Soft",
+          "translation": "-loilo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Sweet",
+          "translation": "-wao",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Sour",
+          "translation": "-owa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Ripe",
+          "translation": "-via",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Raw",
+          "translation": "-methi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Great",
+          "translation": "-nene",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Little",
+          "translation": "-nini",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Ready",
+          "translation": "Ukuthela",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Equal, even",
+          "translation": "Kalakala",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
+        },
+        {
+          "english": "Between",
+          "translation": "Vakati",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
+        },
+        {
+          "english": "In front",
+          "translation": "Kulonguisia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
+        },
+        {
+          "english": "Behind",
+          "translation": "Etina",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
+        },
+        {
+          "english": "Slowly",
+          "translation": "Mbola",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
+        },
+        {
+          "english": "Here",
+          "translation": "Vaha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
+        },
+        {
+          "english": "There",
+          "translation": "Kuiya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
         }
       ]
     },
@@ -47018,6 +48536,558 @@
           "english": "She added it was not clear how the virus was introduced to the camps and that some of the camp’s guards were also ill.",
           "translation": "aendeee kwasya kana ndwaĩ wĩsĩ nesa ũndũ ũwau ũsu wavikie kambinĩ isu na kana asungi amwe ma kambinĩ isu o namo maĩ awau",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kam_Latn Kikamba, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Elder ruling a kraal or village",
+          "translation": "mwanto mere",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 348, 350"
+        },
+        {
+          "english": "Big chief (ruling over many kraals)",
+          "translation": "Mwanto Mineni",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 348"
+        },
+        {
+          "english": "Warrior",
+          "translation": "Mwaniki",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 348, 350"
+        },
+        {
+          "english": "God",
+          "translation": "Ngai",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350"
+        },
+        {
+          "english": "I",
+          "translation": "Ninye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Of me",
+          "translation": "Cha-kwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Mine",
+          "translation": "Cha-kwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "We",
+          "translation": "Nithi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Of us",
+          "translation": "Ch-etu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Our",
+          "translation": "Ch-etu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Thou",
+          "translation": "Niwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Of thee",
+          "translation": "Ch-ago",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Thine",
+          "translation": "Ch-ago",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "You",
+          "translation": "Inyui",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Of you",
+          "translation": "Ch-enyu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Your",
+          "translation": "Ch-enyu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "He",
+          "translation": "Miya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Of him",
+          "translation": "Ch-akwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "His",
+          "translation": "Ch-akwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "They",
+          "translation": "Acho",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Of them",
+          "translation": "Ch-ayo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Their",
+          "translation": "Ch-ayo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Slave",
+          "translation": "Nthumba, pl. Nthumba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 53"
+        },
+        {
+          "english": "Cultivator",
+          "translation": "Mundu wa kuima, pl. Andu a kuima",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Shepherd",
+          "translation": "Mwithi, pl. Aithi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "God",
+          "translation": "Itu, pl. Mulungu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Devil",
+          "translation": "Mbanga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "House",
+          "translation": "Iyanda, pl. Mmabanda; Isumba, pl. Masumba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54 [Isumba = round house]"
+        },
+        {
+          "english": "Who",
+          "translation": "Nu-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "What",
+          "translation": "Chau",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Why",
+          "translation": "Nthai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Yes",
+          "translation": "Ndiwo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "No",
+          "translation": "Tiwo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Of a father",
+          "translation": "-a acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "To a father",
+          "translation": "Kwa acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "From a father",
+          "translation": "Kwa acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Two fathers",
+          "translation": "Acha aeli",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Of fathers",
+          "translation": "-a acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "To fathers",
+          "translation": "Kwa acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "From fathers",
+          "translation": "Kwa acha",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Of a daughter",
+          "translation": "-a mwanaka kaletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "To a daughter",
+          "translation": "Kwa mwanaka kaletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "From a daughter",
+          "translation": "Kwa mwanaka kaletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Two daughters",
+          "translation": "Anaka aletu aeli",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Of daughters",
+          "translation": "-a anaka aletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "To daughters",
+          "translation": "Kwa anaka aletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "From daughters",
+          "translation": "Kwa anaka aletu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Of a good man",
+          "translation": "-a mundu mucheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "To a good man",
+          "translation": "Kwa mundu mucheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "From a good man",
+          "translation": "Kwa mundu mucheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Two good men",
+          "translation": "Andu acheo aeli",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Of good men",
+          "translation": "-a andu acheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "To good men",
+          "translation": "Kwa andu acheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "From good men",
+          "translation": "Kwa andu acheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "A good woman",
+          "translation": "Mundu muka mucheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "A bad boy",
+          "translation": "Kabozji kathuku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "Good women",
+          "translation": "Anduaka acheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "A bad girl",
+          "translation": "Keletu kacheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 54"
+        },
+        {
+          "english": "How old is this goat?",
+          "translation": "Mbui uyu miaka yakwe yanata?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "How far is it from here to —?",
+          "translation": "Kugenda kwakwe nichau vaa mfika —?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "How many sons are there in your father's house?",
+          "translation": "Aana aume aanata muiyanda ya acha yako?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I have walked a long way to-day",
+          "translation": "Nitambukiti kuacha muthenya uya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "The son of my uncle is married to his sister",
+          "translation": "Mwana mlume wa mbai yunamucha mwitwáĭya wakwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "In the house is the saddle of the white ox",
+          "translation": "Muiyanda ni ikanda iya ndong'ola ncheo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Put the saddle upon his back",
+          "translation": "Ianthi ikanda mu mmongo mwakwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "I have beaten his son with many stripes",
+          "translation": "Niathiti mwana mlume wakwe ni ntata zingi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "He is grazing cattle on the top of the hill",
+          "translation": "Akiithia ndong'ola kuulu kwa kiima",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "He is sitting on a stone under that tree",
+          "translation": "Akiikala mu irrya ndi ya muti iyu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "His brother is taller than his sister",
+          "translation": "Mwanatha wakwe ni muwadza kukila mwitwáĭya wakwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "The price of that is two goats and a fowl",
+          "translation": "Ugusi wa kiyu ni mbui mbili na nguku mondi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "My father lives in that small house",
+          "translation": "Acha yakwa yaikala mu iyanda iyu nditi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "Take those goats from him",
+          "translation": "Umochelela mbui ziya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "Give this goat to him",
+          "translation": "Umwinke mbui iya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "Beat him well and bind him with ropes",
+          "translation": "Umathe vicheo kamopa ni makanda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "Draw water from the well",
+          "translation": "Nega manzi mu isima",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "Walk before me",
+          "translation": "Tambuka mbu yakwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "Whose boy comes behind you?",
+          "translation": "Kabidzi nuye yulizele ithina yago?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "From whom did you buy that?",
+          "translation": "Kwa nuye wauaiti kiyu?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "From a shopkeeper of the village",
+          "translation": "Kwa mundu wa kuua mukaia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 56"
+        },
+        {
+          "english": "God",
+          "translation": "Mulungu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Garden (farm)",
+          "translation": "Zunda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Hoe",
+          "translation": "Zembe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Axe",
+          "translation": "Shoka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Bead",
+          "translation": "Fiuma",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "I",
+          "translation": "Muye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Thou",
+          "translation": "Wea",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "He",
+          "translation": "Uya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "We",
+          "translation": "Ithi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "You",
+          "translation": "Nyue",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "They",
+          "translation": "Adzo-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "Ram's-horn protective charm worn on a journey",
+          "translation": "Kilito",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 356"
+        },
+        {
+          "english": "Supreme Being / God",
+          "translation": "Mulungu",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 356"
         }
       ]
     },
@@ -53818,5 +55888,5 @@
   "source": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019); Roberts-Kohno & Bickmore (2019) LSP #190 Ch. 10 Kikamba Melodic Tone (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kam",
   "glottocode": "kamb1297",
-  "totalEntries": 9750
+  "totalEntries": 10095
 }

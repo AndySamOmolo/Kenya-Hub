@@ -2114,6 +2114,18 @@
           "english": "Night",
           "translation": "jiyo",
           "context": "CLDF ASJP v20 Wordlist (MERU, CC-BY-4.0)"
+        },
+        {
+          "english": "Mount Kenya (local name near Laiju)",
+          "translation": "Kilimara",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 13"
+        },
+        {
+          "english": "Crater lake on Mount Kenya slopes (Lake Kolb)",
+          "translation": "Ngunga",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 63"
         }
       ]
     },
@@ -9093,5 +9105,5 @@
   "source": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml); Arthur M. Champion (1912) The Atharaka (JRAI Vol. 42, Public Domain)",
   "isoCode": "mer",
   "glottocode": "meru1245",
-  "totalEntries": 1592
+  "totalEntries": 1594
 }

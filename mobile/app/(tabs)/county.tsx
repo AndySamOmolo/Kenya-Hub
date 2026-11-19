@@ -724,6 +724,8 @@ export default function CountyScreen() {
             return (
               <Pressable
                 key={tab.id}
+                accessibilityRole="tab"
+                accessibilityState={{ selected: active }}
                 android_ripple={androidRipple(theme.rippleColor)}
                 onPress={() => {
                   triggerHaptic(8);
@@ -829,6 +831,8 @@ export default function CountyScreen() {
                   return (
                     <Pressable
                       key={option.id}
+                      accessibilityRole="button"
+                      accessibilityState={{ selected: active }}
                       onPress={() => {
                         triggerHaptic(8);
                         setSortBy(option.id);

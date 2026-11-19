@@ -10,7 +10,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
@@ -2444,6 +2444,24 @@
           "english": "Woman",
           "translation": "va-ndū va-kā",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
+        },
+        {
+          "english": "Child",
+          "translation": "mana mtini",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "My father",
+          "translation": "endeo-wangu",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "My mother",
+          "translation": "mayo-wangu",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
         }
       ]
     },
@@ -5744,6 +5762,48 @@
           "english": "Sheep",
           "translation": "Bauru",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
+        },
+        {
+          "english": "Cows",
+          "translation": "gnombe",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Goat",
+          "translation": "mburi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Hen",
+          "translation": "nguku",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Sheep",
+          "translation": "gnondi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Snake",
+          "translation": "tshoka",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Elephants",
+          "translation": "enzosu",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Rhinoceroses",
+          "translation": "mbea",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
         }
       ]
     },
@@ -7724,6 +7784,114 @@
           "english": "Wood",
           "translation": "I-bāndē",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
+        },
+        {
+          "english": "Mountain",
+          "translation": "mugondibwa",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Hill",
+          "translation": "shungol",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Spring (of water)",
+          "translation": "nizio",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Fire",
+          "translation": "modo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Hill",
+          "translation": "kirema",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Moon",
+          "translation": "muezi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Plantation",
+          "translation": "mbuva",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "River",
+          "translation": "mueda",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sand",
+          "translation": "ndoie",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Stars",
+          "translation": "nienyeri",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Stone",
+          "translation": "mawe",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sun",
+          "translation": "eruva",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Tree",
+          "translation": "mudi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Water",
+          "translation": "machi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Land",
+          "translation": "nti",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "In the way / road",
+          "translation": "endiani",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Thorns",
+          "translation": "miba",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Long grass",
+          "translation": "kisiki",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
         }
       ]
     },
@@ -9360,6 +9528,18 @@
           "english": "Yam",
           "translation": "vi-kwa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
+        },
+        {
+          "english": "Food",
+          "translation": "muvo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Sweet beverage",
+          "translation": "Jofi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
         }
       ]
     },
@@ -12582,6 +12762,12 @@
           "english": "Stool",
           "translation": "vi-tī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
+        },
+        {
+          "english": "House",
+          "translation": "niumba",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
         }
       ]
     },
@@ -15608,6 +15794,42 @@
           "english": "to make",
           "translation": "ku-rigida",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
+        },
+        {
+          "english": "Come (imperative)",
+          "translation": "choo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Eat",
+          "translation": "je",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Go",
+          "translation": "gende",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Came",
+          "translation": "adsha",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "May we meet",
+          "translation": "tuonane",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "To rejoice",
+          "translation": "tuzeke",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
         }
       ]
     },
@@ -16521,6 +16743,18 @@
           "translation": "Viwana",
           "pronunciation": "viwana",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Bad",
+          "translation": "wazamii",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Good",
+          "translation": "waboiye",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
         }
       ]
     },
@@ -27080,6 +27314,96 @@
           "english": "Whole [all]",
           "translation": "-ose (with Class III nouns: yose / jose)",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
+        },
+        {
+          "english": "Chief",
+          "translation": "mfuma",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Cold",
+          "translation": "mbeho",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "God",
+          "translation": "mulungu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Man",
+          "translation": "mundu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Rain",
+          "translation": "mbua",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Slave",
+          "translation": "msumba",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Soul",
+          "translation": "moyo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Woman",
+          "translation": "mundu muka",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Let us talk, let us unite!",
+          "translation": "tugore, tupatane!",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Let us speak (as) joyous friends",
+          "translation": "tuseme tukizeka",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Let us pray (to) Heaven together the land to bless",
+          "translation": "tu soye Mulungu pamenga nti ipoe",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Heaven / God",
+          "translation": "Mulungu",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Sickness depart from my village!",
+          "translation": "Ukongo usume muzi wangu!",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Enemies",
+          "translation": "emmessa",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Spirit (ancestral)",
+          "translation": "Koma",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
         }
       ]
     },
@@ -42372,5 +42696,5 @@
   "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 7600
+  "totalEntries": 7654
 }

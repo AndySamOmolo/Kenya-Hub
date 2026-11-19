@@ -524,12 +524,12 @@ export function FeaturedLanguageWidget({
   );
 
   useEffect(() => {
-    if (!isFocused || paused || reduceMotion) return;
+    if (!isFocused || paused) return;
     const timer = setInterval(() => {
       rotateNext(false);
-    }, 15000);
+    }, 7000);
     return () => clearInterval(timer);
-  }, [isFocused, paused, reduceMotion, rotateNext]);
+  }, [isFocused, paused, rotateNext]);
 
   const currentFeatured =
     ROTATING_LANGUAGES[featuredLangIdx % ROTATING_LANGUAGES.length];
@@ -662,12 +662,12 @@ export function WordOfTheMomentWidget({ paused = false }: { paused?: boolean }) 
   );
 
   useEffect(() => {
-    if (!isFocused || paused || reduceMotion) return;
+    if (!isFocused || paused) return;
     const timer = setInterval(() => {
       nextWord(false);
-    }, 15000);
+    }, 7000);
     return () => clearInterval(timer);
-  }, [isFocused, paused, reduceMotion, nextWord]);
+  }, [isFocused, paused, nextWord]);
 
   if (!INITIAL_RANDOM_WORDS.length) return null;
   const currentWord =

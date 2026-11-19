@@ -11,7 +11,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Pokot (Pökoot / Suk / Bawgott) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 56–65, 72, Plates XV–XVII — audited 100% line-by-line across 11 geographical divisions, 5 pastoral divisions, 3 Kasauria migrations, 11 Hill Suk sections, 24 orten clans & totems, Ellap/Ellat, Mt. Alongol & Kerial religion, verbatim sick prayer, and 12-month Kamei/Bengat calendar), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0).",
   "categories": [
     {
@@ -96,6 +96,12 @@
           "translation": "Ka-rôt-on! / Korôton! (Reply: I-rôt-enyi!)",
           "pronunciation": "ka-rôt-on",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911, pp. 92, 119, 125) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
+        },
+        {
+          "english": "Salutation",
+          "translation": "chamkecha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -658,6 +664,60 @@
           "english": "Stone",
           "translation": "kogh",
           "context": "CLDF ASJP v20 Wordlist (POKOT, CC-BY-4.0)"
+        },
+        {
+          "english": "One",
+          "translation": "akong",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Two",
+          "translation": "adeng",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Four",
+          "translation": "naoñgon",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Five",
+          "translation": "ekān",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Six",
+          "translation": "akankapei",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Seven",
+          "translation": "isāp",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eight",
+          "translation": "tine",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Nine",
+          "translation": "sokol",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Ten",
+          "translation": "năman",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -2400,6 +2460,42 @@
           "english": "That man",
           "translation": "Lugun awē",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Sūk."
+        },
+        {
+          "english": "Man",
+          "translation": "akōgo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Woman",
+          "translation": "korkoni",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Child",
+          "translation": "mōnū",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Brother",
+          "translation": "wurtanyo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Son",
+          "translation": "nyēta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Father",
+          "translation": "paponyan",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -4401,6 +4497,24 @@
           "english": "To hear",
           "translation": "lim",
           "context": "CLDF ASJP v20 Wordlist (POKOT, CC-BY-4.0)"
+        },
+        {
+          "english": "Head",
+          "translation": "mēt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Hand",
+          "translation": "ēyi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Foot",
+          "translation": "kēl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -6926,6 +7040,66 @@
           "english": "Louse",
           "translation": "ngasarian",
           "context": "CLDF ASJP v20 Wordlist (POKOT, CC-BY-4.0)"
+        },
+        {
+          "english": "Cattle",
+          "translation": "taiñge",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Cow",
+          "translation": "sakāt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bull",
+          "translation": "yeāi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Goat",
+          "translation": "ngoror",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Sheep",
+          "translation": "kēsh",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Donkey",
+          "translation": "sigria",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Camel",
+          "translation": "tāmās",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Game",
+          "translation": "arawa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Dog",
+          "translation": "kugwī",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Lion",
+          "translation": "kawai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -8800,6 +8974,72 @@
           "english": "Night",
           "translation": "nangat",
           "context": "CLDF ASJP v20 Wordlist (POKOT, CC-BY-4.0)"
+        },
+        {
+          "english": "Water",
+          "translation": "pau",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Road",
+          "translation": "ore",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Smoke",
+          "translation": "āros",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Plantation",
+          "translation": "matei",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Waterhole",
+          "translation": "pau",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "River",
+          "translation": "ēn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Rain",
+          "translation": "rōp",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Trees",
+          "translation": "kuendo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Grass",
+          "translation": "susōm",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Earth",
+          "translation": "numoi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Fire",
+          "translation": "māt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -9948,6 +10188,30 @@
           "english": "To drink",
           "translation": "igha",
           "context": "CLDF ASJP v20 Wordlist (POKOT, CC-BY-4.0)"
+        },
+        {
+          "english": "Food",
+          "translation": "ama",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Millet",
+          "translation": "mosong",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Milk",
+          "translation": "keko",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Meat",
+          "translation": "pēng",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -16453,6 +16717,102 @@
           "english": "Yawn, to",
           "translation": "mēgh (o-mēgh-an)",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
+        },
+        {
+          "english": "Sleep",
+          "translation": "rūē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bring",
+          "translation": "ubune",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Come",
+          "translation": "nyōna",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Want",
+          "translation": "amachan",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Go",
+          "translation": "kepecha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Will reach",
+          "translation": "nyona",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Wait",
+          "translation": "kanya",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Tell",
+          "translation": "mauūne",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Call",
+          "translation": "kūrē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Finished",
+          "translation": "akorok",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Take away",
+          "translation": "kēnya",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Speak",
+          "translation": "anānā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Drink",
+          "translation": "aūchongim",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eat",
+          "translation": "ama",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To fight",
+          "translation": "epēsien",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Make",
+          "translation": "yeiya",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -17744,6 +18104,90 @@
           "english": "Young (plural)",
           "translation": "mērw-ai",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
+        },
+        {
+          "english": "All",
+          "translation": "tukul",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Near",
+          "translation": "lēgit",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Far",
+          "translation": "lōwet",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Dear",
+          "translation": "āū",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Cheap",
+          "translation": "karan",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Fast",
+          "translation": "mongun",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Slow",
+          "translation": "nyomōt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Unripe",
+          "translation": "nyatel",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Bad",
+          "translation": "ēya",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Red",
+          "translation": "perir",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "White",
+          "translation": "lel",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Black",
+          "translation": "toi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Blue",
+          "translation": "weiwei",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Brave",
+          "translation": "āūl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -19315,6 +19759,42 @@
           "english": "It is not yet ready (plural)",
           "translation": "tôma-ch'ach-eti",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (Oxford, 1911 — Public Domain) • Cross-verified with CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0)"
+        },
+        {
+          "english": "Day",
+          "translation": "akogo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "To-day",
+          "translation": "iye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Yesterday",
+          "translation": "oino",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To-morrow",
+          "translation": "oinopet",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "After",
+          "translation": "mulēgit",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Now",
+          "translation": "iye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -29295,6 +29775,156 @@
           "english": "Young (of wild animals)",
           "translation": "mērw-oʻ, pl. mērw-ai",
           "context": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911)"
+        },
+        {
+          "english": "Village",
+          "translation": "ngokatanyo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Cloth",
+          "translation": "alao",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Spear",
+          "translation": "ngōt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Shield",
+          "translation": "longē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "War",
+          "translation": "lūk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Peace",
+          "translation": "mis",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Iron wire",
+          "translation": "tītir",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Brass wire",
+          "translation": "tai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Beads",
+          "translation": "sonei",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Where",
+          "translation": "ngō",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "How many",
+          "translation": "adeng",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "What",
+          "translation": "kenya",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "In front",
+          "translation": "tai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "No",
+          "translation": "maminye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Here",
+          "translation": "iyēte",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "There",
+          "translation": "yuno",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Who",
+          "translation": "ilat?",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Whose",
+          "translation": "oñgonyete",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "My",
+          "translation": "nenyān",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Your",
+          "translation": "ñañgu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "His",
+          "translation": "pauēri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is coming",
+          "translation": "angun",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is going",
+          "translation": "kēpē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Do you know",
+          "translation": "angitōm",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Supreme Being",
+          "translation": "Akisomlorot",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Notes on the Ethnology of Tribes met with during Progress of the Juba Expedition of 1897-99 (Public Domain), p. 238"
         }
       ]
     },
@@ -30696,5 +31326,5 @@
   "source": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
   "isoCode": "pko",
   "glottocode": "poko1263",
-  "totalEntries": 5539
+  "totalEntries": 5644
 }

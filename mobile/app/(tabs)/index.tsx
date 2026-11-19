@@ -1,6 +1,7 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
+import { useIsFocused } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   Linking,
@@ -78,8 +79,40 @@ export default function HomeScreen() {
   const [readerProgress, setReaderProgress] = useState(0);
   const [showHolidaysModal, setShowHolidaysModal] = useState(false);
   const [selectedBlogTag, setSelectedBlogTag] = useState<string>("All");
+  const isHomeFocused = useIsFocused();
+  const widgetsScrollRef = useRef<ScrollView>(null);
   const [activeWidgetPage, setActiveWidgetPage] = useState(0);
   const [widgetsTouchPaused, setWidgetsTouchPaused] = useState(false);
+  const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const pauseWidgetsTemporarily = useCallback(() => {
+    setWidgetsTouchPaused(true);
+    if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
+    resumeTimerRef.current = setTimeout(() => {
+      setWidgetsTouchPaused(false);
+    }, 6000);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isHomeFocused || widgetsTouchPaused) return;
+    const timer = setInterval(() => {
+      setActiveWidgetPage((prev) => {
+        const next = (prev + 1) % 4;
+        widgetsScrollRef.current?.scrollTo({
+          x: next * WIDGET_SNAP_INTERVAL,
+          animated: true,
+        });
+        return next;
+      });
+    }, 5500);
+    return () => clearInterval(timer);
+  }, [isHomeFocused, widgetsTouchPaused]);
 
   const [learnStats, setLearnStats] = useState<{
     langId: string;
@@ -943,6 +976,7 @@ export default function HomeScreen() {
         </View>
 
         <ScrollView
+          ref={widgetsScrollRef}
           horizontal
           showsHorizontalScrollIndicator={false}
           snapToInterval={WIDGET_SNAP_INTERVAL}
@@ -950,15 +984,13 @@ export default function HomeScreen() {
           bounces={true}
           alwaysBounceHorizontal={true}
           overScrollMode="always"
-          onTouchStart={() => setWidgetsTouchPaused(true)}
+          onScrollBeginDrag={pauseWidgetsTemporarily}
           onMomentumScrollEnd={(e) => {
-            setWidgetsTouchPaused(false);
             const page = Math.round(
               e.nativeEvent.contentOffset.x / WIDGET_SNAP_INTERVAL
             );
             setActiveWidgetPage(Math.max(0, Math.min(3, page)));
           }}
-          onScrollEndDrag={() => setWidgetsTouchPaused(false)}
           contentContainerStyle={styles.widgetsScrollContent}
         >
           {/* Widget A: Isolated Featured Language Card (MOB-4, UX-6) */}

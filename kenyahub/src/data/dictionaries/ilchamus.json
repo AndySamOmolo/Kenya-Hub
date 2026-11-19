@@ -10,7 +10,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Ilchamus (Njemps / Njamus / Nyarusi / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55 — audited 100% line-by-line across all 3 settlements, 16 clans from 6 tribes, irrigation ditch & crop-medicine ceremonies, and 12-month Lare/Ngolong calendar), Mervyn W. H. Beech (1911), and Bernd Heine (1980). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0)).",
   "categories": [
     {
@@ -61,6 +61,12 @@
           "english": "Welcome",
           "translation": "Karibu ang'",
           "context": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0, https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke) & CLDF ASJP v20 (CC-BY-4.0)"
+        },
+        {
+          "english": "What is your name?",
+          "translation": "Engarina iye eng'ai?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
         }
       ]
     },
@@ -194,6 +200,180 @@
           "translation": "Ip tomon",
           "pronunciation": "ip to-mon",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "One",
+          "translation": "Nabo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Two",
+          "translation": "Warre",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Three",
+          "translation": "Oguni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Four",
+          "translation": "Otoni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Five",
+          "translation": "Īmĭet",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Six",
+          "translation": "Ille",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Seven",
+          "translation": "Nabeshan",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Eight",
+          "translation": "Īsĭet",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Nine",
+          "translation": "Ilsal",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Twenty",
+          "translation": "Aditam owarre",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Fifty",
+          "translation": "Aditam oimiet",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Two",
+          "translation": "Are",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Three",
+          "translation": "Uni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Four",
+          "translation": "Ongwon",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Five",
+          "translation": "Imyet",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Seven",
+          "translation": "Nabishan",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Eleven",
+          "translation": "Tomon nabo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Twelve",
+          "translation": "Tomon are",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Thirteen",
+          "translation": "Tomon une",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Fourteen",
+          "translation": "Tomon ongwon",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Fifteen",
+          "translation": "Tomon imyet",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Sixteen",
+          "translation": "Tomon ille",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Seventeen",
+          "translation": "Tomon nabishan",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Eighteen",
+          "translation": "Tomon isiet",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Nineteen",
+          "translation": "Tomon ilsal",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Twenty",
+          "translation": "Tikitam",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Thirty",
+          "translation": "Ansum",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Fifty",
+          "translation": "Aunum",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "One hundred (or any great number)",
+          "translation": "Ipi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words; for 60-100 either begin again or use Ipi]"
         }
       ]
     },
@@ -309,6 +489,132 @@
           "translation": "lpayian",
           "pronunciation": "lpayian",
           "context": "African Next Voices Maa-Samburu-Chamus Transcript Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Father",
+          "translation": "Baba, Menye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Mother",
+          "translation": "Yeiyo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Brother",
+          "translation": "Olalashe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Sister",
+          "translation": "Enganash",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Man",
+          "translation": "Oldung'ana",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Woman",
+          "translation": "Endangile",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Wife",
+          "translation": "Endangile",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Child",
+          "translation": "Engerai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Son",
+          "translation": "Engeioni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Daughter",
+          "translation": "Ndito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A father",
+          "translation": "Baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Fathers",
+          "translation": "Baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A daughter",
+          "translation": "Endito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Daughters",
+          "translation": "Endito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Man (male)",
+          "translation": "Tungana, olmoran",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Woman",
+          "translation": "Engerlivu, (wife) Sangiki",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Baby",
+          "translation": "Engerai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Boy",
+          "translation": "Láivuni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Girl",
+          "translation": "Endibo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Old man",
+          "translation": "Murua",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Old woman",
+          "translation": "Koko",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
         }
       ]
     },
@@ -526,6 +832,150 @@
           "translation": "Ol tuqai",
           "pronunciation": "ol tu-qai",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Hand",
+          "translation": "Engeina",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Foot",
+          "translation": "Engeju",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Nose",
+          "translation": "Engume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Eye",
+          "translation": "Ng'ong'o",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Mouth",
+          "translation": "Engutuk",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Tooth",
+          "translation": "Olala",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Ear",
+          "translation": "Engĭok",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Hair",
+          "translation": "Olbabit",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Head",
+          "translation": "Olgunya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Tongue",
+          "translation": "Olkejembe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Belly",
+          "translation": "Engoshogi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Back",
+          "translation": "Eng'oriong'i",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Head",
+          "translation": "Orlugunya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Face",
+          "translation": "Engumumu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Arms",
+          "translation": "Engaina",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Hands",
+          "translation": "Engimójinu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Legs",
+          "translation": "Engajeku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Body",
+          "translation": "Osaseni bogi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Mouth",
+          "translation": "Engolo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Nose",
+          "translation": "Engomme",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Eyes",
+          "translation": "Engoinyek",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Chest",
+          "translation": "Ologo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Breasts (of women)",
+          "translation": "Olkima",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Belly",
+          "translation": "Angoshoke",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
         }
       ]
     },
@@ -815,6 +1265,180 @@
           "translation": "nkishu",
           "pronunciation": "nkishu",
           "context": "African Next Voices Maa-Samburu-Chamus Transcript Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Cow",
+          "translation": "Eleibung'a",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Dog",
+          "translation": "Oldĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Cock",
+          "translation": "Ngwenyi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Duck",
+          "translation": "Olmotonyi el engare",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Ass",
+          "translation": "Ossigīrĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Bird",
+          "translation": "Olmotonyi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A bull",
+          "translation": "Olkiteng el engishu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A cow",
+          "translation": "Engiteng el engishu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Bulls",
+          "translation": "Elkiteng el engishu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Cows",
+          "translation": "Engiteng el engishu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A dog",
+          "translation": "Olewa el ōldĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A bitch",
+          "translation": "Olobung'a el ōldĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Dogs",
+          "translation": "Elewa el ōldĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Bitches",
+          "translation": "Elobung'a el ōldĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A he-goat",
+          "translation": "Ololo el endare",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A female (goat)",
+          "translation": "Olobung'a el endare",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Goats",
+          "translation": "Endare gumu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Cow",
+          "translation": "Engorlaiyuni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Bull",
+          "translation": "Ortámgoni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Goat",
+          "translation": "Endarre",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Sheep",
+          "translation": "Orlgere",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Donkey",
+          "translation": "Sigiria",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Hen",
+          "translation": "Motoni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Cat",
+          "translation": "Nyao",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Dog",
+          "translation": "Dia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Leopard",
+          "translation": "Orlugwaro",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Hyena",
+          "translation": "Engwájino",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Lion",
+          "translation": "Enyátuni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Elephant",
+          "translation": "Endoma",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
         }
       ]
     },
@@ -1033,6 +1657,126 @@
           "english": "September (Little rains.)",
           "translation": "Lolrochorot",
           "context": "Hon. K. R. Dundas, Notes on the Tribes Inhabiting the Baringo District (1910)"
+        },
+        {
+          "english": "Lake Baringo (recorded by Léon des Avanchers, 1859)",
+          "translation": "El-Boo (Baro)",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 355"
+        },
+        {
+          "english": "Iron",
+          "translation": "Emassa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Sun",
+          "translation": "Engolong",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Moon",
+          "translation": "Olaba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Star",
+          "translation": "Eng'okira",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Fire",
+          "translation": "Engima",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Water",
+          "translation": "Engare, Gwaso",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Water",
+          "translation": "Engaree",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Mountain",
+          "translation": "Donyu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Valley",
+          "translation": "Orlegeju",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "River",
+          "translation": "Englangare",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Forest",
+          "translation": "Endimi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Lake",
+          "translation": "Aowa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Tree",
+          "translation": "Orljanni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Iron",
+          "translation": "Asiai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Brass",
+          "translation": "Sultia",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Stone",
+          "translation": "Osort",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Clouds",
+          "translation": "Elagiri",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Rain",
+          "translation": "Engai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Heaven",
+          "translation": "Engai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
         }
       ]
     },
@@ -1148,6 +1892,42 @@
           "translation": "kule",
           "pronunciation": "kule",
           "context": "African Next Voices Maa-Samburu-Chamus Transcript Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Food",
+          "translation": "Endaa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Meat",
+          "translation": "Engeringo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Milk",
+          "translation": "Kulle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Eggs",
+          "translation": "Naisar",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Indian Corn",
+          "translation": "Orluvaik",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Millet (Holcus Sorghum)",
+          "translation": "Engoruma",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
         }
       ]
     },
@@ -1681,6 +2461,426 @@
           "translation": "-liyio",
           "pronunciation": "liyio",
           "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Go",
+          "translation": "Enno, njelo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Eat",
+          "translation": "Tama",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Sit",
+          "translation": "Togwena",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Come",
+          "translation": "Wou",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Beat",
+          "translation": "Tosho or Enjiari",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Stand",
+          "translation": "Enjeitashi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Die",
+          "translation": "Etwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Give",
+          "translation": "Enjo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Run",
+          "translation": "Kweta",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I am",
+          "translation": "Nanu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Thou art",
+          "translation": "Iye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "He is",
+          "translation": "Elle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "We are",
+          "translation": "Iyok",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "You are",
+          "translation": "Endai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "They are",
+          "translation": "Gullo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I was",
+          "translation": "Ata or Aku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Thou wast",
+          "translation": "Ita or Iku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "He was",
+          "translation": "Eta or Eku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "We were",
+          "translation": "Kita or Kiaku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "You were",
+          "translation": "Kita or Iaku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "They were",
+          "translation": "Eta or Aiaku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Be",
+          "translation": "Iagu or Iaku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To be",
+          "translation": "Iagu or Iaku",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Beat (imperative)",
+          "translation": "Njear iye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To beat",
+          "translation": "Njear",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I beat",
+          "translation": "Nanu aar",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Thou beatest",
+          "translation": "Iye iar",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "He beats",
+          "translation": "Elle ear",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "We beat",
+          "translation": "Iok kiar",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "You beat",
+          "translation": "Endai uar",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "They beat",
+          "translation": "Gullu ear",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I had beaten",
+          "translation": "Nanu aidiba atari",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I am beaten",
+          "translation": "Nanu aari",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I was beaten",
+          "translation": "Aari opa or Eitogiari",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I shall be beaten",
+          "translation": "Aloaari",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I go",
+          "translation": "Ashomo or Allo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Thou goest",
+          "translation": "Ishomo or Illo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "He goes",
+          "translation": "Eshomo or Ello",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I went",
+          "translation": "Atashomo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Thou wentest",
+          "translation": "Itashomo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "He went",
+          "translation": "Etashomo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To hunt",
+          "translation": "Engeroru",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To kill",
+          "translation": "Eari",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To fight",
+          "translation": "Ekithat",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To build",
+          "translation": "Eleber",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To hoe",
+          "translation": "Etatura",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To plant",
+          "translation": "Etadongo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To run",
+          "translation": "Ebo, ekwat",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To walk",
+          "translation": "Erereta",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To fall down",
+          "translation": "Ebwatata",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To cut",
+          "translation": "Ebedongo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To say",
+          "translation": "Eiro, etolim",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To tell to",
+          "translation": "Enegwena",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To pray",
+          "translation": "Emouengai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words; to pray to God]"
+        },
+        {
+          "english": "To beg",
+          "translation": "Emonu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To give",
+          "translation": "Enjo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To want",
+          "translation": "Oiyeai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To love",
+          "translation": "Aitanyora",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To take",
+          "translation": "Etanaba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To forget",
+          "translation": "Ailileita",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To remember",
+          "translation": "Egirio",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To steal",
+          "translation": "Eboro",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To hate",
+          "translation": "Erete",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To buy",
+          "translation": "Enyango",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To sell",
+          "translation": "Etamira",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To sit",
+          "translation": "Etotona",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To stand",
+          "translation": "Etanyu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To grind (corn)",
+          "translation": "Eototo, edotesho",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "To cook",
+          "translation": "Egera",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Go away",
+          "translation": "Mavi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
         }
       ]
     },
@@ -1988,6 +3188,222 @@
           "translation": "Manyata / Añgañ",
           "pronunciation": "manyata / anggang",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Baringo Maa / Ngishu) • Cross-verified with African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Up",
+          "translation": "Engeberi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Near",
+          "translation": "Etana",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Down",
+          "translation": "Aboli",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Far",
+          "translation": "Elagwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Before",
+          "translation": "Elugunya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Behind",
+          "translation": "Olgurum",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Good",
+          "translation": "Subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Better",
+          "translation": "Subātĭa emerisho",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Best",
+          "translation": "Subātĭa emerisho bogi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "High",
+          "translation": "Eado",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Higher",
+          "translation": "Eado, emerisho",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Highest",
+          "translation": "Eado, emerisho bogo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Cold",
+          "translation": "Engijabe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Black",
+          "translation": "Loruk",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "White",
+          "translation": "Enaibor",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Red",
+          "translation": "Nanyuki",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Good",
+          "translation": "Sidei",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Low",
+          "translation": "Engop",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Sharp",
+          "translation": "Epi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Wide",
+          "translation": "Kito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Clean",
+          "translation": "Sobati",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Dirty",
+          "translation": "Engurugu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Hard",
+          "translation": "Egulu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Sweet",
+          "translation": "Sabati",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Sour",
+          "translation": "Edwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Ripe",
+          "translation": "Eoto",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Raw",
+          "translation": "Njata",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Great",
+          "translation": "Talori, kibok",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Ready",
+          "translation": "Eti, arobena",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Equal, even",
+          "translation": "Erisio",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Between",
+          "translation": "Ngidji",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "In front",
+          "translation": "Nderogonya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Behind",
+          "translation": "Kurum",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Slowly",
+          "translation": "Akitakit",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Here",
+          "translation": "Tenni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "There",
+          "translation": "Tendi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
         }
       ]
     },
@@ -2323,6 +3739,552 @@
           "english": "Conflict / chaos (noun)",
           "translation": "ɛnk=arruoísho",
           "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Agricultural people allied to Masai living at Njemps (Suahili name)",
+          "translation": "Wa-kwafi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 354"
+        },
+        {
+          "english": "God (invoked in prayer by the Wa-kwafi of Njemps)",
+          "translation": "Ngăi",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. XII p. 312"
+        },
+        {
+          "english": "I",
+          "translation": "Nanu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of me",
+          "translation": "-lai or Wa nanu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Mine",
+          "translation": "-lai or Wa nanu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "We",
+          "translation": "Iyok or Iswe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of us",
+          "translation": "-ang, wa iswe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Our",
+          "translation": "-ang, wa iswe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Thou",
+          "translation": "Iye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of thee",
+          "translation": "-lino, wa iye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Thine",
+          "translation": "-lino, wa iye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "You",
+          "translation": "Endai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of you",
+          "translation": "-lenyi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Your",
+          "translation": "-lenyi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "He",
+          "translation": "Elle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of him",
+          "translation": "-nenye, -lenye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "His",
+          "translation": "-nenye, -lenye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "They",
+          "translation": "Gullo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of them",
+          "translation": "-lenyiena",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Their",
+          "translation": "-lenyiena",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Slave",
+          "translation": "Esinga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Cultivator",
+          "translation": "Etorisho engoruma",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Shepherd",
+          "translation": "Oleiyoni, enirita engishu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "God",
+          "translation": "Engai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 194 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Devil",
+          "translation": "Njanji tokitoki",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "House",
+          "translation": "Engaji",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Who",
+          "translation": "Eng'elle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "What",
+          "translation": "Nyo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Why",
+          "translation": "Etuaja, Eïshiri",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "And",
+          "translation": "O- or W-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "But",
+          "translation": "Kagi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "If",
+          "translation": "pe- tense of verb",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Yes",
+          "translation": "Ee, Edede, Enjata",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "No",
+          "translation": "Haha, Eme",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Alas",
+          "translation": "Woi, Woi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of a father",
+          "translation": "El baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To a father",
+          "translation": "Atwa baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "From a father",
+          "translation": "Le baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Two fathers",
+          "translation": "Baba owaree",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of fathers",
+          "translation": "El baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To fathers",
+          "translation": "Atwa baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "From fathers",
+          "translation": "Le baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of a daughter",
+          "translation": "El endito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To a daughter",
+          "translation": "Atwa endito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "From a daughter",
+          "translation": "El endito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Two daughters",
+          "translation": "Endito uwarre",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of daughters",
+          "translation": "El endito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To daughters",
+          "translation": "Atwa endito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "From daughters",
+          "translation": "El endito",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A good man",
+          "translation": "Oldung'ana subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of a good man",
+          "translation": "El oldung'ana subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To a good man",
+          "translation": "Atwa oldung'ana subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "From a good man",
+          "translation": "Le oldung'ana subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Two good men",
+          "translation": "Eldung'ana warre subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Good men",
+          "translation": "Eldung'ana subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Of good men",
+          "translation": "El edung'ana subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "To good men",
+          "translation": "Atwa eldung'ana subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "From good men",
+          "translation": "Le eldung'ana subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A good woman",
+          "translation": "Endangile subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A bad boy",
+          "translation": "Oleijoni tŏrōk",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Good women",
+          "translation": "Endangile subātĭa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "A bad girl",
+          "translation": "Endito tŏrōk",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 195 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "How old is this horse?",
+          "translation": "Engishu elle olari lenyi aja?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "How far is it from here to —?",
+          "translation": "Ebana atene o-oleisanga olugwa elo, airisho alo?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "How many sons are there in your father's house?",
+          "translation": "Eta engeraja oleijoni atwa engaji el baba waiye?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I have walked a long way to-day",
+          "translation": "Eïlimana ong'olong elle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "The son of my uncle is married to his sister",
+          "translation": "Oleiyoni ololabulalai eamisho olalashe elle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "In the house is the saddle of the white horse",
+          "translation": "Engaji eta engene el engishu leibor",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Put the saddle upon his back",
+          "translation": "Tushuma engene e-eng'oriong'i elle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "I have beaten his son with many stripes",
+          "translation": "Nanu atatosha oleiyoni elle e ng'udi gumu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "He is grazing cattle on the top of the hill",
+          "translation": "Esudj engishu engeberi el oldoinyo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "He is sitting on a stone under that tree",
+          "translation": "Oldung'ana elle etoni engeberi ol esoit endauata engop oljani",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "His brother is taller than his sister",
+          "translation": "Olganashi elle eado enganashe elle edoroto",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "The price of that is two cloths and a piece",
+          "translation": "Iginyang'a elle uware engobito eboni elgwameta",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "My father lives in that small house",
+          "translation": "Baba lai etoni atwa engaji kiti elle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Take those oxen from him",
+          "translation": "Enjerewe engishu engaji lenye",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 196-197 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Give this ox to him",
+          "translation": "Enjo engisho elle",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 197 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Beat him well and bind him with ropes",
+          "translation": "Etosho subātĭa tena oengene",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 197 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Draw water from the well",
+          "translation": "Taugu engare el olduroto",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 197 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Walk before me",
+          "translation": "Eturugu olgunya wa nanu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 197 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Whose boy comes behind you?",
+          "translation": "Engera elongai eleluta olgurum lino?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 197 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "From whom did you buy that?",
+          "translation": "Emeri enangai endogi elle?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 197 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "From a shopkeeper of the village",
+          "translation": "Le emirisho el engaji",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 197 [Humba (Kwafi/Iloikop Maa dialect)]"
+        },
+        {
+          "english": "Garden (farm)",
+          "translation": "Engúruma",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Hoe",
+          "translation": "Emwasire",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Axe",
+          "translation": "Endolo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Cloth",
+          "translation": "Ornanga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "Bead",
+          "translation": "Orsiririm",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "We",
+          "translation": "Iyo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "You",
+          "translation": "Borgin, endai",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
+        },
+        {
+          "english": "They",
+          "translation": "Enye, legwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 220 [Kwafi (Iloikop/Ilchamus Maa dialect), Additional Words]"
         }
       ]
     },
@@ -2763,5 +4725,5 @@
   "source": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)",
   "isoCode": "saq-ilc",
   "glottocode": "chAM1234",
-  "totalEntries": 449
+  "totalEntries": 776
 }

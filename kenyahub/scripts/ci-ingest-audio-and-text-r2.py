@@ -76,7 +76,7 @@ MAX_CLIPS = int(os.environ.get("MAX_CLIPS_PER_DATASET") or "250")
 MAX_TEXT_ROWS = int(os.environ.get("MAX_TEXT_ROWS_PER_DATASET") or "3000")
 
 HTTP_SESSION = requests.Session()
-R2_UPLOAD_DISABLED = False
+R2_UPLOAD_DISABLED = os.environ.get("R2_READY", "true").strip().lower() in {"0", "false", "no"}
 R2_FAILURE_COUNT = 0
 
 
@@ -618,6 +618,7 @@ def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
             cat_txt,
         )
         stats_json = json.dumps(exact_stats, indent=2)
+        today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         new_tail = f"""// ── Synchronized Exact Entry & Category Counts Across All 23 Dictionaries (2026-11-18) ──
 const _EXACT_DICT_STATS: Record<string, {{ total: number; cats: Record<string, number> }}> = {stats_json};
 for (const _m of ALL_DICT_METAS) {{
@@ -625,7 +626,7 @@ for (const _m of ALL_DICT_METAS) {{
   if (_st) {{
     _m.totalEntries = _st.total;
     _m.hasAudio = true;
-    _m.lastUpdated = "2026-11-18";
+    _m.lastUpdated = "{today_str}";
     for (const _c of _m.categories) {{
       if (_st.cats[_c.id] !== undefined) _c.count = _st.cats[_c.id];
     }}
@@ -671,6 +672,7 @@ def main():
 
     lock_payload = {
         "ingestedAt": datetime.now(timezone.utc).isoformat(),
+        "scriptsHash": os.environ.get("INGESTION_SCRIPTS_HASH", "").strip(),
         "bucket": R2_BUCKET,
         "cdnBase": CDN_BASE,
         "elapsedSeconds": int(time.monotonic() - START_MONOTONIC),

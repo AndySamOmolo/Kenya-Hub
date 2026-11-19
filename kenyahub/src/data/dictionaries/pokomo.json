@@ -10,7 +10,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0).",
   "categories": [
     {
@@ -935,6 +935,18 @@
           "english": "Person",
           "translation": "ntwu",
           "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Child",
+          "translation": "mana",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Mother",
+          "translation": "mama",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
         }
       ]
     },
@@ -2600,6 +2612,36 @@
           "english": "Dog (Lower Pokomo)",
           "translation": "bwa",
           "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Cows",
+          "translation": "gnombe",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Elephant",
+          "translation": "nzovu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Goat",
+          "translation": "pee",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Hen",
+          "translation": "kuku",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Snake",
+          "translation": "nioka",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
         }
       ]
     },
@@ -3529,6 +3571,84 @@
           "english": "Night (Lower Pokomo)",
           "translation": "siku",
           "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Sycamore tree (Ficus Sycomorus, Linn.) used for carving canoes",
+          "translation": "mkuyu",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 346"
+        },
+        {
+          "english": "Earth",
+          "translation": "nzi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Fire",
+          "translation": "moho",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Hill",
+          "translation": "muina mdodo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Moon",
+          "translation": "muezi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Plantation",
+          "translation": "kondi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "River",
+          "translation": "dzana",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sand",
+          "translation": "mitsanga",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Stars",
+          "translation": "nioha",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Stone",
+          "translation": "mawe",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sun",
+          "translation": "dsua",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Tree",
+          "translation": "muhi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Water",
+          "translation": "madsi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
         }
       ]
     },
@@ -3955,6 +4075,18 @@
           "english": "Water (Lower Pokomo)",
           "translation": "aci",
           "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Food",
+          "translation": "chakuja",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Milk",
+          "translation": "maziwa",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
         }
       ]
     },
@@ -11069,6 +11201,12 @@
           "english": "Stool",
           "translation": "vi-tī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 13. Pωkωmω or Pfωkωmω"
+        },
+        {
+          "english": "House",
+          "translation": "niumba",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
         }
       ]
     },
@@ -12873,6 +13011,18 @@
           "translation": "ónse",
           "pronunciation": "ónse",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo adj.) • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Bad",
+          "translation": "msuka",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Good",
+          "translation": "jema",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
         }
       ]
     },
@@ -15591,6 +15741,66 @@
           "english": "Wherefore",
           "translation": "ni kintu gá?",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kipokómo"
+        },
+        {
+          "english": "Secret order of village elders/priests; also the sacred oblong hut of the order",
+          "translation": "Ngadsi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 344"
+        },
+        {
+          "english": "Secret name of the Pokomo god ('Old Man of the Woods')",
+          "translation": "Auri mwantya dsongo ngombe auri kinemu",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 344"
+        },
+        {
+          "english": "Sacred secret songs (songs of Gadsi)",
+          "translation": "Gadsi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 345"
+        },
+        {
+          "english": "Medicine men",
+          "translation": "Wa-gangana",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 345"
+        },
+        {
+          "english": "Children's game of knocking over grass stalks with a spinning gourd-rind teetotum",
+          "translation": "seki",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 346"
+        },
+        {
+          "english": "Cold",
+          "translation": "peho",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Man",
+          "translation": "muntu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Rain",
+          "translation": "mvuya",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Soul",
+          "translation": "motsho",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Wind",
+          "translation": "rufuto",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
         }
       ]
     },
@@ -18138,5 +18348,5 @@
   "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "pkb",
   "glottocode": "poko1261",
-  "totalEntries": 3087
+  "totalEntries": 3122
 }

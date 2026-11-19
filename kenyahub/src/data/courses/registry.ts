@@ -87,8 +87,7 @@ function buildCourseEntry(
   units: CourseUnit[],
   grammarSections?: unknown
 ): CourseDefinition {
-  const isProdBrowser =
-    typeof window !== "undefined" && process.env.NODE_ENV === "production";
+  const isProdBrowser = process.env.NODE_ENV === "production";
   const unitCount = units.length;
   const skillCount = units.reduce((sum, u) => sum + u.skills.length, 0);
   const wordCount = units.reduce(

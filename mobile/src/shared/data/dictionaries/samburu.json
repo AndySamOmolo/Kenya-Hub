@@ -13,7 +13,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), C. W. Hobley (1910), and Rainer Vossen (1982). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0).",
   "categories": [
     {
@@ -1452,6 +1452,30 @@
           "english": "Australian Dollar (AUD)",
           "translation": "Njilingi eel Australia",
           "context": "Samburu (North Maa) — GitHub unicode-org/cldr (saq.xml) • Cross-verified with African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0)"
+        },
+        {
+          "english": "Water-course / tug name (ngare = water)",
+          "translation": "Ngare Dabasch",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 346"
+        },
+        {
+          "english": "Mount Nyiro",
+          "translation": "Donyo le Nyiro",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 92"
+        },
+        {
+          "english": "High, damp mountain forest tract",
+          "translation": "Subugo",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 105"
+        },
+        {
+          "english": "Lake Rudolf (Lake Turkana)",
+          "translation": "Bassu",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 289"
         }
       ]
     },
@@ -2867,6 +2891,18 @@
           "english": "Conflict / chaos (noun)",
           "translation": "ɛnk=arruoísho",
           "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "Samburu people (mountain Masai)",
+          "translation": "Burkeneji",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 349"
+        },
+        {
+          "english": "Samburu tribe (self-name)",
+          "translation": "Sambur",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 252"
         }
       ]
     },
@@ -4600,5 +4636,5 @@
   "source": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)",
   "isoCode": "saq",
   "glottocode": "samb1315",
-  "totalEntries": 803
+  "totalEntries": 809
 }

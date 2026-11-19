@@ -2498,6 +2498,227 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     coverageNote:
       "Integrated across meru.json, kalenjin.json, pokot.json, maasai.json, samburu.json, ilchamus.json, luhya.json, swahili.json, somali.json, borana.json, rendille.json, daasanach.json, turkana.json, teso.json, and grammar-reference.ts.",
   },
+  {
+    "id": "erhardt-enguduk-iloigob-1857",
+    "title": "Vocabulary of the Enguduk Iloigob, as Spoken by the Masai-Tribes in East-Africa",
+    "fileName": "erhardt-enguduk-iloigob-1857.pdf",
+    "languages": [
+      "maasai"
+    ],
+    "published": "1857",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by Rev. J. Erhardt (1857, Pronunciation key (PDF p. 13); Masai–English Vocabulary pp. 13–18, 20, 22–28, 30–50, 52–60, 62–66 (PDF pp. 17–22, 24, 26–32, 34–54, 56–64, 66–70); Song of the Masai p. 68 (PDF p. 72); Errata (PDF p. 115)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (Pronunciation key (PDF p. 13); Masai–English Vocabulary pp. 13–18, 20, 22–28, 30–50, 52–60, 62–66 (PDF pp. 17–22, 24, 26–32, 34–54, 56–64, 66–70); Song of the Masai p. 68 (PDF p. 72); Errata (PDF p. 115)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "gregory-great-rift-valley-1896",
+    "title": "The Great Rift Valley",
+    "fileName": "gregory-great-rift-valley-1896.pdf",
+    "languages": [
+      "borana",
+      "ilchamus",
+      "kamba",
+      "kikuyu",
+      "maasai",
+      "pokomo",
+      "somali",
+      "swahili",
+      "taita"
+    ],
+    "published": "1896",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by J. W. Gregory (1896, pp. 109, 223, 330-331, 339-358, 409-410 (PDF pp. 157, 285, 392-393, 401-404, 407-420, 422-425, 477-478)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (pp. 109, 223, 330-331, 339-358, 409-410 (PDF pp. 157, 285, 392-393, 401-404, 407-420, 422-425, 477-478)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "thomson-through-masai-land-1887",
+    "title": "Through Masai Land (New and Revised Edition)",
+    "fileName": "thomson-through-masai-land-1887.pdf",
+    "languages": [
+      "ilchamus",
+      "kalenjin",
+      "maasai",
+      "swahili"
+    ],
+    "published": "1887",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by Joseph Thomson (1887, pp. 45, 55, 76, 88-89, 92-95, 116, 154-155, 161-162, 172, 177, 182, 206, 219-220, 224, 226, 230, 233, 247, 250-254, 259-260, 270, 275, 286-287, 312-313 (PDF pp. 65, 75, 96, 108-109, 112-115, 136, 174-175, 181-182, 192, 197, 202, 226, 239-240, 244, 246, 250, 253, 267, 270-274, 279-280, 290, 295, 306-307, 332-333)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (pp. 45, 55, 76, 88-89, 92-95, 116, 154-155, 161-162, 172, 177, 182, 206, 219-220, 224, 226, 230, 233, 247, 250-254, 259-260, 270, 275, 286-287, 312-313 (PDF pp. 65, 75, 96, 108-109, 112-115, 136, 174-175, 181-182, 192, 197, 202, 226, 239-240, 244, 246, 250, 253, 267, 270-274, 279-280, 290, 295, 306-307, 332-333)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "last-polyglotta-africana-orientalis-1885",
+    "title": "Polyglotta Africana Orientalis",
+    "fileName": "last-polyglotta-africana-orientalis-1885.pdf",
+    "languages": [
+      "swahili",
+      "kamba",
+      "maasai",
+      "ilchamus"
+    ],
+    "published": "1885",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by J. T. Last (1885, TOC pp. v-ix (PDF pp. 12-16); Swahili pp. 29-32 (PDF pp. 48-51); Kamba pp. 53-56 & Additional Words pp. 217-219 (PDF pp. 72-75, 236-238); Masai pp. 190-193 & Additional Words pp. 234-239 (PDF pp. 209-212, 253-258); Humba/Kwafi (Ilchamus/Iloikop) pp. 194-197 & Additional Words pp. 219-220 (PDF pp. 213-216, 238-239)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (TOC pp. v-ix (PDF pp. 12-16); Swahili pp. 29-32 (PDF pp. 48-51); Kamba pp. 53-56 & Additional Words pp. 217-219 (PDF pp. 72-75, 236-238); Masai pp. 190-193 & Additional Words pp. 234-239 (PDF pp. 209-212, 253-258); Humba/Kwafi (Ilchamus/Iloikop) pp. 194-197 & Additional Words pp. 219-220 (PDF pp. 213-216, 238-239)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "new-life-wanderings-1873",
+    "title": "Life, Wanderings, and Labours in Eastern Africa",
+    "fileName": "new-life-wanderings-1873.pdf",
+    "languages": [
+      "swahili",
+      "mijikenda",
+      "taita",
+      "pokomo",
+      "borana",
+      "maasai",
+      "luo"
+    ],
+    "published": "1873",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by Charles New (1873, pp. 525-528 (PDF pp. 569-572; Appendix II comparative vocabulary table pp. 526-527)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (pp. 525-528 (PDF pp. 569-572; Appendix II comparative vocabulary table pp. 526-527)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "krapf-travels-researches-1860",
+    "title": "Travels, Researches, and Missionary Labours, During an Eighteen Years' Residence in Eastern Africa",
+    "fileName": "krapf-travels-researches-1860.pdf",
+    "languages": [
+      "swahili",
+      "mijikenda",
+      "taita",
+      "kamba",
+      "borana",
+      "maasai"
+    ],
+    "published": "1860",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by Rev. Dr. J. Lewis Krapf (1860, pp. 75-82, 173-174, 184, 265, 356, 358-365, 500-505, 561-564 (PDF pp. 156-163, 274-275, 285, 372, 467, 469-476, 611-616, 672-675)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (pp. 75-82, 173-174, 184, 265, 356, 358-365, 500-505, 561-564 (PDF pp. 156-163, 274-275, 285, 372, 467, 469-476, 611-616, 672-675)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "jrai-vol29-1899",
+    "title": "Journal of the Anthropological Institute of Great Britain and Ireland, Vol. 29",
+    "fileName": "jrai-vol29-1899.pdf",
+    "languages": [
+      "borana",
+      "kalenjin",
+      "kikuyu",
+      "luhya",
+      "luo",
+      "maasai",
+      "pokot",
+      "somali",
+      "swahili"
+    ],
+    "published": "1899–1900",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by Lt.-Col. J. R. L. Macdonald, R.E.; Mrs. S. L. Hinde; Miss M. E. Woodward (1899–1900, TOC (PDF pp. 4–12); Articles XIII–XV: pp. 238–251 (PDF pp. 323–336), especially comparative vocabularies pp. 244–247 (PDF pp. 329–332), Masai notes pp. 248–249 (PDF pp. 333–334), Swahili notes p. 250 (PDF p. 335)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (TOC (PDF pp. 4–12); Articles XIII–XV: pp. 238–251 (PDF pp. 323–336), especially comparative vocabularies pp. 244–247 (PDF pp. 329–332), Masai notes pp. 248–249 (PDF pp. 333–334), Swahili notes p. 250 (PDF p. 335)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "donaldson-smith-through-unknown-african-countries-1897",
+    "title": "Through Unknown African Countries",
+    "fileName": "donaldson-smith-through-unknown-african-countries-1897.pdf",
+    "languages": [
+      "borana",
+      "daasanach",
+      "maasai",
+      "samburu",
+      "somali",
+      "swahili"
+    ],
+    "published": "1897",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by A. Donaldson Smith (1897, pp. 16, 23–24, 27, 37, 114, 125, 178, 213, 244, 291, 308, 346, 349 (PDF pp. 38, 45–46, 49, 59, 136, 147, 200, 235, 266, 313, 330, 368, 371); Appendix H pp. 444–446 checked and excluded (Ethiopian/Omo Konso, Dume, Arbore/Amar)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (pp. 16, 23–24, 27, 37, 114, 125, 178, 213, 244, 291, 308, 346, 349 (PDF pp. 38, 45–46, 49, 59, 136, 147, 200, 235, 266, 313, 330, 368, 371); Appendix H pp. 444–446 checked and excluded (Ethiopian/Omo Konso, Dume, Arbore/Amar)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "neumann-elephant-hunting-1898",
+    "title": "Elephant-Hunting in East Equatorial Africa",
+    "fileName": "neumann-elephant-hunting-1898.pdf",
+    "languages": [
+      "maasai",
+      "meru",
+      "samburu",
+      "swahili"
+    ],
+    "published": "1898",
+    "contribution": "Vision-transcribed Public Domain linguistic and ethnographic vocabulary by Arthur H. Neumann (1898, pp. 6, 13, 21, 33, 41, 50, 63, 91–92, 95, 105, 108, 126–127, 141, 163, 252, 265, 280, 286, 288–290, 363, 367, 394, 426–427 (PDF pp. 32, 39, 47, 59, 67, 76, 89, 119–120, 123, 133, 136, 154–155, 169, 191, 280, 293, 308, 314, 316–318, 391, 395, 422, 454–455)).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Vision-transcribed directly from rendered PDF page images (pp. 6, 13, 21, 33, 41, 50, 63, 91–92, 95, 105, 108, 126–127, 141, 163, 252, 265, 280, 286, 288–290, 363, 367, 394, 426–427 (PDF pp. 32, 39, 47, 59, 67, 76, 89, 119–120, 123, 133, 136, 154–155, 169, 191, 280, 293, 308, 314, 316–318, 391, 395, 422, 454–455)) and merged into KenyaHub dictionaries."
+  }
 ];
 
 for (const _src of _commercialTextDatasetSources) {

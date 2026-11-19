@@ -1050,6 +1050,24 @@
           "english": "Here I am (respectful response when called)",
           "translation": "Lebeka",
           "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XV pp. 99, 107 ('\"Lebeka, father,\" which means \"Here I am\"')."
+        },
+        {
+          "english": "The common Suahili greeting",
+          "translation": "Yambo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "Hello / welcome greeting (used at Taveta)",
+          "translation": "Yambo",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. II p. 55"
+        },
+        {
+          "english": "Good morning / salutation used by Wa-swahili traders",
+          "translation": "Sabalkheir",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. II p. 55"
         }
       ]
     },
@@ -9333,6 +9351,30 @@
           "english": "Inside",
           "translation": "ndani ya. See *In.*",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)"
+        },
+        {
+          "english": "Four",
+          "translation": "N'ne",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Fifty",
+          "translation": "Makumi matano",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Hundred",
+          "translation": "Gana",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29 [old form not now in use]"
+        },
+        {
+          "english": "Nine",
+          "translation": "tissa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
         }
       ]
     },
@@ -16089,6 +16131,120 @@
           "english": "wife",
           "translation": "N-yani w-angu m-refu a-li-anguka",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Swahili (Ch. 29)"
+        },
+        {
+          "english": "Little Ladies (Kisuahili name of Lake Kibibi)",
+          "translation": "Kibibi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. VII p. 109"
+        },
+        {
+          "english": "A man / person (pl. watu)",
+          "translation": "mtu",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "A sister",
+          "translation": "dada",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "Brother",
+          "translation": "Ndugu mume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Sister",
+          "translation": "Ndugu mke-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Man",
+          "translation": "Mtu, pl. Wa-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Woman",
+          "translation": "Mwanamke, pl. Waanawake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Wife",
+          "translation": "Mke, pl. Wake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Child",
+          "translation": "Mwana, pl. Waana; Mtoto, pl. Watoto",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Son",
+          "translation": "Mwana mume, pl. Waana waume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Daughter",
+          "translation": "Mtoto mke, pl. Watoto wake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "A father",
+          "translation": "Baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Fathers",
+          "translation": "Baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "A daughter",
+          "translation": "Mtoto mke",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Daughters",
+          "translation": "Watoto waanawake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Male (noun)",
+          "translation": "mwanaume",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Woman, female (noun)",
+          "translation": "mwanamke",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Son",
+          "translation": "mtoto mume",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Son (male child)",
+          "translation": "mwana",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
         }
       ]
     },
@@ -24507,6 +24663,84 @@
           "english": "Near",
           "translation": "Karībū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
+        },
+        {
+          "english": "Handful (amount that can be grasped in the hand)",
+          "translation": "konzi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Handful (amount that will rest on one hand)",
+          "translation": "ukufi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Handful (amount that will lie on both hands together)",
+          "translation": "chopa",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "A nipple",
+          "translation": "titi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "Leprosy (skin disease)",
+          "translation": "ukoma",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 346"
+        },
+        {
+          "english": "Hand; cubit unit of measurement from elbow to finger-tip",
+          "translation": "mkono",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350"
+        },
+        {
+          "english": "Nose",
+          "translation": "Pua, pl. Pua",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Eye",
+          "translation": "Jicho, pl. Ma-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Ear",
+          "translation": "Sikio, pl. Ma-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Hair",
+          "translation": "Unyele, pl. Nyele",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Belly",
+          "translation": "Tumbo, pl. Ma-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Back",
+          "translation": "Mgongo, or Maungo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Head",
+          "translation": "kichwa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         }
       ]
     },
@@ -30506,6 +30740,216 @@
           "english": "Duck",
           "translation": "bata",
           "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XXVII p. 190 ('Bata the duck')."
+        },
+        {
+          "english": "Fly (insect)",
+          "translation": "ntzi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Fowl / chicken",
+          "translation": "kuku",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Small antelope",
+          "translation": "paa",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "A species of lizard",
+          "translation": "mguruguru",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "Guinea fowl (in Maragoa Kanga = Guinea Fowl Camp)",
+          "translation": "Kanga",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. VI p. 155"
+        },
+        {
+          "english": "Cow",
+          "translation": "Ng'ombe mke, pl. Ng'ombe wake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Dog",
+          "translation": "Mbwa, pl. Mbwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Cat",
+          "translation": "Paka, pl. Paka",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Cock",
+          "translation": "Jogoo, pl. Ma-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Duck",
+          "translation": "Bata, pl. Ma-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Ass",
+          "translation": "Punda, pl. Punda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Bird",
+          "translation": "Ndege, pl. Ndege",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "A bull",
+          "translation": "Ng'ombe ndume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "A cow",
+          "translation": "Ng'ombe mke",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Bulls",
+          "translation": "Ng'ombe ndume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Cows",
+          "translation": "Ng'ombe wake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "A dog",
+          "translation": "Mbwa mlume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "A bitch",
+          "translation": "Mbwa mke",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Dogs",
+          "translation": "Mbwa dume",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Bitches",
+          "translation": "Mbwa wake or dike",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "A he-goat",
+          "translation": "Mbuzi mvulata",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "A female (goat)",
+          "translation": "Mbuzi mtogota",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Goats",
+          "translation": "Mbuzi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Cows",
+          "translation": "gnombe",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Elephant",
+          "translation": "ndovu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Sheep",
+          "translation": "kondo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Snake",
+          "translation": "nioka",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Cow",
+          "translation": "ng'ombe jike",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Bull",
+          "translation": "ng'ombe ndume",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Female (of animals)",
+          "translation": "jike",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Game",
+          "translation": "mawindo",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Senegal / Topi antelope (Damaliscus jimela)",
+          "translation": "Topi",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 291"
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "faro",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 126"
+        },
+        {
+          "english": "Kirk's antelope (dik-dik)",
+          "translation": "paa",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 141"
+        },
+        {
+          "english": "Topi antelope",
+          "translation": "topi",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 289"
         }
       ]
     },
@@ -41230,6 +41674,258 @@
           "english": "Tree with red sap",
           "translation": "Mtumbati",
           "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XXIII p. 154 ('a tree which is called Mtumbati and smeared his knife and spear with the sap of that tree, which is red')."
+        },
+        {
+          "english": "Open grass-covered country (in contradistinction to cultivated areas and forests)",
+          "translation": "Barra",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
+        },
+        {
+          "english": "Door; also used by Zanzibari for a mountain pass",
+          "translation": "Domo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
+        },
+        {
+          "english": "A plantation or cultivated field",
+          "translation": "Shamba",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "Lake",
+          "translation": "Zewi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. VII p. 109"
+        },
+        {
+          "english": "Wilderness or 'lifted up' (scrub-covered plains of East Africa)",
+          "translation": "Nyika (U-nyika)",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XII p. 223"
+        },
+        {
+          "english": "Town",
+          "translation": "mta",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "A tree (pl. miti)",
+          "translation": "mti",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "The mangrove",
+          "translation": "mkoko",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "Mountain of Greatness or White Mountain (Kilima = mountain, Njaro = greatness/whiteness)",
+          "translation": "Kilima-Njaro",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. V p. 116"
+        },
+        {
+          "english": "Place of sycamore-trees",
+          "translation": "Mkuyu-ni",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. XI p. 270"
+        },
+        {
+          "english": "Plantations / cultivated fields",
+          "translation": "shambas",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. XII p. 312"
+        },
+        {
+          "english": "Sun",
+          "translation": "Jua, pl. Ma-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Moon",
+          "translation": "Mwezi, pl. Mi-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Star",
+          "translation": "Nyota, pl. Nyota",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Moon",
+          "translation": "muezi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sand",
+          "translation": "mtanga",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sky",
+          "translation": "mbingu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Stars",
+          "translation": "niota",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Stone",
+          "translation": "mawe",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Copal (resin and gum)",
+          "translation": "Handsha",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Cinnamon tree",
+          "translation": "Mdellasini",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Tamarind",
+          "translation": "Makuadsha, Ukuadshu",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), pp. 501, 504"
+        },
+        {
+          "english": "Cotton plant",
+          "translation": "Mbamba, Bamba",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), pp. 501, 504"
+        },
+        {
+          "english": "Bread-tree (jackfruit)",
+          "translation": "Mfenesi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Coconut tree",
+          "translation": "Mnasi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Orange tree",
+          "translation": "Mjungua",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Citron tree / lemon",
+          "translation": "Mlimau",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), pp. 501, 504"
+        },
+        {
+          "english": "Lime tree",
+          "translation": "Mdimu",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), pp. 501, 504"
+        },
+        {
+          "english": "Clove tree",
+          "translation": "Mgrufu",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Teak tree",
+          "translation": "Mgurure",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 502"
+        },
+        {
+          "english": "Ebony tree",
+          "translation": "Mpingo",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 502"
+        },
+        {
+          "english": "Gum arabic acacia (Acacia vera)",
+          "translation": "Kikuata",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 502"
+        },
+        {
+          "english": "Copal-producing tree",
+          "translation": "Msandarisi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 502"
+        },
+        {
+          "english": "Calamus / sweet-flag",
+          "translation": "Kauma",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 504"
+        },
+        {
+          "english": "Castor-oil plant (Palma Christi)",
+          "translation": "Mbono",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 505"
+        },
+        {
+          "english": "Trees",
+          "translation": "miti",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Water hole",
+          "translation": "tundu la maji",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Interior / wild inland country",
+          "translation": "bara",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 6"
+        },
+        {
+          "english": "Cultivated ground / farm plot",
+          "translation": "shamba",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 33"
+        },
+        {
+          "english": "Fibrous plant eaten by elephants",
+          "translation": "mkongi",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 108"
+        },
+        {
+          "english": "Bushy evergreen toothbrush shrub (Salvadora persica)",
+          "translation": "suaki",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 280"
+        },
+        {
+          "english": "At the suaki (derivation of Suakin)",
+          "translation": "Suakin",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 280"
         }
       ]
     },
@@ -49702,6 +50398,132 @@
           "english": "Sweet spiced cake / confection (ladu-cake)",
           "translation": "ladu",
           "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XVII pp. 112–115 ('seven ladu-cakes')."
+        },
+        {
+          "english": "Cassava, the root of native arrowroot",
+          "translation": "Mhogo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "A day's food allowance",
+          "translation": "Posho",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "A native food made of boiled flour",
+          "translation": "Potiss",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "Gin (loanword)",
+          "translation": "jini",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Native beer (drunk in Kavirondo)",
+          "translation": "pombè",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. XI p. 287"
+        },
+        {
+          "english": "Tufted maize (sorghum)",
+          "translation": "Mtama",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Indian corn (maize)",
+          "translation": "Mahindi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Finger millet (cereal)",
+          "translation": "Uwimbi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Bulrush millet (cereal)",
+          "translation": "Muelle",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Pigeon peas (cereal/legume)",
+          "translation": "Mbasi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Cowpeas (cereal/legume)",
+          "translation": "Kunde",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Beans",
+          "translation": "Fiwi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Sweet potatoes",
+          "translation": "Fiasi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Yam",
+          "translation": "Fiasi manga",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Bananas",
+          "translation": "Ndisi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Mango",
+          "translation": "Muembe",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Pineapple",
+          "translation": "Mnanasi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 501"
+        },
+        {
+          "english": "Arrow-root",
+          "translation": "Uwanga",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 504"
+        },
+        {
+          "english": "Coconut oil",
+          "translation": "Mafuta ya nasi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 505"
+        },
+        {
+          "english": "Unripe fruit",
+          "translation": "matunda mabichi",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Ration (for caravan porters)",
+          "translation": "posho",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 367"
         }
       ]
     },
@@ -64139,6 +64961,12 @@
           "english": "Long traditional Swahili tunic / shirt",
           "translation": "kanzu",
           "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XVII p. 113 ('that Kanzu shirt of yours')."
+        },
+        {
+          "english": "House",
+          "translation": "niumba",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
         }
       ]
     },
@@ -91571,6 +92399,426 @@
           "english": "Look! / behold! (Lamu/Kiamu Swahili)",
           "translation": "lola",
           "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XV p. 106 ('Lola, Makami, lola, look well at me.')."
+        },
+        {
+          "english": "To get",
+          "translation": "kupata",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "To ache",
+          "translation": "uma",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "To be torn (kupasukapasuka = to be torn into shreds)",
+          "translation": "kupasuka",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "To go to sleep",
+          "translation": "ku lala",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "To toddle (kwenda = go)",
+          "translation": "ku kwenda tata",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "Go",
+          "translation": "Enenda, pl. Enendeni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Eat",
+          "translation": "Kula, pl. Kuleni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Sit",
+          "translation": "Kaa, pl. Kaeni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Come",
+          "translation": "Njoo, pl. Njooni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Beat",
+          "translation": "Piga, pl. Pigeni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Stand",
+          "translation": "Simama, pl. Simameni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Die",
+          "translation": "Kufa, pl. Mwafe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Give",
+          "translation": "Mpe, pl. Mpeni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Run",
+          "translation": "Piga mbio, pl. Pigeni mbio",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "I am",
+          "translation": "Ni",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Thou art",
+          "translation": "Ni or U",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "He is",
+          "translation": "Ni or Yu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "We are",
+          "translation": "Ni or Tu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "You are",
+          "translation": "Ni or Mu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "They are",
+          "translation": "Ni or Wa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I was",
+          "translation": "Nalikuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Thou wast",
+          "translation": "U-li-kuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "He was",
+          "translation": "A-li-kuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "We were",
+          "translation": "Tu-li-kuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "You were",
+          "translation": "Mwa-li-kuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "They were",
+          "translation": "Wa-li-kuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Be",
+          "translation": "Uwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Being",
+          "translation": "Kuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Having been",
+          "translation": "Nikiwa nimekuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I may be",
+          "translation": "Niwe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I shall be",
+          "translation": "Nitakuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I should be",
+          "translation": "Ningekuwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Beating",
+          "translation": "Kupiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Having beaten",
+          "translation": "Nikiwa nimepiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I beat",
+          "translation": "Napiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Thou beatest",
+          "translation": "Wapiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "He beats",
+          "translation": "Apiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "We beat",
+          "translation": "Tupiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "You beat",
+          "translation": "Mupiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "They beat",
+          "translation": "Wapiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I am beating",
+          "translation": "Ninapiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I was beating",
+          "translation": "Nalikuwa nikipiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I had beaten",
+          "translation": "Nalikuwa nimepiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I may beat",
+          "translation": "Nipige",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I shall beat",
+          "translation": "Nitapiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I should beat",
+          "translation": "Ningepiga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I am beaten",
+          "translation": "Napigwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I was beaten",
+          "translation": "Nalipigwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I shall be beaten",
+          "translation": "Nitapigwa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I go",
+          "translation": "Naenda or Nenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Thou goest",
+          "translation": "Wenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "He goes",
+          "translation": "Aenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "I went",
+          "translation": "Nalikwenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Thou wentest",
+          "translation": "Ulikwenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "He went",
+          "translation": "Alikwenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Go (imperative)",
+          "translation": "Enenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Gone",
+          "translation": "Kwenda",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Come (imperative)",
+          "translation": "ndoo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Go",
+          "translation": "enenda",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Go",
+          "translation": "nenda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Will reach",
+          "translation": "tafika",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Call",
+          "translation": "mwite",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Finished",
+          "translation": "mekwisha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Drink",
+          "translation": "kunywa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "To fight",
+          "translation": "ku pigana",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "To come",
+          "translation": "kuja",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "To reach",
+          "translation": "kufika",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "To call",
+          "translation": "kuita",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "To finish",
+          "translation": "kwisha",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "To take a stroll for amusement",
+          "translation": "tembea",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 286"
         }
       ]
     },
@@ -94036,6 +95284,156 @@
           "english": "Something unreal, undependable, false",
           "translation": "Kizuzi",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 4] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+        },
+        {
+          "english": "Good (concord forms: ngema, njema, jema, mwema, wema, mema, pema, chema, vyema, kwema)",
+          "translation": "mwema",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII pp. 339–340"
+        },
+        {
+          "english": "Far (mbāli = very far)",
+          "translation": "mbali",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Nice, of food (msūri = very nice)",
+          "translation": "msuri",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Boiling",
+          "translation": "tufu-tufu",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Gentle",
+          "translation": "-anana",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Soft",
+          "translation": "-ororo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Slow (emphatic: poli-poli)",
+          "translation": "poli",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "The big (as in Njemps Mkubwa)",
+          "translation": "Mkubwa",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. IX p. 233"
+        },
+        {
+          "english": "Near",
+          "translation": "Papahapa",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Good",
+          "translation": "-ema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Better",
+          "translation": "-ema kuliko or kupita",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31 [good where there is, or surpassing]"
+        },
+        {
+          "english": "Best",
+          "translation": "-ema kuliko -ote",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31 [good where there is all]"
+        },
+        {
+          "english": "High",
+          "translation": "-refu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Higher",
+          "translation": "-refu kuliko",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Highest",
+          "translation": "-refu kuliko -ote",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Bad",
+          "translation": "vibaya",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "All",
+          "translation": "wote",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Slow",
+          "translation": "polepole",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Good",
+          "translation": "mzuri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Bad",
+          "translation": "mbaya",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Red",
+          "translation": "mwekundu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "White",
+          "translation": "mweupi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Black",
+          "translation": "mweusi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Blue",
+          "translation": "kama maji ya bahari",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Brave",
+          "translation": "hodari",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
         }
       ]
     },
@@ -114766,6 +116164,12 @@
           "translation": "Musimu",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 2] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
           "pronunciation": "musimu"
+        },
+        {
+          "english": "A rainy season",
+          "translation": "Masika",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
         }
       ]
     },
@@ -228974,6 +230378,858 @@
           "english": "Doctor: You're definitely not alone, Mr. Ferrari. We're in this together. Now, let's get started with the exam, shall we? And please, don't hesitate to stop me if you have any questions or concerns.",
           "translation": "Daktari: Hakika hauko peke yako, Bw. Ferrari. Tuko pamoja katika hili. Sasa, tuanze na uchunguzi, sawa? Na tafadhali, usisite kunisimamisha ikiwa una maswali au wasiwasi wowote.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+        },
+        {
+          "english": "Sergeant in a Zanzibari caravan",
+          "translation": "Askari",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
+        },
+        {
+          "english": "Stockade or zeriba, generally made of thorn bush",
+          "translation": "Boma",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
+        },
+        {
+          "english": "Tax levied by a tribe for right of passage through their country",
+          "translation": "Hongo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
+        },
+        {
+          "english": "Long robe worn by Arabs and better-class Suahili",
+          "translation": "Kanzu",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
+        },
+        {
+          "english": "Guide of a caravan",
+          "translation": "Kiringozi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
+        },
+        {
+          "english": "Arab and Beluchi soldiers in the army of the Sultan of Zanzibar",
+          "translation": "Kiroboto",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 409"
+        },
+        {
+          "english": "A canoe",
+          "translation": "Mau",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "A native headman",
+          "translation": "Munipara",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "Battle (one of the native names of Mombasa)",
+          "translation": "Mvita",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "A journey or a caravan",
+          "translation": "Safari",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "Ten strings of beads, a Suahili measure of value",
+          "translation": "Shadda",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "A conference",
+          "translation": "Shauri",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "The order to 'start'",
+          "translation": "Taenda",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "Up-country natives (historical coastal term meaning 'savages')",
+          "translation": "Waschenzi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Glossary p. 410"
+        },
+        {
+          "english": "Dangling earring worn in the upper ear lobe",
+          "translation": "kipule",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 330"
+        },
+        {
+          "english": "Stud-like ornament inserted in the upper ear lobe",
+          "translation": "kipini",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 330"
+        },
+        {
+          "english": "A turban (pl. vilemba)",
+          "translation": "kilemba",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "A dhow / vessel (pl. vyombo)",
+          "translation": "chombo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "A good man",
+          "translation": "Mtu mema",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "Two good men",
+          "translation": "Watu wabili wema",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "A good tree",
+          "translation": "Mti mwema",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "Two good trees",
+          "translation": "Miti mibili mema",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 340"
+        },
+        {
+          "english": "My good child must have food",
+          "translation": "Mtoto mema mangu mana jocula",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "My good children must have food",
+          "translation": "Watoto wema wangu wana jocula",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "Man-of-war (loanword)",
+          "translation": "manowari",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "How shall I get it?",
+          "translation": "Nitakipataje",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 341"
+        },
+        {
+          "english": "That (palepale = that one there)",
+          "translation": "pale",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "My lord",
+          "translation": "ababi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 342"
+        },
+        {
+          "english": "Special smith / craftsman",
+          "translation": "fundi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 349"
+        },
+        {
+          "english": "Black magic / witchcraft",
+          "translation": "uchawi",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. IV p. 88"
+        },
+        {
+          "english": "Fortified thorn enclosure / camp stockade",
+          "translation": "boma",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. IV p. 93; Ch. VI p. 161"
+        },
+        {
+          "english": "Tribute / blackmail paid for passage (northern district term)",
+          "translation": "chango",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. IV p. 94"
+        },
+        {
+          "english": "Tribute / tax paid for passage (southern region term)",
+          "translation": "hongo",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. IV p. 94"
+        },
+        {
+          "english": "Caravan flags/banners unfurled to ward off danger",
+          "translation": "komas",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. VI p. 154"
+        },
+        {
+          "english": "Charm / medicine",
+          "translation": "dawa",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. IX p. 220"
+        },
+        {
+          "english": "Club / knobkerry",
+          "translation": "rungu",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. X p. 251"
+        },
+        {
+          "english": "Of me",
+          "translation": "Ch-angu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Mine",
+          "translation": "Ch-angu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "We",
+          "translation": "Swiswi, Sisi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Of us",
+          "translation": "Ch-etu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Our",
+          "translation": "Ch-etu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Of thee",
+          "translation": "Ch-ako",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Thine",
+          "translation": "Ch-ako",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Of you",
+          "translation": "Ch-enu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Your",
+          "translation": "Ch-enu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Of him",
+          "translation": "Ch-ake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "His",
+          "translation": "Ch-ake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Of them",
+          "translation": "Ch-ao",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Their",
+          "translation": "Ch-ao",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 29"
+        },
+        {
+          "english": "Slave",
+          "translation": "Mtumwa, pl. Wa-",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Cultivator",
+          "translation": "Mwenyi kulima",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Shepherd",
+          "translation": "Mchunga, pl. Wachunga",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "House",
+          "translation": "Nyumba, pl. Nyumba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "What",
+          "translation": "Nini",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Why",
+          "translation": "Mbona, kwani",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "And",
+          "translation": "Na, ka- tense of verb",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "If",
+          "translation": "Kana, -ki- tense of the verb",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "No",
+          "translation": "Ahaa, sivyo, hakuna",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Alas",
+          "translation": "Ah",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Of a father",
+          "translation": "-a baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30 [Kiti cha baba = chair of a father]"
+        },
+        {
+          "english": "To a father",
+          "translation": "Kwa baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "From a father",
+          "translation": "Katika or Kwa baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Two fathers",
+          "translation": "Baba wawili",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Of fathers",
+          "translation": "-a baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "To fathers",
+          "translation": "Kwa baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "From fathers",
+          "translation": "Katika or Kwa baba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Of a daughter",
+          "translation": "-a mtoto mke",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "To a daughter",
+          "translation": "Kwa mtoto mke",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "From a daughter",
+          "translation": "Katika or Kwa mtoto mke",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Two daughters",
+          "translation": "Watoto waanawake wawili",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Of daughters",
+          "translation": "-a watoto waanawake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "To daughters",
+          "translation": "Kwa watoto waanawake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "From daughters",
+          "translation": "Katika watoto waanawake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "A good man",
+          "translation": "Mtu mwema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Of a good man",
+          "translation": "-a mtu mwema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "To a good man",
+          "translation": "Kwa mtu mwema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "From a good man",
+          "translation": "Kwa or Katika mtu mwema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Two good men",
+          "translation": "Watu wema wawili",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Good men",
+          "translation": "Watu wema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "Of good men",
+          "translation": "-a watu wema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 30"
+        },
+        {
+          "english": "To good men",
+          "translation": "Kwa watu wema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "From good men",
+          "translation": "Katika watu wema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "A good woman",
+          "translation": "Mwanamke mwema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "A bad boy",
+          "translation": "Kijana kibaya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "Good women",
+          "translation": "Waanawake wema",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "A bad girl",
+          "translation": "Mtoto mwanamke mbaya",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31"
+        },
+        {
+          "english": "How old is this horse?",
+          "translation": "Farasi huyu umri wake apataje?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31 [Farasi = Arabic horse]"
+        },
+        {
+          "english": "How far is it from here to —?",
+          "translation": "Mwendo wake yapataje tokea — hatta —?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 31-32"
+        },
+        {
+          "english": "How many sons are there in your father's house?",
+          "translation": "Waama waume wangapi nyumbani mwa baba wako?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "I have walked a long way to-day",
+          "translation": "Nimekwenda mbali leo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "The son of my uncle is married to his sister",
+          "translation": "Mwana wa mjomba wangu amemoa umbu wake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "In the house is the saddle of the white horse",
+          "translation": "Nyumbani kuna matandiko ya farasi mweupe",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "Put the saddle upon his back",
+          "translation": "Weka matandiko mgongoni mwake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "I have beaten his son with many stripes",
+          "translation": "Nimempiga mwana wake na fimbo nyingi",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "He is grazing cattle on the top of the hill",
+          "translation": "Anachunga ng'ombe juu ya kilima",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "He is sitting on a horse under that tree",
+          "translation": "Anakaa juu ya farasi chini ya mti ule",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "His brother is taller than his sister",
+          "translation": "Ndugu wake ni mrefu kuliko umbu wake",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "The price of that is two pounds and a half",
+          "translation": "Bei ya kile ni reale kumi wa nuss",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32 [Bei (Arabic), reale (Portuguese 'Real'), nuss (Arabic)]"
+        },
+        {
+          "english": "My father lives in that small house",
+          "translation": "Baba yangu anakaa katika nyumba ile ndogo",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "Take those pounds from him",
+          "translation": "Umtwalie reali zile",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "Give this pound to him",
+          "translation": "Mpe reale hii",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "Beat him well and bind him with ropes",
+          "translation": "Mpige vema kamfunga na kamba",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "Draw water from the well",
+          "translation": "Teke maji kisimani",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "Walk before me",
+          "translation": "Tembea mbele yangu",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "Whose boy comes behind you?",
+          "translation": "Mtoto wa nani ajaye nyuma yako?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "From whom did you buy that?",
+          "translation": "Umenunua kele kwa nani?",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "From a shopkeeper of the village",
+          "translation": "Kwa mchuruzi mjini",
+          "pronunciation": "",
+          "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 32"
+        },
+        {
+          "english": "Chief",
+          "translation": "sheikh, mkuu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Cold",
+          "translation": "beredi",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "God",
+          "translation": "mungu",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Slave",
+          "translation": "mtumoa",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Spear",
+          "translation": "fumo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Woman",
+          "translation": "mke",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Poems and mottoes in rhyme",
+          "translation": "Dshuo dsha Utensi",
+          "pronunciation": "",
+          "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 561"
+        },
+        {
+          "english": "Shield",
+          "translation": "ng'ao",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Iron wire",
+          "translation": "sengenge",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Brass wire",
+          "translation": "masango",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Beads",
+          "translation": "ushanga",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "How many",
+          "translation": "wangapi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Whose",
+          "translation": "ya nani",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "My",
+          "translation": "yangu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Your",
+          "translation": "yako",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "His",
+          "translation": "yake",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "He is coming",
+          "translation": "anakuja",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "He is going",
+          "translation": "anakwenda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Do you know",
+          "translation": "wajua",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Whose house?",
+          "translation": "nyumba ya nani?",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Your trees",
+          "translation": "miti yako",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "He will reach",
+          "translation": "atafika",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "He has finished",
+          "translation": "amekwisha",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "A good person",
+          "translation": "mtu mwema",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "A beautiful person",
+          "translation": "mtu mzuri",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "A bad person",
+          "translation": "mtu mbaya",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "A white child",
+          "translation": "mtoto mweupe",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "Black people",
+          "translation": "watu weusi",
+          "pronunciation": "",
+          "context": "Miss M. E. Woodward (1899) JRAI Vol. 29, Notes on the Swahili Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 250"
+        },
+        {
+          "english": "My meat / my game (author's Swahili name)",
+          "translation": "Nyama Yangu",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 6"
+        },
+        {
+          "english": "Ndorobo people (Swahili plural)",
+          "translation": "Wa-ndorobo",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 13"
+        },
+        {
+          "english": "Tribute paid for passage",
+          "translation": "hongo",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 41"
+        },
+        {
+          "english": "Palaver / council / discussion",
+          "translation": "shauri",
+          "pronunciation": "showery",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 50"
+        },
+        {
+          "english": "Please God, master, we shall get plenty of elephants",
+          "translation": "Inshallah, Bwana, tu ta pata ndovu tele!",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 286"
+        },
+        {
+          "english": "Pliable hide pannier for pack-donkeys",
+          "translation": "sogi",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 363"
+        },
+        {
+          "english": "Kraal / thorn-fence camp enclosure",
+          "translation": "boma",
+          "pronunciation": "",
+          "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 394"
         }
       ]
     },
@@ -294727,5 +296983,5 @@
   "source": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022); Goldsmith & Mpiranya (2022) LSP #306 Ch. 5, Mwamzandi (2022) Ch. 13, Nurse (2019) LSP #190 Ch. 33, Ustadh Mau (2013) Kiamu Poetics, Beech (1918), TICO-19 & Stanford PACS (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); C. H. & N. Y. Stigand (1914) Black Tales for White Children (Project Gutenberg #38992, US Public Domain, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm); Wikiquote Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)",
   "isoCode": "swh",
   "glottocode": "swah1253",
-  "totalEntries": 52971
+  "totalEntries": 53347
 }

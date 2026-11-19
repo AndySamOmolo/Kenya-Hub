@@ -22424,6 +22424,42 @@
           "translation": "Kilaluma",
           "pronunciation": "kee-lah-loo-mah",
           "context": "p. 45 ('It is called here the Sagana, or more rarely the Kilaluma (i.e. firewater)') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
+        },
+        {
+          "english": "Mountain",
+          "translation": "ngongo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Hill",
+          "translation": "ngongo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "River",
+          "translation": "luyi",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Spring (of water)",
+          "translation": "luyi lunini",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Plateau",
+          "translation": "mwer",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 350 (comparative table)"
+        },
+        {
+          "english": "Plantation",
+          "translation": "emogonda",
+          "pronunciation": "",
+          "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 248"
         }
       ]
     },
@@ -25046,6 +25082,12 @@
           "translation": "naischu",
           "pronunciation": "nigh-shoo",
           "context": "p. 53 ('The Masai name for honey is \"naischu,\" the word generally used in Kikuyu') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
+        },
+        {
+          "english": "Millet",
+          "translation": "olmusha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244 (noted as Kikuyu word in footnote 1)"
         }
       ]
     },
@@ -128111,5 +128153,5 @@
   "source": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kik",
   "glottocode": "kiku1240",
-  "totalEntries": 22969
+  "totalEntries": 22976
 }

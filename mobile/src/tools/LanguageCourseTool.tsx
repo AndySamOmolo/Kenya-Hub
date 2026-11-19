@@ -18,7 +18,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather, Ionicons } from '@expo/vector-icons';
 import { playVerifiedAudio, hasVerifiedAudio } from '../lib/mobile-audio';
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
-import { PUBLISHED_COURSES, getCourse } from '../shared/data/courses/registry';
+import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getPlaceholderCourse } from './language-course/courseLoader';
 import { getLanguageIdentity } from '../shared/data/language-identity';
 import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared/data/language-sources';
 import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
@@ -106,20 +106,20 @@ export default function LanguageCourseTool({
 
   // ── Language Selection Menu & Active Course State ──
   const [showLanguageMenu, setShowLanguageMenu] = useState<boolean>(
-    !(initialLanguageId && getCourse(initialLanguageId))
+    !(initialLanguageId && hasCourseSummary(initialLanguageId))
   );
   const [menuSearchQuery, setMenuSearchQuery] = useState<string>('');
   const [menuFamilyFilter, setMenuFamilyFilter] = useState<string>('All');
 
   const [selectedLangId, setSelectedLangId] = useState<string>(
-    initialLanguageId && getCourse(initialLanguageId)
+    initialLanguageId && hasCourseSummary(initialLanguageId)
       ? initialLanguageId
-      : PUBLISHED_COURSES[0]?.config.id || 'swahili'
+      : PUBLISHED_COURSE_SUMMARIES[0]?.config.id || 'swahili'
   );
   const [activeTab, setActiveTab] = useState<MainTab>(initialTab || 'learn');
 
   useEffect(() => {
-    if (initialLanguageId && getCourse(initialLanguageId)) {
+    if (initialLanguageId && hasCourseSummary(initialLanguageId)) {
       setSelectedLangId(initialLanguageId);
       setShowLanguageMenu(false);
     }
@@ -149,7 +149,7 @@ export default function LanguageCourseTool({
         if (rawV1) {
           const v1 = JSON.parse(rawV1);
           const migrated: Record<string, LanguageProgress> = {};
-          for (const course of PUBLISHED_COURSES) {
+          for (const course of PUBLISHED_COURSE_SUMMARIES) {
             const lid = course.config.id;
             const base = createDefaultLanguageProgress(lid);
             base.totalXP = v1.xp || 0;
@@ -175,14 +175,17 @@ export default function LanguageCourseTool({
   }, []);
 
   const currentCourse = useMemo(
-    () => getCourse(selectedLangId) || PUBLISHED_COURSES[0],
-    [selectedLangId]
+    () =>
+      showLanguageMenu
+        ? getPlaceholderCourse(selectedLangId)
+        : getCourseLazy(selectedLangId) || getCourseLazy('swahili') || getPlaceholderCourse(selectedLangId),
+    [selectedLangId, showLanguageMenu]
   );
 
   const langColor = currentCourse?.config.color || colors.gold;
   const languageSources = useMemo(
-    () => getSourcesForLanguage(selectedLangId),
-    [selectedLangId]
+    () => (showLanguageMenu ? [] : getSourcesForLanguage(selectedLangId)),
+    [selectedLangId, showLanguageMenu]
   );
 
   // Compute current language progress with automatic heart refills & daily reset
@@ -1875,7 +1878,7 @@ export default function LanguageCourseTool({
   // ── Derived Language Menu Data (All 23 Courses, Search, Family Filter & Overall Stats) ──
   const menuFamilies = useMemo(() => {
     const set = new Set<string>();
-    PUBLISHED_COURSES.forEach((c) => {
+    PUBLISHED_COURSE_SUMMARIES.forEach((c) => {
       if (c.config.family) set.add(c.config.family);
     });
     return ['All', ...Array.from(set)];
@@ -1885,7 +1888,7 @@ export default function LanguageCourseTool({
     const normSearch = (s: string) =>
       s.normalize("NFD").replace(/[\u0300-\u036f'’]/g, "").toLowerCase();
     const q = normSearch(menuSearchQuery.trim());
-    return PUBLISHED_COURSES.filter((c) => {
+    return PUBLISHED_COURSE_SUMMARIES.filter((c) => {
       if (menuFamilyFilter !== 'All' && c.config.family !== menuFamilyFilter) return false;
       if (!q) return true;
       return (
@@ -1902,10 +1905,10 @@ export default function LanguageCourseTool({
     let totalXp = 0;
     let bestStreak = 0;
     let totalWords = 0;
-    let topLangId = PUBLISHED_COURSES[0]?.config.id || 'swahili';
+    let topLangId = PUBLISHED_COURSE_SUMMARIES[0]?.config.id || 'swahili';
     let topLangXp = -1;
 
-    for (const course of PUBLISHED_COURSES) {
+    for (const course of PUBLISHED_COURSE_SUMMARIES) {
       const lid = course.config.id;
       const st = allProgress[lid];
       if (!st) continue;
@@ -1918,7 +1921,7 @@ export default function LanguageCourseTool({
       }
     }
     const resumeCourse =
-      PUBLISHED_COURSES.find((c) => c.config.id === topLangId) || PUBLISHED_COURSES[0];
+      PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === topLangId) || PUBLISHED_COURSE_SUMMARIES[0];
     return { totalXp, bestStreak, totalWords, resumeCourse };
   }, [allProgress]);
 
@@ -1961,7 +1964,7 @@ export default function LanguageCourseTool({
             >
               <Feather name="globe" size={12} color={colors.gold} />
               <Text style={{ fontSize: 11, fontWeight: '800', color: colors.gold }}>
-                {PUBLISHED_COURSES.length} KENYAN LANGUAGE COURSES
+                {PUBLISHED_COURSE_SUMMARIES.length} KENYAN LANGUAGE COURSES
               </Text>
             </View>
             {overallMenuStats.totalXp > 0 && overallMenuStats.resumeCourse && (
@@ -1991,7 +1994,7 @@ export default function LanguageCourseTool({
               Choose a Kenyan Language to Learn
             </Text>
             <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 19, marginTop: 4 }}>
-              Select any of {PUBLISHED_COURSES.length} interactive courses below to unlock guided skill trees, flashcards, phonetic guides, grammar tables, mini-games, and oral proverbs.
+              Select any of {PUBLISHED_COURSE_SUMMARIES.length} interactive courses below to unlock guided skill trees, flashcards, phonetic guides, grammar tables, mini-games, and oral proverbs.
             </Text>
           </View>
 
@@ -2115,8 +2118,8 @@ export default function LanguageCourseTool({
               const active = menuFamilyFilter === fam;
               const count =
                 fam === 'All'
-                  ? PUBLISHED_COURSES.length
-                  : PUBLISHED_COURSES.filter((c) => c.config.family === fam).length;
+                  ? PUBLISHED_COURSE_SUMMARIES.length
+                  : PUBLISHED_COURSE_SUMMARIES.filter((c) => c.config.family === fam).length;
               return (
                 <Pressable
                   key={fam}
@@ -2157,13 +2160,10 @@ export default function LanguageCourseTool({
         {/* Language Courses Directory Cards */}
         <View style={{ gap: 12 }}>
           {filteredMenuCourses.map((course) => {
-            const { config, units } = course;
+            const { config } = course;
             const iden = getLanguageIdentity(config.id);
-            const skillsCount = units.reduce((acc, u) => acc + u.skills.length, 0);
-            const wordsCount = units.reduce(
-              (acc, u) => acc + u.skills.reduce((s, sk) => s + sk.words.length, 0),
-              0
-            );
+            const skillsCount = course.skillCount;
+            const wordsCount = course.wordsCount;
             const courseProg = allProgress[config.id];
             const courseXp = courseProg?.totalXP || 0;
             const completedSkillsCount = courseProg
@@ -2399,7 +2399,7 @@ export default function LanguageCourseTool({
         >
           <Feather name="grid" size={13} color={colors.gold} />
           <Text style={{ fontSize: 12, fontWeight: '800', color: colors.gold }}>
-            All {PUBLISHED_COURSES.length} Languages
+            All {PUBLISHED_COURSE_SUMMARIES.length} Languages
           </Text>
           <Feather name="chevron-down" size={13} color={colors.gold} />
         </Pressable>

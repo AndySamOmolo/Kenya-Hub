@@ -1,12 +1,12 @@
-name: Ingest Open-Access Audio & Text Datasets to Cloudflare R2 (One-Time)
+name: Ingest Open-Access Audio & Text Datasets to Cloudflare R2
 
 on:
   workflow_dispatch:
     inputs:
       force_reingest:
-        description: "Re-run ingestion even if .audio-ingested-lock.json already exists"
+        description: "Re-run ingestion even if scriptsHash in .audio-ingested-lock.json matches"
         required: false
-        default: "false"
+        default: "true"
         type: string
       max_clips_per_dataset:
         description: "Maximum audio clips to transcode & upload per dataset split (default 250 finishes in ~8 mins)"
@@ -23,14 +23,17 @@ on:
     paths:
       - ".github/workflows/ingest-audio-and-datasets.yml"
       - "kenyahub/scripts/ci-ingest-audio-and-text-r2.py"
+      - "kenyahub/scripts/ingest-permissive-text-datasets.py"
+      - "kenyahub/scripts/ingest-external-datasets.mjs"
+      - "kenyahub/scripts/sync-cloudflare-r2-audio.mjs"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  ingest-once:
-    name: Stream Open-Access Audio & Text Datasets -> Cloudflare R2 & Repo
+  ingest-datasets:
+    name: Stream Open-Access Text & Audio Datasets -> Repo & Cloudflare R2
     runs-on: ubuntu-latest
     timeout-minutes: 45
     permissions:
@@ -42,17 +45,31 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check One-Time Lockfile (Skip if already ingested unless forced)
+      - name: Check Ingestion Lockfile & Scripts Fingerprint
         id: lock_check
         run: |
-          if [ -f "kenyahub/public/.audio-ingested-lock.json" ] && [ "${{ inputs.force_reingest }}" != "true" ]; then
-            echo "One-time audio & dataset ingestion has already completed (kenyahub/public/.audio-ingested-lock.json exists). Skipping."
+          CURRENT_HASH=$(sha256sum \
+            kenyahub/scripts/ci-ingest-audio-and-text-r2.py \
+            kenyahub/scripts/ingest-permissive-text-datasets.py \
+            kenyahub/scripts/ingest-external-datasets.mjs \
+            | sha256sum | awk '{print $1}')
+          echo "scripts_hash=$CURRENT_HASH" >> "$GITHUB_OUTPUT"
+
+          LOCK_FILE="kenyahub/public/.audio-ingested-lock.json"
+          LOCKED_HASH=""
+          if [ -f "$LOCK_FILE" ]; then
+            LOCKED_HASH=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("scriptsHash",""))' "$LOCK_FILE" 2>/dev/null || echo "")
+          fi
+
+          if [ -f "$LOCK_FILE" ] && [ "$LOCKED_HASH" = "$CURRENT_HASH" ] && [ "${{ inputs.force_reingest }}" != "true" ]; then
+            echo "Ingestion already completed for current script fingerprint ($CURRENT_HASH). Skipping."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
+            echo "Running dataset ingestion (locked_hash='${LOCKED_HASH:-none}', current_hash='$CURRENT_HASH', force='${{ inputs.force_reingest }}')."
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Verify Cloudflare Secrets Are Configured
+      - name: Check Cloudflare R2 Secrets Availability
         id: secrets_check
         if: steps.lock_check.outputs.skip != 'true'
         env:
@@ -61,15 +78,16 @@ jobs:
           R2_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET: ${{ secrets.R2_SECRET_ACCESS_KEY }}
         run: |
-          if [ -z "$CF_ACCOUNT_ID" ] && [ -z "$R2_KEY_ID" ]; then
-            echo "::warning::Cloudflare R2 secrets (CLOUDFLARE_ACCOUNT_ID + R2_ACCESS_KEY_ID/R2_SECRET_ACCESS_KEY or CLOUDFLARE_API_TOKEN) are not set yet. Skipping until secrets are added."
-            echo "ready=false" >> "$GITHUB_OUTPUT"
+          if [ -n "$CF_ACCOUNT_ID" ] && { [ -n "$CF_API_TOKEN" ] || { [ -n "$R2_KEY_ID" ] && [ -n "$R2_SECRET" ]; }; }; then
+            echo "Cloudflare R2 credentials detected — audio upload enabled."
+            echo "r2_ready=true" >> "$GITHUB_OUTPUT"
           else
-            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "::warning::Cloudflare R2 secrets not fully configured — running text & lexicon dataset ingestion only (audio R2 uploads skipped)."
+            echo "r2_ready=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Setup Node.js 20
-        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        if: steps.lock_check.outputs.skip != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -77,13 +95,13 @@ jobs:
           cache-dependency-path: kenyahub/package-lock.json
 
       - name: Setup Python 3.11
-        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        if: steps.lock_check.outputs.skip != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install FFmpeg & Python Audio/Dataset Dependencies
-        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        if: steps.lock_check.outputs.skip != 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg libsndfile1
@@ -91,12 +109,12 @@ jobs:
           pip install "datasets>=2.19.0,<4.0.0" soundfile librosa boto3 requests pyarrow huggingface_hub
 
       - name: Install Web Dependencies
-        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        if: steps.lock_check.outputs.skip != 'true'
         working-directory: kenyahub
         run: npm ci --prefer-offline --no-audit --no-fund
 
-      - name: Run Commercially Permissive Text & IPA Dataset Streamer
-        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+      - name: Run Commercially Permissive Text, Lexicon, CLDR & IPA Dataset Streamer
+        if: steps.lock_check.outputs.skip != 'true'
         working-directory: kenyahub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -104,8 +122,8 @@ jobs:
           node scripts/ingest-external-datasets.mjs
           python3 -u scripts/ingest-permissive-text-datasets.py --max-rows=2500
 
-      - name: Stream Open-Access Audio Datasets, Transcode to 24kbps Opus & Upload to Cloudflare R2
-        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+      - name: Stream Open-Access Audio & HF Text Datasets, Transcode to 24kbps Opus & Upload to Cloudflare R2
+        if: steps.lock_check.outputs.skip != 'true'
         working-directory: kenyahub
         env:
           PYTHONUNBUFFERED: "1"
@@ -120,22 +138,24 @@ jobs:
           ONLY_UNGATED: ${{ inputs.only_ungated || 'false' }}
           PER_DATASET_TIMEOUT_SEC: "90"
           GLOBAL_TIME_BUDGET_SEC: "1500"
+          INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
+          R2_READY: ${{ steps.secrets_check.outputs.r2_ready }}
         run: python3 -u scripts/ci-ingest-audio-and-text-r2.py
 
       - name: Sync Mobile Data & Run Strict Tool/Course Audit
-        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+        if: steps.lock_check.outputs.skip != 'true'
         run: |
           node mobile/scripts/sync-data.mjs
           npm --prefix kenyahub run audit:tools:strict
 
-      - name: Commit Ingested Dictionaries, Audio Manifest & One-Time Lockfile
-        if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
+      - name: Commit Ingested Dictionaries, Audio Manifest & Updated Lockfile
+        if: steps.lock_check.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add kenyahub/src/data/dictionaries kenyahub/public/audio-manifest.json kenyahub/public/.audio-ingested-lock.json mobile/src/shared/
           if ! git diff --staged --quiet; then
-            git commit -m "feat(audio): one-time ingest of open-access audio & text datasets to Cloudflare R2"
+            git commit -m "feat(data): ingest open-access audio & text datasets to Cloudflare R2 and dictionaries"
             git pull --rebase origin ${GITHUB_REF_NAME}
             git push origin HEAD:${GITHUB_REF_NAME}
           else

@@ -250,6 +250,12 @@
           "english": "When you harvest your food from the field and forget a sheaf, do not go back to take it (Lubukusu)",
           "translation": "Ne okesa biakhulia biowo khukhwama mu mukuunda mala wibilile bilala nibio okesile okhakobolayo khu bukula tawe",
           "context": "Project Tafsiri v2.0 Luhya Multilingual Dataset (https://huggingface.co/datasets/mamakobe/luhya-multilingual-dataset, CC-BY-4.0)"
+        },
+        {
+          "english": "Salutation",
+          "translation": "merembe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         }
       ]
     },
@@ -2243,6 +2249,66 @@
           "english": "There is one particular window that is in all rooms",
           "translation": "ri-dirisha lla-ra ri-vey-e mu zi-rumu zy-oosi",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Logoori (Ch. 12)"
+        },
+        {
+          "english": "One",
+          "translation": "mulala",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Two",
+          "translation": "mabili",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Three",
+          "translation": "mataro",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Four",
+          "translation": "bane",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Five",
+          "translation": "barano",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Six",
+          "translation": "basaba",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Seven",
+          "translation": "baranonababili",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Eight",
+          "translation": "banana",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Nine",
+          "translation": "barananabane",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Ten",
+          "translation": "kekume",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
         }
       ]
     },
@@ -4320,6 +4386,30 @@
           "english": "A child surpasses the mother in cleverness (Marachi proverb)",
           "translation": "Namwana ahila nyina amachesi",
           "context": "Project Tafsiri v2.0 Luhya Multilingual Dataset (CC-BY-4.0)"
+        },
+        {
+          "english": "Woman",
+          "translation": "mukasi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Brother",
+          "translation": "mwanawefu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Son",
+          "translation": "mushaniwefu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Father",
+          "translation": "baba",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         }
       ]
     },
@@ -8003,6 +8093,24 @@
           "english": "hair (cl.5, Lubukusu)",
           "translation": "li-chune",
           "context": "Lubukusu noun gloss (16b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Head",
+          "translation": "murue",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Hand",
+          "translation": "sinama",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Foot",
+          "translation": "sirenje",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         }
       ]
     },
@@ -11976,6 +12084,66 @@
           "english": "The hunters despise each other more than the fishermen despise each other",
           "translation": "Chichewa",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Lubukusu (Ch. 25)"
+        },
+        {
+          "english": "Cow",
+          "translation": "ngmukasi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Bull",
+          "translation": "ngyeuno",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Goat",
+          "translation": "mbusi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Sheep",
+          "translation": "ligondi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Donkey",
+          "translation": "isigiri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Camel",
+          "translation": "ngamia",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Game",
+          "translation": "isolo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Dog",
+          "translation": "mbwa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Lion",
+          "translation": "yatunyi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Snake",
+          "translation": "njoka",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         }
       ]
     },
@@ -14893,6 +15061,54 @@
           "english": "And if you find a bird's nest in a tree (Lubukusu)",
           "translation": "Ne onyoola siswi sie nyuni khumurongoro",
           "context": "Project Tafsiri v2.0 Luhya Multilingual Dataset (https://huggingface.co/datasets/mamakobe/luhya-multilingual-dataset, CC-BY-4.0)"
+        },
+        {
+          "english": "Water",
+          "translation": "amaji",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Smoke",
+          "translation": "mos",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Plantation",
+          "translation": "makunda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Waterhole",
+          "translation": "buina",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "River",
+          "translation": "mualo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Trees",
+          "translation": "musara",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Grass",
+          "translation": "munyasi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Earth",
+          "translation": "liroba",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         }
       ]
     },
@@ -16907,6 +17123,30 @@
           "english": "My spring never dries up — Walking and eating (Maragoli riddle)",
           "translation": "Kidaho change kigetsa amatsi dave — Kukutsaa, kulitsaa",
           "context": "Project Tafsiri v2.0 Luhya Multilingual Dataset (CC-BY-4.0)"
+        },
+        {
+          "english": "Food",
+          "translation": "usuma",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Millet",
+          "translation": "mabēle",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Milk",
+          "translation": "mabere",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Meat",
+          "translation": "inama",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         }
       ]
     },
@@ -28062,6 +28302,102 @@
           "english": "to lose (Lubukusu)",
           "translation": "tib-i-a",
           "context": "Lubukusu verb stem (16a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Sleep",
+          "translation": "kukoma",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Bring",
+          "translation": "lera",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Come",
+          "translation": "inza",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Want",
+          "translation": "ninyere",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Go",
+          "translation": "kenda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Will reach",
+          "translation": "kuola",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Wait",
+          "translation": "rinda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Tell",
+          "translation": "songiri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Call",
+          "translation": "mulange",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Finished",
+          "translation": "bauēre",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Take away",
+          "translation": "kinga",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Speak",
+          "translation": "simga",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Drink",
+          "translation": "ama",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Eat",
+          "translation": "dia",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "To fight",
+          "translation": "kukweana",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Make",
+          "translation": "khola",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
         }
       ]
     },
@@ -29312,6 +29648,96 @@
           "english": "smart (cl.1, Lubukusu)",
           "translation": "omu-miliyu",
           "context": "Lubukusu adjective gloss (17a–b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "All",
+          "translation": "vos",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Near",
+          "translation": "nahambi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Far",
+          "translation": "nehale",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Dear",
+          "translation": "kitinyere",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Cheap",
+          "translation": "bulai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Fast",
+          "translation": "chia",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Slow",
+          "translation": "kala",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Unripe",
+          "translation": "kivisi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Good",
+          "translation": "mulai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Bad",
+          "translation": "momubi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Red",
+          "translation": "mulaf",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "White",
+          "translation": "ndaf",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Black",
+          "translation": "nimumari",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Blue",
+          "translation": "nimumari",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Brave",
+          "translation": "muting",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
         }
       ]
     },
@@ -32615,6 +33041,42 @@
           "english": "Young (Luwanga)",
           "translation": "toro",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
+        },
+        {
+          "english": "Day",
+          "translation": "musiro",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "To-day",
+          "translation": "sitere",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Yesterday",
+          "translation": "shavere",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "To-morrow",
+          "translation": "machuri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "After",
+          "translation": "basiri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Now",
+          "translation": "bulano",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
         }
       ]
     },
@@ -36218,6 +36680,132 @@
           "english": "John considers himself to be smart (Lubukusu)",
           "translation": "Yohanna a-a-i-bukul-a omw-eene khu-b-a omu-miliyu.",
           "context": "Lubukusu ECM reflexive construction (17b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Village",
+          "translation": "litara",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Cloth",
+          "translation": "lisēro",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Shield",
+          "translation": "ngabo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "War",
+          "translation": "khweruna",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Peace",
+          "translation": "khwerunatawe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Iron wire",
+          "translation": "lunālo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Brass wire",
+          "translation": "mukasa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Beads",
+          "translation": "fiuma",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Where",
+          "translation": "rohena",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "How many",
+          "translation": "balibanga",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "In front",
+          "translation": "mbiri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Behind",
+          "translation": "munuma",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "No",
+          "translation": "shishirio",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Who",
+          "translation": "wina",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Whose",
+          "translation": "shawina",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "My",
+          "translation": "yanje",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Your",
+          "translation": "iyiyo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "His",
+          "translation": "nasisis",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "He is coming",
+          "translation": "aredza",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "He is going",
+          "translation": "akendire",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "Do you know",
+          "translation": "manyire",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
         }
       ]
     },
@@ -40197,5 +40785,5 @@
   "source": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016); Johnson & Diercks (2026) LSP #491 Ch. 18 Tiriki Perception Verbs & Liu (2024) LSP #438 Ch. 15 Tiriki Double Objects (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Lubukusu Corpus (Baker 2022, CC-BY-4.0)",
   "isoCode": "luy",
   "glottocode": "luyi1234",
-  "totalEntries": 7066
+  "totalEntries": 7164
 }

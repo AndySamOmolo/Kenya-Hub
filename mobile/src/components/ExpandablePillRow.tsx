@@ -40,6 +40,17 @@ function countPillChildren(children: React.ReactNode): number {
   return count;
 }
 
+function resolveBaseStyle(styleProp: any): any {
+  if (typeof styleProp === "function") {
+    try {
+      return styleProp({ pressed: false });
+    } catch {
+      return undefined;
+    }
+  }
+  return styleProp;
+}
+
 function isPillMarkedActive(props: any, goldColor?: string): boolean {
   if (!props) return false;
   if (
@@ -50,7 +61,7 @@ function isPillMarkedActive(props: any, goldColor?: string): boolean {
   ) {
     return true;
   }
-  const flat = StyleSheet.flatten(props.style) || {};
+  const flat = StyleSheet.flatten(resolveBaseStyle(props.style)) || {};
   if (goldColor && (flat.borderColor === goldColor || flat.backgroundColor === goldColor)) {
     return true;
   }
@@ -272,7 +283,8 @@ export function ExpandablePillRow({
         if (detectedActiveIdx === -1 && isPillMarkedActive(props, theme.gold)) {
           detectedActiveIdx = pillIdx;
         }
-        const flatPillStyle = StyleSheet.flatten(props.style) || {};
+        const origStyle = props.style;
+        const flatPillStyle = StyleSheet.flatten(resolveBaseStyle(origStyle)) || {};
         const pv =
           typeof flatPillStyle.paddingVertical === "number"
             ? Math.max(8, Math.ceil(flatPillStyle.paddingVertical))
@@ -282,6 +294,24 @@ export function ExpandablePillRow({
             ? Math.max(13, Math.ceil(flatPillStyle.paddingHorizontal))
             : 14;
         const origOnLayout = props.onLayout;
+        const normalizedPillExtra = {
+          flexDirection: flatPillStyle.flexDirection || "row",
+          alignItems: "center" as const,
+          justifyContent: "center" as const,
+          paddingVertical: pv,
+          paddingHorizontal: ph,
+          minHeight: Math.max(flatPillStyle.minHeight || 0, 36),
+          borderRadius: isExpanded
+            ? 16
+            : flatPillStyle.borderRadius ?? 999,
+        };
+        const expandedExtra = isExpanded
+          ? { maxWidth: "100%" as const, flexShrink: 1 }
+          : null;
+        const composedStyle =
+          typeof origStyle === "function"
+            ? (state: any) => [origStyle(state), normalizedPillExtra, expandedExtra]
+            : [origStyle, normalizedPillExtra, expandedExtra];
 
         return React.cloneElement(
           child as React.ReactElement<any>,
@@ -293,32 +323,13 @@ export function ExpandablePillRow({
               };
               if (origOnLayout) origOnLayout(e);
             },
-            style: [
-              props.style,
-              {
-                flexDirection: flatPillStyle.flexDirection || "row",
-                alignItems: "center",
-                justifyContent: "center",
-                paddingVertical: pv,
-                paddingHorizontal: ph,
-                minHeight: Math.max(flatPillStyle.minHeight || 0, 36),
-                borderRadius: isExpanded
-                  ? 16
-                  : flatPillStyle.borderRadius ?? 999,
-              },
-              isExpanded
-                ? {
-                    maxWidth: "100%",
-                    flexShrink: 1,
-                  }
-                : null,
-            ],
+            style: composedStyle,
           },
           nextChildren
         );
       }
 
-      const flatChildStyle = StyleSheet.flatten(props.style) || {};
+      const flatChildStyle = StyleSheet.flatten(resolveBaseStyle(props.style)) || {};
       const isTextNode =
         child.type === Text ||
         typeof flatChildStyle.fontSize === "number" ||
@@ -363,7 +374,7 @@ export function ExpandablePillRow({
           ...(isExpanded && props.numberOfLines === 1
             ? { numberOfLines: undefined }
             : {}),
-          style: isExpanded ? [props.style, { flexShrink: 1 }] : props.style,
+          style: isExpanded ? (typeof props.style === "function" ? (s: any) => [(props.style as any)(s), { flexShrink: 1 }] : [props.style, { flexShrink: 1 }]) : props.style,
         },
         nextChildren
       );

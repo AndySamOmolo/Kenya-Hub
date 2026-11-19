@@ -141,6 +141,12 @@
           "english": "greeting (Kipsigis)",
           "translation": "kaː-kaːt-ɛːt",
           "context": "Kipsigis Class II nominalization of kat 'greet' (31) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "Salutation",
+          "translation": "chamke",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -1351,6 +1357,24 @@
           "english": "Each child lifted three boxes",
           "translation": "ko-yot bokisiniksomok lagok alak tugul",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Kipsigis (Ch. 25)"
+        },
+        {
+          "english": "Six",
+          "translation": "ilo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Seven",
+          "translation": "tisăp",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Ten",
+          "translation": "tomon",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -3369,6 +3393,42 @@
           "english": "hosts / the hosts (Sengwer)",
           "translation": "tʌ̀ʌk(-i) (pl.) / tʌ̀ʌk-îik (pl.def.)",
           "context": "Sengwer ghost plural -i paradigm (101) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "Man",
+          "translation": "pīk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Woman",
+          "translation": "korke",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Child",
+          "translation": "lakwe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Brother",
+          "translation": "keturche",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Son",
+          "translation": "nyētik",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Father",
+          "translation": "paipai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -5870,6 +5930,18 @@
           "english": "tongue / tongues (Sengwer)",
           "translation": "ŋɛ́ljɛ̂p (sg.) / ŋèljéep(-i) (pl.)",
           "context": "Sengwer ghost plural suffix -i paradigm (81) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "Hand",
+          "translation": "ēyu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Foot",
+          "translation": "keldo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -8741,6 +8813,72 @@
           "english": "rat / the rat (Sengwer / Sabaot)",
           "translation": "mʊrjaa (sg.) / mʊrjaantɛɛt (def.)",
           "context": "Kalenjin singular suffix -jaa(nta) example (86) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "Cattle",
+          "translation": "tōgha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Cow",
+          "translation": "iwoge",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bull",
+          "translation": "aito",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Goat",
+          "translation": "nioko",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Sheep",
+          "translation": "kicherek",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Donkey",
+          "translation": "sigire",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Camel",
+          "translation": "tamesi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Game",
+          "translation": "arawe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Dog",
+          "translation": "sēsē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Lion",
+          "translation": "abiye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Snake",
+          "translation": "ērēn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -10962,6 +11100,60 @@
           "english": "the water (Sengwer / Sabaot)",
           "translation": "pèe-kʌ̀ (Sengwer) / pee-k(ʌ) (Sabaot)",
           "context": "Sengwer–Sabaot cognate comparison (89) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "Road",
+          "translation": "orana",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Plantation",
+          "translation": "pēk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Waterhole",
+          "translation": "kererkie",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "River",
+          "translation": "endo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Rain",
+          "translation": "torōt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Trees",
+          "translation": "ketit",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Grass",
+          "translation": "susuandi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Earth",
+          "translation": "numunyēk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Fire",
+          "translation": "māstinock",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -12887,6 +13079,36 @@
           "english": "farm / the farm (Sengwer)",
           "translation": "mbâr(a) (sg.) / mbárɛ̂ɛt (def.)",
           "context": "Sengwer ghost vowel /a/ paradigm (103) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "Eleusine / finger millet grain cultivated by the Wa-kamasia",
+          "translation": "ūūlizè",
+          "pronunciation": "",
+          "context": "Joseph Thomson (1887) Through Masai Land (Public Domain), Ch. XI p. 270"
+        },
+        {
+          "english": "Food",
+          "translation": "amīt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Millet",
+          "translation": "mosangik",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Milk",
+          "translation": "kiyeko",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Meat",
+          "translation": "penda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -17675,6 +17897,96 @@
           "english": "come! / he is coming (Sengwer)",
           "translation": "cóo(n) (imp.) / cóon-è (3sg impf)",
           "context": "Sengwer verb with ghost /n/ (104) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "Sleep",
+          "translation": "kaguruiyo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bring",
+          "translation": "konu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Come",
+          "translation": "abwa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Want",
+          "translation": "amache",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Go",
+          "translation": "ūi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Will reach",
+          "translation": "keitete",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Wait",
+          "translation": "kanyet",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Tell",
+          "translation": "maun",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Finished",
+          "translation": "karok",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Take away",
+          "translation": "ūp",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Speak",
+          "translation": "ngatān",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Drink",
+          "translation": "aupīck",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eat",
+          "translation": "ongēm",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To fight",
+          "translation": "ngebarke",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Make",
+          "translation": "sāghan",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -19142,6 +19454,78 @@
           "english": "dark brown (sg. / pl., Sengwer)",
           "translation": "múrjʌ̂ʌ(n) (sg.) / múrjʌ́ʌn-èc (pl.)",
           "context": "Sengwer adjective with ghost /n/ (105) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "All",
+          "translation": "tokol",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Dear",
+          "translation": "ōi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Cheap",
+          "translation": "kolokol",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Fast",
+          "translation": "mongun",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Slow",
+          "translation": "mutia",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Unripe",
+          "translation": "tokonyale",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Bad",
+          "translation": "sorīn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Red",
+          "translation": "periek",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "White",
+          "translation": "lēlek",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Black",
+          "translation": "tuek",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Blue",
+          "translation": "arareita",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Brave",
+          "translation": "koliōl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -23746,6 +24130,36 @@
           "english": "day / the day / days / the days / these days (Sengwer)",
           "translation": "pèet (sg.), pèetúut (def.), pèetúus (pl.), pèetùusjêk (pl.def.), pèetùunì (this day), pèetùusjék-cù (these days)",
           "context": "Sengwer noun paradigm with ghost /u/ (3, 57, 62) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "Day",
+          "translation": "petunok",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "To-day",
+          "translation": "nauoni",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To-morrow",
+          "translation": "karon",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "After",
+          "translation": "toma",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Now",
+          "translation": "raune",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -29550,6 +29964,138 @@
           "english": "longing / the longing / this longing (Sengwer)",
           "translation": "éemʌ̂(s) (sg.), éemʌ̀s-tʌ̂ (def.), éemʌ́s-ì (this longing)",
           "context": "Sengwer ghost /s/ noun paradigm (67) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "Village",
+          "translation": "keita",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Spear",
+          "translation": "añgotet",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Shield",
+          "translation": "long",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "War",
+          "translation": "lūke",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Peace",
+          "translation": "tiliye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Iron wire",
+          "translation": "tobokwe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Brass wire",
+          "translation": "tāe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Beads",
+          "translation": "soneiet",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Where",
+          "translation": "ngiro",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "What",
+          "translation": "kelene",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "In front",
+          "translation": "tai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Behind",
+          "translation": "letut",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "No",
+          "translation": "matinye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "There",
+          "translation": "olim",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Who",
+          "translation": "tōrot",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Whose",
+          "translation": "pongoki",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "My",
+          "translation": "nanye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Your",
+          "translation": "nangun",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "His",
+          "translation": "mananyo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is coming",
+          "translation": "aiño",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is going",
+          "translation": "kui",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Do you know",
+          "translation": "oñgin",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -45114,5 +45660,5 @@
   "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024); Zwarts, Chelimo & Jerono (2024) LSP #438 Ch. 21 Kalenjin Reflexives & Diercks/Kouneli (2019) LSP #190 Kipsigis Syntax (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Kipsigis & Sengwer Corpus (Bossi & Diercks 2019; Kouneli 2022; Blix 2022; Falletti & Remijsen 2025, CC-BY-4.0)",
   "isoCode": "kln",
   "glottocode": "kale1246",
-  "totalEntries": 8004
+  "totalEntries": 8095
 }

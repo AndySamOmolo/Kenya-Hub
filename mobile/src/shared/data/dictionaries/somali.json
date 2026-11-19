@@ -123,6 +123,12 @@
           "english": "Peace / greeting (goodbye)",
           "translation": "salaam",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 48, 60, 62, 124 ('say \"salaam\"' / '\"Salaam, Sahib!\"')."
+        },
+        {
+          "english": "Salutation",
+          "translation": "mot / manwadba",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -996,6 +1002,66 @@
           "english": "One (1)",
           "translation": "kow",
           "context": "Kaikki.org Somali Machine-Readable Dictionary (https://kaikki.org/dictionary/Somali/pos-num/index.html, CC-BY-SA)"
+        },
+        {
+          "english": "One",
+          "translation": "met",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Two",
+          "translation": "lăba",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Three",
+          "translation": "sadhe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Four",
+          "translation": "āfăr",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Five",
+          "translation": "shăn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Six",
+          "translation": "lēh",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Seven",
+          "translation": "todăwā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eight",
+          "translation": "sidit",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Nine",
+          "translation": "sāgāl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Ten",
+          "translation": "tomon",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -2296,6 +2362,42 @@
           "english": "Old man (elder / full-grown)",
           "translation": "sheiba",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 110, 131 ('a powerful Sheiba' / '\"is a Sheiba (old man), he will not grow another inch!\"')."
+        },
+        {
+          "english": "Man",
+          "translation": "ādĕgā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Woman",
+          "translation": "nākta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Child",
+          "translation": "elmā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Brother",
+          "translation": "wālala",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Son",
+          "translation": "arorta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Father",
+          "translation": "abahi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -3686,6 +3788,24 @@
           "english": "Knee / Hill / Clan subdivision",
           "translation": "jilib",
           "context": "Kaikki.org Somali Machine-Readable Dictionary (https://kaikki.org/dictionary/Somali/meaning/j/ji/jilib.html, CC-BY-SA)"
+        },
+        {
+          "english": "Head",
+          "translation": "madaha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Hand",
+          "translation": "kānta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Foot",
+          "translation": "lugha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -5420,6 +5540,66 @@
           "english": "Coastal fish species (caught off Zeila)",
           "translation": "gurram",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 131 ('There were very few other fish, and they were mostly gurram.')."
+        },
+        {
+          "english": "Cattle",
+          "translation": "lōta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Cow",
+          "translation": "sadidik",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bull",
+          "translation": "dibika",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Goat",
+          "translation": "arega",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Sheep",
+          "translation": "edā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Donkey",
+          "translation": "tomēra",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Camel",
+          "translation": "gel",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Dog",
+          "translation": "ēg",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Lion",
+          "translation": "libēha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Snake",
+          "translation": "măsk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -6365,6 +6545,120 @@
           "english": "Wood",
           "translation": "Korio",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Somali."
+        },
+        {
+          "english": "Water",
+          "translation": "bīā",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Road",
+          "translation": "wadada",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Smoke",
+          "translation": "kēka",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Plantation",
+          "translation": "bērta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Waterhole",
+          "translation": "lechan",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "River",
+          "translation": "durdurka",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Trees",
+          "translation": "huiyet",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Grass",
+          "translation": "āūsk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Earth",
+          "translation": "āro",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Fire",
+          "translation": "tābka",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Sandy bed of a stream or wady",
+          "translation": "tug",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 16"
+        },
+        {
+          "english": "Sycamore tree (bearing fig-like fruit)",
+          "translation": "durre",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 23"
+        },
+        {
+          "english": "Jujube tree",
+          "translation": "gub",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 23"
+        },
+        {
+          "english": "Needle-tipped agave-like plant (Spanish bayonet)",
+          "translation": "hig",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 27"
+        },
+        {
+          "english": "Thorny spiked tree",
+          "translation": "kedi",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 27"
+        },
+        {
+          "english": "Acacia tree bearing reddish sweet pods",
+          "translation": "hura",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 27"
+        },
+        {
+          "english": "Junction of waters (place-name)",
+          "translation": "Bieusora",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 37"
+        },
+        {
+          "english": "Plain",
+          "translation": "Bunn",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 114"
+        },
+        {
+          "english": "Large tamarind-like tree with sour bean-like fruit",
+          "translation": "hammer",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 308"
         }
       ]
     },
@@ -7087,6 +7381,30 @@
           "english": "underneath",
           "translation": "hosta",
           "context": "Lt. J. W. C. Kirk, Notes on the Somali Language (1903)"
+        },
+        {
+          "english": "Food",
+          "translation": "sōrta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Millet",
+          "translation": "harurk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Milk",
+          "translation": "āna",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Meat",
+          "translation": "hĭlīp",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -11440,6 +11758,102 @@
           "english": "To flow",
           "translation": "soocan",
           "context": "Kaikki.org Somali Machine-Readable Dictionary (https://kaikki.org/dictionary/Somali/pos-verb/san--soocan.html, CC-BY-SA)"
+        },
+        {
+          "english": "Sleep",
+          "translation": "sāhao",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bring",
+          "translation": "kēn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Come",
+          "translation": "kāle",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Want",
+          "translation": "wandoni",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Go",
+          "translation": "sāu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Will reach",
+          "translation": "wāgāri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Wait",
+          "translation": "juk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Tell",
+          "translation": "ūshek",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Call",
+          "translation": "ūyăd",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Finished",
+          "translation": "domabi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Take away",
+          "translation": "kāt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Speak",
+          "translation": "adāl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Drink",
+          "translation": "ap",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eat",
+          "translation": "sōrtōam",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To fight",
+          "translation": "wadirhai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Make",
+          "translation": "same",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -12234,6 +12648,96 @@
           "english": "Half",
           "translation": "Bad-ki",
           "context": "Lt. J. W. C. Kirk, Notes on the Somali Language (Oxford University Press, 1903, Vocabulary pp. 42–79) • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+        },
+        {
+          "english": "All",
+          "translation": "kulugei",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Near",
+          "translation": "sedo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Far",
+          "translation": "hagafukta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Dear",
+          "translation": "ibadagiahe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Cheap",
+          "translation": "wachabanyahe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Fast",
+          "translation": "dăksō",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Slow",
+          "translation": "ayāsō",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Unripe",
+          "translation": "akoienye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Good",
+          "translation": "watalmonte",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Bad",
+          "translation": "wahunyei",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Red",
+          "translation": "wasie",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "White",
+          "translation": "wāādu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Black",
+          "translation": "wamedoiye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Blue",
+          "translation": "ākhtār",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Brave",
+          "translation": "hōgbuleiye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -14597,6 +15101,42 @@
           "english": "Eid festival day (end of Ramadan)",
           "translation": "Yom-el-'Id",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 104 ('a present on the Yom-el-'Id')."
+        },
+        {
+          "english": "Day",
+          "translation": "āwa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "To-day",
+          "translation": "măngta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Yesterday",
+          "translation": "shali",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To-morrow",
+          "translation": "biri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "After",
+          "translation": "wali",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Now",
+          "translation": "ata",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -64256,6 +64796,186 @@
           "english": "By God! (oath / exclamation)",
           "translation": "Wallahi",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 122 ('\"Wallahi,\" the thread had turned into human hair')."
+        },
+        {
+          "english": "Traditional draped national robe worn by Somali",
+          "translation": "Tobe",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII Plate XIX facing p. 357"
+        },
+        {
+          "english": "Medicine",
+          "translation": "dowo",
+          "pronunciation": "",
+          "context": "J. W. Gregory (1896) The Great Rift Valley (Public Domain), Ch. XVII p. 358"
+        },
+        {
+          "english": "Village",
+          "translation": "hărăda",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Cloth",
+          "translation": "marada",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Spear",
+          "translation": "warākă",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Shield",
+          "translation": "kāshān",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "War",
+          "translation": "tĕrĕrta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Peace",
+          "translation": "nabăt",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Brass wire",
+          "translation": "mārta",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Beads",
+          "translation": "kosha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Where",
+          "translation": "āwē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "How many",
+          "translation": "wamisa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "What",
+          "translation": "wamhei",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "In front",
+          "translation": "hōrei",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Behind",
+          "translation": "tibonoko",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "No",
+          "translation": "māakăn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Here",
+          "translation": "mēchăn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "There",
+          "translation": "hāgo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Who",
+          "translation": "waiyo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Whose",
+          "translation": "āyale",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "My",
+          "translation": "anale",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Your",
+          "translation": "sagale",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "His",
+          "translation": "nikasale",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is coming",
+          "translation": "wāēmon",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is going",
+          "translation": "nāwăge",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Do you know",
+          "translation": "wāakăn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Blacksmiths (artisan caste)",
+          "translation": "Tomals",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 16"
+        },
+        {
+          "english": "Leather-workers (artisan caste)",
+          "translation": "Yebirs",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 16"
+        },
+        {
+          "english": "Bad for old women (place-name)",
+          "translation": "Habr-i-erde",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 24"
+        },
+        {
+          "english": "I have news",
+          "translation": "Yaweromer",
+          "pronunciation": "",
+          "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 125"
         }
       ]
     },
@@ -68843,5 +69563,5 @@
   "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019); Green & Smith (2024) LSP #427 Ch. 13 Kenyan Maay Tone, Di Maio (2023) Kenyan Maay Focus, & LSP #190/#96 Somali Studies (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); Major H. Rayne (1921) Sun, Sand and Somals (Project Gutenberg #48598, US Public Domain, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm)",
   "isoCode": "som",
   "glottocode": "soma1255",
-  "totalEntries": 12881
+  "totalEntries": 13001
 }

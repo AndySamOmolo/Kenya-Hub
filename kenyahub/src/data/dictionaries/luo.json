@@ -134,6 +134,12 @@
           "translation": "Dongruok mar piny",
           "pronunciation": "dohng-roo-ohk mahr peeny",
           "context": "Google Research SMOL / GATITOS Dholuo Lexicon (en_luo, Caswell et al. 2025, CC-BY-4.0)"
+        },
+        {
+          "english": "Salutation",
+          "translation": "mosi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -722,6 +728,36 @@
           "english": "Devil / Evil spirit (pl. Jochiende)",
           "translation": "Jachien",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+        },
+        {
+          "english": "One",
+          "translation": "acheli",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Four",
+          "translation": "ongweni",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Seven",
+          "translation": "aboro",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eight",
+          "translation": "abereo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Nine",
+          "translation": "luedoakachel",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -2005,6 +2041,30 @@
           "english": "brave man / brave men (Dholuo)",
           "translation": "t̪ʊɔn (sg.) / t̪uondi (pl.)",
           "context": "Dholuo stem-level dental harmony & plural consonant mutation (6b, 27, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "Child",
+          "translation": "gueno",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Brother",
+          "translation": "wadwa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Son",
+          "translation": "omēra",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Father",
+          "translation": "urwa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -2958,6 +3018,12 @@
           "english": "deaf, to be stopped up (Dholuo)",
           "translation": "dino",
           "context": "Dholuo alveolar stop with alveolar nasal (6b, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "Hand",
+          "translation": "luedo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -4113,6 +4179,72 @@
           "english": "snake / snakes (Dholuo)",
           "translation": "t̪uol (sg.) / t̪uonde (pl.)",
           "context": "Dholuo plural consonant mutation creating disharmonic surface form (27, 35, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "Cows",
+          "translation": "diung",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Elephant",
+          "translation": "lietsh",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Cattle",
+          "translation": "viang",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Cow",
+          "translation": "viangmathako",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Goat",
+          "translation": "dieli",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Donkey",
+          "translation": "kanyema",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Camel",
+          "translation": "aluo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Game",
+          "translation": "lē",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Dog",
+          "translation": "guōk",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Lion",
+          "translation": "siburi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Snake",
+          "translation": "tuōl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -5184,6 +5316,72 @@
           "english": "swelling",
           "translation": "Bur",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+        },
+        {
+          "english": "Fire",
+          "translation": "martsh",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "River",
+          "translation": "kula",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Sun",
+          "translation": "chega",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Tree",
+          "translation": "yen",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Road",
+          "translation": "wangio",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Plantation",
+          "translation": "puotho",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Waterhole",
+          "translation": "awachi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "River",
+          "translation": "āora",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Trees",
+          "translation": "yath",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Earth",
+          "translation": "lō",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Fire",
+          "translation": "māch",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -6049,6 +6247,30 @@
           "english": "to make cicatrices",
           "translation": "Kedo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+        },
+        {
+          "english": "Food",
+          "translation": "charm korn",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Food",
+          "translation": "kōni",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Milk",
+          "translation": "chaki",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Meat",
+          "translation": "ringo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
         }
       ]
     },
@@ -9170,6 +9392,12 @@
           "english": "purse (Dholuo)",
           "translation": "ndede",
           "context": "Dholuo alveolar consonant harmony example (6a, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "House",
+          "translation": "dalo",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
         }
       ]
     },
@@ -11935,6 +12163,102 @@
           "english": "to balance (Dholuo)",
           "translation": "diedo",
           "context": "Dholuo alveolar consonant harmony example (6a, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "Sleep",
+          "translation": "anēndo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Bring",
+          "translation": "kēl",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Come",
+          "translation": "abī",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Want",
+          "translation": "adwaro",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Go",
+          "translation": "wathio",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Will reach",
+          "translation": "atundu",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Wait",
+          "translation": "rit",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Tell",
+          "translation": "wachima",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Call",
+          "translation": "aluango",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Finished",
+          "translation": "urumo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Take away",
+          "translation": "ting",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Speak",
+          "translation": "wācho",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Drink",
+          "translation": "amatho",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Eat",
+          "translation": "achamo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To fight",
+          "translation": "wakedo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Make",
+          "translation": "tem",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -12409,6 +12733,84 @@
           "english": "Dholuo coronal stop inventory (alveolar vs. dental harmony)",
           "translation": "Alveolar: t, d, nd, n; Dental: t̪, d̪, nd̪ (stem-level dental harmony bars dental+alveolar stops; nasal n is neutral)",
           "context": "Dholuo coronal phonology summary (5, §4.1) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "All",
+          "translation": "lundo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Near",
+          "translation": "machegine",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Far",
+          "translation": "mabori",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Dear",
+          "translation": "matek",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Cheap",
+          "translation": "maber",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Fast",
+          "translation": "pispio",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Slow",
+          "translation": "mosmos",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Unripe",
+          "translation": "manum",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Red",
+          "translation": "masulwali",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "White",
+          "translation": "marachar",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Black",
+          "translation": "lateng",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Blue",
+          "translation": "lateng",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Brave",
+          "translation": "matek",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -14233,6 +14635,36 @@
           "english": "To-day",
           "translation": "Kawuono",
           "context": "Sir Harry H. Johnston (1902) The Uganda Protectorate, Vol. II (Ja-Luo / Nyifwa) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
+        },
+        {
+          "english": "Day",
+          "translation": "ndal",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "To-day",
+          "translation": "tinende",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To-morrow",
+          "translation": "king",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "After",
+          "translation": "podi",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Now",
+          "translation": "kauon",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -75580,6 +76012,144 @@
           "english": "She added it was not clear how the virus was introduced to the camps and that some of the camp’s guards were also ill.",
           "translation": "ne omedo ni ne ok ong'ere maler kaka kutego nobiro e kembe kendo ni jorit moko mag kembe bende ne tuo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "Spear",
+          "translation": "tong'o",
+          "pronunciation": "",
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Village",
+          "translation": "pācho",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Shield",
+          "translation": "kuot",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "War",
+          "translation": "lueni",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Peace",
+          "translation": "merembe",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Iron wire",
+          "translation": "malo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Brass wire",
+          "translation": "mola",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Beads",
+          "translation": "utiti",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Where",
+          "translation": "akānye",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "What",
+          "translation": "ango",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "In front",
+          "translation": "atelo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Behind",
+          "translation": "kiēn",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "No",
+          "translation": "onge",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Here",
+          "translation": "karkai",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "There",
+          "translation": "kucha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Who",
+          "translation": "ngawa",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Whose",
+          "translation": "maruga?",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "My",
+          "translation": "māra",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Your",
+          "translation": "māri",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "His",
+          "translation": "marejalicha",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is coming",
+          "translation": "abēru",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "He is going",
+          "translation": "othio",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Do you know",
+          "translation": "engeyo",
+          "pronunciation": "",
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
         }
       ]
     },
@@ -78921,5 +79491,5 @@
   "source": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921); Rev. John Roscoe & Bishop J. J. Willis (1915) The Northern Bantu — Nilotic Kavirondo Kinship & Clans (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Dholuo Corpus (Mackenzie 2016, CC-BY-4.0)",
   "isoCode": "luo",
   "glottocode": "luoo1235",
-  "totalEntries": 14972
+  "totalEntries": 15067
 }
