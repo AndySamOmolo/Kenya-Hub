@@ -13,8 +13,8 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
-  "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897 \"Somali-English and English-Somali Dictionary\", Kegan Paul, Trench, Trübner & Co., London — audited 100% line-by-line across Front Matter, Preface pp. v–xiii, Abbreviations p. xiv, 20-row Kenya Reference Table [Swahili sawaheli/sawahili, Ogaden & Darod dialect wa debai, Galla daba galla, East African antelopes si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro, and rubiad/rubod/rubi currency], and Full Two-Column Page Transcriptions of pp. 26, 123, 127, 242, 266 & 293), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0)).",
+  "lastUpdated": "2026-11-19",
+  "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897 \"Somali-English and English-Somali Dictionary\", Kegan Paul, Trench, Trübner & Co., London — audited 100% line-by-line across Front Matter, Preface pp. v–xiii, Abbreviations p. xiv, 20-row Kenya Reference Table [Swahili sawaheli/sawahili, Ogaden & Darod dialect wa debai, Galla daba galla, East African antelopes si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro, and rubiad/rubod/rubi currency], and Full Two-Column Page Transcriptions of pp. 26, 123, 127, 242, 266 & 293), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0)). Further enriched with attested Somali customary-law, clan, pastoral, and maritime terms from Major H. Rayne (1921) 'Sun, Sand and Somals' (Project Gutenberg #48598, US Public Domain).",
   "categories": [
     {
       "id": "greetings",
@@ -118,6 +118,11 @@
           "english": "Yes (affirmative particle)",
           "translation": "haa",
           "context": "Kaikki.org Somali Machine-Readable Dictionary (https://kaikki.org/dictionary/Somali/pos-particle/index.html, CC-BY-SA)"
+        },
+        {
+          "english": "Peace / greeting (goodbye)",
+          "translation": "salaam",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 48, 60, 62, 124 ('say \"salaam\"' / '\"Salaam, Sahib!\"')."
         }
       ]
     },
@@ -2276,6 +2281,21 @@
           "english": "Wife",
           "translation": "Affo",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Somali."
+        },
+        {
+          "english": "Family / clan sub-section (lineage group)",
+          "translation": "rer",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 20 ('sub-sections are subdivided into rers or families')."
+        },
+        {
+          "english": "Poor people / indigent persons",
+          "translation": "masakin",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 25 ('genuine \"masakins\" (poor people)')."
+        },
+        {
+          "english": "Old man (elder / full-grown)",
+          "translation": "sheiba",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 110, 131 ('a powerful Sheiba' / '\"is a Sheiba (old man), he will not grow another inch!\"')."
         }
       ]
     },
@@ -5395,6 +5415,11 @@
           "english": "The oxen are grazing",
           "translation": "Dibi-ya-d-u w-ay daaq-ay-saa",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Somali (Ch. 23)"
+        },
+        {
+          "english": "Coastal fish species (caught off Zeila)",
+          "translation": "gurram",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 131 ('There were very few other fish, and they were mostly gurram.')."
         }
       ]
     },
@@ -10085,6 +10110,21 @@
           "english": "His house",
           "translation": "kisa",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Somali."
+        },
+        {
+          "english": "Nomadic encampment / homestead (kraal)",
+          "translation": "kurria",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 44, 111 ('near Abokr Fahia's kurria' / 'let us go to the kurria together')."
+        },
+        {
+          "english": "Somali dagger (traditional short blade)",
+          "translation": "bilawa",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 63 ('passed me my empty shot gun and drew his bilawa')."
+        },
+        {
+          "english": "Nomadic Somali portable hut / tent",
+          "translation": "gurgi",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 110, 112, 135 ('left his spear, shield, and dagger in his gurgi' / 'the gurgi of an old man')."
         }
       ]
     },
@@ -13117,6 +13157,11 @@
           "english": "I come",
           "translation": "imān",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Somali."
+        },
+        {
+          "english": "Dhow captain (native ship captain)",
+          "translation": "nakhoda",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 89, 137 ('A NAKHODA (CAPTAIN) AND HIS FAMILY'; also spelled 'nachoda or native captain')."
         }
       ]
     },
@@ -13584,6 +13629,36 @@
           "english": "wan shegi I will tell",
           "translation": "wan shegi dona",
           "context": "Lt. J. W. C. Kirk, Notes on the Somali Language (1903)"
+        },
+        {
+          "english": "Special constable / court messenger",
+          "translation": "biladier",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 21–22 ('a man employed as a special constable on any odd job' carrying a red court-sealed ticket)."
+        },
+        {
+          "english": "Native magistrate / Islamic judge",
+          "translation": "kathi",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 23, 29, 102, 167–168 ('a Kathi, or native magistrate')."
+        },
+        {
+          "english": "Peace! (call for truce or safety)",
+          "translation": "aman",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 113 ('called out: \"Hoi, hoi! Aman! Peace!\"')."
+        },
+        {
+          "english": "Blood-money / customary compensation for killing",
+          "translation": "dia",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 120 ('the compensation, dia, that is coming to me for his death')."
+        },
+        {
+          "english": "Daily maintenance / living allowance (paid to a wife)",
+          "translation": "musroof",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 167 ('sending her six annas daily, as musroof or maintenance')."
+        },
+        {
+          "english": "Islamic law (religious legal code)",
+          "translation": "sharia",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 168 ('keeping well within the sharia himself')."
         }
       ]
     },
@@ -14507,6 +14582,21 @@
           "english": "Evening",
           "translation": "galáb-ti (Yibir: galabi-di, Midgan: iftimowihi neghatala)",
           "context": "Lt. J. W. C. Kirk (1905) Comparative Vocabulary of Somali, Yibir, and Midgan • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+        },
+        {
+          "english": "Hot dry southwest monsoon season (June; marked by wind, dust, and heat)",
+          "translation": "kharif",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 98 ('June, the season of the \"Kharif\"; the Kharif that has three elements—wind, dust, and heat')."
+        },
+        {
+          "english": "Ramadan (month of prayer and fasting)",
+          "translation": "Ramathan",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 35, 98–102 ('the month of Ramathan; the month that all good Mahomedans give up to prayer and fasting')."
+        },
+        {
+          "english": "Eid festival day (end of Ramadan)",
+          "translation": "Yom-el-'Id",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 104 ('a present on the Yom-el-'Id')."
         }
       ]
     },
@@ -64156,6 +64246,16 @@
           "english": "She added it was not clear how the virus was introduced to the camps and that some of the camp’s guards were also ill.",
           "translation": "waxay intaas ku dartay inaysan caddayn sida fayraska lagu soo geliyay xeryaha iyo in qaar ka mid ah ilaalada xerada ay sidoo kale xanuunsan yihiin",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (som_Latn Af-Soomaali, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "God willing (what is to be will be)",
+          "translation": "Inshallah",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 91 ('what is to be will be—\"Inshallah.\"')."
+        },
+        {
+          "english": "By God! (oath / exclamation)",
+          "translation": "Wallahi",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 122 ('\"Wallahi,\" the thread had turned into human hair')."
         }
       ]
     },
@@ -68691,12 +68791,57 @@
           "english": "Whosoever shall do the will of God, the same is my brother, and my sister, and mother (Mark 3:35 — 1915 Ogaden-Harti Somali Specimen #460)",
           "translation": "Sababti ghof walba osubiya amarki Ilahey, asaga walalkey ah owalashey ah ohabartey ah.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "Clan sub-section / family lineage",
+          "translation": "jilib",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 20 ('quite a new rer or Jilib may be formed')."
+        },
+        {
+          "english": "Clan representative / elder acting as government go-between",
+          "translation": "akil",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 20–21, 60 ('representatives of the various clans, or families, to act as agents or go-betweens for the government')."
+        },
+        {
+          "english": "Dowry / marriage dower (payable under Islamic law)",
+          "translation": "mehr",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 29, 45, 167–168 ('mehr, or maintenance' / 'mehr or dowry')."
+        },
+        {
+          "english": "Traditional Somali artisan and hunter caste (potters, sandal-makers, hunters)",
+          "translation": "Midgan",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 82, 105, 117 ('the hunter people—the Midgans'; also pot-makers and sandal-makers)."
+        },
+        {
+          "english": "Artisan / outcast clans of Northern Somaliland (collective term)",
+          "translation": "Sab",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 117 ('the \"Sab,\" or outcast tribes of Northern Somaliland')."
+        },
+        {
+          "english": "Traditional Somali clan of ritual specialists and amulet-makers",
+          "translation": "Yibir",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 117–123 ('The Yibirs...'; receive customary birth and marriage dues and prepare the makran amulet)."
+        },
+        {
+          "english": "Protective amulet sewn in leather and tied on a newborn boy's arm (given by a Yibir)",
+          "translation": "makran",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 121, 123 ('tiny sticks... sewn up in a bit of skin... tied on baby's arm. It is called a \"makran\"')."
+        },
+        {
+          "english": "Devil / mischievous imp",
+          "translation": "sheitan",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 153–154 ('sheitans he calls them, which means devils')."
+        },
+        {
+          "english": "Inhabitant of Zeila",
+          "translation": "Zeilawi",
+          "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 19, 89, 99, 103 ('The inhabitants are called Zeilawi')."
         }
       ]
     }
   ],
-  "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019); Green & Smith (2024) LSP #427 Ch. 13 Kenyan Maay Tone, Di Maio (2023) Kenyan Maay Focus, & LSP #190/#96 Somali Studies (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
+  "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019); Green & Smith (2024) LSP #427 Ch. 13 Kenyan Maay Tone, Di Maio (2023) Kenyan Maay Focus, & LSP #190/#96 Somali Studies (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); Major H. Rayne (1921) Sun, Sand and Somals (Project Gutenberg #48598, US Public Domain, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm)",
   "isoCode": "som",
   "glottocode": "soma1255",
-  "totalEntries": 12852
+  "totalEntries": 12881
 }

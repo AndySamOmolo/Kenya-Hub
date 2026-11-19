@@ -2833,4 +2833,4 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 204494;
+export const TOTAL_DICTIONARY_ENTRIES: number = 203108;

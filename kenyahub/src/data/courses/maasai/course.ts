@@ -44,7 +44,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Sopai!",
             "source": "Greetings to warriors/men!",
-            "pronunciation": "so-pai / takwenya",
+            "pronunciation": "so-pai",
             "hint": "Hinde (1901, p. 41) & Hollis (1905, pp. 101–102, 284–285) salutations"
           },
           {
@@ -56,13 +56,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Ashe (Ashe oleng)",
             "source": "Thank you (very much)",
-            "pronunciation": "ashe / e-se-rian",
+            "pronunciation": "a-she (a-she o-leng)",
             "hint": "Gratitude & farewell peace blessing (Hollis 1905, p. 287)"
           },
           {
             "target": "Eserian (Sere!)",
             "source": "Peace (Goodbye in peace!)",
-            "pronunciation": "ashe / e-se-rian",
+            "pronunciation": "e-se-rian (se-re)",
             "hint": "Gratitude & farewell peace blessing (Hollis 1905, p. 287)"
           },
           {
@@ -86,13 +86,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ol-tungani (pl. il-tungana)",
             "source": "Person, Man (pl. People)",
-            "pronunciation": "ol-tungani / en-gerai",
+            "pronunciation": "ol-tu-nga-ni",
             "hint": "Hollis (1905, pp. 18, 33) nouns"
           },
           {
             "target": "en-gerai (pl. in-gera)",
             "source": "Child (pl. Children)",
-            "pronunciation": "ol-tungani / en-gerai",
+            "pronunciation": "en-ge-rai",
             "hint": "Hollis (1905, pp. 18, 33) nouns"
           },
           {
@@ -104,37 +104,37 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ol-ŋatúny",
             "source": "Male lion",
-            "pronunciation": "ol-ngatuny / e-ngatuny",
+            "pronunciation": "ol-nga-tuny",
             "hint": "Masculine ol- vs. Feminine e- prefix (Hollis 1905, p. 10)"
           },
           {
             "target": "e-ŋatúny",
             "source": "Lioness",
-            "pronunciation": "ol-ngatuny / e-ngatuny",
+            "pronunciation": "e-nga-tuny",
             "hint": "Masculine ol- vs. Feminine e- prefix (Hollis 1905, p. 10)"
           },
           {
             "target": "ɛŋ-kár-ɛ́ (en-gare)",
             "source": "Water, River",
-            "pronunciation": "eng-kar-e / kulle",
+            "pronunciation": "eng-ka-re",
             "hint": "Hinde (1901) & Hollis (1905, p. 287) pastoral liquids"
           },
           {
             "target": "kulle (kule)",
             "source": "Milk",
-            "pronunciation": "eng-kar-e / kulle",
+            "pronunciation": "ku-le",
             "hint": "Hinde (1901) & Hollis (1905, p. 287) pastoral liquids"
           },
           {
             "target": "eng-aji (pl. ing-ajijik)",
             "source": "House, Hut",
-            "pronunciation": "eng-aji / eng-ang",
+            "pronunciation": "eng-a-ji",
             "hint": "Hollis (1905, pp. 24, 27)"
           },
           {
             "target": "eng-ang (pl. ing-angite)",
             "source": "Homestead kraal",
-            "pronunciation": "eng-aji / eng-ang",
+            "pronunciation": "eng-ang",
             "hint": "Hollis (1905, pp. 24, 27)"
           }
         ],
@@ -296,13 +296,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ímíêt",
             "source": "Five (5)",
-            "pronunciation": "i-miet / ile",
+            "pronunciation": "i-miet",
             "hint": "Cardinals 5 & 6 (Hollis 1905, p. 39)"
           },
           {
             "target": "ílɛ̂",
             "source": "Six (6)",
-            "pronunciation": "i-miet / ile",
+            "pronunciation": "i-le",
             "hint": "Cardinals 5 & 6 (Hollis 1905, p. 39)"
           },
           {
@@ -314,19 +314,19 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ísíêt",
             "source": "Eight (8)",
-            "pronunciation": "i-siet / naau-do / to-mon",
+            "pronunciation": "i-siet",
             "hint": "Cardinals 8, 9, & 10 (Hollis 1905, p. 39)"
           },
           {
             "target": "naáudo (oódó)",
             "source": "Nine (9)",
-            "pronunciation": "i-siet / naau-do / to-mon",
+            "pronunciation": "naau-do (oo-do)",
             "hint": "Cardinals 8, 9, & 10 (Hollis 1905, p. 39)"
           },
           {
             "target": "tɔ́mɔ̂n",
             "source": "Ten (10)",
-            "pronunciation": "i-siet / naau-do / to-mon",
+            "pronunciation": "to-mon",
             "hint": "Cardinals 8, 9, & 10 (Hollis 1905, p. 39)"
           },
           {
@@ -501,37 +501,37 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "En-gare Nyrobi",
             "source": "Nairobi",
-            "pronunciation": "en-gare nyro-bi / ngongo ba-gas",
+            "pronunciation": "en-ga-re nyro-bi",
             "hint": "Hinde (1901, p. 42) & Hollis (1905)"
           },
           {
             "target": "Ngongo Bagas",
             "source": "Ngong Hills / Spring of the Athi River ('The Eye of the Spring')",
-            "pronunciation": "en-gare nyro-bi / ngongo ba-gas",
+            "pronunciation": "ngo-ngo ba-gas",
             "hint": "Hinde (1901, p. 42) & Hollis (1905)"
           },
           {
             "target": "Ol-doinyo Oibor",
             "source": "White Mountain (Kilimanjaro)",
-            "pronunciation": "ol-doinyo oi-bor / ol-doinyo o-ger",
+            "pronunciation": "ol-doi-nyo oi-bor",
             "hint": "Hinde (1901, p. 42) & Hollis (1905)"
           },
           {
             "target": "Ol-doinyo Oger (Oldonyo gēri)",
             "source": "Striped Mountain (Mount Kenya)",
-            "pronunciation": "ol-doinyo oi-bor / ol-doinyo o-ger",
+            "pronunciation": "ol-doi-nyo o-ger",
             "hint": "Hinde (1901, p. 42) & Hollis (1905)"
           },
           {
             "target": "E-waso Ngiro",
             "source": "Ewaso Ng'iro (Brown/Muddy River)",
-            "pronunciation": "e-waso ngi-ro / en-aiposha",
+            "pronunciation": "e-wa-so ngi-ro",
             "hint": "Hinde (1901, p. 42) & Hollis (1905, p. 260)"
           },
           {
             "target": "En-aiposha (Enaibasha)",
             "source": "Lake Naivasha (The Heaving Water)",
-            "pronunciation": "e-waso ngi-ro / en-aiposha",
+            "pronunciation": "en-ai-po-sha",
             "hint": "Hinde (1901, p. 42) & Hollis (1905, p. 260)"
           },
           {
@@ -543,67 +543,67 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "E-murata",
             "source": "Circumcision Initiation",
-            "pronunciation": "e-murata / e-unoto / ol-ngesher",
+            "pronunciation": "e-mu-ra-ta",
             "hint": "Hollis (1905, pp. 294–302) age-grade ceremonies"
           },
           {
             "target": "E-unoto (Ol-aunoni)",
             "source": "Warrior Graduation (Selection of Chief)",
-            "pronunciation": "e-murata / e-unoto / ol-ngesher",
+            "pronunciation": "e-u-no-to",
             "hint": "Hollis (1905, pp. 294–302) age-grade ceremonies"
           },
           {
             "target": "Ol-ngesher",
             "source": "Elderhood Ceremony",
-            "pronunciation": "e-murata / e-unoto / ol-ngesher",
+            "pronunciation": "ol-nge-sher",
             "hint": "Hollis (1905, pp. 294–302) age-grade ceremonies"
           },
           {
             "target": "en-gujit",
             "source": "Sacred pasture grass held in peace and prayer",
-            "pronunciation": "en-gujit / o-sotwa",
+            "pronunciation": "en-gu-jit",
             "hint": "Hollis (1905, pp. 289, 321–322)"
           },
           {
             "target": "o-sotwa",
             "source": "Peace covenant",
-            "pronunciation": "en-gujit / o-sotwa",
+            "pronunciation": "o-so-twa",
             "hint": "Hollis (1905, pp. 289, 321–322)"
           },
           {
             "target": "Eng-ai Narok",
             "source": "The Benevolent Black Rain-giving God",
-            "pronunciation": "eng-ai na-rok / eng-ai nanyokye",
+            "pronunciation": "eng-ai na-rok",
             "hint": "Hollis (1905, p. 264)"
           },
           {
             "target": "Eng-ai Nanyokye",
             "source": "The Fierce Red Sky God",
-            "pronunciation": "eng-ai na-rok / eng-ai nanyokye",
+            "pronunciation": "eng-ai na-nyo-kye",
             "hint": "Hollis (1905, p. 264)"
           },
           {
             "target": "em-bere (pl. im-beria)",
             "source": "Spear",
-            "pronunciation": "em-bere / el-longo",
+            "pronunciation": "em-be-re",
             "hint": "Hollis (1905) & Hinde (1901)"
           },
           {
             "target": "el-longo (pl. il-longoi)",
             "source": "Shield",
-            "pronunciation": "em-bere / el-longo",
+            "pronunciation": "el-lo-ngo",
             "hint": "Hollis (1905) & Hinde (1901)"
           },
           {
             "target": "ol-alem (pl. il-alema)",
             "source": "Sword (simi)",
-            "pronunciation": "ol-alem / o-rinka",
+            "pronunciation": "ol-a-lem",
             "hint": "Hollis (1905) & Hinde (1901)"
           },
           {
             "target": "o-rinka (pl. i-rinkan)",
             "source": "Club (rungu)",
-            "pronunciation": "ol-alem / o-rinka",
+            "pronunciation": "o-ri-nka",
             "hint": "Hollis (1905) & Hinde (1901)"
           },
           {
@@ -670,7 +670,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "ol-chore (pl. il-choreta)",
@@ -843,7 +843,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "kore anganashe ingu?",
@@ -927,7 +927,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Where is the child?\"",
             "correctAnswer": "kore ngerai?",
             "acceptedAnswers": [
-              "kore ngerai?",
               "kore ngerai?"
             ],
             "hint": "Starts with \"ko\""
@@ -937,7 +936,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"eyu nerigu ngerai nyenne?\"",
             "correctAnswer": "Does he want to bring his child here?",
             "acceptedAnswers": [
-              "Does he want to bring his child here?",
               "Does he want to bring his child here?"
             ],
             "hint": "Review Clans, Marriage & Community Life"
@@ -987,7 +985,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "tɔ́mɔ̂n (tomon)",
@@ -1022,55 +1020,55 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "nabô (fem.)",
             "source": "One (1) — feminine",
-            "pronunciation": "na-bo / obo / ne-bo",
+            "pronunciation": "na-bo",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "obô (masc.)",
             "source": "One (1) — masculine",
-            "pronunciation": "na-bo / obo / ne-bo",
+            "pronunciation": "o-bo",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "nebô (place)",
             "source": "One (1) — place",
-            "pronunciation": "na-bo / obo / ne-bo",
+            "pronunciation": "ne-bo",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "aré (fem.)",
             "source": "Two (2) — feminine",
-            "pronunciation": "are / aa-re oa-re",
+            "pronunciation": "a-re",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "aàre, ɔáre (masc.)",
             "source": "Two (2) — masculine",
-            "pronunciation": "are / aa-re oa-re",
+            "pronunciation": "aa-re / oa-re",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "uní (fem.)",
             "source": "Three (3) — feminine",
-            "pronunciation": "uni / o-ku-ni",
+            "pronunciation": "u-ni",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "okúni (masc.)",
             "source": "Three (3) — masculine",
-            "pronunciation": "uni / o-ku-ni",
+            "pronunciation": "o-ku-ni",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "oŋwán (fem.)",
             "source": "Four (4) — feminine",
-            "pronunciation": "ongwan / oongwan",
+            "pronunciation": "o-ngwan",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "oóŋwan (masc.)",
             "source": "Four (4) — masculine",
-            "pronunciation": "ongwan / oongwan",
+            "pronunciation": "oo-ngwan",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           }
         ],
@@ -1158,7 +1156,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "ímíêt",
@@ -1175,13 +1173,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "naápishana (fem.)",
             "source": "Seven (7) — feminine",
-            "pronunciation": "naa-pisha-na / oo-pisha-na",
+            "pronunciation": "naa-pi-sha-na",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "oópishana (masc.)",
             "source": "Seven (7) — masculine",
-            "pronunciation": "naa-pisha-na / oo-pisha-na",
+            "pronunciation": "oo-pi-sha-na",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
@@ -1193,13 +1191,13 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "naáudo (fem.)",
             "source": "Nine (9) — feminine",
-            "pronunciation": "naau-do / oo-do",
+            "pronunciation": "naau-do",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
             "target": "oódó (masc.)",
             "source": "Nine (9) — masculine",
-            "pronunciation": "naau-do / oo-do",
+            "pronunciation": "oo-do",
             "hint": "Wikipedia Nilotic languages — Maasai numerals"
           },
           {
@@ -1366,7 +1364,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "en-aisijoi (enaisho = honey-wine)",
@@ -1523,7 +1521,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "etwaowok",
@@ -1637,7 +1635,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
     "id": "maasai-unit-6",
     "unitNumber": 6,
     "title": "Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
+    "description": "Master nature, landscape, flora & East African wildlife in Maasai (Maa) built directly from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905), and C. W. Hobley (1910).",
     "icon": "PawPrint",
     "color": "#DC2626",
     "skills": [
@@ -1647,7 +1645,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "eng-olong (pl. ing-olongi)",
@@ -1738,7 +1736,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"ol-akira\"",
             "correctAnswer": "Star",
             "acceptedAnswers": [
-              "Star",
               "Star"
             ],
             "hint": "Review Sky, Weather, Rivers & Landforms"
@@ -1765,8 +1762,8 @@ export const MAASAI_UNITS: CourseUnit[] = [
                 "right": "Moon"
               },
               {
-                "left": "eng-olong",
-                "right": "Sun"
+                "left": "shomata",
+                "right": "Sky"
               }
             ]
           }
@@ -1778,7 +1775,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "ɔl-caní (olchani)",
@@ -1864,7 +1861,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Firewood\"",
             "correctAnswer": "ol-chata",
             "acceptedAnswers": [
-              "ol-chata",
               "ol-chata"
             ],
             "hint": "Starts with \"ol\""
@@ -1874,7 +1870,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"en-gima\"",
             "correctAnswer": "Fire",
             "acceptedAnswers": [
-              "Fire",
               "Fire"
             ],
             "hint": "Review East African Fauna, Birds & Sacred Trees"
@@ -1924,7 +1919,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "ɛŋ-kɔŋ-ʊ́ (enkong'u)",
@@ -1965,7 +1960,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "kɨʉ́tɨshɔ (kiutisho)",
             "source": "Index finger",
-            "pronunciation": "kɨʉtɨsho",
+            "pronunciation": "ki-u-ti-sho",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           },
           {
@@ -1977,7 +1972,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ɔ-sárɠɛ́ (osarge)",
             "source": "Blood",
-            "pronunciation": "o-sarɠe",
+            "pronunciation": "o-sar-ge",
             "hint": "Wikipedia Eastern Nilotic languages — Comparative vocabulary (Vossen 1982)"
           }
         ],
@@ -2101,7 +2096,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "ol-óì-tò (oloito)",
@@ -2286,7 +2281,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "a-iro (a-jo = to say)",
@@ -2327,7 +2322,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "ɛ́bʉ́l (S/he will prosper)",
             "source": "To prosper (-ATR stem)",
-            "pronunciation": "ebʉl",
+            "pronunciation": "e-bul",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           },
           {
@@ -2339,7 +2334,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "atʉmʉ́k",
             "source": "To brew (-ATR)",
-            "pronunciation": "atʉmʉk",
+            "pronunciation": "a-tu-muk",
             "hint": "Wikipedia Maasai language — ATR vowel harmony"
           }
         ],
@@ -2459,7 +2454,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "a-ɲá (Samburu & Maasai)",
@@ -2510,8 +2505,8 @@ export const MAASAI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "a-ɲá — a-lo",
-            "source": "to eat — Go."
+            "target": "a-nya — a-lo",
+            "source": "To eat — Go."
           },
           {
             "target": "a-nya — ellejore",
@@ -2550,7 +2545,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"a-nya\"",
             "correctAnswer": "Eat",
             "acceptedAnswers": [
-              "Eat",
               "Eat"
             ],
             "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
@@ -2600,7 +2594,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "Eata en-gewarie 'n-giyaa",
@@ -2677,7 +2671,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Now\"",
             "correctAnswer": "taāda",
             "acceptedAnswers": [
-              "taāda",
               "taāda"
             ],
             "hint": "Starts with \"ta\""
@@ -2687,7 +2680,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Ongolloñ, Emūto, Kawārie\"",
             "correctAnswer": "Day",
             "acceptedAnswers": [
-              "Day",
               "Day"
             ],
             "hint": "Starts with \"Da…\" (3 letters)"
@@ -2727,7 +2719,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "Jumapílí (Jpi)",
@@ -2867,7 +2859,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "CheckCircle2",
         "description": "Practice authentic questions, answers, and idiomatic expressions from historical phrasebooks.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "Jumamósi (Jmo)",
@@ -2937,7 +2929,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Era / historical age\"",
             "correctAnswer": "Ɛnkátá",
             "acceptedAnswers": [
-              "Ɛnkátá",
               "Ɛnkátá"
             ],
             "hint": "Starts with \"Ɛn\""
@@ -2947,7 +2938,6 @@ export const MAASAI_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Ɛnkɔ́lɔŋ ewíkî\"",
             "correctAnswer": "Day of the week",
             "acceptedAnswers": [
-              "Day of the week",
               "Day of the week"
             ],
             "hint": "Review Everyday Conversational Phrases & Questions"
@@ -2987,7 +2977,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         "icon": "Handshake",
         "description": "Converse naturally in home, village, market, and travel settings.",
         "tips": "Every lexical entry in this module is drawn verbatim from Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Maasai (Maa) (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
+        "culturalNote": "Primary historical documentation for Maasai (ɔl Maa) in Hildegarde Hinde (1901), Sir Harry Johnston (1902), A. C. Hollis (1905) & C. W. Hobley (1910) preserves pre-1930 phonological, grammatical, and ethnographic usage across Narok, Kajiado, Samburu.",
         "words": [
           {
             "target": "Sere! (pl. Entasere!)",
@@ -2997,12 +2987,12 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Ashe",
             "source": "Thank you",
-            "pronunciation": "ashe / ashe o-leng'"
+            "pronunciation": "a-she"
           },
           {
             "target": "Ashe oleng'",
             "source": "Thank you very much",
-            "pronunciation": "ashe / ashe o-leng'"
+            "pronunciation": "a-she o-leng'"
           },
           {
             "target": "tagwenia",
@@ -4059,7 +4049,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "aa-suj",
             "source": "I follow thee (portmanteau 1SG→2SG prefix aa-)",
-            "pronunciation": "aa-suj / ki-suj"
+            "pronunciation": "aa-suj"
           }
         ],
         "sentences": [
@@ -4396,7 +4386,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "tagwenia!",
             "source": "Salutations to a Woman, to a Man, and on Shaking Hands (Hinde 1901, p. 41)",
-            "pronunciation": "ta-gwe-nia / i-go / so-boi / e-ber / nas-sak",
+            "pronunciation": "ta-gwe-nia",
             "hint": "Hinde (1901, p. 41)"
           },
           {
@@ -4561,7 +4551,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Eeta enkop ang' inkishu kumok ooirkujit ootii olpurkel.",
+            "target": "Eeta enkop ang' inkishu kumok oo ilkujit ootii olpurkel.",
             "source": "Our land has many cattle and green pastures in the lowlands."
           },
           {
@@ -4585,7 +4575,7 @@ export const MAASAI_UNITS: CourseUnit[] = [
           {
             "target": "Sopai!",
             "source": "Hello",
-            "pronunciation": "soh-pah-ee / tah-kweh-nyah"
+            "pronunciation": "so-pai"
           },
           {
             "target": "Ashe",

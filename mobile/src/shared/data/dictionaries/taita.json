@@ -19291,6 +19291,18 @@
           "english": "Time",
           "translation": "ngelo, hawa, mbaza, luma (present time); igeri, ituku (past time)",
           "context": "Kidaw'ida / Kisagala Lexicon (Wray 1894) • Cross-verified with ThinkKenya/Waleghwa Kidaw'ida Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Before Christ (BC / Historical Era)",
+          "translation": "Kabla ya Kristo (KK)",
+          "pronunciation": "ka-bla ya kri-sto",
+          "context": "Unicode CLDR / ICU Locale dav_KE (Unicode-3.0, https://www.localeplanet.com/icu/dav-KE/index.html)"
+        },
+        {
+          "english": "Anno Domini (AD / Common Era)",
+          "translation": "Baada ya Kristo (BK)",
+          "pronunciation": "ba-a-da ya kri-sto",
+          "context": "Unicode CLDR / ICU Locale dav_KE (Unicode-3.0, https://www.localeplanet.com/icu/dav-KE/index.html)"
         }
       ]
     },
@@ -42360,5 +42372,5 @@
   "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 7598
+  "totalEntries": 7600
 }

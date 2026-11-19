@@ -140,12 +140,13 @@ export default function Navbar() {
     const routesByTown = (matatuRoutesData.routes || {}) as Record<
       string,
       Array<{
-        routeNumber: string;
+        id: string;
+        number: string;
         name: string;
         slug: string;
-        terminusA: string;
-        terminusB: string;
-        saccoName?: string;
+        from: string;
+        to: string;
+        sacco?: string;
       }>
     >;
     for (const [townSlug, townRoutes] of Object.entries(routesByTown)) {
@@ -154,8 +155,8 @@ export default function Navbar() {
       for (const route of townRoutes) {
         items.push({
           id: `matatu-${townSlug}-${route.slug}`,
-          title: `Route ${route.routeNumber}: ${route.name} (${townLabel})`,
-          subtitle: `${route.terminusA} → ${route.terminusB}${route.saccoName ? ` • ${route.saccoName}` : ""}`,
+          title: `Route ${route.number}: ${route.name} (${townLabel})`,
+          subtitle: `${route.from} → ${route.to}${route.sacco ? ` • ${route.sacco}` : ""}`,
           href: `/matatu/${townSlug}/${route.slug}/`,
           badge: "Matatu",
           icon: "🚌",

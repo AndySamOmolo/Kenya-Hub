@@ -716,34 +716,34 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           },
           {
-            "target": "Mu-ru wa maiya (K.); a-rūa maiya. Mū-rata (M., Mw.)",
+            "target": "mũrũ wa maitũ (pl. arũ a maitũ)",
             "source": "Brother",
-            "pronunciation": "mu-ru wa mai-ya"
+            "pronunciation": "mu-ru wa mai-tu"
           },
           {
-            "target": "Mu-thamaki; a-. Mu-nene",
-            "source": "Chief",
-            "pronunciation": "mu-thamaki"
+            "target": "mũthamaki (pl. athamaki)",
+            "source": "Chief / Leader",
+            "pronunciation": "mu-tha-ma-ki"
           },
           {
-            "target": "Mwana; ciana and aana. Ka-ana; tw-ana. Ka-hi; tū-hi. Ka-rego; tũ-rego",
+            "target": "mwana (pl. ciana) / kaana",
             "source": "Child",
-            "pronunciation": "mwa-na"
+            "pronunciation": "mwa-na / kaa-na"
           },
           {
-            "target": "Mwarĩ wa maitũ (Mū-ārī wa maitū)",
+            "target": "mwarĩ wa maitũ",
             "source": "Sister",
             "pronunciation": "mwa-ri wa mai-tu"
           },
           {
-            "target": "Mū-rīū; a-rīū. Kī-hīī; i-hīī (boy)",
-            "source": "Son, boy",
-            "pronunciation": "mu-riu"
+            "target": "mũrĩũ (pl. arĩũ) / kĩhĩĩ",
+            "source": "Son / Boy",
+            "pronunciation": "mu-ri-u / ki-hii"
           },
           {
-            "target": "Mū-kā; a-kā",
-            "source": "Wife",
-            "pronunciation": "mu-ka"
+            "target": "mũthoni (pl. athoni)",
+            "source": "In-law",
+            "pronunciation": "mu-tho-ni"
           },
           {
             "target": "mũka (pl. aka) / mũtumĩĩa",
@@ -776,27 +776,17 @@ export const EMBU_UNITS: CourseUnit[] = [
               "Brother",
               "Chief",
               "Child"
-            ],
-            "hint": "Core vocabulary in Clans, Marriage & Community Life"
+            ]
           },
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"Brother\"",
-            "correctAnswer": "Mu-ru wa maiya",
-            "acceptedAnswers": [
-              "Mu-ru wa maiya (K.); a-rūa maiya. Mū-rata (M., Mw.)",
-              "Mu-ru wa maiya"
-            ],
-            "hint": "Starts with \"Mu\""
+            "correctAnswer": "mũrũ wa maitũ"
           },
           {
             "type": "translate_to_english",
-            "prompt": "Translate to English: \"Mu-thamaki\"",
-            "correctAnswer": "Chief",
-            "acceptedAnswers": [
-              "Chief"
-            ],
-            "hint": "Review Clans, Marriage & Community Life"
+            "prompt": "Translate to English: \"mũthamaki\"",
+            "correctAnswer": "Chief"
           },
           {
             "type": "match_pairs",
@@ -808,19 +798,19 @@ export const EMBU_UNITS: CourseUnit[] = [
                 "right": "God"
               },
               {
-                "left": "Mu-ru wa maiya",
+                "left": "mũrũ wa maitũ",
                 "right": "Brother"
               },
               {
-                "left": "Mu-thamaki",
+                "left": "mũthamaki",
                 "right": "Chief"
               },
               {
-                "left": "Mwana",
+                "left": "mwana",
                 "right": "Child"
               },
               {
-                "left": "Mwarĩ wa maitũ (Mū-ārī wa maitū)",
+                "left": "mwarĩ wa maitũ",
                 "right": "Sister"
               }
             ]
@@ -1033,12 +1023,12 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "mi-ronggo i-tano"
           },
           {
-            "target": "I-gāna; ma-gāna",
+            "target": "igana (pl. magana)",
             "source": "Hundred",
-            "pronunciation": "i-gana"
+            "pronunciation": "i-ga-na"
           },
           {
-            "target": "Ngīrī; ma-ngīrī",
+            "target": "ngiri (pl. mangiri)",
             "source": "Thousand",
             "pronunciation": "ngi-ri"
           },
@@ -1097,8 +1087,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "options": [
               "Mī-rōnggo ī-tātū",
               "Ikũmi",
-              "I-gāna",
-              "Ngīrī"
+              "igana",
+              "ngiri"
             ],
             "hint": "Starts with \"Mī…\" (16 letters)"
           },
@@ -1109,8 +1099,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "options": [
               "Ikũmi",
               "Mī-rōnggo ī-nā",
-              "I-gāna",
-              "Ngīrī"
+              "igana",
+              "ngiri"
             ],
             "hint": "Starts with \"Mī…\" (14 letters)"
           },
@@ -1143,8 +1133,8 @@ export const EMBU_UNITS: CourseUnit[] = [
             "correctAnswer": "Mī-rōnggo ī-tāno",
             "options": [
               "Ikũmi",
-              "I-gāna",
-              "Ngīrī",
+              "igana",
+              "ngiri",
               "Mī-rōnggo ī-tāno"
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #11: Embu, Chuka, Mount Kenya Bantu)"
@@ -1206,7 +1196,7 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           },
           {
-            "target": "Gī-kwa; i-kwa",
+            "target": "gĩkwa (pl. ikwa)",
             "source": "Yam",
             "pronunciation": "gi-kwa"
           },
@@ -1300,19 +1290,19 @@ export const EMBU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Embu (Kĩembu) in C. W. Hobley (1910 & 1922 Mount Kenya Bantu) & Sir Harry Johnston (1919 Group C #11 Embu, Mbere & Chuka) preserves pre-1930 phonological, grammatical, and ethnographic usage across Embu.",
         "words": [
           {
-            "target": "I-rigo; ma-. Gi-toke (fruit)",
+            "target": "irigo (pl. marigo) / gĩtoke",
             "source": "Banana",
-            "pronunciation": "i-rigo"
+            "pronunciation": "i-ri-go / gi-to-ke"
           },
           {
-            "target": "Ma-guta. Ṅ-gorono (butter)",
-            "source": "Fat, oil",
-            "pronunciation": "ma-guta ng-gorono"
+            "target": "maguta / ngorono",
+            "source": "Fat / Oil / Butter",
+            "pronunciation": "ma-gu-ta / ngo-ro-no"
           },
           {
-            "target": "Ū-ūkī; mō-ūkī",
+            "target": "ũũkĩ",
             "source": "Honey",
-            "pronunciation": "u-uki"
+            "pronunciation": "u-u-ki"
           },
           {
             "target": "nyama",
@@ -1320,14 +1310,14 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "nya-ma"
           },
           {
-            "target": "M-bembē (pl. ma-bembē)",
-            "source": "Maize",
-            "pronunciation": "m-bembe"
+            "target": "mũvĩa",
+            "source": "Sorghum",
+            "pronunciation": "mu-vi-a"
           },
           {
-            "target": "N-g'aragu",
+            "target": "ng'aragu",
             "source": "Hunger",
-            "pronunciation": "n-g'aragu"
+            "pronunciation": "ng'a-ra-gu"
           },
           {
             "target": "mbembe",
@@ -1335,9 +1325,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "mbembe"
           },
           {
-            "target": "N-johi",
-            "source": "Palm wine, beer",
-            "pronunciation": "n-johi"
+            "target": "njohi",
+            "source": "Traditional beer",
+            "pronunciation": "njo-hi"
           },
           {
             "target": "mboso",
@@ -1363,34 +1353,24 @@ export const EMBU_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"I-rigo\" mean in English?",
+            "prompt": "What does \"irigo\" mean in English?",
             "correctAnswer": "Banana",
             "options": [
               "Fat",
               "Banana",
               "Honey",
               "Meat"
-            ],
-            "hint": "Core vocabulary in Crops, Cultivation & Pastoral Livestock"
+            ]
           },
           {
             "type": "translate_to_target",
-            "prompt": "Translate to the target language: \"Fat, oil\"",
-            "correctAnswer": "Ma-guta. Ṅ-gorono",
-            "acceptedAnswers": [
-              "Ma-guta. Ṅ-gorono (butter)",
-              "Ma-guta. Ṅ-gorono"
-            ],
-            "hint": "Starts with \"Ma\""
+            "prompt": "Translate to the target language: \"Fat / Oil\"",
+            "correctAnswer": "maguta"
           },
           {
             "type": "translate_to_english",
-            "prompt": "Translate to English: \"Ū-ūkī\"",
-            "correctAnswer": "Honey",
-            "acceptedAnswers": [
-              "Honey"
-            ],
-            "hint": "Review Crops, Cultivation & Pastoral Livestock"
+            "prompt": "Translate to English: \"ũũkĩ\"",
+            "correctAnswer": "Honey"
           },
           {
             "type": "match_pairs",
@@ -1398,15 +1378,15 @@ export const EMBU_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "I-rigo",
+                "left": "irigo",
                 "right": "Banana"
               },
               {
-                "left": "Ma-guta. Ṅ-gorono",
-                "right": "Fat, oil"
+                "left": "maguta",
+                "right": "Fat / Oil"
               },
               {
-                "left": "Ū-ūkī",
+                "left": "ũũkĩ",
                 "right": "Honey"
               },
               {
@@ -1414,7 +1394,7 @@ export const EMBU_UNITS: CourseUnit[] = [
                 "right": "Meat"
               },
               {
-                "left": "M-bembē",
+                "left": "mbembe",
                 "right": "Maize"
               }
             ]
@@ -2002,9 +1982,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Embu_language"
           },
           {
-            "target": "Kū-gūrū; ma-. Mū-thīrīmo (shin). Kī-zimo",
-            "source": "Leg",
-            "pronunciation": "ku-guru"
+            "target": "mũthĩrĩmo",
+            "source": "Shin",
+            "pronunciation": "mu-thi-ri-mo"
           }
         ],
         "sentences": [
@@ -2855,9 +2835,9 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "hu-ra ringga"
           },
           {
-            "target": "Ndi-, Tī-, -tī-, -tā-",
-            "source": "Not (with verb, as prefix, infix, or suffix)",
-            "pronunciation": "ndi ti ti ta"
+            "target": "Ndi- / tĩ- (verbal negation)",
+            "source": "Not (verbal negation prefix/infix)",
+            "pronunciation": "ndi / ti"
           },
           {
             "target": "Ācā!, Tī-gō!",
@@ -2916,8 +2896,8 @@ export const EMBU_UNITS: CourseUnit[] = [
                 "right": "To beat"
               },
               {
-                "left": "Ndi-, Tī-, -tī-, -tā-",
-                "right": "Not (with verb, as prefix, infix, or suffix)"
+                "left": "Ndi- / tĩ- (verbal negation)",
+                "right": "Not (verbal negation prefix/infix)"
               },
               {
                 "left": "Ācā!, Tī-gō!",
@@ -3083,7 +3063,7 @@ export const EMBU_UNITS: CourseUnit[] = [
             "pronunciation": "thiee na tha-yoo"
           },
           {
-            "target": "Gī-kwa",
+            "target": "gĩkwa",
             "source": "Yam",
             "pronunciation": "gi-kwa"
           },

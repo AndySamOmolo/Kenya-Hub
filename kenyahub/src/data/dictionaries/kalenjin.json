@@ -17,7 +17,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Kalenjin (Nandi / Kipsigis [Lumbwa / Il Kakesan] / Keiyo / Tugen [Kamasia: Kapteberewa & Nderois] / Marakwet & Endo [Chebleng] / Kabkamat [Olmo] / Sangwirr / Uasin Gishu [Moiven / Muttia / Il-Mokwan / I-Sirikwa]) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–72 — audited 100% line-by-line across all 13 Maragwetta/Ndo sections, 14 Kapteberewa & 6 Nderois Kamasia clans & totems, 5 hill-tribe calendars, irrigation & land-sale laws, and Plate XVII), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0)).",
   "categories": [
     {
@@ -136,6 +136,11 @@
           "english": "Peaceful",
           "translation": "tala-itu",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
+        },
+        {
+          "english": "greeting (Kipsigis)",
+          "translation": "kaː-kaːt-ɛːt",
+          "context": "Kipsigis Class II nominalization of kat 'greet' (31) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
         }
       ]
     },
@@ -3304,6 +3309,66 @@
           "english": "Every child is sleeping",
           "translation": "ru-e lakwet tugul",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Kipsigis (Ch. 25)"
+        },
+        {
+          "english": "chief (Kipsigis)",
+          "translation": "giirwɑɑgiindet",
+          "context": "Kipsigis noun gloss (20) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "runner (Kipsigis)",
+          "translation": "lɑbɑt-iːndet",
+          "context": "Kipsigis Class I agent nominalization (33a) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "child / children (Kipsigis)",
+          "translation": "làakwéet (sg.) / làagóok (pl.)",
+          "context": "Kipsigis plural-marking noun paradigm (28) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "parent / parents (Kipsigis)",
+          "translation": "sìgìindét (sg.) / sìgíik (pl.)",
+          "context": "Kipsigis human noun with -iin singulative (33c, 45b) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "grandfather (Sengwer)",
+          "translation": "kúukʌ̀",
+          "context": "Sengwer disyllabic noun (16) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "brother-in-law (Sengwer)",
+          "translation": "àlàptánɪ̀",
+          "context": "Sengwer tetrasyllabic noun (18) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "the selfish man (Sengwer)",
+          "translation": "kɪ̀p-kɛ́ɛj-àantɛ̂ɛt",
+          "context": "Sengwer derived masculine noun from kɛ́ɛj 'self' (Table 1) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "girl / this girl (Sengwer)",
+          "translation": "tjêe(p) (sg.) / cèep-ì (this girl)",
+          "context": "Sengwer ghost consonant /p/ paradigm (46) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "elder (Sengwer / Endo-Marakwet)",
+          "translation": "pʌ̀ʌ-jʌ̂ʌ(ntʌ) (Sengwer) / pʌʌ-jʌʌn(tʌ) (Endo)",
+          "context": "Sengwer–Endo cognate comparison (55) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "person (Sengwer / Endo-Marakwet)",
+          "translation": "cîi(c) (Sengwer) / cîic (Endo)",
+          "context": "Sengwer–Endo cognate comparison (56, 90) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "man / the man / men / the men (Sengwer)",
+          "translation": "múrèn(-ʌ) (sg.), múrènéet (def.), múrên (pl.), múrén-îk (pl.def.)",
+          "context": "Sengwer ghost singular suffix -ʌ paradigm (69–72, 77) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "hosts / the hosts (Sengwer)",
+          "translation": "tʌ̀ʌk(-i) (pl.) / tʌ̀ʌk-îik (pl.def.)",
+          "context": "Sengwer ghost plural -i paradigm (101) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -5750,6 +5815,61 @@
           "english": "Tongue",
           "translation": "Mesit (E)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Nandi."
+        },
+        {
+          "english": "navel / the navel / navels / this navel (Sengwer)",
+          "translation": "súrûum(pʌ) (sg.), súrúumpêet (def.), súrúumpʌ̀ʌn (pl.), súrúumpʌ́ʌnì (this navel)",
+          "context": "Sengwer noun paradigm with ghost /pʌ/ (9) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "thigh (Sengwer)",
+          "translation": "cáat",
+          "context": "Sengwer high-tone noun (12) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "neck (Sengwer)",
+          "translation": "kâat",
+          "context": "Sengwer falling-tone noun (14) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "throat / the throat / throats / the throats (Sengwer)",
+          "translation": "môok (sg.), móok-tʌ̂ (def.), móok-wʌ̂ (pl.), móok-wêk (pl.def.)",
+          "context": "Sengwer inherently singular noun paradigm (Tables 2–3) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "blood / the blood (Sengwer)",
+          "translation": "kʌ̀rʌ̀tì (indef.) / kʌ̀rʌ̀tí-ik (def.)",
+          "context": "Sengwer plural definite paradigm (23) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "foreleg / the foreleg / this foreleg (Sengwer)",
+          "translation": "kwîi(s) (sg.), kwìis-tʌ̂ (def.), kwìis-ì (this foreleg)",
+          "context": "Sengwer ghost consonant /s/ paradigm (25, 28, 45, 53) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "nose / the nose / this nose (Sengwer)",
+          "translation": "sèr(u) (sg.), sèrúut (def.), sèrùunì (this nose)",
+          "context": "Sengwer ghost vowel /u/ paradigm (26, 29, 37) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "beard / this beard (Sengwer)",
+          "translation": "táamnà (sg.) / táamnàanɪ̀ (this beard)",
+          "context": "Sengwer proximal demonstrative paradigm (36) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "saliva / the saliva (Sengwer)",
+          "translation": "ŋʊ̀l(a) (indef.) / ŋʊ̀lɛ́ɛk (def.)",
+          "context": "Sengwer inherently plural mass noun (47, 58) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "cough / the cough / this cough (Sengwer)",
+          "translation": "lʌ̀l-jʌ̂ʌ(ntʌ) (sg.), lʌ̀l-jʌ́ʌntêet (def.), lʌ̀l-jʌ́ʌntʌ́ʌnì (this cough)",
+          "context": "Sengwer ghost sequence /ntʌ/ paradigm (54) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "tongue / tongues (Sengwer)",
+          "translation": "ŋɛ́ljɛ̂p (sg.) / ŋèljéep(-i) (pl.)",
+          "context": "Sengwer ghost plural suffix -i paradigm (81) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -8521,6 +8641,106 @@
           "english": "Did he see cows?",
           "translation": "ko-ger tuga i",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Kipsigis (Ch. 25)"
+        },
+        {
+          "english": "rhino (sg. / pl., Endo-Marakwet)",
+          "translation": "kipaw (sg.) / kipaw-tiin (pl.)",
+          "context": "Endo-Marakwet Kalenjin plural-marking noun (1a) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "elephant (sg. / pl., Endo-Marakwet)",
+          "translation": "peel-yaan (sg.) / peel (pl.)",
+          "context": "Endo-Marakwet Kalenjin singulative noun (1b) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "duck (sg. / pl., Endo-Marakwet)",
+          "translation": "pata-yaan (sg.) / pat-een (pl.)",
+          "context": "Endo-Marakwet Kalenjin numberless noun (1c) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "twins [animals] (pl., Kipsigis)",
+          "translation": "sáráméek",
+          "context": "Kipsigis plural noun with -a thematic suffix (44b) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "elephant (sg., Kipsigis)",
+          "translation": "pèelyáat",
+          "context": "Kipsigis singulative noun (47c) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "bird (sg., Kipsigis)",
+          "translation": "tàrìityét",
+          "context": "Kipsigis noun with -ya thematic suffix (49) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "buck / the buck / bucks / this buck (Sengwer)",
+          "translation": "kwɛ̂ɛ(s) (sg.), kwɛ̀ɛs-tâ (def.), kwées-wʌ̂ (pl.), kwɛ̀ɛs-ɪ̀ (this buck)",
+          "context": "Sengwer noun paradigm with ghost /s/ (8; cf. Pokoot kwaɣa, Endo kwara fn. 8) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "dog / the dog / dogs / this dog (Sengwer)",
+          "translation": "séesè (sg.), séeséet (def.), séesêen (pl.), séesèenì (this dog)",
+          "context": "Sengwer noun paradigm (10) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "spurfowl (Sengwer)",
+          "translation": "càwɪ́ɪkɪ̀k",
+          "context": "Sengwer trisyllabic noun (17) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "feather / the feather / feathers / the feathers (Sengwer)",
+          "translation": "kɔ́rɔ̀ɔr-jà (sg.), kɔ́rɔ̀ɔr-jɛ́ɛt (def.), kɔ́rɔ̀ɔr (pl.), kɔ́rɔ̀ɔr-ɪ́k (pl.def.)",
+          "context": "Sengwer inherently plural noun paradigm (Tables 2–3) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "wing / the wing / wings / the wings (Sengwer)",
+          "translation": "kɛ̀pɛ́p-cà (sg.), kɛ̀pɛ́p-cɛ́ɛt (def.), kɛ́pɛ́p-âj (pl.), kɛ́pɛ́p-âak (pl.def.)",
+          "context": "Sengwer numberless noun paradigm (Tables 2–3) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "cricket / crickets (Sengwer)",
+          "translation": "kìp-círìt ~ kìp-círìt-jʌ́ʌ (sg.) / kìp-círít-ʌ̂j (pl.)",
+          "context": "Sengwer noun with speaker variation (19–20) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "bat / bats (Sengwer)",
+          "translation": "rɛ́ɛrɛ̀ɛs(-ja) (sg., nom. rɛ̀ɛrɛ̀ɛs-já) / rɛ́ɛrɛ́ɛs-âj (pl.)",
+          "context": "Sengwer ghost singular suffix -ja paradigm (31, 78) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "horn / the horn (Sengwer)",
+          "translation": "làal(a) (sg.) / làalɛ́ɛt (def.)",
+          "context": "Sengwer ghost vowel /a/ paradigm (33–34) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "baboon / this baboon (Sengwer)",
+          "translation": "móosò (sg.) / móosòonì ~ móosʌ̀ʌnì (this baboon)",
+          "context": "Sengwer proximal demonstrative paradigm (39) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "elephant / the elephant / elephants / the elephants (Sengwer)",
+          "translation": "pèel-jʌ̂ʌ(ntʌ) (sg.), pèel-jʌ́ʌntêet (def.), pèel(i) (pl.), pèelîik (pl.def.)",
+          "context": "Sengwer elephant paradigm with ghost /ntʌ/ (48–49, 90) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "goats (Sengwer)",
+          "translation": "ŋɔ̀rɔ́ɔr",
+          "context": "Sengwer noun gloss (61) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "donkey / donkeys (Sengwer)",
+          "translation": "sìkìr-jʌ̀ (sg.) / síkír-ʌ̂j (pl.)",
+          "context": "Sengwer numberless noun paradigm (80) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "animal / the animal / animals / the animals (Sengwer)",
+          "translation": "tjʌ̂ʌɲ (sg.), tjɔ̀ɔn-tɔ̂ (def.), tjʌ̀ʌŋ-ì (this animal), tjʌ̀ʌŋ-în (pl.), tjʌ̀ʌŋ-îik (pl.def.)",
+          "context": "Sengwer palatal–velar alternation paradigm (83, fn. 3) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "rat / the rat (Sengwer / Sabaot)",
+          "translation": "mʊrjaa (sg.) / mʊrjaantɛɛt (def.)",
+          "context": "Kalenjin singular suffix -jaa(nta) example (86) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -10692,6 +10912,56 @@
           "english": "Wind",
           "translation": "Yomet (E)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Nandi."
+        },
+        {
+          "english": "river bank (Kipsigis)",
+          "translation": "tabandab ainet",
+          "context": "Kipsigis narrative gloss (10) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "forest / forests (Kipsigis)",
+          "translation": "òosnêet (sg.) / òosnòosyék (pl.)",
+          "context": "Kipsigis plural-marking noun paradigm (27) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "cloud / clouds (Kipsigis)",
+          "translation": "pôoldét (sg.) / pôolík (pl.)",
+          "context": "Kipsigis unmarked sg./pl. noun paradigm (fn. 23) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "castor-oil trees (Sengwer)",
+          "translation": "mán",
+          "context": "Sengwer high-tone noun (12) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "tree / trees (Sengwer)",
+          "translation": "kɛ̂ɛt (sg.) / kɛ̀ɛt (pl., nom.pl. kɛ̀ɛtɪ́)",
+          "context": "Sengwer tonal & ghost-vowel number paradigm (13, 15, 73–74) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "clay (Sengwer)",
+          "translation": "mèn",
+          "context": "Sengwer low-tone inherently singular noun (13, §2.2.1) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "fire (Sengwer)",
+          "translation": "mâ",
+          "context": "Sengwer falling-tone noun (14) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "rain-cloud / the rain-cloud / this rain-cloud (Sengwer)",
+          "translation": "kérûuŋ(kʌ) (sg.), kérúuŋkêet (def.), kérúuŋkʌ́ʌnì (this rain-cloud)",
+          "context": "Sengwer ghost syllable /kʌ/ paradigm (27, 30, 38) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "beehive / the beehive / this beehive (Sengwer)",
+          "translation": "mwêeŋ(kʌ) (sg.), mwéeŋkêet (def.), mwéeŋkʌ́ʌnì (this beehive)",
+          "context": "Sengwer ghost syllable /kʌ/ paradigm (52, 91) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "the water (Sengwer / Sabaot)",
+          "translation": "pèe-kʌ̀ (Sengwer) / pee-k(ʌ) (Sabaot)",
+          "context": "Sengwer–Sabaot cognate comparison (89) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -12592,6 +12862,31 @@
           "english": "Kiprono drank water",
           "translation": "ko-e Kipronopeek (VSO)",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Kipsigis (Ch. 25)"
+        },
+        {
+          "english": "orange (Kipsigis)",
+          "translation": "lɑgojɑt",
+          "context": "Kipsigis noun gloss (9a: lɑgojɑt-ɑɑp ʧeeptoo 'Cheptoo's orange') • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "bean / beans (Kipsigis)",
+          "translation": "ngéendyáat (sg.) / ngéendéek (pl.)",
+          "context": "Kipsigis singular-marking noun paradigm (15, 41) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "sugar (pl., Kipsigis)",
+          "translation": "sùgàrúuk",
+          "context": "Kipsigis mass/plural noun with -u thematic suffix (46b) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "millet / the millet (Sengwer)",
+          "translation": "pây (indef.) / pàa-kâ (def.)",
+          "context": "Sengwer irregular plural definite -kâ (24) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "farm / the farm (Sengwer)",
+          "translation": "mbâr(a) (sg.) / mbárɛ̂ɛt (def.)",
+          "context": "Sengwer ghost vowel /a/ paradigm (103) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -15151,6 +15446,91 @@
           "english": "He is inside the house",
           "translation": "Mi' ulit",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Kamásia (Tūken)."
+        },
+        {
+          "english": "plate (Kipsigis)",
+          "translation": "saanɪɪt",
+          "context": "Kipsigis noun gloss (45a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "hat (Kipsigis)",
+          "translation": "koroisit",
+          "context": "Kipsigis narrative noun gloss (83, 85) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "gift (Kipsigis)",
+          "translation": "zɑwɑdi",
+          "context": "Kipsigis noun gloss (58a, 59) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "box (Kipsigis)",
+          "translation": "bɔ̀ːgìsíːt",
+          "context": "Kipsigis loanword with epenthetic [i] (14) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "cloth / clothes (Kipsigis)",
+          "translation": "ìŋgɔ̀ríjɛ̀ːt (sg.) / iŋgɔ̀ráìːk (pl.)",
+          "context": "Kipsigis noun gloss (21a–b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "sock / socks (Kipsigis)",
+          "translation": "sìgìsyáat (sg.) / sìgìsìiník (pl.)",
+          "context": "Kipsigis doubly-marked noun paradigm (16, 42) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "dagger / the dagger / daggers / the daggers (Sengwer)",
+          "translation": "côok (sg.), cóok-ît (def.), cóok-íis (pl.), cóok-ìisjêk (pl.def.), cóok-ìnì (this dagger)",
+          "context": "Sengwer noun paradigm (1, 50, 63) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "trumpet / the trumpet / trumpets / this trumpet (Sengwer)",
+          "translation": "rjàampʊ̀ (sg.), rjàampʊ́ʊt (def.), rjàampʊ́ʊs (pl.), rjàampʊ̀ʊnɪ̀ (this trumpet)",
+          "context": "Sengwer noun paradigm (2, 35) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "pot / the pot / pots / this pot (Sengwer)",
+          "translation": "tèr (sg.), tèréet (def.), térêen (pl.), tèrèenì ~ tèrʌ̀ʌnì (this pot)",
+          "context": "Sengwer noun paradigm with ghost /e/ (7, 43) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "school / the school (Sengwer)",
+          "translation": "sʊ̀kʊ̂ʊl (sg.) / sʊ̀kʊ́ʊl-ɪ̂t (def.)",
+          "context": "Sengwer definiteness paradigm (21) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "machete / this machete (Sengwer)",
+          "translation": "wɛ́sɛ̀ (sg.) / wɛ́sɛ̀ɛnɪ̀ ~ wɛ́sàanɪ̀ (this machete)",
+          "context": "Sengwer proximal demonstrative paradigm (40) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "gourd / the gourd / this gourd (Sengwer)",
+          "translation": "sòt(o) (sg.), sòtéet (def.), sòtòonì ~ sòtʌ̀ʌnì (this gourd)",
+          "context": "Sengwer ghost vowel /o/ paradigm (42, 44, 100) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "bag / the bag / this bag (Sengwer)",
+          "translation": "lʌ̂ʌl(ʌ) (sg.), lʌ́ʌlɛ̂ɛt (def.), lʌ́ʌlʌ́ʌnɪ̀ (this bag)",
+          "context": "Sengwer ghost vowel /ʌ/ paradigm (51) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "byre / sheep pen (Sengwer)",
+          "translation": "ɲcɔ́ɔr (sg.), ɲcɔ̀ɔr-tâ ~ ɲcɔ̀ɔrʊ̂ʊt (def.), ɲcɔ́ɔr-ɪ̀ ~ ɲcɔ̀ɔrʊ́ʊnɪ̀ (this byre)",
+          "context": "Sengwer noun paradigm (59–60, fn. 3) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "pantry / the pantry / this pantry (Sengwer)",
+          "translation": "léŋkû (sg.), léŋkûut (def.), léŋkúunì (this pantry)",
+          "context": "Sengwer noun paradigm (64) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "oiling (Sengwer)",
+          "translation": "kàaɪ̀ɪlɔ̂",
+          "context": "Sengwer deverbal noun (88) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "granary (Sengwer / Sabaot)",
+          "translation": "cʌ́ʌkè (Sengwer) / cʌʌk(e) (Sabaot)",
+          "context": "Sengwer–Sabaot cognate comparison (89) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -17185,6 +17565,116 @@
           "english": "Do you see those people ?",
           "translation": "kule keropicho",
           "context": "C. W. Hobley, Eastern Uganda: An Ethnological Survey (1902) — Nandi"
+        },
+        {
+          "english": "to throw (Kipsigis)",
+          "translation": "wiɾtɑ",
+          "context": "Kipsigis verb stem (13a: Kii-wiɾtɑ) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "to break (Kipsigis)",
+          "translation": "iɾi / jiiɑsi",
+          "context": "Kipsigis verb stems (17a: koo-iɾi 'broke [stick]'; 45a: koo-jiiɑsi 'broke [plate]') • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "to wash (Kipsigis)",
+          "translation": "mwɛt",
+          "context": "Kipsigis verb stem (87a: Koo-mwɛt) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "to like — Kipsigis Class I non-past imperfective paradigm",
+          "translation": "t∫am (root): 1SG á-t∫ám-é, 2SG í-t∫ám-é, 3 t∫ám-è, 1PL kí-t∫ám-é, 2PL ó-t∫ám-é",
+          "context": "Kipsigis Class I conjugation paradigm (2a) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to greet — Kipsigis Class II non-past imperfective paradigm",
+          "translation": "kat (root): 1SG âː-kàt-í, 2SG îː-kàt-í, 3 í-kàt-ì, 1PL kîː-kàt-í, 2PL ôː-kàt-í",
+          "context": "Kipsigis Class II conjugation paradigm (2b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to whisper (Kipsigis)",
+          "translation": "t∫àːm-é (3sg ipfv)",
+          "context": "Kipsigis Class I long-vowel verb minimal pair with t∫ám-è 'likes' (Table 4, 17b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to lift (Kipsigis)",
+          "translation": "kánàp-ì (3sg ipfv)",
+          "context": "Kipsigis polysyllabic Class I verb (Table 4) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to pinch (Kipsigis)",
+          "translation": "komoːt-e (3sg ipfv)",
+          "context": "Kipsigis polysyllabic Class I long-vowel verb (Table 4) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to heap (Kipsigis)",
+          "translation": "í-sùːp-é (3sg ipfv)",
+          "context": "Kipsigis Class II long-vowel verb (Table 4) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to pierce (Kipsigis)",
+          "translation": "túrùs-ì (3sg ipfv)",
+          "context": "Kipsigis disyllabic Class I verb (18a) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to heal (intransitive / transitive, Kipsigis)",
+          "translation": "sap (Class I intr.) / saːp (Class II tr.)",
+          "context": "Kipsigis causative alternation verb (§2.3, 30) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to rot (Kipsigis)",
+          "translation": "tɔt / nʊn",
+          "context": "Kipsigis Class I–II alternating / -si causative verbs (§2.3, fn. 19) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to melt (Kipsigis)",
+          "translation": "t∫ɔːt",
+          "context": "Kipsigis Class I–II alternating verb (§2.3) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to deflate (Kipsigis)",
+          "translation": "t∫ʊs",
+          "context": "Kipsigis Class I–II alternating verb (§2.3) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to soak (Kipsigis)",
+          "translation": "nuːr",
+          "context": "Kipsigis Class I–II alternating verb (§2.3) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to grow (Kipsigis)",
+          "translation": "piːt / jɛːt",
+          "context": "Kipsigis change-of-state verbs (§2.3, fn. 19) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to dry (Kipsigis)",
+          "translation": "jaːm / sa",
+          "context": "Kipsigis change-of-state verbs taking -si causative (§2.3, 23, fn. 19) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to get angry (Kipsigis)",
+          "translation": "nɛrɛːt∫",
+          "context": "Kipsigis verb forming causative with Class II + -si (fn. 19) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to keep / to dedicate (Kipsigis)",
+          "translation": "kɔ nɔːr (Class I: keep; Class II: dedicate)",
+          "context": "Kipsigis Class I–II lexical pair (fn. 17) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to jump (Kipsigis)",
+          "translation": "twaːl",
+          "context": "Kipsigis Class II verb (28) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "to hunt solo (Sengwer)",
+          "translation": "kwáaɪ́s",
+          "context": "Sengwer vowel hiatus example (87) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "come! / he is coming (Sengwer)",
+          "translation": "cóo(n) (imp.) / cóon-è (3sg impf)",
+          "context": "Sengwer verb with ghost /n/ (104) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -18587,6 +19077,71 @@
           "english": "New (plural)",
           "translation": "lelach",
           "context": "A. C. Hollis (1909) The Nandi: Their Language and Folk-Lore (English-Nandi Vocabulary) • Cross-verified with ThinkKenya/Waleghwa Kalenjin (35,000+ sentences, CC-BY-4.0)"
+        },
+        {
+          "english": "definitely (Kipsigis)",
+          "translation": "ɪnɛ",
+          "context": "Kipsigis evaluative adverb gloss (45a–b) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "quickly (Kipsigis)",
+          "translation": "kuʧoogi",
+          "context": "Kipsigis manner adverb gloss (45a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "deliberately (Kipsigis)",
+          "translation": "kuʧomiiŋge",
+          "context": "Kipsigis manner adverb gloss (45b) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "only (Kipsigis)",
+          "translation": "ɪʧɛɛgɛn",
+          "context": "Kipsigis focus particle gloss (60a–b) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "good (sg. / pl., Kipsigis)",
+          "translation": "nɛ-mie (sg.) / ʧɛmiɑɑʧ (pl.)",
+          "context": "Kipsigis adjective gloss (8a, fn. 15) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "big (sg. / pl., Kipsigis)",
+          "translation": "nɛ-oo (sg.) / eeʧeen (pl.)",
+          "context": "Kipsigis adjective gloss (8b–c) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "about (Kipsigis)",
+          "translation": "agɔbɔ",
+          "context": "Kipsigis preposition gloss (39, 40, 58) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "that (complementizer, Kipsigis)",
+          "translation": "kɔlɛ",
+          "context": "Kipsigis declarative complementizer (15a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "focus cleft / relativizer & topicalizer particles (Kipsigis)",
+          "translation": "nɛ (sg. rel./focus), ʧɛ (pl. rel.), ko (topicalizer)",
+          "context": "Kipsigis left-peripheral particles (4a–b, 17–18, 59) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kipsigis verbal tense prefixes",
+          "translation": "Non-past: ∅; Current past: ka-; Recent past: kɔː-; Distant past: kiː-",
+          "context": "Kipsigis tense morphemes (Table 1) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "Kipsigis verbal subject agreement prefixes",
+          "translation": "1sg: a(ː)-; 2sg: i(ː)-; 3: ∅/kɔ(ː)-; 1pl: ki(ː)-/kɛː-; 2pl: ɔ(ː)-",
+          "context": "Kipsigis subject agreement morphemes (Table 2) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "painted (sg. / pl., Sengwer)",
+          "translation": "màal-áat (sg.) / mʌ̀ʌl-ʌ́ʌt-ìin (pl.)",
+          "context": "Sengwer +ATR harmony from verb màal 'to paint' (11) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "dark brown (sg. / pl., Sengwer)",
+          "translation": "múrjʌ̂ʌ(n) (sg.) / múrjʌ́ʌn-èc (pl.)",
+          "context": "Sengwer adjective with ghost /n/ (105) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -20827,6 +21382,26 @@
           "english": "Good",
           "translation": "Karam (E)",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Nandi."
+        },
+        {
+          "english": "road / clan (sg., Kipsigis)",
+          "translation": "óorêet",
+          "context": "Kipsigis singular noun with -a thematic suffix (44a) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "car (sg., Kipsigis)",
+          "translation": "kàríit",
+          "context": "Kipsigis singular noun with -i thematic suffix (45a) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "side / the side / this side (Sengwer)",
+          "translation": "kɔ̀mɔ̀s (sg.), kɔ̀mɔ̀s-tâ (def.), kɔ̀mɔ̀s-ì (this side)",
+          "context": "Sengwer noun paradigm (68) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "middle / the middle (Sengwer)",
+          "translation": "kwéen(u) (sg.) / kwéenûut (def.)",
+          "context": "Sengwer ghost vowel /u/ paradigm (102) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -21229,6 +21804,11 @@
           "english": "Weigh",
           "translation": "ker",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
+        },
+        {
+          "english": "buyers (Sengwer)",
+          "translation": "ʌ́ʌl(-i) (from al 'buy')",
+          "context": "Sengwer deverbal agentive plural (82) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -22226,6 +22806,21 @@
           "english": "I die",
           "translation": "Kamĕ",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Kamásia (Tūken)."
+        },
+        {
+          "english": "enemy (sg., Kipsigis)",
+          "translation": "pùunyáat",
+          "context": "Kipsigis human noun with -yaan singulative (33b, 47b) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "my hospital (Sengwer)",
+          "translation": "káap-kʌ̀ʌ-ɲʌ́ʌj-sée-ɲùu",
+          "context": "Sengwer derived locative noun from ɲáaj 'heal' (Table 1) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "try in court (imp.) / trial / the trial (Sengwer)",
+          "translation": "rwʌ́ʌc (imp. try in court) / kíi-rwʌ̀ʌk(-ʌ) (trial) / kíi-rwʌ̀ʌk-éet (the trial)",
+          "context": "Sengwer legal verb & deverbal noun (84–85) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -23141,6 +23736,16 @@
           "english": "Clear (at night) (plural)",
           "translation": "lapkein",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (Oxford, 1909 — Public Domain) • Cross-verified with ThinkKenya/Waleghwa Kalenjin (35,000+ sentences, CC-BY-4.0)"
+        },
+        {
+          "english": "day / days (Kipsigis)",
+          "translation": "pêetúut (sg.) / pêetùusyék (pl.)",
+          "context": "Kipsigis plural-marking noun paradigm (14, 26, 40) • Blix, H. (2022) \"Interface Legibility and Nominal Classification: A Nanosyntactic Account of Kipsigis Singulatives\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5825/, DOI: https://doi.org/10.16995/glossa.5825, CC-BY-4.0)"
+        },
+        {
+          "english": "day / the day / days / the days / these days (Sengwer)",
+          "translation": "pèet (sg.), pèetúut (def.), pèetúus (pl.), pèetùusjêk (pl.def.), pèetùunì (this day), pèetùusjék-cù (these days)",
+          "context": "Sengwer noun paradigm with ghost /u/ (3, 57, 62) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -28625,6 +29230,326 @@
           "english": "Some / another (singular age, plural alak in Kipsigis)",
           "translation": "age (sg.) / alak (pl.) — e.g. lakwet age ('another child'), lagok alak ('other children')",
           "context": "Maria Kouneli (2019) 'Nominal quantification in Kipsigis', Language Science Press #190 Ch. 25 (https://langsci-press.org/catalog/book/190, CC-BY-4.0)"
+        },
+        {
+          "english": "A person saw a cow (long ago) (Kipsigis)",
+          "translation": "Kii-geeɾ dʒiitɑ tɛɛta.",
+          "context": "Kipsigis VSO example (2a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "It is that child that loves him/herself (Kipsigis)",
+          "translation": "Lakwɔ-nɔɔn nɛ ʧɑʊm-e-gee.",
+          "context": "Kipsigis focus cleft with nɛ (4a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "That child loves him/herself (Kipsigis)",
+          "translation": "Lakwɔ-nɔɔn ko ʧɑʊm-e-gee.",
+          "context": "Kipsigis topicalization with ko (4b) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The child gave the cow some maize (Kipsigis)",
+          "translation": "Koo-gooʧi laakwɛɛt tɛɛta bɑɑndeek.",
+          "context": "Kipsigis ditransitive VSO example (5a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The cows drank the water yesterday (Kipsigis)",
+          "translation": "Koo-e tuugɑ peek ɑmut.",
+          "context": "Kipsigis VSO-Adv example (6a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The children planted the maize well (Kipsigis)",
+          "translation": "Koo-min lɑɑgook bɑɑndeek komie.",
+          "context": "Kipsigis pragmatically neutral VSO-Adv example (7a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono is a good teacher (Kipsigis)",
+          "translation": "Kaaneetiindet nɛ-mie Kipɾoono.",
+          "context": "Kipsigis non-verbal NP predicate example (8a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "These goats are big (Kipsigis)",
+          "translation": "Eeʧeen ɑɑɾto-ʧu.",
+          "context": "Kipsigis non-verbal AP predicate example (8b) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono is in the big field (Kipsigis)",
+          "translation": "Mii mbaɾɛɛt nɛ-oo Kipɾoono.",
+          "context": "Kipsigis locative predicate example (8c) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono eats Cheptoo's orange (Kipsigis)",
+          "translation": "Am-e Kipɾoono lɑgojɑt-ɑɑp ʧeeptoo.",
+          "context": "Kipsigis VSO example (9a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "When he arrived at the river bank, the monkey collected a stone that was on the ground and climbed up the tree (Kipsigis)",
+          "translation": "Kingoit tabandab ainet, kokwai koita ne kimi ngweny moset ak kolany ketit.",
+          "context": "Kipsigis narrative example (10) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono sees water (Kipsigis)",
+          "translation": "Keeɾ-e Kipɾoono peek.",
+          "context": "Kipsigis VSO example (11a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono sees this water (Kipsigis)",
+          "translation": "Keeɾ-e Kipɾoono peeg-ʤu.",
+          "context": "Kipsigis demonstrative DP object example (12a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono threw the rock (Kipsigis)",
+          "translation": "Kii-wiɾtɑ Kipɾoono koitɑ.",
+          "context": "Kipsigis VSO example (13a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The knife cut Kiproono (Kipsigis)",
+          "translation": "Kii-tel rootweet Kipɾoono.",
+          "context": "Kipsigis VSO example (14a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono said that the children planted the maize well (Kipsigis)",
+          "translation": "Koo-geɾ Kipɾoono kɔlɛ koo-min lɑɑgook bɑɑndeek komie.",
+          "context": "Kipsigis embedded clause example (15a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "I saw the field where the children planted the maize well (Kipsigis)",
+          "translation": "Koo-ɑ-geeɾ mbaɾɛɛt nɛ koo-min lɑɑgook bɑɑndeek komie.",
+          "context": "Kipsigis relative clause example (16a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "As for (in) the forest, the children broke the stick there (Kipsigis)",
+          "translation": "En oosneet ko koo-iɾi lɑɑgook keetit.",
+          "context": "Kipsigis ko-topic cleft example (17a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "It is the stick that the children broke yesterday (Kipsigis)",
+          "translation": "Keetit nɛ koo-iɾi lɑɑgook ɑmut.",
+          "context": "Kipsigis nɛ-focus cleft example (18a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Did the children plant maize yesterday? (Kipsigis)",
+          "translation": "Koo-min lɑɑgook bɑɑndeek ɑmut-í?",
+          "context": "Kipsigis yes-no question example (19a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The chief bought a goat yesterday (Kipsigis)",
+          "translation": "Koo-ɑl giirwɑɑgiindet aartɛɛt ɑmut.",
+          "context": "Kipsigis declarative example (20) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Who bought a goat yesterday? (Kipsigis)",
+          "translation": "Koo-ɑl ŋoo aartɛɛt ɑmut?",
+          "context": "Kipsigis subject wh-question (21a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "What did the chief buy yesterday? (Kipsigis)",
+          "translation": "Koo-ɑl nee giirwɑɑgiindet ɑmut?",
+          "context": "Kipsigis object wh-question (21b) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "When did the chief buy a goat? (Kipsigis)",
+          "translation": "Koo-ɑl aʊ giirwɑɑgiindet aartɛɛt?",
+          "context": "Kipsigis temporal wh-question (21c) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "What did the children plant well? (Kipsigis)",
+          "translation": "Koo-min nee lɑɑgook komie?",
+          "context": "Kipsigis wh-question (22) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Who drank water yesterday? (Kipsigis)",
+          "translation": "Koo-e ŋoo peek ɑmut?",
+          "context": "Kipsigis subject wh-question (24) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "What did Chepkoech give Kibeet? (Kipsigis)",
+          "translation": "Koo-gooʧi nee ʧeepkoeʧ Kibeet?",
+          "context": "Kipsigis ditransitive wh-question (26) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Chepkoech gave Kibeet a book (Kipsigis)",
+          "translation": "Koo-gooʧi ʧeepkoeʧ Kibeet kɪtabʊʊt.",
+          "context": "Kipsigis ditransitive example (27a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Who gave Kibeet a book? (Kipsigis)",
+          "translation": "Kii-gooʧi ŋoo Kibeet kɪtabʊʊt?",
+          "context": "Kipsigis subject wh-question (28) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Who did Chepkoech give a book? (Kipsigis)",
+          "translation": "Kii-gooʧi ŋoo ʧeepkoeʧ kɪtabʊʊt?",
+          "context": "Kipsigis indirect-object wh-question (30) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "How did the children plant the maize? (Kipsigis)",
+          "translation": "Koo-min-dɑ ɑno lɑɑgook bɑɑndeek?",
+          "context": "Kipsigis manner wh-question (32) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "When did the cows drink water? (Kipsigis)",
+          "translation": "Koo-e aʊ tuugɑ peek?",
+          "context": "Kipsigis temporal wh-question (34) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Yesterday was a good day (Kipsigis)",
+          "translation": "Koo beetuut nɛ-mie ɑmut.",
+          "context": "Kipsigis copular example (36) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Who planted the maize well? (Kipsigis)",
+          "translation": "Koo-min ŋoo bɑɑndeek komie?",
+          "context": "Kipsigis subject wh-question (37) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Tell me something about Kiproono (Kipsigis)",
+          "translation": "Mwɔ-ɔn kiit agɔbɔ Kipɾoono.",
+          "context": "Kipsigis aboutness-topic prompt (39) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono planted the maize (Kipsigis)",
+          "translation": "Kii-min Kipɾoono bɑɑndeek.",
+          "context": "Kipsigis VSO example (39a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Tell me something about the maize (Kipsigis)",
+          "translation": "Mwɔ-ɔn kiit agɔbɔ bɑɑndeek.",
+          "context": "Kipsigis aboutness-topic prompt (40) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The children definitely broke the plate quickly (Kipsigis)",
+          "translation": "Koo-jiiɑsi ɪnɛ lɑɑgook saanɪɪt kuʧoogi.",
+          "context": "Kipsigis evaluative adverb example (45a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The children definitely broke the plate deliberately (Kipsigis)",
+          "translation": "Koo-jiiɑsi ɪnɛ saanɪɪt lɑɑgook kuʧomiiŋge.",
+          "context": "Kipsigis evaluative adverb example (45b) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Did Kiproono eat the rice? (Kipsigis)",
+          "translation": "Koo-ɑm mʧɛɛlɛk Kipɾoono?",
+          "context": "Kipsigis polar question (56) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "No, Chepkoech ate the rice (Kipsigis)",
+          "translation": "ʔɪʔɪ / ɑɑʧiʧɑ, koo-ɑm ʧeepkoeʧ mʧɛɛlɛk.",
+          "context": "Kipsigis contrastive focus response (57a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "I am going to tell you something about the children (Kipsigis)",
+          "translation": "Abɔ a-mwɔ-ʊn kiit agɔbɔ lɑɑgook.",
+          "context": "Kipsigis future prompt (58) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono gave the children a gift yesterday (Kipsigis)",
+          "translation": "Koo-gooʧi lɑɑgook Kipɾoono zɑwɑdi ɑmut.",
+          "context": "Kipsigis ditransitive example (58a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono gave no more than ten children gifts yesterday (Kipsigis)",
+          "translation": "Koo-gooʧi lɑɑgook ʧɛ mo-siɾe taman Kipɾoono zɑwɑdi ɑmut.",
+          "context": "Kipsigis quantified DP example (59) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The child planted only maize (Kipsigis)",
+          "translation": "Koo-min laakwɛɛt bɑɑndeek ɪʧɛɛgɛn.",
+          "context": "Kipsigis 'only'-focus example (60b) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Who went where? (Kipsigis)",
+          "translation": "Koo-ɑ ŋoo ɑno?",
+          "context": "Kipsigis multiple wh-question (63) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "The child went to school (Kipsigis)",
+          "translation": "Koo-ɑ laakwɛɛt sʊgʊl.",
+          "context": "Kipsigis declarative example (64a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "After Tabutany had agreed, she was taken by the leopard and they went on a very long journey. When they arrived where he lived, the leopard took off his hat (Kipsigis)",
+          "translation": "Kingogagoiyan Tabutany, komut cheplanget ak koba banda ne lo mising. Kingoit ole kimenye, koreek koroisit cheplanget.",
+          "context": "Kipsigis narrative example (83) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "When they arrived where he lived, the leopard took off his hat (Kipsigis)",
+          "translation": "Kingoit ole kimenye, koreek cheplanget koroisit.",
+          "context": "Kipsigis VSO narrative variant (85) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Every dog bit its person (Kipsigis)",
+          "translation": "Koo-sus ŋooktɑ agɛ tʊgʊl ʤiitɑ-ɲiin.",
+          "context": "Kipsigis quantifier-variable binding example (86a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "Kiproono's friend saw him (Kipsigis)",
+          "translation": "Koo-geeɾ ʧooɾweet-ɑɑp Kipɾoono ɪnɛɛndɛt.",
+          "context": "Kipsigis pronominal binding example (88a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "no (Kipsigis)",
+          "translation": "ʔɪʔɪ / ɑɑʧiʧɑ",
+          "context": "Kipsigis negative polarity response (57a) • Bossi, M. & Diercks, M. (2019) \"V1 in Kipsigis: Head movement and discourse-based scrambling\", Glossa: a journal of general linguistics 4(1): 65 (https://www.glossa-journal.org/article/id/5172/, DOI: https://doi.org/10.5334/gjgl.246, CC-BY-4.0)"
+        },
+        {
+          "english": "I didn't like (long ago) (Kipsigis)",
+          "translation": "kiː-mɑ-ɑ-t∫ɑm-e",
+          "context": "Kipsigis distant past negated imperfective (1b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "you liked (Kipsigis)",
+          "translation": "kɛ́ːt∫ám",
+          "context": "Kipsigis current past 2sg with vowel coalescence /kà-í-t∫am/ (5b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "Kibeet drowned (Kipsigis)",
+          "translation": "Kà-ìlís Kíbêːt.",
+          "context": "Kipsigis current past example (6) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "He/she greeted me (Kipsigis)",
+          "translation": "kaikatan",
+          "context": "Kipsigis current past Class II example /Ka-∅-i-kat-an/ (7) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "Look! (Kipsigis imperative)",
+          "translation": "Kéːr!",
+          "context": "Kipsigis Class I 2sg imperative (8a) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "Greet! (Kipsigis imperative)",
+          "translation": "ì-kát!",
+          "context": "Kipsigis Class II 2sg imperative (8b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "Cheebeet is tall / Is Cheebeet tall? (Kipsigis)",
+          "translation": "Tórôːr T∫éːbêːt. / Tórôːr T∫éːbêːt-í?",
+          "context": "Kipsigis declarative & polar question with epenthetic -í (12a–b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "The dog is tall / Is the dog tall? (Kipsigis)",
+          "translation": "Tórôːr ŋóːktá. / Tórôːr ŋóːktáː?",
+          "context": "Kipsigis declarative & polar question with final vowel lengthening (13a–b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "The child is jumping / jumping repeatedly (Kipsigis)",
+          "translation": "i-twɑːl-e làːkwɛ̀ːt. / i-twɑl-twɑːl-e làːkwɛ̀ːt.",
+          "context": "Kipsigis verbal reduplication (28a–b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "The child is hitting the book / hitting repeatedly (Kipsigis)",
+          "translation": "pír-è làːkwɛ̀ːt kìtábʊ́ːt. / pir-ɑː-pir-i làːkwɛ̀ːt kìtábʊ́ːt.",
+          "context": "Kipsigis verbal reduplication with -aa- linker (29a–b) • Kouneli, M. (2022) \"Inflectional classes in Kipsigis\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/8549/, DOI: https://doi.org/10.16995/glossa.8549, CC-BY-4.0)"
+        },
+        {
+          "english": "There are goats in the byre (Sengwer)",
+          "translation": "míi ŋɔ̀rɔ́ɔr ɲcɔ́ɔr",
+          "context": "Sengwer locative sentence (61) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "longing / the longing / this longing (Sengwer)",
+          "translation": "éemʌ̂(s) (sg.), éemʌ̀s-tʌ̂ (def.), éemʌ́s-ì (this longing)",
+          "context": "Sengwer ghost /s/ noun paradigm (67) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     },
@@ -44172,12 +45097,22 @@
           "english": "Whosoever shall do the will of God, the same is my brother, and my sister, and mother (Mark 3:35 — 1912 Kipsigis Specimen #238)",
           "translation": "Amun chi tugul ni yai chamnyit ab Jiptalil, noton ko tete ak ko pamwainyon ak ko kamenyon.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "girl-initiate's huts (Sengwer)",
+          "translation": "káap-cɛ̀ɛ-mɛ́ɛrɪ́ɪs",
+          "context": "Sengwer morphological template example (Table 1) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "song / the song (Sengwer)",
+          "translation": "tjêen (sg.) / tjèen-tʌ̂ (def.)",
+          "context": "Sengwer +ATR definiteness paradigm (22) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
         }
       ]
     }
   ],
-  "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024); Zwarts, Chelimo & Jerono (2024) LSP #438 Ch. 21 Kalenjin Reflexives & Diercks/Kouneli (2019) LSP #190 Kipsigis Syntax (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
+  "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024); Zwarts, Chelimo & Jerono (2024) LSP #438 Ch. 21 Kalenjin Reflexives & Diercks/Kouneli (2019) LSP #190 Kipsigis Syntax (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Kipsigis & Sengwer Corpus (Bossi & Diercks 2019; Kouneli 2022; Blix 2022; Falletti & Remijsen 2025, CC-BY-4.0)",
   "isoCode": "kln",
   "glottocode": "kale1246",
-  "totalEntries": 7817
+  "totalEntries": 8004
 }

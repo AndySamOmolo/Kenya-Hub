@@ -840,12 +840,12 @@ export const POKOMO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "kumi — mirongo miwili",
-            "source": "Ten — Twenty."
+            "target": "Wantu kumi na mawaho mirongo miwili.",
+            "source": "Ten people and twenty dugout canoes."
           },
           {
-            "target": "biga sikío — motsi",
-            "source": "To box the ear — One."
+            "target": "Ntswi motsi ni ghali sokoni.",
+            "source": "One fish is valuable at the market."
           }
         ],
         "authoredExercises": [
@@ -983,12 +983,12 @@ export const POKOMO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "maziwa — izu",
-            "source": "Milk — Banana."
+            "target": "Wana wakunwa maziwa na kurya mazu.",
+            "source": "The children drink milk and eat bananas."
           },
           {
-            "target": "mpunga — mahemba",
-            "source": "Rice — Maize."
+            "target": "Wapokomo wakulima mpunga na mahemba muhoni.",
+            "source": "The Pokomo cultivate rice and maize by the river."
           }
         ],
         "authoredExercises": [
@@ -1112,12 +1112,12 @@ export const POKOMO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "henda mkáhe — ja",
-            "source": "Bake bread — Eat."
+            "target": "Mama akuhenda mkáhe ili turye.",
+            "source": "Mother is baking bread so that we may eat."
           },
           {
-            "target": "hokossa — mukahe",
-            "source": "Boil — Bread."
+            "target": "Waku-hokossa madzi na kupika mukahe.",
+            "source": "They boil water and cook bread."
           }
         ],
         "authoredExercises": [
@@ -1427,12 +1427,12 @@ export const POKOMO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ntsi — siku",
-            "source": "Earth — Day."
+            "target": "Ntsi ya Tsana ni nzuri siku zotse.",
+            "source": "The land of the Tana is beautiful every day."
           },
           {
-            "target": "usiku — mlima",
-            "source": "Night — Mountain."
+            "target": "Usiku mwezi unaangaza juu ya mlima.",
+            "source": "At night the moon shines above the mountain."
           }
         ],
         "authoredExercises": [
@@ -1719,31 +1719,31 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) & Würtz (1895) — Kipokomo"
           },
           {
-            "target": "Bagwi; ma-",
+            "target": "Bagwi (pl. ma-bagwi)",
             "source": "Breast (man's)",
             "pronunciation": "bagwi",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Wē; ma-wē",
+            "target": "Wē (pl. ma-wē)",
             "source": "Breast (woman's)",
             "pronunciation": "we",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Mu-kono; mi-. Ki-gandza; vi- (palm)",
-            "source": "Hand",
+            "target": "Mu-kono (pl. mi-kono) / Ki-gandza (pl. vi-gandza)",
+            "source": "Hand / Palm",
             "pronunciation": "mu-kono",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Ki-tsigīno; vi-",
+            "target": "Ki-tsigīno (pl. vi-tsigīno)",
             "source": "Heel",
             "pronunciation": "ki-tsigino",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
           },
           {
-            "target": "Ū-kōmbe; ma-",
+            "target": "Ū-kōmbe (pl. ma-kōmbe)",
             "source": "Nail (of finger or toe)",
             "pronunciation": "u-kombe",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)"
@@ -1853,7 +1853,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #13: Ki-Pokomo)",
             "acceptedAnswers": [
-              "Bagwi; ma-",
+              "Bagwi (pl. ma-bagwi)",
               "Bagwi"
             ]
           }
@@ -2239,7 +2239,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
           },
           {
             "target": "yéo",
-            "source": "to-day",
+            "source": "Today",
             "pronunciation": "yeo",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kipokómo)"
           },
@@ -2279,12 +2279,12 @@ export const POKOMO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "wiwíu — síku",
-            "source": "Dawn — Day."
+            "target": "Wiwíu wa síku hii ni mwema.",
+            "source": "The dawn of this day is good."
           },
           {
-            "target": "yéo — nawiwiu",
-            "source": "to-day — Early."
+            "target": "Yéo twakwenda shambani nawiwiu.",
+            "source": "Today we go to the farm early."
           }
         ],
         "authoredExercises": [
@@ -2294,7 +2294,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "Dawn",
             "options": [
               "Day",
-              "to-day",
+              "Today",
               "Dawn",
               "Early"
             ],
@@ -2306,16 +2306,16 @@ export const POKOMO_UNITS: CourseUnit[] = [
             "correctAnswer": "síku",
             "acceptedAnswers": [
               "síku",
-              "síku"
+              "siku"
             ],
             "hint": "Starts with \"sí\""
           },
           {
             "type": "translate_to_english",
             "prompt": "Translate to English: \"yéo\"",
-            "correctAnswer": "to-day",
+            "correctAnswer": "Today",
             "acceptedAnswers": [
-              "to-day",
+              "Today",
               "to-day"
             ],
             "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
@@ -2335,7 +2335,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
               },
               {
                 "left": "yéo",
-                "right": "to-day"
+                "right": "Today"
               },
               {
                 "left": "nawiwiu",
@@ -2343,7 +2343,7 @@ export const POKOMO_UNITS: CourseUnit[] = [
               },
               {
                 "left": "madzacha",
-                "right": "Dawn"
+                "right": "Dawn / Early morning"
               }
             ]
           }
@@ -2411,12 +2411,12 @@ export const POKOMO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "wiwíde wiwiu — siku ya ku jia",
-            "source": "Dawn — Last day."
+            "target": "Wiwíde wiwiu wavuvi wakwenda muhoni.",
+            "source": "At early dawn the fishers go to the river."
           },
           {
-            "target": "wakáti ujia — usíku káhi",
-            "source": "Late — Midnight."
+            "target": "Usíku káhi mudzi unalala kwa amani.",
+            "source": "At midnight the village sleeps in peace."
           }
         ],
         "authoredExercises": [
@@ -3276,8 +3276,8 @@ export const POKOMO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mungu kahúve nágĕa!",
-            "source": "Farewell! May God give thee peace!"
+            "target": "Mungu kahúve nágĕa!",
+            "source": "Farewell! May God give you peace!"
           }
         ]
       },

@@ -52,7 +52,25 @@ CF_API_TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
 R2_ACCESS_KEY_ID = os.environ.get("R2_ACCESS_KEY_ID", "").strip()
 R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY", "").strip()
 R2_BUCKET = os.environ.get("R2_BUCKET_NAME", "kenyahub-audio").strip() or "kenyahub-audio"
-CDN_BASE = os.environ.get("NEXT_PUBLIC_AUDIO_CDN_URL", "").strip().rstrip("/")
+def sanitize_cdn_base(raw: str) -> str:
+    val = (raw or "").strip()
+    md = re.match(r"^\[[^\]]*\]\((https?://[^)\s]+)\)(.*)$", val)
+    if md:
+        val = f"{md.group(1).strip()}{md.group(2).strip()}"
+    return (val or "https://audio.kenyahub.me").rstrip("/")
+
+CDN_BASE = sanitize_cdn_base(os.environ.get("NEXT_PUBLIC_AUDIO_CDN_URL", ""))
+ONLY_UNGATED = os.environ.get("ONLY_UNGATED", "").strip().lower() in {"1", "true", "yes"}
+
+# Hard Commercial-License Guardrail (24 Audited Non-Commercial Traps)
+BLOCKED_NON_COMMERCIAL_REPOS = frozenset({
+    "masakhane/masakhaner2", "masakhane/masakhanews", "masakhane/masakhapos",
+    "masakhane/afriqa-gold-passages", "masakhane/mafand", "masakhane/afrisenti",
+    "mbzuai/bactrian-x", "csebuetnlp/xlsum", "intronhealth/afrispeech-200",
+    "clear-global/kenyan-swahili-speech", "clear-global/luo-synthetic-asr-dataset",
+    "clear-global/twb-voice-1.0", "chrisjay/crowd-speech-africa",
+    "silencionetwork/swahili-speech", "speedykom-group/turkana-speech-dataset",
+})
 HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
 MAX_CLIPS = int(os.environ.get("MAX_CLIPS_PER_DATASET") or "250")
 MAX_TEXT_ROWS = int(os.environ.get("MAX_TEXT_ROWS_PER_DATASET") or "3000")
@@ -470,8 +488,26 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict):
         {"lang_id": "swahili", "repo": "deepdml/common_voice_26_0", "config": "sw", "split": "train", "text_col": "sentence"},
         {"lang_id": "swahili", "repo": "fsicoli/common_voice_22_0", "config": "sw", "split": "train", "text_col": "sentence"},
         # 6. Sunbird AI SALT Studio Audio (Gated)
-        {"lang_id": "teso", "repo": "Sunbird/salt", "config": "studio-teo", "split": "train", "text_col": "text"},
-        {"lang_id": "swahili", "repo": "Sunbird/salt", "config": "studio-swa", "split": "train", "text_col": "text"},
+        {"lang_id": "teso", "repo": "Sunbird/salt", "config": "studio-teo", "split": "train", "text_col": "text", "gated": True},
+        {"lang_id": "swahili", "repo": "Sunbird/salt", "config": "studio-swa", "split": "train", "text_col": "text", "gated": True},
+        # 7. Phase 1 New Zero-Gate Commercially Permissive Audio Corpora (Nov 2026 Audit)
+        {"lang_id": "kikuyu", "repo": "multilingual-tts/open-bible", "config": "kik", "split": "train", "text_col": "text", "gated": False},
+        {"lang_id": "swahili", "repo": "multilingual-tts/open-bible", "config": "swh", "split": "train", "text_col": "text", "gated": False},
+        {"lang_id": "borana", "repo": "multilingual-tts/open-bible", "config": "gaz", "split": "train", "text_col": "text", "gated": False},
+        {"lang_id": "swahili", "repo": "michsethowusu/swahili-words-speech-text-parallel", "config": "default", "split": "train", "text_col": "text", "gated": False},
+        {"lang_id": "swahili", "repo": "stem-content-ai-project/swahili-speech", "config": "default", "split": "train", "text_col": "transcription", "gated": False},
+        {"lang_id": "swahili", "repo": "Kencorpus/KenCorpus_audio", "config": "default", "split": "train", "text_col": "transcript", "gated": False},
+        {"lang_id": "swahili", "repo": "nickdee96/ALFFA-Swahili-News", "config": "default", "split": "train", "text_col": "text", "gated": False},
+        {"lang_id": "swahili", "repo": "liva-ai/swahili-asr", "config": "default", "split": "train", "text_col": "text", "gated": False},
+        {"lang_id": "somali", "repo": "skydheere/soomali-asr-dataset", "config": "default", "split": "train", "text_col": "text", "gated": False},
+        {"lang_id": "kalenjin", "repo": "kln001/kalenjin-asr-data", "config": "default", "split": "train", "text_col": "sentence", "gated": False},
+        # 8. Phase 2 High-Volume Gated Commercially Permissive Audio Corpora (Ungate on HF with HF_TOKEN)
+        {"lang_id": "kalenjin", "repo": "MCAA1-MSU/anv_data_ke", "config": "kalenjin", "split": "train", "text_col": "transcription", "gated": True},
+        {"lang_id": "maasai", "repo": "MCAA1-MSU/anv_data_ke", "config": "maasai", "split": "train", "text_col": "transcription", "gated": True},
+        {"lang_id": "somali", "repo": "MCAA1-MSU/anv_data_ke", "config": "somali", "split": "train", "text_col": "transcription", "gated": True},
+        {"lang_id": "luhya", "repo": "Digital-Divide-Data/Luhya-ASR-Data-subset-642H", "config": "default", "split": "train", "text_col": "transcription", "gated": True},
+        {"lang_id": "kamba", "repo": "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H", "config": "default", "split": "train", "text_col": "transcription", "gated": True},
+        {"lang_id": "kisii", "repo": "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H", "config": "default", "split": "train", "text_col": "transcription", "gated": True},
     ]
 
     for job in hf_jobs:
@@ -479,6 +515,12 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict):
             break
         lang_id = job["lang_id"]
         repo = job["repo"]
+        if repo.strip().lower() in BLOCKED_NON_COMMERCIAL_REPOS:
+            log(f"  [BLOCKED-NC] Refusing non-commercial repo: {repo}")
+            continue
+        if ONLY_UNGATED and job.get("gated"):
+            log(f"  [skip-gated] Skipping gated repo {repo} (ONLY_UNGATED=true)")
+            continue
         cfg = job["config"]
         rev = job.get("revision")
         log(f"[HF Audio Stream] {repo} ({cfg}) -> {lang_id} (max {MAX_CLIPS} clips, {PER_DATASET_TIMEOUT_SEC}s cap)...")

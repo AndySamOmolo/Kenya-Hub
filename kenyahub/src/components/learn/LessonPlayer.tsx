@@ -15,7 +15,9 @@ import {
   Lightbulb,
   SkipForward,
   Star,
+  Volume2,
 } from "lucide-react";
+import { playLanguageAudio, hasVerifiedAudio, stopLanguageAudio } from "@/lib/language-audio";
 import type {
   Exercise,
   CourseSkill,
@@ -33,6 +35,8 @@ import {
 import {
   generateExercises,
   checkAnswerWithFeedback,
+  getLevelProfile,
+  getTeachingDeckForLevel,
   KENYAN_SPECIAL_CHARS,
 } from "@/lib/learn-engine";
 
@@ -86,10 +90,11 @@ export default function LessonPlayer({
       ...reviewExercises.slice(0, EXERCISES_PER_LESSON),
       ...generateExercises(
         skill,
-        reviewOnly ? 0 : Math.max(0, EXERCISES_PER_LESSON - reviewExercises.length)
+        reviewOnly ? 0 : Math.max(0, EXERCISES_PER_LESSON - reviewExercises.length),
+        level
       ),
     ];
-  }, [reviewItems, reviewOnly, skill]);
+  }, [level, reviewItems, reviewOnly, skill]);
 
   const [exercises, setExercises] = useState<Exercise[]>(() => buildLessonExercises());
   const [isLoadingExercises, setIsLoadingExercises] = useState(false);
@@ -103,6 +108,7 @@ export default function LessonPlayer({
   const [heartsLeft, setHeartsLeft] = useState(() => Math.max(1, progress?.hearts || MAX_HEARTS));
   const [wordsLearned, setWordsLearned] = useState<string[]>([]);
   const [startTime] = useState(Date.now());
+  useEffect(() => () => stopLanguageAudio(), []);
   const isPracticeMode = Boolean(reviewOnly);
 
   // Current exercise state
@@ -127,8 +133,13 @@ export default function LessonPlayer({
   const [shakeWrong, setShakeWrong] = useState(false);
   const [flashCorrect, setFlashCorrect] = useState(false);
   const [lessonComplete, setLessonComplete] = useState(false);
+  const levelProfile = useMemo(() => getLevelProfile(level), [level]);
+  const teachingDeck = useMemo(
+    () => getTeachingDeckForLevel(skill, level),
+    [skill, level]
+  );
   const [lessonStage, setLessonStage] = useState<"learn" | "practice">(
-    reviewOnly ? "practice" : "learn"
+    reviewOnly || teachingDeck.length === 0 ? "practice" : "learn"
   );
   const [teachingIndex, setTeachingIndex] = useState(0);
 
@@ -165,7 +176,7 @@ export default function LessonPlayer({
   }, [buildLessonExercises, forceScrollTop]);
 
   const exercise = exercises[currentIndex];
-  const teachingCard = skill.words[teachingIndex];
+  const teachingCard = teachingDeck[teachingIndex];
   const progressPercent = exercises.length
     ? ((currentIndex + (isChecked ? 1 : 0)) / exercises.length) * 100
     : 0;
@@ -545,7 +556,7 @@ export default function LessonPlayer({
 
   /* ─── Stage 1: Learn First (Teaching Cards) ─── */
   if (lessonStage === "learn" && teachingCard) {
-    const isLastTeachingCard = teachingIndex >= skill.words.length - 1;
+    const isLastTeachingCard = teachingIndex >= teachingDeck.length - 1;
 
     return (
       <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-1 sm:px-4">
@@ -578,7 +589,7 @@ export default function LessonPlayer({
         </div>
 
         <div className="flex-1">
-          <p className="text-xs font-bold uppercase tracking-wider text-gold">Step 1: Learn Vocabulary</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-gold">Level {levelProfile.level} · {levelProfile.label} — {levelProfile.teachingMode === "sentences" ? "Context Phrases" : "Learn Vocabulary"}</p>
           <h2 className="mt-1 font-[family-name:var(--font-outfit)] text-xl sm:text-3xl font-bold text-text-primary">
             {skill.title}
           </h2>
@@ -633,11 +644,38 @@ export default function LessonPlayer({
               return (
                 <>
                   <div className="flex items-start justify-between gap-3">
-                    <p className="text-2xl sm:text-4xl font-bold text-gold break-words">
-                      {teachingCard.target}
-                    </p>
+                    <div className="flex items-center gap-2.5 flex-wrap min-w-0">
+                      <p className="text-2xl sm:text-4xl font-bold text-gold break-words">
+                        {teachingCard.target}
+                      </p>
+                      {hasVerifiedAudio({
+                        translation: teachingCard.target,
+                        audioFile: teachingCard.audioFile || teachingCard.audio,
+                      }) && (
+                        <button
+                          type="button"
+                          onClick={() =>
+                            playLanguageAudio(
+                              {
+                                english: teachingCard.source,
+                                translation: teachingCard.target,
+                                pronunciation: teachingCard.pronunciation,
+                                audioFile: teachingCard.audioFile || teachingCard.audio,
+                              },
+                              progress?.languageId || null
+                            )
+                          }
+                          className="inline-flex items-center gap-1.5 rounded-full border border-sky/40 bg-sky/10 px-3 py-1.5 text-xs font-semibold text-sky hover:bg-sky/20 transition-colors cursor-pointer shrink-0"
+                          title={`Play verified ${languageName} recording`}
+                          aria-label={`Play verified ${languageName} recording for ${teachingCard.target}`}
+                        >
+                          <Volume2 className="h-3.5 w-3.5" />
+                          <span>Listen</span>
+                        </button>
+                      )}
+                    </div>
                     {partOfSpeechLabel && (
-                      <span className="rounded-lg border border-border bg-bg-card px-2.5 py-0.5 text-xs font-semibold text-text-muted capitalize">
+                      <span className="rounded-lg border border-border bg-bg-card px-2.5 py-0.5 text-xs font-semibold text-text-muted capitalize shrink-0">
                         {partOfSpeechLabel}
                       </span>
                     )}
@@ -811,14 +849,43 @@ export default function LessonPlayer({
       {/* ─── Exercise Content ────────────────────── */}
       <div className="flex-1">
         <div className="mb-5 sm:mb-6">
-          {exercise.reviewId && (
-            <p className="mb-2 text-xs font-bold uppercase tracking-wider text-kenya-green-light">
-              Spaced Repetition Review
-            </p>
-          )}
+          <p className="mb-2 text-xs font-bold uppercase tracking-wider text-gold">
+            {exercise.reviewId
+              ? "Spaced Repetition Review"
+              : `Level ${levelProfile.level} · ${levelProfile.label}`}
+          </p>
           <p className="font-[family-name:var(--font-outfit)] text-lg font-bold text-text-primary sm:text-xl leading-snug">
             {exercise.prompt}
           </p>
+
+          {exercise.sourceWord &&
+            hasVerifiedAudio({
+              translation: exercise.sourceWord.target,
+              audioFile: exercise.sourceWord.audioFile || exercise.sourceWord.audio,
+            }) && (
+              <div className="mt-3">
+                <button
+                  type="button"
+                  onClick={() =>
+                    playLanguageAudio(
+                      {
+                        english: exercise.sourceWord!.source,
+                        translation: exercise.sourceWord!.target,
+                        pronunciation: exercise.sourceWord!.pronunciation,
+                        audioFile: exercise.sourceWord!.audioFile || exercise.sourceWord!.audio,
+                      },
+                      progress?.languageId || null
+                    )
+                  }
+                  className="inline-flex items-center gap-2 rounded-xl border border-sky/40 bg-sky/10 px-3.5 py-2 text-xs sm:text-sm font-semibold text-sky hover:bg-sky/20 transition-colors cursor-pointer"
+                  title={`Play verified ${languageName} recording`}
+                  aria-label={`Play verified ${languageName} audio`}
+                >
+                  <Volume2 className="h-4 w-4" />
+                  <span>Play Native Audio</span>
+                </button>
+              </div>
+            )}
 
           {exercise.sourceWord &&
             (exercise.type === "translate_to_target" ||

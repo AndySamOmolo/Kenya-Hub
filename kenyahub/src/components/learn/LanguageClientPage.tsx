@@ -816,6 +816,35 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                       [{currentFlashcard.pronunciation}]
                     </p>
                   )}
+                  {!isCardFlipped &&
+                    hasVerifiedAudio({
+                      translation: currentFlashcard.target,
+                      audioFile: currentFlashcard.audioFile || currentFlashcard.audio,
+                    }) && (
+                      <div className="pt-1 flex justify-center">
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            playLanguageAudio(
+                              {
+                                english: currentFlashcard.source,
+                                translation: currentFlashcard.target,
+                                pronunciation: currentFlashcard.pronunciation,
+                                audioFile: currentFlashcard.audioFile || currentFlashcard.audio,
+                              },
+                              course.config.id
+                            );
+                          }}
+                          className="inline-flex items-center gap-1.5 rounded-full border border-sky/40 bg-sky/10 px-3.5 py-1.5 text-xs font-semibold text-sky hover:bg-sky/20 transition-colors cursor-pointer"
+                          title={`Play verified ${course.config.name} recording`}
+                          aria-label={`Play verified ${course.config.name} recording for ${currentFlashcard.target}`}
+                        >
+                          <Volume2 className="w-3.5 h-3.5" />
+                          <span>Listen</span>
+                        </button>
+                      </div>
+                    )}
                   {isCardFlipped && currentFlashcard.example && (
                     <p className="text-sm text-text-secondary mt-3 pt-3 border-t border-border/60 max-w-md mx-auto">
                       Example: <strong className="text-text-primary">{currentFlashcard.example}</strong>

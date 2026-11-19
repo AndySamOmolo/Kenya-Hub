@@ -564,10 +564,8 @@ export const MAASAI_GRAMMAR_SECTIONS: GrammarSection[] = [
         "explanation": "Salutations, 3 Songs, 3 Ethnonyms, 8 Geographical Names, 10 Curses & 5 Vocabulary Footnotes (pp. 41–75)"
       }
     ]
-  }
-];
-
-MAASAI_GRAMMAR_SECTIONS.push({
+  },
+  {
   id: "maasai-cust-1883-kwafi-masai-vol1",
   title: "14. Robert Needham Cust (1883, Vol. I, Ch. X.A.V–VI, pp. 149–152): 'A Sketch of the Modern Languages of Africa' — Kwáfi (Engútuk Eloikób) & Masai (Enguduk Iloigob) in the Nuba Sub-Group, Krapf (1854), Erhardt (1857), Last's 6,000-Word Humba Lexicon, Farler, Wakefield, New, Thomson (1883) & Lepsius's 6 Structural Features",
   summary: "Complete line-by-line synthesis of Robert Needham Cust's treatment of V. Kwáfi (pp. 149–151) and VI. Masai (pp. 151–152) in 'A Sketch of the Modern Languages of Africa', Vol. I (London: Trübner & Co., 1883, Ch. X Nuba-Fulah Group): autonyms Loikób / Eloikób ('Men'), Engútuk Eloikób (Krapf 1854) & Enguduk Iloigob (Erhardt 1857), J. T. Last's 6,000-word Humba vocabulary at Mamboia, Farler & Wakefield's caravan routes, Arúsha & Ndorobo 'Helot Races', Joseph Thomson's 1883 RGS expedition, and Lepsius's (1880) 6 grammatical hallmarks.",
@@ -584,9 +582,8 @@ MAASAI_GRAMMAR_SECTIONS.push({
       explanation: "Robert Needham Cust, A Sketch of the Modern Languages of Africa, Vol. I (1883, Ch. X.A.V–VI, pp. 150–151)"
     }
   ]
-});
-
-MAASAI_GRAMMAR_SECTIONS.push({
+  },
+  {
   "id": "maasai-hohnel-1894-vol1-complete",
   "title": "15. Lieut. Ludwig von Höhnel (1894, Vol. I, Chs. I–IV & VI, pp. 12–14, 84, 100, 131, 206–236 [285], 367–385): Masai (Il Oikob) & Wakwafi (Il Oogolala / Il Lumbwa) Ethnography, Trade Beads & Wire, Spitting Salutations ('Leibon, sobaj! — Ebaj, moran!'), Loitokitok Twig-Oratory, Mfuto Smallpox Variolation of ~200 Men, Kapotei Elmoran, Strict Diet (l-ngoret, ol-pul & kiloriti) & Chief Laibon Mbatian of Engidong",
   "summary": "Complete line-by-line synthesis of all Masai (Il Oikob) and Wakwafi (Il Oogolala / Il Lumbwa) linguistic, ritual, dietary, military, and geographical data in Lieut. Ludwig von Höhnel's 'Discovery of Lakes Rudolf and Stefanie' (tr. Nancy Bell [N. D'Anvers], Vol. I, London: Longmans, Green, and Co., 1894, Chapters I–IV & VI, pp. 12–14, 84, 100, 131, 206–236 [285], 367–385).",
@@ -612,10 +609,8 @@ MAASAI_GRAMMAR_SECTIONS.push({
       "explanation": "Lieut. Ludwig von Höhnel, Discovery of Lakes Rudolf and Stefanie, Vol. I (1894, Ch. IV, pp. 217, 229–234)"
     }
   ]
-});
-
-// ── Section 16: Complete Line-by-Line Integration of Jonathan Moodie (2016, Ch. 21, pp. 397–416, DOI: 10.17169/langsci.b121.492), "Number marking in Lopit, an Eastern Nilotic language" (with Maasai, Turkana & Teso Comparative Paradigms), in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages ──
-MAASAI_GRAMMAR_SECTIONS.push({
+  },
+  {
   "id": "maasai-moodie-2016-eastern-nilotic-number-marking-complete",
   "title": "16. Jonathan Moodie (2016, Ch. 21, pp. 397–416, DOI: 10.17169/langsci.b121.492): 'Number marking in Lopit, an Eastern Nilotic language' — Tripartite Number Marking, Greater Plural in Maasai (eng-ker → ing-kerr-a → ing-kerr-ai), Teso & Lopit (Tables 17–18), Greenberg's Movable k- & Greater Singular",
   "summary": "Complete synthesis of Chapter 21 ('Number marking in Lopit, an Eastern Nilotic language', pp. 397–416, Tables 1–18 & Ex. 1–14) by Jonathan Moodie (University of Melbourne) in Doris L. Payne, Sara Pacchiarotti & Mokaya Bosire, eds., Diversity in African languages (Berlin: Language Science Press, 2016), comparing Lopit with Maasai, Turkana, Teso, Lotuko, and Bari.",
@@ -636,9 +631,8 @@ MAASAI_GRAMMAR_SECTIONS.push({
       "explanation": "Jonathan Moodie (2016, Ch. 21, pp. 399–415, Tables 1–4, 17–18 & Ex. 14)"
     }
   ]
-});
-
-MAASAI_GRAMMAR_SECTIONS.push({
+  },
+  {
   id: "payne-2026-maa-middle-verbs",
   title: "17. Doris L. Payne (2026, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206): Middle Verbs in Maa — Alternating, Media Tantum, and Look-Alikes",
   summary: "Comprehensive typology of Maa middle-voice verbs marked by [-ATR] -a / [+ATR] -o across Maasai, Samburu, and Ilchamus, distinguishing alternating transitive/middle roots from non-alternating media tantum experiential verbs.",
@@ -653,4 +647,5 @@ MAASAI_GRAMMAR_SECTIONS.push({
       explanation: "Doris L. Payne (2026, Pamoja tena, Language Science Press #491, Ch. 12, DOI: 10.5281/zenodo.20285206, CC-BY-4.0)"
     }
   ]
-});
+  }
+];

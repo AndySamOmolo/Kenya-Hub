@@ -485,10 +485,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           },
           {
-            "target": "ndúgu",
+            "target": "ndugu mulume",
             "source": "Brother",
-            "pronunciation": "ndu-gu",
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
+            "pronunciation": "ndu-gu mu-lu-me"
           },
           {
             "target": "muhóho",
@@ -558,7 +557,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                 "right": "Bride"
               },
               {
-                "left": "ndúgu",
+                "left": "ndugu mulume",
                 "right": "Brother"
               }
             ]
@@ -638,12 +637,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "tsáwe — wáwe",
-            "source": "Grandfather — Grandmother."
+            "target": "Tsáwe na wáwe a-na-kala mudzini.",
+            "source": "Grandfather and grandmother live in the homestead."
           },
           {
-            "target": "muhóho wa mana — mulúme",
-            "source": "Grandson — Husband."
+            "target": "Mulúme na muche a-na-linda muhóho.",
+            "source": "The husband and wife care for the child."
           }
         ],
         "authoredExercises": [
@@ -788,12 +787,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "chenda — hnane",
-            "source": "Nine — Eight."
+            "target": "Midzi chenda na at'u hnane.",
+            "source": "Nine homesteads and eight people."
           },
           {
-            "target": "fungahe — handahu",
-            "source": "Seven — Six."
+            "target": "Siku fungahe na miezi handahu.",
+            "source": "Seven days and six months."
           }
         ],
         "authoredExercises": [
@@ -867,10 +866,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Mijikenda (Giriama) (Kigiriama) in Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891 Giryama & Aphorisms), Johnston (1919) & Hobley (1922) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kilifi, Kwale, Mombasa.",
         "words": [
           {
-            "target": "piga sikíro",
-            "source": "To box the ears",
-            "pronunciation": "pi-ga si-ki-ro",
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
+            "target": "mia",
+            "source": "Hundred",
+            "pronunciation": "mi-a"
           },
           {
             "target": "kumi",
@@ -915,50 +913,35 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "piga sikíro — kumi",
-            "source": "To box the ears — Ten."
+            "target": "At'u kumi a-na-gula mbuzi mia.",
+            "source": "Ten people are buying a hundred goats."
           },
           {
-            "target": "menga — tandahu",
-            "source": "One — Six."
+            "target": "Kána mmenga na siku tandahu.",
+            "source": "Once and six days."
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What does \"piga sikíro\" mean in English?",
-            "correctAnswer": "To box the ears",
+            "prompt": "What does \"mia\" mean in English?",
+            "correctAnswer": "Hundred",
             "options": [
               "Ten",
               "One",
               "Six",
-              "To box the ears"
-            ],
-            "hint": "Core vocabulary in Trade, Barter, Currency & Traditional Measures",
-            "acceptedAnswers": [
-              "To box the ears",
-              "Box"
+              "Hundred"
             ]
           },
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"Ten\"",
-            "correctAnswer": "kumi",
-            "acceptedAnswers": [
-              "kumi",
-              "kumi"
-            ],
-            "hint": "Starts with \"ku\""
+            "correctAnswer": "kumi"
           },
           {
             "type": "translate_to_english",
             "prompt": "Translate to English: \"menga\"",
-            "correctAnswer": "One",
-            "acceptedAnswers": [
-              "One",
-              "One"
-            ],
-            "hint": "Review Trade, Barter, Currency & Traditional Measures"
+            "correctAnswer": "One"
           },
           {
             "type": "match_pairs",
@@ -966,8 +949,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "piga sikíro",
-                "right": "To box the ears"
+                "left": "mia",
+                "right": "Hundred"
               },
               {
                 "left": "kumi",
@@ -1019,10 +1002,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "i-dji / ma-dji"
           },
           {
-            "target": "jíta; jăkána",
+            "target": "jăkána",
             "source": "Boil",
-            "pronunciation": "ji-ta",
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)"
+            "pronunciation": "ja-ka-na"
           },
           {
             "target": "mukáhe",
@@ -1042,9 +1024,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "mafuha"
           },
           {
-            "target": "ója; kalánga",
+            "target": "ója / kalánga",
             "source": "Fry",
-            "pronunciation": "oja"
+            "pronunciation": "o-ja / ka-la-nga"
           },
           {
             "target": "wirási",
@@ -1059,12 +1041,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "henda mukáhe — ídji (pl. mádji)",
-            "source": "Bake bread — Egg."
+            "target": "Muche yu-na-henda mukáhe na mádji.",
+            "source": "The woman is baking bread with eggs."
           },
           {
-            "target": "jíta — mukáhe",
-            "source": "Boil — Bread."
+            "target": "N-na-jíta wari na mafúha.",
+            "source": "I am cooking cornmeal with oil."
           }
         ],
         "authoredExercises": [
@@ -1096,13 +1078,8 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           },
           {
             "type": "translate_to_english",
-            "prompt": "Translate to English: \"jíta\"",
-            "correctAnswer": "Boil",
-            "acceptedAnswers": [
-              "Boil",
-              "Cook"
-            ],
-            "hint": "Review Staple Foods, Cookery & Beverages"
+            "prompt": "Translate to English: \"jăkána\"",
+            "correctAnswer": "Boil"
           },
           {
             "type": "match_pairs",
@@ -1118,7 +1095,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                 "right": "Egg"
               },
               {
-                "left": "jíta; jăkána",
+                "left": "jăkána",
                 "right": "Boil"
               },
               {
@@ -1196,12 +1173,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mjíti — mazerre",
-            "source": "Cook — Corn (maize)."
+            "target": "Mjíti yu-na-jíta mazerre.",
+            "source": "The cook is cooking maize."
           },
           {
-            "target": "muháma — nóa",
-            "source": "Millet / sorghum — Drink."
+            "target": "Hu-na-rima muháma na hu-na-nóa madzi.",
+            "source": "We cultivate sorghum and we drink water."
           }
         ],
         "authoredExercises": [
@@ -1333,12 +1310,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "kánda — gnombe mulúme",
-            "source": "Bank (of a river) — Ox."
+            "target": "Ng'ombe mulúme yu-ko kánda ya muho.",
+            "source": "The ox is at the bank of the river."
           },
           {
-            "target": "dzua — ng'ombe",
-            "source": "Sun — Cow."
+            "target": "Dzua ri-na-waka na ng'ombe i-na-rya.",
+            "source": "The sun is shining and the cow is grazing."
           }
         ],
         "authoredExercises": [
@@ -1470,12 +1447,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "gáu — dia uzípiga kulúlu",
-            "source": "Bark (of a tree) — Bark (like a dog)."
+            "target": "Gáu ra muhi ri-na-linda muhi.",
+            "source": "Tree bark protects the tree."
           },
           {
-            "target": "niúji — niúni",
-            "source": "Bee — Bird."
+            "target": "Niúji na niúni zi-na-ruruka mwituni.",
+            "source": "Bees and birds fly in the forest."
           }
         ],
         "authoredExercises": [
@@ -1569,9 +1546,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           },
           {
-            "target": "va sélac̣a",
+            "target": "mukono (pl. mikono)",
             "source": "Arm",
-            "pronunciation": "va se-lakha"
+            "pronunciation": "mu-ko-no"
           },
           {
             "target": "sikíro",
@@ -1579,9 +1556,9 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "sikiro"
           },
           {
-            "target": "zítso pl. mátso",
+            "target": "zítso (pl. mátso)",
             "source": "Eye",
-            "pronunciation": "zitso"
+            "pronunciation": "zi-tso"
           },
           {
             "target": "gúlu",
@@ -1611,12 +1588,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "milázo — va sélac̣a",
-            "source": "Blood — Arm."
+            "target": "Milázo i-na-pita mukononi na muirini.",
+            "source": "Blood flows through the arm and the body."
           },
           {
-            "target": "sikíro — zítso pl. mátso",
-            "source": "Ear — Eye."
+            "target": "Sikíro ri-na-sikia na mátso ga-na-ona.",
+            "source": "The ear hears and the eyes see."
           }
         ],
         "authoredExercises": [
@@ -1635,12 +1612,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"Arm\"",
-            "correctAnswer": "va sélac̣a",
-            "acceptedAnswers": [
-              "va sélac̣a",
-              "va sélac̣a"
-            ],
-            "hint": "Starts with \"va\""
+            "correctAnswer": "mukono"
           },
           {
             "type": "translate_to_english",
@@ -1662,7 +1634,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                 "right": "Blood"
               },
               {
-                "left": "va sélac̣a",
+                "left": "mukono",
                 "right": "Arm"
               },
               {
@@ -1670,7 +1642,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                 "right": "Ear"
               },
               {
-                "left": "zítso pl. mátso",
+                "left": "zítso (pl. mátso)",
                 "right": "Eye"
               },
               {
@@ -1742,12 +1714,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "óga — kuffua",
-            "source": "Danger — Die."
+            "target": "Ukóngo wa matso u-na-taka dawa.",
+            "source": "Eye sickness requires medicine."
           },
           {
-            "target": "jilúngo ja mukóno — ukóngo wa matso",
-            "source": "Elbow — Eye sickness."
+            "target": "Titetémo ri-na-uma muíri wosi.",
+            "source": "Fever aches throughout the whole body."
           }
         ],
         "authoredExercises": [
@@ -2002,7 +1974,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Mijikenda (Giriama) (Kigiriama) in Rev. Dr. J. L. Krapf (1850), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891 Giryama & Aphorisms), Johnston (1919) & Hobley (1922) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kilifi, Kwale, Mombasa.",
         "words": [
           {
-            "target": "zibúma ada; bara",
+            "target": "zibúma ada / bara",
             "source": "To accustom oneself",
             "pronunciation": "zi-bu-ma ada",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka)"
@@ -2013,7 +1985,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "koo-kah / kwehn-dah"
           },
           {
-            "target": "úsa; lónda",
+            "target": "úsa / lónda",
             "source": "Ask",
             "pronunciation": "usa"
           },
@@ -2033,7 +2005,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "ia"
           },
           {
-            "target": "ku-tsukula (to carry); ku-vyaa (to bear)",
+            "target": "ku-tsukula (to carry) / ku-vyaa (to bear)",
             "source": "Bear",
             "pronunciation": "ku-tsukula / ku-vyaa"
           },
@@ -2050,12 +2022,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "zibúma ada — kuuka",
-            "source": "To accustom oneself — Go."
+            "target": "N-na-kuuka mudzini ku-londa ndugu.",
+            "source": "I am going to the homestead to ask for my relative."
           },
           {
-            "target": "úsa — fóya",
-            "source": "Ask — Beg."
+            "target": "N-na-mánia njira ya kaya.",
+            "source": "I know the path to the kaya."
           }
         ],
         "authoredExercises": [
@@ -2176,12 +2148,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "lero — dzana",
-            "source": "Today — Yesterday."
+            "target": "Lero ni siku mbidzo kuliko dzana.",
+            "source": "Today is a better day than yesterday."
           },
           {
-            "target": "madzacha — usiku",
-            "source": "Dawn — Night."
+            "target": "Madzacha ga-na-fika nyuma ya usiku.",
+            "source": "Dawn arrives after the night."
           }
         ],
         "authoredExercises": [
@@ -2462,12 +2434,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "va ṣauíri — hénda j̇éri",
-            "source": "Advise — Affirm."
+            "target": "Hu-na-lagána ku-henda jéri na dheri.",
+            "source": "We agree to act truthfully and in peace."
           },
           {
-            "target": "púnde — kahénsa",
-            "source": "After — He is against."
+            "target": "N-na-ku-lamúsa na dheri, ndugu yangu.",
+            "source": "I greet you in peace, my relative."
           }
         ],
         "authoredExercises": [
@@ -2742,7 +2714,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. n.)"
           },
           {
-            "target": "setáni; pepo",
+            "target": "setáni / pepo",
             "source": "Devil",
             "pronunciation": "se-ta-ni",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
@@ -2891,13 +2863,13 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           },
           {
-            "target": "maṣálo; mafóyo",
+            "target": "maṣálo / mafóyo",
             "source": "Prayer",
             "pronunciation": "ma-sa-lo",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.)"
           },
           {
-            "target": "ṣála; foya Mulungu",
+            "target": "ṣála / foya Mulungu",
             "source": "Pray",
             "pronunciation": "sa-la",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka v. a.)"
@@ -3010,7 +2982,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
                 "right": "Horn"
               },
               {
-                "left": "maṣálo; mafóyo",
+                "left": "maṣálo / mafóyo",
                 "right": "Prayer"
               }
             ]
@@ -3317,7 +3289,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf & Rebmann (1887) Nika-English Dictionary [adj.]"
           },
           {
-            "target": "uokófu; réri",
+            "target": "uokófu / réri",
             "source": "Peace",
             "pronunciation": "uokofu"
           },
@@ -3334,12 +3306,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "makala — kitsahukuzi",
-            "source": "Charcoal — Bush."
+            "target": "Makala ga-na-waka moho mudzini.",
+            "source": "Charcoal burns with fire in the homestead."
           },
           {
-            "target": "kitsulu — yonga",
-            "source": "Ant-hill — to sway, as a tree or branch, with the wind."
+            "target": "Muhi u-na-yonga na pẹho kule kitsahukuzini.",
+            "source": "The tree sways in the wind out in the bush."
           }
         ],
         "authoredExercises": [
@@ -3424,17 +3396,17 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "hint": "Krapf & Rebmann (1887) Nika-English Dictionary [v.p.]"
           },
           {
-            "target": "lamusíra; lamúsa",
+            "target": "lamusíra / lamúsa",
             "source": "Salute",
             "pronunciation": "lamusira"
           },
           {
-            "target": "rija; usíra",
+            "target": "rija / usíra",
             "source": "Pardon",
             "pronunciation": "ri-ja"
           },
           {
-            "target": "erésa; hurira",
+            "target": "erésa / hurira",
             "source": "Please",
             "pronunciation": "eresa"
           },
@@ -3456,12 +3428,12 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "susi — shidua",
-            "source": "wind — to be set on fire."
+            "target": "At'u a-na-lamusíra wazé kwa dheri.",
+            "source": "People salute the elders in peace."
           },
           {
-            "target": "lamusíra — rija",
-            "source": "Salute — Pardon."
+            "target": "N-na-ku-lomba rija, ndugu yangu.",
+            "source": "I ask for your pardon, my relative."
           }
         ],
         "authoredExercises": [
@@ -3694,7 +3666,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
       },
       {
         "id": "mijikenda-1887-kaya-coconuts-ugema",
-        "title": "Kaya Architecture (Mumfiria, M'oro, Rungu), Coconut Stages",
+        "title": "Kaya Architecture (Mumfiria, M'oro, Rungu) & Coconut Stages",
         "icon": "TreePine",
         "description": "Explore the three defining institutions of a Mijikenda Kaya, the 7 stages of coconut maturation (Pungapunga to Muvala), the 8 stages of palm-wine tapping (Dangadza), and the 8 stages of child motor development (Koko).",
         "tips": "As recorded by Krapf & Rebmann (1887, p. 259 s.v. M'oro), a settlement without a fortified gate (mumfiria), central council green (m'oro), and sacred elders' lodge (rungu) is called merely a mudzi ('village'), never a kaya.",
@@ -3927,7 +3899,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
       },
       {
         "id": "mijikenda-1887-ordeals-prayers-fables",
-        "title": "6 Kiravo Ordeals, Kore Blood-Money, 9 Calabashes, 5 Mulungu",
+        "title": "6 Kiravo Ordeals, Kore Blood-Money, 9 Calabashes & Mulungu Prayers",
         "icon": "Scale",
         "description": "Explore Mijikenda customary law (6 Kiravo ordeals, Kore blood-money, Ku funsa chala), the 9 Kibaria calabash sizes, the 5 prayers to Mulungu, and the 3 fables in Krapf, Rebmann & Sparshott (1887).",
         "tips": "In Mijikenda customary jurisprudence (p. 192 s.v. Kore), intentional murder required two anafiale (a youth and a maiden) to replace the victim's kifurifuri ('shadow'), whereas accidental homicide (kua zani, p. 339) required one kore.",
@@ -3948,7 +3920,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "pronunciation": "ku-funsa-chala"
           },
           {
-            "target": "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo →uku",
+            "target": "Kibaria → Kirea → Tumbi → Ndzoma → Ndundu → Kipazi → Muvunda → M'ololo → Dunda",
             "source": "9 graded sizes of calabashes from the smallest palm-tapping gourd (kibaria) to the largest storage gourd",
             "pronunciation": "kibaria-kirea-tumbi-ndzoma",
             "hint": "Krapf, Rebmann & Sparshott (1887, pp. 151–152 s.v. Kibaria)"
@@ -3992,7 +3964,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "mijikenda-nicolle-2016-15-1-digo-topic-focus-thetic",
-        "title": "Digo Left/Right Topic Dislocation, Clefted Subject Focus & VS",
+        "title": "Digo Topic Dislocation, Clefted Subject Focus & VS Thetic Clauses",
         "icon": "MessageSquare",
         "description": "Practice the exact Digo oral narrative sentences from Nicolle (2016, Ch. 20, Ex. 2–3, 7–8, 11, 22, 25) alongside comparative Suba-Simbiti ([ssc] EJ403) patterns.",
         "tips": "In Digo ([dig] E73), left-dislocated object topics trigger an object prefix on the verb ([Barabara] ndipho [a-ka-i-rich-a], Ex. 2), whereas topicalized objects omit the object prefix when the verb is focused ([Pesa] sino [hu-na-Ø-hew-a], Ex. 3). Continued subject topics are left-dislocated across a paragraph break (Ex. 8) but right-dislocated within a paragraph (Lakini [achinyamala] [mutu yuyu], Ex. 11). Post-verbal subjects in Digo are never focal—subject focus requires a cleft (iye ndi=ye..., Ex. 22), and thetic sentences are strictly VS (ratuluka fisi, Ex. 25).",
@@ -4178,7 +4150,7 @@ export const MIJIKENDA_UNITS: CourseUnit[] = [
             "source": "Thank you."
           },
           {
-            "target": "Udzamuka dze?",
+            "target": "Udzalamuka dze?",
             "source": "How are you this morning? (Kigiryama)."
           },
           {

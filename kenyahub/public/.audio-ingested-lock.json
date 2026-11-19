@@ -1,7 +1,7 @@
 {
   "ingestedAt": "2026-11-18T06:02:35.733457+00:00",
   "bucket": "kenyahub-audio",
-  "cdnBase": "[https://audio.kenyahub.me](https://audio.kenyahub.me)",
+  "cdnBase": "https://audio.kenyahub.me",
   "elapsedSeconds": 1063,
   "textEntriesAddedByLanguage": {
     "kikuyu": 8318,

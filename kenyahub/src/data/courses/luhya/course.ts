@@ -755,10 +755,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
-            "target": "omukhwe / omusatsa",
+            "target": "omusatsa / omusecha",
             "source": "Husband",
-            "pronunciation": "o-mukhwe / o-mu-satsa",
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
+            "pronunciation": "o-mu-satsa / o-mu-se-cha"
           },
           {
             "target": "mama",
@@ -773,15 +772,14 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language"
           },
           {
-            "target": "omwana (pl. abana / avana)",
-            "source": "child (pl. children)",
-            "pronunciation": "omwa-na",
-            "hint": "Lubukusu / Oluhya"
+            "target": "gukhu / kukhu",
+            "source": "Grandmother",
+            "pronunciation": "gu-khu / ku-khu"
           },
           {
-            "target": "Omw-ami; aw-ami / Omw-ami / Omw-ami. Omu-kuru",
-            "source": "Chief",
-            "pronunciation": "omw-ami"
+            "target": "kuka / guka",
+            "source": "Grandfather",
+            "pronunciation": "ku-ka / gu-ka"
           }
         ],
         "authoredExercises": [
@@ -827,17 +825,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Luhya (Luyia) term for \"Husband\": ___",
-            "correctAnswer": "omukhwe",
+            "correctAnswer": "omusatsa",
             "options": [
               "Omwami",
-              "omukhwe",
+              "omusatsa",
               "omulina",
               "omwana"
-            ],
-            "hint": "Wiktionary Appendix:Bantu Swadesh lists (Zone J30 Luhya) & Wikipedia Luhya language",
-            "acceptedAnswers": [
-              "omukhwe / omusatsa",
-              "omukhwe"
             ]
           }
         ]
@@ -851,9 +844,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Luhya (Luyia) (Oluluyia) in C. W. Hobley (1902 Eastern Uganda & 1903), Sir Harry Johnston (1902 & 1919 Sub-group A5) & Rev. N. Stam (1929 The Bahanga) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kakamega, Bungoma, Vihiga.",
         "words": [
           {
-            "target": "Omw-ana / Omw-ana; bab-ana. Om-soriri",
-            "source": "Son, boy",
-            "pronunciation": "omw-ana / omw-ana"
+            "target": "omusolili / omwana",
+            "source": "Son / Boy",
+            "pronunciation": "o-mu-so-li-li / omwa-na"
           },
           {
             "target": "senge",
@@ -907,7 +900,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Omw-ana / Omw-ana; bab-ana. Om-soriri\" in Luhya?",
+            "prompt": "What is the English meaning of \"omusolili / omwana\" in Luhya?",
             "correctAnswer": "Son",
             "options": [
               "Aunt",
@@ -950,7 +943,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "prompt": "How do you say \"Elder\" in Luhya?",
             "correctAnswer": "mukhofu",
             "options": [
-              "Omw-ana",
+              "omusolili",
               "senge",
               "oweha",
               "mukhofu"
@@ -963,7 +956,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "correctAnswer": "oweha",
             "options": [
               "oweha",
-              "Omw-ana",
+              "omusolili",
               "senge",
               "mukhofu"
             ],
@@ -972,11 +965,11 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each Luhya expression with its English meaning:",
-            "correctAnswer": "Omw-ana / Omw-ana; bab-ana. Om-soriri: Son, boy",
+            "correctAnswer": "omusolili / omwana: Son / Boy",
             "pairs": [
               {
-                "left": "Omw-ana / Omw-ana; bab-ana. Om-soriri",
-                "right": "Son, boy"
+                "left": "omusolili / omwana",
+                "right": "Son / Boy"
               },
               {
                 "left": "senge",
@@ -998,7 +991,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "correctAnswer": "umuchesa",
             "options": [
               "umuchesa",
-              "Omw-ana",
+              "omusolili",
               "senge",
               "mukhofu"
             ],
@@ -1426,12 +1419,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "obushi — amabele",
-            "source": "Honey — Milk."
+            "target": "Obushi nende amabele ni ebyokhulia bilayi.",
+            "source": "Honey and milk are good foods."
           },
           {
-            "target": "ebyokhulia — eshiamo",
-            "source": "Food — Fruit."
+            "target": "Eshiamo ni eshikhulia shilayi.",
+            "source": "Fruit is a good food."
           }
         ],
         "authoredExercises": [
@@ -1505,24 +1498,24 @@ export const LUHYA_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Luhya (Luyia) (Oluluyia) in C. W. Hobley (1902 Eastern Uganda & 1903), Sir Harry Johnston (1902 & 1919 Sub-group A5) & Rev. N. Stam (1929 The Bahanga) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kakamega, Bungoma, Vihiga.",
         "words": [
           {
-            "target": "Ama-furra / Ama-futa / Kimi-nawa . Kama-futa",
-            "source": "Fat, oil",
-            "pronunciation": "ama-furra / ama-futa / kimi-nawa kama-futa"
+            "target": "amafuta / kamafuta",
+            "source": "Fat / Oil",
+            "pronunciation": "a-ma-fu-ta / ka-ma-fu-ta"
           },
           {
-            "target": "In-zala / In-jala / In-jara, In-zala",
+            "target": "inzala / injala",
             "source": "Hunger",
-            "pronunciation": "in-zala / in-jala / in-jara in-zala"
+            "pronunciation": "in-za-la / in-ja-la"
           },
           {
-            "target": "Ama-duma",
+            "target": "amaduma",
             "source": "Maize",
-            "pronunciation": "ama-duma"
+            "pronunciation": "a-ma-du-ma"
           },
           {
-            "target": "Omw-engge. Ama-lua",
-            "source": "Palm wine, beer",
-            "pronunciation": "omw-engge ama-lua"
+            "target": "amalwa / omwenge",
+            "source": "Millet beer / Palm wine",
+            "pronunciation": "a-ma-lwa / omwe-nge"
           },
           {
             "target": "Ifukwa",
@@ -1530,9 +1523,9 @@ export const LUHYA_UNITS: CourseUnit[] = [
             "pronunciation": "i-fu-kwa"
           },
           {
-            "target": "-dia / -dia, -lia / -lya",
+            "target": "-lia / -lya / -dia",
             "source": "To eat",
-            "pronunciation": "dia / dia lia / lya"
+            "pronunciation": "li-a / lya / di-a"
           },
           {
             "target": "shilulu",
@@ -1551,49 +1544,34 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Hunger\" in Luhya?",
-            "correctAnswer": "In-zala",
+            "correctAnswer": "inzala",
             "options": [
-              "In-zala",
-              "Amatsi",
-              "Ama-furra",
-              "Amaduma"
-            ],
-            "hint": "Starts with \"In…\" (7 letters)",
-            "acceptedAnswers": [
-              "In-zala / In-jala / In-jara, In-zala",
-              "In-zala"
+              "inzala",
+              "amafuta",
+              "amaduma",
+              "amalwa"
             ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Maize\" in Luhya?",
-            "correctAnswer": "Amaduma",
+            "correctAnswer": "amaduma",
             "options": [
-              "Amatsi",
-              "Amaduma",
-              "Ama-furra",
-              "In-zala"
-            ],
-            "hint": "Starts with \"Am…\" (16 letters)",
-            "acceptedAnswers": [
-              "Ama-duma",
-              "Amaduma"
+              "amafuta",
+              "amaduma",
+              "amalwa",
+              "inzala"
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Luhya term for \"Palm wine\": ___",
-            "correctAnswer": "Omw-engge. Ama-lua",
+            "prompt": "Complete the Luhya term for \"Millet beer / Palm wine\": ___",
+            "correctAnswer": "amalwa",
             "options": [
-              "Amatsi",
-              "Ama-furra",
-              "Omw-engge. Ama-lua",
-              "In-zala"
-            ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A5: Lu-Wanga, Lu-Nyara, Lu-Masaba)",
-            "acceptedAnswers": [
-              "Omw-engge. Ama-lua / Omw-engge / Kama-rwa",
-              "Omw-engge. Ama-lua"
+              "amafuta",
+              "amaduma",
+              "amalwa",
+              "inzala"
             ]
           }
         ]
@@ -2026,12 +2004,12 @@ export const LUHYA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "amabanga — likumba",
-            "source": "Blood — Bone."
+            "target": "Amabanga nende amakumba bili mu mubili.",
+            "source": "Blood and bones are in the body."
           },
           {
-            "target": "liswi — omurwe",
-            "source": "Hair — Head."
+            "target": "Liswi lili khu murwe.",
+            "source": "Hair is on the head."
           }
         ],
         "authoredExercises": [
@@ -3164,7 +3142,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
       },
       {
         "id": "luhya-hobley-1903-11-2",
-        "title": "The 8 Bantu Kavirondo Muziro Totems, Livoya, Kiketi Naming",
+        "title": "The 8 Bantu Kavirondo Muziro Totems, Livoya & Kiketi Naming",
         "icon": "Shield",
         "description": "Practice the 8 clan totems (Muziro), Nyole rain-maker lineage, livoya tassels, quail & kiketi naming rites, and the Isira blood-feud taboo.",
         "tips": "Hobley (1903, p. 347) lists 8 Bantu Kavirondo Muziro totems: Imbongo (bushbuck — Kisesi of Awa-Wanga), Kuru/Ikulu (waterbuck — Marama, Tsoso, Isukha), Liusi (pigeon — Awa-Genya & Awa-Mrashi), Njofu (elephant — Awa-Shekwi of Nyole), Makuyi (black-and-white stork — Ketosh), Isunu (reedbuck — Ngaki of Tasoni), Imbongo/Ngawe (bushbuck — Ithako, E. Tsoso, S. Kabras), and Mbiakalo (cooked flying white ants — Kabras).",
@@ -3474,7 +3452,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
       },
       {
         "id": "luhya-stam-1929-13-2-sacrifices-religion-practitioners",
-        "title": "Kraal Sacrificial Stones (Fig. 2), 5 Special Sacrifices",
+        "title": "Kraal Sacrificial Stones, Special Sacrifices & Practitioners",
         "icon": "Sparkles",
         "description": "Master the Fig. 2 sacrificial stone layout, the 3-generation ancestral invocation, the 5 special sacrifices, Nasayi/Were prayers, 6 medical/magical practitioners, 2 ordeals, and 10 omens.",
         "tips": "In Fig. 2 (p. 153), two ancestral stones (amagina ake misambwa) stand 10 ft in front of the first wife's hut flanking the 4-ft lusambwa/lusiola pole (from obsolete samba 'build' → reversive sambula 'break down'), with the miniature khatsu khe misango hut to the left and two flat pathway stones (amagina ako lunganyi) outside the kraal entrance dedicated to Nasayi/Were.",
@@ -3613,7 +3591,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
       },
       {
         "id": "luhya-stam-1929-13-3-adoption-twins-marriage-totems-circumcision",
-        "title": "Makokha Adoption, Twins (Amakhwana), Marriage Rites, Musiro",
+        "title": "Makokha Adoption, Twins (Amakhwana), Marriage & Musiro Totems",
         "icon": "Heart",
         "description": "Practice the Luhanga terminology and customs for roadway foundling adoption, twin purification, 10-cattle dowry & wedding rites, Isaac's antelope totem, mutilations, and circumcision.",
         "tips": "All Bahanga have Isaac's antelope (Boöcercus eurycerus) as their totem (musiro, 'the thing abstained from'), while Bahanga of Marama have the eland; totems are patrilineal and do not prevent intermarriage (only blood kinship bars marriage). Women never eat chickens, guinea fowl, eggs, sheep, suckling goat, or lepidosiren mudfish.",
@@ -3775,7 +3753,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
       },
       {
         "id": "luhya-payne-2016-14-2-quantifiers-anticausative-bukusu-trc",
-        "title": "Logoori Quantifiers Vuri vs. -oosi, Luragooli Anticausative -Vk",
+        "title": "Logoori Quantifiers, Anticausative -Vk & Lubukusu Reciprocals",
         "icon": "Layers",
         "description": "Compare distributive vuri ('every') vs. modifier -oosi ('all/whole/any'), Luragooli telic anticausative -Vk, Lubukusu transitive reciprocals (-an + ba-b-eene khu b-eene), and Luhya discourse markers in Kenyan stand-up comedy.",
         "tips": "In Landman (2016, Ch. 12), vuri ('every') is a strictly distributive D-head, whereas -oosi ('all, whole, any') is an agreeing AP modifier that can co-occur with vuri: soom-i vuri ki-tabu ch-oosi ('I read every whole book', p. 224). In Safir & Selvanathan (2016, Ch. 25), Lubukusu Ba-saani ba-a-biyil-an-a khu-khil-a ba-khasi allows both sloppy ('more than women hate each other') and strict ('more than women hate the men') readings, proving ba-b-eene khu b-eene is a direct object.",
@@ -3831,7 +3809,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
       },
       {
         "id": "luhya-selvanathan-2019-lubukusu-iav-focus-purvis-1909",
-        "title": "Lubukusu IAV Focus Asymmetry & Purvis",
+        "title": "Lubukusu IAV Focus Asymmetry & Purvis (1909) Lumasaba",
         "icon": "Sparkles",
         "description": "Master Naga Selvanathan's (2019, Ch. 32, pp. 623–645, DOI: 10.5281/zenodo.3367191) case-based analysis of Lubukusu Immediate-After-Verb (IAV) focus alongside Rev. J. B. Purvis's (1909, Chs. XV–XVI, pp. 317–351) Lumasaba grammar, July 20, 1907 letter, and 3 Bagisu fables.",
         "tips": "In Lubukusu (Selvanathan 2019, pp. 625–636, consultant Justine Sikuku), a focused nominal DP must move to the Immediate-After-Verb (IAV) Spec,FP position (Wekesa a-a-ra embeba kalaha; *Wekesa a-a-ra kalaha embeba), whereas a focused non-nominal manner adjunct (kalaha 'slowly') only appears immediately after the verb when the object DP is dislocated with an object marker (Wekesa a-ki-ra kalaha ekikombe).",
@@ -3969,7 +3947,7 @@ export const LUHYA_UNITS: CourseUnit[] = [
           {
             "target": "Orio",
             "source": "Thank you",
-            "pronunciation": "oh-ree-oh moo-noh / nah-see-mah"
+            "pronunciation": "oh-ree-oh"
           },
           {
             "target": "murembi",

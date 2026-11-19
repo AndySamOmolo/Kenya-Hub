@@ -437,22 +437,157 @@ function generateReorder(word: WordPair, wordPool: WordPair[] = []): Exercise {
   };
 }
 
-/* ─── Main Generator ───────────────────────────────── */
+/* ─── Crown Level Progression Profiles (Levels 1–5) ── */
 
-const EXERCISE_WEIGHTS: { type: ExerciseType; weight: number; minWords: number }[] = [
-  { type: 'multiple_choice', weight: 2.5, minWords: 4 },
-  { type: 'translate_to_target', weight: 1.6, minWords: 1 },
-  { type: 'translate_to_english', weight: 1.6, minWords: 1 },
-  { type: 'fill_blank', weight: 2.0, minWords: 4 },
-  { type: 'match_pairs', weight: 1.2, minWords: 4 },
-  { type: 'word_bank', weight: 1.4, minWords: 1 },
-  { type: 'reorder', weight: 1.4, minWords: 1 },
-];
+export interface LevelProfile {
+  level: number;
+  label: string;
+  subtitle: string;
+  teachingMode: 'vocab' | 'sentences' | 'review_optional';
+}
+
+const LEVEL_PROFILES: Record<number, LevelProfile> = {
+  1: {
+    level: 1,
+    label: 'Foundations & Recognition',
+    subtitle: 'Learn core vocabulary and build recognition with guided choices.',
+    teachingMode: 'vocab',
+  },
+  2: {
+    level: 2,
+    label: 'Context & Active Recall',
+    subtitle: 'Apply words in context phrases and recall meanings without hints.',
+    teachingMode: 'sentences',
+  },
+  3: {
+    level: 3,
+    label: 'Phrase & Sentence Building',
+    subtitle: 'Construct phrases, reorder syntax, and bridge to target production.',
+    teachingMode: 'review_optional',
+  },
+  4: {
+    level: 4,
+    label: 'Active Target Production',
+    subtitle: 'Type translations in the target language with minimal scaffolding.',
+    teachingMode: 'review_optional',
+  },
+  5: {
+    level: 5,
+    label: 'Mastery Challenge',
+    subtitle: 'Full-skill fluency check across vocabulary and sentences.',
+    teachingMode: 'review_optional',
+  },
+};
+
+export function getLevelProfile(level: number = 1): LevelProfile {
+  const clamped = Math.max(1, Math.min(5, Math.round(level || 1)));
+  return LEVEL_PROFILES[clamped] || LEVEL_PROFILES[1];
+}
+
+/**
+ * Returns the teaching card deck tailored for a specific Crown Level (1–5):
+ * - Level 1: Core vocabulary words (capped to first 12 if a skill is large).
+ * - Level 2: Next unseen vocabulary batch if >12 words, OR clean context sentences
+ *   (so Level 2 teaches genuinely new context rather than repeating Level 1 cards).
+ * - Levels 3–5: Next unseen vocabulary batch if the skill is very large, otherwise
+ *   empty array so learners jump directly into higher-difficulty active practice.
+ */
+export function getTeachingDeckForLevel(
+  skill: CourseSkill,
+  level: number = 1
+): WordPair[] {
+  const clamped = Math.max(1, Math.min(5, Math.round(level || 1)));
+  const batchSize = 12;
+  const words = skill.words || [];
+
+  if (clamped === 1) {
+    return words.length > batchSize ? words.slice(0, batchSize) : words;
+  }
+
+  // If the skill has additional unseen vocabulary batches for this level, teach them
+  const batchOffset = (clamped - 1) * batchSize;
+  if (words.length > batchOffset) {
+    return words.slice(batchOffset, batchOffset + batchSize);
+  }
+
+  // On Level 2, teach clean sentences/context phrases if available (new material vs Level 1)
+  if (clamped === 2) {
+    const cleanSentences: WordPair[] = (skill.sentences || [])
+      .filter((s) => s.target && s.source && isCleanSentencePair(s.target, s.source))
+      .map((s) => ({
+        target: s.target,
+        source: s.source,
+        ...(s.pronunciation ? { pronunciation: s.pronunciation } : {}),
+        ...(s.audio ? { audio: s.audio } : {}),
+        ...(s.audioFile ? { audioFile: s.audioFile } : {}),
+        partOfSpeech: 'phrase',
+      }));
+    if (cleanSentences.length > 0) {
+      return cleanSentences.slice(0, batchSize);
+    }
+  }
+
+  // Levels 3–5 (and Level 2 when no extra batch/sentences exist): skip straight to practice
+  return [];
+}
+
+/* ─── Main Generator (Level-Aware + Zero-Repeat Queue) ─ */
+
+const LEVEL_EXERCISE_WEIGHTS: Record<
+  number,
+  { type: ExerciseType; weight: number; minWords: number }[]
+> = {
+  1: [
+    { type: 'multiple_choice', weight: 3.4, minWords: 4 },
+    { type: 'match_pairs', weight: 2.0, minWords: 4 },
+    { type: 'fill_blank', weight: 2.0, minWords: 4 },
+    { type: 'translate_to_english', weight: 1.2, minWords: 1 },
+    { type: 'word_bank', weight: 0.8, minWords: 1 },
+  ],
+  2: [
+    { type: 'translate_to_english', weight: 2.6, minWords: 1 },
+    { type: 'fill_blank', weight: 2.4, minWords: 4 },
+    { type: 'word_bank', weight: 2.2, minWords: 1 },
+    { type: 'match_pairs', weight: 1.5, minWords: 4 },
+    { type: 'multiple_choice', weight: 1.0, minWords: 4 },
+    { type: 'reorder', weight: 1.2, minWords: 1 },
+  ],
+  3: [
+    { type: 'word_bank', weight: 2.6, minWords: 1 },
+    { type: 'reorder', weight: 2.4, minWords: 1 },
+    { type: 'translate_to_target', weight: 2.2, minWords: 1 },
+    { type: 'fill_blank', weight: 1.8, minWords: 4 },
+    { type: 'translate_to_english', weight: 1.4, minWords: 1 },
+    { type: 'match_pairs', weight: 1.0, minWords: 4 },
+  ],
+  4: [
+    { type: 'translate_to_target', weight: 3.4, minWords: 1 },
+    { type: 'reorder', weight: 2.4, minWords: 1 },
+    { type: 'word_bank', weight: 2.0, minWords: 1 },
+    { type: 'translate_to_english', weight: 1.6, minWords: 1 },
+    { type: 'fill_blank', weight: 1.0, minWords: 4 },
+  ],
+  5: [
+    { type: 'translate_to_target', weight: 3.8, minWords: 1 },
+    { type: 'reorder', weight: 2.6, minWords: 1 },
+    { type: 'fill_blank', weight: 1.6, minWords: 4 },
+    { type: 'word_bank', weight: 1.6, minWords: 1 },
+    { type: 'translate_to_english', weight: 1.4, minWords: 1 },
+  ],
+};
+
+function rotateArray<T>(arr: T[], offset: number): T[] {
+  if (arr.length <= 1) return [...arr];
+  const shift = ((offset % arr.length) + arr.length) % arr.length;
+  return [...arr.slice(shift), ...arr.slice(0, shift)];
+}
 
 export function generateExercises(
   skill: CourseSkill,
-  count: number = EXERCISES_PER_LESSON
+  count: number = EXERCISES_PER_LESSON,
+  level: number = 1
 ): Exercise[] {
+  const clampedLevel = Math.max(1, Math.min(5, Math.round(level || 1)));
   const filteredWords = skill.words.filter((w) => isCleanLexicalWordPair(w.target, w.source));
   const allWords = filteredWords.length >= 4 ? filteredWords : [...skill.words];
 
@@ -463,32 +598,79 @@ export function generateExercises(
       target: s.target,
       source: s.source,
       ...(s.pronunciation ? { pronunciation: s.pronunciation } : {}),
+      ...(s.audio ? { audio: s.audio } : {}),
+      ...(s.audioFile ? { audioFile: s.audioFile } : {}),
     }));
 
   const allItems = [...allWords, ...sentenceItems];
+  if (allItems.length === 0) return [];
 
-  // Cap static authoredExercises to at most half the lesson (~7-8 items) and shuffle them
-  // so every Crown Level 1..5 mixes in dynamic typing, match_pairs, and word_bank exercises.
-  const validAuthored = shuffle((skill.authoredExercises || []).filter(isValidExercise));
-  const authoredCap = allItems.length >= 4 ? Math.min(8, Math.ceil(count * 0.5)) : count;
-  const exercises = validAuthored.slice(0, authoredCap);
+  // Smart cap so compact skills (e.g. 4–5 words) never loop the same word 4 times
+  const targetCount = Math.min(count, Math.max(6, Math.min(count, allItems.length * 2)));
+
+  // Deterministic level-sliced authoredExercises so Level 1 & Level 2 don't repeat identical authored questions
+  const validAuthored = (skill.authoredExercises || []).filter(isValidExercise);
+  const authoredCap =
+    allItems.length >= 4
+      ? Math.min(clampedLevel <= 2 ? 4 : 3, Math.floor(targetCount * 0.35))
+      : targetCount;
+  const authoredSliceStart =
+    validAuthored.length > 0 ? ((clampedLevel - 1) * Math.max(1, authoredCap)) % validAuthored.length : 0;
+  const rotatedAuthored = rotateArray(validAuthored, authoredSliceStart);
+  // On higher levels (3-5), deprioritize basic multiple_choice authored questions so progression feels harder
+  const levelFilteredAuthored =
+    clampedLevel >= 4
+      ? rotatedAuthored.filter((ex) => ex.type !== 'multiple_choice')
+      : rotatedAuthored;
+  const exercises: Exercise[] = levelFilteredAuthored.slice(0, authoredCap);
+
   const usedExercises = new Set(
-    exercises.map(exercise => `${exercise.type}:${exercise.prompt}:${exercise.correctAnswer}`)
+    exercises.map((exercise) => `${exercise.type}:${exercise.prompt}:${exercise.correctAnswer}`)
   );
+  const usedTypesByWord = new Map<string, Set<ExerciseType>>();
+  for (const ex of exercises) {
+    const k = ex.sourceWord?.target?.trim().toLowerCase();
+    if (k) {
+      if (!usedTypesByWord.has(k)) usedTypesByWord.set(k, new Set());
+      usedTypesByWord.get(k)!.add(ex.type);
+    }
+  }
 
-  if (exercises.length >= count || allItems.length === 0) return exercises;
+  if (exercises.length >= targetCount) return exercises.slice(0, targetCount);
 
-  const eligible = EXERCISE_WEIGHTS.filter((e) => allItems.length >= e.minWords);
+  const weights = LEVEL_EXERCISE_WEIGHTS[clampedLevel] || LEVEL_EXERCISE_WEIGHTS[1];
+  const eligible = weights.filter((e) => allItems.length >= e.minWords);
   const totalWeight = eligible.reduce((s, e) => s + e.weight, 0);
 
-  const maxAttempts = (count - exercises.length) * 5;
+  // Build level-rotated no-repeat round-robin queues so EVERY unique word/sentence is practiced
+  // once before ANY word can appear a second time (and Level 2 starts on different words than Level 1).
+  const baseLexical = rotateArray(
+    allWords.length >= 4 ? allWords : allItems,
+    (clampedLevel - 1) * Math.max(2, Math.floor(allWords.length / 3))
+  );
+  const baseSentences = rotateArray(sentenceItems, clampedLevel - 1);
+
+  let lexicalQueue: WordPair[] = shuffle(baseLexical);
+  let sentenceQueue: WordPair[] = shuffle(baseSentences);
+  let matchPairsCount = exercises.filter((e) => e.type === 'match_pairs').length;
+
+  const popNextWord = (preferSentence: boolean): WordPair => {
+    if (preferSentence && sentenceItems.length > 0) {
+      if (sentenceQueue.length === 0) sentenceQueue = shuffle(baseSentences);
+      return sentenceQueue.shift()!;
+    }
+    if (lexicalQueue.length === 0) lexicalQueue = shuffle(baseLexical);
+    return lexicalQueue.shift()!;
+  };
+
+  const maxAttempts = (targetCount - exercises.length) * 8;
   let attempts = 0;
 
-  while (exercises.length < count && attempts < maxAttempts) {
+  while (exercises.length < targetCount && attempts < maxAttempts) {
     attempts++;
 
     let r = Math.random() * totalWeight;
-    let selectedType: ExerciseType = 'multiple_choice';
+    let selectedType: ExerciseType = eligible[0]?.type || 'multiple_choice';
     for (const e of eligible) {
       r -= e.weight;
       if (r <= 0) {
@@ -497,11 +679,22 @@ export function generateExercises(
       }
     }
 
-    // Separate lexical pool vs sentence pool so 15-word sentences are never paired against 1-word distractors
-    const useSentencePool =
-      (selectedType === 'reorder' || selectedType === 'word_bank') && sentenceItems.length > 0;
-    const pool = useSentencePool ? [...sentenceItems, ...allWords] : allWords.length >= 4 ? allWords : allItems;
-    const word = pickOne(pool);
+    // Cap match_pairs to at most 1 per lesson (2 on Level 1 if large skill)
+    if (selectedType === 'match_pairs' && matchPairsCount >= (clampedLevel === 1 && allWords.length >= 10 ? 2 : 1)) {
+      continue;
+    }
+
+    const preferSentence =
+      (selectedType === 'reorder' || selectedType === 'word_bank' || (clampedLevel >= 2 && selectedType === 'translate_to_english')) &&
+      sentenceItems.length > 0;
+    const word = popNextWord(preferSentence);
+    const wordKey = word.target.trim().toLowerCase();
+
+    // Never repeat the exact same exercise type on the same word inside one lesson
+    if (selectedType !== 'match_pairs' && usedTypesByWord.get(wordKey)?.has(selectedType)) {
+      continue;
+    }
+
     const sameTierPool =
       getPrimaryForm(word.target).split(/\s+/).length >= 4 && sentenceItems.length >= 4
         ? sentenceItems
@@ -546,15 +739,22 @@ export function generateExercises(
       const key = `${exercise.type}:${exercise.prompt}:${exercise.correctAnswer}`;
       if (usedExercises.has(key)) continue;
       usedExercises.add(key);
+      if (exercise.type === 'match_pairs') {
+        matchPairsCount++;
+      } else {
+        if (!usedTypesByWord.has(wordKey)) usedTypesByWord.set(wordKey, new Set());
+        usedTypesByWord.get(wordKey)!.add(exercise.type);
+      }
       exercises.push(exercise);
     }
   }
 
-  // Smooth pedagogical pacing: place 2 warm-up recognition questions first, then interleave remaining types
+  // Smooth pedagogical pacing + prevent back-to-back exercises on the exact same word
   const recognition = exercises.filter((e) => e.type === 'multiple_choice' || e.type === 'fill_blank');
   const activeRecall = exercises.filter((e) => e.type !== 'multiple_choice' && e.type !== 'fill_blank');
-  const warmup = recognition.slice(0, 2);
-  const restRec = recognition.slice(2);
+  const warmupCount = clampedLevel === 1 ? 2 : clampedLevel === 2 ? 1 : 0;
+  const warmup = recognition.slice(0, warmupCount);
+  const restRec = recognition.slice(warmupCount);
   const interleaved: Exercise[] = [...warmup];
   let iRec = 0;
   let iAct = 0;
@@ -562,6 +762,23 @@ export function generateExercises(
     if (iAct < activeRecall.length) interleaved.push(activeRecall[iAct++]);
     if (iRec < restRec.length) interleaved.push(restRec[iRec++]);
   }
+
+  // Final pass: separate any adjacent exercises targeting the exact same word
+  for (let i = 1; i < interleaved.length; i++) {
+    const prevKey = interleaved[i - 1].sourceWord?.target?.trim().toLowerCase();
+    const curKey = interleaved[i].sourceWord?.target?.trim().toLowerCase();
+    if (prevKey && curKey && prevKey === curKey) {
+      const swapIdx = interleaved.findIndex(
+        (candidate, j) =>
+          j > i &&
+          candidate.sourceWord?.target?.trim().toLowerCase() !== prevKey
+      );
+      if (swapIdx !== -1) {
+        [interleaved[i], interleaved[swapIdx]] = [interleaved[swapIdx], interleaved[i]];
+      }
+    }
+  }
+
   return interleaved;
 }
 

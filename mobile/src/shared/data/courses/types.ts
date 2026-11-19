@@ -76,6 +76,7 @@ export interface SentencePair {
   source: string;         // English translation
   pronunciation?: string; // Optional phonetic guide
   audio?: string;
+  audioFile?: string | null; // Optional verified HTTPS recording URL
 }
 
 /* ─── Exercise Types ────────────────────────────────────── */

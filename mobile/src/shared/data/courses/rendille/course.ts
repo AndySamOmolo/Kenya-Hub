@@ -1793,12 +1793,6 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan cushitic corpus"
           },
           {
-            "target": "sii",
-            "source": "To give",
-            "pronunciation": "sii",
-            "hint": "Verified comparative entry across Kenyan cushitic corpus"
-          },
-          {
             "target": "kari",
             "source": "To cook",
             "pronunciation": "ka-ri",
@@ -2062,18 +2056,13 @@ export const RENDILLE_UNITS: CourseUnit[] = [
           },
           {
             "target": "gúu",
-            "source": "Year",
+            "source": "Year / Long rainy season",
             "pronunciation": "guu"
           },
           {
             "target": "maanta (saanta)",
             "source": "Today",
             "pronunciation": "mahn-tah"
-          },
-          {
-            "target": "guu",
-            "source": "Rainy season (long rains)",
-            "pronunciation": "guu"
           },
           {
             "target": "nabhai",
@@ -2128,7 +2117,9 @@ export const RENDILLE_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"gúu\"",
             "correctAnswer": "Year",
             "acceptedAnswers": [
-              "Year"
+              "Year",
+              "Year / Long rainy season",
+              "Long rainy season"
             ],
             "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
           },
@@ -2154,8 +2145,8 @@ export const RENDILLE_UNITS: CourseUnit[] = [
                 "right": "Today"
               },
               {
-                "left": "guu",
-                "right": "Rainy season"
+                "left": "nabhai",
+                "right": "Long dry season"
               }
             ]
           }

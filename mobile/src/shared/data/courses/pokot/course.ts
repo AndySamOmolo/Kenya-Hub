@@ -48,13 +48,13 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "Sĕra! (Sĕre!)",
             "source": "Thank you!",
-            "pronunciation": "se-ra / ko-ro-ton",
+            "pronunciation": "se-ra / se-re",
             "hint": "Beech (1911, pp. 92, 96, 119, 143)"
           },
           {
             "target": "Korôton! (resp. I-rôt-enyi!)",
             "source": "Good-bye! (lit. I have gone! — Thou art going!)",
-            "pronunciation": "se-ra / ko-ro-ton",
+            "pronunciation": "ko-ro-ton",
             "hint": "Beech (1911, pp. 92, 96, 119, 143)"
           },
           {
@@ -222,7 +222,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Users",
         "description": "Master core family, kinship, and household terms documented in the primary historical vocabularies.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "chito (pl. pich) / muren (warrior)",
@@ -399,18 +399,18 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Heart",
         "description": "Explore social titles, marriage terms, and community relationships from the ethnographic records.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "Torôrut",
             "source": "Supreme Sky God",
-            "pronunciation": "to-ro-rut / a-siis",
+            "pronunciation": "to-ro-rut",
             "hint": "Beech (1911, p. 19) — Suk Celestial Pantheon"
           },
           {
             "target": "Asiis",
             "source": "Younger brother (the Sun)",
-            "pronunciation": "to-ro-rut / a-siis",
+            "pronunciation": "a-siis",
             "hint": "Beech (1911, p. 19) — Suk Celestial Pantheon"
           },
           {
@@ -433,7 +433,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "mŭnuñg",
-            "source": "Baby ( of either sex )",
+            "source": "Baby (of either sex)",
             "pronunciation": "mu-nungg",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
@@ -457,7 +457,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "ôr",
-            "source": "Clan ( family )",
+            "source": "Clan (family)",
             "pronunciation": "or",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           }
@@ -504,7 +504,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Pokot (Pökoot) term for \"Baby ( of either sex )\": ___",
+            "prompt": "Complete the Pokot (Pökoot) term for \"Baby (of either sex)\": ___",
             "correctAnswer": "mŭnuñg",
             "options": [
               "mŭnuñg",
@@ -536,7 +536,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Hash",
         "description": "Count fluently and form ordinal numbers using historical numeral tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "àkɔ́ɔ́ŋkɔ̀ (akong'o / okongo)",
@@ -547,7 +547,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "oɣë̀ë̀ŋ / òdë̀ë̀ŋ (oghien / odeng')",
             "source": "Two",
-            "pronunciation": "o-ɣeeng / o-deeng",
+            "pronunciation": "o-gheeng / o-deeng",
             "hint": "Beech (1911, pp. 66–68) & Wikipedia Nilotic_languages — Pökoot (Suk)"
           },
           {
@@ -571,25 +571,25 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀ (mut ngô okongo, 5 + 1)",
             "source": "Six",
-            "pronunciation": "muut ngɡo a-koongo",
+            "pronunciation": "muut ngo a-koongo",
             "hint": "Beech (1911, pp. 66–68) — Quinary finger-counting system"
           },
           {
             "target": "múut ŋɡɔ́ òdë̀ë̀ŋ (mut ngô oghien, 5 + 2)",
             "source": "Seven",
-            "pronunciation": "muut ngɡo o-deeng",
+            "pronunciation": "muut ngo o-deeng",
             "hint": "Beech (1911, pp. 66–68) — Pökoot (Suk)"
           },
           {
             "target": "múut ŋɡɔ́ sä́mä́k (mut ngô somok, 5 + 3)",
             "source": "Eight",
-            "pronunciation": "muut ngɡo sa-mak",
+            "pronunciation": "muut ngo sa-mak",
             "hint": "Beech (1911, pp. 66–68) — Pökoot (Suk)"
           },
           {
             "target": "múut ŋɡɔ́ àŋwân (mut ngô angwan, 5 + 4)",
             "source": "Nine",
-            "pronunciation": "muut ngɡo angwan",
+            "pronunciation": "muut ngo angwan",
             "hint": "Beech (1911, pp. 66–68) — Pökoot (Suk)"
           }
         ],
@@ -709,7 +709,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Scale",
         "description": "Learn market exchange, weights, measures, and value expressions.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "támàn (taman)",
@@ -908,7 +908,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Soup",
         "description": "Learn traditional dishes, grains, culinary tools, and food preparation verbs.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "kipketin (kh'pketin)",
@@ -937,13 +937,13 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "omisyö",
             "source": "Food",
-            "pronunciation": "o-misyo / ma-tai",
+            "pronunciation": "o-mi-syo",
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
           },
           {
             "target": "matai",
             "source": "Millet",
-            "pronunciation": "o-misyo / ma-tai",
+            "pronunciation": "ma-tai",
             "hint": "Beech (1911) — The Suk: Their Language and Folklore"
           },
           {
@@ -953,7 +953,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "Pogh-po-maʻ",
-            "source": "Hot water. ( Lit. Water-of-fire.)",
+            "source": "Hot water (lit. water-of-fire)",
             "pronunciation": "pogh-po-ma'",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (Useful & Idiomatic Phrases)"
           },
@@ -991,7 +991,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Stingless bee honey\"",
             "correctAnswer": "lowiana",
             "acceptedAnswers": [
-              "lowiana",
               "lowiana"
             ],
             "hint": "Starts with \"lo\""
@@ -1001,7 +1000,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"che\"",
             "correctAnswer": "Milk",
             "acceptedAnswers": [
-              "Milk",
               "Milk"
             ],
             "hint": "Review Staple Foods, Cookery & Beverages"
@@ -1041,7 +1039,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Tractor",
         "description": "Study indigenous crops, planting seasons, and livestock terminology.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "Rir-ei oyu omisioʻ?",
@@ -1057,7 +1055,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "ñgwan",
-            "source": "Bitter ( adj. )",
+            "source": "Bitter (adj.)",
             "pronunciation": "nggwan",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
@@ -1075,7 +1073,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "sĕt",
-            "source": "Calabash, a ( for water )",
+            "source": "Calabash (for water)",
             "pronunciation": "set",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
@@ -1087,13 +1085,13 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "rel",
-            "source": "Clear ( of water or sky )",
+            "source": "Clear (of water or sky)",
             "pronunciation": "rel",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           },
           {
             "target": "pagh (coll.)",
-            "source": "Corn ( in general )",
+            "source": "Corn (in general)",
             "pronunciation": "pagh",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           }
@@ -1141,13 +1139,13 @@ export const POKOT_UNITS: CourseUnit[] = [
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
             "acceptedAnswers": [
-              "Bitter ( adj. )",
+              "Bitter (adj.)",
               "Bitter"
             ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "How do you say \"Bitter ( adj. )\" in Pokot?",
+            "prompt": "How do you say \"Bitter (adj.)\" in Pokot?",
             "correctAnswer": "ñgwan",
             "options": [
               "Rir-ei oyu omisioʻ?",
@@ -1188,7 +1186,7 @@ export const POKOT_UNITS: CourseUnit[] = [
               },
               {
                 "left": "ñgwan, pl. ñgwan-ech",
-                "right": "Bitter ( adj. )"
+                "right": "Bitter (adj.)"
               },
               {
                 "left": "ki-war / ke-ip",
@@ -1208,7 +1206,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             ],
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)",
             "acceptedAnswers": [
-              "mwai'-pa-cheʻ",
               "mwai'-pa-cheʻ"
             ]
           }
@@ -1220,7 +1217,7 @@ export const POKOT_UNITS: CourseUnit[] = [
     "id": "pokot-unit-5",
     "unitNumber": 5,
     "title": "Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
+    "description": "Master nature, landscape, flora & East African wildlife in Pokot (Pökoot) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "PawPrint",
     "color": "#7C3AED",
     "skills": [
@@ -1230,7 +1227,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "CloudRain",
         "description": "Describe the natural environment, rivers, mountains, and weather phenomena.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "peet (assis)",
@@ -1253,7 +1250,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "pʉːɣ (pogh / poy)",
             "source": "Water",
-            "pronunciation": "pʉɣ",
+            "pronunciation": "pogh",
             "hint": "Beech (1911) & van Otterloo (1979) East Pokot"
           },
           {
@@ -1292,7 +1289,7 @@ export const POKOT_UNITS: CourseUnit[] = [
             "source": "Day — Night."
           },
           {
-            "target": "kokel — pʉːɣ",
+            "target": "kokel — pogh",
             "source": "Star — Water."
           }
         ],
@@ -1324,7 +1321,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"kokel\"",
             "correctAnswer": "Star",
             "acceptedAnswers": [
-              "Star",
               "Star"
             ],
             "hint": "Review Sky, Weather, Rivers & Landforms"
@@ -1364,7 +1360,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "PawPrint",
         "description": "Identify indigenous mammals, birds, insects, and botanical species recorded in the primary texts.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "mat (maat)",
@@ -1557,7 +1553,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Activity",
         "description": "Name anatomical terms, senses, and bodily states from comparative lexical tables.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "koːŋ (kong', pl. konyen)",
@@ -1598,13 +1594,13 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "kisʉn (kisun)",
             "source": "Blood",
-            "pronunciation": "kisʉn",
+            "pronunciation": "ki-sun",
             "hint": "Beech (1911) & van Otterloo (1979)"
           },
           {
             "target": "kaːwaʔ (kawa, pl. kawok)",
             "source": "Bone",
-            "pronunciation": "ka-waʔ",
+            "pronunciation": "ka-wa",
             "hint": "Beech (1911) & van Otterloo (1979)"
           },
           {
@@ -1730,7 +1726,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Hospital",
         "description": "Master expressions for illness, healing remedies, protection, and safety.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "egh (eghit, pl. eghin)",
@@ -1782,7 +1778,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           },
           {
             "target": "korôt",
-            "source": "Back ( of a human being or animal )",
+            "source": "Back (of a human being or animal)",
             "pronunciation": "ko-rot",
             "hint": "Mervyn W. H. Beech (1911) The Suk: Their Language and Folklore (English-Suk Vocabulary)"
           }
@@ -1931,7 +1927,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Zap",
         "description": "Conjugate high-frequency transitive and intransitive verbs of motion, speech, and work.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "keam",
@@ -2048,7 +2044,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "RefreshCw",
         "description": "Build complex meanings using verbal extensions and grammatical particles.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "kesow (sow)",
@@ -2140,7 +2136,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"kenget\"",
             "correctAnswer": "To know",
             "acceptedAnswers": [
-              "To know",
               "To know"
             ],
             "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
@@ -2190,7 +2185,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Clock",
         "description": "Track time of day, lunar phases, monsoon/rainy seasons, and traditional months.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "yĕ (kīleʻ)",
@@ -2266,7 +2261,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Day\"",
             "correctAnswer": "asis, pl. ōsis",
             "acceptedAnswers": [
-              "asis, pl. ōsis",
               "asis, pl. ōsis"
             ],
             "hint": "Starts with \"as\""
@@ -2276,7 +2270,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"tôma-nye kio-meneñg\"",
             "correctAnswer": "Soon",
             "acceptedAnswers": [
-              "Soon",
               "Soon"
             ],
             "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
@@ -2316,7 +2309,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Droplets",
         "description": "Navigate roads, river crossings, compass points, and caravan routes.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "osis-cha-chañg (lit. on many days)",
@@ -2366,7 +2359,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "osis-cha-chañg — kainy-is tokol",
+            "target": "osis-cha-chañg — kainy-is tokol (with neg.)",
             "source": "Often — Never."
           },
           {
@@ -2402,7 +2395,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"ŏghaʻ\"",
             "correctAnswer": "Night",
             "acceptedAnswers": [
-              "Night",
               "Night"
             ],
             "hint": "Review Travel, Directions, Paths & Landmarks"
@@ -2452,7 +2444,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "CheckCircle2",
         "description": "Practice authentic questions, answers, and idiomatic expressions from historical phrasebooks.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "Tiangoi!",
@@ -2547,7 +2539,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"kokwa\"",
             "correctAnswer": "Village Council of Elders",
             "acceptedAnswers": [
-              "Village Council of Elders",
               "Village Council of Elders"
             ],
             "hint": "Review Everyday Conversational Phrases & Questions"
@@ -2587,7 +2578,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Handshake",
         "description": "Converse naturally in home, village, market, and travel settings.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "longet (pl. longok)",
@@ -2681,7 +2672,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"koto\"",
             "correctAnswer": "Arrow",
             "acceptedAnswers": [
-              "Arrow",
               "Arrow"
             ],
             "hint": "Review Hospitality, Requests & Social Discourse"
@@ -2731,7 +2721,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "Award",
         "description": "Study verbatim oral wisdom, riddles, and moral aphorisms from the historical collections.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "I-lend-ei-ne? / I-lend-enyi-ne?",
@@ -2800,7 +2790,6 @@ export const POKOT_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"What did he say to you?\"",
             "correctAnswer": "Ka-len-j-i nyi ne?",
             "acceptedAnswers": [
-              "Ka-len-j-i nyi ne?",
               "Ka-len-j-i nyi ne?"
             ],
             "hint": "Starts with \"Ka\""
@@ -2828,7 +2817,7 @@ export const POKOT_UNITS: CourseUnit[] = [
         "icon": "ShieldCheck",
         "description": "Master specialized cultural, legal, musical, and historical vocabulary.",
         "tips": "Every lexical entry in this module is drawn verbatim from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore). Pay close attention to noun class prefixes, root consonants, and contextual usage.",
-        "culturalNote": "Primary historical documentation for Pokot (Pökoot) (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
+        "culturalNote": "Primary historical documentation for Pokot (Pökoot / Kimukon) in Sir Harry Johnston (1902), Hon. K. R. Dundas (1910) & Mervyn W. H. Beech (1911 The Suk: Their Language and Folklore) preserves pre-1930 phonological, grammatical, and ethnographic usage across West Pokot, Baringo.",
         "words": [
           {
             "target": "Mwô-w-anan. / Mwô-chin-anan",
@@ -3647,7 +3636,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "Tokwes!",
             "source": "Greeting on entering a village: Hail! (and reply)",
-            "pronunciation": "tok-wes / ei-a"
+            "pronunciation": "tok-wes"
           },
           {
             "target": "Chamke!",
@@ -3691,7 +3680,7 @@ export const POKOT_UNITS: CourseUnit[] = [
           {
             "target": "oɣë̀ë̀ŋ",
             "source": "Two",
-            "pronunciation": "o-deeng"
+            "pronunciation": "o-gheeng"
           },
           {
             "target": "múut ŋɡɔ́ àkɔ́ɔ́ŋɔ̀",

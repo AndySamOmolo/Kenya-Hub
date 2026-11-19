@@ -13,7 +13,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Dholuo (Luo) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Some Fathers of St. Joseph's Society / Mill-Hill Fathers (1920–1921 \"A Handbook of the Kavirondo Language, Containing the Grammar and Phraseology\", Caxton Printing & Publishing Works, Nairobi), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0)).",
   "categories": [
     {
@@ -2000,6 +2000,11 @@
           "english": "The 15 Nilotic Kavirondo (Dholuo) Clans Recorded by Roscoe (1915, p. 276)",
           "translation": "Group I: Dongo, Nyuto, Orando, Kwamudi, Nyamwegi, Ndalo, Ogonyo, Nyakwal; Group II: Pwonja, Hadedi, Waranja, Rateng, Wango, Menya, Nyameda",
           "context": "Rev. John Roscoe & Right Rev. J. J. Willis (1915) The Northern Bantu — Part VI Chs. XXV–XXVI: Nilotic Kavirondo Clans & Terms of Relationship (pp. 276, 292–293, Public Domain)"
+        },
+        {
+          "english": "brave man / brave men (Dholuo)",
+          "translation": "t̪ʊɔn (sg.) / t̪uondi (pl.)",
+          "context": "Dholuo stem-level dental harmony & plural consonant mutation (6b, 27, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
         }
       ]
     },
@@ -2938,6 +2943,21 @@
           "english": "formerly, early",
           "translation": "Cho-o-o-o-n",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+        },
+        {
+          "english": "to feel pins and needles (Dholuo)",
+          "translation": "nd̪id̪o",
+          "context": "Dholuo dental consonant harmony example with prenasalized dental stop (6a, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "breast (Dholuo)",
+          "translation": "t̪uno",
+          "context": "Dholuo neutral alveolar nasal with dental stop (6b, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "deaf, to be stopped up (Dholuo)",
+          "translation": "dino",
+          "context": "Dholuo alveolar stop with alveolar nasal (6b, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
         }
       ]
     },
@@ -4088,6 +4108,11 @@
           "english": "monkey",
           "translation": "Ong'er",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+        },
+        {
+          "english": "snake / snakes (Dholuo)",
+          "translation": "t̪uol (sg.) / t̪uonde (pl.)",
+          "context": "Dholuo plural consonant mutation creating disharmonic surface form (27, 35, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
         }
       ]
     },
@@ -9140,6 +9165,11 @@
           "english": "house, forms the plural Udi",
           "translation": "Ot",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+        },
+        {
+          "english": "purse (Dholuo)",
+          "translation": "ndede",
+          "context": "Dholuo alveolar consonant harmony example (6a, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
         }
       ]
     },
@@ -11885,6 +11915,26 @@
           "english": "to vomit",
           "translation": "Ng'ogo",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+        },
+        {
+          "english": "to forge (Dholuo)",
+          "translation": "t̪ed̪o",
+          "context": "Dholuo dental consonant harmony example (6a, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "to suckle (Dholuo)",
+          "translation": "d̪ɔd̪ɔ",
+          "context": "Dholuo dental consonant harmony example (6a, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "to cook (Dholuo)",
+          "translation": "tedo",
+          "context": "Dholuo alveolar consonant harmony example (6a, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "to balance (Dholuo)",
+          "translation": "diedo",
+          "context": "Dholuo alveolar consonant harmony example (6a, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
         }
       ]
     },
@@ -12349,6 +12399,16 @@
           "pronunciation": "ka",
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)",
           "audioFile": "https://audio.kenyahub.me/audio/luo/ka.opus"
+        },
+        {
+          "english": "small (Dholuo)",
+          "translation": "tɪn",
+          "context": "Dholuo alveolar stop with alveolar nasal (6b, citing Tucker 1994) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
+        },
+        {
+          "english": "Dholuo coronal stop inventory (alveolar vs. dental harmony)",
+          "translation": "Alveolar: t, d, nd, n; Dental: t̪, d̪, nd̪ (stem-level dental harmony bars dental+alveolar stops; nasal n is neutral)",
+          "context": "Dholuo coronal phonology summary (5, §4.1) • Mackenzie, S. (2016) \"Consonant harmony in Nilotic: contrastive specifications and Stratal OT\", Glossa: a journal of general linguistics 1(1): 12, pp. 1–38 (https://www.glossa-journal.org/article/id/4823/, DOI: https://doi.org/10.5334/gjgl.8, CC-BY-4.0)"
         }
       ]
     },
@@ -78858,8 +78918,8 @@
       ]
     }
   ],
-  "source": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921); Rev. John Roscoe & Bishop J. J. Willis (1915) The Northern Bantu — Nilotic Kavirondo Kinship & Clans (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
+  "source": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921); Rev. John Roscoe & Bishop J. J. Willis (1915) The Northern Bantu — Nilotic Kavirondo Kinship & Clans (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Dholuo Corpus (Mackenzie 2016, CC-BY-4.0)",
   "isoCode": "luo",
   "glottocode": "luoo1235",
-  "totalEntries": 14960
+  "totalEntries": 14972
 }

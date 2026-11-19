@@ -2109,7 +2109,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "pronunciation": "ka-bi-si"
           },
           {
-            "target": "mundu, pl. andu",
+            "target": "mundu (pl. andu)",
             "source": "Man (pl. People)",
             "pronunciation": "mundu"
           }
@@ -2179,7 +2179,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
                 "right": "Boy"
               },
               {
-                "left": "mundu, pl. andu",
+                "left": "mundu (pl. andu)",
                 "right": "Man"
               }
             ]
@@ -3092,7 +3092,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "target": "Mũomo",
             "source": "Mouth",
             "pronunciation": "muo-mo",
-            "hint": "Hinde: moomo"
+            "hint": "Hinde: moomo",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/muomo.opus"
           },
           {
             "target": "Ĩyo",
@@ -5655,6 +5656,472 @@ export const KAMBA_UNITS: CourseUnit[] = [
           {
             "target": "Tũĩ na masaa ĩkũmi ma kyalo kĩĩ.",
             "source": "We have ten hours for this journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kamba-native-audio-listening",
+    "unitNumber": 20,
+    "title": "Native Audio & Listening Practice",
+    "description": "Develop authentic listening comprehension with 24 verified native Kĩkamba recordings spanning everyday greetings, questions, directions, and conversational phrases.",
+    "icon": "🎧",
+    "color": "#FF9800",
+    "skills": [
+      {
+        "id": "kamba-native-audio-everyday-expressions",
+        "title": "Everyday Native Expressions & Hospitality",
+        "icon": "🎙️",
+        "description": "Hear native Kĩkamba speakers pronounce core daily expressions, gratitude, and welcoming phrases.",
+        "tips": "Listen for Kĩkamba's characteristic 'v' (bilabial fricative [β]) in words like 'vaa' (here) and 'muvea' (thanks), and the seven-vowel contrast between 'i/ĩ' and 'u/ũ'.",
+        "culturalNote": "Expressing gratitude ('niwo nitutunga muvea') and inviting guests to sit ('ĩkala nthĩ') reflect warm Akamba hospitality across Machakos, Makueni, and Kitui.",
+        "words": [
+          {
+            "target": "vaa",
+            "source": "Here",
+            "partOfSpeech": "adverb",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/vaa.opus"
+          },
+          {
+            "target": "ĩkala nthĩ",
+            "source": "Have a seat",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ikala-nthi.opus"
+          },
+          {
+            "target": "nĩnaĩle kũthi",
+            "source": "Got to go / I must go",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ninaile-kuthi.opus"
+          },
+          {
+            "target": "niwo nitutunga muvea",
+            "source": "Yes, we are thankful",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/niwo-nitutunga-muvea.opus"
+          },
+          {
+            "target": "nĩ ũndũ mũseo mũno",
+            "source": "Fantastic / Very good thing",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-undu-museo-muno.opus"
+          },
+          {
+            "target": "ngũa nzaũ",
+            "source": "New clothes",
+            "partOfSpeech": "noun phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ngua-nzau.opus"
+          },
+          {
+            "target": "wai vinya",
+            "source": "It was tough",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/wai-vinya.opus"
+          },
+          {
+            "target": "ĩvinda yonthe yĩu",
+            "source": "All this time",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ivinda-yonthe-yiu.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ĩkala nthĩ.",
+            "source": "Have a seat.",
+            "audio": "https://audio.kenyahub.me/audio/kamba/ikala-nthi.opus"
+          },
+          {
+            "target": "Nĩ ũndũ mũseo mũno.",
+            "source": "Fantastic.",
+            "audio": "https://audio.kenyahub.me/audio/kamba/ni-undu-museo-muno.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩkamba recording and select its English meaning:",
+            "correctAnswer": "Here",
+            "options": [
+              "Here",
+              "Have a seat",
+              "Got to go / I must go",
+              "Yes, we are thankful"
+            ],
+            "audioText": "vaa",
+            "sourceWord": {
+              "target": "vaa",
+              "source": "Here",
+              "partOfSpeech": "adverb",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/vaa.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Kĩkamba expression matches \"Have a seat\"?",
+            "correctAnswer": "ĩkala nthĩ",
+            "options": [
+              "ĩkala nthĩ",
+              "vaa",
+              "nĩnaĩle kũthi",
+              "nĩ ũndũ mũseo mũno"
+            ],
+            "sourceWord": {
+              "target": "ĩkala nthĩ",
+              "source": "Have a seat",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/ikala-nthi.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩkamba speaker and choose the correct translation:",
+            "correctAnswer": "New clothes",
+            "options": [
+              "New clothes",
+              "It was tough",
+              "All this time",
+              "Fantastic / Very good thing"
+            ],
+            "audioText": "ngũa nzaũ",
+            "sourceWord": {
+              "target": "ngũa nzaũ",
+              "source": "New clothes",
+              "partOfSpeech": "noun phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/ngua-nzau.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Kĩkamba expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "vaa",
+                "right": "Here"
+              },
+              {
+                "left": "ĩkala nthĩ",
+                "right": "Have a seat"
+              },
+              {
+                "left": "nĩnaĩle kũthi",
+                "right": "Got to go / I must go"
+              },
+              {
+                "left": "niwo nitutunga muvea",
+                "right": "Yes, we are thankful"
+              },
+              {
+                "left": "nĩ ũndũ mũseo mũno",
+                "right": "Fantastic / Very good thing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kamba-native-audio-questions-directions",
+        "title": "Asking Questions, Directions & Daily Life",
+        "icon": "🧭",
+        "description": "Practice understanding natural Kĩkamba questions, directions, and introductions.",
+        "tips": "Notice the locative suffix '-nĩ' in 'mũomonĩ' (at the door, from mũomo) and the question words 'nũũ' (who) and 'niki' (why).",
+        "culturalNote": "In Kĩkamba, 'mũomo' means both mouth/opening and doorway—so 'mũomonĩ' naturally means 'at the door'.",
+        "words": [
+          {
+            "target": "nũũ ũla wĩ mũomonĩ",
+            "source": "Who is at the door?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/nuu-ula-wi-muomoni.opus"
+          },
+          {
+            "target": "tukulye nzia",
+            "source": "Let's ask for directions!",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/tukulye-nzia.opus"
+          },
+          {
+            "target": "twina thina",
+            "source": "We have a problem",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/twina-thina.opus"
+          },
+          {
+            "target": "nĩtwaĩle kũmũtethya",
+            "source": "Should we help her out?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/nitwaile-kumutethya.opus"
+          },
+          {
+            "target": "nĩnĩsĩ ĩthaũ yĩu",
+            "source": "I know that game!",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ninisi-ithau-yiu.opus"
+          },
+          {
+            "target": "nyie nĩ mũĩmi",
+            "source": "I am a small-scale farmer",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/nyie-ni-muimi.opus"
+          },
+          {
+            "target": "niki utanaandavya",
+            "source": "Why didn't you tell me?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/niki-utanaandavya.opus"
+          },
+          {
+            "target": "amũkũlilye ĩsyĩtwa yake",
+            "source": "She asked her what her name was",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/amukulilye-isyitwa-yake.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Nũũ ũla wĩ mũomonĩ?",
+            "source": "Who is at the door?",
+            "audio": "https://audio.kenyahub.me/audio/kamba/nuu-ula-wi-muomoni.opus"
+          },
+          {
+            "target": "Nyie nĩ mũĩmi.",
+            "source": "I am a small-scale farmer.",
+            "audio": "https://audio.kenyahub.me/audio/kamba/nyie-ni-muimi.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩkamba recording and select its English meaning:",
+            "correctAnswer": "Who is at the door?",
+            "options": [
+              "Who is at the door?",
+              "Let's ask for directions!",
+              "We have a problem",
+              "Should we help her out?"
+            ],
+            "audioText": "nũũ ũla wĩ mũomonĩ",
+            "sourceWord": {
+              "target": "nũũ ũla wĩ mũomonĩ",
+              "source": "Who is at the door?",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/nuu-ula-wi-muomoni.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Kĩkamba expression matches \"Let's ask for directions!\"?",
+            "correctAnswer": "tukulye nzia",
+            "options": [
+              "tukulye nzia",
+              "nũũ ũla wĩ mũomonĩ",
+              "twina thina",
+              "nĩnĩsĩ ĩthaũ yĩu"
+            ],
+            "sourceWord": {
+              "target": "tukulye nzia",
+              "source": "Let's ask for directions!",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/tukulye-nzia.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩkamba speaker and choose the correct translation:",
+            "correctAnswer": "I am a small-scale farmer",
+            "options": [
+              "I am a small-scale farmer",
+              "Why didn't you tell me?",
+              "She asked her what her name was",
+              "I know that game!"
+            ],
+            "audioText": "nyie nĩ mũĩmi",
+            "sourceWord": {
+              "target": "nyie nĩ mũĩmi",
+              "source": "I am a small-scale farmer",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/nyie-ni-muimi.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Kĩkamba expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "nũũ ũla wĩ mũomonĩ",
+                "right": "Who is at the door?"
+              },
+              {
+                "left": "tukulye nzia",
+                "right": "Let's ask for directions!"
+              },
+              {
+                "left": "twina thina",
+                "right": "We have a problem"
+              },
+              {
+                "left": "nĩtwaĩle kũmũtethya",
+                "right": "Should we help her out?"
+              },
+              {
+                "left": "nĩnĩsĩ ĩthaũ yĩu",
+                "right": "I know that game!"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kamba-native-audio-conversations-community",
+        "title": "Natural Conversations, Health & Community",
+        "icon": "💬",
+        "description": "Build real-world listening fluency with full native Kĩkamba sentences on health, relationships, and community life.",
+        "tips": "Notice how Kĩkamba uses 'nthoni' (respectful modesty/shame) and negative relative 'ũte na' (who is without, as in 'mũndũ ũte na ĩvĩtyo' — an innocent person).",
+        "culturalNote": "The concept of 'nthoni' (respect, social propriety, and avoidance customs) is central to Akamba social etiquette and family relationships.",
+        "words": [
+          {
+            "target": "ena ũvyũvu mwingĩ mũno",
+            "source": "He has a very high fever",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ena-uvyuvu-mwingi-muno.opus"
+          },
+          {
+            "target": "ngwatanĩo syenyu nĩ syĩva",
+            "source": "What are your relationships?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ngwatanio-syenyu-ni-syiva.opus"
+          },
+          {
+            "target": "ti lasima nĩelesye kĩndũ",
+            "source": "I don't have to say anything",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ti-lasima-nielesye-kindu.opus"
+          },
+          {
+            "target": "nĩ mũndũ ũte na ĩvĩtyo",
+            "source": "Innocent (a person without fault)",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/ni-mundu-ute-na-ivityo.opus"
+          },
+          {
+            "target": "syũmbe isu syĩ thayũ",
+            "source": "They exist (those creatures are alive)",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/syumbe-isu-syi-thayu.opus"
+          },
+          {
+            "target": "ũsu nĩ mũisyo mũnene",
+            "source": "This is a disaster",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/usu-ni-muisyo-munene.opus"
+          },
+          {
+            "target": "maũndũ ala mavetetwe",
+            "source": "Cancelled events",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/maundu-ala-mavetetwe.opus"
+          },
+          {
+            "target": "tũkeethĩwa na nthoni mũno",
+            "source": "We shall be shamed",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kamba/tukeethiwa-na-nthoni-muno.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ena ũvyũvu mwingĩ mũno.",
+            "source": "He has a very high fever.",
+            "audio": "https://audio.kenyahub.me/audio/kamba/ena-uvyuvu-mwingi-muno.opus"
+          },
+          {
+            "target": "Ngwatanĩo syenyu nĩ syĩva?",
+            "source": "What are your relationships?",
+            "audio": "https://audio.kenyahub.me/audio/kamba/ngwatanio-syenyu-ni-syiva.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩkamba recording and select its English meaning:",
+            "correctAnswer": "He has a very high fever",
+            "options": [
+              "He has a very high fever",
+              "What are your relationships?",
+              "I don't have to say anything",
+              "Innocent (a person without fault)"
+            ],
+            "audioText": "ena ũvyũvu mwingĩ mũno",
+            "sourceWord": {
+              "target": "ena ũvyũvu mwingĩ mũno",
+              "source": "He has a very high fever",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/ena-uvyuvu-mwingi-muno.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Kĩkamba expression matches \"What are your relationships?\"?",
+            "correctAnswer": "ngwatanĩo syenyu nĩ syĩva",
+            "options": [
+              "ngwatanĩo syenyu nĩ syĩva",
+              "ena ũvyũvu mwingĩ mũno",
+              "ti lasima nĩelesye kĩndũ",
+              "syũmbe isu syĩ thayũ"
+            ],
+            "sourceWord": {
+              "target": "ngwatanĩo syenyu nĩ syĩva",
+              "source": "What are your relationships?",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/ngwatanio-syenyu-ni-syiva.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩkamba speaker and choose the correct translation:",
+            "correctAnswer": "This is a disaster",
+            "options": [
+              "This is a disaster",
+              "Cancelled events",
+              "We shall be shamed",
+              "They exist (those creatures are alive)"
+            ],
+            "audioText": "ũsu nĩ mũisyo mũnene",
+            "sourceWord": {
+              "target": "ũsu nĩ mũisyo mũnene",
+              "source": "This is a disaster",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kamba/usu-ni-muisyo-munene.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Kĩkamba expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "ena ũvyũvu mwingĩ mũno",
+                "right": "He has a very high fever"
+              },
+              {
+                "left": "ngwatanĩo syenyu nĩ syĩva",
+                "right": "What are your relationships?"
+              },
+              {
+                "left": "ti lasima nĩelesye kĩndũ",
+                "right": "I don't have to say anything"
+              },
+              {
+                "left": "nĩ mũndũ ũte na ĩvĩtyo",
+                "right": "Innocent (a person without fault)"
+              },
+              {
+                "left": "syũmbe isu syĩ thayũ",
+                "right": "They exist (those creatures are alive)"
+              }
+            ]
           }
         ]
       }

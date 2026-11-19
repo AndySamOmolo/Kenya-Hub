@@ -44,6 +44,12 @@ const R2_SOURCES = [
     langId: "swahili",
     datasets: [
       { id: "waxal-swa-tts", repo: "google/WaxalNLP", config: "swa_tts", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
+      { id: "open-bible-swh", repo: "multilingual-tts/open-bible", config: "swh", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/multilingual-tts/open-bible" },
+      { id: "swahili-words-411k", repo: "michsethowusu/swahili-words-speech-text-parallel", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/michsethowusu/swahili-words-speech-text-parallel" },
+      { id: "stem-swahili-speech", repo: "stem-content-ai-project/swahili-speech", config: "default", gated: false, license: "MIT", url: "https://huggingface.co/datasets/stem-content-ai-project/swahili-speech" },
+      { id: "alffa-slr25", repo: "nickdee96/ALFFA-Swahili-News", config: "default", gated: false, license: "MIT", url: "https://www.openslr.org/25/" },
+      { id: "liva-swahili-asr", repo: "liva-ai/swahili-asr", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/liva-ai/swahili-asr" },
+      { id: "kencorpus-audio", repo: "Kencorpus/KenCorpus_audio", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio" },
       { id: "fleurs-sw-ke", repo: "google/fleurs", config: "sw_ke", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
       { id: "kenspeech-sw", repo: "Kencorpus/KenSpeech", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenSpeech" },
       { id: "cv-sw-26", repo: "deepdml/common_voice_26_0", config: "sw", gated: true, license: "CC0-1.0", url: "https://huggingface.co/datasets/deepdml/common_voice_26_0" },
@@ -54,6 +60,7 @@ const R2_SOURCES = [
     langId: "kikuyu",
     datasets: [
       { id: "thiomi-kik", repo: "thiomi/thiomi-5k", config: "kik_Latn", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/thiomi/thiomi-5k" },
+      { id: "open-bible-kik", repo: "multilingual-tts/open-bible", config: "kik", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/multilingual-tts/open-bible" },
       { id: "waxal-kik-tts", repo: "google/WaxalNLP", config: "kik_tts", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
     ],
   },
@@ -64,6 +71,8 @@ const R2_SOURCES = [
       { id: "fleurs-luo-ke", repo: "google/fleurs", config: "luo_ke", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
       { id: "waxal-luo-tts", repo: "google/WaxalNLP", config: "luo_tts", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
       { id: "bibletts-luo", repo: "CLEAR-Global/BibleTTS-Luo", config: "read", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/CLEAR-Global/BibleTTS-Luo" },
+      { id: "kencorpus-audio-luo", repo: "Kencorpus/KenCorpus_audio", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio" },
+      { id: "cv27-luo", repo: "mozilla/common-voice-27-luo", config: "luo", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5wfvfn00bso107clj45iop" },
     ],
   },
   {
@@ -83,7 +92,29 @@ const R2_SOURCES = [
   {
     langId: "luhya",
     datasets: [
+      { id: "ddd-luhya-642h", repo: "Digital-Divide-Data/Luhya-ASR-Data-subset-642H", config: "default", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Digital-Divide-Data/Luhya-ASR-Data-subset-642H" },
+      { id: "kencorpus-audio-luy", repo: "Kencorpus/KenCorpus_audio", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio" },
       { id: "waxal-mas-asr", repo: "google/WaxalNLP", config: "mas_asr", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
+    ],
+  },
+  {
+    langId: "kalenjin",
+    datasets: [
+      { id: "anv-ke-kalenjin", repo: "MCAA1-MSU/anv_data_ke", config: "kalenjin", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke" },
+      { id: "kalenjin-asr-hf", repo: "kln001/kalenjin-asr-data", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/kln001/kalenjin-asr-data" },
+      { id: "cv27-kln", repo: "mozilla/common-voice-27-kln", config: "kln", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5webje00bgo1079qb3nubj" },
+    ],
+  },
+  {
+    langId: "maasai",
+    datasets: [
+      { id: "anv-ke-maasai", repo: "MCAA1-MSU/anv_data_ke", config: "maasai", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke" },
+    ],
+  },
+  {
+    langId: "samburu",
+    datasets: [
+      { id: "anv-ke-samburu", repo: "MCAA1-MSU/anv_data_ke", config: "maasai", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke" },
     ],
   },
   {
@@ -103,6 +134,8 @@ const R2_SOURCES = [
     langId: "somali",
     datasets: [
       { id: "thiomi-som", repo: "thiomi/thiomi-5k", config: "som_Latn", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/thiomi/thiomi-5k" },
+      { id: "anv-ke-somali", repo: "MCAA1-MSU/anv_data_ke", config: "somali", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke" },
+      { id: "soomali-asr-hf", repo: "skydheere/soomali-asr-dataset", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/skydheere/soomali-asr-dataset" },
       { id: "fleurs-so-so", repo: "google/fleurs", config: "so_so", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
       { id: "ddd-som", repo: "Digital-Divide-Data/Somali-ASR-Subset-68H", config: "default", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Digital-Divide-Data/Somali-ASR-Subset-68H" },
     ],
@@ -110,8 +143,10 @@ const R2_SOURCES = [
   {
     langId: "borana",
     datasets: [
+      { id: "open-bible-orm", repo: "multilingual-tts/open-bible", config: "gaz", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/multilingual-tts/open-bible" },
       { id: "fleurs-om-et", repo: "google/fleurs", config: "om_et", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
       { id: "waxal-orm-asr", repo: "google/WaxalNLP", config: "orm_asr_v2", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
+      { id: "cv27-om", repo: "mozilla/common-voice-27-om", config: "om", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5vkzvd009po10727n12m9h" },
     ],
   },
 ];

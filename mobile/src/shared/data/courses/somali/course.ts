@@ -539,12 +539,12 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "wil-ki (Yibir: weled-ki, Midgan: janakh-i)",
-            "source": "Boy",
+            "source": "Boy (Kirk 1905 dialectal variants)",
             "pronunciation": "wil-ki"
           },
           {
             "target": "Inăñke",
-            "source": "Son",
+            "source": "Son (Kirk 1905 variant)",
             "pronunciation": "inanke"
           }
         ],
@@ -666,7 +666,7 @@ export const SOMALI_UNITS: CourseUnit[] = [
           },
           {
             "target": "gabađ-di (Yibir: ilaghan-ti, Midgan: janakh-di)",
-            "source": "Girl",
+            "source": "Girl (Kirk 1905 dialectal variants)",
             "pronunciation": "gabađ-di"
           },
           {
@@ -4076,6 +4076,447 @@ export const SOMALI_UNITS: CourseUnit[] = [
           {
             "target": "midna ma tegin",
             "source": "Not one went."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "somali-unit-16",
+    "unitNumber": 16,
+    "title": "Native Audio & Listening Practice",
+    "description": "Train your ear with verified native-speaker Af-Soomaali recordings covering everyday expressions, home dialogues, and community life.",
+    "icon": "Volume2",
+    "color": "#0284C7",
+    "skills": [
+      {
+        "id": "somali-audio-1-everyday",
+        "title": "Everyday Expressions & Polite Speech",
+        "icon": "Volume2",
+        "description": "Listen to native Af-Soomaali speakers use essential daily expressions, hospitality phrases, and common responses.",
+        "tips": "Pay close attention to Somali vowel length (aa, ee, oo) and the assertive focus particle 'waa' at the start of statements like 'Waa tan' (Here it is) and 'Waa inaan aado' (I have to go).",
+        "culturalNote": "Hospitality is central to Somali culture; inviting a guest to sit with 'Fadhiiso' and expressing gratitude with 'Haa, waan mahadcelineynaa' are core everyday courtesies. Verified native recordings from the Thiomi-5K Parallel Speech & Text Corpus (CC-BY-4.0).",
+        "words": [
+          {
+            "target": "Waa tan",
+            "source": "Here it is / Here",
+            "pronunciation": "waa tan",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/waa-tan.opus"
+          },
+          {
+            "target": "Fadhiiso",
+            "source": "Have a seat",
+            "pronunciation": "fa-dhii-so",
+            "partOfSpeech": "verb",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/fadhiiso.opus"
+          },
+          {
+            "target": "Si wanaagsan",
+            "source": "Fantastic / Very well",
+            "pronunciation": "si wa-naag-san",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/si-wanaagsan.opus"
+          },
+          {
+            "target": "Haa waan mahadcelineynaa",
+            "source": "Yes, we are thankful",
+            "pronunciation": "haa waan ma-had-ce-li-ney-naa",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/haa-waan-mahadcelineynaa.opus"
+          },
+          {
+            "target": "Waa inaan aado",
+            "source": "I have to go / Got to go",
+            "pronunciation": "waa i-naan aa-do",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/waa-inaan-aado.opus"
+          },
+          {
+            "target": "Waxay ahayd adag",
+            "source": "It was tough",
+            "pronunciation": "wa-xay a-hayd a-dag",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/waxay-ahayd-adag.opus"
+          },
+          {
+            "target": "Wakhtigan oo dhan",
+            "source": "All this time",
+            "pronunciation": "wakh-ti-gan oo dhan",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/wakhtigan-oo-dhan.opus"
+          },
+          {
+            "target": "Way jiraan",
+            "source": "They exist",
+            "pronunciation": "way ji-raan",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/way-jiraan.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Fadhiiso",
+            "source": "Have a seat.",
+            "audio": "https://audio.kenyahub.me/audio/somali/fadhiiso.opus"
+          },
+          {
+            "target": "Haa waan mahadcelineynaa",
+            "source": "Yes, we are thankful.",
+            "audio": "https://audio.kenyahub.me/audio/somali/haa-waan-mahadcelineynaa.opus"
+          },
+          {
+            "target": "Waa inaan aado",
+            "source": "I have to go.",
+            "audio": "https://audio.kenyahub.me/audio/somali/waa-inaan-aado.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does 'Fadhiiso' mean?",
+            "correctAnswer": "Have a seat",
+            "options": [
+              "Have a seat",
+              "Got to go",
+              "All this time",
+              "They exist"
+            ],
+            "hint": "A polite imperative welcoming a guest to sit down."
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete the expression for 'I have to go': Waa _____ aado",
+            "correctAnswer": "inaan",
+            "options": [
+              "inaan",
+              "tan",
+              "adag",
+              "dhan"
+            ],
+            "hint": "Combines 'in' (that) + 'aan' (I)."
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each spoken Af-Soomaali expression with its English meaning",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "Waa tan",
+                "right": "Here it is"
+              },
+              {
+                "left": "Fadhiiso",
+                "right": "Have a seat"
+              },
+              {
+                "left": "Si wanaagsan",
+                "right": "Fantastic / Very well"
+              },
+              {
+                "left": "Wakhtigan oo dhan",
+                "right": "All this time"
+              }
+            ]
+          },
+          {
+            "type": "word_bank",
+            "prompt": "Build the Af-Soomaali phrase for 'Yes, we are thankful'",
+            "correctAnswer": "Haa waan mahadcelineynaa",
+            "wordTiles": [
+              "Haa",
+              "waan",
+              "mahadcelineynaa",
+              "adag"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "somali-audio-2-home-questions",
+        "title": "Home, Directions & Everyday Questions",
+        "icon": "MessageCircle",
+        "description": "Practice listening to natural Af-Soomaali questions about visitors, directions, help, and daily household situations.",
+        "tips": "Notice the question words 'yaa' (who?), 'halkee' (where?), and 'maxaad' (what/why did you?), as well as the yes/no interrogative particle 'ma' in 'Ma caawina' (Should we help her out?).",
+        "culturalNote": "Asking for directions ('Aan waydiisano tilmaamo') and offering mutual assistance ('Ma caawina') reflect the cooperative spirit of Somali communities across Northern Kenya and the Horn of Africa. Verified native recordings from Thiomi-5K (CC-BY-4.0).",
+        "words": [
+          {
+            "target": "Albaabka",
+            "source": "The door",
+            "pronunciation": "al-baab-ka",
+            "partOfSpeech": "noun",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/albaabka.opus"
+          },
+          {
+            "target": "Yaa albaabka jooga",
+            "source": "Who is at the door?",
+            "pronunciation": "yaa al-baab-ka joo-ga",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/yaa-albaabka-jooga.opus"
+          },
+          {
+            "target": "Aan waydiisano tilmaamo",
+            "source": "Let's ask for directions",
+            "pronunciation": "aan way-dii-sa-no til-maa-mo",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/aan-waydiisano-tilmaamo.opus"
+          },
+          {
+            "target": "Dhar cusub",
+            "source": "New clothes",
+            "pronunciation": "dhar cu-sub",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/dhar-cusub.opus"
+          },
+          {
+            "target": "Ma caawina",
+            "source": "Should we help her out?",
+            "pronunciation": "ma caa-wi-na",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/ma-caawina.opus"
+          },
+          {
+            "target": "Halkee ka keentay kan",
+            "source": "Where did you get this one?",
+            "pronunciation": "hal-kee ka keen-tay kan",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/halkee-ka-keentay-kan.opus"
+          },
+          {
+            "target": "Maxaad iigu sheegi weyday",
+            "source": "Why didn't you tell me?",
+            "pronunciation": "ma-xaad ii-gu shee-gi wey-day",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/maxaad-iigu-sheegi-weyday.opus"
+          },
+          {
+            "target": "Dhib ayaa na haystaa",
+            "source": "We have a problem",
+            "pronunciation": "dhib a-yaa na hay-staa",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/dhib-ayaa-na-haystaa.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Yaa albaabka jooga",
+            "source": "Who is at the door?",
+            "audio": "https://audio.kenyahub.me/audio/somali/yaa-albaabka-jooga.opus"
+          },
+          {
+            "target": "Aan waydiisano tilmaamo",
+            "source": "Let's ask for directions!",
+            "audio": "https://audio.kenyahub.me/audio/somali/aan-waydiisano-tilmaamo.opus"
+          },
+          {
+            "target": "Dhib ayaa na haystaa",
+            "source": "We have a problem.",
+            "audio": "https://audio.kenyahub.me/audio/somali/dhib-ayaa-na-haystaa.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "How do you ask 'Who is at the door?' in Af-Soomaali?",
+            "correctAnswer": "Yaa albaabka jooga",
+            "options": [
+              "Yaa albaabka jooga",
+              "Aan waydiisano tilmaamo",
+              "Dhib ayaa na haystaa",
+              "Halkee ka keentay kan"
+            ],
+            "hint": "'Albaabka' means 'the door'."
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete 'New clothes': Dhar _____",
+            "correctAnswer": "cusub",
+            "options": [
+              "cusub",
+              "albaabka",
+              "tilmaamo",
+              "jooga"
+            ],
+            "hint": "The Somali adjective for 'new'."
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Af-Soomaali phrase with its English translation",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "Albaabka",
+                "right": "The door"
+              },
+              {
+                "left": "Dhar cusub",
+                "right": "New clothes"
+              },
+              {
+                "left": "Ma caawina",
+                "right": "Should we help her out?"
+              },
+              {
+                "left": "Dhib ayaa na haystaa",
+                "right": "We have a problem"
+              }
+            ]
+          },
+          {
+            "type": "word_bank",
+            "prompt": "Arrange the words to say 'Where did you get this one?'",
+            "correctAnswer": "Halkee ka keentay kan",
+            "wordTiles": [
+              "Halkee",
+              "ka",
+              "keentay",
+              "kan",
+              "yaa"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "somali-audio-3-work-learning",
+        "title": "Farming, Education & Community Life",
+        "icon": "BookOpen",
+        "description": "Build listening fluency with full native-speaker Af-Soomaali sentences about farming, education, storytelling, and helping others.",
+        "tips": "In longer Somali sentences, listen for the focus markers 'waxaan' (I ... what) and 'ayaa / ayay' which anchor the subject before the verb phrase.",
+        "culturalNote": "Somali oral tradition prizes storytelling ('sheekooyin'), education ('waxbarasho'), and generous community support ('ha walwalin, wax badan ayaan inoo hayaa'). Verified native recordings from Thiomi-5K (CC-BY-4.0).",
+        "words": [
+          {
+            "target": "Waxaan ahay beeraley miisaan yar",
+            "source": "I am a small-scale farmer",
+            "pronunciation": "wa-xaan a-hay bee-ra-ley mii-saan yar",
+            "partOfSpeech": "sentence",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/waxaan-ahay-beeraley-miisaan-yar.opus"
+          },
+          {
+            "target": "Waxbarashadu waxay kugu kordhinaysaa qiimo",
+            "source": "Education adds value to you",
+            "pronunciation": "wax-ba-ra-sha-du wa-xay ku-gu kor-dhi-nay-saa qii-mo",
+            "partOfSpeech": "sentence",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/waxbarashadu-waxay-kugu-kordhinaysaa-qiimo.opus"
+          },
+          {
+            "target": "Waxaan dib u eegeynaa buugaagta juqraafiga",
+            "source": "We are revising geography books",
+            "pronunciation": "wa-xaan dib u ee-gey-naa buu-gaag-ta juq-raa-fi-ga",
+            "partOfSpeech": "sentence",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/waxaan-dib-u-eegeynaa-buugaagta-juqraafiga.opus"
+          },
+          {
+            "target": "Sheekooyinka wanaagsan waqti ayay qaataan",
+            "source": "Good stories take time",
+            "pronunciation": "shee-koo-yin-ka wa-naag-san waq-ti a-yay qaa-taan",
+            "partOfSpeech": "sentence",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/sheekooyinka-wanaagsan-waqti-ayay-qaataan.opus"
+          },
+          {
+            "target": "Waxaan iyaga u booqanayaa si gaar ah",
+            "source": "I am visiting them in a special way",
+            "pronunciation": "wa-xaan i-ya-ga u boo-qa-na-yaa si gaar ah",
+            "partOfSpeech": "sentence",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/waxaan-iyaga-u-booqanayaa-si-gaar-ah.opus"
+          },
+          {
+            "target": "Ha walwalin wax badan ayaan inoo hayaa",
+            "source": "Don't worry, I have plenty for us",
+            "pronunciation": "ha wal-wa-lin wax ba-dan a-yaan i-noo ha-yaa",
+            "partOfSpeech": "sentence",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/ha-walwalin-wax-badan-ayaan-inoo-hayaa.opus"
+          },
+          {
+            "target": "Yaa kaa caawin kara inaad taas sameyso",
+            "source": "Who can help you do that?",
+            "pronunciation": "yaa kaa caa-win ka-ra i-naad taas sa-mey-so",
+            "partOfSpeech": "sentence",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/yaa-kaa-caawin-kara-inaad-taas-sameyso.opus"
+          },
+          {
+            "target": "Aad ayey ugu dadaashay cuntada",
+            "source": "She worked very hard for food",
+            "pronunciation": "aad a-yey u-gu da-daa-shay cun-ta-da",
+            "partOfSpeech": "sentence",
+            "audioFile": "https://audio.kenyahub.me/audio/somali/aad-ayey-ugu-dadaashay-cuntada.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Waxaan ahay beeraley miisaan yar",
+            "source": "I am a small-scale farmer.",
+            "audio": "https://audio.kenyahub.me/audio/somali/waxaan-ahay-beeraley-miisaan-yar.opus"
+          },
+          {
+            "target": "Sheekooyinka wanaagsan waqti ayay qaataan",
+            "source": "Good stories take time.",
+            "audio": "https://audio.kenyahub.me/audio/somali/sheekooyinka-wanaagsan-waqti-ayay-qaataan.opus"
+          },
+          {
+            "target": "Waxbarashadu waxay kugu kordhinaysaa qiimo",
+            "source": "Education adds value to you.",
+            "audio": "https://audio.kenyahub.me/audio/somali/waxbarashadu-waxay-kugu-kordhinaysaa-qiimo.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "multiple_choice",
+            "prompt": "What does 'Sheekooyinka wanaagsan waqti ayay qaataan' mean?",
+            "correctAnswer": "Good stories take time",
+            "options": [
+              "Good stories take time",
+              "Education adds value to you",
+              "I am a small-scale farmer",
+              "She worked very hard for food"
+            ],
+            "hint": "'Sheekooyin' = stories; 'waqti' = time."
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete 'I am a small-scale farmer': Waxaan ahay _____ miisaan yar",
+            "correctAnswer": "beeraley",
+            "options": [
+              "beeraley",
+              "buugaagta",
+              "cuntada",
+              "qiimo"
+            ],
+            "hint": "The Somali noun for 'farmer'."
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each Af-Soomaali sentence with its English meaning",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "Waxaan ahay beeraley miisaan yar",
+                "right": "I am a small-scale farmer"
+              },
+              {
+                "left": "Sheekooyinka wanaagsan waqti ayay qaataan",
+                "right": "Good stories take time"
+              },
+              {
+                "left": "Aad ayey ugu dadaashay cuntada",
+                "right": "She worked very hard for food"
+              },
+              {
+                "left": "Yaa kaa caawin kara inaad taas sameyso",
+                "right": "Who can help you do that?"
+              }
+            ]
+          },
+          {
+            "type": "word_bank",
+            "prompt": "Build the sentence 'I am a small-scale farmer'",
+            "correctAnswer": "Waxaan ahay beeraley miisaan yar",
+            "wordTiles": [
+              "Waxaan",
+              "ahay",
+              "beeraley",
+              "miisaan",
+              "yar"
+            ]
           }
         ]
       }

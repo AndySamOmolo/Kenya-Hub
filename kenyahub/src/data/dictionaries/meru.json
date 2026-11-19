@@ -11,7 +11,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Meru (Kĩmĩĩrũ / Kĩtharaka / Kĩcuka / Kĩmwimbi) vocabulary compiled from C. W. Hobley (1910), Arthur M. Champion (1912 \"The Atharaka\"), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11–11a), Prof. Kithaka wa Mberia (2004 \"The Phonology of Borrowed Words in Kitharaka\"), and Unicode CLDR (mer.xml). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0).",
   "categories": [
     {
@@ -9074,6 +9074,18 @@
           "english": "The 14 Clans of the Atharaka and their Totems (Champion 1912, p. 89)",
           "translation": "Utonga (Nthia gazelle), Kandi (Nthia), Mululu (Nthia), Nyaga (Nyaga ostrich), Mbula (Rain spirit), Nginna (Nthia & white bean), Kamurigi (Nthia; forbidden to be smiths), Ndue, Kanzero (Nthia), Kamararo (Wild pig), Mutwa, Kamogwe, Kanthakami (blood), Kathoga",
           "context": "Arthur M. Champion (1912) 'The Atharaka', Journal of the Royal Anthropological Institute Vol. 42, pp. 68–90 (Public Domain)"
+        },
+        {
+          "english": "Blood-brotherhood (oath ceremony)",
+          "translation": "muma",
+          "pronunciation": "moo-mah",
+          "context": "p. 81 (attested at Igani in the Meru / East Mt. Kenya region: 'desired to make \"muma\" (blood-brotherhood) with us') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
+        },
+        {
+          "english": "Meru country (district north-east of Mount Kenya)",
+          "translation": "Limeru",
+          "pronunciation": "lee-meh-roo",
+          "context": "pp. 57, 81 ('Limeru, as the district north-east of Kenia is called... comprises the whole of North-East Kenia') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
         }
       ]
     }
@@ -9081,5 +9093,5 @@
   "source": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml); Arthur M. Champion (1912) The Atharaka (JRAI Vol. 42, Public Domain)",
   "isoCode": "mer",
   "glottocode": "meru1245",
-  "totalEntries": 1590
+  "totalEntries": 1592
 }

@@ -2627,6 +2627,18 @@
           "translation": "Awanyunos bobo",
           "pronunciation": "a-wanyu-nos bo-bo",
           "context": "Wikipedia Teso language — Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
+        },
+        {
+          "english": "Before Christ (BC / Historical Era)",
+          "translation": "Kabla ya Christo (KK)",
+          "pronunciation": "ka-bla ya kri-sto",
+          "context": "Unicode CLDR / ICU Locale teo (Unicode-3.0, https://www.localeplanet.com/icu/teo/index.html)"
+        },
+        {
+          "english": "Anno Domini (AD / Common Era)",
+          "translation": "Baada ya Christo (BK)",
+          "pronunciation": "ba-a-da ya kri-sto",
+          "context": "Unicode CLDR / ICU Locale teo (Unicode-3.0, https://www.localeplanet.com/icu/teo/index.html)"
         }
       ]
     },
@@ -4353,5 +4365,5 @@
   "source": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921); Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Bateso Kinship & Ethnography (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "teo",
   "glottocode": "teso1247",
-  "totalEntries": 713
+  "totalEntries": 715
 }

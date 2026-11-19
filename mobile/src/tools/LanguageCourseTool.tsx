@@ -29,7 +29,7 @@ import { luoRiddles } from '../shared/data/courses/luo/riddles';
 import { luoTongueTwisters } from '../shared/data/courses/luo/tongue-twisters';
 import { getCulturalWisdomForLanguage, type CulturalWisdomItem } from '../shared/data/courses/cultural-wisdom';
 import { getRiddlesForLanguage } from '../shared/data/courses/riddles-bank';
-import { generateExercises, checkAnswer, checkAnswerWithFeedback, getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair, isSingleWordLexical, KENYAN_SPECIAL_CHARS } from '../shared/lib/learn-engine';
+import { generateExercises, checkAnswer, checkAnswerWithFeedback, getLevelProfile, getTeachingDeckForLevel, getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair, isSingleWordLexical, KENYAN_SPECIAL_CHARS } from '../shared/lib/learn-engine';
 import {
   isSkillUnlocked,
   getXpLevel,
@@ -355,6 +355,8 @@ export default function LanguageCourseTool({
   // ── Lesson Player State (Matches Website LessonPlayer.tsx) ──
   const [lessonStage, setLessonStage] = useState<LessonStage>('idle');
   const [learnCardIdx, setLearnCardIdx] = useState(0);
+  const [activeLessonLevel, setActiveLessonLevel] = useState(1);
+  const [teachingDeck, setTeachingDeck] = useState<WordPair[]>([]);
   const [showTipsPanel, setShowTipsPanel] = useState(false);
 
   const [exercises, setExercises] = useState<Exercise[]>([]);
@@ -476,7 +478,12 @@ export default function LanguageCourseTool({
           words: skill.words.slice(offset, offset + batchSize),
         };
       }
-      const generated = generateExercises(effectiveSkill, 15);
+      const currentSkillLevel = progress.skills[skill.id]?.level || 0;
+      const nextLevel = Math.min(5, currentSkillLevel + 1);
+      setActiveLessonLevel(nextLevel);
+      const deck = getTeachingDeckForLevel(effectiveSkill, nextLevel);
+      setTeachingDeck(deck);
+      const generated = generateExercises(effectiveSkill, 15, nextLevel);
       setExercises(generated);
       setExIndex(0);
       setCorrectCount(0);
@@ -484,9 +491,9 @@ export default function LanguageCourseTool({
       setXpEarned(0);
       setMissedItems([]);
       setupExerciseState(generated[0]);
-      setLessonStage(skipLearn ? 'practice' : 'learn');
+      setLessonStage(skipLearn || deck.length === 0 ? 'practice' : 'learn');
     },
-    [setupExerciseState, onScrollToTop, progress.dictCursors, saveLanguageProgress]
+    [setupExerciseState, onScrollToTop, progress.dictCursors, progress.skills, saveLanguageProgress]
   );
 
   const lessonScrollRef = useRef<ScrollView>(null);
@@ -1028,7 +1035,7 @@ export default function LanguageCourseTool({
     const currentEx = exercises[exIndex];
     const progressRatio =
       lessonStage === 'learn'
-        ? (learnCardIdx + 1) / Math.max(1, activeSkill.words.length)
+        ? (learnCardIdx + 1) / Math.max(1, (teachingDeck.length > 0 ? teachingDeck : activeSkill.words).length)
         : lessonStage === 'practice'
         ? (exIndex + 1) / Math.max(1, exercises.length)
         : 1;
@@ -1074,7 +1081,7 @@ export default function LanguageCourseTool({
             </View>
             <Text style={[styles.lessonProgressLabel, { color: colors.textMuted }]}>
               {lessonStage === 'learn'
-                ? `Learn Card ${learnCardIdx + 1}/${activeSkill.words.length}`
+                ? `Level ${activeLessonLevel} • Card ${learnCardIdx + 1}/${(teachingDeck.length > 0 ? teachingDeck : activeSkill.words).length}`
                 : lessonStage === 'practice'
                 ? `Exercise ${exIndex + 1}/${exercises.length}`
                 : 'Complete'}
@@ -1137,38 +1144,38 @@ export default function LanguageCourseTool({
             ) : null}
 
             {/* Active Teaching Card */}
-            {activeSkill.words[learnCardIdx] ? (
+            {(teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx] ? (
               <View
                 style={[
                   styles.teachCard,
                   { backgroundColor: colors.surface, borderColor: langColor },
                 ]}
               >
-                {activeSkill.words[learnCardIdx].partOfSpeech ? (
+                {(teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].partOfSpeech ? (
                   <View style={[styles.posTag, { backgroundColor: `${langColor}18` }]}>
                     <Text style={[styles.posTagText, { color: langColor }]}>
-                      {activeSkill.words[learnCardIdx].partOfSpeech}
+                      {(teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].partOfSpeech}
                     </Text>
                   </View>
                 ) : null}
 
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
                   <Text style={[styles.teachTargetWord, { color: colors.text }]}>
-                    {activeSkill.words[learnCardIdx].target}
+                    {(teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].target}
                   </Text>
                   {hasVerifiedAudio({
-                    translation: activeSkill.words[learnCardIdx].target,
-                    audioFile: activeSkill.words[learnCardIdx].audioFile || activeSkill.words[learnCardIdx].audio,
+                    translation: (teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].target,
+                    audioFile: (teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].audioFile || (teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].audio,
                   }) ? (
                     <Pressable
                       onPress={() =>
                         playVerifiedAudio({
-                          translation: activeSkill.words[learnCardIdx].target,
-                          audioFile: activeSkill.words[learnCardIdx].audioFile || activeSkill.words[learnCardIdx].audio,
+                          translation: (teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].target,
+                          audioFile: (teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].audioFile || (teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].audio,
                         })
                       }
                       accessibilityRole="button"
-                      accessibilityLabel={`Play verified recording for ${activeSkill.words[learnCardIdx].target}`}
+                      accessibilityLabel={`Play verified recording for ${(teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].target}`}
                       hitSlop={10}
                       style={{
                         padding: 6,
@@ -1182,7 +1189,7 @@ export default function LanguageCourseTool({
                 </View>
 
                 {(() => {
-                  const currentWord = activeSkill.words[learnCardIdx];
+                  const currentWord = (teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx];
                   const pron = (currentWord.pronunciation || "").trim();
                   const isPosOnly = ["noun", "verb", "adjective", "adj", "adverb", "pronoun", "preposition", "conjunction", "interjection"].includes(
                     pron.toLowerCase()
@@ -1198,11 +1205,11 @@ export default function LanguageCourseTool({
                 <View style={[styles.teachDivider, { backgroundColor: colors.outlineVariant }]} />
 
                 <Text style={[styles.teachSourceMeaning, { color: colors.text }]}>
-                  {activeSkill.words[learnCardIdx].source}
+                  {(teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx].source}
                 </Text>
 
                 {(() => {
-                  const currentWord = activeSkill.words[learnCardIdx];
+                  const currentWord = (teachingDeck.length > 0 ? teachingDeck : activeSkill.words)[learnCardIdx];
                   if (!currentWord.example) return null;
                   const ex = currentWord.example.trim();
                   const targetNorm = currentWord.target.trim().toLowerCase();
@@ -1262,7 +1269,7 @@ export default function LanguageCourseTool({
                 </Text>
               </Pressable>
 
-              {learnCardIdx + 1 < activeSkill.words.length ? (
+              {learnCardIdx + 1 < (teachingDeck.length > 0 ? teachingDeck : activeSkill.words).length ? (
                 <Pressable
                   android_ripple={ripple}
                   onPress={() => setLearnCardIdx((i) => i + 1)}
@@ -1305,6 +1312,41 @@ export default function LanguageCourseTool({
             </View>
 
             <Text style={[styles.quizPrompt, { color: colors.text }]}>{currentEx.prompt}</Text>
+            {currentEx.sourceWord &&
+            hasVerifiedAudio({
+              translation: currentEx.sourceWord.target,
+              audioFile: currentEx.sourceWord.audioFile || currentEx.sourceWord.audio,
+            }) ? (
+              <Pressable
+                onPress={() =>
+                  playVerifiedAudio({
+                    translation: currentEx.sourceWord!.target,
+                    audioFile: currentEx.sourceWord!.audioFile || currentEx.sourceWord!.audio,
+                  })
+                }
+                accessibilityRole="button"
+                accessibilityLabel="Play verified native-speaker recording"
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  alignSelf: 'flex-start',
+                  gap: 6,
+                  marginTop: 8,
+                  marginBottom: 4,
+                  paddingHorizontal: 12,
+                  paddingVertical: 7,
+                  borderRadius: 999,
+                  backgroundColor: `${langColor}18`,
+                  borderWidth: 1,
+                  borderColor: `${langColor}45`,
+                }}
+              >
+                <Ionicons name="volume-high-outline" size={17} color={langColor} />
+                <Text style={{ fontSize: 13, fontWeight: '700', color: langColor }}>
+                  Play Native Audio
+                </Text>
+              </Pressable>
+            ) : null}
 
             {currentEx.sourceWord &&
               (currentEx.type === 'translate_to_target' ||

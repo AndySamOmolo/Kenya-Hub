@@ -1,5 +1,5 @@
 // Turkana (Ng'aturkana) Grammar Reference Sections
-// Verbally & structurally aligned with the 19-Unit Turkana Course & Dictionary
+// Verbally & structurally aligned with the 15-Unit Turkana Course & Dictionary
 
 export interface TurkanaGrammarSection {
   id: string;
@@ -81,7 +81,7 @@ export const TURKANA_GRAMMAR_SECTIONS: TurkanaGrammarSection[] = [
 * **Interrogatives**: **Ngai?** (Who?), **A-ngai lo?** (Whose is this?), **Nyo?** (What?), **Ali? / Ai?** (Where? / Which?), **Wurre?** (When?), **Ikwani?** (Why?), **Eko nyai?** (How? / Of what sort?), **Ngeyai? / Nyeyai?** (How many?).`,
     examples: [
       {
-        turkana: 'Ngai akero ekon? — Ekiro kang erai Локор.',
+        turkana: 'Ngai akero ekon? — Ekiro kang erai Lokor.',
         english: 'What is your name? — My name is Lokor.',
         gloss: 'Who name thy? — Name my is Lokor.'
       },

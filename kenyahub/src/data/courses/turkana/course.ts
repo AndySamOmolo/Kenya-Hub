@@ -28,7 +28,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-greetings",
-        "title": "Greetings & Farewells (Part 1)",
+        "title": "Greetings & Pastoral Blessings (Part 1)",
         "icon": "Hospital",
         "description": "Master Turkana greetings & farewells vocabulary and expressions from verified historical sources.",
         "tips": "Traditional Turkana pastoral greetings invoke 'Mata!' (Health!) across family, cattle ('Mata ng'atuk'), homestead ('Mata ouwi'), children ('Mata ng'idwi'), and community gatherings ('Mata ariama').",
@@ -49,6 +49,24 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "target": "Mata ng'atuk",
             "source": "Health to your cattle",
             "pronunciation": "ma-ta ng'a-tuk"
+          },
+          {
+            "target": "Mata ouwi",
+            "source": "Health to your village",
+            "pronunciation": "ma-ta ou-wi",
+            "hint": "Pastoral blessing wishing wellbeing upon the homestead and kraal. (Barton 1921)"
+          },
+          {
+            "target": "Mata ng'idwi",
+            "source": "Health to your children",
+            "pronunciation": "ma-ta ng'idwi",
+            "hint": "Pastoral blessing for family and children. Response: 'Mata ariama'. (Barton 1921)"
+          },
+          {
+            "target": "Mata ariama",
+            "source": "Health to our meetings",
+            "pronunciation": "ma-ta a-ria-ma",
+            "hint": "Greeting reply wishing health and prosperity to repeated gatherings and fellowship. (Barton 1921)"
           }
         ],
         "sentences": [
@@ -125,30 +143,12 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-greetings-2",
-        "title": "Greetings & Farewells (Part 2)",
+        "title": "Community Greetings & Farewells (Part 2)",
         "icon": "Handshake",
         "description": "Master Turkana greetings & farewells vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Greetings & Farewells, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mata ouwi' (Health to your village), 'Mata ng'idwi' (Health to your children), 'Mata ariama' (Health to our meetings), 'Mata ng'ebarin' (Health to your property).",
         "culturalNote": "Source attribution: Juxon Barton (1921) 'Turkana Grammatical Notes and Vocabulary' (Bulletin of the School of Oriental Studies) and 'A Classified Vocabulary of Turkana'.",
         "words": [
-          {
-            "target": "Mata ouwi",
-            "source": "Health to your village",
-            "pronunciation": "ma-ta ou-wi",
-            "hint": "Pastoral blessing wishing wellbeing upon the homestead and kraal. (Barton 1921)"
-          },
-          {
-            "target": "Mata ng'idwi",
-            "source": "Health to your children",
-            "pronunciation": "ma-ta ng'idwi",
-            "hint": "Pastoral blessing for family and children. Response: 'Mata ariama'. (Barton 1921)"
-          },
-          {
-            "target": "Mata ariama",
-            "source": "Health to our meetings",
-            "pronunciation": "ma-ta a-ria-ma",
-            "hint": "Greeting reply wishing health and prosperity to repeated gatherings and fellowship. (Barton 1921)"
-          },
           {
             "target": "Mata ng'ebarin",
             "source": "Health to your property",
@@ -1566,9 +1566,9 @@ export const TURKANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "Akamuranika (pl. ngamurak)",
-            "source": "Father-in-law",
+            "source": "Parent-in-law (Father-in-law / Mother-in-law)",
             "pronunciation": "a-ka-mu-ra-ni-ka",
-            "hint": "Father-in-law. (Barton 1921)"
+            "hint": "Father-in-law or mother-in-law. (Barton 1921)"
           },
           {
             "target": "Akamuran (pl. ngamurak)",
@@ -1635,12 +1635,6 @@ export const TURKANA_UNITS: CourseUnit[] = [
             "source": "Stranger",
             "pronunciation": "e-pe-yo-non",
             "hint": "Traveller or visiting guest hosted at the kraal. (Barton 1921)"
-          },
-          {
-            "target": "Akamuranika (pl. ngamurak)",
-            "source": "Mother-in-law",
-            "pronunciation": "a-ka-mu-ra-ni-ka",
-            "hint": "Mother-in-law. (Barton 1921)"
           },
           {
             "target": "Emorothi (pl. ngemoroka)",

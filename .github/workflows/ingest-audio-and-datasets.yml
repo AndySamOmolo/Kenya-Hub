@@ -13,6 +13,11 @@ on:
         required: false
         default: "250"
         type: string
+      only_ungated:
+        description: "Skip gated HF repos if you have not accepted their access terms yet"
+        required: false
+        default: "false"
+        type: string
   push:
     branches: [main]
     paths:
@@ -95,7 +100,9 @@ jobs:
         working-directory: kenyahub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: node scripts/ingest-external-datasets.mjs
+        run: |
+          node scripts/ingest-external-datasets.mjs
+          python3 -u scripts/ingest-permissive-text-datasets.py --max-rows=2500
 
       - name: Stream Open-Access Audio Datasets, Transcode to 24kbps Opus & Upload to Cloudflare R2
         if: steps.lock_check.outputs.skip != 'true' && steps.secrets_check.outputs.ready == 'true'
@@ -110,6 +117,7 @@ jobs:
           NEXT_PUBLIC_AUDIO_CDN_URL: ${{ secrets.NEXT_PUBLIC_AUDIO_CDN_URL }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '250' }}
+          ONLY_UNGATED: ${{ inputs.only_ungated || 'false' }}
           PER_DATASET_TIMEOUT_SEC: "90"
           GLOBAL_TIME_BUDGET_SEC: "1500"
         run: python3 -u scripts/ci-ingest-audio-and-text-r2.py

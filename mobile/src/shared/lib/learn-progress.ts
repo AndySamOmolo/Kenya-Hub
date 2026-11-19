@@ -266,7 +266,7 @@ export function exportAllProgressBackup(languageIds: string[]): string {
     if (raw) {
       try {
         const parsed = migrateProgress(langId, JSON.parse(raw));
-        if (parsed.xp > 0 || parsed.lessonsCompleted > 0 || (parsed.gamesPlayed ?? 0) > 0) {
+        if (parsed.xp > 0 || parsed.lessonsCompleted > 0 || parsed.gamesPlayed > 0) {
           payload[langId] = parsed;
         }
       } catch {

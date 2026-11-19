@@ -13,7 +13,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
@@ -7998,6 +7998,11 @@
           "english": "We are going to cultivate the farm (Maragoli)",
           "translation": "Kutsya kurima mu mugunda",
           "context": "Project Tafsiri v2.0 Luhya Multilingual Dataset (CC-BY-4.0)"
+        },
+        {
+          "english": "hair (cl.5, Lubukusu)",
+          "translation": "li-chune",
+          "context": "Lubukusu noun gloss (16b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
         }
       ]
     },
@@ -24602,6 +24607,16 @@
           "english": "The door opened by Peter",
           "translation": "marked anticausative",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Luragooli (Ch. 15)"
+        },
+        {
+          "english": "gift (cl.7, Lubukusu)",
+          "translation": "si-anua",
+          "context": "Lubukusu noun gloss (13) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "shoes (Lubukusu)",
+          "translation": "bi-raro",
+          "context": "Lubukusu noun gloss (16a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
         }
       ]
     },
@@ -28012,6 +28027,41 @@
           "english": "To wilt, wither (Luragooli alternating -Vk verb)",
           "translation": "kuzurula / kuzuruleka",
           "context": "Hannah Sarvasy, Meredith Landman & Justine Sikuku (2016) Logoori / Luragooli Studies, Language Science Press #96 Chs. 9, 11, 12, 15 (https://langsci-press.org/catalog/book/96, CC-BY-4.0)"
+        },
+        {
+          "english": "to describe / praise (Lubukusu)",
+          "translation": "fwochol-a",
+          "context": "Lubukusu verb stem (10a–c) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "to show (Lubukusu)",
+          "translation": "okesy-a",
+          "context": "Lubukusu verb stem (14b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "to tell (applicative, Lubukusu)",
+          "translation": "kachul-il-a",
+          "context": "Lubukusu applicative verb (15a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "to comb (Lubukusu)",
+          "translation": "chanu-a",
+          "context": "Lubukusu verb stem (16b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "to consider (Lubukusu)",
+          "translation": "bukul-a",
+          "context": "Lubukusu verb stem (17b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "to give (Lubukusu)",
+          "translation": "elesy-a / w-a",
+          "context": "Lubukusu ditransitive verb stems (13, 14a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "to lose (Lubukusu)",
+          "translation": "tib-i-a",
+          "context": "Lubukusu verb stem (16a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
         }
       ]
     },
@@ -29237,6 +29287,31 @@
           "english": "Yellow (Luwanga)",
           "translation": "rabori",
           "context": "Luwanga Vocabulary (Hobley 1902, Eastern Uganda)"
+        },
+        {
+          "english": "self / own / owner (Lubukusu reflexive anaphor)",
+          "translation": "omw-eene (cl.1) / bab-eene (cl.2)",
+          "context": "Lubukusu overt DP anaphor (2b, 10b, §4) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "each other (Lubukusu reciprocal anaphor)",
+          "translation": "bab-eene khu b-eene",
+          "context": "Lubukusu reciprocal collocation (10c, 11b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Lubukusu reflexive & reciprocal voice affixes",
+          "translation": "i- (reflexive prefix) / -an- (reciprocal suffix) / -ikh- (stative/anticausative suffix)",
+          "context": "Lubukusu verbal voice morphology (§4) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "much / a lot (Lubukusu)",
+          "translation": "lukali",
+          "context": "Lubukusu adverb gloss (11a–b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "smart (cl.1, Lubukusu)",
+          "translation": "omu-miliyu",
+          "context": "Lubukusu adjective gloss (17a–b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
         }
       ]
     },
@@ -36068,6 +36143,81 @@
           "english": "The 29 Bagesu / Masaba Clans of Mount Elgon (Roscoe 1915)",
           "translation": "Babesi, Banyuwaka, Baukoki, Baholasi, Bahuku, Baduda, Basukuye, Baliyenda, Baluke, Balage, Bakike, Bapete, Bakikaye, Baheva, Bakumunya, Basihu, Bamasiki, Bakonde, Bayobe, Basave, Balusekya, Balukulu, Bamoni, Batunduye, Babangobe, Batiru, Bambobi, Bakumana, Bafumbe",
           "context": "Rev. John Roscoe (1915) The Northern Bantu — Part IV: The Bagesu / Masaba Clans (p. 164, Public Domain)"
+        },
+        {
+          "english": "John saw Mary (Lubukusu)",
+          "translation": "Yohana a-a-bon-a Maria.",
+          "context": "Lubukusu transitive clause (2a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "John saw himself (Lubukusu)",
+          "translation": "Yohana a-a-i-bon-a omw-eene.",
+          "context": "Lubukusu reflexive voice construction (2b, 8a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "The women described John (Lubukusu)",
+          "translation": "Ba-khasi ba-a-fwochol-a Yohan.",
+          "context": "Lubukusu transitive clause (10a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "The women described themselves (Lubukusu)",
+          "translation": "Ba-khasi ba-a-i-fwochol-a bab-eene.",
+          "context": "Lubukusu reflexive voice construction (10b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "The women described each other (Lubukusu)",
+          "translation": "Ba-khasi ba-a-fwochol-an-a bab-eene khu b-eene.",
+          "context": "Lubukusu reciprocal voice construction (10c) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Wekesa loves himself a lot (Lubukusu)",
+          "translation": "Wekesa a-a-i-siim-a omw-eene lukali.",
+          "context": "Lubukusu reflexive voice with adverb (11a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "The children love each other a lot (Lubukusu)",
+          "translation": "Bab-aana ba-a-siim-an-a bab-eene khu b-eene lukali.",
+          "context": "Lubukusu reciprocal voice with adverb (11b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Mary gave herself a gift (Lubukusu)",
+          "translation": "Maria a-a-i-elesy-a omw-eene si-anua.",
+          "context": "Lubukusu ditransitive reflexive construction (13) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Maria gave the children themselves (Lubukusu)",
+          "translation": "Maria a-a-w-a bab-aana bab-eene.",
+          "context": "Lubukusu double object anaphor construction (14a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "John showed himself to the children (Lubukusu)",
+          "translation": "Yohana a-a-i-okesy-a omw-eene khu b-aana.",
+          "context": "Lubukusu reflexive voice with PP goal (14b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "John told Mary about himself (Lubukusu)",
+          "translation": "Yohana a-a-kachul-il-a Maria khu omw-eene.",
+          "context": "Lubukusu applicative with PP anaphor (15a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Paul lost his shoes (Lubukusu)",
+          "translation": "Paulo a-a-tib-i-a bi-raro bi-ewe.",
+          "context": "Lubukusu possessive object construction (16a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Nick combed his own hair (Lubukusu)",
+          "translation": "Nicki a-a-chanu-a li-chune li-ewe omw-eene.",
+          "context": "Lubukusu emphatic possessive construction (16b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Jack said that he is smart (Lubukusu)",
+          "translation": "Jack a-a-lom-a a-li omw-eene a-li omu-miliyu.",
+          "context": "Lubukusu finite complement clause (17a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "John considers himself to be smart (Lubukusu)",
+          "translation": "Yohanna a-a-i-bukul-a omw-eene khu-b-a omu-miliyu.",
+          "context": "Lubukusu ECM reflexive construction (17b) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
         }
       ]
     },
@@ -40044,8 +40194,8 @@
       ]
     }
   ],
-  "source": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016); Johnson & Diercks (2026) LSP #491 Ch. 18 Tiriki Perception Verbs & Liu (2024) LSP #438 Ch. 15 Tiriki Double Objects (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
+  "source": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016); Johnson & Diercks (2026) LSP #491 Ch. 18 Tiriki Perception Verbs & Liu (2024) LSP #438 Ch. 15 Tiriki Double Objects (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Lubukusu Corpus (Baker 2022, CC-BY-4.0)",
   "isoCode": "luy",
   "glottocode": "luyi1234",
-  "totalEntries": 7036
+  "totalEntries": 7066
 }

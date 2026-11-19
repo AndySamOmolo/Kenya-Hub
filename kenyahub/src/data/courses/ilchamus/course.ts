@@ -504,7 +504,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Sister\"",
             "correctAnswer": "Añganaishai",
             "acceptedAnswers": [
-              "Añganaishai",
               "Añganaishai"
             ],
             "hint": "Starts with \"Añ\""
@@ -514,7 +513,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Eñ karei\"",
             "correctAnswer": "Son",
             "acceptedAnswers": [
-              "Son",
               "Son"
             ],
             "hint": "Review Clans, Marriage & Community Life"
@@ -806,7 +804,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Twenty\"",
             "correctAnswer": "Tigitam",
             "acceptedAnswers": [
-              "Tigitam",
               "Tigitam"
             ],
             "hint": "Starts with \"Ti\""
@@ -816,7 +813,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Tomoni uni\"",
             "correctAnswer": "Thirty",
             "acceptedAnswers": [
-              "Thirty",
               "Thirty"
             ],
             "hint": "Review Trade, Barter, Currency & Traditional Measures"
@@ -949,7 +945,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Milk\"",
             "correctAnswer": "kule",
             "acceptedAnswers": [
-              "kule",
               "kule"
             ],
             "hint": "Starts with \"ku\""
@@ -959,7 +954,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"nkiri\"",
             "correctAnswer": "Meat",
             "acceptedAnswers": [
-              "Meat",
               "Meat"
             ],
             "hint": "Review Staple Foods, Cookery & Beverages"
@@ -1072,7 +1066,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Palm wine or mead\"",
             "correctAnswer": "En naishu, Na mōqa",
             "acceptedAnswers": [
-              "En naishu, Na mōqa",
               "En naishu, Na mōqa"
             ],
             "hint": "Starts with \"En\""
@@ -1082,7 +1075,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Eñ gare\"",
             "correctAnswer": "Water",
             "acceptedAnswers": [
-              "Water",
               "Water"
             ],
             "hint": "Review Crops, Cultivation & Pastoral Livestock"
@@ -1122,7 +1114,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
     "id": "ilchamus-unit-5",
     "unitNumber": 5,
     "title": "Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
+    "description": "Master nature, landscape, flora & East African wildlife in Ilchamus (Njemps) built directly from Sir Harry Johnston (1902), Hon. K. R. Dundas (1910), and Mervyn W. H. Beech (1911).",
     "icon": "PawPrint",
     "color": "#0284C7",
     "skills": [
@@ -2157,7 +2149,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Today\"",
             "correctAnswer": "taata",
             "acceptedAnswers": [
-              "taata",
               "taata"
             ],
             "hint": "Starts with \"ta\""
@@ -2167,7 +2158,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"taisere\"",
             "correctAnswer": "Tomorrow",
             "acceptedAnswers": [
-              "Tomorrow",
               "Tomorrow"
             ],
             "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
@@ -2268,7 +2258,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"taata\"",
             "correctAnswer": "Today",
             "acceptedAnswers": [
-              "Today",
               "Today"
             ],
             "hint": "Review Travel, Directions, Paths & Landmarks"
@@ -2618,7 +2607,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Thief\"",
             "correctAnswer": "Ol aburoni",
             "acceptedAnswers": [
-              "Ol aburoni",
               "Ol aburoni"
             ],
             "hint": "Starts with \"Ol\""
@@ -2628,7 +2616,6 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Eñ udi\"",
             "correctAnswer": "Stick",
             "acceptedAnswers": [
-              "Stick",
               "Stick"
             ],
             "hint": "Review Core Swadesh & Cultural Vocabulary"
@@ -2897,12 +2884,12 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "target": "nabo",
             "source": "One",
-            "pronunciation": "na-bo / o-bo"
+            "pronunciation": "na-bo"
           },
           {
             "target": "are",
             "source": "Two",
-            "pronunciation": "a-re / waa-re"
+            "pronunciation": "a-re"
           },
           {
             "target": "ile",
@@ -2932,7 +2919,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
           {
             "target": "uni",
             "source": "Three",
-            "pronunciation": "u-ni / o-ku-ni"
+            "pronunciation": "u-ni"
           },
           {
             "target": "sapa",
@@ -2955,7 +2942,7 @@ export const ILCHAMUS_UNITS: CourseUnit[] = [
             "source": "I am going to Lake Baringo."
           },
           {
-            "target": "Metamayiana Nkai ang' ang'.",
+            "target": "Metamayiana Nkai nkang' ang'.",
             "source": "May God bless our homestead."
           }
         ]

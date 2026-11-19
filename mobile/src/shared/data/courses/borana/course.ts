@@ -1063,11 +1063,11 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "kudhan — digdama",
-            "source": "Ten — Twenty & Thirty."
+            "source": "Ten — Twenty."
           },
           {
             "target": "dhibba — tokko",
-            "source": "Hundred, Thousand & Hundred Thousand — One."
+            "source": "Hundred — One."
           }
         ],
         "authoredExercises": [
@@ -1076,7 +1076,7 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "What does \"kudhan\" mean in English?",
             "correctAnswer": "Ten",
             "options": [
-              "Twenty & Thirty",
+              "Twenty",
               "Hundred",
               "Ten",
               "One"
@@ -1089,21 +1089,22 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "type": "translate_to_target",
-            "prompt": "Translate to the target language: \"Twenty & Thirty\"",
+            "prompt": "Translate to the target language: \"Twenty\"",
             "correctAnswer": "digdama",
             "acceptedAnswers": [
-              "digdama (digetama, digtama = 20) / sodoma (zodoma = 30)",
-              "digdama"
+              "digdama",
+              "digetama",
+              "digtama"
             ],
             "hint": "Starts with \"di\""
           },
           {
             "type": "translate_to_english",
             "prompt": "Translate to English: \"dhibba\"",
-            "correctAnswer": "Hundred, Thousand & Hundred Thousand",
+            "correctAnswer": "Hundred",
             "acceptedAnswers": [
-              "Hundred, Thousand & Hundred Thousand",
-              "Hundred, Thousand & Hundred Thousand"
+              "Hundred",
+              "One hundred"
             ],
             "hint": "Review Trade, Barter, Currency & Traditional Measures"
           },
@@ -1118,11 +1119,11 @@ export const BORANA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "digdama",
-                "right": "Twenty & Thirty"
+                "right": "Twenty"
               },
               {
                 "left": "dhibba",
-                "right": "Hundred, Thousand & Hundred Thousand"
+                "right": "Hundred"
               },
               {
                 "left": "tokko",
@@ -1242,7 +1243,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"damma\"",
             "correctAnswer": "Honey",
             "acceptedAnswers": [
-              "Honey",
               "Honey"
             ],
             "hint": "Review Staple Foods, Cookery & Beverages"
@@ -1293,7 +1293,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "sórate; lékemse",
             "source": "Eat",
-            "pronunciation": "sórate"
+            "pronunciation": "so-ra-te"
           },
           {
             "target": "damfe",
@@ -1375,7 +1375,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"damfe\"",
             "correctAnswer": "Boil",
             "acceptedAnswers": [
-              "Boil",
               "Boil"
             ],
             "hint": "Review Crops, Cultivation & Pastoral Livestock"
@@ -1705,7 +1704,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"baala\"",
             "correctAnswer": "Leaf",
             "acceptedAnswers": [
-              "Leaf",
               "Leaf"
             ],
             "hint": "Review East African Fauna, Birds & Sacred Trees"
@@ -1997,10 +1995,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "hint": "Tutschek (1845, § 74, p. 20) & Swadesh list"
           },
           {
-            "target": "bertshuma irko",
-            "source": "Arm-chair",
-            "pronunciation": "bertshu-ma irko",
-            "hint": "Rev. J. L. Krapf (1842) Vocabulary of the Galla Language [s.]"
+            "target": "miila",
+            "source": "Leg / Foot",
+            "pronunciation": "mii-la"
           },
           {
             "target": "mōlo",
@@ -2369,7 +2366,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"to scoff, deride, mock\"",
             "correctAnswer": "ageza",
             "acceptedAnswers": [
-              "ageza",
               "ageza"
             ],
             "hint": "Starts with \"ag\""
@@ -2379,7 +2375,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"adjeza\"",
             "correctAnswer": "to kill",
             "acceptedAnswers": [
-              "to kill",
               "to kill"
             ],
             "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
@@ -2445,15 +2440,14 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "arda",
-            "source": "to-day",
+            "source": "Today",
             "pronunciation": "arda",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           },
           {
-            "target": "dirāma",
-            "source": "Early",
-            "pronunciation": "di-ra-ma",
-            "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla adv.)"
+            "target": "halkan",
+            "source": "Night",
+            "pronunciation": "hal-kan"
           },
           {
             "target": "barii",
@@ -2495,8 +2489,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "source": "Dawn — Day."
           },
           {
-            "target": "arda — dirāma",
-            "source": "to-day — Early."
+            "target": "arda — halkan",
+            "source": "Today — Night."
           }
         ],
         "authoredExercises": [
@@ -2506,8 +2500,8 @@ export const BORANA_UNITS: CourseUnit[] = [
             "correctAnswer": "Dawn",
             "options": [
               "Day",
-              "to-day",
-              "Early",
+              "Today",
+              "Night",
               "Dawn"
             ],
             "hint": "Core vocabulary in Day Divisions, Lunar Months & Agricultural Seasons"
@@ -2517,7 +2511,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Day\"",
             "correctAnswer": "gúiya",
             "acceptedAnswers": [
-              "gúiya",
               "gúiya"
             ],
             "hint": "Starts with \"gú\""
@@ -2525,10 +2518,9 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_english",
             "prompt": "Translate to English: \"arda\"",
-            "correctAnswer": "to-day",
+            "correctAnswer": "Today",
             "acceptedAnswers": [
-              "to-day",
-              "to-day"
+              "Today"
             ],
             "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
           },
@@ -2547,11 +2539,11 @@ export const BORANA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "arda",
-                "right": "to-day"
+                "right": "Today"
               },
               {
-                "left": "dirāma",
-                "right": "Early"
+                "left": "halkan",
+                "right": "Night"
               },
               {
                 "left": "barii",
@@ -2616,9 +2608,9 @@ export const BORANA_UNITS: CourseUnit[] = [
             "pronunciation": "tor-bo"
           },
           {
-            "target": "ama",
-            "source": "Soon",
-            "pronunciation": "a-ma"
+            "target": "dhiyoo",
+            "source": "Soon / Near",
+            "pronunciation": "dhi-yoo"
           }
         ],
         "sentences": [
@@ -2649,7 +2641,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Last day\"",
             "correctAnswer": "guiya rawanuáti",
             "acceptedAnswers": [
-              "guiya rawanuáti",
               "guiya rawanuáti"
             ],
             "hint": "Starts with \"gu\""
@@ -2659,7 +2650,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"waggasía hadabre\"",
             "correctAnswer": "Late",
             "acceptedAnswers": [
-              "Late",
               "Late"
             ],
             "hint": "Review Travel, Directions, Paths & Landmarks"
@@ -2802,7 +2792,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"fúde\"",
             "correctAnswer": "Accept",
             "acceptedAnswers": [
-              "Accept",
               "Accept"
             ],
             "hint": "Review Everyday Conversational Phrases & Questions"
@@ -2925,7 +2914,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Act, action\"",
             "correctAnswer": "hútji",
             "acceptedAnswers": [
-              "hútji",
               "hútji"
             ],
             "hint": "Starts with \"hú\""
@@ -2935,7 +2923,6 @@ export const BORANA_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"hútji mideise\"",
             "correctAnswer": "Act",
             "acceptedAnswers": [
-              "Act",
               "Act"
             ],
             "hint": "Review Hospitality, Requests & Social Discourse"
@@ -3262,7 +3249,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "fúrdate",
-            "source": "To be fast",
+            "source": "To be fat / grow fat",
             "pronunciation": "furda-te",
             "hint": "Krapf (1850) Vocabulary of Six East-African Languages (Kigálla)"
           }
@@ -3644,7 +3631,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "kan",
-            "source": "Why",
+            "source": "That / Which (relative particle)",
             "pronunciation": "kan",
             "hint": "Karl & Lawrence Tutschek (1845) Dictionary of the Galla Language, Part II [adv.]"
           },
@@ -3705,10 +3692,10 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"kan\" in Borana (Afaan Borana)?",
-            "correctAnswer": "Why",
+            "correctAnswer": "That / Which (relative particle)",
             "options": [
               "Wholesomeness",
-              "Why",
+              "That / Which (relative particle)",
               "Who?",
               "Whither?"
             ],
@@ -3717,11 +3704,11 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each verified Borana (Afaan Borana) term to its English meaning:",
-            "correctAnswer": "kan: Why",
+            "correctAnswer": "kan: That / Which (relative particle)",
             "pairs": [
               {
                 "left": "kan",
-                "right": "Why"
+                "right": "That / Which (relative particle)"
               },
               {
                 "left": "faya",
@@ -4039,7 +4026,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           {
             "target": "Zila zimalan yaba, Zimali dameṅ cabu; zila dirmamun gala, dirmamun galaṅ cabu",
             "source": "Were I to climb the bamboo, the bamboo has no branches; were I to go home through the twilight, the twilight has no path home",
-            "pronunciation": "zi-la zi-ma-lan ya-ba / co-ta-ni co-ta-ni yaa ba-ba-za-ni",
+            "pronunciation": "zi-la zi-ma-lan ya-ba, zi-ma-li da-men ca-bu",
             "hint": "Tutschek (1844, Part I, pp. 127, 148 — Wetu songs)"
           }
         ],
@@ -4129,7 +4116,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "arda",
-            "source": "To-day",
+            "source": "Today",
             "pronunciation": "arda"
           },
           {
@@ -4139,7 +4126,7 @@ export const BORANA_UNITS: CourseUnit[] = [
           },
           {
             "target": "iftān",
-            "source": "After to-morrow",
+            "source": "Day after tomorrow",
             "pronunciation": "iftān"
           },
           {
@@ -4430,7 +4417,7 @@ export const BORANA_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Gofta regariti dau tshalate. — Nama kan manna henkabna. — Workef meti; Dagaf maka; Kan duef kan tshira.",
-            "source": "The king likes the beating of the drum. — A man who has no house. — Gold and silver; Stone and wood; The living and the dead."
+            "source": "The king likes the beating of the drum. — A man who has no house. — Gold and silver; Stone and wood; The dead and the living."
           },
           {
             "target": "Naga ambulte! — Bulla bulte naguma! — Gondi kuni mekan eniu? — Metātit tsheddan. — Anda atam tshirte?",

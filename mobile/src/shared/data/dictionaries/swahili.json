@@ -14,8 +14,8 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
-  "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917 \"English-Swahili Vocabulary\", SPCK London, pp. 1–56 [PDF pp. 1–72]), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0)).",
+  "lastUpdated": "2026-11-19",
+  "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917 \"English-Swahili Vocabulary\", SPCK London, pp. 1–56 [PDF pp. 1–72]), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0)). Further enriched with Lamu/Pate/Shela coastal Swahili terms from C. H. & N. Y. Stigand (1914) 'Black Tales for White Children' (Project Gutenberg #38992, US Public Domain) and Swahili proverbs from Wikiquote (CC-BY-SA-4.0).",
   "categories": [
     {
       "id": "greetings",
@@ -1040,6 +1040,16 @@
           "translation": "vinginevyo",
           "context": "Kaikki.org Swahili Machine-Readable Dictionary (https://kaikki.org/dictionary/Swahili/pos-conj/index.html, CC-BY-SA)",
           "pronunciation": "viŋginevjo"
+        },
+        {
+          "english": "May I come in? (call when knocking at a door)",
+          "translation": "Hodi!",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XI p. 72 ('they knocked on the door. \"Hodi!\" And she replied, \"Come near.\"')."
+        },
+        {
+          "english": "Here I am (respectful response when called)",
+          "translation": "Lebeka",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XV pp. 99, 107 ('\"Lebeka, father,\" which means \"Here I am\"')."
         }
       ]
     },
@@ -30481,6 +30491,21 @@
           "english": "monkey",
           "translation": "N-dugu w-angu m-refu a-li-anguka",
           "context": "Language Science Press #192: Theory and Description in African Linguistics (CC-BY-4.0) — Swahili (Ch. 29)"
+        },
+        {
+          "english": "Honey-guide bird",
+          "translation": "Segu",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XVI p. 109 ('Segu is the honey-guide.')."
+        },
+        {
+          "english": "Tewa fish (coastal marine fish)",
+          "translation": "Tewa",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XXIV pp. 168–169 ('a Tewa fish')."
+        },
+        {
+          "english": "Duck",
+          "translation": "bata",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XXVII p. 190 ('Bata the duck')."
         }
       ]
     },
@@ -41200,6 +41225,11 @@
           "english": "Wood",
           "translation": "ndū-kūni",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
+        },
+        {
+          "english": "Tree with red sap",
+          "translation": "Mtumbati",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XXIII p. 154 ('a tree which is called Mtumbati and smeared his knife and spear with the sap of that tree, which is red')."
         }
       ]
     },
@@ -49667,6 +49697,11 @@
           "english": "Yam",
           "translation": "z-āzi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21 e. Ki-tikūū (Faza-Bajun)"
+        },
+        {
+          "english": "Sweet spiced cake / confection (ladu-cake)",
+          "translation": "ladu",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XVII pp. 112–115 ('seven ladu-cakes')."
         }
       ]
     },
@@ -64099,6 +64134,11 @@
           "english": "lay a cover, make (a bed)",
           "translation": "tanda ‘spread over’",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Standard Swahili (Ch. 14)"
+        },
+        {
+          "english": "Long traditional Swahili tunic / shirt",
+          "translation": "kanzu",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XVII p. 113 ('that Kanzu shirt of yours')."
         }
       ]
     },
@@ -91526,6 +91566,11 @@
           "english": "ona ‘see’",
           "translation": "be seen",
           "context": "Language Science Press #121: Diversity in African Languages (CC-BY-4.0) — Standard Swahili (Ch. 14)"
+        },
+        {
+          "english": "Look! / behold! (Lamu/Kiamu Swahili)",
+          "translation": "lola",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XV p. 106 ('Lola, Makami, lola, look well at me.')."
         }
       ]
     },
@@ -294535,12 +294580,152 @@
           "translation": "Kimvita (1915): Kwani Mwenyiezi Mngu jinsi alivyoupenda ulimwengu, amewapa watu Mwanawe mzaliwa pekee, killa mwenyi kuamini kwakwe asipotee, awe na uzima wa milele. • Kiunguja (1921): Kwa maana jinsi hii Mungu aliupenda ulimwengu, hatta akampeleka Mwana wake wa pekee, illi mtu aliye yote amwaminiye asipotee, bali apate uzima wa milele.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)",
           "pronunciation": "Kiᵐvita"
+        },
+        {
+          "english": "Coast / people of the East African coast",
+          "translation": "Sawaheli",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. v ('Swahili, or Sawaheli, comes from the Arabic word Sawahil, meaning coast')."
+        },
+        {
+          "english": "The Swahili language",
+          "translation": "Kisawaheli",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. v ('This is called Kisawaheli, or the Swahili language')."
+        },
+        {
+          "english": "It is not he, my child, not Nunda the eater of folk (traditional tale chorus)",
+          "translation": "Siye mwanangu siye, siye Nunda mlawatu.",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. vii."
+        },
+        {
+          "english": "Mythical devouring beast / man-eater in Swahili folklore",
+          "translation": "Nunda",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. vii & Story VI pp. 44–50 ('Nunda mlawatu' / 'Nunda who eats people')."
+        },
+        {
+          "english": "King or chief (of a coastal town or island)",
+          "translation": "Sultan",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. viii ('The Sultan is the king or chief.')."
+        },
+        {
+          "english": "Prime minister or head man",
+          "translation": "Wazir",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. viii ('The Wazir... is his prime minister or head man.')."
+        },
+        {
+          "english": "Governor (appointed over a town or island)",
+          "translation": "Wali",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. ix & Story XXI p. 140 ('a governor, called Wali or Liwali')."
+        },
+        {
+          "english": "Governor (coastal town or island governor)",
+          "translation": "Liwali",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. ix ('a governor, called Wali or Liwali')."
+        },
+        {
+          "english": "Spirit / fairy (good or bad)",
+          "translation": "jin",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Foreword p. viii ('The jin or fairy, both good and bad')."
+        },
+        {
+          "english": "Great seven-headed sea serpent (Swahili folklore)",
+          "translation": "Pemba Muhori",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story II pp. 9–20 ('Pemba Muhori, the great sea serpent')."
+        },
+        {
+          "english": "Child of a root (folklore name)",
+          "translation": "Mwanamizi",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XIV p. 93 ('he called her Mwanamizi, the child of a root')."
+        },
+        {
+          "english": "Two people who cannot agree / two incompatible things (proverbial expression)",
+          "translation": "Lila na Fila",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XVII p. 117 ('if there are two people who cannot agree, or two things which cannot go together, it is said of them: \"They are like Lila and Fila.\"')."
+        },
+        {
+          "english": "Two people exactly suited to one another / obtaining one's heart's desire (proverbial expression)",
+          "translation": "Shani na Tabak",
+          "context": "Capt. C. H. Stigand & Mrs. C. H. Stigand, Black Tales for White Children (Boston & New York: Houghton Mifflin Company, 1914 — US Public Domain, Project Gutenberg #38992, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm), Story XXI p. 149 (Lamu/Pate/Shela tale; 'talk of Shani and Tabak, meaning some one obtaining his heart's desire... or two people who are exactly suited to one another')."
+        },
+        {
+          "english": "Do not get involved in matters that do not concern you.",
+          "translation": "Usijaze masusu kwa mambo yasokusuhu.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs) — traditional kanga proverb."
+        },
+        {
+          "english": "A leopard skin is beautiful to see, but inside there is an enemy.",
+          "translation": "Ngozi ya chui uzuri kwa macho, ndani adui.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "A clear conscience is a soft mat.",
+          "translation": "Dhamiri safi ni tandiko laini.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "The prayer of the fowl does not bother the hawk.",
+          "translation": "Dua la kuku halimpati mwewe.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "The gratitude of a donkey is a kick.",
+          "translation": "Fadhila ya punda ni mateke.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "Follow bees that you may eat honey.",
+          "translation": "Fuata nyuki ule asali.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "Hurry, hurry, has no blessings. (More haste, less speed)",
+          "translation": "Haraka haraka haina baraka.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "Kindness does not go bad.",
+          "translation": "Hisani haiozi.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "The rooster, always beneficial, is eaten.",
+          "translation": "Jogoo mtenda mema kaliwa.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "A day-worker cultivates in the sun, the master eats in the shade.",
+          "translation": "Kibarua hulima juani, tajiri hulia kivulini.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "A foundation that is not level is not strong; don't blame the wall if it falls down.",
+          "translation": "Msinji ukiinama hauna nguvu; usiushtaki ukuta ukianguka.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "If you make yourself like honey, all the flies will devour you.",
+          "translation": "Ukijifanya asali nzi wote watakula.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "Don't set sail using somebody else's star.",
+          "translation": "Usisafirie nyota ya mwenzio.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs) (citing Sophy Roberts, A Training School for Elephants, 2025, p. 310)."
+        },
+        {
+          "english": "Slow, slow is the way to go.",
+          "translation": "Pole pole ndio mwendo.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "english": "A person is people.",
+          "translation": "Mtu ni watu.",
+          "context": "Wikiquote, Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
         }
       ]
     }
   ],
-  "source": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022); Goldsmith & Mpiranya (2022) LSP #306 Ch. 5, Mwamzandi (2022) Ch. 13, Nurse (2019) LSP #190 Ch. 33, Ustadh Mau (2013) Kiamu Poetics, Beech (1918), TICO-19 & Stanford PACS (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
+  "source": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022); Goldsmith & Mpiranya (2022) LSP #306 Ch. 5, Mwamzandi (2022) Ch. 13, Nurse (2019) LSP #190 Ch. 33, Ustadh Mau (2013) Kiamu Poetics, Beech (1918), TICO-19 & Stanford PACS (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); C. H. & N. Y. Stigand (1914) Black Tales for White Children (Project Gutenberg #38992, US Public Domain, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm); Wikiquote Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)",
   "isoCode": "swh",
   "glottocode": "swah1253",
-  "totalEntries": 52934
+  "totalEntries": 52971
 }

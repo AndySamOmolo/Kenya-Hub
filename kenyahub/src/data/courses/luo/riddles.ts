@@ -64,13 +64,13 @@ export const luoRiddles: RiddleEntry[] = [
   },
   {
     "id": 10,
-    "luo": "Kuot mar dhiang' ma borre Romo futi 3 gi nus (3 ft 6 in.) kadhi malo to futi 6 (6 ft) kadhiariyo, ma opaki gi rangi makwar, marachar, gi marateng'? (Northcote 1907, p. 59).",
+    "luo": "Kuot mar dhiang' ma borre romo futi 3 gi nus (3 ft 6 in.) kadhi malo to futi 6 (6 ft) ka dhi ariyo, ma opaki gi rangi makwar, marachar, gi marateng'? (Northcote 1907, p. 59).",
     "english": "What heavy buffalo-hide war shield measures 3 feet 6 inches vertically and nearly 6 feet horizontally, curved back to cover the warrior's left side, back, and front, and painted red, white, and black?",
     "answer": "Kuot (The huge Jaluo buffalo-hide shield — G. A. S. Northcote, JRAI Vol. 37, 1907, p. 59)"
   },
   {
     "id": 11,
-    "luo": "Dero mar adita ma oting'ore futi 2 (2 ft) a e piny, borre futi 5 (5 ft), to lachne futi 3 (3 ft), ma dhoge tin e wiye kama wic gi gok dichwo donjie? (Northcote 1907, p. 60).",
+    "luo": "Dero mar adita ma oting'ore futi 2 (2 ft) a e piny, borre futi 5 (5 ft), to lachne futi 3 (3 ft), ma dhoge tin e wiye kama wich gi gok dichwo donjie? (Northcote 1907, p. 60).",
     "english": "What basket/wicker-work storehouse around the central cattle pen is raised 2 feet off the ground, stands 5 feet high and 3 feet in diameter, and has a small opening near the top just large enough for a man's head and shoulders?",
     "answer": "Dero (The circular Jaluo wicker granary capped with a grass roof — G. A. S. Northcote, 1907, pp. 60–61)"
   },

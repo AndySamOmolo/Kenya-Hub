@@ -532,7 +532,7 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           },
           {
             "target": "fás",
-            "source": "Blood (fás)",
+            "source": "Blood",
             "pronunciation": "fahs"
           },
           {
@@ -733,17 +733,17 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           },
           {
             "target": "wáas (Sa wáás, Bd waas)",
-            "source": "Tail (wáas)",
+            "source": "Tail",
             "pronunciation": "waas"
           },
           {
             "target": "dúm",
-            "source": "Tip of the tail (dúm)",
+            "source": "Tip of the tail",
             "pronunciation": "duum"
           },
           {
             "target": "sugu",
-            "source": "Back (sugu)",
+            "source": "Back",
             "pronunciation": "su-gu"
           }
         ],
@@ -1780,187 +1780,187 @@ export const DAASANACH_UNITS: CourseUnit[] = [
           {
             "target": "lulli",
             "source": "All",
-            "pronunciation": "lulli"
+            "pronunciation": "lool-lee"
           },
           {
             "target": "geer-e",
             "source": "Belly",
-            "pronunciation": "geer-e"
+            "pronunciation": "gee-reh"
           },
           {
             "target": "guddu",
             "source": "Big",
-            "pronunciation": "guddu"
+            "pronunciation": "good-duu"
           },
           {
             "target": "fás",
             "source": "Blood",
-            "pronunciation": "fás"
+            "pronunciation": "fahs"
           },
           {
             "target": "láf-u",
             "source": "Bone",
-            "pronunciation": "láf-u"
+            "pronunciation": "lah-fuu"
           },
           {
             "target": "derri-c",
             "source": "Cloud",
-            "pronunciation": "derri-c"
+            "pronunciation": "der-reech"
           },
           {
             "target": "cér",
             "source": "Dog",
-            "pronunciation": "cér"
+            "pronunciation": "cher"
           },
           {
             "target": "gogu",
             "source": "Dry",
-            "pronunciation": "gogu"
+            "pronunciation": "goh-guu"
           },
           {
             "target": "nee",
             "source": "Ear",
-            "pronunciation": "nee"
+            "pronunciation": "neh"
           },
           {
             "target": "kóm",
             "source": "Eat",
-            "pronunciation": "kóm"
+            "pronunciation": "kohm"
           },
           {
             "target": "bal-li",
             "source": "Feather",
-            "pronunciation": "bal-li"
+            "pronunciation": "bahl-lee"
           },
           {
             "target": "kóc",
             "source": "Full",
-            "pronunciation": "kóc"
+            "pronunciation": "kohch"
           },
           {
             "target": "šíiš",
             "source": "Give",
-            "pronunciation": "šíiš"
+            "pronunciation": "sheesh"
           },
           {
             "target": "sí",
             "source": "Go",
-            "pronunciation": "sí"
+            "pronunciation": "see"
           },
           {
             "target": "ðúur",
             "source": "Hair",
-            "pronunciation": "ðúur"
+            "pronunciation": "dhuur"
           },
           {
             "target": "gíl",
             "source": "Hand",
-            "pronunciation": "gíl"
+            "pronunciation": "geel"
           },
           {
             "target": "máal",
             "source": "Hear",
-            "pronunciation": "máal"
+            "pronunciation": "maal"
           },
           {
             "target": "gáas",
             "source": "Horn",
-            "pronunciation": "gáas"
+            "pronunciation": "gaas"
           },
           {
             "target": "yú",
             "source": "I",
-            "pronunciation": "yú"
+            "pronunciation": "yuu"
           },
           {
             "target": "círa",
             "source": "Liver",
-            "pronunciation": "círa"
+            "pronunciation": "chee-rah"
           },
           {
             "target": "búrnab",
             "source": "Be many",
-            "pronunciation": "búrnab"
+            "pronunciation": "buur-nahb"
           },
           {
             "target": "mée",
             "source": "Name",
-            "pronunciation": "mée"
+            "pronunciation": "mee"
           },
           {
             "target": "káana",
             "source": "New",
-            "pronunciation": "káana"
+            "pronunciation": "kaa-nah"
           },
           {
             "target": "cuur-i",
             "source": "Night",
-            "pronunciation": "cuur-i"
+            "pronunciation": "chuu-ree"
           },
           {
             "target": "sóon-o",
             "source": "Nose",
-            "pronunciation": "sóon-o"
+            "pronunciation": "soo-noh"
           },
           {
             "target": "búr",
             "source": "Red",
-            "pronunciation": "búr"
+            "pronunciation": "bur"
           },
           {
             "target": "yùoc",
             "source": "Sand",
-            "pronunciation": "yùoc"
+            "pronunciation": "yu-och"
           },
           {
             "target": "yédik",
             "source": "Sit / live",
-            "pronunciation": "yédik"
+            "pronunciation": "yeh-deek"
           },
           {
             "target": "cár",
             "source": "Snake",
-            "pronunciation": "cár"
+            "pronunciation": "chaar"
           },
           {
             "target": "ðánu",
             "source": "Swim",
-            "pronunciation": "ðánu"
+            "pronunciation": "dhah-nuu"
           },
           {
             "target": "kúun-i",
             "source": "Thou",
-            "pronunciation": "kúun-i"
+            "pronunciation": "kuu-ni"
           },
           {
             "target": "sed-di",
             "source": "Three",
-            "pronunciation": "sed-di"
+            "pronunciation": "sed-dee"
           },
           {
             "target": "kác-u",
             "source": "Tooth",
-            "pronunciation": "kác-u"
+            "pronunciation": "kah-chuu"
           },
           {
             "target": "naama",
             "source": "Two",
-            "pronunciation": "naama"
+            "pronunciation": "naa-mah"
           },
           {
             "target": "bie",
             "source": "Water",
-            "pronunciation": "bie"
+            "pronunciation": "bee-eh"
           },
           {
             "target": "méete",
             "source": "What",
-            "pronunciation": "méete"
+            "pronunciation": "mee-teh"
           },
           {
             "target": "máaya",
             "source": "Who",
-            "pronunciation": "máaya"
+            "pronunciation": "maa-yah"
           }
         ],
         "sentences": [

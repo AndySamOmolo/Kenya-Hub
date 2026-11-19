@@ -978,7 +978,7 @@ export const KISII_UNITS: CourseUnit[] = [
         "words": [
           {
             "target": "omoiseke (pl. abaiseke)",
-            "source": "Girl (Class 9/2)",
+            "source": "Girl (Class 1/2: omo-/aba-)",
             "pronunciation": "o-moi-se-ke",
             "hint": "Wikipedia Gusii language — Noun classes"
           },
@@ -1001,30 +1001,29 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "N-dugi-ani. Omw-ana ow-etu",
+            "target": "omwana oitu / omomura oitu",
             "source": "Brother",
-            "pronunciation": "n-dugi-ani / omw-ana ow-etu"
+            "pronunciation": "omwa-na o-i-tu"
           },
           {
-            "target": "Nya-rukha. Omw-iseke",
+            "target": "omwiseke oitu / nyarukha",
             "source": "Sister",
-            "pronunciation": "nya-rukha / omw-iseke"
+            "pronunciation": "omwi-se-ke o-i-tu / nya-ru-kha"
           },
           {
-            "target": "Omw-ana (Omo-isia)",
-            "source": "Son, boy",
-            "pronunciation": "omw-ana / omo-isia"
+            "target": "omwana / omoisia",
+            "source": "Son / Boy",
+            "pronunciation": "omwa-na / o-moi-sia"
           },
           {
-            "target": "Omo-ke (Omu-kunggu)",
+            "target": "omokungu / omoke",
             "source": "Wife",
-            "pronunciation": "omo-ke / omu-kunggu"
+            "pronunciation": "o-mo-ku-ngu / o-mo-ke"
           },
           {
-            "target": "umwisia",
-            "source": "Son",
-            "pronunciation": "umwi-sia",
-            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)"
+            "target": "omomura (pl. abamura)",
+            "source": "Young man / Son",
+            "pronunciation": "o-mo-mu-ra"
           }
         ],
         "authoredExercises": [
@@ -1047,11 +1046,11 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "match_pairs",
             "prompt": "Match each verified Kisii (Ekegusii) term to its English meaning:",
-            "correctAnswer": "omoiseke (pl. abaiseke): Girl (Class 9/2)",
+            "correctAnswer": "omoiseke (pl. abaiseke): Girl (Class 1/2: omo-/aba-)",
             "pairs": [
               {
                 "left": "omoiseke (pl. abaiseke)",
-                "right": "Girl (Class 9/2)"
+                "right": "Girl (Class 1/2: omo-/aba-)"
               },
               {
                 "left": "sokoro",
@@ -1070,17 +1069,12 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kisii (Ekegusii) term for \"Brother\": ___",
-            "correctAnswer": "N-dugi-ani. Omw-ana ow-etu",
+            "correctAnswer": "omwana oitu",
             "options": [
               "omoiseke",
               "sokoro",
               "omosubati",
-              "N-dugi-ani. Omw-ana ow-etu"
-            ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
-            "acceptedAnswers": [
-              "N-dugi-ani. Omw-ana ow-etu / Om-ura om-intu. Omo-mura om-intu",
-              "N-dugi-ani. Omw-ana ow-etu"
+              "omwana oitu"
             ]
           }
         ]
@@ -1497,9 +1491,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "Ri-gomia; ama-. Eri-toki; ama- / Eri-toke; ama-",
+            "target": "rigomia (pl. amagomia) / ritoke",
             "source": "Banana",
-            "pronunciation": "ri-gomia"
+            "pronunciation": "ri-go-mia / ri-to-ke"
           }
         ],
         "authoredExercises": [
@@ -1621,29 +1615,29 @@ export const KISII_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Ege-tinia. Ama-guta / Ege-tinia; evi-",
-            "source": "Fat, oil",
-            "pronunciation": "ege-tinia / ama-guta"
+            "target": "amaguta / egetinia",
+            "source": "Fat / Oil",
+            "pronunciation": "a-ma-gu-ta / e-ge-ti-nia"
           },
           {
-            "target": "In-jala, en-jara / En-cara",
+            "target": "enchara / enjara",
             "source": "Hunger",
-            "pronunciation": "in-jala en-jara / en-cara"
+            "pronunciation": "en-cha-ra / en-ja-ra"
           },
           {
-            "target": "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
+            "target": "ebando (pl. chibando)",
             "source": "Maize",
-            "pronunciation": "e-bando"
+            "pronunciation": "e-ba-ndo"
           },
           {
-            "target": "Ama-vere",
+            "target": "amabere / amavere",
             "source": "Milk",
-            "pronunciation": "ama-vere"
+            "pronunciation": "a-ma-be-re"
           },
           {
-            "target": "Ama-rwa",
-            "source": "Palm wine, beer",
-            "pronunciation": "ama-rwa"
+            "target": "amarwa",
+            "source": "Traditional millet beer",
+            "pronunciation": "a-ma-rwa"
           },
           {
             "target": "-lia",
@@ -1657,121 +1651,105 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)"
           },
           {
-            "target": "amauta",
-            "source": "Fat",
-            "pronunciation": "a-mau-ta",
-            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)"
+            "target": "chinyeni",
+            "source": "Vegetables / Greens",
+            "pronunciation": "chi-nye-ni"
           },
           {
-            "target": "amarua",
-            "source": "Beer",
-            "pronunciation": "a-ma-rua",
-            "hint": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Kossova / Kisii)"
+            "target": "eng'ombe (pl. chiombe)",
+            "source": "Cow / Cattle",
+            "pronunciation": "eng-o-mbe"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Ege-tinia. Ama-guta / Ege-tinia; evi-\" in Kisii?",
-            "correctAnswer": "Fat",
+            "prompt": "What is the English meaning of \"amaguta / egetinia\" in Kisii?",
+            "correctAnswer": "Fat / Oil",
             "options": [
               "Hunger",
               "Maize",
               "Milk",
-              "Fat"
-            ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
-            "acceptedAnswers": [
-              "Fat, oil",
-              "Fat"
+              "Fat / Oil"
             ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"In-jala, en-jara / En-cara\" in Kisii?",
+            "prompt": "What is the English meaning of \"enchara / enjara\" in Kisii?",
             "correctAnswer": "Hunger",
             "options": [
               "Maize",
               "Milk",
-              "Fat",
+              "Fat / Oil",
               "Hunger"
-            ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
+            ]
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa\" in Kisii?",
+            "prompt": "What is the English meaning of \"ebando (pl. chibando)\" in Kisii?",
             "correctAnswer": "Maize",
             "options": [
               "Milk",
               "Maize",
-              "Fat",
+              "Fat / Oil",
               "Hunger"
-            ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
+            ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Maize\" in Kisii?",
-            "correctAnswer": "E-bando",
+            "correctAnswer": "ebando",
             "options": [
-              "Ege-tinia. Ama-guta",
-              "In-jala",
-              "Ama-vere",
-              "E-bando"
-            ],
-            "hint": "Starts with \"E-…\" (7 letters)",
-            "acceptedAnswers": [
-              "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
-              "E-bando"
+              "amaguta",
+              "enchara",
+              "amabere",
+              "ebando"
             ]
           },
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Milk\" in Kisii?",
-            "correctAnswer": "Ama-vere",
+            "correctAnswer": "amabere",
             "options": [
-              "Ege-tinia. Ama-guta",
-              "In-jala",
-              "E-bando",
-              "Ama-vere"
-            ],
-            "hint": "Starts with \"Am…\" (8 letters)"
+              "amaguta",
+              "enchara",
+              "ebando",
+              "amabere"
+            ]
           },
           {
             "type": "match_pairs",
             "prompt": "Match each Kisii expression with its English meaning:",
-            "correctAnswer": "Ege-tinia. Ama-guta / Ege-tinia; evi-: Fat, oil",
+            "correctAnswer": "amaguta / egetinia: Fat / Oil",
             "pairs": [
               {
-                "left": "Ege-tinia. Ama-guta / Ege-tinia; evi-",
-                "right": "Fat, oil"
+                "left": "amaguta / egetinia",
+                "right": "Fat / Oil"
               },
               {
-                "left": "In-jala, en-jara / En-cara",
+                "left": "enchara / enjara",
                 "right": "Hunger"
               },
               {
-                "left": "E-bando; ci-. Erinya-modoma / Ama-dumo. Eri-tumwa",
+                "left": "ebando (pl. chibando)",
                 "right": "Maize"
               },
               {
-                "left": "Ama-vere",
+                "left": "amabere / amavere",
                 "right": "Milk"
               }
             ]
           },
           {
             "type": "fill_blank",
-            "prompt": "Complete the Kisii term for \"Palm wine, beer\": ___",
-            "correctAnswer": "Ama-rwa",
+            "prompt": "Complete the Kisii term for \"Traditional millet beer\": ___",
+            "correctAnswer": "amarwa",
             "options": [
-              "Ege-tinia. Ama-guta",
-              "Ama-rwa",
-              "In-jala",
-              "E-bando"
-            ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
+              "amaguta",
+              "amarwa",
+              "enchara",
+              "ebando"
+            ]
           }
         ]
       }
@@ -1849,12 +1827,12 @@ export const KISII_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "rituko — obotuko",
-            "source": "Day — Night."
+            "target": "Rituko n'obotuko mbuya.",
+            "source": "Day and night are good."
           },
           {
-            "target": "omote — embura",
-            "source": "Tree — Rain."
+            "target": "Embura nigo ekorwa igoro ase omote.",
+            "source": "Rain falls from above onto the tree."
           }
         ],
         "authoredExercises": [
@@ -1964,9 +1942,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Ekegusii"
           },
           {
-            "target": "muwaso",
-            "source": "Sun",
-            "pronunciation": "mu-wa-so"
+            "target": "enchogu",
+            "source": "Elephant",
+            "pronunciation": "en-cho-gu"
           },
           {
             "target": "iriuba",
@@ -1974,9 +1952,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "pronunciation": "i-riu-ba"
           },
           {
-            "target": "Eny-anja",
-            "source": "Lake",
-            "pronunciation": "eny-anja"
+            "target": "engo",
+            "source": "Leopard",
+            "pronunciation": "en-go"
           },
           {
             "target": "Em-beho",
@@ -1986,12 +1964,12 @@ export const KISII_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ense — risase",
-            "source": "Earth — Sun."
+            "target": "Risase nigo rikorika ase ense.",
+            "source": "The sun shines upon the earth."
           },
           {
-            "target": "enyancha — eroro",
-            "source": "Lake — Desert."
+            "target": "Enyancha nene ere ange n'eroro.",
+            "source": "A great lake is near the wilderness."
           }
         ],
         "authoredExercises": [
@@ -2109,49 +2087,44 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Gusii language — Sample phrases"
           },
           {
-            "target": "obori",
-            "source": "Finger-millet (wimbi)",
-            "pronunciation": "o-bo-ri",
-            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+            "target": "riino (pl. amaino)",
+            "source": "Tooth",
+            "pronunciation": "rii-no"
           },
           {
-            "target": "amaemba",
-            "source": "Sorghum",
-            "pronunciation": "a-maemba",
-            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+            "target": "oromeme (pl. chimeme)",
+            "source": "Tongue",
+            "pronunciation": "o-ro-me-me"
           },
           {
-            "target": "rigomia (ritoke)",
-            "source": "Banana",
-            "pronunciation": "ri-go-mia / ri-to-ke",
-            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+            "target": "emioro",
+            "source": "Nose",
+            "pronunciation": "e-mio-ro"
           },
           {
-            "target": "erabuoni",
-            "source": "Sweet potato",
-            "pronunciation": "e-ra-buo-ni",
-            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+            "target": "omonwa",
+            "source": "Mouth",
+            "pronunciation": "o-mo-nwa"
           },
           {
-            "target": "obouki",
-            "source": "Honey",
-            "pronunciation": "o-bou-ki",
-            "hint": "C. W. Hobley (1902, pp. 89–91 Kossova) & Sir Harry H. Johnston (1919, Vol. I, pp. 73–85 #7 Ki-guzii)"
+            "target": "enkoro",
+            "source": "Heart",
+            "pronunciation": "en-ko-ro"
           },
           {
-            "target": "Omo-kono; ama- / Oko-boko",
+            "target": "omokono / okoboko",
             "source": "Arm",
-            "pronunciation": "omo-kono"
+            "pronunciation": "o-mo-ko-no / o-ko-bo-ko"
           },
           {
-            "target": "Omo-gonggo",
+            "target": "omogongo",
             "source": "Back",
-            "pronunciation": "omo-gonggo"
+            "pronunciation": "o-mo-go-ngo"
           },
           {
-            "target": "In-da, En-dā; cin-da / En-da; cin-da",
-            "source": "Belly",
-            "pronunciation": "in-da en-da"
+            "target": "enda (pl. chinda)",
+            "source": "Belly / Stomach",
+            "pronunciation": "en-da"
           }
         ],
         "authoredExercises": [
@@ -2213,83 +2186,82 @@ export const KISII_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kisii (Ekegusii) (Ekegusii) in C. W. Hobley (1902 Kossova Vocabulary) & Sir Harry Johnston (1902 Igizii & 1919 Sub-group A6 Ki-Guzii / Ki-Koria) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kisii, Nyamira.",
         "words": [
           {
-            "target": "Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga",
+            "target": "amanyinga",
             "source": "Blood",
-            "pronunciation": "amany-ingga"
+            "pronunciation": "a-ma-nyi-nga"
           },
           {
-            "target": "Eki-kuba; evi- / Ege-kuba; eve-. Eng-kuba; cing-",
-            "source": "Breast (man's)",
-            "pronunciation": "eki-kuba"
+            "target": "egekuba (pl. ebikuba)",
+            "source": "Chest",
+            "pronunciation": "e-ge-ku-ba"
           },
           {
-            "target": "Li-bere / Olu-bere; cim-",
-            "source": "Breast (woman's)",
-            "pronunciation": "li-bere / olu-bere"
+            "target": "ribere (pl. amabere)",
+            "source": "Breast",
+            "pronunciation": "ri-be-re"
           },
           {
-            "target": "Eki-ara; evi- or ebi- / Eki-ara; evi-. Ek-era; evi-ara",
+            "target": "ekiara (pl. ebiara)",
             "source": "Finger",
-            "pronunciation": "eki-ara"
+            "pronunciation": "e-kia-ra"
           },
           {
-            "target": "E-tukia; ci-",
+            "target": "etukia (pl. chitukia)",
             "source": "Hair",
-            "pronunciation": "e-tukia"
+            "pronunciation": "e-tu-kia"
           },
           {
-            "target": "Omu-twe; emi- / Omo-tui, Omo-tu",
+            "target": "omotwe (pl. emetwe)",
             "source": "Head",
-            "pronunciation": "omu-twe"
+            "pronunciation": "o-mo-twe"
           },
           {
-            "target": "En-teme",
+            "target": "enteme / enkoro",
             "source": "Heart",
-            "pronunciation": "en-teme"
+            "pronunciation": "en-te-me / en-ko-ro"
           },
           {
-            "target": "Ye-tinggiro",
+            "target": "egetingiro",
             "source": "Heel",
-            "pronunciation": "ye-tinggiro"
+            "pronunciation": "e-ge-ti-ngi-ro"
           },
           {
-            "target": "Eri-ru / Eri-rū",
+            "target": "eriru (pl. amaru)",
             "source": "Knee",
-            "pronunciation": "eri-ru / eri-ru"
+            "pronunciation": "e-ri-ru"
           }
         ],
         "authoredExercises": [
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga\" in Kisii (Ekegusii)?",
+            "prompt": "What is the English meaning of \"amanyinga\" in Kisii (Ekegusii)?",
             "correctAnswer": "Blood",
             "options": [
-              "Breast",
+              "Chest",
               "Finger",
               "Hair",
               "Blood"
-            ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)"
+            ]
           },
           {
             "type": "match_pairs",
             "prompt": "Match each verified Kisii (Ekegusii) term to its English meaning:",
-            "correctAnswer": "Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga: Blood",
+            "correctAnswer": "amanyinga: Blood",
             "pairs": [
               {
-                "left": "Amany-ingga or Amainy-ingga / Ama-sere. Amainy-ingga",
+                "left": "amanyinga",
                 "right": "Blood"
               },
               {
-                "left": "Eki-kuba; evi- / Ege-kuba; eve-. Eng-kuba; cing-",
-                "right": "Breast (man's)"
+                "left": "egekuba (pl. ebikuba)",
+                "right": "Chest"
               },
               {
-                "left": "Li-bere / Olu-bere; cim-",
-                "right": "Breast (woman's)"
+                "left": "ribere (pl. amabere)",
+                "right": "Breast"
               },
               {
-                "left": "Eki-ara; evi- or ebi- / Eki-ara; evi-. Ek-era; evi-ara",
+                "left": "ekiara (pl. ebiara)",
                 "right": "Finger"
               }
             ]
@@ -2297,17 +2269,12 @@ export const KISII_UNITS: CourseUnit[] = [
           {
             "type": "fill_blank",
             "prompt": "Complete the Kisii (Ekegusii) term for \"Hair\": ___",
-            "correctAnswer": "E-tukia",
+            "correctAnswer": "etukia",
             "options": [
-              "Amany-ingga or Amainy-ingga",
-              "E-tukia",
-              "Eki-kuba",
-              "Li-bere"
-            ],
-            "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Sub-group A6: Ki-Guzii & Ki-Koria)",
-            "acceptedAnswers": [
-              "E-tukia; ci-",
-              "E-tukia"
+              "amanyinga",
+              "etukia",
+              "egekuba",
+              "ribere"
             ]
           }
         ]
@@ -2846,10 +2813,9 @@ export const KISII_UNITS: CourseUnit[] = [
             "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
           },
           {
-            "target": "uya, -ya; Abantu baya = good men",
-            "source": "Good",
-            "pronunciation": "uya ya",
-            "hint": "Igizii (Ekegusii) — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 993–1001)"
+            "target": "uya / -ya (abanto baya)",
+            "source": "Good (e.g., good people)",
+            "pronunciation": "u-ya / ya"
           },
           {
             "target": "Enkari, -kari",
@@ -3356,23 +3322,23 @@ export const KISII_UNITS: CourseUnit[] = [
           },
           {
             "target": "Bwakire!",
-            "source": "Hello",
+            "source": "Good morning / Hello",
             "pronunciation": "bwah-kee-reh"
           },
           {
             "target": "Mbuya mono",
-            "source": "Thank you",
+            "source": "Thank you very much",
             "pronunciation": "m-boo-yah moh-noh"
           },
           {
-            "target": "Mbuya mono!",
-            "source": "Thank you very much! / Very well!",
-            "pronunciation": "mbu-ya mo-no"
+            "target": "Naki ogenderete?",
+            "source": "How are you doing?",
+            "pronunciation": "nah-kee oh-gehn-deh-reh-teh"
           },
           {
-            "target": "Bwakire",
-            "source": "Good morning (Ekegusii)",
-            "pronunciation": "bwakire"
+            "target": "Obotuko obuya",
+            "source": "Good night",
+            "pronunciation": "oh-boh-too-koh oh-boo-yah"
           },
           {
             "target": "Bwairire",
@@ -3402,27 +3368,27 @@ export const KISII_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mbuya mono",
-            "source": "Thank you."
+            "target": "Bwakire buya, baba!",
+            "source": "Good morning, mother!"
           },
           {
             "target": "Mbuya mono!",
             "source": "Thank you very much! / Very well!"
           },
           {
-            "target": "Okorwa gose ogotoma chibesa ase esimu",
-            "source": "Mobile money transaction / Account balance inquiry."
+            "target": "Okorwa gose ogotoma chibesa ase esimu.",
+            "source": "Withdrawing or sending money by mobile phone."
           },
           {
-            "target": "Mbuya mono",
-            "source": "Thank you very much."
+            "target": "Naki ogenderete rero?",
+            "source": "How are you doing today?"
           },
           {
-            "target": "Karibu inka",
+            "target": "Karibu inka.",
             "source": "Welcome home."
           },
           {
-            "target": "Omorembe obe n'inwe",
+            "target": "Omorembe obe n'inwe.",
             "source": "Peace be with you."
           }
         ]

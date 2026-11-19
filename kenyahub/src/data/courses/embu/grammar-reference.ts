@@ -1,26 +1,26 @@
 import type { GrammarSection } from "../types";
 
 // ============================================================
-// Embu (Kîembu / Kîmbeere) Grammar Reference Sections
+// Embu (Kĩembu / Kĩmbeere) Grammar Reference Sections
 // Declarative modular grammar reference (audit-ready, zero runtime mutations)
 // ============================================================
 
 export const EMBU_GRAMMAR_SECTIONS: GrammarSection[] = [
   {
     "id": "embu-noun-classes-dahls-law",
-    "title": "Kîembu & Kîmbeere Noun Classes, Bilabial Fricative (v) & Dahl’s Law (Johnston 1919 #11)",
-    "summary": "Kîembu preserves 15+ Bantu noun classes, retains the voiced bilabial fricative v (ĩvia \"stone\", kũve \"to give\"), and applies Dahl’s Law voicing dissimilation.",
+    "title": "Kĩembu & Kĩmbeere Noun Classes, Bilabial Fricative (v) & Dahl’s Law (Johnston 1919 #11)",
+    "summary": "Kĩembu preserves 15+ Bantu noun classes, retains the voiced bilabial fricative v (ĩvia \"stone\", kũva / kũve \"to give\"), and applies Dahl’s Law voicing dissimilation.",
     "content": "As documented by Sir Harry H. Johnston in *A Comparative Study of the Bantu and Semi-Bantu Languages* (1919, Vol. I, pp. 98–112 & Vol. II, pp. 28–30, Language #11 Kikuyu, Embu, Cuka, Mwimbe, Emberre, Þeraka & Igωji) and C. W. Hobley (1910):\n- **Class 1/2 (*mũ- / a-*)**: *mundũ → andũ* (person → people), *mũrũme → arũme* (man → men), *mũka → aka* (woman → women).\n- **Class 3/4 (*mũ- / mĩ-*)**: *mũtĩ → mĩtĩ* (tree → trees), *mũtitũ → mĩtitũ* (forest/sacred grove).\n- **Class 5/6 (*ĩ-, rĩ- / ma-*)**: *ĩvia → mavia* (stone → stones), *riitho → maitho* (eye → eyes), *maĩ / manjĩ* (water).\n- **Class 12/13 (*ka- / tũ-* Diminutives)**: *kaana → tũana* (small child → small children).\n- **Dahl's Law**: Voiceless prefix *kũ-* or *kĩ-* voices to *gũ-* or *gĩ-* before a voiceless consonant (*gũthiĩ* 'to go', *gĩtĩ* 'stool/chair').",
     "examples": [
       {
         "embu": "mundũ ũyũ mwega → andũ aya ega",
         "english": "this good person → these good people",
-        "explanation": "Class 1/2 concord in Kîembu (Johnston 1919 #11)"
+        "explanation": "Class 1/2 concord in Kĩembu (Johnston 1919 #11)"
       },
       {
-        "embu": "ĩvia (Kîembu) vs. ihiga (Gĩkũyũ)",
+        "embu": "ĩvia (Kĩembu) vs. ihiga (Gĩkũyũ)",
         "english": "stone",
-        "explanation": "Retention of voiced fricative v in Kîembu/Kîmbeere"
+        "explanation": "Retention of voiced fricative v in Kĩembu/Kĩmbeere"
       }
     ]
   },
@@ -28,7 +28,7 @@ export const EMBU_GRAMMAR_SECTIONS: GrammarSection[] = [
     "id": "embu-public-domain-dataset-synthesis",
     "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Embu / Kĩembu)",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Embu (Kĩembu).",
-    "content": "1. **Archival & Open-Dataset Integration for Embu (Kĩembu)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Embu (Kĩembu)**:\n   - Combines primary historical documentation (Johnston 1919/1922, Hobley 1910/1922) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "embu": "-īyā • -rūgāmā",

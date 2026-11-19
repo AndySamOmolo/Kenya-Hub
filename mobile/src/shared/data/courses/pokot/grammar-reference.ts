@@ -1,7 +1,7 @@
 import type { GrammarSection } from "../types";
 
 // ============================================================
-// Pokot (Pökoot) (Pökoot) Grammar Reference Sections
+// Pokot (Pökoot) Grammar Reference Sections
 // Declarative modular grammar reference (audit-ready, zero runtime mutations)
 // ============================================================
 
@@ -31,9 +31,9 @@ export const POKOT_GRAMMAR_SECTIONS: GrammarSection[] = [
   },
   {
     "id": "pokot-public-domain-dataset-synthesis",
-    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Pokot (Pökoot))",
+    "title": "Comparative Phonology, Dialect Variation & Public-Domain Corpus Synthesis (Pökoot)",
     "summary": "Synthesizes phonological correspondences, morphological patterns, and lexical roots across the newly integrated public-domain monographs and open-web datasets for Pokot (Pökoot).",
-    "content": "1. **Archival & Open-Dataset Integration for Pokot (Pökoot)**:\n   - Combines primary historical documentation (Johnston 1902/1919, Hobley 1902/1910/1922, Krapf 1842/1850/1882/1887, Hollis 1905/1909/1910, Beech 1911, Barton 1921, Lindblom 1920, Wray 1894, Kirk 1905, Tutschek 1844–1845) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
+    "content": "1. **Archival & Open-Dataset Integration for Pokot (Pökoot)**:\n   - Combines primary historical documentation (Johnston 1902, Dundas 1910, Beech 1911, Barton 1921, and Zwarts, Chelimo & Jerono 2024) with open-licensed digital corpora (Unicode CLDR, Wiktionary Swadesh, Kencorpus, African Next Voices Anv-ke, and thinkKenya).\n2. **Phonetic & Orthographic Normalization**:\n   - Historical transcriptions preserve older consonant and vowel distinctions (such as Johnston's *ω, ṅ, γ, χ, š, þ, đ* and syllabic nasals), paired with standardized syllable-by-syllable pronunciation guides across every dictionary and course entry.",
     "examples": [
       {
         "pokot": "che-marmar, pl. che-mŏr-mŏr • karachinin, pl. karachona",
@@ -110,10 +110,8 @@ export const POKOT_GRAMMAR_SECTIONS: GrammarSection[] = [
         "explanation": "Mervyn W. H. Beech, The Suk: Their Language and Folklore (1911, p. 6)"
       }
     ]
-  }
-];
-
-POKOT_GRAMMAR_SECTIONS.push({
+  },
+  {
   id: "zwarts-chelimo-jerono-2024-pokot-kegh",
   title: "Joost Zwarts, Andrew Chelimo & Prisca Jerono (2024, Language Science Press #438, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482): Pökoot Reflexive, Reciprocal & Middle Enclitic kegh [kɛːx]",
   summary: "Comparative Southern Nilotic analysis of Pökoot enclitic kegh [kɛːx] (cognate with Endo-Marakwet/Tugen keey [kɛːj] and Keiyo/Kipsigis kee [kɛː]), written as a separate word in Pökoot orthography and opaque to [+ATR] vowel harmony.",
@@ -134,4 +132,5 @@ POKOT_GRAMMAR_SECTIONS.push({
       explanation: "Syntactic argument saturation and ATR-harmony opacity of Pökoot/Kalenjin kegh / kee(y) (Zwarts et al. 2024, pp. 541–551)"
     }
   ]
-});
+  }
+];

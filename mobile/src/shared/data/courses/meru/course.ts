@@ -1512,8 +1512,8 @@ export const MERU_UNITS: CourseUnit[] = [
                 "right": "River"
               },
               {
-                "left": "Rũũji",
-                "right": "Water"
+                "left": "mbura",
+                "right": "Rain"
               },
               {
                 "left": "riũa",
@@ -3339,6 +3339,472 @@ export const MERU_UNITS: CourseUnit[] = [
           {
             "target": "ithathatũ, mũgwanja, inyanya, kenda, ikũmi",
             "source": "Six (6), seven (7), eight (8), nine (9), ten (10)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "meru-native-audio-listening",
+    "unitNumber": 12,
+    "title": "Native Audio & Listening Practice",
+    "description": "Sharpen your Kĩmĩĩrũ ear with 24 verified native speaker recordings covering everyday expressions, questions, directions, and Mount Kenya storytelling.",
+    "icon": "🎧",
+    "color": "#16A34A",
+    "skills": [
+      {
+        "id": "meru-native-audio-everyday-expressions",
+        "title": "Everyday Native Expressions & Hospitality",
+        "icon": "🎙️",
+        "description": "Listen to native Kĩmĩĩrũ speakers pronounce high-frequency daily words and polite phrases.",
+        "tips": "Notice Kĩmĩĩrũ's distinctive Class 2/14 'b-' retention (as in 'bũthongi' and 'barĩo') and the seven-vowel system distinguishing 'ĩ/i' and 'ũ/u'.",
+        "culturalNote": "Welcoming a guest with 'kara nthĩ' (have a seat) and offering thanks ('ĩĩ itũgũcokia nkatho') are hallmarks of Ameru hospitality around the eastern slopes of Kĩrĩnyaga.",
+        "words": [
+          {
+            "target": "ke",
+            "source": "Here",
+            "partOfSpeech": "adverb",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/ke.opus"
+          },
+          {
+            "target": "mũlango",
+            "source": "The door",
+            "partOfSpeech": "noun",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/mulango.opus"
+          },
+          {
+            "target": "bũthongi",
+            "source": "Fantastic / Beautiful",
+            "partOfSpeech": "adjective",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/buthongi.opus"
+          },
+          {
+            "target": "kara nthĩ",
+            "source": "Have a seat",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/kara-nthi.opus"
+          },
+          {
+            "target": "tiga mbĩte",
+            "source": "Got to go / Let me go",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/tiga-mbite.opus"
+          },
+          {
+            "target": "ĩĩ itũgũcokia nkatho",
+            "source": "Yes, we are thankful",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/ii-itugucokia-nkatho.opus"
+          },
+          {
+            "target": "nguo injerũ",
+            "source": "New clothes",
+            "partOfSpeech": "noun phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/nguo-injeru.opus"
+          },
+          {
+            "target": "ĩbwomi",
+            "source": "It was tough",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/ibwomi.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Kara nthĩ.",
+            "source": "Have a seat.",
+            "audio": "https://audio.kenyahub.me/audio/meru/kara-nthi.opus"
+          },
+          {
+            "target": "Ĩĩ itũgũcokia nkatho.",
+            "source": "Yes, we are thankful.",
+            "audio": "https://audio.kenyahub.me/audio/meru/ii-itugucokia-nkatho.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩmĩĩrũ recording and select its English meaning:",
+            "correctAnswer": "Here",
+            "options": [
+              "Here",
+              "The door",
+              "Fantastic / Beautiful",
+              "Have a seat"
+            ],
+            "audioText": "ke",
+            "sourceWord": {
+              "target": "ke",
+              "source": "Here",
+              "partOfSpeech": "adverb",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/ke.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Kĩmĩĩrũ expression matches \"The door\"?",
+            "correctAnswer": "mũlango",
+            "options": [
+              "mũlango",
+              "ke",
+              "bũthongi",
+              "tiga mbĩte"
+            ],
+            "sourceWord": {
+              "target": "mũlango",
+              "source": "The door",
+              "partOfSpeech": "noun",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/mulango.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩmĩĩrũ speaker and choose the correct translation:",
+            "correctAnswer": "Yes, we are thankful",
+            "options": [
+              "Yes, we are thankful",
+              "New clothes",
+              "It was tough",
+              "Got to go / Let me go"
+            ],
+            "audioText": "ĩĩ itũgũcokia nkatho",
+            "sourceWord": {
+              "target": "ĩĩ itũgũcokia nkatho",
+              "source": "Yes, we are thankful",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/ii-itugucokia-nkatho.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Kĩmĩĩrũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "ke",
+                "right": "Here"
+              },
+              {
+                "left": "mũlango",
+                "right": "The door"
+              },
+              {
+                "left": "bũthongi",
+                "right": "Fantastic / Beautiful"
+              },
+              {
+                "left": "kara nthĩ",
+                "right": "Have a seat"
+              },
+              {
+                "left": "tiga mbĩte",
+                "right": "Got to go / Let me go"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "meru-native-audio-questions-directions",
+        "title": "Asking Questions, Directions & Daily Life",
+        "icon": "🧭",
+        "description": "Practice catching native Kĩmĩĩrũ questions, requests for directions, and daily life statements.",
+        "tips": "Compare the Kĩmĩĩrũ locative suffix '-ne' in 'mũrangone' (at the door) with Gĩkũyũ '-inĩ' and Kĩkamba '-nĩ'—a classic Mount Kenya Bantu correspondence.",
+        "culturalNote": "Agriculture ('mũrĩmi ũmunini') on the fertile volcanic soils of Meru and Tharaka-Nithi underpins both daily livelihood and local idioms.",
+        "words": [
+          {
+            "target": "nũũ arĩ mũrangone",
+            "source": "Who is at the door?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/nuu-ari-murangone.opus"
+          },
+          {
+            "target": "reka turĩthĩrĩe njĩra",
+            "source": "Let's ask for directions!",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/reka-turithirie-njira.opus"
+          },
+          {
+            "target": "twĩ na thĩna",
+            "source": "We have a problem",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/twi-na-thina.opus"
+          },
+          {
+            "target": "tũmũtetherie",
+            "source": "Should we help her out?",
+            "partOfSpeech": "verb",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/tumutetherie.opus"
+          },
+          {
+            "target": "imbijĩ ĩtinda rĩu",
+            "source": "I know that game!",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/imbiji-itinda-riu.opus"
+          },
+          {
+            "target": "ndĩ mũrĩmi ũmunini",
+            "source": "I am a small-scale farmer",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/ndi-murimi-umunini.opus"
+          },
+          {
+            "target": "kagita gaka konthe",
+            "source": "All this time",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/kagita-gaka-konthe.opus"
+          },
+          {
+            "target": "akoria urĩa getagwa",
+            "source": "She asked her what her name was",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/akoria-uria-getagwa.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Nũũ arĩ mũrangone?",
+            "source": "Who is at the door?",
+            "audio": "https://audio.kenyahub.me/audio/meru/nuu-ari-murangone.opus"
+          },
+          {
+            "target": "Ndĩ mũrĩmi ũmunini.",
+            "source": "I am a small-scale farmer.",
+            "audio": "https://audio.kenyahub.me/audio/meru/ndi-murimi-umunini.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩmĩĩrũ recording and select its English meaning:",
+            "correctAnswer": "Who is at the door?",
+            "options": [
+              "Who is at the door?",
+              "Let's ask for directions!",
+              "We have a problem",
+              "Should we help her out?"
+            ],
+            "audioText": "nũũ arĩ mũrangone",
+            "sourceWord": {
+              "target": "nũũ arĩ mũrangone",
+              "source": "Who is at the door?",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/nuu-ari-murangone.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Kĩmĩĩrũ expression matches \"Let's ask for directions!\"?",
+            "correctAnswer": "reka turĩthĩrĩe njĩra",
+            "options": [
+              "reka turĩthĩrĩe njĩra",
+              "nũũ arĩ mũrangone",
+              "twĩ na thĩna",
+              "imbijĩ ĩtinda rĩu"
+            ],
+            "sourceWord": {
+              "target": "reka turĩthĩrĩe njĩra",
+              "source": "Let's ask for directions!",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/reka-turithirie-njira.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩmĩĩrũ speaker and choose the correct translation:",
+            "correctAnswer": "I am a small-scale farmer",
+            "options": [
+              "I am a small-scale farmer",
+              "All this time",
+              "She asked her what her name was",
+              "I know that game!"
+            ],
+            "audioText": "ndĩ mũrĩmi ũmunini",
+            "sourceWord": {
+              "target": "ndĩ mũrĩmi ũmunini",
+              "source": "I am a small-scale farmer",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/ndi-murimi-umunini.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Kĩmĩĩrũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "nũũ arĩ mũrangone",
+                "right": "Who is at the door?"
+              },
+              {
+                "left": "reka turĩthĩrĩe njĩra",
+                "right": "Let's ask for directions!"
+              },
+              {
+                "left": "twĩ na thĩna",
+                "right": "We have a problem"
+              },
+              {
+                "left": "tũmũtetherie",
+                "right": "Should we help her out?"
+              },
+              {
+                "left": "imbijĩ ĩtinda rĩu",
+                "right": "I know that game!"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "meru-native-audio-conversations-community",
+        "title": "Natural Conversations, Health & Storytelling",
+        "icon": "💬",
+        "description": "Build listening fluency with full native Kĩmĩĩrũ sentences on health, advice, and storytelling.",
+        "tips": "Listen for the negative marker 'atĩ' (is not / without, as in 'atĩ na maĩtia') and the Class 10 agreement on 'ngono injega icijũkagia ĩgita' (good stories take time).",
+        "culturalNote": "'Ngono injega icijũkagia ĩgita' (Good stories take time) echoes the unhurried oral storytelling tradition of Ameru elders and evening fireside gatherings.",
+        "words": [
+          {
+            "target": "ena mũrũtiira mono",
+            "source": "He has a very high fever",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/ena-murutiira-mono.opus"
+          },
+          {
+            "target": "nũũkwenda ũtegerĩ metho",
+            "source": "You might need an eye check-up",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/nuukwenda-utegeri-metho.opus"
+          },
+          {
+            "target": "ĩndĩ nũbati kũmenyera",
+            "source": "You have to be careful, though",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/indi-nubati-kumenyera.opus"
+          },
+          {
+            "target": "ngono injega icijũkagia ĩgita",
+            "source": "Good stories take time",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/ngono-injega-icijukagia-igita.opus"
+          },
+          {
+            "target": "atĩ na maĩtia",
+            "source": "Innocent (without fault)",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/ati-na-maitia.opus"
+          },
+          {
+            "target": "barĩo",
+            "source": "They exist / They are present",
+            "partOfSpeech": "verb",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/bario.opus"
+          },
+          {
+            "target": "ndũgũ ciakũ nirĩkũ",
+            "source": "What are your relationships?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/ndugu-ciaku-niriku.opus"
+          },
+          {
+            "target": "nĩkĩ nĩũntũ ũraregere kũũmbĩra",
+            "source": "Why didn't you tell me?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/meru/niki-niuntu-uraregere-kuumbira.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ngono injega icijũkagia ĩgita.",
+            "source": "Good stories take time.",
+            "audio": "https://audio.kenyahub.me/audio/meru/ngono-injega-icijukagia-igita.opus"
+          },
+          {
+            "target": "Ĩndĩ nũbati kũmenyera.",
+            "source": "You have to be careful, though.",
+            "audio": "https://audio.kenyahub.me/audio/meru/indi-nubati-kumenyera.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩmĩĩrũ recording and select its English meaning:",
+            "correctAnswer": "He has a very high fever",
+            "options": [
+              "He has a very high fever",
+              "You might need an eye check-up",
+              "You have to be careful, though",
+              "Good stories take time"
+            ],
+            "audioText": "ena mũrũtiira mono",
+            "sourceWord": {
+              "target": "ena mũrũtiira mono",
+              "source": "He has a very high fever",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/ena-murutiira-mono.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Kĩmĩĩrũ expression matches \"You might need an eye check-up\"?",
+            "correctAnswer": "nũũkwenda ũtegerĩ metho",
+            "options": [
+              "nũũkwenda ũtegerĩ metho",
+              "ena mũrũtiira mono",
+              "ĩndĩ nũbati kũmenyera",
+              "atĩ na maĩtia"
+            ],
+            "sourceWord": {
+              "target": "nũũkwenda ũtegerĩ metho",
+              "source": "You might need an eye check-up",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/nuukwenda-utegeri-metho.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kĩmĩĩrũ speaker and choose the correct translation:",
+            "correctAnswer": "They exist / They are present",
+            "options": [
+              "They exist / They are present",
+              "What are your relationships?",
+              "Why didn't you tell me?",
+              "Innocent (without fault)"
+            ],
+            "audioText": "barĩo",
+            "sourceWord": {
+              "target": "barĩo",
+              "source": "They exist / They are present",
+              "partOfSpeech": "verb",
+              "audioFile": "https://audio.kenyahub.me/audio/meru/bario.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Kĩmĩĩrũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "ena mũrũtiira mono",
+                "right": "He has a very high fever"
+              },
+              {
+                "left": "nũũkwenda ũtegerĩ metho",
+                "right": "You might need an eye check-up"
+              },
+              {
+                "left": "ĩndĩ nũbati kũmenyera",
+                "right": "You have to be careful, though"
+              },
+              {
+                "left": "ngono injega icijũkagia ĩgita",
+                "right": "Good stories take time"
+              },
+              {
+                "left": "atĩ na maĩtia",
+                "right": "Innocent (without fault)"
+              }
+            ]
           }
         ]
       }

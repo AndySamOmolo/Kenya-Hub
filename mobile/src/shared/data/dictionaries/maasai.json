@@ -12,7 +12,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0).",
   "categories": [
     {
@@ -5549,6 +5549,18 @@
           "english": "the small trees",
           "translation": "In-gak",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "Mount Kenya (glossed as 'Black Mountain' in source)",
+          "translation": "Donyo Ebor",
+          "pronunciation": "dohn-yoh eh-bohr",
+          "context": "p. 66 ('Kenia is called ... \"Donyo Ebor\" (Black Mountain) ... by the Masai') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
+        },
+        {
+          "english": "Mount Kenya ('Spotted Mountain')",
+          "translation": "Donyo Egere",
+          "pronunciation": "dohn-yoh eh-geh-reh",
+          "context": "p. 66 ('\"Donyo Egere\" (Spotted Mountain) by the Masai; so called because of the large black patches on the main peak') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
         }
       ]
     },
@@ -6352,6 +6364,12 @@
           "english": "cook",
           "translation": "tiarra (sing. inf. neyerr / pl. inf. negiyerr)",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "Honey",
+          "translation": "naischu",
+          "pronunciation": "nigh-shoo",
+          "context": "p. 53 ('The Masai name for honey is \"naischu\"') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
         }
       ]
     },
@@ -7646,6 +7664,18 @@
           "english": "this shield",
           "translation": "Enna-longo",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "Small red Masai beads",
+          "translation": "sem-sem",
+          "pronunciation": "sem-sem",
+          "context": "pp. 15, 54 ('small red Masai beads known as \"sem-sem\"') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
+        },
+        {
+          "english": "White Masai beads",
+          "translation": "sembaj",
+          "pronunciation": "sem-bahj",
+          "context": "p. 15 ('sembaj (white Masai beads)') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
         }
       ]
     },
@@ -17657,6 +17687,12 @@
           "english": "Conflict / chaos (noun)",
           "translation": "ɛnk=arruoísho",
           "context": "Doris L. Payne (2026) 'Middle verbs in Maa: Alternating, media tantum, and (spurious) look-alikes', Language Science Press #491 Ch. 12 (https://zenodo.org/records/20285206/files/491-CarstensEtAl-2026-12.pdf?download=1, CC-BY-4.0)"
+        },
+        {
+          "english": "A wicked old man",
+          "translation": "el moruo torono",
+          "pronunciation": "el moh-roo-oh toh-roh-noh",
+          "context": "p. 109 ('\"el moruo torono\" (a wicked old man)') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
         }
       ]
     },
@@ -21562,6 +21598,30 @@
           "english": "For God so loved the world (John 3:16 — 1915 Masai Specimen #316)",
           "translation": "Amu etonyora eng'Ai engop, neishorua engerai enye nabo, ore oloiruk poki nemeimin, naketum engishon nemeitiñg.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "Warriors",
+          "translation": "elmoran",
+          "pronunciation": "el-moh-rahn",
+          "context": "p. 57 ('the elmoran, or warriors') — John Boyes (1911/1912), A White King in East Africa, ed. C. W. L. Bulpett (Project Gutenberg #61342, Public Domain) — https://www.gutenberg.org/files/61342/61342-h/61342-h.htm"
+        },
+        {
+          "english": "God",
+          "translation": "Ngai",
+          "pronunciation": "ngigh",
+          "context": "p. 93 ('in each case worship a god they call Ngai') — John Boyes (1911/1912), A White King in East Africa, ed. C. W. L. Bulpett (Project Gutenberg #61342, Public Domain) — https://www.gutenberg.org/files/61342/61342-h/61342-h.htm"
+        },
+        {
+          "english": "Anything strange or mysterious not understood (applied to railways, telegraph lines, thunderstorms)",
+          "translation": "ngai",
+          "pronunciation": "ngigh",
+          "context": "p. 31 ('They have a word \"ngai,\" which means anything strange that they do not understand, and this is given to railways, telegraph lines, and thunderstorms') — W. D. Hambly (1920), The Native Races of East Africa (Oxford University Press, Project Gutenberg #67513, Public Domain) — https://www.gutenberg.org/cache/epub/67513/pg67513-images.html"
+        },
+        {
+          "english": "Servile hunter-gatherer people associated with the Maasai",
+          "translation": "Dorobo",
+          "pronunciation": "doh-roh-boh",
+          "context": "p. 18 ('a servile people named the Dorobo who have to obey the commands of their masters') — W. D. Hambly (1920), The Native Races of East Africa (Oxford University Press, Project Gutenberg #67513, Public Domain) — https://www.gutenberg.org/cache/epub/67513/pg67513-images.html"
         }
       ]
     }
@@ -21569,5 +21629,5 @@
   "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "mas",
   "glottocode": "masa1300",
-  "totalEntries": 3623
+  "totalEntries": 3633
 }

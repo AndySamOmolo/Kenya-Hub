@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Inter, Outfit } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
@@ -7,6 +8,18 @@ import ThemeProvider from "@/components/ThemeProvider";
 import CookieConsent from "@/components/CookieConsent";
 import ScrollReset from "@/components/ScrollReset";
 import AdSenseLoader from "@/components/AdSenseLoader";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kenyahub.me"),
@@ -154,6 +167,7 @@ export default function RootLayout({
   return (
     <html
       lang="en-KE"
+      className={`${inter.variable} ${outfit.variable}`}
       suppressHydrationWarning
     >
       <head suppressHydrationWarning>

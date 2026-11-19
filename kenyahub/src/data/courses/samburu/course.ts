@@ -588,7 +588,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Embatiān, Ol aitórienĭ, Lagwainani\"",
             "correctAnswer": "Chief",
             "acceptedAnswers": [
-              "Chief",
               "Chief"
             ],
             "hint": "Review Clans, Marriage & Community Life"
@@ -889,7 +888,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Twenty\"",
             "correctAnswer": "Tigitam",
             "acceptedAnswers": [
-              "Tigitam",
               "Tigitam"
             ],
             "hint": "Starts with \"Ti\""
@@ -899,7 +897,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Tomoni uni\"",
             "correctAnswer": "Thirty",
             "acceptedAnswers": [
-              "Thirty",
               "Thirty"
             ],
             "hint": "Review Trade, Barter, Currency & Traditional Measures"
@@ -1031,7 +1028,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Meat\"",
             "correctAnswer": "nkiri",
             "acceptedAnswers": [
-              "nkiri",
               "nkiri"
             ],
             "hint": "Starts with \"nk\""
@@ -1041,7 +1037,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"ndaiki\"",
             "correctAnswer": "Food",
             "acceptedAnswers": [
-              "Food",
               "Food"
             ],
             "hint": "Starts with \"Fo…\" (4 letters)"
@@ -1164,7 +1159,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Maize\"",
             "correctAnswer": "El bāek",
             "acceptedAnswers": [
-              "El bāek",
               "El bāek"
             ],
             "hint": "Starts with \"El\""
@@ -1174,7 +1168,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"En naishu, Na mōqa\"",
             "correctAnswer": "Palm wine or mead",
             "acceptedAnswers": [
-              "Palm wine or mead",
               "Palm wine or mead"
             ],
             "hint": "Review Crops, Cultivation & Pastoral Livestock"
@@ -1214,7 +1207,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
     "id": "samburu-unit-5",
     "unitNumber": 5,
     "title": "Nature, Landscape, Flora & East African Wildlife",
-    "description": "Master nature, landscape, flora & east african wildlife in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
+    "description": "Master nature, landscape, flora & East African wildlife in Samburu (Sampur) built directly from Sir Harry Johnston (1902 North Maa), A. C. Hollis (1905), Hon. K. R. Dundas (1910), and C. W. Hobley (1910).",
     "icon": "PawPrint",
     "color": "#E11D48",
     "skills": [
@@ -1481,7 +1474,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Grass / Pasture\"",
             "correctAnswer": "nkujit",
             "acceptedAnswers": [
-              "nkujit",
               "nkujit"
             ],
             "hint": "Starts with \"nk\""
@@ -1491,7 +1483,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"mpari\"",
             "correctAnswer": "Day",
             "acceptedAnswers": [
-              "Day",
               "Day"
             ],
             "hint": "Review East African Fauna, Birds & Sacred Trees"
@@ -1811,7 +1802,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"ltau\"",
             "correctAnswer": "Heart",
             "acceptedAnswers": [
-              "Heart",
               "Heart"
             ],
             "hint": "Review Health, Traditional Medicine & Emergency Terms"
@@ -2126,7 +2116,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"a-ning\"",
             "correctAnswer": "To hear",
             "acceptedAnswers": [
-              "To hear",
               "To hear"
             ],
             "hint": "Review Applied, Causative, Reciprocal & Stative Verbs"
@@ -2262,7 +2251,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"nkewarie\"",
             "correctAnswer": "Night",
             "acceptedAnswers": [
-              "Night",
               "Night"
             ],
             "hint": "Review Day Divisions, Lunar Months & Agricultural Seasons"
@@ -2601,7 +2589,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
           },
           {
             "target": "Kiyiolo nkarna Ol-labanani taata.",
-            "source": "We study this traditional term today."
+            "source": "We know the name of the diviner today."
           }
         ],
         "authoredExercises": [
@@ -2746,7 +2734,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Tobacco\"",
             "correctAnswer": "Or gumbao",
             "acceptedAnswers": [
-              "Or gumbao",
               "Or gumbao"
             ],
             "hint": "Starts with \"Or\""
@@ -2756,7 +2743,6 @@ export const SAMBURU_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"Entoki\"",
             "correctAnswer": "Thing",
             "acceptedAnswers": [
-              "Thing",
               "Thing"
             ],
             "hint": "Review Core Swadesh & Cultural Vocabulary"
@@ -2956,7 +2942,7 @@ export const SAMBURU_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Ashe oleng",
+            "target": "Ashe oleng'",
             "source": "Thank you very much."
           },
           {

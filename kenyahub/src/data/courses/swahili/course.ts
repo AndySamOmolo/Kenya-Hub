@@ -682,17 +682,17 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ju-mbe"
           },
           {
-            "target": "mtu, pl. watu",
+            "target": "mtu (pl. watu)",
             "source": "Man / Person",
             "pronunciation": "m-tu"
           },
           {
-            "target": "mwana, mtoto, (mume)",
+            "target": "mwana / mtoto (mume)",
             "source": "Son",
             "pronunciation": "mwana"
           },
           {
-            "target": "kijana, pl. vijana",
+            "target": "kijana (pl. vijana)",
             "source": "Youth (boy or girl)",
             "pronunciation": "ki-ja-na"
           },
@@ -752,7 +752,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"Man\"",
-            "correctAnswer": "mtu, pl. watu",
+            "correctAnswer": "mtu (pl. watu)",
             "acceptedAnswers": [
               "mtu, pl. watu",
               "mtu, pl. watu"
@@ -775,24 +775,24 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "mfalme",
+                "left": "mfalme (pl. wafalme)",
                 "right": "King"
               },
               {
-                "left": "mtu, pl. watu",
-                "right": "Man"
+                "left": "mtu (pl. watu)",
+                "right": "Man / Person"
               },
               {
-                "left": "mwana, mtoto,",
+                "left": "mwana / mtoto (mume)",
                 "right": "Son"
               },
               {
-                "left": "kijana, pl. vijana",
-                "right": "Girl"
+                "left": "kijana (pl. vijana)",
+                "right": "Youth (boy or girl)"
               },
               {
-                "left": "kijana, pl. vijana",
-                "right": "boy"
+                "left": "ndugu",
+                "right": "Brother"
               }
             ]
           }
@@ -806,7 +806,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "mtoto, pl. watoto",
+            "target": "mtoto (pl. watoto)",
             "source": "child",
             "pronunciation": "mto-to"
           },
@@ -816,7 +816,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ku-tambaa"
           },
           {
-            "target": "mzee, pl. wazee",
+            "target": "mzee (pl. wazee)",
             "source": "elder",
             "pronunciation": "mzee"
           },
@@ -826,7 +826,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "ba-ba"
           },
           {
-            "target": "mkwe, pl. wakwe",
+            "target": "mkwe (pl. wakwe)",
             "source": "father-in-law / mother-in-law",
             "pronunciation": "mkwe"
           },
@@ -900,7 +900,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "mtoto, pl. watoto",
+                "left": "mtoto (pl. watoto)",
                 "right": "child"
               },
               {
@@ -908,7 +908,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
                 "right": "crawl"
               },
               {
-                "left": "mzee, pl. wazee",
+                "left": "mzee (pl. wazee)",
                 "right": "elder"
               },
               {
@@ -916,7 +916,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
                 "right": "father"
               },
               {
-                "left": "mkwe, pl. wakwe",
+                "left": "mkwe (pl. wakwe)",
                 "right": "father-in-law"
               }
             ]
@@ -1403,7 +1403,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Swahili (Kiswahili) in Krapf (1850, 1882), Steere (1870, 1894), Taylor (1891), Madan (1903, 1917), Hinde (1904), Burt (1910) & Johnston (1919) preserves pre-1930 phonological, grammatical, and ethnographic usage across Mombasa, Lamu, Kilifi.",
         "words": [
           {
-            "target": "mahogo, pl. hogo",
+            "target": "mhogo (pl. mihogo)",
             "source": "cassava",
             "pronunciation": "ma-ho-go"
           },
@@ -1497,7 +1497,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "mahogo, pl. hogo",
+                "left": "mhogo (pl. mihogo)",
                 "right": "cassava"
               },
               {
@@ -1641,15 +1641,15 @@ export const SWAHILI_UNITS: CourseUnit[] = [
               },
               {
                 "left": "ngwiro",
-                "right": "ant"
+                "right": "ant (large black)"
               },
               {
                 "left": "chungu",
-                "right": "ant"
+                "right": "ant (small black)"
               },
               {
                 "left": "siafu",
-                "right": "ant"
+                "right": "ant (red)"
               }
             ]
           }
@@ -1668,7 +1668,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "nya-ni"
           },
           {
-            "target": "mbuyu, pl. mibuyu",
+            "target": "mbuyu (pl. mibuyu)",
             "source": "baobab tree",
             "pronunciation": "mbu-yu"
           },
@@ -1734,7 +1734,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"baobab tree\"",
-            "correctAnswer": "mbuyu, pl. mibuyu",
+            "correctAnswer": "mbuyu (pl. mibuyu)",
             "acceptedAnswers": [
               "mbuyu, pl. mibuyu",
               "mbuyu, pl. mibuyu"
@@ -1761,20 +1761,20 @@ export const SWAHILI_UNITS: CourseUnit[] = [
                 "right": "baboon"
               },
               {
-                "left": "mbuyu, pl. mibuyu",
+                "left": "mbuyu (pl. mibuyu)",
                 "right": "baobab tree"
               },
               {
                 "left": "kulia",
-                "right": "bark"
+                "right": "bark (verb)"
               },
               {
                 "left": "ganda, gome",
-                "right": "bark"
+                "right": "bark (of tree)"
               },
               {
                 "left": "baazi",
-                "right": "beans"
+                "right": "beans (tree)"
               }
             ]
           }
@@ -1957,12 +1957,12 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "pronunciation": "a-me-ku-fa"
           },
           {
-            "target": "jicho, pl. macho",
+            "target": "jicho (pl. macho)",
             "source": "Eye",
             "pronunciation": "jicho"
           },
           {
-            "target": "mguu, pl. miguu",
+            "target": "mguu (pl. miguu)",
             "source": "Leg",
             "pronunciation": "mguu"
           },
@@ -2048,11 +2048,11 @@ export const SWAHILI_UNITS: CourseUnit[] = [
                 "right": "He is dead"
               },
               {
-                "left": "jicho, pl. macho",
+                "left": "jicho (pl. macho)",
                 "right": "Eye"
               },
               {
-                "left": "mguu, pl. miguu",
+                "left": "mguu (pl. miguu)",
                 "right": "Leg"
               }
             ]
@@ -3234,7 +3234,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           },
           {
             "target": "(ask) taka, (intercede) ombea",
-            "source": "Pray",
+            "source": "Ask / Intercede in prayer",
             "pronunciation": "ta-ka ombea"
           },
           {
@@ -6291,7 +6291,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
         "sentences": [
           {
             "target": "Kimbunga kikaangusha minazi na majumba yote (s.v. Kimbunga, pp. 153–154)",
-            "source": "The typhoon  threw down all the coconut trees and houses."
+            "source": "The typhoon threw down all the coconut trees and houses."
           }
         ]
       },
@@ -7101,6 +7101,270 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "Wageni wote kumi wamefika nyumbani salama.",
             "source": "All ten guests have arrived home safely."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "swahili-native-audio-listening",
+    "unitNumber": 29,
+    "title": "Native Audio & Listening Practice",
+    "description": "Listen to verified Lamu Kiamu coastal poetry recordings by Ustadh Mau (Zenodo CC-BY-4.0) and compare northern coastal phonology with Standard Kiswahili.",
+    "icon": "🎧",
+    "color": "#0284C7",
+    "skills": [
+      {
+        "id": "swahili-native-audio-kiamu-verse",
+        "title": "Kiamu Coastal Verse & Poetic Expressions",
+        "icon": "🎙️",
+        "description": "Hear authentic Lamu Kiamu recitation by Ustadh Mau and master classical coastal poetic lines.",
+        "tips": "In Lamu Kiamu (Northern Swahili), Standard Swahili 'v-' in Class 8 often appears as 'z-' (e.g., zita = vita, zuwoni = vyuoni), and 'nyamaza' contracts to 'kunyamaa' in classical verse.",
+        "culturalNote": "Recorded by Ustadh Mahmoud Ahmad Abdulkadir (Ustadh Mau) of Lamu in collaboration with Dr. Mathieu Roy & P. J. L. Frankl (Zenodo 19827932, CC-BY-4.0), preserving the living Kiamu poetic tradition.",
+        "words": [
+          {
+            "target": "Kiswahili ni lugha ya asili yenye utajiri wa mashairi ya pwani",
+            "source": "Kiswahili is a heritage language rich in coastal poetry (Kiamu)",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "Kunyamaa nimechoka",
+            "source": "I am weary of staying silent (Lamu Kiamu verse)",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "Mbona mwanipija zita?",
+            "source": "Why do you wage war on me? (Kiamu: zita = vita)",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "katiti (Std. kidogo / chache)",
+            "source": "Few, a little (Kiamu & Kimvita adjective)",
+            "partOfSpeech": "adjective",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "utafiti wa uzamili zuwoni (Std. vyuoni)",
+            "source": "Postgraduate research at universities (Kiamu: zuwoni = vyuoni)",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Kiswahili ni lugha ya asili yenye utajiri wa mashairi ya pwani.",
+            "source": "Kiswahili is a heritage language rich in coastal poetry.",
+            "audio": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "Kunyamaa nimechoka; mbona mwanipija zita?",
+            "source": "I am weary of staying silent; why do you wage war on me?",
+            "audio": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kiswahili (Kiamu) recording and select its English meaning:",
+            "correctAnswer": "Kiswahili is a heritage language rich in coastal poetry (Kiamu)",
+            "options": [
+              "Kiswahili is a heritage language rich in coastal poetry (Kiamu)",
+              "I am weary of staying silent (Lamu Kiamu verse)",
+              "Why do you wage war on me? (Kiamu: zita = vita)",
+              "Few, a little (Kiamu & Kimvita adjective)"
+            ],
+            "audioText": "Kiswahili ni lugha ya asili yenye utajiri wa mashairi ya pwani",
+            "sourceWord": {
+              "target": "Kiswahili ni lugha ya asili yenye utajiri wa mashairi ya pwani",
+              "source": "Kiswahili is a heritage language rich in coastal poetry (Kiamu)",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Kiswahili (Kiamu) expression matches \"I am weary of staying silent (Lamu Kiamu verse)\"?",
+            "correctAnswer": "Kunyamaa nimechoka",
+            "options": [
+              "Kunyamaa nimechoka",
+              "Kiswahili ni lugha ya asili yenye utajiri wa mashairi ya pwani",
+              "Mbona mwanipija zita?",
+              "utafiti wa uzamili zuwoni (Std. vyuoni)"
+            ],
+            "sourceWord": {
+              "target": "Kunyamaa nimechoka",
+              "source": "I am weary of staying silent (Lamu Kiamu verse)",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            }
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "Complete Ustadh Mau's Kiamu line: 'Mbona mwanipija ___?' (Why do you wage war on me?)",
+            "correctAnswer": "zita",
+            "options": [
+              "zita",
+              "katiti",
+              "matozi",
+              "zitabu"
+            ],
+            "sourceWord": {
+              "target": "Mbona mwanipija zita?",
+              "source": "Why do you wage war on me? (Kiamu: zita = vita)",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Kiswahili (Kiamu) expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "Kiswahili ni lugha ya asili yenye utajiri wa mashairi ya pwani",
+                "right": "Kiswahili is a heritage language rich in coastal poetry (Kiamu)"
+              },
+              {
+                "left": "Kunyamaa nimechoka",
+                "right": "I am weary of staying silent (Lamu Kiamu verse)"
+              },
+              {
+                "left": "Mbona mwanipija zita?",
+                "right": "Why do you wage war on me? (Kiamu: zita = vita)"
+              },
+              {
+                "left": "katiti (Std. kidogo / chache)",
+                "right": "Few, a little (Kiamu & Kimvita adjective)"
+              },
+              {
+                "left": "utafiti wa uzamili zuwoni (Std. vyuoni)",
+                "right": "Postgraduate research at universities (Kiamu: zuwoni = vyuoni)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "swahili-native-audio-kiamu-dialect-forms",
+        "title": "Kiamu vs. Standard Swahili Dialect Forms",
+        "icon": "🌊",
+        "description": "Compare verified Lamu Kiamu dialectal nouns with their Standard Kiunguja equivalents.",
+        "tips": "Notice the systematic northern coastal sound correspondences: Standard 'ch' → Kiamu 't' (machozi → matozi), Standard 'nj' → Kiamu 'nd' (njiani → ndiyani), and Standard Class 8 'vi-' → Kiamu 'zi-' (vitabu → zitabu, visiwani → zisiwani, viongozi → ziyongozi).",
+        "culturalNote": "Recognizing Kiamu sound correspondences unlocks centuries of classical Swahili utendi epics and mashairi poetry from Lamu, Pate, and Siyu.",
+        "words": [
+          {
+            "target": "matozi (Std. machozi)",
+            "source": "Tears (Kiamu form of machozi)",
+            "partOfSpeech": "noun",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "ndiyani (Std. njiani)",
+            "source": "On the road / way (Kiamu form of njiani)",
+            "partOfSpeech": "noun",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "zitabu (Std. vitabu)",
+            "source": "Books (Kiamu Class 8 zi- form of vitabu)",
+            "partOfSpeech": "noun",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "zisiwani (Std. visiwani)",
+            "source": "In the islands (Kiamu Class 8 zi- form of visiwani)",
+            "partOfSpeech": "noun",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          },
+          {
+            "target": "ziyongozi (Std. viongozi)",
+            "source": "Leaders (Kiamu Class 8 zi- form of viongozi)",
+            "partOfSpeech": "noun",
+            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Kiswahili (Kiamu) recording and select its English meaning:",
+            "correctAnswer": "Tears (Kiamu form of machozi)",
+            "options": [
+              "Tears (Kiamu form of machozi)",
+              "On the road / way (Kiamu form of njiani)",
+              "Books (Kiamu Class 8 zi- form of vitabu)",
+              "In the islands (Kiamu Class 8 zi- form of visiwani)"
+            ],
+            "audioText": "matozi (Std. machozi)",
+            "sourceWord": {
+              "target": "matozi (Std. machozi)",
+              "source": "Tears (Kiamu form of machozi)",
+              "partOfSpeech": "noun",
+              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Kiswahili (Kiamu) expression matches \"On the road / way (Kiamu form of njiani)\"?",
+            "correctAnswer": "ndiyani (Std. njiani)",
+            "options": [
+              "ndiyani (Std. njiani)",
+              "matozi (Std. machozi)",
+              "zitabu (Std. vitabu)",
+              "ziyongozi (Std. viongozi)"
+            ],
+            "sourceWord": {
+              "target": "ndiyani (Std. njiani)",
+              "source": "On the road / way (Kiamu form of njiani)",
+              "partOfSpeech": "noun",
+              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            }
+          },
+          {
+            "type": "fill_blank",
+            "prompt": "In Lamu Kiamu, the Standard Swahili word 'vitabu' (books) is pronounced ___.",
+            "correctAnswer": "zitabu",
+            "options": [
+              "zitabu",
+              "matozi",
+              "ndiyani",
+              "zisiwani"
+            ],
+            "sourceWord": {
+              "target": "zitabu (Std. vitabu)",
+              "source": "Books (Kiamu Class 8 zi- form of vitabu)",
+              "partOfSpeech": "noun",
+              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Kiswahili (Kiamu) expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "matozi (Std. machozi)",
+                "right": "Tears (Kiamu form of machozi)"
+              },
+              {
+                "left": "ndiyani (Std. njiani)",
+                "right": "On the road / way (Kiamu form of njiani)"
+              },
+              {
+                "left": "zitabu (Std. vitabu)",
+                "right": "Books (Kiamu Class 8 zi- form of vitabu)"
+              },
+              {
+                "left": "zisiwani (Std. visiwani)",
+                "right": "In the islands (Kiamu Class 8 zi- form of visiwani)"
+              },
+              {
+                "left": "ziyongozi (Std. viongozi)",
+                "right": "Leaders (Kiamu Class 8 zi- form of viongozi)"
+              }
+            ]
           }
         ]
       }

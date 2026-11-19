@@ -156,9 +156,9 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "What is the English meaning of \"Ejokuna, arai ijo?\" in Teso?",
-            "correctAnswer": "Fine",
+            "correctAnswer": "Fine, and you?",
             "options": [
-              "Fine",
+              "Fine, and you?",
               "Hello",
               "How are you?",
               "See you again"
@@ -172,12 +172,12 @@ export const TESO_UNITS: CourseUnit[] = [
           {
             "type": "multiple_choice",
             "prompt": "How do you say \"Fine, and you?\" in Teso?",
-            "correctAnswer": "Ejokuna",
+            "correctAnswer": "Ejokuna, arai ijo?",
             "options": [
               "Yoga",
               "Ijai biai?",
               "Ingai bo ekon'kiror?",
-              "Ejokuna"
+              "Ejokuna, arai ijo?"
             ],
             "hint": "eh-joh-koo-nah ah-rah-ee ee-joh",
             "acceptedAnswers": [
@@ -1062,7 +1062,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"ndachakoni\"",
             "correctAnswer": "Brother",
             "acceptedAnswers": [
-              "Brother",
               "Brother"
             ],
             "hint": "Review Clans, Marriage & Community Life"
@@ -1172,18 +1171,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "target": "yenisodit (n.)",
             "source": "One (1) — neuter",
             "pronunciation": "ye-ni-so-dit",
-            "hint": "Wikipedia Teso language — Cardinal numbers"
-          },
-          {
-            "target": "ikany-kape (m.) / akany-kape (f.)",
-            "source": "Six (6, lit. 5+1)",
-            "pronunciation": "ikany-kape / akany-kape",
-            "hint": "Wikipedia Teso language — Cardinal numbers"
-          },
-          {
-            "target": "ikany-kaare (m.) / akany-kaare (f.)",
-            "source": "Seven (7, lit. 5+2)",
-            "pronunciation": "ikany-kaare / akany-kaare",
             "hint": "Wikipedia Teso language — Cardinal numbers"
           }
         ],
@@ -1354,9 +1341,9 @@ export const TESO_UNITS: CourseUnit[] = [
             "hint": "Wikipedia Teso language — Cardinal numbers"
           },
           {
-            "target": "akais aangon",
+            "target": "akais aongon",
             "source": "Forty (40)",
-            "pronunciation": "a-kais aangon",
+            "pronunciation": "a-kais a-o-ngon",
             "hint": "Wikipedia Teso language — Cardinal numbers"
           }
         ],
@@ -2105,7 +2092,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"anya\"",
             "correctAnswer": "Grass",
             "acceptedAnswers": [
-              "Grass",
               "Grass"
             ],
             "hint": "Review East African Fauna, Birds & Sacred Trees"
@@ -2422,7 +2408,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "prompt": "Translate to English: \"adam\"",
             "correctAnswer": "Brain",
             "acceptedAnswers": [
-              "Brain",
               "Brain"
             ],
             "hint": "Review Health, Traditional Medicine & Emergency Terms"
@@ -2503,18 +2488,6 @@ export const TESO_UNITS: CourseUnit[] = [
             "source": "Eat",
             "pronunciation": "a-kinyam",
             "hint": "Hobley 1902 & Johnston 1902"
-          },
-          {
-            "target": "akinyam / ainyam (akí-ɲám-à)",
-            "source": "To eat",
-            "pronunciation": "a-kinyam / ainyam",
-            "hint": "Wikipedia Teso language & Eastern Nilotic languages"
-          },
-          {
-            "target": "akimat / aimat",
-            "source": "To drink",
-            "pronunciation": "a-ki-mat / ai-mat",
-            "hint": "Wikipedia Teso language — Orthography"
           },
           {
             "target": "akilip / ailip",
@@ -3335,9 +3308,9 @@ export const TESO_UNITS: CourseUnit[] = [
             "pronunciation": "yo-ga"
           },
           {
-            "target": "ekinok",
-            "source": "Peace",
-            "pronunciation": "e-ki-nok"
+            "target": "Ejokuna",
+            "source": "Fine / Well",
+            "pronunciation": "e-jo-ku-na"
           },
           {
             "target": "Eyalama",
@@ -3356,8 +3329,8 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Ijai biai?",
-            "source": "How did you sleep? / Good morning (Ateso)",
-            "pronunciation": "ijai-biai"
+            "source": "How are you? (singular)",
+            "pronunciation": "i-jai biai"
           },
           {
             "target": "Esokoni",
@@ -3387,14 +3360,14 @@ export const TESO_UNITS: CourseUnit[] = [
           },
           {
             "target": "Ijai biai?",
-            "source": "How did you sleep? / Good morning (Ateso)."
+            "source": "How are you? (singular)."
           },
           {
             "target": "Epaunt lok’ Uingereza",
             "source": "British Pound (GBP)."
           },
           {
-            "target": "Epaunt Lok’ Sudan",
+            "target": "Epaunt lok’ Sudan",
             "source": "Sudanese Pound (SDG)."
           },
           {
@@ -3475,7 +3448,7 @@ export const TESO_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "akais aangon",
+            "target": "akais aongon",
             "source": "Forty (40)."
           },
           {

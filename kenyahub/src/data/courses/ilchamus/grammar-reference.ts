@@ -95,9 +95,9 @@ Hon. K. R. Dundas (*JRAI* Vol. 40, 1910, pp. 49–55) documented the Ilchamus (*
 * **Njemps Lekepir ("Up Stream" / Njemps Ndogo)**: Located five miles further upstream.
 
 Dundas identified **16 clans distributed across 6 component tribes** that fused to form the Ilchamus community:
-1. **Il Keroi** (aboriginal Baringo inhabitants): 6 clans — *Parsaina, Lugoمای (Loiborkishu), Loimisi,chamusi, Saka, Keroi*.
+1. **Il Keroi** (aboriginal Baringo inhabitants): 6 clans — *Parsaina, Lugumai (Loiborkishu), Loimisi, Ilchamus, Saka, Keroi*.
 2. **Il Doigio** (Samburu section from Loroghi): 3 clans — *Loimisi, Masula, Parsaina*.
-3. **Il Laikipiak** (Northern Maa section): 4 clans — *Loiborkishu, Saka, Mae, Парsaina*.
+3. **Il Laikipiak** (Northern Maa section): 4 clans — *Loiborkishu, Saka, Mae, Parsaina*.
 4. **Ilumbwa** (agriculturalists from beside Kilimanjaro): 1 clan — *Ilumbwa*.
 5. **Il Mwesi** (from the Marangishu / Naivasha hills): 1 clan — *Il Mwesi*.
 6. **Il Ngwesi** (from the eastern slopes of Mount Kenya): 1 clan — *Il Ngwesi*.
@@ -154,9 +154,9 @@ Archdeacon J. P. Farler (*Proceedings of the Royal Geographical Society*, Vol. 4
 
 ### 2. Lieut. Ludwig von Höhnel (1894, Vol. I, Ch. VI, pp. 381–393): The Guaso Tigerish Dam & Irrigation System
 During the Teleki–Höhnel expedition's stay at Njemps (February & July–August 1888), Lieut. Ludwig von Höhnel documented the engineering and linguistic details of the Ilchamus community:
-* **The Guaso Tigerish Timber-Pile, Brushwood & Boulder Dam (p. 383)**: One mile above Njemps, the Ilchamus constructed a massive weir across the **Guaso Tigerish (Perkerra)** by driving stout timber piles across the riverbed, weaving brushwood between them, and banking heavy boulders and river clay against the frame. From this reservoir, two main canals branched into a dense checkerboard of smaller ditches (**l-baa**) divided into square plots (**oboro**) that could be flooded or closed off with a single spadeful of earth.
+* **The Guaso Tigerish Timber-Pile, Brushwood & Boulder Dam (p. 383)**: One mile above Njemps, the Ilchamus constructed a massive weir across the **Guaso Tigerish (Perkerra)** by driving stout timber piles across the riverbed, weaving brushwood between them, and banking heavy boulders and river clay against the frame. From this reservoir, two main canals branched into a dense checkerboard of smaller ditches (**l-baa**) divided into square irrigated plots that could be flooded or closed off with a single spadeful of earth.
 * **Cultivated Crops & Granaries (*Lkadich*, pp. 383–385)**: The irrigated fields (**nkurma**) yielded two harvests a year of **mtama (Durrha / sorghum)**, **eleusine (wimbi / finger millet)**, and **two varieties of gourds/pumpkins** (*nkokorri*). The grain was stored in tall, cylindrical wickerwork granaries (**lkadich**) raised on wooden posts and roofed with grass thatch outside the thorn palisades (**o-sanzu**) because honesty within the community was absolute.
-* **Ol Kokwa Island Boatmen & Leikipia Refugees (pp. 385, 391)**: On the volcanic island of **Ol Kokwa** in the middle of **Lake Baringo (Mparingo)** lived a section of Ilchamus who paddled lightweight ambatch-wood canoes (**l-kadich / emboyuwet**) and maintained hot-spring lookouts, where survivors of the **Il-Leikipiak** wars had also found sanctuary.`,
+* **Ol Kokwa Island Boatmen & Leikipia Refugees (pp. 385, 391)**: On the volcanic island of **Ol Kokwa** in the middle of **Lake Baringo (Mparingo)** lived a section of Ilchamus who paddled lightweight ambatch-wood rafts (**oboro**, lashed from 6–8 *Herminiera elaphroxylon* stems) and maintained hot-spring lookouts, where survivors of the **Il-Leikipiak** wars had also found sanctuary.`,
     examples: [
       {
         ilchamus: 'Guaso Tigerish (Perkerra) • Guaso Nyiro • Mparingo (Lake Baringo)',
@@ -164,8 +164,8 @@ During the Teleki–Höhnel expedition's stay at Njemps (February & July–Augus
         gloss: 'Hydrological geography of the Baringo basin (Höhnel 1894, Vol. I, pp. 381–385)'
       },
       {
-        ilchamus: 'oboro (irrigated plot) • lkadich (raised wicker granary) • o-sanzu (double thorn palisade)',
-        english: 'Square irrigated garden plot • Raised cylindrical granary • Village palisade',
+        ilchamus: 'oboro (ambatch log raft) • lkadich (raised wicker granary) • o-sanzu (double thorn palisade)',
+        english: 'Ambatch-wood log raft • Raised cylindrical granary • Village palisade',
         gloss: 'Ilchamus agricultural and defensive architecture (Höhnel 1894, pp. 382–385)'
       },
       {

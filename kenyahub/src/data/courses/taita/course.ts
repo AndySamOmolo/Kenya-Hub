@@ -688,12 +688,12 @@ export const TAITA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ikenda — ikumi",
-            "source": "Nine — Ten."
+            "target": "Mbuzi ikenda na ng'ombe ikumi.",
+            "source": "Nine goats and ten cows."
           },
           {
-            "target": "ikumi na imweri — ikumi na iwi",
-            "source": "Eleven — Twelve."
+            "target": "Waanake ikumi na imweri wagenda chuoni.",
+            "source": "Eleven children went to school."
           }
         ],
         "authoredExercises": [
@@ -998,12 +998,12 @@ export const TAITA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "kajo — nyama",
-            "source": "Food — Meat."
+            "target": "Kajo na nyama ni chakulya chedi.",
+            "source": "Food and meat are a good meal."
           },
           {
-            "target": "maziwa — iru",
-            "source": "Milk — Banana."
+            "target": "Waanake wanywa maziwa na wakula iru.",
+            "source": "The children drink milk and eat bananas."
           }
         ],
         "authoredExercises": [
@@ -1465,12 +1465,12 @@ export const TAITA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ighwe — isi",
-            "source": "Stone — Earth."
+            "target": "Ighwe ibwaa liko isi ya Taita.",
+            "source": "A large stone lies on the land of Taita."
           },
           {
-            "target": "ituku — kilo",
-            "source": "Day — Night."
+            "target": "Ituku ni lya kazi na kilo ni lya kulala.",
+            "source": "Day is for work and night is for sleeping."
           }
         ],
         "authoredExercises": [
@@ -2125,12 +2125,6 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Verified comparative entry across Kenyan bantu corpus"
           },
           {
-            "target": "kukunda (-kunda)",
-            "source": "To love / like",
-            "pronunciation": "ku-kunda",
-            "hint": "Verified comparative entry across Kenyan bantu corpus"
-          },
-          {
             "target": "kuinka (-inka)",
             "source": "To give",
             "pronunciation": "kuinka",
@@ -2314,12 +2308,12 @@ export const TAITA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Mwakucha wedi? — Ki-lavu",
-            "source": "Good morning — Day."
+            "target": "Mwakucha wedi? Kilavu cha leo ni chedi.",
+            "source": "Good morning! Today is a good day."
           },
           {
-            "target": "saa — msenya 'gati, ijua chongoni",
-            "source": "Hour — Noon."
+            "target": "Saa ya msenya 'gati ijua liko chongoni.",
+            "source": "At noon the sun is directly overhead."
           }
         ],
         "authoredExercises": [
@@ -2434,7 +2428,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "pronunciation": "kiambuko"
           },
           {
-            "target": "andu ijua lyifuma (East)",
+            "target": "andu ijua lyifuma",
             "source": "East (where the sun rises)",
             "pronunciation": "andu-ijua-lyifuma"
           },
@@ -2450,37 +2444,37 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, pp. 97–98) Go, to"
           },
           {
-            "target": "ku-joka, ku-kwela (to go up)",
+            "target": "ku-joka, ku-kwela",
             "source": "To ascend / climb",
             "pronunciation": "ku-joka"
           },
           {
-            "target": "ku-selela, ku-jika (to go down)",
+            "target": "ku-selela, ku-jika",
             "source": "To descend",
             "pronunciation": "ku-selela"
           },
           {
-            "target": "ku-ambuka (to cross over)",
+            "target": "ku-ambuka",
             "source": "To cross over",
             "pronunciation": "ku-ambuka"
           },
           {
-            "target": "hambiri (in front, before)",
+            "target": "hambiri",
             "source": "In front / before",
             "pronunciation": "hambiri"
           },
           {
-            "target": "nyuma (behind, after)",
+            "target": "nyuma",
             "source": "Behind / after",
             "pronunciation": "nyuma"
           },
           {
-            "target": "kulele, sa ndigi (far)",
+            "target": "kulele, sa ndigi",
             "source": "Far away",
             "pronunciation": "kulele"
           },
           {
-            "target": "avui na (near)",
+            "target": "avui na",
             "source": "Near",
             "pronunciation": "avui-na"
           },
@@ -2754,42 +2748,42 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, p. 59) Narrative idiom #2: Angoije?"
           },
           {
-            "target": "Eee (Yes)",
+            "target": "Eee",
             "source": "Yes",
             "pronunciation": "eee"
           },
           {
-            "target": "A-a / Bai / nasal Ēēē (No)",
+            "target": "A-a / Bai / Ēēē",
             "source": "No",
-            "pronunciation": "a-a"
+            "pronunciation": "a-a / bai / nasal eee"
           },
           {
-            "target": "N'ikweli, Atigoni! (Truly! Indeed!)",
+            "target": "N'ikweli, Atigoni!",
             "source": "Truly! Indeed!",
             "pronunciation": "n'ikweli"
           },
           {
-            "target": "Ola! (Behold!)",
+            "target": "Ola!",
             "source": "Behold!",
             "pronunciation": "ola"
           },
           {
-            "target": "Ado! (Speak well!)",
+            "target": "Ado!",
             "source": "Speak well!",
             "pronunciation": "ado"
           },
           {
-            "target": "Sumilani! (Make way!)",
+            "target": "Sumilani!",
             "source": "Make way!",
             "pronunciation": "sumilani"
           },
           {
-            "target": "Usi! (Be quiet!)",
+            "target": "Usi!",
             "source": "Don't make a noise!",
             "pronunciation": "usi"
           },
           {
-            "target": "Chubwi! (Gone!)",
+            "target": "Chubwi!",
             "source": "Gone!",
             "pronunciation": "chubwi"
           },
@@ -2806,28 +2800,28 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Wray (1894, pp. 43, 63, 74) Imperatives"
           },
           {
-            "target": "Chanuka buu (smells horridly)",
-            "source": "Ideophones: buu (foul smell)",
+            "target": "Chanuka buu",
+            "source": "It smells horridly (ideophone: buu)",
             "pronunciation": "chanuka-buu"
           },
           {
-            "target": "Chakesua doo (fading red)",
-            "source": "doo (fading red)",
+            "target": "Chakesua doo",
+            "source": "Fading red (ideophone: doo)",
             "pronunciation": "chakesua-doo"
           },
           {
-            "target": "Nagora go (said all)",
-            "source": "go (completely)",
+            "target": "Nagora go",
+            "source": "I said it all completely (ideophone: go)",
             "pronunciation": "nagora-go"
           },
           {
-            "target": "Chanakulile ku (very hard)",
-            "source": "ku (very hard)",
+            "target": "Chanakulile ku",
+            "source": "Very hard (ideophone: ku)",
             "pronunciation": "chanakulile-ku"
           },
           {
-            "target": "Chamanga tuku (very firm)",
-            "source": "tuku (very firm)",
+            "target": "Chamanga tuku",
+            "source": "Very firm (ideophone: tuku)",
             "pronunciation": "chamanga-tuku"
           },
           {
@@ -3328,7 +3322,7 @@ export const TAITA_UNITS: CourseUnit[] = [
             "hint": "Rev. J. Alfred Wray, An Elementary Introduction to the Taita Language (SPCK London, 1894, p. 127)"
           },
           {
-            "target": "-mnyangi (mnynge); [the white neck of a raven], ikombe",
+            "target": "-mnyangi (mnyange); [the white neck of a raven], ikombe",
             "source": "White (and the white collar of a raven)",
             "pronunciation": "mnyangi / i-kombe"
           },
@@ -3668,7 +3662,6 @@ export const TAITA_UNITS: CourseUnit[] = [
         "icon": "Layers",
         "description": "Practice Kidaw'ida (Taita) parallel sentences from ThinkKenya / Waleghwa (26,662 pairs, CC-BY-4.0) and Mozilla Common Voice 25.0 (31,892 CC0 sentences).",
         "culturalNote": "Kidaw'ida (Taita) is one of Kenya's best-represented coastal-hinterland Bantu languages in open NLP thanks to Prof. Audrey Mbogho and the ThinkKenya team's 26,662 Kidaw'ida–Kiswahili parallel sentences and 31,892 CC0-1.0 sentences on Common Voice 25.0.",
-        "grammarTip": "Compare Class 2 plural prefix wa- in wandru wose ('all people') with Class 7 prefix ch- in chawia cha kudighana ('peaceful cooperation').",
         "words": [
           {
             "target": "Wandru wa Wughanga",
@@ -3720,7 +3713,8 @@ export const TAITA_UNITS: CourseUnit[] = [
             "target": "Chawia cha kudighana ni chuo cha wandru wose.",
             "source": "Peaceful cooperation is the school of all people."
           }
-        ]
+        ],
+        "tips": "Compare Class 2 plural prefix wa- in wandru wose ('all people') with Class 7 prefix ch- in chawia cha kudighana ('peaceful cooperation')."
       },
       {
         "id": "taita-corpus-sentences-skill-1",

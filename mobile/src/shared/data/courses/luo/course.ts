@@ -1881,6 +1881,7 @@ interface SkillWord {
   partOfSpeech?: string;
   hint?: string;
   audio?: string;
+  audioFile?: string;
   example?: string;
   response?: string;
 }
@@ -2240,13 +2241,10 @@ const DHOLUO_CURATED_EXAMPLES: Record<string, string> = {
   tado: 'Gero tado mar ot. — Building the roof of the house.',
 };
 
-function getDholuoPronunciationGuide(luo: string, notes?: string): string {
+function getDholuoPronunciationGuide(luo: string): string {
   const norm = luo.toLowerCase().trim();
   if (DHOLUO_CURATED_PRONUNCIATIONS[norm]) {
     return DHOLUO_CURATED_PRONUNCIATIONS[norm];
-  }
-  if (notes && !notes.toLowerCase().includes('verb') && !notes.toLowerCase().includes('noun')) {
-    return notes.replace(/^[-•\s]+/, '').trim();
   }
   return luo
     .toLowerCase()
@@ -2291,6 +2289,7 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
     title: mod.title,
     description: mod.description,
     icon: MODULE_ICONS[mod.moduleId] || 'BookOpen',
+    color: LUO_CONFIG.color,
     skills: mod.lessons.flatMap((lesson) => {
       const words: SkillWord[] = [];
       const seenTargets = new Set<string>();
@@ -2299,7 +2298,7 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
       // 1. Key Vocabulary
       for (const vocab of lesson.keyVocabulary) {
         const grammarExamples = lesson.grammarRules.flatMap((r) => r.examples);
-        const phoneticPron = getDholuoPronunciationGuide(vocab.luo, vocab.notes);
+        const phoneticPron = getDholuoPronunciationGuide(vocab.luo);
         const contextualExample = getDholuoExampleSentence(vocab.luo, vocab.english, lesson.lessonId, grammarExamples);
 
         addUniqueWord(words, seenTargets, seenSources, {
@@ -2307,6 +2306,7 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
           source: vocab.english,
           pronunciation: phoneticPron,
           partOfSpeech: vocab.partOfSpeech,
+          hint: vocab.notes,
           example: contextualExample,
         });
       }
@@ -2318,8 +2318,9 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
             addUniqueWord(words, seenTargets, seenSources, {
               target: ex.transformedForm,
               source: `${ex.transformedMeaning} (from ${ex.baseForm})`,
-              pronunciation: `${table.category} • base ${ex.baseForm} (${ex.baseMeaning})`,
+              pronunciation: getDholuoPronunciationGuide(ex.transformedForm),
               partOfSpeech: 'noun',
+              hint: `${table.category} • base ${ex.baseForm} (${ex.baseMeaning})`,
               example: `${ex.baseForm} (${ex.baseMeaning}) → ${ex.transformedForm}`,
             });
           }
@@ -2328,8 +2329,9 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
               addUniqueWord(words, seenTargets, seenSources, {
                 target: exc.transformedForm,
                 source: `plural of ${exc.baseForm} (${exc.baseMeaning})`,
-                pronunciation: exc.note || `Irregular form of ${exc.baseForm}`,
+                pronunciation: getDholuoPronunciationGuide(exc.transformedForm),
                 partOfSpeech: 'noun',
+                hint: exc.note || `Irregular form of ${exc.baseForm}`,
                 example: `${exc.baseForm} (${exc.baseMeaning}) → ${exc.transformedForm}`,
               });
             }
@@ -2344,8 +2346,9 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
             addUniqueWord(words, seenTargets, seenSources, {
               target: row.affirmative[0],
               source: `${row.englishAffirmative} (${row.pronounLabel})`,
-              pronunciation: row.negative ? `Neg ${row.negative[0]} • ${vp.tenseOrMood}` : vp.tenseOrMood,
+              pronunciation: getDholuoPronunciationGuide(row.affirmative[0]),
               partOfSpeech: 'verb',
+              hint: row.negative ? `Neg ${row.negative[0]} • ${vp.tenseOrMood}` : vp.tenseOrMood,
               example: row.negative
                 ? `${row.pronounLabel} ${row.affirmative[0]} / ${row.negative[0]}`
                 : `${row.pronounLabel} ${row.affirmative[0]}`,
@@ -2361,8 +2364,8 @@ const GRAMMAR_MODULE_UNITS: CourseUnit[] = COURSE_MODULES.map((mod) => {
             addUniqueWord(words, seenTargets, seenSources, {
               target: ex.luo,
               source: ex.english,
-              pronunciation: ex.grammarNote || rule.title,
               partOfSpeech: 'phrase',
+              hint: ex.grammarNote || rule.title,
             });
           }
         }
@@ -2423,6 +2426,7 @@ const PHRASEBOOK_UNIT: CourseUnit = {
   description:
     'Practical conversational Dholuo across greetings, household tasks, market shopping, health care, farming, and travel.',
   icon: 'MessageSquare',
+  color: LUO_CONFIG.color,
   skills: PHRASEBOOK_SECTIONS.flatMap((section) => {
     const words: SkillWord[] = [];
     const seenTargets = new Set<string>();
@@ -2435,8 +2439,8 @@ const PHRASEBOOK_UNIT: CourseUnit = {
       addUniqueWord(words, seenTargets, seenSources, {
         target: primaryLuo,
         source: ex.english,
-        pronunciation: ex.notes || section.title,
         partOfSpeech: 'phrase',
+        hint: ex.notes || section.title,
         example: ex.luo !== primaryLuo ? ex.luo : undefined,
       });
 
@@ -2486,6 +2490,7 @@ const EXERCISES_UNIT: CourseUnit = {
   description:
     'Comprehensive translation and morphology drills from the 1920 Handbook with model solutions and grammatical commentary.',
   icon: 'Target',
+  color: LUO_CONFIG.color,
   skills: COURSE_EXERCISES.map((exSet, idx) => {
     const words: SkillWord[] = [];
     const seenTargets = new Set<string>();
@@ -2498,8 +2503,8 @@ const EXERCISES_UNIT: CourseUnit = {
       addUniqueWord(words, seenTargets, seenSources, {
         target: primaryLuo,
         source: item.promptEnglish,
-        pronunciation: item.grammarFocus,
         partOfSpeech: 'sentence',
+        hint: item.grammarFocus,
         example: item.solutionLuo !== primaryLuo ? item.solutionLuo : item.explanation,
       });
       if (isCleanPracticeSentence(primaryLuo, item.promptEnglish)) {
@@ -2519,8 +2524,9 @@ const EXERCISES_UNIT: CourseUnit = {
           addUniqueWord(words, seenTargets, seenSources, {
             target: vocab.luo,
             source: vocab.english,
-            pronunciation: `${vocab.partOfSpeech}${vocab.notes ? ` • ${vocab.notes}` : ''}`,
+            pronunciation: getDholuoPronunciationGuide(vocab.luo),
             partOfSpeech: vocab.partOfSpeech,
+            hint: vocab.notes,
           });
         }
       }
@@ -2551,8 +2557,8 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     addUniqueWord(proverbWords, seenPT, seenPS, {
       target: p.luo,
       source: cleanMeaning,
-      pronunciation: p.literal_translation ? `Lit. "${p.literal_translation}"` : 'Dholuo Proverb (Ngero)',
       partOfSpeech: 'proverb',
+      hint: p.literal_translation ? `Lit. "${p.literal_translation}"` : 'Dholuo Proverb (Ngero)',
       example: p.explanation || p.literal_translation || cleanMeaning,
     });
     if (proverbWords.length >= 24) break;
@@ -2582,8 +2588,8 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     addUniqueWord(riddleWords, seenRT, seenRS, {
       target: r.luo,
       source: `${r.english} (Answer — ${r.answer})`,
-      pronunciation: `Riddle Answer — ${r.answer}`,
       partOfSpeech: 'riddle',
+      hint: `Riddle Answer — ${r.answer}`,
       example: `${r.luo} — ${r.english} → ${r.answer}`,
     });
     if (riddleWords.length >= 14) break;
@@ -2611,8 +2617,8 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     addUniqueWord(twisterWords, seenTT, seenTS, {
       target: t.luo,
       source: t.english,
-      pronunciation: 'Alliterative Dholuo Tongue Twister',
       partOfSpeech: 'phrase',
+      hint: 'Alliterative Dholuo Tongue Twister',
       example: `${t.luo} — ${t.english}`,
     });
   }
@@ -2637,6 +2643,7 @@ const ORAL_LITERATURE_UNIT: CourseUnit = (() => {
     title: 'Dholuo Oral Literature — Proverbs, Riddles & Diction',
     description: 'Master classical Dholuo proverbs (Ngeche), evening riddles (Miero), and alliterative tongue twisters.',
     icon: 'Award',
+    color: LUO_CONFIG.color,
     skills: [...proverbSkills, ...riddleSkills, ...twisterSkills],
   };
 })();
@@ -3707,12 +3714,453 @@ export const PUBLIC_DOMAIN_DATASET_UNITS: CourseUnit[] = [
   }
 ];
 
+const NATIVE_AUDIO_UNIT: CourseUnit = {
+  "id": "luo-unit-17",
+  "unitNumber": 17,
+  "title": "Native Audio & Listening Practice",
+  "description": "Train your ear with verified native-speaker Dholuo recordings covering everyday expressions, home dialogues, and community life.",
+  "icon": "Volume2",
+  "color": "#0EA5E9",
+  "skills": [
+    {
+      "id": "luo-audio-1-everyday",
+      "title": "Everyday Expressions & Polite Speech",
+      "icon": "Volume2",
+      "description": "Listen to native Dholuo speakers use essential daily expressions, hospitality phrases, and common responses.",
+      "tips": "Listen closely to Dholuo vowel harmony and tone contours in everyday phrases like 'Ber ahinya' (Very good / Awesome), 'Kaw kom' (Have a seat), and 'Ee ero kamano' (Yes, we are thankful).",
+      "culturalNote": "Welcoming a visitor with 'Kaw kom' (Take a chair) and expressing gratitude with 'Ero kamano' are foundational habits of Luo hospitality around the Lake Victoria basin. Verified native recordings from the Thiomi-5K Parallel Speech & Text Corpus (CC-BY-4.0).",
+      "words": [
+        {
+          "target": "Ka",
+          "source": "Here / If / Upon",
+          "pronunciation": "ka",
+          "partOfSpeech": "preposition",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ka.opus"
+        },
+        {
+          "target": "Ber ahinya",
+          "source": "Very good / Awesome",
+          "pronunciation": "ber a-hi-nya",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ber-ahinya.opus"
+        },
+        {
+          "target": "Kaw kom",
+          "source": "Have a seat",
+          "pronunciation": "kaw kom",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/kaw-kom.opus"
+        },
+        {
+          "target": "Ee ero kamano",
+          "source": "Yes, we are thankful",
+          "pronunciation": "ee e-ro ka-ma-no",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ee-ero-kamano.opus"
+        },
+        {
+          "target": "Nyaka adhi",
+          "source": "I must go / Got to go",
+          "pronunciation": "nya-ka a-dhi",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/nyaka-adhi.opus"
+        },
+        {
+          "target": "Ne tek",
+          "source": "It was tough",
+          "pronunciation": "ne tek",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ne-tek.opus"
+        },
+        {
+          "target": "Onge ketho",
+          "source": "Innocent / No fault",
+          "pronunciation": "o-nge ke-tho",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/onge-ketho.opus"
+        },
+        {
+          "target": "Kuom kinde duto",
+          "source": "All this time",
+          "pronunciation": "kuom ki-nde du-to",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/kuom-kinde-duto.opus"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Kaw kom",
+          "source": "Have a seat.",
+          "audio": "https://audio.kenyahub.me/audio/luo/kaw-kom.opus"
+        },
+        {
+          "target": "Ee ero kamano",
+          "source": "Yes, we are thankful.",
+          "audio": "https://audio.kenyahub.me/audio/luo/ee-ero-kamano.opus"
+        },
+        {
+          "target": "Nyaka adhi",
+          "source": "I must go.",
+          "audio": "https://audio.kenyahub.me/audio/luo/nyaka-adhi.opus"
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "What does 'Kaw kom' mean in Dholuo?",
+          "correctAnswer": "Have a seat",
+          "options": [
+            "Have a seat",
+            "It was tough",
+            "I must go",
+            "All this time"
+          ],
+          "hint": "'Kaw' = take; 'kom' = chair/stool."
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete 'Very good / Awesome': Ber _____",
+          "correctAnswer": "ahinya",
+          "options": [
+            "ahinya",
+            "kom",
+            "ketho",
+            "duto"
+          ],
+          "hint": "The Dholuo intensifier meaning 'very / very much'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each spoken Dholuo expression with its English meaning",
+          "correctAnswer": "",
+          "pairs": [
+            {
+              "left": "Ber ahinya",
+              "right": "Very good / Awesome"
+            },
+            {
+              "left": "Kaw kom",
+              "right": "Have a seat"
+            },
+            {
+              "left": "Nyaka adhi",
+              "right": "I must go"
+            },
+            {
+              "left": "Ne tek",
+              "right": "It was tough"
+            }
+          ]
+        },
+        {
+          "type": "word_bank",
+          "prompt": "Build the Dholuo phrase for 'Yes, we are thankful'",
+          "correctAnswer": "Ee ero kamano",
+          "wordTiles": [
+            "Ee",
+            "ero",
+            "kamano",
+            "tek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luo-audio-2-home-questions",
+      "title": "Home, Directions & Everyday Questions",
+      "icon": "MessageCircle",
+      "description": "Practice listening to natural Dholuo questions about visitors, directions, helping others, and everyday household life.",
+      "tips": "Notice dental 'dh' in 'dhootno' (the door), velar nasal 'ng’' in 'ng’a/nga’wa' (who?), and the 1st-person plural prefix 'wa-' in 'Wapenj yo' (Let's ask for directions) and 'Wan gi ywaruok' (We have a problem).",
+      "culturalNote": "In Dholuo conversation, polite questions often soften directness with 'onego' (should/ought) or 'dak' (why not / why didn't). Verified native recordings from the Thiomi-5K Parallel Speech & Text Corpus (CC-BY-4.0).",
+      "words": [
+        {
+          "target": "Dhootno",
+          "source": "The door",
+          "pronunciation": "dhoot-no",
+          "partOfSpeech": "noun",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/dhootno.opus"
+        },
+        {
+          "target": "Nga'wa manie dhoot",
+          "source": "Who is at the door?",
+          "pronunciation": "nga-wa ma-nie dhoot",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/nga-wa-manie-dhoot.opus"
+        },
+        {
+          "target": "Wapenj yo",
+          "source": "Let's ask for directions",
+          "pronunciation": "wa-penj yo",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/wapenj-yo.opus"
+        },
+        {
+          "target": "Lewni manyien",
+          "source": "New clothes",
+          "pronunciation": "lew-ni ma-nyien",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/lewni-manyien.opus"
+        },
+        {
+          "target": "Onego wakonye",
+          "source": "Should we help her out?",
+          "pronunciation": "o-ne-go wa-ko-nye",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/onego-wakonye.opus"
+        },
+        {
+          "target": "Dak ne inyisa",
+          "source": "Why didn't you tell me?",
+          "pronunciation": "dak ne i-nyi-sa",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/dak-ne-inyisa.opus"
+        },
+        {
+          "target": "Maendi ne igolo kanye",
+          "source": "Where did you get this one?",
+          "pronunciation": "ma-e-ndi ne i-go-lo ka-nye",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/maendi-ne-igolo-kanye.opus"
+        },
+        {
+          "target": "Wan gi ywaruok",
+          "source": "We have a problem",
+          "pronunciation": "wan gi ywa-ruok",
+          "partOfSpeech": "phrase",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/wan-gi-ywaruok.opus"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "Nga'wa manie dhoot",
+          "source": "Who is at the door?",
+          "audio": "https://audio.kenyahub.me/audio/luo/nga-wa-manie-dhoot.opus"
+        },
+        {
+          "target": "Wapenj yo",
+          "source": "Let's ask for directions!",
+          "audio": "https://audio.kenyahub.me/audio/luo/wapenj-yo.opus"
+        },
+        {
+          "target": "Wan gi ywaruok",
+          "source": "We have a problem.",
+          "audio": "https://audio.kenyahub.me/audio/luo/wan-gi-ywaruok.opus"
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "How do you say 'Let's ask for directions' in Dholuo?",
+          "correctAnswer": "Wapenj yo",
+          "options": [
+            "Wapenj yo",
+            "Lewni manyien",
+            "Wan gi ywaruok",
+            "Onego wakonye"
+          ],
+          "hint": "'Penjo' = to ask; 'yo' = road/way."
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete 'New clothes': Lewni _____",
+          "correctAnswer": "manyien",
+          "options": [
+            "manyien",
+            "dhootno",
+            "kanye",
+            "ywaruok"
+          ],
+          "hint": "The Dholuo attributive adjective meaning 'new'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Dholuo phrase with its English meaning",
+          "correctAnswer": "",
+          "pairs": [
+            {
+              "left": "Dhootno",
+              "right": "The door"
+            },
+            {
+              "left": "Lewni manyien",
+              "right": "New clothes"
+            },
+            {
+              "left": "Onego wakonye",
+              "right": "Should we help her out?"
+            },
+            {
+              "left": "Wan gi ywaruok",
+              "right": "We have a problem"
+            }
+          ]
+        },
+        {
+          "type": "word_bank",
+          "prompt": "Arrange the words to say 'We have a problem'",
+          "correctAnswer": "Wan gi ywaruok",
+          "wordTiles": [
+            "Wan",
+            "gi",
+            "ywaruok",
+            "yo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luo-audio-3-work-learning",
+      "title": "Farming, Education & Community Life",
+      "icon": "BookOpen",
+      "description": "Build listening fluency with full native-speaker Dholuo sentences about farming, education, storytelling, and mutual support.",
+      "tips": "Listen for agentive 'ja-' in 'japur' (farmer), the negative imperative 'Kik idew' (Don't worry), and habitual '-ga' in 'kawoga' (usually takes).",
+      "culturalNote": "Small-scale farming ('pur'), formal education ('somo'), and evening storytelling ('sigana') remain cornerstones of Luo community life across Kisumu, Siaya, Homa Bay, and Migori counties. Verified native recordings from Thiomi-5K (CC-BY-4.0).",
+      "words": [
+        {
+          "target": "An japur puothe matindo",
+          "source": "I am a small-scale farmer",
+          "pronunciation": "an ja-pur puo-the ma-ti-ndo",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/an-japur-puothe-matindo.opus"
+        },
+        {
+          "target": "Somo miyo ng'ato bedo maber",
+          "source": "Education adds value to you",
+          "pronunciation": "so-mo mi-yo nga-to be-do ma-ber",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/somo-miyo-ng-ato-bedo-maber.opus"
+        },
+        {
+          "target": "Waseiko bugewa mag somo piny",
+          "source": "We are revising geography books",
+          "pronunciation": "wa-se-i-ko bu-ge-wa mag so-mo piny",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/waseiko-bugewa-mag-somo-piny.opus"
+        },
+        {
+          "target": "Sigana maber kawoga seche",
+          "source": "Good stories take time",
+          "pronunciation": "si-ga-na ma-ber ka-wo-ga se-che",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/sigana-maber-kawoga-seche.opus"
+        },
+        {
+          "target": "Abiro limogi e yo makende",
+          "source": "I am visiting them in a special way",
+          "pronunciation": "a-bi-ro li-mo-gi e yo ma-ke-nde",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/abiro-limogi-e-yo-makende.opus"
+        },
+        {
+          "target": "Kik idew an gi mang'eny",
+          "source": "Don't worry, I have plenty for us",
+          "pronunciation": "kik i-dew an gi ma-ngeny",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/kik-idew-an-gi-mang-eny.opus"
+        },
+        {
+          "target": "Ng'a ma nyalo konyi timo mano",
+          "source": "Who can help you do that?",
+          "pronunciation": "nga ma nya-lo ko-nyi ti-mo ma-no",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ng-a-ma-nyalo-konyi-timo-mano.opus"
+        },
+        {
+          "target": "Apuoyi kuom bedo e kwan mogik",
+          "source": "Congratulations for making it to the final list",
+          "pronunciation": "a-puo-yi kuom be-do e kwan mo-gik",
+          "partOfSpeech": "sentence",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/apuoyi-kuom-bedo-e-kwan-mogik.opus"
+        }
+      ],
+      "sentences": [
+        {
+          "target": "An japur puothe matindo",
+          "source": "I am a small-scale farmer.",
+          "audio": "https://audio.kenyahub.me/audio/luo/an-japur-puothe-matindo.opus"
+        },
+        {
+          "target": "Sigana maber kawoga seche",
+          "source": "Good stories take time.",
+          "audio": "https://audio.kenyahub.me/audio/luo/sigana-maber-kawoga-seche.opus"
+        },
+        {
+          "target": "Somo miyo ng'ato bedo maber",
+          "source": "Education adds value to you.",
+          "audio": "https://audio.kenyahub.me/audio/luo/somo-miyo-ng-ato-bedo-maber.opus"
+        }
+      ],
+      "authoredExercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "What does 'Sigana maber kawoga seche' mean?",
+          "correctAnswer": "Good stories take time",
+          "options": [
+            "Good stories take time",
+            "I am a small-scale farmer",
+            "Education adds value to you",
+            "Who can help you do that?"
+          ],
+          "hint": "'Sigana' = story; 'seche' = time/hours."
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Complete 'I am a small-scale farmer': An _____ puothe matindo",
+          "correctAnswer": "japur",
+          "options": [
+            "japur",
+            "sigana",
+            "somo",
+            "kwan"
+          ],
+          "hint": "Combines agent prefix 'ja-' + 'pur' (cultivate)."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match each Dholuo sentence with its English meaning",
+          "correctAnswer": "",
+          "pairs": [
+            {
+              "left": "An japur puothe matindo",
+              "right": "I am a small-scale farmer"
+            },
+            {
+              "left": "Sigana maber kawoga seche",
+              "right": "Good stories take time"
+            },
+            {
+              "left": "Kik idew an gi mang'eny",
+              "right": "Don't worry, I have plenty for us"
+            },
+            {
+              "left": "Ng'a ma nyalo konyi timo mano",
+              "right": "Who can help you do that?"
+            }
+          ]
+        },
+        {
+          "type": "word_bank",
+          "prompt": "Build the Dholuo sentence 'I am a small-scale farmer'",
+          "correctAnswer": "An japur puothe matindo",
+          "wordTiles": [
+            "An",
+            "japur",
+            "puothe",
+            "matindo"
+          ]
+        }
+      ]
+    }
+  ]
+};
+
 export const LUO_UNITS: CourseUnit[] = [
-  ...GRAMMAR_MODULE_UNITS,
   PHRASEBOOK_UNIT,
+  ...GRAMMAR_MODULE_UNITS,
   EXERCISES_UNIT,
   ORAL_LITERATURE_UNIT,
   ...PUBLIC_DOMAIN_DATASET_UNITS,
+  NATIVE_AUDIO_UNIT,
 ].map((u, idx) => ({
   ...u,
   id: `luo-unit-${idx + 1}`,

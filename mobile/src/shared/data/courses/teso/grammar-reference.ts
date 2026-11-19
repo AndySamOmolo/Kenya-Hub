@@ -74,7 +74,7 @@ Demonstratives and relative clauses must match the gender prefix of the noun the
       {
         teso: 'Ngai bo ekonikiro? — Ekakiro erai Emong.',
         english: 'What is your name? — My name is Emong.',
-        gloss: 'Whoprt 2SG.POSS-name? — 1SG.POSS-name is Emong.'
+        gloss: 'Who PRT 2SG.POSS-name? — 1SG.POSS-name is Emong.'
       }
     ]
   },
@@ -85,7 +85,7 @@ Demonstratives and relative clauses must match the gender prefix of the noun the
     summary: 'Verb-initial syntax, Ko- vs. Ki- verb classes, and negation with mam.',
     content: `Ateso is a **Verb–Subject–Object (VSO)** language. Verbs are divided into two morphological classes named after their imperative/subjunctive prefixes:
 1. **KO-Class Verbs** (infinitive in *a-*): e.g., **alosit** (to go) → Imperative **Kolot!** (Go!), **abunore** (to come) → **Bia ne!** (Come here!), **akinyam** (to eat) → **Konyam!** (Eat!).
-2. **KI-Class Verbs** (infinitive in *ai-*): e.g., **ainakin** (to give) → Imperative **Koinakin!** (Give!), **aanyun** (to see).
+2. **KI-Class Verbs** (infinitive in *ai-*): e.g., **ainakin** (to give) → Imperative **Kiinakin! / Kinak!** (Give!), **aanyun** (to see).
 
 ### Subject Agreement & Negation
 * **1st Sg.**: **a-** (*alosi eong* = I go; *acamit eong* = I want/like)
@@ -143,7 +143,7 @@ Demonstratives and relative clauses must match the gender prefix of the noun the
 Ateso numerals agree in gender with the noun counted (neuter/masculine *i-* vs. feminine *a-*):
 * **1–5**: **1** *idiopet / ape*, **2** *iarei / aarei*, **3** *iuni / auni*, **4** *iongon / aongon*, **5** *ikany / akany* (from *akan* 'hand').
 * **6–9 (5 + n)**: **6** *ikany-kape* (5+1), **7** *ikany-kaare* (5+2), **8** *ikany-kauni* (5+3), **9** *ikany-kaongon* (5+4).
-* **10, 20 & 100**: **10** *itomon*, **20** *akais-aarei* (two twenties/scores), **30** *akais-auni*, **100** *akwatat* (pl. *akwat*).
+* **10, 20 & 100**: **10** *itomon*, **20** *akais-aarei* (two tens), **30** *akais-auni*, **100** *akwatat* (pl. *akwat*).
 
 ### 2. Cardinal Directions & Kinship
 * **Cardinal Directions**: **Kide** (East), **Too** (West), **Nyakoi** (North), **Agolitomei** (South).

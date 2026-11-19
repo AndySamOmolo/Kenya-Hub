@@ -292,7 +292,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "target": "momi (pl. waomi)",
-            "source": "Man",
+            "source": "Adult man / Husband",
             "pronunciation": "mo-mi",
             "hint": "Sir Harry H. Johnston (1919, Vol. I, pp. 100–106) — #15 Taveta"
           },
@@ -328,12 +328,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "mndu mume — mche",
-            "source": "Man — Woman."
+            "target": "Mndu mume na mche waikala kaya.",
+            "source": "The man and the woman live at the homestead."
           },
           {
-            "target": "mundu — momi",
-            "source": "Person — Man."
+            "target": "Mundu yuyo ni momi wa kaya.",
+            "source": "That person is the man of the house."
           }
         ],
         "authoredExercises": [
@@ -388,7 +388,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
               },
               {
                 "left": "momi",
-                "right": "Man"
+                "right": "Adult man / Husband"
               },
               {
                 "left": "papa",
@@ -413,7 +413,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919) — Kitaveta"
           },
           {
-            "target": "M-ringga; va-",
+            "target": "M-ringga (pl. va-ringga)",
             "source": "Brother",
             "pronunciation": "m-ringga",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -443,7 +443,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "M-kā; va-kā",
+            "target": "M-kā (pl. va-kā)",
             "source": "Wife",
             "pronunciation": "m-ka",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -462,12 +462,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "zina — M-ringga",
-            "source": "Name — Brother."
+            "target": "Zina lya m-ringga wangu ni Juma.",
+            "source": "My brother’s name is Juma."
           },
           {
-            "target": "Mnggwa — M-omi",
-            "source": "Chief — Husband."
+            "target": "Mnggwa na m-omi wagamba na wandu.",
+            "source": "The chief and the husband speak with the people."
           }
         ],
         "authoredExercises": [
@@ -488,7 +488,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "prompt": "Translate to the target language: \"Brother\"",
             "correctAnswer": "M-ringga",
             "acceptedAnswers": [
-              "M-ringga; va-",
+              "M-ringga (pl. va-ringga)",
               "M-ringga"
             ],
             "hint": "Starts with \"M-\""
@@ -952,12 +952,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "nyama — maziwa",
-            "source": "Meat — Milk."
+            "target": "Wandu wakuria nyama na kunwa maziwa.",
+            "source": "The people eat meat and drink milk."
           },
           {
-            "target": "Chakuria na kikwa",
-            "source": "Food — Yam."
+            "target": "Chakuria chedi ni kikwa na matoke.",
+            "source": "Good food is yam and bananas."
           }
         ],
         "authoredExercises": [
@@ -1086,12 +1086,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "iru — rutoke",
-            "source": "Banana — Banana Grove."
+            "target": "Iru lyakua katika rutoke lwa Lumi.",
+            "source": "Bananas grow in the banana grove of Lumi."
           },
           {
-            "target": "uki — Ma-vuta",
-            "source": "Honey — Fat, oil."
+            "target": "Wache wagura uki na mavuta sokoni.",
+            "source": "The women buy honey and oil at the market."
           }
         ],
         "authoredExercises": [
@@ -1696,7 +1696,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Johnston (1919) — Kitaveta"
           },
           {
-            "target": "Mu-kono; mi-",
+            "target": "Mu-kono (pl. mi-kono)",
             "source": "Arm",
             "pronunciation": "mu-kono",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1708,37 +1708,37 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "I-deu; ma-",
+            "target": "I-deu (pl. ma-deu)",
             "source": "Belly",
             "pronunciation": "i-deu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "Indi, I-windi; ma-",
+            "target": "Indi / I-windi (pl. ma-windi)",
             "source": "Bone",
             "pronunciation": "indi / i-windi",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "M-bafu; mi-",
+            "target": "M-bafu (pl. mi-bafu)",
             "source": "Breast (man's)",
             "pronunciation": "m-bafu",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "I-vele; ma-",
+            "target": "I-vele (pl. ma-vele)",
             "source": "Breast (woman's)",
             "pronunciation": "i-vele",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "Ki-ala; vi-ala",
+            "target": "Ki-ala (pl. vi-ala)",
             "source": "Finger",
             "pronunciation": "ki-ala",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
           },
           {
-            "target": "Lu-wayo; ny-ayo",
+            "target": "Lu-wayo (pl. ny-ayo)",
             "source": "Foot",
             "pronunciation": "lu-wayo",
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)"
@@ -1759,7 +1759,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "type": "multiple_choice",
-            "prompt": "What is the English meaning of \"Mu-kono; mi-\" in Taveta?",
+            "prompt": "What is the English meaning of \"Mu-kono (pl. mi-kono)\" in Taveta?",
             "correctAnswer": "Arm",
             "options": [
               "Back",
@@ -1805,7 +1805,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             ],
             "hint": "Starts with \"I-…\" (5 letters)",
             "acceptedAnswers": [
-              "I-deu; ma-",
+              "I-deu (pl. ma-deu)",
               "I-deu"
             ]
           },
@@ -1819,7 +1819,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
                 "right": "Blood"
               },
               {
-                "left": "Mu-kono; mi-",
+                "left": "Mu-kono (pl. mi-kono)",
                 "right": "Arm"
               },
               {
@@ -1827,7 +1827,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
                 "right": "Back"
               },
               {
-                "left": "I-deu; ma-",
+                "left": "I-deu (pl. ma-deu)",
                 "right": "Belly"
               }
             ]
@@ -1844,7 +1844,7 @@ export const TAVETA_UNITS: CourseUnit[] = [
             ],
             "hint": "Sir Harry H. Johnston (1919) Comparative Study of the Bantu Languages (Group C #15: Ki-Taveita)",
             "acceptedAnswers": [
-              "Indi, I-windi; ma-",
+              "Indi / I-windi (pl. ma-windi)",
               "Indi"
             ]
           }
@@ -2095,19 +2095,19 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "pronunciation": "fo-le"
           },
           {
-            "target": "C-oni; vy-oni",
+            "target": "C-oni (pl. vy-oni)",
             "source": "Hide / Animal skin",
             "pronunciation": "cho-ni / vyo-ni"
           }
         ],
         "sentences": [
           {
-            "target": "kushigha — kuyala",
-            "source": "Leave — Sleep."
+            "target": "Wana washigha kazi na wayala nyumbani.",
+            "source": "The children stop work and sleep in the house."
           },
           {
-            "target": "kuomba — kufuma",
-            "source": "Pray — Come out."
+            "target": "Wazee waomba Mlungu kabla ya kufuma kaya.",
+            "source": "The elders pray to God before leaving the homestead."
           }
         ],
         "authoredExercises": [
@@ -2236,18 +2236,18 @@ export const TAVETA_UNITS: CourseUnit[] = [
           },
           {
             "target": "I-dīma",
-            "source": "To-day",
+            "source": "Today (daylight / this day)",
             "pronunciation": "i-dima"
           }
         ],
         "sentences": [
           {
-            "target": "M-ri — Mw-āka",
-            "source": "Day — Year."
+            "target": "M-ri uno ni wedi katika mwaka uno.",
+            "source": "This day is good in this year."
           },
           {
-            "target": "kucha — ikaya",
-            "source": "Dawn — Today."
+            "target": "Kucha ya ikaya ina mbeho.",
+            "source": "This morning’s dawn is cool."
           }
         ],
         "authoredExercises": [
@@ -2371,12 +2371,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "M-ri — ikaya",
-            "source": "Day — Today."
+            "target": "M-ri wa ikaya ni wa charo.",
+            "source": "Today is a day for a journey."
           },
           {
-            "target": "kesho — igolo",
-            "source": "Tomorrow — Yesterday."
+            "target": "Igolo twaenda mtoni, na kesho tutaenda kaya.",
+            "source": "Yesterday we went to the river, and tomorrow we will go home."
           }
         ],
         "authoredExercises": [
@@ -2513,8 +2513,8 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "njama yaekomi (mpungi / kireti).",
-            "source": "Council of elders (Taveta governance) (Sacred forest grove of Taveta)."
+            "target": "Njama yaekomi ya Taveta ilinda mpungi.",
+            "source": "The Taveta council of elders guards the sacred forest grove."
           }
         ],
         "authoredExercises": [
@@ -2927,12 +2927,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "kābā — Sī-, Tā-, -sī",
-            "source": "To beat — Not."
+            "target": "Wazee wasi-kaba wana wao.",
+            "source": "The elders do not beat their children."
           },
           {
-            "target": "Kw-ī? — īnggī",
-            "source": "Where? — Plenty, many."
+            "target": "Wandu īnggī wagenda kw-ī?",
+            "source": "Where are many people going?"
           }
         ],
         "authoredExercises": [
@@ -3057,9 +3057,9 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "pronunciation": "ja-ha-ko"
           },
           {
-            "target": "Ni wega",
+            "target": "Chavanga / Asante",
             "source": "Thank you",
-            "pronunciation": "nee weh-gah / chah-voo-cheh"
+            "pronunciation": "chah-vah-ngah / ah-sahn-teh"
           },
           {
             "target": "Jedi yoko jahako",
@@ -3104,12 +3104,12 @@ export const TAVETA_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Ni wega",
-            "source": "Thank you."
+            "target": "Chavanga sana.",
+            "source": "Thank you very much."
           },
           {
             "target": "Jedi yoko jahako",
-            "source": "Hello (Reply: Good, how are you?)."
+            "source": "Good, how are you? (greeting reply)"
           },
           {
             "target": "Niko vedi",

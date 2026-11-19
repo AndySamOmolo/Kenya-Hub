@@ -14,7 +14,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-19",
   "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 \"English-Kikuyu Hand-Book\", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904 \"English-Kikuyu Vocabulary\", C.M.S. / SPCK London, Fort Smith / Kabeti 1901–1902, pp. i–iv, 5–192 [PDF pp. 1–201]), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0)).",
   "categories": [
     {
@@ -22412,6 +22412,18 @@
           "english": "Blackjack plant (Bidens pilosa)",
           "translation": "mũcege",
           "context": "Kaikki.org Kikuyu Machine-Readable Dictionary (https://kaikki.org/dictionary/Kikuyu/pos-noun/mwena--m%C5%A9cing%C5%A9.html, CC-BY-SA)"
+        },
+        {
+          "english": "The place of bamboos (bamboo forest on the Kinangop–Aberdare border)",
+          "translation": "Menzini",
+          "pronunciation": "men-zee-nee",
+          "context": "p. 79 ('the bamboo forest, which is known to the natives by the name of Menzini, \"the place of bamboos\"') — John Boyes (1911/1912), A White King in East Africa, ed. C. W. L. Bulpett (Project Gutenberg #61342, Public Domain) — https://www.gutenberg.org/files/61342/61342-h/61342-h.htm"
+        },
+        {
+          "english": "Firewater (local name for the Tana / Sagana River)",
+          "translation": "Kilaluma",
+          "pronunciation": "kee-lah-loo-mah",
+          "context": "p. 45 ('It is called here the Sagana, or more rarely the Kilaluma (i.e. firewater)') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
         }
       ]
     },
@@ -25028,6 +25040,12 @@
           "english": "Savoury aroma of roasting meat",
           "translation": "mũcingũ",
           "context": "Kaikki.org Kikuyu Machine-Readable Dictionary (https://kaikki.org/dictionary/Kikuyu/pos-noun/mwena--m%C5%A9cing%C5%A9.html, CC-BY-SA)"
+        },
+        {
+          "english": "Honey (Maasai loanword used in Kikuyu)",
+          "translation": "naischu",
+          "pronunciation": "nigh-shoo",
+          "context": "p. 53 ('The Masai name for honey is \"naischu,\" the word generally used in Kikuyu') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
         }
       ]
     },
@@ -128050,6 +128068,42 @@
           "english": "For God so loved the world (John 3:16 — 1919 Gekikuyu Specimen #237)",
           "translation": "Tondũ Ngai nĩguo endire kĩrĩndĩ gĩa gũkũ thĩ, atĩ akĩruta Mũrũ wake wa mũmwe, nĩ getha mũndũ o wothe ũmwĩhokete ndakore, no agĩe muoyo wa tene na tene.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "Legendary forest pygmies (original forest inhabitants in Kikuyu origin tradition)",
+          "translation": "Maswatch-wanya",
+          "pronunciation": "mah-swahch-wahn-yah",
+          "context": "p. 92 ('a race of pigmies, whom they called Maswatch-wanya') — John Boyes (1911/1912), A White King in East Africa, ed. C. W. L. Bulpett (Project Gutenberg #61342, Public Domain) — https://www.gutenberg.org/files/61342/61342-h/61342-h.htm"
+        },
+        {
+          "english": "Inter-clan peace and alliance oath ceremony (binding entire communities)",
+          "translation": "Pigasangi",
+          "pronunciation": "pee-gah-sahn-gee",
+          "context": "pp. 76, 97–99 (also spelled Pigasani; ceremony establishing mutually binding peace across entire clans/communities) — John Boyes (1911/1912), A White King in East Africa, ed. C. W. L. Bulpett (Project Gutenberg #61342, Public Domain) — https://www.gutenberg.org/files/61342/61342-h/61342-h.htm"
+        },
+        {
+          "english": "Ululation chant of welcome and applause (raised by women)",
+          "translation": "lu-lu-lu-lu-lu",
+          "pronunciation": "loo-loo-loo-loo-loo",
+          "context": "p. 104 (women's musical chant of applause and common form of welcome) — John Boyes (1911/1912), A White King in East Africa, ed. C. W. L. Bulpett (Project Gutenberg #61342, Public Domain) — https://www.gutenberg.org/files/61342/61342-h/61342-h.htm"
+        },
+        {
+          "english": "Kalyera (a branch/sub-group of the Kikuyu)",
+          "translation": "Kalyera",
+          "pronunciation": "kahl-yeh-rah",
+          "context": "pp. 122–123 ('the Kalyera, another branch of the Kikuyu tribe') — John Boyes (1911/1912), A White King in East Africa, ed. C. W. L. Bulpett (Project Gutenberg #61342, Public Domain) — https://www.gutenberg.org/files/61342/61342-h/61342-h.htm"
+        },
+        {
+          "english": "Who eats beans (Kikuyu nickname/personal name)",
+          "translation": "Karanjai",
+          "pronunciation": "kah-rahn-jigh",
+          "context": "p. 126 ('His people called me Karanjai, meaning literally \"Who eats beans\"') — John Boyes (1911/1912), A White King in East Africa, ed. C. W. L. Bulpett (Project Gutenberg #61342, Public Domain) — https://www.gutenberg.org/files/61342/61342-h/61342-h.htm"
+        },
+        {
+          "english": "War-cry / alarm cry (A'kikuyu)",
+          "translation": "U-u-u-i",
+          "pronunciation": "oo-oo-oo-ee",
+          "context": "p. 98 ('the long repeated U-u-u-i (the A\\'kikuyu war-cry)') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
         }
       ]
     }
@@ -128057,5 +128111,5 @@
   "source": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kik",
   "glottocode": "kiku1240",
-  "totalEntries": 22960
+  "totalEntries": 22969
 }

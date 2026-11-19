@@ -72,13 +72,13 @@ export const KALENJIN_UNITS: CourseUnit[] = [
           {
             "target": "Takwenya! (resp. Igo!)",
             "source": "Greeting to women, elders & warriors on war-path!",
-            "pronunciation": "takwenya / sai-se-ri",
+            "pronunciation": "tah-kweh-nyah / ee-goh",
             "hint": "Hollis (1909, pp. 43, 90–91, 230–231)"
           },
           {
             "target": "Saiseri! (A-'kot-in)",
             "source": "Good-bye! (I salute thee)",
-            "pronunciation": "takwenya / sai-se-ri",
+            "pronunciation": "sai-se-ri / ah-koh-teen",
             "hint": "Hollis (1909, pp. 43, 90–91, 230–231)"
           },
           {
@@ -632,12 +632,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "chorwet — lakwet",
-            "source": "Friend — Child."
+            "target": "Chorwet ne myee kotoreti lakwet.",
+            "source": "A good friend helps the child."
           },
           {
-            "target": "korget — murenet",
-            "source": "Woman — Man."
+            "target": "Korget ak murenet komi ka.",
+            "source": "The woman and the man are at home."
           }
         ],
         "authoredExercises": [
@@ -763,12 +763,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "chiito — kwondo",
-            "source": "person — woman, wife."
+            "target": "Chiito ak kwondo komi kaita.",
+            "source": "The person and the wife are in the house."
           },
           {
-            "target": "cherere, pl. chereren — ñget-ap-kamet, pl. akut-ñget-ip-kamet",
-            "source": "Baby — Brother."
+            "target": "Chereret ak ñget-ap-kamet koru-e.",
+            "source": "The baby and the brother are sleeping."
           }
         ],
         "authoredExercises": [
@@ -1267,12 +1267,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ng'ororiet — teta",
-            "source": "Goat — Cow."
+            "target": "Teta ak ng'ororiet ko tuga che myach.",
+            "source": "The cow and the goat are good livestock."
           },
           {
-            "target": "koii — mwaita",
-            "source": "Egg — Oil."
+            "target": "Kisusi koii eng' mwaita.",
+            "source": "We fry the egg in oil."
           }
         ],
         "authoredExercises": [
@@ -1397,12 +1397,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "komek — pendo",
-            "source": "Honey — Meat."
+            "target": "Piik koamei pendo ak komek.",
+            "source": "The people eat meat and honey."
           },
           {
-            "target": "chego — amitwogik",
-            "source": "Milk — Food."
+            "target": "Lagok kolu chego ak koam amitwogik.",
+            "source": "The children drink milk and eat food."
           }
         ],
         "authoredExercises": [
@@ -1538,12 +1538,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "keetit — murwaket",
-            "source": "Tree — Snail."
+            "target": "Keetit ne oo komi timto.",
+            "source": "A tall tree stands in the forest."
           },
           {
-            "target": "musempet — ngetuny",
-            "source": "Sheep's tail — lion."
+            "target": "Ngetuny komi osnet ne lo.",
+            "source": "The lion is in the distant bush."
           }
         ],
         "authoredExercises": [
@@ -1667,12 +1667,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "roopta — igoondiit",
-            "source": "rain — horn, ceremonial horn."
+            "target": "Roopta koroponi eng' emet.",
+            "source": "Rain is falling across the land."
           },
           {
-            "target": "arawet — rewo",
-            "source": "moon, month — Dew."
+            "target": "Arawet kolalei ak rewo komi suswek.",
+            "source": "The moon shines and dew lies on the grass."
           }
         ],
         "authoredExercises": [
@@ -1803,12 +1803,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ē, pl. ēun — koñg, pl. konyan",
-            "source": "Arm — Eye."
+            "target": "Eut ak konda ko chepo porto.",
+            "source": "The arm and the eye belong to the body."
           },
           {
-            "target": "ingorai, pl. ingoraiin — takilkil, pl. takilkil",
-            "source": "Hip — Jaw."
+            "target": "Keldo kotoreti chiito kowendote.",
+            "source": "The leg helps a person walk."
           }
         ],
         "authoredExercises": [
@@ -1929,12 +1929,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "konda — tamnet",
-            "source": "Eye — Jaw."
+            "target": "Konda koker-i ak idit kokas-i.",
+            "source": "The eye sees and the ear hears."
           },
           {
-            "target": "kielto — kotit",
-            "source": "Leg — Lip."
+            "target": "Porto ne myee konerechi chiito.",
+            "source": "A healthy body strengthens a person."
           }
         ],
         "authoredExercises": [
@@ -2069,12 +2069,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "keng'alal — keru",
-            "source": "Speak — Sleep."
+            "target": "Piik kong'alalei eng' kalyet.",
+            "source": "The people speak in peace."
           },
           {
-            "target": "kenyone — kewe",
-            "source": "Come — Go."
+            "target": "Nyon ka si ikeru eng' kaita.",
+            "source": "Come home so you may sleep in the house."
           }
         ],
         "authoredExercises": [
@@ -2198,12 +2198,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "lima nyaman — i-ker-i-ke",
-            "source": "Understand — can you see for yourself."
+            "target": "I-ker-i-ke kutit eng' kioit?",
+            "source": "Can you see your face in the mirror?"
           },
           {
-            "target": "Kapkugo — mugerat",
-            "source": "ancestral homeland — Open."
+            "target": "Kapkugo ko emetap kukoikchok.",
+            "source": "Kapkugo is the ancestral homeland of our grandfathers."
           }
         ],
         "authoredExercises": [
@@ -2339,12 +2339,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Kotisap — nguno",
-            "source": "Sunday — Now."
+            "target": "Kotisap ko betutab kamung'et.",
+            "source": "Sunday is a day of rest."
           },
           {
-            "target": "petōt — korirun",
-            "source": "Day — Dawn."
+            "target": "Petōt kotou-e eng' korirunet.",
+            "source": "The day begins at dawn."
           }
         ],
         "authoredExercises": [
@@ -2475,12 +2475,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Kotaai — Koaeng’",
-            "source": "Monday — Tuesday."
+            "target": "Kotaai ak Koaeng' ko betusiekab poisyet.",
+            "source": "Monday and Tuesday are workdays."
           },
           {
-            "target": "Kosomok — Koang’wan",
-            "source": "Wednesday — Thursday."
+            "target": "Kosomok ak Koang'wan kiwendi kap-siro.",
+            "source": "On Wednesday and Thursday we go to the market."
           }
         ],
         "authoredExercises": [
@@ -2597,12 +2597,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "Ibinta — Betutab wikit",
-            "source": "Era — Day of the week."
+            "target": "Betutab wikit ni ko myee.",
+            "source": "This day of the week is good."
           },
           {
-            "target": "Kalyet — Chamgei!",
-            "source": "Peace — Hello."
+            "target": "Chamgei! Kalyet komi ka?",
+            "source": "Hello! Is there peace at home?"
           }
         ],
         "authoredExercises": [
@@ -2727,12 +2727,12 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         ],
         "sentences": [
           {
-            "target": "ile-chi kongoi — inyol-chi",
-            "source": "Thank — Please."
+            "target": "Kile-chi kongoi mising' amu toretet.",
+            "source": "We thank you very much for the help."
           },
           {
-            "target": "Kongoi — mwaete",
-            "source": "Thank you — Pardon."
+            "target": "Kongoi mising', mwaete ngo ki-a-lel.",
+            "source": "Thank you very much; pardon me if I erred."
           }
         ],
         "authoredExercises": [
@@ -3512,7 +3512,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "kejan"
           },
           {
-            "target": "Kiebtó (virgin)",
+            "target": "Kiebtó",
             "source": "Young woman (virgin)",
             "pronunciation": "kiebtó"
           }
@@ -3749,7 +3749,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "pronunciation": "ng'wār-chin-i-kee-pātooy"
           },
           {
-            "target": "ak o-tēpii eng okweeke",
+            "target": "(22) ak o-tēpii eng' kaalyeet okweeke eng' okweeke",
             "source": "(22) and stay in peace with one another",
             "pronunciation": "ak-o-tēpii-eng'-kaalyeet"
           },
@@ -3814,7 +3814,6 @@ export const KALENJIN_UNITS: CourseUnit[] = [
         "icon": "Database",
         "description": "Practice Kalenjin environmental, educational, and agricultural phrases from ThinkKenya (35,127 pairs, CC-BY-4.0) and Mozilla Common Voice 25.0 (29,961 CC0 sentences).",
         "culturalNote": "The ThinkKenya / Waleghwa Kalenjin–Kiswahili corpus (35,127 pairs), Mozilla Common Voice 25.0 (29,961 CC0 sentences), and Thiomi Kipsigis corpus document contemporary Rift Valley Kalenjin across education, forestry, and dairy farming.",
-        "grammarTip": "Notice the associative suffix -ab ('of') in Kararanotet-ab emet ('beauty of the land'), ripset-ab timwek ('conservation of forests'), and tait-ab ng'omnotet ('lamp of wisdom').",
         "words": [
           {
             "target": "Kararanotetab emet",
@@ -3866,7 +3865,8 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "target": "Somanet ko taitab ng'omnotet eng' lagok tugul.",
             "source": "Education is the lamp of wisdom for all children."
           }
-        ]
+        ],
+        "tips": "Notice the associative suffix -ab ('of') in Kararanotet-ab emet ('beauty of the land'), ripset-ab timwek ('conservation of forests'), and tait-ab ng'omnotet ('lamp of wisdom')."
       },
       {
         "id": "kalenjin-corpus-sentences-skill-1",
@@ -3940,7 +3940,7 @@ export const KALENJIN_UNITS: CourseUnit[] = [
             "source": "Dairy cooperative / Milk harvest market."
           },
           {
-            "target": "otēpii eng’ kaalyeet",
+            "target": "Otēpii eng’ kaalyeet.",
             "source": "Stay in peace."
           }
         ]

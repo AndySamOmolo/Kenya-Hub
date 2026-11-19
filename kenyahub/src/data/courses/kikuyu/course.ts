@@ -1186,7 +1186,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "pronunciation": "ku-tu"
           },
           {
-            "target": "ritho, pl. meetho",
+            "target": "ritho (pl. meetho)",
             "source": "Eye (pl. Eyes)",
             "pronunciation": "ritho"
           },
@@ -1275,7 +1275,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 "right": "Ear"
               },
               {
-                "left": "ritho, pl. meetho",
+                "left": "ritho (pl. meetho)",
                 "right": "Eye"
               }
             ]
@@ -1424,7 +1424,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
         "culturalNote": "Primary historical documentation for Kikuyu (Gĩkũyũ) in Hémery (1903), Hinde (1904), McGregor (1904), Routledge (1910), Hobley (1910, 1922), Johnston (1919) & Stevenson (1927) preserves pre-1930 phonological, grammatical, and ethnographic usage across Kiambu, Murang'a, Nyeri.",
         "words": [
           {
-            "target": "muundu, pl. andu",
+            "target": "muundu (pl. andu)",
             "source": "Man",
             "pronunciation": "muundu"
           },
@@ -1518,7 +1518,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "correctAnswer": "all_matched",
             "pairs": [
               {
-                "left": "muundu, pl. andu",
+                "left": "muundu (pl. andu)",
                 "right": "Man"
               },
               {
@@ -1535,7 +1535,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "mundu murume",
-                "right": "boy"
+                "right": "boy (circumcised)"
               }
             ]
           }
@@ -1554,7 +1554,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "pronunciation": "ku-ki-gamma"
           },
           {
-            "target": "muthuri, pl. athuri",
+            "target": "muthuri (pl. athuri)",
             "source": "elder",
             "pronunciation": "muthu-ri"
           },
@@ -1624,7 +1624,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "type": "translate_to_target",
             "prompt": "Translate to the target language: \"elder\"",
-            "correctAnswer": "muthuri, pl. athuri",
+            "correctAnswer": "muthuri (pl. athuri)",
             "acceptedAnswers": [
               "muthuri, pl. athuri",
               "muthuri"
@@ -1651,7 +1651,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 "right": "crawl"
               },
               {
-                "left": "muthuri, pl. athuri",
+                "left": "muthuri (pl. athuri)",
                 "right": "elder"
               },
               {
@@ -2387,15 +2387,15 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "thigirriri",
-                "right": "ant"
+                "right": "ant (small black)"
               },
               {
                 "left": "tharaku",
-                "right": "ant"
+                "right": "ant (red)"
               },
               {
                 "left": "muthua",
-                "right": "ant"
+                "right": "ant (white)"
               }
             ]
           }
@@ -2508,15 +2508,15 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "kugambu",
-                "right": "bark"
+                "right": "bark (verb)"
               },
               {
                 "left": "makonni",
-                "right": "bark"
+                "right": "bark (of tree)"
               },
               {
                 "left": "enjugu",
-                "right": "beans"
+                "right": "beans (tree)"
               },
               {
                 "left": "njuki",
@@ -2647,15 +2647,15 @@ export const KIKUYU_UNITS: CourseUnit[] = [
               },
               {
                 "left": "wuoko",
-                "right": "arm"
+                "right": "arm (the whole)"
               },
               {
                 "left": "kuwoko",
-                "right": "arm"
+                "right": "arm (forearm)"
               },
               {
                 "left": "kichako",
-                "right": "arm"
+                "right": "arm (upper)"
               }
             ]
           }
@@ -2689,7 +2689,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
             "pronunciation": "mwi-ri"
           },
           {
-            "target": "ihuha, pl. mahuha",
+            "target": "ihuha (pl. mahuha)",
             "source": "boil",
             "pronunciation": "i-hu-ha"
           },
@@ -2779,7 +2779,7 @@ export const KIKUYU_UNITS: CourseUnit[] = [
                 "right": "body"
               },
               {
-                "left": "ihuha, pl. mahuha",
+                "left": "ihuha (pl. mahuha)",
                 "right": "boil"
               }
             ]
@@ -4220,6 +4220,472 @@ export const KIKUYU_UNITS: CourseUnit[] = [
           {
             "target": "Tũrĩ na mathaa ikũmi ma rũgendo rũrũ.",
             "source": "We have ten hours for this journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kikuyu-native-audio-listening",
+    "unitNumber": 19,
+    "title": "Native Audio & Listening Practice",
+    "description": "Train your ear with 24 verified native Gĩkũyũ speaker recordings covering everyday hospitality, questions, directions, and natural community conversations.",
+    "icon": "🎧",
+    "color": "#2E7D32",
+    "skills": [
+      {
+        "id": "kikuyu-native-audio-everyday-expressions",
+        "title": "Everyday Native Expressions & Hospitality",
+        "icon": "🎙️",
+        "description": "Listen to native Gĩkũyũ speakers pronounce essential daily words and welcoming phrases.",
+        "tips": "Pay close attention to the seven Gĩkũyũ vowels—especially 'ĩ' (close-mid front) and 'ũ' (close-mid back) as in 'mũrango' (door) and 'ikara thĩ' (have a seat)—as well as vowel length and tone.",
+        "culturalNote": "Offering a visitor a seat ('ikara thĩ') and expressing gratitude ('ĩĩ twĩna ngatho') are foundational courtesies in Gĩkũyũ hospitality.",
+        "words": [
+          {
+            "target": "haha",
+            "source": "Here",
+            "partOfSpeech": "adverb",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/haha.opus"
+          },
+          {
+            "target": "mũrango",
+            "source": "The door",
+            "partOfSpeech": "noun",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/murango.opus"
+          },
+          {
+            "target": "Nĩ wega mũno",
+            "source": "Very good / Wow",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ni-wega-muno.opus"
+          },
+          {
+            "target": "ikara thĩ",
+            "source": "Have a seat",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ikara-thi.opus"
+          },
+          {
+            "target": "reke thiĩ",
+            "source": "Got to go / Let me go",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/reke-thii.opus"
+          },
+          {
+            "target": "ĩĩ twĩna ngatho",
+            "source": "Yes, we are thankful",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ii-twina-ngatho.opus"
+          },
+          {
+            "target": "nguo njerũ",
+            "source": "New clothes",
+            "partOfSpeech": "noun phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/nguo-njeru.opus"
+          },
+          {
+            "target": "kahinda gaka gothe",
+            "source": "All this time",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/kahinda-gaka-gothe.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Ikara thĩ.",
+            "source": "Have a seat.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/ikara-thi.opus"
+          },
+          {
+            "target": "Ĩĩ twĩna ngatho.",
+            "source": "Yes, we are thankful.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/ii-twina-ngatho.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ recording and select its English meaning:",
+            "correctAnswer": "Here",
+            "options": [
+              "Here",
+              "The door",
+              "Very good / Wow",
+              "Have a seat"
+            ],
+            "audioText": "haha",
+            "sourceWord": {
+              "target": "haha",
+              "source": "Here",
+              "partOfSpeech": "adverb",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/haha.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Gĩkũyũ expression matches \"The door\"?",
+            "correctAnswer": "mũrango",
+            "options": [
+              "mũrango",
+              "haha",
+              "Nĩ wega mũno",
+              "reke thiĩ"
+            ],
+            "sourceWord": {
+              "target": "mũrango",
+              "source": "The door",
+              "partOfSpeech": "noun",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/murango.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ speaker and choose the correct translation:",
+            "correctAnswer": "Yes, we are thankful",
+            "options": [
+              "Yes, we are thankful",
+              "New clothes",
+              "All this time",
+              "Got to go / Let me go"
+            ],
+            "audioText": "ĩĩ twĩna ngatho",
+            "sourceWord": {
+              "target": "ĩĩ twĩna ngatho",
+              "source": "Yes, we are thankful",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ii-twina-ngatho.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Gĩkũyũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "haha",
+                "right": "Here"
+              },
+              {
+                "left": "mũrango",
+                "right": "The door"
+              },
+              {
+                "left": "Nĩ wega mũno",
+                "right": "Very good / Wow"
+              },
+              {
+                "left": "ikara thĩ",
+                "right": "Have a seat"
+              },
+              {
+                "left": "reke thiĩ",
+                "right": "Got to go / Let me go"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-native-audio-questions-directions",
+        "title": "Asking Questions, Directions & Daily Life",
+        "icon": "🧭",
+        "description": "Practice understanding natural native-speed questions, requests, and everyday statements.",
+        "tips": "Notice question words in spoken Gĩkũyũ: 'nũũ' (who), 'kũ' (where), and 'nĩkĩ' (why). The locative suffix '-inĩ' in 'mũrango-inĩ' means 'at the door'.",
+        "culturalNote": "Small-scale farming ('mũrĩmi mũnini') and mutual assistance ('tũmũteithie') reflect the cooperative ethos of Central Kenya communities.",
+        "words": [
+          {
+            "target": "nũũ ũrĩ mũrango-inĩ",
+            "source": "Who is at the door?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/nuu-uri-murango-ini.opus"
+          },
+          {
+            "target": "reke tũurie jĩra",
+            "source": "Let's ask for directions!",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/reke-tuurie-jira.opus"
+          },
+          {
+            "target": "tũrĩ na thĩna",
+            "source": "We have a problem",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/turi-na-thina.opus"
+          },
+          {
+            "target": "tũmũteithie",
+            "source": "Should we help her out?",
+            "partOfSpeech": "verb",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/tumuteithie.opus"
+          },
+          {
+            "target": "ũyũ wamũrutire kũ",
+            "source": "Where did you get this one?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/uyu-wamurutire-ku.opus"
+          },
+          {
+            "target": "nĩnjũĩ mũthako ũcio",
+            "source": "I know that game!",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ninjui-muthako-ucio.opus"
+          },
+          {
+            "target": "ndĩ mũrĩmi mũnini",
+            "source": "I am a small-scale farmer",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ndi-murimi-munini.opus"
+          },
+          {
+            "target": "ũregire kũnjĩĩra nĩkĩ",
+            "source": "Why didn't you tell me?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/uregire-kunjiira-niki.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Nũũ ũrĩ mũrango-inĩ?",
+            "source": "Who is at the door?",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/nuu-uri-murango-ini.opus"
+          },
+          {
+            "target": "Ndĩ mũrĩmi mũnini.",
+            "source": "I am a small-scale farmer.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/ndi-murimi-munini.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ recording and select its English meaning:",
+            "correctAnswer": "Who is at the door?",
+            "options": [
+              "Who is at the door?",
+              "Let's ask for directions!",
+              "We have a problem",
+              "Should we help her out?"
+            ],
+            "audioText": "nũũ ũrĩ mũrango-inĩ",
+            "sourceWord": {
+              "target": "nũũ ũrĩ mũrango-inĩ",
+              "source": "Who is at the door?",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/nuu-uri-murango-ini.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Gĩkũyũ expression matches \"Let's ask for directions!\"?",
+            "correctAnswer": "reke tũurie jĩra",
+            "options": [
+              "reke tũurie jĩra",
+              "nũũ ũrĩ mũrango-inĩ",
+              "tũrĩ na thĩna",
+              "ũyũ wamũrutire kũ"
+            ],
+            "sourceWord": {
+              "target": "reke tũurie jĩra",
+              "source": "Let's ask for directions!",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/reke-tuurie-jira.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ speaker and choose the correct translation:",
+            "correctAnswer": "I know that game!",
+            "options": [
+              "I know that game!",
+              "I am a small-scale farmer",
+              "Why didn't you tell me?",
+              "Where did you get this one?"
+            ],
+            "audioText": "nĩnjũĩ mũthako ũcio",
+            "sourceWord": {
+              "target": "nĩnjũĩ mũthako ũcio",
+              "source": "I know that game!",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ninjui-muthako-ucio.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Gĩkũyũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "nũũ ũrĩ mũrango-inĩ",
+                "right": "Who is at the door?"
+              },
+              {
+                "left": "reke tũurie jĩra",
+                "right": "Let's ask for directions!"
+              },
+              {
+                "left": "tũrĩ na thĩna",
+                "right": "We have a problem"
+              },
+              {
+                "left": "tũmũteithie",
+                "right": "Should we help her out?"
+              },
+              {
+                "left": "ũyũ wamũrutire kũ",
+                "right": "Where did you get this one?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kikuyu-native-audio-conversations-community",
+        "title": "Natural Conversations, Health & Community",
+        "icon": "💬",
+        "description": "Build listening fluency with longer native Gĩkũyũ sentences on health, reassurance, and education.",
+        "tips": "Listen for how Gĩkũyũ packs subject, tense, negative, and object markers into single verbs—such as 'ndũkamake' (do not worry) and 'gũtũteithagia' (helps us habitually).",
+        "culturalNote": "Wishing everyone a good day ('tũkũmwendera inyuothe mũthenya mwega') and reassuring guests ('ndũkamake ndĩ na citũiganĩte') showcase warm conversational Gĩkũyũ.",
+        "words": [
+          {
+            "target": "ena ũrugarĩ mũingĩ mũno",
+            "source": "He has a very high fever",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ena-urugari-muingi-muno.opus"
+          },
+          {
+            "target": "nĩ ũgũbatara kũrorwo maitho",
+            "source": "You might need an eye check-up",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ni-ugubatara-kurorwo-maitho.opus"
+          },
+          {
+            "target": "ndũkamake ndĩ na citũiganĩte",
+            "source": "Don't worry, I have plenty for us",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ndukamake-ndi-na-cituiganite.opus"
+          },
+          {
+            "target": "nũũ ũngĩgũteithia gwĩka ũguo",
+            "source": "Who can help you do that?",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/nuu-ungiguteithia-gwika-uguo.opus"
+          },
+          {
+            "target": "gũthomithio nĩ gũtũteithagia",
+            "source": "Education adds value to you",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/guthomithio-ni-gututeithagia.opus"
+          },
+          {
+            "target": "hatirĩ ũndũ twĩkĩte mũndũ",
+            "source": "We have done nothing to anyone",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/hatiri-undu-twikite-mundu.opus"
+          },
+          {
+            "target": "tũkũmwendera inyuothe mũthenya mwega",
+            "source": "Have a wonderful day, everyone",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/tukumwendera-inyuothe-muthenya-mwega.opus"
+          },
+          {
+            "target": "ũndũ ũcio warĩ mũritũ",
+            "source": "It was tough",
+            "partOfSpeech": "phrase",
+            "audioFile": "https://audio.kenyahub.me/audio/kikuyu/undu-ucio-wari-muritu.opus"
+          }
+        ],
+        "sentences": [
+          {
+            "target": "Gũthomithio nĩ gũtũteithagia.",
+            "source": "Education adds value to you.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/guthomithio-ni-gututeithagia.opus"
+          },
+          {
+            "target": "Tũkũmwendera inyuothe mũthenya mwega.",
+            "source": "Have a wonderful day, everyone.",
+            "audio": "https://audio.kenyahub.me/audio/kikuyu/tukumwendera-inyuothe-muthenya-mwega.opus"
+          }
+        ],
+        "authoredExercises": [
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ recording and select its English meaning:",
+            "correctAnswer": "He has a very high fever",
+            "options": [
+              "He has a very high fever",
+              "You might need an eye check-up",
+              "Don't worry, I have plenty for us",
+              "Who can help you do that?"
+            ],
+            "audioText": "ena ũrugarĩ mũingĩ mũno",
+            "sourceWord": {
+              "target": "ena ũrugarĩ mũingĩ mũno",
+              "source": "He has a very high fever",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ena-urugari-muingi-muno.opus"
+            }
+          },
+          {
+            "type": "multiple_choice",
+            "prompt": "Which Gĩkũyũ expression matches \"You might need an eye check-up\"?",
+            "correctAnswer": "nĩ ũgũbatara kũrorwo maitho",
+            "options": [
+              "nĩ ũgũbatara kũrorwo maitho",
+              "ena ũrugarĩ mũingĩ mũno",
+              "ndũkamake ndĩ na citũiganĩte",
+              "gũthomithio nĩ gũtũteithagia"
+            ],
+            "sourceWord": {
+              "target": "nĩ ũgũbatara kũrorwo maitho",
+              "source": "You might need an eye check-up",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ni-ugubatara-kurorwo-maitho.opus"
+            }
+          },
+          {
+            "type": "tap_what_you_hear",
+            "prompt": "Listen to the native Gĩkũyũ speaker and choose the correct translation:",
+            "correctAnswer": "We have done nothing to anyone",
+            "options": [
+              "We have done nothing to anyone",
+              "Have a wonderful day, everyone",
+              "It was tough",
+              "Education adds value to you"
+            ],
+            "audioText": "hatirĩ ũndũ twĩkĩte mũndũ",
+            "sourceWord": {
+              "target": "hatirĩ ũndũ twĩkĩte mũndũ",
+              "source": "We have done nothing to anyone",
+              "partOfSpeech": "phrase",
+              "audioFile": "https://audio.kenyahub.me/audio/kikuyu/hatiri-undu-twikite-mundu.opus"
+            }
+          },
+          {
+            "type": "match_pairs",
+            "prompt": "Match each recorded Gĩkũyũ expression to its English meaning:",
+            "correctAnswer": "",
+            "pairs": [
+              {
+                "left": "ena ũrugarĩ mũingĩ mũno",
+                "right": "He has a very high fever"
+              },
+              {
+                "left": "nĩ ũgũbatara kũrorwo maitho",
+                "right": "You might need an eye check-up"
+              },
+              {
+                "left": "ndũkamake ndĩ na citũiganĩte",
+                "right": "Don't worry, I have plenty for us"
+              },
+              {
+                "left": "nũũ ũngĩgũteithia gwĩka ũguo",
+                "right": "Who can help you do that?"
+              },
+              {
+                "left": "gũthomithio nĩ gũtũteithagia",
+                "right": "Education adds value to you"
+              }
+            ]
           }
         ]
       }
