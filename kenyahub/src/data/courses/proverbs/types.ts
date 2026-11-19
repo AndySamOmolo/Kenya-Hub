@@ -24,3 +24,14 @@ export interface CulturalWisdomItem {
   category: string;
   source: string;
 }
+
+export interface Proverb {
+  id: string;
+  languageCode: string;
+  languageName: string;
+  indigenous: string;
+  literalTranslation: string;
+  meaning: string;
+  category: string;
+  culturalNote: string;
+}
