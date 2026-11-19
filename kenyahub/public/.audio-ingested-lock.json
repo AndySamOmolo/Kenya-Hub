@@ -1,9 +1,9 @@
 {
-  "ingestedAt": "2026-11-19T15:34:01.950810+00:00",
-  "scriptsHash": "701b4f752d7cc5cd145094401a59585c176471c3b943c245d6395f2ec6b7279a",
+  "ingestedAt": "2026-11-19T17:48:02.178733+00:00",
+  "scriptsHash": "9ec3b1f73a364521804362b2480d3c60c5b96b1b484eb254e81e8275771ea8ce",
   "bucket": "kenyahub-audio",
   "cdnBase": "https://audio.kenyahub.me",
-  "elapsedSeconds": 559,
+  "elapsedSeconds": 276,
   "textEntriesAddedByLanguage": {
     "kikuyu": 0,
     "luo": 0,
@@ -17,13 +17,14 @@
   "uploadedAudioLanguageCounts": {
     "kikuyu": 450,
     "kamba": 449,
-    "luo": 907,
+    "luo": 1154,
     "meru": 250,
     "somali": 685,
     "swahili": 999,
     "maasai": 153,
     "borana": 386,
-    "teso": 168
+    "teso": 418,
+    "luhya": 153
   },
   "dictionaryEntriesLinked": 1703,
   "pendingGatedDatasets": [
@@ -33,7 +34,6 @@
     "MCAA1-MSU/anv_data_ke::kalenjin::kalenjin",
     "MCAA1-MSU/anv_data_ke::maasai::maasai",
     "MCAA1-MSU/anv_data_ke::somali::somali",
-    "Sunbird/salt::studio-teo::teso",
     "deepdml/common_voice_26_0::sw::swahili",
     "kln001/kalenjin-asr-data::default::kalenjin"
   ],
@@ -84,8 +84,8 @@
       "status": "failed",
       "gated": false,
       "lang_id": "swahili",
-      "reason": "Error opening <_io.BytesIO object at 0x7ee3d7292d90>: Format not recognised.",
-      "updatedAt": "2026-11-19T15:28:58.155924+00:00"
+      "reason": "Error opening <_io.BytesIO object at 0x757c04966340>: Format not recognised.",
+      "updatedAt": "2026-11-19T17:46:33.628615+00:00"
     },
     "google/fleurs::sw_ke::swahili": {
       "status": "completed",
@@ -127,21 +127,21 @@
       "gated": true,
       "lang_id": "swahili",
       "reason": "Dataset 'deepdml/common_voice_26_0' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/deepdml/common_voice_26_0 to ask for access.",
-      "updatedAt": "2026-11-19T15:31:46.571502+00:00"
+      "updatedAt": "2026-11-19T17:46:33.786128+00:00"
     },
     "fsicoli/common_voice_22_0::sw::swahili": {
       "status": "failed",
       "gated": false,
       "lang_id": "swahili",
-      "reason": "The repository for fsicoli/common_voice_22_0 contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/fsicoli/common_voice_22_0.\nPlease p",
-      "updatedAt": "2026-11-19T15:31:47.045919+00:00"
+      "reason": "Couldn't cast\nclient_id: string\npath: string\nsentence_id: string\nsentence: string\nsentence_domain: string\nup_votes: string\ndown_votes: string\nage: string\ngender: string\nvariant: string\nlocale: string\nsegment: string\nacce",
+      "updatedAt": "2026-11-19T17:46:36.536364+00:00"
     },
     "Sunbird/salt::studio-teo::teso": {
-      "status": "pending_gated_approval",
+      "status": "completed",
+      "clipsUploaded": 250,
       "gated": true,
       "lang_id": "teso",
-      "reason": "Loading this dataset requires you to execute custom code contained in the dataset repository on your local machine. Please set the option `trust_remote_code=True` to permit loading of this dataset.",
-      "updatedAt": "2026-11-19T15:32:08.266496+00:00"
+      "updatedAt": "2026-11-19T17:47:02.432508+00:00"
     },
     "Sunbird/salt::studio-swa::swahili": {
       "status": "completed",
@@ -189,22 +189,22 @@
       "status": "failed",
       "gated": false,
       "lang_id": "swahili",
-      "reason": "Error opening <_io.BytesIO object at 0x7ee3d743eb60>: Format not recognised.",
-      "updatedAt": "2026-11-19T15:33:20.808928+00:00"
+      "reason": "Error opening <_io.BytesIO object at 0x757c04554c70>: Format not recognised.",
+      "updatedAt": "2026-11-19T17:47:34.691565+00:00"
     },
     "nickdee96/ALFFA-Swahili-News::default::swahili": {
       "status": "completed_no_new_clips",
       "clipsUploaded": 0,
       "gated": false,
       "lang_id": "swahili",
-      "updatedAt": "2026-11-19T15:33:39.355242+00:00"
+      "updatedAt": "2026-11-19T17:47:57.455188+00:00"
     },
     "liva-ai/swahili-asr::default::swahili": {
       "status": "failed",
       "gated": false,
       "lang_id": "swahili",
       "reason": "`file_name` or `*_file_name` must be present as dictionary key (with type string) in metadata files",
-      "updatedAt": "2026-11-19T15:33:40.020697+00:00"
+      "updatedAt": "2026-11-19T17:47:58.534937+00:00"
     },
     "skydheere/soomali-asr-dataset::default::somali": {
       "status": "completed",
@@ -218,49 +218,63 @@
       "gated": true,
       "lang_id": "kalenjin",
       "reason": "Dataset 'kln001/kalenjin-asr-data' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/kln001/kalenjin-asr-data to ask for access.",
-      "updatedAt": "2026-11-19T15:33:58.730685+00:00"
+      "updatedAt": "2026-11-19T17:47:58.715870+00:00"
     },
     "MCAA1-MSU/anv_data_ke::kalenjin::kalenjin": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kalenjin",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-19T15:33:58.810423+00:00"
+      "updatedAt": "2026-11-19T17:47:58.868452+00:00"
     },
     "MCAA1-MSU/anv_data_ke::maasai::maasai": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "maasai",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-19T15:33:58.866315+00:00"
+      "updatedAt": "2026-11-19T17:47:58.963273+00:00"
     },
     "MCAA1-MSU/anv_data_ke::somali::somali": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "somali",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-19T15:33:58.917262+00:00"
+      "updatedAt": "2026-11-19T17:47:59.060906+00:00"
     },
     "Digital-Divide-Data/Luhya-ASR-Data-subset-642H::default::luhya": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "luhya",
       "reason": "Dataset 'Digital-Divide-Data/Luhya-ASR-Data-subset-642H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Luhya-ASR-Data-subset-642H to ask for access.",
-      "updatedAt": "2026-11-19T15:33:59.001527+00:00"
+      "updatedAt": "2026-11-19T17:47:59.213411+00:00"
     },
     "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H::default::kamba": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kamba",
       "reason": "Dataset 'Digital-Divide-Data/Kamba-ASR-Data-Subset-484H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Kamba-ASR-Data-Subset-484H to ask for access.",
-      "updatedAt": "2026-11-19T15:33:59.085923+00:00"
+      "updatedAt": "2026-11-19T17:47:59.361625+00:00"
     },
     "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H::default::kisii": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kisii",
       "reason": "Dataset 'Digital-Divide-Data/Gusii-ASR-Data-Subset-470H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Gusii-ASR-Data-Subset-470H to ask for access.",
-      "updatedAt": "2026-11-19T15:33:59.170286+00:00"
+      "updatedAt": "2026-11-19T17:47:59.525646+00:00"
+    },
+    "google/WaxalNLP::mas_asr::luhya": {
+      "status": "completed",
+      "clipsUploaded": 153,
+      "gated": false,
+      "lang_id": "luhya",
+      "updatedAt": "2026-11-19T17:46:29.913922+00:00"
+    },
+    "multilingual-tts/open-bible::Dholuo::luo": {
+      "status": "completed",
+      "clipsUploaded": 247,
+      "gated": false,
+      "lang_id": "luo",
+      "updatedAt": "2026-11-19T17:47:31.120082+00:00"
     }
   }
 }
