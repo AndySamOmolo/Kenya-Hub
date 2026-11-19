@@ -9,7 +9,9 @@ export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; de
   { id: 'utilities-energy', name: 'Utilities & Energy', icon: '⚡', description: 'KPLC prepaid electricity token calculator, appliance estimator & airtime protector', badgeClass: 'badge-utilities' },
   { id: 'government-legal', name: 'Government & Legal Rights', icon: '⚖️', description: 'Small claims court fees, tenant rights, domestic worker contracts & public services', badgeClass: 'badge-finance' },
   { id: 'health-wellness', name: 'Healthcare & SHA', icon: '🏥', description: 'Social Health Authority (SHA) benefit packages, hospital levels & co-pay tariffs', badgeClass: 'badge-education' },
+];
 
+export const TOOLS: Tool[] = [
   // ── 8. 2026–2027 High-Impact Kenyan Compliance, Trade, Health, Education & Land Utilities (8 tools) ──
   {
     slug: 'etims-mpesa-reconciler',
@@ -115,9 +117,6 @@ export const TOOL_CATEGORIES: { id: ToolCategory; name: string; icon: string; de
     isLive: true,
     icon: '📐',
   },
-];
-
-export const TOOLS: Tool[] = [
   // ── 1. Languages, Proverbs & Culture (Flagship Main Feature — 2 tools) ──
   {
     slug: 'learn',
