@@ -295,7 +295,7 @@ export default function CountyIndexPage() {
           <div className="flex-1 max-w-xl">
             <SearchInput
               type="text"
-              placeholder="Search county, governor, senator, HQ capital, constituency, or code (001–047)..."
+              placeholder="Search county, HQ, or code..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="input-field w-full text-sm"

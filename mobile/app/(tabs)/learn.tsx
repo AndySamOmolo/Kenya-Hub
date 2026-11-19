@@ -16,7 +16,7 @@ import {
 } from "../../src/tools/LanguageCourseTool";
 
 export default function LearnTabScreen() {
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const insets = useSafeAreaInsets();
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
   const scrollRef = useRef<ScrollView>(null);
@@ -34,6 +34,7 @@ export default function LearnTabScreen() {
 
   return (
     <SafeAreaView
+      key={isDark ? "dark" : "light"}
       style={[styles.screen, { backgroundColor: theme.bgPrimary, paddingTop: insets.top === 0 ? safeTop : 0 }]}
       edges={["top", "left", "right"]}
     >

@@ -32,12 +32,6 @@ TAKE NOTICE that failure to transfer the full sum within seven (7) days from the
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            Kenyan Landlord-Tenant Rent Deposit &amp; Eviction Rights Auditor
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under Kenyan tenancy law and recent High Court &amp; Small Claims Court precedents, security deposits must be accounted for within 30 days of vacating, and lock-outs without court-approved proclamation are illegal.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <div className="rounded-xl border border-red-500/30 bg-red-500/5 p-4">

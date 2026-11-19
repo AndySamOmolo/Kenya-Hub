@@ -661,7 +661,7 @@ export default function KenyanTranslatorPage() {
                   onClear={() => setSearchQuery("")}
                   placeholder={
                     sourceLanguage === "english"
-                      ? "Type an English word (e.g. Water, Sun, Mother, One, Fire)..."
+                      ? "Type an English word..."
                       : `Type a word in ${sourceMeta?.languageName ?? "source language"} (or English)...`
                   }
                   className="text-sm w-full"
@@ -684,14 +684,14 @@ export default function KenyanTranslatorPage() {
                     </button>
                   ))}
                   {recentSearches.length > 0 && (
-                    <>
-                      <span className="text-[0.6rem] text-text-muted ml-1">Recent:</span>
+                    <div className="w-full flex flex-wrap items-center gap-1.5 pt-1">
+                      <span className="text-[0.65rem] text-text-muted">Recent:</span>
                       {recentSearches.slice(0, 4).map((s) => (
-                        <button key={s} onClick={() => setSearchQuery(s)} className="text-[0.65rem] px-2 py-0.5 rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors">
+                        <button key={s} onClick={() => setSearchQuery(s)} className="text-[0.65rem] px-2 py-0.5 rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors cursor-pointer">
                           {s}
                         </button>
                       ))}
-                    </>
+                    </div>
                   )}
                 </div>
               )}
@@ -962,7 +962,7 @@ export default function KenyanTranslatorPage() {
                         className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center gap-1.5 text-xs font-medium border transition-all cursor-pointer ${
                           activeCategory === "__audio__"
                             ? "border-sky-400/60 bg-sky-500/20 text-sky-300 font-semibold"
-                            : "border-sky-500/35 bg-sky-500/10 text-sky-300 hover:bg-sky-500/20"
+                            : "border-sky-600/40 bg-sky-500/10 text-sky-700 dark:text-sky-300 hover:bg-sky-500/20"
                         }`}
                       >
                         <DynamicIcon emoji="🔊" className="w-3.5 h-3.5" />
@@ -1023,7 +1023,7 @@ export default function KenyanTranslatorPage() {
                             setCategorySearch("");
                             setCategoryPage(1);
                           }}
-                          placeholder={`Filter within ${ALL_CATEGORY_IDS.find((c) => c.id === activeCategory)?.name}...`}
+                          placeholder="Filter entries..."
                           className="text-xs w-full"
                         />
                       </div>
@@ -1215,12 +1215,13 @@ export default function KenyanTranslatorPage() {
                         </span>
                       </div>
                       <p className="text-[0.625rem] text-text-muted mb-2 leading-relaxed">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
-                      <div className="flex flex-wrap gap-1 mb-1">
-                        {dict.categories.map((cat) => (
-                          <span key={cat.id} className="inline-flex items-center gap-1 text-[0.55rem] bg-bg-elevated px-1.5 py-0.5 rounded text-text-muted border border-border/40">
-                            <DynamicIcon emoji={cat.icon} className="w-[1em] h-[1em]" /> {cat.count}
-                          </span>
-                        ))}
+                      <div className="flex flex-wrap items-center gap-1.5 mb-2 text-[0.6875rem] text-text-muted">
+                        <span className="px-2 py-0.5 rounded-md bg-bg-elevated border border-border/50">
+                          {dict.categories.length} topic categories
+                        </span>
+                        <span className="px-2 py-0.5 rounded-md bg-bg-elevated border border-border/50">
+                          {dict.entryCount.toLocaleString()} verified entries
+                        </span>
                       </div>
                     </div>
 

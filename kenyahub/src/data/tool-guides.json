@@ -57,7 +57,7 @@
     },
     "kenyan-translator": {
       "slug": "kenyan-translator",
-      "notesTitle": "22-Language Kenyan Dictionary & Cross-Dialect Translator Methodology",
+      "notesTitle": "23-Language Kenyan Dictionary & Cross-Dialect Translator Methodology",
       "overview": [
         "Unlike generic neural machine translation engines that frequently hallucinate or conflate East African languages, the KenyaHub 23-Language Translator & Dictionary is built on a deterministic, verified lexical database spanning over 300,000 curated entries across Bantu, Nilotic, and Cushitic Kenyan languages.",
         "Every headword, phrase, grammatical gloss, and cultural usage note is cross-referenced against primary historical dictionaries (Krapf 1842–1882, Tutschek 1844, Steere 1870–1894, Taylor 1891, Wray 1894, Hinde 1901–1904, Hémery 1903, Madan 1903, McGregor 1904, Hollis 1905–1909, Kirk 1905, Beech 1911, Lindblom 1920, Barton 1921), Unicode CLDR standards, and verified community contributions."
@@ -785,7 +785,7 @@
       "notesTitle": "KPLC Prepaid Electricity Token Tariff, EPRA Levies & Lifeline Band Guide (2026)",
       "overview": [
         "Prepaid electricity tokens purchased from Kenya Power and Lighting Company (KPLC) via M-Pesa PayBill 888880 or *977# are priced according to the Retail Electricity Tariff Schedule approved by the Energy and Petroleum Regulatory Authority (EPRA). Many Kenyan households wonder why KES 1,000 buys different token units (kWh) at different times of the month—the reason is that KPLC uses cumulative monthly consumption bands (Lifeline DC1 vs. Domestic Ordinary DC2/DC3) combined with seven variable pass-through levies and 16% VAT.",
-        "Specifically, approximately 35% to 42% of every token purchase goes toward Fuel Energy Cost Charge (FCC), Foreign Exchange Rate Fluctuation Adjustment (FERFA), Inflation Adjustment (IA), WARMA Levy, EPRA Levy, Rural Electrification Programme (REP 5%), and 16% VAT before the remaining amount is divided by your base energy rate per kWh."
+        "Specifically, approximately 35% to 42% of every token purchase goes toward Fuel Energy Cost Charge (FCC), Foreign Exchange Rate Fluctuation Adjustment (FERFA), Inflation Adjustment (IA), WRA Levy, EPRA Levy, Rural Electrification Programme (REP 5%), and 16% VAT before the remaining amount is divided by your base energy rate per kWh."
       ],
       "howItWorks": [
         "Enter the KES amount you plan to spend on KPLC prepaid tokens and select your customer tariff category (Domestic Lifeline 0–30 kWh, Domestic Ordinary 30–100 kWh / >100 kWh, or Small Commercial SC1).",
@@ -825,7 +825,7 @@
         },
         {
           "question": "What levies are included in KPLC token charges?",
-          "answer": "Each unit includes: Rural Electrification Levy (KES 0.12), REP Fund Levy (KES 0.03), EPRA Levy (KES 0.10), WARMA Levy (KES 0.03), Fuel Cost Charge (~KES 3.87), and Forex Adjustment (~KES 0.67). Plus 16% VAT on everything."
+          "answer": "Each unit includes: Rural Electrification Levy (KES 0.12), REP Fund Levy (KES 0.03), EPRA Levy (KES 0.10), WRA Levy (KES 0.03), Fuel Cost Charge (~KES 3.87), and Forex Adjustment (~KES 0.67). Plus 16% VAT on everything."
         },
         {
           "question": "Why do I get fewer units than the base tariff rate suggests?",
@@ -995,7 +995,7 @@
       ],
       "howItWorks": [
         "Choose between a Motor Vehicle or Motorcycle / Boda Boda and select the engine rating band (e.g., 1001–1200 cc, 1201–1500 cc, 1501–1700 cc, up to 3000+ cc).",
-        "View the exact itemized cost including NTSA Transfer Fee, Purchase Tax, Online Search Fee (KES 500), and eCitizen convenience fee (KES 50).",
+        "View the exact itemized cost including NTSA Transfer Fee, Purchase Tax, Online Search Fee (KES 550), and eCitizen convenience fee (KES 50).",
         "The seller initiates the transfer on eCitizen, uploads the scanned original logbook, and the buyer accepts the transfer in their own eCitizen account to receive the new logbook."
       ],
       "workedExample": {
@@ -1240,8 +1240,8 @@
       ],
       "howItWorks": [
         "Select your mobile network operator (Safaricom, Airtel Kenya, or Telkom Kenya).",
-        "Tap 'Dial Now' on the Unsubscribe USSD card (*100*5# or *456*9*1#) to view and cancel all active airtime-draining subscriptions immediately.",
-        "Tap 'Dial Now' on the *106# ID Audit card to verify every mobile phone number linked to your Kenyan National ID."
+        "Dial the USSD code on your phone on the Unsubscribe USSD card (*100*5# or *456*9*1#) to view and cancel all active airtime-draining subscriptions immediately.",
+        "Dial the USSD code on your phone on the *106# ID Audit card to verify every mobile phone number linked to your Kenyan National ID."
       ],
       "workedExample": {
         "title": "Stopping Daily KES 10–30 Airtime Deductions on Safaricom",
@@ -1475,11 +1475,11 @@
       "faq": [
         {
           "question": "What are the most common reasons SHA rejects Kenyan hospital claims in 2026?",
-          "answer": "The top rejection triggers are missing or expired pre-authorization codes for surgical/inpatient procedures, ICD-11 diagnosis codes that do not match billed SHA benefit tariffs, unverified biometric/OTP member sign-off, and late submission past the 7-day statutory discharge window."
+          "answer": "The top rejection triggers are missing or expired pre-authorization codes for surgical/inpatient procedures, ICD-11 diagnosis codes that do not match billed SHA benefit tariffs, unverified biometric/OTP member sign-off, and late submission past the 30-day statutory discharge window (with 7-day internal hospital target)."
         },
         {
-          "question": "How does the Social Health Authority (SHA) 7-day submission rule work?",
-          "answer": "Health facilities are required to lodge completed inpatient and surgical claims on the SHA Provider Portal within 7 days of patient discharge, complete with itemized invoices, discharge summaries, and signed biometric/OTP confirmation."
+          "question": "How does the Social Health Authority (SHA) 30-day statutory submission window work?",
+          "answer": "Health facilities are required to lodge completed inpatient and surgical claims on the SHA Provider Portal within the 30-day statutory window (ideally within 7 days of discharge), complete with itemized invoices, discharge summaries, and signed biometric/OTP confirmation."
         },
         {
           "question": "Does SHA cover both primary healthcare (PHC) and inpatient SHIF benefits?",

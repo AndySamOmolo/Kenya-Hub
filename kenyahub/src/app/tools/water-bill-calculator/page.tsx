@@ -8,7 +8,7 @@ import waterData from "@/data/water-tariffs.json";
 
 const tool = TOOLS.find((t) => t.slug === "water-bill-calculator")!;
 
-function calculateWaterBill(utilityId: string, consumption: number) {
+function calculateWaterBill(utilityId: string, consumption: number, includeSewer: boolean = true) {
   const utility = waterData.utilities.find((u) => u.id === utilityId)!;
   let waterCharge = 0;
   const breakdown: { band: string; units: number; rate: number; amount: number }[] = [];
@@ -25,7 +25,7 @@ function calculateWaterBill(utilityId: string, consumption: number) {
     remaining -= unitsInBand;
   }
 
-  const sewerageCharge = Math.round(waterCharge * utility.sewerageRate);
+  const sewerageCharge = includeSewer ? Math.round(waterCharge * utility.sewerageRate) : 0;
   const meterRent = utility.meterRent;
   const total = waterCharge + sewerageCharge + meterRent;
 
@@ -64,7 +64,7 @@ export default function WaterBillCalculatorPage() {
   const [utilityId, setUtilityId] = useState("ncwsc");
   const [consumption, setConsumption] = useState(15);
 
-  const results = useMemo(() => calculateWaterBill(utilityId, consumption), [utilityId, consumption]);
+  const results = useMemo(() => calculateWaterBill(utilityId, consumption, includeSewer), [utilityId, consumption, includeSewer]);
 
   const fmt = (n: number) =>
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
@@ -137,6 +137,15 @@ export default function WaterBillCalculatorPage() {
             <span>0 m³</span>
             <span>100 m³</span>
           </div>
+          <label className="flex items-center gap-2.5 pt-2 text-xs sm:text-sm text-text-secondary cursor-pointer select-none">
+            <input
+              type="checkbox"
+              checked={includeSewer}
+              onChange={(e) => setIncludeSewer(e.target.checked)}
+              className="w-4 h-4 accent-gold rounded cursor-pointer"
+            />
+            <span>Connected to county sewer line (applies 75% sewerage surcharge)</span>
+          </label>
         </div>
 
         {/* Result */}

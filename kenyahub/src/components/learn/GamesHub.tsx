@@ -227,7 +227,7 @@ export default function GamesHub({
       {
         id: "wordle" as GameType,
         title: `${languageName} Wordle`,
-        subtitle: "Daily 'Neno la Siku' & Free Play",
+        subtitle: "Daily Word & Free Play",
         desc: `Guess a single ${languageName} word in 6 tries with progressive hints and shareable emoji grids.`,
         icon: <Type className="w-6 h-6" />,
         badgeColor: "bg-emerald-500/10 text-emerald-500",
@@ -252,7 +252,7 @@ export default function GamesHub({
         id: "speed" as GameType,
         title: "Speed Match Blitz",
         subtitle: "60s Bidirectional Time-Attack",
-        desc: `Race the 60-second clock with 3 direction modes, +2s combo time bonuses, and [1–4] hotkeys.`,
+        desc: `Race the 60-second clock with 3 direction modes, +2s combo time bonuses, and streak multipliers.`,
         icon: <Zap className="w-6 h-6" />,
         badgeColor: "bg-amber-500/10 text-amber-500",
         bestText:
@@ -274,7 +274,7 @@ export default function GamesHub({
       },
       {
         id: "riddles" as GameType,
-        title: "Riddle Master (Kitendawili)",
+        title: "Riddle Master",
         subtitle: "Authentic Call-and-Response",
         desc: `Solve traditional ${languageName} riddles with Native-First (+25 XP) or Clue-Revealed (+15 XP) modes.`,
         icon: <Sparkles className="w-6 h-6" />,
@@ -510,7 +510,7 @@ export default function GamesHub({
       )}
       {activeGame === "riddles" && (
         <>
-          {gameHeader("Riddle Master (Kitendawili)", "🪶")}
+          {gameHeader("Riddle Master", "🪶")}
           <RiddleGame {...sharedGameProps} />
         </>
       )}

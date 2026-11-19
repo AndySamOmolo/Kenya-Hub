@@ -50,13 +50,13 @@ export default function PpraEgpTenderSerializerPage() {
     return { rows, totalPages, missingCritical, uninitialed, validityOk };
   }, [docs, bidValidityDays]);
 
-  const fmtBates = (n: number) => String(n).padStart(4, "0");
+  const fmtBates = (n: number) => String(n).padStart(4, "0`);
 
   const copyManifest = () => {
     const lines = [
       `PPRA / e-GP TENDER SERIALIZATION MANIFEST (ITT 20.3)`,
       `Tender Ref: ${tenderRef} | Bid Validity: ${bidValidityDays} days | Total Pages: ${plan.totalPages}`,
-      "",
+      `",
       ...plan.rows
         .filter((r) => r.startPage !== null)
         .map(
@@ -73,13 +73,6 @@ export default function PpraEgpTenderSerializerPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 mb-2">
-            <FileCheck2 className="w-5 h-5 text-gold" />
-            PPRA &amp; e-GP Tender Mandatory Requirements Compiler
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-5">
-            Prevent Preliminary Mandatory Stage (<strong>MR1–MR15</strong>) disqualifications on <strong>e-gp.go.ke</strong> and physical Kenyan tenders. Verify CR12, KRA TCC, NCA, AGPO, SD1/SD2, and compute exact continuous <strong>ITT 20.3 Bates page ranges</strong>.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
             <div>

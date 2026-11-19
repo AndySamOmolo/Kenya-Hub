@@ -16,7 +16,7 @@ interface BandBreakdown {
   cost: number;
 }
 
-function calculateTokens(amountPaid: number) {
+function calculateTokens(amountPaid: number, tariffMode: "lifeline" | "ordinary" | "commercial" = "lifeline") {
   const fixedCharge = tariffData.fixedCharge;
   const levyPerUnit = tariffData.levies.repLevy + tariffData.levies.refLevy + tariffData.levies.epraLevy + tariffData.levies.warcLevy;
   const fccPerUnit = tariffData.fuelCostCharge.rate;
@@ -115,8 +115,9 @@ const faq = [
 
 export default function KPLCTokenCalculatorPage() {
   const [amount, setAmount] = useState<number>(1000);
+  const [tariffMode, setTariffMode] = useState<"lifeline" | "ordinary" | "commercial">("lifeline");
 
-  const results = useMemo(() => calculateTokens(amount), [amount]);
+  const results = useMemo(() => calculateTokens(amount, tariffMode), [amount, tariffMode]);
 
   const fmt = (n: number) =>
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -129,6 +130,31 @@ export default function KPLCTokenCalculatorPage() {
       <div className="space-y-6">
         {/* Input */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-text-secondary mb-2">
+              EPRA Tariff Classification
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {([
+                { id: "lifeline", label: "Lifeline + Domestic (DC1/DC2)" },
+                { id: "ordinary", label: "Domestic Ordinary (DC2/DC3)" },
+                { id: "commercial", label: "Small Commercial (SC1)" },
+              ] as const).map((t) => (
+                <button
+                  key={t.id}
+                  type="button"
+                  onClick={() => setTariffMode(t.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold border transition-colors cursor-pointer ${
+                    tariffMode === t.id
+                      ? "bg-gold/15 border-gold text-gold"
+                      : "bg-bg-elevated border-border text-text-secondary hover:text-text-primary"
+                  }`}
+                >
+                  {t.label}
+                </button>
+              ))}
+            </div>
+          </div>
           <label className="block text-sm font-medium text-text-secondary mb-2">
             Amount to Purchase (KES)
           </label>

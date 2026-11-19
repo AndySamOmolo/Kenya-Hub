@@ -134,11 +134,11 @@ export default function CookieConsent() {
   return (
     <div
       data-adsense-ignore="true"
-      className="fixed bottom-3 inset-x-3 sm:inset-x-auto sm:right-5 sm:bottom-5 z-[100] sm:max-w-md animate-fade-in-up"
+      className="fixed bottom-3 inset-x-3 sm:inset-x-auto sm:left-5 sm:bottom-4 z-[95] sm:max-w-sm"
       role="dialog"
       aria-label={showSettings ? "Cookie preferences" : "Cookie consent"}
     >
-      <div className="bg-bg-card/95 backdrop-blur-xl border border-border rounded-2xl shadow-2xl shadow-black/40 p-3.5 sm:p-4">
+      <div className="bg-bg-card border border-border rounded-2xl shadow-2xl shadow-black/40 p-3 sm:p-3.5" style={{ backgroundColor: "var(--bg-card)" }}>
         {showSettings ? (
           <div role="dialog" aria-label="Cookie preferences">
             <div className="flex items-start gap-2.5 mb-3">

@@ -42,7 +42,7 @@ function computeAreaHectares(coords: [number, number][]): number {
 export default function EudrCoopGeojsonPackagerPage() {
   const [coopName, setCoopName] = useState("Othaya Farmers Co-operative Society");
   const [farmerId, setFarmerId] = useState("KE-NYR-04128");
-  const [declaredHa, setDeclaredHa] = useState("4.6");
+  const [declaredHa, setDeclaredHa] = useState("7.08");
   const [gnssAccuracy, setGnssAccuracy] = useState("6.5");
   const [coordText, setCoordText] = useState(
     utilData.eudr.samplePolygonCoords.map(([lat, lon]) => `${lat}, ${lon}`).join("\n")
@@ -111,13 +111,6 @@ export default function EudrCoopGeojsonPackagerPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 mb-2">
-            <MapPin className="w-5 h-5 text-gold" />
-            Offline EUDR Cooperative Polygon &amp; GeoJSON Packager
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Built for Kenyan coffee cooperatives &amp; exporters (55%–60% of Kenya&apos;s coffee exports go to the EU). Validate WGS84 geolocation geometry against <strong>EU 2023/1115</strong> ahead of the <strong>Dec 30, 2026</strong> (large operators) and <strong>Jun 30, 2027</strong> (small/micro cooperatives) deadlines.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 mb-5">
             <div className="sm:col-span-2">
@@ -177,6 +170,11 @@ export default function EudrCoopGeojsonPackagerPage() {
                 {validation.computedHa.toFixed(2)} ha
               </p>
               <p className="text-[0.68rem] text-text-muted mt-0.5">Baseline: Dec 31, 2020 forest cutoff</p>
+              {Math.abs(validation.computedHa - (parseFloat(declaredHa) || 0)) / Math.max(parseFloat(declaredHa) || 0.1, 0.1) > 0.1 && (
+                <p className="text-[11px] text-amber-700 dark:text-amber-400 mt-1">
+                  Variance warning: Computed polygon area ({validation.computedHa.toFixed(2)} ha) differs from declared area ({declaredHa} ha) by over 10%.
+                </p>
+              )}
             </div>
             <div className={`rounded-xl border p-3.5 ${validation.errors.length === 0 ? "border-emerald-500/40 bg-emerald-500/10" : "border-red-500/40 bg-red-500/10"}`}>
               <span className="text-[0.68rem] font-bold uppercase text-text-muted">EU TRACES Status</span>

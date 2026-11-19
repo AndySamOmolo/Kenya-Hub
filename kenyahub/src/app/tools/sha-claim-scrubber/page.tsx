@@ -63,13 +63,6 @@ export default function ShaClaimScrubberPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 mb-2">
-            <Stethoscope className="w-5 h-5 text-gold" />
-            SHA Provider Pre-Submission Claim Scrubber
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-5">
-            Roughly <strong>1 in 5 (~20%)</strong> hospital claims submitted to the Social Health Authority (SHA) are rejected or queried (KES 3.43B declined). Scrub every Level 3–5 clinic claim across all 6 pre-discharge triggers before submission.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
             <div>

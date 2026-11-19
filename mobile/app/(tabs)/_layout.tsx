@@ -29,7 +29,7 @@ function M3TabIcon({
 }
 
 export default function TabLayout() {
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const insets = useSafeAreaInsets();
   const bottomInset = Math.max(insets.bottom, Platform.OS === "android" ? 10 : 24);
   const tabBarHeight = (Platform.OS === "android" ? 64 : 62) + bottomInset;
@@ -43,6 +43,9 @@ export default function TabLayout() {
         tabBarInactiveTintColor: theme.textSecondary,
         tabBarHideOnKeyboard: true,
         tabBarAllowFontScaling: true,
+        tabBarBackground: () => (
+          <View key={isDark ? "dark" : "light"} style={{ flex: 1, backgroundColor: theme.surfaceContainer }} />
+        ),
         tabBarStyle: [
           styles.tabBar,
           {

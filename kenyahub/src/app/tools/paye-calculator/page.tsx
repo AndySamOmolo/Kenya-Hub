@@ -709,32 +709,32 @@ export default function PAYECalculatorPage() {
               <tbody>
                 <tr>
                   <td className="text-text-primary font-medium">Gross Salary</td>
-                  <td className="text-right font-semibold text-text-primary">
+                  <td className="text-right font-semibold text-text-primary whitespace-nowrap">
                     {fmt(results.gross)}
                   </td>
                 </tr>
                 <tr>
                   <td>NSSF Contribution (Year 4 Tier I &amp; II, 6%)</td>
-                  <td className="text-right text-kenya-red-light">
+                  <td className="text-right text-kenya-red-light whitespace-nowrap">
                     − {fmt(results.nssf)}
                   </td>
                 </tr>
                 <tr>
                   <td>SHA / SHIF Contribution (2.75% pre-tax)</td>
-                  <td className="text-right text-kenya-red-light">
+                  <td className="text-right text-kenya-red-light whitespace-nowrap">
                     − {fmt(results.sha)}
                   </td>
                 </tr>
                 <tr>
                   <td>Affordable Housing Levy (1.5% pre-tax)</td>
-                  <td className="text-right text-kenya-red-light">
+                  <td className="text-right text-kenya-red-light whitespace-nowrap">
                     − {fmt(results.housingLevy)}
                   </td>
                 </tr>
                 {pensionContribution > 0 && (
                   <tr>
                     <td>Voluntary Pension Contribution (Allowable: {fmt(results.allowablePension)})</td>
-                    <td className="text-right text-kenya-red-light">
+                    <td className="text-right text-kenya-red-light whitespace-nowrap">
                       − {fmt(pensionContribution)}
                     </td>
                   </tr>
@@ -743,7 +743,7 @@ export default function PAYECalculatorPage() {
                   <td className="text-text-primary font-medium">
                     Taxable Income (After Allowable Deductions)
                   </td>
-                  <td className="text-right font-semibold text-text-primary">
+                  <td className="text-right font-semibold text-text-primary whitespace-nowrap">
                     {fmt(results.taxableIncome)}
                   </td>
                 </tr>
@@ -755,7 +755,7 @@ export default function PAYECalculatorPage() {
                 </tr>
                 <tr className="bg-kenya-green/10 border-t-2 border-border font-bold">
                   <td className="text-text-primary">Net Take-Home Pay</td>
-                  <td className="text-right text-kenya-green-light text-base">
+                  <td className="text-right text-kenya-green-light text-base whitespace-nowrap">
                     {fmt(results.netPay)}
                   </td>
                 </tr>
@@ -787,25 +787,24 @@ export default function PAYECalculatorPage() {
                 </tr>
               </thead>
               <tbody>
-                {[
-                  { gross: 24000, nssf: 1440, shif: 660, ahl: 360, paye: 0, net: 21540 },
-                  { gross: 35000, nssf: 2100, shif: 963, ahl: 525, paye: 1853, net: 29559 },
-                  { gross: 50000, nssf: 3000, shif: 1375, ahl: 750, paye: 5846, net: 39029 },
-                  { gross: 75000, nssf: 4500, shif: 2063, ahl: 1125, paye: 12582, net: 54730 },
-                  { gross: 100000, nssf: 6000, shif: 2750, ahl: 1500, paye: 19319, net: 70431 },
-                  { gross: 150000, nssf: 6480, shif: 4125, ahl: 2250, paye: 33538, net: 103607 },
-                  { gross: 250000, nssf: 6480, shif: 6875, ahl: 3750, paye: 62263, net: 170632 },
-                  { gross: 500000, nssf: 6480, shif: 13750, ahl: 7500, paye: 134076, net: 338194 },
-                ].map((row) => (
-                  <tr key={row.gross}>
-                    <td className="font-semibold text-text-primary">KES {row.gross.toLocaleString()}</td>
-                    <td className="text-right">KES {row.nssf.toLocaleString()}</td>
-                    <td className="text-right">KES {row.shif.toLocaleString()}</td>
-                    <td className="text-right">KES {row.ahl.toLocaleString()}</td>
-                    <td className="text-right text-kenya-red-light">KES {row.paye.toLocaleString()}</td>
-                    <td className="text-right font-bold text-kenya-green-light">KES {row.net.toLocaleString()}</td>
-                  </tr>
-                ))}
+                {[24000, 35000, 50000, 75000, 100000, 150000, 250000, 500000].map((gross) => {
+                  const nssf = Math.round(calculateNSSF(gross));
+                  const shif = Math.round(calculateSHA(gross));
+                  const ahl = Math.round(calculateHousingLevy(gross));
+                  const taxable = Math.max(0, gross - nssf - shif - ahl);
+                  const paye = Math.round(calculatePAYE(taxable));
+                  const net = gross - nssf - shif - ahl - paye;
+                  return (
+                    <tr key={gross}>
+                      <td className="font-semibold text-text-primary whitespace-nowrap">KES {gross.toLocaleString()}</td>
+                      <td className="text-right whitespace-nowrap">KES {nssf.toLocaleString()}</td>
+                      <td className="text-right whitespace-nowrap">KES {shif.toLocaleString()}</td>
+                      <td className="text-right whitespace-nowrap">KES {ahl.toLocaleString()}</td>
+                      <td className="text-right text-kenya-red-light whitespace-nowrap">KES {paye.toLocaleString()}</td>
+                      <td className="text-right font-bold text-kenya-green-light whitespace-nowrap">KES {net.toLocaleString()}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

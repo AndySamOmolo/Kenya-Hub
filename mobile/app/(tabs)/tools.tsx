@@ -57,7 +57,7 @@ function ToolItem({
   isPinned?: boolean;
 }) {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const categoryColor = categoryColorMap[item.category] || theme.gold;
   const catInfo = getCategoryInfo(item.category);
 
@@ -221,8 +221,11 @@ export default function ToolsScreen() {
     return { routeCount, stageCount, townCount: towns.length };
   }, []);
 
-  const showMatatuHubCard = useMemo(() => {
-    if (category !== "all" && category !== "transport") return false;
+  const showMatatuHubCard =
+    category === "transport-travel" ||
+    (query.trim().length > 0 &&
+      (MATATU_KEYWORDS.some((kw) => query.trim().toLowerCase().includes(kw)) ||
+        "matatu routes sacco fares".includes(query.trim().toLowerCase())));
     const q = query.trim().toLowerCase();
     if (!q) return true;
     return MATATU_KEYWORDS.some((kw) => kw.includes(q) || q.includes(kw));
@@ -276,6 +279,7 @@ export default function ToolsScreen() {
 
   return (
     <SafeAreaView
+      key={isDark ? "dark" : "light"}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >
@@ -320,7 +324,7 @@ export default function ToolsScreen() {
             
             value={query}
             onChangeText={setQuery}
-            placeholder="Search tools & Matatu routes (PAYE, M-Pesa, KRA)..."
+            placeholder="Search 33 tools or Matatu routes..."
             numberOfLines={1}
             multiline={false}
             placeholderTextColor={theme.textMuted}

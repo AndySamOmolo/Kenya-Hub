@@ -87,7 +87,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search by route number, destination, stage, or SACCO..."
+          placeholder="Search route, stage, or SACCO..."
           className="input-field text-sm"
           id="town-matatu-search"
           onClear={() => setSearch("")}

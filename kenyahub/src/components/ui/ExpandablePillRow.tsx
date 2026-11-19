@@ -70,7 +70,7 @@ function prepareExpandedChildren(
         style?: React.CSSProperties;
       }>,
       {
-        className: `${cleanedClass} pill-interactive-item pill-expanded-stagger min-h-6 max-w-full min-w-0 break-words text-center inline-flex items-center justify-center`.trim(),
+        className: `${cleanedClass} pill-interactive-item min-h-6 max-w-full min-w-0 break-words text-center inline-flex items-center justify-center`.trim(),
         style: {
           ...(props.style || {}),
           whiteSpace: "normal",

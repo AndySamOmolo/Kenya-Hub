@@ -136,7 +136,7 @@ export const TOOLS: Tool[] = [
     title: 'Kenyan Languages Translator & Dictionary (23 Languages)',
     seoTitle: 'Kenyan Language Translator & Dictionary (23 Languages)',
     shortTitle: '23-Language Translator',
-    description: 'Translate 300,000+ verified words and phrases across 23 Kenyan languages — Swahili, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Maasai, Somali, and more.',
+    description: 'Translate 208,000+ verified words and phrases across 23 Kenyan languages — Swahili, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Maasai, Somali, and more.',
     category: 'language-learning',
     keywords: ['Kenya language translator', 'Swahili Kikuyu Luo translator', 'Kenyan language dictionary', 'kamusi ya lugha za Kenya', 'Kalenjin Kamba Maasai words'],
     updateFrequency: 'static',

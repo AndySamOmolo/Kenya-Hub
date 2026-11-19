@@ -94,23 +94,7 @@ export default function MobileNumberPrefixPage() {
       <div className="space-y-6">
         {/* Main Checker Card */}
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="p-2 rounded-xl bg-gold/15 text-gold">
-              <Phone className="w-5 h-5" />
-            </span>
-            <div>
-              <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-                Kenyan Mobile Prefix &amp; Network Checker
-              </h2>
-              <p className="text-xs text-text-muted">
-                Official Communications Authority (CA) National Numbering Plan
-              </p>
-            </div>
-          </div>
 
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Enter any Kenyan mobile number or 4-digit prefix (e.g. <strong className="text-text-primary">0722</strong>, <strong className="text-text-primary">0733</strong>, <strong className="text-text-primary">0770</strong>, <strong className="text-text-primary">0110</strong>, or <strong className="text-text-primary">+254 790...</strong>) to instantly identify the telecommunications provider.
-          </p>
 
           {/* Quick-tap sample numbers */}
           <div className="flex items-center gap-1.5 flex-wrap mb-4">
@@ -138,7 +122,7 @@ export default function MobileNumberPrefixPage() {
               type="text"
               value={inputNumber}
               onChange={(e) => setInputNumber(e.target.value)}
-              placeholder="e.g. 0722 123 456, 0110 556 677, or +254 733 123 456"
+              placeholder="e.g. 0722 123 456 or 0110..."
               className="w-full pl-10 pr-11 py-3 rounded-xl border border-border bg-bg-surface text-text-primary text-sm font-mono placeholder:text-text-muted focus:outline-hidden focus:border-gold transition-colors"
               style={{ paddingLeft: "2.5rem", paddingRight: "2.75rem" }}
             />
@@ -292,7 +276,7 @@ export default function MobileNumberPrefixPage() {
                     </h3>
                   </div>
                   <span className="text-xs text-text-muted font-medium">
-                    {net.prefixes.length} allocated prefixes
+                    {net.prefixes.length} {net.prefixes.length === 1 ? "allocated prefix" : "allocated prefixes"}
                   </span>
                 </div>
 
@@ -353,7 +337,7 @@ export default function MobileNumberPrefixPage() {
             <div className="space-y-3 text-xs text-text-secondary leading-relaxed">
               <div className="p-2.5 rounded-lg bg-bg-elevated/50 border border-border/50">
                 <span className="font-bold text-gold block mb-1">
-                  Calling Outside Kenya:
+                  Calling Kenya from Abroad:
                 </span>
                 <span>{prefixesData.internationalDialing.fromKenya}</span>
               </div>

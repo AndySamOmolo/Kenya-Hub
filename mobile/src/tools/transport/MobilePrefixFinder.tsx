@@ -43,7 +43,7 @@ export function MobilePrefixFinder() {
             numberOfLines={1}
             value={num}
             onChangeText={setNum}
-            placeholder="e.g. 0722 123 456 or +254 733 123 456"
+            placeholder="e.g. 0722 123 456 or 0110..."
             placeholderTextColor={theme.textMuted}
             keyboardType="phone-pad"
             style={[styles.textInput, { paddingRight: 38 }]}

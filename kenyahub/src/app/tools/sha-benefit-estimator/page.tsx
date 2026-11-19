@@ -20,12 +20,6 @@ export default function ShaBenefitEstimatorPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            Social Health Authority (SHA) Facility Levels &amp; Co-Pay Explorer
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under Kenya&apos;s Social Health Insurance Act (SHIA 2024), health services are funded across the Primary Care Fund, Social Health Insurance Fund (SHIF), and Emergency &amp; Chronic Illness Fund. Select a facility level to view covered procedures and co-pay rules.
-          </p>
 
           <div className="flex flex-wrap gap-2 mb-6">
             {shaData.facilityLevels.map((lvl) => (

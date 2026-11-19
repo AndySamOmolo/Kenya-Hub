@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Platform,
   Vibration,
+  Appearance,
   useColorScheme,
   type StyleProp,
   type ViewStyle,
@@ -323,27 +324,35 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     };
   }, [systemColorScheme]);
 
-  const toggleTheme = () => {
+  useEffect(() => {
+    try {
+      Appearance.setColorScheme?.(isDark ? "dark" : "light");
+    } catch {}
+  }, [isDark]);
+
+  const toggleTheme = React.useCallback(() => {
     triggerHaptic(8);
     setIsDark((prev) => {
       const next = !prev;
       AsyncStorage.setItem("kh-theme", next ? "dark" : "light").catch(() => {});
       return next;
     });
-  };
+  }, []);
 
-  const setThemeMode = (mode: "dark" | "light") => {
+  const setThemeMode = React.useCallback((mode: "dark" | "light") => {
     const next = mode === "dark";
     setIsDark(next);
     AsyncStorage.setItem("kh-theme", mode).catch(() => {});
-  };
+  }, []);
 
   const theme = isDark ? darkColors : lightColors;
+  const ctxValue = React.useMemo(
+    () => ({ theme, isDark, themeReady, toggleTheme, setThemeMode }),
+    [theme, isDark, themeReady, toggleTheme, setThemeMode]
+  );
 
   return (
-    <ThemeContext.Provider
-      value={{ theme, isDark, themeReady, toggleTheme, setThemeMode }}
-    >
+    <ThemeContext.Provider value={ctxValue}>
       {children}
     </ThemeContext.Provider>
   );

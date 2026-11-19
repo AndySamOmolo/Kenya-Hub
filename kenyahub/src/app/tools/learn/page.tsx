@@ -151,8 +151,11 @@ export default function LearnPage() {
         topLangId = lang.id;
       }
     }
+    const lastVisitedId = typeof window !== "undefined" ? localStorage.getItem("kenyahub_last_visited_lang") : null;
     const resumeLang =
-      readyLangs.find((l) => l.id === topLangId) || readyLangs[0];
+      (lastVisitedId ? readyLangs.find((l) => l.id === lastVisitedId) : null) ||
+      readyLangs.find((l) => l.id === topLangId) ||
+      readyLangs[0];
     return { totalXp, bestStreak, totalWords, resumeLang };
   }, [progressMap, readyLangs]);
 
@@ -311,7 +314,7 @@ export default function LearnPage() {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onClear={() => setSearchQuery("")}
-                    placeholder="Search language, native name, or Kenyan county (e.g. Kiswahili, Gĩkũyũ, Nakuru, Coast)..."
+                    placeholder="Search language or county..."
                     className="w-full text-sm"
                   />
                 </div>

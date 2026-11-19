@@ -44,7 +44,7 @@ const RouteCard = React.memo(function RouteCard({
   route: RouteItem & { townId?: string; townName?: string };
 }) {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const rNum = route.routeNumber || route.number || "—";
 
   return (
@@ -268,6 +268,7 @@ export default function MatatuScreen() {
 
   return (
     <SafeAreaView
+      key={isDark ? "dark" : "light"}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right", "bottom"]}
     >

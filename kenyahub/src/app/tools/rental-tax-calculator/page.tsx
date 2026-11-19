@@ -37,12 +37,6 @@ export default function RentalTaxCalculatorPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            Residential Rental Income Tax (7.5% MRI) Calculator
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under Section 6A of the <strong>Income Tax Act</strong>, landlords earning gross rental income between KES 288,000 (KES 24,000/mo) and KES 15,000,000 per year pay a simplified flat 7.5% Monthly Rental Income (MRI) tax, due on the 20th of the following month.
-          </p>
 
           <div className="max-w-md mb-6">
             <label className="block text-xs font-semibold text-text-muted mb-1.5 uppercase">

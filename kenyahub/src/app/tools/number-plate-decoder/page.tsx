@@ -23,6 +23,30 @@ export default function NumberPlateDecoderPage() {
     const cleaned = input.toUpperCase().replace(/\s/g, "").replace(/[^A-Z0-9]/g, "");
     if (cleaned.length < 2) return null;
 
+    // Diplomatic & UN plates (e.g. 29 CD 1K, 45 UN 12K, 12 CC 4K)
+    const dipMatch = cleaned.match(/^(\d{1,3})(CD|CC|UN)(\d+[A-Z]?)$/);
+    if (dipMatch) {
+      const [, missionCode, dipType] = dipMatch;
+      const label =
+        dipType === "CD"
+          ? `Diplomatic Corps (Mission #${missionCode})`
+          : dipType === "CC"
+          ? `Consular Corps (Mission #${missionCode})`
+          : `United Nations Agency (Mission #${missionCode})`;
+      return {
+        type: "special" as const,
+        prefix: `${missionCode} ${dipType}`,
+        category: label,
+        description:
+          dipType === "UN"
+            ? "Accredited United Nations mission vehicle in Kenya (white text on red/blue diplomatic plate)."
+            : "Accredited foreign embassy, High Commission, or consular mission vehicle in Kenya (white text on red plate).",
+        plateColor: "Red background, White lettering",
+        year: "Diplomatic Registry (MFA / NTSA)",
+        era: "Diplomatic & International Missions",
+      };
+    }
+
     const prefix = cleaned.substring(0, 3);
 
     // Check special plates first
@@ -80,7 +104,7 @@ export default function NumberPlateDecoderPage() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="e.g. KDU 450A, KDA 123B, GK A001, 47 CG 001A"
+              placeholder="e.g. KDU 450A, GK A001..."
               className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] uppercase tracking-widest pr-11!"
               style={{ paddingRight: "2.75rem" }}
               maxLength={12}

@@ -661,13 +661,14 @@ export function KenyanTranslatorTool({
       <View
         style={{
           flexDirection: "row",
+          flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "space-between",
-          gap: 8,
+          gap: 6,
           paddingVertical: 2,
         }}
       >
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+        <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: 6, flexShrink: 1 }}>
           {(
             [
               { id: "translate" as const, label: "Translate" },

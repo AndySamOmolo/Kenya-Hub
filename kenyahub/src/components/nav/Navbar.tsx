@@ -205,7 +205,7 @@ export default function Navbar() {
       {/* Kenyan flag stripe */}
       <div className="kenya-stripe w-full" />
 
-      <nav aria-label="Primary navigation" className="sticky top-0 z-50 glass">
+      <nav aria-label="Primary navigation" className="sticky top-0 z-[80] glass">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-12 sm:h-[54px]">
             {/* Logo */}
@@ -269,8 +269,8 @@ export default function Navbar() {
                 </button>
 
                 {toolsOpen && (
-                  <div className="absolute top-full right-0 pt-2 w-[680px] animate-fade-in-up z-50">
-                    <div className="rounded-2xl border border-border bg-bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/30 p-6">
+                  <div className="absolute top-full right-0 pt-2 w-[680px] z-[90]">
+                    <div className="rounded-2xl border border-border bg-bg-card shadow-2xl shadow-black/30 p-6" style={{ backgroundColor: "var(--bg-card)" }}>
                       <div className="maasai-border-top rounded-2xl mb-3" />
 
                       <div className="grid grid-cols-3 gap-x-6 gap-y-4 pt-1 max-h-[60vh] overflow-y-auto pr-2">
@@ -508,7 +508,7 @@ export default function Navbar() {
       {searchOpen && (
         <div
           data-adsense-pause="true"
-          className="fixed inset-0 z-[110] bg-black/70 backdrop-blur-sm flex items-start justify-center p-3 pt-14 sm:p-4 sm:pt-24"
+          className="fixed inset-0 z-[120] bg-black/65 backdrop-blur-sm flex items-start justify-center p-3 pt-14 sm:p-4 sm:pt-24"
           onClick={() => setSearchOpen(false)}
           role="dialog"
           aria-modal="true"

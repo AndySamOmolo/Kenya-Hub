@@ -156,12 +156,6 @@ export default function DomesticWageCalculatorPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            Domestic Worker (Househelp) Gazetted Minimum Wage Calculator
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under the <strong>Regulation of Wages (General) (Amendment) Order (Legal Notice 108)</strong> and the <strong>NSSF Act (Cap 128)</strong>, domestic workers are entitled to gazetted minimum pay schedules by zone, plus mandatory 6% NSSF matching and 2.75% SHA healthcare deductions.
-          </p>
 
           <div className="flex flex-wrap gap-2 mb-4">
             {domesticWageData.zones.map((z) => (

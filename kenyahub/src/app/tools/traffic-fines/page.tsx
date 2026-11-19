@@ -81,7 +81,7 @@ export default function TrafficFinesPage() {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search offences — e.g. 'seatbelt', 'speeding', 'phone'..."
+            placeholder="Search offences (e.g. speeding)..."
             className="input-field"
             id="traffic-search-input"
            onClear={() => setSearchQuery("")} />
@@ -138,7 +138,7 @@ export default function TrafficFinesPage() {
                       <p className="text-sm text-text-primary font-medium">{offence.offence}</p>
                       <div className="flex flex-wrap items-center gap-2 mt-2">
                         <span className="text-xs text-text-muted">
-                          Demerit: <span className="text-gold font-medium">{offence.demeritPoints} pts</span>
+                          Demerit: <span className="text-gold font-medium">{offence.demeritPoints} {offence.demeritPoints === 1 ? "pt" : "pts"}</span>
                         </span>
                         {offence.arrestable && (
                           <span className="inline-flex items-center text-[0.625rem] text-kenya-red-light bg-kenya-red/10 rounded-full px-2 py-0.5 font-medium">

@@ -160,7 +160,7 @@ export default function AboutPage() {
           <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🌍" /></div>
           <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Cultural &amp; Linguistic Heritage</h3>
           <p className="text-xs text-text-secondary leading-relaxed">
-            Preserves 23 Kenyan languages through structured interactive courses, 300,067+ verified dictionary and course entries, and authenticated historical oral literature (1840–2026).
+            Preserves 23 Kenyan languages through structured interactive courses, 208,776+ verified dictionary and course entries, and authenticated historical oral literature (1840–2026).
           </p>
         </div>
 

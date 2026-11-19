@@ -59,13 +59,6 @@ export default function IcmsLandedCostArbitragePage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 mb-2">
-            <Ship className="w-5 h-5 text-gold" />
-            KRA iCMS Landed-Cost &amp; Consolidator Arbitrage Engine
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-5">
-            Compare cascading <strong>KRA iCMS</strong> customs taxes (Import Duty + 16% VAT on CIF &amp; Duty + 2.5% IDF + 2.0% RDL + clearing agent fees) against all-in China-to-Kenya consolidator rates (sea KES 65,000/CBM, air KES 1,700/kg).
-          </p>
 
           {/* Mode Toggle + HS Presets */}
           <div className="flex flex-wrap gap-2 mb-5">

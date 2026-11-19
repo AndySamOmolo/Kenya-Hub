@@ -39,7 +39,7 @@ function SavedToolCard({
   onRemove: () => void;
 }) {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
 
   return (
@@ -193,6 +193,7 @@ export default function SavedScreen() {
 
   return (
     <SafeAreaView
+      key={isDark ? "dark" : "light"}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >

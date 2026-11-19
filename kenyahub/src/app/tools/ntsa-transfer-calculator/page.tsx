@@ -38,12 +38,6 @@ export default function NtsaTransferCalculatorPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            NTSA Motor Vehicle Transfer &amp; Ownership Cost Calculator
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under the <strong>Traffic Act (Cap 403)</strong> and eCitizen service tariffs, vehicle transfer costs are stepped based on engine cubic capacity (cc) and statutory motor vehicle purchase tax.
-          </p>
 
           <div className="flex flex-wrap gap-2 mb-6">
             <button

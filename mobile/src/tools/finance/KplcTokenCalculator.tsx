@@ -96,28 +96,6 @@ export function KplcTokenCalculator() {
         onChangeText={setAmountText}
       />
 
-      <ExpandablePillRow contentContainerStyle={styles.pillSelector}>
-        {[500, 1000, 2000, 3500, 5000, 10000].map((amt) => (
-          <Pressable
-            key={amt}
-            onPress={() => setAmountText(String(amt))}
-            style={[
-              styles.pillBtn,
-              amountPaid === amt && styles.pillBtnActive,
-            ]}
-          >
-            <Text
-              style={[
-                styles.pillBtnText,
-                amountPaid === amt && styles.pillBtnTextActive,
-              ]}
-            >
-              KES {amt.toLocaleString()}
-            </Text>
-          </Pressable>
-        ))}
-      </ExpandablePillRow>
-
       <StatCard
         label="UNITS YOU WILL RECEIVE"
         value={`${result.totalUnits.toLocaleString()} kWh`}

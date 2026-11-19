@@ -244,7 +244,7 @@ export default function ToolDetailScreen() {
     tab?: string;
   }>();
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const insets = useSafeAreaInsets();
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
   const effectiveSlug = slug === "cbc-grade-age" ? "cbc-curriculum" : slug;
@@ -368,6 +368,7 @@ export default function ToolDetailScreen() {
   if (!tool) {
     return (
       <SafeAreaView
+      key={isDark ? "dark" : "light"}
         style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
         edges={["top", "left", "right", "bottom"]}
       >
@@ -600,6 +601,7 @@ export default function ToolDetailScreen() {
                   {tool.title}
                 </Text>
                 <Text
+                  numberOfLines={2}
                   style={[
                     styles.heroDescription,
                     { color: theme.textSecondary },

@@ -226,7 +226,7 @@ export default function MatatuPage() {
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search routes... e.g. 'Karen', 'Nyali', 'Kondele', 'Langas'"
+              placeholder="Search routes (e.g. Karen, Nyali)..."
               id="matatu-search"
               onClear={() => setSearch("")}
             />
@@ -294,7 +294,7 @@ export default function MatatuPage() {
                 type="text"
                 value={fromStage}
                 onChange={(e) => setFromStage(e.target.value)}
-                placeholder="e.g. Kencom, Westlands, Ngong, Nyali..."
+                placeholder="e.g. Kencom, Westlands, Ngong..."
                 className="input-field text-sm w-full pr-10!"
                 style={{ paddingRight: "2.5rem" }}
               />
@@ -319,7 +319,7 @@ export default function MatatuPage() {
                 type="text"
                 value={toStage}
                 onChange={(e) => setToStage(e.target.value)}
-                placeholder="e.g. Karen,JKIA, Kondele, Juja..."
+                placeholder="e.g. Karen, JKIA, Kondele, Juja..."
                 className="input-field text-sm w-full pr-10!"
                 style={{ paddingRight: "2.5rem" }}
               />

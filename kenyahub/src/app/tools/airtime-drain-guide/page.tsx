@@ -16,12 +16,6 @@ export default function AirtimeDrainGuidePage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            Airtime Drain, Premium SMS Unsubscribe &amp; SIM Swap Lockout USSD Guide
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Stop unauthorized airtime deductions from premium content providers, check which phone numbers are registered with your National ID to stop SIM-swap fraud, and block promotional SMS spam under Communications Authority (CA) rules.
-          </p>
 
           <div className="flex gap-2 mb-6">
             {airtimeData.networks.map((net) => (

@@ -68,13 +68,6 @@ export default function ArdhisasaCadTitleAuditorPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 mb-2">
-            <Compass className="w-5 h-5 text-gold" />
-            Ardhisasa Root-of-Title Due Diligence &amp; Sectional CAD Pre-Validator
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-5">
-            Pre-validate parcel beacon coordinates (UTM Easting, Northing in meters) for polygon closure and area tolerance before Ardhisasa GIS/CAD submission, and audit Root-of-Title &amp; <strong>NCA/EBK/BORAQS/ISK</strong> compliance (addressing Kenya&apos;s {utilData.ardhisasa.urbanNonComplianceRangePct} urban compliance gap).
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
             <div>
@@ -94,7 +87,7 @@ export default function ArdhisasaCadTitleAuditorPage() {
             </div>
             <div className={`rounded-xl border px-4 py-2 flex flex-col justify-center ${audit.isClosed && audit.areaOk ? "border-emerald-500/40 bg-emerald-500/10" : "border-red-500/40 bg-red-500/10"}`}>
               <span className="text-[0.65rem] font-bold uppercase text-text-muted">Topology &amp; Tolerance</span>
-              <span className={`text-sm font-black ${audit.isClosed && audit.areaOk ? "text-emerald-400" : "text-red-400"}`}>
+              <span className={`text-sm font-black ${audit.isClosed && audit.areaOk ? "text-emerald-700 dark:text-emerald-400" : "text-red-400"}`}>
                 {audit.isClosed ? "Closed" : `Open (${audit.closureErr.toFixed(2)}m)`} • Δ {audit.variancePct.toFixed(2)}%
               </span>
             </div>
@@ -134,12 +127,12 @@ export default function ArdhisasaCadTitleAuditorPage() {
 
           <div className="mt-4">
             {audit.isClosed && audit.areaOk && audit.passedChecks === DOSSIER_CHECKS.length ? (
-              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-700 dark:text-emerald-400">
                 <CheckCircle2 className="w-4 h-4" /> Parcel topology and Root-of-Title compliance dossier passed.
               </div>
             ) : (
-              <div className="flex items-center gap-2 text-xs font-semibold text-amber-400">
-                <AlertTriangle className="w-4 h-4" /> Complete remaining {DOSSIER_CHECKS.length - audit.passedChecks} dossier check(s) and verify polygon closure/tolerance before conveyancing or Ardhisasa upload.
+              <div className="flex items-center gap-2 text-xs font-semibold text-amber-800 dark:text-amber-400">
+                <AlertTriangle className="w-4 h-4" /> {DOSSIER_CHECKS.length - audit.passedChecks > 0 ? `Complete remaining ${DOSSIER_CHECKS.length - audit.passedChecks} dossier check(s) and verify polygon closure/tolerance before conveyancing or Ardhisasa upload.` : "Verify polygon closure and linear tolerance before conveyancing or Ardhisasa upload."}
               </div>
             )}
           </div>

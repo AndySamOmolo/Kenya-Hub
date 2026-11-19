@@ -71,7 +71,7 @@ const WIDGET_SNAP_INTERVAL = 295 + 12;
 
 export default function HomeScreen() {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const [searchQuery, setSearchQuery] = useState("");
@@ -494,6 +494,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView
+      key={isDark ? "dark" : "light"}
       style={[styles.screen, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >
@@ -604,7 +605,7 @@ export default function HomeScreen() {
               value={searchQuery}
               onChangeText={setSearchQuery}
               accessibilityLabel="Search Kenyan calculators, language courses, and Matatu routes"
-              placeholder={`Search ${TOOLS.length} tools & Matatu routes (PAYE, M-Pesa, KPLC...)`}
+              placeholder="Search tools, languages, or routes..."
               placeholderTextColor={theme.textSecondary}
               numberOfLines={1}
               multiline={false}

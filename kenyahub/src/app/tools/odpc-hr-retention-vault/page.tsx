@@ -20,10 +20,12 @@ export default function OdpcHrRetentionVaultPage() {
     const turnover = Math.max(0, Number(annualTurnover.replace(/,/g, "")) || 0);
     const mandatoryReg =
       staff >= utilData.odpc.staffThreshold || turnover >= utilData.odpc.turnoverThresholdKes;
-    const maxFineKes = Math.min(
-      utilData.odpc.maxFineKes,
-      Math.max(500000, Math.round(turnover * utilData.odpc.maxFineTurnoverPct))
-    );
+    const precedentFloor = recordsExitCalls ? 700000 : usesStaffPhotos ? 500000 : 0;
+    const turnoverFine = Math.round(turnover * utilData.odpc.maxFineTurnoverPct);
+    const maxFineKes =
+      !mandatoryReg && precedentFloor === 0
+        ? 0
+        : Math.min(utilData.odpc.maxFineKes, Math.max(precedentFloor, turnoverFine));
     const riskFlags: string[] = [];
     if (usesStaffPhotos) {
       riskFlags.push("Staff marketing photos require explicit written/verifiable consent (Kirima v Solar Panda: KES 500,000 determination).");
@@ -54,13 +56,6 @@ export default function OdpcHrRetentionVaultPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 mb-2">
-            <Lock className="w-5 h-5 text-gold" />
-            ODPC Employer Compliance &amp; Dual-Law HR Retention Engine
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Reconcile the statutory clash between Kenya&apos;s <strong>Employment Act 2007 Section 10(6)</strong> (5-year post-termination retention lock) and the <strong>Data Protection Act 2019</strong> (delete once purpose ends). Backed by 9,000+ ODPC complaints and 350+ determinations.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <div>
@@ -119,8 +114,8 @@ export default function OdpcHrRetentionVaultPage() {
               </p>
             </div>
             <div className="rounded-xl border border-red-500/35 bg-red-500/10 p-4">
-              <span className="text-[0.6875rem] font-bold text-red-400 uppercase">Max Statutory Fine</span>
-              <p className="text-lg font-black text-red-400 mt-1">
+              <span className="text-[0.6875rem] font-bold text-red-700 dark:text-red-400 uppercase">Max Statutory Fine</span>
+              <p className="text-lg font-black text-red-700 dark:text-red-400 mt-1">
                 KES {audit.maxFineKes.toLocaleString()}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1">
@@ -139,8 +134,8 @@ export default function OdpcHrRetentionVaultPage() {
           {audit.riskFlags.length > 0 && (
             <div className="mb-6 space-y-2">
               {audit.riskFlags.map((flag, i) => (
-                <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl border border-amber-500/40 bg-amber-500/10 text-xs text-amber-200">
-                  <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl border border-amber-600/40 bg-amber-500/15 text-xs text-amber-950 dark:text-amber-200 font-medium">
+                  <AlertTriangle className="w-4 h-4 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
                   <span>{flag}</span>
                 </div>
               ))}
@@ -178,10 +173,10 @@ export default function OdpcHrRetentionVaultPage() {
                       <span
                         className={`px-2 py-0.5 rounded-full text-[0.68rem] font-bold ${
                           rule.action === "LOCK"
-                            ? "bg-emerald-500/15 text-emerald-400"
+                            ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
                             : rule.action === "AUTO-PURGE"
-                            ? "bg-red-500/15 text-red-400"
-                            : "bg-amber-500/15 text-amber-400"
+                            ? "bg-red-500/15 text-red-700 dark:text-red-400"
+                            : "bg-amber-500/15 text-amber-700 dark:text-amber-400"
                         }`}
                       >
                         {rule.action}

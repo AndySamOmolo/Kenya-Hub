@@ -64,8 +64,8 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       "color": "#D4A843"
     },
     "ready": true,
-    "unitCount": 7,
-    "skillCount": 12,
+    "unitCount": 18,
+    "skillCount": 79,
     "wordsCount": 250
   },
   {

@@ -134,11 +134,16 @@ export default function LanguageCourseTool({
 
   // ── Progress Store (All Languages) ──
   const [allProgress, setAllProgress] = useState<Record<string, LanguageProgress>>({});
+  const [lastVisitedLangId, setLastVisitedLangId] = useState<string | null>(null);
 
   // Load & migrate progress from AsyncStorage
   useEffect(() => {
     (async () => {
       try {
+        const savedLastVisited = await AsyncStorage.getItem('kenyahub_last_visited_lang_v1');
+        if (savedLastVisited && hasCourseSummary(savedLastVisited)) {
+          setLastVisitedLangId(savedLastVisited);
+        }
         const rawV2 = await AsyncStorage.getItem(STORAGE_KEY_V2);
         if (rawV2) {
           setAllProgress(JSON.parse(rawV2));
@@ -817,9 +822,11 @@ export default function LanguageCourseTool({
     const distractors: string[] = [];
     const shuffled = [...allCourseWords].sort(() => Math.random() - 0.5);
     for (const w of shuffled) {
-      if (!seen.has(w.source.toLowerCase())) {
-        seen.add(w.source.toLowerCase());
-        distractors.push(w.source);
+      const cleanSrc = (w.source || '').trim();
+      if (!cleanSrc || cleanSrc.toLowerCase() === 'none' || cleanSrc.toLowerCase() === 'n/a') continue;
+      if (!seen.has(cleanSrc.toLowerCase())) {
+        seen.add(cleanSrc.toLowerCase());
+        distractors.push(cleanSrc);
         if (distractors.length >= 3) break;
       }
     }
@@ -1097,14 +1104,19 @@ export default function LanguageCourseTool({
         topLangId = lid;
       }
     }
+    const preferredId = lastVisitedLangId || topLangId;
     const resumeCourse =
-      PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === topLangId) || PUBLISHED_COURSE_SUMMARIES[0];
+      PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === preferredId) ||
+      PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === topLangId) ||
+      PUBLISHED_COURSE_SUMMARIES[0];
     return { totalXp, bestStreak, totalWords, resumeCourse };
-  }, [allProgress]);
+  }, [allProgress, lastVisitedLangId]);
 
   const handleSelectLanguageFromMenu = useCallback(
     (langId: string) => {
       setSelectedLangId(langId);
+      setLastVisitedLangId(langId);
+      AsyncStorage.setItem('kenyahub_last_visited_lang_v1', langId).catch(() => {});
       setShowLanguageMenu(false);
       setProverbCategory('All');
       setProverbSearch('');
@@ -2110,7 +2122,7 @@ export default function LanguageCourseTool({
               key={`menu-search-${isDark ? 'dark' : 'light'}`}
               value={menuSearchQuery}
               onChangeText={setMenuSearchQuery}
-              placeholder="Search language, native name, or county..."
+              placeholder="Search language or county..."
               placeholderTextColor={colors.textMuted}
               style={{
                 flex: 1,
@@ -3077,7 +3089,7 @@ export default function LanguageCourseTool({
                     setVocabSearch(txt);
                     setModulesPage(1);
                   }}
-                  placeholder={`Search ${currentCourse?.config.name} words or modules...`}
+                  placeholder="Search words or modules..."
                   placeholderTextColor={colors.textMuted}
                   style={{ flex: 1, minWidth: 0, fontSize: 13, color: colors.text, paddingVertical: 2, paddingHorizontal: 0 }}
                 />
@@ -4056,7 +4068,7 @@ export default function LanguageCourseTool({
             numberOfLines={1}
               value={grammarSearch}
               onChangeText={setGrammarSearch}
-              placeholder="Search grammar rules, tenses, or examples..."
+              placeholder="Search grammar rules or examples..."
               placeholderTextColor={colors.textMuted}
               style={{ flex: 1, minWidth: 0, fontSize: 13, color: colors.text, paddingVertical: 6, paddingHorizontal: 0 }}
             />
@@ -4257,7 +4269,7 @@ export default function LanguageCourseTool({
                 setProverbSearch(t);
                 setProverbPage(1);
               }}
-              placeholder={`Search ${currentCourse?.config.name || ''} wisdom or meaning...`}
+              placeholder="Search proverbs or meanings..."
               placeholderTextColor={colors.textMuted}
               numberOfLines={1}
               style={{ flex: 1, minWidth: 0, fontSize: 13, color: colors.text, paddingVertical: 6, paddingHorizontal: 0 }}

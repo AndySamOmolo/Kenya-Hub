@@ -589,7 +589,7 @@ function renderClimateCard(item: any, router: any, theme: any) {
 
 export default function CountyScreen() {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const { height: windowHeight } = useWindowDimensions();
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
   const scrollRef = useRef<ScrollView>(null);
@@ -660,6 +660,7 @@ export default function CountyScreen() {
 
   return (
     <SafeAreaView
+      key={isDark ? "dark" : "light"}
       style={[styles.container, { backgroundColor: theme.bgPrimary }]}
       edges={["top", "left", "right"]}
     >
@@ -1494,7 +1495,7 @@ export default function CountyScreen() {
               <TextInput
                 value={pickerSearch}
                 onChangeText={setPickerSearch}
-                placeholder="Type county name, code (001-047) or HQ..."
+                placeholder="Search county, code, or HQ..."
                 placeholderTextColor={theme.textMuted}
                 style={[styles.searchInput, { color: theme.textPrimary }]}
                 autoFocus

@@ -37,12 +37,6 @@ export default function SmallClaimsCalculatorPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-            Small Claims Court (SCC) Jurisdiction &amp; Filing Fee Assessment
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-            Under the <strong>Small Claims Court Act 2016</strong>, proceedings are designed to resolve civil and commercial disputes under KES 1,000,000 within 60 days without requiring high-cost advocate representation.
-          </p>
 
           <div className="max-w-md mb-6">
             <label className="block text-xs font-semibold text-text-muted mb-1.5 uppercase">
@@ -94,8 +88,8 @@ export default function SmallClaimsCalculatorPage() {
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Statutory Disposal Time</span>
-              <p className="text-xl font-extrabold text-kenya-green-light mt-1">60 Days</p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">Mandatory timeline under Cap 21</p>
+              <p className="text-xl font-extrabold text-kenya-green-light mt-1">{amount <= 1000000 ? "60 Days" : "Varies (Magistrate's Court)"}</p>
+              <p className="text-[0.6875rem] text-text-secondary mt-1">{amount <= 1000000 ? "Mandatory timeline under Cap 21" : "Exceeds Small Claims Court KES 1M jurisdiction"}</p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Jurisdiction Status</span>

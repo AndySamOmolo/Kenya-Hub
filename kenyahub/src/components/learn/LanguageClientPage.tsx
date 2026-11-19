@@ -177,6 +177,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      try { localStorage.setItem("kenyahub_last_visited_lang", languageId); } catch {}
       const prev = document.documentElement.style.scrollBehavior;
       document.documentElement.style.scrollBehavior = "auto";
       window.scrollTo(0, 0);
@@ -905,7 +906,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                   }}
                   className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-elevated px-4 py-2.5 text-xs sm:text-sm font-semibold text-gold hover:border-gold/40 transition-colors cursor-pointer"
                 >
-                  <RotateCcw className="w-3.5 h-3.5" /> Shuffle Card
+                  <RotateCcw className="w-3.5 h-3.5" /> Shuffle
                 </button>
 
                 <button
@@ -942,7 +943,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 value={moduleSearch}
                 onChange={(e) => setModuleSearch(e.target.value)}
                 onClear={() => setModuleSearch("")}
-                placeholder={`Search ${course.config.name} or English words...`}
+                placeholder="Search words or meanings..."
                 className="flex-1 text-sm"
               />
               <CustomSelect

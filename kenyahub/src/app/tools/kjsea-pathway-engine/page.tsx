@@ -49,13 +49,6 @@ export default function KjseaPathwayEnginePage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-          <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2 mb-2">
-            <GraduationCap className="w-5 h-5 text-gold" />
-            CBE Senior School Pathway &amp; KJSEA 20-20-60 Diagnostic Simulator
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-5">
-            Model your Grade 9 learner&apos;s official KNEC <strong>20-20-60</strong> composite score (20% Grade 6 KPSEA + 20% Grade 7–8 SBA + 60% Grade 9 KJSEA) and match their strengths to Senior School pathways (<strong>STEM 49%</strong>, <strong>Social Sciences 40%</strong>, <strong>Arts &amp; Sports 11%</strong>) and KUCCPS degree clusters before the August selection window.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
             <div>

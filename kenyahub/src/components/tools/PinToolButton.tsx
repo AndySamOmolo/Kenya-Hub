@@ -63,7 +63,7 @@ export default function PinToolButton({ toolSlug }: PinToolButtonProps) {
       } ${
         isPinned
           ? "border-gold/60 bg-gold/15 text-gold shadow-[0_0_12px_rgba(200,150,30,0.22)]"
-          : "border-border bg-bg-card text-text-secondary hover:border-gold/40 hover:text-gold hover:-translate-y-0.5"
+          : "border-border-light bg-bg-elevated text-text-primary hover:border-gold hover:text-gold hover:-translate-y-0.5"
       }`}
       title={isPinned ? "Unpin tool from homepage" : "Pin tool for quick access on homepage"}
     >
