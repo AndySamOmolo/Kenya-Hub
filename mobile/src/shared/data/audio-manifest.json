@@ -413,7 +413,7 @@
       "totalEntries": 53226,
       "addressableR2Keys": 53224,
       "r2Prefix": "audio/swahili/",
-      "directAudioEntries": 412,
+      "directAudioEntries": 414,
       "openAccessDatasets": [
         {
           "id": "waxal-swa-tts",
