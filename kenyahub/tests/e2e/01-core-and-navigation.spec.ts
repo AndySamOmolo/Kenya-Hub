@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import {
   attachRuntimeMonitor,
+  captureAuditScreenshot,
   applyTheme,
   assertNoHorizontalOverflow,
   assertNoCopyOrMarkdownLeaks,
@@ -27,10 +28,11 @@ test.describe("Core Pages, Navigation, Overlays & Theme Atomicity", () => {
   });
 
   for (const route of CORE_ROUTES) {
-    test(`Core route ${route} renders cleanly without errors, overflow, or copy leaks`, async ({ page }) => {
+    test(`Core route ${route} renders cleanly without errors, overflow, or copy leaks`, async ({ page }, testInfo) => {
       const monitor = attachRuntimeMonitor(page);
       await page.goto(route, { waitUntil: "domcontentloaded" });
-      await expect(page.locator("h1").first()).toBeVisible();
+      await captureAuditScreenshot(page, testInfo, `core-${route === "/" ? "home" : route}`);
+      await expect.soft(page.locator("h1").first()).toBeVisible();
       await assertNoHorizontalOverflow(page, route);
       await assertNoCopyOrMarkdownLeaks(page, route);
       monitor.assertClean();
@@ -50,14 +52,14 @@ test.describe("Core Pages, Navigation, Overlays & Theme Atomicity", () => {
     await searchTrigger.click();
 
     const searchInput = page.locator('div[role="dialog"] input').first();
-    await expect(searchInput).toBeVisible();
+    await expect.soft(searchInput).toBeVisible();
     await assertNotOccluded(page, searchInput, "Command-K search input (must sit above backdrop)");
 
     // Type "F" and verify title-prefix matches rank ahead of unrelated description matches
     await searchInput.fill("Fee");
     const firstResult = page.locator('div[role="dialog"] a').first();
-    await expect(firstResult).toBeVisible();
-    await expect(firstResult).toContainText(/Fee|M-Pesa/i);
+    await expect.soft(firstResult).toBeVisible();
+    await expect.soft(firstResult).toContainText(/Fee|M-Pesa/i);
     await assertNotOccluded(page, firstResult, "Command-K first search result");
     await page.keyboard.press("Escape");
 
@@ -67,7 +69,7 @@ test.describe("Core Pages, Navigation, Overlays & Theme Atomicity", () => {
       if ((await toolsBtn.count()) > 0) {
         await toolsBtn.click();
         const menuLink = page.locator('nav a[href*="/tools/"]').first();
-        await expect(menuLink).toBeVisible();
+        await expect.soft(menuLink).toBeVisible();
         await assertNotOccluded(page, menuLink, "Desktop Tools mega-menu link");
       }
     }

@@ -15,7 +15,8 @@
     "build:production": "npm run sync-data && eas build --platform android --profile production",
     "ios": "expo run:ios",
     "audit:android": "node e2e/run-android-audit.mjs",
-    "audit:android:strict": "node e2e/run-android-audit.mjs --strict"
+    "audit:android:strict": "node e2e/run-android-audit.mjs --strict",
+    "audit:mobile:all": "node scripts/audit-mobile-all.mjs --strict"
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.4.2",

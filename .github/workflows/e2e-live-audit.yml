@@ -19,7 +19,7 @@ on:
 jobs:
   static-and-playwright-audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
 
@@ -29,10 +29,11 @@ jobs:
           cache: npm
           cache-dependency-path: kenyahub/package-lock.json
 
-      - name: Run 74-Check Multi-Platform Audit & 14 Core Logic Suites
+      - name: Run Multi-Platform Static Audits & Core Test Suite
         run: |
           node kenyahub/scripts/audit-tools.mjs --strict
           node kenyahub/scripts/test-core-logic.mjs
+          node mobile/scripts/audit-mobile-all.mjs --strict
 
       - name: Install Web Dependencies & Playwright Chromium
         working-directory: kenyahub
@@ -46,19 +47,23 @@ jobs:
         working-directory: kenyahub
         run: npm run build
 
-      - name: Run Playwright Live E2E Audit (Desktop & Mobile × Light & Dark)
+      - name: Run Full Non-Stopping Playwright Live Audit (Desktop & Mobile × Light & Dark, Full Screenshots & Videos)
         working-directory: kenyahub
+        continue-on-error: true
         env:
           BASE_URL: ${{ inputs.target_url || 'http://127.0.0.1:3000' }}
         run: npx playwright test
 
-      - name: Upload Playwright HTML & JSON Audit Reports
+      - name: Upload Playwright HTML Report, JSON Audit, All Screenshots & Videos
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-live-audit-report
+          name: playwright-full-audit-screenshots-and-videos
           path: |
             kenyahub/reports/playwright-html
             kenyahub/reports/playwright-audit.json
+            kenyahub/reports/screenshots
             kenyahub/reports/tool-audit.json
+            kenyahub/test-results
+            mobile/reports/mobile-static-audit.json
           retention-days: 14

@@ -1,0 +1,55 @@
+appId: ke.co.kenyahub.app
+name: "08 - All Language Families, Course Tabs & Search Mobile Sweep"
+---
+- launchApp
+- tapOn: "Learn"
+- assertVisible: "Choose a Kenyan Language to Learn"
+
+# Bantu family check (Swahili + Kamba)
+- tapOn: "Bantu"
+- scrollUntilVisible:
+    element: "Kiswahili"
+    direction: DOWN
+- tapOn: "Kiswahili"
+- extendedWaitUntil:
+    visible: "Start Lesson"
+    timeout: 6000
+- tapOn: "Vocab"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "08-screen-01"
+- tapOn: "Grammar"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "08-screen-02"
+- tapOn: "Wisdom"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "08-screen-03"
+- back
+
+# Nilotic family check (Dholuo + Turkana)
+- tapOn: "Nilotic"
+- tapOn: "Dholuo"
+- extendedWaitUntil:
+    visible: "Start Lesson"
+    timeout: 6000
+- tapOn: "Games"
+- tapOn: "Memory Cards"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "08-screen-04"
+- tapOn: "Games Menu"
+- back
+
+# Cushitic family check (Borana)
+- tapOn: "Cushitic"
+- scrollUntilVisible:
+    element: "Borana"
+    direction: DOWN
+- tapOn: "Borana"
+- extendedWaitUntil:
+    visible: "Start Lesson"
+    timeout: 6000
+- tapOn: "Start Lesson"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "08-screen-05"
+- assertNotVisible: "Rendered fewer hooks"
+- back
+- back

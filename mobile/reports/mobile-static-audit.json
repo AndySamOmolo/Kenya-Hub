@@ -1,0 +1,504 @@
+{
+  "generatedAt": "2026-11-20T11:01:24.345Z",
+  "mobileTsxFilesScanned": 44,
+  "toolsWired": "33/33",
+  "languagesWired": 23,
+  "maestroFlows": [
+    "01-smoke-tabs-and-theme-switch.yaml",
+    "02-learn-courses-lessons-and-games.yaml",
+    "03-tools-calculators-and-translator.yaml",
+    "04-all-counties-matatu-and-saved.yaml",
+    "05-all-23-languages-and-33-tools-sweep.yaml",
+    "06-all-finance-and-construction-tools.yaml",
+    "07-all-education-transport-legal-health-tools.yaml",
+    "08-all-23-languages-mobile-sweep.yaml"
+  ],
+  "checksPassed": 80,
+  "checksTotal": 80,
+  "errorCount": 0,
+  "warningCount": 0,
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'etims-mpesa-reconciler'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'odpc-hr-retention-vault'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'eudr-coop-geojson-packager'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'icms-landed-cost-arbitrage'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'sha-claim-scrubber'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'ppra-egp-tender-serializer'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'kjsea-pathway-engine'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'ardhisasa-cad-title-auditor'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'learn'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'kenyan-translator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'paye-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'mpesa-fee-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'sacco-chama-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'helb-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'stamp-duty-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'cbc-curriculum'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'kuccps-cluster-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'kcse-grade-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'kra-car-import-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'number-plate-decoder'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'traffic-fines'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'mjengo-construction-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'kplc-token-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'water-bill-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'sha-benefit-estimator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'small-claims-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'ntsa-transfer-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'boma-yangu-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'rental-tax-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'landlord-tenant-rights'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'domestic-wage-calculator'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'airtime-drain-guide'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "routing",
+      "name": "Mobile tool route wired for 'mobile-number-prefix'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'kikuyu' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'luo' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'kamba' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'turkana' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'swahili' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'luhya' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'kalenjin' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'kisii' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'meru' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'mijikenda' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'maasai' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'somali' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'teso' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'embu' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'taita' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'taveta' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'pokomo' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'borana' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'rendille' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'samburu' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'ilchamus' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'pokot' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "Mobile course 'daasanach' wired in courseLoader + shared course & dict",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "courses",
+      "name": "courseLoader exports lazy getGrammarSectionsLazy",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "hooks",
+      "name": "Zero Rules of Hooks violations across all 44 mobile .tsx files",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "ThemeProvider syncs native Appearance.setColorScheme",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "AndroidTopAppBar exposes testID='theme-toggle'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "Bottom tab bar uses atomic tabBarBackground keyed on isDark",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "ErrorBoundary respects light/dark scheme & hides raw stack in production",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "app/(tabs)/index.tsx has atomic SafeAreaView theme key",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "app/(tabs)/learn.tsx has atomic SafeAreaView theme key",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "app/(tabs)/tools.tsx has atomic SafeAreaView theme key",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "app/(tabs)/county.tsx has atomic SafeAreaView theme key",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "app/(tabs)/saved.tsx has atomic SafeAreaView theme key",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "app/tools/[slug].tsx has atomic SafeAreaView theme key",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "theme",
+      "name": "app/matatu/index.tsx has atomic SafeAreaView theme key",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ergonomics",
+      "name": "No overlong static TextInput placeholders (>48ch) across mobile screens",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "LanguageCourseTool defers loadDictionary off language menu & Path tab",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "LanguageCourseTool tracks lastVisitedLangId for Resume CTA",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "LanguageCourseTool Speed Match filters out 'none' distractors",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "KCSE Calculator left-aligns degree titles & shows Mean badge",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "Mobile KPLC Token Calculator has no duplicate preset row",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "Mobile Translator mode tabs wrap cleanly without right-edge overflow",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "Mobile Matatu cards show operating hours & clean stage wrap",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "Home Practical Explainers caps tags to canonical categories (<=10)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "mobile-ux",
+      "name": "Matatu Routes not permanently pinned above Most used",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "e2e",
+      "name": "Mobile Maestro E2E suite has >= 8 comprehensive live flows",
+      "status": "pass",
+      "detail": "found 8"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+appId: ke.co.kenyahub.app
+name: "06 - All Finance, Tax, Utilities & Construction Mobile Tools Sweep"
+---
+- launchApp
+- tapOn: "Tools"
+- assertVisible: "All Tools"
+
+# Finance, Tax & SACCOs category sweep
+- tapOn: "Finance, Tax & SACCOs"
+- tapOn: "PAYE & Net-to-Gross"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-01"
+- back
+
+- tapOn: "M-Pesa Fee Calculator"
+- assertVisible: "M-PESA TRANSACTION FEE"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-02"
+- back
+
+- scrollUntilVisible:
+    element: "SACCO & Chama Loans"
+    direction: DOWN
+- tapOn: "SACCO & Chama Loans"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-03"
+- back
+
+- scrollUntilVisible:
+    element: "HELB Calculator"
+    direction: DOWN
+- tapOn: "HELB Calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-04"
+- back
+
+- scrollUntilVisible:
+    element: "Stamp Duty Calculator"
+    direction: DOWN
+- tapOn: "Stamp Duty Calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-05"
+- back
+
+- scrollUntilVisible:
+    element: "EUDR GeoJSON Packager"
+    direction: DOWN
+- tapOn: "EUDR GeoJSON Packager"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-06"
+- back
+
+# Construction & Mjengo
+- tapOn: "Construction & Mjengo"
+- tapOn: "Mjengo Cost Calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-07"
+- back
+
+- scrollUntilVisible:
+    element: "Ardhisasa Title Auditor"
+    direction: DOWN
+- tapOn: "Ardhisasa Title Auditor"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-08"
+- back
+
+# Utilities & Energy
+- tapOn: "Utilities & Energy"
+- tapOn: "Token Calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-09"
+- back
+
+- scrollUntilVisible:
+    element: "Water Bill Calculator"
+    direction: DOWN
+- tapOn: "Water Bill Calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-screen-10"
+- back

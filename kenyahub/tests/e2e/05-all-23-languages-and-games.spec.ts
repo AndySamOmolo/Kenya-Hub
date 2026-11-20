@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   attachRuntimeMonitor,
+  captureAuditScreenshot,
   applyTheme,
   assertNoHorizontalOverflow,
   assertNoCopyOrMarkdownLeaks,
@@ -23,12 +24,13 @@ test.describe("All 23 Language Courses Complete Live Audit", () => {
   for (const langId of ALL_23_LANGUAGES) {
     test(`/tools/learn/${langId}/ renders course, units, flashcards, games, grammar & proverbs cleanly`, async ({
       page,
-    }) => {
+    }, testInfo) => {
       const monitor = attachRuntimeMonitor(page);
       const url = `/tools/learn/${langId}/`;
       await page.goto(url, { waitUntil: "domcontentloaded" });
+      await captureAuditScreenshot(page, testInfo, `course-${langId}`);
 
-      await expect(page.locator("h1").first()).toBeVisible();
+      await expect.soft(page.locator("h1").first()).toBeVisible();
       await assertNoHorizontalOverflow(page, url);
       await assertNoCopyOrMarkdownLeaks(page, url);
 
@@ -37,7 +39,7 @@ test.describe("All 23 Language Courses Complete Live Audit", () => {
       if ((await refTable.count()) > 0) {
         const thirdCellTexts = await refTable.locator("td:nth-child(3)").allInnerTexts();
         const familyLeaks = thirdCellTexts.filter((t) => /^(Nilotic|Bantu|Cushitic)$/i.test(t.trim()));
-        expect(familyLeaks.length, `${url}: 3rd column leaked language family fallback`).toBe(0);
+        expect.soft(familyLeaks.length, `${url}: 3rd column leaked language family fallback`).toBe(0);
       }
 
       // Switch through Flashcards, Mini-Games, Grammar, and Proverbs tabs
@@ -47,7 +49,7 @@ test.describe("All 23 Language Courses Complete Live Audit", () => {
           await tabBtn.click();
           await page.waitForTimeout(150);
           if (tabLabel === "Mini-Games") {
-            expect(
+            expect.soft(
               await page.locator('h2:has-text("Core Vocabulary & Expressions Reference Table")').count(),
               `${url}: Reference table must be hidden in Mini-Games`
             ).toBe(0);

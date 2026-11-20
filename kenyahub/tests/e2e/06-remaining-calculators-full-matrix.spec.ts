@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import {
   attachRuntimeMonitor,
+  captureAuditScreenshot,
   applyTheme,
   assertNoHorizontalOverflow,
   assertExpandedPillsLegible,
@@ -42,15 +43,16 @@ test.describe("Complete Remaining 21-Calculator Deep Functional & Copy Audit", (
   });
 
   for (const sc of REMAINING_CALCULATOR_SCENARIOS) {
-    test(`/tools/${sc.slug}/ validates interactive output, pills, and zero regressions`, async ({ page }) => {
+    test(`/tools/${sc.slug}/ validates interactive output, pills, and zero regressions`, async ({ page }, testInfo) => {
       const monitor = attachRuntimeMonitor(page);
       const url = `/tools/${sc.slug}/`;
       await page.goto(url, { waitUntil: "domcontentloaded" });
+      await captureAuditScreenshot(page, testInfo, `calc-${sc.slug}`);
 
       const bodyText = await page.locator("body").innerText();
-      expect(bodyText).toMatch(sc.expectText);
+      expect.soft(bodyText).toMatch(sc.expectText);
       if (sc.forbiddenText) {
-        expect(bodyText).not.toMatch(sc.forbiddenText);
+        expect.soft(bodyText).not.toMatch(sc.forbiddenText);
       }
 
       if (sc.checkExpandPills) {

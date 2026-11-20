@@ -365,6 +365,11 @@ export default function ToolDetailScreen() {
     [router]
   );
 
+  const relatedBlogPosts = useMemo(
+    () => (tool ? getRelatedBlogPosts(tool.slug, 3) : []),
+    [tool?.slug]
+  );
+
   if (!tool) {
     return (
       <SafeAreaView
@@ -406,10 +411,6 @@ export default function ToolDetailScreen() {
   };
 
   const related = getRelatedTools(tool.slug, 4);
-  const relatedBlogPosts = useMemo(
-    () => getRelatedBlogPosts(tool.slug, 3),
-    [tool.slug]
-  );
   const categoryInfo = getCategoryInfo(tool.category);
   const categoryColor = categoryColorMap[tool.category] || theme.gold;
   const guide: ToolGuideEntry =

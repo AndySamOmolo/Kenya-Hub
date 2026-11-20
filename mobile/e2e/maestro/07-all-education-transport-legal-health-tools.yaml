@@ -1,0 +1,79 @@
+appId: ke.co.kenyahub.app
+name: "07 - All Education, Transport, Legal & Healthcare Mobile Tools Sweep"
+---
+- launchApp
+- tapOn: "Tools"
+
+# Education & CBC
+- tapOn: "Education & CBC"
+- tapOn: "CBC & Grade-Age"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-01"
+- back
+
+- tapOn: "KCSE Calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-02"
+- back
+
+- scrollUntilVisible:
+    element: "KUCCPS Calculator"
+    direction: DOWN
+- tapOn: "KUCCPS Calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-03"
+- back
+
+# Transport & Cars
+- tapOn: "Transport & Cars"
+- tapOn: "Car Import Duty (CRSP)"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-04"
+- back
+
+- scrollUntilVisible:
+    element: "NTSA Logbook Transfer"
+    direction: DOWN
+- tapOn: "NTSA Logbook Transfer"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-05"
+- back
+
+- scrollUntilVisible:
+    element: "Plate Decoder"
+    direction: DOWN
+- tapOn: "Plate Decoder"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-06"
+- assertNotVisible: "White text on black"
+- back
+
+- scrollUntilVisible:
+    element: "Traffic Fines"
+    direction: DOWN
+- tapOn: "Traffic Fines"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-07"
+- back
+
+# Government & Legal Rights
+- tapOn: "Government & Legal Rights"
+- tapOn: "Small Claims Court"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-08"
+- back
+
+- scrollUntilVisible:
+    element: "ODPC HR Vault"
+    direction: DOWN
+- tapOn: "ODPC HR Vault"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-09"
+- back
+
+# Healthcare & SHA
+- tapOn: "Healthcare & SHA"
+- tapOn: "SHA Claim Scrubber"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "07-screen-10"
+- back

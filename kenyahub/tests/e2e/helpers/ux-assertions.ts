@@ -1,4 +1,6 @@
-import { expect, type Page, type Locator } from "@playwright/test";
+import { expect, type Page, type Locator, type TestInfo } from "@playwright/test";
+import fs from "node:fs";
+import path from "node:path";
 
 export interface RuntimeMonitor {
   consoleErrors: string[];
@@ -8,7 +10,33 @@ export interface RuntimeMonitor {
 }
 
 /**
+ * Captures a full-page audit screenshot organized by project (desktop/mobile x light/dark)
+ * and attaches it to the Playwright HTML report.
+ */
+export async function captureAuditScreenshot(
+  page: Page,
+  testInfo: TestInfo,
+  name: string,
+  fullPage = true
+) {
+  const safeName = name.replace(/[^a-z0-9_-]+/gi, "-").replace(/^-|-$/g, "").toLowerCase();
+  const dir = path.resolve(__dirname, "../../../reports/screenshots", testInfo.project.name);
+  fs.mkdirSync(dir, { recursive: true });
+  const filePath = path.join(dir, `${safeName}.png`);
+  try {
+    await page.screenshot({ path: filePath, fullPage, animations: "disabled" });
+    await testInfo.attach(`${testInfo.project.name}-${safeName}`, {
+      path: filePath,
+      contentType: "image/png",
+    });
+  } catch {
+    // Do not abort the audit if a screenshot fails on a mid-navigation page
+  }
+}
+
+/**
  * Attaches console, uncaught exception, and 4xx/5xx network monitors to a Playwright page.
+ * Uses expect.soft() so the audit records every issue without stopping early.
  */
 export function attachRuntimeMonitor(page: Page): RuntimeMonitor {
   const consoleErrors: string[] = [];
@@ -18,7 +46,6 @@ export function attachRuntimeMonitor(page: Page): RuntimeMonitor {
   page.on("console", (msg) => {
     if (msg.type() === "error") {
       const txt = msg.text();
-      // Ignore third-party AdSense/analytics noise on live site
       if (/googlesyndication|doubleclick|adservice|gtag/i.test(txt)) return;
       consoleErrors.push(txt);
     }
@@ -39,15 +66,15 @@ export function attachRuntimeMonitor(page: Page): RuntimeMonitor {
     pageErrors,
     failedRequests,
     assertClean: () => {
-      expect(pageErrors, `Uncaught page errors: ${pageErrors.join(" | ")}`).toEqual([]);
-      expect(consoleErrors, `Console errors: ${consoleErrors.join(" | ")}`).toEqual([]);
-      expect(failedRequests, `Failed HTTP requests: ${failedRequests.join(" | ")}`).toEqual([]);
+      expect.soft(pageErrors, `Uncaught page errors: ${pageErrors.join(" | ")}`).toEqual([]);
+      expect.soft(consoleErrors, `Console errors: ${consoleErrors.join(" | ")}`).toEqual([]);
+      expect.soft(failedRequests, `Failed HTTP requests: ${failedRequests.join(" | ")}`).toEqual([]);
     },
   };
 }
 
 /**
- * Applies explicit light or dark theme via localStorage + document class before/after load.
+ * Applies explicit light or dark theme via localStorage before load.
  */
 export async function applyTheme(page: Page, mode: "light" | "dark") {
   await page.addInitScript((m) => {
@@ -59,21 +86,23 @@ export async function applyTheme(page: Page, mode: "light" | "dark") {
 }
 
 /**
- * Verifies zero horizontal overflow at current viewport width.
+ * Soft-asserts zero horizontal overflow at current viewport width.
  */
 export async function assertNoHorizontalOverflow(page: Page, contextLabel: string) {
   const metrics = await page.evaluate(() => ({
     scrollWidth: document.documentElement.scrollWidth,
     clientWidth: document.documentElement.clientWidth,
   }));
-  expect(
-    metrics.scrollWidth,
-    `${contextLabel}: horizontal overflow (${metrics.scrollWidth}px > ${metrics.clientWidth}px)`
-  ).toBeLessThanOrEqual(metrics.clientWidth + 2);
+  expect
+    .soft(
+      metrics.scrollWidth,
+      `${contextLabel}: horizontal overflow (${metrics.scrollWidth}px > ${metrics.clientWidth}px)`
+    )
+    .toBeLessThanOrEqual(metrics.clientWidth + 2);
 }
 
 /**
- * Scans visible text for raw Markdown leaks, NaN/undefined, and banned stale copy.
+ * Soft-asserts no raw Markdown leaks, NaN/undefined, or banned stale copy.
  */
 export async function assertNoCopyOrMarkdownLeaks(page: Page, contextLabel: string) {
   const bodyText = await page.evaluate(() => document.body.innerText || "");
@@ -88,17 +117,17 @@ export async function assertNoCopyOrMarkdownLeaks(page: Page, contextLabel: stri
     [/\bCalling Outside Kenya:\b/i, "Mislabeled 'Calling Outside Kenya:' heading"],
   ];
   for (const [rx, msg] of forbiddenPatterns) {
-    expect(rx.test(bodyText), `${contextLabel}: ${msg}`).toBe(false);
+    expect.soft(rx.test(bodyText), `${contextLabel}: ${msg}`).toBe(false);
   }
 }
 
 /**
- * Verifies an element is not occluded at its center point by a fixed overlay, backdrop, or floating button.
+ * Soft-asserts an element is not occluded at its center point by a fixed overlay, backdrop, or floating button.
  */
 export async function assertNotOccluded(page: Page, locator: Locator, label: string) {
   await locator.scrollIntoViewIfNeeded();
   const box = await locator.boundingBox();
-  expect(box, `${label}: element has no bounding box`).not.toBeNull();
+  expect.soft(box, `${label}: element has no bounding box`).not.toBeNull();
   if (!box) return;
   const cx = box.x + box.width / 2;
   const cy = box.y + box.height / 2;
@@ -109,7 +138,7 @@ export async function assertNotOccluded(page: Page, locator: Locator, label: str
     },
     { x: cx, y: cy }
   );
-  expect(hitOk, `${label}: center (${Math.round(cx)},${Math.round(cy)}) is occluded by another overlay`).toBe(true);
+  expect.soft(hitOk, `${label}: center (${Math.round(cx)},${Math.round(cy)}) is occluded by another overlay`).toBe(true);
 }
 
 /**
@@ -127,7 +156,7 @@ export async function getContrastRatio(locator: Locator): Promise<number> {
         const s = c / 255;
         return s <= 0.03928 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4);
       };
-      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+      return 0.2126 * f(r) + 0.7152 * f(g) + 0.7152 * 0 + 0.0722 * f(b);
     };
 
     const fg = parseRgb(getComputedStyle(el).color);
@@ -148,7 +177,7 @@ export async function getContrastRatio(locator: Locator): Promise<number> {
 }
 
 /**
- * Checks that expanded pill rows do not clip or wash out pills to near-zero opacity.
+ * Soft-asserts expanded pill rows do not clip or wash out pills to near-zero opacity.
  */
 export async function assertExpandedPillsLegible(page: Page, expandBtn: Locator) {
   if ((await expandBtn.count()) === 0) return;
@@ -158,5 +187,5 @@ export async function assertExpandedPillsLegible(page: Page, expandBtn: Locator)
     const items = Array.from(document.querySelectorAll(".pill-interactive-item"));
     return items.filter((el) => parseFloat(getComputedStyle(el).opacity) < 0.85).length;
   });
-  expect(lowOpacityCount, "Expanded pills must remain fully opaque (>= 0.85)").toBe(0);
+  expect.soft(lowOpacityCount, "Expanded pills must remain fully opaque (>= 0.85)").toBe(0);
 }

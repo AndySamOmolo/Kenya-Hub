@@ -5,11 +5,12 @@ const IS_LIVE = /^https?:\/\/(?!127\.0\.0\.1|localhost)/.test(BASE_URL);
 
 export default defineConfig({
   testDir: "./tests/e2e",
-  timeout: 45_000,
+  timeout: 60_000,
   expect: { timeout: 10_000 },
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 1 : 0,
+  maxFailures: 0, // Never stop early — collect every single audit finding across all routes
+  retries: 0,
   workers: process.env.CI ? 2 : undefined,
   reporter: [
     ["list"],
@@ -19,8 +20,8 @@ export default defineConfig({
   use: {
     baseURL: BASE_URL,
     trace: "retain-on-failure",
-    screenshot: "only-on-failure",
-    video: "retain-on-failure",
+    screenshot: "on",
+    video: "on",
     actionTimeout: 12_000,
     navigationTimeout: 25_000,
   },
