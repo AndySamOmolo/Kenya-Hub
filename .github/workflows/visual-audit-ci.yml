@@ -8,13 +8,9 @@ on:
         type: boolean
         default: true
       run_android:
-        description: "Run Mobile Typecheck, APK Build & Full Android Emulator Audit (all 33 tools + tabs, Light & Dark)"
+        description: "Run Mobile Typecheck, x86_64 APK Build & Full Android Emulator Audit (all 33 tools + tabs, Light & Dark)"
         type: boolean
         default: true
-      use_latest_release_apk:
-        description: "Android: reuse APK from GitHub 'latest' release instead of rebuilding (faster)"
-        type: boolean
-        default: false
   pull_request:
     paths:
       - "kenyahub/src/**"
@@ -127,20 +123,7 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=4096
         run: npm run typecheck
 
-      - name: Download latest Release APK (fast mode)
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.use_latest_release_apk }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          mkdir -p mobile/android/app/build/outputs/apk/release
-          gh release download latest \
-            --pattern "kenyahub-release.apk" \
-            --dir mobile/android/app/build/outputs/apk/release
-          mv mobile/android/app/build/outputs/apk/release/kenyahub-release.apk \
-            mobile/android/app/build/outputs/apk/release/app-release.apk
-
       - name: Setup Java 17 (Temurin)
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.use_latest_release_apk) }}
         uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -152,18 +135,20 @@ jobs:
           packages: "platform-tools"
 
       - name: Setup Gradle Cache
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.use_latest_release_apk) }}
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Build Android Release APK
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.use_latest_release_apk) }}
+      - name: Build Android x86_64 Release APK for CI Emulator
         working-directory: mobile/android
         env:
           NODE_ENV: production
           NODE_OPTIONS: --max-old-space-size=4096
         run: |
+          sed -i 's/^reactNativeArchitectures=.*/reactNativeArchitectures=x86_64/' gradle.properties
+          grep "^reactNativeArchitectures=" gradle.properties
           chmod +x gradlew
           ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=x86_64
+          echo "Verifying x86_64 native libraries inside APK..."
+          unzip -l app/build/outputs/apk/release/app-release.apk | grep "lib/x86_64/" | head -n 5
 
       - name: Enable KVM for Android Emulator
         run: |
