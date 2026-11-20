@@ -82,7 +82,7 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Run exhaustive Playwright E2E, a11y, error & visual audit
-        run: npx playwright test --config=playwright.config.ts
+        run: npx playwright test --config=playwright.config.mjs
 
       - name: Upload Web Comprehensive Audit artifacts
         uses: actions/upload-artifact@v4

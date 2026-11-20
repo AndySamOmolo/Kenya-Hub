@@ -4626,7 +4626,7 @@ export default function LanguageCourseTool({
                         literalTranslation: s.title,
                         meaning: s.culturalNote,
                         category: 'tradition',
-                        source: currentCourse?.name || selectedLangId,
+                        source: currentCourse?.config.name || selectedLangId,
                       });
                     }
                   });
