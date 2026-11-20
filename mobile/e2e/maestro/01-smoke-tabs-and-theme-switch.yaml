@@ -3,12 +3,17 @@ name: "01 - All 5 Tabs Smoke & Atomic Light/Dark Theme Switch"
 ---
 - launchApp:
     clearState: false
-- assertVisible: "KenyaHub"
+- extendedWaitUntil:
+    visible: "KenyaHub"
+    timeout: 20000
 - assertNotVisible: "Something went wrong"
+- takeScreenshot: "01-home-initial"
 
 # Walk all 5 bottom tabs
 - tapOn: "Learn"
-- assertVisible: "Choose a Kenyan Language to Learn"
+- extendedWaitUntil:
+    visible: "Choose a Kenyan Language to Learn"
+    timeout: 15000
 - assertNotVisible: "Something went wrong"
 - takeScreenshot: "01-learn-initial-theme"
 
@@ -27,10 +32,12 @@ name: "01 - All 5 Tabs Smoke & Atomic Light/Dark Theme Switch"
 - tapOn: "Counties"
 - assertVisible: "47 Counties Hub"
 - assertNotVisible: "Something went wrong"
+- takeScreenshot: "01-counties-tab"
 
 - tapOn: "Saved"
 - assertVisible: "Pinned Tools"
 - assertNotVisible: "Something went wrong"
+- takeScreenshot: "01-saved-tab"
 
 - tapOn: "Home"
 - assertVisible: "Daily Kenyan Widgets"

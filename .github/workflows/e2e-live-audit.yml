@@ -117,17 +117,19 @@ jobs:
           node scripts/sync-data.mjs
           node scripts/audit-mobile-all.mjs --strict
 
-      - name: Build Android Release APK for Live Audit
+      - name: Build x86_64 Android Release APK for Emulator Live Audit
         working-directory: mobile/android
         env:
           NODE_ENV: production
           NODE_OPTIONS: --max-old-space-size=4096
         run: |
           chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon
+          ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=x86_64
+          unzip -l app/build/outputs/apk/release/app-release.apk | grep -q "lib/x86_64/" || (echo "ERROR: APK is missing x86_64 native libraries!" && exit 1)
 
-      - name: Install Maestro CLI
+      - name: Ensure FFmpeg & Install Maestro CLI
         run: |
+          command -v ffmpeg >/dev/null 2>&1 || (sudo apt-get update && sudo apt-get install -y ffmpeg)
           curl -Ls "https://get.maestro.mobile.dev" | bash
           echo "$HOME/.maestro/bin" >> $GITHUB_PATH
 
@@ -145,6 +147,9 @@ jobs:
           disable-animations: true
           script: |
             export PATH="$HOME/.maestro/bin:$PATH"
+            adb shell svc power stayon true || true
+            adb shell wm dismiss-keyguard || true
+            adb shell input keyevent 82 || true
             adb install -r mobile/android/app/build/outputs/apk/release/app-release.apk
             node mobile/e2e/run-android-audit.mjs
 
