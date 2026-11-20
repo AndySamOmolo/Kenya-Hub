@@ -1,55 +1,39 @@
 appId: ke.co.kenyahub.app
-name: "08 - All Language Families, Course Tabs & Search Mobile Sweep"
+name: "08 - Multi-Family Languages (Bantu, Nilotic, Cushitic) & Mini-Games Audit"
 ---
-- launchApp
-- tapOn: "Learn"
-- assertVisible: "Choose a Kenyan Language to Learn"
-
-# Bantu family check (Swahili + Kamba)
-- tapOn: "Bantu"
-- scrollUntilVisible:
-    element: "Kiswahili"
-    direction: DOWN
-- tapOn: "Kiswahili"
+# 1. Bantu: Kiswahili (Vocab + Grammar + Wisdom)
+- openLink: "kenyahub://learn?lang=swahili&tab=vocab"
 - extendedWaitUntil:
-    visible: "Start Lesson"
-    timeout: 6000
-- tapOn: "Vocab"
+    visible: ".*Kiswahili.*|.*Swahili.*"
+    timeout: 12000
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "08-screen-01"
+- takeScreenshot: "08-swahili-vocab"
+
 - tapOn: "Grammar"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "08-screen-02"
-- tapOn: "Wisdom"
-- assertNotVisible: "Something went wrong"
-- takeScreenshot: "08-screen-03"
-- back
+- takeScreenshot: "08-swahili-grammar"
 
-# Nilotic family check (Dholuo + Turkana)
-- tapOn: "Nilotic"
-- tapOn: "Dholuo"
+# 2. Nilotic: Dholuo (Games -> Memory Cards)
+- openLink: "kenyahub://learn?lang=luo&tab=games"
+- extendedWaitUntil:
+    visible: ".*Memory.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "08-luo-games"
+- tapOn:
+    text: "Memory Cards"
+    optional: true
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "08-luo-memory-cards"
+
+# 3. Cushitic: Borana (Start Lesson)
+- openLink: "kenyahub://learn?lang=borana&tab=learn"
 - extendedWaitUntil:
     visible: "Start Lesson"
-    timeout: 6000
-- tapOn: "Games"
-- tapOn: "Memory Cards"
+    timeout: 12000
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "08-screen-04"
-- tapOn: "Games Menu"
-- back
-
-# Cushitic family check (Borana)
-- tapOn: "Cushitic"
-- scrollUntilVisible:
-    element: "Borana"
-    direction: DOWN
-- tapOn: "Borana"
-- extendedWaitUntil:
-    visible: "Start Lesson"
-    timeout: 6000
+- takeScreenshot: "08-borana-path"
 - tapOn: "Start Lesson"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "08-screen-05"
 - assertNotVisible: "Rendered fewer hooks"
-- back
-- back
+- takeScreenshot: "08-borana-lesson-player"

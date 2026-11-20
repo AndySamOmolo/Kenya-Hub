@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Platform, Pressable, ScrollView, StatusBar, StyleSheet, Text } from "react-native";
+import { useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import {
@@ -17,6 +18,7 @@ import {
 
 export default function LearnTabScreen() {
   const { theme, isDark } = useTheme();
+  const params = useLocalSearchParams<{ lang?: string; tab?: string }>();
   const insets = useSafeAreaInsets();
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
   const scrollRef = useRef<ScrollView>(null);
@@ -65,6 +67,8 @@ export default function LearnTabScreen() {
         }}
       >
         <LanguageLearningTool
+          initialLanguageId={typeof params.lang === "string" ? params.lang : undefined}
+          initialTab={typeof params.tab === "string" ? (params.tab as any) : undefined}
           onScrollToTop={handleScrollToTop}
           onNavigationStateChange={setNavState}
         />
@@ -103,9 +107,9 @@ const styles = StyleSheet.create({
     right: 16,
     flexDirection: "row",
     alignItems: "center",
-    gap: 4,
+    gap: 5,
     paddingHorizontal: 14,
-    paddingVertical: 9,
+    paddingVertical: 10,
     borderRadius: 999,
     borderWidth: 1,
     elevation: 6,
@@ -115,7 +119,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 3 },
   },
   fabTopText: {
-    fontFamily: "Outfit_800ExtraBold",
+    fontFamily: "Outfit_700Bold",
     fontSize: 12,
   },
 });

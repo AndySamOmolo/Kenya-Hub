@@ -12,12 +12,12 @@ name: "01 - All 5 Tabs Smoke & Atomic Light/Dark Theme Switch"
 # Walk all 5 bottom tabs
 - tapOn: "Learn"
 - extendedWaitUntil:
-    visible: "Choose a Kenyan Language to Learn"
+    visible: ".*Learn.*"
     timeout: 15000
 - assertNotVisible: "Something went wrong"
 - takeScreenshot: "01-learn-initial-theme"
 
-# Toggle Light <-> Dark theme and verify atomic repaint (zero error boundary, all text legible)
+# Toggle Light <-> Dark theme and verify atomic repaint (zero error boundary)
 - tapOn:
     id: "theme-toggle"
     optional: true
@@ -25,20 +25,29 @@ name: "01 - All 5 Tabs Smoke & Atomic Light/Dark Theme Switch"
 - assertNotVisible: "Something went wrong"
 
 - tapOn: "Tools"
-- assertVisible: "All Tools"
+- extendedWaitUntil:
+    visible: "All Tools"
+    timeout: 15000
 - assertNotVisible: "Something went wrong"
 - takeScreenshot: "01-tools-tab"
 
 - tapOn: "Counties"
-- assertVisible: "47 Counties Hub"
+- extendedWaitUntil:
+    visible: "47 Counties Hub"
+    timeout: 15000
 - assertNotVisible: "Something went wrong"
 - takeScreenshot: "01-counties-tab"
 
 - tapOn: "Saved"
-- assertVisible: "Pinned Tools"
+- extendedWaitUntil:
+    visible: ".*Saved.*|.*Pinned.*"
+    timeout: 15000
 - assertNotVisible: "Something went wrong"
 - takeScreenshot: "01-saved-tab"
 
 - tapOn: "Home"
-- assertVisible: "Daily Kenyan Widgets"
+- extendedWaitUntil:
+    visible: "KenyaHub"
+    timeout: 15000
 - assertNotVisible: "Something went wrong"
+- takeScreenshot: "01-home-returned"

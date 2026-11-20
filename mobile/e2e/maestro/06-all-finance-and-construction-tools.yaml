@@ -1,81 +1,42 @@
 appId: ke.co.kenyahub.app
-name: "06 - All Finance, Tax, Utilities & Construction Mobile Tools Sweep"
+name: "06 - Finance, Tax, Utilities & Construction Mobile Tools Audit"
 ---
-- launchApp
-- tapOn: "Tools"
-- assertVisible: "All Tools"
-
-# Finance, Tax & SACCOs category sweep
-- tapOn: "Finance, Tax & SACCOs"
-- tapOn: "PAYE & Net-to-Gross"
+- openLink: "kenyahub://tools/paye-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-01"
-- back
+- takeScreenshot: "06-paye"
 
-- tapOn: "M-Pesa Fee Calculator"
-- assertVisible: "M-PESA TRANSACTION FEE"
+- openLink: "kenyahub://tools/mpesa-fee-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-02"
-- back
+- takeScreenshot: "06-mpesa"
 
-- scrollUntilVisible:
-    element: "SACCO & Chama Loans"
-    direction: DOWN
-- tapOn: "SACCO & Chama Loans"
+- openLink: "kenyahub://tools/sacco-chama-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-03"
-- back
+- takeScreenshot: "06-sacco-chama"
 
-- scrollUntilVisible:
-    element: "HELB Calculator"
-    direction: DOWN
-- tapOn: "HELB Calculator"
+- openLink: "kenyahub://tools/helb-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-04"
-- back
+- takeScreenshot: "06-helb"
 
-- scrollUntilVisible:
-    element: "Stamp Duty Calculator"
-    direction: DOWN
-- tapOn: "Stamp Duty Calculator"
+- openLink: "kenyahub://tools/stamp-duty-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-05"
-- back
+- takeScreenshot: "06-stamp-duty"
 
-- scrollUntilVisible:
-    element: "EUDR GeoJSON Packager"
-    direction: DOWN
-- tapOn: "EUDR GeoJSON Packager"
+- openLink: "kenyahub://tools/eudr-coop-geojson-packager"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-06"
-- back
+- takeScreenshot: "06-eudr"
 
-# Construction & Mjengo
-- tapOn: "Construction & Mjengo"
-- tapOn: "Mjengo Cost Calculator"
+- openLink: "kenyahub://tools/mjengo-construction-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-07"
-- back
+- takeScreenshot: "06-mjengo"
 
-- scrollUntilVisible:
-    element: "Ardhisasa Title Auditor"
-    direction: DOWN
-- tapOn: "Ardhisasa Title Auditor"
+- openLink: "kenyahub://tools/ardhisasa-cad-title-auditor"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-08"
-- back
+- takeScreenshot: "06-ardhisasa"
 
-# Utilities & Energy
-- tapOn: "Utilities & Energy"
-- tapOn: "Token Calculator"
+- openLink: "kenyahub://tools/kplc-token-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-09"
-- back
+- takeScreenshot: "06-kplc"
 
-- scrollUntilVisible:
-    element: "Water Bill Calculator"
-    direction: DOWN
-- tapOn: "Water Bill Calculator"
+- openLink: "kenyahub://tools/water-bill-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "06-screen-10"
-- back
+- takeScreenshot: "06-water-bill"

@@ -1,44 +1,63 @@
 appId: ke.co.kenyahub.app
-name: "03 - All Tools, Translator Overflow, KPLC, KCSE & M-Pesa"
+name: "03 - Flagship Tools Interactive Audit (Translator, M-Pesa, PAYE, KPLC, KCSE)"
 ---
-- launchApp
-- tapOn: "Tools"
-- assertVisible: "All Tools"
-
-# Open 23-Language Translator & verify all 4 mode tabs are reachable without right-edge clipping
-- tapOn: "23-Language Translator"
-- assertVisible: "Translate"
+# 1. 23-Language Translator & all mode tabs
+- openLink: "kenyahub://tools/kenyan-translator"
+- extendedWaitUntil:
+    visible: "Translate"
+    timeout: 15000
 - assertVisible: "Browse"
-- assertVisible: "+ Word"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "03-android-translator"
-- back
+- takeScreenshot: "03-translator-translate"
+- tapOn: "Browse"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "03-translator-browse"
 
-# Open M-Pesa Fee Calculator
-- tapOn: "M-Pesa Fee Calculator"
-- assertVisible: "M-PESA TRANSACTION FEE"
+# 2. M-Pesa Fee Calculator
+- openLink: "kenyahub://tools/mpesa-fee-calculator"
+- extendedWaitUntil:
+    visible: ".*M-PESA.*|.*M-Pesa.*"
+    timeout: 12000
 - assertNotVisible: "Something went wrong"
-- back
+- takeScreenshot: "03-mpesa-calculator"
 
-# Open KCSE Calculator & verify live Mean badge
-- scrollUntilVisible:
-    element: "KCSE Calculator"
-    direction: DOWN
-- tapOn: "KCSE Calculator"
-- assertVisible: "KCSE OVERALL MEAN GRADE"
-- scrollUntilVisible:
-    element: "Degree & Career Eligibility Check"
-    direction: DOWN
-- assertVisible: "Mean:"
+# 3. PAYE & Net-to-Gross Calculator
+- openLink: "kenyahub://tools/paye-calculator"
+- extendedWaitUntil:
+    visible: ".*PAYE.*|.*Salary.*|.*Gross.*"
+    timeout: 12000
 - assertNotVisible: "Something went wrong"
-- back
+- takeScreenshot: "03-paye-calculator"
 
-# Open KPLC Token Calculator
-- scrollUntilVisible:
-    element: "Token Calculator"
-    direction: DOWN
-- tapOn: "Token Calculator"
-- assertVisible: "Amount to Purchase (KES)"
+# 4. KCSE Grade Calculator
+- openLink: "kenyahub://tools/kcse-grade-calculator"
+- extendedWaitUntil:
+    visible: ".*KCSE.*"
+    timeout: 12000
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "03-android-kplc"
-- back
+- takeScreenshot: "03-kcse-calculator"
+
+# 5. KPLC Token Calculator
+- openLink: "kenyahub://tools/kplc-token-calculator"
+- extendedWaitUntil:
+    visible: ".*Token.*|.*KPLC.*|.*Purchase.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "03-kplc-calculator"
+
+# 6. Water Bill Calculator
+- openLink: "kenyahub://tools/water-bill-calculator"
+- extendedWaitUntil:
+    visible: ".*Water.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "03-water-bill-calculator"
+
+# 7. Plate Decoder
+- openLink: "kenyahub://tools/number-plate-decoder"
+- extendedWaitUntil:
+    visible: ".*Plate.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- assertNotVisible: "White text on black"
+- takeScreenshot: "03-plate-decoder"

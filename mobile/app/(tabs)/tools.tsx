@@ -156,7 +156,7 @@ function ToolItem({
 
 export default function ToolsScreen() {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
   const [category, setCategory] = useState(params.category ?? "all");

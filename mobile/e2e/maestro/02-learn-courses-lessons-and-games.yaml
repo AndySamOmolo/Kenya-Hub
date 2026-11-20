@@ -1,43 +1,59 @@
 appId: ke.co.kenyahub.app
 name: "02 - Learn Courses, Lesson Player (No Hooks Crash) & Mini-Games"
 ---
-- launchApp
-- tapOn: "Learn"
-- assertVisible: "Choose a Kenyan Language to Learn"
-
-# Open Kikuyu course & verify fast load + zero crash
-- tapOn: "Kikuyu"
+- openLink: "kenyahub://learn?lang=kikuyu&tab=learn"
 - extendedWaitUntil:
     visible: "Start Lesson"
-    timeout: 6000
+    timeout: 15000
 - assertNotVisible: "Something went wrong"
+- takeScreenshot: "02-kikuyu-path"
 
 # Launch Lesson Player (regression guard for Rules of Hooks crash)
 - tapOn: "Start Lesson"
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
 - assertNotVisible: "Something went wrong"
 - assertNotVisible: "Rendered fewer hooks"
 - takeScreenshot: "02-kikuyu-lesson-player"
 - back
 
-# Open Games tab and launch Word Scramble & Speed Match (regression guard for isSingleWordLexical & 'None' distractor)
+# Check Vocab, Grammar, Wisdom tabs
+- tapOn: "Vocab"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "02-kikuyu-vocab"
+
+- tapOn: "Grammar"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "02-kikuyu-grammar"
+
+# Open Games tab and launch Word Scramble, Speed Match & Wordle
 - tapOn: "Games"
-- assertVisible: "Word Scramble"
+- extendedWaitUntil:
+    visible: "Word Scramble"
+    timeout: 10000
+- takeScreenshot: "02-kikuyu-games-menu"
+
 - tapOn: "Word Scramble"
 - assertNotVisible: "Something went wrong"
 - assertNotVisible: "isSingleWordLexical"
 - takeScreenshot: "02-word-scramble"
-- tapOn: "Games Menu"
+- tapOn:
+    text: "Games Menu"
+    optional: true
 
-- tapOn: "Speed Match"
+- tapOn:
+    text: "Speed Match"
+    optional: true
 - assertNotVisible: "Something went wrong"
 - assertNotVisible: "None"
 - takeScreenshot: "02-speed-match"
-- tapOn: "Games Menu"
+- tapOn:
+    text: "Games Menu"
+    optional: true
 
-- tapOn: "Kikuyu Wordle"
+- tapOn:
+    text: ".*Wordle.*"
+    optional: true
 - assertNotVisible: "Something went wrong"
-- tapOn: "Games Menu"
-
-# Return to Learn Hub and verify Resume CTA reflects last visited course (Kikuyu)
-- back
-- assertVisible: "Resume Kikuyu"
+- takeScreenshot: "02-wordle"

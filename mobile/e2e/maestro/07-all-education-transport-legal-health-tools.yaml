@@ -1,79 +1,43 @@
 appId: ke.co.kenyahub.app
-name: "07 - All Education, Transport, Legal & Healthcare Mobile Tools Sweep"
+name: "07 - Education, Transport, Legal, Civic & Healthcare Mobile Tools Audit"
 ---
-- launchApp
-- tapOn: "Tools"
-
-# Education & CBC
-- tapOn: "Education & CBC"
-- tapOn: "CBC & Grade-Age"
+- openLink: "kenyahub://tools/cbc-curriculum"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-01"
-- back
+- takeScreenshot: "07-cbc"
 
-- tapOn: "KCSE Calculator"
+- openLink: "kenyahub://tools/kcse-grade-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-02"
-- back
+- takeScreenshot: "07-kcse"
 
-- scrollUntilVisible:
-    element: "KUCCPS Calculator"
-    direction: DOWN
-- tapOn: "KUCCPS Calculator"
+- openLink: "kenyahub://tools/kuccps-cluster-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-03"
-- back
+- takeScreenshot: "07-kuccps"
 
-# Transport & Cars
-- tapOn: "Transport & Cars"
-- tapOn: "Car Import Duty (CRSP)"
+- openLink: "kenyahub://tools/kra-car-import-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-04"
-- back
+- takeScreenshot: "07-car-import"
 
-- scrollUntilVisible:
-    element: "NTSA Logbook Transfer"
-    direction: DOWN
-- tapOn: "NTSA Logbook Transfer"
+- openLink: "kenyahub://tools/ntsa-transfer-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-05"
-- back
+- takeScreenshot: "07-ntsa-transfer"
 
-- scrollUntilVisible:
-    element: "Plate Decoder"
-    direction: DOWN
-- tapOn: "Plate Decoder"
+- openLink: "kenyahub://tools/number-plate-decoder"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-06"
 - assertNotVisible: "White text on black"
-- back
+- takeScreenshot: "07-plate-decoder"
 
-- scrollUntilVisible:
-    element: "Traffic Fines"
-    direction: DOWN
-- tapOn: "Traffic Fines"
+- openLink: "kenyahub://tools/traffic-fines"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-07"
-- back
+- takeScreenshot: "07-traffic-fines"
 
-# Government & Legal Rights
-- tapOn: "Government & Legal Rights"
-- tapOn: "Small Claims Court"
+- openLink: "kenyahub://tools/small-claims-calculator"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-08"
-- back
+- takeScreenshot: "07-small-claims"
 
-- scrollUntilVisible:
-    element: "ODPC HR Vault"
-    direction: DOWN
-- tapOn: "ODPC HR Vault"
+- openLink: "kenyahub://tools/odpc-hr-retention-vault"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-09"
-- back
+- takeScreenshot: "07-odpc-hr"
 
-# Healthcare & SHA
-- tapOn: "Healthcare & SHA"
-- tapOn: "SHA Claim Scrubber"
+- openLink: "kenyahub://tools/sha-claim-scrubber"
 - assertNotVisible: "Something went wrong"
-- takeScreenshot: "07-screen-10"
-- back
+- takeScreenshot: "07-sha-scrubber"

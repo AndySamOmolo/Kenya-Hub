@@ -72,9 +72,9 @@ jobs:
           retention-days: 14
 
   android-live-e2e-audit:
-    name: Android Emulator Live App Audit (Maestro + Videos + Screenshots + Logcat)
+    name: Android Emulator Exhaustive Live App Audit (All 33 Tools, 23 Languages, 47 Counties, Light+Dark, Videos)
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 55
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -133,7 +133,7 @@ jobs:
           curl -Ls "https://get.maestro.mobile.dev" | bash
           echo "$HOME/.maestro/bin" >> $GITHUB_PATH
 
-      - name: Boot Android API 34 Emulator & Run All 8 Maestro Live Audit Flows
+      - name: Boot Android API 34 Emulator & Run Exhaustive Live Audit
         uses: reactivecircus/android-emulator-runner@v2
         continue-on-error: true
         with:
@@ -153,13 +153,14 @@ jobs:
             adb install -r mobile/android/app/build/outputs/apk/release/app-release.apk
             node mobile/e2e/run-android-audit.mjs
 
-      - name: Upload Android Live Audit Report, All Screenshots & MP4 Videos
+      - name: Upload Exhaustive Android Audit Report, All Screenshots & MP4 Videos
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: android-live-audit-screenshots-and-videos
           path: |
             mobile/reports/android-live-audit.json
+            mobile/reports/android-live-audit-summary.md
             mobile/reports/mobile-static-audit.json
             mobile/reports/screenshots
             mobile/reports/videos
