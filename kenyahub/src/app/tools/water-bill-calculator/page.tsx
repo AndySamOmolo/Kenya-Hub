@@ -63,7 +63,6 @@ const faq = [
 export default function WaterBillCalculatorPage() {
   const [utilityId, setUtilityId] = useState("ncwsc");
   const [consumption, setConsumption] = useState(15);
-  const [includeSewer, setIncludeSewer] = useState(true);
 
   const results = useMemo(() => calculateWaterBill(utilityId, consumption, includeSewer), [utilityId, consumption, includeSewer]);
 

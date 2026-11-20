@@ -534,7 +534,7 @@ export function ExpandablePillRow({
       <Pressable
         android_ripple={androidRipple(theme.rippleColor, true)}
         onPress={() => {
-          triggerHaptic(10);
+          triggerHaptic("selection");
           LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
           setExpanded((prev) => !prev);
         }}

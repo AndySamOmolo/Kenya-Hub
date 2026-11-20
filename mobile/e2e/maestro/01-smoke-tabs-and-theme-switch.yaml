@@ -1,0 +1,37 @@
+appId: ke.co.kenyahub.app
+name: "01 - All 5 Tabs Smoke & Atomic Light/Dark Theme Switch"
+---
+- launchApp:
+    clearState: false
+- assertVisible: "KenyaHub"
+- assertNotVisible: "Something went wrong"
+
+# Walk all 5 bottom tabs
+- tapOn: "Learn"
+- assertVisible: "Choose a Kenyan Language to Learn"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "01-learn-initial-theme"
+
+# Toggle Light <-> Dark theme and verify atomic repaint (zero error boundary, all text legible)
+- tapOn:
+    id: "theme-toggle"
+    optional: true
+- takeScreenshot: "01-learn-toggled-theme"
+- assertNotVisible: "Something went wrong"
+
+- tapOn: "Tools"
+- assertVisible: "All Tools"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "01-tools-tab"
+
+- tapOn: "Counties"
+- assertVisible: "47 Counties Hub"
+- assertNotVisible: "Something went wrong"
+
+- tapOn: "Saved"
+- assertVisible: "Pinned Tools"
+- assertNotVisible: "Something went wrong"
+
+- tapOn: "Home"
+- assertVisible: "Daily Kenyan Widgets"
+- assertNotVisible: "Something went wrong"

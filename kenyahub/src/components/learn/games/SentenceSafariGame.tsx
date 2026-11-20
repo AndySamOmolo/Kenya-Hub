@@ -58,9 +58,7 @@ export function SentenceSafariGame({
             .filter((c) => c.clean.length >= 3);
           if (candidates.length === 0) continue;
 
-          const seedHash =
-            Array.from(targetSent).reduce((acc, ch) => (acc * 31 + ch.charCodeAt(0)) | 0, sessionSeed + pool.length);
-          const chosen = candidates[Math.abs(seedHash) % candidates.length];
+          const chosen = candidates[Math.floor(Math.random() * candidates.length)];
           const maskedTokens = [...tokens];
           maskedTokens[chosen.idx] = "_____";
 

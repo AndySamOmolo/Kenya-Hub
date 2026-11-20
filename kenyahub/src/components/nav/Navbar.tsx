@@ -76,11 +76,10 @@ export default function Navbar() {
 
   useEffect(() => {
     if (searchOpen) {
-      const id = setTimeout(() => searchInputRef.current?.focus(), 50);
-      return () => clearTimeout(id);
+      setTimeout(() => searchInputRef.current?.focus(), 50);
+    } else {
+      setSearchQuery("");
     }
-    const id = setTimeout(() => setSearchQuery(""), 0);
-    return () => clearTimeout(id);
   }, [searchOpen]);
 
   useEffect(() => {
@@ -516,7 +515,8 @@ export default function Navbar() {
           aria-label="Site search"
         >
           <div
-            className="w-full max-w-xl max-h-[calc(100vh-5rem)] max-h-[calc(100dvh-5rem)] rounded-2xl border border-border bg-bg-card shadow-2xl overflow-hidden animate-fade-in-up flex flex-col"
+            className="relative z-[121] w-full max-w-xl max-h-[calc(100vh-5rem)] max-h-[calc(100dvh-5rem)] rounded-2xl border border-border bg-bg-card shadow-2xl overflow-hidden flex flex-col"
+            style={{ backgroundColor: "var(--bg-card)" }}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-3 border-b border-border bg-bg-elevated/60 shrink-0">

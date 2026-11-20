@@ -1,0 +1,33 @@
+appId: ke.co.kenyahub.app
+name: "04 - 47 Counties Hub, Matatu Routes & Saved Tools Pinning"
+---
+- launchApp
+
+# 1. 47 Counties Hub (Directory + Budgets + County Detail)
+- tapOn: "Counties"
+- assertVisible: "47 Counties Hub"
+- assertNotVisible: "Something went wrong"
+- tapOn: "Budgets (FY 25/26)"
+- assertVisible: "Absorbed"
+- tapOn: "Directory"
+- tapOn: "Mombasa County"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-county-mombasa"
+- back
+
+# 2. Matatu Routes from Home Quick Grid
+- tapOn: "Home"
+- tapOn: "Matatu"
+- assertVisible: "Matatu Routes"
+- assertNotVisible: "Something went wrong"
+- tapOn: "CBD – Karen"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-matatu-karen"
+- back
+- back
+
+# 3. Saved Tools Empty State & Pinning Flow
+- tapOn: "Saved"
+- assertVisible: "Pinned Tools"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-saved-tab"

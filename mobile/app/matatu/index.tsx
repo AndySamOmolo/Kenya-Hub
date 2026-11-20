@@ -173,7 +173,7 @@ const RouteCard = React.memo(function RouteCard({
 
 export default function MatatuScreen() {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme } = useTheme();
   const params = useLocalSearchParams<{ town?: string; q?: string }>();
   const [search, setSearch] = useState(params.q ?? "");
   const [selectedTown, setSelectedTown] = useState<string>(params.town || "all");

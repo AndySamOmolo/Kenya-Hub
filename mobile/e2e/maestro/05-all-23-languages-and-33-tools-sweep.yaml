@@ -1,0 +1,46 @@
+appId: ke.co.kenyahub.app
+name: "05 - Multi-Family Language Sweep, Tool Categories & Home Explainers"
+---
+- launchApp
+
+# 1. Verify Home Practical Explainers does not explode into a 60+ tag wall
+- scrollUntilVisible:
+    element: "Practical Explainers"
+    direction: DOWN
+- assertVisible: "Practical Explainers"
+- assertNotVisible: "Something went wrong"
+
+# 2. Test Cushitic (Somali) Lesson Player & Grammar/Wisdom tabs
+- tapOn: "Learn"
+- tapOn: "Cushitic"
+- tapOn: "Somali"
+- extendedWaitUntil:
+    visible: "Start Lesson"
+    timeout: 6000
+- tapOn: "Start Lesson"
+- assertNotVisible: "Something went wrong"
+- assertNotVisible: "Rendered fewer hooks"
+- back
+- tapOn: "Grammar"
+- assertNotVisible: "Something went wrong"
+- tapOn: "Wisdom"
+- assertNotVisible: "Something went wrong"
+- back
+
+# 3. Sweep Tool Categories & Flagship Calculators
+- tapOn: "Tools"
+- tapOn: "PAYE"
+- assertNotVisible: "Something went wrong"
+- back
+- scrollUntilVisible:
+    element: "Mjengo Cost Calculator"
+    direction: DOWN
+- tapOn: "Mjengo Cost Calculator"
+- assertNotVisible: "Something went wrong"
+- back
+- scrollUntilVisible:
+    element: "Small Claims Court"
+    direction: DOWN
+- tapOn: "Small Claims Court"
+- assertNotVisible: "Something went wrong"
+- back

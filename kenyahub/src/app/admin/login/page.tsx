@@ -15,40 +15,21 @@ export default function AdminLoginPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [lockedUntil, setLockedUntil] = useState<number>(0);
-  const [isLocked, setIsLocked] = useState<boolean>(false);
   const router = useRouter();
 
   useEffect(() => {
-    const syncLockout = () => {
-      try {
-        const raw = sessionStorage.getItem(LOCKOUT_KEY);
-        if (raw) {
-          const parsed = JSON.parse(raw);
-          if (parsed.lockedUntil && parsed.lockedUntil > Date.now()) {
-            setLockedUntil(parsed.lockedUntil);
-            setIsLocked(true);
-            return;
-          }
+    try {
+      const raw = sessionStorage.getItem(LOCKOUT_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed.lockedUntil && parsed.lockedUntil > Date.now()) {
+          setLockedUntil(parsed.lockedUntil);
         }
-      } catch {
-        /* ignore */
       }
-      setIsLocked(false);
-    };
-    const timer = setTimeout(syncLockout, 0);
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    if (!lockedUntil) return;
-    const remaining = lockedUntil - Date.now();
-    if (remaining <= 0) {
-      const id = setTimeout(() => setIsLocked(false), 0);
-      return () => clearTimeout(id);
+    } catch {
+      /* ignore */
     }
-    const id = setTimeout(() => setIsLocked(false), remaining);
-    return () => clearTimeout(id);
-  }, [lockedUntil]);
+  }, []);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -83,7 +64,6 @@ export default function AdminLoginPage() {
         );
         if (nextLock) {
           setLockedUntil(nextLock);
-          setIsLocked(true);
           setError("Too many failed attempts. Locked for 60 seconds.");
         } else {
           setError("Invalid credentials");
@@ -144,7 +124,7 @@ export default function AdminLoginPage() {
             )}
             <button
               type="submit"
-              disabled={loading || isLocked}
+              disabled={loading || lockedUntil > Date.now()}
               className="btn-primary w-full disabled:opacity-50"
             >
               {loading ? "Signing in..." : "Sign In"}

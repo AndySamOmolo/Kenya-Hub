@@ -83,11 +83,7 @@ export default function CustomSelect({
         setTimeout(() => filterInputRef.current?.focus(), 30);
       }
     } else {
-      const id = setTimeout(() => setFilterText(""), 0);
-      return () => {
-        clearTimeout(id);
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
+      setFilterText("");
     }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);

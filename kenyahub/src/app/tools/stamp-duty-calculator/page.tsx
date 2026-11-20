@@ -17,7 +17,7 @@ function calculateStampDuty(value: number, isUrban: boolean, isFirstTimeBuyer: b
 
 function calculateConveyancingFees(value: number) {
   let totalFee = 0;
-  const breakdown: { band: string; amount: number }[] = [];
+  let breakdown: { band: string; amount: number }[] = [];
   let remaining = value;
 
   for (const band of stampDutyData.conveyancingFees) {

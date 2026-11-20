@@ -1220,7 +1220,7 @@ export default function KenyanTranslatorPage() {
                           {dict.categories.length} topic categories
                         </span>
                         <span className="px-2 py-0.5 rounded-md bg-bg-elevated border border-border/50">
-                          {entryCount.toLocaleString()} verified entries
+                          {dict.entryCount.toLocaleString()} verified entries
                         </span>
                       </div>
                     </div>

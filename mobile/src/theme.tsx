@@ -471,6 +471,7 @@ export function AndroidTopAppBar({
         {rightAction}
         {showThemeToggle && (
           <Pressable
+            testID="theme-toggle"
             onPress={toggleTheme}
             accessibilityRole="button"
             accessibilityLabel={

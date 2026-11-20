@@ -183,25 +183,22 @@ export default function PAYECalculatorPage() {
   // Hydrate initial salary from URL hash (#gross=...) or legacy query parameters (?gross=...)
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const id = setTimeout(() => {
-      const rawParams = (window.location.hash || window.location.search).replace(/^[#?]/, "");
-      const params = new URLSearchParams(rawParams);
-      const grossParam = Number(params.get("gross"));
-      const netParam = Number(params.get("net"));
-      const pensionParam = Number(params.get("pension"));
-      if (Number.isFinite(grossParam) && grossParam > 0) {
-        setCalcMode("grossToNet");
-        setGrossInput(grossParam);
-      } else if (Number.isFinite(netParam) && netParam > 0) {
-        setCalcMode("netToGross");
-        setTargetNetInput(netParam);
-      }
-      if (Number.isFinite(pensionParam) && pensionParam > 0) {
-        setPensionContribution(pensionParam);
-        setShowAdvanced(true);
-      }
-    }, 0);
-    return () => clearTimeout(id);
+    const rawParams = (window.location.hash || window.location.search).replace(/^[#?]/, "");
+    const params = new URLSearchParams(rawParams);
+    const grossParam = Number(params.get("gross"));
+    const netParam = Number(params.get("net"));
+    const pensionParam = Number(params.get("pension"));
+    if (Number.isFinite(grossParam) && grossParam > 0) {
+      setCalcMode("grossToNet");
+      setGrossInput(grossParam);
+    } else if (Number.isFinite(netParam) && netParam > 0) {
+      setCalcMode("netToGross");
+      setTargetNetInput(netParam);
+    }
+    if (Number.isFinite(pensionParam) && pensionParam > 0) {
+      setPensionContribution(pensionParam);
+      setShowAdvanced(true);
+    }
   }, []);
 
   const results = useMemo(() => {

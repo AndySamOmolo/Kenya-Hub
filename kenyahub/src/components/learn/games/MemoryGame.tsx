@@ -97,12 +97,6 @@ export function MemoryGame({
     return cleanup;
   }, [initGame, pairCount]);
 
-  useEffect(() => {
-    if (!gameWon) return;
-    const id = setTimeout(() => setEndTime(Date.now()), 0);
-    return () => clearTimeout(id);
-  }, [gameWon]);
-
   if (allWords.length === 0) {
     return (
       <p className="py-12 text-center text-sm text-text-muted">
@@ -145,6 +139,7 @@ export function MemoryGame({
         if (newMatched.size === cards.length) {
           playCelebrationSfx();
           setGameWon(true);
+          setEndTime(Date.now());
           const baseXp = pairCount === 10 ? 40 : pairCount === 8 ? 30 : 25;
           onAwardXp?.(baseXp + nextBonusXp);
           onUpdateGameStats?.((prev) => ({

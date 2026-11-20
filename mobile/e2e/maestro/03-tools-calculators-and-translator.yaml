@@ -1,0 +1,44 @@
+appId: ke.co.kenyahub.app
+name: "03 - All Tools, Translator Overflow, KPLC, KCSE & M-Pesa"
+---
+- launchApp
+- tapOn: "Tools"
+- assertVisible: "All Tools"
+
+# Open 23-Language Translator & verify all 4 mode tabs are reachable without right-edge clipping
+- tapOn: "23-Language Translator"
+- assertVisible: "Translate"
+- assertVisible: "Browse"
+- assertVisible: "+ Word"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "03-android-translator"
+- back
+
+# Open M-Pesa Fee Calculator
+- tapOn: "M-Pesa Fee Calculator"
+- assertVisible: "M-PESA TRANSACTION FEE"
+- assertNotVisible: "Something went wrong"
+- back
+
+# Open KCSE Calculator & verify live Mean badge
+- scrollUntilVisible:
+    element: "KCSE Calculator"
+    direction: DOWN
+- tapOn: "KCSE Calculator"
+- assertVisible: "KCSE OVERALL MEAN GRADE"
+- scrollUntilVisible:
+    element: "Degree & Career Eligibility Check"
+    direction: DOWN
+- assertVisible: "Mean:"
+- assertNotVisible: "Something went wrong"
+- back
+
+# Open KPLC Token Calculator
+- scrollUntilVisible:
+    element: "Token Calculator"
+    direction: DOWN
+- tapOn: "Token Calculator"
+- assertVisible: "Amount to Purchase (KES)"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "03-android-kplc"
+- back

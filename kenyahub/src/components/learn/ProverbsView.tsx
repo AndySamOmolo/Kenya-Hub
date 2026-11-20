@@ -96,15 +96,13 @@ export default function ProverbsView({
   }, [selectedLang, luoSubTab, selectedCategory]);
 
   useEffect(() => {
-    if (!lockedLanguageId) return;
-    const id = setTimeout(() => {
+    if (lockedLanguageId) {
       setSelectedLang(lockedLanguageId);
       setSelectedCategory("All");
       setSearch("");
       setSpotlight(null);
       setPage(1);
-    }, 0);
-    return () => clearTimeout(id);
+    }
   }, [lockedLanguageId]);
 
   const activeLang = lockedLanguageId || selectedLang;

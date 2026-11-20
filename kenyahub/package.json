@@ -18,7 +18,9 @@
     "audit:tools:strict": "node scripts/audit-tools.mjs --strict",
     "deploy": "npm run build && npx wrangler pages deploy out --project-name kenyahub",
     "ingest:datasets": "node scripts/ingest-external-datasets.mjs",
-    "sync:r2-audio": "node scripts/sync-cloudflare-r2-audio.mjs"
+    "sync:r2-audio": "node scripts/sync-cloudflare-r2-audio.mjs",
+    "audit:e2e": "playwright test",
+    "audit:e2e:live": "BASE_URL=https://kenyahub.me playwright test"
   },
   "dependencies": {
     "appwrite": "^16.1.0",
@@ -39,6 +41,7 @@
     "node-appwrite": "^26.2.0",
     "tailwindcss": "^4",
     "tsx": "^4.19.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@playwright/test": "^1.52.0"
   }
 }

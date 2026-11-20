@@ -117,7 +117,7 @@ function SavedToolCard({
 
 export default function SavedScreen() {
   const router = useRouter();
-  const { theme, isDark } = useTheme();
+  const { theme } = useTheme();
   const [saved, setSaved] = useState<string[]>([]);
   const popular = getPopularTools(4);
 

@@ -1,20 +1,473 @@
 {
-  "generatedAt": "2026-11-19T19:55:06.984Z",
+  "generatedAt": "2026-11-20T10:13:11.865Z",
   "registryCount": 33,
   "routeCount": 33,
   "courseCount": 23,
+  "totalFaqs": 146,
+  "totalDictEntries": 208776,
+  "totalAudioLinked": 1715,
+  "checksPassed": 74,
+  "checksTotal": 74,
   "okCount": 33,
   "reviewCount": 0,
   "staleCount": 0,
   "errorCount": 0,
-  "issues": [],
+  "warningCount": 0,
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    {
+      "domain": "guides",
+      "name": "No misplaced top-level guides in tool-guides.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "guides",
+      "name": "etims-mpesa-reconciler has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "odpc-hr-retention-vault has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "eudr-coop-geojson-packager has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "icms-landed-cost-arbitrage has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "sha-claim-scrubber has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "ppra-egp-tender-serializer has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kjsea-pathway-engine has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "ardhisasa-cad-title-auditor has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "learn has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kenyan-translator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "paye-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "mpesa-fee-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "sacco-chama-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "helb-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "stamp-duty-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "cbc-curriculum has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kuccps-cluster-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kcse-grade-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kra-car-import-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "number-plate-decoder has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "traffic-fines has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "mjengo-construction-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kplc-token-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "water-bill-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "sha-benefit-estimator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "small-claims-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "ntsa-transfer-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "boma-yangu-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "rental-tax-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "landlord-tenant-rights has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "domestic-wage-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "airtime-drain-guide has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "mobile-number-prefix has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "license",
+      "name": "Zero CC-BY-NC / JW300 leakage across all 23 dictionaries",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/lib/tools-registry.ts synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/lib/learn-engine.ts synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/data/tool-guides.json synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/data/courses/catalog-summary.ts synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/data/blog-posts.ts synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "hooks",
+      "name": "LanguageCourseTool.tsx has zero hooks after early return",
+      "status": "pass",
+      "detail": "0 misplaced hooks"
+    },
+    {
+      "domain": "hooks",
+      "name": "learn-engine.ts exports isSingleWordLexical (Word Scramble & Wordle)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android",
+      "name": "Android Speed Match filters out 'none' distractors",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android",
+      "name": "Android Learn tracks lastVisitedLangId for Resume CTA",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "Navbar elevated z-[80] & Tools dropdown z-[90]",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "Navbar Command-K dialog sits above backdrop (z-[121])",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "Navbar search ranks title prefix ahead of description",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "CustomSelect uses opaque surface & skips touch keyboard auto-focus",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "ExpandablePillRow disables scroll mask & stagger fade when expanded",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "ScrollReset hides floating ↑ button in focus mode (Wordle / LessonPlayer)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "contrast",
+      "name": "ODPC warning banners use high-contrast Light/Dark text",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "Ardhisasa has no literal backticks in UTM label",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android-theme",
+      "name": "Mobile ThemeProvider syncs Appearance.setColorScheme",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android-theme",
+      "name": "Android bottom tab bar uses atomic theme tabBarBackground",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android-ux",
+      "name": "Matatu Routes not permanently pinned above Most used in All Tools",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android-ux",
+      "name": "Android KPLC Token Calculator has no duplicate preset row",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/app/matatu/page.tsx: Remove developer library name 'Leaflet'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/app/about/page.tsx: Use unified 208,776+ corpus count",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/data/tool-guides.json: Use 23-Language heading",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/data/tool-guides.json: Use KES 550 NTSA search fee",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/data/tool-guides.json: Use WRA Levy consistently",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/app/tools/airtime-drain-guide/page.tsx: Remove non-existent Dial Now instruction",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/app/tools/mobile-number-prefix/page.tsx: Use 'Calling Kenya from Abroad:'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "jsx",
+      "name": "All 33 Web tool pages have balanced <div> tags",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "Plate Decoder supports diplomatic CD/CC/UN plates",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "KPLC Token Calculator includes EPRA tariff selector",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "Water Bill Calculator includes county sewer toggle",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "PAYE Benchmark Table computes live rows via calculatePAYE",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "Small Claims Court removes leaked Passport/KIPI tables & handles >1M disposal",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "M-Pesa Calculator has single Transaction Type control",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "EUDR Packager syncs 7.08 ha default & checks >10% variance",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "PPRA e-GP uses MR1–MR11 & dynamic bidValidityDays",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "LanguageClientPage scopes vocab table out of Mini-Games & fixes 3rd column",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "datasets",
+      "name": "CI audio ingestion script sets trust_remote_code=True & maps mas_asr -> luhya",
+      "status": "pass",
+      "detail": ""
+    }
+  ],
   "tools": [
     {
       "slug": "etims-mpesa-reconciler",
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -29,7 +482,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.odpc.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -44,7 +497,7 @@
       "routeExists": true,
       "sourceUrl": "https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -59,7 +512,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -74,7 +527,7 @@
       "routeExists": true,
       "sourceUrl": "https://sha.go.ke/contracted-facilities",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -89,7 +542,7 @@
       "routeExists": true,
       "sourceUrl": "https://e-gp.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -104,7 +557,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.knec.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -119,7 +572,7 @@
       "routeExists": true,
       "sourceUrl": "https://ardhisasa.lands.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 0,
+      "ageDays": 1,
       "data": [
         {
           "file": "src/data/kenya-utility-tools-2026.json",
@@ -152,7 +605,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/paye-bands.json",
@@ -172,7 +625,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/mpesa-tariffs.json",
@@ -187,7 +640,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.sasra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/sacco-chama-rates.json",
@@ -207,7 +660,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.helb.co.ke/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/helb-rates.json",
@@ -222,7 +675,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/stamp-duty-rates.json",
@@ -242,7 +695,7 @@
       "routeExists": true,
       "sourceUrl": "https://kicd.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/cbc-curriculum.json",
@@ -267,7 +720,7 @@
       "routeExists": true,
       "sourceUrl": "https://students.kuccps.net/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/kuccps-clusters.json",
@@ -282,7 +735,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.knec.ac.ke/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/kcse-rankings.json",
@@ -297,7 +750,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/kra-car-import-crsp.json",
@@ -322,7 +775,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/number-plate-prefixes.json",
@@ -337,7 +790,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/traffic-fines.json",
@@ -352,7 +805,7 @@
       "routeExists": true,
       "sourceUrl": "https://nca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 49,
+      "ageDays": 50,
       "data": [
         {
           "file": "src/data/mjengo-construction-rates.json",
@@ -367,7 +820,7 @@
       "routeExists": true,
       "sourceUrl": "https://kplc.co.ke/faq/tariff",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/kplc-tariff.json",
@@ -387,7 +840,7 @@
       "routeExists": true,
       "sourceUrl": "https://wasreb.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/water-tariffs.json",
@@ -402,7 +855,7 @@
       "routeExists": true,
       "sourceUrl": "https://sha.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/sha-benefit-data.json",
@@ -427,7 +880,7 @@
       "routeExists": true,
       "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/small-claims-data.json",
@@ -442,7 +895,7 @@
       "routeExists": true,
       "sourceUrl": "https://ntsa.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/ntsa-transfer-data.json",
@@ -462,7 +915,7 @@
       "routeExists": true,
       "sourceUrl": "https://bomayangu.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/boma-yangu-data.json",
@@ -482,7 +935,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kra.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/rental-tax-data.json",
@@ -497,7 +950,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/tenant-rights-data.json",
@@ -512,7 +965,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.labour.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/domestic-wage-data.json",
@@ -527,7 +980,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 29,
+      "ageDays": 30,
       "data": [
         {
           "file": "src/data/airtime-drain-data.json",
@@ -542,7 +995,7 @@
       "routeExists": true,
       "sourceUrl": "https://www.ca.go.ke/",
       "maxAgeDays": 365,
-      "ageDays": 30,
+      "ageDays": 31,
       "data": [
         {
           "file": "src/data/mobile-prefixes.json",
@@ -556,209 +1009,140 @@
   "courses": [
     {
       "languageId": "swahili",
-      "courseFile": "src/data/courses/swahili/course.ts",
-      "grammarFile": "src/data/courses/swahili/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/swahili.ts",
-      "dictionaryFile": "src/data/dictionaries/swahili.json",
       "dictionaryEntries": 53226,
+      "audioLinked": 414,
       "status": "ok"
     },
     {
       "languageId": "kikuyu",
-      "courseFile": "src/data/courses/kikuyu/course.ts",
-      "grammarFile": "src/data/courses/kikuyu/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/kikuyu.ts",
-      "dictionaryFile": "src/data/dictionaries/kikuyu.json",
       "dictionaryEntries": 22224,
+      "audioLinked": 253,
       "status": "ok"
     },
     {
       "languageId": "luo",
-      "courseFile": "src/data/courses/luo/course.ts",
-      "grammarFile": "src/data/courses/luo/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/luo.ts",
-      "dictionaryFile": "src/data/dictionaries/luo.json",
       "dictionaryEntries": 14853,
+      "audioLinked": 257,
       "status": "ok"
     },
     {
       "languageId": "luhya",
-      "courseFile": "src/data/courses/luhya/course.ts",
-      "grammarFile": "src/data/courses/luhya/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/luhya.ts",
-      "dictionaryFile": "src/data/dictionaries/luhya.json",
       "dictionaryEntries": 6957,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "kamba",
-      "courseFile": "src/data/courses/kamba/course.ts",
-      "grammarFile": "src/data/courses/kamba/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/kamba.ts",
-      "dictionaryFile": "src/data/dictionaries/kamba.json",
       "dictionaryEntries": 10086,
+      "audioLinked": 250,
       "status": "ok"
     },
     {
       "languageId": "kalenjin",
-      "courseFile": "src/data/courses/kalenjin/course.ts",
-      "grammarFile": "src/data/courses/kalenjin/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/kalenjin.ts",
-      "dictionaryFile": "src/data/dictionaries/kalenjin.json",
       "dictionaryEntries": 8034,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "kisii",
-      "courseFile": "src/data/courses/kisii/course.ts",
-      "grammarFile": "src/data/courses/kisii/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/kisii.ts",
-      "dictionaryFile": "src/data/dictionaries/kisii.json",
       "dictionaryEntries": 1551,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "meru",
-      "courseFile": "src/data/courses/meru/course.ts",
-      "grammarFile": "src/data/courses/meru/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/meru.ts",
-      "dictionaryFile": "src/data/dictionaries/meru.json",
       "dictionaryEntries": 4294,
+      "audioLinked": 248,
       "status": "ok"
     },
     {
       "languageId": "somali",
-      "courseFile": "src/data/courses/somali/course.ts",
-      "grammarFile": "src/data/courses/somali/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/somali.ts",
-      "dictionaryFile": "src/data/dictionaries/somali.json",
       "dictionaryEntries": 13609,
+      "audioLinked": 293,
       "status": "ok"
     },
     {
       "languageId": "maasai",
-      "courseFile": "src/data/courses/maasai/course.ts",
-      "grammarFile": "src/data/courses/maasai/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/maasai.ts",
-      "dictionaryFile": "src/data/dictionaries/maasai.json",
       "dictionaryEntries": 4805,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "turkana",
-      "courseFile": "src/data/courses/turkana/course.ts",
-      "grammarFile": "src/data/courses/turkana/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/turkana.ts",
-      "dictionaryFile": "src/data/dictionaries/turkana.json",
       "dictionaryEntries": 3231,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "mijikenda",
-      "courseFile": "src/data/courses/mijikenda/course.ts",
-      "grammarFile": "src/data/courses/mijikenda/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/mijikenda.ts",
-      "dictionaryFile": "src/data/dictionaries/mijikenda.json",
       "dictionaryEntries": 17078,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "teso",
-      "courseFile": "src/data/courses/teso/course.ts",
-      "grammarFile": "src/data/courses/teso/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/teso.ts",
-      "dictionaryFile": "src/data/dictionaries/teso.json",
       "dictionaryEntries": 734,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "embu",
-      "courseFile": "src/data/courses/embu/course.ts",
-      "grammarFile": "src/data/courses/embu/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/embu.ts",
-      "dictionaryFile": "src/data/dictionaries/embu.json",
       "dictionaryEntries": 890,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "taita",
-      "courseFile": "src/data/courses/taita/course.ts",
-      "grammarFile": "src/data/courses/taita/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/taita.ts",
-      "dictionaryFile": "src/data/dictionaries/taita.json",
       "dictionaryEntries": 7571,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "taveta",
-      "courseFile": "src/data/courses/taveta/course.ts",
-      "grammarFile": "src/data/courses/taveta/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/taveta.ts",
-      "dictionaryFile": "src/data/dictionaries/taveta.json",
       "dictionaryEntries": 667,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "pokomo",
-      "courseFile": "src/data/courses/pokomo/course.ts",
-      "grammarFile": "src/data/courses/pokomo/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/pokomo.ts",
-      "dictionaryFile": "src/data/dictionaries/pokomo.json",
       "dictionaryEntries": 3070,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "borana",
-      "courseFile": "src/data/courses/borana/course.ts",
-      "grammarFile": "src/data/courses/borana/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/borana.ts",
-      "dictionaryFile": "src/data/dictionaries/borana.json",
       "dictionaryEntries": 27531,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "rendille",
-      "courseFile": "src/data/courses/rendille/course.ts",
-      "grammarFile": "src/data/courses/rendille/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/rendille.ts",
-      "dictionaryFile": "src/data/dictionaries/rendille.json",
       "dictionaryEntries": 296,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "samburu",
-      "courseFile": "src/data/courses/samburu/course.ts",
-      "grammarFile": "src/data/courses/samburu/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/samburu.ts",
-      "dictionaryFile": "src/data/dictionaries/samburu.json",
       "dictionaryEntries": 828,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "ilchamus",
-      "courseFile": "src/data/courses/ilchamus/course.ts",
-      "grammarFile": "src/data/courses/ilchamus/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/ilchamus.ts",
-      "dictionaryFile": "src/data/dictionaries/ilchamus.json",
       "dictionaryEntries": 776,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "pokot",
-      "courseFile": "src/data/courses/pokot/course.ts",
-      "grammarFile": "src/data/courses/pokot/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/pokot.ts",
-      "dictionaryFile": "src/data/dictionaries/pokot.json",
       "dictionaryEntries": 5627,
+      "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "daasanach",
-      "courseFile": "src/data/courses/daasanach/course.ts",
-      "grammarFile": "src/data/courses/daasanach/grammar-reference.ts",
-      "proverbsFile": "src/data/courses/proverbs/daasanach.ts",
-      "dictionaryFile": "src/data/dictionaries/daasanach.json",
       "dictionaryEntries": 838,
+      "audioLinked": 0,
       "status": "ok"
     }
   ]
