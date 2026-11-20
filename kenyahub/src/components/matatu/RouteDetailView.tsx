@@ -109,41 +109,38 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8 space-y-8">
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-3 pb-6 sm:py-8 space-y-4 sm:space-y-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Site-wide ChevronRight Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted flex-wrap">
-        <Link href="/" className="hover:text-gold transition-colors">Home</Link>
+      {/* Site-wide ChevronRight Breadcrumb (Single-Line Scrollable on Mobile) */}
+      <nav aria-label="Breadcrumb" className="flex flex-nowrap items-center gap-1.5 overflow-x-auto no-scrollbar whitespace-nowrap text-[11px] sm:text-xs text-text-muted micro-badge">
+        <Link href="/" className="hover:text-gold transition-colors shrink-0">Home</Link>
         <ChevronRight className="w-3.5 h-3.5 text-border-light shrink-0" />
-        <Link href="/matatu/" className="hover:text-gold transition-colors">Matatu Routes</Link>
+        <Link href="/matatu/" className="hover:text-gold transition-colors shrink-0">Matatu Routes</Link>
         <ChevronRight className="w-3.5 h-3.5 text-border-light shrink-0" />
-        <Link href={`/matatu/${townSlug}/`} className="hover:text-gold transition-colors capitalize">{townInfo.name}</Link>
+        <Link href={`/matatu/${townSlug}/`} className="hover:text-gold transition-colors capitalize shrink-0">{townInfo.name}</Link>
         <ChevronRight className="w-3.5 h-3.5 text-border-light shrink-0" />
-        <span className="text-text-secondary">Route {route.routeNumber}</span>
+        <span className="text-text-secondary font-medium shrink-0">Route {route.routeNumber}</span>
       </nav>
 
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-bg-card border border-border rounded-2xl p-6 sm:p-8">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 bg-bg-card border border-border rounded-2xl p-3.5 sm:p-7">
         <div>
-          <div className="flex items-center gap-3 mb-2">
-            <span className="px-3 py-1 bg-gold/15 text-gold border border-gold/30 rounded-lg text-sm font-black font-[family-name:var(--font-outfit)]">
-              Route {route.routeNumber}
-            </span>
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1.5">
             {route.verified && (
-              <span className="text-xs bg-kenya-green/15 text-kenya-green-light px-2.5 py-0.5 rounded-full font-semibold inline-flex items-center gap-1">
-                <DynamicIcon emoji="✓" className="w-3 h-3" /> Verified Route
+              <span className="text-[11px] sm:text-xs bg-kenya-green/15 text-kenya-green-light px-2 py-0.5 rounded-full font-semibold inline-flex items-center gap-1 micro-badge">
+                <DynamicIcon emoji="✓" className="w-3 h-3" /> Verified
               </span>
             )}
-            <span className="text-xs bg-bg-elevated border border-border text-text-secondary px-2.5 py-0.5 rounded-full font-medium">
+            <span className="text-[11px] sm:text-xs bg-bg-elevated border border-border text-text-secondary px-2 py-0.5 rounded-full font-medium micro-badge">
               ~{totalCorridorKm} km · {estOffPeakMins}–{estPeakMins} mins
             </span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-text-primary font-[family-name:var(--font-outfit)] mb-1">
-            {route.name} ({townInfo.name} Route {route.routeNumber})
+          <h1 className="text-lg sm:text-3xl font-extrabold text-text-primary font-[family-name:var(--font-outfit)] leading-snug mb-1">
+            {townInfo.name} Route {route.routeNumber}: {route.name}
           </h1>
           <p className="text-xs sm:text-sm text-text-secondary max-w-2xl leading-relaxed mt-1">
             Commuter guide for {townInfo.name} Matatu Route {route.routeNumber} connecting{" "}
@@ -184,23 +181,23 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
             <MatatuMap stages={route.stages} routeName={route.name} routeNumber={route.routeNumber} activeStageOrder={activeStageOrder} onSelectStage={setActiveStageOrder} />
           </div>
 
-          {/* Route Overview Cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-              <p className="text-[0.65rem] text-text-muted">Start Terminus</p>
-              <p className="text-xs font-bold text-kenya-green-light mt-1 break-words">{route.terminusA}</p>
+          {/* Compact Route Overview Cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
+            <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5 text-center">
+              <p className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted truncate compact-label">Start Terminus</p>
+              <p className="text-xs sm:text-sm font-bold text-kenya-green-light mt-0.5 break-words">{route.terminusA}</p>
             </div>
-            <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-              <p className="text-[0.65rem] text-text-muted">Destination</p>
-              <p className="text-xs font-bold text-kenya-red-light mt-1 break-words">{route.terminusB}</p>
+            <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5 text-center">
+              <p className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted truncate compact-label">Destination</p>
+              <p className="text-xs sm:text-sm font-bold text-kenya-red-light mt-0.5 break-words">{route.terminusB}</p>
             </div>
-            <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-              <p className="text-[0.65rem] text-text-muted">Operator SACCO</p>
-              <p className="text-xs font-bold text-gold mt-1 break-words">{route.saccoName}</p>
+            <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5 text-center">
+              <p className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted truncate compact-label">Operator SACCO</p>
+              <p className="text-xs sm:text-sm font-bold text-gold mt-0.5 break-words">{route.saccoName}</p>
             </div>
-            <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-              <p className="text-[0.65rem] text-text-muted">Corridor Distance</p>
-              <p className="text-xs font-bold text-text-primary mt-1 break-words">~{totalCorridorKm} km ({estOffPeakMins}–{estPeakMins}m)</p>
+            <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5 text-center">
+              <p className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted truncate compact-label">Distance</p>
+              <p className="text-xs sm:text-sm font-bold tabular-nums text-text-primary mt-0.5 break-words">~{totalCorridorKm} km ({estOffPeakMins}–{estPeakMins}m)</p>
             </div>
           </div>
 

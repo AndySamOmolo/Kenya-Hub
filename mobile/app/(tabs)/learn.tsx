@@ -42,15 +42,11 @@ export default function LearnTabScreen() {
     >
       <KenyaStripe />
       <AndroidTopAppBar
-        title={
-          navState.inCourse
-            ? `Learn ${navState.courseName}`
-            : "Learn Kenyan Languages"
-        }
+        title={navState.inCourse ? navState.courseName : "Learn Hub"}
         subtitle={
           navState.inCourse
-            ? "TAP BACK FOR ALL 23 LANGUAGES"
-            : "23 LANGUAGES · COURSES · PROVERBS"
+            ? "Tap back for all courses"
+            : "Kenyan Languages & Proverbs"
         }
         onBack={navState.inCourse ? navState.backToMenu : undefined}
       />
@@ -100,7 +96,7 @@ export default function LearnTabScreen() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1 },
-  content: { padding: 14, paddingBottom: 96 },
+  content: { paddingHorizontal: 12, paddingTop: 8, paddingBottom: 92 },
   fabTopBtn: {
     position: "absolute",
     bottom: 18,

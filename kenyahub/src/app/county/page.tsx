@@ -234,7 +234,7 @@ export default function CountyIndexPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-7 pb-10 sm:py-12">
+    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-3 pb-8 sm:py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -248,60 +248,57 @@ export default function CountyIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-8">
-        <Link href="/" className="hover:text-gold transition-colors">Home</Link>
-        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+      {/* Breadcrumbs (Single-Line Scrollable on Mobile) */}
+      <nav aria-label="Breadcrumb" className="flex flex-nowrap items-center gap-1.5 overflow-x-auto no-scrollbar whitespace-nowrap text-[11px] sm:text-xs text-text-muted mb-2 sm:mb-5 micro-badge">
+        <Link href="/" className="hover:text-gold transition-colors shrink-0">Home</Link>
+        <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        <span className="text-text-secondary">47 Counties Hub</span>
+        <span className="text-text-secondary font-medium shrink-0">47 Counties Hub</span>
       </nav>
 
       {/* Header */}
-      <header className="mb-8 max-w-4xl">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold text-xs font-semibold mb-3">
-          <DynamicIcon emoji="🏛️" className="w-3.5 h-3.5" /> Unified 47 Counties Intelligence Hub
-        </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-[2.5rem] font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-tight tracking-tight mb-3">
+      <header className="mb-3 sm:mb-6 max-w-4xl">
+        <h1 className="text-xl sm:text-3xl lg:text-[2.5rem] font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug sm:leading-tight tracking-tight mb-1 sm:mb-2.5">
           Kenya 47 County Governments Hub
         </h1>
-        <p className="text-text-secondary text-sm sm:text-base leading-relaxed">
+        <p className="text-text-secondary text-xs sm:text-base leading-relaxed line-clamp-2 sm:line-clamp-none">
           All county data consolidated in one place — explore Governors, Senators, Woman Representatives,{" "}
           <strong>290 Constituencies</strong>, <strong>FY 2025/26 Controller of Budget Allocations</strong>,{" "}
           <strong>Monthly Rainfall &amp; Climate Zones</strong>, SHA Hospitals, Postal Codes, and side-by-side county comparisons.
         </p>
       </header>
 
-      {/* National Summary Bar */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
-        <div className="bg-bg-card border border-border rounded-xl p-4">
-          <p className="text-[0.65rem] text-text-muted uppercase tracking-wider font-semibold">Devolved Units</p>
-          <p className="text-xl font-bold font-[family-name:var(--font-outfit)] text-gold mt-0.5">47 Counties</p>
-          <p className="text-[0.6875rem] text-text-muted mt-0.5">290 Constituencies · 1,450 Wards</p>
+      {/* Compact National Summary KPI Bar */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mb-3.5 sm:mb-6">
+        <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5">
+          <p className="text-[10px] sm:text-xs text-text-muted uppercase tracking-wider font-semibold truncate compact-label">Devolved Units</p>
+          <p className="text-sm sm:text-xl font-extrabold tabular-nums font-[family-name:var(--font-outfit)] text-gold mt-0.5">47 Counties</p>
+          <p className="hidden sm:block text-[0.6875rem] text-text-muted mt-0.5 truncate">290 Constituencies · 1,450 Wards</p>
         </div>
-        <div className="bg-bg-card border border-border rounded-xl p-4">
-          <p className="text-[0.65rem] text-text-muted uppercase tracking-wider font-semibold">National Population</p>
-          <p className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mt-0.5">47.56M</p>
-          <p className="text-[0.6875rem] text-text-muted mt-0.5">KNBS 2019 Census Baseline</p>
+        <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5">
+          <p className="text-[10px] sm:text-xs text-text-muted uppercase tracking-wider font-semibold truncate compact-label">Population</p>
+          <p className="text-sm sm:text-xl font-extrabold tabular-nums font-[family-name:var(--font-outfit)] text-text-primary mt-0.5">47.56M</p>
+          <p className="hidden sm:block text-[0.6875rem] text-text-muted mt-0.5 truncate">KNBS 2019 Census Baseline</p>
         </div>
-        <div className="bg-bg-card border border-border rounded-xl p-4">
-          <p className="text-[0.65rem] text-text-muted uppercase tracking-wider font-semibold">FY 2025/26 Equitable Share</p>
-          <p className="text-xl font-bold font-[family-name:var(--font-outfit)] text-kenya-green-light mt-0.5">
+        <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5">
+          <p className="text-[10px] sm:text-xs text-text-muted uppercase tracking-wider font-semibold truncate compact-label">Equitable Share</p>
+          <p className="text-sm sm:text-xl font-extrabold tabular-nums font-[family-name:var(--font-outfit)] text-kenya-green-light mt-0.5">
             KES {(nationalTotals.totalAlloc / 1000).toFixed(1)}B
           </p>
-          <p className="text-[0.6875rem] text-text-muted mt-0.5">+ KES {(nationalTotals.totalOsr / 1000).toFixed(1)}B Own-Source Rev</p>
+          <p className="hidden sm:block text-[0.6875rem] text-text-muted mt-0.5 truncate">+ KES {(nationalTotals.totalOsr / 1000).toFixed(1)}B Own-Source Rev</p>
         </div>
-        <div className="bg-bg-card border border-border rounded-xl p-4">
-          <p className="text-[0.65rem] text-text-muted uppercase tracking-wider font-semibold">Avg Budget Absorption</p>
-          <p className="text-xl font-bold font-[family-name:var(--font-outfit)] text-sky-light mt-0.5">
+        <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5">
+          <p className="text-[10px] sm:text-xs text-text-muted uppercase tracking-wider font-semibold truncate compact-label">Avg Absorption</p>
+          <p className="text-sm sm:text-xl font-extrabold tabular-nums font-[family-name:var(--font-outfit)] text-sky-light mt-0.5">
             {nationalTotals.avgAbs}%
           </p>
-          <p className="text-[0.6875rem] text-text-muted mt-0.5">Controller of Budget Report</p>
+          <p className="hidden sm:block text-[0.6875rem] text-text-muted mt-0.5 truncate">Controller of Budget Report</p>
         </div>
       </div>
 
       {/* Consolidated Hub Mode Tabs (Standalone Horizontal Pills) */}
-      <ExpandablePillRow className="mb-5">
+      <ExpandablePillRow className="mb-3 sm:mb-5">
         {([
           { id: "directory", label: "Counties" },
           { id: "budgets", label: "Budgets" },
@@ -314,7 +311,7 @@ export default function CountyIndexPage() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-4 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
                 active
                   ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                   : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -328,14 +325,14 @@ export default function CountyIndexPage() {
 
       {/* Shared Search & Filter Bar (for Directory, Budgets, Constituencies, Climate) */}
       {activeTab !== "compare" && (
-        <div className="flex flex-col lg:flex-row gap-3 items-stretch lg:items-center justify-between mb-6">
+        <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 items-stretch lg:items-center justify-between mb-3 sm:mb-6">
           <div className="flex-1 max-w-xl">
             <SearchInput
               type="text"
               placeholder="Search county, HQ, or code..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="input-field w-full text-sm"
+              className="input-field w-full !h-9 sm:!h-11 text-sm"
               id="county-search"
               onClear={() => setSearch("")}
             />

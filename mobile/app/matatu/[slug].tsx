@@ -98,8 +98,8 @@ export default function MatatuRouteScreen() {
       <KenyaStripe />
 
       <AndroidTopAppBar
-        title={`Route ${route.routeNumber}: ${route.name}`}
-        subtitle={`${townName} · ${route.saccoName || "Matatu SACCO"}`}
+        title={`Route ${route.routeNumber}`}
+        subtitle={townName}
         onBack={() => router.back()}
         rightAction={
           <Pressable
@@ -622,44 +622,44 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    padding: 16,
-    paddingBottom: 40,
+    padding: 12,
+    paddingBottom: 32,
   },
   heroCard: {
-    borderRadius: 20,
+    borderRadius: 14,
     borderWidth: 1,
     overflow: "hidden",
-    marginBottom: 20,
+    marginBottom: 12,
   },
   heroInner: {
-    padding: 18,
+    padding: 12,
   },
   heroHeader: {
     flexDirection: "row",
     alignItems: "center",
   },
   busIconBox: {
-    minWidth: 50,
-    height: 50,
+    minWidth: 42,
+    height: 42,
     paddingHorizontal: 8,
-    borderRadius: 14,
+    borderRadius: 12,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
   heading: {
-    fontSize: 20,
+    fontSize: 17,
     fontFamily: "Outfit_800ExtraBold",
   },
   saccoHeading: {
     fontFamily: "Inter_400Regular",
-    fontSize: 13,
+    fontSize: 12.5,
     marginTop: 2,
   },
   fareStrip: {
     flexDirection: "row",
-    marginTop: 16,
-    paddingTop: 16,
+    marginTop: 10,
+    paddingTop: 10,
     borderTopWidth: 1,
     alignItems: "center",
   },

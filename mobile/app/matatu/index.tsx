@@ -502,10 +502,10 @@ export default function MatatuScreen() {
                 backgroundColor: theme.surfaceContainer,
                 borderColor: theme.outlineVariant,
                 borderWidth: 1,
-                borderRadius: 16,
-                padding: 12,
-                marginBottom: 12,
-                gap: 8,
+                borderRadius: 14,
+                padding: 10,
+                marginBottom: 8,
+                gap: 6,
               }}
             >
               <Text style={{ fontSize: 11.5, fontFamily: "Outfit_800ExtraBold", color: theme.gold, letterSpacing: 0.5 }}>
@@ -524,7 +524,7 @@ export default function MatatuScreen() {
                     borderColor: theme.outlineVariant,
                     borderRadius: 10,
                     paddingHorizontal: 10,
-                    height: 38,
+                    height: 36,
                     fontSize: 12.5,
                     color: theme.textPrimary,
                   }}
@@ -541,7 +541,7 @@ export default function MatatuScreen() {
                     borderColor: theme.outlineVariant,
                     borderRadius: 10,
                     paddingHorizontal: 10,
-                    height: 38,
+                    height: 36,
                     fontSize: 12.5,
                     color: theme.textPrimary,
                   }}
@@ -558,7 +558,7 @@ export default function MatatuScreen() {
                   style={pressableStyle({
                     flex: 1,
                     backgroundColor: theme.gold,
-                    paddingVertical: 9,
+                    paddingVertical: 7,
                     borderRadius: 10,
                     alignItems: "center",
                     flexDirection: "row",
@@ -645,9 +645,14 @@ export default function MatatuScreen() {
               </ExpandablePillRow>
             )}
 
-            <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
-              Showing {filteredRoutes.length} of {allRoutes.length} routes
-            </Text>
+            {(search.trim().length > 0 ||
+              selectedTown !== "all" ||
+              saccoFilter !== "all" ||
+              Boolean(journeyQuery)) && (
+              <Text style={[styles.resultsCount, { color: theme.textMuted }]}>
+                Showing {filteredRoutes.length} of {allRoutes.length} routes
+              </Text>
+            )}
           </>
         }
         ListEmptyComponent={
@@ -715,18 +720,18 @@ const styles = StyleSheet.create({
   },
   header: {
     borderBottomWidth: StyleSheet.hairlineWidth,
-    paddingHorizontal: 16,
-    paddingTop: 10,
-    paddingBottom: 12,
+    paddingHorizontal: 14,
+    paddingTop: 6,
+    paddingBottom: 8,
   },
   searchBar: {
     flexDirection: "row",
     alignItems: "center",
     borderWidth: 1,
-    borderRadius: 24,
-    paddingHorizontal: 14,
-    height: 44,
-    marginBottom: 12,
+    borderRadius: 19,
+    paddingHorizontal: 12,
+    height: 38,
+    marginBottom: 8,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchInput: {
@@ -765,12 +770,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginTop: 10,
+    marginTop: 6,
     gap: 10,
   },
   content: {
-    padding: 16,
-    paddingBottom: 32,
+    paddingHorizontal: 14,
+    paddingTop: 10,
+    paddingBottom: 28,
   },
   resultsCount: {
     fontFamily: "Inter_500Medium",

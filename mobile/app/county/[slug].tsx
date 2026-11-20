@@ -416,7 +416,7 @@ export default function CountyDetailScreen() {
           borderBottomWidth: StyleSheet.hairlineWidth,
           borderBottomColor: theme.outlineVariant,
           paddingHorizontal: 14,
-          paddingVertical: 8,
+          paddingVertical: 6,
         }}
       >
         <ExpandablePillRow
@@ -470,7 +470,7 @@ export default function CountyDetailScreen() {
         keyboardShouldPersistTaps="handled"
         overScrollMode="always"
       >
-        {/* Hero Card */}
+        {/* Compact County KPI Strip */}
         <View
           style={[
             styles.heroCard,
@@ -478,52 +478,21 @@ export default function CountyDetailScreen() {
           ]}
         >
           <View style={styles.heroBody}>
-            <View style={styles.heroRow}>
-              <View
-                style={[
-                  styles.heroBadge,
-                  {
-                    backgroundColor: `${theme.gold}20`,
-                    borderColor: `${theme.gold}40`,
-                  },
-                ]}
+            {countyRainfall && (
+              <Text
+                style={{
+                  fontSize: 11,
+                  color: theme.sky,
+                  marginBottom: 8,
+                  fontFamily: "Inter_600SemiBold",
+                }}
               >
-                <Text style={[styles.heroBadgeText, { color: theme.gold }]}>
-                  {codeFormatted}
-                </Text>
-              </View>
-              <View style={{ flex: 1, marginLeft: 14 }}>
-                <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>
-                  {county.name} County
-                </Text>
-                <Text
-                  style={[styles.heroSubtitle, { color: theme.textSecondary }]}
-                >
-                  Headquarters:{" "}
-                  <Text
-                    style={{ color: theme.gold, fontFamily: "Outfit_700Bold" }}
-                  >
-                    {county.capital}
-                  </Text>
-                </Text>
-                {countyRainfall && (
-                  <Text
-                    style={{
-                      fontSize: 11,
-                      color: theme.sky,
-                      marginTop: 2,
-                      fontFamily: "Inter_600SemiBold",
-                    }}
-                  >
-                    {countyRainfall.climateZone} ·{" "}
-                    {computedAnnualRainfall} mm/yr
-                  </Text>
-                )}
-              </View>
-            </View>
+                {countyRainfall.climateZone} · {computedAnnualRainfall} mm/yr
+              </Text>
+            )}
 
-            {/* Quick Stats Grid */}
-            <View style={[styles.statsGrid, { borderTopColor: theme.border }]}>
+            {/* Compact Quick Stats Strip */}
+            <View style={styles.statsGrid}>
               <View
                 style={[
                   styles.statBox,
@@ -533,15 +502,22 @@ export default function CountyDetailScreen() {
                   },
                 ]}
               >
-                <Ionicons name="people" size={18} color={theme.sky} />
                 <Text
-                  style={[styles.statBoxValue, { color: theme.textPrimary }]}
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.75}
+                  style={[styles.statBoxLabel, { color: theme.textMuted }]}
+                >
+                  POPULATION
+                </Text>
+                <Text
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.8}
+                  style={[styles.statBoxValue, { color: theme.sky }]}
                 >
                   {county.population.toLocaleString()}
                 </Text>
-                <Text style={[styles.statBoxLabel, { color: theme.textMuted }]}>
-                  Population
-                </Text>
               </View>
               <View
                 style={[
@@ -552,19 +528,22 @@ export default function CountyDetailScreen() {
                   },
                 ]}
               >
-                <Ionicons
-                  name="map"
-                  size={18}
-                  color={theme.kenyaGreenLight}
-                />
                 <Text
-                  style={[styles.statBoxValue, { color: theme.textPrimary }]}
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.75}
+                  style={[styles.statBoxLabel, { color: theme.textMuted }]}
+                >
+                  LAND AREA
+                </Text>
+                <Text
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.8}
+                  style={[styles.statBoxValue, { color: theme.kenyaGreenLight }]}
                 >
                   {county.area.toLocaleString()} km²
                 </Text>
-                <Text style={[styles.statBoxLabel, { color: theme.textMuted }]}>
-                  Land Area
-                </Text>
               </View>
               <View
                 style={[
@@ -575,14 +554,21 @@ export default function CountyDetailScreen() {
                   },
                 ]}
               >
-                <Ionicons name="analytics" size={18} color={theme.gold} />
                 <Text
-                  style={[styles.statBoxValue, { color: theme.textPrimary }]}
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.75}
+                  style={[styles.statBoxLabel, { color: theme.textMuted }]}
                 >
-                  {density} / km²
+                  DENSITY
                 </Text>
-                <Text style={[styles.statBoxLabel, { color: theme.textMuted }]}>
-                  Density
+                <Text
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.8}
+                  style={[styles.statBoxValue, { color: theme.gold }]}
+                >
+                  {density}/km²
                 </Text>
               </View>
             </View>
@@ -1526,16 +1512,16 @@ const styles = StyleSheet.create({
     fontFamily: "Outfit_800ExtraBold",
   },
   content: {
-    padding: 16,
-    paddingBottom: 40,
+    padding: 12,
+    paddingBottom: 36,
   },
   heroCard: {
-    borderRadius: 18,
+    borderRadius: 14,
     borderWidth: 1,
     overflow: "hidden",
-    marginBottom: 16,
+    marginBottom: 10,
   },
-  heroBody: { padding: 18 },
+  heroBody: { padding: 10 },
   heroRow: { flexDirection: "row", alignItems: "center" },
   heroBadge: {
     width: 52,
@@ -1556,25 +1542,28 @@ const styles = StyleSheet.create({
   heroSubtitle: { fontSize: 13, marginTop: 2 },
   statsGrid: {
     flexDirection: "row",
-    marginTop: 16,
-    paddingTop: 16,
-    borderTopWidth: 1,
-    gap: 8,
+    gap: 6,
   },
   statBox: {
     flex: 1,
-    borderRadius: 12,
-    padding: 10,
+    borderRadius: 10,
+    paddingVertical: 7,
+    paddingHorizontal: 6,
     alignItems: "center",
+    justifyContent: "center",
     borderWidth: 1,
   },
   statBoxValue: {
-    fontSize: 13,
-    fontFamily: "Outfit_700Bold",
-    marginTop: 6,
+    fontSize: 14,
+    fontFamily: "Outfit_800ExtraBold",
+    marginTop: 2,
     textAlign: "center",
   },
-  statBoxLabel: { fontSize: 10, marginTop: 2 },
+  statBoxLabel: {
+    fontSize: 9.5,
+    fontFamily: "Outfit_700Bold",
+    letterSpacing: 0.3,
+  },
   sectionHeading: {
     fontSize: 13,
     fontFamily: "Outfit_800ExtraBold",

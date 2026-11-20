@@ -18,7 +18,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather, Ionicons } from '@expo/vector-icons';
 import { playVerifiedAudio, hasVerifiedAudio } from '../lib/mobile-audio';
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
-import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getGrammarSectionsLazy, getPlaceholderCourse } from './language-course/courseLoader';
+import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getGrammarSectionsLazy, getPlaceholderCourse, getCanonicalCourseCounts, buildDictUnit } from './language-course/courseLoader';
 import { getLanguageIdentity } from '../shared/data/language-identity';
 import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared/data/language-sources';
 import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
@@ -54,6 +54,7 @@ import {
   type MainTab,
   type LessonStage,
   type ActiveGame,
+  isExtraGame,
   STORAGE_KEY_V2,
   STORAGE_KEY_V1,
   HEART_REFILL_MS,
@@ -62,6 +63,7 @@ import {
   renderFormattedText,
 } from "./language-course/types";
 import { styles } from "./language-course/styles";
+import ExtraMiniGames from "./language-course/ExtraMiniGames";
 
 export interface CourseNavigationState {
   inCourse: boolean;
@@ -313,47 +315,37 @@ export default function LanguageCourseTool({
     };
   }, [selectedLangId, showLanguageMenu, activeTab]);
 
-  const dictSkills: CourseSkill[] = useMemo(() => {
-    if (!loadedDict) return [];
-    const seen = new Set<string>();
-    (currentCourse?.units || []).forEach((u) =>
-      u.skills.forEach((s) =>
-        s.words.forEach((w) => seen.add(`${w.target.toLowerCase()}::${w.source.toLowerCase()}`))
-      )
-    );
-    return loadedDict.categories
-      .map((cat) => {
-        const words: WordPair[] = [];
-        for (const e of cat.entries) {
-          const t = e.translation.trim();
-          const s = e.english.trim();
-          if (!t || !s) continue;
-          const k = `${t.toLowerCase()}::${s.toLowerCase()}`;
-          if (seen.has(k)) continue;
-          words.push({
-            target: t,
-            source: s,
-            pronunciation: e.pronunciation || undefined,
-            example: e.context || undefined,
-            audioFile: e.audioFile || undefined,
-          });
-        }
-        return {
-          id: `dict-cat-${cat.id}`,
-          title: `Dictionary: ${cat.name}`,
-          icon: cat.icon || '📖',
-          description: `${words.length.toLocaleString()} verified ${loadedDict.languageName} dictionary entries in ${cat.name}.`,
-          words,
-          sentences: [],
-        } as CourseSkill;
-      })
-      .filter((sk) => sk.words.length > 0);
-  }, [loadedDict, currentCourse]);
+  const dictUnit: CourseUnit | null = useMemo(
+    () => buildDictUnit(selectedLangId, currentCourse?.units || [], loadedDict),
+    [selectedLangId, currentCourse, loadedDict]
+  );
+
+  const dictSkills: CourseSkill[] = useMemo(
+    () => dictUnit?.skills || [],
+    [dictUnit]
+  );
+
+  const combinedUnits: CourseUnit[] = useMemo(() => {
+    if (!currentCourse) return [];
+    return dictUnit ? [...currentCourse.units, dictUnit] : currentCourse.units;
+  }, [currentCourse, dictUnit]);
 
   const allSkills = useMemo(
-    () => [...(currentCourse?.units.flatMap((u) => u.skills) || []), ...dictSkills],
-    [currentCourse, dictSkills]
+    () => combinedUnits.flatMap((u) => u.skills),
+    [combinedUnits]
   );
+
+  const activeCourseCounts = useMemo(() => {
+    const summary = PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === selectedLangId);
+    if (summary) return getCanonicalCourseCounts(summary);
+    return {
+      totalUnits: combinedUnits.length,
+      totalSkills: allSkills.length,
+      totalWords: currentCourse?.wordCount || 0,
+      dictCategoryCount: dictSkills.length,
+      dictTotalEntries: 0,
+    };
+  }, [selectedLangId, combinedUnits.length, allSkills.length, currentCourse?.wordCount, dictSkills.length]);
   const allSkillIds = useMemo(() => allSkills.map((s) => s.id), [allSkills]);
 
   useEffect(() => {
@@ -489,6 +481,32 @@ export default function LanguageCourseTool({
   // ── Start a Skill Lesson (Stage 1: Learn First -> Stage 2: 15 Exercises) ──
   const startSkillLesson = useCallback(
     (skill: CourseSkill, skipLearn = false) => {
+      if (skill.id.startsWith('dict-cat-') && skill.words.length === 0) {
+        const catId = skill.id.replace('dict-cat-', '');
+        loadDictionary(selectedLangId).then((dict) => {
+          if (!dict) return;
+          setLoadedDict(dict);
+          const cat = dict.categories.find((c) => c.id === catId);
+          if (!cat || !cat.entries.length) return;
+          const hydratedWords: WordPair[] = [];
+          for (const e of cat.entries) {
+            const t = e.translation.trim();
+            const s = e.english.trim();
+            if (!t || !s) continue;
+            hydratedWords.push({
+              target: t,
+              source: s,
+              pronunciation: e.pronunciation || undefined,
+              example: e.context || undefined,
+              audioFile: e.audioFile || undefined,
+            });
+          }
+          if (hydratedWords.length > 0) {
+            startSkillLesson({ ...skill, words: hydratedWords }, skipLearn);
+          }
+        }).catch(() => {});
+        return;
+      }
       setActiveSkillId(skill.id);
       setLearnCardIdx(0);
       setShowTipsPanel(false);
@@ -2041,26 +2059,26 @@ export default function LanguageCourseTool({
           </View>
 
           {/* 3-Column Learner Summary */}
-          <View style={{ flexDirection: 'row', gap: 8 }}>
+          <View style={{ flexDirection: 'row', gap: 7 }}>
             <View
               style={{
                 flex: 1,
                 backgroundColor: colors.surfaceContainerHigh,
                 borderRadius: 12,
-                paddingVertical: 9,
-                paddingHorizontal: 8,
+                paddingVertical: 8,
+                paddingHorizontal: 6,
                 alignItems: 'center',
                 borderWidth: 1,
                 borderColor: colors.outlineVariant,
               }}
             >
-              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                <Feather name="zap" size={13} color={colors.gold} />
-                <Text style={{ fontSize: 15, fontWeight: '800', color: colors.gold }}>
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
+                <Feather name="zap" size={12} color={colors.gold} />
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 14.5, fontWeight: '800', color: colors.gold }}>
                   {overallMenuStats.totalXp}
                 </Text>
               </View>
-              <Text style={{ fontSize: 10.5, color: colors.textMuted, marginTop: 2, fontWeight: '600' }}>
+              <Text numberOfLines={1} style={{ fontSize: 10, color: colors.textMuted, marginTop: 2, fontWeight: '700' }}>
                 Total XP
               </Text>
             </View>
@@ -2070,20 +2088,20 @@ export default function LanguageCourseTool({
                 flex: 1,
                 backgroundColor: colors.surfaceContainerHigh,
                 borderRadius: 12,
-                paddingVertical: 9,
-                paddingHorizontal: 8,
+                paddingVertical: 8,
+                paddingHorizontal: 6,
                 alignItems: 'center',
                 borderWidth: 1,
                 borderColor: colors.outlineVariant,
               }}
             >
-              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                <Feather name="trending-up" size={13} color="#F59E0B" />
-                <Text style={{ fontSize: 15, fontWeight: '800', color: '#F59E0B' }}>
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
+                <Feather name="trending-up" size={12} color="#F59E0B" />
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 14.5, fontWeight: '800', color: '#F59E0B' }}>
                   {overallMenuStats.bestStreak}d
                 </Text>
               </View>
-              <Text style={{ fontSize: 10.5, color: colors.textMuted, marginTop: 2, fontWeight: '600' }}>
+              <Text numberOfLines={1} style={{ fontSize: 10, color: colors.textMuted, marginTop: 2, fontWeight: '700' }}>
                 Best Streak
               </Text>
             </View>
@@ -2093,20 +2111,20 @@ export default function LanguageCourseTool({
                 flex: 1,
                 backgroundColor: colors.surfaceContainerHigh,
                 borderRadius: 12,
-                paddingVertical: 9,
-                paddingHorizontal: 8,
+                paddingVertical: 8,
+                paddingHorizontal: 6,
                 alignItems: 'center',
                 borderWidth: 1,
                 borderColor: colors.outlineVariant,
               }}
             >
-              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-                <Feather name="award" size={13} color="#10B981" />
-                <Text style={{ fontSize: 15, fontWeight: '800', color: '#10B981' }}>
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
+                <Feather name="award" size={12} color="#10B981" />
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 14.5, fontWeight: '800', color: '#10B981' }}>
                   {overallMenuStats.totalWords}
                 </Text>
               </View>
-              <Text style={{ fontSize: 10.5, color: colors.textMuted, marginTop: 2, fontWeight: '600' }}>
+              <Text numberOfLines={1} style={{ fontSize: 10, color: colors.textMuted, marginTop: 2, fontWeight: '700' }}>
                 Words Learned
               </Text>
             </View>
@@ -2204,8 +2222,10 @@ export default function LanguageCourseTool({
           {filteredMenuCourses.map((course) => {
             const { config } = course;
             const iden = getLanguageIdentity(config.id);
-            const skillsCount = course.skillCount;
-            const wordsCount = course.wordsCount;
+            const canonical = getCanonicalCourseCounts(course);
+            const unitsCount = canonical.totalUnits;
+            const skillsCount = canonical.totalSkills;
+            const wordsCount = canonical.totalWords;
             const courseProg = allProgress[config.id];
             const courseXp = courseProg?.totalXP || 0;
             const completedSkillsCount = courseProg
@@ -2322,7 +2342,7 @@ export default function LanguageCourseTool({
                   >
                     <Feather name="book-open" size={11} color="#10B981" />
                     <Text style={{ fontSize: 11, fontWeight: '700', color: '#10B981' }}>
-                      {course.unitCount} units · {skillsCount} modules · {wordsCount} words
+                      {unitsCount} units · {skillsCount} modules · {wordsCount.toLocaleString()} words
                     </Text>
                   </View>
 
@@ -2491,7 +2511,11 @@ export default function LanguageCourseTool({
           </View>
 
           <View style={styles.statsRightPills}>
-            <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh, flexDirection: "row", alignItems: "center", gap: 4 }]}>
+            <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh, flexDirection: "row", alignItems: "center", gap: 3 }]}>
+              <Ionicons name="heart" size={12} color="#EF4444" />
+              <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>{progress.hearts}</Text>
+            </View>
+            <View style={[styles.miniStatPill, { backgroundColor: colors.surfaceContainerHigh, flexDirection: "row", alignItems: "center", gap: 3 }]}>
               <Feather name="zap" size={12} color="#F59E0B" />
               <Text style={{ fontSize: 12, color: colors.text, fontWeight: "700" }}>{progress.streak}d</Text>
             </View>
@@ -2631,7 +2655,7 @@ export default function LanguageCourseTool({
               </Text>
               <Text style={[styles.courseInfoMeta, { color: langColor }]}>
                 {currentCourse.config.family} • {currentCourse.config.speakers} speakers •{' '}
-                {currentCourse.units.length} units
+                {activeCourseCounts.totalUnits} units • {activeCourseCounts.totalSkills} modules • {activeCourseCounts.totalWords.toLocaleString()} words
               </Text>
             </View>
 
@@ -2728,9 +2752,9 @@ export default function LanguageCourseTool({
               <Pressable
                 android_ripple={ripple}
                 onPress={() => {
-                  const allOpen = currentCourse.units.every((u) => expandedUnitIds[u.id]);
+                  const allOpen = combinedUnits.every((u) => expandedUnitIds[u.id]);
                   const next: Record<string, boolean> = {};
-                  currentCourse.units.forEach((u) => {
+                  combinedUnits.forEach((u) => {
                     next[u.id] = !allOpen;
                   });
                   setExpandedUnitIds(next);
@@ -2745,7 +2769,7 @@ export default function LanguageCourseTool({
               >
                 <Feather
                   name={
-                    currentCourse.units.every((u) => expandedUnitIds[u.id])
+                    combinedUnits.every((u) => expandedUnitIds[u.id])
                       ? 'minimize-2'
                       : 'maximize-2'
                   }
@@ -2753,7 +2777,7 @@ export default function LanguageCourseTool({
                   color={colors.textSecondary}
                 />
                 <Text style={{ fontSize: 11, fontWeight: '700', color: colors.textSecondary }}>
-                  {currentCourse.units.every((u) => expandedUnitIds[u.id])
+                  {combinedUnits.every((u) => expandedUnitIds[u.id])
                     ? 'Collapse'
                     : 'Expand All'}
                 </Text>
@@ -2794,7 +2818,7 @@ export default function LanguageCourseTool({
               </Pressable>
             </View>
           </View>
-          {currentCourse.units.map((unit: CourseUnit, uIdx: number) => {
+          {combinedUnits.map((unit: CourseUnit, uIdx: number) => {
             const isExpanded = !!expandedUnitIds[unit.id];
             const completedInUnit = unit.skills.filter(
               (s) => (progress.skills[s.id]?.level || 0) >= 1
@@ -2848,14 +2872,27 @@ export default function LanguageCourseTool({
                       for (const [k, v] of Object.entries(progress.skills)) {
                         skillLevelsMap[k] = v.level;
                       }
-                      const unlocked = isSkillUnlocked(
-                        skill.id,
-                        sIdx,
-                        uIdx,
-                        skillLevelsMap,
-                        currentCourse.units,
-                        Boolean(progress.unlockAll)
-                      );
+                      const unlocked =
+                        skill.id.startsWith('dict-cat-') ||
+                        isSkillUnlocked(
+                          skill.id,
+                          sIdx,
+                          uIdx,
+                          skillLevelsMap,
+                          combinedUnits,
+                          Boolean(progress.unlockAll)
+                        );
+                      const dictCatMeta = skill.id.startsWith('dict-cat-')
+                        ? DICT_META_MAP[selectedLangId]?.categories.find(
+                            (c) => `dict-cat-${c.id}` === skill.id
+                          )
+                        : undefined;
+                      const skillCountDisplay =
+                        skill.words.length > 0
+                          ? `${skill.words.length.toLocaleString()} words`
+                          : dictCatMeta
+                          ? `${dictCatMeta.count.toLocaleString()} entries`
+                          : '0 words';
 
                       return (
                         <View
@@ -2911,7 +2948,7 @@ export default function LanguageCourseTool({
 
                           <View style={styles.skillNodeFooter}>
                             <Text style={{ fontSize: 11, color: colors.textMuted }}>
-                              {skill.words.length} words •{' '}
+                              {skillCountDisplay} •{' '}
                               {sp?.bestAccuracy ? `Best ${sp.bestAccuracy}%` : 'New'}
                             </Text>
 
@@ -3371,23 +3408,67 @@ export default function LanguageCourseTool({
       )}
 
       {/* ========================================================================
-          TAB 3: GAMES HUB (4 MINI-GAMES: SCRAMBLE, SPEED MATCH, MEMORY, WORDLE)
+          TAB 3: GAMES HUB (14 MINI-GAMES — 100% WEB PARITY)
          ======================================================================== */}
       {activeTab === 'games' && (
         <View style={styles.gamesTabWrap}>
           {activeGame === 'menu' && (
             <View style={styles.gamesMenuGrid}>
+              <View
+                style={{
+                  backgroundColor: colors.surfaceContainerLow,
+                  borderColor: colors.outlineVariant,
+                  borderWidth: 1,
+                  borderRadius: 16,
+                  padding: 13,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: 10,
+                }}
+              >
+                <View style={{ flex: 1 }}>
+                  <Text style={{ fontSize: 15, fontWeight: '800', color: colors.text }}>
+                    {currentCourse?.config.name} Arcade
+                  </Text>
+                  <Text style={{ fontSize: 11.5, color: colors.textSecondary, marginTop: 2 }}>
+                    Practice orthography, proverbs, grammar, and Kenyan culture for bonus XP.
+                  </Text>
+                </View>
+                <View
+                  style={{
+                    paddingHorizontal: 10,
+                    paddingVertical: 5,
+                    borderRadius: 999,
+                    backgroundColor: `${langColor}20`,
+                    borderWidth: 1,
+                    borderColor: `${langColor}45`,
+                  }}
+                >
+                  <Text style={{ fontSize: 11, fontWeight: '800', color: langColor }}>
+                    14 Mini-Games
+                  </Text>
+                </View>
+              </View>
+
               {[
                 {
+                  id: 'wordle' as ActiveGame,
+                  title: `${currentCourse?.config.name} Wordle`,
+                  desc: 'Guess the hidden word in 6 tries with color-coded letter hints.',
+                  icon: 'hash' as const,
+                  onStart: startWordleGame,
+                },
+                {
                   id: 'scramble' as ActiveGame,
-                  title: 'Word Scramble',
+                  title: 'Word Scramble Sprint',
                   desc: 'Unscramble letters to spell the target language word.',
                   icon: 'shuffle' as const,
                   onStart: startScrambleRound,
                 },
                 {
                   id: 'speed' as ActiveGame,
-                  title: 'Speed Match',
+                  title: 'Speed Match Blitz',
                   desc: 'Rapid-fire vocabulary translation challenge.',
                   icon: 'zap' as const,
                   onStart: startSpeedRound,
@@ -3400,13 +3481,6 @@ export default function LanguageCourseTool({
                   onStart: startMemoryGame,
                 },
                 {
-                  id: 'wordle' as ActiveGame,
-                  title: `${currentCourse?.config.name} Wordle`,
-                  desc: 'Guess the hidden word in 6 tries with color-coded letter hints.',
-                  icon: 'hash' as const,
-                  onStart: startWordleGame,
-                },
-                {
                   id: 'riddles' as ActiveGame,
                   title: 'Riddle Master',
                   desc: 'Solve authentic oral literature riddles and proverbs.',
@@ -3415,10 +3489,58 @@ export default function LanguageCourseTool({
                 },
                 {
                   id: 'vocabQuiz' as ActiveGame,
-                  title: 'Vocabulary Blitz',
+                  title: '3-Heart Survival Blitz',
                   desc: 'Rapid target word identification without leaked clues.',
                   icon: 'target' as const,
                   onStart: startVocabQuizRound,
+                },
+                {
+                  id: 'methali' as ActiveGame,
+                  title: 'Methali & Ngero Builder',
+                  desc: 'Reconstruct traditional proverbs from tiles or finish the second half.',
+                  icon: 'book-open' as const,
+                },
+                {
+                  id: 'safari' as ActiveGame,
+                  title: 'Sentence Safari (Cloze)',
+                  desc: 'Fill in the missing word inside contextual sentences.',
+                  icon: 'compass' as const,
+                },
+                {
+                  id: 'nounClass' as ActiveGame,
+                  title: 'Grammar & Class Sorter',
+                  desc: 'Sort nouns and verbs into Bantu, Nilotic, or Cushitic classes.',
+                  icon: 'layers' as const,
+                },
+                {
+                  id: 'oddWord' as ActiveGame,
+                  title: 'Semantic Odd-Word-Out',
+                  desc: 'Spot which 1 of the 4 words belongs to a different category.',
+                  icon: 'search' as const,
+                },
+                {
+                  id: 'polyglot' as ActiveGame,
+                  title: 'Kenyan Polyglot Bridge',
+                  desc: 'Compare shared roots and sound shifts across Kenya’s 23 languages.',
+                  icon: 'globe' as const,
+                },
+                {
+                  id: 'twister' as ActiveGame,
+                  title: 'Kikokotoo Tongue Twisters',
+                  desc: 'Assemble and speed-read alliterating Kenyan tongue twisters.',
+                  icon: 'mic' as const,
+                },
+                {
+                  id: 'counties' as ActiveGame,
+                  title: '47 Counties & Homelands',
+                  desc: 'Match Kenya’s 23 languages to their indigenous counties and families.',
+                  icon: 'map-pin' as const,
+                },
+                {
+                  id: 'sheng' as ActiveGame,
+                  title: 'Sokoni & Matatu Dialogue',
+                  desc: 'Respond in everyday market, matatu stage, and homestead scenes.',
+                  icon: 'message-square' as const,
                 },
               ].map((g) => (
                 <Pressable
@@ -3427,7 +3549,7 @@ export default function LanguageCourseTool({
                   onPress={() => {
                     setGameScore(0);
                     setGameRound(1);
-                    g.onStart();
+                    g.onStart?.();
                     setActiveGame(g.id);
                   }}
                   style={[
@@ -3439,7 +3561,7 @@ export default function LanguageCourseTool({
                   ]}
                 >
                   <View style={[styles.gameIconBox, { backgroundColor: `${langColor}22` }]}>
-                    <Feather name={g.icon} size={20} color={langColor} />
+                    <Feather name={g.icon} size={19} color={langColor} />
                   </View>
                   <View style={{ flex: 1 }}>
                     <Text style={[styles.gameCardTitle, { color: colors.text }]}>{g.title}</Text>
@@ -3451,6 +3573,21 @@ export default function LanguageCourseTool({
                 </Pressable>
               ))}
             </View>
+          )}
+
+          {/* GAMES 7–14: EXTRA MINI-GAMES (WEB PARITY) */}
+          {isExtraGame(activeGame) && (
+            <ExtraMiniGames
+              activeGame={activeGame}
+              languageId={selectedLangId}
+              languageName={currentCourse?.config.name || 'Kenyan'}
+              langColor={langColor}
+              allWords={allCourseWords}
+              courseUnits={currentCourse?.units || []}
+              allUnits={combinedUnits}
+              awardGameXP={awardGameXP}
+              onBack={() => setActiveGame('menu')}
+            />
           )}
 
           {/* GAME 1: WORD SCRAMBLE */}
@@ -3594,6 +3731,7 @@ export default function LanguageCourseTool({
           )}
 
           {activeGame !== 'menu' &&
+            !isExtraGame(activeGame) &&
             ((activeGame === 'scramble' && !scrambleWord) ||
               (activeGame === 'speed' && !speedQuestion) ||
               (activeGame === 'memory' && memoryCards.length === 0) ||

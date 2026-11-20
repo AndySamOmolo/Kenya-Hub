@@ -109,111 +109,109 @@ export default function SkillTree({
 
   return (
     <div className="mx-auto max-w-3xl px-0 sm:px-2 pb-8">
-      {/* ─── Sleek Compact Progress Bar (Collapsible on Mobile) ─── */}
-      <div className="mb-4">
-        <div className="rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-3.5 sm:p-5 shadow-xs transition-all">
-          {/* Always-visible compact overview row */}
-          <div className="flex items-center justify-between gap-3 flex-wrap">
-            <div className="flex items-center gap-2.5 min-w-0">
-              <span className="text-xl shrink-0">{levelInfo.current.icon}</span>
-              <div className="min-w-0">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-xs sm:text-sm font-bold text-text-primary">
-                    Lv.{levelInfo.current.level} {levelInfo.current.title.split("•")[0].trim()}
-                  </span>
-                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[0.6875rem] font-bold bg-gold/15 text-gold border border-gold/30">
-                    {progress.xp} XP
-                  </span>
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[0.6875rem] font-bold bg-red-500/15 text-red-400 border border-red-500/30">
-                    <Heart className="w-3 h-3 fill-red-400" /> {progress.hearts}/5
-                    {nextHeartMin > 0 ? ` (${nextHeartMin}m)` : ""}
-                  </span>
-                  {progress.streakFreezes > 0 && (
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[0.6875rem] font-bold bg-sky-500/15 text-sky-400 border border-sky-500/30">
-                      <Shield className="w-3 h-3" /> {progress.streakFreezes} Shield
-                    </span>
-                  )}
-                </div>
-                <div className="flex items-center gap-2 text-[0.6875rem] sm:text-xs text-text-muted mt-0.5 flex-wrap">
-                  <span>{completedSkills}/{totalSkills} Modules</span>
-                  <span>·</span>
-                  <span className="text-text-secondary">{progress.wordsLearned.length} Words</span>
-                  <span>·</span>
-                  <span className={progress.streak > 0 ? "text-orange-400 font-semibold" : "text-text-muted"}>
-                    {progress.streak}d Streak
-                  </span>
-                </div>
-              </div>
+      {/* ─── Sleek Compact Progress Strip (1–2 lines on Mobile) ─── */}
+      <div className="mb-2.5 sm:mb-4">
+        <div className="rounded-xl sm:rounded-2xl border border-border bg-gradient-to-br from-bg-card to-bg-elevated p-2.5 sm:p-3.5 shadow-xs transition-all">
+          {/* Row 1: Rank + XP + Hearts + Inline Quests & Badges toggle */}
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2 min-w-0 flex-wrap">
+              <span className="text-base sm:text-lg shrink-0">{levelInfo.current.icon}</span>
+              <span className="text-xs sm:text-sm font-bold text-text-primary whitespace-nowrap">
+                Lv.{levelInfo.current.level} {levelInfo.current.title.split("•")[0].trim()}
+              </span>
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-gold/15 text-gold border border-gold/30 tabular-nums micro-badge">
+                {progress.xp} XP
+              </span>
+              <span className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full text-[11px] font-bold bg-red-500/15 text-red-400 border border-red-500/30 tabular-nums micro-badge">
+                <Heart className="w-2.5 h-2.5 fill-red-400" /> {progress.hearts}/5
+                {nextHeartMin > 0 ? ` (${nextHeartMin}m)` : ""}
+              </span>
+              {progress.streakFreezes > 0 && (
+                <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[11px] font-bold bg-sky-500/15 text-sky-400 border border-sky-500/30 micro-badge">
+                  <Shield className="w-2.5 h-2.5" /> {progress.streakFreezes}
+                </span>
+              )}
             </div>
 
-            <div className="flex items-center gap-1.5 shrink-0">
-              {dueReviewCount > 0 && (
-                <button
-                  onClick={onStartReview}
-                  className="flex items-center gap-1 rounded-xl bg-gold/15 border border-gold/40 px-2.5 py-1 text-xs font-semibold text-gold hover:bg-gold/25 transition-colors cursor-pointer"
-                >
-                  <Sparkles className="h-3 w-3" />
-                  <span>Review ({dueReviewCount})</span>
-                </button>
-              )}
-              <button
-                type="button"
-                onClick={() => setShowDashboard(!showDashboard)}
-                className="flex items-center gap-1 px-3 py-1.5 rounded-xl border border-border bg-bg-elevated hover:bg-border/60 text-xs font-semibold text-text-secondary hover:text-text-primary transition-all cursor-pointer"
-              >
-                <span>{showDashboard ? "Hide Stats ▴" : "Quests & Badges ▾"}</span>
-              </button>
+            <button
+              type="button"
+              onClick={() => setShowDashboard(!showDashboard)}
+              className="shrink-0 whitespace-nowrap flex items-center gap-1 px-2.5 py-1 rounded-lg border border-border bg-bg-elevated hover:bg-border/60 text-[11px] sm:text-xs font-semibold text-text-secondary hover:text-text-primary transition-all cursor-pointer micro-badge"
+            >
+              <span>{showDashboard ? "Hide ▴" : "Quests & Badges ▾"}</span>
+            </button>
+          </div>
+
+          {/* Row 2: Compact secondary progress line + Review CTA */}
+          <div className="mt-1.5 flex items-center justify-between gap-2 text-[11px] sm:text-xs text-text-muted micro-badge">
+            <div className="flex items-center gap-1.5 truncate">
+              <span className="tabular-nums">{completedSkills}/{totalSkills} Modules</span>
+              <span>·</span>
+              <span className="text-text-secondary tabular-nums">{progress.wordsLearned.length} Words</span>
+              <span>·</span>
+              <span className={progress.streak > 0 ? "text-orange-400 font-semibold tabular-nums" : "text-text-muted tabular-nums"}>
+                {progress.streak}d Streak
+              </span>
             </div>
+            {dueReviewCount > 0 && (
+              <button
+                onClick={onStartReview}
+                className="shrink-0 flex items-center gap-1 rounded-lg bg-gold/15 border border-gold/40 px-2 py-0.5 text-[11px] font-semibold text-gold hover:bg-gold/25 transition-colors cursor-pointer micro-badge"
+              >
+                <Sparkles className="h-3 w-3" />
+                <span>Review ({dueReviewCount})</span>
+              </button>
+            )}
           </div>
 
           {/* Expanded detailed statistics */}
           {showDashboard && (
-            <div className="mt-4 pt-4 border-t border-border/50 animate-in fade-in duration-200">
-              {/* Responsive 2x2 on Mobile / 4-col on Desktop Stats Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+            <div className="mt-3 pt-3 border-t border-border/50 animate-in fade-in duration-200">
+              {/* Compact 2x2 on Mobile / 4-col on Desktop Stats Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
                 {/* 1. Total XP */}
-                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-3 flex flex-col justify-between">
-                  <span className="text-xs font-medium text-text-muted">Total XP</span>
-                  <div className="mt-1 flex items-center gap-1.5 text-lg sm:text-xl font-bold text-gold">
-                    <DynamicIcon emoji={levelInfo.current.icon} className="w-5 h-5 shrink-0" />
+                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 flex flex-col justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-text-muted truncate compact-label">Total XP</span>
+                  <div className="mt-0.5 flex items-center gap-1 text-sm sm:text-xl font-extrabold tabular-nums text-gold">
+                    <DynamicIcon emoji={levelInfo.current.icon} className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
                     <span>{progress.xp}</span>
                   </div>
-                  <span className="text-xs text-text-secondary mt-0.5 truncate">
+                  <span className="text-[10px] sm:text-xs text-text-secondary mt-0.5 truncate compact-label">
                     Lv.{levelInfo.current.level} {levelInfo.current.title}
                   </span>
                 </div>
 
                 {/* 2. Modules Completed */}
-                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-3 flex flex-col justify-between">
-                  <span className="text-xs font-medium text-text-muted">Modules</span>
-                  <div className="mt-1 text-lg sm:text-xl font-bold text-text-primary">
+                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 flex flex-col justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-text-muted truncate compact-label">Modules</span>
+                  <div className="mt-0.5 text-sm sm:text-xl font-extrabold tabular-nums text-text-primary">
                     {completedSkills}
-                    <span className="text-sm font-normal text-text-muted">/{totalSkills}</span>
+                    <span className="text-xs sm:text-sm font-normal text-text-muted">/{totalSkills}</span>
                   </div>
-                  <span className="text-xs text-kenya-green-light mt-0.5">
+                  <span className="text-[10px] sm:text-xs text-kenya-green-light mt-0.5 truncate compact-label">
                     {masteredSkills > 0 ? `${masteredSkills} Mastered ★` : "Guided Path"}
                   </span>
                 </div>
 
                 {/* 3. Words Learned */}
-                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-3 flex flex-col justify-between">
-                  <span className="text-xs font-medium text-text-muted">Vocabulary</span>
-                  <div className="mt-1 text-lg sm:text-xl font-bold text-text-primary">
+                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 flex flex-col justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-text-muted truncate compact-label">Vocabulary</span>
+                  <div className="mt-0.5 text-sm sm:text-xl font-extrabold tabular-nums text-text-primary">
                     {progress.wordsLearned.length}
                   </div>
-                  <span className="text-xs text-text-secondary mt-0.5">
+                  <span className="text-[10px] sm:text-xs text-text-secondary mt-0.5 truncate compact-label">
                     Words Practiced
                   </span>
                 </div>
 
                 {/* 4. Day Streak */}
-                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-3 flex flex-col justify-between">
-                  <span className="text-xs font-medium text-text-muted">Day Streak</span>
-                  <div className="mt-1 flex items-center gap-1.5 text-lg sm:text-xl font-bold text-orange-400">
-                    <Flame className="h-5 w-5 shrink-0" />
+                <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 flex flex-col justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-text-muted truncate compact-label">Day Streak</span>
+                  <div className="mt-0.5 flex items-center gap-1 text-sm sm:text-xl font-extrabold tabular-nums text-orange-400">
+                    <Flame className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
                     <span>{progress.streak}</span>
                   </div>
-                  <span className="text-xs text-text-secondary mt-0.5">
+                  <span className="text-[10px] sm:text-xs text-text-secondary mt-0.5 truncate compact-label">
                     {progress.streakFreezes > 0
                       ? `${progress.streakFreezes} Shield Active`
                       : progress.streak > 0
@@ -440,16 +438,16 @@ export default function SkillTree({
         )}
       </div>
 
-      {/* ─── Quick Unit Jump Pills + Controls ──────────────────────── */}
-      <div className="mb-4 space-y-3">
-        <div className="flex flex-wrap items-center justify-between gap-2 px-1">
-          <span className="text-xs sm:text-sm font-semibold text-text-secondary">
-            {units.length} Units · {totalSkills} Skill Modules
+      {/* ─── Compact Unit Controls & Jump Bar ──────────────────────── */}
+      <div className="mb-3 space-y-2">
+        <div className="flex items-center justify-between gap-2 px-0.5">
+          <span className="text-xs font-semibold text-text-secondary whitespace-nowrap">
+            {units.length} Units
           </span>
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex items-center gap-1.5">
             <button
               onClick={onToggleUnlockAll}
-              className={`inline-flex items-center gap-1.5 rounded-xl border px-3 py-2 min-h-[36px] text-xs font-semibold transition-colors cursor-pointer ${
+              className={`inline-flex items-center gap-1 rounded-lg sm:rounded-xl border px-2.5 py-1 sm:px-3 sm:py-1.5 min-h-[30px] sm:min-h-[34px] text-[11px] sm:text-xs font-semibold transition-colors cursor-pointer micro-badge ${
                 isAllUnlocked
                   ? "border-gold/50 bg-gold/15 text-gold"
                   : "border-border bg-bg-card text-text-secondary hover:border-gold/40 hover:text-text-primary"
@@ -462,29 +460,29 @@ export default function SkillTree({
             >
               {isAllUnlocked ? (
                 <>
-                  <Unlock className="h-3.5 w-3.5 text-gold" />
-                  <span>All Unlocked (Free Jump)</span>
+                  <Unlock className="h-3 w-3 text-gold" />
+                  <span>Unlocked</span>
                 </>
               ) : (
                 <>
-                  <Lock className="h-3.5 w-3.5" />
-                  <span>Unlock All Lessons</span>
+                  <Lock className="h-3 w-3" />
+                  <span>Unlock All</span>
                 </>
               )}
             </button>
 
             <button
               onClick={toggleAllUnits}
-              className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-card px-3 py-2 min-h-[36px] text-xs font-medium text-text-secondary hover:text-text-primary hover:border-gold/40 transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1 rounded-lg sm:rounded-xl border border-border bg-bg-card px-2.5 py-1 sm:px-3 sm:py-1.5 min-h-[30px] sm:min-h-[34px] text-[11px] sm:text-xs font-medium text-text-secondary hover:text-text-primary hover:border-gold/40 transition-colors cursor-pointer micro-badge"
             >
-              <Layers className="h-3.5 w-3.5 text-gold" />
-              <span>{allExpanded ? "Collapse All" : "Expand All"}</span>
+              <Layers className="h-3 w-3 text-gold" />
+              <span>{allExpanded ? "Collapse" : "Expand All"}</span>
             </button>
           </div>
         </div>
 
         {units.length > 1 && (
-          <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
+          <ExpandablePillRow className="[&>button]:!h-7 [&>button]:!w-7 sm:[&>button]:!h-8 sm:[&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
             {units.map((u, idx) => (
               <a
                 key={u.id}
@@ -496,7 +494,7 @@ export default function SkillTree({
                     return next;
                   })
                 }
-                className="shrink-0 whitespace-nowrap rounded-full border border-border bg-bg-card hover:border-gold/50 px-3.5 py-1.5 min-h-[36px] inline-flex items-center text-xs font-medium text-text-secondary hover:text-gold transition-colors"
+                className="shrink-0 whitespace-nowrap rounded-full border border-border bg-bg-card hover:border-gold/50 px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[34px] inline-flex items-center text-xs font-medium text-text-secondary hover:text-gold transition-colors"
               >
                 Unit {idx + 1}: {u.title.replace(/^Unit \d+:\s*/i, "")}
               </a>
@@ -506,7 +504,7 @@ export default function SkillTree({
       </div>
 
       {/* ─── Units & Mobile-Optimized Full-Width Skill Cards ─── */}
-      <div className="space-y-5">
+      <div className="space-y-3.5 sm:space-y-5">
         {units.map((unit, uIdx) => {
           const isExpanded = expandedUnits.has(uIdx);
           const unitCompleted = unit.skills.filter(
@@ -517,32 +515,32 @@ export default function SkillTree({
             <div
               key={unit.id}
               id={`unit-block-${unit.id}`}
-              className="rounded-2xl border border-border bg-bg-card overflow-hidden transition-all"
+              className="rounded-xl sm:rounded-2xl border border-border bg-bg-card overflow-hidden transition-all"
             >
               {/* Unit Header Banner */}
               <button
                 type="button"
                 aria-expanded={isExpanded}
                 onClick={() => toggleUnit(uIdx)}
-                className="w-full flex items-start sm:items-center justify-between gap-3 p-4 sm:p-5 text-left transition-colors hover:bg-white/[0.02]"
+                className="w-full flex items-start sm:items-center justify-between gap-2.5 sm:gap-3 p-3 sm:p-5 text-left transition-colors hover:bg-white/[0.02]"
                 style={{
                   borderBottom: isExpanded ? "1px solid var(--border)" : "none",
                 }}
               >
-                <div className="flex items-start sm:items-center gap-3.5 min-w-0 flex-1">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gold/30 bg-gold/10 text-gold mt-0.5 sm:mt-0">
-                    <DynamicIcon emoji={unit.icon} className="w-5 h-5" />
+                <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5 min-w-0 flex-1">
+                  <div className="flex h-9 w-9 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-lg sm:rounded-xl border border-gold/30 bg-gold/10 text-gold mt-0.5 sm:mt-0">
+                    <DynamicIcon emoji={unit.icon} className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary leading-snug">
+                    <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                      <h3 className="font-[family-name:var(--font-outfit)] text-sm sm:text-lg font-bold text-text-primary leading-snug">
                         {unit.title}
                       </h3>
-                      <span className="rounded-full bg-bg-elevated px-2.5 py-0.5 text-xs font-semibold text-gold">
-                        {unitCompleted}/{unit.skills.length} completed
+                      <span className="rounded-full bg-bg-elevated px-2 py-0.5 text-[11px] sm:text-xs font-semibold text-gold micro-badge">
+                        {unitCompleted}/{unit.skills.length}
                       </span>
                     </div>
-                    <p className="text-xs sm:text-sm text-text-secondary mt-1 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-text-secondary mt-0.5 sm:mt-1 leading-relaxed line-clamp-2 sm:line-clamp-none">
                       {unit.description}
                     </p>
                   </div>

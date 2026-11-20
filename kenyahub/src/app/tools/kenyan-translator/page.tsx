@@ -5,7 +5,6 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 import SearchInput from "@/components/ui/SearchInput";
 
 import { useState, useMemo, useCallback, useEffect, useDeferredValue } from "react";
-import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
@@ -543,12 +542,11 @@ export default function KenyanTranslatorPage() {
 
   return (
     <ToolShell tool={tool} faq={faq} guideOverride={translatorGuideOverride}>
-      <ToolAccessTracker tool={tool} {...({ slug: "kenyan-translator" } as Record<string, string>)} />
-      <div className="space-y-4 sm:space-y-6">
+      <div className="space-y-3 sm:space-y-5">
 
         {/* ── Random Word of the Moment ── */}
         {randomWord && (
-          <div className="bg-gradient-to-r from-gold/10 to-kenya-green/10 border border-gold/20 rounded-xl p-3.5 sm:p-4 flex items-center justify-between gap-3 sm:gap-4">
+          <div className="bg-gradient-to-r from-gold/10 to-kenya-green/10 border border-gold/20 rounded-xl p-2.5 sm:p-4 flex items-center justify-between gap-2.5 sm:gap-4">
             <div className="min-w-0">
               <p className="text-[0.6rem] uppercase tracking-wider text-gold font-medium mb-0.5 sm:mb-1 flex items-center gap-1.5"><Dices className="w-3 h-3" /> Discover a word ({ALL_DICT_METAS.length} Kenyan languages)</p>
               <p className="text-sm font-bold text-text-primary">{randomWord.entry.english}</p>
@@ -584,7 +582,7 @@ export default function KenyanTranslatorPage() {
         )}
 
         {/* ── View Mode Tabs (Standalone Horizontal Pills) ── */}
-        <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
+        <ExpandablePillRow className="[&>button]:!h-7 [&>button]:!w-7 sm:[&>button]:!h-8 sm:[&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
           {([
             { id: "translate" as const, label: <>Translate &amp; Dictionary <span className="whitespace-nowrap">(All {ALL_DICT_METAS.length} Languages)</span></> },
             { id: "browse" as const, label: `Browse ${ALL_DICT_METAS.length} Dictionaries` },
@@ -595,7 +593,7 @@ export default function KenyanTranslatorPage() {
               <button
                 key={mode.id}
                 onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 min-h-[38px] inline-flex items-center justify-center gap-1 text-xs font-semibold border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-4 sm:py-1.5 min-h-[30px] sm:min-h-[38px] inline-flex items-center justify-center gap-1 text-xs font-semibold border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -667,7 +665,7 @@ export default function KenyanTranslatorPage() {
               )}
 
               {/* Search Input */}
-              <div className="mt-3 sm:mt-4">
+              <div className="mt-2 sm:mt-4">
                 <SearchInput
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
@@ -677,21 +675,21 @@ export default function KenyanTranslatorPage() {
                       ? "Type an English word..."
                       : `Type a word in ${sourceMeta?.languageName ?? "source language"} (or English)...`
                   }
-                  className="text-sm w-full"
+                  className="!h-9 sm:!h-11 text-sm w-full"
                   id="translator-search"
                 />
               </div>
 
               {/* Quick Suggestions & Recent Searches */}
               {!searchQuery && (
-                <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
+                <div className="mt-2 flex flex-wrap items-center gap-1.5">
                   <span className="text-[0.6rem] text-text-muted">Try:</span>
                   {POPULAR_COMPARE_WORDS.slice(0, 8).map((w) => (
                     <button
                       key={w}
                       type="button"
                       onClick={() => setSearchQuery(w)}
-                      className="text-xs px-3 py-1.5 min-h-[36px] inline-flex items-center rounded-full bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/30 transition-colors cursor-pointer"
+                      className="text-xs px-2.5 py-1 min-h-[28px] sm:min-h-[34px] inline-flex items-center rounded-full bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/30 transition-colors cursor-pointer"
                     >
                       {w}
                     </button>
@@ -700,7 +698,7 @@ export default function KenyanTranslatorPage() {
                     <div className="w-full flex flex-wrap items-center gap-1.5 pt-1">
                       <span className="text-[0.65rem] text-text-muted">Recent:</span>
                       {recentSearches.slice(0, 4).map((s) => (
-                        <button key={s} onClick={() => setSearchQuery(s)} className="text-xs px-3 py-1.5 min-h-[36px] inline-flex items-center rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors cursor-pointer">
+                        <button key={s} onClick={() => setSearchQuery(s)} className="text-xs px-2.5 py-1 min-h-[28px] sm:min-h-[34px] inline-flex items-center rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors cursor-pointer">
                           {s}
                         </button>
                       ))}
@@ -1223,17 +1221,14 @@ export default function KenyanTranslatorPage() {
                             <span className="text-[0.625rem] text-text-muted">{dict.nativeName}</span>
                           </div>
                         </button>
-                        <span className="text-xs font-bold text-gold shrink-0 bg-gold/10 px-2 py-0.5 rounded-md border border-gold/20">
-                          {entryCount.toLocaleString()} w
+                        <span className="text-xs font-bold text-gold shrink-0 bg-gold/10 px-2 py-0.5 rounded-md border border-gold/20 tabular-nums">
+                          {entryCount.toLocaleString()} entries
                         </span>
                       </div>
                       <p className="text-[0.625rem] text-text-muted mb-2 leading-relaxed">{dict.counties.slice(0, 3).join(", ")}{dict.counties.length > 3 ? ` +${dict.counties.length - 3}` : ""}</p>
                       <div className="flex flex-wrap items-center gap-1.5 mb-2 text-[0.6875rem] text-text-muted">
                         <span className="px-2 py-0.5 rounded-md bg-bg-elevated border border-border/50">
                           {dict.categories.length} topic categories
-                        </span>
-                        <span className="px-2 py-0.5 rounded-md bg-bg-elevated border border-border/50">
-                          {entryCount.toLocaleString()} verified entries
                         </span>
                       </div>
                     </div>
@@ -1371,31 +1366,24 @@ export default function KenyanTranslatorPage() {
           </div>
         )}
 
-        {/* ── Stats Footer ── */}
-        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">About This Translator</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
-            <div className="text-center">
-              <p className="text-lg font-bold text-gold">{ALL_DICT_METAS.length}</p>
-              <p className="text-[0.6rem] text-text-muted">Kenyan Languages</p>
-            </div>
-            <div className="text-center">
-              <p className="text-lg font-bold text-gold">{totalEntries.toLocaleString()}</p>
-              <p className="text-[0.6rem] text-text-muted">Words &amp; Phrases</p>
-            </div>
-            <div className="text-center">
-              <p className="text-lg font-bold text-gold">{ALL_CATEGORY_IDS.length}</p>
-              <p className="text-[0.6rem] text-text-muted">Categories</p>
-            </div>
-            <div className="text-center">
-              <p className="text-lg font-bold text-gold">Any ↔ Any</p>
-              <p className="text-[0.6rem] text-text-muted">English Bridge</p>
-            </div>
+        {/* ── Compact Corpus Stats Bar (Full editorial guide renders in ToolShell below) ── */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
+          <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5 text-center">
+            <p className="text-sm sm:text-xl font-extrabold tabular-nums text-gold">{ALL_DICT_METAS.length}</p>
+            <p className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted truncate compact-label">Languages</p>
           </div>
-          <ul className="space-y-1.5">
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Translate between any two Kenyan languages (or into all {ALL_DICT_METAS.length} languages at once) using English as an automatic semantic bridge.</span></li>
-            <li className="flex items-start gap-2 text-xs text-text-secondary"><span className="text-gold mt-0.5">•</span><span>Grounded in 34 verified public-domain monographs (1842–1929), 18 commercially permissive Kenyan text dataset suites (Kencorpus, Project Tafsiri v2.0, Thiomi, Google SMOL/GATITOS, LughaGen, ThinkKenya, Common Voice CC0, Sunbird SALT, DDD Kenya, CGIAR, WOLD & Kaikki.org), and Unicode CLDR.</span></li>
-          </ul>
+          <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5 text-center">
+            <p className="text-sm sm:text-xl font-extrabold tabular-nums text-gold">{totalEntries.toLocaleString()}</p>
+            <p className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted truncate compact-label">Entries</p>
+          </div>
+          <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5 text-center">
+            <p className="text-sm sm:text-xl font-extrabold tabular-nums text-gold">{ALL_CATEGORY_IDS.length}</p>
+            <p className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted truncate compact-label">Categories</p>
+          </div>
+          <div className="bg-bg-card border border-border rounded-xl p-2 sm:p-3.5 text-center">
+            <p className="text-sm sm:text-xl font-extrabold text-gold">Any ↔ Any</p>
+            <p className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted truncate compact-label">English Bridge</p>
+          </div>
         </div>
 
       </div>

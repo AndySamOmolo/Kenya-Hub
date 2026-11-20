@@ -965,16 +965,32 @@ html.light {
    have generous breathing room and readable proportions.
    ══════════════════════════════════════════════════ */
 @media (max-width: 639px) {
-  /* Comfortable minimum font floor for micro-labels while respecting .micro-badge */
-  main [class*="text-[0.55rem]"]:not(.micro-badge),
-  main [class*="text-[0.6rem]"]:not(.micro-badge),
-  main [class*="text-[0.625rem]"]:not(.micro-badge),
-  main [class*="text-[0.65rem]"]:not(.micro-badge),
-  main [class*="text-[0.6875rem]"]:not(.micro-badge),
-  main [class*="text-[0.7rem]"]:not(.micro-badge),
-  main [class*="text-[11px]"]:not(.micro-badge) {
+  /* Comfortable minimum font floor for micro-labels while respecting .micro-badge and .compact-label */
+  main [class*="text-[0.55rem]"]:not(.micro-badge):not(.compact-label),
+  main [class*="text-[0.6rem]"]:not(.micro-badge):not(.compact-label),
+  main [class*="text-[0.625rem]"]:not(.micro-badge):not(.compact-label),
+  main [class*="text-[0.65rem]"]:not(.micro-badge):not(.compact-label),
+  main [class*="text-[0.6875rem]"]:not(.micro-badge):not(.compact-label),
+  main [class*="text-[0.7rem]"]:not(.micro-badge):not(.compact-label),
+  main [class*="text-[11px]"]:not(.micro-badge):not(.compact-label) {
     font-size: 0.75rem !important;
     line-height: 1.5 !important;
+  }
+
+  /* Compact KPI stat-cards on mobile so content stays above the fold */
+  .stat-card {
+    padding: 0.5rem 0.625rem;
+  }
+  .stat-card .stat-label {
+    font-size: 0.625rem;
+    margin-bottom: 0.125rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .stat-card .stat-value {
+    font-size: 0.9375rem;
+    font-variant-numeric: tabular-nums;
   }
 
   /* Prevent iOS Safari auto-zoom on long-form form inputs only */
@@ -1025,48 +1041,49 @@ ins.adsbygoogle {
 }
 }
 
-/* ── Mobile Screen Balanced Proportions (Buttons, Pills, Badges & Inputs) ── */
+/* ── Mobile Screen Compact Proportions (Buttons, Pills, Badges & Inputs) ── */
 @media (max-width: 639px) {
   .btn-gold,
   .btn-primary {
-    padding: 0.7rem 1.15rem !important;
-    min-height: 2.75rem !important;
-    font-size: 0.875rem !important;
+    padding: 0.5rem 0.95rem !important;
+    min-height: 2.25rem !important;
+    font-size: 0.8125rem !important;
     border-radius: 0.75rem !important;
-    gap: 0.45rem !important;
+    gap: 0.4rem !important;
   }
   .btn-outline {
-    padding: 0.675rem 1.1rem !important;
-    min-height: 2.75rem !important;
-    font-size: 0.875rem !important;
+    padding: 0.475rem 0.9rem !important;
+    min-height: 2.25rem !important;
+    font-size: 0.8125rem !important;
     border-radius: 0.75rem !important;
-    gap: 0.45rem !important;
+    gap: 0.4rem !important;
   }
   .hero-cta-btn {
-    padding: 0.675rem 1.1rem !important;
-    min-height: 2.75rem !important;
-    font-size: 0.875rem !important;
+    padding: 0.5rem 0.95rem !important;
+    min-height: 2.25rem !important;
+    font-size: 0.8125rem !important;
     border-radius: 0.75rem !important;
-    gap: 0.45rem !important;
+    gap: 0.4rem !important;
   }
   .badge {
-    padding: 0.225rem 0.625rem !important;
-    font-size: 0.72rem !important;
+    padding: 0.2rem 0.55rem !important;
+    font-size: 0.7rem !important;
     gap: 0.25rem !important;
   }
   .input-field {
-    padding: 0.625rem 0.9rem !important;
+    padding: 0.45rem 0.8rem !important;
     font-size: 0.875rem !important;
-    min-height: 2.75rem !important;
+    min-height: 2.25rem !important;
     height: auto !important;
   }
   .input-field--with-search {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
+    padding-left: 2.35rem !important;
+    padding-right: 2.25rem !important;
   }
   .search-input-compact {
-    padding-left: 2.75rem !important;
-    padding-right: 2.75rem !important;
+    padding-left: 2.4rem !important;
+    padding-right: 2.25rem !important;
+    min-height: 2.25rem !important;
   }
 }
 

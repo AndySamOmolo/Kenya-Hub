@@ -429,9 +429,6 @@ export default function ToolDetailScreen() {
     ((toolGuidesData as any)?.guides?.[tool.slug] as ToolGuideEntry) ||
     ((toolGuidesData as any)?.tools?.[tool.slug] as ToolGuideEntry) ||
     {};
-  const overview = guide.overview || [];
-  const howItWorks = guide.howItWorks || [];
-  const workedExample = guide.workedExample;
   const dedupeStrings = (arr: string[]) => {
     const seen = new Set<string>();
     return arr.filter((item) => {
@@ -441,7 +438,11 @@ export default function ToolDetailScreen() {
       return true;
     });
   };
+  const overview = dedupeStrings(guide.overview || []);
+  const howItWorks = dedupeStrings(guide.howItWorks || []);
+  const workedExample = guide.workedExample;
   const complianceTips = dedupeStrings(guide.complianceTips || []);
+  const complianceSet = new Set(complianceTips.map((t) => t.trim().toLowerCase()));
   const faqs = (() => {
     const seen = new Set<string>();
     return (guide.faq || []).filter((item) => {
@@ -451,7 +452,9 @@ export default function ToolDetailScreen() {
       return true;
     });
   })();
-  const notes = dedupeStrings(guide.notes || []);
+  const notes = dedupeStrings(guide.notes || []).filter(
+    (n) => !complianceSet.has(n.trim().toLowerCase())
+  );
   const notesTitle = guide.notesTitle || "Important Notes & About the Data";
   const frequencyLabel =
     tool.updateFrequency === "static"
@@ -626,15 +629,25 @@ export default function ToolDetailScreen() {
                   color={categoryColor}
                 />
               </View>
-              <View style={{ flex: 1, marginLeft: 12 }}>
-                <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>
-                  {tool.title}
-                </Text>
+              <View style={{ flex: 1, marginLeft: 10 }}>
+                {tool.title.trim().toLowerCase() !==
+                  tool.shortTitle.trim().toLowerCase() && (
+                  <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>
+                    {tool.title}
+                  </Text>
+                )}
                 <Text
                   numberOfLines={2}
                   style={[
                     styles.heroDescription,
-                    { color: theme.textSecondary },
+                    {
+                      color: theme.textSecondary,
+                      marginTop:
+                        tool.title.trim().toLowerCase() !==
+                        tool.shortTitle.trim().toLowerCase()
+                          ? 2
+                          : 0,
+                    },
                   ]}
                 >
                   {tool.description}
@@ -648,31 +661,6 @@ export default function ToolDetailScreen() {
                 { borderTopColor: theme.outlineVariant },
               ]}
             >
-              {categoryInfo && (
-                <View
-                  style={[
-                    styles.sourceTag,
-                    {
-                      backgroundColor: `${categoryColor}16`,
-                      borderColor: `${categoryColor}35`,
-                    },
-                  ]}
-                >
-                  <DynamicIcon
-                    emoji={categoryInfo.icon}
-                    size={12}
-                    color={categoryColor}
-                  />
-                  <Text
-                    style={[
-                      styles.sourceText,
-                      { color: categoryColor, fontFamily: "Outfit_700Bold" },
-                    ]}
-                  >
-                    {categoryInfo.name}
-                  </Text>
-                </View>
-              )}
 
               <View
                 style={[
@@ -1321,7 +1309,7 @@ export default function ToolDetailScreen() {
         >
           <KenyaStripe />
           <AndroidTopAppBar
-            title={selectedPost?.title || "Guide"}
+            title="Offline Guide"
             subtitle={
               selectedPost
                 ? `${selectedPost.author} · ${selectedPost.readTime} min read`
@@ -1433,49 +1421,49 @@ const styles = StyleSheet.create({
     paddingBottom: 96,
   },
   toolHeaderCard: {
-    borderRadius: 20,
+    borderRadius: 14,
     borderWidth: 1,
-    padding: 16,
-    marginBottom: 16,
+    padding: 11,
+    marginBottom: 10,
     elevation: Platform.OS === "android" ? 2 : 0,
   },
   heroRow: {
     flexDirection: "row",
-    alignItems: "flex-start",
+    alignItems: "center",
   },
   heroIconBox: {
-    width: 48,
-    height: 48,
-    borderRadius: 14,
+    width: 38,
+    height: 38,
+    borderRadius: 10,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
   heroTitle: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 18,
-    lineHeight: 23,
+    fontSize: 15.5,
+    lineHeight: 20,
   },
   heroDescription: {
     fontFamily: "Inter_400Regular",
-    fontSize: 12.5,
-    lineHeight: 18,
-    marginTop: 4,
+    fontSize: 12,
+    lineHeight: 17,
+    marginTop: 2,
   },
   badgesRow: {
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: 8,
-    marginTop: 12,
-    paddingTop: 10,
+    gap: 6,
+    marginTop: 8,
+    paddingTop: 8,
     borderTopWidth: StyleSheet.hairlineWidth,
   },
   sourceTag: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 5,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
     borderRadius: 8,
     borderWidth: 1,
   },

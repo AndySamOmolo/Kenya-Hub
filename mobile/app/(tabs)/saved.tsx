@@ -413,8 +413,8 @@ const styles = StyleSheet.create({
     fontFamily: "Outfit_700Bold",
   },
   content: {
-    padding: 16,
-    paddingBottom: 32,
+    padding: 14,
+    paddingBottom: 28,
   },
   countText: {
     fontFamily: "Inter_500Medium",
@@ -431,14 +431,14 @@ const styles = StyleSheet.create({
     elevation: Platform.OS === "android" ? 2 : 0,
   },
   card: {
-    padding: 15,
+    padding: 12,
     flexDirection: "row",
     alignItems: "center",
   },
   cardIconWrap: {
-    width: 46,
-    height: 46,
-    borderRadius: 14,
+    width: 42,
+    height: 42,
+    borderRadius: 12,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",

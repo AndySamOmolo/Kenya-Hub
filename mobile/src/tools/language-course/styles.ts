@@ -2,20 +2,44 @@ import { StyleSheet, Platform } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    gap: 14,
+    gap: 10,
+  },
+  statsRow: {
+    flexDirection: 'row',
+    gap: 6,
+    marginBottom: 8,
+  },
+  statCard: {
+    flex: 1,
+    borderRadius: 10,
+    borderWidth: 1,
+    paddingVertical: 7,
+    paddingHorizontal: 6,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  statValue: {
+    fontSize: 15,
+    fontFamily: "Outfit_800ExtraBold",
+    fontWeight: '800',
+  },
+  statLabel: {
+    fontSize: 10,
+    fontWeight: '600',
+    marginTop: 1,
   },
   gamificationCard: {
-    borderRadius: 20,
+    borderRadius: 14,
     borderWidth: 1,
-    padding: 14,
-    gap: 10,
+    padding: 10,
+    gap: 8,
   },
   statsTopRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     flexWrap: 'wrap',
-    gap: 8,
+    gap: 6,
   },
   levelBadgeWrap: {
     flex: 1,
@@ -40,8 +64,8 @@ export const styles = StyleSheet.create({
   miniStatPill: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 9,
-    paddingVertical: 5,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
     borderRadius: 999,
   },
   dailyGoalRow: {
@@ -85,9 +109,9 @@ export const styles = StyleSheet.create({
     flexWrap: 'wrap',
     alignItems: 'center',
     justifyContent: 'space-between',
-    gap: 10,
-    padding: 12,
-    borderRadius: 16,
+    gap: 8,
+    padding: 10,
+    borderRadius: 14,
     borderWidth: 1,
   },
   unlockToggleBtn: {
@@ -114,10 +138,10 @@ export const styles = StyleSheet.create({
     borderRadius: 4,
   },
   courseInfoCard: {
-    borderRadius: 20,
+    borderRadius: 16,
     borderWidth: 1,
-    padding: 14,
-    gap: 6,
+    padding: 11,
+    gap: 5,
   },
   courseInfoHeader: {
     flexDirection: 'row',
@@ -177,18 +201,18 @@ export const styles = StyleSheet.create({
     borderRadius: 12,
   },
   unitListWrap: {
-    gap: 12,
+    gap: 10,
   },
   unitSectionGroup: {
-    gap: 10,
-    marginBottom: 16,
+    gap: 8,
+    marginBottom: 12,
   },
   unitHeaderCard: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    gap: 12,
-    padding: 16,
-    borderRadius: 18,
+    gap: 10,
+    padding: 12,
+    borderRadius: 14,
     borderWidth: 1,
   },
   unitNumberBadge: {
@@ -213,10 +237,10 @@ export const styles = StyleSheet.create({
     gap: 10,
   },
   skillNodeCard: {
-    borderRadius: 16,
+    borderRadius: 14,
     borderWidth: 1,
-    padding: 16,
-    gap: 12,
+    padding: 12,
+    gap: 8,
   },
   skillNodeTop: {
     flexDirection: 'row',
@@ -611,18 +635,20 @@ export const styles = StyleSheet.create({
   },
   completeMetricsRow: {
     flexDirection: 'row',
-    gap: 8,
+    gap: 6,
+    marginBottom: 4,
   },
   completeMetricCard: {
     flex: 1,
-    borderRadius: 16,
+    borderRadius: 10,
     borderWidth: 1,
-    padding: 12,
+    paddingVertical: 7,
+    paddingHorizontal: 6,
     alignItems: 'center',
-    gap: 4,
+    gap: 2,
   },
   completeMetricValue: {
-    fontSize: 18,
+    fontSize: 15,
     fontFamily: "Outfit_800ExtraBold",
       fontWeight: '800',
   },
@@ -777,9 +803,10 @@ export const styles = StyleSheet.create({
   m3SearchBar: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
-    paddingHorizontal: 14,
-    paddingVertical: 6,
+    gap: 6,
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    minHeight: 38,
     borderRadius: 999,
     borderWidth: 1,
   },

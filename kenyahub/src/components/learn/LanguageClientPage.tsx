@@ -9,16 +9,12 @@ import {
   ChevronLeft,
   ChevronRight,
   ChevronDown,
-  Flame,
   Lightbulb,
   RotateCcw,
   Layers,
-  Heart,
-  Shield,
   Volume2,
 } from "lucide-react";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
-import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
 import { playLanguageAudio, hasVerifiedAudio } from "@/lib/language-audio";
 import SkillTree from "@/components/learn/SkillTree";
 import GamesHub from "@/components/learn/GamesHub";
@@ -613,6 +609,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       tool={courseTool}
       faq={courseFaq}
       guideOverride={courseGuideOverride}
+      breadcrumbParentLabel="Learn"
       breadcrumbSuffix={[
         {
           label: course.config.name,
@@ -623,14 +620,13 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       hideFooter={view === "playing"}
       hideSource
     >
-      <ToolAccessTracker tool={courseTool} {...({ slug: "learn" } as Record<string, string>)} />
-      {/* Top Bar: Compact Language Dropdown on Left + XP, Hearts, Shield & Streak on Right */}
+      {/* Top Bar: Compact Language Switcher (Single Stats Strip lives inside SkillTree to avoid double display) */}
       {view !== "playing" && (
-        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
+        <div className="mb-2.5 sm:mb-4 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 min-w-0">
             <Link
               href="/tools/learn/"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light transition-colors shrink-0"
+              className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl border border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light transition-colors shrink-0"
               aria-label="All Languages"
               title="All Languages"
             >
@@ -643,48 +639,21 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 value: c.config.id,
                 label: c.config.name,
               }))}
-              className="w-44 sm:w-52 text-xs sm:text-sm"
+              className="w-40 sm:w-52 text-xs sm:text-sm"
             />
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold shrink-0 flex-wrap">
-            <span
-              className="inline-flex items-center gap-1 rounded-full border border-red-500/30 bg-red-500/10 px-2.5 py-1.5 text-red-400 font-bold"
-              title="Active Hearts (refills 1 heart every 30 min)"
+          {(progress.xp > 0 || progress.lessonsCompleted > 0) && (
+            <button
+              type="button"
+              onClick={handleResetProgress}
+              className="inline-flex items-center gap-1 rounded-full border border-border/60 bg-transparent hover:border-red-400/50 hover:text-red-400 px-2.5 py-1 text-[11px] text-text-muted transition-colors cursor-pointer shrink-0 micro-badge"
+              title={`Reset ${course.config.name} progress`}
             >
-              <Heart className="h-3.5 w-3.5 fill-red-400" />
-              {progress.hearts}
-            </span>
-            {progress.streakFreezes > 0 && (
-              <span
-                className="inline-flex items-center gap-1 rounded-full border border-sky-500/30 bg-sky-500/10 px-2.5 py-1.5 text-sky-400 font-bold"
-                title={`${progress.streakFreezes} Streak Shield active (protects 1 missed day)`}
-              >
-                <Shield className="h-3.5 w-3.5" />
-                {progress.streakFreezes}
-              </span>
-            )}
-            <span className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1.5 text-gold font-bold">
-              {progress.xp} XP
-            </span>
-            {progress.streak > 0 && (
-              <span className="inline-flex items-center gap-1 rounded-full border border-orange-500/30 bg-orange-500/10 px-2.5 py-1.5 text-orange-400 font-bold">
-                <Flame className="h-3.5 w-3.5" />
-                {progress.streak}d
-              </span>
-            )}
-            {(progress.xp > 0 || progress.lessonsCompleted > 0) && (
-              <button
-                type="button"
-                onClick={handleResetProgress}
-                className="inline-flex items-center gap-1 rounded-full border border-border/50 bg-transparent hover:border-red-400/50 hover:text-red-400 px-2 py-1 text-[0.6875rem] text-text-muted/70 transition-colors cursor-pointer ml-auto"
-                title={`Reset ${course.config.name} progress`}
-              >
-                <RotateCcw className="h-3.5 w-3.5" />
-                <span>Reset Progress</span>
-              </button>
-            )}
-          </div>
+              <RotateCcw className="h-3 w-3" />
+              <span>Reset</span>
+            </button>
+          )}
         </div>
       )}
 
@@ -700,7 +669,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
       {/* Horizontal Scrolling Pill Tabs */}
       {view !== "playing" && (
-        <ExpandablePillRow className="mb-5 [&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
+        <ExpandablePillRow className="mb-3 sm:mb-5 [&>button]:!h-7 [&>button]:!w-7 sm:[&>button]:!h-8 sm:[&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
           {[
             { id: "lessons" as const, label: "Skill Path" },
             { id: "flashcards" as const, label: `Flashcards (${totalWords.toLocaleString("en-KE")})` },
@@ -716,7 +685,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 onClick={() => setView(tab.id)}
                 role="tab"
                 aria-selected={active}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 min-h-[38px] inline-flex items-center text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-4 sm:py-1.5 min-h-[32px] sm:min-h-[38px] inline-flex items-center text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -967,7 +936,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 onChange={(e) => setModuleSearch(e.target.value)}
                 onClear={() => setModuleSearch("")}
                 placeholder="Search words or meanings..."
-                className="flex-1 text-sm"
+                className="flex-1 !h-9 sm:!h-11 text-sm"
               />
               <CustomSelect
                 value={selectedUnitFilter}

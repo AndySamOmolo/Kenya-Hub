@@ -61,34 +61,34 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
   const maxFare = routes.length > 0 ? Math.max(...routes.map((r) => r.fareMax)) : 200;
 
   return (
-    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-8">
-      {/* Site-wide ChevronRight Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted mb-6">
-        <Link href="/" className="hover:text-gold transition-colors">Home</Link>
+    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-3 pb-6 sm:py-8">
+      {/* Site-wide ChevronRight Breadcrumb (Single-Line Scrollable on Mobile) */}
+      <nav aria-label="Breadcrumb" className="flex flex-nowrap items-center gap-1.5 overflow-x-auto no-scrollbar whitespace-nowrap text-[11px] sm:text-xs text-text-muted mb-2 sm:mb-5 micro-badge">
+        <Link href="/" className="hover:text-gold transition-colors shrink-0">Home</Link>
         <ChevronRight className="w-3.5 h-3.5 text-border-light shrink-0" />
-        <Link href="/matatu/" className="hover:text-gold transition-colors">Matatu Routes</Link>
+        <Link href="/matatu/" className="hover:text-gold transition-colors shrink-0">Matatu Routes</Link>
         <ChevronRight className="w-3.5 h-3.5 text-border-light shrink-0" />
-        <span className="text-text-secondary capitalize">{townInfo.name}</span>
+        <span className="text-text-secondary font-medium capitalize shrink-0">{townInfo.name}</span>
       </nav>
 
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary mb-2">
-          <BusFront className="w-8 h-8 text-gold flex-shrink-0 inline-block mr-2" />{townInfo.name} Matatu Routes, Stages &amp; Fares
+      <div className="mb-3 sm:mb-6">
+        <h1 className="text-lg sm:text-3xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary leading-snug mb-1 sm:mb-2">
+          <BusFront className="w-5 h-5 sm:w-8 sm:h-8 text-gold flex-shrink-0 inline-block mr-1.5 sm:mr-2 -mt-0.5" />{townInfo.name} Matatu Routes, Stages &amp; Fares
         </h1>
-        <p className="text-text-secondary text-sm max-w-3xl leading-relaxed">
+        <p className="text-text-secondary text-xs sm:text-sm max-w-3xl leading-relaxed line-clamp-2 sm:line-clamp-none">
           {townInfo.description} Browse {routes.length} PSV corridors across {townInfo.name} ({(townInfo as { county?: string }).county || townInfo.name} County), operated by {saccos.length} registered SACCOs with off-peak to peak fares from KES {minFare} to KES {maxFare}.
         </p>
       </div>
 
       {/* Filter panel */}
-      <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5 mb-8 space-y-3.5">
+      <div className="bg-bg-card border border-border rounded-xl p-3 sm:p-5 mb-4 sm:mb-6 space-y-2.5 sm:space-y-3.5">
         <SearchInput
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search route, stage, or SACCO..."
-          className="input-field text-sm"
+          className="input-field !h-9 sm:!h-11 text-sm"
           id="town-matatu-search"
           onClear={() => setSearch("")}
         />

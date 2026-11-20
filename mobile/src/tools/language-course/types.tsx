@@ -140,14 +140,8 @@ export function renderFormattedText(
 
 export type MainTab = 'learn' | 'cards' | 'games' | 'grammar' | 'proverbs';
 export type LessonStage = 'idle' | 'learn' | 'practice' | 'complete';
-export type ActiveGame =
-  | 'menu'
-  | 'scramble'
-  | 'speed'
-  | 'memory'
-  | 'wordle'
-  | 'riddles'
-  | 'vocabQuiz'
+
+export type ExtraGameId =
   | 'methali'
   | 'safari'
   | 'nounClass'
@@ -156,3 +150,28 @@ export type ActiveGame =
   | 'twister'
   | 'counties'
   | 'sheng';
+
+export type ActiveGame =
+  | 'menu'
+  | 'scramble'
+  | 'speed'
+  | 'memory'
+  | 'wordle'
+  | 'riddles'
+  | 'vocabQuiz'
+  | ExtraGameId;
+
+const EXTRA_GAME_SET = new Set<string>([
+  'methali',
+  'safari',
+  'nounClass',
+  'oddWord',
+  'polyglot',
+  'twister',
+  'counties',
+  'sheng',
+]);
+
+export function isExtraGame(game: ActiveGame): game is ExtraGameId {
+  return EXTRA_GAME_SET.has(game);
+}

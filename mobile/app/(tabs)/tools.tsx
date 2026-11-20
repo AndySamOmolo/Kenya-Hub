@@ -286,8 +286,8 @@ export default function ToolsScreen() {
         title={category !== "all" ? getCategoryInfo(category)?.name || "All Tools" : "All Tools"}
         subtitle={
           category !== "all"
-            ? `${filtered.length} tools in ${getCategoryInfo(category)?.name || "this category"}`
-            : `${TOOLS.length} free tools built for Kenya — search or browse by category`
+            ? getCategoryInfo(category)?.description || "Filtered Kenya utilities"
+            : `${TOOLS.length} free tools built for Kenya`
         }
       />
 
@@ -320,7 +320,7 @@ export default function ToolsScreen() {
             
             value={query}
             onChangeText={setQuery}
-            placeholder="Search 33 tools or Matatu routes..."
+            placeholder={`Search ${TOOLS.length} tools or Matatu routes...`}
             numberOfLines={1}
             multiline={false}
             placeholderTextColor={theme.textMuted}
@@ -364,9 +364,9 @@ export default function ToolsScreen() {
                   alignItems: "center",
                   justifyContent: "center",
                   gap: 6,
-                  paddingHorizontal: 13,
-                  paddingVertical: 7,
-                  minHeight: 34,
+                  paddingHorizontal: 11,
+                  paddingVertical: 5,
+                  minHeight: 30,
                   borderRadius: 999,
                   borderWidth: 1,
                   backgroundColor: active
@@ -436,9 +436,9 @@ export default function ToolsScreen() {
                     alignItems: "center",
                     justifyContent: "center",
                     gap: 6,
-                    paddingHorizontal: 13,
-                    paddingVertical: 7,
-                    minHeight: 34,
+                    paddingHorizontal: 11,
+                    paddingVertical: 5,
+                    minHeight: 30,
                     borderRadius: 999,
                     borderWidth: 1,
                     backgroundColor: active
@@ -678,18 +678,18 @@ const styles = StyleSheet.create({
   },
   filterHeader: {
     paddingHorizontal: 14,
-    paddingTop: 8,
-    paddingBottom: 10,
+    paddingTop: 6,
+    paddingBottom: 8,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   searchWrap: {
     flexDirection: "row",
     alignItems: "center",
-    borderRadius: 24,
+    borderRadius: 19,
     borderWidth: 1,
-    paddingHorizontal: 14,
-    height: 40,
-    marginBottom: 8,
+    paddingHorizontal: 12,
+    height: 38,
+    marginBottom: 6,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
   searchIcon: {
@@ -711,7 +711,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     gap: 8,
-    marginTop: 8,
+    marginTop: 6,
   },
   sortLabel: {
     fontFamily: "Outfit_700Bold",
@@ -731,9 +731,10 @@ const styles = StyleSheet.create({
     textAlignVertical: "center",
   },
   list: {
-    padding: 14,
-    paddingBottom: 32,
-    gap: 10,
+    paddingHorizontal: 14,
+    paddingTop: 10,
+    paddingBottom: 28,
+    gap: 8,
   },
   resultsBar: {
     flexDirection: "row",

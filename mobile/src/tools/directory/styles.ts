@@ -16,26 +16,26 @@ export const HOSPITAL_LEVELS_INFO = [
 
 export function createStyles(colors: ThemeColors) {
   return StyleSheet.create({
-    toolWrap: { gap: 12 },
+    toolWrap: { gap: 10 },
     searchBar: {
       flexDirection: "row",
       alignItems: "center",
       backgroundColor: colors.bgCard,
       borderWidth: 1,
       borderColor: colors.border,
-      borderRadius: 12,
-      paddingHorizontal: 14,
-      height: 44,
+      borderRadius: 19,
+      paddingHorizontal: 12,
+      height: 38,
     },
     searchInput: { flex: 1, minWidth: 0, marginLeft: 8, marginRight: 6, color: colors.textPrimary, fontSize: 13, paddingVertical: 0, paddingHorizontal: 0, textAlignVertical: "center", includeFontPadding: false },
     subHeading: { fontSize: 13, fontWeight: "800", color: colors.gold, letterSpacing: 0.5 },
     card: {
       backgroundColor: colors.bgCard,
-      borderRadius: 16,
+      borderRadius: 14,
       borderWidth: 1,
       borderColor: colors.border,
-      padding: 14,
-      gap: 8,
+      padding: 12,
+      gap: 6,
     },
     cardTop: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: 10 },
     cardTitle: { fontSize: 15, fontWeight: "700", color: colors.textPrimary, flexShrink: 1 },

@@ -692,7 +692,7 @@ export default function CountyScreen() {
         <ExpandablePillRow
           threshold={4}
           fadeColor={theme.surfaceContainerLow}
-          style={{ marginBottom: activeTab !== "compare" ? 8 : 2 }}
+          style={{ marginBottom: activeTab !== "compare" ? 6 : 2 }}
           contentContainerStyle={{
             flexDirection: "row",
             alignItems: "center",
@@ -1331,7 +1331,7 @@ export default function CountyScreen() {
           ListHeaderComponent={
             <>
               {/* National Summary Strip */}
-              <View style={{ flexDirection: "row", gap: 8, marginBottom: 12 }}>
+              <View style={{ flexDirection: "row", gap: 6, marginBottom: 8 }}>
                 <View
                   style={[
                     styles.miniStat,
@@ -1342,18 +1342,24 @@ export default function CountyScreen() {
                   ]}
                 >
                   <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.75}
                     style={{
-                      fontSize: 8.5,
+                      fontSize: 9.5,
                       fontFamily: "Outfit_700Bold",
-                      letterSpacing: 0.4,
+                      letterSpacing: 0.3,
                       color: theme.textMuted,
                     }}
                   >
                     EQUITABLE SHARE
                   </Text>
                   <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.8}
                     style={{
-                      fontSize: 14,
+                      fontSize: 15,
                       fontFamily: "Outfit_800ExtraBold",
                       color: theme.gold,
                       marginTop: 2,
@@ -1372,18 +1378,24 @@ export default function CountyScreen() {
                   ]}
                 >
                   <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.75}
                     style={{
-                      fontSize: 8.5,
+                      fontSize: 9.5,
                       fontFamily: "Outfit_700Bold",
-                      letterSpacing: 0.4,
+                      letterSpacing: 0.3,
                       color: theme.textMuted,
                     }}
                   >
                     OWN REVENUE
                   </Text>
                   <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.8}
                     style={{
-                      fontSize: 14,
+                      fontSize: 15,
                       fontFamily: "Outfit_800ExtraBold",
                       color: theme.sky,
                       marginTop: 2,
@@ -1402,18 +1414,24 @@ export default function CountyScreen() {
                   ]}
                 >
                   <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.75}
                     style={{
-                      fontSize: 8.5,
+                      fontSize: 9.5,
                       fontFamily: "Outfit_700Bold",
-                      letterSpacing: 0.4,
+                      letterSpacing: 0.3,
                       color: theme.textMuted,
                     }}
                   >
-                    AVG ABSORPTION
+                    ABSORPTION
                   </Text>
                   <Text
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+                    minimumFontScale={0.8}
                     style={{
-                      fontSize: 14,
+                      fontSize: 15,
                       fontFamily: "Outfit_800ExtraBold",
                       color: theme.kenyaGreenLight,
                       marginTop: 2,
@@ -1424,9 +1442,11 @@ export default function CountyScreen() {
                 </View>
               </View>
 
-              <Text style={[styles.countText, { color: theme.textMuted }]}>
-                Showing {filtered.length} of 47 counties
-              </Text>
+              {query.trim().length > 0 && (
+                <Text style={[styles.countText, { color: theme.textMuted }]}>
+                  Showing {filtered.length} of 47 counties
+                </Text>
+              )}
             </>
           }
           renderItem={({ item }) => {
@@ -1603,28 +1623,28 @@ export default function CountyScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1 },
   header: {
-    paddingHorizontal: 16,
-    paddingTop: 10,
-    paddingBottom: 10,
+    paddingHorizontal: 14,
+    paddingTop: 6,
+    paddingBottom: 8,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   modeChip: {
     flexDirection: "row",
     alignItems: "center",
     gap: 5,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
+    paddingHorizontal: 11,
+    paddingVertical: 5,
     borderRadius: 999,
     borderWidth: 1,
   },
   searchBar: {
     flexDirection: "row",
     alignItems: "center",
-    borderRadius: 22,
+    borderRadius: 19,
     borderWidth: 1,
-    paddingHorizontal: 13,
-    height: 42,
-    marginBottom: 8,
+    paddingHorizontal: 12,
+    height: 38,
+    marginBottom: 6,
   },
   searchInput: {
     flex: 1,
@@ -1660,16 +1680,19 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   listContent: {
-    padding: 16,
-    paddingBottom: 36,
-    gap: 10,
+    paddingHorizontal: 14,
+    paddingTop: 10,
+    paddingBottom: 32,
+    gap: 8,
   },
   miniStat: {
     flex: 1,
-    borderRadius: 12,
+    borderRadius: 10,
     borderWidth: 1,
-    padding: 10,
+    paddingVertical: 8,
+    paddingHorizontal: 6,
     alignItems: "center",
+    justifyContent: "center",
   },
   countText: {
     fontFamily: "Inter_500Medium",

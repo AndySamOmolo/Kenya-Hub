@@ -1,12 +1,129 @@
-import type { CourseUnit, LanguageConfig, GrammarSection } from "../../shared/data/courses/types";
+import type {
+  CourseSkill,
+  CourseUnit,
+  LanguageConfig,
+  GrammarSection,
+  WordPair,
+} from "../../shared/data/courses/types";
 import type { CourseDefinition } from "../../shared/data/courses/registry";
 import {
   PUBLISHED_COURSE_SUMMARIES,
   type CourseCatalogSummary,
 } from "../../shared/data/courses/catalog-summary";
-import { getSourcesForLanguage } from "../../shared/data/language-sources";
+import {
+  getSourcesForLanguage,
+  DICT_META_MAP,
+  type Dictionary,
+} from "../../shared/data/language-sources";
 
 export { PUBLISHED_COURSE_SUMMARIES, type CourseCatalogSummary };
+
+export interface CanonicalCourseCounts {
+  totalUnits: number;
+  totalSkills: number;
+  totalWords: number;
+  dictCategoryCount: number;
+  dictTotalEntries: number;
+}
+
+/**
+ * Computes canonical unit, module/skill, and word counts matching Web LanguageClientPage.tsx
+ * by integrating the verified dictionary categories unit from DICT_META_MAP.
+ */
+export function getCanonicalCourseCounts(
+  summary: Pick<CourseCatalogSummary, "config" | "unitCount" | "skillCount" | "wordsCount">
+): CanonicalCourseCounts {
+  const meta = DICT_META_MAP[summary.config.id];
+  const validMetaCats = meta ? meta.categories.filter((c) => c.count > 0) : [];
+  const hasDictUnit = validMetaCats.length > 0;
+  const dictCategoryCount = validMetaCats.length;
+  const dictTotalEntries = meta?.totalEntries || 0;
+
+  return {
+    totalUnits: summary.unitCount + (hasDictUnit ? 1 : 0),
+    totalSkills: summary.skillCount + dictCategoryCount,
+    totalWords: Math.max(summary.wordsCount, dictTotalEntries),
+    dictCategoryCount,
+    dictTotalEntries,
+  };
+}
+
+/**
+ * Builds the integrated Dictionary CourseUnit matching Web LanguageClientPage.tsx.
+ * Populates category metadata immediately (zero eager JSON load) and hydrates word arrays
+ * as soon as loadedDict is available.
+ */
+export function buildDictUnit(
+  languageId: string,
+  baseUnits: CourseUnit[],
+  loadedDict: Dictionary | null
+): CourseUnit | null {
+  const meta = DICT_META_MAP[languageId];
+  if (!meta) return null;
+  const validMetaCats = meta.categories.filter((c) => c.count > 0);
+  if (validMetaCats.length === 0) return null;
+
+  const courseWordSet = new Set<string>();
+  for (const u of baseUnits) {
+    for (const sk of u.skills) {
+      for (const w of sk.words) {
+        courseWordSet.add(
+          `${w.target.toLowerCase().trim()}::${w.source.toLowerCase().trim()}`
+        );
+      }
+    }
+  }
+
+  const loadedCatMap = new Map(
+    (loadedDict?.categories || []).map((c) => [c.id, c])
+  );
+
+  const skills: CourseSkill[] = validMetaCats.map((catMeta) => {
+    const loadedCat = loadedCatMap.get(catMeta.id);
+    const dedupedWords: WordPair[] = [];
+    const allCatWords: WordPair[] = [];
+    if (loadedCat?.entries) {
+      for (const e of loadedCat.entries) {
+        const t = e.translation.trim();
+        const s = e.english.trim();
+        if (!t || !s) continue;
+        const pair: WordPair = {
+          target: t,
+          source: s,
+          pronunciation: e.pronunciation || undefined,
+          example: e.context || undefined,
+          audioFile: e.audioFile || undefined,
+        };
+        allCatWords.push(pair);
+        const key = `${t.toLowerCase()}::${s.toLowerCase()}`;
+        if (!courseWordSet.has(key)) {
+          dedupedWords.push(pair);
+        }
+      }
+    }
+    const words = dedupedWords.length > 0 ? dedupedWords : allCatWords;
+    const countLabel = catMeta.count.toLocaleString();
+    return {
+      id: `dict-cat-${catMeta.id}`,
+      title: `Dictionary: ${catMeta.name}`,
+      icon: catMeta.icon || "📖",
+      description: `Complete ${meta.languageName} dictionary entries for ${catMeta.name.toLowerCase()} (${countLabel} verified entries).`,
+      tips: `Practice and search ${countLabel} verified ${meta.languageName} dictionary entries in the ${catMeta.name} category.`,
+      words,
+      sentences: [],
+    };
+  });
+
+  return {
+    id: `dict-unit-${languageId}`,
+    unitNumber: baseUnits.length + 1,
+    title: `${meta.languageName} Complete Dictionary (${meta.totalEntries.toLocaleString()} Entries)`,
+    description: `All verified ${meta.languageName} dictionary categories integrated for flashcards, vocabulary search, interactive practice, and mini-games.`,
+    icon: "📖",
+    color: "#D4A017",
+    skills,
+  };
+}
 
 const SUMMARY_IDS = new Set(PUBLISHED_COURSE_SUMMARIES.map((c) => c.config.id));
 const COURSE_CACHE = new Map<string, CourseDefinition>();
@@ -122,6 +239,7 @@ export function getPlaceholderCourse(languageId: string): CourseDefinition {
   const summary =
     PUBLISHED_COURSE_SUMMARIES.find((c) => c.config.id === languageId) ||
     PUBLISHED_COURSE_SUMMARIES[0];
+  const counts = getCanonicalCourseCounts(summary);
   return {
     config: summary.config,
     units: [],
@@ -129,8 +247,8 @@ export function getPlaceholderCourse(languageId: string): CourseDefinition {
     validationIssues: [],
     sourceIds: [],
     grammarSections: [],
-    unitCount: summary.unitCount,
-    skillCount: summary.skillCount,
-    wordCount: summary.wordsCount,
+    unitCount: counts.totalUnits,
+    skillCount: counts.totalSkills,
+    wordCount: counts.totalWords,
   };
 }

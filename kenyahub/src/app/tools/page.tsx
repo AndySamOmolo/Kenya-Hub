@@ -219,7 +219,7 @@ export default function ToolsHubPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:py-10">
+    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-3 pb-10 sm:py-10">
       <Suspense fallback={null}>
         <ToolsUrlSync onSync={handleUrlSync} />
       </Suspense>
@@ -232,7 +232,7 @@ export default function ToolsHubPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       {/* Header */}
-      <div className="mb-6 sm:mb-8">
+      <div className="mb-3 sm:mb-6">
         {activeCategoryInfo ? (
           <>
             <div className="flex items-center gap-2 text-xs text-text-muted mb-1.5">
@@ -256,10 +256,10 @@ export default function ToolsHubPage() {
           </>
         ) : (
           <>
-            <h1 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-3">
+            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-1.5 sm:mb-3">
               <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
             </h1>
-            <p className="text-sm sm:text-base text-text-secondary max-w-3xl leading-relaxed">
+            <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
               Explore {TOOLS.length} free digital tools, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 23 Kenyan language courses.
             </p>
           </>
@@ -312,12 +312,13 @@ export default function ToolsHubPage() {
       )}
 
       {/* Search, Category Pills & Single-Line Sort Bar */}
-      <div className="mb-6 space-y-3">
+      <div className="mb-4 sm:mb-6 space-y-2.5 sm:space-y-3">
         <SearchInput
           type="text"
           placeholder="Search tools (PAYE, M-Pesa, KRA)..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          className="!h-9 sm:!h-11 text-sm"
           id="tools-search"
           onClear={() => setSearchQuery("")}
         />
@@ -329,7 +330,7 @@ export default function ToolsHubPage() {
             data-active={selectedCategory === "all"}
             aria-pressed={selectedCategory === "all"}
             onClick={() => handleSelectCategory("all")}
-            className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center gap-2 text-xs font-semibold border transition-all cursor-pointer ${
+            className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-xs font-semibold border transition-all cursor-pointer ${
               selectedCategory === "all"
                 ? "border-gold bg-gold/15 text-gold font-bold shadow-2xs"
                 : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -360,7 +361,7 @@ export default function ToolsHubPage() {
                 data-active={active}
                 aria-pressed={active}
                 onClick={() => handleSelectCategory(cat.id)}
-                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center gap-2 text-xs font-semibold border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-xs font-semibold border transition-all cursor-pointer ${
                   active
                     ? "border-gold bg-gold/15 text-gold font-bold shadow-2xs"
                     : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"

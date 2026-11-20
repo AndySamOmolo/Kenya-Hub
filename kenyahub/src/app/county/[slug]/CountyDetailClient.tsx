@@ -386,43 +386,43 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-10 space-y-5 sm:space-y-10">
+    <div className="max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-3 pb-6 sm:py-10 space-y-4 sm:space-y-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(adminAreaSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(govOrgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted">
-        <Link href="/" className="hover:text-gold transition-colors">Home</Link>
-        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+      {/* Breadcrumbs (Single-Line Scrollable on Mobile) */}
+      <nav aria-label="Breadcrumb" className="flex flex-nowrap items-center gap-1.5 overflow-x-auto no-scrollbar whitespace-nowrap text-[11px] sm:text-xs text-text-muted micro-badge">
+        <Link href="/" className="hover:text-gold transition-colors shrink-0">Home</Link>
+        <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        <Link href="/county/" className="hover:text-gold transition-colors">47 Counties Hub</Link>
-        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+        <Link href="/county/" className="hover:text-gold transition-colors shrink-0">47 Counties Hub</Link>
+        <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        <span className="text-text-secondary break-words">{county.name} County (#{codeStr})</span>
+        <span className="text-text-secondary font-medium shrink-0">{county.name} County (#{codeStr})</span>
       </nav>
 
       {/* Header */}
-      <header className="bg-bg-card border border-border rounded-2xl p-6 sm:p-8">
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-          <div className="w-16 h-16 rounded-2xl bg-kenya-green/10 border border-kenya-green/30 flex items-center justify-center flex-shrink-0">
-            <span className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-kenya-green-light">
+      <header className="bg-bg-card border border-border rounded-2xl p-3.5 sm:p-7">
+        <div className="flex items-start sm:items-center gap-3 sm:gap-4 mb-3 sm:mb-5">
+          <div className="w-11 h-11 sm:w-15 sm:h-15 rounded-xl sm:rounded-2xl bg-kenya-green/10 border border-kenya-green/30 flex items-center justify-center flex-shrink-0">
+            <span className="text-base sm:text-2xl font-bold font-[family-name:var(--font-outfit)] text-kenya-green-light">
               {codeStr}
             </span>
           </div>
-          <div className="flex-1">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-tight tracking-tight mb-2">
+          <div className="flex-1 min-w-0">
+            <h1 className="text-lg sm:text-3xl lg:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug sm:leading-tight tracking-tight mb-1.5 sm:mb-2">
               {county.name} County Government
             </h1>
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1 text-xs text-text-secondary bg-bg-elevated border border-border rounded-full px-3 py-1 font-semibold">
-                HQ Capital: <strong className="text-gold ml-1">{county.capital}</strong>
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+              <span className="inline-flex items-center gap-1 text-[11px] sm:text-xs text-text-secondary bg-bg-elevated border border-border rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 font-semibold micro-badge">
+                HQ: <strong className="text-gold ml-0.5">{county.capital}</strong>
               </span>
               {rainfall && (
-                <span className="inline-flex items-center gap-1 text-xs text-sky-light bg-sky/10 border border-sky/20 rounded-full px-3 py-1 font-semibold">
+                <span className="inline-flex items-center gap-1 text-[11px] sm:text-xs text-sky-light bg-sky/10 border border-sky/20 rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 font-semibold micro-badge">
                   {rainfall.climateZone} · {rainfall.annualRainfall} mm/yr
                 </span>
               )}
@@ -431,38 +431,38 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
                   href={county.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs text-gold bg-gold/10 border border-gold/20 hover:bg-gold/20 transition-colors rounded-full px-3 py-1 font-semibold"
+                  className="inline-flex items-center gap-1 text-[11px] sm:text-xs text-gold bg-gold/10 border border-gold/20 hover:bg-gold/20 transition-colors rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 font-semibold micro-badge"
                 >
-                  Official County Portal ↗
+                  County Portal ↗
                 </a>
               )}
             </div>
           </div>
         </div>
 
-        {/* Key Statistics Bar */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-border">
-          <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-3.5">
-            <p className="text-[0.65rem] text-text-muted uppercase tracking-wider">Population (2019)</p>
-            <p className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+        {/* Compact Key Statistics Bar */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-border">
+          <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-2 sm:p-3.5">
+            <p className="text-[10px] sm:text-xs text-text-muted uppercase tracking-wider truncate compact-label">Population</p>
+            <p className="text-sm sm:text-xl font-extrabold tabular-nums text-text-primary font-[family-name:var(--font-outfit)]">
               {county.population.toLocaleString()}
             </p>
           </div>
-          <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-3.5">
-            <p className="text-[0.65rem] text-text-muted uppercase tracking-wider">Land Area</p>
-            <p className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-              {county.area.toLocaleString()} <span className="text-xs font-normal text-text-muted">km²</span>
+          <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-2 sm:p-3.5">
+            <p className="text-[10px] sm:text-xs text-text-muted uppercase tracking-wider truncate compact-label">Land Area</p>
+            <p className="text-sm sm:text-xl font-extrabold tabular-nums text-text-primary font-[family-name:var(--font-outfit)]">
+              {county.area.toLocaleString()} <span className="text-[10px] sm:text-xs font-normal text-text-muted">km²</span>
             </p>
           </div>
-          <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-3.5">
-            <p className="text-[0.65rem] text-text-muted uppercase tracking-wider">Pop. Density</p>
-            <p className="text-lg font-bold text-sky-light font-[family-name:var(--font-outfit)]">
-              {density.toLocaleString()} <span className="text-xs font-normal text-text-muted">/km²</span>
+          <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-2 sm:p-3.5">
+            <p className="text-[10px] sm:text-xs text-text-muted uppercase tracking-wider truncate compact-label">Pop. Density</p>
+            <p className="text-sm sm:text-xl font-extrabold tabular-nums text-sky-light font-[family-name:var(--font-outfit)]">
+              {density.toLocaleString()} <span className="text-[10px] sm:text-xs font-normal text-text-muted">/km²</span>
             </p>
           </div>
-          <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-3.5">
-            <p className="text-[0.65rem] text-text-muted uppercase tracking-wider">Constituencies</p>
-            <p className="text-lg font-bold text-gold font-[family-name:var(--font-outfit)]">
+          <div className="bg-bg-elevated/60 border border-border/60 rounded-xl p-2 sm:p-3.5">
+            <p className="text-[10px] sm:text-xs text-text-muted uppercase tracking-wider truncate compact-label">Constituencies</p>
+            <p className="text-sm sm:text-xl font-extrabold tabular-nums text-gold font-[family-name:var(--font-outfit)]">
               {county.constituencies.length}
             </p>
           </div>
@@ -525,36 +525,36 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
               Compare All 47 Budgets →
             </Link>
           </div>
-          <div className="bg-bg-card border border-border rounded-2xl p-5 sm:p-6 space-y-4">
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
-              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
-                <p className="text-[0.65rem] text-text-muted uppercase">Equitable Share</p>
-                <p className="text-base font-bold text-text-primary mt-0.5">
+          <div className="bg-bg-card border border-border rounded-2xl p-3.5 sm:p-6 space-y-3 sm:space-y-4">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-3">
+              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-2 sm:p-3.5">
+                <p className="text-[10px] sm:text-xs text-text-muted uppercase truncate compact-label">Equitable Share</p>
+                <p className="text-sm sm:text-base font-extrabold tabular-nums text-text-primary mt-0.5">
                   KES {budget.allocation.toLocaleString()}M
                 </p>
               </div>
-              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
-                <p className="text-[0.65rem] text-text-muted uppercase">Per-Capita Share</p>
-                <p className="text-base font-bold text-kenya-green-light mt-0.5">
+              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-2 sm:p-3.5">
+                <p className="text-[10px] sm:text-xs text-text-muted uppercase truncate compact-label">Per-Capita</p>
+                <p className="text-sm sm:text-base font-extrabold tabular-nums text-kenya-green-light mt-0.5">
                   KES {perCapitaEquitableShare.toLocaleString()}
                 </p>
               </div>
-              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
-                <p className="text-[0.65rem] text-text-muted uppercase">Own-Source (OSR)</p>
-                <p className="text-base font-bold text-gold mt-0.5 whitespace-nowrap">
+              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-2 sm:p-3.5">
+                <p className="text-[10px] sm:text-xs text-text-muted uppercase truncate compact-label">Own-Source (OSR)</p>
+                <p className="text-sm sm:text-base font-extrabold tabular-nums text-gold mt-0.5 whitespace-nowrap">
                   KES {budget.ownSourceRevenue.toLocaleString()}M
                 </p>
-                <p className="text-[0.65rem] text-text-muted mt-0.5">{osrSharePct}% of revenue</p>
+                <p className="text-[10px] sm:text-xs text-text-muted mt-0.5 truncate compact-label">{osrSharePct}% of rev</p>
               </div>
-              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
-                <p className="text-[0.65rem] text-text-muted uppercase">Total Revenue</p>
-                <p className="text-base font-bold text-sky-light mt-0.5">
+              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-2 sm:p-3.5">
+                <p className="text-[10px] sm:text-xs text-text-muted uppercase truncate compact-label">Total Revenue</p>
+                <p className="text-sm sm:text-base font-extrabold tabular-nums text-sky-light mt-0.5">
                   KES {budget.totalRevenue.toLocaleString()}M
                 </p>
               </div>
-              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5 col-span-2 sm:col-span-1">
-                <p className="text-[0.65rem] text-text-muted uppercase">Actual Expenditure</p>
-                <p className="text-base font-bold text-kenya-green-light mt-0.5">
+              <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-2 sm:p-3.5 col-span-2 sm:col-span-1">
+                <p className="text-[10px] sm:text-xs text-text-muted uppercase truncate compact-label">Expenditure</p>
+                <p className="text-sm sm:text-base font-extrabold tabular-nums text-kenya-green-light mt-0.5">
                   KES {budget.expenditure.toLocaleString()}M
                 </p>
               </div>

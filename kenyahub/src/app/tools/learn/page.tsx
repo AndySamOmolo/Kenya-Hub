@@ -15,7 +15,6 @@ import {
   ChevronDown,
   Globe,
   Shuffle,
-  Sparkles,
   Trophy,
 } from "lucide-react";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
@@ -198,71 +197,56 @@ export default function LearnPage() {
 
   return (
     <ToolShell tool={LEARN_TOOL} guideOverride={learnGuideOverride} hideSource>
-      <div className="mx-auto max-w-4xl px-1 sm:px-4 pt-4 pb-10 space-y-6">
-        {/* ── Flagship Learner Dashboard & Quick Translator Banner ── */}
-        <div className="space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold mb-2">
-                <Sparkles className="w-3.5 h-3.5" /> Kenyan Language Learning
-              </div>
-              <h2 className="text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug text-balance">
-                {overallStats.totalXp > 0
-                  ? `Welcome back! Keep building your Kenyan language fluency`
-                  : <>Start learning any of <span className="whitespace-nowrap">{readyLangs.length} interactive</span> Kenyan language <span className="whitespace-nowrap">courses</span></>}
-              </h2>
-              <p className="text-xs sm:text-sm text-text-secondary mt-1 leading-relaxed">
-                Every course includes guided skill trees, 3D vocabulary flashcards, written phonetic guides, grammar tables, 14 mini-games, and oral proverbs.
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center gap-2.5 shrink-0">
-              {overallStats.resumeLang && overallStats.totalXp > 0 && (
-                <Link
-                  href={`/tools/learn/${overallStats.resumeLang.id}/`}
-                  className="btn-gold text-xs sm:text-sm px-3.5 py-2 sm:px-4 sm:py-2.5"
-                >
-                  Resume {overallStats.resumeLang.name}
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              )}
+      <div className="mx-auto max-w-4xl px-0 sm:px-2 pt-1 sm:pt-2 pb-8 space-y-3 sm:space-y-5">
+        {/* ── Compact Quick Actions + Learner Stats & Word Spotlight ── */}
+        <div className="space-y-2.5 sm:space-y-3.5">
+          <div className="flex flex-wrap items-center gap-2">
+            {overallStats.resumeLang && overallStats.totalXp > 0 && (
               <Link
-                href="/tools/kenyan-translator/"
-                className="btn-outline text-xs sm:text-sm px-3 py-2 sm:px-3.5 sm:py-2.5"
+                href={`/tools/learn/${overallStats.resumeLang.id}/`}
+                className="btn-gold text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2"
               >
-                <Globe className="w-4 h-4 text-kenya-green-light" />
-                {ALL_DICT_METAS.length}-Language Translator ({TOTAL_DICTIONARY_ENTRIES.toLocaleString()} Words)
+                Resume {overallStats.resumeLang.name}
+                <ArrowRight className="w-3.5 h-3.5" />
               </Link>
-            </div>
+            )}
+            <Link
+              href="/tools/kenyan-translator/"
+              className="btn-outline text-xs sm:text-sm px-3 py-1.5 sm:px-3.5 sm:py-2"
+            >
+              <Globe className="w-3.5 h-3.5 text-kenya-green-light" />
+              {ALL_DICT_METAS.length}-Language Translator ({TOTAL_DICTIONARY_ENTRIES.toLocaleString()} Words)
+            </Link>
           </div>
 
-          {/* 3-Column Learner Summary & Daily Word Spotlight */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {/* 3-Column Compact KPI Summary & Daily Word Spotlight */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 sm:gap-3">
             <div className="grid grid-cols-3 gap-2 md:col-span-1">
-              <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2.5 text-center">
-                <div className="text-base sm:text-lg font-bold text-gold flex items-center justify-center gap-1">
-                  <Zap className="w-4 h-4 shrink-0" />
+              <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 text-center">
+                <div className="text-sm sm:text-xl font-extrabold tabular-nums text-gold flex items-center justify-center gap-1">
+                  <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                   <span>{overallStats.totalXp}</span>
                 </div>
-                <div className="text-xs text-text-muted mt-0.5">Total XP</div>
+                <div className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted mt-0.5 truncate compact-label">Total XP</div>
               </div>
-              <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2.5 text-center">
-                <div className="text-base sm:text-lg font-bold text-orange-400 flex items-center justify-center gap-1">
-                  <Flame className="w-4 h-4 shrink-0" />
+              <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 text-center">
+                <div className="text-sm sm:text-xl font-extrabold tabular-nums text-orange-400 flex items-center justify-center gap-1">
+                  <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                   <span>{overallStats.bestStreak}d</span>
                 </div>
-                <div className="text-xs text-text-muted mt-0.5">Best Streak</div>
+                <div className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted mt-0.5 truncate compact-label">Best Streak</div>
               </div>
-              <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2.5 text-center">
-                <div className="text-base sm:text-lg font-bold text-kenya-green-light flex items-center justify-center gap-1">
-                  <Trophy className="w-4 h-4 shrink-0" />
+              <div className="rounded-xl bg-bg-elevated/70 border border-border/60 p-2 sm:p-3.5 text-center">
+                <div className="text-sm sm:text-xl font-extrabold tabular-nums text-kenya-green-light flex items-center justify-center gap-1">
+                  <Trophy className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                   <span>{overallStats.totalWords}</span>
                 </div>
-                <div className="text-xs text-text-muted mt-0.5">Words</div>
+                <div className="text-[10px] sm:text-xs uppercase tracking-wider text-text-muted mt-0.5 truncate compact-label">Words</div>
               </div>
             </div>
 
             {spotlightWord && (
-              <div className="md:col-span-2 rounded-xl bg-bg-elevated/70 border border-gold/25 p-3 sm:px-4 flex items-center justify-between gap-3">
+              <div className="md:col-span-2 rounded-xl bg-bg-elevated/70 border border-gold/25 p-2.5 sm:px-4 flex items-center justify-between gap-2.5">
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2 text-xs text-gold font-semibold">
                     <span>Word of the Moment ({spotlightWord.langName})</span>
@@ -299,7 +283,7 @@ export default function LearnPage() {
         </div>
 
         {/* Standalone Horizontal Pill Menu (Courses | Proverbs & Wisdom) */}
-        <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
+        <ExpandablePillRow className="[&>button]:!h-7 [&>button]:!w-7 sm:[&>button]:!h-8 sm:[&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
           {[
             { id: "courses" as const, label: `Interactive Courses (${readyLangs.length})` },
             { id: "proverbs" as const, label: "Proverbs, Riddles & Oral Wisdom" },
@@ -312,7 +296,7 @@ export default function LearnPage() {
                   setActiveHubTab(tab.id);
                   scrollToTopIfScrolled();
                 }}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 min-h-[38px] inline-flex items-center text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 sm:px-4 sm:py-1.5 min-h-[32px] sm:min-h-[38px] inline-flex items-center text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -329,20 +313,20 @@ export default function LearnPage() {
         ) : (
           <>
             {/* Search & Family Filter Controls */}
-            <div className="space-y-3">
-              <div className="flex flex-col sm:flex-row items-stretch gap-3">
+            <div className="space-y-2 sm:space-y-3">
+              <div className="flex flex-col sm:flex-row items-stretch gap-2 sm:gap-3">
                 <div className="flex-1">
                   <SearchInput
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onClear={() => setSearchQuery("")}
                     placeholder="Search language or county..."
-                    className="w-full !h-11 !rounded-xl text-sm"
+                    className="w-full !h-9 sm:!h-11 !rounded-xl text-sm"
                   />
                 </div>
                 <button
                   onClick={() => setShowAllModules(!showAllModules)}
-                  className="inline-flex h-11 items-center justify-center gap-1.5 rounded-xl border border-border bg-bg-elevated px-4 text-xs font-semibold text-gold hover:border-gold/50 transition-colors shrink-0 cursor-pointer"
+                  className="inline-flex h-9 sm:h-11 items-center justify-center gap-1.5 rounded-xl border border-border bg-bg-elevated px-3.5 text-xs font-semibold text-gold hover:border-gold/50 transition-colors shrink-0 cursor-pointer"
                 >
                   <Layers className="h-3.5 w-3.5" />
                   <span>{showAllModules ? "Hide Module Previews" : "Preview All Modules"}</span>
@@ -354,7 +338,7 @@ export default function LearnPage() {
                 </button>
               </div>
 
-              <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
+              <ExpandablePillRow className="[&>button]:!h-7 [&>button]:!w-7 sm:[&>button]:!h-8 sm:[&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
                 {families.map((fam) => {
                   const active = familyFilter === fam;
                   const count =
@@ -366,7 +350,7 @@ export default function LearnPage() {
                       key={fam}
                       type="button"
                       onClick={() => setFamilyFilter(fam)}
-                      className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[36px] inline-flex items-center justify-center text-xs font-semibold border transition-all cursor-pointer ${
+                      className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[36px] inline-flex items-center justify-center text-xs font-semibold border transition-all cursor-pointer ${
                         active
                           ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                           : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"

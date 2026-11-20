@@ -41,6 +41,7 @@ interface ToolShellProps {
   children: React.ReactNode;
   faq?: FAQItem[];
   breadcrumbSuffix?: BreadcrumbItem[];
+  breadcrumbParentLabel?: string;
   hideHeader?: boolean;
   hideFooter?: boolean;
   hideSource?: boolean;
@@ -286,6 +287,7 @@ export default function ToolShell({
   children,
   faq = [],
   breadcrumbSuffix = [],
+  breadcrumbParentLabel,
   hideHeader = false,
   hideFooter = false,
   hideSource = false,
@@ -331,6 +333,16 @@ export default function ToolShell({
   const isCulturalOrLanguageTool = tool.category === "language-learning";
   const hasBothGuideCols = guideNotes.length > 0 && complianceTips.length > 0;
 
+  const parentCrumbLabel = breadcrumbParentLabel || tool.shortTitle;
+  const dedupedBreadcrumbSuffix = breadcrumbSuffix.filter((b, idx) => {
+    const labelNorm = b.label.trim().toLowerCase();
+    const parentNorm = parentCrumbLabel.trim().toLowerCase();
+    if (idx === 0 && (labelNorm === parentNorm || parentNorm === `learn ${labelNorm}`)) {
+      return false;
+    }
+    return true;
+  });
+
   // Build BreadcrumbList JSON-LD using only canonical indexable URLs (no ?category= query URLs per SEO-1)
   const baseBreadcrumbItems = [
     {
@@ -348,12 +360,12 @@ export default function ToolShell({
     {
       "@type": "ListItem",
       position: 3,
-      name: tool.shortTitle,
+      name: parentCrumbLabel,
       item: `https://kenyahub.me/tools/${tool.slug}/`,
     },
   ];
 
-  const suffixBreadcrumbItems = breadcrumbSuffix.map((b, idx) => ({
+  const suffixBreadcrumbItems = dedupedBreadcrumbSuffix.map((b, idx) => ({
     "@type": "ListItem",
     position: baseBreadcrumbItems.length + idx + 1,
     name: b.label,
@@ -470,7 +482,7 @@ export default function ToolShell({
       : null;
 
   return (
-    <div className={`max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ${hideHeader ? "py-3 sm:py-5" : "py-5 sm:py-10"}`}>
+    <div className={`max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 ${hideHeader ? "py-2.5 sm:py-5" : "pt-3 pb-4 sm:py-8"}`}>
       <ToolAccessTracker tool={tool} />
 
       {/* Structured Data */}
@@ -493,30 +505,30 @@ export default function ToolShell({
         />
       )}
 
-      {/* ── Breadcrumbs ── */}
+      {/* ── Breadcrumbs (Single-Line Scrollable on Mobile) ── */}
       {!hideHeader && (
         <nav
           aria-label="Breadcrumb"
           data-adsense-ignore="true"
-          className="flex items-center gap-1.5 text-xs text-text-muted mb-3 sm:mb-6 flex-wrap leading-relaxed"
+          className="flex flex-nowrap items-center gap-1.5 overflow-x-auto no-scrollbar whitespace-nowrap text-[11px] sm:text-xs text-text-muted mb-2 sm:mb-4 micro-badge"
         >
-          <Link href="/" className="hover:text-gold transition-colors">
+          <Link href="/" className="hover:text-gold transition-colors shrink-0">
             Home
           </Link>
           <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
-          <Link href="/tools/" className="hover:text-gold transition-colors">
+          <Link href="/tools/" className="hover:text-gold transition-colors shrink-0">
             Tools
           </Link>
-          {category && (
+          {category && dedupedBreadcrumbSuffix.length === 0 && (
             <>
               <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
               <Link
                 href={`/tools/?category=${tool.category}`}
-                className="hover:text-gold transition-colors"
+                className="hover:text-gold transition-colors shrink-0"
               >
                 {category.name}
               </Link>
@@ -525,44 +537,44 @@ export default function ToolShell({
           <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
-          {breadcrumbSuffix.length > 0 ? (
+          {dedupedBreadcrumbSuffix.length > 0 ? (
             <>
-              <Link href={`/tools/${tool.slug}/`} className="hover:text-gold transition-colors">
-                {tool.shortTitle}
+              <Link href={`/tools/${tool.slug}/`} className="hover:text-gold transition-colors shrink-0">
+                {parentCrumbLabel}
               </Link>
-              {breadcrumbSuffix.map((item, idx) => (
-                <span key={idx} className="inline-flex items-center gap-1.5">
+              {dedupedBreadcrumbSuffix.map((item, idx) => (
+                <span key={idx} className="inline-flex items-center gap-1.5 shrink-0">
                   <svg className="w-3 h-3 text-border-light shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
-                  {item.href ? (
-                    <Link href={item.href} className="hover:text-gold transition-colors">
+                  {item.href && idx < dedupedBreadcrumbSuffix.length - 1 ? (
+                    <Link href={item.href} className="hover:text-gold transition-colors shrink-0">
                       {item.label}
                     </Link>
                   ) : (
-                    <span className="text-text-secondary">{item.label}</span>
+                    <span className="text-text-secondary font-medium shrink-0">{item.label}</span>
                   )}
                 </span>
               ))}
             </>
           ) : (
-            <span className="text-text-secondary">{tool.shortTitle}</span>
+            <span className="text-text-secondary font-medium shrink-0">{parentCrumbLabel}</span>
           )}
         </nav>
       )}
 
       {/* ── Tool Header ── */}
       {!hideHeader && (
-        <header className="mb-5 sm:mb-8">
-          <div className="flex items-start justify-between gap-3 sm:gap-4 mb-2 sm:mb-3">
-            <div className="flex items-start gap-3 sm:gap-4 min-w-0 flex-1">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span className="text-xl sm:text-2xl">
+        <header className="mb-2.5 sm:mb-5">
+          <div className="flex items-start justify-between gap-2.5 sm:gap-4 mb-1.5 sm:mb-2.5">
+            <div className="flex items-start gap-2.5 sm:gap-3.5 min-w-0 flex-1">
+              <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl bg-white/[0.04] border border-border flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="text-base sm:text-xl">
                   <DynamicIcon emoji={tool.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" />
                 </span>
               </div>
               <div className="min-w-0 flex-1">
-                <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug sm:leading-tight tracking-tight break-words text-balance">
+                <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug sm:leading-tight tracking-tight break-words text-balance">
                   {renderFormattedTitle(tool.title)}
                 </h1>
               </div>
@@ -572,30 +584,25 @@ export default function ToolShell({
             </div>
           </div>
 
-          {/* Collapsible intro description on mobile (<md) to bring calculator inputs above the fold (F-038) */}
-          <details className="sm:hidden mt-2 group">
+          {/* Collapsible intro description on mobile (<sm) to bring tool controls above the fold */}
+          <details className="sm:hidden mt-1 group">
             <summary className="text-xs font-medium text-text-muted hover:text-gold cursor-pointer list-none inline-flex items-center gap-1 select-none">
               <span>About this tool</span>
               <svg className="w-3.5 h-3.5 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
-            <p className="text-text-secondary text-sm leading-relaxed mt-1.5">
+            <p className="text-text-secondary text-xs leading-relaxed mt-1">
               {tool.description}
             </p>
           </details>
-          <p className="hidden sm:block text-text-secondary text-sm sm:text-base leading-relaxed max-w-3xl">
+          <p className="hidden sm:block text-text-secondary text-sm leading-relaxed max-w-3xl">
             {tool.description}
           </p>
 
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-2.5 sm:mt-4">
-            {category && (
-              <span className={`badge ${category.badgeClass}`}>
-                <DynamicIcon emoji={category.icon} className="w-[1em] h-[1em] inline-block mb-[0.1em]" /> {category.name}
-              </span>
-            )}
-            {!hideSource && (
-              <span className="text-xs text-text-muted inline-flex items-center gap-1.5 break-words max-w-full min-w-0">
+          {!hideSource && (
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-1.5 sm:mt-2.5">
+              <span className="text-[11px] sm:text-xs text-text-muted inline-flex items-center gap-1.5 break-words max-w-full min-w-0 micro-badge">
                 <svg className="w-3.5 h-3.5 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -612,8 +619,8 @@ export default function ToolShell({
                   <span className="min-w-0 break-words">Source: {tool.dataSource}</span>
                 )}
               </span>
-            )}
-          </div>
+            </div>
+          )}
         </header>
       )}
 

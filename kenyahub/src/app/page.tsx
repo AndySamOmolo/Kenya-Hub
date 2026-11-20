@@ -110,10 +110,10 @@ export default function HomePage() {
             <div className="absolute top-1/3 left-1/4 w-1 h-1 rounded-full bg-kenya-red/20 animate-float" style={{ animationDelay: "2s" }} />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-7 pb-8 sm:pt-12 sm:pb-14">
+          <div className="relative max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-4 pb-5 sm:pt-12 sm:pb-14">
             <div className="max-w-3xl mx-auto sm:mx-0 flex flex-col items-center sm:items-start text-center sm:text-left">
               {/* Centered Hero Badge Pill on Mobile */}
-              <div className="flex justify-center sm:justify-start mb-4 sm:mb-6 w-full">
+              <div className="flex justify-center sm:justify-start mb-2.5 sm:mb-5 w-full">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 text-center shadow-sm max-w-full">
                   <span className="relative flex h-1.5 w-1.5 shrink-0">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-kenya-green opacity-75" />
@@ -125,12 +125,12 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h1 className="text-2xl sm:text-5xl lg:text-[3.25rem] font-extrabold font-[family-name:var(--font-outfit)] leading-[1.25] tracking-tight mb-4 sm:mb-6 text-center sm:text-left w-full">
+              <h1 className="text-xl sm:text-5xl lg:text-[3.25rem] font-extrabold font-[family-name:var(--font-outfit)] leading-[1.2] tracking-tight mb-2.5 sm:mb-5 text-center sm:text-left w-full">
                 Learn <span className="gradient-text-kenya">Kenyan languages</span>{" "}
                 &amp; everyday public tools
               </h1>
 
-              <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-6 sm:mb-7 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
+              <p className="text-xs sm:text-base text-text-secondary leading-relaxed mb-4 sm:mb-7 max-w-2xl mx-auto sm:mx-0 text-center sm:text-left">
                 Master <strong>23 indigenous Kenyan languages</strong> through interactive skill trees, flashcards, grammar guides, and historical proverbs — alongside Kenya&apos;s essential tools for 2026 PAYE salary, M-Pesa fees, KRA car import duty, 47 Counties, and Matatu routes.
               </p>
 
@@ -167,9 +167,9 @@ export default function HomePage() {
       </section>
 
       {/* FLAGSHIP MAIN FEATURE: KENYAN LANGUAGE LEARNING & TRANSLATOR HUB */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
-        <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-5 sm:p-8 lg:p-10 shadow-xl">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6 sm:mb-8">
+      <section className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-5 sm:py-14">
+        <div className="rounded-2xl sm:rounded-3xl border border-gold/35 bg-gradient-to-br from-bg-card via-bg-card to-bg-elevated p-3.5 sm:p-8 lg:p-10 shadow-xl">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-3 sm:gap-4 mb-4 sm:mb-8">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-[0.65rem] sm:text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
                 <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> Flagship Feature
@@ -197,41 +197,41 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* 4 Pillar Highlights */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <div className="rounded-xl border border-border bg-bg-elevated/50 p-4">
-              <div className="flex items-center gap-2 text-gold font-bold text-sm mb-1">
-                <Languages className="w-4 h-4 shrink-0" />
-                <span>{PUBLISHED_COURSE_SUMMARIES.length} Guided Courses</span>
+          {/* 4 Pillar Highlights (Compact 2x2 on Mobile) */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 mb-4 sm:mb-8">
+            <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
+              <div className="flex items-center gap-1.5 text-gold font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
+                <Languages className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                <span className="truncate">{PUBLISHED_COURSE_SUMMARIES.length} Courses</span>
               </div>
-              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
                 Structured units teaching greetings, kinship, verbs, numbers, and daily conversation.
               </p>
             </div>
-            <div className="rounded-xl border border-border bg-bg-elevated/50 p-4">
-              <div className="flex items-center gap-2 text-kenya-green-light font-bold text-sm mb-1">
-                <Layers className="w-4 h-4 shrink-0" />
-                <span>3D Flip Flashcards</span>
+            <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
+              <div className="flex items-center gap-1.5 text-kenya-green-light font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
+                <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                <span className="truncate">3D Flashcards</span>
               </div>
-              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
                 Interactive study decks, spaced repetition reviews, and written phonetic guides.
               </p>
             </div>
-            <div className="rounded-xl border border-border bg-bg-elevated/50 p-4">
-              <div className="flex items-center gap-2 text-sky-light font-bold text-sm mb-1">
-                <Gamepad2 className="w-4 h-4 shrink-0" />
-                <span>14 Language Mini-Games</span>
+            <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
+              <div className="flex items-center gap-1.5 text-sky-light font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
+                <Gamepad2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                <span className="truncate">14 Mini-Games</span>
               </div>
-              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
-                Play Wordle, Word Scramble, Speed Match, Memory Cards, Riddles, Methali Builder & 8 more games.
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
+                Play Wordle, Word Scramble, Speed Match, Memory Cards, Riddles, Methali Builder &amp; 8 more games.
               </p>
             </div>
-            <div className="rounded-xl border border-border bg-bg-elevated/50 p-4">
-              <div className="flex items-center gap-2 text-gold font-bold text-sm mb-1">
-                <BookOpen className="w-4 h-4 shrink-0" />
-                <span>1,000+ Proverbs &amp; Grammar</span>
+            <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
+              <div className="flex items-center gap-1.5 text-gold font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
+                <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                <span className="truncate">1,000+ Proverbs</span>
               </div>
-              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
                 Authentic Gĩkũyũ, Dholuo, Bantu, Nilotic &amp; Cushitic proverbs, riddles, and grammar tables.
               </p>
             </div>
