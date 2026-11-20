@@ -14,7 +14,7 @@ import {
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle, pickRandom } from "./shared";
+import { type GameProps, shuffle, pickRandom, cleanQuizGloss, isValidQuizPair, pickBalancedDistractors } from "./shared";
 
 export function MethaliBuilderGame({
   allWords,
@@ -69,16 +69,16 @@ export function MethaliBuilderGame({
       if (activeMode === "tiles") {
         const capped = words.slice(0, 9);
         setTargetTokens(capped);
-        const distractorWords = shuffle(
-          allWords
-            .map((w) => w.target.split(/\s+/)[0])
-            .filter(
-              (w) =>
-                w &&
-                w.length >= 3 &&
-                !capped.some((c) => c.toLowerCase() === w.toLowerCase())
-            )
-        ).slice(0, 2);
+        const tileCandidates = allWords
+          .filter((w) => isValidQuizPair(w.target, w.source))
+          .map((w) => cleanQuizGloss(w.target).split(/\s+/)[0])
+          .filter(
+            (w) =>
+              w &&
+              w.length >= 3 &&
+              !capped.some((c) => c.toLowerCase() === w.toLowerCase())
+          );
+        const distractorWords = pickBalancedDistractors(capped[0] || words[0], tileCandidates, 2);
         setTilePool(shuffle([...capped, ...distractorWords]));
         setSelectedIndices([]);
       } else {
@@ -88,18 +88,15 @@ export function MethaliBuilderGame({
         setPromptStem(firstHalf);
         setCorrectEnding(secondHalf);
 
-        const otherEndings = shuffle(
-          proverbsPool
-            .filter((p) => p.id !== item.id)
-            .map((p) => {
-              const w = p.nativeText
-                .replace(/[.!?]+$/g, "")
-                .trim()
-                .split(/\s+/);
-              return w.slice(Math.max(1, Math.floor(w.length / 2))).join(" ");
-            })
-            .filter((e) => e && e.toLowerCase() !== secondHalf.toLowerCase())
-        ).slice(0, 3);
+        const endingCandidates = proverbsPool
+          .filter((p) => p.id !== item.id)
+          .map((p) => {
+            const cleanedP = cleanQuizGloss(p.nativeText).replace(/[.!?]+$/g, "").trim();
+            const w = cleanedP.split(/\s+/).filter(Boolean);
+            return w.slice(Math.max(1, Math.floor(w.length / 2))).join(" ");
+          })
+          .filter(Boolean);
+        const otherEndings = pickBalancedDistractors(secondHalf, endingCandidates, 3);
         setEndingOptions(shuffle([secondHalf, ...otherEndings]));
       }
     },

@@ -9,7 +9,7 @@ import {
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle, RIDDLE_CALL_RESPONSE } from "./shared";
+import { type GameProps, shuffle, RIDDLE_CALL_RESPONSE, cleanQuizGloss, pickBalancedDistractors } from "./shared";
 
 export function RiddleGame({
   languageName,
@@ -37,22 +37,19 @@ export function RiddleGame({
 
   const currentRiddle = riddlesPool[round];
 
+  const cleanAnswer = currentRiddle ? cleanQuizGloss(currentRiddle.answer) || currentRiddle.answer : "";
+
   const options = useMemo(() => {
     if (!currentRiddle) return [];
     const allForLang = getRiddlesForLanguage(languageId, languageName);
-    const distractors = shuffle(
-      allForLang.filter(
-        (r) => r.answer.toLowerCase() !== currentRiddle.answer.toLowerCase()
-      )
-    )
-      .slice(0, 3)
-      .map((r) => r.answer);
-    return shuffle([currentRiddle.answer, ...distractors]);
-  }, [currentRiddle, languageId, languageName]);
+    const candidates = allForLang.map((r) => cleanQuizGloss(r.answer) || r.answer);
+    const distractors = pickBalancedDistractors(cleanAnswer, candidates, 3);
+    return shuffle([cleanAnswer, ...distractors]);
+  }, [currentRiddle, cleanAnswer, languageId, languageName]);
 
   const handlePick = (ans: string) => {
     if (feedback !== null || !currentRiddle) return;
-    const isRight = ans === currentRiddle.answer;
+    const isRight = ans === cleanAnswer;
     setFeedback(ans);
 
     if (isRight) {
@@ -181,7 +178,7 @@ export function RiddleGame({
           let btnStyle =
             "border-border bg-bg-card text-text-primary hover:border-gold/40";
           if (feedback !== null) {
-            if (opt === currentRiddle.answer) {
+            if (opt === cleanAnswer) {
               btnStyle =
                 "border-kenya-green bg-kenya-green/10 text-kenya-green font-bold";
             } else if (feedback === opt) {

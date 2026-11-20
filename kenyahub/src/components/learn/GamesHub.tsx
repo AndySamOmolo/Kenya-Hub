@@ -19,8 +19,6 @@ import {
   Compass,
   Layers,
   Globe2,
-  MapPin,
-  MessageSquare,
   Flame,
   Filter,
 } from "lucide-react";
@@ -48,8 +46,6 @@ import { NounClassSorterGame } from "./games/NounClassSorterGame";
 import { OddWordOutGame } from "./games/OddWordOutGame";
 import { PolyglotBridgeGame } from "./games/PolyglotBridgeGame";
 import { TongueTwisterGame } from "./games/TongueTwisterGame";
-import { CountiesGeoGame } from "./games/CountiesGeoGame";
-import { MatatuShengGame } from "./games/MatatuShengGame";
 
 interface GamesHubProps {
   units: CourseUnit[];
@@ -75,9 +71,7 @@ type GameType =
   | "nounClass"
   | "oddWord"
   | "polyglot"
-  | "twister"
-  | "counties"
-  | "sheng";
+  | "twister";
 
 export default function GamesHub({
   units,
@@ -350,24 +344,6 @@ export default function GamesHub({
         badgeColor: "bg-orange-500/10 text-orange-400",
         bestText: "Phonetics Sprint",
       },
-      {
-        id: "counties" as GameType,
-        title: "47 Counties & Homelands",
-        subtitle: "Kenyan Linguistic Geography",
-        desc: `Match Kenya's 23 courses to their indigenous counties, speaker populations, and language families.`,
-        icon: <MapPin className="w-6 h-6" />,
-        badgeColor: "bg-teal-500/10 text-teal-400",
-        bestText: "47 Counties Atlas",
-      },
-      {
-        id: "sheng" as GameType,
-        title: "Sokoni & Matatu Dialogue",
-        subtitle: "Everyday Market & Stage Scenarios",
-        desc: `Respond to Mama Mboga at the market, fellow travelers at the stage, and elders at the homestead.`,
-        icon: <MessageSquare className="w-6 h-6" />,
-        badgeColor: "bg-gold/15 text-gold",
-        bestText: "Real-Life Scenarios",
-      },
     ];
 
     return (
@@ -385,10 +361,10 @@ export default function GamesHub({
               <Gamepad2 className="w-11 h-11 text-gold" />
             </div>
             <h2 className="font-[family-name:var(--font-outfit)] text-2xl font-bold text-text-primary">
-              {languageName} Arcade &amp; Cultural Games (14)
+              {languageName} Arcade &amp; Cultural Games (12)
             </h2>
             <p className="mt-1.5 text-xs sm:text-sm text-text-secondary max-w-xl mx-auto">
-              Master {languageName} orthography, morphology, proverbs, riddles, and conversational fluency across 14 interactive games.
+              Master {languageName} orthography, morphology, proverbs, riddles, and conversational fluency across 12 interactive games.
             </p>
             <p className="mt-2.5 text-[0.6875rem] font-semibold uppercase tracking-wide text-gold">
               Adaptive SRS Integration • Earned XP Counts Toward Daily Quests &amp; Streaks
@@ -554,18 +530,6 @@ export default function GamesHub({
         <>
           {gameHeader("Kikokotoo Tongue Twisters", "🗣️")}
           <TongueTwisterGame {...sharedGameProps} />
-        </>
-      )}
-      {activeGame === "counties" && (
-        <>
-          {gameHeader("47 Counties & Homelands", "🗺️")}
-          <CountiesGeoGame {...sharedGameProps} />
-        </>
-      )}
-      {activeGame === "sheng" && (
-        <>
-          {gameHeader("Sokoni & Matatu Dialogue", "🚐")}
-          <MatatuShengGame {...sharedGameProps} />
         </>
       )}
     </div>

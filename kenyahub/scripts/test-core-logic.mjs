@@ -111,7 +111,7 @@ test("LOGIC-04..06: KCSE B+ career qualification, Mobile M-Pesa withdrawal fee e
 });
 
 // 6. ARCH-01 & COPY-01: Dead mobile files removed & copy counts accurate
-test("ARCH-01 & COPY-01: 14 legacy mobile tool files are removed and copy reflects 14 mini-games & 23 languages", () => {
+test("ARCH-01 & COPY-01: 14 legacy mobile tool files are removed and copy reflects 12 mini-games & 23 languages", () => {
   assert.ok(!fs.existsSync(path.join(MOBILE_ROOT, "src/tools/ReferenceDirectoryTool.tsx")), "ReferenceDirectoryTool.tsx must be removed");
   assert.ok(!fs.existsSync(path.join(MOBILE_ROOT, "src/tools/advanced/SolarRoiTool.tsx")), "SolarRoiTool.tsx must be removed");
 
@@ -119,7 +119,15 @@ test("ARCH-01 & COPY-01: 14 legacy mobile tool files are removed and copy reflec
   const adminSrc = fs.readFileSync(path.join(WEB_ROOT, "src/app/admin/page.tsx"), "utf8");
   const registrySrc = fs.readFileSync(path.join(WEB_ROOT, "src/lib/tools-registry.ts"), "utf8");
 
-  assert.ok(homeSrc.includes("14 vocabulary mini-games"), "Homepage must state 14 vocabulary mini-games");
+  assert.ok(homeSrc.includes("12 vocabulary mini-games"), "Homepage must state 12 vocabulary mini-games");
+  assert.ok(!fs.existsSync(path.join(WEB_ROOT, "src/components/learn/games/CountiesGeoGame.tsx")), "CountiesGeoGame.tsx must be removed");
+  assert.ok(!fs.existsSync(path.join(WEB_ROOT, "src/components/learn/games/MatatuShengGame.tsx")), "MatatuShengGame.tsx must be removed");
+  const sharedSrc = fs.readFileSync(path.join(WEB_ROOT, "src/components/learn/games/shared.ts"), "utf8");
+  const engineSrc = fs.readFileSync(path.join(WEB_ROOT, "src/lib/learn-engine.ts"), "utf8");
+  for (const fn of ["cleanQuizGloss", "isValidQuizPair", "pickBalancedDistractors"]) {
+    assert.ok(sharedSrc.includes(fn), `games/shared.ts must export ${fn}`);
+    assert.ok(engineSrc.includes(`export function ${fn}`), `learn-engine.ts must export ${fn}`);
+  }
   assert.ok(adminSrc.includes("across all 23 Kenyan languages"), "Admin page must state 23 Kenyan languages");
   assert.ok(registrySrc.includes("'sha-benefit-estimator':"), "TOOL_USAGE_SCORES must include civic tools");
 });

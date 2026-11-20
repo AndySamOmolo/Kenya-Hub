@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Clock, Flame, RotateCcw, Star, Zap, ArrowLeftRight } from "lucide-react";
 import type { WordPair } from "@/data/courses/types";
 import {
@@ -10,7 +10,7 @@ import {
   playStreakSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle, pickAdaptiveWord } from "./shared";
+import { type GameProps, shuffle, pickAdaptiveWord, cleanQuizGloss, isValidQuizPair, pickBalancedDistractors } from "./shared";
 
 type SpeedDirection = "to_english" | "to_target" | "mixed";
 
@@ -23,6 +23,18 @@ export function SpeedMatchGame({
   onUpdateGameStats,
 }: GameProps) {
   const GAME_DURATION = 60;
+  const cleanPool = useMemo(
+    () =>
+      allWords
+        .filter((w) => isValidQuizPair(w.target, w.source))
+        .map((w) => ({
+          ...w,
+          target: cleanQuizGloss(w.target),
+          source: cleanQuizGloss(w.source),
+        }))
+        .filter((w) => w.target && w.source),
+    [allWords]
+  );
 
   const [direction, setDirection] = useState<SpeedDirection>("mixed");
   const [gameState, setGameState] = useState<"ready" | "playing" | "done">("ready");
@@ -43,8 +55,8 @@ export function SpeedMatchGame({
 
   const generateRound = useCallback(
     (dirMode: SpeedDirection = direction) => {
-      if (allWords.length < 4) return;
-      const word = pickAdaptiveWord(allWords, progress);
+      if (cleanPool.length < 4) return;
+      const word = pickAdaptiveWord(cleanPool, progress);
       const activeDir: "to_english" | "to_target" =
         dirMode === "mixed"
           ? Math.random() < 0.5
@@ -54,28 +66,26 @@ export function SpeedMatchGame({
       setRoundDir(activeDir);
 
       if (activeDir === "to_english") {
-        const distractors = shuffle(
-          allWords.filter((w) => w.source.toLowerCase() !== word.source.toLowerCase())
-        )
-          .slice(0, 3)
+        const candidates = cleanPool
+          .filter((w) => w.target.toLowerCase() !== word.target.toLowerCase())
           .map((w) => w.source);
+        const distractors = pickBalancedDistractors(word.source, candidates, 3);
         setCurrentWord(word);
         setOptions(shuffle([word.source, ...distractors]));
       } else {
-        const distractors = shuffle(
-          allWords.filter((w) => w.target.toLowerCase() !== word.target.toLowerCase())
-        )
-          .slice(0, 3)
+        const candidates = cleanPool
+          .filter((w) => w.source.toLowerCase() !== word.source.toLowerCase())
           .map((w) => w.target);
+        const distractors = pickBalancedDistractors(word.target, candidates, 3);
         setCurrentWord(word);
         setOptions(shuffle([word.target, ...distractors]));
       }
     },
-    [allWords, direction, progress]
+    [cleanPool, direction, progress]
   );
 
   const startGame = () => {
-    if (allWords.length < 4) return;
+    if (cleanPool.length < 4) return;
     awardedRef.current = false;
     setGameState("playing");
     setScore(0);
@@ -257,7 +267,7 @@ export function SpeedMatchGame({
         <button
           type="button"
           onClick={startGame}
-          disabled={allWords.length < 4}
+          disabled={cleanPool.length < 4}
           className="mt-6 flex items-center gap-2 rounded-xl bg-gold px-8 py-3 text-sm font-bold text-kenya-black transition-all active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 sm:hover:brightness-110 mx-auto cursor-pointer"
         >
           <span>{untimed ? "Start Relaxed Practice" : "Start 60s Blitz"}</span>{" "}

@@ -16,6 +16,8 @@ import {
   shuffle,
   pickAdaptiveWord,
   isSingleWordLexical,
+  cleanQuizGloss,
+  isValidQuizPair,
 } from "./shared";
 
 function cleanScrambleToken(raw: string): string {
@@ -37,9 +39,10 @@ export function ScrambleGame({
   const validWords = useMemo(
     () =>
       allWords
-        .filter((w) => isSingleWordLexical(w.target))
+        .filter((w) => isSingleWordLexical(w.target) && isValidQuizPair(w.target, w.source))
         .map((w) => ({
           ...w,
+          source: cleanQuizGloss(w.source),
           cleanTarget: cleanScrambleToken(w.target),
         }))
         .filter((w) => w.cleanTarget.length >= 3 && w.cleanTarget.length <= 10),

@@ -282,7 +282,6 @@ export default function ToolsScreen() {
       <KenyaStripe />
 
       <AndroidTopAppBar
-        showBrandLogo
         title={category !== "all" ? getCategoryInfo(category)?.name || "All Tools" : "All Tools"}
         subtitle={
           category !== "all"
@@ -312,7 +311,7 @@ export default function ToolsScreen() {
         >
           <Ionicons
             name="search"
-            size={18}
+            size={16}
             color={theme.gold}
             style={styles.searchIcon}
           />
@@ -331,7 +330,7 @@ export default function ToolsScreen() {
             <Pressable onPress={() => setQuery("")} hitSlop={8}>
               <Ionicons
                 name="close-circle"
-                size={18}
+                size={16}
                 color={theme.textMuted}
               />
             </Pressable>
@@ -363,10 +362,10 @@ export default function ToolsScreen() {
                   flexDirection: "row",
                   alignItems: "center",
                   justifyContent: "center",
-                  gap: 6,
-                  paddingHorizontal: 11,
+                  gap: 5,
+                  paddingHorizontal: 10,
                   paddingVertical: 5,
-                  minHeight: 30,
+                  minHeight: 28,
                   borderRadius: 999,
                   borderWidth: 1,
                   backgroundColor: active
@@ -385,9 +384,9 @@ export default function ToolsScreen() {
                 />
                 <Text
                   style={{
-                    fontSize: 12,
-                    lineHeight: 18,
-                    paddingBottom: 1,
+                    fontSize: 11.5,
+                    lineHeight: 16,
+                    paddingBottom: 0,
                     includeFontPadding: false,
                     textAlignVertical: "center",
                     fontFamily: active ? "Outfit_700Bold" : "Inter_600SemiBold",
@@ -415,7 +414,7 @@ export default function ToolsScreen() {
             contentContainerStyle={{
               flexDirection: "row",
               alignItems: "center",
-              gap: 8,
+              gap: 6,
             }}
           >
             {(
@@ -435,10 +434,10 @@ export default function ToolsScreen() {
                     flexDirection: "row",
                     alignItems: "center",
                     justifyContent: "center",
-                    gap: 6,
-                    paddingHorizontal: 11,
-                    paddingVertical: 5,
-                    minHeight: 30,
+                    gap: 5,
+                    paddingHorizontal: 9,
+                    paddingVertical: 4,
+                    minHeight: 26,
                     borderRadius: 999,
                     borderWidth: 1,
                     backgroundColor: active
@@ -449,7 +448,7 @@ export default function ToolsScreen() {
                 >
                   <Ionicons
                     name={option.icon}
-                    size={12}
+                    size={11}
                     color={active ? theme.onPrimaryContainer : theme.gold}
                   />
                   <Text
@@ -678,17 +677,17 @@ const styles = StyleSheet.create({
   },
   filterHeader: {
     paddingHorizontal: 14,
-    paddingTop: 6,
-    paddingBottom: 8,
+    paddingTop: 4,
+    paddingBottom: 6,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   searchWrap: {
     flexDirection: "row",
     alignItems: "center",
-    borderRadius: 19,
+    borderRadius: 17,
     borderWidth: 1,
-    paddingHorizontal: 12,
-    height: 38,
+    paddingHorizontal: 11,
+    height: 34,
     marginBottom: 6,
     elevation: Platform.OS === "android" ? 1 : 0,
   },
@@ -700,7 +699,7 @@ const styles = StyleSheet.create({
     minWidth: 0,
     height: "100%",
     marginRight: 6,
-    fontSize: 13,
+    fontSize: 12.5,
     paddingVertical: 0,
     paddingHorizontal: 0,
     textAlignVertical: "center",
@@ -710,8 +709,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    gap: 8,
-    marginTop: 6,
+    gap: 6,
+    marginTop: 5,
   },
   sortLabel: {
     fontFamily: "Outfit_700Bold",
@@ -724,9 +723,9 @@ const styles = StyleSheet.create({
   },
   segmentText: {
     fontFamily: "Outfit_700Bold",
-    fontSize: 12,
-    lineHeight: 18,
-    paddingBottom: 1,
+    fontSize: 11,
+    lineHeight: 15,
+    paddingBottom: 0,
     includeFontPadding: false,
     textAlignVertical: "center",
   },

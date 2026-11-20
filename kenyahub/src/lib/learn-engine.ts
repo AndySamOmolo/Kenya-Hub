@@ -71,13 +71,199 @@ export function getPrimaryForm(text: string): string {
   return primary || withoutPl || cleaned;
 }
 
+const NON_LATIN_OR_TOFU_RE = /[\uFFFD\uE000-\uF8FF\u0370-\u03FF\u0400-\u05FF\u0600-\u06FF\u0900-\u137F\u3000-\u9FFF\uAC00-\uD7AF]/u;
+
+function normalizeComparable(text: string): string {
+  return text
+    .replace(/ñ/gi, "ng")
+    .replace(/ŋ/gi, "ng")
+    .replace(/ɲ/gi, "ny")
+    .replace(/ɔ/gi, "o")
+    .replace(/ɛ/gi, "e")
+    .replace(/ɗ/gi, "d")
+    .replace(/ɠ/gi, "g")
+    .replace(/ɓ/gi, "b")
+    .replace(/ʔ/g, "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Strip parenthetical/bracketed notes, POS tags, and multi-sense bloat so quiz
+ * prompts and choices stay crisp and never leak answers by formatting.
+ */
+export function cleanQuizGloss(text: string): string {
+  if (!text || typeof text !== "string") return "";
+  let s = text
+    .replace(/„/g, "")
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\[[^\]]*\]/g, " ")
+    .replace(/\{[^}]*\}/g, " ")
+    .replace(/,\s*pl\.?\s+.*$/i, "")
+    .replace(
+      /(?:^|[,;\s])(?:v\.\s*[aint]\.?|v[aint]\.?|n\.|v\.|adj\.|adv\.|prep\.|conj\.|interj\.|pron\.|num\.|pl\.|sg\.|s\.)(?=\s|$|[;,/])/gi,
+      " "
+    )
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (s.includes(";")) {
+    const firstSemi = s.split(";").map((p) => p.trim()).find(Boolean);
+    if (firstSemi) s = firstSemi;
+  }
+  if (s.includes("/") && s.length > 24) {
+    const firstSlash = s.split("/").map((p) => p.trim()).find(Boolean);
+    if (firstSlash) s = firstSlash;
+  }
+
+  s = s
+    .replace(/^[,;:\-–—/|•]+\s*/, "")
+    .replace(/\s*[,;:\-–—/|•.]+$/, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return s;
+}
+
+/**
+ * Validate that a word/gloss pair is pure, translated, Latin-script, non-numeric,
+ * and concise (<= 55 chars) so target-language and English pools stay 100% clean.
+ */
+export function isValidQuizPair(word: string, english: string): boolean {
+  if (!word || !english) return false;
+  if (NON_LATIN_OR_TOFU_RE.test(word) || NON_LATIN_OR_TOFU_RE.test(english)) return false;
+
+  const cleanWord = cleanQuizGloss(word);
+  const cleanEng = cleanQuizGloss(english);
+  if (cleanWord.length < 2 || cleanEng.length < 2) return false;
+  if (cleanWord.length > 45 || cleanEng.length > 55) return false;
+
+  if (/^[\d\s.,/-]+$/.test(cleanWord) || /^[\d\s.,/-]+$/.test(cleanEng)) return false;
+
+  const normWord = normalizeComparable(cleanWord);
+  const normEng = normalizeComparable(cleanEng);
+  if (!normWord || !normEng || normWord === normEng) return false;
+
+  const both = `${cleanWord} ~~~ ${cleanEng}`;
+  if (/[:→•=><\[\]{}*§|"…_]/.test(both) || /(?:\.\s*){2,}/.test(both)) return false;
+  if (/\b(vs\.?|pp?\.\s*\d|fn\.\s*\d|Ex\.\s*\d|Ch\.\s*[IVX\d]|Vide\b|cf\.|s\.v\.)/i.test(both)) {
+    return false;
+  }
+
+  return true;
+}
+
+/**
+ * Pick distractors that match the correct answer in word count, character length
+ * (0.55x-1.65x band), and capitalization/phrase style, deduplicated and free of
+ * substring leakage.
+ */
+export function pickBalancedDistractors(
+  correctText: string,
+  candidates: string[],
+  count: number = 3
+): string[] {
+  const target = cleanQuizGloss(correctText) || correctText.trim();
+  const targetNorm = normalizeComparable(target);
+  if (!targetNorm || count <= 0) return [];
+
+  const targetWords = target.split(/\s+/).filter(Boolean).length;
+  const targetLen = target.length;
+  const targetStartsUpper = /^[A-Z\u00C0-\u024F]/.test(target);
+  const targetStartsTo = /^to\s+/i.test(target);
+  const targetHasPunct = /[?!]$/.test(target);
+
+  const seenNorm = new Set<string>([targetNorm]);
+  const targetStem = getBaseStemKey(target);
+  const scored: { text: string; norm: string; score: number }[] = [];
+
+  for (const raw of candidates) {
+    if (!raw || typeof raw !== "string") continue;
+    if (NON_LATIN_OR_TOFU_RE.test(raw)) continue;
+    const cleaned = cleanQuizGloss(raw);
+    if (!cleaned || cleaned.length < 2) continue;
+    const norm = normalizeComparable(cleaned);
+    if (!norm || seenNorm.has(norm)) continue;
+
+    if (
+      norm === targetNorm ||
+      (norm.length >= 3 && targetNorm.includes(norm)) ||
+      (targetNorm.length >= 3 && norm.includes(targetNorm))
+    ) {
+      continue;
+    }
+
+    seenNorm.add(norm);
+    const stem = getBaseStemKey(cleaned);
+    const stemCollision = stem.length >= 4 && stem === targetStem;
+
+    const candWords = cleaned.split(/\s+/).filter(Boolean).length;
+    const wcDiff = Math.abs(candWords - targetWords);
+    const wcPenalty = wcDiff === 0 ? 0 : wcDiff === 1 ? 1.5 : 4 + wcDiff * 2.5;
+
+    const lenRatio = cleaned.length / Math.max(targetLen, 1);
+    const lenDiff = Math.abs(cleaned.length - targetLen) / Math.max(targetLen, 4);
+    const outlierPenalty = lenRatio < 0.55 || lenRatio > 1.65 ? 6 + lenDiff * 3 : 0;
+
+    const candStartsUpper = /^[A-Z\u00C0-\u024F]/.test(cleaned);
+    const candStartsTo = /^to\s+/i.test(cleaned);
+    const candHasPunct = /[?!]$/.test(cleaned);
+    const stylePenalty =
+      (targetStartsUpper !== candStartsUpper ? 0.6 : 0) +
+      (targetStartsTo !== candStartsTo ? 0.9 : 0) +
+      (targetHasPunct !== candHasPunct ? 0.5 : 0) +
+      (stemCollision ? 3.0 : 0);
+
+    const score = wcPenalty + lenDiff * 2.0 + outlierPenalty + stylePenalty + Math.random() * 0.15;
+    scored.push({ text: cleaned, norm, score });
+  }
+
+  scored.sort((a, b) => a.score - b.score);
+
+  const tightPoolSize = Math.min(scored.length, Math.max(count * 3, count + 4));
+  const tightPool = shuffle(scored.slice(0, tightPoolSize));
+
+  const picked: string[] = [];
+  const pickedNorms: string[] = [];
+
+  for (const item of tightPool) {
+    if (picked.length >= count) break;
+    const overlapsPicked = pickedNorms.some(
+      (pn) =>
+        (item.norm.length >= 3 && pn.includes(item.norm)) ||
+        (pn.length >= 3 && item.norm.includes(pn))
+    );
+    if (overlapsPicked) continue;
+    picked.push(item.text);
+    pickedNorms.push(item.norm);
+  }
+
+  if (picked.length < count) {
+    for (const item of scored) {
+      if (picked.length >= count) break;
+      if (!pickedNorms.includes(item.norm)) {
+        picked.push(item.text);
+        pickedNorms.push(item.norm);
+      }
+    }
+  }
+
+  return picked;
+}
+
+
 /**
  * Check whether a word pair is a clean lexical item suitable for mini-games and exercises
  * (excluding grammatical table headers, section titles, page references, and multi-item compendia).
  */
 export function isCleanLexicalWordPair(rawTarget: string, rawSource: string): boolean {
-  const target = getPrimaryForm(rawTarget).trim();
-  const source = getPrimaryForm(rawSource).trim();
+  if (!isValidQuizPair(rawTarget, rawSource)) return false;
+  const target = cleanQuizGloss(getPrimaryForm(rawTarget));
+  const source = cleanQuizGloss(getPrimaryForm(rawSource));
   if (target.length < 2 || target.length > 35) return false;
   if (source.length < 2 || source.length > 55) return false;
   const both = `${target} ~~~ ${source}`;
@@ -225,65 +411,28 @@ function getDistractors(
   count: number,
   field: 'target' | 'source'
 ): string[] {
-  const correctVal = getPrimaryForm(correctWord[field]).trim();
-  const correctLower = correctVal.toLowerCase();
-  const correctStem = getBaseStemKey(correctVal);
-  const correctWordCount = correctVal.split(/\s+/).length;
+  const correctVal = cleanQuizGloss(getPrimaryForm(correctWord[field])) || getPrimaryForm(correctWord[field]).trim();
+  const otherField = field === 'target' ? 'source' : 'target';
+  const correctOtherNorm = normalizeComparable(cleanQuizGloss(getPrimaryForm(correctWord[otherField])));
 
-  const seenExact = new Set<string>([correctLower]);
-  const seenStems = new Set<string>([correctStem]);
-  const distractors: string[] = [];
+  const candidatePool = allWords
+    .filter((w) => {
+      if (!isValidQuizPair(w.target, w.source)) return false;
+      const otherNorm = normalizeComparable(cleanQuizGloss(getPrimaryForm(w[otherField])));
+      return !correctOtherNorm || otherNorm !== correctOtherNorm;
+    })
+    .map((w) => cleanQuizGloss(getPrimaryForm(w[field])))
+    .filter(Boolean);
 
-  // Pass 1: Strict word-count proximity (difference <= 2 words) + distinct stem
-  for (const w of shuffle(allWords)) {
-    const val = getPrimaryForm(w[field]).trim();
-    if (!val) continue;
-    const key = val.toLowerCase();
-    const stem = getBaseStemKey(val);
-    const wc = val.split(/\s+/).length;
-    if (!seenExact.has(key) && !seenStems.has(stem) && Math.abs(wc - correctWordCount) <= 2) {
-      seenExact.add(key);
-      seenStems.add(stem);
-      distractors.push(val);
-      if (distractors.length >= count) return distractors;
-    }
-  }
-
-  // Pass 2: Distinct stem regardless of length
-  for (const w of shuffle(allWords)) {
-    const val = getPrimaryForm(w[field]).trim();
-    if (!val) continue;
-    const key = val.toLowerCase();
-    const stem = getBaseStemKey(val);
-    if (!seenExact.has(key) && !seenStems.has(stem)) {
-      seenExact.add(key);
-      seenStems.add(stem);
-      distractors.push(val);
-      if (distractors.length >= count) return distractors;
-    }
-  }
-
-  // Pass 3: Any distinct string
-  for (const w of shuffle(allWords)) {
-    const val = getPrimaryForm(w[field]).trim();
-    if (!val) continue;
-    const key = val.toLowerCase();
-    if (!seenExact.has(key)) {
-      seenExact.add(key);
-      distractors.push(val);
-      if (distractors.length >= count) break;
-    }
-  }
-
-  return distractors;
+  return pickBalancedDistractors(correctVal, candidatePool, count);
 }
 
 /* ─── Exercise Generators ──────────────────────────── */
 
 function generateMultipleChoice(word: WordPair, pool: WordPair[]): Exercise {
   const toEnglish = Math.random() > 0.5;
-  const primaryTarget = getPrimaryForm(word.target);
-  const primarySource = getPrimaryForm(word.source);
+  const primaryTarget = cleanQuizGloss(getPrimaryForm(word.target));
+  const primarySource = cleanQuizGloss(getPrimaryForm(word.source));
   const distractors = getDistractors(
     word,
     pool,
@@ -346,7 +495,7 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
 }
 
 function generateFillBlank(word: WordPair, wordPool: WordPair[], sentences: WordPair[] = []): Exercise {
-  const primaryTarget = getPrimaryForm(word.target);
+  const primaryTarget = cleanQuizGloss(getPrimaryForm(word.target));
   const distractors = getDistractors(word, wordPool, 3, 'target');
   const options = shuffle([primaryTarget, ...distractors]);
 
@@ -382,8 +531,9 @@ function generateMatchPairs(words: WordPair[]): Exercise {
   const seenRightStems = new Set<string>();
   const pairs: { left: string; right: string }[] = [];
   for (const w of shuffle(words)) {
-    const left = getPrimaryForm(w.target).trim();
-    const right = getPrimaryForm(w.source).trim();
+    if (!isValidQuizPair(w.target, w.source)) continue;
+    const left = cleanQuizGloss(getPrimaryForm(w.target));
+    const right = cleanQuizGloss(getPrimaryForm(w.source));
     if (!left || !right) continue;
     const rStem = getBaseStemKey(right);
     if (seenLeft.has(left.toLowerCase()) || seenRight.has(right.toLowerCase()) || seenRightStems.has(rStem)) {

@@ -178,7 +178,7 @@ export default function HomePage() {
                 Interactive Kenyan Languages, Translator &amp; Oral Wisdom Hub
               </h2>
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed mt-2">
-                Explore {PUBLISHED_COURSE_SUMMARIES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 14 vocabulary mini-games, and a 23-language bidirectional dictionary.
+                Explore {PUBLISHED_COURSE_SUMMARIES.length} structured interactive courses with step-by-step skill modules, 3D flip flashcards, written phonetic guides, grammar tables, 12 vocabulary mini-games, and a 23-language bidirectional dictionary.
               </p>
             </div>
             <div className="flex flex-wrap gap-2.5 shrink-0">
@@ -220,10 +220,10 @@ export default function HomePage() {
             <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">
               <div className="flex items-center gap-1.5 text-sky-light font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">
                 <Gamepad2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-                <span className="truncate">14 Mini-Games</span>
+                <span className="truncate">12 Mini-Games</span>
               </div>
               <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
-                Play Wordle, Word Scramble, Speed Match, Memory Cards, Riddles, Methali Builder &amp; 8 more games.
+                Play Wordle, Word Scramble, Speed Match, Memory Cards, Riddles, Methali Builder &amp; 6 more games.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/50 p-2.5 sm:p-4">

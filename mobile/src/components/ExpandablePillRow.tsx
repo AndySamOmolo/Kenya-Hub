@@ -287,12 +287,12 @@ export function ExpandablePillRow({
         const flatPillStyle = StyleSheet.flatten(resolveBaseStyle(origStyle)) || {};
         const pv =
           typeof flatPillStyle.paddingVertical === "number"
-            ? Math.max(8, Math.ceil(flatPillStyle.paddingVertical))
-            : 8;
+            ? Math.max(4, Math.ceil(flatPillStyle.paddingVertical))
+            : 5;
         const ph =
           typeof flatPillStyle.paddingHorizontal === "number"
-            ? Math.max(13, Math.ceil(flatPillStyle.paddingHorizontal))
-            : 14;
+            ? Math.max(9, Math.ceil(flatPillStyle.paddingHorizontal))
+            : 10;
         const origOnLayout = props.onLayout;
         const normalizedPillExtra = {
           flexDirection: flatPillStyle.flexDirection || "row",
@@ -300,7 +300,10 @@ export function ExpandablePillRow({
           justifyContent: "center" as const,
           paddingVertical: pv,
           paddingHorizontal: ph,
-          minHeight: Math.max(flatPillStyle.minHeight || 0, 36),
+          minHeight:
+            typeof flatPillStyle.minHeight === "number"
+              ? Math.max(flatPillStyle.minHeight, 26)
+              : 28,
           borderRadius: isExpanded
             ? 16
             : flatPillStyle.borderRadius ?? 999,
@@ -339,13 +342,13 @@ export function ExpandablePillRow({
       if (isTextNode) {
         const fontSize =
           typeof flatChildStyle.fontSize === "number"
-            ? Math.ceil(flatChildStyle.fontSize)
-            : 12;
+            ? flatChildStyle.fontSize
+            : 11.5;
         const lineHeight =
           typeof flatChildStyle.lineHeight === "number" &&
-          flatChildStyle.lineHeight >= fontSize + 6
+          flatChildStyle.lineHeight >= fontSize + 4
             ? flatChildStyle.lineHeight
-            : Math.max(fontSize + 7, Math.ceil(fontSize * 1.5));
+            : Math.ceil(fontSize + 5);
 
         return React.cloneElement(
           child as React.ReactElement<any>,
@@ -446,8 +449,8 @@ export function ExpandablePillRow({
                 {
                   flexDirection: "row",
                   alignItems: "center",
-                  gap: 8,
-                  paddingVertical: 5,
+                  gap: 6,
+                  paddingVertical: 2,
                   paddingRight: canScrollRight ? 12 : 2,
                 },
               ]}
@@ -486,8 +489,8 @@ export function ExpandablePillRow({
               flexDirection: "row",
               flexWrap: "wrap",
               alignItems: "center",
-              gap: 8,
-              paddingVertical: 5,
+              gap: 6,
+              paddingVertical: 2,
             },
           ]}
         >
@@ -513,8 +516,8 @@ export function ExpandablePillRow({
                 {
                   flexDirection: "row",
                   alignItems: "center",
-                  gap: 8,
-                  paddingVertical: 5,
+                  gap: 6,
+                  paddingVertical: 2,
                   paddingRight: canScrollRight ? 14 : 2,
                 },
               ]}
@@ -557,7 +560,7 @@ export function ExpandablePillRow({
       >
         <Ionicons
           name={expanded ? "chevron-up" : "chevron-down"}
-          size={15}
+          size={14}
           color={theme.gold}
         />
       </Pressable>
@@ -569,10 +572,10 @@ const rowStyles = StyleSheet.create({
   rowWrap: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 8,
+    gap: 6,
     minWidth: 0,
     maxWidth: "100%",
-    minHeight: 46,
+    minHeight: 34,
   },
   viewportWrap: {
     flex: 1,
@@ -602,9 +605,9 @@ const rowStyles = StyleSheet.create({
     height: "100%",
   },
   actionBtn: {
-    width: 34,
-    height: 34,
-    borderRadius: 17,
+    width: 28,
+    height: 28,
+    borderRadius: 14,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",

@@ -9,7 +9,7 @@ import {
   playStreakSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle } from "./shared";
+import { type GameProps, shuffle, cleanQuizGloss, isValidQuizPair, pickBalancedDistractors } from "./shared";
 
 export function VocabQuizGame({
   allWords,
@@ -36,7 +36,17 @@ export function VocabQuizGame({
   const maxShotClockMs = round < 5 ? 7000 : round < 12 ? 5000 : 3500;
 
   const shuffledWords = useMemo(
-    () => shuffle(allWords),
+    () =>
+      shuffle(
+        allWords
+          .filter((w) => isValidQuizPair(w.target, w.source))
+          .map((w) => ({
+            ...w,
+            target: cleanQuizGloss(w.target),
+            source: cleanQuizGloss(w.source),
+          }))
+          .filter((w) => w.target && w.source)
+      ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [allWords, sessionSeed]
   );
@@ -51,32 +61,16 @@ export function VocabQuizGame({
   const options = useMemo(() => {
     if (!currentWord || shuffledWords.length < 2) return [];
     if (!isReverse) {
-      const seen = new Set<string>([currentWord.target.toLowerCase()]);
-      const distractors: string[] = [];
-      for (const w of shuffle(shuffledWords)) {
-        if (
-          !seen.has(w.target.toLowerCase()) &&
-          w.source.toLowerCase() !== currentWord.source.toLowerCase()
-        ) {
-          seen.add(w.target.toLowerCase());
-          distractors.push(w.target);
-          if (distractors.length >= 3) break;
-        }
-      }
+      const candidates = shuffledWords
+        .filter((w) => w.source.toLowerCase() !== currentWord.source.toLowerCase())
+        .map((w) => w.target);
+      const distractors = pickBalancedDistractors(currentWord.target, candidates, 3);
       return shuffle([currentWord.target, ...distractors]);
     } else {
-      const seen = new Set<string>([currentWord.source.toLowerCase()]);
-      const distractors: string[] = [];
-      for (const w of shuffle(shuffledWords)) {
-        if (
-          !seen.has(w.source.toLowerCase()) &&
-          w.target.toLowerCase() !== currentWord.target.toLowerCase()
-        ) {
-          seen.add(w.source.toLowerCase());
-          distractors.push(w.source);
-          if (distractors.length >= 3) break;
-        }
-      }
+      const candidates = shuffledWords
+        .filter((w) => w.target.toLowerCase() !== currentWord.target.toLowerCase())
+        .map((w) => w.source);
+      const distractors = pickBalancedDistractors(currentWord.source, candidates, 3);
       return shuffle([currentWord.source, ...distractors]);
     }
   }, [currentWord, shuffledWords, isReverse]);

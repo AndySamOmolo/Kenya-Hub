@@ -8,7 +8,7 @@ import {
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle } from "./shared";
+import { type GameProps, shuffle, cleanQuizGloss, isValidQuizPair } from "./shared";
 
 interface BucketDef {
   id: string;
@@ -87,16 +87,18 @@ export function NounClassSorterGame({
   const sortItems = useMemo<SortItem[]>(() => {
     const items: SortItem[] = [];
     for (const w of shuffle(allWords)) {
-      const s = w.source.toLowerCase();
-      const t = w.target.trim();
+      if (!isValidQuizPair(w.target, w.source)) continue;
+      const cleanSrc = cleanQuizGloss(w.source);
+      const s = cleanSrc.toLowerCase();
+      const t = cleanQuizGloss(w.target);
       if (!t || !s) continue;
 
       if (/^to\s+[a-z]/i.test(s)) {
         items.push({
           target: t,
-          source: w.source,
+          source: cleanSrc,
           bucketId: "actions",
-          explanation: `"${t}" (${w.source}) is an action verb/infinitive form.`,
+          explanation: `"${t}" (${cleanSrc}) is an action verb/infinitive form.`,
         });
         continue;
       }
@@ -110,9 +112,9 @@ export function NounClassSorterGame({
           familyType === "bantu" ? "people" : familyType === "cushitic" ? "kin" : "masc";
         items.push({
           target: t,
-          source: w.source,
+          source: cleanSrc,
           bucketId: bId,
-          explanation: `"${t}" (${w.source}) belongs to the human/kinship noun class.`,
+          explanation: `"${t}" (${cleanSrc}) belongs to the human/kinship noun class.`,
         });
         continue;
       }
@@ -130,9 +132,9 @@ export function NounClassSorterGame({
             : "fem";
         items.push({
           target: t,
-          source: w.source,
+          source: cleanSrc,
           bucketId: bId,
-          explanation: `"${t}" (${w.source}) belongs to the nature, ecology & livestock class.`,
+          explanation: `"${t}" (${cleanSrc}) belongs to the nature, ecology & livestock class.`,
         });
         continue;
       }
@@ -145,9 +147,9 @@ export function NounClassSorterGame({
         const bId = familyType === "bantu" ? "things" : "objects";
         items.push({
           target: t,
-          source: w.source,
+          source: cleanSrc,
           bucketId: bId,
-          explanation: `"${t}" (${w.source}) belongs to the artifacts, homestead & numerals class.`,
+          explanation: `"${t}" (${cleanSrc}) belongs to the artifacts, homestead & numerals class.`,
         });
       }
     }

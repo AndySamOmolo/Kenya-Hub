@@ -10,6 +10,11 @@ import rainfallData from "@/data/rainfall-patterns.json";
 import hospitalsData from "@/data/nhif-hospitals.json";
 import postalData from "@/data/postal-codes.json";
 import rankingsData from "@/data/kcse-rankings.json";
+import solarData from "@/data/solar-irradiance.json";
+import soilsData from "@/data/soil-types.json";
+import parksData from "@/data/national-parks.json";
+import agrovetsData from "@/data/agrovets.json";
+import { ArrowLeftRight } from "lucide-react";
 import SearchInput from "@/components/ui/SearchInput";
 import CustomSelect from "@/components/ui/CustomSelect";
 import DynamicIcon from "@/components/ui/DynamicIcon";
@@ -43,6 +48,32 @@ function computeAnnualRainfall(rain: any): number {
   }
   return Number(rain.annualRainfall || 0);
 }
+
+function normalizeCountyName(s: string): string {
+  return String(s || "")
+    .toLowerCase()
+    .replace(/['’\-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const URBAN_UTILITIES_SUMMARY: Record<string, string> = {
+  nairobi: "Urban Utilities — NCWSC Water (PayBill 444400), KPLC & 5 Huduma Centres",
+  mombasa: "Urban Utilities — MOWASSCO Water (PayBill 888885), KPLC & Likoni Ferry",
+};
+
+type CompareRow = {
+  label: string;
+  a: string;
+  b: string;
+  numA?: number;
+  numB?: number;
+};
+
+type CompareSection = {
+  title: string;
+  rows: CompareRow[];
+};
 
 
 const COUNTY_HUB_FAQS = [
@@ -104,16 +135,73 @@ export default function CountyIndexPage() {
       const rawRain = rainMap.get(c.code) || null;
       const rain = rawRain ? { ...rawRain, annualRainfall: computeAnnualRainfall(rawRain) } : null;
       const region = COUNTY_REGION_BY_CODE[c.code] || "Kenya";
+      const normName = normalizeCountyName(c.name);
       const density = c.area > 0 ? Math.round(c.population / c.area) : 0;
       const hospitalsCount = ((hospitalsData as any).hospitals || []).filter(
-        (h: any) => h.county.toLowerCase() === c.name.toLowerCase()
+        (h: any) => normalizeCountyName(h.county) === normName
       ).length;
-      const postalCount = ((postalData as any).codes || []).filter(
-        (p: any) => p.county.toLowerCase() === c.name.toLowerCase()
-      ).length;
+      const countyPostalEntries = ((postalData as any).codes || []).filter(
+        (p: any) => normalizeCountyName(p.county) === normName
+      );
+      const postalCount = countyPostalEntries.length;
       const topSchoolsCount = ((rankingsData as any).schools || []).filter(
-        (s: any) => s.county.toLowerCase() === c.name.toLowerCase()
+        (s: any) => normalizeCountyName(s.county) === normName
       ).length;
+      const parksCount = ((parksData as any).parks || []).filter(
+        (p: any) => normalizeCountyName(p.county).includes(normName)
+      ).length;
+      const agrovetsCount = ((agrovetsData as any).agrovets || []).filter(
+        (a: any) => normalizeCountyName(a.county) === normName
+      ).length;
+
+      const solarRegion = ((solarData as any).regions || []).find((sr: any) =>
+        (sr.counties || []).some((rc: string) => normalizeCountyName(rc) === normName)
+      );
+      const solarIrradiance = Number(solarRegion?.irradiance || 0);
+
+      const matchingSoils = ((soilsData as any).soilTypes || []).filter((s: any) =>
+        (s.counties || []).some((sc: string) => normalizeCountyName(sc).includes(normName))
+      );
+      const primarySoil = matchingSoils[0]?.name || "";
+      const topCrops = Array.from(
+        new Set(matchingSoils.flatMap((s: any) => s.bestCrops || []))
+      ).slice(0, 4) as string[];
+
+      const soilAndCropsSummary =
+        URBAN_UTILITIES_SUMMARY[c.slug] ||
+        (primarySoil
+          ? `${primarySoil}${topCrops.length > 0 ? ` · ${topCrops.join(", ")}` : ""}`
+          : `${rain?.climateZone || "Regional"} Agriculture`);
+
+      const monthlyRain = MONTH_KEYS.map((mk, idx) => ({
+        month: MONTHS[idx],
+        mm: Number(rain?.monthly?.[mk] ?? rain?.monthlyAvg?.[idx] ?? 0),
+      }));
+      const peakRainMonth = monthlyRain.reduce(
+        (best, cur) => (cur.mm > best.mm ? cur : best),
+        monthlyRain[0] || { month: "—", mm: 0 }
+      );
+      const driestRainMonth = monthlyRain.reduce(
+        (best, cur) => (cur.mm < best.mm ? cur : best),
+        monthlyRain[0] || { month: "—", mm: 0 }
+      );
+
+      const townSet = new Set<string>([c.capital]);
+      for (const p of countyPostalEntries) {
+        if (p.town) townSet.add(p.town);
+        if (townSet.size >= 4) break;
+      }
+      const majorTowns = Array.from(townSet).join(", ");
+
+      const totalBudget = (budget?.allocation || 0) + (budget?.ownSourceRevenue || 0);
+      const osrSelfReliance =
+        totalBudget > 0
+          ? Math.round(((budget?.ownSourceRevenue || 0) / totalBudget) * 1000) / 10
+          : 0;
+      const allocationPerCapita =
+        c.population > 0 && budget?.allocation
+          ? Math.round((budget.allocation * 1_000_000) / c.population)
+          : 0;
 
       return {
         ...c,
@@ -124,6 +212,16 @@ export default function CountyIndexPage() {
         hospitalsCount,
         postalCount,
         topSchoolsCount,
+        parksCount,
+        agrovetsCount,
+        solarIrradiance,
+        soilAndCropsSummary,
+        peakRainMonth,
+        driestRainMonth,
+        majorTowns,
+        totalBudget,
+        osrSelfReliance,
+        allocationPerCapita,
       };
     });
   }, []);
@@ -298,7 +396,7 @@ export default function CountyIndexPage() {
       </div>
 
       {/* Consolidated Hub Mode Tabs (Standalone Horizontal Pills) */}
-      <ExpandablePillRow className="mb-3 sm:mb-5">
+      <ExpandablePillRow className="mb-2 sm:mb-5">
         {([
           { id: "directory", label: "Counties" },
           { id: "budgets", label: "Budgets" },
@@ -311,7 +409,7 @@ export default function CountyIndexPage() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-4 sm:py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+              className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-4 sm:py-1.5 text-[11px] sm:text-xs font-medium border transition-all ${
                 active
                   ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                   : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -325,14 +423,14 @@ export default function CountyIndexPage() {
 
       {/* Shared Search & Filter Bar (for Directory, Budgets, Constituencies, Climate) */}
       {activeTab !== "compare" && (
-        <div className="flex flex-col lg:flex-row gap-2 sm:gap-3 items-stretch lg:items-center justify-between mb-3 sm:mb-6">
+        <div className="flex flex-col lg:flex-row gap-1.5 sm:gap-3 items-stretch lg:items-center justify-between mb-2.5 sm:mb-6">
           <div className="flex-1 max-w-xl">
             <SearchInput
               type="text"
               placeholder="Search county, HQ, or code..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="input-field w-full !h-9 sm:!h-11 text-sm"
+              className="input-field w-full !h-8 sm:!h-10 text-xs sm:text-sm"
               id="county-search"
               onClear={() => setSearch("")}
             />
@@ -403,7 +501,7 @@ export default function CountyIndexPage() {
       {activeTab === "directory" && (
         <>
           {/* Sticky Region & A–Z Jump Bar (F-040) */}
-          <div className="sticky top-16 z-30 -mx-3.5 px-3.5 sm:mx-0 sm:px-4 py-2.5 mb-5 bg-bg-primary/95 backdrop-blur-md border border-border rounded-xl space-y-2 shadow-sm">
+          <div className="sticky top-16 z-30 -mx-3.5 px-3.5 sm:mx-0 sm:px-4 py-1.5 sm:py-2.5 mb-3 sm:mb-5 bg-bg-primary/95 backdrop-blur-md border border-border rounded-xl space-y-1.5 sm:space-y-2 shadow-sm">
             <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5">
               <span className="text-[0.65rem] font-bold uppercase tracking-wider text-text-muted shrink-0 mr-1">Region:</span>
               {REGIONS.map((reg) => (
@@ -411,7 +509,7 @@ export default function CountyIndexPage() {
                   key={reg}
                   type="button"
                   onClick={() => setRegionFilter(reg)}
-                  className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-full text-[0.7rem] font-semibold border transition-colors cursor-pointer ${
+                  className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold border transition-colors cursor-pointer ${
                     regionFilter === reg
                       ? "bg-gold text-kenya-black border-gold"
                       : "bg-bg-card border-border text-text-secondary hover:text-gold hover:border-gold/50"
@@ -428,7 +526,7 @@ export default function CountyIndexPage() {
                   key={ltr}
                   type="button"
                   onClick={() => setLetterFilter(ltr)}
-                  className={`shrink-0 px-2 py-0.5 rounded-full text-[0.6875rem] font-semibold border transition-colors cursor-pointer ${
+                  className={`shrink-0 px-2 py-0.5 rounded-full text-[11px] sm:text-xs font-semibold border transition-colors cursor-pointer ${
                     letterFilter === ltr
                       ? "bg-gold/20 text-gold border-gold/50"
                       : "bg-bg-elevated/60 border-border/60 text-text-secondary hover:text-text-primary"
@@ -692,84 +790,444 @@ export default function CountyIndexPage() {
       )}
 
       {/* ── TAB 5: COMPARE 2 COUNTIES SIDE-BY-SIDE ── */}
-      {activeTab === "compare" && countyA && countyB && (
-        <div className="bg-bg-card border border-border rounded-2xl p-6 space-y-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="text-xs font-semibold text-text-muted uppercase block mb-1.5">
-                First County
-              </label>
-              <CustomSelect
-                value={compareSlugA}
-                onValueChange={(val) => setCompareSlugA(val)}
-                options={enrichedCounties.map((c) => ({
-                  value: c.slug,
-                  label: `${String(c.code).padStart(3, "0")} — ${c.name} County`,
-                }))}
-                className="w-full text-sm"
-              />
-            </div>
-            <div>
-              <label className="text-xs font-semibold text-text-muted uppercase block mb-1.5">
-                Second County
-              </label>
-              <CustomSelect
-                value={compareSlugB}
-                onValueChange={(val) => setCompareSlugB(val)}
-                options={enrichedCounties.map((c) => ({
-                  value: c.slug,
-                  label: `${String(c.code).padStart(3, "0")} — ${c.name} County`,
-                }))}
-                className="w-full text-sm"
-              />
-            </div>
-          </div>
+      {activeTab === "compare" && countyA && countyB && (() => {
+        const summaryLeaders = [
+          {
+            label: "Population",
+            a: countyA.population,
+            b: countyB.population,
+          },
+          {
+            label: "Total Budget",
+            a: countyA.totalBudget,
+            b: countyB.totalBudget,
+          },
+          {
+            label: "Own-Source Rev",
+            a: countyA.budget?.ownSourceRevenue || 0,
+            b: countyB.budget?.ownSourceRevenue || 0,
+          },
+          {
+            label: "Absorption",
+            a: countyA.budget?.absorptionRate || 0,
+            b: countyB.budget?.absorptionRate || 0,
+          },
+          {
+            label: "Rainfall",
+            a: countyA.rain?.annualRainfall || 0,
+            b: countyB.rain?.annualRainfall || 0,
+          },
+        ];
 
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse text-xs sm:text-sm">
-              <thead>
-                <tr className="border-b border-border bg-bg-elevated/60">
-                  <th className="py-3 px-4 text-text-muted uppercase text-xs">Metric</th>
-                  <th className="py-3 px-4 font-bold text-gold">
-                    <Link href={`/county/${countyA.slug}/`} className="hover:underline">
-                      {String(countyA.code).padStart(3, "0")}. {countyA.name} County →
-                    </Link>
-                  </th>
-                  <th className="py-3 px-4 font-bold text-kenya-green-light">
-                    <Link href={`/county/${countyB.slug}/`} className="hover:underline">
-                      {String(countyB.code).padStart(3, "0")}. {countyB.name} County →
-                    </Link>
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border/60">
-                {[
-                  { label: "County Headquarters (Capital)", a: countyA.capital, b: countyB.capital },
-                  { label: "Governor", a: countyA.governor, b: countyB.governor },
-                  { label: "Deputy Governor", a: countyA.deputyGovernor, b: countyB.deputyGovernor },
-                  { label: "Senator", a: countyA.senator, b: countyB.senator },
-                  { label: "Woman Representative", a: countyA.womenRep, b: countyB.womenRep },
-                  { label: "Population (KNBS Census)", a: countyA.population.toLocaleString(), b: countyB.population.toLocaleString() },
-                  { label: "Land Area (km²)", a: `${countyA.area.toLocaleString()} km²`, b: `${countyB.area.toLocaleString()} km²` },
-                  { label: "Population Density", a: `${countyA.density.toLocaleString()} / km²`, b: `${countyB.density.toLocaleString()} / km²` },
-                  { label: "Parliamentary Constituencies", a: `${countyA.constituencies.length} (${countyA.constituencies.join(", ")})`, b: `${countyB.constituencies.length} (${countyB.constituencies.join(", ")})` },
-                  { label: "FY 2025/26 Equitable Share", a: `KES ${(countyA.budget?.allocation || 0).toLocaleString()}M`, b: `KES ${(countyB.budget?.allocation || 0).toLocaleString()}M` },
-                  { label: "Own-Source Revenue (OSR)", a: `KES ${(countyA.budget?.ownSourceRevenue || 0).toLocaleString()}M`, b: `KES ${(countyB.budget?.ownSourceRevenue || 0).toLocaleString()}M` },
-                  { label: "Budget Absorption Rate", a: `${countyA.budget?.absorptionRate || 0}%`, b: `${countyB.budget?.absorptionRate || 0}%` },
-                  { label: "Climate Zone & Annual Rainfall", a: `${countyA.rain?.climateZone || "—"} (${countyA.rain?.annualRainfall || 0} mm/yr)`, b: `${countyB.rain?.climateZone || "—"} (${countyB.rain?.annualRainfall || 0} mm/yr)` },
-                  { label: "SHA Hospitals / Posta Towns / Top KCSE Schools", a: `${countyA.hospitalsCount} Hospitals · ${countyA.postalCount} Posta Towns · ${countyA.topSchoolsCount} Top Schools`, b: `${countyB.hospitalsCount} Hospitals · ${countyB.postalCount} Posta Towns · ${countyB.topSchoolsCount} Top Schools` },
-                ].map((row) => (
-                  <tr key={row.label} className="hover:bg-white/[0.02]">
-                    <td className="py-3 px-4 font-medium text-text-muted">{row.label}</td>
-                    <td className="py-3 px-4 font-semibold text-text-primary">{row.a}</td>
-                    <td className="py-3 px-4 font-semibold text-text-primary">{row.b}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        const compareSections: CompareSection[] = [
+          {
+            title: "1. Governance & Leadership",
+            rows: [
+              {
+                label: "County Code",
+                a: `#${String(countyA.code).padStart(3, "0")}`,
+                b: `#${String(countyB.code).padStart(3, "0")}`,
+              },
+              { label: "Capital HQ", a: countyA.capital, b: countyB.capital },
+              { label: "Region", a: countyA.region, b: countyB.region },
+              { label: "Governor", a: countyA.governor, b: countyB.governor },
+              {
+                label: "Deputy Governor",
+                a: countyA.deputyGovernor || "—",
+                b: countyB.deputyGovernor || "—",
+              },
+              {
+                label: "Senator",
+                a: countyA.senator || "—",
+                b: countyB.senator || "—",
+              },
+              {
+                label: "Woman Rep",
+                a: countyA.womenRep || "—",
+                b: countyB.womenRep || "—",
+              },
+              {
+                label: "Constituencies",
+                a: `${countyA.constituencies.length}`,
+                b: `${countyB.constituencies.length}`,
+                numA: countyA.constituencies.length,
+                numB: countyB.constituencies.length,
+              },
+              {
+                label: "Wards",
+                a: (countyA as any).wards ? String((countyA as any).wards) : "—",
+                b: (countyB as any).wards ? String((countyB as any).wards) : "—",
+                ...((countyA as any).wards || (countyB as any).wards
+                  ? {
+                      numA: Number((countyA as any).wards || 0),
+                      numB: Number((countyB as any).wards || 0),
+                    }
+                  : {}),
+              },
+            ],
+          },
+          {
+            title: "2. Demographics & Geography",
+            rows: [
+              {
+                label: "Population (KNBS)",
+                a: countyA.population.toLocaleString(),
+                b: countyB.population.toLocaleString(),
+                numA: countyA.population,
+                numB: countyB.population,
+              },
+              {
+                label: "Land Area (km²)",
+                a: `${countyA.area.toLocaleString()} km²`,
+                b: `${countyB.area.toLocaleString()} km²`,
+                numA: countyA.area,
+                numB: countyB.area,
+              },
+              {
+                label: "Population Density (/km²)",
+                a: `${countyA.density.toLocaleString()}/km²`,
+                b: `${countyB.density.toLocaleString()}/km²`,
+                numA: countyA.density,
+                numB: countyB.density,
+              },
+              {
+                label: "Key Economic Activities / Major Towns",
+                a: countyA.majorTowns,
+                b: countyB.majorTowns,
+              },
+            ],
+          },
+          {
+            title: "3. FY 25/26 Public Finance",
+            rows: [
+              {
+                label: "Equitable Share (KES M)",
+                a: `KES ${(countyA.budget?.allocation || 0).toLocaleString()}M`,
+                b: `KES ${(countyB.budget?.allocation || 0).toLocaleString()}M`,
+                numA: countyA.budget?.allocation || 0,
+                numB: countyB.budget?.allocation || 0,
+              },
+              {
+                label: "Own-Source Revenue (OSR)",
+                a: `KES ${(countyA.budget?.ownSourceRevenue || 0).toLocaleString()}M`,
+                b: `KES ${(countyB.budget?.ownSourceRevenue || 0).toLocaleString()}M`,
+                numA: countyA.budget?.ownSourceRevenue || 0,
+                numB: countyB.budget?.ownSourceRevenue || 0,
+              },
+              {
+                label: "Total Budget (Share + OSR)",
+                a: `KES ${countyA.totalBudget.toLocaleString()}M`,
+                b: `KES ${countyB.totalBudget.toLocaleString()}M`,
+                numA: countyA.totalBudget,
+                numB: countyB.totalBudget,
+              },
+              {
+                label: "OSR Self-Reliance (%)",
+                a: `${countyA.osrSelfReliance}%`,
+                b: `${countyB.osrSelfReliance}%`,
+                numA: countyA.osrSelfReliance,
+                numB: countyB.osrSelfReliance,
+              },
+              {
+                label: "Budget Absorption (%)",
+                a: `${countyA.budget?.absorptionRate || 0}%`,
+                b: `${countyB.budget?.absorptionRate || 0}%`,
+                numA: countyA.budget?.absorptionRate || 0,
+                numB: countyB.budget?.absorptionRate || 0,
+              },
+              {
+                label: "Allocation Per Capita (KES/person)",
+                a: `KES ${countyA.allocationPerCapita.toLocaleString()}`,
+                b: `KES ${countyB.allocationPerCapita.toLocaleString()}`,
+                numA: countyA.allocationPerCapita,
+                numB: countyB.allocationPerCapita,
+              },
+            ],
+          },
+          {
+            title: "4. Climate, Solar & Agriculture",
+            rows: [
+              {
+                label: "Annual Rainfall (mm/yr)",
+                a: `${countyA.rain?.annualRainfall || 0} mm/yr`,
+                b: `${countyB.rain?.annualRainfall || 0} mm/yr`,
+                numA: countyA.rain?.annualRainfall || 0,
+                numB: countyB.rain?.annualRainfall || 0,
+              },
+              {
+                label: "Peak Rainy Month",
+                a: `${countyA.peakRainMonth.month} (${countyA.peakRainMonth.mm} mm)`,
+                b: `${countyB.peakRainMonth.month} (${countyB.peakRainMonth.mm} mm)`,
+              },
+              {
+                label: "Driest Month",
+                a: `${countyA.driestRainMonth.month} (${countyA.driestRainMonth.mm} mm)`,
+                b: `${countyB.driestRainMonth.month} (${countyB.driestRainMonth.mm} mm)`,
+              },
+              {
+                label: "Climate Zone",
+                a: countyA.rain?.climateZone || "—",
+                b: countyB.rain?.climateZone || "—",
+              },
+              {
+                label: "Solar Irradiance (kWh/m²/day)",
+                a: `${countyA.solarIrradiance.toFixed(1)} kWh/m²/day`,
+                b: `${countyB.solarIrradiance.toFixed(1)} kWh/m²/day`,
+                numA: countyA.solarIrradiance,
+                numB: countyB.solarIrradiance,
+              },
+              {
+                label: "Primary Soil & Top Crops",
+                a: countyA.soilAndCropsSummary,
+                b: countyB.soilAndCropsSummary,
+              },
+            ],
+          },
+          {
+            title: "5. Health, Parks & Civic Infrastructure",
+            rows: [
+              {
+                label: "SHA/NHIF Accredited Hospitals",
+                a: `${countyA.hospitalsCount}`,
+                b: `${countyB.hospitalsCount}`,
+                numA: countyA.hospitalsCount,
+                numB: countyB.hospitalsCount,
+              },
+              {
+                label: "Postal Codes",
+                a: `${countyA.postalCount}`,
+                b: `${countyB.postalCount}`,
+                numA: countyA.postalCount,
+                numB: countyB.postalCount,
+              },
+              {
+                label: "National Parks & Reserves",
+                a: `${countyA.parksCount}`,
+                b: `${countyB.parksCount}`,
+                numA: countyA.parksCount,
+                numB: countyB.parksCount,
+              },
+              {
+                label: "Registered Agrovets",
+                a: `${countyA.agrovetsCount}`,
+                b: `${countyB.agrovetsCount}`,
+                numA: countyA.agrovetsCount,
+                numB: countyB.agrovetsCount,
+              },
+            ],
+          },
+        ];
+
+        return (
+          <div className="bg-bg-card border border-border rounded-2xl p-4 sm:p-6 space-y-5">
+            <div>
+              <h2 className="text-base sm:text-xl font-bold font-[family-name:var(--font-outfit)] text-gold">
+                Compare Two Counties Side-by-Side
+              </h2>
+              <p className="text-xs sm:text-sm text-text-secondary mt-0.5">
+                Pick any two of Kenya&apos;s 47 counties or swap them to compare leadership, FY 25/26 budgets, climate, solar, and civic infrastructure.
+              </p>
+            </div>
+
+            {/* Side-by-Side County Pickers + Swap Button */}
+            <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-2.5 sm:gap-3 items-end">
+              <div className="rounded-xl border border-gold/40 bg-gold/[0.06] p-2.5 sm:p-3">
+                <label className="text-[10px] sm:text-xs font-bold text-gold uppercase tracking-wider block mb-1.5">
+                  County A ({String(countyA.code).padStart(3, "0")})
+                </label>
+                <CustomSelect
+                  value={compareSlugA}
+                  onValueChange={(val) => setCompareSlugA(val)}
+                  options={enrichedCounties.map((c) => ({
+                    value: c.slug,
+                    label: `${String(c.code).padStart(3, "0")} — ${c.name} County`,
+                  }))}
+                  className="w-full text-xs sm:text-sm"
+                />
+              </div>
+
+              <div className="flex justify-center sm:pb-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    const prevA = compareSlugA;
+                    setCompareSlugA(compareSlugB);
+                    setCompareSlugB(prevA);
+                  }}
+                  aria-label="Swap County A and County B"
+                  title="Swap counties"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-full border border-border bg-bg-elevated hover:border-gold/60 hover:text-gold text-text-secondary px-3 py-1.5 sm:p-2.5 text-xs font-semibold transition-colors cursor-pointer"
+                >
+                  <ArrowLeftRight className="w-4 h-4 text-gold" />
+                  <span className="sm:hidden">Swap Counties</span>
+                </button>
+              </div>
+
+              <div className="rounded-xl border border-kenya-green-light/40 bg-kenya-green-light/[0.06] p-2.5 sm:p-3">
+                <label className="text-[10px] sm:text-xs font-bold text-kenya-green-light uppercase tracking-wider block mb-1.5">
+                  County B ({String(countyB.code).padStart(3, "0")})
+                </label>
+                <CustomSelect
+                  value={compareSlugB}
+                  onValueChange={(val) => setCompareSlugB(val)}
+                  options={enrichedCounties.map((c) => ({
+                    value: c.slug,
+                    label: `${String(c.code).padStart(3, "0")} — ${c.name} County`,
+                  }))}
+                  className="w-full text-xs sm:text-sm"
+                />
+              </div>
+            </div>
+
+            {/* Head-to-Head Summary Strip */}
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 pt-1">
+              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-muted mr-1">
+                Leads:
+              </span>
+              {summaryLeaders.map((item) => {
+                const winner =
+                  item.a > item.b ? "A" : item.b > item.a ? "B" : "tie";
+                const winnerName =
+                  winner === "A"
+                    ? countyA.name
+                    : winner === "B"
+                    ? countyB.name
+                    : "Tie";
+                return (
+                  <span
+                    key={item.label}
+                    className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] sm:text-xs font-semibold border ${
+                      winner === "A"
+                        ? "border-gold/40 bg-gold/10 text-gold"
+                        : winner === "B"
+                        ? "border-kenya-green-light/40 bg-kenya-green-light/10 text-kenya-green-light"
+                        : "border-border bg-bg-elevated text-text-secondary"
+                    }`}
+                  >
+                    <span className="text-text-muted font-medium">{item.label}:</span>
+                    <span>{winnerName}</span>
+                  </span>
+                );
+              })}
+            </div>
+
+            {/* 5 Grouped Comparison Sections */}
+            <div className="space-y-4">
+              {compareSections.map((section) => (
+                <div
+                  key={section.title}
+                  className="rounded-xl border border-border/80 bg-bg-elevated/30 overflow-hidden"
+                >
+                  <div className="px-3.5 sm:px-4 py-2.5 bg-bg-elevated/70 border-b border-border flex items-center justify-between gap-2">
+                    <h3 className="text-xs sm:text-sm font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+                      {section.title}
+                    </h3>
+                    <div className="hidden sm:grid grid-cols-2 gap-4 w-1/2 text-[11px] font-bold uppercase tracking-wider text-right">
+                      <span className="text-gold truncate">{countyA.name}</span>
+                      <span className="text-kenya-green-light truncate">{countyB.name}</span>
+                    </div>
+                  </div>
+
+                  {/* Mobile column header */}
+                  <div className="grid grid-cols-[1.15fr_1fr_1fr] sm:hidden gap-2 px-3.5 py-1.5 border-b border-border/60 text-[10px] font-bold uppercase tracking-wider">
+                    <span className="text-text-muted">Metric</span>
+                    <span className="text-gold text-right truncate">{countyA.name}</span>
+                    <span className="text-kenya-green-light text-right truncate">{countyB.name}</span>
+                  </div>
+
+                  <div className="divide-y divide-border/50">
+                    {section.rows.map((row) => {
+                      const hasNumeric =
+                        typeof row.numA === "number" && typeof row.numB === "number";
+                      const totalNum = hasNumeric ? (row.numA || 0) + (row.numB || 0) : 0;
+                      const pctA =
+                        totalNum > 0
+                          ? (row.numA || 0) === 0
+                            ? 0
+                            : (row.numB || 0) === 0
+                            ? 100
+                            : Math.max(8, Math.min(92, ((row.numA || 0) / totalNum) * 100))
+                          : 0;
+                      const aLeads = hasNumeric && (row.numA || 0) > (row.numB || 0);
+                      const bLeads = hasNumeric && (row.numB || 0) > (row.numA || 0);
+
+                      return (
+                        <div
+                          key={row.label}
+                          className="px-3.5 sm:px-4 py-2.5 hover:bg-white/[0.02] transition-colors"
+                        >
+                          <div className="grid grid-cols-[1.15fr_1fr_1fr] sm:grid-cols-[1fr_0.5fr_0.5fr] gap-2 sm:gap-4 items-baseline text-xs sm:text-sm">
+                            <span className="text-text-muted font-medium leading-snug">
+                              {row.label}
+                            </span>
+                            <span
+                              className={`text-right font-semibold tabular-nums leading-snug break-words ${
+                                aLeads ? "text-gold" : "text-text-primary"
+                              }`}
+                            >
+                              {row.a}
+                            </span>
+                            <span
+                              className={`text-right font-semibold tabular-nums leading-snug break-words ${
+                                bLeads ? "text-kenya-green-light" : "text-text-primary"
+                              }`}
+                            >
+                              {row.b}
+                            </span>
+                          </div>
+                          {hasNumeric && totalNum > 0 && (
+                            <div
+                              className="mt-1.5 h-1.5 w-full rounded-full overflow-hidden flex gap-0.5 bg-bg-elevated"
+                              aria-hidden="true"
+                            >
+                              {pctA > 0 && (
+                                <div
+                                  className="h-full bg-gold rounded-l-full transition-all"
+                                  style={{ width: `${pctA}%` }}
+                                />
+                              )}
+                              {100 - pctA > 0 && (
+                                <div
+                                  className="h-full bg-kenya-green-light rounded-r-full transition-all"
+                                  style={{ width: `${100 - pctA}%` }}
+                                />
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Quick Profile Links */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-1">
+              <Link
+                href={`/county/${countyA.slug}/`}
+                prefetch={false}
+                className="flex items-center justify-between rounded-xl border border-gold/40 bg-gold/10 hover:bg-gold/15 px-4 py-3 text-xs sm:text-sm font-bold text-gold transition-colors"
+              >
+                <span>Explore {countyA.name} →</span>
+                <span className="text-[11px] font-mono opacity-80">
+                  #{String(countyA.code).padStart(3, "0")}
+                </span>
+              </Link>
+              <Link
+                href={`/county/${countyB.slug}/`}
+                prefetch={false}
+                className="flex items-center justify-between rounded-xl border border-kenya-green-light/40 bg-kenya-green-light/10 hover:bg-kenya-green-light/15 px-4 py-3 text-xs sm:text-sm font-bold text-kenya-green-light transition-colors"
+              >
+                <span>Explore {countyB.name} →</span>
+                <span className="text-[11px] font-mono opacity-80">
+                  #{String(countyB.code).padStart(3, "0")}
+                </span>
+              </Link>
+            </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
 
       {filtered.length === 0 && activeTab !== "compare" && (
         <div data-adsense-pause="true" className="text-center py-16">

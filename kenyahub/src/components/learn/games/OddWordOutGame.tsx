@@ -4,13 +4,13 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useMemo, useState } from "react";
 import { RotateCcw, Sparkles, Trophy } from "lucide-react";
 import type { WordPair } from "@/data/courses/types";
-import { getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair } from "@/lib/learn-engine";
+import { getPrimaryForm, isCleanLexicalWordPair } from "@/lib/learn-engine";
 import {
   playCorrectSfx,
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle } from "./shared";
+import { type GameProps, shuffle, cleanQuizGloss, isValidQuizPair, pickBalancedDistractors } from "./shared";
 
 interface OddRound {
   categoryTitle: string;
@@ -40,11 +40,11 @@ export function OddWordOutGame({
       .map((sk) => ({
         title: sk.title.replace(/^Dictionary:\s*/i, ""),
         words: sk.words
-          .filter((w) => isCleanLexicalWordPair(w.target, w.source))
+          .filter((w) => isCleanLexicalWordPair(w.target, w.source) && isValidQuizPair(w.target, w.source))
           .map((w) => ({
             ...w,
-            target: getPrimaryForm(w.target).trim(),
-            source: cleanExerciseText(getPrimaryForm(w.source)).trim(),
+            target: cleanQuizGloss(getPrimaryForm(w.target)),
+            source: cleanQuizGloss(getPrimaryForm(w.source)),
           }))
           .filter((w) => w.target && w.source),
       }))
@@ -64,11 +64,20 @@ export function OddWordOutGame({
         .slice(0, 3)
         .map((w) => ({ ...w, isIntruder: false }));
       const mainTargets = new Set(threeMain.map((w) => w.target.toLowerCase()));
-      const intruderCandidates = shuffle(oddSkill.words).filter(
+      const intruderPool = oddSkill.words.filter(
         (w) => !mainTargets.has(w.target.toLowerCase())
       );
-      if (intruderCandidates.length === 0) continue;
-      const intruder = { ...intruderCandidates[0], isIntruder: true };
+      if (intruderPool.length === 0) continue;
+      // Match intruder word-count & length profile to main category words so it never stands out by length
+      const balancedTarget = pickBalancedDistractors(
+        threeMain[0].target,
+        intruderPool.map((w) => w.target),
+        1
+      )[0];
+      const matchedIntruder =
+        intruderPool.find((w) => w.target.toLowerCase() === balancedTarget?.toLowerCase()) ||
+        shuffle(intruderPool)[0];
+      const intruder = { ...matchedIntruder, isIntruder: true };
 
       generated.push({
         categoryTitle: mainSkill.title,

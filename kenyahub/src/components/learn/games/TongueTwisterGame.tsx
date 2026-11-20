@@ -10,7 +10,7 @@ import {
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle } from "./shared";
+import { type GameProps, shuffle, cleanQuizGloss } from "./shared";
 
 interface TwisterItem {
   languageId: string;
@@ -206,7 +206,7 @@ export function TongueTwisterGame({
           Assemble &amp; say aloud 3 times fast ({languageName} / Kenyan Phonetics):
         </p>
         <p className="text-base font-bold text-text-primary">
-          &ldquo;{current.english}&rdquo;
+          &ldquo;{cleanQuizGloss(current.english) || current.english}&rdquo;
         </p>
       </div>
 

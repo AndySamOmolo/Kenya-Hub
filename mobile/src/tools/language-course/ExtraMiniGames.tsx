@@ -3,7 +3,6 @@ import { View, Text, Pressable, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useTheme, androidRipple } from "../../theme";
 import type { CourseUnit, WordPair } from "../../shared/data/courses/types";
-import { PUBLISHED_COURSE_SUMMARIES } from "../../shared/data/courses/catalog-summary";
 import {
   CULTURAL_WISDOM,
   getCulturalWisdomForLanguage,
@@ -15,7 +14,12 @@ import {
   getPrimaryForm,
   isCleanLexicalWordPair,
 } from "../../shared/lib/learn-engine";
-import type { ExtraGameId } from "./types";
+import {
+  cleanQuizGloss,
+  isValidQuizPair,
+  pickBalancedDistractors,
+  type ExtraGameId,
+} from "./types";
 
 export interface ExtraMiniGamesProps {
   activeGame: ExtraGameId;
@@ -151,359 +155,7 @@ function GameCompleteCard({
 }
 
 // ============================================================================
-// 1. 47 COUNTIES & HOMELANDS (matches CountiesGeoGame.tsx)
-// ============================================================================
-function CountiesGeoMobile({
-  languageId,
-  langColor,
-  awardGameXP,
-  onBack,
-}: Omit<ExtraMiniGamesProps, "activeGame">) {
-  const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
-  const SESSION_ROUNDS = 8;
-  const [round, setRound] = useState(0);
-  const [score, setScore] = useState(0);
-  const [picked, setPicked] = useState<string | null>(null);
-  const [seed, setSeed] = useState(0);
-  const [done, setDone] = useState(false);
-
-  const questions = useMemo(() => {
-    const qList: {
-      prompt: string;
-      subprompt: string;
-      correctAnswer: string;
-      options: string[];
-      fact: string;
-    }[] = [];
-    const courses = shuffle(PUBLISHED_COURSE_SUMMARIES);
-
-    for (const c of courses) {
-      const cfg = c.config;
-      const countiesStr = cfg.counties.slice(0, 3).join(", ");
-      const otherCountySets = shuffle(
-        PUBLISHED_COURSE_SUMMARIES.filter((o) => o.config.id !== cfg.id).map((o) =>
-          o.config.counties.slice(0, 3).join(", ")
-        )
-      ).slice(0, 3);
-
-      qList.push({
-        prompt: `In which Kenyan counties is ${cfg.name} (${cfg.nativeName}) primarily spoken?`,
-        subprompt: `Family: ${cfg.family} • Speakers: ${cfg.speakers}`,
-        correctAnswer: countiesStr,
-        options: shuffle([countiesStr, ...otherCountySets]),
-        fact: `${cfg.name} (${cfg.nativeName}) is a ${cfg.family} language spoken across ${cfg.counties.join(", ")}.`,
-      });
-
-      const otherLangs = shuffle(
-        PUBLISHED_COURSE_SUMMARIES.filter((o) => o.config.id !== cfg.id).map(
-          (o) => `${o.config.name} (${o.config.nativeName})`
-        )
-      ).slice(0, 3);
-      const correctLang = `${cfg.name} (${cfg.nativeName})`;
-
-      qList.push({
-        prompt: `Which Kenyan language is indigenous to ${countiesStr}?`,
-        subprompt: `Clue: ${cfg.family} family (${cfg.speakers} speakers)`,
-        correctAnswer: correctLang,
-        options: shuffle([correctLang, ...otherLangs]),
-        fact: cfg.description,
-      });
-    }
-
-    const activeFirst = qList.sort((a, b) => {
-      const aMatch = languageId && a.fact.toLowerCase().includes(languageId) ? -1 : 0;
-      const bMatch = languageId && b.fact.toLowerCase().includes(languageId) ? -1 : 0;
-      return aMatch - bMatch;
-    });
-    return activeFirst.slice(0, SESSION_ROUNDS);
-  }, [languageId, seed]);
-
-  const current = questions[round];
-
-  const handlePick = (opt: string) => {
-    if (picked !== null || !current) return;
-    setPicked(opt);
-    const isRight = opt === current.correctAnswer;
-    if (isRight) {
-      setScore((s) => s + 20);
-      awardGameXP(20, false);
-    }
-    setTimeout(() => {
-      setPicked(null);
-      if (round + 1 >= questions.length) {
-        setDone(true);
-        awardGameXP(0, true);
-      } else {
-        setRound((r) => r + 1);
-      }
-    }, 1150);
-  };
-
-  if (done) {
-    return (
-      <GameCompleteCard
-        icon="map-pin"
-        title="47 Counties & Homelands Complete!"
-        subtitle={`You mapped Kenya's linguistic homelands across ${questions.length} rounds (${score} pts).`}
-        buttonLabel="Play Again"
-        langColor={langColor}
-        onRestart={() => {
-          setRound(0);
-          setScore(0);
-          setPicked(null);
-          setDone(false);
-          setSeed((s) => s + 1);
-        }}
-        onBack={onBack}
-      />
-    );
-  }
-
-  if (!current) return null;
-
-  return (
-    <View style={[localStyles.boardCard, { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant }]}>
-      <GameHeaderBar title="47 Counties Atlas" score={score} progressText={`${round + 1}/${questions.length}`} onBack={onBack} />
-      <View style={[localStyles.promptBox, { backgroundColor: colors.surfaceContainerHigh, borderColor: colors.outlineVariant }]}>
-        <View style={[localStyles.tagPill, { backgroundColor: `${langColor}20`, borderColor: `${langColor}45` }]}>
-          <Feather name="map-pin" size={11} color={langColor} />
-          <Text style={{ fontSize: 10.5, fontWeight: "800", color: langColor }}>47 Counties Linguistic Atlas</Text>
-        </View>
-        <Text style={{ fontSize: 15.5, fontWeight: "800", color: colors.text, textAlign: "center", lineHeight: 22 }}>
-          {current.prompt}
-        </Text>
-        <Text style={{ fontSize: 11.5, color: colors.textSecondary, textAlign: "center" }}>
-          {current.subprompt}
-        </Text>
-      </View>
-
-      <View style={{ gap: 8 }}>
-        {current.options.map((opt, idx) => {
-          const isCorrect = opt === current.correctAnswer;
-          const isPicked = picked === opt;
-          let borderColor = colors.outlineVariant;
-          let bgColor = colors.surface;
-          let textColor = colors.text;
-          if (picked !== null) {
-            if (isCorrect) {
-              borderColor = "#10B981";
-              bgColor = "rgba(16,185,129,0.14)";
-              textColor = "#10B981";
-            } else if (isPicked) {
-              borderColor = "#EF4444";
-              bgColor = "rgba(239,68,68,0.12)";
-              textColor = "#EF4444";
-            }
-          }
-          return (
-            <Pressable
-              key={idx}
-              android_ripple={ripple}
-              disabled={picked !== null}
-              onPress={() => handlePick(opt)}
-              style={[localStyles.optionBtn, { borderColor, backgroundColor: bgColor }]}
-            >
-              <Text style={{ fontSize: 13.5, fontWeight: isCorrect && picked !== null ? "800" : "600", color: textColor }}>
-                {opt}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </View>
-
-      {picked !== null && (
-        <View style={[localStyles.noteBanner, { backgroundColor: `${colors.gold}15`, borderColor: `${colors.gold}40` }]}>
-          <Text style={{ fontSize: 12, color: colors.textSecondary, lineHeight: 18 }}>
-            <Text style={{ fontWeight: "800", color: colors.gold }}>Atlas Note: </Text>
-            {current.fact}
-          </Text>
-        </View>
-      )}
-    </View>
-  );
-}
-
-// ============================================================================
-// 2. SOKONI & MATATU DIALOGUE (matches MatatuShengGame.tsx)
-// ============================================================================
-function MatatuShengMobile({
-  allWords,
-  languageName,
-  langColor,
-  awardGameXP,
-  onBack,
-}: Omit<ExtraMiniGamesProps, "activeGame">) {
-  const { colors, isDark } = useTheme();
-  const ripple = androidRipple(isDark);
-  const SESSION_ROUNDS = 6;
-  const [round, setRound] = useState(0);
-  const [score, setScore] = useState(0);
-  const [picked, setPicked] = useState<string | null>(null);
-  const [seed, setSeed] = useState(0);
-  const [done, setDone] = useState(false);
-
-  const scenarios = useMemo(() => {
-    const list: {
-      setting: string;
-      speakerPrompt: string;
-      correctResponse: string;
-      options: string[];
-      culturalTip: string;
-    }[] = [];
-    const shuffledWords = shuffle(allWords);
-    const settings = [
-      {
-        title: "Sokoni (Open-Air Market Bargaining)",
-        template: (src: string) =>
-          `Mama Mboga asks you at the market stall how to say "${src}" in ${languageName}:`,
-      },
-      {
-        title: "Matatu Stage & Safari Greeting",
-        template: (src: string) =>
-          `A fellow traveler at the stage greets you and asks for the ${languageName} word meaning "${src}":`,
-      },
-      {
-        title: "Homestead & Elders' Baraza",
-        template: (src: string) =>
-          `An elder welcoming guests to the homestead asks you to name "${src}" in ${languageName}:`,
-      },
-    ];
-
-    for (let i = 0; i < Math.min(SESSION_ROUNDS, shuffledWords.length); i++) {
-      const w = shuffledWords[i];
-      if (!w) continue;
-      const distractors = shuffle(
-        shuffledWords
-          .filter((o) => o.target.toLowerCase() !== w.target.toLowerCase())
-          .map((o) => o.target)
-      ).slice(0, 3);
-      if (distractors.length < 3) continue;
-
-      const s = settings[i % settings.length];
-      list.push({
-        setting: s.title,
-        speakerPrompt: s.template(w.source),
-        correctResponse: w.target,
-        options: shuffle([w.target, ...distractors]),
-        culturalTip: w.example
-          ? `Usage in context: "${w.example}"`
-          : `In ${languageName}, "${w.target}" means "${w.source}".`,
-      });
-    }
-    return list;
-  }, [allWords, languageName, seed]);
-
-  const current = scenarios[round];
-
-  const handlePick = (opt: string) => {
-    if (picked !== null || !current) return;
-    setPicked(opt);
-    const isRight = opt === current.correctResponse;
-    if (isRight) {
-      setScore((s) => s + 20);
-      awardGameXP(20, false);
-    }
-    setTimeout(() => {
-      setPicked(null);
-      if (round + 1 >= scenarios.length) {
-        setDone(true);
-        awardGameXP(0, true);
-      } else {
-        setRound((r) => r + 1);
-      }
-    }, 1050);
-  };
-
-  if (scenarios.length === 0) {
-    return (
-      <View style={[localStyles.boardCard, { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant }]}>
-        <GameHeaderBar title="Sokoni & Matatu" score={0} progressText="" onBack={onBack} />
-        <Text style={{ fontSize: 13, color: colors.textMuted, textAlign: "center", paddingVertical: 20 }}>
-          Not enough words available for Sokoni & Matatu Dialogue.
-        </Text>
-      </View>
-    );
-  }
-
-  if (done) {
-    return (
-      <GameCompleteCard
-        icon="message-square"
-        title="Sokoni & Matatu Dialogue Complete!"
-        subtitle={`You navigated ${scenarios.length} real-life Kenyan conversations (${score} pts).`}
-        buttonLabel="New Dialogue Run"
-        langColor={langColor}
-        onRestart={() => {
-          setRound(0);
-          setScore(0);
-          setPicked(null);
-          setDone(false);
-          setSeed((s) => s + 1);
-        }}
-        onBack={onBack}
-      />
-    );
-  }
-
-  return (
-    <View style={[localStyles.boardCard, { backgroundColor: colors.surfaceContainerLow, borderColor: colors.outlineVariant }]}>
-      <GameHeaderBar title="Sokoni & Matatu" score={score} progressText={`${round + 1}/${scenarios.length}`} onBack={onBack} />
-      <View style={[localStyles.promptBox, { backgroundColor: colors.surfaceContainerHigh, borderColor: colors.outlineVariant }]}>
-        <View style={[localStyles.tagPill, { backgroundColor: `${colors.gold}20`, borderColor: `${colors.gold}45` }]}>
-          <Feather name="message-square" size={11} color={colors.gold} />
-          <Text style={{ fontSize: 10.5, fontWeight: "800", color: colors.gold }}>{current.setting}</Text>
-        </View>
-        <Text style={{ fontSize: 15, fontWeight: "800", color: colors.text, textAlign: "center", lineHeight: 22 }}>
-          {current.speakerPrompt}
-        </Text>
-      </View>
-
-      <View style={{ gap: 8 }}>
-        {current.options.map((opt, idx) => {
-          const isCorrect = opt === current.correctResponse;
-          const isPicked = picked === opt;
-          let borderColor = colors.outlineVariant;
-          let bgColor = colors.surface;
-          let textColor = colors.text;
-          if (picked !== null) {
-            if (isCorrect) {
-              borderColor = "#10B981";
-              bgColor = "rgba(16,185,129,0.14)";
-              textColor = "#10B981";
-            } else if (isPicked) {
-              borderColor = "#EF4444";
-              bgColor = "rgba(239,68,68,0.12)";
-              textColor = "#EF4444";
-            }
-          }
-          return (
-            <Pressable
-              key={idx}
-              android_ripple={ripple}
-              disabled={picked !== null}
-              onPress={() => handlePick(opt)}
-              style={[localStyles.optionBtn, { borderColor, backgroundColor: bgColor }]}
-            >
-              <Text style={{ fontSize: 14, fontWeight: "700", color: textColor }}>“{opt}”</Text>
-            </Pressable>
-          );
-        })}
-      </View>
-
-      {picked !== null && (
-        <View style={[localStyles.noteBanner, { backgroundColor: `${colors.gold}15`, borderColor: `${colors.gold}40` }]}>
-          <Text style={{ fontSize: 12, color: colors.textSecondary, textAlign: "center" }}>
-            {current.culturalTip}
-          </Text>
-        </View>
-      )}
-    </View>
-  );
-}
-
-// ============================================================================
-// 3. METHALI & NGERO BUILDER (matches MethaliBuilderGame.tsx)
+// 1. METHALI & NGERO BUILDER (matches MethaliBuilderGame.tsx)
 // ============================================================================
 function MethaliBuilderMobile({
   allWords,
@@ -559,16 +211,14 @@ function MethaliBuilderMobile({
       if (activeMode === "tiles") {
         const capped = words.slice(0, 9);
         setTargetTokens(capped);
-        const distractorWords = shuffle(
-          allWords
-            .map((w) => w.target.split(/\s+/)[0])
-            .filter(
-              (w) =>
-                w &&
-                w.length >= 3 &&
-                !capped.some((c) => c.toLowerCase() === w.toLowerCase())
-            )
-        ).slice(0, 2);
+        const cappedSet = new Set(capped.map((c) => c.toLowerCase()));
+        const medianToken =
+          [...capped].sort((a, b) => a.length - b.length)[Math.floor(capped.length / 2)] || capped[0] || "";
+        const singleTokenCandidates = allWords
+          .filter((w) => isValidQuizPair(w.target, w.source))
+          .map((w) => cleanQuizGloss(getPrimaryForm(w.target), 30).split(/\s+/)[0])
+          .filter((w) => w && w.length >= 3 && !cappedSet.has(w.toLowerCase()));
+        const distractorWords = pickBalancedDistractors(medianToken, singleTokenCandidates, 2);
         setTilePool(shuffle([...capped, ...distractorWords]));
         setSelectedIndices([]);
       } else {
@@ -578,15 +228,18 @@ function MethaliBuilderMobile({
         setPromptStem(firstHalf);
         setCorrectEnding(secondHalf);
 
-        const otherEndings = shuffle(
-          proverbsPool
-            .filter((p) => p.id !== item.id)
-            .map((p) => {
-              const w = p.nativeText.replace(/[.!?]+$/g, "").trim().split(/\s+/);
-              return w.slice(Math.max(1, Math.floor(w.length / 2))).join(" ");
-            })
-            .filter((e) => e && e.toLowerCase() !== secondHalf.toLowerCase())
-        ).slice(0, 3);
+        const candidateEndings = proverbsPool
+          .filter((p) => p.id !== item.id)
+          .map((p) => {
+            const cleaned = p.nativeText
+              .replace(/\s*\([A-Z][^)]*\d{4}[^)]*\)\.?\s*$/g, "")
+              .replace(/[.!?]+$/g, "")
+              .trim();
+            const w = cleaned.split(/\s+/).filter(Boolean);
+            return w.slice(Math.max(1, Math.floor(w.length / 2))).join(" ");
+          })
+          .filter(Boolean);
+        const otherEndings = pickBalancedDistractors(secondHalf, candidateEndings, 3);
         setEndingOptions(shuffle([secondHalf, ...otherEndings]));
       }
     },
@@ -845,7 +498,7 @@ function MethaliBuilderMobile({
 }
 
 // ============================================================================
-// 4. GRAMMAR & NOUN CLASS SORTER (matches NounClassSorterGame.tsx)
+// 2. GRAMMAR & NOUN CLASS SORTER (matches NounClassSorterGame.tsx)
 // ============================================================================
 const BANTU_IDS = new Set([
   "swahili", "kikuyu", "luhya", "kamba", "kisii", "meru",
@@ -904,16 +557,18 @@ function NounClassSorterMobile({
   const sortItems = useMemo(() => {
     const items: { target: string; source: string; bucketId: string; explanation: string }[] = [];
     for (const w of shuffle(allWords)) {
-      const s = w.source.toLowerCase();
-      const t = w.target.trim();
+      if (!isValidQuizPair(w.target, w.source)) continue;
+      const t = cleanQuizGloss(getPrimaryForm(w.target), 40);
+      const cleanSrc = cleanQuizGloss(getPrimaryForm(w.source), 56);
+      const s = cleanSrc.toLowerCase();
       if (!t || !s) continue;
 
       if (/^to\s+[a-z]/i.test(s)) {
         items.push({
           target: t,
-          source: w.source,
+          source: cleanSrc,
           bucketId: "actions",
-          explanation: `"${t}" (${w.source}) is an action verb/infinitive form.`,
+          explanation: `"${t}" (${cleanSrc}) is an action verb/infinitive form.`,
         });
         continue;
       }
@@ -921,9 +576,9 @@ function NounClassSorterMobile({
         const bId = familyType === "bantu" ? "people" : familyType === "cushitic" ? "kin" : "masc";
         items.push({
           target: t,
-          source: w.source,
+          source: cleanSrc,
           bucketId: bId,
-          explanation: `"${t}" (${w.source}) belongs to the human/kinship noun class.`,
+          explanation: `"${t}" (${cleanSrc}) belongs to the human/kinship noun class.`,
         });
         continue;
       }
@@ -931,9 +586,9 @@ function NounClassSorterMobile({
         const bId = familyType === "bantu" ? "trees" : familyType === "cushitic" ? "pastoral" : "fem";
         items.push({
           target: t,
-          source: w.source,
+          source: cleanSrc,
           bucketId: bId,
-          explanation: `"${t}" (${w.source}) belongs to the nature, ecology & livestock class.`,
+          explanation: `"${t}" (${cleanSrc}) belongs to the nature, ecology & livestock class.`,
         });
         continue;
       }
@@ -941,9 +596,9 @@ function NounClassSorterMobile({
         const bId = familyType === "bantu" ? "things" : "objects";
         items.push({
           target: t,
-          source: w.source,
+          source: cleanSrc,
           bucketId: bId,
-          explanation: `"${t}" (${w.source}) belongs to the artifacts, homestead & numerals class.`,
+          explanation: `"${t}" (${cleanSrc}) belongs to the artifacts, homestead & numerals class.`,
         });
       }
     }
@@ -1069,7 +724,7 @@ function NounClassSorterMobile({
 }
 
 // ============================================================================
-// 5. SEMANTIC ODD-WORD-OUT (matches OddWordOutGame.tsx)
+// 3. SEMANTIC ODD-WORD-OUT (matches OddWordOutGame.tsx)
 // ============================================================================
 function OddWordOutMobile({
   courseUnits,
@@ -1095,11 +750,11 @@ function OddWordOutMobile({
       .map((sk) => ({
         title: sk.title.replace(/^Dictionary:\s*/i, ""),
         words: sk.words
-          .filter((w) => isCleanLexicalWordPair(w.target, w.source))
+          .filter((w) => isCleanLexicalWordPair(w.target, w.source) && isValidQuizPair(w.target, w.source))
           .map((w) => ({
             ...w,
-            target: getPrimaryForm(w.target).trim(),
-            source: cleanExerciseText(getPrimaryForm(w.source)).trim(),
+            target: cleanQuizGloss(getPrimaryForm(w.target), 40),
+            source: cleanQuizGloss(cleanExerciseText(getPrimaryForm(w.source)), 56),
           }))
           .filter((w) => w.target && w.source),
       }))
@@ -1120,15 +775,36 @@ function OddWordOutMobile({
       const oddSkill = shuffledSkills.find((s) => s.title !== mainSkill.title) || shuffledSkills[1];
       if (!mainSkill || !oddSkill) continue;
 
-      const threeMain = shuffle(mainSkill.words)
+      const mainPool = shuffle(mainSkill.words);
+      const anchor = mainPool[0];
+      if (!anchor) continue;
+      const matchedMainTargets = pickBalancedDistractors(
+        anchor.target,
+        mainPool.slice(1).map((w) => w.target),
+        2
+      );
+      const threeMain = [
+        anchor,
+        ...matchedMainTargets
+          .map((t) => mainPool.find((w) => w.target === t))
+          .filter((w): w is WordPair => Boolean(w)),
+      ]
         .slice(0, 3)
         .map((w) => ({ ...w, isIntruder: false }));
+      if (threeMain.length < 3) continue;
       const mainTargets = new Set(threeMain.map((w) => w.target.toLowerCase()));
       const intruderCandidates = shuffle(oddSkill.words).filter(
         (w) => !mainTargets.has(w.target.toLowerCase())
       );
       if (intruderCandidates.length === 0) continue;
-      const intruder = { ...intruderCandidates[0], isIntruder: true };
+      const balancedIntruderTarget = pickBalancedDistractors(
+        anchor.target,
+        intruderCandidates.map((w) => w.target),
+        1
+      )[0];
+      const chosenIntruder =
+        intruderCandidates.find((w) => w.target === balancedIntruderTarget) || intruderCandidates[0];
+      const intruder = { ...chosenIntruder, isIntruder: true };
 
       generated.push({
         categoryTitle: mainSkill.title,
@@ -1249,7 +925,7 @@ function OddWordOutMobile({
 }
 
 // ============================================================================
-// 6. KENYAN POLYGLOT BRIDGE (matches PolyglotBridgeGame.tsx)
+// 4. KENYAN POLYGLOT BRIDGE (matches PolyglotBridgeGame.tsx)
 // ============================================================================
 const KENYAN_COGNATE_BANK = [
   {
@@ -1322,9 +998,9 @@ const KENYAN_COGNATE_BANK = [
     question: "Across Lowland East Cushitic languages of Northern Kenya (Somali, Borana, Rendille, Daasanach), what does 'il / ija / indo' mean?",
     correctAnswer: "Eye / Eyes",
     distractors: [
-      "Camel / Herd of camels",
-      "Morning star / Dawn",
-      "Iron spear / Shield",
+      "Camel / Herd",
+      "Star / Dawn",
+      "Spear / Shield",
     ],
     linguisticNote:
       "Somali (il/indho), Rendille (il/indo), Borana (ija), and Daasanach (ʔíl) preserve the Afroasiatic Lowland East Cushitic root for 'eye'.",
@@ -1339,11 +1015,11 @@ const KENYAN_COGNATE_BANK = [
       { lang: "Mijikenda", word: "hahu" },
     ],
     question: "In Coastal Mijikenda & Kipokomo, Proto-Bantu *t (as in Swahili 'tatu', three) regularly shifts to which sound in 'hahu'?",
-    correctAnswer: "Voiceless glottal/aspirated 'h' (tatu → hahu)",
+    correctAnswer: "Voiceless glottal 'h' (*t → h)",
     distractors: [
-      "Labial click 'c'",
-      "Trilled 'rr'",
-      "Velar nasal 'ng''",
+      "Labial click 'c' (*t → c)",
+      "Alveolar trill 'rr' (*t → rr)",
+      "Velar nasal 'ng' (*t → ng)",
     ],
     linguisticNote:
       "A hallmark sound law of Mijikenda and Kipokomo is lenition of Proto-Bantu *t to h: *tatu ('three') → hahu, and *m-ti ('tree') → muhi.",
@@ -1385,10 +1061,11 @@ function PolyglotBridgeMobile({
 
   const deck = useMemo(() => shuffle(KENYAN_COGNATE_BANK), [seed]);
   const current = deck[round];
-  const options = useMemo(
-    () => (current ? shuffle([current.correctAnswer, ...current.distractors]) : []),
-    [current]
-  );
+  const options = useMemo(() => {
+    if (!current) return [];
+    const balanced = pickBalancedDistractors(current.correctAnswer, current.distractors, 3);
+    return shuffle([current.correctAnswer, ...(balanced.length >= 3 ? balanced : current.distractors)]);
+  }, [current]);
 
   const handlePick = (opt: string) => {
     if (picked !== null || !current) return;
@@ -1526,7 +1203,7 @@ function PolyglotBridgeMobile({
 }
 
 // ============================================================================
-// 7. SENTENCE SAFARI (CLOZE) (matches SentenceSafariGame.tsx)
+// 5. SENTENCE SAFARI (CLOZE) (matches SentenceSafariGame.tsx)
 // ============================================================================
 function SentenceSafariMobile({
   allWords,
@@ -1555,7 +1232,10 @@ function SentenceSafariMobile({
       options: string[];
       skillTitle: string;
     }[] = [];
-    const wordTargets = allWords.map((w) => w.target);
+    const wordTargets = allWords
+      .filter((w) => isValidQuizPair(w.target, w.source))
+      .map((w) => cleanQuizGloss(getPrimaryForm(w.target), 32))
+      .filter((t) => t.length >= 3 && !t.includes(" "));
 
     for (const unit of units) {
       for (const skill of unit.skills) {
@@ -1579,14 +1259,7 @@ function SentenceSafariMobile({
           const maskedTokens = [...tokens];
           maskedTokens[chosen.idx] = "_____";
 
-          const distractors = shuffle(
-            wordTargets.filter(
-              (w) =>
-                w.toLowerCase() !== chosen.clean.toLowerCase() &&
-                !w.includes(" ") &&
-                w.length >= 3
-            )
-          ).slice(0, 3);
+          const distractors = pickBalancedDistractors(chosen.clean, wordTargets, 3);
           if (distractors.length < 3) continue;
 
           pool.push({
@@ -1605,15 +1278,13 @@ function SentenceSafariMobile({
           const regex = new RegExp(`\\b${primaryTarget.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
           if (regex.test(w.example)) {
             const masked = w.example.replace(regex, "_____");
-            const distractors = shuffle(
-              wordTargets.filter(
-                (t) => t.toLowerCase() !== primaryTarget.toLowerCase() && !t.includes(" ")
-              )
-            ).slice(0, 3);
+            const cleanMeaning = cleanQuizGloss(w.source, 56);
+            if (!cleanMeaning || !isValidQuizPair(primaryTarget, cleanMeaning)) continue;
+            const distractors = pickBalancedDistractors(primaryTarget, wordTargets, 3);
             if (distractors.length >= 3) {
               pool.push({
                 maskedSentence: masked,
-                englishSentence: `Meaning of missing word: "${w.source}"`,
+                englishSentence: `Meaning of missing word: "${cleanMeaning}"`,
                 missingWord: primaryTarget,
                 options: shuffle([primaryTarget, ...distractors]),
                 skillTitle: skill.title,
@@ -1732,7 +1403,7 @@ function SentenceSafariMobile({
 }
 
 // ============================================================================
-// 8. KIKOKOTOO TONGUE TWISTERS (matches TongueTwisterGame.tsx)
+// 6. KIKOKOTOO TONGUE TWISTERS (matches TongueTwisterGame.tsx)
 // ============================================================================
 const PAN_KENYAN_TWISTERS = [
   ...luoTongueTwisters.map((t) => ({
@@ -1890,7 +1561,7 @@ function TongueTwisterMobile({
           Assemble & say aloud 3 times fast ({languageName} / Kenyan Phonetics):
         </Text>
         <Text style={{ fontSize: 14.5, fontWeight: "800", color: colors.text, textAlign: "center" }}>
-          “{current.english}”
+          “{cleanQuizGloss(current.english, 140) || current.english}”
         </Text>
       </View>
 
@@ -1986,10 +1657,6 @@ function TongueTwisterMobile({
 export default function ExtraMiniGames(props: ExtraMiniGamesProps) {
   const { activeGame, ...rest } = props;
   switch (activeGame) {
-    case "counties":
-      return <CountiesGeoMobile {...rest} />;
-    case "sheng":
-      return <MatatuShengMobile {...rest} />;
     case "methali":
       return <MethaliBuilderMobile {...rest} />;
     case "nounClass":

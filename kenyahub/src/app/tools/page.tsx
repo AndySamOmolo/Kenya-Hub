@@ -312,13 +312,13 @@ export default function ToolsHubPage() {
       )}
 
       {/* Search, Category Pills & Single-Line Sort Bar */}
-      <div className="mb-4 sm:mb-6 space-y-2.5 sm:space-y-3">
+      <div className="mb-3 sm:mb-6 space-y-1.5 sm:space-y-3">
         <SearchInput
           type="text"
           placeholder="Search tools (PAYE, M-Pesa, KRA)..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="!h-9 sm:!h-11 text-sm"
+          className="!h-8 sm:!h-10 text-xs sm:text-sm"
           id="tools-search"
           onClear={() => setSearchQuery("")}
         />
@@ -330,7 +330,7 @@ export default function ToolsHubPage() {
             data-active={selectedCategory === "all"}
             aria-pressed={selectedCategory === "all"}
             onClick={() => handleSelectCategory("all")}
-            className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-xs font-semibold border transition-all cursor-pointer ${
+            className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold border transition-all cursor-pointer ${
               selectedCategory === "all"
                 ? "border-gold bg-gold/15 text-gold font-bold shadow-2xs"
                 : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -361,7 +361,7 @@ export default function ToolsHubPage() {
                 data-active={active}
                 aria-pressed={active}
                 onClick={() => handleSelectCategory(cat.id)}
-                className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[30px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-xs font-semibold border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[34px] inline-flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold border transition-all cursor-pointer ${
                   active
                     ? "border-gold bg-gold/15 text-gold font-bold shadow-2xs"
                     : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -378,11 +378,11 @@ export default function ToolsHubPage() {
         </ExpandablePillRow>
 
         {/* Single-Line Sort By Pill Bar */}
-        <div className="flex items-center gap-2 pt-0.5 flex-nowrap overflow-hidden">
-          <span className="text-[0.7rem] font-bold uppercase tracking-wider text-text-muted shrink-0 whitespace-nowrap">
+        <div className="flex items-center gap-1.5 sm:gap-2 pt-0 sm:pt-0.5 flex-nowrap overflow-hidden">
+          <span className="text-[10px] sm:text-[0.7rem] font-bold uppercase tracking-wider text-text-muted shrink-0 whitespace-nowrap">
             Sort By
           </span>
-          <div className="flex items-center gap-1.5 sm:gap-2 flex-nowrap overflow-x-auto no-scrollbar py-0.5 flex-1 min-w-0">
+          <div className="flex items-center gap-1 sm:gap-2 flex-nowrap overflow-x-auto no-scrollbar py-0 sm:py-0.5 flex-1 min-w-0">
             {(
               [
                 { id: "popular", label: "Most used", Icon: TrendingUp },
@@ -396,13 +396,13 @@ export default function ToolsHubPage() {
                   key={id}
                   type="button"
                   onClick={() => setSortBy(id)}
-                  className={`shrink-0 whitespace-nowrap rounded-full px-2.5 sm:px-3.5 py-1.5 min-h-[32px] inline-flex items-center justify-center gap-1.5 text-xs font-bold border transition-all cursor-pointer ${
+                  className={`shrink-0 whitespace-nowrap rounded-full px-2 py-0.5 sm:px-3.5 sm:py-1.5 min-h-[26px] sm:min-h-[32px] inline-flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-bold border transition-all cursor-pointer ${
                     active
                       ? "border-gold bg-gold/15 text-gold shadow-2xs"
                       : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary hover:border-border-light"
                   }`}
                 >
-                  <Icon className="w-3.5 h-3.5 text-gold shrink-0" />
+                  <Icon className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gold shrink-0" />
                   <span className="leading-normal">{label}</span>
                 </button>
               );

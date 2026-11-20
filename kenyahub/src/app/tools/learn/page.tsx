@@ -184,7 +184,7 @@ export default function LearnPage() {
       faq: [
         {
           question: "Which Kenyan languages can I learn for free on KenyaHub?",
-          answer: `KenyaHub offers ${readyLangs.length} free interactive Kenyan language courses: ${readyLangs.map((l) => l.name).join(", ")}. Every course includes guided skill trees, flashcards, grammar reference chapters, proverbs, and 14 mini-games.`,
+          answer: `KenyaHub offers ${readyLangs.length} free interactive Kenyan language courses: ${readyLangs.map((l) => l.name).join(", ")}. Every course includes guided skill trees, flashcards, grammar reference chapters, proverbs, and 12 mini-games.`,
         },
         {
           question: "Do I need an account to save my language learning progress?",
@@ -200,22 +200,23 @@ export default function LearnPage() {
       <div className="mx-auto max-w-4xl px-0 sm:px-2 pt-1 sm:pt-2 pb-8 space-y-3 sm:space-y-5">
         {/* ── Compact Quick Actions + Learner Stats & Word Spotlight ── */}
         <div className="space-y-2.5 sm:space-y-3.5">
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-nowrap items-center gap-2 overflow-x-auto no-scrollbar">
             {overallStats.resumeLang && overallStats.totalXp > 0 && (
               <Link
                 href={`/tools/learn/${overallStats.resumeLang.id}/`}
-                className="btn-gold text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2"
+                className="btn-gold shrink-0 whitespace-nowrap text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2"
               >
                 Resume {overallStats.resumeLang.name}
-                <ArrowRight className="w-3.5 h-3.5" />
+                <ArrowRight className="w-3.5 h-3.5 shrink-0" />
               </Link>
             )}
             <Link
               href="/tools/kenyan-translator/"
-              className="btn-outline text-xs sm:text-sm px-3 py-1.5 sm:px-3.5 sm:py-2"
+              className="btn-outline shrink-0 whitespace-nowrap text-xs sm:text-sm px-2.5 py-1.5 sm:px-3.5 sm:py-2"
             >
-              <Globe className="w-3.5 h-3.5 text-kenya-green-light" />
-              {ALL_DICT_METAS.length}-Language Translator ({TOTAL_DICTIONARY_ENTRIES.toLocaleString()} Words)
+              <Globe className="w-3.5 h-3.5 text-kenya-green-light shrink-0" />
+              <span className="sm:hidden">{ALL_DICT_METAS.length}-Lang Translator</span>
+              <span className="hidden sm:inline">{ALL_DICT_METAS.length}-Language Translator ({TOTAL_DICTIONARY_ENTRIES.toLocaleString()} Words)</span>
             </Link>
           </div>
 

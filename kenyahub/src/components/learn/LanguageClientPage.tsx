@@ -674,7 +674,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             { id: "lessons" as const, label: "Skill Path" },
             { id: "flashcards" as const, label: `Flashcards (${totalWords.toLocaleString("en-KE")})` },
             { id: "modules" as const, label: `All Vocab & Dictionary (${totalWords.toLocaleString("en-KE")})` },
-            { id: "games" as const, label: "Mini-Games (14)" },
+            { id: "games" as const, label: "Mini-Games (12)" },
             ...(hasGrammar ? [{ id: "grammar" as const, label: "Grammar" }] : []),
             { id: "proverbs" as const, label: "Proverbs & Wisdom" },
           ].map((tab) => {
@@ -1207,7 +1207,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-5 h-5 rounded-full bg-gold/15 text-gold text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
-                  <span className="leading-relaxed">Reinforce recall with the Spaced Repetition (SRS) queue, 3D Flashcards, Grammar Reference, Proverbs &amp; Wisdom, and 14 Mini-Games.</span>
+                  <span className="leading-relaxed">Reinforce recall with the Spaced Repetition (SRS) queue, 3D Flashcards, Grammar Reference, Proverbs &amp; Wisdom, and 12 Mini-Games.</span>
                 </li>
               </ol>
             </div>

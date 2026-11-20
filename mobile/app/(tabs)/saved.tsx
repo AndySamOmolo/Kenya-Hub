@@ -200,7 +200,6 @@ export default function SavedScreen() {
       <KenyaStripe />
 
       <AndroidTopAppBar
-        showBrandLogo
         title="Pinned Tools"
         subtitle="Saved offline for 1-tap access"
         rightAction={

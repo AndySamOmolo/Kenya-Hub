@@ -17,6 +17,8 @@ import {
   pickAdaptiveWord,
   isSingleWordLexical,
   seededRandom,
+  cleanQuizGloss,
+  isValidQuizPair,
 } from "./shared";
 
 type LetterStatus = "correct" | "present" | "absent" | "empty";
@@ -48,9 +50,10 @@ export function WordleGame({
   // Strictly single-word lexical entries (4-7 ASCII base letters)
   const validWords = useMemo(() => {
     const base = allWords
-      .filter((w) => isSingleWordLexical(w.target))
+      .filter((w) => isSingleWordLexical(w.target) && isValidQuizPair(w.target, w.source))
       .map((w) => ({
         ...w,
+        source: cleanQuizGloss(w.source),
         asciiTarget: stripDiacriticsToAscii(w.target),
       }))
       .filter((w) => w.asciiTarget.length >= 4 && w.asciiTarget.length <= 7);

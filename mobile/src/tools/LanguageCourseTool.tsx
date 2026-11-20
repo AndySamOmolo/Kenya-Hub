@@ -14,6 +14,7 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useFocusEffect } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather, Ionicons } from '@expo/vector-icons';
 import { playVerifiedAudio, hasVerifiedAudio } from '../lib/mobile-audio';
@@ -61,6 +62,9 @@ import {
   createDefaultLanguageProgress,
   getLocalDateString,
   renderFormattedText,
+  cleanQuizGloss,
+  isValidQuizPair,
+  pickBalancedDistractors,
 } from "./language-course/types";
 import { styles } from "./language-course/styles";
 import ExtraMiniGames from "./language-course/ExtraMiniGames";
@@ -526,7 +530,56 @@ export default function LanguageCourseTool({
       setActiveLessonLevel(nextLevel);
       const deck = getTeachingDeckForLevel(effectiveSkill, nextLevel);
       setTeachingDeck(deck);
-      const generated = generateExercises(effectiveSkill, 15, nextLevel);
+      const rawGenerated = generateExercises(effectiveSkill, 15, nextLevel);
+      const lessonPoolWords = [
+        ...effectiveSkill.words,
+        ...(currentCourse?.units.flatMap((u) => u.skills.flatMap((sk) => sk.words)) || []),
+      ];
+      const cleanTargetPool = lessonPoolWords
+        .filter((w) => isValidQuizPair(w.target, w.source))
+        .map((w) => cleanQuizGloss(getPrimaryForm(w.target), 42))
+        .filter(Boolean);
+      const cleanSourcePool = lessonPoolWords
+        .filter((w) => isValidQuizPair(w.target, w.source))
+        .map((w) => cleanQuizGloss(getPrimaryForm(w.source), 56))
+        .filter(Boolean);
+      const generated = rawGenerated.map((ex) => {
+        if ((ex.type === 'multiple_choice' || ex.type === 'fill_blank') && ex.options && ex.options.length > 1) {
+          const cleanCorrect = cleanQuizGloss(ex.correctAnswer, 80) || ex.correctAnswer.trim();
+          const sw = ex.sourceWord;
+          const normCorrect = cleanCorrect.toLowerCase();
+          const isTargetSide =
+            ex.type === 'fill_blank' ||
+            (sw
+              ? cleanQuizGloss(getPrimaryForm(sw.target), 80).toLowerCase() === normCorrect ||
+                sw.target.toLowerCase().includes(normCorrect)
+              : false);
+          const candidatePool = isTargetSide
+            ? [...cleanTargetPool, ...ex.options]
+            : [...cleanSourcePool, ...ex.options];
+          const balanced = pickBalancedDistractors(cleanCorrect, candidatePool, 3);
+          if (balanced.length >= 2) {
+            const shuffledOpts = [cleanCorrect, ...balanced].sort(() => Math.random() - 0.5);
+            return {
+              ...ex,
+              correctAnswer: cleanCorrect,
+              options: shuffledOpts,
+            };
+          }
+        }
+        if (ex.type === 'match_pairs' && ex.pairs && ex.pairs.length >= 2) {
+          const cleanedPairs = ex.pairs
+            .map((pair) => ({
+              left: cleanQuizGloss(pair.left, 42) || pair.left.trim(),
+              right: cleanQuizGloss(pair.right, 56) || pair.right.trim(),
+            }))
+            .filter((pair) => pair.left && pair.right);
+          if (cleanedPairs.length >= 2) {
+            return { ...ex, pairs: cleanedPairs };
+          }
+        }
+        return ex;
+      });
       setExercises(generated);
       setExIndex(0);
       setCorrectCount(0);
@@ -536,7 +589,7 @@ export default function LanguageCourseTool({
       setupExerciseState(generated[0]);
       setLessonStage(skipLearn || deck.length === 0 ? 'practice' : 'learn');
     },
-    [setupExerciseState, onScrollToTop, progress.dictCursors, progress.skills, saveLanguageProgress]
+    [setupExerciseState, onScrollToTop, progress.dictCursors, progress.skills, saveLanguageProgress, currentCourse]
   );
 
   const lessonScrollRef = useRef<ScrollView>(null);
@@ -797,8 +850,9 @@ export default function LanguageCourseTool({
         for (const w of sk.words) {
           if (words.length >= maxTotal) return;
           if (!isCleanLexicalWordPair(w.target, w.source)) continue;
-          const target = getPrimaryForm(w.target).trim();
-          const source = cleanExerciseText(getPrimaryForm(w.source)).trim();
+          const target = cleanQuizGloss(getPrimaryForm(w.target), 42);
+          const source = cleanQuizGloss(cleanExerciseText(getPrimaryForm(w.source)), 56);
+          if (!isValidQuizPair(target, source)) continue;
           const tKey = target.toLowerCase();
           const sKey = source.toLowerCase();
           if (target && source && !seenTargets.has(tKey) && !seenSources.has(sKey)) {
@@ -818,13 +872,13 @@ export default function LanguageCourseTool({
 
   const startScrambleRound = useCallback(() => {
     const eligible = allCourseWords
-      .filter((w) => isSingleWordLexical(w.target))
+      .filter((w) => isSingleWordLexical(w.target) && isValidQuizPair(w.target, w.source))
       .map((w) => ({
         ...w,
-        target: getPrimaryForm(w.target).trim().replace(/[^a-zA-Z\u00C0-\u024F\u1E00-\u1EFF']/g, ""),
-        source: getPrimaryForm(w.source),
+        target: cleanQuizGloss(getPrimaryForm(w.target), 32).replace(/[^a-zA-Z\u00C0-\u024F\u1E00-\u1EFF']/g, ""),
+        source: cleanQuizGloss(getPrimaryForm(w.source), 56),
       }))
-      .filter((w) => w.target.length >= 3 && w.target.length <= 10);
+      .filter((w) => w.target.length >= 3 && w.target.length <= 10 && w.source.length >= 2);
     if (eligible.length === 0) return;
     const chosen = eligible[Math.floor(Math.random() * eligible.length)];
     const origChars = chosen.target.split("");
@@ -845,39 +899,59 @@ export default function LanguageCourseTool({
   }, [allCourseWords]);
 
   const startSpeedRound = useCallback(() => {
-    if (allCourseWords.length < 4) return;
-    const chosen = allCourseWords[Math.floor(Math.random() * allCourseWords.length)];
-    const seen = new Set<string>([chosen.source.toLowerCase()]);
-    const distractors: string[] = [];
-    const shuffled = [...allCourseWords].sort(() => Math.random() - 0.5);
-    for (const w of shuffled) {
-      const cleanSrc = (w.source || '').trim();
-      if (!cleanSrc || cleanSrc.toLowerCase() === 'none' || cleanSrc.toLowerCase() === 'n/a') continue;
-      if (!seen.has(cleanSrc.toLowerCase())) {
-        seen.add(cleanSrc.toLowerCase());
-        distractors.push(cleanSrc);
-        if (distractors.length >= 3) break;
-      }
-    }
-    const opts = [chosen.source, ...distractors].sort(() => Math.random() - 0.5);
-    setSpeedQuestion(chosen);
+    const validPool = allCourseWords.filter((w) => isValidQuizPair(w.target, w.source));
+    if (validPool.length < 4) return;
+    const chosen = validPool[Math.floor(Math.random() * validPool.length)];
+    const correctSource = cleanQuizGloss(chosen.source, 56) || chosen.source.trim();
+    const candidateSources = validPool
+      .filter((w) => w.target.toLowerCase() !== chosen.target.toLowerCase())
+      .map((w) => {
+        const cleanSrc = cleanQuizGloss(w.source || '', 56);
+        if (!cleanSrc || cleanSrc.toLowerCase() === 'none' || cleanSrc.toLowerCase() === 'n/a') return '';
+        return cleanSrc;
+      })
+      .filter(Boolean);
+    const distractors = pickBalancedDistractors(correctSource, candidateSources, 3);
+    const opts = [correctSource, ...distractors].sort(() => Math.random() - 0.5);
+    setSpeedQuestion({ ...chosen, source: correctSource });
     setSpeedOptions(opts);
     setSpeedFeedback(null);
   }, [allCourseWords]);
 
   const startMemoryGame = useCallback(() => {
-    const seenTargets = new Set<string>();
-    const seenSources = new Set<string>();
-    const sample: Word[] = [];
-    for (const w of [...allCourseWords].sort(() => Math.random() - 0.5)) {
-      const t = getPrimaryForm(w.target).trim();
-      const s = getPrimaryForm(w.source).trim();
-      if (!t || !s) continue;
-      if (seenTargets.has(t.toLowerCase()) || seenSources.has(s.toLowerCase())) continue;
-      seenTargets.add(t.toLowerCase());
-      seenSources.add(s.toLowerCase());
-      sample.push({ ...w, target: t, source: s });
+    const validPool = [...allCourseWords]
+      .filter((w) => isValidQuizPair(w.target, w.source))
+      .map((w) => ({
+        ...w,
+        target: cleanQuizGloss(getPrimaryForm(w.target), 36),
+        source: cleanQuizGloss(getPrimaryForm(w.source), 44),
+      }))
+      .filter((w) => w.target && w.source)
+      .sort(() => Math.random() - 0.5);
+    if (validPool.length === 0) return;
+    const anchor = validPool[0];
+    const balancedTargets = pickBalancedDistractors(
+      anchor.target,
+      validPool.slice(1).map((w) => w.target),
+      5
+    );
+    const seenTargets = new Set<string>([anchor.target.toLowerCase()]);
+    const seenSources = new Set<string>([anchor.source.toLowerCase()]);
+    const sample: Word[] = [anchor];
+    for (const t of balancedTargets) {
+      const match = validPool.find((w) => w.target === t);
+      if (match && !seenTargets.has(match.target.toLowerCase()) && !seenSources.has(match.source.toLowerCase())) {
+        seenTargets.add(match.target.toLowerCase());
+        seenSources.add(match.source.toLowerCase());
+        sample.push(match);
+      }
+    }
+    for (const w of validPool) {
       if (sample.length >= 6) break;
+      if (seenTargets.has(w.target.toLowerCase()) || seenSources.has(w.source.toLowerCase())) continue;
+      seenTargets.add(w.target.toLowerCase());
+      seenSources.add(w.source.toLowerCase());
+      sample.push(w);
     }
     const deck: {
       id: string;
@@ -906,8 +980,13 @@ export default function LanguageCourseTool({
         .toLowerCase();
 
     const eligible = allCourseWords
-      .filter((w) => isSingleWordLexical(w.target))
-      .map((w) => ({ ...w, asciiTarget: toAscii(w.target) }))
+      .filter((w) => isSingleWordLexical(w.target) && isValidQuizPair(w.target, w.source))
+      .map((w) => ({
+        ...w,
+        target: cleanQuizGloss(getPrimaryForm(w.target), 32) || w.target,
+        source: cleanQuizGloss(getPrimaryForm(w.source), 56) || w.source,
+        asciiTarget: toAscii(w.target),
+      }))
       .filter((w) => w.asciiTarget.length >= 4 && w.asciiTarget.length <= 7);
     if (eligible.length === 0) return;
     const chosen = eligible[Math.floor(Math.random() * eligible.length)];
@@ -922,15 +1001,15 @@ export default function LanguageCourseTool({
     const pool = getRiddlesForLanguage(selectedLangId, currentCourse?.config.name);
     if (pool.length === 0) return;
     const chosen = pool[Math.floor(Math.random() * pool.length)];
-    const distractors = [...pool]
+    const cleanAnswer = cleanQuizGloss(chosen.answer, 64) || chosen.answer.trim();
+    const candidateAnswers = pool
       .filter((r) => r.answer.toLowerCase() !== chosen.answer.toLowerCase())
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 3)
-      .map((r) => r.answer);
-    const opts = [chosen.answer, ...distractors].sort(() => Math.random() - 0.5);
+      .map((r) => cleanQuizGloss(r.answer, 64) || r.answer.trim());
+    const distractors = pickBalancedDistractors(cleanAnswer, candidateAnswers, 3);
+    const opts = [cleanAnswer, ...distractors].sort(() => Math.random() - 0.5);
     setRiddleQuestion({
       riddle: chosen.riddle,
-      answer: chosen.answer,
+      answer: cleanAnswer,
       hint: chosen.translation,
       origin: chosen.origin,
     });
@@ -939,25 +1018,22 @@ export default function LanguageCourseTool({
   }, [selectedLangId, currentCourse]);
 
   const startVocabQuizRound = useCallback(() => {
-    if (allCourseWords.length < 2) return;
-    const shuffled = [...allCourseWords].sort(() => Math.random() - 0.5);
+    const validPool = allCourseWords.filter((w) => isValidQuizPair(w.target, w.source));
+    if (validPool.length < 4) return;
+    const shuffled = [...validPool].sort(() => Math.random() - 0.5);
     const primary = shuffled[0];
-    const seen = new Set<string>([primary.target.toLowerCase()]);
-    const distractors: string[] = [];
-    for (const w of shuffled.slice(1)) {
-      if (
-        !seen.has(w.target.toLowerCase()) &&
-        w.source.toLowerCase() !== primary.source.toLowerCase()
-      ) {
-        seen.add(w.target.toLowerCase());
-        distractors.push(w.target);
-        if (distractors.length >= 3) break;
-      }
-    }
-    const promptText = `Which word means "${primary.source}"?`;
-    const opts = [primary.target, ...distractors].sort(() => Math.random() - 0.5);
+    const cleanTarget = cleanQuizGloss(primary.target, 42) || primary.target.trim();
+    const cleanSource = cleanQuizGloss(primary.source, 56) || primary.source.trim();
+    const candidateTargets = shuffled
+      .slice(1)
+      .filter((w) => w.source.toLowerCase() !== primary.source.toLowerCase())
+      .map((w) => cleanQuizGloss(w.target, 42))
+      .filter(Boolean);
+    const distractors = pickBalancedDistractors(cleanTarget, candidateTargets, 3);
+    const promptText = `Which word means "${cleanSource}"?`;
+    const opts = [cleanTarget, ...distractors].sort(() => Math.random() - 0.5);
 
-    setVocabQuestion({ prompt: promptText, oddWord: primary.target });
+    setVocabQuestion({ prompt: promptText, oddWord: cleanTarget });
     setVocabOptions(opts);
     setVocabFeedback(null);
   }, [allCourseWords]);
@@ -1052,12 +1128,12 @@ export default function LanguageCourseTool({
   // ACTIVE LESSON PLAYER VIEW (FULL-SCREEN MATERIAL 3 MODAL EXPERIENCE)
   // ============================================================================
   const handleStepBack = useCallback(() => {
-    if (activeGame !== 'menu') {
-      setActiveGame('menu');
+    if (lessonStage !== 'idle') {
+      setLessonStage('idle');
       return true;
     }
-    if (activeTab !== 'learn') {
-      setActiveTab('learn');
+    if (activeGame !== 'menu') {
+      setActiveGame('menu');
       return true;
     }
     if (!showLanguageMenu && !initialLanguageId) {
@@ -1066,12 +1142,14 @@ export default function LanguageCourseTool({
       return true;
     }
     return false;
-  }, [activeGame, activeTab, showLanguageMenu, initialLanguageId, onScrollToTop]);
+  }, [lessonStage, activeGame, showLanguageMenu, initialLanguageId, onScrollToTop]);
 
-  useEffect(() => {
-    const sub = BackHandler.addEventListener('hardwareBackPress', handleStepBack);
-    return () => sub.remove();
-  }, [handleStepBack]);
+  useFocusEffect(
+    useCallback(() => {
+      const sub = BackHandler.addEventListener('hardwareBackPress', handleStepBack);
+      return () => sub.remove();
+    }, [handleStepBack])
+  );
 
   useEffect(() => {
     onNavigationStateChange?.({
@@ -2008,23 +2086,24 @@ export default function LanguageCourseTool({
       <View style={styles.container}>
         {/* Learner Summary & Welcome Banner */}
         <View style={{ gap: 12 }}>
-          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
             <View
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
-                gap: 6,
+                gap: 5,
                 paddingHorizontal: 10,
-                paddingVertical: 4,
+                paddingVertical: 5,
                 borderRadius: 999,
                 backgroundColor: `${colors.gold}20`,
                 borderWidth: 1,
                 borderColor: `${colors.gold}45`,
+                flexShrink: 0,
               }}
             >
               <Feather name="globe" size={12} color={colors.gold} />
-              <Text style={{ fontSize: 11, fontWeight: '800', color: colors.gold }}>
-                {PUBLISHED_COURSE_SUMMARIES.length} KENYAN LANGUAGE COURSES
+              <Text numberOfLines={1} style={{ fontSize: 11, fontWeight: '800', color: colors.gold }}>
+                {PUBLISHED_COURSE_SUMMARIES.length} Courses
               </Text>
             </View>
             {overallMenuStats.totalXp > 0 && overallMenuStats.resumeCourse && (
@@ -2034,14 +2113,15 @@ export default function LanguageCourseTool({
                 style={{
                   flexDirection: 'row',
                   alignItems: 'center',
-                  gap: 6,
-                  paddingHorizontal: 12,
-                  paddingVertical: 6,
+                  gap: 5,
+                  paddingHorizontal: 11,
+                  paddingVertical: 5,
                   borderRadius: 999,
                   backgroundColor: colors.gold,
+                  flexShrink: 1,
                 }}
               >
-                <Text style={{ fontSize: 11.5, fontWeight: '800', color: '#000' }}>
+                <Text numberOfLines={1} style={{ fontSize: 11.5, fontWeight: '800', color: '#000', flexShrink: 1 }}>
                   Resume {overallMenuStats.resumeCourse.config.name}
                 </Text>
                 <Feather name="arrow-right" size={13} color="#000" />
@@ -3446,7 +3526,7 @@ export default function LanguageCourseTool({
                   }}
                 >
                   <Text style={{ fontSize: 11, fontWeight: '800', color: langColor }}>
-                    14 Mini-Games
+                    12 Mini-Games
                   </Text>
                 </View>
               </View>
@@ -3530,18 +3610,6 @@ export default function LanguageCourseTool({
                   desc: 'Assemble and speed-read alliterating Kenyan tongue twisters.',
                   icon: 'mic' as const,
                 },
-                {
-                  id: 'counties' as ActiveGame,
-                  title: '47 Counties & Homelands',
-                  desc: 'Match Kenya’s 23 languages to their indigenous counties and families.',
-                  icon: 'map-pin' as const,
-                },
-                {
-                  id: 'sheng' as ActiveGame,
-                  title: 'Sokoni & Matatu Dialogue',
-                  desc: 'Respond in everyday market, matatu stage, and homestead scenes.',
-                  icon: 'message-square' as const,
-                },
               ].map((g) => (
                 <Pressable
                   key={g.id}
@@ -3575,7 +3643,7 @@ export default function LanguageCourseTool({
             </View>
           )}
 
-          {/* GAMES 7–14: EXTRA MINI-GAMES (WEB PARITY) */}
+          {/* GAMES 7–12: EXTRA MINI-GAMES (WEB PARITY) */}
           {isExtraGame(activeGame) && (
             <ExtraMiniGames
               activeGame={activeGame}

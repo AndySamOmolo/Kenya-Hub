@@ -8,7 +8,7 @@ import {
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle } from "./shared";
+import { type GameProps, shuffle, cleanQuizGloss, pickBalancedDistractors } from "./shared";
 
 interface CognateRow {
   concept: string;
@@ -51,11 +51,11 @@ const KENYAN_COGNATE_BANK: CognateRow[] = [
       { lang: "Ekegusii", word: "omonto / abanto" },
     ],
     question: "What does the shared Bantu root -ndu / -ntu / -tu signify across Swahili, Gĩkũyũ, Luluhya, and Ekegusii?",
-    correctAnswer: "Person / Human being (Class 1/2)",
+    correctAnswer: "Person or human being",
     distractors: [
-      "Flowing river / Stream (Class 3/4)",
-      "Cattle enclosure / Homestead",
-      "Mountain peak / Highland ridge",
+      "Flowing river or stream",
+      "Cattle kraal or homestead",
+      "Mountain peak or ridge",
     ],
     linguisticNote:
       "The Proto-Bantu root *-ntʊ̀ ('person') appears across all Kenyan Bantu languages: mtu (Swahili), mũndũ (Gĩkũyũ/Kĩkamba/Kĩembu), omundu (Luhya), and omonto (Ekegusii).",
@@ -108,10 +108,10 @@ const KENYAN_COGNATE_BANK: CognateRow[] = [
       { lang: "Mijikenda", word: "hahu" },
     ],
     question: "In Coastal Mijikenda & Kipokomo, Proto-Bantu *t (as in Swahili 'tatu', three) regularly shifts to which sound in 'hahu'?",
-    correctAnswer: "Voiceless glottal/aspirated 'h' (tatu → hahu)",
+    correctAnswer: "Voiceless glottal 'h'",
     distractors: [
       "Labial click 'c'",
-      "Trilled 'rr'",
+      "Alveolar trill 'rr'",
       "Velar nasal 'ng''",
     ],
     linguisticNote:
@@ -153,15 +153,17 @@ export function PolyglotBridgeGame({ onAwardXp, onUpdateGameStats }: GameProps) 
   );
 
   const current = deck[round];
-  const options = useMemo(
-    () => (current ? shuffle([current.correctAnswer, ...current.distractors]) : []),
-    [current]
-  );
+  const cleanCorrect = current ? cleanQuizGloss(current.correctAnswer) || current.correctAnswer : "";
+  const options = useMemo(() => {
+    if (!current) return [];
+    const balanced = pickBalancedDistractors(cleanCorrect, current.distractors, 3);
+    return shuffle([cleanCorrect, ...(balanced.length === 3 ? balanced : current.distractors.map((d) => cleanQuizGloss(d) || d))]);
+  }, [current, cleanCorrect]);
 
   const handlePick = (opt: string) => {
     if (picked !== null || !current) return;
     setPicked(opt);
-    const isRight = opt === current.correctAnswer;
+    const isRight = opt === cleanCorrect;
     if (isRight) {
       playCorrectSfx();
       setScore((s) => s + 25);
@@ -255,7 +257,7 @@ export function PolyglotBridgeGame({ onAwardXp, onUpdateGameStats }: GameProps) 
         {options.map((opt, idx) => {
           let style = "border-border bg-bg-card text-text-primary hover:border-gold/40";
           if (picked !== null) {
-            if (opt === current.correctAnswer) {
+            if (opt === cleanCorrect) {
               style = "border-kenya-green bg-kenya-green/15 text-kenya-green-light font-bold";
             } else if (picked === opt) {
               style = "border-red-400 bg-red-400/10 text-red-400";

@@ -1,5 +1,13 @@
 import type { WordPair, CourseUnit, UserProgress, GameStats } from "@/data/courses/types";
-import { getPrimaryForm, cleanExerciseText, isCleanLexicalWordPair } from "@/lib/learn-engine";
+import {
+  getPrimaryForm,
+  isCleanLexicalWordPair,
+  cleanQuizGloss,
+  isValidQuizPair,
+  pickBalancedDistractors,
+} from "@/lib/learn-engine";
+
+export { cleanQuizGloss, isValidQuizPair, pickBalancedDistractors };
 
 export type VocabScopeMode = "learned" | "unit" | "course" | "dictionary";
 
@@ -61,9 +69,9 @@ export function getAllWords(units: CourseUnit[]): WordPair[] {
   for (const unit of units) {
     for (const skill of unit.skills) {
       for (const word of skill.words) {
-        if (!isCleanLexicalWordPair(word.target, word.source)) continue;
-        const target = getPrimaryForm(word.target).trim();
-        const source = cleanExerciseText(getPrimaryForm(word.source)).trim();
+        if (!isCleanLexicalWordPair(word.target, word.source) || !isValidQuizPair(word.target, word.source)) continue;
+        const target = cleanQuizGloss(getPrimaryForm(word.target));
+        const source = cleanQuizGloss(getPrimaryForm(word.source));
         const tKey = target.toLowerCase();
         const sKey = source.toLowerCase();
         if (target && source && !seenTargets.has(tKey) && !seenSources.has(sKey)) {
@@ -136,9 +144,9 @@ export function getScopedWords(
       for (const sk of u.skills) {
         const skillActive = completedSkillIds.has(sk.id);
         for (const w of sk.words) {
-          if (!isCleanLexicalWordPair(w.target, w.source)) continue;
-          const target = getPrimaryForm(w.target).trim();
-          const source = cleanExerciseText(getPrimaryForm(w.source)).trim();
+          if (!isCleanLexicalWordPair(w.target, w.source) || !isValidQuizPair(w.target, w.source)) continue;
+          const target = cleanQuizGloss(getPrimaryForm(w.target));
+          const source = cleanQuizGloss(getPrimaryForm(w.source));
           const tKey = target.toLowerCase();
           if (
             target &&

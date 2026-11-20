@@ -10,7 +10,7 @@ import {
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle } from "./shared";
+import { type GameProps, shuffle, cleanQuizGloss, isValidQuizPair } from "./shared";
 
 interface MemoryCard {
   id: number;
@@ -45,8 +45,9 @@ export function MemoryGame({
       const seenSources = new Set<string>();
       const selected: typeof allWords = [];
       for (const w of shuffle(allWords)) {
-        const t = getPrimaryForm(w.target).trim();
-        const s = getPrimaryForm(w.source).trim();
+        if (!isValidQuizPair(w.target, w.source)) continue;
+        const t = cleanQuizGloss(getPrimaryForm(w.target));
+        const s = cleanQuizGloss(getPrimaryForm(w.source));
         if (!t || !s) continue;
         if (seenTargets.has(t.toLowerCase()) || seenSources.has(s.toLowerCase()))
           continue;

@@ -9,7 +9,7 @@ import {
   playWrongSfx,
   playCelebrationSfx,
 } from "@/lib/game-sfx";
-import { type GameProps, shuffle } from "./shared";
+import { type GameProps, shuffle, cleanQuizGloss, isValidQuizPair, pickBalancedDistractors } from "./shared";
 
 interface ClozeChallenge {
   maskedSentence: string;
@@ -37,7 +37,10 @@ export function SentenceSafariGame({
   const challenges = useMemo<ClozeChallenge[]>(() => {
     const units = courseUnits.length > 0 ? courseUnits : allUnits;
     const pool: ClozeChallenge[] = [];
-    const wordTargets = allWords.map((w) => w.target);
+    const wordTargets = allWords
+      .filter((w) => isValidQuizPair(w.target, w.source))
+      .map((w) => cleanQuizGloss(w.target))
+      .filter((w) => w && !w.includes(" ") && w.length >= 3);
 
     for (const unit of units) {
       for (const skill of unit.skills) {
@@ -62,14 +65,7 @@ export function SentenceSafariGame({
           const maskedTokens = [...tokens];
           maskedTokens[chosen.idx] = "_____";
 
-          const distractors = shuffle(
-            wordTargets.filter(
-              (w) =>
-                w.toLowerCase() !== chosen.clean.toLowerCase() &&
-                !w.includes(" ") &&
-                w.length >= 3
-            )
-          ).slice(0, 3);
+          const distractors = pickBalancedDistractors(chosen.clean, wordTargets, 3);
           if (distractors.length < 3) continue;
 
           pool.push({
@@ -84,22 +80,17 @@ export function SentenceSafariGame({
         // Also build contextual clozes from word examples if needed
         for (const w of skill.words) {
           if (!w.example) continue;
-          const primaryTarget = getPrimaryForm(w.target).trim();
+          if (!isValidQuizPair(w.target, w.source)) continue;
+          const primaryTarget = cleanQuizGloss(getPrimaryForm(w.target));
           if (!primaryTarget || primaryTarget.includes(" ")) continue;
           const regex = new RegExp(`\\b${primaryTarget.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
           if (regex.test(w.example)) {
             const masked = w.example.replace(regex, "_____");
-            const distractors = shuffle(
-              wordTargets.filter(
-                (t) =>
-                  t.toLowerCase() !== primaryTarget.toLowerCase() &&
-                  !t.includes(" ")
-              )
-            ).slice(0, 3);
+            const distractors = pickBalancedDistractors(primaryTarget, wordTargets, 3);
             if (distractors.length >= 3) {
               pool.push({
                 maskedSentence: masked,
-                englishSentence: `Meaning of missing word: "${w.source}"`,
+                englishSentence: `Meaning of missing word: "${cleanQuizGloss(w.source)}"`,
                 missingWord: primaryTarget,
                 options: shuffle([primaryTarget, ...distractors]),
                 skillTitle: skill.title,
