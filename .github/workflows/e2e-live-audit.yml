@@ -1,10 +1,10 @@
-name: Live E2E Web & Multi-Platform Audit
+name: Live E2E Web & Android App Audit
 
 on:
   workflow_dispatch:
     inputs:
       target_url:
-        description: "Target URL (leave blank to audit local Next.js static build, or enter https://kenyahub.me)"
+        description: "Target Web URL (leave blank to audit local Next.js static build, or enter https://kenyahub.me)"
         required: false
         default: ""
   push:
@@ -15,9 +15,12 @@ on:
       - "kenyahub/scripts/**"
       - "mobile/src/**"
       - "mobile/app/**"
+      - "mobile/e2e/**"
+      - "mobile/scripts/**"
 
 jobs:
-  static-and-playwright-audit:
+  web-static-and-playwright-audit:
+    name: Web Static & Live Playwright Audit (Desktop & Mobile × Light & Dark)
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
@@ -38,7 +41,7 @@ jobs:
       - name: Install Web Dependencies & Playwright Chromium
         working-directory: kenyahub
         run: |
-          npm ci
+          npm ci --prefer-offline --no-audit --no-fund
           npm install --no-save @playwright/test
           npx playwright install --with-deps chromium
 
@@ -47,7 +50,7 @@ jobs:
         working-directory: kenyahub
         run: npm run build
 
-      - name: Run Full Non-Stopping Playwright Live Audit (Desktop & Mobile × Light & Dark, Full Screenshots & Videos)
+      - name: Run Full Non-Stopping Playwright Live Audit (All Screenshots & Videos)
         working-directory: kenyahub
         continue-on-error: true
         env:
@@ -66,4 +69,93 @@ jobs:
             kenyahub/reports/tool-audit.json
             kenyahub/test-results
             mobile/reports/mobile-static-audit.json
+          retention-days: 14
+
+  android-live-e2e-audit:
+    name: Android Emulator Live App Audit (Maestro + Videos + Screenshots + Logcat)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Enable KVM group permissions for fast Android Emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          sudo chmod 666 /dev/kvm || true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+
+      - name: Setup Java 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: "platform-tools"
+
+      - name: Setup Gradle Cache
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Install Mobile Dependencies
+        working-directory: mobile
+        run: npm ci --prefer-offline --no-audit --no-fund
+
+      - name: Sync Web Data & Run Mobile Static Audit
+        working-directory: mobile
+        run: |
+          node scripts/sync-data.mjs
+          node scripts/audit-mobile-all.mjs --strict
+
+      - name: Build Android Release APK for Live Audit
+        working-directory: mobile/android
+        env:
+          NODE_ENV: production
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
+
+      - name: Install Maestro CLI
+        run: |
+          curl -Ls "https://get.maestro.mobile.dev" | bash
+          echo "$HOME/.maestro/bin" >> $GITHUB_PATH
+
+      - name: Boot Android API 34 Emulator & Run All 8 Maestro Live Audit Flows
+        uses: reactivecircus/android-emulator-runner@v2
+        continue-on-error: true
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          disk-size: 6G
+          ram-size: 3072M
+          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
+          disable-animations: true
+          script: |
+            export PATH="$HOME/.maestro/bin:$PATH"
+            adb install -r mobile/android/app/build/outputs/apk/release/app-release.apk
+            node mobile/e2e/run-android-audit.mjs
+
+      - name: Upload Android Live Audit Report, All Screenshots & MP4 Videos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-live-audit-screenshots-and-videos
+          path: |
+            mobile/reports/android-live-audit.json
+            mobile/reports/mobile-static-audit.json
+            mobile/reports/screenshots
+            mobile/reports/videos
           retention-days: 14

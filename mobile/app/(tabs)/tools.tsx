@@ -226,10 +226,6 @@ export default function ToolsScreen() {
     (query.trim().length > 0 &&
       (MATATU_KEYWORDS.some((kw) => query.trim().toLowerCase().includes(kw)) ||
         "matatu routes sacco fares".includes(query.trim().toLowerCase())));
-    const q = query.trim().toLowerCase();
-    if (!q) return true;
-    return MATATU_KEYWORDS.some((kw) => kw.includes(q) || q.includes(kw));
-  }, [category, query]);
 
   const filtered = useMemo(() => {
     const list = TOOLS.filter((tool) => {
