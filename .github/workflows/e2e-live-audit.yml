@@ -38,6 +38,7 @@ jobs:
         working-directory: kenyahub
         run: |
           npm ci
+          npm install --no-save @playwright/test
           npx playwright install --with-deps chromium
 
       - name: Build Static Web App (when auditing local build)
