@@ -298,7 +298,7 @@ export default function KUCCPSCalculatorPage() {
         )}
 
         {/* Sticky Mobile Live-Result Pill (F-038) */}
-        {clusterResults.length > 0 && (
+        {sortedResults.length > 0 && (
           <div
             role="status"
             aria-live="polite"
@@ -306,7 +306,7 @@ export default function KUCCPSCalculatorPage() {
           >
             <span className="text-xs font-semibold text-text-secondary truncate">Top Cluster Score</span>
             <span className="text-sm font-extrabold text-gold tabular-nums whitespace-nowrap">
-              {clusterResults[0].weightedPoints.toFixed(3)} / 48
+              {sortedResults[0].totalWeight.toFixed(3)} / 48
             </span>
           </div>
         )}

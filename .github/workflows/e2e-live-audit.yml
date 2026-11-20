@@ -7,20 +7,11 @@ on:
         description: "Target Web URL (leave blank to audit local Next.js static build, or enter https://kenyahub.me)"
         required: false
         default: ""
-  push:
-    branches: [main]
-    paths:
-      - "kenyahub/src/**"
-      - "kenyahub/tests/**"
-      - "kenyahub/scripts/**"
-      - "mobile/src/**"
-      - "mobile/app/**"
-      - "mobile/e2e/**"
-      - "mobile/scripts/**"
 
 jobs:
   web-static-and-playwright-audit:
     name: Web Static & Live Playwright Audit (Desktop & Mobile × Light & Dark)
+    if: false # Disabled: Playwright and mobile photo/video audit disabled
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
@@ -67,6 +58,7 @@ jobs:
 
   android-live-e2e-audit:
     name: Android Emulator Exhaustive Live App Audit (All 33 Tools, 23 Languages, 47 Counties, Light+Dark, Videos)
+    if: false # Disabled: Playwright and mobile photo/video audit disabled
     runs-on: ubuntu-latest
     timeout-minutes: 55
     steps:

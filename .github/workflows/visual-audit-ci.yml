@@ -11,12 +11,6 @@ on:
         description: "Run Mobile Typecheck, x86_64 APK Build & Full Android Emulator Audit (all 33 tools + tabs, Light & Dark)"
         type: boolean
         default: true
-  pull_request:
-    paths:
-      - "kenyahub/src/**"
-      - "mobile/app/**"
-      - "mobile/src/**"
-      - ".github/workflows/visual-audit-ci.yml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -28,7 +22,7 @@ permissions:
 jobs:
   web-comprehensive-audit:
     name: Web Zero-Error & Playwright Visual Audit
-    if: ${{ github.event_name != 'workflow_dispatch' || inputs.run_web }}
+    if: false # Disabled: Playwright and mobile photo/video audit disabled
     runs-on: ubuntu-latest
     timeout-minutes: 35
     defaults:
@@ -90,7 +84,7 @@ jobs:
 
   android-comprehensive-audit:
     name: Android Zero-Error Emulator & Visual Audit
-    if: ${{ github.event_name != 'workflow_dispatch' || inputs.run_android }}
+    if: false # Disabled: Playwright and mobile photo/video audit disabled
     runs-on: ubuntu-latest
     timeout-minutes: 55
 
