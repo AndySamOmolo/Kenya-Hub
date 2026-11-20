@@ -33,17 +33,21 @@ export default function PpraEgpTenderSerializerPage() {
   const [copied, setCopied] = useState(false);
 
   const plan = useMemo(() => {
-    let cursor = 1;
-    const rows = docs.map((d) => {
-      if (!d.included || d.pages <= 0) {
-        return { ...d, startPage: null, endPage: null };
-      }
-      const startPage = cursor;
-      const endPage = cursor + d.pages - 1;
-      cursor = endPage + 1;
-      return { ...d, startPage, endPage };
-    });
-    const totalPages = cursor - 1;
+    const { rows, nextCursor } = docs.reduce<{
+      rows: Array<(typeof docs)[number] & { startPage: number | null; endPage: number | null }>;
+      nextCursor: number;
+    }>(
+      (acc, d) => {
+        if (!d.included || d.pages <= 0) {
+          return { rows: [...acc.rows, { ...d, startPage: null, endPage: null }], nextCursor: acc.nextCursor };
+        }
+        const startPage = acc.nextCursor;
+        const endPage = startPage + d.pages - 1;
+        return { rows: [...acc.rows, { ...d, startPage, endPage }], nextCursor: endPage + 1 };
+      },
+      { rows: [], nextCursor: 1 }
+    );
+    const totalPages = nextCursor - 1;
     const missingCritical = docs.filter((d) => d.critical && !d.included);
     const uninitialed = docs.filter((d) => d.included && !d.initialed);
     const validityOk = Number(bidValidityDays) >= 120;

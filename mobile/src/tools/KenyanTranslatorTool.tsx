@@ -375,6 +375,7 @@ export function KenyanTranslatorTool({
           languageName: meta?.languageName || item.language,
           family: meta?.family || "custom",
           categoryName: "My Device Dictionary",
+          categoryIcon: "book-open",
           matchType: "exact",
           entry: {
             english: item.english,

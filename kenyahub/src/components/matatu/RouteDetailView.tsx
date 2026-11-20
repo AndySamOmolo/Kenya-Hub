@@ -59,18 +59,34 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
   const stageNamesList = route.stages.map((s) => s.name).join(" → ");
 
   // Compute corridor road distance and stage-by-stage cumulative distance
-  let cumulativeKm = 0;
-  const stageDistances = route.stages.map((stage, idx) => {
-    if (idx === 0) return { ...stage, legKm: 0, cumulativeKm: 0 };
-    const prev = route.stages[idx - 1];
-    const legKm = Math.max(0.4, haversineKm(prev.lat, prev.lng, stage.lat, stage.lng));
-    cumulativeKm += legKm;
-    return {
-      ...stage,
-      legKm: Math.round(legKm * 10) / 10,
-      cumulativeKm: Math.round(cumulativeKm * 10) / 10,
-    };
-  });
+  const { stageDistances, cumulativeKm } = route.stages.reduce<{
+    stageDistances: Array<(typeof route.stages)[number] & { legKm: number; cumulativeKm: number }>;
+    cumulativeKm: number;
+  }>(
+    (acc, stage, idx) => {
+      if (idx === 0) {
+        return {
+          stageDistances: [...acc.stageDistances, { ...stage, legKm: 0, cumulativeKm: 0 }],
+          cumulativeKm: acc.cumulativeKm,
+        };
+      }
+      const prev = route.stages[idx - 1];
+      const legKm = Math.max(0.4, haversineKm(prev.lat, prev.lng, stage.lat, stage.lng));
+      const nextCum = acc.cumulativeKm + legKm;
+      return {
+        stageDistances: [
+          ...acc.stageDistances,
+          {
+            ...stage,
+            legKm: Math.round(legKm * 10) / 10,
+            cumulativeKm: Math.round(nextCum * 10) / 10,
+          },
+        ],
+        cumulativeKm: nextCum,
+      };
+    },
+    { stageDistances: [], cumulativeKm: 0 }
+  );
   const totalCorridorKm = Math.max(2.5, Math.round(cumulativeKm * 10) / 10);
   const estOffPeakMins = Math.max(12, Math.round((totalCorridorKm / 26) * 60 + route.stages.length * 1.5));
   const estPeakMins = Math.max(22, Math.round((totalCorridorKm / 14) * 60 + route.stages.length * 2.5));

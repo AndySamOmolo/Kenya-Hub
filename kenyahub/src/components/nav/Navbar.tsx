@@ -76,10 +76,11 @@ export default function Navbar() {
 
   useEffect(() => {
     if (searchOpen) {
-      setTimeout(() => searchInputRef.current?.focus(), 50);
-    } else {
-      setSearchQuery("");
+      const id = setTimeout(() => searchInputRef.current?.focus(), 50);
+      return () => clearTimeout(id);
     }
+    const id = setTimeout(() => setSearchQuery(""), 0);
+    return () => clearTimeout(id);
   }, [searchOpen]);
 
   useEffect(() => {

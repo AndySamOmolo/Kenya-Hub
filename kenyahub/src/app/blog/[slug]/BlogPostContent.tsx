@@ -62,7 +62,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
 
   const tocHeadings = useMemo(
     () => (post?.content ? extractMarkdownToc(post.content) : []),
-    [post?.content]
+    [post]
   );
 
   const relatedTools = useMemo(

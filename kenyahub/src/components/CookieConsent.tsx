@@ -68,7 +68,7 @@ export default function CookieConsent() {
     window.gtag =
       window.gtag ||
       function (...args: unknown[]) {
-        window.dataLayer!.push(arguments);
+        window.dataLayer!.push(args);
       };
 
     // If a Google-certified IAB TCF v2.2 CMP (e.g., Google Funding Choices / Privacy & Messaging)

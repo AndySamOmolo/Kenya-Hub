@@ -60,7 +60,7 @@ export default function MobileNumberPrefixPage() {
     return p.substring(0, 4);
   }, [cleanDigits]);
 
-  const matchedNetwork = useMemo(() => {
+  const matchedNetwork = (() => {
     if (prefix.length < 4 || !prefix.startsWith("0")) return null;
     for (const net of prefixesData.networks) {
       if (net.prefixes.includes(prefix)) {
@@ -74,7 +74,7 @@ export default function MobileNumberPrefixPage() {
       prefixes: [],
       ussdCodes: [],
     };
-  }, [prefix]);
+  })();
 
   const copyToClipboard = (code: string) => {
     if (typeof navigator !== "undefined" && navigator.clipboard) {

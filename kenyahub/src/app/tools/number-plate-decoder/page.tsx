@@ -19,7 +19,7 @@ const faq = [
 export default function NumberPlateDecoderPage() {
   const [input, setInput] = useState("KDU 450A");
 
-  const result = useMemo(() => {
+  const result = (() => {
     const cleaned = input.toUpperCase().replace(/\s/g, "").replace(/[^A-Z0-9]/g, "");
     if (cleaned.length < 2) return null;
 
@@ -89,7 +89,7 @@ export default function NumberPlateDecoderPage() {
     }
 
     return null;
-  }, [input]);
+  })();
 
   return (
     <ToolShell tool={tool} faq={faq}>
