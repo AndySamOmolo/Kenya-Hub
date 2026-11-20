@@ -39,6 +39,21 @@ for (const slug of REMOVED_TOOL_DIRS) {
   }
 }
 
+
+const gamesDir = resolve(__dirname, "../src/components/learn/games");
+export const REMOVED_GAME_FILES = [
+  "CountiesGeoGame.tsx",
+  "MatatuShengGame.tsx",
+];
+
+for (const file of REMOVED_GAME_FILES) {
+  const filePath = resolve(gamesDir, file);
+  if (existsSync(filePath)) {
+    rmSync(filePath, { force: true });
+    removedCount++;
+  }
+}
+
 if (removedCount > 0) {
   console.log(`Removed ${removedCount} deprecated tool route directories before build.`);
 }
