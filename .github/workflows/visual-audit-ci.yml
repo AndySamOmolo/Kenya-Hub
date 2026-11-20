@@ -163,7 +163,7 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=4096
         run: |
           chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon
+          ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=x86_64
 
       - name: Enable KVM for Android Emulator
         run: |
