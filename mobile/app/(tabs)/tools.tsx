@@ -30,6 +30,7 @@ import {
 } from "../../src/shared/lib/tools-registry";
 import matatuData from "../../src/shared/data/matatu-routes.json";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
+import type { ToolCategory } from "../../src/shared/lib/types";
 
 const MATATU_KEYWORDS = [
   "matatu",
@@ -156,10 +157,12 @@ function ToolItem({
 
 export default function ToolsScreen() {
   const router = useRouter();
-  const { theme } = useTheme();
+  const { theme, isDark } = useTheme();
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
-  const [category, setCategory] = useState(params.category ?? "all");
+  const [category, setCategory] = useState<ToolCategory | "all">(
+    (params.category as ToolCategory | "all") ?? "all"
+  );
   const listRef = useRef<FlatList>(null);
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">(
     "popular"
@@ -168,7 +171,7 @@ export default function ToolsScreen() {
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
 
   useEffect(() => {
-    setCategory(params.category || "all");
+    setCategory((params.category as ToolCategory | "all") || "all");
     if (params.q !== undefined) setQuery(params.q);
   }, [params.category, params.q]);
 
@@ -221,14 +224,15 @@ export default function ToolsScreen() {
     return { routeCount, stageCount, townCount: towns.length };
   }, []);
 
-  const showMatatuHubCard =
-    category === "transport-travel" ||
-    (query.trim().length > 0 &&
-      (MATATU_KEYWORDS.some((kw) => query.trim().toLowerCase().includes(kw)) ||
-        "matatu routes sacco fares".includes(query.trim().toLowerCase())));
-    const q = query.trim().toLowerCase();
-    if (!q) return true;
-    return MATATU_KEYWORDS.some((kw) => kw.includes(q) || q.includes(kw));
+  const showMatatuHubCard = useMemo(() => {
+    return (
+      category === "transport-travel" ||
+      (query.trim().length > 0 &&
+        (MATATU_KEYWORDS.some((kw) =>
+          query.trim().toLowerCase().includes(kw)
+        ) ||
+          "matatu routes sacco fares".includes(query.trim().toLowerCase())))
+    );
   }, [category, query]);
 
   const filtered = useMemo(() => {
@@ -362,7 +366,9 @@ export default function ToolsScreen() {
               <Pressable
                 key={item.id}
                 android_ripple={androidRipple(theme.rippleColor)}
-                onPress={() => setCategory(item.id)}
+                onPress={() =>
+                  setCategory(item.id as ToolCategory | "all")
+                }
                 style={{
                   flexDirection: "row",
                   alignItems: "center",

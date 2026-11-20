@@ -88,8 +88,8 @@ export default function SmallClaimsCalculatorPage() {
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Statutory Disposal Time</span>
-              <p className="text-xl font-extrabold text-kenya-green-light mt-1">{amount <= 1000000 ? "60 Days" : "Varies (Magistrate's Court)"}</p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">{amount <= 1000000 ? "Mandatory timeline under Cap 21" : "Exceeds Small Claims Court KES 1M jurisdiction"}</p>
+              <p className="text-xl font-extrabold text-kenya-green-light mt-1">{calc.amount <= 1000000 ? "60 Days" : "Varies (Magistrate's Court)"}</p>
+              <p className="text-[0.6875rem] text-text-secondary mt-1">{calc.amount <= 1000000 ? "Mandatory timeline under Cap 21" : "Exceeds Small Claims Court KES 1M jurisdiction"}</p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Jurisdiction Status</span>

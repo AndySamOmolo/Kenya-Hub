@@ -50,13 +50,13 @@ export default function PpraEgpTenderSerializerPage() {
     return { rows, totalPages, missingCritical, uninitialed, validityOk };
   }, [docs, bidValidityDays]);
 
-  const fmtBates = (n: number) => String(n).padStart(4, "0`);
+  const fmtBates = (n: number) => String(n).padStart(4, "0");
 
   const copyManifest = () => {
     const lines = [
       `PPRA / e-GP TENDER SERIALIZATION MANIFEST (ITT 20.3)`,
       `Tender Ref: ${tenderRef} | Bid Validity: ${bidValidityDays} days | Total Pages: ${plan.totalPages}`,
-      `",
+      "",
       ...plan.rows
         .filter((r) => r.startPage !== null)
         .map(
