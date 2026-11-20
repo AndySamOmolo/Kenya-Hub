@@ -119,7 +119,7 @@ export default function EudrCoopGeojsonPackagerPage() {
                 type="text"
                 value={coopName}
                 onChange={(e) => setCoopName(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-xs text-text-primary"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs text-text-primary"
               />
             </div>
             <div>
@@ -129,7 +129,7 @@ export default function EudrCoopGeojsonPackagerPage() {
                 step="0.1"
                 value={declaredHa}
                 onChange={(e) => setDeclaredHa(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs font-bold text-text-primary"
               />
             </div>
             <div>
@@ -139,7 +139,7 @@ export default function EudrCoopGeojsonPackagerPage() {
                 step="0.5"
                 value={gnssAccuracy}
                 onChange={(e) => setGnssAccuracy(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs font-bold text-text-primary"
               />
             </div>
           </div>
@@ -152,19 +152,19 @@ export default function EudrCoopGeojsonPackagerPage() {
               rows={5}
               value={coordText}
               onChange={(e) => setCoordText(e.target.value)}
-              className="w-full p-3 rounded-xl border border-border bg-bg-elevated font-mono text-xs text-text-primary outline-hidden focus:border-gold"
+              className="w-full p-3 rounded-xl border border-border dark:border-white/15 bg-bg-elevated font-mono text-xs text-text-primary outline-hidden focus:border-gold"
             />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
-            <div className="rounded-xl border border-gold/40 bg-gold/10 p-3.5">
+            <div className="rounded-xl border border-amber-500/45 bg-amber-500/[0.04] p-3.5">
               <span className="text-[0.68rem] font-bold text-gold uppercase">Geometry Mode</span>
               <p className="text-base font-black text-text-primary mt-1">
                 {validation.requiresPolygon ? "Closed Polygon (≥ 4 ha)" : "Single Point (< 4 ha)"}
               </p>
               <p className="text-[0.68rem] text-text-secondary mt-0.5">{validation.pts.length} vertices parsed</p>
             </div>
-            <div className="rounded-xl border border-border bg-bg-elevated/40 p-3.5">
+            <div className="rounded-xl border border-border dark:border-white/15 bg-bg-elevated/40 p-3.5">
               <span className="text-[0.68rem] font-bold text-text-muted uppercase">Computed Area</span>
               <p className="text-base font-black text-text-primary mt-1">
                 {validation.computedHa.toFixed(2)} ha

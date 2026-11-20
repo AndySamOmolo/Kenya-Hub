@@ -279,12 +279,6 @@ export const TAVETA_UNITS: CourseUnit[] = [
             "hint": "Johnston 1919 p. 101 #15 Taveita"
           },
           {
-            "target": "mche (pl. wache)",
-            "source": "Woman",
-            "pronunciation": "mche",
-            "hint": "Johnston 1919 pp. 106–109 #15 Taveita & Hollis 1910"
-          },
-          {
             "target": "mundu (pl. wandu)",
             "source": "Person / People",
             "pronunciation": "mundu",

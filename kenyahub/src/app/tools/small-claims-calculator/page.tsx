@@ -37,18 +37,22 @@ export default function SmallClaimsCalculatorPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-
           <div className="max-w-md mb-6">
-            <label className="block text-xs font-semibold text-text-muted mb-1.5 uppercase">
+            <label
+              htmlFor="claim-amount-input"
+              className="block text-xs font-semibold text-text-muted mb-1.5 uppercase"
+            >
               Principal Claim Value (KES)
             </label>
             <div className="relative">
               <input
+                id="claim-amount-input"
                 type="text"
+                inputMode="numeric"
                 value={claimAmount ? Number(claimAmount).toLocaleString("en-KE") : ""}
                 onChange={(e) => setClaimAmount(e.target.value.replace(/[^0-9]/g, ""))}
                 placeholder="e.g. 75,000"
-                className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border bg-bg-elevated text-base font-bold text-text-primary focus:border-gold outline-hidden"
+                className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-base font-bold text-text-primary focus:border-gold tabular-nums"
                 style={{ paddingRight: "2.75rem" }}
               />
               {claimAmount && (
@@ -80,26 +84,41 @@ export default function SmallClaimsCalculatorPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+          <div
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6"
+          >
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Court Filing Fee</span>
-              <p className="text-xl font-extrabold text-gold mt-1">KES {calc.fee.toLocaleString()}</p>
+              <p className="text-xl font-extrabold text-gold mt-1 tabular-nums whitespace-nowrap">
+                KES {calc.fee.toLocaleString("en-KE")}
+              </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1">Payable on Judiciary e-filing portal</p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Statutory Disposal Time</span>
-              <p className="text-xl font-extrabold text-kenya-green-light mt-1">{calc.amount <= 1000000 ? "60 Days" : "Varies (Magistrate's Court)"}</p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">{calc.amount <= 1000000 ? "Mandatory timeline under Cap 21" : "Exceeds Small Claims Court KES 1M jurisdiction"}</p>
+              <p className="text-xl font-extrabold text-kenya-green-light mt-1">
+                {calc.amount <= 1000000 ? "60 Days" : "Varies (Magistrate's Court)"}
+              </p>
+              <p className="text-[0.6875rem] text-text-secondary mt-1">
+                {calc.amount <= 1000000
+                  ? "Mandatory timeline under Small Claims Court Act (No. 2 of 2016) s.34"
+                  : "Exceeds Small Claims Court KES 1M jurisdiction"}
+              </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Jurisdiction Status</span>
-              <p className={`text-base font-bold mt-1 ${
-                calc.amount === 0
-                  ? "text-text-muted"
-                  : calc.isEligible
-                  ? "text-kenya-green-light"
-                  : "text-red-400"
-              }`}>
+              <p
+                className={`text-base font-bold mt-1 ${
+                  calc.amount === 0
+                    ? "text-text-muted"
+                    : calc.isEligible
+                    ? "text-kenya-green-light"
+                    : "text-red-400"
+                }`}
+              >
                 {calc.amount === 0
                   ? "Enter Claim Amount"
                   : calc.isEligible
@@ -118,9 +137,9 @@ export default function SmallClaimsCalculatorPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="rounded-xl border border-border/80 bg-bg-elevated/30 p-4">
-              <h3 className="text-xs font-bold text-kenya-green-light uppercase tracking-wider mb-2">
+              <h2 className="text-xs font-bold text-kenya-green-light uppercase tracking-wider mb-2">
                 ✓ Claims Handled by Small Claims Court
-              </h3>
+              </h2>
               <ul className="space-y-1.5 text-xs text-text-secondary">
                 {sccData.qualifyingClaimTypes.map((q, i) => (
                   <li key={i} className="flex items-start gap-1.5">
@@ -131,9 +150,9 @@ export default function SmallClaimsCalculatorPage() {
               </ul>
             </div>
             <div className="rounded-xl border border-border/80 bg-bg-elevated/30 p-4">
-              <h3 className="text-xs font-bold text-red-400 uppercase tracking-wider mb-2">
+              <h2 className="text-xs font-bold text-red-400 uppercase tracking-wider mb-2">
                 ✕ Excluded Claims
-              </h3>
+              </h2>
               <ul className="space-y-1.5 text-xs text-text-secondary">
                 {sccData.disqualifiedClaimTypes.map((d, i) => (
                   <li key={i} className="flex items-start gap-1.5">
@@ -145,7 +164,6 @@ export default function SmallClaimsCalculatorPage() {
             </div>
           </div>
         </div>
-
       </div>
     </ToolShell>
   );

@@ -10,7 +10,7 @@ export default function CookieSettingsFooterLink() {
     <button
       onClick={handleClick}
       type="button"
-      className="text-[0.65rem] text-text-muted hover:text-text-secondary transition-colors cursor-pointer"
+      className="font-sans text-xs leading-5 p-0 align-baseline text-text-muted hover:text-text-secondary transition-colors cursor-pointer"
     >
       Cookie Preferences
     </button>

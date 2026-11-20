@@ -21,6 +21,9 @@ import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
 import { playLanguageAudio, hasVerifiedAudio } from "@/lib/language-audio";
 import SkillTree from "@/components/learn/SkillTree";
+import GamesHub from "@/components/learn/GamesHub";
+import GrammarView from "@/components/learn/GrammarView";
+import ProverbsView from "@/components/learn/ProverbsView";
 import CustomSelect from "@/components/ui/CustomSelect";
 import SearchInput from "@/components/ui/SearchInput";
 import type {
@@ -50,38 +53,34 @@ import { useRouter } from "next/navigation";
 
 const LessonPlayer = dynamic(() => import("@/components/learn/LessonPlayer"), {
   loading: () => (
-    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
+    <div className="min-h-[85vh] flex items-center justify-center py-12 text-center text-sm text-text-muted animate-pulse">
       Loading interactive lesson...
     </div>
   ),
 });
 
-const GamesHub = dynamic(() => import("@/components/learn/GamesHub"), {
-  loading: () => (
-    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
-      Loading language games...
-    </div>
-  ),
-});
-
-const GrammarView = dynamic(() => import("@/components/learn/GrammarView"), {
-  loading: () => (
-    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
-      Loading grammar reference...
-    </div>
-  ),
-});
-
-const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
-  loading: () => (
-    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
-      Loading proverbs &amp; oral wisdom...
-    </div>
-  ),
-});
+function setFocusModeSync(active: boolean) {
+  if (typeof document === "undefined") return;
+  if (active) {
+    document.body.dataset.khFocusMode = "true";
+    document.documentElement.classList.add("kh-focus-mode");
+    const prev = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    requestAnimationFrame(() => {
+      document.documentElement.style.scrollBehavior = prev;
+    });
+  } else {
+    delete document.body.dataset.khFocusMode;
+    document.documentElement.classList.remove("kh-focus-mode");
+  }
+}
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 const MODULES_PAGE_SIZE = 8;
+const REF_TABLE_PAGE_SIZE = 25;
 
 type PageView = "lessons" | "flashcards" | "modules" | "games" | "playing" | "grammar" | "proverbs";
 
@@ -111,6 +110,16 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const [moduleSearch, setModuleSearch] = useState("");
   const [selectedUnitFilter, setSelectedUnitFilter] = useState<string>("all");
   const [modulesPage, setModulesPage] = useState(1);
+  const [refTablePage, setRefTablePage] = useState(1);
+
+  useEffect(() => {
+    setRefTablePage(1);
+  }, [languageId]);
+
+  useEffect(() => {
+    // Warm-prefetch LessonPlayer chunk so clicking Start Lesson renders without delay
+    import("@/components/learn/LessonPlayer").catch(() => {});
+  }, []);
 
   // Interactive 3D Flashcard Deck state
   const [flashcardSkillId, setFlashcardSkillId] = useState<string>("all");
@@ -135,6 +144,17 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       active = false;
     };
   }, [languageId]);
+
+  useEffect(() => {
+    if (view === "playing") {
+      setFocusModeSync(true);
+    } else {
+      setFocusModeSync(false);
+    }
+    return () => {
+      setFocusModeSync(false);
+    };
+  }, [view]);
 
   const [activeLesson, setActiveLesson] = useState<{
     skill: CourseSkill;
@@ -199,7 +219,11 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   }, [languageId, course]);
 
   const dictUnit: CourseUnit | null = useMemo(() => {
-    if (!loadedDict) return null;
+    const meta = DICT_META_MAP[languageId];
+    if (!meta) return null;
+    const validMetaCats = meta.categories.filter((c) => c.count > 0);
+    if (validMetaCats.length === 0) return null;
+
     const courseWordSet = new Set<string>();
     if (course) {
       course.units.forEach((u) =>
@@ -211,42 +235,51 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       );
     }
 
-    const skills: CourseSkill[] = [];
-    for (const cat of loadedDict.categories) {
-      if (!cat.entries || cat.entries.length === 0) continue;
-      const words: WordPair[] = [];
-      for (const e of cat.entries) {
-        const t = e.translation.trim();
-        const s = e.english.trim();
-        if (!t || !s) continue;
-        const key = `${t.toLowerCase()}::${s.toLowerCase()}`;
-        if (courseWordSet.has(key)) continue;
-        words.push({
-          target: t,
-          source: s,
-          pronunciation: e.pronunciation || undefined,
-          example: e.context || undefined,
-          audioFile: e.audioFile || undefined,
-        });
+    const loadedCatMap = new Map(
+      (loadedDict?.categories || []).map((c) => [c.id, c])
+    );
+
+    const skills: CourseSkill[] = validMetaCats.map((catMeta) => {
+      const loadedCat = loadedCatMap.get(catMeta.id);
+      const dedupedWords: WordPair[] = [];
+      const allCatWords: WordPair[] = [];
+      if (loadedCat?.entries) {
+        for (const e of loadedCat.entries) {
+          const t = e.translation.trim();
+          const s = e.english.trim();
+          if (!t || !s) continue;
+          const pair: WordPair = {
+            target: t,
+            source: s,
+            pronunciation: e.pronunciation || undefined,
+            example: e.context || undefined,
+            audioFile: e.audioFile || undefined,
+          };
+          allCatWords.push(pair);
+          const key = `${t.toLowerCase()}::${s.toLowerCase()}`;
+          if (!courseWordSet.has(key)) {
+            dedupedWords.push(pair);
+          }
+        }
       }
-      if (words.length === 0) continue;
-      skills.push({
-        id: `dict-cat-${cat.id}`,
-        title: `Dictionary: ${cat.name}`,
-        icon: cat.icon || "📖",
-        description: `Complete ${loadedDict.languageName} dictionary entries for ${cat.name.toLowerCase()} (${words.length.toLocaleString()} verified entries).`,
-        tips: `Practice and search ${words.length.toLocaleString()} verified ${loadedDict.languageName} dictionary entries in the ${cat.name} category.`,
+      const words = dedupedWords.length > 0 ? dedupedWords : allCatWords;
+      const countLabel = catMeta.count.toLocaleString("en-KE");
+      return {
+        id: `dict-cat-${catMeta.id}`,
+        title: `Dictionary: ${catMeta.name}`,
+        icon: catMeta.icon || "📖",
+        description: `Complete ${meta.languageName} dictionary entries for ${catMeta.name.toLowerCase()} (${countLabel} verified entries).`,
+        tips: `Practice and search ${countLabel} verified ${meta.languageName} dictionary entries in the ${catMeta.name} category.`,
         words,
         sentences: [],
-      });
-    }
+      };
+    });
 
-    if (skills.length === 0) return null;
     return {
       id: `dict-unit-${languageId}`,
       unitNumber: (course?.units.length || 0) + 1,
-      title: `${loadedDict.languageName} Complete Dictionary (${loadedDict.categories.reduce((acc, c) => acc + c.entries.length, 0).toLocaleString()} Entries)`,
-      description: `All verified ${loadedDict.languageName} dictionary categories integrated for flashcards, vocabulary search, interactive practice, and mini-games.`,
+      title: `${meta.languageName} Complete Dictionary (${meta.totalEntries.toLocaleString("en-KE")} Entries)`,
+      description: `All verified ${meta.languageName} dictionary categories integrated for flashcards, vocabulary search, interactive practice, and mini-games.`,
       icon: "BookOpen",
       color: "#D4A017",
       skills,
@@ -384,6 +417,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           words: lessonSkill.words.slice(offset, offset + batchSize),
         };
       }
+      setFocusModeSync(true);
       setActiveLesson({
         skill: lessonSkill,
         level,
@@ -402,6 +436,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     if (due.length === 0) return;
     const fallbackSkill = course.units[0]?.skills[0];
     if (!fallbackSkill) return;
+    setFocusModeSync(true);
     setActiveLesson({
       skill: fallbackSkill,
       level: 1,
@@ -453,6 +488,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   );
 
   const handleQuitLesson = useCallback(() => {
+    setFocusModeSync(false);
     setActiveLesson(null);
     setView("lessons");
   }, []);
@@ -488,15 +524,10 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
     0
   );
-  const totalWords = Math.max(
-    courseWordsCount,
-    combinedUnits.reduce(
-      (sum, u) => sum + u.skills.reduce((s, sk) => s + sk.words.length, 0),
-      0
-    ),
-    dictMeta?.totalEntries || 0
-  );
-  const totalSkills = course.units.reduce((sum, u) => sum + u.skills.length, 0);
+  // Single canonical counts (identical on SSR and client hydration — zero flicker)
+  const totalWords = Math.max(courseWordsCount, dictMeta?.totalEntries || 0);
+  const totalUnits = combinedUnits.length;
+  const totalSkills = combinedUnits.reduce((sum, u) => sum + u.skills.length, 0);
   const sources = getSourcesForLanguage(course.config.id);
   const langHeading = formatLanguageHeader(course.config.name, course.config.nativeName);
 
@@ -511,7 +542,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const courseFaq = [
     {
       question: `How is the ${langHeading} course structured on KenyaHub?`,
-      answer: `The ${course.config.name} course is organized into ${course.units.length} structured ${course.units.length === 1 ? "unit" : "units"} and ${totalSkills} skill ${totalSkills === 1 ? "module" : "modules"} teaching ${totalWords.toLocaleString()}+ verified vocabulary items, sentence patterns, grammar paradigms, and cultural proverbs. Learners progress from foundational greetings and numerals to verb conjugations, kinship, and oral literature.`,
+      answer: `The ${course.config.name} course is organized into ${totalUnits} structured ${totalUnits === 1 ? "unit" : "units"} and ${totalSkills} skill ${totalSkills === 1 ? "module" : "modules"} teaching ${totalWords.toLocaleString("en-KE")}+ verified vocabulary items, sentence patterns, grammar paradigms, and cultural proverbs. Learners progress from foundational greetings and numerals to verb conjugations, kinship, and oral literature.`,
     },
     {
       question: `Where is ${course.config.name} spoken in Kenya and which language family does it belong to?`,
@@ -521,7 +552,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       question: `What primary linguistic sources are used for the ${course.config.name} lessons and grammar reference?`,
       answer:
         sources.length > 0
-          ? `The ${course.config.name} curriculum is compiled from verified public-domain monographs and open lexical datasets, including ${sources.map((s) => `${s.title} (${s.published})`).join("; ")}.`
+          ? `The ${course.config.name} curriculum is compiled from ${sources.length} verified public-domain monographs and open lexical datasets, including ${sources.slice(0, 4).map((s) => `${s.title} (${s.published})`).join("; ")}.`
           : `The ${course.config.name} curriculum is compiled from verified Kenyan linguistic monographs and open lexical corpora.`,
     },
     {
@@ -530,10 +561,30 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     },
   ];
 
-  const sampleWords = course.units
-    .flatMap((u) => u.skills.flatMap((sk) => sk.words))
-    .filter((w) => w.target && w.source)
-    .slice(0, 5);
+  const dedupedCourseWords = (() => {
+    const seen = new Set<string>();
+    const list: WordPair[] = [];
+    for (const u of course.units) {
+      for (const sk of u.skills) {
+        for (const w of sk.words) {
+          if (!w.target || !w.source) continue;
+          const key = `${w.target.trim().toLowerCase()}::${w.source.trim().toLowerCase()}`;
+          if (seen.has(key)) continue;
+          seen.add(key);
+          list.push(w);
+        }
+      }
+    }
+    return list;
+  })();
+
+  const totalRefTablePages = Math.max(1, Math.ceil(dedupedCourseWords.length / REF_TABLE_PAGE_SIZE));
+  const safeRefTablePage = Math.min(refTablePage, totalRefTablePages);
+  const paginatedRefWords = dedupedCourseWords.slice(
+    (safeRefTablePage - 1) * REF_TABLE_PAGE_SIZE,
+    safeRefTablePage * REF_TABLE_PAGE_SIZE
+  );
+
   const grammarTitles = (course.grammarSections || [])
     .slice(0, 4)
     .map((g) => g.title)
@@ -543,45 +594,17 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     .map((u) => u.title.replace(/^Unit \d+:\s*/i, ""))
     .join(", ");
 
+  // Suppress calculator-specific ToolShell headings (Step-by-Step Calculation, Statutory Compliance)
+  // and uncollapsed bibliography wall; render language-learning study guide & collapsed <details> bibliography below.
   const courseGuideOverride: RichGuideEntry = {
-    notesTitle: `Linguistic Guide, Curriculum & Methodology: ${langHeading}`,
+    notesTitle: `About the ${langHeading} Curriculum`,
     overview: [
-      `${langHeading} is a ${course.config.family} language spoken by approximately ${course.config.speakers} speakers across ${course.config.counties.join(", ")} in Kenya. ${course.config.description}`,
-      `This interactive ${course.config.name} course is structured into ${course.units.length} thematic units (${unitNames}) and ${totalSkills} skill modules covering ${totalWords.toLocaleString()}+ verified vocabulary items, sentence patterns, and cultural idioms${grammarTitles ? `, alongside reference grammar chapters on ${grammarTitles}` : ""}.`,
-      sources.length > 0
-        ? `Primary Linguistic Provenance: Vocabulary, orthography, and grammatical paradigms in this ${course.config.name} curriculum are compiled and cross-verified from ${sources.map((s) => `${s.title} (${s.published})`).join("; ")}.`
-        : `All ${course.config.name} lessons, spaced-repetition reviews, flashcards, and mini-games execute 100% locally in your browser with automatic progress persistence.`,
+      `${langHeading} belongs to the ${course.config.family} language family and is spoken by approximately ${course.config.speakers} people across ${course.config.counties.join(", ")} in Kenya.`,
+      `This interactive course covers ${totalUnits} structured units (${unitNames}) and ${totalSkills} skill modules spanning ${totalWords.toLocaleString("en-KE")}+ verified vocabulary entries, sentence patterns, and cultural idioms${grammarTitles ? `, alongside grammar reference chapters on ${grammarTitles}` : ""}.`,
     ],
-    howItWorks: [
-      `Select a ${course.config.name} skill node on the Skill Path to study vocabulary teaching cards with phonetic guides and contextual examples before starting the interactive quiz.`,
-      `Complete 5 progressive crown levels per ${course.config.name} module—combining multiple-choice recognition, sentence-tile construction, fill-in-the-blank cloze prompts, and active ${course.config.nativeName} typing with diacritic-aware grading.`,
-      `Practice due items in the Spaced Repetition System (SRS) review queue, which schedules missed ${course.config.name} words across 5 expanding Leitner intervals (10 minutes to 14 days).`,
-      `Switch to the All Vocab & Dictionary tab, 3D Flashcards, Grammar Reference, Proverbs & Wisdom, or Mini-Games Hub to explore all ${totalWords.toLocaleString()}+ ${course.config.name} entries.`,
-    ],
-    workedExample: {
-      title: `Core ${langHeading} Vocabulary & Structural Sample`,
-      scenario: `Foundational ${course.config.name} expressions and lexical pairs from the opening modules of the ${course.config.nativeName} curriculum:`,
-      steps:
-        sampleWords.length > 0
-          ? sampleWords.map(
-              (w) =>
-                `${w.target} → "${w.source}"${w.pronunciation ? ` [${w.pronunciation}]` : ""}${w.example ? ` — ${w.example}` : ""}`
-            )
-          : [
-              `Language Family: ${course.config.family}`,
-              `Primary Counties: ${course.config.counties.join(", ")}`,
-              `Verified Vocabulary & Dictionary Corpus: ${totalWords.toLocaleString()}+ entries`,
-            ],
-      takeaway: `Consistent daily practice (50 XP/day goal) across ${course.config.name} skill modules and spaced-repetition reviews builds lasting reading and conversational recall.`,
-    },
-    complianceTips: [
-      `Pay close attention to ${course.config.name} vowel length, diacritics, and prefixes—if you type an unaccented form, the grading engine accepts it with an "Almost exact" orthography reminder.`,
-      `Use the "Unlock All" toggle on the Skill Path if you already speak basic ${course.config.name} and want to jump directly to advanced grammar or dictionary categories.`,
-      `Review the Grammar Reference and Proverbs & Wisdom tabs alongside vocabulary modules to understand how ${course.config.name} morphology and oral idioms operate in context.`,
-    ],
-    notes: sources.map(
-      (s) => `${s.title} (${s.published}) — ${s.contribution || s.coverageNote || "Verified primary linguistic reference."}`
-    ),
+    howItWorks: [],
+    complianceTips: [],
+    notes: [],
     faq: courseFaq,
   };
 
@@ -677,11 +700,11 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
       {/* Horizontal Scrolling Pill Tabs */}
       {view !== "playing" && (
-        <ExpandablePillRow className="mb-5">
+        <ExpandablePillRow className="mb-5 [&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
           {[
             { id: "lessons" as const, label: "Skill Path" },
-            { id: "flashcards" as const, label: `Flashcards (${totalWords.toLocaleString()})` },
-            { id: "modules" as const, label: `All Vocab & Dictionary (${totalWords.toLocaleString()})` },
+            { id: "flashcards" as const, label: `Flashcards (${totalWords.toLocaleString("en-KE")})` },
+            { id: "modules" as const, label: `All Vocab & Dictionary (${totalWords.toLocaleString("en-KE")})` },
             { id: "games" as const, label: "Mini-Games (14)" },
             ...(hasGrammar ? [{ id: "grammar" as const, label: "Grammar" }] : []),
             { id: "proverbs" as const, label: "Proverbs & Wisdom" },
@@ -693,7 +716,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 onClick={() => setView(tab.id)}
                 role="tab"
                 aria-selected={active}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 min-h-[38px] inline-flex items-center text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -1118,47 +1141,150 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         />
       )}
 
-      {/* Always-Indexable Core Vocabulary & Expressions Reference Table for Search Engines */}
-      {(view === "lessons" || view === "modules") && sampleWords.length > 0 && (
+      {/* Paginated Core Vocabulary & Expressions Reference Table (lessons view only — avoids double display on modules tab) */}
+      {view === "lessons" && paginatedRefWords.length > 0 && (
         <section className="mt-8 bg-bg-card border border-border rounded-2xl p-4 sm:p-6 space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
-              {langHeading} Core Vocabulary &amp; Expressions Reference Table
-            </h2>
+            <div>
+              <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+                {langHeading} Core Vocabulary &amp; Expressions Reference Table
+              </h2>
+              <p className="text-xs text-text-muted mt-0.5">
+                Showing {((safeRefTablePage - 1) * REF_TABLE_PAGE_SIZE + 1).toLocaleString("en-KE")}–
+                {Math.min(safeRefTablePage * REF_TABLE_PAGE_SIZE, dedupedCourseWords.length).toLocaleString("en-KE")} of{" "}
+                {dedupedCourseWords.length.toLocaleString("en-KE")} course entries
+              </p>
+            </div>
             <Link
               href={`/tools/kenyan-translator/?lang=${course.config.id}`}
               className="text-xs font-semibold text-gold hover:underline"
             >
-              Open Full {course.config.name} Dictionary ({totalWords.toLocaleString()}+ Entries) →
+              Open Full {course.config.name} Dictionary ({totalWords.toLocaleString("en-KE")}+ Entries) →
             </Link>
           </div>
           <div className="table-responsive">
             <table className="data-table">
               <thead>
                 <tr>
-                  <th>{course.config.name} ({course.config.nativeName})</th>
+                  <th>{langHeading}</th>
                   <th>English Meaning</th>
                   <th>Pronunciation / Usage Context</th>
                 </tr>
               </thead>
               <tbody>
-                {course.units
-                  .flatMap((u) => u.skills.flatMap((sk) => sk.words))
-                  .filter((w) => w.target && w.source)
-                  .slice(0, 16)
-                  .map((w, idx) => (
-                    <tr key={idx}>
+                {paginatedRefWords.map((w, idx) => {
+                  const contextParts = [
+                    w.pronunciation?.trim() ? `[${w.pronunciation.trim()}]` : "",
+                    w.example?.trim() || "",
+                  ].filter(Boolean);
+                  return (
+                    <tr key={`${w.target}-${idx}`}>
                       <td className="font-bold text-gold">{w.target}</td>
                       <td className="font-medium text-text-primary">{w.source}</td>
                       <td className="text-xs text-text-secondary">
-                        {w.pronunciation ? `[${w.pronunciation}] ` : ""}
-                        {w.example || "—"}
+                        {contextParts.join(" ")}
                       </td>
                     </tr>
-                  ))}
+                  );
+                })}
               </tbody>
             </table>
           </div>
+          {totalRefTablePages > 1 && (
+            <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-border/60">
+              <span className="text-xs text-text-muted">
+                Page <strong className="text-text-primary">{safeRefTablePage}</strong> of{" "}
+                <strong className="text-text-primary">{totalRefTablePages}</strong>
+              </span>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  disabled={safeRefTablePage <= 1}
+                  onClick={() => setRefTablePage((p) => Math.max(1, p - 1))}
+                  className="inline-flex items-center gap-1 rounded-xl border border-border bg-bg-elevated px-3 py-1.5 min-h-[36px] text-xs font-semibold text-text-secondary hover:text-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                >
+                  <ChevronLeft className="h-3.5 w-3.5" /> Previous
+                </button>
+                <button
+                  type="button"
+                  disabled={safeRefTablePage >= totalRefTablePages}
+                  onClick={() => setRefTablePage((p) => Math.min(totalRefTablePages, p + 1))}
+                  className="inline-flex items-center gap-1 rounded-xl border border-border bg-bg-elevated px-3 py-1.5 min-h-[36px] text-xs font-semibold text-text-secondary hover:text-gold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                >
+                  Next <ChevronRight className="h-3.5 w-3.5" />
+                </button>
+              </div>
+            </div>
+          )}
+        </section>
+      )}
+
+      {/* Language-Learning Study Guide & Collapsed Academic Bibliography (replaces calculator headings & uncollapsed bibliography wall) */}
+      {view !== "playing" && (
+        <section className="mt-6 bg-bg-card border border-border rounded-2xl p-4 sm:p-6 space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="space-y-2.5">
+              <h2 className="text-sm font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+                How to Study {course.config.name}
+              </h2>
+              <ol className="space-y-2 text-xs sm:text-sm text-text-secondary">
+                <li className="flex items-start gap-2">
+                  <span className="w-5 h-5 rounded-full bg-gold/15 text-gold text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+                  <span className="leading-relaxed">Select a skill module on the Skill Path to study teaching cards with phonetic guides before starting the interactive quiz.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-5 h-5 rounded-full bg-gold/15 text-gold text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+                  <span className="leading-relaxed">Complete 5 crown levels per module combining recognition, sentence tiles, fill-in-the-blank prompts, and diacritic-aware typing.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-5 h-5 rounded-full bg-gold/15 text-gold text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+                  <span className="leading-relaxed">Reinforce recall with the Spaced Repetition (SRS) queue, 3D Flashcards, Grammar Reference, Proverbs &amp; Wisdom, and 14 Mini-Games.</span>
+                </li>
+              </ol>
+            </div>
+
+            <div className="space-y-2.5">
+              <h2 className="text-sm font-bold font-[family-name:var(--font-outfit)] text-kenya-green-light">
+                Orthography &amp; Practice Tips
+              </h2>
+              <ul className="space-y-2 text-xs sm:text-sm text-text-secondary">
+                <li className="flex items-start gap-2">
+                  <span className="text-kenya-green-light font-bold shrink-0">✓</span>
+                  <span className="leading-relaxed">Pay close attention to {course.config.name} vowel length, diacritics, and prefixes — unaccented answers are accepted with an orthography reminder.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-kenya-green-light font-bold shrink-0">✓</span>
+                  <span className="leading-relaxed">Use the &ldquo;Unlock All Lessons&rdquo; toggle on the Skill Path if you already speak basic {course.config.name} and want to jump straight to advanced modules.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-kenya-green-light font-bold shrink-0">✓</span>
+                  <span className="leading-relaxed">Pair vocabulary drills with the Grammar and Proverbs &amp; Wisdom tabs to see how {course.config.name} morphology works in everyday speech.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {sources.length > 0 && (
+            <details className="group rounded-xl border border-border bg-bg-elevated/50 px-4 py-3">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-2 text-xs sm:text-sm font-bold text-text-primary hover:text-gold transition-colors">
+                <span>
+                  Academic Bibliography &amp; Primary Linguistic Sources ({sources.length})
+                </span>
+                <ChevronDown className="h-4 w-4 text-text-muted transition-transform group-open:rotate-180 shrink-0" />
+              </summary>
+              <ul className="mt-3 space-y-2.5 border-t border-border/60 pt-3 text-xs sm:text-sm text-text-secondary">
+                {sources.map((s) => (
+                  <li key={s.id} className="flex items-start gap-2 leading-relaxed">
+                    <span className="text-gold font-bold shrink-0">•</span>
+                    <span>
+                      <strong className="text-text-primary">{s.title}</strong> ({s.published}) —{" "}
+                      {s.coverageNote || s.contribution || "Verified primary linguistic reference."}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
         </section>
       )}
     </ToolShell>

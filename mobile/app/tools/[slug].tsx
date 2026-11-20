@@ -250,6 +250,18 @@ export default function ToolDetailScreen() {
   const effectiveSlug = slug === "cbc-grade-age" ? "cbc-curriculum" : slug;
   const tool = TOOLS.find((item) => item.slug === effectiveSlug);
   const isLanguageCourseScreen = tool?.slug === "learn";
+  const isNonCalculatorTool = Boolean(
+    tool &&
+      [
+        "learn",
+        "kenyan-translator",
+        "cbc-curriculum",
+        "traffic-fines",
+        "mobile-number-prefix",
+        "airtime-drain-guide",
+        "landlord-tenant-rights",
+      ].includes(tool.slug)
+  );
   const [saved, setSaved] = useState(false);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
   const [showFullGuide, setShowFullGuide] = useState(true);
@@ -420,9 +432,26 @@ export default function ToolDetailScreen() {
   const overview = guide.overview || [];
   const howItWorks = guide.howItWorks || [];
   const workedExample = guide.workedExample;
-  const complianceTips = guide.complianceTips || [];
-  const faqs = guide.faq || [];
-  const notes = guide.notes || [];
+  const dedupeStrings = (arr: string[]) => {
+    const seen = new Set<string>();
+    return arr.filter((item) => {
+      const k = String(item || "").trim().toLowerCase();
+      if (!k || seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
+  };
+  const complianceTips = dedupeStrings(guide.complianceTips || []);
+  const faqs = (() => {
+    const seen = new Set<string>();
+    return (guide.faq || []).filter((item) => {
+      const k = String(item?.question || "").trim().toLowerCase();
+      if (!k || seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
+  })();
+  const notes = dedupeStrings(guide.notes || []);
   const notesTitle = guide.notesTitle || "Important Notes & About the Data";
   const frequencyLabel =
     tool.updateFrequency === "static"
@@ -741,7 +770,9 @@ export default function ToolDetailScreen() {
                   />
                 </View>
                 <Text style={[styles.notesTitle, { color: theme.textPrimary }]}>
-                  How It Works, Worked Example & Statutory Guide
+                  {isNonCalculatorTool
+                    ? "How to Use & Reference Guide"
+                    : "How It Works, Worked Example & Statutory Guide"}
                 </Text>
                 <Ionicons
                   name={showFullGuide ? "chevron-up" : "chevron-down"}
@@ -866,7 +897,9 @@ export default function ToolDetailScreen() {
                           color: theme.sky,
                         }}
                       >
-                        Statutory Compliance Tips
+                        {isNonCalculatorTool
+                          ? "Practical Usage Tips"
+                          : "Statutory Compliance Tips"}
                       </Text>
                       {complianceTips.map((tip, tIdx) => (
                         <View key={`ct-${tIdx}`} style={styles.noteRow}>

@@ -48,18 +48,15 @@ export function EtimsMpesaReconcilerTool() {
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.desc}>
-        Reconcile M-Pesa Paybill/Till outflows locally against KRA eTIMS invoices to prevent the 30% corporate tax disallowed-expense penalty.
-      </Text>
       <View style={styles.kpiRow}>
-        <View style={[styles.kpiCard, { borderColor: "#EF444466", backgroundColor: "#EF444418" }]}>
+        <View style={[styles.kpiCard, { borderColor: `${theme.kenyaRedLight}66`, backgroundColor: `${theme.kenyaRedLight}18` }]}>
           <Text style={styles.kpiLabel}>30% TAX EXPOSURE</Text>
-          <Text style={[styles.kpiValue, { color: "#F87171" }]}>KES {summary.penalty.toLocaleString()}</Text>
+          <Text style={[styles.kpiValue, { color: theme.kenyaRedLight }]}>KES {summary.penalty.toLocaleString()}</Text>
           <Text style={styles.kpiSub}>Unreceipted: KES {summary.unreceipted.toLocaleString()}</Text>
         </View>
         <View style={styles.kpiCard}>
           <Text style={styles.kpiLabel}>MATCHED + EXEMPT</Text>
-          <Text style={[styles.kpiValue, { color: "#34D399" }]}>KES {(summary.matched + summary.exempt).toLocaleString()}</Text>
+          <Text style={[styles.kpiValue, { color: theme.kenyaGreenLight }]}>KES {(summary.matched + summary.exempt).toLocaleString()}</Text>
           <Text style={styles.kpiSub}>Protected from 30% penalty</Text>
         </View>
       </View>
@@ -95,7 +92,7 @@ export function EtimsMpesaReconcilerTool() {
             <Text style={styles.amountText}>KES {r.amount.toLocaleString()}</Text>
           </View>
           <View style={[styles.rowBetween, { marginTop: 8 }]}>
-            <Text style={{ fontSize: 11.5, fontWeight: "700", color: r.matched ? "#34D399" : r.exempt ? "#38BDF8" : "#F87171" }}>
+            <Text style={{ fontSize: 11.5, fontWeight: "700", color: r.matched ? theme.kenyaGreenLight : r.exempt ? theme.sky : theme.kenyaRedLight }}>
               {r.matched ? "eTIMS Matched" : r.exempt ? "Statutory Exempt" : `+KES ${Math.round(r.amount * 0.3).toLocaleString()} Risk`}
             </Text>
             <View style={{ flexDirection: "row", gap: 6 }}>
@@ -123,7 +120,7 @@ export function EtimsMpesaReconcilerTool() {
 
 // 2. ODPC Employer Compliance & Dual-Law Retention Engine
 export function OdpcHrRetentionVaultTool() {
-  const { theme, styles } = useDynamicStyles(createStyles);
+  const { theme, isDark, styles } = useDynamicStyles(createStyles);
   const [staff, setStaff] = useState("18");
   const [turnover, setTurnover] = useState("12000000");
 
@@ -131,15 +128,15 @@ export function OdpcHrRetentionVaultTool() {
     const s = Math.max(1, Number(staff) || 0);
     const t = Math.max(0, Number(turnover.replace(/[^0-9]/g, "")) || 0);
     const mandatory = s >= utilData.odpc.staffThreshold || t >= utilData.odpc.turnoverThresholdKes;
-    const maxFine = Math.min(utilData.odpc.maxFineKes, Math.max(500000, Math.round(t * utilData.odpc.maxFineTurnoverPct)));
+    // Data Protection Act 2019 s.63: lesser of KES 5,000,000 or 1% of annual turnover
+    const maxFine = Math.min(5_000_000, Math.round(t * 0.01));
     return { mandatory, maxFine };
   }, [staff, turnover]);
 
+  const warningColor = isDark ? "#FBBF24" : "#92400E";
+
   return (
     <View style={styles.wrap}>
-      <Text style={styles.desc}>
-        Balance Employment Act 2007 s.10(6) (5-year retention lock) against Data Protection Act 2019 deletion rules.
-      </Text>
       <View style={styles.inputRow}>
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>Staff Count</Text>
@@ -157,10 +154,10 @@ export function OdpcHrRetentionVaultTool() {
           <Text style={styles.kpiValue}>{audit.mandatory ? "Mandatory" : "Below Threshold"}</Text>
           <Text style={styles.kpiSub}>10+ staff or &gt;KES 5M</Text>
         </View>
-        <View style={[styles.kpiCard, { borderColor: "#EF444466", backgroundColor: "#EF444418" }]}>
-          <Text style={styles.kpiLabel}>MAX STATUTORY FINE</Text>
-          <Text style={[styles.kpiValue, { color: "#F87171" }]}>KES {audit.maxFine.toLocaleString()}</Text>
-          <Text style={styles.kpiSub}>+ KES 10,000/day default</Text>
+        <View style={[styles.kpiCard, { borderColor: `${theme.kenyaRedLight}66`, backgroundColor: `${theme.kenyaRedLight}18` }]}>
+          <Text style={styles.kpiLabel}>MAX DPA s.63 FINE</Text>
+          <Text style={[styles.kpiValue, { color: theme.kenyaRedLight }]}>KES {audit.maxFine.toLocaleString()}</Text>
+          <Text style={styles.kpiSub}>min(KES 5M, 1% turnover)</Text>
         </View>
       </View>
 
@@ -168,7 +165,7 @@ export function OdpcHrRetentionVaultTool() {
         <View key={idx} style={styles.card}>
           <View style={styles.rowBetween}>
             <Text style={[styles.cardTitle, { flex: 1 }]}>{rule.record}</Text>
-            <Text style={{ fontSize: 11, fontWeight: "800", color: rule.action === "LOCK" ? "#34D399" : rule.action === "AUTO-PURGE" ? "#F87171" : "#FBBF24" }}>
+            <Text style={{ fontSize: 11, fontWeight: "800", color: rule.action === "LOCK" ? theme.kenyaGreenLight : rule.action === "AUTO-PURGE" ? theme.kenyaRedLight : warningColor }}>
               {rule.action}
             </Text>
           </View>
@@ -202,9 +199,6 @@ export function EudrCoopGeojsonPackagerTool() {
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.desc}>
-        Validate coffee cooperative WGS84 geolocation polygons ahead of EUDR deadlines (Dec 30, 2026 large / Jun 30, 2027 small co-ops).
-      </Text>
       <View style={styles.inputRow}>
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>Plot Size (Hectares)</Text>
@@ -223,8 +217,8 @@ export function EudrCoopGeojsonPackagerTool() {
         numberOfLines={5}
         style={[styles.input, { minHeight: 100, textAlignVertical: "top", fontFamily: "monospace" }]}
       />
-      <View style={[styles.card, { borderColor: check.ready ? "#34D39966" : "#EF444466" }]}>
-        <Text style={[styles.cardTitle, { color: check.ready ? "#34D399" : "#F87171" }]}>
+      <View style={[styles.card, { borderColor: check.ready ? `${theme.kenyaGreenLight}66` : `${theme.kenyaRedLight}66` }]}>
+        <Text style={[styles.cardTitle, { color: check.ready ? theme.kenyaGreenLight : theme.kenyaRedLight }]}>
           {check.ready ? "EU TRACES GeoJSON Ready" : "Validation Action Required"}
         </Text>
         <Text style={styles.cardSub}>
@@ -256,21 +250,22 @@ export function IcmsLandedCostArbitrageTool() {
     const rdl = Math.round(cif * utilData.icms.rdlRate);
     const indep = cif + duty + vat + idf + rdl + utilData.icms.defaultClearingFeeKes;
     const cons = f + Math.round(vol * utilData.icms.seaConsolidatorRatePerCbmKes);
-    return { indep, cons, spread: indep - cons, duty, vat, idf, rdl };
+    return { indep, cons, spread: indep - cons, duty, vat, idf, rdl, vol };
   }, [fob, freight, cbm, dutyIdx]);
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.desc}>
-        Compare cascading KRA iCMS customs taxes against all-in China-to-Kenya sea consolidator rates (KES 65,000/CBM).
-      </Text>
       <View style={styles.inputRow}>
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>FOB Value (KES)</Text>
           <TextInput value={fob} onChangeText={(v) => setFob(v.replace(/[^0-9]/g, ""))} keyboardType="numeric" style={styles.input} placeholderTextColor={theme.textMuted} />
         </View>
         <View style={{ flex: 1 }}>
-          <Text style={styles.label}>Volume (CBM)</Text>
+          <Text style={styles.label}>Freight (KES)</Text>
+          <TextInput value={freight} onChangeText={(v) => setFreight(v.replace(/[^0-9]/g, ""))} keyboardType="numeric" style={styles.input} placeholderTextColor={theme.textMuted} />
+        </View>
+        <View style={{ flex: 0.7 }}>
+          <Text style={styles.label}>CBM</Text>
           <TextInput value={cbm} onChangeText={setCbm} keyboardType="decimal-pad" style={styles.input} placeholderTextColor={theme.textMuted} />
         </View>
       </View>
@@ -291,11 +286,22 @@ export function IcmsLandedCostArbitrageTool() {
           <Text style={styles.kpiValue}>KES {calc.indep.toLocaleString()}</Text>
           <Text style={styles.kpiSub}>Duty+VAT+IDF+RDL+Clearing</Text>
         </View>
-        <View style={[styles.kpiCard, { borderColor: "#34D39966", backgroundColor: "#34D39918" }]}>
+        <View style={[styles.kpiCard, { borderColor: `${theme.kenyaGreenLight}66`, backgroundColor: `${theme.kenyaGreenLight}18` }]}>
           <Text style={styles.kpiLabel}>CONSOLIDATOR</Text>
-          <Text style={[styles.kpiValue, { color: "#34D399" }]}>KES {calc.cons.toLocaleString()}</Text>
+          <Text style={[styles.kpiValue, { color: theme.kenyaGreenLight }]}>KES {calc.cons.toLocaleString()}</Text>
           <Text style={styles.kpiSub}>{calc.spread >= 0 ? `Saves KES ${calc.spread.toLocaleString()}` : `Direct saves KES ${Math.abs(calc.spread).toLocaleString()}`}</Text>
         </View>
+      </View>
+
+      {/* Live Practical Tip synced dynamically to formula (F-043) */}
+      <View style={[styles.card, { borderColor: `${theme.gold}55` }]}>
+        <Text style={[styles.kpiLabel, { color: theme.gold }]}>PRACTICAL TIP (LIVE ARBITRAGE)</Text>
+        <Text style={styles.cardSub}>
+          For {calc.vol} CBM at KES {Number(fob || 0).toLocaleString()} FOB, independent iCMS totals KES{" "}
+          {calc.indep.toLocaleString()} vs KES {calc.cons.toLocaleString()} via sea consolidator — a{" "}
+          KES {Math.abs(calc.spread).toLocaleString()}{" "}
+          {calc.spread >= 0 ? "saving with consolidation" : "saving clearing directly under iCMS"}.
+        </Text>
       </View>
     </View>
   );
@@ -312,19 +318,25 @@ const SHA_TRIGGERS = [
 ];
 
 export function ShaClaimScrubberTool() {
-  const { theme, styles } = useDynamicStyles(createStyles);
+  const { theme, isDark, styles } = useDynamicStyles(createStyles);
   const [checked, setChecked] = useState<Record<string, boolean>>({ tier: true, keml: true, mpesa: false, preauth: true, docs: false, window: true });
   const score = useMemo(() => SHA_TRIGGERS.reduce((s, t) => s + (checked[t.id] ? t.weight : 0), 0), [checked]);
+  const uncheckedCount = useMemo(() => SHA_TRIGGERS.filter((t) => !checked[t.id]).length, [checked]);
+
+  // WCAG AA light-mode amber warning contrast (#92400E on light, #FBBF24 on dark — F-044)
+  const warningTextColor = isDark ? "#FBBF24" : "#92400E";
+  const warningBorderColor = isDark ? "#F59E0B66" : "#92400E66";
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.desc}>
-        Scrub Level 3–5 clinic SHA claims across 6 pre-discharge triggers to eliminate the ~20% rejection rate.
-      </Text>
-      <View style={[styles.card, { borderColor: score >= 90 ? "#34D39966" : "#F59E0B66" }]}>
+      <View style={[styles.card, { borderColor: score >= 90 ? `${theme.kenyaGreenLight}66` : warningBorderColor }]}>
         <Text style={styles.kpiLabel}>CLAIM READINESS SCORE</Text>
-        <Text style={[styles.kpiValue, { color: score >= 90 ? "#34D399" : "#FBBF24" }]}>{score}/100</Text>
-        <Text style={styles.kpiSub}>{score >= 90 ? "Low Rejection Risk — Ready to Submit" : "Resolve unchecked triggers before SHA submission"}</Text>
+        <Text style={[styles.kpiValue, { color: score >= 90 ? theme.kenyaGreenLight : warningTextColor }]}>{score}/100</Text>
+        <Text style={[styles.kpiSub, { color: score >= 90 ? theme.textSecondary : warningTextColor, fontWeight: score >= 90 ? "400" : "700" }]}>
+          {score >= 90
+            ? "Low Rejection Risk — Ready to Submit"
+            : `⚠ Fix ${uncheckedCount} trigger(s) before submitting to SHA.`}
+        </Text>
       </View>
       {SHA_TRIGGERS.map((t) => (
         <Pressable
@@ -333,7 +345,7 @@ export function ShaClaimScrubberTool() {
           style={styles.card}
         >
           <View style={styles.rowBetween}>
-            <Ionicons name={checked[t.id] ? "checkbox" : "square-outline"} size={18} color={checked[t.id] ? "#34D399" : theme.textMuted} />
+            <Ionicons name={checked[t.id] ? "checkbox" : "square-outline"} size={18} color={checked[t.id] ? theme.kenyaGreenLight : theme.textMuted} />
             <Text style={[styles.cardTitle, { flex: 1, marginLeft: 10 }]}>{t.label}</Text>
           </View>
         </Pressable>
@@ -342,11 +354,11 @@ export function ShaClaimScrubberTool() {
   );
 }
 
-// 6. PPRA & e-GP Tender Mandatory Requirements Compiler
+// 6. PPRA & e-GP Tender Mandatory Requirements Compiler (MR1–MR11)
 export function PpraEgpTenderSerializerTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [docs, setDocs] = useState(() =>
-    utilData.ppra.mandatoryDocs.map((d) => ({ ...d, pages: d.defaultPages, included: true }))
+    utilData.ppra.mandatoryDocs.slice(0, 11).map((d) => ({ ...d, pages: d.defaultPages, included: true }))
   );
 
   const plan = useMemo(() => {
@@ -363,11 +375,8 @@ export function PpraEgpTenderSerializerTool() {
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.desc}>
-        Verify Preliminary Mandatory Stage (MR1–MR11) documents and compute continuous ITT 20.3 Bates page ranges for e-gp.go.ke.
-      </Text>
       <View style={styles.card}>
-        <Text style={styles.kpiLabel}>TOTAL CONTINUOUS BATES RANGE</Text>
+        <Text style={styles.kpiLabel}>TOTAL CONTINUOUS BATES RANGE (MR1–MR11)</Text>
         <Text style={[styles.kpiValue, { color: theme.gold }]}>0001 – {String(Math.max(1, plan.total)).padStart(4, "0")} ({plan.total} pages)</Text>
       </View>
       {plan.rows.map((r, idx) => (
@@ -378,7 +387,7 @@ export function PpraEgpTenderSerializerTool() {
         >
           <View style={styles.rowBetween}>
             <Text style={{ fontWeight: "800", color: theme.gold, fontSize: 12 }}>{r.code}</Text>
-            <Text style={{ fontWeight: "700", color: r.included ? "#34D399" : "#F87171", fontSize: 12 }}>{r.range}</Text>
+            <Text style={{ fontWeight: "700", color: r.included ? theme.kenyaGreenLight : theme.kenyaRedLight, fontSize: 12 }}>{r.range}</Text>
           </View>
           <Text style={[styles.cardTitle, { marginTop: 4 }]}>{r.title}</Text>
         </Pressable>
@@ -409,9 +418,6 @@ export function KjseaPathwayEngineTool() {
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.desc}>
-        Calculate KNEC Grade 9 composite placement scores (20% KPSEA + 20% SBA + 60% KJSEA) and match Senior School pathways &amp; KUCCPS degree clusters.
-      </Text>
       <View style={styles.inputRow}>
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>KPSEA (20%)</Text>
@@ -462,16 +468,15 @@ const TITLE_CHECKS = [
 ];
 
 export function ArdhisasaCadTitleAuditorTool() {
-  const { theme, styles } = useDynamicStyles(createStyles);
+  const { theme, isDark, styles } = useDynamicStyles(createStyles);
   const [declaredSqm, setDeclaredSqm] = useState("2000");
+  const [utmCoords, setUtmCoords] = useState("255410, 9857210\n255460, 9857210\n255460, 9857170\n255410, 9857170");
   const [checks, setChecks] = useState<boolean[]>([true, true, false, true, false]);
   const passed = checks.filter(Boolean).length;
+  const warningTextColor = isDark ? "#FBBF24" : "#92400E";
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.desc}>
-        Audit parcel area tolerance, GIS datum alignment, Root-of-Title succession chain, and NCA/EBK/BORAQS/ISK compliance before Ardhisasa upload.
-      </Text>
       <View style={styles.inputRow}>
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>Declared Title Area (m²)</Text>
@@ -479,8 +484,20 @@ export function ArdhisasaCadTitleAuditorTool() {
         </View>
         <View style={[styles.kpiCard, { flex: 1 }]}>
           <Text style={styles.kpiLabel}>DOSSIER SCORE</Text>
-          <Text style={[styles.kpiValue, { color: passed === TITLE_CHECKS.length ? "#34D399" : "#FBBF24" }]}>{passed}/{TITLE_CHECKS.length}</Text>
+          <Text style={[styles.kpiValue, { color: passed === TITLE_CHECKS.length ? theme.kenyaGreenLight : warningTextColor }]}>{passed}/{TITLE_CHECKS.length}</Text>
         </View>
+      </View>
+      <View>
+        <Text style={styles.label}>UTM Zone 37S Coordinates (EASTING, NORTHING)</Text>
+        <TextInput
+          value={utmCoords}
+          onChangeText={setUtmCoords}
+          multiline
+          numberOfLines={4}
+          placeholder="255410, 9857210"
+          placeholderTextColor={theme.textMuted}
+          style={[styles.input, { minHeight: 84, textAlignVertical: "top", fontFamily: "monospace" }]}
+        />
       </View>
       {TITLE_CHECKS.map((label, idx) => (
         <Pressable
@@ -489,7 +506,7 @@ export function ArdhisasaCadTitleAuditorTool() {
           style={styles.card}
         >
           <View style={styles.rowBetween}>
-            <Ionicons name={checks[idx] ? "checkbox" : "square-outline"} size={18} color={checks[idx] ? "#34D399" : theme.textMuted} />
+            <Ionicons name={checks[idx] ? "checkbox" : "square-outline"} size={18} color={checks[idx] ? theme.kenyaGreenLight : theme.textMuted} />
             <Text style={[styles.cardTitle, { flex: 1, marginLeft: 10 }]}>{label}</Text>
           </View>
         </Pressable>
@@ -501,7 +518,6 @@ export function ArdhisasaCadTitleAuditorTool() {
 function createStyles(theme: ThemeColors) {
   return StyleSheet.create({
     wrap: { gap: 12 },
-    desc: { fontSize: 13, color: theme.textSecondary, lineHeight: 19 },
     label: { fontSize: 11, fontWeight: "700", color: theme.textMuted, marginBottom: 4, textTransform: "uppercase" },
     inputRow: { flexDirection: "row", gap: 8, alignItems: "flex-end" },
     input: {

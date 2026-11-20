@@ -484,7 +484,7 @@ export default function LessonPlayer({
         : 0;
 
     return (
-      <div className="flex min-h-[70vh] flex-col items-center justify-center px-4">
+      <div className="flex min-h-[85vh] flex-col items-center justify-center px-4">
         <div className="w-full max-w-md text-center">
           <div className="mb-4 flex justify-center animate-bounce">
             <DynamicIcon
@@ -567,7 +567,7 @@ export default function LessonPlayer({
     const isLastTeachingCard = teachingIndex >= teachingDeck.length - 1;
 
     return (
-      <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-1 sm:px-4">
+      <div className="mx-auto flex min-h-[85vh] max-w-2xl flex-col px-1 sm:px-4">
         <div className="mb-5 flex items-center gap-3">
           <button
             onClick={onQuit}
@@ -783,7 +783,7 @@ export default function LessonPlayer({
   })();
 
   return (
-    <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col px-1 sm:px-4">
+    <div className="mx-auto flex min-h-[85vh] max-w-2xl flex-col px-1 sm:px-4">
       {/* ─── Top bar: Progress + Question Count & Streak ──────────── */}
       <div className="mb-4 flex items-center gap-2.5 sm:gap-3 sm:mb-6">
         <button

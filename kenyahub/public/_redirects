@@ -1,4 +1,7 @@
-# Cloudflare Pages 301 Permanent Redirects for Consolidated KenyaHub Tools
+# Cloudflare Pages 301 Permanent Redirects for Canonical & Consolidated KenyaHub Tools
+/calculators                           /tools/                                       301
+/calculators/*                         /tools/:splat                                 301
+
 /tools/nhif-hospital-finder            /county/                                      301
 /tools/nhif-hospital-finder/*          /county/                                      301
 /tools/kenya-postal-codes              /county/                                      301

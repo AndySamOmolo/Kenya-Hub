@@ -2,6 +2,7 @@
 /**
  * Automated Verification & Regression Test Suite for KenyaHub (ARCH-03)
  * Validates Security (SEC-01..05), Gamification & Calculator Logic (LOGIC-01..09),
+ * 2026 Kenyan Statutory Math Regressions (STAT-01..06),
  * Dead Code Hygiene (ARCH-01..02), Copy Consistency (COPY-01), and Web <-> Mobile Sync Parity.
  */
 
@@ -123,7 +124,6 @@ test("ARCH-01 & COPY-01: 14 legacy mobile tool files are removed and copy reflec
   assert.ok(registrySrc.includes("'sha-benefit-estimator':"), "TOOL_USAGE_SCORES must include civic tools");
 });
 
-
 // 7. HOOKS-01: Android LanguageCourseTool Rules of Hooks & Word Scramble/Wordle export safety
 test("HOOKS-01: Android LanguageCourseTool has zero hooks after early returns and exports isSingleWordLexical", () => {
   const lct = fs.readFileSync(path.join(MOBILE_ROOT, "src/tools/LanguageCourseTool.tsx"), "utf8").split("\n");
@@ -157,9 +157,18 @@ test("UI-02: Android ThemeProvider syncs Appearance.setColorScheme and screens u
 });
 
 // 10. CALC-01: Plate Decoder CD/CC/UN, KPLC tariff selector & Water Bill sewer toggle
-test("CALC-01: Plate Decoder supports diplomatic plates; KPLC & Water Bill expose advertised controls", () => {
+test("CALC-01: Plate Decoder populates rendered fields for 29 CD 1K; KPLC & Water Bill expose advertised controls", () => {
   const plate = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/number-plate-decoder/page.tsx"), "utf8");
-  assert.ok(plate.includes("dipMatch"), "Plate Decoder must parse 29 CD 1K diplomatic plates");
+  const dipMatchBlock = plate.match(/if\s*\(\s*dipMatch\s*\)\s*\{([\s\S]*?)\n\s*\}/);
+  assert.ok(dipMatchBlock, "Plate Decoder must contain dipMatch diplomatic plate branch");
+  assert.ok(
+    /\bcounty\s*:/.test(dipMatchBlock[1]) &&
+      /\bplateType\s*:/.test(dipMatchBlock[1]) &&
+      /\byearRange\s*:/.test(dipMatchBlock[1]),
+    "Plate Decoder dipMatch branch must populate county, plateType, and yearRange for 29 CD 1K"
+  );
+  assert.ok(dipMatchBlock[1].includes("Mission #${missionCode}"), "Plate Decoder dipMatch must format Mission #<code>");
+
   const kplc = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/kplc-token-calculator/page.tsx"), "utf8");
   assert.ok(kplc.includes("tariffMode"), "KPLC calculator must expose EPRA tariff selector");
   const water = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/water-bill-calculator/page.tsx"), "utf8");
@@ -176,7 +185,67 @@ test("CALC-02: PAYE computes live benchmark rows, Small Claims removes leaked ta
   assert.ok(!mpesa.includes("mpesa-type-select"), "M-Pesa must not render duplicate Transaction Type selector");
 });
 
-// 12. FAQ-01: All 33 registered tools have guides & >= 3 deduplicated FAQs
+// 12. STAT-01..06: 2026 Kenyan Statutory Math Regressions (F-005..F-010)
+test("STAT-01: Domestic Wage Calculator reflects 2026 Legal Notice 95 floor (KES 18,047)", () => {
+  const wagePage = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/domestic-wage-calculator/page.tsx"), "utf8");
+  const wageData = fs.readFileSync(path.join(WEB_ROOT, "src/data/domestic-wage-data.json"), "utf8");
+  const combined = `${wagePage}\n${wageData}`;
+  assert.ok(/18[_,]?047/.test(combined), "Domestic Wage must use 2026 city minimum wage KES 18,047");
+  assert.ok(!/15[_,]?201/.test(wageData), "domestic-wage-data.json must not retain stale 2022 KES 15,201 floor");
+});
+
+test("STAT-02: KCSE Grade Calculator computes mean grade strictly on KNEC 7-subject / 84-point scale", () => {
+  const kcseSrc = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/kcse-grade-calculator/page.tsx"), "utf8");
+  assert.ok(
+    /\/\s*7\b|best7|slice\(\s*0\s*,\s*7\s*\)/i.test(kcseSrc),
+    "KCSE calculator must compute mean points over the KNEC 7-subject (84-point) scale"
+  );
+  assert.ok(
+    !/totalPoints\s*\/\s*(?:subjects|entries|selectedSubjects)\.length/.test(kcseSrc),
+    "KCSE calculator must not divide totalPoints by 8+ subjects"
+  );
+});
+
+test("STAT-03: HELB Calculator implements KES 5,000/mo statutory default penalty and KES 1,000/yr ledger fee", () => {
+  const helbPage = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/helb-calculator/page.tsx"), "utf8");
+  const helbData = fs.readFileSync(path.join(WEB_ROOT, "src/data/helb-rates.json"), "utf8");
+  const combined = `${helbPage}\n${helbData}`;
+  assert.ok(/5[_,]?000/.test(combined), "HELB calculator must apply KES 5,000/mo statutory default penalty");
+  assert.ok(/1[_,]?000/.test(combined) && /ledger|annual/i.test(combined), "HELB calculator must include KES 1,000/yr ledger fee");
+});
+
+test("STAT-04: ODPC HR Retention Vault computes DPA s.63 cap as min(5,000,000, 1% of turnover)", () => {
+  const odpcSrc = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/odpc-hr-retention-vault/page.tsx"), "utf8");
+  const utilData = JSON.parse(fs.readFileSync(path.join(WEB_ROOT, "src/data/kenya-utility-tools-2026.json"), "utf8"));
+  assert.equal(utilData.odpc.maxFineKes, 5_000_000, "utilData.odpc.maxFineKes must be KES 5,000,000");
+  assert.equal(utilData.odpc.maxFineTurnoverPct, 0.01, "utilData.odpc.maxFineTurnoverPct must be 1% (0.01)");
+  assert.equal(
+    Math.min(utilData.odpc.maxFineKes, Math.round(12_000_000 * utilData.odpc.maxFineTurnoverPct)),
+    120_000,
+    "DPA s.63 cap on KES 12M turnover must equal KES 120,000"
+  );
+  assert.ok(
+    /Math\.min\([\s\S]*?(?:5_?000_?000|maxFineKes)[\s\S]*?(?:0\.01|maxFineTurnoverPct)/.test(odpcSrc),
+    "ODPC calculator must compute DPA s.63 fine cap using Math.min(5M, 1% of turnover)"
+  );
+});
+
+test("STAT-05: Stamp Duty Calculator includes ARO 2014 Scale 1 conveyancing fees + 16% VAT", () => {
+  const sdPage = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/stamp-duty-calculator/page.tsx"), "utf8");
+  const sdData = fs.readFileSync(path.join(WEB_ROOT, "src/data/stamp-duty-rates.json"), "utf8");
+  const combined = `${sdPage}\n${sdData}`;
+  assert.ok(/0\.16|16%/.test(combined) && /VAT/i.test(combined), "Stamp Duty calculator must include 16% VAT on legal fees");
+  assert.ok(/ARO|Scale\s*1|90[_,]?000|104[_,]?400/i.test(combined), "Stamp Duty calculator must implement ARO 2014 Scale 1 legal fees");
+});
+
+test("STAT-06: Water Bill Calculator uses WASREB-approved NCWSC KES 67/m³ Block 2 rate", () => {
+  const waterPage = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/water-bill-calculator/page.tsx"), "utf8");
+  const waterData = fs.readFileSync(path.join(WEB_ROOT, "src/data/water-tariffs.json"), "utf8");
+  const combined = `${waterPage}\n${waterData}`;
+  assert.ok(/\b67\b/.test(combined), "Water Bill calculator must use NCWSC Block 2 tariff KES 67/m³");
+});
+
+// 13. FAQ-01: All 33 registered tools have guides & >= 3 deduplicated FAQs
 test("FAQ-01: All 33 tools sit under tool-guides.json guides map with >= 3 FAQs each", () => {
   const tg = JSON.parse(fs.readFileSync(path.join(WEB_ROOT, "src/data/tool-guides.json"), "utf8"));
   const reg = fs.readFileSync(path.join(WEB_ROOT, "src/lib/tools-registry.ts"), "utf8");
@@ -187,7 +256,7 @@ test("FAQ-01: All 33 tools sit under tool-guides.json guides map with >= 3 FAQs 
   }
 });
 
-// 13. LICENSE-01: Commercial license guardrail (Zero CC-BY-NC / JW300 in all 23 dictionaries)
+// 14. LICENSE-01: Commercial license guardrail (Zero CC-BY-NC / JW300 in all 23 dictionaries)
 test("LICENSE-01: All 23 dictionaries are free of CC-BY-NC and JW300 non-commercial leakage", () => {
   const dictDir = path.join(WEB_ROOT, "src/data/dictionaries");
   const files = fs.readdirSync(dictDir).filter((f) => f.endsWith(".json"));
@@ -200,7 +269,7 @@ test("LICENSE-01: All 23 dictionaries are free of CC-BY-NC and JW300 non-commerc
   }
 });
 
-// 14. PARITY-01: Resume last visited course persisted on Web & Mobile
+// 15. PARITY-01: Resume last visited course persisted on Web & Mobile
 test("PARITY-01: Both Web and Android persist and prioritize last visited language for Resume CTA", () => {
   const webLcp = fs.readFileSync(path.join(WEB_ROOT, "src/components/learn/LanguageClientPage.tsx"), "utf8");
   const webLearn = fs.readFileSync(path.join(WEB_ROOT, "src/app/tools/learn/page.tsx"), "utf8");

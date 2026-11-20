@@ -6,39 +6,33 @@
     "firstTimeBuyerAHF": 0,
     "description": "Stamp Duty Act (Cap 480), updated per Finance Act 2023 for AHF exemption"
   },
+  "legalFeeVatPercent": 16,
   "conveyancingFees": [
     {
       "min": 0,
-      "max": 1000000,
-      "rate": 1.25,
-      "minimumFee": 12500,
-      "label": "Up to KES 1M"
+      "max": 3000000,
+      "rate": 2.0,
+      "minimumFee": 35000,
+      "label": "Up to KES 3M (ARO 2014 Scale 1)"
     },
     {
-      "min": 1000001,
-      "max": 2000000,
-      "rate": 1.0,
+      "min": 3000001,
+      "max": 20000000,
+      "rate": 1.5,
       "minimumFee": null,
-      "label": "KES 1M – 2M"
+      "label": "KES 3M – 20M"
     },
     {
-      "min": 2000001,
-      "max": 5000000,
-      "rate": 0.75,
-      "minimumFee": null,
-      "label": "KES 2M – 5M"
-    },
-    {
-      "min": 5000001,
+      "min": 20000001,
       "max": 100000000,
-      "rate": 0.5,
+      "rate": 1.25,
       "minimumFee": null,
-      "label": "KES 5M – 100M"
+      "label": "KES 20M – 100M"
     },
     {
       "min": 100000001,
       "max": null,
-      "rate": 0.25,
+      "rate": 1.0,
       "minimumFee": null,
       "label": "Above KES 100M"
     }
@@ -52,9 +46,9 @@
   "notes": [
     "Stamp duty is payable within 30 days of execution of the transfer instrument",
     "First-time buyers under the Affordable Housing Fund (AHF) scheme are exempt from stamp duty",
-    "LSK conveyancing fees are calculated on a progressive scale similar to tax bands",
+    "LSK conveyancing fees follow the Advocates Remuneration Order (ARO) 2014 Scale 1 progressive tiers plus mandatory 16% VAT",
     "Land rent and rates clearance are additional county-specific costs for leasehold properties"
   ],
-  "lastUpdated": "2026-10-20",
-  "source": "Stamp Duty Act (Cap 480) & LSK Advocates Remuneration Order"
+  "lastUpdated": "2026-11-20",
+  "source": "Stamp Duty Act (Cap 480) & LSK Advocates Remuneration Order (ARO 2014 Scale 1)"
 }

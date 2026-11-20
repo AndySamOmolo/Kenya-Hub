@@ -188,10 +188,18 @@ export default function LanguageCourseTool({
   );
 
   const langColor = currentCourse?.config.color || colors.gold;
-  const languageSources = useMemo(
-    () => (showLanguageMenu ? [] : getSourcesForLanguage(selectedLangId)),
-    [selectedLangId, showLanguageMenu]
-  );
+  const languageSources = useMemo(() => {
+    if (showLanguageMenu) return [];
+    const raw = getSourcesForLanguage(selectedLangId) || [];
+    const target = selectedLangId.toLowerCase();
+    return raw.filter((s: any) => {
+      if (s.languageId && String(s.languageId).toLowerCase() !== target) return false;
+      if (Array.isArray(s.languages) && s.languages.length > 0) {
+        return s.languages.some((l: string) => String(l).toLowerCase() === target);
+      }
+      return true;
+    });
+  }, [selectedLangId, showLanguageMenu]);
 
   // Compute current language progress with automatic heart refills & daily reset
   const progress: LanguageProgress = useMemo(() => {
@@ -351,8 +359,9 @@ export default function LanguageCourseTool({
   useEffect(() => {
     if (currentCourse?.units?.length) {
       const initialExpanded: Record<string, boolean> = {};
+      const defaultExpandedIdx = new Set([0]);
       currentCourse.units.forEach((u, idx) => {
-        initialExpanded[u.id] = idx < 2; // Expand first 2 units by default for fast initial render
+        initialExpanded[u.id] = defaultExpandedIdx.has(idx); // Collapse units 2+ by default for fast mobile render
       });
       setExpandedUnitIds(initialExpanded);
       if (currentCourse.units[0]?.skills[0]) {
@@ -399,7 +408,9 @@ export default function LanguageCourseTool({
   const [isCardFlipped, setIsCardFlipped] = useState(false);
   const [vocabSearch, setVocabSearch] = useState('');
   const [modulesPage, setModulesPage] = useState(1);
+  const [expandedVocabRows, setExpandedVocabRows] = useState<Record<string, number>>({});
   const MODULES_PAGE_SIZE = 6;
+  const VOCAB_ROW_PAGE_SIZE = 25;
 
   useEffect(() => {
     setModulesPage(1);
@@ -2859,7 +2870,7 @@ export default function LanguageCourseTool({
                                   : skillLevel >= 1
                                   ? langColor
                                   : colors.outlineVariant,
-                              opacity: unlocked ? 1 : 0.65,
+                              opacity: 1,
                             },
                           ]}
                         >
@@ -3161,7 +3172,7 @@ export default function LanguageCourseTool({
                             </Text>
                           </Pressable>
                         </View>
-                        {sk.words.slice(0, 12).map((w, wIdx) => (
+                        {sk.words.slice(0, expandedVocabRows[sk.id] || VOCAB_ROW_PAGE_SIZE).map((w, wIdx) => (
                           <View
                             key={w.id || wIdx}
                             style={{
@@ -3180,6 +3191,21 @@ export default function LanguageCourseTool({
                             </Text>
                           </View>
                         ))}
+                        {sk.words.length > (expandedVocabRows[sk.id] || VOCAB_ROW_PAGE_SIZE) && (
+                          <Pressable
+                            onPress={() =>
+                              setExpandedVocabRows((prev) => ({
+                                ...prev,
+                                [sk.id]: (prev[sk.id] || VOCAB_ROW_PAGE_SIZE) + VOCAB_ROW_PAGE_SIZE,
+                              }))
+                            }
+                            style={{ paddingVertical: 6, alignItems: 'center' }}
+                          >
+                            <Text style={{ fontSize: 11.5, fontWeight: '700', color: langColor }}>
+                              Show more ({sk.words.length - (expandedVocabRows[sk.id] || VOCAB_ROW_PAGE_SIZE)} more words)
+                            </Text>
+                          </Pressable>
+                        )}
                       </View>
                     ))}
                     {filteredSkills.length > visibleSkills.length && (

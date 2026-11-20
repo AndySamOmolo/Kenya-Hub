@@ -90,28 +90,6 @@ function calculateTokens(amountPaid: number, tariffMode: "lifeline" | "ordinary"
   };
 }
 
-const faq = [
-  {
-    question: "How many KPLC units will I get for KES 1,000?",
-    answer: "Under the EPRA 2023–2026 tariff structure, your first KES 1,000 purchase of the month buys approximately 42 kWh (30 kWh in the Lifeline DC1 band at KES 12.14/kWh base rate plus 12 kWh in the Ordinary Domestic DC2 band at KES 16.50/kWh base rate) after Fuel Energy Cost, Forex Adjustment, Inflation Adjustment, EPRA/WRA/REP levies, and 16% VAT.",
-  },
-  {
-    question: "Is there a monthly KPLC fixed standing charge?",
-    answer: "No. EPRA abolished the old KES 150 monthly fixed standing charge for domestic prepaid customers under the 2023–2026 retail tariff review. Every shilling you pay goes toward energy units, pass-through adjustments, statutory levies, and 16% VAT.",
-  },
-  {
-    question: "What is the Domestic Lifeline (DC1) tariff?",
-    answer: "The Domestic Lifeline band (DC1, 0–30 kWh/month) is charged at a subsidized base energy rate of KES 12.14/kWh. Once your monthly purchases exceed 30 kWh, units from 31–100 kWh are billed at the Ordinary Domestic DC2 base rate of KES 16.50/kWh, and consumption above 100 kWh is billed at KES 19.07/kWh (DC3).",
-  },
-  {
-    question: "What levies and adjustments are added to each KPLC unit?",
-    answer: "In addition to the base energy rate, each kWh attracts Fuel Energy Cost Charge (FCC, ~KES 3.55/kWh), Foreign Exchange Rate Fluctuation Adjustment (FERFA, ~KES 1.15/kWh), Inflation Adjustment (IA, ~KES 0.85/kWh), 5% Rural Electrification Programme (REP) Levy (~KES 0.75/kWh), EPRA Regulatory Levy (KES 0.18/kWh), Water Resources Authority (WRA) Levy (KES 0.05/kWh), plus 16% VAT.",
-  },
-  {
-    question: "Why do I receive fewer units later in the same calendar month?",
-    answer: "KPLC tracks your cumulative kWh purchased within each calendar month. Once you exhaust your first 30 kWh Lifeline (DC1) allocation in a month, subsequent token purchases in that same month are billed in the higher DC2 (KES 16.50/kWh base) or DC3 (KES 19.07/kWh base) tariff bands until the 1st of the next month.",
-  },
-];
 
 export default function KPLCTokenCalculatorPage() {
   const [amount, setAmount] = useState<number>(1000);
@@ -126,7 +104,7 @@ export default function KPLCTokenCalculatorPage() {
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <ToolShell tool={tool}>
       <div className="space-y-6">
         {/* Input */}
         <div className="bg-bg-card border border-border rounded-xl p-6">
@@ -201,7 +179,7 @@ export default function KPLCTokenCalculatorPage() {
         </div>
 
         {/* Result */}
-        <div className="result-box">
+        <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
           <div className="flex items-center justify-between mb-4">
             <span className="text-sm text-text-secondary">Units You Will Receive</span>
             <span className="text-xs text-text-muted">

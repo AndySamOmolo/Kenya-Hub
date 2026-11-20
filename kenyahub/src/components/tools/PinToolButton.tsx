@@ -51,14 +51,24 @@ export default function PinToolButton({ toolSlug }: PinToolButtonProps) {
     }
   };
 
-  if (!mounted) return null;
+  if (!mounted) {
+    return (
+      <div
+        aria-hidden="true"
+        className="w-9 h-9 sm:w-[96px] sm:h-9 shrink-0 rounded-xl border border-border-light bg-bg-elevated/60 inline-flex items-center justify-center"
+      >
+        <Pin className="h-4 w-4 text-text-muted/50 shrink-0" />
+      </div>
+    );
+  }
 
   return (
     <button
       type="button"
       onClick={togglePin}
       aria-pressed={isPinned}
-      className={`group inline-flex items-center gap-1.5 rounded-xl border px-3 py-2 text-xs font-semibold transition-all duration-200 active:scale-95 cursor-pointer ${
+      aria-label={isPinned ? "Unpin tool from homepage" : "Pin tool to homepage"}
+      className={`group w-9 h-9 sm:w-auto sm:h-9 shrink-0 inline-flex items-center justify-center gap-1.5 rounded-xl border sm:px-3 text-xs font-semibold transition-all duration-200 active:scale-95 cursor-pointer ${
         justToggled ? "animate-pop-correct" : ""
       } ${
         isPinned

@@ -183,7 +183,7 @@ export default function KraCarImportCalculatorPage() {
                     value={customCrsp}
                     placeholder="0"
                     onChange={(e) => setCustomCrsp(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
-                    className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                    className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                     style={{ paddingRight: "2.5rem" }}
                   />
                   {customCrsp && (
@@ -209,7 +209,7 @@ export default function KraCarImportCalculatorPage() {
                     value={customCc}
                     placeholder="1500"
                     onChange={(e) => setCustomCc(e.target.value.replace(/[^0-9]/g, ""))}
-                    className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                    className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                     style={{ paddingRight: "2.5rem" }}
                   />
                   {customCc && (
@@ -268,7 +268,7 @@ export default function KraCarImportCalculatorPage() {
                   value={cifUsd}
                   placeholder="0"
                   onChange={(e) => setCifUsd(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
-                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                   style={{ paddingRight: "2.5rem" }}
                 />
                 {cifUsd && (
@@ -294,7 +294,7 @@ export default function KraCarImportCalculatorPage() {
                   value={usdRate}
                   placeholder="129.5"
                   onChange={(e) => setUsdRate(e.target.value.replace(/[^0-9.]/g, ""))}
-                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                   style={{ paddingRight: "2.5rem" }}
                 />
                 {usdRate && (
@@ -313,7 +313,7 @@ export default function KraCarImportCalculatorPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="bg-[var(--bg-card)] border border-[var(--gold)]/30 rounded-xl p-5">
+          <div className="bg-amber-500/[0.04] border border-amber-500/45 rounded-xl p-5">
             <p className="text-xs uppercase tracking-wider text-[var(--text-muted)] mb-1">
               Total KRA Port Taxes
             </p>
@@ -349,7 +349,7 @@ export default function KraCarImportCalculatorPage() {
         </div>
 
         <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl overflow-hidden">
-          <div className="px-5 py-3.5 border-b border-[var(--border)] flex items-center justify-between">
+          <div className="px-5 py-3.5 border-b border-[var(--border)] flex flex-wrap items-center justify-between gap-3">
             <h3 className="text-sm font-bold text-[var(--text-primary)] font-[family-name:var(--font-display)]">
               KRA Mombasa Port Duty & Landed Cost Breakdown
             </h3>
@@ -445,6 +445,18 @@ export default function KraCarImportCalculatorPage() {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Sticky Mobile Live-Result Pill (F-038) */}
+        <div
+          role="status"
+          aria-live="polite"
+          className="sticky bottom-3 z-30 sm:hidden rounded-full border border-amber-500/45 bg-bg-card/95 backdrop-blur-md px-4 py-2.5 shadow-lg flex items-center justify-between gap-3"
+        >
+          <span className="text-xs font-semibold text-text-secondary">Est. Landed Cost</span>
+          <span className="text-sm font-extrabold text-emerald-700 dark:text-emerald-400 tabular-nums whitespace-nowrap">
+            KES {formatKES(calc.totalLandedCost)}
+          </span>
         </div>
       </div>
     </ToolShell>

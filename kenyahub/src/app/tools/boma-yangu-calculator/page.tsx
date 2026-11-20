@@ -31,11 +31,18 @@ export default function BomaYanguCalculatorPage() {
 
   const activeTier = bomaData.tiers[selectedTierIndex] || bomaData.tiers[0];
 
+  // Override description locally to avoid stale 1.5% Affordable Housing Levy tax deduction copy (F-022)
+  const cleanTool = {
+    ...tool,
+    description:
+      "Calculate Boma Yangu Affordable Housing Programme (AHP) tenant-purchase monthly repayments, 10% deposit, and statutory 15% KRA Affordable Housing Relief (up to KES 9,000/month).",
+  };
+
   const calc = useMemo(() => {
     const salary = Math.max(0, Number(monthlySalary.replace(/,/g, "")) || 0);
     const cost = Math.max(0, Number(unitCost.replace(/,/g, "")) || 0);
     const years = Math.max(5, Math.min(activeTier.maxTermYears, Number(termYears) || 25));
-    const deposit = cost * 0.10;
+    const deposit = cost * 0.1;
     const loanPrincipal = Math.max(0, cost - deposit);
 
     const r = activeTier.interestRate / 12;
@@ -65,10 +72,9 @@ export default function BomaYanguCalculatorPage() {
   }, [monthlySalary, unitCost, termYears, activeTier]);
 
   return (
-    <ToolShell tool={tool}>
+    <ToolShell tool={cleanTool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-6">
             {bomaData.tiers.map((t, idx) => {
               const maxIncomeDisplay =
@@ -106,14 +112,18 @@ export default function BomaYanguCalculatorPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
             <div>
-              <label className="block text-xs font-semibold text-text-muted mb-1 uppercase">
+              <label
+                htmlFor="boma-monthly-salary"
+                className="block text-xs font-semibold text-text-muted mb-1 uppercase"
+              >
                 Monthly Gross Salary (KES)
               </label>
               <div className="relative">
                 <input
+                  id="boma-monthly-salary"
                   type="text"
                   inputMode="numeric"
-                  value={monthlySalary}
+                  value={monthlySalary ? Number(monthlySalary).toLocaleString("en-KE") : ""}
                   onChange={(e) => {
                     const raw = e.target.value.replace(/[^0-9]/g, "");
                     setMonthlySalary(raw);
@@ -122,8 +132,9 @@ export default function BomaYanguCalculatorPage() {
                       setSelectedTierIndex(tierIdx);
                     }
                   }}
-                  placeholder="0"
-                  className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border bg-bg-elevated text-base font-bold text-text-primary focus:border-gold outline-hidden"
+                  placeholder="e.g. 65,000"
+                  aria-describedby="boma-salary-band"
+                  className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-base font-bold text-text-primary focus:border-gold tabular-nums"
                   style={{ paddingRight: "2.75rem" }}
                 />
                 {monthlySalary && (
@@ -137,21 +148,28 @@ export default function BomaYanguCalculatorPage() {
                   </button>
                 )}
               </div>
-              <p className="text-[0.6875rem] text-gold mt-1">
+              <p id="boma-salary-band" className="text-[0.6875rem] text-gold mt-1">
                 {calc.incomeBandLabel}
               </p>
             </div>
+
             <div>
-              <label className="block text-xs font-semibold text-text-muted mb-1 uppercase">
+              <label
+                htmlFor="boma-unit-cost"
+                className="block text-xs font-semibold text-text-muted mb-1 uppercase"
+              >
                 Purchase Price (KES)
               </label>
               <div className="relative">
                 <input
+                  id="boma-unit-cost"
                   type="text"
-                  value={unitCost}
+                  inputMode="numeric"
+                  value={unitCost ? Number(unitCost).toLocaleString("en-KE") : ""}
                   onChange={(e) => setUnitCost(e.target.value.replace(/[^0-9]/g, ""))}
-                  placeholder="0"
-                  className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border bg-bg-elevated text-base font-bold text-text-primary focus:border-gold outline-hidden"
+                  placeholder="e.g. 2,400,000"
+                  aria-describedby="boma-unit-presets"
+                  className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-base font-bold text-text-primary focus:border-gold tabular-nums"
                   style={{ paddingRight: "2.75rem" }}
                 />
                 {unitCost && (
@@ -165,7 +183,7 @@ export default function BomaYanguCalculatorPage() {
                   </button>
                 )}
               </div>
-              <div className="flex flex-wrap gap-1.5 mt-2">
+              <div id="boma-unit-presets" className="flex flex-wrap gap-1.5 mt-2">
                 {activeTier.sampleUnits.map((u) => (
                   <button
                     key={u.type}
@@ -183,17 +201,23 @@ export default function BomaYanguCalculatorPage() {
                 ))}
               </div>
             </div>
+
             <div>
-              <label className="block text-xs font-semibold text-text-muted mb-1 uppercase">
+              <label
+                htmlFor="boma-term-years"
+                className="block text-xs font-semibold text-text-muted mb-1 uppercase"
+              >
                 Repayment Period (Years: 5–{activeTier.maxTermYears})
               </label>
               <div className="relative">
                 <input
+                  id="boma-term-years"
                   type="text"
+                  inputMode="numeric"
                   value={termYears}
                   onChange={(e) => setTermYears(e.target.value.replace(/[^0-9]/g, ""))}
                   placeholder="25"
-                  className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border bg-bg-elevated text-base font-bold text-text-primary focus:border-gold outline-hidden"
+                  className="w-full pl-4 pr-11 py-2.5 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-base font-bold text-text-primary focus:border-gold tabular-nums"
                   style={{ paddingRight: "2.75rem" }}
                 />
                 {termYears && (
@@ -210,27 +234,34 @@ export default function BomaYanguCalculatorPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3"
+          >
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Gross Monthly TPS</span>
-              <p className="text-xl font-extrabold text-text-primary mt-1">
-                KES {Math.round(calc.monthlyRepayment).toLocaleString()}
+              <p className="text-xl font-extrabold text-text-primary mt-1 tabular-nums whitespace-nowrap">
+                KES {Math.round(calc.monthlyRepayment).toLocaleString("en-KE")}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1">Before tax relief deduction</p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">KRA Housing Tax Relief</span>
-              <p className="text-xl font-extrabold text-kenya-green-light mt-1">
-                − KES {Math.round(calc.taxReliefMonthly).toLocaleString()}
+              <p className="text-xl font-extrabold text-kenya-green-light mt-1 tabular-nums whitespace-nowrap">
+                −KES {Math.round(calc.taxReliefMonthly).toLocaleString("en-KE")}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1">15% deduction from monthly PAYE</p>
             </div>
-            <div className="rounded-xl border border-gold/40 bg-gold/10 p-4">
+            <div className="rounded-xl border border-amber-500/45 bg-amber-500/[0.04] p-4">
               <span className="text-[0.6875rem] font-bold text-gold uppercase">Net Monthly Effective Cost</span>
-              <p className="text-xl font-extrabold text-gold mt-1">
-                KES {Math.round(calc.netMonthlyCost).toLocaleString()}
+              <p className="text-xl font-extrabold text-gold mt-1 tabular-nums whitespace-nowrap">
+                KES {Math.round(calc.netMonthlyCost).toLocaleString("en-KE")}
               </p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">Deposit required: KES {Math.round(calc.deposit).toLocaleString()}</p>
+              <p className="text-[0.6875rem] text-text-secondary mt-1 tabular-nums">
+                Deposit required: KES {Math.round(calc.deposit).toLocaleString("en-KE")}
+              </p>
             </div>
           </div>
         </div>
@@ -241,7 +272,16 @@ export default function BomaYanguCalculatorPage() {
             Statutory Basis: {housingLevyData.legalBasis} (Effective {housingLevyData.effectiveDate})
           </h2>
           <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
-            {housingLevyData.taxReliefDescription}
+            {housingLevyData.taxReliefDescription} Register or check unit allocations at{" "}
+            <a
+              href="https://bomayangu.go.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold underline underline-offset-2 hover:text-gold-light font-medium"
+            >
+              bomayangu.go.ke ↗
+            </a>
+            .
           </p>
         </div>
       </div>

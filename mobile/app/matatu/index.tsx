@@ -119,15 +119,30 @@ const RouteCard = React.memo(function RouteCard({
                 style={[
                   styles.fareBadge,
                   {
+                    backgroundColor: theme.secondaryContainer,
+                    borderColor: `${theme.kenyaGreenLight}55`,
+                  },
+                ]}
+              >
+                <Text
+                  style={[styles.fareText, { color: theme.onSecondaryContainer }]}
+                >
+                  Off-Peak KES {route.fareMin}
+                </Text>
+              </View>
+              <View
+                style={[
+                  styles.fareBadge,
+                  {
                     backgroundColor: theme.primaryContainer,
-                    borderColor: `${theme.gold}45`,
+                    borderColor: `${theme.gold}55`,
                   },
                 ]}
               >
                 <Text
                   style={[styles.fareText, { color: theme.onPrimaryContainer }]}
                 >
-                  KES {route.fareMin}–{route.fareMax}
+                  Peak/Rain KES {route.fareMax}
                 </Text>
               </View>
               {route.operatingHours ? (
@@ -180,6 +195,9 @@ export default function MatatuScreen() {
   const [saccoFilter, setSaccoFilter] = useState<string>("all");
   const scrollRef = useRef<any>(null);
   const [sortBy, setSortBy] = useState<"route" | "stages" | "name">("route");
+  const [fromStage, setFromStage] = useState("");
+  const [toStage, setToStage] = useState("");
+  const [journeyQuery, setJourneyQuery] = useState<{ from: string; to: string } | null>(null);
 
   useEffect(() => {
     if (params.town) {
@@ -239,6 +257,19 @@ export default function MatatuScreen() {
 
       if (saccoFilter !== "all" && r.saccoName !== saccoFilter) return false;
 
+      if (journeyQuery && (journeyQuery.from || journeyQuery.to)) {
+        const hay = [
+          r.name,
+          r.terminusA || "",
+          r.terminusB || "",
+          ...(r.stages || []).map((s: any) => (typeof s === "string" ? s : s?.name || "")),
+        ]
+          .join(" ")
+          .toLowerCase();
+        if (journeyQuery.from && !hay.includes(journeyQuery.from.toLowerCase())) return false;
+        if (journeyQuery.to && !hay.includes(journeyQuery.to.toLowerCase())) return false;
+      }
+
       if (!q) return true;
       return (
         r.name.toLowerCase().includes(q) ||
@@ -264,7 +295,7 @@ export default function MatatuScreen() {
         sensitivity: "base",
       });
     });
-  }, [allRoutes, search, selectedTown, saccoFilter, sortBy]);
+  }, [allRoutes, search, selectedTown, saccoFilter, sortBy, journeyQuery]);
 
   return (
     <SafeAreaView
@@ -465,6 +496,106 @@ export default function MatatuScreen() {
         keyboardShouldPersistTaps="handled"
         ListHeaderComponent={
           <>
+            {/* Interactive Journey Planner with Explicit Find Route Button (F-039) */}
+            <View
+              style={{
+                backgroundColor: theme.surfaceContainer,
+                borderColor: theme.outlineVariant,
+                borderWidth: 1,
+                borderRadius: 16,
+                padding: 12,
+                marginBottom: 12,
+                gap: 8,
+              }}
+            >
+              <Text style={{ fontSize: 11.5, fontFamily: "Outfit_800ExtraBold", color: theme.gold, letterSpacing: 0.5 }}>
+                JOURNEY PLANNER
+              </Text>
+              <View style={{ flexDirection: "row", gap: 8 }}>
+                <TextInput
+                  value={fromStage}
+                  onChangeText={setFromStage}
+                  placeholder="From stage (e.g. CBD)"
+                  placeholderTextColor={theme.textMuted}
+                  style={{
+                    flex: 1,
+                    backgroundColor: theme.surfaceContainerHigh,
+                    borderWidth: 1,
+                    borderColor: theme.outlineVariant,
+                    borderRadius: 10,
+                    paddingHorizontal: 10,
+                    height: 38,
+                    fontSize: 12.5,
+                    color: theme.textPrimary,
+                  }}
+                />
+                <TextInput
+                  value={toStage}
+                  onChangeText={setToStage}
+                  placeholder="To stage (e.g. Westlands)"
+                  placeholderTextColor={theme.textMuted}
+                  style={{
+                    flex: 1,
+                    backgroundColor: theme.surfaceContainerHigh,
+                    borderWidth: 1,
+                    borderColor: theme.outlineVariant,
+                    borderRadius: 10,
+                    paddingHorizontal: 10,
+                    height: 38,
+                    fontSize: 12.5,
+                    color: theme.textPrimary,
+                  }}
+                />
+              </View>
+              <View style={{ flexDirection: "row", gap: 8 }}>
+                <Pressable
+                  onPress={() => {
+                    triggerHaptic(8);
+                    setJourneyQuery({ from: fromStage.trim(), to: toStage.trim() });
+                  }}
+                  accessibilityRole="button"
+                  accessibilityLabel="Find Route"
+                  style={pressableStyle({
+                    flex: 1,
+                    backgroundColor: theme.gold,
+                    paddingVertical: 9,
+                    borderRadius: 10,
+                    alignItems: "center",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    gap: 6,
+                  })}
+                >
+                  <Ionicons name="navigate" size={14} color={theme.kenyaBlack} />
+                  <Text style={{ fontSize: 12.5, fontFamily: "Outfit_800ExtraBold", color: theme.kenyaBlack }}>
+                    Find Route
+                  </Text>
+                </Pressable>
+                {journeyQuery && (
+                  <Pressable
+                    onPress={() => {
+                      setFromStage("");
+                      setToStage("");
+                      setJourneyQuery(null);
+                    }}
+                    style={pressableStyle({
+                      paddingHorizontal: 12,
+                      paddingVertical: 9,
+                      borderRadius: 10,
+                      borderWidth: 1,
+                      borderColor: theme.outlineVariant,
+                      backgroundColor: theme.surfaceContainerHigh,
+                      justifyContent: "center",
+                    })}
+                  >
+                    <Text style={{ fontSize: 12, fontFamily: "Outfit_700Bold", color: theme.textSecondary }}>
+                      Clear
+                    </Text>
+                  </Pressable>
+                )}
+              </View>
+            </View>
+
             {/* SACCO Filter Pills */}
             {availableSaccos.length > 1 && (
               <ExpandablePillRow

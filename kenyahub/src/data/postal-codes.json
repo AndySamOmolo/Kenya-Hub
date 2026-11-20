@@ -303,6 +303,12 @@
       "region": "Central"
     },
     {
+      "code": "10101",
+      "town": "Mukurweini",
+      "county": "Nyeri",
+      "region": "Central"
+    },
+    {
       "code": "10103",
       "town": "Othaya",
       "county": "Nyeri",
@@ -418,7 +424,37 @@
     },
     {
       "code": "40100",
-      "town": "Kisumu",
+      "town": "Kisumu GPO",
+      "county": "Kisumu",
+      "region": "Nyanza"
+    },
+    {
+      "code": "40101",
+      "town": "Ahero",
+      "county": "Kisumu",
+      "region": "Nyanza"
+    },
+    {
+      "code": "40103",
+      "town": "Kombewa",
+      "county": "Kisumu",
+      "region": "Nyanza"
+    },
+    {
+      "code": "40105",
+      "town": "Maseno",
+      "county": "Kisumu",
+      "region": "Nyanza"
+    },
+    {
+      "code": "40107",
+      "town": "Muhoroni",
+      "county": "Kisumu",
+      "region": "Nyanza"
+    },
+    {
+      "code": "40123",
+      "town": "Mega City (Kisumu)",
       "county": "Kisumu",
       "region": "Nyanza"
     },
@@ -520,7 +556,25 @@
     },
     {
       "code": "80100",
-      "town": "Mombasa",
+      "town": "Mombasa GPO",
+      "county": "Mombasa",
+      "region": "Coast"
+    },
+    {
+      "code": "80101",
+      "town": "Bamburi",
+      "county": "Mombasa",
+      "region": "Coast"
+    },
+    {
+      "code": "80102",
+      "town": "Changamwe",
+      "county": "Mombasa",
+      "region": "Coast"
+    },
+    {
+      "code": "80104",
+      "town": "Kisauni",
       "county": "Mombasa",
       "region": "Coast"
     },
@@ -531,9 +585,27 @@
       "region": "Coast"
     },
     {
+      "code": "80108",
+      "town": "Kilindini",
+      "county": "Mombasa",
+      "region": "Coast"
+    },
+    {
       "code": "80109",
       "town": "Ukunda",
       "county": "Kwale",
+      "region": "Coast"
+    },
+    {
+      "code": "80110",
+      "town": "Likoni",
+      "county": "Mombasa",
+      "region": "Coast"
+    },
+    {
+      "code": "80118",
+      "town": "Nyali",
+      "county": "Mombasa",
       "region": "Coast"
     },
     {
@@ -613,12 +685,6 @@
       "town": "Namanga",
       "county": "Kajiado",
       "region": "Rift Valley"
-    },
-    {
-      "code": "10101",
-      "town": "Mukurweini",
-      "county": "Nyeri",
-      "region": "Central"
     }
   ],
   "notes": [

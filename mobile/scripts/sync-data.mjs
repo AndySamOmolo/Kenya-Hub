@@ -1,3 +1,4 @@
+import crypto from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -16,6 +17,10 @@ function ensureDir(dir) {
   if (!existsSync(dir)) {
     mkdirSync(dir, { recursive: true });
   }
+}
+
+function sha256(buf) {
+  return crypto.createHash("sha256").update(buf).digest("hex");
 }
 
 function copyDirFiltered(srcDir, destDir) {
@@ -71,11 +76,24 @@ if (existsSync(registryPath)) {
   );
 }
 
-
 // Sync verified audio manifest metadata from kenyahub/public/audio-manifest.json
 const audioManifestSrc = resolve(root, "kenyahub/public/audio-manifest.json");
 if (existsSync(audioManifestSrc)) {
   writeFileSync(resolve(destination, "data/audio-manifest.json"), readFileSync(audioManifestSrc));
 }
 
-console.log("Synchronized KenyaHub modular tool registry, 23 language courses, proverbs, dictionaries, and datasets to mobile/src/shared.");
+// Verify SHA-256 parity across all top-level statutory JSON datasets
+const webDataDir = resolve(source, "data");
+const mobDataDir = resolve(destination, "data");
+const jsonFiles = readdirSync(webDataDir).filter((f) => f.endsWith(".json"));
+let verifiedCount = 0;
+for (const fname of jsonFiles) {
+  const wHash = sha256(readFileSync(join(webDataDir, fname)));
+  const mHash = sha256(readFileSync(join(mobDataDir, fname)));
+  if (wHash !== mHash) {
+    throw new Error(`SHA-256 parity mismatch after sync for ${fname}`);
+  }
+  verifiedCount++;
+}
+
+console.log(`Synchronized KenyaHub modular tool registry, 23 language courses, proverbs, dictionaries, and ${verifiedCount}/${jsonFiles.length} SHA-256 verified JSON datasets to mobile/src/shared.`);

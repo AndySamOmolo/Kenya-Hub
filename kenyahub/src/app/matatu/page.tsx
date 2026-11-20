@@ -5,7 +5,7 @@ import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { ArrowRight, Navigation, X } from "lucide-react";
+import { ArrowRight, Navigation, Search, X } from "lucide-react";
 
 interface RouteItem {
   routeNumber: string;
@@ -45,6 +45,7 @@ export default function MatatuPage() {
   const [search, setSearch] = useState("");
   const [fromStage, setFromStage] = useState("");
   const [toStage, setToStage] = useState("");
+  const [plannerTriggered, setPlannerTriggered] = useState(false);
 
   // Flatten all routes from all active towns
   const allRoutes = useMemo(() => {
@@ -208,7 +209,7 @@ export default function MatatuPage() {
             </div>
             <div className="bg-bg-card/60 backdrop-blur border border-border rounded-xl px-4 py-2.5">
               <span className="text-lg font-bold text-gold">{allRoutes.length}</span>
-              <span className="text-xs text-text-muted ml-1.5">Verified Routes</span>
+              <span className="text-xs text-text-muted ml-1.5">Mapped Routes</span>
             </div>
             <div className="bg-bg-card/60 backdrop-blur border border-border rounded-xl px-4 py-2.5">
               <span className="text-lg font-bold text-gold">{totalStages}</span>
@@ -284,7 +285,13 @@ export default function MatatuPage() {
           )}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            setPlannerTriggered(true);
+          }}
+          className="grid grid-cols-1 sm:grid-cols-[1fr_1fr_auto] gap-3 items-end"
+        >
           <div>
             <label className="block text-xs font-semibold text-text-secondary mb-1">
               From Stage / Estate
@@ -335,7 +342,20 @@ export default function MatatuPage() {
               )}
             </div>
           </div>
-        </div>
+          <button
+            type="submit"
+            className="h-[42px] px-5 rounded-xl bg-gold text-kenya-black font-bold text-xs sm:text-sm hover:bg-gold-light transition-colors inline-flex items-center justify-center gap-1.5 cursor-pointer shrink-0"
+          >
+            <Search className="w-4 h-4" />
+            Find Route
+          </button>
+        </form>
+
+        {plannerTriggered && (!fromStage.trim() || !toStage.trim()) && (
+          <p className="text-xs text-amber-500">
+            Enter both a starting stage and destination above, then tap Find Route.
+          </p>
+        )}
 
         {fromStage.trim() && toStage.trim() && (
           <div className="pt-2 space-y-3">
@@ -358,9 +378,14 @@ export default function MatatuPage() {
                         <p className="text-xs text-text-secondary mt-0.5">
                           {r.terminusA} ↔ {r.terminusB} • {r.saccoName}
                         </p>
-                        <p className="text-xs font-semibold text-kenya-green-light mt-1">
-                          Est. Fare: KES {r.fareMin}–{r.fareMax}
-                        </p>
+                        <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
+                          <span className="px-2 py-0.5 rounded-full text-[0.65rem] font-semibold bg-kenya-green/15 text-kenya-green-light border border-kenya-green/25">
+                            Off-Peak: KES {r.fareMin}
+                          </span>
+                          <span className="px-2 py-0.5 rounded-full text-[0.65rem] font-semibold bg-gold/15 text-gold border border-gold/25">
+                            Peak / Rain: KES {r.fareMax}
+                          </span>
+                        </div>
                       </div>
                       <ArrowRight className="w-4 h-4 text-gold shrink-0" />
                     </Link>
@@ -427,13 +452,13 @@ export default function MatatuPage() {
       </div>
 
       {/* Featured routes preview */}
-      <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">Featured Verified Routes Across Kenya</h2>
+      <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">Featured Matatu Routes Across Kenya</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {featuredRoutes.map((route) => (
           <Link key={`${route.townSlug}-${route.slug}`} href={`/matatu/${route.townSlug}/${route.slug}/`} className="bg-bg-card border border-border rounded-xl p-4 group hover:border-gold/50 transition-all">
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-xs font-bold text-gold">{route.routeNumber}</span>
+              <div className="min-w-[2.5rem] px-2 h-10 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-xs font-bold text-gold whitespace-nowrap">{route.routeNumber}</span>
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1.5">
@@ -441,9 +466,13 @@ export default function MatatuPage() {
                   <span className="micro-badge text-[0.55rem] bg-bg-elevated border border-border px-1.5 py-0.5 rounded text-text-muted flex-shrink-0">{route.townName}</span>
                 </div>
                 <p className="text-[0.65rem] text-text-muted mt-0.5">{route.stages.length} stages · {route.saccoName}</p>
-                <div className="flex items-center gap-3 mt-1.5">
-                  <span className="text-[0.6rem] text-kenya-green-light font-bold">KES {route.fareMin}–{route.fareMax}</span>
-                  <span className="text-[0.6rem] text-text-muted">{route.operatingHours}</span>
+                <div className="flex flex-wrap items-center gap-1.5 mt-2">
+                  <span className="px-2 py-0.5 rounded-full text-[0.6rem] font-semibold bg-kenya-green/15 text-kenya-green-light">
+                    Off-Peak KES {route.fareMin}
+                  </span>
+                  <span className="px-2 py-0.5 rounded-full text-[0.6rem] font-semibold bg-gold/15 text-gold">
+                    Peak/Rain KES {route.fareMax}
+                  </span>
                 </div>
               </div>
             </div>

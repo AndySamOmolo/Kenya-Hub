@@ -5,7 +5,7 @@ import CookiePreferencesButton from "@/components/CookiePreferencesButton";
 export const metadata: Metadata = {
   title: "Privacy Policy — Data Protection & Cookies",
   description:
-    "KenyaHub Privacy Policy — local browser calculations, client storage keys, Google Analytics 4 (GA4), Google AdSense cookies, and Consent Mode v2.",
+    "KenyaHub Privacy Policy — Kenya Data Protection Act 2019 (s.26 & s.29) disclosures, local browser calculations, client storage keys, Google Analytics 4 (GA4), Google AdSense cookies, and Consent Mode v2.",
   alternates: {
     canonical: "https://kenyahub.me/privacy/",
     languages: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Privacy Policy | KenyaHub",
     description:
-      "KenyaHub Privacy Policy — local browser calculations, client storage disclosures, Google Analytics 4 (GA4), Google AdSense cookies, and Consent Mode v2.",
+      "KenyaHub Privacy Policy — Kenya Data Protection Act 2019 disclosures, local browser calculations, Google Analytics 4 (GA4), and Google AdSense cookies.",
     type: "website",
     locale: "en_KE",
     siteName: "KenyaHub",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Privacy Policy | KenyaHub",
     description:
-      "KenyaHub Privacy Policy — local browser calculations, client storage disclosures, Google Analytics 4 (GA4), Google AdSense cookies, and Consent Mode v2.",
+      "KenyaHub Privacy Policy — Kenya Data Protection Act 2019 disclosures, local browser calculations, and cookie consent controls.",
     images: ["/og-image.png"],
   },
 };
@@ -53,26 +53,48 @@ export default function PrivacyPage() {
         <Link href="/" className="hover:text-gold transition-colors">
           Home
         </Link>
-        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
         <span className="text-text-secondary">Privacy Policy</span>
       </nav>
 
-      <h1 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-8 tracking-tight">
+      <h1 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight">
         Privacy Policy
       </h1>
+      <p className="text-xs text-text-muted mt-1.5 mb-8">
+        Last Revision: November 2026 · Compliant with the Kenya Data Protection Act (No. 24 of 2019), GDPR &amp; Google Consent Mode v2
+      </p>
 
       <div className="space-y-8 text-sm text-text-secondary leading-relaxed">
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            1. Overview &amp; Commitment to Privacy
+            1. Overview &amp; Data Controller Identity (Kenya DPA 2019, Section 29)
           </h2>
           <p>
-            KenyaHub (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to protecting your online privacy. This Privacy Policy outlines how information is collected, used, and safeguarded when you visit our website at <strong className="text-text-primary">kenyahub.me</strong>.
+            KenyaHub (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to protecting your online privacy. This Privacy Policy explains how information is collected, processed, and safeguarded when you visit <strong className="text-text-primary">kenyahub.me</strong> or <strong className="text-text-primary">kenyahub.co.ke</strong>.
           </p>
+          <div className="mt-3 p-3.5 rounded-xl bg-bg-card border border-border text-xs space-y-1.5">
+            <p className="font-semibold text-text-primary">Data Controller Details (Section 29 Notice):</p>
+            <p className="text-text-secondary">
+              <strong className="text-text-primary">Controller:</strong> KenyaHub Editorial &amp; Engineering Desk (Independent Digital Public Utility Platform)
+            </p>
+            <p className="text-text-secondary">
+              <strong className="text-text-primary">Location:</strong> Nairobi, Republic of Kenya
+            </p>
+            <p className="text-text-secondary">
+              <strong className="text-text-primary">Data Protection Contact:</strong>{" "}
+              <a href="mailto:contact@kenyahub.me" className="text-gold hover:underline font-semibold">
+                contact@kenyahub.me
+              </a>{" "}
+              (or via our <Link href="/contact/" className="text-gold hover:underline font-medium">Contact Page</Link>)
+            </p>
+            <p className="text-text-secondary">
+              <strong className="text-text-primary">Lawful Basis &amp; Purpose:</strong> Essential browser storage operates under legitimate interest to deliver requested local tools; optional analytics (GA4) and advertising (AdSense) operate strictly on your prior explicit opt-in consent.
+            </p>
+          </div>
           <p className="mt-3">
-            KenyaHub does <strong className="text-text-primary">not</strong> require user registration, accounts, or personal contact details to access any of our tools, calculators, guides, or public datasets. We provide open, barrier-free access to digital utilities for all Kenyans while respecting personal privacy.
+            KenyaHub does <strong className="text-text-primary">not</strong> require user registration, accounts, or personal contact details to access any of our tools, calculators, guides, or public datasets.
           </p>
         </section>
 
@@ -90,31 +112,31 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            3. Google Analytics 4 (GA4)
+            3. Google Analytics 4 (GA4) — Strict Opt-In Loading
           </h2>
           <p>
-            We use <strong className="text-text-primary">Google Analytics 4</strong> (Measurement ID: <code className="px-1.5 py-0.5 rounded bg-bg-elevated text-gold text-xs font-mono">G-Y069879V7Y</code>), a web analytics service provided by Google LLC (&quot;Google&quot;), to understand how visitors interact with our website and discover which tools are most useful.
+            Only after you explicitly grant analytics consent on our production domains (<strong className="text-text-primary">kenyahub.me</strong> / <strong className="text-text-primary">kenyahub.co.ke</strong>), we load <strong className="text-text-primary">Google Analytics 4</strong> (Measurement ID: <code className="px-1.5 py-0.5 rounded bg-bg-elevated text-gold text-xs font-mono">G-Y069879V7Y</code>), provided by Google LLC, to understand aggregated tool usage.
           </p>
 
           <div className="mt-4 space-y-3">
             <div className="p-3.5 rounded-xl bg-bg-card border border-border">
-              <h3 className="text-xs font-bold text-text-primary mb-1">What Information Is Collected:</h3>
+              <h3 className="text-xs font-bold text-text-primary mb-1">What Information Is Collected (Post-Consent Only):</h3>
               <p className="text-xs text-text-muted">
                 Google Analytics gathers aggregated, non-personally identifiable usage data, including pages viewed, session duration, device type, operating system, browser version, general geographic region (country and city level), and referral sources. No personally identifiable information (PII) such as your name, email, or telephone number is ever collected.
               </p>
             </div>
 
             <div className="p-3.5 rounded-xl bg-bg-card border border-border">
-              <h3 className="text-xs font-bold text-text-primary mb-1">IP Anonymization &amp; URL Passthrough Disabled:</h3>
+              <h3 className="text-xs font-bold text-text-primary mb-1">No Pre-Consent Network Requests:</h3>
               <p className="text-xs text-text-muted">
-                In Google Analytics 4, IP addresses are automatically masked and anonymized by default, and <code className="font-mono text-gold">url_passthrough</code> is set to <code className="font-mono text-gold">false</code> so ad-click identifiers are never appended to internal URLs when consent is denied.
+                No <code className="font-mono text-gold">gtag.js</code> script is preloaded or executed before you accept analytics cookies. In addition, IP addresses are anonymized by default and <code className="font-mono text-gold">url_passthrough</code> is set to <code className="font-mono text-gold">false</code>.
               </p>
             </div>
 
             <div className="p-3.5 rounded-xl bg-bg-card border border-border">
               <h3 className="text-xs font-bold text-text-primary mb-1">Google Consent Mode v2 &amp; Cookie Expiration:</h3>
               <p className="text-xs text-text-muted">
-                KenyaHub implements Google Consent Mode v2. By default, analytics storage (<code className="font-mono text-gold">analytics_storage</code>) and advertising storage (<code className="font-mono text-gold">ad_storage</code>, <code className="font-mono text-gold">ad_user_data</code>, <code className="font-mono text-gold">ad_personalization</code>) are set to <strong className="text-text-secondary">denied</strong> until you make a consent choice. If you revoke analytics or advertising consent at any time, KenyaHub immediately expires existing Google cookies (<code className="font-mono text-gold">_ga</code>, <code className="font-mono text-gold">_gid</code>, <code className="font-mono text-gold">_gat</code>, <code className="font-mono text-gold">__gads</code>, <code className="font-mono text-gold">__gpi</code>).
+                KenyaHub implements Google Consent Mode v2. By default, analytics storage (<code className="font-mono text-gold">analytics_storage</code>) and advertising storage (<code className="font-mono text-gold">ad_storage</code>, <code className="font-mono text-gold">ad_user_data</code>, <code className="font-mono text-gold">ad_personalization</code>) remain <strong className="text-amber-800 dark:text-amber-400">denied</strong> until you make an explicit consent choice. If you revoke analytics or advertising consent at any time, KenyaHub immediately expires existing Google cookies (<code className="font-mono text-gold">_ga</code>, <code className="font-mono text-gold">_gid</code>, <code className="font-mono text-gold">_gat</code>, <code className="font-mono text-gold">__gads</code>, <code className="font-mono text-gold">__gpi</code>).
               </p>
             </div>
           </div>
@@ -137,7 +159,7 @@ export default function PrivacyPage() {
             4. Google AdSense, DoubleClick DART Cookies &amp; Third-Party Advertising
           </h2>
           <p>
-            KenyaHub uses <strong className="text-text-primary">Google AdSense</strong> (Publisher ID: <code className="px-1.5 py-0.5 rounded bg-bg-elevated text-gold text-xs font-mono">ca-pub-5895990873842803</code>) to display advertisements on content pages when you visit our website. Revenue from these advertisements supports our hosting, statutory research, and ongoing maintenance of free public tools.
+            KenyaHub uses <strong className="text-text-primary">Google AdSense</strong> (Publisher ID: <code className="px-1.5 py-0.5 rounded bg-bg-elevated text-gold text-xs font-mono">ca-pub-5895990873842803</code>) to display advertisements on content pages when advertising consent is granted. Revenue from these advertisements supports our hosting, statutory research, and ongoing maintenance of free public tools.
           </p>
           <ul className="mt-3 space-y-2.5 ml-4 list-disc text-text-muted">
             <li>
@@ -234,15 +256,40 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            6. Regulatory Compliance &amp; Data Protection Rights
+            6. Your Data-Subject Rights (Kenya DPA 2019, Section 26) &amp; ODPC Complaints
           </h2>
           <p>
-            KenyaHub adheres to applicable national and international data protection frameworks:
+            Under <strong className="text-text-primary">Section 26 of the Kenya Data Protection Act (No. 24 of 2019)</strong>, you have the following rights regarding your personal data:
           </p>
-          <ul className="mt-2 space-y-2 ml-4 list-disc text-text-muted">
+          <ul className="mt-2.5 space-y-2 ml-4 list-disc text-text-muted">
             <li>
-              <strong className="text-text-secondary">Kenya Data Protection Act (No. 24 of 2019):</strong> We uphold all data protection principles established by the Office of the Data Protection Commissioner (ODPC) of Kenya, including data minimization, purpose limitation, and privacy by design.
+              <strong className="text-text-secondary">Right to be Informed (s.26(a)):</strong> To be informed of the use to which your personal data is put, including third-party recipients and storage mechanisms.
             </li>
+            <li>
+              <strong className="text-text-secondary">Right of Access (s.26(b)):</strong> To access any personal data in our custody (for example, emails you voluntarily sent to our editorial desk).
+            </li>
+            <li>
+              <strong className="text-text-secondary">Right to Object (s.26(c)):</strong> To object to the processing of all or part of your personal data, including withdrawing analytics or advertising cookie consent at any time via the Cookie Preferences control above.
+            </li>
+            <li>
+              <strong className="text-text-secondary">Right to Correction (s.26(d)):</strong> To request correction of false or misleading personal data held about you.
+            </li>
+            <li>
+              <strong className="text-text-secondary">Right to Deletion (s.26(e)):</strong> To request deletion of false, misleading, or unnecessary personal data (or clear local browser storage directly on your device).
+            </li>
+          </ul>
+          <p className="mt-3">
+            <strong className="text-text-primary">Right to Lodge a Complaint with the ODPC:</strong> If you believe your data protection rights under the Kenya Data Protection Act (2019) have been infringed, you have the right to lodge a formal complaint with the{" "}
+            <a
+              href="https://www.odpc.go.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline font-semibold"
+            >
+              Office of the Data Protection Commissioner (odpc.go.ke)
+            </a>.
+          </p>
+          <ul className="mt-3 space-y-2 ml-4 list-disc text-text-muted">
             <li>
               <strong className="text-text-secondary">European Economic Area &amp; UK (GDPR &amp; Google EU User Consent Policy):</strong> Visitors have explicit rights regarding prior informed consent for cookies and transparent control over analytics and ad personalization.
             </li>
@@ -266,7 +313,7 @@ export default function PrivacyPage() {
             8. Contact Our Privacy &amp; Editorial Desk
           </h2>
           <p>
-            If you have questions, data requests, or concerns regarding this Privacy Policy, please contact us at:{" "}
+            To exercise any Section 26 data-subject right or raise a privacy question, email us at{" "}
             <a href="mailto:contact@kenyahub.me" className="text-gold hover:underline font-semibold">
               contact@kenyahub.me
             </a>{" "}
@@ -275,7 +322,7 @@ export default function PrivacyPage() {
         </section>
 
         <p className="text-xs text-text-muted pt-4 border-t border-border">
-          Last Revision: November 2026 · Compliant with the Kenya Data Protection Act (2019), Google AdSense Programme Policies, Google EU User Consent Policy &amp; Google Consent Mode v2
+          Last Revision: November 2026 · Compliant with the Kenya Data Protection Act (No. 24 of 2019), Google AdSense Programme Policies, Google EU User Consent Policy &amp; Google Consent Mode v2
         </p>
       </div>
     </div>

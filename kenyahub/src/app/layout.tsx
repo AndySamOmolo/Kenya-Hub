@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/nav/Footer";
@@ -115,48 +114,18 @@ const themeScript = `
 (function(){
   try {
     var t = localStorage.getItem('kh-theme');
-    if (t === 'light' || t === 'dark') {
-      document.documentElement.setAttribute('data-theme', t);
-    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-      document.documentElement.setAttribute('data-theme', 'light');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
+    var resolved = (t === 'light' || t === 'dark')
+      ? t
+      : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    var root = document.documentElement;
+    root.setAttribute('data-theme', resolved);
+    root.classList.toggle('dark', resolved === 'dark');
+    root.classList.toggle('light', resolved === 'light');
   } catch(e) {
     document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.classList.add('dark');
   }
 })();
-`;
-
-const consentModeScript = `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {
-  'ad_storage': 'denied',
-  'ad_user_data': 'denied',
-  'ad_personalization': 'denied',
-  'analytics_storage': 'denied',
-  'wait_for_update': 500
-});
-gtag('set', 'ads_data_redaction', true);
-gtag('set', 'url_passthrough', false);
-try {
-  var c = localStorage.getItem('kh-cookie-consent');
-  var p = null;
-  try { p = JSON.parse(localStorage.getItem('kh-cookie-preferences') || 'null'); } catch(e) {}
-  if (p || c === 'accepted' || c === 'declined') {
-    var analyticsGranted = p ? p.analytics === true : c === 'accepted';
-    var advertisingGranted = p ? p.advertising === true : c === 'accepted';
-    gtag('consent', 'update', {
-      'ad_storage': advertisingGranted ? 'granted' : 'denied',
-      'ad_user_data': advertisingGranted ? 'granted' : 'denied',
-      'ad_personalization': advertisingGranted ? 'granted' : 'denied',
-      'analytics_storage': analyticsGranted ? 'granted' : 'denied'
-    });
-  }
-} catch(e) {}
-gtag('js', new Date());
-gtag('config', 'G-Y069879V7Y');
 `;
 
 export default function RootLayout({
@@ -171,19 +140,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head suppressHydrationWarning>
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: consentModeScript }}
-        />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-Y069879V7Y"
-          strategy="afterInteractive"
-        />
         <meta name="google-adsense-account" content="ca-pub-5895990873842803" />
       </head>
       <body className="min-h-screen flex flex-col">

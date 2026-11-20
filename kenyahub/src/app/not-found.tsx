@@ -32,36 +32,45 @@ export default function NotFound() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-xl mx-auto">
-        <Link
-          href="/tools/"
-          className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
-        >
-          <p className="text-sm font-bold text-gold flex items-center gap-1.5"><DynamicIcon emoji="🧰" className="w-4 h-4 shrink-0" /> Browse All {TOOLS.length} Tools →</p>
-          <p className="text-xs text-text-muted mt-1">PAYE, M-Pesa, KPLC tokens, KRA CRSP, KCSE, KUCCPS &amp; more</p>
-        </Link>
-        <Link
-          href="/county/"
-          className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
-        >
-          <p className="text-sm font-bold text-kenya-green-light flex items-center gap-1.5"><DynamicIcon emoji="🏛️" className="w-4 h-4 shrink-0" /> 47 Counties Hub →</p>
-          <p className="text-xs text-text-muted mt-1">Budgets, Governors, 290 Constituencies &amp; Climate</p>
-        </Link>
-        <Link
-          href="/matatu/"
-          className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
-        >
-          <p className="text-sm font-bold text-sky-light flex items-center gap-1.5"><DynamicIcon emoji="🚌" className="w-4 h-4 shrink-0" /> Matatu Routes &amp; Fares →</p>
-          <p className="text-xs text-text-muted mt-1">Nairobi, Mombasa, Kisumu, Nakuru, Eldoret &amp; Thika</p>
-        </Link>
-        <Link
-          href="/blog/"
-          className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
-        >
-          <p className="text-sm font-bold text-text-primary flex items-center gap-1.5"><DynamicIcon emoji="📖" className="w-4 h-4 shrink-0" /> Kenya Guides &amp; Blog →</p>
-          <p className="text-xs text-text-muted mt-1">In-depth articles on tax, education, and public services</p>
-        </Link>
-      </div>
+      <section aria-labelledby="not-found-destinations">
+        <h2 id="not-found-destinations" className="sr-only">
+          Popular KenyaHub Destinations
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-xl mx-auto">
+          <Link
+            href="/tools/"
+            prefetch={false}
+            className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
+          >
+            <p className="text-sm font-bold text-gold flex items-center gap-1.5"><DynamicIcon emoji="🧰" className="w-4 h-4 shrink-0" /> Browse All {TOOLS.length} Tools →</p>
+            <p className="text-xs text-text-muted mt-1">PAYE, M-Pesa, KPLC tokens, KRA CRSP, KCSE, KUCCPS &amp; more</p>
+          </Link>
+          <Link
+            href="/county/"
+            prefetch={false}
+            className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
+          >
+            <p className="text-sm font-bold text-kenya-green-light flex items-center gap-1.5"><DynamicIcon emoji="🏛️" className="w-4 h-4 shrink-0" /> 47 Counties Hub →</p>
+            <p className="text-xs text-text-muted mt-1">Budgets, Governors, 290 Constituencies &amp; Climate</p>
+          </Link>
+          <Link
+            href="/matatu/"
+            prefetch={false}
+            className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
+          >
+            <p className="text-sm font-bold text-sky-light flex items-center gap-1.5"><DynamicIcon emoji="🚌" className="w-4 h-4 shrink-0" /> Matatu Routes &amp; Fares →</p>
+            <p className="text-xs text-text-muted mt-1">Nairobi, Mombasa, Kisumu, Nakuru, Eldoret &amp; Thika</p>
+          </Link>
+          <Link
+            href="/blog/"
+            prefetch={false}
+            className="bg-bg-card border border-border rounded-xl p-4 hover:border-gold/50 transition-colors"
+          >
+            <p className="text-sm font-bold text-text-primary flex items-center gap-1.5"><DynamicIcon emoji="📖" className="w-4 h-4 shrink-0" /> Kenya Guides &amp; Blog →</p>
+            <p className="text-xs text-text-muted mt-1">In-depth articles on tax, education, and public services</p>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

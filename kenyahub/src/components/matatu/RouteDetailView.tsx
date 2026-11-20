@@ -5,6 +5,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import matatuData from "@/data/matatu-routes.json";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import { ChevronRight, MapPin } from "lucide-react";
 
 // Dynamic import for Leaflet map component (CSR only)
 const MatatuMap = dynamic(() => import("@/components/matatu/MatatuMap"), {
@@ -114,16 +115,16 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-xs text-text-muted">
+      {/* Site-wide ChevronRight Breadcrumb */}
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-text-muted flex-wrap">
         <Link href="/" className="hover:text-gold transition-colors">Home</Link>
-        <span>/</span>
-        <Link href="/matatu/" className="hover:text-gold transition-colors">Matatu</Link>
-        <span>/</span>
+        <ChevronRight className="w-3.5 h-3.5 text-border-light shrink-0" />
+        <Link href="/matatu/" className="hover:text-gold transition-colors">Matatu Routes</Link>
+        <ChevronRight className="w-3.5 h-3.5 text-border-light shrink-0" />
         <Link href={`/matatu/${townSlug}/`} className="hover:text-gold transition-colors capitalize">{townInfo.name}</Link>
-        <span>/</span>
-        <span className="text-text-primary">Route {route.routeNumber}</span>
-      </div>
+        <ChevronRight className="w-3.5 h-3.5 text-border-light shrink-0" />
+        <span className="text-text-secondary">Route {route.routeNumber}</span>
+      </nav>
 
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-bg-card border border-border rounded-2xl p-6 sm:p-8">
@@ -133,11 +134,11 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
               Route {route.routeNumber}
             </span>
             {route.verified && (
-              <span className="text-xs bg-kenya-green/15 text-kenya-green-light px-2.5 py-0.5 rounded font-semibold inline-flex items-center gap-1">
+              <span className="text-xs bg-kenya-green/15 text-kenya-green-light px-2.5 py-0.5 rounded-full font-semibold inline-flex items-center gap-1">
                 <DynamicIcon emoji="✓" className="w-3 h-3" /> Verified Route
               </span>
             )}
-            <span className="text-xs bg-bg-elevated border border-border text-text-secondary px-2.5 py-0.5 rounded font-medium">
+            <span className="text-xs bg-bg-elevated border border-border text-text-secondary px-2.5 py-0.5 rounded-full font-medium">
               ~{totalCorridorKm} km · {estOffPeakMins}–{estPeakMins} mins
             </span>
           </div>
@@ -152,11 +153,18 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
           </p>
         </div>
 
-        {/* Fare badge */}
-        <div className="bg-bg-elevated border border-border rounded-xl p-4 text-center md:text-right shrink-0">
-          <p className="text-[0.65rem] uppercase tracking-wider text-text-muted mb-0.5">Typical One-Way Fare</p>
-          <p className="text-2xl font-black text-gold">KES {route.fareMin} – {route.fareMax}</p>
-          <p className="text-[0.65rem] text-text-muted mt-0.5 flex items-center justify-center md:justify-end gap-1">
+        {/* Split Off-Peak vs Peak/Rain Fare badge */}
+        <div className="bg-bg-elevated border border-border rounded-xl p-4 text-center md:text-right shrink-0 space-y-2">
+          <p className="text-[0.65rem] uppercase tracking-wider text-text-muted">One-Way Fare Breakdown</p>
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-2">
+            <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-kenya-green/15 text-kenya-green-light border border-kenya-green/30">
+              Off-Peak: KES {route.fareMin}
+            </span>
+            <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-gold/15 text-gold border border-gold/30">
+              Peak / Rain: KES {route.fareMax}
+            </span>
+          </div>
+          <p className="text-[0.65rem] text-text-muted flex items-center justify-center md:justify-end gap-1">
             <DynamicIcon emoji="⏰" className="w-3 h-3" /> {route.operatingHours}
           </p>
         </div>
@@ -312,37 +320,53 @@ export default function RouteDetailView({ townSlug, routeSlug }: RouteDetailView
                 const isLast = idx === stageDistances.length - 1;
 
                 const isSelected = activeStageOrder === stage.order;
+                const stageMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${stage.lat},${stage.lng}`)}`;
                 return (
-                  <button
+                  <div
                     key={`${stage.order}-${stage.name}`}
-                    type="button"
-                    onClick={() => setActiveStageOrder(stage.order)}
-                    className={`relative w-full text-left flex items-start gap-3 rounded-lg p-1.5 -m-1.5 transition-colors cursor-pointer ${
+                    className={`relative w-full flex items-start justify-between gap-2 rounded-lg p-1.5 -m-1.5 transition-colors ${
                       isSelected ? "bg-gold/10 ring-1 ring-gold/40" : "hover:bg-bg-elevated/60"
                     }`}
                   >
-                    {/* Stage dot marker */}
-                    <div
-                      className={`absolute -left-7 top-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[0.65rem] font-bold text-black border-2 border-white shadow-sm ${
-                        isFirst ? "bg-kenya-green" : isLast ? "bg-kenya-red" : "bg-gold"
-                      }`}
+                    <button
+                      type="button"
+                      onClick={() => setActiveStageOrder(stage.order)}
+                      className="flex-1 min-w-0 text-left flex items-start gap-3 cursor-pointer"
                     >
-                      {stage.order}
-                    </div>
+                      {/* Stage dot marker */}
+                      <div
+                        className={`absolute -left-7 top-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[0.65rem] font-bold text-black border-2 border-white shadow-sm ${
+                          isFirst ? "bg-kenya-green" : isLast ? "bg-kenya-red" : "bg-gold"
+                        }`}
+                      >
+                        {stage.order}
+                      </div>
 
-                    <div className="flex-1 min-w-0">
-                      <p className={`text-xs font-bold ${isFirst ? "text-kenya-green-light" : isLast ? "text-kenya-red-light" : "text-text-primary"}`}>
-                        {stage.name}
-                      </p>
-                      <p className="text-[0.65rem] text-text-muted mt-0.5">
-                        {isFirst
-                          ? `Departure Terminus · 0.0 km`
-                          : isLast
-                          ? `Final Destination · +${stage.legKm} km (${stage.cumulativeKm} km total)`
-                          : `Stage ${stage.order} · +${stage.legKm} km (${stage.cumulativeKm} km from start)`}
-                      </p>
-                    </div>
-                  </button>
+                      <div className="flex-1 min-w-0">
+                        <p className={`text-xs font-bold ${isFirst ? "text-kenya-green-light" : isLast ? "text-kenya-red-light" : "text-text-primary"}`}>
+                          {stage.name}
+                        </p>
+                        <p className="text-[0.65rem] text-text-muted mt-0.5">
+                          {isFirst
+                            ? `Departure Terminus · 0.0 km`
+                            : isLast
+                            ? `Final Destination · +${stage.legKm} km (${stage.cumulativeKm} km total)`
+                            : `Stage ${stage.order} · +${stage.legKm} km (${stage.cumulativeKm} km from start)`}
+                        </p>
+                      </div>
+                    </button>
+                    <a
+                      href={stageMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={`Open ${stage.name} in Google Maps`}
+                      aria-label={`Open ${stage.name} in Google Maps`}
+                      className="shrink-0 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-bg-elevated border border-border hover:border-gold/50 text-[0.625rem] font-semibold text-gold transition-colors"
+                    >
+                      <MapPin className="w-3 h-3" />
+                      Maps
+                    </a>
+                  </div>
                 );
               })}
             </div>

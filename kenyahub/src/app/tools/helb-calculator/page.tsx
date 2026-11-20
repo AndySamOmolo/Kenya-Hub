@@ -11,74 +11,134 @@ const tool = TOOLS.find((t) => t.slug === "helb-calculator")!;
 
 const currentYear = new Date().getFullYear();
 
-const faq = [
-  {
-    question: "What is the HELB loan interest rate?",
-    answer: "HELB charges 4% per annum simple interest on the outstanding loan balance. Interest starts accruing from the date of first disbursement, not from when you start repaying.",
-  },
-  {
-    question: "When do I start repaying my HELB loan?",
-    answer: "You get a 1-year grace period after completing your studies. After that, repayment begins. Your employer is required by law to deduct HELB payments from your salary.",
-  },
-  {
-    question: "What is the minimum HELB monthly repayment?",
-    answer: "The minimum is KES 1,500 per month or 10% of your gross salary, whichever is higher. Making higher payments reduces your total interest and shortens the repayment period.",
-  },
-  {
-    question: "What happens if I don't repay my HELB loan?",
-    answer: "HELB can list you with credit reference bureaus (CRB), preventing you from accessing other credit. A 5% late penalty is also charged on the outstanding amount. HELB can also pursue legal action.",
-  },
-  {
-    question: "Can I make lump sum payments to HELB?",
-    answer: "Yes, HELB accepts lump sum payments which reduce the principal amount. This is recommended to cut down on total interest paid and shorten the repayment period.",
-  },
-];
+interface AmortizationRow {
+  year: number;
+  calendarYear: number;
+  openingBalance: number;
+  annualPayment: number;
+  interestCharged: number;
+  ledgerFee: number;
+  principalPaid: number;
+  closingBalance: number;
+}
 
 export default function HELBCalculatorPage() {
   const [loanAmount, setLoanAmount] = useState<number>(240000);
   const [yearBorrowed, setYearBorrowed] = useState<number>(2018);
   const [grossSalary, setGrossSalary] = useState<number>(50000);
+  const [defaultMonths, setDefaultMonths] = useState<number>(0);
 
   const results = useMemo(() => {
-    const yearsSinceBorrow = currentYear - yearBorrowed;
-    const yearsOfInterest = Math.max(0, yearsSinceBorrow);
-    const totalInterest = Math.round(loanAmount * (helbData.interestRate / 100) * yearsOfInterest);
-    const currentBalance = loanAmount + totalInterest;
+    const yearsSinceBorrow = Math.max(0, currentYear - yearBorrowed);
+    const accruedInterestToDate = Math.round(
+      loanAmount * (helbData.interestRate / 100) * yearsSinceBorrow
+    );
+    const accruedLedgerFees = yearsSinceBorrow * helbData.annualLedgerFee;
+    const accumulatedPenalty = defaultMonths * helbData.monthlyDefaultPenalty;
+    const currentBalance =
+      loanAmount + accruedInterestToDate + accruedLedgerFees + accumulatedPenalty;
 
-    const monthlyBySalary = Math.round(grossSalary * (helbData.minimumSalaryPercent / 100));
+    const monthlyBySalary = Math.round(
+      grossSalary * (helbData.minimumSalaryPercent / 100)
+    );
     const monthlyObligation = Math.max(helbData.minimumMonthly, monthlyBySalary);
 
-    const monthsToRepay = monthlyObligation > 0 ? Math.ceil(currentBalance / monthlyObligation) : 0;
-    const yearsToRepay = Math.round((monthsToRepay / 12) * 10) / 10;
-    const completionYear = currentYear + Math.ceil(yearsToRepay);
+    // Month-by-month reducing-balance amortization (4% p.a. + KES 1,000/yr ledger fee) (F-007)
+    const monthlyRate = helbData.interestRate / 100 / 12;
+    let balance = currentBalance;
+    let totalRepayment = 0;
+    let totalFutureInterest = 0;
+    let totalFutureLedger = 0;
+    let months = 0;
+    const maxMonths = 360; // 30-year safety cap
+    const schedule: AmortizationRow[] = [];
 
-    const totalPayment = monthlyObligation * monthsToRepay;
-    const effectiveInterest = totalPayment - loanAmount;
+    let yrOpening = balance;
+    let yrPayment = 0;
+    let yrInterest = 0;
+    let yrLedger = 0;
+    let yrPrincipal = 0;
+
+    while (balance > 0.5 && months < maxMonths) {
+      months += 1;
+      const monthInterest = balance * monthlyRate;
+      const monthLedger = months % 12 === 1 ? helbData.annualLedgerFee : 0;
+      const dueThisMonth = balance + monthInterest + monthLedger;
+
+      // Guard against negative amortization if payment < interest + ledger
+      const actualPayment = Math.min(dueThisMonth, monthlyObligation);
+      if (actualPayment <= monthInterest && months > 12) {
+        break;
+      }
+
+      const principalComponent = Math.max(0, actualPayment - monthInterest - monthLedger);
+      balance = Math.max(0, dueThisMonth - actualPayment);
+
+      totalRepayment += actualPayment;
+      totalFutureInterest += monthInterest;
+      totalFutureLedger += monthLedger;
+
+      yrPayment += actualPayment;
+      yrInterest += monthInterest;
+      yrLedger += monthLedger;
+      yrPrincipal += principalComponent;
+
+      if (months % 12 === 0 || balance <= 0.5) {
+        const yearNum = Math.ceil(months / 12);
+        schedule.push({
+          year: yearNum,
+          calendarYear: currentYear + yearNum - 1,
+          openingBalance: Math.round(yrOpening),
+          annualPayment: Math.round(yrPayment),
+          interestCharged: Math.round(yrInterest),
+          ledgerFee: Math.round(yrLedger),
+          principalPaid: Math.round(yrPrincipal),
+          closingBalance: Math.round(balance),
+        });
+        yrOpening = balance;
+        yrPayment = 0;
+        yrInterest = 0;
+        yrLedger = 0;
+        yrPrincipal = 0;
+      }
+    }
+
+    const yearsToRepay = Math.round((months / 12) * 10) / 10;
+    const completionYear = currentYear + Math.ceil(months / 12);
+    const cannotClear = balance > 1;
 
     return {
       loanAmount,
-      totalInterest,
+      yearsSinceBorrow,
+      accruedInterestToDate,
+      accruedLedgerFees,
+      accumulatedPenalty,
       currentBalance,
       monthlyObligation,
-      monthsToRepay,
+      monthsToRepay: months,
       yearsToRepay,
       completionYear,
-      totalPayment,
-      effectiveInterest,
-      latePenalty: Math.round(currentBalance * (helbData.latePenaltyPercent / 100)),
+      totalRepayment: Math.round(totalRepayment),
+      totalFutureInterest: Math.round(totalFutureInterest),
+      totalFutureLedger: Math.round(totalFutureLedger),
+      cannotClear,
+      schedule,
     };
-  }, [loanAmount, yearBorrowed, grossSalary]);
+  }, [loanAmount, yearBorrowed, grossSalary, defaultMonths]);
 
   const fmt = (n: number) =>
-    `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
+    `KES ${Math.round(n).toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <ToolShell tool={tool}>
       <div className="space-y-6">
         {/* Inputs */}
         <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-6 space-y-5">
           <div>
-            <label className="block text-sm font-medium text-text-secondary mb-2">
+            <label
+              htmlFor="loan-amount-input"
+              className="block text-sm font-medium text-text-secondary mb-2"
+            >
               Total Loan Amount (KES)
             </label>
             <div className="relative">
@@ -90,12 +150,13 @@ export default function HELBCalculatorPage() {
                   const raw = e.target.value.replace(/^0+(?=\d)/, "");
                   setLoanAmount(raw === "" ? 0 : Math.max(0, Number(raw)));
                 }}
-                placeholder="0"
-                className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
+                placeholder="e.g. 240000"
+                className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] pr-11! border border-border dark:border-white/15 tabular-nums"
                 style={{ paddingRight: "2.75rem" }}
                 min={0}
                 step={10000}
                 id="loan-amount-input"
+                aria-describedby="loan-amount-hint"
               />
               {loanAmount > 0 && (
                 <button
@@ -108,25 +169,60 @@ export default function HELBCalculatorPage() {
                 </button>
               )}
             </div>
-            <p className="text-xs text-text-muted mt-1">Sum of all HELB disbursements over your study period</p>
+            <p id="loan-amount-hint" className="text-xs text-text-muted mt-1">
+              Sum of all HELB disbursements over your study period
+            </p>
           </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label
+                htmlFor="year-borrowed-select"
+                className="block text-sm font-medium text-text-secondary mb-2"
+              >
+                Year First Borrowed
+              </label>
+              <CustomSelect
+                value={yearBorrowed}
+                onChange={(e) => setYearBorrowed(Number(e.target.value))}
+                className="input-field"
+                id="year-borrowed-select"
+              >
+                {Array.from({ length: 25 }, (_, i) => currentYear - i).map((y) => (
+                  <option key={y} value={y}>{y}</option>
+                ))}
+              </CustomSelect>
+            </div>
+
+            <div>
+              <label
+                htmlFor="default-months-input"
+                className="block text-sm font-medium text-text-secondary mb-2"
+              >
+                Months in Default (KES 5,000/mo Penalty)
+              </label>
+              <input
+                type="number"
+                inputMode="numeric"
+                value={defaultMonths === 0 ? "" : defaultMonths}
+                onChange={(e) => {
+                  const raw = e.target.value.replace(/^0+(?=\d)/, "");
+                  setDefaultMonths(raw === "" ? 0 : Math.min(180, Math.max(0, Number(raw))));
+                }}
+                placeholder="0 months (on-time)"
+                className="input-field text-sm font-semibold border border-border dark:border-white/15 tabular-nums"
+                min={0}
+                max={180}
+                id="default-months-input"
+              />
+            </div>
+          </div>
+
           <div>
-            <label className="block text-sm font-medium text-text-secondary mb-2">
-              Year First Borrowed
-            </label>
-            <CustomSelect
-              value={yearBorrowed}
-              onChange={(e) => setYearBorrowed(Number(e.target.value))}
-              className="input-field"
-              id="year-borrowed-select"
+            <label
+              htmlFor="gross-salary-input"
+              className="block text-sm font-medium text-text-secondary mb-2"
             >
-              {Array.from({ length: 25 }, (_, i) => currentYear - i).map((y) => (
-                <option key={y} value={y}>{y}</option>
-              ))}
-            </CustomSelect>
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-text-secondary mb-2">
               Current Gross Monthly Salary (KES)
             </label>
             <div className="relative">
@@ -138,8 +234,8 @@ export default function HELBCalculatorPage() {
                   const raw = e.target.value.replace(/^0+(?=\d)/, "");
                   setGrossSalary(raw === "" ? 0 : Math.max(0, Number(raw)));
                 }}
-                placeholder="0"
-                className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] pr-11!"
+                placeholder="e.g. 50000"
+                className="input-field text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] pr-11! border border-border dark:border-white/15 tabular-nums"
                 style={{ paddingRight: "2.75rem" }}
                 min={0}
                 step={5000}
@@ -159,91 +255,152 @@ export default function HELBCalculatorPage() {
           </div>
         </div>
 
-        {/* Result */}
-        <div className="result-box">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-sm text-text-secondary">Estimated Current Balance</span>
-            <span className="text-xs text-text-muted">
-              Including {helbData.interestRate}% p.a. simple interest
-            </span>
+        {/* Live Result Region */}
+        <div role="status" aria-live="polite" aria-atomic="true" className="space-y-6">
+          <div className="result-box">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span className="text-sm text-text-secondary">Estimated Current Balance</span>
+              <span className="text-xs text-text-muted">
+                4% p.a. reducing-balance + KES 1,000/yr ledger fee
+              </span>
+            </div>
+            <p className="text-3xl sm:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-kenya-red-light tabular-nums">
+              {fmt(results.currentBalance)}
+            </p>
+            <p className="text-xs text-text-muted mt-2 tabular-nums">
+              Principal: {fmt(results.loanAmount)} + Accrued Interest: {fmt(results.accruedInterestToDate)} + Ledger Fees: {fmt(results.accruedLedgerFees)}
+              {results.accumulatedPenalty > 0 && ` + Default Penalties: ${fmt(results.accumulatedPenalty)}`}
+            </p>
           </div>
-          <p className="text-3xl sm:text-4xl font-extrabold font-[family-name:var(--font-outfit)] text-kenya-red-light">
-            {fmt(results.currentBalance)}
-          </p>
-          <p className="text-xs text-text-muted mt-2">
-            Principal: {fmt(results.loanAmount)} + Interest: {fmt(results.totalInterest)}
-          </p>
-        </div>
 
-        {/* Repayment Summary */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-            <p className="text-xs text-text-muted mb-1">Monthly Obligation</p>
-            <p className="text-xl font-bold text-gold font-[family-name:var(--font-outfit)]">
-              {fmt(results.monthlyObligation)}
-            </p>
-            <p className="text-[0.625rem] text-text-muted mt-1">
-              {results.monthlyObligation === helbData.minimumMonthly ? "Minimum KES 1,500" : "10% of gross salary"}
-            </p>
+          {/* Repayment Summary */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
+              <p className="text-xs text-text-muted mb-1">Monthly Obligation</p>
+              <p className="text-xl font-bold text-gold font-[family-name:var(--font-outfit)] tabular-nums">
+                {fmt(results.monthlyObligation)}
+              </p>
+              <p className="text-[0.6875rem] text-text-muted mt-1">
+                {results.monthlyObligation === helbData.minimumMonthly ? "Minimum KES 1,500" : "10% of gross salary"}
+              </p>
+            </div>
+            <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
+              <p className="text-xs text-text-muted mb-1">Time to Clear (Reducing Balance)</p>
+              <p className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)] tabular-nums">
+                {results.cannotClear ? "30+ yrs" : `${results.yearsToRepay} years`}
+              </p>
+              <p className="text-[0.6875rem] text-text-muted mt-1 tabular-nums">
+                {results.cannotClear ? "Increase monthly payment" : `${results.monthsToRepay} months`}
+              </p>
+            </div>
+            <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
+              <p className="text-xs text-text-muted mb-1">Estimated Payoff Year</p>
+              <p className="text-xl font-bold text-kenya-green-light font-[family-name:var(--font-outfit)] tabular-nums">
+                {results.cannotClear ? "—" : results.completionYear}
+              </p>
+              <p className="text-[0.6875rem] text-text-muted mt-1 tabular-nums">
+                Total Outflow: {fmt(results.totalRepayment)}
+              </p>
+            </div>
           </div>
-          <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-            <p className="text-xs text-text-muted mb-1">Time to Clear</p>
-            <p className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)]">
-              {results.yearsToRepay} years
-            </p>
-            <p className="text-[0.625rem] text-text-muted mt-1">{results.monthsToRepay} months</p>
-          </div>
-          <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
-            <p className="text-xs text-text-muted mb-1">Completion Year</p>
-            <p className="text-xl font-bold text-kenya-green-light font-[family-name:var(--font-outfit)]">
-              {results.completionYear}
-            </p>
-            <p className="text-[0.625rem] text-text-muted mt-1">At current salary</p>
-          </div>
-        </div>
 
-        {/* Breakdown */}
-        <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-          <div className="px-5 py-3 border-b border-border bg-bg-elevated">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
-              Repayment Breakdown
-            </h3>
+          {/* Breakdown */}
+          <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+            <div className="px-5 py-3 border-b border-border bg-bg-elevated">
+              <h2 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+                Current Balance &amp; Statutory Charge Breakdown
+              </h2>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th className="text-right whitespace-nowrap">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="text-text-primary">Original Loan Principal</td>
+                    <td className="text-right font-semibold text-text-primary whitespace-nowrap tabular-nums">{fmt(results.loanAmount)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-kenya-red-light">Accrued Interest ({helbData.interestRate}% × {results.yearsSinceBorrow} yrs)</td>
+                    <td className="text-right text-kenya-red-light whitespace-nowrap tabular-nums">+ {fmt(results.accruedInterestToDate)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-secondary">Annual Ledger Maintenance Fee (KES 1,000/yr × {results.yearsSinceBorrow} yrs)</td>
+                    <td className="text-right text-text-secondary whitespace-nowrap tabular-nums">+ {fmt(results.accruedLedgerFees)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-secondary">
+                      Statutory Default Penalty (KES 5,000/month × {defaultMonths} mo)
+                    </td>
+                    <td className="text-right text-text-secondary whitespace-nowrap tabular-nums">
+                      + {fmt(results.accumulatedPenalty)}
+                    </td>
+                  </tr>
+                  <tr className="border-t border-border">
+                    <td className="font-semibold text-text-primary">Estimated Current Balance</td>
+                    <td className="text-right font-semibold text-text-primary whitespace-nowrap tabular-nums">{fmt(results.currentBalance)}</td>
+                  </tr>
+                  <tr>
+                    <td className="text-text-muted text-xs">Future Reducing-Balance Interest + Ledger Fees During Repayment</td>
+                    <td className="text-right text-text-muted text-xs whitespace-nowrap tabular-nums">
+                      + {fmt(results.totalFutureInterest + results.totalFutureLedger)}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div className="overflow-x-auto">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Item</th>
-                  <th className="text-right">Amount</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="text-text-primary">Original Loan Principal</td>
-                  <td className="text-right font-semibold text-text-primary">{fmt(results.loanAmount)}</td>
-                </tr>
-                <tr>
-                  <td className="text-kenya-red-light">Accrued Interest ({helbData.interestRate}% × {currentYear - yearBorrowed} yrs)</td>
-                  <td className="text-right text-kenya-red-light">+ {fmt(results.totalInterest)}</td>
-                </tr>
-                <tr className="border-t border-border">
-                  <td className="font-semibold text-text-primary">Estimated Current Balance</td>
-                  <td className="text-right font-semibold text-text-primary">{fmt(results.currentBalance)}</td>
-                </tr>
-                <tr>
-                  <td className="text-text-muted text-xs">Late payment penalty (if applicable)</td>
-                  <td className="text-right text-text-muted text-xs">+ {fmt(results.latePenalty)}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+
+          {/* Amortization Schedule Table (F-007) */}
+          {results.schedule.length > 0 && (
+            <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+              <div className="px-5 py-3 border-b border-border bg-bg-elevated flex flex-wrap items-center justify-between gap-2">
+                <h2 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+                  Reducing-Balance Amortization Schedule (4% p.a. + KES 1,000/yr Ledger Fee)
+                </h2>
+                <span className="text-[0.6875rem] text-text-muted">Swipe → on mobile</span>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="data-table">
+                  <thead>
+                    <tr>
+                      <th className="whitespace-nowrap">Year</th>
+                      <th className="text-right whitespace-nowrap">Opening</th>
+                      <th className="text-right whitespace-nowrap">Annual Paid</th>
+                      <th className="text-right whitespace-nowrap">Interest (4%)</th>
+                      <th className="text-right whitespace-nowrap">Ledger Fee</th>
+                      <th className="text-right whitespace-nowrap">Closing</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {results.schedule.map((row) => (
+                      <tr key={row.year}>
+                        <td className="font-medium text-text-primary whitespace-nowrap tabular-nums">
+                          Yr {row.year} ({row.calendarYear})
+                        </td>
+                        <td className="text-right text-text-secondary whitespace-nowrap tabular-nums">{fmt(row.openingBalance)}</td>
+                        <td className="text-right text-gold font-semibold whitespace-nowrap tabular-nums">{fmt(row.annualPayment)}</td>
+                        <td className="text-right text-kenya-red-light whitespace-nowrap tabular-nums">{fmt(row.interestCharged)}</td>
+                        <td className="text-right text-text-muted whitespace-nowrap tabular-nums">{fmt(row.ledgerFee)}</td>
+                        <td className="text-right font-semibold text-kenya-green-light whitespace-nowrap tabular-nums">{fmt(row.closingBalance)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Notes */}
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            Key Repayment Rules
-          </h3>
+          <h2 className="text-sm font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
+            Key HELB Statutory Repayment Rules
+          </h2>
           <ul className="space-y-2">
             {helbData.repaymentNotes.map((note, i) => (
               <li key={i} className="flex items-start gap-2 text-xs text-text-secondary">

@@ -55,23 +55,6 @@ function findOptimalSplit(amount: number, type: TransactionType) {
   return bestSplitDesc;
 }
 
-const faq = [
-  {
-    question: "How does the Include Agent Withdrawal Fee option work?",
-    answer:
-      "When you want a recipient to withdraw an exact cash amount (e.g. KES 5,000) from an M-Pesa Agent, you must send KES 5,000 plus the agent withdrawal fee for that bracket so they aren't short. Enabling the Agent Withdrawal Fee option computes the exact amount to send, the recipient's withdrawal fee, and your sending fee.",
-  },
-  {
-    question: "Are M-Pesa Buy Goods (Lipa Na M-Pesa) transactions free?",
-    answer:
-      "Yes, Safaricom does not charge customers any fee for Buy Goods (till number) transactions. Always ask merchants for their Till Number instead of sending to a personal number.",
-  },
-  {
-    question: "What is the M-Pesa maximum transaction limit in 2026?",
-    answer:
-      "The maximum single M-Pesa transaction is KES 250,000, the maximum daily transaction limit is KES 500,000, and the maximum M-Pesa wallet balance is KES 500,000.",
-  },
-];
 
 export default function MpesaFeeCalculatorPage() {
   const [amount, setAmount] = useState<number>(5000);
@@ -142,7 +125,7 @@ export default function MpesaFeeCalculatorPage() {
   );
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <ToolShell tool={tool}>
       <div className="space-y-6">
         {/* Inputs */}
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-4">
@@ -240,7 +223,7 @@ export default function MpesaFeeCalculatorPage() {
         </div>
 
         {/* Result */}
-        <div className="result-box">
+        <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
             <div>
               <p className="text-xs text-text-muted mb-1">
@@ -304,7 +287,7 @@ export default function MpesaFeeCalculatorPage() {
             </h3>
           </div>
           <div className="overflow-x-auto">
-            <table className="data-table">
+            <table className="data-table whitespace-nowrap tabular-nums">
               <thead>
                 <tr>
                   <th>Transaction Type</th>

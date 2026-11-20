@@ -281,6 +281,7 @@ export default function ToolsHubPage() {
                 <Link
                   key={tool.slug}
                   href={`/tools/${tool.slug}/`}
+                  prefetch={false}
                   className="tool-card bg-bg-card border border-gold/40 shadow-[0_0_15px_rgba(200,150,30,0.05)] rounded-xl p-3.5 sm:p-5 block group"
                 >
                   <div className="flex items-start gap-3 sm:gap-4">
@@ -411,7 +412,7 @@ export default function ToolsHubPage() {
 
       {/* Results count */}
       {(searchQuery || selectedCategory !== "all") && filteredTools.length > 0 && (
-        <p className="text-xs text-text-muted mb-3 sm:mb-4">
+        <p role="status" aria-live="polite" className="text-xs text-text-muted mb-3 sm:mb-4">
           Showing {filteredTools.length} of {TOOLS.length} tools
           {activeCategoryInfo && <> in <strong className="text-text-secondary">{activeCategoryInfo.name}</strong></>}
           {searchQuery && <> matching &quot;{searchQuery}&quot;</>}
@@ -465,6 +466,7 @@ export default function ToolsHubPage() {
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}/`}
+                prefetch={false}
                 className="tool-card bg-bg-card border border-border rounded-2xl p-5 sm:p-5.5 block group w-full"
               >
                 <div className="flex items-center gap-3.5 mb-3">
@@ -479,7 +481,7 @@ export default function ToolsHubPage() {
                     <DynamicIcon emoji={tool.icon} className="w-5.5 h-5.5" />
                   </div>
                   <div className="min-w-0 flex-1">
-                    {cat && (
+                    {cat && selectedCategory === "all" && (
                       <div className="flex items-center gap-1.5 mb-1">
                         <span
                           className="w-1.5 h-1.5 rounded-full shrink-0"
@@ -501,7 +503,7 @@ export default function ToolsHubPage() {
                     →
                   </div>
                 </div>
-                <p className="text-sm text-text-secondary leading-relaxed mb-3.5">
+                <p className="text-sm text-text-secondary leading-relaxed mb-3.5 line-clamp-2">
                   {tool.description}
                 </p>
                 <div className="pt-3 border-t border-border/60 flex items-center gap-2 text-xs text-text-muted leading-snug">

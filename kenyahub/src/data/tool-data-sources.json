@@ -19,12 +19,12 @@
     "helb-calculator": {
       "official": true,
       "sourceUrl": "https://www.helb.co.ke/",
-      "lastUpdated": "2026-10-20"
+      "lastUpdated": "2026-11-20"
     },
     "stamp-duty-calculator": {
       "official": true,
       "sourceUrl": "https://www.kenyalaw.org/lex/",
-      "lastUpdated": "2026-10-20"
+      "lastUpdated": "2026-11-20"
     },
     "cbc-curriculum": {
       "official": true,
@@ -39,7 +39,7 @@
     "kcse-grade-calculator": {
       "official": true,
       "sourceUrl": "https://www.knec.ac.ke/",
-      "lastUpdated": "2026-10-20"
+      "lastUpdated": "2026-11-20"
     },
     "kra-car-import-calculator": {
       "official": true,
@@ -49,7 +49,7 @@
     "number-plate-decoder": {
       "official": true,
       "sourceUrl": "https://ntsa.go.ke/",
-      "lastUpdated": "2026-10-20"
+      "lastUpdated": "2026-11-20"
     },
     "traffic-fines": {
       "official": true,
@@ -79,7 +79,7 @@
     "water-bill-calculator": {
       "official": true,
       "sourceUrl": "https://wasreb.go.ke/",
-      "lastUpdated": "2026-10-20"
+      "lastUpdated": "2026-11-20"
     },
     "sha-benefit-estimator": {
       "official": true,
@@ -89,12 +89,12 @@
     "small-claims-calculator": {
       "official": true,
       "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
-      "lastUpdated": "2026-10-21"
+      "lastUpdated": "2026-11-20"
     },
     "ntsa-transfer-calculator": {
       "official": true,
       "sourceUrl": "https://ntsa.go.ke/",
-      "lastUpdated": "2026-10-21"
+      "lastUpdated": "2026-11-20"
     },
     "boma-yangu-calculator": {
       "official": true,
@@ -104,7 +104,7 @@
     "rental-tax-calculator": {
       "official": true,
       "sourceUrl": "https://www.kra.go.ke/",
-      "lastUpdated": "2026-10-21"
+      "lastUpdated": "2026-11-20"
     },
     "landlord-tenant-rights": {
       "official": true,
@@ -114,17 +114,17 @@
     "domestic-wage-calculator": {
       "official": true,
       "sourceUrl": "https://www.labour.go.ke/",
-      "lastUpdated": "2026-10-21"
+      "lastUpdated": "2026-11-20"
     },
     "airtime-drain-guide": {
       "official": true,
       "sourceUrl": "https://www.ca.go.ke/",
-      "lastUpdated": "2026-10-21"
+      "lastUpdated": "2026-11-20"
     },
     "mobile-number-prefix": {
       "official": true,
       "sourceUrl": "https://www.ca.go.ke/",
-      "lastUpdated": "2026-10-20"
+      "lastUpdated": "2026-11-20"
     },
     "etims-mpesa-reconciler": {
       "official": true,
@@ -134,7 +134,7 @@
     "odpc-hr-retention-vault": {
       "official": true,
       "sourceUrl": "https://www.odpc.go.ke/",
-      "lastUpdated": "2026-11-19"
+      "lastUpdated": "2026-11-20"
     },
     "eudr-coop-geojson-packager": {
       "official": true,
@@ -166,5 +166,6 @@
       "sourceUrl": "https://ardhisasa.lands.go.ke/",
       "lastUpdated": "2026-11-19"
     }
-  }
+  },
+  "lastAudit": "2026-11-20"
 }

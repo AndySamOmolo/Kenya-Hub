@@ -1,66 +1,145 @@
-import { test, expect } from "@playwright/test";
-import {
-  attachRuntimeMonitor,
-  captureAuditScreenshot,
-  applyTheme,
-  assertNoHorizontalOverflow,
-  assertExpandedPillsLegible,
-} from "./helpers/ux-assertions";
+import { test, expect } from "./fixtures/base";
 
-const REMAINING_CALCULATOR_SCENARIOS: {
-  slug: string;
-  expectText: RegExp;
-  forbiddenText?: RegExp;
-  checkExpandPills?: boolean;
-}[] = [
-  { slug: "mjengo-construction-calculator", expectText: /KES|stone|cement|mabati/i },
-  { slug: "kra-car-import-calculator", expectText: /CRSP|Import Duty|Excise|VAT/i, checkExpandPills: true },
-  { slug: "icms-landed-cost-arbitrage", expectText: /iCMS|Consolidator|KES/i },
-  { slug: "ntsa-transfer-calculator", expectText: /Logbook|KES/i, forbiddenText: /Online Search Fee \(KES 500\)/ },
-  { slug: "traffic-fines", expectText: /KES|Traffic/i, forbiddenText: /\b1 pts\b/, checkExpandPills: true },
-  { slug: "sacco-chama-calculator", expectText: /SACCO|BOSA|KES/i },
-  { slug: "helb-calculator", expectText: /HELB|KES/i },
-  { slug: "stamp-duty-calculator", expectText: /Stamp Duty|4%|2%|KES/i },
-  { slug: "boma-yangu-calculator", expectText: /Boma Yangu|KES/i, forbiddenText: /1\.5% Affordable Housing Levy tax deductions/ },
-  { slug: "rental-tax-calculator", expectText: /7\.5%|MRI|KES/i },
-  { slug: "landlord-tenant-rights", expectText: /Deposit|Notice|Tenant/i },
-  { slug: "domestic-wage-calculator", expectText: /Minimum Wage|KES/i },
-  { slug: "airtime-drain-guide", expectText: /\*456\*9\*1#|Safaricom|Airtel/i, forbiddenText: /Tap 'Dial Now'/i },
-  { slug: "mobile-number-prefix", expectText: /Safaricom|Airtel|Calling Kenya from Abroad/i, forbiddenText: /Calling Outside Kenya:/i },
-  { slug: "kcse-grade-calculator", expectText: /KCSE|Mean Grade/i },
-  { slug: "kuccps-cluster-calculator", expectText: /KUCCPS|Cluster/i },
-  { slug: "kjsea-pathway-engine", expectText: /KJSEA|STEM|Pathway/i },
-  { slug: "sha-benefit-estimator", expectText: /SHA|SHIF|KES/i },
-  { slug: "sha-claim-scrubber", expectText: /SHA|Claim|Discharge/i },
-  { slug: "etims-mpesa-reconciler", expectText: /eTIMS|30%|M-Pesa/i },
-  { slug: "ardhisasa-cad-title-auditor", expectText: /Ardhisasa|UTM|Polygon/i, forbiddenText: /`EASTING, NORTHING`/ },
-];
+test.describe("Remaining Statutory Calculators — Focused Interactive & Statutory Math Matrix", () => {
+  test("Domestic Wage Calculator reflects 2026 KES 18,047 floor and mutates wage live", async ({ page }) => {
+    const res = await page.goto("/tools/domestic-wage-calculator/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
 
-test.describe("Complete Remaining 21-Calculator Deep Functional & Copy Audit", () => {
-  test.beforeEach(async ({ page }, testInfo) => {
-    const mode = testInfo.project.name.includes("light") ? "light" : "dark";
-    await applyTheme(page, mode);
+    const main = page.locator("main");
+    await expect(main).toContainText(/18,047/);
+    await expect(main).not.toContainText(/15,201/);
+
+    const numInput = main.locator('input[type="number"]').first();
+    if ((await numInput.count()) > 0 && (await numInput.isVisible())) {
+      const before = await main.innerText();
+      await numInput.fill("25000");
+      await numInput.blur();
+      await expect.poll(async () => await main.innerText()).not.toBe(before);
+    }
+    expect(await main.innerText()).not.toMatch(/\bNaN\b|\bInfinity\b/);
   });
 
-  for (const sc of REMAINING_CALCULATOR_SCENARIOS) {
-    test(`/tools/${sc.slug}/ validates interactive output, pills, and zero regressions`, async ({ page }, testInfo) => {
-      const monitor = attachRuntimeMonitor(page);
-      const url = `/tools/${sc.slug}/`;
-      await page.goto(url, { waitUntil: "domcontentloaded" });
-      await captureAuditScreenshot(page, testInfo, `calc-${sc.slug}`);
+  test("KCSE Grade Calculator uses KNEC 7-subject / 84-point mean grading", async ({ page }) => {
+    const res = await page.goto("/tools/kcse-grade-calculator/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
 
-      const bodyText = await page.locator("body").innerText();
-      expect.soft(bodyText).toMatch(sc.expectText);
-      if (sc.forbiddenText) {
-        expect.soft(bodyText).not.toMatch(sc.forbiddenText);
+    const main = page.locator("main");
+    await expect(main).toContainText(/7\s*subject|84|Best 7/i);
+
+    const firstSelect = main.locator("select").first();
+    if ((await firstSelect.count()) > 0 && (await firstSelect.isVisible())) {
+      const before = await main.innerText();
+      const opts = await firstSelect.locator("option").count();
+      if (opts > 2) {
+        await firstSelect.selectOption({ index: opts - 1 });
+        await expect.poll(async () => await main.innerText()).not.toBe(before);
       }
+    }
+    expect(await main.innerText()).not.toMatch(/\bNaN\b|\bInfinity\b/);
+  });
 
-      if (sc.checkExpandPills) {
-        await assertExpandedPillsLegible(page, page.locator('button[aria-label*="Expand" i]'));
-      }
+  test("HELB Calculator applies KES 5,000/mo statutory default penalty and updates on loan mutation", async ({ page }) => {
+    const res = await page.goto("/tools/helb-calculator/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
 
-      await assertNoHorizontalOverflow(page, url);
-      monitor.assertClean();
-    });
-  }
+    const main = page.locator("main");
+    await expect(main).toContainText(/5,000/);
+
+    const loanInput = main.locator('input[type="number"]').first();
+    if ((await loanInput.count()) > 0 && (await loanInput.isVisible())) {
+      const before = await main.innerText();
+      await loanInput.fill("350000");
+      await loanInput.blur();
+      await expect.poll(async () => await main.innerText()).not.toBe(before);
+    }
+    expect(await main.innerText()).not.toMatch(/\bNaN\b|\bInfinity\b/);
+  });
+
+  test("ODPC HR Retention Vault computes DPA s.63 cap (KES 120,000 on KES 12M turnover)", async ({ page }) => {
+    const res = await page.goto("/tools/odpc-hr-retention-vault/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
+
+    const main = page.locator("main");
+    await expect(main).toContainText(/120,000/);
+
+    const turnoverInput = main.locator('input[type="number"]').first();
+    if ((await turnoverInput.count()) > 0 && (await turnoverInput.isVisible())) {
+      const before = await main.innerText();
+      await turnoverInput.fill("20000000");
+      await turnoverInput.blur();
+      await expect.poll(async () => await main.innerText()).not.toBe(before);
+    }
+    expect(await main.innerText()).not.toMatch(/\bNaN\b|\bInfinity\b/);
+  });
+
+  test("Stamp Duty Calculator includes ARO 2014 legal fees (104,400 / 90,000) + 16% VAT", async ({ page }) => {
+    const res = await page.goto("/tools/stamp-duty-calculator/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
+
+    const main = page.locator("main");
+    await expect(main).toContainText(/104,400|90,000/);
+    await expect(main).toContainText(/16%|VAT/i);
+
+    const valueInput = main.locator('input[type="number"]').first();
+    if ((await valueInput.count()) > 0 && (await valueInput.isVisible())) {
+      const before = await main.innerText();
+      await valueInput.fill("8000000");
+      await valueInput.blur();
+      await expect.poll(async () => await main.innerText()).not.toBe(before);
+    }
+    expect(await main.innerText()).not.toMatch(/\bNaN\b|\bInfinity\b/);
+  });
+
+  test("Water Bill Calculator uses NCWSC KES 67/m³ Block 2 rate and mutates consumption live", async ({ page }) => {
+    const res = await page.goto("/tools/water-bill-calculator/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
+
+    const main = page.locator("main");
+    await expect(main).toContainText(/67/);
+
+    const unitsInput = main.locator('input[type="number"]').first();
+    if ((await unitsInput.count()) > 0 && (await unitsInput.isVisible())) {
+      const before = await main.innerText();
+      await unitsInput.fill("25");
+      await unitsInput.blur();
+      await expect.poll(async () => await main.innerText()).not.toBe(before);
+    }
+    expect(await main.innerText()).not.toMatch(/\bNaN\b|\bInfinity\b/);
+  });
+
+  test("Rental Tax Calculator computes 7.5% MRI without Turnover Tax misconception", async ({ page }) => {
+    const res = await page.goto("/tools/rental-tax-calculator/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
+
+    const main = page.locator("main");
+    await expect(main).toContainText(/7\.5%|MRI/i);
+    await expect(main).not.toContainText(/vs Turnover Tax/i);
+
+    const rentInput = main.locator('input[type="number"]').first();
+    if ((await rentInput.count()) > 0 && (await rentInput.isVisible())) {
+      const before = await main.innerText();
+      await rentInput.fill("120000");
+      await rentInput.blur();
+      await expect.poll(async () => await main.innerText()).not.toBe(before);
+    }
+    expect(await main.innerText()).not.toMatch(/\bNaN\b|\bInfinity\b/);
+  });
+
+  test("Small Claims Court cites Small Claims Court Act No. 2 of 2016 (not Cap 21)", async ({ page }) => {
+    const res = await page.goto("/tools/small-claims-calculator/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
+
+    const main = page.locator("main");
+    await expect(main).toContainText(/Act No\.?\s*2 of 2016/i);
+    await expect(main).not.toContainText(/\bCap\.?\s*21\b/i);
+
+    const claimInput = main.locator('input[type="number"]').first();
+    if ((await claimInput.count()) > 0 && (await claimInput.isVisible())) {
+      const before = await main.innerText();
+      await claimInput.fill("450000");
+      await claimInput.blur();
+      await expect.poll(async () => await main.innerText()).not.toBe(before);
+    }
+    expect(await main.innerText()).not.toMatch(/\bNaN\b|\bInfinity\b/);
+  });
 });

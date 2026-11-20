@@ -113,7 +113,7 @@ export default function SaccoChamaCalculatorPage() {
                   value={shareCapital}
                   placeholder="0"
                   onChange={(e) => setShareCapital(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
-                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                   style={{ paddingRight: "2.5rem" }}
                 />
                 {shareCapital && (
@@ -139,7 +139,7 @@ export default function SaccoChamaCalculatorPage() {
                   value={openingDeposits}
                   placeholder="0"
                   onChange={(e) => setOpeningDeposits(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
-                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                   style={{ paddingRight: "2.5rem" }}
                 />
                 {openingDeposits && (
@@ -165,7 +165,7 @@ export default function SaccoChamaCalculatorPage() {
                   value={monthlyDeposit}
                   placeholder="0"
                   onChange={(e) => setMonthlyDeposit(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))}
-                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                   style={{ paddingRight: "2.5rem" }}
                 />
                 {monthlyDeposit && (
@@ -212,7 +212,7 @@ export default function SaccoChamaCalculatorPage() {
               After 5% KRA Withholding Tax (KES {formatKES(calc.withholdingTax)})
             </p>
           </div>
-          <div className="bg-[var(--bg-card)] border border-[var(--gold)]/30 rounded-xl p-5">
+          <div className="bg-amber-500/[0.04] border border-amber-500/45 rounded-xl p-5">
             <p className="text-xs uppercase tracking-wider text-[var(--text-muted)] mb-1">
               Max BOSA Loan ({activeSacco.loanMultiplier}× Deposits)
             </p>

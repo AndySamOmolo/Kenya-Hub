@@ -102,17 +102,20 @@ export function KenyanTranslatorTool({
 
   const favoritesSet = useMemo(() => new Set(favorites), [favorites]);
 
-  // Random word of the day (balanced across all 23 Kenyan languages)
+  // Date-seeded daily word (YYYY-MM-DD deterministic across all 23 Kenyan languages)
   const [randomWord, setRandomWord] = useState<{
     entry: DictEntry;
     langName: string;
     langId: string;
   } | null>(() => {
     if (INITIAL_RANDOM_WORDS.length === 0) return null;
-    const item =
-      INITIAL_RANDOM_WORDS[
-        Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)
-      ];
+    const now = new Date();
+    const dateKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+    let hash = 0;
+    for (let i = 0; i < dateKey.length; i++) {
+      hash = (hash * 31 + dateKey.charCodeAt(i)) >>> 0;
+    }
+    const item = INITIAL_RANDOM_WORDS[hash % INITIAL_RANDOM_WORDS.length];
     return {
       entry: item.entry,
       langName: item.langName,
@@ -1468,7 +1471,7 @@ export function KenyanTranslatorTool({
               <View style={styles.statsBar}>
                 <View style={styles.statItem}>
                   <Text style={styles.statNumber}>
-                    {totalEntriesCount.toLocaleString()}+
+                    {totalEntriesCount.toLocaleString("en-KE")}+
                   </Text>
                   <Text style={styles.statCaption}>Verified Phrases</Text>
                 </View>
@@ -1546,7 +1549,7 @@ export function KenyanTranslatorTool({
                 <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
                   <Ionicons name="volume-high-outline" size={13} color="#38BDF8" />
                   <Text style={[styles.catPillText, { color: "#38BDF8", fontWeight: "700" }]}>
-                    With Audio ({browseAudioEntries.length})
+                    With Audio ({browseAudioEntries.length.toLocaleString("en-KE")})
                   </Text>
                 </View>
               </Pressable>

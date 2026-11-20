@@ -1,17 +1,40 @@
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
-import { DynamicIcon } from "../../components/DynamicIcon";
-import React, { useState, useMemo, useEffect, useRef } from "react";
-import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
+import React, { useState, useMemo } from "react";
+import { Text, View, TextInput, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useDynamicStyles } from "../../theme";
-import { createStyles, daysUntilHoliday } from "./shared";
+import { useDynamicStyles, triggerHaptic } from "../../theme";
+import { createStyles } from "./shared";
 import prefixesData from "../../shared/data/mobile-prefixes.json";
+
+const EQUITEL_FALLBACK = {
+  name: "Equitel (Finserve / Equity)",
+  color: "#8B4513",
+  prefixes: ["0763", "0764", "0765", "0766"],
+  ussdCodes: [
+    { code: "*247#", description: "Equitel Mobile Banking & EazzyBanking" },
+    { code: "*100#", description: "Check Equitel Balance & Bundles" },
+    { code: "*106#", description: "Verify SIMs Registered Under Your ID" },
+  ],
+};
 
 /** 2. Mobile Prefix Finder (mirrors kenyahub/src/app/tools/mobile-number-prefix/page.tsx) */
 export function MobilePrefixFinder() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [num, setNum] = useState("0722123456");
+  const [selectedNet, setSelectedNet] = useState<string>("All");
   const clean = num.trim().replace(/[^0-9]/g, "");
+
+  // Ensure Equitel (0763–0766) is always included alongside synced networks
+  const allNetworks = useMemo(() => {
+    const base = [...(prefixesData.networks as any[])];
+    const hasEquitel = base.some((n) =>
+      String(n.name || "").toLowerCase().includes("equitel")
+    );
+    if (!hasEquitel) {
+      base.push(EQUITEL_FALLBACK);
+    }
+    return base;
+  }, []);
 
   const carrier = useMemo(() => {
     let prefix = clean.substring(0, 4);
@@ -19,7 +42,7 @@ export function MobilePrefixFinder() {
       prefix = "0" + clean.substring(3, 6);
     }
     if (prefix.length < 4 || !prefix.startsWith("0")) return null;
-    for (const net of prefixesData.networks) {
+    for (const net of allNetworks) {
       if (net.prefixes.includes(prefix)) {
         return { ...net, matchedPrefix: prefix };
       }
@@ -31,7 +54,12 @@ export function MobilePrefixFinder() {
       prefixes: [],
       ussdCodes: [],
     };
-  }, [clean, theme.textMuted]);
+  }, [clean, allNetworks, theme.textMuted]);
+
+  const visibleNetworks = useMemo(() => {
+    if (selectedNet === "All") return allNetworks;
+    return allNetworks.filter((n) => n.name === selectedNet);
+  }, [allNetworks, selectedNet]);
 
   return (
     <View style={styles.toolWrap}>
@@ -43,7 +71,7 @@ export function MobilePrefixFinder() {
             numberOfLines={1}
             value={num}
             onChangeText={setNum}
-            placeholder="e.g. 0722 123 456 or 0110..."
+            placeholder="e.g. 0722 123 456, 0763, or 0110..."
             placeholderTextColor={theme.textMuted}
             keyboardType="phone-pad"
             style={[styles.textInput, { paddingRight: 38 }]}
@@ -118,9 +146,42 @@ export function MobilePrefixFinder() {
         </View>
       )}
 
-      {/* Full Network Prefix Directory (from web mobile-number-prefix/page.tsx) */}
+      {/* Full Network Prefix Directory with Carrier Filter Pills (incl. Equitel 0763–0766) */}
       <Text style={styles.subHeading}>Kenya Network Prefix Directory</Text>
-      {prefixesData.networks.map((net) => (
+      <ExpandablePillRow contentContainerStyle={{ flexDirection: "row", gap: 6, paddingBottom: 4 }}>
+        {["All", ...allNetworks.map((n) => n.name)].map((tabName) => {
+          const active = selectedNet === tabName;
+          return (
+            <Pressable
+              key={tabName}
+              onPress={() => {
+                triggerHaptic(6);
+                setSelectedNet(tabName);
+              }}
+              style={{
+                paddingHorizontal: 11,
+                paddingVertical: 6,
+                borderRadius: 999,
+                borderWidth: 1,
+                borderColor: active ? theme.gold : theme.border,
+                backgroundColor: active ? theme.gold : theme.bgCard,
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 11,
+                  fontWeight: "700",
+                  color: active ? theme.kenyaBlack : theme.textSecondary,
+                }}
+              >
+                {tabName.split("(")[0].trim()}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </ExpandablePillRow>
+
+      {visibleNetworks.map((net) => (
         <View key={net.name} style={styles.card}>
           <View style={styles.carrierHeader}>
             <View style={[styles.carrierDot, { backgroundColor: net.color }]} />
@@ -130,9 +191,13 @@ export function MobilePrefixFinder() {
             </Text>
           </View>
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginTop: 6 }}>
-            {net.prefixes.map((p) => (
-              <View
+            {net.prefixes.map((p: string) => (
+              <Pressable
                 key={p}
+                onPress={() => {
+                  triggerHaptic(6);
+                  setNum(`${p}123456`);
+                }}
                 style={{
                   backgroundColor: theme.bgElevated,
                   borderWidth: 1,
@@ -145,7 +210,7 @@ export function MobilePrefixFinder() {
                 <Text style={{ fontSize: 11.5, fontWeight: "700", color: theme.textPrimary }}>
                   {p}
                 </Text>
-              </View>
+              </Pressable>
             ))}
           </View>
         </View>
@@ -192,4 +257,3 @@ export function MobilePrefixFinder() {
     </View>
   );
 }
-

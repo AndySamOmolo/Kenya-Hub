@@ -13,28 +13,6 @@ import SearchInput from "@/components/ui/SearchInput";
 
 const tool = TOOLS.find((t) => t.slug === "traffic-fines")!;
 
-const faq = [
-  {
-    question: "What is the fine for speeding in Kenya?",
-    answer: "Speeding fines range from KES 5,000 for exceeding the limit by up to 10 km/h, to KES 50,000 for exceeding by over 40 km/h. Higher speed offences also carry more demerit points and may result in arrest.",
-  },
-  {
-    question: "What is the NTSA demerit points system?",
-    answer: "Kenya uses a 24-point demerit system over a 3-year period. Points 1–12 result in a warning, 13–18 require a mandatory road safety course, 19–23 lead to license suspension for 6 months, and 24+ points result in license revocation.",
-  },
-  {
-    question: "What is the fine for driving without insurance in Kenya?",
-    answer: "Driving without valid motor vehicle insurance carries a fine of up to KES 50,000 and is an arrestable offence. You can also face imprisonment. Insurance is a legal requirement under Cap 405.",
-  },
-  {
-    question: "How do I pay NTSA traffic fines?",
-    answer: "You can pay via: cash bond at the police station, M-Pesa paybill (NTSA service), eCitizen portal (ntsa.go.ke), or through court-imposed fine after a hearing.",
-  },
-  {
-    question: "What is the fine for drunk driving in Kenya?",
-    answer: "First offence DUI carries a fine of KES 100,000 plus license suspension for 1 year or imprisonment up to 2 years. Repeat offenders face KES 200,000 fine plus license revocation and up to 3 years imprisonment.",
-  },
-];
 
 export default function TrafficFinesPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -73,7 +51,7 @@ export default function TrafficFinesPage() {
     `KES ${n.toLocaleString("en-KE", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <ToolShell tool={tool}>
       <div className="space-y-6">
         {/* Search */}
         <div className="bg-bg-card border border-border rounded-xl p-6">

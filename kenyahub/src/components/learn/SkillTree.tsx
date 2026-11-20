@@ -51,26 +51,29 @@ export default function SkillTree({
   onToggleUnlockAll,
 }: SkillTreeProps) {
   const sources = getSourcesForLanguage(config.id);
-  const [expandedUnits, setExpandedUnits] = useState<Record<string, boolean>>(() =>
-    Object.fromEntries(units.map((u) => [u.id, true]))
-  );
+  const [expandedUnits, setExpandedUnits] = useState<Set<number>>(() => new Set([0]));
   const [showAchievements, setShowAchievements] = useState(false);
   const [showDashboard, setShowDashboard] = useState(false);
   const [achCategory, setAchCategory] = useState<string>("all");
 
-  const allExpanded = units.every((u) => expandedUnits[u.id] !== false);
+  const allExpanded = units.length > 0 && expandedUnits.size >= units.length;
   const isAllUnlocked = Boolean(progress.unlockAll);
 
   const toggleAllUnits = () => {
-    const nextState = !allExpanded;
-    setExpandedUnits(Object.fromEntries(units.map((u) => [u.id, nextState])));
+    if (allExpanded) {
+      setExpandedUnits(new Set([0]));
+    } else {
+      setExpandedUnits(new Set(units.map((_, idx) => idx)));
+    }
   };
 
-  const toggleUnit = (unitId: string) => {
-    setExpandedUnits((prev) => ({
-      ...prev,
-      [unitId]: prev[unitId] === false ? true : false,
-    }));
+  const toggleUnit = (unitIdx: number) => {
+    setExpandedUnits((prev) => {
+      const next = new Set(prev);
+      if (next.has(unitIdx)) next.delete(unitIdx);
+      else next.add(unitIdx);
+      return next;
+    });
   };
 
   const levelInfo = getXpLevel(progress.xp);
@@ -393,7 +396,7 @@ export default function SkillTree({
                     className={`flex shrink-0 items-center gap-2 rounded-xl border px-3 py-1.5 text-xs ${
                       reached
                         ? "border-gold/40 bg-gold/10 text-text-primary"
-                        : "border-border bg-bg-elevated/40 text-text-muted opacity-60"
+                        : "border-border bg-bg-elevated text-text-secondary dark:text-[#a39a8c]"
                     }`}
                   >
                     <DynamicIcon emoji={lvl.icon} className="w-4 h-4" />
@@ -415,7 +418,7 @@ export default function SkillTree({
                     className={`flex items-start gap-3 rounded-xl border p-3 transition-all ${
                       unlocked
                         ? "border-gold/40 bg-gold/5"
-                        : "border-border bg-bg-elevated/30 opacity-55"
+                        : "border-border bg-bg-elevated/60 text-text-secondary dark:text-[#a39a8c]"
                     }`}
                   >
                     <div className="text-xl flex items-center justify-center shrink-0 mt-0.5">
@@ -446,7 +449,7 @@ export default function SkillTree({
           <div className="flex flex-wrap items-center gap-2">
             <button
               onClick={onToggleUnlockAll}
-              className={`inline-flex items-center gap-1.5 rounded-xl border px-3 py-1.5 text-xs font-semibold transition-colors cursor-pointer ${
+              className={`inline-flex items-center gap-1.5 rounded-xl border px-3 py-2 min-h-[36px] text-xs font-semibold transition-colors cursor-pointer ${
                 isAllUnlocked
                   ? "border-gold/50 bg-gold/15 text-gold"
                   : "border-border bg-bg-card text-text-secondary hover:border-gold/40 hover:text-text-primary"
@@ -472,7 +475,7 @@ export default function SkillTree({
 
             <button
               onClick={toggleAllUnits}
-              className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-card px-3 py-1.5 text-xs font-medium text-text-secondary hover:text-text-primary hover:border-gold/40 transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-card px-3 py-2 min-h-[36px] text-xs font-medium text-text-secondary hover:text-text-primary hover:border-gold/40 transition-colors cursor-pointer"
             >
               <Layers className="h-3.5 w-3.5 text-gold" />
               <span>{allExpanded ? "Collapse All" : "Expand All"}</span>
@@ -481,15 +484,19 @@ export default function SkillTree({
         </div>
 
         {units.length > 1 && (
-          <ExpandablePillRow>
+          <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
             {units.map((u, idx) => (
               <a
                 key={u.id}
                 href={`#unit-block-${u.id}`}
                 onClick={() =>
-                  setExpandedUnits((prev) => ({ ...prev, [u.id]: true }))
+                  setExpandedUnits((prev) => {
+                    const next = new Set(prev);
+                    next.add(idx);
+                    return next;
+                  })
                 }
-                className="shrink-0 whitespace-nowrap rounded-full border border-border bg-bg-card hover:border-gold/50 px-3 py-1 text-xs font-medium text-text-secondary hover:text-gold transition-colors"
+                className="shrink-0 whitespace-nowrap rounded-full border border-border bg-bg-card hover:border-gold/50 px-3.5 py-1.5 min-h-[36px] inline-flex items-center text-xs font-medium text-text-secondary hover:text-gold transition-colors"
               >
                 Unit {idx + 1}: {u.title.replace(/^Unit \d+:\s*/i, "")}
               </a>
@@ -501,7 +508,7 @@ export default function SkillTree({
       {/* ─── Units & Mobile-Optimized Full-Width Skill Cards ─── */}
       <div className="space-y-5">
         {units.map((unit, uIdx) => {
-          const isExpanded = expandedUnits[unit.id] !== false;
+          const isExpanded = expandedUnits.has(uIdx);
           const unitCompleted = unit.skills.filter(
             (sk) => (progress.skillLevels[sk.id] || 0) >= 1
           ).length;
@@ -516,7 +523,7 @@ export default function SkillTree({
               <button
                 type="button"
                 aria-expanded={isExpanded}
-                onClick={() => toggleUnit(unit.id)}
+                onClick={() => toggleUnit(uIdx)}
                 className="w-full flex items-start sm:items-center justify-between gap-3 p-4 sm:p-5 text-left transition-colors hover:bg-white/[0.02]"
                 style={{
                   borderBottom: isExpanded ? "1px solid var(--border)" : "none",
@@ -568,9 +575,7 @@ export default function SkillTree({
                     return (
                       <div
                         key={skill.id}
-                        className={`pt-4 first:pt-0 transition-all ${
-                          !unlocked ? "opacity-60" : ""
-                        }`}
+                        className="pt-4 first:pt-0 transition-all"
                       >
                         {/* Row 1: Icon + Skill Title + Word Count */}
                         <div className="flex items-center gap-3">
@@ -582,13 +587,13 @@ export default function SkillTree({
                                 ? "border-kenya-green bg-kenya-green/10 text-kenya-green-light"
                                 : unlocked
                                 ? "border-border-light bg-bg-elevated text-gold"
-                                : "border-border bg-bg-elevated/40 text-text-muted"
+                                : "border-border bg-bg-elevated text-text-secondary dark:text-[#b8b0a3]"
                             }`}
                           >
                             {unlocked ? (
                               <DynamicIcon emoji={skill.icon} className="w-5 h-5 sm:w-6 sm:h-6" />
                             ) : (
-                              <Lock className="h-4 w-4 sm:h-5 sm:w-5 text-text-muted" />
+                              <Lock className="h-4 w-4 sm:h-5 sm:w-5 text-text-secondary dark:text-[#b8b0a3]" />
                             )}
                             {isMastered && (
                               <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-gold text-[0.55rem] font-bold text-black">
@@ -599,10 +604,22 @@ export default function SkillTree({
 
                           <div className="min-w-0 flex-1">
                             <div className="flex flex-wrap items-center gap-2">
-                              <h4 className="text-base font-bold text-text-primary leading-snug break-words">
+                              <h4
+                                className={`text-base font-bold leading-snug break-words ${
+                                  !unlocked
+                                    ? "text-text-secondary dark:text-[#a39a8c]"
+                                    : "text-text-primary"
+                                }`}
+                              >
                                 {skill.title}
                               </h4>
-                              <span className="rounded-full bg-bg-elevated border border-border/70 px-2.5 py-0.5 text-xs font-medium text-text-secondary">
+                              <span
+                                className={`rounded-full bg-bg-elevated border border-border px-2.5 py-0.5 text-xs font-medium ${
+                                  !unlocked
+                                    ? "text-text-secondary dark:text-[#b8b0a3]"
+                                    : "text-text-secondary"
+                                }`}
+                              >
                                 {skill.words.length} words
                               </span>
                             </div>
@@ -610,7 +627,13 @@ export default function SkillTree({
                         </div>
 
                         {/* Row 2: Full-Width Description (Never Squeezed Between Icon and Button!) */}
-                        <p className="mt-2.5 text-sm text-text-secondary leading-relaxed">
+                        <p
+                          className={`mt-2.5 text-sm leading-relaxed ${
+                            !unlocked
+                              ? "text-text-secondary dark:text-[#a39a8c]"
+                              : "text-text-secondary"
+                          }`}
+                        >
                           {skill.description}
                         </p>
 
@@ -624,12 +647,20 @@ export default function SkillTree({
                                   className={`h-4 w-4 ${
                                     lvlIdx < currentLevel
                                       ? "fill-gold text-gold"
+                                      : !unlocked
+                                      ? "text-text-muted dark:text-[#8c8478]"
                                       : "text-border-light"
                                   }`}
                                 />
                               )
                             )}
-                            <span className="ml-1.5 text-xs font-medium text-text-muted">
+                            <span
+                              className={`ml-1.5 text-xs font-medium ${
+                                !unlocked
+                                  ? "text-text-secondary dark:text-[#a39a8c]"
+                                  : "text-text-muted"
+                              }`}
+                            >
                               {isMastered
                                 ? "Mastered (5/5)"
                                 : `Level ${currentLevel}/${MAX_SKILL_LEVEL}`}
@@ -644,14 +675,14 @@ export default function SkillTree({
                                 isMastered ? MAX_SKILL_LEVEL : nextLevel
                               )
                             }
-                            className={`rounded-xl px-4 py-2 text-xs sm:text-sm font-bold transition-all cursor-pointer shrink-0 ${
+                            className={`rounded-xl px-4 py-2 min-h-[40px] text-xs sm:text-sm font-bold transition-all shrink-0 ${
                               !unlocked
-                                ? "cursor-not-allowed bg-bg-elevated text-text-muted"
+                                ? "cursor-not-allowed border border-border bg-bg-elevated text-text-secondary dark:text-[#b8b0a3]"
                                 : isMastered
-                                ? "border border-gold/40 bg-gold/10 text-gold hover:bg-gold/20"
+                                ? "cursor-pointer border border-gold/40 bg-gold/10 text-gold hover:bg-gold/20"
                                 : currentLevel > 0
-                                ? "bg-kenya-green text-white hover:bg-kenya-green-light shadow-sm"
-                                : "bg-gold text-black hover:bg-gold-light shadow-sm"
+                                ? "cursor-pointer bg-kenya-green text-white hover:bg-kenya-green-light shadow-sm"
+                                : "cursor-pointer bg-gold text-black hover:bg-gold-light shadow-sm"
                             }`}
                           >
                             {!unlocked

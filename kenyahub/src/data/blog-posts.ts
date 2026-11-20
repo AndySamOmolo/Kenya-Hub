@@ -1140,10 +1140,21 @@ export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
   }
 ];
 
+export const BLOG_SLUG_ALIASES: Record<string, string> = {
+  "kplc-prepaid-electricity-tokens-tariffs-kenya-2026": "kplc-prepaid-tokens-tariff-bands-guide-kenya-2026",
+  "kuccps-weighted-cluster-points-formula-guide": "understanding-kuccps-cluster-points",
+};
+
 export function getStaticBlogPost(slug: string): StaticBlogPost | undefined {
-  return STATIC_BLOG_POSTS.find((post) => post.slug === slug);
+  const resolvedSlug = BLOG_SLUG_ALIASES[slug] || slug;
+  return STATIC_BLOG_POSTS.find((post) => post.slug === resolvedSlug);
 }
 
 export function getStaticBlogSlugs(): string[] {
-  return STATIC_BLOG_POSTS.map((post) => post.slug);
+  return Array.from(
+    new Set([
+      ...STATIC_BLOG_POSTS.map((post) => post.slug),
+      ...Object.keys(BLOG_SLUG_ALIASES),
+    ])
+  );
 }

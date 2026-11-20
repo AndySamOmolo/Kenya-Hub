@@ -22,6 +22,117 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
+const BORDERING_COUNTIES: Record<string, string[]> = {
+  "mombasa": ["kilifi", "kwale"],
+  "kwale": ["mombasa", "kilifi", "taita-taveta"],
+  "kilifi": ["mombasa", "kwale", "taita-taveta", "tana-river"],
+  "tana-river": ["kilifi", "lamu", "garissa", "isiolo", "kitui", "taita-taveta"],
+  "lamu": ["tana-river", "garissa"],
+  "taita-taveta": ["kwale", "kilifi", "tana-river", "kitui", "makueni", "kajiado"],
+  "garissa": ["wajir", "isiolo", "tana-river", "lamu"],
+  "wajir": ["mandera", "marsabit", "isiolo", "garissa"],
+  "mandera": ["wajir"],
+  "marsabit": ["turkana", "samburu", "isiolo", "wajir"],
+  "isiolo": ["marsabit", "wajir", "garissa", "tana-river", "meru", "laikipia", "samburu"],
+  "meru": ["isiolo", "tharaka-nithi", "nyeri", "laikipia"],
+  "tharaka-nithi": ["meru", "embu", "kitui"],
+  "embu": ["tharaka-nithi", "kitui", "machakos", "kirinyaga"],
+  "kitui": ["tharaka-nithi", "embu", "machakos", "makueni", "taita-taveta", "tana-river"],
+  "machakos": ["embu", "kitui", "makueni", "kajiado", "nairobi", "kiambu", "muranga", "kirinyaga"],
+  "makueni": ["machakos", "kitui", "taita-taveta", "kajiado"],
+  "nyandarua": ["laikipia", "nyeri", "muranga", "kiambu", "nakuru"],
+  "nyeri": ["laikipia", "meru", "kirinyaga", "muranga", "nyandarua"],
+  "kirinyaga": ["nyeri", "embu", "machakos", "muranga"],
+  "muranga": ["nyeri", "kirinyaga", "machakos", "kiambu", "nyandarua"],
+  "kiambu": ["nyandarua", "muranga", "machakos", "nairobi", "kajiado", "nakuru"],
+  "turkana": ["west-pokot", "baringo", "samburu", "marsabit"],
+  "west-pokot": ["turkana", "baringo", "elgeyo-marakwet", "trans-nzoia"],
+  "samburu": ["turkana", "marsabit", "isiolo", "laikipia", "baringo"],
+  "trans-nzoia": ["west-pokot", "elgeyo-marakwet", "uasin-gishu", "kakamega", "bungoma"],
+  "uasin-gishu": ["trans-nzoia", "elgeyo-marakwet", "baringo", "kericho", "nandi", "kakamega"],
+  "elgeyo-marakwet": ["west-pokot", "baringo", "uasin-gishu", "trans-nzoia"],
+  "nandi": ["uasin-gishu", "kericho", "kisumu", "vihiga", "kakamega"],
+  "baringo": ["turkana", "samburu", "laikipia", "nakuru", "kericho", "uasin-gishu", "elgeyo-marakwet", "west-pokot"],
+  "laikipia": ["samburu", "isiolo", "meru", "nyeri", "nyandarua", "nakuru", "baringo"],
+  "nakuru": ["baringo", "laikipia", "nyandarua", "kiambu", "kajiado", "narok", "bomet", "kericho"],
+  "narok": ["nakuru", "kajiado", "bomet", "nyamira", "kisii", "migori"],
+  "kajiado": ["kiambu", "nairobi", "machakos", "makueni", "taita-taveta", "narok", "nakuru"],
+  "kericho": ["baringo", "nakuru", "bomet", "nyamira", "homa-bay", "kisumu", "nandi", "uasin-gishu"],
+  "bomet": ["kericho", "nakuru", "narok", "nyamira"],
+  "kakamega": ["bungoma", "trans-nzoia", "uasin-gishu", "nandi", "vihiga", "siaya", "busia"],
+  "vihiga": ["kakamega", "nandi", "kisumu", "siaya"],
+  "bungoma": ["trans-nzoia", "kakamega", "busia"],
+  "busia": ["bungoma", "kakamega", "siaya"],
+  "siaya": ["busia", "kakamega", "vihiga", "kisumu", "homa-bay"],
+  "kisumu": ["siaya", "vihiga", "nandi", "kericho", "homa-bay"],
+  "homa-bay": ["siaya", "kisumu", "kericho", "nyamira", "kisii", "migori"],
+  "migori": ["homa-bay", "kisii", "narok"],
+  "kisii": ["homa-bay", "nyamira", "narok", "migori"],
+  "nyamira": ["kisii", "homa-bay", "kericho", "bomet", "narok"],
+  "nairobi": ["kiambu", "machakos", "kajiado"],
+};
+
+const URBAN_UTILITIES: Record<
+  string,
+  {
+    waterProvider: string;
+    waterPaybill: string;
+    waterPortal: string;
+    waterNote: string;
+    hudumaCentres: string[];
+    civicServices: { label: string; detail: string; href?: string }[];
+  }
+> = {
+  nairobi: {
+    waterProvider: "Nairobi City Water & Sewerage Company (NCWSC)",
+    waterPaybill: "M-Pesa PayBill 444400",
+    waterPortal: "https://www.nairobiwater.co.ke",
+    waterNote: "WASREB-approved domestic block tariffs & sewer line billing across 17 Nairobi sub-counties.",
+    hudumaCentres: [
+      "Huduma Centre GPO (Teleposta Towers, Kenyatta Ave)",
+      "Huduma Centre City Square (Haile Selassie Ave)",
+      "Huduma Centre Makadara (Jogoo Rd)",
+      "Huduma Centre Kibra (Kibra DC Grounds)",
+      "Huduma Centre Eastleigh (1st Avenue)",
+    ],
+    civicServices: [
+      { label: "Nairobi Pay (County e-Services)", detail: "Parking, single business permits & land rates (*647# / nairobiservices.go.ke)" },
+      { label: "Nairobi Water Bill Calculator", detail: "Estimate monthly NCWSC water & sewerage charges", href: "/tools/water-bill-calculator/" },
+      { label: "KPLC Prepaid Token Calculator", detail: "EPRA 2026 Domestic Lifeline & Ordinary kWh breakdown", href: "/tools/kplc-token-calculator/" },
+      { label: "Nairobi Matatu Routes & Stages", detail: "32 mapped corridors, stages & peak/off-peak fares", href: "/matatu/nairobi/" },
+    ],
+  },
+  mombasa: {
+    waterProvider: "Mombasa Water Supply & Sanitation Company (MOWASSCO)",
+    waterPaybill: "M-Pesa PayBill 888885",
+    waterPortal: "https://www.mombasawater.co.ke",
+    waterNote: "Island & mainland water distribution (Nyali, Bamburi, Kisauni, Changamwe, Likoni).",
+    hudumaCentres: [
+      "Huduma Centre Mombasa GPO (Digo Road / Treasury Square)",
+      "Changamwe Sub-County Service Desk",
+      "Likoni Sub-County Service Desk",
+      "Kisauni / Nyali Civic Offices",
+    ],
+    civicServices: [
+      { label: "Mombasa County e-Services", detail: "Parking, business permits, cess & property rates (eservices.mombasa.go.ke)" },
+      { label: "Water Bill Calculator", detail: "Compare county water & sewerage tariffs", href: "/tools/water-bill-calculator/" },
+      { label: "KPLC Prepaid Token Calculator", detail: "EPRA 2026 Domestic Lifeline & Ordinary kWh breakdown", href: "/tools/kplc-token-calculator/" },
+      { label: "Mombasa Matatu & Ferry Routes", detail: "10 coastal corridors including Nyali, Bamburi & Likoni Ferry", href: "/matatu/mombasa/" },
+    ],
+  },
+};
+
+function computeAnnualRainfall(rain: any): number {
+  if (!rain) return 0;
+  if (rain.monthly && typeof rain.monthly === "object") {
+    return MONTH_KEYS.reduce((sum, mk) => sum + Number(rain.monthly[mk] || 0), 0);
+  }
+  if (Array.isArray(rain.monthlyAvg)) {
+    return rain.monthlyAvg.reduce((sum: number, v: number) => sum + Number(v || 0), 0);
+  }
+  return Number(rain.annualRainfall || 0);
+}
+
 function normalizeCountyName(s: string): string {
   return String(s || "")
     .toLowerCase()
@@ -58,18 +169,20 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     return Math.round((budget.ownSourceRevenue / budget.totalRevenue) * 1000) / 10;
   }, [budget]);
 
-  // 2. County Rainfall & Climate
-  const rainfall = useMemo(
-    () =>
-      county
-        ? ((rainfallData as any).counties || []).find(
-            (r: any) =>
-              r.code === county.code ||
-              normalizeCountyName(r.name) === normCounty
-          )
-        : null,
-    [county, normCounty]
-  );
+  // 2. County Rainfall & Climate (annual total dynamically computed from 12-month sum)
+  const rainfall = useMemo(() => {
+    if (!county) return null;
+    const found = ((rainfallData as any).counties || []).find(
+      (r: any) =>
+        r.code === county.code ||
+        normalizeCountyName(r.name) === normCounty
+    );
+    if (!found) return null;
+    return {
+      ...found,
+      annualRainfall: computeAnnualRainfall(found),
+    };
+  }, [county, normCounty]);
 
   // 3. Matching Agricultural Soil Types
   const countySoils = useMemo(
@@ -170,15 +283,16 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
     return indexed;
   }, [county, constSort]);
 
-  // Neighboring / Other Counties for internal linking
+  // True geographically bordering counties for internal linking (F-042)
   const otherCounties = useMemo(() => {
     if (!county) return [];
+    const neighborSlugs = BORDERING_COUNTIES[county.slug] || [];
+    const neighbors = neighborSlugs
+      .map((s) => countiesData.counties.find((c) => c.slug === s))
+      .filter((c): c is (typeof countiesData.counties)[number] => Boolean(c));
+    if (neighbors.length > 0) return neighbors.slice(0, 6);
     const idx = countiesData.counties.findIndex((c) => c.code === county.code);
-    const list = [];
-    for (let offset = 1; offset <= 4; offset++) {
-      list.push(countiesData.counties[(idx + offset) % countiesData.counties.length]);
-    }
-    return list;
+    return [1, 2, 3, 4].map((offset) => countiesData.counties[(idx + offset) % countiesData.counties.length]);
   }, [county]);
 
   if (!county) {
@@ -206,7 +320,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
       ? [
           {
             question: `What is ${county.name} County's budget allocation for FY ${(budgetsData as any).fiscalYear || "2025/26"}?`,
-            answer: `In FY ${(budgetsData as any).fiscalYear || "2025/26"}, ${county.name} County has an Equitable Share allocation of KES ${budget.allocation.toLocaleString()} Million (approximately KES ${perCapitaEquitableShare.toLocaleString()} per resident) and projected Own-Source Revenue (OSR) of KES ${budget.ownSourceRevenue.toLocaleString()} Million (${osrSharePct}% of total revenue of KES ${budget.totalRevenue.toLocaleString()} Million), with a Controller of Budget absorption rate of ${budget.absorptionRate}%.`,
+            answer: `In FY ${(budgetsData as any).fiscalYear || "2025/26"}, ${county.name} County has an Equitable Share allocation of KES ${budget.allocation.toLocaleString()}M (approximately KES ${perCapitaEquitableShare.toLocaleString()} per resident) and projected Own-Source Revenue (OSR) of KES ${budget.ownSourceRevenue.toLocaleString()}M (${osrSharePct}% of total revenue of KES ${budget.totalRevenue.toLocaleString()}M), with a Controller of Budget absorption rate of ${budget.absorptionRate}%.`,
           },
         ]
       : []),
@@ -362,13 +476,13 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
         </h2>
         <div className="space-y-3 text-xs sm:text-sm text-text-secondary leading-relaxed">
           <p>
-            <strong>{county.name} County</strong> (County Code <strong>#{codeStr}</strong> under the First Schedule of the Constitution of Kenya, 2010) is governed from its administrative headquarters in <strong>{county.capital}</strong>. According to the Kenya National Bureau of Statistics (KNBS) Population and Housing Census, the county has a resident population of <strong>{county.population.toLocaleString()}</strong> across a land area of <strong>{county.area.toLocaleString()} km²</strong>—resulting in a population settlement density of <strong>{density.toLocaleString()} residents per km²</strong> ({density > 400 ? "high-density urban/peri-urban and intensive agricultural settlement, significantly above Kenya's national average of 82 people/km²" : density >= 82 ? "moderate-density settlement above Kenya's national average of 82 people/km²" : "expansive low-density rangeland and conservation terrain below Kenya's national average of 82 people/km²"}).
+            <strong>{county.name} County</strong> (County Code <strong>#{codeStr}</strong> under the First Schedule of the Constitution of Kenya, 2010) is governed from its administrative headquarters in <strong>{county.capital}</strong>. According to the Kenya National Bureau of Statistics (KNBS) Population and Housing Census, the county has a resident population of <strong>{county.population.toLocaleString()}</strong> across a land area of <strong>{county.area.toLocaleString()} km²</strong> — resulting in a population settlement density of <strong>{density.toLocaleString()} residents per km²</strong> ({density > 400 ? "high-density urban/peri-urban and intensive agricultural settlement, significantly above Kenya's national average of 82 people/km²" : density >= 82 ? "moderate-density settlement above Kenya's national average of 82 people/km²" : "expansive low-density rangeland and conservation terrain below Kenya's national average of 82 people/km²"}).
           </p>
           <p>
             In the National Assembly and Senate, {county.name} County is represented by <strong>{county.constituencies.length} parliamentary constituencies</strong> ({county.constituencies.join(", ")}), averaging <strong>{popPerConstituency.toLocaleString()} residents per constituency MP</strong>, alongside County Senator <strong>{county.senator}</strong> and Woman Representative <strong>{county.womenRep}</strong>. The County Executive is headed by Governor <strong>{county.governor}</strong> and Deputy Governor <strong>{county.deputyGovernor}</strong>.
             {budget ? (
               <>
-                {" "}Under the County Allocation of Revenue Act (CARA) for FY {(budgetsData as any).fiscalYear || "2025/26"}, {county.name} receives <strong>KES {budget.allocation.toLocaleString()} Million</strong> in Equitable Share transfers (equivalent to <strong>KES {perCapitaEquitableShare.toLocaleString()} per resident</strong>) and generates <strong>KES {budget.ownSourceRevenue.toLocaleString()} Million</strong> in local Own-Source Revenue (<strong>{osrSharePct}%</strong> of its total KES {budget.totalRevenue.toLocaleString()}M resource envelope).
+                {" "}Under the County Allocation of Revenue Act (CARA) for FY {(budgetsData as any).fiscalYear || "2025/26"}, {county.name} receives <strong>KES {budget.allocation.toLocaleString()}M</strong> in Equitable Share transfers (equivalent to <strong>KES {perCapitaEquitableShare.toLocaleString()} per resident</strong>) and generates <strong>KES {budget.ownSourceRevenue.toLocaleString()}M</strong> in local Own-Source Revenue (<strong>{osrSharePct}%</strong> of its total KES {budget.totalRevenue.toLocaleString()}M resource envelope).
               </>
             ) : null}
           </p>
@@ -427,9 +541,10 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
               </div>
               <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
                 <p className="text-[0.65rem] text-text-muted uppercase">Own-Source (OSR)</p>
-                <p className="text-base font-bold text-gold mt-0.5">
-                  KES {budget.ownSourceRevenue.toLocaleString()}M ({osrSharePct}%)
+                <p className="text-base font-bold text-gold mt-0.5 whitespace-nowrap">
+                  KES {budget.ownSourceRevenue.toLocaleString()}M
                 </p>
+                <p className="text-[0.65rem] text-text-muted mt-0.5">{osrSharePct}% of revenue</p>
               </div>
               <div className="bg-bg-elevated/60 border border-border/50 rounded-xl p-3.5">
                 <p className="text-[0.65rem] text-text-muted uppercase">Total Revenue</p>
@@ -507,7 +622,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
                             ? "bg-sky/20 border-sky/40 text-sky-light"
                             : mm >= 70
                             ? "bg-sky/10 border-sky/20 text-text-primary"
-                            : "bg-bg-elevated border-border/50 text-text-muted"
+                            : "bg-bg-elevated border-border/50 text-text-secondary dark:text-[#d4ccc0]"
                         }`}
                       >
                         <div className="text-[0.625rem] uppercase font-semibold">{MONTHS[idx]}</div>
@@ -539,7 +654,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
                 type="button"
                 aria-pressed={constSort === opt.id}
                 onClick={() => setConstSort(opt.id)}
-                className={`px-2.5 py-1 rounded-lg text-xs font-semibold ${
+                className={`px-3 py-1 rounded-full text-xs font-semibold cursor-pointer transition-colors ${
                   constSort === opt.id
                     ? "bg-gold text-kenya-black"
                     : "bg-bg-card border border-border text-text-secondary"
@@ -588,7 +703,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
                 <p className="text-xs text-text-secondary leading-relaxed">{soil.description || soil.characteristics}</p>
                 <p className="text-xs text-text-muted">
                   <strong className="text-kenya-green-light">Best Crops: </strong>
-                  {(soil.bestCrops || []).join(", ")}
+                  {(soil.bestCrops || []).filter((crop: string) => !/prosopis/i.test(crop)).join(", ")}
                 </p>
               </div>
             ))}
@@ -642,7 +757,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
             </Link>
           </div>
           {countyPostalCodes.length > 0 ? (
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-64 overflow-y-auto pr-1">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {countyPostalCodes.map((p: any, idx: number) => (
                 <div key={idx} className="p-2.5 rounded-lg bg-bg-elevated/60 border border-border/60">
                   <span className="font-mono text-xs font-bold text-gold block">{p.code}</span>
@@ -711,7 +826,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
                 </span>
                 {countyAgrovets.map((a: any) => (
                   <div key={a.name} className="flex justify-between">
-                    <span className="font-medium text-text-primary">{a.name} ({a.town})</span>
+                    <span className="font-medium text-text-primary">{a.name} — {a.town}</span>
                     <span className="text-text-muted">{a.phone}</span>
                   </div>
                 ))}
@@ -787,7 +902,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
 
         <div className="bg-bg-card border border-border rounded-2xl p-6">
           <h2 className="text-sm font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3">
-            Explore Other Kenyan Counties
+            Bordering Kenyan Counties
           </h2>
           <div className="grid grid-cols-2 gap-2.5">
             {otherCounties.map((oc) => (
@@ -807,7 +922,59 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
         </div>
       </section>
 
-      {/* KALRO Crop Planting Calendar, NCPB Subsidized Fertilizer & Livestock Market Benchmarks */}
+      {/* Urban Utilities & Civic Services (Nairobi & Mombasa) OR KALRO Agricultural Calendar (Rural/Peri-Urban Counties) */}
+      {URBAN_UTILITIES[county.slug] ? (
+        <section className="bg-bg-card border border-border rounded-2xl p-5 sm:p-7 space-y-4">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              Urban Utilities &amp; Civic Services in {county.name} City County
+            </h2>
+            <span className="text-xs text-gold font-semibold">
+              Water Utility • Huduma Centres • City e-Services
+            </span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-2">
+              <h3 className="font-bold text-text-primary">Water &amp; Sewerage Utility</h3>
+              <p className="font-semibold text-sky-light">{URBAN_UTILITIES[county.slug].waterProvider}</p>
+              <p className="text-text-secondary">{URBAN_UTILITIES[county.slug].waterPaybill}</p>
+              <p className="text-text-muted leading-relaxed">{URBAN_UTILITIES[county.slug].waterNote}</p>
+              <a
+                href={URBAN_UTILITIES[county.slug].waterPortal}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-gold font-semibold hover:underline"
+              >
+                Visit Utility Portal ↗
+              </a>
+            </div>
+            <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-1.5">
+              <h3 className="font-bold text-text-primary">Huduma Centres &amp; Civic Desks</h3>
+              {URBAN_UTILITIES[county.slug].hudumaCentres.map((hc) => (
+                <p key={hc} className="text-text-secondary flex items-start gap-1.5">
+                  <span className="text-gold font-bold">•</span>
+                  <span>{hc}</span>
+                </p>
+              ))}
+            </div>
+            <div className="rounded-xl bg-bg-elevated/60 border border-border p-4 space-y-2">
+              <h3 className="font-bold text-text-primary">City Services &amp; Commuter Tools</h3>
+              {URBAN_UTILITIES[county.slug].civicServices.map((svc) => (
+                <div key={svc.label} className="text-text-secondary">
+                  {svc.href ? (
+                    <Link href={svc.href} className="font-semibold text-gold hover:underline block">
+                      {svc.label} →
+                    </Link>
+                  ) : (
+                    <p className="font-semibold text-text-primary">{svc.label}</p>
+                  )}
+                  <p className="text-[0.6875rem] text-text-muted">{svc.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : (
       <section className="bg-bg-card border border-border rounded-2xl p-5 sm:p-7 space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">
@@ -848,6 +1015,7 @@ export default function CountyDetailClient({ slug }: { slug: string }) {
           </div>
         </div>
       </section>
+      )}
     </div>
   );
 }

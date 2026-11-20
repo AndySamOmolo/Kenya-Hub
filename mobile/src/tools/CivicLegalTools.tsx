@@ -27,6 +27,38 @@ import tenantData from "../shared/data/tenant-rights-data.json";
 import domesticData from "../shared/data/domestic-wage-data.json";
 import airtimeData from "../shared/data/airtime-drain-data.json";
 
+const SMART_DL_CLASSES = [
+  { code: "A1 / A2 / A3", desc: "Motorcycles, Boda Bodas & Tuk-Tuks (3-wheelers)" },
+  { code: "B1 / B2 / B3", desc: "Private Saloon Cars, Light Vans & Professional B3" },
+  { code: "C1 / C2 / CE", desc: "Commercial Trucks (Light, Heavy & Articulated Trailers)" },
+  { code: "D1 / D2 / D3", desc: "PSV Matatus (14-seater), Mini-Buses (15–33) & Large Buses (34+)" },
+  { code: "E", desc: "Special Professional / Articulated Heavy Combination Vehicles" },
+  { code: "F", desc: "Persons with Disabilities (Adapted Motor Vehicles)" },
+  { code: "G", desc: "Industrial, Construction & Agricultural Plant / Tractors" },
+];
+
+// Helper: Kenya graduated annual individual income tax (Finance Act 2023/2026)
+function calcAnnualGraduatedTax(annualNet: number): number {
+  if (annualNet <= 0) return 0;
+  let tax = 0;
+  let rem = annualNet;
+  const bands: [number, number][] = [
+    [288_000, 0.1],
+    [100_000, 0.25],
+    [5_612_000, 0.3],
+    [3_600_000, 0.325],
+    [Infinity, 0.35],
+  ];
+  for (const [width, rate] of bands) {
+    if (rem <= 0) break;
+    const chunk = Math.min(rem, width);
+    tax += chunk * rate;
+    rem -= chunk;
+  }
+  const personalRelief = 28_800; // KES 2,400/mo
+  return Math.max(0, Math.round(tax - personalRelief));
+}
+
 // 1. SHA Health Benefits Explorer
 export function ShaBenefitEstimatorTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
@@ -157,7 +189,7 @@ export function ShaBenefitEstimatorTool() {
   );
 }
 
-// 2. Small Claims Court Calculator
+// 2. Small Claims Court Calculator (Small Claims Court Act No. 2 of 2016 s.34)
 export function SmallClaimsTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [claimText, setClaimText] = useState("75000");
@@ -192,6 +224,7 @@ export function SmallClaimsTool() {
           { label: "KES 250K", value: "250000" },
           { label: "KES 600K", value: "600000" },
           { label: "KES 1M", value: "1000000" },
+          { label: "KES 1.5M", value: "1500000" },
         ]}
       />
 
@@ -224,8 +257,9 @@ export function SmallClaimsTool() {
           KES {calc.fee.toLocaleString()}
         </Text>
         <Text style={{ fontSize: 11, color: theme.textSecondary }}>
-          Mandatory statutory resolution: 60 Days · Max Jurisdiction: KES
-          1,000,000
+          {calc.isEligible
+            ? "Statutory disposal timeline: 60 days under Small Claims Court Act (No. 2 of 2016) s.34 · Max Jurisdiction: KES 1,000,000"
+            : "Disposal timeline: Chief Magistrate's Court (typically 6–18+ months) — exceeds KES 1,000,000 jurisdiction under Small Claims Court Act (No. 2 of 2016)"}
         </Text>
       </View>
 
@@ -233,7 +267,7 @@ export function SmallClaimsTool() {
         title="Small Claims Court Filing Fee Assessment"
         summaryText={`Claim Amount: KES ${calc.amount.toLocaleString()}\nJurisdiction Status: ${
           calc.isEligible
-            ? "Eligible for Small Claims Court (60-day statutory timeline)"
+            ? "Eligible for Small Claims Court (60-day statutory disposal under Small Claims Court Act No. 2 of 2016 s.34)"
             : "Exceeds KES 1,000,000 limit (File in Chief Magistrate's Court)"
         }\nJudiciary e-Filing Fee: KES ${calc.fee.toLocaleString()}`}
         shareLabel="Share Filing Fee Summary"
@@ -241,7 +275,7 @@ export function SmallClaimsTool() {
 
       <View style={styles.card}>
         <Text style={[styles.subHeading, { color: theme.kenyaGreenLight }]}>
-          ✓ Claims Handled by Small Claims Court
+          ✓ Claims Handled by Small Claims Court (Act No. 2 of 2016)
         </Text>
         {sccData.qualifyingClaimTypes.map((q, i) => (
           <Text
@@ -256,7 +290,7 @@ export function SmallClaimsTool() {
   );
 }
 
-// 3. NTSA Logbook Transfer Calculator
+// 3. NTSA Logbook Transfer Calculator (+ Smart DL Classes D, E, F)
 export function NtsaTransferTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [selectedCcIndex, setSelectedCcIndex] = useState(2);
@@ -420,6 +454,31 @@ export function NtsaTransferTool() {
         ]}
       />
 
+      {/* NTSA Smart Driving License Classes Reference (incl. Classes D, E, F) */}
+      <View style={styles.card}>
+        <Text style={styles.subHeading}>NTSA Smart Driving License (DL) Classes</Text>
+        {SMART_DL_CLASSES.map((cls) => (
+          <View
+            key={cls.code}
+            style={{
+              flexDirection: "row",
+              alignItems: "flex-start",
+              gap: 10,
+              paddingVertical: 5,
+              borderBottomWidth: StyleSheet.hairlineWidth,
+              borderBottomColor: theme.border,
+            }}
+          >
+            <Text style={{ width: 78, fontSize: 12, fontFamily: "Outfit_800ExtraBold", color: theme.gold }}>
+              Class {cls.code}
+            </Text>
+            <Text style={{ flex: 1, fontSize: 11.5, color: theme.textSecondary }}>
+              {cls.desc}
+            </Text>
+          </View>
+        ))}
+      </View>
+
       <ShareCopyBar
         title={`NTSA Logbook Transfer (${calc.label})`}
         summaryText={`Vehicle Category: ${calc.label}\nNTSA Transfer Fee: KES ${calc.transfer.toLocaleString()}\nPurchase Tax: KES ${calc.tax.toLocaleString()}\nCopy of Records + eCitizen Convenience: KES ${calc.searchAndPlatform.toLocaleString()}\nTotal Payable: KES ${calc.total.toLocaleString()}`}
@@ -429,7 +488,7 @@ export function NtsaTransferTool() {
   );
 }
 
-// 4. Boma Yangu Housing Calculator
+// 4. Boma Yangu Housing Calculator (Fixed 1.5% levy copy + clickable bomayangu.go.ke)
 export function BomaYanguTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [selectedTierIndex, setSelectedTierIndex] = useState(1);
@@ -532,6 +591,25 @@ export function BomaYanguTool() {
         </Text>
       </View>
 
+      <View style={styles.card}>
+        <Text style={{ fontSize: 11.5, color: theme.textSecondary, lineHeight: 17 }}>
+          Note: Under the Tax Laws (Amendment) Act 2024, the mandatory 1.5% Affordable Housing Levy is an allowable deduction before PAYE rather than a separate tax credit. Register and track deposits on the official portal:
+        </Text>
+        <Pressable
+          onPress={() => {
+            triggerHaptic(8);
+            Linking.openURL("https://bomayangu.go.ke").catch(() => {});
+          }}
+          accessibilityRole="link"
+          style={{ flexDirection: "row", alignItems: "center", gap: 6, marginTop: 4 }}
+        >
+          <Ionicons name="open-outline" size={14} color={theme.gold} />
+          <Text style={{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.gold, textDecorationLine: "underline" }}>
+            bomayangu.go.ke ↗
+          </Text>
+        </Pressable>
+      </View>
+
       <BreakdownBar
         title="Monthly TPS Payment vs 15% Affordable Housing Tax Relief"
         segments={[
@@ -550,38 +628,69 @@ export function BomaYanguTool() {
 
       <ShareCopyBar
         title={`Boma Yangu (${tier.tier}) Repayment Breakdown`}
-        summaryText={`Unit Price: KES ${calc.cost.toLocaleString()}\n10% Deposit: KES ${Math.round(calc.deposit).toLocaleString()}\nGross Monthly TPS (${(tier.interestRate * 100).toFixed(0)}% for ${tier.maxTermYears} yrs): KES ${Math.round(calc.monthly).toLocaleString()}\n15% Affordable Housing Tax Relief: −KES ${Math.round(calc.relief).toLocaleString()}\nEffective Net Monthly Cost: KES ${Math.round(calc.net).toLocaleString()}`}
+        summaryText={`Unit Price: KES ${calc.cost.toLocaleString()}\n10% Deposit: KES ${Math.round(calc.deposit).toLocaleString()}\nGross Monthly TPS (${(tier.interestRate * 100).toFixed(0)}% for ${tier.maxTermYears} yrs): KES ${Math.round(calc.monthly).toLocaleString()}\n15% Affordable Housing Tax Relief: −KES ${Math.round(calc.relief).toLocaleString()}\nEffective Net Monthly Cost: KES ${Math.round(calc.net).toLocaleString()}\nPortal: https://bomayangu.go.ke`}
         shareLabel="Share Boma Yangu Plan"
       />
     </View>
   );
 }
 
-// 5. Rental Income Tax Calculator
+// 5. Rental Income Tax Calculator (MRI 7.5% vs Net Graduated Income Tax — KRA iTax)
 export function RentalTaxTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [rentText, setRentText] = useState("85000");
+  const [expenseText, setExpenseText] = useState("25000");
 
   const calc = useMemo(() => {
     const rent = Math.max(
       0,
       parseInt(rentText.replace(/[^0-9]/g, ""), 10) || 0
     );
+    const expenses = Math.max(
+      0,
+      parseInt(expenseText.replace(/[^0-9]/g, ""), 10) || 0
+    );
     const annualRent = rent * 12;
+    const annualExpenses = expenses * 12;
+    const annualNet = Math.max(0, annualRent - annualExpenses);
     const isBelowMriMin = annualRent > 0 && annualRent < 288000;
     const isAboveMriMax = annualRent > (rentalData.mriThresholdAnnual || 15000000);
-    const tax = isBelowMriMin ? 0 : rent * (rentalData.mriRate || 0.075);
-    const retained = Math.max(0, rent - tax);
+    const mriTaxMonthly = isBelowMriMin ? 0 : Math.round(rent * (rentalData.mriRate || 0.075));
+    const mriTaxAnnual = mriTaxMonthly * 12;
+    const netGraduatedAnnual = calcAnnualGraduatedTax(annualNet);
+    const netGraduatedMonthly = Math.round(netGraduatedAnnual / 12);
+    const retained = Math.max(0, rent - mriTaxMonthly);
+    const savingsDiff = Math.abs(mriTaxAnnual - netGraduatedAnnual);
+    const betterRegime = isAboveMriMax
+      ? "Net Graduated Income Tax (Required > KES 15M/yr)"
+      : mriTaxAnnual <= netGraduatedAnnual
+      ? `7.5% MRI saves KES ${savingsDiff.toLocaleString()}/yr`
+      : `Net Graduated Tax saves KES ${savingsDiff.toLocaleString()}/yr`;
+
     const statusLabel =
       annualRent === 0
         ? "Enter monthly rent above"
         : isBelowMriMin
         ? "Exempt (Below KES 288,000/yr / KES 24,000/mo MRI floor)"
         : isAboveMriMax
-        ? "Exceeds KES 15M/yr — File under normal Income Tax"
-        : "✓ Qualifies for simplified 7.5% MRI (Due 20th of next month)";
-    return { rent, annualRent, tax, retained, isBelowMriMin, isAboveMriMax, statusLabel };
-  }, [rentText]);
+        ? "Exceeds KES 15M/yr — File under normal Net Income Tax on KRA iTax"
+        : "✓ Qualifies for simplified 7.5% MRI on KRA iTax (Due 20th of next month)";
+    return {
+      rent,
+      expenses,
+      annualRent,
+      annualNet,
+      mriTaxMonthly,
+      mriTaxAnnual,
+      netGraduatedMonthly,
+      netGraduatedAnnual,
+      retained,
+      betterRegime,
+      isBelowMriMin,
+      isAboveMriMax,
+      statusLabel,
+    };
+  }, [rentText, expenseText]);
 
   return (
     <View style={styles.toolWrap}>
@@ -598,6 +707,13 @@ export function RentalTaxTool() {
         ]}
       />
 
+      <KESInput
+        label="Deductible Monthly Expenses (Repairs, Mortgage Interest, Agent Fees)"
+        value={expenseText}
+        onChangeText={setExpenseText}
+        subtext="Used only for Net Graduated Income Tax comparison (MRI allows zero deductions)"
+      />
+
       <View style={[styles.card, { borderColor: theme.gold }]}>
         <Text
           style={{
@@ -606,7 +722,7 @@ export function RentalTaxTool() {
             color: theme.gold,
           }}
         >
-          MONTHLY 7.5% MRI TAX DUE
+          MONTHLY 7.5% MRI TAX DUE (KRA iTax)
         </Text>
         <Text
           style={{
@@ -615,11 +731,35 @@ export function RentalTaxTool() {
             color: theme.textPrimary,
           }}
         >
-          KES {Math.round(calc.tax).toLocaleString()}
+          KES {calc.mriTaxMonthly.toLocaleString()}
         </Text>
         <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
-          Net Rent Retained: KES {Math.round(calc.retained).toLocaleString()} ·
-          {calc.statusLabel}
+          Net Rent Retained: KES {calc.retained.toLocaleString()} · {calc.statusLabel}
+        </Text>
+      </View>
+
+      {/* MRI 7.5% vs Net Graduated Income Tax Comparison */}
+      <View style={styles.card}>
+        <Text style={styles.subHeading}>MRI (7.5% Gross) vs Net Graduated Tax (ITA)</Text>
+        <View style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 4 }}>
+          <Text style={{ fontSize: 12, color: theme.textSecondary }}>7.5% MRI (Annual on Gross)</Text>
+          <Text style={{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
+            KES {calc.mriTaxAnnual.toLocaleString()}/yr
+          </Text>
+        </View>
+        <View style={{ flexDirection: "row", justifyContent: "space-between", paddingVertical: 4 }}>
+          <Text style={{ fontSize: 12, color: theme.textSecondary }}>
+            Net Graduated Tax (on KES {calc.annualNet.toLocaleString()} net)
+          </Text>
+          <Text style={{ fontSize: 12.5, fontFamily: "Outfit_700Bold", color: theme.textPrimary }}>
+            KES {calc.netGraduatedAnnual.toLocaleString()}/yr
+          </Text>
+        </View>
+        <Text style={{ fontSize: 11.5, fontFamily: "Outfit_700Bold", color: theme.kenyaGreenLight, marginTop: 4 }}>
+          Recommendation: {calc.betterRegime}
+        </Text>
+        <Text style={{ fontSize: 10.5, color: theme.textMuted, marginTop: 2 }}>
+          File monthly MRI returns by the 20th of the following month via KRA iTax (itax.kra.go.ke). Turnover Tax does not apply to rental income under ITA s.12C.
         </Text>
       </View>
 
@@ -628,21 +768,21 @@ export function RentalTaxTool() {
         segments={[
           {
             label: "Net Rent Retained",
-            value: Math.round(calc.retained),
+            value: calc.retained,
             color: theme.kenyaGreenLight,
           },
           {
             label: "7.5% KRA MRI Tax",
-            value: Math.round(calc.tax),
+            value: calc.mriTaxMonthly,
             color: theme.kenyaRedLight,
           },
         ]}
       />
 
       <ShareCopyBar
-        title="KRA Monthly Rental Income (MRI) 7.5% Tax Summary"
-        summaryText={`Gross Monthly Rent: KES ${calc.rent.toLocaleString()}\nKRA 7.5% MRI Tax Due (by 20th): KES ${Math.round(calc.tax).toLocaleString()}\nNet Landlord Rent Retained: KES ${Math.round(calc.retained).toLocaleString()}`}
-        shareLabel="Share MRI Tax Summary"
+        title="KRA Rental Income Tax (MRI vs Net) Summary"
+        summaryText={`Gross Monthly Rent: KES ${calc.rent.toLocaleString()}\nDeductible Monthly Expenses: KES ${calc.expenses.toLocaleString()}\n7.5% MRI Tax: KES ${calc.mriTaxMonthly.toLocaleString()}/mo (KES ${calc.mriTaxAnnual.toLocaleString()}/yr)\nNet Graduated Income Tax: KES ${calc.netGraduatedMonthly.toLocaleString()}/mo (KES ${calc.netGraduatedAnnual.toLocaleString()}/yr)\nVerdict: ${calc.betterRegime}\nFile via KRA iTax (itax.kra.go.ke)`}
+        shareLabel="Share Rental Tax Summary"
       />
     </View>
   );
@@ -672,7 +812,7 @@ export function LandlordTenantTool() {
       ``,
       `Under Kenyan tenancy law, the Rent Restriction Act (Cap 296), and established Small Claims Court precedents, standard wear-and-tear repainting is the landlord's obligation and cannot be deducted from a tenant's security deposit.`,
       ``,
-      `TAKE FURTHER NOTICE that unless the sum of KES ${formattedDeposit} is refunded via M-Pesa/bank transfer within seven (7) days of this notice, I shall institute recovery proceedings in the Small Claims Court of Kenya under the Small Claims Court Act (2016) for the principal sum plus filing costs without further reference to you.`,
+      `TAKE FURTHER NOTICE that unless the sum of KES ${formattedDeposit} is refunded via M-Pesa/bank transfer within seven (7) days of this notice, I shall institute recovery proceedings in the Small Claims Court of Kenya under the Small Claims Court Act (No. 2 of 2016) for the principal sum plus filing costs without further reference to you.`,
     ].join("\n");
   }, [tenantName, landlordName, unitNumber, formattedDeposit, vacateDate]);
 
@@ -844,34 +984,77 @@ export function LandlordTenantTool() {
   );
 }
 
-// 7. Domestic Worker Wage Tool
+// Legal Notice No. 95 (May 2026) — +12% Statutory Domestic Minimum Wages (Nakuru & Eldoret in Cities)
+const LN95_ZONES = [
+  {
+    id: "cities",
+    name: "Cities (Nairobi, Mombasa, Kisumu, Nakuru, Eldoret)",
+    monthlyMinimum: 18047,
+    dailyRate: 867,
+    hourlyRate: 104,
+  },
+  {
+    id: "municipalities",
+    name: "Former Municipalities & Town Councils (Thika, Nyeri, Kisii, Malindi, Kakamega)",
+    monthlyMinimum: 16651,
+    dailyRate: 800,
+    hourlyRate: 96,
+  },
+  {
+    id: "rural",
+    name: "All Other Areas / Rural Counties",
+    monthlyMinimum: 11483,
+    dailyRate: 552,
+    hourlyRate: 66,
+  },
+];
+
+// 7. Domestic Worker Wage Tool (Legal Notice No. 95 May 2026, 15/115 housing extraction, unified NSSF)
 export function DomesticWageTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [zoneIdx, setZoneIdx] = useState(0);
+  const [isLiveIn, setIsLiveIn] = useState(false);
 
-  const z = domesticData.zones[zoneIdx] || domesticData.zones[0];
-  const sha = Math.max(300, Math.round(z.monthlyMinimum * 0.0275));
-  const nssf = domesticData.statutoryDeductions?.nssfTier1Matching || 420;
-  const net = z.monthlyMinimum - sha - nssf;
+  const zones = useMemo(() => {
+    const syncedCities = domesticData.zones?.[0];
+    if (syncedCities && syncedCities.monthlyMinimum >= 18047) {
+      return domesticData.zones;
+    }
+    return LN95_ZONES;
+  }, []);
+
+  const z = zones[zoneIdx] || zones[0];
+  // Legal Notice No. 95 consolidated wage includes 15% house allowance -> extract 15/115 when live-in
+  const consolidatedGross = z.monthlyMinimum;
+  const housingAllowance = Math.round(consolidatedGross * (15 / 115));
+  const basicWage = consolidatedGross - housingAllowance;
+  const grossPayable = isLiveIn ? basicWage : consolidatedGross;
+
+  const sha = Math.max(300, Math.round(grossPayable * 0.0275));
+  // Unified NSSF Act 2013 (6% employee contribution, capped at KES 4,320)
+  const nssf = Math.min(4320, Math.round(grossPayable * 0.06));
+  const net = grossPayable - sha - nssf;
 
   const contractSummary = useMemo(
     () =>
       [
-        `DOMESTIC WORKER (HOUSEHELP) STATUTORY WAGE & CONTRACT SUMMARY`,
+        `DOMESTIC WORKER (HOUSEHELP) STATUTORY WAGE & CONTRACT SUMMARY (LEGAL NOTICE NO. 95, MAY 2026)`,
         `Zone: ${z.name}`,
-        `Gazetted Monthly Minimum Gross Wage: KES ${z.monthlyMinimum.toLocaleString()}`,
-        `Daily Rate: KES ${z.dailyRate} · Hourly Rate: KES ${z.hourlyRate}`,
+        `Arrangement: ${isLiveIn ? "Live-In (Employer Housed — 15/115 Housing Allowance Extracted)" : "Live-Out (Consolidated Minimum Wage)"}`,
+        `Consolidated Statutory Minimum: KES ${consolidatedGross.toLocaleString()}`,
+        `Extracted 15% Housing Element (15/115): KES ${housingAllowance.toLocaleString()} · Basic Wage: KES ${basicWage.toLocaleString()}`,
+        `Applicable Gross Cash Wage: KES ${grossPayable.toLocaleString()} (Daily: KES ${z.dailyRate} · Hourly: KES ${z.hourlyRate})`,
         `Employee SHA Deduction (2.75% / min KES 300): −KES ${sha.toLocaleString()}`,
-        `Employee NSSF Tier I Deduction: −KES ${nssf.toLocaleString()}`,
+        `Employee NSSF Deduction (6% Unified Rate): −KES ${nssf.toLocaleString()}`,
         `Net Take-Home Pay to Worker: KES ${Math.round(net).toLocaleString()}`,
         `Statutory Leave Entitlements: ${domesticData.statutoryDeductions.leaveDaysAnnual} paid annual leave days, ${domesticData.statutoryDeductions.paidMaternityMonths} months maternity leave, 1 rest day per week.`,
       ].join("\n"),
-    [z, sha, nssf, net]
+    [z, isLiveIn, consolidatedGross, housingAllowance, basicWage, grossPayable, sha, nssf, net]
   );
 
   return (
     <View style={styles.toolWrap}>
-      <Text style={styles.subHeading}>Municipality / Location Zone</Text>
+      <Text style={styles.subHeading}>Municipality / Location Zone (Legal Notice No. 95, May 2026)</Text>
       <ExpandablePillRow
         contentContainerStyle={{
           flexDirection: "row",
@@ -879,7 +1062,7 @@ export function DomesticWageTool() {
           gap: 6,
         }}
       >
-        {domesticData.zones.map((item, idx) => (
+        {zones.map((item, idx) => (
           <Pressable
             key={item.id}
             onPress={() => {
@@ -903,6 +1086,44 @@ export function DomesticWageTool() {
         ))}
       </ExpandablePillRow>
 
+      <Text style={{ fontSize: 11.5, color: theme.textSecondary }}>
+        Covers: {z.name}
+      </Text>
+
+      {/* Live-Out vs Live-In Toggle */}
+      <View style={{ flexDirection: "row", gap: 6 }}>
+        <Pressable
+          onPress={() => {
+            triggerHaptic(6);
+            setIsLiveIn(false);
+          }}
+          style={pressableStyle([
+            styles.pillBtn,
+            !isLiveIn && styles.pillBtnActive,
+            { flex: 1, alignItems: "center" },
+          ])}
+        >
+          <Text style={[styles.pillBtnText, !isLiveIn && styles.pillBtnTextActive]}>
+            Live-Out (Consolidated)
+          </Text>
+        </Pressable>
+        <Pressable
+          onPress={() => {
+            triggerHaptic(6);
+            setIsLiveIn(true);
+          }}
+          style={pressableStyle([
+            styles.pillBtn,
+            isLiveIn && styles.pillBtnActive,
+            { flex: 1, alignItems: "center" },
+          ])}
+        >
+          <Text style={[styles.pillBtnText, isLiveIn && styles.pillBtnTextActive]}>
+            Live-In (Employer Housed)
+          </Text>
+        </Pressable>
+      </View>
+
       <View style={[styles.card, { borderColor: theme.gold }]}>
         <Text
           style={{
@@ -920,11 +1141,13 @@ export function DomesticWageTool() {
             color: theme.textPrimary,
           }}
         >
-          KES {z.monthlyMinimum.toLocaleString()}
+          KES {grossPayable.toLocaleString()}
         </Text>
         <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
-          Daily: KES {z.dailyRate} · SHA: −KES {sha} · NSSF: −KES {nssf} · Net
-          Take-Home: KES {Math.round(net).toLocaleString()}
+          15/115 Housing Element: KES {housingAllowance.toLocaleString()} · Basic: KES {basicWage.toLocaleString()}
+        </Text>
+        <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 2 }}>
+          Daily: KES {z.dailyRate} · SHA (2.75%): −KES {sha.toLocaleString()} · NSSF (6%): −KES {nssf.toLocaleString()} · Net Take-Home: KES {Math.round(net).toLocaleString()}
         </Text>
       </View>
 
@@ -937,7 +1160,7 @@ export function DomesticWageTool() {
             color: theme.kenyaGreenLight,
           },
           {
-            label: "SHA + NSSF",
+            label: "SHA + NSSF (6%)",
             value: Math.round(sha + nssf),
             color: theme.gold,
           },
@@ -953,12 +1176,17 @@ export function DomesticWageTool() {
   );
 }
 
-// 8. Airtime Drain & USSD Tool
+// 8. Airtime Drain & USSD Tool (Reconciled Safaricom USSD codes + 1-tap Dial Now)
 export function AirtimeDrainTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [netIdx, setNetIdx] = useState(0);
 
   const net = airtimeData.networks[netIdx] || airtimeData.networks[0];
+  const isSafaricom = net.name.toLowerCase().includes("safaricom");
+  const promoOptOutUssd = isSafaricom ? "*456*9*5#" : "*100*3#";
+  const promoOptOutStep = isSafaricom
+    ? "Dial *456*9*5# (Official Safaricom Promotional SMS & Marketing Opt-Out) or send 'STOP' to the specific shortcode."
+    : net.stopAllPromoSMS;
 
   const dialUssd = (code: string) => {
     triggerHaptic(10);
@@ -1052,6 +1280,68 @@ export function AirtimeDrainTool() {
           style={{ fontSize: 11.5, color: theme.textSecondary, marginTop: 4 }}
         >
           {net.checkSubscriptionsStep}
+        </Text>
+      </View>
+
+      <View style={[styles.card, { borderColor: theme.sky }]}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <View style={{ flex: 1 }}>
+            <Text
+              style={{
+                fontSize: 10,
+                fontFamily: "Outfit_800ExtraBold",
+                color: theme.sky,
+              }}
+            >
+              STOP PROMOTIONAL & MARKETING SMS
+            </Text>
+            <Text
+              style={{
+                fontSize: 24,
+                fontFamily: "Outfit_800ExtraBold",
+                color: theme.textPrimary,
+              }}
+            >
+              {promoOptOutUssd}
+            </Text>
+          </View>
+          <Pressable
+            onPress={() => dialUssd(promoOptOutUssd)}
+            accessibilityRole="button"
+            accessibilityLabel={`Dial ${promoOptOutUssd}`}
+            android_ripple={androidRipple(theme.rippleColor)}
+            style={pressableStyle({
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 5,
+              backgroundColor: theme.sky,
+              paddingHorizontal: 12,
+              paddingVertical: 8,
+              borderRadius: 10,
+            })}
+          >
+            <Ionicons name="call" size={14} color="#FFFFFF" />
+            <Text
+              style={{
+                fontSize: 12,
+                fontFamily: "Outfit_800ExtraBold",
+                color: "#FFFFFF",
+              }}
+            >
+              Dial Now
+            </Text>
+          </Pressable>
+        </View>
+        <Text
+          style={{ fontSize: 11.5, color: theme.textSecondary, marginTop: 4 }}
+        >
+          {promoOptOutStep}
         </Text>
       </View>
 

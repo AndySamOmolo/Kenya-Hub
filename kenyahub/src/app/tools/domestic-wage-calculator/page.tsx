@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Copy, Check, Printer, FileText } from "lucide-react";
+import { Copy, Check, Printer, FileText, Mail, MessageCircle } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { TOOLS } from "@/lib/tools-registry";
@@ -44,13 +44,18 @@ export default function DomesticWageCalculatorPage() {
     const grossWage = customGross > 0 ? Math.max(minWage, customGross) : minWage;
     const isBelowMinimum = customGross > 0 && customGross < minWage;
 
-    const housingAllowanceIncluded = Math.round(grossWage * 0.15);
+    // Statutory 15% consolidated housing extraction: 15 / 115 of consolidated gross (F-005)
+    const housingAllowanceIncluded = Math.round((grossWage * 15) / 115);
+    const basicPayComponent = grossWage - housingAllowanceIncluded;
     const shaDeduction = Math.max(
       300,
       Math.round(grossWage * domesticWageData.statutoryDeductions.shaEmployeePercent)
     );
-    // NSSF Act Cap 128 6% calculation matching mobile/src/tools/CivicLegalTools.tsx:862
-    const nssf = Math.min(Math.round(grossWage * 0.06), 4320);
+    // NSSF Act Cap 128 6% calculation (Tier I + Tier II, capped at KES 4,320)
+    const nssf = Math.min(
+      Math.round(grossWage * domesticWageData.statutoryDeductions.nssfRate),
+      domesticWageData.statutoryDeductions.nssfMaxMonthly
+    );
     const nssfEmployee = nssf;
     const nssfEmployer = nssf;
     const netTakeHome = grossWage - shaDeduction - nssfEmployee;
@@ -61,6 +66,7 @@ export default function DomesticWageCalculatorPage() {
       grossWage,
       isBelowMinimum,
       housingAllowanceIncluded,
+      basicPayComponent,
       shaDeduction,
       nssf,
       nssfEmployee,
@@ -79,7 +85,7 @@ export default function DomesticWageCalculatorPage() {
     return [
       "REPUBLIC OF KENYA",
       "WRITTEN CONTRACT OF DOMESTIC EMPLOYMENT",
-      "(Pursuant to Section 9 & Section 10 of the Employment Act, Cap 226 Laws of Kenya & Legal Notice 108)",
+      "(Pursuant to Section 9 & Section 10 of the Employment Act, Cap 226 Laws of Kenya & Legal Notice No. 95, May 2026)",
       "================================================================================",
       `Date of Agreement: ${today}`,
       "",
@@ -91,22 +97,22 @@ export default function DomesticWageCalculatorPage() {
       "2. JOB DESCRIPTION & WORKPLACE LOCATION",
       `   Job Title / Role: ${jobTitle}`,
       `   Workplace Location Zone: ${activeZone.name}`,
-      `    Gazetted Minimum Monthly Wage for Zone: KES ${calc.minWage.toLocaleString()} (Daily: KES ${activeZone.dailyRate} · Hourly: KES ${activeZone.hourlyRate})`,
+      `   Gazetted Minimum Monthly Wage for Zone: KES ${calc.minWage.toLocaleString("en-KE")} (Daily: KES ${activeZone.dailyRate} · Hourly: KES ${activeZone.hourlyRate})`,
       "",
       "3. REMUNERATION & HOUSING PROVISION (SECTION 31, EMPLOYMENT ACT)",
-      `   Agreed Monthly Gross Salary: KES ${calc.grossWage.toLocaleString()}`,
+      `   Agreed Monthly Gross Salary: KES ${calc.grossWage.toLocaleString("en-KE")}`,
       `   Housing Arrangement: ${
         isLiveIn
-          ? `Live-In — Employer provides free, adequate accommodation at the workplace (equivalent housing value: KES ${calc.housingAllowanceIncluded.toLocaleString()}/month).`
-          : `Live-Out — Consolidated gross wage includes statutory 15% housing allowance (KES ${calc.housingAllowanceIncluded.toLocaleString()}/month).`
+          ? `Live-In — Employer provides free, adequate accommodation at the workplace (statutory 15/115 housing value: KES ${calc.housingAllowanceIncluded.toLocaleString("en-KE")}/month).`
+          : `Live-Out — Consolidated gross wage comprises basic pay (KES ${calc.basicPayComponent.toLocaleString("en-KE")}) plus statutory 15% housing allowance (15/115 = KES ${calc.housingAllowanceIncluded.toLocaleString("en-KE")}/month).`
       }`,
       "",
       "4. STATUTORY DEDUCTIONS & NET TAKE-HOME PAY",
-      `   - Social Health Authority (SHA — 2.75%, min KES 300): −KES ${calc.shaDeduction.toLocaleString()}`,
-      `   - NSSF Act Cap 128 Contribution (6% of Gross, max KES 4,320): −KES ${calc.nssfEmployee.toLocaleString()}`,
-      `   - Employer NSSF Matching Contribution (6%): KES ${calc.nssfEmployer.toLocaleString()} (paid by Employer)`,
-      `   - NET MONTHLY TAKE-HOME PAY TO EMPLOYEE: KES ${calc.netTakeHome.toLocaleString()}`,
-      `   - Total Monthly Statutory Cost to Employer: KES ${calc.totalEmployerCost.toLocaleString()}`,
+      `   - Social Health Authority (SHA/SHIF — 2.75%, min KES 300): −KES ${calc.shaDeduction.toLocaleString("en-KE")}`,
+      `   - NSSF Act Cap 128 Contribution (6% of Gross, max KES 4,320): −KES ${calc.nssfEmployee.toLocaleString("en-KE")}`,
+      `   - Employer NSSF Matching Contribution (6%): KES ${calc.nssfEmployer.toLocaleString("en-KE")} (paid by Employer)`,
+      `   - NET MONTHLY TAKE-HOME PAY TO EMPLOYEE: KES ${calc.netTakeHome.toLocaleString("en-KE")}`,
+      `   - Total Monthly Statutory Cost to Employer: KES ${calc.totalEmployerCost.toLocaleString("en-KE")}`,
       "",
       "5. WORKING HOURS, WEEKLY REST & STATUTORY LEAVE (SECTIONS 27–30, CAP 226)",
       `   - Normal Working Hours: ${workingHours}`,
@@ -152,11 +158,15 @@ export default function DomesticWageCalculatorPage() {
     }
   };
 
+  const whatsappHref = `https://wa.me/?text=${encodeURIComponent(contractText)}`;
+  const mailtoHref = `mailto:?subject=${encodeURIComponent(
+    `Domestic Employment Contract (${jobTitle})`
+  )}&body=${encodeURIComponent(contractText)}`;
+
   return (
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-
           <div className="flex flex-wrap gap-2 mb-4">
             {domesticWageData.zones.map((z) => (
               <button
@@ -186,7 +196,7 @@ export default function DomesticWageCalculatorPage() {
                   : "bg-bg-elevated border-border text-text-secondary"
               }`}
             >
-              Live-Out (Consolidated Wage Includes 15% Housing)
+              Live-Out (Consolidated Wage Includes 15/115 Housing)
             </button>
             <button
               type="button"
@@ -202,42 +212,47 @@ export default function DomesticWageCalculatorPage() {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-2">
-            <div className="rounded-xl border border-gold/40 bg-gold/10 p-4">
+          <div
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-2"
+          >
+            <div className="rounded-xl border border-amber-500/45 bg-amber-500/[0.04] p-4">
               <span className="text-[0.6875rem] font-bold text-gold uppercase">
-                {agreedSalaryInput ? "Agreed Monthly Gross Wage" : "Gazetted Legal Minimum Wage"}
+                {agreedSalaryInput ? "Agreed Monthly Gross Wage" : "Gazetted Legal Minimum Wage (2026)"}
               </span>
-              <p className="text-2xl font-black text-gold mt-1">
-                KES {calc.grossWage.toLocaleString()}
+              <p className="text-2xl font-black text-gold mt-1 tabular-nums whitespace-nowrap">
+                KES {calc.grossWage.toLocaleString("en-KE")}
               </p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">
-                Daily: KES {activeZone.dailyRate} ({activeZone.hourlyRate}/hr)
+              <p className="text-[0.6875rem] text-text-secondary mt-1 tabular-nums">
+                Daily: KES {activeZone.dailyRate.toLocaleString("en-KE")} ({activeZone.hourlyRate}/hr) ·{" "}
                 {isLiveIn
-                  ? ` · Free housing provided (equiv. KES ${calc.housingAllowanceIncluded.toLocaleString()})`
-                  : ""}
+                  ? `Free housing (15/115 equiv. KES ${calc.housingAllowanceIncluded.toLocaleString("en-KE")})`
+                  : `Includes 15/115 housing: KES ${calc.housingAllowanceIncluded.toLocaleString("en-KE")}`}
               </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">
                 Employee Net Take-Home
               </span>
-              <p className="text-xl font-bold text-text-primary mt-1">
-                KES {Math.round(calc.netTakeHome).toLocaleString()}
+              <p className="text-xl font-bold text-text-primary mt-1 tabular-nums whitespace-nowrap">
+                KES {Math.round(calc.netTakeHome).toLocaleString("en-KE")}
               </p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">
-                After SHA KES {Math.round(calc.shaDeduction).toLocaleString()} &amp; NSSF (6%) KES{" "}
-                {calc.nssfEmployee.toLocaleString()}
+              <p className="text-[0.6875rem] text-text-secondary mt-1 tabular-nums">
+                After SHA/SHIF KES {Math.round(calc.shaDeduction).toLocaleString("en-KE")} &amp; NSSF (6%) KES{" "}
+                {calc.nssfEmployee.toLocaleString("en-KE")}
               </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">
                 Total Cost to Employer
               </span>
-              <p className="text-xl font-bold text-text-primary mt-1">
-                KES {Math.round(calc.totalEmployerCost).toLocaleString()}
+              <p className="text-xl font-bold text-text-primary mt-1 tabular-nums whitespace-nowrap">
+                KES {Math.round(calc.totalEmployerCost).toLocaleString("en-KE")}
               </p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">
-                Includes employer 6% NSSF match KES {calc.nssfEmployer.toLocaleString()}
+              <p className="text-[0.6875rem] text-text-secondary mt-1 tabular-nums">
+                Includes employer 6% NSSF match KES {calc.nssfEmployer.toLocaleString("en-KE")}
               </p>
             </div>
           </div>
@@ -257,7 +272,7 @@ export default function DomesticWageCalculatorPage() {
                 Section 9 of the Employment Act requires every employment relationship lasting 3 months or more to be backed by a written contract signed by both Employer and Employee.
               </p>
             </div>
-            <div className="flex items-center gap-2 shrink-0">
+            <div className="flex flex-wrap items-center gap-2 shrink-0">
               <button
                 type="button"
                 onClick={handleCopyContract}
@@ -275,10 +290,26 @@ export default function DomesticWageCalculatorPage() {
                   </>
                 )}
               </button>
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-2 rounded-xl bg-bg-elevated border border-border text-text-primary font-semibold text-xs flex items-center gap-1.5 hover:border-gold transition-colors"
+              >
+                <MessageCircle className="w-3.5 h-3.5 text-kenya-green-light" />
+                <span>WhatsApp</span>
+              </a>
+              <a
+                href={mailtoHref}
+                className="px-3 py-2 rounded-xl bg-bg-elevated border border-border text-text-primary font-semibold text-xs flex items-center gap-1.5 hover:border-gold transition-colors"
+              >
+                <Mail className="w-3.5 h-3.5 text-gold" />
+                <span>Email</span>
+              </a>
               <button
                 type="button"
                 onClick={handlePrintContract}
-                className="px-3.5 py-2 rounded-xl bg-bg-elevated border border-border text-text-primary font-semibold text-xs flex items-center gap-1.5 hover:border-gold transition-colors cursor-pointer"
+                className="px-3 py-2 rounded-xl bg-bg-elevated border border-border text-text-primary font-semibold text-xs flex items-center gap-1.5 hover:border-gold transition-colors cursor-pointer"
               >
                 <Printer className="w-3.5 h-3.5 text-gold" />
                 <span>Print</span>
@@ -300,7 +331,7 @@ export default function DomesticWageCalculatorPage() {
                 value={employerName}
                 onChange={(e) => setEmployerName(e.target.value)}
                 placeholder="e.g. Wanjiku Mwangi"
-                className="input-field text-sm"
+                className="input-field text-sm border border-border dark:border-white/15"
               />
             </div>
 
@@ -317,7 +348,7 @@ export default function DomesticWageCalculatorPage() {
                 value={employeeName}
                 onChange={(e) => setEmployeeName(e.target.value)}
                 placeholder="e.g. Nekesa Wafula"
-                className="input-field text-sm"
+                className="input-field text-sm border border-border dark:border-white/15"
               />
             </div>
 
@@ -335,7 +366,7 @@ export default function DomesticWageCalculatorPage() {
                 value={employeeIdNumber}
                 onChange={(e) => setEmployeeIdNumber(e.target.value.replace(/[^0-9]/g, ""))}
                 placeholder="e.g. 34567890"
-                className="input-field text-sm"
+                className="input-field text-sm border border-border dark:border-white/15"
               />
             </div>
 
@@ -392,12 +423,12 @@ export default function DomesticWageCalculatorPage() {
                 onChange={(e) =>
                   setAgreedSalaryInput(e.target.value.replace(/[^0-9]/g, ""))
                 }
-                placeholder={`Min KES ${activeZone.monthlyMinimum.toLocaleString()}`}
-                className="input-field text-sm"
+                placeholder={`Min KES ${activeZone.monthlyMinimum.toLocaleString("en-KE")}`}
+                className="input-field text-sm border border-border dark:border-white/15"
               />
               {calc.isBelowMinimum && (
                 <p className="text-[0.6875rem] text-kenya-red-light mt-1">
-                  Auto-floored to statutory minimum KES {calc.minWage.toLocaleString()} for {activeZone.name.split("(")[0].trim()}.
+                  Auto-floored to statutory minimum KES {calc.minWage.toLocaleString("en-KE")} for {activeZone.name.split("(")[0].trim()}.
                 </p>
               )}
             </div>
@@ -414,7 +445,7 @@ export default function DomesticWageCalculatorPage() {
                 type="text"
                 value={workingHours}
                 onChange={(e) => setWorkingHours(e.target.value)}
-                className="input-field text-sm"
+                className="input-field text-sm border border-border dark:border-white/15"
               />
             </div>
 
@@ -457,7 +488,7 @@ export default function DomesticWageCalculatorPage() {
                 Employment Act Sec. 9 Compliant Contract Preview
               </span>
               <span className="text-[0.6875rem] text-text-muted">
-                Ready to copy, print, or sign in duplicate
+                Ready to copy, share, print, or sign in duplicate
               </span>
             </div>
             <pre className="text-xs font-mono text-text-primary whitespace-pre-wrap leading-relaxed overflow-x-auto max-h-96 select-all">

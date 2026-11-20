@@ -95,9 +95,9 @@ export const PUBLISHED_COURSE_SUMMARIES: CourseCatalogSummary[] = [
       ]
     },
     "ready": true,
-    "unitCount": 20,
-    "skillCount": 41,
-    "wordsCount": 489
+    "unitCount": 19,
+    "skillCount": 40,
+    "wordsCount": 384
   },
   {
     "config": {

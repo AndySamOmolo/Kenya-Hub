@@ -12,6 +12,7 @@ on:
       - "kenyahub/src/data/dictionaries/**"
       - "kenyahub/src/lib/tools-registry.ts"
       - "kenyahub/scripts/audit-tools.mjs"
+      - "kenyahub/scripts/test-core-logic.mjs"
       - "kenyahub/package.json"
 
 permissions:

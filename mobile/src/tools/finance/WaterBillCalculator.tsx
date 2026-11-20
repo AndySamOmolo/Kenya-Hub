@@ -1,22 +1,39 @@
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
 import React, { useState, useMemo } from "react";
-import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
+import { Text, View, TextInput, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDynamicStyles } from "../../theme";
-import { KESInput, StatCard, Row, createStyles } from "./shared";
+import { StatCard, Row, createStyles } from "./shared";
 import waterData from "../../shared/data/water-tariffs.json";
+
+const WASREB_REGULATORY_LEVY_RATE = 0.04; // 4% WASREB regulatory levy on water consumption
 
 /** 8. Water Bill Calculator (mirrors kenyahub/src/app/tools/water-bill-calculator/page.tsx) */
 export function WaterBillCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [utilityId, setUtilityId] = useState("ncwsc");
   const [unitsText, setUnitsText] = useState("15");
+  const [connectedToSewer, setConnectedToSewer] = useState(true);
   const consumption = Math.max(0, Number(unitsText) || 0);
 
   const calc = useMemo(() => {
-    const utility =
+    const rawUtility =
       waterData.utilities.find((u) => u.id === utilityId) ||
       waterData.utilities[0];
+
+    // Enforce WASREB-approved NCWSC Block 2 rate (KES 67/m³) & unified KES 100 meter rent
+    const bands = rawUtility.bands.map((b) => {
+      if (rawUtility.id === "ncwsc" && b.min === 7 && b.max === 20 && b.rate < 67) {
+        return { ...b, rate: 67.0 };
+      }
+      return b;
+    });
+    const utility = {
+      ...rawUtility,
+      meterRent: rawUtility.id === "ncwsc" ? 100 : rawUtility.meterRent,
+      bands,
+    };
+
     let waterCharge = 0;
     const breakdown: {
       band: string;
@@ -45,19 +62,23 @@ export function WaterBillCalculator() {
       remaining -= unitsInBand;
     }
 
-    const sewerageCharge = Math.round(waterCharge * utility.sewerageRate);
+    const sewerageCharge = connectedToSewer
+      ? Math.round(waterCharge * utility.sewerageRate)
+      : 0;
     const meterRent = utility.meterRent;
-    const total = waterCharge + sewerageCharge + meterRent;
+    const wasrebLevy = Math.round(waterCharge * WASREB_REGULATORY_LEVY_RATE);
+    const total = waterCharge + sewerageCharge + meterRent + wasrebLevy;
 
     return {
       utility,
       waterCharge,
       sewerageCharge,
       meterRent,
+      wasrebLevy,
       total,
       breakdown,
     };
-  }, [utilityId, consumption]);
+  }, [utilityId, consumption, connectedToSewer]);
 
   return (
     <View style={styles.toolWrap}>
@@ -147,14 +168,36 @@ export function WaterBillCalculator() {
         ))}
       </ExpandablePillRow>
 
+      {/* County Sewer Line Toggle */}
+      <Pressable
+        onPress={() => setConnectedToSewer((v) => !v)}
+        accessibilityRole="checkbox"
+        accessibilityState={{ checked: connectedToSewer }}
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          gap: 8,
+          paddingVertical: 4,
+        }}
+      >
+        <Ionicons
+          name={connectedToSewer ? "checkbox" : "square-outline"}
+          size={20}
+          color={theme.gold}
+        />
+        <Text style={{ fontSize: 13, color: theme.textPrimary, fontWeight: "600", flex: 1 }}>
+          Connected to County Sewer Line ({Math.round(calc.utility.sewerageRate * 100)}% sewerage charge)
+        </Text>
+      </Pressable>
+
       <StatCard
         label="ESTIMATED MONTHLY WATER BILL"
         value={`KES ${calc.total.toLocaleString()}`}
         highlight
-        subtext={`${calc.utility.name} · ${consumption} m³ consumed`}
+        subtext={`${calc.utility.name} · ${consumption} m³ · Meter Rent KES ${calc.meterRent}`}
       />
 
-      <Text style={styles.subHeading}>Bill Breakdown</Text>
+      <Text style={styles.subHeading}>Bill Breakdown (WASREB Tariff)</Text>
       <View style={styles.card}>
         {calc.breakdown.map((b, i) => (
           <Row
@@ -168,14 +211,16 @@ export function WaterBillCalculator() {
           value={`KES ${calc.waterCharge.toLocaleString()}`}
         />
         <Row
-          label={`Sewerage Charge (${Math.round(
-            calc.utility.sewerageRate * 100
-          )}%)`}
+          label={`Sewerage Charge (${connectedToSewer ? Math.round(calc.utility.sewerageRate * 100) : 0}%)`}
           value={`KES ${calc.sewerageCharge.toLocaleString()}`}
         />
         <Row
-          label="Monthly Meter Rent"
+          label="Monthly Meter Rent (1/2-inch Domestic)"
           value={`KES ${calc.meterRent.toLocaleString()}`}
+        />
+        <Row
+          label="WASREB Regulatory Levy (4%)"
+          value={`KES ${calc.wasrebLevy.toLocaleString()}`}
         />
         <Row
           label="Total Monthly Bill"
@@ -186,4 +231,3 @@ export function WaterBillCalculator() {
     </View>
   );
 }
-

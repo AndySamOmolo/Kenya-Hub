@@ -320,6 +320,7 @@ export default function BlogPostContent({ post }: { post: BlogPost | null }) {
                 <Link
                   key={rp.slug}
                   href={`/blog/${rp.slug}/`}
+                  prefetch={false}
                   className="bg-bg-card border border-border hover:border-gold/50 rounded-xl p-4 transition-all flex flex-col justify-between group"
                 >
                   <div>

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
 
 @theme inline {
   /* ── Flag & Cultural Colors (WCAG 2.2 AA themed tokens + fixed accents) ── */
@@ -44,24 +45,25 @@
    DARK THEME — Kenyan night sky over the savanna
    ══════════════════════════════════════════════════ */
 :root,
-[data-theme="dark"] {
+[data-theme="dark"],
+html.dark {
   --bg-primary: #0C0A08;
   --bg-secondary: #141210;
   --bg-card: #1C1916;
   --bg-card-hover: #252220;
   --bg-elevated: #2A2622;
   --bg-surface: #181512;
-  --border: #2E2A25;
-  --border-light: #3D3730;
-  --border-accent: #4D453C;
+  --border: #6E665C;
+  --border-light: #80776B;
+  --border-accent: #94897B;
   --text-primary: #F2EDE6;
   --text-secondary: #B5ACA1;
-  --text-muted: #94897B;
+  --text-muted: #A3988A;
   --gold-text: #E8BE5A;
   --accent-gold: #D4A437;
   --accent-gold-light: #E8BE5A;
   --accent-green: #2FA463;
-  --accent-red: #E05A5A;
+  --accent-red: #F07171;
   --accent-sky: #2D9CDB;
   --accent-sky-light: #5BBFEA;
   --glass-bg: rgba(12,10,8,0.96);
@@ -80,9 +82,9 @@ html.light {
   --bg-card-hover: #F8F4ED;
   --bg-elevated: #F0EBE2;
   --bg-surface: #F5F1EA;
-  --border: #E2DAD0;
-  --border-light: #D4CABF;
-  --border-accent: #C8BDB0;
+  --border: #8C8275;
+  --border-light: #786F63;
+  --border-accent: #665E53;
   --text-primary: #1A1108;
   --text-secondary: #4E4333;
   --text-muted: #6B5F50;
@@ -323,7 +325,6 @@ html.light {
   color: var(--text-primary);
   font-size: 0.9375rem;
   width: 100%;
-  outline: none;
   transition: border-color 0.2s, box-shadow 0.2s, background-color 0.3s;
 }
 @media (min-width: 640px) {
@@ -346,7 +347,6 @@ html.light {
   color: var(--text-primary);
   font-size: 0.9375rem;
   width: 100%;
-  outline: none;
   appearance: none;
   cursor: pointer;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238C8070' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
@@ -857,7 +857,7 @@ html.light {
 .theme-toggle {
   position: relative;
   width: 2.25rem; height: 2.25rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   border: 1px solid var(--border);
@@ -1235,10 +1235,14 @@ details[open] > *:not(summary) {
   }
 }
 
-button:focus-visible,
 a:focus-visible,
-summary:focus-visible {
-  outline: 2px solid var(--color-gold);
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-gold);
   outline-offset: 2px;
 }
 
@@ -1262,5 +1266,53 @@ body[data-kh-focus-mode="true"] footer { display: none !important; }
     background-repeat: no-repeat;
     background-size: 28px 100%, 28px 100%, 10px 100%, 10px 100%;
     background-attachment: local, local, scroll, scroll;
+  }
+}
+
+/* ── Atomic 1-Frame Theme Switch Lock (F-015) ── */
+.theme-switching,
+.theme-switching *,
+.theme-switching *::before,
+.theme-switching *::after {
+  transition: none !important;
+}
+
+/* ── Bottom Clearance While Slim Cookie Banner Is Open (F-013) ── */
+body.kh-cookie-banner-open {
+  padding-bottom: 6.5rem;
+}
+@media (min-width: 640px) {
+  body.kh-cookie-banner-open {
+    padding-bottom: 4rem;
+  }
+}
+
+/* ── WCAG 2.2 Reduced Motion Support (F-037) ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-fade-in-up,
+  .animate-float,
+  .animate-shimmer,
+  .animate-shake,
+  .animate-flash-green,
+  .animate-bounce-in,
+  .animate-flip-in,
+  .animate-pop-correct,
+  .animate-tile-pop,
+  .animate-countdown-pulse,
+  .pill-expanded-stagger,
+  .animate-ping,
+  .animate-pulse,
+  .animate-bounce,
+  .animate-spin {
+    animation: none !important;
   }
 }

@@ -61,7 +61,7 @@
       "level": 4,
       "type": "Public",
       "county": "Nairobi",
-      "subcounty": "Embakasi South",
+      "subcounty": "Embakasi West",
       "nhifAccredited": true
     },
     {
@@ -101,7 +101,7 @@
       "level": 4,
       "type": "Private",
       "county": "Nairobi",
-      "subcounty": "Mathare",
+      "subcounty": "Embakasi West",
       "nhifAccredited": true
     },
     {
@@ -109,7 +109,7 @@
       "level": 4,
       "type": "Faith-Based",
       "county": "Nairobi",
-      "subcounty": "Starehe",
+      "subcounty": "Dagoretti North",
       "nhifAccredited": true
     },
     {

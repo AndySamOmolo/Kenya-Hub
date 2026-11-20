@@ -65,7 +65,7 @@ export default function SearchInput({
         value={value}
         placeholder={placeholder}
         {...props}
-        className={`w-full min-w-0 h-11 sm:h-12 rounded-full bg-bg-elevated/75 border border-border text-sm text-text-primary placeholder:text-text-muted outline-none transition-all duration-200 hover:border-border-light focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/20 search-input-compact ${sanitizedClassName}`.trim()}
+        className={`w-full min-w-0 h-11 sm:h-12 rounded-full bg-bg-elevated/75 border border-border text-sm text-text-primary placeholder:text-text-muted transition-all duration-200 hover:border-border-light focus:border-gold focus:bg-bg-card focus:ring-2 focus:ring-gold/20 search-input-compact ${sanitizedClassName}`.trim()}
         style={{
           paddingLeft: "2.75rem",
           paddingRight: hasClearButton ? "2.75rem" : "2.5rem",

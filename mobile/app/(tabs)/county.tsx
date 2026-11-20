@@ -93,7 +93,14 @@ for (const b of (budgetsData as any).budgets || []) {
 
 const RAIN_MAP = new Map<number, any>();
 for (const r of (rainfallData as any).counties || []) {
-  RAIN_MAP.set(Number(r.code), r);
+  const monthlySum = MONTH_KEYS.reduce(
+    (acc, mk, idx) => acc + Number(r.monthly?.[mk] ?? r.monthlyAvg?.[idx] ?? 0),
+    0
+  );
+  RAIN_MAP.set(Number(r.code), {
+    ...r,
+    annualRainfall: monthlySum > 0 ? Math.round(monthlySum) : r.annualRainfall,
+  });
 }
 
 const STATIC_ENRICHED_COUNTIES = countiesData.counties.map((c) => ({

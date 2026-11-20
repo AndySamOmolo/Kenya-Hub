@@ -3,7 +3,7 @@
     {
       "code": 1,
       "name": "Mombasa",
-      "annualRainfall": 1040,
+      "annualRainfall": 1140,
       "climateZone": "Coastal",
       "longRains": "April – June",
       "shortRains": "October – December",
@@ -40,7 +40,7 @@
     {
       "code": 2,
       "name": "Kwale",
-      "annualRainfall": 1100,
+      "annualRainfall": 1213,
       "climateZone": "Coastal",
       "longRains": "April – June",
       "shortRains": "October – December",
@@ -77,7 +77,7 @@
     {
       "code": 3,
       "name": "Kilifi",
-      "annualRainfall": 1050,
+      "annualRainfall": 1085,
       "climateZone": "Coastal",
       "longRains": "April – June",
       "shortRains": "October – December",
@@ -151,7 +151,7 @@
     {
       "code": 5,
       "name": "Lamu",
-      "annualRainfall": 900,
+      "annualRainfall": 962,
       "climateZone": "Coastal",
       "longRains": "April – June",
       "shortRains": "October – December",
@@ -188,7 +188,7 @@
     {
       "code": 6,
       "name": "Taita Taveta",
-      "annualRainfall": 650,
+      "annualRainfall": 640,
       "climateZone": "Semi-Arid/Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -410,7 +410,7 @@
     {
       "code": 12,
       "name": "Meru",
-      "annualRainfall": 1200,
+      "annualRainfall": 1130,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -447,7 +447,7 @@
     {
       "code": 13,
       "name": "Tharaka-Nithi",
-      "annualRainfall": 1100,
+      "annualRainfall": 1048,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -484,7 +484,7 @@
     {
       "code": 14,
       "name": "Embu",
-      "annualRainfall": 1250,
+      "annualRainfall": 1192,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -521,7 +521,7 @@
     {
       "code": 15,
       "name": "Kitui",
-      "annualRainfall": 650,
+      "annualRainfall": 617,
       "climateZone": "Semi-Arid",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -558,7 +558,7 @@
     {
       "code": 16,
       "name": "Machakos",
-      "annualRainfall": 700,
+      "annualRainfall": 666,
       "climateZone": "Semi-Arid",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -595,7 +595,7 @@
     {
       "code": 17,
       "name": "Makueni",
-      "annualRainfall": 600,
+      "annualRainfall": 569,
       "climateZone": "Semi-Arid",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -632,7 +632,7 @@
     {
       "code": 18,
       "name": "Nyandarua",
-      "annualRainfall": 1400,
+      "annualRainfall": 1338,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -669,7 +669,7 @@
     {
       "code": 19,
       "name": "Nyeri",
-      "annualRainfall": 1350,
+      "annualRainfall": 1280,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -706,7 +706,7 @@
     {
       "code": 20,
       "name": "Kirinyaga",
-      "annualRainfall": 1300,
+      "annualRainfall": 1234,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -743,7 +743,7 @@
     {
       "code": 21,
       "name": "Murang'a",
-      "annualRainfall": 1350,
+      "annualRainfall": 1268,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -780,7 +780,7 @@
     {
       "code": 22,
       "name": "Kiambu",
-      "annualRainfall": 1100,
+      "annualRainfall": 1040,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -854,7 +854,7 @@
     {
       "code": 24,
       "name": "West Pokot",
-      "annualRainfall": 900,
+      "annualRainfall": 853,
       "climateZone": "Semi-Arid/Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -891,7 +891,7 @@
     {
       "code": 25,
       "name": "Samburu",
-      "annualRainfall": 450,
+      "annualRainfall": 443,
       "climateZone": "Semi-Arid",
       "longRains": "March – May",
       "shortRains": "October – November",
@@ -928,7 +928,7 @@
     {
       "code": 26,
       "name": "Trans Nzoia",
-      "annualRainfall": 1250,
+      "annualRainfall": 1225,
       "climateZone": "Highland",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -965,7 +965,7 @@
     {
       "code": 27,
       "name": "Uasin Gishu",
-      "annualRainfall": 1100,
+      "annualRainfall": 1110,
       "climateZone": "Highland",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1002,7 +1002,7 @@
     {
       "code": 28,
       "name": "Elgeyo Marakwet",
-      "annualRainfall": 1150,
+      "annualRainfall": 1155,
       "climateZone": "Highland",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1039,7 +1039,7 @@
     {
       "code": 29,
       "name": "Nandi",
-      "annualRainfall": 1400,
+      "annualRainfall": 1385,
       "climateZone": "Highland",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1076,7 +1076,7 @@
     {
       "code": 30,
       "name": "Baringo",
-      "annualRainfall": 700,
+      "annualRainfall": 670,
       "climateZone": "Semi-Arid",
       "longRains": "March – May",
       "shortRains": "October – November",
@@ -1113,7 +1113,7 @@
     {
       "code": 31,
       "name": "Laikipia",
-      "annualRainfall": 700,
+      "annualRainfall": 666,
       "climateZone": "Semi-Arid/Highland",
       "longRains": "March – May",
       "shortRains": "October – November",
@@ -1150,7 +1150,7 @@
     {
       "code": 32,
       "name": "Nakuru",
-      "annualRainfall": 950,
+      "annualRainfall": 918,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -1187,7 +1187,7 @@
     {
       "code": 33,
       "name": "Narok",
-      "annualRainfall": 1050,
+      "annualRainfall": 990,
       "climateZone": "Highland/Savanna",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -1224,7 +1224,7 @@
     {
       "code": 34,
       "name": "Kajiado",
-      "annualRainfall": 600,
+      "annualRainfall": 572,
       "climateZone": "Semi-Arid/Savanna",
       "longRains": "March – May",
       "shortRains": "October – December",
@@ -1261,7 +1261,7 @@
     {
       "code": 35,
       "name": "Kericho",
-      "annualRainfall": 1800,
+      "annualRainfall": 1715,
       "climateZone": "Highland",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1298,7 +1298,7 @@
     {
       "code": 36,
       "name": "Bomet",
-      "annualRainfall": 1500,
+      "annualRainfall": 1456,
       "climateZone": "Highland",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1335,7 +1335,7 @@
     {
       "code": 37,
       "name": "Kakamega",
-      "annualRainfall": 1900,
+      "annualRainfall": 1800,
       "climateZone": "Highland/Equatorial",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1372,7 +1372,7 @@
     {
       "code": 38,
       "name": "Vihiga",
-      "annualRainfall": 1900,
+      "annualRainfall": 1769,
       "climateZone": "Highland/Equatorial",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1409,7 +1409,7 @@
     {
       "code": 39,
       "name": "Bungoma",
-      "annualRainfall": 1500,
+      "annualRainfall": 1430,
       "climateZone": "Highland",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1446,7 +1446,7 @@
     {
       "code": 40,
       "name": "Busia",
-      "annualRainfall": 1500,
+      "annualRainfall": 1448,
       "climateZone": "Equatorial",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1483,7 +1483,7 @@
     {
       "code": 41,
       "name": "Siaya",
-      "annualRainfall": 1350,
+      "annualRainfall": 1294,
       "climateZone": "Equatorial",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1520,7 +1520,7 @@
     {
       "code": 42,
       "name": "Kisumu",
-      "annualRainfall": 1300,
+      "annualRainfall": 1249,
       "climateZone": "Equatorial",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1557,7 +1557,7 @@
     {
       "code": 43,
       "name": "Homa Bay",
-      "annualRainfall": 1200,
+      "annualRainfall": 1139,
       "climateZone": "Equatorial",
       "longRains": "March – May",
       "shortRains": "September – November",
@@ -1594,7 +1594,7 @@
     {
       "code": 44,
       "name": "Migori",
-      "annualRainfall": 1350,
+      "annualRainfall": 1305,
       "climateZone": "Equatorial",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1631,7 +1631,7 @@
     {
       "code": 45,
       "name": "Kisii",
-      "annualRainfall": 1750,
+      "annualRainfall": 1663,
       "climateZone": "Highland/Equatorial",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1668,7 +1668,7 @@
     {
       "code": 46,
       "name": "Nyamira",
-      "annualRainfall": 1700,
+      "annualRainfall": 1614,
       "climateZone": "Highland/Equatorial",
       "longRains": "March – June",
       "shortRains": "September – November",
@@ -1705,7 +1705,7 @@
     {
       "code": 47,
       "name": "Nairobi",
-      "annualRainfall": 900,
+      "annualRainfall": 829,
       "climateZone": "Highland",
       "longRains": "March – May",
       "shortRains": "October – December",

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import LanguageClientPage from "@/components/learn/LanguageClientPage";
 import { getCourse, PUBLISHED_COURSES } from "@/data/courses/registry";
+import { DICT_META_MAP } from "@/data/language-sources";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -26,11 +27,15 @@ export async function generateMetadata({
     ? course.config.name
     : `${course.config.name} (${course.config.nativeName})`;
   const title = `Learn ${displayLang} Online — Free Interactive Kenyan Language Course, Phrases & Dictionary`;
-  const totalWords = course.units.reduce(
+  const dictMeta = DICT_META_MAP[course.config.id];
+  const courseWords = course.units.reduce(
     (sum, unit) => sum + unit.skills.reduce((s, sk) => s + sk.words.length, 0),
     0
   );
-  const description = `${course.config.description} Explore ${course.units.length} units and ${totalWords.toLocaleString()}+ ${displayLang} vocabulary entries, grammar notes, common phrases, flashcards, and cultural proverbs free on KenyaHub.`;
+  const totalWords = Math.max(courseWords, dictMeta?.totalEntries || 0);
+  const hasDictUnit = Boolean(dictMeta && dictMeta.categories.some((c) => c.count > 0));
+  const totalUnits = course.units.length + (hasDictUnit ? 1 : 0);
+  const description = `${course.config.description} Explore ${totalUnits} units and ${totalWords.toLocaleString("en-KE")}+ ${displayLang} vocabulary entries, grammar notes, common phrases, flashcards, and cultural proverbs free on KenyaHub.`;
 
   return {
     title,

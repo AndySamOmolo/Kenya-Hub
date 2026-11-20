@@ -28,7 +28,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-greetings",
-        "title": "Greetings & Pastoral Blessings (Part 1)",
+        "title": "Greetings & Pastoral Blessings",
         "icon": "Hospital",
         "description": "Master Turkana greetings & farewells vocabulary and expressions from verified historical sources.",
         "tips": "Traditional Turkana pastoral greetings invoke 'Mata!' (Health!) across family, cattle ('Mata ng'atuk'), homestead ('Mata ouwi'), children ('Mata ng'idwi'), and community gatherings ('Mata ariama').",
@@ -143,7 +143,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-greetings-2",
-        "title": "Community Greetings & Farewells (Part 2)",
+        "title": "Community Greetings & Farewells",
         "icon": "Handshake",
         "description": "Master Turkana greetings & farewells vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Greetings & Farewells, pay special attention to pronunciation and morphological prefixes/suffixes: 'Mata ouwi' (Health to your village), 'Mata ng'idwi' (Health to your children), 'Mata ariama' (Health to our meetings), 'Mata ng'ebarin' (Health to your property).",
@@ -309,7 +309,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-numbers",
-        "title": "Numbers (Part 1)",
+        "title": "Numbers 1–10 & Foundations",
         "icon": "BookOpen",
         "description": "Master Turkana numbers vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Numbers, pay special attention to pronunciation and morphological prefixes/suffixes: 'Apei / Epei' (One), 'Ngaarei / Ngiarei (Ari)' (Two), 'Ngauni / Ngiuni (Uni)' (Three), 'Ngaomon / Ngiomon (Omwon)' (Four).",
@@ -514,7 +514,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-numbers-2",
-        "title": "Numbers (Part 2)",
+        "title": "Higher Numbers & Counting",
         "icon": "Compass",
         "description": "Master Turkana numbers vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Numbers, pay special attention to pronunciation and morphological prefixes/suffixes: 'Tomon ari / Ngatomona arei' (Twenty), 'Tomon uni' (Thirty), 'Tomon omwon' (Forty), 'Tomon akhan / Ngatomona akan' (Fifty).",
@@ -721,7 +721,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-calendar-seasons",
-        "title": "Calendar & Seasons (Part 1)",
+        "title": "Days, Times & Seasons",
         "icon": "Clock",
         "description": "Master Turkana calendar & seasons vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Calendar & Seasons, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ageboro' (Rainy season), 'Akamu' (Dry season), 'Lodungi' (January), 'Lomoruk' (February).",
@@ -821,7 +821,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "January",
               "February"
             ],
-            "hint": "Core vocabulary in Calendar & Seasons (Part 1)"
+            "hint": "Core vocabulary in Days, Times & Seasons"
           },
           {
             "type": "translate_to_target",
@@ -841,11 +841,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "January",
               "January"
             ],
-            "hint": "Review Calendar & Seasons (Part 1)"
+            "hint": "Review Days, Times & Seasons"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each expression from Calendar & Seasons (Part 1) with its English meaning:",
+            "prompt": "Match each expression from Days, Times & Seasons with its English meaning:",
             "correctAnswer": "all_matched",
             "pairs": [
               {
@@ -874,7 +874,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-calendar-seasons-2",
-        "title": "Calendar & Seasons (Part 2)",
+        "title": "Months & Pastoral Calendar",
         "icon": "Calendar",
         "description": "Master Turkana calendar & seasons vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Calendar & Seasons, pay special attention to pronunciation and morphological prefixes/suffixes: 'Lorarrar' (November), 'Lugwan' (December), 'Ekaru (pl. ngaro)' (Year), 'Elap (pl. ngelapio)' (Month / Moon).",
@@ -1090,7 +1090,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-calendar-seasons-3",
-        "title": "Calendar & Seasons (Part 3)",
+        "title": "Weather, Rain & Sky Cycles",
         "icon": "Sun",
         "description": "Master Turkana calendar & seasons vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Calendar & Seasons, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ewi akolon' (Overhead sun (12 p.m.)), 'Athom akolon' (Mid-afternoon sun (2 p.m.)), 'Aloma akolon' (Sunset (6 p.m.)), 'Tete / Akolon itina' (Today).",
@@ -1287,7 +1287,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-family",
-        "title": "Family & People (Part 1)",
+        "title": "Immediate Family & Kinship",
         "icon": "Users",
         "description": "Master Turkana family & people vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Family & People, pay special attention to pronunciation and morphological prefixes/suffixes: 'Etunganan / Etonganan (pl. ngitunga)' (Person / Mankind), 'Ekili / E'kili (pl. ngiliok)' (Man / Male), 'Abero / A'bero (pl. ngabero)' (Woman / Female), 'Baba / Papa (pl. tababa / ngipapao)' (Father).",
@@ -1534,7 +1534,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-family-2",
-        "title": "Family & People (Part 2)",
+        "title": "Extended Clan & Community Roles",
         "icon": "User",
         "description": "Master Turkana family & people vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Family & People, pay special attention to pronunciation and morphological prefixes/suffixes: 'Apa (pl. ngapapai)' (Grandfather / Male ancestor), 'Tata (pl. ngatubai)' (Grandmother / Female ancestor), 'Eya (pl. ngaiyayai)' (Aunt), 'Baba / Mama (pl. ngebabai)' (Uncle).",
@@ -1676,7 +1676,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Uncle",
               "Grandfather"
             ],
-            "hint": "Core vocabulary in Family & People (Part 2)",
+            "hint": "Core vocabulary in Extended Clan & Community Roles",
             "acceptedAnswers": [
               "Grandfather / Male ancestor",
               "Grandfather"
@@ -1700,11 +1700,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Aunt",
               "Aunt"
             ],
-            "hint": "Review Family & People (Part 2)"
+            "hint": "Review Extended Clan & Community Roles"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each expression from Family & People (Part 2) with its English meaning:",
+            "prompt": "Match each expression from Extended Clan & Community Roles with its English meaning:",
             "correctAnswer": "all_matched",
             "pairs": [
               {
@@ -1743,7 +1743,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-animals",
-        "title": "Animals & Wildlife (Part 1)",
+        "title": "Cattle, Goats & Pastoral Herds",
         "icon": "PawPrint",
         "description": "Master Turkana animals & wildlife vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ng'atuk / Ngatuk (sing. Ate / Atāka)' (Cattle (Herds)), 'Atāka / Aite (pl. ngatak / ngatuk)' (Cow), 'Emanik (pl. ngemaniko)' (Bull), 'Emon (pl. ngemongin)' (Bullock / Ox).",
@@ -1952,7 +1952,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-animals-2",
-        "title": "Animals & Wildlife (Part 2)",
+        "title": "Savanna Wildlife & Predators",
         "icon": "Compass",
         "description": "Master Turkana animals & wildlife vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Esikirya / E'sikiriya (pl. ngisikirya)' (Donkey), 'Akāl / Ekaal (pl. ngāl / ngikaala)' (Camel), 'Etom / E'tome (pl. ngetom / ngitomei)' (Elephant), 'Angatuin / Engatun (pl. ngatuino / ngingatunyo)' (Lion).",
@@ -2157,7 +2157,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-animals-3",
-        "title": "Animals & Wildlife (Part 3)",
+        "title": "Birds of the Turkana Basin",
         "icon": "TreePine",
         "description": "Master Turkana animals & wildlife vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Epir (pl. ngipirin)' (Hippopotamus), 'Etugo / Etuko (pl. ngetugoi / ngitukoi)' (Zebra), 'Uwabet (pl. nguawabeto)' (Eland), 'Eder (pl. ngederin)' (Oryx).",
@@ -2358,7 +2358,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-animals-4",
-        "title": "Animals & Wildlife (Part 4)",
+        "title": "Reptiles, Insects & Small Fauna",
         "icon": "Target",
         "description": "Master Turkana animals & wildlife vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Akodokon (pl. ngadokoi)' (Monkey), 'Akinyan / Akinyang (pl. ngakinyanga)' (Crocodile), 'Ebokok (pl. ngebokoka)' (Tortoise), 'Emun (pl. ngemun)' (Snake).",
@@ -2563,7 +2563,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-animals-5",
-        "title": "Animals & Wildlife (Part 5)",
+        "title": "Fish & Lake Turkana Ecology",
         "icon": "BookOpen",
         "description": "Master Turkana animals & wildlife vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Animals & Wildlife, pay special attention to pronunciation and morphological prefixes/suffixes: 'Atapen (pl. ngatapeno)' (Guineafowl), 'Ekuri (pl. ngokori)' (Dove), 'Atapeng / Akukor (pl. ngatapengo / ngakukoroi)' (Chicken / Fowl), 'Apoo (pl. ngapooi)' (Hare / Rabbit).",
@@ -2726,7 +2726,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-nature",
-        "title": "Nature & Environment (Part 1)",
+        "title": "Landforms, Water & Dryland Terrain",
         "icon": "TreePine",
         "description": "Master Turkana nature & environment vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ng'akipi / Agipi (pl. ngagipi)' (Water), 'Angalul / Angolul (pl. ngangolulio)' (River / Stream), 'Ayonay (pl. ngiyonay)' (Dry riverbed (Laga)), 'Emoro / Emor (pl. ngemor)' (Mountain).",
@@ -2838,7 +2838,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Water",
               "Stream"
             ],
-            "hint": "Core vocabulary in Nature & Environment (Part 1)"
+            "hint": "Core vocabulary in Landforms, Water & Dryland Terrain"
           },
           {
             "type": "translate_to_target",
@@ -2858,11 +2858,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Mountain",
               "Mountain"
             ],
-            "hint": "Review Nature & Environment (Part 1)"
+            "hint": "Review Landforms, Water & Dryland Terrain"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each expression from Nature & Environment (Part 1) with its English meaning:",
+            "prompt": "Match each expression from Landforms, Water & Dryland Terrain with its English meaning:",
             "correctAnswer": "all_matched",
             "pairs": [
               {
@@ -2891,7 +2891,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-nature-2",
-        "title": "Nature & Environment (Part 2)",
+        "title": "Trees, Acacia & Useful Plants",
         "icon": "Leaf",
         "description": "Master Turkana nature & environment vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Akuich / Akuj' (Sky / Heaven), 'Edu (pl. ngeduon)' (Cloud), 'Atorot / Ekuwam (pl. ngatorot / ngikuwamin)' (Wind), 'Ekwam (pl. ngakwama)' (Whirlwind / Dust devil).",
@@ -3118,7 +3118,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-nature-3",
-        "title": "Nature & Environment (Part 3)",
+        "title": "Sun, Stars & Natural Elements",
         "icon": "Sprout",
         "description": "Master Turkana nature & environment vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Nature & Environment, pay special attention to pronunciation and morphological prefixes/suffixes: 'Akitoi / E'kitoi (pl. ngakito)' (Tree), 'Ateni (pl. ngateni)' (Tree branch), 'Akobuket (pl. ngabuk)' (Tree bark), 'Akui (pl. ngakui)' (Leaf).",
@@ -3212,7 +3212,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Leaf",
               "Tree"
             ],
-            "hint": "Core vocabulary in Nature & Environment (Part 3)"
+            "hint": "Core vocabulary in Sun, Stars & Natural Elements"
           },
           {
             "type": "translate_to_target",
@@ -3232,11 +3232,11 @@ export const TURKANA_UNITS: CourseUnit[] = [
               "Tree bark",
               "Tree bark"
             ],
-            "hint": "Review Nature & Environment (Part 3)"
+            "hint": "Review Sun, Stars & Natural Elements"
           },
           {
             "type": "match_pairs",
-            "prompt": "Match each expression from Nature & Environment (Part 3) with its English meaning:",
+            "prompt": "Match each expression from Sun, Stars & Natural Elements with its English meaning:",
             "correctAnswer": "all_matched",
             "pairs": [
               {
@@ -3275,7 +3275,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-body",
-        "title": "Body Parts (Part 1)",
+        "title": "Head, Face & Senses",
         "icon": "Activity",
         "description": "Master Turkana body parts vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ako / Akou (pl. nyakis / ngakouō)' (Head), 'Atimat / Ngetim (pl. ngatim)' (Hair), 'Akon / Akong (pl. ngakonyan)' (Eye), 'Agit / Akit (pl. nyagi / ngaki)' (Ear).",
@@ -3480,7 +3480,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-body-2",
-        "title": "Body Parts (Part 2)",
+        "title": "Limbs, Hands & Movement",
         "icon": "Eye",
         "description": "Master Turkana body parts vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Eret (pl. ngeretin)' (Face), 'Ethiket / Ekeget (pl. ngethiketa / ngikegeta)' (Shoulder), 'Etorob (pl. ngatorobio)' (Chest), 'Ethigina / Ekidi (pl. ngethigin)' (Breast).",
@@ -3685,7 +3685,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-body-3",
-        "title": "Body Parts (Part 3)",
+        "title": "Internal Organs & Physical Health",
         "icon": "Hand",
         "description": "Master Turkana body parts vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Body Parts, pay special attention to pronunciation and morphological prefixes/suffixes: 'Emargoit / Emagarit (pl. ngemagor)' (Fingernail / Claw), 'Akeju (pl. ngakeju)' (Leg), 'Akun / Akung (pl. ngakungin)' (Knee), 'Adapal akeju / Etou ya keju' (Foot / Sole).",
@@ -3900,7 +3900,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-food",
-        "title": "Food & Drink (Part 1)",
+        "title": "Milk, Meat & Staple Foods",
         "icon": "Soup",
         "description": "Master Turkana food & drink vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Food & Drink, pay special attention to pronunciation and morphological prefixes/suffixes: 'Akirin (pl. ngakerin / ngakir)' (Meat), 'Akili / Ngakile' (Milk), 'Alepan' (Fresh milk), 'Ngakikok' (Curdled milk).",
@@ -4109,7 +4109,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-food-2",
-        "title": "Food & Drink (Part 2)",
+        "title": "Cooking, Harvest & Hospitality",
         "icon": "Coffee",
         "description": "Master Turkana food & drink vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Food & Drink, pay special attention to pronunciation and morphological prefixes/suffixes: 'Akimoich / Akimuj (pl. ngimocha)' (Food (provisions)), 'Ng'akipi / Agipi' (Drinking water), 'Edot (pl. ngedotin)' (Salt / Salt-lick), 'Enyakait (pl. nganyakaita)' (Chewing tobacco).",
@@ -4290,7 +4290,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-home",
-        "title": "Home & Material Culture (Part 1)",
+        "title": "Homestead & Manyatta Structure",
         "icon": "Home",
         "description": "Master Turkana home & material culture vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Home & Material Culture, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ouwi / Nawi (pl. ngouwi / ngawiyoi)' (Homestead / Village), 'Akie / Akai (pl. ngakiyis / ngkais)' (House / Family hut), 'Akidor (pl. ngidorin / ngikidoria)' (Door / Kraal gate), 'Anuk / Anok (pl. nganukim / ngokin)' (Cattle kraal / Enclosure).",
@@ -4555,7 +4555,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-home-2",
-        "title": "Home & Material Culture (Part 2)",
+        "title": "Vessels, Gourds & Daily Utensils",
         "icon": "Landmark",
         "description": "Master Turkana home & material culture vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Home & Material Culture, pay special attention to pronunciation and morphological prefixes/suffixes: 'Amut (pl. ngamuti)' (Cooking pot), 'Akolopoich (pl. ngolopoicha)' (Traditional wooden spoon), 'Eteker / Etuba (pl. ngatekera / ngatubai)' (Watering trough), 'Akim (pl. ngakimia)' (Fire).",
@@ -4760,7 +4760,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-home-3",
-        "title": "Home & Material Culture (Part 3)",
+        "title": "Clothing, Beads & Adornment",
         "icon": "Hammer",
         "description": "Master Turkana home & material culture vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Home & Material Culture, pay special attention to pronunciation and morphological prefixes/suffixes: 'Amedok (pl. ngemedoi)' (Mud head-dress), 'Eburiangan (pl. ngeburianganga)' (Tobacco box), 'Echui (pl. ngechuin)' (Skin pouch / Bag), 'Echiro (pl. ngichiroi)' (Market).",
@@ -4891,7 +4891,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-weapons-tools",
-        "title": "Weapons & Tools (Part 1)",
+        "title": "Herding Tools & Implements",
         "icon": "Hammer",
         "description": "Master Turkana weapons & tools vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Weapons & Tools, pay special attention to pronunciation and morphological prefixes/suffixes: 'Akwara / A'kwara (pl. ngakwarath / ngawarath)' (Spear), 'Emorok (pl. ngemorkin)' (Spear shaft), 'Akuraro (pl. ngakuraroi)' (Spear sheath), 'Oupwol / E'gwoe / Egwo (pl. ngoupwala / ngigwoi)' (Shield).",
@@ -5095,7 +5095,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-weapons-tools-2",
-        "title": "Weapons & Tools (Part 2)",
+        "title": "Traditional Shields & Spears",
         "icon": "PawPrint",
         "description": "Master Turkana weapons & tools vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Weapons & Tools, pay special attention to pronunciation and morphological prefixes/suffixes: 'Atom (pl. ngetom)' (Rifle / Gun), 'Atom (pl. ngatom)' (War horn / Trumpet), 'Akuta (pl. ngakuta)' (Wooden digging stick), 'Ameleko (pl. ngemelakoi)' (Iron hoe).",
@@ -5300,7 +5300,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-verbs",
-        "title": "Verbs & Actions (Part 1)",
+        "title": "Core Movement & Everyday Verbs",
         "icon": "Soup",
         "description": "Master Turkana verbs & actions vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Emugi / Akimuji' (To eat), 'Emathi / Akimati' (To drink), 'Aperi / Topper' (To sleep), 'Alothi / Tolot' (To go).",
@@ -5523,7 +5523,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-verbs-2",
-        "title": "Verbs & Actions (Part 2)",
+        "title": "Communication & Social Actions",
         "icon": "Hammer",
         "description": "Master Turkana verbs & actions vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Anyouni' (To rise / get up), 'Ainagini / Akini' (To give), 'Alemari / Atachi' (To take / receive), 'Arami / Karam' (To hit / beat).",
@@ -5762,7 +5762,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-verbs-3",
-        "title": "Verbs & Actions (Part 3)",
+        "title": "Work, Herding & Household Verbs",
         "icon": "Heart",
         "description": "Master Turkana verbs & actions vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Verbs & Actions, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ayeni' (To tie / bind), 'Alachari / Alakari' (To untie / loosen), 'Alepa' (To milk), 'Aiyoki / Eyogi' (To graze / herd).",
@@ -5991,7 +5991,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
     "skills": [
       {
         "id": "turkana-exp-phrases",
-        "title": "Common Phrases (Part 1)",
+        "title": "Everyday Conversations & Politeness",
         "icon": "BookOpen",
         "description": "Master Turkana common phrases vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ngai akero ekon? / Ngai ekiro kon?' (What is your name?), 'Ekiro kang erai...' (My name is...), 'Alothi ai? / Ilotit iwon ai?' (Where are you going?), 'Eyyey ngeth? / Ali ngeth?' (Where is he / she?).",
@@ -6180,7 +6180,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-phrases-2",
-        "title": "Common Phrases (Part 2)",
+        "title": "Questions, Directions & Travel",
         "icon": "Crown",
         "description": "Master Turkana common phrases vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Esagin nyo? / Isagin nyo?' (What do you want?), 'Ali tela kon?' (What is your tribe?), 'Ngeyai? / Nyeyai? / Erai ngiai?' (How much? / How many?), 'Ikwani?' (Why?).",
@@ -6381,7 +6381,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-phrases-3",
-        "title": "Common Phrases (Part 3)",
+        "title": "Market, Trade & Requests",
         "icon": "Droplets",
         "description": "Master Turkana common phrases vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Epol (pl. ngepolok)' (Big / Great), 'Edit (pl. ngedithok)' (Small / Little), 'Noi / Kere' (Very / Truly), 'Ayari / Akiyar akwan' (I am well).",
@@ -6606,7 +6606,7 @@ export const TURKANA_UNITS: CourseUnit[] = [
       },
       {
         "id": "turkana-exp-phrases-4",
-        "title": "Common Phrases (Part 4)",
+        "title": "Proverbs, Wishes & Expressions",
         "icon": "Sun",
         "description": "Master Turkana common phrases vocabulary and expressions from verified historical sources.",
         "tips": "In this Turkana skill covering Common Phrases, pay special attention to pronunciation and morphological prefixes/suffixes: 'Kidyeny' (Left), 'Teten' (Right), 'Ngeselekin / Pesa' (Money), 'Togangai! / Torimokakithai!' (Help!).",

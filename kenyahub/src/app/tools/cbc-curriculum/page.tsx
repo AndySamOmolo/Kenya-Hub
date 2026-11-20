@@ -12,14 +12,6 @@ import publicHolidaysData from "@/data/public-holidays.json";
 
 const tool = TOOLS.find((t) => t.slug === "cbc-curriculum")!;
 
-const faq = [
-  { question: "What is the CBC education system in Kenya?", answer: "The Competency-Based Curriculum (CBC) replaced the 8-4-4 system. It uses a 2-6-3-3-3 structure: 2 years Pre-Primary (PP1–PP2), 6 years Primary (Lower Grade 1–3 + Upper Grade 4–6), 3 years Junior School (Grade 7–9), and 3 years Senior School (Grade 10–12). It focuses on practical competencies, values, and continuous assessment alongside national evaluations." },
-  { question: "What subjects are taught in CBC Kenya?", answer: "CBC subjects vary by level. Pre-Primary covers Language, Mathematical, Environmental, Psychomotor, and Religious activities. Lower and Upper Primary introduce English, Kiswahili, Mathematics, Science & Technology, Agriculture & Nutrition, Social Studies, and Creative Arts. Junior School (Grades 7–9) consolidates into 9 core learning areas including Integrated Science, Pre-Technical Studies, and Social Studies." },
-  { question: "What are the three Senior School (Grade 10–12) pathways?", answer: "Grade 10–12 students select one of three specialized career pathways based on KJSEA performance, SBA scores, and career interest: STEM (Pure Sciences, Applied Sciences, Technical & Engineering), Social Sciences (Humanities, Business Studies, Languages & Literature), or Arts & Sports Science (Performing Arts, Visual Arts, Sports Science)." },
-  { question: "What age should a child start PP1 or Grade 1 in Kenya?", answer: "Under Ministry of Education guidelines, a child enters Pre-Primary 1 (PP1) in the calendar year they turn 4 years old, PP2 at age 5, Grade 1 at age 6, Grade 7 (Junior School) at age 12, and Grade 10 (Senior School) at age 15." },
-  { question: "How are KPSEA and KJSEA assessments weighted under CBC?", answer: "At Grade 6 (KPSEA) and Grade 9 (KJSEA), Classroom School-Based Assessments (SBA) conducted across Grades 4–6 and Grades 7–9 contribute 60% of the learner's cumulative score, while the summative KNEC national assessment contributes 40% (with 20% KPSEA + 20% SBA + 60% KJSEA used for Senior School placement)." },
-];
-
 export default function CBCCurriculumPage() {
   const [selectedLevel, setSelectedLevel] = useState(cbcData.levels[0].id);
   const [birthYear, setBirthYear] = useState<number>(2016);
@@ -55,8 +47,10 @@ export default function CBCCurriculumPage() {
     };
   }, [birthYear]);
 
+  const hasPathways = "pathways" in level && Array.isArray(level.pathways) && level.pathways.length > 0;
+
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <ToolShell tool={tool}>
       <div className="space-y-6">
         {/* Level Selector — Horizontal Scrolling Pills */}
         <ExpandablePillRow>
@@ -65,8 +59,10 @@ export default function CBCCurriculumPage() {
             return (
               <button
                 key={l.id}
+                type="button"
+                aria-pressed={active}
                 onClick={() => setSelectedLevel(l.id)}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -79,8 +75,8 @@ export default function CBCCurriculumPage() {
         </ExpandablePillRow>
 
         {/* Level Info */}
-        <div className="result-box">
-          <div className="flex items-start justify-between flex-wrap gap-4">
+        <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
+          <div className="flex items-start justify-between flex-wrap gap-3">
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-1">
                 {level.name}
@@ -92,8 +88,10 @@ export default function CBCCurriculumPage() {
                 Previous 8-4-4 system equivalent: {level.previousSystem}
               </p>
             </div>
-            <span className="badge badge-education">
-              {level.learningAreas?.length || 0} Learning Areas
+            <span className="badge badge-education whitespace-nowrap">
+              {hasPathways
+                ? `${level.pathways!.length} Career Pathways`
+                : `${level.learningAreas?.length || 0} Learning Areas`}
             </span>
           </div>
         </div>
@@ -167,9 +165,9 @@ export default function CBCCurriculumPage() {
         <div className="bg-bg-card border border-border rounded-xl p-5 sm:p-6 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <h3 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
+              <h2 className="text-base font-bold font-[family-name:var(--font-outfit)] text-text-primary">
                 Interactive 2026 CBC Grade &amp; Birth-Year Calculator
-              </h3>
+              </h2>
               <p className="text-xs text-text-muted">
                 Select or enter your child&apos;s birth year to check their expected 2026 CBC grade and former 8-4-4 equivalent.
               </p>
@@ -201,7 +199,7 @@ export default function CBCCurriculumPage() {
                     setBirthYearInput(String(clamped));
                   }}
                   placeholder="2016"
-                  className="input-field w-32 text-sm font-bold text-left pl-3! pr-9! py-1.5"
+                  className="input-field w-32 text-sm font-bold text-left pl-3! pr-9! py-1.5 border border-border dark:border-white/15 tabular-nums"
                   style={{ paddingLeft: "0.75rem", paddingRight: "2.25rem" }}
                 />
                 {birthYearInput && (
@@ -223,11 +221,12 @@ export default function CBCCurriculumPage() {
               <button
                 key={yr}
                 type="button"
+                aria-pressed={birthYear === yr}
                 onClick={() => {
                   setBirthYear(yr);
                   setBirthYearInput(String(yr));
                 }}
-                className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors ${
+                className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors cursor-pointer ${
                   birthYear === yr
                     ? "bg-gold/15 border-gold text-gold font-bold"
                     : "bg-bg-elevated border-border text-text-secondary hover:border-gold/40"
@@ -238,7 +237,12 @@ export default function CBCCurriculumPage() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 pt-1">
+          <div
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+            className="grid grid-cols-1 sm:grid-cols-4 gap-3 pt-1"
+          >
             <div className="bg-bg-elevated border border-border/70 rounded-xl p-3.5">
               <p className="text-[0.65rem] text-text-muted uppercase">Expected 2026 Grade</p>
               <p className="text-lg font-extrabold text-kenya-green-light font-[family-name:var(--font-outfit)] mt-0.5">
@@ -247,7 +251,7 @@ export default function CBCCurriculumPage() {
             </div>
             <div className="bg-bg-elevated border border-border/70 rounded-xl p-3.5">
               <p className="text-[0.65rem] text-text-muted uppercase">Age Turned in 2026</p>
-              <p className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)] mt-0.5">
+              <p className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)] mt-0.5 tabular-nums">
                 {gradeAgeResult.turnsAge} Years
               </p>
             </div>
@@ -269,19 +273,19 @@ export default function CBCCurriculumPage() {
         {/* CBC vs 8-4-4 Comparison */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+            <h2 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
               Complete CBC vs 8-4-4 Grade-Age Mapping Table (PP1 to Grade 12)
-            </h3>
+            </h2>
           </div>
           <div className="overflow-x-auto">
             <table className="data-table">
               <thead>
                 <tr>
-                  <th>CBC Grade</th>
-                  <th>Official Age</th>
-                  <th>2026 Birth Year</th>
-                  <th>8-4-4 Equivalent</th>
-                  <th>CBC Tier</th>
+                  <th className="whitespace-nowrap">CBC Grade</th>
+                  <th className="whitespace-nowrap">Official Age</th>
+                  <th className="whitespace-nowrap">2026 Birth Year</th>
+                  <th className="whitespace-nowrap">8-4-4 Equivalent</th>
+                  <th className="whitespace-nowrap">CBC Tier</th>
                 </tr>
               </thead>
               <tbody>
@@ -289,13 +293,13 @@ export default function CBCCurriculumPage() {
                   const isSelected = gradeAgeResult.currentGrade === row.grade;
                   return (
                     <tr key={row.grade} className={isSelected ? "bg-gold/10" : ""}>
-                      <td className={`font-semibold ${isSelected ? "text-gold" : "text-text-primary"}`}>
+                      <td className={`font-semibold whitespace-nowrap ${isSelected ? "text-gold" : "text-text-primary"}`}>
                         {row.grade} {isSelected ? "← Selected" : ""}
                       </td>
-                      <td className="text-text-secondary">{row.turnsAge} years</td>
-                      <td className="font-mono text-xs text-text-muted">{2026 - row.turnsAge}</td>
-                      <td className="text-text-muted">{row.previousEquivalent}</td>
-                      <td>
+                      <td className="text-text-secondary whitespace-nowrap tabular-nums">{row.turnsAge} years</td>
+                      <td className="font-mono text-xs text-text-muted whitespace-nowrap tabular-nums">{2026 - row.turnsAge}</td>
+                      <td className="text-text-muted whitespace-nowrap">{row.previousEquivalent}</td>
+                      <td className="whitespace-nowrap">
                         <span className="badge badge-education text-[0.6rem]">{row.level}</span>
                       </td>
                     </tr>
@@ -314,7 +318,7 @@ export default function CBCCurriculumPage() {
             </h2>
             <div className="space-y-2">
               {(schoolTermsData.years["2026"]?.terms || []).map((term) => (
-                <div key={term.name} className="rounded-xl bg-bg-elevated/60 border border-border p-3 text-xs flex items-center justify-between gap-2">
+                <div key={term.name} className="rounded-xl bg-bg-elevated/60 border border-border p-3 text-xs flex items-center justify-between gap-2 flex-wrap">
                   <div>
                     <p className="font-bold text-text-primary">{term.name} ({term.weeks} weeks)</p>
                     <p className="text-text-secondary">{term.openingDate} to {term.closingDate}</p>

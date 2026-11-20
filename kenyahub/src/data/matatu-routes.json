@@ -5,7 +5,7 @@
       "name": "Nairobi",
       "county": "Nairobi",
       "isActive": true,
-      "routeCount": 29,
+      "routeCount": 32,
       "description": "Kenya's capital and largest city. Hub of the matatu network."
     },
     {
@@ -37,7 +37,7 @@
       "name": "Eldoret",
       "county": "Uasin Gishu",
       "isActive": true,
-      "routeCount": 6,
+      "routeCount": 7,
       "description": "North Rift commercial hub. Routes serve Langas, Huruma, Annex, and university campuses."
     },
     {
@@ -45,15 +45,15 @@
       "name": "Thika",
       "county": "Kiambu",
       "isActive": true,
-      "routeCount": 5,
+      "routeCount": 6,
       "description": "Industrial town north of Nairobi. Routes serve Makongeni, Landless, Gatuanyaga, and Section 9."
     }
   ],
   "routes": {
     "nairobi": [
       {
-        "routeNumber": "2",
-        "slug": "route-2-cbd-karen",
+        "routeNumber": "24",
+        "slug": "route-24-cbd-karen",
         "name": "CBD – Karen",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Karen Shopping Centre",
@@ -158,9 +158,9 @@
         ]
       },
       {
-        "routeNumber": "33",
-        "slug": "route-33-cbd-rongai",
-        "name": "CBD – Rongai",
+        "routeNumber": "125/126",
+        "slug": "route-125-cbd-rongai",
+        "name": "CBD – Ongata Rongai",
         "terminusA": "Railways (CBD)",
         "terminusB": "Rongai Town",
         "fareMin": 80,
@@ -214,8 +214,8 @@
         ]
       },
       {
-        "routeNumber": "11",
-        "slug": "route-11-cbd-eastleigh",
+        "routeNumber": "6/9",
+        "slug": "route-6-cbd-eastleigh",
         "name": "CBD – Eastleigh",
         "terminusA": "Tom Mboya Street (CBD)",
         "terminusB": "Eastleigh Section III",
@@ -258,8 +258,8 @@
         ]
       },
       {
-        "routeNumber": "58",
-        "slug": "route-58-cbd-kitengela",
+        "routeNumber": "110",
+        "slug": "route-110-cbd-kitengela",
         "name": "CBD – Kitengela",
         "terminusA": "Railways (CBD)",
         "terminusB": "Kitengela Town",
@@ -308,15 +308,15 @@
         ]
       },
       {
-        "routeNumber": "46",
-        "slug": "route-46-cbd-buruburu",
+        "routeNumber": "58",
+        "slug": "route-58-cbd-buruburu",
         "name": "CBD – Buruburu",
         "terminusA": "Tom Mboya / Ronald Ngala (CBD)",
         "terminusB": "Buruburu Phase V",
         "fareMin": 30,
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:30 PM",
-        "saccoName": "BuruBuru Shuttles SACCO",
+        "saccoName": "Buruburu Shuttles SACCO",
         "verified": true,
         "stages": [
           {
@@ -352,8 +352,8 @@
         ]
       },
       {
-        "routeNumber": "34",
-        "slug": "route-34-cbd-kibera",
+        "routeNumber": "8",
+        "slug": "route-8-cbd-kibera",
         "name": "CBD – Kibera",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Kibera / Olympic",
@@ -396,9 +396,9 @@
         ]
       },
       {
-        "routeNumber": "9",
-        "slug": "route-9-cbd-kasarani",
-        "name": "CBD – Kasarani",
+        "routeNumber": "17B",
+        "slug": "route-17b-cbd-kasarani",
+        "name": "CBD – Kasarani / Mwiki",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Kasarani Stadium",
         "fareMin": 50,
@@ -446,8 +446,8 @@
         ]
       },
       {
-        "routeNumber": "14",
-        "slug": "route-14-cbd-githurai",
+        "routeNumber": "45",
+        "slug": "route-45-cbd-githurai",
         "name": "CBD – Githurai 45",
         "terminusA": "Tom Mboya Street (CBD)",
         "terminusB": "Githurai 45",
@@ -490,8 +490,8 @@
         ]
       },
       {
-        "routeNumber": "44",
-        "slug": "route-44-cbd-donholm",
+        "routeNumber": "34/58",
+        "slug": "route-34-cbd-donholm",
         "name": "CBD – Donholm",
         "terminusA": "Ronald Ngala (CBD)",
         "terminusB": "Donholm / Savannah",
@@ -534,9 +534,9 @@
         ]
       },
       {
-        "routeNumber": "35",
-        "slug": "route-35-cbd-south-c",
-        "name": "CBD – South C / South B",
+        "routeNumber": "11/12C",
+        "slug": "route-11-cbd-south-b-south-c",
+        "name": "CBD – South B / South C",
         "terminusA": "Kencom (CBD)",
         "terminusB": "South C",
         "fareMin": 30,
@@ -578,8 +578,8 @@
         ]
       },
       {
-        "routeNumber": "100",
-        "slug": "route-100-cbd-umoja",
+        "routeNumber": "35/60",
+        "slug": "route-35-cbd-umoja",
         "name": "CBD – Umoja",
         "terminusA": "Tom Mboya Street (CBD)",
         "terminusB": "Umoja Innercore",
@@ -622,8 +622,8 @@
         ]
       },
       {
-        "routeNumber": "25",
-        "slug": "route-25-cbd-westlands",
+        "routeNumber": "23",
+        "slug": "route-23-cbd-westlands",
         "name": "CBD – Westlands",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Westlands / Sarit Centre",
@@ -666,8 +666,8 @@
         ]
       },
       {
-        "routeNumber": "45",
-        "slug": "route-45-cbd-kayole",
+        "routeNumber": "19/60",
+        "slug": "route-19-cbd-kayole",
         "name": "CBD – Kayole",
         "terminusA": "Ronald Ngala Street (CBD)",
         "terminusB": "Kayole Spine Road",
@@ -710,8 +710,8 @@
         ]
       },
       {
-        "routeNumber": "125",
-        "slug": "route-125-cbd-juja",
+        "routeNumber": "236",
+        "slug": "route-236-cbd-juja",
         "name": "CBD – Juja",
         "terminusA": "Tom Mboya Street (CBD)",
         "terminusB": "Juja Town",
@@ -754,8 +754,8 @@
         ]
       },
       {
-        "routeNumber": "48",
-        "slug": "route-48-cbd-pipeline",
+        "routeNumber": "33",
+        "slug": "route-33-cbd-embakasi-pipeline",
         "name": "CBD – Pipeline / Embakasi",
         "terminusA": "Ronald Ngala (CBD)",
         "terminusB": "Pipeline Estate",
@@ -804,8 +804,8 @@
         ]
       },
       {
-        "routeNumber": "19",
-        "slug": "route-19-cbd-dagoretti",
+        "routeNumber": "2",
+        "slug": "route-2-cbd-dagoretti",
         "name": "CBD – Dagoretti Corner",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Dagoretti Corner",
@@ -848,8 +848,8 @@
         ]
       },
       {
-        "routeNumber": "60",
-        "slug": "route-60-cbd-kawangware",
+        "routeNumber": "46",
+        "slug": "route-46-cbd-kawangware",
         "name": "CBD – Kawangware",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Kawangware '46'",
@@ -942,8 +942,8 @@
         ]
       },
       {
-        "routeNumber": "7",
-        "slug": "route-7-cbd-dandora",
+        "routeNumber": "32",
+        "slug": "route-32-cbd-dandora",
         "name": "CBD – Dandora",
         "terminusA": "Tom Mboya Street (CBD)",
         "terminusB": "Dandora Phase 4",
@@ -986,8 +986,8 @@
         ]
       },
       {
-        "routeNumber": "6",
-        "slug": "route-6-cbd-ngong",
+        "routeNumber": "111",
+        "slug": "route-111-cbd-ngong",
         "name": "CBD – Ngong Town",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Ngong Town",
@@ -1036,8 +1036,8 @@
         ]
       },
       {
-        "routeNumber": "15",
-        "slug": "route-15-cbd-komarock",
+        "routeNumber": "36",
+        "slug": "route-36-cbd-komarock",
         "name": "CBD – Komarock",
         "terminusA": "Ronald Ngala (CBD)",
         "terminusB": "Komarock Estate",
@@ -1080,8 +1080,8 @@
         ]
       },
       {
-        "routeNumber": "110",
-        "slug": "route-110-cbd-ruaka",
+        "routeNumber": "106",
+        "slug": "route-106-cbd-ruaka",
         "name": "CBD – Ruaka",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Ruaka Town",
@@ -1124,8 +1124,8 @@
         ]
       },
       {
-        "routeNumber": "126",
-        "slug": "route-126-cbd-kiambu",
+        "routeNumber": "100",
+        "slug": "route-100-cbd-kiambu",
         "name": "CBD – Kiambu Town",
         "terminusA": "Tom Mboya Street (CBD)",
         "terminusB": "Kiambu Town",
@@ -1168,8 +1168,8 @@
         ]
       },
       {
-        "routeNumber": "17",
-        "slug": "route-17-cbd-huruma",
+        "routeNumber": "29/30",
+        "slug": "route-29-cbd-huruma-mathare",
         "name": "CBD – Huruma / Mathare",
         "terminusA": "Tom Mboya Street (CBD)",
         "terminusB": "Huruma",
@@ -1212,8 +1212,8 @@
         ]
       },
       {
-        "routeNumber": "105",
-        "slug": "route-105-cbd-syokimau",
+        "routeNumber": "110/33M",
+        "slug": "route-110-cbd-syokimau",
         "name": "CBD – Syokimau / Gateway",
         "terminusA": "Railways (CBD)",
         "terminusB": "Syokimau / Gateway Mall",
@@ -1256,9 +1256,9 @@
         ]
       },
       {
-        "routeNumber": "3",
-        "slug": "route-3-cbd-langata",
-        "name": "CBD – Langata",
+        "routeNumber": "15/34",
+        "slug": "route-15-cbd-langata",
+        "name": "CBD – Lang'ata",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Langata / Otiende",
         "fareMin": 30,
@@ -1300,8 +1300,8 @@
         ]
       },
       {
-        "routeNumber": "111",
-        "slug": "route-111-cbd-banana",
+        "routeNumber": "106/114",
+        "slug": "route-106-cbd-banana-limuru",
         "name": "CBD – Banana Hill / Limuru",
         "terminusA": "Kencom (CBD)",
         "terminusB": "Banana Hill",
@@ -1344,15 +1344,65 @@
         ]
       },
       {
-        "routeNumber": "36",
-        "slug": "route-36-cbd-satellite",
-        "name": "CBD – Satellite / Utawala",
-        "terminusA": "Ronald Ngala (CBD)",
-        "terminusB": "Utawala / Mihang'o",
+        "routeNumber": "4W/46",
+        "slug": "route-4w-cbd-satellite",
+        "name": "CBD – Riruta Satellite",
+        "terminusA": "Kencom / Railways (CBD)",
+        "terminusB": "Riruta Satellite Stage",
         "fareMin": 50,
         "fareMax": 100,
-        "operatingHours": "5:00 AM – 9:00 PM",
-        "saccoName": "Utawala SACCO",
+        "operatingHours": "5:30 AM – 10:00 PM",
+        "saccoName": "Kawangware / Satellite SACCO",
+        "verified": true,
+        "stages": [
+          {
+            "name": "Kencom House",
+            "lat": -1.2864,
+            "lng": 36.8235,
+            "order": 1
+          },
+          {
+            "name": "Kenyatta National Hospital / Ngong Rd",
+            "lat": -1.3005,
+            "lng": 36.807,
+            "order": 2
+          },
+          {
+            "name": "Adams Arcade / Prestige",
+            "lat": -1.3001,
+            "lng": 36.781,
+            "order": 3
+          },
+          {
+            "name": "Junction Mall (Dagoretti Corner)",
+            "lat": -1.2988,
+            "lng": 36.7625,
+            "order": 4
+          },
+          {
+            "name": "Kawangware 46",
+            "lat": -1.2845,
+            "lng": 36.744,
+            "order": 5
+          },
+          {
+            "name": "Riruta Satellite",
+            "lat": -1.2895,
+            "lng": 36.731,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "routeNumber": "33/Utawala",
+        "slug": "route-33-cbd-utawala",
+        "name": "CBD – Utawala",
+        "terminusA": "Muthurwa / Ronald Ngala (CBD)",
+        "terminusB": "Utawala (Benedicta / Shooter)",
+        "fareMin": 70,
+        "fareMax": 130,
+        "operatingHours": "5:00 AM – 10:00 PM",
+        "saccoName": "Embassava / Forward Travellers SACCO",
         "verified": true,
         "stages": [
           {
@@ -1362,35 +1412,141 @@
             "order": 1
           },
           {
-            "name": "Jogoo Road",
+            "name": "Jogoo Road / Hamza",
             "lat": -1.294,
             "lng": 36.852,
             "order": 2
           },
           {
-            "name": "Donholm",
+            "name": "Donholm / Outering",
             "lat": -1.295,
             "lng": 36.882,
             "order": 3
           },
           {
-            "name": "Komarock",
-            "lat": -1.271,
-            "lng": 36.908,
+            "name": "Fedha / Tassia",
+            "lat": -1.3125,
+            "lng": 36.898,
             "order": 4
           },
           {
-            "name": "Utawala / Mihang'o",
-            "lat": -1.285,
-            "lng": 36.932,
+            "name": "Cabanas / Eastern Bypass",
+            "lat": -1.326,
+            "lng": 36.906,
             "order": 5
+          },
+          {
+            "name": "Utawala (Benedicta / Shooter)",
+            "lat": -1.2835,
+            "lng": 36.961,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "routeNumber": "105",
+        "slug": "route-105-cbd-kikuyu",
+        "name": "CBD – Kikuyu Town",
+        "terminusA": "Odeon / Kencom (CBD)",
+        "terminusB": "Kikuyu Town Stage",
+        "fareMin": 60,
+        "fareMax": 120,
+        "operatingHours": "5:00 AM – 10:30 PM",
+        "saccoName": "Super Metro / Kikuyu Travellers SACCO",
+        "verified": true,
+        "stages": [
+          {
+            "name": "Odeon / Tom Mboya Street",
+            "lat": -1.283,
+            "lng": 36.8245,
+            "order": 1
+          },
+          {
+            "name": "Westlands Roundabout",
+            "lat": -1.2681,
+            "lng": 36.8076,
+            "order": 2
+          },
+          {
+            "name": "Kangemi",
+            "lat": -1.265,
+            "lng": 36.7485,
+            "order": 3
+          },
+          {
+            "name": "Uthiru",
+            "lat": -1.2575,
+            "lng": 36.7175,
+            "order": 4
+          },
+          {
+            "name": "Kinoo / Regen",
+            "lat": -1.2515,
+            "lng": 36.692,
+            "order": 5
+          },
+          {
+            "name": "Kikuyu Town Stage",
+            "lat": -1.2462,
+            "lng": 36.6635,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "routeNumber": "145",
+        "slug": "route-145-cbd-ruiru",
+        "name": "CBD – Ruiru Town",
+        "terminusA": "Tea Room / Odeon (CBD)",
+        "terminusB": "Ruiru Bus Stage",
+        "fareMin": 60,
+        "fareMax": 120,
+        "operatingHours": "5:00 AM – 10:30 PM",
+        "saccoName": "Super Metro / Lopha / Kenya Mpya",
+        "verified": true,
+        "stages": [
+          {
+            "name": "Tea Room / Accra Road",
+            "lat": -1.2825,
+            "lng": 36.8278,
+            "order": 1
+          },
+          {
+            "name": "Pangani / Muthaiga",
+            "lat": -1.267,
+            "lng": 36.835,
+            "order": 2
+          },
+          {
+            "name": "Roysambu / TRM",
+            "lat": -1.2195,
+            "lng": 36.889,
+            "order": 3
+          },
+          {
+            "name": "Kahawa Sukari / Wendani",
+            "lat": -1.193,
+            "lng": 36.9265,
+            "order": 4
+          },
+          {
+            "name": "Kenyatta University (KU)",
+            "lat": -1.1805,
+            "lng": 36.931,
+            "order": 5
+          },
+          {
+            "name": "Ruiru Bus Stage",
+            "lat": -1.1485,
+            "lng": 36.9605,
+            "order": 6
           }
         ]
       }
     ],
     "mombasa": [
       {
-        "routeNumber": "M1",
+        "routeNumber": "Nyali",
         "slug": "route-m1-cbd-nyali",
         "name": "CBD – Nyali",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1399,7 +1555,7 @@
         "fareMax": 80,
         "operatingHours": "5:30 AM – 9:30 PM",
         "saccoName": "Nyali SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1434,7 +1590,7 @@
         ]
       },
       {
-        "routeNumber": "M2",
+        "routeNumber": "Bamburi",
         "slug": "route-m2-cbd-bamburi",
         "name": "CBD – Bamburi Beach",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1443,7 +1599,7 @@
         "fareMax": 100,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Bamburi SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1478,7 +1634,7 @@
         ]
       },
       {
-        "routeNumber": "M3",
+        "routeNumber": "Likoni",
         "slug": "route-m3-cbd-likoni",
         "name": "CBD – Likoni (Ferry)",
         "terminusA": "Docks / Posta (CBD)",
@@ -1487,7 +1643,7 @@
         "fareMax": 50,
         "operatingHours": "5:00 AM – 10:00 PM",
         "saccoName": "Likoni SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Posta / Docks",
@@ -1522,7 +1678,7 @@
         ]
       },
       {
-        "routeNumber": "M4",
+        "routeNumber": "Mtwapa",
         "slug": "route-m4-cbd-mtwapa",
         "name": "CBD – Mtwapa",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1531,7 +1687,7 @@
         "fareMax": 150,
         "operatingHours": "5:30 AM – 8:30 PM",
         "saccoName": "Mtwapa Express SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1572,7 +1728,7 @@
         ]
       },
       {
-        "routeNumber": "M5",
+        "routeNumber": "Kisauni",
         "slug": "route-m5-cbd-kisauni",
         "name": "CBD – Kisauni",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1581,7 +1737,7 @@
         "fareMax": 70,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Kisauni SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1610,7 +1766,7 @@
         ]
       },
       {
-        "routeNumber": "M6",
+        "routeNumber": "Changamwe",
         "slug": "route-m6-cbd-changamwe",
         "name": "CBD – Changamwe",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1619,7 +1775,7 @@
         "fareMax": 60,
         "operatingHours": "5:00 AM – 9:30 PM",
         "saccoName": "Changamwe SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1648,7 +1804,7 @@
         ]
       },
       {
-        "routeNumber": "M7",
+        "routeNumber": "Airport",
         "slug": "route-m7-cbd-port-reitz",
         "name": "CBD – Port Reitz / Airport",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1657,7 +1813,7 @@
         "fareMax": 80,
         "operatingHours": "5:30 AM – 8:30 PM",
         "saccoName": "Port Reitz SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1692,7 +1848,7 @@
         ]
       },
       {
-        "routeNumber": "M8",
+        "routeNumber": "Bombolulu",
         "slug": "route-m8-cbd-bombolulu",
         "name": "CBD – Bombolulu",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1701,7 +1857,7 @@
         "fareMax": 70,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Bombolulu SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1730,7 +1886,7 @@
         ]
       },
       {
-        "routeNumber": "M9",
+        "routeNumber": "Kongowea",
         "slug": "route-m9-cbd-kongowea",
         "name": "CBD – Kongowea Market",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1739,7 +1895,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:30 PM",
         "saccoName": "Kongowea SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1768,7 +1924,7 @@
         ]
       },
       {
-        "routeNumber": "M10",
+        "routeNumber": "Magongo",
         "slug": "route-m10-cbd-magongo",
         "name": "CBD – Magongo",
         "terminusA": "Mwembe Tayari (CBD)",
@@ -1777,7 +1933,7 @@
         "fareMax": 80,
         "operatingHours": "5:30 AM – 8:30 PM",
         "saccoName": "Magongo SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Mwembe Tayari",
@@ -1814,7 +1970,7 @@
     ],
     "kisumu": [
       {
-        "routeNumber": "K1",
+        "routeNumber": "Kondele",
         "slug": "route-k1-cbd-kondele",
         "name": "CBD – Kondele",
         "terminusA": "Kisumu Bus Park (CBD)",
@@ -1823,7 +1979,7 @@
         "fareMax": 40,
         "operatingHours": "5:30 AM – 9:30 PM",
         "saccoName": "Lakeside Shuttle SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Kisumu Bus Park",
@@ -1852,7 +2008,7 @@
         ]
       },
       {
-        "routeNumber": "K2",
+        "routeNumber": "Mamboleo",
         "slug": "route-k2-cbd-mamboleo",
         "name": "CBD – Mamboleo",
         "terminusA": "Kisumu Bus Park (CBD)",
@@ -1861,7 +2017,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Mamboline SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Kisumu Bus Park",
@@ -1896,7 +2052,7 @@
         ]
       },
       {
-        "routeNumber": "K3",
+        "routeNumber": "Nyalenda",
         "slug": "route-k3-cbd-nyalenda",
         "name": "CBD – Nyalenda",
         "terminusA": "Kisumu Bus Park (CBD)",
@@ -1905,7 +2061,7 @@
         "fareMax": 40,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Nyalenda SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Kisumu Bus Park",
@@ -1934,7 +2090,7 @@
         ]
       },
       {
-        "routeNumber": "K4",
+        "routeNumber": "Manyatta",
         "slug": "route-k4-cbd-manyatta",
         "name": "CBD – Manyatta",
         "terminusA": "Kisumu Bus Park (CBD)",
@@ -1943,7 +2099,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Manyatta SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Kisumu Bus Park",
@@ -1978,7 +2134,7 @@
         ]
       },
       {
-        "routeNumber": "K5",
+        "routeNumber": "Riat",
         "slug": "route-k5-cbd-riat-hills",
         "name": "CBD – Riat Hills",
         "terminusA": "Kisumu Bus Park (CBD)",
@@ -1987,7 +2143,7 @@
         "fareMax": 70,
         "operatingHours": "6:00 AM – 8:00 PM",
         "saccoName": "Riat Route SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Kisumu Bus Park",
@@ -2022,7 +2178,7 @@
         ]
       },
       {
-        "routeNumber": "K6",
+        "routeNumber": "Obunga",
         "slug": "route-k6-cbd-obunga",
         "name": "CBD – Obunga",
         "terminusA": "Kisumu Bus Park (CBD)",
@@ -2031,7 +2187,7 @@
         "fareMax": 40,
         "operatingHours": "5:30 AM – 9:30 PM",
         "saccoName": "Obunga SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Kisumu Bus Park",
@@ -2054,7 +2210,7 @@
         ]
       },
       {
-        "routeNumber": "K7",
+        "routeNumber": "Kibos",
         "slug": "route-k7-cbd-kibos",
         "name": "CBD – Kibos",
         "terminusA": "Kisumu Bus Park (CBD)",
@@ -2063,7 +2219,7 @@
         "fareMax": 70,
         "operatingHours": "5:30 AM – 8:30 PM",
         "saccoName": "Kibos SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Kisumu Bus Park",
@@ -2092,7 +2248,7 @@
         ]
       },
       {
-        "routeNumber": "K8",
+        "routeNumber": "Ahero",
         "slug": "route-k8-cbd-ahero",
         "name": "CBD – Ahero",
         "terminusA": "Kisumu Bus Park (CBD)",
@@ -2101,7 +2257,7 @@
         "fareMax": 150,
         "operatingHours": "5:30 AM – 7:30 PM",
         "saccoName": "Ahero Express SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Kisumu Bus Park",
@@ -2144,7 +2300,7 @@
     ],
     "nakuru": [
       {
-        "routeNumber": "NK1",
+        "routeNumber": "Free Area",
         "slug": "route-nk1-cbd-free-area",
         "name": "CBD – Free Area",
         "terminusA": "Railways Terminus (CBD)",
@@ -2153,7 +2309,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Nakuru Town Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Railways Bus Park",
@@ -2182,7 +2338,7 @@
         ]
       },
       {
-        "routeNumber": "NK2",
+        "routeNumber": "Pipeline",
         "slug": "route-nk2-cbd-pipeline",
         "name": "CBD – Pipeline",
         "terminusA": "Railways Terminus (CBD)",
@@ -2191,7 +2347,7 @@
         "fareMax": 60,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Nakuru Pipeline Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Railways Bus Park",
@@ -2226,7 +2382,7 @@
         ]
       },
       {
-        "routeNumber": "NK3",
+        "routeNumber": "Lanet",
         "slug": "route-nk3-cbd-lanet",
         "name": "CBD – Lanet",
         "terminusA": "Ziwani Bus Park (CBD)",
@@ -2235,7 +2391,7 @@
         "fareMax": 70,
         "operatingHours": "5:30 AM – 8:30 PM",
         "saccoName": "Lanet Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Ziwani Bus Park",
@@ -2264,19 +2420,19 @@
         ]
       },
       {
-        "routeNumber": "NK4",
+        "routeNumber": "Kiamunyi",
         "slug": "route-nk4-cbd-kiamunyi",
         "name": "CBD – Kiamunyi",
-        "terminusA": "Gateiguru Bus Park (CBD)",
+        "terminusA": "Nakuru Main Stage (Mololine / Prestige)",
         "terminusB": "Kiamunyi Estate",
         "fareMin": 30,
         "fareMax": 50,
         "operatingHours": "6:00 AM – 9:00 PM",
         "saccoName": "Kiamunyi Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
-            "name": "Gateiguru Bus Park",
+            "name": "Nakuru Main Stage (Mololine / Prestige)",
             "lat": -0.2865,
             "lng": 36.062,
             "order": 1
@@ -2302,19 +2458,19 @@
         ]
       },
       {
-        "routeNumber": "NK5",
+        "routeNumber": "Kabarak",
         "slug": "route-nk5-cbd-kabarak",
         "name": "CBD – Kabarak",
-        "terminusA": "Gateiguru Bus Park (CBD)",
+        "terminusA": "Nakuru Main Stage (Mololine / Prestige)",
         "terminusB": "Kabarak University",
         "fareMin": 60,
         "fareMax": 100,
         "operatingHours": "5:30 AM – 8:00 PM",
         "saccoName": "Ravine Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
-            "name": "Gateiguru Bus Park",
+            "name": "Nakuru Main Stage (Mololine / Prestige)",
             "lat": -0.2865,
             "lng": 36.062,
             "order": 1
@@ -2346,7 +2502,7 @@
         ]
       },
       {
-        "routeNumber": "NK6",
+        "routeNumber": "Njoro",
         "slug": "route-nk6-cbd-njoro",
         "name": "CBD – Njoro / Egerton",
         "terminusA": "KFA Bus Park (CBD)",
@@ -2355,7 +2511,7 @@
         "fareMax": 120,
         "operatingHours": "5:30 AM – 8:00 PM",
         "saccoName": "Njoro Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "KFA Bus Park",
@@ -2386,7 +2542,7 @@
     ],
     "eldoret": [
       {
-        "routeNumber": "EL1",
+        "routeNumber": "Langas",
         "slug": "route-el1-cbd-langas",
         "name": "CBD – Langas",
         "terminusA": "Eldoret Main Bus Park (CBD)",
@@ -2395,7 +2551,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:30 PM",
         "saccoName": "Eldoret Langas SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Eldoret Main Bus Park",
@@ -2424,7 +2580,7 @@
         ]
       },
       {
-        "routeNumber": "EL2",
+        "routeNumber": "Huruma",
         "slug": "route-el2-cbd-huruma",
         "name": "CBD – Huruma",
         "terminusA": "Eldoret Main Bus Park (CBD)",
@@ -2433,7 +2589,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Huruma Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Eldoret Main Bus Park",
@@ -2462,7 +2618,7 @@
         ]
       },
       {
-        "routeNumber": "EL3",
+        "routeNumber": "Annex",
         "slug": "route-el3-cbd-annex",
         "name": "CBD – Annex / Moi Uni Annex",
         "terminusA": "Eldoret Main Bus Park (CBD)",
@@ -2471,7 +2627,7 @@
         "fareMax": 60,
         "operatingHours": "6:00 AM – 9:00 PM",
         "saccoName": "Kitwek SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Eldoret Main Bus Park",
@@ -2500,7 +2656,7 @@
         ]
       },
       {
-        "routeNumber": "EL4",
+        "routeNumber": "Kapseret",
         "slug": "route-el4-cbd-kapseret",
         "name": "CBD – Kapseret",
         "terminusA": "Eldoret Main Bus Park (CBD)",
@@ -2509,7 +2665,7 @@
         "fareMax": 70,
         "operatingHours": "5:30 AM – 8:30 PM",
         "saccoName": "Eldoret Airport SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Eldoret Main Bus Park",
@@ -2538,7 +2694,7 @@
         ]
       },
       {
-        "routeNumber": "EL5",
+        "routeNumber": "Kimumu",
         "slug": "route-el5-cbd-kimumu",
         "name": "CBD – Kimumu",
         "terminusA": "Eldoret Main Bus Park (CBD)",
@@ -2547,7 +2703,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Iten Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Eldoret Main Bus Park",
@@ -2576,7 +2732,7 @@
         ]
       },
       {
-        "routeNumber": "EL6",
+        "routeNumber": "UoE",
         "slug": "route-el6-cbd-university-of-eldoret",
         "name": "CBD – University of Eldoret (UoE)",
         "terminusA": "Eldoret Main Bus Park (CBD)",
@@ -2585,7 +2741,7 @@
         "fareMax": 70,
         "operatingHours": "5:30 AM – 8:30 PM",
         "saccoName": "UoE Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Eldoret Main Bus Park",
@@ -2618,11 +2774,105 @@
             "order": 5
           }
         ]
+      },
+      {
+        "routeNumber": "Kesses",
+        "slug": "route-eldoret-moi-university-kesses",
+        "name": "CBD – Moi University (Kesses)",
+        "terminusA": "Eldoret Main Bus Park (Sosiani)",
+        "terminusB": "Moi University Main Campus (Kesses)",
+        "fareMin": 100,
+        "fareMax": 150,
+        "operatingHours": "5:30 AM – 9:00 PM",
+        "saccoName": "Kesses / Eldoret Shuttle SACCO",
+        "verified": false,
+        "stages": [
+          {
+            "name": "Eldoret Main Bus Park",
+            "lat": 0.518,
+            "lng": 35.273,
+            "order": 1
+          },
+          {
+            "name": "Langas / Kisumu Road",
+            "lat": 0.489,
+            "lng": 35.26,
+            "order": 2
+          },
+          {
+            "name": "Eldoret International Airport Junction",
+            "lat": 0.405,
+            "lng": 35.2385,
+            "order": 3
+          },
+          {
+            "name": "Kesses Centre",
+            "lat": 0.3055,
+            "lng": 35.3125,
+            "order": 4
+          },
+          {
+            "name": "Moi University Main Campus (Stage)",
+            "lat": 0.2855,
+            "lng": 35.294,
+            "order": 5
+          }
+        ]
       }
     ],
     "thika": [
       {
-        "routeNumber": "TK1",
+        "routeNumber": "237",
+        "slug": "route-237-thika-nairobi",
+        "name": "Thika Town – Nairobi CBD",
+        "terminusA": "Thika Main Bus Park (Chania Stage)",
+        "terminusB": "Nairobi CBD (Tea Room / Odeon)",
+        "fareMin": 100,
+        "fareMax": 150,
+        "operatingHours": "4:30 AM – 10:30 PM",
+        "saccoName": "Super Metro / Chania / Kenya Mpya",
+        "verified": true,
+        "stages": [
+          {
+            "name": "Thika Main Bus Park",
+            "lat": -1.0334,
+            "lng": 37.0693,
+            "order": 1
+          },
+          {
+            "name": "Blue Post / Thika Superhighway",
+            "lat": -1.0235,
+            "lng": 37.0715,
+            "order": 2
+          },
+          {
+            "name": "Juja Town (JKUAT)",
+            "lat": -1.1018,
+            "lng": 37.0144,
+            "order": 3
+          },
+          {
+            "name": "Ruiru Bypass",
+            "lat": -1.1485,
+            "lng": 36.9605,
+            "order": 4
+          },
+          {
+            "name": "Roysambu / TRM",
+            "lat": -1.2195,
+            "lng": 36.889,
+            "order": 5
+          },
+          {
+            "name": "Nairobi CBD (Tea Room / Odeon)",
+            "lat": -1.2825,
+            "lng": 36.8278,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "routeNumber": "Makongeni",
         "slug": "route-tk1-cbd-makongeni",
         "name": "CBD – Makongeni",
         "terminusA": "Thika Main Bus Park (CBD)",
@@ -2631,7 +2881,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:30 PM",
         "saccoName": "2TS SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Thika Main Bus Park",
@@ -2660,7 +2910,7 @@
         ]
       },
       {
-        "routeNumber": "TK2",
+        "routeNumber": "Landless",
         "slug": "route-tk2-cbd-landless",
         "name": "CBD – Landless",
         "terminusA": "Thika Main Bus Park (CBD)",
@@ -2669,7 +2919,7 @@
         "fareMax": 60,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "2TS SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Thika Main Bus Park",
@@ -2698,7 +2948,7 @@
         ]
       },
       {
-        "routeNumber": "TK3",
+        "routeNumber": "Section 9",
         "slug": "route-tk3-cbd-section-9",
         "name": "CBD – Section 9",
         "terminusA": "Thika Main Bus Park (CBD)",
@@ -2707,7 +2957,7 @@
         "fareMax": 40,
         "operatingHours": "6:00 AM – 9:00 PM",
         "saccoName": "Thika Town Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Thika Main Bus Park",
@@ -2730,7 +2980,7 @@
         ]
       },
       {
-        "routeNumber": "TK4",
+        "routeNumber": "Gatuanyaga",
         "slug": "route-tk4-cbd-gatuanyaga",
         "name": "CBD – Gatuanyaga",
         "terminusA": "Thika Main Bus Park (CBD)",
@@ -2739,7 +2989,7 @@
         "fareMax": 80,
         "operatingHours": "5:30 AM – 8:30 PM",
         "saccoName": "2TS SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Thika Main Bus Park",
@@ -2774,7 +3024,7 @@
         ]
       },
       {
-        "routeNumber": "TK5",
+        "routeNumber": "Ngoingwa",
         "slug": "route-tk5-cbd-ngoingwa",
         "name": "CBD – Ngoingwa",
         "terminusA": "Thika Main Bus Park (CBD)",
@@ -2783,7 +3033,7 @@
         "fareMax": 50,
         "operatingHours": "5:30 AM – 9:00 PM",
         "saccoName": "Ngoingwa Line SACCO",
-        "verified": true,
+        "verified": false,
         "stages": [
           {
             "name": "Thika Main Bus Park",
@@ -2815,6 +3065,6 @@
     "Stage coordinates are mapped to actual geographic coordinates of local stages and land marks across each town.",
     "Data verified against public transportation records, NTSA SACCO registries, and local commuter reports."
   ],
-  "lastUpdated": "2026-10-20",
+  "lastUpdated": "2026-11-20",
   "source": "NTSA Registered Transport SACCOs & Public Commuter Route Registry"
 }

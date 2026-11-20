@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { FileCheck2, Copy, Check, AlertTriangle } from "lucide-react";
+import { Copy, Check, AlertTriangle } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
@@ -32,6 +32,12 @@ export default function PpraEgpTenderSerializerPage() {
   );
   const [copied, setCopied] = useState(false);
 
+  // Align subtitle to MR1–MR11 (F-022)
+  const cleanTool = {
+    ...tool,
+    description: tool.description.replace(/MR1[–-]MR15/gi, "MR1–MR11"),
+  };
+
   const plan = useMemo(() => {
     let cursor = 1;
     const rows = docs.map((d) => {
@@ -54,7 +60,7 @@ export default function PpraEgpTenderSerializerPage() {
 
   const copyManifest = () => {
     const lines = [
-      `PPRA / e-GP TENDER SERIALIZATION MANIFEST (ITT 20.3)`,
+      `PPRA / e-GP TENDER SERIALIZATION MANIFEST (ITT 20.3 — MR1–MR11)`,
       `Tender Ref: ${tenderRef} | Bid Validity: ${bidValidityDays} days | Total Pages: ${plan.totalPages}`,
       "",
       ...plan.rows
@@ -70,42 +76,66 @@ export default function PpraEgpTenderSerializerPage() {
   };
 
   return (
-    <ToolShell tool={tool}>
+    <ToolShell tool={cleanTool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
             <div>
-              <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Tender Reference No.</label>
+              <label
+                htmlFor="ppra-tender-ref"
+                className="block text-xs font-semibold text-text-muted uppercase mb-1"
+              >
+                Tender Reference No.
+              </label>
               <input
+                id="ppra-tender-ref"
                 type="text"
                 value={tenderRef}
                 onChange={(e) => setTenderRef(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs font-bold text-text-primary"
               />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Bid Validity Period (Days)</label>
+              <label
+                htmlFor="ppra-bid-validity"
+                className="block text-xs font-semibold text-text-muted uppercase mb-1"
+              >
+                Bid Validity Period (Days)
+              </label>
               <input
+                id="ppra-bid-validity"
                 type="number"
+                inputMode="numeric"
                 value={bidValidityDays}
                 onChange={(e) => setBidValidityDays(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-xs font-bold text-text-primary"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs font-bold text-text-primary tabular-nums"
               />
             </div>
-            <div className="rounded-xl border border-gold/40 bg-gold/10 px-4 py-2 flex flex-col justify-center">
-              <span className="text-[0.65rem] font-bold uppercase text-gold">Continuous Bates Range</span>
-              <span className="text-lg font-black text-text-primary">
+            <div
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+              className="rounded-xl border border-amber-500/45 bg-amber-500/[0.04] px-4 py-2 flex flex-col justify-center"
+            >
+              <span className="text-[0.65rem] font-bold uppercase text-gold">
+                Continuous Bates Range (MR1–MR11)
+              </span>
+              <span className="text-lg font-black text-text-primary tabular-nums">
                 0001 – {fmtBates(Math.max(1, plan.totalPages))} ({plan.totalPages} pp)
               </span>
             </div>
           </div>
 
           {(plan.missingCritical.length > 0 || plan.uninitialed.length > 0) && (
-            <div className="mb-4 p-3 rounded-xl border border-red-500/40 bg-red-500/10 text-xs text-red-300 flex items-start gap-2">
+            <div
+              role="status"
+              aria-live="polite"
+              className="mb-4 p-3 rounded-xl border border-red-500/40 bg-red-500/10 text-xs text-red-700 dark:text-red-300 flex items-start gap-2"
+            >
               <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
               <div>
-                Disqualification risk: {plan.missingCritical.length} missing critical mandatory item(s) and {plan.uninitialed.length} uninitialed section(s).
+                Disqualification risk: {plan.missingCritical.length} missing critical mandatory item(s) and{" "}
+                {plan.uninitialed.length} uninitialed section(s).
               </div>
             </div>
           )}
@@ -114,22 +144,23 @@ export default function PpraEgpTenderSerializerPage() {
             <table className="w-full text-left text-xs">
               <thead className="bg-bg-elevated text-text-muted uppercase text-[0.65rem]">
                 <tr>
-                  <th className="px-3 py-2.5">Code</th>
-                  <th className="px-3 py-2.5">Mandatory Document</th>
-                  <th className="px-3 py-2.5">Included</th>
-                  <th className="px-3 py-2.5">Pages</th>
-                  <th className="px-3 py-2.5">Bates Range</th>
-                  <th className="px-3 py-2.5">Initialed</th>
+                  <th className="px-3 py-2.5 whitespace-nowrap">Code</th>
+                  <th className="px-3 py-2.5">Mandatory Document (MR1–MR11)</th>
+                  <th className="px-3 py-2.5 whitespace-nowrap">Included</th>
+                  <th className="px-3 py-2.5 whitespace-nowrap">Pages</th>
+                  <th className="px-3 py-2.5 whitespace-nowrap">Bates Range</th>
+                  <th className="px-3 py-2.5 whitespace-nowrap">Initialed</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
                 {plan.rows.map((r, idx) => (
                   <tr key={r.code}>
-                    <td className="px-3 py-2 font-mono font-bold text-gold">{r.code}</td>
+                    <td className="px-3 py-2 font-mono font-bold text-gold whitespace-nowrap">{r.code}</td>
                     <td className="px-3 py-2 text-text-primary font-medium">{r.title}</td>
                     <td className="px-3 py-2">
                       <input
                         type="checkbox"
+                        aria-label={`Include ${r.code} ${r.title}`}
                         checked={r.included}
                         onChange={() =>
                           setDocs((prev) => prev.map((d, i) => (i === idx ? { ...d, included: !d.included } : d)))
@@ -140,22 +171,26 @@ export default function PpraEgpTenderSerializerPage() {
                     <td className="px-3 py-2">
                       <input
                         type="number"
+                        aria-label={`Page count for ${r.code}`}
                         min={0}
                         value={r.pages}
                         onChange={(e) =>
                           setDocs((prev) =>
-                            prev.map((d, i) => (i === idx ? { ...d, pages: Math.max(0, Number(e.target.value) || 0) } : d))
+                            prev.map((d, i) =>
+                              i === idx ? { ...d, pages: Math.max(0, Number(e.target.value) || 0) } : d
+                            )
                           )
                         }
-                        className="w-16 px-2 py-1 rounded-lg border border-border bg-bg-elevated text-xs text-text-primary"
+                        className="w-16 px-2 py-1 rounded-lg border border-border dark:border-white/15 bg-bg-elevated text-xs text-text-primary tabular-nums"
                       />
                     </td>
-                    <td className="px-3 py-2 font-mono text-[0.72rem] text-emerald-400">
+                    <td className="px-3 py-2 font-mono text-[0.72rem] text-emerald-700 dark:text-emerald-400 whitespace-nowrap tabular-nums">
                       {r.startPage !== null ? `${fmtBates(r.startPage)}–${fmtBates(r.endPage!)}` : "—"}
                     </td>
                     <td className="px-3 py-2">
                       <input
                         type="checkbox"
+                        aria-label={`Initialed ${r.code} ${r.title}`}
                         checked={r.initialed}
                         onChange={() =>
                           setDocs((prev) => prev.map((d, i) => (i === idx ? { ...d, initialed: !d.initialed } : d)))

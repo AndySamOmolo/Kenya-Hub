@@ -114,6 +114,66 @@ export const KAMBA_UNITS: CourseUnit[] = [
             "source": "No",
             "pronunciation": "aiee",
             "hint": "Negative response"
+          },
+          {
+            "target": "Ũvoo?",
+            "source": "How are you?",
+            "pronunciation": "u-voo",
+            "hint": "Standard greeting — literally 'News?'"
+          },
+          {
+            "target": "Nĩ mũseo",
+            "source": "I am fine",
+            "pronunciation": "ni mu-seo",
+            "hint": "Standard reply meaning 'I am well / good'"
+          },
+          {
+            "target": "O voo",
+            "source": "Hello / Salutation",
+            "pronunciation": "o voo",
+            "hint": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'"
+          },
+          {
+            "target": "Wĩa?",
+            "source": "What's the news / What's up?",
+            "pronunciation": "wia",
+            "hint": "Casual colloquial greeting — 'What is the word?'"
+          },
+          {
+            "target": "Wĩa mwau wa ũthukũ",
+            "source": "Good morning",
+            "pronunciation": "wia mwau wa uthu-ku",
+            "hint": "Morning greeting"
+          },
+          {
+            "target": "Nĩ vaa mũno",
+            "source": "Thank you",
+            "pronunciation": "ni vaa mu-no",
+            "hint": "Expressing deep gratitude ('thank you very much')"
+          },
+          {
+            "target": "Tũonane",
+            "source": "Goodbye (we will meet)",
+            "pronunciation": "tuo-na-ne",
+            "hint": "Farewell — 'We will see each other again'"
+          },
+          {
+            "target": "Wĩa mũseo",
+            "source": "Welcome",
+            "pronunciation": "wia mu-seo",
+            "hint": "Welcoming a visitor or guest"
+          },
+          {
+            "target": "Mũyo",
+            "source": "Peace",
+            "pronunciation": "mu-yo",
+            "hint": "Traditional blessing of peace, contentment and happiness"
+          },
+          {
+            "target": "Sova / Pole",
+            "source": "Sorry",
+            "pronunciation": "so-va / po-le",
+            "hint": "Expression of empathy or comfort"
           }
         ],
         "sentences": [
@@ -1457,215 +1517,8 @@ export const KAMBA_UNITS: CourseUnit[] = [
     ]
   },
   {
-    "id": "kamba-unit-6",
-    "unitNumber": 6,
-    "title": "Greetings & Farewells",
-    "description": "Comprehensive Kamba (Kĩkamba) curriculum for Greetings & Farewells, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
-    "icon": "BookOpen",
-    "color": "#FF9800",
-    "skills": [
-      {
-        "id": "kamba-exp-greetings",
-        "title": "Greetings & Farewells",
-        "icon": "Handshake",
-        "description": "Master Kamba (Kĩkamba) greetings & farewells vocabulary and expressions from verified historical sources.",
-        "tips": "In this Kamba (Kĩkamba) skill covering Greetings & Farewells, pay special attention to pronunciation and morphological prefixes/suffixes: 'Ũvoo?' (How are you?), 'Nĩ mũseo' (I am fine), 'O voo' (Hello / Salutation), 'Wĩa?' (What's the news / What's up?).",
-        "culturalNote": "Source attribution: J.T. Last (1885) 'Grammar of the Kamba Language', Hildegarde Hinde (1904) 'Vocabularies of the Kamba and Kikuyu Languages', and C.W. Hobley (1922) 'Bantu Beliefs and Customary Institutions'.",
-        "words": [
-          {
-            "target": "Ũvoo?",
-            "source": "How are you?",
-            "pronunciation": "u-voo",
-            "hint": "Standard greeting — literally 'News?'"
-          },
-          {
-            "target": "Nĩ mũseo",
-            "source": "I am fine",
-            "pronunciation": "ni mu-seo",
-            "hint": "Standard reply meaning 'I am well / good'"
-          },
-          {
-            "target": "O voo",
-            "source": "Hello / Salutation",
-            "pronunciation": "o voo",
-            "hint": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'"
-          },
-          {
-            "target": "Wĩa?",
-            "source": "What's the news / What's up?",
-            "pronunciation": "wia",
-            "hint": "Casual colloquial greeting — 'What is the word?'"
-          },
-          {
-            "target": "Wĩa mwau wa ũthukũ",
-            "source": "Good morning",
-            "pronunciation": "wia mwau wa uthu-ku",
-            "hint": "Morning greeting"
-          },
-          {
-            "target": "Nĩ vaa mũno",
-            "source": "Thank you",
-            "pronunciation": "ni vaa mu-no",
-            "hint": "Expressing deep gratitude ('thank you very much')"
-          },
-          {
-            "target": "Tũonane",
-            "source": "Goodbye (we will meet)",
-            "pronunciation": "tuo-na-ne",
-            "hint": "Farewell — 'We will see each other again'"
-          },
-          {
-            "target": "Wĩa mũseo",
-            "source": "Welcome",
-            "pronunciation": "wia mu-seo",
-            "hint": "Welcoming a visitor or guest"
-          },
-          {
-            "target": "Mũyo",
-            "source": "Peace",
-            "pronunciation": "mu-yo",
-            "hint": "Traditional blessing of peace, contentment and happiness"
-          },
-          {
-            "target": "Sova / Pole",
-            "source": "Sorry",
-            "pronunciation": "so-va / po-le",
-            "hint": "Expression of empathy or comfort"
-          }
-        ],
-        "sentences": [
-          {
-            "target": "Mũndũ mũseo nũendete andũ.",
-            "source": "A good person loves people."
-          },
-          {
-            "target": "Syana syonthe nĩsyathi sukulu.",
-            "source": "All the children have gone to school."
-          },
-          {
-            "target": "Ng'ombe syakwa syĩ kĩw'ũnĩ.",
-            "source": "My cattle are at the water."
-          }
-        ],
-        "authoredExercises": [
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Ũvoo?\" mean in English?",
-            "correctAnswer": "How are you?",
-            "options": [
-              "I am fine",
-              "Hello",
-              "How are you?",
-              "What's the news"
-            ],
-            "hint": "Standard greeting — literally 'News?'"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"Nĩ mũseo\" mean in English?",
-            "correctAnswer": "I am fine",
-            "options": [
-              "Hello",
-              "What's the news",
-              "I am fine",
-              "How are you?"
-            ],
-            "hint": "Standard reply meaning 'I am well / good'"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "What does \"O voo\" mean in English?",
-            "correctAnswer": "Hello",
-            "options": [
-              "What's the news",
-              "How are you?",
-              "I am fine",
-              "Hello"
-            ],
-            "hint": "Traditional greeting recorded by Hinde (1904); Ulu: 'O voo', Reply: 'O voo nēza' / 'Nĩ mũseo'",
-            "acceptedAnswers": [
-              "Hello / Salutation",
-              "Hello"
-            ]
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Hello / Salutation\" in Kamba?",
-            "correctAnswer": "O voo",
-            "options": [
-              "Ũvoo?",
-              "Nĩ mũseo",
-              "O voo",
-              "Wĩa?"
-            ],
-            "hint": "oh voh"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"What's the news / What's up?\" in Kamba?",
-            "correctAnswer": "Wĩa?",
-            "options": [
-              "Ũvoo?",
-              "Nĩ mũseo",
-              "O voo",
-              "Wĩa?"
-            ],
-            "hint": "wee-ah"
-          },
-          {
-            "type": "multiple_choice",
-            "prompt": "How do you say \"Good morning\" in Kamba?",
-            "correctAnswer": "Wĩa mwau wa ũthukũ",
-            "options": [
-              "Nĩ mũseo",
-              "Wĩa mwau wa ũthukũ",
-              "O voo",
-              "Nĩ vaa mũno"
-            ],
-            "hint": "wee-ah mwah-oo wah oo-thoo-koo"
-          },
-          {
-            "type": "match_pairs",
-            "prompt": "Match the Kamba (Kĩkamba) terms with their English meanings:",
-            "correctAnswer": "Ũvoo?: How are you?, Nĩ mũseo: I am fine, O voo: Hello / Salutation, Wĩa?: What's the news / What's up?",
-            "pairs": [
-              {
-                "left": "Ũvoo?",
-                "right": "How are you?"
-              },
-              {
-                "left": "Nĩ mũseo",
-                "right": "I am fine"
-              },
-              {
-                "left": "O voo",
-                "right": "Hello / Salutation"
-              },
-              {
-                "left": "Wĩa?",
-                "right": "What's the news / What's up?"
-              }
-            ]
-          },
-          {
-            "type": "fill_blank",
-            "prompt": "Complete: \"_____\" means \"How are you?\" in Kamba (Kĩkamba).",
-            "correctAnswer": "Ũvoo?",
-            "options": [
-              "Nĩ mũseo",
-              "O voo",
-              "Wĩa?",
-              "Ũvoo?"
-            ],
-            "hint": "oo-voh"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "kamba-unit-7",
-    "unitNumber": 7,
+    "unitNumber": 6,
     "title": "Numbers",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Numbers, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Compass",
@@ -1856,7 +1709,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-8",
-    "unitNumber": 8,
+    "unitNumber": 7,
     "title": "Family & Relationships",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Family & Relationships, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "User",
@@ -2190,7 +2043,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-9",
-    "unitNumber": 9,
+    "unitNumber": 8,
     "title": "Nature & Environment",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Nature & Environment, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "TreePine",
@@ -2411,7 +2264,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-10",
-    "unitNumber": 10,
+    "unitNumber": 9,
     "title": "Animals & Wildlife",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Animals & Wildlife, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "PawPrint",
@@ -2809,7 +2662,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-11",
-    "unitNumber": 11,
+    "unitNumber": 10,
     "title": "Food & Drink",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Food & Drink, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Soup",
@@ -3044,7 +2897,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-12",
-    "unitNumber": 12,
+    "unitNumber": 11,
     "title": "Body Parts",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Body Parts, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Activity",
@@ -3449,7 +3302,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-13",
-    "unitNumber": 13,
+    "unitNumber": 12,
     "title": "Tools & Household Objects",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Tools & Household Objects, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Globe",
@@ -3704,7 +3557,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-14",
-    "unitNumber": 14,
+    "unitNumber": 13,
     "title": "Verbs & Actions",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Verbs & Actions, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Layers",
@@ -4102,7 +3955,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-15",
-    "unitNumber": 15,
+    "unitNumber": 14,
     "title": "Common Phrases",
     "description": "Comprehensive Kamba (Kĩkamba) curriculum for Common Phrases, built directly from Rev. Dr. J. L. Krapf (1850), Rev. J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), and Gerhard Lindblom (1920).",
     "icon": "Sparkles",
@@ -4497,7 +4350,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-16",
-    "unitNumber": 16,
+    "unitNumber": 15,
     "title": "Archival Monograph & Comparative Lexicon",
     "description": "Master newly extracted Kamba (Kĩkamba) vocabulary, dialect forms, and grammatical roots from the historical public-domain monographs and comparative tables.",
     "icon": "ScrollText",
@@ -4759,7 +4612,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-17",
-    "unitNumber": 17,
+    "unitNumber": 16,
     "title": "Core Swadesh & Everyday Community Vocabulary",
     "description": "Master Kamba (Kĩkamba) vocabulary and expressions from open-licensed datasets alongside deep archival lexicon.",
     "icon": "Landmark",
@@ -4991,7 +4844,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-18",
-    "unitNumber": 18,
+    "unitNumber": 17,
     "title": "Hobley Ethnology of A-Kamba",
     "description": "Master the complete cultural, artistic, calendar, and legal lexicon of C. W. Hobley's 'Ethnology of A-Kamba and Other East African Tribes' (Cambridge University Press, 1910).",
     "icon": "Sparkles",
@@ -5173,7 +5026,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-unit-19",
-    "unitNumber": 19,
+    "unitNumber": 18,
     "title": "Lindblom The Akamba in British East Africa",
     "description": "Master the complete ethnographic, legal, religious, artistic, and material-culture lexicon of Gerhard Lindblom's 607-page monograph 'The Akamba in British East Africa' (2nd Ed., Enlarged, Uppsala 1918–1920).",
     "icon": "BookOpen",
@@ -5663,7 +5516,7 @@ export const KAMBA_UNITS: CourseUnit[] = [
   },
   {
     "id": "kamba-native-audio-listening",
-    "unitNumber": 20,
+    "unitNumber": 19,
     "title": "Native Audio & Listening Practice",
     "description": "Develop authentic listening comprehension with 24 verified native Kĩkamba recordings spanning everyday greetings, questions, directions, and conversational phrases.",
     "icon": "🎧",

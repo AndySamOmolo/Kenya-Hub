@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Client, Databases, Query } from "node-appwrite";
 import { STATIC_BLOG_POSTS } from "@/data/blog-posts";
 import DynamicIcon from "@/components/ui/DynamicIcon";
+import BlogListClient from "./BlogListClient";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -157,7 +158,7 @@ export default async function BlogPage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-7 pb-10 sm:py-10">
+    <div className="max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-7 pb-10 sm:py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -186,52 +187,19 @@ export default async function BlogPage() {
         </p>
       </header>
 
-      {/* Posts */}
-      <div className="space-y-6">
-        {posts.map((post) => (
-          <article
-            key={post.slug}
-            className="bg-bg-card border border-border rounded-xl p-6 hover:border-gold transition-colors group"
-          >
-            <Link href={`/blog/${post.slug}/`} className="block">
-              <h2 className="text-xl font-semibold text-text-primary mb-2 font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors">
-                {post.title}
-              </h2>
-              <p className="text-text-secondary text-sm mb-4 line-clamp-2">{post.excerpt}</p>
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-text-muted">
-                <span>By {post.author}</span>
-                <span className="hidden sm:inline">•</span>
-                <time dateTime={post.publishedAt}>
-                  {new Date(post.publishedAt).toLocaleDateString("en-KE", {
-                    year: "numeric",
-                    month: "short",
-                    day: "numeric",
-                  })}
-                </time>
-                <span className="hidden sm:inline">•</span>
-                <span>{post.readTime} min read</span>
-              </div>
-              {post.tags && post.tags.length > 0 && (
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {post.tags.slice(0, 3).map((tag: string) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-0.5 text-[0.625rem] bg-bg-elevated border border-border rounded-full text-text-secondary"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                  {post.tags.length > 3 && (
-                    <span className="px-2 py-0.5 text-[0.625rem] bg-transparent text-text-muted">
-                      +{post.tags.length - 3} more
-                    </span>
-                  )}
-                </div>
-              )}
-            </Link>
-          </article>
-        ))}
-      </div>
+      {/* Posts (Paginated 2-column grid with prefetch={false}) */}
+      <BlogListClient
+        posts={posts.map((post) => ({
+          slug: post.slug,
+          title: post.title,
+          excerpt: post.excerpt,
+          author: post.author,
+          publishedAt: post.publishedAt,
+          updatedAt: post.updatedAt ?? null,
+          readTime: post.readTime,
+          tags: post.tags || [],
+        }))}
+      />
     </div>
   );
 }

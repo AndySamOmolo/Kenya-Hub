@@ -512,8 +512,8 @@
       "slug": "kcse-grade-calculator",
       "notesTitle": "KNEC KCSE 8-Subject Mean Grade & Career Eligibility Methodology",
       "overview": [
-        "The Kenya Certificate of Secondary Education (KCSE), administered annually by the Kenya National Examinations Council (KNEC), grades candidates on a 12-point scale from Grade A (12 points) down to Grade E (1 point). Your overall KCSE Mean Grade determines your eligibility for Bachelor's degrees (C+ and above), TVET/KMTC Diplomas (C plain and C-), Craft Certificates (D+ and D), and entry into regulated professional training such as teaching, nursing, police, and military cadet intakes.",
-        "Understanding how KNEC aggregates subject points and maps mean scores to letter grades helps students, parents, and career counselors set realistic subject targets and verify tertiary admission requirements."
+        "The Kenya National Examinations Council (KNEC) computes the official KCSE overall mean grade strictly on a 7-subject / 84-point scale: the candidate's best language (English or Kiswahili), compulsory Mathematics, plus the best 5 remaining graded subjects.",
+        "Dividing the Best 7 aggregate (maximum 84 points) by 7 yields the KNEC mean score on a 12.00-point scale, which determines direct university eligibility (C+ and above) and competitive degree cutoffs such as Medicine & Surgery (A- minimum)."
       ],
       "howItWorks": [
         "Select your letter grades (A to E) for English and at least 7 additional KCSE subjects.",
@@ -544,7 +544,7 @@
       "faq": [
         {
           "question": "How is the KCSE mean grade calculated?",
-          "answer": "KNEC takes your 7 best subjects plus English (which is compulsory). The total points from these 8 subjects is divided by 8 to get the mean score, which is then mapped to a letter grade."
+          "answer": "KNEC computes the official KCSE mean grade strictly on 7 subjects (maximum 84 points): the best language (English or Kiswahili), compulsory Mathematics, and the highest-scoring 5 remaining subjects. The Best 7 total is divided by 7 to produce the mean score on a 12.00-point scale."
         },
         {
           "question": "Is English compulsory in KCSE?",
@@ -552,7 +552,7 @@
         },
         {
           "question": "What mean grade do I need for university in Kenya?",
-          "answer": "The minimum mean grade for university degree programs through KUCCPS is generally C+ (7 points). However, competitive courses like Medicine require A- or A. Diploma courses require C, and certificate courses require C-."
+          "answer": "KNEC computes the official KCSE mean grade strictly on 7 subjects (maximum 84 points): the best language (English or Kiswahili), compulsory Mathematics, and the highest-scoring 5 remaining subjects. The Best 7 total is divided by 7 to produce the mean score on a 12.00-point scale."
         }
       ]
     },
@@ -837,8 +837,8 @@
       "slug": "water-bill-calculator",
       "notesTitle": "WASREB County Water & Sewerage Tiered Block Tariff Guide (2026)",
       "overview": [
-        "Urban water supply and sanitation services in Kenya are regulated by the Water Services Regulatory Board (WASREB) under the Water Act (2016) and delivered by County Water and Sanitation Companies—including Nairobi City Water and Sewerage Company (NCWSC), Mombasa Water (MAWASCO), Kisumu Water (KIWASCO), Nakuru Water (NAWASSCO), and Eldoret Water (ELDOWAS).",
-        "To ensure affordable basic water for low-income households while discouraging wastage, WASREB enforces an Increasing Block Tariff (IBT) structure: the first 0–6 cubic metres (m³, where 1 m³ = 1,000 litres) is billed at a subsidized lifeline rate, with progressively higher per-m³ rates across upper consumption blocks, plus a Sewerage Charge (typically 75% of the water bill for sewer-connected premises) and a KES 50 meter rent."
+        "Urban water supply and sanitation services in Kenya are regulated by the Water Services Regulatory Board (WASREB) under the Water Act (2016) and delivered by County Water and Sanitation Companies—including Nairobi City Water and Sewerage Company (NCWSC), Mombasa Water (MAWASCO), Kisumu Water (KIWASCO), Nakuru Water (NARUWASCO), and Eldoret Water (ELDOWAS).",
+        "Under WASREB's approved Increasing Block Tariff (IBT), Nairobi (NCWSC) bills the first 0–6 m³ at the KES 45/m³ lifeline rate and Block 2 (7–20 m³) at KES 67/m³, plus a 75% sewerage surcharge (for sewer-connected premises), KES 50 monthly meter rent for standard 1/2-inch domestic meters, and the 4% WASREB regulatory levy."
       ],
       "howItWorks": [
         "Select your County Water Utility (Nairobi NCWSC, Mombasa MAWASCO, Kisumu KIWASCO, Nakuru NAWASSCO, or Eldoret ELDOWAS).",
@@ -846,15 +846,16 @@
         "Review the block-by-block water charge, sewerage charge, meter rent, and total monthly payable bill."
       ],
       "workedExample": {
-        "title": "Worked Example: 15 m³ (15,000 Litres) Monthly Consumption on Nairobi Water (NCWSC)",
-        "scenario": "A sewer-connected household in Nairobi consumes 15 m³ of water in a month:",
+        "title": "Worked Example: 15 m³ Monthly Consumption on Nairobi Water (NCWSC)",
+        "scenario": "A sewer-connected household in Nairobi consumes 15 m³ (15,000 litres) of water in a month:",
         "steps": [
-          "Block 1 (Lifeline 0 – 6 m³): Covered at the minimum lifeline block rate",
-          "Block 2 (7 – 20 m³ = 9 m³ in this tier): Billed at the second residential block tariff per m³",
-          "Sewerage Charge (for properties connected to the public sewer network): 75% of the water consumption charge",
-          "Monthly Meter Rent: KES 50 (for a standard 1/2-inch domestic connection)"
+          "Block 1 (Lifeline 0–6 m³): 6 m³ × KES 45 = KES 270",
+          "Block 2 (7–20 m³ = 9 m³): 9 m³ × KES 67 = KES 603 (Total Water Charge = KES 873)",
+          "Sewerage Charge (75% of water charge): KES 655",
+          "Monthly Meter Rent (1/2-inch domestic connection): KES 50",
+          "WASREB Regulatory Levy (4% of water + sewerage): KES 61 → Total Bill = KES 1,639"
         ],
-        "takeaway": "Fixing a single leaking toilet cistern (which can waste 10 to 15 m³ per month) prevents your household from crossing into the punitive >20 m³ and >50 m³ commercial tariff blocks."
+        "takeaway": "Fixing a single leaking toilet cistern (which can waste 10 to 15 m³ per month) prevents your household from crossing into higher tariff blocks."
       },
       "complianceTips": [
         "1 cubic metre (1 m³) equals exactly 1,000 litres (or fifty 20-litre 'mtungi' jerrycans).",
@@ -1086,15 +1087,16 @@
     },
     "rental-tax-calculator": {
       "slug": "rental-tax-calculator",
-      "notesTitle": "KRA 7.5% Monthly Rental Income (MRI) Tax Compliance",
+      "notesTitle": "Kenya Monthly Rental Income (7.5% MRI) vs. Net Graduated Income Tax Guide",
       "overview": [
-        "Under Section 6A of the Income Tax Act (Cap 470) as amended by the Finance Act, residential landlords earning between KES 288,000 and KES 15,000,000 in gross annual rent pay a simplified Monthly Rental Income (MRI) tax of 7.5% on gross rent collected.",
-        "MRI is a final tax—meaning landlords under the MRI regime do not deduct mortgage interest, repairs, or caretaker expenses, but are also exempt from further graduated individual income tax up to 35% on that rental income."
+        "Under Section 6A of Kenya's Income Tax Act (Cap 470), resident landlords earning between KES 288,000 and KES 15,000,000 in annual gross residential rent qualify for the simplified 7.5% Monthly Rental Income (MRI) tax—payable monthly via itax.kra.go.ke by the 20th of the following month.",
+        "Turnover Tax (TOT) under Section 12C does not apply to rental income. Landlords with high deductible expenses (such as mortgage interest, repairs, insurance, and caretaker salaries) may elect in writing to the Commissioner to be taxed on net rental profit under normal graduated Income Tax rates instead of gross 7.5% MRI."
       ],
       "howItWorks": [
-        "Enter the gross monthly residential rent collected across your Kenyan rental units.",
-        "The calculator computes the 7.5% MRI tax payable to KRA and the 92.5% net rent retained.",
-        "File and pay the MRI return on KRA iTax or via the eTIMS / KRA M-Service app on or before the 20th day of the following month."
+        "Enter your gross monthly residential rent collected in KES.",
+        "Enter your allowable monthly property expenses (mortgage interest, repairs, management fees, insurance, land rates).",
+        "Compare the simplified 7.5% gross MRI obligation against Net Graduated Income Tax on your annual net rental profit.",
+        "File your monthly MRI return (or annual net rental income return) via KRA iTax at itax.kra.go.ke."
       ],
       "workedExample": {
         "title": "Landlord Collecting KES 85,000 Monthly Residential Rent",
@@ -1107,8 +1109,8 @@
         "takeaway": "If no rent was collected in a given month, file a Nil MRI return on iTax before the 20th to avoid automatic late-filing penalties."
       },
       "complianceTips": [
-        "MRI returns are due on or before the 20th of the following month; late filing attracts a penalty of KES 2,000 (individuals) or KES 20,000 (companies) or 5% of tax due, whichever is higher.",
-        "Appointed KRA Rental Withholding Tax agents withhold 7.5% at source and issue a withholding certificate on iTax."
+        "File and pay Monthly Rental Income (7.5% MRI) on itax.kra.go.ke on or before the 20th day of the following month—late filing attracts a KES 2,000/month penalty plus 1% monthly interest.",
+        "Landlords electing Net Graduated Tax must keep audited/verifiable receipts for all mortgage interest, repairs, and property management expenses."
       ],
       "notes": [
         "MRI rate was reduced from 10% to 7.5% of gross residential rent effective January 1, 2024.",
@@ -1186,23 +1188,26 @@
       "slug": "domestic-wage-calculator",
       "notesTitle": "Gazetted Minimum Wage & Employment Act Rules for Domestic Workers",
       "overview": [
-        "Domestic workers (househelps, nannies, cooks, cleaners, gardeners, and watchmen) in Kenya are fully protected employees under the Employment Act (2007) and the Regulation of Wages (General) Order.",
-        "Statutory minimum wages vary across three geographic tiers: Cities (Nairobi, Mombasa, Kisumu), Former Municipalities & Town Councils (Nakuru, Eldoret, Thika, Nyeri, Kisii, Malindi, Kakamega), and All Other Rural Areas."
+        "Domestic workers (househelps, nannies, cooks, cleaners, gardeners, and night guards) in Kenya are fully protected employees under the Employment Act (Cap 226) and the Regulation of Wages (General) (Amendment) Order 2026 (Legal Notice No. 95, May 2026).",
+        "Statutory minimum wages vary across three geographic tiers: Cities (Nairobi, Mombasa, Kisumu, Nakuru, and Eldoret — KES 18,047/month floor), Former Municipalities & Town Councils (Thika, Nyeri, Kisii, Malindi, Kakamega, Machakos — KES 16,650/month), and All Other Rural Areas (KES 11,482/month)."
       ],
       "howItWorks": [
-        "Select your municipality or geographic zone to view the gazetted monthly, daily, and hourly minimum wage for general domestic workers.",
-        "Inspect mandatory statutory deductions (SHA at 2.75% with a KES 300 minimum and NSSF Tier I at KES 420 employee / KES 420 employer match).",
-        "Share the compliant wage and employment contract summary directly via WhatsApp or email."
+        "Select your geographic tier (Cities including Nairobi, Mombasa, Kisumu, Nakuru, and Eldoret; Former Municipalities; or Rural Counties) and choose Live-Out or Live-In housing.",
+        "Inspect mandatory statutory deductions: SHA/SHIF at 2.75% of gross (minimum KES 300) and NSSF Act Cap 128 at 6% employee / 6% employer match (capped at KES 4,320).",
+        "For Live-Out consolidated wages, the statutory 15% housing component is extracted using 15/115 of gross pay (KES 2,354 on KES 18,047).",
+        "Generate a Section 9 written contract and copy, share via WhatsApp/Email, or print for dual signature."
       ],
       "workedExample": {
-        "title": "Hiring a Full-Time Domestic Worker in Nairobi",
-        "scenario": "A household in Nairobi employs a live-out or live-in domestic worker on a monthly contract.",
+        "title": "Worked Example: Hiring a Full-Time Domestic Worker in Nairobi (May 2026 Floor)",
+        "scenario": "A household in Nairobi (Cities tier) employs a live-out domestic worker at the Legal Notice No. 95 (May 2026) statutory minimum gross wage.",
         "steps": [
-          "Gazetted monthly minimum gross wage in Nairobi (Cities tier) is KES 15,201.",
-          "Deduct employee SHA (KES 418) and NSSF Tier I (KES 420), leaving KES 14,363 net take-home pay.",
-          "Employer remits employee deductions plus the KES 420 employer NSSF match via eCitizen/KRA by the 9th of the following month."
+          "Gazetted monthly minimum gross wage in Cities (Nairobi, Mombasa, Kisumu, Nakuru, Eldoret): KES 18,047 (includes 15/115 housing component of KES 2,354).",
+          "Employee SHA/SHIF deduction (2.75% of gross): −KES 496.",
+          "Employee NSSF Act Cap 128 contribution (6% of gross): −KES 1,083.",
+          "Employee Net Monthly Take-Home Pay: KES 16,468.",
+          "Total Monthly Cost to Employer (Gross + 6% Employer NSSF match of KES 1,083): KES 19,130."
         ],
-        "takeaway": "Having a signed written employment contract and paying via M-Pesa protects both the household employer and the domestic worker against labour disputes."
+        "takeaway": "Paying at or above Legal Notice No. 95 (KES 18,047 in Cities) with a signed Section 9 contract and traceable M-Pesa/bank payments protects both employer and worker."
       },
       "complianceTips": [
         "Domestic workers are entitled to at least 21 working days of paid annual leave after 12 consecutive months of service and 1 rest day per week.",
@@ -1240,7 +1245,7 @@
       ],
       "howItWorks": [
         "Select your mobile network operator (Safaricom, Airtel Kenya, or Telkom Kenya).",
-        "Dial the USSD code on your phone on the Unsubscribe USSD card (*100*5# or *456*9*1#) to view and cancel all active airtime-draining subscriptions immediately.",
+        "Dial the USSD code on your phone on the Unsubscribe USSD card (*456*9*5# or *456*9*5#) to view and cancel all active airtime-draining subscriptions immediately.",
         "Dial the USSD code on your phone on the *106# ID Audit card to verify every mobile phone number linked to your Kenyan National ID."
       ],
       "workedExample": {
@@ -1360,7 +1365,21 @@
           "question": "Is my M-Pesa statement or KRA invoice data uploaded to any server?",
           "answer": "No. All Paybill/Till matching, statutory exemption tagging, and CSV exports execute 100% locally inside your browser or device for complete financial privacy."
         }
-      ]
+      ],
+      "notes": [
+        "Under the Finance Act 2023/2024 and Tax Procedures Act, business expenses without a valid KRA eTIMS/TIMS electronic tax invoice are disallowed for corporate/income tax deduction (exposing the business to 30% corporate tax on the disallowed expense).",
+        "All reconciliation runs 100% locally in your browser—no M-Pesa statements or supplier PINs leave your device."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Reconciling Monthly Till/Paybill Supplier Payments",
+        "scenario": "An SME pays KES 450,000 across 12 supplier M-Pesa transactions in a month, of which KES 120,000 lacks eTIMS invoices:",
+        "steps": [
+          "Paste M-Pesa statement rows and flag transactions missing a KRA eTIMS CU Invoice Number.",
+          "Total Uninvoiced Expense Exposure: KES 120,000.",
+          "30% Corporate Tax Disallowance Risk: KES 36,000 in extra annual tax if eTIMS invoices are not collected before filing on itax.kra.go.ke."
+        ],
+        "takeaway": "Reconciling M-Pesa supplier payouts against eTIMS receipts every Friday prevents unexpected 30% tax disallowances at year-end."
+      }
     },
     "odpc-hr-retention-vault": {
       "notesTitle": "Employment Act 2007 vs. Data Protection Act 2019",
@@ -1392,7 +1411,21 @@
           "question": "What should an employer do when a retention period expires?",
           "answer": "Once the statutory retention period ends and no legal dispute or KRA audit is pending, personal records must be securely anonymized or permanently destroyed, and the disposal logged in your ODPC retention register."
         }
-      ]
+      ],
+      "notes": [
+        "Section 63 of the Data Protection Act (2019) caps administrative penalty notices at the lower of KES 5,000,000 or 1% of annual turnover.",
+        "Registration with odpc.go.ke is mandatory for organizations with 10+ employees or annual turnover above KES 5,000,000 (or any entity processing sensitive personal data)."
+      ],
+      "workedExample": {
+        "title": "Worked Example: SME Employer With 18 Staff & KES 12M Annual Turnover",
+        "scenario": "A Kenyan SME with 18 employees and KES 12,000,000 annual turnover audits its HR files and marketing consent practices:",
+        "steps": [
+          "ODPC Registration: Mandatory (exceeds both 10-staff and KES 5M turnover thresholds).",
+          "DPA s.63 Statutory Fine Cap: min(KES 5,000,000, 1% × KES 12,000,000) = KES 120,000.",
+          "Dual-Statute Retention: Lock payroll/PAYE records for 5 years (Tax Procedures Act) and employee registers for 3 years post-exit (Employment Act), while purging rejected applicant CVs after 6 months."
+        ],
+        "takeaway": "Separating statutory tax/labour locks from rapid ODPC purges prevents both KRA audit penalties and Data Protection Act complaints."
+      }
     },
     "eudr-coop-geojson-packager": {
       "notesTitle": "EUDR (EU 2023/1115) Coffee Cooperative Compliance",
@@ -1425,7 +1458,21 @@
           "question": "What happens if my declared plot area differs from the computed polygon area?",
           "answer": "EU TRACES validates the actual polygon geometry rather than the self-reported acreage. If the computed polygon area crosses the 4-hectare threshold or differs significantly from the cooperative register, re-walk the farm perimeter with a <10m GNSS receiver before exporting."
         }
-      ]
+      ],
+      "notes": [
+        "EU Deforestation Regulation (EUDR) requires polygon GeoJSON boundaries for coffee/cocoa/rubber/timber plots above 4 hectares (and single-point coordinates for plots ≤ 4 ha) in WGS84 (EPSG:4326).",
+        "Polygon rings must be closed (first coordinate equal to last coordinate) and follow RFC 7946 counter-clockwise exterior ring winding."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Packaging a 4.8 ha Nyeri Coffee Cooperative Plot",
+        "scenario": "A coffee factory clerk exports a 4.8-hectare smallholder cooperative plot for EU exporter TRACES NT submission:",
+        "steps": [
+          "Paste WGS84 longitude/latitude coordinates and verify polygon closure and geodesic area (~4.8 ha).",
+          "Confirm declared farm area matches computed geodesic area within 10% tolerance.",
+          "Download the RFC 7946 compliant GeoJSON FeatureCollection for EUDR Due Diligence Statement (DDS) upload."
+        ],
+        "takeaway": "Validating polygon closure and area variance before export prevents European customs rejections on Kenyan specialty coffee lots."
+      }
     },
     "icms-landed-cost-arbitrage": {
       "notesTitle": "KRA iCMS Cascading Tax vs. Consolidator Math",
@@ -1437,7 +1484,8 @@
         "Enter FOB value, volume (CBM) or weight (kg), and compare independent iCMS clearance against all-in sea (KES 65,000/CBM) or air (KES 1,700/kg) consolidators."
       ],
       "complianceTips": [
-        "On a benchmark 1.5 CBM shipment, independent clearance can total ~KES 499,975 vs ~KES 357,500 via consolidator — a KES 142,475 spread."
+        "On the default 1.5 CBM benchmark (FOB KES 260,000, 25% duty), independent KRA iCMS clearance totals KES 512,989 vs. KES 357,500 via an all-in sea consolidator — a KES 155,489 spread.",
+        "VAT-registered businesses requiring an official KRA iCMS Entry C17B to claim 16% input VAT and eTIMS cost-of-goods-sold deductions should clear independently."
       ],
       "slug": "icms-landed-cost-arbitrage",
       "faq": [
@@ -1457,7 +1505,22 @@
           "question": "Does the calculator include Kenya Bureau of Standards (KEBS) PVoC inspection fees?",
           "answer": "No—KEBS Pre-Export Verification of Conformity (PVoC) fees (typically 0.5% of FOB, minimum USD 250) and local Mombasa-to-Nairobi haulage should be added separately when clearing independently."
         }
-      ]
+      ],
+      "notes": [
+        "Customs Value (CIF) is calculated as FOB + Direct Freight + 1.5% Marine/Cargo Insurance.",
+        "16% VAT cascades on (CIF + Import Duty), while 2.5% IDF and 2.0% RDL apply directly on CIF."
+      ],
+      "workedExample": {
+        "title": "Worked Example: 1.5 CBM Consumer Electronics (25% Duty) — China to Mombasa",
+        "scenario": "An importer ships KES 260,000 FOB of electronics (1.5 CBM) comparing Direct KRA iCMS vs. KES 65,000/CBM sea consolidator:",
+        "steps": [
+          "CIF Value (FOB 260,000 + Freight 55,000 + 1.5% Insurance 4,725): KES 319,725",
+          "Cascading KRA Taxes: Import Duty (25%) KES 79,931 + 16% VAT KES 63,945 + 2.5% IDF KES 7,993 + 2.0% RDL KES 6,395 = KES 158,264",
+          "Independent Landed Total (CIF + Taxes + KES 35,000 Clearing): KES 512,989",
+          "All-In Sea Consolidator Total (FOB 260,000 + 1.5 CBM × 65,000): KES 357,500"
+        ],
+        "takeaway": "For sub-container shipments under 2.5 CBM at 25% duty, sea consolidation saves KES 155,489 unless you need C17B input VAT recovery."
+      }
     },
     "sha-claim-scrubber": {
       "notesTitle": "SHA Level 3–5 Provider Claim Rejection Prevention",
@@ -1489,10 +1552,24 @@
           "question": "Is patient clinical data uploaded when running the SHA Claim Scrubber?",
           "answer": "No. All pre-submission validation checks run 100% locally in your browser so no protected health information (PHI) leaves the facility's computer."
         }
-      ]
+      ],
+      "notes": [
+        "The 6 pre-submission checks weight the top rejection drivers reported across Level 3–5 SHA contracted facilities in Kenya.",
+        "Claims submitted beyond the 30-day statutory window from patient discharge face automatic rejection on the SHA provider portal (sha.go.ke)."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Level 4 Hospital Inpatient Claim (KES 48,500)",
+        "scenario": "A Level 4 sub-county hospital scrubs a KES 48,500 surgical claim 4 days after discharge:",
+        "steps": [
+          "Confirm facility tier contract, KEML formulary match, and pre-authorization code (+60 pts).",
+          "Verify beneficiary active SHA status via *147# (+20 pts) and attach signed discharge summary + biometric OTP (+15 pts).",
+          "Submit within 30 days (+5 pts) to achieve a 100/100 Low Risk readiness score."
+        ],
+        "takeaway": "Catching a missing *147# remittance check or discharge signature before submission protects KES 48,500 from a 60-day appeal cycle."
+      }
     },
     "ppra-egp-tender-serializer": {
-      "notesTitle": "PPRA Preliminary Mandatory Stage (MR1–MR15) & ITT 20.3",
+      "notesTitle": "PPRA Preliminary Mandatory Stage (MR1–MR11) & ITT 20.3",
       "overview": [
         "Most Kenyan tender disqualifications happen at the Preliminary Mandatory Stage due to unserialized pages (ITT 20.3), expired CR12/TCC, wrong NCA tier, or missing Form SD1/SD2 and 300-day bid validity."
       ],
@@ -1521,7 +1598,21 @@
           "question": "Does this tool upload my company's bid PDFs or pricing schedules?",
           "answer": "No. All checklist verification, pagination indexing, and tender binder serialization run strictly offline inside your browser."
         }
-      ]
+      ],
+      "notes": [
+        "Under PPRA Standard Tender Documents (ITT 20.3), every page of the bound bid must be sequentially paginated (0001–NNNN) and initialed by the authorized signatory.",
+        "Missing any critical mandatory requirement (MR1–MR11) such as a valid KRA TCC, CR12, or Bid Security triggers automatic preliminary disqualification."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Serializing an 11-Item Open National Tender Bid (MR1–MR11)",
+        "scenario": "A bidder prepares an open tender submission under ref CDA/T/010/2025-2026 with 300-day bid validity:",
+        "steps": [
+          "Verify all 11 mandatory documents (MR1 Certificate of Incorporation through MR11 Signed Form of Tender) are marked Included and Initialed.",
+          "Enter the exact page count for each attachment so the serializer generates continuous Bates ranges (e.g., 0001–0002, 0003–0005, ...).",
+          "Copy the generated ITT 20.3 Table of Contents manifest and place it as Page 1 before binding or uploading to egpkenya.go.ke."
+        ],
+        "takeaway": "Sequential Bates pagination eliminates the #1 technical disqualification trap in Kenyan public procurement evaluations."
+      }
     },
     "kjsea-pathway-engine": {
       "notesTitle": "KNEC 20-20-60 CBE Senior School Placement Formula",
@@ -1553,7 +1644,22 @@
           "question": "Can a student switch Senior School pathways after Grade 10 placement?",
           "answer": "Limited transfers are permitted within the first term of Grade 10 subject to school capacity, Ministry of Education guidelines, and whether the learner meets the prerequisite subject performance levels for the target track."
         }
-      ]
+      ],
+      "notes": [
+        "Senior School (Grade 10–12) placement blends 20% KPSEA (Grade 6), 20% Junior School SBA (Grades 7–8), and 60% Grade 9 KJSEA summative score.",
+        "Learners are matched into STEM, Social Sciences, or Arts & Sports Science pathways based on weighted performance and subject cluster strength."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Grade 9 Learner Targeting the STEM Pathway",
+        "scenario": "A Grade 9 candidate scores 78% in KPSEA, 82% in Junior School SBA, and 80% in KJSEA:",
+        "steps": [
+          "Weighted KPSEA contribution (20% × 78): 15.6 points",
+          "Weighted SBA contribution (20% × 82): 16.4 points",
+          "Weighted KJSEA contribution (60% × 80): 48.0 points",
+          "Composite Placement Score: 80.0 / 100 — qualifies strongly for STEM (Pure & Applied Sciences) Senior School placement."
+        ],
+        "takeaway": "Consistent Grades 7–8 School-Based Assessments contribute 20% of final placement, rewarding steady classroom project work."
+      }
     },
     "ardhisasa-cad-title-auditor": {
       "notesTitle": "Ardhisasa GIS/CAD Topology & Root-of-Title Due Diligence",
@@ -1585,7 +1691,21 @@
           "question": "Does the Ardhisasa CAD Title Auditor replace a licensed surveyor?",
           "answer": "No. It is a pre-validation engineering tool to catch beacon closure errors, self-intersections, and root-of-title checklist gaps early—formal mutation forms and Rim/FR plans must still be signed by a licensed Kenyan surveyor."
         }
-      ]
+      ],
+      "notes": [
+        "Polygon area is computed via the Shoelace formula on UTM Zone 37S (WGS84) Easting/Northing coordinates in meters.",
+        "A valid closed cadastral parcel must repeat its starting beacon coordinate as the final row (closure error < 0.05m) and match the declared title area within Survey Regulations tolerance."
+      ],
+      "workedExample": {
+        "title": "Worked Example: Auditing a 2,000 m² (0.20 ha) Parcel Before Ardhisasa Transfer",
+        "scenario": "A licensed surveyor or buyer pastes 5 UTM Zone 37S beacon coordinate pairs (4 corners + closing point) for a 2,000 m² title:",
+        "steps": [
+          "Computed Shoelace polygon area matches 2,000.0 m² (0.2000 ha) with 0.00% area variance.",
+          "Polygon closure error is 0.00 m (Closed), passing geometric topology checks.",
+          "Complete all 6 Root-of-Title checks (Ardhisasa official search, Green Card history, Kenya Gazette, Ndung'u report, datum check, and NCA/EBK sign-offs)."
+        ],
+        "takeaway": "Verifying beacon geometry and Root-of-Title history before paying a deposit prevents costly Ardhisasa rejection and double-allocation disputes."
+      }
     }
   }
 }

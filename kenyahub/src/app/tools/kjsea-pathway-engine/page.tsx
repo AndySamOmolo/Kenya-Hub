@@ -50,7 +50,7 @@ export default function KjseaPathwayEnginePage() {
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
+          <div role="status" aria-live="polite" aria-atomic="true" className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
             <div>
               <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Grade 6 KPSEA (20% Weight)</label>
               <input

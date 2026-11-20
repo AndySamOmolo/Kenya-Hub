@@ -4,7 +4,7 @@
     {
       "name": "Syngenta East Africa Ltd — Nairobi",
       "county": "Nairobi",
-      "town": "Industrial Area (Mogadishu Rd)",
+      "town": "Industrial Area, Mogadishu Rd",
       "services": [
         "Certified vegetable & field seeds",
         "Crop protection agrochemicals",
@@ -17,7 +17,7 @@
     {
       "name": "Osho Chemical Industries Ltd",
       "county": "Nairobi",
-      "town": "Industrial Area (Sasoi Rd)",
+      "town": "Industrial Area, Sasoi Rd",
       "services": [
         "Crop protection products",
         "Foliar & soil fertilizers",
@@ -30,7 +30,7 @@
     {
       "name": "Bayer East Africa Ltd",
       "county": "Nairobi",
-      "town": "Ruaraka (Outering Rd)",
+      "town": "Ruaraka, Outering Rd",
       "services": [
         "DEKALB hybrid maize seeds",
         "Crop protection fungicides & insecticides",
@@ -42,7 +42,7 @@
     {
       "name": "Elgon Kenya Ltd",
       "county": "Nairobi",
-      "town": "Mombasa Road (National Park East Gate)",
+      "town": "Mombasa Road, National Park East Gate",
       "services": [
         "Certified seeds & fertilizers",
         "Agrochemicals",
@@ -55,7 +55,7 @@
     {
       "name": "Amiran Kenya Ltd",
       "county": "Nairobi",
-      "town": "Embakasi (Old Airport North Rd)",
+      "town": "Embakasi, Old Airport North Rd",
       "services": [
         "Greenhouse kits & drip irrigation",
         "Vegetable & flower seeds",
@@ -68,7 +68,7 @@
     {
       "name": "Twiga Chemical Industries Ltd",
       "county": "Nairobi",
-      "town": "Industrial Area (Nanyuki Rd)",
+      "town": "Industrial Area, Nanyuki Rd",
       "services": [
         "Crop protection agrochemicals",
         "Animal health & livestock dips",
@@ -81,7 +81,7 @@
     {
       "name": "Cooper K-Brands Ltd (Coopers Kenya)",
       "county": "Kiambu",
-      "town": "Kabete (Kaptagat Rd)",
+      "town": "Kabete, Kaptagat Rd",
       "services": [
         "Acaricides & tick control (Triatix)",
         "Livestock dewormers & mineral salts",
@@ -94,7 +94,7 @@
     {
       "name": "Ultravetis East Africa Ltd",
       "county": "Nairobi",
-      "town": "Westlands (Ring Rd Parklands)",
+      "town": "Westlands, Ring Rd Parklands",
       "services": [
         "Veterinary pharmaceuticals",
         "Dairy mineral supplements",
@@ -107,7 +107,7 @@
     {
       "name": "Murphy Chemicals (East Africa) Ltd",
       "county": "Kiambu",
-      "town": "Ruiru (Kamiti Corner)",
+      "town": "Ruiru, Kamiti Corner",
       "services": [
         "Fungicides & insecticides",
         "Herbicides & foliar feeds",
@@ -120,7 +120,7 @@
     {
       "name": "Simlaw Seeds Company Ltd",
       "county": "Nairobi",
-      "town": "CBD (Kijabe Street)",
+      "town": "CBD, Kijabe Street",
       "services": [
         "Certified horticultural & vegetable seeds",
         "Highland & lowland onion/cabbage/tomato seeds",
@@ -169,7 +169,7 @@
     {
       "name": "Western Seed Company Ltd",
       "county": "Trans Nzoia",
-      "town": "Kitale (Kapretwa)",
+      "town": "Kitale, Kapretwa",
       "services": [
         "WH505, WH403 & mid-altitude hybrid maize",
         "Certified climbing & bush bean seeds",
@@ -181,7 +181,7 @@
     {
       "name": "Seed Co Kenya Ltd (AgriSeed Co)",
       "county": "Nairobi",
-      "town": "Mombasa Road (Syokimau)",
+      "town": "Mombasa Road, Syokimau",
       "services": [
         "Duma 43, Sungura & Punda Milia hybrid maize",
         "Vegetable & soybean seeds",
@@ -193,7 +193,7 @@
     {
       "name": "Norbrook Kenya Ltd",
       "county": "Kiambu",
-      "town": "Kikuyu / Limuru Road (Karuri)",
+      "town": "Kikuyu / Limuru Road, Karuri",
       "services": [
         "Veterinary antibiotics & injectables",
         "Livestock dewormers & anti-inflammatories",
@@ -205,7 +205,7 @@
     {
       "name": "Highchem Essentials Ltd",
       "county": "Nairobi",
-      "town": "Industrial Area (Mogadishu Rd)",
+      "town": "Industrial Area, Mogadishu Rd",
       "services": [
         "Agrochemicals & crop protection",
         "Veterinary medicines & nutritional supplements",
@@ -217,7 +217,7 @@
     {
       "name": "Lachlan Kenya Ltd",
       "county": "Nairobi",
-      "town": "Industrial Area (Pate Rd)",
+      "town": "Industrial Area, Pate Rd",
       "services": [
         "Specialty micronutrients & biostimulants",
         "Biological crop protection",
@@ -229,7 +229,7 @@
     {
       "name": "Bimeda Kenya Ltd",
       "county": "Nairobi",
-      "town": "Industrial Area (Enterprise Rd)",
+      "town": "Industrial Area, Enterprise Rd",
       "services": [
         "Tick & ectoparasite control",
         "Livestock anthelmintics & fluke treatments",
@@ -241,7 +241,7 @@
     {
       "name": "Kenya Veterinary Vaccines Production Institute (KEVEVAPI)",
       "county": "Nairobi",
-      "town": "Industrial Area (Road A, Off Enterprise Rd)",
+      "town": "Industrial Area, Road A, Off Enterprise Rd",
       "services": [
         "Foot-and-mouth, LSD & CCPP livestock vaccines",
         "Newcastle & Gumboro poultry vaccines",

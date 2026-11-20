@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Compass, CheckCircle2, AlertTriangle } from "lucide-react";
+import { CheckCircle2, AlertTriangle } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
@@ -38,7 +38,9 @@ export default function ArdhisasaCadTitleAuditorPage() {
       .filter(Boolean)
       .map((l) => {
         const p = l.split(/[,\s]+/).map(Number);
-        return p.length >= 2 && !Number.isNaN(p[0]) && !Number.isNaN(p[1]) ? ([p[0], p[1]] as [number, number]) : null;
+        return p.length >= 2 && !Number.isNaN(p[0]) && !Number.isNaN(p[1])
+          ? ([p[0], p[1]] as [number, number])
+          : null;
       })
       .filter((p): p is [number, number] => p !== null);
 
@@ -68,46 +70,85 @@ export default function ArdhisasaCadTitleAuditorPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
             <div>
-              <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Declared Title Area (m²)</label>
+              <label
+                htmlFor="ardhisasa-declared-sqm"
+                className="block text-xs font-semibold text-text-muted uppercase mb-1"
+              >
+                Declared Title Area (m²)
+              </label>
               <input
+                id="ardhisasa-declared-sqm"
                 type="number"
+                inputMode="numeric"
+                min={1}
                 value={declaredSqm}
                 onChange={(e) => setDeclaredSqm(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-sm font-bold text-text-primary"
+                aria-describedby="ardhisasa-area-hint"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-sm font-bold text-text-primary tabular-nums"
               />
-            </div>
-            <div className="rounded-xl border border-gold/40 bg-gold/10 px-4 py-2 flex flex-col justify-center">
-              <span className="text-[0.65rem] font-bold uppercase text-gold">Computed Polygon Area</span>
-              <span className="text-base font-black text-text-primary">
-                {audit.areaSqm.toFixed(1)} m² ({(audit.areaSqm / 10000).toFixed(4)} ha)
+              <span id="ardhisasa-area-hint" className="sr-only">
+                Enter the land parcel area in square meters as printed on the title deed.
               </span>
             </div>
-            <div className={`rounded-xl border px-4 py-2 flex flex-col justify-center ${audit.isClosed && audit.areaOk ? "border-emerald-500/40 bg-emerald-500/10" : "border-red-500/40 bg-red-500/10"}`}>
-              <span className="text-[0.65rem] font-bold uppercase text-text-muted">Topology &amp; Tolerance</span>
-              <span className={`text-sm font-black ${audit.isClosed && audit.areaOk ? "text-emerald-700 dark:text-emerald-400" : "text-red-400"}`}>
-                {audit.isClosed ? "Closed" : `Open (${audit.closureErr.toFixed(2)}m)`} • Δ {audit.variancePct.toFixed(2)}%
-              </span>
+
+            <div
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+              className="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-3"
+            >
+              <div className="rounded-xl border border-amber-500/45 bg-amber-500/[0.04] px-4 py-2 flex flex-col justify-center">
+                <span className="text-[0.65rem] font-bold uppercase text-gold">Computed Polygon Area</span>
+                <span className="text-base font-black text-text-primary tabular-nums">
+                  {audit.areaSqm.toFixed(1)} m² ({(audit.areaSqm / 10000).toFixed(4)} ha)
+                </span>
+              </div>
+              <div
+                className={`rounded-xl border px-4 py-2 flex flex-col justify-center ${
+                  audit.isClosed && audit.areaOk
+                    ? "border-emerald-500/40 bg-emerald-500/10"
+                    : "border-red-500/40 bg-red-500/10"
+                }`}
+              >
+                <span className="text-[0.65rem] font-bold uppercase text-text-muted">Topology &amp; Tolerance</span>
+                <span
+                  className={`text-sm font-black tabular-nums ${
+                    audit.isClosed && audit.areaOk
+                      ? "text-emerald-700 dark:text-emerald-400"
+                      : "text-red-700 dark:text-red-400"
+                  }`}
+                >
+                  {audit.isClosed ? "Closed" : `Open (${audit.closureErr.toFixed(2)}m)`} • Δ {audit.variancePct.toFixed(2)}%
+                </span>
+              </div>
             </div>
           </div>
 
           <div className="mb-5">
-            <label className="block text-xs font-semibold text-text-muted uppercase mb-1">
-              Parcel Beacon Coordinates (`Easting, Northing` in UTM Zone 37S meters)
+            <label
+              htmlFor="ardhisasa-utm-coords"
+              className="block text-xs font-semibold text-text-muted uppercase mb-1"
+            >
+              Parcel Beacon Coordinates (EASTING, NORTHING in UTM Zone 37S meters)
             </label>
             <textarea
+              id="ardhisasa-utm-coords"
               rows={5}
               value={coordText}
               onChange={(e) => setCoordText(e.target.value)}
-              className="w-full p-3 rounded-xl border border-border bg-bg-elevated font-mono text-xs text-text-primary"
+              aria-describedby="ardhisasa-coords-hint"
+              className="w-full p-3 rounded-xl border border-border dark:border-white/15 bg-bg-elevated font-mono text-xs text-text-primary"
             />
+            <p id="ardhisasa-coords-hint" className="text-[0.6875rem] text-text-muted mt-1">
+              Enter one beacon coordinate pair per line (EASTING, NORTHING) and repeat the first point at the end to close the polygon.
+            </p>
           </div>
 
-          <h3 className="text-xs font-bold uppercase text-text-muted mb-2">
+          <h2 className="text-xs font-bold uppercase text-text-muted mb-2">
             Root-of-Title &amp; Structural Compliance Dossier ({audit.passedChecks}/{DOSSIER_CHECKS.length} Verified)
-          </h3>
+          </h2>
           <div className="space-y-2">
             {DOSSIER_CHECKS.map((item) => (
               <label
@@ -125,14 +166,17 @@ export default function ArdhisasaCadTitleAuditorPage() {
             ))}
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4" role="status" aria-live="polite">
             {audit.isClosed && audit.areaOk && audit.passedChecks === DOSSIER_CHECKS.length ? (
               <div className="flex items-center gap-2 text-xs font-semibold text-emerald-700 dark:text-emerald-400">
-                <CheckCircle2 className="w-4 h-4" /> Parcel topology and Root-of-Title compliance dossier passed.
+                <CheckCircle2 className="w-4 h-4 shrink-0" /> Parcel topology and Root-of-Title compliance dossier passed.
               </div>
             ) : (
               <div className="flex items-center gap-2 text-xs font-semibold text-amber-800 dark:text-amber-400">
-                <AlertTriangle className="w-4 h-4" /> {DOSSIER_CHECKS.length - audit.passedChecks > 0 ? `Complete remaining ${DOSSIER_CHECKS.length - audit.passedChecks} dossier check(s) and verify polygon closure/tolerance before conveyancing or Ardhisasa upload.` : "Verify polygon closure and linear tolerance before conveyancing or Ardhisasa upload."}
+                <AlertTriangle className="w-4 h-4 shrink-0" />{" "}
+                {DOSSIER_CHECKS.length - audit.passedChecks > 0
+                  ? `Complete remaining ${DOSSIER_CHECKS.length - audit.passedChecks} dossier check(s) and verify polygon closure/tolerance before conveyancing or Ardhisasa upload.`
+                  : "Verify polygon closure and linear tolerance before conveyancing or Ardhisasa upload."}
               </div>
             )}
           </div>

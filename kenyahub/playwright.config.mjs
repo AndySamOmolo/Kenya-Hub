@@ -3,33 +3,38 @@ import { defineConfig, devices } from "@playwright/test";
 
 const PORT = Number(process.env.PLAYWRIGHT_PORT || 4173);
 const BASE_URL = process.env.PLAYWRIGHT_BASE_URL || `http://127.0.0.1:${PORT}`;
+const isCI = Boolean(process.env.CI);
 
 export default defineConfig({
   testDir: "./e2e",
   testMatch: "**/*.spec.mjs",
-  timeout: 45_000,
+  timeout: 30_000,
   expect: {
     timeout: 10_000,
   },
+  globalTimeout: isCI ? 15 * 60 * 1000 : 0,
   fullyParallel: true,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 1 : 0,
-  workers: process.env.CI ? 2 : undefined,
+  forbidOnly: isCI,
+  retries: isCI ? 1 : 0,
+  workers: isCI ? 2 : undefined,
+  preserveOutput: "failures-only",
   reporter: [
     ["list"],
-    ["html", { outputFolder: "playwright-report", open: "never" }],
+    ["html", { outputFolder: "reports/playwright-html", open: "never" }],
   ],
   use: {
     baseURL: BASE_URL,
-    trace: "on-first-retry",
     screenshot: "only-on-failure",
+    video: "retain-on-failure",
+    trace: "on-first-retry",
+    reducedMotion: "reduce",
   },
   webServer: process.env.PLAYWRIGHT_BASE_URL
     ? undefined
     : {
         command: `node scripts/serve-out.mjs --port ${PORT}`,
         url: BASE_URL,
-        reuseExistingServer: !process.env.CI,
+        reuseExistingServer: !isCI,
         timeout: 30_000,
       },
   projects: [
@@ -45,6 +50,14 @@ export default defineConfig({
       use: {
         ...devices["Pixel 7"],
         viewport: { width: 390, height: 844 },
+      },
+    },
+    {
+      name: "mobile-light",
+      use: {
+        ...devices["iPhone 14"],
+        defaultBrowserType: "chromium",
+        colorScheme: "light",
       },
     },
   ],

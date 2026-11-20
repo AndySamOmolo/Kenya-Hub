@@ -80,16 +80,12 @@ jobs:
       - name: Run exhaustive Playwright E2E, a11y, error & visual audit
         run: npx playwright test --config=playwright.config.mjs
 
-      - name: Upload Web Comprehensive Audit artifacts
+      - name: Upload Web Playwright HTML Report
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: web-playwright-audit
-          path: |
-            kenyahub/test-results/web-screenshots/
-            kenyahub/test-results/web-audit-summary.json
-            kenyahub/test-results/web-audit-report.md
-            kenyahub/playwright-report/
+          path: kenyahub/reports/playwright-html/
           retention-days: 14
 
   android-comprehensive-audit:

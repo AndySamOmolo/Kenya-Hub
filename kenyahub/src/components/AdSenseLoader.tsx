@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { readStoredConsent } from "@/components/CookieConsent";
 
 const ADSENSE_CLIENT = "ca-pub-5895990873842803";
 const ADSENSE_SCRIPT_ID = "kh-adsense-auto-ads";
@@ -63,29 +64,9 @@ function isAdvertisingConsentDenied(tcfDenied: boolean | null): boolean {
   if (tcfDenied === true) return true;
   if (tcfDenied === false) return false;
 
-  try {
-    const status = localStorage.getItem("kh-cookie-consent");
-    if (status === "declined" || status === "essential") {
-      return true;
-    }
-
-    const rawPrefs = localStorage.getItem("kh-cookie-preferences");
-    if (rawPrefs) {
-      const parsed = JSON.parse(rawPrefs);
-      if (parsed && parsed.advertising === false) {
-        return true;
-      }
-      if (parsed && parsed.advertising === true) {
-        return false;
-      }
-    }
-
-    // Default to denied (paused) until explicit user consent is provided,
-    // matching RootLayout's Consent Mode v2 default-denied state.
-    return status !== "accepted";
-  } catch {
-    return true;
-  }
+  const stored = readStoredConsent();
+  if (!stored.hasDecision) return true;
+  return stored.preferences.advertising !== true;
 }
 
 /**

@@ -35,6 +35,7 @@ const reportRoot = join(root, "reports");
 const checkSources = process.argv.includes("--check-sources") || process.argv.includes("--check-links");
 const strict = process.argv.includes("--strict");
 const today = new Date();
+const STATUTORY_MAX_AGE_DAYS = 90;
 
 const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
 const toolGuides = JSON.parse(readFileSync(guidesPath, "utf8"));
@@ -65,10 +66,31 @@ function findImportedData(slug) {
   const pagePath = join(toolsRoot, slug, "page.tsx");
   if (!existsSync(pagePath)) return [];
   const page = readFileSync(pagePath, "utf8");
-  return [...page.matchAll(/(?:from\s+|import\(\s*)["']@\/data\/([^"']+)["']/g)]
+  const resolved = [...page.matchAll(/(?:from\s+|import\(\s*)["']@\/data\/([^"']+)["']/g)]
     .map((match) => match[1])
-    .map((importPath) => join(sourceRoot, "data", importPath))
+    .map((importPath) => {
+      const direct = join(sourceRoot, "data", importPath);
+      if (existsSync(direct)) return direct;
+      for (const ext of [".json", ".ts", ".tsx"]) {
+        if (existsSync(`${direct}${ext}`)) return `${direct}${ext}`;
+      }
+      return direct;
+    })
     .filter((filePath) => existsSync(filePath));
+
+  // Attach dictionary/course JSON datasets for learn & kenyan-translator so ageDays is never null (F-048)
+  if (slug === "learn" || slug === "kenyan-translator") {
+    if (existsSync(dictionariesRoot)) {
+      const dictFiles = readdirSync(dictionariesRoot)
+        .filter((f) => f.endsWith(".json"))
+        .sort()
+        .map((f) => join(dictionariesRoot, f));
+      for (const df of dictFiles) {
+        if (!resolved.includes(df)) resolved.push(df);
+      }
+    }
+  }
+  return resolved;
 }
 
 function inspectData(filePath, config = {}) {
@@ -132,9 +154,15 @@ for (const slug of uniqueRegistrySlugs) {
   const dataFiles = findImportedData(slug);
   const data = dataFiles.map((fp) => inspectData(fp, config));
   const dates = data.map((item) => parseDate(item.lastUpdated)).filter(Boolean);
-  const newestDate = dates.length ? new Date(Math.max(...dates.map((date) => date.valueOf()))) : null;
-  const ageDays = newestDate ? Math.floor((today - newestDate) / 86400000) : null;
-  const maxAgeDays = config.maxAgeDays ?? manifest.defaultMaxAgeDays;
+  if (dates.length === 0 && config.lastUpdated) {
+    const fallbackDate = parseDate(config.lastUpdated);
+    if (fallbackDate) dates.push(fallbackDate);
+  }
+  // Use Math.max(...ages) so stale sub-files are never masked by newer siblings (F-036)
+  const ages = dates.map((date) => Math.max(0, Math.floor((today - date) / 86400000)));
+  const ageDays = ages.length ? Math.max(...ages) : null;
+  // Tighten statutory/official tools from 365 days to 90 days (F-041)
+  const maxAgeDays = config.maxAgeDays ?? (config.official ? STATUTORY_MAX_AGE_DAYS : manifest.defaultMaxAgeDays);
   const sourceUrl = config.sourceUrl ?? null;
 
   const record = {
@@ -155,7 +183,7 @@ for (const slug of uniqueRegistrySlugs) {
     record.status = "error";
     errors.push(`[data] ${slug}: one or more imported JSON files cannot be parsed`);
   }
-  if (dataFiles.length > 0 && !newestDate) {
+  if (dataFiles.length > 0 && ages.length === 0) {
     record.status = "review";
     warnings.push(`[freshness] ${slug}: imported data has no parseable lastUpdated metadata`);
   }
@@ -328,8 +356,15 @@ recordCheck("ui-overlay", "ScrollReset hides floating ↑ button in focus mode (
 const odpcSrc = readSafe(join(toolsRoot, "odpc-hr-retention-vault/page.tsx"));
 recordCheck("contrast", "ODPC warning banners use high-contrast Light/Dark text", odpcSrc.includes("text-amber-950 dark:text-amber-200"));
 
+// Check #52 (F-036 fix): Case-insensitive check so `Easting, Northing` is never missed
 const ardhisasaSrc = readSafe(join(toolsRoot, "ardhisasa-cad-title-auditor/page.tsx"));
-recordCheck("copy", "Ardhisasa has no literal backticks in UTM label", !ardhisasaSrc.includes("`EASTING, NORTHING`"));
+const hasArdhisasaBackticks = /`\s*easting\s*,\s*northing\s*`/i.test(ardhisasaSrc);
+recordCheck(
+  "copy",
+  "Ardhisasa has no literal backticks in UTM label",
+  !hasArdhisasaBackticks,
+  hasArdhisasaBackticks ? "Found literal backtick-wrapped Easting, Northing in ardhisasa-cad-title-auditor/page.tsx" : ""
+);
 
 // ── 8. Android Theme Atomicity & Mobile Ergonomics ──
 const mobileThemeSrc = readSafe(join(mobileRoot, "src/theme.tsx"));
@@ -373,15 +408,45 @@ for (const slug of uniqueRegistrySlugs) {
 recordCheck("jsx", "All 33 Web tool pages have balanced <div> tags", !errors.some((e) => e.startsWith("[jsx]")));
 
 // ── 11. Calculator Controls & Math Consistency Guards ──
-recordCheck("calc", "Plate Decoder supports diplomatic CD/CC/UN plates", readSafe(join(toolsRoot, "number-plate-decoder/page.tsx")).includes("dipMatch"));
+// Check #65 (F-036 fix): Verify dipMatch branch actually populates rendered county, plateType & yearRange fields
+const plateDecoderSrc = readSafe(join(toolsRoot, "number-plate-decoder/page.tsx"));
+const dipBlockMatch = plateDecoderSrc.match(/if\s*\(\s*dipMatch\s*\)\s*\{([\s\S]*?)\n\s*\}/);
+const dipBlock = dipBlockMatch ? dipBlockMatch[1] : "";
+const dipPopulatesRenderedFields =
+  Boolean(dipBlock) &&
+  /\bcounty\s*:/.test(dipBlock) &&
+  /\bplateType\s*:/.test(dipBlock) &&
+  /\byearRange\s*:/.test(dipBlock);
+recordCheck(
+  "calc",
+  "Plate Decoder supports diplomatic CD/CC/UN plates with populated county, plateType & yearRange",
+  dipPopulatesRenderedFields,
+  dipPopulatesRenderedFields ? "" : "dipMatch branch must populate county, plateType, and yearRange so 29 CD 1K does not blank output"
+);
+
 recordCheck("calc", "KPLC Token Calculator includes EPRA tariff selector", readSafe(join(toolsRoot, "kplc-token-calculator/page.tsx")).includes("tariffMode"));
 recordCheck("calc", "Water Bill Calculator includes county sewer toggle", readSafe(join(toolsRoot, "water-bill-calculator/page.tsx")).includes("includeSewer"));
 recordCheck("calc", "PAYE Benchmark Table computes live rows via calculatePAYE", readSafe(join(toolsRoot, "paye-calculator/page.tsx")).includes("calculatePAYE(taxable)"));
 recordCheck("calc", "Small Claims Court removes leaked Passport/KIPI tables & handles >1M disposal", !readSafe(join(toolsRoot, "small-claims-calculator/page.tsx")).includes("eCitizen Passport") && readSafe(join(toolsRoot, "small-claims-calculator/page.tsx")).includes("amount <= 1000000"));
 recordCheck("calc", "M-Pesa Calculator has single Transaction Type control", !readSafe(join(toolsRoot, "mpesa-fee-calculator/page.tsx")).includes("mpesa-type-select"));
 recordCheck("calc", "EUDR Packager syncs 7.08 ha default & checks >10% variance", readSafe(join(toolsRoot, "eudr-coop-geojson-packager/page.tsx")).includes("Variance warning"));
-recordCheck("calc", "PPRA e-GP uses MR1–MR11 & dynamic bidValidityDays", !readSafe(join(toolsRoot, "ppra-egp-tender-serializer/page.tsx")).includes("MR1–MR15"));
-recordCheck("calc", "LanguageClientPage scopes vocab table out of Mini-Games & fixes 3rd column", readSafe(join(sourceRoot, "components/learn/LanguageClientPage.tsx")).includes('view === "lessons" || view === "modules"') && !readSafe(join(sourceRoot, "components/learn/LanguageClientPage.tsx")).includes("{w.example || course.config.family}"));
+
+// Check #72 (F-036 fix): Verify MR1–MR15 is absent across page.tsx, tools-registry.ts, AND tool-guides.json
+const ppraPageSrc = readSafe(join(toolsRoot, "ppra-egp-tender-serializer/page.tsx"));
+const toolGuidesRaw = readSafe(guidesPath);
+const ppraLeaks = [];
+if (/MR1[–-]MR15/i.test(ppraPageSrc)) ppraLeaks.push("ppra-egp-tender-serializer/page.tsx");
+if (/MR1[–-]MR15/i.test(registryText)) ppraLeaks.push("src/lib/tools-registry.ts");
+if (/MR1[–-]MR15/i.test(toolGuidesRaw)) ppraLeaks.push("src/data/tool-guides.json");
+const ppraOk = ppraLeaks.length === 0 && ppraPageSrc.includes("bidValidityDays");
+recordCheck(
+  "calc",
+  "PPRA e-GP uses MR1–MR11 & dynamic bidValidityDays (across page, registry & guides)",
+  ppraOk,
+  ppraLeaks.length ? `Found stale MR1–MR15 in: ${ppraLeaks.join(", ")}` : (ppraPageSrc.includes("bidValidityDays") ? "" : "Missing dynamic bidValidityDays")
+);
+
+recordCheck("calc", "LanguageClientPage scopes vocab table out of Mini-Games & fixes 3rd column", (readSafe(join(sourceRoot, "components/learn/LanguageClientPage.tsx")).includes('view === "lessons"') && !readSafe(join(sourceRoot, "components/learn/LanguageClientPage.tsx")).includes('view === "games"') || readSafe(join(sourceRoot, "components/learn/LanguageClientPage.tsx")).includes('view === "lessons" &&')) && !readSafe(join(sourceRoot, "components/learn/LanguageClientPage.tsx")).includes("{w.example || course.config.family}"));
 
 // ── 12. Audio Manifest & Permissive Dataset Pipeline ──
 const ciScript = readSafe(join(root, "scripts/ci-ingest-audio-and-text-r2.py"));

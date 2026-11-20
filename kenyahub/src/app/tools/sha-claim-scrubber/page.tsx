@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Stethoscope, CheckCircle2, AlertTriangle, Copy, Check } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Copy, Check } from "lucide-react";
 import ToolShell from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import utilData from "@/data/kenya-utility-tools-2026.json";
@@ -41,14 +41,19 @@ export default function ShaClaimScrubberPage() {
       if (ok) score += t.weight;
       else missing.push(t.label);
     }
-    const riskLevel = score >= 90 ? "Low Risk (Ready to Submit)" : score >= 60 ? "Medium Rejection Risk" : "High Rejection Risk";
+    const riskLevel =
+      score >= 90
+        ? "Low Risk (Ready to Submit)"
+        : score >= 60
+        ? "Medium Rejection Risk"
+        : "High Rejection Risk";
     return { score, missing, riskLevel, amount, days };
   }, [checked, daysSinceDischarge, claimAmount]);
 
   const copyAppealChecklist = () => {
     const lines = [
       `SHA PRE-SUBMISSION SCRUB & APPEAL PACKET (${facilityLevel})`,
-      `Claim Amount: KES ${result.amount.toLocaleString()} | Days Since Discharge: ${result.days} / ${utilData.sha.submissionWindowDays}`,
+      `Claim Amount: KES ${result.amount.toLocaleString("en-KE")} | Days Since Discharge: ${result.days} / ${utilData.sha.submissionWindowDays}`,
       `Readiness Score: ${result.score}/100 (${result.riskLevel})`,
       "",
       result.missing.length ? "BLOCKING GAPS TO FIX BEFORE SUBMISSION:" : "ALL 6 SHA TRIGGERS VERIFIED.",
@@ -63,14 +68,19 @@ export default function ShaClaimScrubberPage() {
     <ToolShell tool={tool}>
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
-
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
             <div>
-              <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Facility Contract Tier</label>
+              <label
+                htmlFor="sha-facility-level"
+                className="block text-xs font-semibold text-text-muted uppercase mb-1"
+              >
+                Facility Contract Tier
+              </label>
               <select
+                id="sha-facility-level"
                 value={facilityLevel}
                 onChange={(e) => setFacilityLevel(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-xs font-semibold text-text-primary"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs font-semibold text-text-primary"
               >
                 <option value="Level 3">Level 3 (Health Centre / Clinic)</option>
                 <option value="Level 4">Level 4 (Primary / Sub-County Hospital)</option>
@@ -78,42 +88,72 @@ export default function ShaClaimScrubberPage() {
               </select>
             </div>
             <div>
-              <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Claim Value (KES)</label>
+              <label
+                htmlFor="sha-claim-amount"
+                className="block text-xs font-semibold text-text-muted uppercase mb-1"
+              >
+                Claim Value (KES)
+              </label>
               <input
+                id="sha-claim-amount"
                 type="text"
+                inputMode="numeric"
                 value={claimAmount ? Number(claimAmount).toLocaleString("en-KE") : ""}
                 onChange={(e) => setClaimAmount(e.target.value.replace(/[^0-9]/g, ""))}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-sm font-bold text-text-primary"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-sm font-bold text-text-primary tabular-nums"
               />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Days Since Discharge</label>
+              <label
+                htmlFor="sha-days-discharge"
+                className="block text-xs font-semibold text-text-muted uppercase mb-1"
+              >
+                Days Since Discharge
+              </label>
               <input
+                id="sha-days-discharge"
                 type="number"
+                inputMode="numeric"
+                min={0}
                 value={daysSinceDischarge}
                 onChange={(e) => setDaysSinceDischarge(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-border bg-bg-elevated text-sm font-bold text-text-primary"
+                className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-sm font-bold text-text-primary tabular-nums"
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-            <div className={`rounded-xl border p-4 ${result.score >= 90 ? "border-emerald-500/40 bg-emerald-500/10" : result.score >= 60 ? "border-amber-500/40 bg-amber-500/10" : "border-red-500/40 bg-red-500/10"}`}>
+          <div
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6"
+          >
+            <div
+              className={`rounded-xl border p-4 ${
+                result.score >= 90
+                  ? "border-emerald-500/40 bg-emerald-500/10"
+                  : result.score >= 60
+                  ? "border-amber-500/45 bg-amber-500/[0.06]"
+                  : "border-red-500/40 bg-red-500/10"
+              }`}
+            >
               <span className="text-[0.68rem] font-bold uppercase text-text-muted">Claim Readiness Score</span>
-              <p className="text-2xl font-black text-text-primary mt-1">{result.score}/100</p>
+              <p className="text-2xl font-black text-text-primary mt-1 tabular-nums">{result.score}/100</p>
               <p className="text-[0.7rem] font-semibold mt-0.5 text-text-secondary">{result.riskLevel}</p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.68rem] font-bold uppercase text-text-muted">Submission Window</span>
-              <p className="text-xl font-bold text-text-primary mt-1">
+              <p className="text-xl font-bold text-text-primary mt-1 tabular-nums">
                 {Math.max(0, utilData.sha.submissionWindowDays - result.days)} days left
               </p>
-              <p className="text-[0.68rem] text-text-muted mt-0.5">Paybill {utilData.sha.paybill} • USSD {utilData.sha.ussd}</p>
+              <p className="text-[0.68rem] text-text-muted mt-0.5">
+                Paybill {utilData.sha.paybill} • USSD {utilData.sha.ussd}
+              </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.68rem] font-bold uppercase text-text-muted">Revenue at Risk</span>
-              <p className="text-xl font-bold text-gold mt-1">
-                KES {result.missing.length > 0 ? result.amount.toLocaleString() : "0"}
+              <p className="text-xl font-bold text-gold mt-1 tabular-nums whitespace-nowrap">
+                KES {result.missing.length > 0 ? result.amount.toLocaleString("en-KE") : "0"}
               </p>
               <p className="text-[0.68rem] text-text-muted mt-0.5">{result.missing.length} unresolved trigger(s)</p>
             </div>
@@ -132,19 +172,21 @@ export default function ShaClaimScrubberPage() {
                   className="mt-0.5 accent-gold"
                 />
                 <span className="flex-1 text-text-primary font-medium">{t.label}</span>
-                <span className="text-[0.68rem] font-bold text-text-muted">+{t.weight} pts</span>
+                <span className="text-[0.68rem] font-bold text-text-muted whitespace-nowrap tabular-nums">
+                  +{t.weight} pts
+                </span>
               </label>
             ))}
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-3">
             {result.missing.length === 0 ? (
-              <span className="inline-flex items-center gap-1.5 text-xs text-emerald-400 font-semibold">
-                <CheckCircle2 className="w-4 h-4" /> All 6 pre-submission checks verified.
+              <span className="inline-flex items-center gap-1.5 text-xs text-emerald-700 dark:text-emerald-400 font-semibold">
+                <CheckCircle2 className="w-4 h-4 shrink-0" /> All 6 pre-submission checks verified.
               </span>
             ) : (
-              <span className="inline-flex items-center gap-1.5 text-xs text-amber-400 font-semibold">
-                <AlertTriangle className="w-4 h-4" /> Fix {result.missing.length} trigger(s) before submitting to SHA.
+              <span className="inline-flex items-center gap-1.5 text-xs text-amber-800 dark:text-amber-400 font-semibold">
+                <AlertTriangle className="w-4 h-4 shrink-0" /> Fix {result.missing.length} trigger(s) before submitting to SHA.
               </span>
             )}
             <button

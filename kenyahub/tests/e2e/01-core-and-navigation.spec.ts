@@ -1,8 +1,6 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./fixtures/base";
 import {
-  attachRuntimeMonitor,
   captureAuditScreenshot,
-  applyTheme,
   assertNoHorizontalOverflow,
   assertNoCopyOrMarkdownLeaks,
   assertNotOccluded,
@@ -22,67 +20,62 @@ const CORE_ROUTES = [
 ];
 
 test.describe("Core Pages, Navigation, Overlays & Theme Atomicity", () => {
-  test.beforeEach(async ({ page }, testInfo) => {
-    const mode = testInfo.project.name.includes("light") ? "light" : "dark";
-    await applyTheme(page, mode);
-  });
-
   for (const route of CORE_ROUTES) {
     test(`Core route ${route} renders cleanly without errors, overflow, or copy leaks`, async ({ page }, testInfo) => {
-      const monitor = attachRuntimeMonitor(page);
-      await page.goto(route, { waitUntil: "domcontentloaded" });
+      const res = await page.goto(route, { waitUntil: "domcontentloaded" });
+      expect(res?.status(), `${route} must return HTTP 200`).toBe(200);
       await captureAuditScreenshot(page, testInfo, `core-${route === "/" ? "home" : route}`);
       await expect.soft(page.locator("h1").first()).toBeVisible();
       await assertNoHorizontalOverflow(page, route);
       await assertNoCopyOrMarkdownLeaks(page, route);
-      monitor.assertClean();
     });
   }
 
-  test("Desktop Tools mega-menu and Command-K Search modal sit above hero & backdrop, with ranked results", async ({
-    page,
-  }, testInfo) => {
-    const isMobile = testInfo.project.name.includes("mobile");
-    const monitor = attachRuntimeMonitor(page);
-    await page.goto("/", { waitUntil: "domcontentloaded" });
+  test("Command-K Search modal sits above hero & backdrop with ranked results", async ({ page }) => {
+    const res = await page.goto("/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
 
-    // Open global search modal
-    const searchTrigger = page.locator('button[aria-label*="Search" i], button:has-text("Search")').first();
+    // Filter to visible search trigger so mobile never matches hidden desktop button
+    const searchTrigger = page
+      .locator('[data-testid="navbar-search-trigger"], button[aria-label*="Search" i], button:has-text("Search")')
+      .filter({ visible: true })
+      .first();
+    await expect(searchTrigger).toBeVisible();
     await assertNotOccluded(page, searchTrigger, "Navbar search button");
     await searchTrigger.click();
 
     const searchInput = page.locator('div[role="dialog"] input').first();
-    await expect.soft(searchInput).toBeVisible();
+    await expect(searchInput).toBeVisible();
     await assertNotOccluded(page, searchInput, "Command-K search input (must sit above backdrop)");
 
-    // Type "F" and verify title-prefix matches rank ahead of unrelated description matches
+    // Type "Fee" and verify M-Pesa Fee Calculator ranks ahead of unrelated guide matches
     await searchInput.fill("Fee");
     const firstResult = page.locator('div[role="dialog"] a').first();
-    await expect.soft(firstResult).toBeVisible();
-    await expect.soft(firstResult).toContainText(/Fee|M-Pesa/i);
+    await expect(firstResult).toBeVisible();
+    await expect.soft(firstResult).toContainText(/M-Pesa Fee Calculator/i);
     await assertNotOccluded(page, firstResult, "Command-K first search result");
     await page.keyboard.press("Escape");
+    await expect(page.locator('div[role="dialog"]').first()).toBeHidden();
+  });
 
-    // Desktop Tools mega-menu stacking check
-    if (!isMobile) {
-      const toolsBtn = page.locator('nav button:has-text("Tools")').first();
-      if ((await toolsBtn.count()) > 0) {
-        await toolsBtn.click();
-        const menuLink = page.locator('nav a[href*="/tools/"]').first();
-        await expect.soft(menuLink).toBeVisible();
-        await assertNotOccluded(page, menuLink, "Desktop Tools mega-menu link");
-      }
-    }
+  test("Desktop Tools mega-menu sits above hero without occlusion", async ({ page, isMobile }) => {
+    test.skip(isMobile, "Desktop Tools mega-menu is desktop-only");
+    const res = await page.goto("/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
 
-    monitor.assertClean();
+    const toolsBtn = page.locator('nav button:has-text("Tools")').filter({ visible: true }).first();
+    await expect(toolsBtn).toBeVisible();
+    await toolsBtn.click();
+    const menuLink = page.locator('nav a[href*="/tools/"]').filter({ visible: true }).first();
+    await expect(menuLink).toBeVisible();
+    await assertNotOccluded(page, menuLink, "Desktop Tools mega-menu link");
   });
 
   test("All Tools directory expanded category pills stay legible and opaque", async ({ page }) => {
-    const monitor = attachRuntimeMonitor(page);
-    await page.goto("/tools/", { waitUntil: "domcontentloaded" });
-    const expandBtn = page.locator('button[aria-label*="Expand" i]');
+    const res = await page.goto("/tools/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
+    const expandBtn = page.locator('button[aria-label*="Expand" i]').filter({ visible: true });
     await assertExpandedPillsLegible(page, expandBtn);
     await assertNoHorizontalOverflow(page, "/tools/ expanded pills");
-    monitor.assertClean();
   });
 });

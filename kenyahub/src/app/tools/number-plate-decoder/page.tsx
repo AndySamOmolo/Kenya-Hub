@@ -8,42 +8,36 @@ import plateData from "@/data/number-plate-prefixes.json";
 
 const tool = TOOLS.find((t) => t.slug === "number-plate-decoder")!;
 
-const faq = [
-  { question: "What do Kenya number plate prefixes mean?", answer: "Standard civilian Kenyan number plates follow the format KXX 000X (3-letter series prefix, 3 digits from 001 to 999, and 1 suffix letter excluding I and O). Historically, the prefix indicated the regional registrar office, while modern KBA–KDU series reflect chronological registration under the centralized NTSA TIMS registry." },
-  { question: "What does GK mean on a Kenya plate?", answer: "GK stands for Government of Kenya and is issued to national government ministry, police, and state department vehicles." },
-  { question: "What is a CD or CC number plate in Kenya?", answer: "CD (Corps Diplomatique) red plates are issued to accredited foreign embassies, High Commissions, and UN agencies in Kenya, where the digits before CD identify the specific country or mission (e.g., 29 CD for the USA, 45 CD for the UN). CC denotes Consular Corps." },
-  { question: "Why are letters I and O omitted from Kenyan number plates?", answer: "NTSA omits the letters I and O from the 3-letter series and terminal suffix to prevent visual confusion with the numerals 1 and 0 during law enforcement and automated camera recognition." },
-  { question: "What are the green number plates in Kenya?", answer: "Green background plates (such as EVA or EV series) are designated by NTSA for 100% electric vehicles (EVs) to promote green mobility and identify zero-emission vehicles." },
-];
-
 export default function NumberPlateDecoderPage() {
   const [input, setInput] = useState("KDU 450A");
 
   const result = useMemo(() => {
-    const cleaned = input.toUpperCase().replace(/\s/g, "").replace(/[^A-Z0-9]/g, "");
+    const trimmed = input.trim().toUpperCase().replace(/\s+/g, " ");
+    const cleaned = trimmed.replace(/\s/g, "").replace(/[^A-Z0-9]/g, "");
     if (cleaned.length < 2) return null;
 
-    // Diplomatic & UN plates (e.g. 29 CD 1K, 45 UN 12K, 12 CC 4K)
-    const dipMatch = cleaned.match(/^(\d{1,3})(CD|CC|UN)(\d+[A-Z]?)$/);
+    // Diplomatic & UN plates (e.g. 29 CD 1K, 45 UN 12K, 12 CC 4K) (F-011)
+    const dipMatch =
+      trimmed.match(/^(\d+)\s+(CD|CC|UN)\s+(\d+[A-Z]?)$/) ||
+      cleaned.match(/^(\d{1,3})(CD|CC|UN)(\d+[A-Z]?)$/);
     if (dipMatch) {
       const [, missionCode, dipType] = dipMatch;
-      const label =
+      const classification =
         dipType === "CD"
-          ? `Diplomatic Corps (Mission #${missionCode})`
+          ? "Diplomatic Corps"
           : dipType === "CC"
-          ? `Consular Corps (Mission #${missionCode})`
-          : `United Nations Agency (Mission #${missionCode})`;
+          ? "Consular Corps"
+          : "United Nations Agency";
       return {
-        type: "special" as const,
+        type: "diplomatic" as const,
         prefix: `${missionCode} ${dipType}`,
-        category: label,
+        county: `Mission #${missionCode}`,
+        plateType: classification,
+        yearRange: "Diplomatic Registry (MFA / NTSA)",
         description:
           dipType === "UN"
-            ? "Accredited United Nations mission vehicle in Kenya (white text on red/blue diplomatic plate)."
-            : "Accredited foreign embassy, High Commission, or consular mission vehicle in Kenya (white text on red plate).",
-        plateColor: "Red background, White lettering",
-        year: "Diplomatic Registry (MFA / NTSA)",
-        era: "Diplomatic & International Missions",
+            ? `Accredited United Nations mission vehicle (Mission #${missionCode}) in Kenya — white lettering on red/blue diplomatic plate.`
+            : `Accredited foreign embassy, High Commission, or consular mission vehicle (Mission #${missionCode}) in Kenya — white lettering on red diplomatic plate.`,
       };
     }
 
@@ -52,8 +46,9 @@ export default function NumberPlateDecoderPage() {
     // Check special plates first
     for (const sp of plateData.specialPlates) {
       if (cleaned.startsWith(sp.prefix) || (sp.prefix === "CG" && cleaned.includes("CG"))) {
+        const isEv = sp.prefix === "EV" || cleaned.startsWith("EVA");
         return {
-          type: "special",
+          type: isEv ? ("ev" as const) : ("special" as const),
           prefix: sp.prefix,
           plateType: sp.type,
           description: sp.description,
@@ -67,7 +62,7 @@ export default function NumberPlateDecoderPage() {
     const match = plateData.prefixes.find((p) => p.prefix === prefix);
     if (match) {
       return {
-        type: "regular",
+        type: "regular" as const,
         prefix: match.prefix,
         county: match.county,
         yearRange: match.yearRange,
@@ -76,10 +71,10 @@ export default function NumberPlateDecoderPage() {
       };
     }
 
-    // Unknown prefix
+    // Unknown K-series prefix
     if (prefix.startsWith("K")) {
       return {
-        type: "unknown",
+        type: "unknown" as const,
         prefix,
         county: "Nairobi (Centralized NTSA TIMS Registry)",
         yearRange: "Recent / Custom Series",
@@ -91,11 +86,13 @@ export default function NumberPlateDecoderPage() {
     return null;
   }, [input]);
 
+  const formattedPlate = input.trim().toUpperCase() || result?.prefix || "";
+
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <ToolShell tool={tool}>
       <div className="space-y-6">
         {/* Input */}
-        <div className="bg-bg-card border border-border rounded-xl p-6">
+        <div className="bg-bg-card border border-border rounded-xl p-5 sm:p-6">
           <label className="block text-sm font-medium text-text-secondary mb-2" htmlFor="plate-input">
             Enter Kenyan Vehicle Number Plate
           </label>
@@ -104,10 +101,10 @@ export default function NumberPlateDecoderPage() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="e.g. KDU 450A, GK A001..."
-              className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] uppercase tracking-widest pr-11!"
+              placeholder="e.g. KDU 450A, GK B412, 29 CD 1K..."
+              className="input-field text-xl sm:text-2xl font-bold font-[family-name:var(--font-outfit)] uppercase tracking-widest pr-11! border border-border dark:border-white/15"
               style={{ paddingRight: "2.75rem" }}
-              maxLength={12}
+              maxLength={14}
               id="plate-input"
             />
             {input && (
@@ -121,13 +118,13 @@ export default function NumberPlateDecoderPage() {
               </button>
             )}
           </div>
-          <div className="flex flex-wrap gap-1.5 mt-3">
+          <div className="flex flex-wrap gap-2 mt-3">
             {["KDU 450A", "KDA 210M", "KCA 880J", "KBA 105C", "GK B412", "29 CD 1K", "KMFJ 320L"].map((sample) => (
               <button
                 key={sample}
                 type="button"
                 onClick={() => setInput(sample)}
-                className="px-2.5 py-1 rounded-lg text-xs font-mono bg-bg-elevated border border-border text-text-secondary hover:border-gold hover:text-gold transition-colors cursor-pointer"
+                className="px-3 py-2 min-h-[36px] rounded-lg text-xs font-mono bg-bg-elevated border border-border text-text-secondary hover:border-gold hover:text-gold transition-colors cursor-pointer"
               >
                 {sample}
               </button>
@@ -136,60 +133,104 @@ export default function NumberPlateDecoderPage() {
         </div>
 
         {/* Result */}
-        {result && (
-          <div className="result-box">
-            {/* Visual Plate */}
-            <div className="bg-kenya-black rounded-lg p-4 mb-4 text-center border-2 border-gray-600">
-              <p className="text-3xl font-bold tracking-[0.3em] text-white font-[family-name:var(--font-outfit)]">
-                {input.toUpperCase() || result.prefix}
-              </p>
-            </div>
+        <div role="status" aria-live="polite" aria-atomic="true">
+          {result && (
+            <div className="result-box">
+              {/* Authentic Kenyan Visual Plate Preview (F-042) */}
+              {result.type === "regular" || result.type === "unknown" ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+                  <div className="rounded-lg p-3.5 text-center bg-white text-neutral-950 border-2 border-neutral-900 shadow-xs">
+                    <span className="block text-[0.6rem] font-bold uppercase tracking-widest text-neutral-500 mb-0.5">
+                      Front Plate (White)
+                    </span>
+                    <p className="text-2xl sm:text-3xl font-extrabold tracking-[0.22em] font-[family-name:var(--font-outfit)]">
+                      {formattedPlate}
+                    </p>
+                  </div>
+                  <div className="rounded-lg p-3.5 text-center bg-[#F5C518] text-neutral-950 border-2 border-neutral-900 shadow-xs">
+                    <span className="block text-[0.6rem] font-bold uppercase tracking-widest text-neutral-800/75 mb-0.5">
+                      Rear Plate (Yellow)
+                    </span>
+                    <p className="text-2xl sm:text-3xl font-extrabold tracking-[0.22em] font-[family-name:var(--font-outfit)]">
+                      {formattedPlate}
+                    </p>
+                  </div>
+                </div>
+              ) : result.type === "diplomatic" ? (
+                <div className="rounded-lg p-4 mb-5 text-center bg-[#B91C1C] text-white border-2 border-white/80 shadow-xs">
+                  <span className="block text-[0.6rem] font-bold uppercase tracking-widest text-white/80 mb-0.5">
+                    Diplomatic / Mission Plate (Red)
+                  </span>
+                  <p className="text-2xl sm:text-3xl font-extrabold tracking-[0.25em] font-[family-name:var(--font-outfit)]">
+                    {formattedPlate}
+                  </p>
+                </div>
+              ) : result.type === "ev" ? (
+                <div className="rounded-lg p-4 mb-5 text-center bg-[#15803D] text-white border-2 border-white/80 shadow-xs">
+                  <span className="block text-[0.6rem] font-bold uppercase tracking-widest text-white/80 mb-0.5">
+                    Electric Vehicle Plate (Green)
+                  </span>
+                  <p className="text-2xl sm:text-3xl font-extrabold tracking-[0.25em] font-[family-name:var(--font-outfit)]">
+                    {formattedPlate}
+                  </p>
+                </div>
+              ) : (
+                <div className="rounded-lg p-4 mb-5 text-center bg-white text-[#1E3A8A] border-2 border-[#1E3A8A] shadow-xs">
+                  <span className="block text-[0.6rem] font-bold uppercase tracking-widest text-[#1E3A8A]/70 mb-0.5">
+                    Official / Government Plate
+                  </span>
+                  <p className="text-2xl sm:text-3xl font-extrabold tracking-[0.25em] font-[family-name:var(--font-outfit)]">
+                    {formattedPlate}
+                  </p>
+                </div>
+              )}
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div>
-                <p className="text-xs text-text-muted mb-1">Registration Origin</p>
-                <p className="text-sm font-semibold text-text-primary">
-                  {result.county || result.plateType}
-                </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <p className="text-xs text-text-muted mb-1">Registration Origin</p>
+                  <p className="text-sm font-semibold text-text-primary">
+                    {result.county}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs text-text-muted mb-1">Estimated Registration Year</p>
+                  <p className="text-sm font-semibold text-gold">
+                    {result.yearRange || "—"}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs text-text-muted mb-1">Classification</p>
+                  <p className="text-sm font-semibold text-kenya-green-light">
+                    {result.plateType}
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-xs text-text-muted mb-1">Estimated Registration Year</p>
-                <p className="text-sm font-semibold text-gold">
-                  {result.yearRange || "—"}
-                </p>
-              </div>
-              <div>
-                <p className="text-xs text-text-muted mb-1">Classification</p>
-                <p className="text-sm font-semibold text-kenya-green-light">
-                  {result.plateType}
-                </p>
-              </div>
+              <p className="text-xs text-text-muted mt-3">{result.description}</p>
             </div>
-            <p className="text-xs text-text-muted mt-3">{result.description}</p>
-          </div>
-        )}
+          )}
+        </div>
 
         {/* Chronological Series Reference Table */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+            <h2 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
               NTSA Registration Series Timeline (KAA to KDU)
-            </h3>
+            </h2>
           </div>
           <div className="overflow-x-auto max-h-80">
             <table className="data-table text-xs">
               <thead>
                 <tr>
-                  <th>Series Prefix</th>
-                  <th>Year Issued</th>
+                  <th className="whitespace-nowrap">Series Prefix</th>
+                  <th className="whitespace-nowrap">Year Issued</th>
                   <th>Registry / Origin</th>
                 </tr>
               </thead>
               <tbody>
                 {[...plateData.prefixes].reverse().map((p) => (
                   <tr key={p.prefix}>
-                    <td className="font-mono font-bold text-gold">{p.prefix}</td>
-                    <td className="text-text-primary font-medium">{p.yearRange}</td>
+                    <td className="font-mono font-bold text-gold whitespace-nowrap">{p.prefix}</td>
+                    <td className="text-text-primary font-medium whitespace-nowrap tabular-nums">{p.yearRange}</td>
                     <td className="text-text-secondary">{p.county}</td>
                   </tr>
                 ))}
@@ -201,9 +242,9 @@ export default function NumberPlateDecoderPage() {
         {/* Plate Types Reference */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+            <h2 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
               Kenya Vehicle Plate Color &amp; Category Codes
-            </h3>
+            </h2>
           </div>
           <div className="overflow-x-auto">
             <table className="data-table">
@@ -230,15 +271,15 @@ export default function NumberPlateDecoderPage() {
         {/* Special Plates */}
         <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
           <div className="px-5 py-3 border-b border-border bg-bg-elevated">
-            <h3 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
+            <h2 className="text-sm font-semibold text-text-primary font-[family-name:var(--font-outfit)]">
               Special, Diplomatic &amp; Government Plate Prefixes
-            </h3>
+            </h2>
           </div>
           <div className="overflow-x-auto">
             <table className="data-table">
               <thead>
                 <tr>
-                  <th>Prefix</th>
+                  <th className="whitespace-nowrap">Prefix</th>
                   <th>Category</th>
                   <th>Description</th>
                 </tr>
@@ -246,7 +287,7 @@ export default function NumberPlateDecoderPage() {
               <tbody>
                 {plateData.specialPlates.map((sp, i) => (
                   <tr key={i}>
-                    <td className="font-bold text-gold font-mono">{sp.prefix}</td>
+                    <td className="font-bold text-gold font-mono whitespace-nowrap">{sp.prefix}</td>
                     <td className="text-text-primary font-medium">{sp.type}</td>
                     <td className="text-text-muted text-xs">{sp.description}</td>
                   </tr>
@@ -258,9 +299,9 @@ export default function NumberPlateDecoderPage() {
 
         {/* Notes */}
         <div className="bg-bg-card border border-border rounded-xl p-5">
-          <h3 className="text-sm font-semibold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
+          <h2 className="text-sm font-semibold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
             Important NTSA Registration Notes
-          </h3>
+          </h2>
           <ul className="space-y-1">
             {plateData.notes.map((note, i) => (
               <li key={i} className="text-xs text-text-muted flex items-start gap-2">

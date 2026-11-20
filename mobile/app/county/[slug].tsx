@@ -60,6 +60,43 @@ const MONTH_KEYS = [
   "dec",
 ];
 
+const URBAN_COUNTIES = new Set(["nairobi", "mombasa"]);
+
+const URBAN_UTILITIES: Record<string, { title: string; detail: string; url: string }[]> = {
+  nairobi: [
+    { title: "Nairobi City Water (NCWSC)", detail: "Water billing, new connections & bursts · Paybill 444400 · *888#", url: "https://www.nairobiwater.co.ke" },
+    { title: "Kenya Power (KPLC Nairobi)", detail: "Prepaid tokens, outage reports & meter queries · *977#", url: "https://kplc.co.ke" },
+    { title: "Huduma Centres (GPO, City Square, Makadara, Eastleigh, Kibra)", detail: "National ID, KRA PIN, SHA/SHIF, NSSF, Birth Certificates & Business Permits", url: "https://www.hudumakenya.go.ke" },
+    { title: "NairobiPay / eCitizen County Services", detail: "Parking, land rates, unified business permits & county health", url: "https://nairobiservices.go.ke" },
+  ],
+  mombasa: [
+    { title: "Mombasa Water (MOWASSCO)", detail: "Water billing, meter reading & sewer services · Paybill 888880", url: "https://www.mombasawater.co.ke" },
+    { title: "Kenya Power (KPLC Coast Region)", detail: "Prepaid tokens, outage reports & fault escalation · *977#", url: "https://kplc.co.ke" },
+    { title: "Huduma Centre Mombasa (GPO Treasury Square)", detail: "National ID, KRA PIN, SHA/SHIF, NSSF & Civil Registration", url: "https://www.hudumakenya.go.ke" },
+    { title: "Mombasa County e-Services", detail: "Parking, land rates, single business permits & port-city licensing", url: "https://eservices.mombasa.go.ke" },
+  ],
+};
+
+// Geographic bordering counties map (replaces sequential county code links)
+const COUNTY_NEIGHBORS: Record<string, string[]> = {
+  nairobi: ["kiambu", "kajiado", "machakos"],
+  mombasa: ["kilifi", "kwale"],
+  kisumu: ["siaya", "vihiga", "nandi", "kericho", "nyamira", "homa-bay"],
+  nakuru: ["nyandarua", "laikipia", "baringo", "kericho", "bomet", "narok", "kajiado", "kiambu"],
+  kiambu: ["nairobi", "kajiado", "nakuru", "nyandarua", "muranga", "machakos"],
+  "uasin-gishu": ["trans-nzoia", "elgeyo-marakwet", "baringo", "kericho", "nandi", "kakamega"],
+  kajiado: ["nairobi", "kiambu", "nakuru", "narok", "makueni", "machakos", "taita-taveta"],
+  machakos: ["nairobi", "kiambu", "muranga", "embu", "kitui", "makueni", "kajiado"],
+  kilifi: ["mombasa", "kwale", "taita-taveta", "tana-river"],
+  kwale: ["mombasa", "kilifi", "taita-taveta"],
+  laikipia: ["samburu", "isiolo", "meru", "nyeri", "nyandarua", "nakuru", "baringo"],
+  nyeri: ["laikipia", "meru", "kirinyaga", "muranga", "nyandarua"],
+  meru: ["isiolo", "tharaka-nithi", "kirinyaga", "nyeri", "laikipia"],
+  kakamega: ["bungoma", "trans-nzoia", "uasin-gishu", "nandi", "vihiga", "siaya", "busia"],
+  kisii: ["nyamira", "homa-bay", "migori", "narok"],
+  turkana: ["west-pokot", "baringo", "samburu", "marsabit"],
+};
+
 const COUNTY_TO_MATATU_TOWN: Record<string, string> = {
   nairobi: "nairobi",
   mombasa: "mombasa",
@@ -225,6 +262,29 @@ export default function CountyDetailScreen() {
     [county]
   );
 
+  const computedAnnualRainfall = useMemo(() => {
+    if (!countyRainfall) return null;
+    const sum = MONTH_KEYS.reduce(
+      (acc, mk, idx) =>
+        acc + Number(countyRainfall.monthly?.[mk] ?? countyRainfall.monthlyAvg?.[idx] ?? 0),
+      0
+    );
+    return sum > 0 ? Math.round(sum) : countyRainfall.annualRainfall;
+  }, [countyRainfall]);
+
+  const borderingCounties = useMemo(() => {
+    if (!county) return [];
+    const neighborSlugs = COUNTY_NEIGHBORS[county.slug];
+    if (neighborSlugs && neighborSlugs.length > 0) {
+      return neighborSlugs
+        .map((ns) => countiesData.counties.find((c) => c.slug === ns))
+        .filter(Boolean) as County[];
+    }
+    return countiesData.counties
+      .filter((c) => c.slug !== county.slug)
+      .slice(0, 4);
+  }, [county]);
+
   if (!county) {
     return (
       <SafeAreaView
@@ -261,6 +321,8 @@ export default function CountyDetailScreen() {
       </SafeAreaView>
     );
   }
+
+  const isUrbanCounty = URBAN_COUNTIES.has(county.slug);
 
   const codeFormatted = String(county.code).padStart(3, "0");
   const density =
@@ -454,7 +516,7 @@ export default function CountyDetailScreen() {
                     }}
                   >
                     {countyRainfall.climateZone} ·{" "}
-                    {countyRainfall.annualRainfall} mm/yr
+                    {computedAnnualRainfall} mm/yr
                   </Text>
                 )}
               </View>
@@ -805,7 +867,7 @@ export default function CountyDetailScreen() {
             }}
           >
             <Text style={[styles.sectionHeading, { color: theme.gold }]}>
-              Climate & 12-Month Rainfall ({countyRainfall.annualRainfall}{" "}
+              Climate & 12-Month Rainfall ({computedAnnualRainfall}{" "}
               mm/yr)
             </Text>
             <View
@@ -917,8 +979,56 @@ export default function CountyDetailScreen() {
           </View>
         </View>
 
-        {/* Agricultural Soils & Crops */}
-        {countySoils.length > 0 && (
+        {/* Urban Utilities & Civic Services (Nairobi & Mombasa) OR Agricultural Soils & Crops */}
+        {isUrbanCounty ? (
+          <>
+            <Text style={[styles.sectionHeading, { color: theme.gold }]}>
+              Urban Utilities & Civic Services ({county.name})
+            </Text>
+            <View
+              style={[
+                styles.infoCard,
+                {
+                  backgroundColor: theme.bgCard,
+                  borderColor: theme.border,
+                  padding: 14,
+                  gap: 10,
+                },
+              ]}
+            >
+              {(URBAN_UTILITIES[county.slug] || []).map((u, idx, arr) => (
+                <Pressable
+                  key={u.title}
+                  onPress={() => Linking.openURL(u.url).catch(() => {})}
+                  style={{
+                    paddingBottom: idx < arr.length - 1 ? 8 : 0,
+                    borderBottomWidth: idx < arr.length - 1 ? 1 : 0,
+                    borderBottomColor: theme.border,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontSize: 13,
+                      fontFamily: "Outfit_800ExtraBold",
+                      color: theme.textPrimary,
+                    }}
+                  >
+                    {u.title} ↗
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 11.5,
+                      color: theme.textSecondary,
+                      marginTop: 2,
+                    }}
+                  >
+                    {u.detail}
+                  </Text>
+                </Pressable>
+              ))}
+            </View>
+          </>
+        ) : countySoils.length > 0 && (
           <>
             <Text style={[styles.sectionHeading, { color: theme.gold }]}>
               Agricultural Soils & Best Crops ({countySoils.length})
@@ -1287,6 +1397,42 @@ export default function CountyDetailScreen() {
             ))}
           </View>
         </View>
+
+        {/* Geographically Bordering Counties */}
+        {borderingCounties.length > 0 && (
+          <>
+            <Text style={[styles.sectionHeading, { color: theme.gold }]}>
+              Bordering Counties ({borderingCounties.length})
+            </Text>
+            <View style={styles.constituenciesWrap}>
+              {borderingCounties.map((nb) => (
+                <Pressable
+                  key={nb.slug}
+                  onPress={() => {
+                    triggerHaptic(8);
+                    router.push(`/county/${nb.slug}` as any);
+                  }}
+                  style={[
+                    styles.constituencyChip,
+                    { backgroundColor: theme.bgCard, borderColor: theme.border },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.constituencyNumber,
+                      { color: theme.gold, backgroundColor: `${theme.gold}18` },
+                    ]}
+                  >
+                    {String(nb.code).padStart(3, "0")}
+                  </Text>
+                  <Text style={[styles.constituencyText, { color: theme.textPrimary }]}>
+                    {nb.name} →
+                  </Text>
+                </Pressable>
+              ))}
+            </View>
+          </>
+        )}
 
         {/* Contact & Official Info */}
         {(county.phone || county.website) && (

@@ -122,7 +122,7 @@ export default function MjengoConstructionCalculatorPage() {
                   onChange={(e) =>
                     setFloorArea(e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, ""))
                   }
-                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                   style={{ paddingRight: "2.5rem" }}
                 />
                 {floorArea && (
@@ -152,7 +152,7 @@ export default function MjengoConstructionCalculatorPage() {
                       e.target.value.replace(/[^0-9]/g, "").replace(/^0+(?=\d)/, "")
                     )
                   }
-                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] text-sm text-[var(--text-primary)]"
+                  className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                   style={{ paddingRight: "2.5rem" }}
                 />
                 {perimeterWallMeters && (
@@ -202,7 +202,7 @@ export default function MjengoConstructionCalculatorPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="bg-[var(--bg-card)] border border-[var(--gold)]/30 rounded-xl p-5">
+          <div className="bg-amber-500/[0.04] border border-amber-500/45 rounded-xl p-5">
             <p className="text-xs uppercase tracking-wider text-[var(--text-muted)] mb-1">
               Total Estimated Mjengo Cost
             </p>
@@ -332,6 +332,18 @@ export default function MjengoConstructionCalculatorPage() {
               </span>
             </div>
           </div>
+        </div>
+
+        {/* Sticky Mobile Live-Result Pill (F-038) */}
+        <div
+          role="status"
+          aria-live="polite"
+          className="sticky bottom-3 z-30 sm:hidden rounded-full border border-amber-500/45 bg-bg-card/95 backdrop-blur-md px-4 py-2.5 shadow-lg flex items-center justify-between gap-3"
+        >
+          <span className="text-xs font-semibold text-text-secondary">Est. Mjengo Total</span>
+          <span className="text-sm font-extrabold text-gold tabular-nums whitespace-nowrap">
+            KES {formatKES(calc.grandTotal)}
+          </span>
         </div>
       </div>
     </ToolShell>

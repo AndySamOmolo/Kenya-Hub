@@ -50,25 +50,19 @@ jobs:
         working-directory: kenyahub
         run: npm run build
 
-      - name: Run Full Non-Stopping Playwright Live Audit (All Screenshots & Videos)
+      - name: Run Full Non-Stopping Playwright Live Audit
         working-directory: kenyahub
         continue-on-error: true
         env:
           BASE_URL: ${{ inputs.target_url || 'http://127.0.0.1:3000' }}
         run: npx playwright test
 
-      - name: Upload Playwright HTML Report, JSON Audit, All Screenshots & Videos
+      - name: Upload Playwright HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-full-audit-screenshots-and-videos
-          path: |
-            kenyahub/reports/playwright-html
-            kenyahub/reports/playwright-audit.json
-            kenyahub/reports/screenshots
-            kenyahub/reports/tool-audit.json
-            kenyahub/test-results
-            mobile/reports/mobile-static-audit.json
+          name: playwright-full-audit-report
+          path: kenyahub/reports/playwright-html/
           retention-days: 14
 
   android-live-e2e-audit:

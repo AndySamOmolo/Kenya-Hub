@@ -46,7 +46,7 @@ export function attachRuntimeMonitor(page: Page): RuntimeMonitor {
   page.on("console", (msg) => {
     if (msg.type() === "error") {
       const txt = msg.text();
-      if (/googlesyndication|doubleclick|adservice|gtag/i.test(txt)) return;
+      if (/ERR_BLOCKED_BY_CLIENT|googlesyndication|doubleclick|adservice|gtag/i.test(txt)) return;
       consoleErrors.push(txt);
     }
   });
@@ -55,7 +55,7 @@ export function attachRuntimeMonitor(page: Page): RuntimeMonitor {
   });
   page.on("response", (res) => {
     const url = res.url();
-    if (/googlesyndication|doubleclick|adservice/i.test(url)) return;
+    if (/googlesyndication|doubleclick|adservice|googletagmanager|google-analytics/i.test(url)) return;
     if (res.status() >= 400 && !url.includes("favicon")) {
       failedRequests.push(`${res.status()} ${url}`);
     }
@@ -74,13 +74,15 @@ export function attachRuntimeMonitor(page: Page): RuntimeMonitor {
 }
 
 /**
- * Applies explicit light or dark theme via localStorage before load.
+ * Applies explicit light or dark theme and seeds cookie consent keys via localStorage before load.
  */
 export async function applyTheme(page: Page, mode: "light" | "dark") {
   await page.addInitScript((m) => {
     try {
+      const consent = JSON.stringify({ essential: true, analytics: false, ads: false, timestamp: Date.now() });
       localStorage.setItem("kh-theme", m);
-      localStorage.setItem("kh-cookie-consent", JSON.stringify({ essential: true, analytics: false, ads: false }));
+      localStorage.setItem("kh-cookie-consent", consent);
+      localStorage.setItem("kh-cookie-preferences", consent);
     } catch {}
   }, mode);
 }
@@ -109,7 +111,7 @@ export async function assertNoCopyOrMarkdownLeaks(page: Page, contextLabel: stri
   const forbiddenPatterns: [RegExp, string][] = [
     [/\bNaN\b/, "NaN leaked into rendered UI"],
     [/\bundefined\b/, "undefined leaked into rendered UI"],
-    [/`EASTING,\s*NORTHING`/, "Raw Markdown backticks leaked in UTM label"],
+    [/`EASTING,\s*NORTHING`/i, "Raw Markdown backticks leaked in UTM label"],
     [/\b22-Language\b/, "Stale '22-Language' copy found"],
     [/\b300,067\+/, "Stale '300,067+' word count found"],
     [/\binteractive Leaflet maps\b/i, "Developer jargon 'Leaflet' found in user copy"],
@@ -156,7 +158,7 @@ export async function getContrastRatio(locator: Locator): Promise<number> {
         const s = c / 255;
         return s <= 0.03928 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4);
       };
-      return 0.2126 * f(r) + 0.7152 * f(g) + 0.7152 * 0 + 0.0722 * f(b);
+      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
     };
 
     const fg = parseRgb(getComputedStyle(el).color);

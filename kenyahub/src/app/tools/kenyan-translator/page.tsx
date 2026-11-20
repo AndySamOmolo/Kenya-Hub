@@ -6,7 +6,7 @@ import SearchInput from "@/components/ui/SearchInput";
 
 import { useState, useMemo, useCallback, useEffect, useDeferredValue } from "react";
 import ToolAccessTracker from "@/components/tools/ToolAccessTracker";
-import ToolShell from "@/components/tools/ToolShell";
+import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
 import { BarChart, BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight, Volume2 } from "lucide-react";
@@ -465,9 +465,15 @@ export default function KenyanTranslatorPage() {
   // Stats
   const totalEntries = TOTAL_DICTIONARY_ENTRIES;
 
-  // ─── Random Word Feature (Balanced Across All 23 Kenyan Languages) ───
+  // ─── Daily Word Feature (Seeded Deterministically by Calendar Date YYYY-MM-DD for Zero Hydration Flicker) ───
   const [randomWord, setRandomWord] = useState<{ entry: DictEntry; langName: string; langId: string } | null>(() => {
-    const sample = INITIAL_RANDOM_WORDS[0];
+    if (!INITIAL_RANDOM_WORDS.length) return null;
+    const dateStr = new Date().toISOString().slice(0, 10);
+    let hash = 0;
+    for (let i = 0; i < dateStr.length; i++) {
+      hash = (hash * 31 + dateStr.charCodeAt(i)) >>> 0;
+    }
+    const sample = INITIAL_RANDOM_WORDS[hash % INITIAL_RANDOM_WORDS.length];
     return sample ? { entry: sample.entry, langName: sample.langName, langId: sample.langId } : null;
   });
 
@@ -508,15 +514,7 @@ export default function KenyanTranslatorPage() {
     [activeDictList]
   );
 
-  // Pick a balanced random language on initial client mount so users don't always see Swahili first
-  useEffect(() => {
-    if (INITIAL_RANDOM_WORDS.length > 1) {
-      const sample = INITIAL_RANDOM_WORDS[Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length)];
-      if (sample) {
-        setRandomWord({ entry: sample.entry, langName: sample.langName, langId: sample.langId });
-      }
-    }
-  }, []);
+
 
   const getRandomWord = useCallback(() => {
     setRandomWord((prev) => pickBalancedRandomWord(prev?.langId));
@@ -528,8 +526,23 @@ export default function KenyanTranslatorPage() {
 
   const isPivotMode = sourceLanguage !== "english" && targetLanguage !== "english";
 
+  const translatorGuideOverride: RichGuideEntry = useMemo(
+    () => ({
+      notesTitle: `${ALL_DICT_METAS.length}-Language Kenyan Dictionary & Cross-Dialect Translator Guide`,
+      overview: [
+        `Unlike generic machine translation tools that frequently conflate East African languages, the KenyaHub ${ALL_DICT_METAS.length}-Language Translator searches ${totalEntries.toLocaleString("en-KE")}+ verified entries across ${ALL_DICT_METAS.length} Kenyan languages grounded in public-domain monographs and open lexical corpora.`,
+        `Translate directly between English and any Kenyan language, compare cognates side by side across all ${ALL_DICT_METAS.length} languages, or translate between any two Kenyan languages using English as a semantic bridge.`,
+      ],
+      howItWorks: [],
+      complianceTips: [],
+      notes: [],
+      faq,
+    }),
+    [totalEntries]
+  );
+
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <ToolShell tool={tool} faq={faq} guideOverride={translatorGuideOverride}>
       <ToolAccessTracker tool={tool} {...({ slug: "kenyan-translator" } as Record<string, string>)} />
       <div className="space-y-4 sm:space-y-6">
 
@@ -562,7 +575,7 @@ export default function KenyanTranslatorPage() {
                 </div>
               )}
             </div>
-            <button onClick={getRandomWord} className="flex-shrink-0 w-8 h-8 rounded-lg bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-colors" title="Get another word">
+            <button onClick={getRandomWord} className="flex-shrink-0 w-10 h-10 rounded-xl bg-gold/15 hover:bg-gold/25 flex items-center justify-center transition-colors cursor-pointer" title="Get another word">
               <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
@@ -571,18 +584,18 @@ export default function KenyanTranslatorPage() {
         )}
 
         {/* ── View Mode Tabs (Standalone Horizontal Pills) ── */}
-        <ExpandablePillRow>
+        <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
           {([
-            { id: "translate" as const, label: `Translate & Dictionary (All ${ALL_DICT_METAS.length} Languages)` },
+            { id: "translate" as const, label: <>Translate &amp; Dictionary <span className="whitespace-nowrap">(All {ALL_DICT_METAS.length} Languages)</span></> },
             { id: "browse" as const, label: `Browse ${ALL_DICT_METAS.length} Dictionaries` },
-            { id: "favorites" as const, label: `Saved Favorites (♥ ${favorites.length})` },
+            { id: "favorites" as const, label: `Saved Favorites (♥ ${favorites.length.toLocaleString("en-KE")})` },
           ]).map((mode) => {
             const active = viewMode === mode.id;
             return (
               <button
                 key={mode.id}
                 onClick={() => { setViewMode(mode.id); setSearchQuery(""); setActiveCategory(null); }}
-                className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center text-xs font-semibold border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 min-h-[38px] inline-flex items-center justify-center gap-1 text-xs font-semibold border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -678,7 +691,7 @@ export default function KenyanTranslatorPage() {
                       key={w}
                       type="button"
                       onClick={() => setSearchQuery(w)}
-                      className="text-[0.65rem] px-2 py-0.5 rounded-full bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/30 transition-colors"
+                      className="text-xs px-3 py-1.5 min-h-[36px] inline-flex items-center rounded-full bg-bg-elevated border border-border text-text-secondary hover:text-gold hover:border-gold/30 transition-colors cursor-pointer"
                     >
                       {w}
                     </button>
@@ -687,7 +700,7 @@ export default function KenyanTranslatorPage() {
                     <div className="w-full flex flex-wrap items-center gap-1.5 pt-1">
                       <span className="text-[0.65rem] text-text-muted">Recent:</span>
                       {recentSearches.slice(0, 4).map((s) => (
-                        <button key={s} onClick={() => setSearchQuery(s)} className="text-[0.65rem] px-2 py-0.5 rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors cursor-pointer">
+                        <button key={s} onClick={() => setSearchQuery(s)} className="text-xs px-3 py-1.5 min-h-[36px] inline-flex items-center rounded-full bg-gold/10 border border-gold/25 text-gold hover:bg-gold/20 transition-colors cursor-pointer">
                           {s}
                         </button>
                       ))}
@@ -739,7 +752,7 @@ export default function KenyanTranslatorPage() {
                         }`}
                       >
                         <DynamicIcon emoji="🔊" className="w-3 h-3" />
-                        With Audio ({audioSearchCount})
+                        With Audio ({audioSearchCount.toLocaleString("en-KE")})
                       </button>
                     )}
                     {targetLanguage === "all" ? (
@@ -951,22 +964,22 @@ export default function KenyanTranslatorPage() {
             {!searchQuery && browseMeta && (
               <>
                 <div id="translator-category-browser">
-                  <h3 className="text-sm font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)]">
+                  <h3 className="text-sm font-bold text-text-primary mb-2 font-[family-name:var(--font-outfit)] text-balance">
                     Browse {browseMeta.languageName} by Category
                   </h3>
-                  <ExpandablePillRow>
+                  <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
                     {browseAudioEntries.length > 0 && (
                       <button
                         key="__audio__"
                         onClick={() => { setActiveCategory(activeCategory === "__audio__" ? null : "__audio__"); setCategoryPage(1); }}
-                        className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center gap-1.5 text-xs font-medium border transition-all cursor-pointer ${
+                        className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[36px] inline-flex items-center justify-center gap-1.5 text-xs font-medium border transition-all cursor-pointer ${
                           activeCategory === "__audio__"
                             ? "border-sky-400/60 bg-sky-500/20 text-sky-300 font-semibold"
                             : "border-sky-600/40 bg-sky-500/10 text-sky-700 dark:text-sky-300 hover:bg-sky-500/20"
                         }`}
                       >
                         <DynamicIcon emoji="🔊" className="w-3.5 h-3.5" />
-                        With Audio ({browseAudioEntries.length})
+                        With Audio ({browseAudioEntries.length.toLocaleString("en-KE")})
                       </button>
                     )}
                     {ALL_CATEGORY_IDS.map((cat) => {
@@ -978,7 +991,7 @@ export default function KenyanTranslatorPage() {
                           key={cat.id}
                           onClick={() => { setActiveCategory(active ? null : cat.id); }}
                           disabled={!hasEntries}
-                          className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center text-xs font-medium border transition-all cursor-pointer ${
+                          className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[36px] inline-flex items-center justify-center text-xs font-medium border transition-all cursor-pointer ${
                             active
                               ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                               : hasEntries
@@ -986,7 +999,7 @@ export default function KenyanTranslatorPage() {
                               : "border-border/50 bg-bg-elevated/40 text-text-muted/40 cursor-not-allowed"
                           }`}
                         >
-                          {cat.name} {catMeta ? `(${catMeta.count})` : ""}
+                          {cat.name} {catMeta ? `(${catMeta.count.toLocaleString("en-KE")})` : ""}
                         </button>
                       );
                     })}

@@ -815,8 +815,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
       "maasai",
       "meru",
       "samburu",
-      "kalenjin",
-      "rendille"
+      "kalenjin"
     ],
     "published": "1910",
     "contribution": "Complete 174-page monograph (pp. v–xvi, 1–174, Plates I–XXVII, Map) by C. W. Hobley, C.M.G., A.M.Inst.C.E., His Majesty's Provincial Commissioner, East Africa Protectorate, with Introductory Note by Prof. William Ridgeway (Cambridge University Press, 1910 — Public Domain): Part I The A-Kamba (Ch. I Distribution & Population of 233,000 across Ulu, Kitui & Mumoni, physical measurements, 3 dental-mutilation tools [Ngomo, Kilingi, Ngolia], scarification, red ochre Maumbu & Muingu oil, Kithangaona, Kiengo, Kisesi, Ikwata; Ch. II Architecture of Musi, Ikumbi, Ikua, Nzeli, Kizuka, Itaa, Mboani & Kithanga; Ch. III Iron smelting & forging [Kiuvi/Kiungu, Mwaa, Mukua, Ikangi], chain making [Muini, Kifuli, Nthengele], pottery [Kibuka, Mbaisu, Nzeli] & Kithito taboo on potters; Ch. IV 19 cultivated crops with maturation periods, Muo digging stick, foods [Usuru, Kitheki, Ngima], wild salt [Munyo, Kithi], fire-drill [Uwindi, Kika] & 4 traps [Mukwa, Ikehengi, Mwito, Kisungula]; Ch. V 60+ animals, livestock & beekeeping [Mwatu, Kikolo, Mboani]; Ch. VI Ukiya-iwa beer brewing [Ndingi, Muthi, Miatini, Njeli, Ua], tobacco & 8 musical instruments [Mbebe, Soo, Nguli, Zomali, Kithembi, Ngutha, Engoma, Muvungu/Cha]; Ch. VII Dress & ornaments [Kimengo, Nthale, Ndumunya, Kitanu, Katungi, Muchi, Kikuto, Mithanga, Imili, Mulia, Ndiki, Mulinga, Kitanga, Engomi, Kiangi, Ibuo], 5 stool woods & 8 wire-inlay Milia stool patterns on Ibila [Kithaitha, Vioo, Eumu, Kitui, Katungi, Keinga, Kizoro/Kisolo]; Ch. VIII Weapons & warfare [Uta, Mize, Moluka, Maange, Musi, Ivai, Mbua Mbui, Ubiu, Ndo, Nzomo, Ndabu, Ndata, Ngwalo, Mutwe tumo, Mutwe ubiu, Musizili, Mukulwa, Mutatha, Mobou]; Ch. IX 8 social grades from Kivisi/Muitu to Atumia ma Ithembo, genealogical kinship chart & terms; Ch. X 7 age-grade salutations, 11-month calendar [Mwa to Mubiu] & 2 rainy seasons [Ambua anzwa, Ambua ua], 8 dances/songs, 5 Kweta ndai riddles, astronomy, Mutingwano & Chiathi ya mathoa; Ch. XI Marriage [Mbui ya ntheo, Kuatia, Kupikila], birth [Mbia], twins & sitting burial; Ch. XII 25 Ulu & 27 Kitui Mbai clans, sub-clans & totems; Ch. XIII Nzaikonini, Nzaikoneni & Mbabani initiation, 27 sacred Nzaiko code words & 21 pictographic Musai stick symbols; Ch. XIV Customary law [Ndundu, Kithito, Ndiu, Kingñoli, Chuma, Kino, Wala, Kikuunguti], blood-money [Kiti: 11 cows & 1 bull for a man, 4 cows & 1 bull for a woman; Kitui: 14 cows & 1 bull / 7 cows & 1 bull], assault damages table & debt law; Ch. XV Engai/Mulungu, Aiimu ancestral spirits, Ithembo shrine sacrifices & Kilumi dance; Ch. XVI 6 classes of Mundu Mue divination & Muthiiti vs. Muoiin witchcraft; Ch. XVII Makwa & Thabu curses/taboos [Ngondu]; Ch. XVIII Medical & surgical practices [Choa, Kititi]; Ch. XIX Historic famines from ~1836–1898 [Changa, Ngovo, Kiasa, Ngeeti, Kanyua manzi, Ndata, Kubandia, Muvunga]; Ch. XX 6 Wano folktales; Ch. XXI 46 clan livestock brands); Part II Other Tribes (Ch. I Masai moieties Oodo Mongi & Orok Kiteng, 7 gilat & 36 sub-gilat, Eo Endomono naming rite & 7 Sirata shield patterns; Ch. II Comparative cattle brands of Kikuyu [87 mbari brands], Masai & Kamba [Figs. I–CXI]; Ch. III 15 Kikuyu Thahu causes, 7 sacred herbs, Ku'ringa-thengi & Kithathi; Ch. IV Chief Medicine-Man Kamiri & Kutagura 5-twig divination table; Ch. V First published ~200-word Mogogodo/Yaaku vocabulary, numerals & verbs [pp. 146–155]; Ch. VI Mweru [22 sub-tribes & chiefs, 13 Mwiria clans & Netiri totems], Sambur [9 sub-tribes & 3 gilat], Laikipiak [6 sub-tribes & 3 gilat], Uasingishu [4 gilat & totems], Elgeyo [9 Oret & totems], Kamasia [7 Oret & totems, 12 months], Randili/Rendille [6 sub-tribes, 7-day week Hahat to Sere gal, camel lore], Lumbwa & Sotik [7 districts, 6 Sotik & 5 Lumbwa Korgat & totems]); and Appendix (1)–(5) (Mumoni 22 clans/totems & beehive brands, Kitui 25 clan beehive brands, Mbooni/Ulu 14 clan beehive brands, 7-step Kithito formula, and Tharaka/Thaka 14 clans & totems, pp. 165–169).",
@@ -1058,7 +1057,6 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     "languages": [
       "kikuyu",
       "kamba",
-      "maasai",
       "swahili"
     ],
     "published": "1922",
@@ -1488,7 +1486,18 @@ for (const source of LANGUAGE_SOURCES) {
 
 export function getSourcesForLanguage(languageId: string): LanguageSource[] {
   const normalized = normalizeLanguageId(languageId);
-  return SOURCES_BY_LANGUAGE_MAP.get(normalized) || [];
+  const raw = SOURCES_BY_LANGUAGE_MAP.get(normalized) || [];
+  const seen = new Set<string>();
+  const filtered: LanguageSource[] = [];
+  for (const s of raw) {
+    if (seen.has(s.id)) continue;
+    const langs = (s.languages || []).map(normalizeLanguageId);
+    if (!langs.includes(normalized)) continue;
+    // Prevent single-language monographs from leaking into unrelated languages
+    seen.add(s.id);
+    filtered.push(s);
+  }
+  return filtered.sort((a, b) => a.languages.length - b.languages.length);
 }
 
 export function getSourceById(sourceId: string): LanguageSource | undefined {
@@ -1946,7 +1955,7 @@ const _blazek2011Source: LanguageSource = {
   title: "Dasanech Language – State-of-the-Art (By Václav Blažek, Masaryk University, Brno, Folia Orientalia, Vol. 48, 2011, reviewing Mauro Tosco, 'The Dhaasanac Language. Grammar, Texts, Vocabulary of a Cushitic Language of Ethiopia', Kuschitische Sprachstudien Band 17, Rüdiger Köppe Verlag, Köln 2001, xiv + 598 pp. + 20 photos, € 65.45, ISBN 3-89645-064-6)",
   fileName: "Dasanech Language State Of The Art Blazek 2011.md",
   processedPath: "language-sources/raw/Dasanech Language State Of The Art Blazek 2011.md",
-  languages: ["daasanach", "rendille", "borana", "somali"],
+  languages: ["daasanach"],
   published: "2011",
   contribution:
     "Complete 338-line comparative and grammatical review article by Prof. Václav Blažek (Masaryk University, Brno, blazek@phil.muni.cz, Folia Orientalia, Vol. 48, 2011) reviewing Mauro Tosco's 'The Dhaasanac Language. Grammar, Texts, Vocabulary of a Cushitic Language of Ethiopia' (Kuschitische Sprachstudien Band 17, founded by Hans-Jürgen Sasse in 1982, Rüdiger Köppe Verlag, Köln 2001, xiv + 598 pp. + 20 photos, € 65.45, ISBN 3-89645-064-6): Monograph Breakdown & Demographics (lines 9–15: autonym d’áasannæc, earlier Galab or Geleba; grammar pp. 1–301, texts pp. 302–319, key to verbal forms pp. 320–475, Dasanech-English vocabulary c. 1,400 units pp. 476–532, English-Dasanech vocabulary pp. 533–570, thematic glossaries pp. 571–581 [Plants, Insects & Invertebrates, Fish, Birds, Reptiles, Wild mammals, Domesticated animals, Geographical terms, Ethnic terms, Ox-names], color terminology pp. 582–584, references pp. 585–592, subject index pp. 593–597, plus 20 photos; 1994 Ethiopian census: 32,029; 1980 Kenyan estimation: 2,500; Tosco's contemporary estimate: 35,000–40,000); Three Classification Models & Glottochronology (lines 15–95: Greenberg 1963: 49, Sasse 1975: 19 & 23, Heine 1976: 179 & 1978: 31, and Blažek 1997: 173–74 glottochronological tree showing Galaboid–Oromoid -2050 BC / 37.7%, Elmolo–Arbore -180 BC / 68.5%, Dasaneč -1080 BC / 51.7%, and the 14-language cognate ranking: Arbore 53.3%, Elmolo 50.0%, Oromo 38.9%, Konso 35.8%, Somali 35.8%, Rendille 35.6%, D’irayta 31.2%, Bayso 27.7%, Afar 25.0%, Yaaku 18.0%, Gollango 16.5%, Harso 16.1%, Sidamo 14.6%, Dahalo 11.9%); Phonology & Morphology (lines 97–120: 24 consonant phonemes [b, d, t, j, c, g, k, ʔ; implosives ɓ, ɗ, ʄ, ɠ; nasals m, n, ɲ, ŋ; fricatives f, ð, s, š; trill r; approximants w, y, l], 5 short/long vowels [i, e, a, o, u] & 2 diphthongs [ie, uo]; singulative m. -(i)c/-(i)ɲ, -(a)c/-(a)ɲ & f. -ti; plural -u, -a, -i, -V(V)m/-sV(V)m, -anu, -ono, -s, -tu; numerals 1 tákac / tikiɗɗi, 2 naama, 3 seddi, 4 ʔaffur, 5 cen, 6 li, 7 tiyya, 8 siet, 9 saal, 10 tommon, 100 kúɗ tikiɗɗi ~ tikilli, 1000 ši tikiɗɗi ~ tikilli; 4-column Personal Pronoun Table on p. 211 [yú, kúuni, múuni, ɲíini, ʔitíni]; Beja-type partial-reduplication adjectival plurals [búubur, ɗeeɗír, ðáaðat] vs. -gV- plurals [ráagar, niiginí, ʔéegeð] on p. 207; and the 4 prefix-conjugated verbs ʔás, yaalla, yeeðe, yimii); and the 6-Source 101-Gloss Comparative Wordlist (lines 122–275: da Trento 1941 [60], Haberland 1966 [91], Fleming 1965 [102] & 1971 [146], Bender 1971 [97], Sasse 1973–82, Tosco 2001 [c. 1,400]), 48 Abbreviations (lines 280–282), and 50 References (lines 284–335).",
@@ -1975,7 +1984,7 @@ if (_existingBlazekIdx >= 0) {
   LANGUAGE_SOURCES.push(_blazek2011Source);
 }
 SOURCES_BY_ID_MAP.set(_blazek2011Source.id, _blazek2011Source);
-for (const _langKey of ["daasanach", "rendille", "borana", "somali"]) {
+for (const _langKey of ["daasanach"]) {
   const _bucket = (SOURCES_BY_LANGUAGE_MAP.get(_langKey) || []).filter((s) => s.id !== _blazek2011Source.id);
   _bucket.push(_blazek2011Source);
   SOURCES_BY_LANGUAGE_MAP.set(_langKey, _bucket);
@@ -2091,7 +2100,7 @@ const _mcgregor1904VocabularySource: LanguageSource = {
   title: "English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa (By A. W. McGregor of the Church Missionary Society, Society for Promoting Christian Knowledge, London: Northumberland Avenue, W.C., 1904; printed by Richard Clay & Sons, Limited, London and Bungay, pp. [i]–iv, 5–192 [PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1])",
   fileName: "English Kikuyu Vocabulary Mcgregor 1904.md",
   processedPath: "language-sources/raw/English Kikuyu Vocabulary Mcgregor 1904.md",
-  languages: ["kikuyu", "swahili"],
+  languages: ["kikuyu"],
   published: "1904",
   contribution:
     "Complete 192-page (201-PDF-page, 7,094-line) A–Z English–Kikuyu Vocabulary (~3,250 entries) compiled by Rev. A. W. McGregor of the Church Missionary Society (London: Society for Promoting Christian Knowledge, Northumberland Avenue, W.C., printed by Richard Clay & Sons, Limited, London and Bungay, 1904; Preface pp. iii–iv dated London, May 1903 — Public Domain, digitized from Stanford University Libraries Cecil H. Green Library copy PL 8379.4 .M3 C.1, barcode 3 6105 037 215 303, flyleaf mark A45- / U7, bookplate 'In tribute to Dr. & Mrs. Robert A. Rennie from a gift by Nationwide Foundation / Stanford University Memorial Fund', stamped SEP 17 1990, MAR 21 1991, MAY 23 19[91], JUN 15 2005, DEC 05 2005): Preface (pp. iii–iv) documenting collection at Fort Smith (native name Kabeti) in 1901 and 1902, SW boundary along the Uganda Railway from mile 326 to mile 360 (round Nairobi & Kikuyu stations), territory stretching NE to Mount Kenia (native name Kirinyaga on p. iv; Kilinyatha. Kireira on p. 95), altitude 4,000–18,000 ft (inhabited 4,000–7,000 ft), and population 200,000–300,000; Orthographic Note (pp. 5–6) on the Royal Geographical Society (R.G.S.) system, absence of S and Z in Kabeti with Th always taking their places, interchangeability of L and R, pure velar nasal ng' with a point after ng (as koteng'era = koteng-era, not koten-gera; ng'ombe, ng'ondu, ng'aragu, ng'ania, kong'orota, kong'athia, king'ang'aini) vs. prenasalized hard g written ng'g (as kuing'gata, ketung'guru), 9 grammatical abbreviations (n., pron., adj., conj., prep., adv., int., pass., neu.), Observe A (infinitives in Ko-/Ku-/Kw-) & Observe B (invariable s. & p. vs. bracketed plural Mwetereri [Etereri] or prefix replacement Gechunji [I-] → Ichunji across 10 noun classes); and complete A–Z English–Kikuyu Vocabulary (pp. 6–192) from 'Abandon, to (Kolekia. Kotiga.)' to 'Zigzag, adj. (-a hokana.)', preserving Kabeti pronouns, object infixes (-nd-/-nj-/-ng-, -mu-/-mo-/-mw-, -tu-/-to-/-tw-, -ma-/-chia-), demonstratives, locatives (Kw- & -ini), interrogative enclitics (-atea, -ha/-ka, -ko, -riko), suppletive kinship (Baba/Thoguo/Ithi pl. Maithi; Maito/Nyukwa/Nyina pl. Manyina), life stages & marriage (Rorachio, Wathiomo), 7-day relative time sequence (Iyo → Ira → Reu/Omothi → Rochio → Oke → Matukwatatu → Matukwana), agricultural seasons (Kathano, Mwaka wa kehu, Mwaka wa Njahi, Mweri, Mohea), customary law (Chira, Muchiri, Muchirithia, Muchirithio, Magambo murder fine, Konyua muma ordeal cup, Muramati/Oramati inheritance, Mutaithorani/Kotaithorana peacemaking), religion & ethnomedicine (Ngai, Kegongaini, Igongona, Thahu/Mugiru/Rehiya, Nyoni njega/njoru, Mundu mugo vs. Murogi, Muthaiga wa ndaa/hinguranda emetic & koharithia purgative, Murututu copper sulphate), architecture (Thingira, Itara, Ikombi, Kyugo, Mungu refuge pit, Kegandaini furnace), and full editorial audit of all 3 original printing gaps (pp. 17, 45, 153), 9 printer's errata (Aze, Nonenya, Cross ditto, kiamkereria, Honour ditto, Hush/Husk, -awka, Thirteenth, Topple new/neu.), and 30 outer-margin bracket-reconstructed pages.",
@@ -2124,7 +2133,7 @@ if (_existingMcgregor1904Idx >= 0) {
 }
 SOURCES_BY_ID_MAP.set(_mcgregor1904VocabularySource.id, _mcgregor1904VocabularySource);
 SOURCES_BY_ID_MAP.set("mcgregor-kikuyu-1904", _mcgregor1904VocabularySource);
-for (const _langKey of ["kikuyu", "swahili"]) {
+for (const _langKey of ["kikuyu"]) {
   const _bucket = (SOURCES_BY_LANGUAGE_MAP.get(_langKey) || []).filter(
     (s) => s.id !== _mcgregor1904VocabularySource.id && s.id !== "mcgregor-kikuyu-1904"
   );
@@ -2414,7 +2423,7 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     id: "cldf-wold-tsammalex-bantubvd-kaikki-2026",
     title: "WOLD Swahili Loanword Database (Thilo Schadeberg, CC-BY-4.0), Tsammalex Kikuyu Ethnobiology (CC-BY-4.0), Lexibank BantuBVD/ASJP (CC-BY-4.0) & Kaikki.org / Wiktextract Swahili & Kikuyu Dictionaries (Tatu Ylönen, CC-BY-SA-4.0)",
     fileName: "https://wold.clld.org/vocabulary/1",
-    languages: ["swahili", "kikuyu", "luo", "luhya", "kalenjin", "kamba", "meru", "maasai", "somali", "borana", "mijikenda", "pokomo", "taveta", "teso", "turkana", "samburu", "rendille", "daasanach"],
+    languages: ["swahili", "kikuyu"],
     published: "2009–2026 (CC-BY-4.0 / CC-BY-SA-4.0)",
     contribution:
       "Combines 4 open-access English-glossed lexical databases: (1) World Loanword Database (WOLD) Swahili Vocabulary #1 by Thilo Schadeberg (https://wold.clld.org/vocabulary/1, CC-BY-4.0: 1,815 Swahili meaning-word pairs mapped to Loanword Typology [LWT] codes and 5 borrowing-evidence levels, documenting Arabic, Persian, Hindi-Urdu, and Bantu etymologies such as dunia < Arabic dunyā, bara < Arabic barr / Persian bar, bahari < Arabic baḥr, ghuba < Indian Ocean Arabic ġubb/ġubba(t), rasi < Arabic raˀs, mbuga < Nyamwezi mbʊgá, radi < Arabic raˁd, tufani < Arabic ṭūfān / Persian tūfān / Hindi-Urdu tofān / Cantonese tai fung, nuru < Arabic nūr, theluji < Arabic ṯalǧ, hali ya hewa < Arabic hawāˀ); (2) Tsammalex Kikuyu Ethnobiology Lexicon (https://tsammalex.clld.org/languages/kik, CC-BY-4.0: Kikuyu livestock and wildlife taxa with scientific binomials, including kui/gwii/hu Canis lupus familiaris 'dog', m-bori/m-buri Capra hircus 'goat', k-ori 'kid', ka-harika/a-gωma/mu-gωma 'female goat', n-degwa/ma-tekwa Bos taurus 'bull, ox', mori 'heifer, young cow', and n-durume/n-dωromi Ovis aries 'sheep'); (3) CLDF / Lexibank Bantu Basic Vocabulary Database (Greenhill et al. 2023, https://github.com/lexibank/bantubvd, CC-BY-4.0, 210 English Concepticon glosses) & ASJP v20 (Wichmann et al. 2022, https://github.com/lexibank/asjp, CC-BY-4.0); and (4) Kaikki.org / Wiktextract Machine-Readable English Wiktionary Dictionaries by Tatu Ylönen (https://kaikki.org/dictionary/Swahili/index.html & https://kaikki.org/dictionary/Kikuyu/index.html, CC-BY-SA-4.0: 20,625 Swahili word forms [13,373 nouns, 7,953 verbs, 1,123 adjectives, 34 proverbs] and 1,497 Kikuyu word forms [1,347 nouns, 457 verbs, 36 adjectives, 15 proverbs]).",

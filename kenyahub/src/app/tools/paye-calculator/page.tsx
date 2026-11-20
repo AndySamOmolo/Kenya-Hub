@@ -147,23 +147,6 @@ function solveGrossForTargetNet(
   return Math.round((low + high) / 2);
 }
 
-const faq = [
-  {
-    question: "How does the Reverse Net-to-Gross Salary Calculator work?",
-    answer:
-      "When negotiating a job offer in Kenya, employers quote Gross Pay while employees care about Net Take-Home Pay. Switch to 'Target Net → Find Gross' and enter your desired bank take-home pay to see the exact Gross Salary you must negotiate for after KRA PAYE, SHA (2.75%), NSSF Year 4, and the 1.5% Housing Levy.",
-  },
-  {
-    question: "What PAYE tax bands and pre-tax deductions apply in Kenya in 2026?",
-    answer:
-      "Kenya uses 5 progressive monthly bands: 10% (first KES 24,000), 25% (KES 24,001–32,333), 30% (KES 32,334–500,000), 32.5% (KES 500,001–800,000), and 35% (above KES 800,000), less KES 2,400 Personal Relief. Under the Tax Laws (Amendment) Act 2024, NSSF, SHIF/SHA (2.75%), and the 1.5% Affordable Housing Levy are full pre-tax allowable deductions, alongside registered pension contributions (up to KES 30,000/month) and mortgage interest (up to KES 30,000/month).",
-  },
-  {
-    question: "What are the Year 4 NSSF rates effective February 2026?",
-    answer:
-      "Under the NSSF Act 2013 (Year 4 schedule effective February 2026), employees contribute 6% of pensionable pay: Tier I covers up to KES 9,000 (KES 540) and Tier II covers KES 9,001 to KES 108,000 (max KES 5,940; total max KES 6,480/month), matched 100% by the employer.",
-  },
-];
 
 export default function PAYECalculatorPage() {
   const [calcMode, setCalcMode] = useState<"grossToNet" | "netToGross">(
@@ -256,7 +239,7 @@ export default function PAYECalculatorPage() {
       `Kenya 2026 PAYE Payslip Summary (${periodLabel}) — KenyaHub`,
       `Gross Salary: ${fmt(results.gross)}`,
       `NSSF (Year 4, 6%): -${fmt(results.nssf)}`,
-      `SHA / SHIF (2.75%): -${fmt(results.sha)}`,
+      `SHA/SHIF (2.75%): -${fmt(results.sha)}`,
       `Housing Levy (1.5%): -${fmt(results.housingLevy)}`,
       ...(pensionContribution > 0 ? [`Voluntary Pension: -${fmt(pensionContribution)}`] : []),
       `Taxable Pay: ${fmt(results.taxableIncome)}`,
@@ -292,7 +275,7 @@ export default function PAYECalculatorPage() {
   const ahlPct = Math.max(0, Math.round((results.housingLevy / grossBase) * 1000) / 10);
 
   return (
-    <ToolShell tool={tool} faq={faq}>
+    <ToolShell tool={tool}>
       <div className="space-y-6">
         {/* Calculation Direction Mode Switcher */}
         <div className="bg-bg-card border border-border rounded-xl p-6 space-y-5">
@@ -592,7 +575,7 @@ export default function PAYECalculatorPage() {
 
         {/* Result Summary */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="result-box">
+          <div role="status" aria-live="polite" aria-atomic="true" className="result-box">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs text-text-secondary">
                 {calcMode === "netToGross"
@@ -699,7 +682,7 @@ export default function PAYECalculatorPage() {
             </h3>
           </div>
           <div className="overflow-x-auto">
-            <table className="data-table">
+            <table className="data-table whitespace-nowrap tabular-nums">
               <thead>
                 <tr>
                   <th>Item</th>
@@ -720,7 +703,7 @@ export default function PAYECalculatorPage() {
                   </td>
                 </tr>
                 <tr>
-                  <td>SHA / SHIF Contribution (2.75% pre-tax)</td>
+                  <td>SHA/SHIF Contribution (2.75% pre-tax)</td>
                   <td className="text-right text-kenya-red-light whitespace-nowrap">
                     − {fmt(results.sha)}
                   </td>
@@ -775,12 +758,12 @@ export default function PAYECalculatorPage() {
             </p>
           </div>
           <div className="table-responsive">
-            <table className="data-table">
+            <table className="data-table whitespace-nowrap tabular-nums">
               <thead>
                 <tr>
                   <th>Gross Salary (KES)</th>
                   <th className="text-right">NSSF (6%)</th>
-                  <th className="text-right">SHA / SHIF (2.75%)</th>
+                  <th className="text-right">SHA/SHIF (2.75%)</th>
                   <th className="text-right">Housing Levy (1.5%)</th>
                   <th className="text-right">Net PAYE Tax</th>
                   <th className="text-right">Net Take-Home Pay</th>
@@ -809,6 +792,18 @@ export default function PAYECalculatorPage() {
             </table>
           </div>
           <p className="text-xs text-text-muted">{housingLevyData.taxReliefDescription}</p>
+        </div>
+
+        {/* Sticky Mobile Live-Result Pill (F-038) */}
+        <div
+          role="status"
+          aria-live="polite"
+          className="sticky bottom-3 z-30 sm:hidden rounded-full border border-amber-500/45 bg-bg-card/95 backdrop-blur-md px-4 py-2.5 shadow-lg flex items-center justify-between gap-3"
+        >
+          <span className="text-xs font-semibold text-text-secondary">Net Pay</span>
+          <span className="text-sm font-extrabold text-kenya-green-light tabular-nums whitespace-nowrap">
+            {fmt(results.netPay)}
+          </span>
         </div>
       </div>
     </ToolShell>

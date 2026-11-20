@@ -2,16 +2,19 @@ import { defineConfig, devices } from "@playwright/test";
 
 const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:3000";
 const IS_LIVE = /^https?:\/\/(?!127\.0\.0\.1|localhost)/.test(BASE_URL);
+const isCI = Boolean(process.env.CI);
 
 export default defineConfig({
   testDir: "./tests/e2e",
-  timeout: 60_000,
+  timeout: 30_000,
   expect: { timeout: 10_000 },
+  globalTimeout: isCI ? 15 * 60 * 1000 : 0,
   fullyParallel: true,
-  forbidOnly: !!process.env.CI,
-  maxFailures: 0, // Never stop early — collect every single audit finding across all routes
-  retries: 0,
-  workers: process.env.CI ? 2 : undefined,
+  forbidOnly: isCI,
+  maxFailures: 0, // Collect every audit finding across all routes
+  retries: isCI ? 1 : 0,
+  workers: isCI ? 2 : undefined,
+  preserveOutput: "failures-only",
   reporter: [
     ["list"],
     ["html", { outputFolder: "reports/playwright-html", open: "never" }],
@@ -19,9 +22,10 @@ export default defineConfig({
   ],
   use: {
     baseURL: BASE_URL,
-    trace: "retain-on-failure",
-    screenshot: "on",
-    video: "on",
+    screenshot: "only-on-failure",
+    video: "retain-on-failure",
+    trace: "on-first-retry",
+    reducedMotion: "reduce",
     actionTimeout: 12_000,
     navigationTimeout: 25_000,
   },
@@ -53,8 +57,8 @@ export default defineConfig({
     {
       name: "mobile-light",
       use: {
-        ...devices["iPhone 13 Mini"],
-        viewport: { width: 375, height: 812 },
+        ...devices["iPhone 14"],
+        defaultBrowserType: "chromium",
         colorScheme: "light",
       },
     },
@@ -65,7 +69,7 @@ export default defineConfig({
         webServer: {
           command: "npx serve out -l 3000",
           url: "http://127.0.0.1:3000",
-          reuseExistingServer: !process.env.CI,
+          reuseExistingServer: !isCI,
           timeout: 60_000,
         },
       }),

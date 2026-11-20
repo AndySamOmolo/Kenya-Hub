@@ -19,6 +19,32 @@ type ActiveTab = "directory" | "budgets" | "constituencies" | "climate" | "compa
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
+const COUNTY_REGION_BY_CODE: Record<number, string> = {
+  1: "Coast", 2: "Coast", 3: "Coast", 4: "Coast", 5: "Coast", 6: "Coast",
+  7: "North Eastern", 8: "North Eastern", 9: "North Eastern",
+  10: "Eastern", 11: "Eastern", 12: "Eastern", 13: "Eastern", 14: "Eastern", 15: "Eastern", 16: "Eastern", 17: "Eastern",
+  18: "Central", 19: "Central", 20: "Central", 21: "Central", 22: "Central",
+  23: "Rift Valley", 24: "Rift Valley", 25: "Rift Valley", 26: "Rift Valley", 27: "Rift Valley", 28: "Rift Valley", 29: "Rift Valley",
+  30: "Rift Valley", 31: "Rift Valley", 32: "Rift Valley", 33: "Rift Valley", 34: "Rift Valley", 35: "Rift Valley", 36: "Rift Valley",
+  37: "Western", 38: "Western", 39: "Western", 40: "Western",
+  41: "Nyanza", 42: "Nyanza", 43: "Nyanza", 44: "Nyanza", 45: "Nyanza", 46: "Nyanza",
+  47: "Nairobi",
+};
+
+const REGIONS = ["All", "Coast", "North Eastern", "Eastern", "Central", "Rift Valley", "Western", "Nyanza", "Nairobi"];
+
+function computeAnnualRainfall(rain: any): number {
+  if (!rain) return 0;
+  if (rain.monthly && typeof rain.monthly === "object") {
+    return MONTH_KEYS.reduce((sum, mk) => sum + Number(rain.monthly[mk] || 0), 0);
+  }
+  if (Array.isArray(rain.monthlyAvg)) {
+    return rain.monthlyAvg.reduce((sum: number, v: number) => sum + Number(v || 0), 0);
+  }
+  return Number(rain.annualRainfall || 0);
+}
+
+
 const COUNTY_HUB_FAQS = [
   {
     question: "How many counties, constituencies, and wards are in Kenya?",
@@ -28,7 +54,7 @@ const COUNTY_HUB_FAQS = [
   {
     question: "Which Kenyan county receives the highest equitable share budget allocation?",
     answer:
-      "Nairobi City County (#047) receives the largest equitable share allocation at KES 20,072 Million in FY 2025/26, followed by Nakuru (KES 13,626M), Turkana (KES 13,143M), Kakamega (KES 12,913M), Kiambu (KES 12,229M), and Kilifi (KES 12,109M) counties based on the Commission on Revenue Allocation (CRA) formula under the County Allocation of Revenue Act (CARA).",
+      "Nairobi City County (#047) receives the largest equitable share allocation at KES 20,072M in FY 2025/26, followed by Nakuru (KES 13,626M), Turkana (KES 13,143M), Kakamega (KES 12,913M), Kiambu (KES 12,229M), and Kilifi (KES 12,109M) counties based on the Commission on Revenue Allocation (CRA) formula under the County Allocation of Revenue Act (CARA).",
   },
   {
     question: "How is county government funding divided in Kenya?",
@@ -46,6 +72,8 @@ export default function CountyIndexPage() {
   const [activeTab, setActiveTab] = useState<ActiveTab>("directory");
   const [search, setSearch] = useState("");
   const [climateFilter, setClimateFilter] = useState("All");
+  const [regionFilter, setRegionFilter] = useState("All");
+  const [letterFilter, setLetterFilter] = useState("All");
   const _scrollMountRef = useRef(false);
   useEffect(() => {
     if (!_scrollMountRef.current) { _scrollMountRef.current = true; return; }
@@ -73,7 +101,9 @@ export default function CountyIndexPage() {
 
     return countiesData.counties.map((c) => {
       const budget = budgetMap.get(c.code) || null;
-      const rain = rainMap.get(c.code) || null;
+      const rawRain = rainMap.get(c.code) || null;
+      const rain = rawRain ? { ...rawRain, annualRainfall: computeAnnualRainfall(rawRain) } : null;
+      const region = COUNTY_REGION_BY_CODE[c.code] || "Kenya";
       const density = c.area > 0 ? Math.round(c.population / c.area) : 0;
       const hospitalsCount = ((hospitalsData as any).hospitals || []).filter(
         (h: any) => h.county.toLowerCase() === c.name.toLowerCase()
@@ -88,6 +118,7 @@ export default function CountyIndexPage() {
       return {
         ...c,
         density,
+        region,
         budget,
         rain,
         hospitalsCount,
@@ -107,6 +138,12 @@ export default function CountyIndexPage() {
 
   const filtered = useMemo(() => {
     let items = enrichedCounties;
+    if (regionFilter !== "All") {
+      items = items.filter((c) => c.region === regionFilter);
+    }
+    if (letterFilter !== "All") {
+      items = items.filter((c) => c.name.toUpperCase().startsWith(letterFilter));
+    }
     if (climateFilter !== "All") {
       items = items.filter((c) => c.rain?.climateZone === climateFilter);
     }
@@ -132,7 +169,7 @@ export default function CountyIndexPage() {
       if (sortBy === "rainfall") return (b.rain?.annualRainfall || 0) - (a.rain?.annualRainfall || 0);
       return a.code - b.code;
     });
-  }, [enrichedCounties, climateFilter, search, sortBy]);
+  }, [enrichedCounties, regionFilter, letterFilter, climateFilter, search, sortBy]);
 
   const sortedBudgets = useMemo(() => {
     const list = [...filtered];
@@ -368,6 +405,43 @@ export default function CountyIndexPage() {
       {/* ── TAB 1: ALL 47 COUNTIES DIRECTORY ── */}
       {activeTab === "directory" && (
         <>
+          {/* Sticky Region & A–Z Jump Bar (F-040) */}
+          <div className="sticky top-16 z-30 -mx-3.5 px-3.5 sm:mx-0 sm:px-4 py-2.5 mb-5 bg-bg-primary/95 backdrop-blur-md border border-border rounded-xl space-y-2 shadow-sm">
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5">
+              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-text-muted shrink-0 mr-1">Region:</span>
+              {REGIONS.map((reg) => (
+                <button
+                  key={reg}
+                  type="button"
+                  onClick={() => setRegionFilter(reg)}
+                  className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-full text-[0.7rem] font-semibold border transition-colors cursor-pointer ${
+                    regionFilter === reg
+                      ? "bg-gold text-kenya-black border-gold"
+                      : "bg-bg-card border-border text-text-secondary hover:text-gold hover:border-gold/50"
+                  }`}
+                >
+                  {reg}
+                </button>
+              ))}
+            </div>
+            <div className="flex items-center gap-1 overflow-x-auto pt-1 border-t border-border/50">
+              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-text-muted shrink-0 mr-1">A–Z:</span>
+              {["All", "B", "E", "G", "H", "I", "K", "L", "M", "N", "S", "T", "U", "V", "W"].map((ltr) => (
+                <button
+                  key={ltr}
+                  type="button"
+                  onClick={() => setLetterFilter(ltr)}
+                  className={`shrink-0 px-2 py-0.5 rounded-full text-[0.6875rem] font-semibold border transition-colors cursor-pointer ${
+                    letterFilter === ltr
+                      ? "bg-gold/20 text-gold border-gold/50"
+                      : "bg-bg-elevated/60 border-border/60 text-text-secondary hover:text-text-primary"
+                  }`}
+                >
+                  {ltr}
+                </button>
+              ))}
+            </div>
+          </div>
           <p className="text-xs text-text-muted mb-4">
             Showing {filtered.length} of 47 counties · Click any county for its complete dashboard (Budget, 12-Month Rainfall, Soils, Hospitals, Postal Codes &amp; Constituencies)
           </p>
@@ -589,7 +663,7 @@ export default function CountyIndexPage() {
                               ? "bg-sky/25 text-sky-light"
                               : mm >= 70
                               ? "bg-sky/10 text-text-primary"
-                              : "bg-bg-elevated text-text-muted"
+                              : "bg-bg-elevated text-text-secondary dark:text-[#d4ccc0]"
                           }`}
                         >
                           <div className="text-[0.55rem] uppercase">{MONTHS[idx]}</div>

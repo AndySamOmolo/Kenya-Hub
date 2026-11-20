@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service — Usage Terms & Disclaimers",
   description:
-    "KenyaHub Terms of Service — terms of use, statutory and financial disclaimers, non-affiliation notice, intellectual property, and governing law.",
+    "KenyaHub Terms of Service — terms of use, statutory and financial disclaimers, non-affiliation notice, user-generated contributions licensing, intellectual property, and governing law.",
   alternates: {
     canonical: "https://kenyahub.me/terms/",
     languages: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms of Service | KenyaHub",
     description:
-      "KenyaHub Terms of Service — terms of use, statutory and financial disclaimers, non-affiliation notice, and governing law.",
+      "KenyaHub Terms of Service — terms of use, statutory and financial disclaimers, non-affiliation notice, user contributions, and governing law.",
     type: "website",
     locale: "en_KE",
     siteName: "KenyaHub",
@@ -52,15 +52,18 @@ export default function TermsPage() {
         <Link href="/" className="hover:text-gold transition-colors">
           Home
         </Link>
-        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+        <svg className="w-3 h-3 text-border-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
         <span className="text-text-secondary">Terms of Service</span>
       </nav>
 
-      <h1 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-8 tracking-tight">
+      <h1 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] tracking-tight">
         Terms of Service
       </h1>
+      <p className="text-xs text-text-muted mt-1.5 mb-8">
+        Last Revision: November 2026 · Nairobi, Republic of Kenya
+      </p>
 
       <div className="space-y-8 text-sm text-text-secondary leading-relaxed">
         <section>
@@ -77,7 +80,24 @@ export default function TermsPage() {
             2. Independent Public Utility &amp; Non-Affiliation Notice
           </h2>
           <p>
-            KenyaHub is an independent digital publication and utility platform operated from Nairobi, Kenya. KenyaHub is <strong className="text-text-primary">not</strong> an official government portal and is not affiliated with the Kenya Revenue Authority (KRA), National Transport and Safety Authority (NTSA), Ministry of Education, KUCCPS, KNEC, Social Health Authority (SHA), Safaricom PLC, or any state corporation. Official government filings and payments must always be conducted on designated state portals such as <strong className="text-text-primary">ecitizen.go.ke</strong> or <strong className="text-text-primary">itax.kra.go.ke</strong>.
+            KenyaHub is an independent digital publication and utility platform operated from Nairobi, Kenya. KenyaHub is <strong className="text-text-primary">not</strong> an official government portal and is not affiliated with the Kenya Revenue Authority (KRA), National Transport and Safety Authority (NTSA), Ministry of Education, KUCCPS, KNEC, Social Health Authority (SHA), Safaricom PLC, or any state corporation. Official government filings and payments must always be conducted on designated state portals such as{" "}
+            <a
+              href="https://ecitizen.go.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline font-semibold"
+            >
+              ecitizen.go.ke
+            </a>{" "}
+            or{" "}
+            <a
+              href="https://itax.kra.go.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline font-semibold"
+            >
+              itax.kra.go.ke
+            </a>.
           </p>
         </section>
 
@@ -112,16 +132,25 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            5. Intellectual Property &amp; Acceptable Use
+            5. Intellectual Property, Public Domain Sources &amp; Acceptable Use
           </h2>
           <p>
-            The custom source code, calculator interfaces, visual design, original editorial guides, and structured compilations created for KenyaHub are protected by copyright and intellectual property laws. Underlying statutory schedules, Acts of Parliament, and pre-1929 historical linguistic monographs remain in the public domain or the property of their respective institutions. Automated scraping, bulk mirroring, or framing of KenyaHub tools without written permission is prohibited.
+            The custom source code, calculator interfaces, visual design, original editorial guides, and structured compilations created for KenyaHub are protected by copyright and intellectual property laws under the <strong className="text-text-primary">Kenya Copyright Act (Cap 130)</strong> and international conventions. Underlying Kenyan statutory schedules, Acts of Parliament, and historical public-domain linguistic monographs — including works whose copyright has expired under Kenya Copyright Act Cap 130 (life of the author plus 50 years) or United States public-domain rules (works published before 1931 as of 2026) — remain in the public domain or the property of their respective institutions. Automated scraping, bulk mirroring, or framing of KenyaHub tools without written permission is prohibited.
           </p>
         </section>
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            6. Limitation of Liability
+            6. User-Generated Contributions &amp; Licensing
+          </h2>
+          <p>
+            Where KenyaHub enables you to draft or submit community vocabulary entries, dialect translations, proverbs, matatu corridor updates, or statutory data corrections (including entries stored locally under <code className="font-mono text-gold">kh-user-contributions</code> or sent via our Contact Desk), you retain ownership of your original contribution. By submitting a contribution to KenyaHub, you grant KenyaHub a non-exclusive, worldwide, royalty-free, perpetual, and sub-licensable license to review, edit, format, publish, distribute, and preserve your contribution across KenyaHub&apos;s web and mobile educational platforms. You represent that your submission is accurate to the best of your knowledge and does not infringe any third-party copyright, privacy, or legal right.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
+            7. Limitation of Liability
           </h2>
           <p>
             In no event shall KenyaHub, its operators, editors, or contributors be liable for any direct, indirect, incidental, consequential, or pecuniary damages arising out of your use of, or reliance on, any calculator, guide, or dataset provided on this platform.
@@ -130,7 +159,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            7. Governing Law &amp; Jurisdiction
+            8. Governing Law &amp; Jurisdiction
           </h2>
           <p>
             These Terms of Service shall be governed by and construed in accordance with the laws of the Republic of Kenya. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts of Kenya sitting in Nairobi.
@@ -139,7 +168,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
-            8. Contact Information
+            9. Contact Information
           </h2>
           <p>
             For questions regarding these Terms of Service or to report a statutory data update, please contact us at{" "}
@@ -149,10 +178,6 @@ export default function TermsPage() {
             or visit our <Link href="/contact/" className="text-gold hover:underline">Contact Page</Link>.
           </p>
         </section>
-
-        <p className="text-xs text-text-muted pt-4 border-t border-border">
-          Last Revision: November 2026 · Nairobi, Republic of Kenya
-        </p>
       </div>
     </div>
   );

@@ -4,7 +4,6 @@
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
 import SearchInput from "@/components/ui/SearchInput";
 import { useState, useEffect, useMemo, useCallback } from "react";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -19,7 +18,8 @@ import {
   Sparkles,
   Trophy,
 } from "lucide-react";
-import ToolShell from "@/components/tools/ToolShell";
+import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
+import ProverbsView from "@/components/learn/ProverbsView";
 import type { LanguageConfig } from "@/data/courses/types";
 import { PUBLISHED_COURSE_SUMMARIES } from "@/data/courses/catalog-summary";
 import { getLanguageIdentity } from "@/data/language-identity";
@@ -27,13 +27,15 @@ import { INITIAL_RANDOM_WORDS, DICT_META_MAP, ALL_DICT_METAS, TOTAL_DICTIONARY_E
 import { TOOLS } from "@/lib/tools-registry";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 
-const ProverbsView = dynamic(() => import("@/components/learn/ProverbsView"), {
-  loading: () => (
-    <div className="py-12 text-center text-sm text-text-muted animate-pulse">
-      Loading proverbs &amp; oral wisdom...
-    </div>
-  ),
-});
+function getDeterministicDailyIndex(length: number): number {
+  if (length <= 1) return 0;
+  const dateStr = new Date().toISOString().slice(0, 10); // YYYY-MM-DD (UTC)
+  let hash = 0;
+  for (let i = 0; i < dateStr.length; i++) {
+    hash = (hash * 31 + dateStr.charCodeAt(i)) >>> 0;
+  }
+  return hash % length;
+}
 
 const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 
@@ -98,7 +100,7 @@ export default function LearnPage() {
   const [activeHubTab, setActiveHubTab] = useState<"courses" | "proverbs">("courses");
   const [familyFilter, setFamilyFilter] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [wordIndex, setWordIndex] = useState<number>(0);
+  const [wordIndex, setWordIndex] = useState<number>(() => getDeterministicDailyIndex(INITIAL_RANDOM_WORDS?.length || 0));
 
   useEffect(() => {
     const map: Record<string, StoredLangStats> = {};
@@ -164,18 +166,38 @@ export default function LearnPage() {
     return INITIAL_RANDOM_WORDS[wordIndex % INITIAL_RANDOM_WORDS.length];
   }, [wordIndex]);
 
-  useEffect(() => {
-    if (INITIAL_RANDOM_WORDS && INITIAL_RANDOM_WORDS.length > 1) {
-      setWordIndex(Math.floor(Math.random() * INITIAL_RANDOM_WORDS.length));
-    }
-  }, []);
+
 
   const nextSpotlightWord = useCallback(() => {
     setWordIndex((prev) => prev + 1);
   }, []);
 
+  const learnGuideOverride: RichGuideEntry = useMemo(
+    () => ({
+      notesTitle: `Interactive Kenyan Languages & Oral Wisdom Hub (${readyLangs.length} Languages)`,
+      overview: [
+        `KenyaHub offers ${readyLangs.length} free interactive Kenyan language courses spanning Bantu, Nilotic, and Cushitic language families, paired with a ${TOTAL_DICTIONARY_ENTRIES.toLocaleString("en-KE")}-entry cross-dialect dictionary.`,
+        `Switch to the Proverbs, Riddles & Oral Wisdom tab to explore traditional sayings including Thimo cia Gĩkũyũ, Ngero za Dholuo, and Mifano ya Kiswahili with literal translations and cultural explanations.`,
+      ],
+      howItWorks: [],
+      complianceTips: [],
+      notes: [],
+      faq: [
+        {
+          question: "Which Kenyan languages can I learn for free on KenyaHub?",
+          answer: `KenyaHub offers ${readyLangs.length} free interactive Kenyan language courses: ${readyLangs.map((l) => l.name).join(", ")}. Every course includes guided skill trees, flashcards, grammar reference chapters, proverbs, and 14 mini-games.`,
+        },
+        {
+          question: "Do I need an account to save my language learning progress?",
+          answer: "No account is required. All course progress, XP, streaks, and spaced-repetition reviews are saved automatically in your browser.",
+        },
+      ],
+    }),
+    [readyLangs]
+  );
+
   return (
-    <ToolShell tool={LEARN_TOOL} hideSource>
+    <ToolShell tool={LEARN_TOOL} guideOverride={learnGuideOverride} hideSource>
       <div className="mx-auto max-w-4xl px-1 sm:px-4 pt-4 pb-10 space-y-6">
         {/* ── Flagship Learner Dashboard & Quick Translator Banner ── */}
         <div className="space-y-4">
@@ -184,10 +206,10 @@ export default function LearnPage() {
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold mb-2">
                 <Sparkles className="w-3.5 h-3.5" /> Kenyan Language Learning
               </div>
-              <h2 className="text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug">
+              <h2 className="text-lg sm:text-xl font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug text-balance">
                 {overallStats.totalXp > 0
                   ? `Welcome back! Keep building your Kenyan language fluency`
-                  : `Start learning any of ${readyLangs.length} interactive Kenyan language courses`}
+                  : <>Start learning any of <span className="whitespace-nowrap">{readyLangs.length} interactive</span> Kenyan language <span className="whitespace-nowrap">courses</span></>}
               </h2>
               <p className="text-xs sm:text-sm text-text-secondary mt-1 leading-relaxed">
                 Every course includes guided skill trees, 3D vocabulary flashcards, written phonetic guides, grammar tables, 14 mini-games, and oral proverbs.
@@ -263,7 +285,7 @@ export default function LearnPage() {
                   <button
                     type="button"
                     onClick={nextSpotlightWord}
-                    className="h-9 px-3 rounded-xl bg-bg-card hover:border-gold/40 border border-border text-xs font-semibold text-text-secondary hover:text-gold flex items-center gap-1.5 transition-colors cursor-pointer"
+                    className="min-h-[38px] px-3 rounded-xl bg-bg-card hover:border-gold/40 border border-border text-xs font-semibold text-text-secondary hover:text-gold flex items-center gap-1.5 transition-colors cursor-pointer"
                     title="Next word"
                     aria-label="Next word"
                   >
@@ -277,7 +299,7 @@ export default function LearnPage() {
         </div>
 
         {/* Standalone Horizontal Pill Menu (Courses | Proverbs & Wisdom) */}
-        <ExpandablePillRow>
+        <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
           {[
             { id: "courses" as const, label: `Interactive Courses (${readyLangs.length})` },
             { id: "proverbs" as const, label: "Proverbs, Riddles & Oral Wisdom" },
@@ -290,7 +312,7 @@ export default function LearnPage() {
                   setActiveHubTab(tab.id);
                   scrollToTopIfScrolled();
                 }}
-                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 min-h-[38px] inline-flex items-center text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
                   active
                     ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                     : "border-border bg-bg-card text-text-secondary hover:text-text-primary hover:border-border-light"
@@ -308,19 +330,19 @@ export default function LearnPage() {
           <>
             {/* Search & Family Filter Controls */}
             <div className="space-y-3">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="flex flex-col sm:flex-row items-stretch gap-3">
                 <div className="flex-1">
                   <SearchInput
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onClear={() => setSearchQuery("")}
                     placeholder="Search language or county..."
-                    className="w-full text-sm"
+                    className="w-full !h-11 !rounded-xl text-sm"
                   />
                 </div>
                 <button
                   onClick={() => setShowAllModules(!showAllModules)}
-                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-border bg-bg-elevated px-3.5 py-2.5 text-xs font-semibold text-gold hover:border-gold/50 transition-colors shrink-0 cursor-pointer"
+                  className="inline-flex h-11 items-center justify-center gap-1.5 rounded-xl border border-border bg-bg-elevated px-4 text-xs font-semibold text-gold hover:border-gold/50 transition-colors shrink-0 cursor-pointer"
                 >
                   <Layers className="h-3.5 w-3.5" />
                   <span>{showAllModules ? "Hide Module Previews" : "Preview All Modules"}</span>
@@ -332,7 +354,7 @@ export default function LearnPage() {
                 </button>
               </div>
 
-              <ExpandablePillRow>
+              <ExpandablePillRow className="[&>button]:!h-8 [&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
                 {families.map((fam) => {
                   const active = familyFilter === fam;
                   const count =
@@ -344,7 +366,7 @@ export default function LearnPage() {
                       key={fam}
                       type="button"
                       onClick={() => setFamilyFilter(fam)}
-                      className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[34px] inline-flex items-center justify-center text-xs font-semibold border transition-all cursor-pointer ${
+                      className={`shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 min-h-[36px] inline-flex items-center justify-center text-xs font-semibold border transition-all cursor-pointer ${
                         active
                           ? "border-gold/50 bg-gold/15 text-gold font-semibold"
                           : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"
@@ -375,8 +397,8 @@ export default function LearnPage() {
                     key={lang.id}
                     className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card p-4.5 sm:p-5 transition-all hover:border-gold/50 flex flex-col justify-between shadow-sm"
                   >
-                    <div>
-                      <Link href={`/tools/learn/${lang.id}/`} className="block">
+                    <div className="flex flex-col flex-1">
+                      <Link href={`/tools/learn/${lang.id}/`} className="flex flex-col flex-1">
                         <div className="flex items-start justify-between gap-2.5">
                           <div className="min-w-0 flex-1">
                             {/* Cultural greeting and regional motif badges */}
@@ -398,19 +420,19 @@ export default function LearnPage() {
                               )}
                             </h3>
                           </div>
-                          <span className="inline-flex items-center gap-1 rounded-xl bg-gold/15 border border-gold/30 px-2.5 py-1 text-xs font-bold text-gold group-hover:bg-gold group-hover:text-kenya-black transition-colors shrink-0">
+                          <span className="inline-flex items-center gap-1 rounded-xl bg-gold/15 border border-gold/30 px-2.5 py-1.5 min-h-[34px] text-xs font-bold text-gold group-hover:bg-gold group-hover:text-kenya-black transition-colors shrink-0">
                             <span>{stats.xp > 0 ? "Continue" : "Start"}</span>
                             <ArrowRight className="h-3 w-3" />
                           </span>
                         </div>
 
-                        <p className="mt-2 text-xs sm:text-sm text-text-secondary leading-relaxed">
+                        <p className="mt-2 text-xs sm:text-sm text-text-secondary leading-relaxed line-clamp-3">
                           {lang.description}
                         </p>
 
-                        <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
+                        <div className="mt-auto pt-3 flex flex-wrap items-center gap-1.5">
                           <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2 py-0.5 text-[0.6875rem] text-kenya-green-light font-semibold">
-                            <BookOpen className="h-3 w-3" /> {lang.skills} modules · {(DICT_META_MAP[lang.id]?.totalEntries || lang.wordsCount).toLocaleString()} dictionary & course words
+                            <BookOpen className="h-3 w-3" /> {lang.skills} modules · {(DICT_META_MAP[lang.id]?.totalEntries || lang.wordsCount).toLocaleString("en-KE")} words
                           </span>
                           <span className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-elevated/60 px-2 py-0.5 text-[0.6875rem] text-text-secondary">
                             <Users className="h-3 w-3 text-gold" /> {lang.speakers}

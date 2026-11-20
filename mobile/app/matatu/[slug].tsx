@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import {
+  Linking,
   Pressable,
   ScrollView,
   Share,
@@ -167,13 +168,13 @@ export default function MatatuRouteScreen() {
                     marginBottom: 2,
                   }}
                 >
-                  {route.verified && (
+                  {route.gtfsVerified === true && (
                     <View
                       style={{
                         backgroundColor: `${theme.kenyaGreen}25`,
-                        paddingHorizontal: 7,
+                        paddingHorizontal: 8,
                         paddingVertical: 2,
-                        borderRadius: 6,
+                        borderRadius: 999,
                       }}
                     >
                       <Text
@@ -183,7 +184,7 @@ export default function MatatuRouteScreen() {
                           color: theme.kenyaGreenLight,
                         }}
                       >
-                        ✓ Verified Route
+                        ✓ GTFS Verified
                       </Text>
                     </View>
                   )}
@@ -220,7 +221,7 @@ export default function MatatuRouteScreen() {
               />
               <View style={styles.fareItem}>
                 <Text style={[styles.fareLabel, { color: theme.textMuted }]}>
-                  Peak Fare
+                  Peak / Rain Fare
                 </Text>
                 <Text style={[styles.fareValue, { color: theme.gold }]}>
                   KES {route.fareMax}
@@ -406,16 +407,28 @@ export default function MatatuRouteScreen() {
                           Final Destination
                         </Text>
                       )}
-                      {hasCoords && (
-                        <Text
-                          style={[
-                            styles.coordsText,
-                            { color: theme.textMuted },
-                          ]}
-                        >
-                          {stage.lat.toFixed(4)}, {stage.lng.toFixed(4)}
+                      <Pressable
+                        onPress={() => {
+                          triggerHaptic(6);
+                          const q = hasCoords
+                            ? `${stage.lat},${stage.lng}`
+                            : encodeURIComponent(`${stageName} matatu stage, ${townName}, Kenya`);
+                          Linking.openURL(`https://www.google.com/maps/search/?api=1&query=${q}`).catch(() => {});
+                        }}
+                        accessibilityRole="link"
+                        accessibilityLabel={`Open ${stageName} in Google Maps`}
+                        style={{
+                          flexDirection: "row",
+                          alignItems: "center",
+                          gap: 4,
+                          marginTop: 4,
+                        }}
+                      >
+                        <Ionicons name="location-outline" size={12} color={theme.sky} />
+                        <Text style={{ fontSize: 11, fontFamily: "Outfit_700Bold", color: theme.sky }}>
+                          Open Boarding Stage in Google Maps ↗
                         </Text>
-                      )}
+                      </Pressable>
                     </View>
                   </View>
                 );

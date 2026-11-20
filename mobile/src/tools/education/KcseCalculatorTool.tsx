@@ -1,13 +1,12 @@
 import { ExpandablePillRow } from "../../components/ExpandablePillRow";
-import React, { useState, useMemo, useEffect, useRef } from "react";
-import { Text, View, TextInput, Pressable, ScrollView } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import React, { useState, useMemo } from "react";
+import { Text, View, Pressable } from "react-native";
 import { useDynamicStyles } from "../../theme";
 import { createStyles } from "./shared";
 
-/** 2. KCSE Grade Calculator */
+/** 2. KCSE Grade Calculator — Strict KNEC 7-Subject / 84-Point Scale */
 const KCSE_CAREERS = [
-  { career: "Medicine & Surgery", minGrade: "A-", minPoints: 11 },
+  { career: "Medicine & Dental Surgery", minGrade: "A-", minPoints: 11 },
   { career: "Engineering (Civil, Electrical, Mech.)", minGrade: "B+", minPoints: 10 },
   { career: "Law (LLB)", minGrade: "B+", minPoints: 10 },
   { career: "Architecture", minGrade: "B+", minPoints: 10 },
@@ -21,18 +20,18 @@ const KCSE_CAREERS = [
 ];
 
 const MEAN_GRADE_BOUNDARIES = [
-  { grade: "A", points: 12, range: "81 – 84 pts" },
-  { grade: "A-", points: 11, range: "74 – 80 pts" },
-  { grade: "B+", points: 10, range: "67 – 73 pts" },
-  { grade: "B", points: 9, range: "60 – 66 pts" },
-  { grade: "B-", points: 8, range: "53 – 59 pts" },
-  { grade: "C+", points: 7, range: "46 – 52 pts" },
-  { grade: "C", points: 6, range: "39 – 45 pts" },
-  { grade: "C-", points: 5, range: "32 – 38 pts" },
-  { grade: "D+", points: 4, range: "25 – 31 pts" },
-  { grade: "D", points: 3, range: "18 – 24 pts" },
-  { grade: "D-", points: 2, range: "11 – 17 pts" },
-  { grade: "E", points: 1, range: "7 – 10 pts" },
+  { grade: "A", points: 12, minTotal: 81, range: "81 – 84 pts" },
+  { grade: "A-", points: 11, minTotal: 74, range: "74 – 80 pts" },
+  { grade: "B+", points: 10, minTotal: 67, range: "67 – 73 pts" },
+  { grade: "B", points: 9, minTotal: 60, range: "60 – 66 pts" },
+  { grade: "B-", points: 8, minTotal: 53, range: "53 – 59 pts" },
+  { grade: "C+", points: 7, minTotal: 46, range: "46 – 52 pts" },
+  { grade: "C", points: 6, minTotal: 39, range: "39 – 45 pts" },
+  { grade: "C-", points: 5, minTotal: 32, range: "32 – 38 pts" },
+  { grade: "D+", points: 4, minTotal: 25, range: "25 – 31 pts" },
+  { grade: "D", points: 3, minTotal: 18, range: "18 – 24 pts" },
+  { grade: "D-", points: 2, minTotal: 11, range: "11 – 17 pts" },
+  { grade: "E", points: 1, minTotal: 7, range: "7 – 10 pts" },
 ];
 
 export function KcseCalculatorTool() {
@@ -47,7 +46,7 @@ export function KcseCalculatorTool() {
   const subjects = [
     "1. English (Compulsory)",
     "2. Kiswahili",
-    "3. Mathematics",
+    "3. Mathematics (Compulsory)",
     "4. Biology",
     "5. Chemistry",
     "6. Physics / History",
@@ -55,8 +54,9 @@ export function KcseCalculatorTool() {
     "8. Business / Agriculture / Computer",
   ];
 
+  // Default 8-subject set matching web parity: Best 7 = 74/84 -> 10.57 -> A- (Eligible for Medicine)
   const [grades, setGrades] = useState<string[]>([
-    "B+", "B", "A-", "B", "B+", "C+", "B+", "A",
+    "A-", "B", "A", "B+", "A-", "B+", "B+", "A-",
   ]);
 
   const updateGrade = (idx: number, g: string) => {
@@ -76,34 +76,27 @@ export function KcseCalculatorTool() {
       .filter((item) => item.idx !== bestLangIdx && item.idx !== 2)
       .map((item) => item.pts)
       .sort((a, b) => b - a);
-    // KNEC counts Best Language (English/Kiswahili) + Compulsory Mathematics + best 5 other subjects = 7 subjects (max 84)
+
+    // KNEC strict 7-subject / 84-point formula:
+    // Best Language (English or Kiswahili) + Compulsory Mathematics + Best 5 other subjects
     const best7Points = bestLangPoints + mathPoints + remainingPoints.slice(0, 5).reduce((s, p) => s + p, 0);
     const all8Points = grades.reduce((sum, g) => sum + (gradePoints[g] || 0), 0);
     const meanPointsNum = best7Points / 7;
     const meanPoints = meanPointsNum.toFixed(2);
-    const roundedPoints = Math.round(meanPointsNum);
 
-    let meanGrade = "E";
-    if (meanPointsNum >= 11.5) meanGrade = "A";
-    else if (meanPointsNum >= 10.5) meanGrade = "A-";
-    else if (meanPointsNum >= 9.5) meanGrade = "B+";
-    else if (meanPointsNum >= 8.5) meanGrade = "B";
-    else if (meanPointsNum >= 7.5) meanGrade = "B-";
-    else if (meanPointsNum >= 6.5) meanGrade = "C+";
-    else if (meanPointsNum >= 5.5) meanGrade = "C";
-    else if (meanPointsNum >= 4.5) meanGrade = "C-";
-    else if (meanPointsNum >= 3.5) meanGrade = "D+";
-    else if (meanPointsNum >= 2.5) meanGrade = "D";
-    else if (meanPointsNum >= 1.5) meanGrade = "D-";
-
-    const qualifiesUniversity = meanPointsNum >= 6.5;
+    const matchedBoundary =
+      MEAN_GRADE_BOUNDARIES.find((b) => best7Points >= b.minTotal) ||
+      MEAN_GRADE_BOUNDARIES[MEAN_GRADE_BOUNDARIES.length - 1];
+    const meanGrade = matchedBoundary.grade;
+    const meanGradePoints = matchedBoundary.points;
+    const qualifiesUniversity = meanGradePoints >= 7; // C+ (46/84) and above
 
     return {
       best7Points,
       all8Points,
       meanPoints,
       meanPointsNum,
-      roundedPoints,
+      meanGradePoints,
       meanGrade,
       qualifiesUniversity,
     };
@@ -112,10 +105,10 @@ export function KcseCalculatorTool() {
   return (
     <View style={styles.toolWrap}>
       <View style={styles.statCard}>
-        <Text style={styles.statLabel}>KCSE OVERALL MEAN GRADE</Text>
+        <Text style={styles.statLabel}>KNEC 7-SUBJECT MEAN GRADE</Text>
         <Text style={styles.statValue}>{calc.meanGrade}</Text>
         <Text style={styles.statSubtext}>
-          Best 7 Points: {calc.best7Points} / 84 · All 8: {calc.all8Points} / 96 · Mean: {calc.meanPoints} / 12.0
+          Best 7 (KNEC): {calc.best7Points} / 84 · Mean: {calc.meanPoints} / 12.0 · All 8: {calc.all8Points} / 96
         </Text>
         <View
           style={[
@@ -138,18 +131,18 @@ export function KcseCalculatorTool() {
             ]}
           >
             {calc.qualifiesUniversity
-              ? "✓ Qualifies for KUCCPS University Degree (C+ and above)"
+              ? "✓ Qualifies for KUCCPS University Degree (C+ / 46+ pts)"
               : "Diploma / TVET / Certificate Entry Level"}
           </Text>
         </View>
       </View>
 
-      <Text style={styles.subHeading}>Select Grades for 8 KCSE Subjects (Best 7 Counted)</Text>
+      <Text style={styles.subHeading}>Select Grades for 8 KCSE Subjects (KNEC Best 7 Counted)</Text>
       <View style={styles.card}>
         {subjects.map((sub, idx) => (
           <View key={idx} style={[styles.subjectRow, idx === subjects.length - 1 && { borderBottomWidth: 0 }]}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-              <Text style={styles.subjectLabel} >{sub}</Text>
+              <Text style={styles.subjectLabel}>{sub}</Text>
               <Text style={{ fontSize: 11, fontWeight: "800", color: theme.gold }}>
                 {grades[idx]} ({gradePoints[grades[idx]]} pts)
               </Text>
@@ -184,13 +177,13 @@ export function KcseCalculatorTool() {
         <Text style={[styles.subHeading, { marginTop: 0, marginBottom: 0 }]}>Degree & Career Eligibility Check</Text>
         <View style={{ backgroundColor: theme.gold + "22", paddingHorizontal: 10, paddingVertical: 4, borderRadius: 999 }}>
           <Text style={{ fontSize: 12, fontWeight: "800", color: theme.gold }}>
-            Mean: {calc.meanGrade} ({calc.best7Points} pts)
+            Mean: {calc.meanGrade} ({calc.best7Points}/84)
           </Text>
         </View>
       </View>
       <View style={styles.card}>
         {KCSE_CAREERS.map((item) => {
-          const eligible = calc.roundedPoints >= item.minPoints;
+          const eligible = calc.meanGradePoints >= item.minPoints;
           return (
             <View
               key={item.career}
@@ -231,7 +224,7 @@ export function KcseCalculatorTool() {
       </View>
 
       {/* KCSE Mean Grade Boundaries */}
-      <Text style={styles.subHeading}>KNEC Mean Grade Boundaries (7 Subjects)</Text>
+      <Text style={styles.subHeading}>KNEC Mean Grade Boundaries (7 Subjects / 84 pts)</Text>
       <View style={styles.card}>
         <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
           {MEAN_GRADE_BOUNDARIES.map((b) => {
@@ -264,4 +257,3 @@ export function KcseCalculatorTool() {
     </View>
   );
 }
-

@@ -1,56 +1,67 @@
-import { test, expect } from "@playwright/test";
-import {
-  attachRuntimeMonitor,
-  captureAuditScreenshot,
-  applyTheme,
-  assertNoHorizontalOverflow,
-  assertNotOccluded,
-  getContrastRatio,
-} from "./helpers/ux-assertions";
+import { test, expect } from "./fixtures/base";
+import { assertNoHorizontalOverflow, assertNotOccluded, getContrastRatio } from "./helpers/ux-assertions";
 
 test.describe("Learn Hub, 23 Language Courses, Lesson Player, Mini-Games & Translator", () => {
-  test.beforeEach(async ({ page }, testInfo) => {
-    const mode = testInfo.project.name.includes("light") ? "light" : "dark";
-    await applyTheme(page, mode);
-  });
-
   test("Learn Hub Resume CTA reflects last visited course instead of hardcoded highest XP", async ({ page }) => {
-    const monitor = attachRuntimeMonitor(page);
-    // Visit Kikuyu course so kenyahub_last_visited_lang is persisted
-    await page.goto("/tools/learn/kikuyu/", { waitUntil: "domcontentloaded" });
+    const res1 = await page.goto("/tools/learn/kikuyu/", { waitUntil: "domcontentloaded" });
+    expect(res1?.status()).toBe(200);
     await page.waitForTimeout(300);
 
-    await page.goto("/tools/learn/", { waitUntil: "domcontentloaded" });
+    const res2 = await page.goto("/tools/learn/", { waitUntil: "domcontentloaded" });
+    expect(res2?.status()).toBe(200);
     const stored = await page.evaluate(() => localStorage.getItem("kenyahub_last_visited_lang"));
     expect.soft(stored).toBe("kikuyu");
     await assertNoHorizontalOverflow(page, "/tools/learn/");
-    monitor.assertClean();
   });
 
-  test("Lesson Player hides floating ↑ button & marketing footer, and renders single Skip to Quiz", async ({ page }) => {
-    const monitor = attachRuntimeMonitor(page);
-    await page.goto("/tools/learn/kikuyu/", { waitUntil: "domcontentloaded" });
+  test("Lesson Player hides footer with zero flash, flips flashcard state, and renders single Skip to Quiz", async ({
+    page,
+  }) => {
+    const res = await page.goto("/tools/learn/kikuyu/", { waitUntil: "networkidle" });
+    expect(res?.status()).toBe(200);
 
-    const startBtn = page.locator('button:has-text("Start Lesson")').first();
-    await expect.soft(startBtn).toBeVisible();
+    const startBtn = page.locator('main button:has-text("Start Lesson")').first();
+    await expect(startBtn).toBeVisible();
     await startBtn.click();
 
+    // Footer must hide immediately with zero flash
+    await expect(page.locator("footer")).toBeHidden();
     await expect.soft(page.locator('button:has-text("Skip to Quiz")')).toHaveCount(1);
     const focusAttr = await page.evaluate(() => document.body.dataset.khFocusMode);
     expect.soft(focusAttr).toBe("true");
     expect.soft(await page.locator(".kh-back-to-top").count()).toBe(0);
-    monitor.assertClean();
+
+    // Flip flashcard state if flashcard is present
+    const card = page
+      .locator('[data-testid="flashcard"], [role="button"][aria-label*="flip" i], button:has-text("Tap to flip")')
+      .first();
+    if ((await card.count()) > 0 && (await card.isVisible())) {
+      const beforeClass = (await card.getAttribute("class")) ?? "";
+      const beforeText = await card.innerText();
+      await card.click();
+      await expect
+        .poll(async () => `${(await card.getAttribute("class")) ?? ""}::${await card.innerText()}`)
+        .not.toBe(`${beforeClass}::${beforeText}`);
+    }
   });
 
-  test("Mini-Games (Wordle) unmounts Vocabulary Reference Table & hides floating ↑ button", async ({ page }) => {
-    const monitor = attachRuntimeMonitor(page);
-    await page.goto("/tools/learn/luo/", { waitUntil: "domcontentloaded" });
+  test("Proverbs & Mini-Games tabs clear Loading state and unmount Vocabulary Reference Table", async ({ page }) => {
+    // Proverbs tab on Kikuyu must finish loading
+    const resKikuyu = await page.goto("/tools/learn/kikuyu/", { waitUntil: "networkidle" });
+    expect(resKikuyu?.status()).toBe(200);
+    const proverbsTab = page.locator('button:has-text("Proverbs")').first();
+    await expect(proverbsTab).toBeVisible();
+    await proverbsTab.click();
+    await expect(page.locator("main").getByText(/Loading\.\.\./i)).toBeHidden({ timeout: 10_000 });
 
+    // Mini-Games tab on Dholuo must finish loading and hide reference table
+    const resLuo = await page.goto("/tools/learn/luo/", { waitUntil: "networkidle" });
+    expect(resLuo?.status()).toBe(200);
     const gamesTab = page.locator('button:has-text("Mini-Games")').first();
-    await expect.soft(gamesTab).toBeVisible();
+    await expect(gamesTab).toBeVisible();
     await gamesTab.click();
+    await expect(page.locator("main").getByText(/Loading\.\.\./i)).toBeHidden({ timeout: 10_000 });
 
-    // Reference table must not sit beneath Mini-Games
     expect.soft(await page.locator('h2:has-text("Core Vocabulary & Expressions Reference Table")').count()).toBe(0);
 
     const wordleCard = page.locator('button:has-text("Wordle"), div:has-text("Dholuo Wordle")').first();
@@ -63,14 +74,13 @@ test.describe("Learn Hub, 23 Language Courses, Lesson Player, Mini-Games & Trans
         await assertNotOccluded(page, enterKey, "Wordle Enter key");
       }
     }
-    monitor.assertClean();
   });
 
   test("23-Language Translator shows 208,776 count, legible With Audio chip, and clean Browse cards", async ({
     page,
   }) => {
-    const monitor = attachRuntimeMonitor(page);
-    await page.goto("/tools/kenyan-translator/", { waitUntil: "domcontentloaded" });
+    const res = await page.goto("/tools/kenyan-translator/", { waitUntil: "domcontentloaded" });
+    expect(res?.status()).toBe(200);
     await expect.soft(page.locator("body")).toContainText("208,776");
 
     const audioChip = page.locator('button:has-text("With Audio")').first();
@@ -80,6 +90,5 @@ test.describe("Learn Hub, 23 Language Courses, Lesson Player, Mini-Games & Trans
     }
 
     await assertNoHorizontalOverflow(page, "/tools/kenyan-translator/");
-    monitor.assertClean();
   });
 });

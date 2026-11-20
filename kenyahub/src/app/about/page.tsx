@@ -46,7 +46,7 @@ const officialSources = [
   { name: "COB & CRA", fullName: "Controller of Budget & Commission on Revenue Allocation", description: "FY 2025/26 County Equitable Share allocations, Own-Source Revenue (OSR) targets, and budget absorption reports." },
   { name: "SASRA & CBK", fullName: "SACCO Societies Regulatory Authority & Central Bank", description: "Tier-1 DT-SACCO supervision reports, BOSA loan multiplier benchmarks, dividend rates, and monetary policy." },
   { name: "KICD, KNEC & KUCCPS", fullName: "Education & Placement Agencies", description: "CBC 2-6-3-3-3 curriculum frameworks, KCSE 12-point grading boundaries, and 20-cluster university degree formulas." },
-  { name: "NTSA", fullName: "National Transport and Safety Authority", description: "Motor vehicle registration series (KAA–KDU), Smart Driving License classes (A–G), Traffic Act fines, and PSV SACCO routes." },
+  { name: "NTSA", fullName: "National Transport and Safety Authority", description: "Motor vehicle registration series (KAA–KDZ), Smart Driving License classes (A–G), Traffic Act fines, and PSV SACCO routes." },
   { name: "EPRA & WASREB", fullName: "Energy & Water Regulatory Boards", description: "KPLC prepaid electricity tariff bands, fuel/forex pass-through levies, and tiered county water & sewerage tariffs." },
   { name: "SHA & MOH", fullName: "Social Health Authority & Ministry of Health", description: "SHIF 2.75% contribution rules, KEPH Level 2–6 hospital accreditation, KEPI immunization schedules, and food composition tables." },
   { name: "KALRO & NCPB", fullName: "Agricultural Research & Cereals Board", description: "Agro-ecological crop planting calendars, certified seed rates, soil classifications, and KES 2,500 e-Voucher fertilizer subsidies." },
@@ -120,13 +120,16 @@ export default function AboutPage() {
         <p className="text-sm sm:text-base text-text-secondary max-w-2xl mx-auto leading-relaxed">
           KenyaHub is an independent Kenyan public digital utility platform engineered to transform complex Acts of Parliament, Gazette Notices, and institutional datasets into fast, transparent, and free interactive calculators and reference hubs for citizens, professionals, students, and business owners.
         </p>
+        <p className="text-xs text-text-muted">
+          Last Updated: November 2026 · Covering 23 Kenyan languages, {TOOLS.length} calculators &amp; 47 counties
+        </p>
       </div>
 
       {/* 6 Core Pillars */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
           <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><DynamicIcon emoji="💡" /></div>
-          <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">100% Free Public Access</h3>
+          <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">100% Free Public Access</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             All {TOOLS.length} specialized tools, 47 county profiles, 64+ matatu route maps, and 23 language courses on KenyaHub are free to use without accounts or paywalls.
           </p>
@@ -134,7 +137,7 @@ export default function AboutPage() {
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
           <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🏛️" /></div>
-          <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Statutory Precision</h3>
+          <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Statutory Precision</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             Every formula is directly modeled on published Kenyan legislation — including the Income Tax Act (Cap 470), Tax Laws (Amendment) Act 2024, Stamp Duty Act (Cap 480), and Traffic Act (Cap 403).
           </p>
@@ -142,7 +145,7 @@ export default function AboutPage() {
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
           <div className="w-10 h-10 rounded-lg bg-sky/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🔒" /></div>
-          <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">100% Local Browser Privacy</h3>
+          <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">100% Local Browser Privacy</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             All financial and academic calculations execute locally inside your browser. Your salary figures, loan balances, and grades never leave your device.
           </p>
@@ -150,7 +153,7 @@ export default function AboutPage() {
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
           <div className="w-10 h-10 rounded-lg bg-kenya-red/10 flex items-center justify-center text-xl"><DynamicIcon emoji="⚡" /></div>
-          <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Edge-First Speed</h3>
+          <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Edge-First Speed</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             Compiled as a static-first web application and served across global edge nodes so pages load instantaneously even on 3G rural mobile connections.
           </p>
@@ -158,7 +161,7 @@ export default function AboutPage() {
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
           <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🌍" /></div>
-          <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Cultural &amp; Linguistic Heritage</h3>
+          <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Cultural &amp; Linguistic Heritage</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             Preserves 23 Kenyan languages through structured interactive courses, 208,776+ verified dictionary and course entries, and authenticated historical oral literature (1840–2026).
           </p>
@@ -166,7 +169,7 @@ export default function AboutPage() {
 
         <div className="bg-bg-card border border-border rounded-xl p-5 space-y-2">
           <div className="w-10 h-10 rounded-lg bg-kenya-green/10 flex items-center justify-center text-xl"><DynamicIcon emoji="🔍" /></div>
-          <h3 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Continuous Statutory Audits</h3>
+          <h2 className="text-sm font-bold text-text-primary font-[family-name:var(--font-outfit)]">Continuous Statutory Audits</h2>
           <p className="text-xs text-text-secondary leading-relaxed">
             Our automated data-freshness auditor tracks Finance Act revisions, EPRA tariff adjustments, NSSF tiers, and KRA CRSP schedules.
           </p>
