@@ -25,6 +25,7 @@ import { getLanguageIdentity } from '../shared/data/language-identity';
 import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared/data/language-sources';
 import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
+import openCorpusIndex from '../shared/data/open-corpus-index.json';
 import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from '../shared/data/courses/proverbs';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
@@ -4303,13 +4304,13 @@ export default function LanguageCourseTool({
                   audioChapters?: { id: string; title: string; audioUrl: string; fallbackUrl?: string; license: string }[];
                 }
               >
-            )[selectedLanguageId];
+            )[selectedLangId];
             if (!corpusLang) return null;
             return (
               <View
                 style={{
-                  backgroundColor: theme.surfaceContainer,
-                  borderColor: `${theme.gold}40`,
+                  backgroundColor: colors.surfaceContainer,
+                  borderColor: `${colors.gold}40`,
                   borderWidth: 1,
                   borderRadius: 14,
                   padding: 12,
@@ -4317,33 +4318,33 @@ export default function LanguageCourseTool({
                   gap: 6,
                 }}
               >
-                <Text style={{ fontFamily: "Inter_700Bold", fontSize: 12, color: theme.gold }}>
+                <Text style={{ fontFamily: "Inter_700Bold", fontSize: 12, color: colors.gold }}>
                   OPEN LINGUISTIC PROFILE · CLDR {openCorpusIndex.cldrVersion}
                 </Text>
                 {corpusLang.typology && (
-                  <Text style={{ fontFamily: "Inter_500Medium", fontSize: 12, color: theme.textPrimary }}>
+                  <Text style={{ fontFamily: "Inter_500Medium", fontSize: 12, color: colors.text }}>
                     ISO {corpusLang.typology.iso639_3} · Glottocode {corpusLang.typology.glottocode}
                     {corpusLang.r2AudioClips ? ` · ${corpusLang.r2AudioClips.toLocaleString()} R2 audio clips` : ""}
                   </Text>
                 )}
                 {corpusLang.cldr && corpusLang.cldr.days && corpusLang.cldr.days.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: theme.textSecondary }}>
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
                     Days ({corpusLang.cldr.locale}): {corpusLang.cldr.days.join(" · ")}
                   </Text>
                 )}
                 {corpusLang.topFrequencyWords && corpusLang.topFrequencyWords.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: theme.textSecondary }}>
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
                     Top corpus words: {corpusLang.topFrequencyWords.slice(0, 10).map((w) => w.word).join(", ")}
                   </Text>
                 )}
                 {corpusLang.sampleReadings && corpusLang.sampleReadings.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: theme.textMuted }}>
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textMuted }}>
                     Sample reading: &ldquo;{corpusLang.sampleReadings[0].text}&rdquo;
                   </Text>
                 )}
                 {corpusLang.audioChapters && corpusLang.audioChapters.length > 0 && (
                   <View style={{ marginTop: 6, gap: 6 }}>
-                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11.5, color: theme.kenyaGreen }}>
+                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11.5, color: colors.kenyaGreen }}>
                       DHOLUO 1920 SPOKEN PHRASEBOOK ({corpusLang.audioChapters.length} CHAPTERS · PDM 1.0)
                     </Text>
                     {corpusLang.audioChapters.map((ch) => (
@@ -4360,16 +4361,16 @@ export default function LanguageCourseTool({
                           alignItems: "center",
                           justifyContent: "space-between",
                           borderWidth: 1,
-                          borderColor: `${theme.kenyaGreen}40`,
+                          borderColor: `${colors.kenyaGreen}40`,
                           borderRadius: 10,
                           paddingHorizontal: 10,
                           paddingVertical: 7,
                         }}
                       >
-                        <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11.5, color: theme.textPrimary, flex: 1 }}>
+                        <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11.5, color: colors.text, flex: 1 }}>
                           {ch.title}
                         </Text>
-                        <Feather name="volume-2" size={14} color={theme.kenyaGreen} />
+                        <Feather name="volume-2" size={14} color={colors.kenyaGreen} />
                       </Pressable>
                     ))}
                   </View>

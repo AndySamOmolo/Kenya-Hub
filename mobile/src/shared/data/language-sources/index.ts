@@ -1422,8 +1422,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
     ],
     "contentTypes": [
       "dialogue",
-      "vocabulary",
-      "audio"
+      "vocabulary"
     ],
     "ingestionStatus": "integrated",
     "coverageNote": "All 5 bilingual Dholuo/English phrasebook chapters integrated into public/dholuo-audio-chapters.json, the Cloudflare R2 Opus pipeline, and the interactive Dholuo course listening player on Web and Android."
