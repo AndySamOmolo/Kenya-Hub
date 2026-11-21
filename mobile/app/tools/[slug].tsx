@@ -275,6 +275,10 @@ export default function ToolDetailScreen() {
       ].includes(tool.slug)
   );
   const [saved, setSaved] = useState(false);
+  const [descriptionExpanded, setDescriptionExpanded] = useState(false);
+  useEffect(() => {
+    setDescriptionExpanded(false);
+  }, [effectiveSlug]);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
   const [showFullGuide, setShowFullGuide] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
