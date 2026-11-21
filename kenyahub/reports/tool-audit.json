@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-21T16:18:39.071Z",
+  "generatedAt": "2026-11-21T17:55:00.747Z",
   "registryCount": 33,
   "routeCount": 33,
   "courseCount": 23,
   "totalFaqs": 146,
-  "totalDictEntries": 217766,
-  "totalAudioLinked": 1755,
+  "totalDictEntries": 238856,
+  "totalAudioLinked": 1768,
   "checksPassed": 74,
   "checksTotal": 74,
   "okCount": 33,
@@ -1265,37 +1265,37 @@
   "courses": [
     {
       "languageId": "swahili",
-      "dictionaryEntries": 55963,
-      "audioLinked": 449,
+      "dictionaryEntries": 61107,
+      "audioLinked": 457,
       "status": "ok"
     },
     {
       "languageId": "kikuyu",
-      "dictionaryEntries": 23248,
+      "dictionaryEntries": 25764,
       "audioLinked": 254,
       "status": "ok"
     },
     {
       "languageId": "luo",
-      "dictionaryEntries": 14887,
-      "audioLinked": 257,
+      "dictionaryEntries": 17313,
+      "audioLinked": 260,
       "status": "ok"
     },
     {
       "languageId": "luhya",
-      "dictionaryEntries": 7075,
+      "dictionaryEntries": 7123,
       "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "kamba",
-      "dictionaryEntries": 10418,
+      "dictionaryEntries": 12910,
       "audioLinked": 250,
       "status": "ok"
     },
     {
       "languageId": "kalenjin",
-      "dictionaryEntries": 8238,
+      "dictionaryEntries": 8411,
       "audioLinked": 0,
       "status": "ok"
     },
@@ -1307,19 +1307,19 @@
     },
     {
       "languageId": "meru",
-      "dictionaryEntries": 4437,
+      "dictionaryEntries": 4487,
       "audioLinked": 248,
       "status": "ok"
     },
     {
       "languageId": "somali",
-      "dictionaryEntries": 16905,
-      "audioLinked": 297,
+      "dictionaryEntries": 20914,
+      "audioLinked": 298,
       "status": "ok"
     },
     {
       "languageId": "maasai",
-      "dictionaryEntries": 5032,
+      "dictionaryEntries": 5081,
       "audioLinked": 0,
       "status": "ok"
     },
@@ -1331,7 +1331,7 @@
     },
     {
       "languageId": "mijikenda",
-      "dictionaryEntries": 17304,
+      "dictionaryEntries": 17325,
       "audioLinked": 0,
       "status": "ok"
     },
@@ -1367,8 +1367,8 @@
     },
     {
       "languageId": "borana",
-      "dictionaryEntries": 27758,
-      "audioLinked": 0,
+      "dictionaryEntries": 31859,
+      "audioLinked": 1,
       "status": "ok"
     },
     {
@@ -1379,7 +1379,7 @@
     },
     {
       "languageId": "samburu",
-      "dictionaryEntries": 868,
+      "dictionaryEntries": 921,
       "audioLinked": 0,
       "status": "ok"
     },
@@ -1391,7 +1391,7 @@
     },
     {
       "languageId": "pokot",
-      "dictionaryEntries": 5674,
+      "dictionaryEntries": 5682,
       "audioLinked": 0,
       "status": "ok"
     },

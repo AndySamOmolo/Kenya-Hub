@@ -1809,7 +1809,12 @@
     "modern-education-ne-odonjone-kwom-keth-mar-muono-lendo-madongo-d": "https://audio.kenyahub.me/audio/luo/modern-education-ne-odonjone-kwom-keth-mar-muono-lendo-madongo-d.opus",
     "lwet-bim-kod-tiende-chalre-kendo-rom-echwe-kod-bor-kendo-ma-nyis": "https://audio.kenyahub.me/audio/luo/lwet-bim-kod-tiende-chalre-kendo-rom-echwe-kod-bor-kendo-ma-nyis.opus",
     "tinde-jowuoth-mag-ndeke-okohinyo-ng-ado-otiko-e-kembe-ndeke-mori": "https://audio.kenyahub.me/audio/luo/tinde-jowuoth-mag-ndeke-okohinyo-ng-ado-otiko-e-kembe-ndeke-mori.opus",
-    "dhano-osebedo-ka-loso-kendo-tiyo-gi-gige-miyo-gik-moko-bed-madon": "https://audio.kenyahub.me/audio/luo/dhano-osebedo-ka-loso-kendo-tiyo-gi-gige-miyo-gik-moko-bed-madon.opus"
+    "dhano-osebedo-ka-loso-kendo-tiyo-gi-gige-miyo-gik-moko-bed-madon": "https://audio.kenyahub.me/audio/luo/dhano-osebedo-ka-loso-kendo-tiyo-gi-gige-miyo-gik-moko-bed-madon.opus",
+    "handbook-kavirondo3-1203-dholuophrasebook-01-fathersstjosephsoci": "https://audio.kenyahub.me/audio/luo/handbook-kavirondo3-1203-dholuophrasebook-01-fathersstjosephsoci.opus",
+    "handbook-kavirondo3-1203-dholuophrasebook-02-fathersstjosephsoci": "https://audio.kenyahub.me/audio/luo/handbook-kavirondo3-1203-dholuophrasebook-02-fathersstjosephsoci.opus",
+    "handbook-kavirondo3-1203-dholuophrasebook-03-fathersstjosephsoci": "https://audio.kenyahub.me/audio/luo/handbook-kavirondo3-1203-dholuophrasebook-03-fathersstjosephsoci.opus",
+    "handbook-kavirondo3-1203-dholuophrasebook-04-fathersstjosephsoci": "https://audio.kenyahub.me/audio/luo/handbook-kavirondo3-1203-dholuophrasebook-04-fathersstjosephsoci.opus",
+    "handbook-kavirondo3-1203-dholuophrasebook-05-fathersstjosephsoci": "https://audio.kenyahub.me/audio/luo/handbook-kavirondo3-1203-dholuophrasebook-05-fathersstjosephsoci.opus"
   },
   "meru": {
     "ii-itugucokia-nkatho": "https://audio.kenyahub.me/audio/meru/ii-itugucokia-nkatho.opus",
@@ -4360,7 +4365,10 @@
     "isaan-tarreeffamaniiru-galme-hambawwaan-addunyaa-unesco-irratti": "https://audio.kenyahub.me/audio/borana/isaan-tarreeffamaniiru-galme-hambawwaan-addunyaa-unesco-irratti.opus",
     "masaraan-aadaa-warra-bara-gidduu-galeessaa-ilaalcha-wal-aansoo-g": "https://audio.kenyahub.me/audio/borana/masaraan-aadaa-warra-bara-gidduu-galeessaa-ilaalcha-wal-aansoo-g.opus",
     "sababni-guddaan-taatee-kanaa-bu-aa-abjuu-ifa-galaa-kan-dheerina-": "https://audio.kenyahub.me/audio/borana/sababni-guddaan-taatee-kanaa-bu-aa-abjuu-ifa-galaa-kan-dheerina-.opus",
-    "addn-hariiroo-hiriyoota-biroo-waliinii-irraan-dhiibbaa-ga-a-saba": "https://audio.kenyahub.me/audio/borana/addn-hariiroo-hiriyoota-biroo-waliinii-irraan-dhiibbaa-ga-a-saba.opus"
+    "addn-hariiroo-hiriyoota-biroo-waliinii-irraan-dhiibbaa-ga-a-saba": "https://audio.kenyahub.me/audio/borana/addn-hariiroo-hiriyoota-biroo-waliinii-irraan-dhiibbaa-ga-a-saba.opus",
+    "ch-letter": "https://audio.kenyahub.me/audio/borana/ch-letter.opus",
+    "dh-letter": "https://audio.kenyahub.me/audio/borana/dh-letter.opus",
+    "gaala": "https://audio.kenyahub.me/audio/borana/gaala.opus"
   },
   "teso": {
     "acie-akwii-nudos-kotoma-oraasit-kayen-ekudukudo-kosiep-ediope": "https://audio.kenyahub.me/audio/teso/acie-akwii-nudos-kotoma-oraasit-kayen-ekudukudo-kosiep-ediope.opus",
@@ -5277,5 +5285,8 @@
     "tsi-motookha-tsi-motookha-taxi-tse-tsisuta-babandu-tsili-musifa-": "https://audio.kenyahub.me/audio/luhya/tsi-motookha-tsi-motookha-taxi-tse-tsisuta-babandu-tsili-musifa-.opus",
     "inzuchi-iyekala-iyebinzali-nibuwanga-nibumali-ngayimihile-mushim": "https://audio.kenyahub.me/audio/luhya/inzuchi-iyekala-iyebinzali-nibuwanga-nibumali-ngayimihile-mushim.opus",
     "umuutu-e-nyusile-mukoono-gwe-mulayi-mungaji-a-gwinyusile-nenga-a": "https://audio.kenyahub.me/audio/luhya/umuutu-e-nyusile-mukoono-gwe-mulayi-mungaji-a-gwinyusile-nenga-a.opus"
+  },
+  "english-ke": {
+    "aporee-22438-26032-01whichroadtowardsfreedomrcd2010128": "https://audio.kenyahub.me/audio/english-ke/aporee-22438-26032-01whichroadtowardsfreedomrcd2010128.opus"
   }
 }

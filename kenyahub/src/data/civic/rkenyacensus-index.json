@@ -1,0 +1,210 @@
+[
+  {
+    "name": ".Rbuildignore",
+    "path": ".Rbuildignore",
+    "sha": "650c518d418f0519d4e1a07409bcddf26b92d3d6",
+    "size": 53,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/.Rbuildignore?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/.Rbuildignore",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/650c518d418f0519d4e1a07409bcddf26b92d3d6",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/.Rbuildignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/.Rbuildignore?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/650c518d418f0519d4e1a07409bcddf26b92d3d6",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/.Rbuildignore"
+    }
+  },
+  {
+    "name": ".gitignore",
+    "path": ".gitignore",
+    "sha": "5b6a0652566d10360493952aec6d4a4febc77083",
+    "size": 40,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/.gitignore?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/.gitignore",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/5b6a0652566d10360493952aec6d4a4febc77083",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/.gitignore?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/5b6a0652566d10360493952aec6d4a4febc77083",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/.gitignore"
+    }
+  },
+  {
+    "name": "DESCRIPTION",
+    "path": "DESCRIPTION",
+    "sha": "5978017d127b9adb10eebad341f0db9cb5e1e8f1",
+    "size": 407,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/DESCRIPTION?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/DESCRIPTION",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/5978017d127b9adb10eebad341f0db9cb5e1e8f1",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/DESCRIPTION",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/DESCRIPTION?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/5978017d127b9adb10eebad341f0db9cb5e1e8f1",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/DESCRIPTION"
+    }
+  },
+  {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "72e8abf971790b4aa9e16cc9f589860e90888a7f",
+    "size": 46,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/LICENSE?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/LICENSE",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/72e8abf971790b4aa9e16cc9f589860e90888a7f",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/LICENSE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/LICENSE?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/72e8abf971790b4aa9e16cc9f589860e90888a7f",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/LICENSE"
+    }
+  },
+  {
+    "name": "LICENSE.md",
+    "path": "LICENSE.md",
+    "sha": "56c1158d8217e02cf3973bab36a94adf22867fbc",
+    "size": 1075,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/LICENSE.md?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/LICENSE.md",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/56c1158d8217e02cf3973bab36a94adf22867fbc",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/LICENSE.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/LICENSE.md?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/56c1158d8217e02cf3973bab36a94adf22867fbc",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/LICENSE.md"
+    }
+  },
+  {
+    "name": "NAMESPACE",
+    "path": "NAMESPACE",
+    "sha": "6ae926839dd1829f1016a96f766d970ff184ad97",
+    "size": 46,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/NAMESPACE?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/NAMESPACE",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/6ae926839dd1829f1016a96f766d970ff184ad97",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/NAMESPACE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/NAMESPACE?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/6ae926839dd1829f1016a96f766d970ff184ad97",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/NAMESPACE"
+    }
+  },
+  {
+    "name": "R",
+    "path": "R",
+    "sha": "0f8c58a8b5ee925ce3634696170cda28e8a8d46b",
+    "size": 0,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/R?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/tree/master/R",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/trees/0f8c58a8b5ee925ce3634696170cda28e8a8d46b",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/R?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/trees/0f8c58a8b5ee925ce3634696170cda28e8a8d46b",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/tree/master/R"
+    }
+  },
+  {
+    "name": "README.Rmd",
+    "path": "README.Rmd",
+    "sha": "344d81a3f1c858985d87310b0469919bf49ca5c5",
+    "size": 1661,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/README.Rmd?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/README.Rmd",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/344d81a3f1c858985d87310b0469919bf49ca5c5",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/README.Rmd",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/README.Rmd?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/344d81a3f1c858985d87310b0469919bf49ca5c5",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/README.Rmd"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "edc6c2e06cdfcb679d57a3ed7ba0a1bc3bf7e745",
+    "size": 1485,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/README.md?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/README.md",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/edc6c2e06cdfcb679d57a3ed7ba0a1bc3bf7e745",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/README.md?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/edc6c2e06cdfcb679d57a3ed7ba0a1bc3bf7e745",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/README.md"
+    }
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "sha": "ad168e1588e851b33135d584850a4e63c1095ce6",
+    "size": 0,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/data?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/tree/master/data",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/trees/ad168e1588e851b33135d584850a4e63c1095ce6",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/data?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/trees/ad168e1588e851b33135d584850a4e63c1095ce6",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/tree/master/data"
+    }
+  },
+  {
+    "name": "inst",
+    "path": "inst",
+    "sha": "37b6b511ce23f4ed58db51839867d589301df3cf",
+    "size": 0,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/inst?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/tree/master/inst",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/trees/37b6b511ce23f4ed58db51839867d589301df3cf",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/inst?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/trees/37b6b511ce23f4ed58db51839867d589301df3cf",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/tree/master/inst"
+    }
+  },
+  {
+    "name": "man",
+    "path": "man",
+    "sha": "19cd5bf3a544e6f8b49d2613e1df08bc4eeed483",
+    "size": 0,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/man?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/tree/master/man",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/trees/19cd5bf3a544e6f8b49d2613e1df08bc4eeed483",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/man?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/trees/19cd5bf3a544e6f8b49d2613e1df08bc4eeed483",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/tree/master/man"
+    }
+  },
+  {
+    "name": "rKenyaCensus2019.Rproj",
+    "path": "rKenyaCensus2019.Rproj",
+    "sha": "cba1b6b7a0a292098af0e0b1ce41b7846a59bd5e",
+    "size": 386,
+    "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/rKenyaCensus2019.Rproj?ref=master",
+    "html_url": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/rKenyaCensus2019.Rproj",
+    "git_url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/cba1b6b7a0a292098af0e0b1ce41b7846a59bd5e",
+    "download_url": "https://raw.githubusercontent.com/Shelmith-Kariuki/rKenyaCensus/master/rKenyaCensus2019.Rproj",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents/rKenyaCensus2019.Rproj?ref=master",
+      "git": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/git/blobs/cba1b6b7a0a292098af0e0b1ce41b7846a59bd5e",
+      "html": "https://github.com/Shelmith-Kariuki/rKenyaCensus/blob/master/rKenyaCensus2019.Rproj"
+    }
+  }
+]

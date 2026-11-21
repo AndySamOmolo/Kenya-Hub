@@ -1,0 +1,2263 @@
+{
+  "help": "https://data.humdata.org/api/3/action/help_show?name=package_search",
+  "success": true,
+  "result": {
+    "count": 40,
+    "facets": {},
+    "expanded": {},
+    "results": [
+      {
+        "archived": true,
+        "batch": "b9b89736-1d58-4d6c-91cd-d1ae1886316a",
+        "caveats": "Data source is FSD Kenya",
+        "creator_user_id": "15a8a09b-f4da-4ee2-a633-e2c84ed96df0",
+        "data_update_frequency": "-1",
+        "dataset_date": "[2019-01-25T00:00:00 TO 2019-01-25T23:59:59]",
+        "dataset_preview": "first_resource",
+        "dataset_source": "American Red Cross",
+        "has_geodata": false,
+        "has_showcases": false,
+        "id": "26a6165c-cf3c-484b-970a-a8fb100f6f1c",
+        "is_requestdata_type": false,
+        "isopen": true,
+        "last_modified": "2026-11-21T08:44:10.340239",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution International (CC BY)",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "e32d5afb-cc7e-4715-85b7-5a3b849443f5",
+        "metadata_created": "2019-03-14T01:20:22.080140",
+        "metadata_modified": "2026-11-21T09:06:33.840418",
+        "methodology": "Sample Survey",
+        "name": "kenya-markets",
+        "notes": "This data shows locations of major markets in Kenya. Data was collected by FSD Kenya as part of the FinAccess survey",
+        "num_resources": 1,
+        "num_tags": 1,
+        "organization": {
+          "id": "06a84fca-72e1-4a3d-aaf0-7619b27cf159",
+          "name": "american-red-cross",
+          "title": "American Red Cross (inactive)",
+          "type": "organization",
+          "description": "The American Red Cross (ARC) International Services Department (ISD) seeks to prevent and alleviate human suffering around the world by responding to disasters, building safer, more resilient communities, and educating future humanitarians. The American Red Cross continues to deepen and expand its international programming while also working to strengthen the global Red Cross Red Crescent Network, in order to deliver critical assistance to some of the most vulnerable communities in the world.",
+          "image_url": "",
+          "created": "2014-07-15T17:23:16.971984",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "06a84fca-72e1-4a3d-aaf0-7619b27cf159",
+        "package_creator": "bmitto",
+        "pageviews_last_14_days": 15,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Kenya\"]}",
+        "state": "active",
+        "subnational": "1",
+        "title": "Kenya Markets",
+        "total_res_downloads": 386,
+        "type": "dataset",
+        "updated_by_script": "hdx:HDXPythonLibrary/6.3.1-hdx_cli_toolkit_cjh (2025-02-06T15:07:32.006765)",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          }
+        ],
+        "resources": [
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2019-03-14T01:20:23.872502",
+            "datastore_active": false,
+            "description": "Market locations in Kenya",
+            "download_url": "https://docs.google.com/spreadsheets/d/1O2Oipg3oO_UL90wPsxJqU-xMV3SNAOXzZ5DKfFMYI6g/edit?usp=drive_web",
+            "format": "Google Sheet",
+            "hash": "d0332864de0cf4c515cd9d3e7881c856",
+            "hdx_rel_url": "https://docs.google.com/spreadsheets/d/1O2Oipg3oO_UL90wPsxJqU-xMV3SNAOXzZ5DKfFMYI6g/edit?usp=drive_web",
+            "id": "3796fe4f-2a44-42c0-b774-864b4a80689c",
+            "last_modified": "2026-11-21T08:44:10.340239",
+            "metadata_modified": "2026-11-21T09:06:33.855002",
+            "microdata": false,
+            "mimetype": null,
+            "mimetype_inner": null,
+            "name": "Markets",
+            "originalHash": "1116936704",
+            "package_id": "26a6165c-cf3c-484b-970a-a8fb100f6f1c",
+            "position": 0,
+            "resource_type": "api",
+            "size": 267398,
+            "state": "active",
+            "url": "https://docs.google.com/spreadsheets/d/1O2Oipg3oO_UL90wPsxJqU-xMV3SNAOXzZ5DKfFMYI6g/edit?usp=drive_web",
+            "url_type": "api"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "markets",
+            "id": "b62086cd-553f-4464-9cd3-9efb487203fe",
+            "name": "markets",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "archived": false,
+        "batch": "2bb29d20-e01c-431e-bbbc-99aefb0f6a04",
+        "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372577c",
+        "data_update_frequency": "14",
+        "dataset_date": "[2021-05-19T00:00:00 TO 2026-07-15T23:59:59]",
+        "dataset_preview": "no_preview",
+        "dataset_source": "WFP - World Food Programme",
+        "due_date": "2026-07-29T23:59:59",
+        "has_geodata": false,
+        "has_showcases": false,
+        "id": "67259d7e-1554-4ffd-be8d-97244577546a",
+        "is_requestdata_type": false,
+        "isopen": false,
+        "last_modified": "2026-07-15T22:12:14.071263",
+        "license_id": "cc-by-igo",
+        "license_title": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)",
+        "license_url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode",
+        "maintainer": "2f9fd160-2a16-49c0-89d6-0bc3230599bf",
+        "metadata_created": "2024-06-05T14:42:12.692684",
+        "metadata_modified": "2026-11-17T11:12:49.856682",
+        "methodology": "Food Basket Cost Changes \nThe impact calculation assumes that each food basket provides 2,100 kcal a day, and that the proportional caloric contribution is a proxy of the relative importance of the item in the food basket. It comprises the following calculations: a) the total food basket energy is multiplied by the proportion of each item to give the absolute energy (in kcal) each item contributes to the total energy intake [fn. 1]; b) each item’s absolute energy is divided by its caloric density [fn. 2] to give the weight of that item in the food basket; and c) each item’s weight is multiplied by its unit nominal/seasonally adjusted price to calculate the relative cost of each food basket item. Costs are only calculated for energy contributors for which prices are available. To avoid bias, the other energy contributors that fill the gap to 2,100kcal are ignored. Thus, the total cost of the known part of the food basket is the sum of the itemized commodity costs (step c). National level indicators report a simple average of subnational level data without weighting. \n[fn. 1] Caloric contributions are based on FAO 2005-2007 estimates.\n[fn. 2] Caloric densities are based on NutVal 4.0 estimates.",
+        "name": "global-market-monitor",
+        "notes": "The [WFP Global Market Monitor](https://www.wfp.org/publications/market-monitor) monitors food prices in markets across a range of countries globally. The resources are updated every other week, with country data updating based on when data is received from country offices.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+          "id": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
+          "name": "wfp",
+          "title": "WFP - World Food Programme",
+          "type": "organization",
+          "description": "The World Food Programme (WFP) is the leading humanitarian organization saving lives and changing lives, **delivering food assistance in emergencies** and **working with communities to improve nutrition and build resilience**.",
+          "image_url": "",
+          "created": "2014-10-24T15:55:52.696098",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
+        "package_creator": "isabelle-tot",
+        "pageviews_last_14_days": 73,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Jordan\", \"Togo\", \"Panama\", \"Kyrgyzstan\", \"United Republic of Tanzania\", \"Senegal\", \"Congo\", \"Sierra Leone\", \"Sudan\", \"Democratic Republic of the Congo\", \"Viet Nam\", \"Cambodia\", \"Yemen\", \"Guinea\", \"Afghanistan\", \"Sri Lanka\", \"Iraq\", \"Timor-Leste\", \"Mauritania\", \"India\", \"Malawi\", \"T\\u00fcrkiye\", \"Egypt\", \"Lesotho\", \"Tajikistan\", \"Gambia\", \"Angola\", \"Myanmar\", \"Ecuador\", \"Lao People's Democratic Republic\", \"Honduras\", \"State of Palestine\", \"Ghana\", \"Ukraine\", \"Madagascar\", \"Ethiopia\", \"Namibia\", \"Iran (Islamic Republic of)\", \"C\\u00f4te d'Ivoire\", \"Burkina Faso\", \"Burundi\", \"Djibouti\", \"Nicaragua\", \"Cameroon\", \"Rwanda\", \"Niger\", \"Zimbabwe\", \"Zambia\", \"Indonesia\", \"Cabo Verde\", \"Philippines\", \"Algeria\", \"Bangladesh\", \"Syrian Arab Republic\", \"Libya\", \"Somalia\", \"Uganda\", \"Dominican Republic\", \"Nepal\", \"Guatemala\", \"Mexico\", \"Pakistan\", \"Lebanon\", \"Benin\", \"Kenya\", \"Mali\", \"Nigeria\", \"Central African Republic\", \"Liberia\", \"Bolivia (Plurinational State of)\", \"South Sudan\", \"Peru\", \"Haiti\", \"Armenia\", \"Mozambique\", \"Eswatini\", \"El Salvador\", \"Chad\", \"Colombia\", \"Venezuela (Bolivarian Republic of)\"]}",
+        "state": "active",
+        "subnational": "0",
+        "title": "WFP Global Market Monitor",
+        "total_res_downloads": 3038,
+        "type": "dataset",
+        "updated_by_script": "HDX Scraper: WFP Market Monitoring (2026-11-17T11:12:49.525080)",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Afghanistan",
+            "id": "afg",
+            "image_display_url": "",
+            "name": "afg",
+            "title": "Afghanistan"
+          },
+          {
+            "description": "",
+            "display_name": "Algeria",
+            "id": "dza",
+            "image_display_url": "",
+            "name": "dza",
+            "title": "Algeria"
+          },
+          {
+            "description": "",
+            "display_name": "Angola",
+            "id": "ago",
+            "image_display_url": "",
+            "name": "ago",
+            "title": "Angola"
+          },
+          {
+            "description": "",
+            "display_name": "Armenia",
+            "id": "arm",
+            "image_display_url": "",
+            "name": "arm",
+            "title": "Armenia"
+          },
+          {
+            "description": "test",
+            "display_name": "Bangladesh",
+            "id": "bgd",
+            "image_display_url": "",
+            "name": "bgd",
+            "title": "Bangladesh"
+          },
+          {
+            "description": "",
+            "display_name": "Benin",
+            "id": "ben",
+            "image_display_url": "",
+            "name": "ben",
+            "title": "Benin"
+          },
+          {
+            "description": "",
+            "display_name": "Bolivia (Plurinational State of)",
+            "id": "bol",
+            "image_display_url": "",
+            "name": "bol",
+            "title": "Bolivia (Plurinational State of)"
+          },
+          {
+            "description": "",
+            "display_name": "Burkina Faso",
+            "id": "bfa",
+            "image_display_url": "",
+            "name": "bfa",
+            "title": "Burkina Faso"
+          },
+          {
+            "description": "",
+            "display_name": "Burundi",
+            "id": "bdi",
+            "image_display_url": "",
+            "name": "bdi",
+            "title": "Burundi"
+          },
+          {
+            "description": "",
+            "display_name": "Cabo Verde",
+            "id": "cpv",
+            "image_display_url": "",
+            "name": "cpv",
+            "title": "Cabo Verde"
+          },
+          {
+            "description": "",
+            "display_name": "Cambodia",
+            "id": "khm",
+            "image_display_url": "",
+            "name": "khm",
+            "title": "Cambodia"
+          },
+          {
+            "description": "",
+            "display_name": "Cameroon",
+            "id": "cmr",
+            "image_display_url": "",
+            "name": "cmr",
+            "title": "Cameroon"
+          },
+          {
+            "description": "",
+            "display_name": "Central African Republic",
+            "id": "caf",
+            "image_display_url": "",
+            "name": "caf",
+            "title": "Central African Republic"
+          },
+          {
+            "description": "",
+            "display_name": "Chad",
+            "id": "tcd",
+            "image_display_url": "",
+            "name": "tcd",
+            "title": "Chad"
+          },
+          {
+            "description": "",
+            "display_name": "Colombia",
+            "id": "col",
+            "image_display_url": "",
+            "name": "col",
+            "title": "Colombia"
+          },
+          {
+            "description": "",
+            "display_name": "Congo",
+            "id": "cog",
+            "image_display_url": "",
+            "name": "cog",
+            "title": "Congo"
+          },
+          {
+            "description": "",
+            "display_name": "Côte d'Ivoire",
+            "id": "civ",
+            "image_display_url": "",
+            "name": "civ",
+            "title": "Côte d'Ivoire"
+          },
+          {
+            "description": "",
+            "display_name": "Democratic Republic of the Congo",
+            "id": "cod",
+            "image_display_url": "",
+            "name": "cod",
+            "title": "Democratic Republic of the Congo"
+          },
+          {
+            "description": "",
+            "display_name": "Djibouti",
+            "id": "dji",
+            "image_display_url": "",
+            "name": "dji",
+            "title": "Djibouti"
+          },
+          {
+            "description": "",
+            "display_name": "Dominican Republic",
+            "id": "dom",
+            "image_display_url": "",
+            "name": "dom",
+            "title": "Dominican Republic"
+          },
+          {
+            "description": "",
+            "display_name": "Ecuador",
+            "id": "ecu",
+            "image_display_url": "",
+            "name": "ecu",
+            "title": "Ecuador"
+          },
+          {
+            "description": "",
+            "display_name": "Egypt",
+            "id": "egy",
+            "image_display_url": "",
+            "name": "egy",
+            "title": "Egypt"
+          },
+          {
+            "description": "",
+            "display_name": "El Salvador",
+            "id": "slv",
+            "image_display_url": "",
+            "name": "slv",
+            "title": "El Salvador"
+          },
+          {
+            "description": "",
+            "display_name": "Eswatini",
+            "id": "swz",
+            "image_display_url": "",
+            "name": "swz",
+            "title": "Eswatini"
+          },
+          {
+            "description": "",
+            "display_name": "Ethiopia",
+            "id": "eth",
+            "image_display_url": "",
+            "name": "eth",
+            "title": "Ethiopia"
+          },
+          {
+            "description": "",
+            "display_name": "Gambia",
+            "id": "gmb",
+            "image_display_url": "",
+            "name": "gmb",
+            "title": "Gambia"
+          },
+          {
+            "description": "",
+            "display_name": "Ghana",
+            "id": "gha",
+            "image_display_url": "",
+            "name": "gha",
+            "title": "Ghana"
+          },
+          {
+            "description": "",
+            "display_name": "Guatemala",
+            "id": "gtm",
+            "image_display_url": "",
+            "name": "gtm",
+            "title": "Guatemala"
+          },
+          {
+            "description": "",
+            "display_name": "Guinea",
+            "id": "gin",
+            "image_display_url": "",
+            "name": "gin",
+            "title": "Guinea"
+          },
+          {
+            "description": "",
+            "display_name": "Haiti",
+            "id": "hti",
+            "image_display_url": "",
+            "name": "hti",
+            "title": "Haiti"
+          },
+          {
+            "description": "",
+            "display_name": "Honduras",
+            "id": "hnd",
+            "image_display_url": "",
+            "name": "hnd",
+            "title": "Honduras"
+          },
+          {
+            "description": "",
+            "display_name": "India",
+            "id": "ind",
+            "image_display_url": "",
+            "name": "ind",
+            "title": "India"
+          },
+          {
+            "description": "",
+            "display_name": "Indonesia",
+            "id": "idn",
+            "image_display_url": "",
+            "name": "idn",
+            "title": "Indonesia"
+          },
+          {
+            "description": "",
+            "display_name": "Iran (Islamic Republic of)",
+            "id": "irn",
+            "image_display_url": "",
+            "name": "irn",
+            "title": "Iran (Islamic Republic of)"
+          },
+          {
+            "description": "",
+            "display_name": "Iraq",
+            "id": "irq",
+            "image_display_url": "",
+            "name": "irq",
+            "title": "Iraq"
+          },
+          {
+            "description": "",
+            "display_name": "Jordan",
+            "id": "jor",
+            "image_display_url": "",
+            "name": "jor",
+            "title": "Jordan"
+          },
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          },
+          {
+            "description": "",
+            "display_name": "Kyrgyzstan",
+            "id": "kgz",
+            "image_display_url": "",
+            "name": "kgz",
+            "title": "Kyrgyzstan"
+          },
+          {
+            "description": "",
+            "display_name": "Lao People's Democratic Republic",
+            "id": "lao",
+            "image_display_url": "",
+            "name": "lao",
+            "title": "Lao People's Democratic Republic"
+          },
+          {
+            "description": "",
+            "display_name": "Lebanon",
+            "id": "lbn",
+            "image_display_url": "",
+            "name": "lbn",
+            "title": "Lebanon"
+          },
+          {
+            "description": "",
+            "display_name": "Lesotho",
+            "id": "lso",
+            "image_display_url": "",
+            "name": "lso",
+            "title": "Lesotho"
+          },
+          {
+            "description": "",
+            "display_name": "Liberia",
+            "id": "lbr",
+            "image_display_url": "",
+            "name": "lbr",
+            "title": "Liberia"
+          },
+          {
+            "description": "",
+            "display_name": "Libya",
+            "id": "lby",
+            "image_display_url": "",
+            "name": "lby",
+            "title": "Libya"
+          },
+          {
+            "description": "",
+            "display_name": "Madagascar",
+            "id": "mdg",
+            "image_display_url": "",
+            "name": "mdg",
+            "title": "Madagascar"
+          },
+          {
+            "description": "",
+            "display_name": "Malawi",
+            "id": "mwi",
+            "image_display_url": "",
+            "name": "mwi",
+            "title": "Malawi"
+          },
+          {
+            "description": "",
+            "display_name": "Mali",
+            "id": "mli",
+            "image_display_url": "",
+            "name": "mli",
+            "title": "Mali"
+          },
+          {
+            "description": "",
+            "display_name": "Mauritania",
+            "id": "mrt",
+            "image_display_url": "",
+            "name": "mrt",
+            "title": "Mauritania"
+          },
+          {
+            "description": "",
+            "display_name": "Mexico",
+            "id": "mex",
+            "image_display_url": "",
+            "name": "mex",
+            "title": "Mexico"
+          },
+          {
+            "description": "",
+            "display_name": "Mozambique",
+            "id": "moz",
+            "image_display_url": "",
+            "name": "moz",
+            "title": "Mozambique"
+          },
+          {
+            "description": "",
+            "display_name": "Myanmar",
+            "id": "mmr",
+            "image_display_url": "",
+            "name": "mmr",
+            "title": "Myanmar"
+          },
+          {
+            "description": "",
+            "display_name": "Namibia",
+            "id": "nam",
+            "image_display_url": "",
+            "name": "nam",
+            "title": "Namibia"
+          },
+          {
+            "description": "",
+            "display_name": "Nepal",
+            "id": "npl",
+            "image_display_url": "",
+            "name": "npl",
+            "title": "Nepal"
+          },
+          {
+            "description": "",
+            "display_name": "Nicaragua",
+            "id": "nic",
+            "image_display_url": "",
+            "name": "nic",
+            "title": "Nicaragua"
+          },
+          {
+            "description": "",
+            "display_name": "Niger",
+            "id": "ner",
+            "image_display_url": "",
+            "name": "ner",
+            "title": "Niger"
+          },
+          {
+            "description": "",
+            "display_name": "Nigeria",
+            "id": "nga",
+            "image_display_url": "",
+            "name": "nga",
+            "title": "Nigeria"
+          },
+          {
+            "description": "",
+            "display_name": "Pakistan",
+            "id": "pak",
+            "image_display_url": "",
+            "name": "pak",
+            "title": "Pakistan"
+          },
+          {
+            "description": "",
+            "display_name": "Panama",
+            "id": "pan",
+            "image_display_url": "",
+            "name": "pan",
+            "title": "Panama"
+          },
+          {
+            "description": "",
+            "display_name": "Peru",
+            "id": "per",
+            "image_display_url": "",
+            "name": "per",
+            "title": "Peru"
+          },
+          {
+            "description": "",
+            "display_name": "Philippines",
+            "id": "phl",
+            "image_display_url": "",
+            "name": "phl",
+            "title": "Philippines"
+          },
+          {
+            "description": "",
+            "display_name": "Rwanda",
+            "id": "rwa",
+            "image_display_url": "",
+            "name": "rwa",
+            "title": "Rwanda"
+          },
+          {
+            "description": "",
+            "display_name": "Senegal",
+            "id": "sen",
+            "image_display_url": "",
+            "name": "sen",
+            "title": "Senegal"
+          },
+          {
+            "description": "",
+            "display_name": "Sierra Leone",
+            "id": "sle",
+            "image_display_url": "",
+            "name": "sle",
+            "title": "Sierra Leone"
+          },
+          {
+            "description": "",
+            "display_name": "Somalia",
+            "id": "som",
+            "image_display_url": "",
+            "name": "som",
+            "title": "Somalia"
+          },
+          {
+            "description": "",
+            "display_name": "South Sudan",
+            "id": "ssd",
+            "image_display_url": "",
+            "name": "ssd",
+            "title": "South Sudan"
+          },
+          {
+            "description": "",
+            "display_name": "Sri Lanka",
+            "id": "lka",
+            "image_display_url": "",
+            "name": "lka",
+            "title": "Sri Lanka"
+          },
+          {
+            "description": "",
+            "display_name": "State of Palestine",
+            "id": "pse",
+            "image_display_url": "",
+            "name": "pse",
+            "title": "State of Palestine"
+          },
+          {
+            "description": "",
+            "display_name": "Sudan",
+            "id": "sdn",
+            "image_display_url": "",
+            "name": "sdn",
+            "title": "Sudan"
+          },
+          {
+            "description": "",
+            "display_name": "Syrian Arab Republic",
+            "id": "syr",
+            "image_display_url": "",
+            "name": "syr",
+            "title": "Syrian Arab Republic"
+          },
+          {
+            "description": "",
+            "display_name": "Tajikistan",
+            "id": "tjk",
+            "image_display_url": "",
+            "name": "tjk",
+            "title": "Tajikistan"
+          },
+          {
+            "description": "",
+            "display_name": "Timor-Leste",
+            "id": "86b999e4-6981-401e-b57d-e15ad5a9ec86",
+            "image_display_url": "",
+            "name": "tls",
+            "title": "Timor-Leste"
+          },
+          {
+            "description": "",
+            "display_name": "Togo",
+            "id": "tgo",
+            "image_display_url": "",
+            "name": "tgo",
+            "title": "Togo"
+          },
+          {
+            "description": "",
+            "display_name": "Türkiye",
+            "id": "tur",
+            "image_display_url": "",
+            "name": "tur",
+            "title": "Türkiye"
+          },
+          {
+            "description": "",
+            "display_name": "Uganda",
+            "id": "uga",
+            "image_display_url": "",
+            "name": "uga",
+            "title": "Uganda"
+          },
+          {
+            "description": "",
+            "display_name": "Ukraine",
+            "id": "ukr",
+            "image_display_url": "",
+            "name": "ukr",
+            "title": "Ukraine"
+          },
+          {
+            "description": "",
+            "display_name": "United Republic of Tanzania",
+            "id": "tza",
+            "image_display_url": "",
+            "name": "tza",
+            "title": "United Republic of Tanzania"
+          },
+          {
+            "description": "",
+            "display_name": "Venezuela (Bolivarian Republic of)",
+            "id": "ven",
+            "image_display_url": "",
+            "name": "ven",
+            "title": "Venezuela (Bolivarian Republic of)"
+          },
+          {
+            "description": "",
+            "display_name": "Viet Nam",
+            "id": "vnm",
+            "image_display_url": "",
+            "name": "vnm",
+            "title": "Viet Nam"
+          },
+          {
+            "description": "",
+            "display_name": "Yemen",
+            "id": "yem",
+            "image_display_url": "",
+            "name": "yem",
+            "title": "Yemen"
+          },
+          {
+            "description": "",
+            "display_name": "Zambia",
+            "id": "zmb",
+            "image_display_url": "",
+            "name": "zmb",
+            "title": "Zambia"
+          },
+          {
+            "description": "",
+            "display_name": "Zimbabwe",
+            "id": "zwe",
+            "image_display_url": "",
+            "name": "zwe",
+            "title": "Zimbabwe"
+          }
+        ],
+        "resources": [
+          {
+            "alt_url": "https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2024-06-05T14:42:12.703616",
+            "datastore_active": false,
+            "description": "Dataset of the change in food basket prices at the country level, updated every other week. Markets are monitored across a range of countries globally, and percent changes in the cost of food baskets between time periods with available data are classified as negative (<0%), normal (0-3%), moderate (3-10%), high (10-25%), and severe (>25%). ",
+            "download_url": "https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv",
+            "format": "CSV",
+            "fs_check_info": "[{\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-11-03T00:27:05.075593\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 11350, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-04T00:25:30.638923\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-11-04T00:25:34.794308\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 11356, \"new_display_value\": 11356, \"old_value\": 11350, \"old_display_value\": 11350}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 11356, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-05T00:26:14.659845\"}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-06T00:25:28.631358\"}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-06T22:29:04.732820\"}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-25T11:07:41.725319\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-11-25T11:07:45.209895\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 11508, \"new_display_value\": 11508, \"old_value\": 11356, \"old_display_value\": 11356}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 11508, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-12-23T11:08:01.520343\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-12-23T11:08:12.409383\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 11655, \"new_display_value\": 11655, \"old_value\": 11508, \"old_display_value\": 11508}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 11655, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2026-02-10T14:23:23.967478\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-02-10T14:23:28.095192\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 11804, \"new_display_value\": 11804, \"old_value\": 11655, \"old_display_value\": 11655}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 11804, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2026-02-18T13:10:06.899033\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-02-18T13:10:12.280757\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 11959, \"new_display_value\": 11959, \"old_value\": 11804, \"old_display_value\": 11804}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 11959, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2026-03-03T17:57:39.288121\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-03-03T17:57:44.554829\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"hxl_header_hash\", \"new_value\": null, \"new_display_value\": null, \"old_value\": \"243934a155a9aebfc1c9da7f848254c4\", \"old_display_value\": \"243934a155a9aebfc1c9da7f848254c4\"}, {\"field\": \"nrows\", \"new_value\": 11958, \"new_display_value\": 11958, \"old_value\": 11959, \"old_display_value\": 11959}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 11958, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": null, \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-04-21T11:30:32.482043\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 12275, \"new_display_value\": 12275, \"old_value\": 11958, \"old_display_value\": 11958}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 12275, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": null, \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-07-15T22:12:18.662352\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 12768, \"new_display_value\": 12768, \"old_value\": 12275, \"old_display_value\": 12275}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 12768, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": null, \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": null}]}}]",
+            "hash": "cc29bc688365a64ec8d0c72f7fdbbaa4",
+            "hdx_rel_url": "/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv",
+            "id": "651aec8f-5c7c-4539-a0c8-3235a8dfde76",
+            "last_modified": "2026-07-15T22:12:14.070667",
+            "metadata_modified": "2026-07-15T22:12:19.222373",
+            "microdata": false,
+            "mimetype": null,
+            "mimetype_inner": null,
+            "name": "global-market-monitor.csv",
+            "package_id": "67259d7e-1554-4ffd-be8d-97244577546a",
+            "position": 0,
+            "resource_type": "file.upload",
+            "size": 3170492,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/651aec8f-5c7c-4539-a0c8-3235a8dfde76/download/global-market-monitor.csv",
+            "url_type": "upload"
+          },
+          {
+            "alt_url": "https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2024-07-04T13:20:17.351600",
+            "datastore_active": false,
+            "description": "Subnational view of the global dataset of the change in food basket prices at the country level, updated every other week.",
+            "download_url": "https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv",
+            "format": "CSV",
+            "fs_check_info": "[{\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-11-03T00:27:06.562916\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 119863, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-04T00:25:30.638934\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-11-04T00:25:39.741872\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 119895, \"new_display_value\": 119895, \"old_value\": 119863, \"old_display_value\": 119863}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 119895, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-05T00:26:14.659858\"}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-06T00:25:28.631369\"}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-06T22:29:04.732834\"}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-11-25T11:07:41.725330\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-11-25T11:07:46.124468\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 121600, \"new_display_value\": 121600, \"old_value\": 119895, \"old_display_value\": 119895}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 121600, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-12-23T11:08:01.520366\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-12-23T11:08:13.632721\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 123261, \"new_display_value\": 123261, \"old_value\": 121600, \"old_display_value\": 121600}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 123261, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2026-02-10T14:23:23.967491\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-02-10T14:23:29.441903\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 124996, \"new_display_value\": 124996, \"old_value\": 123261, \"old_display_value\": 123261}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 124996, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2026-02-18T13:10:06.899046\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-02-18T13:10:13.437833\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 126759, \"new_display_value\": 126759, \"old_value\": 124996, \"old_display_value\": 124996}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 126759, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": \"243934a155a9aebfc1c9da7f848254c4\", \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": [\"#date\", \"#indicator+foodbasket+version\", \"#meta+frequency\", \"#country+code\", \"#country+name\", \"#adm1+name\", \"#meta+level\", \"#indicator+foodbasket+type\", \"#indicator+foodbasket+price+type\", \"#indicator+foodbasket+calories\", \"#indicator+foodbasket+quarterly+change+nsa+num\", \"#indicator+foodbasket+monthly+change+nsa+num\", \"#indicator+foodbasket+quarterly+change+sa+num\", \"#indicator+foodbasket+monthly+change+sa+num\", \"#indicator+foodbasket+quarterly+change+yoy+num\", \"#indicator+foodbasket+monthly+change+yoy+num\", \"#indicator+foodbasket+quarterly+trend\", \"#indicator+foodbasket+monthly+trend\", \"#indicator+foodbasket+quarterly+share+num\", \"#indicator+foodbasket+quarterly+change+num\", \"#indicator+foodbasket+quarterly+change+code\", \"#indicator+foodbasket+monthly+change+num\", \"#indicator+foodbasket+monthly+change+code\", \"#date+modified\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2026-03-03T17:57:39.288135\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-03-03T17:57:45.478586\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"hxl_header_hash\", \"new_value\": null, \"new_display_value\": null, \"old_value\": \"243934a155a9aebfc1c9da7f848254c4\", \"old_display_value\": \"243934a155a9aebfc1c9da7f848254c4\"}, {\"field\": \"nrows\", \"new_value\": 126758, \"new_display_value\": 126758, \"old_value\": 126759, \"old_display_value\": 126759}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 126758, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": null, \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-04-21T11:30:33.802070\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 130337, \"new_display_value\": 130337, \"old_value\": 126758, \"old_display_value\": 126758}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 130337, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": null, \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-07-15T22:12:19.848455\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 135750, \"new_display_value\": 135750, \"old_value\": 130337, \"old_display_value\": 130337}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 135750, \"ncols\": 24, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"03b345f7e8b6c2db9f0546f8eddc4fa2\", \"hxl_header_hash\": null, \"headers\": [\"Date\", \"MonthlyVersion\", \"FrequencyName\", \"CountryCode\", \"CountryName\", \"Admin1\", \"DataLevel\", \"MainStapleFood\", \"PriceType\", \"CaloricContribution\", \"QuarterlyChangeNSA\", \"MonthlyChangeNSA\", \"QuarterlyChangeSA\", \"MonthlyChangeSA\", \"YoYChangeQuarter\", \"YoYChangeMonth\", \"PriceTrendQuarter\", \"PriceTrendMonth\", \"QuarterlyCostShare\", \"TotImpactQuarterlyChange\", \"TotImpactQuarterlyCode\", \"TotImpactMonthlyChange\", \"TotImpactMonthlyCode\", \"LastModifyDate\"], \"hxl_headers\": null}]}}]",
+            "hash": "d891a0e5334357ee42a8e59266dfe0e1",
+            "hdx_rel_url": "/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv",
+            "id": "2caea41d-2079-44a5-a52b-8bb62a11010f",
+            "last_modified": "2026-07-15T22:12:14.071263",
+            "metadata_modified": "2026-07-15T22:12:20.450345",
+            "microdata": false,
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "global-market-monitor_subnational.csv",
+            "package_id": "67259d7e-1554-4ffd-be8d-97244577546a",
+            "position": 1,
+            "resource_type": "file.upload",
+            "size": 33409473,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/67259d7e-1554-4ffd-be8d-97244577546a/resource/2caea41d-2079-44a5-a52b-8bb62a11010f/download/global-market-monitor_subnational.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "crisis-greater-middle-east",
+            "id": "08d757f8-06a3-4556-9e9a-d4b6b8aedd49",
+            "name": "crisis-greater-middle-east",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "markets",
+            "id": "b62086cd-553f-4464-9cd3-9efb487203fe",
+            "name": "markets",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "archived": false,
+        "batch": "633ffe23-fddc-47b8-9b86-9d9c1c3bb6ce",
+        "caveats": "Although the frequency of updates is set to every month, updates may occur more or less frequently",
+        "creator_user_id": "154de241-38d6-47d3-a77f-0a9848a61df3",
+        "data_update_frequency": "30",
+        "dataset_date": "[2006-01-15T00:00:00 TO 2026-10-15T23:59:59]",
+        "dataset_preview": "resource_id",
+        "dataset_source": "Arid Lands Resource Management Project (ALRMP), Energy Regulatory Commision, Energy Regulatory Commission (ERC), Energy and Petroleum Regulatory Authority (EPRA), FPMA, Joint Market Monitoring Initiative (JMMI), Kenya National Bureau of Statistics (KNBS), MOA, Ministry of Agriculture, Ministry of Agriculture (MOA), National Drought Management Authority (NDMA), Regional Agricultural Trade Intelligence Network via FAO: GIEWS, State Department of Agriculture, WFP, World Food Programme (WFP) Monitoring",
+        "due_date": "2026-11-14T23:59:59",
+        "has_geodata": false,
+        "has_showcases": true,
+        "id": "e0d3fba6-f9a2-45d7-b949-140c455197ff",
+        "is_requestdata_type": false,
+        "isopen": false,
+        "last_modified": "2026-11-04T01:24:21.670860",
+        "license_id": "cc-by-igo",
+        "license_title": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)",
+        "license_url": "http://creativecommons.org/licenses/by/3.0/igo/legalcode",
+        "maintainer": "f1921552-8c3e-47e9-9804-579b14a83ee3",
+        "metadata_created": "2018-09-26T15:39:17.674909",
+        "metadata_modified": "2026-11-15T08:50:28.029125",
+        "methodology": "Registry",
+        "name": "wfp-food-prices-for-kenya",
+        "notes": "This dataset contains Food Prices data for Kenya, sourced from the World Food Programme Price Database. The World Food Programme Price Database covers foods such as maize, rice, beans, fish, and sugar for 98 countries and some 3000 markets. It is updated weekly but contains to a large extent monthly data. The data goes back as far as 1992 for a few countries, although many countries started reporting from 2003 or thereafter.",
+        "num_resources": 2,
+        "num_tags": 4,
+        "organization": {
+          "id": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
+          "name": "wfp",
+          "title": "WFP - World Food Programme",
+          "type": "organization",
+          "description": "The World Food Programme (WFP) is the leading humanitarian organization saving lives and changing lives, **delivering food assistance in emergencies** and **working with communities to improve nutrition and build resilience**.",
+          "image_url": "",
+          "created": "2014-10-24T15:55:52.696098",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
+        "package_creator": "orest-d",
+        "pageviews_last_14_days": 261,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Kenya\"]}",
+        "state": "active",
+        "subnational": "1",
+        "title": "Kenya - Food Prices",
+        "total_res_downloads": 12649,
+        "type": "dataset",
+        "updated_by_script": "HDX Scraper: WFP Food Prices (2026-11-15T08:50:27.943066)",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          }
+        ],
+        "resources": [
+          {
+            "alt_url": "https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2018-09-26T15:39:17.685997",
+            "dataset_preview_enabled": false,
+            "datastore_active": false,
+            "description": "Food prices data",
+            "download_url": "https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download/wfp_food_prices_ken.csv",
+            "format": "CSV",
+            "fs_check_info": "[{\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-05-03T11:35:49.211541\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 19006, \"new_display_value\": 19006, \"old_value\": 18606, \"old_display_value\": 18606}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 19006, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-05-10T12:21:15.432170\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 26649, \"new_display_value\": 26649, \"old_value\": 19006, \"old_display_value\": 19006}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 26649, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-05-17T12:54:08.005942\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 26234, \"new_display_value\": 26234, \"old_value\": 26649, \"old_display_value\": 26649}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 26234, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-05-24T13:19:40.220326\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 26746, \"new_display_value\": 26746, \"old_value\": 26234, \"old_display_value\": 26234}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 26746, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-07-12T14:34:40.203908\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27057, \"new_display_value\": 27057, \"old_value\": 26746, \"old_display_value\": 26746}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27057, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-07-19T15:36:05.845683\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27230, \"new_display_value\": 27230, \"old_value\": 27057, \"old_display_value\": 27057}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27230, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-07-26T15:15:07.609750\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27483, \"new_display_value\": 27483, \"old_value\": 27230, \"old_display_value\": 27230}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27483, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-08-03T00:27:50.111170\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27839, \"new_display_value\": 27839, \"old_value\": 27483, \"old_display_value\": 27483}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27839, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-08-09T13:34:33.163568\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27578, \"new_display_value\": 27578, \"old_value\": 27839, \"old_display_value\": 27839}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27578, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-08-16T14:50:39.465238\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27385, \"new_display_value\": 27385, \"old_value\": 27578, \"old_display_value\": 27578}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27385, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-08-23T14:37:52.653849\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 28063, \"new_display_value\": 28063, \"old_value\": 27385, \"old_display_value\": 27385}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 28063, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-08-30T15:19:01.759441\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27764, \"new_display_value\": 27764, \"old_value\": 28063, \"old_display_value\": 28063}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27764, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-09-06T15:23:58.427792\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27465, \"new_display_value\": 27465, \"old_value\": 27764, \"old_display_value\": 27764}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27465, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-09-13T14:34:28.536737\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27775, \"new_display_value\": 27775, \"old_value\": 27465, \"old_display_value\": 27465}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27775, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-09-20T15:16:55.031231\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27344, \"new_display_value\": 27344, \"old_value\": 27775, \"old_display_value\": 27775}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27344, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-09-27T13:08:37.875462\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 28337, \"new_display_value\": 28337, \"old_value\": 27344, \"old_display_value\": 27344}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 28337, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-10-04T15:17:33.926249\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27898, \"new_display_value\": 27898, \"old_value\": 28337, \"old_display_value\": 28337}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27898, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-10-11T15:03:01.382402\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 27542, \"new_display_value\": 27542, \"old_value\": 27898, \"old_display_value\": 27898}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 27542, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-10-18T18:16:41.377780\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 28464, \"new_display_value\": 28464, \"old_value\": 27542, \"old_display_value\": 27542}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 28464, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-11-04T01:24:26.290946\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 29299, \"new_display_value\": 29299, \"old_value\": 28464, \"old_display_value\": 28464}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 29299, \"ncols\": 16, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"1f8a56e0509e55658d8f621222b4473f\", \"hxl_header_hash\": null, \"headers\": [\"date\", \"admin1\", \"admin2\", \"market\", \"market_id\", \"latitude\", \"longitude\", \"category\", \"commodity\", \"commodity_id\", \"unit\", \"priceflag\", \"pricetype\", \"currency\", \"price\", \"usdprice\"], \"hxl_headers\": null}]}}]",
+            "hash": "6dda86354ca220f162a77274c3f59b20",
+            "hdx_rel_url": "/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download/wfp_food_prices_ken.csv",
+            "id": "517ee1bf-2437-4f8c-aa1b-cb9925b9d437",
+            "last_modified": "2026-11-04T01:24:21.670860",
+            "metadata_modified": "2026-11-04T01:24:26.834557",
+            "microdata": false,
+            "mimetype": "",
+            "mimetype_inner": null,
+            "name": "Kenya - Food Prices",
+            "p_coded": false,
+            "package_id": "e0d3fba6-f9a2-45d7-b949-140c455197ff",
+            "position": 0,
+            "resource_type": "file.upload",
+            "size": 3793902,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/517ee1bf-2437-4f8c-aa1b-cb9925b9d437/download/wfp_food_prices_ken.csv",
+            "url_type": "upload"
+          },
+          {
+            "alt_url": "https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2025-05-07T00:34:23.899805",
+            "dataset_preview_enabled": false,
+            "datastore_active": false,
+            "description": "Markets data",
+            "download_url": "https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv",
+            "format": "CSV",
+            "fs_check_info": "[{\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-08-10T10:43:46.445489\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-08-10T10:43:49.356658\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 282, \"ncols\": 7, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"fc4c73fb2708fe967d48aa740c188a98\", \"hxl_header_hash\": \"190949e5321669779ab54765aa9a893c\", \"headers\": [\"market_id\", \"market\", \"countryiso3\", \"admin1\", \"admin2\", \"latitude\", \"longitude\"], \"hxl_headers\": [\"#loc+market+code\", \"#loc+market+name\", \"#country+code\", \"#adm1+name\", \"#adm2+name\", \"#geo+lat\", \"#geo+lon\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-08-17T10:43:43.898463\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-08-17T10:43:47.371482\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 282, \"ncols\": 7, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"fc4c73fb2708fe967d48aa740c188a98\", \"hxl_header_hash\": \"190949e5321669779ab54765aa9a893c\", \"headers\": [\"market_id\", \"market\", \"countryiso3\", \"admin1\", \"admin2\", \"latitude\", \"longitude\"], \"hxl_headers\": [\"#loc+market+code\", \"#loc+market+name\", \"#country+code\", \"#adm1+name\", \"#adm2+name\", \"#geo+lat\", \"#geo+lon\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-08-24T12:11:36.234266\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-08-24T12:11:39.579333\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 282, \"ncols\": 7, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"fc4c73fb2708fe967d48aa740c188a98\", \"hxl_header_hash\": \"190949e5321669779ab54765aa9a893c\", \"headers\": [\"market_id\", \"market\", \"countryiso3\", \"admin1\", \"admin2\", \"latitude\", \"longitude\"], \"hxl_headers\": [\"#loc+market+code\", \"#loc+market+name\", \"#country+code\", \"#adm1+name\", \"#adm2+name\", \"#geo+lat\", \"#geo+lon\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-08-31T12:23:46.517778\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-08-31T12:23:49.371439\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 282, \"ncols\": 7, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"fc4c73fb2708fe967d48aa740c188a98\", \"hxl_header_hash\": \"190949e5321669779ab54765aa9a893c\", \"headers\": [\"market_id\", \"market\", \"countryiso3\", \"admin1\", \"admin2\", \"latitude\", \"longitude\"], \"hxl_headers\": [\"#loc+market+code\", \"#loc+market+name\", \"#country+code\", \"#adm1+name\", \"#adm2+name\", \"#geo+lat\", \"#geo+lon\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-09-22T06:15:54.058282\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-09-22T06:15:57.880495\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 282, \"ncols\": 7, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"fc4c73fb2708fe967d48aa740c188a98\", \"hxl_header_hash\": \"190949e5321669779ab54765aa9a893c\", \"headers\": [\"market_id\", \"market\", \"countryiso3\", \"admin1\", \"admin2\", \"latitude\", \"longitude\"], \"hxl_headers\": [\"#loc+market+code\", \"#loc+market+name\", \"#country+code\", \"#adm1+name\", \"#adm2+name\", \"#geo+lat\", \"#geo+lon\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2026-02-18T22:51:14.218763\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-02-18T22:51:16.883733\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"hxl_header_hash\", \"new_value\": null, \"new_display_value\": null, \"old_value\": \"190949e5321669779ab54765aa9a893c\", \"old_display_value\": \"190949e5321669779ab54765aa9a893c\"}, {\"field\": \"nrows\", \"new_value\": 281, \"new_display_value\": 281, \"old_value\": 282, \"old_display_value\": 282}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 281, \"ncols\": 7, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"fc4c73fb2708fe967d48aa740c188a98\", \"hxl_header_hash\": null, \"headers\": [\"market_id\", \"market\", \"countryiso3\", \"admin1\", \"admin2\", \"latitude\", \"longitude\"], \"hxl_headers\": null}]}}]",
+            "hash": "91fab679cc0d0d5edc1c3d64e0d5204a",
+            "hdx_rel_url": "/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv",
+            "id": "fde6f6c7-9776-4b52-a826-d77f9d3f6688",
+            "last_modified": "2026-02-18T22:51:14.226114",
+            "metadata_modified": "2026-02-18T22:51:17.008761",
+            "microdata": false,
+            "mimetype": "text/csv",
+            "mimetype_inner": null,
+            "name": "Kenya - Markets",
+            "package_id": "e0d3fba6-f9a2-45d7-b949-140c455197ff",
+            "position": 1,
+            "resource_type": "file.upload",
+            "size": 14282,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/e0d3fba6-f9a2-45d7-b949-140c455197ff/resource/fde6f6c7-9776-4b52-a826-d77f9d3f6688/download/wfp_markets_ken.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "economics",
+            "id": "f58b7aa5-284f-4e1c-ae35-3ded0f2a4555",
+            "name": "economics",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "food security",
+            "id": "b084d063-149c-4b7d-811b-18e320ca0b8c",
+            "name": "food security",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "indicators",
+            "id": "08dade96-0bf4-4248-9d9f-421f7b844e53",
+            "name": "indicators",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "markets",
+            "id": "b62086cd-553f-4464-9cd3-9efb487203fe",
+            "name": "markets",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "archived": true,
+        "batch": "d5d53789-1d54-4f63-8eb7-3e48d7ee2415",
+        "creator_user_id": "f47e8231-f145-4e71-9736-61d347cc8c46",
+        "data_update_frequency": "-1",
+        "dataset_date": "[2015-10-12T00:00:00 TO 2015-10-12T23:59:59]",
+        "dataset_preview": "first_resource",
+        "dataset_source": "African Development Bank Group",
+        "has_geodata": false,
+        "has_showcases": false,
+        "id": "4b7095b6-bbef-449e-9e88-807fca7380b8",
+        "is_requestdata_type": false,
+        "isopen": true,
+        "last_modified": "2016-11-24T11:10:18.534206",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution International (CC BY)",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "f47e8231-f145-4e71-9736-61d347cc8c46",
+        "metadata_created": "2016-11-08T18:09:35.068695",
+        "metadata_modified": "2023-03-02T22:00:26.033390",
+        "methodology": "Registry",
+        "name": "afdb-market-trends-2015",
+        "notes": "AFDB Market Trends, January 2011 - July 2015",
+        "num_resources": 1,
+        "num_tags": 4,
+        "organization": {
+          "id": "071e8db3-51fe-4da3-9723-ad6480f18d17",
+          "name": "afdb",
+          "title": "African Development Bank Group (inactive)",
+          "type": "organization",
+          "description": "The overarching objective of the African Development Bank (AfDB) Group is to spur sustainable economic development and social progress in its regional member countries (RMCs), thus contributing to poverty reduction. The Bank Group achieves this objective by: mobilizing and allocating resources for investment in RMCs; and providing policy advice and technical assistance to support development efforts.",
+          "image_url": "",
+          "created": "2016-05-10T12:32:37.857705",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "071e8db3-51fe-4da3-9723-ad6480f18d17",
+        "package_creator": "afdb",
+        "pageviews_last_14_days": 10,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Algeria\", \"Angola\", \"Benin\", \"Botswana\", \"Burkina Faso\", \"Burundi\", \"Cabo Verde\", \"Cameroon\", \"Central African Republic\", \"Chad\", \"Comoros\", \"Congo\", \"C\\u00f4te d'Ivoire\", \"Democratic Republic of the Congo\", \"Djibouti\", \"Egypt\", \"Equatorial Guinea\", \"Eritrea\", \"Eswatini\", \"Ethiopia\", \"Gabon\", \"Gambia\", \"Ghana\", \"Guinea\", \"Guinea-Bissau\", \"Kenya\", \"Lesotho\", \"Liberia\", \"Libya\", \"Madagascar\", \"Malawi\", \"Mali\", \"Mauritania\", \"Mauritius\", \"Mayotte\", \"Morocco\", \"Mozambique\", \"Namibia\", \"Niger\", \"Nigeria\", \"Rwanda\", \"R\\u00e9union\", \"Saint Helena\", \"Sao Tome and Principe\", \"Senegal\", \"Seychelles\", \"Sierra Leone\", \"Somalia\", \"South Africa\", \"South Sudan\", \"Sudan\", \"Togo\", \"Tunisia\", \"Uganda\", \"United Republic of Tanzania\", \"Western Sahara\", \"Zambia\", \"Zimbabwe\"]}",
+        "state": "active",
+        "subnational": "1",
+        "title": "AFDB Market Trends, 2015",
+        "total_res_downloads": 608,
+        "type": "dataset",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Algeria",
+            "id": "dza",
+            "image_display_url": "",
+            "name": "dza",
+            "title": "Algeria"
+          },
+          {
+            "description": "",
+            "display_name": "Angola",
+            "id": "ago",
+            "image_display_url": "",
+            "name": "ago",
+            "title": "Angola"
+          },
+          {
+            "description": "",
+            "display_name": "Benin",
+            "id": "ben",
+            "image_display_url": "",
+            "name": "ben",
+            "title": "Benin"
+          },
+          {
+            "description": "",
+            "display_name": "Botswana",
+            "id": "bwa",
+            "image_display_url": "",
+            "name": "bwa",
+            "title": "Botswana"
+          },
+          {
+            "description": "",
+            "display_name": "Burkina Faso",
+            "id": "bfa",
+            "image_display_url": "",
+            "name": "bfa",
+            "title": "Burkina Faso"
+          },
+          {
+            "description": "",
+            "display_name": "Burundi",
+            "id": "bdi",
+            "image_display_url": "",
+            "name": "bdi",
+            "title": "Burundi"
+          },
+          {
+            "description": "",
+            "display_name": "Cabo Verde",
+            "id": "cpv",
+            "image_display_url": "",
+            "name": "cpv",
+            "title": "Cabo Verde"
+          },
+          {
+            "description": "",
+            "display_name": "Cameroon",
+            "id": "cmr",
+            "image_display_url": "",
+            "name": "cmr",
+            "title": "Cameroon"
+          },
+          {
+            "description": "",
+            "display_name": "Central African Republic",
+            "id": "caf",
+            "image_display_url": "",
+            "name": "caf",
+            "title": "Central African Republic"
+          },
+          {
+            "description": "",
+            "display_name": "Chad",
+            "id": "tcd",
+            "image_display_url": "",
+            "name": "tcd",
+            "title": "Chad"
+          },
+          {
+            "description": "",
+            "display_name": "Comoros",
+            "id": "com",
+            "image_display_url": "",
+            "name": "com",
+            "title": "Comoros"
+          },
+          {
+            "description": "",
+            "display_name": "Congo",
+            "id": "cog",
+            "image_display_url": "",
+            "name": "cog",
+            "title": "Congo"
+          },
+          {
+            "description": "",
+            "display_name": "Côte d'Ivoire",
+            "id": "civ",
+            "image_display_url": "",
+            "name": "civ",
+            "title": "Côte d'Ivoire"
+          },
+          {
+            "description": "",
+            "display_name": "Democratic Republic of the Congo",
+            "id": "cod",
+            "image_display_url": "",
+            "name": "cod",
+            "title": "Democratic Republic of the Congo"
+          },
+          {
+            "description": "",
+            "display_name": "Djibouti",
+            "id": "dji",
+            "image_display_url": "",
+            "name": "dji",
+            "title": "Djibouti"
+          },
+          {
+            "description": "",
+            "display_name": "Egypt",
+            "id": "egy",
+            "image_display_url": "",
+            "name": "egy",
+            "title": "Egypt"
+          },
+          {
+            "description": "",
+            "display_name": "Equatorial Guinea",
+            "id": "gnq",
+            "image_display_url": "",
+            "name": "gnq",
+            "title": "Equatorial Guinea"
+          },
+          {
+            "description": "",
+            "display_name": "Eritrea",
+            "id": "eri",
+            "image_display_url": "",
+            "name": "eri",
+            "title": "Eritrea"
+          },
+          {
+            "description": "",
+            "display_name": "Eswatini",
+            "id": "swz",
+            "image_display_url": "",
+            "name": "swz",
+            "title": "Eswatini"
+          },
+          {
+            "description": "",
+            "display_name": "Ethiopia",
+            "id": "eth",
+            "image_display_url": "",
+            "name": "eth",
+            "title": "Ethiopia"
+          },
+          {
+            "description": "",
+            "display_name": "Gabon",
+            "id": "gab",
+            "image_display_url": "",
+            "name": "gab",
+            "title": "Gabon"
+          },
+          {
+            "description": "",
+            "display_name": "Gambia",
+            "id": "gmb",
+            "image_display_url": "",
+            "name": "gmb",
+            "title": "Gambia"
+          },
+          {
+            "description": "",
+            "display_name": "Ghana",
+            "id": "gha",
+            "image_display_url": "",
+            "name": "gha",
+            "title": "Ghana"
+          },
+          {
+            "description": "",
+            "display_name": "Guinea",
+            "id": "gin",
+            "image_display_url": "",
+            "name": "gin",
+            "title": "Guinea"
+          },
+          {
+            "description": "",
+            "display_name": "Guinea-Bissau",
+            "id": "gnb",
+            "image_display_url": "",
+            "name": "gnb",
+            "title": "Guinea-Bissau"
+          },
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          },
+          {
+            "description": "",
+            "display_name": "Lesotho",
+            "id": "lso",
+            "image_display_url": "",
+            "name": "lso",
+            "title": "Lesotho"
+          },
+          {
+            "description": "",
+            "display_name": "Liberia",
+            "id": "lbr",
+            "image_display_url": "",
+            "name": "lbr",
+            "title": "Liberia"
+          },
+          {
+            "description": "",
+            "display_name": "Libya",
+            "id": "lby",
+            "image_display_url": "",
+            "name": "lby",
+            "title": "Libya"
+          },
+          {
+            "description": "",
+            "display_name": "Madagascar",
+            "id": "mdg",
+            "image_display_url": "",
+            "name": "mdg",
+            "title": "Madagascar"
+          },
+          {
+            "description": "",
+            "display_name": "Malawi",
+            "id": "mwi",
+            "image_display_url": "",
+            "name": "mwi",
+            "title": "Malawi"
+          },
+          {
+            "description": "",
+            "display_name": "Mali",
+            "id": "mli",
+            "image_display_url": "",
+            "name": "mli",
+            "title": "Mali"
+          },
+          {
+            "description": "",
+            "display_name": "Mauritania",
+            "id": "mrt",
+            "image_display_url": "",
+            "name": "mrt",
+            "title": "Mauritania"
+          },
+          {
+            "description": "",
+            "display_name": "Mauritius",
+            "id": "mus",
+            "image_display_url": "",
+            "name": "mus",
+            "title": "Mauritius"
+          },
+          {
+            "description": "",
+            "display_name": "Mayotte",
+            "id": "myt",
+            "image_display_url": "",
+            "name": "myt",
+            "title": "Mayotte"
+          },
+          {
+            "description": "",
+            "display_name": "Morocco",
+            "id": "mar",
+            "image_display_url": "",
+            "name": "mar",
+            "title": "Morocco"
+          },
+          {
+            "description": "",
+            "display_name": "Mozambique",
+            "id": "moz",
+            "image_display_url": "",
+            "name": "moz",
+            "title": "Mozambique"
+          },
+          {
+            "description": "",
+            "display_name": "Namibia",
+            "id": "nam",
+            "image_display_url": "",
+            "name": "nam",
+            "title": "Namibia"
+          },
+          {
+            "description": "",
+            "display_name": "Niger",
+            "id": "ner",
+            "image_display_url": "",
+            "name": "ner",
+            "title": "Niger"
+          },
+          {
+            "description": "",
+            "display_name": "Nigeria",
+            "id": "nga",
+            "image_display_url": "",
+            "name": "nga",
+            "title": "Nigeria"
+          },
+          {
+            "description": "",
+            "display_name": "Réunion",
+            "id": "reu",
+            "image_display_url": "",
+            "name": "reu",
+            "title": "Réunion"
+          },
+          {
+            "description": "",
+            "display_name": "Rwanda",
+            "id": "rwa",
+            "image_display_url": "",
+            "name": "rwa",
+            "title": "Rwanda"
+          },
+          {
+            "description": "",
+            "display_name": "Saint Helena",
+            "id": "shn",
+            "image_display_url": "",
+            "name": "shn",
+            "title": "Saint Helena"
+          },
+          {
+            "description": "",
+            "display_name": "Sao Tome and Principe",
+            "id": "stp",
+            "image_display_url": "",
+            "name": "stp",
+            "title": "Sao Tome and Principe"
+          },
+          {
+            "description": "",
+            "display_name": "Senegal",
+            "id": "sen",
+            "image_display_url": "",
+            "name": "sen",
+            "title": "Senegal"
+          },
+          {
+            "description": "",
+            "display_name": "Seychelles",
+            "id": "syc",
+            "image_display_url": "",
+            "name": "syc",
+            "title": "Seychelles"
+          },
+          {
+            "description": "",
+            "display_name": "Sierra Leone",
+            "id": "sle",
+            "image_display_url": "",
+            "name": "sle",
+            "title": "Sierra Leone"
+          },
+          {
+            "description": "",
+            "display_name": "Somalia",
+            "id": "som",
+            "image_display_url": "",
+            "name": "som",
+            "title": "Somalia"
+          },
+          {
+            "description": "",
+            "display_name": "South Africa",
+            "id": "zaf",
+            "image_display_url": "",
+            "name": "zaf",
+            "title": "South Africa"
+          },
+          {
+            "description": "",
+            "display_name": "South Sudan",
+            "id": "ssd",
+            "image_display_url": "",
+            "name": "ssd",
+            "title": "South Sudan"
+          },
+          {
+            "description": "",
+            "display_name": "Sudan",
+            "id": "sdn",
+            "image_display_url": "",
+            "name": "sdn",
+            "title": "Sudan"
+          },
+          {
+            "description": "",
+            "display_name": "Togo",
+            "id": "tgo",
+            "image_display_url": "",
+            "name": "tgo",
+            "title": "Togo"
+          },
+          {
+            "description": "",
+            "display_name": "Tunisia",
+            "id": "tun",
+            "image_display_url": "",
+            "name": "tun",
+            "title": "Tunisia"
+          },
+          {
+            "description": "",
+            "display_name": "Uganda",
+            "id": "uga",
+            "image_display_url": "",
+            "name": "uga",
+            "title": "Uganda"
+          },
+          {
+            "description": "",
+            "display_name": "United Republic of Tanzania",
+            "id": "tza",
+            "image_display_url": "",
+            "name": "tza",
+            "title": "United Republic of Tanzania"
+          },
+          {
+            "description": "",
+            "display_name": "Western Sahara",
+            "id": "esh",
+            "image_display_url": "",
+            "name": "esh",
+            "title": "Western Sahara"
+          },
+          {
+            "description": "",
+            "display_name": "Zambia",
+            "id": "zmb",
+            "image_display_url": "",
+            "name": "zmb",
+            "title": "Zambia"
+          },
+          {
+            "description": "",
+            "display_name": "Zimbabwe",
+            "id": "zwe",
+            "image_display_url": "",
+            "name": "zwe",
+            "title": "Zimbabwe"
+          }
+        ],
+        "resources": [
+          {
+            "alt_url": "https://data.humdata.org/dataset/4b7095b6-bbef-449e-9e88-807fca7380b8/resource/286cf6f6-8896-484e-bb03-c6fcb6620158/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2016-11-08T18:09:43.912028",
+            "datastore_active": false,
+            "description": "http://opendataforafrica.org/hpiapmd/afdb-market-trends-2015\r\n",
+            "download_url": "https://data.humdata.org/dataset/4b7095b6-bbef-449e-9e88-807fca7380b8/resource/286cf6f6-8896-484e-bb03-c6fcb6620158/download/afdb-market-trends-2015.xlsx",
+            "format": "XLSX",
+            "hash": "",
+            "hdx_rel_url": "/dataset/4b7095b6-bbef-449e-9e88-807fca7380b8/resource/286cf6f6-8896-484e-bb03-c6fcb6620158/download/afdb-market-trends-2015.xlsx",
+            "id": "286cf6f6-8896-484e-bb03-c6fcb6620158",
+            "last_modified": "2016-11-24T11:10:18.534206",
+            "metadata_modified": "2023-03-02T22:00:26.052901",
+            "microdata": false,
+            "mimetype": null,
+            "mimetype_inner": null,
+            "name": "AFDB Market Trends, 2015.xlsx",
+            "originalHash": "97196323",
+            "package_id": "4b7095b6-bbef-449e-9e88-807fca7380b8",
+            "position": 0,
+            "resource_type": "file.upload",
+            "size": 1439430,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/4b7095b6-bbef-449e-9e88-807fca7380b8/resource/286cf6f6-8896-484e-bb03-c6fcb6620158/download/afdb-market-trends-2015.xlsx",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "africa",
+            "id": "9b05220b-0f1e-46ba-912a-36a895c04695",
+            "name": "africa",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "economics",
+            "id": "f58b7aa5-284f-4e1c-ae35-3ded0f2a4555",
+            "name": "economics",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "markets",
+            "id": "b62086cd-553f-4464-9cd3-9efb487203fe",
+            "name": "markets",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "services",
+            "id": "9f54b0e4-78df-4939-a2a1-892aaf4396ce",
+            "name": "services",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "archived": true,
+        "batch": "41424c24-cc6f-4d69-8b7f-d3e044412c32",
+        "creator_user_id": "e780fabb-29f0-4c65-92a9-ed8896f7faf6",
+        "data_update_frequency": "-1",
+        "dataset_date": "[2019-04-25T00:00:00 TO 2019-04-25T23:59:59]",
+        "dataset_preview": "first_resource",
+        "dataset_source": "Kenya Ministry of Agriculture and Irrigation",
+        "has_geodata": false,
+        "has_showcases": false,
+        "id": "107708b3-6524-4544-820d-91e7a74836ef",
+        "is_requestdata_type": false,
+        "isopen": true,
+        "last_modified": "2019-05-09T08:48:04.981161",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution International (CC BY)",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "e32d5afb-cc7e-4715-85b7-5a3b849443f5",
+        "metadata_created": "2019-05-09T08:48:03.648902",
+        "metadata_modified": "2025-02-06T15:16:34.721539",
+        "methodology": "Sample Survey",
+        "name": "kenya-value-of-recorded-marketed-agricultural-production-at-current-prices",
+        "notes": "Dataset shows the  Value of Recorded Marketed Agricultural Production at Current Prices in kenya for the period of 2014  - 2018",
+        "num_resources": 1,
+        "num_tags": 2,
+        "organization": {
+          "id": "2bdc7824-17aa-47fa-a732-02638525ca3d",
+          "name": "kenya-national-bureau-of-statistics",
+          "title": "Kenya National Bureau of Statistics (inactive)",
+          "type": "organization",
+          "description": "The Kenya National Bureau of Statistics (KNBS) is the official statistical Agency for the Government of Kenya.",
+          "image_url": "",
+          "created": "2015-03-24T14:04:08.460622",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "2bdc7824-17aa-47fa-a732-02638525ca3d",
+        "package_creator": "marindi",
+        "pageviews_last_14_days": 5,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Kenya\"]}",
+        "state": "active",
+        "subnational": "1",
+        "title": "Kenya - Value of Recorded Marketed Agricultural Production at Current Prices",
+        "total_res_downloads": 275,
+        "type": "dataset",
+        "updated_by_script": "hdx:HDXPythonLibrary/6.3.1-hdx_cli_toolkit_cjh (2025-02-06T15:16:34.667790)",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          }
+        ],
+        "resources": [
+          {
+            "alt_url": "https://data.humdata.org/dataset/107708b3-6524-4544-820d-91e7a74836ef/resource/ac5adc00-6c4e-4564-92de-90c56f23d9ae/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2019-05-09T08:48:05.328305",
+            "datastore_active": false,
+            "description": "The value of marketed agricultural production has been increasing over the last four years and increased further by 11.4 per cent to KSh 497.9 billion in 2018. The value of horticulture exports increased from by 33.3 per cent to KSh 153.7 billion in 2018 on account of higher production and improved international prices. The value of marketed livestock and livestock products increased by 8.3 per cent to KSh 146.8 billion in 2018. However, earnings from tea and coffee decreased by 5.3 per cent and 7.5 per cent to KSh 127.7",
+            "download_url": "https://data.humdata.org/dataset/107708b3-6524-4544-820d-91e7a74836ef/resource/ac5adc00-6c4e-4564-92de-90c56f23d9ae/download/value-of-recorded-marketed-agricultural-production-at-current-prices-2014-2018.xlsx",
+            "format": "XLSX",
+            "hash": "",
+            "hdx_rel_url": "/dataset/107708b3-6524-4544-820d-91e7a74836ef/resource/ac5adc00-6c4e-4564-92de-90c56f23d9ae/download/value-of-recorded-marketed-agricultural-production-at-current-prices-2014-2018.xlsx",
+            "id": "ac5adc00-6c4e-4564-92de-90c56f23d9ae",
+            "last_modified": "2019-05-09T08:48:04.981161",
+            "metadata_modified": "2023-03-03T01:02:11.776129",
+            "microdata": false,
+            "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "mimetype_inner": null,
+            "name": "Value of Recorded Marketed Agricultural Production at Current Prices, 2014-2018.xlsx",
+            "originalHash": "1116936704",
+            "package_id": "107708b3-6524-4544-820d-91e7a74836ef",
+            "position": 0,
+            "resource_type": "file.upload",
+            "size": 11361,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/107708b3-6524-4544-820d-91e7a74836ef/resource/ac5adc00-6c4e-4564-92de-90c56f23d9ae/download/value-of-recorded-marketed-agricultural-production-at-current-prices-2014-2018.xlsx",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "food security",
+            "id": "b084d063-149c-4b7d-811b-18e320ca0b8c",
+            "name": "food security",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "livelihoods",
+            "id": "a396d995-bebc-4f57-b0c1-c58317e8f7cf",
+            "name": "livelihoods",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "archived": true,
+        "batch": "bcd47310-20f5-4e03-9a45-d06b1129a575",
+        "creator_user_id": "e780fabb-29f0-4c65-92a9-ed8896f7faf6",
+        "data_update_frequency": "-1",
+        "dataset_date": "[2014-03-31T00:00:00 TO 2018-09-30T23:59:59]",
+        "dataset_preview": "first_resource",
+        "dataset_source": "Kenya National Bureau of statistics",
+        "has_geodata": false,
+        "has_showcases": false,
+        "id": "5b3d9b69-5131-43cf-95ea-00766b454ecc",
+        "is_requestdata_type": false,
+        "isopen": true,
+        "last_modified": "2019-05-02T08:40:51.669023",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution International (CC BY)",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "e32d5afb-cc7e-4715-85b7-5a3b849443f5",
+        "metadata_created": "2019-05-02T08:40:50.089790",
+        "metadata_modified": "2025-02-06T15:16:28.534380",
+        "methodology": "Sample Survey",
+        "name": "kenya-average-retail-market-prices-of-selected-food-crops",
+        "notes": "The dataset shows the average retail market prices of selected food crops from 2014 to 2018. Overall, the retail prices of finger millet, maize, beans, cabbages and tomatoes decreased in March and September 2018 compared to corresponding periods in 2017.",
+        "num_resources": 1,
+        "num_tags": 2,
+        "organization": {
+          "id": "2bdc7824-17aa-47fa-a732-02638525ca3d",
+          "name": "kenya-national-bureau-of-statistics",
+          "title": "Kenya National Bureau of Statistics (inactive)",
+          "type": "organization",
+          "description": "The Kenya National Bureau of Statistics (KNBS) is the official statistical Agency for the Government of Kenya.",
+          "image_url": "",
+          "created": "2015-03-24T14:04:08.460622",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "2bdc7824-17aa-47fa-a732-02638525ca3d",
+        "package_creator": "marindi",
+        "pageviews_last_14_days": 4,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Kenya\"]}",
+        "state": "active",
+        "subnational": "1",
+        "title": "Kenya: Average Retail Market Prices of Selected Food Crops",
+        "total_res_downloads": 298,
+        "type": "dataset",
+        "updated_by_script": "hdx:HDXPythonLibrary/6.3.1-hdx_cli_toolkit_cjh (2025-02-06T15:16:28.471263)",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          }
+        ],
+        "resources": [
+          {
+            "alt_url": "https://data.humdata.org/dataset/5b3d9b69-5131-43cf-95ea-00766b454ecc/resource/b4df2774-e31f-4001-9ddb-0cb8c6d72ca7/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2019-05-02T08:40:51.931030",
+            "datastore_active": false,
+            "description": "shows the average retail market prices of selected food crops from 2014 to\n2018. Overall, the retail prices of finger millet, maize, beans, cabbages and tomatoes decreased\nin March and September 2018 compared to corresponding periods in 2017. However, the\nprice of potatoes rose sharply in September 2018, compared to the price in September 2017.",
+            "download_url": "https://data.humdata.org/dataset/5b3d9b69-5131-43cf-95ea-00766b454ecc/resource/b4df2774-e31f-4001-9ddb-0cb8c6d72ca7/download/average-retail-market-prices-of-selected-food-crops-2014-2018.xlsx",
+            "format": "XLSX",
+            "hash": "",
+            "hdx_rel_url": "/dataset/5b3d9b69-5131-43cf-95ea-00766b454ecc/resource/b4df2774-e31f-4001-9ddb-0cb8c6d72ca7/download/average-retail-market-prices-of-selected-food-crops-2014-2018.xlsx",
+            "id": "b4df2774-e31f-4001-9ddb-0cb8c6d72ca7",
+            "last_modified": "2019-05-02T08:40:51.669023",
+            "metadata_modified": "2023-03-03T03:17:20.811377",
+            "microdata": false,
+            "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "mimetype_inner": null,
+            "name": "Average Retail Market Prices of Selected Food Crops, 2014- 2018.xlsx",
+            "originalHash": "1116936704",
+            "package_id": "5b3d9b69-5131-43cf-95ea-00766b454ecc",
+            "position": 0,
+            "resource_type": "file.upload",
+            "size": 10133,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/5b3d9b69-5131-43cf-95ea-00766b454ecc/resource/b4df2774-e31f-4001-9ddb-0cb8c6d72ca7/download/average-retail-market-prices-of-selected-food-crops-2014-2018.xlsx",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "food security",
+            "id": "b084d063-149c-4b7d-811b-18e320ca0b8c",
+            "name": "food security",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "indicators",
+            "id": "08dade96-0bf4-4248-9d9f-421f7b844e53",
+            "name": "indicators",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "archived": true,
+        "batch": "502ba4a1-89af-4216-beef-7f7ce84ca5a3",
+        "creator_user_id": "e780fabb-29f0-4c65-92a9-ed8896f7faf6",
+        "data_update_frequency": "-1",
+        "dataset_date": "[2013-01-02T00:00:00 TO 2017-12-31T23:59:59]",
+        "dataset_preview": "first_resource",
+        "dataset_source": "Kenya Ministry of Agriculture and Irrigation",
+        "has_geodata": false,
+        "has_showcases": false,
+        "id": "a13589a2-a49e-4c8c-a3e9-c6e30dad6950",
+        "is_requestdata_type": false,
+        "isopen": true,
+        "last_modified": "2018-12-10T10:29:10.438681",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution International (CC BY)",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "e32d5afb-cc7e-4715-85b7-5a3b849443f5",
+        "metadata_created": "2018-12-10T10:29:09.191720",
+        "metadata_modified": "2025-02-06T15:15:32.638396",
+        "methodology": "Registry",
+        "name": "kenya-recorded-marketed-agricultural-production-at-current-prices-2013-2017",
+        "notes": "Recorded Marketed Agricultural Production at Current Prices, 2013-2017",
+        "num_resources": 1,
+        "num_tags": 4,
+        "organization": {
+          "id": "2bdc7824-17aa-47fa-a732-02638525ca3d",
+          "name": "kenya-national-bureau-of-statistics",
+          "title": "Kenya National Bureau of Statistics (inactive)",
+          "type": "organization",
+          "description": "The Kenya National Bureau of Statistics (KNBS) is the official statistical Agency for the Government of Kenya.",
+          "image_url": "",
+          "created": "2015-03-24T14:04:08.460622",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "2bdc7824-17aa-47fa-a732-02638525ca3d",
+        "package_creator": "marindi",
+        "pageviews_last_14_days": 1,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Kenya\"]}",
+        "state": "active",
+        "subnational": "1",
+        "title": "Kenya - Recorded Marketed Agricultural Production at Current Prices, 2013-2017",
+        "total_res_downloads": 224,
+        "type": "dataset",
+        "updated_by_script": "hdx:HDXPythonLibrary/6.3.1-hdx_cli_toolkit_cjh (2025-02-06T15:15:32.606073)",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          }
+        ],
+        "resources": [
+          {
+            "alt_url": "https://data.humdata.org/dataset/a13589a2-a49e-4c8c-a3e9-c6e30dad6950/resource/435cf393-6c11-439c-87ad-fe58682942b9/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2018-12-10T10:29:10.809327",
+            "datastore_active": false,
+            "description": "",
+            "download_url": "https://data.humdata.org/dataset/a13589a2-a49e-4c8c-a3e9-c6e30dad6950/resource/435cf393-6c11-439c-87ad-fe58682942b9/download/recorded-marketed-agricultural-production-at-current-prices-2013-2017.xlsx",
+            "format": "XLSX",
+            "hash": "",
+            "hdx_rel_url": "/dataset/a13589a2-a49e-4c8c-a3e9-c6e30dad6950/resource/435cf393-6c11-439c-87ad-fe58682942b9/download/recorded-marketed-agricultural-production-at-current-prices-2013-2017.xlsx",
+            "id": "435cf393-6c11-439c-87ad-fe58682942b9",
+            "last_modified": "2018-12-10T10:29:10.438681",
+            "metadata_modified": "2023-03-02T20:53:04.191565",
+            "microdata": false,
+            "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "mimetype_inner": null,
+            "name": "Recorded Marketed Agricultural Production at Current Prices, 2013-2017.xlsx",
+            "originalHash": "1116936704",
+            "package_id": "a13589a2-a49e-4c8c-a3e9-c6e30dad6950",
+            "position": 0,
+            "resource_type": "file.upload",
+            "size": 13394,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/a13589a2-a49e-4c8c-a3e9-c6e30dad6950/resource/435cf393-6c11-439c-87ad-fe58682942b9/download/recorded-marketed-agricultural-production-at-current-prices-2013-2017.xlsx",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "agriculture-livestock",
+            "id": "e6b84407-4b14-4b0a-95c5-314da049f64c",
+            "name": "agriculture-livestock",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "food security",
+            "id": "b084d063-149c-4b7d-811b-18e320ca0b8c",
+            "name": "food security",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "indicators",
+            "id": "08dade96-0bf4-4248-9d9f-421f7b844e53",
+            "name": "indicators",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "livelihoods",
+            "id": "a396d995-bebc-4f57-b0c1-c58317e8f7cf",
+            "name": "livelihoods",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "archived": false,
+        "batch": "6cbb2bd6-ebfc-4031-ba6f-3e5e93a94a3d",
+        "caveats": "",
+        "creator_user_id": "1a008a13-52b1-4326-a9ea-aa541372577c",
+        "data_update_frequency": "365",
+        "dataset_date": "[1960-01-01T00:00:00 TO 2025-12-31T23:59:59]",
+        "dataset_preview": "resource_id",
+        "dataset_source": "World Bank",
+        "due_date": "2026-12-31T23:59:59",
+        "has_geodata": false,
+        "has_showcases": true,
+        "id": "efb67764-30cc-484c-a0b9-ca754c47ced8",
+        "is_requestdata_type": false,
+        "isopen": true,
+        "last_modified": "2026-10-27T18:52:16.029786",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution International (CC BY)",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "085d3bd8-9035-4b0e-9d2d-80e849dd7b07",
+        "metadata_created": "2019-11-19T18:03:23.433281",
+        "metadata_modified": "2026-10-27T18:52:18.026598",
+        "methodology": "Registry",
+        "name": "world-bank-financial-sector-indicators-for-kenya",
+        "notes": "Contains data from the World Bank's [data portal](http://data.worldbank.org/). There is also a [consolidated country dataset](https://data.humdata.org/dataset/world-bank-combined-indicators-for-kenya) on HDX.\n\nAn economy's financial markets are critical to its overall development. Banking systems and stock markets enhance growth, the main factor in poverty reduction. Strong financial systems provide reliable and accessible information that lowers transaction costs, which in turn bolsters resource allocation and economic growth. Indicators here include the size and liquidity of stock markets; the accessibility, stability, and efficiency of financial systems; and international migration and workers\\ remittances, which affect growth and social welfare in both sending and receiving countries.",
+        "num_resources": 1,
+        "num_tags": 2,
+        "organization": {
+          "id": "905a9a49-5325-4a31-a9d7-147a60a8387c",
+          "name": "world-bank-group",
+          "title": "World Bank Group",
+          "type": "organization",
+          "description": "The World Bank Group is a unique global partnership comprised of five institutions working for sustainable solutions that reduce poverty and build shared prosperity in developing countries. The World Bank’s Development Data Group has a mission to provide high-quality national and international statistics to clients within and outside the Bank and to improve the capacity of member countries to produce and use statistical information. Terms of use for World Bank datasets are available on the [open data website](https://data.worldbank.org/summary-terms-of-use).",
+          "image_url": "",
+          "created": "2020-04-09T10:26:50.916534",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "905a9a49-5325-4a31-a9d7-147a60a8387c",
+        "package_creator": "mcarans",
+        "pageviews_last_14_days": 9,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Kenya\"]}",
+        "state": "active",
+        "subnational": "0",
+        "title": "Kenya - Financial Sector",
+        "total_res_downloads": 561,
+        "type": "dataset",
+        "updated_by_script": "HDX Scraper: World Bank (2026-10-27T18:52:15.963522)",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          }
+        ],
+        "resources": [
+          {
+            "alt_url": "https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/",
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2019-11-19T18:03:23.462901",
+            "dataset_preview_enabled": false,
+            "datastore_active": false,
+            "description": "csv containing Financial Sector indicators\n\nIndicators: 5-bank asset concentration, ATMs per 100, Account at a formal financial institution, Account ownership at a financial institution or with a mobile-money-service provider, Account used for business purposes, Account used to receive government payments, Account used to receive remittances, Account used to receive wages, Automated teller machines, Average transaction cost of sending remittances from a specific country, Average transaction cost of sending remittances to a specific country, Bank Z-score, Bank branches per 100, Bank capital to assets ratio, Bank capital to total assets, Bank concentration, Bank cost to income ratio, Bank credit to bank deposits, Bank deposits to GDP, Bank lending-deposit spread, Bank liquid reserves to bank assets ratio, Bank net interest margin, Bank non-performing loans to gross loans, Bank noninterest income to total income, Bank nonperforming loans to total gross loans, Bank overhead costs to total assets, Bank regulatory capital to risk-weighted assets, Bank return on assets, Bank return on equity, Banking crisis dummy, Borrowers from commercial banks, Broad money, Broad money growth, Broad money to total reserves ratio, Central bank assets to GDP, Checks used to make payments, Claims on central government, Claims on governments, Claims on governments and other public entities, Claims on other sectors of the domestic economy, Claims on private sector, Commercial bank branches, Consolidated foreign claims of BIS reporting banks to GDP, Consumer price index, Credit card, Credit to government and state-owned enterprises to GDP, DEC alternative conversion factor, Debit card, Deposit interest rate, Deposit money bank assets to deposit money bank assets and central bank assets, Deposit money banks'' assets to GDP, Depositing/withdrawing at least once in a typical month, Domestic credit provided by financial sector, Domestic credit to private sector, Domestic credit to private sector by banks, Electronic payments used to make payments, External loans and deposits of reporting banks vis-à-vis all sectors, External loans and deposits of reporting banks vis-à-vis the banking sector, External loans and deposits of reporting banks vis-à-vis the nonbanking sectors, Financial system deposits to GDP, Firms identifying access to finance as a major constraint, Firms not needing a loan, Firms using banks to finance investments, Firms using banks to finance working capital, Firms whose recent loan application was rejected, Firms with a bank loan or line of credit, Firms with a checking or savings account, Foreign bank assets among total bank assets, Foreign banks among total banks, Foreign direct investment, GDP deflator, Global leasing volume to GDP, Gross portfolio debt liabilities to GDP, Gross portfolio equity assets to GDP, Gross portfolio equity liabilities to GDP, Inflation, Insurance company assets to GDP, Interest rate spread, International debt issues to GDP, International migrant stock, Investments financed by banks, Lending interest rate, Life insurance premium volume to GDP, Liquid assets to deposits and short term funding, Liquid liabilities in millions USD, Liquid liabilities to GDP, Listed domestic companies, Loan from a financial institution in the past year, Loan from a private lender in the past year, Loan from an employer in the past year, Loan from family or friends in the past year, Loan in the past year, Loan through store credit in the past year, Loans from nonresident banks, Loans requiring collateral, Market capitalization of listed domestic companies, Mobile phone used to pay bills, Mobile phone used to send money, Monetary Sector credit to private sector, Net domestic credit, Net foreign assets, Net migration, Non-life insurance premium volume to GDP, Number of listed companies per 1, Official exchange rate, Outstanding international private debt securities to GDP, Outstanding international public debt securities to GDP, Pension fund assets to GDP, Personal remittances, Personal transfers, Portfolio equity, Portfolio investment, Private credit by deposit money banks and other financial institutions to GDP, Private credit by deposit money banks to GDP, Provisions to nonperforming loans, Real interest rate, Remittance inflows to GDP, Risk premium on lending, S&P Global Equity Indices, Saved any money in the past year, Saved at a financial institution in the past year, Saved using a savings club in the past year, Small firms with a bank loan or line of credit, Stock market capitalization to GDP, Stock market return, Stock market total value traded to GDP, Stock market turnover ratio, Stock price volatility, Stocks traded, Total factoring volume to GDP, Total reserves, Total reserves in months of imports, Total reserves minus gold, Value of collateral needed for a loan, Wholesale price index, Working capital financed by banks",
+            "download_url": "https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv",
+            "format": "CSV",
+            "fs_check_info": "[{\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-06-27T17:26:52.112339\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-06-27T17:26:54.461569\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4367, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": \"2e889d8f4ccb221b99a4b4060647db9d\", \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": [\"#country+name\", \"#country+code\", \"#date+year\", \"#indicator+name\", \"#indicator+code\", \"#indicator+value+num\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-08-07T10:30:33.327007\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-08-07T10:30:35.511289\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 4386, \"new_display_value\": 4386, \"old_value\": 4367, \"old_display_value\": 4367}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4386, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": \"2e889d8f4ccb221b99a4b4060647db9d\", \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": [\"#country+name\", \"#country+code\", \"#date+year\", \"#indicator+name\", \"#indicator+code\", \"#indicator+value+num\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-08-14T06:03:37.505839\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-08-14T06:03:39.889965\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4386, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": \"2e889d8f4ccb221b99a4b4060647db9d\", \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": [\"#country+name\", \"#country+code\", \"#date+year\", \"#indicator+name\", \"#indicator+code\", \"#indicator+value+num\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-08-27T20:19:23.498786\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-08-27T20:19:26.221648\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4386, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": \"2e889d8f4ccb221b99a4b4060647db9d\", \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": [\"#country+name\", \"#country+code\", \"#date+year\", \"#indicator+name\", \"#indicator+code\", \"#indicator+value+num\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2025-09-27T19:18:15.792826\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2025-09-27T19:18:18.905216\", \"sheet_changes\": [], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4386, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": true, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": \"2e889d8f4ccb221b99a4b4060647db9d\", \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": [\"#country+name\", \"#country+code\", \"#date+year\", \"#indicator+name\", \"#indicator+code\", \"#indicator+value+num\"]}]}}, {\"state\": \"processing\", \"message\": \"The processing of the file structure check has started\", \"timestamp\": \"2026-03-02T02:28:38.286784\"}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-03-02T02:28:39.890371\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"hxl_header_hash\", \"new_value\": null, \"new_display_value\": null, \"old_value\": \"2e889d8f4ccb221b99a4b4060647db9d\", \"old_display_value\": \"2e889d8f4ccb221b99a4b4060647db9d\"}, {\"field\": \"nrows\", \"new_value\": 4427, \"new_display_value\": 4427, \"old_value\": 4386, \"old_display_value\": 4386}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4427, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": null, \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-04-28T04:28:57.923943\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 4441, \"new_display_value\": 4441, \"old_value\": 4427, \"old_display_value\": 4427}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4441, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": null, \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-07-17T00:23:19.612756\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 4456, \"new_display_value\": 4456, \"old_value\": 4441, \"old_display_value\": 4441}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4456, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": null, \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": null}]}}, {\"state\": \"success\", \"message\": \"File structure check completed\", \"timestamp\": \"2026-10-27T18:52:17.941540\", \"sheet_changes\": [{\"name\": \"__DEFAULT__\", \"event_type\": \"spreadsheet-sheet-changed\", \"changed_fields\": [{\"field\": \"nrows\", \"new_value\": 4493, \"new_display_value\": 4493, \"old_value\": 4456, \"old_display_value\": 4456}]}], \"hxl_proxy_response\": {\"url_or_filename\": \"/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download\", \"format\": \"CSV\", \"sheets\": [{\"name\": \"__DEFAULT__\", \"nrows\": 4493, \"ncols\": 6, \"is_hidden\": false, \"has_merged_cells\": false, \"is_hxlated\": false, \"header_hash\": \"c4baa7bc5147ffd2eb3fc1dfdc626b4d\", \"hxl_header_hash\": null, \"headers\": [\"Country Name\", \"Country ISO3\", \"Year\", \"Indicator Name\", \"Indicator Code\", \"Value\"], \"hxl_headers\": null}]}}]",
+            "hash": "398d18779b4ff6de600de7bdeed1e729",
+            "hdx_rel_url": "/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv",
+            "id": "e79df993-ab4e-473b-92d2-d54f10e9ebe2",
+            "last_modified": "2026-10-27T18:52:16.029786",
+            "metadata_modified": "2026-10-27T18:52:18.037946",
+            "microdata": false,
+            "mimetype": "",
+            "mimetype_inner": null,
+            "name": "Financial Sector Indicators for Kenya",
+            "p_coded": false,
+            "package_id": "efb67764-30cc-484c-a0b9-ca754c47ced8",
+            "position": 0,
+            "resource_type": "file.upload",
+            "size": 400906,
+            "state": "active",
+            "url": "https://data.humdata.org/dataset/efb67764-30cc-484c-a0b9-ca754c47ced8/resource/e79df993-ab4e-473b-92d2-d54f10e9ebe2/download/financial-sector_ken.csv",
+            "url_type": "upload"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "economics",
+            "id": "f58b7aa5-284f-4e1c-ae35-3ded0f2a4555",
+            "name": "economics",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "indicators",
+            "id": "08dade96-0bf4-4248-9d9f-421f7b844e53",
+            "name": "indicators",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      },
+      {
+        "archived": false,
+        "batch": "54eef960-28db-474b-98b9-6eb004503a45",
+        "creator_user_id": "d9d6cf4c-6b6c-4d60-9a81-cc7a9053302f",
+        "data_update_frequency": "-1",
+        "dataset_date": "[2005-01-31T00:00:00 TO *]",
+        "dataset_preview": "first_resource",
+        "dataset_source": "FEWS NET",
+        "has_geodata": false,
+        "has_showcases": false,
+        "id": "202adb64-0a5f-4ced-bc7a-8012f1cb2a06",
+        "is_requestdata_type": false,
+        "isopen": true,
+        "last_modified": "2026-03-30T08:44:07.447045",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution International (CC BY)",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "maintainer": "d9d6cf4c-6b6c-4d60-9a81-cc7a9053302f",
+        "metadata_created": "2022-05-18T15:25:18.413794",
+        "metadata_modified": "2026-11-19T09:10:07.013198",
+        "methodology": "Other",
+        "methodology_other": "The mean price for key commodities collected from multiple vendors in the selected markets, collected by FEWS NET enumerators on a regular schedule (typically monthly).",
+        "name": "fewsnet_staple_food_price_data_for_kenya_monthly_125",
+        "notes": "Kenya Monthly staple food price data collected by FEWS NET since 2005.",
+        "num_resources": 3,
+        "num_tags": 5,
+        "organization": {
+          "id": "f9695fdf-9252-44e1-b3d5-1d73e669ef5a",
+          "name": "fewsnet",
+          "title": "FEWS NET",
+          "type": "organization",
+          "description": "FEWS NET, the Famine Early Warning Systems Network, is a leading provider of early warning and analysis on acute food insecurity around the world.\r\n\r\nFEWS NET continues to resume their programming following a brief pause in operations in early 2025. HDX is collaborating with FEWS NET to restore data from their data warehouse as soon as possible.",
+          "image_url": "",
+          "created": "2022-04-29T09:03:25.755678",
+          "is_organization": true,
+          "approval_status": "approved",
+          "state": "active"
+        },
+        "owner_org": "f9695fdf-9252-44e1-b3d5-1d73e669ef5a",
+        "package_creator": "girumb",
+        "pageviews_last_14_days": 20,
+        "private": false,
+        "qa_completed": false,
+        "solr_additions": "{\"countries\": [\"Kenya\"]}",
+        "state": "active",
+        "subnational": "0",
+        "title": "Kenya Monthly FEWS NET Staple Food Price Data",
+        "total_res_downloads": 144,
+        "type": "dataset",
+        "updated_by_script": "hdx:HDXPythonLibrary/6.3.1-hdx_cli_toolkit_cjh (2025-03-05T14:42:39.134361)",
+        "url": null,
+        "version": null,
+        "groups": [
+          {
+            "description": "",
+            "display_name": "Kenya",
+            "id": "ken",
+            "image_display_url": "",
+            "name": "ken",
+            "title": "Kenya"
+          }
+        ],
+        "resources": [
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2022-05-18T15:25:20.611803",
+            "datastore_active": false,
+            "description": null,
+            "download_url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=xlsx&fields=website&end_date",
+            "format": "XLSX",
+            "hash": "W/\"2fc34b245f33c3a9b58801a463d74e3f\"",
+            "hdx_rel_url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=xlsx&fields=website&end_date",
+            "id": "5413d632-12de-4289-8b4e-93961077aec9",
+            "last_modified": "2026-03-30T08:44:07.447045",
+            "metadata_modified": "2026-11-19T09:10:07.108991",
+            "microdata": false,
+            "mimetype": null,
+            "mimetype_inner": null,
+            "name": "FEWS NET Staple Food Price Data for Kenya",
+            "originalHash": 800610790,
+            "package_id": "202adb64-0a5f-4ced-bc7a-8012f1cb2a06",
+            "position": 0,
+            "resource_type": "api",
+            "size": 0,
+            "state": "active",
+            "upload": null,
+            "url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=xlsx&fields=website&end_date",
+            "url_type": "api"
+          },
+          {
+            "broken_link": true,
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2022-05-18T15:25:22.626088",
+            "datastore_active": false,
+            "description": null,
+            "download_url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=csv&fields=website&end_date",
+            "format": "CSV",
+            "hash": "W/\"a04f55b8954dfeb9c0421837b9f7d34d\"",
+            "hdx_rel_url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=csv&fields=website&end_date",
+            "id": "b6a96282-48c1-458c-8ec2-56421dc47034",
+            "last_modified": "2026-03-30T08:44:07.447045",
+            "metadata_modified": "2026-11-03T09:07:06.402555",
+            "microdata": false,
+            "mimetype": null,
+            "mimetype_inner": null,
+            "name": "FEWS NET Staple Food Price Data for Kenya",
+            "originalHash": 1714590428,
+            "p_coded": false,
+            "package_id": "202adb64-0a5f-4ced-bc7a-8012f1cb2a06",
+            "position": 1,
+            "resource_type": "api",
+            "size": 0,
+            "state": "active",
+            "upload": null,
+            "url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=csv&fields=website&end_date",
+            "url_type": "api"
+          },
+          {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2022-05-18T15:25:24.818050",
+            "datastore_active": false,
+            "description": null,
+            "download_url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=json&fields=website&end_date",
+            "format": "JSON",
+            "hash": "W/\"fb109160ae187b5d25a20676f7a9d8e4\"",
+            "hdx_rel_url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=json&fields=website&end_date",
+            "id": "5003ed02-d051-4291-b1cc-119b9f54afa2",
+            "last_modified": "2025-02-16T01:02:16.789088",
+            "metadata_modified": "2026-10-22T09:10:10.877255",
+            "microdata": false,
+            "mimetype": null,
+            "mimetype_inner": null,
+            "name": "FEWS NET Staple Food Price Data for Kenya",
+            "originalHash": -905091386,
+            "package_id": "202adb64-0a5f-4ced-bc7a-8012f1cb2a06",
+            "position": 2,
+            "resource_type": "api",
+            "size": 0,
+            "state": "active",
+            "upload": null,
+            "url": "https://fdw.fews.net/api/marketpricefacts/?dataset=FEWS_NET_Staple_Food_Price_Data&country=KE&format=json&fields=website&end_date",
+            "url_type": "api"
+          }
+        ],
+        "tags": [
+          {
+            "display_name": "eastern africa",
+            "id": "7056940c-d78a-45a2-8042-a26adf97d2be",
+            "name": "eastern africa",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "economics",
+            "id": "f58b7aa5-284f-4e1c-ae35-3ded0f2a4555",
+            "name": "economics",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "food security",
+            "id": "b084d063-149c-4b7d-811b-18e320ca0b8c",
+            "name": "food security",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "indicators",
+            "id": "08dade96-0bf4-4248-9d9f-421f7b844e53",
+            "name": "indicators",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          },
+          {
+            "display_name": "markets",
+            "id": "b62086cd-553f-4464-9cd3-9efb487203fe",
+            "name": "markets",
+            "state": "active",
+            "vocabulary_id": "b891512e-9516-4bf5-962a-7a289772a2a1"
+          }
+        ],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+      }
+    ],
+    "sort": "score desc, last_modified desc",
+    "search_facets": {
+      "pivot": {},
+      "queries": []
+    },
+    "facet_pivot": {},
+    "facet_queries": {}
+  }
+}

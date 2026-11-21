@@ -1,11 +1,11 @@
 {
   "languageId": "ksl",
   "iso639_3": "xki",
-  "updatedAt": "2026-11-21T12:51:30.612980+00:00",
+  "updatedAt": "2026-11-21T17:54:58.555534+00:00",
   "sources": [
     {
       "id": "maseno-ksl-pose-14338329",
-      "title": "Maseno University KSL Dataset — Anonymized Stickman Videos & MediaPipe Holistic Poses (Zenodo 14338329, 1.54 GB)",
+      "title": "Maseno KSL Pose Dataset (Open Access CC-BY-4.0, MediaPipe Pose Data.zip 1.5 GB)",
       "license": "CC-BY-4.0",
       "url": "https://zenodo.org/records/14338329",
       "access": "public_zenodo",
@@ -13,19 +13,11 @@
     },
     {
       "id": "open-sign-bibles-xki",
-      "title": "Open Sign Bibles — Kenyan Sign Language (xki) Human Signing Videos & Verse Alignments",
+      "title": "Open Sign Bibles — Kenyan Sign Language (xki)",
       "license": "CC-BY-SA-4.0",
       "url": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
       "access": "public_hf",
       "register": "religious_liturgical"
-    },
-    {
-      "id": "gdl-ksl-video-storybooks",
-      "title": "Global Digital Library — Kenyan Sign Language (xki) Human Signing Video Storybooks",
-      "license": "CC-BY-4.0 (verify per book)",
-      "url": "https://content.digitallibrary.io/xki",
-      "access": "public_web",
-      "status": "open_video_storybooks"
     },
     {
       "id": "ishara-ksl-hand-landmarks",
@@ -34,6 +26,14 @@
       "url": "https://www.ishara.io/collect",
       "access": "public_portal",
       "status": "active_collection"
+    },
+    {
+      "id": "gdl-ksl-video-storybooks",
+      "title": "Global Digital Library — Kenyan Sign Language (xki) Human Signing Video Storybooks",
+      "license": "CC-BY-4.0 (verify per book)",
+      "url": "https://content.digitallibrary.io/xki",
+      "access": "public_web",
+      "status": "open_video_storybooks"
     }
   ],
   "zenodoFiles": [
@@ -44,6 +44,7 @@
       "downloadUrl": "https://zenodo.org/api/records/14338329/files/Pose%20Data.zip/content"
     }
   ],
+  "glosses": [],
   "storybooks": [
     {
       "id": "gdl-xki-atienos-friend",
@@ -64,6 +65,1087 @@
       "description": "Browse open-access Kenyan Sign Language human-signed reading books for learners and families."
     }
   ],
-  "videos": [],
-  "glosses": []
+  "videos": [
+    {
+      "id": "sign-bible-xki-ksl-passage-0",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-0.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-1",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-1.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-2",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-2.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-3",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-3.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-4",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-4.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-5",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-5.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-6",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-6.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-7",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-7.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-8",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-8.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-9",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-9.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-10",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-10.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-11",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-11.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-12",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-12.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-13",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-13.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-14",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-14.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-15",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-15.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-16",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-16.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-17",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-17.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-18",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-18.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-19",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-19.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-20",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-20.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-21",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-21.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-22",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-22.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-23",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-23.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-24",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-24.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-25",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-25.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-26",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-26.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-27",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-27.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-28",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-28.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-29",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-29.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-30",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-30.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-31",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-31.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-32",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-32.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-33",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-33.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-34",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-34.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-35",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-35.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-36",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-36.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-37",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-37.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-38",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-38.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "sign-bible-xki-ksl-passage-39",
+      "title": "KSL Passage (Human KSL)",
+      "gloss": "KSL Passage",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/human/sign-bible-xki-ksl-passage-39.mp4",
+      "category": "human-sign-bible",
+      "register": "religious_liturgical",
+      "transcript": "",
+      "license": "CC-BY-SA-4.0",
+      "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+      "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+    },
+    {
+      "id": "maseno-mp",
+      "title": ".Mp",
+      "gloss": ".Mp",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-mp.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-adult",
+      "title": "Adult",
+      "gloss": "Adult",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-adult.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-africa",
+      "title": "Africa",
+      "gloss": "Africa",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-africa.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-age",
+      "title": "Age",
+      "gloss": "Age",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-age.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-always",
+      "title": "Always",
+      "gloss": "Always",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-always.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-ancestors",
+      "title": "Ancestors",
+      "gloss": "Ancestors",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-ancestors.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-berret",
+      "title": "Berret",
+      "gloss": "Berret",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-berret.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-better",
+      "title": "Better",
+      "gloss": "Better",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-better.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-black",
+      "title": "Black",
+      "gloss": "Black",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-black.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-blazer",
+      "title": "Blazer",
+      "gloss": "Blazer",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-blazer.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-born",
+      "title": "Born",
+      "gloss": "Born",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-born.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-boys",
+      "title": "Boys",
+      "gloss": "Boys",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-boys.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-break",
+      "title": "Break",
+      "gloss": "Break",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-break.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-carry",
+      "title": "Carry",
+      "gloss": "Carry",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-carry.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-celebrate",
+      "title": "Celebrate",
+      "gloss": "Celebrate",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-celebrate.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-chinese",
+      "title": "Chinese",
+      "gloss": "Chinese",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-chinese.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-coat",
+      "title": "Coat",
+      "gloss": "Coat",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-coat.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-come",
+      "title": "Come",
+      "gloss": "Come",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-come.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-cross",
+      "title": "Cross",
+      "gloss": "Cross",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-cross.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-date",
+      "title": "Date",
+      "gloss": "Date",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-date.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-daughter",
+      "title": "Daughter",
+      "gloss": "Daughter",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-daughter.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-day",
+      "title": "Day",
+      "gloss": "Day",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-day.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-dress",
+      "title": "Dress",
+      "gloss": "Dress",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-dress.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-evening",
+      "title": "Evening",
+      "gloss": "Evening",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-evening.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-father",
+      "title": "Father",
+      "gloss": "Father",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-father.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-felix",
+      "title": "Felix",
+      "gloss": "Felix",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-felix.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-fiancee",
+      "title": "Fiancee",
+      "gloss": "Fiancee",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-fiancee.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-go",
+      "title": "Go",
+      "gloss": "Go",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-go.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-good",
+      "title": "Good",
+      "gloss": "Good",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-good.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-have",
+      "title": "Have",
+      "gloss": "Have",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-have.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-her",
+      "title": "Her",
+      "gloss": "Her",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-her.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-lab",
+      "title": "Lab",
+      "gloss": "Lab",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-lab.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-leg",
+      "title": "Leg",
+      "gloss": "Leg",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-leg.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-legumes",
+      "title": "Legumes",
+      "gloss": "Legumes",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-legumes.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-like",
+      "title": "Like",
+      "gloss": "Like",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-like.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-love",
+      "title": "Love",
+      "gloss": "Love",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-love.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-make",
+      "title": "Make",
+      "gloss": "Make",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-make.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-maurine",
+      "title": "Maurine",
+      "gloss": "Maurine",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-maurine.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-mine",
+      "title": "Mine",
+      "gloss": "Mine",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-mine.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-mother",
+      "title": "Mother",
+      "gloss": "Mother",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-mother.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-must",
+      "title": "Must",
+      "gloss": "Must",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-must.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-night",
+      "title": "Night",
+      "gloss": "Night",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-night.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-nothing",
+      "title": "Nothing",
+      "gloss": "Nothing",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-nothing.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-people",
+      "title": "People",
+      "gloss": "People",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-people.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-science",
+      "title": "Science",
+      "gloss": "Science",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-science.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-scout",
+      "title": "Scout",
+      "gloss": "Scout",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-scout.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-smart",
+      "title": "Smart",
+      "gloss": "Smart",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-smart.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-strong",
+      "title": "Strong",
+      "gloss": "Strong",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-strong.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-sweet",
+      "title": "Sweet",
+      "gloss": "Sweet",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-sweet.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-teacher",
+      "title": "Teacher",
+      "gloss": "Teacher",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-teacher.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-tie",
+      "title": "Tie",
+      "gloss": "Tie",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-tie.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-tree",
+      "title": "Tree",
+      "gloss": "Tree",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-tree.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-true",
+      "title": "True",
+      "gloss": "True",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-true.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-tshirt",
+      "title": "Tshirt",
+      "gloss": "Tshirt",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-tshirt.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-type",
+      "title": "Type",
+      "gloss": "Type",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-type.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-ugali",
+      "title": "Ugali",
+      "gloss": "Ugali",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-ugali.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-wear",
+      "title": "Wear",
+      "gloss": "Wear",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-wear.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-white",
+      "title": "White",
+      "gloss": "White",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-white.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-wish",
+      "title": "Wish",
+      "gloss": "Wish",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-wish.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    },
+    {
+      "id": "maseno-you",
+      "title": "You",
+      "gloss": "You",
+      "videoUrl": "[https://audio.kenyahub.me](https://audio.kenyahub.me)/ksl/videos/maseno-you.mp4",
+      "category": "maseno-stickman",
+      "license": "CC-BY-4.0",
+      "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+      "sourceUrl": "https://zenodo.org/records/14338329"
+    }
+  ],
+  "videoCount": 100
 }

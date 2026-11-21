@@ -7,10 +7,10 @@
   "languages": {
     "borana": {
       "languageName": "Borana (Oromo)",
-      "totalEntries": 27659,
-      "addressableR2Keys": 27657,
+      "totalEntries": 31859,
+      "addressableR2Keys": 31844,
       "r2Prefix": "audio/borana/",
-      "directAudioEntries": 0,
+      "directAudioEntries": 1,
       "openAccessDatasets": [
         {
           "id": "cv27-om",
@@ -56,16 +56,16 @@
     },
     "ilchamus": {
       "languageName": "Ilchamus (Njemps)",
-      "totalEntries": 781,
-      "addressableR2Keys": 779,
+      "totalEntries": 783,
+      "addressableR2Keys": 781,
       "r2Prefix": "audio/ilchamus/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "kalenjin": {
       "languageName": "Kalenjin",
-      "totalEntries": 8031,
-      "addressableR2Keys": 8029,
+      "totalEntries": 8411,
+      "addressableR2Keys": 8409,
       "r2Prefix": "audio/kalenjin/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -89,8 +89,8 @@
     },
     "kamba": {
       "languageName": "Kamba (Kĩkamba)",
-      "totalEntries": 10240,
-      "addressableR2Keys": 10240,
+      "totalEntries": 12910,
+      "addressableR2Keys": 12900,
       "r2Prefix": "audio/kamba/",
       "directAudioEntries": 250,
       "openAccessDatasets": [
@@ -114,8 +114,8 @@
     },
     "kikuyu": {
       "languageName": "Kikuyu (Gĩkũyũ)",
-      "totalEntries": 23168,
-      "addressableR2Keys": 23160,
+      "totalEntries": 25764,
+      "addressableR2Keys": 25755,
       "r2Prefix": "audio/kikuyu/",
       "directAudioEntries": 254,
       "openAccessDatasets": [
@@ -155,16 +155,16 @@
     },
     "kisii": {
       "languageName": "Kisii (Ekegusii)",
-      "totalEntries": 1576,
-      "addressableR2Keys": 1576,
+      "totalEntries": 1586,
+      "addressableR2Keys": 1586,
       "r2Prefix": "audio/kisii/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "luhya": {
       "languageName": "Luhya (Luyia)",
-      "totalEntries": 7032,
-      "addressableR2Keys": 7024,
+      "totalEntries": 7123,
+      "addressableR2Keys": 7115,
       "r2Prefix": "audio/luhya/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -188,10 +188,10 @@
     },
     "luo": {
       "languageName": "Dholuo (Luo)",
-      "totalEntries": 14886,
-      "addressableR2Keys": 14883,
+      "totalEntries": 17313,
+      "addressableR2Keys": 17305,
       "r2Prefix": "audio/luo/",
-      "directAudioEntries": 257,
+      "directAudioEntries": 260,
       "openAccessDatasets": [
         {
           "id": "anv-ke-luo",
@@ -269,8 +269,8 @@
     },
     "maasai": {
       "languageName": "Maasai (Maa)",
-      "totalEntries": 4876,
-      "addressableR2Keys": 4872,
+      "totalEntries": 5081,
+      "addressableR2Keys": 5077,
       "r2Prefix": "audio/maasai/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -286,8 +286,8 @@
     },
     "meru": {
       "languageName": "Meru (Kĩmĩĩrũ)",
-      "totalEntries": 4304,
-      "addressableR2Keys": 4304,
+      "totalEntries": 4487,
+      "addressableR2Keys": 4487,
       "r2Prefix": "audio/meru/",
       "directAudioEntries": 248,
       "openAccessDatasets": [
@@ -303,40 +303,40 @@
     },
     "mijikenda": {
       "languageName": "Mijikenda (Giriama)",
-      "totalEntries": 17081,
-      "addressableR2Keys": 17071,
+      "totalEntries": 17325,
+      "addressableR2Keys": 17315,
       "r2Prefix": "audio/mijikenda/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "pokomo": {
       "languageName": "Pokomo (Kipfokomo)",
-      "totalEntries": 3070,
-      "addressableR2Keys": 3070,
+      "totalEntries": 3182,
+      "addressableR2Keys": 3182,
       "r2Prefix": "audio/pokomo/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "pokot": {
       "languageName": "Pokot (Pökoot)",
-      "totalEntries": 5630,
-      "addressableR2Keys": 5630,
+      "totalEntries": 5682,
+      "addressableR2Keys": 5682,
       "r2Prefix": "audio/pokot/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "rendille": {
       "languageName": "Rendille (Afi Ren'dille)",
-      "totalEntries": 305,
-      "addressableR2Keys": 305,
+      "totalEntries": 307,
+      "addressableR2Keys": 307,
       "r2Prefix": "audio/rendille/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "samburu": {
       "languageName": "Samburu (Sampur)",
-      "totalEntries": 834,
-      "addressableR2Keys": 832,
+      "totalEntries": 921,
+      "addressableR2Keys": 919,
       "r2Prefix": "audio/samburu/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -352,10 +352,10 @@
     },
     "somali": {
       "languageName": "Somali",
-      "totalEntries": 16785,
-      "addressableR2Keys": 16770,
+      "totalEntries": 20914,
+      "addressableR2Keys": 20896,
       "r2Prefix": "audio/somali/",
-      "directAudioEntries": 297,
+      "directAudioEntries": 298,
       "openAccessDatasets": [
         {
           "id": "anv-ke-somali",
@@ -385,10 +385,10 @@
     },
     "swahili": {
       "languageName": "Swahili (Kiswahili)",
-      "totalEntries": 55801,
-      "addressableR2Keys": 55797,
+      "totalEntries": 61107,
+      "addressableR2Keys": 61085,
       "r2Prefix": "audio/swahili/",
-      "directAudioEntries": 449,
+      "directAudioEntries": 457,
       "openAccessDatasets": [
         {
           "id": "cv27-sw",
@@ -482,8 +482,8 @@
     },
     "taita": {
       "languageName": "Taita (Kidawida)",
-      "totalEntries": 7574,
-      "addressableR2Keys": 7574,
+      "totalEntries": 7644,
+      "addressableR2Keys": 7644,
       "r2Prefix": "audio/taita/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -499,8 +499,8 @@
     },
     "taveta": {
       "languageName": "Taveta (Kitaveta)",
-      "totalEntries": 667,
-      "addressableR2Keys": 667,
+      "totalEntries": 685,
+      "addressableR2Keys": 685,
       "r2Prefix": "audio/taveta/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
