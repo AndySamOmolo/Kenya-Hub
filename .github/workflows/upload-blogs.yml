@@ -38,4 +38,9 @@ jobs:
       - name: Run Upload Script
         env:
           APPWRITE_API_KEY: ${{ secrets.APPWRITE_API_KEY }}
-        run: npx tsx scripts/upload-blogs.ts
+        run: |
+          if [ -z "$APPWRITE_API_KEY" ]; then
+            echo "::warning::APPWRITE_API_KEY secret not configured — skipping Appwrite blog sync."
+            exit 0
+          fi
+          npx tsx scripts/upload-blogs.ts

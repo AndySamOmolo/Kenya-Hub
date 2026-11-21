@@ -144,10 +144,14 @@ def load_hf_stream(repo: str, config: str, split: str = "train", revision: str =
         kwargs["revision"] = revision
     try:
         ds = load_dataset(repo, config, **kwargs)
-    except TypeError:
-        kwargs.pop("token", None)
-        kwargs["use_auth_token"] = HF_TOKEN
-        ds = load_dataset(repo, config, **kwargs)
+    except (TypeError, ValueError):
+        kwargs.pop("trust_remote_code", None)
+        try:
+            ds = load_dataset(repo, config, **kwargs)
+        except TypeError:
+            kwargs.pop("token", None)
+            kwargs["use_auth_token"] = HF_TOKEN
+            ds = load_dataset(repo, config, **kwargs)
     if not decode_audio:
         try:
             ds = ds.cast_column("audio", Audio(decode=False))
@@ -500,7 +504,14 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
         {"lang_id": "maasai", "repo": "MCAA1-MSU/anv_data_ke", "config": "maasai", "split": "train", "text_col": "transcription", "gated": True},
         {"lang_id": "samburu", "repo": "MCAA1-MSU/anv_data_ke", "config": "maasai", "split": "train", "text_col": "transcription", "gated": True, "row_filter": ("dialect", "samburu")},
         {"lang_id": "somali", "repo": "MCAA1-MSU/anv_data_ke", "config": "somali", "split": "train", "text_col": "transcription", "gated": True},
-        {"lang_id": "english-ke", "repo": "edinburghcstr/edacc", "config": "default", "split": "validation", "text_col": "text", "row_filter": ("accent", "kenyan")},
+        {"lang_id": "swahili", "repo": "michsethowusu/swahili-words-speech-text-parallel", "config": "default", "split": "train", "text_col": "text", "decode_audio": False},
+        {"lang_id": "swahili", "repo": "stem-content-ai-project/swahili-speech", "config": "default", "split": "train", "text_col": "sentence", "decode_audio": False},
+        {"lang_id": "somali", "repo": "skydheere/soomali-asr-dataset", "config": "default", "split": "train", "text_col": "sentence", "decode_audio": False},
+        {"lang_id": "kalenjin", "repo": "kln001/kalenjin-asr-data", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
+        {"lang_id": "luhya", "repo": "Digital-Divide-Data/Luhya-ASR-Data-subset-642H", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
+        {"lang_id": "kamba", "repo": "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
+        {"lang_id": "kisii", "repo": "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
+        {"lang_id": "english-ke", "repo": "edinburghcstr/edacc", "config": "default", "split": "validation", "text_col": "text", "row_filter": ("accent", "kenyan"), "decode_audio": False},
     ]
 
     for job in hf_jobs:
@@ -524,7 +535,7 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
             continue
 
         rev = job.get("revision")
-        decode_audio = job.get("decode_audio", True)
+        decode_audio = job.get("decode_audio", False)
         row_filter = job.get("row_filter")
         log(f"[HF Audio Stream] {repo} ({cfg}) -> {lang_id} (decode={decode_audio}, max {MAX_CLIPS} clips)...")
         ds_start = time.monotonic()
@@ -567,11 +578,10 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
                     slug = to_audio_slug(transcript)
                     if not slug or slug in uploaded_keys.get(lang_id, {}):
                         continue
-                    if not decode_audio:
-                        raw_bytes = audio_obj.get("bytes")
+                    raw_bytes = audio_obj.get("bytes")
+                    if raw_bytes:
                         ext = Path(str(audio_obj.get("path") or "clip.mp3")).suffix or ".mp3"
-                        if raw_bytes:
-                            futures.append(pool.submit(transcode_raw_bytes_and_upload_worker, s3_client, lang_id, slug, raw_bytes, ext))
+                        futures.append(pool.submit(transcode_raw_bytes_and_upload_worker, s3_client, lang_id, slug, raw_bytes, ext))
                     else:
                         arr = audio_obj.get("array")
                         sr = audio_obj.get("sampling_rate")
@@ -975,33 +985,37 @@ def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
     cat_path = DICT_DIR / "catalog.ts"
     if cat_path.exists():
         cat_txt = cat_path.read_text(encoding="utf-8")
+        today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         cat_txt = re.sub(
             r"export const TOTAL_DICTIONARY_ENTRIES:\s*number\s*=\s*\d+;",
             f"export const TOTAL_DICTIONARY_ENTRIES: number = {grand_total};",
             cat_txt,
         )
-        stats_json = json.dumps(exact_stats, indent=2)
-        today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        new_tail = f"""// ── Synchronized Exact Entry & Category Counts Across All 23 Dictionaries (2026-11-18) ──
-const _EXACT_DICT_STATS: Record<string, {{ total: number; cats: Record<string, number>; audio?: number }}> = {stats_json};
-for (const _m of ALL_DICT_METAS) {{
-  const _st = _EXACT_DICT_STATS[_m.languageId];
-  if (_st) {{
-    _m.totalEntries = _st.total;
-    _m.hasAudio = (_st.audio ?? 0) > 0;
-    _m.lastUpdated = "{today_str}";
-    for (const _c of _m.categories) {{
-      if (_st.cats[_c.id] !== undefined) _c.count = _st.cats[_c.id];
-    }}
-  }}
-}}
-"""
-        cat_txt = re.sub(
-            r"// ── Synchronized Exact Entry & Category Counts Across All 23 Dictionaries.*$",
-            new_tail,
-            cat_txt,
-            flags=re.S,
-        )
+        # Update each language block directly inside ALL_DICT_METAS
+        for lid, st in exact_stats.items():
+            if not lid:
+                continue
+            has_aud = "true" if st.get("audio", 0) > 0 else "false"
+            # Update totalEntries & hasAudio & lastUpdated inside the matching languageId block
+            def _update_lang_block(m: re.Match) -> str:
+                blk = m.group(0)
+                blk = re.sub(r'("totalEntries":\s*)\d+', rf"\g<1>{st['total']}", blk, count=1)
+                blk = re.sub(r'("hasAudio":\s*)(?:true|false)', rf"\g<1>{has_aud}", blk, count=1)
+                blk = re.sub(r'("lastUpdated":\s*")[^"]+(")', rf'\g<1>{today_str}\g<2>', blk, count=1)
+                for cid, cnt in st.get("cats", {}).items():
+                    blk = re.sub(
+                        rf'("id":\s*"{re.escape(cid)}"[\s\S]{{0,180}}?"count":\s*)\d+',
+                        rf"\g<1>{cnt}",
+                        blk,
+                        count=1,
+                    )
+                return blk
+            cat_txt = re.sub(
+                rf'\{{\s*"languageId":\s*"{re.escape(lid)}"[\s\S]*?"categories":\s*\[[\s\S]*?\]\s*\}}',
+                _update_lang_block,
+                cat_txt,
+                count=1,
+            )
         cat_path.write_text(cat_txt, encoding="utf-8")
 
     return total_attached
