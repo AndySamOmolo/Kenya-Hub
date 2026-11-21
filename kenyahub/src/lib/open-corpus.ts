@@ -12,6 +12,43 @@ export interface OpenCorpusFrequencyWord {
   count?: number | null;
 }
 
+export interface OpenCorpusAudioChapter {
+  id: string;
+  number: number;
+  title: string;
+  slug: string;
+  archiveFilename?: string;
+  audioUrl: string;
+  fallbackUrl?: string;
+  sizeMb?: number;
+  topics?: string[];
+  license: string;
+  sourceUrl: string;
+}
+
+export interface KslVideoItem {
+  id: string;
+  title: string;
+  gloss: string;
+  videoUrl: string;
+  category: "maseno-stickman" | "human-sign-bible" | string;
+  register?: string;
+  transcript?: string;
+  license: string;
+  source: string;
+  sourceUrl: string;
+}
+
+export interface KslStorybookItem {
+  id: string;
+  title: string;
+  language: string;
+  format: string;
+  license: string;
+  url: string;
+  description: string;
+}
+
 export interface OpenCorpusLanguageData {
   languageId: string;
   r2AudioClips: number;
@@ -36,6 +73,7 @@ export interface OpenCorpusLanguageData {
   topFrequencyWords: OpenCorpusFrequencyWord[];
   wikimedia: { id: string; count: number; license: string }[];
   benchmarks: { id: string; rows: number }[];
+  audioChapters?: OpenCorpusAudioChapter[];
 }
 
 export interface StagedVariety {
@@ -59,6 +97,8 @@ export interface OpenCorpusIndex {
   cldrVersion: string;
   stats: {
     totalR2AudioClips: number;
+    totalAudioChapters?: number;
+    totalKslVideos?: number;
     totalStagedVarieties: number;
     totalStagedEntries: number;
     totalBenchmarkRows: number;
@@ -79,6 +119,7 @@ export interface OpenCorpusIndex {
       url: string;
       access: string;
       status?: string;
+      register?: string;
     }[];
     zenodoFiles: {
       key: string;
@@ -86,6 +127,10 @@ export interface OpenCorpusIndex {
       checksum: string;
       downloadUrl: string;
     }[];
+    videos?: KslVideoItem[];
+    storybooks?: KslStorybookItem[];
+    videoCount?: number;
+    extractedSignCount?: number;
     glossCount: number;
   };
   benchmarks: { id: string; rows: number }[];

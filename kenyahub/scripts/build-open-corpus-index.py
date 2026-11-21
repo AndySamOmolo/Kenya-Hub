@@ -25,7 +25,7 @@ ISO_TO_LANG = {
     "ki": "kikuyu", "kik": "kikuyu",
     "luo": "luo",
     "luy": "luhya", "bxk": "luhya", "rag": "luhya",
-    "kln": "kalenjin", "niq": "kalenjin",
+    "kln": "kalenjin", "niq": "kalenjin", "sgc": "kalenjin",
     "kam": "kamba",
     "guz": "kisii",
     "mer": "meru",
@@ -61,6 +61,7 @@ def main() -> None:
     cldr_raw = load_json_safe(DATA_DIR / "locales/cldr-49-kenya.json") or {}
     r2_raw = load_json_safe(PUBLIC_DIR / "r2-audio-index.json") or {}
     ksl_raw = load_json_safe(PUBLIC_DIR / "ksl-index.json") or {}
+    dholuo_ch_raw = load_json_safe(PUBLIC_DIR / "dholuo-audio-chapters.json") or {}
     lock_raw = load_json_safe(PUBLIC_DIR / ".audio-ingested-lock.json") or {}
 
     languages: dict[str, dict] = {}
@@ -76,6 +77,7 @@ def main() -> None:
                 "topFrequencyWords": [],
                 "wikimedia": [],
                 "benchmarks": [],
+                "audioChapters": [],
             }
         return languages[lid]
 
@@ -202,8 +204,10 @@ def main() -> None:
             })
             if "luo" in wf.stem:
                 ensure_lang("luo")["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
-            elif "niq" in wf.stem:
+            elif "niq" in wf.stem or "sgc" in wf.stem:
                 ensure_lang("kalenjin")["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
+            elif "pko" in wf.stem:
+                ensure_lang("pokot")["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
             elif "sw" in wf.stem:
                 ensure_lang("swahili")["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
 
@@ -274,12 +278,23 @@ def main() -> None:
                 "pageCount": cd.get("pageCount"),
             })
 
-    # 10. KSL (xki) open index
+    # 10. Dholuo 1920 Kavirondo Phrase Book Spoken Chapters (LibriVox PDM 1.0 / R2)
+    dholuo_chapters = dholuo_ch_raw.get("chapters") or []
+    if dholuo_chapters:
+        ensure_lang("luo")["audioChapters"] = dholuo_chapters
+
+    # 11. KSL (xki) open video, storybook & pose index
+    ksl_videos = ksl_raw.get("videos") or []
+    ksl_storybooks = ksl_raw.get("storybooks") or []
     ksl_summary = {
         "languageId": "ksl",
         "iso639_3": "xki",
         "sources": ksl_raw.get("sources", []),
         "zenodoFiles": ksl_raw.get("zenodoFiles", []),
+        "videos": ksl_videos,
+        "storybooks": ksl_storybooks,
+        "videoCount": len(ksl_videos),
+        "extractedSignCount": int(ksl_raw.get("extractedSignCount") or len(ksl_raw.get("signs") or [])),
         "glossCount": len(ksl_raw.get("glosses", [])),
     }
 
@@ -288,6 +303,8 @@ def main() -> None:
         "cldrVersion": cldr_raw.get("version", "49.0.0"),
         "stats": {
             "totalR2AudioClips": sum(v["r2AudioClips"] for v in languages.values()),
+            "totalAudioChapters": len(dholuo_chapters),
+            "totalKslVideos": len(ksl_videos),
             "totalStagedVarieties": len(staged_varieties),
             "totalStagedEntries": sum(v["totalEntries"] for v in staged_varieties),
             "totalBenchmarkRows": sum(b["rows"] for b in benchmarks_summary),

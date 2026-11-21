@@ -40,6 +40,7 @@ const R2_SOURCES = [
       { id: "openslr-slr25", repo: "openslr/slr25", config: "default", gated: false, license: "MIT", url: "https://www.openslr.org/25/" },
       { id: "makerere-sw-tts", repo: "mendeley/nb8b25h9nj-3", config: "default", gated: false, license: "CC-BY-4.0", url: "https://data.mendeley.com/datasets/nb8b25h9nj/3" },
       { id: "rono-sw-tts", repo: "mendeley/rbn6nmygcn-1", config: "default", gated: false, license: "CC-BY-4.0", url: "https://data.mendeley.com/datasets/rbn6nmygcn/1" },
+      { id: "tatoeba-audio-swh", repo: "tatoeba/audio-filtered", config: "swh", gated: false, license: "CC-BY-2.0-FR / CC0-1.0", url: "https://tatoeba.org/en/downloads" },
       { id: "lingua-libre-swa", repo: "wikimedia-commons/lingua-libre-swa", config: "swa", gated: false, license: "CC-BY-SA-4.0", url: "https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-swa" },
     ],
   },
@@ -60,6 +61,8 @@ const R2_SOURCES = [
       { id: "thiomi-luo", repo: "thiomi/thiomi-5k", config: "luo_Latn", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/thiomi/thiomi-5k" },
       { id: "fleurs-luo-ke", repo: "google/fleurs", config: "luo_ke", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
       { id: "waxal-luo-tts", repo: "google/WaxalNLP", config: "luo_tts", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
+      { id: "bibletts-luo-mdc", repo: "mozilla-data-collective/cmvi269po002607mi7oaodk1z", config: "luo", gated: true, license: "CC-BY-SA-4.0", url: "https://mozilladatacollective.com/datasets/cmvi269po002607mi7oaodk1z" },
+      { id: "ia-kavirondo3-dholuo-1920", repo: "archive.org/handbook_kavirondo3_1203", config: "luo", gated: false, license: "Public Domain Mark 1.0", url: "https://archive.org/details/handbook_kavirondo3_1203" },
       { id: "bibletts-luo", repo: "CLEAR-Global/BibleTTS-Luo", config: "read", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/CLEAR-Global/BibleTTS-Luo" },
       { id: "kencorpus-audio-luo", repo: "Kencorpus/KenCorpus_audio", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio" },
     ],
@@ -140,6 +143,7 @@ const SPECIAL_MODALITIES = {
   ],
   ksl: [
     { id: "maseno-ksl-pose-14338329", repo: "zenodo/14338329", config: "xki", gated: false, license: "CC-BY-4.0", url: "https://zenodo.org/records/14338329" },
+    { id: "ishara-ksl-hand-landmarks", repo: "ishara/ksl-hand-landmarks", config: "xki", gated: false, license: "CC-BY-4.0", url: "https://www.ishara.io/collect" },
     { id: "open-sign-bibles-xki", repo: "bible-nlp/sign-bibles", config: "xki", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/bible-nlp/sign-bibles" },
   ],
 };

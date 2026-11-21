@@ -1,0 +1,78 @@
+{
+  "languageId": "luo",
+  "workTitle": "A Handbook of the Kavirondo Language — Part III: Dholuo Phrase Book (1920)",
+  "authors": "Fathers of St. Joseph's Society (Mill Hill)",
+  "speakers": "Nicholas & Grace Bridgewater (LibriVox, 2012 — English & Dholuo)",
+  "license": "Public Domain Mark 1.0",
+  "archiveIdentifier": "handbook_kavirondo3_1203",
+  "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+  "totalDuration": "1:01:25",
+  "updatedAt": "2026-11-21T00:00:00Z",
+  "chapters": [
+    {
+      "id": "kavirondo-ch-01",
+      "number": 1,
+      "title": "01 — Usual Greetings & Everyday Phrases",
+      "slug": "handbook-kavirondo3-1203-dholuophrasebook-01-fathersstjosephsociety",
+      "archiveFilename": "dholuophrasebook_01_fathersstjosephsociety_64kb.mp3",
+      "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_01_fathersstjosephsociety_64kb.mp3",
+      "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_01_fathersstjosephsociety_64kb.mp3",
+      "sizeMb": 5.1,
+      "topics": ["greetings", "everyday questions", "politeness", "basic conversation"],
+      "license": "Public Domain Mark 1.0",
+      "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+    },
+    {
+      "id": "kavirondo-ch-02",
+      "number": 2,
+      "title": "02 — Servants, Meals & Household Phrases",
+      "slug": "handbook-kavirondo3-1203-dholuophrasebook-02-fathersstjosephsociety",
+      "archiveFilename": "dholuophrasebook_02_fathersstjosephsociety_64kb.mp3",
+      "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_02_fathersstjosephsociety_64kb.mp3",
+      "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_02_fathersstjosephsociety_64kb.mp3",
+      "sizeMb": 9.1,
+      "topics": ["food & meals", "kitchen", "household requests", "hospitality"],
+      "license": "Public Domain Mark 1.0",
+      "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+    },
+    {
+      "id": "kavirondo-ch-03",
+      "number": 3,
+      "title": "03 — Working & Daily Tasks",
+      "slug": "handbook-kavirondo3-1203-dholuophrasebook-03-fathersstjosephsociety",
+      "archiveFilename": "dholuophrasebook_03_fathersstjosephsociety_64kb.mp3",
+      "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_03_fathersstjosephsociety_64kb.mp3",
+      "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_03_fathersstjosephsociety_64kb.mp3",
+      "sizeMb": 3.8,
+      "topics": ["work", "tools", "instructions", "agriculture & building"],
+      "license": "Public Domain Mark 1.0",
+      "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+    },
+    {
+      "id": "kavirondo-ch-04",
+      "number": 4,
+      "title": "04 — In Caravan (Travel & Directions)",
+      "slug": "handbook-kavirondo3-1203-dholuophrasebook-04-fathersstjosephsociety",
+      "archiveFilename": "dholuophrasebook_04_fathersstjosephsociety_64kb.mp3",
+      "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_04_fathersstjosephsociety_64kb.mp3",
+      "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_04_fathersstjosephsociety_64kb.mp3",
+      "sizeMb": 2.0,
+      "topics": ["travel", "roads", "directions", "camping & rivers"],
+      "license": "Public Domain Mark 1.0",
+      "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+    },
+    {
+      "id": "kavirondo-ch-05",
+      "number": 5,
+      "title": "05 — A Visit to a Village",
+      "slug": "handbook-kavirondo3-1203-dholuophrasebook-05-fathersstjosephsociety",
+      "archiveFilename": "dholuophrasebook_05_fathersstjosephsociety_64kb.mp3",
+      "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_05_fathersstjosephsociety_64kb.mp3",
+      "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_05_fathersstjosephsociety_64kb.mp3",
+      "sizeMb": 8.2,
+      "topics": ["village life", "elders", "trade & market", "community dialogue"],
+      "license": "Public Domain Mark 1.0",
+      "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+    }
+  ]
+}

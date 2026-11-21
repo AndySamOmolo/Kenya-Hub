@@ -12,6 +12,7 @@ import {
   Modal,
   BackHandler,
   KeyboardAvoidingView,
+  Linking,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
@@ -4299,6 +4300,7 @@ export default function LanguageCourseTool({
                   cldr?: { locale?: string; months?: string[]; days?: string[] } | null;
                   sampleReadings?: { text: string; english?: string; source: string }[];
                   topFrequencyWords?: { word: string }[];
+                  audioChapters?: { id: string; title: string; audioUrl: string; fallbackUrl?: string; license: string }[];
                 }
               >
             )[selectedLanguageId];
@@ -4338,6 +4340,39 @@ export default function LanguageCourseTool({
                   <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: theme.textMuted }}>
                     Sample reading: &ldquo;{corpusLang.sampleReadings[0].text}&rdquo;
                   </Text>
+                )}
+                {corpusLang.audioChapters && corpusLang.audioChapters.length > 0 && (
+                  <View style={{ marginTop: 6, gap: 6 }}>
+                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11.5, color: theme.kenyaGreen }}>
+                      DHOLUO 1920 SPOKEN PHRASEBOOK ({corpusLang.audioChapters.length} CHAPTERS · PDM 1.0)
+                    </Text>
+                    {corpusLang.audioChapters.map((ch) => (
+                      <Pressable
+                        key={ch.id}
+                        onPress={() => {
+                          const played = playVerifiedAudio({ translation: ch.title, audioFile: ch.audioUrl });
+                          if (!played) {
+                            Linking.openURL(ch.fallbackUrl || ch.audioUrl).catch(() => {});
+                          }
+                        }}
+                        style={{
+                          flexDirection: "row",
+                          alignItems: "center",
+                          justifyContent: "space-between",
+                          borderWidth: 1,
+                          borderColor: `${theme.kenyaGreen}40`,
+                          borderRadius: 10,
+                          paddingHorizontal: 10,
+                          paddingVertical: 7,
+                        }}
+                      >
+                        <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11.5, color: theme.textPrimary, flex: 1 }}>
+                          {ch.title}
+                        </Text>
+                        <Feather name="volume-2" size={14} color={theme.kenyaGreen} />
+                      </Pressable>
+                    ))}
+                  </View>
                 )}
               </View>
             );

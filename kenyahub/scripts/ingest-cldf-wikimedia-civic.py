@@ -90,6 +90,14 @@ CIVIC_AGRI_SOURCES: list[dict[str, Any]] = [
     {"id": "constitution-kenya-2010-raw", "name": "Constitution of Kenya 2010 (Raw Statutory Text)", "license": "No Copyright (Statutory)", "url": "https://www.parliament.go.ke/sites/default/files/2017-05/The_Constitution_of_Kenya_2010.pdf"},
     {"id": "helmets-kenya-crop-v2", "name": "Helmets Kenya Crop v2", "license": "CC-BY-4.0", "url": "https://zenodo.org/api/records/15467063"},
     {"id": "cgiar-cgspace-ke", "name": "CGIAR CGSpace Kenyan Agronomy", "license": "CC-BY-4.0", "url": "https://cgspace.cgiar.org/items/ada1be52-0595-4dea-90d9-2e4dc12fe5df"},
+    {"id": "parliament-kenya-hansard", "name": "Parliament of Kenya Bilingual Hansard", "license": "No Copyright (Statutory)", "url": "https://www.parliament.go.ke/sites/default/files/2026-03/Tuesday%2C%2010th%20March%2C%202026%20at%202.30%20p.m..pdf"},
+    {"id": "hdx-kenya-worldpop-v2", "name": "HDX Kenya WorldPop v2.0", "license": "CC-BY-4.0", "url": "https://data.humdata.org/dataset/gridded-disaggregated-population-estimates-for-kenya-version-2-0"},
+    {"id": "who-bulletin-ccby3-igo", "name": "Bulletin of the World Health Organization (Bulletin ONLY)", "license": "CC-BY-3.0-IGO", "url": "https://www.who.int/publications/journals/bulletin/rights-and-permissions"},
+    {"id": "geonames-ke", "name": "GeoNames KE.zip & alternateNamesV2.zip", "license": "CC-BY-4.0", "url": "https://download.geonames.org/export/dump/KE.zip"},
+    {"id": "osm-geofabrik-kenya", "name": "OpenStreetMap (Geofabrik Kenya Extract)", "license": "ODbL-1.0", "url": "https://download.geofabrik.de/africa/kenya.html"},
+    {"id": "gbif-kenya-filtered", "name": "GBIF Kenya Occurrences (CC0_1_0 / CC_BY_4_0 only)", "license": "CC0-1.0 / CC-BY-4.0", "url": "https://api.gbif.org/v1/occurrence/search?country=KE&license=CC0_1_0&license=CC_BY_4_0&limit=300"},
+    {"id": "vascular-flora-kenya-mdpi", "name": "Vascular Flora of Kenya & FTEA Checklists (MDPI Plants 12/6/1336)", "license": "CC-BY-4.0", "url": "https://www.mdpi.com/2223-7747/12/6/1336"},
+    {"id": "global-useful-native-trees-globunt", "name": "GlobalUsefulNativeTrees (GlobUNT, CIFOR-ICRAF, PMC10400654)", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10400654/"}
 ]
 
 
@@ -171,6 +179,8 @@ def ingest_wikimedia_sources(dry_run: bool) -> None:
     for name, api, params, out_name in (
         ("Incubator Wp/luo", "https://incubator.wikimedia.org/w/api.php", {"action": "query", "list": "allpages", "apprefix": "Wp/luo/", "aplimit": 200, "format": "json"}, "incubator-luo.json"),
         ("Incubator Wp/niq", "https://incubator.wikimedia.org/w/api.php", {"action": "query", "list": "allpages", "apprefix": "Wp/niq/", "aplimit": 200, "format": "json"}, "incubator-niq.json"),
+        ("Incubator Wp/sgc", "https://incubator.wikimedia.org/w/api.php", {"action": "query", "list": "allpages", "apprefix": "Wp/sgc/", "aplimit": 200, "format": "json"}, "incubator-sgc.json"),
+        ("Incubator Wp/pko", "https://incubator.wikimedia.org/w/api.php", {"action": "query", "list": "allpages", "apprefix": "Wp/pko/", "aplimit": 200, "format": "json"}, "incubator-pko.json"),
         ("Swahili Wikisource", "https://wikisource.org/w/api.php", {"action": "query", "list": "categorymembers", "cmtitle": "Category:Kiswahili", "cmlimit": 200, "format": "json"}, "wikisource-sw.json"),
     ):
         try:
@@ -217,6 +227,67 @@ def ingest_civic_agri_sources(dry_run: bool) -> None:
             )
     except Exception as exc:
         print(f"  [warn] Constitution 2010 raw PDF extraction: {exc}")
+
+
+
+    # Wave 2: HDX Kenya CC-BY-4.0 (WorldPop v2.0, FSD Markets, DLP Schools)
+    for label, url, out_name in (
+        ("HDX WorldPop v2.0", "https://data.humdata.org/api/3/action/package_show?id=gridded-disaggregated-population-estimates-for-kenya-version-2-0", "hdx-kenya-worldpop-v2.json"),
+        ("HDX FSD Markets", "https://data.humdata.org/api/3/action/package_search?q=fsd+kenya+markets", "hdx-kenya-fsd-markets.json"),
+        ("HDX DLP Schools", "https://data.humdata.org/api/3/action/package_search?q=kenya+dlp+primary+schools", "hdx-kenya-dlp-schools.json"),
+    ):
+        try:
+            r = HTTP_SESSION.get(url, timeout=25)
+            if r.ok:
+                payload = r.json()
+                if isinstance(payload.get("result"), dict) and "results" in payload["result"]:
+                    payload["result"]["results"] = [
+                        p for p in payload["result"]["results"]
+                        if "cc-by" in str(p.get("license_id") or "").lower() and "nc" not in str(p.get("license_id") or "").lower()
+                    ]
+                (CIVIC_DIR / out_name).write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+        except Exception as exc:
+            print(f"  [warn] {label}: {exc}")
+
+    # Wave 2: GeoNames KE.zip (CC-BY-4.0) & GBIF Kenya (strictly CC0_1_0 / CC_BY_4_0)
+    try:
+        import zipfile
+        r = HTTP_SESSION.get("https://download.geonames.org/export/dump/KE.zip", timeout=60)
+        if r.ok:
+            with zipfile.ZipFile(io.BytesIO(r.content)) as zf:
+                raw_tsv = zf.read("KE.txt").decode("utf-8", errors="ignore")
+            places = [
+                {"geonameid": c[0], "name": c[1], "asciiname": c[2], "lat": c[4], "lon": c[5], "featureClass": c[6]}
+                for ln in raw_tsv.splitlines()
+                for c in [ln.split("\t")]
+                if len(c) >= 15
+            ]
+            (CIVIC_DIR / "geonames-ke.json").write_text(
+                json.dumps({"source": "https://download.geonames.org/export/dump/KE.zip", "license": "CC-BY-4.0", "count": len(places), "places": places[:5000]}, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+    except Exception as exc:
+        print(f"  [warn] GeoNames KE.zip: {exc}")
+
+    try:
+        gbif_allowed = frozenset({"CC0_1_0", "CC_BY_4_0", "http://creativecommons.org/publicdomain/zero/1.0/legalcode", "http://creativecommons.org/licenses/by/4.0/legalcode"})
+        r = HTTP_SESSION.get(
+            "https://api.gbif.org/v1/occurrence/search",
+            params=[("country", "KE"), ("license", "CC0_1_0"), ("license", "CC_BY_4_0"), ("limit", "300")],
+            timeout=30,
+        )
+        if r.ok:
+            rows = [
+                {"key": rec.get("key"), "scientificName": rec.get("scientificName"), "vernacularName": rec.get("vernacularName"), "locality": rec.get("locality"), "license": rec.get("license")}
+                for rec in r.json().get("results", [])
+                if rec.get("license") in gbif_allowed
+            ]
+            (CIVIC_DIR / "gbif-kenya-filtered.json").write_text(
+                json.dumps({"source": "https://api.gbif.org/v1/occurrence/search?country=KE", "license": "CC0-1.0 / CC-BY-4.0", "count": len(rows), "records": rows}, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+    except Exception as exc:
+        print(f"  [warn] GBIF Kenya: {exc}")
 
 
 def write_catalog_manifest() -> None:

@@ -1404,24 +1404,29 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
   },
   {
     "id": "librivox-kavirondo-audio-1920",
-    "title": "LibriVox Public Domain Spoken Audio: A Handbook of the Kavirondo Language (Dholuo Phraseology)",
-    "fileName": "luo.json",
-    "processedPath": "dictionaries/luo.json",
+    "title": "LibriVox Public Domain Spoken Audio: A Handbook of the Kavirondo Language — Part III (Dholuo Phrase Book)",
+    "fileName": "dholuo-audio-chapters.json",
+    "processedPath": "public/dholuo-audio-chapters.json",
     "languages": [
       "luo"
     ],
-    "published": "1920 / 2012 (CC0-1.0)",
-    "contribution": "Six public-domain (CC0-1.0) MP3 spoken-audio recordings of the Dholuo Phraseology and Exercises from the 1920 Mill-Hill Fathers Handbook (Internet Archive / LibriVox: https://archive.org/details/handbook_kavirondo3_1203).",
+    "published": "1920 / 2012",
+    "license": "Public Domain Mark 1.0",
+    "canonicalUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+    "category": "speech-audio",
+    "contribution": "Five public-domain (PDM 1.0, 1h 01m 25s total) bilingual English and Dholuo spoken-audio chapters read by Nicholas and Grace Bridgewater from the 1920 Mill-Hill Fathers Handbook (Part III: Usual, Servants & Meals, Working, In Caravan, A Visit to a Village).",
     "appUses": [
-      "dictionary",
-      "course lessons"
+      "course lessons",
+      "listening chapters",
+      "dictionary"
     ],
     "contentTypes": [
       "dialogue",
-      "vocabulary"
+      "vocabulary",
+      "audio"
     ],
     "ingestionStatus": "integrated",
-    "coverageNote": "Direct CC0 MP3 audio URLs linked across 978 Dholuo dictionary and phrasebook entries in luo.json."
+    "coverageNote": "All 5 bilingual Dholuo/English phrasebook chapters integrated into public/dholuo-audio-chapters.json, the Cloudflare R2 Opus pipeline, and the interactive Dholuo course listening player on Web and Android."
   },
   {
     "id": "anv-ke-kencorpus-modern-open-datasets",
@@ -3750,6 +3755,1441 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     ],
     "ingestionStatus": "integrated",
     "coverageNote": "221 verified Sudan Arabic entries staged in dictionaries/staging/nubi.json with Arabic script in context."
+  },
+  {
+    "id": "bibletts-luo-mdc-aligned",
+    "title": "BibleTTS Luo – Aligned Bible Speech (CLEAR Global / MDC — CC-BY-SA-4.0)",
+    "fileName": "https://mozilladatacollective.com/datasets/cmvi269po002607mi7oaodk1z",
+    "canonicalUrl": "https://mozilladatacollective.com/datasets/cmvi269po002607mi7oaodk1z",
+    "license": "CC-BY-SA-4.0",
+    "category": "speech-audio",
+    "scale": "77.41 h (40,972 clips)",
+    "languages": [
+      "luo"
+    ],
+    "published": "2026 (CC-BY-SA-4.0)",
+    "contribution": "Verse-aligned 24 kHz WAV recordings and TSV transcripts for Dholuo via Mozilla Data Collective.",
+    "appUses": [
+      "audio pronunciation",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ci-ingest-audio-and-text-r2.py (ingest_mdc_aligned_speech)."
+  },
+  {
+    "id": "wikimedia-commons-oromo-pronunciation",
+    "title": "Wikimedia Commons – Oromo Pronunciation (Category:Oromo_pronunciation — CC-BY-SA-4.0 / CC0)",
+    "fileName": "https://commons.wikimedia.org/wiki/Category:Oromo_pronunciation",
+    "canonicalUrl": "https://commons.wikimedia.org/wiki/Category:Oromo_pronunciation",
+    "license": "CC-BY-SA-4.0 / CC0",
+    "category": "wikimedia-open",
+    "languages": [
+      "borana"
+    ],
+    "published": "2026 (CC-BY-SA-4.0 / CC0)",
+    "contribution": "Isolated Afaan Oromo word and letter pronunciation OGG/WAV files filtered per file for CC-BY-SA/CC0.",
+    "appUses": [
+      "audio pronunciation",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ci-ingest-audio-and-text-r2.py (ingest_wikimedia_oromo_pronunciation)."
+  },
+  {
+    "id": "tatoeba-audio-ccby-cc0-swh-som",
+    "title": "Tatoeba Sentence Audio — Contributor-Filtered Subset (Swahili & Somali — CC-BY-2.0-FR / CC0-1.0)",
+    "fileName": "https://tatoeba.org/en/downloads",
+    "canonicalUrl": "https://tatoeba.org/en/downloads",
+    "license": "CC-BY-2.0-FR / CC0-1.0",
+    "category": "speech-audio",
+    "languages": [
+      "swahili",
+      "somali"
+    ],
+    "published": "2026 (CC-BY-2.0-FR / CC0-1.0)",
+    "contribution": "Sentence-level native pronunciation audio filtered strictly to CC-BY / CC0 contributors.",
+    "appUses": [
+      "audio pronunciation",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ci-ingest-audio-and-text-r2.py (ingest_tatoeba_filtered_audio)."
+  },
+  {
+    "id": "ishara-ksl-hand-landmarks-xki",
+    "title": "Ishara KSL Open Hand-Landmark Collection (Kenyan Sign Language — CC-BY-4.0)",
+    "fileName": "https://www.ishara.io/collect",
+    "canonicalUrl": "https://www.ishara.io/collect",
+    "license": "CC-BY-4.0",
+    "category": "sign-language",
+    "languages": [
+      "ksl"
+    ],
+    "published": "2026 (CC-BY-4.0)",
+    "contribution": "Privacy-preserving crowdsourced 21-point hand-landmark sequences for Kenyan Sign Language (xki).",
+    "appUses": [
+      "sign language reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Indexed in public/ksl-index.json and /tools/learn/ksl/."
+  },
+  {
+    "id": "archive-org-aporee-godown-nairobi-2010",
+    "title": "GoDown Art Centre, South B, Nairobi — Radio Aporee Soundscape (Archive.org — CC-BY-SA-3.0)",
+    "fileName": "https://archive.org/details/aporee_22438_26032",
+    "canonicalUrl": "https://archive.org/details/aporee_22438_26032",
+    "license": "CC-BY-SA-3.0",
+    "category": "speech-audio",
+    "languages": [
+      "english-ke"
+    ],
+    "published": "2010 (CC-BY-SA-3.0)",
+    "contribution": "Geotagged Nairobi cultural soundscape and Kenyan English spoken interview.",
+    "appUses": [
+      "audio pronunciation",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ci-ingest-audio-and-text-r2.py (ingest_archive_org_audio)."
+  },
+  {
+    "id": "archive-org-general-index-cc0",
+    "title": "The General Index (Public Resource, 2021 — Archive.org CC0-1.0)",
+    "fileName": "https://archive.org/details/GeneralIndex",
+    "canonicalUrl": "https://archive.org/details/GeneralIndex",
+    "license": "CC0-1.0",
+    "category": "nlp-parallel",
+    "scale": "37.6 GB (107M-article n-gram index + Swahili & Somali SRTs)",
+    "languages": [
+      "swahili",
+      "somali"
+    ],
+    "published": "2021 (CC0-1.0)",
+    "contribution": "Public Resource CC0-1.0 scientific n-gram index and multilingual subtitle files.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Cataloged for targeted Swahili/Somali SRT and scientific terminology extraction."
+  },
+  {
+    "id": "google-wmt24pp-en-sw-ke-2025",
+    "title": "Google WMT24++ Kenyan Swahili Human MT Benchmark (en-sw_KE — Apache-2.0)",
+    "fileName": "https://huggingface.co/datasets/google/wmt24pp",
+    "canonicalUrl": "https://huggingface.co/datasets/google/wmt24pp",
+    "license": "Apache-2.0",
+    "category": "nlp-parallel",
+    "scale": "998 en-sw_KE segments",
+    "languages": [
+      "swahili"
+    ],
+    "published": "2025 (Apache-2.0)",
+    "contribution": "Human translations and post-edits localized to Kenyan Swahili (sw_KE).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py."
+  },
+  {
+    "id": "glotcc-v1-kenya-2024",
+    "title": "GlotCC-V1 Low-Resource Common Crawl Corpus (CIS-LMU — CC0-1.0)",
+    "fileName": "https://huggingface.co/datasets/cis-lmu/GlotCC-V1",
+    "canonicalUrl": "https://huggingface.co/datasets/cis-lmu/GlotCC-V1",
+    "license": "CC0-1.0",
+    "category": "nlp-parallel",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana",
+      "luo",
+      "teso",
+      "kikuyu",
+      "kisii",
+      "maasai",
+      "kamba",
+      "kalenjin",
+      "luhya"
+    ],
+    "published": "2024 (CC0-1.0)",
+    "contribution": "Common Crawl–derived low-resource web corpus across 12 Kenyan languages for frequency modeling.",
+    "appUses": [
+      "vocabulary frequency"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (WEB_FREQ_CORPORA)."
+  },
+  {
+    "id": "facebook-belebele-kenya-2024",
+    "title": "Belebele Multilingual Reading Comprehension Benchmark (ACL 2024 — CC-BY-SA-4.0)",
+    "fileName": "https://huggingface.co/datasets/facebook/belebele",
+    "canonicalUrl": "https://huggingface.co/datasets/facebook/belebele",
+    "license": "CC-BY-SA-4.0",
+    "category": "nlp-parallel",
+    "scale": "900 items × 4 Kenyan languages",
+    "languages": [
+      "swahili",
+      "luo",
+      "somali",
+      "borana"
+    ],
+    "published": "2024 (CC-BY-SA-4.0)",
+    "contribution": "Parallel reading comprehension benchmark across Swahili, Dholuo, Somali, and Oromo.",
+    "appUses": [
+      "nlp benchmarks"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (HF_BENCHMARK_JOBS)."
+  },
+  {
+    "id": "lesan-hornmt-orm-som",
+    "title": "Lesan AI HornMT Multi-Way Parallel News Benchmark (Oromo & Somali — CC-BY-4.0)",
+    "fileName": "https://github.com/asmelashteka/HornMT",
+    "canonicalUrl": "https://github.com/asmelashteka/HornMT",
+    "license": "CC-BY-4.0",
+    "category": "nlp-parallel",
+    "languages": [
+      "borana",
+      "somali"
+    ],
+    "published": "2023 (CC-BY-4.0)",
+    "contribution": "Human-translated multi-way parallel news MT benchmark with 12-topic metadata for Oromo and Somali.",
+    "appUses": [
+      "dictionary",
+      "nlp benchmarks"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (DIRECT_PERMISSIVE_SOURCES)."
+  },
+  {
+    "id": "maseno-sdtc-swahili-dholuo-2024",
+    "title": "SDTC: Swahili and Dholuo Topic Classification Dataset (Maseno Univ. — CC-BY-4.0)",
+    "fileName": "https://zenodo.org/records/14353500",
+    "canonicalUrl": "https://zenodo.org/records/14353500",
+    "license": "CC-BY-4.0",
+    "category": "nlp-parallel",
+    "languages": [
+      "swahili",
+      "luo"
+    ],
+    "published": "2024 (CC-BY-4.0)",
+    "contribution": "12-topic short-text classification corpus for Kiswahili and Dholuo (Zenodo request access).",
+    "appUses": [
+      "nlp benchmarks"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Registered as research-only pending Zenodo access approval."
+  },
+  {
+    "id": "ai4d-zindi-swahili-news-4300294",
+    "title": "AI4D / Zindi Swahili News Classification Dataset (Zenodo 4300294 — CC-BY-4.0)",
+    "fileName": "https://zenodo.org/records/4300294",
+    "canonicalUrl": "https://zenodo.org/records/4300294",
+    "license": "CC-BY-4.0",
+    "category": "nlp-parallel",
+    "scale": "52.3 MB train.csv (6 categories)",
+    "languages": [
+      "swahili"
+    ],
+    "published": "2020 (CC-BY-4.0)",
+    "contribution": "Six-category Kiswahili news topic classification dataset.",
+    "appUses": [
+      "nlp benchmarks"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (DIRECT_PERMISSIVE_SOURCES)."
+  },
+  {
+    "id": "opus-globalvoices-en-sw",
+    "title": "OPUS GlobalVoices Swahili–English Parallel Corpus (CC-BY-3.0 / CC-BY-4.0)",
+    "fileName": "https://opus.nlpl.eu/",
+    "canonicalUrl": "https://opus.nlpl.eu/",
+    "license": "CC-BY-3.0 / CC-BY-4.0",
+    "category": "nlp-parallel",
+    "languages": [
+      "swahili"
+    ],
+    "published": "2018–2024 (CC-BY-3.0 / 4.0)",
+    "contribution": "Human-translated citizen-media news parallel corpus pairing English and Kiswahili.",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (DIRECT_PERMISSIVE_SOURCES)."
+  },
+  {
+    "id": "opus-ubuntu-kenya",
+    "title": "OPUS Ubuntu Software Localization Parallel Corpus (Helsinki-NLP/opus_ubuntu — BSD-3-Clause)",
+    "fileName": "https://huggingface.co/datasets/Helsinki-NLP/opus_ubuntu",
+    "canonicalUrl": "https://huggingface.co/datasets/Helsinki-NLP/opus_ubuntu",
+    "license": "BSD-3-Clause",
+    "category": "nlp-parallel",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana",
+      "kikuyu",
+      "luo"
+    ],
+    "published": "2020–2025 (BSD-3-Clause)",
+    "contribution": "Parallel desktop UI localization strings across 5 Kenyan languages.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (HF_PERMISSIVE_TEXT_JOBS)."
+  },
+  {
+    "id": "allenai-nllb-mined-bitext-kenya",
+    "title": "OPUS NLLB Mined Web Bitext (allenai/nllb — ODC-By-1.0)",
+    "fileName": "https://huggingface.co/datasets/allenai/nllb",
+    "canonicalUrl": "https://huggingface.co/datasets/allenai/nllb",
+    "license": "ODC-By-1.0",
+    "category": "nlp-parallel",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana",
+      "kikuyu",
+      "kamba",
+      "luo"
+    ],
+    "published": "2022–2025 (ODC-By-1.0)",
+    "contribution": "LASER-mined web parallel bitext across 6 Kenyan languages (distinct from NC model weights).",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (HF_PERMISSIVE_TEXT_JOBS)."
+  },
+  {
+    "id": "opus-mozilla-l10n-kenya",
+    "title": "OPUS Mozilla-l10n Parallel UI Strings (MPL-2.0)",
+    "fileName": "https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw",
+    "canonicalUrl": "https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw",
+    "license": "MPL-2.0",
+    "category": "nlp-parallel",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana",
+      "kikuyu"
+    ],
+    "published": "2020–2025 (MPL-2.0)",
+    "contribution": "Parallel Mozilla software UI strings complementing OPUS Wikimedia.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Pairs with OPUS Wikimedia en-sw and Mozilla Pontoon."
+  },
+  {
+    "id": "bigscience-xp3-sw-ki",
+    "title": "BigScience xP3 Multitask Instruction-Tuning Prompts (Swahili & Kikuyu — Apache-2.0)",
+    "fileName": "https://huggingface.co/datasets/bigscience/xP3",
+    "canonicalUrl": "https://huggingface.co/datasets/bigscience/xP3",
+    "license": "Apache-2.0",
+    "category": "nlp-parallel",
+    "scale": "Swahili 1.11M, Kikuyu 265K",
+    "languages": [
+      "swahili",
+      "kikuyu"
+    ],
+    "published": "2022 (Apache-2.0)",
+    "contribution": "Multitask prompted instruction-tuning dataset for Swahili and Kikuyu.",
+    "appUses": [
+      "nlp benchmarks"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (HF_BENCHMARK_JOBS)."
+  },
+  {
+    "id": "falletti-remijsen-2025-sengwer-glossa",
+    "title": "Ghost segments in Sengwer nouns (Falletti & Remijsen, Glossa 10(1), 2025 — CC-BY-4.0)",
+    "fileName": "https://www.glossa-journal.org/article/id/16526/",
+    "canonicalUrl": "https://www.glossa-journal.org/article/id/16526/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "scale": "1,372 Sengwer nouns (2,490 forms)",
+    "languages": [
+      "kalenjin",
+      "pokot"
+    ],
+    "published": "2025 (Glossa, CC-BY-4.0)",
+    "contribution": "Inflectional analysis of 1,372 Sengwer nouns with Endo-Marakwet, Pokot, and Sabaot cognates.",
+    "appUses": [
+      "dictionary",
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 Glossa linguistic source."
+  },
+  {
+    "id": "kanampiu-martin-culbertson-2025-kiitharaka-glossa",
+    "title": "Kîîtharaka noun class system (Kanampiu, Martin & Culbertson, Glossa 2025 — CC-BY-4.0)",
+    "fileName": "https://www.glossa-journal.org/article/id/11755/",
+    "canonicalUrl": "https://www.glossa-journal.org/article/id/11755/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "scale": "2,327 nouns across 17 classes + 45.8k corpus",
+    "languages": [
+      "meru"
+    ],
+    "published": "2025 (Glossa, CC-BY-4.0)",
+    "contribution": "Morphological study of 2,327 Kîîtharaka nouns across 17 classes.",
+    "appUses": [
+      "dictionary",
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 Glossa linguistic source."
+  },
+  {
+    "id": "bossi-diercks-2019-kipsigis-glossa",
+    "title": "V1 in Kipsigis: Head movement & scrambling (Bossi & Diercks, Glossa 2019 — CC-BY-4.0)",
+    "fileName": "https://www.glossa-journal.org/article/id/5172/",
+    "canonicalUrl": "https://www.glossa-journal.org/article/id/5172/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "kalenjin"
+    ],
+    "published": "2019 (Glossa, CC-BY-4.0)",
+    "contribution": "Interlinear glossed Kipsigis VSO/VOS word-order and focus syntax.",
+    "appUses": [
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "grammar",
+      "dialogue"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 Glossa linguistic source."
+  },
+  {
+    "id": "kouneli-2022-kipsigis-inflection-glossa",
+    "title": "Inflectional classes in Kipsigis (Kouneli, Glossa 7(1), 2022 — CC-BY-4.0)",
+    "fileName": "https://www.glossa-journal.org/article/id/8549/",
+    "canonicalUrl": "https://www.glossa-journal.org/article/id/8549/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "kalenjin"
+    ],
+    "published": "2022 (Glossa, CC-BY-4.0)",
+    "contribution": "Kipsigis Class I/II verbal conjugation paradigms and tonal melodies.",
+    "appUses": [
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "grammar",
+      "vocabulary"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 Glossa linguistic source."
+  },
+  {
+    "id": "glossa-2022-nominal-classification-marakwet-kipsigis",
+    "title": "Interface Legibility and Nominal Classification (Glossa 2022 — CC-BY-4.0)",
+    "fileName": "https://www.glossa-journal.org/article/id/5825/",
+    "canonicalUrl": "https://www.glossa-journal.org/article/id/5825/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "kalenjin"
+    ],
+    "published": "2022 (Glossa, CC-BY-4.0)",
+    "contribution": "Tripartite number-marking nominal paradigms in Endo-Marakwet and Kipsigis.",
+    "appUses": [
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "grammar",
+      "vocabulary"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 Glossa linguistic source."
+  },
+  {
+    "id": "baker-2022-lubukusu-reflexive-glossa",
+    "title": "On Agree without agreement as a source of reflexive voice (Baker, Glossa 2022 — CC-BY-4.0)",
+    "fileName": "https://www.glossa-journal.org/article/id/5732/",
+    "canonicalUrl": "https://www.glossa-journal.org/article/id/5732/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "luhya"
+    ],
+    "published": "2022 (Glossa, CC-BY-4.0)",
+    "contribution": "Glossed Lubukusu reflexive, reciprocal, and ditransitive paradigms.",
+    "appUses": [
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "grammar",
+      "vocabulary"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 Glossa linguistic source."
+  },
+  {
+    "id": "njas-2026-gikuyu-auxiliary-verbs",
+    "title": "Auxiliary Verb Constructions and Decategorialization in Gĩkũyũ (NJAS 2026 — CC-BY-4.0)",
+    "fileName": "https://www.njas.fi/njas/article/view/1401",
+    "canonicalUrl": "https://www.njas.fi/njas/article/view/1401",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "kikuyu"
+    ],
+    "published": "2026 (NJAS, CC-BY-4.0)",
+    "contribution": "Morphosyntactic comparison of lexical, auxiliary, and light verbs in Gĩkũyũ (post-2023 CC-BY-4.0 NJAS).",
+    "appUses": [
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "grammar",
+      "vocabulary"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified post-2023 CC-BY-4.0 NJAS paper."
+  },
+  {
+    "id": "gibson-et-al-2024-sheng-morphosyntax",
+    "title": "Morphosyntactic retention and innovation in Sheng (Gibson et al., Studies in Language 2024 — CC-BY-4.0)",
+    "fileName": "https://www.jbe-platform.com/content/journals/10.1075/sl.22017.gib",
+    "canonicalUrl": "https://www.jbe-platform.com/content/journals/10.1075/sl.22017.gib",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "swahili"
+    ],
+    "published": "2024 (Studies in Language, CC-BY-4.0)",
+    "contribution": "Structured noun-class assignment, verbal morphology, and syntax in Sheng.",
+    "appUses": [
+      "grammar lessons",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "grammar",
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 Studies in Language paper."
+  },
+  {
+    "id": "alkindi-2022-sabaot-borrowing-kiswahili",
+    "title": "Core/Cultural Borrowing in Sabaot from Kiswahili (Al-Kindi IJLSS 2022 — CC-BY-4.0)",
+    "fileName": "https://al-kindipublisher.com/index.php/ijlss/article/download/3772/3466",
+    "canonicalUrl": "https://al-kindipublisher.com/index.php/ijlss/article/download/3772/3466",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "kalenjin",
+      "swahili"
+    ],
+    "published": "2022 (IJLSS, CC-BY-4.0)",
+    "contribution": "Structured wordlist tables of Sabaot nominal borrowings from Kiswahili.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 linguistic paper."
+  },
+  {
+    "id": "royallite-2023-ekegusii-kiswahili-loanwords",
+    "title": "Consonants in Kiswahili nouns borrowed into EkeGusii (Royallite African Languages 2023 — CC-BY-4.0)",
+    "fileName": "https://www.royalliteglobal.com/african-languages/article/view/1059",
+    "canonicalUrl": "https://www.royalliteglobal.com/african-languages/article/view/1059",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "kisii",
+      "swahili"
+    ],
+    "published": "2023 (Royallite, CC-BY-4.0)",
+    "contribution": "Phonological and orthographic loanword tables mapping Swahili into Ekegusii.",
+    "appUses": [
+      "dictionary",
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 linguistic paper."
+  },
+  {
+    "id": "abubakar-2016-swahili-bdi-ii-plosone",
+    "title": "Swahili Beck Depression Inventory-II & Kilifi Mental-Health Idioms (Abubakar et al., PLOS ONE 2016 — CC-BY-4.0)",
+    "fileName": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0151030",
+    "canonicalUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0151030",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "swahili",
+      "mijikenda"
+    ],
+    "published": "2016 (PLOS ONE, CC-BY-4.0)",
+    "contribution": "S2 Table of Kenyan Swahili mental-health and distress idioms validated in Kilifi County.",
+    "appUses": [
+      "dictionary",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "research-only",
+    "coverageNote": "Verified CC-BY-4.0 PLOS ONE study."
+  },
+  {
+    "id": "pmc1570449-bussmann-2006-samburu-ethnobotany",
+    "title": "Ethnobotany of the Samburu of Mt. Nyiru (Bussmann, JEET 2006, PMC1570449 — CC-BY-2.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1570449/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1570449/",
+    "license": "CC-BY-2.0",
+    "category": "modern-monograph",
+    "scale": "448 Samburu plant taxa",
+    "languages": [
+      "samburu"
+    ],
+    "published": "2006 (JEET, CC-BY-2.0)",
+    "contribution": "448 Samburu vernacular plant names and traditional ethnobotanical uses.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc2412850-nanyingi-2008-samburu-ethnopharmacology",
+    "title": "Ethnopharmacological survey of Samburu district (Nanyingi et al., JEET 2008, PMC2412850 — CC-BY-2.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2412850/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2412850/",
+    "license": "CC-BY-2.0",
+    "category": "modern-monograph",
+    "scale": "56 medicinal plants + disease terms",
+    "languages": [
+      "samburu",
+      "turkana",
+      "maasai"
+    ],
+    "published": "2008 (JEET, CC-BY-2.0)",
+    "contribution": "56 medicinal plant species and human/veterinary disease terms across Samburu, Turkana, and Maasai.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc4658748-bjora-2015-kenyan-aloes",
+    "title": "The uses of Kenyan aloes across 9 communities (Bjorå et al., JEET 2015, PMC4658748 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/",
+    "license": "CC-BY-4.0 / CC0-1.0",
+    "category": "modern-monograph",
+    "languages": [
+      "kamba",
+      "kikuyu",
+      "kisii",
+      "maasai",
+      "embu",
+      "taita",
+      "kalenjin",
+      "samburu",
+      "somali"
+    ],
+    "published": "2015 (JEET, CC-BY-4.0)",
+    "contribution": "Ethnotaxonomic binomial lexicon for 19 Kenyan Aloe species across 9 Kenyan language groups.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc3974104-kipkore-2014-marakwet-medicinal-plants",
+    "title": "Medicinal plants used by the Marakwet Community (Kipkore et al., JEET 2014, PMC3974104 — CC-BY-2.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3974104/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3974104/",
+    "license": "CC-BY-2.0",
+    "category": "modern-monograph",
+    "scale": "111 Marakwet medicinal plants",
+    "languages": [
+      "kalenjin"
+    ],
+    "published": "2014 (JEET, CC-BY-2.0)",
+    "contribution": "111 medicinal plant species with Marakwet local names and disease concepts.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc1397805-njoroge-bussmann-2006a-kikuyu-antimalarial",
+    "title": "Antimalarial remedies among the Kikuyus (Njoroge & Bussmann, JEET 2006, PMC1397805 — CC-BY-2.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1397805/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1397805/",
+    "license": "CC-BY-2.0",
+    "category": "modern-monograph",
+    "scale": "58 Kikuyu antimalarial plants",
+    "languages": [
+      "kikuyu"
+    ],
+    "published": "2006 (JEET, CC-BY-2.0)",
+    "contribution": "58 antimalarial plant species with Kikuyu vernacular names.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc1770906-njoroge-bussmann-2006b-kikuyu-ent",
+    "title": "Traditional management of ENT diseases in Central Kenya (Njoroge & Bussmann, JEET 2006, PMC1770906 — CC-BY-2.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1770906/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1770906/",
+    "license": "CC-BY-2.0",
+    "category": "modern-monograph",
+    "scale": "67 Kikuyu ENT medicinal plants",
+    "languages": [
+      "kikuyu"
+    ],
+    "published": "2006 (JEET, CC-BY-2.0)",
+    "contribution": "67 ENT medicinal plant species with Kikuyu vernacular names.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc1409767-owuor-kisangau-2006-antivenin-kamba-luo",
+    "title": "Kenyan medicinal plants used as antivenin (Owuor & Kisangau, JEET 2006, PMC1409767 — CC-BY-2.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1409767/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1409767/",
+    "license": "CC-BY-2.0",
+    "category": "modern-monograph",
+    "scale": "32 snakebite plant species",
+    "languages": [
+      "kamba",
+      "luo"
+    ],
+    "published": "2006 (JEET, CC-BY-2.0)",
+    "contribution": "32 snakebite plant species with Kamba and Dholuo vernacular names and medical phrases.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc3539861-gakuubi-wanzala-2012-meru-ethnovet",
+    "title": "Livestock health plants in Buuri, Meru County (Gakuubi & Wanzala, JEET 2012, PMC3539861 — CC-BY-2.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3539861/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3539861/",
+    "license": "CC-BY-2.0",
+    "category": "modern-monograph",
+    "scale": "48 plants + 30 Meru disease terms",
+    "languages": [
+      "meru"
+    ],
+    "published": "2012 (JEET, CC-BY-2.0)",
+    "contribution": "48 ethnoveterinary plant species and 30 Meru livestock disease terms.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc7154930-mbuni-2020-cherangani-hills-plants",
+    "title": "Medicinal Plants around Cherangani Hills (Mbuni et al., Plants 2020, PMC7154930 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "scale": "296 Marakwet, Pokot & Luhya species",
+    "languages": [
+      "kalenjin",
+      "pokot",
+      "luhya"
+    ],
+    "published": "2020 (MDPI Plants, CC-BY-4.0)",
+    "contribution": "296 medicinal plant species tagged with Marakwet, Pokot, and Luhya vernacular names.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc7020225-nankaya-2020-maasai-medicinal-plants",
+    "title": "Medicinal Plants of the Maasai of Kenya (Nankaya et al., Plants 2020, PMC7020225 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7020225/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7020225/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "scale": "289 Maasai medicinal plant species",
+    "languages": [
+      "maasai"
+    ],
+    "published": "2020 (MDPI Plants, CC-BY-4.0)",
+    "contribution": "289 Maasai medicinal plant species across Narok and Kajiado counties.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc7306085-omara-2020-kenyan-antimalarial-plants",
+    "title": "Antimalarial Plants Used across Kenyan Communities (Omara, eCAM 2020, PMC7306085 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "scale": "286 species across 12 Kenyan groups",
+    "languages": [
+      "mijikenda",
+      "kamba",
+      "kikuyu",
+      "kalenjin",
+      "kuria",
+      "luo",
+      "maasai",
+      "swahili"
+    ],
+    "published": "2020 (eCAM, CC-BY-4.0)",
+    "contribution": "286 antimalarial plant species language-tagged across 12 Kenyan communities.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc7315313-omara-2020-antivenom-plants-kenya",
+    "title": "Plants Used in Antivenom Therapy in Rural Kenya (Omara et al., J. Toxicol. 2020, PMC7315313 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7315313/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7315313/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "scale": "54 antivenom species across 6 groups",
+    "languages": [
+      "luo",
+      "kamba",
+      "kikuyu",
+      "kalenjin",
+      "maasai",
+      "swahili"
+    ],
+    "published": "2020 (J. Toxicol., CC-BY-4.0)",
+    "contribution": "54 antivenom plant species language-tagged across 6 Kenyan communities.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc7149339-wanjohi-2020-marakwet-wild-plants",
+    "title": "Ethnobotanical Study of Medicinal Wild Plants among the Marakwet (Wanjohi et al., eCAM 2020, PMC7149339 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7149339/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7149339/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "scale": "115 plants + 41 disease terms",
+    "languages": [
+      "kalenjin"
+    ],
+    "published": "2020 (eCAM, CC-BY-4.0)",
+    "contribution": "115 indigenous medicinal wild plant species and 41 Marakwet local disease terms.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc7103046-mutie-2020-mutomo-hill-kamba",
+    "title": "Mutomo Hill Plant Sanctuary Ethnobotanical Survey (Mutie et al., eCAM 2020, PMC7103046 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7103046/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7103046/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "languages": [
+      "kamba"
+    ],
+    "published": "2020 (eCAM, CC-BY-4.0)",
+    "contribution": "Structured Kitui County Kamba vernacular plant inventory.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc7469313-mailu-2020-luo-respiratory-plants",
+    "title": "Respiratory medicinal plants among the Luo of Kisumu East (Mailu et al., BMC 2020, PMC7469313 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7469313/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7469313/",
+    "license": "CC-BY-4.0 / CC0-1.0",
+    "category": "modern-monograph",
+    "scale": "44 Luo respiratory medicinal plants",
+    "languages": [
+      "luo",
+      "swahili"
+    ],
+    "published": "2020 (BMC, CC-BY-4.0)",
+    "contribution": "44 respiratory medicinal plant species with Dholuo and Kiswahili vernacular names.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc3954169-otieno-analo-2012-kakamega-luhya",
+    "title": "Medicinal plants in and around Kakamega forest (Otieno & Analo, F1000Research 2012, PMC3954169 — CC-BY)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954169/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954169/",
+    "license": "CC-BY / CC0-1.0",
+    "category": "modern-monograph",
+    "scale": "40 Kakamega forest Luhya plants",
+    "languages": [
+      "luhya"
+    ],
+    "published": "2012 (F1000Research, CC-BY)",
+    "contribution": "40 Kakamega forest medicinal plant species with Luhya local names.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "pmc12615033-2025-nyatike-luo-snakebite-plants",
+    "title": "Snakebite Medicinal Plants in Nyatike, Migori County (2025, PMC12615033 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12615033/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12615033/",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "scale": "13 Migori Dholuo snakebite plants",
+    "languages": [
+      "luo"
+    ],
+    "published": "2025 (CC-BY-4.0)",
+    "contribution": "13 snakebite medicinal plant species with Dholuo vernacular names.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "bussmann-2006-maasai-sekenani-valley",
+    "title": "Plant use of the Maasai of Sekenani Valley (Bussmann et al., JEET 2006 — CC-BY-2.0)",
+    "fileName": "https://doi.org/10.1186/1746-4269-2-22",
+    "canonicalUrl": "https://doi.org/10.1186/1746-4269-2-22",
+    "license": "CC-BY-2.0",
+    "category": "modern-monograph",
+    "scale": "39+ Maasai medicinal plants",
+    "languages": [
+      "maasai"
+    ],
+    "published": "2006 (JEET, CC-BY-2.0)",
+    "contribution": "39+ traditional and medicinal plant species with Maasai vernacular names.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-pmc-ethnobotany.py."
+  },
+  {
+    "id": "mozilla-pontoon-sw-luo",
+    "title": "Mozilla Pontoon Localization (Swahili & Dholuo — MPL-2.0)",
+    "fileName": "https://pontoon.mozilla.org/sw/",
+    "canonicalUrl": "https://pontoon.mozilla.org/sw/",
+    "license": "MPL-2.0",
+    "category": "lexicon-cldr",
+    "scale": "4,623 Swahili · 808 Dholuo strings",
+    "languages": [
+      "swahili",
+      "luo"
+    ],
+    "published": "2026 (MPL-2.0)",
+    "contribution": "Fluent UI terminology and Common Voice localization glossaries.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "aosp-values-sw-en-ke",
+    "title": "Android Open Source Project (AOSP: values-sw & values-en-rKE — Apache-2.0)",
+    "fileName": "https://source.android.com/docs/setup/about/licenses",
+    "canonicalUrl": "https://source.android.com/docs/setup/about/licenses",
+    "license": "Apache-2.0",
+    "category": "lexicon-cldr",
+    "languages": [
+      "swahili",
+      "english-ke"
+    ],
+    "published": "2026 (Apache-2.0)",
+    "contribution": "Standardized Android framework XML UI strings for Swahili and Kenyan English.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "libreoffice-l10n-sw",
+    "title": "LibreOffice Localization (TDF Weblate Swahili — MPL-2.0)",
+    "fileName": "https://translations.documentfoundation.org/projects/libo_ui-master/scp2sourceooo/sw_TZ/",
+    "canonicalUrl": "https://translations.documentfoundation.org/projects/libo_ui-master/scp2sourceooo/sw_TZ/",
+    "license": "MPL-2.0",
+    "category": "lexicon-cldr",
+    "languages": [
+      "swahili"
+    ],
+    "published": "2026 (MPL-2.0)",
+    "contribution": "Bilingual Swahili productivity software terminology translation memories.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "gnome-kde-fedora-l10n-sw-so",
+    "title": "GNOME / KDE / Fedora Localization (Swahili & Somali — GPL/LGPL)",
+    "fileName": "https://l10n.gnome.org/teams/sw/",
+    "canonicalUrl": "https://l10n.gnome.org/teams/sw/",
+    "license": "GPL / LGPL",
+    "category": "lexicon-cldr",
+    "languages": [
+      "swahili",
+      "somali"
+    ],
+    "published": "2026 (GPL/LGPL)",
+    "contribution": "GNU Gettext .po desktop terminology catalogs for Swahili and Somali.",
+    "appUses": [
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "wikimedia-incubator-kipsigis-pokot",
+    "title": "Wikimedia Incubator Kenyan Test Wikis Delta (Kipsigis Wp/sgc & Pokot Wp/pko — CC-BY-SA-4.0)",
+    "fileName": "https://incubator.wikimedia.org/wiki/Wp/luo",
+    "canonicalUrl": "https://incubator.wikimedia.org/wiki/Wp/luo",
+    "license": "CC-BY-SA-4.0",
+    "category": "wikimedia-open",
+    "languages": [
+      "kalenjin",
+      "pokot"
+    ],
+    "published": "2026 (CC-BY-SA-4.0)",
+    "contribution": "Incubating encyclopedic entries in Kipsigis (sgc) and Pokot (pko).",
+    "appUses": [
+      "dictionary",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-cldf-wikimedia-civic.py & build-open-corpus-index.py."
+  },
+  {
+    "id": "parliament-kenya-bilingual-hansard",
+    "title": "Parliament of Kenya Bilingual Hansard (National Assembly & Senate — Statutory PD)",
+    "fileName": "https://www.parliament.go.ke/sites/default/files/2026-03/Tuesday%2C%2010th%20March%2C%202026%20at%202.30%20p.m..pdf",
+    "canonicalUrl": "https://www.parliament.go.ke/sites/default/files/2026-03/Tuesday%2C%2010th%20March%2C%202026%20at%202.30%20p.m..pdf",
+    "license": "Public Domain (Statutory)",
+    "category": "oer-civic-agri",
+    "languages": [
+      "swahili",
+      "english-ke"
+    ],
+    "published": "2026 (Statutory PD)",
+    "contribution": "Official Kenyan English and Kiswahili parliamentary debate transcripts.",
+    "appUses": [
+      "civic reference",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "hdx-kenya-worldpop-markets-dlp-schools",
+    "title": "HDX Kenya CC-BY-4.0 Civic Datasets (WorldPop v2.0, FSD Markets & 21,729 DLP Schools)",
+    "fileName": "https://data.humdata.org/dataset/gridded-disaggregated-population-estimates-for-kenya-version-2-0",
+    "canonicalUrl": "https://data.humdata.org/dataset/gridded-disaggregated-population-estimates-for-kenya-version-2-0",
+    "license": "CC-BY-4.0",
+    "category": "oer-civic-agri",
+    "languages": [
+      "swahili",
+      "english-ke"
+    ],
+    "published": "2024–2026 (CC-BY-4.0)",
+    "contribution": "County demographic grids, local market names, and 21,729 Kenyan primary school names.",
+    "appUses": [
+      "counties directory",
+      "civic reference"
+    ],
+    "contentTypes": [
+      "cultural-reference",
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "who-bulletin-kenya-public-health",
+    "title": "Bulletin of the World Health Organization (Kenya / East Africa Public Health — CC-BY-3.0-IGO)",
+    "fileName": "https://www.who.int/publications/journals/bulletin/rights-and-permissions",
+    "canonicalUrl": "https://www.who.int/publications/journals/bulletin/rights-and-permissions",
+    "license": "CC-BY-3.0-IGO",
+    "category": "oer-civic-agri",
+    "languages": [
+      "english-ke"
+    ],
+    "published": "2026 (CC-BY-3.0-IGO)",
+    "contribution": "Peer-reviewed public health terminology (strictly Bulletin only; general WHO docs blocked).",
+    "appUses": [
+      "civic reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "geonames-kenya-toponyms",
+    "title": "GeoNames Kenya Gazetteer (KE.zip & alternateNamesV2.zip — CC-BY-4.0)",
+    "fileName": "http://download.geonames.org/export/dump/",
+    "canonicalUrl": "http://download.geonames.org/export/dump/",
+    "license": "CC-BY-4.0",
+    "category": "oer-civic-agri",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "luo",
+      "kalenjin",
+      "maasai",
+      "somali",
+      "borana",
+      "kamba",
+      "luhya",
+      "mijikenda"
+    ],
+    "published": "2026 (CC-BY-4.0)",
+    "contribution": "Structured TSV dumps of Kenyan populated places, rivers, hills, and multilingual alternate names.",
+    "appUses": [
+      "counties directory",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-cldf-wikimedia-civic.py (civic/geonames-ke.json)."
+  },
+  {
+    "id": "osm-geofabrik-kenya",
+    "title": "OpenStreetMap Geofabrik Kenya Extract (ODbL-1.0)",
+    "fileName": "https://download.geofabrik.de/africa/kenya.html",
+    "canonicalUrl": "https://download.geofabrik.de/africa/kenya.html",
+    "license": "ODbL-1.0",
+    "category": "oer-civic-agri",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "luo",
+      "kalenjin",
+      "maasai",
+      "somali",
+      "borana",
+      "kamba",
+      "luhya",
+      "mijikenda"
+    ],
+    "published": "2026 (ODbL-1.0)",
+    "contribution": "Daily Kenya .osm.pbf extract with indigenous toponyms and localized name:* tags.",
+    "appUses": [
+      "counties directory"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "gbif-kenya-filtered-occurrences",
+    "title": "GBIF Kenya Occurrences & Vernacular Names (Filtered CC0 / CC-BY-4.0)",
+    "fileName": "https://bdj.pensoft.net/article/208528/",
+    "canonicalUrl": "https://bdj.pensoft.net/article/208528/",
+    "license": "CC0-1.0 / CC-BY-4.0",
+    "category": "oer-civic-agri",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "luo",
+      "kamba",
+      "maasai",
+      "kalenjin",
+      "luhya",
+      "samburu",
+      "mijikenda"
+    ],
+    "published": "2026 (CC0-1.0 / CC-BY-4.0)",
+    "contribution": "Scientific biodiversity taxonomy paired with Kenyan vernacular species names (iNaturalist NC filtered out).",
+    "appUses": [
+      "dictionary",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-cldf-wikimedia-civic.py (civic/gbif-kenya-filtered.json)."
+  },
+  {
+    "id": "vascular-flora-kenya-mdpi-plants",
+    "title": "Vascular Flora of Kenya & FTEA Checklists (MDPI Plants 12/6/1336 — CC-BY-4.0)",
+    "fileName": "https://www.mdpi.com/2223-7747/12/6/1336",
+    "canonicalUrl": "https://www.mdpi.com/2223-7747/12/6/1336",
+    "license": "CC-BY-4.0",
+    "category": "oer-civic-agri",
+    "scale": "6,293 indigenous + 588 exotic Kenyan species",
+    "languages": [
+      "swahili",
+      "english-ke"
+    ],
+    "published": "2023 (CC-BY-4.0)",
+    "contribution": "Authoritative Kenyan vascular plant checklist across floral regions K1–K7.",
+    "appUses": [
+      "dictionary",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "global-useful-native-trees-globunt",
+    "title": "GlobalUsefulNativeTrees (GlobUNT, CIFOR-ICRAF, PMC10400654 — CC-BY-4.0)",
+    "fileName": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10400654/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10400654/",
+    "license": "CC-BY-4.0",
+    "category": "oer-civic-agri",
+    "scale": "14,014 useful native tree species",
+    "languages": [
+      "swahili",
+      "english-ke"
+    ],
+    "published": "2023 (CC-BY-4.0)",
+    "contribution": "Native Kenyan tree utility taxonomy cross-linked to WCVP/POWO.",
+    "appUses": [
+      "dictionary",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
   }
 ];
 

@@ -173,6 +173,51 @@ HF_PERMISSIVE_TEXT_JOBS: list[dict[str, Any]] = [
         "gated": True,
         "citation": "AI4Agric MT-Eng-Kln Agronomy Parallel Corpus (CC-BY-4.0, https://huggingface.co/datasets/AI4Agric/MT-Eng-Kln)",
     },
+    {
+        "id": "google-wmt24pp-en-sw-ke",
+        "lang_id": "swahili",
+        "repo": "google/wmt24pp",
+        "config": "en-sw_KE",
+        "split": "train",
+        "en_cols": ("source", "en", "english"),
+        "tr_cols": ("target", "sw_KE", "sw", "swahili"),
+        "target_cat": "phrases",
+        "license": "Apache-2.0",
+        "gated": False,
+        "citation": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)",
+    },
+    *[
+        {
+            "id": f"opus-ubuntu-en-{lc}",
+            "lang_id": lid,
+            "repo": "Helsinki-NLP/opus_ubuntu",
+            "config": f"en-{lc}",
+            "split": "train",
+            "en_cols": ("en", "english"),
+            "tr_cols": (lc, lid),
+            "target_cat": "phrases",
+            "license": "BSD-3-Clause",
+            "gated": False,
+            "citation": f"OPUS Ubuntu en-{lc} UI Localization (BSD-3-Clause, https://huggingface.co/datasets/Helsinki-NLP/opus_ubuntu)",
+        }
+        for lc, lid in (("sw", "swahili"), ("so", "somali"), ("om", "borana"), ("ki", "kikuyu"), ("luo", "luo"))
+    ],
+    *[
+        {
+            "id": f"allenai-nllb-eng-{nc.split('_')[0]}",
+            "lang_id": lid,
+            "repo": "allenai/nllb",
+            "config": f"eng_Latn-{nc}",
+            "split": "train",
+            "en_cols": ("eng_Latn", "en"),
+            "tr_cols": (nc, lid),
+            "target_cat": "phrases",
+            "license": "ODC-By-1.0",
+            "gated": False,
+            "citation": f"OPUS NLLB Mined Bitext eng_Latn-{nc} (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+        }
+        for nc, lid in (("swh_Latn", "swahili"), ("som_Latn", "somali"), ("gaz_Latn", "borana"), ("kik_Latn", "kikuyu"), ("kam_Latn", "kamba"), ("luo_Latn", "luo"))
+    ]
 ]
 
 HF_BENCHMARK_JOBS: list[dict[str, Any]] = [
@@ -191,6 +236,9 @@ HF_BENCHMARK_JOBS: list[dict[str, Any]] = [
     {"id": "tabularis-swahili-sentiment", "repo": "tabularisai/swahili-sentiment-dataset", "config": "default", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "swahili-finetome-20k", "repo": "ngusadeep/Swahili-FineTome-20k", "config": "default", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "ea-mobile-money-safety-audit", "repo": "LeoCleinte/east-africa-mobile-money-safety-audit", "config": "default", "splits": ("train",), "license": "CC-BY-4.0", "langs": ["swahili"]},
+    {"id": "facebook-belebele-ke", "repo": "facebook/belebele", "config": "default", "splits": ("swh_Latn", "luo_Latn", "som_Latn", "gaz_Latn"), "license": "CC-BY-SA-4.0", "langs": ["swahili", "luo", "somali", "borana"]},
+    {"id": "bigscience-xp3-sw", "repo": "bigscience/xP3", "config": "sw", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili"]},
+    {"id": "bigscience-xp3-ki", "repo": "bigscience/xP3", "config": "ki", "splits": ("train",), "license": "Apache-2.0", "langs": ["kikuyu"]}
 ]
 
 OER_STORYBOOK_JOBS: list[dict[str, Any]] = [
@@ -204,6 +252,7 @@ WEB_FREQ_CORPORA: list[dict[str, Any]] = [
     {"id": "hplt-v3", "repo": "HPLT/HPLT3.0", "configs": ["swh_Latn", "som_Latn", "orm_Latn", "kik_Latn", "luo_Latn", "kam_Latn"], "license": "CC0-1.0"},
     {"id": "wura", "repo": "castorini/wura", "configs": ["swa", "som", "orm", "kik", "luo"], "license": "Apache-2.0"},
     {"id": "culturax", "repo": "uonlp/CulturaX", "configs": ["sw", "so"], "license": "ODC-By"},
+    {"id": "glotcc-v1", "repo": "cis-lmu/GlotCC-V1", "configs": ["swh-Latn", "som-Latn", "orm-Latn", "luo-Latn", "teo-Latn", "kik-Latn", "guz-Latn", "mas-Latn", "kam-Latn"], "license": "CC0-1.0"}
 ]
 
 DIRECT_PERMISSIVE_SOURCES: list[dict[str, Any]] = [
@@ -242,6 +291,9 @@ DIRECT_PERMISSIVE_SOURCES: list[dict[str, Any]] = [
         "license": "CC-BY-2.0",
         "citation": "Tatoeba Text-Only Exports (CC-BY-2.0, https://tatoeba.org/en/downloads; NC/ND audio excluded)",
     },
+    {"id": "hornmt-orm-som", "lang_id": "all", "url": "https://raw.githubusercontent.com/asmelashteka/HornMT/main/data", "license": "CC-BY-4.0", "citation": "Lesan AI HornMT Parallel News Benchmark (CC-BY-4.0, https://github.com/asmelashteka/HornMT)"},
+    {"id": "ai4d-zindi-swahili-news-4300294", "lang_id": "swahili", "url": "https://zenodo.org/api/records/4300294", "license": "CC-BY-4.0", "citation": "AI4D / Zindi Swahili News Classification (CC-BY-4.0, https://zenodo.org/records/4300294)"},
+    {"id": "opus-globalvoices-en-sw", "lang_id": "swahili", "url": "https://object.pouta.csc.fi/OPUS-GlobalVoices/v2018q4/moses/en-sw.txt.zip", "license": "CC-BY-3.0 / CC-BY-4.0", "citation": "OPUS GlobalVoices en-sw Parallel Corpus (CC-BY-3.0/4.0, https://opus.nlpl.eu/)"}
 ]
 
 CLDR_49_KENYAN_LOCALES: list[tuple[str, str]] = [
@@ -505,6 +557,60 @@ def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool) -> dic
                     if sheng_out:
                         (BENCHMARKS_DIR / "strathmore-sheng-mental-health-14637639.json").write_text(json.dumps(sheng_out, indent=2, ensure_ascii=False), encoding="utf-8")
 
+            elif src["id"] == "hornmt-orm-som":
+                eng_lines = HTTP_SESSION.get(f"{src['url']}/eng.txt", timeout=30).text.splitlines()
+                for code, lid in (("orm", "borana"), ("som", "somali")):
+                    if lang_filter not in ("all", lid):
+                        continue
+                    tr_resp = HTTP_SESSION.get(f"{src['url']}/{code}.txt", timeout=30)
+                    if not tr_resp.ok:
+                        continue
+                    tr_lines = tr_resp.text.splitlines()
+                    batch = [
+                        {"english": e.strip(), "translation": t.strip(), "context": src["citation"]}
+                        for e, t in list(zip(eng_lines, tr_lines))[:max_rows]
+                        if e.strip() and t.strip()
+                    ]
+                    added[lid] = added.get(lid, 0) + merge_entries_into_dictionary(lid, batch, "phrases")
+                BENCHMARKS_DIR.mkdir(parents=True, exist_ok=True)
+                (BENCHMARKS_DIR / "hornmt-orm-som.jsonl").write_text(
+                    "\n".join(json.dumps({"eng": e}, ensure_ascii=False) for e in eng_lines[:max_rows]) + "\n",
+                    encoding="utf-8",
+                )
+            elif src["id"] == "ai4d-zindi-swahili-news-4300294":
+                r = HTTP_SESSION.get(src["url"], timeout=30)
+                if r.ok:
+                    zfiles = r.json().get("files", [])
+                    csv_f = next((f for f in zfiles if str(f.get("key", "")).lower().endswith(".csv")), None)
+                    if csv_f:
+                        dl = (csv_f.get("links") or {}).get("self")
+                        if dl:
+                            import csv as _csv
+                            BENCHMARKS_DIR.mkdir(parents=True, exist_ok=True)
+                            out_rows = []
+                            with HTTP_SESSION.get(dl, stream=True, timeout=60) as cr:
+                                lines_iter = (ln.decode("utf-8", errors="ignore") for ln in cr.iter_lines())
+                                for idx, row in enumerate(_csv.DictReader(lines_iter)):
+                                    if idx >= max_rows:
+                                        break
+                                    out_rows.append(json.dumps(row, ensure_ascii=False))
+                            if out_rows:
+                                (BENCHMARKS_DIR / "ai4d-zindi-swahili-news-4300294.jsonl").write_text("\n".join(out_rows) + "\n", encoding="utf-8")
+            elif src["id"] == "opus-globalvoices-en-sw":
+                r = HTTP_SESSION.get(src["url"], timeout=45)
+                if r.ok:
+                    with zipfile.ZipFile(io.BytesIO(r.content)) as zf:
+                        en_f = next((n for n in zf.namelist() if n.endswith(".en")), None)
+                        sw_f = next((n for n in zf.namelist() if n.endswith(".sw")), None)
+                        if en_f and sw_f:
+                            en_l = zf.read(en_f).decode("utf-8", errors="ignore").splitlines()
+                            sw_l = zf.read(sw_f).decode("utf-8", errors="ignore").splitlines()
+                            batch = [
+                                {"english": e.strip(), "translation": s.strip(), "context": src["citation"]}
+                                for e, s in list(zip(en_l, sw_l))[:max_rows]
+                                if e.strip() and s.strip()
+                            ]
+                            added["swahili"] = added.get("swahili", 0) + merge_entries_into_dictionary("swahili", batch, "phrases")
             elif src["id"] == "tatoeba-text-only":
                 # Strictly text-only exports (never audio) for Swahili, Somali, Oromo, Rendille
                 for iso, lang_id in (("swh", "swahili"), ("som", "somali"), ("orm", "borana"), ("rel", "rendille")):

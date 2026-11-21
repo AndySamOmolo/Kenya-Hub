@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { BookOpen, Calendar, Database, Globe2, Headphones, Sparkles } from "lucide-react";
+import React, { useState } from "react";
+import { BookOpen, Calendar, Database, ExternalLink, Globe2, Headphones, Sparkles, Volume2 } from "lucide-react";
 import { getLanguageOpenCorpus, OPEN_CORPUS_INDEX } from "@/lib/open-corpus";
 
 interface OpenCorpusPanelProps {
@@ -11,11 +11,15 @@ interface OpenCorpusPanelProps {
 
 export default function OpenCorpusPanel({ languageId, languageName }: OpenCorpusPanelProps) {
   const data = getLanguageOpenCorpus(languageId);
+  const chapters = data?.audioChapters ?? [];
+  const [activeChapterId, setActiveChapterId] = useState<string>(chapters[0]?.id ?? "");
+
   if (!data) return null;
 
   const hasAny =
     Boolean(data.typology) ||
     data.r2AudioClips > 0 ||
+    chapters.length > 0 ||
     Boolean(data.cldr) ||
     data.sampleReadings.length > 0 ||
     data.topFrequencyWords.length > 0 ||
@@ -23,6 +27,8 @@ export default function OpenCorpusPanel({ languageId, languageName }: OpenCorpus
     data.benchmarks.length > 0;
 
   if (!hasAny) return null;
+
+  const activeChapter = chapters.find((ch) => ch.id === activeChapterId) ?? chapters[0] ?? null;
 
   return (
     <section className="rounded-2xl border border-gold/25 bg-bg-card p-5 space-y-5">
@@ -37,6 +43,86 @@ export default function OpenCorpusPanel({ languageId, languageName }: OpenCorpus
           CLDR {OPEN_CORPUS_INDEX.cldrVersion} · CC-BY / CC0 / PD
         </span>
       </div>
+
+      {/* Spoken Bilingual Phrasebook Audiobook Chapters (e.g., 1920 Kavirondo Dholuo Phrase Book) */}
+      {chapters.length > 0 && activeChapter && (
+        <div className="rounded-xl border border-kenya-green/35 bg-kenya-green/5 p-4 space-y-3.5">
+          <div className="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wider text-kenya-green flex items-center gap-1.5">
+                <Volume2 className="h-3.5 w-3.5" />
+                Bilingual Spoken Phrasebook Listening Chapters ({chapters.length} Chapters · 1h 01m)
+              </p>
+              <p className="text-xs text-text-secondary mt-1">
+                <em>A Handbook of the Kavirondo Language — Part III: Dholuo Phrase Book (1920)</em>, read in English &amp; Dholuo by Nicholas &amp; Grace Bridgewater (LibriVox, Public Domain Mark 1.0).
+              </p>
+            </div>
+            <a
+              href={activeChapter.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 rounded-lg border border-kenya-green/30 bg-bg-card px-2.5 py-1 text-[0.72rem] font-semibold text-kenya-green hover:underline shrink-0"
+            >
+              <span>Archive.org Source</span>
+              <ExternalLink className="h-3 w-3" />
+            </a>
+          </div>
+
+          <div className="flex flex-wrap gap-1.5">
+            {chapters.map((ch) => {
+              const isSelected = ch.id === activeChapter.id;
+              return (
+                <button
+                  key={ch.id}
+                  type="button"
+                  onClick={() => setActiveChapterId(ch.id)}
+                  className={`rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition-all cursor-pointer ${
+                    isSelected
+                      ? "border-kenya-green bg-kenya-green text-white"
+                      : "border-border bg-bg-card text-text-secondary hover:border-kenya-green/50"
+                  }`}
+                >
+                  {ch.title}
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="rounded-xl border border-border bg-bg-card p-3.5 space-y-2.5">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="text-sm font-bold text-text-primary">{activeChapter.title}</p>
+              <span className="text-[0.68rem] font-mono text-text-muted">
+                {activeChapter.license}
+                {activeChapter.sizeMb ? ` · ${activeChapter.sizeMb} MB` : ""}
+              </span>
+            </div>
+            <audio
+              key={activeChapter.id}
+              controls
+              preload="none"
+              className="w-full h-10"
+            >
+              <source src={activeChapter.audioUrl} />
+              {activeChapter.fallbackUrl && activeChapter.fallbackUrl !== activeChapter.audioUrl && (
+                <source src={activeChapter.fallbackUrl} type="audio/mpeg" />
+              )}
+              Your browser does not support embedded audio playback.
+            </audio>
+            {activeChapter.topics && activeChapter.topics.length > 0 && (
+              <div className="flex flex-wrap gap-1.5 pt-0.5">
+                {activeChapter.topics.map((topic) => (
+                  <span
+                    key={topic}
+                    className="rounded-full border border-border bg-bg-elevated/60 px-2 py-0.5 text-[0.68rem] text-text-secondary"
+                  >
+                    {topic}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Typology & Live R2 Audio Metrics */}
       {data.typology && (

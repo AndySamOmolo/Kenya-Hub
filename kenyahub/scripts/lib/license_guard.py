@@ -64,6 +64,46 @@ BLOCKED_NON_COMMERCIAL_REPOS: frozenset[str] = frozenset({
     "ice-corpora.uzh.ch",                      # ICE-EA (academic / NC)
     "laws.africa",                             # Laws.Africa typeset PDFs (CC-BY-NC-SA-4.0)
     "kenyalaw.org",                            # Kenya Law typeset PDFs (use raw Parliament text)
+    # Wave 2 — 13 Newly Caught NC & Provenance Traps (avoiding bare njas.fi / who.int / aporee_ collisions)
+    "prota.prota4u.org",
+    "prota4u.org",
+    "tropical.theferns.info",
+    "clearglobal.org/resources/dholuo-speech-dataset",
+    "cmkh2stj6004mmj0751rn8vq6",
+    "mozilladatacollective.com/datasets/cmkh2stj6004mmj0751rn8vq6",
+    "davidrumsey.com",
+    "archive.org/details/dr_",
+    "dr_east-africa-philips-regional-wall-map-of-7119000",
+    "ke.building.2009",
+    "journals.flvc.org/sal",
+    "afrikanistik-aegyptologie-online.de",
+    "nflrc.hawaii.edu/ldc",
+    "openbookpublishers.com/books/10.11647/obp.0405",
+    "njas-pre-2023",
+    "iris.who.int",
+    "who.int/iris",
+    "who.int/publications/i/item",
+    "knbs-mini-dhs-2025",
+    "openknowledge.fao.org",
+    "fao.org/documents",
+    "inaturalist.org",
+    "gbif-inaturalist-unfiltered",
+    "opus.nlpl.eu/datasets/qed",
+    "opus.nlpl.eu/datasets/ted2020",
+    "opus-qed",
+    "opus-ted2020",
+    "mamakobe/luhya-multilingual-dataset",
+    "michsethowusu/swahili-words",
+    "lughagen",
+    "elararchive.org",
+    "pangloss.cnrs.fr",
+    "cocoon.huma-num.fr",
+    "paradisec.org.au",
+    "africamuseum.be/en/research/discover/human_sciences/culture_society/blr",
+    "blr3",
+    "aporee_31294",
+    "aporee_31294_35978",
+    "periscopefilm",
 })
 
 BLOCKED_WEB_DOMAINS: frozenset[str] = frozenset({
@@ -112,9 +152,7 @@ SECULAR_OPUS_SUBCORPORA: frozenset[str] = frozenset({
     "ubuntu",
     "mozilla",
     "kde4",
-    "qed",
     "globalvoices",
-    "ted2020",
     "ccaligned",
 })
 
@@ -225,4 +263,44 @@ def is_allowed_cldf_constituent(dataset_id: str | None, license_str: str | None 
         lic = license_str.strip().lower()
         if "nc" in lic or "noncommercial" in lic or "other" in lic:
             return False
+    return True
+
+
+_BIBLE_BOOK_EXTENDED_RE = re.compile(
+    r"(?:^\s*\d{1,3}\s*:\s*\d{1,3}\b|"
+    r"\b(?:genesis|exodus|leviticus|numbers|deuteronomy|joshua|judges|samuel|kings|chronicles|"
+    r"psalms?|proverbs|ecclesiastes|isaiah|jeremiah|ezekiel|daniel|matthew|mark|luke|john|"
+    r"acts|romans|corinthians|galatians|ephesians|philippians|colossians|thessalonians|"
+    r"timothy|titus|hebrews|james|peter|jude|revelation|"
+    r"mwanzo|kutoka|zaburi|mithali|mathayo|mariko|luka|yohana|johana|matendo|warumi|"
+    r"wakorintho|wagalatia|waefeso|waebrania|ufunuo|jo-roma|jo-korintho|chakruok)\s+\d{1,3}\s*:\s*\d{1,3}\b)",
+    re.IGNORECASE,
+)
+
+BLOCKED_ROW_SOURCES: frozenset[str] = frozenset({
+    "bible", "new testament", "old testament", "step bible", "stepbible",
+    "scripture", "gospel", "jw300", "watchtower", "biblica", "bible society",
+    "iba", "qed", "ted2020", "twitter", "x.com", "llama",
+})
+
+
+def is_secular_commercial_row(
+    english: str,
+    target: str,
+    source: str | None = None,
+    domain: str | None = None,
+    url: str | None = None,
+) -> bool:
+    """Strip Bible/JW/QED/TED2020/Twitter/unverified provenance rows."""
+    if url and is_blocked_url(url):
+        return False
+    meta = f"{source or ''} {domain or ''}".strip().lower()
+    if meta and any(bad in meta for bad in BLOCKED_ROW_SOURCES):
+        return False
+    combined = f"{english} {target}"
+    if _BIBLE_BOOK_EXTENDED_RE.search(combined):
+        return False
+    low = combined.lower()
+    if any(m in low for m in ("jw.org", "watchtower", "step bible", "jehovah's witnesses", "joneno mag jehova")):
+        return False
     return True

@@ -1,8 +1,10 @@
 {
-  "generatedAt": "2026-11-21T13:38:33.511756+00:00",
+  "generatedAt": "2026-11-21T14:31:43.841381+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
     "totalR2AudioClips": 5260,
+    "totalAudioChapters": 5,
+    "totalKslVideos": 0,
     "totalStagedVarieties": 3,
     "totalStagedEntries": 321,
     "totalBenchmarkRows": 12943,
@@ -269,7 +271,8 @@
           "id": "tabularis-swahili-sentiment",
           "rows": 2500
         }
-      ]
+      ],
+      "audioChapters": []
     },
     "kikuyu": {
       "languageId": "kikuyu",
@@ -339,7 +342,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "luo": {
       "languageId": "luo",
@@ -413,7 +417,99 @@
           "license": "CC-BY-SA-4.0"
         }
       ],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": [
+        {
+          "id": "kavirondo-ch-01",
+          "number": 1,
+          "title": "01 — Usual Greetings & Everyday Phrases",
+          "slug": "handbook-kavirondo3-1203-dholuophrasebook-01-fathersstjosephsociety",
+          "archiveFilename": "dholuophrasebook_01_fathersstjosephsociety_64kb.mp3",
+          "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_01_fathersstjosephsociety_64kb.mp3",
+          "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_01_fathersstjosephsociety_64kb.mp3",
+          "sizeMb": 5.1,
+          "topics": [
+            "greetings",
+            "everyday questions",
+            "politeness",
+            "basic conversation"
+          ],
+          "license": "Public Domain Mark 1.0",
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+        },
+        {
+          "id": "kavirondo-ch-02",
+          "number": 2,
+          "title": "02 — Servants, Meals & Household Phrases",
+          "slug": "handbook-kavirondo3-1203-dholuophrasebook-02-fathersstjosephsociety",
+          "archiveFilename": "dholuophrasebook_02_fathersstjosephsociety_64kb.mp3",
+          "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_02_fathersstjosephsociety_64kb.mp3",
+          "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_02_fathersstjosephsociety_64kb.mp3",
+          "sizeMb": 9.1,
+          "topics": [
+            "food & meals",
+            "kitchen",
+            "household requests",
+            "hospitality"
+          ],
+          "license": "Public Domain Mark 1.0",
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+        },
+        {
+          "id": "kavirondo-ch-03",
+          "number": 3,
+          "title": "03 — Working & Daily Tasks",
+          "slug": "handbook-kavirondo3-1203-dholuophrasebook-03-fathersstjosephsociety",
+          "archiveFilename": "dholuophrasebook_03_fathersstjosephsociety_64kb.mp3",
+          "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_03_fathersstjosephsociety_64kb.mp3",
+          "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_03_fathersstjosephsociety_64kb.mp3",
+          "sizeMb": 3.8,
+          "topics": [
+            "work",
+            "tools",
+            "instructions",
+            "agriculture & building"
+          ],
+          "license": "Public Domain Mark 1.0",
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+        },
+        {
+          "id": "kavirondo-ch-04",
+          "number": 4,
+          "title": "04 — In Caravan (Travel & Directions)",
+          "slug": "handbook-kavirondo3-1203-dholuophrasebook-04-fathersstjosephsociety",
+          "archiveFilename": "dholuophrasebook_04_fathersstjosephsociety_64kb.mp3",
+          "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_04_fathersstjosephsociety_64kb.mp3",
+          "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_04_fathersstjosephsociety_64kb.mp3",
+          "sizeMb": 2.0,
+          "topics": [
+            "travel",
+            "roads",
+            "directions",
+            "camping & rivers"
+          ],
+          "license": "Public Domain Mark 1.0",
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+        },
+        {
+          "id": "kavirondo-ch-05",
+          "number": 5,
+          "title": "05 — A Visit to a Village",
+          "slug": "handbook-kavirondo3-1203-dholuophrasebook-05-fathersstjosephsociety",
+          "archiveFilename": "dholuophrasebook_05_fathersstjosephsociety_64kb.mp3",
+          "audioUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_05_fathersstjosephsociety_64kb.mp3",
+          "fallbackUrl": "https://archive.org/download/handbook_kavirondo3_1203/dholuophrasebook_05_fathersstjosephsociety_64kb.mp3",
+          "sizeMb": 8.2,
+          "topics": [
+            "village life",
+            "elders",
+            "trade & market",
+            "community dialogue"
+          ],
+          "license": "Public Domain Mark 1.0",
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+        }
+      ]
     },
     "luhya": {
       "languageId": "luhya",
@@ -478,7 +574,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "kamba": {
       "languageId": "kamba",
@@ -543,7 +640,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "kalenjin": {
       "languageId": "kalenjin",
@@ -609,7 +707,8 @@
           "license": "CC-BY-SA-4.0"
         }
       ],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "kisii": {
       "languageId": "kisii",
@@ -672,7 +771,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "meru": {
       "languageId": "meru",
@@ -734,7 +834,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "somali": {
       "languageId": "somali",
@@ -936,7 +1037,8 @@
         }
       ],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "maasai": {
       "languageId": "maasai",
@@ -997,7 +1099,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "turkana": {
       "languageId": "turkana",
@@ -1028,7 +1131,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "mijikenda": {
       "languageId": "mijikenda",
@@ -1061,7 +1165,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "teso": {
       "languageId": "teso",
@@ -1121,7 +1226,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "embu": {
       "languageId": "embu",
@@ -1180,7 +1286,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "taita": {
       "languageId": "taita",
@@ -1242,7 +1349,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "taveta": {
       "languageId": "taveta",
@@ -1275,7 +1383,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "pokomo": {
       "languageId": "pokomo",
@@ -1309,7 +1418,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "borana": {
       "languageId": "borana",
@@ -1384,7 +1494,8 @@
           "id": "masakhane-afrixnli-orm",
           "rows": 1050
         }
-      ]
+      ],
+      "audioChapters": []
     },
     "rendille": {
       "languageId": "rendille",
@@ -1428,7 +1539,8 @@
       ],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "samburu": {
       "languageId": "samburu",
@@ -1486,7 +1598,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "ilchamus": {
       "languageId": "ilchamus",
@@ -1515,7 +1628,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "pokot": {
       "languageId": "pokot",
@@ -1544,7 +1658,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "daasanach": {
       "languageId": "daasanach",
@@ -1576,7 +1691,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     },
     "english-ke": {
       "languageId": "english-ke",
@@ -1612,7 +1728,8 @@
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
-      "benchmarks": []
+      "benchmarks": [],
+      "audioChapters": []
     }
   },
   "stagedVarieties": [
@@ -1991,7 +2108,7 @@
     "sources": [
       {
         "id": "maseno-ksl-pose-14338329",
-        "title": "Maseno KSL Pose Dataset (Open Access CC-BY-4.0, MediaPipe Pose Data.zip 1.5 GB)",
+        "title": "Maseno University KSL Dataset — Anonymized Stickman Videos & MediaPipe Holistic Poses (Zenodo 14338329, 1.54 GB)",
         "license": "CC-BY-4.0",
         "url": "https://zenodo.org/records/14338329",
         "access": "public_zenodo",
@@ -1999,11 +2116,27 @@
       },
       {
         "id": "open-sign-bibles-xki",
-        "title": "Open Sign Bibles — Kenyan Sign Language (xki)",
+        "title": "Open Sign Bibles — Kenyan Sign Language (xki) Human Signing Videos & Verse Alignments",
         "license": "CC-BY-SA-4.0",
         "url": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
         "access": "public_hf",
         "register": "religious_liturgical"
+      },
+      {
+        "id": "gdl-ksl-video-storybooks",
+        "title": "Global Digital Library — Kenyan Sign Language (xki) Human Signing Video Storybooks",
+        "license": "CC-BY-4.0 (verify per book)",
+        "url": "https://content.digitallibrary.io/xki",
+        "access": "public_web",
+        "status": "open_video_storybooks"
+      },
+      {
+        "id": "ishara-ksl-hand-landmarks",
+        "title": "Ishara KSL Open Hand-Landmark Collection (21-point hand landmarks, no face PII)",
+        "license": "CC-BY-4.0",
+        "url": "https://www.ishara.io/collect",
+        "access": "public_portal",
+        "status": "active_collection"
       }
     ],
     "zenodoFiles": [
@@ -2014,6 +2147,29 @@
         "downloadUrl": "https://zenodo.org/api/records/14338329/files/Pose%20Data.zip/content"
       }
     ],
+    "videos": [],
+    "storybooks": [
+      {
+        "id": "gdl-xki-atienos-friend",
+        "title": "Atieno's Friend (Kenyan Sign Language Video Storybook)",
+        "language": "xki",
+        "format": "Human KSL Video Storybook",
+        "license": "CC-BY-4.0 (Global Digital Library)",
+        "url": "https://content.digitallibrary.io/xki/book/atienos-friend/?reportProblem=1",
+        "description": "Illustrated children's story performed by a human Kenyan Sign Language signer on the open Global Digital Library."
+      },
+      {
+        "id": "gdl-xki-catalog",
+        "title": "Global Digital Library — Full Kenyan Sign Language (xki) Catalog",
+        "language": "xki",
+        "format": "Human KSL Video Storybooks",
+        "license": "Creative Commons (verify per title)",
+        "url": "https://content.digitallibrary.io/xki",
+        "description": "Browse open-access Kenyan Sign Language human-signed reading books for learners and families."
+      }
+    ],
+    "videoCount": 0,
+    "extractedSignCount": 0,
     "glossCount": 0
   },
   "benchmarks": [

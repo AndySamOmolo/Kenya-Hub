@@ -186,7 +186,7 @@ def get_s3_client():
         return None
 
 
-def transcode_to_opus_bytes(input_path: str, opus_path: str) -> bytes | None:
+def transcode_to_opus_bytes(input_path: str, opus_path: str, timeout_sec: int = 15) -> bytes | None:
     try:
         subprocess.run(
             [
@@ -198,7 +198,7 @@ def transcode_to_opus_bytes(input_path: str, opus_path: str) -> bytes | None:
             check=True,
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
-            timeout=15,
+            timeout=timeout_sec,
         )
         if os.path.exists(opus_path) and os.path.getsize(opus_path) > 0:
             with open(opus_path, "rb") as f:
@@ -287,7 +287,7 @@ def transcode_and_upload_worker(s3_client, lang_id: str, slug: str, arr, sr: int
     return None
 
 
-def transcode_raw_bytes_and_upload_worker(s3_client, lang_id: str, slug: str, raw_bytes: bytes, ext: str = ".mp3") -> tuple[str, str] | None:
+def transcode_raw_bytes_and_upload_worker(s3_client, lang_id: str, slug: str, raw_bytes: bytes, ext: str = ".mp3", timeout_sec: int = 15) -> tuple[str, str] | None:
     if R2_UPLOAD_DISABLED or not raw_bytes:
         return None
     safe_ext = ext if ext.startswith(".") else f".{ext}"
@@ -296,7 +296,7 @@ def transcode_raw_bytes_and_upload_worker(s3_client, lang_id: str, slug: str, ra
         opus_path = os.path.join(tmpdir, "clip.opus")
         with open(in_path, "wb") as f:
             f.write(raw_bytes)
-        opus_bytes = transcode_to_opus_bytes(in_path, opus_path)
+        opus_bytes = transcode_to_opus_bytes(in_path, opus_path, timeout_sec=timeout_sec)
         if not opus_bytes:
             return None
         r2_key = f"audio/{lang_id}/{slug}.opus"
@@ -504,7 +504,6 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
         {"lang_id": "maasai", "repo": "MCAA1-MSU/anv_data_ke", "config": "maasai", "split": "train", "text_col": "transcription", "gated": True},
         {"lang_id": "samburu", "repo": "MCAA1-MSU/anv_data_ke", "config": "maasai", "split": "train", "text_col": "transcription", "gated": True, "row_filter": ("dialect", "samburu")},
         {"lang_id": "somali", "repo": "MCAA1-MSU/anv_data_ke", "config": "somali", "split": "train", "text_col": "transcription", "gated": True},
-        {"lang_id": "swahili", "repo": "michsethowusu/swahili-words-speech-text-parallel", "config": "default", "split": "train", "text_col": "text", "decode_audio": False},
         {"lang_id": "swahili", "repo": "stem-content-ai-project/swahili-speech", "config": "default", "split": "train", "text_col": "sentence", "decode_audio": False},
         {"lang_id": "somali", "repo": "skydheere/soomali-asr-dataset", "config": "default", "split": "train", "text_col": "sentence", "decode_audio": False},
         {"lang_id": "kalenjin", "repo": "kln001/kalenjin-asr-data", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
@@ -891,6 +890,249 @@ def ingest_direct_archive_audio(s3_client, uploaded_keys: dict, dataset_status: 
             dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
 
 
+
+
+def ingest_mdc_aligned_speech(s3_client, uploaded_keys: dict, dataset_status: dict):
+    """Ingest non-Common-Voice MDC speech corpora (CLEAR Global BibleTTS Luo CC-BY-SA-4.0)."""
+    if not INCLUDE_MDC_COMMON_VOICE or R2_UPLOAD_DISABLED or global_budget_exceeded():
+        return
+    mdc_aligned_targets = [
+        ("luo", "bibletts-luo-mdc", "cmvi269po002607mi7oaodk1z", "CC-BY-SA-4.0"),
+    ]
+    for lang_id, slug_id, mdc_id, lic in mdc_aligned_targets:
+        job_key = f"mozilla-data-collective/{slug_id}::{mdc_id}::{lang_id}"
+        if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") == "completed":
+            continue
+        if not MDC_API_KEY:
+            dataset_status[job_key] = {
+                "status": "pending_mdc_api_key",
+                "gated": True,
+                "lang_id": lang_id,
+                "license": lic,
+                "url": f"https://mozilladatacollective.com/datasets/{mdc_id}",
+                "updatedAt": datetime.now(timezone.utc).isoformat(),
+            }
+            continue
+        log(f"[MDC Aligned {lic}] Fetching {slug_id} ({mdc_id}) -> {lang_id}...")
+        try:
+            with tempfile.TemporaryDirectory() as tmpdir:
+                arch_path = os.path.join(tmpdir, f"{slug_id}.tar.gz")
+                downloaded_via_sdk = False
+                try:
+                    from datacollective import download_dataset as mdc_download_dataset
+                    os.environ["MDC_API_KEY"] = MDC_API_KEY
+                    os.environ["MDC_DOWNLOAD_PATH"] = tmpdir
+                    sdk_path = mdc_download_dataset(mdc_id)
+                    if sdk_path and os.path.exists(str(sdk_path)):
+                        arch_path = str(sdk_path)
+                        downloaded_via_sdk = True
+                except Exception as sdk_exc:
+                    log(f"  [info] datacollective SDK fallback for {mdc_id}: {sdk_exc}")
+                if not downloaded_via_sdk:
+                    dl_url = f"https://datacollective.mozillafoundation.org/api/datasets/{mdc_id}/download"
+                    resp = HTTP_SESSION.post(dl_url, headers={"Authorization": f"Bearer {MDC_API_KEY}"}, timeout=60)
+                    if not resp.ok:
+                        dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"MDC HTTP {resp.status_code}", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                        continue
+                    presigned = (resp.json() or {}).get("downloadUrl") or (resp.json() or {}).get("url")
+                    if not presigned:
+                        continue
+                    with HTTP_SESSION.get(presigned, stream=True, timeout=180) as file_resp:
+                        file_resp.raise_for_status()
+                        with open(arch_path, "wb") as f:
+                            for chunk in file_resp.iter_content(chunk_size=1024 * 1024):
+                                f.write(chunk)
+                count = _ingest_tar_or_zip_audio(s3_client, uploaded_keys, lang_id, arch_path)
+            dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
+            log(f"  -> Uploaded {count} clips for {lang_id} from MDC {mdc_id}.")
+        except Exception as exc:
+            dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
+
+
+def ingest_wikimedia_oromo_pronunciation(s3_client, uploaded_keys: dict, dataset_status: dict):
+    """Ingest Oromo pronunciation OGG/WAV files from Wikimedia Commons (per-file CC-BY-SA / CC0 check)."""
+    if not INCLUDE_LINGUA_LIBRE or R2_UPLOAD_DISABLED or global_budget_exceeded():
+        return
+    job_key = "wikimedia-commons/oromo-pronunciation::orm::borana"
+    if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") == "completed":
+        return
+    log("[Wikimedia Commons Oromo] Querying Category:Oromo_pronunciation (strict CC-BY-SA / CC0 filter)...")
+    try:
+        api_url = "https://commons.wikimedia.org/w/api.php"
+        resp = HTTP_SESSION.get(
+            api_url,
+            params={"action": "query", "list": "categorymembers", "cmtitle": "Category:Oromo_pronunciation", "cmtype": "file", "cmlimit": min(MAX_CLIPS, 250), "format": "json"},
+            timeout=20,
+        )
+        if not resp.ok:
+            return
+        members = resp.json().get("query", {}).get("categorymembers", [])
+        count = 0
+        for item in members:
+            if count >= MAX_CLIPS or global_budget_exceeded():
+                break
+            title = item.get("title", "")
+            m = re.search(r"File:(?:Om-|LL-Q\d+_\(orm\)-[^-]+-)?(.+)\.(ogg|wav|flac|mp3)$", title, re.IGNORECASE)
+            if not m:
+                continue
+            word = m.group(1).replace("_", " ").strip()
+            ext = f".{m.group(2).lower()}"
+            slug = to_audio_slug(word)
+            if not slug or slug in uploaded_keys.get("borana", {}):
+                continue
+            info_resp = HTTP_SESSION.get(api_url, params={"action": "query", "titles": title, "prop": "imageinfo", "iiprop": "url|extmetadata", "format": "json"}, timeout=15)
+            pages = info_resp.json().get("query", {}).get("pages", {})
+            ii = next((p["imageinfo"][0] for p in pages.values() if p.get("imageinfo")), None)
+            if not ii:
+                continue
+            lic_short = str(((ii.get("extmetadata") or {}).get("LicenseShortName") or {}).get("value") or "").lower()
+            if not any(ok in lic_short for ok in ("cc by-sa", "cc-by-sa", "cc0", "public domain", "cc by 4", "cc-by-4")) or "nc" in lic_short or "nd" in lic_short:
+                continue
+            audio_resp = HTTP_SESSION.get(ii["url"], timeout=20)
+            if audio_resp.ok:
+                res = transcode_raw_bytes_and_upload_worker(s3_client, "borana", slug, audio_resp.content, ext)
+                if res:
+                    uploaded_keys.setdefault("borana", {})[res[0]] = res[1]
+                    count += 1
+        dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": "borana", "updatedAt": datetime.now(timezone.utc).isoformat()}
+        log(f"  -> Uploaded {count} Wikimedia Commons Oromo pronunciations.")
+    except Exception as exc:
+        dataset_status[job_key] = {"status": "failed", "lang_id": "borana", "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
+
+
+def ingest_tatoeba_filtered_audio(s3_client, uploaded_keys: dict, dataset_status: dict):
+    """Ingest Tatoeba sentence audio for som & swh, strictly filtered to CC-BY-2.0-FR / CC0-1.0 contributors."""
+    if R2_UPLOAD_DISABLED or global_budget_exceeded():
+        return
+    tatoeba_targets = [("swahili", "swh"), ("somali", "som")]
+    pending = [t for t in tatoeba_targets if FORCE_REINGEST or not RETRY_PENDING_ONLY or dataset_status.get(f"tatoeba/audio::{t[1]}::{t[0]}", {}).get("status") != "completed"]
+    if not pending:
+        return
+    log("[Tatoeba Audio CC-BY-2.0-FR/CC0] Fetching contributor-licensed audio index for swh & som...")
+    allowed_lics = {"cc-by 2.0 fr", "cc-by-2.0-fr", "cc0 1.0", "cc0-1.0", "cc-by 2.0", "cc-by 4.0"}
+    try:
+        import bz2
+        with tempfile.TemporaryDirectory() as tmpdir:
+            idx_path = os.path.join(tmpdir, "sentences_with_audio.tar.bz2")
+            with HTTP_SESSION.get("https://downloads.tatoeba.org/exports/sentences_with_audio.tar.bz2", stream=True, timeout=60) as r:
+                r.raise_for_status()
+                with open(idx_path, "wb") as f:
+                    for chunk in r.iter_content(chunk_size=512 * 1024):
+                        f.write(chunk)
+            permissive_audio: dict[str, tuple[str, str]] = {}
+            with tarfile.open(idx_path, "r:bz2") as tf:
+                member = next((m for m in tf.getmembers() if m.name.endswith(".csv")), None)
+                if member:
+                    for raw_line in tf.extractfile(member).read().decode("utf-8", errors="ignore").splitlines():
+                        parts = raw_line.split("\t")
+                        if len(parts) < 4:
+                            continue
+                        sid, audio_id, _user, lic = parts[0].strip(), parts[1].strip(), parts[2].strip(), parts[3].strip().lower()
+                        if lic in allowed_lics and "nc" not in lic and "nd" not in lic:
+                            permissive_audio[sid] = (audio_id, lic)
+            for lang_id, iso3 in pending:
+                job_key = f"tatoeba/audio::{iso3}::{lang_id}"
+                count = 0
+                s_resp = HTTP_SESSION.get(f"https://downloads.tatoeba.org/exports/per_language/{iso3}/{iso3}_sentences.tsv.bz2", timeout=60)
+                if not s_resp.ok:
+                    dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"HTTP {s_resp.status_code}", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                    continue
+                for line in bz2.decompress(s_resp.content).decode("utf-8", errors="ignore").splitlines():
+                    if count >= MAX_CLIPS or global_budget_exceeded():
+                        break
+                    parts = line.split("\t")
+                    if len(parts) < 3 or parts[0] not in permissive_audio:
+                        continue
+                    audio_id, _lic = permissive_audio[parts[0]]
+                    slug = to_audio_slug(parts[2])
+                    if not slug or slug in uploaded_keys.get(lang_id, {}):
+                        continue
+                    mp3_resp = HTTP_SESSION.get(f"https://tatoeba.org/audio/download/{audio_id}", timeout=20)
+                    if mp3_resp.ok and mp3_resp.content:
+                        res = transcode_raw_bytes_and_upload_worker(s3_client, lang_id, slug, mp3_resp.content, ".mp3")
+                        if res:
+                            uploaded_keys.setdefault(lang_id, {})[res[0]] = res[1]
+                            count += 1
+                dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
+                log(f"  -> Uploaded {count} permissive Tatoeba audio clips for {lang_id} ({iso3}).")
+    except Exception as exc:
+        log(f"  [warn] Tatoeba filtered audio skipped: {exc}")
+
+
+def ingest_archive_org_audio(s3_client, uploaded_keys: dict, dataset_status: dict):
+    """Ingest verified commercial-safe non-book Internet Archive audio items (PDM 1.0 & CC-BY-SA-3.0)."""
+    if R2_UPLOAD_DISABLED or global_budget_exceeded():
+        return
+    ia_items = [
+        {"job_key": "archive.org/handbook_kavirondo3_1203::luo::luo", "identifier": "handbook_kavirondo3_1203", "lang_id": "luo", "license": "Public Domain Mark 1.0"},
+        {"job_key": "archive.org/aporee_22438_26032::en-KE::english-ke", "identifier": "aporee_22438_26032", "lang_id": "english-ke", "license": "CC-BY-SA-3.0"},
+    ]
+    for item in ia_items:
+        job_key, lang_id, ident = item["job_key"], item["lang_id"], item["identifier"]
+        if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") == "completed":
+            continue
+        assert_repo_allowed(f"https://archive.org/details/{ident}")
+        log(f"[Archive.org {item['license']}] Fetching metadata for {ident} -> {lang_id}...")
+        try:
+            meta_resp = HTTP_SESSION.get(f"https://archive.org/metadata/{ident}", timeout=20)
+            if not meta_resp.ok:
+                continue
+            all_files = meta_resp.json().get("files", [])
+            if ident == "handbook_kavirondo3_1203":
+                audio_files = sorted(
+                    [f for f in all_files if str(f.get("name", "")).lower().endswith("_64kb.mp3")],
+                    key=lambda x: str(x.get("name", "")),
+                )
+            else:
+                audio_files = [
+                    f for f in all_files
+                    if str(f.get("name", "")).lower().endswith((".mp3", ".ogg", ".wav", ".flac")) and "_64kb" not in str(f.get("name", "")).lower()
+                ]
+            count = 0
+            chapter_r2_map: dict[str, str] = {}
+            for af in audio_files[:MAX_CLIPS]:
+                if global_budget_exceeded():
+                    break
+                fname = af["name"]
+                clean_stem = re.sub(r"_64kb$", "", Path(fname).stem, flags=re.IGNORECASE)
+                slug = to_audio_slug(f"{ident}-{clean_stem}")
+                if not slug:
+                    continue
+                if slug in uploaded_keys.get(lang_id, {}):
+                    chapter_r2_map[slug] = uploaded_keys[lang_id][slug]
+                    continue
+                a_resp = HTTP_SESSION.get(f"https://archive.org/download/{ident}/{fname}", timeout=120)
+                if a_resp.ok and a_resp.content:
+                    res = transcode_raw_bytes_and_upload_worker(
+                        s3_client, lang_id, slug, a_resp.content, Path(fname).suffix.lower() or ".mp3", timeout_sec=120
+                    )
+                    if res:
+                        uploaded_keys.setdefault(lang_id, {})[res[0]] = res[1]
+                        chapter_r2_map[res[0]] = res[1]
+                        count += 1
+            if ident == "handbook_kavirondo3_1203" and chapter_r2_map:
+                ch_path = PUBLIC_DIR / "dholuo-audio-chapters.json"
+                if ch_path.exists():
+                    try:
+                        ch_data = json.loads(ch_path.read_text(encoding="utf-8"))
+                        updated_ch = False
+                        for ch in ch_data.get("chapters", []):
+                            r2_url = chapter_r2_map.get(ch.get("slug", ""))
+                            if r2_url and ch.get("audioUrl") != r2_url:
+                                ch["audioUrl"] = r2_url
+                                updated_ch = True
+                        if updated_ch:
+                            ch_data["updatedAt"] = datetime.now(timezone.utc).isoformat()
+                            ch_path.write_text(json.dumps(ch_data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                            log(f"  -> Updated {ch_path.name} with {len(chapter_r2_map)} Cloudflare R2 chapter URLs.")
+                    except Exception as ch_exc:
+                        log(f"  [warn] Could not update dholuo-audio-chapters.json: {ch_exc}")
+            dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
+            log(f"  -> Uploaded {count} Archive.org audio clips from {ident} for {lang_id}.")
+        except Exception as exc:
+            dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
+
+
 def ingest_ksl_pose_metadata(dataset_status: dict):
     """Build Kenyan Sign Language (xki) visual/pose metadata index (`public/ksl-index.json`) separate from audio."""
     if not INCLUDE_KSL_METADATA or global_budget_exceeded():
@@ -916,6 +1158,14 @@ def ingest_ksl_pose_metadata(dataset_status: dict):
                 "url": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
                 "access": "public_hf",
                 "register": "religious_liturgical",
+            },
+            {
+                "id": "ishara-ksl-hand-landmarks",
+                "title": "Ishara KSL Open Hand-Landmark Collection (21-point hand landmarks, no face PII)",
+                "license": "CC-BY-4.0",
+                "url": "https://www.ishara.io/collect",
+                "access": "public_portal",
+                "status": "active_collection",
             },
         ],
         "zenodoFiles": [],
@@ -952,6 +1202,18 @@ def ingest_ksl_pose_metadata(dataset_status: dict):
                 })
     except Exception as exc:
         log(f"  [warn] Open Sign Bibles xki metadata stream notice: {exc}")
+    if KSL_INDEX_PATH.exists():
+        try:
+            prev_ksl = json.loads(KSL_INDEX_PATH.read_text(encoding="utf-8"))
+            for keep_key in ("videos", "videoCount", "storybooks", "signs", "extractedSignCount"):
+                if keep_key in prev_ksl and prev_ksl[keep_key]:
+                    ksl_payload[keep_key] = prev_ksl[keep_key]
+            existing_src_ids = {s.get("id") for s in ksl_payload.get("sources", [])}
+            for s in prev_ksl.get("sources", []):
+                if s.get("id") and s["id"] not in existing_src_ids:
+                    ksl_payload["sources"].append(s)
+        except Exception:
+            pass
     KSL_INDEX_PATH.write_text(json.dumps(ksl_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     dataset_status["ksl/xki::metadata::ksl"] = {
         "status": "completed",
@@ -1058,6 +1320,10 @@ def main():
     ingest_common_voice_27_mdc(s3_client, uploaded_keys, dataset_status)
     ingest_lingua_libre_commons(s3_client, uploaded_keys, dataset_status)
     ingest_direct_archive_audio(s3_client, uploaded_keys, dataset_status)
+    ingest_mdc_aligned_speech(s3_client, uploaded_keys, dataset_status)
+    ingest_wikimedia_oromo_pronunciation(s3_client, uploaded_keys, dataset_status)
+    ingest_tatoeba_filtered_audio(s3_client, uploaded_keys, dataset_status)
+    ingest_archive_org_audio(s3_client, uploaded_keys, dataset_status)
     ingest_ksl_pose_metadata(dataset_status)
 
     AUDIO_INDEX_PATH.write_text(json.dumps(uploaded_keys, ensure_ascii=False, indent=2), encoding="utf-8")
