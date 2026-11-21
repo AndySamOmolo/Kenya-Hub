@@ -1192,20 +1192,9 @@ def ingest_ksl_pose_metadata(dataset_status: dict):
     except Exception as exc:
         log(f"  [warn] Maseno Zenodo 14338329 API notice: {exc}")
 
-    try:
-        ds = load_hf_stream("bible-nlp/sign-bibles", "xki", split="train")
-        for idx, row in enumerate(ds):
-            if idx >= 1000:
-                break
-            lang = str(row.get("language") or row.get("iso") or "").lower()
-            if lang == "xki":
-                ksl_payload["glosses"].append({
-                    "id": str(row.get("id") or idx),
-                    "text": str(row.get("text") or row.get("gloss") or "")[:200],
-                    "source": "bible-nlp/sign-bibles",
-                })
-    except Exception as exc:
-        log(f"  [warn] Open Sign Bibles xki metadata stream notice: {exc}")
+    # Note: Open Sign Bibles (bible-nlp/sign-bibles) xki video & passage-context streaming is
+    # handled directly in scripts/ingest-ksl-pose-r2.py so we do not download gigabytes of .mp4
+    # bytes twice during the metadata sync step.
     if KSL_INDEX_PATH.exists():
         try:
             prev_ksl = json.loads(KSL_INDEX_PATH.read_text(encoding="utf-8"))
