@@ -12,6 +12,8 @@ declare global {
     gtag?: (...args: unknown[]) => void;
     dataLayer?: unknown[];
     __khGaConfigured?: boolean;
+    __tcfapi?: (...args: unknown[]) => void;
+    googlefc?: { showRevocationMessage?: () => void };
   }
 }
 
