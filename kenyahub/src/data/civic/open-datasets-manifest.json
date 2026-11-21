@@ -1,0 +1,184 @@
+{
+  "updatedAt": "2026-11-21T12:31:36.730529+00:00",
+  "excludedWatchlistCount": 43,
+  "excludedCldfConstituents": [
+    "grollemundbantu",
+    "lexibank/grollemundbantu",
+    "lexibank/tls",
+    "tls"
+  ],
+  "cldfSources": [
+    {
+      "id": "glottolog-5.4",
+      "name": "Glottolog 5.4",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/glottolog/glottolog"
+    },
+    {
+      "id": "grambank",
+      "name": "Grambank",
+      "license": "CC-BY-4.0",
+      "url": "https://raw.githubusercontent.com/grambank/grambank/master/cldf/values.csv"
+    },
+    {
+      "id": "wals-cldf",
+      "name": "WALS CLDF",
+      "license": "CC-BY-4.0",
+      "url": "https://raw.githubusercontent.com/cldf-datasets/wals/master/cldf/values.csv"
+    },
+    {
+      "id": "phoible-2.0",
+      "name": "PHOIBLE 2.0",
+      "license": "CC-BY-SA-3.0",
+      "url": "https://raw.githubusercontent.com/phoible/dev/master/data/phoible.csv"
+    },
+    {
+      "id": "numeralbank-chan",
+      "name": "Numeralbank (Chan)",
+      "license": "CC-BY-4.0",
+      "url": "https://raw.githubusercontent.com/numeralbank/channumerals/main/cldf/forms.csv"
+    },
+    {
+      "id": "lexibank-2",
+      "name": "Lexibank 2 (Filtered)",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/lexibank/lexibank-analysed",
+      "excludeConstituents": [
+        "grollemundbantu",
+        "lexibank/grollemundbantu",
+        "lexibank/tls",
+        "tls"
+      ]
+    },
+    {
+      "id": "apics-kinubi-63",
+      "name": "APiCS Online: Kinubi (#63)",
+      "license": "CC-BY-4.0",
+      "url": "https://raw.githubusercontent.com/cldf-datasets/apics/master/cldf/values.csv"
+    },
+    {
+      "id": "ids-clld",
+      "name": "Intercontinental Dictionary Series (IDS)",
+      "license": "CC-BY-4.0",
+      "url": "https://ids.clld.org/"
+    },
+    {
+      "id": "clics-3",
+      "name": "CLICS3",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/clics/clics3",
+      "excludeConstituents": [
+        "grollemundbantu",
+        "lexibank/grollemundbantu",
+        "lexibank/tls",
+        "tls"
+      ]
+    },
+    {
+      "id": "dplace",
+      "name": "D-PLACE",
+      "license": "CC-BY-4.0",
+      "url": "https://github.com/D-PLACE/dplace-data"
+    },
+    {
+      "id": "concepticon-3.4.1",
+      "name": "Concepticon 3.4.1",
+      "license": "CC-BY-4.0",
+      "url": "https://raw.githubusercontent.com/concepticon/concepticon-data/master/concepticondata/concepticon.tsv"
+    },
+    {
+      "id": "afbo-2.0",
+      "name": "AfBo 2.0",
+      "license": "CC-BY-4.0",
+      "url": "https://afbo.info/"
+    },
+    {
+      "id": "unimorph-swc",
+      "name": "UniMorph Swahili (swc)",
+      "license": "CC-BY-SA-3.0",
+      "url": "https://raw.githubusercontent.com/unimorph/swc/master/swc"
+    },
+    {
+      "id": "tsammalex",
+      "name": "Tsammalex Ethnobiology",
+      "license": "CC-BY-4.0",
+      "url": "https://tsammalex.clld.org/"
+    }
+  ],
+  "wikimediaSources": [
+    {
+      "id": "wikidata-lexemes",
+      "name": "Wikidata Lexemes (Kenyan Languages)",
+      "license": "CC0-1.0",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Lexicographical_data/Statistics/Count_of_lexemes_by_language"
+    },
+    {
+      "id": "kenyan-wikipedias",
+      "name": "Kenyan Wikipedias (sw, so, om, ki)",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://meta.wikimedia.org/wiki/List_of_Wikipedias"
+    },
+    {
+      "id": "native-wiktionaries",
+      "name": "Native Wiktionaries (sw, so, om)",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://meta.wikimedia.org/wiki/Wiktionary"
+    },
+    {
+      "id": "swahili-wikisource",
+      "name": "Swahili Wikisource",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://wikisource.org/wiki/Category:Kiswahili"
+    },
+    {
+      "id": "wikimedia-incubator-ke",
+      "name": "Wikimedia Incubator (Wp/luo, Wp/niq)",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://incubator.wikimedia.org/wiki/Category:Wp/luo"
+    },
+    {
+      "id": "freedict-sw",
+      "name": "FreeDict Swahili TEI",
+      "license": "GPL/CC-BY-SA",
+      "url": "https://freedict.org/downloads/"
+    }
+  ],
+  "civicAgriSources": [
+    {
+      "id": "clear-global-hdx-kenya-languages",
+      "name": "CLEAR Global Kenya Languages (HDX)",
+      "license": "CC-BY-4.0",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=kenya-languages"
+    },
+    {
+      "id": "rkenyacensus",
+      "name": "rKenyaCensus (KNBS 2019)",
+      "license": "MIT",
+      "url": "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents"
+    },
+    {
+      "id": "kenya-geo",
+      "name": "kenya-geo (47 Counties, 290 Constituencies, 1,450 Wards)",
+      "license": "MIT",
+      "url": "https://api.github.com/repos/rmiyoyo/kenya-geo/contents"
+    },
+    {
+      "id": "constitution-kenya-2010-raw",
+      "name": "Constitution of Kenya 2010 (Raw Statutory Text)",
+      "license": "No Copyright (Statutory)",
+      "url": "https://www.parliament.go.ke/sites/default/files/2017-05/The_Constitution_of_Kenya_2010.pdf"
+    },
+    {
+      "id": "helmets-kenya-crop-v2",
+      "name": "Helmets Kenya Crop v2",
+      "license": "CC-BY-4.0",
+      "url": "https://zenodo.org/api/records/15467063"
+    },
+    {
+      "id": "cgiar-cgspace-ke",
+      "name": "CGIAR CGSpace Kenyan Agronomy",
+      "license": "CC-BY-4.0",
+      "url": "https://cgspace.cgiar.org/items/ada1be52-0595-4dea-90d9-2e4dc12fe5df"
+    }
+  ]
+}

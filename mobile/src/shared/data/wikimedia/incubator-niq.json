@@ -1,0 +1,522 @@
+{
+  "license": "CC-BY-SA-4.0",
+  "data": {
+    "allpages": [
+      {
+        "pageid": 2869644,
+        "ns": 0,
+        "title": "Wp/niq/Aalborg"
+      },
+      {
+        "pageid": 2869587,
+        "ns": 0,
+        "title": "Wp/niq/Abeokuta"
+      },
+      {
+        "pageid": 2869642,
+        "ns": 0,
+        "title": "Wp/niq/Aberdeen"
+      },
+      {
+        "pageid": 2869640,
+        "ns": 0,
+        "title": "Wp/niq/Abuja"
+      },
+      {
+        "pageid": 2869639,
+        "ns": 0,
+        "title": "Wp/niq/Accra"
+      },
+      {
+        "pageid": 2869391,
+        "ns": 0,
+        "title": "Wp/niq/Aden"
+      },
+      {
+        "pageid": 2869570,
+        "ns": 0,
+        "title": "Wp/niq/Algiers"
+      },
+      {
+        "pageid": 2869575,
+        "ns": 0,
+        "title": "Wp/niq/Ambriz"
+      },
+      {
+        "pageid": 2869643,
+        "ns": 0,
+        "title": "Wp/niq/Amsterdam"
+      },
+      {
+        "pageid": 2869578,
+        "ns": 0,
+        "title": "Wp/niq/Andulo"
+      },
+      {
+        "pageid": 2869645,
+        "ns": 0,
+        "title": "Wp/niq/Antananarivo"
+      },
+      {
+        "pageid": 2869641,
+        "ns": 0,
+        "title": "Wp/niq/Antwerp"
+      },
+      {
+        "pageid": 3250478,
+        "ns": 0,
+        "title": "Wp/niq/Arawet"
+      },
+      {
+        "pageid": 3251727,
+        "ns": 0,
+        "title": "Wp/niq/Arus"
+      },
+      {
+        "pageid": 3251739,
+        "ns": 0,
+        "title": "Wp/niq/Benderetap Kenya"
+      },
+      {
+        "pageid": 3250365,
+        "ns": 0,
+        "title": "Wp/niq/Chelokomiet"
+      },
+      {
+        "pageid": 3250892,
+        "ns": 0,
+        "title": "Wp/niq/Chepchonget"
+      },
+      {
+        "pageid": 3250361,
+        "ns": 0,
+        "title": "Wp/niq/Chepiakwai"
+      },
+      {
+        "pageid": 3250368,
+        "ns": 0,
+        "title": "Wp/niq/Chepkecheit"
+      },
+      {
+        "pageid": 3250336,
+        "ns": 0,
+        "title": "Wp/niq/Chepkemisiet"
+      },
+      {
+        "pageid": 3251392,
+        "ns": 0,
+        "title": "Wp/niq/Chepkerichot"
+      },
+      {
+        "pageid": 3251387,
+        "ns": 0,
+        "title": "Wp/niq/Chepkerta"
+      },
+      {
+        "pageid": 3250428,
+        "ns": 0,
+        "title": "Wp/niq/Chepkokosio"
+      },
+      {
+        "pageid": 3250430,
+        "ns": 0,
+        "title": "Wp/niq/Chepkwogit"
+      },
+      {
+        "pageid": 3250559,
+        "ns": 0,
+        "title": "Wp/niq/Cheplanget"
+      },
+      {
+        "pageid": 3250362,
+        "ns": 0,
+        "title": "Wp/niq/Chepsengwet"
+      },
+      {
+        "pageid": 3250370,
+        "ns": 0,
+        "title": "Wp/niq/Chepsireret"
+      },
+      {
+        "pageid": 3250449,
+        "ns": 0,
+        "title": "Wp/niq/Cheptibi"
+      },
+      {
+        "pageid": 3250433,
+        "ns": 0,
+        "title": "Wp/niq/Cheptuget"
+      },
+      {
+        "pageid": 3250337,
+        "ns": 0,
+        "title": "Wp/niq/Chesiliot"
+      },
+      {
+        "pageid": 3250683,
+        "ns": 0,
+        "title": "Wp/niq/Chito"
+      },
+      {
+        "pageid": 3250327,
+        "ns": 0,
+        "title": "Wp/niq/Denmark"
+      },
+      {
+        "pageid": 3250716,
+        "ns": 0,
+        "title": "Wp/niq/Eldret"
+      },
+      {
+        "pageid": 3250502,
+        "ns": 0,
+        "title": "Wp/niq/Emdit"
+      },
+      {
+        "pageid": 3251383,
+        "ns": 0,
+        "title": "Wp/niq/Isakiat"
+      },
+      {
+        "pageid": 3251246,
+        "ns": 0,
+        "title": "Wp/niq/Kambolatet"
+      },
+      {
+        "pageid": 3251250,
+        "ns": 0,
+        "title": "Wp/niq/Kambolatindet"
+      },
+      {
+        "pageid": 3251006,
+        "ns": 0,
+        "title": "Wp/niq/Kandoindet"
+      },
+      {
+        "pageid": 3250633,
+        "ns": 0,
+        "title": "Wp/niq/Kapchemosin"
+      },
+      {
+        "pageid": 3250341,
+        "ns": 0,
+        "title": "Wp/niq/Kapcheptalamiat"
+      },
+      {
+        "pageid": 3250330,
+        "ns": 0,
+        "title": "Wp/niq/Kenya"
+      },
+      {
+        "pageid": 3250599,
+        "ns": 0,
+        "title": "Wp/niq/Kerundut"
+      },
+      {
+        "pageid": 3250544,
+        "ns": 0,
+        "title": "Wp/niq/Kimagutiet"
+      },
+      {
+        "pageid": 3250546,
+        "ns": 0,
+        "title": "Wp/niq/Kimerengit"
+      },
+      {
+        "pageid": 3250515,
+        "ns": 0,
+        "title": "Wp/niq/Kimnyet"
+      },
+      {
+        "pageid": 3250332,
+        "ns": 0,
+        "title": "Wp/niq/Kipisuet"
+      },
+      {
+        "pageid": 3250360,
+        "ns": 0,
+        "title": "Wp/niq/Kipkekendet"
+      },
+      {
+        "pageid": 3250482,
+        "ns": 0,
+        "title": "Wp/niq/Kipsaruriet"
+      },
+      {
+        "pageid": 3250444,
+        "ns": 0,
+        "title": "Wp/niq/Kipsichit"
+      },
+      {
+        "pageid": 3250561,
+        "ns": 0,
+        "title": "Wp/niq/Kipsirichet"
+      },
+      {
+        "pageid": 3250331,
+        "ns": 0,
+        "title": "Wp/niq/Kiptiltil"
+      },
+      {
+        "pageid": 3250719,
+        "ns": 0,
+        "title": "Wp/niq/Kisumu"
+      },
+      {
+        "pageid": 3250690,
+        "ns": 0,
+        "title": "Wp/niq/Kobotishet"
+      },
+      {
+        "pageid": 3251054,
+        "ns": 0,
+        "title": "Wp/niq/Koioktoiet"
+      },
+      {
+        "pageid": 3250435,
+        "ns": 0,
+        "title": "Wp/niq/Kokopenet"
+      },
+      {
+        "pageid": 3250333,
+        "ns": 0,
+        "title": "Wp/niq/Kongonyot"
+      },
+      {
+        "pageid": 3250678,
+        "ns": 0,
+        "title": "Wp/niq/Konimunin"
+      },
+      {
+        "pageid": 3250996,
+        "ns": 0,
+        "title": "Wp/niq/Koroiityet"
+      },
+      {
+        "pageid": 3250506,
+        "ns": 0,
+        "title": "Wp/niq/Legetetuet"
+      },
+      {
+        "pageid": 3251738,
+        "ns": 0,
+        "title": "Wp/niq/Lel"
+      },
+      {
+        "pageid": 3250600,
+        "ns": 0,
+        "title": "Wp/niq/Leltonget"
+      },
+      {
+        "pageid": 2869638,
+        "ns": 0,
+        "title": "Wp/niq/Main Page"
+      },
+      {
+        "pageid": 3251242,
+        "ns": 0,
+        "title": "Wp/niq/Mbolat"
+      },
+      {
+        "pageid": 3250339,
+        "ns": 0,
+        "title": "Wp/niq/Merewet"
+      },
+      {
+        "pageid": 3251265,
+        "ns": 0,
+        "title": "Wp/niq/Merkonget"
+      },
+      {
+        "pageid": 3250720,
+        "ns": 0,
+        "title": "Wp/niq/Mombasa"
+      },
+      {
+        "pageid": 3250497,
+        "ns": 0,
+        "title": "Wp/niq/Mopet"
+      },
+      {
+        "pageid": 3250564,
+        "ns": 0,
+        "title": "Wp/niq/Moset"
+      },
+      {
+        "pageid": 3250335,
+        "ns": 0,
+        "title": "Wp/niq/Motonda"
+      },
+      {
+        "pageid": 3250475,
+        "ns": 0,
+        "title": "Wp/niq/Moyket"
+      },
+      {
+        "pageid": 3250711,
+        "ns": 0,
+        "title": "Wp/niq/Nairobi"
+      },
+      {
+        "pageid": 3250721,
+        "ns": 0,
+        "title": "Wp/niq/Nakuru"
+      },
+      {
+        "pageid": 3250453,
+        "ns": 0,
+        "title": "Wp/niq/Nenget"
+      },
+      {
+        "pageid": 3250783,
+        "ns": 0,
+        "title": "Wp/niq/Nganaset"
+      },
+      {
+        "pageid": 3250685,
+        "ns": 0,
+        "title": "Wp/niq/Ngertimiot"
+      },
+      {
+        "pageid": 3250558,
+        "ns": 0,
+        "title": "Wp/niq/Ngetundo"
+      },
+      {
+        "pageid": 3251005,
+        "ns": 0,
+        "title": "Wp/niq/Ngololindet"
+      },
+      {
+        "pageid": 3251732,
+        "ns": 0,
+        "title": "Wp/niq/Nyalil"
+      },
+      {
+        "pageid": 3250681,
+        "ns": 0,
+        "title": "Wp/niq/Ogiliot"
+      },
+      {
+        "pageid": 3250560,
+        "ns": 0,
+        "title": "Wp/niq/Peliot"
+      },
+      {
+        "pageid": 3250375,
+        "ns": 0,
+        "title": "Wp/niq/Piikap kutit"
+      },
+      {
+        "pageid": 3251735,
+        "ns": 0,
+        "title": "Wp/niq/Pirir"
+      },
+      {
+        "pageid": 3250545,
+        "ns": 0,
+        "title": "Wp/niq/Poinet"
+      },
+      {
+        "pageid": 3250480,
+        "ns": 0,
+        "title": "Wp/niq/Poitap Kechei"
+      },
+      {
+        "pageid": 3250562,
+        "ns": 0,
+        "title": "Wp/niq/Pungungwet"
+      },
+      {
+        "pageid": 3250684,
+        "ns": 0,
+        "title": "Wp/niq/Ripindet"
+      },
+      {
+        "pageid": 3250363,
+        "ns": 0,
+        "title": "Wp/niq/Ririet"
+      },
+      {
+        "pageid": 3250680,
+        "ns": 0,
+        "title": "Wp/niq/Segeindet"
+      },
+      {
+        "pageid": 3251610,
+        "ns": 0,
+        "title": "Wp/niq/Silipchet"
+      },
+      {
+        "pageid": 3250948,
+        "ns": 0,
+        "title": "Wp/niq/Siritiet (Eng Mungaret)"
+      },
+      {
+        "pageid": 3251385,
+        "ns": 0,
+        "title": "Wp/niq/Sochot"
+      },
+      {
+        "pageid": 3250579,
+        "ns": 0,
+        "title": "Wp/niq/Soet"
+      },
+      {
+        "pageid": 3250508,
+        "ns": 0,
+        "title": "Wp/niq/Songok"
+      },
+      {
+        "pageid": 3250366,
+        "ns": 0,
+        "title": "Wp/niq/Sukurut"
+      },
+      {
+        "pageid": 3250340,
+        "ns": 0,
+        "title": "Wp/niq/Taiyuet"
+      },
+      {
+        "pageid": 3250338,
+        "ns": 0,
+        "title": "Wp/niq/Takiposit"
+      },
+      {
+        "pageid": 3251734,
+        "ns": 0,
+        "title": "Wp/niq/Talelio"
+      },
+      {
+        "pageid": 3250578,
+        "ns": 0,
+        "title": "Wp/niq/Tapurpur"
+      },
+      {
+        "pageid": 3250504,
+        "ns": 0,
+        "title": "Wp/niq/Tekat"
+      },
+      {
+        "pageid": 3250464,
+        "ns": 0,
+        "title": "Wp/niq/Terkekyat"
+      },
+      {
+        "pageid": 3250542,
+        "ns": 0,
+        "title": "Wp/niq/Tiondo"
+      },
+      {
+        "pageid": 3251726,
+        "ns": 0,
+        "title": "Wp/niq/Tui"
+      },
+      {
+        "pageid": 2869388,
+        "ns": 0,
+        "title": "Wp/niq/Werik che Tupcho Tisap"
+      }
+    ]
+  }
+}

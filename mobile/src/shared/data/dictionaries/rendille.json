@@ -1675,6 +1675,42 @@
           "translation": "Waa nabade",
           "pronunciation": "waa nabade",
           "context": "SIL Bloom Rendille Graded Readers (CC-BY-4.0)"
+        },
+        {
+          "english": "five",
+          "translation": "chan",
+          "pronunciation": "t͡ɕˈán̪",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "four",
+          "translation": "afar",
+          "pronunciation": "ˈáfar",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "husband, man",
+          "translation": "aram",
+          "pronunciation": "ˈáram",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "wife, woman",
+          "translation": "aram",
+          "pronunciation": "ˈáram",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "accusative of aram",
+          "translation": "arame",
+          "pronunciation": "ˈarame",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "elephant",
+          "translation": "arab",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
         }
       ]
     },
@@ -1923,5 +1959,5 @@
   "source": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)",
   "isoCode": "rel",
   "glottocode": "rend1243",
-  "totalEntries": 299
+  "totalEntries": 305
 }

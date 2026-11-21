@@ -20690,6 +20690,66 @@
           "english": "She added it was not clear how the virus was introduced to the camps and that some of the camp’s guards were also ill.",
           "translation": "aũgĩre gũtĩ muntũ wijĩ urea mũrimo jou jwatonyere kĩrĩ ncera iu nontũ kurina kinya akaria barĩna mũrimo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (mer_Latn Kĩmĩĩrũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
+        },
+        {
+          "english": "female reproductive organs. Contains Rung'uthu, known as clitoris in English, (Gathurumundu ka murio is orgasm)",
+          "translation": "kiino",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "iron",
+          "translation": "chuma",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "basin",
+          "translation": "karai",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "male (animal)",
+          "translation": "ndume",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "car",
+          "translation": "ngari",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "television",
+          "translation": "tivii",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "water",
+          "translation": "runci",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "castor bean",
+          "translation": "mbarĩki",
+          "pronunciation": "mbareki",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "water",
+          "translation": "ruuji",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "castor oil plant (Ricinus communis)",
+          "translation": "mwarĩki",
+          "pronunciation": "mwareki",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
         }
       ]
     },
@@ -22624,5 +22684,5 @@
   "source": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml); Arthur M. Champion (1912) The Atharaka (JRAI Vol. 42, Public Domain)",
   "isoCode": "mer",
   "glottocode": "meru1245",
-  "totalEntries": 4294
+  "totalEntries": 4304
 }

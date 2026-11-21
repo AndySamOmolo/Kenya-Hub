@@ -1,0 +1,461 @@
+{
+  "created": "2025-05-19T22:17:55.011157+00:00",
+  "modified": "2025-05-19T22:17:55.221310+00:00",
+  "id": 15467063,
+  "conceptrecid": "15133323",
+  "doi": "10.5281/zenodo.15467063",
+  "conceptdoi": "10.5281/zenodo.15133323",
+  "doi_url": "https://doi.org/10.5281/zenodo.15467063",
+  "metadata": {
+    "title": "Helmets Kenya Crop Type Dataset",
+    "doi": "10.5281/zenodo.15467063",
+    "publication_date": "2025-05-19",
+    "description": "<p>Georeferenced crop-type dataset (Helmets_Kenya_v2.csv) with associated roadside imagery (KENYA_v2.zip) from 16 counties in Kenya in 2021 and 2022. The dataset consists of over 6000 crop type points which were created via Helmet-Mounted Cameras and Deep Learning.</p>\n<p>&nbsp;</p>\n<p><strong>Acknowledgements</strong><br>This work was funded by Lacuna Fund Project NO. 2020-01-202 -&ldquo;Helmets Labeling Crops&ldquo;. Additional Support for data collection in Kneya from the NASA Harvest program No. 80NSSC23M0032, NASA SERVIR Grant No. 80NSSC20K0264, and SwissRe Foundation Grant EO-NAM. Partner organizations in implementation testing included NAACRI (Uganda), RCMRD (Kenya, Zambia), Makerere (Uganda), Milsat (Nigeria), NARSDA (Nigeria).</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zvonkov, Ivan",
+        "affiliation": null,
+        "orcid": "0000-0002-7781-9087"
+      },
+      {
+        "name": "Nakalembe, Catherine",
+        "affiliation": null,
+        "orcid": "0000-0002-2213-593X"
+      },
+      {
+        "name": "Kerner, Hannah",
+        "affiliation": null,
+        "orcid": "0000-0002-3259-7759"
+      },
+      {
+        "name": "Frimpong, Diana",
+        "affiliation": null,
+        "orcid": "0000-0003-3327-4780"
+      },
+      {
+        "name": "Mwangi, Kenneth",
+        "affiliation": "World Resources Institute",
+        "orcid": "0000-0002-4748-3180"
+      },
+      {
+        "name": "Kioko, Jane",
+        "affiliation": null,
+        "orcid": "0009-0004-8933-7810"
+      },
+      {
+        "name": "Tokas, Bhanu",
+        "affiliation": null
+      },
+      {
+        "name": "Jawanjal, Kartik",
+        "affiliation": null
+      },
+      {
+        "name": "Paliyam, Anjali",
+        "affiliation": null
+      },
+      {
+        "name": "Smith, Iman Akhtar",
+        "affiliation": null
+      },
+      {
+        "name": "Wakhanala, Christopher Atsianzale",
+        "affiliation": null
+      },
+      {
+        "name": "Tárano, Ana María",
+        "affiliation": null
+      },
+      {
+        "name": "Shreya, Jha",
+        "affiliation": null
+      },
+      {
+        "name": "Loh, Priscilla Mawuena",
+        "affiliation": null
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Koimburi, Anne",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Letuati, David",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kioko, Josphat",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Owino, Fredrick Oscar",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Njine, Mary",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Wairimu, Lucy",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Lemein, Macharia Dorothy",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mwaura, Consela",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Misango, Hussein",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Macharia, Joseph Mwangi",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mwangi, Rachael",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kering, Joseph",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Makala, Benard",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Githiri, Charles",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Gichohi, Moses",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kioria, Cecilia Wachera",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Towet, Peris",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mbula, Annastasia",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Muiruri, Kenneth",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Muguchia, Lucy",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Gitonga, Jane",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kopito, Annet",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Ruingu, Francis",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mwangi, Julius",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mugwe, Joyce",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Waihenya, Jane",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Benson, Kamakei",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kavata, Eunice",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mutuku, Daniel",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mwenze, Caroline",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Ngai, Peterson",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Letoya, Ezekiel",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Nyalita, Daniel",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Nganga, Martin Ndegwa",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mwangi, George Muraguri",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Gathongo, Francis",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Samoei, Benard",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Muli, Cosmus",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kimuge, Evans",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mwai, Florence",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kirui, Jacob Kibet",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Richard, K",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mburu, Samuel",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Langat, Peter",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Warui, Caroline",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Romanos, Stephene",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Turere, Martin",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kivuva, Kennedy",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kariuki, Simon",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kabia, Charles Mbau",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kimani, Rosemary",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kirui, Wilson",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kariuki, Antony Kioko Waitiki",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Maina, John Thumbi",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Kabangi, David",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Wanjohi, Simon",
+        "affiliation": null,
+        "type": "DataCollector"
+      },
+      {
+        "name": "Mwaura, Mary",
+        "affiliation": null,
+        "type": "DataCollector"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-sa-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15133323"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Helmets Kenya Crop Type Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/15467063",
+    "self_html": "https://zenodo.org/records/15467063",
+    "preview_html": "https://zenodo.org/records/15467063?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15467063",
+    "self_doi": "https://doi.org/10.5281/zenodo.15467063",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15467063",
+    "reserve_doi": "https://zenodo.org/api/records/15467063/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15133323",
+    "parent_html": "https://zenodo.org/records/15133323",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15133323",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15133323",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15467063/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15467063/sequence/default",
+    "files": "https://zenodo.org/api/records/15467063/files",
+    "media_files": "https://zenodo.org/api/records/15467063/media-files",
+    "latest": "https://zenodo.org/api/records/15467063/versions/latest",
+    "latest_html": "https://zenodo.org/records/15467063/latest",
+    "versions": "https://zenodo.org/api/records/15467063/versions",
+    "draft": "https://zenodo.org/api/records/15467063/draft",
+    "access_links": "https://zenodo.org/api/records/15467063/access/links",
+    "access_grants": "https://zenodo.org/api/records/15467063/access/grants",
+    "access_users": "https://zenodo.org/api/records/15467063/access/users",
+    "access_request": "https://zenodo.org/api/records/15467063/access/request",
+    "access": "https://zenodo.org/api/records/15467063/access",
+    "communities": "https://zenodo.org/api/records/15467063/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15467063/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15467063/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15467063/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/15467063/quota-increase",
+    "requests": "https://zenodo.org/api/records/15467063/requests"
+  },
+  "updated": "2025-05-19T22:17:55.221310+00:00",
+  "recid": "15467063",
+  "revision": 4,
+  "files": [
+    {
+      "id": "2c28a327-a754-4018-915f-c0d4fcafa935",
+      "key": "Helmets_Kenya_v2.csv",
+      "size": 3808933,
+      "checksum": "md5:3b2bb2f61e3f2efb6b64ad7e4a044828",
+      "links": {
+        "self": "https://zenodo.org/api/records/15467063/files/Helmets_Kenya_v2.csv/content"
+      }
+    },
+    {
+      "id": "b175fe89-9d89-4764-9594-67c1226a5bdf",
+      "key": "KENYA_v2.zip",
+      "size": 14880010116,
+      "checksum": "md5:5249827b4dc592f9bf050dc6626a365d",
+      "links": {
+        "self": "https://zenodo.org/api/records/15467063/files/KENYA_v2.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "237868"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1076,
+    "unique_downloads": 875,
+    "views": 1011,
+    "unique_views": 962,
+    "version_downloads": 382,
+    "version_unique_downloads": 313,
+    "version_unique_views": 330,
+    "version_views": 343
+  },
+  "state": "done",
+  "submitted": true
+}

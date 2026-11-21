@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-21T12:13:51.270Z",
+  "generatedAt": "2026-11-21T12:51:35.640Z",
   "registryCount": 33,
   "routeCount": 33,
   "courseCount": 23,
   "totalFaqs": 146,
-  "totalDictEntries": 208391,
-  "totalAudioLinked": 1692,
+  "totalDictEntries": 216072,
+  "totalAudioLinked": 1755,
   "checksPassed": 74,
   "checksTotal": 74,
   "okCount": 33,
@@ -1265,67 +1265,67 @@
   "courses": [
     {
       "languageId": "swahili",
-      "dictionaryEntries": 51658,
-      "audioLinked": 391,
+      "dictionaryEntries": 55801,
+      "audioLinked": 449,
       "status": "ok"
     },
     {
       "languageId": "kikuyu",
-      "dictionaryEntries": 22283,
-      "audioLinked": 253,
+      "dictionaryEntries": 23168,
+      "audioLinked": 254,
       "status": "ok"
     },
     {
       "languageId": "luo",
-      "dictionaryEntries": 14852,
+      "dictionaryEntries": 14886,
       "audioLinked": 257,
       "status": "ok"
     },
     {
       "languageId": "luhya",
-      "dictionaryEntries": 6997,
+      "dictionaryEntries": 7032,
       "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "kamba",
-      "dictionaryEntries": 10134,
+      "dictionaryEntries": 10240,
       "audioLinked": 250,
       "status": "ok"
     },
     {
       "languageId": "kalenjin",
-      "dictionaryEntries": 8023,
+      "dictionaryEntries": 8031,
       "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "kisii",
-      "dictionaryEntries": 1573,
+      "dictionaryEntries": 1576,
       "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "meru",
-      "dictionaryEntries": 4294,
+      "dictionaryEntries": 4304,
       "audioLinked": 248,
       "status": "ok"
     },
     {
       "languageId": "somali",
-      "dictionaryEntries": 14347,
-      "audioLinked": 293,
+      "dictionaryEntries": 16785,
+      "audioLinked": 297,
       "status": "ok"
     },
     {
       "languageId": "maasai",
-      "dictionaryEntries": 4871,
+      "dictionaryEntries": 4876,
       "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "turkana",
-      "dictionaryEntries": 3236,
+      "dictionaryEntries": 3237,
       "audioLinked": 0,
       "status": "ok"
     },
@@ -1343,13 +1343,13 @@
     },
     {
       "languageId": "embu",
-      "dictionaryEntries": 890,
+      "dictionaryEntries": 891,
       "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "taita",
-      "dictionaryEntries": 7571,
+      "dictionaryEntries": 7574,
       "audioLinked": 0,
       "status": "ok"
     },
@@ -1373,13 +1373,13 @@
     },
     {
       "languageId": "rendille",
-      "dictionaryEntries": 299,
+      "dictionaryEntries": 305,
       "audioLinked": 0,
       "status": "ok"
     },
     {
       "languageId": "samburu",
-      "dictionaryEntries": 832,
+      "dictionaryEntries": 834,
       "audioLinked": 0,
       "status": "ok"
     },
@@ -1391,7 +1391,7 @@
     },
     {
       "languageId": "pokot",
-      "dictionaryEntries": 5629,
+      "dictionaryEntries": 5630,
       "audioLinked": 0,
       "status": "ok"
     },
