@@ -26915,6 +26915,24 @@
           "translation": "Koma",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "Egypt (a civilization based around the river Nile, on its lower reaches nearer the Mediterranean).",
+          "translation": "Misri",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "Egyptian",
+          "translation": "Mmisri",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "plural of Mmisri (“Egyptian”).",
+          "translation": "Wamisri",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
         }
       ]
     },
@@ -42201,5 +42219,5 @@
   "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 7571
+  "totalEntries": 7574
 }

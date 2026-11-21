@@ -29838,6 +29838,12 @@
           "translation": "Akisomlorot",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Notes on the Ethnology of Tribes met with during Progress of the Juba Expedition of 1897-99 (Public Domain), p. 238"
+        },
+        {
+          "english": "I",
+          "translation": "anii",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
         }
       ]
     },
@@ -31251,5 +31257,5 @@
   "source": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
   "isoCode": "pko",
   "glottocode": "poko1263",
-  "totalEntries": 5629
+  "totalEntries": 5630
 }

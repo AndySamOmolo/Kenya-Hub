@@ -1,0 +1,32 @@
+{
+  "languageId": "ksl",
+  "iso639_3": "xki",
+  "updatedAt": "2026-11-21T12:51:30.612980+00:00",
+  "sources": [
+    {
+      "id": "maseno-ksl-pose-14338329",
+      "title": "Maseno KSL Pose Dataset (Open Access CC-BY-4.0, MediaPipe Pose Data.zip 1.5 GB)",
+      "license": "CC-BY-4.0",
+      "url": "https://zenodo.org/records/14338329",
+      "access": "public_zenodo",
+      "status": "ready"
+    },
+    {
+      "id": "open-sign-bibles-xki",
+      "title": "Open Sign Bibles — Kenyan Sign Language (xki)",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+      "access": "public_hf",
+      "register": "religious_liturgical"
+    }
+  ],
+  "zenodoFiles": [
+    {
+      "key": "Pose Data.zip",
+      "size": 1539828602,
+      "checksum": "md5:3cf8e3b30583ea1be34a65d285099b65",
+      "downloadUrl": "https://zenodo.org/api/records/14338329/files/Pose%20Data.zip/content"
+    }
+  ],
+  "glosses": []
+}

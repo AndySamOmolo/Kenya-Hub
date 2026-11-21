@@ -7591,6 +7591,24 @@
           "translation": "mbori ende yonsi; gekombe kende gionsi; mwana onde bwensi; itimo rinde rionsi",
           "pronunciation": "",
           "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (28a–c, e) · Augment Omission in Noun + 'any'"
+        },
+        {
+          "english": "plant (organism capable of photosynthesis)",
+          "translation": "ekemeria",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "plural of ekemeria",
+          "translation": "ebimeria",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "water",
+          "translation": "amanche",
+          "pronunciation": "",
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
         }
       ]
     },
@@ -8979,5 +8997,5 @@
   "source": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
   "isoCode": "guz",
   "glottocode": "gusi1247",
-  "totalEntries": 1573
+  "totalEntries": 1576
 }
