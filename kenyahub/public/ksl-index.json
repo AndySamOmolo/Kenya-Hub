@@ -26,6 +26,14 @@
       "url": "https://www.ishara.io/collect",
       "access": "public_portal",
       "status": "active_collection"
+    },
+    {
+      "id": "gdl-ksl-video-storybooks",
+      "title": "Global Digital Library — Kenyan Sign Language (xki) Human Signing Video Storybooks",
+      "license": "CC-BY-4.0 (verify per book)",
+      "url": "https://content.digitallibrary.io/xki",
+      "access": "public_web",
+      "status": "open_video_storybooks"
     }
   ],
   "zenodoFiles": [

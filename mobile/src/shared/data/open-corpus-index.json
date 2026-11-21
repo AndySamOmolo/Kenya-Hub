@@ -1486,6 +1486,11 @@
           "id": "incubator-sgc",
           "count": 7,
           "license": "CC-BY-SA-4.0"
+        },
+        {
+          "id": "incubator-sgc",
+          "count": 0,
+          "license": "CC-BY-SA-4.0"
         }
       ],
       "wikimediaArticles": [
@@ -7470,6 +7475,14 @@
         "url": "https://www.ishara.io/collect",
         "access": "public_portal",
         "status": "active_collection"
+      },
+      {
+        "id": "gdl-ksl-video-storybooks",
+        "title": "Global Digital Library — Kenyan Sign Language (xki) Human Signing Video Storybooks",
+        "license": "CC-BY-4.0 (verify per book)",
+        "url": "https://content.digitallibrary.io/xki",
+        "access": "public_web",
+        "status": "open_video_storybooks"
       }
     ],
     "zenodoFiles": [
@@ -8663,6 +8676,16 @@
       "id": "incubator-sgc",
       "license": "CC-BY-SA-4.0",
       "count": 7
+    },
+    {
+      "id": "incubator-pko",
+      "license": "CC-BY-SA-4.0",
+      "count": 0
+    },
+    {
+      "id": "incubator-sgc",
+      "license": "CC-BY-SA-4.0",
+      "count": 0
     },
     {
       "id": "wikidata-lexemes-kenya",
