@@ -55,6 +55,7 @@ import {
   type StaticBlogPost,
 } from "../../src/shared/data/blog-posts";
 import toolGuidesData from "../../src/shared/data/tool-guides.json";
+import toolDataSources from "../../src/shared/data/tool-data-sources.json";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
 import { BlogMarkdownContent } from "../../src/components/home/HomeHelpers";
 

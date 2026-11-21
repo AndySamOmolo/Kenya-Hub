@@ -24,6 +24,7 @@ export default function StagedVarietiesPanel() {
     return (
       v.title.toLowerCase().includes(q) ||
       v.gloss.toLowerCase().includes(q) ||
+      (v.reference ?? "").toLowerCase().includes(q) ||
       (v.transcript ?? "").toLowerCase().includes(q)
     );
   });
@@ -149,10 +150,19 @@ export default function StagedVarietiesPanel() {
                       ))}
                     </div>
                   </div>
-                  {activeVideo.transcript && (
-                    <p className="text-xs text-text-secondary rounded-lg border border-border bg-bg-card p-2.5 leading-relaxed">
-                      {activeVideo.transcript}
-                    </p>
+                  {(activeVideo.reference || activeVideo.transcript) && (
+                    <div className="rounded-lg border border-border bg-bg-card p-2.5 space-y-1">
+                      {activeVideo.reference && (
+                        <p className="text-[0.68rem] font-bold uppercase tracking-wider text-kenya-green">
+                          Passage Context · {activeVideo.reference}
+                        </p>
+                      )}
+                      {activeVideo.transcript && (
+                        <p className="text-xs text-text-secondary leading-relaxed">
+                          {activeVideo.transcript}
+                        </p>
+                      )}
+                    </div>
                   )}
                 </div>
 
@@ -178,6 +188,11 @@ export default function StagedVarietiesPanel() {
                             {vid.category === "maseno-stickman" ? "Stickman" : "Human"}
                           </span>
                         </div>
+                        {(vid.reference || vid.transcript) && (
+                          <p className="text-[0.68rem] text-text-muted line-clamp-1 mt-0.5">
+                            {vid.transcript || vid.reference}
+                          </p>
+                        )}
                       </button>
                     );
                   })}

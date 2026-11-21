@@ -272,7 +272,7 @@ HF_BENCHMARK_JOBS: list[dict[str, Any]] = [
     {"id": "afrihate-ke", "repo": "afrihate/afrihate", "config": "swa", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili", "somali", "borana"]},
     {"id": "tabularis-swahili-sentiment", "repo": "tabularisai/swahili-sentiment-dataset", "config": "default", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "swahili-finetome-20k", "repo": "ngusadeep/Swahili-FineTome-20k", "config": "default", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili"]},
-    {"id": "ea-mobile-money-safety-audit", "repo": "LeoCleinte/east-africa-mobile-money-safety-audit", "config": "default", "splits": ("train",), "license": "CC-BY-4.0", "langs": ["swahili"]},
+    {"id": "ea-mobile-money-safety-audit", "repo": "LeoCleinte/east-africa-mobile-money-safety-audit", "config": "default", "splits": ("validation",), "license": "CC-BY-4.0", "langs": ["swahili"]},
     {"id": "facebook-belebele-swh", "repo": "facebook/belebele", "config": "swh_Latn", "splits": ("test",), "license": "CC-BY-SA-4.0", "langs": ["swahili"]},
     {"id": "facebook-belebele-luo", "repo": "facebook/belebele", "config": "luo_Latn", "splits": ("test",), "license": "CC-BY-SA-4.0", "langs": ["luo"]},
     {"id": "facebook-belebele-som", "repo": "facebook/belebele", "config": "som_Latn", "splits": ("test",), "license": "CC-BY-SA-4.0", "langs": ["somali"]},
@@ -282,7 +282,26 @@ HF_BENCHMARK_JOBS: list[dict[str, Any]] = [
 ]
 
 OER_STORYBOOK_JOBS: list[dict[str, Any]] = [
-    {"id": "sil-ai-bloom-lm", "repo": "sil-ai/bloom-lm", "config": "default", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-swh", "repo": "sil-ai/bloom-lm", "config": "swh", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-swa", "repo": "sil-ai/bloom-lm", "config": "swa", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-kik", "repo": "sil-ai/bloom-lm", "config": "kik", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-kam", "repo": "sil-ai/bloom-lm", "config": "kam", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-guz", "repo": "sil-ai/bloom-lm", "config": "guz", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-luy", "repo": "sil-ai/bloom-lm", "config": "luy", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-lkb", "repo": "sil-ai/bloom-lm", "config": "lkb", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-lts", "repo": "sil-ai/bloom-lm", "config": "lts", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-dig", "repo": "sil-ai/bloom-lm", "config": "dig", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-dug", "repo": "sil-ai/bloom-lm", "config": "dug", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-pkb", "repo": "sil-ai/bloom-lm", "config": "pkb", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-rel", "repo": "sil-ai/bloom-lm", "config": "rel", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-saq", "repo": "sil-ai/bloom-lm", "config": "saq", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-som", "repo": "sil-ai/bloom-lm", "config": "som", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-teo", "repo": "sil-ai/bloom-lm", "config": "teo", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-tuv", "repo": "sil-ai/bloom-lm", "config": "tuv", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-tvs", "repo": "sil-ai/bloom-lm", "config": "tvs", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-thk", "repo": "sil-ai/bloom-lm", "config": "thk", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-enb", "repo": "sil-ai/bloom-lm", "config": "enb", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
+    {"id": "sil-ai-bloom-lm-oki", "repo": "sil-ai/bloom-lm", "config": "oki", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
     {"id": "glotstorybook", "repo": "cis-lmu/GlotStoryBook", "config": "default", "split": "train", "license": "Mixed (filtered to CC-BY/CC-BY-SA/CC0)"},
 ]
 

@@ -63,8 +63,8 @@ def sanitize_cdn_base(raw: str) -> str:
 CDN_BASE = sanitize_cdn_base(os.environ.get("NEXT_PUBLIC_AUDIO_CDN_URL", "https://audio.kenyahub.me"))
 HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
 
-MAX_MASENO_VIDEOS = int(os.environ.get("MAX_KSL_MASENO_VIDEOS", os.environ.get("MAX_KSL_SIGNS", "60")))
-MAX_HUMAN_KSL_VIDEOS = int(os.environ.get("MAX_KSL_HUMAN_VIDEOS", "40"))
+MAX_MASENO_VIDEOS = int(os.environ.get("MAX_KSL_MASENO_VIDEOS", os.environ.get("MAX_KSL_SIGNS", "2000")))
+MAX_HUMAN_KSL_VIDEOS = int(os.environ.get("MAX_KSL_HUMAN_VIDEOS", "1000"))
 
 # Upper-body MediaPipe Pose landmark indices (head, shoulders, elbows, wrists, hands, hips)
 UPPER_BODY_INDICES = [0, 2, 5, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 23, 24]
@@ -337,8 +337,113 @@ def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict
             print(f"  -> Uploaded {maseno_vids_added} Maseno stickman .mp4 videos and {pose_added} .npy pose JSONs.")
 
 
+USFM_BOOK_NAMES = {
+    "GEN": "Genesis", "EXO": "Exodus", "LEV": "Leviticus", "NUM": "Numbers", "DEU": "Deuteronomy",
+    "JOS": "Joshua", "JDG": "Judges", "RUT": "Ruth", "1SA": "1 Samuel", "2SA": "2 Samuel",
+    "1KI": "1 Kings", "2KI": "2 Kings", "1CH": "1 Chronicles", "2CH": "2 Chronicles",
+    "EZR": "Ezra", "NEH": "Nehemiah", "EST": "Esther", "JOB": "Job", "PSA": "Psalms",
+    "PRO": "Proverbs", "ECC": "Ecclesiastes", "SNG": "Song of Solomon", "ISA": "Isaiah",
+    "JER": "Jeremiah", "LAM": "Lamentations", "EZK": "Ezekiel", "DAN": "Daniel", "HOS": "Hosea",
+    "JOL": "Joel", "AMO": "Amos", "OBA": "Obadiah", "JON": "Jonah", "MIC": "Micah",
+    "NAM": "Nahum", "HAB": "Habakkuk", "ZEP": "Zephaniah", "HAG": "Haggai", "ZEC": "Zechariah",
+    "MAL": "Malachi", "MAT": "Matthew", "MRK": "Mark", "LUK": "Luke", "JHN": "John",
+    "ACT": "Acts", "ROM": "Romans", "1CO": "1 Corinthians", "2CO": "2 Corinthians",
+    "GAL": "Galatians", "EPH": "Ephesians", "PHP": "Philippians", "COL": "Colossians",
+    "1TH": "1 Thessalonians", "2TH": "2 Thessalonians", "1TI": "1 Timothy", "2TI": "2 Timothy",
+    "TIT": "Titus", "PHM": "Philemon", "HEB": "Hebrews", "JAS": "James", "1PE": "1 Peter",
+    "2PE": "2 Peter", "1JN": "1 John", "2JN": "2 John", "3JN": "3 John", "JUD": "Jude", "REV": "Revelation",
+}
+
+
+def _strip_vtt_srt(raw_text: str) -> str:
+    lines = []
+    for ln in raw_text.splitlines():
+        s = ln.strip()
+        if not s or s.upper() == "WEBVTT" or "-->" in s or s.isdigit():
+            continue
+        s = re.sub(r"<[^>]+>", "", s).strip()
+        if s:
+            lines.append(s)
+    return " ".join(lines)[:320].strip()
+
+
+def _extract_sign_bible_context(row: dict, meta: dict, idx: int) -> tuple[str, str, str]:
+    """Return (title, reference, transcript) from all WebDataset metadata/subtitle fields."""
+    key_str = str(row.get("__key__") or meta.get("id") or meta.get("name") or "").strip()
+    book = str(meta.get("book") or meta.get("book_name") or meta.get("book_id") or meta.get("title") or "").strip()
+    chapter = str(meta.get("chapter") or "").strip()
+    verse = str(meta.get("verse") or meta.get("verses") or "").strip()
+
+    # Fallback: parse USFM book/chapter/verse from __key__ (e.g. "xki/MAT_005_001" or "GEN-01")
+    if not book and key_str:
+        m = re.search(r"([1-3]?[A-Za-z]{3})[/_\-]?(\d{1,3})(?:[/_\-:](\d{1,3}))?", key_str)
+        if m:
+            code = m.group(1).upper()
+            if code in USFM_BOOK_NAMES:
+                book = USFM_BOOK_NAMES[code]
+                chapter = chapter or str(int(m.group(2)))
+                if m.group(3):
+                    verse = verse or str(int(m.group(3)))
+    if book.upper() in USFM_BOOK_NAMES:
+        book = USFM_BOOK_NAMES[book.upper()]
+
+    ref = ""
+    if book:
+        ref = f"{book} {chapter}:{verse}".strip(": ") if (chapter and verse) else (f"{book} {chapter}".strip() if chapter else book)
+    elif key_str:
+        cleaned_key = re.sub(r"^(?:xki|ksl)[/_\-]+", "", key_str, flags=re.I).replace("_", " ").replace("-", " ").strip()
+        if cleaned_key:
+            ref = cleaned_key[:48]
+
+    title_core = ref if ref else f"KSL Passage #{idx + 1}"
+
+    # Extract transcript/subtitles from any text/vtt/srt/json field
+    transcript_text = ""
+    for col in ("vtt", "srt", "txt", "transcripts.json", "transcript", "subtitles", "text", "captions"):
+        val = row.get(col)
+        if not val:
+            continue
+        if isinstance(val, (bytes, bytearray)):
+            decoded = val.decode("utf-8", errors="ignore").strip()
+            if col.endswith(".json") or decoded.startswith(("{", "[")):
+                try:
+                    parsed = json.loads(decoded)
+                    if isinstance(parsed, dict):
+                        transcript_text = " ".join(str(v) for v in list(parsed.values())[:5] if v)[:320]
+                    elif isinstance(parsed, list):
+                        transcript_text = " ".join(
+                            (str(x.get("text") or x.get("transcript") or "") if isinstance(x, dict) else str(x))
+                            for x in parsed[:5]
+                        )[:320]
+                except Exception:
+                    transcript_text = _strip_vtt_srt(decoded)
+            else:
+                transcript_text = _strip_vtt_srt(decoded)
+        elif isinstance(val, str):
+            transcript_text = _strip_vtt_srt(val)
+        elif isinstance(val, dict):
+            transcript_text = " ".join(str(v) for v in list(val.values())[:5] if v)[:320]
+        if transcript_text:
+            break
+
+    if not transcript_text:
+        for mk in ("transcript", "text", "english", "gloss", "description", "verses_text", "caption"):
+            mv = meta.get(mk)
+            if isinstance(mv, str) and mv.strip():
+                transcript_text = mv.strip()[:320]
+                break
+            elif isinstance(mv, list) and mv:
+                transcript_text = " ".join(str(x) for x in mv[:4])[:320]
+                break
+
+    if not transcript_text and ref:
+        transcript_text = f"Kenyan Sign Language (KSL) human-signed passage for {ref} (Open Sign Bibles, CC-BY-SA-4.0)."
+
+    return title_core, ref, transcript_text
+
+
 def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
-    """Stream real human KSL (xki) .mp4 signing videos from bible-nlp/sign-bibles (CC-BY-SA-4.0) to R2."""
+    """Stream real human KSL (xki) .mp4 signing videos + passage context from bible-nlp/sign-bibles (CC-BY-SA-4.0) to R2."""
     assert_repo_allowed(SIGN_BIBLES_REPO)
     print(f"[Open Sign Bibles CC-BY-SA-4.0] Streaming human KSL (xki) .mp4 videos from {SIGN_BIBLES_REPO}...")
     try:
@@ -347,19 +452,42 @@ def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
         print("  [warn] datasets library not installed; skipping Open Sign Bibles video stream.")
         return
 
-    seen_ids = {v["id"] for v in videos_out}
+    by_id = {v["id"]: v for v in videos_out}
     added = 0
+    enriched = 0
     try:
         ds = load_dataset(SIGN_BIBLES_REPO, "xki", split="train", streaming=True, token=HF_TOKEN)
         for idx, row in enumerate(ds):
-            if added >= MAX_HUMAN_KSL_VIDEOS or idx >= MAX_HUMAN_KSL_VIDEOS * 4:
+            if added >= MAX_HUMAN_KSL_VIDEOS or idx >= MAX_HUMAN_KSL_VIDEOS * 10:
                 break
+            if idx == 0:
+                print(f"  Open Sign Bibles xki row[0] keys: {list(row.keys())} | __key__={row.get('__key__')!r}")
             meta = row.get("json") or {}
             if isinstance(meta, bytes):
                 try:
                     meta = json.loads(meta.decode("utf-8", errors="ignore"))
                 except Exception:
                     meta = {}
+            if not isinstance(meta, dict):
+                meta = {}
+
+            title_core, ref, transcript_text = _extract_sign_bible_context(row, meta, idx)
+            legacy_id = f"sign-bible-xki-ksl-passage-{idx}"
+            vid_slug = slugify(f"xki-{title_core}-{idx}")
+            vid_id = f"sign-bible-{vid_slug}"
+
+            # Enrich existing clip metadata in place without re-uploading .mp4
+            existing = by_id.get(vid_id) or by_id.get(legacy_id)
+            if existing is not None:
+                if (not existing.get("transcript") and transcript_text) or (ref and existing.get("title", "").startswith("KSL Passage")):
+                    existing["title"] = f"{title_core} (Human KSL)"
+                    existing["gloss"] = title_core
+                    if ref:
+                        existing["reference"] = ref
+                    if transcript_text:
+                        existing["transcript"] = transcript_text
+                    enriched += 1
+                continue
 
             mp4_raw = row.get("mp4")
             if isinstance(mp4_raw, dict):
@@ -367,48 +495,28 @@ def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
             if not isinstance(mp4_raw, (bytes, bytearray)) or len(mp4_raw) < 1024:
                 continue
 
-            book = str(meta.get("book") or meta.get("title") or "KSL Passage").strip()
-            chapter = str(meta.get("chapter") or "").strip()
-            ref_title = f"{book} {chapter}".strip() if chapter else book
-            vid_slug = slugify(f"xki-{ref_title}-{idx}")
-            vid_id = f"sign-bible-{vid_slug}"
-            if vid_id in seen_ids:
-                continue
-
-            transcript_raw = row.get("transcripts.json") or row.get("transcript") or ""
-            transcript_text = ""
-            if isinstance(transcript_raw, bytes):
-                try:
-                    parsed_t = json.loads(transcript_raw.decode("utf-8", errors="ignore"))
-                    if isinstance(parsed_t, dict):
-                        transcript_text = " ".join(str(v) for v in list(parsed_t.values())[:3])[:220]
-                    elif isinstance(parsed_t, list):
-                        transcript_text = " ".join(str(v) for v in parsed_t[:3])[:220]
-                except Exception:
-                    transcript_text = ""
-            elif isinstance(transcript_raw, str):
-                transcript_text = transcript_raw[:220]
-
             mp4_bytes = transcode_to_compact_mp4(bytes(mp4_raw), ".mp4", max_seconds=15)
             if not mp4_bytes:
                 continue
             video_url = upload_bytes_to_r2(s3_client, f"ksl/human/{vid_id}.mp4", mp4_bytes, "video/mp4")
             if video_url:
-                seen_ids.add(vid_id)
-                added += 1
-                videos_out.append({
+                item = {
                     "id": vid_id,
-                    "title": f"{ref_title} (Human KSL)",
-                    "gloss": ref_title,
+                    "title": f"{title_core} (Human KSL)",
+                    "gloss": title_core,
                     "videoUrl": video_url,
                     "category": "human-sign-bible",
                     "register": "religious_liturgical",
+                    "reference": ref,
                     "transcript": transcript_text,
                     "license": "CC-BY-SA-4.0",
                     "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
                     "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
-                })
-        print(f"  -> Uploaded {added} real human KSL (xki) .mp4 clips from Open Sign Bibles.")
+                }
+                by_id[vid_id] = item
+                videos_out.append(item)
+                added += 1
+        print(f"  -> Uploaded {added} new and enriched {enriched} existing human KSL (xki) .mp4 clips from Open Sign Bibles.")
     except Exception as exc:
         print(f"  [warn] Open Sign Bibles xki video stream notice: {exc}")
 

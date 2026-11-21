@@ -33,6 +33,7 @@ export interface KslVideoItem {
   videoUrl: string;
   category: "maseno-stickman" | "human-sign-bible" | string;
   register?: string;
+  reference?: string;
   transcript?: string;
   license: string;
   source: string;

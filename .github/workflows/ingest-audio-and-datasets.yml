@@ -199,6 +199,8 @@ jobs:
           INCLUDE_MDC_COMMON_VOICE: ${{ inputs.include_mdc_common_voice || 'true' }}
           INCLUDE_LINGUA_LIBRE: ${{ inputs.include_lingua_libre || 'true' }}
           INCLUDE_KSL_METADATA: ${{ inputs.include_ksl_metadata || 'true' }}
+          MAX_KSL_MASENO_VIDEOS: "2000"
+          MAX_KSL_HUMAN_VIDEOS: "1000"
           PER_DATASET_TIMEOUT_SEC: "150"
           GLOBAL_TIME_BUDGET_SEC: "4800"
           INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}

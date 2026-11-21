@@ -18,6 +18,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather, Ionicons } from '@expo/vector-icons';
+import { WebView } from 'react-native-webview';
 import { playVerifiedAudio, hasVerifiedAudio } from '../lib/mobile-audio';
 import { useTheme, androidRipple, KenyaStripe } from '../theme';
 import { PUBLISHED_COURSE_SUMMARIES, hasCourseSummary, getCourseLazy, getGrammarSectionsLazy, getPlaceholderCourse, getCanonicalCourseCounts, buildDictUnit } from './language-course/courseLoader';
@@ -122,6 +123,15 @@ export default function LanguageCourseTool({
   const [selectedEmergingId, setSelectedEmergingId] = useState<string>(
     ((openCorpusIndex as any).stagedVarieties?.[0]?.id as string) || 'nubi'
   );
+  const [kslTab, setKslTab] = useState<'all' | 'maseno-stickman' | 'human-sign-bible'>('all');
+  const [kslSearchQuery, setKslSearchQuery] = useState<string>('');
+  const [activeKslVideoId, setActiveKslVideoId] = useState<string>(
+    ((openCorpusIndex as any).ksl?.videos?.[0]?.id as string) || ''
+  );
+  const [kslPlaybackRate, setKslPlaybackRate] = useState<number>(1);
+  const [kslVisibleCount, setKslVisibleCount] = useState<number>(24);
+  const [emergingSearchQuery, setEmergingSearchQuery] = useState<string>('');
+  const [emergingVisibleCount, setEmergingVisibleCount] = useState<number>(30);
 
   const [selectedLangId, setSelectedLangId] = useState<string>(
     initialLanguageId && hasCourseSummary(initialLanguageId)
@@ -2510,11 +2520,41 @@ export default function LanguageCourseTool({
           })}
         </View>
 
-        {/* Kenyan Sign Language (KSL) — Video Library (1:1 Web Parity) */}
+        {/* Kenyan Sign Language (KSL) — In-App Video Studio (1:1 Web Parity) */}
         {(() => {
           const kslData = (openCorpusIndex as any).ksl || {};
-          const kslVideos: { id: string; title: string; videoUrl: string; category?: string; source?: string }[] = kslData.videos || [];
+          const kslVideos: {
+            id: string;
+            title: string;
+            gloss?: string;
+            videoUrl: string;
+            category?: string;
+            source?: string;
+            reference?: string;
+            transcript?: string;
+          }[] = kslData.videos || [];
           if (kslVideos.length === 0) return null;
+
+          const masenoCount = kslVideos.filter((v) => v.category === 'maseno-stickman').length;
+          const humanCount = kslVideos.filter((v) => v.category === 'human-sign-bible').length;
+          const q = kslSearchQuery.trim().toLowerCase();
+          const filteredKsl = kslVideos.filter((v) => {
+            if (kslTab !== 'all' && v.category !== kslTab) return false;
+            if (!q) return true;
+            return (
+              v.title.toLowerCase().includes(q) ||
+              (v.gloss || '').toLowerCase().includes(q) ||
+              (v.reference || '').toLowerCase().includes(q) ||
+              (v.transcript || '').toLowerCase().includes(q)
+            );
+          });
+          const activeKsl =
+            filteredKsl.find((v) => v.id === activeKslVideoId) || filteredKsl[0] || null;
+          const safeVideoUrl = activeKsl ? activeKsl.videoUrl.replace(/["'<>]/g, '') : '';
+          const playerHtml = activeKsl
+            ? `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" src="${safeVideoUrl}" controls playsinline loop preload="metadata"></video><script>var v=document.getElementById('v');if(v){v.playbackRate=${kslPlaybackRate};v.addEventListener('loadedmetadata',function(){v.playbackRate=${kslPlaybackRate};});}</script></body></html>`
+            : '';
+
           return (
             <View
               style={{
@@ -2529,32 +2569,166 @@ export default function LanguageCourseTool({
             >
               <View style={{ gap: 2 }}>
                 <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.kenyaGreen, letterSpacing: 0.6 }}>
-                  KENYAN SIGN LANGUAGE (KSL)
+                  KENYAN SIGN LANGUAGE (KSL · XKI)
                 </Text>
                 <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 15, color: colors.text }}>
-                  KSL Sign Videos &amp; Storybooks
+                  In-App KSL Video Studio ({kslVideos.length} videos)
                 </Text>
                 <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
-                  Watch Maseno stickman sign clips, human KSL signers, and illustrated KSL video storybooks.
+                  Watch Maseno stickman signs and human KSL signers right inside the app with slow-motion controls and passage context.
                 </Text>
               </View>
 
-              {kslVideos.length > 0 && (
-                <View style={{ gap: 6 }}>
-                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
-                    PLAYABLE KSL SIGN VIDEOS ({kslVideos.length})
-                  </Text>
-                  {kslVideos.slice(0, 12).map((vid) => (
+              {/* Category Filter Tabs */}
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
+                {(
+                  [
+                    { id: 'all', label: `All (${kslVideos.length})` },
+                    { id: 'maseno-stickman', label: `Stickman (${masenoCount})` },
+                    { id: 'human-sign-bible', label: `Human KSL (${humanCount})` },
+                  ] as const
+                ).map((t) => {
+                  const isAct = kslTab === t.id;
+                  return (
+                    <Pressable
+                      key={t.id}
+                      onPress={() => {
+                        setKslTab(t.id);
+                        setKslVisibleCount(24);
+                      }}
+                      style={{
+                        paddingHorizontal: 10,
+                        paddingVertical: 6,
+                        borderRadius: 9,
+                        borderWidth: 1,
+                        borderColor: isAct ? colors.kenyaGreen : colors.outlineVariant,
+                        backgroundColor: isAct ? colors.kenyaGreen : colors.surface,
+                      }}
+                    >
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: isAct ? '#FFFFFF' : colors.text }}>
+                        {t.label}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+
+              {/* Search KSL Signs */}
+              <TextInput
+                value={kslSearchQuery}
+                onChangeText={(txt) => {
+                  setKslSearchQuery(txt);
+                  setKslVisibleCount(24);
+                }}
+                placeholder="Search KSL signs, books, or passage context..."
+                placeholderTextColor={colors.textMuted}
+                style={{
+                  backgroundColor: colors.surface,
+                  borderWidth: 1,
+                  borderColor: colors.outlineVariant,
+                  borderRadius: 10,
+                  paddingHorizontal: 12,
+                  paddingVertical: 8,
+                  fontFamily: 'Inter_400Regular',
+                  fontSize: 12.5,
+                  color: colors.text,
+                }}
+              />
+
+              {/* In-App HTML5 Video Player */}
+              {activeKsl && (
+                <View style={{ gap: 8, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
+                  <View style={{ height: 220, borderRadius: 10, overflow: 'hidden', backgroundColor: '#000000' }}>
+                    <WebView
+                      key={`${activeKsl.id}-${kslPlaybackRate}`}
+                      source={{ html: playerHtml, baseUrl: 'https://audio.kenyahub.me' }}
+                      allowsInlineMediaPlayback
+                      mediaPlaybackRequiresUserAction={false}
+                      javaScriptEnabled
+                      domStorageEnabled
+                      originWhitelist={['*']}
+                      style={{ flex: 1, backgroundColor: '#000000' }}
+                    />
+                  </View>
+
+                  <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                    <View style={{ flex: 1 }}>
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13.5, color: colors.text }} numberOfLines={2}>
+                        {activeKsl.title}
+                      </Text>
+                      <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11, color: colors.textMuted }}>
+                        {activeKsl.source || (activeKsl.category === 'maseno-stickman' ? 'Maseno University KSL' : 'Open Sign Bibles')}
+                      </Text>
+                    </View>
+                    <Pressable
+                      onPress={() => Linking.openURL(activeKsl.videoUrl).catch(() => {})}
+                      style={{ paddingHorizontal: 8, paddingVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant }}
+                    >
+                      <Feather name="external-link" size={14} color={colors.kenyaGreen} />
+                    </Pressable>
+                  </View>
+
+                  {/* Playback Speed Pills */}
+                  <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                    <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted }}>Speed:</Text>
+                    {[0.5, 0.75, 1].map((spd) => {
+                      const act = kslPlaybackRate === spd;
+                      return (
+                        <Pressable
+                          key={spd}
+                          onPress={() => setKslPlaybackRate(spd)}
+                          style={{
+                            paddingHorizontal: 9,
+                            paddingVertical: 4,
+                            borderRadius: 7,
+                            borderWidth: 1,
+                            borderColor: act ? colors.kenyaGreen : colors.outlineVariant,
+                            backgroundColor: act ? `${colors.kenyaGreen}20` : colors.surfaceContainer,
+                          }}
+                        >
+                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: act ? colors.kenyaGreen : colors.textSecondary }}>
+                            {spd}x
+                          </Text>
+                        </Pressable>
+                      );
+                    })}
+                  </View>
+
+                  {(activeKsl.reference || activeKsl.transcript) && (
+                    <View style={{ backgroundColor: colors.surfaceContainer, borderRadius: 8, padding: 9, gap: 3 }}>
+                      {Boolean(activeKsl.reference) && (
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.kenyaGreen }}>
+                          PASSAGE CONTEXT · {activeKsl.reference}
+                        </Text>
+                      )}
+                      {Boolean(activeKsl.transcript) && (
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                          {activeKsl.transcript}
+                        </Text>
+                      )}
+                    </View>
+                  )}
+                </View>
+              )}
+
+              {/* Full Browsable KSL Video List */}
+              <View style={{ gap: 6 }}>
+                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
+                  SHOWING {Math.min(kslVisibleCount, filteredKsl.length)} OF {filteredKsl.length} VIDEOS
+                </Text>
+                {filteredKsl.slice(0, kslVisibleCount).map((vid) => {
+                  const isPlaying = activeKsl?.id === vid.id;
+                  return (
                     <Pressable
                       key={vid.id}
-                      onPress={() => Linking.openURL(vid.videoUrl).catch(() => {})}
+                      onPress={() => setActiveKslVideoId(vid.id)}
                       style={{
                         flexDirection: 'row',
                         alignItems: 'center',
                         justifyContent: 'space-between',
-                        backgroundColor: colors.surface,
+                        backgroundColor: isPlaying ? `${colors.kenyaGreen}15` : colors.surface,
                         borderWidth: 1,
-                        borderColor: colors.outlineVariant,
+                        borderColor: isPlaying ? colors.kenyaGreen : colors.outlineVariant,
                         borderRadius: 10,
                         paddingHorizontal: 10,
                         paddingVertical: 8,
@@ -2566,19 +2740,62 @@ export default function LanguageCourseTool({
                           {vid.title}
                         </Text>
                         <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 10.5, color: colors.textMuted }}>
-                          {vid.category === 'maseno-stickman' ? 'Maseno Stickman Video' : 'Human KSL Signer'}
+                          {vid.category === 'maseno-stickman' ? 'Maseno Stickman Video' : (vid.reference ? `Human KSL · ${vid.reference}` : 'Human KSL Signer')}
                         </Text>
+                        {Boolean(vid.transcript) && (
+                          <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11, color: colors.textSecondary, marginTop: 2 }} numberOfLines={2}>
+                            {vid.transcript}
+                          </Text>
+                        )}
                       </View>
-                      <Feather name="play-circle" size={16} color={colors.kenyaGreen} />
+                      <Feather name={isPlaying ? 'volume-2' : 'play-circle'} size={16} color={colors.kenyaGreen} />
                     </Pressable>
-                  ))}
-                </View>
-              )}
+                  );
+                })}
+
+                {kslVisibleCount < filteredKsl.length && (
+                  <View style={{ flexDirection: 'row', gap: 8, marginTop: 4 }}>
+                    <Pressable
+                      onPress={() => setKslVisibleCount((c) => c + 30)}
+                      style={{
+                        flex: 1,
+                        alignItems: 'center',
+                        paddingVertical: 9,
+                        borderRadius: 10,
+                        borderWidth: 1,
+                        borderColor: colors.kenyaGreen,
+                        backgroundColor: `${colors.kenyaGreen}14`,
+                      }}
+                    >
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.kenyaGreen }}>
+                        Load 30 More ({filteredKsl.length - kslVisibleCount} left)
+                      </Text>
+                    </Pressable>
+                    <Pressable
+                      onPress={() => setKslVisibleCount(filteredKsl.length)}
+                      style={{
+                        paddingHorizontal: 14,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        paddingVertical: 9,
+                        borderRadius: 10,
+                        borderWidth: 1,
+                        borderColor: colors.outlineVariant,
+                        backgroundColor: colors.surface,
+                      }}
+                    >
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.text }}>
+                        Show All
+                      </Text>
+                    </Pressable>
+                  </View>
+                )}
+              </View>
             </View>
           );
         })()}
 
-        {/* More Kenyan Languages — Starter Phrasebooks (Kinubi, Kuria, Kenyan Maay · 1:1 Web Parity) */}
+        {/* More Kenyan Languages — Starter Phrasebooks (Kinubi, Kuria, Kenyan Maay, Yaaku · 1:1 Web Parity) */}
         {(() => {
           const varieties: {
             id: string;
@@ -2587,10 +2804,19 @@ export default function LanguageCourseTool({
             family: string;
             counties: string[];
             totalEntries: number;
-            sampleEntries: { english: string; translation: string }[];
+            sampleEntries: { english: string; translation: string; context?: string }[];
           }[] = (openCorpusIndex as any).stagedVarieties || [];
           if (varieties.length === 0) return null;
           const activeVar = varieties.find((v) => v.id === selectedEmergingId) || varieties[0];
+          const eq = emergingSearchQuery.trim().toLowerCase();
+          const filteredEmerging = (activeVar?.sampleEntries || []).filter((ent) => {
+            if (!eq) return true;
+            return (
+              ent.translation.toLowerCase().includes(eq) ||
+              ent.english.toLowerCase().includes(eq) ||
+              (ent.context || '').toLowerCase().includes(eq)
+            );
+          });
           return (
             <View
               style={{
@@ -2612,7 +2838,7 @@ export default function LanguageCourseTool({
                   Starter Phrasebooks
                 </Text>
                 <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
-                  Explore everyday words and phrases in Kinubi, Kuria, Kenyan Maay, and Yaaku.
+                  Explore all everyday words and phrases in Kinubi, Kuria, Kenyan Maay, and Yaaku.
                 </Text>
               </View>
 
@@ -2622,7 +2848,11 @@ export default function LanguageCourseTool({
                   return (
                     <Pressable
                       key={v.id}
-                      onPress={() => setSelectedEmergingId(v.id)}
+                      onPress={() => {
+                        setSelectedEmergingId(v.id);
+                        setEmergingSearchQuery('');
+                        setEmergingVisibleCount(30);
+                      }}
                       style={{
                         paddingHorizontal: 11,
                         paddingVertical: 6,
@@ -2641,11 +2871,34 @@ export default function LanguageCourseTool({
               </View>
 
               {activeVar && (
-                <View style={{ gap: 6 }}>
+                <View style={{ gap: 8 }}>
                   <Text style={{ fontFamily: 'Inter_500Medium', fontSize: 11.5, color: colors.textMuted }}>
                     {activeVar.family} · Spoken in {activeVar.counties.join(', ')}
                   </Text>
-                  {activeVar.sampleEntries.slice(0, 18).map((ent, idx) => (
+                  <TextInput
+                    value={emergingSearchQuery}
+                    onChangeText={(txt) => {
+                      setEmergingSearchQuery(txt);
+                      setEmergingVisibleCount(30);
+                    }}
+                    placeholder={`Search all ${activeVar.totalEntries} ${activeVar.name} phrases...`}
+                    placeholderTextColor={colors.textMuted}
+                    style={{
+                      backgroundColor: colors.surface,
+                      borderWidth: 1,
+                      borderColor: colors.outlineVariant,
+                      borderRadius: 10,
+                      paddingHorizontal: 12,
+                      paddingVertical: 8,
+                      fontFamily: 'Inter_400Regular',
+                      fontSize: 12.5,
+                      color: colors.text,
+                    }}
+                  />
+                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
+                    SHOWING {Math.min(emergingVisibleCount, filteredEmerging.length)} OF {filteredEmerging.length} PHRASES
+                  </Text>
+                  {filteredEmerging.slice(0, emergingVisibleCount).map((ent, idx) => (
                     <View
                       key={`${activeVar.id}-${idx}`}
                       style={{
@@ -2666,6 +2919,44 @@ export default function LanguageCourseTool({
                       </Text>
                     </View>
                   ))}
+
+                  {emergingVisibleCount < filteredEmerging.length && (
+                    <View style={{ flexDirection: 'row', gap: 8, marginTop: 4 }}>
+                      <Pressable
+                        onPress={() => setEmergingVisibleCount((c) => c + 50)}
+                        style={{
+                          flex: 1,
+                          alignItems: 'center',
+                          paddingVertical: 9,
+                          borderRadius: 10,
+                          borderWidth: 1,
+                          borderColor: colors.gold,
+                          backgroundColor: `${colors.gold}18`,
+                        }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>
+                          Load 50 More ({filteredEmerging.length - emergingVisibleCount} left)
+                        </Text>
+                      </Pressable>
+                      <Pressable
+                        onPress={() => setEmergingVisibleCount(filteredEmerging.length)}
+                        style={{
+                          paddingHorizontal: 14,
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          paddingVertical: 9,
+                          borderRadius: 10,
+                          borderWidth: 1,
+                          borderColor: colors.outlineVariant,
+                          backgroundColor: colors.surface,
+                        }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.text }}>
+                          Show All
+                        </Text>
+                      </Pressable>
+                    </View>
+                  )}
                 </View>
               )}
             </View>
