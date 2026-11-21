@@ -478,6 +478,7 @@ export default function LearnPage() {
             </div>
           </>
         )}
+        <StagedVarietiesPanel />
       </div>
     </ToolShell>
   );

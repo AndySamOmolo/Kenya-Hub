@@ -1096,6 +1096,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
         <GrammarView
           sections={course.grammarSections}
           languageName={course.config.name}
+          languageId={course.config.id}
         />
       ) : view === "proverbs" ? (
         <ProverbsView lockedLanguageId={course.config.id} />

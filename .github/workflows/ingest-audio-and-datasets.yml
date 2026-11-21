@@ -59,6 +59,7 @@ on:
       - ".github/workflows/ingest-audio-and-datasets.yml"
       - "kenyahub/scripts/lib/license_guard.py"
       - "kenyahub/scripts/ci-ingest-audio-and-text-r2.py"
+      - "kenyahub/scripts/ingest-ksl-pose-r2.py"
       - "kenyahub/scripts/ingest-permissive-text-datasets.py"
       - "kenyahub/scripts/ingest-cldf-wikimedia-civic.py"
       - "kenyahub/scripts/ingest-external-datasets.mjs"
@@ -88,6 +89,7 @@ jobs:
           CURRENT_HASH=$(sha256sum \
             kenyahub/scripts/lib/license_guard.py \
             kenyahub/scripts/ci-ingest-audio-and-text-r2.py \
+            kenyahub/scripts/ingest-ksl-pose-r2.py \
             kenyahub/scripts/ingest-permissive-text-datasets.py \
             kenyahub/scripts/ingest-cldf-wikimedia-civic.py \
             kenyahub/scripts/ingest-external-datasets.mjs \
@@ -146,7 +148,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg libsndfile1
           pip install --upgrade pip
-          pip install "datasets>=2.19.0,<4.0.0" soundfile librosa boto3 requests pyarrow huggingface_hub pypdf
+          pip install "datasets>=2.19.0,<4.0.0" soundfile librosa boto3 requests pyarrow huggingface_hub pypdf datacollective
 
       - name: Install Web Dependencies
         if: steps.lock_check.outputs.skip != 'true'
@@ -196,12 +198,17 @@ jobs:
           GLOBAL_TIME_BUDGET_SEC: "3000"
           INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
           R2_READY: ${{ steps.secrets_check.outputs.r2_ready }}
-        run: python3 -u scripts/ci-ingest-audio-and-text-r2.py
+        run: |
+          python3 -u scripts/ci-ingest-audio-and-text-r2.py
+          if [ "${{ inputs.include_ksl_metadata || 'true' }}" = "true" ]; then
+            python3 -u scripts/ingest-ksl-pose-r2.py
+          fi
 
       - name: Sync Mobile Data & Run Strict Tool/Course Audit
         if: steps.lock_check.outputs.skip != 'true'
         run: |
           node kenyahub/scripts/clean-removed-tools.mjs
+          python3 -u kenyahub/scripts/build-open-corpus-index.py
           node mobile/scripts/sync-data.mjs
           npm --prefix kenyahub run audit:tools:strict
           npm --prefix kenyahub test
@@ -211,7 +218,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A kenyahub/src/data/dictionaries kenyahub/src/data/language-sources kenyahub/src/data/courses/proverbs kenyahub/src/data/language-typology kenyahub/src/data/locales kenyahub/src/data/readers kenyahub/src/data/benchmarks kenyahub/src/data/frequency-lists kenyahub/src/data/civic kenyahub/src/data/wikimedia kenyahub/public/audio-manifest.json kenyahub/public/.audio-ingested-lock.json kenyahub/public/r2-audio-index.json kenyahub/public/ksl-index.json kenyahub/reports/tool-audit.json mobile/src/shared/ || true
+          git add -A kenyahub/src/data/dictionaries kenyahub/src/data/language-sources kenyahub/src/data/courses/proverbs kenyahub/src/data/language-typology kenyahub/src/data/open-corpus-index.json kenyahub/src/data/locales kenyahub/src/data/readers kenyahub/src/data/benchmarks kenyahub/src/data/frequency-lists kenyahub/src/data/civic kenyahub/src/data/wikimedia kenyahub/public/audio-manifest.json kenyahub/public/.audio-ingested-lock.json kenyahub/public/r2-audio-index.json kenyahub/public/ksl-index.json kenyahub/reports/tool-audit.json mobile/src/shared/ || true
           if ! git diff --staged --quiet; then
             git commit -m "feat(data): ingest commercially permissive audio, KSL, text, PanLex, CLDR 49, Kaikki & CLDF datasets"
             git pull --rebase --autostash origin ${GITHUB_REF_NAME}

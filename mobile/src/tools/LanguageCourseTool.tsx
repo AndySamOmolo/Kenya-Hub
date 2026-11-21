@@ -4289,6 +4289,59 @@ export default function LanguageCourseTool({
          ======================================================================== */}
       {activeTab === 'grammar' && (
         <View style={styles.grammarTabWrap}>
+          {(() => {
+            const corpusLang = (
+              openCorpusIndex.languages as Record<
+                string,
+                {
+                  r2AudioClips?: number;
+                  typology?: { iso639_3?: string; glottocode?: string; familyPath?: string[] } | null;
+                  cldr?: { locale?: string; months?: string[]; days?: string[] } | null;
+                  sampleReadings?: { text: string; english?: string; source: string }[];
+                  topFrequencyWords?: { word: string }[];
+                }
+              >
+            )[selectedLanguageId];
+            if (!corpusLang) return null;
+            return (
+              <View
+                style={{
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: `${theme.gold}40`,
+                  borderWidth: 1,
+                  borderRadius: 14,
+                  padding: 12,
+                  marginBottom: 12,
+                  gap: 6,
+                }}
+              >
+                <Text style={{ fontFamily: "Inter_700Bold", fontSize: 12, color: theme.gold }}>
+                  OPEN LINGUISTIC PROFILE · CLDR {openCorpusIndex.cldrVersion}
+                </Text>
+                {corpusLang.typology && (
+                  <Text style={{ fontFamily: "Inter_500Medium", fontSize: 12, color: theme.textPrimary }}>
+                    ISO {corpusLang.typology.iso639_3} · Glottocode {corpusLang.typology.glottocode}
+                    {corpusLang.r2AudioClips ? ` · ${corpusLang.r2AudioClips.toLocaleString()} R2 audio clips` : ""}
+                  </Text>
+                )}
+                {corpusLang.cldr && corpusLang.cldr.days && corpusLang.cldr.days.length > 0 && (
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: theme.textSecondary }}>
+                    Days ({corpusLang.cldr.locale}): {corpusLang.cldr.days.join(" · ")}
+                  </Text>
+                )}
+                {corpusLang.topFrequencyWords && corpusLang.topFrequencyWords.length > 0 && (
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: theme.textSecondary }}>
+                    Top corpus words: {corpusLang.topFrequencyWords.slice(0, 10).map((w) => w.word).join(", ")}
+                  </Text>
+                )}
+                {corpusLang.sampleReadings && corpusLang.sampleReadings.length > 0 && (
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: theme.textMuted }}>
+                    Sample reading: &ldquo;{corpusLang.sampleReadings[0].text}&rdquo;
+                  </Text>
+                )}
+              </View>
+            );
+          })()}
           {/* M3 Search Input */}
           <View
             style={[

@@ -642,17 +642,37 @@ def ingest_common_voice_27_mdc(s3_client, uploaded_keys: dict, dataset_status: d
             continue
         log(f"[Common Voice 27.0 MDC CC0] Fetching {iso} ({mdc_id}) -> {lang_id}...")
         try:
-            dl_url = f"https://mozilladatacollective.com/api/v1/datasets/{mdc_id}/download"
-            resp = HTTP_SESSION.get(dl_url, headers={"Authorization": f"Bearer {MDC_API_KEY}"}, stream=True, timeout=60)
-            if not resp.ok:
-                dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"HTTP {resp.status_code}", "updatedAt": datetime.now(timezone.utc).isoformat()}
-                continue
             count = 0
             with tempfile.TemporaryDirectory() as tmpdir:
                 tar_path = os.path.join(tmpdir, f"cv27-{iso}.tar.gz")
-                with open(tar_path, "wb") as f:
-                    for chunk in resp.iter_content(chunk_size=1024 * 1024):
-                        f.write(chunk)
+                downloaded_via_sdk = False
+                try:
+                    from datacollective import download_dataset as mdc_download_dataset
+                    os.environ["MDC_API_KEY"] = MDC_API_KEY
+                    os.environ["MDC_DOWNLOAD_PATH"] = tmpdir
+                    sdk_path = mdc_download_dataset(mdc_id)
+                    if sdk_path and os.path.exists(str(sdk_path)):
+                        tar_path = str(sdk_path)
+                        downloaded_via_sdk = True
+                except Exception as sdk_exc:
+                    log(f"  [info] datacollective SDK fallback for {mdc_id}: {sdk_exc}")
+
+                if not downloaded_via_sdk:
+                    # Fallback: POST create-download to get presigned URL
+                    dl_url = f"https://datacollective.mozillafoundation.org/api/datasets/{mdc_id}/download"
+                    resp = HTTP_SESSION.post(dl_url, headers={"Authorization": f"Bearer {MDC_API_KEY}"}, timeout=60)
+                    if not resp.ok:
+                        dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"MDC HTTP {resp.status_code} (ensure terms accepted on mozilladatacollective.com)", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                        continue
+                    presigned = (resp.json() or {}).get("downloadUrl") or (resp.json() or {}).get("url")
+                    if not presigned:
+                        dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": "No presigned downloadUrl returned by MDC API", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                        continue
+                    with HTTP_SESSION.get(presigned, stream=True, timeout=120) as file_resp:
+                        file_resp.raise_for_status()
+                        with open(tar_path, "wb") as f:
+                            for chunk in file_resp.iter_content(chunk_size=1024 * 1024):
+                                f.write(chunk)
                 with tarfile.open(tar_path, "r:gz") as tf:
                     tsv_members = [m for m in tf.getmembers() if m.name.endswith("validated.tsv")]
                     if tsv_members:
@@ -810,13 +830,6 @@ def ingest_direct_archive_audio(s3_client, uploaded_keys: dict, dataset_status: 
             "url": "https://www.openslr.org/resources/25/data_broadcastnews_sw.tar.bz2",
         },
         {
-            "job_key": "masakhane/bibletts::kik::kikuyu",
-            "lang_id": "kikuyu",
-            "license": "CC-BY-SA-4.0",
-            "kind": "tar",
-            "url": "https://www.openslr.org/resources/129/kikuyu.tgz",
-        },
-        {
             "job_key": "mendeley/makerere-swahili-tts::sw::swahili",
             "lang_id": "swahili",
             "license": "CC-BY-4.0",
@@ -869,7 +882,7 @@ def ingest_direct_archive_audio(s3_client, uploaded_keys: dict, dataset_status: 
                         for chunk in resp.iter_content(chunk_size=1024 * 1024):
                             f.write(chunk)
                             downloaded += len(chunk)
-                            if downloaded > 600 * 1024 * 1024:
+                            if downloaded > 2500 * 1024 * 1024:
                                 break
                 count = _ingest_tar_or_zip_audio(s3_client, uploaded_keys, lang_id, arch_path)
             dataset_status[job_key] = {"status": "completed" if count > 0 else "completed_no_new_clips", "clipsUploaded": count, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}

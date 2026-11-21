@@ -159,13 +159,6 @@
       "lang_id": "swahili",
       "updatedAt": "2026-11-19T15:33:39.355242+00:00"
     },
-    "liva-ai/swahili-asr::default::swahili": {
-      "status": "failed",
-      "gated": false,
-      "lang_id": "swahili",
-      "reason": "`file_name` or `*_file_name` must be present as dictionary key (with type string) in metadata files",
-      "updatedAt": "2026-11-19T15:33:40.020697+00:00"
-    },
     "skydheere/soomali-asr-dataset::default::somali": {
       "status": "completed",
       "clipsUploaded": 250,
@@ -319,12 +312,6 @@
       "lang_id": "swahili",
       "reason": "Compressed file ended before the end-of-stream marker was reached",
       "updatedAt": "2026-11-21T12:51:29.985337+00:00"
-    },
-    "masakhane/bibletts::kik::kikuyu": {
-      "status": "failed",
-      "lang_id": "kikuyu",
-      "reason": "HTTP 404",
-      "updatedAt": "2026-11-21T12:51:30.301192+00:00"
     },
     "mendeley/makerere-swahili-tts::sw::swahili": {
       "status": "completed_no_new_clips",

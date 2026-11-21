@@ -88,6 +88,16 @@ if (existsSync(registryPath)) {
 }
 
 // Sync verified audio & KSL manifest metadata from kenyahub/public/
+const kslStarterSrc = resolve(root, "kenyahub/src/data/ksl-starter.ts");
+if (existsSync(kslStarterSrc)) {
+  writeFileSync(resolve(destination, "data/ksl-starter.ts"), readFileSync(kslStarterSrc));
+}
+
+const openCorpusSrc = resolve(root, "kenyahub/src/data/open-corpus-index.json");
+if (existsSync(openCorpusSrc)) {
+  writeFileSync(resolve(destination, "data/open-corpus-index.json"), readFileSync(openCorpusSrc));
+}
+
 const audioManifestSrc = resolve(root, "kenyahub/public/audio-manifest.json");
 if (existsSync(audioManifestSrc)) {
   writeFileSync(resolve(destination, "data/audio-manifest.json"), readFileSync(audioManifestSrc));
@@ -104,6 +114,8 @@ const jsonFiles = readdirSync(webDataDir).filter((f) => f.endsWith(".json"));
 const extraParityFiles = [
   "language-sources/index.ts",
   "language-typology/profiles.json",
+  "open-corpus-index.json",
+  "ksl-starter.ts",
   "dictionaries/catalog.ts",
 ];
 

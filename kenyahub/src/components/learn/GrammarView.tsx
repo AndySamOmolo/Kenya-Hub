@@ -3,6 +3,7 @@
 import React, { useMemo } from "react";
 import type { GrammarSection } from "@/data/courses/types";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
+import OpenCorpusPanel from "./OpenCorpusPanel";
 
 /**
  * Renders grammar section content supporting headings, bulleted/numbered lists,
@@ -149,9 +150,11 @@ function RenderedContent({ content }: { content: string }) {
 export default function GrammarView({
   sections,
   languageName,
+  languageId,
 }: {
   sections: GrammarSection[];
   languageName: string;
+  languageId?: string;
 }) {
   if (!sections || sections.length === 0) {
     return (

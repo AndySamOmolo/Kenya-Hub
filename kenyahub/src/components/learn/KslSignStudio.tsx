@@ -1,0 +1,607 @@
+"use client";
+
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
+import {
+  ArrowLeft,
+  BookOpen,
+  CheckCircle2,
+  ExternalLink,
+  Hand,
+  HelpCircle,
+  Pause,
+  Play,
+  RotateCcw,
+  Sparkles,
+  XCircle,
+} from "lucide-react";
+import {
+  KSL_ALPHABET,
+  KSL_GRAMMAR_NOTES,
+  KSL_STARTER_SIGNS,
+  type KslStarterSign,
+} from "@/data/ksl-starter";
+
+interface R2KslSignMeta {
+  id: string;
+  gloss: string;
+  frameCount: number;
+  fps: number;
+  poseUrl: string;
+  source: string;
+}
+
+interface R2PoseSequence {
+  id: string;
+  gloss: string;
+  fps: number;
+  landmarks: number[];
+  frames: [number, number][][];
+}
+
+// MediaPipe upper-body bone pairs mapped onto UPPER_BODY_INDICES:
+// [0, 2, 5, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 23, 24]
+//  0  1  2  3  4   5   6   7   8   9  10  11  12  13  14  15  16
+const UPPER_BONES: [number, number][] = [
+  [5, 6],   // shoulders
+  [5, 7],   // left upper arm
+  [7, 9],   // left forearm
+  [9, 11],  // left hand pinky
+  [9, 13],  // left hand index
+  [6, 8],   // right upper arm
+  [8, 10],  // right forearm
+  [10, 12], // right hand pinky
+  [10, 14], // right hand index
+  [5, 15],  // left torso
+  [6, 16],  // right torso
+  [15, 16], // hips
+];
+
+function drawProceduralSkeleton(
+  ctx: CanvasRenderingContext2D,
+  w: number,
+  h: number,
+  t: number,
+  motion: KslStarterSign["motionType"]
+) {
+  ctx.clearRect(0, 0, w, h);
+
+  // Subtle signing-space grid
+  ctx.strokeStyle = "rgba(212, 175, 55, 0.10)";
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.arc(w * 0.5, h * 0.44, Math.min(w, h) * 0.36, 0, Math.PI * 2);
+  ctx.stroke();
+
+  const phase = t * Math.PI * 2;
+  const sin = Math.sin(phase);
+  const cos = Math.cos(phase);
+
+  // Head & torso base coordinates
+  const headX = w * 0.5 + (motion === "head-shake" ? sin * 10 : 0);
+  const headY = h * 0.24 + (motion === "head-nod" ? Math.abs(sin) * 8 : 0);
+  const neckX = w * 0.5;
+  const neckY = h * 0.35;
+  const lShX = w * 0.34;
+  const rShX = w * 0.66;
+  const shY = h * 0.38;
+  const lHipX = w * 0.39;
+  const rHipX = w * 0.61;
+  const hipY = h * 0.78;
+
+  // Default relaxed arms
+  let lElbX = w * 0.27, lElbY = h * 0.56, lWriX = w * 0.32, lWriY = h * 0.70;
+  let rElbX = w * 0.73, rElbY = h * 0.56, rWriX = w * 0.68, rWriY = h * 0.70;
+
+  if (motion === "wave") {
+    rElbX = w * 0.74; rElbY = h * 0.44;
+    rWriX = w * 0.68 + sin * 22; rWriY = h * 0.25 + cos * 6;
+  } else if (motion === "chin-forward") {
+    rElbX = w * 0.68; rElbY = h * 0.52;
+    rWriX = w * 0.52 + (0.5 - 0.5 * cos) * 34;
+    rWriY = h * 0.32 + (0.5 - 0.5 * cos) * 26;
+  } else if (motion === "chest-circle") {
+    rElbX = w * 0.68; rElbY = h * 0.56;
+    rWriX = w * 0.50 + cos * 16;
+    rWriY = h * 0.50 + sin * 14;
+  } else if (motion === "forehead-salute") {
+    rElbX = w * 0.71; rElbY = h * 0.42;
+    rWriX = w * 0.55 + Math.abs(sin) * 14;
+    rWriY = h * 0.19;
+  } else if (motion === "chin-tap") {
+    rElbX = w * 0.68; rElbY = h * 0.48;
+    rWriX = w * 0.53 + Math.abs(sin) * 10;
+    rWriY = h * 0.32;
+  } else if (motion === "mouth-tap") {
+    rElbX = w * 0.67; rElbY = h * 0.50;
+    rWriX = w * 0.52 + Math.abs(sin) * 12;
+    rWriY = h * 0.29;
+  } else if (motion === "cup-to-mouth") {
+    rElbX = w * 0.70; rElbY = h * 0.50;
+    rWriX = w * 0.54 + (1 - Math.abs(sin)) * 10;
+    rWriY = h * 0.33 - Math.abs(sin) * 8;
+  } else if (motion === "hands-together") {
+    const lift = Math.sin(phase) * 18;
+    lElbX = w * 0.32; lElbY = h * 0.58 - lift * 0.4;
+    lWriX = w * 0.48; lWriY = h * 0.54 - lift;
+    rElbX = w * 0.68; rElbY = h * 0.56 - lift * 0.4;
+    rWriX = w * 0.52; rWriY = h * 0.50 - lift;
+  } else if (motion === "palms-up") {
+    lElbX = w * 0.30; lElbY = h * 0.56;
+    lWriX = w * 0.36 + sin * 14; lWriY = h * 0.52;
+    rElbX = w * 0.70; rElbY = h * 0.56;
+    rWriX = w * 0.64 - sin * 14; rWriY = h * 0.52;
+  } else if (motion === "head-nod" || motion === "head-shake") {
+    rElbX = w * 0.69; rElbY = h * 0.54;
+    rWriX = w * 0.60 + (motion === "head-shake" ? sin * 14 : 0);
+    rWriY = h * 0.44 + (motion === "head-nod" ? Math.abs(sin) * 14 : 0);
+  } else if (motion === "point-self") {
+    rElbX = w * 0.68; rElbY = h * 0.54;
+    rWriX = w * 0.51 + Math.abs(sin) * 8;
+    rWriY = h * 0.49;
+  }
+
+  // Draw torso & bones
+  const line = (x1: number, y1: number, x2: number, y2: number, color: string, width = 4) => {
+    ctx.strokeStyle = color;
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+  };
+
+  // Torso frame
+  line(lShX, shY, rShX, shY, "#94a3b8", 4);
+  line(lShX, shY, lHipX, hipY, "#64748b", 3.5);
+  line(rShX, shY, rHipX, hipY, "#64748b", 3.5);
+  line(lHipX, hipY, rHipX, hipY, "#64748b", 3.5);
+  line(neckX, headY + 22, neckX, shY, "#94a3b8", 3.5);
+
+  // Left arm (non-dominant)
+  line(lShX, shY, lElbX, lElbY, "#38bdf8", 4.5);
+  line(lElbX, lElbY, lWriX, lWriY, "#38bdf8", 4.5);
+
+  // Right arm (dominant, gold highlight)
+  line(rShX, shY, rElbX, rElbY, "#eab308", 5);
+  line(rElbX, rElbY, rWriX, rWriY, "#eab308", 5);
+
+  // Head circle
+  ctx.strokeStyle = "#e2e8f0";
+  ctx.fillStyle = "rgba(30, 41, 59, 0.7)";
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.arc(headX, headY, 22, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+
+  // Joints & glowing hand markers
+  const dot = (x: number, y: number, r: number, color: string) => {
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fill();
+  };
+  dot(lShX, shY, 4.5, "#cbd5e1");
+  dot(rShX, shY, 4.5, "#cbd5e1");
+  dot(lElbX, lElbY, 5, "#38bdf8");
+  dot(rElbX, rElbY, 5, "#facc15");
+  dot(lWriX, lWriY, 8, "#0ea5e9");
+  dot(rWriX, rWriY, 9.5, "#22c55e");
+}
+
+function drawR2PoseFrame(
+  ctx: CanvasRenderingContext2D,
+  w: number,
+  h: number,
+  frame: [number, number][]
+) {
+  ctx.clearRect(0, 0, w, h);
+  ctx.lineCap = "round";
+  for (const [a, b] of UPPER_BONES) {
+    if (a >= frame.length || b >= frame.length) continue;
+    const [ax, ay] = frame[a];
+    const [bx, by] = frame[b];
+    ctx.strokeStyle = a >= 6 && b <= 14 ? "#eab308" : "#38bdf8";
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(ax * w, ay * h);
+    ctx.lineTo(bx * w, by * h);
+    ctx.stroke();
+  }
+  frame.forEach(([x, y], idx) => {
+    ctx.fillStyle = idx === 0 ? "#e2e8f0" : idx === 9 || idx === 10 ? "#22c55e" : "#facc15";
+    ctx.beginPath();
+    ctx.arc(x * w, y * h, idx === 0 ? 12 : idx === 9 || idx === 10 ? 7 : 4, 0, Math.PI * 2);
+    ctx.fill();
+  });
+}
+
+export default function KslSignStudio() {
+  const [tab, setTab] = useState<"signs" | "quiz" | "alphabet" | "grammar">("signs");
+  const [selectedId, setSelectedId] = useState<string>(KSL_STARTER_SIGNS[0].id);
+  const [playing, setPlaying] = useState(true);
+  const [slowMo, setSlowMo] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  // Live Maseno Zenodo 14338329 extracted R2 pose catalog (loaded dynamically when CI populates ksl-index.json)
+  const [r2Signs, setR2Signs] = useState<R2KslSignMeta[]>([]);
+  const [activeR2Pose, setActiveR2Pose] = useState<R2PoseSequence | null>(null);
+
+  // Visual Quiz state
+  const [quizIdx, setQuizIdx] = useState(0);
+  const [quizPicked, setQuizPicked] = useState<string | null>(null);
+  const [quizScore, setQuizScore] = useState(0);
+  const [quizTotal, setQuizTotal] = useState(0);
+
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const progressRef = useRef(0);
+
+  useEffect(() => {
+    fetch("/ksl-index.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (d && Array.isArray(d.signs)) {
+          setR2Signs(d.signs as R2KslSignMeta[]);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const activeStarter = useMemo(
+    () => KSL_STARTER_SIGNS.find((s) => s.id === selectedId) ?? KSL_STARTER_SIGNS[0],
+    [selectedId]
+  );
+
+  const quizSign = KSL_STARTER_SIGNS[quizIdx % KSL_STARTER_SIGNS.length];
+  const quizOptions = useMemo(() => {
+    const distractors = KSL_STARTER_SIGNS.filter((s) => s.id !== quizSign.id)
+      .slice((quizIdx * 3) % (KSL_STARTER_SIGNS.length - 3), ((quizIdx * 3) % (KSL_STARTER_SIGNS.length - 3)) + 3);
+    const pool = [quizSign, ...distractors];
+    return pool.sort((a, b) => a.gloss.localeCompare(b.gloss));
+  }, [quizIdx, quizSign]);
+
+  const loadR2Sign = async (meta: R2KslSignMeta) => {
+    try {
+      const resp = await fetch(meta.poseUrl);
+      if (resp.ok) {
+        const seq = (await resp.json()) as R2PoseSequence;
+        setActiveR2Pose(seq);
+        setProgress(0);
+        progressRef.current = 0;
+        setPlaying(true);
+      }
+    } catch {
+      // Keep starter fallback
+    }
+  };
+
+  // Animation loop for Canvas Skeletal Signer
+  useEffect(() => {
+    if (tab !== "signs" && tab !== "quiz") return;
+    let lastTs = performance.now();
+
+    const tick = (now: number) => {
+      const dt = (now - lastTs) / 1000;
+      lastTs = now;
+
+      if (playing) {
+        const speed = slowMo ? 0.25 : 0.55;
+        progressRef.current = (progressRef.current + dt * speed) % 1;
+        setProgress(progressRef.current);
+      }
+
+      const canvas = canvasRef.current;
+      if (canvas) {
+        const ctx = canvas.getContext("2d");
+        if (ctx) {
+          if (tab === "signs" && activeR2Pose && activeR2Pose.frames.length > 0) {
+            const fIdx = Math.floor(progressRef.current * activeR2Pose.frames.length) % activeR2Pose.frames.length;
+            drawR2PoseFrame(ctx, canvas.width, canvas.height, activeR2Pose.frames[fIdx]);
+          } else {
+            const targetMotion = tab === "quiz" ? quizSign.motionType : activeStarter.motionType;
+            drawProceduralSkeleton(ctx, canvas.width, canvas.height, progressRef.current, targetMotion);
+          }
+        }
+      }
+      rafRef.current = requestAnimationFrame(tick);
+    };
+
+    rafRef.current = requestAnimationFrame(tick);
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [tab, playing, slowMo, activeStarter, activeR2Pose, quizSign]);
+
+  const handleQuizAnswer = (pickedId: string) => {
+    if (quizPicked) return;
+    setQuizPicked(pickedId);
+    setQuizTotal((n) => n + 1);
+    if (pickedId === quizSign.id) {
+      setQuizScore((s) => s + 1);
+    }
+  };
+
+  return (
+    <div className="space-y-6">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <Link
+          href="/tools/learn/"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold hover:underline"
+        >
+          <ArrowLeft className="h-3.5 w-3.5" />
+          Back to All Kenyan Languages
+        </Link>
+        <div className="flex flex-wrap gap-2 text-xs">
+          <span className="rounded-lg border border-kenya-green/30 bg-kenya-green/10 px-2.5 py-1 font-semibold text-kenya-green">
+            ISO 639-3: xki · Constitution Art. 7(3)(b)
+          </span>
+          <span className="rounded-lg border border-gold/30 bg-gold/10 px-2.5 py-1 font-semibold text-gold">
+            {KSL_STARTER_SIGNS.length} Interactive Signs{r2Signs.length > 0 ? ` + ${r2Signs.length} Maseno R2 Poses` : ""}
+          </span>
+        </div>
+      </div>
+
+      {/* Mode Tabs */}
+      <div className="flex flex-wrap gap-2 border-b border-border pb-3">
+        {[
+          { id: "signs" as const, label: "Sign Studio", icon: Hand },
+          { id: "quiz" as const, label: "Visual Sign Quiz", icon: Sparkles },
+          { id: "alphabet" as const, label: "Fingerspelling (A–Z)", icon: BookOpen },
+          { id: "grammar" as const, label: "KSL Grammar & Culture", icon: HelpCircle },
+        ].map((item) => {
+          const Icon = item.icon;
+          const active = tab === item.id;
+          return (
+            <button
+              key={item.id}
+              type="button"
+              onClick={() => setTab(item.id)}
+              className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-bold transition-all cursor-pointer ${
+                active
+                  ? "bg-gold text-black"
+                  : "border border-border bg-bg-card text-text-secondary hover:border-gold/50 hover:text-text-primary"
+              }`}
+            >
+              <Icon className="h-3.5 w-3.5" />
+              {item.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* TAB 1: SIGN STUDIO */}
+      {tab === "signs" && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+          <div className="lg:col-span-5 rounded-2xl border border-gold/25 bg-bg-card p-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-[0.68rem] uppercase tracking-wider font-bold text-gold">
+                  {activeR2Pose ? "Maseno Zenodo 14338329 Pose" : activeStarter.category}
+                </p>
+                <h2 className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
+                  {activeR2Pose ? activeR2Pose.gloss : activeStarter.gloss}
+                </h2>
+              </div>
+              {!activeR2Pose && (
+                <span className="rounded-md bg-bg-elevated px-2 py-0.5 text-xs text-text-secondary">
+                  {activeStarter.swahiliEquivalent}
+                </span>
+              )}
+            </div>
+
+            <div className="rounded-xl border border-border bg-[#0b1120] p-2 flex items-center justify-center">
+              <canvas ref={canvasRef} width={340} height={280} className="w-full max-w-[340px] h-auto" />
+            </div>
+
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setPlaying((p) => !p)}
+                  className="inline-flex items-center gap-1 rounded-lg bg-gold px-3 py-1.5 text-xs font-bold text-black cursor-pointer"
+                >
+                  {playing ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+                  {playing ? "Pause" : "Play"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSlowMo((s) => !s)}
+                  className={`rounded-lg border px-2.5 py-1.5 text-xs font-semibold cursor-pointer ${
+                    slowMo ? "border-kenya-green bg-kenya-green/15 text-kenya-green" : "border-border text-text-secondary"
+                  }`}
+                >
+                  0.5x Slow
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    progressRef.current = 0;
+                    setProgress(0);
+                  }}
+                  className="rounded-lg border border-border p-1.5 text-text-secondary hover:text-text-primary cursor-pointer"
+                  aria-label="Restart sign animation"
+                >
+                  <RotateCcw className="h-3.5 w-3.5" />
+                </button>
+              </div>
+              <input
+                type="range"
+                min={0}
+                max={100}
+                value={Math.round(progress * 100)}
+                onChange={(e) => {
+                  const v = Number(e.target.value) / 100;
+                  progressRef.current = v;
+                  setProgress(v);
+                }}
+                aria-label="Animation frame scrubber"
+                className="w-28 accent-gold"
+              />
+            </div>
+
+            {!activeR2Pose && (
+              <div className="rounded-xl border border-border bg-bg-elevated/50 p-3 space-y-1.5 text-xs">
+                <p><strong className="text-gold">Handshape:</strong> {activeStarter.handshape}</p>
+                <p><strong className="text-gold">Location:</strong> {activeStarter.location}</p>
+                <p><strong className="text-gold">Movement:</strong> {activeStarter.movement}</p>
+                <p><strong className="text-kenya-green">Facial / Non-Manual:</strong> {activeStarter.nonManual}</p>
+              </div>
+            )}
+          </div>
+
+          <div className="lg:col-span-7 space-y-4">
+            <div className="rounded-2xl border border-border bg-bg-card p-4 space-y-3">
+              <h3 className="text-sm font-bold text-text-primary">
+                Core KSL Starter Vocabulary ({KSL_STARTER_SIGNS.length} Guided Signs)
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {KSL_STARTER_SIGNS.map((sign) => {
+                  const active = !activeR2Pose && sign.id === selectedId;
+                  return (
+                    <button
+                      key={sign.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveR2Pose(null);
+                        setSelectedId(sign.id);
+                        progressRef.current = 0;
+                        setPlaying(true);
+                      }}
+                      className={`rounded-xl border p-2.5 text-left transition-all cursor-pointer ${
+                        active
+                          ? "border-gold bg-gold/15 text-text-primary"
+                          : "border-border bg-bg-elevated/50 text-text-secondary hover:border-gold/50"
+                      }`}
+                    >
+                      <p className="text-xs font-bold text-text-primary">{sign.gloss}</p>
+                      <p className="text-[0.68rem] text-text-muted mt-0.5">{sign.swahiliEquivalent}</p>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {r2Signs.length > 0 && (
+              <div className="rounded-2xl border border-kenya-green/30 bg-bg-card p-4 space-y-3">
+                <div className="flex items-center justify-between gap-2">
+                  <h3 className="text-sm font-bold text-kenya-green">
+                    Maseno University Live Motion-Capture Signs ({r2Signs.length} on R2)
+                  </h3>
+                  <a
+                    href="https://zenodo.org/records/14338329"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[0.7rem] text-gold hover:underline"
+                  >
+                    Zenodo 14338329 (CC-BY-4.0) <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
+                <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto">
+                  {r2Signs.map((rs) => (
+                    <button
+                      key={rs.id}
+                      type="button"
+                      onClick={() => void loadR2Sign(rs)}
+                      className={`rounded-lg border px-2.5 py-1 text-xs cursor-pointer ${
+                        activeR2Pose?.id === rs.id
+                          ? "border-kenya-green bg-kenya-green/20 font-bold text-kenya-green"
+                          : "border-border bg-bg-elevated/60 text-text-secondary hover:border-kenya-green/50"
+                      }`}
+                    >
+                      {rs.gloss}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* TAB 2: VISUAL SIGN QUIZ */}
+      {tab === "quiz" && (
+        <div className="max-w-xl mx-auto rounded-2xl border border-gold/25 bg-bg-card p-5 space-y-4">
+          <div className="flex items-center justify-between text-xs">
+            <span className="font-bold text-gold uppercase tracking-wider">Watch the Sign &amp; Match</span>
+            <span className="font-mono text-text-secondary">Score: {quizScore}/{quizTotal}</span>
+          </div>
+
+          <div className="rounded-xl border border-border bg-[#0b1120] p-2 flex items-center justify-center">
+            <canvas ref={canvasRef} width={340} height={260} className="w-full max-w-[340px] h-auto" />
+          </div>
+
+          <p className="text-xs text-text-muted text-center">
+            Cue: <strong className="text-text-secondary">{quizSign.handshape}</strong> · {quizSign.location}
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {quizOptions.map((opt) => {
+              const isCorrect = opt.id === quizSign.id;
+              const isPicked = quizPicked === opt.id;
+              let cls = "border-border bg-bg-elevated/60 text-text-primary hover:border-gold";
+              if (quizPicked) {
+                if (isCorrect) cls = "border-kenya-green bg-kenya-green/15 text-kenya-green";
+                else if (isPicked) cls = "border-kenya-red bg-kenya-red/15 text-kenya-red";
+              }
+              return (
+                <button
+                  key={opt.id}
+                  type="button"
+                  onClick={() => handleQuizAnswer(opt.id)}
+                  className={`rounded-xl border p-3 text-left text-xs font-bold flex items-center justify-between cursor-pointer ${cls}`}
+                >
+                  <span>{opt.gloss}</span>
+                  {quizPicked && isCorrect && <CheckCircle2 className="h-4 w-4 shrink-0" />}
+                  {quizPicked && isPicked && !isCorrect && <XCircle className="h-4 w-4 shrink-0" />}
+                </button>
+              );
+            })}
+          </div>
+
+          {quizPicked && (
+            <button
+              type="button"
+              onClick={() => {
+                setQuizPicked(null);
+                setQuizIdx((i) => i + 1);
+                progressRef.current = 0;
+              }}
+              className="w-full rounded-xl bg-gold py-2.5 text-xs font-bold text-black cursor-pointer"
+            >
+              Next KSL Sign →
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* TAB 3: MANUAL ALPHABET A-Z */}
+      {tab === "alphabet" && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+          {KSL_ALPHABET.map((item) => (
+            <div key={item.letter} className="rounded-xl border border-border bg-bg-card p-3 flex items-start gap-3">
+              <div className="h-9 w-9 rounded-lg bg-gold/15 border border-gold/30 flex items-center justify-center font-bold text-gold shrink-0">
+                {item.letter}
+              </div>
+              <p className="text-xs text-text-secondary leading-relaxed">{item.cue}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* TAB 4: GRAMMAR & DEAF CULTURE */}
+      {tab === "grammar" && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {KSL_GRAMMAR_NOTES.map((note) => (
+            <div key={note.title} className="rounded-2xl border border-border bg-bg-card p-4 space-y-2">
+              <h3 className="text-sm font-bold text-gold font-[family-name:var(--font-outfit)]">{note.title}</h3>
+              <p className="text-xs text-text-secondary leading-relaxed">{note.body}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

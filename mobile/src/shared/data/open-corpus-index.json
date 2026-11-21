@@ -1,0 +1,2111 @@
+{
+  "generatedAt": "2026-11-21T13:38:33.511756+00:00",
+  "cldrVersion": "49.0.0",
+  "stats": {
+    "totalR2AudioClips": 5260,
+    "totalStagedVarieties": 3,
+    "totalStagedEntries": 321,
+    "totalBenchmarkRows": 12943,
+    "totalReaderSentences": 2666,
+    "totalCivicDatasets": 3,
+    "totalWikimediaDatasets": 4,
+    "pendingGatedCount": 10
+  },
+  "languages": {
+    "swahili": {
+      "languageId": "swahili",
+      "r2AudioClips": 1221,
+      "cldr": {
+        "locale": "sw",
+        "months": [
+          "Januari",
+          "Februari",
+          "Machi",
+          "Aprili",
+          "Mei",
+          "Juni",
+          "Julai",
+          "Agosti",
+          "Septemba",
+          "Oktoba",
+          "Novemba",
+          "Desemba"
+        ],
+        "days": [
+          "Jumapili",
+          "Jumatatu",
+          "Jumanne",
+          "Jumatano",
+          "Alhamisi",
+          "Ijumaa",
+          "Jumamosi"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "swh",
+        "glottocode": "swah1253",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Sabaki"
+        ],
+        "cldrLocale": "sw-KE",
+        "cldrCoverage": "Modern",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "numeralbank",
+          "ids",
+          "clics-3",
+          "wold-1",
+          "afbo-2.0",
+          "unimorph-swc"
+        ],
+        "commercialAudioSources": [
+          "cv27-sw",
+          "waxal-swa-tts",
+          "kencorpus-audio-sw",
+          "kenspeech-sw",
+          "fleurs-sw-ke",
+          "salt-studio-swa",
+          "openslr-slr25",
+          "makerere-sw-tts",
+          "rono-sw-tts",
+          "lingua-libre-swa"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": 14130
+      },
+      "sampleReadings": [
+        {
+          "text": "Ninakupenda.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Watu wote wamezaliwa huru, hadhi na haki zao ni sawa. Wote wamejaliwa akili na dhamiri, hivyo yapasa watendeane kindugu.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Hutusahau!",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Swali nzuri.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Unakumbuka?",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Kwenda kwa teksi hotelini.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Usisahau kupeleka barua",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Nitarudi.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        }
+      ],
+      "topFrequencyWords": [
+        {
+          "word": "na",
+          "count": 54387
+        },
+        {
+          "word": "ya",
+          "count": 50686
+        },
+        {
+          "word": "wa",
+          "count": 35328
+        },
+        {
+          "word": "kwa",
+          "count": 25663
+        },
+        {
+          "word": "ni",
+          "count": 14536
+        },
+        {
+          "word": "katika",
+          "count": 13458
+        },
+        {
+          "word": "za",
+          "count": 10146
+        },
+        {
+          "word": "kuwa",
+          "count": 8071
+        },
+        {
+          "word": "la",
+          "count": 8042
+        },
+        {
+          "word": "kama",
+          "count": 6638
+        },
+        {
+          "word": "cha",
+          "count": 5148
+        },
+        {
+          "word": "yake",
+          "count": 4775
+        },
+        {
+          "word": "kwamba",
+          "count": 4350
+        },
+        {
+          "word": "kwenye",
+          "count": 4282
+        },
+        {
+          "word": "hiyo",
+          "count": 4227
+        },
+        {
+          "word": "watu",
+          "count": 3663
+        },
+        {
+          "word": "au",
+          "count": 3557
+        },
+        {
+          "word": "wake",
+          "count": 3468
+        },
+        {
+          "word": "hii",
+          "count": 3340
+        },
+        {
+          "word": "wakati",
+          "count": 3111
+        },
+        {
+          "word": "hivyo",
+          "count": 3048
+        },
+        {
+          "word": "lakini",
+          "count": 2855
+        },
+        {
+          "word": "ili",
+          "count": 2701
+        },
+        {
+          "word": "vya",
+          "count": 2693
+        }
+      ],
+      "wikimedia": [
+        {
+          "id": "wikisource-sw",
+          "count": 0,
+          "license": "CC-BY-SA-4.0"
+        }
+      ],
+      "benchmarks": [
+        {
+          "id": "afrihate-ke",
+          "rows": 2500
+        },
+        {
+          "id": "cohere-aya-ke",
+          "rows": 396
+        },
+        {
+          "id": "masakhane-afrimgsm-swa",
+          "rows": 250
+        },
+        {
+          "id": "masakhane-afrimmlu-swa",
+          "rows": 500
+        },
+        {
+          "id": "masakhane-afrixnli-swa",
+          "rows": 1050
+        },
+        {
+          "id": "masakhane-injongointent",
+          "rows": 640
+        },
+        {
+          "id": "masakhane-uhura-truthfulqa",
+          "rows": 807
+        },
+        {
+          "id": "swahili-finetome-20k",
+          "rows": 2500
+        },
+        {
+          "id": "tabularis-swahili-sentiment",
+          "rows": 2500
+        }
+      ]
+    },
+    "kikuyu": {
+      "languageId": "kikuyu",
+      "r2AudioClips": 450,
+      "cldr": {
+        "locale": "ki",
+        "months": [
+          "Mũgaa",
+          "Mũgetho",
+          "Kĩhu",
+          "Mũthatũ",
+          "Mũgiranjara",
+          "Gathathanwa",
+          "Gathano",
+          "Mworia Nyoni",
+          "Mũgaa wa Kerĩ",
+          "Mwania Thenge",
+          "Kanyua Hũngũ",
+          "Gatumu"
+        ],
+        "days": [
+          "Kiumia",
+          "Mwambĩrĩrio",
+          "Waĩrĩ",
+          "Wetatũ",
+          "Wena",
+          "Wetano",
+          "Njuuma"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "kik",
+        "glottocode": "kiku1240",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Central Kenya Bantu"
+        ],
+        "cldrLocale": "ki",
+        "cldrCoverage": "Basic",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "numeralbank",
+          "ids",
+          "clics-3",
+          "tsammalex"
+        ],
+        "commercialAudioSources": [
+          "anv-ke-kikuyu",
+          "thiomi-kik",
+          "waxal-kik-tts",
+          "bibletts-kik"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "luo": {
+      "languageId": "luo",
+      "r2AudioClips": 907,
+      "cldr": {
+        "locale": "luo",
+        "months": [
+          "Dwe mar Achiel",
+          "Dwe mar Ariyo",
+          "Dwe mar Adek",
+          "Dwe mar Ang’wen",
+          "Dwe mar Abich",
+          "Dwe mar Auchiel",
+          "Dwe mar Abiriyo",
+          "Dwe mar Aboro",
+          "Dwe mar Ochiko",
+          "Dwe mar Apar",
+          "Dwe mar gi achiel",
+          "Dwe mar Apar gi ariyo"
+        ],
+        "days": [
+          "Jumapil",
+          "Wuok Tich",
+          "Tich Ariyo",
+          "Tich Adek",
+          "Tich Ang’wen",
+          "Tich Abich",
+          "Ngeso"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "luo",
+        "glottocode": "luok1236",
+        "familyPath": [
+          "Nilotic",
+          "Western Nilotic",
+          "Lwoo",
+          "Southern Lwoo"
+        ],
+        "cldrLocale": "luo",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "numeralbank",
+          "ids",
+          "clics-3"
+        ],
+        "commercialAudioSources": [
+          "anv-ke-luo",
+          "cv27-luo",
+          "thiomi-luo",
+          "fleurs-luo-ke",
+          "waxal-luo-tts",
+          "bibletts-luo",
+          "kencorpus-audio-luo"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [
+        {
+          "id": "incubator-luo",
+          "count": 0,
+          "license": "CC-BY-SA-4.0"
+        }
+      ],
+      "benchmarks": []
+    },
+    "luhya": {
+      "languageId": "luhya",
+      "r2AudioClips": 250,
+      "cldr": {
+        "locale": "luy",
+        "months": [
+          "Januari",
+          "Februari",
+          "Machi",
+          "Aprili",
+          "Mei",
+          "Juni",
+          "Julai",
+          "Agosti",
+          "Septemba",
+          "Oktoba",
+          "Novemba",
+          "Desemba"
+        ],
+        "days": [
+          "Jumapiri",
+          "Jumatatu",
+          "Jumanne",
+          "Jumatano",
+          "Murwa wa Kanne",
+          "Murwa wa Katano",
+          "Jumamosi"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "luy",
+        "glottocode": "luyi1234",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "Great Lakes Bantu",
+          "Luyia"
+        ],
+        "cldrLocale": "luy",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "numeralbank"
+        ],
+        "commercialAudioSources": [
+          "kencorpus-audio-luy",
+          "waxal-mas-asr"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "kamba": {
+      "languageId": "kamba",
+      "r2AudioClips": 449,
+      "cldr": {
+        "locale": "kam",
+        "months": [
+          "Mwai wa mbee",
+          "Mwai wa kelĩ",
+          "Mwai wa katatũ",
+          "Mwai wa kana",
+          "Mwai wa katano",
+          "Mwai wa thanthatũ",
+          "Mwai wa muonza",
+          "Mwai wa nyaanya",
+          "Mwai wa kenda",
+          "Mwai wa ĩkumi",
+          "Mwai wa ĩkumi na ĩmwe",
+          "Mwai wa ĩkumi na ilĩ"
+        ],
+        "days": [
+          "Wa kyumwa",
+          "Wa kwambĩlĩlya",
+          "Wa kelĩ",
+          "Wa katatũ",
+          "Wa kana",
+          "Wa katano",
+          "Wa thanthatũ"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "kam",
+        "glottocode": "kamb1297",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Central Kenya Bantu"
+        ],
+        "cldrLocale": "kam",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "numeralbank"
+        ],
+        "commercialAudioSources": [
+          "thiomi-kam",
+          "fleurs-kam-ke"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "kalenjin": {
+      "languageId": "kalenjin",
+      "r2AudioClips": 0,
+      "cldr": {
+        "locale": "kln",
+        "months": [
+          "Mulgul",
+          "Ng’atyaato",
+          "Kiptaamo",
+          "Iwootkuut",
+          "Mamuut",
+          "Paagi",
+          "Ng’eiyeet",
+          "Rooptui",
+          "Bureet",
+          "Epeeso",
+          "Kipsuunde ne taai",
+          "Kipsuunde nebo aeng’"
+        ],
+        "days": [
+          "Kotisap",
+          "Kotaai",
+          "Koaeng’",
+          "Kosomok",
+          "Koang’wan",
+          "Komuut",
+          "Kolo"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "kln",
+        "glottocode": "kale1246",
+        "familyPath": [
+          "Nilotic",
+          "Southern Nilotic",
+          "Kalenjin"
+        ],
+        "cldrLocale": "kln",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "numeralbank"
+        ],
+        "commercialAudioSources": [
+          "anv-ke-kalenjin",
+          "cv27-kln"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [
+        {
+          "id": "incubator-niq",
+          "count": 0,
+          "license": "CC-BY-SA-4.0"
+        }
+      ],
+      "benchmarks": []
+    },
+    "kisii": {
+      "languageId": "kisii",
+      "r2AudioClips": 0,
+      "cldr": {
+        "locale": "guz",
+        "months": [
+          "Chanuari",
+          "Feburari",
+          "Machi",
+          "Apiriri",
+          "Mei",
+          "Juni",
+          "Chulai",
+          "Agosti",
+          "Septemba",
+          "Okitoba",
+          "Nobemba",
+          "Disemba"
+        ],
+        "days": [
+          "Chumapiri",
+          "Chumatato",
+          "Chumaine",
+          "Chumatano",
+          "Aramisi",
+          "Ichuma",
+          "Esabato"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "guz",
+        "glottocode": "gusi1247",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "Great Lakes Bantu",
+          "Logooli-Kuria"
+        ],
+        "cldrLocale": "guz",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "ids",
+          "clics-3"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "meru": {
+      "languageId": "meru",
+      "r2AudioClips": 250,
+      "cldr": {
+        "locale": "mer",
+        "months": [
+          "Januarĩ",
+          "Feburuarĩ",
+          "Machi",
+          "Ĩpurũ",
+          "Mĩĩ",
+          "Njuni",
+          "Njuraĩ",
+          "Agasti",
+          "Septemba",
+          "Oktũba",
+          "Novemba",
+          "Dicemba"
+        ],
+        "days": [
+          "Kiumia",
+          "Muramuko",
+          "Wairi",
+          "Wethatu",
+          "Wena",
+          "Wetano",
+          "Jumamosi"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "mer",
+        "glottocode": "meru1245",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Central Kenya Bantu"
+        ],
+        "cldrLocale": "mer",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "phoible-2.0",
+          "lexibank-2"
+        ],
+        "commercialAudioSources": [
+          "thiomi-mer"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "somali": {
+      "languageId": "somali",
+      "r2AudioClips": 685,
+      "cldr": {
+        "locale": "so-KE",
+        "months": [
+          "Janaayo",
+          "Febraayo",
+          "Maarso",
+          "Abriil",
+          "Maayo",
+          "Juun",
+          "Luulyo",
+          "Agosto",
+          "Sebtembar",
+          "Oktoobar",
+          "Noofeembar",
+          "Diseembar"
+        ],
+        "days": [
+          "Axad",
+          "Isniin",
+          "Talaado",
+          "Arbaco",
+          "Khamiis",
+          "Jimco",
+          "Sabti"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "som",
+        "glottocode": "soma1255",
+        "familyPath": [
+          "Afro-Asiatic",
+          "Cushitic",
+          "East Cushitic",
+          "Lowland East Cushitic",
+          "Omo-Tana",
+          "Somaloid"
+        ],
+        "cldrLocale": "so-KE",
+        "cldrCoverage": "Modern",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "numeralbank"
+        ],
+        "commercialAudioSources": [
+          "anv-ke-somali",
+          "thiomi-som",
+          "fleurs-so-so"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [
+        {
+          "text": "Burj Khalifa waa dhismaha hadda adduunka ugu dheer.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Burj Khalifa waa sarta hadda adduunka ugu dheer.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Guri waan leeyahay.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Noloshaydu waa xuntahay.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Waan wanaagsanahay.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Ingiriis miyaad ku hadashaa?",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Waan quruxsanahay.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Magacaygu waa Maxamed.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        }
+      ],
+      "topFrequencyWords": [
+        {
+          "word": "oo",
+          "count": 25787
+        },
+        {
+          "word": "ka",
+          "count": 23621
+        },
+        {
+          "word": "ku",
+          "count": 19571
+        },
+        {
+          "word": "ay",
+          "count": 18368
+        },
+        {
+          "word": "iyo",
+          "count": 17467
+        },
+        {
+          "word": "ah",
+          "count": 15126
+        },
+        {
+          "word": "ee",
+          "count": 15092
+        },
+        {
+          "word": "in",
+          "count": 14235
+        },
+        {
+          "word": "uu",
+          "count": 11592
+        },
+        {
+          "word": "ayaa",
+          "count": 11053
+        },
+        {
+          "word": "la",
+          "count": 10726
+        },
+        {
+          "word": "soo",
+          "count": 9971
+        },
+        {
+          "word": "waxaa",
+          "count": 5431
+        },
+        {
+          "word": "lagu",
+          "count": 5173
+        },
+        {
+          "word": "waxa",
+          "count": 4938
+        },
+        {
+          "word": "waa",
+          "count": 4876
+        },
+        {
+          "word": "ugu",
+          "count": 4864
+        },
+        {
+          "word": "aan",
+          "count": 4382
+        },
+        {
+          "word": "mid",
+          "count": 4197
+        },
+        {
+          "word": "kale",
+          "count": 4130
+        },
+        {
+          "word": "loo",
+          "count": 4070
+        },
+        {
+          "word": "si",
+          "count": 4027
+        },
+        {
+          "word": "aad",
+          "count": 3936
+        },
+        {
+          "word": "waxay",
+          "count": 3392
+        }
+      ],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "maasai": {
+      "languageId": "maasai",
+      "r2AudioClips": 0,
+      "cldr": {
+        "locale": "mas",
+        "months": [
+          "Oladalʉ́",
+          "Arát",
+          "Ɔɛnɨ́ɔɨŋɔk",
+          "Olodoyíóríê inkókúâ",
+          "Oloilépūnyīē inkókúâ",
+          "Kújúɔrɔk",
+          "Mórusásin",
+          "Ɔlɔ́ɨ́bɔ́rárɛ",
+          "Kúshîn",
+          "Olgísan",
+          "Pʉshʉ́ka",
+          "Ntʉ́ŋʉ́s"
+        ],
+        "days": [
+          "Jumapílí",
+          "Jumatátu",
+          "Jumane",
+          "Jumatánɔ",
+          "Alaámisi",
+          "Jumáa",
+          "Jumamósi"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "mas",
+        "glottocode": "masa1300",
+        "familyPath": [
+          "Nilotic",
+          "Eastern Nilotic",
+          "Lotuxo-Maa",
+          "Ongamo-Maa"
+        ],
+        "cldrLocale": "mas",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2",
+          "ids",
+          "clics-3"
+        ],
+        "commercialAudioSources": [
+          "anv-ke-maasai"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "turkana": {
+      "languageId": "turkana",
+      "r2AudioClips": 0,
+      "cldr": null,
+      "typology": {
+        "iso639_3": "tuv",
+        "glottocode": "turk1308",
+        "familyPath": [
+          "Nilotic",
+          "Eastern Nilotic",
+          "Teso-Turkana"
+        ],
+        "cldrLocale": null,
+        "cldrCoverage": null,
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "ids",
+          "clics-3"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "mijikenda": {
+      "languageId": "mijikenda",
+      "r2AudioClips": 0,
+      "cldr": null,
+      "typology": {
+        "iso639_3": "nyf",
+        "glottocode": "giry1241",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Sabaki"
+        ],
+        "cldrLocale": null,
+        "cldrCoverage": null,
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "lexibank-2"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "teso": {
+      "languageId": "teso",
+      "r2AudioClips": 662,
+      "cldr": {
+        "locale": "teo",
+        "months": [
+          "Orara",
+          "Omuk",
+          "Okwamg’",
+          "Odung’el",
+          "Omaruk",
+          "Omodok’king’ol",
+          "Ojola",
+          "Opedel",
+          "Osokosokoma",
+          "Otibar",
+          "Olabor",
+          "Opoo"
+        ],
+        "days": [
+          "Nakaejuma",
+          "Nakaebarasa",
+          "Nakaare",
+          "Nakauni",
+          "Nakaung’on",
+          "Nakakany",
+          "Nakasabiti"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "teo",
+        "glottocode": "teso1247",
+        "familyPath": [
+          "Nilotic",
+          "Eastern Nilotic",
+          "Teso-Turkana"
+        ],
+        "cldrLocale": "teo",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "ids",
+          "clics-3"
+        ],
+        "commercialAudioSources": [
+          "salt-studio-teo",
+          "salt-multi-teo"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "embu": {
+      "languageId": "embu",
+      "r2AudioClips": 0,
+      "cldr": {
+        "locale": "ebu",
+        "months": [
+          "Mweri wa mbere",
+          "Mweri wa kaĩri",
+          "Mweri wa kathatũ",
+          "Mweri wa kana",
+          "Mweri wa gatano",
+          "Mweri wa gatantatũ",
+          "Mweri wa mũgwanja",
+          "Mweri wa kanana",
+          "Mweri wa kenda",
+          "Mweri wa ikũmi",
+          "Mweri wa ikũmi na ũmwe",
+          "Mweri wa ikũmi na Kaĩrĩ"
+        ],
+        "days": [
+          "Kiumia",
+          "Njumatatu",
+          "Njumaine",
+          "Njumatano",
+          "Aramithi",
+          "Njumaa",
+          "NJumamothii"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "ebu",
+        "glottocode": "embu1242",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Central Kenya Bantu"
+        ],
+        "cldrLocale": "ebu",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "lexibank-2"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "taita": {
+      "languageId": "taita",
+      "r2AudioClips": 0,
+      "cldr": {
+        "locale": "dav",
+        "months": [
+          "Mori ghwa imbiri",
+          "Mori ghwa kawi",
+          "Mori ghwa kadadu",
+          "Mori ghwa kana",
+          "Mori ghwa kasanu",
+          "Mori ghwa karandadu",
+          "Mori ghwa mfungade",
+          "Mori ghwa wunyanya",
+          "Mori ghwa ikenda",
+          "Mori ghwa ikumi",
+          "Mori ghwa ikumi na imweri",
+          "Mori ghwa ikumi na iwi"
+        ],
+        "days": [
+          "Ituku ja jumwa",
+          "Kuramuka jimweri",
+          "Kuramuka kawi",
+          "Kuramuka kadadu",
+          "Kuramuka kana",
+          "Kuramuka kasanu",
+          "Kifula nguwo"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "dav",
+        "glottocode": "tait1247",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Chaga-Taita"
+        ],
+        "cldrLocale": "dav",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "lexibank-2",
+          "numeralbank"
+        ],
+        "commercialAudioSources": [
+          "cv27-dav"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "taveta": {
+      "languageId": "taveta",
+      "r2AudioClips": 0,
+      "cldr": null,
+      "typology": {
+        "iso639_3": "tvs",
+        "glottocode": "tave1243",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Pare-Taveta"
+        ],
+        "cldrLocale": null,
+        "cldrCoverage": null,
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "numeralbank"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "pokomo": {
+      "languageId": "pokomo",
+      "r2AudioClips": 0,
+      "cldr": null,
+      "typology": {
+        "iso639_3": "pkb",
+        "glottocode": "poko1261",
+        "familyPath": [
+          "Atlantic-Congo",
+          "Volta-Congo",
+          "Benue-Congo",
+          "Bantoid",
+          "Southern Bantoid",
+          "Narrow Bantu",
+          "East Bantu",
+          "Sabaki"
+        ],
+        "cldrLocale": null,
+        "cldrCoverage": null,
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "ids",
+          "clics-3"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "borana": {
+      "languageId": "borana",
+      "r2AudioClips": 386,
+      "cldr": {
+        "locale": "om-KE",
+        "months": [
+          "Amajjii",
+          "Guraandhala",
+          "Bitootessa",
+          "Eebila",
+          "Caamsaa",
+          "Waxabajjii",
+          "Adoolessa",
+          "Hagayya",
+          "Fulbaana",
+          "Onkoloolessa",
+          "Sadaasa",
+          "Mudde"
+        ],
+        "days": [
+          "Dilbata",
+          "Wiixata",
+          "Kibxata",
+          "Roobii",
+          "Kamisa",
+          "Jimaata",
+          "Sanbata"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "gax",
+        "glottocode": "bora1271",
+        "familyPath": [
+          "Afro-Asiatic",
+          "Cushitic",
+          "East Cushitic",
+          "Lowland East Cushitic",
+          "Oromoid"
+        ],
+        "cldrLocale": "om-KE",
+        "cldrCoverage": "Basic",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "lexibank-2"
+        ],
+        "commercialAudioSources": [
+          "cv27-om",
+          "fleurs-om-et",
+          "waxal-orm-asr"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": [
+        {
+          "id": "masakhane-afrimgsm-orm",
+          "rows": 250
+        },
+        {
+          "id": "masakhane-afrimmlu-orm",
+          "rows": 500
+        },
+        {
+          "id": "masakhane-afrixnli-orm",
+          "rows": 1050
+        }
+      ]
+    },
+    "rendille": {
+      "languageId": "rendille",
+      "r2AudioClips": 0,
+      "cldr": null,
+      "typology": {
+        "iso639_3": "rel",
+        "glottocode": "rend1243",
+        "familyPath": [
+          "Afro-Asiatic",
+          "Cushitic",
+          "East Cushitic",
+          "Lowland East Cushitic",
+          "Omo-Tana"
+        ],
+        "cldrLocale": null,
+        "cldrCoverage": null,
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0",
+          "ids",
+          "clics-3"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": 33,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [
+        {
+          "text": "Nebey barite.",
+          "source": "Tatoeba Rel Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Kaa hin weettan, looniyaa?",
+          "source": "Tatoeba Rel Text",
+          "license": "CC-BY-2.0"
+        }
+      ],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "samburu": {
+      "languageId": "samburu",
+      "r2AudioClips": 0,
+      "cldr": {
+        "locale": "saq",
+        "months": [
+          "Lapa le obo",
+          "Lapa le waare",
+          "Lapa le okuni",
+          "Lapa le ong’wan",
+          "Lapa le imet",
+          "Lapa le ile",
+          "Lapa le sapa",
+          "Lapa le isiet",
+          "Lapa le saal",
+          "Lapa le tomon",
+          "Lapa le tomon obo",
+          "Lapa le tomon waare"
+        ],
+        "days": [
+          "Mderot ee are",
+          "Mderot ee kuni",
+          "Mderot ee ong’wan",
+          "Mderot ee inet",
+          "Mderot ee ile",
+          "Mderot ee sapa",
+          "Mderot ee kwe"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": {
+        "iso639_3": "saq",
+        "glottocode": "samb1315",
+        "familyPath": [
+          "Nilotic",
+          "Eastern Nilotic",
+          "Lotuxo-Maa",
+          "Ongamo-Maa"
+        ],
+        "cldrLocale": "saq",
+        "cldrCoverage": "Core",
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "ids",
+          "clics-3"
+        ],
+        "commercialAudioSources": [
+          "anv-ke-samburu"
+        ],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "ilchamus": {
+      "languageId": "ilchamus",
+      "r2AudioClips": 0,
+      "cldr": null,
+      "typology": {
+        "iso639_3": "saq",
+        "glottocode": "camu1236",
+        "familyPath": [
+          "Nilotic",
+          "Eastern Nilotic",
+          "Lotuxo-Maa",
+          "Ongamo-Maa"
+        ],
+        "cldrLocale": null,
+        "cldrCoverage": null,
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "phoible-2.0"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "pokot": {
+      "languageId": "pokot",
+      "r2AudioClips": 0,
+      "cldr": null,
+      "typology": {
+        "iso639_3": "pko",
+        "glottocode": "poko1263",
+        "familyPath": [
+          "Nilotic",
+          "Southern Nilotic",
+          "Kalenjin"
+        ],
+        "cldrLocale": null,
+        "cldrCoverage": null,
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "daasanach": {
+      "languageId": "daasanach",
+      "r2AudioClips": 0,
+      "cldr": null,
+      "typology": {
+        "iso639_3": "dsh",
+        "glottocode": "daas1238",
+        "familyPath": [
+          "Afro-Asiatic",
+          "Cushitic",
+          "East Cushitic",
+          "Lowland East Cushitic",
+          "Omo-Tana",
+          "Western Omo-Tana"
+        ],
+        "cldrLocale": null,
+        "cldrCoverage": null,
+        "cldfDatabases": [
+          "glottolog-5.4",
+          "grambank",
+          "wals",
+          "phoible-2.0"
+        ],
+        "commercialAudioSources": [],
+        "phoibleSegments": null,
+        "unimorphEntries": null
+      },
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    },
+    "english-ke": {
+      "languageId": "english-ke",
+      "r2AudioClips": 0,
+      "cldr": {
+        "locale": "en-KE",
+        "months": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ],
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "license": "Unicode-3.0"
+      },
+      "typology": null,
+      "sampleReadings": [],
+      "topFrequencyWords": [],
+      "wikimedia": [],
+      "benchmarks": []
+    }
+  },
+  "stagedVarieties": [
+    {
+      "id": "kuria",
+      "name": "Kuria",
+      "nativeName": "Igikuria",
+      "isoCode": "kuj",
+      "family": "Niger-Congo (Bantu)",
+      "counties": [
+        "Migori County (Kuria East & West)"
+      ],
+      "totalEntries": 32,
+      "sampleEntries": [
+        {
+          "english": "The hyenas killed the rabbit.",
+          "translation": "Ichi-ng'iti (n-)cha-a-it-ir-e ege-toocho",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (1) · Pre-verbal Focus /ne-/ in Declarative · ",
+          "category": "phrases"
+        },
+        {
+          "english": "Who said that Gati gave the teacher a book?",
+          "translation": "N-eng'we a-a-gamb-er-e iga gati (n-)a-a-ha-y-e umw-igia ege-tabo",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, fn. 4 (i) · Embedded Declarative /ne-/ · Gloss: fo",
+          "category": "phrases"
+        },
+        {
+          "english": "What killed the rabbits?",
+          "translation": "(N-)ke (n-)ge-it-ir-e ege-toocho?",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (2a) · Subject Wh-Question · Gloss: (foc-)what",
+          "category": "phrases"
+        },
+        {
+          "english": "What did the hyenas kill?",
+          "translation": "(N-)ke ichi-ng'iti (n-)cha-a-it-ir-e?",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (2b) · Object Wh-Question · Gloss: (foc-)what ",
+          "category": "phrases"
+        },
+        {
+          "english": "THE HYENAS killed the rabbit.",
+          "translation": "(N-)ichi-ng'iti (n-)cha-a-it-ir-e ege-toocho",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (3a) · Subject Focus · Gloss: (foc-)10-hyena (",
+          "category": "phrases"
+        },
+        {
+          "english": "The hyenas killed THE RABBIT.",
+          "translation": "(N-)ege-toocho ichi-ng'iti (n-)cha-a-it-ir-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (3b) · Fronted Object Focus · Gloss: (foc-)7-r",
+          "category": "phrases"
+        },
+        {
+          "english": "The hyenas killed THE RABBIT.",
+          "translation": "Ichi-ng'iti (n-)ege-toocho (n-)cha-a-it-ir-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (4) · Topicalized Subject + Object Focus · Glo",
+          "category": "phrases"
+        },
+        {
+          "english": "1.Gati n-1-doctor 'Gati is a doctor.' / 1.Gati",
+          "translation": "Gati n-omo-reri. / Gati t-omo-reri",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, fn. 6 (i)–(ii) · Affirmative & Negative Copula · 1",
+          "category": "phrases"
+        },
+        {
+          "english": "SOMEONE ate mangoes.",
+          "translation": "N-omo-onto a-a-rey-e ama-yembe",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (9) A1 · Subject Q-A Congruence · Gloss: foc-1",
+          "category": "phrases"
+        },
+        {
+          "english": "Gati will see the owl ON THE TABLE.",
+          "translation": "N-ko-mesa gati umw-iti a-ra-maah-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (11) A · Focused PP Adjunct · Gloss: foc-on-17",
+          "category": "phrases"
+        },
+        {
+          "english": "Chacha drank the chai QUICKLY.",
+          "translation": "M-bongo chacha a-a-nyoy-e i-chaahe",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (12) A · Focused Manner Adverb · Gloss: foc-qu",
+          "category": "phrases"
+        },
+        {
+          "english": "foc-what 1.Gati 3sg.sa-pst-do.prf-fv 'What did Gati",
+          "translation": "N-ke gati a-a-korr-e. / N-a-a-nyoy-e i-chaahe",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (13)–(14) · VP Focus Q-A Pair · foc-what 1.Gat",
+          "category": "phrases"
+        },
+        {
+          "english": "Gati killed ants.",
+          "translation": "Gati n-a-a-it-ir-e ama-siisi",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (15) A1 · Sentential Focus · Gloss: Gati foc-3",
+          "category": "phrases"
+        },
+        {
+          "english": "foc-3pl.sa-pst-sell.prf-fv 9-cat 'They sold the cat.'",
+          "translation": "M-ba-a-gurr-i i-nyamu. / Aʔa, m-ba-a-gi-sirr-i",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (17)–(18) · Corrective VP Focus · foc-3pl.sa-p",
+          "category": "phrases"
+        },
+        {
+          "english": "No, they killed the ZEBRA.",
+          "translation": "Aʔa, n-in-chage cha-a-it-ir-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (21) B · Corrective Object Focus · Gloss: no, ",
+          "category": "phrases"
+        },
+        {
+          "english": "Chacha bought a lion and Gati SOLD a lion.",
+          "translation": "Chacha n-a-a-gorr-e i-indwi, na gati n-a-a-gurr-i i-indwi",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (22) · Contrastive VP Focus · Gloss: 1.Chacha ",
+          "category": "phrases"
+        },
+        {
+          "english": "Chacha bought a cat and Gati bought a LION.",
+          "translation": "Chacha n-a-a-gorr-e i-nyamu, na gati n-i-indwi a-a-gorr-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (23) · Contrastive DP Focus · Gloss: 1.Chacha ",
+          "category": "phrases"
+        },
+        {
+          "english": "They only PROTESTED BY THROWING ROCKS.",
+          "translation": "M-ba-a-tan-er-a g-oko-rekeera ama-geena bene",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (24) · Focus-Sensitive Operator bene · Gloss: ",
+          "category": "phrases"
+        }
+      ]
+    },
+    {
+      "id": "maay",
+      "name": "Kenyan Maay (Af-Maay)",
+      "nativeName": "Af-Maay",
+      "isoCode": "ymm",
+      "family": "Afro-Asiatic (Cushitic)",
+      "counties": [
+        "Dadaab (Garissa County)",
+        "Mandera",
+        "Wajir"
+      ],
+      "totalEntries": 30,
+      "sampleEntries": [
+        {
+          "english": "'woman' (F)",
+          "translation": "bɪ́laŋ",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: saháŋ (M) vs. bɪ́laŋ (F) · LangSci #427, Ch. 13, Table 1a, g · C-fin",
+          "category": "family"
+        },
+        {
+          "english": "'child' (M)",
+          "translation": "ʕonʊ́k",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: ʕonʊ́k (M) vs. ɲáɲur (F) · LangSci #427, Ch. 13, Table 1b, h · C-fin",
+          "category": "family"
+        },
+        {
+          "english": "'the coffee' / 'the (rem) coffee'",
+          "translation": "qahwə́-đə / qáhwə-đii",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: guɾú-ɣə / guɾú-ɣii (M) vs. qahwə́-đə / qáhwə-đii (F) · LangSci #427,",
+          "category": "food"
+        },
+        {
+          "english": "'the lip'; 'the bread'",
+          "translation": "bɪʃɪŋ-tə́; rootɨ́-ɣə",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-kə (M) vs. bɪʃɪŋ-tə́ (F); rootɨ́-ɣə (M) vs. bɛɛsɨ́-đə (F) · L",
+          "category": "food"
+        },
+        {
+          "english": "'this lip'; 'this bread'",
+          "translation": "bɪʃɪŋ-tə́ŋ; rootɨ́-ɣəŋ",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-ɣəŋ (M) vs. bɪʃɪŋ-tə́ŋ (F); rootɨ́-ɣəŋ (M) vs. qahwə-đə́ŋ (F)",
+          "category": "food"
+        },
+        {
+          "english": "'this coffee'",
+          "translation": "qahwə-đə́ŋ",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-ɣəŋ (M) vs. bɪʃɪŋ-tə́ŋ (F); rootɨ́-ɣəŋ (M) vs. qahwə-đə́ŋ (F)",
+          "category": "food"
+        },
+        {
+          "english": "'my lip'; 'my bread'",
+          "translation": "bɪʃɪŋ-téy; rootɨ́-ɣey",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-key (M) vs. bɪʃɪŋ-téy (F); rootɨ́-ɣey (M) vs. qáhwə-đey (F) ·",
+          "category": "food"
+        },
+        {
+          "english": "'my coffee'",
+          "translation": "qáhwə-đey",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-key (M) vs. bɪʃɪŋ-téy (F); rootɨ́-ɣey (M) vs. qáhwə-đey (F) ·",
+          "category": "food"
+        },
+        {
+          "english": "'bone' (F)",
+          "translation": "lə́f",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: mə́s (M) vs. lə́f (F) · LangSci #427, Ch. 13, Table 1f, l · Monosyll",
+          "category": "body"
+        },
+        {
+          "english": "'camel' (M)",
+          "translation": "gaál",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: gaál (M) vs. wéel (F) · LangSci #427, Ch. 13, Table 1d, j · Monosyll",
+          "category": "animals"
+        },
+        {
+          "english": "'snake' (M)",
+          "translation": "mə́s",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: mə́s (M) vs. lə́f (F) · LangSci #427, Ch. 13, Table 1f, l · Monosyll",
+          "category": "animals"
+        },
+        {
+          "english": "'the horse'",
+          "translation": "fərə́s-kə",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-kə (M) vs. bɪʃɪŋ-tə́ (F); rootɨ́-ɣə (M) vs. bɛɛsɨ́-đə (F) · L",
+          "category": "animals"
+        },
+        {
+          "english": "'this horse'",
+          "translation": "fərə́s-ɣəŋ",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-ɣəŋ (M) vs. bɪʃɪŋ-tə́ŋ (F); rootɨ́-ɣəŋ (M) vs. qahwə-đə́ŋ (F)",
+          "category": "animals"
+        },
+        {
+          "english": "'my horse'",
+          "translation": "fərə́s-key",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-key (M) vs. bɪʃɪŋ-téy (F); rootɨ́-ɣey (M) vs. qáhwə-đey (F) ·",
+          "category": "animals"
+        },
+        {
+          "english": "'cloud' (F)",
+          "translation": "daróor",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: wəreék (M) vs. daróor (F) · LangSci #427, Ch. 13, Table 1c, i · C-fi",
+          "category": "nature"
+        },
+        {
+          "english": "'plate' (M)",
+          "translation": "saháŋ",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: saháŋ (M) vs. bɪ́laŋ (F) · LangSci #427, Ch. 13, Table 1a, g · C-fin",
+          "category": "home"
+        },
+        {
+          "english": "'cat' (F)",
+          "translation": "ɲáɲur",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: ʕonʊ́k (M) vs. ɲáɲur (F) · LangSci #427, Ch. 13, Table 1b, h · C-fin",
+          "category": "home"
+        },
+        {
+          "english": "'the house' / 'the (rem) house'",
+          "translation": "guɾú-ɣə / guɾú-ɣii",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: guɾú-ɣə / guɾú-ɣii (M) vs. qahwə́-đə / qáhwə-đii (F) · LangSci #427,",
+          "category": "home"
+        }
+      ]
+    },
+    {
+      "id": "nubi",
+      "name": "Kinubi (Nubi)",
+      "nativeName": "Ki-Nubi",
+      "isoCode": "kcn",
+      "family": "Arabic-based Creole",
+      "counties": [
+        "Kibera (Nairobi)",
+        "Mombasa",
+        "Kibos",
+        "Bombo"
+      ],
+      "totalEntries": 259,
+      "sampleEntries": [
+        {
+          "english": "'seven' vs. 'morning'",
+          "translation": "sába vs. sabá",
+          "context": "APiCS Online #63 Kinubi (CC-BY-4.0) · APiCS Survey 63, §4 · Lexical Stress Minimal Pair",
+          "category": "numbers"
+        },
+        {
+          "english": "1",
+          "translation": "Wāhid",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: واحد",
+          "category": "numbers"
+        },
+        {
+          "english": "2",
+          "translation": "Etnein",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: اثنين",
+          "category": "numbers"
+        },
+        {
+          "english": "3",
+          "translation": "Talāta",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ثلثة",
+          "category": "numbers"
+        },
+        {
+          "english": "4",
+          "translation": "Arbå",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: اربعة",
+          "category": "numbers"
+        },
+        {
+          "english": "5",
+          "translation": "Khamsa",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: خمسة",
+          "category": "numbers"
+        },
+        {
+          "english": "6",
+          "translation": "Sitta",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ستة",
+          "category": "numbers"
+        },
+        {
+          "english": "7",
+          "translation": "Sabå",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: سبعة",
+          "category": "numbers"
+        },
+        {
+          "english": "8",
+          "translation": "Tamānīa",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ثمانية",
+          "category": "numbers"
+        },
+        {
+          "english": "9",
+          "translation": "Tiså",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: تسعة",
+          "category": "numbers"
+        },
+        {
+          "english": "10",
+          "translation": "cAshra",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: عشرة",
+          "category": "numbers"
+        },
+        {
+          "english": "11",
+          "translation": "Hidāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: احد عشر",
+          "category": "numbers"
+        },
+        {
+          "english": "12",
+          "translation": "Etnāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: اثنا عش",
+          "category": "numbers"
+        },
+        {
+          "english": "13",
+          "translation": "Talattāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ثلثة عش",
+          "category": "numbers"
+        },
+        {
+          "english": "14",
+          "translation": "Arbåtāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: اربعة ع",
+          "category": "numbers"
+        },
+        {
+          "english": "15",
+          "translation": "Khamstāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: خمسة عش",
+          "category": "numbers"
+        },
+        {
+          "english": "16",
+          "translation": "Sittāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ستة عشر",
+          "category": "numbers"
+        },
+        {
+          "english": "17",
+          "translation": "Sabåtāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: سبعة عش",
+          "category": "numbers"
+        }
+      ]
+    }
+  ],
+  "ksl": {
+    "languageId": "ksl",
+    "iso639_3": "xki",
+    "sources": [
+      {
+        "id": "maseno-ksl-pose-14338329",
+        "title": "Maseno KSL Pose Dataset (Open Access CC-BY-4.0, MediaPipe Pose Data.zip 1.5 GB)",
+        "license": "CC-BY-4.0",
+        "url": "https://zenodo.org/records/14338329",
+        "access": "public_zenodo",
+        "status": "ready"
+      },
+      {
+        "id": "open-sign-bibles-xki",
+        "title": "Open Sign Bibles — Kenyan Sign Language (xki)",
+        "license": "CC-BY-SA-4.0",
+        "url": "https://huggingface.co/datasets/bible-nlp/sign-bibles",
+        "access": "public_hf",
+        "register": "religious_liturgical"
+      }
+    ],
+    "zenodoFiles": [
+      {
+        "key": "Pose Data.zip",
+        "size": 1539828602,
+        "checksum": "md5:3cf8e3b30583ea1be34a65d285099b65",
+        "downloadUrl": "https://zenodo.org/api/records/14338329/files/Pose%20Data.zip/content"
+      }
+    ],
+    "glossCount": 0
+  },
+  "benchmarks": [
+    {
+      "id": "afrihate-ke",
+      "rows": 2500
+    },
+    {
+      "id": "cohere-aya-ke",
+      "rows": 396
+    },
+    {
+      "id": "masakhane-afrimgsm-orm",
+      "rows": 250
+    },
+    {
+      "id": "masakhane-afrimgsm-swa",
+      "rows": 250
+    },
+    {
+      "id": "masakhane-afrimmlu-orm",
+      "rows": 500
+    },
+    {
+      "id": "masakhane-afrimmlu-swa",
+      "rows": 500
+    },
+    {
+      "id": "masakhane-afrixnli-orm",
+      "rows": 1050
+    },
+    {
+      "id": "masakhane-afrixnli-swa",
+      "rows": 1050
+    },
+    {
+      "id": "masakhane-injongointent",
+      "rows": 640
+    },
+    {
+      "id": "masakhane-uhura-truthfulqa",
+      "rows": 807
+    },
+    {
+      "id": "swahili-finetome-20k",
+      "rows": 2500
+    },
+    {
+      "id": "tabularis-swahili-sentiment",
+      "rows": 2500
+    }
+  ],
+  "wikimedia": [
+    {
+      "id": "incubator-luo",
+      "license": "CC-BY-SA-4.0",
+      "count": 0
+    },
+    {
+      "id": "incubator-niq",
+      "license": "CC-BY-SA-4.0",
+      "count": 0
+    },
+    {
+      "id": "wikidata-lexemes-kenya",
+      "license": "CC0-1.0",
+      "count": 500
+    },
+    {
+      "id": "wikisource-sw",
+      "license": "CC-BY-SA-4.0",
+      "count": 0
+    }
+  ],
+  "civic": [
+    {
+      "id": "constitution-of-kenya-2010-raw",
+      "license": "No Copyright (Statutory)",
+      "source": "https://www.parliament.go.ke/sites/default/files/2017-05/The_Constitution_of_Kenya_2010.pdf",
+      "pageCount": 193
+    },
+    {
+      "id": "hdx-kenya-languages",
+      "license": "Open Access",
+      "source": "",
+      "pageCount": null
+    },
+    {
+      "id": "helmets-kenya-crop-v2",
+      "license": "Open Access",
+      "source": "",
+      "pageCount": null
+    }
+  ]
+}
