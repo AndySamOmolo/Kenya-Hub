@@ -193,9 +193,6 @@ export default function StagedVarietiesPanel() {
             </p>
           </div>
         )}
-            </div>
-          </div>
-        )}
       </div>
 
       {/* 2. More Kenyan Languages — Starter Phrasebooks (Kinubi, Kuria, Kenyan Maay) */}

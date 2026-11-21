@@ -2574,28 +2574,6 @@ export default function LanguageCourseTool({
                   ))}
                 </View>
               )}
-                      style={{
-                        backgroundColor: colors.surface,
-                        borderWidth: 1,
-                        borderColor: `${colors.kenyaGreen}35`,
-                        borderRadius: 12,
-                        padding: 11,
-                        gap: 3,
-                      }}
-                    >
-                      <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12.5, color: colors.text, flex: 1 }}>
-                          {book.title}
-                        </Text>
-                        <Feather name="external-link" size={14} color={colors.kenyaGreen} />
-                      </View>
-                      <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary, lineHeight: 16 }}>
-                        {book.description}
-                      </Text>
-                    </Pressable>
-                  ))}
-                </View>
-              )}
             </View>
           );
         })()}
