@@ -20,8 +20,14 @@ export default function OpenCorpusPanel({ languageId, languageName }: OpenCorpus
   const hasReadings = data.sampleReadings.length > 0;
   const hasEverydayWords = data.topFrequencyWords.length > 0;
   const hasChapters = chapters.length > 0;
+  const phonemes = data.phonemes ?? [];
+  const morphologySamples = data.morphologySamples ?? [];
+  const wikimediaArticles = data.wikimediaArticles ?? [];
+  const hasPhonemes = phonemes.length > 0;
+  const hasMorphology = morphologySamples.length > 0;
+  const hasWikiArticles = wikimediaArticles.length > 0;
 
-  if (!hasChapters && !hasCalendar && !hasReadings && !hasEverydayWords) return null;
+  if (!hasChapters && !hasCalendar && !hasReadings && !hasEverydayWords && !hasPhonemes && !hasMorphology && !hasWikiArticles) return null;
 
   const activeChapter = chapters.find((ch) => ch.id === activeChapterId) ?? chapters[0] ?? null;
 
@@ -196,6 +202,71 @@ export default function OpenCorpusPanel({ languageId, languageName }: OpenCorpus
               >
                 {fw.word}
               </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Pronunciation Sound Inventory (PHOIBLE IPA) */}
+      {hasPhonemes && (
+        <div className="space-y-2">
+          <p className="text-xs font-bold uppercase tracking-wider text-text-muted flex items-center gap-1.5">
+            <Volume2 className="h-3.5 w-3.5 text-kenya-green" />
+            {languageName} Sound Inventory (IPA · {phonemes.length} phonemes)
+          </p>
+          <div className="flex flex-wrap gap-1.5">
+            {phonemes.map((seg, idx) => (
+              <span
+                key={`ph-${idx}`}
+                className="rounded-lg border border-border bg-bg-elevated/60 px-2 py-0.5 text-xs font-mono text-text-primary"
+              >
+                /{seg}/
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Morphological Inflection Examples (UniMorph) */}
+      {hasMorphology && (
+        <div className="space-y-2">
+          <p className="text-xs font-bold uppercase tracking-wider text-text-muted flex items-center gap-1.5">
+            <Sparkles className="h-3.5 w-3.5 text-gold" />
+            Word Formation &amp; Inflection Examples
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            {morphologySamples.slice(0, 12).map((m, idx) => (
+              <div
+                key={`morph-${idx}`}
+                className="rounded-lg border border-border bg-bg-elevated/40 px-2.5 py-2 text-xs"
+              >
+                <p className="font-bold text-text-primary">{m.form}</p>
+                <p className="text-[0.68rem] text-text-muted mt-0.5">Root: {m.lemma}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Open-Access Wikimedia Reading Articles */}
+      {hasWikiArticles && (
+        <div className="space-y-2">
+          <p className="text-xs font-bold uppercase tracking-wider text-text-muted flex items-center gap-1.5">
+            <BookOpen className="h-3.5 w-3.5 text-kenya-green" />
+            Open-Access {languageName} Articles ({wikimediaArticles[0]?.source})
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {wikimediaArticles.map((art, idx) => (
+              <a
+                key={`wiki-${idx}`}
+                href={art.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 rounded-full border border-kenya-green/30 bg-kenya-green/5 px-3 py-1 text-xs font-semibold text-kenya-green hover:bg-kenya-green/15 transition-colors"
+              >
+                <span>{art.title}</span>
+                <ExternalLink className="h-3 w-3" />
+              </a>
             ))}
           </div>
         </div>

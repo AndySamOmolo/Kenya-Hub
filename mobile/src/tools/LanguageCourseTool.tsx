@@ -2510,12 +2510,11 @@ export default function LanguageCourseTool({
           })}
         </View>
 
-        {/* Kenyan Sign Language (KSL) — Video Library & Storybooks (1:1 Web Parity) */}
+        {/* Kenyan Sign Language (KSL) — Video Library (1:1 Web Parity) */}
         {(() => {
           const kslData = (openCorpusIndex as any).ksl || {};
           const kslVideos: { id: string; title: string; videoUrl: string; category?: string; source?: string }[] = kslData.videos || [];
-          const kslStorybooks: { id: string; title: string; url: string; description: string }[] = kslData.storybooks || [];
-          if (kslVideos.length === 0 && kslStorybooks.length === 0) return null;
+          if (kslVideos.length === 0) return null;
           return (
             <View
               style={{
@@ -2575,16 +2574,6 @@ export default function LanguageCourseTool({
                   ))}
                 </View>
               )}
-
-              {kslStorybooks.length > 0 && (
-                <View style={{ gap: 6 }}>
-                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
-                    HUMAN KSL VIDEO STORYBOOKS
-                  </Text>
-                  {kslStorybooks.map((book) => (
-                    <Pressable
-                      key={book.id}
-                      onPress={() => Linking.openURL(book.url).catch(() => {})}
                       style={{
                         backgroundColor: colors.surface,
                         borderWidth: 1,
@@ -2645,7 +2634,7 @@ export default function LanguageCourseTool({
                   Starter Phrasebooks
                 </Text>
                 <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
-                  Explore everyday words and phrases in Kinubi, Kuria, and Kenyan Maay.
+                  Explore everyday words and phrases in Kinubi, Kuria, Kenyan Maay, and Yaaku.
                 </Text>
               </View>
 

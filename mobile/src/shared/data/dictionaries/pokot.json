@@ -9196,6 +9196,54 @@
           "translation": "ket, pl. kêt",
           "pronunciation": "",
           "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 148 · Firewood: kwen-da, pl. kwen · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "Sclerocarya birrea (A.Rich.) Hochst (Sclerocarya birrea (A.Rich.) Hochst)",
+          "translation": "Roluwo",
+          "pronunciation": "",
+          "context": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants (PMC7154930, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/) [Ethnobotany]"
+        },
+        {
+          "english": "Aloe volkensii Engl (Aloe volkensii Engl)",
+          "translation": "Tolkos",
+          "pronunciation": "",
+          "context": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants (PMC7154930, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/) [Ethnobotany]"
+        },
+        {
+          "english": "Toddalia asiatica (L.) Lam (Toddalia asiatica (L.) Lam)",
+          "translation": "Katamwa",
+          "pronunciation": "",
+          "context": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants (PMC7154930, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/) [Ethnobotany]"
+        },
+        {
+          "english": "Syzygium guineense (Willd.) DC (Syzygium guineense (Willd.) DC)",
+          "translation": "Cheptimanwa",
+          "pronunciation": "",
+          "context": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants (PMC7154930, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/) [Ethnobotany]"
+        },
+        {
+          "english": "Erythrina abyssinica DC (Erythrina abyssinica DC)",
+          "translation": "Gorgorwa",
+          "pronunciation": "",
+          "context": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants (PMC7154930, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/) [Ethnobotany]"
+        },
+        {
+          "english": "Withania somnifera (L.) Dunal (Withania somnifera (L.) Dunal)",
+          "translation": "Akakagh",
+          "pronunciation": "",
+          "context": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants (PMC7154930, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/) [Ethnobotany]"
+        },
+        {
+          "english": "Periploca linearifolia Quart.-Dill. and A.Rich (Periploca linearifolia Quart.-Dill. and A.Rich)",
+          "translation": "Sinendet",
+          "pronunciation": "",
+          "context": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants (PMC7154930, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/) [Ethnobotany]"
+        },
+        {
+          "english": "Tragia brevipes Pax (Tragia brevipes Pax)",
+          "translation": "Chemelei",
+          "pronunciation": "",
+          "context": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants (PMC7154930, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/) [Ethnobotany]"
         }
       ]
     },
@@ -31521,5 +31569,5 @@
   "source": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
   "isoCode": "pko",
   "glottocode": "poko1263",
-  "totalEntries": 5674
+  "totalEntries": 5682
 }

@@ -105,7 +105,50 @@
       "id": "nature",
       "name": "Nature & Environment",
       "icon": "🌿",
-      "entries": []
+      "entries": [
+        {
+          "english": "Sonchus schweinfurthii Oliv. & Hiern (Not specified)",
+          "translation": "Egesemi",
+          "pronunciation": "",
+          "context": "Omara (2020) Kenyan Antimalarial Plants (PMC7306085, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/) [Ethnobotany]"
+        },
+        {
+          "english": "Vernonia brachycalyx O. Hoffm. Schreber (Leaves)",
+          "translation": "Irisabakw",
+          "pronunciation": "",
+          "context": "Omara (2020) Kenyan Antimalarial Plants (PMC7306085, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/) [Ethnobotany]"
+        },
+        {
+          "english": "Albizia zygia (DC) J.F. Macbr (Not specified)",
+          "translation": "Ekegonchori",
+          "pronunciation": "",
+          "context": "Omara (2020) Kenyan Antimalarial Plants (PMC7306085, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/) [Ethnobotany]"
+        },
+        {
+          "english": "Cassia didymobotrya Fres (Leaves, roots, root bark)",
+          "translation": "Irebeni",
+          "pronunciation": "",
+          "context": "Omara (2020) Kenyan Antimalarial Plants (PMC7306085, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/) [Ethnobotany]"
+        },
+        {
+          "english": "Erythrina abyssinica Lam. ex DC (Root, bark)",
+          "translation": "Omutembe",
+          "pronunciation": "",
+          "context": "Omara (2020) Kenyan Antimalarial Plants (PMC7306085, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/) [Ethnobotany]"
+        },
+        {
+          "english": "Rubia cordifolia L (Not specified)",
+          "translation": "Urumurwa",
+          "pronunciation": "",
+          "context": "Omara (2020) Kenyan Antimalarial Plants (PMC7306085, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/) [Ethnobotany]"
+        },
+        {
+          "english": "Harrisonia abyssinica Olive (Leaves, roots, root bark)",
+          "translation": "Orongoriwe",
+          "pronunciation": "",
+          "context": "Omara (2020) Kenyan Antimalarial Plants (PMC7306085, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/) [Ethnobotany]"
+        }
+      ]
     },
     {
       "id": "home",
@@ -384,5 +427,6 @@
       "icon": "📖",
       "entries": []
     }
-  ]
+  ],
+  "totalEntries": 52
 }

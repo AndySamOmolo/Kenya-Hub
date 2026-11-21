@@ -52,7 +52,15 @@ CF_API_TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
 R2_ACCESS_KEY_ID = os.environ.get("R2_ACCESS_KEY_ID", "").strip()
 R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY", "").strip()
 R2_BUCKET = os.environ.get("R2_BUCKET_NAME", "kenyahub-audio").strip() or "kenyahub-audio"
-CDN_BASE = os.environ.get("NEXT_PUBLIC_AUDIO_CDN_URL", "https://audio.kenyahub.me").strip().rstrip("/")
+def sanitize_cdn_base(raw: str) -> str:
+    val = (raw or "").strip()
+    m = re.match(r"^\[[^\]]+\]\((https?://[^)]+)\)(.*)$", val)
+    if m:
+        val = f"{m.group(1).strip()}{m.group(2).strip()}"
+    return (val or "https://audio.kenyahub.me").rstrip("/")
+
+
+CDN_BASE = sanitize_cdn_base(os.environ.get("NEXT_PUBLIC_AUDIO_CDN_URL", "https://audio.kenyahub.me"))
 HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
 
 MAX_MASENO_VIDEOS = int(os.environ.get("MAX_KSL_MASENO_VIDEOS", os.environ.get("MAX_KSL_SIGNS", "60")))
@@ -253,7 +261,7 @@ def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict
             return
 
         with zipfile.ZipFile(zip_path, "r") as zf:
-            names = [m for m in zf.namelist() if not m.startswith("__MACOSX") and not m.endswith("/")]
+            names = [m for m in zf.namelist() if not m.startswith("__MACOSX") and not m.endswith("/") and not Path(m).name.startswith(".") and Path(m).stem.strip(". ").lower() not in ("", "mp4")]
             vid_members = sorted([m for m in names if Path(m).suffix.lower() in VIDEO_EXTS])
             npy_members = sorted([m for m in names if m.lower().endswith(".npy")])
             distinct_vid_parents = {Path(m).parent.name.strip().lower() for m in vid_members}

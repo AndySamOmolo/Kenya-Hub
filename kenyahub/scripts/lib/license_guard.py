@@ -240,7 +240,9 @@ def is_secular_opus_luo_row(
         return False
     src = (source_corpus or "").strip().lower()
     if src:
-        if any(bad in src for bad in ("jw300", "bible", "watchtower", "nt", "ot", "scripture")):
+        if any(bad in src for bad in ("jw300",
+    "pmc7315313",
+    "pmc12615033", "bible", "watchtower", "nt", "ot", "scripture")):
             return False
         if not any(ok in src for ok in SECULAR_OPUS_SUBCORPORA):
             # Unknown corpus tag: still apply text heuristics below

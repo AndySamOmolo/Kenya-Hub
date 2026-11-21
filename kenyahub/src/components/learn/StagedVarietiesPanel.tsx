@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { BookOpen, ExternalLink, Film, Hand, Search } from "lucide-react";
+import { BookOpen, Film, Hand, Search } from "lucide-react";
 import { OPEN_CORPUS_INDEX, type KslVideoItem } from "@/lib/open-corpus";
 
 type KslFilterTab = "all" | "maseno-stickman" | "human-sign-bible";
@@ -16,7 +16,6 @@ export default function StagedVarietiesPanel() {
   const [playbackRate, setPlaybackRate] = useState<number>(1);
 
   const kslVideos: KslVideoItem[] = OPEN_CORPUS_INDEX.ksl.videos ?? [];
-  const kslStorybooks = OPEN_CORPUS_INDEX.ksl.storybooks ?? [];
 
   const filteredKslVideos = kslVideos.filter((v) => {
     if (kslTab !== "all" && v.category !== kslTab) return false;
@@ -68,7 +67,7 @@ export default function StagedVarietiesPanel() {
               Watch Kenyan Sign Language Videos &amp; Storybooks
             </h2>
             <p className="text-xs sm:text-sm text-text-secondary mt-1">
-              Practice signs with slow-motion playback (0.5x–1x) using Maseno University stickman sign videos, human KSL signers, and illustrated KSL video storybooks.
+              Practice signs with slow-motion playback (0.5x–1x) using Maseno University stickman sign videos and human KSL signers.
             </p>
           </div>
           {kslVideos.length > 0 && (
@@ -190,38 +189,10 @@ export default function StagedVarietiesPanel() {
           <div className="rounded-xl border border-dashed border-kenya-green/35 bg-bg-elevated/40 p-3.5 text-xs text-text-secondary flex items-start gap-2.5">
             <Film className="h-4 w-4 text-kenya-green shrink-0 mt-0.5" />
             <p>
-              Maseno stickman sign clips and human KSL videos appear right here automatically after syncing media to Cloudflare R2. In the meantime, watch the illustrated human KSL video storybooks below.
+              Maseno stickman sign clips and human KSL videos appear right here automatically after syncing media to Cloudflare R2.
             </p>
           </div>
         )}
-
-        {/* Illustrated Human KSL Video Storybooks */}
-        {kslStorybooks.length > 0 && (
-          <div className="space-y-2">
-            <p className="text-xs font-bold uppercase tracking-wider text-text-muted">
-              Human KSL Video Storybooks
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
-              {kslStorybooks.map((book) => (
-                <a
-                  key={book.id}
-                  href={book.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-xl border border-border bg-bg-elevated/40 p-3.5 hover:border-kenya-green/50 transition-all block"
-                >
-                  <div className="flex items-start justify-between gap-2">
-                    <p className="text-sm font-bold text-text-primary">{book.title}</p>
-                    <ExternalLink className="h-3.5 w-3.5 text-kenya-green shrink-0 mt-0.5" />
-                  </div>
-                  <p className="text-xs text-text-secondary mt-1 leading-relaxed">
-                    {book.description}
-                  </p>
-                  <p className="text-[0.68rem] font-semibold text-kenya-green mt-1.5">
-                    Watch Human Signer · Free Open Access
-                  </p>
-                </a>
-              ))}
             </div>
           </div>
         )}
@@ -239,7 +210,7 @@ export default function StagedVarietiesPanel() {
               Starter Phrasebooks for Emerging Kenyan Languages
             </h2>
             <p className="text-xs sm:text-sm text-text-secondary mt-1">
-              Explore everyday words and phrases in Kinubi, Kuria, and Kenyan Maay while full multi-unit courses are being expanded.
+              Explore everyday words and phrases in Kinubi, Kuria, Kenyan Maay, and Yaaku while full multi-unit courses are being expanded.
             </p>
           </div>
 

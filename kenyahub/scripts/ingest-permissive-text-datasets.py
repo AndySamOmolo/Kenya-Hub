@@ -57,18 +57,57 @@ HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
 HTTP_SESSION = requests.Session()
 HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-Permissive-Ingestor/3.1"})
 
+def _stream_hf_parquet_fallback(repo: str, config: str | None = None, split: str = "train"):
+    """Direct pyarrow/huggingface_hub parquet row generator when datasets hits schema CastError across shards."""
+    import pyarrow.parquet as pq
+    from huggingface_hub import HfApi, hf_hub_download
+
+    api = HfApi(token=HF_TOKEN)
+    files = api.list_repo_files(repo_id=repo, repo_type="dataset")
+    pq_files = [f for f in files if f.endswith(".parquet")]
+    if config and config != "default":
+        cfg_matches = [f for f in pq_files if f"/{config}/" in f or f.startswith(f"{config}/") or config in f]
+        if cfg_matches:
+            pq_files = cfg_matches
+    split_matches = [f for f in pq_files if split in f.lower()]
+    if split_matches:
+        pq_files = split_matches
+    for rel_path in pq_files[:3]:
+        local_p = hf_hub_download(repo_id=repo, filename=rel_path, repo_type="dataset", token=HF_TOKEN)
+        pf = pq.ParquetFile(local_p)
+        for batch in pf.iter_batches(batch_size=500):
+            for row in batch.to_pylist():
+                yield row
+
+
 def load_hf_stream(repo: str, config: str | None = None, split: str = "train"):
-    """Load a Hugging Face dataset in streaming mode with trust_remote_code=True and safe fallback."""
+    """Load a Hugging Face dataset in streaming mode with trust_remote_code=True and parquet CastError fallback."""
     assert_repo_allowed(repo)
     from datasets import load_dataset
 
     kwargs: dict[str, Any] = {"split": split, "streaming": True, "token": HF_TOKEN, "trust_remote_code": True}
     args = (repo, config) if config else (repo,)
     try:
-        return load_dataset(*args, **kwargs)
+        ds = load_dataset(*args, **kwargs)
     except (TypeError, ValueError):
         kwargs.pop("trust_remote_code", None)
-        return load_dataset(*args, **kwargs)
+        ds = load_dataset(*args, **kwargs)
+    except Exception as exc:
+        if "CastError" in type(exc).__name__ or "Couldn't cast" in str(exc):
+            return _stream_hf_parquet_fallback(repo, config, split)
+        raise
+
+    def _safe_iter():
+        try:
+            for item in ds:
+                yield item
+        except Exception as exc:
+            if "CastError" in type(exc).__name__ or "Couldn't cast" in str(exc):
+                yield from _stream_hf_parquet_fallback(repo, config, split)
+            else:
+                raise
+
+    return _safe_iter()
 
 
 ISO_TO_KENYAHUB_LANG: dict[str, str] = {
@@ -141,8 +180,8 @@ HF_PERMISSIVE_TEXT_JOBS: list[dict[str, Any]] = [
         "repo": "BrianMwangi/english-to-luo-opus",
         "config": "v1.0",
         "split": "train",
-        "en_cols": ("english", "en", "source", "src"),
-        "tr_cols": ("luo", "dholuo", "target", "tgt"),
+        "en_cols": ("english_clean", "english", "en", "source", "src"),
+        "tr_cols": ("luo_clean", "luo", "dholuo", "target", "tgt"),
         "license": "CC-BY-4.0",
         "gated": False,
         "secular_opus_luo_filter": True,
@@ -249,9 +288,9 @@ OER_STORYBOOK_JOBS: list[dict[str, Any]] = [
 
 WEB_FREQ_CORPORA: list[dict[str, Any]] = [
     {"id": "fineweb-2", "repo": "HuggingFaceFW/fineweb-2", "configs": ["swh_Latn", "som_Latn", "gaz_Latn", "kik_Latn", "luo_Latn", "mer_Latn", "guz_Latn", "mas_Latn", "teo_Latn", "kam_Latn", "tuv_Latn"], "license": "ODC-By"},
-    {"id": "wura", "repo": "castorini/wura", "configs": ["swa", "som", "orm", "kik", "luo"], "license": "Apache-2.0"},
+    {"id": "wura", "repo": "castorini/wura", "configs": ["swa", "som", "orm"], "license": "Apache-2.0"},
     {"id": "culturax", "repo": "uonlp/CulturaX", "configs": ["sw", "so"], "license": "ODC-By"},
-    {"id": "glotcc-v1", "repo": "cis-lmu/GlotCC-V1", "configs": ["swh-Latn", "som-Latn", "orm-Latn", "luo-Latn", "teo-Latn", "kik-Latn", "guz-Latn", "mas-Latn", "kam-Latn"], "license": "CC0-1.0"}
+    {"id": "glotcc-v1", "repo": "cis-lmu/GlotCC-V1", "configs": ["swh-Latn", "som-Latn", "gaz-Latn", "luo-Latn", "teo-Latn", "kik-Latn", "guz-Latn", "mas-Latn", "kam-Latn", "sgc-Latn", "lwg-Latn"], "license": "CC0-1.0"}
 ]
 
 DIRECT_PERMISSIVE_SOURCES: list[dict[str, Any]] = [

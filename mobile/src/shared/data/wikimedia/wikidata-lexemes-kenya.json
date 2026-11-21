@@ -503,6 +503,41 @@
       "language": "Swahili"
     },
     {
+      "lexeme": "http://www.wikidata.org/entity/L1230826",
+      "lemma": "كُوچَ",
+      "language": "Swahili"
+    },
+    {
+      "lexeme": "http://www.wikidata.org/entity/L1230833",
+      "lemma": "chwa",
+      "language": "Swahili"
+    },
+    {
+      "lexeme": "http://www.wikidata.org/entity/L1230833",
+      "lemma": "چْوَ",
+      "language": "Swahili"
+    },
+    {
+      "lexeme": "http://www.wikidata.org/entity/L1338399",
+      "lemma": "kucha",
+      "language": "Swahili"
+    },
+    {
+      "lexeme": "http://www.wikidata.org/entity/L1338399",
+      "lemma": "كُوچَ",
+      "language": "Swahili"
+    },
+    {
+      "lexeme": "http://www.wikidata.org/entity/L309558",
+      "lemma": "mwalimu",
+      "language": "Swahili"
+    },
+    {
+      "lexeme": "http://www.wikidata.org/entity/L309558",
+      "lemma": "مْوَلِيمُ",
+      "language": "Swahili"
+    },
+    {
       "lexeme": "http://www.wikidata.org/entity/L1227237",
       "lemma": "ٹَانْڠِ",
       "language": "Swahili"
@@ -1000,41 +1035,6 @@
     {
       "lexeme": "http://www.wikidata.org/entity/L1230826",
       "lemma": "kucha",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L1230826",
-      "lemma": "كُوچَ",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L1230833",
-      "lemma": "chwa",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L1230833",
-      "lemma": "چْوَ",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L1338399",
-      "lemma": "kucha",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L1338399",
-      "lemma": "كُوچَ",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L309558",
-      "lemma": "mwalimu",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L309558",
-      "lemma": "مْوَلِيمُ",
       "language": "Swahili"
     },
     {
@@ -1538,6 +1538,21 @@
       "language": "Swahili"
     },
     {
+      "lexeme": "http://www.wikidata.org/entity/L1403147",
+      "lemma": "دِيمُ",
+      "language": "Swahili"
+    },
+    {
+      "lexeme": "http://www.wikidata.org/entity/L619510",
+      "lemma": "kitabu",
+      "language": "Swahili"
+    },
+    {
+      "lexeme": "http://www.wikidata.org/entity/L619510",
+      "lemma": "كِتَابُ",
+      "language": "Swahili"
+    },
+    {
       "lexeme": "http://www.wikidata.org/entity/L1255270",
       "lemma": "ڠُورُ",
       "language": "Swahili"
@@ -2035,21 +2050,6 @@
     {
       "lexeme": "http://www.wikidata.org/entity/L1403147",
       "lemma": "dimu",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L1403147",
-      "lemma": "دِيمُ",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L619510",
-      "lemma": "kitabu",
-      "language": "Swahili"
-    },
-    {
-      "lexeme": "http://www.wikidata.org/entity/L619510",
-      "lemma": "كِتَابُ",
       "language": "Swahili"
     },
     {

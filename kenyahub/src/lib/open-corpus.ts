@@ -74,6 +74,9 @@ export interface OpenCorpusLanguageData {
   wikimedia: { id: string; count: number; license: string }[];
   benchmarks: { id: string; rows: number }[];
   audioChapters?: OpenCorpusAudioChapter[];
+  phonemes?: string[];
+  morphologySamples?: { lemma: string; form: string; features: string }[];
+  wikimediaArticles?: { title: string; url: string; source: string }[];
 }
 
 export interface StagedVariety {

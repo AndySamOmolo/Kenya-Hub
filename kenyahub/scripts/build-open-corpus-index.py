@@ -24,7 +24,7 @@ ISO_TO_LANG = {
     "sw": "swahili", "swa": "swahili", "swh": "swahili", "swc": "swahili", "sw-ke": "swahili",
     "ki": "kikuyu", "kik": "kikuyu",
     "luo": "luo",
-    "luy": "luhya", "bxk": "luhya", "rag": "luhya",
+    "luy": "luhya", "bxk": "luhya", "rag": "luhya", "lwg": "luhya",
     "kln": "kalenjin", "niq": "kalenjin", "sgc": "kalenjin",
     "kam": "kamba",
     "guz": "kisii",
@@ -33,7 +33,7 @@ ISO_TO_LANG = {
     "mas": "maasai",
     "tuv": "turkana",
     "so": "somali", "som": "somali", "so-ke": "somali",
-    "om": "borana", "orm": "borana", "gax": "borana", "om-ke": "borana",
+    "om": "borana", "orm": "borana", "gax": "borana", "gaz": "borana", "om-ke": "borana",
     "ebu": "embu",
     "dav": "taita",
     "pkb": "pokomo",
@@ -76,6 +76,9 @@ def main() -> None:
                 "sampleReadings": [],
                 "topFrequencyWords": [],
                 "wikimedia": [],
+                "wikimediaArticles": [],
+                "phonemes": [],
+                "morphologySamples": [],
                 "benchmarks": [],
                 "audioChapters": [],
             }
@@ -196,20 +199,49 @@ def main() -> None:
             wd = load_json_safe(wf)
             if not isinstance(wd, dict):
                 continue
-            cnt = wd.get("count") or len(wd.get("lexemes") or wd.get("pages") or wd.get("articles") or [])
+            inner_data = wd.get("data") if isinstance(wd.get("data"), dict) else {}
+            pages_list = (
+                wd.get("lexemes")
+                or wd.get("pages")
+                or wd.get("articles")
+                or inner_data.get("allpages")
+                or inner_data.get("categorymembers")
+                or []
+            )
+            cnt = wd.get("count") or len(pages_list)
             wikimedia_summary.append({
                 "id": wf.stem,
                 "license": wd.get("license", "CC-BY-SA-4.0"),
                 "count": cnt,
             })
+            wiki_lid = None
+            base_url = "https://incubator.wikimedia.org/wiki/"
+            src_name = "Wikimedia Incubator"
             if "luo" in wf.stem:
-                ensure_lang("luo")["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
+                wiki_lid = "luo"
             elif "niq" in wf.stem or "sgc" in wf.stem:
-                ensure_lang("kalenjin")["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
+                wiki_lid = "kalenjin"
             elif "pko" in wf.stem:
-                ensure_lang("pokot")["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
-            elif "sw" in wf.stem:
-                ensure_lang("swahili")["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
+                wiki_lid = "pokot"
+            elif "wikisource-sw" in wf.stem:
+                wiki_lid = "swahili"
+                base_url = "https://wikisource.org/wiki/"
+                src_name = "Swahili Wikisource"
+            if wiki_lid:
+                rec = ensure_lang(wiki_lid)
+                rec["wikimedia"].append({"id": wf.stem, "count": cnt, "license": wd.get("license", "CC-BY-SA-4.0")})
+                for pg in pages_list:
+                    if len(rec["wikimediaArticles"]) >= 8:
+                        break
+                    if isinstance(pg, dict) and pg.get("ns", 0) == 0 and pg.get("title"):
+                        raw_t = str(pg["title"]).strip()
+                        display_t = raw_t.split("/", 2)[-1] if raw_t.startswith("Wp/") and raw_t.count("/") >= 2 else raw_t
+                        if display_t and not display_t.startswith("Main"):
+                            rec["wikimediaArticles"].append({
+                                "title": display_t,
+                                "url": base_url + raw_t.replace(" ", "_"),
+                                "source": src_name,
+                            })
 
     # 7. Benchmarks (count rows across all .jsonl files in src/data/benchmarks/)
     bench_dir = DATA_DIR / "benchmarks"
@@ -222,12 +254,44 @@ def main() -> None:
                 line_count = 0
             benchmarks_summary.append({"id": bf.stem, "rows": line_count})
             stem_l = bf.stem.lower()
-            if "swa" in stem_l or "swahili" in stem_l:
-                ensure_lang("swahili")["benchmarks"].append({"id": bf.stem, "rows": line_count})
-            elif "orm" in stem_l:
-                ensure_lang("borana")["benchmarks"].append({"id": bf.stem, "rows": line_count})
+            target_lid = None
+            if "swa" in stem_l or "swahili" in stem_l or "swh" in stem_l or "xp3-sw" in stem_l:
+                target_lid = "swahili"
+            elif "orm" in stem_l or "gaz" in stem_l:
+                target_lid = "borana"
+            elif "luo" in stem_l:
+                target_lid = "luo"
+            elif "som" in stem_l:
+                target_lid = "somali"
+            elif "xp3-ki" in stem_l:
+                target_lid = "kikuyu"
             elif "ke" in stem_l or "ea-" in stem_l or "injongo" in stem_l or "uhura" in stem_l:
-                ensure_lang("swahili")["benchmarks"].append({"id": bf.stem, "rows": line_count})
+                target_lid = "swahili"
+
+            if target_lid:
+                rec = ensure_lang(target_lid)
+                rec["benchmarks"].append({"id": bf.stem, "rows": line_count})
+                # Populate clean reading passages for languages with < 12 sampleReadings
+                if len(rec["sampleReadings"]) < 12 and any(k in stem_l for k in ("belebele", "xp3-ki", "zindi-swahili-news")):
+                    seen_txt = {r["text"] for r in rec["sampleReadings"]}
+                    src_label = "FLORES / Belebele (CC-BY-SA-4.0)" if "belebele" in stem_l else ("BigScience xP3 (Apache-2.0)" if "xp3" in stem_l else "AI4D Swahili News (CC-BY-4.0)")
+                    lic_label = "CC-BY-SA-4.0" if "belebele" in stem_l else ("Apache-2.0" if "xp3" in stem_l else "CC-BY-4.0")
+                    try:
+                        with bf.open("r", encoding="utf-8", errors="ignore") as fh:
+                            for line in fh:
+                                if len(rec["sampleReadings"]) >= 12:
+                                    break
+                                obj = json.loads(line)
+                                cand = str(obj.get("flores_passage") or obj.get("targets") or obj.get("content") or "").strip()
+                                cand = " ".join(cand.split())
+                                if len(cand) > 175:
+                                    cut = cand[:175].rsplit(" ", 1)[0].rstrip(",;:")
+                                    cand = cut + ("." if not cut.endswith((".", "!", "?")) else "")
+                                if 25 <= len(cand) <= 185 and cand not in seen_txt:
+                                    seen_txt.add(cand)
+                                    rec["sampleReadings"].append({"text": cand, "source": src_label, "license": lic_label})
+                    except Exception:
+                        pass
 
     # 8. Emerging & Staged Kenyan Varieties (ALL dictionaries/staging/*.json)
     staging_dir = DATA_DIR / "dictionaries/staging"
@@ -243,7 +307,7 @@ def main() -> None:
                 ents = cat.get("entries", [])
                 total_entries += len(ents)
                 for e in ents:
-                    if len(entries_preview) < 60:
+                    if len(entries_preview) < 300:
                         entries_preview.append({
                             "english": str(e.get("english", ""))[:80],
                             "translation": str(e.get("translation", ""))[:80],
@@ -297,6 +361,38 @@ def main() -> None:
         "extractedSignCount": int(ksl_raw.get("extractedSignCount") or len(ksl_raw.get("signs") or [])),
         "glossCount": len(ksl_raw.get("glosses", [])),
     }
+
+    # 12. PHOIBLE 2.0 IPA Sound Inventories (src/data/language-typology/phoible-kenya.json)
+    phoible_raw = load_json_safe(DATA_DIR / "language-typology/phoible-kenya.json") or {}
+    phoible_rows = phoible_raw.get("rows") or []
+    phon_by_lang: dict[str, list[str]] = {}
+    for prow in phoible_rows:
+        iso3 = str(prow.get("ISO6393") or "").strip().lower()
+        lid = ISO_TO_LANG.get(iso3)
+        seg = str(prow.get("Phoneme") or "").strip()
+        if lid and seg:
+            bucket = phon_by_lang.setdefault(lid, [])
+            if seg not in bucket and len(bucket) < 36:
+                bucket.append(seg)
+    for lid, segs in phon_by_lang.items():
+        ensure_lang(lid)["phonemes"] = segs
+
+    # 13. UniMorph Swahili Morphological Inflections (src/data/language-typology/unimorph-swc.json)
+    unimorph_raw = load_json_safe(DATA_DIR / "language-typology/unimorph-swc.json") or {}
+    unimorph_entries = unimorph_raw.get("entries") or []
+    morph_samples: list[dict] = []
+    seen_lemmas: set[str] = set()
+    for urow in unimorph_entries:
+        if len(morph_samples) >= 16:
+            break
+        lem = str(urow.get("lemma") or "").strip()
+        frm = str(urow.get("form") or "").strip()
+        feat = str(urow.get("features") or "").strip()
+        if lem and frm and feat and lem != frm and lem not in seen_lemmas and len(frm) <= 24:
+            seen_lemmas.add(lem)
+            morph_samples.append({"lemma": lem, "form": frm, "features": feat})
+    if morph_samples:
+        ensure_lang("swahili")["morphologySamples"] = morph_samples
 
     payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
