@@ -8,7 +8,7 @@
   "counties": [
     "Turkana"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-17",
   "contributorNote": "Turkana (Ng'aturkana) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\", Ch. XIII), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 66–70, Plates XVI–XVII — audited 100% line-by-line across 16 principal tribes, 19 Ngoitunya/Ngolio attegir clans, 6 life stages, asavanissia ages, Nessegonn bush, marriage & slaughter customs, Agipie & nether-world god, and 12-month Nakiborror/Nakamou/Nait calendar), Mervyn W. H. Beech (1911), and Juxon Barton (1921). Expanded and cross-verified with Commercially Permissive Datasets (Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0).",
@@ -18347,6 +18347,36 @@
           "english": "Hot",
           "translation": "eriau",
           "context": "CLDF ASJP v20 Wordlist (TURKANA, CC-BY-4.0)"
+        },
+        {
+          "english": "bush enclosure around a kraal",
+          "translation": "zeriba",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Regional (Turkana)) · Hobley (1906), p. 480 · Settlement"
+        },
+        {
+          "english": "Turkana sections (District: Kerio",
+          "translation": "Ngolio, Kotonya, Ataacha",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Turkana) · Hobley (1906), pp. 472, 477 · Sections / Clans · Turkana sections (District: Kerio; chiefs Onameri, Mutellili, Katodi, Ajigwa, Apuche)"
+        },
+        {
+          "english": "Turkana sections (District: Tirkwell / Naremet",
+          "translation": "Ngamatak, Nisir, Tuo, Apacheros",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Turkana) · Hobley (1906), p. 477 · Sections / Clans · Turkana sections (District: Tirkwell / Naremet; chiefs Rioball, Lobwin, Akeno)"
+        },
+        {
+          "english": "Turkana sections (District: Tarash; chief Engelecha)",
+          "translation": "Ceyagwara, Herimong, Ngur, Lukumomong",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Turkana) · Hobley (1906), p. 477 · Sections / Clans"
+        },
+        {
+          "english": "Turkana sections (Labur & N.W. Lake Rudolf)",
+          "translation": "Atokomemwa, Nisigar, Kalabong",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Turkana) · Hobley (1906), p. 477 · Sections / Clans"
         }
       ]
     }

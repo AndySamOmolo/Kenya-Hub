@@ -105,7 +105,7 @@ export default function LessonPlayer({
   const [reviewedItemIds, setReviewedItemIds] = useState<string[]>([]);
   const [streak, setStreak] = useState(0);
   const [lastEarnedXp, setLastEarnedXp] = useState(XP_PER_CORRECT);
-  const [heartsLeft, setHeartsLeft] = useState(() => Math.max(1, progress?.hearts || MAX_HEARTS));
+  const [heartsLeft, setHeartsLeft] = useState(() => Math.max(0, progress?.hearts ?? MAX_HEARTS));
   const [wordsLearned, setWordsLearned] = useState<string[]>([]);
   const [startTime] = useState(Date.now());
   useEffect(() => () => stopLanguageAudio(), []);
@@ -178,16 +178,27 @@ export default function LessonPlayer({
   }, [lessonStage, teachingIndex, currentIndex, lessonComplete, forceScrollTop]);
 
   useEffect(() => {
-    setExercises(buildLessonExercises());
     setIsLoadingExercises(false);
     forceScrollTop();
-  }, [buildLessonExercises, forceScrollTop]);
+  }, [forceScrollTop]);
 
   const exercise = exercises[currentIndex];
   const teachingCard = teachingDeck[teachingIndex];
   const progressPercent = exercises.length
     ? ((currentIndex + (isChecked ? 1 : 0)) / exercises.length) * 100
     : 0;
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (lessonComplete) return;
+      if (e.key === "Enter" && lessonStage === "practice" && isChecked) {
+        e.preventDefault();
+        handleContinue();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  });
 
   const shuffledRightPairs = useMemo(() => {
     if (exercise?.type !== "match_pairs" || !exercise.pairs) return [];
@@ -302,11 +313,11 @@ export default function LessonPlayer({
         perfectLesson: perfect,
         timeSpent: Math.round((Date.now() - startTime) / 1000),
         newWordsLearned: wordsLearned,
-        heartsRemaining: isPracticeMode ? MAX_HEARTS : Math.max(0, heartsLeft),
+        heartsRemaining: isPracticeMode ? Math.min(MAX_HEARTS, (progress?.hearts ?? MAX_HEARTS) + (perfect ? 1 : 0)) : Math.max(0, heartsLeft),
         reviewItems: missedExercises
           .filter((item) => item.type !== "match_pairs" && item.correctAnswer.trim())
           .map((item): ReviewItem => ({
-            id: `${skill.id}:${item.type}:${item.prompt}`,
+            id: item.reviewId || `${skill.id}:${item.type}:${item.prompt}`,
             skillId: skill.id,
             type: item.type,
             prompt: item.prompt,
@@ -341,6 +352,8 @@ export default function LessonPlayer({
     wordsLearned,
     missedExercises,
     reviewedItemIds,
+    heartsLeft,
+    isPracticeMode,
     onComplete,
     resetExercise,
   ]);
@@ -478,8 +491,9 @@ export default function LessonPlayer({
     const totalXp = xpEarned + (perfect ? XP_PERFECT_BONUS : 0);
     const accuracy =
       exercises.length > 0
-        ? Math.round(
-            ((exercises.length - mistakes) / exercises.length) * 100
+        ? Math.max(
+            0,
+            Math.round(((exercises.length - mistakes) / exercises.length) * 100)
           )
         : 0;
 
@@ -580,12 +594,12 @@ export default function LessonPlayer({
             <div className="h-3 overflow-hidden rounded-full bg-bg-elevated">
               <div
                 className="h-full rounded-full bg-gradient-to-r from-gold to-kenya-green transition-all duration-500"
-                style={{ width: `${((teachingIndex + 1) / skill.words.length) * 100}%` }}
+                style={{ width: `${Math.min(100, ((teachingIndex + 1) / Math.max(1, teachingDeck.length)) * 100)}%` }}
               />
             </div>
           </div>
           <span className="text-xs font-semibold text-text-secondary shrink-0">
-            Card {teachingIndex + 1}/{skill.words.length}
+            Card {teachingIndex + 1}/{Math.max(1, teachingDeck.length)}
           </span>
           <button
             type="button"
@@ -859,6 +873,11 @@ export default function LessonPlayer({
           </p>
 
           {exercise.sourceWord &&
+            (isChecked ||
+              exercise.type === "translate_to_english" ||
+              exercise.type === "word_bank" ||
+              exercise.type === "listen_type" ||
+              exercise.type === "tap_what_you_hear") &&
             hasVerifiedAudio({
               translation: exercise.sourceWord.target,
               audioFile: exercise.sourceWord.audioFile || exercise.sourceWord.audio,
@@ -960,7 +979,7 @@ export default function LessonPlayer({
                   <span className="text-[0.65rem] font-semibold uppercase tracking-wider text-text-muted mr-1">
                     Special chars:
                   </span>
-                  {KENYAN_SPECIAL_CHARS.map((ch) => (
+                  {(exercise.type === "translate_to_english" ? [] : KENYAN_SPECIAL_CHARS).map((ch) => (
                     <button
                       key={ch}
                       type="button"

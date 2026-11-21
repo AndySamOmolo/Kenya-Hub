@@ -72,7 +72,7 @@ export default function PrivacyPage() {
             1. Overview &amp; Data Controller Identity (Kenya DPA 2019, Section 29)
           </h2>
           <p>
-            KenyaHub (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to protecting your online privacy. This Privacy Policy explains how information is collected, processed, and safeguarded when you visit <strong className="text-text-primary">kenyahub.me</strong> or <strong className="text-text-primary">kenyahub.co.ke</strong>.
+            KenyaHub (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to protecting your online privacy. This Privacy Policy explains how information is collected, processed, and safeguarded when you visit <strong className="text-text-primary">kenyahub.me</strong> and the KenyaHub Android application (<code className="font-mono text-gold">ke.co.kenyahub.app</code>).
           </p>
           <div className="mt-3 p-3.5 rounded-xl bg-bg-card border border-border text-xs space-y-1.5">
             <p className="font-semibold text-text-primary">Data Controller Details (Section 29 Notice):</p>
@@ -115,7 +115,7 @@ export default function PrivacyPage() {
             3. Google Analytics 4 (GA4) — Strict Opt-In Loading
           </h2>
           <p>
-            Only after you explicitly grant analytics consent on our production domains (<strong className="text-text-primary">kenyahub.me</strong> / <strong className="text-text-primary">kenyahub.co.ke</strong>), we load <strong className="text-text-primary">Google Analytics 4</strong> (Measurement ID: <code className="px-1.5 py-0.5 rounded bg-bg-elevated text-gold text-xs font-mono">G-Y069879V7Y</code>), provided by Google LLC, to understand aggregated tool usage.
+            Only after you explicitly grant analytics consent on our production domains (<strong className="text-text-primary">kenyahub.me</strong>), we load <strong className="text-text-primary">Google Analytics 4</strong> (Measurement ID: <code className="px-1.5 py-0.5 rounded bg-bg-elevated text-gold text-xs font-mono">G-Y069879V7Y</code>), provided by Google LLC, to understand aggregated tool usage.
           </p>
 
           <div className="mt-4 space-y-3">
@@ -127,7 +127,7 @@ export default function PrivacyPage() {
             </div>
 
             <div className="p-3.5 rounded-xl bg-bg-card border border-border">
-              <h3 className="text-xs font-bold text-text-primary mb-1">No Pre-Consent Network Requests:</h3>
+              <h3 className="text-xs font-bold text-text-primary mb-1">No Pre-Consent Analytics Requests:</h3>
               <p className="text-xs text-text-muted">
                 No <code className="font-mono text-gold">gtag.js</code> script is preloaded or executed before you accept analytics cookies. In addition, IP addresses are anonymized by default and <code className="font-mono text-gold">url_passthrough</code> is set to <code className="font-mono text-gold">false</code>.
               </p>
@@ -209,6 +209,26 @@ export default function PrivacyPage() {
             </li>
           </ul>
         </section>
+        <section>
+          <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">
+            4b. KenyaHub Android App, Google AdMob &amp; Device Identifiers
+          </h2>
+          <p>
+            The <strong className="text-text-primary">KenyaHub Android application</strong> (<code className="px-1.5 py-0.5 rounded bg-bg-elevated text-gold text-xs font-mono">ke.co.kenyahub.app</code>) processes all calculator inputs and language lessons locally on your device using <code className="font-mono text-gold">AsyncStorage</code> for offline preferences and saved progress.
+          </p>
+          <ul className="mt-3 space-y-2.5 ml-4 list-disc text-text-muted">
+            <li>
+              <strong className="text-text-secondary">Google AdMob SDK &amp; Advertising ID (AAID):</strong> The Android app integrates the Google Mobile Ads (AdMob) SDK to serve banner and interstitial ads. Depending on your region and consent choices, AdMob may access your device&apos;s Android Advertising ID (AAID), approximate location, and ad-interaction diagnostics for ad delivery, frequency capping, and fraud prevention.
+            </li>
+            <li>
+              <strong className="text-text-secondary">Google UMP SDK Consent:</strong> Users in the EEA, UK, Switzerland, and applicable US states are presented with Google&apos;s certified User Messaging Platform (UMP) SDK consent dialog before personalized mobile ads are requested, and can update or revoke choices anytime via the in-app Manage Ad Privacy setting.
+            </li>
+            <li>
+              <strong className="text-text-secondary">Resetting or Limiting AAID:</strong> You can reset or delete your Android Advertising ID at any time in Android Settings under <strong className="text-text-secondary">Settings → Google → Ads</strong>.
+            </li>
+          </ul>
+        </section>
+
 
         <section>
           <h2 className="text-base font-semibold text-text-primary mb-3 font-[family-name:var(--font-outfit)]">

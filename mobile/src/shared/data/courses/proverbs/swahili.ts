@@ -7026,5 +7026,115 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "A maritime crossroads weaves the speech of many shores onto a steadfast Bantu foundation.",
     "theme": "wisdom",
     "sourceCitation": "Thilo Schadeberg, WOLD Swahili Vocabulary (https://wold.clld.org/vocabulary/1, CC-BY-4.0) & Tatu Ylönen, Kaikki.org Swahili Dictionary (https://kaikki.org/dictionary/Swahili/index.html, CC-BY-SA-4.0)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-128",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Kasikazi mja na-swi, Kusi mja na mtama.",
+    "literalTranslation": "N.E. Monsoon, bringer of fish, S.W. Monsoon, bringer of millet.",
+    "meaning": "Swi = old Swahili for fish",
+    "englishEquivalent": "N.E. Monsoon, bringer of fish, S.W. Monsoon, bringer of millet.",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), pp. 26–27, §128)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-252",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Mbiu ya mgambo ikilia ina jambo.",
+    "literalTranslation": "When the buffalo-horn for the palaver sounds it means something important.",
+    "meaning": "Old herald cry",
+    "englishEquivalent": "When the buffalo-horn for the palaver sounds it means something important.",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), pp. 57–58, §252)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-487",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Sili, sili, wa mtama, Ungawa na nyingi nazi. Sili: msambe ni mwema. Sili: hauniumizi. Sili kwa uto wa nyama, Wala kwa mwingi mtuzi. Sili: haunipendezi. Sili wa mtama, sili.",
+    "literalTranslation": "I eat not, I eat it not (the uji, gruel) of Turkish corn, Though it have much cocoanut, I eat it not: say ye not it is good: I eat it not: (though) it hurts me not. I eat it neither with fat of meat, Nor much curry. I eat it not: it liketh me not. I eat not (gruel) of Turkish corn, I eat it not",
+    "meaning": "Proverbial Verse",
+    "englishEquivalent": "I eat not, I eat it not (the uji, gruel) of Turkish corn, Though it have much cocoanut, I eat it not: say ye not it is good: I eat it not: (though) it hurts me not. I eat it neither with fat of meat, Nor much curry. I eat it not: it liketh me not. I eat not (gruel) of Turkish corn, I eat it not",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §487, p. 114)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-512",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Tunza uzingao ulimwengu duwara : Mt'u duniani huiomba sitara.",
+    "literalTranslation": "Mind how the world goes round (like) a wheel: A man upon earth prays for covering (for his faults).",
+    "meaning": "Proverb",
+    "englishEquivalent": "Mind how the world goes round (like) a wheel: A man upon earth prays for covering (for his faults).",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §512, p. 120)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-524",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Ukiona ndwee ikishindana na dawa, Mganga sijisumbue, pana jambo litakuwa.",
+    "literalTranslation": "When thou seest a disease struggling with the medical treatment, fret not thyself, O doctor,—there is something going to happen.",
+    "meaning": "Proverb",
+    "englishEquivalent": "When thou seest a disease struggling with the medical treatment, fret not thyself, O doctor,—there is something going to happen.",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §524, p. 122)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-526",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Ukitaajabu ya Musa huona ya Farauni, Ukitaajabu ya t'awa huona ya k'unguni.",
+    "literalTranslation": "If you wonder at Moses' (things), you will find—Pharaoh's. If you wonder at a louse's, you will find—a bug's.",
+    "meaning": "Proverb",
+    "englishEquivalent": "If you wonder at Moses' (things), you will find—Pharaoh's. If you wonder at a louse's, you will find—a bug's.",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §526, p. 122)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-529",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Ukoshefu wa mwenenzi si wa mkazi milele. Kufunua mato p'anzi si t'ui kufumba ndole. Kufileko kwa ndovu si uzima wa k'unguni.",
+    "literalTranslation": "A traveller's straits are not so annoying as (lit. are not) a constant inhabitant's. A grasshopper opening its eyes is not so bad as a leopard clenching his paw. An elephant's death-scene is not so annoying as the life of a bug.",
+    "meaning": "Proverbial Verse",
+    "englishEquivalent": "A traveller's straits are not so annoying as (lit. are not) a constant inhabitant's. A grasshopper opening its eyes is not so bad as a leopard clenching his paw. An elephant's death-scene is not so annoying as the life of a bug.",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §529, p. 123)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-540",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Umekaa kama ngawa, Kwani huna mazoea.",
+    "literalTranslation": "Your state is (lit. you have sat) like that of a civet cat, for there is no taming you (lit. you have no habits, or domesticity).",
+    "meaning": "Proverb",
+    "englishEquivalent": "Your state is (lit. you have sat) like that of a civet cat, for there is no taming you (lit. you have no habits, or domesticity).",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §540, p. 124)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-549",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Ushikwapo, shikamana : Utwewapo ni jua, lala.",
+    "literalTranslation": "When thou art caught hold of, hold on : When thou hast the sun set on thee, (stay and) sleep (there).",
+    "meaning": "Proverb",
+    "englishEquivalent": "When thou art caught hold of, hold on : When thou hast the sun set on thee, (stay and) sleep (there).",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §549, p. 126)"
+  },
+  {
+    "id": "taylor-1891-swahili-verified-576",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Wakisha tia chanda, watatia na mkono : Wakisha tia mkono, watatia na guu.",
+    "literalTranslation": "When they have put in the finger, they will also put in the hand : when they have put in the hand, they will also put in the foot.",
+    "meaning": "Proverb",
+    "englishEquivalent": "When they have put in the finger, they will also put in the hand : when they have put in the hand, they will also put in the foot.",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §576, p. 131)"
   }
 ];

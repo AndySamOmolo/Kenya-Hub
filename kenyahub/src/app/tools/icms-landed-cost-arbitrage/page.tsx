@@ -17,16 +17,21 @@ export default function IcmsLandedCostArbitragePage() {
   const [fobKes, setFobKes] = useState("260000");
   const [freightKes, setFreightKes] = useState("55000");
   const [cbmOrKg, setCbmOrKg] = useState("1.5");
-  const [dutyRate, setDutyRate] = useState("0.25");
+  const [selectedHs, setSelectedHs] = useState(utilData.icms.hsPresets[0]?.hs || "8471.30");
   const [clearingFeeKes, setClearingFeeKes] = useState("35000");
   const [consolidatorRate, setConsolidatorRate] = useState("65000");
 
   const calc = useMemo(() => {
     const fob = Math.max(0, Number(fobKes.replace(/,/g, "")) || 0);
     const freight = Math.max(0, Number(freightKes.replace(/,/g, "")) || 0);
-    const units = Math.max(0.1, Number(cbmOrKg) || 0.1);
-    const dutyPct = Math.max(0, Number(dutyRate) || 0);
-    const clearing = Math.max(0, Number(clearingFeeKes.replace(/,/g, "")) || 0);
+    const units = Math.max(0, Number(cbmOrKg) || 0);
+    const activePreset =
+      utilData.icms.hsPresets.find((p) => p.hs === selectedHs) || utilData.icms.hsPresets[0];
+    const dutyPct = Math.max(0, activePreset?.dutyRate ?? 0.25);
+    const clearing =
+      fob === 0 && freight === 0
+        ? 0
+        : Math.max(0, Number(clearingFeeKes.replace(/,/g, "")) || 0);
     const consRate = Math.max(0, Number(consolidatorRate.replace(/,/g, "")) || 0);
 
     const insurance = Math.round((fob + freight) * 0.015);
@@ -46,6 +51,7 @@ export default function IcmsLandedCostArbitragePage() {
       fob,
       cif,
       insurance,
+      dutyPct,
       importDuty,
       vat,
       idf,
@@ -57,7 +63,7 @@ export default function IcmsLandedCostArbitragePage() {
       consolidatorLanded,
       savings,
     };
-  }, [fobKes, freightKes, cbmOrKg, dutyRate, clearingFeeKes, consolidatorRate]);
+  }, [fobKes, freightKes, cbmOrKg, selectedHs, clearingFeeKes, consolidatorRate]);
 
   return (
     <ToolShell tool={tool}>
@@ -142,12 +148,12 @@ export default function IcmsLandedCostArbitragePage() {
               </label>
               <select
                 id="icms-duty-rate"
-                value={dutyRate}
-                onChange={(e) => setDutyRate(e.target.value)}
+                value={selectedHs}
+                onChange={(e) => setSelectedHs(e.target.value)}
                 className="w-full px-3 py-2 rounded-xl border border-border dark:border-white/15 bg-bg-elevated text-xs font-semibold text-text-primary truncate"
               >
                 {utilData.icms.hsPresets.map((p) => (
-                  <option key={p.hs} value={String(p.dutyRate)}>
+                  <option key={p.hs} value={p.hs}>
                     {Math.round(p.dutyRate * 100)}% — {shortenLabel(p.label)} ({p.hs})
                   </option>
                 ))}
@@ -245,7 +251,7 @@ export default function IcmsLandedCostArbitragePage() {
                 <span className="font-semibold tabular-nums whitespace-nowrap">KES {calc.cif.toLocaleString("en-KE")}</span>
               </div>
               <div className="flex justify-between gap-3">
-                <span>Import Duty ({Math.round(Number(dutyRate) * 100)}%)</span>
+                <span>Import Duty ({Math.round(calc.dutyPct * 100)}%)</span>
                 <span className="font-semibold tabular-nums whitespace-nowrap">KES {calc.importDuty.toLocaleString("en-KE")}</span>
               </div>
               <div className="flex justify-between gap-3">

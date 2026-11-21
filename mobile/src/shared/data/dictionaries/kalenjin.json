@@ -15,7 +15,7 @@
     "Trans Nzoia",
     "West Pokot"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-19",
   "contributorNote": "Kalenjin (Nandi / Kipsigis [Lumbwa / Il Kakesan] / Keiyo / Tugen [Kamasia: Kapteberewa & Nderois] / Marakwet & Endo [Chebleng] / Kabkamat [Olmo] / Sangwirr / Uasin Gishu [Moiven / Muttia / Il-Mokwan / I-Sirikwa]) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–72 — audited 100% line-by-line across all 13 Maragwetta/Ndo sections, 14 Kapteberewa & 6 Nderois Kamasia clans & totems, 5 hill-tribe calendars, irrigation & land-sale laws, and Plate XVII), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0)).",
@@ -29090,23 +29090,8 @@
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
-          "english": "sp",
-          "translation": "kerundu (kerundut), pl. kerundun (kerundunik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "motos (motosiet), pl. motōs (motōsik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
           "english": "Dombeya sp",
           "translation": "silip (silipchet), pl. silipai (silipaiik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "kipsepua (kipsepuet), pl. kipsepon (kipseponik)",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
@@ -29117,11 +29102,6 @@
         {
           "english": "Turraea sp",
           "translation": "sitiyo (sitiyot), pl. sitiin (sitiīnik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "koipeyo (koipeyot), pl. koipein (koipeīnik)",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
@@ -29137,11 +29117,6 @@
         {
           "english": "Melothria sp",
           "translation": "cheptendere (cheptenderet), pl. cheptenderai (cheptenderaiik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "chepturo (chepturot), pl. chepturon (chepturonik)",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
@@ -29162,11 +29137,6 @@
         {
           "english": "Landolphia sp",
           "translation": "ñgiñgich (ñgiñgichet), pl. ñgiñgichoi (ñgiñgichōk)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "chemñgombo (chemñgombet), pl. chemñgomboi (chemñgombōk)",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
@@ -29262,36 +29232,6 @@
         {
           "english": "Carex sp",
           "translation": "saos (saoset), pl. saoson (saosonik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "pembia (pembiat), pl. pembin (pembīnik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "kipriche (kipricheit), pl. kipricheis (kipricheisiek)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "mañguañg (mañguañgiet), pl. mañguañgai (mañguañgaiik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "punyerio (punyeriot), pl. punyer (punyeriek)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "kipsaramat (kipsaramatiet), pl. kipsaramatai (kipsaramataiik)",
-          "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
-        },
-        {
-          "english": "sp",
-          "translation": "mbokcha (mbokchat), pl. mbok (mbokek)",
           "context": "A. C. Hollis, The Nandi: Their Language and Folk-Lore (1909)"
         },
         {
@@ -45298,6 +45238,12 @@
           "english": "song / the song (Sengwer)",
           "translation": "tjêen (sg.) / tjèen-tʌ̂ (def.)",
           "context": "Sengwer +ATR definiteness paradigm (22) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "\"Dorobo of the upper Tirkwell\"",
+          "translation": "Ngaboto",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Ogiek (Dorobo) / Turkana) · Hobley (1906), p. 477 · Section / Group"
         }
       ]
     }
@@ -45305,5 +45251,5 @@
   "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024); Zwarts, Chelimo & Jerono (2024) LSP #438 Ch. 21 Kalenjin Reflexives & Diercks/Kouneli (2019) LSP #190 Kipsigis Syntax (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Kipsigis & Sengwer Corpus (Bossi & Diercks 2019; Kouneli 2022; Blix 2022; Falletti & Remijsen 2025, CC-BY-4.0)",
   "isoCode": "kln",
   "glottocode": "kale1246",
-  "totalEntries": 8034
+  "totalEntries": 8022
 }

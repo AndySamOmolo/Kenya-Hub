@@ -67,5 +67,27 @@ export const KISII_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "A stitch in time saves nine.",
     "theme": "hard-work",
     "sourceCitation": "Ekegusii Oral Wisdom & SIL Bloom Ekegusii Corpus (CC-BY-4.0)"
+  },
+  {
+    "id": "langsci-306-kisii-prov-1",
+    "languageId": "kisii",
+    "languageName": "Kisii (Ekegusii)",
+    "indigenous": "Mominchoria imi tang'ana mosera ibu.",
+    "literalTranslation": "The one who stirs up trouble is no better than one who eats ashes.",
+    "meaning": "Provoking conflict brings nothing nourishing; recklessness leaves only ruin.",
+    "englishEquivalent": "He who sows the wind reaps the whirlwind.",
+    "theme": "wisdom",
+    "sourceCitation": "Language Science Press #306 (ACAL 49, 2022) — Sibanda et al., Ch. 4 Ekegusii (CC-BY-4.0)"
+  },
+  {
+    "id": "langsci-306-kisii-prov-2",
+    "languageId": "kisii",
+    "languageName": "Kisii (Ekegusii)",
+    "indigenous": "Mwana obande mmamiria makendu.",
+    "literalTranslation": "Another person's child does not stay to finish cold porridge.",
+    "meaning": "True belonging and patience come from deep kinship and care rather than obligation.",
+    "englishEquivalent": "Blood is thicker than water.",
+    "theme": "family",
+    "sourceCitation": "Language Science Press #306 (ACAL 49, 2022) — Sibanda et al., Ch. 4 Ekegusii (CC-BY-4.0)"
   }
 ];

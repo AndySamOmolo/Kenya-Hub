@@ -109,6 +109,27 @@ export default function AirtimeDrainGuidePage() {
               <p className="text-xs text-text-secondary leading-relaxed">
                 {activeNet.stopAllPromoSMS}
               </p>
+              {(activeNet as any).blockSimSwapUSSD && (
+                <div className="mt-3 rounded-xl border border-red-500/35 bg-red-500/5 p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                  <div>
+                    <span className="text-[0.65rem] font-bold uppercase tracking-wider text-red-600 dark:text-red-400">
+                      Block Unauthorized SIM Swap
+                    </span>
+                    <p className="text-base font-extrabold font-mono text-text-primary mt-0.5">
+                      {(activeNet as any).blockSimSwapUSSD}
+                    </p>
+                    <p className="text-xs text-text-secondary mt-0.5">
+                      Lock your SIM card against unauthorized swaps and M-Pesa hijacking.
+                    </p>
+                  </div>
+                  <a
+                    href={`tel:${encodeURIComponent((activeNet as any).blockSimSwapUSSD)}`}
+                    className="shrink-0 inline-flex items-center justify-center px-3.5 py-1.5 rounded-xl bg-red-600 text-white font-bold text-xs hover:bg-red-700 transition-colors"
+                  >
+                    Dial Now
+                  </a>
+                </div>
+              )}
               <p className="text-xs text-text-muted">
                 Customer Care Hotline: {activeNet.customerCare}
               </p>

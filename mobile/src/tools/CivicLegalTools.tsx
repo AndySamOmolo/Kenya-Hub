@@ -501,7 +501,8 @@ export function BomaYanguTool() {
       0,
       parseInt(priceText.replace(/[^0-9]/g, ""), 10) || 0
     );
-    const deposit = cost * 0.1;
+    const depositPct = tier.sampleUnits?.[0]?.depositPercent ?? 0.1;
+    const deposit = cost * depositPct;
     const principal = Math.max(0, cost - deposit);
     const r = tier.interestRate / 12;
     const n = tier.maxTermYears * 12;
@@ -509,13 +510,15 @@ export function BomaYanguTool() {
       principal > 0 && r > 0
         ? (principal * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)
         : 0;
-    const relief = Math.min(9000, monthly * 0.15);
+    // Tax Laws (Amendment) Act, 2024 repealed s.30A 15% credit
+    const relief = 0;
     return {
       cost,
+      depositPct,
       deposit,
       monthly,
       relief,
-      net: Math.max(0, monthly - relief),
+      net: monthly,
     };
   }, [priceText, tier]);
 
@@ -585,9 +588,7 @@ export function BomaYanguTool() {
           KES {Math.round(calc.net).toLocaleString()}
         </Text>
         <Text style={{ fontSize: 11, color: theme.textSecondary, marginTop: 4 }}>
-          10% Deposit: KES {Math.round(calc.deposit).toLocaleString()} · Gross
-          TPS: KES {Math.round(calc.monthly).toLocaleString()} · 15% Tax Relief:
-          −KES {Math.round(calc.relief).toLocaleString()}
+          {Math.round(calc.depositPct * 100)}% Deposit: KES {Math.round(calc.deposit).toLocaleString()} · Monthly TPS: KES {Math.round(calc.monthly).toLocaleString()}
         </Text>
       </View>
 
@@ -653,16 +654,20 @@ export function RentalTaxTool() {
     const annualRent = rent * 12;
     const annualExpenses = expenses * 12;
     const annualNet = Math.max(0, annualRent - annualExpenses);
-    const isBelowMriMin = annualRent > 0 && annualRent < 288000;
+    const mriMinAnnual = (rentalData as any).mriMinAnnual || 288000;
+    const isBelowMriMin = annualRent > 0 && annualRent <= mriMinAnnual;
     const isAboveMriMax = annualRent > (rentalData.mriThresholdAnnual || 15000000);
-    const mriTaxMonthly = isBelowMriMin ? 0 : Math.round(rent * (rentalData.mriRate || 0.075));
+    const isEligibleMri = annualRent > mriMinAnnual && !isAboveMriMax;
+    const mriTaxMonthly = isEligibleMri ? Math.round(rent * (rentalData.mriRate || 0.075)) : 0;
     const mriTaxAnnual = mriTaxMonthly * 12;
     const netGraduatedAnnual = calcAnnualGraduatedTax(annualNet);
     const netGraduatedMonthly = Math.round(netGraduatedAnnual / 12);
-    const retained = Math.max(0, rent - mriTaxMonthly);
+    const retained = Math.max(0, rent - (isEligibleMri ? mriTaxMonthly : netGraduatedMonthly));
     const savingsDiff = Math.abs(mriTaxAnnual - netGraduatedAnnual);
     const betterRegime = isAboveMriMax
-      ? "Net Graduated Income Tax (Required > KES 15M/yr)"
+      ? "Net Graduated Income Tax (Mandatory > KES 15M/yr)"
+      : isBelowMriMin
+      ? "Outside MRI — Declare on Annual Income Tax Return"
       : mriTaxAnnual <= netGraduatedAnnual
       ? `7.5% MRI saves KES ${savingsDiff.toLocaleString()}/yr`
       : `Net Graduated Tax saves KES ${savingsDiff.toLocaleString()}/yr`;
@@ -671,9 +676,9 @@ export function RentalTaxTool() {
       annualRent === 0
         ? "Enter monthly rent above"
         : isBelowMriMin
-        ? "Exempt (Below KES 288,000/yr / KES 24,000/mo MRI floor)"
+        ? "Outside MRI (≤ KES 288,000/yr) — Declare on Annual Income Tax Return"
         : isAboveMriMax
-        ? "Exceeds KES 15M/yr — File under normal Net Income Tax on KRA iTax"
+        ? "Ineligible (> KES 15M/yr) — File under normal Net Income Tax on KRA iTax"
         : "✓ Qualifies for simplified 7.5% MRI on KRA iTax (Due 20th of next month)";
     return {
       rent,
@@ -791,7 +796,7 @@ export function RentalTaxTool() {
 // 6. Landlord Tenant Rights & Statutory Demand Notice Generator (MOB-12, UX-11)
 export function LandlordTenantTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
-  const [tenantName, setTenantName] = useState("Jane Wanjiku");
+  const [tenantName, setTenantName] = useState("");
   const [landlordName, setLandlordName] = useState("Sunrise Properties Ltd");
   const [unitNumber, setUnitNumber] = useState("House B4, Kilimani");
   const [depositAmount, setDepositAmount] = useState("45000");
@@ -1024,16 +1029,19 @@ export function DomesticWageTool() {
   }, []);
 
   const z = zones[zoneIdx] || zones[0];
-  // Legal Notice No. 95 consolidated wage includes 15% house allowance -> extract 15/115 when live-in
-  const consolidatedGross = z.monthlyMinimum;
-  const housingAllowance = Math.round(consolidatedGross * (15 / 115));
-  const basicWage = consolidatedGross - housingAllowance;
-  const grossPayable = isLiveIn ? basicWage : consolidatedGross;
+  // Legal Notice No. 108 of 2026: monthlyMinimum is Basic Pay (exclusive of 15% housing allowance).
+  // Live-In receives full basic minimum; Live-Out receives basic + 15% housing allowance.
+  const basicWage = Math.round(z.monthlyMinimum);
+  const housingAllowance = isLiveIn ? 0 : Math.round(basicWage * 0.15);
+  const grossPayable = basicWage + housingAllowance;
+  const consolidatedGross = Math.round(basicWage * 1.15);
 
   const sha = Math.max(300, Math.round(grossPayable * 0.0275));
-  // Unified NSSF Act 2013 (6% employee contribution, capped at KES 4,320)
-  const nssf = Math.min(4320, Math.round(grossPayable * 0.06));
-  const net = grossPayable - sha - nssf;
+  const nssfCap = domesticData.statutoryDeductions.nssfMaxMonthly || 6480;
+  const nssf = Math.min(nssfCap, Math.round(grossPayable * 0.06));
+  const ahlRate = (domesticData.statutoryDeductions as any).ahlRate ?? 0.015;
+  const ahl = Math.round(grossPayable * ahlRate);
+  const net = Math.max(0, grossPayable - sha - nssf - ahl);
 
   const contractSummary = useMemo(
     () =>
@@ -1183,7 +1191,7 @@ export function AirtimeDrainTool() {
 
   const net = airtimeData.networks[netIdx] || airtimeData.networks[0];
   const isSafaricom = net.name.toLowerCase().includes("safaricom");
-  const promoOptOutUssd = isSafaricom ? "*456*9*5#" : "*100*3#";
+  const promoOptOutUssd = (net as any).stopPromoUSSD || (isSafaricom ? "*456*9*5#" : "*100#");
   const promoOptOutStep = isSafaricom
     ? "Dial *456*9*5# (Official Safaricom Promotional SMS & Marketing Opt-Out) or send 'STOP' to the specific shortcode."
     : net.stopAllPromoSMS;

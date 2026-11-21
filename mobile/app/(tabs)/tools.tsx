@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useLocalSearchParams, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
@@ -49,15 +49,17 @@ const MATATU_KEYWORDS = [
   "thika",
 ];
 
-function ToolItem({
+const ToolItem = React.memo(function ToolItem({
   item,
   isPinned = false,
+  theme,
+  onPressTool,
 }: {
   item: (typeof TOOLS)[0];
   isPinned?: boolean;
+  theme: ReturnType<typeof useTheme>["theme"];
+  onPressTool: (slug: string) => void;
 }) {
-  const router = useRouter();
-  const { theme, isDark } = useTheme();
   const categoryColor = categoryColorMap[item.category] || theme.gold;
   const catInfo = getCategoryInfo(item.category);
 
@@ -73,12 +75,7 @@ function ToolItem({
     >
       <Pressable
         android_ripple={androidRipple(theme.rippleColor)}
-        onPress={() =>
-          router.push({
-            pathname: "/tools/[slug]",
-            params: { slug: item.slug },
-          })
-        }
+        onPress={() => onPressTool(item.slug)}
         style={styles.card}
       >
         <View style={styles.cardHeaderRow}>
@@ -152,7 +149,7 @@ function ToolItem({
       </Pressable>
     </View>
   );
-}
+});
 
 export default function ToolsScreen() {
   const router = useRouter();
@@ -160,12 +157,32 @@ export default function ToolsScreen() {
   const params = useLocalSearchParams<{ category?: string; q?: string }>();
   const [query, setQuery] = useState(params.q ?? "");
   const [category, setCategory] = useState(params.category ?? "all");
+  const deferredQuery = useDeferredValue(query);
   const listRef = useRef<FlatList>(null);
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">(
     "popular"
   );
   const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
+
+  const pinnedSet = useMemo(() => new Set(pinnedSlugs), [pinnedSlugs]);
+  const handlePressTool = useCallback(
+    (slug: string) => {
+      router.push({ pathname: "/tools/[slug]", params: { slug } });
+    },
+    [router]
+  );
+  const renderToolItem = useCallback(
+    ({ item }: { item: (typeof TOOLS)[0] }) => (
+      <ToolItem
+        item={item}
+        isPinned={pinnedSet.has(item.slug)}
+        theme={theme}
+        onPressTool={handlePressTool}
+      />
+    ),
+    [pinnedSet, theme, handlePressTool]
+  );
 
   useEffect(() => {
     setCategory(params.category || "all");
@@ -174,22 +191,28 @@ export default function ToolsScreen() {
 
   useFocusEffect(
     useCallback(() => {
-      AsyncStorage.getItem("kh-saved-tools")
-        .then((val) => {
-          setPinnedSlugs(parseSavedTools(val));
-        })
-        .catch(() => setPinnedSlugs([]));
-
-      AsyncStorage.getItem("kh-tool-visits")
-        .then((raw) => {
-          if (!raw) {
+      let active = true;
+      AsyncStorage.multiGet(["kh-saved-tools", "kh-tool-visits"])
+        .then((entries) => {
+          if (!active) return;
+          const map = new Map(entries);
+          setPinnedSlugs(parseSavedTools(map.get("kh-saved-tools")));
+          const visitsRaw = map.get("kh-tool-visits");
+          if (!visitsRaw) {
             setVisitCounts({});
-            return;
+          } else {
+            try {
+              const parsed = JSON.parse(visitsRaw);
+              setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
+            } catch {
+              setVisitCounts({});
+            }
           }
-          const parsed = JSON.parse(raw);
-          setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
         })
-        .catch(() => setVisitCounts({}));
+        .catch(() => {});
+      return () => {
+        active = false;
+      };
     }, [])
   );
 
@@ -481,7 +504,8 @@ export default function ToolsScreen() {
         overScrollMode="always"
         initialNumToRender={8}
         maxToRenderPerBatch={8}
-        windowSize={7}
+        updateCellsBatchingPeriod={40}
+        windowSize={5}
         removeClippedSubviews={Platform.OS === "android"}
         ListHeaderComponent={
           <>
@@ -630,9 +654,7 @@ export default function ToolsScreen() {
             )}
           </>
         }
-        renderItem={({ item }) => (
-          <ToolItem item={item} isPinned={pinnedSlugs.includes(item.slug)} />
-        )}
+        renderItem={renderToolItem}
         ListEmptyComponent={
           !showMatatuHubCard ? (
             <View style={styles.emptyWrap}>

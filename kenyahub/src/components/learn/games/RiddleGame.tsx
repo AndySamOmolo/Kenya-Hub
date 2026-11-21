@@ -22,6 +22,7 @@ export function RiddleGame({
   const [correctCount, setCorrectCount] = useState(0);
   const [feedback, setFeedback] = useState<string | null>(null);
   const [showEnglishClue, setShowEnglishClue] = useState(false);
+  const [clueRevealedThisRound, setClueRevealedThisRound] = useState(false);
   const [sessionSeed, setSessionSeed] = useState(0);
   const [sessionDone, setSessionDone] = useState(false);
 
@@ -54,7 +55,7 @@ export function RiddleGame({
 
     if (isRight) {
       playCorrectSfx();
-      const earned = showEnglishClue ? 15 : 25;
+      const earned = clueRevealedThisRound ? 15 : 25;
       setScore((s) => s + earned);
       setCorrectCount((c) => c + 1);
       onAwardXp?.(earned, false);
@@ -69,6 +70,7 @@ export function RiddleGame({
     setTimeout(() => {
       setFeedback(null);
       setShowEnglishClue(false);
+      setClueRevealedThisRound(false);
       if (round + 1 >= riddlesPool.length) {
         playCelebrationSfx();
         setSessionDone(true);
@@ -85,6 +87,7 @@ export function RiddleGame({
     setCorrectCount(0);
     setFeedback(null);
     setShowEnglishClue(false);
+      setClueRevealedThisRound(false);
     setSessionDone(false);
     setSessionSeed((s) => s + 1);
   };

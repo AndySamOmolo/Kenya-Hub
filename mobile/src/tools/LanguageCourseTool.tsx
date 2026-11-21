@@ -1,6 +1,6 @@
 import { ExpandablePillRow } from "../components/ExpandablePillRow";
 import { DynamicIcon } from "../components/DynamicIcon";
-import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef, useDeferredValue } from 'react';
 import {
   View,
   Text,
@@ -115,6 +115,7 @@ export default function LanguageCourseTool({
     !(initialLanguageId && hasCourseSummary(initialLanguageId))
   );
   const [menuSearchQuery, setMenuSearchQuery] = useState<string>('');
+  const deferredMenuSearchQuery = useDeferredValue(menuSearchQuery);
   const [menuFamilyFilter, setMenuFamilyFilter] = useState<string>('All');
 
   const [selectedLangId, setSelectedLangId] = useState<string>(
@@ -1088,7 +1089,7 @@ export default function LanguageCourseTool({
   const reviewWordList = useMemo(
     () =>
       Object.values(progress.wordStrengths)
-        .filter((w) => w.strength <= 3 || w.timesWrong > 0)
+        .filter((w) => w.strength <= 3)
         .sort((a, b) => a.strength - b.strength)
         .map((w) => w.wordKey),
     [progress.wordStrengths]
@@ -1178,7 +1179,7 @@ export default function LanguageCourseTool({
   const filteredMenuCourses = useMemo(() => {
     const normSearch = (s: string) =>
       s.normalize("NFD").replace(/[\u0300-\u036f'’]/g, "").toLowerCase();
-    const q = normSearch(menuSearchQuery.trim());
+    const q = normSearch(deferredMenuSearchQuery.trim());
     return PUBLISHED_COURSE_SUMMARIES.filter((c) => {
       if (menuFamilyFilter !== 'All' && c.config.family !== menuFamilyFilter) return false;
       if (!q) return true;
@@ -1190,7 +1191,7 @@ export default function LanguageCourseTool({
         (c.config.counties || []).some((cnt) => normSearch(cnt).includes(q))
       );
     });
-  }, [menuFamilyFilter, menuSearchQuery]);
+  }, [menuFamilyFilter, deferredMenuSearchQuery]);
 
   const overallMenuStats = useMemo(() => {
     let totalXp = 0;
@@ -1243,7 +1244,7 @@ export default function LanguageCourseTool({
       lessonStage === 'learn'
         ? (learnCardIdx + 1) / Math.max(1, (teachingDeck.length > 0 ? teachingDeck : activeSkill.words).length)
         : lessonStage === 'practice'
-        ? (exIndex + 1) / Math.max(1, exercises.length)
+        ? (exIndex + (isSubmitted ? 1 : 0)) / Math.max(1, exercises.length)
         : 1;
 
     return (
@@ -2036,7 +2037,7 @@ export default function LanguageCourseTool({
                 <Text style={{ fontSize: 12, fontWeight: '800', color: colors.text }}>
                   Review Missed Items ({missedItems.length})
                 </Text>
-                {missedItems.slice(0, 4).map((m, idx) => (
+                {missedItems.map((m, idx) => (
                   <View key={idx} style={{ marginTop: 4 }}>
                     <Text style={{ fontSize: 12, color: colors.textSecondary }}>{m.prompt}</Text>
                     <Text style={{ fontSize: 12, fontWeight: '700', color: '#10B981' }}>
@@ -2138,14 +2139,14 @@ export default function LanguageCourseTool({
             </Text>
           </View>
 
-          {/* 3-Column Learner Summary */}
-          <View style={{ flexDirection: 'row', gap: 7 }}>
+          {/* 3-Column Learner Summary (Compact) */}
+          <View style={{ flexDirection: 'row', gap: 6 }}>
             <View
               style={{
                 flex: 1,
                 backgroundColor: colors.surfaceContainerHigh,
-                borderRadius: 12,
-                paddingVertical: 8,
+                borderRadius: 10,
+                paddingVertical: 5.5,
                 paddingHorizontal: 6,
                 alignItems: 'center',
                 borderWidth: 1,
@@ -2153,12 +2154,12 @@ export default function LanguageCourseTool({
               }}
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
-                <Feather name="zap" size={12} color={colors.gold} />
-                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 14.5, fontWeight: '800', color: colors.gold }}>
+                <Feather name="zap" size={11} color={colors.gold} />
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontWeight: '800', color: colors.gold }}>
                   {overallMenuStats.totalXp}
                 </Text>
               </View>
-              <Text numberOfLines={1} style={{ fontSize: 10, color: colors.textMuted, marginTop: 2, fontWeight: '700' }}>
+              <Text numberOfLines={1} style={{ fontSize: 9.5, color: colors.textMuted, marginTop: 1, fontWeight: '700' }}>
                 Total XP
               </Text>
             </View>
@@ -2167,8 +2168,8 @@ export default function LanguageCourseTool({
               style={{
                 flex: 1,
                 backgroundColor: colors.surfaceContainerHigh,
-                borderRadius: 12,
-                paddingVertical: 8,
+                borderRadius: 10,
+                paddingVertical: 5.5,
                 paddingHorizontal: 6,
                 alignItems: 'center',
                 borderWidth: 1,
@@ -2176,12 +2177,12 @@ export default function LanguageCourseTool({
               }}
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
-                <Feather name="trending-up" size={12} color="#F59E0B" />
-                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 14.5, fontWeight: '800', color: '#F59E0B' }}>
+                <Feather name="trending-up" size={11} color="#F59E0B" />
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontWeight: '800', color: '#F59E0B' }}>
                   {overallMenuStats.bestStreak}d
                 </Text>
               </View>
-              <Text numberOfLines={1} style={{ fontSize: 10, color: colors.textMuted, marginTop: 2, fontWeight: '700' }}>
+              <Text numberOfLines={1} style={{ fontSize: 9.5, color: colors.textMuted, marginTop: 1, fontWeight: '700' }}>
                 Best Streak
               </Text>
             </View>
@@ -2190,8 +2191,8 @@ export default function LanguageCourseTool({
               style={{
                 flex: 1,
                 backgroundColor: colors.surfaceContainerHigh,
-                borderRadius: 12,
-                paddingVertical: 8,
+                borderRadius: 10,
+                paddingVertical: 5.5,
                 paddingHorizontal: 6,
                 alignItems: 'center',
                 borderWidth: 1,
@@ -2199,20 +2200,20 @@ export default function LanguageCourseTool({
               }}
             >
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
-                <Feather name="award" size={12} color="#10B981" />
-                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 14.5, fontWeight: '800', color: '#10B981' }}>
+                <Feather name="award" size={11} color="#10B981" />
+                <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontSize: 13, fontWeight: '800', color: '#10B981' }}>
                   {overallMenuStats.totalWords}
                 </Text>
               </View>
-              <Text numberOfLines={1} style={{ fontSize: 10, color: colors.textMuted, marginTop: 2, fontWeight: '700' }}>
+              <Text numberOfLines={1} style={{ fontSize: 9.5, color: colors.textMuted, marginTop: 1, fontWeight: '700' }}>
                 Words Learned
               </Text>
             </View>
           </View>
         </View>
 
-        {/* Search & Language Family Filter Controls */}
-        <View style={{ gap: 10 }}>
+        {/* Search & Language Family Filter Controls (Compact) */}
+        <View style={{ gap: 7 }}>
           <View
             style={{
               flexDirection: 'row',
@@ -2221,12 +2222,12 @@ export default function LanguageCourseTool({
               borderColor: colors.outlineVariant,
               borderWidth: 1,
               borderRadius: 999,
-              paddingHorizontal: 14,
-              minHeight: 44,
-              gap: 8,
+              paddingHorizontal: 12,
+              minHeight: 38,
+              gap: 7,
             }}
           >
-            <Feather name="search" size={16} color={colors.gold} />
+            <Feather name="search" size={14} color={colors.gold} />
             <TextInput
               key={`menu-search-${isDark ? 'dark' : 'light'}`}
               value={menuSearchQuery}
@@ -2236,23 +2237,23 @@ export default function LanguageCourseTool({
               style={{
                 flex: 1,
                 minWidth: 0,
-                fontSize: 13.5,
+                fontSize: 12.5,
                 color: colors.text,
-                paddingVertical: 8,
+                paddingVertical: 6,
                 paddingHorizontal: 0,
               }}
               autoCorrect={false}
             />
             {menuSearchQuery.length > 0 && (
               <Pressable onPress={() => setMenuSearchQuery('')} hitSlop={8}>
-                <Feather name="x-circle" size={16} color={colors.textMuted} />
+                <Feather name="x-circle" size={15} color={colors.textMuted} />
               </Pressable>
             )}
           </View>
 
           <ExpandablePillRow
             fadeColor={colors.bgPrimary}
-            contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}
+            contentContainerStyle={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}
           >
             {menuFamilies.map((fam) => {
               const active = menuFamilyFilter === fam;
@@ -2270,10 +2271,10 @@ export default function LanguageCourseTool({
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: 6,
-                    paddingHorizontal: 13,
-                    paddingVertical: 7,
-                    minHeight: 34,
+                    gap: 5,
+                    paddingHorizontal: 11,
+                    paddingVertical: 5,
+                    minHeight: 30,
                     borderRadius: 999,
                     borderWidth: 1,
                     backgroundColor: active
@@ -2284,7 +2285,7 @@ export default function LanguageCourseTool({
                 >
                   <Text
                     style={{
-                      fontSize: 12,
+                      fontSize: 11.5,
                       fontWeight: active ? '800' : '600',
                       color: active ? colors.gold : colors.textSecondary,
                     }}
@@ -2297,8 +2298,8 @@ export default function LanguageCourseTool({
           </ExpandablePillRow>
         </View>
 
-        {/* Language Courses Directory Cards */}
-        <View style={{ gap: 12 }}>
+        {/* Language Courses Directory Cards (Compact) */}
+        <View style={{ gap: 9 }}>
           {filteredMenuCourses.map((course) => {
             const { config } = course;
             const iden = getLanguageIdentity(config.id);
@@ -2324,48 +2325,48 @@ export default function LanguageCourseTool({
                   backgroundColor: colors.surfaceContainerLow,
                   borderColor: courseXp > 0 ? `${config.color}66` : colors.outlineVariant,
                   borderWidth: 1,
-                  borderRadius: 18,
-                  padding: 16,
-                  gap: 10,
+                  borderRadius: 15,
+                  padding: 12,
+                  gap: 7,
                 }}
               >
-                <View style={{ flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 10 }}>
-                  <View style={{ flex: 1, gap: 6 }}>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 6 }}>
+                <View style={{ flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
+                  <View style={{ flex: 1, gap: 4 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 5 }}>
                       <View
                         style={{
-                          paddingHorizontal: 9,
-                          paddingVertical: 3,
+                          paddingHorizontal: 7.5,
+                          paddingVertical: 2,
                           borderRadius: 999,
                           backgroundColor: `${config.color}20`,
                           borderWidth: 1,
                           borderColor: `${config.color}45`,
                         }}
                       >
-                        <Text style={{ fontSize: 11, fontWeight: '800', color: config.color }}>
+                        <Text style={{ fontSize: 10, fontWeight: '800', color: config.color }}>
                           “{iden.greeting}”
                         </Text>
                       </View>
                       <View
                         style={{
-                          paddingHorizontal: 8,
-                          paddingVertical: 3,
+                          paddingHorizontal: 7,
+                          paddingVertical: 2,
                           borderRadius: 999,
                           backgroundColor: colors.surfaceContainerHigh,
                           borderWidth: 1,
                           borderColor: colors.outlineVariant,
                         }}
                       >
-                        <Text style={{ fontSize: 10.5, fontWeight: '600', color: colors.textSecondary }}>
+                        <Text style={{ fontSize: 10, fontWeight: '600', color: colors.textSecondary }}>
                           {iden.region}
                         </Text>
                       </View>
                     </View>
 
-                    <Text style={{ fontSize: 17, fontWeight: '800', color: colors.text, lineHeight: 23 }}>
+                    <Text style={{ fontSize: 15.5, fontWeight: '800', color: colors.text, lineHeight: 20 }}>
                       {config.name}
                       {showNative ? (
-                        <Text style={{ fontSize: 13.5, fontWeight: '500', color: colors.textMuted }}>
+                        <Text style={{ fontSize: 12.5, fontWeight: '500', color: colors.textMuted }}>
                           {` (${config.nativeName})`}
                         </Text>
                       ) : null}
@@ -2376,10 +2377,10 @@ export default function LanguageCourseTool({
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      gap: 5,
-                      paddingHorizontal: 12,
-                      paddingVertical: 7,
-                      borderRadius: 12,
+                      gap: 4,
+                      paddingHorizontal: 10,
+                      paddingVertical: 5.5,
+                      borderRadius: 10,
                       backgroundColor: courseXp > 0 ? config.color : `${colors.gold}20`,
                       borderWidth: 1,
                       borderColor: courseXp > 0 ? config.color : `${colors.gold}45`,
@@ -2387,7 +2388,7 @@ export default function LanguageCourseTool({
                   >
                     <Text
                       style={{
-                        fontSize: 12,
+                        fontSize: 11.5,
                         fontWeight: '800',
                         color: courseXp > 0 ? '#000' : colors.gold,
                       }}
@@ -2396,32 +2397,32 @@ export default function LanguageCourseTool({
                     </Text>
                     <Feather
                       name="arrow-right"
-                      size={13}
+                      size={12}
                       color={courseXp > 0 ? '#000' : colors.gold}
                     />
                   </View>
                 </View>
 
-                <Text style={{ fontSize: 13, color: colors.textSecondary, lineHeight: 19 }}>
+                <Text numberOfLines={2} style={{ fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
                   {config.description}
                 </Text>
 
-                <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 2 }}>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 5 }}>
                   <View
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
                       gap: 4,
-                      paddingHorizontal: 9,
-                      paddingVertical: 4,
+                      paddingHorizontal: 7.5,
+                      paddingVertical: 3,
                       borderRadius: 999,
                       backgroundColor: colors.surfaceContainerHigh,
                       borderWidth: 1,
                       borderColor: colors.outlineVariant,
                     }}
                   >
-                    <Feather name="book-open" size={11} color="#10B981" />
-                    <Text style={{ fontSize: 11, fontWeight: '700', color: '#10B981' }}>
+                    <Feather name="book-open" size={10.5} color="#10B981" />
+                    <Text style={{ fontSize: 10.5, fontWeight: '700', color: '#10B981' }}>
                       {unitsCount} units · {skillsCount} modules · {wordsCount.toLocaleString()} words
                     </Text>
                   </View>
@@ -2431,31 +2432,31 @@ export default function LanguageCourseTool({
                       flexDirection: 'row',
                       alignItems: 'center',
                       gap: 4,
-                      paddingHorizontal: 9,
-                      paddingVertical: 4,
+                      paddingHorizontal: 7.5,
+                      paddingVertical: 3,
                       borderRadius: 999,
                       backgroundColor: colors.surfaceContainerHigh,
                       borderWidth: 1,
                       borderColor: colors.outlineVariant,
                     }}
                   >
-                    <Feather name="users" size={11} color={colors.gold} />
-                    <Text style={{ fontSize: 11, fontWeight: '600', color: colors.textSecondary }}>
+                    <Feather name="users" size={10.5} color={colors.gold} />
+                    <Text style={{ fontSize: 10.5, fontWeight: '600', color: colors.textSecondary }}>
                       {config.speakers}
                     </Text>
                   </View>
 
                   <View
                     style={{
-                      paddingHorizontal: 9,
-                      paddingVertical: 4,
+                      paddingHorizontal: 7.5,
+                      paddingVertical: 3,
                       borderRadius: 999,
                       backgroundColor: colors.surfaceContainerHigh,
                       borderWidth: 1,
                       borderColor: colors.outlineVariant,
                     }}
                   >
-                    <Text style={{ fontSize: 11, fontWeight: '600', color: colors.textMuted }}>
+                    <Text style={{ fontSize: 10.5, fontWeight: '600', color: colors.textMuted }}>
                       {config.family}
                     </Text>
                   </View>
@@ -2464,19 +2465,19 @@ export default function LanguageCourseTool({
                 {courseXp > 0 && (
                   <View
                     style={{
-                      marginTop: 4,
-                      paddingTop: 10,
+                      marginTop: 2,
+                      paddingTop: 7,
                       borderTopWidth: 1,
                       borderTopColor: colors.outlineVariant,
                       flexDirection: 'row',
                       alignItems: 'center',
-                      gap: 10,
+                      gap: 8,
                     }}
                   >
                     <View
                       style={{
                         flex: 1,
-                        height: 7,
+                        height: 5.5,
                         borderRadius: 999,
                         backgroundColor: colors.surfaceContainerHighest,
                         overflow: 'hidden',
@@ -2494,7 +2495,7 @@ export default function LanguageCourseTool({
                         }}
                       />
                     </View>
-                    <Text style={{ fontSize: 11.5, fontWeight: '800', color: colors.gold }}>
+                    <Text style={{ fontSize: 11, fontWeight: '800', color: colors.gold }}>
                       ⚡ {courseXp} XP
                     </Text>
                   </View>
@@ -3488,7 +3489,7 @@ export default function LanguageCourseTool({
       )}
 
       {/* ========================================================================
-          TAB 3: GAMES HUB (14 MINI-GAMES — 100% WEB PARITY)
+          TAB 3: GAMES HUB (12 MINI-GAMES — 100% WEB PARITY)
          ======================================================================== */}
       {activeTab === 'games' && (
         <View style={styles.gamesTabWrap}>
@@ -3746,7 +3747,7 @@ export default function LanguageCourseTool({
                           setScrambleDone(won);
                           if (won) {
                             setGameScore((s) => s + 15);
-                            awardGameXP(15);
+                            awardGameXP(15, false);
                           }
                         }
                       }}
@@ -3857,7 +3858,7 @@ export default function LanguageCourseTool({
                       setSpeedFeedback(opt);
                       if (right) {
                         setGameScore((s) => s + 10);
-                        awardGameXP(10);
+                        awardGameXP(10, false);
                       }
                       setTimeout(() => {
                         startSpeedRound();
@@ -4004,7 +4005,8 @@ export default function LanguageCourseTool({
               {/* 6 Guess Rows */}
               <View style={{ gap: 6, alignItems: 'center', marginVertical: 8 }}>
                 {Array.from({ length: 6 }).map((_, rowIdx) => {
-                  const guess = wordleGuesses[rowIdx] || '';
+                  const isCurrentRow = rowIdx === wordleGuesses.length && wordleStatus === 'playing';
+                    const guess = wordleGuesses[rowIdx] || (isCurrentRow ? wordleInput : '');
                   const isSubmittedRow = rowIdx < wordleGuesses.length;
                   const rowStatuses: ('correct' | 'present' | 'absent')[] = Array(wordleAnswer.length).fill('absent');
                   if (isSubmittedRow) {
@@ -4183,7 +4185,7 @@ export default function LanguageCourseTool({
                       setRiddleFeedback(opt);
                       if (right) {
                         setGameScore((s) => s + 20);
-                        awardGameXP(20);
+                        awardGameXP(20, false);
                       }
                       setTimeout(() => {
                         startRiddleRound();
@@ -4249,7 +4251,7 @@ export default function LanguageCourseTool({
                       setVocabFeedback(opt);
                       if (right) {
                         setGameScore((s) => s + 15);
-                        awardGameXP(15);
+                        awardGameXP(15, false);
                       }
                       setTimeout(() => {
                         startVocabQuizRound();

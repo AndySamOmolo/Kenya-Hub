@@ -153,7 +153,7 @@ export function PolyglotBridgeGame({ onAwardXp, onUpdateGameStats }: GameProps) 
   );
 
   const current = deck[round];
-  const cleanCorrect = current ? cleanQuizGloss(current.correctAnswer) || current.correctAnswer : "";
+  const cleanCorrect = current ? current.correctAnswer || current.correctAnswer : "";
   const options = useMemo(() => {
     if (!current) return [];
     const balanced = pickBalancedDistractors(cleanCorrect, current.distractors, 3);
@@ -231,7 +231,7 @@ export function PolyglotBridgeGame({ onAwardXp, onUpdateGameStats }: GameProps) 
       <div className="mb-5 rounded-2xl border border-border bg-bg-card p-5 space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-gold/10 border border-gold/30 px-3 py-0.5 text-[0.6875rem] font-bold text-gold">
-            <Globe2 className="h-3.5 w-3.5" /> Concept: {current.concept}
+            <Globe2 className="h-3.5 w-3.5" /> Concept: {picked !== null ? current.concept : "???"}
           </span>
           <span className="text-xs text-text-muted">{current.family}</span>
         </div>

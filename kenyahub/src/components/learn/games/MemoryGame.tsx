@@ -45,7 +45,7 @@ export function MemoryGame({
       const seenSources = new Set<string>();
       const selected: typeof allWords = [];
       for (const w of shuffle(allWords)) {
-        if (!isValidQuizPair(w.target, w.source)) continue;
+        if (!isValidQuizPair(w.target, w.source) && w.target.length <= 24 && w.source.length <= 28) continue;
         const t = cleanQuizGloss(getPrimaryForm(w.target));
         const s = cleanQuizGloss(getPrimaryForm(w.source));
         if (!t || !s) continue;

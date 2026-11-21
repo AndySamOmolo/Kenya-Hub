@@ -518,14 +518,14 @@ const stripeStyles = StyleSheet.create({
 
 const appBarStyles = StyleSheet.create({
   container: {
-    minHeight: 56,
+    minHeight: 52,
     paddingVertical: 6,
     paddingHorizontal: 14,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     borderBottomWidth: StyleSheet.hairlineWidth,
-    elevation: Platform.OS === "android" ? 2 : 0,
+    elevation: Platform.OS === "android" ? 1 : 0,
   },
   leftRow: {
     flex: 1,

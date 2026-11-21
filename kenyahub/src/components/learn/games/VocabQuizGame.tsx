@@ -103,17 +103,16 @@ export function VocabQuizGame({
       if (timerRef.current) clearInterval(timerRef.current);
       return;
     }
-    setTimeLeftMs(maxShotClockMs);
+    let remaining = maxShotClockMs;
+    setTimeLeftMs(remaining);
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      setTimeLeftMs((prev) => {
-        if (prev <= 100) {
-          if (timerRef.current) clearInterval(timerRef.current);
-          triggerLossOfLife("__TIMEOUT__");
-          return 0;
-        }
-        return prev - 100;
-      });
+      remaining = Math.max(0, remaining - 100);
+      setTimeLeftMs(remaining);
+      if (remaining <= 0) {
+        if (timerRef.current) clearInterval(timerRef.current);
+        triggerLossOfLife("__TIMEOUT__");
+      }
     }, 100);
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
@@ -125,8 +124,8 @@ export function VocabQuizGame({
     if (gameOver && !awardedRef.current) {
       awardedRef.current = true;
       playCelebrationSfx();
-      const earnedXp = Math.min(60, Math.max(15, round * 3));
-      onAwardXp?.(earnedXp);
+      const earnedXp = round > 0 ? Math.min(60, Math.max(10, round * 3)) : 0;
+      if (earnedXp > 0) onAwardXp?.(earnedXp, round >= 3);
       onUpdateGameStats?.((prev) => ({
         ...prev,
         survivalBestRun: Math.max(prev.survivalBestRun, round),

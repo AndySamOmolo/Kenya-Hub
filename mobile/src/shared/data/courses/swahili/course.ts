@@ -7125,32 +7125,27 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "Kiswahili ni lugha ya asili yenye utajiri wa mashairi ya pwani",
             "source": "Kiswahili is a heritage language rich in coastal poetry (Kiamu)",
-            "partOfSpeech": "phrase",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "phrase"
           },
           {
             "target": "Kunyamaa nimechoka",
             "source": "I am weary of staying silent (Lamu Kiamu verse)",
-            "partOfSpeech": "phrase",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "phrase"
           },
           {
             "target": "Mbona mwanipija zita?",
             "source": "Why do you wage war on me? (Kiamu: zita = vita)",
-            "partOfSpeech": "phrase",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "phrase"
           },
           {
             "target": "katiti (Std. kidogo / chache)",
             "source": "Few, a little (Kiamu & Kimvita adjective)",
-            "partOfSpeech": "adjective",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "adjective"
           },
           {
             "target": "utafiti wa uzamili zuwoni (Std. vyuoni)",
             "source": "Postgraduate research at universities (Kiamu: zuwoni = vyuoni)",
-            "partOfSpeech": "phrase",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "phrase"
           }
         ],
         "sentences": [
@@ -7180,8 +7175,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "sourceWord": {
               "target": "Kiswahili ni lugha ya asili yenye utajiri wa mashairi ya pwani",
               "source": "Kiswahili is a heritage language rich in coastal poetry (Kiamu)",
-              "partOfSpeech": "phrase",
-              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+              "partOfSpeech": "phrase"
             }
           },
           {
@@ -7197,8 +7191,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "sourceWord": {
               "target": "Kunyamaa nimechoka",
               "source": "I am weary of staying silent (Lamu Kiamu verse)",
-              "partOfSpeech": "phrase",
-              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+              "partOfSpeech": "phrase"
             }
           },
           {
@@ -7214,8 +7207,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "sourceWord": {
               "target": "Mbona mwanipija zita?",
               "source": "Why do you wage war on me? (Kiamu: zita = vita)",
-              "partOfSpeech": "phrase",
-              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+              "partOfSpeech": "phrase"
             }
           },
           {
@@ -7258,32 +7250,27 @@ export const SWAHILI_UNITS: CourseUnit[] = [
           {
             "target": "matozi (Std. machozi)",
             "source": "Tears (Kiamu form of machozi)",
-            "partOfSpeech": "noun",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "noun"
           },
           {
             "target": "ndiyani (Std. njiani)",
             "source": "On the road / way (Kiamu form of njiani)",
-            "partOfSpeech": "noun",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "noun"
           },
           {
             "target": "zitabu (Std. vitabu)",
             "source": "Books (Kiamu Class 8 zi- form of vitabu)",
-            "partOfSpeech": "noun",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "noun"
           },
           {
             "target": "zisiwani (Std. visiwani)",
             "source": "In the islands (Kiamu Class 8 zi- form of visiwani)",
-            "partOfSpeech": "noun",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "noun"
           },
           {
             "target": "ziyongozi (Std. viongozi)",
             "source": "Leaders (Kiamu Class 8 zi- form of viongozi)",
-            "partOfSpeech": "noun",
-            "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+            "partOfSpeech": "noun"
           }
         ],
         "authoredExercises": [
@@ -7301,8 +7288,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "sourceWord": {
               "target": "matozi (Std. machozi)",
               "source": "Tears (Kiamu form of machozi)",
-              "partOfSpeech": "noun",
-              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+              "partOfSpeech": "noun"
             }
           },
           {
@@ -7318,8 +7304,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "sourceWord": {
               "target": "ndiyani (Std. njiani)",
               "source": "On the road / way (Kiamu form of njiani)",
-              "partOfSpeech": "noun",
-              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+              "partOfSpeech": "noun"
             }
           },
           {
@@ -7335,8 +7320,7 @@ export const SWAHILI_UNITS: CourseUnit[] = [
             "sourceWord": {
               "target": "zitabu (Std. vitabu)",
               "source": "Books (Kiamu Class 8 zi- form of vitabu)",
-              "partOfSpeech": "noun",
-              "audioFile": "https://zenodo.org/records/19827932/files/Mau_Kiswahili.mp3?download=1"
+              "partOfSpeech": "noun"
             }
           },
           {

@@ -415,7 +415,7 @@ export function MatatuMap({
       <WebView
         key={`matatu-map-${reloadKey}`}
         ref={webViewRef}
-        originWhitelist={["about:blank", "https://*", "http://*"]}
+        originWhitelist={["about:blank", "https://*"]}
         source={{ html: htmlContent }}
         onLoadEnd={() => {
           setLoading(false);

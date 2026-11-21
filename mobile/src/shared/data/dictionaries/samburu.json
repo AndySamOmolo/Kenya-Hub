@@ -11,7 +11,7 @@
     "Isiolo",
     "Laikipia"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-19",
   "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), C. W. Hobley (1910), and Rainer Vossen (1982). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0).",
@@ -4743,6 +4743,30 @@
           "english": "Witch",
           "translation": "Ol-labanani",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "Rendille tribe / Samburu tribe / Rendille nickname",
+          "translation": "Rendili (Randile) / Burkeneji / dthombon",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Rendille / Samburu) · Arkell-Hardwick (1903), pp. 204–223; Höhnel (1894), pp. 74, 184 · Ethnonyms · Rendille tribe / Samburu tribe / Rendille nickname \"robbers\" for Burkeneji"
+        },
+        {
+          "english": "\"peace\" / \"God bless you\" / \"The same to you\" / \"My",
+          "translation": "serian / Sobaj / Ebaj / Schorelaj sobaj",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Samburu / Maa) · Arkell-Hardwick (1903), pp. 208–210; Höhnel (1894), pp. 313–316 · Greetings · \"peace\" / \"God bless you\" / \"The same to you\" / \"My friend, I greet you\""
+        },
+        {
+          "english": "ewe / very large sheep / \"No! no!\" / \"Is there no",
+          "translation": "soben / Soben kitock / Mate! mate! / Mate serutia? / tumbao",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Rendille / Samburu trade) · Arkell-Hardwick (1903), pp. 216, 235–236 · Pastoral & Trade · ewe / very large sheep / \"No! no!\" / \"Is there no brass wire?\" / tobacco"
+        },
+        {
+          "english": "warriors, wicked old man, medicine-man, battle leader",
+          "translation": "elmoran, el moruo torono, lybon/Leibon, Lygonant, Lajon, Gogo, Syangiki, Elkonono, Elmolo",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Samburu / Ilchamus / Maa) · Arkell-Hardwick (1903), pp. 109, 241–242; Höhnel (1894), pp. 313–316 · Social / Kinship · warriors, wicked old man, medicine-man, battle leader, young boy, old married woman, matron, native smith, \"poor fellows without cattle\" (El Molo)"
         }
       ]
     }

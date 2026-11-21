@@ -30,9 +30,10 @@ export default function MobileNumberPrefixPage() {
   const prefix = useMemo(() => {
     if (!cleanDigits) return "";
     let p = cleanDigits;
-    if (p.startsWith("254")) {
-      p = "0" + p.substring(3);
-    }
+    if (p.startsWith("00254")) p = p.slice(5);
+    else if (p.startsWith("254")) p = p.slice(3);
+    if (p.startsWith("0")) p = p.slice(1);
+    if (/^[17]/.test(p)) p = "0" + p;
     return p.substring(0, 4);
   }, [cleanDigits]);
 
@@ -40,11 +41,12 @@ export default function MobileNumberPrefixPage() {
     if (prefix.length < 4 || !prefix.startsWith("0")) return null;
     for (const net of prefixesData.networks) {
       if (net.prefixes.includes(prefix)) {
-        return { ...net, matchedPrefix: prefix };
+        return { ...net, matchedPrefix: prefix, isAllocated: true };
       }
     }
     return {
       name: "Unknown / Unallocated Prefix",
+      isAllocated: false,
       color: "#888888",
       matchedPrefix: prefix,
       prefixes: [],

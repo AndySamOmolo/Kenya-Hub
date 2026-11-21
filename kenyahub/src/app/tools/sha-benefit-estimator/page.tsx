@@ -75,6 +75,9 @@ export default function ShaBenefitEstimatorPage() {
                 >
                   <h4 className="text-xs sm:text-sm font-bold text-text-primary mb-1">{pkg.name}</h4>
                   <p className="text-xs font-bold text-gold mb-1">{pkg.coveredAmount}</p>
+                  <p className="inline-block text-[0.6875rem] font-semibold text-kenya-green-light bg-kenya-green/10 border border-kenya-green/25 rounded-md px-2 py-0.5 mb-1.5">
+                    Co-pay: {pkg.copay}
+                  </p>
                   <p className="text-[0.6875rem] text-text-secondary leading-snug">{pkg.notes}</p>
                 </div>
               );

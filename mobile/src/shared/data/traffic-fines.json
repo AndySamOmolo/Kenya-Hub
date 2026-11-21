@@ -8,14 +8,14 @@
       "icon": "🏎️",
       "offences": [
         {
-          "offence": "Exceeding speed limit by up to 10 km/h",
-          "fine": 5000,
+          "offence": "Exceeding speed limit by 6–10 km/h (1–5 km/h is a warning)",
+          "fine": 500,
           "demeritPoints": 3,
           "arrestable": false
         },
         {
-          "offence": "Exceeding speed limit by 10 – 20 km/h",
-          "fine": 10000,
+          "offence": "Exceeding speed limit by 6–10 km/h (1–5 km/h is a warning)",
+          "fine": 500,
           "demeritPoints": 4,
           "arrestable": false
         },
@@ -239,19 +239,19 @@
         },
         {
           "offence": "Using mobile phone while driving",
-          "fine": 5000,
+          "fine": 2000,
           "demeritPoints": 3,
           "arrestable": false
         },
         {
           "offence": "Not wearing seatbelt (driver)",
-          "fine": 2000,
+          "fine": 500,
           "demeritPoints": 2,
           "arrestable": false
         },
         {
           "offence": "Not wearing seatbelt (passenger — driver fined)",
-          "fine": 2000,
+          "fine": 500,
           "demeritPoints": 1,
           "arrestable": false
         },

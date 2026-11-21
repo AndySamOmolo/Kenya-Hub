@@ -13,9 +13,11 @@ const tool = TOOLS.find((t) => t.slug === "mpesa-fee-calculator")!;
 type TransactionType = keyof typeof mpesaData.transactionTypes;
 
 function getFee(amount: number, type: TransactionType): number | null {
+  if (!Number.isFinite(amount) || amount <= 0) return null;
+  const amt = Math.ceil(amount);
   const bands = mpesaData.transactionTypes[type].bands;
   for (const band of bands) {
-    if (amount >= band.min && amount <= band.max) {
+    if (amt >= band.min && amt <= band.max) {
       return band.fee;
     }
   }
@@ -32,13 +34,13 @@ function findOptimalSplit(amount: number, type: TransactionType) {
   let bestTotalFee = singleFee ?? Infinity;
   let bestSplitDesc: string | null = null;
 
-  // Test splitting into 2 parts at band upper limits (each part <= 250,000 within 500,000 daily limit)
   const bands = mpesaData.transactionTypes[type].bands;
+  const maxSingleLimit = bands[bands.length - 1]?.max ?? 250000;
   for (const b of bands) {
     if (b.max >= amount) break;
     const part1 = b.max;
     const part2 = amount - part1;
-    if (part1 > 250000 || part2 > 250000) continue;
+    if (part1 > maxSingleLimit || part2 > maxSingleLimit) continue;
     const fee1 = getFee(part1, type);
     const fee2 = getFee(part2, type);
     if (fee1 !== null && fee2 !== null && fee1 + fee2 < bestTotalFee) {
@@ -47,7 +49,7 @@ function findOptimalSplit(amount: number, type: TransactionType) {
         const saved = singleFee - bestTotalFee;
         bestSplitDesc = `Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee — saving you KES ${saved.toLocaleString()}!`;
       } else {
-        bestSplitDesc = `Exceeds KES 250,000 single-tx limit: Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee (within KES 500,000 daily limit).`;
+        bestSplitDesc = `Exceeds KES ${maxSingleLimit.toLocaleString()} single-tx limit: Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee (within KES 500,000 daily limit).`;
       }
     }
   }
@@ -63,34 +65,28 @@ export default function MpesaFeeCalculatorPage() {
 
   const results = useMemo(() => {
     const numAmount = Math.max(0, amount);
-    const withdrawalFeeForTarget =
-      calculateFee(numAmount, "withdrawAgent") ?? 0;
-    const amountToSend = includeWithdrawal
+    const canIncludeWithdrawal =
+      includeWithdrawal && (txType === "sendRegistered" || txType === "sendUnregistered");
+    const withdrawalFeeForTarget = canIncludeWithdrawal
+      ? calculateFee(numAmount, "withdrawAgent") ?? 0
+      : 0;
+    const amountToSend = canIncludeWithdrawal
       ? numAmount + withdrawalFeeForTarget
       : numAmount;
 
-    // Check if adding withdrawal fee pushed recipient into next withdrawal band!
-    const actualAgentWithdrawFee =
-      calculateFee(Math.min(250000, amountToSend), "withdrawAgent") ??
-      withdrawalFeeForTarget;
+    // Check if adding withdrawal fee pushed recipient into next withdrawal band
+    const actualAgentWithdrawFee = canIncludeWithdrawal
+      ? calculateFee(amountToSend, "withdrawAgent") ?? withdrawalFeeForTarget
+      : 0;
     const adjustedAmountToSend =
-      includeWithdrawal && actualAgentWithdrawFee > withdrawalFeeForTarget
+      canIncludeWithdrawal && actualAgentWithdrawFee > withdrawalFeeForTarget
         ? numAmount + actualAgentWithdrawFee
         : amountToSend;
 
-    const withdrawalFee = includeWithdrawal ? actualAgentWithdrawFee : 0;
-    const sendFee =
-      includeWithdrawal && numAmount <= 250000
-        ? getFee(Math.min(250000, adjustedAmountToSend), txType)
-        : getFee(adjustedAmountToSend, txType);
-    const fee =
-      sendFee !== null ? sendFee + withdrawalFee : null;
-    const splitTip = findOptimalSplit(
-      includeWithdrawal && numAmount <= 250000
-        ? Math.min(250000, adjustedAmountToSend)
-        : adjustedAmountToSend,
-      txType
-    );
+    const withdrawalFee = canIncludeWithdrawal ? actualAgentWithdrawFee : 0;
+    const sendFee = getFee(adjustedAmountToSend, txType);
+    const fee = sendFee !== null ? sendFee + withdrawalFee : null;
+    const splitTip = findOptimalSplit(adjustedAmountToSend, txType);
     const totalSenderWalletNeeded =
       sendFee !== null ? adjustedAmountToSend + sendFee : null;
 

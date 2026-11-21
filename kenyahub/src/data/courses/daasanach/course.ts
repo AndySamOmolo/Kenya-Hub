@@ -15,7 +15,7 @@ export const DAASANACH_CONFIG: LanguageConfig = {
   "sources": [
     "blazek-dasanech-2011",
     "nishiguchi-daasanach-2004",
-    "hohnel-lakes-rudolf-stefanie-1894"
+    "hohnel-lakes-rudolf-stefanie-1894-vol1"
   ]
 };
 

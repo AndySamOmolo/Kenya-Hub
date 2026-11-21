@@ -118,7 +118,7 @@ export default function Footer() {
             <CookieSettingsFooterLink />
           </div>
           <p className="text-xs leading-5 text-text-muted text-center sm:text-right">
-            Kenyan Languages &amp; Public Data Platform · Official 2026 Kenyan sources
+            Kenyan Languages &amp; Public Data Platform · Independent platform · Not affiliated with KRA, SHA, NTSA, KPLC, PPRA, KNEC, or the Government of Kenya
           </p>
         </div>
       </nav>

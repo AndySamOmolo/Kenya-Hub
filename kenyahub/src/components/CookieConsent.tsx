@@ -101,7 +101,7 @@ export function readStoredConsent(): ParsedConsentState {
 function expireCookieNames(names: string[]) {
   if (typeof document === "undefined" || typeof window === "undefined") return;
   const host = window.location.hostname;
-  const domains = ["", `; domain=${host}`, `; domain=.${host}`, "; domain=.kenyahub.me", "; domain=.kenyahub.co.ke"];
+  const domains = ["", `; domain=${host}`, `; domain=.${host}`, "; domain=.kenyahub.me"];
   for (const name of names) {
     for (const domainAttr of domains) {
       document.cookie = `${name}=; Path=/; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT${domainAttr}; SameSite=Lax`;
@@ -134,14 +134,18 @@ function ensureGa4Loaded(prefs: CookiePreferences) {
     };
   }
 
+  const hasCertifiedCmp = typeof window.__tcfapi === "function";
   if (!window.__khGaConfigured) {
     window.gtag("consent", "default", {
-      ad_storage: prefs.advertising ? "granted" : "denied",
-      ad_user_data: prefs.advertising ? "granted" : "denied",
-      ad_personalization: prefs.advertising ? "granted" : "denied",
+      ...(hasCertifiedCmp
+        ? {}
+        : {
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+          }),
       analytics_storage: "granted",
     });
-    window.gtag("set", "ads_data_redaction", !prefs.advertising);
     window.gtag("set", "url_passthrough", false);
     window.gtag("js", new Date());
     window.gtag("config", GA_MEASUREMENT_ID);
@@ -166,9 +170,6 @@ export function applyGoogleConsent(prefs: CookiePreferences) {
 
   if (typeof window.gtag === "function") {
     window.gtag("consent", "update", {
-      ad_storage: prefs.advertising ? "granted" : "denied",
-      ad_user_data: prefs.advertising ? "granted" : "denied",
-      ad_personalization: prefs.advertising ? "granted" : "denied",
       analytics_storage: prefs.analytics ? "granted" : "denied",
     });
   }
@@ -176,9 +177,7 @@ export function applyGoogleConsent(prefs: CookiePreferences) {
   if (!prefs.analytics) {
     expireCookieNames(["_ga", "_gid", "_gat"]);
   }
-  if (!prefs.advertising) {
-    expireCookieNames(["__gads", "__gpi"]);
-  }
+  // Advertising consent & cookies are managed by Google certified CMP (IAB TCF v2.4)
 }
 
 export default function CookieConsent() {
@@ -192,16 +191,22 @@ export default function CookieConsent() {
   });
 
   useEffect(() => {
-    // If a Google-certified IAB TCF v2.2 CMP is active, defer automatic banner display
-    const hasTcfCmp = typeof window.__tcfapi === "function";
     const stored = readStoredConsent();
+    let timer: ReturnType<typeof setTimeout> | null = null;
 
     if (stored.hasDecision) {
       setPreferences(stored.preferences);
       applyGoogleConsent(stored.preferences);
       setVisible(false);
-    } else if (!hasTcfCmp) {
-      setVisible(true);
+    } else {
+      timer = setTimeout(() => {
+        const hasTcfCmp =
+          typeof window.__tcfapi === "function" ||
+          typeof (window as unknown as { googlefc?: unknown }).googlefc !== "undefined";
+        if (!hasTcfCmp) {
+          setVisible(true);
+        }
+      }, 1500);
     }
 
     const handleOpenBanner = () => {
@@ -209,6 +214,7 @@ export default function CookieConsent() {
     };
     window.addEventListener("kh-open-cookie-banner", handleOpenBanner);
     return () => {
+      if (timer) clearTimeout(timer);
       window.removeEventListener("kh-open-cookie-banner", handleOpenBanner);
     };
   }, []);
@@ -271,7 +277,7 @@ export default function CookieConsent() {
                 Manage cookie preferences
               </p>
               <p className="text-[0.7rem] text-text-secondary mt-0.5 leading-relaxed">
-                Essential storage is always active. Choose analytics and Google AdSense advertising preferences.{" "}
+                Essential storage is always active. Choose optional GA4 analytics preferences. Ad consent in applicable regions is managed by Google's certified Privacy & Messaging dialog.{" "}
                 <a
                   href="https://policies.google.com/technologies/partner-sites"
                   target="_blank"
@@ -283,7 +289,7 @@ export default function CookieConsent() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
             <label className="flex items-center justify-between gap-2 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2">
               <span>
                 <span className="block text-xs font-semibold text-text-primary">Essential</span>
@@ -304,25 +310,6 @@ export default function CookieConsent() {
                 }
                 className="accent-gold"
                 aria-label="Analytics cookies"
-              />
-            </label>
-            <label className="flex items-center justify-between gap-2 rounded-xl border border-border bg-bg-elevated/50 px-3 py-2 cursor-pointer">
-              <span>
-                <span className="block text-xs font-semibold text-text-primary">Advertising</span>
-                <span className="block text-[0.65rem] text-text-muted">Google AdSense ads</span>
-              </span>
-              <input
-                type="checkbox"
-                checked={preferences.advertising}
-                onChange={(event) =>
-                  setPreferences((current) => ({
-                    ...current,
-                    advertising: event.target.checked,
-                    ads: event.target.checked,
-                  }))
-                }
-                className="accent-gold"
-                aria-label="Advertising cookies"
               />
             </label>
           </div>

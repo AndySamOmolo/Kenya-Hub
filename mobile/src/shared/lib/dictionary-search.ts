@@ -84,9 +84,13 @@ const BARE_QUALIFIER_STOPWORDS = new Set([
 export function normalizePhoneticLookup(raw: string): string {
   return raw
     .replace(/„/g, " ")
-    .replace(/[ωΩ]/g, "o")
-    .replace(/ñ/gi, "ng")
-    .replace(/ṅ/gi, "ng");
+    .replace(/[ωΩɔƆ]/g, "o")
+    .replace(/[ɛƐ]/g, "e")
+    .replace(/[ñṅŋ]/gi, "ng")
+    .replace(/ɲ/gi, "ny")
+    .replace(/ɗ/gi, "d")
+    .replace(/ɠ/gi, "g")
+    .replace(/ɓ/gi, "b");
 }
 
 /**

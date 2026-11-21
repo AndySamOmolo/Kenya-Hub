@@ -341,20 +341,113 @@ export default function SavedScreen() {
               <Pressable
                 android_ripple={androidRipple(theme.rippleColor)}
                 accessibilityRole="link"
-                accessibilityLabel="Privacy Policy & Terms"
+                accessibilityLabel="Privacy Policy"
                 style={pressableStyle(styles.suggestCard)}
                 onPress={() => {
                   triggerHaptic(8);
                   Linking.openURL("https://kenyahub.me/privacy/").catch(() => {});
                 }}
               >
-                <Ionicons name="shield-checkmark-outline" size={20} color={theme.gold} />
+                <Ionicons name="shield-checkmark-outline" size={20} color={theme.kenyaGreenLight} />
                 <View style={{ flex: 1, marginLeft: 12 }}>
                   <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
-                    Privacy Policy & Terms
+                    Privacy Policy
                   </Text>
                   <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
-                    Kenya Data Protection Act 2019 compliance & terms of service
+                    Kenya Data Protection Act 2019 & local-only data practices
+                  </Text>
+                </View>
+                <Ionicons name="open-outline" size={16} color={theme.textMuted} />
+              </Pressable>
+            </View>
+
+            <View
+              style={[
+                styles.suggestCardWrap,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                accessibilityRole="link"
+                accessibilityLabel="Terms of Service"
+                style={pressableStyle(styles.suggestCard)}
+                onPress={() => {
+                  triggerHaptic(8);
+                  Linking.openURL("https://kenyahub.me/terms/").catch(() => {});
+                }}
+              >
+                <Ionicons name="document-text-outline" size={20} color={theme.gold} />
+                <View style={{ flex: 1, marginLeft: 12 }}>
+                  <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
+                    Terms of Service
+                  </Text>
+                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                    Independent utility disclaimer & usage terms
+                  </Text>
+                </View>
+                <Ionicons name="open-outline" size={16} color={theme.textMuted} />
+              </Pressable>
+            </View>
+
+            <View
+              style={[
+                styles.suggestCardWrap,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                accessibilityRole="button"
+                accessibilityLabel="Manage Ad Privacy"
+                style={pressableStyle(styles.suggestCard)}
+                onPress={handleManageAdPrivacy}
+              >
+                <Ionicons name="options-outline" size={20} color={theme.sky} />
+                <View style={{ flex: 1, marginLeft: 12 }}>
+                  <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
+                    Manage Ad Privacy
+                  </Text>
+                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                    Review or update your Google AdMob consent preferences
+                  </Text>
+                </View>
+                <Ionicons name="chevron-forward" size={16} color={theme.textMuted} />
+              </Pressable>
+            </View>
+
+            <View
+              style={[
+                styles.suggestCardWrap,
+                {
+                  backgroundColor: theme.surfaceContainer,
+                  borderColor: theme.outlineVariant,
+                },
+              ]}
+            >
+              <Pressable
+                android_ripple={androidRipple(theme.rippleColor)}
+                accessibilityRole="link"
+                accessibilityLabel="Contact & Support"
+                style={pressableStyle(styles.suggestCard)}
+                onPress={() => {
+                  triggerHaptic(8);
+                  Linking.openURL("https://kenyahub.me/contact/").catch(() => {});
+                }}
+              >
+                <Ionicons name="mail-outline" size={20} color={theme.kenyaGreenLight} />
+                <View style={{ flex: 1, marginLeft: 12 }}>
+                  <Text style={[styles.suggestTitle, { color: theme.textPrimary }]}>
+                    Contact & Support
+                  </Text>
+                  <Text style={[styles.suggestDesc, { color: theme.textMuted }]}>
+                    Report statutory rate updates, bugs, or data inquiries
                   </Text>
                 </View>
                 <Ionicons name="open-outline" size={16} color={theme.textMuted} />

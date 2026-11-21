@@ -15,7 +15,7 @@ import {
   ArrowRight,
   BookOpen,
 } from "lucide-react";
-import { useState, useEffect, useMemo, useRef } from "react";
+import { useState, useEffect, useMemo, useRef, useDeferredValue } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { TOOL_CATEGORIES, TOOLS } from "@/lib/tools-registry";
@@ -47,6 +47,7 @@ export default function Navbar() {
   const [toolsOpen, setToolsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const searchDialogRef = useRef<HTMLDivElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
@@ -149,6 +150,7 @@ export default function Navbar() {
   };
 
   const quickSearchItems = useMemo<QuickSearchItem[]>(() => {
+    if (!searchOpen) return [];
     const items: QuickSearchItem[] = [];
     for (const t of TOOLS.filter((tool) => tool.isLive)) {
       items.push({
@@ -217,10 +219,11 @@ export default function Navbar() {
       }
     }
     return items;
-  }, []);
+  }, [searchOpen]);
 
   const filteredSearchResults = useMemo(() => {
-    const q = stripDiacritics(searchQuery.trim());
+    if (!searchOpen) return [];
+    const q = stripDiacritics(deferredSearchQuery.trim());
     if (!q) return quickSearchItems.slice(0, 10);
 
     const typeTitleBoost: Record<string, number> = {
@@ -271,7 +274,7 @@ export default function Navbar() {
     }
     scored.sort((a, b) => b.score - a.score || a.item.title.localeCompare(b.item.title));
     return scored.slice(0, 14).map((x) => x.item);
-  }, [quickSearchItems, searchQuery]);
+  }, [quickSearchItems, deferredSearchQuery, searchOpen]);
 
   const isActivePath = (href: string) => {
     if (!pathname) return false;
@@ -289,7 +292,7 @@ export default function Navbar() {
 
   const navLinkClass = (href: string, extra = "") => {
     const active = isActivePath(href);
-    return `h-10 px-2.5 lg:px-3 text-[0.8125rem] font-medium transition-colors rounded-xl inline-flex items-center gap-1.5 whitespace-nowrap ${
+    return `h-9 lg:h-10 px-2.5 lg:px-3.5 text-[0.8125rem] font-medium transition-colors rounded-xl inline-flex items-center gap-1.5 lg:gap-2 whitespace-nowrap ${
       active
         ? "text-gold bg-gold/10 font-semibold border border-gold/25"
         : "text-text-secondary hover:text-text-primary hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
@@ -303,8 +306,8 @@ export default function Navbar() {
         <div className="kenya-stripe w-full" />
 
         <nav aria-label="Primary navigation" className="glass">
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-12 sm:h-[56px]">
+          <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between gap-3 md:gap-6 h-[54px] md:h-16">
               {/* Logo */}
               <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group shrink-0">
                 <div className="relative w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
@@ -321,8 +324,8 @@ export default function Navbar() {
                 </span>
               </Link>
 
-              {/* Desktop Nav — uniform h-10 height & uniform 14px currentColor icons across all 7 items */}
-              <div className="hidden md:flex items-center gap-1">
+              {/* Desktop Primary Nav Links — spaced cleanly with breathing room */}
+              <div className="hidden md:flex items-center gap-1 lg:gap-2 flex-1 justify-center">
                 <Link
                   href="/"
                   aria-current={isActivePath("/") ? "page" : undefined}
@@ -338,7 +341,10 @@ export default function Navbar() {
                   className={navLinkClass("/tools/learn/")}
                 >
                   <Languages className="w-3.5 h-3.5 stroke-[1.75] shrink-0" aria-hidden="true" />
-                  <span>Learn Languages (23)</span>
+                  <span>Languages</span>
+                  <span className="hidden xl:inline-flex items-center justify-center px-1.5 py-0.5 text-[0.65rem] font-bold rounded-full bg-gold/15 text-gold leading-none">
+                    23
+                  </span>
                 </Link>
 
                 <Link
@@ -466,27 +472,29 @@ export default function Navbar() {
                   <span>Guides</span>
                 </Link>
 
-                {/* Global Command-K Search Button */}
+              </div>
+
+              {/* Desktop Utility Actions (Search + Theme) */}
+              <div className="hidden md:flex items-center gap-2 shrink-0 pl-3 border-l border-border/50">
                 <button
                   type="button"
                   data-testid="navbar-search-trigger"
                   onClick={openSearchModal}
-                  className="ml-1 h-10 inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card/80 px-2.5 text-xs text-text-muted hover:border-gold/50 hover:text-text-primary transition-colors cursor-pointer"
+                  className="h-9 lg:h-10 inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card/80 px-3 text-xs text-text-muted hover:border-gold/50 hover:text-text-primary transition-colors cursor-pointer"
                   aria-label="Quick search tools, languages, counties, matatu routes, and guides (Ctrl+K)"
                   title="Quick search (⌘K / Ctrl+K)"
                 >
                   <Search className="w-3.5 h-3.5 text-gold shrink-0" aria-hidden="true" />
-                  <span className="hidden lg:inline">Search...</span>
-                  <kbd className="hidden lg:inline-block rounded bg-bg-elevated px-1.5 py-0.5 text-[0.65rem] font-mono text-text-muted border border-border">
+                  <span className="hidden xl:inline">Search...</span>
+                  <kbd className="hidden xl:inline-block rounded bg-bg-elevated px-1.5 py-0.5 text-[0.65rem] font-mono text-text-muted border border-border">
                     ⌘K
                   </kbd>
                 </button>
 
-                {/* Desktop Theme toggle */}
                 <button
                   type="button"
                   onClick={toggle}
-                  className="theme-toggle ml-1 !h-10 !w-10 !rounded-xl inline-flex items-center justify-center"
+                  className="theme-toggle !h-9 !w-9 lg:!h-10 lg:!w-10 !rounded-xl inline-flex items-center justify-center"
                   aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
                   title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
                 >
@@ -502,8 +510,8 @@ export default function Navbar() {
                 </button>
               </div>
 
-              {/* Mobile: Unified h-9 rounded-xl right cluster (Search + Learn + Theme + Hamburger) */}
-              <div className="md:hidden flex items-center gap-1.5">
+              {/* Mobile: Comfortable right cluster (Search + Learn + Theme + Hamburger) */}
+              <div className="md:hidden flex items-center gap-2">
                 <button
                   type="button"
                   data-testid="navbar-search-trigger"
@@ -516,7 +524,7 @@ export default function Navbar() {
 
                 <Link
                   href="/tools/learn/"
-                  className="h-9 px-2.5 text-xs font-bold text-gold bg-gold/15 border border-gold/30 rounded-xl inline-flex items-center justify-center gap-1"
+                  className="h-9 px-3 text-xs font-bold text-gold bg-gold/15 border border-gold/30 rounded-xl inline-flex items-center justify-center gap-1.5"
                 >
                   <Languages className="w-3.5 h-3.5 text-gold shrink-0" aria-hidden="true" />
                   <span>Learn</span>

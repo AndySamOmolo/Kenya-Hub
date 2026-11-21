@@ -27,7 +27,7 @@ export default function SmallClaimsCalculatorPage() {
       }
     }
     if (amount > sccData.maxClaimLimit) {
-      fee = 2500;
+      fee = -1;
     }
 
     return { amount, isEligible, fee };
@@ -93,14 +93,14 @@ export default function SmallClaimsCalculatorPage() {
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Court Filing Fee</span>
               <p className="text-xl font-extrabold text-gold mt-1 tabular-nums whitespace-nowrap">
-                KES {calc.fee.toLocaleString("en-KE")}
+                {calc.fee < 0 ? "Ad valorem (Magistrate's Court)" : `KES ${calc.fee.toLocaleString("en-KE")}`}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1">Payable on Judiciary e-filing portal</p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
               <span className="text-[0.6875rem] font-bold text-text-muted uppercase">Statutory Disposal Time</span>
               <p className="text-xl font-extrabold text-kenya-green-light mt-1">
-                {calc.amount <= 1000000 ? "60 Days" : "Varies (Magistrate's Court)"}
+                {calc.amount === 0 ? "—" : calc.amount <= sccData.maxClaimLimit ? "60 Days" : "Varies (Magistrate's Court)"}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1">
                 {calc.amount <= 1000000

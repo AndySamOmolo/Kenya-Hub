@@ -15,7 +15,7 @@ export function MjengoConstructionCalculator() {
 
   const region = mjengoData.regions.find((r) => r.id === regionId) || mjengoData.regions[0];
   const finish = mjengoData.finishTiers.find((f) => f.id === finishId) || mjengoData.finishTiers[1];
-  const sqm = Math.max(15, Number(sqmText.replace(/,/g, "")) || 130);
+  const sqm = sqmText.trim() === "" ? 0 : Math.max(0, Number(sqmText.replace(/,/g, "")) || 0);
 
   const calc = useMemo(() => {
     const ratePerSqm = finish.costPerSqm * region.multiplier;

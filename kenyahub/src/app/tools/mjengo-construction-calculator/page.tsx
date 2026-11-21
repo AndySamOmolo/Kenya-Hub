@@ -252,7 +252,7 @@ export default function MjengoConstructionCalculatorPage() {
               </span>
             </div>
             <div className="px-5 py-3 flex justify-between items-start gap-3">
-              <span className="text-[var(--text-secondary)]">Portland Poziolana Cement (50kg Bags)</span>
+              <span className="text-[var(--text-secondary)]">Portland Pozzolana Cement (50kg Bags)</span>
               <span className="font-bold text-[var(--text-primary)]">
                 {calc.cementBags.toLocaleString()} bags (KES {formatKES(calc.cementBags * region.cementBag)})
               </span>

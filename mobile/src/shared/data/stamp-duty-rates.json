@@ -10,31 +10,34 @@
   "conveyancingFees": [
     {
       "min": 0,
-      "max": 3000000,
+      "max": 5000000,
       "rate": 2.0,
-      "minimumFee": 35000,
-      "label": "Up to KES 3M (ARO 2014 Scale 1)"
+      "minFee": 35000,
+      "label": "Up to KES 5M (2.0%, min KES 35,000)"
     },
     {
-      "min": 3000001,
-      "max": 20000000,
-      "rate": 1.5,
-      "minimumFee": null,
-      "label": "KES 3M – 20M"
-    },
-    {
-      "min": 20000001,
+      "min": 5000001,
       "max": 100000000,
-      "rate": 1.25,
-      "minimumFee": null,
-      "label": "KES 20M – 100M"
+      "rate": 1.5,
+      "label": "KES 5M – 100M (1.5% on balance)"
     },
     {
       "min": 100000001,
-      "max": null,
+      "max": 250000000,
+      "rate": 1.25,
+      "label": "KES 100M – 250M (1.25% on balance)"
+    },
+    {
+      "min": 250000001,
+      "max": 1000000000,
       "rate": 1.0,
-      "minimumFee": null,
-      "label": "Above KES 100M"
+      "label": "KES 250M – 1B (1.0% on balance)"
+    },
+    {
+      "min": 1000000001,
+      "max": null,
+      "rate": 0.1,
+      "label": "Above KES 1B (0.1% on balance)"
     }
   ],
   "otherCosts": {

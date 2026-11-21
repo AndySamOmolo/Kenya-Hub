@@ -249,11 +249,11 @@ export function CbcCurriculumTool({ onScrollToTop }: { onScrollToTop?: () => voi
                 <Text style={[styles.areaName, { color: theme.gold }]}>{pw.name}</Text>
                 <Text style={[styles.areaDesc, { color: theme.textSecondary }]}>
                   <Text style={{ fontFamily: "Inter_700Bold", color: theme.textPrimary }}>Core: </Text>
-                  {Array.isArray(pw.core) ? pw.core.join(", ") : ""}
+                  {Array.isArray(pw.coreSubjects) ? pw.coreSubjects.join(", ") : ""}
                 </Text>
                 <Text style={[styles.areaDesc, { color: theme.textSecondary }]}>
                   <Text style={{ fontFamily: "Inter_700Bold", color: theme.kenyaGreenLight }}>Electives: </Text>
-                  {Array.isArray(pw.electives) ? pw.electives.join(", ") : ""}
+                  {Array.isArray(pw.electiveSubjects) ? pw.electiveSubjects.join(", ") : ""}
                 </Text>
               </View>
             ))}
@@ -262,9 +262,11 @@ export function CbcCurriculumTool({ onScrollToTop }: { onScrollToTop?: () => voi
       )}
 
       {/* Learning Areas */}
-      <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
-        Learning Areas ({level.learningAreas?.length || 0})
-      </Text>
+      {(level.learningAreas?.length || 0) > 0 && (
+        <Text style={[styles.sectionLabel, { color: theme.textSecondary }]}>
+          Learning Areas ({level.learningAreas?.length || 0})
+        </Text>
+      )}
 
       <View style={styles.entriesList}>
         {(level.learningAreas || []).map((area: any, idx: number) => (

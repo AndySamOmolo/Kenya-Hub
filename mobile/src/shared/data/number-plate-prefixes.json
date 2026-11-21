@@ -28,11 +28,6 @@
       "yearRange": "1992–1993"
     },
     {
-      "prefix": "KAF",
-      "county": "Nairobi",
-      "yearRange": "1993"
-    },
-    {
       "prefix": "KAG",
       "county": "Nairobi",
       "yearRange": "1993–1994"
@@ -388,11 +383,6 @@
       "yearRange": "2022–2023"
     },
     {
-      "prefix": "KDF",
-      "county": "Nairobi",
-      "yearRange": "2023"
-    },
-    {
       "prefix": "KDG",
       "county": "Nairobi",
       "yearRange": "2023–2024"
@@ -517,17 +507,17 @@
   ],
   "plateTypes": [
     {
-      "color": "White text on black",
+      "color": "Black text on white (front) / Black text on yellow (rear)",
       "type": "Private vehicle",
       "description": "Standard private registration"
     },
     {
-      "color": "White text on yellow",
+      "color": "Black text on yellow",
       "type": "Commercial/PSV",
       "description": "Public service vehicles (matatus, buses, taxis)"
     },
     {
-      "color": "Red text on white",
+      "color": "White text on red",
       "type": "Diplomatic",
       "description": "Diplomatic vehicles"
     },

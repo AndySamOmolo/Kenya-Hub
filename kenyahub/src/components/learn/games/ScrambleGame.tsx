@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState , useRef } from "react";
 import { RotateCcw, Shuffle, Star, Trophy } from "lucide-react";
 import type { WordPair } from "@/data/courses/types";
 import { getPrimaryForm } from "@/lib/learn-engine";
@@ -60,9 +60,15 @@ export function ScrambleGame({
   const [sessionDone, setSessionDone] = useState(false);
   const [perfectWords, setPerfectWords] = useState(0);
 
+  const progressRef = useRef(progress);
+  progressRef.current = progress;
+  const usedTargetsRef = useRef<Set<string>>(new Set());
+
   const initRound = useCallback(() => {
     if (validWords.length === 0) return;
-    const word = pickAdaptiveWord(validWords, progress);
+    const pool = validWords.filter((w) => !usedTargetsRef.current.has(w.cleanTarget.toLowerCase()));
+    const word = pickAdaptiveWord(pool.length > 0 ? pool : validWords, progressRef.current);
+    usedTargetsRef.current.add(word.cleanTarget.toLowerCase());
     setTargetWord(word);
     const letters = word.cleanTarget.split("");
     let scrambledLetters = shuffle(letters);
@@ -76,7 +82,7 @@ export function ScrambleGame({
     setSolved(false);
     setWrong(false);
     setHintsUsed(0);
-  }, [validWords, progress]);
+  }, [validWords]);
 
   useEffect(() => {
     initRound();
@@ -135,24 +141,25 @@ export function ScrambleGame({
 
   const handleHint = useCallback(() => {
     if (!targetWord || solved) return;
+    const norm = (c: string) => c.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     const target = targetWord.cleanTarget;
-    const nextIdx = selected.length;
-    if (nextIdx >= target.length) return;
-
-    const nextChar = target[nextIdx]
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase();
+    // Find first mismatched index so Hint corrects wrong earlier placements instead of appending blindly
+    let mismatchIdx = selected.length;
+    for (let i = 0; i < selected.length; i++) {
+      if (i >= target.length || norm(scrambled[selected[i]] || "") !== norm(target[i])) {
+        mismatchIdx = i;
+        break;
+      }
+    }
+    if (mismatchIdx >= target.length) return;
+    const baseSelected = selected.slice(0, mismatchIdx);
+    const nextChar = norm(target[mismatchIdx]);
     const availableIdx = scrambled.findIndex(
-      (ch, i) =>
-        ch
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .toLowerCase() === nextChar && !selected.includes(i)
+      (ch, i) => norm(ch) === nextChar && !baseSelected.includes(i)
     );
     if (availableIdx !== -1) {
       playKeyTapSfx();
-      const nextSelected = [...selected, availableIdx];
+      const nextSelected = [...baseSelected, availableIdx];
       const nextHints = hintsUsed + 1;
       setSelected(nextSelected);
       setHintsUsed(nextHints);
@@ -299,7 +306,7 @@ export function ScrambleGame({
           Unscramble the {languageName} word for:
         </p>
         <p className="text-xl font-bold text-gold">&ldquo;{targetWord.source}&rdquo;</p>
-        {targetWord.pronunciation && (
+        {solved && targetWord.pronunciation && (
           <p className="text-xs text-sky-light italic mt-1">[{targetWord.pronunciation}]</p>
         )}
       </div>

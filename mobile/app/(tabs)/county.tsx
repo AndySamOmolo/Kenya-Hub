@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useMemo, useRef, useState } from "react";
+import React, { useCallback, useDeferredValue, useMemo, useRef, useState } from "react";
 import {
   Platform,
   StyleSheet,
@@ -242,9 +242,13 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
   theme: any;
 }) {
   const codeFormatted = String(item.code).padStart(3, "0");
+  const popFormatted =
+    item.population >= 1000000
+      ? `${(item.population / 1000000).toFixed(2)}M`
+      : `${Math.round(item.population / 1000)}k`;
+
   return (
     <View
-      key={item.code}
       style={[
         styles.countyCardWrap,
         {
@@ -269,7 +273,7 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
               styles.codeBadge,
               {
                 backgroundColor: theme.primaryContainer,
-                borderColor: `${theme.gold}40`,
+                borderColor: `${theme.gold}45`,
               },
             ]}
           >
@@ -277,12 +281,16 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
               {codeFormatted}
             </Text>
           </View>
-          <View style={{ flex: 1, marginLeft: 12 }}>
-            <Text style={[styles.countyName, { color: theme.textPrimary }]}>
+          <View style={{ flex: 1, marginLeft: 11, minWidth: 0 }}>
+            <Text
+              style={[styles.countyName, { color: theme.textPrimary }]}
+              numberOfLines={1}
+            >
               {item.name} County
             </Text>
             <Text
               style={[styles.countyCapital, { color: theme.textSecondary }]}
+              numberOfLines={1}
             >
               HQ:{" "}
               <Text
@@ -294,107 +302,102 @@ const DirectoryCardItem = React.memo(function DirectoryCardItem({
                 {item.capital}
               </Text>
               {" · "}
-              {item.area.toLocaleString()} km² ({item.density}/km²)
+              {item.area.toLocaleString()} km² · {item.constituencies.length} Const.
             </Text>
           </View>
           <View
             style={[
               styles.trailingCircle,
-              { backgroundColor: theme.surfaceContainerHigh },
+              {
+                backgroundColor: theme.surfaceContainerHigh,
+                borderColor: theme.outlineVariant,
+              },
             ]}
           >
             <Ionicons
-              name="arrow-forward"
-              size={16}
-              color={theme.textSecondary}
+              name="chevron-forward"
+              size={15}
+              color={theme.gold}
             />
           </View>
         </View>
 
-        <View
-          style={[styles.cardInfoRow, { borderTopColor: theme.outlineVariant }]}
-        >
-          <View
-            style={[
-              styles.infoPill,
-              {
-                backgroundColor: theme.surfaceContainerHigh,
-                borderColor: theme.outlineVariant,
-              },
-            ]}
+        {/* Clean Governor Row */}
+        <View style={styles.governorRow}>
+          <Ionicons name="person-outline" size={13} color={theme.gold} />
+          <Text
+            style={[styles.governorText, { color: theme.textSecondary }]}
+            numberOfLines={1}
           >
-            <Ionicons
-              name="person-circle-outline"
-              size={14}
-              color={theme.gold}
-            />
+            Gov.{" "}
+            <Text style={{ color: theme.textPrimary, fontFamily: "Inter_600SemiBold" }}>
+              {item.governor}
+            </Text>
+          </Text>
+        </View>
+
+        {/* Structured 3-Column Metrics Strip */}
+        <View
+          style={[
+            styles.countyMetricsStrip,
+            {
+              backgroundColor: theme.surfaceContainerHigh,
+              borderColor: theme.outlineVariant,
+            },
+          ]}
+        >
+          <View style={styles.countyMetricCell}>
+            <Text style={[styles.countyMetricLabel, { color: theme.textMuted }]}>
+              POPULATION
+            </Text>
             <Text
-              style={[styles.infoPillText, { color: theme.textSecondary }]}
+              style={[styles.countyMetricValue, { color: theme.textPrimary }]}
               numberOfLines={1}
             >
-              Gov. {item.governor}
+              {popFormatted}
             </Text>
           </View>
+
           <View
             style={[
-              styles.infoPill,
-              {
-                backgroundColor: theme.surfaceContainerHigh,
-                borderColor: theme.outlineVariant,
-              },
+              styles.countyMetricDivider,
+              { backgroundColor: theme.outlineVariant },
             ]}
-          >
-            <Ionicons name="people-outline" size={14} color={theme.sky} />
-            <Text style={[styles.infoPillText, { color: theme.textSecondary }]}>
-              {item.population >= 1000000
-                ? `${(item.population / 1000000).toFixed(2)}M`
-                : `${Math.round(item.population / 1000)}k`}
+          />
+
+          <View style={[styles.countyMetricCell, { flex: 1.35 }]}>
+            <Text style={[styles.countyMetricLabel, { color: theme.textMuted }]}>
+              FY 25/26 BUDGET
+            </Text>
+            <Text
+              style={[styles.countyMetricValue, { color: theme.kenyaGreenLight }]}
+              numberOfLines={1}
+              adjustsFontSizeToFit
+            >
+              {item.budget
+                ? `KES ${item.budget.allocation.toLocaleString()}M`
+                : "—"}
             </Text>
           </View>
-          {item.budget && (
-            <View
-              style={[
-                styles.infoPill,
-                {
-                  backgroundColor: theme.surfaceContainerHigh,
-                  borderColor: theme.outlineVariant,
-                },
-              ]}
+
+          <View
+            style={[
+              styles.countyMetricDivider,
+              { backgroundColor: theme.outlineVariant },
+            ]}
+          />
+
+          <View style={styles.countyMetricCell}>
+            <Text style={[styles.countyMetricLabel, { color: theme.textMuted }]}>
+              RAINFALL
+            </Text>
+            <Text
+              style={[styles.countyMetricValue, { color: theme.sky }]}
+              numberOfLines={1}
             >
-              <Ionicons
-                name="cash-outline"
-                size={14}
-                color={theme.kenyaGreenLight}
-              />
-              <Text
-                style={[
-                  styles.infoPillText,
-                  { color: theme.kenyaGreenLight, fontFamily: "Outfit_700Bold" },
-                ]}
-              >
-                KES {item.budget.allocation.toLocaleString()}M (
-                {item.budget.absorptionRate}%)
-              </Text>
-            </View>
-          )}
-          {item.rain && (
-            <View
-              style={[
-                styles.infoPill,
-                {
-                  backgroundColor: theme.surfaceContainerHigh,
-                  borderColor: theme.outlineVariant,
-                },
-              ]}
-            >
-              <Ionicons name="rainy-outline" size={14} color={theme.sky} />
-              <Text
-                style={[styles.infoPillText, { color: theme.textSecondary }]}
-              >
-                {item.rain.annualRainfall} mm/yr
-              </Text>
-            </View>
-          )}
+              {item.rain ? `${item.rain.annualRainfall} mm` : "—"}
+            </Text>
+          </View>
         </View>
       </Pressable>
     </View>
@@ -701,6 +704,7 @@ export default function CountyScreen() {
   const [activeTab, setActiveTab] = useState<CountyHubTab>("directory");
   const scrollRef = useRef<ScrollView>(null);
   const [query, setQuery] = useState("");
+  const deferredQuery = useDeferredValue(query);
   const [sortBy, setSortBy] = useState<
     "code" | "name" | "population" | "area" | "budget" | "rainfall"
   >("code");
@@ -713,7 +717,7 @@ export default function CountyScreen() {
   const enrichedCounties = STATIC_ENRICHED_COUNTIES;
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = deferredQuery.trim().toLowerCase();
     const list = !q
       ? enrichedCounties
       : enrichedCounties.filter(
@@ -737,7 +741,30 @@ export default function CountyScreen() {
         return (b.rain?.annualRainfall || 0) - (a.rain?.annualRainfall || 0);
       return a.code - b.code;
     });
-  }, [query, enrichedCounties, sortBy]);
+  }, [deferredQuery, enrichedCounties, sortBy]);
+
+  const listExtraData = useMemo(
+    () => `${activeTab}-${isDark ? "d" : "l"}`,
+    [activeTab, isDark]
+  );
+
+  const keyExtractor = useCallback(
+    (item: any) => `${activeTab}-${item.code}`,
+    [activeTab]
+  );
+
+  const renderCountyItem = useCallback(
+    ({ item }: { item: any }) => {
+      if (activeTab === "budgets")
+        return renderBudgetCard(item, router, theme);
+      if (activeTab === "constituencies")
+        return renderConstituencyCard(item, router, theme);
+      if (activeTab === "climate")
+        return renderClimateCard(item, router, theme);
+      return <DirectoryCardItem item={item} router={router} theme={theme} />;
+    },
+    [activeTab, router, theme]
+  );
 
   const pickerFiltered = useMemo(() => {
     const q = pickerSearch.trim().toLowerCase();
@@ -1802,15 +1829,16 @@ export default function CountyScreen() {
       ) : (
         <FlatList
           data={filtered}
-          extraData={[activeTab, theme]}
-          keyExtractor={(item) => `${activeTab}-${item.code}`}
+          extraData={listExtraData}
+          keyExtractor={keyExtractor}
           contentContainerStyle={styles.listContent}
           showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled"
           overScrollMode="always"
           initialNumToRender={8}
           maxToRenderPerBatch={8}
-          windowSize={7}
+          updateCellsBatchingPeriod={40}
+          windowSize={5}
           removeClippedSubviews={Platform.OS === "android"}
           ListHeaderComponent={
             <>
@@ -1933,17 +1961,7 @@ export default function CountyScreen() {
               )}
             </>
           }
-          renderItem={({ item }) => {
-            if (activeTab === "budgets")
-              return renderBudgetCard(item, router, theme);
-            if (activeTab === "constituencies")
-              return renderConstituencyCard(item, router, theme);
-            if (activeTab === "climate")
-              return renderClimateCard(item, router, theme);
-            return (
-              <DirectoryCardItem item={item} router={router} theme={theme} />
-            );
-          }}
+          renderItem={renderCountyItem}
           ListEmptyComponent={
             <View style={styles.emptyWrap}>
               <Ionicons
@@ -2193,39 +2211,84 @@ const styles = StyleSheet.create({
     elevation: Platform.OS === "android" ? 2 : 0,
   },
   countyCard: {
-    padding: 14,
+    padding: 13,
+    gap: 9,
   },
   cardHeaderRow: {
     flexDirection: "row",
     alignItems: "center",
   },
   codeBadge: {
-    width: 44,
-    height: 44,
-    borderRadius: 12,
+    width: 40,
+    height: 40,
+    borderRadius: 11,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
   },
   codeText: {
     fontFamily: "Outfit_800ExtraBold",
-    fontSize: 14,
+    fontSize: 13.5,
+    letterSpacing: 0.3,
   },
   countyName: {
     fontFamily: "Outfit_700Bold",
     fontSize: 15.5,
+    lineHeight: 20,
   },
   countyCapital: {
     fontFamily: "Inter_400Regular",
-    fontSize: 12,
+    fontSize: 11.5,
     marginTop: 2,
   },
   trailingCircle: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    borderWidth: StyleSheet.hairlineWidth,
     alignItems: "center",
     justifyContent: "center",
+    marginLeft: 6,
+  },
+  governorRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    paddingHorizontal: 2,
+  },
+  governorText: {
+    flex: 1,
+    fontFamily: "Inter_400Regular",
+    fontSize: 11.5,
+  },
+  countyMetricsStrip: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderRadius: 11,
+    borderWidth: StyleSheet.hairlineWidth,
+    paddingVertical: 7.5,
+    paddingHorizontal: 8,
+  },
+  countyMetricCell: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 4,
+  },
+  countyMetricDivider: {
+    width: StyleSheet.hairlineWidth,
+    height: 22,
+    opacity: 0.6,
+  },
+  countyMetricLabel: {
+    fontFamily: "Outfit_700Bold",
+    fontSize: 8.5,
+    letterSpacing: 0.5,
+  },
+  countyMetricValue: {
+    fontFamily: "Outfit_800ExtraBold",
+    fontSize: 12,
+    marginTop: 1.5,
   },
   cardInfoRow: {
     flexDirection: "row",

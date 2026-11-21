@@ -46,7 +46,7 @@
       "subjects": [
         {
           "name": "Biology",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Chemistry",
@@ -54,11 +54,11 @@
         },
         {
           "name": "Physics/Mathematics",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "English/Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -75,7 +75,7 @@
       "subjects": [
         {
           "name": "Mathematics",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Physics",
@@ -83,11 +83,11 @@
         },
         {
           "name": "Chemistry",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "English/Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -104,7 +104,7 @@
       "subjects": [
         {
           "name": "Biology",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Chemistry",
@@ -112,11 +112,11 @@
         },
         {
           "name": "Mathematics/Physics",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "English/Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -134,7 +134,7 @@
       "subjects": [
         {
           "name": "Geography",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Mathematics",
@@ -142,11 +142,11 @@
         },
         {
           "name": "Physics/Chemistry",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "English/Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -163,7 +163,7 @@
       "subjects": [
         {
           "name": "Mathematics",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Physics",
@@ -171,11 +171,11 @@
         },
         {
           "name": "Art & Design/Geography",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "English/Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -192,7 +192,7 @@
       "subjects": [
         {
           "name": "Biology",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Chemistry/Agriculture",
@@ -200,11 +200,11 @@
         },
         {
           "name": "Mathematics/Physics",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "English/Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -221,19 +221,19 @@
       "subjects": [
         {
           "name": "Mathematics",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "English",
           "weight": 1
         },
         {
-          "name": "Business Studies/Economics",
-          "weight": 0.5
+          "name": "Business Studies",
+          "weight": 1
         },
         {
           "name": "Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -252,7 +252,7 @@
       "subjects": [
         {
           "name": "Mathematics",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "English",
@@ -260,11 +260,11 @@
         },
         {
           "name": "Geography/History",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -281,7 +281,7 @@
       "subjects": [
         {
           "name": "English",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Kiswahili",
@@ -289,11 +289,11 @@
         },
         {
           "name": "History/Geography/CRE",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "Any other subject",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -311,7 +311,7 @@
       "subjects": [
         {
           "name": "English",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Kiswahili",
@@ -319,11 +319,11 @@
         },
         {
           "name": "History/CRE/IRE",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "Mathematics/Geography",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -337,7 +337,7 @@
       "subjects": [
         {
           "name": "English",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Kiswahili",
@@ -345,11 +345,11 @@
         },
         {
           "name": "History/Geography/CRE",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "Any other subject",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -365,7 +365,7 @@
       "subjects": [
         {
           "name": "Mathematics",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Physics/Chemistry/Biology",
@@ -373,11 +373,11 @@
         },
         {
           "name": "English",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -393,7 +393,7 @@
       "subjects": [
         {
           "name": "English",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Kiswahili",
@@ -401,11 +401,11 @@
         },
         {
           "name": "History/Geography",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "Any other subject",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -422,7 +422,7 @@
       "subjects": [
         {
           "name": "English",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "Biology/Home Science",
@@ -430,11 +430,11 @@
         },
         {
           "name": "Kiswahili",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "History/CRE",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [
@@ -451,7 +451,7 @@
       "subjects": [
         {
           "name": "Art & Design",
-          "weight": 2
+          "weight": 1
         },
         {
           "name": "English",
@@ -459,11 +459,11 @@
         },
         {
           "name": "Mathematics/Physics",
-          "weight": 0.5
+          "weight": 1
         },
         {
           "name": "Kiswahili",
-          "weight": 0.5
+          "weight": 1
         }
       ],
       "courses": [

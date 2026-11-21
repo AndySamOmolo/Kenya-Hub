@@ -470,17 +470,19 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   const handleLessonComplete = useCallback(
     (result: LessonResult) => {
-      const prevAchievements = [...progress.achievements];
-      const baseProg =
-        activeLesson?.nextDictCursor !== undefined && !result.reviewOnly
-          ? advanceDictCursor(progress, result.skillId, activeLesson.nextDictCursor)
-          : progress;
-      const updated = applyLessonResult(baseProg, result);
-      saveProgress(updated);
-      setProgress(updated);
-      checkAndNotifyNewAchievements(prevAchievements, updated.achievements);
+      setProgress((prev) => {
+        const prevAchievements = [...prev.achievements];
+        const baseProg =
+          activeLesson?.nextDictCursor !== undefined && !result.reviewOnly
+            ? advanceDictCursor(prev, result.skillId, activeLesson.nextDictCursor)
+            : prev;
+        const updated = applyLessonResult(baseProg, result);
+        saveProgress(updated);
+        checkAndNotifyNewAchievements(prevAchievements, updated.achievements);
+        return updated;
+      });
     },
-    [progress, activeLesson, advanceDictCursor, checkAndNotifyNewAchievements]
+    [activeLesson, advanceDictCursor, checkAndNotifyNewAchievements]
   );
 
   const handleQuitLesson = useCallback(() => {
@@ -701,6 +703,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       {view === "playing" && activeLesson ? (
         <div data-adsense-pause="true">
           <LessonPlayer
+          key={`${activeLesson.skill.id}-${activeLesson.level}-${Boolean(activeLesson.reviewOnly)}`}
             skill={activeLesson.skill}
             level={activeLesson.level}
             progress={progress}

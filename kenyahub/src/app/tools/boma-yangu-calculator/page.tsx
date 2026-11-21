@@ -10,9 +10,8 @@ import housingLevyData from "@/data/housing-levy-rates.json";
 const tool = TOOLS.find((t) => t.slug === "boma-yangu-calculator")!;
 
 function getIncomeTierIndex(salary: number): number {
-  if (salary < 20000) return 0; // Social Housing (< KES 20,000)
-  if (salary < 50000) return 1; // Affordable Housing Tier I (< KES 50,000)
-  if (salary < 150000) return 1; // Affordable Housing Tier II (< KES 150,000)
+  if (salary <= 20000) return 0; // Social Housing (<= KES 20,000)
+  if (salary < 150000) return 1; // Affordable Housing (< KES 150,000)
   return 2; // Market Units / Mortgage Scheme (>= KES 150,000)
 }
 
@@ -42,7 +41,8 @@ export default function BomaYanguCalculatorPage() {
     const salary = Math.max(0, Number(monthlySalary.replace(/,/g, "")) || 0);
     const cost = Math.max(0, Number(unitCost.replace(/,/g, "")) || 0);
     const years = Math.max(5, Math.min(activeTier.maxTermYears, Number(termYears) || 25));
-    const deposit = cost * 0.1;
+    const depositPct = activeTier.sampleUnits?.[0]?.depositPercent ?? 0.1;
+    const deposit = cost * depositPct;
     const loanPrincipal = Math.max(0, cost - deposit);
 
     const r = activeTier.interestRate / 12;
@@ -52,16 +52,19 @@ export default function BomaYanguCalculatorPage() {
         ? (loanPrincipal * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)
         : 0;
 
-    // KRA Housing Relief (15% of annual payments, up to KES 9,000/mo or KES 108,000/yr)
-    const annualPayments = monthlyRepayment * 12;
-    const taxReliefAnnual = Math.min(bomaData.maxAnnualRelief, annualPayments * bomaData.housingReliefRate);
-    const taxReliefMonthly = taxReliefAnnual / 12;
+    // Tax Laws (Amendment) Act, 2024 repealed s.30A 15% credit; replaced by 1.5% AHL pre-tax deduction
+    // and Mortgage Interest Deduction (up to KES 30,000/mo against PAYE if salary > KES 24,000/mo)
+    const monthlyAhl = salary * 0.015;
+    const marginalRate = salary > 800000 ? 0.35 : salary > 500000 ? 0.325 : salary > 32333 ? 0.30 : salary > 24000 ? 0.25 : 0;
+    const taxReliefMonthly = salary > 24000 ? Math.round(monthlyAhl * marginalRate) : 0;
+    const taxReliefAnnual = taxReliefMonthly * 12;
     const netMonthlyCost = Math.max(0, monthlyRepayment - taxReliefMonthly);
 
     return {
       salary,
       incomeBandLabel: getIncomeBandLabel(salary),
       cost,
+      depositPct,
       deposit,
       loanPrincipal,
       years,
@@ -248,11 +251,11 @@ export default function BomaYanguCalculatorPage() {
               <p className="text-[0.6875rem] text-text-secondary mt-1">Before tax relief deduction</p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
-              <span className="text-[0.6875rem] font-bold text-text-muted uppercase">KRA Housing Tax Relief</span>
+              <span className="text-[0.6875rem] font-bold text-text-muted uppercase">1.5% AHL PAYE Tax Saving</span>
               <p className="text-xl font-extrabold text-kenya-green-light mt-1 tabular-nums whitespace-nowrap">
                 −KES {Math.round(calc.taxReliefMonthly).toLocaleString("en-KE")}
               </p>
-              <p className="text-[0.6875rem] text-text-secondary mt-1">15% deduction from monthly PAYE</p>
+              <p className="text-[0.6875rem] text-text-secondary mt-1">Pre-tax 1.5% AHL deduction (TLAA 2024)</p>
             </div>
             <div className="rounded-xl border border-amber-500/45 bg-amber-500/[0.04] p-4">
               <span className="text-[0.6875rem] font-bold text-gold uppercase">Net Monthly Effective Cost</span>
@@ -260,7 +263,7 @@ export default function BomaYanguCalculatorPage() {
                 KES {Math.round(calc.netMonthlyCost).toLocaleString("en-KE")}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1 tabular-nums">
-                Deposit required: KES {Math.round(calc.deposit).toLocaleString("en-KE")}
+                {Math.round(calc.depositPct * 100)}% Deposit required: KES {Math.round(calc.deposit).toLocaleString("en-KE")}
               </p>
             </div>
           </div>

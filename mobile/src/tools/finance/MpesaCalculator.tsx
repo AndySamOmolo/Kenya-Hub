@@ -16,9 +16,11 @@ type MpesaTxType =
   | "payBill";
 
 function calcMpesaFee(amount: number, type: MpesaTxType): number | null {
+  if (!Number.isFinite(amount) || amount <= 0) return null;
+  const amt = Math.ceil(amount);
   const bands = (mpesaData.transactionTypes as any)[type]?.bands || [];
   for (const b of bands) {
-    if (amount >= b.min && amount <= b.max) return b.fee;
+    if (amt >= b.min && amt <= b.max) return b.fee;
   }
   return null;
 }
@@ -32,11 +34,12 @@ function findMpesaSavingTip(amount: number, type: MpesaTxType): string | null {
   let bestSplitDesc: string | null = null;
 
   const bands = (mpesaData.transactionTypes as any)[type]?.bands || [];
+  const maxSingleLimit = bands[bands.length - 1]?.max ?? 250000;
   for (const b of bands) {
     if (b.max >= amount) break;
     const part1 = b.max;
     const part2 = amount - part1;
-    if (part1 > 250000 || part2 > 250000) continue;
+    if (part1 > maxSingleLimit || part2 > maxSingleLimit) continue;
     const fee1 = calcMpesaFee(part1, type);
     const fee2 = calcMpesaFee(part2, type);
     if (fee1 !== null && fee2 !== null && fee1 + fee2 < bestTotalFee) {
@@ -45,7 +48,7 @@ function findMpesaSavingTip(amount: number, type: MpesaTxType): string | null {
         const saved = singleFee - bestTotalFee;
         bestSplitDesc = `Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee — saving you KES ${saved.toLocaleString()}!`;
       } else {
-        bestSplitDesc = `Exceeds KES 250,000 single-tx limit: Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee (within KES 500,000 daily limit).`;
+        bestSplitDesc = `Exceeds KES ${maxSingleLimit.toLocaleString()} single-tx limit: Split into KES ${part1.toLocaleString()} (fee KES ${fee1}) + KES ${part2.toLocaleString()} (fee KES ${fee2}) = KES ${bestTotalFee} total fee (within KES 500,000 daily limit).`;
       }
     }
   }
@@ -65,34 +68,34 @@ export function MpesaCalculator() {
   >;
 
   const results = useMemo(() => {
-    const withdrawalFeeForTarget = calcMpesaFee(amount, "withdrawAgent") ?? 0;
-    const amountToSend = includeWithdrawal
+    const canIncludeWithdrawal =
+      includeWithdrawal && (tab === "sendRegistered" || tab === "sendUnregistered");
+    const withdrawalFeeForTarget = canIncludeWithdrawal
+      ? calcMpesaFee(amount, "withdrawAgent") ?? 0
+      : 0;
+    const amountToSend = canIncludeWithdrawal
       ? amount + withdrawalFeeForTarget
       : amount;
 
-    // Check if adding withdrawal fee pushed recipient into next withdrawal band!
-    const escalatedWithdrawFee =
-      calcMpesaFee(Math.min(250000, amountToSend), "withdrawAgent") ??
-      withdrawalFeeForTarget;
+    // Check if adding withdrawal fee pushed recipient into next withdrawal band
+    const escalatedWithdrawFee = canIncludeWithdrawal
+      ? calcMpesaFee(amountToSend, "withdrawAgent") ?? withdrawalFeeForTarget
+      : 0;
     const adjustedAmountToSend =
-      includeWithdrawal && escalatedWithdrawFee > withdrawalFeeForTarget
+      canIncludeWithdrawal && escalatedWithdrawFee > withdrawalFeeForTarget
         ? amount + escalatedWithdrawFee
         : amountToSend;
 
-    const withdrawFee = includeWithdrawal ? escalatedWithdrawFee : 0;
-    const effectiveSendAmount =
-      includeWithdrawal && amount <= 250000
-        ? Math.min(250000, adjustedAmountToSend)
-        : adjustedAmountToSend;
-    const sendFee = calcMpesaFee(effectiveSendAmount, tab);
+    const withdrawFee = canIncludeWithdrawal ? escalatedWithdrawFee : 0;
+    const sendFee = calcMpesaFee(adjustedAmountToSend, tab);
     const fee = sendFee === null ? null : sendFee + withdrawFee;
-    const savingTip = findMpesaSavingTip(effectiveSendAmount, tab);
+    const savingTip = findMpesaSavingTip(adjustedAmountToSend, tab);
     const totalCost = sendFee !== null ? adjustedAmountToSend + sendFee : null;
     const allFees = (Object.entries(txTypes) as [MpesaTxType, any][]).map(
       ([key, val]) => ({
         key,
         label: val.label,
-        fee: calcMpesaFee(effectiveSendAmount, key),
+        fee: calcMpesaFee(adjustedAmountToSend, key),
       })
     );
     return {
@@ -209,7 +212,7 @@ export function MpesaCalculator() {
       </Text>
       <View style={styles.card}>
         {txTypes[tab].bands.map((band, idx) => {
-          const isActive = amount >= band.min && amount <= band.max;
+          const isActive = Math.ceil(results.adjustedAmountToSend) >= band.min && Math.ceil(results.adjustedAmountToSend) <= band.max;
           return (
             <Row
               key={idx}

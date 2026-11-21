@@ -39,7 +39,7 @@ export function EtimsMpesaReconcilerTool() {
     if (!name.trim() || !val) return;
     triggerHaptic(8);
     setRows((prev) => [
-      { id: `m-${Date.now()}`, date: "2026-11-19", ref: `MP${Math.floor(100000 + Math.random() * 899999)}`, counterparty: name.trim(), phone: "0700000000", amount: val, category: "Supplies", exempt: false, matched: false },
+      { id: `m-${Date.now()}`, date: new Date().toISOString().slice(0, 10), ref: `MP${Math.floor(100000 + Math.random() * 899999)}`, counterparty: name.trim(), phone: "0700000000", amount: val, category: "Supplies", exempt: false, matched: false },
       ...prev,
     ]);
     setName("");
@@ -179,7 +179,7 @@ export function OdpcHrRetentionVaultTool() {
 // 3. Offline EUDR Cooperative Polygon & GeoJSON Packager
 export function EudrCoopGeojsonPackagerTool() {
   const { theme, styles } = useDynamicStyles(createStyles);
-  const [ha, setHa] = useState("4.6");
+  const [ha, setHa] = useState("7.08");
   const [acc, setAcc] = useState("6.5");
   const [coordText, setCoordText] = useState(
     utilData.eudr.samplePolygonCoords.map(([lat, lon]) => `${lat}, ${lon}`).join("\n")
@@ -329,11 +329,11 @@ export function ShaClaimScrubberTool() {
 
   return (
     <View style={styles.wrap}>
-      <View style={[styles.card, { borderColor: score >= 90 ? `${theme.kenyaGreenLight}66` : warningBorderColor }]}>
+      <View style={[styles.card, { borderColor: uncheckedCount === 0 ? `${theme.kenyaGreenLight}66` : score < 60 ? `${theme.kenyaRedLight}66` : warningBorderColor }]}>
         <Text style={styles.kpiLabel}>CLAIM READINESS SCORE</Text>
-        <Text style={[styles.kpiValue, { color: score >= 90 ? theme.kenyaGreenLight : warningTextColor }]}>{score}/100</Text>
-        <Text style={[styles.kpiSub, { color: score >= 90 ? theme.textSecondary : warningTextColor, fontWeight: score >= 90 ? "400" : "700" }]}>
-          {score >= 90
+        <Text style={[styles.kpiValue, { color: uncheckedCount === 0 ? theme.kenyaGreenLight : score < 60 ? theme.kenyaRedLight : warningTextColor }]}>{score}/100</Text>
+        <Text style={[styles.kpiSub, { color: uncheckedCount === 0 ? theme.textSecondary : score < 60 ? theme.kenyaRedLight : warningTextColor, fontWeight: uncheckedCount === 0 ? "400" : "700" }]}>
+          {uncheckedCount === 0
             ? "Low Rejection Risk — Ready to Submit"
             : `⚠ Fix ${uncheckedCount} trigger(s) before submitting to SHA.`}
         </Text>
@@ -377,7 +377,7 @@ export function PpraEgpTenderSerializerTool() {
     <View style={styles.wrap}>
       <View style={styles.card}>
         <Text style={styles.kpiLabel}>TOTAL CONTINUOUS BATES RANGE (MR1–MR11)</Text>
-        <Text style={[styles.kpiValue, { color: theme.gold }]}>0001 – {String(Math.max(1, plan.total)).padStart(4, "0")} ({plan.total} pages)</Text>
+        <Text style={[styles.kpiValue, { color: theme.gold }]}>{plan.total > 0 ? `0001 – ${String(plan.total).padStart(4, "0")} (${plan.total} pages)` : "No pages included (0 pages)"}</Text>
       </View>
       {plan.rows.map((r, idx) => (
         <Pressable
@@ -412,7 +412,7 @@ export function KjseaPathwayEngineTool() {
   }, [kpsea, sba, kjsea]);
 
   const tier =
-    utilData.kjsea.rubricTiers.find((t) => composite >= t.min && composite <= t.max) ||
+    utilData.kjsea.rubricTiers.find((t) => composite >= t.min) ||
     utilData.kjsea.rubricTiers[utilData.kjsea.rubricTiers.length - 1];
   const pathway = utilData.kjsea.pathways[pathwayIdx];
 

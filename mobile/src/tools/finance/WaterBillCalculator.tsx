@@ -21,18 +21,7 @@ export function WaterBillCalculator() {
       waterData.utilities.find((u) => u.id === utilityId) ||
       waterData.utilities[0];
 
-    // Enforce WASREB-approved NCWSC Block 2 rate (KES 67/m³) & unified KES 100 meter rent
-    const bands = rawUtility.bands.map((b) => {
-      if (rawUtility.id === "ncwsc" && b.min === 7 && b.max === 20 && b.rate < 67) {
-        return { ...b, rate: 67.0 };
-      }
-      return b;
-    });
-    const utility = {
-      ...rawUtility,
-      meterRent: rawUtility.id === "ncwsc" ? 100 : rawUtility.meterRent,
-      bands,
-    };
+    const utility = rawUtility;
 
     let waterCharge = 0;
     const breakdown: {
@@ -66,7 +55,7 @@ export function WaterBillCalculator() {
       ? Math.round(waterCharge * utility.sewerageRate)
       : 0;
     const meterRent = utility.meterRent;
-    const wasrebLevy = Math.round(waterCharge * WASREB_REGULATORY_LEVY_RATE);
+    const wasrebLevy = Math.round((waterCharge + sewerageCharge) * WASREB_REGULATORY_LEVY_RATE);
     const total = waterCharge + sewerageCharge + meterRent + wasrebLevy;
 
     return {

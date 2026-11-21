@@ -30,13 +30,13 @@ export default function KjseaPathwayEnginePage() {
     );
 
     const tier =
-      utilData.kjsea.rubricTiers.find((t) => composite >= t.min && composite <= t.max) ||
+      utilData.kjsea.rubricTiers.find((t) => composite >= t.min) ||
       utilData.kjsea.rubricTiers[utilData.kjsea.rubricTiers.length - 1];
 
     const scores = [
-      { id: "stem", score: Number(stemAffinity) || 0 },
-      { id: "social", score: Number(socialAffinity) || 0 },
-      { id: "arts", score: Number(artsAffinity) || 0 },
+      { id: "stem", score: Math.min(100, Math.max(0, Number(stemAffinity) || 0)) },
+      { id: "social", score: Math.min(100, Math.max(0, Number(socialAffinity) || 0)) },
+      { id: "arts", score: Math.min(100, Math.max(0, Number(artsAffinity) || 0)) },
     ].sort((a, b) => b.score - a.score);
 
     const recommended =
@@ -50,7 +50,7 @@ export default function KjseaPathwayEnginePage() {
       <div className="space-y-6">
         <div className="rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-7 shadow-xs">
 
-          <div role="status" aria-live="polite" aria-atomic="true" className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
             <div>
               <label className="block text-xs font-semibold text-text-muted uppercase mb-1">Grade 6 KPSEA (20% Weight)</label>
               <input

@@ -48,8 +48,10 @@ export default function SaccoChamaCalculatorPage() {
 
     const r = activeSacco.monthlyInterestReducing / 100;
     const monthlyRepayment =
-      maxLoanEligibility > 0
-        ? (maxLoanEligibility * r * Math.pow(1 + r, months)) / (Math.pow(1 + r, months) - 1)
+      maxLoanEligibility > 0 && months > 0
+        ? r === 0
+          ? maxLoanEligibility / months
+          : (maxLoanEligibility * r * Math.pow(1 + r, months)) / (Math.pow(1 + r, months) - 1)
         : 0;
     const totalLoanRepayment = monthlyRepayment * months;
     const totalLoanInterest = Math.max(0, totalLoanRepayment - maxLoanEligibility);

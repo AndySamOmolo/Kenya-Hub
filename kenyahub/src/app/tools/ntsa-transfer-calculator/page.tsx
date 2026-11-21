@@ -116,6 +116,12 @@ export default function NtsaTransferCalculatorPage() {
                 <span className="text-text-muted block text-[0.6875rem]">eCitizen Platform Fee:</span>
                 <span className="font-bold text-text-primary">KES {calc.platform}</span>
               </div>
+              {calc.plates > 0 && (
+                <div>
+                  <span className="text-text-muted block text-[0.6875rem]">Reflective Plates:</span>
+                  <span className="font-bold text-text-primary">KES {calc.plates.toLocaleString()}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>

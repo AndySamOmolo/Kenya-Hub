@@ -1,5 +1,5 @@
 import { ExpandablePillRow } from "../../src/components/ExpandablePillRow";
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useFocusEffect } from "expo-router";
 import { useIsFocused } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -69,12 +69,18 @@ const MATATU_KEYWORDS = [
 
 const WIDGET_SNAP_INTERVAL = 295 + 12;
 
+const ALL_MATATU_ROUTES = Object.entries(matatuData.routes || {}).flatMap(
+  ([townSlug, routes]) =>
+    ((routes as any[]) || []).map((r) => ({ ...r, townSlug }))
+);
+
 export default function HomeScreen() {
   const router = useRouter();
   const { theme, isDark } = useTheme();
   const [pinnedSlugs, setPinnedSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
   const [searchQuery, setSearchQuery] = useState("");
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   const [selectedPost, setSelectedPost] = useState<StaticBlogPost | null>(null);
   const [readerProgress, setReaderProgress] = useState(0);
   const [showHolidaysModal, setShowHolidaysModal] = useState(false);
@@ -132,56 +138,72 @@ export default function HomeScreen() {
 
   useFocusEffect(
     useCallback(() => {
-      AsyncStorage.getItem("kh-saved-tools")
-        .then((val) => setPinnedSlugs(parseSavedTools(val)))
-        .catch(() => setPinnedSlugs([]));
+      let active = true;
+      AsyncStorage.multiGet([
+        "kh-saved-tools",
+        "kh-tool-visits",
+        "@kenyahub_course_progress_v2",
+      ])
+        .then((entries) => {
+          if (!active) return;
+          const map = new Map(entries);
 
-      AsyncStorage.getItem("kh-tool-visits")
-        .then((raw) => {
-          if (!raw) {
+          const savedVal = map.get("kh-saved-tools");
+          setPinnedSlugs(parseSavedTools(savedVal));
+
+          const visitsRaw = map.get("kh-tool-visits");
+          if (!visitsRaw) {
             setVisitCounts({});
-            return;
+          } else {
+            try {
+              const parsed = JSON.parse(visitsRaw);
+              setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
+            } catch {
+              setVisitCounts({});
+            }
           }
-          const parsed = JSON.parse(raw);
-          setVisitCounts(parsed && typeof parsed === "object" ? parsed : {});
-        })
-        .catch(() => setVisitCounts({}));
 
-      AsyncStorage.getItem("@kenyahub_course_progress_v2")
-        .then((raw) => {
-          if (!raw) return;
-          const parsed = JSON.parse(raw);
-          if (!parsed || typeof parsed !== "object") return;
-          let totalXP = 0;
-          let bestStreak = 0;
-          let activeLang = "swahili";
-          let latestPractice = 0;
-          let highestLangXP = 0;
-          for (const [lid, prog] of Object.entries(parsed) as [string, any][]) {
-            const xp = Number(prog?.totalXP) || 0;
-            const st = Number(prog?.streak) || 0;
-            totalXP += xp;
-            if (xp > highestLangXP && latestPractice === 0) {
-              highestLangXP = xp;
-              activeLang = lid;
-            }
-            if (st > bestStreak) bestStreak = st;
-            const skills = Object.values(prog?.skills || {}) as any[];
-            for (const sk of skills) {
-              if ((sk?.lastPracticed || 0) > latestPractice) {
-                latestPractice = sk.lastPracticed;
-                activeLang = lid;
+          const progRaw = map.get("@kenyahub_course_progress_v2");
+          if (progRaw) {
+            try {
+              const parsed = JSON.parse(progRaw);
+              if (parsed && typeof parsed === "object") {
+                let totalXP = 0;
+                let bestStreak = 0;
+                let activeLang = "swahili";
+                let latestPractice = 0;
+                let highestLangXP = 0;
+                for (const [lid, prog] of Object.entries(parsed) as [string, any][]) {
+                  const xp = Number(prog?.totalXP) || 0;
+                  const st = Number(prog?.streak) || 0;
+                  totalXP += xp;
+                  if (xp > highestLangXP && latestPractice === 0) {
+                    highestLangXP = xp;
+                    activeLang = lid;
+                  }
+                  if (st > bestStreak) bestStreak = st;
+                  const skills = Object.values(prog?.skills || {}) as any[];
+                  for (const sk of skills) {
+                    if ((sk?.lastPracticed || 0) > latestPractice) {
+                      latestPractice = sk.lastPracticed;
+                      activeLang = lid;
+                    }
+                  }
+                }
+                setLearnStats({
+                  langId: activeLang,
+                  langName: COURSE_NAMES[activeLang] || "Kiswahili",
+                  totalXP,
+                  streak: bestStreak,
+                });
               }
-            }
+            } catch {}
           }
-          setLearnStats({
-            langId: activeLang,
-            langName: COURSE_NAMES[activeLang] || "Kiswahili",
-            totalXP,
-            streak: bestStreak,
-          });
         })
         .catch(() => {});
+      return () => {
+        active = false;
+      };
     }, [])
   );
 
@@ -384,13 +406,13 @@ export default function HomeScreen() {
   }, []);
 
   const matchesMatatuSearch = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
+    const q = deferredSearchQuery.trim().toLowerCase();
     if (!q) return false;
     return MATATU_KEYWORDS.some((kw) => kw.includes(q) || q.includes(kw));
-  }, [searchQuery]);
+  }, [deferredSearchQuery]);
 
   const inlineSearchResults = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
+    const q = deferredSearchQuery.trim().toLowerCase();
     if (!q) return [];
     return TOOLS.filter(
       (t) =>
@@ -400,7 +422,7 @@ export default function HomeScreen() {
         t.category.toLowerCase().includes(q) ||
         (t.keywords || []).some((k) => k.toLowerCase().includes(q))
     ).slice(0, 6);
-  }, [searchQuery]);
+  }, [deferredSearchQuery]);
 
   const matchingCourses = useMemo(() => {
     const norm = (s: string) =>
@@ -408,7 +430,7 @@ export default function HomeScreen() {
         .normalize("NFD")
         .replace(/[\u0300-\u036f'’]/g, "")
         .toLowerCase();
-    const q = norm(searchQuery.trim());
+    const q = norm(deferredSearchQuery.trim());
     if (!q) return [];
     return PUBLISHED_COURSE_SUMMARIES.filter(
       ({ config }) =>
@@ -417,16 +439,12 @@ export default function HomeScreen() {
         norm(config.family).includes(q) ||
         (config.counties || []).some((c) => norm(c).includes(q))
     ).slice(0, 3);
-  }, [searchQuery]);
+  }, [deferredSearchQuery]);
 
   const matchingMatatuRoutes = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
+    const q = deferredSearchQuery.trim().toLowerCase();
     if (!q) return [];
-    const allRoutes = Object.entries(matatuData.routes || {}).flatMap(
-      ([townSlug, routes]) =>
-        ((routes as any[]) || []).map((r) => ({ ...r, townSlug }))
-    );
-    return allRoutes
+    return ALL_MATATU_ROUTES
       .filter(
         (r) =>
           String(r.name || "").toLowerCase().includes(q) ||
@@ -439,7 +457,7 @@ export default function HomeScreen() {
           )
       )
       .slice(0, 3);
-  }, [searchQuery]);
+  }, [deferredSearchQuery]);
 
   const popular = useMemo(() => {
     const hasVisits = Object.values(visitCounts).some((c) => c > 0);
@@ -504,42 +522,21 @@ export default function HomeScreen() {
         showBrandLogo
         rightAction={
           <View style={styles.headerBadgesRow}>
-            <Pressable
-              onPress={() =>
-                router.push({
-                  pathname: "/tools/[slug]",
-                  params: { slug: "learn", lang: learnStats.langId },
-                })
-              }
-              accessibilityRole="button"
-              accessibilityLabel="Open Kenyan Language Courses"
-              style={pressableStyle([
-                styles.xpHeaderPill,
-                {
-                  backgroundColor: `${theme.gold}1E`,
-                  borderColor: `${theme.gold}50`,
-                },
-              ])}
-            >
-              <Ionicons name="flame" size={13} color={theme.gold} />
-              <Text style={[styles.xpHeaderPillText, { color: theme.gold }]}>
-                {learnStats.totalXP > 0 ? `${learnStats.totalXP} XP` : "Learn"}
-              </Text>
-            </Pressable>
-
             <View
+              accessibilityLabel="Offline ready"
               style={[
                 styles.offlineChip,
                 {
                   backgroundColor: theme.secondaryContainer,
-                  borderColor: `${theme.kenyaGreenLight}40`,
+                  borderColor: `${theme.kenyaGreenLight}38`,
                 },
               ]}
             >
-              <Ionicons
-                name="cloud-done"
-                size={12}
-                color={theme.onSecondaryContainer}
+              <View
+                style={[
+                  styles.offlineStatusDot,
+                  { backgroundColor: theme.kenyaGreenLight },
+                ]}
               />
               <Text
                 style={[

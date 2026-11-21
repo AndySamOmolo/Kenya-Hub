@@ -23,7 +23,7 @@ export const LUHYA_CONFIG: LanguageConfig = {
     "johnston-bantu-1919",
     "stam-bahanga-1929",
     "open-web-swadesh-comparative",
-    "purvis-masaba-1909",
+    "purvis-lumasaba-grammar-1907",
     "clem-jenks-sande-theory-description-2019",
     "selvanathan-bantu-iav-focus-2019"
   ]

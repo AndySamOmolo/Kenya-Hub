@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useDeferredValue } from "react";
 import Link from "next/link";
 import matatuData from "@/data/matatu-routes.json";
 import SearchInput from "@/components/ui/SearchInput";
@@ -43,8 +43,11 @@ const MATATU_HUB_FAQS = [
 
 export default function MatatuPage() {
   const [search, setSearch] = useState("");
+  const deferredSearch = useDeferredValue(search);
   const [fromStage, setFromStage] = useState("");
   const [toStage, setToStage] = useState("");
+  const deferredFromStage = useDeferredValue(fromStage);
+  const deferredToStage = useDeferredValue(toStage);
   const [plannerTriggered, setPlannerTriggered] = useState(false);
 
   // Flatten all routes from all active towns
@@ -81,8 +84,8 @@ export default function MatatuPage() {
   }, []);
 
   const searchResults = useMemo(() => {
-    if (!search.trim()) return [];
-    const q = search.toLowerCase();
+    if (!deferredSearch.trim()) return [];
+    const q = deferredSearch.toLowerCase();
     return allRoutes
       .filter(
         (r) =>
@@ -95,12 +98,12 @@ export default function MatatuPage() {
           r.stages.some((s) => s.name.toLowerCase().includes(q))
       )
       .slice(0, 10);
-  }, [search, allRoutes]);
+  }, [deferredSearch, allRoutes]);
 
   // Point-to-Point Journey Planner matching (direct corridor + CBD transfer suggestions)
   const journeyMatches = useMemo(() => {
-    const fromQ = fromStage.trim().toLowerCase();
-    const toQ = toStage.trim().toLowerCase();
+    const fromQ = deferredFromStage.trim().toLowerCase();
+    const toQ = deferredToStage.trim().toLowerCase();
     if (!fromQ || !toQ) return { direct: [] as RouteItem[], transfers: [] as { leg1: RouteItem; leg2: RouteItem }[] };
 
     const matchesStage = (r: RouteItem, q: string) =>
@@ -125,7 +128,7 @@ export default function MatatuPage() {
       if (transfers.length >= 4) break;
     }
     return { direct: [], transfers };
-  }, [fromStage, toStage, allRoutes]);
+  }, [deferredFromStage, deferredToStage, allRoutes]);
 
   // Featured routes mix across towns
   const featuredRoutes = useMemo(() => {
@@ -165,7 +168,7 @@ export default function MatatuPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-7 pb-10 sm:py-12">
+    <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-4 pb-8 sm:py-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -180,7 +183,7 @@ export default function MatatuPage() {
       />
 
       {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" data-adsense-ignore="true" className="flex items-center gap-1.5 text-xs text-text-muted mb-6">
+      <nav aria-label="Breadcrumb" data-adsense-ignore="true" className="flex items-center gap-1.5 text-xs text-text-muted mb-3 sm:mb-4">
         <Link href="/" className="hover:text-gold transition-colors">
           Home
         </Link>
@@ -190,34 +193,34 @@ export default function MatatuPage() {
         <span className="text-text-secondary">Matatu Routes Hub</span>
       </nav>
 
-      {/* Hero */}
-      <div className="relative mb-10 overflow-hidden rounded-2xl bg-gradient-to-br from-gold/10 via-kenya-green/5 to-kenya-red/5 border border-border p-6 sm:p-12">
-        <DynamicIcon emoji="🚌" className="absolute top-4 right-4 w-28 h-28 opacity-10 rotate-12 select-none text-gold pointer-events-none" />
+      {/* Hero (Compact) */}
+      <div className="relative mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gold/10 via-kenya-green/5 to-kenya-red/5 border border-border p-4 sm:p-7">
+        <DynamicIcon emoji="🚌" className="absolute top-3 right-3 w-20 h-20 opacity-10 rotate-12 select-none text-gold pointer-events-none" />
         <div className="relative z-10">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-[family-name:var(--font-outfit)] mb-3 gradient-text-kenya tracking-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-[family-name:var(--font-outfit)] mb-2 gradient-text-kenya tracking-tight">
             Kenya Matatu Routes &amp; Stages
           </h1>
-          <p className="text-text-secondary max-w-lg text-sm sm:text-base leading-relaxed mb-6">
+          <p className="text-text-secondary max-w-2xl text-xs sm:text-sm leading-relaxed mb-4">
             Find matatu routes across Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, and Thika. Search by destination, plan point-to-point stage trips, and view interactive route maps.
           </p>
 
           {/* Stats */}
-          <div className="flex flex-wrap gap-3 sm:gap-4 mb-8">
-            <div className="bg-bg-card/60 backdrop-blur border border-border rounded-xl px-4 py-2.5">
-              <span className="text-lg font-bold text-gold">{activeTownsCount}</span>
-              <span className="text-xs text-text-muted ml-1.5">Cities Covered</span>
+          <div className="flex flex-wrap gap-2 sm:gap-2.5 mb-4">
+            <div className="bg-bg-card/70 border border-border rounded-lg px-3 py-1.5">
+              <span className="text-sm sm:text-base font-bold text-gold">{activeTownsCount}</span>
+              <span className="text-[11px] sm:text-xs text-text-muted ml-1.5">Cities</span>
             </div>
-            <div className="bg-bg-card/60 backdrop-blur border border-border rounded-xl px-4 py-2.5">
-              <span className="text-lg font-bold text-gold">{allRoutes.length}</span>
-              <span className="text-xs text-text-muted ml-1.5">Mapped Routes</span>
+            <div className="bg-bg-card/70 border border-border rounded-lg px-3 py-1.5">
+              <span className="text-sm sm:text-base font-bold text-gold">{allRoutes.length}</span>
+              <span className="text-[11px] sm:text-xs text-text-muted ml-1.5">Routes</span>
             </div>
-            <div className="bg-bg-card/60 backdrop-blur border border-border rounded-xl px-4 py-2.5">
-              <span className="text-lg font-bold text-gold">{totalStages}</span>
-              <span className="text-xs text-text-muted ml-1.5">Total Stages</span>
+            <div className="bg-bg-card/70 border border-border rounded-lg px-3 py-1.5">
+              <span className="text-sm sm:text-base font-bold text-gold">{totalStages}</span>
+              <span className="text-[11px] sm:text-xs text-text-muted ml-1.5">Stages</span>
             </div>
-            <div className="bg-bg-card/60 backdrop-blur border border-border rounded-xl px-4 py-2.5">
-              <span className="text-lg font-bold text-gold">{totalSaccos}</span>
-              <span className="text-xs text-text-muted ml-1.5">SACCOs</span>
+            <div className="bg-bg-card/70 border border-border rounded-lg px-3 py-1.5">
+              <span className="text-sm sm:text-base font-bold text-gold">{totalSaccos}</span>
+              <span className="text-[11px] sm:text-xs text-text-muted ml-1.5">SACCOs</span>
             </div>
           </div>
 
@@ -261,7 +264,7 @@ export default function MatatuPage() {
       </div>
 
       {/* Point-to-Point Journey Planner (From Stage -> To Destination) */}
-      <div className="mb-12 rounded-2xl border border-gold/30 bg-bg-card p-5 sm:p-6 space-y-4">
+      <div className="mb-7 rounded-2xl border border-gold/30 bg-bg-card p-4 sm:p-5 space-y-3">
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div>
             <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary flex items-center gap-2">
@@ -436,37 +439,37 @@ export default function MatatuPage() {
         )}
       </div>
 
-      {/* Town selector */}
-      <div className="flex items-center justify-between gap-4 mb-4">
-        <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">Explore Routes by City</h2>
+      {/* Town selector (Compact) */}
+      <div className="flex items-center justify-between gap-4 mb-3">
+        <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary">Explore Routes by City</h2>
         <span className="text-xs text-text-muted">{activeTownsCount} active cities</span>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-7">
         {matatuData.towns.filter((town) => town.isActive).map((town) => (
-          <Link key={town.slug} href={`/matatu/${town.slug}/`} className="bg-bg-card border border-gold/30 rounded-xl p-4 text-center group hover:border-gold transition-all hover:shadow-lg hover:shadow-gold/5">
-            <div className="flex justify-center mb-2"><DynamicIcon emoji="🚌" className="w-8 h-8 text-gold" /></div>
-            <p className="text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{town.name}</p>
-            <p className="text-[0.6rem] text-gold mt-1 font-semibold">{((matatuData.routes as Record<string, unknown[]>)[town.slug]?.length ?? town.routeCount)} routes</p>
+          <Link key={town.slug} href={`/matatu/${town.slug}/`} className="bg-bg-card border border-gold/30 rounded-xl p-3 text-center group hover:border-gold transition-all hover:shadow-md hover:shadow-gold/5">
+            <div className="flex justify-center mb-1.5"><DynamicIcon emoji="🚌" className="w-6 h-6 text-gold" /></div>
+            <p className="text-xs sm:text-sm font-bold text-text-primary group-hover:text-gold transition-colors">{town.name}</p>
+            <p className="text-[0.65rem] text-gold mt-0.5 font-semibold">{((matatuData.routes as Record<string, unknown[]>)[town.slug]?.length ?? town.routeCount)} routes</p>
           </Link>
         ))}
       </div>
 
-      {/* Featured routes preview */}
-      <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-4">Featured Matatu Routes Across Kenya</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {/* Featured routes preview (Compact) */}
+      <h2 className="text-base sm:text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3">Featured Matatu Routes Across Kenya</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
         {featuredRoutes.map((route) => (
-          <Link key={`${route.townSlug}-${route.slug}`} href={`/matatu/${route.townSlug}/${route.slug}/`} className="bg-bg-card border border-border rounded-xl p-4 group hover:border-gold/50 transition-all">
-            <div className="flex items-start gap-3">
-              <div className="min-w-[2.5rem] px-2 h-10 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
+          <Link key={`${route.townSlug}-${route.slug}`} href={`/matatu/${route.townSlug}/${route.slug}/`} className="cv-auto bg-bg-card border border-border rounded-xl p-3 sm:p-3.5 group hover:border-gold/50 transition-all">
+            <div className="flex items-start gap-2.5">
+              <div className="min-w-[2.25rem] px-1.5 h-9 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
                 <span className="text-xs font-bold text-gold whitespace-nowrap">{route.routeNumber}</span>
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1.5">
-                  <h3 className="text-sm font-semibold text-text-primary group-hover:text-gold transition-colors break-words">{route.name}</h3>
+                  <h3 className="text-[0.85rem] font-semibold text-text-primary group-hover:text-gold transition-colors break-words leading-snug">{route.name}</h3>
                   <span className="micro-badge text-[0.55rem] bg-bg-elevated border border-border px-1.5 py-0.5 rounded text-text-muted flex-shrink-0">{route.townName}</span>
                 </div>
                 <p className="text-[0.65rem] text-text-muted mt-0.5">{route.stages.length} stages · {route.saccoName}</p>
-                <div className="flex flex-wrap items-center gap-1.5 mt-2">
+                <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
                   <span className="px-2 py-0.5 rounded-full text-[0.6rem] font-semibold bg-kenya-green/15 text-kenya-green-light">
                     Off-Peak KES {route.fareMin}
                   </span>
@@ -481,8 +484,8 @@ export default function MatatuPage() {
       </div>
 
       {/* SEO content & FAQs */}
-      <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-bg-card border border-border rounded-xl p-6">
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="bg-bg-card border border-border rounded-xl p-4 sm:p-5">
           <h2 className="text-lg font-bold font-[family-name:var(--font-outfit)] text-text-primary mb-3">
             About Kenya Matatu Routes &amp; Public Transport
           </h2>

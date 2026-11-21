@@ -11,15 +11,18 @@ const tool = TOOLS.find((t) => t.slug === "odpc-hr-retention-vault")!;
 export default function OdpcHrRetentionVaultPage() {
   const [staffCount, setStaffCount] = useState("18");
   const [annualTurnover, setAnnualTurnover] = useState("12000000");
+  const [isThirdSchedule, setIsThirdSchedule] = useState(false);
   const [usesStaffPhotos, setUsesStaffPhotos] = useState(true);
   const [recordsExitCalls, setRecordsExitCalls] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const audit = useMemo(() => {
-    const staff = Math.max(1, Number(staffCount) || 0);
+    const staff = Math.max(0, Math.floor(Number(staffCount) || 0));
     const turnover = Math.max(0, Number(annualTurnover.replace(/,/g, "")) || 0);
     const mandatoryReg =
-      staff >= utilData.odpc.staffThreshold || turnover >= utilData.odpc.turnoverThresholdKes;
+      staff >= utilData.odpc.staffThreshold ||
+      turnover >= utilData.odpc.turnoverThresholdKes ||
+      isThirdSchedule;
     // Statutory Data Protection Act (2019) Section 63 administrative fine cap:
     // Lower of KES 5,000,000 or 1% of annual turnover (F-008)
     const maxFineKes = Math.min(
@@ -38,7 +41,7 @@ export default function OdpcHrRetentionVaultPage() {
       );
     }
     return { staff, turnover, mandatoryReg, maxFineKes, riskFlags };
-  }, [staffCount, annualTurnover, usesStaffPhotos, recordsExitCalls]);
+  }, [staffCount, annualTurnover, isThirdSchedule, usesStaffPhotos, recordsExitCalls]);
 
   const copyRopaSummary = () => {
     const lines = [

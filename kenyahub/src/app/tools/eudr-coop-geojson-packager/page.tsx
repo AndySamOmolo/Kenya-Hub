@@ -14,29 +14,76 @@ function parseCoords(raw: string): [number, number][] {
     .map((line) => line.trim())
     .filter(Boolean)
     .map((line) => {
-      const parts = line.split(/[,\s]+/).map(Number);
-      return parts.length >= 2 && !Number.isNaN(parts[0]) && !Number.isNaN(parts[1])
+      const parts = line.split(/[,\s]+/).filter(Boolean).map(Number);
+      return parts.length >= 2 &&
+        Number.isFinite(parts[0]) &&
+        Number.isFinite(parts[1]) &&
+        Math.abs(parts[0]) <= 90 &&
+        Math.abs(parts[1]) <= 180
         ? ([parts[0], parts[1]] as [number, number])
         : null;
     })
     .filter((p): p is [number, number] => p !== null);
 }
 
+function segmentsIntersect(
+  a: [number, number],
+  b: [number, number],
+  c: [number, number],
+  d: [number, number]
+): boolean {
+  const ccw = (p1: [number, number], p2: [number, number], p3: [number, number]) =>
+    (p3[1] - p1[1]) * (p2[0] - p1[0]) - (p2[1] - p1[1]) * (p3[0] - p1[0]);
+  const d1 = ccw(c, d, a);
+  const d2 = ccw(c, d, b);
+  const d3 = ccw(a, b, c);
+  const d4 = ccw(a, b, d);
+  return ((d1 > 0 && d2 < 0) || (d1 < 0 && d2 > 0)) && ((d3 > 0 && d4 < 0) || (d3 < 0 && d4 > 0));
+}
+
+function hasSelfIntersection(pts: [number, number][]): boolean {
+  const n = pts.length - 1;
+  if (n < 4) return false;
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 2; j < n; j++) {
+      if (i === 0 && j === n - 1) continue;
+      if (segmentsIntersect(pts[i], pts[i + 1], pts[j], pts[j + 1])) return true;
+    }
+  }
+  return false;
+}
+
 // Approximate geodesic polygon area in hectares for small equatorial Kenyan plots (WGS84 lat, lon)
 function computeAreaHectares(coords: [number, number][]): number {
   if (coords.length < 3) return 0;
-  const avgLatRad = (coords.reduce((s, c) => s + c[0], 0) / coords.length) * (Math.PI / 180);
+  const isClosed =
+    Math.abs(coords[0][0] - coords[coords.length - 1][0]) < 1e-6 &&
+    Math.abs(coords[0][1] - coords[coords.length - 1][1]) < 1e-6;
+  const ring = isClosed ? coords.slice(0, -1) : coords;
+  if (ring.length < 3) return 0;
+  const avgLatRad = (ring.reduce((s, c) => s + c[0], 0) / ring.length) * (Math.PI / 180);
   const mPerDegLat = 110574;
   const mPerDegLon = 111320 * Math.cos(avgLatRad);
   let area = 0;
-  for (let i = 0; i < coords.length - 1; i++) {
-    const x1 = coords[i][1] * mPerDegLon;
-    const y1 = coords[i][0] * mPerDegLat;
-    const x2 = coords[i + 1][1] * mPerDegLon;
-    const y2 = coords[i + 1][0] * mPerDegLat;
+  for (let i = 0; i < ring.length; i++) {
+    const next = ring[(i + 1) % ring.length];
+    const x1 = ring[i][1] * mPerDegLon;
+    const y1 = ring[i][0] * mPerDegLat;
+    const x2 = next[1] * mPerDegLon;
+    const y2 = next[0] * mPerDegLat;
     area += x1 * y2 - x2 * y1;
   }
   return Math.abs(area) / 2 / 10000;
+}
+
+// RFC 7946 §3.1.6: Exterior rings in [lon, lat] must be counter-clockwise (signed area > 0)
+function ensureCcwLonLatRing(pts: [number, number][]): [number, number][] {
+  const lonLat: [number, number][] = pts.map(([lat, lon]) => [lon, lat]);
+  let signed = 0;
+  for (let i = 0; i < lonLat.length - 1; i++) {
+    signed += lonLat[i][0] * lonLat[i + 1][1] - lonLat[i + 1][0] * lonLat[i][1];
+  }
+  return signed < 0 ? [...lonLat].reverse() : lonLat;
 }
 
 export default function EudrCoopGeojsonPackagerPage() {
@@ -52,21 +99,25 @@ export default function EudrCoopGeojsonPackagerPage() {
     const pts = parseCoords(coordText);
     const ha = Math.max(0, Number(declaredHa) || 0);
     const acc = Math.max(0, Number(gnssAccuracy) || 0);
-    const requiresPolygon = ha >= utilData.eudr.polygonThresholdHa;
     const isClosed =
       pts.length >= 4 &&
       Math.abs(pts[0][0] - pts[pts.length - 1][0]) < 1e-6 &&
       Math.abs(pts[0][1] - pts[pts.length - 1][1]) < 1e-6;
-    const computedHa = pts.length >= 4 ? computeAreaHectares(pts) : ha;
+    const computedHa = pts.length >= 3 ? computeAreaHectares(pts) : ha;
+    const requiresPolygon = Math.max(ha, computedHa) >= utilData.eudr.polygonThresholdHa;
+    const selfIntersects = isClosed && hasSelfIntersection(pts);
     const gnssOk = acc > 0 && acc <= utilData.eudr.maxGnssAccuracyMeters;
 
     const errors: string[] = [];
-    if (!gnssOk) errors.push(`GNSS accuracy (${acc}m) exceeds the <10m EUDR field lock requirement.`);
+    if (!gnssOk) errors.push(`GNSS accuracy (${acc}m) exceeds the ≤10m EUDR field lock requirement.`);
     if (requiresPolygon && pts.length < 4) {
       errors.push("Plots >= 4.0 hectares strictly require a closed multi-vertex polygon (at least 4 vertices with first = last).");
     }
     if (requiresPolygon && pts.length >= 4 && !isClosed) {
       errors.push("Polygon ring is not closed (first and last lat/lon coordinates must match).");
+    }
+    if (requiresPolygon && isClosed && (selfIntersects || computedHa <= 0)) {
+      errors.push("Polygon geometry is invalid (self-intersecting edges or zero enclosed area).");
     }
     if (!requiresPolygon && pts.length < 1) {
       errors.push("Enter at least 1 WGS84 GPS point (lat, lon) for smallholder plots < 4.0 ha.");
@@ -88,7 +139,7 @@ export default function EudrCoopGeojsonPackagerPage() {
             eudrGeometryMode: requiresPolygon ? "Polygon (>=4ha)" : "Point (<4ha)",
           },
           geometry: requiresPolygon && pts.length >= 4
-            ? { type: "Polygon", coordinates: [pts.map(([lat, lon]) => [lon, lat])] }
+            ? { type: "Polygon", coordinates: [ensureCcwLonLatRing(pts)] }
             : { type: "Point", coordinates: pts[0] ? [pts[0][1], pts[0][0]] : [36.95, -0.4167] },
         },
       ],

@@ -18,7 +18,7 @@ export const KIKUYU_CONFIG: LanguageConfig = {
   "color": "#2E7D32",
   "sources": [
     "johnston-uganda-protectorate-1902",
-    "hemery-kikuyu-1903",
+    "hemery-kikuyu-handbook-1903",
     "kamba-kikuyu-vocabularies",
     "mcgregor-kikuyu-1904",
     "routledge-prehistoric-people-1910",

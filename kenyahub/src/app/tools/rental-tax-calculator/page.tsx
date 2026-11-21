@@ -47,21 +47,23 @@ export default function RentalTaxCalculatorPage() {
     const annualExpenses = expenses * 12;
     const annualNetIncome = Math.max(0, annualRent - annualExpenses);
 
-    const isBelowMriMin = annualRent > 0 && annualRent < 288000;
+    const mriMinAnnual = (rentalData as any).mriMinAnnual ?? 288000;
+    const isBelowMriMin = annualRent > 0 && annualRent <= mriMinAnnual;
     const isAboveMriMax = annualRent > rentalData.mriThresholdAnnual;
-    const isEligibleMri = annualRent >= 288000 && annualRent <= rentalData.mriThresholdAnnual;
+    const isEligibleMri = annualRent > mriMinAnnual && annualRent <= rentalData.mriThresholdAnnual;
 
-    const mriMonthly = isBelowMriMin ? 0 : Math.round(rent * rentalData.mriRate);
-    const mriAnnual = isBelowMriMin ? 0 : Math.round(annualRent * rentalData.mriRate);
+    const mriMonthly = isEligibleMri ? Math.round(rent * rentalData.mriRate) : 0;
+    const mriAnnual = mriMonthly * 12;
 
     const netGraduatedAnnual = computeAnnualGraduatedTax(annualNetIncome);
     const netGraduatedMonthly = Math.round(netGraduatedAnnual / 12);
 
-    const betterRegime = isAboveMriMax
-      ? "net"
-      : mriAnnual <= netGraduatedAnnual
-      ? "mri"
-      : "net";
+    const betterRegime =
+      isAboveMriMax || isBelowMriMin
+        ? "net"
+        : mriAnnual <= netGraduatedAnnual
+        ? "mri"
+        : "net";
     const annualSavings = Math.abs(mriAnnual - netGraduatedAnnual);
 
     return {
@@ -177,11 +179,15 @@ export default function RentalTaxCalculatorPage() {
                   Monthly Rental Income (7.5% MRI)
                 </span>
                 <p className="text-2xl font-black text-gold mt-1 tabular-nums whitespace-nowrap">
-                  KES {calc.mriMonthly.toLocaleString("en-KE")}
+                  {calc.isAboveMriMax
+                    ? "Ineligible"
+                    : `KES ${calc.mriMonthly.toLocaleString("en-KE")}`}
                 </p>
                 <p className="text-[0.6875rem] text-text-secondary mt-1 tabular-nums">
-                  {calc.isBelowMriMin
-                    ? "Exempt (< KES 288,000/yr MRI floor)"
+                  {calc.isAboveMriMax
+                    ? "Exceeds KES 15M/yr cap — file Net Income Tax"
+                    : calc.isBelowMriMin
+                    ? "Outside MRI (≤ KES 288,000/yr) — declare on annual return"
                     : `Annual: KES ${calc.mriAnnual.toLocaleString("en-KE")} · File on KRA iTax by 20th`}
                 </p>
               </div>
@@ -204,6 +210,8 @@ export default function RentalTaxCalculatorPage() {
                 <p className="text-lg font-bold text-kenya-green-light mt-1">
                   {calc.isAboveMriMax
                     ? "Net Graduated Tax (Mandatory)"
+                    : calc.isBelowMriMin
+                    ? "Annual Income Tax Return"
                     : calc.betterRegime === "mri"
                     ? "7.5% MRI Wins"
                     : "Net Graduated Tax Wins"}

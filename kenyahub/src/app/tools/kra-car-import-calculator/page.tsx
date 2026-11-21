@@ -46,7 +46,12 @@ export default function KraCarImportCalculatorPage() {
     let exciseRate = crspData.rates.exciseSmallPetrol;
     if (fuel === "electric") exciseRate = crspData.rates.exciseElectric;
     else if (fuel === "petrol")
-      exciseRate = cc > 1500 ? crspData.rates.exciseLargePetrol : crspData.rates.exciseSmallPetrol;
+      exciseRate =
+        cc > 3000
+          ? crspData.rates.exciseLargePetrol
+          : cc > 1500
+          ? ((crspData.rates as any).exciseMidPetrol ?? 0.25)
+          : crspData.rates.exciseSmallPetrol;
     else if (fuel === "diesel")
       exciseRate = cc > 2500 ? crspData.rates.exciseLargeDiesel : crspData.rates.exciseSmallDiesel;
 
@@ -55,9 +60,9 @@ export default function KraCarImportCalculatorPage() {
     const idfRate = crspData.rates.idf;
     const rdlRate = crspData.rates.rdl;
 
-    const taxMultiplier =
-      (1 + importDutyRate) * (1 + exciseRate) * (1 + vatRate) + idfRate + rdlRate;
-    const baseNewCustomsValue = crsp / (taxMultiplier * 1.08);
+    // Official KRA CRSP reverse formula: strip 25% dealer margin (÷ 1.25) and Import/Excise/VAT cascade
+    const taxMultiplier = (1 + importDutyRate) * (1 + exciseRate) * (1 + vatRate);
+    const baseNewCustomsValue = crsp / (taxMultiplier * 1.25);
     const customsValue = Math.max(0, baseNewCustomsValue * (1 - depRate));
 
     const importDuty = customsValue * importDutyRate;
@@ -293,7 +298,7 @@ export default function KraCarImportCalculatorPage() {
                   inputMode="numeric"
                   value={usdRate}
                   placeholder="129.5"
-                  onChange={(e) => setUsdRate(e.target.value.replace(/[^0-9.]/g, ""))}
+                  onChange={(e) => setUsdRate(e.target.value.replace(/[^0-9.]/g, "").replace(/(\..*)\./g, "$1"))}
                   className="w-full pl-3.5 pr-10 py-2.5 rounded-lg bg-[var(--bg-elevated)] border border-[var(--border)] dark:border-white/15 text-sm text-[var(--text-primary)] tabular-nums"
                   style={{ paddingRight: "2.5rem" }}
                 />

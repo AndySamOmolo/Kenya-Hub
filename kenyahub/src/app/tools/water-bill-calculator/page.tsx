@@ -128,7 +128,7 @@ export default function WaterBillCalculatorPage() {
               onChange={(e) => setIncludeSewer(e.target.checked)}
               className="w-4 h-4 accent-gold rounded cursor-pointer"
             />
-            <span>Connected to county sewer line (applies 75% sewerage surcharge)</span>
+            <span>Connected to county sewer line (applies {Math.round(results.utility.sewerageRate * 100)}% sewerage surcharge)</span>
           </label>
         </div>
 

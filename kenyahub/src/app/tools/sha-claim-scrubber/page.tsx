@@ -41,13 +41,15 @@ export default function ShaClaimScrubberPage() {
       if (ok) score += t.weight;
       else missing.push(t.label);
     }
-    const riskLevel =
-      score >= 90
-        ? "Low Risk (Ready to Submit)"
-        : score >= 60
-        ? "Medium Rejection Risk"
-        : "High Rejection Risk";
-    return { score, missing, riskLevel, amount, days };
+    const windowExpired = days > utilData.sha.submissionWindowDays;
+    const riskLevel = windowExpired
+      ? "Blocked — Submission Window Expired"
+      : missing.length === 0
+      ? "Low Risk (Ready to Submit)"
+      : score >= 60
+      ? "Medium Rejection Risk"
+      : "High Rejection Risk";
+    return { score, missing, riskLevel, amount, days, windowExpired };
   }, [checked, daysSinceDischarge, claimAmount]);
 
   const copyAppealChecklist = () => {

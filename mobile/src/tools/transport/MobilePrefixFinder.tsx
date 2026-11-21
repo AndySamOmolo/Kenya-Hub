@@ -37,18 +37,21 @@ export function MobilePrefixFinder() {
   }, []);
 
   const carrier = useMemo(() => {
-    let prefix = clean.substring(0, 4);
-    if (clean.startsWith("254")) {
-      prefix = "0" + clean.substring(3, 6);
-    }
+    let p = clean;
+    if (p.startsWith("00254")) p = p.slice(5);
+    else if (p.startsWith("254")) p = p.slice(3);
+    if (p.startsWith("0")) p = p.slice(1);
+    if (/^[17]/.test(p)) p = "0" + p;
+    const prefix = p.substring(0, 4);
     if (prefix.length < 4 || !prefix.startsWith("0")) return null;
     for (const net of allNetworks) {
       if (net.prefixes.includes(prefix)) {
-        return { ...net, matchedPrefix: prefix };
+        return { ...net, matchedPrefix: prefix, isAllocated: true };
       }
     }
     return {
       name: "Unknown / Unallocated Prefix",
+      isAllocated: false,
       color: theme.textMuted,
       matchedPrefix: prefix,
       prefixes: [],

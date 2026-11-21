@@ -19,7 +19,7 @@ interface AmortizationYearRow {
 /** 4. HELB Loan Calculator (mirrors kenyahub/src/app/tools/helb-calculator/page.tsx) */
 export function HelbCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
-  const currentYear = 2026;
+  const currentYear = new Date().getFullYear();
   const [loanText, setLoanText] = useState("240000");
   const [yearBorrowed, setYearBorrowed] = useState<number>(2018);
   const [salaryText, setSalaryText] = useState("50000");
@@ -30,11 +30,13 @@ export function HelbCalculator() {
 
   const results = useMemo(() => {
     const annualRate = (helbData.interestRate || 4) / 100;
-    const yearsSinceBorrow = Math.max(0, currentYear - yearBorrowed);
-    const accruedInterest = Math.round(loanAmount * annualRate * yearsSinceBorrow);
-    const accruedLedgerFees = yearsSinceBorrow * HELB_ANNUAL_LEDGER_FEE;
-    const defaultPenaltyTotal = defaultMonths * HELB_DEFAULT_PENALTY_MONTHLY;
-    const currentBalance = loanAmount + accruedInterest + accruedLedgerFees + defaultPenaltyTotal;
+    const annualLedger = helbData.annualLedgerFee ?? HELB_ANNUAL_LEDGER_FEE;
+    const monthlyPenalty = helbData.monthlyDefaultPenalty ?? HELB_DEFAULT_PENALTY_MONTHLY;
+    const yearsSinceBorrow = loanAmount > 0 ? Math.max(0, currentYear - yearBorrowed) : 0;
+    const accruedInterest = loanAmount > 0 ? Math.round(loanAmount * annualRate * yearsSinceBorrow) : 0;
+    const accruedLedgerFees = loanAmount > 0 ? yearsSinceBorrow * annualLedger : 0;
+    const defaultPenaltyTotal = loanAmount > 0 ? defaultMonths * monthlyPenalty : 0;
+    const currentBalance = loanAmount > 0 ? loanAmount + accruedInterest + accruedLedgerFees + defaultPenaltyTotal : 0;
 
     const monthlyBySalary = Math.round(
       grossSalary * ((helbData.minimumSalaryPercent || 10) / 100)
@@ -92,7 +94,7 @@ export function HelbCalculator() {
 
     const yearsToRepay = Math.round((monthsToRepay / 12) * 10) / 10;
     const completionYear =
-      monthsToRepay > 0 ? currentYear + Math.ceil(monthsToRepay / 12) : currentYear;
+      monthsToRepay > 0 ? currentYear + Math.max(0, Math.ceil(monthsToRepay / 12) - 1) : currentYear;
     const totalPayable =
       currentBalance + Math.round(repaymentInterestTotal + repaymentLedgerTotal);
 

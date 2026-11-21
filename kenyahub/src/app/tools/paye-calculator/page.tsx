@@ -92,7 +92,7 @@ function computePayslip(
   );
   const paye = calculatePAYE(taxableIncome, insurancePremium);
   const statutoryDeductions = paye + sha + nssfEmployee + housingLevy;
-  const netPay = gross - statutoryDeductions - pensionContribution;
+  const netPay = Math.max(0, gross - statutoryDeductions - pensionContribution);
 
   const employerNSSF = nssfEmployee;
   const employerHousing =
@@ -128,8 +128,20 @@ function solveGrossForTargetNet(
 ): number {
   if (targetNet <= 0) return 0;
   let low = targetNet;
-  let high = targetNet * 2.2 + 50000;
-  for (let i = 0; i < 40; i++) {
+  let high = (targetNet + pensionContribution) * 2.2 + 50000;
+  while (
+    computePayslip(
+      high,
+      pensionContribution,
+      mortgageInterest,
+      insurancePremium,
+      nssfTier1Only
+    ).netPay < targetNet &&
+    high < 1e10
+  ) {
+    high *= 2;
+  }
+  for (let i = 0; i < 60; i++) {
     const mid = (low + high) / 2;
     const res = computePayslip(
       mid,

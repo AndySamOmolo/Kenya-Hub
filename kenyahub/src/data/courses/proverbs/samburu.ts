@@ -31,7 +31,7 @@ export const SAMBURU_PROVERBS: Proverb[] = [
     indigenous: "Enkanyit naisho ltung'ani nkarn sidai",
     literalTranslation: 'Respect is what gives a person a good name.',
     meaning: 'True honor in Samburu society comes fromnkanyit (deep respect, restraint, and reverence for elders and age-mates).',
-    category: 'respect',
+    category: 'humility',
     culturalNote: "'Nkanyit' is the foundational moral virtue of Samburu social life across all age-sets."
   },
   {

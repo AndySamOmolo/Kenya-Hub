@@ -34,12 +34,12 @@ const careerRequirements = [
   { career: "Dental Surgery & Pharmacy", minGrade: "A-", minPoints: 11 },
   { career: "Civil, Electrical & Mechanical Engineering", minGrade: "B+", minPoints: 10 },
   { career: "Bachelor of Laws (LL.B.)", minGrade: "B+", minPoints: 10 },
-  { career: "Architecture & Quantity Surveying", minGrade: "B", minPoints: 9 },
+  { career: "Architecture & Quantity Surveying", minGrade: "B+", minPoints: 10 },
   { career: "Computer Science & Software Engineering", minGrade: "B", minPoints: 9 },
   { career: "Bachelor of Science in Nursing (BScN)", minGrade: "C+", minPoints: 7 },
   { career: "Bachelor of Education (Arts / Science)", minGrade: "C+", minPoints: 7 },
   { career: "Bachelor of Commerce (BCom) & Economics", minGrade: "C+", minPoints: 7 },
-  { career: "TVET / KMTC Diploma Courses", minGrade: "C", minPoints: 6 },
+  { career: "TVET / KMTC Diploma Courses", minGrade: "C-", minPoints: 5 },
   { career: "Artisan & Certificate Courses", minGrade: "D+", minPoints: 4 },
 ];
 
@@ -74,9 +74,9 @@ export default function KCSEGradeCalculatorPage() {
     const math = subjectGrades[2];
     const filledCount = subjectGrades.filter(Boolean).length;
 
-    if (!english || !math || filledCount < 7) return null;
+    if ((!english && !kiswahili) || !math || filledCount < 7) return null;
 
-    const englishPoints = gradePoints[english];
+    const englishPoints = english ? gradePoints[english] : 0;
     const kiswahiliPoints = kiswahili ? gradePoints[kiswahili] : 0;
     const mathPoints = gradePoints[math];
     const bestLangPoints = Math.max(englishPoints, kiswahiliPoints);

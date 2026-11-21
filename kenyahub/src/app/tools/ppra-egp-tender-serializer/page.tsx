@@ -50,7 +50,7 @@ export default function PpraEgpTenderSerializerPage() {
       return { ...d, startPage, endPage };
     });
     const totalPages = cursor - 1;
-    const missingCritical = docs.filter((d) => d.critical && !d.included);
+    const missingCritical = docs.filter((d) => d.critical && (!d.included || d.pages <= 0));
     const uninitialed = docs.filter((d) => d.included && !d.initialed);
     const validityOk = Number(bidValidityDays) >= 120;
     return { rows, totalPages, missingCritical, uninitialed, validityOk };
@@ -121,12 +121,12 @@ export default function PpraEgpTenderSerializerPage() {
                 Continuous Bates Range (MR1–MR11)
               </span>
               <span className="text-lg font-black text-text-primary tabular-nums">
-                0001 – {fmtBates(Math.max(1, plan.totalPages))} ({plan.totalPages} pp)
+                {plan.totalPages > 0 ? `0001 – ${fmtBates(plan.totalPages)} (${plan.totalPages} pp)` : "No pages included (0 pp)"}
               </span>
             </div>
           </div>
 
-          {(plan.missingCritical.length > 0 || plan.uninitialed.length > 0) && (
+          {(plan.missingCritical.length > 0 || plan.uninitialed.length > 0 || !plan.validityOk) && (
             <div
               role="status"
               aria-live="polite"
@@ -134,8 +134,9 @@ export default function PpraEgpTenderSerializerPage() {
             >
               <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
               <div>
-                Disqualification risk: {plan.missingCritical.length} missing critical mandatory item(s) and{" "}
-                {plan.uninitialed.length} uninitialed section(s).
+                Disqualification risk: {plan.missingCritical.length} missing critical mandatory item(s),{" "}
+                {plan.uninitialed.length} uninitialed section(s)
+                {!plan.validityOk ? `, and bid validity (${bidValidityDays || 0} days) is below the 120-day minimum` : ""}.
               </div>
             </div>
           )}
@@ -177,7 +178,7 @@ export default function PpraEgpTenderSerializerPage() {
                         onChange={(e) =>
                           setDocs((prev) =>
                             prev.map((d, i) =>
-                              i === idx ? { ...d, pages: Math.max(0, Number(e.target.value) || 0) } : d
+                              i === idx ? { ...d, pages: Math.max(0, Math.floor(Number(e.target.value) || 0)) } : d
                             )
                           )
                         }

@@ -10,6 +10,7 @@ import kplcData from "../../shared/data/kplc-tariff.json";
 export function KplcTokenCalculator() {
   const { theme, styles } = useDynamicStyles(createStyles);
   const [amountText, setAmountText] = useState("1000");
+  const [tariffMode, setTariffMode] = useState<"lifeline" | "ordinary" | "commercial">("lifeline");
   const amountPaid = Math.max(0, Number(amountText.replace(/,/g, "")) || 0);
 
   const result = useMemo(() => {
@@ -17,62 +18,50 @@ export function KplcTokenCalculator() {
     const vatRate = (kplcData.levies.vat || 16) / 100;
     const fixedChargeWithVat = fixedCharge * (1 + vatRate);
 
-    const levyPerUnit =
-      (kplcData.levies.repLevy || 0) +
-      (kplcData.levies.refLevy || 0) +
-      (kplcData.levies.epraLevy || 0) +
-      (kplcData.levies.warcLevy || 0);
     const fccPerUnit = kplcData.fuelCostCharge.rate;
     const ferfa = kplcData.forexAdjustment.rate;
+    const iaPerUnit = kplcData.levies.refLevy || 0;
+    const epraLevy = kplcData.levies.epraLevy || 0;
+    const wraLevy = kplcData.levies.warcLevy || 0;
+    const repRate = (kplcData.levies as any).repLevyRate ?? 0.05;
 
     const amountForUnits = Math.max(0, amountPaid - fixedChargeWithVat);
+    const bandIdx = tariffMode === "lifeline" ? 0 : tariffMode === "ordinary" ? 1 : 2;
+    const selectedBand =
+      (kplcData.energyBands || [])[bandIdx] ||
+      (kplcData.energyBands || [])[0] || { label: "Domestic Lifeline", rate: 12.23 };
+    const baseRate = selectedBand.rate;
+    const repPerUnit = baseRate * repRate;
 
-    let remainingAmount = amountForUnits;
-    let totalUnits = 0;
+    // 16% VAT applies ONLY to Base Energy + FCC + FERFA + Inflation Adjustment
+    const vatablePerUnit = baseRate + fccPerUnit + ferfa + iaPerUnit;
+    const vatPerUnit = vatablePerUnit * vatRate;
+    const exemptLeviesPerUnit = repPerUnit + epraLevy + wraLevy;
+    const totalCostPerUnit = vatablePerUnit + vatPerUnit + exemptLeviesPerUnit;
+
+    const rawUnits = totalCostPerUnit > 0 ? amountForUnits / totalCostPerUnit : 0;
+    const totalUnits = Math.round(rawUnits * 100) / 100;
     const breakdown: {
       band: string;
       units: number;
       rate: number;
       cost: number;
-    }[] = [];
+    }[] =
+      totalUnits > 0
+        ? [
+            {
+              band: selectedBand.label,
+              units: totalUnits,
+              rate: baseRate,
+              cost: Math.round(amountForUnits * 100) / 100,
+            },
+          ]
+        : [];
 
-    for (const band of kplcData.energyBands || []) {
-      if (remainingAmount <= 0) break;
-      const bandMax = band.max ?? 100000;
-      const bandMin = band.min;
-      const bandCapacity = bandMin === 0 ? bandMax : bandMax - bandMin + 1;
-
-      const unitCostBeforeVat = band.rate + levyPerUnit + fccPerUnit + ferfa;
-      const unitCostWithVat = unitCostBeforeVat * (1 + vatRate);
-
-      const rawUnitsInBand = Math.min(
-        bandCapacity,
-        remainingAmount / unitCostWithVat
-      );
-      const maxUnitsInBand = Math.round(rawUnitsInBand * 100) / 100;
-      const costForBand = rawUnitsInBand * unitCostWithVat;
-
-      if (maxUnitsInBand > 0) {
-        breakdown.push({
-          band: band.label,
-          units: maxUnitsInBand,
-          rate: band.rate,
-          cost: Math.round(costForBand * 100) / 100,
-        });
-        totalUnits = Math.round((totalUnits + rawUnitsInBand) * 100) / 100;
-        remainingAmount = Math.max(0, remainingAmount - costForBand);
-      }
-    }
-
-    const totalEnergyCost = breakdown.reduce(
-      (sum, b) => sum + b.units * b.rate,
-      0
-    );
-    const totalLevies = totalUnits * levyPerUnit;
-    const totalFCC = totalUnits * (fccPerUnit + ferfa);
-    const totalVAT =
-      (totalEnergyCost + totalLevies + totalFCC) * vatRate +
-      fixedCharge * vatRate;
+    const totalEnergyCost = rawUnits * baseRate;
+    const totalLevies = rawUnits * (exemptLeviesPerUnit + iaPerUnit);
+    const totalFCC = rawUnits * (fccPerUnit + ferfa);
+    const totalVAT = rawUnits * vatPerUnit;
 
     return {
       totalUnits,
@@ -86,10 +75,45 @@ export function KplcTokenCalculator() {
       effectiveCostPerUnit:
         totalUnits > 0 ? Math.round((amountPaid / totalUnits) * 100) / 100 : 0,
     };
-  }, [amountPaid]);
+  }, [amountPaid, tariffMode]);
 
   return (
     <View style={styles.toolWrap}>
+      <Text style={styles.subHeading}>EPRA Tariff Category</Text>
+      <ExpandablePillRow style={{ marginBottom: 4 }}>
+        {(
+          [
+            { id: "lifeline", label: "DC1 Lifeline" },
+            { id: "ordinary", label: "DC2 Ordinary" },
+            { id: "commercial", label: "SC1 Commercial" },
+          ] as const
+        ).map((t) => {
+          const active = tariffMode === t.id;
+          return (
+            <Pressable
+              key={t.id}
+              onPress={() => setTariffMode(t.id)}
+              style={[
+                styles.chip,
+                active && {
+                  backgroundColor: theme.primaryContainer,
+                  borderColor: theme.gold,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.chipText,
+                  active && { color: theme.gold, fontFamily: "Outfit_700Bold" },
+                ]}
+              >
+                {t.label}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </ExpandablePillRow>
+
       <KESInput
         label="Amount to Purchase (KES)"
         value={amountText}

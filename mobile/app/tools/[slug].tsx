@@ -249,6 +249,17 @@ export default function ToolDetailScreen() {
   const safeTop = Math.max(insets.top, Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0);
   const effectiveSlug = slug === "cbc-grade-age" ? "cbc-curriculum" : slug;
   const tool = TOOLS.find((item) => item.slug === effectiveSlug);
+  const sourceMeta = tool
+    ? (
+        toolDataSources.tools as Record<
+          string,
+          { official?: boolean; sourceUrl?: string; lastUpdated?: string }
+        >
+      )[tool.slug]
+    : undefined;
+  const officialSourceUrl = sourceMeta?.sourceUrl ?? null;
+  const isOfficialCivicTool = Boolean(sourceMeta?.official);
+
   const isLanguageCourseScreen = tool?.slug === "learn";
   const isNonCalculatorTool = Boolean(
     tool &&
@@ -540,7 +551,13 @@ export default function ToolDetailScreen() {
       case "ardhisasa-cad-title-auditor":
         return <ArdhisasaCadTitleAuditorTool />;
       default:
-        return <AirtimeDrainTool />;
+        return (
+          <View style={{ padding: 20, alignItems: "center" }}>
+            <Text style={{ color: theme.textSecondary, fontSize: 13 }}>
+              This tool is not available in this app version yet.
+            </Text>
+          </View>
+        );
     }
   };
 
@@ -661,27 +678,67 @@ export default function ToolDetailScreen() {
                 { borderTopColor: theme.outlineVariant },
               ]}
             >
-
-              <View
-                style={[
-                  styles.sourceTag,
-                  {
-                    backgroundColor: theme.surfaceContainerHigh,
-                    borderColor: theme.outlineVariant,
-                  },
-                ]}
-              >
-                <Ionicons
-                  name="shield-checkmark"
-                  size={13}
-                  color={theme.kenyaGreenLight}
-                />
-                <Text
-                  style={[styles.sourceText, { color: theme.textSecondary }]}
+              {officialSourceUrl ? (
+                <Pressable
+                  accessibilityRole="link"
+                  accessibilityLabel={`Open official source: ${tool.dataSource}`}
+                  android_ripple={androidRipple(theme.rippleColor)}
+                  onPress={() => {
+                    triggerHaptic(6);
+                    Linking.openURL(officialSourceUrl).catch(() => {});
+                  }}
+                  style={pressableStyle([
+                    styles.sourceTag,
+                    {
+                      backgroundColor: theme.surfaceContainerHigh,
+                      borderColor: `${theme.kenyaGreenLight}55`,
+                    },
+                  ])}
                 >
-                  {tool.dataSource}
-                </Text>
-              </View>
+                  <Ionicons
+                    name="shield-checkmark"
+                    size={13}
+                    color={theme.kenyaGreenLight}
+                  />
+                  <Text
+                    style={[
+                      styles.sourceText,
+                      {
+                        color: theme.kenyaGreenLight,
+                        textDecorationLine: "underline",
+                      },
+                    ]}
+                  >
+                    {tool.dataSource}
+                  </Text>
+                  <Ionicons
+                    name="open-outline"
+                    size={11}
+                    color={theme.kenyaGreenLight}
+                  />
+                </Pressable>
+              ) : (
+                <View
+                  style={[
+                    styles.sourceTag,
+                    {
+                      backgroundColor: theme.surfaceContainerHigh,
+                      borderColor: theme.outlineVariant,
+                    },
+                  ]}
+                >
+                  <Ionicons
+                    name="shield-checkmark"
+                    size={13}
+                    color={theme.kenyaGreenLight}
+                  />
+                  <Text
+                    style={[styles.sourceText, { color: theme.textSecondary }]}
+                  >
+                    {tool.dataSource}
+                  </Text>
+                </View>
+              )}
 
               <View
                 style={[
@@ -698,6 +755,55 @@ export default function ToolDetailScreen() {
                 </Text>
               </View>
             </View>
+
+            {isOfficialCivicTool && (
+              <View
+                style={[
+                  styles.govDisclaimerBox,
+                  {
+                    backgroundColor: theme.surfaceContainerHigh,
+                    borderColor: `${theme.gold}45`,
+                  },
+                ]}
+              >
+                <Ionicons
+                  name="information-circle-outline"
+                  size={15}
+                  color={theme.gold}
+                  style={{ marginTop: 1 }}
+                />
+                <View style={{ flex: 1, gap: 2 }}>
+                  <Text
+                    style={[
+                      styles.govDisclaimerText,
+                      { color: theme.textSecondary },
+                    ]}
+                  >
+                    Independent app — KenyaHub is not affiliated with, endorsed
+                    by, or representing the Government of Kenya or any statutory
+                    agency. Verify final figures directly on the official portal.
+                  </Text>
+                  {officialSourceUrl && (
+                    <Pressable
+                      accessibilityRole="link"
+                      onPress={() => {
+                        triggerHaptic(6);
+                        Linking.openURL(officialSourceUrl).catch(() => {});
+                      }}
+                    >
+                      <Text
+                        style={[
+                          styles.govDisclaimerLink,
+                          { color: theme.kenyaGreenLight },
+                        ]}
+                      >
+                        Official source: {officialSourceUrl}
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
+              </View>
+            )}
           </View>
         )}
 
@@ -1466,6 +1572,25 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     borderRadius: 8,
     borderWidth: 1,
+  },
+  govDisclaimerBox: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 8,
+    marginTop: 8,
+    padding: 9,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  govDisclaimerText: {
+    fontFamily: "Inter_400Regular",
+    fontSize: 11,
+    lineHeight: 15.5,
+  },
+  govDisclaimerLink: {
+    fontFamily: "Inter_600SemiBold",
+    fontSize: 11,
+    textDecorationLine: "underline",
   },
   sourceText: {
     fontFamily: "Inter_500Medium",

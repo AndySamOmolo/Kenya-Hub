@@ -8,7 +8,7 @@
   "counties": [
     "Busia"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-17",
   "contributorNote": "Teso (Ateso / Elgumi) vocabulary compiled from C. W. Hobley (1902), Sir Harry H. Johnston (1902), Rev. J. B. Purvis (1909 \"Through Uganda to Mount Elgon\"), Archdeacon A. L. Kitching (1915 \"A Handbook of the Ateso Language\"), Rev. John Roscoe (1915 \"The Northern Bantu\", Part V \"The Bateso\" & Kinship Table pp. 257–293), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0)).",
@@ -71,6 +71,12 @@
           "translation": "Esokoni",
           "pronunciation": "esokoni",
           "context": "Sunbird AI SALT Parallel Corpus (https://huggingface.co/datasets/Sunbird/salt, CC-BY-SA-4.0)"
+        },
+        {
+          "english": "how do! good-bye; well done; thank you",
+          "translation": "yoga!",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 52, 89 · Universal greeting"
         }
       ]
     },
@@ -243,6 +249,24 @@
           "english": "Stone",
           "translation": "amoru",
           "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "eight (8)",
+          "translation": "akankauni",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 23, 55 · Cardinal numeral · Note: f."
+        },
+        {
+          "english": "nine (9)",
+          "translation": "akan kaun'won",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 110 · Cardinal numeral · Note: f."
+        },
+        {
+          "english": "ten (10)",
+          "translation": "atomon",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 23, 59 · Cardinal numeral · Note: f."
         }
       ]
     },
@@ -523,6 +547,72 @@
           "english": "Sister-in-law (wife's sister or husband's sister, Bateso)",
           "translation": "Akamuran",
           "context": "Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Part VI Ch. XXIV: Bateso Terms of Relationship (pp. 273–274, Public Domain)"
+        },
+        {
+          "english": "I, me",
+          "translation": "eon'",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 44 · Personal pronoun (full separable)"
+        },
+        {
+          "english": "thou, thee",
+          "translation": "jo",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 44 · Personal pronoun"
+        },
+        {
+          "english": "he, him, it",
+          "translation": "nes, n'es",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 44 · Personal pronoun"
+        },
+        {
+          "english": "we, us (inclusive)",
+          "translation": "oni",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 44 · Personal pronoun"
+        },
+        {
+          "english": "we, us (exclusive)",
+          "translation": "syo",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 44 · Personal pronoun"
+        },
+        {
+          "english": "you (pl.)",
+          "translation": "yes",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 44 · Personal pronoun"
+        },
+        {
+          "english": "they, them",
+          "translation": "kes",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 44 · Personal pronoun"
+        },
+        {
+          "english": "woman, wife",
+          "translation": "aberu",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 53 · Noun · Note: pl. an'or"
+        },
+        {
+          "english": "kingdom",
+          "translation": "ajakanut",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 54 · Noun"
+        },
+        {
+          "english": "word, reason, matter, fault",
+          "translation": "akirot",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 55 · Noun · Note: pl. -ro"
+        },
+        {
+          "english": "man, male",
+          "translation": "ekilyokit",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 66 · Noun · Note: pl. -lyok"
         }
       ]
     },
@@ -873,6 +963,72 @@
           "english": "To hear",
           "translation": "akarar",
           "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "leg, foot",
+          "translation": "akeju",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 55 · Noun · Note: pl. -jen"
+        },
+        {
+          "english": "lip, mouth",
+          "translation": "akitok",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 55 · Noun · Note: pl. -tuke"
+        },
+        {
+          "english": "eye; spring of water",
+          "translation": "akon'",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 56 · Noun · Note: pl. -konen"
+        },
+        {
+          "english": "head, top, root",
+          "translation": "akou",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 56 · Noun · Note: pl. -kwes"
+        },
+        {
+          "english": "body, carcase",
+          "translation": "akwan",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 56 · Noun · Note: pl. awat"
+        },
+        {
+          "english": "spear",
+          "translation": "akwara",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 56 · Noun · Note: pl. -ras"
+        },
+        {
+          "english": "tongue; language",
+          "translation": "an'ajep",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 57, 107 · Noun · Note: pl. -pa"
+        },
+        {
+          "english": "blood",
+          "translation": "awokot",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 59 · Noun · Note: pl."
+        },
+        {
+          "english": "tooth",
+          "translation": "ekelai",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 66 · Noun · Note: pl. -la"
+        },
+        {
+          "english": "nostril, nose",
+          "translation": "ekume",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 67 · Noun · Note: pl. -es"
+        },
+        {
+          "english": "heart",
+          "translation": "etao",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 69 · Noun · Note: pl. -ono"
         }
       ]
     },
@@ -1230,6 +1386,36 @@
           "english": "Dog",
           "translation": "ekingoku",
           "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "beer",
+          "translation": "ajon",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 54 · Noun · Note: pl. -non"
+        },
+        {
+          "english": "goat",
+          "translation": "akine",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 55 · Noun · Note: pl. -eyi"
+        },
+        {
+          "english": "cow, cattle",
+          "translation": "akiten'",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 55 · Noun · Note: pl. -tuku"
+        },
+        {
+          "english": "buffalo",
+          "translation": "ekosobwan",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 67 · Noun · Note: pl. -bwa"
+        },
+        {
+          "english": "sheep, ram",
+          "translation": "emerekek",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 67 · Noun · Note: pl. -kin"
         }
       ]
     },
@@ -1508,6 +1694,48 @@
           "english": "Night",
           "translation": "akwari",
           "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "river, swamp",
+          "translation": "acore",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 54 · Noun · Note: pl. -rin"
+        },
+        {
+          "english": "disease, sickness",
+          "translation": "adeka",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 54 · Noun · Note: pl. -esia"
+        },
+        {
+          "english": "star",
+          "translation": "akacerit",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 54 · Noun · Note: pl. -re"
+        },
+        {
+          "english": "rain",
+          "translation": "akiru",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 55 · Noun"
+        },
+        {
+          "english": "sky, heaven",
+          "translation": "akuju",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 56 · Noun"
+        },
+        {
+          "english": "ground, land, country",
+          "translation": "akwapu",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 56 · Noun · Note: pl. -pin"
+        },
+        {
+          "english": "lake, sea, big river",
+          "translation": "an'ololo",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 57 · Noun · Note: pl. -lin"
         }
       ]
     },
@@ -1724,6 +1952,24 @@
           "english": "To drink",
           "translation": "akimata",
           "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "to drink",
+          "translation": "akimat",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 32–33 · Conjugation 5 · Note: Pres. amasi, imasi, kimasi, amasite; Imp. komat/komata"
+        },
+        {
+          "english": "salt",
+          "translation": "abalan'",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 53 · Noun · Note: pl. -n'a"
+        },
+        {
+          "english": "milk, sap",
+          "translation": "akile",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 55 · Noun · Note: pl."
         }
       ]
     },
@@ -1849,6 +2095,24 @@
           "english": "Bow",
           "translation": "Akau",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Elgumi."
+        },
+        {
+          "english": "kraal",
+          "translation": "aujo",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 59 · Noun · Note: pl. -joi"
+        },
+        {
+          "english": "knife",
+          "translation": "ekilen'",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 66 · Noun · Note: pl. -n'a"
+        },
+        {
+          "english": "house",
+          "translation": "etogo",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 70 · Noun · Note: pl. -oi"
         }
       ]
     },
@@ -2197,6 +2461,18 @@
           "english": "To see",
           "translation": "alun",
           "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "to know",
+          "translation": "akijeni",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 71 · Verb"
+        },
+        {
+          "english": "to love",
+          "translation": "amina",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 77 · Verb"
         }
       ]
     },
@@ -2361,6 +2637,18 @@
           "translation": "Alosit / Akerit",
           "pronunciation": "alosit",
           "context": "CLDF ASJP v20 Wordlist TESO (Vossen 1982 / Velupillai, CC-BY-4.0, https://asjp.clld.org/languages/TESO) & Sunbird AI SALT-31 (CC-BY-4.0)"
+        },
+        {
+          "english": "to be, become (also \"to have\")",
+          "translation": "aluori / arauni",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 42–43 · Irregular verb · Note: Pres. ajai, ijai, ejai, kija, ijaas, ejaas; Neg. emame"
+        },
+        {
+          "english": "to come",
+          "translation": "abunere / abunori",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 43 · Irregular verb · Note: Pres. abuni, ibuni, abuni, kiponi, ipote, epote; Perf. abu, ibu, abu, kipou, ipotu, apotu"
         }
       ]
     },
@@ -2476,6 +2764,12 @@
           "english": "To die",
           "translation": "atonare",
           "context": "CLDF ASJP v20 Wordlist (TESO, CC-BY-4.0)"
+        },
+        {
+          "english": "to die",
+          "translation": "atwanare",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 33–34 · Conjugation 6 · Note: pl. inf. atwakare; Pres. atwani; Perf. atwana/atwaka"
         }
       ]
     },
@@ -2753,6 +3047,36 @@
           "translation": "Opoo",
           "pronunciation": "",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "dry season, drought",
+          "translation": "akamu",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 55 · Noun · Note: pl. -musinei"
+        },
+        {
+          "english": "sun, daylight",
+          "translation": "akolon'",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 56 · Noun · Note: pl. -n'isinei"
+        },
+        {
+          "english": "day",
+          "translation": "aparan",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 57 · Noun · Note: pl. -rasia"
+        },
+        {
+          "english": "year",
+          "translation": "ekaru",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 65 · Noun · Note: pl. -ru"
+        },
+        {
+          "english": "wet season",
+          "translation": "ekiporo",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 66 · Noun · Note: pl. -osyo"
         }
       ]
     },
@@ -3412,6 +3736,108 @@
           "english": "Australian Dollar (AUD)",
           "translation": "Ango’otol lok’ Australia",
           "context": "Ateso — GitHub unicode-org/cldr (teo.xml) • Cross-verified with Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0)"
+        },
+        {
+          "english": "my, thy, his/her, our (incl.), our (excl.), your, their",
+          "translation": "-ka- , -koni-, -ke- (-ken'), -wok-, -kosi-, -kusi-, -kec-",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 44–45 · Inseparable possessive affixes · Note: -kan'"
+        },
+        {
+          "english": "one (1)",
+          "translation": "ediopet , adiopet (f.), yenidiopet (dim.)",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 23 · Cardinal numeral · Note: m."
+        },
+        {
+          "english": "two (2)",
+          "translation": "iare , aare (f.)",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. vi, viii, 23 · Cardinal numeral · Note: m."
+        },
+        {
+          "english": "three (3)",
+          "translation": "iuni , auni (f.)",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. vi, 23 · Cardinal numeral · Note: m."
+        },
+        {
+          "english": "four (4)",
+          "translation": "iun'won , aun'won (f.)",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 23, 59 · Cardinal numeral · Note: m."
+        },
+        {
+          "english": "five (5)",
+          "translation": "ikan , akan (f.)",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 23, 55 · Cardinal numeral · Note: m."
+        },
+        {
+          "english": "six (6)",
+          "translation": "ikankape , akankape (f.)",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 23, 118 · Cardinal numeral · Note: m."
+        },
+        {
+          "english": "seven (7)",
+          "translation": "akankaare / akan kaare",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 23, 117 · Cardinal numeral · Note: f."
+        },
+        {
+          "english": "11, 12, 14, 17, 19",
+          "translation": "atomon kape, atomon kaare, atomon kaun'won, atomon kakan kaare, atomon kakan kaun'won",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 23, 99, 102, 110, 117, 122 · Compound cardinals"
+        },
+        {
+          "english": "20, 30, 40, 50, 100, 1,000, 10,000, 100,000",
+          "translation": "akaisareyi, akaisauni, akaisaun'won, akaisakan, akaisatomon/akwatat, elukumi, arita, akasiripu",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 23, 55, 67, 102 · Tens & higher numerals"
+        },
+        {
+          "english": "1st, 2nd, 3rd, 4th, 10th, 20th",
+          "translation": "losodit / nasodit (f.); lokiaret / nakiaret; nakiwuniet; nakwon'onet; lokitomonet; lokakaisareyi",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 24 · Ordinal numerals · Note: m."
+        },
+        {
+          "english": "Four grammatical noun classes",
+          "translation": "e-/i- ; a-/a- (Cl.2 F); o- (Cl.3 kinship); i-/i- (Cl.4 dim.)",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), pp. 13–19 · Noun class prefixes · Note: Cl.1 M"
+        },
+        {
+          "english": "truth",
+          "translation": "abeit",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 53 · Abstract noun"
+        },
+        {
+          "english": "axe",
+          "translation": "ayepe",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 59 · Noun · Note: pl. -peyi"
+        },
+        {
+          "english": "chief deity of the Teso",
+          "translation": "Edeke",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 64 · Noun"
+        },
+        {
+          "english": "chief, master",
+          "translation": "ejakait",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 65 · Noun · Note: pl. ijako"
+        },
+        {
+          "english": "bull",
+          "translation": "emon'",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 68 · Noun · Note: pl. -n'ini"
         }
       ]
     },
@@ -4472,6 +4898,12 @@
           "english": "For God so loved the world (John 3:16 — 1916 Ateso Specimen #490)",
           "translation": "Narai Elohim komina akwapisinei kwan'ini, ainakini koyinaki Okoke lokewurio ediopet boni, n'ini tun'anan leyuwuni n'es kiñeyi aoliori koñe kojai akijara na mam edaun.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "clan, family",
+          "translation": "atekere",
+          "pronunciation": "",
+          "context": "Kitching (1915) Handbook of Ateso · Kitching (1915), p. 59 · Noun · Note: pl. -rin"
         }
       ]
     }

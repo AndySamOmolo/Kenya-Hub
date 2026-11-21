@@ -21,7 +21,7 @@
     "meru": 250,
     "somali": 685,
     "swahili": 999,
-    "maasai": 153,
+    "maasai": 0,
     "borana": 386,
     "teso": 168
   },
@@ -34,7 +34,6 @@
     "MCAA1-MSU/anv_data_ke::maasai::maasai",
     "MCAA1-MSU/anv_data_ke::somali::somali",
     "Sunbird/salt::studio-teo::teso",
-    "deepdml/common_voice_26_0::sw::swahili",
     "kln001/kalenjin-asr-data::default::kalenjin"
   ],
   "datasetStatus": {
@@ -58,13 +57,6 @@
       "gated": false,
       "lang_id": "luo",
       "updatedAt": "2026-11-19T15:27:56.971582+00:00"
-    },
-    "google/WaxalNLP::mas_asr::maasai": {
-      "status": "completed",
-      "clipsUploaded": 153,
-      "gated": false,
-      "lang_id": "maasai",
-      "updatedAt": "2026-11-19T15:28:12.752225+00:00"
     },
     "google/WaxalNLP::orm_asr_v2::borana": {
       "status": "completed",
@@ -122,20 +114,6 @@
       "lang_id": "borana",
       "updatedAt": "2026-11-19T15:31:46.471526+00:00"
     },
-    "deepdml/common_voice_26_0::sw::swahili": {
-      "status": "pending_gated_approval",
-      "gated": true,
-      "lang_id": "swahili",
-      "reason": "Dataset 'deepdml/common_voice_26_0' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/deepdml/common_voice_26_0 to ask for access.",
-      "updatedAt": "2026-11-19T15:31:46.571502+00:00"
-    },
-    "fsicoli/common_voice_22_0::sw::swahili": {
-      "status": "failed",
-      "gated": false,
-      "lang_id": "swahili",
-      "reason": "The repository for fsicoli/common_voice_22_0 contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/fsicoli/common_voice_22_0.\nPlease p",
-      "updatedAt": "2026-11-19T15:31:47.045919+00:00"
-    },
     "Sunbird/salt::studio-teo::teso": {
       "status": "pending_gated_approval",
       "gated": true,
@@ -149,27 +127,6 @@
       "gated": true,
       "lang_id": "swahili",
       "updatedAt": "2026-11-19T15:32:28.976668+00:00"
-    },
-    "multilingual-tts/open-bible::kik::kikuyu": {
-      "status": "failed",
-      "gated": false,
-      "lang_id": "kikuyu",
-      "reason": "BuilderConfig 'kik' not found. Available: ['Arabic Standard', 'Assamese', 'Bengali', 'Central Kurdish', 'Chhattisgarhi', 'Chichewa', 'Dawro', 'Dholuo', 'Ewe', 'Gamo', 'Gofa', 'Gujarati', 'Haitian Creole', 'Hausa', 'Hilig",
-      "updatedAt": "2026-11-19T15:32:29.653971+00:00"
-    },
-    "multilingual-tts/open-bible::swh::swahili": {
-      "status": "failed",
-      "gated": false,
-      "lang_id": "swahili",
-      "reason": "BuilderConfig 'swh' not found. Available: ['Arabic Standard', 'Assamese', 'Bengali', 'Central Kurdish', 'Chhattisgarhi', 'Chichewa', 'Dawro', 'Dholuo', 'Ewe', 'Gamo', 'Gofa', 'Gujarati', 'Haitian Creole', 'Hausa', 'Hilig",
-      "updatedAt": "2026-11-19T15:32:29.862048+00:00"
-    },
-    "multilingual-tts/open-bible::gaz::borana": {
-      "status": "failed",
-      "gated": false,
-      "lang_id": "borana",
-      "reason": "BuilderConfig 'gaz' not found. Available: ['Arabic Standard', 'Assamese', 'Bengali', 'Central Kurdish', 'Chhattisgarhi', 'Chichewa', 'Dawro', 'Dholuo', 'Ewe', 'Gamo', 'Gofa', 'Gujarati', 'Haitian Creole', 'Hausa', 'Hilig",
-      "updatedAt": "2026-11-19T15:32:30.093874+00:00"
     },
     "michsethowusu/swahili-words-speech-text-parallel::default::swahili": {
       "status": "completed",

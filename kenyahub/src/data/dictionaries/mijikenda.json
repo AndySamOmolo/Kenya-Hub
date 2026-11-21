@@ -10,7 +10,7 @@
     "Kwale",
     "Mombasa"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-19",
   "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016). Expanded and cross-verified with Commercially Permissive Datasets (Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0).",
@@ -190,6 +190,12 @@
           "english": "Peace",
           "translation": "réri",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kiníka"
+        },
+        {
+          "english": "See Dzangira. Welcome. Yoyo, mugeni! Welcome",
+          "translation": "Yoyo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 390 · Greetings / Society · POS: adv. | See Dzangira. Welcome. Yoyo, mugeni! Welcome, stranger! Yoyo ni neno ra ku dzangira. Yoyo is a word of welcoming a friend or a stranger, etc."
         }
       ]
     },
@@ -2113,6 +2119,42 @@
           "english": "Thousand",
           "translation": "vi-kwī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 16. Nika"
+        },
+        {
+          "english": "reit. (= Ku ambana luambo in Kir",
+          "translation": "Dzunana",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir., Kij.)) · Krapf & Rebmann (1887), p. 68 · Verbs / Dialect form · POS: v. | reit. (= Ku ambana luambo in Kir.; Ku senge-niana in Kij.), to backbite one another."
+        },
+        {
+          "english": "(ya), reckoning, amount.",
+          "translation": "Isabu, Hesabu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 134 · Numerals / Counting · POS: n."
+        },
+        {
+          "english": "(ra, pl. Mazu), the banana, the bunch of one tree",
+          "translation": "Isu, Izu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 134 · Food / Agriculture · POS: n. | (ra, pl. Mazu), the banana, the bunch of one tree. Mazu, bunches of a plurality of trees."
+        },
+        {
+          "english": ", teens, tens. Mirongo miere, Twenty. Mutu hiye kana",
+          "translation": "Mirongo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 257 · Numerals · POS: adj. | , teens, tens. Mirongo miere, Twenty. Mutu hiye kana mirongo."
+        },
+        {
+          "english": "a. (= Ku soesa in Kir",
+          "translation": "Sega",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 340 · Verbs / Clothing / Dialect form · POS: v. | a. (= Ku soesa in Kir.; (K.) in Kis. D. = Ku pansa, or, Ku ji pania nguo), to tuck up one's cloth."
+        },
+        {
+          "english": ", six. Niumba tandahu, Six houses. Reale tandahu, Six",
+          "translation": "Tandahu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 357 · Numerals · POS: adj. | , six. Niumba tandahu, Six houses. Reale tandahu, Six dollars. Mbuzi tandahu, Six goats. Gnombe tandahu, Six cows."
         }
       ]
     },
@@ -4090,6 +4132,48 @@
           "translation": "muhoho",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "a",
+          "translation": "Fumaga",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 91 · Verbs / Hunting · POS: v. | a. (in Kij., Ku atha maneno). See Hansa. To kill by shooting. Ku fumaga pembe."
+        },
+        {
+          "english": ", a small child. Kahoho kache. Kahoho kalume.",
+          "translation": "Kahoho",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 141 · Kinship / People · POS: n."
+        },
+        {
+          "english": "(wa, pl. A-). See Linkua",
+          "translation": "Mufuaha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 272 · Kinship · POS: n. | (wa, pl. A-). See Linkua; Luvi; Mudzuo. (1) A younger brother or sister. (2) A junior, an inferior, a successor. Afuaha angu."
+        },
+        {
+          "english": "(ya, za), a kind of peas or vetches.",
+          "translation": "Podzo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 324 · Food / Agriculture · POS: n."
+        },
+        {
+          "english": "(ya, za). See Siwa. An orphan.",
+          "translation": "Tia (2)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 360 · Kinship / People · POS: n."
+        },
+        {
+          "english": ", (1) (wa and ya, pl. id., za), grandmother.",
+          "translation": "Wawe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 387 · Kinship · POS: n."
+        },
+        {
+          "english": "(wa, no pl.), a sister-in-law, but only the sister of",
+          "translation": "Wivi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 388 · Kinship · POS: n. | (wa, no pl.), a sister-in-law, but only the sister of a husband, the term being used only between the females of each family."
         }
       ]
     },
@@ -6529,6 +6613,108 @@
           "translation": "Moyowangu",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 184"
+        },
+        {
+          "english": "(ya, za), stalks of Guinea-corn, lodged on forked",
+          "translation": "Dzuri",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 69 · Agriculture / Food · POS: n. | (ya, za), stalks of Guinea-corn, lodged on forked posts, to preserve the heads during harvest."
+        },
+        {
+          "english": "(= Kij., Handaki), a pit, a dry ditch, a trench dug",
+          "translation": "Gopue",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 110 · Household / Nature · POS: n. | (= Kij., Handaki), a pit, a dry ditch, a trench dug round the hut."
+        },
+        {
+          "english": "n. (= Hechemula), to sneeze.",
+          "translation": "Hetiemula",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 124 · Verbs / Body · POS: v."
+        },
+        {
+          "english": "(ra, pl. Mabu, Maipu), a boil, a tumour.",
+          "translation": "Ibu, Ipu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 130 · Body / Health · POS: n."
+        },
+        {
+          "english": "(ra) (= Ndani). See Kibigatutu",
+          "translation": "Ifu (2)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 131 · Body Parts · POS: n. | (ra) (= Ndani). See Kibigatutu; Kidamfira; Kidambi; Dzafula. Intestine, gut."
+        },
+        {
+          "english": "(ra, pl. Maini), the liver.",
+          "translation": "Ini",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 133 · Body Parts · POS: n."
+        },
+        {
+          "english": "(ra, pl. Mavi) (= Mbalahi). See Konde; Linga. A slap.",
+          "translation": "Ivi (2)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (Kir.)) · Krapf & Rebmann (1887), p. 135 · Actions / Body · POS: n."
+        },
+        {
+          "english": "(ra, pl. Mavu) (in Kij., Ipu), a tumour, a boil.",
+          "translation": "Ivu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 135 · Body / Health · POS: n."
+        },
+        {
+          "english": "(ra, pl. Ma-), the heel.",
+          "translation": "Jimbe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 136 · Body Parts · POS: n."
+        },
+        {
+          "english": "(ga, pl. of Dzafu), cheeks.",
+          "translation": "Madzafu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 232 · Body Parts · POS: n."
+        },
+        {
+          "english": "(ga, pl. of Dzidzo). See Dzorua",
+          "translation": "Madzo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 233 · Body Parts · POS: n. | (ga, pl. of Dzidzo). See Dzorua; Kua; Haya; Midzidzo. The eyes."
+        },
+        {
+          "english": "(ga, pl. of Suche). See Lusuche. Masuche ga muvunga",
+          "translation": "Masuche",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 244 · Agriculture (Grain ears) · POS: n. | (ga, pl. of Suche). See Lusuche. Masuche ga muvunga. Masuche ga muhama. Masuche ga maere. Masuche ga wimbi."
+        },
+        {
+          "english": "n. See Niauka. To become lean. Kuonda kua makazi.",
+          "translation": "Onda",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 317 · Verbs / Body · POS: v."
+        },
+        {
+          "english": "(ya) (= Linkua in Kir.), voice, sound.",
+          "translation": "Sauti",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 340 · Body / Communication · POS: n."
+        },
+        {
+          "english": "(ya, za)",
+          "translation": "Tako",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kins.)) · Krapf & Rebmann (1887), p. 357 · Body Parts / Tools · POS: n. | (ya, za) (= Tera in Kins.), the buttocks, the butt end of a gun. Tako ya mufui, The handle of a sword; pl. Tako za mifui, Handles of swords."
+        },
+        {
+          "english": "n. (= Luafu; Lunafu; Luambe; Lunambe). See Luambe. To itch.",
+          "translation": "Wawa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 387 · Verbs / Body · POS: v."
+        },
+        {
+          "english": "(wa). See Nkuadu. Pain, tooth-ache.",
+          "translation": "Wisira",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 388 · Body / Health · POS: n."
         }
       ]
     },
@@ -8959,6 +9145,192 @@
           "translation": "Ndiwa",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 500"
+        },
+        {
+          "english": "tusk of a young male elephant",
+          "translation": "Bori",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 16–17 · Noun"
+        },
+        {
+          "english": "(ra, pl. Ma-), a hare. Dim., Kadzungula ; Ki-dzungula.",
+          "translation": "Dzungula",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 69 · Animals · POS: n."
+        },
+        {
+          "english": "n. See Muamba ; Peho. To growl, to roar.",
+          "translation": "Fuma (2)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 91 · Verbs / Animals · POS: v."
+        },
+        {
+          "english": "(ra, pl. Ma-), a species of bird; (K.) sparrow.",
+          "translation": "Goroa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 110 · Animals (Birds) · POS: n."
+        },
+        {
+          "english": "(ra, pl. Ma-), a species of lizard remarkable for its",
+          "translation": "Goromue",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 110 · Animals (Reptiles) · POS: n. | (ra, pl. Ma-), a species of lizard remarkable for its deafness, and for the cleanness of its cave."
+        },
+        {
+          "english": "(ra, pl. Madi), an egg.",
+          "translation": "Idi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 130 · Food / Animals · POS: n."
+        },
+        {
+          "english": "a., to let ripen. Said of plants and fruits.",
+          "translation": "Ivuisa, Ifuisa, Ivuiza",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 135 · Verbs / Agriculture · POS: v."
+        },
+        {
+          "english": "(ra, pl. Ma-), the turtledove. Yuna kilinga dzingoni",
+          "translation": "Jia",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 136 · Animals (Birds) · POS: n. | (ra, pl. Ma-), the turtledove. Yuna kilinga dzingoni, It has a ring on the neck."
+        },
+        {
+          "english": "(cha, pl. Vi-), a small cow. Dim. of Gnombe.",
+          "translation": "Kigombe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 166 · Animals (Livestock) · POS: n."
+        },
+        {
+          "english": "(cha, pl. Vi-), a small sheep. Dim. of Gnonsi.",
+          "translation": "Kigonsi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 166 · Animals (Livestock) · POS: n."
+        },
+        {
+          "english": "(cha, pl. Vi-), the knee-pan",
+          "translation": "Kiremesafisi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 179 · Body Parts · POS: n. | (cha, pl. Vi-), the knee-pan; lit. what overpowers the hyena; what is too much too hard even for a hyena to eat."
+        },
+        {
+          "english": "(cha, pl. Vi-), lit. the crab-eater",
+          "translation": "Kiriangoe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 179 · Animals · POS: n. | (cha, pl. Vi-), lit. the crab-eater; the name of a species of animal which lives on crabs."
+        },
+        {
+          "english": "(ya, za) (=Kuba in Kij.), a tick.",
+          "translation": "Kuva, 2",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 205 · Animals (Insects) · POS: n."
+        },
+        {
+          "english": "(wa, pl. id.), a)",
+          "translation": "Kuwe, or Kuve",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 205 · Animals · POS: n. | (wa, pl. id.), a) (=Kuwe in Kij.). See Kisimba. An animal, said to burrow. Kana mujira muve. Yunga ndesi. The mfueresi is larger, has short legs and a large head."
+        },
+        {
+          "english": "(ga, pl. of Bulu), worms.",
+          "translation": "Mabulu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 231 · Animals · POS: n."
+        },
+        {
+          "english": "(ga), distant thunder. Rarely used.",
+          "translation": "Madidimiso",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 232 · Nature (Weather) · POS: n."
+        },
+        {
+          "english": "(wa, pl. Mi-), the name of a shrub producing a kind of",
+          "translation": "Mubalazi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 264 · Agriculture / Plants · POS: n. | (wa, pl. Mi-), the name of a shrub producing a kind of pea. See Mbalazi."
+        },
+        {
+          "english": "(wa, pl. Mi-), the castor-oil shrub. It grows wild in",
+          "translation": "Mubono",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 264 · Nature / Plants · POS: n. | (wa, pl. Mi-), the castor-oil shrub. It grows wild in abundance Unikani."
+        },
+        {
+          "english": "(hiyu, pl. id., hia), a camel.",
+          "translation": "Ngamira",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 303 · Animals · POS: n."
+        },
+        {
+          "english": "(1) (hiyu, pl. id., hia), the name of a species of ant.",
+          "translation": "Ngologolo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 305 · Animals (Insects) · POS: n."
+        },
+        {
+          "english": "(hiyu, pl. id., hia), a butterfly.",
+          "translation": "Poho",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 324 · Animals (Insects) · POS: n."
+        },
+        {
+          "english": "(ya, za), betel-nut. Popo ni za mubobo.",
+          "translation": "Popo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 324 · Food / Plants · POS: n."
+        },
+        {
+          "english": "(ya, za). See Kupuka. Weeds, tares. Pueke dzanga.",
+          "translation": "Puekue",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 324 · Agriculture / Plants · POS: n."
+        },
+        {
+          "english": "(ra, pl. Ma-), a cake of semi-dried cow's dung, in",
+          "translation": "Shonde",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (note on Kid.)) · Krapf & Rebmann (1887), p. 342 · Agriculture / Household · POS: n. | (ra, pl. Ma-), a cake of semi-dried cow's dung, in some parts used as fuel. In Kid., Mutu huya hu mashonde."
+        },
+        {
+          "english": "(= Ta in Kij.), the name of a fish.",
+          "translation": "Tala",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 357 · Animals (Fish) · POS: n."
+        },
+        {
+          "english": "(ya, za), a spider's web.",
+          "translation": "Tando",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 357 · Nature / Animals · POS: n."
+        },
+        {
+          "english": "(ya), ginger.",
+          "translation": "Tangaizi, Tangawizi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 357 · Food / Plants · POS: n."
+        },
+        {
+          "english": "(hiyu, pl. id., hia), the giraffe.",
+          "translation": "Tia (1)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 360 · Animals · POS: n."
+        },
+        {
+          "english": "(ya, za)",
+          "translation": "Tiho",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 360 · Animals / Culture · POS: n. | (ya, za), (1) the hair of the tail of a cow. (2) The beard of a goat, when worn as an ornament."
+        },
+        {
+          "english": "(wa, hiyu, pl. id., a hia), the name of a species of monkey.",
+          "translation": "Tima",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 360 · Animals · POS: n."
+        },
+        {
+          "english": "(wa, hiu, no pl.). See Ukambi. Antimony.",
+          "translation": "Wanda",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 387 · Minerals / Cosmetics · POS: n."
         }
       ]
     },
@@ -12229,6 +12601,108 @@
           "translation": "Mango",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 173"
+        },
+        {
+          "english": "n., to get exposed to shame, by something disgraceful",
+          "translation": "Ebuka",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 71 · Verbs / Letter E start · POS: v. | n., to get exposed to shame, by something disgraceful becoming known of you."
+        },
+        {
+          "english": "n., to float.",
+          "translation": "Elela",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 71 · Verbs / Nature · POS: v."
+        },
+        {
+          "english": "a",
+          "translation": "Fulumusa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 91 · Verbs · POS: v. | a. (= Fingilisa), to roll. Ku fulumusa muhi iwe, To roll a tree."
+        },
+        {
+          "english": "(ra, pl. Ma-), ashes.",
+          "translation": "Ifu, Ivu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 131 · Nature / Household · POS: n."
+        },
+        {
+          "english": "(ra, pl. Ma-), a wave. Der., Gnimbo (Kimbo); Muimbo.",
+          "translation": "Imbi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 132 · Nature · POS: n."
+        },
+        {
+          "english": "See Mumemue. Black. The root-word of Muiru, Kiiru",
+          "translation": "Iru",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 134 · Adjectives / Colours · POS: adj. | See Mumemue. Black. The root-word of Muiru, Kiiru, Kiru, etc., Kuiru, Niru."
+        },
+        {
+          "english": "(ra, pl. Maiyi), a heap of grass, rooted out in",
+          "translation": "Iyi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 135 · Agriculture · POS: n. | (ra, pl. Maiyi), a heap of grass, rooted out in cultivating the ground; (K.) rick."
+        },
+        {
+          "english": "(cha, pl. Vi-), (1) a hill.",
+          "translation": "Kirima",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 179 · Nature · POS: n."
+        },
+        {
+          "english": "(lua, pl. Mbugu), a creeper used for binding. Dim",
+          "translation": "Lubugu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 218 · Nature / Materials · POS: n. | (lua, pl. Mbugu), a creeper used for binding. Dim., Kalubugu."
+        },
+        {
+          "english": "(ga), mud.",
+          "translation": "Madofia",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 232 · Nature · POS: n."
+        },
+        {
+          "english": "n",
+          "translation": "Ondoka",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 317 · Verbs · POS: v. | n. (= Kutuka in Kij.), to start, to move suddenly, to be frightened."
+        },
+        {
+          "english": "(ya), the coast. Ni poa. Poa hira. Poani. See Kala",
+          "translation": "Poa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 324 · Nature / Geography · POS: n. | (ya), the coast. Ni poa. Poa hira. Poani. See Kala. On, to the coast."
+        },
+        {
+          "english": "(ra, pl. Ma-). See Bandika. The lower part of a tuft",
+          "translation": "Sinde",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 349 · Nature / Agriculture · POS: n. | (ra, pl. Ma-). See Bandika. The lower part of a tuft of grass. Nidzidema sinde ra niasi, I have cut a tuft of grass."
+        },
+        {
+          "english": "n. encl. (Ku via). See Vosera",
+          "translation": "Via",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 381 · Verbs / Nature · POS: v. | n. encl. (Ku via). See Vosera ; Afiwa. To burn, to be on fire, to be consumed with fire."
+        },
+        {
+          "english": "(wa). See Luhula. Wax.",
+          "translation": "Wanamo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 386 · Nature / Materials · POS: n."
+        },
+        {
+          "english": "(wa). See Luinda; Koe. A wave.",
+          "translation": "Wimbi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 388 · Nature · POS: n."
+        },
+        {
+          "english": "n., to sway, as a tree or branch, with the wind.",
+          "translation": "Yonga",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 390 · Verbs / Nature · POS: v."
         }
       ]
     },
@@ -14720,6 +15194,132 @@
           "english": "Yam",
           "translation": "vy-āzi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 16. Nika (16 a Giryama, 16 b Duruma, 16 c Digω)"
+        },
+        {
+          "english": "a. (=Chiie). See Iya. To steal.",
+          "translation": "Ia",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 130 · Verbs / Letter I start · POS: v."
+        },
+        {
+          "english": ", fresh, green, raw. Der., Muidzi; Kiidzi, etc.",
+          "translation": "Idzi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 131 · Adjectives / Food · POS: adj."
+        },
+        {
+          "english": "a., to cook.",
+          "translation": "Jita",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 136 · Verbs / Food · POS: v."
+        },
+        {
+          "english": "(= Kabeni in Kns.), a cob of Indian corn when",
+          "translation": "Kigube",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kns.)) · Krapf & Rebmann (1887), p. 166 · Agriculture / Food · POS: n. | (= Kabeni in Kns.), a cob of Indian corn when beginning to form."
+        },
+        {
+          "english": "(ra, pl. Ma-), the fruit of the mukuyu.",
+          "translation": "Kuyu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 205 · Food / Nature · POS: n."
+        },
+        {
+          "english": "(ga, pl. of Bawa) (= Mbawa), a species of broad bean.",
+          "translation": "Mabawa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 230 · Food / Agriculture · POS: n."
+        },
+        {
+          "english": "(ga, pl. of Beroa, ra), the guava.",
+          "translation": "Maberoa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 231 · Food / Nature · POS: n."
+        },
+        {
+          "english": "(ga), lightning; (K.) fulguration. Maja gana meka.",
+          "translation": "Mada, Maja",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 231 · Nature (Weather) · POS: n."
+        },
+        {
+          "english": "(ga), water. Madzi ga peho, Rain-water. Madzi ga",
+          "translation": "Madzi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 233 · Nature · POS: n. | (ga), water. Madzi ga peho, Rain-water. Madzi ga muniu, Salt water."
+        },
+        {
+          "english": "(wa, pl. Mi-). See Mudzani. The name of a species of",
+          "translation": "Mubambakofi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 264 · Nature (Trees) · POS: n. | (wa, pl. Mi-). See Mudzani. The name of a species of tree, the African teak."
+        },
+        {
+          "english": "(wa, pl. Mi-), the name of a tree. Its fruit is called",
+          "translation": "Mufudu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 272 · Nature (Trees) / Food · POS: n. | (wa, pl. Mi-), the name of a tree. Its fruit is called fudu or pfudu."
+        },
+        {
+          "english": ", big, thick, fat. Dzi nene.",
+          "translation": "Nene",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 303 · Adjectives · POS: adj."
+        },
+        {
+          "english": "See Hanga. The necessaries of life in general",
+          "translation": "Risiki",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 333 · Food / Household · POS: n. | See Hanga. The necessaries of life in general, victuals, provisions."
+        },
+        {
+          "english": "(wa), simsim, Didynamia gymnospermia",
+          "translation": "Ufuha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 366 · Agriculture / Food · POS: n. | (wa), simsim, Didynamia gymnospermia (Owen, vol. i. p. 160). Ufuha ka-u-na haja na mvula."
+        },
+        {
+          "english": "(wa)",
+          "translation": "Ugema",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 366 · Agriculture / Drink · POS: n. | (wa) (= Ngemua), the act of drawing the toddy. Ugemao ka-u-hama, u-foroforo. Ndo ugemawe agemavio."
+        },
+        {
+          "english": "(via). See Kula, n. A little water. Dim. of Madzi",
+          "translation": "Vidzi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 381 · Nature / Food · POS: n. | (via). See Kula, n. A little water. Dim. of Madzi. Reha vidzi, Bring a little water."
+        },
+        {
+          "english": "pl",
+          "translation": "Vidzunga",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 381 · Food · POS: n. | pl. (= Unga utembe). See Kifoyero. A little flour. Dim. of Unga."
+        },
+        {
+          "english": "pl. (via), a little salt. Dim. of Muniu.",
+          "translation": "Vidzuniu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 381 · Food · POS: n."
+        },
+        {
+          "english": "a., to grill, to roast.",
+          "translation": "Wacha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 386 · Verbs / Food / Letter W start · POS: v."
+        },
+        {
+          "english": "(wa), width, breadth.",
+          "translation": "Walamu (2)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 386 · Measurements · POS: n."
+        },
+        {
+          "english": "(wa), chaff, the husks of rice, bran of Indian corn or",
+          "translation": "Wisua, Wishua",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 388 · Agriculture / Food · POS: n. | (wa), chaff, the husks of rice, bran of Indian corn or millet, etc.; (K.) paddy."
         }
       ]
     },
@@ -22439,12 +23039,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Daraka",
-          "pronunciation": "daraka",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Pfuiho z'enda debedebe",
           "translation": "Debedebe",
           "pronunciation": "debedebe",
@@ -22475,21 +23069,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Dza",
-          "pronunciation": "dza",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Ku-m-dzadzarisa muhoho",
           "translation": "Dzadzarisa",
           "pronunciation": "dzadzarisa",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Dzago",
-          "pronunciation": "dzago",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -22505,21 +23087,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Dzano",
-          "pronunciation": "dzano",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Yuguirua ni dzedzefu",
           "translation": "Dzedzefu",
           "pronunciation": "dzedzefu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Dzedzo",
-          "pronunciation": "dzedzo",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -22583,12 +23153,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Dzoga",
-          "pronunciation": "dzoga",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Ku-m-longosa mutu dzokani",
           "translation": "Dzoka",
           "pronunciation": "dzoka",
@@ -22598,18 +23162,6 @@
           "english": "Ku dzueza mundani",
           "translation": "Dzueza",
           "pronunciation": "dzueza",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Dzuiri",
-          "pronunciation": "dzuiri",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Dzuva",
-          "pronunciation": "dzuva",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -22688,12 +23240,6 @@
           "english": "(Fururisa ku malo)",
           "translation": "Gasa",
           "pronunciation": "gasa",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Gisi",
-          "pronunciation": "gisi",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -22781,12 +23327,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Hali",
-          "pronunciation": "hali",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "(corrupted from Gali)",
           "translation": "Hali",
           "pronunciation": "hali",
@@ -22796,12 +23336,6 @@
           "english": "Ku guira hama",
           "translation": "Hama",
           "pronunciation": "hama",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Hasara",
-          "pronunciation": "hasara",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -22820,12 +23354,6 @@
           "english": "Yudzi hemurirua onsare",
           "translation": "Hemurirua",
           "pronunciation": "hemurirua",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Heshima",
-          "pronunciation": "heshima",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -22883,12 +23411,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Kadzama",
-          "pronunciation": "kadzama",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Utu uo ukakagua",
           "translation": "Kagua",
           "pronunciation": "kagua",
@@ -22904,12 +23426,6 @@
           "english": "Diligence",
           "translation": "Kalima (= Rukudzu)",
           "pronunciation": "kalima",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Kanda",
-          "pronunciation": "kanda",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -22949,12 +23465,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Kavu",
-          "pronunciation": "kavu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Indicating surprise",
           "translation": "Ke",
           "pronunciation": "ke",
@@ -22964,12 +23474,6 @@
           "english": "Ndzo, huvonde, hukedanie",
           "translation": "Kedania",
           "pronunciation": "kedania",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Kerekere",
-          "pronunciation": "kerekere",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23135,12 +23639,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Koa",
-          "pronunciation": "koa",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Muhoho yunaima koko",
           "translation": "Koko",
           "pronunciation": "koko",
@@ -23165,21 +23663,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Konsi",
-          "pronunciation": "konsi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Anger, wrath",
           "translation": "Koro (za)",
           "pronunciation": "koro",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Kotoe",
-          "pronunciation": "kotoe",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23219,18 +23705,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Kululu",
-          "pronunciation": "kululu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Kulungire",
-          "pronunciation": "kulungire",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Na-mu-kuluvira iye yunda-ni-pa",
           "translation": "Kuluvira",
           "pronunciation": "kuluvira",
@@ -23240,12 +23714,6 @@
           "english": "Kakuluvirika mutu hiye",
           "translation": "Kuluvirika",
           "pronunciation": "kuluvirika",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Kumbukumbu",
-          "pronunciation": "kumbukumbu",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23264,12 +23732,6 @@
           "english": "Firewood",
           "translation": "Kuni (za)",
           "pronunciation": "kuni",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Kunsa",
-          "pronunciation": "kunsa",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23321,99 +23783,15 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(lua)",
-          "translation": "L'onso",
-          "pronunciation": "l'onso",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Luanda",
-          "pronunciation": "luanda",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Luandala",
-          "pronunciation": "luandala",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lubalula",
-          "pronunciation": "lubalula",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lubele",
-          "pronunciation": "lubele",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lubombombo",
-          "pronunciation": "lubombombo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Ludude",
-          "pronunciation": "ludude",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "From Ku dzunga",
           "translation": "Ludzunga",
           "pronunciation": "ludzunga",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(lua)",
-          "translation": "Lufuidzo",
-          "pronunciation": "lufuidzo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lufumulo",
-          "pronunciation": "lufumulo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lufundo",
-          "pronunciation": "lufundo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Luhalo",
-          "pronunciation": "luhalo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Luhandu",
-          "pronunciation": "luhandu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Luhopo",
-          "pronunciation": "luhopo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Infection",
           "translation": "Luidzo (lua)",
           "pronunciation": "luidzo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Luigo",
-          "pronunciation": "luigo",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23429,45 +23807,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(lua)",
-          "translation": "Lukancha",
-          "pronunciation": "lukancha",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lukesikesi",
-          "pronunciation": "lukesikesi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lukoko",
-          "pronunciation": "lukoko",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lukolo",
-          "pronunciation": "lukolo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "The umbilical cord",
           "translation": "Lukovohi",
           "pronunciation": "lukovohi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lumuaji",
-          "pronunciation": "lumuaji",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lumuiri",
-          "pronunciation": "lumuiri",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23483,39 +23825,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(lua)",
-          "translation": "Luniania",
-          "pronunciation": "luniania",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lurero",
-          "pronunciation": "lurero",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Lusemo",
-          "pronunciation": "lusemo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Obedience",
           "translation": "Lusikiro (lua)",
           "pronunciation": "lusikiro",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Luuso",
-          "pronunciation": "luuso",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(lua)",
-          "translation": "Luyeyo",
-          "pronunciation": "luyeyo",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23621,21 +23933,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Malu",
-          "pronunciation": "malu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Ku piga mangeche",
           "translation": "Mangeche",
           "pronunciation": "mangeche",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mankue",
-          "pronunciation": "mankue",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23675,42 +23975,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Mbambu",
-          "pronunciation": "mbambu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mbaraka",
-          "pronunciation": "mbaraka",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mbarara",
-          "pronunciation": "mbarara",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mbari",
-          "pronunciation": "mbari",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mbele",
-          "pronunciation": "mbele",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mbengeo",
-          "pronunciation": "mbengeo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Trophy",
           "translation": "Mboe (ya, za)",
           "pronunciation": "mboe",
@@ -23720,30 +23984,6 @@
           "english": "Membranum virile",
           "translation": "Mbolo (wa)",
           "pronunciation": "mbolo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mboni",
-          "pronunciation": "mboni",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mbulu",
-          "pronunciation": "mbulu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mburuka",
-          "pronunciation": "mburuka",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mbuyu",
-          "pronunciation": "mbuyu",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23759,24 +23999,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Mfarika",
-          "pronunciation": "mfarika",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mfongi",
-          "pronunciation": "mfongi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mfuaho",
-          "pronunciation": "mfuaho",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "To comb",
           "translation": "Mfugnia",
           "pronunciation": "mfugnia",
@@ -23789,21 +24011,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Mfungu",
-          "pronunciation": "mfungu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Plenty, satiety",
           "translation": "Mfuno (wa)",
           "pronunciation": "mfuno",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mfuo",
-          "pronunciation": "mfuo",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23834,12 +24044,6 @@
           "english": "Environs",
           "translation": "Mirimiro (ya)",
           "pronunciation": "mirimiro",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Mkue",
-          "pronunciation": "mkue",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -23951,12 +24155,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Nafsi",
-          "pronunciation": "nafsi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Chance",
           "translation": "Nasibu (ya)",
           "pronunciation": "nasibu",
@@ -23969,57 +24167,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Nchogoma",
-          "pronunciation": "nchogoma",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndada",
-          "pronunciation": "ndada",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndale",
-          "pronunciation": "ndale",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndalo",
-          "pronunciation": "ndalo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndarawe",
-          "pronunciation": "ndarawe",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Closely, firmly",
           "translation": "Ndi",
           "pronunciation": "ndi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndifu",
-          "pronunciation": "ndifu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndimiro",
-          "pronunciation": "ndimiro",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndimua",
-          "pronunciation": "ndimua",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -24035,93 +24185,15 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Ndundu",
-          "pronunciation": "ndundu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndzala",
-          "pronunciation": "ndzala",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndzora",
-          "pronunciation": "ndzora",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ndzuga",
-          "pronunciation": "ndzuga",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Neko",
-          "pronunciation": "neko",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ngada",
-          "pronunciation": "ngada",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ngala",
-          "pronunciation": "ngala",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Glittering",
           "translation": "Ngenge (za)",
           "pronunciation": "ngenge",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Ngeu",
-          "pronunciation": "ngeu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Obstinacy",
           "translation": "Ngilingili (ya, za)",
           "pronunciation": "ngilingili",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ngoba",
-          "pronunciation": "ngoba",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ngolodi",
-          "pronunciation": "ngolodi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ngombo",
-          "pronunciation": "ngombo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ngome",
-          "pronunciation": "ngome",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Ngudu",
-          "pronunciation": "ngudu",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -24167,27 +24239,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Niumba",
-          "pronunciation": "niumba",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Nkue",
-          "pronunciation": "nkue",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Dirt",
           "translation": "Nongo (ya, za)",
           "pronunciation": "nongo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Nsara",
-          "pronunciation": "nsara",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -24227,63 +24281,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Palo",
-          "pronunciation": "palo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Pandiso",
-          "pronunciation": "pandiso",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Pandue",
-          "pronunciation": "pandue",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Panga",
-          "pronunciation": "panga",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Euphem",
           "translation": "Pengere",
           "pronunciation": "pengere",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Peno",
-          "pronunciation": "peno",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Pepo",
-          "pronunciation": "pepo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Pima",
-          "pronunciation": "pima",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Pingu",
-          "pronunciation": "pingu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Pingua",
-          "pronunciation": "pingua",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -24299,27 +24299,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Ponolo",
-          "pronunciation": "ponolo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Puekue",
-          "pronunciation": "puekue",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Crumbs",
           "translation": "Pukupuku (za)",
           "pronunciation": "pukupuku",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Pumbu",
-          "pronunciation": "pumbu",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -24485,33 +24467,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Taka",
-          "pronunciation": "taka",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Talago",
-          "pronunciation": "talago",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Sweepings, rubbish",
           "translation": "Tama",
           "pronunciation": "tama",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Tana",
-          "pronunciation": "tana",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Tandadu",
-          "pronunciation": "tandadu",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -24533,12 +24491,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Tengere",
-          "pronunciation": "tengere",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Anxiety, grief, distress",
           "translation": "Thiki",
           "pronunciation": "thiki",
@@ -24551,63 +24503,15 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Tia",
-          "pronunciation": "tia",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Tindira",
-          "pronunciation": "tindira",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Tingo",
-          "pronunciation": "tingo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Tobo",
-          "pronunciation": "tobo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Tondolo",
-          "pronunciation": "tondolo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Tosa",
-          "pronunciation": "tosa",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Madzi ganatuba; ga-sinda",
           "translation": "Tuba",
           "pronunciation": "tuba",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(ya, za)",
-          "translation": "Tulu",
-          "pronunciation": "tulu",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Gnombe tune",
           "translation": "Tune",
           "pronunciation": "tune",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(ya, za)",
-          "translation": "Turume",
-          "pronunciation": "turume",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -24965,39 +24869,9 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "(via)",
-          "translation": "Vidi",
-          "pronunciation": "vidi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(via)",
-          "translation": "Vidzi",
-          "pronunciation": "vidzi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Goodness",
           "translation": "Vidzo (via)",
           "pronunciation": "vidzo",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(via)",
-          "translation": "Vidzuchi",
-          "pronunciation": "vidzuchi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(via)",
-          "translation": "Viedi",
-          "pronunciation": "viedi",
-          "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "(via)",
-          "translation": "Viha",
-          "pronunciation": "viha",
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -27329,6 +27203,60 @@
           "translation": "niumba",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "spotted wild cat (Kiravai: Ndzuzi)",
+          "translation": "Chagabu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo) · Krapf & Rebmann (1887), p. 20 · Noun"
+        },
+        {
+          "english": "(ra, pl. Ma- or Mi-), a large house. Magn. of Niumba",
+          "translation": "Dzumba",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 68 · Household / Architecture · POS: n. | (ra, pl. Ma- or Mi-), a large house. Magn. of Niumba. Dim., Kadzumba."
+        },
+        {
+          "english": "a., to shoot with an arrow, to sew.",
+          "translation": "Fuma (1)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 91 · Verbs / Crafts · POS: v."
+        },
+        {
+          "english": "(ra, pl. Ma-), (K.) faggot.",
+          "translation": "Hiha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 124 · Household / Fuel · POS: n."
+        },
+        {
+          "english": "n",
+          "translation": "Inama",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 132 · Verbs · POS: v. | n. (= Ku zama), to bow, to stoop. Trop., to submit, to yield to warnings, etc."
+        },
+        {
+          "english": "(za), a fence. Pl. of Lukuva.",
+          "translation": "Kuva, 1",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 205 · Agriculture / Household · POS: n."
+        },
+        {
+          "english": ", a needle.",
+          "translation": "Sindano, Shindano",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 349 · Household / Tools · POS: n."
+        },
+        {
+          "english": "(ra, pl. Ma-), a round mat. Singe ra ku siira ngao",
+          "translation": "Singe, Sinche",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 349 · Household · POS: n. | (ra, pl. Ma-), a round mat. Singe ra ku siira ngao. Dim., Kasinge and Kisinge; magn., Risinge."
+        },
+        {
+          "english": "(wa, pl. Maha), a bow. Uha wangu udzidoroka luvohe",
+          "translation": "Uha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 366 · Tools / Weapons · POS: n. | (wa, pl. Maha), a bow. Uha wangu udzidoroka luvohe. Dim., Kadzuha."
         }
       ]
     },
@@ -35343,6 +35271,126 @@
           "translation": "enenda",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "to break through, rip open",
+          "translation": "Bofola",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), p. 16 · Verb"
+        },
+        {
+          "english": "a., to throw, to cast.",
+          "translation": "Dzuva",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 70 · Verbs · POS: v."
+        },
+        {
+          "english": "(2) v. cont., to keep throwing, to sow. Ku dzuvira wimbi",
+          "translation": "Dzuvira",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 70 · Verbs / Agriculture · (2) v. cont., to keep throwing, to sow. Ku dzuvira wimbi (= Ku muagira wimbi)."
+        },
+        {
+          "english": "n., to lean, to rely, to trust.",
+          "translation": "Ekemera",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 71 · Verbs · POS: v."
+        },
+        {
+          "english": "n. (= Fingilika), to roll, revolve, circumvolve.",
+          "translation": "Fulumuka",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 91 · Verbs · POS: v."
+        },
+        {
+          "english": "n., stand still. Only used in the imp. for Ima. Hima",
+          "translation": "Hima",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 124 · Verbs · POS: v. | n., stand still. Only used in the imp. for Ima. Hima nilole, Stand still, that I may look."
+        },
+        {
+          "english": "reit, to be equal in strength.",
+          "translation": "Idimana",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 130 · Verbs · POS: v."
+        },
+        {
+          "english": "rel., to be up to, for; (K.) to inure.",
+          "translation": "Idimira",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 130 · Verbs · POS: v."
+        },
+        {
+          "english": "(1) v.a",
+          "translation": "Idirika",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 130 · Verbs · (1) v.a. (=Ku henda hiroka), to hasten. (2) v.n., to be quick."
+        },
+        {
+          "english": "a. See Kururusi. To be full.",
+          "translation": "Idzala",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 131 · Verbs · POS: v."
+        },
+        {
+          "english": "n. See Koko, 1 and 2. To stand, to stay.",
+          "translation": "Ima",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 132 · Verbs · POS: v."
+        },
+        {
+          "english": "n., to be ripe.",
+          "translation": "Ivua, Ifua",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 135 · Verbs / Agriculture · POS: v."
+        },
+        {
+          "english": "n. See Kavayo",
+          "translation": "Nena",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 303 · Verbs · POS: v. | n. See Kavayo; Moro; Neno. To say, to speak. Der., Neno (pl. Ma-)."
+        },
+        {
+          "english": "a. See Cho ; Kisinde ; Mulagusi. To see.",
+          "translation": "Ona",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 317 · Verbs · POS: v."
+        },
+        {
+          "english": "n. See Nioka ; Dubani. To be visible.",
+          "translation": "Oneka",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 317 · Verbs · POS: v."
+        },
+        {
+          "english": "rel., to cry for, to weep for, to bewail.",
+          "translation": "Ririra",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 333 · Verbs · POS: v."
+        },
+        {
+          "english": "(rel. to the ra class), black.",
+          "translation": "Riru",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 333 · Adjectives / Colours · POS: adj."
+        },
+        {
+          "english": "a., to surround.",
+          "translation": "Singira, Zingira",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 349 · Verbs · POS: v."
+        },
+        {
+          "english": "n. See Mukono. To last long.",
+          "translation": "Waka",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 386 · Verbs · POS: v."
+        },
+        {
+          "english": "n. See Muvuye",
+          "translation": "Yuya",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 391 · Verbs / Adjectives · POS: v. | n. See Muvuye ; Niuya. To be light. Der., Kiyuya ; Muyuya ; Niuya."
         }
       ]
     },
@@ -38977,6 +39025,48 @@
           "english": "Canoe",
           "translation": "Dau",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 16. Nika (16 a Giryama, 16 b Duruma, 16 c Digω)"
+        },
+        {
+          "english": "a hollow (Kiravai: Gopue)",
+          "translation": "Bopo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo) · Krapf & Rebmann (1887), p. 16 · Noun"
+        },
+        {
+          "english": "a. See Dzanche; Luago. To pass over, to cross, to surpass.",
+          "translation": "Dzupa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 69 · Verbs · POS: v."
+        },
+        {
+          "english": "(ra, pl. Ma-), a club. Ku-m-piga mutu magongo. Dim",
+          "translation": "Gongo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 110 · Tools / Weapons · POS: n. | (ra, pl. Ma-), a club. Ku-m-piga mutu magongo. Dim., Kagongo ; Kigongo."
+        },
+        {
+          "english": "n. See Jego; Bagaiwa; Kosa. To be able, to can.",
+          "translation": "Idima",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 130 · Verbs · POS: v."
+        },
+        {
+          "english": "(rel. to the ra class), long, deep. Gopue rire.",
+          "translation": "Rire",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 333 · Adjectives · POS: adj."
+        },
+        {
+          "english": "(rel. to the U- class), wide, broad.",
+          "translation": "Walamu (1)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 386 · Adjectives · POS: adj."
+        },
+        {
+          "english": "n. (= Ongoja in Kij.), to wait.",
+          "translation": "Yongoya",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 390 · Verbs · POS: v."
         }
       ]
     },
@@ -39688,6 +39778,12 @@
           "english": "Trade",
           "translation": "henda maróra",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kiníka"
+        },
+        {
+          "english": "a., to pay.",
+          "translation": "Riva",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 333 · Verbs / Trade · POS: v."
         }
       ]
     },
@@ -41596,6 +41692,36 @@
           "english": "[Kidaw'ida] In the afternoon / evening (PM day period)",
           "translation": "luma lwa p",
           "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0"
+        },
+        {
+          "english": "to dawn / enclosure for cattle",
+          "translation": "Cha / Chaa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 19–20 · Verb / Noun"
+        },
+        {
+          "english": "(ya, za), the fruit of the tree mukuva, eaten in time",
+          "translation": "Kuva, 3",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 205 · Food / Nature · POS: n. | (ya, za), the fruit of the tree mukuva, eaten in time of famine."
+        },
+        {
+          "english": "(lua, pl. Tigo, Tshigo), a hedge. Ku piga luchigo, To",
+          "translation": "Luchigo, Lukigo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 218 · Agriculture · POS: n. | (lua, pl. Tigo, Tshigo), a hedge. Ku piga luchigo, To make a hedge. Sometimes made to keep the cattle from getting into a plantation. Luchigo lua ku mera, A hedge which grows. Dim., Kachigo."
+        },
+        {
+          "english": "See Dumbu",
+          "translation": "Pombe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 324 · Food / Drink · POS: n. | See Dumbu ; Uzoro. Beer, made in various ways, sometimes from millet, sometimes from bananas, when it must be more like cider. Ku dzudza pombe."
+        },
+        {
+          "english": "(wa), food made of rice or of ground Indian or Caffre",
+          "translation": "Wari",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 387 · Food · POS: n. | (wa), food made of rice or of ground Indian or Caffre corn, which constitutes the chief meal of the day, and is eaten in the evening."
         }
       ]
     },
@@ -42319,12 +42445,6 @@
           "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Pron",
-          "translation": "sira",
-          "pronunciation": "si-ra",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Into",
           "translation": "ndáni; kahi ya",
           "pronunciation": "ndani",
@@ -42371,12 +42491,6 @@
           "translation": "kalume",
           "pronunciation": "ka-lu-me",
           "context": "Krapf & Rebmann (1887) Nika-English Dictionary [adj.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Conj",
-          "translation": "k'amba",
-          "pronunciation": "k'amba",
-          "context": "Krapf & Rebmann (1887) Nika-English Dictionary [v.] • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
           "english": "Verb",
@@ -43849,27 +43963,9 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Pron",
-          "translation": "Gano",
-          "pronunciation": "ga-no",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Gara",
-          "pronunciation": "ga-ra",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "That",
           "translation": "Go",
           "pronunciation": "go",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Hano",
-          "pronunciation": "ha-no",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -43879,45 +43975,9 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Pron",
-          "translation": "Hara",
-          "pronunciation": "ha-ra",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Hia",
-          "pronunciation": "hia",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Hicho",
-          "pronunciation": "hich-o",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Higo",
-          "pronunciation": "hi-go",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Hira",
-          "pronunciation": "hi-ra",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "That",
           "translation": "Hirira",
           "pronunciation": "hi-ri-ra",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Kaka",
-          "pronunciation": "ka-ka",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -43930,12 +43990,6 @@
           "english": "Rust",
           "translation": "Kanga",
           "pronunciation": "kang-a",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Kano",
-          "pronunciation": "ka-no",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -43972,18 +44026,6 @@
           "english": "Ripe",
           "translation": "Luifu",
           "pronunciation": "lui-fu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Lula",
-          "pronunciation": "lu-la",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Lulu",
-          "pronunciation": "lu-lu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -44041,33 +44083,9 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Pron",
-          "translation": "Rino",
-          "pronunciation": "ri-no",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Riri",
-          "pronunciation": "ri-ri",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Sino",
-          "pronunciation": "si-no",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Lime",
           "translation": "Toka",
           "pronunciation": "to-ka",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Vira",
-          "pronunciation": "vi-ra",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -44086,18 +44104,6 @@
           "english": "Pers",
           "translation": "Yangu",
           "pronunciation": "yang-u",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Yuno",
-          "pronunciation": "yu-no",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
-          "english": "Pron",
-          "translation": "Yuyu",
-          "pronunciation": "yu-yu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (SPCK London, 1887 — Public Domain) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
@@ -74339,6 +74345,150 @@
           "translation": "muokosi wangu",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 184"
+        },
+        {
+          "english": "multitude / giant / fortification / great / skull",
+          "translation": "Bogi / Bogo / Boma / Bomu / Bongo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), p. 16 · Nouns & Adj"
+        },
+        {
+          "english": "the face",
+          "translation": "Bosu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kigiriama) · Krapf & Rebmann (1887), p. 17 · Noun"
+        },
+        {
+          "english": "deaf and dumb / gratis, nothing / clod, swarm /",
+          "translation": "Buibui / Bule / Bumba / Buruga / Busa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 17–19 · Mixed · deaf and dumb / gratis, nothing / clod, swarm / cultivate / kindle"
+        },
+        {
+          "english": "food / finger, toe / smith's workshop / wooden tray /",
+          "translation": "Chakuria / Chala / Chanda / Chano / Charo / Chede / Chembe / Chera",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 20–24 · Nouns · food / finger, toe / smith's workshop / wooden tray / journey / market / arrow-point / weapon"
+        },
+        {
+          "english": "white / thigh / morning / black, thirst / mushroom /",
+          "translation": "Cheruve / Chiga / Chiramuko / Chiru / Choga / Chokolo / Chomu / Choyo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 25–29 · Nouns & Adj · white / thigh / morning / black, thirst / mushroom / cock / hard, expensive / stinginess"
+        },
+        {
+          "english": "frog / iron / room / sea-water / luncheon / orange / hip",
+          "translation": "Chulua / Chuma / Chumba / Chumvi / Chunga / Chungwa / Chunu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 30–31 · Nouns"
+        },
+        {
+          "english": "taste / green coconut / canoe / mat bedstead / count /",
+          "translation": "Dada / Dafu / Dalu / Dandara / Dara / Dedema / Dema / Deni / Deremuka / Dete",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 31–39 · Mixed · taste / green coconut / canoe / mat bedstead / count / tremble / fell / debt / descend / valley"
+        },
+        {
+          "english": "dog (Kir. Kuro) / to build (Kir. Ku aka) / fish (Kir. Sui)",
+          "translation": "Dia / Dzenga / Dzui",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo) · Krapf & Rebmann (1887), pp. 40, 59, 67 · Kidigo dialect"
+        },
+        {
+          "english": "small / thunder / Digo country / kiss / lead way /",
+          "translation": "Dide (Tite) / Didimiza / Digo / Dona / Dora / Dovola / Dumbu / Dume / Dune / Duruma",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 41–52 · Mixed · small / thunder / Digo country / kiss / lead way / uncharm / millet beer / male / red / Duruma"
+        },
+        {
+          "english": "come / play / cheek / choose / forest / yesterday /",
+          "translation": "Dza / Dzadziga / Dzafu / Dzagula / Dzaka / Dzana / Dzanganuzi / Dzeka / Dzere",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 53–60 · Mixed · come / play / cheek / choose / forest / yesterday / paternal aunt / laugh / maize cob"
+        },
+        {
+          "english": "earth / eye / day / evening / lion",
+          "translation": "Dzi / Dzidzo / Dziku / Dziloni / Dzimba / Dzina / Dzingo / Dzini / Dzino / Dzoka / Dzoga / Dzoho / Dzora / Dzosi / Dzua / Dzudzuri",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 60–66 · Nouns & Verbs · earth / eye / day / evening / lion; dig / name / neck / under / tooth / tired / tattoo marks / large fire / carve / tear / sun / shoulder"
+        },
+        {
+          "english": "(ra), disgrace, shame.",
+          "translation": "Ila",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 132 · Abstract / Society · POS: n."
+        },
+        {
+          "english": "pers. pron., he, she.",
+          "translation": "Iye",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 135 · Grammar / Pronouns"
+        },
+        {
+          "english": "(ra, pl. Ma-), a hoe, the only agricultural implement",
+          "translation": "Jembe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 136 · Agriculture / Tools · POS: n. | (ra, pl. Ma-), a hoe, the only agricultural implement used by the Wanyika. Dim., Kajembe and Kijembe; magn., Rijembe."
+        },
+        {
+          "english": "(ka, pl. Vi-), a small root of cassava. Dim. of Mugasija.",
+          "translation": "Kagasija (some also say Kangasija)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 141 · Food / Agriculture · POS: n."
+        },
+        {
+          "english": "(kua), place.",
+          "translation": "Kutu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 205 · General / Space · POS: n."
+        },
+        {
+          "english": "(ra, pl. Ma-), a word, a sentence, a speech.",
+          "translation": "Neno",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 303 · Language / Communication · POS: n."
+        },
+        {
+          "english": "(ya, za) (= Tako in Kir.; in Kij., id.).",
+          "translation": "Tiako (often pronounced Tshako)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir., Kij.)) · Krapf & Rebmann (1887), p. 360 · Body Parts / Dialect form · POS: n."
+        },
+        {
+          "english": "pers. pron. See We. He, his.",
+          "translation": "Wakue",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 386 · Grammar / Pronouns"
+        },
+        {
+          "english": "See Lukuare. Either, or, neither, nor.",
+          "translation": "Wala",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 386 · Grammar · POS: adv."
+        },
+        {
+          "english": "(wa, pl. Ma-). See Mula.",
+          "translation": "Wali",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 386 · Cross-ref · POS: n."
+        },
+        {
+          "english": "(wa), quickness, promptitude.",
+          "translation": "Wangu, Uangu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 387 · Abstract · POS: n."
+        },
+        {
+          "english": "(pl. Niaraka), a letter.",
+          "translation": "Waraka",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 387 · Communication · POS: n."
+        },
+        {
+          "english": ", of. It denotes the pl. of nouns which have their",
+          "translation": "Za",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 391 · Grammar / Letter Z · POS: gen. part. | , of. It denotes the pl. of nouns which have their sing. and pl. the same. Gnombe za, An ox of. Gnombe za, Oxen of."
         }
       ]
     },
@@ -76145,11 +76295,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Bidibidi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Prov",
           "translation": "Bigebige",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -76167,11 +76312,6 @@
         {
           "english": "and instr",
           "translation": "Pigira",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Bilashi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -76365,18 +76505,8 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Chambamba",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Contracted from Ki and Ambo, and derived from Ku amba",
           "translation": "Chambo",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Chanache",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -76715,11 +76845,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Danguedangue",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "lit",
           "translation": "Dano",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -77047,11 +77172,6 @@
         {
           "english": "Sa yudzidzagadzaga mundani, kuria kunde",
           "translation": "Dzagadzaga",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Dzagayadzagaya",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -77552,11 +77672,6 @@
         {
           "english": "a hare",
           "translation": "Dzungula",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Dzunu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -78190,11 +78305,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Furufu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "the squirrel",
           "translation": "Furuma",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -78450,11 +78560,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Gi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "a confused noise",
           "translation": "Gigirigigiri",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -78665,11 +78770,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Goya",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "cloves",
           "translation": "Grafu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -78805,11 +78905,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Gunguchu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Munazi wangu u gunguka, ka-u-na kitu kaviri",
           "translation": "Gunguka",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -78885,21 +78980,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Hada",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Hata",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Hai",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Kambi ni atu aohakizua muansa",
           "translation": "Hakisua",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -78912,11 +78992,6 @@
         {
           "english": "Haradora",
           "translation": "Haladora",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Halisi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -78967,16 +79042,6 @@
         {
           "english": "Those",
           "translation": "Hara",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Hari",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Haria!",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -79092,11 +79157,6 @@
         {
           "english": "Pera",
           "translation": "Hera",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "conj",
-          "translation": "Here",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -79425,11 +79485,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Huru",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Hangu dzana yudzihusa punde (= yudzihurira punde)",
           "translation": "Husa",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -79452,11 +79507,6 @@
         {
           "english": "Tuba idzi funsika",
           "translation": "Idzi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Ifu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -79600,11 +79650,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Ivi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Ifu",
           "translation": "Ivu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -79717,11 +79762,6 @@
         {
           "english": "Kabila mbi",
           "translation": "Kabila",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Kabisa",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -79905,11 +79945,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Kafuani",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "a small thicket",
           "translation": "Kafufu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -80046,11 +80081,6 @@
         },
         {
           "english": "red ochre",
-          "translation": "Kama",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "conj",
           "translation": "Kama",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
@@ -80232,11 +80262,6 @@
         {
           "english": "smack",
           "translation": "Kasichana",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Kasidi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -80710,16 +80735,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Kigedi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Kigniando",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Kuku hiyu yunaenenda kignielesa",
           "translation": "Kignielesa",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -80732,11 +80747,6 @@
         {
           "english": "Ku piga kignioto (= Ku fumbama)",
           "translation": "Kignioto",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Kignombe",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -80780,21 +80790,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Kii",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Kiifu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Kiivu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "agreement, for waiting for each other at a given place",
           "translation": "Kiikane",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -80802,11 +80797,6 @@
         {
           "english": "Prov",
           "translation": "Kiike",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Kiivi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -81090,11 +81080,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Kinonu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Ki ndani kifiu kinse",
           "translation": "Kinse",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -81172,16 +81157,6 @@
         {
           "english": "the name of an odoriferous shrub",
           "translation": "Kisibidi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Kisifu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Kizivu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -81720,11 +81695,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "pron",
-          "translation": "Kuenu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Mufune na muare ka-i-kuereka, inaheresa, wala kana tahi sa vevi, si kura tukure, dzulu",
           "translation": "Kueraka",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -81752,11 +81722,6 @@
         {
           "english": "Kua",
           "translation": "Kuira",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Kuisha",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -81827,11 +81792,6 @@
         {
           "english": "To",
           "translation": "Kundika",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Kundu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -82025,11 +81985,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Labuda",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Yudzilachira kasi",
           "translation": "Lachira",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -82162,11 +82117,6 @@
         {
           "english": "the comb of a cock",
           "translation": "Lemba",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Lengalenga",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -82840,16 +82790,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Mabesi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Mapesi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Acts of contumacy",
           "translation": "Mabishi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -83180,11 +83120,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Malamu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "or Malamuso",
           "translation": "Malamusi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -83210,11 +83145,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Mambamba",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Mayo",
           "translation": "Mameye",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -83227,11 +83157,6 @@
         {
           "english": "Muana",
           "translation": "Mana",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Manene",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -83400,11 +83325,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Mbali",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "various",
           "translation": "Mbalimbali",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -83497,16 +83417,6 @@
         {
           "english": "Mutu hiye-ak'enda akikuangue ku rima, hata dzua rikaala ka uka ngueni hata asise yuna mbiriri",
           "translation": "Mbiriri",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Mbofu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Mbovu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -83715,11 +83625,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Mi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Yugniemere mia",
           "translation": "Mia",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -83827,11 +83732,6 @@
         {
           "english": "or Migniuka",
           "translation": "Migniu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Miivi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -84075,11 +83975,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Muaminifu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Si mugeni, ni muanadzi; or, Si mumidzi, ni muanadzi",
           "translation": "Muanadzi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -84155,16 +84050,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Mubesi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Mupesi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "foolish, stupid",
           "translation": "Mubumbafu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -84172,16 +84057,6 @@
         {
           "english": "foolish, stupid",
           "translation": "Mupumbavu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Mubungufu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Mupunguvu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -84347,16 +84222,6 @@
         {
           "english": "the Kinyika name of the Msuahili",
           "translation": "Mudzomba",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Mudzuano",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Mdzuano",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -84575,11 +84440,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Muharara",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Debe",
           "translation": "Muhawe",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -84647,11 +84507,6 @@
         {
           "english": "the end, termination",
           "translation": "Muisho",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Muivi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -84810,11 +84665,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Mulolo",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "A liar",
           "translation": "Mulongo",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -84912,11 +84762,6 @@
         {
           "english": "2nd pers",
           "translation": "Munta",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Munene",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -85062,11 +84907,6 @@
         {
           "english": "A meteor",
           "translation": "Musa",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Musabidi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -85250,11 +85090,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Muvara",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Muveserowe gavesa-ga",
           "translation": "Muvesero",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -85287,11 +85122,6 @@
         {
           "english": "Muuyu",
           "translation": "Muyu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "conj",
-          "translation": "Na",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -85552,11 +85382,6 @@
         {
           "english": "the beckoning crab",
           "translation": "Ngarengare",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Ngawa",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -86010,11 +85835,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Pfupfu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Bia",
           "translation": "Pia",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -86125,11 +85945,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Pungufu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "or Puyu",
           "translation": "Puyi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -86137,11 +85952,6 @@
         {
           "english": "Ku fua rada",
           "translation": "Rada",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Rahisi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -86325,11 +86135,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Ridzi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Dzina ridzo",
           "translation": "Ridzo",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -86460,18 +86265,8 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Rofu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "the prow of a vessel",
           "translation": "Romo",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Romu",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -86550,16 +86345,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Saidi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Zaidi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "thy, thine",
           "translation": "Sako",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -86600,18 +86385,8 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adv",
-          "translation": "Sambi",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Gnania kandakudza, ela yudzilavia samu kuamba: katoaheni, or, kahendeni hio utu, etc",
           "translation": "Samu",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Sana",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -86767,11 +86542,6 @@
         {
           "english": "Shaha",
           "translation": "Sheha",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adv",
-          "translation": "Shida",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -87177,11 +86947,6 @@
         {
           "english": "Muaka udzisosa vevi",
           "translation": "Sosa",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "adj",
-          "translation": "Suafi",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -88225,11 +87990,6 @@
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
-          "english": "adj",
-          "translation": "Veruve",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
           "english": "Reha, ni-ku-vetere",
           "translation": "Vetera",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
@@ -88512,11 +88272,6 @@
         {
           "english": "Luambe lua muhama lunawawisa",
           "translation": "Wawisa",
-          "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
-        },
-        {
-          "english": "pron",
-          "translation": "Wegnie",
           "context": "Rev. Dr. L. Krapf & Rev. J. Rebmann, A Nika-English Dictionary (1887)"
         },
         {
@@ -95108,6 +94863,348 @@
           "english": "For God so loved the world (John 3:16 — 1917 Giryama Specimen #163 & 1848 Rabai Specimen #375)",
           "translation": "Kwani ndo Mulungu arizhouhendza urumwengu, hata akimulazha Mwanawe ariyezhalwa hake-ye, kwamba kila amukuluhiraye iye atsaangamika, akale na uzima wa kare na kare. (Rabai 1848 Lk. 15:10: Za higa, naambira muino, indakala furaha mberre sa malaika ga Mulungu; Ribe 1882 Mt. 4:10: Bwana Mulunguo undamgbwerera, na iye hacheye undamshukuru.)",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "Ethnonyms of Mombasa Sub-District tribes",
+          "translation": "Wa-Duruma, Wa-Digo, Wa-Rabai, Wa-Kambe, Wa-Jibana, Wa-Ribe, Wa-Giryama",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), pp. 263–272 · Ethnonyms · Ethnonyms of Mombasa Sub-District tribes (Wa-Ribe parent tribe)"
+        },
+        {
+          "english": "God; Sky / \"One Mulungu\" (most solemn oath)",
+          "translation": "Mulungu / Mulungummoja",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), p. 264 · Religion / Oath"
+        },
+        {
+          "english": "Hyena",
+          "translation": "Fisi / Mwanza",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), pp. 265–266 · Governance / Ritual · Hyena (highest secret society) / Sacred 6-ft hollow-trunk drum"
+        },
+        {
+          "english": "April heavy rains, August showers, November rains",
+          "translation": "Mwaka (Masika), Mchoo, Vuli",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), p. 266 · Seasons"
+        },
+        {
+          "english": "Paternal uncle / Kinship & marriage-prohibition group",
+          "translation": "Baba mdogo / ndugu",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), pp. 267, 272 · Kinship"
+        },
+        {
+          "english": "Smallpox / \"Grains of corn\" & \"bad disease\"",
+          "translation": "Ndui / Tete / Ugonjwa Ubaya",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), p. 268 · Health / Taboo · Smallpox / \"Grains of corn\" & \"bad disease\" (epidemic euphemisms)"
+        },
+        {
+          "english": "Mr. Little-Skin (Vasco da Gama)",
+          "translation": "Bwana Kigozi",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), p. 272 · Oral History"
+        },
+        {
+          "english": "(ra, pl. Ma-) (= Shaha in Kir.), a chief.",
+          "translation": "Dsumbe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 68 · Society / Dialect form · POS: n."
+        },
+        {
+          "english": "a. (= Ku duna in Kij",
+          "translation": "Dzuna",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij., Kidigo)) · Krapf & Rebmann (1887), p. 68 · Verbs / Dialect form · POS: v. | a. (= Ku duna in Kij.; Ku komba in Kidigo), to wipe out with the fingers."
+        },
+        {
+          "english": "a. (= Fuina in Kir.), to drive together; in Kig., to dance.",
+          "translation": "Dzunga",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) / Kigiriama (Kig.)) · Krapf & Rebmann (1887), p. 69 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "(ya, za) (= Tunu in Kij.), a present, a token of love.",
+          "translation": "Dzunu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 69 · Society / Dialect form · POS: n."
+        },
+        {
+          "english": "a., to fletch arrows. Radically, to let be upon. Ku",
+          "translation": "Ekerera",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.)) · Krapf & Rebmann (1887), p. 71 · Verbs / Tools / Dialect form · POS: v. | a., to fletch arrows. Radically, to let be upon. Ku ekerera mifui."
+        },
+        {
+          "english": "Ku hina is considered less delicate than Ku arika.",
+          "translation": "Hina",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 124 · Verbs / Culture · POS: v. | Gloss: a. (= Ku arika), to circumcise. N.B."
+        },
+        {
+          "english": "a",
+          "translation": "Husa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 130 · Verbs / Dialect form · POS: v. | a. (= Ondosa in Kir.). See Fumbulusa. To startle, to drive away."
+        },
+        {
+          "english": "(= Romu in Kir.). See Hofieka. Hard.",
+          "translation": "Ifu (1)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 131 · Adjectives / Dialect form · POS: adj."
+        },
+        {
+          "english": "See Hegera. Der., Luigo.",
+          "translation": "Igisa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.)) · Krapf & Rebmann (1887), p. 131 · Dialect cross-ref"
+        },
+        {
+          "english": "a",
+          "translation": "Iha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij., Kig.)) · Krapf & Rebmann (1887), p. 131 · Verbs / Dialect note · POS: v. | a. (Kij., Ita, which in Kig. means Lagula), to call, to invite, to name."
+        },
+        {
+          "english": "n. See Kansa; Fifira. To enter.",
+          "translation": "Ingira",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kigiriama (Kig.)) · Krapf & Rebmann (1887), p. 132 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "a",
+          "translation": "Ingisiza",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 133 · Verbs / Dialect form · POS: v. | a. (= Ku bisania in Kir.), to insert, to intersperse, e.g. beads of different colours in stringing them."
+        },
+        {
+          "english": "(= Ku solana in Kir.).",
+          "translation": "Ingana",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kigiriama (Kig.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 133 · Dialect cross-ref"
+        },
+        {
+          "english": "n. See Unuka. To rise, to give way to being lifted.",
+          "translation": "Inuka",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.)) · Krapf & Rebmann (1887), p. 133 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "a. See Unula. To lift.",
+          "translation": "Inula",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.)) · Krapf & Rebmann (1887), p. 133 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "n. (= Ku funga in Kij.).",
+          "translation": "Isaisa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 134 · Verbs / Dialect cross-ref · POS: v."
+        },
+        {
+          "english": "(= I-si fio kala), father.",
+          "translation": "Ise",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo)) · Krapf & Rebmann (1887), p. 134 · Kinship / Dialect form · POS: n."
+        },
+        {
+          "english": "(= Fuhi in Kir.), short. Mutu muivi.",
+          "translation": "Ivi (1)",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 134 · Adjectives / Dialect form · POS: adj."
+        },
+        {
+          "english": "(ra, pl. Mavo) (= Valakahi in Kid.). See Kisinde.",
+          "translation": "Ivo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kid.)) · Krapf & Rebmann (1887), p. 135 · Dialect cross-ref · POS: n."
+        },
+        {
+          "english": "(ra), a dish made of the flour of dried cassava. Wari",
+          "translation": "Jora",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo)) · Krapf & Rebmann (1887), p. 136 · Food / Dialect form · POS: n. | (ra), a dish made of the flour of dried cassava. Wari wa jora. Formerly the Rabais simply called it Wari wa mugazija."
+        },
+        {
+          "english": "(= Kigniugnuniu in Kir.), the elbow.",
+          "translation": "Kigogorido",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 166 · Body Parts / Dialect form · POS: n."
+        },
+        {
+          "english": "(cha, pl. Vi-) (= Kidzoe in Kid.). See Mfuha",
+          "translation": "Kigua",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kid.)) · Krapf & Rebmann (1887), p. 166 · Agriculture / Food / Dialect note · POS: n. | (cha, pl. Vi-) (= Kidzoe in Kid.). See Mfuha ; Goboa ; Muhama. A kind of Guinea-corn, now very rare."
+        },
+        {
+          "english": "(= Bumira). See Mafu.",
+          "translation": "Kiriama, or Kikiriama",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 179 · Dialect / Cross-ref · POS: n."
+        },
+        {
+          "english": "(pl. Tai) (= Ludahi in Kir.).",
+          "translation": "Ludai",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 218 · Dialect cross-ref · POS: n."
+        },
+        {
+          "english": "(lua, pl. Ndea, or Nthea), the jawbone. The word is",
+          "translation": "Ludea, or Luthea",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kig.)) · Krapf & Rebmann (1887), p. 218 · Body Parts / Dialect note · POS: n. | (lua, pl. Ndea, or Nthea), the jawbone. The word is becoming obsolete, being superseded by the Kig. word Ngambu."
+        },
+        {
+          "english": "(ga, pl. of Luario).",
+          "translation": "Maario",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo)) · Krapf & Rebmann (1887), p. 230 · Dialect cross-ref · POS: n."
+        },
+        {
+          "english": "(= Mabaw'a in Kir. and Kij.), a kind of wild beast.",
+          "translation": "Mabawale",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir., Kij.)) · Krapf & Rebmann (1887), p. 230 · Animals / Dialect form · POS: n."
+        },
+        {
+          "english": "(= Niara in Kij.), booty, plunder, hostages.",
+          "translation": "Madafe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kigiriama (Kig.) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 231 · Society / Dialect form · POS: n."
+        },
+        {
+          "english": "(= Ndumo in Kir.). Neno ra madeuso.",
+          "translation": "Madeuso",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 231 · Dialect cross-ref · POS: n."
+        },
+        {
+          "english": "Ku aka niumba sa madza (= Kir., Ku guira musena).",
+          "translation": "Madza",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 232 · Household / Dialect form"
+        },
+        {
+          "english": "(= Chiramuko in Kir.), morning.",
+          "translation": "Madzacha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kigiriama (Kigiriama) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 232 · Nature / Time / Dialect form · POS: n."
+        },
+        {
+          "english": "(ga) (in Kid., honeycomb; Mavalala in Kir.). Magn. of Uchi.",
+          "translation": "Madzuchi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (in Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 233 · Food / Nature / Dialect form · POS: n."
+        },
+        {
+          "english": ", sense. Kuna minini (= Kuna akili we).",
+          "translation": "Minini",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.)) · Krapf & Rebmann (1887), p. 257 · Abstract / Dialect form · POS: n."
+        },
+        {
+          "english": "(= Ndere in Kir.).",
+          "translation": "Ngamba",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 303 · Dialect cross-ref · POS: n."
+        },
+        {
+          "english": "(ya, za) (Luthea in Kir.), the jawbone.",
+          "translation": "Ngambu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kikamba (Kik.) (cross-ref Kir., also Kig. on p. 218)) · Krapf & Rebmann (1887), p. 303 · Body Parts / Dialect form · POS: n."
+        },
+        {
+          "english": "(ya, za) (= Koro in Kir.), anger, wrath.",
+          "translation": "Ngoro",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid. and Kidigo) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 305 · Emotions / Dialect form · POS: n."
+        },
+        {
+          "english": "(in Kig., Ngui), a leader in singing, who composes the",
+          "translation": "Ngoi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) / Kigiriama (in Kig., Ngui)) · Krapf & Rebmann (1887), p. 305 · Culture / Music / Dialect note · POS: n. | (in Kig., Ngui), a leader in singing, who composes the words as he sings."
+        },
+        {
+          "english": "(= Ngoi in Kir.).",
+          "translation": "Ngui",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 305 · Culture / Dialect cross-ref"
+        },
+        {
+          "english": "a. (= Songasonga in Kij.).",
+          "translation": "Shongashonga",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 342 · Verbs / Dialect cross-ref · POS: v."
+        },
+        {
+          "english": "n. See Sisa. Kid., to play.",
+          "translation": "Sisika",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.)) · Krapf & Rebmann (1887), p. 349 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "a. (in Kns., Ku sususa), to soothe, to pacify a child.",
+          "translation": "Sususa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kns.)) · Krapf & Rebmann (1887), p. 354 · Verbs / Kinship / Dialect form · POS: v."
+        },
+        {
+          "english": "See Kuga in Kns. An open space in a town.",
+          "translation": "Uga",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) and Kijomba (Kij.) (cross-ref Kns.)) · Krapf & Rebmann (1887), p. 366 · Settlement / Dialect form · POS: n."
+        },
+        {
+          "english": "a. (=Gutusha in Kij.), to startle.",
+          "translation": "Vuruza",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 386 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "n., to be ashamed.",
+          "translation": "Vunganika",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kigiriama (Kig.)) · Krapf & Rebmann (1887), p. 386 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "See Gansa; Chaje.",
+          "translation": "Wao",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kigiriama (= U-ri-o, Kig.)) · Krapf & Rebmann (1887), p. 387 · Grammar / Dialect cross-ref"
+        },
+        {
+          "english": "a. (= Ku yeya in Kir.), to seek, to search.",
+          "translation": "Weha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 388 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "n. See Hua. To go.",
+          "translation": "Wiha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo)) · Krapf & Rebmann (1887), p. 388 · Verbs / Dialect form · POS: v."
+        },
+        {
+          "english": "dem. pron. (= Hino and Ino in Kir.). Hiyino ni fuko yino.",
+          "translation": "Yino",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 390 · Grammar / Dialect form"
+        },
+        {
+          "english": "n. (= Nemuka in Kir.).",
+          "translation": "Yongoheka",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 390 · Verbs / Dialect cross-ref · POS: v."
+        },
+        {
+          "english": "(= Tundu la uso in Kij.), a hole.",
+          "translation": "Yunchu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 391 · General / Dialect form · POS: n."
         }
       ]
     }
@@ -95115,5 +95212,5 @@
   "source": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "nyf",
   "glottocode": "miji1238",
-  "totalEntries": 17078
+  "totalEntries": 16858
 }

@@ -3,31 +3,19 @@
  * scripts/sync-cloudflare-r2-audio.mjs
  *
  * Zero-Cost ($0.00/month storage & $0.00 egress) Audio Transcoding & Cloudflare R2 Sync Pipeline
- * for KenyaHub's 23 Kenyan Languages.
+ * for KenyaHub's 23 Kenyan Languages + Kenyan English (`en-KE`) & KSL (`xki`) metadata.
  *
- * Architecture & Free-Tier Math:
- *   - Cloudflare R2 Free Tier provides:
- *       * 10 GB / month free storage
- *       * 1,000,000 free Class A operations / month (writes/uploads)
- *       * 10,000,000 free Class B operations / month (reads/streams)
- *       * $0.00 / GB egress bandwidth (100% free global CDN delivery via R2 Custom Domain)
- *   - Encoding at 24 kbps mono Opus (`ffmpeg -c:a libopus -b:a 24k -ac 1 -ar 24000 -vbr on`):
- *       * 1 hour of speech = 10.8 MB
- *       * 10 GB free tier holds ~925 hours of speech (~660,000 5-second vocabulary/phrase clips)
- *
- * Verified Commercially Permissive Audio Sources:
- *   1. The Thiomi-5K Corpus (`thiomi/thiomi-5k`, CC-BY-4.0, Public) — Kikuyu (`kik_Latn`), Kamba (`kam_Latn`), Dholuo (`luo_Latn`), Meru (`mer_Latn`), Somali (`som_Latn`)
- *   2. Google Research WAXAL (`google/WaxalNLP`, CC-BY-4.0 / CC-BY-SA-4.0, Public) — Swahili (`swa_tts`), Kikuyu (`kik_tts`), Dholuo (`luo_tts`), Lumasaba/Luhya (`mas_asr`), Oromo/Borana (`orm_asr_v2`)
- *   3. Google FLEURS (`google/fleurs`, CC-BY-4.0, Public) — Swahili (`sw_ke`), Dholuo (`luo_ke`), Kikamba (`kam_ke`), Somali (`so_so`), Oromo/Borana (`om_et`)
- *   4. CLEAR Global BibleTTS Dholuo (`CLEAR-Global/BibleTTS-Luo`, CC-BY-SA-4.0, Public) — Studio 24kHz Dholuo (`read`)
- *   5. Kencorpus KenSpeech (`Kencorpus/KenSpeech`, CC-BY-4.0, Public) — 27.5 hours Kenyan Swahili speech (`default`)
- *   6. Mozilla Common Voice Swahili (`deepdml/common_voice_26_0` & `fsicoli/common_voice_22_0`, CC0-1.0, Gated on HF) — Swahili (`sw`)
- *   7. Sunbird AI SALT (`Sunbird/salt`, CC-BY-SA-4.0, Gated on HF) — Ateso (`studio-teo`, `multispeaker-teo`) & Swahili (`studio-swa`)
- *   8. Digital Divide Data Kenya ASR (`Digital-Divide-Data/Kamba-ASR-Data-Subset-484H`, `DDD-Kenya-Somali-Domain-Specific`, `DDD-Kenya-Gusii-Intent`, Gated on HF)
- *   9. Zenodo Lamu Kiamu Audio (`zenodo/19828379` & `19827932`, CC-BY-4.0, Public) — Ustadh Mau Kiamu recitations
- *
- * Usage:
- *   node scripts/sync-cloudflare-r2-audio.mjs [--dry-run] [--bucket=kenyahub-audio] [--lang=all]
+ * Verified Commercially Permissive Audio & KSL Sources (Master Expansion Audit):
+ *   1. African Next Voices — Kenya (`MCAA1-MSU/anv_data_ke`, CC-BY-4.0, Gated, 3,005h) — Kikuyu, Dholuo, Kalenjin, Maasai/Samburu, Somali
+ *   2. Mozilla Common Voice 27.0 (`mozilladatacollective.com`, CC0-1.0, 1,346.7h) — Swahili, Dholuo, Kalenjin, Kidaw'ida/Taita (`dav`), Oromo (`om`)
+ *   3. The Thiomi Dataset (`thiomi/thiomi-5k`, CC-BY-4.0, 61.3h live) — Kikuyu, Kamba, Dholuo, Kimeru, Somali
+ *   4. Google WAXAL v2.0.0 (`google/WaxalNLP`, CC-BY-SA-4.0) — Swahili, Kikuyu, Dholuo, Ugandan Masaaba/Luhya (`mas_asr`, NOT Maasai), Oromo (`orm_asr_v2`)
+ *   5. KenCorpus Audio & KenSpeech (`Kencorpus/KenCorpus_audio`, `Kencorpus/KenSpeech`, CC-BY-4.0, 204h + 27.5h) — Dholuo, Luhya, Swahili
+ *   6. Google FLEURS (`google/fleurs`, CC-BY-4.0) — Swahili, Dholuo, Kamba, Somali, Oromo
+ *   7. Sunbird AI SALT (`Sunbird/salt`, CC-BY-SA-4.0, Gated) — Ateso (`studio-teo`, `multispeaker-teo`) & Swahili (`studio-swa`)
+ *   8. CLEAR Global BibleTTS (`CLEAR-Global/BibleTTS-Luo`, `masakhane-io/bibleTTS` Kikuyu, CC-BY-SA-4.0)
+ *   9. OpenSLR SLR25 (MIT), Makerere & Rono Swahili TTS (CC-BY-4.0), EdAcc Kenyan English (CC-BY-SA-4.0), Lingua Libre Swahili (CC-BY-SA-4.0)
+ *  10. Kenyan Sign Language (`xki`): Maseno KSL Pose Dataset (Zenodo 14338329 (Open Access), CC-BY-4.0) & Open Sign Bibles (`bible-nlp/sign-bibles`, CC-BY-SA-4.0)
  */
 
 import fs from "node:fs";
@@ -43,36 +31,37 @@ const R2_SOURCES = [
   {
     langId: "swahili",
     datasets: [
+      { id: "cv27-sw", repo: "mozilla-data-collective/cmu5sgles002zo1071nphgtby", config: "sw", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5sgles002zo1071nphgtby" },
       { id: "waxal-swa-tts", repo: "google/WaxalNLP", config: "swa_tts", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
-      { id: "open-bible-swh", repo: "multilingual-tts/open-bible", config: "swh", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/multilingual-tts/open-bible" },
-      { id: "swahili-words-411k", repo: "michsethowusu/swahili-words-speech-text-parallel", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/michsethowusu/swahili-words-speech-text-parallel" },
-      { id: "stem-swahili-speech", repo: "stem-content-ai-project/swahili-speech", config: "default", gated: false, license: "MIT", url: "https://huggingface.co/datasets/stem-content-ai-project/swahili-speech" },
-      { id: "alffa-slr25", repo: "nickdee96/ALFFA-Swahili-News", config: "default", gated: false, license: "MIT", url: "https://www.openslr.org/25/" },
-      { id: "liva-swahili-asr", repo: "liva-ai/swahili-asr", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/liva-ai/swahili-asr" },
-      { id: "kencorpus-audio", repo: "Kencorpus/KenCorpus_audio", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio" },
-      { id: "fleurs-sw-ke", repo: "google/fleurs", config: "sw_ke", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
+      { id: "kencorpus-audio-sw", repo: "Kencorpus/KenCorpus_audio", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio" },
       { id: "kenspeech-sw", repo: "Kencorpus/KenSpeech", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenSpeech" },
-      { id: "cv-sw-26", repo: "deepdml/common_voice_26_0", config: "sw", gated: true, license: "CC0-1.0", url: "https://huggingface.co/datasets/deepdml/common_voice_26_0" },
-      { id: "zenodo-kiamu", url: "https://zenodo.org/records/19828379/files/Piste%202.wma?download=1", gated: false, license: "CC-BY-4.0" },
+      { id: "fleurs-sw-ke", repo: "google/fleurs", config: "sw_ke", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
+      { id: "salt-studio-swa", repo: "Sunbird/salt", config: "studio-swa", gated: true, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/Sunbird/salt" },
+      { id: "openslr-slr25", repo: "openslr/slr25", config: "default", gated: false, license: "MIT", url: "https://www.openslr.org/25/" },
+      { id: "makerere-sw-tts", repo: "mendeley/nb8b25h9nj-3", config: "default", gated: false, license: "CC-BY-4.0", url: "https://data.mendeley.com/datasets/nb8b25h9nj/3" },
+      { id: "rono-sw-tts", repo: "mendeley/rbn6nmygcn-1", config: "default", gated: false, license: "CC-BY-4.0", url: "https://data.mendeley.com/datasets/rbn6nmygcn/1" },
+      { id: "lingua-libre-swa", repo: "wikimedia-commons/lingua-libre-swa", config: "swa", gated: false, license: "CC-BY-SA-4.0", url: "https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-swa" },
     ],
   },
   {
     langId: "kikuyu",
     datasets: [
+      { id: "anv-ke-kikuyu", repo: "MCAA1-MSU/anv_data_ke", config: "kikuyu", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke" },
       { id: "thiomi-kik", repo: "thiomi/thiomi-5k", config: "kik_Latn", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/thiomi/thiomi-5k" },
-      { id: "open-bible-kik", repo: "multilingual-tts/open-bible", config: "kik", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/multilingual-tts/open-bible" },
       { id: "waxal-kik-tts", repo: "google/WaxalNLP", config: "kik_tts", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
+      { id: "bibletts-kik", repo: "masakhane-io/bibleTTS", config: "kikuyu", gated: false, license: "CC-BY-SA-4.0", url: "https://masakhane-io.github.io/bibleTTS/" },
     ],
   },
   {
     langId: "luo",
     datasets: [
+      { id: "anv-ke-luo", repo: "MCAA1-MSU/anv_data_ke", config: "luo", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke" },
+      { id: "cv27-luo", repo: "mozilla-data-collective/cmu5wfvfn00bso107clj45iop", config: "luo", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5wfvfn00bso107clj45iop" },
       { id: "thiomi-luo", repo: "thiomi/thiomi-5k", config: "luo_Latn", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/thiomi/thiomi-5k" },
       { id: "fleurs-luo-ke", repo: "google/fleurs", config: "luo_ke", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
       { id: "waxal-luo-tts", repo: "google/WaxalNLP", config: "luo_tts", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
       { id: "bibletts-luo", repo: "CLEAR-Global/BibleTTS-Luo", config: "read", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/CLEAR-Global/BibleTTS-Luo" },
       { id: "kencorpus-audio-luo", repo: "Kencorpus/KenCorpus_audio", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio" },
-      { id: "cv27-luo", repo: "mozilla/common-voice-27-luo", config: "luo", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5wfvfn00bso107clj45iop" },
     ],
   },
   {
@@ -80,7 +69,6 @@ const R2_SOURCES = [
     datasets: [
       { id: "thiomi-kam", repo: "thiomi/thiomi-5k", config: "kam_Latn", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/thiomi/thiomi-5k" },
       { id: "fleurs-kam-ke", repo: "google/fleurs", config: "kam_ke", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
-      { id: "ddd-kam", repo: "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H", config: "default", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Digital-Divide-Data/Kamba-ASR-Data-Subset-484H" },
     ],
   },
   {
@@ -92,7 +80,6 @@ const R2_SOURCES = [
   {
     langId: "luhya",
     datasets: [
-      { id: "ddd-luhya-642h", repo: "Digital-Divide-Data/Luhya-ASR-Data-subset-642H", config: "default", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Digital-Divide-Data/Luhya-ASR-Data-subset-642H" },
       { id: "kencorpus-audio-luy", repo: "Kencorpus/KenCorpus_audio", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio" },
       { id: "waxal-mas-asr", repo: "google/WaxalNLP", config: "mas_asr", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
     ],
@@ -101,8 +88,13 @@ const R2_SOURCES = [
     langId: "kalenjin",
     datasets: [
       { id: "anv-ke-kalenjin", repo: "MCAA1-MSU/anv_data_ke", config: "kalenjin", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke" },
-      { id: "kalenjin-asr-hf", repo: "kln001/kalenjin-asr-data", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/kln001/kalenjin-asr-data" },
-      { id: "cv27-kln", repo: "mozilla/common-voice-27-kln", config: "kln", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5webje00bgo1079qb3nubj" },
+      { id: "cv27-kln", repo: "mozilla-data-collective/cmu5webje00bgo1079qb3nubj", config: "kln", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5webje00bgo1079qb3nubj" },
+    ],
+  },
+  {
+    langId: "taita",
+    datasets: [
+      { id: "cv27-dav", repo: "mozilla-data-collective/cmu5w2bh700aso107ffpduqpp", config: "dav", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5w2bh700aso107ffpduqpp" },
     ],
   },
   {
@@ -118,12 +110,6 @@ const R2_SOURCES = [
     ],
   },
   {
-    langId: "kisii",
-    datasets: [
-      { id: "ddd-gusii", repo: "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H", config: "default", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Digital-Divide-Data/Gusii-ASR-Data-Subset-470H" },
-    ],
-  },
-  {
     langId: "teso",
     datasets: [
       { id: "salt-studio-teo", repo: "Sunbird/salt", config: "studio-teo", gated: true, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/Sunbird/salt" },
@@ -133,23 +119,30 @@ const R2_SOURCES = [
   {
     langId: "somali",
     datasets: [
-      { id: "thiomi-som", repo: "thiomi/thiomi-5k", config: "som_Latn", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/thiomi/thiomi-5k" },
       { id: "anv-ke-somali", repo: "MCAA1-MSU/anv_data_ke", config: "somali", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke" },
-      { id: "soomali-asr-hf", repo: "skydheere/soomali-asr-dataset", config: "default", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/skydheere/soomali-asr-dataset" },
+      { id: "thiomi-som", repo: "thiomi/thiomi-5k", config: "som_Latn", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/thiomi/thiomi-5k" },
       { id: "fleurs-so-so", repo: "google/fleurs", config: "so_so", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
-      { id: "ddd-som", repo: "Digital-Divide-Data/Somali-ASR-Subset-68H", config: "default", gated: true, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/Digital-Divide-Data/Somali-ASR-Subset-68H" },
     ],
   },
   {
     langId: "borana",
     datasets: [
-      { id: "open-bible-orm", repo: "multilingual-tts/open-bible", config: "gaz", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/multilingual-tts/open-bible" },
+      { id: "cv27-om", repo: "mozilla-data-collective/cmu5vkzvd009po10727n12m9h", config: "om", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5vkzvd009po10727n12m9h" },
       { id: "fleurs-om-et", repo: "google/fleurs", config: "om_et", gated: false, license: "CC-BY-4.0", url: "https://huggingface.co/datasets/google/fleurs" },
       { id: "waxal-orm-asr", repo: "google/WaxalNLP", config: "orm_asr_v2", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/google/WaxalNLP" },
-      { id: "cv27-om", repo: "mozilla/common-voice-27-om", config: "om", gated: true, license: "CC0-1.0", url: "https://mozilladatacollective.com/datasets/cmu5vkzvd009po10727n12m9h" },
     ],
   },
 ];
+
+const SPECIAL_MODALITIES = {
+  "english-ke": [
+    { id: "edacc-en-ke", repo: "edinburghcstr/edacc", config: "default", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/edinburghcstr/edacc" },
+  ],
+  ksl: [
+    { id: "maseno-ksl-pose-14338329", repo: "zenodo/14338329", config: "xki", gated: false, license: "CC-BY-4.0", url: "https://zenodo.org/records/14338329" },
+    { id: "open-sign-bibles-xki", repo: "bible-nlp/sign-bibles", config: "xki", gated: false, license: "CC-BY-SA-4.0", url: "https://huggingface.co/datasets/bible-nlp/sign-bibles" },
+  ],
+};
 
 function toAudioSlug(text) {
   return String(text || "")
@@ -166,26 +159,15 @@ function toAudioSlug(text) {
 
 export function transcodeToOpus24k(inputPath, outputPath) {
   execFileSync("ffmpeg", [
-    "-y",
-    "-i", inputPath,
-    "-vn",
-    "-ac", "1",
-    "-ar", "24000",
-    "-c:a", "libopus",
-    "-b:a", "24k",
-    "-vbr", "on",
-    "-application", "voip",
+    "-y", "-i", inputPath, "-vn", "-ac", "1", "-ar", "24000",
+    "-c:a", "libopus", "-b:a", "24k", "-vbr", "on", "-application", "voip",
     outputPath,
   ], { stdio: "ignore" });
 }
 
 export function uploadToCloudflareR2(bucket, objectKey, localFilePath) {
   execFileSync("npx", [
-    "wrangler",
-    "r2",
-    "object",
-    "put",
-    `${bucket}/${objectKey}`,
+    "wrangler", "r2", "object", "put", `${bucket}/${objectKey}`,
     "--file", localFilePath,
     "--content-type", "audio/ogg; codecs=opus",
     "--cache-control", "public, max-age=31536000, immutable",
@@ -197,16 +179,17 @@ function main() {
   const dryRun = args.includes("--dry-run") || !process.env.CLOUDFLARE_API_TOKEN;
   const bucket = args.find((a) => a.startsWith("--bucket="))?.split("=")[1] || "kenyahub-audio";
 
-  console.log("=== Cloudflare R2 Zero-Egress Audio Sync Pipeline ===");
+  console.log("=== Cloudflare R2 Zero-Egress Audio & KSL Sync Pipeline ===");
   console.log(`Bucket: ${bucket} | Mode: ${dryRun ? "MANIFEST GENERATION / DRY-RUN" : "LIVE R2 UPLOAD"}`);
 
   const manifest = {
-    version: "1.1.0",
-    generatedAt: "2026-11-17",
+    version: "2.0.0",
+    generatedAt: new Date().toISOString().slice(0, 10),
     storageArchitecture: "Cloudflare R2 Free Tier (10 GB free storage, 10M free Class B reads/mo, $0.00 egress)",
     codec: "Opus 24kbps mono 24kHz (.opus)",
     estimatedCapacityHours: 925,
     languages: {},
+    specialModalities: SPECIAL_MODALITIES,
   };
 
   const dictFiles = fs.readdirSync(DICT_DIR).filter((f) => f.endsWith(".json") && f !== "kenya-languages.json");
@@ -244,7 +227,7 @@ function main() {
 
   fs.mkdirSync(path.dirname(OUT_MANIFEST), { recursive: true });
   fs.writeFileSync(OUT_MANIFEST, JSON.stringify(manifest, null, 2));
-  console.log(`Wrote R2 audio manifest to ${OUT_MANIFEST} (${Object.keys(manifest.languages).length} languages).`);
+  console.log(`Wrote R2 audio manifest to ${OUT_MANIFEST} (${Object.keys(manifest.languages).length} languages + KSL/en-KE modalities).`);
 }
 
 main();

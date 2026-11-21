@@ -1,7 +1,7 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo, useEffect, useRef, useDeferredValue } from "react";
 import { scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import countiesData from "@/data/counties.json";
@@ -99,9 +99,140 @@ const COUNTY_HUB_FAQS = [
   },
 ];
 
+// Pre-index static county datasets once at module load (O(N+M) instead of O(N*M) per visit)
+const STATIC_ENRICHED_COUNTIES = (() => {
+  const budgetMap = new Map<number, any>();
+  for (const b of (budgetsData as any).budgets || []) {
+    budgetMap.set(Number(b.code), b);
+  }
+  const rainMap = new Map<number, any>();
+  for (const r of (rainfallData as any).counties || []) {
+    rainMap.set(Number(r.code), r);
+  }
+  const hospitalCountMap = new Map<string, number>();
+  for (const h of (hospitalsData as any).hospitals || []) {
+    const k = normalizeCountyName(h.county);
+    hospitalCountMap.set(k, (hospitalCountMap.get(k) || 0) + 1);
+  }
+  const postalEntriesMap = new Map<string, any[]>();
+  for (const p of (postalData as any).codes || []) {
+    const k = normalizeCountyName(p.county);
+    const arr = postalEntriesMap.get(k);
+    if (arr) arr.push(p);
+    else postalEntriesMap.set(k, [p]);
+  }
+  const topSchoolsCountMap = new Map<string, number>();
+  for (const s of (rankingsData as any).schools || []) {
+    const k = normalizeCountyName(s.county);
+    topSchoolsCountMap.set(k, (topSchoolsCountMap.get(k) || 0) + 1);
+  }
+  const agrovetsCountMap = new Map<string, number>();
+  for (const a of (agrovetsData as any).agrovets || []) {
+    const k = normalizeCountyName(a.county);
+    agrovetsCountMap.set(k, (agrovetsCountMap.get(k) || 0) + 1);
+  }
+  const solarMap = new Map<string, number>();
+  for (const sr of (solarData as any).regions || []) {
+    const irr = Number(sr?.irradiance || 0);
+    for (const rc of sr.counties || []) {
+      solarMap.set(normalizeCountyName(rc), irr);
+    }
+  }
+  const parksList = ((parksData as any).parks || []).map((p: any) => normalizeCountyName(p.county));
+  const soilsList = ((soilsData as any).soilTypes || []).map((s: any) => ({
+    ...s,
+    normCounties: (s.counties || []).map((sc: string) => normalizeCountyName(sc)),
+  }));
+
+  return countiesData.counties.map((c) => {
+    const budget = budgetMap.get(c.code) || null;
+    const rawRain = rainMap.get(c.code) || null;
+    const rain = rawRain ? { ...rawRain, annualRainfall: computeAnnualRainfall(rawRain) } : null;
+    const region = COUNTY_REGION_BY_CODE[c.code] || "Kenya";
+    const normName = normalizeCountyName(c.name);
+    const density = c.area > 0 ? Math.round(c.population / c.area) : 0;
+    const hospitalsCount = hospitalCountMap.get(normName) || 0;
+    const countyPostalEntries = postalEntriesMap.get(normName) || [];
+    const postalCount = countyPostalEntries.length;
+    const topSchoolsCount = topSchoolsCountMap.get(normName) || 0;
+    let parksCount = 0;
+    for (const pk of parksList) {
+      if (pk.includes(normName)) parksCount++;
+    }
+    const agrovetsCount = agrovetsCountMap.get(normName) || 0;
+    const solarIrradiance = solarMap.get(normName) || 0;
+
+    const matchingSoils = soilsList.filter((s: any) =>
+      s.normCounties.some((sc: string) => sc.includes(normName))
+    );
+    const primarySoil = matchingSoils[0]?.name || "";
+    const topCrops = Array.from(
+      new Set(matchingSoils.flatMap((s: any) => s.bestCrops || []))
+    ).slice(0, 4) as string[];
+
+    const soilAndCropsSummary =
+      URBAN_UTILITIES_SUMMARY[c.slug] ||
+      (primarySoil
+        ? `${primarySoil}${topCrops.length > 0 ? ` · ${topCrops.join(", ")}` : ""}`
+        : `${rain?.climateZone || "Regional"} Agriculture`);
+
+    const monthlyRain = MONTH_KEYS.map((mk, idx) => ({
+      month: MONTHS[idx],
+      mm: Number(rain?.monthly?.[mk] ?? rain?.monthlyAvg?.[idx] ?? 0),
+    }));
+    const peakRainMonth = monthlyRain.reduce(
+      (best, cur) => (cur.mm > best.mm ? cur : best),
+      monthlyRain[0] || { month: "—", mm: 0 }
+    );
+    const driestRainMonth = monthlyRain.reduce(
+      (best, cur) => (cur.mm < best.mm ? cur : best),
+      monthlyRain[0] || { month: "—", mm: 0 }
+    );
+
+    const townSet = new Set<string>([c.capital]);
+    for (const p of countyPostalEntries) {
+      if (p.town) townSet.add(p.town);
+      if (townSet.size >= 4) break;
+    }
+    const majorTowns = Array.from(townSet).join(", ");
+
+    const totalBudget = (budget?.allocation || 0) + (budget?.ownSourceRevenue || 0);
+    const osrSelfReliance =
+      totalBudget > 0
+        ? Math.round(((budget?.ownSourceRevenue || 0) / totalBudget) * 1000) / 10
+        : 0;
+    const allocationPerCapita =
+      c.population > 0 && budget?.allocation
+        ? Math.round((budget.allocation * 1_000_000) / c.population)
+        : 0;
+
+    return {
+      ...c,
+      density,
+      region,
+      budget,
+      rain,
+      hospitalsCount,
+      postalCount,
+      topSchoolsCount,
+      parksCount,
+      agrovetsCount,
+      solarIrradiance,
+      soilAndCropsSummary,
+      peakRainMonth,
+      driestRainMonth,
+      majorTowns,
+      totalBudget,
+      osrSelfReliance,
+      allocationPerCapita,
+    };
+  });
+})();
+
 export default function CountyIndexPage() {
   const [activeTab, setActiveTab] = useState<ActiveTab>("directory");
   const [search, setSearch] = useState("");
+  const deferredSearch = useDeferredValue(search);
   const [climateFilter, setClimateFilter] = useState("All");
   const [regionFilter, setRegionFilter] = useState("All");
   const [letterFilter, setLetterFilter] = useState("All");
@@ -119,112 +250,7 @@ export default function CountyIndexPage() {
   const [compareSlugA, setCompareSlugA] = useState("nairobi");
   const [compareSlugB, setCompareSlugB] = useState("mombasa");
 
-  // Enrich all 47 counties with budget, rainfall, hospital count, postal count, and top schools count
-  const enrichedCounties = useMemo(() => {
-    const budgetMap = new Map<number, any>();
-    for (const b of (budgetsData as any).budgets || []) {
-      budgetMap.set(Number(b.code), b);
-    }
-    const rainMap = new Map<number, any>();
-    for (const r of (rainfallData as any).counties || []) {
-      rainMap.set(Number(r.code), r);
-    }
-
-    return countiesData.counties.map((c) => {
-      const budget = budgetMap.get(c.code) || null;
-      const rawRain = rainMap.get(c.code) || null;
-      const rain = rawRain ? { ...rawRain, annualRainfall: computeAnnualRainfall(rawRain) } : null;
-      const region = COUNTY_REGION_BY_CODE[c.code] || "Kenya";
-      const normName = normalizeCountyName(c.name);
-      const density = c.area > 0 ? Math.round(c.population / c.area) : 0;
-      const hospitalsCount = ((hospitalsData as any).hospitals || []).filter(
-        (h: any) => normalizeCountyName(h.county) === normName
-      ).length;
-      const countyPostalEntries = ((postalData as any).codes || []).filter(
-        (p: any) => normalizeCountyName(p.county) === normName
-      );
-      const postalCount = countyPostalEntries.length;
-      const topSchoolsCount = ((rankingsData as any).schools || []).filter(
-        (s: any) => normalizeCountyName(s.county) === normName
-      ).length;
-      const parksCount = ((parksData as any).parks || []).filter(
-        (p: any) => normalizeCountyName(p.county).includes(normName)
-      ).length;
-      const agrovetsCount = ((agrovetsData as any).agrovets || []).filter(
-        (a: any) => normalizeCountyName(a.county) === normName
-      ).length;
-
-      const solarRegion = ((solarData as any).regions || []).find((sr: any) =>
-        (sr.counties || []).some((rc: string) => normalizeCountyName(rc) === normName)
-      );
-      const solarIrradiance = Number(solarRegion?.irradiance || 0);
-
-      const matchingSoils = ((soilsData as any).soilTypes || []).filter((s: any) =>
-        (s.counties || []).some((sc: string) => normalizeCountyName(sc).includes(normName))
-      );
-      const primarySoil = matchingSoils[0]?.name || "";
-      const topCrops = Array.from(
-        new Set(matchingSoils.flatMap((s: any) => s.bestCrops || []))
-      ).slice(0, 4) as string[];
-
-      const soilAndCropsSummary =
-        URBAN_UTILITIES_SUMMARY[c.slug] ||
-        (primarySoil
-          ? `${primarySoil}${topCrops.length > 0 ? ` · ${topCrops.join(", ")}` : ""}`
-          : `${rain?.climateZone || "Regional"} Agriculture`);
-
-      const monthlyRain = MONTH_KEYS.map((mk, idx) => ({
-        month: MONTHS[idx],
-        mm: Number(rain?.monthly?.[mk] ?? rain?.monthlyAvg?.[idx] ?? 0),
-      }));
-      const peakRainMonth = monthlyRain.reduce(
-        (best, cur) => (cur.mm > best.mm ? cur : best),
-        monthlyRain[0] || { month: "—", mm: 0 }
-      );
-      const driestRainMonth = monthlyRain.reduce(
-        (best, cur) => (cur.mm < best.mm ? cur : best),
-        monthlyRain[0] || { month: "—", mm: 0 }
-      );
-
-      const townSet = new Set<string>([c.capital]);
-      for (const p of countyPostalEntries) {
-        if (p.town) townSet.add(p.town);
-        if (townSet.size >= 4) break;
-      }
-      const majorTowns = Array.from(townSet).join(", ");
-
-      const totalBudget = (budget?.allocation || 0) + (budget?.ownSourceRevenue || 0);
-      const osrSelfReliance =
-        totalBudget > 0
-          ? Math.round(((budget?.ownSourceRevenue || 0) / totalBudget) * 1000) / 10
-          : 0;
-      const allocationPerCapita =
-        c.population > 0 && budget?.allocation
-          ? Math.round((budget.allocation * 1_000_000) / c.population)
-          : 0;
-
-      return {
-        ...c,
-        density,
-        region,
-        budget,
-        rain,
-        hospitalsCount,
-        postalCount,
-        topSchoolsCount,
-        parksCount,
-        agrovetsCount,
-        solarIrradiance,
-        soilAndCropsSummary,
-        peakRainMonth,
-        driestRainMonth,
-        majorTowns,
-        totalBudget,
-        osrSelfReliance,
-        allocationPerCapita,
-      };
-    });
-  }, []);
+  const enrichedCounties = STATIC_ENRICHED_COUNTIES;
 
   const climateZones = useMemo(() => {
     const set = new Set<string>();
@@ -245,8 +271,8 @@ export default function CountyIndexPage() {
     if (climateFilter !== "All") {
       items = items.filter((c) => c.rain?.climateZone === climateFilter);
     }
-    if (search.trim()) {
-      const q = search.toLowerCase();
+    if (deferredSearch.trim()) {
+      const q = deferredSearch.toLowerCase();
       items = items.filter(
         (c) =>
           c.name.toLowerCase().includes(q) ||
@@ -267,7 +293,7 @@ export default function CountyIndexPage() {
       if (sortBy === "rainfall") return (b.rain?.annualRainfall || 0) - (a.rain?.annualRainfall || 0);
       return a.code - b.code;
     });
-  }, [enrichedCounties, regionFilter, letterFilter, climateFilter, search, sortBy]);
+  }, [enrichedCounties, regionFilter, letterFilter, climateFilter, deferredSearch, sortBy]);
 
   const sortedBudgets = useMemo(() => {
     const list = [...filtered];
@@ -356,15 +382,18 @@ export default function CountyIndexPage() {
       </nav>
 
       {/* Header */}
-      <header className="mb-3 sm:mb-6 max-w-4xl">
-        <h1 className="text-xl sm:text-3xl lg:text-[2.5rem] font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug sm:leading-tight tracking-tight mb-1 sm:mb-2.5">
+      <header className="mb-3.5 sm:mb-6 max-w-4xl">
+        <h1 className="text-xl sm:text-3xl lg:text-[2.35rem] font-bold font-[family-name:var(--font-outfit)] text-text-primary leading-snug sm:leading-tight tracking-tight mb-2">
           Kenya 47 County Governments Hub
         </h1>
-        <p className="text-text-secondary text-xs sm:text-base leading-relaxed line-clamp-2 sm:line-clamp-none">
-          All county data consolidated in one place — explore Governors, Senators, Woman Representatives,{" "}
-          <strong>290 Constituencies</strong>, <strong>FY 2025/26 Controller of Budget Allocations</strong>,{" "}
-          <strong>Monthly Rainfall &amp; Climate Zones</strong>, SHA Hospitals, Postal Codes, and side-by-side county comparisons.
-        </p>
+        <div className="rounded-xl bg-bg-card/70 border border-border/70 border-l-2 border-l-gold px-3.5 py-2.5">
+          <p className="text-text-secondary text-xs sm:text-sm leading-relaxed">
+            All county data consolidated in one place — explore Governors, Senators, Woman Representatives,{" "}
+            <strong className="text-text-primary">290 Constituencies</strong>,{" "}
+            <strong className="text-text-primary">FY 2025/26 Controller of Budget Allocations</strong>,{" "}
+            <strong className="text-text-primary">Monthly Rainfall &amp; Climate Zones</strong>, SHA Hospitals, Postal Codes, and side-by-side county comparisons.
+          </p>
+        </div>
       </header>
 
       {/* Compact National Summary KPI Bar */}
@@ -500,41 +529,62 @@ export default function CountyIndexPage() {
       {/* ── TAB 1: ALL 47 COUNTIES DIRECTORY ── */}
       {activeTab === "directory" && (
         <>
-          {/* Sticky Region & A–Z Jump Bar (F-040) */}
-          <div className="sticky top-16 z-30 -mx-3.5 px-3.5 sm:mx-0 sm:px-4 py-1.5 sm:py-2.5 mb-3 sm:mb-5 bg-bg-primary/95 backdrop-blur-md border border-border rounded-xl space-y-1.5 sm:space-y-2 shadow-sm">
-            <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5">
-              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-text-muted shrink-0 mr-1">Region:</span>
-              {REGIONS.map((reg) => (
+          {/* Clean Region & A–Z Filter Bar (No native scrollbar clutter) */}
+          <div className="md:sticky md:top-16 z-30 px-3 sm:px-3.5 py-2 sm:py-2.5 mb-3 sm:mb-4 bg-bg-card/95 backdrop-blur-sm border border-border/80 rounded-xl space-y-2 shadow-xs">
+            <div className="flex items-center gap-2">
+              <span className="text-[0.625rem] font-bold uppercase tracking-wider text-text-muted shrink-0 w-11">
+                Region
+              </span>
+              <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 min-w-0 py-0.5">
+                {REGIONS.map((reg) => (
+                  <button
+                    key={reg}
+                    type="button"
+                    onClick={() => setRegionFilter(reg)}
+                    className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-semibold border transition-colors cursor-pointer ${
+                      regionFilter === reg
+                        ? "bg-gold text-kenya-black border-gold shadow-2xs"
+                        : "bg-bg-elevated/50 border-border/70 text-text-secondary hover:text-gold hover:border-gold/50"
+                    }`}
+                  >
+                    {reg}
+                  </button>
+                ))}
+              </div>
+              {(regionFilter !== "All" || letterFilter !== "All" || climateFilter !== "All") && (
                 <button
-                  key={reg}
                   type="button"
-                  onClick={() => setRegionFilter(reg)}
-                  className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold border transition-colors cursor-pointer ${
-                    regionFilter === reg
-                      ? "bg-gold text-kenya-black border-gold"
-                      : "bg-bg-card border-border text-text-secondary hover:text-gold hover:border-gold/50"
-                  }`}
+                  onClick={() => {
+                    setRegionFilter("All");
+                    setLetterFilter("All");
+                    setClimateFilter("All");
+                  }}
+                  className="shrink-0 text-[11px] font-semibold text-gold hover:underline cursor-pointer pl-1"
                 >
-                  {reg}
+                  Reset
                 </button>
-              ))}
+              )}
             </div>
-            <div className="flex items-center gap-1 overflow-x-auto pt-1 border-t border-border/50">
-              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-text-muted shrink-0 mr-1">A–Z:</span>
-              {["All", "B", "E", "G", "H", "I", "K", "L", "M", "N", "S", "T", "U", "V", "W"].map((ltr) => (
-                <button
-                  key={ltr}
-                  type="button"
-                  onClick={() => setLetterFilter(ltr)}
-                  className={`shrink-0 px-2 py-0.5 rounded-full text-[11px] sm:text-xs font-semibold border transition-colors cursor-pointer ${
-                    letterFilter === ltr
-                      ? "bg-gold/20 text-gold border-gold/50"
-                      : "bg-bg-elevated/60 border-border/60 text-text-secondary hover:text-text-primary"
-                  }`}
-                >
-                  {ltr}
-                </button>
-              ))}
+            <div className="flex items-center gap-2 pt-1.5 border-t border-border/40">
+              <span className="text-[0.625rem] font-bold uppercase tracking-wider text-text-muted shrink-0 w-11">
+                A–Z
+              </span>
+              <div className="flex items-center gap-1 overflow-x-auto no-scrollbar flex-1 min-w-0 py-0.5">
+                {["All", "B", "E", "G", "H", "I", "K", "L", "M", "N", "S", "T", "U", "V", "W"].map((ltr) => (
+                  <button
+                    key={ltr}
+                    type="button"
+                    onClick={() => setLetterFilter(ltr)}
+                    className={`shrink-0 min-w-[26px] h-6 px-1.5 rounded-md text-[11px] font-semibold border transition-colors cursor-pointer inline-flex items-center justify-center ${
+                      letterFilter === ltr
+                        ? "bg-gold/15 text-gold border-gold/50 font-bold"
+                        : "bg-transparent border-transparent text-text-secondary hover:bg-bg-elevated/80 hover:text-text-primary"
+                    }`}
+                  >
+                    {ltr}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
           <p className="text-xs text-text-muted mb-4">
@@ -545,7 +595,7 @@ export default function CountyIndexPage() {
               <Link
                 key={county.code}
                 href={`/county/${county.slug}/`}
-                className="group block bg-bg-card border border-border rounded-xl p-5 hover:border-gold/50 transition-colors"
+                className="cv-auto group block bg-bg-card border border-border rounded-xl p-4 sm:p-5 hover:border-gold/50 transition-colors"
               >
                 <div className="flex items-start justify-between mb-3">
                   <span className="text-2xl font-bold font-[family-name:var(--font-outfit)] text-gold/80 group-hover:text-gold transition-colors">

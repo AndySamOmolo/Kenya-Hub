@@ -38,7 +38,7 @@
         {
           "min": 2501,
           "max": 3500,
-          "fee": 53
+          "fee": 52
         },
         {
           "min": 3501,
@@ -228,7 +228,7 @@
         {
           "min": 25001,
           "max": 30000,
-          "fee": 220
+          "fee": 197
         },
         {
           "min": 30001,
@@ -290,7 +290,7 @@
           "min": 1,
           "max": 250000,
           "fee": 0,
-          "note": "Free for all amounts"
+          "note": "KES 0 for Business-Pays PayBills; Customer-Pays PayBills attract tiered charges (KES 0–108)"
         }
       ]
     }

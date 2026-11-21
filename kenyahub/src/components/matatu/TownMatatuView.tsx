@@ -76,7 +76,7 @@ export default function TownMatatuView({ townSlug }: TownMatatuViewProps) {
         <h1 className="text-lg sm:text-3xl font-extrabold font-[family-name:var(--font-outfit)] text-text-primary leading-snug mb-1 sm:mb-2">
           <BusFront className="w-5 h-5 sm:w-8 sm:h-8 text-gold flex-shrink-0 inline-block mr-1.5 sm:mr-2 -mt-0.5" />{townInfo.name} Matatu Routes, Stages &amp; Fares
         </h1>
-        <p className="text-text-secondary text-xs sm:text-sm max-w-3xl leading-relaxed line-clamp-2 sm:line-clamp-none">
+        <p className="text-text-secondary text-xs sm:text-sm max-w-3xl leading-relaxed">
           {townInfo.description} Browse {routes.length} PSV corridors across {townInfo.name} ({(townInfo as { county?: string }).county || townInfo.name} County), operated by {saccos.length} registered SACCOs with off-peak to peak fares from KES {minFare} to KES {maxFare}.
         </p>
       </div>

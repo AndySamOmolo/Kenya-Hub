@@ -13,6 +13,7 @@ export function SaccoChamaCalculator() {
   const [sharesText, setSharesText] = useState("40000");
   const [depositsText, setDepositsText] = useState("250000");
   const [monthlyText, setMonthlyText] = useState("15000");
+  const [loanMonths, setLoanMonths] = useState(36);
 
   const sacco = saccoData.topSaccos.find((s) => s.id === selectedSaccoId) || saccoData.topSaccos[0];
   const shares = Math.max(0, Number(sharesText.replace(/,/g, "")) || 0);
@@ -28,9 +29,15 @@ export function SaccoChamaCalculator() {
     const yearEndDeposits = opening + monthly * 12;
     const maxLoan = yearEndDeposits * sacco.loanMultiplier;
     const r = sacco.monthlyInterestReducing / 100;
-    const monthlyRepay = maxLoan > 0 ? (maxLoan * r * Math.pow(1 + r, 36)) / (Math.pow(1 + r, 36) - 1) : 0;
-    return { grossDiv, grossReb, wht, netPayout, yearEndDeposits, maxLoan, monthlyRepay };
-  }, [shares, opening, monthly, sacco]);
+    const monthlyRepay =
+      maxLoan > 0 && loanMonths > 0
+        ? r === 0
+          ? maxLoan / loanMonths
+          : (maxLoan * r * Math.pow(1 + r, loanMonths)) / (Math.pow(1 + r, loanMonths) - 1)
+        : 0;
+    const totalInterest = Math.max(0, monthlyRepay * loanMonths - maxLoan);
+    return { grossDiv, grossReb, wht, netPayout, yearEndDeposits, maxLoan, monthlyRepay, totalInterest };
+  }, [shares, opening, monthly, sacco, loanMonths]);
 
   return (
     <View style={styles.toolWrap}>
@@ -66,7 +73,27 @@ export function SaccoChamaCalculator() {
         <Row label={`Weighted BOSA Interest Rebate (${sacco.rebateRate}%)`} value={`KES ${Math.round(calc.grossReb).toLocaleString()}`} />
         <Row label="Withholding Tax (5% WHT)" value={`− KES ${Math.round(calc.wht).toLocaleString()}`} isDeduction />
         <Row label="Net FOSA Cash Payout" value={`KES ${Math.round(calc.netPayout).toLocaleString()}`} isPositive />
-        <Row label="36-Month Loan Repayment (1%/mo reducing)" value={`KES ${Math.round(calc.monthlyRepay).toLocaleString()}/mo`} isTotal />
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6, marginVertical: 6 }}>
+          {[12, 24, 36, 48, 60].map((m) => {
+            const active = loanMonths === m;
+            return (
+              <Pressable
+                key={m}
+                onPress={() => setLoanMonths(m)}
+                style={[
+                  styles.chip,
+                  active && { backgroundColor: theme.primaryContainer, borderColor: theme.gold },
+                ]}
+              >
+                <Text style={[styles.chipText, active && { color: theme.gold, fontFamily: "Outfit_700Bold" }]}>
+                  {m} mos
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+        <Row label={`${loanMonths}-Month Loan Repayment (${sacco.monthlyInterestReducing}%/mo reducing)`} value={`KES ${Math.round(calc.monthlyRepay).toLocaleString()}/mo`} isTotal />
+        <Row label={`Total Loan Interest (${loanMonths} mos)`} value={`KES ${Math.round(calc.totalInterest).toLocaleString()}`} />
       </View>
     </View>
   );

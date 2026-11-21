@@ -86,7 +86,7 @@ export default function GamesHub({
   const [activeGame, setActiveGame] = useState<GameType>("menu");
   useEffect(() => {
     if (typeof document === "undefined") return;
-    if (activeGame) {
+    if (activeGame !== "menu") {
       document.body.dataset.khFocusMode = "true";
     } else {
       delete document.body.dataset.khFocusMode;
@@ -113,6 +113,11 @@ export default function GamesHub({
     [courseUnits, units]
   );
 
+  const learnedSig =
+    scope === "learned"
+      ? `${progress?.wordsLearned?.length ?? 0}:${progress?.reviewQueue?.length ?? 0}:${Object.keys(progress?.skillLevels ?? {}).length}`
+      : "";
+
   const scopedWords = useMemo(
     () =>
       getScopedWords(
@@ -120,10 +125,18 @@ export default function GamesHub({
         effectiveCourseUnits,
         scope,
         selectedUnitId,
-        progress
+        scope === "learned" ? progress : undefined
       ),
-    [units, effectiveCourseUnits, scope, selectedUnitId, progress]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [units, effectiveCourseUnits, scope, selectedUnitId, learnedSig]
   );
+
+  // Snapshot active pool while inside a game so mid-game XP/SRS updates never reset or re-shuffle an active board
+  const activePoolRef = useRef(scopedWords);
+  if (activeGame === "menu") {
+    activePoolRef.current = scopedWords;
+  }
+  const gameWords = activeGame === "menu" ? scopedWords : activePoolRef.current;
 
   const handleToggleMute = () => {
     const next = !sfxMuted;

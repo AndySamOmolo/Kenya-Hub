@@ -131,6 +131,18 @@
           "translation": "mot / manwadba",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Salutation on meeting a friend",
+          "translation": "Fa,heitah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Salutation on Meeting",
+          "translation": "Maberre-din",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -1062,6 +1074,198 @@
           "translation": "tomon",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "One, 1",
+          "translation": "Ko",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Two, 2",
+          "translation": "Lum,ma",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Three, 3",
+          "translation": "See,dee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Four, 4",
+          "translation": "Huffar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Five, 5",
+          "translation": "Shen",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Six, 6",
+          "translation": "See",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Seven, 7",
+          "translation": "To,da,ah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Eight, 8",
+          "translation": "See,ed",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Nine, 9",
+          "translation": "See,gail",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Ten, 10",
+          "translation": "To,moon",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "One Hundred",
+          "translation": "Ko,kool",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "One Thousand",
+          "translation": "Koon",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "one",
+          "translation": "mid (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: mid (Numbers)"
+        },
+        {
+          "english": "two",
+          "translation": "laba (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: laba (Numbers)"
+        },
+        {
+          "english": "three",
+          "translation": "sadehh (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: sadehh (Numbers)"
+        },
+        {
+          "english": "four",
+          "translation": "afar (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: afar (Numbers)"
+        },
+        {
+          "english": "five",
+          "translation": "shan (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: shan (Numbers)"
+        },
+        {
+          "english": "six",
+          "translation": "lehh (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: lehh (Numbers)"
+        },
+        {
+          "english": "ten",
+          "translation": "toban (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: toban (Numbers)"
+        },
+        {
+          "english": "hundred",
+          "translation": "boghol (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: boghol (Numbers)"
+        },
+        {
+          "english": "thousand",
+          "translation": "kun (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: kun (Numbers)"
+        },
+        {
+          "english": "1 One",
+          "translation": "Mid",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "2 Two",
+          "translation": "Lubba",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "3 Three",
+          "translation": "Sadah",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "4 Four",
+          "translation": "Afarr",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "5 Five",
+          "translation": "Shun",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "6 Six",
+          "translation": "Seh",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "7 Seven",
+          "translation": "Tudobah",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "8 Eight",
+          "translation": "Sideed",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "9 Nine",
+          "translation": "Sagall",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "10 Ten",
+          "translation": "Tobun",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "One Hundred",
+          "translation": "Bughul",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -2394,6 +2598,108 @@
           "translation": "abahi",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "A Man",
+          "translation": "Dudd",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Woman",
+          "translation": "Deea, Dow",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Child",
+          "translation": "Dull",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Son",
+          "translation": "Duee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Brother",
+          "translation": "A,loo, Kai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Sister",
+          "translation": "Thoo,ra,shai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Father",
+          "translation": "How, Kai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Mother",
+          "translation": "Ha,hiea",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Friend",
+          "translation": "Wee,thai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "family, \"rer\", house",
+          "translation": "rèr-ki / ákhal-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), pp. 200, 211 · rèr-ki / ákhal-ki"
+        },
+        {
+          "english": "woman (2nd row)",
+          "translation": "habàr-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 213 · Somali: habàr-ti"
+        },
+        {
+          "english": "To be with child",
+          "translation": "Oor,ka,wah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "A Woman",
+          "translation": "Nag",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Son",
+          "translation": "Wil",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Brother",
+          "translation": "Wilal",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Father",
+          "translation": "Abi",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Mother",
+          "translation": "Hoya",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -3799,6 +4105,156 @@
           "translation": "lugha",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Earth",
+          "translation": "Dool",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "The Skin or Hide",
+          "translation": "Mug,gar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "The Head",
+          "translation": "Ma,tha",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "The Hair",
+          "translation": "Docore",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "The Eye",
+          "translation": "Ee,low",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "The Nose",
+          "translation": "Sun,ka",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Mouth",
+          "translation": "Janoor",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Teeth",
+          "translation": "Eel,kow",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Tongue",
+          "translation": "Ar,rah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Ear",
+          "translation": "Dey,gar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Hand",
+          "translation": "Gun,na",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Heart",
+          "translation": "Wus,sna",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Blood",
+          "translation": "Deek",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Leg",
+          "translation": "Loo,gar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Foot",
+          "translation": "Sa,an,ta",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "mouth; language",
+          "translation": "af-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), pp. 200, 210–211 · af-ki"
+        },
+        {
+          "english": "To hear",
+          "translation": "Mug,gul",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To swear",
+          "translation": "Ha,ee,teen",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Near",
+          "translation": "So,do,wow",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "The Head",
+          "translation": "Mudah",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "To hear",
+          "translation": "Muggul",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "The eye",
+          "translation": "Il",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "A Foot",
+          "translation": "Adin",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Spear",
+          "translation": "Wurn",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Fear",
+          "translation": "Bug",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -5579,6 +6035,120 @@
           "translation": "măsk",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "A Bee",
+          "translation": "Shin,nee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Fish",
+          "translation": "Ma,ta,lee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Horse",
+          "translation": "Far,assy",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Camel",
+          "translation": "Gale",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Cow",
+          "translation": "Lo,yah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Sheep",
+          "translation": "Heerec",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Goat",
+          "translation": "Rarinyode",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Lion",
+          "translation": "Loo,ar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Dog",
+          "translation": "Hai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Bird",
+          "translation": "Shim,bir",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Plantains",
+          "translation": "Mo,zee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "goats / female goat",
+          "translation": "ri-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), pp. 201, 209 · ri-di"
+        },
+        {
+          "english": "female camel",
+          "translation": "hal-shi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 208 · hal-shi"
+        },
+        {
+          "english": "sheep",
+          "translation": "aḍi-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 212 · Somali: aḍi-gi"
+        },
+        {
+          "english": "Elephant",
+          "translation": "maròdi (Wild Animals)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: maròdi (Wild Animals)"
+        },
+        {
+          "english": "A Camel",
+          "translation": "Awur",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Cow",
+          "translation": "Saah, or Loh",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Sheep",
+          "translation": "Ari",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Dog",
+          "translation": "Ae",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -6640,6 +7210,138 @@
           "translation": "hammer",
           "pronunciation": "",
           "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 308"
+        },
+        {
+          "english": "The Sun",
+          "translation": "Ee,ve",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "The Moon",
+          "translation": "El,bait",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Star",
+          "translation": "Tigeen",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Wind",
+          "translation": "Ooni,far",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Rain",
+          "translation": "Roo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Clouds",
+          "translation": "Dunool",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Hill",
+          "translation": "Te,bal",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Stone",
+          "translation": "Luid",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Fire",
+          "translation": "Dub",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Tree",
+          "translation": "Gar,e",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Wood",
+          "translation": "Doow",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Plain Level Ground",
+          "translation": "Dool filah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Grass",
+          "translation": "Waa,kut",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Flower",
+          "translation": "Eis,gow",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A River",
+          "translation": "Wah,wee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "fire",
+          "translation": "dab-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 209 · dab-ki"
+        },
+        {
+          "english": "The Sun",
+          "translation": "Shums (Arb.)",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Wind",
+          "translation": "Dub,eel",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Rain",
+          "translation": "Rob",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Hill",
+          "translation": "Bor,plur. boro",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Fire",
+          "translation": "Dup, dub",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Stone",
+          "translation": "Dugha",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -7371,6 +8073,90 @@
           "translation": "hĭlīp",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Fruit",
+          "translation": "Cur,row",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Honey",
+          "translation": "Mal,low",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Wheat",
+          "translation": "Bool",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Water",
+          "translation": "Bai,hai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Joarry (Sorghum)",
+          "translation": "Misse,gar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "To drink",
+          "translation": "Wur,raap",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Great",
+          "translation": "Heen",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Water",
+          "translation": "Beh",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Salt",
+          "translation": "Usbooh",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Milk",
+          "translation": "Hanu",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Bread",
+          "translation": "Kibis",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Food",
+          "translation": "Huroor",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Meat, flesh",
+          "translation": "Helib",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "To milk",
+          "translation": "Lis",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -10387,6 +11173,30 @@
           "english": "Nomadic Somali portable hut / tent",
           "translation": "gurgi",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 110, 112, 135 ('left his spear, shield, and dagger in his gurgi' / 'the gurgi of an old man')."
+        },
+        {
+          "english": "rope",
+          "translation": "haḍig-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 212 · Somali: haḍig-gi"
+        },
+        {
+          "english": "Shut",
+          "translation": "Heer",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "A House",
+          "translation": "Agul",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A knife",
+          "translation": "Mindi",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -11790,6 +12600,114 @@
           "translation": "same",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To give",
+          "translation": "Shain",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "To take",
+          "translation": "Ka,tho",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "To love",
+          "translation": "Tail",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "To sing",
+          "translation": "Dale",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To be glad",
+          "translation": "Ha,fa,rar",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To be sorry",
+          "translation": "Dee,reef",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To weep",
+          "translation": "O,ee,teen",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To bless",
+          "translation": "Hai,baa,dow",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To marry",
+          "translation": "A,roos",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To be delivered",
+          "translation": "Dah,lee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To forget",
+          "translation": "Heelmaun",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To remember",
+          "translation": "To,wee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To smell",
+          "translation": "Hoor,see",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To taste",
+          "translation": "Da,da,mee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To converse",
+          "translation": "Wai,dee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To stand",
+          "translation": "Jokso",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To believe",
+          "translation": "Koon",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To lie",
+          "translation": "Bane",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
         }
       ]
     },
@@ -12664,6 +13582,78 @@
           "translation": "hōgbuleiye",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Small",
+          "translation": "Gah,war",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Light",
+          "translation": "Ma,been",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Long",
+          "translation": "Dair",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Bitter",
+          "translation": "Har,rav",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Sweet",
+          "translation": "Mace",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Strong",
+          "translation": "Lai,ho,at",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Weak",
+          "translation": "Ma,fa,yo",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Hot",
+          "translation": "Kul",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Cold",
+          "translation": "Dahan",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Black",
+          "translation": "Muddo",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "It is hot",
+          "translation": "Wa kul",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "It is cold",
+          "translation": "Wa dahhan",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -13581,6 +14571,66 @@
           "english": "Dhow captain (native ship captain)",
           "translation": "nakhoda",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 89, 137 ('A NAKHODA (CAPTAIN) AND HIS FAMILY'; also spelled 'nachoda or native captain')."
+        },
+        {
+          "english": "God",
+          "translation": "Ei,boo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Gold",
+          "translation": "Dey,ib",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Boat",
+          "translation": "Do,nie",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "God",
+          "translation": "Ilahh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 209 · Ilahh"
+        },
+        {
+          "english": "To come",
+          "translation": "Kow,ai",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To go",
+          "translation": "Tahoo",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "God",
+          "translation": "Allah",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Boat",
+          "translation": "Donah",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Good",
+          "translation": "Nuksun",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Go away",
+          "translation": "Tugh mesha-tun",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -13835,6 +14885,36 @@
           "english": "rupee",
           "translation": "rubiad",
           "context": "Fr. Evangeliste de Larajasse & Fr. Cyprien de Sampont, Somali-English Dictionary (1897)"
+        },
+        {
+          "english": "To buy",
+          "translation": "Geth",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "To sell",
+          "translation": "Ee,yeth",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "To buy",
+          "translation": "Yibi",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "To sell",
+          "translation": "Yibbi",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Money",
+          "translation": "Lagh",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -14068,6 +15148,30 @@
           "english": "Islamic law (religious legal code)",
           "translation": "sharia",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), p. 168 ('keeping well within the sharia himself')."
+        },
+        {
+          "english": "To kill",
+          "translation": "Doe",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "To be sick",
+          "translation": "Ma,fai,yo",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "A Thief",
+          "translation": "Togh",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "To die",
+          "translation": "Demi",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -15099,6 +16203,60 @@
           "translation": "Diseembar",
           "pronunciation": "",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Year",
+          "translation": "San,no,to",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Month",
+          "translation": "Sha,ai,ko",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Week",
+          "translation": "Todo Wageen",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Day",
+          "translation": "Gai,ko",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Morning",
+          "translation": "Laar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "A Day",
+          "translation": "Durar",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Good Night, Adieu",
+          "translation": "Nubdee",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A night",
+          "translation": "Huben",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Shullai",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -69181,6 +70339,180 @@
           "translation": "i/languages M to Z",
           "pronunciation": "",
           "context": "Kaikki.org Somali Wiktionary Extract (CC-BY-SA-4.0, https://kaikki.org/dictionary/Somali/index.html)"
+        },
+        {
+          "english": "I, thou, he, she, we (incl.), we (excl.), ye, they",
+          "translation": "anigu, adigu, isagu, iyadu, innagu (incl.), annagu (excl.), idinku, iyagu",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 30–31 (§ 55) · Emphatic Subjective Pronouns"
+        },
+        {
+          "english": "mine, thine, his, hers, ours",
+          "translation": "kai-gi/tai-di, ka-gi/ta-di, kis-i/tis-i, ked-i/ted-i, ken-i/ten-i, kaya-gi/taya-di, kin-i/tin-i, kod-i/tod-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 32–33 (§ 62) · Possessive Pronouns (M k- / F t-) · mine, thine, his, hers, ours (incl.), ours (excl.), yours, theirs"
+        },
+        {
+          "english": "Cardinals 1–7, 9–10 (8 skipped due to OCR)",
+          "translation": "mid-ki/ko-di (1), laba-di (2), sadehh-di (3), afar-ti (4), shan-ti (5), lehh-di (6), todóba-di (7), sagal-ki (9), tóban-ki (10)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 27–28 (§ 46) · Cardinal Numerals"
+        },
+        {
+          "english": "Tens, 100, 1,000",
+          "translation": "labaton-ki (20), sóddon-ki (30), afarton-ki (40), konton-ki (50), léhhdon-ki (60), todobaton-ki (70), sidéton-ki (80), sagashon-ki (90), bóghol-ki (100), kun-ki (1,000)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 27–28 (§ 46) · Cardinal Numerals"
+        },
+        {
+          "english": "1st–10th",
+          "translation": "kowad/hóre, labad, sadehhad, afrad, shanad, lehhad, todóbad, sidedad, sagalad, tóbnad",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 28–29 (§ 50) · Ordinal Numerals"
+        },
+        {
+          "english": "1st, 2nd & 3rd Regular Verb Models",
+          "translation": "sheg (tell), gurso (marry), samei (make), hel (get), so'o (walk), si (give), arag (see), tag (go)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 43–56 · Regular Conjugations"
+        },
+        {
+          "english": "Irregular Prefix & Defective Verbs",
+          "translation": "oll (dwell), imo (come), odo/deh (say), ogho (know), aho (be), laho (possess), wah (fail/be unable)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 57–69 · Irregular Conjugations"
+        },
+        {
+          "english": "say",
+          "translation": "oḍo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 212 · Somali: oḍo"
+        },
+        {
+          "english": "take",
+          "translation": "ghad",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 212 · Somali: ghad"
+        },
+        {
+          "english": "thing",
+          "translation": "wahh-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 213 · Somali: wahh-i"
+        },
+        {
+          "english": "(possessions)",
+          "translation": "ghalab-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 213 · Somali: ghalab-ki"
+        },
+        {
+          "english": "wing",
+          "translation": "bàl-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 213 · Somali: bàl-ki"
+        },
+        {
+          "english": "fifteen",
+          "translation": "shanyo-toban (Numbers)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: shanyo-toban (Numbers)"
+        },
+        {
+          "english": "Caracal",
+          "translation": "jambèl (Wild Animals)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: jambèl (Wild Animals)"
+        },
+        {
+          "english": "Cheetah",
+          "translation": "harimad (Wild Animals)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: harimad (Wild Animals)"
+        },
+        {
+          "english": "Dikdik",
+          "translation": "sagàro (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: sagàro (d. = dálanga)"
+        },
+        {
+          "english": "Fox",
+          "translation": "da‘wo (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: da‘wo (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Clarke’s",
+          "translation": "dibotag (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: dibotag (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Soemmering’s",
+          "translation": "‘aul (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: ‘aul (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Speke’s",
+          "translation": "dèro (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: dèro (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Waller’s",
+          "translation": "gerenùk (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: gerenùk (d. = dálanga)"
+        },
+        {
+          "english": "Guinea-fowl",
+          "translation": "digirin (Wild Animals)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: digirin (Wild Animals)"
+        },
+        {
+          "english": "Haartebeest",
+          "translation": "sig (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: sig (d. = dálanga)"
+        },
+        {
+          "english": "Hyaena",
+          "translation": "waràba (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: waràba (d. = dálanga)"
+        },
+        {
+          "english": "Koodoo",
+          "translation": "aderyo (Wild Animals)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: aderyo (Wild Animals)"
+        },
+        {
+          "english": "Leopard",
+          "translation": "shabèl (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: shabèl (d. = dálanga)"
+        },
+        {
+          "english": "Lion",
+          "translation": "libahh (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: libahh (d. = dálanga)"
+        },
+        {
+          "english": "Oryx",
+          "translation": "b‘e‘id (d. = dálanga)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali: b‘e‘id (d. = dálanga)"
+        },
+        {
+          "english": "herd of Oryx",
+          "translation": "Somali column blank",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Standard Somali) · Kirk (1905), p. 214 · Somali column blank"
         }
       ]
     },
@@ -73671,6 +75003,3102 @@
           "english": "Inhabitant of Zeila",
           "translation": "Zeilawi",
           "context": "Major H. Rayne, Sun, Sand and Somals: Leaves from the Note-book of a District Commissioner in British Somaliland (London: H. F. & G. Witherby, 1921 — US Public Domain, Project Gutenberg #48598, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm), pp. 19, 89, 99, 103 ('The inhabitants are called Zeilawi')."
+        },
+        {
+          "english": "Lightning",
+          "translation": "Bir",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Silver",
+          "translation": "Cul,law",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Valley",
+          "translation": "Iid",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Indian Corn",
+          "translation": "Gellae",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Barley",
+          "translation": "Bool",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Fountain",
+          "translation": "Matha,eereed",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Well",
+          "translation": "Hail",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Mule",
+          "translation": "Dee,mair",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Calf",
+          "translation": "Wai, Lo,yah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "An Ox",
+          "translation": "Dee,mee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Lamb",
+          "translation": "An,nok, Hee,ree",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Kid",
+          "translation": "Annok Rarinyode",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Horn",
+          "translation": "Gasse",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Locust",
+          "translation": "Luddi",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Rice",
+          "translation": "Beer,eed",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Paddy",
+          "translation": "Bee,bed",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Compass",
+          "translation": "Deyza",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Me",
+          "translation": "Ha,nee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "You",
+          "translation": "Ha,thee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Answer",
+          "translation": "Ma,hah,dul,lah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Somali, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "family, \"rer\", house",
+          "translation": "à-di (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), pp. 200, 211 · rèr-ki / ákhal-ki"
+        },
+        {
+          "english": "family, \"rer\", house",
+          "translation": "yagòl-ki (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), pp. 200, 211 · rèr-ki / ákhal-ki"
+        },
+        {
+          "english": "milk",
+          "translation": "gòdib-ki (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), pp. 200, 211 · 'ano-hi"
+        },
+        {
+          "english": "milk",
+          "translation": "adeisímo-di (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), pp. 200, 211 · 'ano-hi"
+        },
+        {
+          "english": "mouth; language",
+          "translation": "katowa-hi (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), pp. 200, 210–211 · af-ki"
+        },
+        {
+          "english": "mouth; language",
+          "translation": "afjaghin-ti (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), pp. 200, 210–211 · af-ki"
+        },
+        {
+          "english": "eye",
+          "translation": "ain-ti (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), pp. 200, 208 · il-shi"
+        },
+        {
+          "english": "eye",
+          "translation": "indókhol-shi (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), pp. 200, 208 · il-shi"
+        },
+        {
+          "english": "cow",
+          "translation": "albákhar-ti (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), pp. 201, 208 · lo'-di / sa'-i"
+        },
+        {
+          "english": "cow",
+          "translation": "bakhar-ti (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), pp. 201, 208 · lo'-di / sa'-i"
+        },
+        {
+          "english": "horse",
+          "translation": "alkhail-ki (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), pp. 201, 209 · fáras-ki"
+        },
+        {
+          "english": "horse",
+          "translation": "gararàti-gi, fùf-ki (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), pp. 201, 209 · fáras-ki"
+        },
+        {
+          "english": "goats / female goat",
+          "translation": "amèdo-di (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), pp. 201, 209 · ri-di"
+        },
+        {
+          "english": "goats / female goat",
+          "translation": "salôlad-di (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), pp. 201, 209 · ri-di"
+        },
+        {
+          "english": "blood",
+          "translation": "'asèro-hi (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 207 · đig-gi"
+        },
+        {
+          "english": "blood",
+          "translation": "'asowa-hi (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 207 · đig-gi"
+        },
+        {
+          "english": "bone",
+          "translation": "lafil-shi (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 207 · laf-ti"
+        },
+        {
+          "english": "bone",
+          "translation": "lafeiti-di (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 207 · laf-ti"
+        },
+        {
+          "english": "female camel",
+          "translation": "jalan-ti (Y, M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 208 · hal-shi"
+        },
+        {
+          "english": "fire",
+          "translation": "ilohh-i (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 209 · dab-ki"
+        },
+        {
+          "english": "fire",
+          "translation": "bulal-ki (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 209 · dab-ki"
+        },
+        {
+          "english": "God",
+          "translation": "Awashona (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 209 · Ilahh"
+        },
+        {
+          "english": "head",
+          "translation": "bakhrin-ki (Y, M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 209 · madah-hi"
+        },
+        {
+          "english": "heart",
+          "translation": "kunòli-hi (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 209 · wadna-hi"
+        },
+        {
+          "english": "meat",
+          "translation": "gujin-ki (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 211 · hilib-ki"
+        },
+        {
+          "english": "meat",
+          "translation": "rihin-ki (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 211 · hilib-ki"
+        },
+        {
+          "english": "rain",
+          "translation": "lawo-hi (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 211 · ròb-ki"
+        },
+        {
+          "english": "rain",
+          "translation": "gomosímo-di (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 211 · ròb-ki"
+        },
+        {
+          "english": "night",
+          "translation": "humag-gi (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 211 · habèn-ki"
+        },
+        {
+          "english": "night",
+          "translation": "himir-ki (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 211 · habèn-ki"
+        },
+        {
+          "english": "nose",
+          "translation": "saneg-gi (Y)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 211 · san-ki"
+        },
+        {
+          "english": "nose",
+          "translation": "'urshèn-ti (M)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 211 · san-ki"
+        },
+        {
+          "english": "animal",
+          "translation": "dalanga-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "dig, excavate",
+          "translation": "damòmei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.t."
+        },
+        {
+          "english": "inside",
+          "translation": "damomya-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "refuse",
+          "translation": "dangharei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · v.t."
+        },
+        {
+          "english": "behind, tail",
+          "translation": "dáras-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · ka dáras tegèd, follow behind"
+        },
+        {
+          "english": "breast, udder",
+          "translation": "d‘arowa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "afterwards, subsequent",
+          "translation": "darsád",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · watahhádi darsád, to-morrow"
+        },
+        {
+          "english": "be behind, be left",
+          "translation": "darsei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · v.i. ; kulhídi ka darseisa, afterwards"
+        },
+        {
+          "english": "have, possess",
+          "translation": "dashi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 202 · v.t. (always used with “ku”) ; inhima ku dashisa ? how many have you ?"
+        },
+        {
+          "english": "arrow",
+          "translation": "degayir",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "donkey",
+          "translation": "degig-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "finger ; one person",
+          "translation": "deri- -gi, -di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · derigas, that one ; deri ba ku mideya, there is one"
+        },
+        {
+          "english": "loins",
+          "translation": "derigab",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "Clarke’s Gazelle",
+          "translation": "dibođer",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "behind, after, back, tail (of an animal)",
+          "translation": "dibyalin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · dibyalin u raghahh, stand back ; dibyalin-keigi, behind me"
+        },
+        {
+          "english": "rope, snare",
+          "translation": "dífad-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "hide (of game), prayer-mat",
+          "translation": "dikhràrin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "“Dero”",
+          "translation": "dilin-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "buy",
+          "translation": "doïyo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · v.t."
+        },
+        {
+          "english": "jugular vessels",
+          "translation": "dubadyo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "person, people, self",
+          "translation": "dugag-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · dugaggeigu, I myself"
+        },
+        {
+          "english": "travel, go",
+          "translation": "duhur",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.i."
+        },
+        {
+          "english": "understand",
+          "translation": "ku duhur",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · v.t. ; ku duhuri mayo, I don’t understand"
+        },
+        {
+          "english": "leave",
+          "translation": "dujo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.t. ; ’ss ka dujo, let be, never mind"
+        },
+        {
+          "english": "strike, kill",
+          "translation": "duk",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.t."
+        },
+        {
+          "english": "be sick, be afraid ; be empty, be broken",
+          "translation": "dukhan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.i."
+        },
+        {
+          "english": "? fear",
+          "translation": "dukhumei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v."
+        },
+        {
+          "english": "end of backbone",
+          "translation": "dul-shi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "elephant",
+          "translation": "dusàr-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "distance, in time or space, year, country",
+          "translation": "erifogád-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · higgar erifogád, away over there ; erifogádkini, your country ; erifogádki tegèdei, last year"
+        },
+        {
+          "english": "rupee",
+          "translation": "falèd-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "finger",
+          "translation": "fardaho-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (?M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "hand, arm",
+          "translation": "farolaháto-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "wish, want, mean",
+          "translation": "feɖ",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · v.t. ; mahhad feɖesa ? what do you want ?"
+        },
+        {
+          "english": "look for",
+          "translation": "feɖo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · v.t."
+        },
+        {
+          "english": "breast",
+          "translation": "fèɖolahato-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "camel’s hump",
+          "translation": "fidsin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "grain",
+          "translation": "fil-shi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · f. tomàlaah, jowaree ; f. iftin, rice"
+        },
+        {
+          "english": "give birth to, beget",
+          "translation": "fin, or finfin",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.t."
+        },
+        {
+          "english": "be born",
+          "translation": "finso",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.i."
+        },
+        {
+          "english": "like",
+          "translation": "ga‘alo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.t."
+        },
+        {
+          "english": "water-flask",
+          "translation": "gabar-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "shield",
+          "translation": "gabis-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "camel-skin, shield",
+          "translation": "gaɖlaháto-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "evening",
+          "translation": "galabí-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "truth. Yes. All right",
+          "translation": "gamágh-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "be right, correct, true",
+          "translation": "gamàgho",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · v.i."
+        },
+        {
+          "english": "hand",
+          "translation": "gànad-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 202 · In counting, “gànad” refers to the five fingers and means five : limihi gànadod, ten ; saddehhi gànadod, fifteen ; aferi gànadod, twenty ; gànaddi yafneid, right hand ; g. yahainyahheid, left hand"
+        },
+        {
+          "english": "catch",
+          "translation": "gana‘id",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 202 · v.t."
+        },
+        {
+          "english": "horse",
+          "translation": "gararàti-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "tree",
+          "translation": "gedgharoméd-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "Waller’s Gazelle",
+          "translation": "geryal-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202"
+        },
+        {
+          "english": "Oryx",
+          "translation": "gesoɖer-ki / gesolahato-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · Braced together on scan"
+        },
+        {
+          "english": "ostrich",
+          "translation": "gir-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "chest",
+          "translation": "godanahh-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "rosary, hundred",
+          "translation": "goɖerowi-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "milk",
+          "translation": "godib-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "come, arise, come up, begin",
+          "translation": "godis",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · v.i. ; kulhiddi iftinti so godista, at sunrise ; humaggi wa godisa, the night is coming on"
+        },
+        {
+          "english": "woman",
+          "translation": "golof-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "water, river, rain",
+          "translation": "gomosímo-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "inside, within",
+          "translation": "gonya-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "cup",
+          "translation": "gorád-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "pray for, beg",
+          "translation": "gorbei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · v.t."
+        },
+        {
+          "english": "people, men",
+          "translation": "goried-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 203 · (plur. of goriedki)"
+        },
+        {
+          "english": "man, person",
+          "translation": "goried-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "iron, metal, any metal article, knife",
+          "translation": "gôsad-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · gôsad ku raghahhi, cut (with a knife)"
+        },
+        {
+          "english": "“Aoul,” Soemering’s Gazelle",
+          "translation": "gosin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "meat",
+          "translation": "gujin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "stomach, belly",
+          "translation": "gurató-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · guratádi wa neghatal, I am hungry"
+        },
+        {
+          "english": "make good, improve",
+          "translation": "ghàmi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · v.t."
+        },
+        {
+          "english": "be good",
+          "translation": "ghàmo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · v.i."
+        },
+        {
+          "english": "large, long, good (far, fat, hot, white)",
+          "translation": "ghàn",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · a."
+        },
+        {
+          "english": "plenty",
+          "translation": "ghàndiɖ-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "many",
+          "translation": "ghàndiɖah",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · a. ; jalmihi ghandiɖkaäh, the many camels."
+        },
+        {
+          "english": "increase",
+          "translation": "ghàndiɖei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · v.t."
+        },
+        {
+          "english": "good",
+          "translation": "ghànsan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · a."
+        },
+        {
+          "english": "tin for ghi",
+          "translation": "ghodahh-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "wood, bush, thorn, branch of a tree, any article of",
+          "translation": "ghoribírro-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · wood, bush, thorn, branch of a tree, any article of wood, bow"
+        },
+        {
+          "english": "plate, dish, ship",
+          "translation": "ghorin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "rope, string, trap",
+          "translation": "hajìa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "bird",
+          "translation": "haman-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "Yibir",
+          "translation": "Hanan-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "Tomal",
+          "translation": "Handud-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "Hanfili, the Yibirs’ ancestress, spirit",
+          "translation": "Hanfili",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "animal, any wild animal",
+          "translation": "hangagùri-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "mad",
+          "translation": "hainyalisan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · a."
+        },
+        {
+          "english": "iron",
+          "translation": "halyokho-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "backbone",
+          "translation": "hawar-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "ostrich",
+          "translation": "hedig-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "lie, untruth",
+          "translation": "hekho-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "place",
+          "translation": "hig-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 203 · higgan, here ; higgà, there ; higge ? higma ? where ?"
+        },
+        {
+          "english": "see ‘ilaghan",
+          "translation": "hilghan-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "night",
+          "translation": "himir-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "before, (time)",
+          "translation": "horimad",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "before, in front, (place)",
+          "translation": "horyad-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "before, in front",
+          "translation": "horyalin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "below, beneath",
+          "translation": "hosyad-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "beneath, below",
+          "translation": "hosyalin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "night",
+          "translation": "humag-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "black",
+          "translation": "humaksan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · a. ; humaksano bakhrinka, hair"
+        },
+        {
+          "english": "fox",
+          "translation": "humbur-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "quiver (of arrows)",
+          "translation": "hur-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "prayer-mat",
+          "translation": "huwad-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "sheep-skin",
+          "translation": "huwìya-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "give",
+          "translation": "‘id",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 203 · v.t."
+        },
+        {
+          "english": "make to go, take, lead",
+          "translation": "‘idbi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · v.t. ; so ‘idbi, bring"
+        },
+        {
+          "english": "go",
+          "translation": "‘idib",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · v.i. ; so ‘idib, come"
+        },
+        {
+          "english": "eat, drink",
+          "translation": "‘ido",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 203 · v.t."
+        },
+        {
+          "english": "go away, run away",
+          "translation": "idon",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · v.i."
+        },
+        {
+          "english": "money",
+          "translation": "iftimo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · (plur. of iftin)"
+        },
+        {
+          "english": "light, sun, day",
+          "translation": "iftimówa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · iftimówaha, to-day ; i. tegèdei, yesterday ; i. so tegèdeya, to-morrow ; i. neghatal, twilight ; i. n. himirki so‘idbeya, evening"
+        },
+        {
+          "english": "white, bright",
+          "translation": "iftin",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · a."
+        },
+        {
+          "english": "moon",
+          "translation": "iftin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "sun, light, rupee",
+          "translation": "iftin-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "child, daughter, or son",
+          "translation": "‘ilaghan-ti or -ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "fire, fire-arm",
+          "translation": "ilahh-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203 · ilahh awèlei, light the fire"
+        },
+        {
+          "english": "leg",
+          "translation": "ilan-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 203"
+        },
+        {
+          "english": "limb",
+          "translation": "ilbir-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "ewe",
+          "translation": "ilbir-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "bow",
+          "translation": "ildighán-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "ram",
+          "translation": "ilowa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "male camel",
+          "translation": "imil-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "wing",
+          "translation": "imitirahh-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "point out, shew",
+          "translation": "indóholeisi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · v.t."
+        },
+        {
+          "english": "eye",
+          "translation": "indókhol-shi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · indókholaha u yef, look"
+        },
+        {
+          "english": "look at",
+          "translation": "indókholei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · v.t."
+        },
+        {
+          "english": "quantity",
+          "translation": "inhí-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 204 · inhídas, so much ; inhíma? how much? how many?"
+        },
+        {
+          "english": "remain still",
+          "translation": "irso",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · v.i."
+        },
+        {
+          "english": "shoe, sandal",
+          "translation": "jagaflaho-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · (plur. jagaflahoïn-ki)"
+        },
+        {
+          "english": "give birth to, beget",
+          "translation": "jagh‘id",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · v.t. ; goriedki i jagh‘idei, my father"
+        },
+        {
+          "english": "child",
+          "translation": "jagha-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "she-camel",
+          "translation": "jalan-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 204 · (plur. jalmo-hi)"
+        },
+        {
+          "english": "kid, young goat",
+          "translation": "jankho-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "buck-Aoul",
+          "translation": "jehhar-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "caracal-cat",
+          "translation": "jimikh-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "ox, bull",
+          "translation": "jindar-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "house, loading-mat, load of a camel",
+          "translation": "kabár-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "half",
+          "translation": "kalaheḍ-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "cloth, clothing",
+          "translation": "kalwein-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · k. humaksan, blanket"
+        },
+        {
+          "english": "town, Berberah",
+          "translation": "kalweinaleh-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "mouth, edge",
+          "translation": "katowa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · wafèrka katowa ku ma dashìyo, that knife has no edge"
+        },
+        {
+          "english": "other",
+          "translation": "kelemad",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · a."
+        },
+        {
+          "english": "talk, speak",
+          "translation": "khabar",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · v.i."
+        },
+        {
+          "english": "speech, talk, language, news",
+          "translation": "khabar-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · khabarkas ’ss ka ladishei, stop that talk ; khabarkas, like that ; khabarmad feḍesa? what do you want?"
+        },
+        {
+          "english": "talk, speak",
+          "translation": "khabrei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · v.i."
+        },
+        {
+          "english": "tail, tail-fat.",
+          "translation": "kub‘en-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "give",
+          "translation": "kul",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · v.t."
+        },
+        {
+          "english": "half",
+          "translation": "kul-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "time",
+          "translation": "kulhi-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · kulhídan, now ; kulhídas, then ; kulhíma? when? saddehhi kulhiod, three times ; kulhídi horyad, before"
+        },
+        {
+          "english": "be sick",
+          "translation": "kulun",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · v.i."
+        },
+        {
+          "english": "heart",
+          "translation": "kunoli-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "ring",
+          "translation": "kushan-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "eat, drink",
+          "translation": "kusho",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · v.t."
+        },
+        {
+          "english": "body, belly",
+          "translation": "labodin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "leave",
+          "translation": "ladishei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · ’ss ka ladishei, cease, let be"
+        },
+        {
+          "english": "bone",
+          "translation": "lafeiti-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "breastbone",
+          "translation": "lafil-shi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "speak, tell, say",
+          "translation": "lagh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · v.i."
+        },
+        {
+          "english": "tongue",
+          "translation": "laghdam-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "tongue, throat",
+          "translation": "laghowa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "rice",
+          "translation": "langharoméd-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "water, rain, river, year",
+          "translation": "lawo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · lawihi darsad, next year"
+        },
+        {
+          "english": "water-bottle",
+          "translation": "lawodaur-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "milk)",
+          "translation": "(lawo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · Printed in parentheses"
+        },
+        {
+          "english": "buck-Gerenuk",
+          "translation": "lig-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "sleep, lie down",
+          "translation": "limdi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 204 · v.i. ; (infin. limdiyi)"
+        },
+        {
+          "english": "two",
+          "translation": "limi-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "penis",
+          "translation": "ludub-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "liver",
+          "translation": "madôbiyo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "anna",
+          "translation": "madôkushan-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "tortoise",
+          "translation": "madôla-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "lend",
+          "translation": "maghùr",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · v.t."
+        },
+        {
+          "english": "hard",
+          "translation": "makabùr",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · a."
+        },
+        {
+          "english": "hill, stone, pebble, money",
+          "translation": "makabùr-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "tortoise",
+          "translation": "makabur-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "hear",
+          "translation": "makhalei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · v.t."
+        },
+        {
+          "english": "listen",
+          "translation": "makhaleido",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204 · v.t."
+        },
+        {
+          "english": "ear",
+          "translation": "makhali-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "ear",
+          "translation": "makhashin-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "hear",
+          "translation": "makhashimei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · v.t."
+        },
+        {
+          "english": "listen",
+          "translation": "makhashimeiso",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204 · v.i."
+        },
+        {
+          "english": "food",
+          "translation": "manahho-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "plate, dish",
+          "translation": "marùbo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 204"
+        },
+        {
+          "english": "be, exist, be present, remain, be alive",
+          "translation": "mid",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205 · v.i. ; agarma ku midesa? what is there?"
+        },
+        {
+          "english": "go",
+          "translation": "mid",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 205 · ’ss ka mid, go away ; so mid, come ; la mid, go with, accompany"
+        },
+        {
+          "english": "sit down",
+          "translation": "midsan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.i."
+        },
+        {
+          "english": "bring",
+          "translation": "midsi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "remain, live",
+          "translation": "midso",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205 · v.i. ; ya‘unki ku jagh‘idei ma midsha? is your father alive?"
+        },
+        {
+          "english": "penis",
+          "translation": "mirdolo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "plant, vegetable",
+          "translation": "mirgin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "people",
+          "translation": "moyo-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "needle, bodkin",
+          "translation": "mukhtaren-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "hunger",
+          "translation": "nafèl-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "be hungry",
+          "translation": "nafèlo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205 · v.i."
+        },
+        {
+          "english": "bag, satchel carried by Yibirs",
+          "translation": "nàni-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "thing, place, time, self",
+          "translation": "nas-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "small, bad, few (thin, near, black, light)",
+          "translation": "neghatal",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · a."
+        },
+        {
+          "english": "loins",
+          "translation": "nirokh-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "bird",
+          "translation": "omas-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "guinea-fowl",
+          "translation": "oran-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "kill",
+          "translation": "orèmi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "die",
+          "translation": "orèn",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.i."
+        },
+        {
+          "english": "(M), be sick ; (Y), be spoilt, torn",
+          "translation": "orènsan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M), Yibir (Y)) · Kirk (1905), p. 205 · v.i."
+        },
+        {
+          "english": "act, do, catch",
+          "translation": "raghahh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.i. ; raghahhi mayo, I will not do it ; ’ss ka raghahh, sit down ; so raghahh, come here, wait here ; ku raghahh, catch, hold ; gararàti ku raghahh, ride a horse"
+        },
+        {
+          "english": "take for yourself, marry",
+          "translation": "raghahho",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "be, exist, lie, live, think",
+          "translation": "raghahhsán",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.i. ; ku raghahhsán, have, want"
+        },
+        {
+          "english": "hit, strike",
+          "translation": "rèmi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "feather",
+          "translation": "rer-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "meat",
+          "translation": "rihin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "ostrich-feather",
+          "translation": "rìsh-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "loins",
+          "translation": "robsahan-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "die",
+          "translation": "rôf",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.i."
+        },
+        {
+          "english": "corpse",
+          "translation": "rôf-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "die",
+          "translation": "rùf",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205 · v.i."
+        },
+        {
+          "english": "kill",
+          "translation": "rùfi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "be sick, be poor",
+          "translation": "rùfsan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.i."
+        },
+        {
+          "english": "three",
+          "translation": "saddehh-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "slay, cut the throat",
+          "translation": "sakhsakh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "nose",
+          "translation": "saneg-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "goat",
+          "translation": "salôlad-ki, -di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "bridegroom, wedding",
+          "translation": "saradoshis-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "ostrich",
+          "translation": "sareyagh-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "bull-Oryx",
+          "translation": "saryen-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "legs of ostrich",
+          "translation": "seḍah-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "oil, ghi",
+          "translation": "seyad-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "take, lead",
+          "translation": "shamei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 205 · v.t. ; so shamei, bring"
+        },
+        {
+          "english": "go",
+          "translation": "shan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 205 · v.i. ; so shan, come"
+        },
+        {
+          "english": "five",
+          "translation": "shani-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "kindle (a fire)",
+          "translation": "shanshamei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "take for yourself, keep, put in, carry",
+          "translation": "shanso",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "many, plenty",
+          "translation": "shar",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · a."
+        },
+        {
+          "english": "increase",
+          "translation": "sharei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.t."
+        },
+        {
+          "english": "be well",
+          "translation": "sharo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.i."
+        },
+        {
+          "english": "things, property, belongings",
+          "translation": "shàshin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "take",
+          "translation": "shimi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 205 · v.t. ; u shimi, put in"
+        },
+        {
+          "english": "small quantity",
+          "translation": "shirfei-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "fat",
+          "translation": "siftihh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205 · a."
+        },
+        {
+          "english": "fat",
+          "translation": "siftihh-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 205"
+        },
+        {
+          "english": "hair",
+          "translation": "silsil-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206 · (usu. plur. silsilodi)"
+        },
+        {
+          "english": "leg",
+          "translation": "simokh-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "go",
+          "translation": "sir",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206 · v.i."
+        },
+        {
+          "english": "foot, track",
+          "translation": "so‘oto-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "bow",
+          "translation": "sukhodin-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "walk, pass, wander",
+          "translation": "tabantab",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206 · v.i."
+        },
+        {
+          "english": "fasten",
+          "translation": "tàgi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · v.t."
+        },
+        {
+          "english": "move, go",
+          "translation": "tahab",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206 · v.i. ; mahhad u so tahabtei? what have you come for?"
+        },
+        {
+          "english": "song",
+          "translation": "takhalámo-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "go",
+          "translation": "tegèd",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 206 · v.i. ; so tegèd, come ; alkhail ku tegèd, ride a horse ; ka tegèd, cross"
+        },
+        {
+          "english": "send",
+          "translation": "tegèji",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · v.t."
+        },
+        {
+          "english": "Waller’s Gazelle",
+          "translation": "tingir-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "liver",
+          "translation": "tiro-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "ten",
+          "translation": "tobani-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "hard",
+          "translation": "tomàla",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · a."
+        },
+        {
+          "english": "stone, hill",
+          "translation": "tomàla-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "ram",
+          "translation": "ukub-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "upper arm",
+          "translation": "ulud-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "cheetah",
+          "translation": "‘unimadô-",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "throat",
+          "translation": "‘unukh-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "stomach",
+          "translation": "uro-di or ur-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "bad",
+          "translation": "‘urshèn",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · a."
+        },
+        {
+          "english": "smell",
+          "translation": "‘urshèn",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206 · v.i."
+        },
+        {
+          "english": "nose",
+          "translation": "‘urshèn-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "smell",
+          "translation": "‘urshèni",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206 · v.t."
+        },
+        {
+          "english": "anything that smells, dung, etc.",
+          "translation": "‘urshèni-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206 · Printed v.t. on scan"
+        },
+        {
+          "english": "leg",
+          "translation": "uskin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "spear",
+          "translation": "wafèr-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "knife, tooth",
+          "translation": "wafèr-ki („)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · Ditto mark „ on scan"
+        },
+        {
+          "english": "spear",
+          "translation": "walahun-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "Midgan",
+          "translation": "Waran-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "day",
+          "translation": "watahhó-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · watahhádan, to-day ; watahhádi darsad, to-morrow"
+        },
+        {
+          "english": "dog",
+          "translation": "wawa‘li-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "boy",
+          "translation": "weled-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "goods, wealth, property",
+          "translation": "yabar-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "make your living, earn your living",
+          "translation": "yabaro",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · v.i."
+        },
+        {
+          "english": "Midgan",
+          "translation": "Yadur-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "good, right hand",
+          "translation": "yafán or yifan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · a."
+        },
+        {
+          "english": "goodness, health, Peace",
+          "translation": "yafnan-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "make good",
+          "translation": "yafneisi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · v.t."
+        },
+        {
+          "english": "arrange for yourself",
+          "translation": "yafneisiso",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · v.t."
+        },
+        {
+          "english": "be good",
+          "translation": "yafno",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · v.i."
+        },
+        {
+          "english": "“herio,” camel-mat, hut",
+          "translation": "yagól-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "small, bad",
+          "translation": "yahaínyahh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · a."
+        },
+        {
+          "english": "two annas",
+          "translation": "yahan-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "herd of Oryx",
+          "translation": "yahhab-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "leg",
+          "translation": "yal-shi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y), Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "shoes",
+          "translation": "yaliyifo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "old man, woman",
+          "translation": "ya‘un-ki, -ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · ya‘unti jagh‘idei, mother"
+        },
+        {
+          "english": "fight",
+          "translation": "yiftimei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir (Y)) · Kirk (1905), p. 206 · v.i."
+        },
+        {
+          "english": "man, woman",
+          "translation": "yihan-ki, ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "sheep and goats",
+          "translation": "yiryiro-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 206"
+        },
+        {
+          "english": "rice",
+          "translation": "fil iftin",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: barìs-ki"
+        },
+        {
+          "english": "right hand",
+          "translation": "yifan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: midig-ti"
+        },
+        {
+          "english": "rope",
+          "translation": "ḍifaḍ-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: haḍig-gi"
+        },
+        {
+          "english": "rope",
+          "translation": "hajìa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: haḍig-gi"
+        },
+        {
+          "english": "rosary",
+          "translation": "goḍerowi-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: tusbah-hi"
+        },
+        {
+          "english": "rosary",
+          "translation": "alel-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: tusbah-hi"
+        },
+        {
+          "english": "run",
+          "translation": "bidbid",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: orod"
+        },
+        {
+          "english": "rupee",
+          "translation": "iftin-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: rubiad"
+        },
+        {
+          "english": "sandal",
+          "translation": "yaliyifo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: kab-ti"
+        },
+        {
+          "english": "sandal",
+          "translation": "jagaflaho-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: kab-ti"
+        },
+        {
+          "english": "satchel",
+          "translation": "nàni-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: ghandi-gi"
+        },
+        {
+          "english": "say",
+          "translation": "(see “speak”)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: oḍo"
+        },
+        {
+          "english": "see",
+          "translation": "aimei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: arag"
+        },
+        {
+          "english": "see",
+          "translation": "dag",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: arag"
+        },
+        {
+          "english": "send",
+          "translation": "shimi; tegèji; bidbidsei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: dir; kahhai"
+        },
+        {
+          "english": "send",
+          "translation": "shamei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: dir; kahhai"
+        },
+        {
+          "english": "sheep",
+          "translation": "ḍaḍo-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: aḍi-gi"
+        },
+        {
+          "english": "sheep",
+          "translation": "yeryero-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: aḍi-gi"
+        },
+        {
+          "english": "shew",
+          "translation": "aimidsi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: tus"
+        },
+        {
+          "english": "shew",
+          "translation": "indokholeisi; dagsi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: tus"
+        },
+        {
+          "english": "shield",
+          "translation": "altob-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: gashan-ki"
+        },
+        {
+          "english": "shield",
+          "translation": "gabis-ki; gaḍlahàto-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: gashan-ki"
+        },
+        {
+          "english": "ship",
+          "translation": "ghorin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: markab-ki"
+        },
+        {
+          "english": "skin",
+          "translation": "huwad-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: sàn-ti"
+        },
+        {
+          "english": "skin",
+          "translation": "gaḍlahàto-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: sàn-ti"
+        },
+        {
+          "english": "slaughter",
+          "translation": "sakhsakh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: ghal"
+        },
+        {
+          "english": "sleep",
+          "translation": "limdi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: sehho"
+        },
+        {
+          "english": "sleep",
+          "translation": "alemdi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: sehho"
+        },
+        {
+          "english": "small",
+          "translation": "yakainyahh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: yer"
+        },
+        {
+          "english": "small",
+          "translation": "neghatál",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: yer"
+        },
+        {
+          "english": "smell (v. t.)",
+          "translation": "‘urshèni",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: ‘urso"
+        },
+        {
+          "english": "smell (v. i.)",
+          "translation": "‘urshèn",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: ‘ur"
+        },
+        {
+          "english": "Somali",
+          "translation": "Goried-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: Somàli-di"
+        },
+        {
+          "english": "Somali",
+          "translation": "Àji-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: Somàli-di"
+        },
+        {
+          "english": "song",
+          "translation": "takalámo-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: gabei-gi"
+        },
+        {
+          "english": "speak",
+          "translation": "khabrei; lagh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: hadal"
+        },
+        {
+          "english": "speak",
+          "translation": "baghdan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: hadal"
+        },
+        {
+          "english": "stick",
+          "translation": "bulbul-shi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: ùl-shi"
+        },
+        {
+          "english": "stick",
+          "translation": "ghoribirro-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: ùl-shi"
+        },
+        {
+          "english": "still (be)",
+          "translation": "irso",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: jògso"
+        },
+        {
+          "english": "stomach",
+          "translation": "ùro-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: alòl-shi"
+        },
+        {
+          "english": "stomach",
+          "translation": "gurato-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: alòl-shi"
+        },
+        {
+          "english": "stone",
+          "translation": "tomàla-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: dagahh-i"
+        },
+        {
+          "english": "stone",
+          "translation": "makabùr-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: dagahh-i"
+        },
+        {
+          "english": "strike",
+          "translation": "aghtul; duk",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: ku ḍufo"
+        },
+        {
+          "english": "sun",
+          "translation": "iftin-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: ghorahh-di"
+        },
+        {
+          "english": "sun",
+          "translation": "iftimowa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: ghorahh-di"
+        },
+        {
+          "english": "tail",
+          "translation": "daras-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: dibo-di"
+        },
+        {
+          "english": "tail",
+          "translation": "dibyalin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: dibo-di"
+        },
+        {
+          "english": "take",
+          "translation": "shamei",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: ghad"
+        },
+        {
+          "english": "take to yourself",
+          "translation": "shanso",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: ghado"
+        },
+        {
+          "english": "then",
+          "translation": "kulhidas",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: kolkas"
+        },
+        {
+          "english": "then",
+          "translation": "naskas",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: kolkas"
+        },
+        {
+          "english": "there",
+          "translation": "higgà",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 212 · Somali: haggà"
+        },
+        {
+          "english": "there",
+          "translation": "higgà; naskà",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 212 · Somali: haggà"
+        },
+        {
+          "english": "thigh",
+          "translation": "derighab-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: bôdo-di"
+        },
+        {
+          "english": "thing",
+          "translation": "deri-gi (indef.); agar-ti (concrete); khabar-ki (abstract)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: wahh-i"
+        },
+        {
+          "english": "thing",
+          "translation": "nas-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: wahh-i"
+        },
+        {
+          "english": "(possessions)",
+          "translation": "à-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: ghalab-ki"
+        },
+        {
+          "english": "(possessions)",
+          "translation": "shàshin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: ghalab-ki"
+        },
+        {
+          "english": "think",
+          "translation": "bìd",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: mòd"
+        },
+        {
+          "english": "throat",
+          "translation": "unukh-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: hungùri-gi"
+        },
+        {
+          "english": "throat",
+          "translation": "lakhowa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: hungùri-gi"
+        },
+        {
+          "english": "time",
+          "translation": "nas-ki (?)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: kol-ki (etc.)"
+        },
+        {
+          "english": "tobacco",
+          "translation": "maḍô-ḍi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: bùri-gi"
+        },
+        {
+          "english": "to-day",
+          "translation": "watahhádan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: manta"
+        },
+        {
+          "english": "to-day",
+          "translation": "iftimowaha",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: manta"
+        },
+        {
+          "english": "Tomal",
+          "translation": "Àbir-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: Tomàl-ki"
+        },
+        {
+          "english": "to-morrow",
+          "translation": "watahhádi darsad",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: berrì"
+        },
+        {
+          "english": "to-morrow",
+          "translation": "iftimowihi so tegè-deya",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: berrì"
+        },
+        {
+          "english": "tongue",
+          "translation": "laghowa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: arab-ti"
+        },
+        {
+          "english": "tooth",
+          "translation": "wafèr-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: ilig-gi"
+        },
+        {
+          "english": "town",
+          "translation": "kalweinàleh-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: magàlo-di"
+        },
+        {
+          "english": "town",
+          "translation": "nas-ki (?)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: magàlo-di"
+        },
+        {
+          "english": "track",
+          "translation": "so‘oto-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: ràd-ki"
+        },
+        {
+          "english": "trap",
+          "translation": "hajìa-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: dabin-ti"
+        },
+        {
+          "english": "tree",
+          "translation": "awas-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: gèd-ki"
+        },
+        {
+          "english": "truth",
+          "translation": "ghamagh-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: run-ti"
+        },
+        {
+          "english": "truth",
+          "translation": "ghàn",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: run-ti"
+        },
+        {
+          "english": "under",
+          "translation": "hosyad",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: hos"
+        },
+        {
+          "english": "under",
+          "translation": "hosyalin",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: hos"
+        },
+        {
+          "english": "understand",
+          "translation": "dag",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: garo"
+        },
+        {
+          "english": "useful",
+          "translation": "behhensan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: fi‘an"
+        },
+        {
+          "english": "water",
+          "translation": "lawo-hi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: bìyo-hi"
+        },
+        {
+          "english": "water",
+          "translation": "gomosímo-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: bìyo-hi"
+        },
+        {
+          "english": "when",
+          "translation": "kulhídi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: kolki"
+        },
+        {
+          "english": "when ?",
+          "translation": "kulhíma ?",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: gorma ?"
+        },
+        {
+          "english": "where",
+          "translation": "higgi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: haggi"
+        },
+        {
+          "english": "where ?",
+          "translation": "higge ?; higma ?",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: hagge ?"
+        },
+        {
+          "english": "white",
+          "translation": "iftin",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: ‘ad"
+        },
+        {
+          "english": "whip",
+          "translation": "bulbul-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: jèdal-ki"
+        },
+        {
+          "english": "whip",
+          "translation": "ghorin-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: jèdal-ki"
+        },
+        {
+          "english": "wish",
+          "translation": "feḍ",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: dòn"
+        },
+        {
+          "english": "wish",
+          "translation": "ku raghahhsan",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: dòn"
+        },
+        {
+          "english": "woman",
+          "translation": "asuwan-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: nàg-ti"
+        },
+        {
+          "english": "woman",
+          "translation": "awin-ti; asahan-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: nàg-ti"
+        },
+        {
+          "english": "woman (2nd row)",
+          "translation": "ya‘un-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: habàr-ti"
+        },
+        {
+          "english": "woman (2nd row)",
+          "translation": "yihan-ti; golof-ti",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 213 · Somali: habàr-ti"
+        },
+        {
+          "english": "wood",
+          "translation": "ghoribirro-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: ghori-gi"
+        },
+        {
+          "english": "word",
+          "translation": "deri-gi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 213 · Somali: erei-gi"
+        },
+        {
+          "english": "one",
+          "translation": "deri (=finger)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: mid (Numbers)"
+        },
+        {
+          "english": "two",
+          "translation": "limihi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: laba (Numbers)"
+        },
+        {
+          "english": "three",
+          "translation": "sadehhi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: sadehh (Numbers)"
+        },
+        {
+          "english": "four",
+          "translation": "aferi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: afar (Numbers)"
+        },
+        {
+          "english": "five",
+          "translation": "gànad (=hand)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: shan (Numbers)"
+        },
+        {
+          "english": "six",
+          "translation": "gànad iyo deri",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: lehh (Numbers)"
+        },
+        {
+          "english": "ten",
+          "translation": "limihi gànadod, or tobanihi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: toban (Numbers)"
+        },
+        {
+          "english": "fifteen",
+          "translation": "sadehhi gànadod",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: shanyo-toban (Numbers)"
+        },
+        {
+          "english": "hundred",
+          "translation": "goḍerowi-gi (=rosary of 100 beads)",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: boghol (Numbers)"
+        },
+        {
+          "english": "thousand",
+          "translation": "tobanihi goḍerowiyod",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: kun (Numbers)"
+        },
+        {
+          "english": "Dikdik",
+          "translation": "d. yahainyahha awaski ka godisa",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: sagàro (d. = dálanga)"
+        },
+        {
+          "english": "Dikdik",
+          "translation": "bikho",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 214 · Somali: sagàro (d. = dálanga)"
+        },
+        {
+          "english": "Elephant",
+          "translation": "dusár",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: maròdi (Wild Animals)"
+        },
+        {
+          "english": "Fox",
+          "translation": "d. ḍaḍo ‘ita",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: da‘wo (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Clarke’s",
+          "translation": "d. darasti tegèja",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: dibotag (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Clarke’s",
+          "translation": "dibodèr",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 214 · Somali: dibotag (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Soemmering’s",
+          "translation": "d. darasti iftimaleh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: ‘aul (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Soemmering’s",
+          "translation": "gosinki; (buck) jehhar",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 214 · Somali: ‘aul (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Speke’s",
+          "translation": "d. amèḍo la hega",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: dèro (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Speke’s",
+          "translation": "abàbo",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 214 · Somali: dèro (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Waller’s",
+          "translation": "d. la bilehhoda",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: gerenùk (d. = dálanga)"
+        },
+        {
+          "english": "Gazelle, Waller’s",
+          "translation": "tingir; geryal; (buck) lig",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 214 · Somali: gerenùk (d. = dálanga)"
+        },
+        {
+          "english": "Haartebeest",
+          "translation": "d. albakharki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: sig (d. = dálanga)"
+        },
+        {
+          "english": "Haartebeest",
+          "translation": "dabo‘ad",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 214 · Somali: sig (d. = dálanga)"
+        },
+        {
+          "english": "Hyaena",
+          "translation": "d. khábarki ghandidsanleh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: waràba (d. = dálanga)"
+        },
+        {
+          "english": "Koodoo",
+          "translation": "godir",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: aderyo (Wild Animals)"
+        },
+        {
+          "english": "Leopard",
+          "translation": "d. amèḍo ‘ita",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: shabèl (d. = dálanga)"
+        },
+        {
+          "english": "Lion",
+          "translation": "d. jalmo ‘ita",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: libahh (d. = dálanga)"
+        },
+        {
+          "english": "Lion",
+          "translation": "hangagùri ghàn",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 214 · Somali: libahh (d. = dálanga)"
+        },
+        {
+          "english": "Oryx",
+          "translation": "d. walahumo ku dashìya",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: b‘e‘id (d. = dálanga)"
+        },
+        {
+          "english": "Oryx",
+          "translation": "gesoder; gesolahato; (buck) saryen",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan argot) · Kirk (1905), p. 214 · Somali: b‘e‘id (d. = dálanga)"
+        },
+        {
+          "english": "herd of Oryx",
+          "translation": "yahhab-ki",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali column blank"
+        },
+        {
+          "english": "Ostrich",
+          "translation": "hedig; gir; sareyagh",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: gorei; halda"
+        },
+        {
+          "english": "O. feather",
+          "translation": "rish",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: bàl"
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "amadur",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: wìyil"
+        },
+        {
+          "english": "Tortoise",
+          "translation": "makabùr",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Yibir argot) · Kirk (1905), p. 214 · Somali: din"
+        },
+        {
+          "english": "To curse",
+          "translation": "E,teen",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To circumcise",
+          "translation": "Gooth,main",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Far",
+          "translation": "Daio",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Up",
+          "translation": "Kor",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Down",
+          "translation": "Hons",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Open",
+          "translation": "Foor",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Before",
+          "translation": "Hoor",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Behind",
+          "translation": "Praith",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Rich",
+          "translation": "Ma,al,bur,then",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Poor",
+          "translation": "Mas,keen",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Dark",
+          "translation": "Moo,g,dee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Deep",
+          "translation": "Lai,sai,jee,ra",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Much",
+          "translation": "Bur,than",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Little",
+          "translation": "Gah,wan",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Beautiful",
+          "translation": "Dad,fi,lai",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Ugly",
+          "translation": "Mas,soo,ban",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Deaf",
+          "translation": "Daig,ma,lac",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Wild",
+          "translation": "Jee,nee,ko,nah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Silver",
+          "translation": "Lagh",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Cat",
+          "translation": "Dummud",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Well",
+          "translation": "Hel",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Language",
+          "translation": "Affkee",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Answer",
+          "translation": "Berre-na",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "How do you do ?",
+          "translation": "Adeka wa siddi",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Answer",
+          "translation": "Anekawa sisun",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Answer",
+          "translation": "Wa nubdee",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Here",
+          "translation": "Hulka",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "How much",
+          "translation": "Inmissa",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Now",
+          "translation": "Aminka",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Little",
+          "translation": "Yer",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "When",
+          "translation": "Hudmah",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "A name",
+          "translation": "Mugga",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "A Town",
+          "translation": "Maghala",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "A Fowl",
+          "translation": "Dorah",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Sit down",
+          "translation": "Furreeso",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "I do not know",
+          "translation": "Aneka ma akan",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "You do know",
+          "translation": "Adeka wa takan",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Be not afraid",
+          "translation": "Ha bugin",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
         }
       ]
     }

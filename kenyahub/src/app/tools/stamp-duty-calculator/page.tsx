@@ -35,7 +35,7 @@ function calculateConveyancingFees(value: number) {
     remaining -= taxableInBand;
   }
 
-  const minFee = stampDutyData.conveyancingFees[0]?.minimumFee ?? 0;
+  const minFee = (stampDutyData.conveyancingFees[0] as any)?.minFee ?? 35000;
   if (totalFee < minFee && value > 0) totalFee = minFee;
 
   const vatRate = stampDutyData.legalFeeVatPercent ?? 16;
@@ -52,16 +52,18 @@ export default function StampDutyCalculatorPage() {
   const results = useMemo(() => {
     const stampDuty = calculateStampDuty(propertyValue, isUrban, isFirstTimeBuyer);
     const conveyancing = calculateConveyancingFees(propertyValue);
-    const registrationFee = stampDutyData.otherCosts.registrationFee;
-    const searchFee = stampDutyData.otherCosts.searchFee;
-    const consent = stampDutyData.otherCosts.consentToTransfer;
+    const registrationFee = propertyValue > 0 ? stampDutyData.otherCosts.registrationFee : 0;
+    const searchFee = propertyValue > 0 ? stampDutyData.otherCosts.searchFee : 0;
+    const consent = propertyValue > 0 ? stampDutyData.otherCosts.consentToTransfer : 0;
     const total =
-      stampDuty + conveyancing.totalWithVat + registrationFee + searchFee + consent;
+      propertyValue > 0
+        ? stampDuty + conveyancing.totalWithVat + registrationFee + searchFee + consent
+        : 0;
 
     return {
       propertyValue,
       stampDuty,
-      stampDutyRate: isFirstTimeBuyer ? 0 : isUrban ? 4 : 2,
+      stampDutyRate: isFirstTimeBuyer ? 0 : isUrban ? stampDutyData.stampDuty.urban : stampDutyData.stampDuty.rural,
       conveyancingBase: conveyancing.baseFee,
       conveyancingVat: conveyancing.vat,
       conveyancingTotal: conveyancing.totalWithVat,

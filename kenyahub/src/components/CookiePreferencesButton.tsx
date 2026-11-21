@@ -22,6 +22,14 @@ export default function CookiePreferencesButton() {
   }, []);
 
   const openBanner = () => {
+    const gfc = (
+      window as unknown as {
+        googlefc?: { showRevocationMessage?: () => void };
+      }
+    ).googlefc;
+    if (gfc?.showRevocationMessage) {
+      gfc.showRevocationMessage();
+    }
     window.dispatchEvent(new CustomEvent("kh-open-cookie-banner"));
   };
 

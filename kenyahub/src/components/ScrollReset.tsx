@@ -54,7 +54,7 @@ export default function ScrollReset() {
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="Scroll back to top"
       title="Back to top"
-      className="kh-back-to-top fixed bottom-6 right-4 sm:right-6 z-40 w-10 h-10 rounded-full border border-gold/40 bg-bg-card text-gold shadow-lg shadow-black/30 hover:bg-gold hover:text-kenya-black hover:-translate-y-1 active:scale-90 flex items-center justify-center transition-all duration-200 cursor-pointer"
+      className="kh-back-to-top fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40 w-10 h-10 rounded-full border border-gold/40 bg-bg-card text-gold shadow-lg shadow-black/30 hover:bg-gold hover:text-kenya-black hover:-translate-y-1 active:scale-90 flex items-center justify-center transition-all duration-200 cursor-pointer"
       style={{ backgroundColor: "var(--bg-card)" }}
     >
       <ArrowUp className="w-4 h-4" />

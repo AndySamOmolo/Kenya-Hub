@@ -21,7 +21,7 @@ function validateExercise(
     issues.push({ path, message: "Exercise answer is empty" });
   }
 
-  if (exercise.type === "multiple_choice") {
+  if (exercise.type === "multiple_choice" || exercise.type === "tap_what_you_hear") {
     if (!exercise.options || exercise.options.length < 2) {
       issues.push({ path, message: "Multiple choice exercise must have at least two options" });
     } else {
@@ -47,12 +47,22 @@ function validateExercise(
     if (!exercise.pairs || exercise.pairs.length < 2) {
       issues.push({ path, message: "Match exercise needs at least two pairs" });
     } else {
+      const seenLeft = new Set<string>();
+      const seenRight = new Set<string>();
       exercise.pairs.forEach((pair, pairIndex) => {
         if (!pair.left || !pair.left.trim() || !pair.right || !pair.right.trim()) {
           issues.push({
             path: `${path}.pairs[${pairIndex}]`,
             message: "Match pair has empty left or right value",
           });
+        } else {
+          const lk = pair.left.trim().toLowerCase();
+          const rk = pair.right.trim().toLowerCase();
+          if (seenLeft.has(lk) || seenRight.has(rk)) {
+            issues.push({ path: `${path}.pairs[${pairIndex}]`, message: "Duplicate left or right match pair value" });
+          }
+          seenLeft.add(lk);
+          seenRight.add(rk);
         }
       });
     }

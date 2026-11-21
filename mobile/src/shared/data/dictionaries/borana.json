@@ -12,7 +12,7 @@
     "Tana River (Orma)",
     "Garissa"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-19",
   "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996). Expanded and cross-verified with Commercially Permissive Datasets (Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0)).",
@@ -433,6 +433,18 @@
           "translation": "nagaya / kabla",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Salutation on meeting a friend",
+          "translation": "Hofo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Salutation on Meeting",
+          "translation": "Naga Ambalte",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -2693,6 +2705,138 @@
           "translation": "kūdăn",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "One, 1",
+          "translation": "Ta,ka",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Two, 2",
+          "translation": "Lum,ma",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Three, 3",
+          "translation": "Sah,dee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Four, 4",
+          "translation": "Hafoora",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Five, 5",
+          "translation": "Shen,noo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Six, 6",
+          "translation": "Jah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Seven, 7",
+          "translation": "Pudba",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Eight, 8",
+          "translation": "Sud,deed",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Nine, 9",
+          "translation": "See,ga,lee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Ten, 10",
+          "translation": "Koo,dun",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "One Hundred",
+          "translation": "Dee,bah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "1 One",
+          "translation": "Tok",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "2 Two",
+          "translation": "Lama",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "3 Three",
+          "translation": "Sadi",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "4 Four",
+          "translation": "Afur",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "5 Five",
+          "translation": "Shani",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "6 Six",
+          "translation": "Tsha",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "7 Seven",
+          "translation": "Torba",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "8 Eight",
+          "translation": "Sadeti",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "9 Nine",
+          "translation": "Sagall",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "10 Ten",
+          "translation": "Kudana",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "One Hundred",
+          "translation": "Dibba",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -4698,6 +4842,84 @@
           "translation": "abaki",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "A Man",
+          "translation": "It,mee,num,ma",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Woman",
+          "translation": "Nud,dun",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Child",
+          "translation": "Ha,go,lai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Son",
+          "translation": "Ha,go,lai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Brother",
+          "translation": "A,b,boo,laissee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Sister",
+          "translation": "Abboolaistuteeah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Father",
+          "translation": "Ab,ba, Ke,ea",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Mother",
+          "translation": "Haddatuah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Friend",
+          "translation": "Iaa,lee, Keea",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "To be with child",
+          "translation": "Ool,fa,kub,dee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "A Man",
+          "translation": "Nama",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Woman",
+          "translation": "Nitis",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Son",
+          "translation": "Ilma",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -7789,6 +8011,120 @@
           "translation": "lūkū",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Earth",
+          "translation": "Luff",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "The Skin or Hide",
+          "translation": "Le,tee,lai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "The Head",
+          "translation": "Muttai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "The Hair",
+          "translation": "Kiuv,faisse",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "The Eye",
+          "translation": "Ee,la,tua",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "The Nose",
+          "translation": "Foonara",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Mouth",
+          "translation": "Haffar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Teeth",
+          "translation": "Jekana",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Tongue",
+          "translation": "Arrubnee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Ear",
+          "translation": "Goo,roo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Hand",
+          "translation": "Hurke",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Heart",
+          "translation": "Lup,pai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Blood",
+          "translation": "Deek",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Leg",
+          "translation": "Seerbah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Foot",
+          "translation": "Tanah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "To hear",
+          "translation": "Dai,gai,fa,doo",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To swear",
+          "translation": "Hur,ruf,sel",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Near",
+          "translation": "Ta,hee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "The Head",
+          "translation": "Mata",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -11055,6 +11391,72 @@
           "translation": "băfu",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "A Bee",
+          "translation": "Lhin,nee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Fish",
+          "translation": "Woor,too,moo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Horse",
+          "translation": "Furda",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Camel",
+          "translation": "Galolai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Cow",
+          "translation": "La,worn",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Sheep",
+          "translation": "Ree,ai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Goat",
+          "translation": "Horar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Lion",
+          "translation": "Nain,gai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Dog",
+          "translation": "Lur,rul,tai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Bird",
+          "translation": "Shim,bie,ree",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Dog",
+          "translation": "Lurruttai",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -14694,6 +15096,114 @@
           "translation": "Boyi",
           "pronunciation": "",
           "context": "A. Donaldson Smith (1897) Through Unknown African Countries (Public Domain), p. 213"
+        },
+        {
+          "english": "The Sun",
+          "translation": "Ha,thoo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "The Moon",
+          "translation": "Tee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Wind",
+          "translation": "Affoaw",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Rain",
+          "translation": "Buk, Rai,na",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Clouds",
+          "translation": "Buccat",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Hill",
+          "translation": "Dega,cha",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Stone",
+          "translation": "Dugga,cha",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Fire",
+          "translation": "Ee,wee,da",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Tree",
+          "translation": "Moacoo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Wood",
+          "translation": "Alla",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Plain Level Ground",
+          "translation": "Luftee, Medgur",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Grass",
+          "translation": "Boo,joo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Flower",
+          "translation": "Ajawa",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A River",
+          "translation": "Do,ab",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Hill",
+          "translation": "Degacha",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Fire",
+          "translation": "Gewada",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Stone",
+          "translation": "Daga",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Wood",
+          "translation": "Maka",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -17077,6 +17587,42 @@
           "translation": "fōn",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "Fruit",
+          "translation": "Len,ea,ua, Wance",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Honey",
+          "translation": "Dug,mee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Wheat",
+          "translation": "Sheer",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Water",
+          "translation": "Bus,saan",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "To drink",
+          "translation": "Doo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Great",
+          "translation": "Goo,dah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
         }
       ]
     },
@@ -25630,12 +26176,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "kukuta",
-          "pronunciation": "kukuta",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Kubziza",
           "translation": "kubzifad'a",
           "pronunciation": "kubzifad'a",
@@ -25663,12 +26203,6 @@
           "english": "Ous",
           "translation": "cacaba",
           "pronunciation": "cacaba",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "cacalʿi",
-          "pronunciation": "cacali",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -25810,12 +26344,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "cocobã",
-          "pronunciation": "cocobã",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Ive",
           "translation": "cobe",
           "pronunciation": "cobe",
@@ -25882,12 +26410,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "gegeza",
-          "pronunciation": "gegeza",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Irs",
           "translation": "gadjara",
           "pronunciation": "gadjara",
@@ -25927,12 +26449,6 @@
           "english": "Cherish",
           "translation": "gabara",
           "pronunciation": "gabara",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "gargara",
-          "pronunciation": "gargara",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -26023,12 +26539,6 @@
           "english": "Titillate",
           "translation": "gidirza",
           "pronunciation": "gidirza",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "gogoga",
-          "pronunciation": "gogoga",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -26152,12 +26662,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "gugugza",
-          "pronunciation": "gugugza",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Her",
           "translation": "gugumefad'a",
           "pronunciation": "gugumefad'a",
@@ -26215,12 +26719,6 @@
           "english": "Urn",
           "translation": "guba",
           "pronunciation": "guba",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "guguba",
-          "pronunciation": "guguba",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -26296,21 +26794,9 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "gugumefad'a",
-          "pronunciation": "gugumefad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Obe",
           "translation": "tchafaga",
           "pronunciation": "tchafaga",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "tchatchaba",
-          "pronunciation": "tchatchaba",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -26320,21 +26806,9 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "tchatchabza",
-          "pronunciation": "tchatchabza",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Med",
           "translation": "tchabzad'a",
           "pronunciation": "tchabzad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "tchatchabzad'a",
-          "pronunciation": "tchatchabzad'a",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -26524,12 +26998,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "dyidyiga",
-          "pronunciation": "dyidyiga",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Moist",
           "translation": "dyid'a",
           "pronunciation": "dyid'a",
@@ -26692,12 +27160,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "t'ut'ut'a",
-          "pronunciation": "t'ut'ut'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Urs",
           "translation": "daima",
           "pronunciation": "daima",
@@ -26797,12 +27259,6 @@
           "english": "(-ita) px",
           "translation": "darba",
           "pronunciation": "darba",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "dadarba",
-          "pronunciation": "dadarba",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -26944,12 +27400,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "dubiza",
-          "pronunciation": "dubiza",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Foremost",
           "translation": "dura",
           "pronunciation": "dura",
@@ -26983,12 +27433,6 @@
           "english": "D'ad'z'u, to imitate",
           "translation": "d'ad'a",
           "pronunciation": "d'ad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "d'ad'ad'a",
-          "pronunciation": "d'ad'ad'a",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -27034,21 +27478,9 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "dad'aba",
-          "pronunciation": "dad'aba",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "And",
           "translation": "d'abad'a",
           "pronunciation": "d'abad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "dad'abad'a",
-          "pronunciation": "dad'abad'a",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -27169,12 +27601,6 @@
           "english": "Phr",
           "translation": "d'icad'a",
           "pronunciation": "d'icad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "d'id'ad'a",
-          "pronunciation": "d'id'ad'a",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -27430,21 +27856,9 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "babad'a",
-          "pronunciation": "babad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Out",
           "translation": "baza",
           "pronunciation": "baza",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "babaza",
-          "pronunciation": "babaza",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -27511,12 +27925,6 @@
           "english": "Ach",
           "translation": "barziza",
           "pronunciation": "barziza",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "baru",
-          "pronunciation": "baru",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -27724,12 +28132,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "bubula",
-          "pronunciation": "bubula",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Ght",
           "translation": "buldsha",
           "pronunciation": "buldsha",
@@ -27898,12 +28300,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "lalabã",
-          "pronunciation": "lalabã",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "also, too",
           "translation": "le",
           "pronunciation": "le",
@@ -27997,12 +28393,6 @@
           "english": "(said of plants)",
           "translation": "marfad'a",
           "pronunciation": "marfad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "marmara",
-          "pronunciation": "marmara",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -28108,18 +28498,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "mimiʿã",
-          "pronunciation": "mimiã",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "momoa",
-          "pronunciation": "momoa",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Pap",
           "translation": "moca",
           "pronunciation": "moca",
@@ -28210,21 +28588,9 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "murmura",
-          "pronunciation": "murmura",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Mura",
           "translation": "murad'a",
           "pronunciation": "murad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "mumulad'a",
-          "pronunciation": "mumulad'a",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -28306,12 +28672,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "zazabad'a",
-          "pronunciation": "zazabad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Id",
           "translation": "zababama",
           "pronunciation": "zababama",
@@ -28390,12 +28750,6 @@
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "zitu, zitᵃ",
-          "pronunciation": "zitu",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
           "english": "Zidifni",
           "translation": "zidiza",
           "pronunciation": "zidiza",
@@ -28435,12 +28789,6 @@
           "english": "Anxious",
           "translation": "zodad'z'iza",
           "pronunciation": "zodad'z'iza",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "zozoba",
-          "pronunciation": "zozoba",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -28723,12 +29071,6 @@
           "english": "Waddle, tremble, didder",
           "translation": "hollad'a",
           "pronunciation": "hollad'a",
-          "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "homa",
-          "pronunciation": "homa",
           "context": "Borana / Oromo Lexicon (Tutschek 1844) • Cross-verified with Google SMOL/GATITOS & Kaikki.org Oromo (CC-BY-4.0)"
         },
         {
@@ -30048,6 +30390,18 @@
           "translation": "mina",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Shut",
+          "translation": "Ee,dee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "A House",
+          "translation": "Manna",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
         }
       ]
     },
@@ -35103,36 +35457,6 @@
           "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (CMS London, 1840) • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
-          "english": "(ANSWER)",
-          "translation": "Bulle bulta ; or, Enaganaga, feyuma",
-          "pronunciation": "bulle-bulta",
-          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (CMS London, 1840) • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "(ANSWER)",
-          "translation": "Ollo olte",
-          "pronunciation": "ollo-olte",
-          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (CMS London, 1840) • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "(ANSWER)",
-          "translation": "Naguma atigalgalesite ?",
-          "pronunciation": "naguma-atigalgalesite",
-          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (CMS London, 1840) • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "(ANSWER)",
-          "translation": "Nagai ambula",
-          "pronunciation": "nagai-ambula",
-          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (CMS London, 1840) • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "(ANSWER)",
-          "translation": "Bulla bulte",
-          "pronunciation": "bulla-bulte",
-          "context": "Rev. J. L. Krapf & Rev. C. W. Isenberg, An Imperfect Outline of the Elements of the Galla Language (CMS London, 1840) • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
           "english": "Where do you go to",
           "translation": "Esa dukta ?",
           "pronunciation": "esa-dukta",
@@ -38085,6 +38409,114 @@
           "translation": "kāpi",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "To give",
+          "translation": "Anna Ken,nee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "To take",
+          "translation": "Ho,to",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "To love",
+          "translation": "Leejalattee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "To sing",
+          "translation": "Eentoorna",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To be glad",
+          "translation": "Gun,a,mee,da,jee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To be sorry",
+          "translation": "Dad,da,wee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To weep",
+          "translation": "E,m,bow,a",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To bless",
+          "translation": "Wa,ag,na,ai,bees",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To marry",
+          "translation": "Im,foo,nah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To be delivered",
+          "translation": "Dai,tie",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To forget",
+          "translation": "Wul,la,lai",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To remember",
+          "translation": "Hil,lal,cha,mai",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To smell",
+          "translation": "Een,foo,nan",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To taste",
+          "translation": "Da,deem,sa",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To converse",
+          "translation": "Gah,fud,da",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To stand",
+          "translation": "Ka,hee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To believe",
+          "translation": "Doo,gar",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To lie",
+          "translation": "Dahrah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
         }
       ]
     },
@@ -39857,6 +40289,48 @@
           "translation": "jābā",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "Small",
+          "translation": "Ga,wa,wa",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Light",
+          "translation": "Goo,jah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Long",
+          "translation": "Fa,jo",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Bitter",
+          "translation": "Had,dai,dah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Sweet",
+          "translation": "Mee,ah,wah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Strong",
+          "translation": "Ge,rai,ja,wah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Weak",
+          "translation": "In,doo,coo,wah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
         }
       ]
     },
@@ -42039,6 +42513,54 @@
           "english": "West",
           "translation": "lítta aduáti",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "God",
+          "translation": "Wa,ag",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Gold",
+          "translation": "Dee,ma",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Boat",
+          "translation": "Hoo,woo,loo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "To come",
+          "translation": "Ko,te",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To go",
+          "translation": "Beneethaimi",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Gold",
+          "translation": "Worke",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "A Boat",
+          "translation": "Howoolo",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Good",
+          "translation": "Gari, guda",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -42833,6 +43355,18 @@
           "english": "Riches",
           "translation": "karra",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "To buy",
+          "translation": "Bee,tee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "To sell",
+          "translation": "Anna Bee,tee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
         }
       ]
     },
@@ -44542,6 +45076,24 @@
           "english": "War",
           "translation": "dúla",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kigalla"
+        },
+        {
+          "english": "To kill",
+          "translation": "Dokee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "To be sick",
+          "translation": "Doo,koo,wai",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To die",
+          "translation": "Dooree",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -45478,6 +46030,60 @@
           "translation": "Mudde",
           "pronunciation": "",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Year",
+          "translation": "Geur,na",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Month",
+          "translation": "Batee,to,ka",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Week",
+          "translation": "Gooya,tud,ba",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Day",
+          "translation": "Goosjoo,matoke",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Morning",
+          "translation": "Bur,ree,tee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "A Day",
+          "translation": "Gafa",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "To-day",
+          "translation": "Anda",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Good Night, Adieu",
+          "translation": "Nagma gal-gale sati",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Katisa",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
         }
       ]
     },
@@ -47119,12 +47725,6 @@
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
-          "english": "Plur",
-          "translation": "korma",
-          "pronunciation": "korma",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
           "english": "Wart",
           "translation": "kolmomu",
           "pronunciation": "kolmo-mu",
@@ -47155,12 +47755,6 @@
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
-          "english": "Plur",
-          "translation": "qena",
-          "pronunciation": "qe-na",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
           "english": "Bot?",
           "translation": "cuzae",
           "pronunciation": "cu-zae",
@@ -47176,12 +47770,6 @@
           "english": "Ibid",
           "translation": "garbiti",
           "pronunciation": "garbi-ti",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Plur",
-          "translation": "godiyo",
-          "pronunciation": "go-di-yo",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
@@ -47206,12 +47794,6 @@
           "english": "Ibid",
           "translation": "dudubiza",
           "pronunciation": "du-du-bi-za",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Plur",
-          "translation": "dubaro",
-          "pronunciation": "du-ba-ro",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
@@ -47245,39 +47827,15 @@
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
-          "english": "Conj",
-          "translation": "wuyi",
-          "pronunciation": "wu-yi",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
           "english": "Life",
           "translation": "lubu",
           "pronunciation": "lu-bu",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
-          "english": "Plur",
-          "translation": "mana",
-          "pronunciation": "ma-na",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
           "english": "File",
           "translation": "moro",
           "pronunciation": "mo-ro",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Plur",
-          "translation": "niti",
-          "pronunciation": "ni-ti",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Plur",
-          "translation": "zare",
-          "pronunciation": "za-re",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
@@ -47296,24 +47854,6 @@
           "english": "Foal",
           "translation": "handjafa",
           "pronunciation": "handja-fa",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Conj",
-          "translation": "hena",
-          "pronunciation": "he-na",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Conj",
-          "translation": "ho",
-          "pronunciation": "ho",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Conj",
-          "translation": "hoyu",
-          "pronunciation": "ho-yu",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
@@ -52843,12 +53383,6 @@
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
-          "english": "Interj",
-          "translation": "olofa",
-          "pronunciation": "o-lo-fa",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
           "english": "Reflex",
           "translation": "ufi",
           "pronunciation": "ufi",
@@ -52864,12 +53398,6 @@
           "english": "Handle",
           "translation": "cabad'o",
           "pronunciation": "ca-bad'o",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "gagabara",
-          "pronunciation": "ga-ga-ba-ra",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
@@ -52897,39 +53425,9 @@
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "didiba",
-          "pronunciation": "di-di-ba",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "did'iba",
-          "pronunciation": "did'i-ba",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "dod'olad'a",
-          "pronunciation": "dod'o-lad'a",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
           "english": "A quab",
           "translation": "dongale",
           "pronunciation": "donga-le",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "dudubad'a",
-          "pronunciation": "du-du-bad'a",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "dud'ufa",
-          "pronunciation": "dud'u-fa",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
@@ -52981,21 +53479,9 @@
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
-          "english": "Intens",
-          "translation": "maltu",
-          "pronunciation": "maltu",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
           "english": "Rosary",
           "translation": "mazuba",
           "pronunciation": "ma-zu-ba",
-          "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
-        },
-        {
-          "english": "Intens",
-          "translation": "mêca",
-          "pronunciation": "me-ca",
           "context": "Karl & Lawrence Tutschek (1844) Dictionary of the Galla Language, Part I • Cross-verified with Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0)"
         },
         {
@@ -148044,6 +148530,288 @@
           "english": "For God so loved the world (John 3:16 — 1889 Southern / Bararetta Orma-Borana Specimen #153)",
           "translation": "Manif ak suni Wain ha fed'e inama lafa, ak in fed'e, ak in Ilm isa tokocha kofa d'alete base, akum suni, namn d'ud'umt ka is d'uguomfetu ak im bane, ammo ha d'argetu fayum ta in dumne.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "Lightning",
+          "translation": "Gur,ka",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Iron",
+          "translation": "Le,vil,la",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Silver",
+          "translation": "Cullan",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "A Valley",
+          "translation": "Rana",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 51"
+        },
+        {
+          "english": "Indian Corn",
+          "translation": "Mezingo",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Barley",
+          "translation": "Sheeve",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Well",
+          "translation": "Alema",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Mule",
+          "translation": "Ha,aree",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Calf",
+          "translation": "Julbeea",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "An Ox",
+          "translation": "Dee,mee,cha",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Lamb",
+          "translation": "Watteereai",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Kid",
+          "translation": "Wattee Horar",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Horn",
+          "translation": "Gaisse",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "A Locust",
+          "translation": "Caboo, Yalais",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Me",
+          "translation": "Han,nah",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "You",
+          "translation": "Hattee",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Answer",
+          "translation": "Nuggeen",
+          "pronunciation": "",
+          "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "\"Free\" (autonym) / Land of the Orma",
+          "translation": "Orm / Orma / Laf Ormati",
+          "pronunciation": "",
+          "context": "Phillipson (1916) Notes on the Galla (Tana River Orma) · Phillipson (1916), p. 177 · Autonym / Toponym"
+        },
+        {
+          "english": "Southern Galla, Northern parent branch, Juba–Tana",
+          "translation": "Barareta, Borana, Kofira, Boma Upande",
+          "pronunciation": "",
+          "context": "Phillipson (1916) Notes on the Galla (Tana River Orma) · Phillipson (1916), pp. 177–178 · Ethnonyms / Toponyms · Southern Galla, Northern parent branch, Juba–Tana division, Mambrui settlement"
+        },
+        {
+          "english": "Clans",
+          "translation": "Lub, Hayum, Hayu, Gos, Toib/Toibi",
+          "pronunciation": "",
+          "context": "Phillipson (1916) Notes on the Galla (Tana River Orma) · Phillipson (1916), pp. 179–180 · Governance / Age-grade · Clans (\"followers of a king\"), kingdom, elected 8-year king, united-people moiety, 7 councillors/ministers"
+        },
+        {
+          "english": "To curse",
+          "translation": "Har,ruf,u",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "To circumcise",
+          "translation": "See,lah,ma",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Far",
+          "translation": "Ar,lah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Up",
+          "translation": "De,eoh",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Down",
+          "translation": "Fa,goh",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Open",
+          "translation": "Bah,nee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Before",
+          "translation": "Im,fa,ga,tee",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Behind",
+          "translation": "Run,dar",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Rich",
+          "translation": "Door,rai,sah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Poor",
+          "translation": "Dai,jah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Dark",
+          "translation": "Dookun",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Deep",
+          "translation": "Fa,ja",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Much",
+          "translation": "Goo,dah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Little",
+          "translation": "Dee,ko",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Beautiful",
+          "translation": "Mee,dah,gah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Ugly",
+          "translation": "Hah,mali",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Deaf",
+          "translation": "Goo,roo,in,ka,hou",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Wild",
+          "translation": "Ja,joo,ko,wah",
+          "pronunciation": "",
+          "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "A Well",
+          "translation": "Burka",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Answer",
+          "translation": "Bulla bulte nagma",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Answer",
+          "translation": "Atis fei, uma",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Answer",
+          "translation": "Nagai umbulla",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Here",
+          "translation": "Baketaneti",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "How much",
+          "translation": "Maka",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "To-morrow",
+          "translation": "Boru",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Little",
+          "translation": "Tenno",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "When",
+          "translation": "Iome",
+          "pronunciation": "",
+          "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
         }
       ]
     }
@@ -148051,5 +148819,5 @@
   "source": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "gax",
   "glottocode": "bora1271",
-  "totalEntries": 27531
+  "totalEntries": 27472
 }

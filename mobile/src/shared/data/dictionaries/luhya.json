@@ -11,7 +11,7 @@
     "Vihiga",
     "Busia"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-19",
   "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",
@@ -35586,6 +35586,246 @@
           "translation": "manyire",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 246"
+        },
+        {
+          "english": "these three big respectful children of mine who are sleeping",
+          "translation": "ba-ba-ana ba-taru ba-nge baa-bofu be lii-ria baa-kon-a ba-no",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (4) · Complex NP with Multiple Modifiers · Gloss: 2-2-person 2-three 2-mine 2.2-big of 5.5-respect 2.rel-sleep-fv 2-dem"
+        },
+        {
+          "english": "'big', 'small', 'tall', 'short', 'wide', 'black'",
+          "translation": "-bofu, -titi, -leyi, -imbi, -balayi, -mali, -wanga, -besemu, -kali, -kesi, -silu, -kara, -miliu, -nyalu, -siro, -angu, -chou, -khulu, -bisi, -robe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, §2.1 · Basic Adjective Roots · 'big', 'small', 'tall', 'short', 'wide', 'black', 'white', 'red', 'many', 'clever', 'stupid', 'lazy', 'clean', 'dirty', 'heavy', 'light', 'big/fully grown', 'old', 'raw/unripe', 'ripe'"
+        },
+        {
+          "english": "'closed', 'open', 'covered', 'washed', 'cooked'",
+          "translation": "-funge (< funga), -funule (< funula), -funikhe (< funikha), -singe (< singa), -tekhe (< tekha), -lekhule (< lekhula), -khalange (< khalanga), -simbe (< simba), -lume (< luma), -sye (< sya), -ake (< yaka), -male (< mala), -osye (< yosya)",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, §2.2 · Verb-Derived Adjectives (-e Suffix) · 'closed', 'open', 'covered', 'washed', 'cooked', 'free', 'fried', 'busy', 'hard', 'ground', 'weeded', 'smeared', 'roasted'"
+        },
+        {
+          "english": "'drunk', 'insipid', 'brown', 'stupid, slow', 'mature'",
+          "translation": "-mesi (< mela), -changalafu (< changalala), -randafu (< randara), -lendafu (< lendala), -angafu (< angala), -nyindafu (< nyindala), -labufu (< labukha), -khalafu (< khalala), -nefu (< nera), -balakafu (< balakala), -khandyafu (< khandyaba)",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, §2.2 · Derived Adjectives (-fu/-si) · 'drunk', 'insipid', 'brown', 'stupid, slow', 'mature', 'brave', 'dirty', 'sad', 'fat', 'dry', 'proud'"
+        },
+        {
+          "english": "1-1-person 1-1-big 'big person' / 2-2-person 2.2-big",
+          "translation": "o-mu-ndu o-mu-bofu / ba-ba-ndu baa-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (5a–b) · Noun-Adjective Concord (Classes 1–2) · 1-1-person 1-1-big 'big person' / 2-2-person 2.2-big 'big people'"
+        },
+        {
+          "english": "3-3-tree 3-3-big 'big tree' / 4-4-tree 4-4-big 'big trees'",
+          "translation": "ku-mu-sala ku-mu-bofu / ki-mi-sala ki-mi-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (6a–b) · Noun-Adjective Concord (Classes 3–4)"
+        },
+        {
+          "english": "5-5-tooth 5.5-big 'big tooth' / 6-6-tooth 6-6-big 'big",
+          "translation": "li-li-ino lii-bofu / ka-me-eno ka-ma-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (7a–b) · Noun-Adjective Concord (Classes 5–6) · 5-5-tooth 5.5-big 'big tooth' / 6-6-tooth 6-6-big 'big teeth'"
+        },
+        {
+          "english": "7-7-bead 7.7-big 'big bead' / 8.8-bead 8.8-big 'big beads'",
+          "translation": "si-sy-uma sii-bofu / bi-by-uma bii-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (8a–b) · Noun-Adjective Concord (Classes 7–8)"
+        },
+        {
+          "english": "9-9-bicycle 9-9-big 'big bicycle' / 10-10-bicycle",
+          "translation": "e-n-dika e-m-bofu / chi-n-dika chi-m-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (9a–b) · Noun-Adjective Concord (Classes 9–10) · 9-9-bicycle 9-9-big 'big bicycle' / 10-10-bicycle 10-10-big 'big bicycles'"
+        },
+        {
+          "english": "11-11-river 11.11-big 'big river' / 10-10-river",
+          "translation": "lu-lu-ichi luu-bofu / chi-nj-ichi chi-m-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (10a–b) · Noun-Adjective Concord (Classes 11/10) · 11-11-river 11.11-big 'big river' / 10-10-river 10-10-big 'big rivers'"
+        },
+        {
+          "english": "2.2-boy 'boys'",
+          "translation": "baa-soreri; lii-fumbi; sii-rekere; bii-rekere",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (15a–16b) · Prefix Haplology in Nouns · 2.2-boy 'boys'; 5.5-cloud 'cloud'; 7.7-village 'village'; 8.8-village 'villages'"
+        },
+        {
+          "english": "That blind person loves his/her child.",
+          "translation": "O-m-bofu o-yu a-siim-a o-mw-ana wewe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (17a) · Headless Adjective in Subject Position · Gloss: 1-1-blind dem-1 1-prs-love-fv 1-1-child his/hers"
+        },
+        {
+          "english": "The poor usually beg for food.",
+          "translation": "Baa-tambi ba-a-sab-ang-a byaa-khulya",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (17b) · Headless Adjective in Subject Position · Gloss: 2.2-poor 2-prs-beg-hab-fv 8.8-food"
+        },
+        {
+          "english": "3-3-tall 3-pst-break-fv 'The tall",
+          "translation": "Ku-mu-leeyi kw-a-funiikh-e. / Li-li-imbi lya-a-kw-a",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (18a–b) · Headless Adjectives (Classes 3 & 5) · 3-3-tall 3-pst-break-fv 'The tall (one) broke.' / 5-5-short 5-pst-fall-fv 'The short (one) fell.'"
+        },
+        {
+          "english": "1.Wafula 1-prs-help-hab-fv 2.2-poor 'Wafula usually",
+          "translation": "Wafula a-a-yet-ang-a baa-tambi. / Mayi a-a-kul-il-e lii.bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (19a–b) · Headless Adjectives in Object Position · 1.Wafula 1-prs-help-hab-fv 2.2-poor 'Wafula usually helps the poor.' / Mother 1-pst-buy-asp-fv 5.5-big 'Mother bought the big (one).'"
+        },
+        {
+          "english": "Wafula put the book on the big one.",
+          "translation": "Wafula a-a-r-a sii-tabu khu-mu-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (20b) · Headless Adjective as Prepositional Object · Gloss: Wafula 1-pst-put-fv 7.7-book 17-17-big"
+        },
+        {
+          "english": "Wafula 1-prs-happy-asp-fv 'Wafula is happy.' /",
+          "translation": "Wafula a-a-sangal-il-e. / Wafula a-a-suluny-e. / Wafula a-a-le-il-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (22a–c) · Stage-Level Predicates Expressed as Verbs · Wafula 1-prs-happy-asp-fv 'Wafula is happy.' / 1-prs-sad-fv 'Wafula is sad.' / 1-prs-tall-asp-fv 'Wafula has become tall.'"
+        },
+        {
+          "english": "Wafula 1-1-happy 'happy Wafula' vs. Wafula 1-be",
+          "translation": "Wafula o-mu-sangafu vs. Wafula a-li o-mu-sangafu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (23a), (24a) · Individual-Level Attributive & Predicative Adjective · Wafula 1-1-happy 'happy Wafula' vs. Wafula 1-be 1-1-happy 'Wafula is a happy person.'"
+        },
+        {
+          "english": "3-3-tree 3-be 3-3-tall 'The tree is tall.' vs",
+          "translation": "Ku-mu-sala ku-li ku-mu-leyi. vs. Ku-mu-sala kw-a-le-il-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (24b), (23d) · Individual-Level vs. Stage-Level Contrast · 3-3-tree 3-be 3-3-tall 'The tree is tall.' vs. 3-3-tree sa-prs-tall-asp-fv 'The tree has become tall.'"
+        },
+        {
+          "english": "'Wafula will be happy today.' / 'tomorrow/next week.'",
+          "translation": "Wafula a-la-saangal-a / a-kha-saangal-e / a-li-saangal-a / a-a-saangal-a",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (25a–d) · Full Tense Paradigm on Adjectival Verb sangala · 'Wafula will be happy today.' / 'tomorrow/next week.' / 'sometime in the remote future.' / 'was happy a long time ago.'"
+        },
+        {
+          "english": "...I pick the leaves from the stems.",
+          "translation": "aa-n̪ɔr-e",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (3a) / (A7) · Reference Clause (Narrative) · Gloss: narr-1sg.pick.leaves.from.stems-fv"
+        },
+        {
+          "english": "Once I have picked the leaves from the stems, I lay",
+          "translation": "N-daka-n̪ɔr-a, a-m-bagar-e",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (3b) / (A8) · Recapitulative Bridging (Immediate Perfect) · Gloss: 1sg-imm.pf-pick.leaves.from.stems-fv narr-1sg-lay.out.to.dry-fv | Once I have picked the leaves from the stems, I lay them out to dry."
+        },
+        {
+          "english": "Once I have laid them out to dry, they shrivel.",
+          "translation": "N-daka-vagar-a, a-gu-ɲar-e",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (3c) / (A9) · Recapitulative Bridging (Immediate Perfect) · Gloss: 1sg-imm.pf-lay.out.to.dry-fv narr-3-shrivel-fv"
+        },
+        {
+          "english": "They having shriveled...",
+          "translation": "Gw-aka-ɲar-a",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (3d) / (A10) · Recapitulative Bridging (Class 3) · Gloss: 3-imm.pf-shrivel-fv"
+        },
+        {
+          "english": "I've just gathered up ash,",
+          "translation": "N-daka-ŋor-a ri-gɔkɛ",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (6a) · Compressed Immediate Perfect Sequence · Gloss: 1sg-imm.pf-gather.up-fv 5-ash"
+        },
+        {
+          "english": "I've just broken the firewood in here,",
+          "translation": "n-daka-vunaɲer-a zi-ŋgu jemo",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (6b) · Compressed Immediate Perfect Sequence · Gloss: 1sg-imm.pf-break-fv 10-wood in.here"
+        },
+        {
+          "english": "in the hearth I want to start fire,",
+          "translation": "m̩ ma-ʃiga n̪en̪-aa ko-fan-a molo",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (6c) · Locative + Infinitive Complement · Gloss: in 6-oven 1sg.want-pres.fv 15-start-fv fire"
+        },
+        {
+          "english": "I've just taken a match, I've just started a fire.",
+          "translation": "n-daka-vogor-a ke-biridi, n-daka-fan-a molo",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (6d–e) · Immediate Perfect Sequence · Gloss: 1sg-imm.pf-take-fv 7-match, 1sg-imm.pf-start-fv fire"
+        },
+        {
+          "english": "then 1sg-2-wash-appl-fv '...then I wash their hands.'",
+          "translation": "ma m-ba-sav-iz-e. / N-daka-va-sav-iz-a",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (7a–b) · Irrealis + Immediate Perfect Bridging · then 1sg-2-wash-appl-fv '...then I wash their hands.' / 1sg-imm.pf-2-wash-appl-fv 'Once I have washed their hands,...'"
+        },
+        {
+          "english": "Again, in olden days, women did not have plates on",
+          "translation": "Kaande, kare, va-kere va-a-r-aŋge ne zi-sahane zja va-a-ragel-a ko daave",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (8a) · Far Past Progressive + Relative Clause · Gloss: again old 2-woman 2-fp-exist-progr with 10-plate 10.rel 2-fp-squeeze.vuchima-fv loc neg | Again, in olden days, women did not have plates on which they used to squeeze vuchima."
+        },
+        {
+          "english": "and 1-fp-return-fv 1-home '...and he returned to his",
+          "translation": "ne ji-i-ran-a je-eŋgo. / Ruwa ji-i-ran-a, ja-a-n̪ɔr-a",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (9a–b) · Marginal Bridging with ruwa 'when' · and 1-fp-return-fv 1-home '...and he returned to his home.' / when 1-fp-return-fv 1-fp-find-fv 'When he returned, he found...'"
+        },
+        {
+          "english": "We (will) start to squeeze vuchima along with my guests...",
+          "translation": "Ko-taŋg-e ko-raag-ir-a nɛɛndɛ va-geni va-aŋge",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (10b) · Comitative nɛɛndɛ + Possessive · Gloss: 1pl-begin-fv 15-squeeze.vuchima-appl-fv comit 2-guest 2-1sg.poss"
+        },
+        {
+          "english": "3-game 3-other 3-fp-call-pass-fv 10-seembe 'Another",
+          "translation": "Mu-keno gw-oonde gw-a-raŋg-w-a zi-seembe. / Zi-seembe zj-a-kob-aŋg-w-a hari ka-ɲiŋge",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (11a–b) · Nominal Repetition (Bridging NP) · 3-game 3-other 3-fp-call-pass-fv 10-seembe 'Another game was called ziseembe.' / 10-seembe 10-fp-play-progr-pass-fv time 12-many 'Ziseembe used to be played many times.'"
+        },
+        {
+          "english": "conj 2sg-find-fv loc 10-money '...and you find in it",
+          "translation": "no o-ɲor-a mo zi-seendi. / Zi-seendi zi-ra, zi-ra-ko-koɲ-a ko",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (12a–b) · Bridging NP + Near Future · conj 2sg-find-fv loc 10-money '...and you find in it money.' / 10-money 10-dem 10-nf-2pl-help-fv with 'That money, it will help you with...'"
+        },
+        {
+          "english": "...if games of Africans can be introduced to schools.",
+          "translation": "neva mi-keno ʤe ke-mwaamo ʤe-n̪ar-a ko-taŋg-iz-w-a mo zi-skuru",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (13a) · Class 4/7/10/15 Morphology · Gloss: if 4-game 4.gen 7-black 4-be.able-fv 15-begin-appl-pass-fv loc 10-school"
+        },
+        {
+          "english": "and I want to uproot my mutere,",
+          "translation": "na-n̪en̪-aa, n-zah-e, o-mo-tera, gwa-aŋge",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, App. (A2) · Procedural Text (Pre-prefix o-) · Gloss: narr-1sg.want-pres.fv 1sg-uproot-fv pre-3-tera 3-1sg.poss"
+        },
+        {
+          "english": "I will go to the farm, I go uproot rikove, [green",
+          "translation": "Man̪-a n-zj-e m̩-mo-rɛmɛ, n-zj-e kw-ah-a i-ri-kove",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, App. (A4)–(A5) · Periphrastic Future + Locative · Gloss: 1sg.want-fv 1sg-go-fv loc-3-land, 1sg-go-fv 15-uproot-fv pre-5-kove | I will go to the farm, I go uproot rikove, [green \"cowpea leaves\"]"
+        },
+        {
+          "english": "Once I have put it on the stove, then I leach soup.",
+          "translation": "N-daka-vek-a ko ma-higa, na ŋ-gerek-el-a muɲu",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, App. (A14)–(A15) · Immediate Perfect Bridging · Gloss: 1sg-imm.perf-put-fv loc 6-stove, then 1sg-leach-appl-fv 3.soup"
+        },
+        {
+          "english": "I will take the soup and put it in an earthen pot",
+          "translation": "a-m-bogor-e muɲu m-bek-e mu i-ɲiŋgu, a-m-bek-e m̩ to-ze ki-dɔɔkɔ",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, App. (A19)–(A20) · Narrative Chaining & Vocabulary · Gloss: narr-1sg-take-fv 3.soup 1sg-put-fv loc 9-earthen.pot, narr-1sg-put loc 13-water 7-little | I will take the soup and put it in an earthen pot, then I will put in it a little water a bit."
+        },
+        {
+          "english": "It will cook, then I stir in it.",
+          "translation": "A-go-ʃj-e, A-n-ʤokaɲ-e m̩",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, App. (A22)–(A23) · Narrative Sequence · Gloss: narr-3-cook-fv, narr-1sg-stir-fv loc"
         }
       ]
     },

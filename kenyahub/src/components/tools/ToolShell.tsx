@@ -755,7 +755,7 @@ export default function ToolShell({
                   </>
                 ) : (
                   <>
-                    Editorial Disclaimer: Figures and statutory schedules are provided for informational and educational planning purposes. Always verify formal filings, tax returns, or legal obligations against the latest published schedule from {tool.dataSource}.
+                    Independent Platform Disclaimer: KenyaHub is an independent private platform and is not affiliated with, endorsed by, or operating on behalf of KRA, SHA, NTSA, KPLC, PPRA, KNEC, KUCCPS, or the Government of Kenya. Figures and schedules are provided for informational planning only—always verify formal filings, tax returns, or legal obligations on the official {tool.dataSource} portal.
                   </>
                 )}
               </p>

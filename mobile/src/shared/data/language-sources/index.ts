@@ -1,3 +1,14 @@
+export type SourceCategory =
+  | 'historical-pd'
+  | 'modern-monograph'
+  | 'speech-audio'
+  | 'sign-language'
+  | 'lexicon-cldr'
+  | 'nlp-parallel'
+  | 'cldf-typology'
+  | 'wikimedia-open'
+  | 'oer-civic-agri';
+
 export interface LanguageSource {
   id: string;
   title: string;
@@ -10,6 +21,11 @@ export interface LanguageSource {
   contentTypes: ('vocabulary' | 'grammar' | 'dialogue' | 'cultural-reference')[];
   ingestionStatus: 'integrated' | 'research-only';
   coverageNote: string;
+  license?: string;
+  canonicalUrl?: string;
+  category?: SourceCategory;
+  scale?: string;
+  filterCaveat?: string;
 }
 
 /**
@@ -1157,7 +1173,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
       "dialogue"
     ],
     "ingestionStatus": "integrated",
-    "coverageNote": "Integrated across all 22 Kenyan language dictionaries with Swahili-fallback strings filtered out."
+    "coverageNote": "Integrated across all 23 Kenyan language dictionaries with Swahili-fallback strings filtered out."
   },
   {
     "id": "open-web-swadesh-comparative",
@@ -1204,7 +1220,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
       "cultural-reference"
     ],
     "ingestionStatus": "integrated",
-    "coverageNote": "Integrated across all 22 Kenyan language dictionaries and 13 interactive language courses."
+    "coverageNote": "Integrated across all 23 Kenyan language dictionaries and 13 interactive language courses."
   },
   {
     "id": "reinisch-somali-1902",
@@ -1261,7 +1277,7 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
       "kikuyu"
     ],
     "published": "1905 / 1914",
-    "contribution": "Foundational Gĩkũyũ grammatical treatises covering Dahl's Law (k -> g dissimilation), noun class concords, tense/aspect paradigms, and graded idioms by Rev. A. W. McGregor (CMS London, 1905 — https://archive.org/details/grammarofkikuyul00mcgr) and A. Ruffell Barlow (CSM Edinburgh, 1914 — https://archive.org/details/tentativestudies00barl).",
+    "contribution": "Foundational Gĩkũyũ grammatical treatises covering Dahl's Law (k -> g dissimilation), noun class concords, tense/aspect paradigms, and graded idioms by Rev. A. W. McGregor (CMS London, 1905 — https://archive.org/details/grammarofkikuyul00mcgr) and A. Ruffell Barlow (CSM Edinburgh, 1914 — McGregor (1905) Pre-1931 PD Edition Only).",
     "appUses": [
       "dictionary",
       "course lessons",
@@ -1443,6 +1459,18 @@ export const LANGUAGE_SOURCES: LanguageSource[] = [
 ];
 
 const LANGUAGE_ID_ALIASES: Record<string, string> = {
+  ksl: "ksl",
+  xki: "ksl",
+  kinubi: "nubi",
+  kcn: "nubi",
+  suba: "suba",
+  sxb: "suba",
+  kuria: "kuria",
+  kuj: "kuria",
+  dahalo: "dahalo",
+  dhl: "dahalo",
+  burji: "burji",
+  bji: "burji",
   gikuyu: "kikuyu",
   dholuo: "luo",
   luyia: "luhya",
@@ -2437,7 +2465,7 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     id: "kencorpus-text-sunbird-salt-flores-tico19",
     title: "Kencorpus Text Suite (KenPOS, KenTrans, KenSwQuAD, KenLumachiQuAD, KenSpeech Lexicon — CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), ThinkKenya / Waleghwa Parallel & Common Voice Text (CC-BY-4.0 / CC0-1.0), Sunbird AI SALT & SALT-31 (Ateso, Pokot & Swahili — CC-BY-SA-4.0), FLORES+ / SIB-200 & TICO-19 (CC0-1.0)",
     fileName: "https://huggingface.co/datasets/Kencorpus/KenPOS",
-    languages: ["swahili", "luo", "luhya", "kikuyu", "kalenjin", "taveta", "teso", "kamba", "somali", "borana"],
+    languages: ["swahili", "luo", "luhya", "kikuyu", "kalenjin", "taita", "teso", "kamba", "somali", "borana"],
     published: "2020–2026 (CC0-1.0 / Apache-2.0 / CC-BY-4.0 / CC-BY-SA-4.0)",
     contribution:
       "Comprehensive commercially permissive Kenyan text corpus collection (strictly excluding audio files, NOODL-restricted DhoNam, and CC BY-NC Leipzig Gikuyu): (1) Kencorpus Text Suite by Wanjawa et al. (2022/2023, https://aclanthology.org/2023.jlcl-2.1/, CC-BY-4.0) — Kencorpus/KenPOS (https://huggingface.co/datasets/Kencorpus/KenPOS, 143,000+ words annotated with English Universal Dependencies POS tags across Dholuo [54.7k], Lubukusu [51.9k], Lumarachi [25.9k], and Lulogooli), Kencorpus/KenTrans (https://huggingface.co/datasets/Kencorpus/KenTrans, 13,400 parallel sentences across Dholuo [4,222], Lumarachi [2,475], Lulogooli [3,692], and Lubukusu [1,406] ↔ Swahili), Kencorpus/KenSwQuAD (https://huggingface.co/datasets/Kencorpus/KenSwQuAD/tree/main, 7,537 QA pairs across 1,445 Swahili texts), KenLumachiQuAD (DOI: 10.17632/b6bybwnpxh.2, 1,000 QA pairs on 137 Lumarachi texts), and Kencorpus/KenSpeech/lexicon.csv (https://huggingface.co/datasets/Kencorpus/KenSpeech/blob/main/lexicon.csv, 1.61 MB Swahili grapheme-to-phoneme pronunciation lexicon); (2) CGIAR/KikuyuEnglish_translation by Vineet Singh (2024, https://kencorpus.ke/items/41385202-0349-4ee5-93d0-a6c8eefaf365/full & https://huggingface.co/datasets/CGIAR/KikuyuEnglish_translation, Apache-2.0, 1K–10K Kikuyu–English agricultural sentence pairs); (3) waleghwa/low-resource-language-data / thinkKenya (https://zenodo.org/records/13355021 & https://huggingface.co/datasets/thinkKenya/kenyan-low-resource-language-data, CC-BY-4.0, 91,097 parallel sentences pairing Kiswahili with Kidaw'ida [26,662], Kalenjin [35,127], and Dholuo [29,308] + 31,892 Kidaw'ida and 29,961 Kalenjin CC0-1.0 text sentences on Common Voice 25.0); (4) Sunbird AI SALT & SALT-31 (https://huggingface.co/datasets/Sunbird/salt & https://huggingface.co/datasets/Sunbird/salt-31, CC-BY-SA-4.0 / CC-BY-4.0, 25,000 English ↔ Ateso [teo] ↔ Swahili [swa] parallel sentences + 5-sentence multi-turn dialogues in Ateso and Pokot [pok]); (5) FLORES+ (https://huggingface.co/datasets/openlanguagedata/flores_plus, CC-BY-SA-4.0) & SIB-200 (CC-BY-4.0) covering 2,009 English-aligned sentences in Swahili, Kikuyu, Dholuo, Kamba, Somali, and West Central Oromo; (6) TICO-19 (https://arxiv.org/pdf/2007.01788, CC0-1.0, 3,071 English ↔ Swahili/Somali public-health sentences); and (7) PolitiKweli (https://mcaai.maseno.ac.ke/datasets, CC-BY-4.0, 6,345 Swahili–English code-switched sentences).",
@@ -2445,7 +2473,7 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     contentTypes: ["vocabulary", "grammar", "dialogue", "cultural-reference"],
     ingestionStatus: "integrated",
     coverageNote:
-      "Integrated commercially free text datasets across swahili, luo, luhya, kikuyu, kalenjin, taveta, teso, kamba, somali, and borana into dictionary-search.ts, proverbs/teso.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
+      "Integrated commercially free text datasets across swahili, luo, luhya, kikuyu, kalenjin, taita, teso, kamba, somali, and borana into dictionary-search.ts, proverbs/teso.ts, lexical-highlights.ts, catalog.ts, ethnographic-summaries.ts, and blog-posts.ts.",
   },
   {
     id: "lughagen-multilingual-kenyan-corpus-2026",
@@ -2463,12 +2491,12 @@ const _commercialTextDatasetSources: LanguageSource[] = [
   },
   {
     id: "african-next-voices-ddd-gusii-michsethowusu-ngusadeep-2026",
-    title: "African Next Voices Kenya (MCAA1-MSU/anv_data_ke — CC-BY-4.0), DDD Kenya Ekegusii Intent & Somali (CC-BY-4.0), Kikuyu & Kamba Emotion Corpora (MIT), Kikamba First Corpus (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), Swahili 12-Domain Corpus (1.69M, Apache-2.0) & Leipzig Gikuyu CURL (CC-BY)",
+    title: "African Next Voices Kenya (MCAA1-MSU/anv_data_ke — CC-BY-4.0), DDD Kenya Ekegusii Intent & Somali (CC-BY-4.0), Kikuyu & Kamba Emotion Corpora (MIT), Kikamba First Corpus (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), Swahili 12-Domain Corpus (1.69M, Apache-2.0)",
     fileName: "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke",
     languages: ["luo", "kikuyu", "somali", "kalenjin", "maasai", "kamba", "meru", "luhya", "kisii", "swahili", "taita", "pokot", "teso"],
     published: "2020–2026 (CC0-1.0 / MIT / Apache-2.0 / CC-BY-4.0)",
     contribution:
-      "Commercially permissive domain and indigenous Kenyan text corpora: (1) African Next Voices Kenya (https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke, https://huggingface.co/datasets/Anv-ke/kikuyu & https://huggingface.co/datasets/Anv-ke/Dholuo, Maseno Center for Applied AI / KenCorpus Consortium, CC-BY-4.0) covering agriculture, healthcare, mobile finance, digital government, and commerce across Dholuo, Kikuyu, Somali, Kalenjin, Maasai, Kamba, Meru, and Luhya; (2) Digital Divide Data (DDD) Kenya Indigenous Datasets (https://huggingface.co/datasets/Digital-Divide-Data/DDD-Kenya-Gusii-Intent [61,600 Ekegusii intent/text rows], https://huggingface.co/datasets/Digital-Divide-Data/Gusii-ASR-Data-Subset-470H [100K+ Ekegusii transcriptions], and DDD-Kenya-Somali-Extending-Benchmark [20,800 Somali rows], CC-BY-4.0); (3) Mich-Seth Owusu Emotion & Technical Corpora (https://huggingface.co/datasets/michsethowusu/kikuyu-emotions-corpus [34,696 MIT rows], https://huggingface.co/datasets/michsethowusu/kamba-emotions-corpus [26,394 MIT rows], https://huggingface.co/datasets/michsethowusu/kamba-kikuyu_sentence-pairs [CC-BY-4.0], and https://huggingface.co/datasets/michsethowusu/Code-170k-luo [169,000 Dholuo programming QA pairs, CC-BY-4.0]); (4) Kikamba First Open Corpus (https://huggingface.co/datasets/kndomboi/kikamba-first-corpus, Kitui Translation Team, CC-BY-4.0); (5) Swahili Corpus Dataset (https://huggingface.co/datasets/ngusadeep/Swahili-Corpus-Dataset, Samwel Ngusa et al., Mendeley Data doi:10.17632/d4yhn5b9n6.2, Apache-2.0 / CC-BY-4.0, 1,693,227 Swahili texts across 12 civic domains: Afya, Biashara, Bunge, Dini, Elimu, Habari, Kilimo, Mitandao, Mashirika ya Kiraia, Serikali, Sheria, Siasa + 18,000 Swahili-FineTome-20k STEM instructions); and (6) Leipzig Gikuyu CURL Web Corpus (https://kencorpus.ke/items/f22f815f-a9e4-49b3-af48-34d5a95af5f9, CC-BY) & Tonative XNLI Kikuyu/Luo (https://tonative.org/dataset-tools, CC-BY-4.0, 31,500 NLI records).",
+      "Commercially permissive domain and indigenous Kenyan text corpora: (1) African Next Voices Kenya (https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke, https://huggingface.co/datasets/Anv-ke/kikuyu & https://huggingface.co/datasets/Anv-ke/Dholuo, Maseno Center for Applied AI / KenCorpus Consortium, CC-BY-4.0) covering agriculture, healthcare, mobile finance, digital government, and commerce across Dholuo, Kikuyu, Somali, Kalenjin, Maasai, Kamba, Meru, and Luhya; (2) Digital Divide Data (DDD) Kenya Indigenous Datasets (https://huggingface.co/datasets/Digital-Divide-Data/DDD-Kenya-Gusii-Intent [61,600 Ekegusii intent/text rows], https://huggingface.co/datasets/Digital-Divide-Data/Gusii-ASR-Data-Subset-470H [100K+ Ekegusii transcriptions], and DDD-Kenya-Somali-Extending-Benchmark [20,800 Somali rows], CC-BY-4.0); (3) Mich-Seth Owusu Emotion & Technical Corpora (https://huggingface.co/datasets/michsethowusu/kikuyu-emotions-corpus [34,696 MIT rows], https://huggingface.co/datasets/michsethowusu/kamba-emotions-corpus [26,394 MIT rows], https://huggingface.co/datasets/michsethowusu/kamba-kikuyu_sentence-pairs [CC-BY-4.0], and https://huggingface.co/datasets/michsethowusu/Code-170k-luo [169,000 Dholuo programming QA pairs, CC-BY-4.0]); (4) Kikamba First Open Corpus (https://huggingface.co/datasets/kndomboi/kikamba-first-corpus, Kitui Translation Team, CC-BY-4.0); (5) Swahili Corpus Dataset (https://huggingface.co/datasets/ngusadeep/Swahili-Corpus-Dataset, Samwel Ngusa et al., Mendeley Data doi:10.17632/d4yhn5b9n6.2, Apache-2.0 / CC-BY-4.0, 1,693,227 Swahili texts across 12 civic domains: Afya, Biashara, Bunge, Dini, Elimu, Habari, Kilimo, Mitandao, Mashirika ya Kiraia, Serikali, Sheria, Siasa + 18,000 Swahili-FineTome-20k STEM instructions); and (6) Tonative XNLI Kikuyu/Luo (https://tonative.org/dataset-tools, CC-BY-4.0, 31,500 NLI records).",
     appUses: ["dictionary", "comparative translator", "course lessons", "grammar lessons", "blog research"],
     contentTypes: ["vocabulary", "dialogue", "grammar", "cultural-reference"],
     ingestionStatus: "integrated",
@@ -2727,6 +2755,1001 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     ],
     "ingestionStatus": "integrated",
     "coverageNote": "Vision-transcribed directly from rendered PDF page images (pp. 6, 13, 21, 33, 41, 50, 63, 91–92, 95, 105, 108, 126–127, 141, 163, 252, 265, 280, 286, 288–290, 363, 367, 394, 426–427 (PDF pp. 32, 39, 47, 59, 67, 76, 89, 119–120, 123, 133, 136, 154–155, 169, 191, 280, 293, 308, 314, 316–318, 391, 395, 422, 454–455)) and merged into KenyaHub dictionaries."
+  },
+  {
+    "id": "mozilla-common-voice-27-cc0",
+    "title": "Mozilla Common Voice 27.0 (Sept 2026 — Swahili, Dholuo, Kalenjin, Kidaw'ida/Taita & Oromo — CC0-1.0)",
+    "fileName": "https://mozilladatacollective.com/datasets/cmu5sgles002zo1071nphgtby",
+    "canonicalUrl": "https://mozilladatacollective.com/datasets/cmu5sgles002zo1071nphgtby",
+    "license": "CC0-1.0",
+    "category": "speech-audio",
+    "scale": "1,346.7 h (951k clips)",
+    "languages": [
+      "swahili",
+      "luo",
+      "kalenjin",
+      "taita",
+      "borana"
+    ],
+    "published": "2026 (CC0-1.0)",
+    "contribution": "Mozilla Data Collective Common Voice 27.0 release: Swahili (1,064.9h, incl. sw-barake & Kimvita), Dholuo (111.6h), Kalenjin (88.1h), Kidaw'ida/Taita (56.0h — only verified commercial public audio for Taita), and Afaan Oromo (26.2h).",
+    "appUses": [
+      "audio pronunciation",
+      "dictionary",
+      "course lessons"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ci-ingest-audio-and-text-r2.py (MDC v27.0 loader) and sync-cloudflare-r2-audio.mjs across swahili, luo, kalenjin, taita, and borana."
+  },
+  {
+    "id": "google-waxal-v2-ccbysa",
+    "title": "Google Research WAXAL v2.0.0 (Swahili, Kikuyu & Dholuo TTS; Oromo & Masaaba/Luhya ASR — CC-BY-SA-4.0)",
+    "fileName": "https://huggingface.co/datasets/google/WaxalNLP",
+    "canonicalUrl": "https://huggingface.co/datasets/google/WaxalNLP",
+    "license": "CC-BY-SA-4.0",
+    "category": "speech-audio",
+    "scale": "5.8k TTS · 122k Oromo ASR",
+    "filterCaveat": "mas_asr is Ugandan Masaaba (Luhya cluster), NOT Maasai (mas).",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "luo",
+      "luhya",
+      "borana"
+    ],
+    "published": "2025–2026 (CC-BY-SA-4.0)",
+    "contribution": "Studio TTS clips for Swahili (swa_tts), Kikuyu (kik_tts), and Dholuo (luo_tts) plus ASR corpora for Oromo (orm_asr_v2) and Ugandan Masaaba (mas_asr, Bukusu/Luhya cluster).",
+    "appUses": [
+      "audio pronunciation",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Ingested to Cloudflare R2 via ci-ingest-audio-and-text-r2.py with mas_asr cleanly routed to luhya (mislabeled maasai entries purged)."
+  },
+  {
+    "id": "google-fleurs-kenya",
+    "title": "Google FLEURS Speech Benchmark (Swahili, Dholuo, Kamba, Somali & Oromo — CC-BY-4.0)",
+    "fileName": "https://huggingface.co/datasets/google/fleurs",
+    "canonicalUrl": "https://huggingface.co/datasets/google/fleurs",
+    "license": "CC-BY-4.0",
+    "category": "speech-audio",
+    "scale": "~55 h English-aligned speech",
+    "languages": [
+      "swahili",
+      "luo",
+      "kamba",
+      "somali",
+      "borana"
+    ],
+    "published": "2022–2026 (CC-BY-4.0)",
+    "contribution": "English-aligned read-speech corpus covering sw_ke, luo_ke, kam_ke, so_so, and om_et.",
+    "appUses": [
+      "audio pronunciation",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Ingested via Parquet revision in ci-ingest-audio-and-text-r2.py across swahili, luo, kamba, somali, and borana."
+  },
+  {
+    "id": "kencorpus-audio-204h",
+    "title": "KenCorpus Audio (204h Dholuo, Luhya & Swahili) & KenSpeech (27.5h Kenyan Swahili + 31.7k Phoneme Lexicon — CC-BY-4.0)",
+    "fileName": "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio",
+    "canonicalUrl": "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio",
+    "license": "CC-BY-4.0",
+    "category": "speech-audio",
+    "scale": "231.5 h + 31.7k phoneme lexicon",
+    "languages": [
+      "luo",
+      "luhya",
+      "swahili"
+    ],
+    "published": "2022–2026 (CC-BY-4.0)",
+    "contribution": "Only verified commercial public Luhya speech corpus (58.3h: Lubukusu 30.2h, Lumarachi, Logooli 12.4h) alongside 99.1h Dholuo and 27.5h Kenyan Swahili.",
+    "appUses": [
+      "audio pronunciation",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired with raw-bytes ffmpeg transcoding in ci-ingest-audio-and-text-r2.py for swahili, luo, and luhya."
+  },
+  {
+    "id": "clear-global-bibletts-luo-kik",
+    "title": "CLEAR Global / Masakhane BibleTTS Studio Audio (Dholuo 77.4h & Kikuyu 90.6h — CC-BY-SA-4.0)",
+    "fileName": "https://huggingface.co/datasets/CLEAR-Global/BibleTTS-Luo",
+    "canonicalUrl": "https://huggingface.co/datasets/CLEAR-Global/BibleTTS-Luo",
+    "license": "CC-BY-SA-4.0",
+    "category": "speech-audio",
+    "scale": "168.0 h studio 24kHz TTS",
+    "filterCaveat": "Open.Bible liturgical register; ShareAlike applies.",
+    "languages": [
+      "luo",
+      "kikuyu"
+    ],
+    "published": "2022–2026 (CC-BY-SA-4.0)",
+    "contribution": "High-clarity 24kHz studio single-speaker TTS recordings in Dholuo (CLEAR-Global/BibleTTS-Luo) and Kikuyu (masakhane-io/bibleTTS).",
+    "appUses": [
+      "audio pronunciation"
+    ],
+    "contentTypes": [
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Dholuo ingested to R2 and Kikuyu direct archive wired in ci-ingest-audio-and-text-r2.py and sync-cloudflare-r2-audio.mjs."
+  },
+  {
+    "id": "openslr-slr25-makerere-rono-lingualibre-edacc",
+    "title": "OpenSLR SLR25 (MIT), Makerere & Rono Swahili TTS (CC-BY-4.0), Lingua Libre Swahili & EdAcc Kenyan English (CC-BY-SA-4.0)",
+    "fileName": "https://www.openslr.org/25/",
+    "canonicalUrl": "https://www.openslr.org/25/",
+    "license": "MIT / CC-BY-4.0 / CC-BY-SA-4.0",
+    "category": "speech-audio",
+    "scale": "40h EdAcc + Swahili TTS & single-word pronunciations",
+    "languages": [
+      "swahili"
+    ],
+    "published": "2016–2026 (MIT / CC-BY-4.0 / CC-BY-SA-4.0)",
+    "contribution": "Direct commercial Swahili speech archives (OpenSLR SLR25 ALFFA, Makerere Mendeley nb8b25h9nj/3, Rono Mendeley rbn6nmygcn/1), Wikimedia Commons Lingua Libre single-word Swahili pronunciations, and EdAcc Kenyan English (commercial replacement for NC AfriSpeech-200).",
+    "appUses": [
+      "audio pronunciation",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ci-ingest-audio-and-text-r2.py and sync-cloudflare-r2-audio.mjs."
+  },
+  {
+    "id": "maseno-ksl-pose-open-sign-bibles-xki",
+    "title": "Kenyan Sign Language (xki): Maseno KSL Word-Based Pose Dataset (Zenodo 14338329 Open Access, CC-BY-4.0) & Open Sign Bibles (CC-BY-SA-4.0)",
+    "fileName": "https://zenodo.org/records/14338329",
+    "canonicalUrl": "https://zenodo.org/records/14338329",
+    "license": "CC-BY-4.0 / CC-BY-SA-4.0",
+    "category": "sign-language",
+    "scale": "30,000 pose recordings (57 GB) + xki sign corpus",
+    "languages": [
+      "ksl"
+    ],
+    "published": "2025–2026 (CC-BY-4.0 / CC-BY-SA-4.0)",
+    "contribution": "First commercially permissive Kenyan Sign Language (xki) datasets: Maseno KSL anonymized MediaPipe stickman videos + .npy pose keypoints (30,000 recordings) and Open Sign Bibles xki subset.",
+    "appUses": [
+      "sign language reference",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ci-ingest-audio-and-text-r2.py (ksl-index.json) and language-typology/profiles.json under staging key 'ksl' (xki)."
+  },
+  {
+    "id": "unicode-cldr-49-kenya",
+    "title": "Unicode CLDR 49 Kenyan Locales (16 Locales: en-KE, sw-KE, so-KE, om-KE, ki, dav, ebu, mas, luy, teo, guz, kam, kln, luo, mer, saq — Unicode-3.0)",
+    "fileName": "https://github.com/unicode-org/cldr-json",
+    "canonicalUrl": "https://github.com/unicode-org/cldr-json",
+    "license": "Unicode-3.0",
+    "category": "lexicon-cldr",
+    "scale": "16 Kenyan locales (Kikuyu 100% Basic in v49)",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana",
+      "kikuyu",
+      "taita",
+      "embu",
+      "maasai",
+      "luhya",
+      "teso",
+      "kisii",
+      "kamba",
+      "kalenjin",
+      "luo",
+      "meru",
+      "samburu"
+    ],
+    "published": "2026 (Unicode-3.0)",
+    "contribution": "Official Unicode CLDR 49 locale data covering calendar days/months, exemplar orthography characters, plural rules, number formatting, and KES currency symbols across all 16 Kenyan locales.",
+    "appUses": [
+      "dictionary",
+      "localization",
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (cldr-49-kenya.json + dictionary time category) and language-typology/profiles.json."
+  },
+  {
+    "id": "kaikki-raw-wiktextract-kenya-multi",
+    "title": "Kaikki.org Raw Wiktextract Dump (Oromo, Somali, Sheng, Kamba, Luhya, Nubi, Maasai, Suba, Rendille, Taita, Daasanach & Kuria — CC-BY-SA-4.0)",
+    "fileName": "https://kaikki.org/dictionary/rawdata.html",
+    "canonicalUrl": "https://kaikki.org/dictionary/rawdata.html",
+    "license": "CC-BY-SA-4.0",
+    "category": "lexicon-cldr",
+    "scale": "24.8 GB raw dump stream-filtered to 12+ Kenyan varieties",
+    "filterCaveat": "Stream-filter single raw dump; per-language Kaikki URLs are deprecated.",
+    "languages": [
+      "borana",
+      "somali",
+      "swahili",
+      "kamba",
+      "luhya",
+      "nubi",
+      "maasai",
+      "suba",
+      "rendille",
+      "taita",
+      "daasanach",
+      "kuria"
+    ],
+    "published": "2026 (CC-BY-SA-4.0)",
+    "contribution": "Machine-readable Wiktionary extracts including IPA transcriptions, glosses, and Swahili Sheng tags across 12+ Kenyan languages.",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (--include-kaikki-raw streaming filter)."
+  },
+  {
+    "id": "open-dict-ipa-dict-sw",
+    "title": "open-dict-data/ipa-dict Swahili Phonemic Pronunciations (16,743 IPA Entries — MIT)",
+    "fileName": "https://github.com/open-dict-data/ipa-dict",
+    "canonicalUrl": "https://github.com/open-dict-data/ipa-dict",
+    "license": "MIT",
+    "category": "lexicon-cldr",
+    "scale": "16,743 IPA entries",
+    "languages": [
+      "swahili"
+    ],
+    "published": "2024–2026 (MIT)",
+    "contribution": "Open-source IPA pronunciation dictionary enriching Swahili dictionary headwords with standardized phonemic transcriptions.",
+    "appUses": [
+      "dictionary",
+      "pronunciation"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Actively ingested into swahili.json by ingest-external-datasets.mjs."
+  },
+  {
+    "id": "ai4agric-mt-eng-swa-kik-kln",
+    "title": "AI4Agric Agronomy Parallel Corpora (MT-Eng-Swa 52,170 Pairs + Kikuyu & Kalenjin Siblings — CC-BY-4.0)",
+    "fileName": "https://huggingface.co/datasets/AI4Agric/MT-Eng-Swa",
+    "canonicalUrl": "https://huggingface.co/datasets/AI4Agric/MT-Eng-Swa",
+    "license": "CC-BY-4.0",
+    "category": "nlp-parallel",
+    "scale": "52,170+ English-Swahili/Kikuyu/Kalenjin agronomy pairs",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "kalenjin"
+    ],
+    "published": "2025–2026 (CC-BY-4.0)",
+    "contribution": "High-domain Kenyan agricultural extension translation corpus covering crop husbandry, livestock, and rural advisory vocabulary.",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py and ingest-external-datasets.mjs (requires HF_TOKEN gated acceptance)."
+  },
+  {
+    "id": "masakhane-clean-commercial-suite-2026",
+    "title": "Masakhane Clean Commercial Benchmark Suite (AfriMMLU, AfriMGSM, AfriXNLI, InjongoIntent, AfrIFact, Uhura-TruthfulQA & Uhura-ARC-Easy — Apache-2.0 / MIT / CC-BY-4.0)",
+    "fileName": "https://huggingface.co/datasets/masakhane/afrixnli",
+    "canonicalUrl": "https://huggingface.co/datasets/masakhane/afrixnli",
+    "license": "Apache-2.0 / MIT / CC-BY-4.0",
+    "category": "nlp-parallel",
+    "scale": "7 verified commercial NLP evaluation benchmarks",
+    "filterCaveat": "Strictly excludes NC Masakhane repos (MasakhaNER2, MasakhaNEWS, MasakhaPOS, AfriQA, MAFAND, AfriDocMT, AfriSenti).",
+    "languages": [
+      "swahili",
+      "borana"
+    ],
+    "published": "2024–2026 (Apache-2.0 / MIT / CC-BY-4.0)",
+    "contribution": "All 7 verified commercial-license Masakhane benchmarks for Swahili and Oromo reasoning, intent classification, factuality, and NLI.",
+    "appUses": [
+      "nlp benchmarks",
+      "course lessons"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (--include-benchmarks -> src/data/benchmarks/)."
+  },
+  {
+    "id": "cohere-aya-afrihate-tabularis-sheng-2026",
+    "title": "Cohere Aya (Apache-2.0), AfriHate, TabularisAI Swahili Sentiment, Swahili-FineTome-20k, Strathmore Sheng Mental Health (Zenodo 14637639) & EA Mobile-Money Safety Audit (CC-BY-4.0)",
+    "fileName": "https://huggingface.co/datasets/CohereLabs/aya_dataset",
+    "canonicalUrl": "https://huggingface.co/datasets/CohereLabs/aya_dataset",
+    "license": "Apache-2.0 / CC-BY-4.0",
+    "category": "nlp-parallel",
+    "scale": "Instruction, sentiment, moderation & Sheng safety corpora",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana"
+    ],
+    "published": "2024–2026 (Apache-2.0 / CC-BY-4.0)",
+    "contribution": "Commercial instruction-tuning, hate-speech moderation, sentiment, and Kenyan Sheng safety/mental-health datasets (strictly excluding NC regnant-io/swahili-instruction-22k and BlakHasan Sheng).",
+    "appUses": [
+      "nlp benchmarks",
+      "safety & moderation"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (--include-benchmarks -> src/data/benchmarks/)."
+  },
+  {
+    "id": "fineweb2-madlad400-hplt3-wura-culturax-filtered",
+    "title": "Filtered Monolingual Frequency Corpora: FineWeb-2, MADLAD-400, HPLT v3.0, WURA & CulturaX (ODC-By / CC0 / Apache-2.0)",
+    "fileName": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+    "canonicalUrl": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+    "license": "ODC-By / CC0-1.0 / Apache-2.0",
+    "category": "nlp-parallel",
+    "scale": "Frequency-list extraction across 9 Kenyan languages",
+    "filterCaveat": "Strips jw.org and bible.com domains; extracts token frequencies only (never verbatim web-page re-hosting).",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana",
+      "kikuyu",
+      "luo",
+      "kamba",
+      "kisii",
+      "maasai",
+      "teso"
+    ],
+    "published": "2023–2026 (ODC-By / CC0-1.0 / Apache-2.0)",
+    "contribution": "Large-scale web corpora filtered via license_guard.py to generate vocabulary frequency lists for Kenyan language learners.",
+    "appUses": [
+      "vocabulary frequency",
+      "course design"
+    ],
+    "contentTypes": [
+      "vocabulary"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (--build-freq-lists)."
+  },
+  {
+    "id": "opus-wikimedia-luo-somali-mbogho-parallel",
+    "title": "Secular Parallel Corpora: OPUS Wikimedia en-sw (CC-BY-SA), en-luo OPUS Secular, haajidheere Somali-Dictionary (239k), tufaax en-so 8k & Mbogho Zenodo 13355021 (CC-BY-4.0)",
+    "fileName": "https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k",
+    "canonicalUrl": "https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k",
+    "license": "CC-BY-4.0 / CC-BY-SA-4.0",
+    "category": "nlp-parallel",
+    "scale": "239k Somali + 8.9k en-so + 23.7k en-sw + ~90k Kenyan parallel",
+    "filterCaveat": "en-luo OPUS strips Bible & JW300 rows via is_secular_opus_luo_row(); Mbogho deduplicated against ThinkKenya.",
+    "languages": [
+      "swahili",
+      "luo",
+      "somali",
+      "taita",
+      "kalenjin"
+    ],
+    "published": "2023–2026 (CC-BY-4.0 / CC-BY-SA-4.0)",
+    "contribution": "Verified bilingual sentence and dictionary pairs expanding Swahili, Dholuo, Somali, Kidaw'ida/Taita, and Kalenjin dictionaries.",
+    "appUses": [
+      "dictionary",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py with secular OPUS filtering."
+  },
+  {
+    "id": "cldf-grambank-wals-phoible-glottolog-2026",
+    "title": "CLDF Typology & Phonology Core: Glottolog 5.4, Grambank (195 Features), WALS (192 Features) & PHOIBLE 2.0 IPA Inventories (CC-BY-4.0 / CC-BY-SA-3.0)",
+    "fileName": "https://github.com/grambank/grambank",
+    "canonicalUrl": "https://github.com/grambank/grambank",
+    "license": "CC-BY-4.0 / CC-BY-SA-3.0",
+    "category": "cldf-typology",
+    "scale": "40+ Kenyan languoids · 387 typological features + IPA inventories",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "luo",
+      "luhya",
+      "kamba",
+      "kalenjin",
+      "kisii",
+      "meru",
+      "somali",
+      "maasai",
+      "turkana",
+      "mijikenda",
+      "teso",
+      "embu",
+      "taita",
+      "taveta",
+      "pokomo",
+      "borana",
+      "rendille",
+      "samburu",
+      "ilchamus",
+      "pokot",
+      "daasanach",
+      "ksl",
+      "nubi",
+      "suba",
+      "kuria",
+      "dahalo",
+      "burji"
+    ],
+    "published": "2023–2026 (CC-BY-4.0 / CC-BY-SA-3.0)",
+    "contribution": "Authoritative Glottolog 5.4 family trees & glottocodes, Grambank & WALS grammatical typology matrices, and PHOIBLE 2.0 IPA phoneme inventories (including Rendille 33 segments, Burji 36 segments, Ilchamus).",
+    "appUses": [
+      "grammar lessons",
+      "typology profiles",
+      "phonology"
+    ],
+    "contentTypes": [
+      "grammar",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Seeded in src/data/language-typology/profiles.json and wired into scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "cldf-lexibank2-numeralbank-ids-clics3-2026",
+    "title": "CLDF Lexical & Comparative Spine: Lexibank 2 (Filtered), Numeralbank (Chan), IDS, CLICS3, D-PLACE, Concepticon 3.4.1, AfBo 2.0 & UniMorph Swahili swc (CC-BY-4.0 / CC-BY-SA-3.0)",
+    "fileName": "https://github.com/lexibank/lexibank-analysed",
+    "canonicalUrl": "https://github.com/lexibank/lexibank-analysed",
+    "license": "CC-BY-4.0 / CC-BY-SA-3.0",
+    "category": "cldf-typology",
+    "scale": "1.74M IPA lexemes · 187k numerals · 14,130 Swahili inflections",
+    "filterCaveat": "Strictly filters out NC/unclear Lexibank constituents (grollemundbantu, tls) and blocks NC unimorph/orm.",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "luo",
+      "luhya",
+      "kamba",
+      "kalenjin",
+      "kisii",
+      "meru",
+      "somali",
+      "maasai",
+      "turkana",
+      "teso",
+      "taita",
+      "taveta",
+      "pokomo",
+      "borana",
+      "rendille",
+      "samburu",
+      "suba",
+      "kuria",
+      "dahalo"
+    ],
+    "published": "2022–2026 (CC-BY-4.0 / CC-BY-SA-3.0)",
+    "contribution": "Cross-linguistic IPA wordlists, counting systems (incl. Suba suba1254 & Taveta), Concepticon semantic alignment, colexification graphs, D-PLACE ethnography, AfBo affix borrowing, and 14,130 UniMorph Swahili inflections.",
+    "appUses": [
+      "dictionary",
+      "grammar lessons",
+      "comparative translator"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-cldf-wikimedia-civic.py with hard constituent filtering."
+  },
+  {
+    "id": "cldf-apics-kinubi-63",
+    "title": "APiCS Online: Kinubi / Kenyan Nubi (#63 — 130 Typological Features, IPA & Glossed Texts — CC-BY-4.0)",
+    "fileName": "https://apics-online.info/contributions/63",
+    "canonicalUrl": "https://apics-online.info/contributions/63",
+    "license": "CC-BY-4.0",
+    "category": "cldf-typology",
+    "scale": "130 features + 59.3 KB glossed texts",
+    "languages": [
+      "nubi"
+    ],
+    "published": "2013–2026 (CC-BY-4.0)",
+    "contribution": "Comprehensive typological survey, IPA phonology, and interlinear glossed texts for Kenyan Nubi (kcn, Kibera & Mombasa).",
+    "appUses": [
+      "typology profiles",
+      "grammar lessons"
+    ],
+    "contentTypes": [
+      "grammar",
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Registered in language-typology/profiles.json under staging key 'nubi' (kcn) and wired into ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "wikidata-tatoeba-wikimedia-freedict-kenya",
+    "title": "Wikimedia & Open Lexicons: Wikidata Lexemes (CC0), Tatoeba Text-Only (CC-BY-2.0), Kenyan Wikipedias, Native Wiktionaries, Swahili Wikisource, Incubator (Wp/luo, Wp/niq) & FreeDict",
+    "fileName": "https://www.wikidata.org/wiki/Wikidata:Lexicographical_data/Statistics/Count_of_lexemes_by_language",
+    "canonicalUrl": "https://www.wikidata.org/wiki/Wikidata:Lexicographical_data/Statistics/Count_of_lexemes_by_language",
+    "license": "CC0-1.0 / CC-BY-2.0 / CC-BY-SA-4.0",
+    "category": "wikimedia-open",
+    "scale": "366 Wikidata lexemes · 154k Wiki articles · 163k Wiktionary entries",
+    "filterCaveat": "Tatoeba uses text exports only (NC/ND audio excluded); Apertium swa (GPL-3.0) isolated as external microservice.",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana",
+      "kikuyu",
+      "luo",
+      "kalenjin",
+      "kisii",
+      "kamba",
+      "rendille",
+      "pokot",
+      "ksl"
+    ],
+    "published": "2026 (CC0-1.0 / CC-BY-2.0 / CC-BY-SA-4.0)",
+    "contribution": "Open Wikimedia lexicographical, encyclopedic, and parallel-sentence resources across Kenyan languages.",
+    "appUses": [
+      "dictionary",
+      "comparative translator",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-cldf-wikimedia-civic.py and ingest-permissive-text-datasets.py."
+  },
+  {
+    "id": "oer-storybooks-asb-glotstorybook-storyweaver-bloom-ccby",
+    "title": "OER Graded Readers (Filtered CC-BY/CC0 Only): African Storybook (5,503), GlotStoryBook (79.1k), StoryWeaver (12.5k), Global ASP, Global Digital Library & SIL-AI Bloom",
+    "fileName": "https://www.africanstorybook.org/",
+    "canonicalUrl": "https://www.africanstorybook.org/",
+    "license": "CC-BY-4.0 / CC-BY-SA-4.0 / CC0-1.0",
+    "category": "oer-civic-agri",
+    "scale": "97k+ multilingual graded reader rows (filtered)",
+    "filterCaveat": "Row-level license_guard.py filter strictly drops all CC-BY-NC*, CC-BY-ND*, and Nal'ibali rows.",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "luo",
+      "kisii",
+      "kamba",
+      "kalenjin",
+      "turkana",
+      "somali",
+      "borana",
+      "maasai",
+      "samburu",
+      "luhya"
+    ],
+    "published": "2020–2026 (CC-BY-4.0 / CC0-1.0 filtered)",
+    "contribution": "Graded children's and early-learner reading passages in 12+ Kenyan languages for reading comprehension practice.",
+    "appUses": [
+      "graded readers",
+      "course lessons"
+    ],
+    "contentTypes": [
+      "dialogue",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into ingest-permissive-text-datasets.py (--include-oer -> src/data/readers/) with strict NC/ND/nalibali stripping."
+  },
+  {
+    "id": "civic-agri-hdx-rkenyacensus-kenyageo-katiba-helmets",
+    "title": "Kenyan Civic, Demographic & Agricultural Open Data: CLEAR Global HDX, rKenyaCensus (MIT), kenya-geo (MIT), Constitution of Kenya 2010 (Raw Statutory Text), Helmets Crop v2 & CGIAR CGSpace",
+    "fileName": "https://data.humdata.org/es/dataset/kenya-languages",
+    "canonicalUrl": "https://data.humdata.org/es/dataset/kenya-languages",
+    "license": "MIT / CC-BY-4.0 / Statutory No Copyright",
+    "category": "oer-civic-agri",
+    "scale": "47 counties · 290 constituencies · 1,450 wards · 264 Katiba Articles",
+    "filterCaveat": "Constitution 2010 uses raw Parliament statutory text only — never Kenya Law / Laws.Africa CC-BY-NC-SA-4.0 PDFs.",
+    "languages": [
+      "swahili",
+      "kikuyu",
+      "luo",
+      "luhya",
+      "kamba",
+      "kalenjin",
+      "kisii",
+      "meru",
+      "somali",
+      "maasai",
+      "turkana",
+      "mijikenda",
+      "teso",
+      "embu",
+      "taita",
+      "taveta",
+      "pokomo",
+      "borana",
+      "rendille",
+      "samburu",
+      "ilchamus",
+      "pokot",
+      "daasanach"
+    ],
+    "published": "2010–2026 (MIT / CC-BY-4.0 / Statutory)",
+    "contribution": "County-level language prevalence, administrative geography, bilingual English-Kiswahili constitutional terminology, and Kenyan crop/agronomy reference datasets.",
+    "appUses": [
+      "counties directory",
+      "civic reference",
+      "dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Wired into scripts/ingest-cldf-wikimedia-civic.py (civic/open-datasets-manifest.json)."
+  },
+  {
+    "id": "langsci-120-kuria-lubukusu-2018",
+    "title": "African Linguistics on the Prairie: Selected Papers from ACAL 45 (Kuria & Lubukusu Chapters)",
+    "fileName": "https://langsci-press.org/catalog/book/120",
+    "canonicalUrl": "https://langsci-press.org/LangSci-Press/catalog/view/120/1333/1111",
+    "languages": [
+      "luhya",
+      "kuria"
+    ],
+    "published": "2018 (Language Science Press #120)",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "contribution": "Kuria (kuj) and Lubukusu (bxk) focus marking, tense-aspect, and interlinear sentence paradigms.",
+    "appUses": [
+      "Luhya phrase corpus",
+      "Kuria staging dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "52 verified Kuria (staged in dictionaries/staging/kuria.json) and Lubukusu (luhya.json) entries ingested."
+  },
+  {
+    "id": "langsci-216-logoori-2019",
+    "title": "Theory and Description in African Linguistics: ACAL 47 (Logoori / Maragoli Chapter)",
+    "fileName": "https://langsci-press.org/LangSci-Press/catalog/view/216/1765/1386-1",
+    "canonicalUrl": "https://langsci-press.org/LangSci-Press/catalog/view/216/1765/1386-1",
+    "languages": [
+      "luhya"
+    ],
+    "published": "2019 (Language Science Press #216)",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "contribution": "Logoori / Maragoli (rag) narrative clauses and phonological transcriptions.",
+    "appUses": [
+      "Luhya phrase corpus"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "20 verified Logoori/Maragoli (rag) entries ingested into luhya.json."
+  },
+  {
+    "id": "langsci-306-ekegusii-2022",
+    "title": "Descriptive and Theoretical Approaches to African Linguistics: ACAL 49 (Ch. 4 Ekegusii)",
+    "fileName": "https://zenodo.org/record/6393740/files/306-Sibanda-2022-4.pdf?download=1",
+    "canonicalUrl": "https://zenodo.org/record/6393740/files/306-Sibanda-2022-4.pdf?download=1",
+    "languages": [
+      "kisii"
+    ],
+    "published": "2022 (Language Science Press #306)",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "contribution": "Ekegusii (guz) noun-class augment paradigms, gerund/infinitive structures, and traditional proverbs.",
+    "appUses": [
+      "Kisii phrase corpus",
+      "Kisii proverbs collection"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "23 verified Ekegusii entries ingested into kisii.json and proverbs/kisii.ts."
+  },
+  {
+    "id": "langsci-427-kenyan-maay-2024",
+    "title": "Prosodic and Tonal Features of Kenyan Maay (Dadaab Variety) — Language Science Press #427",
+    "fileName": "https://zenodo.org/records/11091843/files/427-GreenLotven-2024-13.pdf?download=1",
+    "canonicalUrl": "https://zenodo.org/records/11091843/files/427-GreenLotven-2024-13.pdf?download=1",
+    "languages": [
+      "maay",
+      "somali"
+    ],
+    "published": "2024 (Green & Lotven, Language Science Press #427)",
+    "license": "CC-BY-4.0",
+    "category": "modern-monograph",
+    "contribution": "Dadaab Kenyan Maay (ymm) tonal minimal pairs and lexical documentation.",
+    "appUses": [
+      "Kenyan Maay staging dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "17 verified Kenyan Maay entries expanded into dictionaries/staging/maay.json."
+  },
+  {
+    "id": "smee-east-coast-vocab-1844",
+    "title": "Specimens of Different Languages Used on the East Coast of Africa (Souallie, Soomallie & Galla)",
+    "fileName": "https://archive.org/details/transactionsofbo1841bomb/page/51/mode/1up",
+    "canonicalUrl": "https://archive.org/details/transactionsofbo1841bomb/page/51/mode/1up",
+    "languages": [
+      "swahili",
+      "somali",
+      "borana"
+    ],
+    "published": "1844 (Capt. Thomas Smee, Trans. Bombay Geog. Soc. Vol. VI, pp. 51–55)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Earliest 1844 comparative Swahili, Somali, and Oromo/Galla vocabulary from the East African coast.",
+    "appUses": [
+      "Swahili historical corpus",
+      "Somali historical corpus",
+      "Borana/Oromo historical corpus"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "156 comparative rows (pp. 51–55) unpivoted across swahili.json, somali.json, and borana.json."
+  },
+  {
+    "id": "rigby-red-sea-gulf-aden-1844",
+    "title": "Specimen of the Languages Spoken on the Western Shore of the Red Sea and Gulf of Aden",
+    "fileName": "https://archive.org/details/transactionsofbo1841bomb/page/93/mode/1up",
+    "canonicalUrl": "https://archive.org/details/transactionsofbo1841bomb/page/93/mode/1up",
+    "languages": [
+      "somali",
+      "borana"
+    ],
+    "published": "1844 (Lt. C. P. Rigby, Trans. Bombay Geog. Soc. Vol. VI, pp. 93–94)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "1844 comparative Somauli (Somali) and Galla (Oromo) lexical specimens.",
+    "appUses": [
+      "Somali historical corpus",
+      "Borana/Oromo historical corpus"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "86 comparative rows unpivoted for non-blank Somali and Oromo/Borana slots."
+  },
+  {
+    "id": "hobley-baringo-district-1906",
+    "title": "Notes on the Geography and People of the Baringo District of the East Africa Protectorate",
+    "fileName": "https://zenodo.org/records/1793399/files/article.pdf",
+    "canonicalUrl": "https://zenodo.org/records/1793399/files/article.pdf",
+    "languages": [
+      "turkana",
+      "pokot",
+      "ilchamus",
+      "maasai",
+      "kalenjin"
+    ],
+    "published": "1906 (C. W. Hobley, Geographical Journal Vol. 28, pp. 471–481)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Baringo District ethnographic and toponymic records across Turkana, Pokot, Ilchamus, Maasai, and Ogiek.",
+    "appUses": [
+      "Rift Valley cultural-history dictionaries"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "13 verified Baringo District entries ingested across Rift Valley language dictionaries."
+  },
+  {
+    "id": "kr-dundas-kikuyu-calendar-1909",
+    "title": "19. Kikuyu Calendar",
+    "fileName": "https://zenodo.org/records/2359285/files/article.pdf",
+    "canonicalUrl": "https://zenodo.org/records/2359285/files/article.pdf",
+    "languages": [
+      "kikuyu"
+    ],
+    "published": "1909 (K. R. Dundas, Man Vol. 9)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Traditional Agĩkũyũ lunar-seasonal calendar and agricultural time vocabulary.",
+    "appUses": [
+      "Kikuyu time & calendar dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "13 verified Kikuyu seasonal and month entries ingested into kikuyu.json."
+  },
+  {
+    "id": "c-dundas-history-of-kitui-1913",
+    "title": "History of Kitui",
+    "fileName": "https://zenodo.org/records/2389049/files/article.pdf",
+    "canonicalUrl": "https://zenodo.org/records/2389049/files/article.pdf",
+    "languages": [
+      "kamba"
+    ],
+    "published": "1913 (Hon. Charles Dundas, JRAI Vol. 43)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Kitui and Machakos Kĩkamba historical, clan, and cultural vocabulary.",
+    "appUses": [
+      "Kamba cultural-history dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "21 verified Kitui/Machakos Kamba entries ingested into kamba.json."
+  },
+  {
+    "id": "johnstone-mombasa-tribes-1902",
+    "title": "Notes on the Customs of the Tribes Occupying Mombasa Sub-District, British East Africa",
+    "fileName": "https://zenodo.org/record/2252150/files/article.pdf",
+    "canonicalUrl": "https://zenodo.org/record/2252150/files/article.pdf",
+    "languages": [
+      "mijikenda"
+    ],
+    "published": "1902 (H. B. Johnstone, JRAI Vol. 32)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Mombasa sub-district Mijikenda (Duruma, Digo, Rabai) ethnographic terminology.",
+    "appUses": [
+      "Mijikenda cultural-history dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "7 verified Mombasa sub-district Mijikenda entries ingested into mijikenda.json."
+  },
+  {
+    "id": "phillipson-notes-on-galla-1916",
+    "title": "Notes on the Galla",
+    "fileName": "https://zenodo.org/records/2463127/files/article.pdf",
+    "canonicalUrl": "https://zenodo.org/records/2463127/files/article.pdf",
+    "languages": [
+      "borana"
+    ],
+    "published": "1916 (J. H. Phillipson, Man Vol. 16)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Tana River Orma / Galla cultural and linguistic notes.",
+    "appUses": [
+      "Borana/Orma cultural-history dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "3 verified Tana River Orma entries ingested into borana.json."
+  },
+  {
+    "id": "arkell-hardwick-north-kenia-1903",
+    "title": "An Ivory Trader in North Kenia: The Record of an Expedition Through Kikuyu to Galla-Land",
+    "fileName": "https://archive.org/stream/anivorytraderin00hardgoog/anivorytraderin00hardgoog_djvu.txt",
+    "canonicalUrl": "https://archive.org/stream/anivorytraderin00hardgoog/anivorytraderin00hardgoog_djvu.txt",
+    "languages": [
+      "rendille",
+      "samburu",
+      "borana"
+    ],
+    "published": "1903 (A. Arkell-Hardwick, Longmans, Green & Co.)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Northern Kenya Rendille, Samburu, and Borana expedition lexical and ethnographic notes.",
+    "appUses": [
+      "Northern Kenya cultural-history dictionaries"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Verified Northern Kenya terms ingested across rendille.json, samburu.json, and borana.json."
+  },
+  {
+    "id": "hohnel-lakes-rudolf-stefanie-1894-vol2",
+    "title": "Discovery of Lakes Rudolf and Stefanie, Vol. II",
+    "fileName": "https://archive.org/stream/discoveryoflakes02hhne/discoveryoflakes02hhne_djvu.txt",
+    "canonicalUrl": "https://archive.org/stream/discoveryoflakes02hhne/discoveryoflakes02hhne_djvu.txt",
+    "languages": [
+      "rendille",
+      "samburu",
+      "ilchamus",
+      "daasanach",
+      "pokot"
+    ],
+    "published": "1894 (Lieut. Ludwig von Höhnel, Vol. II)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Vol. II Lake Turkana / Northern Kenya lexical and ethnographic records.",
+    "appUses": [
+      "Northern Kenya cultural-history dictionaries"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "Verified Vol. II terms ingested across rendille, samburu, ilchamus, daasanach, and pokot dictionaries."
+  },
+  {
+    "id": "amery-sudan-arabic-1905",
+    "title": "English-Arabic Vocabulary for the Use of Officials in the Anglo-Egyptian Sudan (Kinubi Lexical Parent)",
+    "fileName": "https://archive.org/stream/englisharabicvoc00ameriala/englisharabicvoc00ameriala_djvu.txt",
+    "canonicalUrl": "https://archive.org/stream/englisharabicvoc00ameriala/englisharabicvoc00ameriala_djvu.txt",
+    "languages": [
+      "nubi"
+    ],
+    "published": "1905 (Capt. H. F. S. Amery, Cairo)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "Sudan Arabic lexical parent vocabulary and colloquial specimens for Kenyan Kinubi (kcn).",
+    "appUses": [
+      "Kinubi staging dictionary"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "221 verified Sudan Arabic entries staged in dictionaries/staging/nubi.json with Arabic script in context."
   }
 ];
 

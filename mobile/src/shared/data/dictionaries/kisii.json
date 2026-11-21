@@ -9,7 +9,7 @@
     "Kisii",
     "Nyamira"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-17",
   "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria). Expanded and cross-verified with Commercially Permissive Datasets (DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0)).",
@@ -7459,6 +7459,138 @@
           "english": "I, me, my",
           "translation": "Nje, Inje, Noxi",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
+        },
+        {
+          "english": "Augment + class prefix paradigm (V augments a-, e-, o-",
+          "translation": "Cl.1 o-mo-, Cl.2 a-ba-, Cl.3 o-mo-, Cl.4 e-me-, Cl.5 e-ri-, ri-i-, Cl.6 a-ma-, Cl.7 e-ke-, Cl.8 e-bi-, Cl.9 e-N-, Cl.10 chi-N-, Cl.11 o-ro-, Cl.12 a-ka-, Cl.13 e-bi-, Cl.14 o-bo-, Cl.15 o-ko-",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, §3, Table 1b & Table 2 · Noun Class Augment Paradigm · Augment + class prefix paradigm (V augments a-, e-, o-; CV augments ri-, chi-)"
+        },
+        {
+          "english": "'1-person'; '2-people'; '3-tree'; '5-spear'",
+          "translation": "o-mo-nto; a-aba-nto; o-mo-te; ri-i-timo",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (2a–d) · Basic Augment Marking"
+        },
+        {
+          "english": "Proper names vs. '9-dog', '7-gourd', '9-cigarette', '9-path'",
+          "translation": "Sese (e-sese), Kerandi (e-kerandi), Sigara (e-sigara), Nyanchera (e-nchera)",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (8a) · Augment Omission in Proper Names"
+        },
+        {
+          "english": "'my mother', 'my father', 'your father', 'your",
+          "translation": "baba, mama, tata, iso, nyoko, magokoro, sokoro; o-mosaacha one",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (8b–c) · Kinship Terms (Bare vs. Augmented + Possessive) · 'my mother', 'my father', 'your father', 'your mother', 'my grandma', 'my grandpa'; 'my husband'"
+        },
+        {
+          "english": "'house-owner'; 'dog-owner'; 'spear-owner'",
+          "translation": "o-monyene e-nyomba; o-monyene e-sese; o-monyene ri-itimo",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (9d–f) · Complex Nouns (Augment on Both Elements)"
+        },
+        {
+          "english": "'snake-eater'; 'tree-cutter'; 'goat-milker'",
+          "translation": "o-mori ng'iti; o-motemi mete; o-mokami mbori",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (10d–f) · Compound Nouns (Augment Dropped on Complement)"
+        },
+        {
+          "english": "'He/she a king.'",
+          "translation": "Ere n'o-morwoti.; Sese n'o-mosaacha.; Abaana n'a-bageni",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (11d–f) · Predicative Constructions (Latent Augment) · 'He/she a king.'; 'Sese is a man.'; 'The children are visitors.'"
+        },
+        {
+          "english": "'3-a/the fruit tree'",
+          "translation": "o-mote bw'a-matunda; e-nyomba y'a-bageni; e-ndagera y'omwana",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (12d–f) · Associative Constructions · '3-a/the fruit tree'; '9-a/the guest house'; '7-a/the child's food'"
+        },
+        {
+          "english": "'in bed', 'in the house', 'at the river'",
+          "translation": "borere (o-borere), nyomba (e-nyomba), rooche (o-rooche)",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (13d–f) · Locative Adverbial Nouns (Augment Dropped)"
+        },
+        {
+          "english": "'in the morning', 'in the evening', 'at night'",
+          "translation": "mambia (e-mambia), morogoba (o-morogoba), botuko (o-botuko)",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (14d–f) · Temporal Adverbial Nouns (Augment Dropped)"
+        },
+        {
+          "english": "'quickly', 'always', 'firmly, hard'",
+          "translation": "bwango (o-bwango), botambe (o-botambe), bokong'u (o-bokong'u)",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (15d–f) · Manner Adverbial Nouns (Augment Dropped)"
+        },
+        {
+          "english": "'Sleeping is good.'",
+          "translation": "o-korara n'okuya. / korara mbuya",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (16d), (17e) · Subject Gerund (o-) vs. Infinitive (Bare) · 'Sleeping is good.' (gerund) / 'to sleep is good' (infinitive)"
+        },
+        {
+          "english": "'Singing has ended.' / 'Studying has started.'",
+          "translation": "o-goteera kwaerire. / o-gosoma gwachakire",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (16e–f) · Subject Gerunds"
+        },
+        {
+          "english": "'Dad likes my cooking' / 'Moraa has started to read.'",
+          "translation": "tata nanchete o-koruga kwane / Moraa ochakire gosoma",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (18d), (19f) · Object Gerund (o-) vs. Object Infinitive (Bare)"
+        },
+        {
+          "english": "'one cup'",
+          "translation": "e-gekombe e-kemo; e-bikombe bibere; e-gekombe kende; kera e-gekombe; e-bikombe bionsi; e-bikombe e-binge",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (20a–g) · Noun + Quantifier/Numeral Augment Patterns · 'one cup'; 'two cups'; 'another cup'; 'every cup'; 'all cups'; 'many cups'"
+        },
+        {
+          "english": "'big cup'; 'the cup that is outside'",
+          "translation": "e-gekombe e-kenene; e-gekombe kere isiko",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (21a, c) · Noun + Adjective vs. Noun + Relative Clause"
+        },
+        {
+          "english": "'there is a cup' vs. 'no cup'",
+          "translation": "e-gekombe nkere oo vs. gekombe nkeiyo; nimbwate o-moyio vs. timbwati moyio",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (23a, c, d, f) · Affirmative (Augmented) vs. Negative (Bare) · 'there is a cup' vs. 'no cup'; 'I have a/the knife' vs. 'I don't have any knife'"
+        },
+        {
+          "english": "'which goat?'",
+          "translation": "mbori ki?; gekombe ki?; mwana ki?; momura ki?; itimo ki?; nyomba ki?",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (24a–f) · Augment Omission in ki Interrogatives · 'which goat?'; 'which cup?'; 'which child?'; 'which boy?'; 'which spear?'; 'which house?'"
+        },
+        {
+          "english": "'this is my goat'",
+          "translation": "eye n'e-mbori yaane; eke n'e-gekombe kiane; oyo n'o-mwana one; eri ne-ri-itimo riane",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (25a–c, e) · Augment in Positive Declaratives · 'this is my goat'; 'this my cup'; 'this my child'; 'this is my spear'"
+        },
+        {
+          "english": "'the goat, I have not seen it'",
+          "translation": "e-mbori, tindanyerora; tabwati e-ngoko, esese abwate",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (26a, e) · Augment Retention under Negation · 'the goat, I have not seen it'; 's/he does not have a chicken, s/he has a dog'"
+        },
+        {
+          "english": "'you child, come here'",
+          "translation": "aye mwana, inchwo aa; inwe baana, inchwo aa; aye momura, inchwo aa; aye moiseke, inchwo aa",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (27a–d) · Augment Omission in Vocatives · 'you child, come here'; 'you children, come here'; 'you boy, come here'; 'you girl, come here'"
+        },
+        {
+          "english": "'any 9-goat'; 'any 7-cup'; 'any 1-child'; 'any 5-spear'",
+          "translation": "mbori ende yonsi; gekombe kende gionsi; mwana onde bwensi; itimo rinde rionsi",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (28a–c, e) · Augment Omission in Noun + 'any'"
         }
       ]
     },

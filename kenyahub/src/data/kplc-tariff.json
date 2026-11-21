@@ -7,19 +7,19 @@
     {
       "min": 0,
       "max": 30,
-      "rate": 12.14,
+      "rate": 12.23,
       "label": "Lifeline DC1 (0 – 30 kWh)"
     },
     {
       "min": 31,
       "max": 100,
-      "rate": 16.5,
+      "rate": 16.45,
       "label": "Ordinary Domestic DC2 (31 – 100 kWh)"
     },
     {
       "min": 101,
       "max": 1500,
-      "rate": 19.07,
+      "rate": 19.08,
       "label": "Domestic DC3 (101 – 1,500 kWh)"
     },
     {
@@ -38,7 +38,8 @@
     "epraLevy": 0.18,
     "epraLevyLabel": "EPRA Regulatory Levy (per kWh)",
     "warcLevy": 0.05,
-    "warcLevyLabel": "Water Resources Authority (WRA/WARMA) Levy (per kWh)"
+    "warcLevyLabel": "Water Resources Authority (WRA/WARMA) Levy (per kWh)",
+    "repLevyRate": 0.05
   },
   "fuelCostCharge": {
     "rate": 3.55,

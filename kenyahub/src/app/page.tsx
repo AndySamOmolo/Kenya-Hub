@@ -204,7 +204,7 @@ export default function HomePage() {
                 <Languages className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                 <span className="truncate">{PUBLISHED_COURSE_SUMMARIES.length} Courses</span>
               </div>
-              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug">
                 Structured units teaching greetings, kinship, verbs, numbers, and daily conversation.
               </p>
             </div>
@@ -213,7 +213,7 @@ export default function HomePage() {
                 <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                 <span className="truncate">3D Flashcards</span>
               </div>
-              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug">
                 Interactive study decks, spaced repetition reviews, and written phonetic guides.
               </p>
             </div>
@@ -222,7 +222,7 @@ export default function HomePage() {
                 <Gamepad2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                 <span className="truncate">12 Mini-Games</span>
               </div>
-              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug">
                 Play Wordle, Word Scramble, Speed Match, Memory Cards, Riddles, Methali Builder &amp; 6 more games.
               </p>
             </div>
@@ -231,7 +231,7 @@ export default function HomePage() {
                 <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                 <span className="truncate">1,000+ Proverbs</span>
               </div>
-              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug line-clamp-2 sm:line-clamp-none">
+              <p className="text-[11px] sm:text-sm text-text-secondary leading-snug">
                 Authentic Gĩkũyũ, Dholuo, Bantu, Nilotic &amp; Cushitic proverbs, riddles, and grammar tables.
               </p>
             </div>

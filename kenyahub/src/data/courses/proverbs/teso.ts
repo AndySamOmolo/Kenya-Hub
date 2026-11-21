@@ -22,7 +22,7 @@ export const TESO_PROVERBS: Proverb[] = [
     indigenous: 'Mam ekitoi ediopet epedori aetakin amoni',
     literalTranslation: 'A single tree cannot make a forest.',
     meaning: 'A community or family is built by many people standing together in mutual support.',
-    category: 'community',
+    category: 'unity',
     culturalNote: "In Ateso grammar, 'ekitoi' uses the masculine prefix e- for a living tree, while 'amoni' uses the feminine prefix a- for a forest."
   },
   {
@@ -52,7 +52,7 @@ export const TESO_PROVERBS: Proverb[] = [
     indigenous: 'Mata! Yoka yoka! — Ekinok.',
     literalTranslation: 'Greetings! Hail, hail! — The Sacred Dog Totem.',
     meaning: 'Peaceful salutations and respect for the ancestral totem unite the people across borders.',
-    category: 'community',
+    category: 'unity',
     culturalNote: 'Recorded by C. W. Hobley in Eastern Uganda: An Ethnological Survey ( Anthropological Institute, 1902, pp. 26, 38, 66–69) among the Wamia (Ateso).'
   },
   {

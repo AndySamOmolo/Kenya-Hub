@@ -18,12 +18,14 @@ interface BandBreakdown {
 
 function calculateTokens(amountPaid: number, tariffMode: "lifeline" | "ordinary" | "commercial" = "lifeline") {
   const fixedCharge = tariffData.fixedCharge;
-  const levyPerUnit = tariffData.levies.repLevy + tariffData.levies.refLevy + tariffData.levies.epraLevy + tariffData.levies.warcLevy;
   const fccPerUnit = tariffData.fuelCostCharge.rate;
   const ferfa = tariffData.forexAdjustment.rate;
+  const iaPerUnit = tariffData.levies.refLevy || 0;
+  const epraLevy = tariffData.levies.epraLevy || 0;
+  const wraLevy = tariffData.levies.warcLevy || 0;
+  const repRate = (tariffData.levies as any).repLevyRate ?? 0.05;
   const vatRate = tariffData.levies.vat / 100;
 
-  // Fixed charge is deducted first (with VAT)
   const fixedChargeWithVat = fixedCharge * (1 + vatRate);
   const amountForUnits = Math.max(0, amountPaid - fixedChargeWithVat);
 
@@ -41,41 +43,34 @@ function calculateTokens(amountPaid: number, tariffMode: "lifeline" | "ordinary"
     };
   }
 
-  // Iteratively find how many units the remaining amount buys
-  // Each unit costs: energyRate + levies + FCC + FERFA, all +16% VAT
-  let remainingAmount = amountForUnits;
-  let totalUnits = 0;
-  const breakdown: BandBreakdown[] = [];
+  // EPRA 2025/26 flat rolling-average tariff category:
+  // DC1 Lifeline (<=30 kWh/mo), DC2/DC3 Ordinary Domestic, SC1 Small Commercial
+  const bandIdx = tariffMode === "lifeline" ? 0 : tariffMode === "ordinary" ? 1 : 2;
+  const selectedBand = tariffData.energyBands[bandIdx] || tariffData.energyBands[0];
+  const baseRate = selectedBand.rate;
+  const repPerUnit = baseRate * repRate;
 
-  for (const band of tariffData.energyBands) {
-    if (remainingAmount <= 0) break;
-    const bandMax = band.max ?? 100000;
-    const bandMin = band.min;
-    const bandCapacity = bandMin === 0 ? bandMax : bandMax - bandMin + 1;
+  // 16% VAT applies ONLY to Base Energy + FCC + FERFA + Inflation Adjustment (REP, EPRA, WRA are VAT-exempt)
+  const vatablePerUnit = baseRate + fccPerUnit + ferfa + iaPerUnit;
+  const vatPerUnit = vatablePerUnit * vatRate;
+  const exemptLeviesPerUnit = repPerUnit + epraLevy + wraLevy;
+  const totalCostPerUnit = vatablePerUnit + vatPerUnit + exemptLeviesPerUnit;
 
-    const unitCostBeforeVat = band.rate + levyPerUnit + fccPerUnit + ferfa;
-    const unitCostWithVat = unitCostBeforeVat * (1 + vatRate);
+  const rawUnits = totalCostPerUnit > 0 ? amountForUnits / totalCostPerUnit : 0;
+  const totalUnits = Math.round(rawUnits * 100) / 100;
+  const breakdown: BandBreakdown[] = [
+    {
+      band: selectedBand.label,
+      units: totalUnits,
+      rate: baseRate,
+      cost: Math.round(amountForUnits * 100) / 100,
+    },
+  ];
 
-    const rawUnitsInBand = Math.min(bandCapacity, remainingAmount / unitCostWithVat);
-    const maxUnitsInBand = Math.round(rawUnitsInBand * 100) / 100;
-    const costForBand = rawUnitsInBand * unitCostWithVat;
-
-    if (maxUnitsInBand > 0) {
-      breakdown.push({
-        band: band.label,
-        units: maxUnitsInBand,
-        rate: band.rate,
-        cost: Math.round(costForBand * 100) / 100,
-      });
-      totalUnits = Math.round((totalUnits + rawUnitsInBand) * 100) / 100;
-      remainingAmount = Math.max(0, remainingAmount - costForBand);
-    }
-  }
-
-  const totalEnergyCost = breakdown.reduce((sum, b) => sum + b.units * b.rate, 0);
-  const totalLevies = totalUnits * levyPerUnit;
-  const totalFCC = totalUnits * (fccPerUnit + ferfa);
-  const totalVAT = (totalEnergyCost + totalLevies + totalFCC) * vatRate;
+  const totalEnergyCost = rawUnits * baseRate;
+  const totalLevies = rawUnits * (exemptLeviesPerUnit + iaPerUnit);
+  const totalFCC = rawUnits * (fccPerUnit + ferfa);
+  const totalVAT = rawUnits * vatPerUnit;
 
   return {
     totalUnits,

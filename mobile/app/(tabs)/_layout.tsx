@@ -5,7 +5,7 @@ import { Platform, StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "../../src/theme";
 
-function M3TabIcon({
+const M3TabIcon = React.memo(function M3TabIcon({
   name,
   focused,
   color,
@@ -26,7 +26,7 @@ function M3TabIcon({
       <Ionicons name={name} color={color} size={21} />
     </View>
   );
-}
+});
 
 export default function TabLayout() {
   const { theme, isDark } = useTheme();
@@ -38,13 +38,21 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
+        lazy: true,
+        freezeOnBlur: true,
         sceneStyle: { backgroundColor: theme.bgPrimary },
         tabBarActiveTintColor: theme.gold,
         tabBarInactiveTintColor: theme.textSecondary,
         tabBarHideOnKeyboard: true,
         tabBarAllowFontScaling: true,
         tabBarBackground: () => (
-          <View key={isDark ? "dark" : "light"} style={{ flex: 1, backgroundColor: theme.surfaceContainer }} />
+          <View
+            key={isDark ? "tab-bg-dark" : "tab-bg-light"}
+            style={[
+              StyleSheet.absoluteFill,
+              { backgroundColor: theme.surfaceContainer },
+            ]}
+          />
         ),
         tabBarStyle: [
           styles.tabBar,

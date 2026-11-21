@@ -79,9 +79,11 @@ export function NumberPlateDecoder() {
       };
     }
 
-    // 4. County Government: e.g. "47 CG 001A"
-    const cgMatch = normalizedSpaces.match(/^(\d{1,2})\s+CG\s+/) || clean.match(/^(\d{1,2})CG/);
-    if (cgMatch || clean.includes("CG")) {
+    // 4. County Government: e.g. "47 CG 001A" or "047 CG 001A" (never match civilian KCG)
+    const cgMatch =
+      normalizedSpaces.match(/^(0?[1-9]|[1-3]\d|4[0-7])\s+CG\b/) ||
+      clean.match(/^(0?[1-9]|[1-3]\d|4[0-7])CG/);
+    if (cgMatch) {
       const countyNo = cgMatch ? `County #${cgMatch[1].padStart(3, "0")}` : "County Government";
       return {
         classification: "County Government (CG)",

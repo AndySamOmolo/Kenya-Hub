@@ -540,7 +540,7 @@ export default function SkillTree({
                         {unitCompleted}/{unit.skills.length}
                       </span>
                     </div>
-                    <p className="text-xs sm:text-sm text-text-secondary mt-0.5 sm:mt-1 leading-relaxed line-clamp-2 sm:line-clamp-none">
+                    <p className="text-xs sm:text-sm text-text-secondary mt-0.5 sm:mt-1 leading-relaxed">
                       {unit.description}
                     </p>
                   </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Stack, ErrorBoundaryProps, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { Appearance, StyleSheet, Text, View, Pressable } from "react-native";
@@ -28,6 +28,7 @@ import {
   pressableStyle,
 } from "../src/theme";
 import { VerifiedAudioPlayer } from "../src/components/VerifiedAudioPlayer";
+import { initializeMobileAdsWithConsent } from "../src/lib/mobile-ads";
 
 function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
   const { theme, isDark, themeReady } = useTheme();
@@ -53,7 +54,8 @@ function LayoutContent({ fontsLoaded }: { fontsLoaded: boolean }) {
           headerShown: false,
           contentStyle: { backgroundColor: theme.bgPrimary },
           animation: "slide_from_right",
-          animationDuration: 200,
+          animationDuration: 160,
+          freezeOnBlur: true,
           gestureEnabled: true,
           fullScreenGestureEnabled: true,
         }}

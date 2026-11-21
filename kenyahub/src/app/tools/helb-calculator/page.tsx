@@ -29,14 +29,17 @@ export default function HELBCalculatorPage() {
   const [defaultMonths, setDefaultMonths] = useState<number>(0);
 
   const results = useMemo(() => {
-    const yearsSinceBorrow = Math.max(0, currentYear - yearBorrowed);
-    const accruedInterestToDate = Math.round(
-      loanAmount * (helbData.interestRate / 100) * yearsSinceBorrow
-    );
-    const accruedLedgerFees = yearsSinceBorrow * helbData.annualLedgerFee;
-    const accumulatedPenalty = defaultMonths * helbData.monthlyDefaultPenalty;
+    const yearsSinceBorrow = loanAmount > 0 ? Math.max(0, currentYear - yearBorrowed) : 0;
+    const accruedInterestToDate =
+      loanAmount > 0
+        ? Math.round(loanAmount * (helbData.interestRate / 100) * yearsSinceBorrow)
+        : 0;
+    const accruedLedgerFees = loanAmount > 0 ? yearsSinceBorrow * helbData.annualLedgerFee : 0;
+    const accumulatedPenalty = loanAmount > 0 ? defaultMonths * helbData.monthlyDefaultPenalty : 0;
     const currentBalance =
-      loanAmount + accruedInterestToDate + accruedLedgerFees + accumulatedPenalty;
+      loanAmount > 0
+        ? loanAmount + accruedInterestToDate + accruedLedgerFees + accumulatedPenalty
+        : 0;
 
     const monthlyBySalary = Math.round(
       grossSalary * (helbData.minimumSalaryPercent / 100)
@@ -59,17 +62,17 @@ export default function HELBCalculatorPage() {
     let yrLedger = 0;
     let yrPrincipal = 0;
 
-    while (balance > 0.5 && months < maxMonths) {
+    const coversAnnualCharges =
+      monthlyObligation * 12 >
+      currentBalance * (helbData.interestRate / 100) + helbData.annualLedgerFee;
+
+    while (balance > 0.5 && months < maxMonths && coversAnnualCharges) {
       months += 1;
       const monthInterest = balance * monthlyRate;
       const monthLedger = months % 12 === 1 ? helbData.annualLedgerFee : 0;
       const dueThisMonth = balance + monthInterest + monthLedger;
 
-      // Guard against negative amortization if payment < interest + ledger
       const actualPayment = Math.min(dueThisMonth, monthlyObligation);
-      if (actualPayment <= monthInterest && months > 12) {
-        break;
-      }
 
       const principalComponent = Math.max(0, actualPayment - monthInterest - monthLedger);
       balance = Math.max(0, dueThisMonth - actualPayment);
@@ -104,7 +107,7 @@ export default function HELBCalculatorPage() {
     }
 
     const yearsToRepay = Math.round((months / 12) * 10) / 10;
-    const completionYear = currentYear + Math.ceil(months / 12);
+    const completionYear = months > 0 ? currentYear + Math.max(0, Math.ceil(months / 12) - 1) : currentYear;
     const cannotClear = balance > 1;
 
     return {
@@ -121,6 +124,7 @@ export default function HELBCalculatorPage() {
       totalRepayment: Math.round(totalRepayment),
       totalFutureInterest: Math.round(totalFutureInterest),
       totalFutureLedger: Math.round(totalFutureLedger),
+      coversAnnualCharges,
       cannotClear,
       schedule,
     };
@@ -287,7 +291,7 @@ export default function HELBCalculatorPage() {
             <div className="bg-bg-card border border-border rounded-xl p-4 text-center">
               <p className="text-xs text-text-muted mb-1">Time to Clear (Reducing Balance)</p>
               <p className="text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)] tabular-nums">
-                {results.cannotClear ? "30+ yrs" : `${results.yearsToRepay} years`}
+                {!results.coversAnnualCharges ? "Never clears" : results.cannotClear ? "30+ yrs" : `${results.yearsToRepay} years`}
               </p>
               <p className="text-[0.6875rem] text-text-muted mt-1 tabular-nums">
                 {results.cannotClear ? "Increase monthly payment" : `${results.monthsToRepay} months`}

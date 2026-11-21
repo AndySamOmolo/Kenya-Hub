@@ -39,27 +39,34 @@ export default function DomesticWageCalculatorPage() {
     domesticWageData.zones[0];
 
   const calc = useMemo(() => {
-    const minWage = activeZone.monthlyMinimum;
+    // Legal Notice No. 108 of 2026: monthlyMinimum is Basic Pay (exclusive of 15% housing allowance).
+    // Live-In receives at least full basic pay; Live-Out receives basic pay + 15% housing allowance.
+    const basicMinimum = activeZone.monthlyMinimum;
+    const minWage = isLiveIn
+      ? Math.round(basicMinimum)
+      : Math.round(basicMinimum * 1.15);
     const customGross = Number(agreedSalaryInput.replace(/,/g, "")) || 0;
     const grossWage = customGross > 0 ? Math.max(minWage, customGross) : minWage;
     const isBelowMinimum = customGross > 0 && customGross < minWage;
 
-    // Statutory 15% consolidated housing extraction: 15 / 115 of consolidated gross (F-005)
-    const housingAllowanceIncluded = Math.round((grossWage * 15) / 115);
+    const housingAllowanceIncluded = isLiveIn ? 0 : Math.round((grossWage * 15) / 115);
     const basicPayComponent = grossWage - housingAllowanceIncluded;
     const shaDeduction = Math.max(
       300,
       Math.round(grossWage * domesticWageData.statutoryDeductions.shaEmployeePercent)
     );
-    // NSSF Act Cap 128 6% calculation (Tier I + Tier II, capped at KES 4,320)
+    // NSSF Year 4 (Feb 2026): 6% employee + 6% employer, capped at KES 6,480/mo
     const nssf = Math.min(
       Math.round(grossWage * domesticWageData.statutoryDeductions.nssfRate),
       domesticWageData.statutoryDeductions.nssfMaxMonthly
     );
+    const ahlRate = (domesticWageData.statutoryDeductions as any).ahlRate ?? 0.015;
+    const ahlEmployee = Math.round(grossWage * ahlRate);
+    const ahlEmployer = ahlEmployee;
     const nssfEmployee = nssf;
     const nssfEmployer = nssf;
-    const netTakeHome = grossWage - shaDeduction - nssfEmployee;
-    const totalEmployerCost = grossWage + nssfEmployer;
+    const netTakeHome = Math.max(0, grossWage - shaDeduction - nssfEmployee - ahlEmployee);
+    const totalEmployerCost = grossWage + nssfEmployer + ahlEmployer;
 
     return {
       minWage,
@@ -71,10 +78,12 @@ export default function DomesticWageCalculatorPage() {
       nssf,
       nssfEmployee,
       nssfEmployer,
+      ahlEmployee,
+      ahlEmployer,
       netTakeHome,
       totalEmployerCost,
     };
-  }, [activeZone, agreedSalaryInput]);
+  }, [activeZone, agreedSalaryInput, isLiveIn]);
 
   const contractText = useMemo(() => {
     const today = new Date().toISOString().split("T")[0];
@@ -240,8 +249,9 @@ export default function DomesticWageCalculatorPage() {
                 KES {Math.round(calc.netTakeHome).toLocaleString("en-KE")}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1 tabular-nums">
-                After SHA/SHIF KES {Math.round(calc.shaDeduction).toLocaleString("en-KE")} &amp; NSSF (6%) KES{" "}
-                {calc.nssfEmployee.toLocaleString("en-KE")}
+                After SHA KES {Math.round(calc.shaDeduction).toLocaleString("en-KE")}, NSSF (6%) KES{" "}
+                {calc.nssfEmployee.toLocaleString("en-KE")} &amp; AHL (1.5%) KES{" "}
+                {calc.ahlEmployee.toLocaleString("en-KE")}
               </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-elevated/40 p-4">
@@ -252,7 +262,8 @@ export default function DomesticWageCalculatorPage() {
                 KES {Math.round(calc.totalEmployerCost).toLocaleString("en-KE")}
               </p>
               <p className="text-[0.6875rem] text-text-secondary mt-1 tabular-nums">
-                Includes employer 6% NSSF match KES {calc.nssfEmployer.toLocaleString("en-KE")}
+                Includes employer 6% NSSF (KES {calc.nssfEmployer.toLocaleString("en-KE")}) + 1.5% AHL (KES{" "}
+                {calc.ahlEmployer.toLocaleString("en-KE")})
               </p>
             </div>
           </div>

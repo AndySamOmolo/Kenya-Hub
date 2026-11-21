@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "generatedAt": "2026-11-17",
+  "version": "2.0.0",
+  "generatedAt": "2026-11-21",
   "storageArchitecture": "Cloudflare R2 Free Tier (10 GB free storage, 10M free Class B reads/mo, $0.00 egress)",
   "codec": "Opus 24kbps mono 24kHz (.opus)",
   "estimatedCapacityHours": 925,
@@ -13,12 +13,12 @@
       "directAudioEntries": 0,
       "openAccessDatasets": [
         {
-          "id": "open-bible-orm",
-          "repo": "multilingual-tts/open-bible",
-          "config": "gaz",
-          "gated": false,
-          "license": "CC-BY-SA-4.0",
-          "url": "https://huggingface.co/datasets/multilingual-tts/open-bible"
+          "id": "cv27-om",
+          "repo": "mozilla-data-collective/cmu5vkzvd009po10727n12m9h",
+          "config": "om",
+          "gated": true,
+          "license": "CC0-1.0",
+          "url": "https://mozilladatacollective.com/datasets/cmu5vkzvd009po10727n12m9h"
         },
         {
           "id": "fleurs-om-et",
@@ -35,14 +35,6 @@
           "gated": false,
           "license": "CC-BY-SA-4.0",
           "url": "https://huggingface.co/datasets/google/WaxalNLP"
-        },
-        {
-          "id": "cv27-om",
-          "repo": "mozilla/common-voice-27-om",
-          "config": "om",
-          "gated": true,
-          "license": "CC0-1.0",
-          "url": "https://mozilladatacollective.com/datasets/cmu5vkzvd009po10727n12m9h"
         }
       ]
     },
@@ -86,16 +78,8 @@
           "url": "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke"
         },
         {
-          "id": "kalenjin-asr-hf",
-          "repo": "kln001/kalenjin-asr-data",
-          "config": "default",
-          "gated": false,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/kln001/kalenjin-asr-data"
-        },
-        {
           "id": "cv27-kln",
-          "repo": "mozilla/common-voice-27-kln",
+          "repo": "mozilla-data-collective/cmu5webje00bgo1079qb3nubj",
           "config": "kln",
           "gated": true,
           "license": "CC0-1.0",
@@ -125,14 +109,6 @@
           "gated": false,
           "license": "CC-BY-4.0",
           "url": "https://huggingface.co/datasets/google/fleurs"
-        },
-        {
-          "id": "ddd-kam",
-          "repo": "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H",
-          "config": "default",
-          "gated": true,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/Digital-Divide-Data/Kamba-ASR-Data-Subset-484H"
         }
       ]
     },
@@ -144,6 +120,14 @@
       "directAudioEntries": 253,
       "openAccessDatasets": [
         {
+          "id": "anv-ke-kikuyu",
+          "repo": "MCAA1-MSU/anv_data_ke",
+          "config": "kikuyu",
+          "gated": true,
+          "license": "CC-BY-4.0",
+          "url": "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke"
+        },
+        {
           "id": "thiomi-kik",
           "repo": "thiomi/thiomi-5k",
           "config": "kik_Latn",
@@ -152,20 +136,20 @@
           "url": "https://huggingface.co/datasets/thiomi/thiomi-5k"
         },
         {
-          "id": "open-bible-kik",
-          "repo": "multilingual-tts/open-bible",
-          "config": "kik",
-          "gated": false,
-          "license": "CC-BY-SA-4.0",
-          "url": "https://huggingface.co/datasets/multilingual-tts/open-bible"
-        },
-        {
           "id": "waxal-kik-tts",
           "repo": "google/WaxalNLP",
           "config": "kik_tts",
           "gated": false,
           "license": "CC-BY-SA-4.0",
           "url": "https://huggingface.co/datasets/google/WaxalNLP"
+        },
+        {
+          "id": "bibletts-kik",
+          "repo": "masakhane-io/bibleTTS",
+          "config": "kikuyu",
+          "gated": false,
+          "license": "CC-BY-SA-4.0",
+          "url": "https://masakhane-io.github.io/bibleTTS/"
         }
       ]
     },
@@ -175,16 +159,7 @@
       "addressableR2Keys": 1551,
       "r2Prefix": "audio/kisii/",
       "directAudioEntries": 0,
-      "openAccessDatasets": [
-        {
-          "id": "ddd-gusii",
-          "repo": "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H",
-          "config": "default",
-          "gated": true,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/Digital-Divide-Data/Gusii-ASR-Data-Subset-470H"
-        }
-      ]
+      "openAccessDatasets": []
     },
     "luhya": {
       "languageName": "Luhya (Luyia)",
@@ -193,14 +168,6 @@
       "r2Prefix": "audio/luhya/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
-        {
-          "id": "ddd-luhya-642h",
-          "repo": "Digital-Divide-Data/Luhya-ASR-Data-subset-642H",
-          "config": "default",
-          "gated": true,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/Digital-Divide-Data/Luhya-ASR-Data-subset-642H"
-        },
         {
           "id": "kencorpus-audio-luy",
           "repo": "Kencorpus/KenCorpus_audio",
@@ -226,6 +193,22 @@
       "r2Prefix": "audio/luo/",
       "directAudioEntries": 257,
       "openAccessDatasets": [
+        {
+          "id": "anv-ke-luo",
+          "repo": "MCAA1-MSU/anv_data_ke",
+          "config": "luo",
+          "gated": true,
+          "license": "CC-BY-4.0",
+          "url": "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke"
+        },
+        {
+          "id": "cv27-luo",
+          "repo": "mozilla-data-collective/cmu5wfvfn00bso107clj45iop",
+          "config": "luo",
+          "gated": true,
+          "license": "CC0-1.0",
+          "url": "https://mozilladatacollective.com/datasets/cmu5wfvfn00bso107clj45iop"
+        },
         {
           "id": "thiomi-luo",
           "repo": "thiomi/thiomi-5k",
@@ -265,14 +248,6 @@
           "gated": false,
           "license": "CC-BY-4.0",
           "url": "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio"
-        },
-        {
-          "id": "cv27-luo",
-          "repo": "mozilla/common-voice-27-luo",
-          "config": "luo",
-          "gated": true,
-          "license": "CC0-1.0",
-          "url": "https://mozilladatacollective.com/datasets/cmu5wfvfn00bso107clj45iop"
         }
       ]
     },
@@ -367,14 +342,6 @@
       "directAudioEntries": 293,
       "openAccessDatasets": [
         {
-          "id": "thiomi-som",
-          "repo": "thiomi/thiomi-5k",
-          "config": "som_Latn",
-          "gated": false,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/thiomi/thiomi-5k"
-        },
-        {
           "id": "anv-ke-somali",
           "repo": "MCAA1-MSU/anv_data_ke",
           "config": "somali",
@@ -383,12 +350,12 @@
           "url": "https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke"
         },
         {
-          "id": "soomali-asr-hf",
-          "repo": "skydheere/soomali-asr-dataset",
-          "config": "default",
+          "id": "thiomi-som",
+          "repo": "thiomi/thiomi-5k",
+          "config": "som_Latn",
           "gated": false,
           "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/skydheere/soomali-asr-dataset"
+          "url": "https://huggingface.co/datasets/thiomi/thiomi-5k"
         },
         {
           "id": "fleurs-so-so",
@@ -397,14 +364,6 @@
           "gated": false,
           "license": "CC-BY-4.0",
           "url": "https://huggingface.co/datasets/google/fleurs"
-        },
-        {
-          "id": "ddd-som",
-          "repo": "Digital-Divide-Data/Somali-ASR-Subset-68H",
-          "config": "default",
-          "gated": true,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/Digital-Divide-Data/Somali-ASR-Subset-68H"
         }
       ]
     },
@@ -413,8 +372,16 @@
       "totalEntries": 53226,
       "addressableR2Keys": 53224,
       "r2Prefix": "audio/swahili/",
-      "directAudioEntries": 412,
+      "directAudioEntries": 414,
       "openAccessDatasets": [
+        {
+          "id": "cv27-sw",
+          "repo": "mozilla-data-collective/cmu5sgles002zo1071nphgtby",
+          "config": "sw",
+          "gated": true,
+          "license": "CC0-1.0",
+          "url": "https://mozilladatacollective.com/datasets/cmu5sgles002zo1071nphgtby"
+        },
         {
           "id": "waxal-swa-tts",
           "repo": "google/WaxalNLP",
@@ -424,60 +391,12 @@
           "url": "https://huggingface.co/datasets/google/WaxalNLP"
         },
         {
-          "id": "open-bible-swh",
-          "repo": "multilingual-tts/open-bible",
-          "config": "swh",
-          "gated": false,
-          "license": "CC-BY-SA-4.0",
-          "url": "https://huggingface.co/datasets/multilingual-tts/open-bible"
-        },
-        {
-          "id": "swahili-words-411k",
-          "repo": "michsethowusu/swahili-words-speech-text-parallel",
-          "config": "default",
-          "gated": false,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/michsethowusu/swahili-words-speech-text-parallel"
-        },
-        {
-          "id": "stem-swahili-speech",
-          "repo": "stem-content-ai-project/swahili-speech",
-          "config": "default",
-          "gated": false,
-          "license": "MIT",
-          "url": "https://huggingface.co/datasets/stem-content-ai-project/swahili-speech"
-        },
-        {
-          "id": "alffa-slr25",
-          "repo": "nickdee96/ALFFA-Swahili-News",
-          "config": "default",
-          "gated": false,
-          "license": "MIT",
-          "url": "https://www.openslr.org/25/"
-        },
-        {
-          "id": "liva-swahili-asr",
-          "repo": "liva-ai/swahili-asr",
-          "config": "default",
-          "gated": false,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/liva-ai/swahili-asr"
-        },
-        {
-          "id": "kencorpus-audio",
+          "id": "kencorpus-audio-sw",
           "repo": "Kencorpus/KenCorpus_audio",
           "config": "default",
           "gated": false,
           "license": "CC-BY-4.0",
           "url": "https://huggingface.co/datasets/Kencorpus/KenCorpus_audio"
-        },
-        {
-          "id": "fleurs-sw-ke",
-          "repo": "google/fleurs",
-          "config": "sw_ke",
-          "gated": false,
-          "license": "CC-BY-4.0",
-          "url": "https://huggingface.co/datasets/google/fleurs"
         },
         {
           "id": "kenspeech-sw",
@@ -488,18 +407,52 @@
           "url": "https://huggingface.co/datasets/Kencorpus/KenSpeech"
         },
         {
-          "id": "cv-sw-26",
-          "repo": "deepdml/common_voice_26_0",
-          "config": "sw",
-          "gated": true,
-          "license": "CC0-1.0",
-          "url": "https://huggingface.co/datasets/deepdml/common_voice_26_0"
+          "id": "fleurs-sw-ke",
+          "repo": "google/fleurs",
+          "config": "sw_ke",
+          "gated": false,
+          "license": "CC-BY-4.0",
+          "url": "https://huggingface.co/datasets/google/fleurs"
         },
         {
-          "id": "zenodo-kiamu",
-          "url": "https://zenodo.org/records/19828379/files/Piste%202.wma?download=1",
+          "id": "salt-studio-swa",
+          "repo": "Sunbird/salt",
+          "config": "studio-swa",
+          "gated": true,
+          "license": "CC-BY-SA-4.0",
+          "url": "https://huggingface.co/datasets/Sunbird/salt"
+        },
+        {
+          "id": "openslr-slr25",
+          "repo": "openslr/slr25",
+          "config": "default",
           "gated": false,
-          "license": "CC-BY-4.0"
+          "license": "MIT",
+          "url": "https://www.openslr.org/25/"
+        },
+        {
+          "id": "makerere-sw-tts",
+          "repo": "mendeley/nb8b25h9nj-3",
+          "config": "default",
+          "gated": false,
+          "license": "CC-BY-4.0",
+          "url": "https://data.mendeley.com/datasets/nb8b25h9nj/3"
+        },
+        {
+          "id": "rono-sw-tts",
+          "repo": "mendeley/rbn6nmygcn-1",
+          "config": "default",
+          "gated": false,
+          "license": "CC-BY-4.0",
+          "url": "https://data.mendeley.com/datasets/rbn6nmygcn/1"
+        },
+        {
+          "id": "lingua-libre-swa",
+          "repo": "wikimedia-commons/lingua-libre-swa",
+          "config": "swa",
+          "gated": false,
+          "license": "CC-BY-SA-4.0",
+          "url": "https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-swa"
         }
       ]
     },
@@ -509,7 +462,16 @@
       "addressableR2Keys": 7571,
       "r2Prefix": "audio/taita/",
       "directAudioEntries": 0,
-      "openAccessDatasets": []
+      "openAccessDatasets": [
+        {
+          "id": "cv27-dav",
+          "repo": "mozilla-data-collective/cmu5w2bh700aso107ffpduqpp",
+          "config": "dav",
+          "gated": true,
+          "license": "CC0-1.0",
+          "url": "https://mozilladatacollective.com/datasets/cmu5w2bh700aso107ffpduqpp"
+        }
+      ]
     },
     "taveta": {
       "languageName": "Taveta (Kitaveta)",
@@ -552,5 +514,35 @@
       "directAudioEntries": 0,
       "openAccessDatasets": []
     }
+  },
+  "specialModalities": {
+    "english-ke": [
+      {
+        "id": "edacc-en-ke",
+        "repo": "edinburghcstr/edacc",
+        "config": "default",
+        "gated": false,
+        "license": "CC-BY-SA-4.0",
+        "url": "https://huggingface.co/datasets/edinburghcstr/edacc"
+      }
+    ],
+    "ksl": [
+      {
+        "id": "maseno-ksl-pose-14338329",
+        "repo": "zenodo/14338329",
+        "config": "xki",
+        "gated": false,
+        "license": "CC-BY-4.0",
+        "url": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "open-sign-bibles-xki",
+        "repo": "bible-nlp/sign-bibles",
+        "config": "xki",
+        "gated": false,
+        "license": "CC-BY-SA-4.0",
+        "url": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      }
+    ]
   }
 }

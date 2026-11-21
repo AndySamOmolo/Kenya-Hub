@@ -58188,11 +58188,6 @@
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
-          "english": "(Music plays for a few seconds)",
-          "translation": "(Thum ywak kuom sekonde moko)",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
           "english": "Doctor: Hello Riaan, this is Dr. Otieno. I understand you're experiencing some abdominal pain and nausea, and you're concerned about needing a liver biopsy.",
           "translation": "Laktar: Msawa Riaan, an Laktar Otieno. Awinjo ni iyi rami kendo chunyi lewi, kendo idwaro ni opim chuny mari.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
@@ -78378,5 +78373,5 @@
   "source": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921); Rev. John Roscoe & Bishop J. J. Willis (1915) The Northern Bantu — Nilotic Kavirondo Kinship & Clans (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Dholuo Corpus (Mackenzie 2016, CC-BY-4.0)",
   "isoCode": "luo",
   "glottocode": "luoo1235",
-  "totalEntries": 14853
+  "totalEntries": 14852
 }

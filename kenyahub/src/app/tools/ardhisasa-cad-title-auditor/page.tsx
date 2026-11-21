@@ -37,30 +37,36 @@ export default function ArdhisasaCadTitleAuditorPage() {
       .map((l) => l.trim())
       .filter(Boolean)
       .map((l) => {
-        const p = l.split(/[,\s]+/).map(Number);
-        return p.length >= 2 && !Number.isNaN(p[0]) && !Number.isNaN(p[1])
+        const p = l.split(/[,\s]+/).filter(Boolean).map(Number);
+        return p.length >= 2 && Number.isFinite(p[0]) && Number.isFinite(p[1])
           ? ([p[0], p[1]] as [number, number])
           : null;
       })
       .filter((p): p is [number, number] => p !== null);
-
-    let areaSqm = 0;
-    if (pts.length >= 4) {
-      let s = 0;
-      for (let i = 0; i < pts.length - 1; i++) {
-        s += pts[i][0] * pts[i + 1][1] - pts[i + 1][0] * pts[i][1];
-      }
-      areaSqm = Math.abs(s) / 2;
-    }
 
     const closureErr =
       pts.length >= 2
         ? Math.hypot(pts[0][0] - pts[pts.length - 1][0], pts[0][1] - pts[pts.length - 1][1])
         : 999;
     const isClosed = pts.length >= 4 && closureErr < 0.05;
-    const declared = Math.max(1, Number(declaredSqm) || 1);
-    const variancePct = Math.abs(((areaSqm - declared) / declared) * 100);
-    const areaOk = variancePct <= utilData.ardhisasa.areaTolerancePct;
+
+    // Translate relative to pts[0] for numerical stability and close loop modularly
+    const ring = isClosed ? pts.slice(0, -1) : pts;
+    let areaSqm = 0;
+    if (ring.length >= 3) {
+      const ox = ring[0][0];
+      const oy = ring[0][1];
+      let s = 0;
+      for (let i = 0; i < ring.length; i++) {
+        const next = ring[(i + 1) % ring.length];
+        s += (ring[i][0] - ox) * (next[1] - oy) - (next[0] - ox) * (ring[i][1] - oy);
+      }
+      areaSqm = Math.abs(s) / 2;
+    }
+
+    const declared = Math.max(0, Number(declaredSqm) || 0);
+    const variancePct = declared > 0 ? Math.abs(((areaSqm - declared) / declared) * 100) : 100;
+    const areaOk = declared > 0 && areaSqm > 0 && variancePct <= utilData.ardhisasa.areaTolerancePct;
     const passedChecks = Object.values(checks).filter(Boolean).length;
 
     return { pts, areaSqm, closureErr, isClosed, variancePct, areaOk, passedChecks };

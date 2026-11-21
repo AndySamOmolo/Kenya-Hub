@@ -106,14 +106,7 @@ export function SpeedMatchGame({
     }
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      setTimeLeft((t) => {
-        if (t <= 1) {
-          if (timerRef.current) clearInterval(timerRef.current);
-          setGameState("done");
-          return 0;
-        }
-        return Number((t - 1).toFixed(1));
-      });
+      setTimeLeft((t) => (t <= 1 ? 0 : Number((t - 1).toFixed(1))));
     }, 1000);
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
@@ -121,17 +114,27 @@ export function SpeedMatchGame({
   }, [gameState, untimed]);
 
   useEffect(() => {
+    if (gameState === "playing" && !untimed && timeLeft <= 0) {
+      if (timerRef.current) clearInterval(timerRef.current);
+      setGameState("done");
+    }
+  }, [gameState, untimed, timeLeft]);
+
+  useEffect(() => {
     if (gameState === "done" && !awardedRef.current) {
       awardedRef.current = true;
-      playCelebrationSfx();
-      const earnedXp = Math.max(15, Math.min(55, Math.round(score / 4)));
-      onAwardXp?.(earnedXp);
-      onUpdateGameStats?.((prev) => ({
-        ...prev,
-        speedBestScore: Math.max(prev.speedBestScore, score),
-      }));
+      if (correct > 0) {
+        playCelebrationSfx();
+        const earnedXp = Math.max(10, Math.min(55, Math.round(score / 4)));
+        onAwardXp?.(earnedXp, total >= 5);
+        onUpdateGameStats?.((prev) => ({
+          ...prev,
+          speedBestScore: Math.max(prev.speedBestScore, score),
+          speedBestStreak: Math.max(prev.speedBestStreak || 0, bestStreak),
+        }));
+      }
     }
-  }, [gameState, score, onAwardXp, onUpdateGameStats]);
+  }, [gameState, score, correct, total, bestStreak, onAwardXp, onUpdateGameStats]);
 
   useEffect(() => {
     return () => {

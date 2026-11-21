@@ -13,7 +13,7 @@ export const TAVETA_CONFIG: LanguageConfig = {
   "description": "A Coastal Hinterland Bantu language spoken in the Lumi River forest oasis near Mount Kilimanjaro in Taita-Taveta County.",
   "color": "#15803D",
   "sources": [
-    "hollis-taveta-proverbs-1910",
+    "hollis-taveta-1910",
     "hollis-taveta-enigmas-1911",
     "johnston-bantu-1919",
     "open-web-swadesh-comparative"

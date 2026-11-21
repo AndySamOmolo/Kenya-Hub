@@ -29,15 +29,19 @@ export function KraCarImportCalculator() {
     if (fuel === "electric")
       exciseRate = (crspData.rates as any).exciseElectric ?? 0.1;
     else if (fuel === "petrol")
-      exciseRate = cc > 1500 ? crspData.rates.exciseLargePetrol : crspData.rates.exciseSmallPetrol;
+      exciseRate =
+        cc > 3000
+          ? crspData.rates.exciseLargePetrol
+          : cc > 1500
+          ? ((crspData.rates as any).exciseMidPetrol ?? 0.25)
+          : crspData.rates.exciseSmallPetrol;
     else if (fuel === "diesel")
       exciseRate = cc > 2500 ? crspData.rates.exciseLargeDiesel : crspData.rates.exciseSmallDiesel;
 
+    // Official KRA CRSP reverse formula: strip 25% dealer margin (÷ 1.25) and Import/Excise/VAT cascade
     const taxMult =
-      (1 + crspData.rates.importDuty) * (1 + exciseRate) * (1 + crspData.rates.vat) +
-      crspData.rates.idf +
-      crspData.rates.rdl;
-    const customsValue = (crsp / (taxMult * 1.08)) * (1 - depRate);
+      (1 + crspData.rates.importDuty) * (1 + exciseRate) * (1 + crspData.rates.vat);
+    const customsValue = (crsp / (taxMult * 1.25)) * (1 - depRate);
     const importDuty = customsValue * crspData.rates.importDuty;
     const exciseDuty = (customsValue + importDuty) * exciseRate;
     const vat = (customsValue + importDuty + exciseDuty) * crspData.rates.vat;
@@ -45,7 +49,7 @@ export function KraCarImportCalculator() {
     const rdl = customsValue * crspData.rates.rdl;
     const totalKraDuty = importDuty + exciseDuty + vat + idf + rdl;
     const ntsaFee =
-      (crspData.ntsaRegistration.find((r) => cc <= r.maxCc) || crspData.ntsaRegistration[5]).fee;
+      (crspData.ntsaRegistration.find((r) => cc <= r.maxCc) || crspData.ntsaRegistration[crspData.ntsaRegistration.length - 1]).fee;
     const portAndKebs = crspData.rates.kebsInspectionKes + crspData.rates.portClearingKes;
     const cifUsd = cifUsdText.trim() === '' ? 0 : Math.max(0, Number(cifUsdText.replace(/,/g, '')) || 0);
     const cifKes = cifUsd * 129;

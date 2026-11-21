@@ -65,7 +65,7 @@ export function getPrimaryForm(text: string): string {
   const cleaned = cleanExerciseText(text);
   const withoutPl = cleaned.split(/,\s*pl\.?\s+/i)[0]?.trim() || cleaned;
   const primary = withoutPl
-    .split(/\s*(?:[/;•|→—–]|\b(?:or|and)\b|,)\s*/i)[0]
+    .split(/\s*(?:[/;•|→—–]|\bor\b)\s*/i)[0]
     ?.replace(/\.$/, '')
     .trim();
   return primary || withoutPl || cleaned;
@@ -90,6 +90,27 @@ function normalizeComparable(text: string): string {
     .replace(/[^a-z0-9\s]/g, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/**
+ * Transliterate extended African Latin phonemes (ŋ, ɲ, ɔ, ɛ, ɗ, ɠ, ɓ, ʔ, ω, ñ)
+ * to ASCII before NFD diacritic stripping — shared by Wordle and answer matching.
+ */
+export function transliterateToAscii(text: string): string {
+  return String(text || "")
+    .replace(/[ñŋ]/gi, "ng")
+    .replace(/ɲ/gi, "ny")
+    .replace(/[ɔωΩ]/gi, "o")
+    .replace(/ɛ/gi, "e")
+    .replace(/ɗ/gi, "d")
+    .replace(/ɠ/gi, "g")
+    .replace(/ɓ/gi, "b")
+    .replace(/β/gi, "v")
+    .replace(/χ/gi, "sh")
+    .replace(/þ/gi, "th")
+    .replace(/ʔ/g, "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 }
 
 /**
@@ -151,6 +172,9 @@ export function isValidQuizPair(word: string, english: string): boolean {
   const both = `${cleanWord} ~~~ ${cleanEng}`;
   if (/[:→•=><\[\]{}*§|"…_]/.test(both) || /(?:\.\s*){2,}/.test(both)) return false;
   if (/\b(vs\.?|pp?\.\s*\d|fn\.\s*\d|Ex\.\s*\d|Ch\.\s*[IVX\d]|Vide\b|cf\.|s\.v\.)/i.test(both)) {
+    return false;
+  }
+  if (/^(?:plur|adj|adv|vid|intens|prep|conj|interj|pron|num|sp|sg|pl)\.?$/i.test(cleanEng)) {
     return false;
   }
 
@@ -458,7 +482,7 @@ function generateTranslateToTarget(word: WordPair): Exercise {
   const variants = new Set<string>();
   if (primaryTarget) variants.add(primaryTarget);
   variants.add(word.target.toLowerCase().replace(/[?!.,]/g, '').trim());
-  for (const part of cleanExerciseText(word.target).split(/\s*(?:[/;,]|\b(?:or|and)\b)\s*/i)) {
+  for (const part of cleanExerciseText(word.target).split(/\s*(?:[/;]|\bor\b)\s*/i)) {
     const cleaned = part.toLowerCase().replace(/[?!.,]/g, '').trim();
     if (cleaned) variants.add(cleaned);
   }
@@ -479,7 +503,7 @@ function generateTranslateToEnglish(word: WordPair): Exercise {
   const variants = new Set<string>();
   if (primarySource) variants.add(primarySource);
   variants.add(cleanExerciseText(word.source).toLowerCase().replace(/[?!.,]/g, '').trim());
-  for (const part of cleanExerciseText(word.source).split(/\s*(?:[/;,]|\b(?:or|and)\b)\s*/i)) {
+  for (const part of cleanExerciseText(word.source).split(/\s*(?:[/;]|\bor\b)\s*/i)) {
     const cleaned = part.toLowerCase().replace(/[?!.,]/g, '').trim();
     if (cleaned) variants.add(cleaned);
   }
@@ -500,7 +524,7 @@ function generateFillBlank(word: WordPair, wordPool: WordPair[], sentences: Word
   const options = shuffle([primaryTarget, ...distractors]);
 
   const escapedTarget = primaryTarget.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const wordRegex = new RegExp(`\\b${escapedTarget}\\b`, 'i');
+  const wordRegex = new RegExp(`(?<![\\p{L}\\p{N}_])${escapedTarget}(?![\\p{L}\\p{N}_])`, 'iu');
   const matchingSentence = sentences.find(
     (s) => s.target.length > primaryTarget.length + 3 && wordRegex.test(s.target)
   );
@@ -957,29 +981,18 @@ export function checkAnswerWithFeedback(
   exercise: Exercise,
   userAnswer: string
 ): AnswerCheckResult {
-  const normalizeExact = (s: string) =>
+  const stripPunctAndSpace = (s: string) =>
     s
-      .normalize('NFKC')
-      .toLowerCase()
-      .replace(/\(.*?\)/g, '')
-      .replace(/[?!.,;:'"„“]/g, '')
+      .replace(/\(.*?\)|\[.*?\]|\{.*?\}/g, '')
+      .replace(/[?!.,;:'"„“”‘’ʼ\-–—]/g, '')
       .replace(/\s+/g, ' ')
       .trim();
 
+  const normalizeExact = (s: string) =>
+    stripPunctAndSpace(s.normalize('NFKC').toLowerCase());
+
   const normalizeBase = (s: string) =>
-    s
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[ωΩ]/g, 'o')
-      .replace(/β/g, 'v')
-      .replace(/χ/g, 'sh')
-      .replace(/þ/g, 'th')
-      .replace(/ñ/g, 'ng')
-      .toLowerCase()
-      .replace(/\(.*?\)/g, '')
-      .replace(/[?!.,;:'"„“ʼ]/g, '')
-      .replace(/\s+/g, ' ')
-      .trim();
+    stripPunctAndSpace(transliterateToAscii(s).toLowerCase());
 
   const answerExact = normalizeExact(userAnswer);
   const answerBase = normalizeBase(userAnswer);
@@ -995,6 +1008,12 @@ export function checkAnswerWithFeedback(
     getPrimaryForm(exercise.correctAnswer),
     ...(exercise.acceptedAnswers || []),
   ];
+  if (exercise.type === 'translate_to_english') {
+    for (const c of [...rawCandidates]) {
+      const stripped = c.trim().replace(/^(?:to|a|an|the)\s+/i, '');
+      if (stripped && stripped !== c.trim()) rawCandidates.push(stripped);
+    }
+  }
 
   const acceptedExact = Array.from(new Set(rawCandidates.map(normalizeExact).filter(Boolean)));
   const acceptedBase = Array.from(new Set(rawCandidates.map(normalizeBase).filter(Boolean)));

@@ -23,10 +23,7 @@ export function PayeCalculator() {
   const [showReliefs, setShowReliefs] = useState(false);
   const [showAnnual, setShowAnnual] = useState(false);
   const inputAmount = Math.max(0, Number(salaryText.replace(/,/g, "")) || 0);
-  const pension = Math.min(
-    30000,
-    Math.max(0, Number(pensionText.replace(/,/g, "")) || 0)
-  );
+  const pension = Math.max(0, Number(pensionText.replace(/,/g, "")) || 0);
   const mortgage = Math.min(
     30000,
     Math.max(0, Number(mortgageText.replace(/,/g, "")) || 0)
@@ -65,7 +62,7 @@ export function PayeCalculator() {
     let gTax = 0;
     for (const band of payeData.payeBands) {
       const upper = band.max ?? Infinity;
-      if (taxInc > band.min) {
+      if (taxInc >= band.min) {
         const inBand =
           Math.min(taxInc, upper) - (band.min > 0 ? band.min - 1 : 0);
         if (inBand > 0) gTax += inBand * (band.rate / 100);
@@ -80,8 +77,11 @@ export function PayeCalculator() {
   const salary = useMemo(() => {
     if (mode === "grossToNet" || inputAmount <= 0) return inputAmount;
     let lo = inputAmount;
-    let hi = inputAmount * 2.2 + 50000;
-    for (let i = 0; i < 40; i++) {
+    let hi = (inputAmount + pension) * 2.2 + 50000;
+    while (computeFromGross(hi) < inputAmount && hi < 1e10) {
+      hi *= 2;
+    }
+    for (let i = 0; i < 60; i++) {
       const mid = (lo + hi) / 2;
       if (computeFromGross(mid) < inputAmount) lo = mid;
       else hi = mid;
@@ -121,7 +121,7 @@ export function PayeCalculator() {
     let grossTax = 0;
     for (const band of payeData.payeBands) {
       const upper = band.max ?? Infinity;
-      if (taxableIncome > band.min) {
+      if (taxableIncome >= band.min) {
         const taxableInBand =
           Math.min(taxableIncome, upper) - (band.min > 0 ? band.min - 1 : 0);
         if (taxableInBand > 0) {

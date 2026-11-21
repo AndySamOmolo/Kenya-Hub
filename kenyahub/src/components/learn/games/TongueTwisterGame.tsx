@@ -89,6 +89,7 @@ export function TongueTwisterGame({
   onUpdateGameStats,
 }: GameProps) {
   const [round, setRound] = useState(0);
+  const [sessionSeed, setSessionSeed] = useState(0);
   const [score, setScore] = useState(0);
   const [tiles, setTiles] = useState<string[]>([]);
   const [selected, setSelected] = useState<number[]>([]);
@@ -103,7 +104,7 @@ export function TongueTwisterGame({
       (t) => t.languageId !== languageId
     );
     return [...langSpecific, ...shuffle(others)].slice(0, 5);
-  }, [languageId]);
+  }, [languageId, sessionSeed]);
 
   const current = deck[round];
   const expectedWords = useMemo(
@@ -173,6 +174,7 @@ export function TongueTwisterGame({
           type="button"
           onClick={() => {
             setRound(0);
+    setSessionSeed((s) => s + 1);
             setScore(0);
             setSessionDone(false);
           }}

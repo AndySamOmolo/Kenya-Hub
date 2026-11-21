@@ -2,7 +2,7 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
-import { Suspense, useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { Suspense, useState, useMemo, useEffect, useRef, useCallback, useDeferredValue } from "react";
 import { scrollToPageTop, scrollToTopIfScrolled } from "@/lib/scroll";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -42,6 +42,7 @@ export default function ToolsHubPage() {
     scrollToTopIfScrolled();
   }, [selectedCategory]);
   const [searchQuery, setSearchQuery] = useState("");
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   const [sortBy, setSortBy] = useState<"popular" | "alphabetical" | "category">("popular");
   const [pinnedToolSlugs, setPinnedToolSlugs] = useState<string[]>([]);
   const [visitCounts, setVisitCounts] = useState<Record<string, number>>({});
@@ -168,8 +169,8 @@ export default function ToolsHubPage() {
       tools = tools.filter((t) => t.category === selectedCategory);
     }
 
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
+    if (deferredSearchQuery.trim()) {
+      const q = deferredSearchQuery.toLowerCase();
       tools = tools.filter(
         (t) =>
           t.title.toLowerCase().includes(q) ||
@@ -194,7 +195,7 @@ export default function ToolsHubPage() {
       }
       return getToolUsageScore(b) - getToolUsageScore(a) || labelComparison;
     });
-  }, [selectedCategory, searchQuery, sortBy, visitCounts, mounted]);
+  }, [selectedCategory, deferredSearchQuery, sortBy, visitCounts, mounted]);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -232,7 +233,7 @@ export default function ToolsHubPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       {/* Header */}
-      <div className="mb-3 sm:mb-6">
+      <div className="mb-3.5 sm:mb-6">
         {activeCategoryInfo ? (
           <>
             <div className="flex items-center gap-2 text-xs text-text-muted mb-1.5">
@@ -246,22 +247,39 @@ export default function ToolsHubPage() {
               <span>/</span>
               <span className="text-gold font-semibold">{activeCategoryInfo.name}</span>
             </div>
-            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-1 sm:mb-2 flex items-center gap-2">
+            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-1.5 sm:mb-2 flex items-center gap-2">
               <DynamicIcon emoji={activeCategoryInfo.icon} className="w-[0.9em] h-[0.9em] text-gold shrink-0" />
               <span>{activeCategoryInfo.name}</span>
             </h1>
-            <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
-              {activeCategoryInfo.description} — {filteredTools.length} verified tool{filteredTools.length !== 1 ? "s" : ""} built for Kenya.
-            </p>
+            <div className="max-w-3xl border-l-2 border-gold/60 pl-3 py-0.5">
+              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+                {activeCategoryInfo.description} — {filteredTools.length} verified tool{filteredTools.length !== 1 ? "s" : ""} built for Kenya.
+              </p>
+            </div>
           </>
         ) : (
           <>
-            <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] mb-1.5 sm:mb-3">
-              <Wrench className="w-[0.9em] h-[0.9em] inline-block mb-1 text-gold mr-2" />All Tools
-            </h1>
-            <p className="text-xs sm:text-base text-text-secondary max-w-3xl leading-relaxed">
-              Explore {TOOLS.length} free digital tools, directories, and verified public data utilities built for Kenya — covering 2026 KRA PAYE taxes, Safaricom M-Pesa tariffs, KPLC electricity tokens, KUCCPS &amp; CBC education, NTSA transport, SHA hospitals, and 23 Kenyan language courses.
-            </p>
+            <div className="flex items-center justify-between gap-2 mb-1.5 sm:mb-2">
+              <h1 className="text-xl sm:text-3xl font-bold font-[family-name:var(--font-outfit)] flex items-center gap-2">
+                <Wrench className="w-[0.88em] h-[0.88em] text-gold shrink-0" />
+                <span>All Tools</span>
+              </h1>
+              <span className="text-[11px] sm:text-xs font-semibold text-gold bg-gold/10 border border-gold/25 px-2.5 py-0.5 rounded-full shrink-0">
+                {TOOLS.length} Free Utilities
+              </span>
+            </div>
+            <div className="max-w-3xl rounded-xl bg-bg-card/70 border border-border/70 border-l-2 border-l-gold px-3.5 py-2.5 space-y-1.5">
+              <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">
+                Free Kenyan calculators, directories, and verified public data utilities — running locally in your browser with official 2026 statutory rates.
+              </p>
+              <div className="flex flex-wrap items-center gap-1.5 text-[10.5px] sm:text-[11px] text-text-muted">
+                {["KRA PAYE & Tax", "M-Pesa Tariffs", "KPLC Tokens", "CBC & KUCCPS", "NTSA & Cars", "SHA Health", "23 Languages"].map((tag) => (
+                  <span key={tag} className="px-2 py-0.5 rounded-md bg-bg-elevated/80 border border-border/60 font-medium text-text-secondary">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
           </>
         )}
       </div>
@@ -448,7 +466,7 @@ export default function ToolsHubPage() {
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {filteredTools.map((tool) => {
             const cat = getCategoryInfo(tool.category);
             const accentColor = ({
@@ -468,48 +486,48 @@ export default function ToolsHubPage() {
                 key={tool.slug}
                 href={`/tools/${tool.slug}/`}
                 prefetch={false}
-                className="tool-card bg-bg-card border border-border rounded-2xl p-5 sm:p-5.5 block group w-full"
+                className="tool-card cv-auto bg-bg-card border border-border rounded-xl sm:rounded-2xl p-3.5 sm:p-4 block group w-full"
               >
-                <div className="flex items-center gap-3.5 mb-3">
+                <div className="flex items-center gap-3 mb-2">
                   <div
-                    className="w-12 h-12 rounded-xl border flex items-center justify-center shrink-0 transition-transform group-hover:scale-105"
+                    className="w-10 h-10 rounded-xl border flex items-center justify-center shrink-0 transition-transform group-hover:scale-105"
                     style={{
                       backgroundColor: `${accentColor}1A`,
                       borderColor: `${accentColor}38`,
                       color: accentColor,
                     }}
                   >
-                    <DynamicIcon emoji={tool.icon} className="w-5.5 h-5.5" />
+                    <DynamicIcon emoji={tool.icon} className="w-5 h-5" />
                   </div>
                   <div className="min-w-0 flex-1">
                     {cat && selectedCategory === "all" && (
-                      <div className="flex items-center gap-1.5 mb-1">
+                      <div className="flex items-center gap-1.5 mb-0.5">
                         <span
                           className="w-1.5 h-1.5 rounded-full shrink-0"
                           style={{ backgroundColor: accentColor }}
                         />
                         <span
-                          className="text-[0.6875rem] font-bold uppercase tracking-wider leading-snug"
+                          className="text-[0.65rem] font-bold uppercase tracking-wider leading-tight truncate"
                           style={{ color: accentColor }}
                         >
                           {cat.name}
                         </span>
                       </div>
                     )}
-                    <h2 className="text-base sm:text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
+                    <h2 className="text-[0.95rem] sm:text-base font-bold text-text-primary font-[family-name:var(--font-outfit)] group-hover:text-gold transition-colors leading-snug">
                       {tool.shortTitle}
                     </h2>
                   </div>
-                  <div className="w-9 h-9 rounded-full bg-bg-elevated flex items-center justify-center text-text-secondary group-hover:text-gold group-hover:bg-gold/10 transition-colors shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-bg-elevated flex items-center justify-center text-xs text-text-secondary group-hover:text-gold group-hover:bg-gold/10 transition-colors shrink-0">
                     →
                   </div>
                 </div>
-                <p className="text-sm text-text-secondary leading-relaxed mb-3.5 line-clamp-2">
+                <p className="text-xs sm:text-[0.8125rem] text-text-secondary leading-relaxed mb-2.5 line-clamp-2">
                   {tool.description}
                 </p>
-                <div className="pt-3 border-t border-border/60 flex items-center gap-2 text-xs text-text-muted leading-snug">
+                <div className="pt-2 border-t border-border/60 flex items-center gap-1.5 text-[0.7rem] sm:text-xs text-text-muted leading-snug">
                   <span className="text-kenya-green-light shrink-0">✓</span>
-                  <span>{tool.dataSource}</span>
+                  <span className="truncate">{tool.dataSource}</span>
                 </div>
               </Link>
             );

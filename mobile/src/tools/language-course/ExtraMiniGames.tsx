@@ -188,7 +188,7 @@ function MethaliBuilderMobile({
     const langItems = getCulturalWisdomForLanguage(languageId || "swahili").filter(
       (p) => p.nativeText && p.nativeText.trim().split(/\s+/).length >= 3
     );
-    if (langItems.length >= 4) return langItems;
+    if (langItems.length >= 3) return langItems;
     return CULTURAL_WISDOM.filter(
       (p) => p.nativeText && p.nativeText.trim().split(/\s+/).length >= 3
     );
@@ -1115,7 +1115,7 @@ function PolyglotBridgeMobile({
         <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
           <View style={[localStyles.tagPill, { backgroundColor: `${colors.gold}20`, borderColor: `${colors.gold}45` }]}>
             <Feather name="globe" size={11} color={colors.gold} />
-            <Text style={{ fontSize: 10.5, fontWeight: "800", color: colors.gold }}>Concept: {current.concept}</Text>
+            <Text style={{ fontSize: 10.5, fontWeight: "800", color: colors.gold }}>Concept: {picked !== null ? current.concept : '???'}</Text>
           </View>
           <Text style={{ fontSize: 10.5, color: colors.textMuted, flexShrink: 1 }} numberOfLines={1}>
             {current.family}

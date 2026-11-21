@@ -46,7 +46,7 @@ export function MethaliBuilderGame({
     const langItems = getCulturalWisdomForLanguage(languageId || "swahili").filter(
       (p) => p.nativeText && p.nativeText.trim().split(/\s+/).length >= 3
     );
-    if (langItems.length >= 4) return langItems;
+    if (langItems.length >= 3) return langItems;
     return CULTURAL_WISDOM.filter(
       (p) => p.nativeText && p.nativeText.trim().split(/\s+/).length >= 3
     );

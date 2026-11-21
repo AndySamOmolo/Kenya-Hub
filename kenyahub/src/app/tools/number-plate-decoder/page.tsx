@@ -43,10 +43,17 @@ export default function NumberPlateDecoderPage() {
 
     const prefix = cleaned.substring(0, 3);
 
-    // Check special plates first
+    // Check special plates first (strict County Govt regex so civilian KCG is never misclassified)
+    const isCountyGovt = /^(0?[1-9]|[1-3]\d|4[0-7])CG/.test(cleaned);
     for (const sp of plateData.specialPlates) {
-      if (cleaned.startsWith(sp.prefix) || (sp.prefix === "CG" && cleaned.includes("CG"))) {
-        const isEv = sp.prefix === "EV" || cleaned.startsWith("EVA");
+      const matchesSpecial =
+        sp.prefix === "CG"
+          ? isCountyGovt
+          : sp.prefix === "EV"
+          ? cleaned.startsWith("EVA") || cleaned.startsWith("EMAA") || cleaned.startsWith("EV")
+          : cleaned.startsWith(sp.prefix);
+      if (matchesSpecial) {
+        const isEv = sp.prefix === "EV" || cleaned.startsWith("EVA") || cleaned.startsWith("EMAA");
         return {
           type: isEv ? ("ev" as const) : ("special" as const),
           prefix: sp.prefix,

@@ -10641,6 +10641,30 @@
           "english": "Two (2)",
           "translation": "ĩrĩ",
           "context": "Kaikki.org Kikuyu Machine-Readable Dictionary (https://kaikki.org/dictionary/Kikuyu/pos-num/index.html, CC-BY-SA)"
+        },
+        {
+          "english": "Junior council of elders",
+          "translation": "Kiama cha kamatimo",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. I (pp. 209–229) · Councils / Governance (Part III, Ch. I) · Junior council of elders (one to three goats: Athuri cha imburi imwe / igiri / itatu)"
+        },
+        {
+          "english": "Senior council of elders authorized to try cases",
+          "translation": "Kiama cha athamaki",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. I (pp. 209–229) · Councils / Governance (Part III, Ch. I) · Senior council of elders authorized to try cases (four goats, five goats, and Athuri ya ukuru)"
+        },
+        {
+          "english": "Nine ewes paid to deceased's maternal uncle",
+          "translation": "Nyarume",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. II (pp. 230–238) · Murder Compensation Law (Part III, Ch. II)"
+        },
+        {
+          "english": "Three warrior leaders who scouted and led raids",
+          "translation": "Asigani",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. IV (pp. 244–249) · War & Peace (Part III, Ch. IV)"
         }
       ]
     },
@@ -16403,6 +16427,12 @@
           "english": "Body",
           "translation": "mwĩrĩ",
           "context": "Kaikki.org Kikuyu Machine-Readable Dictionary (https://kaikki.org/dictionary/Kikuyu/pos-noun/mwena--m%C5%A9cing%C5%A9.html, CC-BY-SA)"
+        },
+        {
+          "english": "Often spelt Gikuyu by missionaries",
+          "translation": "Kikuyu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Ethnonym · Often spelt Gikuyu by missionaries; singular Mu-Kikuyu, plural A-Kikuyu. An upland tribe in Kenya Colony extending from near Nairobi to Mount Kenya."
         }
       ]
     },
@@ -18431,6 +18461,18 @@
           "english": "Snake",
           "translation": "Ny-amū-ya-thī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
+        },
+        {
+          "english": "Portion of a ridge in Kikuyu owned by a particular",
+          "translation": "Gethaka",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Land Tenure / Law · Portion of a ridge in Kikuyu owned by a particular family, with title obtained from the Dorobo (original forest occupants); freehold or forest-clearing right for shambas (gardens)."
+        },
+        {
+          "english": "Literally the goat hut. It is synonymous with the hut",
+          "translation": "Thengira",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Architecture / Social · Literally the goat hut. It is synonymous with the hut in which the unmarried men sleep."
         }
       ]
     },
@@ -22215,6 +22257,18 @@
           "translation": "emogonda",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 248"
+        },
+        {
+          "english": "Masai word",
+          "translation": "Dorobo",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Masai (with Asi / Kikuyu Adzi)) · Hobley (1922), Glossary, pp. 305–308 · Ethnonyms / Glossary · Masai word (spelt Torobo by Hollis) often corrupted to Wandorobo/Andorobo; means tsetse fly in Masai; name for aboriginal forest hunters who call themselves Asi and are called Adzi by the Kikuyu (Athi River believed a corruption of Adzi)."
+        },
+        {
+          "english": "Stone anvil brought from the Ithanga hills",
+          "translation": "Ihiga ya uturi",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part II, Ch. I (pp. 167–176) · Smithing Guild (Part II, Ch. I)"
         }
       ]
     },
@@ -51172,6 +51226,12 @@
           "english": "Road",
           "translation": "N-jīra",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
+        },
+        {
+          "english": "A consultation by the elders",
+          "translation": "Njama",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Governance / Council · A consultation by the elders; the proceedings are generally secret."
         }
       ]
     },
@@ -53251,6 +53311,12 @@
           "english": "War",
           "translation": "M-bāra",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
+        },
+        {
+          "english": "Principal harvest and crops dance of young warriors",
+          "translation": "Kivata",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. VII (pp. 266–273) · Dances (Part III, Ch. VII)"
         }
       ]
     },
@@ -54906,6 +54972,84 @@
           "translation": "Gatumu",
           "pronunciation": "",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "First season: July to January",
+          "translation": "Kimera kya Mweli",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), pp. 37–38 · Season (circumcision in Ithereru, East)"
+        },
+        {
+          "english": "Second season: February to June",
+          "translation": "Kimera kya Njahi",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), pp. 37–38 · Season (circumcision in Ruguru, West)"
+        },
+        {
+          "english": "Rainy season (not a 12-month year)",
+          "translation": "Mwaka",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 37 · Calendar concept"
+        },
+        {
+          "english": "The West / The East",
+          "translation": "Ruguru / Ithereru",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Regional divisions"
+        },
+        {
+          "english": "Harvest (June & January)",
+          "translation": "Semisu",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Agricultural term"
+        },
+        {
+          "english": "July (1st month of Kimera kya Mweli)",
+          "translation": "Moriainyoni",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Clearing/burning grass; cool weather; ear-boring"
+        },
+        {
+          "english": "August (2nd month) & January (7th month, harvest)",
+          "translation": "Moga",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Digging shambas (Aug) / Harvest Semisu (Jan)"
+        },
+        {
+          "english": "September (3rd month) & February (1st month of Njahi)",
+          "translation": "Kihu",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Preparing shambas & sowing seed"
+        },
+        {
+          "english": "October (4th month) & March (2nd month of Njahi)",
+          "translation": "Sethanano",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Busy weeding in shambas"
+        },
+        {
+          "english": "November (5th month)",
+          "translation": "Kanyuahungo (or Tunto)",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Keeping birds off ripening crops"
+        },
+        {
+          "english": "December (6th month)",
+          "translation": "Keha",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Keeping birds off ripening crops"
+        },
+        {
+          "english": "April (3rd month of Njahi)",
+          "translation": "Mothato",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Crops ripening; circumcision in Ruguru (West)"
+        },
+        {
+          "english": "May (4th month of Njahi)",
+          "translation": "Mogilanjara",
+          "pronunciation": "",
+          "context": "K. R. Dundas (1909) Kikuyu Calendar · K. R. Dundas (1909), p. 38 · Crops nearly ripe; no work"
         }
       ]
     },
@@ -116367,6 +116511,24 @@
           "english": "real",
           "translation": "ma",
           "context": "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+        },
+        {
+          "english": "Ewe lamb, white heifer, ram, male goat, small stock",
+          "translation": "mwati, mori, ndorume, nthengi, mburi, miatini, Nyanya, Kenda, Ikumi",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 34–111 · Livestock / Calendar · Ewe lamb, white heifer, ram, male goat, small stock, sausage-tree beer fruit, Kamba month names"
+        },
+        {
+          "english": "Warrior class.",
+          "translation": "Mwanake (sg.); anake (pl.)",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Age-Grade"
+        },
+        {
+          "english": "A smith.",
+          "translation": "Muturi (sg.); aturi (pl.)",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Guild / Craft"
         }
       ]
     },
@@ -123657,6 +123819,198 @@
           "translation": "U-u-u-i",
           "pronunciation": "oo-oo-oo-ee",
           "context": "p. 98 ('the long repeated U-u-u-i (the A\\'kikuyu war-cry)') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
+        },
+        {
+          "english": "Ceremonial uncleanness / taboo state",
+          "translation": "thahu (nzahu) / thabu / makwa",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu / Kamba) · Hobley (1922), pp. 10, 102–118 · Taboo"
+        },
+        {
+          "english": "Deliberate or dying curse",
+          "translation": "kirume / kiume",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu / Kamba) · Hobley (1922), p. 10 · Curse"
+        },
+        {
+          "english": "Supreme Being, sun/God, ancestral spirits, life breath",
+          "translation": "Engai, Mulungu, Chua, Ngoma, Aiimu (Imu), ngo, ngere",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 22–31, 53–63 · Religion / Spirits"
+        },
+        {
+          "english": "First man (\"came out of earth\"), Kamba & Kikuyu medicine man",
+          "translation": "imuuma ndi, mundu mwei, mundu mugo",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba / Kikuyu) · Hobley (1922), pp. 26, 52 · Lore / Ritual"
+        },
+        {
+          "english": "Spirit-collecting forest tree, sacred fig",
+          "translation": "murema kiriti, mugumu, Kithangaona cha inja, Kithangona ya muchi, mathembo",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 28–65 · Shrines / Flora · Spirit-collecting forest tree, sacred fig (Ficus capensis), sacred shrine, village altar, Kamba shrines"
+        },
+        {
+          "english": "Stomach contents",
+          "translation": "tatha, muyo, ngorima, ichua, ivuvio, mathinjiro, ndundiru, tahika, ira, rukwaru, Ngemi",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 32–58, 83–106 · Sacrifice / Purification · Stomach contents (purification), sacrificial ram, fire place, sacred branches, ritual roast, lustration, white earth, skin bracelet, women's ululation"
+        },
+        {
+          "english": "Sacred oath object / Crop protection magic /",
+          "translation": "kithathi / kithito / ku-roga / mangu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 36, 70, 107–110 · Oath / Magic · Sacred oath object / Crop protection magic / Leprosy-like sickness"
+        },
+        {
+          "english": "Second birth rite, adoption, circumcision feast",
+          "translation": "Ku-chiaruo ringi, Ku-chiaruo kungi, Mambura, wakini, Morika (Rika), Maina/Mwangi, Irungi, itwika",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), pp. 77–96, 109 · Life-cycle / Governance · Second birth rite, adoption, circumcision feast, age-mates, generation sets, 15-year generational handover"
+        },
+        {
+          "english": "Burial cleansing, whetstone goat, succession duties",
+          "translation": "ku-hukura, nthenge ya noro, kirira, Kiama, Muthuri (Athuri), Athuri ya ukuru, Athamaki, mwirui, mbai, muthiani, thomi",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 17–117 · Governance / Law · Burial cleansing, whetstone goat, succession duties, elders' council, priestly elders, senior elders, clan, raid organiser, meeting place"
+        },
+        {
+          "english": "Bachelor hut, granaries, libation gourds, skewers",
+          "translation": "thengira, mukumbi, ikumba, ndayi, nzeli, ndara, ndala, mbugu, mithege, munyoro, kinyata, kigamba, kitaruru, ruenji, ndomi, ndivai, maigoia, ndogonyi, nyara runga, kiburuti, choro, ndamathia, mithiori, thiriga, kiaraini",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 34–114 · Material culture · Bachelor hut, granaries, libation gourds, skewers, divination stones, staff, ornaments, leg bell, tray, razor, wooden shield, forehead band, rattles, bull-roarer, bongo horn, mythic reptile, red ochre, refuse heap"
+        },
+        {
+          "english": "Name of a Kikuyu clan whose members are said to",
+          "translation": "Eithaga",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Clan / Magic · Name of a Kikuyu clan whose members are said to possess magical powers; sometimes spelt Aithaga (a member of this clan is called a Mweithaga)."
+        },
+        {
+          "english": "A mole-like rodent (Tachyorctes sp.).",
+          "translation": "Huku",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Fauna"
+        },
+        {
+          "english": "White diatomaceous earth also used in ceremonial as a",
+          "translation": "Ira",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Ritual / Purification · White diatomaceous earth also used in ceremonial as a purifying agent."
+        },
+        {
+          "english": "Periodic ceremony marking the termination of a",
+          "translation": "Itwika",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Ritual / Age-Grade · Periodic ceremony marking the termination of a generation or age in the tribe, corresponding in some ways to the Masai Eunoto ceremony."
+        },
+        {
+          "english": "To place upon or to bewitch.",
+          "translation": "Ku-roga",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Verb / Magic"
+        },
+        {
+          "english": "The dying curse which can be suspended over his",
+          "translation": "Kirume",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Curse / Law · The dying curse which can be suspended over his descendants by a dying man."
+        },
+        {
+          "english": "Athuri ya Ukuru—the senior elders.",
+          "translation": "Muthuri (sg.); athuri (pl.)",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Governance / Elders"
+        },
+        {
+          "english": "A young ewe which has not borne a lamb.",
+          "translation": "Mwati (sg.); miati (pl.)",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Livestock / Sacrifice"
+        },
+        {
+          "english": "An elder of council; his official title, not his grade rank.",
+          "translation": "Mathamaki (sg.); azamaki or athamaki (pl.)",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Governance / Title"
+        },
+        {
+          "english": "A ewe, which is also used as a sacrifice on certain",
+          "translation": "Ng̃ñondu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Livestock / Sacrifice · A ewe, which is also used as a sacrifice on certain occasions."
+        },
+        {
+          "english": "Generation—age grade.",
+          "translation": "Rika",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Age-Grade"
+        },
+        {
+          "english": "A strip of goat skin bound on the waist of a person to",
+          "translation": "Rukwaru",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Ritual / Adornment · A strip of goat skin bound on the waist of a person to signify that he has duly performed a certain ceremony."
+        },
+        {
+          "english": "A curse or afflicted by a curse—a condition which is",
+          "translation": "Thahu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Curse / Taboo · A curse or afflicted by a curse—a condition which is the result of certain acts, analogous to some forms of tabu."
+        },
+        {
+          "english": "The semi-digested vegetable matter which forms the",
+          "translation": "Tatha",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Ritual / Purification · The semi-digested vegetable matter which forms the contents of a sheep or goat. When an animal is sacrificed this is used as a purifying agent to remove evil. In Kamba language called muyo."
+        },
+        {
+          "english": "Traditional iron hammer used by Kikuyu smiths",
+          "translation": "Kiriha",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part II, Ch. I (pp. 167–176) · Smithing Guild (Part II, Ch. I)"
+        },
+        {
+          "english": "Clay tuyère pipe used with smith's bellows",
+          "translation": "Ngerrua",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part II, Ch. I (pp. 167–176) · Smithing Guild (Part II, Ch. I)"
+        },
+        {
+          "english": "Evil eye or person possessing envious power",
+          "translation": "Kithamengo",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part II, Ch. II (pp. 177–183) · Evil Eye / Magic (Part II, Ch. II)"
+        },
+        {
+          "english": "Blessing meaning \"may you be liked by council\"",
+          "translation": "Aroendwo na kiama",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. I (pp. 209–229) · Ritual Blessing / Saying (Part III, Ch. I)"
+        },
+        {
+          "english": "Murder compensation ceremonies meaning \"carrying the",
+          "translation": "Kugira uhio wa kuria mundu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. II (pp. 230–238) · Murder Compensation Law (Part III, Ch. II) · Murder compensation ceremonies meaning \"carrying the slain man\""
+        },
+        {
+          "english": "Kikuyu equivalent of the Kamba kithito oath",
+          "translation": "Kithathi",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. III (pp. 239–243) · Ceremonial Oaths (Part III, Ch. III)"
+        },
+        {
+          "english": "Oath of the sacred bead for debts or thieves",
+          "translation": "Chuma cha mchugu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. III (pp. 239–243) · Ceremonial Oaths (Part III, Ch. III)"
+        },
+        {
+          "english": "Oath that kills the swearer if broken",
+          "translation": "Muma",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. III (pp. 239–243) · Ceremonial Oaths (Part III, Ch. III)"
         }
       ]
     }

@@ -1384,5 +1384,16 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "Timely watering and a well-kept granary sustain the homestead.",
     "theme": "patience",
     "sourceCitation": "Lingua-Connect, English-Giriama-Dataset (Hugging Face Lingua-Connect/English-Giriama-Dataset, 2025, CC-BY-4.0)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-651a-b",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "Koromwe k'arina msena.",
+    "literalTranslation": "The koromwe has no friend.",
+    "meaning": "Unnumbered proverb quoted in §651a commentary",
+    "englishEquivalent": "The koromwe has no friend.",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891, Taylor (1891), §651a note, p. 156)"
   }
 ];

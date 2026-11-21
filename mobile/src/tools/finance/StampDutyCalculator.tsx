@@ -6,18 +6,8 @@ import { useDynamicStyles } from "../../theme";
 import { KESInput, StatCard, Row, createStyles } from "./shared";
 import stampData from "../../shared/data/stamp-duty-rates.json";
 
-const VAT_RATE = 0.16;
-
-// Advocates (Remuneration) (Amendment) Order 2014 — Schedule 1 (Scale 1: Sales & Purchases)
-// On KES 5,000,000: 1M @ 2.0% (20,000) + 4M @ 1.75% (70,000) = KES 90,000 (+ 16% VAT = KES 104,400)
-const ARO_2014_SCALE_1 = [
-  { min: 0, max: 1_000_000, rate: 2.0, label: "Up to KES 1M (2.0%)" },
-  { min: 1_000_001, max: 5_000_000, rate: 1.75, label: "KES 1M – 5M (1.75%)" },
-  { min: 5_000_001, max: 20_000_000, rate: 1.5, label: "KES 5M – 20M (1.5%)" },
-  { min: 20_000_001, max: 100_000_000, rate: 1.25, label: "KES 20M – 100M (1.25%)" },
-  { min: 100_000_001, max: Infinity, rate: 1.0, label: "Above KES 100M (1.0%)" },
-];
-const ARO_2014_MIN_FEE = 35_000;
+const VAT_RATE = (stampData.legalFeeVatPercent ?? 16) / 100;
+const ARO_2014_MIN_FEE = (stampData.conveyancingFees as any)[0]?.minFee ?? 35_000;
 
 /** 6. Stamp Duty Calculator (mirrors kenyahub/src/app/tools/stamp-duty-calculator/page.tsx) */
 function calcConveyancingAro2014(value: number) {
@@ -25,14 +15,15 @@ function calcConveyancingAro2014(value: number) {
   const breakdown: { band: string; amount: number }[] = [];
   let remaining = value;
 
-  for (const band of ARO_2014_SCALE_1) {
+  for (const band of stampData.conveyancingFees) {
     if (remaining <= 0) break;
+    const maxVal = band.max ?? Infinity;
     const width =
-      band.max === Infinity
+      maxVal === Infinity
         ? Infinity
         : band.min === 0
-        ? band.max
-        : band.max - band.min + 1;
+        ? maxVal
+        : maxVal - band.min + 1;
     const taxableInBand = Math.min(remaining, width);
     if (taxableInBand > 0) {
       const fee = Math.round(taxableInBand * (band.rate / 100));
@@ -65,15 +56,17 @@ export function StampDutyCalculator() {
       : stampData.stampDuty.rural;
     const stampDuty = Math.round(value * (rate / 100));
     const conveyancing = calcConveyancingAro2014(value);
-    const registrationFee = stampData.otherCosts.registrationFee;
-    const searchFee = stampData.otherCosts.searchFee;
-    const consent = stampData.otherCosts.consentToTransfer;
+    const registrationFee = value > 0 ? stampData.otherCosts.registrationFee : 0;
+    const searchFee = value > 0 ? stampData.otherCosts.searchFee : 0;
+    const consent = value > 0 ? stampData.otherCosts.consentToTransfer : 0;
     const total =
-      stampDuty +
-      conveyancing.totalWithVat +
-      registrationFee +
-      searchFee +
-      consent;
+      value > 0
+        ? stampDuty +
+          conveyancing.totalWithVat +
+          registrationFee +
+          searchFee +
+          consent
+        : 0;
     const percentOfValue =
       value > 0 ? Math.round((total / value) * 10000) / 100 : 0;
 

@@ -10,7 +10,7 @@
     "Kajiado",
     "Samburu"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-19",
   "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0).",
@@ -982,6 +982,12 @@
           "translation": "nabishana",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 249"
+        },
+        {
+          "english": "sixty and all numbers above it (innumerable)",
+          "translation": "ipi",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 42 · Numeral"
         }
       ]
     },
@@ -2668,6 +2674,24 @@
           "translation": "orlaiyon",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 248"
+        },
+        {
+          "english": "grand father",
+          "translation": "akwi",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 15 · Noun (akwilai = my grandfather)"
+        },
+        {
+          "english": "mamma (title for older female relatives)",
+          "translation": "jejo",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 45 · Kinship"
+        },
+        {
+          "english": "friend, brother",
+          "translation": "oido",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 56 · Social"
         }
       ]
     },
@@ -4438,6 +4462,24 @@
           "translation": "ngaiju",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 248"
+        },
+        {
+          "english": "perspiration",
+          "translation": "eng-ilan",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 41 · Body · 1857 form: ilan, eng."
+        },
+        {
+          "english": "pus, matter",
+          "translation": "eng-imek",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 41 · Body · 1857 form: imek, eng."
+        },
+        {
+          "english": "brains",
+          "translation": "eng-isisi",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 43 · Body · 1857 form: isisi, eng."
         }
       ]
     },
@@ -6773,6 +6815,12 @@
           "translation": "oloserai",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 249"
+        },
+        {
+          "english": "clear space outside settlement where cows are milked",
+          "translation": "aulo",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 18 · Pastoral"
         }
       ]
     },
@@ -8564,6 +8612,48 @@
           "translation": "Ongata Barta",
           "pronunciation": "",
           "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 91"
+        },
+        {
+          "english": "high strong grass (orl.); tender grass (en.)",
+          "translation": "gujida, orl",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 35 · Pastoral"
+        },
+        {
+          "english": "high strong grass (orl.); tender grass (en.)",
+          "translation": "en",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 35 · Pastoral"
+        },
+        {
+          "english": "fire (also powder)",
+          "translation": "eng-ima",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 41 · Noun · 1857 form: ima, eng."
+        },
+        {
+          "english": "to light a fire",
+          "translation": "inok, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 42 · Verb"
+        },
+        {
+          "english": "to rain",
+          "translation": "sa, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 64 · Verbs"
+        },
+        {
+          "english": "small stone, pebble",
+          "translation": "e-soid",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 64 · Nature · 1857 form: soid, e."
+        },
+        {
+          "english": "Masai word",
+          "translation": "Dorobo",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Masai (with Asi / Kikuyu Adzi)) · Hobley (1922), Glossary, pp. 305–308 · Ethnonyms / Glossary · Masai word (spelt Torobo by Hollis) often corrupted to Wandorobo/Andorobo; means tsetse fly in Masai; name for aboriginal forest hunters who call themselves Asi and are called Adzi by the Kikuyu (Athi River believed a corruption of Adzi)."
         }
       ]
     },
@@ -9620,6 +9710,42 @@
           "translation": "engerri / ingēringu",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 248"
+        },
+        {
+          "english": "crisp pieces of fat after grease boiled out",
+          "translation": "eng-awa",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 18 · Food · 1857 form: awa, eng."
+        },
+        {
+          "english": "water (lit. the roaring)",
+          "translation": "en-gare",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 30 · Nature · 1857 form: gare, en."
+        },
+        {
+          "english": "to breathe",
+          "translation": "ingneri, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 40 · Verb"
+        },
+        {
+          "english": "to drink",
+          "translation": "mad, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 47 · Verb"
+        },
+        {
+          "english": "to eat",
+          "translation": "nyia, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 55 · Verbs"
+        },
+        {
+          "english": "to draw or fetch water",
+          "translation": "ogu, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 56 · Verb"
         }
       ]
     },
@@ -13088,6 +13214,162 @@
           "translation": "endobera",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 249"
+        },
+        {
+          "english": "to be seen",
+          "translation": "doli, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 25 · Verb"
+        },
+        {
+          "english": "to sit, stay & live at a place",
+          "translation": "don, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 26 · Verb"
+        },
+        {
+          "english": "to fall",
+          "translation": "doye, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 26 · Verb"
+        },
+        {
+          "english": "to be dry, withered",
+          "translation": "doyo, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 26 · Verb"
+        },
+        {
+          "english": "to unloose, open",
+          "translation": "genu, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 31 · Verb"
+        },
+        {
+          "english": "to groan, snore, grumble; to strangle",
+          "translation": "gor, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 34 · Verb"
+        },
+        {
+          "english": "to turn, twist",
+          "translation": "gord, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 35 · Verb"
+        },
+        {
+          "english": "to absorb, swallow",
+          "translation": "ijo, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 40 · Verb"
+        },
+        {
+          "english": "to say",
+          "translation": "iro, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 42 · Verb"
+        },
+        {
+          "english": "to weep",
+          "translation": "isir, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 44 · Verb"
+        },
+        {
+          "english": "to give",
+          "translation": "iso, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 44 · Verb"
+        },
+        {
+          "english": "to hide, conceal",
+          "translation": "isudo, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 44 · Verb"
+        },
+        {
+          "english": "to flay",
+          "translation": "jeng, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 45 · Verbs"
+        },
+        {
+          "english": "to enter",
+          "translation": "jing, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 45 · Verbs"
+        },
+        {
+          "english": "to say or speak to",
+          "translation": "jo, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 45 · Verbs"
+        },
+        {
+          "english": "to tell",
+          "translation": "liki, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), pp. 46–47 · Verbs"
+        },
+        {
+          "english": "to vomit",
+          "translation": "lobiso, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), pp. 46–47 · Verbs"
+        },
+        {
+          "english": "to carry",
+          "translation": "nab, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 52 · Verb"
+        },
+        {
+          "english": "to wait for",
+          "translation": "nyu, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 55 · Verbs"
+        },
+        {
+          "english": "to bite",
+          "translation": "on, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 58 · Verb"
+        },
+        {
+          "english": "to crush",
+          "translation": "peda, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 59 · Verbs"
+        },
+        {
+          "english": "to revive",
+          "translation": "piu, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 59 · Verbs"
+        },
+        {
+          "english": "to be hot; fig. passionate, angry",
+          "translation": "roua, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 62 · Verb"
+        },
+        {
+          "english": "to love",
+          "translation": "sam, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 64 · Verbs"
+        },
+        {
+          "english": "to take up, catch up",
+          "translation": "uab, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 65 · Verbs"
+        },
+        {
+          "english": "to wash",
+          "translation": "uguo, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 65 · Verbs"
         }
       ]
     },
@@ -14562,6 +14844,18 @@
           "english": "the small beast of the snatcher",
           "translation": "Eng-owayu",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "to follow, go after",
+          "translation": "dubake, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 26 · Verb"
+        },
+        {
+          "english": "to rise & go away",
+          "translation": "inyododo, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 42 · Verb"
         }
       ]
     },
@@ -14687,6 +14981,18 @@
           "english": "buy",
           "translation": "enyāngu nenyong (sing.) / neginawng (pl.) Infin",
           "context": "Hildegarde Hinde, The Masai Language (1901)"
+        },
+        {
+          "english": "to trade, barter",
+          "translation": "ingnian, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 41 · Verb"
+        },
+        {
+          "english": "to buy",
+          "translation": "ingniangu, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 41 · Verb"
         }
       ]
     },
@@ -15755,6 +16061,12 @@
           "translation": "Ntʉ́ŋʉ́s",
           "pronunciation": "",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "to dawn",
+          "translation": "igenu, a",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 40 · Verb"
         }
       ]
     },
@@ -24749,6 +25061,84 @@
           "translation": "simé",
           "pronunciation": "",
           "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 95"
+        },
+        {
+          "english": "room, space",
+          "translation": "ala, el",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 15 · Noun"
+        },
+        {
+          "english": "hunger",
+          "translation": "ameu, orl",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 16 · Noun"
+        },
+        {
+          "english": "cough",
+          "translation": "eng-anirali",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 16 · Noun · 1857 form: anirali, eng."
+        },
+        {
+          "english": "calf, and any young heifer",
+          "translation": "ase, orl. (pl. ilaso)",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 17 · Pastoral"
+        },
+        {
+          "english": "mistress, lady",
+          "translation": "en-garsis",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 30 · Noun · 1857 form: garsis, en."
+        },
+        {
+          "english": "tobacco",
+          "translation": "gumbau, orl. (pl. ilgumbaun)",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 35 · Noun"
+        },
+        {
+          "english": "nose, small, flat",
+          "translation": "gume, en. (pl. ingumen)",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 35 · Body"
+        },
+        {
+          "english": "beard",
+          "translation": "muniei, orl. (pl. ilmunien)",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 51 · Body"
+        },
+        {
+          "english": "Banana tree",
+          "translation": "musalala, orl. (pl. ilmusalalan)",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 52 · Flora"
+        },
+        {
+          "english": "the field-rat",
+          "translation": "uda, eng. (pl. ingudan)",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 65 · Fauna"
+        },
+        {
+          "english": "live coals",
+          "translation": "eng-ukuo",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), pp. 65–66 · Nouns · 1857 form: ukuo, eng."
+        },
+        {
+          "english": "bellows",
+          "translation": "eng-unei",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), pp. 65–66 · Nouns · 1857 form: unei, eng."
+        },
+        {
+          "english": "scorpion",
+          "translation": "eng-ulapa",
+          "pronunciation": "",
+          "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), pp. 65–66 · Nouns · 1857 form: ulapa, eng."
         }
       ]
     },
@@ -28662,6 +29052,12 @@
           "translation": "Dorobo",
           "pronunciation": "doh-roh-boh",
           "context": "p. 18 ('a servile people named the Dorobo who have to obey the commands of their masters') — W. D. Hambly (1920), The Native Races of East Africa (Oxford University Press, Project Gutenberg #67513, Public Domain) — https://www.gutenberg.org/cache/epub/67513/pg67513-images.html"
+        },
+        {
+          "english": "A clan of serfs believed to be of alien race living",
+          "translation": "Konono",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Masai) · Hobley (1922), Glossary, pp. 305–308 · Social / Smiths · A clan of serfs believed to be of alien race living among the Masai who are the smiths to the tribe, corresponding to the Tumal of the Somalis."
         }
       ]
     }

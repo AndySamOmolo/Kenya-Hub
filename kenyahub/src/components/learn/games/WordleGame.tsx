@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState , useRef } from "react";
 import { Delete, RotateCcw, Share2, Sparkles, Calendar, Shuffle } from "lucide-react";
 import type { WordPair } from "@/data/courses/types";
-import { getPrimaryForm } from "@/lib/learn-engine";
+import { getPrimaryForm, transliterateToAscii } from "@/lib/learn-engine";
 import { getLocalDateString } from "@/lib/learn-progress";
 import {
   playKeyTapSfx,
@@ -24,11 +24,7 @@ import {
 type LetterStatus = "correct" | "present" | "absent" | "empty";
 
 function stripDiacriticsToAscii(str: string): string {
-  return getPrimaryForm(str)
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[ωΩ]/g, "o")
-    .replace(/ñ/g, "ng")
+  return transliterateToAscii(getPrimaryForm(str))
     .replace(/[^a-zA-Z]/g, "")
     .toLowerCase();
 }
@@ -74,6 +70,9 @@ export function WordleGame({
   const [revealedRows, setRevealedRows] = useState<Set<number>>(new Set());
   const [keyStatuses, setKeyStatuses] = useState<Record<string, LetterStatus>>({});
 
+  const progressRef = useRef(progress);
+  progressRef.current = progress;
+
   const pickNextTarget = useCallback(
     (mode: "daily" | "free") => {
       if (validWords.length === 0) return null;
@@ -83,9 +82,9 @@ export function WordleGame({
         const idx = Math.floor(rng() * validWords.length);
         return validWords[idx] || validWords[0];
       }
-      return pickAdaptiveWord(validWords, progress);
+      return pickAdaptiveWord(validWords, progressRef.current);
     },
-    [validWords, languageId, languageName, progress]
+    [validWords, languageId, languageName]
   );
 
   const resetBoard = useCallback(
@@ -275,7 +274,7 @@ export function WordleGame({
   ];
 
   const maskedExample = targetWord.example
-    ? targetWord.example.replace(new RegExp(targetWord.target, "gi"), "____")
+    ? targetWord.example.replace(new RegExp(targetWord.target.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), "____")
     : null;
 
   return (

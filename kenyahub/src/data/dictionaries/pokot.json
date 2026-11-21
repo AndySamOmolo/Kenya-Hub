@@ -9,7 +9,7 @@
     "West Pokot",
     "Baringo"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-19",
   "contributorNote": "Pokot (Pökoot / Suk / Bawgott) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 56–65, 72, Plates XV–XVII — audited 100% line-by-line across 11 geographical divisions, 5 pastoral divisions, 3 Kasauria migrations, 11 Hill Suk sections, 24 orten clans & totems, Ellap/Ellat, Mt. Alongol & Kerial religion, verbatim sick prayer, and 12-month Kamei/Bengat calendar), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0).",
@@ -31232,6 +31232,18 @@
           "english": "New",
           "translation": "alan",
           "context": "CLDF ASJP v20 Wordlist (POKOT, CC-BY-4.0)"
+        },
+        {
+          "english": "hut / homestead",
+          "translation": "manyatta",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Suk (Pokot)) · Hobley (1906), p. 478 · Dwelling"
+        },
+        {
+          "english": "Three Suk subdivisions",
+          "translation": "Kasawarie, Lagit (Legit), Kajiribkwa",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Suk (Pokot)) · Hobley (1906), pp. 474, 477 · Sections / Clans · Three Suk subdivisions (chiefs Lagwalan, Kamuta, Karorlay, Lotonyalli, Aribomoi)"
         }
       ]
     }

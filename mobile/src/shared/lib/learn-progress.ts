@@ -310,7 +310,7 @@ export function importAllProgressBackup(backupCode: string): number {
 
 export function refillHearts(progress: UserProgress): UserProgress {
   if (progress.hearts >= MAX_HEARTS) return progress;
-  const elapsed = Date.now() - (progress.heartsLastRefill || Date.now());
+  const elapsed = Math.max(0, Date.now() - (progress.heartsLastRefill || Date.now()));
   const heartsToAdd = Math.floor(elapsed / (HEART_REFILL_MINUTES * 60 * 1000));
   if (heartsToAdd <= 0) return progress;
   const nextHearts = Math.min(MAX_HEARTS, progress.hearts + heartsToAdd);
@@ -338,7 +338,7 @@ export function loseHeart(progress: UserProgress): UserProgress {
 
 export function minutesToNextHeart(progress: UserProgress): number {
   if (progress.hearts >= MAX_HEARTS) return 0;
-  const elapsed = Date.now() - (progress.heartsLastRefill || Date.now());
+  const elapsed = Math.max(0, Date.now() - (progress.heartsLastRefill || Date.now()));
   const remaining = HEART_REFILL_MINUTES * 60 * 1000 - (elapsed % (HEART_REFILL_MINUTES * 60 * 1000));
   return Math.max(1, Math.ceil(remaining / 60000));
 }
@@ -402,25 +402,7 @@ function evaluateAchievementsAndBonuses(
   updated: UserProgress,
   wasBelowDailyGoal: boolean
 ): UserProgress {
-  if (updated.dailyQuests) {
-    updated.dailyQuests.xpToday = updated.todayXp;
-    // All 3 Daily Quests displayed in SkillTree.tsx must be satisfied:
-    // 1. Complete 1 Lesson (lessonsToday >= 1)
-    // 2. Play 2 Mini-Games (gamesToday >= 2)
-    // 3. Earn Daily XP Goal (xpToday >= dailyGoal)
-    const all3Done =
-      updated.dailyQuests.lessonsToday >= 1 &&
-      updated.dailyQuests.gamesToday >= 2 &&
-      updated.dailyQuests.xpToday >= updated.dailyGoal;
-    if (all3Done && !updated.dailyQuests.chestClaimed) {
-      updated.dailyQuests = { ...updated.dailyQuests, chestClaimed: true };
-      updated.xp += XP_DAILY_QUEST_CHEST;
-      updated.todayXp += XP_DAILY_QUEST_CHEST;
-      updated.dailyQuests.xpToday = updated.todayXp;
-      updated.streakFreezes = Math.min(3, (updated.streakFreezes || 0) + 1);
-    }
-  }
-
+  // 1. Evaluate achievements first so achievement XP counts toward Daily Goal & Daily Quest Chest
   const newAchievements = [...updated.achievements];
   let achievementBonusXp = 0;
 
@@ -447,12 +429,29 @@ function evaluateAchievementsAndBonuses(
 
   updated.achievements = newAchievements;
 
-  // Evaluate daily goal bonus AFTER all lesson/perfect/quest/achievement bonuses are added
+  // 2. Evaluate Daily Goal bonus
   if (wasBelowDailyGoal && updated.todayXp >= updated.dailyGoal) {
     updated.xp += XP_DAILY_GOAL_BONUS;
     updated.todayXp += XP_DAILY_GOAL_BONUS;
-    if (updated.dailyQuests) {
+  }
+
+  // 3. Sync dailyQuests.xpToday and evaluate Daily Quest Chest AFTER all bonuses
+  if (updated.dailyQuests) {
+    updated.dailyQuests.xpToday = updated.todayXp;
+    // All 3 Daily Quests displayed in SkillTree.tsx must be satisfied:
+    // 1. Complete 1 Lesson (lessonsToday >= 1)
+    // 2. Play 2 Mini-Games (gamesToday >= 2)
+    // 3. Earn Daily XP Goal (xpToday >= dailyGoal)
+    const all3Done =
+      updated.dailyQuests.lessonsToday >= 1 &&
+      updated.dailyQuests.gamesToday >= 2 &&
+      updated.dailyQuests.xpToday >= updated.dailyGoal;
+    if (all3Done && !updated.dailyQuests.chestClaimed) {
+      updated.dailyQuests = { ...updated.dailyQuests, chestClaimed: true };
+      updated.xp += XP_DAILY_QUEST_CHEST;
+      updated.todayXp += XP_DAILY_QUEST_CHEST;
       updated.dailyQuests.xpToday = updated.todayXp;
+      updated.streakFreezes = Math.min(5, (updated.streakFreezes || 0) + 1);
     }
   }
 
@@ -487,7 +486,7 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
     dailyQuests: {
       ...currentQuests,
       lessonDone: currentQuests.lessonDone || result.accuracy >= 0.75,
-      lessonsToday: (currentQuests.lessonsToday || 0) + 1,
+      lessonsToday: (currentQuests.lessonsToday || 0) + (!result.reviewOnly && result.accuracy >= 0.6 ? 1 : 0),
       xpToday: baseTodayXp + totalEarned,
     },
     todayXp: baseTodayXp + totalEarned,
@@ -502,7 +501,9 @@ export function applyLessonResult(progress: UserProgress, result: LessonResult):
     }
   }
 
-  updated.lessonsCompleted += 1;
+  if (!result.reviewOnly && result.accuracy >= 0.6) {
+    updated.lessonsCompleted += 1;
+  }
   if (result.perfectLesson) {
     updated.perfectLessons = (updated.perfectLessons || 0) + 1;
   }

@@ -8,7 +8,7 @@
   "counties": [
     "Marsabit"
   ],
-  "hasAudio": true,
+  "hasAudio": false,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-18",
   "contributorNote": "Rendille (Af-Rendille) vocabulary compiled from Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 51, 66), C. W. Hobley (1910 \"Ethnology of A-Kamba and Other East African Tribes\"), Harold C. Fleming (1964), and Bernd Heine (1976). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0).",
@@ -1898,6 +1898,24 @@
           "translation": "in",
           "pronunciation": "in",
           "context": "CLDF ASJP v20 Wordlist (RENDILLE, CC-BY-4.0)"
+        },
+        {
+          "english": "\"We pray to God! We pray to M'baratien!\" / honey",
+          "translation": "Aman N'gai-ai! Aman M'baratien! / naischu",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Maa) · Arkell-Hardwick (1903), pp. 53, 242 · Ritual / Food"
+        },
+        {
+          "english": "Native names for Suk",
+          "translation": "Kaupe / Gurut / Reshiat / Marle / Borana",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Northern Kenya) · Höhnel (1894), pp. 185, 313; Arkell-Hardwick (1903), pp. 228–235 · Ethnonyms · Native names for Suk (Pokot), Daasanach (Reshiat), Marle, Borana"
+        },
+        {
+          "english": "stool, sword, salt, iron wire, bead strings, white",
+          "translation": "Karro, Simé, Sukuta, Senenge, Pombo, Sambaj, Samesame, Tcharra",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Northern Kenya trade) · Höhnel (1894), pp. 314–316 · Material / Trade · stool, sword, salt, iron wire, bead strings, white china beads, red Masai beads, large blue beads"
         }
       ]
     }

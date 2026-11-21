@@ -27,7 +27,7 @@ export default function CBCCurriculumPage() {
   const level = cbcData.levels.find((l) => l.id === selectedLevel)!;
 
   const gradeAgeResult = useMemo(() => {
-    const currentYear = 2026;
+    const currentYear = new Date().getFullYear();
     const turnsAge = currentYear - birthYear;
     const match = cbcData.gradeAgeMapping.find((m) => m.turnsAge === turnsAge);
     const idx = match ? cbcData.gradeAgeMapping.indexOf(match) : -1;
@@ -42,7 +42,7 @@ export default function CBCCurriculumPage() {
       turnsAge,
       currentGrade: match?.grade || (turnsAge < 4 ? "Pre-School / Daycare" : "Tertiary / University (Post-Grade 12)"),
       level: match?.level || (turnsAge < 4 ? "Early Childhood" : "Higher Education"),
-      previousEquivalent: match?.previousEquivalent || "Post-Secondary",
+      previousEquivalent: match?.previousEquivalent || (turnsAge < 4 ? "Home / Early Daycare" : "Post-Secondary"),
       nextMilestone,
     };
   }, [birthYear]);

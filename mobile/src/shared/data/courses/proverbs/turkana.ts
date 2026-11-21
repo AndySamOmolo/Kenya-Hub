@@ -11,7 +11,7 @@ export const TURKANA_PROVERBS: Proverb[] = [
     indigenous: "Ng'atuk nges akiyar",
     literalTranslation: 'Cattle are life itself.',
     meaning: 'In the arid Turkana basin, livestock provide milk, blood, meat, bridewealth, and social alliances; caring for the herd is caring for human survival.',
-    category: 'community',
+    category: 'unity',
     culturalNote: "In Ng'aturkana, 'ng'atuk' (cattle, singular 'aite') and 'akiyar' (life/survival) are culturally inseparable."
   },
   {
