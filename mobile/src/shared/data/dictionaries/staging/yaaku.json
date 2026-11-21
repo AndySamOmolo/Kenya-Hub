@@ -1,0 +1,1927 @@
+{
+  "languageId": "yaaku",
+  "languageName": "Yaaku (Mogogodo)",
+  "nativeName": "Yaakunte / Mogogodo",
+  "isoCode": "muu",
+  "family": "Afro-Asiatic (East Cushitic)",
+  "script": "Latin",
+  "counties": [
+    "Laikipia County (Mukogodo Forest)"
+  ],
+  "staging": true,
+  "dictionaryVersion": "1.0",
+  "lastUpdated": "2026-11-21",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": [
+        {
+          "english": "Salutation",
+          "translation": "Keshoboshon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · (Sobat of Masai) · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Salutation",
+          "translation": "Aishei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": [
+        {
+          "english": "One",
+          "translation": "Wēhet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Two",
+          "translation": "Chei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Three",
+          "translation": "Hāāt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Four",
+          "translation": "Shuen",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Five",
+          "translation": "Hobi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Six to Nine",
+          "translation": "Not obtainable",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral note printed verbatim by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Ten",
+          "translation": "Kapūn or Apūn",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Hundred",
+          "translation": "Teta",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "One bird",
+          "translation": "Legei wehet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two birds",
+          "translation": "Legei kechei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One elephant",
+          "translation": "Sogomei kibwehet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two elephants",
+          "translation": "Sogomedi kechei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One knife",
+          "translation": "Sheou wehetu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two knives",
+          "translation": "Sheou kechei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Three knives",
+          "translation": "Sheou khahaat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One house",
+          "translation": "Hai wehet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two houses",
+          "translation": "Hai kechei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One hand",
+          "translation": "Tegei wehetu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One lion",
+          "translation": "Sungai kiwehet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Three lions",
+          "translation": "Sungai khahaat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One axe",
+          "translation": "Egoi kiwehet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two axes",
+          "translation": "Egoi kechei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One spear",
+          "translation": "Tor kiwehet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two spears",
+          "translation": "Tor kechei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Three spears",
+          "translation": "Tor khahaat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two men",
+          "translation": "Ke chei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One woman",
+          "translation": "Damatut wehetu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two women",
+          "translation": "Damatuti chei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals (plural Damatuti) · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Three women",
+          "translation": "Damatuti khahaat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals (plural Damatuti) · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Conversation between two people",
+          "translation": "Maokhoten okōo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": [
+        {
+          "english": "Brother",
+          "translation": "Tei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Child, female",
+          "translation": "Kerai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Child, male",
+          "translation": "Utei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "Duru",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Father, own",
+          "translation": "Pashi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Father, else's",
+          "translation": "Payisi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (N. = Apoiyo) · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Friend",
+          "translation": "Darit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Girl, young",
+          "translation": "Eta",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Man",
+          "translation": "Iei or Sei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (Ke-Sei = that is a man), N. = chii · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Mother, own",
+          "translation": "Iyo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (N. = eiyo) · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Mother, else's",
+          "translation": "Itigarai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Sister",
+          "translation": "Tō",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Woman",
+          "translation": "Damatut",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Woman, old",
+          "translation": "Tasat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Woman, young",
+          "translation": "Siangiki (M.)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun; comparative note (M.) = Maasai · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Dining",
+      "icon": "🍲",
+      "entries": [
+        {
+          "english": "Food",
+          "translation": "Egetu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Honey",
+          "translation": "Seka",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Meat",
+          "translation": "Iyou",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Mtama (millet)",
+          "translation": "Not known",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · Printed as Not known by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Mahindi (maize)",
+          "translation": "Not known",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · Printed as Not known by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Milk",
+          "translation": "Atta",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Salt",
+          "translation": "Ngabulei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Water",
+          "translation": "Antu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "To milk",
+          "translation": "Ndiksa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I eat",
+          "translation": "Ndeta",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "We eat",
+          "translation": "Egitai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "They eat",
+          "translation": "Egeto (gihechen)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I go to water",
+          "translation": "Antu Khalkhani",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I drink (water)",
+          "translation": "Nukha (antu)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Directions",
+      "icon": "🧭",
+      "entries": [
+        {
+          "english": "Above",
+          "translation": "Aii",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · Mogogodo Vocabulary · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "All",
+          "translation": "Tukutuk",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · Mogogodo Vocabulary (Hobley notes: tukul = all, in Nandi) · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Go",
+          "translation": "Habi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Good",
+          "translation": "Shoboshōn",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Road",
+          "translation": "Dar",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "They have come from afar",
+          "translation": "Kesi Gedi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "To go",
+          "translation": "Nkhana",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Thou knowest",
+          "translation": "Geheno",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I do not go",
+          "translation": "Niakhani",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Negative verb phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "Where are you going",
+          "translation": "Shilākhandi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Interrogative phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I am good",
+          "translation": "Kongo shoboshon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Pronoun + Adjective phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "Thou art good",
+          "translation": "Kagu shoboshon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Pronoun + Adjective phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "He is good",
+          "translation": "Ke shoboshon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Pronoun + Adjective phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "We are good",
+          "translation": "Kege shoboshonadi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Pronoun + Adjective phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "They are good",
+          "translation": "Ke shoboshonadi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Pronoun + Adjective phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "Ye are good",
+          "translation": "Kabu shoboshonadi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Pronoun + Adjective phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time, Seasons & Calendar",
+      "icon": "⏰",
+      "entries": [
+        {
+          "english": "To-day",
+          "translation": "Achei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Adverb · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Yesterday",
+          "translation": "Khalen",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Adverb · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body & Health",
+      "icon": "🫀",
+      "entries": [
+        {
+          "english": "Arm",
+          "translation": "Tuggili",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · Mogogodo Vocabulary · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Armlet",
+          "translation": "Gaton",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · Mogogodo Vocabulary · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Back",
+          "translation": "Tolo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Beard",
+          "translation": "Munyei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · (M.²) — Footnote 2: (M.) = Masai root, (N.) Nandi root. · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Belly",
+          "translation": "Irei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Blood",
+          "translation": "Sogo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Bone",
+          "translation": "Mucho",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Chest",
+          "translation": "Shoo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Ear",
+          "translation": "Nibe",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Earth",
+          "translation": "Tirri",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Eyes",
+          "translation": "Ila",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Fingers",
+          "translation": "Hobi or Hubi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Foot",
+          "translation": "Mijji",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hair",
+          "translation": "Risit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hand",
+          "translation": "Tegei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Heart",
+          "translation": "Ichei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Head",
+          "translation": "Mitei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (N. = Metit) · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hide (any skin)",
+          "translation": "Keshi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Leg",
+          "translation": "Ochōt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Near",
+          "translation": "Tetōō",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Neck",
+          "translation": "Tochono",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Nose",
+          "translation": "Nugha",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Palm of hand",
+          "translation": "Dab",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Spear",
+          "translation": "Tōr",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Teeth",
+          "translation": "Injīt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Noun (plural) · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Tongue",
+          "translation": "Erei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Wildlife",
+      "icon": "🦁",
+      "entries": [
+        {
+          "english": "Animal",
+          "translation": "Henin",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · Mogogodo Vocabulary · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Bee",
+          "translation": "Keturit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Beehive",
+          "translation": "Merengo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Bird",
+          "translation": "Legei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Buffalo",
+          "translation": "Pie",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Camel",
+          "translation": "Laūr",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Colobus (monkey)",
+          "translation": "Koroi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Cowrie",
+          "translation": "Segherai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Cow",
+          "translation": "Wuat or Wāt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Crocodile",
+          "translation": "Keinyang",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · (M.), Nyang = crocodile in Tho-Luo · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Dog",
+          "translation": "Kwehen",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Donkey",
+          "translation": "Libet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Elephant",
+          "translation": "Sogome",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Fish",
+          "translation": "Singiri",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Fowl",
+          "translation": "Ngoilet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (N. = Ingokiet) · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Shanga Dogirri",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Goat",
+          "translation": "Oto",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Guinea fowl",
+          "translation": "Keresure",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hartebeest",
+          "translation": "(not known)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · Printed as (not known) by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hide (of ox)",
+          "translation": "Ata",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hide (of wild animal)",
+          "translation": "Omōt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hippo",
+          "translation": "Langari",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Horse",
+          "translation": "Barta",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Lake",
+          "translation": "Ando",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (variant of Antu = water) · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Leopard",
+          "translation": "Shibin",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Lion",
+          "translation": "Sungai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Ostrich",
+          "translation": "Sida",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Poison for arrows",
+          "translation": "Morijoi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · (name of tree used) M. Akokanthera Schimperi · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Rhinoceros",
+          "translation": "Orset",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Sheep",
+          "translation": "Abūr",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Snake",
+          "translation": "Murhot",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Snuff box",
+          "translation": "Ketil",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Zebra, Burchell’s",
+          "translation": "Ol-oserat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Zebra, Grevy’s",
+          "translation": "Ol-Kanka kepuni (grey)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun; parenthetical gloss (grey) printed by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "I want",
+          "translation": "Ngededi or Ngjeja",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "He wants",
+          "translation": "Jeji",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "He wants a thing",
+          "translation": "Kwi kijeji",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "We want",
+          "translation": "Jejon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "They want",
+          "translation": "Kejehen",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I do not want",
+          "translation": "Ngjeji",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Negative verb phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": [
+        {
+          "english": "Clouds",
+          "translation": "Katamboi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Fire",
+          "translation": "Iku",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Firewood",
+          "translation": "Keme",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Forest",
+          "translation": "Sousou",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (small woods) · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Forest (big)",
+          "translation": "Kaiet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Grass",
+          "translation": "Hilet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hill",
+          "translation": "Kaiet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Moon",
+          "translation": "Lei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Rain",
+          "translation": "Soho",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "River",
+          "translation": "Nogoi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Sandals",
+          "translation": "Namoke",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Star",
+          "translation": "Eso",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Stone",
+          "translation": "Tebu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Sun",
+          "translation": "Tezo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Tree",
+          "translation": "Keded",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun; Hobley note: tree = ketit in Nandi · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Wild fig tree",
+          "translation": "Chōl mokōt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Wind",
+          "translation": "Dehamu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Home & Everyday Objects",
+      "icon": "🏠",
+      "entries": [
+        {
+          "english": "Arrows",
+          "translation": "Lah",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Axe",
+          "translation": "Hegoi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Bow",
+          "translation": "Paha",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Cloth",
+          "translation": "Karasha",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Hut",
+          "translation": "Hai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Knife",
+          "translation": "Sheou",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Shield",
+          "translation": "Reget",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Stool",
+          "translation": "Lorigha (M.)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Noun; comparative note (M.) = Maasai · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Village",
+          "translation": "Luata",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Where is (Kibaradi)",
+          "translation": "Engado (Kibaradi)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Interrogative phrase; Hobley note: Kibaradi is a proper name · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "(Kibaradi says)",
+          "translation": "(Kibaradi) okhō",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Phrase; Hobley note: Kibaradi is a proper name · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "name": "Common Verbs & Actions",
+      "icon": "🏃",
+      "entries": [
+        {
+          "english": "To awake",
+          "translation": "Nakahou",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To bathe",
+          "translation": "Tohodi, Ntoka",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To Born",
+          "translation": "Adilit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb (printed as \" Born under To awake) · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To cut",
+          "translation": "Nakati",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To fall",
+          "translation": "Nachokei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To follow",
+          "translation": "Khabi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To forget",
+          "translation": "Nashanet, Shaanu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To give",
+          "translation": "Iin",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To love",
+          "translation": "Mala",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "To obtain",
+          "translation": "Kendēr",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "To return",
+          "translation": "Naecho",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "To scratch",
+          "translation": "Kahata",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "Give me",
+          "translation": "Iisee",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I know",
+          "translation": "Ngeheno",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "He knows",
+          "translation": "Cheheno or chegekeheno",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "We know",
+          "translation": "Kegeheni or Gaiheno",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I do not know",
+          "translation": "Ishahanu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Negative verb phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I can't see anything",
+          "translation": "Ngnen toiyi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Negative verb phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I say",
+          "translation": "Nokhāa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "He says",
+          "translation": "Okhoi or okhō",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I sleep",
+          "translation": "Nbomwa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "He sleeps",
+          "translation": "Nbomi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "We sleep",
+          "translation": "Nabomi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "They sleep",
+          "translation": "Nebomin",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "I sit",
+          "translation": "Ngupehema",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "He sits",
+          "translation": "Akupehem",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "We sit",
+          "translation": "Nkupehemu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "They sit",
+          "translation": "Akupehemit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "I am coming",
+          "translation": "Nalehe",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "He is coming",
+          "translation": "Alehe",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "We are coming",
+          "translation": "Nalehenu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "They are coming",
+          "translation": "Lehei or keselehei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        },
+        {
+          "english": "Take hold of",
+          "translation": "Injan",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Verb / Phrase (final entry of vocabulary) · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "Descriptive Adjectives",
+      "icon": "✨",
+      "entries": [
+        {
+          "english": "Bad",
+          "translation": "Tepiter",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Big",
+          "translation": "Tein or Tihin",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Black",
+          "translation": "Kumbu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Cold",
+          "translation": "Demato",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Long since",
+          "translation": "Etirak",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Red",
+          "translation": "Wehen",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Small",
+          "translation": "Tinīn",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "White",
+          "translation": "Pokenyei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Adjective · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "He is bad",
+          "translation": "Ke tepiter",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Pronoun + Adjective phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/155/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "Trade, Money & Measures",
+      "icon": "🛒",
+      "entries": []
+    },
+    {
+      "id": "emergency",
+      "name": "Health, Safety, Law & Conflict",
+      "icon": "🚨",
+      "entries": [
+        {
+          "english": "Moran (warrior)",
+          "translation": "Oromishi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Sick",
+          "translation": "Lua",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Thief",
+          "translation": "Shibindet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Wart-hog",
+          "translation": "Kwehei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "To die",
+          "translation": "Akehet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "name": "Common Expressions & Vocabulary",
+      "icon": "💬",
+      "entries": [
+        {
+          "english": "Ashes",
+          "translation": "Romi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Baboon",
+          "translation": "Titarit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Beads",
+          "translation": "Siririm",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Before (place)",
+          "translation": "Ietu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Behind",
+          "translation": "Rosomai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Below",
+          "translation": "Diberi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 147 · https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up"
+        },
+        {
+          "english": "Brass wire",
+          "translation": "Oton",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Buttocks",
+          "translation": "Kashi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Cap",
+          "translation": "Karanda",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Chain",
+          "translation": "Monhorit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Clean",
+          "translation": "Tetet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Club",
+          "translation": "Kuma",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Country, land",
+          "translation": "Dimin",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Cover or lid",
+          "translation": "Imni",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Dirty",
+          "translation": "Duruk",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Egg",
+          "translation": "Kechoposhon?",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · ? printed by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Eland",
+          "translation": "Kenetia",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Enemy",
+          "translation": "Puri",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Excrement",
+          "translation": "Jūūn",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Far",
+          "translation": "Tisseggei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluoft/page/148/mode/1up"
+        },
+        {
+          "english": "Fly",
+          "translation": "Esanit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Frog",
+          "translation": "Temononi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Generation or age",
+          "translation": "Erei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (Poror of Masai) · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Grey",
+          "translation": "Kepuni",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Heifer",
+          "translation": "Rehei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Here",
+          "translation": "Taān",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Horn",
+          "translation": "Opet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluoft/page/149/mode/1up"
+        },
+        {
+          "english": "Hyaena",
+          "translation": "Kotei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Inside",
+          "translation": "Irei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (N. = oriit) · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Iron",
+          "translation": "Sengei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Ivory",
+          "translation": "Inji",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Kudu",
+          "translation": "Malo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Lies",
+          "translation": "Sobare",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Moru (elder)",
+          "translation": "Roshei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Nails",
+          "translation": "Sgilli",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Name",
+          "translation": "Ishi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "News",
+          "translation": "Ogo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "No",
+          "translation": "Keiolei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Not yet",
+          "translation": "Erotit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Now",
+          "translation": "Auteti",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Oryx",
+          "translation": "Kimasarok",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (M.) · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Outside",
+          "translation": "Bor",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Paa, Madoqua Gazelle",
+          "translation": "Embaba",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluoft/page/150/mode/1up"
+        },
+        {
+          "english": "Penis",
+          "translation": "Shabo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Pincers",
+          "translation": "Putet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Present (noun)",
+          "translation": "Parna",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Quickly",
+          "translation": "Habie",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Quiver (noun)",
+          "translation": "Ror",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Rat",
+          "translation": "Daroni",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Saliva",
+          "translation": "Endo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Serval cat",
+          "translation": "Not known",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Printed as Not known by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Simé (sword)",
+          "translation": "Shutei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Stick",
+          "translation": "Siribit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Supreme being",
+          "translation": "Sokho or Engai (M.)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Noun; comparative note (M.) = Maasai · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Tail",
+          "translation": "Kidongoi (M.)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Noun; comparative note (M.) = Maasai · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "That is",
+          "translation": "Kisie",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Phrase / Demonstrative · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "Thing",
+          "translation": "Kesi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/151/mode/1up"
+        },
+        {
+          "english": "There",
+          "translation": "Soōl",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Adverb · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Thorn",
+          "translation": "Orulo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Thirst",
+          "translation": "Esho",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Tobacco",
+          "translation": "Kumbahau",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "To-morrow",
+          "translation": "Imehei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Adverb · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Truly",
+          "translation": "Kitēēgo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Adverb · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Urine",
+          "translation": "Kusa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Work",
+          "translation": "Shasho",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Yes",
+          "translation": "Ii",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Interjection / Particle · https://archive.org/details/ethnologyofakamb00hobluoft/page/152/mode/1up"
+        },
+        {
+          "english": "Two hands",
+          "translation": "Tegei cheion or jejon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Two lions",
+          "translation": "Sungai muchei or kechei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "One man",
+          "translation": "Kib wehet or kesei wehet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "Three men",
+          "translation": "Kha haat or kesei khahaat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "To bring",
+          "translation": "Ilehei (cause to come)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Verb; parenthetical gloss (cause to come) printed by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/153/mode/1up"
+        },
+        {
+          "english": "He eats",
+          "translation": "Egeto (giheji) = (food)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase; parenthetical gloss = (food) printed by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "They know",
+          "translation": "Chegehen or kisei chekehen (those people)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase; parenthetical gloss (those people) printed by Hobley · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I do not see",
+          "translation": "Ila teetei or Ngnen a waakan",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Negative verb phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "I see",
+          "translation": "Ndoyia or Na waakhi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "We say",
+          "translation": "Nini okan or ogoo okan",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        },
+        {
+          "english": "They say",
+          "translation": "Okoyan or yesaga okan",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/details/ethnologyofakamb00hobluoft/page/154/mode/1up"
+        }
+      ]
+    },
+    {
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
+      "icon": "📖",
+      "entries": [
+        {
+          "english": "Small tribe inhabiting the foothills on the N. side of",
+          "translation": "Mogogodo / Mokogodo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 146 · Ethnonym · https://archive.org/details/ethnologyofakamb00hobluoft/page/146/mode/2up · Small tribe inhabiting the foothills on the N. side of Mount Kenia"
+        },
+        {
+          "english": "Former name of the Mogogodo tribe",
+          "translation": "Il Mwesi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 146 · Ethnonym (historical) · https://archive.org/details/ethnologyofakamb00hobluoft/page/146/mode/2up"
+        },
+        {
+          "english": "District on the slopes of Mount Kenia formerly inhabited by",
+          "translation": "Pore",
+          "pronunciation": "",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 146 · Toponym · https://archive.org/details/ethnologyofakamb00hobluoft/page/146/mode/2up · District on the slopes of Mount Kenia formerly inhabited by the Mogogodo"
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 \"English-Kikuyu Hand-Book\", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904), Rev. A. W. McGregor (1904 \"English-Kikuyu Vocabulary\", C.M.S. / SPCK London, Fort Smith / Kabeti 1901–1902, pp. i–iv, 5–192 [PDF pp. 1–201]), W. Scoresby & Katherine Routledge (1910), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0)).",
   "categories": [
     {
@@ -10665,6 +10665,72 @@
           "translation": "Asigani",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. IV (pp. 244–249) · War & Peace (Part III, Ch. IV)"
+        },
+        {
+          "english": "1",
+          "translation": "imue",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "2",
+          "translation": "igiri",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "3",
+          "translation": "ithatu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "4",
+          "translation": "inya",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "5",
+          "translation": "ithanu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "6",
+          "translation": "thanthatu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "7",
+          "translation": "muguanja",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "8",
+          "translation": "inyanya",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "9",
+          "translation": "ikenda",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "10",
+          "translation": "ikumi",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "100",
+          "translation": "igana",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
         }
       ]
     },
@@ -12797,6 +12863,18 @@
           "english": "Parent",
           "translation": "mũciari",
           "context": "Kaikki.org Kikuyu Machine-Readable Dictionary (https://kaikki.org/dictionary/Kikuyu/pos-noun/mwena--m%C5%A9cing%C5%A9.html, CC-BY-SA)"
+        },
+        {
+          "english": "Administrator, n. / Chief, n. / King",
+          "translation": "Muthamaki (A-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 10, 32, 95 · Governance · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Child, n. / Son",
+          "translation": "Mwana (Chiana)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 32, 159 · Kinship · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
         }
       ]
     },
@@ -16433,6 +16511,42 @@
           "translation": "Kikuyu",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Ethnonym · Often spelt Gikuyu by missionaries; singular Mu-Kikuyu, plural A-Kikuyu. An upland tribe in Kenya Colony extending from near Nairobi to Mount Kenya."
+        },
+        {
+          "english": "arm (the whole)",
+          "translation": "kuwoko",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 4–5 · Anatomy · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "spear",
+          "translation": "itumu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 54–55 · Weapons · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Blood, n. / Gore",
+          "translation": "Thakami / Thakame",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 24, 76 · Anatomy · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Farm, n. / Field, n. / Garden",
+          "translation": "Mugunda (Mi-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 63, 65, 72 · Agriculture · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Spear, n. / Javelin",
+          "translation": "Itimu (Ma-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 93, 160 · Weapons · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Blood",
+          "translation": "Sakamé. N·ŧakame",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -18473,6 +18587,48 @@
           "translation": "Thengira",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Architecture / Social · Literally the goat hut. It is synonymous with the hut in which the unmarried men sleep."
+        },
+        {
+          "english": "Portion of a ridge in Kikuyu owned by a particular family",
+          "translation": "Gethaka",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Land Tenure / Law · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · Portion of a ridge in Kikuyu owned by a particular family, with title obtained from the Dorobo (original forest occupants); freehold or forest-clearing right for shambas (gardens)."
+        },
+        {
+          "english": "Literally the goat hut. It is synonymous with the hut in",
+          "translation": "Thengira",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Architecture / Social · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · Literally the goat hut. It is synonymous with the hut in which the unmarried men sleep."
+        },
+        {
+          "english": "bird",
+          "translation": "nyunni",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 6–7 · Fauna · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Banana, n. / Plantain",
+          "translation": "Irigo (Ma-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 19, 133 · Agriculture/Food · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Barrel (honey) / Beehive",
+          "translation": "Mwatu (Mi-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 19, 21 · Beekeeping · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Animal, wild beast",
+          "translation": "Ny·amω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Elephant",
+          "translation": "N·jωgu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -22269,6 +22425,30 @@
           "translation": "Ihiga ya uturi",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part II, Ch. I (pp. 167–176) · Smithing Guild (Part II, Ch. I)"
+        },
+        {
+          "english": "River, n. / Brook",
+          "translation": "Ro'e (Njo'e)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 27, 152 · Geography · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Stone",
+          "translation": "Ihiga (Mahiga)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), p. 162 · Nature · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Tree, n. / Timber",
+          "translation": "Muti (Miti)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 169, 173 · Flora · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Fire",
+          "translation": "Mω·aki",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -40073,6 +40253,24 @@
           "english": "Knife",
           "translation": "hiū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
+        },
+        {
+          "english": "Bag, n. / Basket",
+          "translation": "Kiondo (Chi-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 18, 20 · Material Culture · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "House (for males) / Hut (for men)",
+          "translation": "Thingira (Ma-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 84–85 · Architecture · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt"
+        },
+        {
+          "english": "House",
+          "translation": "Ny·umba. Ka·ŧunω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -49472,6 +49670,12 @@
           "english": "Bad / Fierce",
           "translation": "ũru",
           "context": "Kaikki.org Kikuyu Machine-Readable Dictionary (https://kaikki.org/dictionary/Kikuyu/pos-adj/index.html, CC-BY-SA)"
+        },
+        {
+          "english": "Cold",
+          "translation": "Hehω Bebω (11a)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 99 · Noun (11a = Meru) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -51232,6 +51436,24 @@
           "translation": "Njama",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Governance / Council · A consultation by the elders; the proceedings are generally secret."
+        },
+        {
+          "english": "god",
+          "translation": "ngaii",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 28–29 · Religion · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Council, n. / Law",
+          "translation": "Chira (Ma-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 40, 98 · Governance/Law · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "God",
+          "translation": "Ŋ·gai ; ma·kai",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 101 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -53317,6 +53539,12 @@
           "translation": "Kivata",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. VII (pp. 266–273) · Dances (Part III, Ch. VII)"
+        },
+        {
+          "english": "Medicine, n. / Drug",
+          "translation": "Muthaiga (Mi-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 52, 109 · Medicine · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
         }
       ]
     },
@@ -121840,6 +122068,132 @@
           "translation": "kũhũra maaĩ na ndĩrĩ",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "dance",
+          "translation": "wathi",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 16–17 · Culture/Music · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Salutation / Reply",
+          "translation": "mwohoro / mwohoro mwega",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kikuyu Jogowini) · Hinde (1904), pp. 74–75 · Greeting · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Mount Kenia",
+          "translation": "Kirinyaga / Kilinyatha, Kireira",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), p. iv, p. 95 · Toponym (Preface p. iv gives Kirinyaga; p. 95 gives Kilinyatha. Kireira.) · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt"
+        },
+        {
+          "english": "Abode",
+          "translation": "Nyumba (s. & p.), Muchiyi (Mi-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), p. 6 · Architecture/Settlement · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Cattle, n. / Cow",
+          "translation": "Ng'ombe (s. & p.)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 31, 40 · Livestock · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Country, n. / District, n. / Land",
+          "translation": "Porori (Ma-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 40, 49, 97 · Geography · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Father (my / your / his or her)",
+          "translation": "Baba (Maithi) / Thoguo / Ithi",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), p. 63 · Kinship · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt"
+        },
+        {
+          "english": "Iron",
+          "translation": "Kegera (I-) / Kigera",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 92, 111 · Metallurgy · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Mother (my / your / his or hers)",
+          "translation": "Maito / Nyukwa / Nyina",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), p. 114 · Kinship (pl. all persons: Manyina) · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt"
+        },
+        {
+          "english": "Arm",
+          "translation": "U·ωkω ; m·ωkω. Ku·ωkω or Gu·ωkω ; m·ωkω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 98 · Noun (sg. ; pl.) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Arrow",
+          "translation": "Mω·gue ; pl. me·gue. Mŭ·gūi, Mu·gwe (11a)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 98 · Noun (11a = Meru) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Bow",
+          "translation": "Ω·ttá, U·ta, U·taa (11a)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 99 · Noun (11a = Meru) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Chief",
+          "translation": "Mo·zamaki. Mu·ŧamaki",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 99 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Child",
+          "translation": "Mw·ana ; pl. ci·ana or si·ana. K·ana ; tw·ana. Ka·regω ; tω- ♀",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Eye",
+          "translation": "Di·zω or Ri·ŧω ; ma·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 100 · Noun (Ki·mωne = eyelid) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Man",
+          "translation": "Mu·ndu ; pl. a·ndu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 103 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Sun",
+          "translation": "Li·yūa, Ri·ua ; ma-. N·jua",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 105 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Water",
+          "translation": "Ma·e. Rω·e, Ru·gi (11 a)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 106 · Noun (11a = Meru) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "E·müĕ / I·hiri (·iri) / I·zatu or I·ŧatu / I·nya, ·nna / I·zanω. I·ŧanu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 107 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Six / Seven / Eight / Nine / Ten",
+          "translation": "Sasatω. I·tandatu / Ŋ·gūānja, Mu·guanja / Nyanya, ·nana / K·enda / I·kumi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 107 · Numerals 6–10 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·ria / ·kua / ·menya / ·enda / ·ōna",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, pp. 110–111 · Verb roots (prefix Kω·, Ku·, Gu·) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -129322,6 +129676,132 @@
           "translation": "Muma",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. III (pp. 239–243) · Ceremonial Oaths (Part III, Ch. III)"
+        },
+        {
+          "english": "Sacred oath object / Crop protection magic / Leprosy-like",
+          "translation": "kithathi / kithito / ku-roga / mangu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 36, 70, 107–110 · Oath / Magic · https://www.gutenberg.org/files/67426/67426-h/67426-h.htm · Sacred oath object / Crop protection magic / Leprosy-like sickness"
+        },
+        {
+          "english": "Second birth rite, adoption, circumcision feast, age-mates",
+          "translation": "Ku-chiaruo ringi, Ku-chiaruo kungi, Mambura, wakini, Morika (Rika), Maina/Mwangi, Irungi, itwika",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), pp. 77–96, 109 · Life-cycle / Governance · https://www.gutenberg.org/files/67426/67426-h/67426-h.htm · Second birth rite, adoption, circumcision feast, age-mates, generation sets, 15-year generational handover"
+        },
+        {
+          "english": "Name of a Kikuyu clan whose members are said to possess",
+          "translation": "Eithaga",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Clan / Magic · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · Name of a Kikuyu clan whose members are said to possess magical powers; sometimes spelt Aithaga (a member of this clan is called a Mweithaga)."
+        },
+        {
+          "english": "Periodic ceremony marking the termination of a generation",
+          "translation": "Itwika",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Ritual / Age-Grade · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · Periodic ceremony marking the termination of a generation or age in the tribe, corresponding in some ways to the Masai Eunoto ceremony."
+        },
+        {
+          "english": "The dying curse which can be suspended over his descendants",
+          "translation": "Kirume",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Curse / Law · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · The dying curse which can be suspended over his descendants by a dying man."
+        },
+        {
+          "english": "A ewe, which is also used as a sacrifice on certain occasions.",
+          "translation": "Ng̃ñondu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Livestock / Sacrifice · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39"
+        },
+        {
+          "english": "A curse or afflicted by a curse—a condition which is the",
+          "translation": "Thahu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Curse / Taboo · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · A curse or afflicted by a curse—a condition which is the result of certain acts, analogous to some forms of tabu."
+        },
+        {
+          "english": "The semi-digested vegetable matter which forms the contents",
+          "translation": "Tatha",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Glossary, pp. 305–308 · Ritual / Purification · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · The semi-digested vegetable matter which forms the contents of a sheep or goat. When an animal is sacrificed this is used as a purifying agent to remove evil. In Kamba language called muyo."
+        },
+        {
+          "english": "Murder compensation ceremonies meaning \"carrying the slain man\"",
+          "translation": "Kugira uhio wa kuria mundu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu) · Hobley (1922), Part III, Ch. II (pp. 230–238) · Murder Compensation Law (Part III, Ch. II) · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic"
+        },
+        {
+          "english": "Adult (young man) / Warrior",
+          "translation": "Mwanake (A-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 11, 183 · Social Grade · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Adult (old man) / Elder",
+          "translation": "Muthuri (A-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 11, 55 · Social Grade · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Alms, n. / Offering (sacrifice)",
+          "translation": "Igongona (Ma-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 14, 122 · Ritual/Religion · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt"
+        },
+        {
+          "english": "Burial-place, n. / Grave (tomb)",
+          "translation": "Mbirira (s. & p.)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 28, 76 · Death/Ritual · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt"
+        },
+        {
+          "english": "Divine, to (foretell) / Prophesy, to",
+          "translation": "Koragura",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 50, 138 · Ritual (Muraguri (A-) = Foreteller / Prophet, pp. 69, 138) · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt"
+        },
+        {
+          "english": "Doctor, n. / Medicine-man / Physician",
+          "translation": "Mundu mugo (A-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 50, 109, 132 · Ritual/Medicine · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Family, n. / Nation, n. / Tribe",
+          "translation": "Muhiriga (Mi-)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 62, 116, 173 · Clan/Social Structure · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Heart, n. / Soul",
+          "translation": "Ngoro (s. & p.)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 81, 160 · Anatomy/Spiritual · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Magic, n. / Witchcraft",
+          "translation": "Orogi",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 105, 188 · Ritual (Murogi (A-) = Magician/Wizard, pp. 105, 189) · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Oath, to take an (take ordeal cup) / Ordeal cup",
+          "translation": "Konyua muma / Muma",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 120, 124 · Law/Ritual · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Sin",
+          "translation": "Mugiru (Migiri), Thahu",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), p. 157 · Ritual/Taboo · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
+        },
+        {
+          "english": "Spirit, n. / Apparition",
+          "translation": "Ngoma (s. & p.)",
+          "pronunciation": "",
+          "context": "McGregor (1904) English-Kikuyu Vocabulary · McGregor (1904), pp. 16, 160 · Religion · https://archive.org/stream/englishkikuyuvo00mcgrgoog/englishkikuyuvo00mcgrgoog_djvu.txt · POS: n."
         }
       ]
     }
@@ -129329,5 +129809,5 @@
   "source": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kik",
   "glottocode": "kiku1240",
-  "totalEntries": 23168
+  "totalEntries": 23248
 }

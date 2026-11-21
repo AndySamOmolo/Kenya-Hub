@@ -5189,6 +5189,131 @@ const _commercialTextDatasetSources: LanguageSource[] = [
     ],
     "ingestionStatus": "integrated",
     "coverageNote": "Registered in scripts/ingest-cldf-wikimedia-civic.py."
+  },
+  {
+    "id": "barton-kipsikis-1923",
+    "title": "Notes on the Kipsikis or Lumbwa Tribe of Kenya Colony (JRAI Vol. 53, 1923)",
+    "fileName": "https://zenodo.org/records/2389051/files/article.pdf",
+    "canonicalUrl": "https://zenodo.org/records/2389051/files/article.pdf",
+    "languages": [
+      "kalenjin"
+    ],
+    "published": "1923 (Journal of the Royal Anthropological Institute, Vol. 53)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "67 verified Kipsigis (Kipsikis) clan, warrior-division, age-set (Ipinda), and customary/ceremonial vocabulary entries by Juxon Barton.",
+    "appUses": [
+      "dictionary",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "67 verified Kipsigis entries ingested into kalenjin.json."
+  },
+  {
+    "id": "hollis-vumba-1900",
+    "title": "Notes on the History of Vumba, East Africa (JRAI Vol. 30, 1900, pp. 275–297)",
+    "fileName": "https://zenodo.org/records/2359283/files/article.pdf",
+    "canonicalUrl": "https://zenodo.org/records/2359283/files/article.pdf",
+    "languages": [
+      "swahili",
+      "mijikenda"
+    ],
+    "published": "1900 (Journal of the Royal Anthropological Institute, Vol. 30)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "33 verified Kivumba Swahili, Kidigo, and Kisegeju historical sultanate, toponym, and coastal vocabulary entries by A. C. Hollis.",
+    "appUses": [
+      "dictionary",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "33 verified Kivumba, Kidigo, and Kisegeju entries ingested into swahili.json and mijikenda.json."
+  },
+  {
+    "id": "fsi-swahili-basic-1963",
+    "title": "Swahili Basic Course (Foreign Service Institute, U.S. Department of State, 1963)",
+    "fileName": "https://archive.org/details/Fsi-SwahiliBasicCourse-StudentText",
+    "canonicalUrl": "https://archive.org/details/Fsi-SwahiliBasicCourse-StudentText",
+    "languages": [
+      "swahili"
+    ],
+    "published": "1963 (Foreign Service Institute — US Federal Gov Public Domain)",
+    "license": "Public Domain (US Federal Government Work)",
+    "category": "modern-monograph",
+    "contribution": "32 verified Standard Swahili conversational dialogues, greeting sequences, and grammar drill phrases.",
+    "appUses": [
+      "dictionary",
+      "course"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue",
+      "grammar"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "32 verified FSI Swahili dialogue and phrase entries ingested into swahili.json."
+  },
+  {
+    "id": "peace-corps-kenya-kiswahili-1995",
+    "title": "Kiswahili Competency Based Manual (Revised, Peace Corps Kenya, 1995)",
+    "fileName": "https://files.eric.ed.gov/fulltext/ED401760.pdf",
+    "canonicalUrl": "https://files.eric.ed.gov/fulltext/ED401760.pdf",
+    "languages": [
+      "swahili"
+    ],
+    "published": "1995 (Peace Corps Kenya — US Federal Gov Public Domain)",
+    "license": "Public Domain (US Federal Government Work)",
+    "category": "modern-monograph",
+    "contribution": "26 verified Kenyan Swahili everyday dialogues, social titles, and practical cultural usage notes.",
+    "appUses": [
+      "dictionary",
+      "course",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "dialogue",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "26 verified Peace Corps Kenya Kiswahili entries ingested into swahili.json."
+  },
+  {
+    "id": "hobley-yaaku-mogogodo-1910",
+    "title": "Ethnology of A-Kamba and Other East African Tribes — Yaaku (Mogogodo) Vocabulary & Mweru/Samburu/Laikipiak/Elgeyo/Uasingishu Appendices (pp. 146–164)",
+    "fileName": "https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up",
+    "canonicalUrl": "https://archive.org/details/ethnologyofakamb00hobluoft/page/147/mode/1up",
+    "languages": [
+      "yaaku",
+      "meru",
+      "samburu",
+      "maasai",
+      "kalenjin"
+    ],
+    "published": "1910 (Cambridge University Press)",
+    "license": "Public Domain (Pre-1931 US)",
+    "category": "historical-pd",
+    "contribution": "300 scan-verified Yaaku (Mogogodo, ISO muu) vocabulary/grammar entries plus 164 Mweru (Meru), Samburu, Laikipiak, Elgeyo, and Uasingishu ethnographic entries.",
+    "appUses": [
+      "Yaaku staging dictionary",
+      "dictionary",
+      "cultural reference"
+    ],
+    "contentTypes": [
+      "vocabulary",
+      "grammar",
+      "cultural-reference"
+    ],
+    "ingestionStatus": "integrated",
+    "coverageNote": "300 Yaaku/Mogogodo entries staged in dictionaries/staging/yaaku.json and 164 ethnographic entries integrated across meru, samburu, maasai, and kalenjin."
   }
 ];
 

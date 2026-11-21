@@ -1395,5 +1395,86 @@ export const MIJIKENDA_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "The koromwe has no friend.",
     "theme": "wisdom",
     "sourceCitation": "W. E. Taylor, African Aphorisms (1891, Taylor (1891), §651a note, p. 156)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-p12-635d",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "Iyuñayo ndiye ikit'a-yo (t' ?).",
+    "literalTranslation": "The arrows that go waveringly are the ones that hit!",
+    "meaning": "The arrows that go waveringly are the ones that hit!",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §635d, p. 147)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-p12-637",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "Kula neno rina kipindi-che. (Or, Kula neno rina kiasi-che.)",
+    "literalTranslation": "Everything (lit. word) has its time. (Or: Everything has its measure.)",
+    "meaning": "Everything (lit. word) has its time. (Or: Everything has its measure.)",
+    "theme": "patience",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §637, p. 149)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-p12-638",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "Mugema k'azika nine (Digo, mameye, Rabai and Giryama).",
+    "literalTranslation": "The toddy-tapper buries not his mother.",
+    "meaning": "The toddy-tapper buries not his mother.",
+    "theme": "family",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §638, p. 150)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-p12-640c",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "Mukongo k'avagirwa (-w- ?) ngwe.",
+    "literalTranslation": "A man must not have his cultivating patch marked out for him when he is sick. (Lit., apparently, A sick man has not marked out for him the line of cultivation.)",
+    "meaning": "A man must not have his cultivating patch marked out for him when he is sick. (Lit., apparently, A sick man has not marked out for him the line of cultivation.)",
+    "theme": "hard-work",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §640c, p. 151)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-p12-647c",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "Nyani anatsekana ngoko (or, ts'ugu.",
+    "literalTranslation": "Apes laugh at one another's naked posteriors (lit. callosities).",
+    "meaning": "Proverb (verbatim unclosed parenthesis in print)",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §647c, p. 153)",
+    "englishEquivalent": "Proverb (verbatim unclosed parenthesis in print)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-p12-648",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "Nyoka yuluma afikirevo (or -wo ?).",
+    "literalTranslation": "The snake is wont to bite where he has reached.",
+    "meaning": "The snake is wont to bite where he has reached.",
+    "theme": "nature",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §648, p. 154)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-p12-651a",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "U koromwe! (or goromwe?)",
+    "literalTranslation": "You are a koromwe lizard!",
+    "meaning": "You are a koromwe lizard!",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §651a, p. 156)"
+  },
+  {
+    "id": "taylor-1891-mijikenda-p12-662",
+    "languageId": "mijikenda",
+    "languageName": "Mijikenda (Kinyika / Kigiriama)",
+    "indigenous": "Varivo (Wariwo ?) k'uku k'avamwagwa (k'awamwagwa) umera.",
+    "literalTranslation": "Where fowls are, the moistened grain (or malt) is not scattered about.",
+    "meaning": "Where fowls are, the moistened grain (or malt) is not scattered about.",
+    "theme": "nature",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §662, p. 159)"
   }
 ];

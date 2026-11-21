@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-18",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Taveta (Kitaveta / Kituweta) vocabulary compiled from Rev. A. R. Steggall (1892–1906), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), A. C. Hollis (1910–1911), Sir Harry H. Johnston (1919 #15), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
@@ -610,6 +610,12 @@
           "english": "Man",
           "translation": "nduwakiume",
           "context": "CLDF ASJP v20 Wordlist (TAVETA, CC-BY-4.0)"
+        },
+        {
+          "english": "Man",
+          "translation": "Mu·ndu ; wa·ndu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 103 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -1125,6 +1131,24 @@
           "english": "Liver",
           "translation": "ndulandeni",
           "context": "CLDF ASJP v20 Wordlist (TAVETA, CC-BY-4.0)"
+        },
+        {
+          "english": "Arm",
+          "translation": "Mu·kωnω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Eye",
+          "translation": "J·isω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Head",
+          "translation": "M·twi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -1469,6 +1493,12 @@
           "english": "Louse",
           "translation": "da",
           "context": "CLDF ASJP v20 Wordlist (TAVETA, CC-BY-4.0)"
+        },
+        {
+          "english": "Elephant",
+          "translation": "N·zωwu, N·zωbu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -1874,6 +1904,18 @@
           "english": "Mountain",
           "translation": "mbaha",
           "context": "CLDF ASJP v20 Wordlist (TAVETA, CC-BY-4.0)"
+        },
+        {
+          "english": "Fire",
+          "translation": "Mō·tω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 100 · Noun (Errata p. x: M·otω) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Sun",
+          "translation": "I·zuwu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 105 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -2091,6 +2133,12 @@
           "english": "To eat",
           "translation": "la",
           "context": "CLDF ASJP v20 Wordlist (TAVETA, CC-BY-4.0)"
+        },
+        {
+          "english": "Water",
+          "translation": "M·bombe",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 106 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -2383,6 +2431,12 @@
           "english": "Stool",
           "translation": "vi-tī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 15. Taveita"
+        },
+        {
+          "english": "Bow",
+          "translation": "Wu·ta ; mawu·ta",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -2850,6 +2904,12 @@
           "translation": "Sumu yedi",
           "pronunciation": "su-mu ye-di",
           "context": "Rev. A. R. Steggall (1892) & Wikipedia Taveta_language • Cross-verified with CLDF ASJP v20 TAVETA"
+        },
+        {
+          "english": "Cold",
+          "translation": "M·behω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -2996,6 +3056,12 @@
           "english": "Good",
           "translation": "edi",
           "context": "CLDF ASJP v20 Wordlist (TAVETA, CC-BY-4.0)"
+        },
+        {
+          "english": "God",
+          "translation": "I·zuwa",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 101 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -3519,6 +3585,48 @@
           "translation": "Lu-kōmbwe; ṅ-gōmbwe",
           "pronunciation": "lu-kōmbwe",
           "context": "Comparative Kitaveta Vocabulary (Johnston 1919 Vol. I)"
+        },
+        {
+          "english": "Arrow",
+          "translation": "M·wasa. M·vwi ; mi·vwi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Chief",
+          "translation": "M·fumwa. M·fumu. M·gωsi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 99 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Child",
+          "translation": "Mw·ana (m·doñgω) ; wa·ana (wa·doñgω). Kamw·ana",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "House",
+          "translation": "Ny·umba (square). I·anda (round)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "M·ωsi. ·mwe / Eri, ·eri / ·tatu / ·nne / ·sanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 107 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Six / Seven / Eight / Nine / Ten",
+          "translation": "Tandatu / Fuñgata. M·fuñgate / Nane / K·enda / I·kumi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, p. 107 · Numerals 6–10 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·la / ·fwa / ·tisiwa / ·kunda, ·kundie / ·wωna. ·iyuwa",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (15. Taveita) · Johnston (1919), Vol. I, pp. 110–111 · Verb roots (prefix Ku·) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -3932,5 +4040,5 @@
   "source": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "tvs",
   "glottocode": "tave1238",
-  "totalEntries": 667
+  "totalEntries": 685
 }

@@ -17,7 +17,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Kalenjin (Nandi / Kipsigis [Lumbwa / Il Kakesan] / Keiyo / Tugen [Kamasia: Kapteberewa & Nderois] / Marakwet & Endo [Chebleng] / Kabkamat [Olmo] / Sangwirr / Uasin Gishu [Moiven / Muttia / Il-Mokwan / I-Sirikwa]) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–72 — audited 100% line-by-line across all 13 Maragwetta/Ndo sections, 14 Kapteberewa & 6 Nderois Kamasia clans & totems, 5 hill-tribe calendars, irrigation & land-sale laws, and Plate XVII), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0)).",
   "categories": [
     {
@@ -1369,6 +1369,114 @@
           "translation": "tomon",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "county / counties",
+          "translation": "emet (pl. emotinuek)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 4 · Geographical division (six counties, incl. Masop, Aldai, Em-gwen) · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "age or cycle",
+          "translation": "ipinda",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 12 · Seven circumcision age-sets in a cycle (~53 years) · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "one (1)",
+          "translation": "Akenge",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "two (2)",
+          "translation": "Aeñg or oieñg",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "three (3)",
+          "translation": "Somok",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "four (4)",
+          "translation": "Añgwan",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "five (5)",
+          "translation": "Mut",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "six (6)",
+          "translation": "Illo or kullo",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "seven (7)",
+          "translation": "Tisap",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "eight (8)",
+          "translation": "Sisiit",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "nine (9)",
+          "translation": "Sokol",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "ten (10)",
+          "translation": "Taman",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "twenty (20)",
+          "translation": "Tiptem",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "sixty (60)",
+          "translation": "Tomonuagik illo",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "seventy (70)",
+          "translation": "Tomonuagik tisap",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "eighty (80)",
+          "translation": "Tomonuagik sisiit",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "ninety (90)",
+          "translation": "Tomonuagik sokol",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "hundred (100)",
+          "translation": "Pokol",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Fn. 2: often used for everything above fifty; Pokol ak akenge = 101 · https://archive.org/details/nanditheirlangua00holl"
         }
       ]
     },
@@ -3413,6 +3521,168 @@
           "translation": "paipai",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "spokesman or counsellor",
+          "translation": "Kiruogindet (pl. Kiruogik)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 48 · District ruler chosen by the people · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "2nd husband",
+          "translation": "kipkondiit",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 92 · Husband's brother after husband's decease (indirect) · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "wife",
+          "translation": "kwando / kaita",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct; senior wife kwando ne-oo, junior wife kwando ne-mining · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "co-wife",
+          "translation": "siyet / siyén-nyō",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "daughter",
+          "translation": "lakwet / lakwán-ni",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "father's mother; mother's mother",
+          "translation": "ingoget / koko",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "father's elder brother",
+          "translation": "kwanda ne-oo",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect; younger brother kwanda ne-mining · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "father's sister",
+          "translation": "senget / senge",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "mother's brother; mother's brother's wife; mother's brother's son",
+          "translation": "imamet / mama",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "father's sister's husband; daughter's husband; sister's husband",
+          "translation": "sandit / sandanaa",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "grandson / granddaughter",
+          "translation": "machokoret / machokorón-ni",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "wife's father; wife's brother",
+          "translation": "káp-yukoiit / apoiyo",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "wife's mother",
+          "translation": "karukinit / karucho",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "wife's sister; husband's brother; brother's wife",
+          "translation": "pamurto / pamuru",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "wife's sister's husband",
+          "translation": "lemenyit / lemény-i",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "husband's father",
+          "translation": "pamoñget / pamoñgo",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "husband's mother",
+          "translation": "pōkirto / pōkir",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "husband's sister",
+          "translation": "kamatit / kamát-i",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "husband's brother's wife",
+          "translation": "pokinit / pokin-i",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "eldest child of a family",
+          "translation": "kiporetit or taeta",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 94 · Birth-order kinship term · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "youngest child",
+          "translation": "toet",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 94 · Birth-order kinship term · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "intervening children",
+          "translation": "chep-kwen",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 94 · Birth-order kinship term · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "wife",
+          "translation": "kaita",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 51 · Used by husbands instead of wives' personal names · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "maternal uncle",
+          "translation": "mama",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 52 fn. 2 · Kinship term · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "stinging nettles",
+          "translation": "siek",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 53, 62, 64 · Used during boys' and girls' initiation rites · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "whittled and decorated wand of a boy initiate",
+          "translation": "kosisitiet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 57 · Given to the father in exchange for a present · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "betrothal visit / journey by groom's father",
+          "translation": "koita",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 70 · Marriage custom · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
         }
       ]
     },
@@ -5920,6 +6190,30 @@
           "translation": "keldo",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "northern county of Kipsigis country",
+          "translation": "Belkut",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 45 · Explained as from bel/pel (\"to brand\") and kut (\"the mouth\") · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "southern county of Kipsigis country",
+          "translation": "Sotik",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 46 · Named after a Kisii named Masoti near Motigo Hill at Soot · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "advisory leader / spokesman",
+          "translation": "kirowokindet (pl. kirowokik)",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 46, 49 · Head of a puriet, koret, or kokwet · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "unlucky",
+          "translation": "ngwen",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 66 · Applied to a girl if water enters her mouth or lizard refuses to crawl over her · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
         }
       ]
     },
@@ -8827,6 +9121,42 @@
           "translation": "ērēn",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "a white-sided ox",
+          "translation": "Kibeni",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 46 · Warrior division (puriet); associates with Kasanet in war · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "male personal name (from kolit, a white goat)",
+          "translation": "Kipkoli",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 47 · Naming custom after post-homicide seclusion · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "sponsors / attendants of initiates",
+          "translation": "moterenik (sg. moteriot)",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 51, 62 · Appointed in senior and junior rank for each menjit · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "stole-like necklace of cowries and beads",
+          "translation": "semonok",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 64 · Placed inside tama-terit · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "cattle boma / kraal",
+          "translation": "kaptich",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 65 · Girls build miniature kaptich during seclusion · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Cattle-fold",
+          "translation": "karaiĭa",
+          "pronunciation": "",
+          "context": "Hobley (1902) Eastern Uganda (Nandi) · Hobley (1902), p. 64 · Livestock · https://archive.org/details/b2488554x/page/64/mode/1up"
         }
       ]
     },
@@ -13016,6 +13346,18 @@
           "translation": "penda",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "eleusine grain / maize",
+          "translation": "pek / pandek",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 67 · Staple grain vs. introduced maize (1915) · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "spoon",
+          "translation": "sosiot",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 71–72 · Used for butter anointing at betrothal/marriage · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
         }
       ]
     },
@@ -15630,6 +15972,18 @@
           "english": "granary (Sengwer / Sabaot)",
           "translation": "cʌ́ʌkè (Sengwer) / cʌʌk(e) (Sabaot)",
           "context": "Sengwer–Sabaot cognate comparison (89) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "the long shields",
+          "translation": "Kipkaigeh or Koilonget",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 46 · Warrior division (puriet); paired with Kamngagarek group · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "cotton trade cloth (Amerikani)",
+          "translation": "Longit",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 68 · Customary/trade vocabulary · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
         }
       ]
     },
@@ -21631,6 +21985,12 @@
           "english": "middle / the middle (Sengwer)",
           "translation": "kwéen(u) (sg.) / kwéenûut (def.)",
           "context": "Sengwer ghost vowel /u/ paradigm (102) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "representative of the Orkoiyot",
+          "translation": "Maotiot (pl. Maotik)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 48 · District co-governor · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
         }
       ]
     },
@@ -23020,6 +23380,18 @@
           "english": "try in court (imp.) / trial / the trial (Sengwer)",
           "translation": "rwʌ́ʌc (imp. try in court) / kíi-rwʌ̀ʌk(-ʌ) (trial) / kíi-rwʌ̀ʌk-éet (the trial)",
           "context": "Sengwer legal verb & deverbal noun (84–85) • Falletti, F. & Remijsen, B. (2025) \"Ghost segments in Sengwer nouns\", Glossa: a journal of general linguistics 10(1) (https://www.glossa-journal.org/article/id/16526/, DOI: https://doi.org/10.16995/glossa.16526, CC-BY-4.0)"
+        },
+        {
+          "english": "rough shelters of branches / the reivers",
+          "translation": "Kasanet or Koterik",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 46 · Warrior division (puriet); paired with Kibeni as Mweitan · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "paired warrior divisions (Kasanet + Kibeni)",
+          "translation": "Mweitan",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 46 · Same name used by a section of Uasin Gishu Masai · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
         }
       ]
     },
@@ -24083,6 +24455,60 @@
           "translation": "Kipsuunde nebo aeng’",
           "pronunciation": "",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "inner enclosure built within the menjit hut",
+          "translation": "tomnet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 54, 56 · Built during the third month of seclusion · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "time of big rains",
+          "translation": "Iwat kut",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), p. 162 · Month name (1) · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "rains",
+          "translation": "Maumūt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), p. 162 · Month name (2); macron over second u (ū) · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "Month name (3)",
+          "translation": "Wagi or waki",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), p. 162 · Month name (3) · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "Month name (4)",
+          "translation": "Engnei or Ngnei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), p. 162 · Month name (4) · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "Month name (5)",
+          "translation": "Robtui",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), p. 162 · Month name (5) · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "(this month commenced 27/7/06)",
+          "translation": "Puret",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), p. 162 · Month name (6) — \"(this month commenced 27/7/06)\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Month name (6)"
+        },
+        {
+          "english": "listed twice consecutively",
+          "translation": "Kipsundei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), p. 162 · Month names (7) and (8) — listed twice consecutively · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Month names (7) and (8)"
+        },
+        {
+          "english": "Month name (11)",
+          "translation": "Ngnotiotu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), p. 162 · Month name (11) · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
         }
       ]
     },
@@ -29978,6 +30404,90 @@
           "translation": "kericho",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "father",
+          "translation": "kwanda or kwanit / papa, apoiyo, pakwa",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 92 · Indirect / direct address: (boy) papa, (man) apoiyo, (girl or woman) pakwa · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "mother",
+          "translation": "kamet or kametit / eiyo, korket",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 92 · Indirect / direct address: (boy, girl or woman) eiyo, (man) korket · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "brother",
+          "translation": "tupchet or ñget-ap-kamet / tete",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 92 · Indirect / direct address: (girl or woman) tete or by name · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "sister",
+          "translation": "tupchet or chep-kamet / tete, lakwán-ni",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 92 · Indirect / direct address by boy or man · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "husband",
+          "translation": "manoñgotiot / manoñgotiondón-ni, murenón-ni, poiyondón-ni",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 92 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "son",
+          "translation": "lakwet / lakwán-ni, weir-i, apoiyo",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "father's father; mother's father",
+          "translation": "inguget / agwi, kuko",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 93 · Indirect / direct address · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "thirty (30)",
+          "translation": "Sosom or tomonuagik somok",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "forty (40)",
+          "translation": "Artam or tomonuagik añgwan",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "fifty (50)",
+          "translation": "Konom or tomonuagik mut",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 183 · Cardinal numeral · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "bee",
+          "translation": "segemya (segemyat), pl. segem (segemek)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), pp. 238–239 · Drone: chepkopirio (chepkopiriot), pl. chepkopiren (chepkopirēnik) (p. 239) · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "belly",
+          "translation": "mo (moiet), pl. mootinus (mootinuek)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 239 · Core vocabulary · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "Turraea sp. (near T. Mombasa)",
+          "translation": "sitiyo (sitiyot), pl. sitiin (sitiinik)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 313 · Plant/tree (Meliaceae), Appendix I · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "the opening of the path / \"Open the way\"",
+          "translation": "Oiyotwa Oret / Oyotwon oret",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 57, 67 · Gate-barrier rite at the close of initiation seclusion · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
         }
       ]
     },
@@ -45292,6 +45802,738 @@
           "translation": "Ngaboto",
           "pronunciation": "",
           "context": "Hobley (1906) Baringo District (Ogiek (Dorobo) / Turkana) · Hobley (1906), p. 477 · Section / Group"
+        },
+        {
+          "english": "district / geographical division",
+          "translation": "pororiet (pl. pororosiek)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), pp. 4, 47–48 · Fifteen districts in Nandi country · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "parish / geographical subdivision",
+          "translation": "siritiet (pl. siritaiik)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), pp. 4, 32, 48 · Subdivision of a pororiet · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "clan / family",
+          "translation": "oret (pl. ortinuek)",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 4 · Genealogical division · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipoiis clan",
+          "translation": "Kipoiis",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 8 · Totems: jackal and cockroach · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipkoiitim clan",
+          "translation": "Kipkoiitim",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 8 · Totems: elephant and chameleon · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipamwi clan",
+          "translation": "Kipamwi",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 8 · Totem: duiker · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipkenda clan",
+          "translation": "Kipkenda",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 8 · Totems: bee and frog · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipkokos clan",
+          "translation": "Kipkokos",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 8 · Totem: buzzard · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipiegen clan",
+          "translation": "Kipiegen",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), pp. 8–9 · Totems: baboon and house rat · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Talai clan",
+          "translation": "Talai",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), pp. 9, 49 · Totem: lion; clan of the Orkoiyot · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Toiyoi clan",
+          "translation": "Toiyoi",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 9 · Totems: soldier ant and rain; thunder exclamation Toiyoi, sis kain-nyo (\"Toiyoi, or thunder, be silent in our town\") · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipsirgoi clan",
+          "translation": "Kipsirgoi",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 10 · Totem: bush pig · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Sokom clan",
+          "translation": "Sokom",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 10 · Totem: hawk · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Moi clan",
+          "translation": "Moi",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 10 · Totems: crested crane and buffalo · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kiptopke clan",
+          "translation": "Kiptopke",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 10 · Totem: monkey (Cercopithecus griseo-viridis) · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kamwaike clan",
+          "translation": "Kamwaike",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 10 · Totem: partridge · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Tungo clan",
+          "translation": "Tungo",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 11 · Totem: hyena · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipaa clan",
+          "translation": "Kipaa",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 11 · Totems: snake and Colobus monkey · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipasiso clan",
+          "translation": "Kipasiso",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 11 · Totems: sun and mole · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Chemur clan",
+          "translation": "Chemur",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 11 · Totem: wild cat · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kimnyike age-set",
+          "translation": "Kimnyike",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 12 · Men between 18 and 28 (circumcised about 1900) · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Kipkoiimet age-set",
+          "translation": "Kipkoiimet",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 12 · Men between 34 and 44 (circumcised about 1885) · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Sowe age-set",
+          "translation": "Sowe",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 12 · Men between 42 and 52 (circumcised about 1877) · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "Juma age-set",
+          "translation": "Juma",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 12 · Men between 50 and 60 (circumcised about 1870) · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "chief medicine man",
+          "translation": "Orkoiyot",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), pp. 48–49 · Supreme ritual/political authority; Talai clan · https://archive.org/download/nanditheirlangua00holl/nanditheirlangua00holl.pdf"
+        },
+        {
+          "english": "more distant cousins (\"people of the family\")",
+          "translation": "piik-ap-oret",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi · Hollis (1909), p. 94 · Kinship/clan term · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "If a man has been once tossed by a buffalo he thinks when",
+          "translation": "Chii ne-ki-kw-am-e soet ko-'ngo-'ro tany dui ko-'le ka-it",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 124 · Proverb No. 1 · https://archive.org/details/nanditheirlangua00holl · If a man has been once tossed by a buffalo he thinks when he sees a black ox coming towards him that it is another buffalo."
+        },
+        {
+          "english": "The lion bears a hyena.",
+          "translation": "Ii-e ñgetūny lel",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 124 · Proverb No. 2 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "Try this arm clamp",
+          "translation": "I-much-i-ke cheposta; 'ngo-iam-in in-de-ke, 'ngo-ma-iam-in i-met-te",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 124 · Proverb No. 3 · https://archive.org/details/nanditheirlangua00holl · Try this arm clamp; if it fits you, wear it, if it does not fit you, throw it away."
+        },
+        {
+          "english": "However clever you may be, can you see the back of your neck?",
+          "translation": "Inga-i ñgom, i-ker-i-ke kimut-i?",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 124 · Proverb No. 4 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "The small gazelle",
+          "translation": "Iñgêt-i kimereñg minde",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 124 · Proverb No. 6 · https://archive.org/details/nanditheirlangua00holl · The small gazelle (blue duiker) causes the big gazelle (red duiker) to get up."
+        },
+        {
+          "english": "Send hares to the elephant, not elephants to the hare.",
+          "translation": "Iok-toi kiplengoi pēlio",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 125 · Proverb No. 7 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "The ox falls in spite of its four legs.",
+          "translation": "Iput-i tany aku pa-kelek añgwan",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 125 · Proverb No. 8 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "A goat's hide buys a goat's hide and a gourd a gourd.",
+          "translation": "Ka-al-ke makata ak sot",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 125 · Proverb No. 9 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "He thought of milk during the hunt.",
+          "translation": "Ke-'pwat-e che logot",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 125 · Proverb No. 11 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "It is all one whether one is bitten by an old snake or by",
+          "translation": "Kerichek-ap-erenet ak chepo-lakwet kw-akenge",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 125 · Proverb No. 12 · https://archive.org/details/nanditheirlangua00holl · It is all one whether one is bitten by an old snake or by its offspring: both are poisonous."
+        },
+        {
+          "english": "The Sun is owned by everybody, but a man's body is owned by",
+          "translation": "Ki-am-doi Asis a-mo-ki-am-doi atep",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 126 · Proverb No. 15 · https://archive.org/details/nanditheirlangua00holl · The Sun is owned by everybody, but a man's body is owned by himself alone."
+        },
+        {
+          "english": "Cover the eyes of the ox you wish to bleed, or he will see",
+          "translation": "Ki-'ēn-i tany koñg si ki-char-e",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 126 · Proverb No. 16 · https://archive.org/details/nanditheirlangua00holl · Cover the eyes of the ox you wish to bleed, or he will see the preparations you are making and fidget or run away."
+        },
+        {
+          "english": "The Sun said, 'Whatever I do, the farmers curse me. If",
+          "translation": "Ki-mwa Asista: 'Ki-a-we inyalil-o mee.'",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 126 · Proverb No. 17 · https://archive.org/details/nanditheirlangua00holl · The Sun said, 'Whatever I do, the farmers curse me. If there is no rain, they say I burn their crops; if there is much rain, they complain that I do not shine.'"
+        },
+        {
+          "english": "A tree is not twice struck by lightning.",
+          "translation": "Ma-am-e ilat ket oieñg",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 126 · Proverb No. 18 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "The poison",
+          "translation": "Ma-chut-e ñgwanet ye-ma-mi-i korotik",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 127 · Proverb No. 19 · https://archive.org/details/nanditheirlangua00holl · The poison (of a poisoned arrow) does no harm if it does not enter the blood."
+        },
+        {
+          "english": "One does not slaughter a calf before its mother's eyes.",
+          "translation": "Ma-ki-eny-jin kamet moita met",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 127 · Proverb No. 20 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "A man who is always crying is not listened to.",
+          "translation": "Ma-ki-'ep-chin-iit chii rir-e",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 127 · Proverb No. 21 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "A person does not put on a garment if there is a",
+          "translation": "Ma-ki-'lok-toi 'ngor cheput",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 127 · Proverb No. 22 · https://archive.org/details/nanditheirlangua00holl · A person does not put on a garment if there is a caterpillar in it, as its spikes will irritate him."
+        },
+        {
+          "english": "You cannot light a fire in water.",
+          "translation": "Ma-ki-lol-e ma pei",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 127 · Proverb No. 23 · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "Don't throw away the figs which grow at the bottom of the",
+          "translation": "Ma-ki-met-toi mokoiyo ne-mi-i 'ngoiny a-ki-sor ne-mi-i parak",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 127 · Proverb No. 24 · https://archive.org/details/nanditheirlangua00holl · Don't throw away the figs which grow at the bottom of the tree and hasten to pick those which grow at the top."
+        },
+        {
+          "english": "Do not despise a piece of iron in the fire, for it will not",
+          "translation": "Ma-ki-mon-doi karna ma",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 127 · Proverb No. 25 · https://archive.org/details/nanditheirlangua00holl · Do not despise a piece of iron in the fire, for it will not be burnt, but when red hot it will be beaten into shape and may possibly become a formidable weapon."
+        },
+        {
+          "english": "Introductory riddle call and response",
+          "translation": "Tongoch. — Cho",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 133 · Riddle opening formula · https://archive.org/details/nanditheirlangua00holl"
+        },
+        {
+          "english": "The millet plant.",
+          "translation": "A-koi ak a po-minan. — Mosongiot",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 133 · Enigma No. 1 · https://archive.org/details/nanditheirlangua00holl · Gloss: I am tall and my hair has red earth in it. What am I?"
+        },
+        {
+          "english": "Because we shall have eaten kopchopinek fruit.",
+          "translation": "Alak-u yu a-alok yu te-'p-ki-tui-ye ko-pirir-ech ēun. — Kopchopinek",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 133 · Enigma No. 2 · https://archive.org/details/nanditheirlangua00holl · Gloss: If you go round there and I go round here, why will our hands be red when we meet again?"
+        },
+        {
+          "english": "The white ant.",
+          "translation": "Anyiny ingua tere'-'p-oiin. — Kongaiyat",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 133 · Enigma No. 3 · https://archive.org/details/nanditheirlangua00holl · Gloss: What is the sweet vegetable that comes out of the cooking-pot of the spirits of the deceased?"
+        },
+        {
+          "english": "A cow's udder.",
+          "translation": "Apuk ma-pa. — Kīna-ap-teta",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 134 · Enigma No. 4 · https://archive.org/details/nanditheirlangua00holl · Gloss: What is it that produces liquid and yet cannot let the liquid flow when it wishes?"
+        },
+        {
+          "english": "A bridge.",
+          "translation": "A-tenden ak a po-Tuken. — Etiet",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 134 · Enigma No. 5 · https://archive.org/details/nanditheirlangua00holl · Gloss: I am thin and I come from Kamasia. What am I?"
+        },
+        {
+          "english": "The milk calabashes.",
+          "translation": "A-tinye cheptán-nyō ne-'ngo-wendi kâp-tich ko-'sīk-ot ta-nyo-ne ka ko-sis-anu. — Sotonik",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 134 · Enigma No. 6 · https://archive.org/details/nanditheirlangua00holl · Gloss: What are the things which as they go to the cattle-kraal sing, whilst as they return home are silent?"
+        },
+        {
+          "english": "A broom.",
+          "translation": "A-tinye cheptán-nyō ne-piiy-onyi mutai ko-rukut lakat. — Kweyot",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 134 · Enigma No. 7 · https://archive.org/details/nanditheirlangua00holl · Gloss: I have a daughter who gets a good meal every morning, but she goes to bed hungry at night. What is she?"
+        },
+        {
+          "english": "The belly.",
+          "translation": "A-tinye choruén-nyō n-ingo-'ok-te ko-lapat. — Moiet",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), pp. 134–135 · Enigma No. 8 · https://archive.org/details/nanditheirlangua00holl · Gloss: I have a friend, and if I send him anywhere he runs with me. What am I?"
+        },
+        {
+          "english": "A vulture.",
+          "translation": "A-tinye choruén-nyō ne-ki-mo-koto-me ko-re mo kut ko-me. — Motonda",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 135 · Enigma No. 9 · https://archive.org/details/nanditheirlangua00holl · Gloss: I have a friend who would not die were it not for his belly's sake. What is my friend?"
+        },
+        {
+          "english": "A rat.",
+          "translation": "A-tinye lakwén-nyō ne-ki-ko-nai ko-chor-e. — Muriat",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 135 · Enigma No. 10 · https://archive.org/details/nanditheirlangua00holl · Gloss: I have a child who is known to steal. What is my child?"
+        },
+        {
+          "english": "A bee.",
+          "translation": "A-tinye lakwet ne-mīban. — Segemyat",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 135 · Enigma No. 11 · https://archive.org/details/nanditheirlangua00holl · Gloss: What is it which I possess that moves very rapidly?"
+        },
+        {
+          "english": "A bee.",
+          "translation": "A-tinye lakwet ne-sil-u-o pêk-ap-Kepen. — Segemyat",
+          "pronunciation": "",
+          "context": "Hollis (1909) The Nandi (Proverb/Riddle) · Hollis (1909), p. 135 · Enigma No. 12 · https://archive.org/details/nanditheirlangua00holl · Gloss: I have a child that draws water for me from the rocks. What is my child?"
+        },
+        {
+          "english": "central county of Kipsigis country",
+          "translation": "Buret",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 45 · Named after an Elgeyu or Kamasia named Bureti · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "clan (also signifies a road or path)",
+          "translation": "oret",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 48 · Genealogical division; exogamous · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Kiblegen clan",
+          "translation": "Kiblegen",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 48 · Totem: leopard; said to have come from Nandi · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Kapsirere clan",
+          "translation": "Kapsirere",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 48 · Totem: sireret (hawk); called by women Kabeube (\"the snatchers\") · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Pagoserek clan",
+          "translation": "Pagoserek",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 48 · Totem: iron beads (indigenous term blank in OCR); shared with Kisii · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Kapkugoiek clan",
+          "translation": "Kapkugoiek",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 49 · Totem: saptet (tree) · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "district area / subdivision",
+          "translation": "koret",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 49 · Subdivides into parishes (kokwet) · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "parish",
+          "translation": "kokwet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 49, 52 · Subdivision of a koret · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "age grade",
+          "translation": "ipinda",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 53, 61 · Circumcision age-set · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Maina age grade (1856)",
+          "translation": "Maina",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · Also listed for Nandi (1915) · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Sowee / Sowe age grade (1866)",
+          "translation": "Sowee / Sowe",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · Listed in Dobbs's and Barton's columns; Nandi Sowe (1877) · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Korongoro age grade (1871)",
+          "translation": "Korongoro",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · Barton's Kipsikis column · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "the unshaven (1891)",
+          "translation": "Ka-papucha",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · Age grade nickname · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Kipsiljoget age grade (1896)",
+          "translation": "Kipsiljoget",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · From joget (sword sheath) and sil/sin (to rub hair off the skin sheath) · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "the unpierced ears (1901)",
+          "translation": "Kapar-iit",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · Age grade nickname · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Kosigo age grade (1906)",
+          "translation": "Kosigo",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · Named from a district in Sotik · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Kipsirgot age grade (1911)",
+          "translation": "Kipsirgot",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · So called because huts were counted for tax for the first time · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Buloo age grade (1916)",
+          "translation": "Buloo",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 60 · From purple (buloo) thumb-mark ink when entering wage labour · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Kaplelach age grade (1892)",
+          "translation": "Kaplelach",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Nandi (cited by Barton)) · Barton (1923), p. 60 · Cited from Hollis p. 12 in comparative table · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "a warrior, after circumcision",
+          "translation": "Muren (pl. murenik)",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 47, 52 · Social division · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "a girl, uncircumcised",
+          "translation": "Chepta",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 47 · Social division · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "red earth",
+          "translation": "ngariet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 47 · Used for ceremonial face/body painting after homicide · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "white earth",
+          "translation": "ewaret",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 47 · Used for ceremonial face/body painting after homicide · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "washing of hands",
+          "translation": "Lapat ap Eun",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 50, 65 · Ceremonial washing after birth and during circumcision seclusion · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "family friend supplying food to a circumcision novice",
+          "translation": "pamungo",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 51 · Boys' circumcision custom · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "wife of the pamungo",
+          "translation": "koruchon",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 51–52 · Kinship / circumcision custom (child calls mother io, p. 52 fn. 2) · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt · wife of the pamungo; also term used by grown son/daughter for own mother"
+        },
+        {
+          "english": "circumcision seclusion house",
+          "translation": "menjit",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 51–56 · Built in the bush away from inhabited houses · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "novices / initiates",
+          "translation": "tarusiek",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 51, 56 · Circumcision candidates · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "Kikuyu grass",
+          "translation": "senendet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 52 · Ceremonial grass worn in headbands and on korosiek wands · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "evening circumcision dance of warriors",
+          "translation": "Chepkotilet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 52 · Performed near the menjit house · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "salt pick (implement used to dig rock salt for cattle)",
+          "translation": "majaita",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 53, 55, 64 · Euphemism for circumcision knife; placed in ceremonial trough/pot · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "household shrine",
+          "translation": "mabwaita",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 49, 57, 71 · Central focal point in circumcision and marriage rites · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "ceremonial wands of the solanum bush (labotonik sticks)",
+          "translation": "motolik",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 56, 66 · Carried by initiates during seclusion · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "breaking of the staff",
+          "translation": "Kuriet ap Kirokwek",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 61 · Post-circumcision men's initiation ceremony · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "girls' pre-circumcision dance",
+          "translation": "Kipsujott",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 64 · Warriors dance Tiendo alongside it · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "circlet headdress ornamented with cowrie shells and beads",
+          "translation": "nariet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 64, 72 · Worn by fathers at girls' circumcision and by brides · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "girls' circumcision hut",
+          "translation": "Kaptiriot",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 64 · Vacated living hut used during seclusion · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "ceremonial pot-drum (friction drum)",
+          "translation": "tama-terit",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 64 · Large disused cooking pot covered with red duiker skin (kesenda) · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "needle used by women to sew string bags",
+          "translation": "katet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 64 · Placed inside tama-terit · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "the narrow way (ceremonial arch)",
+          "translation": "oret maricha",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 66 · Built on stream banks during girls' seclusion · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "monkey-fur robe / dressed goatskin garment",
+          "translation": "sambut / sumet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 70, 72 · Ceremonial attire for marriage and men's rites · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "grass used to plait wedding wrist-cords",
+          "translation": "segutiet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), p. 72 · Marriage ceremony · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "cupping / blood-letting arrow",
+          "translation": "lognet",
+          "pronunciation": "",
+          "context": "Barton (1923) Kipsigis / Lumbwa (Kipsigis (Kipsikis)) · Barton (1923), pp. 62, 67, 72 · Used in marriage, birth, and men's ceremonies · https://archive.org/stream/in.ernet.dli.2015.537273/2015.537273.journal-of_djvu.txt"
+        },
+        {
+          "english": "section heading only on p. 159",
+          "translation": "Elgeyo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 159 · Ethnonym — section heading only on p. 159 · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Ethnonym"
+        },
+        {
+          "english": "(clan/division term)",
+          "translation": "Gilat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Vocabulary — section header Gilat or Oret · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "a road; clan / division",
+          "translation": "Oret",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (Nandi group)) · Hobley (1910), p. 161 · Vocabulary — \"(Oret in the Nandi group of languages means a road.)\"; equated to Korgat of the Nandi and Lumbwa · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "(clan/division term)",
+          "translation": "Korgat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Nandi & Lumbwa (in Elgeyo section)) · Hobley (1910), p. 161 · Comparative term — equated to Elgeyo Oret · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "totem (not eaten)",
+          "translation": "mome",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Vocabulary — column header Totem (mome—not eaten) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "Lion (totem)",
+          "translation": "Talai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "(Toret) bush pig (totem)",
+          "translation": "Korbilo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "bush pig",
+          "translation": "Toret",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Vocabulary — indigenous totem name for Korbilo clan · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "Snake (totem)",
+          "translation": "Tuyoi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "Elephant (totem)",
+          "translation": "Teriki",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "Rhino (totem)",
+          "translation": "Tarkōk",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome); macron over o (ō) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "(Tisiet) monkey (Cercopithecus) (totem)",
+          "translation": "Kuñgnatu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome); tilde over n (ñ) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "monkey (Cercopithecus)",
+          "translation": "Tisiet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Vocabulary — indigenous totem name for Kuñgnatu clan · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "Jackal (totem)",
+          "translation": "Tula",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "Buffalo (totem)",
+          "translation": "Kimoi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "Sun (totem)",
+          "translation": "Soti",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (in Maragwet)) · Hobley (1910), p. 161 · Clan (Oret) & Totem (mome) — noted as Soti (in Maragwet) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up"
+        },
+        {
+          "english": "location of Soti clan (Soti (in Maragwet))",
+          "translation": "Maragwet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Elgeyo section)) · Hobley (1910), p. 161 · Toponym / Group — location of Soti clan (Soti (in Maragwet)) · https://archive.org/details/ethnologyofakamb00hobluoft/page/161/mode/1up · Gloss: Toponym / Group"
+        },
+        {
+          "english": "dry weather",
+          "translation": "Mulgul",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), pp. 162–163 · Month names (9) and (10) — listed twice consecutively; p. 163 notes both Mulgul months are good for circumcision of youths · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "p. 163 notes: \"Kiptamo is the auspicious month for the",
+          "translation": "Kiptamo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Elgeyo (and Kamasia)) · Hobley (1910), pp. 162–163 · Month name (12) — p. 163 notes: \"Kiptamo is the auspicious month for the circumcision of youths.\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/163/mode/1up · Gloss: Month name (12) | p. 163 notes: \"Kiptamo is the auspicious month for the circumcision of youths."
         }
       ]
     }
@@ -45299,5 +46541,5 @@
   "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024); Zwarts, Chelimo & Jerono (2024) LSP #438 Ch. 21 Kalenjin Reflexives & Diercks/Kouneli (2019) LSP #190 Kipsigis Syntax (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Kipsigis & Sengwer Corpus (Bossi & Diercks 2019; Kouneli 2022; Blix 2022; Falletti & Remijsen 2025, CC-BY-4.0)",
   "isoCode": "kln",
   "glottocode": "kale1246",
-  "totalEntries": 8031
+  "totalEntries": 8238
 }

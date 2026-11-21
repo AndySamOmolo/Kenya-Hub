@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Ilchamus (Njemps / Njamus / Nyarusi / En-jemusi) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55 — audited 100% line-by-line across all 3 settlements, 16 clans from 6 tribes, irrigation ditch & crop-medicine ceremonies, and 12-month Lare/Ngolong calendar), Mervyn W. H. Beech (1911), and Bernd Heine (1980). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0)).",
   "categories": [
     {
@@ -4748,6 +4748,18 @@
           "translation": "Waso Nyiro (Gwaso), Lorian, Marsabit, Mount Nyiro, Basso Ebor, Basso Norok, Donyo Ebor, Donyo Egere, Nyemps Mkubwa, Nyemps Mdogo, Laramett, Lare lol bor' ngischu, Maricha",
           "pronunciation": "",
           "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Northern Kenya / Maa / Ilchamus) · Arkell-Hardwick (1903), pp. 3–253; Höhnel (1894), pp. 7–314 · Geography · River, swamp, crater lake, mountain, Lake Stefanie, Lake Rudolf, Mt Kenya, Njemps settlements, river-mouth district, \"spring of the white oxen\", starving settlement"
+        },
+        {
+          "english": "Verified geographic toponyms (rivers, escarpments, districts)",
+          "translation": "Sugota, Mount Nyiro, Pirias, Loroghi, Kerio, Ribkwa, Lakasissio, Ongatabus, Labur, Tirkwell, Naremet, Tarash",
+          "pronunciation": "",
+          "context": "Hobley (1906) Baringo District (Regional Baringo / Turkana) · Hobley (1906), pp. 471–477 · Geography · https://zenodo.org/records/1793399/files/article.pdf"
+        },
+        {
+          "english": "River, swamp, crater lake, mountain, Lake Stefanie, Lake",
+          "translation": "Waso Nyiro (Gwaso), Lorian, Marsabit, Mount Nyiro, Basso Ebor, Basso Norok, Donyo Ebor, Donyo Egere, Nyemps Mkubwa, Nyemps Mdogo, Laramett, Lare lol bor' ngischu, Maricha",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Northern Kenya / Maa / Ilchamus) · Arkell-Hardwick (1903), pp. 3–253; Höhnel (1894), pp. 7–314 · Geography · https://archive.org/stream/discoveryoflakes02hhne/discoveryoflakes02hhne_djvu.txt · River, swamp, crater lake, mountain, Lake Stefanie, Lake Rudolf, Mt Kenya, Njemps settlements, river-mouth district, \"spring of the white oxen\", starving settlement"
         }
       ]
     }
@@ -4755,5 +4767,5 @@
   "source": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)",
   "isoCode": "saq-ilc",
   "glottocode": "chAM1234",
-  "totalEntries": 781
+  "totalEntries": 783
 }

@@ -7136,5 +7136,48 @@ export const SWAHILI_PROVERBS: ProverbItem[] = [
     "englishEquivalent": "When they have put in the finger, they will also put in the hand : when they have put in the hand, they will also put in the foot.",
     "theme": "wisdom",
     "sourceCitation": "W. E. Taylor, African Aphorisms, or Saws from Swahili-land (1891, Taylor (1891), §576, p. 131)"
+  },
+  {
+    "id": "taylor-1891-swahili-p12-18",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Amani haiji illa kwa nta ya upanga.",
+    "literalTranslation": "Peace comes not save by the point of the sword.",
+    "meaning": "Maxim on peace and strength",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), p. 4, §18)",
+    "englishEquivalent": "Maxim on peace and strength"
+  },
+  {
+    "id": "taylor-1891-swahili-p12-317",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Mtaka yote hukosa yote.",
+    "literalTranslation": "He that wants all will miss all.",
+    "meaning": "Greed loses everything",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), p. 71, §317)",
+    "englishEquivalent": "Greed loses everything"
+  },
+  {
+    "id": "taylor-1891-swahili-p12-448",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "P'aka akiondoka panya hutawala.",
+    "literalTranslation": "When the cat goes away, the rat holds sway.",
+    "meaning": "When the cat's away",
+    "theme": "wisdom",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), p. 106, §448)",
+    "englishEquivalent": "When the cat's away"
+  },
+  {
+    "id": "taylor-1891-swahili-p12-572",
+    "languageId": "swahili",
+    "languageName": "Kiswahili",
+    "indigenous": "Vyema haviozi. (Or, Wema hauozi.)",
+    "literalTranslation": "Good actions decay not. (Kindness decays not.)",
+    "meaning": "Good actions decay not. (Kindness decays not.)",
+    "theme": "family",
+    "sourceCitation": "W. E. Taylor, African Aphorisms (1891) (Taylor (1891), §572, p. 131)"
   }
 ];

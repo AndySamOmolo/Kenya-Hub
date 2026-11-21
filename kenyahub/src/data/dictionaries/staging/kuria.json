@@ -28,19 +28,40 @@
       "id": "family",
       "name": "Family & Relationships",
       "icon": "👨‍👩‍👧‍👦",
-      "entries": []
+      "entries": [
+        {
+          "english": "Man",
+          "translation": "Ωmu·ntu ; ava·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 78 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        }
+      ]
     },
     {
       "id": "food",
       "name": "Food & Dining",
       "icon": "🍲",
-      "entries": []
+      "entries": [
+        {
+          "english": "Water",
+          "translation": "Ama·ci, Ama·nci",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 80 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        }
+      ]
     },
     {
       "id": "travel",
       "name": "Travel & Directions",
       "icon": "🧭",
-      "entries": []
+      "entries": [
+        {
+          "english": "God",
+          "translation": "Eri·ωba",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 76 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        }
+      ]
     },
     {
       "id": "time",
@@ -52,13 +73,33 @@
       "id": "body",
       "name": "Body & Health",
       "icon": "🫀",
-      "entries": []
+      "entries": [
+        {
+          "english": "Arm",
+          "translation": "Ωkω·bωkω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 73 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Blood",
+          "translation": "Ama·sere. Amainy·iñga",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 74 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        }
+      ]
     },
     {
       "id": "animals",
       "name": "Animals & Wildlife",
       "icon": "🦁",
-      "entries": []
+      "entries": [
+        {
+          "english": "Cow",
+          "translation": "Eñ·ombe",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 75 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        }
+      ]
     },
     {
       "id": "nature",
@@ -292,6 +333,48 @@
           "translation": "M-ba-taa-r-e ege-eki",
           "pronunciation": "",
           "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (53) A · Co-occurrence of /ne-/ with Negative /ta-/ · Gloss: foc-3pl.sa-neg.fut-eat-fv 5-cake"
+        },
+        {
+          "english": "1.Gati n-1-doctor 'Gati is a doctor.' / 1.Gati t-1-doctor",
+          "translation": "Gati n-omo-reri. / Gati t-omo-reri",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, fn. 6 (i)–(ii) · Affirmative & Negative Copula · https://langsci-press.org/LangSci-Press/catalog/view/120/1333/1111 · 1.Gati n-1-doctor 'Gati is a doctor.' / 1.Gati t-1-doctor 'Gati is not a doctor.'"
+        },
+        {
+          "english": "foc-what 1.Gati 3sg.sa-pst-do.prf-fv 'What did Gati do?' /",
+          "translation": "N-ke gati a-a-korr-e. / N-a-a-nyoy-e i-chaahe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (13)–(14) · VP Focus Q-A Pair · https://langsci-press.org/LangSci-Press/catalog/view/120/1333/1111 · foc-what 1.Gati 3sg.sa-pst-do.prf-fv 'What did Gati do?' / foc-3sg.sa-pst-drink.prf-fv 8-chai 'He DRANK CHAI.'"
+        },
+        {
+          "english": "foc-3pl.sa-pst-sell.prf-fv 9-cat 'They sold the cat.' / no",
+          "translation": "M-ba-a-gurr-i i-nyamu. / Aʔa, m-ba-a-gi-sirr-i",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (17)–(18) · Corrective VP Focus · https://langsci-press.org/LangSci-Press/catalog/view/120/1333/1111 · foc-3pl.sa-pst-sell.prf-fv 9-cat 'They sold the cat.' / no, foc-3pl.sa-pst-9om-lose.prf-fv 'No, they LOST it.'"
+        },
+        {
+          "english": "Chief",
+          "translation": "Ωmω·kama ; ava·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 74 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Fire",
+          "translation": "Ωmω·rérω or Ωmó·rerω ; eme·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 76 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "·mω, ·mwe / ·viri / ·tatu / ·nne / ·tanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 81 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To die / know / love, want",
+          "translation": "·gu·kwa / ·manya / ·hanca·na",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 84 · Verb roots (prefix Ωku·, Ku·; \"eat\" & \"see\" blank in scan) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },

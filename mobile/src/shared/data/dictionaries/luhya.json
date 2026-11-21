@@ -13,7 +13,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
@@ -4365,6 +4365,12 @@
           "translation": "baba",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Man",
+          "translation": "Ωmu·ndu ; awa·ndu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5. Lu-nyara (Luhya / Masaba)) · Johnston (1919), Vol. I, p. 78 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -8060,6 +8066,18 @@
           "translation": "sirenje",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Arm",
+          "translation": "Ωmu·kωnω ; emi·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5. Lu-nyara (Luhya / Masaba)) · Johnston (1919), Vol. I, p. 73 · Noun (sg. ; pl.) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Arm",
+          "translation": "Ωmu·xωnω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5a. Lu-wañga / Lu-kabarasi / Lu-rimi (Luhya)) · Johnston (1919), Vol. I, p. 73 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -12075,6 +12093,24 @@
           "translation": "njoka",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "All",
+          "translation": "vinovionom-bira",
+          "pronunciation": "",
+          "context": "Hobley (1902) Eastern Uganda (Lusinga or Chula (Awa-Ware)) · Hobley (1902), p. 92 · Quantifier · https://archive.org/details/b2488554x/page/92/mode/1up"
+        },
+        {
+          "english": "Bull",
+          "translation": "eunwa",
+          "pronunciation": "",
+          "context": "Hobley (1902) Eastern Uganda (Ketosh (Bukusu / Luhya)) · Hobley (1902), p. 92 · Livestock · https://archive.org/details/b2488554x/page/92/mode/1up"
+        },
+        {
+          "english": "Cow",
+          "translation": "Si·soñga. In·kafu. I·xafu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6. Lu-masaba / Lu-gişu) · Johnston (1919), Vol. I, p. 75 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -15034,6 +15070,30 @@
           "translation": "liroba",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
+        },
+        {
+          "english": "Fire",
+          "translation": "Ωmu·lilω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5. Lu-nyara (Luhya / Masaba)) · Johnston (1919), Vol. I, p. 76 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Fire",
+          "translation": "Ωmu·rirω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5a. Lu-wañga / Lu-kabarasi / Lu-rimi (Luhya)) · Johnston (1919), Vol. I, p. 76 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Fire",
+          "translation": "Kumu·rirω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6. Lu-masaba / Lu-gişu) · Johnston (1919), Vol. I, p. 76 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Fire",
+          "translation": "Gumu·lirω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6a. Lu-konde of N.W. Elgon) · Johnston (1919), Vol. I, p. 76 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -24742,6 +24802,12 @@
           "english": "shoes (Lubukusu)",
           "translation": "bi-raro",
           "context": "Lubukusu noun gloss (16a) • Baker, M. C. (2022) \"On Agree without agreement as a source of reflexive voice constructions\", Glossa: a journal of general linguistics 7(1) (https://www.glossa-journal.org/article/id/5732/, DOI: https://doi.org/10.16995/glossa.5732, CC-BY-4.0)"
+        },
+        {
+          "english": "Axe",
+          "translation": "yaiiwa (pl. tziaiwa)",
+          "pronunciation": "",
+          "context": "Hobley (1902) Eastern Uganda (Lu-Wanga of Awa-Rimi group (Luhya)) · Hobley (1902), p. 62 · Tool · https://archive.org/details/b2488554x/page/62/mode/1up"
         }
       ]
     },
@@ -30283,6 +30349,12 @@
           "english": "Boat / Canoe (Luwanga)",
           "translation": "eliaro",
           "context": "Project Tafsiri v2.0 Luhya Multilingual Dataset (CC-BY-4.0)"
+        },
+        {
+          "english": "God",
+          "translation": "Ωlu·mbe",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5. Lu-nyara (Luhya / Masaba)) · Johnston (1919), Vol. I, p. 76 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -36036,6 +36108,192 @@
           "translation": "amaazi",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "'big', 'small', 'tall', 'short', 'wide', 'black', 'white'",
+          "translation": "-bofu, -titi, -leyi, -imbi, -balayi, -mali, -wanga, -besemu, -kali, -kesi, -silu, -kara, -miliu, -nyalu, -siro, -angu, -chou, -khulu, -bisi, -robe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, §2.1 · Basic Adjective Roots · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2 · 'big', 'small', 'tall', 'short', 'wide', 'black', 'white', 'red', 'many', 'clever', 'stupid', 'lazy', 'clean', 'dirty', 'heavy', 'light', 'big/fully grown', 'old', 'raw/unripe', 'ripe'"
+        },
+        {
+          "english": "'closed', 'open', 'covered', 'washed', 'cooked', 'free'",
+          "translation": "-funge (< funga), -funule (< funula), -funikhe (< funikha), -singe (< singa), -tekhe (< tekha), -lekhule (< lekhula), -khalange (< khalanga), -simbe (< simba), -lume (< luma), -sye (< sya), -ake (< yaka), -male (< mala), -osye (< yosya)",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, §2.2 · Verb-Derived Adjectives (-e Suffix) · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2 · 'closed', 'open', 'covered', 'washed', 'cooked', 'free', 'fried', 'busy', 'hard', 'ground', 'weeded', 'smeared', 'roasted'"
+        },
+        {
+          "english": "1-1-person 1-1-big 'big person' / 2-2-person 2.2-big 'big people'",
+          "translation": "o-mu-ndu o-mu-bofu / ba-ba-ndu baa-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (5a–b) · Noun-Adjective Concord (Classes 1–2) · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2"
+        },
+        {
+          "english": "5-5-tooth 5.5-big 'big tooth' / 6-6-tooth 6-6-big 'big teeth'",
+          "translation": "li-li-ino lii-bofu / ka-me-eno ka-ma-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (7a–b) · Noun-Adjective Concord (Classes 5–6) · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2"
+        },
+        {
+          "english": "9-9-bicycle 9-9-big 'big bicycle' / 10-10-bicycle 10-10-big",
+          "translation": "e-n-dika e-m-bofu / chi-n-dika chi-m-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (9a–b) · Noun-Adjective Concord (Classes 9–10) · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2 · 9-9-bicycle 9-9-big 'big bicycle' / 10-10-bicycle 10-10-big 'big bicycles'"
+        },
+        {
+          "english": "11-11-river 11.11-big 'big river' / 10-10-river 10-10-big",
+          "translation": "lu-lu-ichi luu-bofu / chi-nj-ichi chi-m-bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (10a–b) · Noun-Adjective Concord (Classes 11/10) · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2 · 11-11-river 11.11-big 'big river' / 10-10-river 10-10-big 'big rivers'"
+        },
+        {
+          "english": "1.Wafula 1-prs-help-hab-fv 2.2-poor 'Wafula usually helps",
+          "translation": "Wafula a-a-yet-ang-a baa-tambi. / Mayi a-a-kul-il-e lii.bofu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (19a–b) · Headless Adjectives in Object Position · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2 · 1.Wafula 1-prs-help-hab-fv 2.2-poor 'Wafula usually helps the poor.' / Mother 1-pst-buy-asp-fv 5.5-big 'Mother bought the big (one).'"
+        },
+        {
+          "english": "Wafula 1-prs-happy-asp-fv 'Wafula is happy.' / 1-prs-sad-fv",
+          "translation": "Wafula a-a-sangal-il-e. / Wafula a-a-suluny-e. / Wafula a-a-le-il-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (22a–c) · Stage-Level Predicates Expressed as Verbs · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2 · Wafula 1-prs-happy-asp-fv 'Wafula is happy.' / 1-prs-sad-fv 'Wafula is sad.' / 1-prs-tall-asp-fv 'Wafula has become tall.'"
+        },
+        {
+          "english": "Wafula 1-1-happy 'happy Wafula' vs. Wafula 1-be 1-1-happy",
+          "translation": "Wafula o-mu-sangafu vs. Wafula a-li o-mu-sangafu",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (23a), (24a) · Individual-Level Attributive & Predicative Adjective · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2 · Wafula 1-1-happy 'happy Wafula' vs. Wafula 1-be 1-1-happy 'Wafula is a happy person.'"
+        },
+        {
+          "english": "3-3-tree 3-be 3-3-tall 'The tree is tall.' vs. 3-3-tree",
+          "translation": "Ku-mu-sala ku-li ku-mu-leyi. vs. Ku-mu-sala kw-a-le-il-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Lubukusu (CC-BY-4.0) · LangSci #120, Ch. 20, Ex. (24b), (23d) · Individual-Level vs. Stage-Level Contrast · https://langsci-press.org/LangSci-Press/catalog/view/120/1329/1107-2 · 3-3-tree 3-be 3-3-tall 'The tree is tall.' vs. 3-3-tree sa-prs-tall-asp-fv 'The tree has become tall.'"
+        },
+        {
+          "english": "Once I have picked the leaves from the stems, I lay them",
+          "translation": "N-daka-n̪ɔr-a, a-m-bagar-e",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (3b) / (A8) · Recapitulative Bridging (Immediate Perfect) · https://langsci-press.org/LangSci-Press/catalog/view/216/1765/1386-1 · Gloss: 1sg-imm.pf-pick.leaves.from.stems-fv narr-1sg-lay.out.to.dry-fv | Once I have picked the leaves from the stems, I lay them out to dry."
+        },
+        {
+          "english": "Again, in olden days, women did not have plates on which",
+          "translation": "Kaande, kare, va-kere va-a-r-aŋge ne zi-sahane zja va-a-ragel-a ko daave",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (8a) · Far Past Progressive + Relative Clause · https://langsci-press.org/LangSci-Press/catalog/view/216/1765/1386-1 · Gloss: again old 2-woman 2-fp-exist-progr with 10-plate 10.rel 2-fp-squeeze.vuchima-fv loc neg | Again, in olden days, women did not have plates on which they used to squeeze vuchima."
+        },
+        {
+          "english": "and 1-fp-return-fv 1-home '...and he returned to his home.'",
+          "translation": "ne ji-i-ran-a je-eŋgo. / Ruwa ji-i-ran-a, ja-a-n̪ɔr-a",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (9a–b) · Marginal Bridging with ruwa 'when' · https://langsci-press.org/LangSci-Press/catalog/view/216/1765/1386-1 · and 1-fp-return-fv 1-home '...and he returned to his home.' / when 1-fp-return-fv 1-fp-find-fv 'When he returned, he found...'"
+        },
+        {
+          "english": "3-game 3-other 3-fp-call-pass-fv 10-seembe 'Another game",
+          "translation": "Mu-keno gw-oonde gw-a-raŋg-w-a zi-seembe. / Zi-seembe zj-a-kob-aŋg-w-a hari ka-ɲiŋge",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, Ex. (11a–b) · Nominal Repetition (Bridging NP) · https://langsci-press.org/LangSci-Press/catalog/view/216/1765/1386-1 · 3-game 3-other 3-fp-call-pass-fv 10-seembe 'Another game was called ziseembe.' / 10-seembe 10-fp-play-progr-pass-fv time 12-many 'Ziseembe used to be played many times.'"
+        },
+        {
+          "english": "I will go to the farm, I go uproot rikove, [green \"cowpea",
+          "translation": "Man̪-a n-zj-e m̩-mo-rɛmɛ, n-zj-e kw-ah-a i-ri-kove",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, App. (A4)–(A5) · Periphrastic Future + Locative · https://langsci-press.org/LangSci-Press/catalog/view/216/1765/1386-1 · Gloss: 1sg.want-fv 1sg-go-fv loc-3-land, 1sg-go-fv 15-uproot-fv pre-5-kove | I will go to the farm, I go uproot rikove, [green \"cowpea leaves\"]"
+        },
+        {
+          "english": "I will take the soup and put it in an earthen pot, then I",
+          "translation": "a-m-bogor-e muɲu m-bek-e mu i-ɲiŋgu, a-m-bek-e m̩ to-ze ki-dɔɔkɔ",
+          "pronunciation": "",
+          "context": "LangSci #216 (2019) Logoori/Maragoli (CC-BY-4.0) · LangSci #216, Ch. 3, App. (A19)–(A20) · Narrative Chaining & Vocabulary · https://langsci-press.org/LangSci-Press/catalog/view/216/1765/1386-1 · Gloss: narr-1sg-take-fv 3.soup 1sg-put-fv loc 9-earthen.pot, narr-1sg-put loc 13-water 7-little | I will take the soup and put it in an earthen pot, then I will put in it a little water a bit."
+        },
+        {
+          "english": "Beads",
+          "translation": "ifiuma (pl.), iniuma (single bead)",
+          "pronunciation": "",
+          "context": "Hobley (1902) Eastern Uganda (Lu-Wanga of Awa-Rimi group (Luhya)) · Hobley (1902), p. 62 · Ornament · https://archive.org/details/b2488554x/page/62/mode/1up"
+        },
+        {
+          "english": "Arm",
+          "translation": "Kumu·kωnω ; pl. kimi· and kama·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6. Lu-masaba / Lu-gişu) · Johnston (1919), Vol. I, p. 73 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Arm",
+          "translation": "Gumu·xωnω ; pl. gama·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6a. Lu-konde of N.W. Elgon) · Johnston (1919), Vol. I, p. 73 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Chief",
+          "translation": "Omw·ami. Ωmu·kuru",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6. Lu-masaba / Lu-gişu) · Johnston (1919), Vol. I, p. 74 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Chief",
+          "translation": "Ωmw·ami",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6a. Lu-konde of N.W. Elgon) · Johnston (1919), Vol. I, p. 74 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Cow",
+          "translation": "Eñ·ombe ; tsiñ·ombe. E·dūasi (5 b)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5a. Lu-wañga / Lu-kabarasi / 5b Lu-siñga) · Johnston (1919), Vol. I, p. 75 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Man",
+          "translation": "Ωmu·ndu. Awa·ntu ; aba·ndu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5a. Lu-wañga / Lu-kabarasi / Lu-rimi (Luhya)) · Johnston (1919), Vol. I, p. 78 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "·lala, ·dala / ·viri / ·datu / ·nne / ·tanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5. Lu-nyara (Luhya / Masaba)) · Johnston (1919), Vol. I, p. 81 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "·n·dala, ·dala, ·lala / ·wiri / ·tarru / ·nne / ·rranω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5a. Lu-wañga / Lu-kabarasi / Lu-rimi (Luhya)) · Johnston (1919), Vol. I, p. 81 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "·twera or ·terwa. ·lala / ·biri / ·taru / ·nne / ·ranω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6. Lu-masaba / Lu-gişu) · Johnston (1919), Vol. I, p. 81 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "·mwe. ·dwera / ·wiri / ·datu, ·ratu / ·nnā / ·tanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6a. Lu-konde of N.W. Elgon) · Johnston (1919), Vol. I, p. 81 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·dia, ·lia / ·fwa / ·manya / ·enya / ·lωla",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5. Lu-nyara (Luhya / Masaba)) · Johnston (1919), Vol. I, p. 84 · Verb roots (prefix Ωxu·) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·dia / ·fwa / ·manya / ·enya. ·cama / ·lωla (·dωla). ·liñga",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (5a. Lu-wañga / Lu-kabarasi / Lu-rimi (Luhya)) · Johnston (1919), Vol. I, p. 84 · Verb roots (prefix Ωxu·) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·lya / ·fwa / ·manya / ·gana / ·bωna. ·lωla",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6. Lu-masaba / Lu-gişu) · Johnston (1919), Vol. I, p. 84 · Verb roots (prefix Ωku·) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To die / know / love, want / see",
+          "translation": "·kwa / ·manya / ·gana / ·bωna",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (6a. Lu-konde of N.W. Elgon) · Johnston (1919), Vol. I, p. 84 · Verb roots (prefix Ωku·; \"eat\" blank in scan) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -40005,5 +40263,5 @@
   "source": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016); Johnson & Diercks (2026) LSP #491 Ch. 18 Tiriki Perception Verbs & Liu (2024) LSP #438 Ch. 15 Tiriki Double Objects (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Lubukusu Corpus (Baker 2022, CC-BY-4.0)",
   "isoCode": "luy",
   "glottocode": "luyi1234",
-  "totalEntries": 7032
+  "totalEntries": 7075
 }

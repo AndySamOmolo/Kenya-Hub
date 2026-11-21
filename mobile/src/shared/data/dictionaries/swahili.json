@@ -14,7 +14,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Swahili (Kiswahili: Kiunguja, Kimvita, Kiamu, Kitikuu, Kipate, Kingozi) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Bishop Edward Steere (1870, 1894, 1918), Rev. W. E. Taylor (1891), George W. Bateman (1901), A. C. Madan (1902, 1903, 1905, 1917 \"English-Swahili Vocabulary\", SPCK London, pp. 1–56 [PDF pp. 1–72]), Hildegarde Hinde (1904), Mrs. F. Burt (1910), Capt. C. H. Stigand (1915), Mervyn W. H. Beech (1918), Prof. Alice Werner (1918, 1919, 1933), Sir Harry H. Johnston (1919), Deo Ngonyani & Nancy Ngowa (2016), Mohamed Mwamzandi (2022), and John Goldsmith & Fidèle Mpiranya (2022). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0)). Further enriched with Lamu/Pate/Shela coastal Swahili terms from C. H. & N. Y. Stigand (1914) 'Black Tales for White Children' (Project Gutenberg #38992, US Public Domain) and Swahili proverbs from Wikiquote (CC-BY-SA-4.0).",
   "categories": [
     {
@@ -1077,6 +1077,12 @@
           "translation": "Jambo or Yambo",
           "pronunciation": "",
           "context": "Smee (1844) East Coast Vocab (Swahili, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "Salutation / Reply",
+          "translation": "Jambo",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 74–75 · Greeting · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
         }
       ]
     },
@@ -9498,6 +9504,108 @@
           "translation": "Elf,moyah",
           "pronunciation": "",
           "context": "Smee (1844) East Coast Vocab (Swahili, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "One, num.",
+          "translation": "mmoja",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 31 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Three, num.",
+          "translation": "tatu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 53 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twenty, num.",
+          "translation": "aserini",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Two, num.",
+          "translation": "mbili",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "1",
+          "translation": "moja",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "2",
+          "translation": "mbili",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "3",
+          "translation": "tatu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "4",
+          "translation": "'nne",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "5",
+          "translation": "tano",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "6",
+          "translation": "sita",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "7",
+          "translation": "saba",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "8",
+          "translation": "nane",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "9",
+          "translation": "kenda, tissa",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "10",
+          "translation": "kumi",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "100",
+          "translation": "mia",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "a drum so small that it can only be beaten by one hand",
+          "translation": "t'ut'u",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Coastal Swahili) · Hollis (1900), JRAI Vol. 30, p. 282 · Musical instrument restriction on the eight conquered towns · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "one head",
+          "translation": "Kitwa Kimoja",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, pp. 283–285, 290 · Royal nickname of the last Mwana Chambi Chandi of Vumba Kuu · https://zenodo.org/records/1952797/files/article.pdf"
         }
       ]
     },
@@ -16487,6 +16595,96 @@
           "translation": "Meem,ba",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Souallie (Swahili) · Smee (1844), p. 55"
+        },
+        {
+          "english": "A half gourd used as a domestic utensil for drinking water",
+          "translation": "Njele",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Swahili) · Hobley (1922), Glossary, pp. 305–308 · Material Culture · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · A half gourd used as a domestic utensil for drinking water, gruel or milk."
+        },
+        {
+          "english": "Brother, s.",
+          "translation": "ndugu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 6 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Child, s.",
+          "translation": "mana",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 7 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Father, s.",
+          "translation": "baba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 14 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Man, s.",
+          "translation": "mtu, pl. watu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 26 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mother, s.",
+          "translation": "mama",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 29 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Woman, s.",
+          "translation": "mtumke",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 61 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "son of / daughter of",
+          "translation": "bin / binti",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Swahili (Arabic)) · Hollis (1900), JRAI Vol. 30, p. 276, fn. 10 · Genealogical particles · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "A man who marries but does not give the customary feast",
+          "translation": "mnondo",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 278, fn. 7 · Social rank · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "The language of the Wadigo",
+          "translation": "Kidigo",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kidigo / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 280, fn. 5 · Glossonym · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "an abbreviation for Abubakari",
+          "translation": "Kae",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba) · Hollis (1900), JRAI Vol. 30, p. 283, fn. 3 · Personal name abbreviation · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "wood, obtained from the mangrove trees",
+          "translation": "boriti",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 285 · Trade timber exported from Wasin · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Sultan / King (title of rulers of Zanzibar and Kilwa)",
+          "translation": "Mfalme",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Coastal Swahili) · Hollis (1900), JRAI Vol. 30, pp. 286 fn. 6, 291 · Royal title (e.g., Mfalme Hasan, Mfalme Bakiri) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Woman; also used to mean \"Mrs.\" (e.g., \"Bibi Karanja\")",
+          "translation": "Bibi (pl. Mabibi)",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 1, pp. 7, 9 · Cultural Note / Social title · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "Older man; a title of respect for men who are married",
+          "translation": "Mzee (pl. Wazee)",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 1, pp. 7, 9 · Cultural Note / Social title · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
         }
       ]
     },
@@ -25140,6 +25338,96 @@
           "translation": "Car,ri,boo",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Souallie (Swahili) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Back, s.",
+          "translation": "maongo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 3 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Beard, s.",
+          "translation": "ndefu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 4 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Blood, s.",
+          "translation": "damu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 5 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Ear, s.",
+          "translation": "sikio pl. ma-",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 11 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Earth, s.",
+          "translation": "nti",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 11 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Eye, s.",
+          "translation": "jito, pl. mato",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 13 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Head, s.",
+          "translation": "kitoa, pl. witoa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Heart, s.",
+          "translation": "moyo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Knee, s.",
+          "translation": "goti, pl. magoti",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 23 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mouth, s.",
+          "translation": "kanoa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 29 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Spear, s.",
+          "translation": "fumo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 47 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tongue, s.",
+          "translation": "ulimi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tooth, s.",
+          "translation": "jino",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "A silver chain worn above the right knee",
+          "translation": "vunda",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba) · Hollis (1900), JRAI Vol. 30, p. 279 & fn. 2 · Royal investiture regalia of a Diwan · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "the old form for Mjumbe, an ambassador or messenger",
+          "translation": "Chandi",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kiswahili (archaic)) · Hollis (1900), JRAI Vol. 30, p. 281, fn. 1 · Component of royal title Mwana Chambi Chandi · https://zenodo.org/records/1952797/files/article.pdf"
         }
       ]
     },
@@ -31473,6 +31761,108 @@
           "translation": "Uji",
           "pronunciation": "uʄi",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Swahili) · Hobley (1922), Glossary, pp. 305–308 · Food & Drink · Gruel—also widely used by East Africa Bantu tribes. Uji is usually made of maize or millet meal."
+        },
+        {
+          "english": "Gruel—also widely used by East Africa Bantu tribes. Uji is",
+          "translation": "Uji",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Swahili) · Hobley (1922), Glossary, pp. 305–308 · Food & Drink · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · Gruel—also widely used by East Africa Bantu tribes. Uji is usually made of maize or millet meal."
+        },
+        {
+          "english": "Bee, s.",
+          "translation": "nioki",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 4 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Bird, s.",
+          "translation": "niuni",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 5 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Buffalo, s.",
+          "translation": "niati",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Camel, s.",
+          "translation": "ngamia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Cat, s.",
+          "translation": "paka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 7 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Dog, s.",
+          "translation": "jiboa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 10 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Elephant, s.",
+          "translation": "ndofu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 12 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fish, s.",
+          "translation": "samaki, pl. id",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 14 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Goat, s.",
+          "translation": "mbusi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 17 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Leopard, s.",
+          "translation": "tui",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 24 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Lion, s.",
+          "translation": "simba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 25 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "bull",
+          "translation": "ndume, fahali",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 10–11 · Livestock · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Pontiff of Vumba Ndogo; in Arabic \"reigning house\"",
+          "translation": "Diwan / Diwani",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba (borrowed from Pate; Arabic)) · Hollis (1900), JRAI Vol. 30, pp. 277 & fn. 4, 279, 284 · Royal title assumed c. 1112 A.H. (1700 A.D.) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "the name of a small bird which lives in the rice fields",
+          "translation": "Niomvi",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba) · Hollis (1900), JRAI Vol. 30, p. 281 · Royal nickname of the 6th Sultan of Vumba Kuu · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Lord / Shereef",
+          "translation": "Seyyid / Sherifu",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Swahili (Arabic)) · Hollis (1900), JRAI Vol. 30, p. 284, fn. 1 · Honorific titles for descendants of the Prophet · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Give me a cold Tusker.",
+          "translation": "Nipe Tusker baridi",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 8, p. 37 · Kenyan restaurant ordering dialogue · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
         }
       ]
     },
@@ -42572,6 +42962,60 @@
           "translation": "Ma,to,ny",
           "pronunciation": "",
           "context": "Smee (1844) East Coast Vocab (Swahili, 1844 orthography) · Smee (1844), p. 52"
+        },
+        {
+          "english": "Cloud, s.",
+          "translation": "kiwingo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 7 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Country, s.",
+          "translation": "nti",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 8 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fire, s.",
+          "translation": "motto",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 14 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mountain, s.",
+          "translation": "mlima",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 29 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Rain, s.",
+          "translation": "mfua",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 38 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "River, s.",
+          "translation": "mto, pl. mito",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 40 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Star, s.",
+          "translation": "niota",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 48 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Stone, s.",
+          "translation": "jiwe, pl. mawe",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 49 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tree, s.",
+          "translation": "mti",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 54 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
         }
       ]
     },
@@ -51283,6 +51727,30 @@
           "translation": "M'coo,ba",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Souallie (Swahili) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Egg, s.",
+          "translation": "i, pl. mai",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 11 · Food / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Milk, s.",
+          "translation": "massiwa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 28 · Food · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Water, s.",
+          "translation": "maji",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 58 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Please bring me [some] eggs.",
+          "translation": "Tafadhali, niletee mayai",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 8, p. 10 · Polite request (tafadhali = please; -letea = bring for/to) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
         }
       ]
     },
@@ -65692,6 +66160,54 @@
           "translation": "Foon,gan",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Souallie (Swahili) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Arrow, s.",
+          "translation": "uta, pl. mata",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Axe, s.",
+          "translation": "soka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Door, s.",
+          "translation": "mlango, pl. mi-",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 11 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "bow",
+          "translation": "uta, pl. nyuta",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 8–9 · Weapons · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Lord",
+          "translation": "Mwenyi",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 280 · Honorific form of address for the Diwan · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "to bend a bow preparatory to shooting an arrow",
+          "translation": "Pinda",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, pp. 291, 297 · Royal nickname of 1st Diwan of Vanga (Seyyid Ahmed bin Abubakari) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Piece of cloth used by men",
+          "translation": "kikoi",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 19, p. 99 · Kenyan clothing vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "Francolin",
+          "translation": "Kiringende",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Swahili (in Mweru table)) · Hobley (1910), p. 157 · Comparative lexical gloss — \"Swa. = Kiringende\" (note on Amatu) · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
         }
       ]
     },
@@ -93836,6 +94352,18 @@
           "translation": "Oo,on,gow",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Souallie (Swahili) · Smee (1844), p. 55"
+        },
+        {
+          "english": "build (v.)",
+          "translation": "kujenga, kuaka",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 10–11 · Verb · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "the Pleiads; literally \"that by which to cultivate\"",
+          "translation": "Kilimia",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, pp. 276, 294 fn. 1, 297 · Royal nickname of 2nd Diwan of Vanga (Seyyid Twahiri bin Abubakari) · https://zenodo.org/records/1952797/files/article.pdf"
         }
       ]
     },
@@ -104839,6 +105367,18 @@
           "translation": "Coo,nin,da",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Souallie (Swahili) · Smee (1844), p. 55"
+        },
+        {
+          "english": "God, s.",
+          "translation": "Mungu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 17 · Religion · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Road, s.",
+          "translation": "ndia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 40 · Travel / Spatial · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
         }
       ]
     },
@@ -117426,6 +117966,30 @@
           "translation": "Assooboyee",
           "pronunciation": "",
           "context": "Smee (1844) East Coast Vocab (Swahili, 1844 orthography) · Smee (1844), p. 54"
+        },
+        {
+          "english": "Day, s.",
+          "translation": "siku",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 9 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Month, s. / Moon, s.",
+          "translation": "mesi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 29 · Time / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Night, s.",
+          "translation": "usiku",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 30 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Don't despair. (-kata = to cut; tamaa = desire)",
+          "translation": "Usikate tamaa",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 46, pp. 171–172 · Everyday idiom · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
         }
       ]
     },
@@ -256758,6 +257322,342 @@
           "translation": "rubani",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "Cultivated field or garden, widely used by up-country Africans.",
+          "translation": "Shamba (sg.); ma-shamba (pl.)",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Swahili) · Hobley (1922), Glossary, pp. 305–308 · Agriculture · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39"
+        },
+        {
+          "english": "Name, s.",
+          "translation": "jina",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 30 · Social / Lexical · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twelve, num.",
+          "translation": "kumi na mbili",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Word, s.",
+          "translation": "neno, pl. maneno",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kisuaheli (Kiswahili)) · Krapf (1850), p. 62 · Language · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "literally, to pile up (loads), hence, to rest or stay",
+          "translation": "Kuvanga (same as Kupanga)",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 275, fn. 3 · Toponym etymology (Vanga) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Sultan of Vumba Kuu",
+          "translation": "Mwana Chambi / Mwana Chambi Chandi",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba) · Hollis (1900), JRAI Vol. 30, p. 281 · Royal title (changed from Mwana Chambi to Mwana Chambi Chandi after 7th Sultan) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Hello! (said to a man) / Hello!",
+          "translation": "Jambo, bwana. / Jambo",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 1, p. 1 · Everyday greeting dialogue (Unit 1) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "How are you this morning? / Fine. ('good news')",
+          "translation": "Habari za asubuhi? / Habari njema",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 1, p. 1 · Greeting sequence (Unit 1) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Hello!",
+          "translation": "Hujambo, bwana. / Sijambo",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 2, p. 3 · Midday greeting (Unit 2) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt · Hello! (lit. you have no affair/trouble?) / I have no affair/trouble"
+        },
+        {
+          "english": "How are you today? / Fine.",
+          "translation": "Habari za mchana? / Njema",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 2, p. 3 · Midday greeting (mchana = daytime) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "How are you this evening?",
+          "translation": "Habari za jioni? / Habari za usiku?",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 3, p. 4 · Evening greeting (usiku = night) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "(Reply: very well) / How are you? ('What kind of news?')",
+          "translation": "Sijambo sana. / Habari gani?",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 6, p. 7 · Greeting variant (sana = very much; gani? = what kind of?) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Would you like [some] food? / Yes, please.",
+          "translation": "Je, unataka chakula? / Ndiyo, bwana",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 8, p. 9 · Everyday dining dialogue (chakula = food) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "There is fruit, gruel, and eggs.",
+          "translation": "Kuna matunda na uji na mayai",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 8, p. 9 · Core food vocabulary (tunda/matunda, uji, yai/mayai) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Come in. / Don't trouble. Thank you.",
+          "translation": "Karibu. / Starehe, starehe, asante",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 10, p. 14 · Hospitality idiom (karibu = near; -starehe = be at rest) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "My children are hungry.",
+          "translation": "Watoto wangu wana njaa",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 11, p. 16 · Everyday dialogue (mtoto/watoto = child/children; njaa = hunger) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Just bring him some bread. / Very well.",
+          "translation": "Mletee mkate tu, basi. / Vizuri",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 12, p. 19 · Everyday dialogue (tu = only; basi = that is all) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "There is beef. / Isn't there any pork?",
+          "translation": "Kuna nyama ya ng'ombe. / Hakuna nyama ya nguruwe?",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 13, p. 22 · Dining dialogue (ng'ombe = cow, ox; nguruwe = pig) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Do you want tea, or coffee? / Do you want milk and sugar?",
+          "translation": "Mnataka chai, au kahawa? / Mnataka sukari na maziwa?",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 14, p. 27 · Afternoon tea dialogue (chai, kahawa, sukari, maziwa) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "But there's not enough butter for the bread.",
+          "translation": "Lakini siagi haitoshi kwa mkate",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 15, p. 31 · Dining dialogue (siagi = butter; -tosha = be sufficient) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Do you know",
+          "translation": "Unaijua bei ya mananasi? / Hapana, siijui",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 16, p. 35 · Buying food dialogue (bei = price; nanasi/mananasi = pineapple) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt · Do you know (it) the price of the pineapples? / No, I don't (know it)."
+        },
+        {
+          "english": "How much is the maize?",
+          "translation": "Unauzaje muhindi? / Mmoja senti kumi",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 19, pp. 52–53 · Market dialogue (muhindi/mahindi = ear of maize/maize; senti = cent) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt · How much is the maize? ('How do you sell the maize?') / Ten cents apiece."
+        },
+        {
+          "english": "west / south / north / east",
+          "translation": "magharibi / kusini / kaskazini / mashariki",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 21, pp. 63–64 · Cardinal directions (N class) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Where are you going? / I'm going to the market.",
+          "translation": "Unakwenda wapi? / Ninakwenda sokoni",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 23, p. 72 · Everyday dialogue (soko = market; -ni = locative suffix) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "What news of many days? / I'm happy to know ('see') you.",
+          "translation": "Habari za siku nyingi? / Nimefurahi kukuona",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 28, p. 94 · Social introduction formula (Unit 28) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Is everyone all right at your house? / [Yes], they're fine",
+          "translation": "Nyumbani hawajambo? / Hawajambo. / Salama",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 28, pp. 94–95 · Social greeting formula (Unit 28) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt · Is everyone all right at your house? / [Yes], they're fine. / They're fine. ('with peace')"
+        },
+        {
+          "english": "So-so.",
+          "translation": "Hivyo hivyo. (or: Vivi hivi, or: Hivi hivi.)",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 31, p. 105 · Everyday idiom (reply to \"Do you like your work?\") · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "cassava / beans / onion / rice (growing in field)",
+          "translation": "muhogo / maharagwe / kitunguu / mpunga",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 32, p. 108 · Agricultural core vocabulary · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "He is a day laborer. (kazi ya kibarua = casual labor)",
+          "translation": "Yeye hufanya kazi ya kibarua",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 35, p. 118 · Occupations dialogue · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "I went to walk and get a change of air.",
+          "translation": "Nilikwenda kutembea na kupunga hewa",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 38, p. 133 · Idiom (-punga hewa = to change air / take fresh air) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Yes, I speak Luo fluently. (barabara = thoroughly, very well)",
+          "translation": "Ndiyo, Nasema Kiluo barabara",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 39, p. 135 · Language proficiency dialogue (Kisumu context) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Tomorrow is the New Year's holiday.",
+          "translation": "Kesho ni Sikukuu ya Mwaka Mpya",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 40, p. 139 · Holiday dialogue (Unit 40) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "We are planning to take the train",
+          "translation": "Tunakusudia kupanda gari la moshi",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 40, p. 139 · Travel dialogue (trip to Voi) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt · We are planning to take the train. (gari la moshi = train, lit. smoke car)"
+        },
+        {
+          "english": "Well, good-bye. (lit. to happiness, with good fortune) / Thanks.",
+          "translation": "Kwa heri, bwana. / Asante",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 44, p. 163 · Farewell idiom · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "plate / cup / saucer / glass",
+          "translation": "sahani / kikombe / kisahani / bilauri",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 47, p. 176 · Household core vocabulary · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "What is your name? / My name is Musonga.",
+          "translation": "Jina lako nani? / Jina langu ni Musonga",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 2, p. 8 · Introduction dialogue (Lesson 2) · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "Thank you for knowing you. / Goodbye, we will see each",
+          "translation": "Asante kwa kukujua. / Kwaheri tutaonana tena",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 2, p. 8 · Introduction & farewell phrases · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt · Thank you for knowing you. / Goodbye, we will see each other again."
+        },
+        {
+          "english": "Every morning I go to school by matatu. (matatu = matatu/taxi)",
+          "translation": "Kila asubuhi ninakwenda shule kwa matatu",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 3, pp. 13–14 · Kenyan transport competency dialogue · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "In the evening I return home on foot.",
+          "translation": "Jioni ninarudi nyumbani kwa miguu",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 3, p. 13 · Everyday transport dialogue · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "fifty cents / ten cents / five cents",
+          "translation": "sumni / peni (pl. mapeni) / ndururu",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 6, p. 25 · Kenyan currency vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "greens / ugali / chapati",
+          "translation": "sukuma wiki / ugali / chapati",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 7, pp. 31–32 · Kenyan staple food vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "beef / goat meat / mutton / pork",
+          "translation": "nyama ya ngombe / nyama ya mbuzi / nyama ya kondoo / nyama ya nguruwe",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 7, p. 32 · Kenyan food vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "Bring me goat meat and kienyeji (traditional dish).",
+          "translation": "Niletee nyama ya mbuzi na kienyeji",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 8, p. 37 · Restaurant ordering dialogue · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "uncle / aunt / grandfather / grandmother / grandchild",
+          "translation": "mjomba / shangazi / babu / nyanya / mjukuu",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 9, p. 45 · Family & kinship vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "That is an expensive price, mama. Please lower it a little.",
+          "translation": "Hiyo ni bei ghali mama. Tafadhali punguza kidogo",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 10, p. 48 · Market bargaining dialogue · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "to bargain / initial/first price / last price / goods/item/things",
+          "translation": "kupiga bei / bei ya kwanza / bei ya mwisho / bidhaa",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 10, p. 50 · Market bargaining vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "Potatoes are sixty shillings per debe",
+          "translation": "Viazi ni shilingi sitini kwa debe. / Viazi ni shilingi mia mbili kwa gunia",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 10, p. 48 · Kenyan market units & pricing · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt · Potatoes are sixty shillings per debe (tin). / Potatoes are two hundred shillings per sack (gunia)."
+        },
+        {
+          "english": "seven o'clock / twelve o'clock / six o'clock",
+          "translation": "saa moja / saa sita / saa kumi na mbili",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 11, pp. 54, 57 · Swahili 12-hour daylight/darkness clock system · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "dawn/very early / noon/midday / afternoon / evening",
+          "translation": "alfajiri / adhuhuri / alasiri / jioni",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 11, p. 54 · Times of day vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "primary school / secondary school / university /",
+          "translation": "shule ya msingi / shule ya sekondari / chuo kikuu / shahada",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 13, pp. 64–65 · Education vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt · primary school / secondary school / university / degree/certificate"
+        },
+        {
+          "english": "fork road / crossroads / roundabout",
+          "translation": "njia panda / makutano ya barabara / mzunguko wa barabara",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 15, p. 79 · Directions vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "Go straight. / Turn left. / Turn right.",
+          "translation": "Nenda moja kwa moja. / Pinda kushoto. / Kata kulia",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 16, p. 84 · Giving directions phrases · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "tout / passenger / fare / ticket / luggage/load",
+          "translation": "manamba / abiria / nauli / tikiti / mzigo",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 17, pp. 89–90, 92 · Kenyan matatu & bus travel vocabulary (with Cultural Note on Manambas) · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "season / hot season / rainy season / season of lesser rains",
+          "translation": "majira / kiangazi / masika / vuli / ukame",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 18, p. 95 · Kenyan weather & seasons vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt · season / hot season / rainy season / season of lesser rains / drought"
+        },
+        {
+          "english": "AIDS / cholera / rabies / bilharzia / dizziness",
+          "translation": "ukimwi / kipindu pindu / kichaa cha mbwa / kichocho / kizunguzungu",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 21, p. 108 · Health & illness vocabulary · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
+        },
+        {
+          "english": "I have improved a little. / I have not recovered well yet.",
+          "translation": "Nimepata nafuu kidogo. / Bado sijapona vizuri",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 21, p. 107 · Health competency phrases · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
         }
       ]
     },
@@ -313194,6 +314094,78 @@
           "translation": "Wa,zee,moo",
           "pronunciation": "wa",
           "context": "Smee (1844, p. 55) Souallie (Swahili) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Happiness, blessing—generally used of a formal blessing",
+          "translation": "Rathi",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Swahili) · Hobley (1922), Glossary, pp. 305–308 · Ritual / Blessing · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · Happiness, blessing—generally used of a formal blessing. Kuwarathi—to be satisfied or content with."
+        },
+        {
+          "english": "Great Vumba",
+          "translation": "Vumba Kuu",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 276 · Toponym / historical sultanate capital · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Little Vumba",
+          "translation": "Vumba Ndogo",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 276 · Toponym / Wasin–Kigomeni–Vanga district · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "desert people",
+          "translation": "Wanyika",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kiswahili / Coastal Bantu) · Hollis (1900), JRAI Vol. 30, p. 276, fn. 12 · Collective ethnonym for allied coastal clans including the Wadigo · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "an unmarried youth",
+          "translation": "kijana",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 278 & fn. 4 · Social grade prior to marriage feast · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "the people of Vumba",
+          "translation": "Wavumba",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 282, fn. 6 · Ethnonym · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "clear weather after the storm",
+          "translation": "Maere",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba) · Hollis (1900), JRAI Vol. 30, pp. 287, 296 · Royal nickname of 1st Diwan of Kigomeni (Sherifu Ali bin Abubakari) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "Patience",
+          "translation": "Mnyeti",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba) · Hollis (1900), JRAI Vol. 30, pp. 288, 290, 296 · Royal nickname of 2nd Diwan of Kigomeni (Abubakari bin Seyyid Ibadi) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "the slave of",
+          "translation": "hadim",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Swahili / Arabic) · Hollis (1900), JRAI Vol. 30, p. 292 & fn. 4 · Epithet/title (Alimas hadim Seyyid Said) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "plenty (corruption of Maridhawa)",
+          "translation": "Marithia",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kivumba) · Hollis (1900), JRAI Vol. 30, pp. 276, 295, 297 · Royal nickname of 3rd Diwan of Vanga / Vumba (Seyyid Ahmed bin Twahiri) · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "They are usually very good.",
+          "translation": "Kwa kawaida, ni mazuri sana",
+          "pronunciation": "",
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 17, p. 41 · Idiom (kwa kawaida = usually, by custom) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+        },
+        {
+          "english": "Older woman; a title of respect for married or middle-aged women",
+          "translation": "Mama",
+          "pronunciation": "",
+          "context": "Peace Corps Kenya (1995, US Gov PD) Kiswahili Manual · Peace Corps Kenya (1995), Lesson 1, pp. 7, 9 · Cultural Note / Social title · https://archive.org/stream/ERIC_ED402760/ERIC_ED402760_djvu.txt"
         }
       ]
     }
@@ -313201,5 +314173,5 @@
   "source": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022); Goldsmith & Mpiranya (2022) LSP #306 Ch. 5, Mwamzandi (2022) Ch. 13, Nurse (2019) LSP #190 Ch. 33, Ustadh Mau (2013) Kiamu Poetics, Beech (1918), TICO-19 & Stanford PACS (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); C. H. & N. Y. Stigand (1914) Black Tales for White Children (Project Gutenberg #38992, US Public Domain, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm); Wikiquote Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)",
   "isoCode": "swh",
   "glottocode": "swah1253",
-  "totalEntries": 55801
+  "totalEntries": 55963
 }

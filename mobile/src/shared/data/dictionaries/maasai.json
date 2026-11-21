@@ -12,7 +12,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), R. N. Cust (1883), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901), Sir Harry H. Johnston (1902), A. C. Hollis (1905), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0).",
   "categories": [
     {
@@ -229,6 +229,12 @@
           "translation": "eber",
           "pronunciation": "",
           "context": "Mrs. S. L. Hinde (1899) JRAI Vol. 29, Notes on the Masai Section of Lieut.-Colonel Macdonald's Vocabulary (Public Domain), p. 248"
+        },
+        {
+          "english": "To a man",
+          "translation": "soboi",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 41 (PDF p. 59) · Salutation (Reply: eber) · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf"
         }
       ]
     },
@@ -988,6 +994,18 @@
           "translation": "ipi",
           "pronunciation": "",
           "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 42 · Numeral"
+        },
+        {
+          "english": "Five",
+          "translation": "Imyet",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (5) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Eight",
+          "translation": "Isyet",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (8) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
         }
       ]
     },
@@ -2692,6 +2710,138 @@
           "translation": "oido",
           "pronunciation": "",
           "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 56 · Social"
+        },
+        {
+          "english": "The brother",
+          "translation": "Ol-alashe (pl. Il-alashera)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 10, 24 · Kinship · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The sister",
+          "translation": "Eng-anashe (pl. Ing-anashera)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 10, 24 · Kinship · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The father or son-in-law",
+          "translation": "Ol-aputani (pl. Il-aputak)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 9, 26 · Kinship (fem. Eng-aputani: mother or daughter-in-law, p. 9) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The grandfather or grandson",
+          "translation": "Ol-akwi (pl. Il-akwiak)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 26 · Kinship · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The grandmother, old woman",
+          "translation": "Eng-ogho (pl. Ing-oghoii)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 22 · Kinship · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The old man, the husband",
+          "translation": "Ol-moruo (pl. Il-moruak)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 26 · Kinship / Social · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The wife",
+          "translation": "En-gitok (pl. En-gituak)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 26 · Kinship / Social · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The child",
+          "translation": "En-gerai (pl. In-gera)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 28 · Kinship · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The daughter, young girl",
+          "translation": "En-dito (pl. In-doiye)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 32 · Kinship · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The boy",
+          "translation": "Ol-ayoni (pl. Il-ayok)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 9, 16 · Kinship / Social · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The medicine-man",
+          "translation": "Ol-oiboni (pl. Il-oibonok)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 26 · Social · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The family",
+          "translation": "Ol-marei (pl. Il-mareita)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 24 · Kinship · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The family, hut",
+          "translation": "Eng-aji (pl. Ing-ajijik)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 27 · Core Vocabulary · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "medicine man",
+          "translation": "laibon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru) / Masai loan) · Hobley (1910), p. 158 · Vocabulary — \"consult their laibon or medicine man\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/158/mode/1up"
+        },
+        {
+          "english": "a Laikipiak who is the laibon or medicine man of the Sambur",
+          "translation": "Ol Segeteti",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak / Samburu (Sambur)) · Hobley (1910), p. 160 · Personal name — a Laikipiak who is the laibon or medicine man of the Sambur · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of the Lanat",
+          "translation": "Lengila",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Personal name — Chief of the Lanat · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "principal representative of El Mogishu",
+          "translation": "Ol Ainamodo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Personal name — principal representative of El Mogishu; braced as Ol-aibon, or medicine man · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Personal name | principal representative of El Mogishu; braced as Ol-aibon, or medicine man"
+        },
+        {
+          "english": "principal representative of El Mogishu",
+          "translation": "Ol Murumbi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Personal name — principal representative of El Mogishu; braced as Ol-aibon, or medicine man · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Personal name | principal representative of El Mogishu; braced as Ol-aibon, or medicine man"
+        },
+        {
+          "english": "principal representative of El Mogishu",
+          "translation": "Ol Emberei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Personal name — principal representative of El Mogishu; braced as Ol-aibon, or medicine man · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Personal name | principal representative of El Mogishu; braced as Ol-aibon, or medicine man"
+        },
+        {
+          "english": "medicine man",
+          "translation": "Ol-aibon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Vocabulary / Title — Ol-aibon, or medicine man (also laibons / laibon in prose below table) · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "principal representative of El Masarunye",
+          "translation": "Mlarininyi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Personal name — principal representative of El Masarunye (laigwanan of moruak, Eldama Ravine) · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Personal name | principal representative of El Masarunye (laigwanan of moruak, Eldama Ravine)"
+        },
+        {
+          "english": "principal representative of El Siria",
+          "translation": "Ol Nangoris",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Personal name — principal representative of El Siria · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Personal name"
         }
       ]
     },
@@ -4480,6 +4630,48 @@
           "translation": "eng-isisi",
           "pronunciation": "",
           "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 43 · Body · 1857 form: isisi, eng."
+        },
+        {
+          "english": "The spear",
+          "translation": "E-remet (pl. I-remeta)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 21 · Core Vocabulary · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The blood",
+          "translation": "O-sarge (pl. I-sargeta)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 24 · Body / Core Vocabulary · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The arm, hand",
+          "translation": "Eng-aina (pl. Ing-aik)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 26 · Body · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The leg, foot",
+          "translation": "En-geju (pl. In-gejek)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 26 · Body · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The head",
+          "translation": "El-lughunya (pl. Il-lughuny)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 31 · Body · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The mouth",
+          "translation": "En-gutuk (pl. In-gutukie)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 33 · Body · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "medicine men / medicine man",
+          "translation": "laibons / laibon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Vocabulary / Title — appears in prose below Uasingishu table · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
         }
       ]
     },
@@ -6821,6 +7013,108 @@
           "translation": "aulo",
           "pronunciation": "",
           "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 18 · Pastoral"
+        },
+        {
+          "english": "The ox, cow (pl. the cattle, oxen, cows)",
+          "translation": "En-giteng (pl. In-gishu)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 32 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The bullock (pl. the bullocks)",
+          "translation": "Ol-kiteng (pl. Il-mongi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 32 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The bull calf / calf",
+          "translation": "Ol-ashe (pl. Il-asho)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 9, 23 · Livestock (fem. Eng-ashe: cow calf, p. 9) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The heifer",
+          "translation": "En-dauwo (pl. In-dauwa)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 24 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The goat",
+          "translation": "En-gine (pl. In-gineji)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 33 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The he-goat",
+          "translation": "Ol-oro (pl. Il-oroi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 22 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The donkey",
+          "translation": "O-sighiria (pl. I-sirkon)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 32 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The male donkey",
+          "translation": "Ol-amuye (pl. Il-amuyeishi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 25 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The flock",
+          "translation": "In-dare",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 32 · Livestock (plural only) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The herd",
+          "translation": "Em-boo (pl. Im-booite)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 24 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Milk",
+          "translation": "Kulle",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 13, 32 · Livestock / Food (plural only; no article) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The butter",
+          "translation": "Eng-orno (pl. Ing-orn)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 31 · Livestock / Food · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The dog",
+          "translation": "Ol-dia (pl. Il-diain)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 9, 23 · Domestic animal · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The buffalo",
+          "translation": "Ol-osowan (pl. Il-osowani)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 19 · Wildlife / Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The rhinoceros",
+          "translation": "E-muny (pl. I-munyi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 19 · Wildlife / Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The zebra",
+          "translation": "Ol-oitigo (pl. Il-oitigoshi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 25 · Wildlife / Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "camel",
+          "translation": "ndamess (pl. ndarmessi)",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 51 (PDF p. 69) · Core Vocabulary (Livestock) · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf"
         }
       ]
     },
@@ -8654,6 +8948,78 @@
           "translation": "Dorobo",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Masai (with Asi / Kikuyu Adzi)) · Hobley (1922), Glossary, pp. 305–308 · Ethnonyms / Glossary · Masai word (spelt Torobo by Hollis) often corrupted to Wandorobo/Andorobo; means tsetse fly in Masai; name for aboriginal forest hunters who call themselves Asi and are called Adzi by the Kikuyu (Athi River believed a corruption of Adzi)."
+        },
+        {
+          "english": "The god, rain, sky",
+          "translation": "Eng-ai (pl. Ing-aitin)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 25 · Nature / Religion · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The star",
+          "translation": "Ol-akira (pl. Il-akir)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 31 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The fire",
+          "translation": "En-gima (pl. In-gimaite)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 24 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The mountain",
+          "translation": "Ol-doinyo (pl. Il-doinyo)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 32 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The river",
+          "translation": "E-uaso",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 11 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The lake",
+          "translation": "En-aiposha (pl. In-aiposhani)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 22 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The forest",
+          "translation": "O-sero (pl. I-seroi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 22 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The wood",
+          "translation": "En-dim (pl. In-dimi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 19 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The tree",
+          "translation": "Ol-chani (pl. Il-kak)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 2, 33 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The stone",
+          "translation": "O-soit (pl. I-soito)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 21 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The land, country",
+          "translation": "En-gop (pl. In-gwapi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 33 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "cold",
+          "translation": "ngijabi / erobi",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 52 (PDF p. 70) · Core Vocabulary (Nature) · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf"
         }
       ]
     },
@@ -9746,6 +10112,24 @@
           "translation": "ogu, a",
           "pronunciation": "",
           "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 56 · Verb"
+        },
+        {
+          "english": "The water",
+          "translation": "Eng-are (pl. Ing-ariak)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 27 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The food",
+          "translation": "En-daa (pl. In-daiki)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 33 · Core Vocabulary · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The honey",
+          "translation": "En-aisho (pl. In-aishi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 33 · Core Vocabulary · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
         }
       ]
     },
@@ -11070,6 +11454,18 @@
           "translation": "Enganassa",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 362"
+        },
+        {
+          "english": "The sword",
+          "translation": "Ol-alem (pl. Il-alema)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 9, 21 · Core Vocabulary (fem. Eng-alem: the knife, p. 9) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The shield",
+          "translation": "El-longo (pl. Il-longoi)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 22 · Core Vocabulary · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
         }
       ]
     },
@@ -15364,6 +15760,18 @@
           "english": "the medicine",
           "translation": "En-aibon",
           "context": "A. C. Hollis, The Masai: Their Language and Folklore (1905)"
+        },
+        {
+          "english": "The warrior",
+          "translation": "Ol-murani (pl. Il-muran)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 28 · Social · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "warrior",
+          "translation": "elmorran (pl. lamoraui)",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 73 (PDF p. 91) · Core Vocabulary (Social) · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf"
         }
       ]
     },
@@ -16067,6 +16475,12 @@
           "translation": "igenu, a",
           "pronunciation": "",
           "context": "Erhardt & Krapf (1857) Enguduk Iloigob (Maasai) · Erhardt & Krapf (1857), p. 40 · Verb"
+        },
+        {
+          "english": "The moon, the month",
+          "translation": "Ol-apa (pl. Il-apaitin)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 25 · Nature · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
         }
       ]
     },
@@ -25169,6 +25583,96 @@
           "translation": "Olduvai",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "One",
+          "translation": "Obo (masc.); Nabo (fem.)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (1) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Two",
+          "translation": "Aare (masc.); Are (fem.)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (2) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Three",
+          "translation": "Okuni (masc.); Uni (fem.)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (3) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Seven",
+          "translation": "Oopishana (masc.); Naapishana (fem.)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (7) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Nine",
+          "translation": "Oudo (masc.); Naudo (fem.); Endoroj",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (9; Endoroj occasional variant) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Thirty",
+          "translation": "Osom / 'N-domoni uni",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (30) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Fifty",
+          "translation": "Onom / 'N-domoni 'myet",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 39 · Numeral (50) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "One thousand",
+          "translation": "Ip-ip / 'N-domoni ip",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 40 · Numeral (1000) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Father",
+          "translation": "Papa (own); Menye (others')",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 13, 19 · Kinship (pl. Loopapa / Loomenye, p. 19) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "Mother",
+          "translation": "Yeyo (own); Mame (occasional)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 13, 19 · Kinship (pl. Nooyeyo) · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "The ram / The ewe, the sheep",
+          "translation": "Ol-kerr / En-gerr (pl. In-gerra)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), pp. 9, 21 · Livestock · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "all",
+          "translation": "bougi",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 47 (PDF p. 65) · Core Vocabulary · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf"
+        },
+        {
+          "english": "cow (head of cattle)",
+          "translation": "ngetelibong, ngiting (pl. ngishu)",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 52 (PDF p. 70) · Core Vocabulary (Livestock) · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf"
+        },
+        {
+          "english": "branch of the Bworana people who drove out and dispersed",
+          "translation": "Sitaa or El Duju",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Bworana (in Laikipiak section)) · Hobley (1910), p. 160 · Ethnonym — branch of the Bworana people who drove out and dispersed the Lanat · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Ethnonym | branch of the Bworana people who drove out and dispersed the Lanat"
+        },
+        {
+          "english": "principal representative of L-Nyaya",
+          "translation": "Ol Enolul (Lutuno) Sayen",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Personal name — principal representative of L-Nyaya · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Personal name"
         }
       ]
     },
@@ -29088,6 +29592,438 @@
           "translation": "Konono",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Masai) · Hobley (1922), Glossary, pp. 305–308 · Social / Smiths · A clan of serfs believed to be of alien race living among the Masai who are the smiths to the tribe, corresponding to the Tumal of the Somalis."
+        },
+        {
+          "english": "A clan of serfs believed to be of alien race living among",
+          "translation": "Konono",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Masai) · Hobley (1922), Glossary, pp. 305–308 · Social / Smiths · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · A clan of serfs believed to be of alien race living among the Masai who are the smiths to the tribe, corresponding to the Tumal of the Somalis."
+        },
+        {
+          "english": "Why do you behave like a woman whose son has just married ?",
+          "translation": "Ainyô-pe ingarsiso anaa en-naïyamishe ol-tito ?",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 238 · Proverb No. 1 · https://archive.org/details/masaitheirlangua00holluoft/page/238/mode/1up"
+        },
+        {
+          "english": "There is a Judge for him, and He will avenge me.",
+          "translation": "Eata en-nēor",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 238 · Proverb No. 2 · https://archive.org/details/masaitheirlangua00holluoft/page/238/mode/1up"
+        },
+        {
+          "english": "Flies have ears.",
+          "translation": "Eata ’l-ojoñga ’n-giyaa",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 238 · Proverb No. 3 · https://archive.org/details/masaitheirlangua00holluoft/page/238/mode/1up"
+        },
+        {
+          "english": "The night has ears.",
+          "translation": "Eata en-gewárie ’n-giyaa",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 238 · Proverb No. 3 (variant) · https://archive.org/details/masaitheirlangua00holluoft/page/238/mode/1up"
+        },
+        {
+          "english": "The mouth which ate fat shall eat excrement, and that which",
+          "translation": "Ebaïki en-gutuk nainosa ’sunya neinos i-ñgik, nebaïki en-nainosa ’ñgik neinos i-sunya",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 238 · Proverb No. 4 · https://archive.org/details/masaitheirlangua00holluoft/page/238/mode/1up · The mouth which ate fat shall eat excrement, and that which ate excrement shall eat fat."
+        },
+        {
+          "english": "The slayer of the enemy has become a coward, and the",
+          "translation": "Ebaïki ol-ōtaara ’n-gituñgat neaku o-suuji, nebaïki ol-turwai neaku ol-oiñgōni",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), pp. 238–239 · Proverb No. 4 (variant) · https://archive.org/details/masaitheirlangua00holluoft/page/238/mode/1up · The slayer of the enemy has become a coward, and the poltroon has become a brave man."
+        },
+        {
+          "english": "There is not such a thing in the world as a sheep of many",
+          "translation": "Eitu-kidól ti-oreren en-gerr sambu",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 239 · Proverb No. 5 · https://archive.org/details/masaitheirlangua00holluoft/page/239/mode/1up · There is not such a thing in the world as a sheep of many colours."
+        },
+        {
+          "english": "Coal laughs at ashes, not knowing that the same fate which",
+          "translation": "Ekwenikye ’n-guk in-guruon",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 239 · Proverb No. 6 · https://archive.org/details/masaitheirlangua00holluoft/page/239/mode/1up · Coal laughs at ashes, not knowing that the same fate which has befallen them will befall it."
+        },
+        {
+          "english": "The firewood which has been cut ready for burning laughs at",
+          "translation": "Ekwenikye ol-chata ōtii ol-tiren ol-ōtii en-gima",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 239 · Proverb No. 6 (variant) · https://archive.org/details/masaitheirlangua00holluoft/page/239/mode/1up · The firewood which has been cut ready for burning laughs at that which is being consumed."
+        },
+        {
+          "english": "He eats his food like a donkey.",
+          "translation": "Eñgárie o-sighiria en-daa",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 239 · Proverb No. 7 · https://archive.org/details/masaitheirlangua00holluoft/page/239/mode/1up"
+        },
+        {
+          "english": "It is the same thing when a man is once there whether he",
+          "translation": "Enyanyuk ol-oipotōki o ol-ōēuo openy",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 239 · Proverb No. 8 · https://archive.org/details/masaitheirlangua00holluoft/page/239/mode/1up · It is the same thing when a man is once there whether he has been called or whether he has come of his own free will."
+        },
+        {
+          "english": "They-will-go they-be-divided like the-huts of-the-zebra.",
+          "translation": "Epwo ēorioro anaa ’ng-ajijik oo-’l-oitigōshi",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 239 · Proverb No. 9 (interlinear gloss; Hollis note: implies \"They are scattered over the face of the earth\") · https://archive.org/details/masaitheirlangua00holluoft/page/239/mode/1up"
+        },
+        {
+          "english": "Everything has an end.",
+          "translation": "Epwo ’m-baa pôkin in-gitiñgot",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 240 · Proverb No. 10 · https://archive.org/details/masaitheirlangua00holluoft/page/240/mode/1up"
+        },
+        {
+          "english": "Events follow one another like days.",
+          "translation": "Epwōnu ’l-limot anaa ’ng-oloñgi",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 240 · Proverb No. 11 · https://archive.org/details/masaitheirlangua00holluoft/page/240/mode/1up"
+        },
+        {
+          "english": "Actions come by the use of the legs, and if arrows come",
+          "translation": "Epwōnu ’m-baa too-’murōshin",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 240 · Proverb No. 12 (double meaning noted by Hollis) · https://archive.org/details/masaitheirlangua00holluoft/page/240/mode/1up · Actions come by the use of the legs, and if arrows come, there are legs behind them."
+        },
+        {
+          "english": "He separates himself from his friends like a sick",
+          "translation": "Erishunye anaa en-gäa o-’sighiria ōbo",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 240 · Proverb No. 13 · https://archive.org/details/masaitheirlangua00holluoft/page/240/mode/1up · He separates himself from his friends like a sick (or dead) donkey."
+        },
+        {
+          "english": "Being defeated and dying are the same.",
+          "translation": "Erisyo laikin o käa",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 240 · Proverb No. 14 · https://archive.org/details/masaitheirlangua00holluoft/page/240/mode/1up"
+        },
+        {
+          "english": "A cow is as good as a man.",
+          "translation": "Erisyore en-giteñg nabo el-lughunya o-’l-lee",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 240 · Proverb No. 15 · https://archive.org/details/masaitheirlangua00holluoft/page/240/mode/1up"
+        },
+        {
+          "english": "Hide-ye the-mouthfuls-of-food.",
+          "translation": "E’sudoi ’nyalat",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 240 · Proverb No. 16 (interlinear gloss; Hollis note: do not disclose secret thoughts) · https://archive.org/details/masaitheirlangua00holluoft/page/240/mode/1up"
+        },
+        {
+          "english": "He is like a hyena's sinew.",
+          "translation": "Etaa em-bito o-’l-ñgojine",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 240 · Proverb No. 17 · https://archive.org/details/masaitheirlangua00holluoft/page/240/mode/1up"
+        },
+        {
+          "english": "It-said the-cow : ‘Do-not-lend-me, give-me-away.’",
+          "translation": "Etējo en-giteñg : ‘Mikindaya, injooyōki.’",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 241 · Proverb No. 18 (interlinear gloss; Hollis note on lent/pawned animals) · https://archive.org/details/masaitheirlangua00holluoft/page/241/mode/1up"
+        },
+        {
+          "english": "The cow said : ‘Say as many words about me as I have hairs",
+          "translation": "Etējo en-giteñg : ‘Tipikaki o-rorei ōbana ’l-papit lo-’sesen.’",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 241 · Proverb No. 19 · https://archive.org/details/masaitheirlangua00holluoft/page/241/mode/1up · The cow said : ‘Say as many words about me as I have hairs in my body.’"
+        },
+        {
+          "english": "The hyena said : ‘It is not only that I have luck, but my",
+          "translation": "Etējo ol-ñgojine : ‘Mme ake amunyak, keju nemaagol.’",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 241 · Proverb No. 20 · https://archive.org/details/masaitheirlangua00holluoft/page/241/mode/1up · The hyena said : ‘It is not only that I have luck, but my leg is strong.’"
+        },
+        {
+          "english": "There is a dog in the gourd, and his ears prevent it from",
+          "translation": "Etii ol-dia e-mala, meishoru ’n-giyaa epughuri",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 241 · Proverb No. 21 · https://archive.org/details/masaitheirlangua00holluoft/page/241/mode/1up · There is a dog in the gourd, and his ears prevent it from being closed."
+        },
+        {
+          "english": "Mountains do not meet.",
+          "translation": "Il-doinyo lemetumo",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 241 · Proverb No. 22 · https://archive.org/details/masaitheirlangua00holluoft/page/241/mode/1up"
+        },
+        {
+          "english": "The euphorbia tree.",
+          "translation": "Aata ’l-muran lainei kumok, naa en-geju nabo eitashēye. — Ol-popoñgi",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 253 · Enigma No. 1 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/253/mode/1up · Gloss: What do my warriors resemble when they stand on one leg ?"
+        },
+        {
+          "english": "The rafters of the hut.",
+          "translation": "Aata ’l-muran lainei kumok, naa ōbo oipuñgōki ’n-gīshu. — Il-loom le-’ng-aji",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 253 · Enigma No. 2 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/253/mode/1up · Gloss: What are my warriors like ? I have many of them, and one goes out to look after the cattle."
+        },
+        {
+          "english": "The pegs which are being used for pegging out a skin.",
+          "translation": "Aata ’l-muran lainei, nemetii ol-le-bata. — ’N-jeito",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), pp. 253–254 · Enigma No. 3 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/253/mode/1up · Gloss: What are my warriors like when they stand in a circle, and one cannot see which is the first and which is the last ?"
+        },
+        {
+          "english": "The stones used for standing the cooking-pots on at the fire.",
+          "translation": "Aata ’l-muran lanei ōkuni, nemeduñgo en-gigwena metii ol-li-ōkuni. — ’Soito le-’n-gima",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 254 · Enigma No. 4 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/254/mode/1up · Gloss: I have three warriors. What is a discussion between two of them like if the third is not present ?"
+        },
+        {
+          "english": "The bare ground and the sky.",
+          "translation": "Aata ’n-dapan ainei are naarisyo. — Eng-aï o en-gop",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 254 · Enigma No. 5 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/254/mode/1up · Gloss: I have two skins, one to lie on and the other to cover myself with. What are they ?"
+        },
+        {
+          "english": "The rain.",
+          "translation": "A-isulishe, nepwōnu ’l-ooiñgua ’n-dimi. — Eng-aï natasha",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 254 · Enigma No. 6 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/254/mode/1up · Gloss: I whistle, and they all come running from the forests. What am I ?"
+        },
+        {
+          "english": "Because it is a discussion between you and me.",
+          "translation": "Ana-ijo e-ēuo ? — O-rorei lai o ol-lino",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 254 · Enigma No. 7 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/254/mode/1up · Gloss: Why do you say you are ready to guess my riddle ?"
+        },
+        {
+          "english": "The road.",
+          "translation": "Anake ēado ñgutunyi nemebaïki e-nyawa e-’n-gerr ? — Eng-oitoi",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 255 · Enigma No. 8 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/255/mode/1up · Gloss: What does your mother resemble ? She is long, and yet she does not reach up to a sheep's udder."
+        },
+        {
+          "english": "Twins.",
+          "translation": "Ashōmo enda-tim, nashitu ’ñgusidin are. — Il-mao",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 255 · Enigma No. 9 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/255/mode/1up · Gloss: I went to bed and brought forth two sticks. What were they ?"
+        },
+        {
+          "english": "The broom.",
+          "translation": "Eiduraki, neiñgwari en-dap e-ñgutunyi e-igh-a. — Ol-arau",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 255 · Enigma No. 10 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/255/mode/1up · Gloss: We have moved our kraal and your mother has left behind her the palm of her hand which has been hung up in the hut. What is it ?"
+        },
+        {
+          "english": "On the dunghill.",
+          "translation": "Eiduraki, neiñgwari e-sumbat e-minyi te-’miñgani. — Ol-chala",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 255 · Enigma No. 11 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/255/mode/1up · Gloss: We have moved our kraal, and your father has left behind him his garment. Where has he left it ?"
+        },
+        {
+          "english": "The leg of her child.",
+          "translation": "Eim ñgutunyi polos boo erumisho en-neba ’nji. — En-geju e-’n-gerai nanapitai",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 256 · Enigma No. 12 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/256/mode/1up · Gloss: When your mother leaves her hut, what is to be seen issuing from her garments ?"
+        },
+        {
+          "english": "Because she is a woman eating gum.",
+          "translation": "Eim ñgutunyi polos boo emorisho. — E-ñgorōyōni nanyalita en-aiñgure",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 256 · Enigma No. 13 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/256/mode/1up · Gloss: Why does your mother use abusive language when she goes outside her hut ?"
+        },
+        {
+          "english": "A road which leads to the water.",
+          "translation": "E-sanapat nashal kutuk. — Eng-oitoi nalo eng-are",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai (Proverb/Riddle) · Hollis (1905), p. 256 · Enigma No. 14 (Q & Reply) · https://archive.org/details/masaitheirlangua00holluoft/page/256/mode/1up · Gloss: What is a strip of hide like when the tip is wet ?"
+        },
+        {
+          "english": "The heart, mind, spirit, soul",
+          "translation": "Ol-tau (pl. Il-tauja)",
+          "pronunciation": "",
+          "context": "Hollis (1905) The Masai · Hollis (1905), p. 33 · Body / Abstract · https://archive.org/stream/masaitheirlangua00holluoft/masaitheirlangua00holluoft_djvu.txt"
+        },
+        {
+          "english": "the striped mountain",
+          "translation": "oldonyo geri",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 42 (PDF p. 60) · Toponym · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf · Gloss: Kenia (mt.)"
+        },
+        {
+          "english": "the white mountain",
+          "translation": "oldonyo eborr",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 42 (PDF p. 60) · Toponym · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf · Gloss: Kilima Njaro (mt.)"
+        },
+        {
+          "english": "the red mountain",
+          "translation": "oldonyo kenyuki",
+          "pronunciation": "",
+          "context": "Hinde (1901) The Masai Language · Hinde (1901), p. 42 (PDF p. 60) · Toponym · https://archive.org/download/masailanguagegra00hindrich/masailanguagegra00hindrich.pdf · Gloss: Suswa (mt.)"
+        },
+        {
+          "english": "noted as having settled among and intermarried with the Mweru",
+          "translation": "Laikipiak",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak (in Mweru section)) · Hobley (1910), p. 156 · Ethnonym — noted as having settled among and intermarried with the Mweru · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Ethnonym"
+        },
+        {
+          "english": "(clan/division term)",
+          "translation": "gilat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru) / Masai comparison) · Hobley (1910), p. 157 · Vocabulary — \"The Mweru also have gilat like the Masai\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "section heading & prose (refugees living among Sambur)",
+          "translation": "Laikipiak",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 159 · Ethnonym — section heading & prose (refugees living among Sambur) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Ethnonym"
+        },
+        {
+          "english": "section heading only on p. 159",
+          "translation": "Uasingishu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 159 · Ethnonym — section heading only on p. 159 · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Ethnonym"
+        },
+        {
+          "english": "refugees from the El Purko raid on the Laikipiak about 1889",
+          "translation": "El Purko",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Masai / Regional Ethnonym (Sambur/Laikipiak section)) · Hobley (1910), p. 159 · Ethnonym / Raiders — \"refugees from the El Purko raid on the Laikipiak about 1889\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Ethnonym / Raiders"
+        },
+        {
+          "english": "Principal geographical division (1); macron over u (ū)",
+          "translation": "Memerūn",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Principal geographical division (1); macron over u (ū) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "Principal geographical division (2); macron over third o (ō)",
+          "translation": "Momonyōt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Principal geographical division (2); macron over third o (ō) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "Principal geographical division (3)",
+          "translation": "Il Morijo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Principal geographical division (3) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "Principal geographical division (4)",
+          "translation": "El Aibaratari",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Principal geographical division (4) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "Principal geographical division (5)",
+          "translation": "Muzara",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Principal geographical division (5) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "Principal geographical division (6)",
+          "translation": "Lanat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak (living among Sambur)) · Hobley (1910), p. 160 · Principal geographical division (6); Chief: Lengila; survivors live among the Sambur as clever hunters · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Principal geographical division (6); Chief: Lengila; survivors live among the Sambur as clever hunters"
+        },
+        {
+          "english": "(clan/division term)",
+          "translation": "orōt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Vocabulary — \"The principal gilat or orōt of the Laikipiak\"; macron over second o (ō) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "Principal clan (gilat or orōt) (1)",
+          "translation": "Bartaolin",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Principal clan (gilat or orōt) (1) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "Principal clan (gilat or orōt) (2)",
+          "translation": "Sioma",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Principal clan (gilat or orōt) (2) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "Principal clan (gilat or orōt) (3)",
+          "translation": "Kisengeni",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak) · Hobley (1910), p. 160 · Principal clan (gilat or orōt) (3) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "plain on the west side of Lorian swamp (home of the Lanat)",
+          "translation": "Kirimar",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak / Toponym) · Hobley (1910), p. 160 · Toponym — plain on the west side of Lorian swamp (home of the Lanat) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Toponym"
+        },
+        {
+          "english": "swamp",
+          "translation": "Lorian",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Laikipiak & Sambur section)) · Hobley (1910), p. 160 · Toponym — swamp · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Toponym"
+        },
+        {
+          "english": "Lorian swamp",
+          "translation": "Irimba",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak (Lanat)) · Hobley (1910), p. 160 · Toponym — Lanat name for Lorian swamp · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
+        },
+        {
+          "english": "river (south bank, home of the Lanat)",
+          "translation": "Euaso Nyiro",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Laikipiak section)) · Hobley (1910), p. 160 · Toponym — river (south bank, home of the Lanat) · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Toponym"
+        },
+        {
+          "english": "Emogishui, Rift valley starling",
+          "translation": "El Mogishu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Clan (Gilat) & Totem · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Emogishui, Rift valley starling (Lamprocolius chalybeus, Ehr.) (totem)"
+        },
+        {
+          "english": "Rift valley starling (Lamprocolius chalybeus, Ehr.)",
+          "translation": "Emogishui",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Vocabulary — indigenous totem name of El Mogishu clan · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "Hyaena (totem)",
+          "translation": "El Masarunye",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Clan (Gilat) & Totem · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "laigwanan of moruak, Eldama Ravine",
+          "translation": "laigwanan",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Indigenous title / vocabulary — laigwanan of moruak, Eldama Ravine · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Indigenous title / vocabulary"
+        },
+        {
+          "english": "laigwanan of moruak, Eldama Ravine",
+          "translation": "moruak",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Indigenous term / vocabulary — laigwanan of moruak, Eldama Ravine · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Indigenous term / vocabulary"
+        },
+        {
+          "english": "location associated with Mlarininyi",
+          "translation": "Eldama Ravine",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Uasingishu section)) · Hobley (1910), p. 162 · Toponym — location associated with Mlarininyi · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up · Gloss: Toponym"
+        },
+        {
+          "english": "Enjoshowi (Indicator bird) (totem)",
+          "translation": "El Siria",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Clan (Gilat) & Totem · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "Indicator bird",
+          "translation": "Enjoshowi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Vocabulary — indigenous totem name of El Siria clan · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
+        },
+        {
+          "english": "Lion (totem)",
+          "translation": "L-Nyaya",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Uasingishu) · Hobley (1910), p. 162 · Clan (Gilat) & Totem · https://archive.org/details/ethnologyofakamb00hobluoft/page/162/mode/1up"
         }
       ]
     }
@@ -29095,5 +30031,5 @@
   "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "mas",
   "glottocode": "masa1300",
-  "totalEntries": 4876
+  "totalEntries": 5032
 }

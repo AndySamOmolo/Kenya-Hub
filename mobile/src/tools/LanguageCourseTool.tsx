@@ -119,6 +119,9 @@ export default function LanguageCourseTool({
   const [menuSearchQuery, setMenuSearchQuery] = useState<string>('');
   const deferredMenuSearchQuery = useDeferredValue(menuSearchQuery);
   const [menuFamilyFilter, setMenuFamilyFilter] = useState<string>('All');
+  const [selectedEmergingId, setSelectedEmergingId] = useState<string>(
+    ((openCorpusIndex as any).stagedVarieties?.[0]?.id as string) || 'nubi'
+  );
 
   const [selectedLangId, setSelectedLangId] = useState<string>(
     initialLanguageId && hasCourseSummary(initialLanguageId)
@@ -2506,6 +2509,201 @@ export default function LanguageCourseTool({
             );
           })}
         </View>
+
+        {/* Kenyan Sign Language (KSL) — Video Library & Storybooks (1:1 Web Parity) */}
+        {(() => {
+          const kslData = (openCorpusIndex as any).ksl || {};
+          const kslVideos: { id: string; title: string; videoUrl: string; category?: string; source?: string }[] = kslData.videos || [];
+          const kslStorybooks: { id: string; title: string; url: string; description: string }[] = kslData.storybooks || [];
+          if (kslVideos.length === 0 && kslStorybooks.length === 0) return null;
+          return (
+            <View
+              style={{
+                marginTop: 14,
+                backgroundColor: colors.surfaceContainer,
+                borderColor: `${colors.kenyaGreen}45`,
+                borderWidth: 1,
+                borderRadius: 16,
+                padding: 14,
+                gap: 10,
+              }}
+            >
+              <View style={{ gap: 2 }}>
+                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.kenyaGreen, letterSpacing: 0.6 }}>
+                  KENYAN SIGN LANGUAGE (KSL)
+                </Text>
+                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 15, color: colors.text }}>
+                  KSL Sign Videos &amp; Storybooks
+                </Text>
+                <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                  Watch Maseno stickman sign clips, human KSL signers, and illustrated KSL video storybooks.
+                </Text>
+              </View>
+
+              {kslVideos.length > 0 && (
+                <View style={{ gap: 6 }}>
+                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
+                    PLAYABLE KSL SIGN VIDEOS ({kslVideos.length})
+                  </Text>
+                  {kslVideos.slice(0, 12).map((vid) => (
+                    <Pressable
+                      key={vid.id}
+                      onPress={() => Linking.openURL(vid.videoUrl).catch(() => {})}
+                      style={{
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        backgroundColor: colors.surface,
+                        borderWidth: 1,
+                        borderColor: colors.outlineVariant,
+                        borderRadius: 10,
+                        paddingHorizontal: 10,
+                        paddingVertical: 8,
+                        gap: 8,
+                      }}
+                    >
+                      <View style={{ flex: 1 }}>
+                        <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12.5, color: colors.text }} numberOfLines={1}>
+                          {vid.title}
+                        </Text>
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 10.5, color: colors.textMuted }}>
+                          {vid.category === 'maseno-stickman' ? 'Maseno Stickman Video' : 'Human KSL Signer'}
+                        </Text>
+                      </View>
+                      <Feather name="play-circle" size={16} color={colors.kenyaGreen} />
+                    </Pressable>
+                  ))}
+                </View>
+              )}
+
+              {kslStorybooks.length > 0 && (
+                <View style={{ gap: 6 }}>
+                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
+                    HUMAN KSL VIDEO STORYBOOKS
+                  </Text>
+                  {kslStorybooks.map((book) => (
+                    <Pressable
+                      key={book.id}
+                      onPress={() => Linking.openURL(book.url).catch(() => {})}
+                      style={{
+                        backgroundColor: colors.surface,
+                        borderWidth: 1,
+                        borderColor: `${colors.kenyaGreen}35`,
+                        borderRadius: 12,
+                        padding: 11,
+                        gap: 3,
+                      }}
+                    >
+                      <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12.5, color: colors.text, flex: 1 }}>
+                          {book.title}
+                        </Text>
+                        <Feather name="external-link" size={14} color={colors.kenyaGreen} />
+                      </View>
+                      <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary, lineHeight: 16 }}>
+                        {book.description}
+                      </Text>
+                    </Pressable>
+                  ))}
+                </View>
+              )}
+            </View>
+          );
+        })()}
+
+        {/* More Kenyan Languages — Starter Phrasebooks (Kinubi, Kuria, Kenyan Maay · 1:1 Web Parity) */}
+        {(() => {
+          const varieties: {
+            id: string;
+            name: string;
+            nativeName: string;
+            family: string;
+            counties: string[];
+            totalEntries: number;
+            sampleEntries: { english: string; translation: string }[];
+          }[] = (openCorpusIndex as any).stagedVarieties || [];
+          if (varieties.length === 0) return null;
+          const activeVar = varieties.find((v) => v.id === selectedEmergingId) || varieties[0];
+          return (
+            <View
+              style={{
+                marginTop: 14,
+                marginBottom: 16,
+                backgroundColor: colors.surfaceContainer,
+                borderColor: `${colors.gold}40`,
+                borderWidth: 1,
+                borderRadius: 16,
+                padding: 14,
+                gap: 10,
+              }}
+            >
+              <View style={{ gap: 2 }}>
+                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.gold, letterSpacing: 0.6 }}>
+                  MORE KENYAN LANGUAGES
+                </Text>
+                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 15, color: colors.text }}>
+                  Starter Phrasebooks
+                </Text>
+                <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
+                  Explore everyday words and phrases in Kinubi, Kuria, and Kenyan Maay.
+                </Text>
+              </View>
+
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
+                {varieties.map((v) => {
+                  const isAct = v.id === activeVar.id;
+                  return (
+                    <Pressable
+                      key={v.id}
+                      onPress={() => setSelectedEmergingId(v.id)}
+                      style={{
+                        paddingHorizontal: 11,
+                        paddingVertical: 6,
+                        borderRadius: 10,
+                        borderWidth: 1,
+                        borderColor: isAct ? colors.gold : colors.outlineVariant,
+                        backgroundColor: isAct ? `${colors.gold}20` : colors.surface,
+                      }}
+                    >
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: isAct ? colors.gold : colors.text }}>
+                        {v.name} ({v.totalEntries})
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+
+              {activeVar && (
+                <View style={{ gap: 6 }}>
+                  <Text style={{ fontFamily: 'Inter_500Medium', fontSize: 11.5, color: colors.textMuted }}>
+                    {activeVar.family} · Spoken in {activeVar.counties.join(', ')}
+                  </Text>
+                  {activeVar.sampleEntries.slice(0, 18).map((ent, idx) => (
+                    <View
+                      key={`${activeVar.id}-${idx}`}
+                      style={{
+                        backgroundColor: colors.surface,
+                        borderWidth: 1,
+                        borderColor: colors.outlineVariant,
+                        borderRadius: 10,
+                        paddingHorizontal: 10,
+                        paddingVertical: 7,
+                        gap: 2,
+                      }}
+                    >
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12.5, color: colors.text }}>
+                        {ent.translation}
+                      </Text>
+                      <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary }}>
+                        {ent.english}
+                      </Text>
+                    </View>
+                  ))}
+                </View>
+              )}
+            </View>
+          );
+        })()}
       </View>
     );
   }
@@ -4319,27 +4517,31 @@ export default function LanguageCourseTool({
                 }}
               >
                 <Text style={{ fontFamily: "Inter_700Bold", fontSize: 12, color: colors.gold }}>
-                  OPEN LINGUISTIC PROFILE · CLDR {openCorpusIndex.cldrVersion}
+                  LISTENING, CALENDAR &amp; READING PRACTICE
                 </Text>
-                {corpusLang.typology && (
-                  <Text style={{ fontFamily: "Inter_500Medium", fontSize: 12, color: colors.text }}>
-                    ISO {corpusLang.typology.iso639_3} · Glottocode {corpusLang.typology.glottocode}
-                    {corpusLang.r2AudioClips ? ` · ${corpusLang.r2AudioClips.toLocaleString()} R2 audio clips` : ""}
+                {corpusLang.r2AudioClips ? (
+                  <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.kenyaGreen }}>
+                    {corpusLang.r2AudioClips.toLocaleString()} native speaker audio clips available
                   </Text>
-                )}
+                ) : null}
                 {corpusLang.cldr && corpusLang.cldr.days && corpusLang.cldr.days.length > 0 && (
                   <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
-                    Days ({corpusLang.cldr.locale}): {corpusLang.cldr.days.join(" · ")}
+                    Days of the week: {corpusLang.cldr.days.join(" · ")}
+                  </Text>
+                )}
+                {corpusLang.cldr && corpusLang.cldr.months && corpusLang.cldr.months.length > 0 && (
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
+                    Months: {corpusLang.cldr.months.slice(0, 12).join(" · ")}
                   </Text>
                 )}
                 {corpusLang.topFrequencyWords && corpusLang.topFrequencyWords.length > 0 && (
                   <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
-                    Top corpus words: {corpusLang.topFrequencyWords.slice(0, 10).map((w) => w.word).join(", ")}
+                    Everyday words: {corpusLang.topFrequencyWords.slice(0, 12).map((w) => w.word).join(", ")}
                   </Text>
                 )}
                 {corpusLang.sampleReadings && corpusLang.sampleReadings.length > 0 && (
                   <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textMuted }}>
-                    Sample reading: &ldquo;{corpusLang.sampleReadings[0].text}&rdquo;
+                    Reading practice: &ldquo;{corpusLang.sampleReadings[0].text}&rdquo;
                   </Text>
                 )}
                 {corpusLang.audioChapters && corpusLang.audioChapters.length > 0 && (

@@ -13,7 +13,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), C. W. Hobley (1910), and Rainer Vossen (1982). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0).",
   "categories": [
     {
@@ -382,6 +382,72 @@
           "translation": "lmurani",
           "pronunciation": "lmurani",
           "context": "African Next Voices Kenya Kisamburu Transcript Corpus (CC-BY-4.0)"
+        },
+        {
+          "english": "Chief of Pusigishu sub-tribe (1)",
+          "translation": "Ol-Lelelit",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of Pusigishu sub-tribe (1) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Masola sub-tribe (2)",
+          "translation": "Lal taram",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of Masola sub-tribe (2) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Lukumai sub-tribe (3)",
+          "translation": "Ol Emantili",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of Lukumai sub-tribe (3) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of L'orogishu/L'orogichu sub-tribe (4); macron over u (ū)",
+          "translation": "Ol Arūs",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of L'orogishu/L'orogichu sub-tribe (4); macron over u (ū) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of El Doiju sub-tribe (5)",
+          "translation": "Paramorijo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of El Doiju sub-tribe (5) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of El Mwesi sub-tribe (6)",
+          "translation": "Larandilin",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of El Mwesi sub-tribe (6) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Loimusi sub-tribe (7)",
+          "translation": "Lanawasai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of Loimusi sub-tribe (7) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Longeli sub-tribe (8)",
+          "translation": "Leiguruguru",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of Longeli sub-tribe (8) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Nyabarei sub-tribe (9)",
+          "translation": "Lolegul",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Personal name — Chief of Nyabarei sub-tribe (9) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "a Laikipiak who is the laibon or medicine man of the Sambur",
+          "translation": "Ol Segeteti",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak / Samburu (Sambur)) · Hobley (1910), p. 160 · Personal name — a Laikipiak who is the laibon or medicine man of the Sambur · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "medicine man",
+          "translation": "laibon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur) / Laikipiak) · Hobley (1910), p. 160 · Vocabulary / Title — laibon or medicine man of the Sambur · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up"
         }
       ]
     },
@@ -662,6 +728,12 @@
           "english": "Mouth",
           "translation": "En-gutuk / N-kutuk",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "Geographical division / Sub-tribe (9); Chief: Lolegul",
+          "translation": "Nyabarei",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (9); Chief: Lolegul · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
         }
       ]
     },
@@ -979,6 +1051,36 @@
           "english": "Baboon",
           "translation": "Lotini",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Ñgiṣu."
+        },
+        {
+          "english": "grey cattle",
+          "translation": "Pusigishu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (1); Chief: Ol-Lelelit · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (2); Chief: Lal taram",
+          "translation": "Masola",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (2); Chief: Lal taram · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (3); Chief: Ol Emantili",
+          "translation": "Lukumai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (3); Chief: Ol Emantili · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "black cattle",
+          "translation": "L'orogishu or L'orogichu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (4) — \"corruption of Masai for 'black cattle'\"; Chief: Ol Arūs · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (5); Chief: Paramorijo",
+          "translation": "El Doiju",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (5); Chief: Paramorijo · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
         }
       ]
     },
@@ -3029,6 +3131,12 @@
           "translation": "lodo",
           "pronunciation": "lódo",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "white sheep",
+          "translation": "Burkeneji / Naibor Keneji",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur) allied ethnonym) · Hobley (1910), p. 163 (fn. 1) · Footnote 1 on p. 163 — \"This name is probably really Naibor Keneji (white sheep), they are more allied to the Sambur than the Randili.\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/163/mode/1up"
         }
       ]
     },
@@ -4779,6 +4887,102 @@
           "translation": "elmoran, el moruo torono, lybon/Leibon, Lygonant, Lajon, Gogo, Syangiki, Elkonono, Elmolo",
           "pronunciation": "",
           "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Samburu / Ilchamus / Maa) · Arkell-Hardwick (1903), pp. 109, 241–242; Höhnel (1894), pp. 313–316 · Social / Kinship · warriors, wicked old man, medicine-man, battle leader, young boy, old married woman, matron, native smith, \"poor fellows without cattle\" (El Molo)"
+        },
+        {
+          "english": "\"peace\" / \"God bless you\" / \"The same to you\" / \"My friend",
+          "translation": "serian / Sobaj / Ebaj / Schorelaj sobaj",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Samburu / Maa) · Arkell-Hardwick (1903), pp. 208–210; Höhnel (1894), pp. 313–316 · Greetings · https://archive.org/stream/discoveryoflakes02hhne/discoveryoflakes02hhne_djvu.txt · \"peace\" / \"God bless you\" / \"The same to you\" / \"My friend, I greet you\""
+        },
+        {
+          "english": "ewe / very large sheep / \"No! no!\" / \"Is there no brass",
+          "translation": "soben / Soben kitock / Mate! mate! / Mate serutia? / tumbao",
+          "pronunciation": "",
+          "context": "Arkell-Hardwick (1903) / Höhnel (1894) (Rendille / Samburu trade) · Arkell-Hardwick (1903), pp. 216, 235–236 · Pastoral & Trade · https://archive.org/stream/anivorytraderin00hardgoog/anivorytraderin00hardgoog_djvu.txt · ewe / very large sheep / \"No! no!\" / \"Is there no brass wire?\" / tobacco"
+        },
+        {
+          "english": "section heading & prose",
+          "translation": "Sambur",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Ethnonym — section heading & prose · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Ethnonym"
+        },
+        {
+          "english": "refugees from the El Purko raid on the Laikipiak about 1889",
+          "translation": "El Purko",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Masai / Regional Ethnonym (Sambur/Laikipiak section)) · Hobley (1910), p. 159 · Ethnonym / Raiders — \"refugees from the El Purko raid on the Laikipiak about 1889\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Ethnonym / Raiders"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (6); Chief: Larandilin",
+          "translation": "El Mwesi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (6); Chief: Larandilin · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (7); Chief: Lanawasai",
+          "translation": "Loimusi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (7); Chief: Lanawasai · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (8); Chief: Leiguruguru",
+          "translation": "Longeli",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Geographical division / Sub-tribe (8); Chief: Leiguruguru · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "family clans",
+          "translation": "Gilat / gilat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Vocabulary — \"Gilat or orōt of the Sambur\"; \"the gilat or family clans\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "family clans",
+          "translation": "orōt",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Vocabulary — paired with Gilat; macron over second o (ō) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up"
+        },
+        {
+          "english": "dominant gilat among the Sambur",
+          "translation": "Sitat / Sitat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Clan (gilat) & personal name — dominant gilat among the Sambur; named after a powerful chieftainess Sitat · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Clan (gilat) & personal name | dominant gilat among the Sambur; named after a powerful chieftainess Sitat"
+        },
+        {
+          "english": "founded by the son of an elder named Ol Lesilali",
+          "translation": "Ol Lesilali / Ol Lesilali",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Clan (gilat) & personal name — founded by the son of an elder named Ol Lesilali (adopted by Sitat) · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Clan (gilat) & personal name | founded by the son of an elder named Ol Lesilali (adopted by Sitat)"
+        },
+        {
+          "english": "descendants of a boy also adopted by Sitat, brother of Ol",
+          "translation": "Maletis",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur)) · Hobley (1910), p. 159 · Clan (gilat) — descendants of a boy also adopted by Sitat, brother of Ol Lesilali · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Clan (gilat) | descendants of a boy also adopted by Sitat, brother of Ol Lesilali"
+        },
+        {
+          "english": "Principal geographical division (6)",
+          "translation": "Lanat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak (living among Sambur)) · Hobley (1910), p. 160 · Principal geographical division (6); Chief: Lengila; survivors live among the Sambur as clever hunters · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Principal geographical division (6); Chief: Lengila; survivors live among the Sambur as clever hunters"
+        },
+        {
+          "english": "swamp",
+          "translation": "Lorian",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Laikipiak & Sambur section)) · Hobley (1910), p. 160 · Toponym — swamp · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Toponym"
+        },
+        {
+          "english": "A curious little known tribe called El Keriet by the",
+          "translation": "El Keriet",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Samburu (Sambur) exonym) · Hobley (1910), p. 160 · Ethnonym — \"A curious little known tribe called El Keriet by the Sambur\" living north of Lorian; elephant hunters · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Ethnonym | A curious little known tribe called El Keriet by the Sambur\" living north of Lorian; elephant hunters"
+        },
+        {
+          "english": "range of hills north of Lorian swamp where the El Keriet",
+          "translation": "Mariti",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Sambur section)) · Hobley (1910), p. 160 · Toponym — range of hills north of Lorian swamp where the El Keriet were driven · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Toponym | range of hills north of Lorian swamp where the El Keriet were driven"
         }
       ]
     }
@@ -4786,5 +4990,5 @@
   "source": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)",
   "isoCode": "saq",
   "glottocode": "samb1315",
-  "totalEntries": 834
+  "totalEntries": 868
 }

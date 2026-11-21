@@ -117,7 +117,7 @@ def upload_bytes_to_r2(s3_client, r2_key: str, body: bytes, content_type: str) -
                     "Content-Type": content_type,
                     "Cache-Control": "public, max-age=31536000, immutable",
                 },
-                timeout=30,
+                timeout=60,
             )
             if resp.ok:
                 return f"{CDN_BASE}/{r2_key}"
@@ -198,13 +198,20 @@ def extract_compact_frames(npy_bytes: bytes) -> list[list[list[float]]] | None:
     return frames_out if len(frames_out) >= 2 else None
 
 
-def clean_gloss_from_member(member_name: str) -> str:
+def clean_gloss_from_member(member_name: str, prefer_stem: bool = False) -> str:
     p = Path(member_name)
     parent = p.parent.name.strip()
     stem = p.stem.strip()
-    generic = {"pose data", "poses", "npy", "data", "train", "test", "val", "videos", "mp4", "stickman"}
-    candidate = parent if parent and parent.lower() not in generic else stem
-    candidate = re.sub(r"[_\-\d]+$", "", candidate).replace("_", " ").replace("-", " ").strip()
+    generic = {
+        "pose data", "poses", "npy", "data", "train", "test", "val",
+        "videos", "video", "mp4", "stickman", "stickman videos", "stickman_videos",
+        "ksl", "signs", "sign", "output", "rendered", "clips", "raw",
+    }
+    if prefer_stem or not parent or parent.lower() in generic or "video" in parent.lower() or "pose" in parent.lower() or "stickman" in parent.lower():
+        candidate = stem
+    else:
+        candidate = parent
+    candidate = re.sub(r"[_\-\s]*\d+$", "", candidate).replace("_", " ").replace("-", " ").strip()
     candidate = re.sub(r"\s+", " ", candidate)
     return candidate.title() if candidate else stem.title()
 
@@ -247,15 +254,24 @@ def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict
 
         with zipfile.ZipFile(zip_path, "r") as zf:
             names = [m for m in zf.namelist() if not m.startswith("__MACOSX") and not m.endswith("/")]
-            vid_members = [m for m in names if Path(m).suffix.lower() in VIDEO_EXTS]
-            npy_members = [m for m in names if m.lower().endswith(".npy")]
-            print(f"  Found {len(vid_members)} real stickman videos and {len(npy_members)} .npy pose sequences in Pose Data.zip.")
+            vid_members = sorted([m for m in names if Path(m).suffix.lower() in VIDEO_EXTS])
+            npy_members = sorted([m for m in names if m.lower().endswith(".npy")])
+            distinct_vid_parents = {Path(m).parent.name.strip().lower() for m in vid_members}
+            distinct_npy_parents = {Path(m).parent.name.strip().lower() for m in npy_members}
+            prefer_vid_stem = len(distinct_vid_parents) <= 5
+            prefer_npy_stem = len(distinct_npy_parents) <= 5
+            print(
+                f"  Found {len(vid_members)} real stickman videos ({len(distinct_vid_parents)} folders, prefer_stem={prefer_vid_stem}) "
+                f"and {len(npy_members)} .npy pose sequences in Pose Data.zip."
+            )
+            if vid_members:
+                print(f"  Sample video paths: {vid_members[:3]}")
 
             maseno_vids_added = 0
             for m in vid_members:
                 if maseno_vids_added >= MAX_MASENO_VIDEOS:
                     break
-                gloss = clean_gloss_from_member(m)
+                gloss = clean_gloss_from_member(m, prefer_stem=prefer_vid_stem)
                 slug = slugify(gloss)
                 vid_id = f"maseno-{slug}"
                 if not slug or vid_id in seen_video_slugs:
@@ -282,7 +298,7 @@ def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict
             for m in npy_members:
                 if pose_added >= MAX_MASENO_VIDEOS:
                     break
-                gloss = clean_gloss_from_member(m)
+                gloss = clean_gloss_from_member(m, prefer_stem=prefer_npy_stem)
                 slug = slugify(gloss)
                 if not slug or slug in seen_pose_slugs:
                     continue
@@ -326,9 +342,9 @@ def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
     seen_ids = {v["id"] for v in videos_out}
     added = 0
     try:
-        ds = load_dataset(SIGN_BIBLES_REPO, split="train", streaming=True, token=HF_TOKEN)
+        ds = load_dataset(SIGN_BIBLES_REPO, "xki", split="train", streaming=True, token=HF_TOKEN)
         for idx, row in enumerate(ds):
-            if added >= MAX_HUMAN_KSL_VIDEOS or idx >= 2500:
+            if added >= MAX_HUMAN_KSL_VIDEOS or idx >= MAX_HUMAN_KSL_VIDEOS * 4:
                 break
             meta = row.get("json") or {}
             if isinstance(meta, bytes):
@@ -336,9 +352,6 @@ def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
                     meta = json.loads(meta.decode("utf-8", errors="ignore"))
                 except Exception:
                     meta = {}
-            lang = str(meta.get("language") or row.get("language") or row.get("iso") or "").strip().lower()
-            if lang != "xki":
-                continue
 
             mp4_raw = row.get("mp4")
             if isinstance(mp4_raw, dict):

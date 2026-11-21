@@ -12,7 +12,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
@@ -147,6 +147,12 @@
           "translation": "Dzitwa iyago nuwe?",
           "pronunciation": "",
           "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 55"
+        },
+        {
+          "english": "Salutation (man to woman, elder to elder, woman to man) / Reply",
+          "translation": "Umuvoo / Inimuvoo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 52 · Salutation (Waiya = Anake to Anake; Nosio = man to child; Oponiao = man to youth; Wakia = man to girl) · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
         }
       ]
     },
@@ -1093,6 +1099,156 @@
           "translation": "Mlongo Iyana",
           "pronunciation": "",
           "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 218 [Additional Words]"
+        },
+        {
+          "english": "One, num.",
+          "translation": "umue",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 31 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Three, num.",
+          "translation": "tatu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 53 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twenty, num.",
+          "translation": "miongo ili",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Two, num.",
+          "translation": "ili",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "1",
+          "translation": "amwe or imwe",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "2",
+          "translation": "ile",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "3",
+          "translation": "itatu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "4",
+          "translation": "inna",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "4",
+          "translation": "inya",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "5",
+          "translation": "itanu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "5",
+          "translation": "kitanu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "6",
+          "translation": "thanthatu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "6",
+          "translation": "thandatu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "7",
+          "translation": "muonza",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "7",
+          "translation": "moanza",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "8",
+          "translation": "nyanya",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "8",
+          "translation": "nanya",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "9",
+          "translation": "kenda",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "10",
+          "translation": "ikumi",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "100",
+          "translation": "yana",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 70–71 · Numeral · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "One-stringed harp or fiddle with gourd sound box, played",
+          "translation": "Mbebe",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 32 · Musical Instrument · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · One-stringed harp or fiddle with gourd sound box, played with a tiny bow (Uta)"
+        },
+        {
+          "english": "Songs and dances at crop harvest and four days after a",
+          "translation": "Kilumi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 53 · Ritual Dance · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Songs and dances at crop harvest and four days after a birth, performed solely by old women who have borne more than one child (often induces cataleptic trance)"
+        },
+        {
+          "english": "Riddles (e.g., Q: Nduma / A: Muumbi [Clouds]",
+          "translation": "Kweta ndai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 54 · Folklore/Riddles · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Riddles (e.g., Q: Nduma / A: Muumbi [Clouds]; Q: O-Selia / A: Kimbu [Chameleon]; Q: Tuna Kwatana / A: Nzia na nzia [One road crossing another])"
+        },
+        {
+          "english": "African game of bau played with one row of ten holes",
+          "translation": "Mutingwano",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 55–56 · Games · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "circumcision (also initiation rites)",
+          "translation": "nzaiko",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, p. 42 · Cultural Terms / Folklore (three nzaiko festivals) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
         }
       ]
     },
@@ -2743,6 +2899,72 @@
           "translation": "Nzeli or nzele",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Glossary, pp. 305–308 · Material Culture · A half gourd used as a domestic utensil for drinking water, gruel or milk."
+        },
+        {
+          "english": "Collective killing or execution by the people of a person",
+          "translation": "King̃noli",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Glossary, pp. 305–308 · Law / Justice · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · Collective killing or execution by the people of a person convicted of certain serious offences."
+        },
+        {
+          "english": "A half gourd used as a domestic utensil for drinking water",
+          "translation": "Nzeli or nzele",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Glossary, pp. 305–308 · Material Culture · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · A half gourd used as a domestic utensil for drinking water, gruel or milk."
+        },
+        {
+          "english": "Brother, s.",
+          "translation": "muina",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 6 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Child, s.",
+          "translation": "kana",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 7 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Father, s.",
+          "translation": "adsa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 14 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Man, s.",
+          "translation": "mundu (pl. andu)",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 26 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mother, s.",
+          "translation": "muaido",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 29 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Woman, s.",
+          "translation": "mundu muka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 61 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Arrow poison made from wood of the Muvai tree plus scorpion",
+          "translation": "Ivai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 44 · Hunting/Weapons · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Arrow poison made from wood of the Muvai tree plus scorpion poison gland (Mbua Mbui)"
+        },
+        {
+          "english": "Impersonal supreme deity vaguely supposed to live in the sky",
+          "translation": "Engai or Mulungu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 85, 91 · Religion · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Impersonal supreme deity vaguely supposed to live in the sky (Matuni / Matu)"
+        },
+        {
+          "english": "the widow (< tia 'to leave over')",
+          "translation": "muka wa ndiwa",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. IV, p. 84 · Kinship / Cultural Terms · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
         }
       ]
     },
@@ -4998,6 +5220,156 @@
           "translation": "Mwethi wa kitutu",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Part III, Ch. IV (pp. 244–249) · War & Peace (Part III, Ch. IV)"
+        },
+        {
+          "english": "Back, s.",
+          "translation": "mongo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 3 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Beard, s.",
+          "translation": "jeu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 4 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Blood, s.",
+          "translation": "ndagame",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 5 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Ear, s.",
+          "translation": "kudu pl. madu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 11 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Earth, s.",
+          "translation": "ndi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 11 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Eye, s.",
+          "translation": "ido pl. medo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 13 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Head, s.",
+          "translation": "mutue, pl. mi-",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Heart, s.",
+          "translation": "ngo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Knee, s.",
+          "translation": "yiu, pl. mau",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 23 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mouth, s.",
+          "translation": "kanioa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 29 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Spear, s.",
+          "translation": "idumo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 47 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tongue, s.",
+          "translation": "uimi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tooth, s.",
+          "translation": "io",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "arm (the whole)",
+          "translation": "mokono, wuoko",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 4–5 · Anatomy · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "arm (the whole)",
+          "translation": "kuoko",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 4–5 · Anatomy · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "First human being on earth",
+          "translation": "Mukuu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 51 · Creation Myth · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · First human being on earth (half man, half woman, lived near hill I-Kuua in Kikumbuliu, brought fire)"
+        },
+        {
+          "english": "Sacred shrine/clearing under the village Mumbo",
+          "translation": "Ithembo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 57, 86–89 · Religion/Shrine · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Sacred shrine/clearing under the village Mumbo (wild fig tree) (\"the place of praying\") where offerings and first-fruits prayers (Twa themba Aiimu) are made"
+        },
+        {
+          "english": "'in the forest'",
+          "translation": "mutituni",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba — Machakos)) · Lindblom (1920), Chap. I, p. 26 · Ethnobotany / Place-name (district near Machakos) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "The navel cord",
+          "translation": "mukauti",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. II, p. 31 · Body Parts / Child-birth · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "the cleared space in front of the hut",
+          "translation": "nza",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. II, p. 33 · Cultural Terms · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "A tree bearing red flowers, of which digging-sticks are made",
+          "translation": "mutandi",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, p. 49 · Ethnobotany (cited in initiation song, fn. 2) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "Arm",
+          "translation": "Mω·kωnω. Ku·ωkω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Blood",
+          "translation": "N·ŧakame. N·dakami",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Eye",
+          "translation": "I·ŧω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Head",
+          "translation": "Mu·tüe",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -7282,6 +7654,120 @@
           "translation": "Miatini",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Glossary, pp. 305–308 · Flora / Brewing · The fruit of Kigelia musa or Kigelia pinnata—used for fermenting beer."
+        },
+        {
+          "english": "Bee, s.",
+          "translation": "nsuki",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 4 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Bird, s.",
+          "translation": "niuni",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 5 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Buffalo, s.",
+          "translation": "mbo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Camel, s.",
+          "translation": "ngamela",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Cat, s.",
+          "translation": "mbaka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 7 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Dog, s.",
+          "translation": "ngidde",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 10 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Elephant, s.",
+          "translation": "nsou",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 12 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fish, s.",
+          "translation": "ikuyu, pl. makuyu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 14 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Goat, s.",
+          "translation": "mbui",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 17 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Leopard, s.",
+          "translation": "ngo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 24 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Lion, s.",
+          "translation": "muniambo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 25 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "bee",
+          "translation": "nsuki, kiuyu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 6–7 · Fauna · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "bird",
+          "translation": "nyoni",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 6–7 · Fauna · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Periodic infectious convulsive mania triggered by sight of",
+          "translation": "Chesu or Ki-jesu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba (Ulu / Mukaa)) · Hobley (1910), pp. 10, 12 · Culture-bound syndrome · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Periodic infectious convulsive mania triggered by sight of a hat, cap, or dog"
+        },
+        {
+          "english": "beer",
+          "translation": "uki",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, p. 44 · Cultural Terms / Food · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "plant from which small, fragile bird-arrows are made",
+          "translation": "mukulwa",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, p. 52 · Ethnobotany · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "animals",
+          "translation": "nyamu",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, p. 66 · Animal Term · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "Animal, wild beast",
+          "translation": "N·ama",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Elephant",
+          "translation": "Un·zωō",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -9150,6 +9636,90 @@
           "translation": "Molongo",
           "pronunciation": "",
           "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
+        },
+        {
+          "english": "Cloud, s.",
+          "translation": "itu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 7 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Country, s.",
+          "translation": "ndi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 8 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fire, s.",
+          "translation": "muaki",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 14 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mountain, s.",
+          "translation": "kiima",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 29 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Rain, s.",
+          "translation": "mbua",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 38 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "River, s.",
+          "translation": "uzi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 40 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Star, s.",
+          "translation": "ndata",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 48 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Stone, s.",
+          "translation": "iwia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 49 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tree, s.",
+          "translation": "mudi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 54 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mythical race living in the stars whose bathing causes rain",
+          "translation": "Wa-Isa (sg. Mu-Isa)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 55 · Star Myth · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Mythical race living in the stars whose bathing causes rain and whose visits are meteors"
+        },
+        {
+          "english": "Custom of throwing sticks or stones at the roadside where",
+          "translation": "Ithobu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 101 · Superstition/Custom · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Custom of throwing sticks or stones at the roadside where something bad or unlucky was seen"
+        },
+        {
+          "english": "isolated little heights",
+          "translation": "utumo",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. I, p. 23 · Nature / Geography · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "Fire",
+          "translation": "I·kω. Mw·adji. J·uki",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Sun",
+          "translation": "Sua, Ŧua, Jua",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 105 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -10463,6 +11033,60 @@
           "translation": "Moviya",
           "pronunciation": "",
           "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 217 [Additional Words]"
+        },
+        {
+          "english": "Drink",
+          "translation": "nioa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 11 · Core Verb · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt · POS: v. a."
+        },
+        {
+          "english": "Eat",
+          "translation": "ia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 11 · Core Verb · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt · POS: v. a."
+        },
+        {
+          "english": "Egg, s.",
+          "translation": "itumbi pl. ma-",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 11 · Food / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Milk, s.",
+          "translation": "kalia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 28 · Food · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Water, s.",
+          "translation": "mansi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 58 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "banana",
+          "translation": "malyu",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 4–5 · Flora/Food · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "beans and maize boiled together",
+          "translation": "isio",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. II, p. 29 · Ethnobotany / Food (most usual food among the Akamba) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "gruel",
+          "translation": "usu",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, p. 57 · Ethnobotany / Food · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "Water",
+          "translation": "Ma·anzi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 106 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -19554,6 +20178,42 @@
           "english": "those houses",
           "translation": "Numba ziyu",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "Arrow, s.",
+          "translation": "uta",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Axe, s.",
+          "translation": "idoka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Door, s.",
+          "translation": "i pl. mai",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 11 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "house",
+          "translation": "numba",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 32–33 · Architecture · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Bow",
+          "translation": "U·ta. I·tumω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "House",
+          "translation": "Ny·umba. Ka·ŧunω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -23513,6 +24173,12 @@
           "translation": "Kuiya",
           "pronunciation": "",
           "context": "J. T. Last (1885) Polyglotta Africana Orientalis (Public Domain, https://hdl.handle.net/2027/hvd.32044043114016), p. 219 [Additional Words]"
+        },
+        {
+          "english": "Cold",
+          "translation": "M·pepo, M·bebω, M·bevω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -24668,6 +25334,30 @@
           "english": "rest, that you may return quickly",
           "translation": "U-thumw-e u-chok-e miduki",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "God, s.",
+          "translation": "Mulungu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 17 · Religion · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Road, s.",
+          "translation": "nsia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 40 · Travel / Spatial · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "god",
+          "translation": "ngaii",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 28–29 · Religion · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "God",
+          "translation": "Ŋ·gai. Mu·luñgu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 101 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -26033,6 +26723,12 @@
           "english": "they will not like",
           "translation": "Ku-di-ka-end-a",
           "context": "J. T. Last, Grammar of the Kamba Language (1885)"
+        },
+        {
+          "english": "To kill by witchcraft",
+          "translation": "Kithangaona",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 95 · Witchcraft · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
         }
       ]
     },
@@ -26922,6 +27618,30 @@
           "translation": "Mwai wa ĩkumi na ilĩ",
           "pronunciation": "",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Day, s.",
+          "translation": "mudenia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 9 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Month, s. / Moon, s.",
+          "translation": "muei",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 29 · Time / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Night, s.",
+          "translation": "utuku",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 30 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Year",
+          "translation": "Anzwa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 52–53 · Calendar · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Year (reckoned as 11 months: Mwa, Wima, Wiu, Mweu, Onkonono, Thandatu, Moanza, Nyanya, Kenda, Ekumi, Mubiu)"
         }
       ]
     },
@@ -49712,6 +50432,78 @@
           "translation": "ngitĩ",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "Name, s.",
+          "translation": "jitoa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 30 · Social / Lexical · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twelve, num.",
+          "translation": "kumi na ili",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Word, s.",
+          "translation": "ndeto",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kikamba) · Krapf (1850), p. 62 · Language · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Salutation / Reply",
+          "translation": "o voo / o voo neza",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 74–75 · Greeting · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "Gruel of mtama/mawele/wimbi and water / gruel mixed with",
+          "translation": "Usuru / Kitheki / Ngima",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 15 · Food (Mui = stirring stick) · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Gruel of mtama/mawele/wimbi and water / gruel mixed with milk / porridge of meal"
+        },
+        {
+          "english": "Young girl, child / Unmarried girl / Old woman / Childless woman",
+          "translation": "Muitu (pl. Weitu) / Mundu mukaa / Mukuu / Ngungu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 49 · Female Social Grades · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Arrow",
+          "translation": "Mu·sie, Mu·ci, Mu·zyi, Mu·ji",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Chief",
+          "translation": "M·tumia",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 99 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Child",
+          "translation": "K·ana, G·ana ; tw·ana. Kaci·ci ; tuvi·ci",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "Mondi. ·mwe / Ile, ·eri / ·ŧatu or ·datu / ·nnā or ·nya / ·ŧanu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 107 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Six / Seven / Eight / Nine / Ten",
+          "translation": "Ŧanŧatu, Ŧandatu / Mω·anza, Mū·onza / Nyanya / K·enda / I·kumi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, p. 107 · Numerals 6–10 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·ya. lika / ·kwa / ·dzi, ·manya, ·ese / ·kyenda, ·enda / ·ōna. ·dzidza",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (12. Kamba) · Johnston (1919), Vol. I, pp. 110–111 · Verb roots (prefix Ku·) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -56751,6 +57543,282 @@
           "translation": "Kithito",
           "pronunciation": "",
           "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Part III, Ch. III (pp. 239–243) · Ceremonial Oaths (Part III, Ch. III) · Most powerful tribal oath using secret medicines in horn/tusk"
+        },
+        {
+          "english": "Elder, middle-aged men, young men, unmarried girls, married woman",
+          "translation": "Mtumia (Atumia), Nthele, Anake (Mwanake), Waelti, Kiveti",
+          "pronunciation": "",
+          "context": "C. Dundas (1913) History of Kitui (Kitui Kamba) · C. Dundas (1913), pp. 493–498 · Age-grades / Kinship · https://zenodo.org/records/2389049/files/article.pdf"
+        },
+        {
+          "english": "Newcomer's admission goat / Blacksmith / 3-inch signalling horn",
+          "translation": "Mathanzu / Mutui / Ngoli (2)",
+          "pronunciation": "",
+          "context": "C. Dundas (1913) History of Kitui (Kitui Kamba) · C. Dundas (1913), pp. 501, 503, 505 · Law / Craft / War · https://zenodo.org/records/2389049/files/article.pdf"
+        },
+        {
+          "english": "Elders' birth-feast food / Women's birth-feast food / Rhinoceros",
+          "translation": "Ogi / Ukali / Mbuzia",
+          "pronunciation": "",
+          "context": "C. Dundas (1913) History of Kitui (Kitui Kamba) · C. Dundas (1913), p. 519 · Customs / Fauna · https://zenodo.org/records/2389049/files/article.pdf"
+        },
+        {
+          "english": "Purification concoction, 3 source trees, widow-rite tree",
+          "translation": "Ngondu, Movu, Mulale, Mutemma, Mutaa, Makwa",
+          "pronunciation": "",
+          "context": "C. Dundas (1913) History of Kitui (Kitui Kamba) · C. Dundas (1913), pp. 521–522 · Ritual / Flora · https://zenodo.org/records/2389049/files/article.pdf · Purification concoction, 3 source trees, widow-rite tree, taboo affliction"
+        },
+        {
+          "english": "Medicine man, quiver curse, evil eye, clan with evil eye",
+          "translation": "Mundu Mue, Wathi (2, Mumoni), Kjeni, Mba Mwanziu, Aiimu, Muungu/Mulungu",
+          "pronunciation": "",
+          "context": "C. Dundas (1913) History of Kitui (Kitui Kamba) · C. Dundas (1913), pp. 527–535 · Religion / Magic · https://zenodo.org/records/2389049/files/article.pdf · Medicine man, quiver curse, evil eye, clan with evil eye, ancestral spirits, God"
+        },
+        {
+          "english": "Sacred oath object / Crop protection magic / Leprosy-like",
+          "translation": "kithathi / kithito / ku-roga / mangu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kikuyu & Kamba) · Hobley (1922), pp. 36, 70, 107–110 · Oath / Magic · https://www.gutenberg.org/files/67426/67426-h/67426-h.htm · Sacred oath object / Crop protection magic / Leprosy-like sickness"
+        },
+        {
+          "english": "The dying curse which can be suspended over his descendants",
+          "translation": "Kiume",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Glossary, pp. 305–308 · Curse / Law · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · The dying curse which can be suspended over his descendants by a dying man."
+        },
+        {
+          "english": "A curse or afflicted by a curse—a condition which is the",
+          "translation": "Thabu",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Glossary, pp. 305–308 · Curse / Taboo · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · A curse or afflicted by a curse—a condition which is the result of certain acts, analogous to some forms of tabu."
+        },
+        {
+          "english": "Beer, especially mead, made from honey, but the word is",
+          "translation": "Uki",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Glossary, pp. 305–308 · Food & Drink / Ritual · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc39 · Beer, especially mead, made from honey, but the word is used for all beer."
+        },
+        {
+          "english": "Most powerful tribal oath using secret medicines in horn/tusk",
+          "translation": "Kithito",
+          "pronunciation": "",
+          "context": "Hobley (1922) Bantu Beliefs & Magic (Kamba) · Hobley (1922), Part III, Ch. III (pp. 239–243) · Ceremonial Oaths (Part III, Ch. III) · https://www.thetedkarchive.com/library/c-w-hobley-bantu-beliefs-and-magic#toc29"
+        },
+        {
+          "english": "abdomen",
+          "translation": "ibu / nda",
+          "pronunciation": "",
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Kamba) · Hinde (1904), pp. 2–3 · Anatomy · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+        },
+        {
+          "english": "The Kamba people",
+          "translation": "A-Kamba (sg. Mu-Kamba)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 3 · Ethnonym (Ulu call Kitui A-Thaishu, Rabai Kamba A-Tumwa and Ma-Pihilambua; Kilungu call other Kamba Evaao; Masai call Kamba Lungnu) · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Small settlement of hunters allied to the A-Kamba in the",
+          "translation": "A-Noka",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba (dialect)) · Hobley (1910), p. 1 · Ethnonym · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Small settlement of hunters allied to the A-Kamba in the Ongolea Hills"
+        },
+        {
+          "english": "Highlands (district of Ulu / Ibeti)",
+          "translation": "Ulu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 2 · Toponym · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Clan; prefixes Mbaa, Ba, Mbaya mean \"the people of\"",
+          "translation": "Mbai / Mbaya / Mbaa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba (Mumoni & Kitui)) · Hobley (1910), pp. 5–6 · Social Structure · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Scarified ornamental patterns on chest and abdomen",
+          "translation": "Ndoo or Nzomo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 17 · Body Ornamentation · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Open space/clearing outside every village where old men",
+          "translation": "Thomi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 32 · Social/Ritual Space · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Open space/clearing outside every village where old men sit, eat, drink beer, and discuss affairs (women prohibited)"
+        },
+        {
+          "english": "Small drums held horizontally and beaten by both hands",
+          "translation": "Engoma",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 33 · Ritual Music · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Small drums held horizontally and beaten by both hands, used only when someone is sick to move the Aiimu (spirits)"
+        },
+        {
+          "english": "Sacred oath horn",
+          "translation": "Kithito",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 47–48, 78, 81 · Law/Ritual Oath (carried on Musizili bark string; tapped 3 times with Mukulwa stick alongside Mutatha sticks) · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Sacred oath horn (ox/antelope horn or warthog tusk filled with food samples and hyaena nose skin, prepared by a Muoiin), used for peace treaties, solemn covenants, and theft ordeals"
+        },
+        {
+          "english": "Boy / Young man or warrior / Middle-aged man / Old man",
+          "translation": "Kivisi (pl. Nisi) / Mwanake (pl. Anake) / Nthele (pl. Anthele) / Mutumia",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 49 · Male Social Grades (Mutumia Mukuu = village headman; Mutumia munene = chief; Mutumia munene wa muthanga = hereditary chief over a tract of country) · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Circumcision rite (Nzaikonini / Nzaikwenini = small ceremony",
+          "translation": "Nzaiko / Mwankwa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 68–74 · Circumcision/Initiation · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Circumcision rite (Nzaikonini / Nzaikwenini = small ceremony; Nzaikoneni = big initiation ceremony; Mwaiki = male operator; Mubwiki = initiation tutor; Wa-Singi / Mu-Singi = initiates)"
+        },
+        {
+          "english": "Carved initiation stick cut from Mthiwa tree bearing",
+          "translation": "Musai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 71–72 · Initiation/Pictographs · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Carved initiation stick cut from Mthiwa tree bearing pictographic riddles (Ndeto: Ndata star, Mwei moon, Michi arrow, Ngongo millepede, Itaa python, Mbuibui spider, Ngu tortoise, Mwilo lizard, Kithembo honey jar)"
+        },
+        {
+          "english": "Secret third male initiation ceremony in the bush featuring",
+          "translation": "Mbabani",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba (Kitui, Mumoni, Kibwezi)) · Hobley (1910), pp. 68, 74–76 · Secret Initiation · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Secret third male initiation ceremony in the bush featuring a booming roar (monster) and Ngai initiation wands (Ngima ya Mbabani = goat killed for the boys)"
+        },
+        {
+          "english": "Former secret river-bank initiation ceremony corresponding",
+          "translation": "Choo Mumba",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba (Mumoni)) · Hobley (1910), pp. 76–77 · Secret Initiation · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Former secret river-bank initiation ceremony corresponding to Mbabani involving a roaring aquatic monster"
+        },
+        {
+          "english": "Ubiquitous ancestral spirits residing after death in wild",
+          "translation": "Aiimu (sg. Muimu)",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 54, 85–92 · Religion/Spirits · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Ubiquitous ancestral spirits residing after death in wild fig trees (Mumbo / Mikuyu, with miniature huts Nyumba wa Aiimu); Aiimu ya Kitombo = evil banished spirits haunting woods and waste places"
+        },
+        {
+          "english": "Medicine man dealing in black art / bewitching",
+          "translation": "Muoiin or Muoii",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 93 · Magic/Witchcraft (footnote 1, p. 93: in Thaka, wizard = Mugao, ordinary medicine man = Mutu muwao) · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Practitioner of white magic / diviner using seeds & pebbles",
+          "translation": "Mundu mue",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 93–94, 97–100 · Divination/Magic (Muthiwa = brass-ferruled fortune-telling wood charm; Mbui = iron cattle-bell rung to attract Aiimu) · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Practitioner of white magic / diviner using seeds & pebbles (Mbuu) shaken in a divination gourd (Kititi cha Mbuu) onto a leopard or serval skin"
+        },
+        {
+          "english": "Collective clan execution of a suspected serial witch/poisoner",
+          "translation": "Kingnoli",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 82, 95–96 · Customary Law · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Collective clan execution of a suspected serial witch/poisoner (Mthuku or Muoiin) after divination"
+        },
+        {
+          "english": "Post-bereavement lustration/purification ceremony",
+          "translation": "Ukuu / thabu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 97 · Ritual Purification/Taboo · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Post-bereavement lustration/purification ceremony (Ngnondu mixture of Muthumba and broad-leaved aloe Ngnondu wa ithu placed on Kiungu leaves) / thabu = bodily affliction (joint aches and sores) from breaking the custom (Ku-uchwa or Ku-thambia)"
+        },
+        {
+          "english": "Red-headed woodpecker omen bird forbidden to slay",
+          "translation": "Ngoma Komi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 104 · Omens · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Red-headed woodpecker omen bird forbidden to slay (Swahili Korongonda)"
+        },
+        {
+          "english": "Ground hornbill (bird of ill omen portending death in a village)",
+          "translation": "Ndundu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), p. 104 · Omens · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf"
+        },
+        {
+          "english": "Folk tales",
+          "translation": "Wano",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology of A-Kamba (Kamba) · Hobley (1910), pp. 107–109 · Folklore · https://archive.org/download/ethnologyofakamb00hobluoft/ethnologyofakamb00hobluoft.pdf · Folk tales (e.g., origin of death featuring frog Chua, chameleon Kimbu, and thrush-like bird Itoroko / Kitui Siotoroka, with chameleon's call \"Niwe, niwe, niwe\")"
+        },
+        {
+          "english": "slaves",
+          "translation": "atumwa",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba — Ulu)) · Lindblom (1920), Chap. I, p. 11 · Folklore / Nickname (used up-country for Akamba living in Rabai) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "'those who have followed the rain'",
+          "translation": "madikilambua",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba — Ulu)) · Lindblom (1920), Chap. I, p. 11 · Folklore / Nickname (for Akamba who emigrated to Rabai during drought/famine) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "'up there'",
+          "translation": "ulu / yulu",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. I, pp. 13, 15 · Geography / Dialect (West Ukamba, west of the river Athi) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "the Masai",
+          "translation": "akavi",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. I, p. 18 · Ethnonym (from old tribal name Wakuafi) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "The Wasuaheli",
+          "translation": "asumba",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. I, p. 21 · Ethnonym · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "The Waduruma",
+          "translation": "aluluma",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. I, p. 21 · Ethnonym (noted: Akamba cannot pronounce r) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "The Wambee or Wambere, a tribe on Kenia",
+          "translation": "ambele",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. I, p. 21 · Ethnonym · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "The Galla (less frequently Somali)",
+          "translation": "atwa",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. I, p. 21 · Ethnonym · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "blades of the grass ikoka",
+          "translation": "ikoka",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. II, p. 32 · Ethnobotany (used in birth water-fetching ritual) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "'the rhinoceros'",
+          "translation": "mbusia",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, p. 50 · Animal Term / Folklore (ceremonial roaring structure in the second nzaiko) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "thin stick of about 80 centimeters in length, scratched",
+          "translation": "musai (ukai in Kikumbuliu)",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba — Ulu / Kikumbuliu)) · Lindblom (1920), Chap. III, pp. 54–55 · Riddles / Initiation Folklore (motifs include tortoise, python, cow's tail, star, millipede, moon, snake, sun, stool, centipede, cowry belt, calabash) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt · thin stick of about 80 centimeters in length, scratched with figures ('pictographic riddles')"
+        },
+        {
+          "english": "Ornamented seat of a stool",
+          "translation": "mumbo",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, p. 54 · Riddles / Material Culture (Fig. 3 on musai stick) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "great dances (during initiation festivities)",
+          "translation": "nzuma",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. III, pp. 58–59, 68 · Songs & Dances / Folklore · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
+        },
+        {
+          "english": "'shyness, feeling of shame'",
+          "translation": "ndoni",
+          "pronunciation": "",
+          "context": "Lindblom (1920) The Akamba (Kamba (Kikamba)) · Lindblom (1920), Chap. IV, p. 76 & Chap. V, p. 89 · Cultural Terms / Folklore (avoidance relation with parents-in-law) · https://archive.org/stream/akambainbritishe00lindiala/akambainbritishe00lindiala_djvu.txt"
         }
       ]
     }
@@ -56758,5 +57826,5 @@
   "source": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019); Roberts-Kohno & Bickmore (2019) LSP #190 Ch. 10 Kikamba Melodic Tone (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kam",
   "glottocode": "kamb1297",
-  "totalEntries": 10240
+  "totalEntries": 10418
 }

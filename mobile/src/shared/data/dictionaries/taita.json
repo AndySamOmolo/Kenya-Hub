@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
@@ -144,6 +144,12 @@
           "english": "Remit, to [to pardon]",
           "translation": "ku-siga",
           "context": "J. Alfred Wray, An Elementary Introduction to the Taita Language (1894)"
+        },
+        {
+          "english": "Meeting salutation (\"Well?\")",
+          "translation": "Voro! Mzima?",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 115 · Salutation (Reply: Mzima. / Ndo vidzo!) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
         }
       ]
     },
@@ -1232,6 +1238,36 @@
           "english": "Thousand",
           "translation": "vi-kwī",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita"
+        },
+        {
+          "english": "one",
+          "translation": "Mosi / moju",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 20, 109 · Numerals (cardinal; mojori, only one, p. 109) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "two",
+          "translation": "Pili / -ili",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 20, 125 · Numerals (cardinal; mbili with Class III) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "three",
+          "translation": "Tatu / -tatu",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 20, 123 · Numerals (cardinal; ndatu with Class III) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "ten",
+          "translation": "Ikumi / afwa",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 21, 22, 122 · Numerals (cardinal; afwa in general use, e.g., Mbuzi afwa, ten goats, p. 22) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "thirty",
+          "translation": "Mirongo mitatu",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 21 · Numerals (cardinal) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
         }
       ]
     },
@@ -2450,6 +2486,84 @@
           "translation": "mayo-wangu",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "I / we",
+          "translation": "Imi / Isi",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 25 · Personal Pronouns (1st sg. / pl.) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "thou / you",
+          "translation": "Uwe / Inyu",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 25 · Personal Pronouns (2nd sg. / pl.) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "a man / men",
+          "translation": "Mundu / Wandu",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 10 · Noun Class I (m-/mu-/mw-, pl. wa-; living beings) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "a song / songs",
+          "translation": "Lumbo / Nyumbo",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 12 · Noun Class VI (lu-, pl. nyu-; also Lwaka / Nywaka, voice; Luzi / Nyuzi, thread) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "a little house / little houses",
+          "translation": "Kanyumba / Vinyumba",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 12 · Noun Class VII (diminutives ka-/tu-, pl. vi-; also Tumwana / Viwana, little child) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "my father",
+          "translation": "aba",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 94 · Kinship (tatio, thy father; tatie, his father; aba wetu, our father) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "my mother",
+          "translation": "mawe",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 106 · Kinship (meo, your mother; mee, his mother) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "father's sister / step-mother",
+          "translation": "mama",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 80, 106, 120 · Kinship · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "uncle (mother's brother)",
+          "translation": "haka",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 125 · Kinship · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "brother (wokwetu, our brother)",
+          "translation": "mruna / wokwetu",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 84 · Kinship (mlam, brother-in-law) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "grandparent / grandchild (reciprocal)",
+          "translation": "wawa / ake",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 98 · Kinship (same-sex: wawa; cross-sex: ake) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "Child",
+          "translation": "Mw·ana. K·anake. Mw·anake",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Man",
+          "translation": "Mu·ndu ; wa·ndu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 103 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -4194,6 +4308,60 @@
           "english": "Year",
           "translation": "mi-mū",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
+        },
+        {
+          "english": "a mortar / mortars",
+          "translation": "Kituli / Vituli",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 11 · Noun Class IV (ki-/ch-, pl. vi-/v-; also Chala / Vala, finger; Chongo / Vongo, head) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "an arrow / arrows",
+          "translation": "Iwano / Mawano",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 11 · Noun Class V (i-, pl. ma-; also Ijua / Majua, sun; Ijego / Majego, tooth; Iziso / Meso, eye) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "head",
+          "translation": "chongo",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 11, 99 · Body Parts (mutu, head) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "arm / hand",
+          "translation": "mkono",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 80, 99 · Body Parts · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "foot / leg",
+          "translation": "kigulu",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 96, 103 · Body Parts · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "to hear",
+          "translation": "ku-sikila",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 7, 99 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "Arm",
+          "translation": "M·kωnω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Blood",
+          "translation": "Paga, Baga. Bigati",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Head",
+          "translation": "C·oñgω, v·oñgω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -5792,6 +5960,36 @@
           "translation": "mbea",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "a house / houses",
+          "translation": "Nyumba / Nyumba",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 11 · Noun Class III (unchanged plural; also Mbuzi, goat; Ngila, path; Nguku, fowl) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "hyena",
+          "translation": "fisi",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 6, 101 · Animals · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "cow / ox",
+          "translation": "ng'ombe",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 88, 109 · Animals · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "snake / serpent",
+          "translation": "nyoka",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 116, 119 · Animals · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "Elephant",
+          "translation": "Cωvu. N·jωvu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -7880,6 +8078,42 @@
           "translation": "kisiki",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "a tree / trees",
+          "translation": "Mwiti / Miti",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 10 · Noun Class II (m-/mu-/mw-, pl. mi-; inanimates; also Mweta / Meta, river/rivers) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "country / ground / land",
+          "translation": "isanga",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 88, 98, 102 · Nature · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "rock / stone",
+          "translation": "iwe",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 115, 120 · Nature · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "Fire",
+          "translation": "Mō·dω ; me·dω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 100 · Noun (Errata p. x: M·odω) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Rain",
+          "translation": "M·vua. M·vula",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 104 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Sun",
+          "translation": "I·jūa or I·ruwa",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 105 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -9499,6 +9733,12 @@
           "translation": "Jofi",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "to drink",
+          "translation": "ku-nwa",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 63, 91 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
         }
       ]
     },
@@ -12380,6 +12620,18 @@
           "translation": "niumba",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "to cultivate / hoe",
+          "translation": "ku-lima",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 89, 100 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "Arrow",
+          "translation": "Ki·ria, Ki·rawa. I·wanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -15442,6 +15694,42 @@
           "translation": "tuzeke",
           "pronunciation": "",
           "context": "Rev. Dr. J. Lewis Krapf (1860) Travels, Researches, and Missionary Labours (Public Domain), p. 265"
+        },
+        {
+          "english": "to love / accept / like",
+          "translation": "ku-shaia",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 44, 77, 104 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "to speak / say",
+          "translation": "ku-gora",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 116, 119 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "to see",
+          "translation": "ku-ona",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 116 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "to know",
+          "translation": "ku-manya",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 66, 102 · Verb (also ku-weni, p. 66) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "to be / dwell",
+          "translation": "ku-kalla",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 68–70, 92 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "to do / make",
+          "translation": "ku-dea",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 91, 105 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
         }
       ]
     },
@@ -16193,6 +16481,12 @@
           "translation": "waboiye",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Cold",
+          "translation": "M·behω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -17202,6 +17496,18 @@
           "english": "Canoe",
           "translation": "Galawa",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
+        },
+        {
+          "english": "to come",
+          "translation": "ku-ja",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 63–65, 86 · Verb (imperative njuu, pl. njuuni, p. 65) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "God",
+          "translation": "Mu·luñgu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 101 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -18387,6 +18693,12 @@
           "english": "Medicine",
           "translation": "mi-ti",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 14. Taita (Ki-dabida, Ki-sagala, Ki-siγau)"
+        },
+        {
+          "english": "to die",
+          "translation": "ku-fwa",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 63, 90 · Verb · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
         }
       ]
     },
@@ -26933,6 +27245,96 @@
           "translation": "Wamisri",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "first through ninth",
+          "translation": "-a hambiri, -a kaili, -a katatu, -a kane, -a kasano, -a katandatu, -a mfungate, -a kanane, -a ikenda",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 23 · Numerals (ordinals) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "once, twice, three times, four times, six–ten times",
+          "translation": "kamoju, kaili, katatu, kane, katandatu, mfungate, kanane, ikenda, ikumi",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 23 · Numerals (adverbial numbers) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "he or she / they",
+          "translation": "Iye / Wao (waoe)",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 25 · Personal Pronouns (3rd sg. / pl.) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "my, thy, his/her/its, our, your, their",
+          "translation": "-angu, -ako, -ake, -etu, -enu, -ao",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 25, 29 · Possessive Pronoun stems (take class concords) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "self / selves",
+          "translation": "-ku- + mwen / wen",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 32–33 · Reflexive Pronouns (e.g., Wa-ku-tona mwen, he cuts himself) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "I by myself / we by ourselves",
+          "translation": "Imi kingweri / Isi weke",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 33 · Reflexive / Solitary Pronouns · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "this / that / that mentioned before (Class I)",
+          "translation": "uyu / ulya / uyo",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 33–34 · Demonstrative Pronouns (Mundu uyu, Mundu ulya, Mundu uyo) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "what?, why?, when?, what kind?, who?/whose?, how?, where?",
+          "translation": "Ini?, Kudani?, Nini?, Muni?, -ani?, Ije?, Hiyo?, -linga?",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 39–41 · Interrogative Pronouns · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt · what?, why?, when?, what kind?, who?/whose?, how?, where?, how many?"
+        },
+        {
+          "english": "bearing / talking / fighting",
+          "translation": "Kuvala / Kugora / Kulwana",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 13 · Noun Class IX (infinitive verbal nouns taking ku-) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "Eye",
+          "translation": "Ir·isω ; m·esω. Iz·izω ; m·esω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "House",
+          "translation": "Ny·umba, Kany·umba. Ki·garo. (C·anda = hut)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Water",
+          "translation": "Ma·ji, Ma·ci, or Me·ji",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 106 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "·mu, I·mu. Mωjeri / ·pili, ·ili, ·wi / ·datu or ·tatu / ·na, ·nya, ·nē / ·sanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 107 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Six / Seven / Eight / Nine / Ten",
+          "translation": "·tandatu or ·zandadu / M·fuñgati or M·fuñgade / ·nane or ·nyanya / K·enda, I·kenda / I·kumi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 107 · Numerals 6–10 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·jiga / ·fwa / ·manya / ·saya / ·ōna. ·lωla",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, pp. 110–111 · Verb roots (prefix Ku·) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -42212,6 +42614,24 @@
           "english": "For God so loved the world (John 3:16 — 1911 Dabida Specimen #477 & 1912 Sagalla Specimen #478)",
           "translation": "Dabida (1911): Angu Mlungu oregukundiege wurumwengu, hata ukamfunya Mwana wake uvalwaga wa ititi, uhu umrumiriaga usetote anduangi, ela ukaiege na irangi ja kala na kala. • Sagalla (1912): Kwani hung' Mlungu washaile masanga 'gose, hatta akamfunya Mwana wake avelo mmojori, uu wose amdumusa sehaita, ela apate umaana 'gwa kale na kale.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "a young woman / young women",
+          "translation": "Mchana / Wachana",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), p. 10 · Noun Class I (Mtawana / Watawana, young man / men) · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "abdomen / belly / stomach",
+          "translation": "kifu",
+          "pronunciation": "",
+          "context": "Wray (1894) Elementary Introduction to Taita (Sagalla) · Wray (1894), pp. 77, 82, 120 · Body Parts · https://archive.org/stream/anelementaryint00wraygoog/anelementaryint00wraygoog_djvu.txt"
+        },
+        {
+          "english": "Chief",
+          "translation": "M·bāā or M·zuri. M·gωsi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 99 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     }
@@ -42219,5 +42639,5 @@
   "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 7574
+  "totalEntries": 7644
 }

@@ -10,7 +10,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Pokomo (Kipfokomo / Kipokomo) dictionary compiled from Rev. Dr. J. L. Krapf (1850), Ferdinand Würtz (1895), Prof. Alice Werner (1913, 1915 \"The Bantu Coast Tribes of the East Africa Protectorate\", 1933 \"Myths and Legends of the Bantu\"), Sir Harry H. Johnston (1919 #13), BFBS (1921), and Mikael Samson & R. G. Darroch (1944 \"A History of the Pokomo [Vyuo vya Wapokomo]\", JRAI Vol. 73). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0).",
   "categories": [
     {
@@ -470,6 +470,36 @@
           "english": "Stone (Lower Pokomo)",
           "translation": "gaga",
           "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "One, num.",
+          "translation": "mmoza",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 31 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Three, num.",
+          "translation": "hahu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 53 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twenty, num.",
+          "translation": "miongo miwii",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Two, num.",
+          "translation": "mbii",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "\"the one who was picked up (by accident)\" (avertive infant name)",
+          "translation": "Matandua",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 341 · Naming Custom / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
         }
       ]
     },
@@ -935,6 +965,66 @@
           "translation": "mama",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Brother, s.",
+          "translation": "ndugu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 6 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Child, s.",
+          "translation": "mana",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 7 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Father, s.",
+          "translation": "baba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 14 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Man, s.",
+          "translation": "muntu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 26 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mother, s.",
+          "translation": "mama",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 29 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Woman, s.",
+          "translation": "muke",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 61 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "tree highly esteemed by the Wapokomo for making spoons or",
+          "translation": "mtsotsozi / mufeketso",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 332 fn. 3 · Lexical Gloss / Flora · https://zenodo.org/records/1518320/files/article.pdf · tree highly esteemed by the Wapokomo for making spoons or \"spurtles\" for stirring food"
+        },
+        {
+          "english": "She went to pound,",
+          "translation": "Kenda tsokoa",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 336 · Traditional Song (line 3 of the song of the woman of Limotho) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "guild of sorcerers (associated with personal name Kombe)",
+          "translation": "wayangana",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 337 · Cultural / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "Child",
+          "translation": "Mw·ana ; wa·ana",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -1949,6 +2039,108 @@
           "english": "Liver (Lower Pokomo)",
           "translation": "ni",
           "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "Back, s.",
+          "translation": "mongo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 3 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Beard, s.",
+          "translation": "jiefu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 4 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Blood, s.",
+          "translation": "muazi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 5 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Ear, s.",
+          "translation": "sikio",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 11 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Earth, s.",
+          "translation": "nsi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 11 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Eye, s.",
+          "translation": "zitso",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 13 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Head, s.",
+          "translation": "kizoa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Heart, s.",
+          "translation": "motjo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Knee, s.",
+          "translation": "kuhi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 23 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mouth, s.",
+          "translation": "kanoa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 29 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Spear, s.",
+          "translation": "fumo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 47 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tongue, s.",
+          "translation": "juimi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tooth, s.",
+          "translation": "gego",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Arm",
+          "translation": "Mu·kωnω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Blood",
+          "translation": "Mu·asi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Eye",
+          "translation": "Dz·idzω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Head",
+          "translation": "Ki·jwa",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -2588,6 +2780,90 @@
           "translation": "nioka",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Bee, s.",
+          "translation": "niuji",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 4 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Bird, s.",
+          "translation": "niuni",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 5 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Buffalo, s.",
+          "translation": "niahi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Camel, s.",
+          "translation": "ngamia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Cat, s.",
+          "translation": "paka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 7 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Dog, s.",
+          "translation": "mboa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 10 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Elephant, s.",
+          "translation": "nzofu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 12 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fish, s.",
+          "translation": "nsui",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 14 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Goat, s.",
+          "translation": "pee",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 17 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Leopard, s.",
+          "translation": "nadode",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 24 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Lion, s.",
+          "translation": "simba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 25 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "\"soot\" (avertive infant name given to Isaya Zakaria of Ngao)",
+          "translation": "Masinzi",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 341 · Naming Custom / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"dung\" (example of avertive infant name)",
+          "translation": "Mavi",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 341 · Naming Custom / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "Elephant",
+          "translation": "N·dzωfu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -3577,6 +3853,78 @@
           "translation": "madsi",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Cloud, s.",
+          "translation": "wingo pl. ma-",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 7 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Country, s.",
+          "translation": "nsi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 8 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fire, s.",
+          "translation": "moho",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 14 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mountain, s.",
+          "translation": "muima",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 29 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Rain, s.",
+          "translation": "mfuiya",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 38 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "River, s.",
+          "translation": "zana",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 40 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Star, s.",
+          "translation": "nioha",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 48 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Stone, s.",
+          "translation": "iwe, pl. mawe",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 49 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tree, s.",
+          "translation": "muhi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 54 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fire",
+          "translation": "M·ωhω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Rain",
+          "translation": "M·vuya",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 104 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Sun",
+          "translation": "Dzūa",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 105 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -4009,6 +4357,24 @@
           "translation": "maziwa",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Egg, s.",
+          "translation": "idji pl. madji",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 11 · Food / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Milk, s.",
+          "translation": "massiwa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 28 · Food · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Water, s.",
+          "translation": "mazi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 58 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
         }
       ]
     },
@@ -11051,6 +11417,36 @@
           "translation": "niumba",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Arrow, s.",
+          "translation": "uha",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Axe, s.",
+          "translation": "kiberia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Door, s.",
+          "translation": "mjango",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 11 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Arrow",
+          "translation": "Dzahe. Vanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Bow",
+          "translation": "U·ha ; ma·ha",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -12783,6 +13179,12 @@
           "translation": "jema",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "Cold",
+          "translation": "Pebfω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -13260,6 +13662,24 @@
           "english": "Path (Lower Pokomo)",
           "translation": "jia",
           "context": "CLDF ASJP v20 Wordlist (POKOMO, CC-BY-4.0)"
+        },
+        {
+          "english": "God, s.",
+          "translation": "Mungo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 17 · Religion · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Road, s.",
+          "translation": "njia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 40 · Travel / Spatial · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "God",
+          "translation": "Muungu",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 335 · Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
         }
       ]
     },
@@ -14088,6 +14508,24 @@
           "english": "Good morning!",
           "translation": "múya nágaia",
           "context": "Rev. Dr. J. L. Krapf (1850) \"Vocabulary of Six East-African Languages\", p. 29 • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
+        },
+        {
+          "english": "Day, s.",
+          "translation": "siku",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 9 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Month, s. / Moon, s.",
+          "translation": "mesi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 29 · Time / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Night, s.",
+          "translation": "usiku",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 30 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
         }
       ]
     },
@@ -15489,6 +15927,60 @@
           "translation": "rufuto",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 527"
+        },
+        {
+          "english": "Name, s.",
+          "translation": "sari",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 30 · Social / Lexical · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twelve, num.",
+          "translation": "kumi na mbii",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Word, s.",
+          "translation": "mneno",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kipokomo) · Krapf (1850), p. 62 · Language · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "She took her mortar and pestle.",
+          "translation": "Kahwaa kadzinu na kadzindi",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 336 · Traditional Song (line 2 of the song of the woman of Limotho) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "This woman of Limotho.",
+          "translation": "Rii (huyu ?) muke wa Limotho",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 336 · Traditional Song (line 4 of the song of the woman of Limotho) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "Chief",
+          "translation": "Hacu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 99 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "Mω·dza ·a dura / ·wii / ·hahu / ·ne / ·tsanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 107 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Six / Seven / Eight / Nine / Ten",
+          "translation": "Handahu / ·fuñgahe / ·nane / K·enda / Kumi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, p. 107 · Numerals 6–10 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·ca, ·ja / ·fwa / ·dzi, ·manya. ·hambuya / ·enda. ·dzaka / ·ωna",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (13. Pωkωmω (Pfωkωmω)) · Johnston (1919), Vol. I, pp. 110–111 · Verb roots (prefix Ku·) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -18029,6 +18521,186 @@
           "english": "For God so loved the world (John 3:16 — 1901 Kipokomo Specimen #401)",
           "translation": "Koro hivihivi Muungu kajudsaka lumwengu, haṭa kamuyavya Mwanawe madiani, kwakwamba yuḍe jwonse amuhikizie jeje adsekwara, ela awe na mojo usiwosia.",
           "context": "British and Foreign Bible Society (1921) The Gospel in Many Tongues: Specimens of 543 Languages (London — Public Domain)"
+        },
+        {
+          "english": "Bantu inhabitants of the Tana Valley",
+          "translation": "Wapokomo",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo / Coastal Bantu) · Werner (1915), JRAI 45, p. 326 · Ethnonym · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "underground chamber or pit",
+          "translation": "dindi",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 328 · Lexical Gloss / Oral History (refuge from Galla; source of tribal name Wakalindi) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "figure who came from the south, from whom the Wapokomo",
+          "translation": "Malande",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo / Rabai oral history) · Werner (1915), JRAI 45, pp. 329–330 · Oral History Name · https://zenodo.org/records/1518320/files/article.pdf · figure who came from the south, from whom the Wapokomo derived their \"great Ngadzi\""
+        },
+        {
+          "english": "ritual/secret society",
+          "translation": "Ngadzi",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 330, 333, 345 · Cultural Term (highest degree is \"Great Mwanza\", p. 333) · https://zenodo.org/records/1518320/files/article.pdf · ritual/secret society (corresponding more or less with Giryama chama)"
+        },
+        {
+          "english": "single ancestor / progenitor of the Buu tribe",
+          "translation": "Vere",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo (Buu)) · Werner (1915), JRAI 45, pp. 332, 334 & fn. 1 · Oral History Name (settled in Limotho; father of Sango) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"the man who appeared\" without father or mother, who",
+          "translation": "Sangowere",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo (Buu, per Böcking)) · Werner (1915), JRAI 45, pp. 334 fn. 1, 335 · Oral History Name (Werner notes informants gave Vere and son Sango) · https://zenodo.org/records/1518320/files/article.pdf · \"the man who appeared\" without father or mother, who produced the Buu tribe"
+        },
+        {
+          "english": "Musanye ancestor of the Buu Katsae clan who taught Vere to",
+          "translation": "Mitsotsozini",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo / Wasanye oral history) · Werner (1915), JRAI 45, p. 332 & fn. 3 · Oral History Name / Toponym · https://zenodo.org/records/1518320/files/article.pdf · Musanye ancestor of the Buu Katsae clan who taught Vere to make fire; lit. \"at the mtsotsozi trees\""
+        },
+        {
+          "english": "hero-warrior who conquered the Tana from Kalindi to Nderani",
+          "translation": "Liongo Fumo",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo / Swahili oral history) · Werner (1915), JRAI 45, pp. 333, 335–336 · Oral History Name · https://zenodo.org/records/1518320/files/article.pdf · hero-warrior who conquered the Tana from Kalindi to Nderani (started from Kipini near Shaka)"
+        },
+        {
+          "english": "tribe",
+          "translation": "keeti / keti (pl. vyeti)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 334, 336, 346–347 · Social Organization (Kalindi, Buu, Dzunza, Ngatana, Mwina, Ndera, Gwano, Kinakomba, Ndura, Zubaki, Malalulu, Malinkote, Korokoro, pp. 334, 346–347) · https://zenodo.org/records/1518320/files/article.pdf · tribe (the thirteen Pokomo tribes, each occupying a definite district)"
+        },
+        {
+          "english": "clans (subdivisions within each keti)",
+          "translation": "masindo",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 336, 346 · Social Organization · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "district on the former course of the Tana",
+          "translation": "Limotho",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 334, 335 fn. 4 · Oral History Toponym · https://zenodo.org/records/1518320/files/article.pdf · district on the former course of the Tana (\"Long Tana of Limotho\") where Vere appeared"
+        },
+        {
+          "english": "the Swahili",
+          "translation": "Watsawaa",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 335, 336 · Ethnonym · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "lit. \"they struck the water\"",
+          "translation": "wabige madzi",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 335 fn. 1 · Ritual Phrase / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf · lit. \"they struck the water\" (Krafft: \"praying to the river-spirits of the Tana\"; Böcking: \"make medicine\")"
+        },
+        {
+          "english": "they just went (sc. \"all the same\")",
+          "translation": "Ela wenda tu",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 335 & fn. 3 · Phrase / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"Old Tana\" (deflected former course of the Tana river)",
+          "translation": "Tsana ya kae",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 335 fn. 4 · Toponym / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"Long Tana\" (the Tana of Limotho)",
+          "translation": "Tsana Ndeya",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 335 fn. 4 · Toponym / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "place near Lake Sumiti (fanga = \"a river with steep banks\")",
+          "translation": "Fanga Kuu",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 336 & fn. 1 · Toponym / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "they took precautions",
+          "translation": "wahenda mambo",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 336 · Phrase / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "name of a kind of fish (also a Pokomo tribe)",
+          "translation": "Buu",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 334, 336 · Lexical Gloss / Ethnonym · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"those here\" (hafa = Swahili hapa)",
+          "translation": "Kinahafa (hafa)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 337, 346 · Clan Name / Lexical Gloss (Mwina tribe) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"those of the hither bank\"",
+          "translation": "Kinamongo (Mongo)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 337, 346 · Clan Name / Lexical Gloss (Mwina tribe) · https://zenodo.org/records/1518320/files/article.pdf · \"those of the hither bank\" (Mongo = behind, right/SW bank of Tana)"
+        },
+        {
+          "english": "in front (the further bank of the Tana)",
+          "translation": "Mbo",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 337 · Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "pelican (mbare, in other dialects nzare)",
+          "translation": "Kinambare (mbare / nzare)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 337, 346 · Clan Name / Lexical Gloss (Mwina tribe) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "cattle",
+          "translation": "Kinangombe (ngombe)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 337, 346 · Clan Name / Lexical Gloss (Mwina tribe) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"people of the arrow\"",
+          "translation": "Katsae",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 337, 346 · Clan Name / Lexical Gloss (Buu tribe) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"above\"",
+          "translation": "Yuu (Wa-Yuu)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 337, 346 · Clan Name / Lexical Gloss (Buu tribe; distinct from Galla Wayu) · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "\"cunning\" (mwakatsoo, popular title for the hare katsungula",
+          "translation": "Katsoo / mwakatsoo",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, pp. 337, 346 · Clan Name / Lexical Gloss (Buu tribe) · https://zenodo.org/records/1518320/files/article.pdf · \"cunning\" (mwakatsoo, popular title for the hare katsungula; possibly from tree tsoo)"
+        },
+        {
+          "english": "\"the Galla shore\" (old burying-place below Ngao)",
+          "translation": "Chiko la Wakala",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 343 · Toponym / Oral History · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "age-grade / council institution answering to Giryama kambi / rika",
+          "translation": "luva",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo (from Galla)) · Werner (1915), JRAI 45, pp. 331–332, 345 · Social Organization · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "a fish avoided by the Mbaji clan of the Mwina tribe",
+          "translation": "mukungo / fyoka",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo) · Werner (1915), JRAI 45, p. 345 · Totem / Fauna · https://zenodo.org/records/1518320/files/article.pdf"
         }
       ]
     }
@@ -18036,5 +18708,5 @@
   "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "pkb",
   "glottocode": "poko1261",
-  "totalEntries": 3070
+  "totalEntries": 3182
 }

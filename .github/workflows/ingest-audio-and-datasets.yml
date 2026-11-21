@@ -74,7 +74,7 @@ jobs:
   ingest-datasets:
     name: Stream Open-Access Text, CLDF, KSL & Audio Datasets -> Repo & Cloudflare R2
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     permissions:
       contents: write
 
@@ -162,6 +162,7 @@ jobs:
         working-directory: kenyahub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASETS_TRUST_REMOTE_CODE: "1"
           INCLUDE_CLDF: ${{ inputs.include_cldf_wikimedia_civic || 'true' }}
           INCLUDE_KAIKKI: ${{ inputs.include_kaikki_raw || 'true' }}
           INCLUDE_FREQ: ${{ inputs.include_freq_lists || 'true' }}
@@ -188,6 +189,7 @@ jobs:
           R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME || 'kenyahub-audio' }}
           NEXT_PUBLIC_AUDIO_CDN_URL: ${{ secrets.NEXT_PUBLIC_AUDIO_CDN_URL }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASETS_TRUST_REMOTE_CODE: "1"
           MDC_API_KEY: ${{ secrets.MDC_API_KEY }}
           ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
           MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '250' }}
@@ -198,7 +200,7 @@ jobs:
           INCLUDE_LINGUA_LIBRE: ${{ inputs.include_lingua_libre || 'true' }}
           INCLUDE_KSL_METADATA: ${{ inputs.include_ksl_metadata || 'true' }}
           PER_DATASET_TIMEOUT_SEC: "150"
-          GLOBAL_TIME_BUDGET_SEC: "3000"
+          GLOBAL_TIME_BUDGET_SEC: "4800"
           INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
           R2_READY: ${{ steps.secrets_check.outputs.r2_ready }}
         run: |

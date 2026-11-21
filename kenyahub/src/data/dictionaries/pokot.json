@@ -11,7 +11,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Pokot (Pökoot / Suk / Bawgott) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 56–65, 72, Plates XV–XVII — audited 100% line-by-line across 11 geographical divisions, 5 pastoral divisions, 3 Kasauria migrations, 11 Hill Suk sections, 24 orten clans & totems, Ellap/Ellat, Mt. Alongol & Kerial religion, verbatim sick prayer, and 12-month Kamei/Bengat calendar), Mervyn W. H. Beech (1911 \"The Suk: Their Language and Folklore\"), and Juxon Barton (1921). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0).",
   "categories": [
     {
@@ -718,6 +718,66 @@
           "translation": "năman",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 247"
+        },
+        {
+          "english": "1",
+          "translation": "okoñgô",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), pp. 66–67 · Cardinal numeral; e.g., pelion okoñgô (\"one elephant\", p. 67) · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "2",
+          "translation": "oghieñg",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), pp. 66–67 · Cardinal numeral; e.g., osîs oghieñg (\"two days\", p. 67) · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "3",
+          "translation": "somok",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 66 · Cardinal numeral · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "4",
+          "translation": "añgwan",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Cardinal numeral · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "5",
+          "translation": "mût",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Cardinal numeral · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "20",
+          "translation": "tiptem; taman ut-oghieñg",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · 21 = tiptem ngô okoñgô · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "30",
+          "translation": "sosom",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Cardinal numeral · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "40",
+          "translation": "artam",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Cardinal numeral · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "100",
+          "translation": "pokol",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), pp. 51, 67 · Large numbers above 100: pokoloi-pokoloi (\"hundreds and hundreds\", pp. 51, 67) · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "first (once) / last",
+          "translation": "pa-tagh / pa-let",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 69 · Ordinals formed with pa (\"of\"), e.g., kue pa oghieñg (\"the second thing\") · https://archive.org/details/suktheirlanguage00beecrich"
         }
       ]
     },
@@ -2490,6 +2550,60 @@
           "translation": "paponyan",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "10",
+          "translation": "taman",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · 11–19 formed as taman ngô okoñgô through taman ngô mut ngô añgwan · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "50",
+          "translation": "konom",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · 60 = konom ngô taman; 80 = konom ngô sosom; 90 = konom ngô artam · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "aunt (maternal) (\"my other mother\")",
+          "translation": "iyu-nyan anga",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 102 · Kinship · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "brother",
+          "translation": "weri, pl. werkoi",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 105 · Possessive: wer-i-nja, pl. werkecha (\"my, your, his brother, &c.\") · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "brother-in-law (wife's brother or sister's husband)",
+          "translation": "ôra, pl. ôra-tin",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 105 · Kinship · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "father (of bride); father-in-law (husband speaking)",
+          "translation": "kapikoi, pl. ôpoi",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), pp. 114–115 · If a chief, ôpoi, pl. ôpoi-tin; wife speaking: pô-ti, pl. pô-ti-tin (p. 115) · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "grandparents (relation between and children)",
+          "translation": "kuko, pl. kuko-tin",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 119 · Kinship · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "I fight with a person / I have fought with",
+          "translation": "o-pôr-soi-an / ko-pôr-i-an",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 84 · Reciprocal verb: infix soi (present), i (past); 3rd sg./pl. -sut / -io · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "I tell (to) a person / I have told to a person",
+          "translation": "o-mwō-chin-an / ka-mwō-ch-an",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 84 · Dative verb: present chin/jin, past chi/ji/ch/j · https://archive.org/details/suktheirlanguage00beecrich"
         }
       ]
     },
@@ -7094,6 +7208,48 @@
           "translation": "kawai",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "mother-in-law (\"she of the ox\")",
+          "translation": "po-mwa, pl. pa-mwô-tin",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), pp. 114, 128 · Also pô-ker, pl. pô-ker-tin (\"she of the sheep\"; wives of bride's father, p. 114) and pô-tich, pl. pô-ti-tin (\"she of the cattle\", p. 128) · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "heifer",
+          "translation": "mosor, pl. mosôr",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 51 · Livestock · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "castrated goat / ram",
+          "translation": "setim, pl. setim",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), pp. 51, 119 · Livestock · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "ewe",
+          "translation": "kech, pl. kech-ir",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 51 · Livestock · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "bough / branch (of a tree)",
+          "translation": "môrin-ô-ket, pl. môre-ket",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 105 · Plant/nature · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "gourd",
+          "translation": "kamanyan, pl. kama-nyan-tin",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 119 · Plant/material · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "a buck impala; a cow elephant",
+          "translation": "kiripo-chemel; teta-pelion",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 50 · Gender marking: nouns do not inflect for sex; optional masculine kiripo- and feminine teta- / kōrketo- prefixes · https://archive.org/details/suktheirlanguage00beecrich"
         }
       ]
     },
@@ -9034,6 +9190,12 @@
           "translation": "māt",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "tree",
+          "translation": "ket, pl. kêt",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 148 · Firewood: kwen-da, pl. kwen · https://archive.org/details/suktheirlanguage00beecrich"
         }
       ]
     },
@@ -10206,6 +10368,12 @@
           "translation": "pēng",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 245"
+        },
+        {
+          "english": "I become fat",
+          "translation": "o-terus-itun-an",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 85 · Quasi-passive from terus (\"fat\"): infix itun (present), itu (past) · https://archive.org/details/suktheirlanguage00beecrich"
         }
       ]
     },
@@ -11568,6 +11736,12 @@
           "english": "His house",
           "translation": "Kō-munyi",
           "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Sūk."
+        },
+        {
+          "english": "How did you do it?",
+          "translation": "Ke-e-gh-enyi le-ne?",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 96 · Idiomatic phrase · https://archive.org/details/suktheirlanguage00beecrich"
         }
       ]
     },
@@ -18564,6 +18738,12 @@
           "english": "To come",
           "translation": "nganna",
           "context": "CLDF ASJP v20 Wordlist (POKOT, CC-BY-4.0)"
+        },
+        {
+          "english": "I come in; I fall into",
+          "translation": "o-t-un-an; o-pet-in-an",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 85 · Intransitive motion affixes un (past ko-t-u-an) and in (past ko-pet-i-an) · https://archive.org/details/suktheirlanguage00beecrich"
         }
       ]
     },
@@ -29844,6 +30024,90 @@
           "translation": "anii",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "6",
+          "translation": "mut ngô okoñgô; akan-kapei",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Fn. 1 notes akan- forms are pure Turkana but often employed · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "7",
+          "translation": "[mut ngô] oghieñg; akan-kare",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Cardinal numeral · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "8",
+          "translation": "[mut ngô] somok; akan-kowuni",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Cardinal numeral · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "9",
+          "translation": "[mut ngô] añgwan; akan-ko-mwan",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Cardinal numeral · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "70",
+          "translation": "konom ngô tiptem or listam",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 67 · Fn. 2: listam seems to refer to 40 goats and 30 sheep · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "a cow / cattle generally",
+          "translation": "tainy, pl. ti (before vowel tich)",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 51 · Also teta, pl. toka (\"cow, cows\"); ox's skin min-yon (fn. 1) · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "goat (irrespective of sex); goats generally (ñgaror)",
+          "translation": "aran, aretan, pl. ñgaror",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), pp. 51, 119 · She-goat: aran-nya-sakāte, pl. ñgaror-cha-sakōti (p. 51); young she-goat: sepel-ion, pl. sepel-tin; mother-goat: yiwok (p. 119) · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "I, thou, he/she/it, we, ye, they",
+          "translation": "ani, nyi, nyende/nye, acha, akwa, chane/cha",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 69 · Full personal pronouns; verbal suffixes -an, -enyi, -echa, -ekwa (3rd person unsuffixed) · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "How are you? . . . Quite well.",
+          "translation": "Lata-ne? . . . Karam",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 96 · Greeting phrase · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "Now Mr. Tortoise ran-a-race in-a-valley with Mr. Hare.",
+          "translation": "Kile' kip-kokech ki-momo-io' ñgeñgen ngô ki-blerkwa",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 97 · Opening line of story Kip-kokech ngô Ki-blerkwa · https://archive.org/details/suktheirlanguage00beecrich"
+        },
+        {
+          "english": "He-ran-fast Mr. Hare. He-met the-tortoise he-is in-front",
+          "translation": "Ki-kurup ki-blerkwa. Ki-nyuru kokech mi tagh kainyisio'",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 97 · From Kip-kokech ngô Ki-blerkwa · https://archive.org/details/suktheirlanguage00beecrich · He-ran-fast Mr. Hare. He-met the-tortoise he-is in-front since-a-long-time."
+        },
+        {
+          "english": "He-not-knows-not it-is-another. He-got-the-better-of Mr",
+          "translation": "Me-ngit-nye anga. Ki-pel ki-blerkwa kip-kokech",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 97 · Closing line of Kip-kokech ngô Ki-blerkwa · https://archive.org/details/suktheirlanguage00beecrich · He-not-knows-not it-is-another. He-got-the-better-of Mr. Hare Mr. Tortoise."
+        },
+        {
+          "english": "Now they-have-fought-with-one-another sheep and goats",
+          "translation": "Kile' ke-pôr-io' kechir ngô ñgaror; ki-pel, kechir",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 97 · Opening line of story Kechir ngô Ñgaror (\"Sheep and Goats\") · https://archive.org/details/suktheirlanguage00beecrich · Now they-have-fought-with-one-another sheep and goats; they won, the sheep."
+        },
+        {
+          "english": "They-said the-goats we-shall-have-we-what more?",
+          "translation": "Ki-lend-e ñgaror ki-tiñget-echa-ne ñgat?",
+          "pronunciation": "",
+          "context": "Beech (1911) The Suk (Pokot) · Beech (1911), p. 97 · From Kechir ngô Ñgaror · https://archive.org/details/suktheirlanguage00beecrich"
         }
       ]
     },
@@ -31257,5 +31521,5 @@
   "source": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)",
   "isoCode": "pko",
   "glottocode": "poko1263",
-  "totalEntries": 5630
+  "totalEntries": 5674
 }

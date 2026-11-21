@@ -13,7 +13,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from R. N. Cust (1883), Rev. Fr. Evangelist de Larajasse (1897 \"Somali-English and English-Somali Dictionary\", Kegan Paul, Trench, Trübner & Co., London — audited 100% line-by-line across Front Matter, Preface pp. v–xiii, Abbreviations p. xiv, 20-row Kenya Reference Table [Swahili sawaheli/sawahili, Ogaden & Darod dialect wa debai, Galla daba galla, East African antelopes si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro, and rubiad/rubod/rubi currency], and Full Two-Column Page Transcriptions of pp. 26, 123, 127, 242, 266 & 293), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language\"), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0)). Further enriched with attested Somali customary-law, clan, pastoral, and maritime terms from Major H. Rayne (1921) 'Sun, Sand and Somals' (Project Gutenberg #48598, US Public Domain).",
   "categories": [
     {
@@ -1266,6 +1266,24 @@
           "translation": "Bughul",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "four",
+          "translation": "afarr",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 5 · Numerals (n.c., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "forty",
+          "translation": "afarrtan",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 5 · Numerals (n.c., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "hundred",
+          "translation": "bohol",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 22 · Numerals (n.c., def. -ki or -shi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -2700,6 +2718,72 @@
           "translation": "Hoya",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "father",
+          "translation": "abba",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 2 · Kinship (m.n., def. -hi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "paternal uncle",
+          "translation": "adér",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 4 · Kinship (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "grandfather",
+          "translation": "awow / awowai",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 13 · Kinship (m.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "grandmother",
+          "translation": "ayaiyo",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 13 · Kinship (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "stepmother, wife of my paternal or maternal uncle",
+          "translation": "ayo",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 13 · Kinship (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "sister-in-law",
+          "translation": "dumashi",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 41 · Kinship (f.n., def. -di) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "paternal aunt",
+          "translation": "eddo",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 42 · Kinship (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "relations (parents)",
+          "translation": "ga'al",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 49 · Kinship (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "girl, maid, daughter",
+          "translation": "gabad",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 49 · Kinship (f.n., def. -di; pl. gabdo, hablo) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "mother",
+          "translation": "hoyo",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 72 · Kinship (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "die",
+          "translation": "dimo",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 36 · Verbs (v.i.; imp. pl. dinta, aor. wan diman) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -4255,6 +4339,240 @@
           "translation": "Bug",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "pulse-vein, kindred, kinsman",
+          "translation": "hedid / hidid",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 67 · Kinship / Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "spine or backbone ridge",
+          "translation": "adah",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 4 · Body Parts (f.n., def. -di) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "limb, member",
+          "translation": "adin",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 4 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "foot",
+          "translation": "'ag",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 5 · Body Parts (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "palm of the hand",
+          "translation": "'ala'al / 'alaan'al",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 7 · Body Parts (f.n., def. -shi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "belly, stomach (generally used also for heart)",
+          "translation": "'alol",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 8 · Body Parts (f.n., def. -shi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "cheek",
+          "translation": "'an",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 9 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "ankle",
+          "translation": "anhau",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 9 · Body Parts (m.n., def. -gi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "tongue",
+          "translation": "'arrab",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 11 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "palm of the hand",
+          "translation": "baba'o",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 14 · Body Parts (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "liver",
+          "translation": "ber",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 19 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "thigh",
+          "translation": "bowdo",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 22 · Body Parts (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "lip",
+          "translation": "bushin",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 24 · Body Parts (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "cheek",
+          "translation": "daban",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 25 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "jaw-bone, chin",
+          "translation": "dan",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 30 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "lip",
+          "translation": "debin",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 33 · Body Parts (f.n., def. -ti; pl. debno) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "blood, menses",
+          "translation": "dig",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 35 · Body Parts (m.n., def. -gi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "nostril",
+          "translation": "dul",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 41 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "heel",
+          "translation": "'edib / 'idib",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 42 · Body Parts (f.n., def. -ti; pl. 'edbo) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "finger, handwriting",
+          "translation": "far",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 45 · Body Parts (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "rib",
+          "translation": "feid",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 46 · Body Parts (f.n., def. -di) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "forehead, brow",
+          "translation": "fod",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 47 · Body Parts (f.n., def. -di) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "front tooth",
+          "translation": "fol",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 48 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "arm (the whole member), hand",
+          "translation": "ga'an",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 49 · Body Parts (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "beard",
+          "translation": "gad",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 50 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "shoulder",
+          "translation": "garab",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 53 · Body Parts (m.n., def. -ki; pl. garbo) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "molar tooth",
+          "translation": "gows",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 57 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "backbone",
+          "translation": "hanjad",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 64 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "eyelash, eyelid",
+          "translation": "hirib",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 70 · Body Parts (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "navel",
+          "translation": "hundur",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 73 · Body Parts (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "throat",
+          "translation": "hunguri",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 73 · Body Parts (m.n., def. -gi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "elbow",
+          "translation": "husul",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 74 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "heart",
+          "translation": "halbi",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 77 · Body Parts (m.n., def. -gi; under H.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "soil, earth",
+          "translation": "'arro",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 11 · Nature (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "earth, ground, floor",
+          "translation": "dul",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 41 · Nature (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "blow (with the mouth)",
+          "translation": "afuf",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 5 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "educate, instruct, teach",
+          "translation": "bar",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 17 · Verbs (v.tr.; baro, learn, study) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "bear, beget, create, procreate, give birth, bring forth",
+          "translation": "dal",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 28 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "hear, listen to",
+          "translation": "degaiso",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 33 · Verbs (v.i.; imp. pl. degaista, aor. wan degaisan) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -6149,6 +6467,156 @@
           "translation": "Ae",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "kind of (short) poisonous snake",
+          "translation": "abeiso",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 2 · Animals (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "goats and sheep (herd of)",
+          "translation": "adi",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 4 · Animals (m.n., def. -gi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "porcupine",
+          "translation": "anahub",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 9 · Animals (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "male lion",
+          "translation": "ar",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 9 · Animals (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "spider",
+          "translation": "'aro",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 10 · Animals (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "gazelle (Gazella Soemmeringi)",
+          "translation": "'aul",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 12 · Animals (m. and f.n., def. -ki, -shi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "locust",
+          "translation": "ayah",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 13 · Animals (m.n., def. -hi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "hare, rabbit",
+          "translation": "bakaila / bakailai",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 16 · Animals (m.n., def. -hi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "butterfly",
+          "translation": "balánbalis",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 17 · Animals (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "cat",
+          "translation": "bissad",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 21 · Animals (f.n., def. -di) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "ass, donkey",
+          "translation": "dameir / dabeir",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 29 · Animals (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "fox (general name)",
+          "translation": "dawa'o",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 32 · Animals (f.n.; dawa', male fox) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "gazelle (male and female in general), Gazella naso",
+          "translation": "dero",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 34 · Animals (f.n.; der, he-gazelle) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "cock and hen (general name)",
+          "translation": "digag",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 35 · Animals (m.n., def. -gi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "fly",
+          "translation": "dihsi",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 36 · Animals (m.n., def. -gi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "pig, boar, hog, wart-hog",
+          "translation": "dofar",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 38 · Animals (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "zebra",
+          "translation": "farow",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 46 · Animals (m.n., def. -gi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "bat",
+          "translation": "fidmer",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 47 · Animals (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "giraffe",
+          "translation": "gerri",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 55 · Animals (m.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "ostrich (general name)",
+          "translation": "goráyo",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 57 · Animals (f.n.; gorai, male ostrich) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "large black vulture (species of)",
+          "translation": "gorgor",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 57 · Animals (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "she-camel",
+          "translation": "hal",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 63 · Animals (f.n., def. -shi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "mosquito, gnats, midge",
+          "translation": "kane'o",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 85 · Animals (f.n.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "wish, desire, purpose, seek, search, want, betroth",
+          "translation": "don",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 38 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "sing (also used for birds)",
+          "translation": "hes",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 69 · Verbs (v.i.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -7342,6 +7810,96 @@
           "translation": "Dugha",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "drought, sterility, famine",
+          "translation": "abar",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 2 · Nature (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "moonlight",
+          "translation": "'addo",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 4 · Nature (f.n., no plur.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "rays of the sun, sun",
+          "translation": "'ad'ed",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 4 · Nature (f.n., def. -di) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "wood, forest",
+          "translation": "'ain",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 6 · Nature (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "grass (green or dried), stubble",
+          "translation": "'aus",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 12 · Nature (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "mount, mountain",
+          "translation": "bur",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 24 · Nature (f.n., def. -ti; bur yar, hill) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "dew",
+          "translation": "darab",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 31 · Nature (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "cloud",
+          "translation": "darur",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 32 · Nature (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "moon, crescent",
+          "translation": "dayah",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 33 · Nature (m.n., def. -ha) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "river, stream",
+          "translation": "durdur",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 41 · Nature (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "tree, thing",
+          "translation": "ged",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 54 · Nature (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "star, hedgehog",
+          "translation": "hedig / hidig",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 67 · Nature (f.n., def. -ti) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "lightning",
+          "translation": "hila",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 70 · Nature (m.n., def. -hi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "sun, sunshine",
+          "translation": "horah",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 81 · Nature (f.n., def. -di; under H.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "bury, thrust (a stake into the ground)",
+          "translation": "as",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 11 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -8157,6 +8715,24 @@
           "translation": "Lis",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "wind, air, breeze, weather",
+          "translation": "dabail",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 25 · Nature (f.n., def. -shi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "produce, create",
+          "translation": "abur",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 3 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "beat, strike, kill",
+          "translation": "dil",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 36 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -12708,6 +13284,96 @@
           "translation": "Bane",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+        },
+        {
+          "english": "behold, perceive, see",
+          "translation": "arag",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 9 · Verbs (v.tr.; imp. pl. arka, aor. wan arki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "cultivate, sow",
+          "translation": "beir",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 19 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "hop, jump, leap",
+          "translation": "bod",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 22 · Verbs (v.i.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "send, despatch",
+          "translation": "dir",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 37 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "build",
+          "translation": "dis",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 37 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "sit, stay, abide, dwell, inhabit, reside",
+          "translation": "fadi",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, pp. 44–45 · Verbs (v.i.; fadiso, sit down) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "attest, open, develop, unload, divorce",
+          "translation": "fur",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 48 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "enter, penetrate",
+          "translation": "gal",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 50 · Verbs (v.i.; imp. pl. gela, aor. wan gelin) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "burn, brand, scorch",
+          "translation": "gub",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 57 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "speak, talk",
+          "translation": "hadal",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 60 · Verbs (v.i.; imp. pl. hadla, aor. wan hadli) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "acquire, attain, gain, find, get, obtain",
+          "translation": "hel",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 68 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "sleep",
+          "translation": "hurud",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 74 · Verbs (v.i.; imp. pl. hurda, aor. wan hurdi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "write, record, register",
+          "translation": "hor",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 81 · Verbs (v.tr.; under H.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "laugh, smile",
+          "translation": "hosol",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 81 · Verbs (v.i.; under H.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "awake, wake, get up, rise",
+          "translation": "ka'",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 83 · Verbs (v.i.; imp. pl. ka'a, aor. wan kei) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -14631,6 +15297,18 @@
           "translation": "Tugh mesha-tun",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "go out, get out, set out, flow, leak, grow, spring up",
+          "translation": "bah",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 14 · Verbs (v.i.; imp. pl. -a, aor. wan bihi) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "come (used as a call)",
+          "translation": "kalai",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 85 · Verbs (v.i.; pl. kalaiya) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -16257,6 +16935,12 @@
           "translation": "Shullai",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "fourteenth, a fortnight",
+          "translation": "afarr iyo tobnad",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 5 · Numerals (n.c.o.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -85144,6 +85828,24 @@
           "translation": "Deynta qaranka",
           "pronunciation": "",
           "context": "en-so Parallel Clean 8k (CC-BY-4.0, https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k)"
+        },
+        {
+          "english": "mine, thine, his, hers, ours (incl.), ours (excl.), yours, theirs",
+          "translation": "kai-gi/tai-di, ka-gi/ta-di, kis-i/tis-i, ked-i/ted-i, ken-i/ten-i, kaya-gi/taya-di, kin-i/tin-i, kod-i/tod-i",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 32–33 (§ 62) · Possessive Pronouns (M k- / F t-) · https://archive.org/download/grammarofsomalil00kirkuoft/grammarofsomalil00kirkuoft.pdf"
+        },
+        {
+          "english": "(see limdi)",
+          "translation": "lamdi",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (—) · Kirk (1905), p. 204 · Cross-reference · https://archive.org/details/grammarofsomalil00kirkuoft/page/204/mode/1up"
+        },
+        {
+          "english": "fourth",
+          "translation": "afrad",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 5 · Numerals (n.c.o.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     },
@@ -92731,6 +93433,24 @@
           "translation": "Ha bugin",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Somauli (Somali) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "wood, bush, thorn, branch of a tree, any article of wood, bow",
+          "translation": "ghoribírro-di",
+          "pronunciation": "",
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 203 · https://archive.org/details/grammarofsomalil00kirkuoft/page/203/mode/1up"
+        },
+        {
+          "english": "mouth, language, dialect, edge",
+          "translation": "af",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 5 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "abdomen",
+          "translation": "gumar",
+          "pronunciation": "",
+          "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 58 · Body Parts (m.n., def. -ki) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
         }
       ]
     }
@@ -92738,5 +93458,5 @@
   "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019); Green & Smith (2024) LSP #427 Ch. 13 Kenyan Maay Tone, Di Maio (2023) Kenyan Maay Focus, & LSP #190/#96 Somali Studies (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); Major H. Rayne (1921) Sun, Sand and Somals (Project Gutenberg #48598, US Public Domain, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm)",
   "isoCode": "som",
   "glottocode": "soma1255",
-  "totalEntries": 16785
+  "totalEntries": 16905
 }

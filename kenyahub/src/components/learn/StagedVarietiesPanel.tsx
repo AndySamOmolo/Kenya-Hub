@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { BookOpen, Database, ExternalLink, Film, Hand, Search } from "lucide-react";
+import { BookOpen, ExternalLink, Film, Hand, Search } from "lucide-react";
 import { OPEN_CORPUS_INDEX, type KslVideoItem } from "@/lib/open-corpus";
 
 type KslFilterTab = "all" | "maseno-stickman" | "human-sign-bible";
@@ -51,75 +51,42 @@ export default function StagedVarietiesPanel() {
     );
   });
 
-  const { stats, ksl, civic, benchmarks } = OPEN_CORPUS_INDEX;
   const masenoCount = kslVideos.filter((v) => v.category === "maseno-stickman").length;
   const humanBibleCount = kslVideos.filter((v) => v.category === "human-sign-bible").length;
 
   return (
-    <section className="mt-10 rounded-2xl border border-gold/25 bg-bg-card p-5 sm:p-6 space-y-6">
-      <div className="flex flex-wrap items-start justify-between gap-3 border-b border-border/60 pb-4">
-        <div>
-          <p className="text-xs font-bold uppercase tracking-wider text-gold flex items-center gap-1.5">
-            <Database className="h-3.5 w-3.5" />
-            Emerging Varieties, Kenyan Sign Language (KSL) &amp; Open Corpora
-          </p>
-          <h2 className="text-lg sm:text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)] mt-1">
-            Staged Kenyan Languages &amp; Live Open-Access Media Datasets
-          </h2>
-          <p className="text-xs sm:text-sm text-text-secondary mt-1">
-            Commercially permissive CC-BY, CC-BY-SA, CC0, and Public Domain corpora automatically synced into KenyaHub.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-2 text-xs">
-          <span className="rounded-lg border border-kenya-green/30 bg-kenya-green/10 px-2.5 py-1 font-semibold text-kenya-green">
-            {stats.totalR2AudioClips.toLocaleString()} R2 Audio Clips
-          </span>
-          <span className="rounded-lg border border-gold/30 bg-gold/10 px-2.5 py-1 font-semibold text-gold">
-            {stats.totalStagedEntries.toLocaleString()} Staged Entries
-          </span>
-          <span className="rounded-lg border border-border bg-bg-elevated px-2.5 py-1 font-semibold text-text-secondary">
-            {stats.totalBenchmarkRows.toLocaleString()} Benchmark Rows
-          </span>
-        </div>
-      </div>
-
-      {/* Kenyan Sign Language (KSL · ISO xki) Real Video & Storybook Library */}
-      <div className="rounded-2xl border border-kenya-green/30 bg-bg-elevated/40 p-4 sm:p-5 space-y-4">
-        <div className="flex flex-wrap items-start justify-between gap-3">
+    <section className="mt-10 space-y-6">
+      {/* 1. Kenyan Sign Language (KSL) — Video Library & Storybooks */}
+      <div className="rounded-2xl border border-kenya-green/30 bg-bg-card p-5 sm:p-6 space-y-4">
+        <div className="flex flex-wrap items-start justify-between gap-3 border-b border-border/60 pb-4">
           <div>
             <p className="text-xs font-bold uppercase tracking-wider text-kenya-green flex items-center gap-1.5">
               <Hand className="h-3.5 w-3.5" />
-              Kenyan Sign Language (KSL · ISO xki) — Commercially Permissive Video Library
+              Kenyan Sign Language (KSL)
             </p>
-            <p className="text-xs text-text-secondary mt-1 leading-relaxed">
-              Real KSL videos from Maseno University&apos;s anonymized stickman dataset (Zenodo 14338329, CC-BY-4.0), human KSL signers in Open Sign Bibles (CC-BY-SA-4.0), and Global Digital Library KSL video storybooks (CC-BY-4.0).
+            <h2 className="text-lg sm:text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)] mt-1">
+              Watch Kenyan Sign Language Videos &amp; Storybooks
+            </h2>
+            <p className="text-xs sm:text-sm text-text-secondary mt-1">
+              Practice signs with slow-motion playback (0.5x–1x) using Maseno University stickman sign videos, human KSL signers, and illustrated KSL video storybooks.
             </p>
           </div>
-          <div className="flex flex-wrap gap-1.5">
-            {ksl.sources.map((src) => (
-              <a
-                key={src.id}
-                href={src.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 rounded-lg border border-kenya-green/30 bg-bg-card px-2.5 py-1 text-[0.72rem] font-semibold text-kenya-green hover:underline"
-              >
-                <span>{src.id}</span>
-                <ExternalLink className="h-3 w-3" />
-              </a>
-            ))}
-          </div>
+          {kslVideos.length > 0 && (
+            <span className="rounded-full border border-kenya-green/30 bg-kenya-green/10 px-3 py-1 text-xs font-semibold text-kenya-green shrink-0">
+              {kslVideos.length} playable videos
+            </span>
+          )}
         </div>
 
-        {/* Interactive R2 HTML5 <video> Player when Maseno / Open Sign Bibles MP4s are synced */}
+        {/* Playable HTML5 <video> Library */}
         {kslVideos.length > 0 ? (
           <div className="space-y-3">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="flex flex-wrap gap-1.5">
                 {[
-                  { id: "all" as const, label: `All Videos (${kslVideos.length})` },
-                  { id: "maseno-stickman" as const, label: `Maseno Stickman (${masenoCount})` },
-                  { id: "human-sign-bible" as const, label: `Human Sign Bibles (${humanBibleCount})` },
+                  { id: "all" as const, label: `All Signs (${kslVideos.length})` },
+                  { id: "maseno-stickman" as const, label: `Stickman Signs (${masenoCount})` },
+                  { id: "human-sign-bible" as const, label: `Human Signers (${humanBibleCount})` },
                 ].map((tab) => (
                   <button
                     key={tab.id}
@@ -128,7 +95,7 @@ export default function StagedVarietiesPanel() {
                     className={`rounded-lg border px-2.5 py-1 text-xs font-semibold transition-all cursor-pointer ${
                       kslTab === tab.id
                         ? "border-kenya-green bg-kenya-green text-white"
-                        : "border-border bg-bg-card text-text-secondary hover:border-kenya-green/50"
+                        : "border-border bg-bg-elevated text-text-secondary hover:border-kenya-green/50"
                     }`}
                   >
                     {tab.label}
@@ -141,14 +108,14 @@ export default function StagedVarietiesPanel() {
                   type="text"
                   value={kslQuery}
                   onChange={(e) => setKslQuery(e.target.value)}
-                  placeholder="Search KSL sign or passage..."
-                  className="w-full rounded-lg border border-border bg-bg-card pl-8 pr-3 py-1.5 text-xs text-text-primary placeholder:text-text-muted focus:outline-none focus:border-kenya-green"
+                  placeholder="Search a KSL sign..."
+                  className="w-full rounded-lg border border-border bg-bg-elevated pl-8 pr-3 py-1.5 text-xs text-text-primary placeholder:text-text-muted focus:outline-none focus:border-kenya-green"
                 />
               </div>
             </div>
 
             {activeVideo && (
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 rounded-xl border border-border bg-bg-card p-3.5">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 rounded-xl border border-border bg-bg-elevated/40 p-3.5">
                 <div className="lg:col-span-7 space-y-2.5">
                   <video
                     ref={videoRef}
@@ -163,11 +130,10 @@ export default function StagedVarietiesPanel() {
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div>
                       <p className="text-sm font-bold text-text-primary">{activeVideo.title}</p>
-                      <p className="text-[0.7rem] text-text-muted">
-                        {activeVideo.source} · {activeVideo.license}
-                      </p>
+                      <p className="text-[0.7rem] text-text-muted">{activeVideo.source}</p>
                     </div>
                     <div className="flex items-center gap-1">
+                      <span className="text-[0.68rem] text-text-muted mr-1">Speed:</span>
                       {[0.5, 0.75, 1].map((spd) => (
                         <button
                           key={spd}
@@ -176,7 +142,7 @@ export default function StagedVarietiesPanel() {
                           className={`rounded-md border px-2 py-0.5 text-[0.7rem] font-mono cursor-pointer ${
                             playbackRate === spd
                               ? "border-kenya-green bg-kenya-green/15 text-kenya-green font-bold"
-                              : "border-border bg-bg-elevated text-text-secondary"
+                              : "border-border bg-bg-card text-text-secondary"
                           }`}
                         >
                           {spd}x
@@ -185,7 +151,7 @@ export default function StagedVarietiesPanel() {
                     </div>
                   </div>
                   {activeVideo.transcript && (
-                    <p className="text-xs text-text-secondary rounded-lg border border-border bg-bg-elevated/50 p-2.5 leading-relaxed">
+                    <p className="text-xs text-text-secondary rounded-lg border border-border bg-bg-card p-2.5 leading-relaxed">
                       {activeVideo.transcript}
                     </p>
                   )}
@@ -202,18 +168,17 @@ export default function StagedVarietiesPanel() {
                         className={`w-full text-left rounded-lg border p-2.5 transition-all cursor-pointer ${
                           isCurrent
                             ? "border-kenya-green bg-kenya-green/10"
-                            : "border-border bg-bg-elevated/40 hover:border-kenya-green/40"
+                            : "border-border bg-bg-card hover:border-kenya-green/40"
                         }`}
                       >
                         <div className="flex items-center justify-between gap-2">
                           <span className="text-xs font-bold text-text-primary line-clamp-1">
                             {vid.title}
                           </span>
-                          <span className="text-[0.62rem] font-mono uppercase text-kenya-green shrink-0">
+                          <span className="text-[0.62rem] font-semibold uppercase text-kenya-green shrink-0">
                             {vid.category === "maseno-stickman" ? "Stickman" : "Human"}
                           </span>
                         </div>
-                        <p className="text-[0.65rem] text-text-muted mt-0.5">{vid.license}</p>
                       </button>
                     );
                   })}
@@ -222,22 +187,19 @@ export default function StagedVarietiesPanel() {
             )}
           </div>
         ) : (
-          <div className="rounded-xl border border-dashed border-kenya-green/35 bg-bg-card/80 p-3.5 text-xs text-text-secondary space-y-1.5">
-            <p className="font-semibold text-text-primary flex items-center gap-1.5">
-              <Film className="h-3.5 w-3.5 text-kenya-green" />
-              Maseno Stickman &amp; Open Sign Bibles R2 Video Pipeline Ready
-            </p>
+          <div className="rounded-xl border border-dashed border-kenya-green/35 bg-bg-elevated/40 p-3.5 text-xs text-text-secondary flex items-start gap-2.5">
+            <Film className="h-4 w-4 text-kenya-green shrink-0 mt-0.5" />
             <p>
-              Run the GitHub Actions ingestion workflow to transcode and stream Maseno stickman <code className="font-mono">.mp4</code> signs (Zenodo 14338329, 1.54 GB, CC-BY-4.0) and human KSL <code className="font-mono">.mp4</code> clips from Open Sign Bibles (CC-BY-SA-4.0) directly into this player.
+              Maseno stickman sign clips and human KSL videos appear right here automatically after syncing media to Cloudflare R2. In the meantime, watch the illustrated human KSL video storybooks below.
             </p>
           </div>
         )}
 
-        {/* Global Digital Library Human KSL Video Storybooks (Available Immediately) */}
+        {/* Illustrated Human KSL Video Storybooks */}
         {kslStorybooks.length > 0 && (
           <div className="space-y-2">
-            <p className="text-[0.7rem] font-bold uppercase tracking-wider text-text-muted">
-              Human KSL Video Storybooks (Global Digital Library · Open Access)
+            <p className="text-xs font-bold uppercase tracking-wider text-text-muted">
+              Human KSL Video Storybooks
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
               {kslStorybooks.map((book) => (
@@ -246,17 +208,17 @@ export default function StagedVarietiesPanel() {
                   href={book.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-xl border border-border bg-bg-card p-3 hover:border-kenya-green/50 transition-all block"
+                  className="rounded-xl border border-border bg-bg-elevated/40 p-3.5 hover:border-kenya-green/50 transition-all block"
                 >
                   <div className="flex items-start justify-between gap-2">
-                    <p className="text-xs font-bold text-text-primary">{book.title}</p>
+                    <p className="text-sm font-bold text-text-primary">{book.title}</p>
                     <ExternalLink className="h-3.5 w-3.5 text-kenya-green shrink-0 mt-0.5" />
                   </div>
-                  <p className="text-[0.72rem] text-text-secondary mt-1 leading-relaxed">
+                  <p className="text-xs text-text-secondary mt-1 leading-relaxed">
                     {book.description}
                   </p>
-                  <p className="text-[0.65rem] font-mono text-kenya-green mt-1.5">
-                    {book.format} · {book.license}
+                  <p className="text-[0.68rem] font-semibold text-kenya-green mt-1.5">
+                    Watch Human Signer · Free Open Access
                   </p>
                 </a>
               ))}
@@ -265,9 +227,22 @@ export default function StagedVarietiesPanel() {
         )}
       </div>
 
-      {/* Emerging / Staged Kenyan Varieties (Kinubi, Kuria, Kenyan Maay + any future staging files) */}
+      {/* 2. More Kenyan Languages — Starter Phrasebooks (Kinubi, Kuria, Kenyan Maay) */}
       {OPEN_CORPUS_INDEX.stagedVarieties.length > 0 && (
-        <div className="space-y-3">
+        <div className="rounded-2xl border border-gold/25 bg-bg-card p-5 sm:p-6 space-y-4">
+          <div className="border-b border-border/60 pb-3">
+            <p className="text-xs font-bold uppercase tracking-wider text-gold flex items-center gap-1.5">
+              <BookOpen className="h-3.5 w-3.5" />
+              More Kenyan Languages
+            </p>
+            <h2 className="text-lg sm:text-xl font-bold text-text-primary font-[family-name:var(--font-outfit)] mt-1">
+              Starter Phrasebooks for Emerging Kenyan Languages
+            </h2>
+            <p className="text-xs sm:text-sm text-text-secondary mt-1">
+              Explore everyday words and phrases in Kinubi, Kuria, and Kenyan Maay while full multi-unit courses are being expanded.
+            </p>
+          </div>
+
           <div className="flex flex-wrap gap-2">
             {OPEN_CORPUS_INDEX.stagedVarieties.map((v) => {
               const active = v.id === selectedId;
@@ -285,12 +260,9 @@ export default function StagedVarietiesPanel() {
                       : "border-border bg-bg-elevated/60 text-text-secondary hover:border-gold/50"
                   }`}
                 >
-                  <p className="text-xs font-bold">
-                    {v.name}{" "}
-                    <span className="font-mono text-[0.68rem] text-gold">({v.isoCode})</span>
-                  </p>
+                  <p className="text-xs font-bold">{v.name}</p>
                   <p className="text-[0.68rem] text-text-muted mt-0.5">
-                    {v.totalEntries} verified entries · {v.counties.slice(0, 2).join(", ")}
+                    {v.totalEntries} phrases · {v.counties.slice(0, 2).join(", ")}
                   </p>
                 </button>
               );
@@ -302,7 +274,7 @@ export default function StagedVarietiesPanel() {
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div>
                   <h3 className="text-sm font-bold text-text-primary">
-                    {activeVariety.name} ({activeVariety.nativeName}) — Preview Lexicon
+                    {activeVariety.name} ({activeVariety.nativeName}) Phrasebook
                   </h3>
                   <p className="text-xs text-text-muted">
                     {activeVariety.family} · Spoken in {activeVariety.counties.join(", ")}
@@ -314,13 +286,13 @@ export default function StagedVarietiesPanel() {
                     type="text"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder={`Filter ${activeVariety.name} preview...`}
+                    placeholder={`Search ${activeVariety.name} phrases...`}
                     className="w-full rounded-lg border border-border bg-bg-card pl-8 pr-3 py-1.5 text-xs text-text-primary placeholder:text-text-muted focus:outline-none focus:border-gold"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 max-h-96 overflow-y-auto pr-1">
                 {filteredEntries.map((entry, idx) => (
                   <div
                     key={`${activeVariety.id}-${idx}`}
@@ -328,11 +300,6 @@ export default function StagedVarietiesPanel() {
                   >
                     <p className="font-bold text-text-primary">{entry.translation}</p>
                     <p className="text-text-secondary mt-0.5">{entry.english}</p>
-                    {entry.context && (
-                      <p className="text-[0.65rem] text-text-muted mt-1 line-clamp-1">
-                        {entry.context}
-                      </p>
-                    )}
                   </div>
                 ))}
               </div>
@@ -340,27 +307,6 @@ export default function StagedVarietiesPanel() {
           )}
         </div>
       )}
-
-      {/* Open Civic, Wikimedia & NLP Evaluation Corpora */}
-      <div className="rounded-xl border border-border bg-bg-elevated/40 p-4 space-y-2.5">
-        <p className="text-xs font-bold uppercase tracking-wider text-gold flex items-center gap-1.5">
-          <BookOpen className="h-3.5 w-3.5" />
-          Open Civic, Wikimedia &amp; NLP Evaluation Corpora
-        </p>
-        <p className="text-xs text-text-secondary leading-relaxed">
-          {stats.totalReaderSentences.toLocaleString()} reading sentences, {benchmarks.length} commercial NLP benchmarks ({stats.totalBenchmarkRows.toLocaleString()} rows), {stats.totalWikimediaDatasets} Wikimedia dumps, and {civic.length} Kenyan civic &amp; agricultural datasets.
-        </p>
-        <div className="flex flex-wrap gap-1.5 pt-1">
-          {civic.map((c) => (
-            <span
-              key={c.id}
-              className="rounded-md border border-border bg-bg-card px-2 py-0.5 text-[0.68rem] text-text-secondary"
-            >
-              {c.id} ({c.license})
-            </span>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }

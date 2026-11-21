@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-21T14:31:43.841381+00:00",
+  "generatedAt": "2026-11-21T16:18:01.738357+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
     "totalR2AudioClips": 5260,
     "totalAudioChapters": 5,
     "totalKslVideos": 0,
-    "totalStagedVarieties": 3,
-    "totalStagedEntries": 321,
+    "totalStagedVarieties": 4,
+    "totalStagedEntries": 643,
     "totalBenchmarkRows": 12943,
     "totalReaderSentences": 2666,
     "totalCivicDatasets": 3,
@@ -125,6 +125,26 @@
         },
         {
           "text": "Nitarudi.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Nina swali.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Nakupenda.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Usisahau kupeleka barua.",
+          "source": "Tatoeba Swh Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Penye nia, pana njia.",
           "source": "Tatoeba Swh Text",
           "license": "CC-BY-2.0"
         }
@@ -936,6 +956,26 @@
           "text": "Magacaygu waa Maxamed.",
           "source": "Tatoeba Som Text",
           "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Waan akhrin doonaa buugga.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Ku soo dhawaada Tatoeba!",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Ku soo dhawoow Tatoeba!",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "text": "Diidiinka ilko ma leh.",
+          "source": "Tatoeba Som Text",
+          "license": "CC-BY-2.0"
         }
       ],
       "topFrequencyWords": [
@@ -1742,8 +1782,44 @@
       "counties": [
         "Migori County (Kuria East & West)"
       ],
-      "totalEntries": 32,
+      "totalEntries": 45,
       "sampleEntries": [
+        {
+          "english": "Man",
+          "translation": "Ωmu·ntu ; ava·",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 78 · ",
+          "category": "family"
+        },
+        {
+          "english": "Water",
+          "translation": "Ama·ci, Ama·nci",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 80 · ",
+          "category": "food"
+        },
+        {
+          "english": "God",
+          "translation": "Eri·ωba",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 76 · ",
+          "category": "travel"
+        },
+        {
+          "english": "Arm",
+          "translation": "Ωkω·bωkω",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 73 · ",
+          "category": "body"
+        },
+        {
+          "english": "Blood",
+          "translation": "Ama·sere. Amainy·iñga",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 74 · ",
+          "category": "body"
+        },
+        {
+          "english": "Cow",
+          "translation": "Eñ·ombe",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 75 · ",
+          "category": "animals"
+        },
         {
           "english": "The hyenas killed the rabbit.",
           "translation": "Ichi-ng'iti (n-)cha-a-it-ir-e ege-toocho",
@@ -1850,6 +1926,132 @@
           "english": "They only PROTESTED BY THROWING ROCKS.",
           "translation": "M-ba-a-tan-er-a g-oko-rekeera ama-geena bene",
           "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (24) · Focus-Sensitive Operator bene · Gloss: ",
+          "category": "phrases"
+        },
+        {
+          "english": "They only didn't eat FISH.",
+          "translation": "N-i-nswi i-nyene ba-a-ta-rey-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (25) · Agreeing Focus Operator i-nyene · Gloss",
+          "category": "phrases"
+        },
+        {
+          "english": "Johnes went INTO THE WILD.' ~ 'Johnes did something",
+          "translation": "N-i-bara chonesi a-a-gey-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, fn. 22 (i) · Idiom Preservation under Focus · Glos",
+          "category": "phrases"
+        },
+        {
+          "english": "Johnes saw THESE OWLS.",
+          "translation": "N-imi-iti ge-no chonesi a-a-roch-e. / Imi-iti n-ge-no chonesi a-a-roch-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (30)–(31) · Phrase-Internal Focus (Head vs. De",
+          "category": "phrases"
+        },
+        {
+          "english": "They liked this RHINOCEROS.",
+          "translation": "N-i-huuburia e-no b-a-tanch-er-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (32) A1 · Head Noun Contrastive Focus · Gloss:",
+          "category": "phrases"
+        },
+        {
+          "english": "He ate Gati's CHAPATI.",
+          "translation": "N-iri-chabati re gati a-a-rey-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (35) A1 · Possessed DP Focus · Gloss: foc-5-ch",
+          "category": "phrases"
+        },
+        {
+          "english": "He ate GATI'S ugali.",
+          "translation": "Ubu-kima n-obo gati a-a-rey-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (38) A2 · Phrase-Internal Focus on Associative",
+          "category": "phrases"
+        },
+        {
+          "english": "Yes, they DID eat fruits.",
+          "translation": "E, n-oko-ria ama-ako ba-a-rey-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (43) A · Verum Focus (Infinitive Fronting + Pr",
+          "category": "phrases"
+        },
+        {
+          "english": "3pl.sa-eat.prf-fv 3-bread 'They just ATE BREAD.' /",
+          "translation": "Ba-rey-e omo-gate. / M-ba-rey-e omo-gate",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (44)–(45) · Immediate Past vs. Verum Focus · 3",
+          "category": "phrases"
+        },
+        {
+          "english": "The teacher who MARCHED.",
+          "translation": "Umw-arimu ora (n-)a-a-giy-er-e",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (46) A · Absence of /ne-/ in Relative Clauses ",
+          "category": "phrases"
+        },
+        {
+          "english": "foc-who sa-kill-prf-fv",
+          "translation": "N-eng'we a-it-ir-e (n-)ke? / M-boke a-it-ir-e igi-siisi",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (47)–(48) · Multiple Wh-Question & Answer · fo",
+          "category": "phrases"
+        },
+        {
+          "english": "The men did not SEE THE COW.",
+          "translation": "Aba-saacha te-ba-a-mah-er-e eng'-ombe",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (50) · Negative Focus Marker /te-/ · Gloss: 2-",
+          "category": "phrases"
+        },
+        {
+          "english": "It was not THE MEN who saw the cow.",
+          "translation": "A:, (t-)aba-saacha (m-)ba-a-mah-er-e eng'-ombe",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (51) A · Fronted Negative Focus /te-/ · Gloss:",
+          "category": "phrases"
+        },
+        {
+          "english": "They did not only MARCH.",
+          "translation": "Te-ba-a-giy-ir-e bene",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (52) · /te-/ + Focus Operator bene · Gloss: ne",
+          "category": "phrases"
+        },
+        {
+          "english": "They will not EAT THE CAKE.",
+          "translation": "M-ba-taa-r-e ege-eki",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (53) A · Co-occurrence of /ne-/ with Negative ",
+          "category": "phrases"
+        },
+        {
+          "english": "1.Gati n-1-doctor 'Gati is a doctor.' / 1.Gati t-1-doctor",
+          "translation": "Gati n-omo-reri. / Gati t-omo-reri",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, fn. 6 (i)–(ii) · Affirmative & Negative Copula · h",
+          "category": "phrases"
+        },
+        {
+          "english": "foc-what 1.Gati 3sg.sa-pst-do.prf-fv 'What did Gati do?' /",
+          "translation": "N-ke gati a-a-korr-e. / N-a-a-nyoy-e i-chaahe",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (13)–(14) · VP Focus Q-A Pair · https://langsc",
+          "category": "phrases"
+        },
+        {
+          "english": "foc-3pl.sa-pst-sell.prf-fv 9-cat 'They sold the cat.' / no",
+          "translation": "M-ba-a-gurr-i i-nyamu. / Aʔa, m-ba-a-gi-sirr-i",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (17)–(18) · Corrective VP Focus · https://lang",
+          "category": "phrases"
+        },
+        {
+          "english": "Chief",
+          "translation": "Ωmω·kama ; ava·",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 74 · ",
+          "category": "phrases"
+        },
+        {
+          "english": "Fire",
+          "translation": "Ωmω·rérω or Ωmó·rerω ; eme·",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 76 · ",
+          "category": "phrases"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "·mω, ·mwe / ·viri / ·tatu / ·nne / ·tanω",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 81 · ",
+          "category": "phrases"
+        },
+        {
+          "english": "To die / know / love, want",
+          "translation": "·gu·kwa / ·manya / ·hanca·na",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7a. Ki-kωria (Kuria / Ki-suna / Ki-tende)) · Johnston (1919), Vol. I, p. 84 · ",
           "category": "phrases"
         }
       ]
@@ -1974,6 +2176,78 @@
           "translation": "guɾú-ɣə / guɾú-ɣii",
           "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: guɾú-ɣə / guɾú-ɣii (M) vs. qahwə́-đə / qáhwə-đii (F) · LangSci #427,",
           "category": "home"
+        },
+        {
+          "english": "'circle' (M)",
+          "translation": "wəreék",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: wəreék (M) vs. daróor (F) · LangSci #427, Ch. 13, Table 1c, i · C-fi",
+          "category": "adjectives"
+        },
+        {
+          "english": "'the money'",
+          "translation": "bɛɛsɨ́-đə",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: fərə́s-kə (M) vs. bɪʃɪŋ-tə́ (F); rootɨ́-ɣə (M) vs. bɛɛsɨ́-đə (F) · L",
+          "category": "shopping"
+        },
+        {
+          "english": "'calf' (F)",
+          "translation": "wéel",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: gaál (M) vs. wéel (F) · LangSci #427, Ch. 13, Table 1d, j · Monosyll",
+          "category": "phrases"
+        },
+        {
+          "english": "'store' (M)",
+          "translation": "tuqćǽŋ",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: tuqćǽŋ (M) vs. búúr (F) · LangSci #427, Ch. 13, Table 1e, k · C-fina",
+          "category": "phrases"
+        },
+        {
+          "english": "'heel' (F)",
+          "translation": "búúr",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · Pair: tuqćǽŋ (M) vs. búúr (F) · LangSci #427, Ch. 13, Table 1e, k · C-fina",
+          "category": "phrases"
+        },
+        {
+          "english": "'bull', 'river', 'time', 'meal'",
+          "translation": "dʊβʊ́ (M), wəβɛ́ (M), waxtə́ (M), hoŋgʊɾɨ́ (M)",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 2a–d · V-final Masculine Nouns in Isolation",
+          "category": "phrases"
+        },
+        {
+          "english": "'work', 'thigh', 'knife', 'mother'",
+          "translation": "ʃaqə́ (F), bođə́ (F), toorə́ (F), aayó (F)",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 2e–h · V-final Feminine Nouns in Isolation",
+          "category": "phrases"
+        },
+        {
+          "english": "'horse' → 'horses' → 'the (rem) horses'",
+          "translation": "fəɾə́s → fəɾəs-yaál → fəɾəs-yaál-kii (M)",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 7a–c · Culminative H Override by -yaál Plural ",
+          "category": "phrases"
+        },
+        {
+          "english": "'arm' → 'arms' → 'the (rem) arms'",
+          "translation": "gə́laŋ → gəlaɲ-yaál → gəlaɲ-yaál-kii (F→M)",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 7d–f · Feminine Stem + Masculine -yaál Plural ",
+          "category": "phrases"
+        },
+        {
+          "english": "'fight' → 'killer' → 'fighting'",
+          "translation": "degaál → degaal-ə́ → degaal-ə-mó",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, §3.2 (p. 278) · Derivational Suffix H Override",
+          "category": "phrases"
+        },
+        {
+          "english": "'the (rem) money'",
+          "translation": "bɛɛsɨ́-đii; tɛ́ɛ́sɨ-đii; tóorə-đii (toórə-đii); gaál-kii",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, §3.2 (pp. 279–280) · Rising Contour Avoidance vs. To",
+          "category": "phrases"
+        },
+        {
+          "english": "'calf', 'salt', 'thigh', 'leg', 'rain'",
+          "translation": "wéel, usbə́, bodə́, lúk, roóp",
+          "context": "LangSci #427 (2024) Kenyan Maay (CC-BY-4.0) · LangSci #427, Ch. 13, Table 9a–e · Cross-Dialect Comparison (KM Forms)",
+          "category": "phrases"
         }
       ]
     },
@@ -1989,7 +2263,7 @@
         "Kibos",
         "Bombo"
       ],
-      "totalEntries": 259,
+      "totalEntries": 268,
       "sampleEntries": [
         {
           "english": "'seven' vs. 'morning'",
@@ -2098,6 +2372,631 @@
           "translation": "Sabåtāshar",
           "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: سبعة عش",
           "category": "numbers"
+        },
+        {
+          "english": "18",
+          "translation": "Tamāntāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ثمانية ",
+          "category": "numbers"
+        },
+        {
+          "english": "19",
+          "translation": "Tisåtāshar",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: تسعة عش",
+          "category": "numbers"
+        },
+        {
+          "english": "20",
+          "translation": "cAshrīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: عشرين",
+          "category": "numbers"
+        },
+        {
+          "english": "30",
+          "translation": "Talātīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ثلثين",
+          "category": "numbers"
+        },
+        {
+          "english": "40",
+          "translation": "Arbåīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: اربعين",
+          "category": "numbers"
+        },
+        {
+          "english": "50",
+          "translation": "Khamsīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: خمسين",
+          "category": "numbers"
+        },
+        {
+          "english": "60",
+          "translation": "Sittīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ستين",
+          "category": "numbers"
+        },
+        {
+          "english": "70",
+          "translation": "Sabåīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: سبعين",
+          "category": "numbers"
+        },
+        {
+          "english": "80",
+          "translation": "Tamānīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: ثمانين",
+          "category": "numbers"
+        },
+        {
+          "english": "90",
+          "translation": "Tisīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: تسعين",
+          "category": "numbers"
+        },
+        {
+          "english": "100",
+          "translation": "Mīʿa",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: مئة",
+          "category": "numbers"
+        },
+        {
+          "english": "200",
+          "translation": "Mīʿatein",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: مئتين",
+          "category": "numbers"
+        },
+        {
+          "english": "1,000",
+          "translation": "Alf",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: الف",
+          "category": "numbers"
+        },
+        {
+          "english": "2,000",
+          "translation": "Alfein",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: الفين",
+          "category": "numbers"
+        },
+        {
+          "english": "10,000",
+          "translation": "cAshrtālāf",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: عشرة ال",
+          "category": "numbers"
+        },
+        {
+          "english": "100,000",
+          "translation": "Mītalf",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 414, Appendix E · Cardinal number · Arabic: مئة الف",
+          "category": "numbers"
+        },
+        {
+          "english": "1st",
+          "translation": "El awwal",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: الاوّل",
+          "category": "numbers"
+        },
+        {
+          "english": "2nd",
+          "translation": "El tāni",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: الثاني",
+          "category": "numbers"
+        },
+        {
+          "english": "3rd",
+          "translation": "El tālit",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: الثالث",
+          "category": "numbers"
+        },
+        {
+          "english": "4th",
+          "translation": "El rābī",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: الرابع",
+          "category": "numbers"
+        },
+        {
+          "english": "5th",
+          "translation": "El khāmis",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: الخامس",
+          "category": "numbers"
+        },
+        {
+          "english": "6th",
+          "translation": "El sādis",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: السادس",
+          "category": "numbers"
+        },
+        {
+          "english": "7th",
+          "translation": "El sābī",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: السابع",
+          "category": "numbers"
+        },
+        {
+          "english": "8th",
+          "translation": "El tāmin",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: الثامن",
+          "category": "numbers"
+        },
+        {
+          "english": "9th",
+          "translation": "El tāsī",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: التاسع",
+          "category": "numbers"
+        },
+        {
+          "english": "10th",
+          "translation": "El åshir",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: العاشر",
+          "category": "numbers"
+        },
+        {
+          "english": "20th",
+          "translation": "El åshrīn",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 415, Appendix E · Ordinal number · Arabic: العشرين",
+          "category": "numbers"
+        },
+        {
+          "english": "2SG independent / 2SG adnominal possessive",
+          "translation": "íta / t-áki",
+          "context": "APiCS Online #63 Kinubi (CC-BY-4.0) · APiCS Survey 63, §5, Table 3 · Personal & Possessive Pronouns",
+          "category": "family"
+        },
+        {
+          "english": "3PL independent / 3PL adnominal possessive",
+          "translation": "úmun / t-ómun",
+          "context": "APiCS Online #63 Kinubi (CC-BY-4.0) · APiCS Survey 63, §5, Table 3 · Personal & Possessive Pronouns",
+          "category": "family"
+        },
+        {
+          "english": "Woman, Pretty (—, Pretty)",
+          "translation": "Burreiba",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 401 · Sub-entry under Woman, A · Arabic: بريبة",
+          "category": "family"
+        },
+        {
+          "english": "Water",
+          "translation": "Saga",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 391 · Verb (v.) · Arabic: سقى · POS: v.",
+          "category": "food"
+        },
+        {
+          "english": "Walk.",
+          "translation": "Masha",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 388 · Verb · Arabic: مشى",
+          "category": "travel"
+        },
+        {
+          "english": "Sunday.",
+          "translation": "El ahad",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 410, Appendix B · Day of week · Arabic: الاحد",
+          "category": "time"
+        },
+        {
+          "english": "Monday.",
+          "translation": "El etnein",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 410, Appendix B · Day of week · Arabic: الاثنين",
+          "category": "time"
+        },
+        {
+          "english": "Tuesday.",
+          "translation": "El talāta",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 410, Appendix B · Day of week · Arabic: الثلاثاء",
+          "category": "time"
+        },
+        {
+          "english": "Wednesday.",
+          "translation": "El arbāha",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 410, Appendix B · Day of week · Arabic: الاربعاء",
+          "category": "time"
+        },
+        {
+          "english": "Thursday.",
+          "translation": "El khamīs",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 410, Appendix B · Day of week · Arabic: الخميس",
+          "category": "time"
+        },
+        {
+          "english": "Friday.",
+          "translation": "El gumā",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 410, Appendix B · Day of week · Arabic: الجمعة",
+          "category": "time"
+        },
+        {
+          "english": "Saturday.",
+          "translation": "El sebit",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 410, Appendix B · Day of week · Arabic: السبت",
+          "category": "time"
+        },
+        {
+          "english": "January.",
+          "translation": "Yanāir",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 411, Appendix C · Gregorian month · Arabic: يناير",
+          "category": "time"
+        },
+        {
+          "english": "February.",
+          "translation": "Febrāir",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 411, Appendix C · Gregorian month · Arabic: فبراير",
+          "category": "time"
+        },
+        {
+          "english": "March.",
+          "translation": "Mārs",
+          "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 411, Appendix C · Gregorian month · Arabic: مارس",
+          "category": "time"
+        }
+      ]
+    },
+    {
+      "id": "yaaku",
+      "name": "Yaaku (Mogogodo)",
+      "nativeName": "Yaakunte / Mogogodo",
+      "isoCode": "muu",
+      "family": "Afro-Asiatic (East Cushitic)",
+      "counties": [
+        "Laikipia County (Mukogodo Forest)"
+      ],
+      "totalEntries": 300,
+      "sampleEntries": [
+        {
+          "english": "Salutation",
+          "translation": "Keshoboshon",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · (Sobat of Masai) · https://archive.org/details/ethno",
+          "category": "greetings"
+        },
+        {
+          "english": "Salutation",
+          "translation": "Aishei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "greetings"
+        },
+        {
+          "english": "One",
+          "translation": "Wēhet",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.",
+          "category": "numbers"
+        },
+        {
+          "english": "Two",
+          "translation": "Chei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.",
+          "category": "numbers"
+        },
+        {
+          "english": "Three",
+          "translation": "Hāāt",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.",
+          "category": "numbers"
+        },
+        {
+          "english": "Four",
+          "translation": "Shuen",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.",
+          "category": "numbers"
+        },
+        {
+          "english": "Five",
+          "translation": "Hobi",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.",
+          "category": "numbers"
+        },
+        {
+          "english": "Six to Nine",
+          "translation": "Not obtainable",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral note printed verbatim by Hobley · https://ar",
+          "category": "numbers"
+        },
+        {
+          "english": "Ten",
+          "translation": "Kapūn or Apūn",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.",
+          "category": "numbers"
+        },
+        {
+          "english": "Hundred",
+          "translation": "Teta",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Numeral (under heading Numerals.) · https://archive.",
+          "category": "numbers"
+        },
+        {
+          "english": "One bird",
+          "translation": "Legei wehet",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Two birds",
+          "translation": "Legei kechei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "One elephant",
+          "translation": "Sogomei kibwehet",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Two elephants",
+          "translation": "Sogomedi kechei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "One knife",
+          "translation": "Sheou wehetu",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Two knives",
+          "translation": "Sheou kechei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Three knives",
+          "translation": "Sheou khahaat",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "One house",
+          "translation": "Hai wehet",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Two houses",
+          "translation": "Hai kechei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "One hand",
+          "translation": "Tegei wehetu",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "One lion",
+          "translation": "Sungai kiwehet",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Three lions",
+          "translation": "Sungai khahaat",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "One axe",
+          "translation": "Egoi kiwehet",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Two axes",
+          "translation": "Egoi kechei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "One spear",
+          "translation": "Tor kiwehet",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Two spears",
+          "translation": "Tor kechei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Three spears",
+          "translation": "Tor khahaat",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Two men",
+          "translation": "Ke chei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "One woman",
+          "translation": "Damatut wehetu",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals · https://archive.or",
+          "category": "numbers"
+        },
+        {
+          "english": "Two women",
+          "translation": "Damatuti chei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals (plural Damatuti) · ",
+          "category": "numbers"
+        },
+        {
+          "english": "Three women",
+          "translation": "Damatuti khahaat",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 153 · Agreement of Nouns and Numerals (plural Damatuti) · ",
+          "category": "numbers"
+        },
+        {
+          "english": "Conversation between two people",
+          "translation": "Maokhoten okōo",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 155 · Phrase · https://archive.org/details/ethnologyofakam",
+          "category": "numbers"
+        },
+        {
+          "english": "Brother",
+          "translation": "Tei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Child, female",
+          "translation": "Kerai",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Child, male",
+          "translation": "Utei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Cooking pot",
+          "translation": "Duru",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 148 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Father, own",
+          "translation": "Pashi",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Father, else's",
+          "translation": "Payisi",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · (N. = Apoiyo) · https://archive.org/details/ethnolog",
+          "category": "family"
+        },
+        {
+          "english": "Friend",
+          "translation": "Darit",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Girl, young",
+          "translation": "Eta",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Man",
+          "translation": "Iei or Sei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (Ke-Sei = that is a man), N. = chii · https://archiv",
+          "category": "family"
+        },
+        {
+          "english": "Mother, own",
+          "translation": "Iyo",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · (N. = eiyo) · https://archive.org/details/ethnologyo",
+          "category": "family"
+        },
+        {
+          "english": "Mother, else's",
+          "translation": "Itigarai",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Sister",
+          "translation": "Tō",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "family"
+        },
+        {
+          "english": "Woman",
+          "translation": "Damatut",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb0",
+          "category": "family"
+        },
+        {
+          "english": "Woman, old",
+          "translation": "Tasat",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb0",
+          "category": "family"
+        },
+        {
+          "english": "Woman, young",
+          "translation": "Siangiki (M.)",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun; comparative note (M.) = Maasai · https://archi",
+          "category": "family"
+        },
+        {
+          "english": "Food",
+          "translation": "Egetu",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "food"
+        },
+        {
+          "english": "Honey",
+          "translation": "Seka",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 149 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "food"
+        },
+        {
+          "english": "Meat",
+          "translation": "Iyou",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "food"
+        },
+        {
+          "english": "Mtama (millet)",
+          "translation": "Not known",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · Printed as Not known by Hobley · https://archive.org",
+          "category": "food"
+        },
+        {
+          "english": "Mahindi (maize)",
+          "translation": "Not known",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · Printed as Not known by Hobley · https://archive.org",
+          "category": "food"
+        },
+        {
+          "english": "Milk",
+          "translation": "Atta",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 150 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "food"
+        },
+        {
+          "english": "Salt",
+          "translation": "Ngabulei",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 151 · https://archive.org/details/ethnologyofakamb00hobluo",
+          "category": "food"
+        },
+        {
+          "english": "Water",
+          "translation": "Antu",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 152 · Noun · https://archive.org/details/ethnologyofakamb0",
+          "category": "food"
+        },
+        {
+          "english": "To milk",
+          "translation": "Ndiksa",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb · https://archive.org/details/ethnologyofakamb0",
+          "category": "food"
+        },
+        {
+          "english": "I eat",
+          "translation": "Ndeta",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/deta",
+          "category": "food"
+        },
+        {
+          "english": "We eat",
+          "translation": "Egitai",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/deta",
+          "category": "food"
+        },
+        {
+          "english": "They eat",
+          "translation": "Egeto (gihechen)",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Verb conjugation / Phrase · https://archive.org/deta",
+          "category": "food"
+        },
+        {
+          "english": "I go to water",
+          "translation": "Antu Khalkhani",
+          "context": "Hobley (1910) Yaaku / Mogogodo Vocabulary · Hobley (1910), p. 154 · Phrase · https://archive.org/details/ethnologyofakam",
+          "category": "food"
         }
       ]
     }

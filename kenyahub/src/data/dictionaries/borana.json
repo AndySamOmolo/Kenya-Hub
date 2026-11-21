@@ -14,7 +14,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996). Expanded and cross-verified with Commercially Permissive Datasets (Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0)).",
   "categories": [
     {
@@ -2837,6 +2837,42 @@
           "translation": "Dibba",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "One, num.",
+          "translation": "toko",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 31 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Three, num.",
+          "translation": "sadi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 53 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twenty, num.",
+          "translation": "dibba lammani",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Two, num.",
+          "translation": "lamma",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "four together",
+          "translation": "arfanu",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 11 · Numerals (num. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "a piece of salt, two hands long, one hand broad and two",
+          "translation": "amole",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 13 · Cultural Terms (n. s. ox.; rock-salt currency) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt · a piece of salt, two hands long, one hand broad and two fingers high, used as small coin"
         }
       ]
     },
@@ -4920,6 +4956,72 @@
           "translation": "Ilma",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Brother, s.",
+          "translation": "obolesa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 6 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Child, s.",
+          "translation": "ilma",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 7 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Father, s.",
+          "translation": "aba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 14 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Man, s.",
+          "translation": "nama, pl. ennama",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 26 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mother, s.",
+          "translation": "hada",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 29 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Woman, s.",
+          "translation": "niti, pl. nardeni",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 61 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "grand-father",
+          "translation": "akakagu",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 2 · Kinship (n. s. px.; paternal and maternal) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "son; child in gener.; the young of beasts",
+          "translation": "ilma",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 20 · Kinship (i. s. px.; pl. ilman) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "girl, maid; daughter",
+          "translation": "indala",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 21 · Kinship (i. s. px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "sister",
+          "translation": "oboletti",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 23 · Kinship (n. s. px.; feminine of oboleza) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "lit. father or lord",
+          "translation": "aba funo",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, pp. 6–7 · Cultural Terms (magistrate subordinate to aba ganda) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt · lit. father or lord (master) of the cord, i.e. executioner of the law"
         }
       ]
     },
@@ -8125,6 +8227,96 @@
           "translation": "Mata",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Back, s.",
+          "translation": "dira",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 3 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Beard, s.",
+          "translation": "arrieda",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 4 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Blood, s.",
+          "translation": "diga",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 5 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Ear, s.",
+          "translation": "gurra",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 11 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Earth, s.",
+          "translation": "laffa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 11 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Eye, s.",
+          "translation": "ila",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 13 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Head, s.",
+          "translation": "mata",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Heart, s.",
+          "translation": "lubbu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Knee, s.",
+          "translation": "tjilba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 23 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mouth, s.",
+          "translation": "afa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 29 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Spear, s.",
+          "translation": "worana",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 47 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tongue, s.",
+          "translation": "arraba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tooth, s.",
+          "translation": "ilka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "chin; beard, barbe",
+          "translation": "areta",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 10 · Body Parts (i. s. px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "to tear, tear in pieces; to cut off, carve; to divide, separate",
+          "translation": "kuta",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 37 · Verbs (1st conj., px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
         }
       ]
     },
@@ -11457,6 +11649,180 @@
           "translation": "Lurruttai",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Bee, s.",
+          "translation": "kennissa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 4 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Bird, s.",
+          "translation": "simbirre",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 5 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Buffalo, s.",
+          "translation": "gaddersa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Camel, s.",
+          "translation": "gala",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Cat, s.",
+          "translation": "makallaso",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 7 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Dog, s.",
+          "translation": "serrieni",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 10 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Elephant, s.",
+          "translation": "arba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 12 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fish, s.",
+          "translation": "kortumi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 14 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Goat, s.",
+          "translation": "ree",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 17 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Leopard, s.",
+          "translation": "kerensa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 24 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Lion, s.",
+          "translation": "neka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 25 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "consanguineous, kinsman, kinswoman; consanguinity, kindred",
+          "translation": "akaku",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 2 · Kinship (n. s. ox.; 2. nom. collect.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "father; lord, proprietor",
+          "translation": "aba",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 6 · Kinship / Cultural (n. s. ox.; dim. abayo, dear father) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "thumb; the great toe",
+          "translation": "agudu",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 3 · Body Parts (n. s. ox.; Am. habudu) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "mouth; language, tongue; the opening, aperture of vessels",
+          "translation": "afan (afani)",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 6 · Body Parts (inv. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "fist; hand-full",
+          "translation": "abode",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 7 · Body Parts (n. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "tooth; bill, beak of birds",
+          "translation": "ilkan",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 20 · Body Parts (inv. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "tear",
+          "translation": "imimani",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 20 · Body Parts (inv. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "rime, hoarfrost; moss which adheres to the tree (ari muka)",
+          "translation": "ari",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 10 · Nature (n. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "milk",
+          "translation": "anan (anani)",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 13 · Nature / Food (inv. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "hay",
+          "translation": "oira",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 21 · Nature (n. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "hill; stair",
+          "translation": "olba",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 25 · Nature (n. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "partridge",
+          "translation": "aburdaha",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 7 · Animals (i. s. px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "an animal which makes his den in the earth like a fox, and",
+          "translation": "awaldigeza",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 8 · Animals (i. s. px.; lit. gravespoiler) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt · an animal which makes his den in the earth like a fox, and is a spoiler of the graves like the hyaena"
+        },
+        {
+          "english": "whoop (bird)",
+          "translation": "karofe",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 30 · Animals (n. s. ox.; German Wiedehopf, hoopoe) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "the male of beasts, also of birds; bull, buffalo; cock",
+          "translation": "korma",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 36 · Animals (i. s. px.; pl. koromi) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "the name by which the Gallas call themselves in comparison",
+          "translation": "oromo",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 24 · Cultural Terms (n. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt · the name by which the Gallas call themselves in comparison with other nations"
+        },
+        {
+          "english": "staff wreathed with branches of \"meefa\" used in taking an oath",
+          "translation": "kalatcha",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 31 · Cultural Terms (n. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "a piece of flesh of the cow which is slaughtered during the",
+          "translation": "kuba",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 38 · Cultural Terms (ni. s. px.; symbolic rite) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt · a piece of flesh of the cow which is slaughtered during the Gerara"
         }
       ]
     },
@@ -15204,6 +15570,66 @@
           "translation": "Maka",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Cloud, s.",
+          "translation": "dumansa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 7 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Country, s.",
+          "translation": "laffa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 8 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fire, s.",
+          "translation": "ibita",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 14 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mountain, s.",
+          "translation": "dakkatja",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 29 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Rain, s.",
+          "translation": "bokoia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 38 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "River, s.",
+          "translation": "gelana",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 40 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Star, s.",
+          "translation": "urtji",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 48 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Stone, s.",
+          "translation": "dakatja",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 49 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tree, s.",
+          "translation": "mukka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 54 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "crash; thunder",
+          "translation": "indiditcha",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 21 · Nature (i. s. px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
         }
       ]
     },
@@ -17623,6 +18049,24 @@
           "translation": "Goo,dah",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Egg, s.",
+          "translation": "hokoka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 11 · Food / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Milk, s.",
+          "translation": "anani",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 28 · Food · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Water, s.",
+          "translation": "bisani",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 58 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
         }
       ]
     },
@@ -30402,6 +30846,30 @@
           "translation": "Manna",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 93"
+        },
+        {
+          "english": "Arrow, s.",
+          "translation": "bunne",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Axe, s.",
+          "translation": "mutta",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Door, s.",
+          "translation": "belbela",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 11 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "the governor of a town or village",
+          "translation": "aba ganda",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 6 · Cultural Terms (always a zoreza, prince) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
         }
       ]
     },
@@ -38517,6 +38985,48 @@
           "translation": "Dahrah",
           "pronunciation": "",
           "context": "Smee (1844, p. 55) Galla (Oromo) · Smee (1844), p. 55"
+        },
+        {
+          "english": "Arrive",
+          "translation": "kanne",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 2 · Core Verb · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt · POS: v. n."
+        },
+        {
+          "english": "to blow; to blow away; to blow a musical instrument",
+          "translation": "afufa",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 6 · Verbs (1st conj., px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "to see; to look out, to find",
+          "translation": "arga",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 11 · Verbs (1st conj., px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "to enter; to enter by force, to penetrate, pierce",
+          "translation": "azena",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 14 · Verbs (1st conj., px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "to see, regard, behold, look on; to taste",
+          "translation": "ilala",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 19 · Verbs (1st conj., px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "to give; to give as a present, bestow upon",
+          "translation": "kenna",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 34 · Verbs (1st conj., px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "to laugh",
+          "translation": "kolfa",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 36 · Verbs (1st conj.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
         }
       ]
     },
@@ -42561,6 +43071,24 @@
           "translation": "Gari, guda",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "God, s.",
+          "translation": "Waka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 17 · Religion · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Road, s.",
+          "translation": "dirbu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 40 · Travel / Spatial · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "to go, walk; to go away",
+          "translation": "adema",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 5 · Verbs (1st conj., px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
         }
       ]
     },
@@ -43367,6 +43895,12 @@
           "translation": "Anna Bee,tee",
           "pronunciation": "",
           "context": "Smee (1844) East Coast Vocab (Oromo/Galla, 1844 orthography) · Smee (1844), p. 53"
+        },
+        {
+          "english": "to measure; to take a measure; to compare, parallel",
+          "translation": "akeka",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 3 · Verbs (1st conj., px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
         }
       ]
     },
@@ -46084,6 +46618,30 @@
           "translation": "Katisa",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Day, s.",
+          "translation": "guiya",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 9 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Month, s. / Moon, s.",
+          "translation": "adesa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 29 · Time / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Night, s.",
+          "translation": "halkani",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 30 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "a flower on the blooming of which the Maezala or the",
+          "translation": "kelo",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 34 · Cultural Terms (n. s. ox.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt · a flower on the blooming of which the Maezala or the springfeast is celebrated: the new-year of the Gallas in the middle of September"
         }
       ]
     },
@@ -124499,6 +125057,36 @@
           "translation": "i/languages M to Z",
           "pronunciation": "ɪ",
           "context": "Kaikki.org Oromo Wiktionary Extract (CC-BY-SA-4.0, https://kaikki.org/dictionary/Oromo/index.html)"
+        },
+        {
+          "english": "Name, s.",
+          "translation": "mekka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 30 · Social / Lexical · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twelve, num.",
+          "translation": "kuda lamma",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Word, s.",
+          "translation": "dubbi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kigalla (Oromo/Borana)) · Krapf (1850), p. 62 · Language · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "solemn, holy; soul (?); guardian-angel",
+          "translation": "ayana",
+          "pronunciation": "",
+          "context": "Tutschek (1844) Dictionary of the Galla Language (Oromo (Galla — Borana/Liban)) · Tutschek (1844), Part I, p. 8 · Cultural Terms (adj. / i. px.) · https://archive.org/stream/dictionarygalla00tutsgoog/dictionarygalla00tutsgoog_djvu.txt"
+        },
+        {
+          "english": "branch of the Bworana people who drove out and dispersed",
+          "translation": "Sitaa or El Duju",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Bworana (in Laikipiak section)) · Hobley (1910), p. 160 · Ethnonym — branch of the Bworana people who drove out and dispersed the Lanat · https://archive.org/details/ethnologyofakamb00hobluoft/page/160/mode/1up · Gloss: Ethnonym | branch of the Bworana people who drove out and dispersed the Lanat"
         }
       ]
     },
@@ -148812,6 +149400,12 @@
           "translation": "Iome",
           "pronunciation": "",
           "context": "Rigby (1844, pp. 93–94) Galla (Oromo) · Rigby (1844), p. 94"
+        },
+        {
+          "english": "Southern Galla, Northern parent branch, Juba–Tana division",
+          "translation": "Barareta, Borana, Kofira, Boma Upande",
+          "pronunciation": "",
+          "context": "Phillipson (1916) Notes on the Galla (Tana River Orma) · Phillipson (1916), pp. 177–178 · Ethnonyms / Toponyms · https://zenodo.org/records/2463127/files/article.pdf · Southern Galla, Northern parent branch, Juba–Tana division, Mambrui settlement"
         }
       ]
     }
@@ -148819,5 +149413,5 @@
   "source": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "gax",
   "glottocode": "bora1271",
-  "totalEntries": 27659
+  "totalEntries": 27758
 }

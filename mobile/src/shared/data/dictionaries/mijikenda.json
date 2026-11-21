@@ -12,7 +12,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Mijikenda (Kigiryama, Chidigo, Chiduruma, Kirabai) vocabulary compiled from Rev. Dr. J. L. Krapf (1850, 1882), Krapf & Rebmann (1887), Rev. W. E. Taylor (1891), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #16), BFBS (1921), and Steve Nicolle (2016). Expanded and cross-verified with Commercially Permissive Datasets (Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0).",
   "categories": [
     {
@@ -196,6 +196,12 @@
           "translation": "Yoyo",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 390 · Greetings / Society · POS: adv. | See Dzangira. Welcome. Yoyo, mugeni! Welcome, stranger! Yoyo ni neno ra ku dzangira. Yoyo is a word of welcoming a friend or a stranger, etc."
+        },
+        {
+          "english": "See Dzangira. Welcome. Yoyo, mugeni! Welcome, stranger!",
+          "translation": "Yoyo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 390 · Greetings / Society · https://archive.org/details/anikaenglishdic00rebmgoog/page/n402/mode/1up · POS: adv. | See Dzangira. Welcome. Yoyo, mugeni! Welcome, stranger! Yoyo ni neno ra ku dzangira. Yoyo is a word of welcoming a friend or a stranger, etc."
         }
       ]
     },
@@ -2155,6 +2161,78 @@
           "translation": "Tandahu",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 357 · Numerals · POS: adj. | , six. Niumba tandahu, Six houses. Reale tandahu, Six dollars. Mbuzi tandahu, Six goats. Gnombe tandahu, Six cows."
+        },
+        {
+          "english": "(ra, pl. Mazu), the banana, the bunch of one tree. Mazu",
+          "translation": "Isu, Izu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 134 · Food / Agriculture · https://archive.org/details/anikaenglishdic00rebmgoog/page/n146/mode/1up · POS: n. | (ra, pl. Mazu), the banana, the bunch of one tree. Mazu, bunches of a plurality of trees."
+        },
+        {
+          "english": ", teens, tens. Mirongo miere, Twenty. Mutu hiye kana mirongo.",
+          "translation": "Mirongo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 257 · Numerals · https://archive.org/details/anikaenglishdic00rebmgoog/page/n269/mode/1up · POS: adj."
+        },
+        {
+          "english": "three",
+          "translation": "t'ahu / hahu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. xii · Numerals (t'ahu N class; hahu in counting) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "four",
+          "translation": "inne / -ne",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 43 · Numerals (inne in counting; nyumba nne, four houses; at'u ane, four people) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "five",
+          "translation": "tsano / ts'ano",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xii, 41 · Numerals (tsano in counting; ts'ano N class; vitsano ki- class) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "eight",
+          "translation": "hnane / -nane",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 29, 36 · Numerals (hnane in counting; at'u anane, eight people; nyumba nane, eight houses) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "eighteen",
+          "translation": "kumi na nane",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 36 · Numerals (in counting) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "a hundred",
+          "translation": "gana",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 1 · Numerals (in here gana, about a hundred) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "One, num.",
+          "translation": "mmenga",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 31 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Three, num.",
+          "translation": "hahu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 53 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twenty, num.",
+          "translation": "mirongo miiri",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Two, num.",
+          "translation": "mbiri",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
         }
       ]
     },
@@ -4174,6 +4252,114 @@
           "translation": "Wivi",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 388 · Kinship · POS: n. | (wa, no pl.), a sister-in-law, but only the sister of a husband, the term being used only between the females of each family."
+        },
+        {
+          "english": "(wa, no pl.), a sister-in-law, but only the sister of a",
+          "translation": "Wivi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 388 · Kinship · https://archive.org/details/anikaenglishdic00rebmgoog/page/n400/mode/1up · POS: n. | (wa, no pl.), a sister-in-law, but only the sister of a husband, the term being used only between the females of each family."
+        },
+        {
+          "english": "mother, my mother",
+          "translation": "hmama",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. x, 21 · Kinship (initial nasal breathing hm-) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "brother / cousin (general relationship)",
+          "translation": "ndugu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 21, 29 · Kinship (masc. and fem.) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "elder brother",
+          "translation": "mukulu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 21, 36 · Kinship (mukulu wangu, my elder brother) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "younger brother",
+          "translation": "muvwaha",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 21 · Kinship · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "father's elder brother / great-grandfather",
+          "translation": "ba-m'zhere / bam'zhere",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xiv, 40, 48 · Kinship (ba-m'hoho, father's younger brother, p. 40) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "maternal aunt (elder sister of mother)",
+          "translation": "hmam'zhere",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 10 · Kinship (hmam'boho, younger sister of mother) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "paternal aunt (father's sister)",
+          "translation": "tsangazimi",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 10, 40 · Kinship · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "cousin (a child of ours)",
+          "translation": "mwenehu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 21, 24, 29 · Kinship (mwenenu, your cousin) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "curved piece of wood set over a man's tomb / gravestone of wood",
+          "translation": "kigango",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 29, 47 · Cultural / Social · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Brother, s.",
+          "translation": "ndugu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 6 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Child, s.",
+          "translation": "muhoho",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 7 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Father, s.",
+          "translation": "baba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 14 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Man, s.",
+          "translation": "mutu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 26 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mother, s.",
+          "translation": "mayo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 29 · Kinship · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Woman, s.",
+          "translation": "mutu muje",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 61 · People · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Child",
+          "translation": "Mu·hωhω ; a·hωhω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "The language of the Wadigo",
+          "translation": "Kidigo",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kidigo / Kiswahili) · Hollis (1900), JRAI Vol. 30, p. 280, fn. 5 · Glossonym · https://zenodo.org/records/1952797/files/article.pdf"
         }
       ]
     },
@@ -6715,6 +6901,216 @@
           "translation": "Wisira",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 388 · Body / Health · POS: n."
+        },
+        {
+          "english": "(ya, za), stalks of Guinea-corn, lodged on forked posts, to",
+          "translation": "Dzuri",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 69 · Agriculture / Food · https://archive.org/details/anikaenglishdic00rebmgoog/page/n81/mode/1up · POS: n. | (ya, za), stalks of Guinea-corn, lodged on forked posts, to preserve the heads during harvest."
+        },
+        {
+          "english": "(= Kij., Handaki), a pit, a dry ditch, a trench dug round",
+          "translation": "Gopue",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 110 · Household / Nature · https://archive.org/details/anikaenglishdic00rebmgoog/page/n122/mode/1up · POS: n. | (= Kij., Handaki), a pit, a dry ditch, a trench dug round the hut."
+        },
+        {
+          "english": "(ga, pl. of Dzidzo). See Dzorua; Kua; Haya; Midzidzo. The eyes.",
+          "translation": "Madzo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 233 · Body Parts · https://archive.org/details/anikaenglishdic00rebmgoog/page/n245/mode/1up · POS: n."
+        },
+        {
+          "english": "face / countenance",
+          "translation": "uso",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 29, 38 · Body Parts · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "cheek",
+          "translation": "tsavu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 24 · Body Parts (ra class; ukai, pl. k'ai, lower cheek) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "beard / chin",
+          "translation": "kirevu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 16, 25 · Body Parts · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "finger",
+          "translation": "chala",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 41 · Body Parts (pl. zhala and mala) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "finger-nail / claw",
+          "translation": "lukombe",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 25, 41 · Body Parts (pl. k'ombe) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "foot; leg",
+          "translation": "kigulu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 42 · Body Parts (pl. magulu) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "foot proper / footprint",
+          "translation": "lwayo",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 42 · Body Parts (pl. nyayo) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "ankle",
+          "translation": "nguyu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 7 · Body Parts (strictly, the prominences of the ankle) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "back",
+          "translation": "m'ongo",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 10 · Body Parts (m'ongo-m'ongo, back-bone) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "breast",
+          "translation": "hombo",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 20 · Body Parts (pl. mahombo) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "chest (external)",
+          "translation": "laga",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 24 · Body Parts (kati, internal chest) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "earth / country / ground",
+          "translation": "ts'i",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 29, 35 · Nature · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "sandy earth",
+          "translation": "mitsanga",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 35, 47 · Nature (mutsanga, grain of sand, p. 47) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to save / deliver",
+          "translation": "ku-okola",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, xxvi, 32 · Verb (M'okoli, Saviour, p. xxvi) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "armlet worn as a mark of status",
+          "translation": "luwoo",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 8, 44 · Cultural / Social (pl. woo or voo, assumed at the nyambura feast) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Back, s.",
+          "translation": "mongo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 3 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Beard, s.",
+          "translation": "kirefu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 4 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Blood, s.",
+          "translation": "milazo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 5 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Ear, s.",
+          "translation": "sikiro",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 11 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Earth, s.",
+          "translation": "zi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 11 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Eye, s.",
+          "translation": "zitso pl. matso",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 13 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Head, s.",
+          "translation": "kizoa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Heart, s.",
+          "translation": "moyo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 19 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Knee, s.",
+          "translation": "fuindi, pl. ma-",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 23 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mouth, s.",
+          "translation": "kanoa",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 29 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Spear, s.",
+          "translation": "fumo",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 47 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tongue, s.",
+          "translation": "urimi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tooth, s.",
+          "translation": "zino",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 54 · Body Parts · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Arm",
+          "translation": "M·kωnω, Mu·kωnω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Blood",
+          "translation": "Mi·latsω or Mu·ladzω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Head",
+          "translation": "Ki·tswa",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "an ivory ring which is worn round the right arm above the elbow",
+          "translation": "Ivor",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kisegeju (Wakilio)) · Hollis (1900), JRAI Vol. 30, pp. 279, 282, 283 · Royal nickname of Mwana Chambi Chandi Ivor · https://zenodo.org/records/1952797/files/article.pdf"
         }
       ]
     },
@@ -9331,6 +9727,162 @@
           "translation": "Wanda",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 387 · Minerals / Cosmetics · POS: n."
+        },
+        {
+          "english": "(ra, pl. Ma-), the turtledove. Yuna kilinga dzingoni, It",
+          "translation": "Jia",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 136 · Animals (Birds) · https://archive.org/details/anikaenglishdic00rebmgoog/page/n148/mode/1up · POS: n. | (ra, pl. Ma-), the turtledove. Yuna kilinga dzingoni, It has a ring on the neck."
+        },
+        {
+          "english": "(wa, pl. Mi-), the name of a shrub producing a kind of pea",
+          "translation": "Mubalazi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 264 · Agriculture / Plants · https://archive.org/details/anikaenglishdic00rebmgoog/page/n276/mode/1up · POS: n. | (wa, pl. Mi-), the name of a shrub producing a kind of pea. See Mbalazi."
+        },
+        {
+          "english": "(ra, pl. Ma-), a cake of semi-dried cow's dung, in some",
+          "translation": "Shonde",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (note on Kid.)) · Krapf & Rebmann (1887), p. 342 · Agriculture / Household · https://archive.org/details/anikaenglishdic00rebmgoog/page/n354/mode/1up · POS: n. | (ra, pl. Ma-), a cake of semi-dried cow's dung, in some parts used as fuel. In Kid., Mutu huya hu mashonde."
+        },
+        {
+          "english": ", of. It denotes the pl. of nouns which have their sing",
+          "translation": "Za",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 391 · Grammar / Letter Z · https://archive.org/details/anikaenglishdic00rebmgoog/page/n403/mode/1up · POS: gen. part. | , of. It denotes the pl. of nouns which have their sing. and pl. the same. Gnombe za, An ox of. Gnombe za, Oxen of."
+        },
+        {
+          "english": "animal / beast / flesh",
+          "translation": "nyama",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 7, 16, 41 · Animals · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "elephant",
+          "translation": "ndzovu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 36 · Animals · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "gazelle",
+          "translation": "p'ala",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xii, 7, 46 · Animals (kapala, small gazelle) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "ass / donkey",
+          "translation": "ndzowe",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 9, 34 · Animals · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "goat (general term for sheep or goats)",
+          "translation": "mbuzi",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 47 · Animals (mbuzi ya gondzi, sheep; mbuzi ya pee, goat) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "cattle",
+          "translation": "ng'ombe",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 21, 23, 29 · Animals (ng'ombe mbiche, cow, p. 29; ndzao, bull, p. 21) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "asp / snake",
+          "translation": "nyoka",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 9 · Animals · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to arrive",
+          "translation": "ku-fika",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, 9 · Verb (ku-fisha, causative) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Bee, s.",
+          "translation": "niuji",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 4 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Bird, s.",
+          "translation": "niuni",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 5 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Buffalo, s.",
+          "translation": "niahi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Camel, s.",
+          "translation": "ngamira",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 6 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Cat, s.",
+          "translation": "paka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 7 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Dog, s.",
+          "translation": "kurro",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 10 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Elephant, s.",
+          "translation": "nzofu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 12 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fish, s.",
+          "translation": "sui, pl. id",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 14 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Goat, s.",
+          "translation": "mbusi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 17 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Leopard, s.",
+          "translation": "zui",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 24 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Lion, s.",
+          "translation": "zimba",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 25 · Animals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "avertive / contemptible infant name given after earlier",
+          "translation": "dzina ra uhoko",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Giryama) · Werner (1915), JRAI 45, p. 341 · Naming Custom / Lexical Gloss · https://zenodo.org/records/1518320/files/article.pdf · avertive / contemptible infant name given after earlier infant deaths"
+        },
+        {
+          "english": "Elephant",
+          "translation": "N·dzωvu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "the strength of a bull",
+          "translation": "Ruga",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kisegeju) · Hollis (1900), JRAI Vol. 30, pp. 284, 296 · Royal nickname of the 1st Diwan of Vumba (Seyyid Abubakari bin Sheikh) · https://zenodo.org/records/1952797/files/article.pdf"
         }
       ]
     },
@@ -12703,6 +13255,192 @@
           "translation": "Yonga",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 390 · Verbs / Nature · POS: v."
+        },
+        {
+          "english": "a. (= Fingilisa), to roll. Ku fulumusa muhi iwe, To roll a tree.",
+          "translation": "Fulumusa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 91 · Verbs · https://archive.org/details/anikaenglishdic00rebmgoog/page/n103/mode/1up · POS: v."
+        },
+        {
+          "english": "See Mumemue. Black. The root-word of Muiru, Kiiru, Kiru",
+          "translation": "Iru",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 134 · Adjectives / Colours · https://archive.org/details/anikaenglishdic00rebmgoog/page/n146/mode/1up · POS: adj. | See Mumemue. Black. The root-word of Muiru, Kiiru, Kiru, etc., Kuiru, Niru."
+        },
+        {
+          "english": "(ra, pl. Maiyi), a heap of grass, rooted out in cultivating",
+          "translation": "Iyi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 135 · Agriculture · https://archive.org/details/anikaenglishdic00rebmgoog/page/n147/mode/1up · POS: n. | (ra, pl. Maiyi), a heap of grass, rooted out in cultivating the ground; (K.) rick."
+        },
+        {
+          "english": "(lua, pl. Mbugu), a creeper used for binding. Dim., Kalubugu.",
+          "translation": "Lubugu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 218 · Nature / Materials · https://archive.org/details/anikaenglishdic00rebmgoog/page/n230/mode/1up · POS: n."
+        },
+        {
+          "english": "(ya), the coast. Ni poa. Poa hira. Poani. See Kala. On, to",
+          "translation": "Poa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 324 · Nature / Geography · https://archive.org/details/anikaenglishdic00rebmgoog/page/n336/mode/1up · POS: n. | (ya), the coast. Ni poa. Poa hira. Poani. See Kala. On, to the coast."
+        },
+        {
+          "english": "(ra, pl. Ma-). See Bandika. The lower part of a tuft of",
+          "translation": "Sinde",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 349 · Nature / Agriculture · https://archive.org/details/anikaenglishdic00rebmgoog/page/n361/mode/1up · POS: n. | (ra, pl. Ma-). See Bandika. The lower part of a tuft of grass. Nidzidema sinde ra niasi, I have cut a tuft of grass."
+        },
+        {
+          "english": "world",
+          "translation": "urumwengu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 35 · Nature · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "sun",
+          "translation": "dzuwa / dzua",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 6, 31, 35 · Nature · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "cloud",
+          "translation": "ingu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 26, 48 · Nature (pl. maingu) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "air / breeze / cold",
+          "translation": "p'eho",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 5, 21, 26 · Nature · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "forest / the bush",
+          "translation": "tsaka",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 22, 43 · Nature · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "flower",
+          "translation": "lua",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 42 · Nature (pl. malua) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "foliage",
+          "translation": "makodza",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 42 · Nature (contrasted with makodzo, urine) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "ground / clayey soil",
+          "translation": "ulongo",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. ix, 25, 35 · Nature (open o; contrasted with close ulongo, lie) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "cave / chasm / den",
+          "translation": "p'anga",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 23, 24, 32 · Nature · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "fountain (well)",
+          "translation": "kisima",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 43 · Nature · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to die",
+          "translation": "ku-fwa",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, 32 · Verb (monosyllabic root fwa) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Cloud, s.",
+          "translation": "ingo pl. ma-",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 7 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Country, s.",
+          "translation": "zi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 8 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Fire, s.",
+          "translation": "moho",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 14 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Mountain, s.",
+          "translation": "mrima",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 29 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Rain, s.",
+          "translation": "mfula",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 38 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "River, s.",
+          "translation": "muho",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 40 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Star, s.",
+          "translation": "niegnesi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 48 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Stone, s.",
+          "translation": "ziwe",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 49 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Tree, s.",
+          "translation": "muhi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 54 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "carved wooden grave-posts",
+          "translation": "vigango",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Nyika (Giryama / Kauma / Kambe)) · Werner (1915), JRAI 45, pp. 330, 343 · Cultural Term · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "pre-rains festival at the kaya",
+          "translation": "kuri",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Rabai) · Werner (1915), JRAI 45, p. 344 · Cultural Term · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "Fire",
+          "translation": "Mō·hω ; mi·ohω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 100 · Noun (Errata p. x: M·ohω) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Rain",
+          "translation": "M·vūla. Wula",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 104 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Sun",
+          "translation": "D·zūa",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 105 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -15320,6 +16058,96 @@
           "translation": "Wisua, Wishua",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 388 · Agriculture / Food · POS: n. | (wa), chaff, the husks of rice, bran of Indian corn or millet, etc.; (K.) paddy."
+        },
+        {
+          "english": "(= Kabeni in Kns.), a cob of Indian corn when beginning to form.",
+          "translation": "Kigube",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kns.)) · Krapf & Rebmann (1887), p. 166 · Agriculture / Food · https://archive.org/details/anikaenglishdic00rebmgoog/page/n178/mode/1up · POS: n."
+        },
+        {
+          "english": "(ga), water. Madzi ga peho, Rain-water. Madzi ga muniu",
+          "translation": "Madzi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 233 · Nature · https://archive.org/details/anikaenglishdic00rebmgoog/page/n245/mode/1up · POS: n. | (ga), water. Madzi ga peho, Rain-water. Madzi ga muniu, Salt water."
+        },
+        {
+          "english": "(wa, pl. Mi-). See Mudzani. The name of a species of tree",
+          "translation": "Mubambakofi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 264 · Nature (Trees) · https://archive.org/details/anikaenglishdic00rebmgoog/page/n276/mode/1up · POS: n. | (wa, pl. Mi-). See Mudzani. The name of a species of tree, the African teak."
+        },
+        {
+          "english": "(wa, pl. Mi-), the name of a tree. Its fruit is called fudu",
+          "translation": "Mufudu",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 272 · Nature (Trees) / Food · https://archive.org/details/anikaenglishdic00rebmgoog/page/n284/mode/1up · POS: n. | (wa, pl. Mi-), the name of a tree. Its fruit is called fudu or pfudu."
+        },
+        {
+          "english": "See Hanga. The necessaries of life in general, victuals",
+          "translation": "Risiki",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kij. loan)) · Krapf & Rebmann (1887), p. 333 · Food / Household · https://archive.org/details/anikaenglishdic00rebmgoog/page/n345/mode/1up · POS: n. | See Hanga. The necessaries of life in general, victuals, provisions."
+        },
+        {
+          "english": "(via). See Kula, n. A little water. Dim. of Madzi. Reha",
+          "translation": "Vidzi",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 381 · Nature / Food · https://archive.org/details/anikaenglishdic00rebmgoog/page/n393/mode/1up · POS: n. | (via). See Kula, n. A little water. Dim. of Madzi. Reha vidzi, Bring a little water."
+        },
+        {
+          "english": "pl. (= Unga utembe). See Kifoyero. A little flour. Dim. of Unga.",
+          "translation": "Vidzunga",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 381 · Food · https://archive.org/details/anikaenglishdic00rebmgoog/page/n393/mode/1up · POS: n."
+        },
+        {
+          "english": "baobab",
+          "translation": "muuyu / m'uyu",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 11 · Nature / Flora (ma-uyu, fruit of baobab) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "banana tree",
+          "translation": "mugomba",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 11 · Nature / Flora (izu, pl. maizu, banana) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to eat",
+          "translation": "ku-rya",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, 35 · Verb (monosyllabic root rya) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to drink",
+          "translation": "ku-nwa",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 34 · Verb (pass. ku-nwewa) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "he is silent silent!",
+          "translation": "Yunyemere mya!",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. xiv · Idiom / Ideophone (repeated mya-mya-..., \"he is as silent as the grave!\") · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Egg, s.",
+          "translation": "idji pl. ma-",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 11 · Food / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Milk, s.",
+          "translation": "messia",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 28 · Food · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Water, s.",
+          "translation": "mazi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 58 · Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
         }
       ]
     },
@@ -27257,6 +28085,78 @@
           "translation": "Uha",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 366 · Tools / Weapons · POS: n. | (wa, pl. Maha), a bow. Uha wangu udzidoroka luvohe. Dim., Kadzuha."
+        },
+        {
+          "english": "(ra, pl. Ma- or Mi-), a large house. Magn. of Niumba. Dim",
+          "translation": "Dzumba",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 68 · Household / Architecture · https://archive.org/details/anikaenglishdic00rebmgoog/page/n80/mode/1up · POS: n. | (ra, pl. Ma- or Mi-), a large house. Magn. of Niumba. Dim., Kadzumba."
+        },
+        {
+          "english": "(ra, pl. Ma-), a club. Ku-m-piga mutu magongo. Dim., Kagongo",
+          "translation": "Gongo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 110 · Tools / Weapons · https://archive.org/details/anikaenglishdic00rebmgoog/page/n122/mode/1up · POS: n. | (ra, pl. Ma-), a club. Ku-m-piga mutu magongo. Dim., Kagongo ; Kigongo."
+        },
+        {
+          "english": "(ra, pl. Ma-), a hoe, the only agricultural implement used",
+          "translation": "Jembe",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 136 · Agriculture / Tools · https://archive.org/details/anikaenglishdic00rebmgoog/page/n148/mode/1up · POS: n. | (ra, pl. Ma-), a hoe, the only agricultural implement used by the Wanyika. Dim., Kajembe and Kijembe; magn., Rijembe."
+        },
+        {
+          "english": "(ra, pl. Ma-), a round mat. Singe ra ku siira ngao. Dim",
+          "translation": "Singe, Sinche",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 349 · Household · https://archive.org/details/anikaenglishdic00rebmgoog/page/n361/mode/1up · POS: n. | (ra, pl. Ma-), a round mat. Singe ra ku siira ngao. Dim., Kasinge and Kisinge; magn., Risinge."
+        },
+        {
+          "english": "(wa, pl. Maha), a bow. Uha wangu udzidoroka luvohe. Dim",
+          "translation": "Uha",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 366 · Tools / Weapons · https://archive.org/details/anikaenglishdic00rebmgoog/page/n378/mode/1up · POS: n. | (wa, pl. Maha), a bow. Uha wangu udzidoroka luvohe. Dim., Kadzuha."
+        },
+        {
+          "english": "capital (village)",
+          "translation": "kaya",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 23 · Cultural / Social (pl. makaya) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Arrow, s.",
+          "translation": "uha",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Axe, s.",
+          "translation": "zoka",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 3 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Door, s.",
+          "translation": "mriango",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 11 · Material Culture · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "club or council-house (baraza) within the fortified kaya",
+          "translation": "lwanda (pl. nyanda)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Nyika) · Werner (1915), JRAI 45, pp. 337–338, 344 · Cultural Term · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "Bow",
+          "translation": "U·ha. Tana",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "House",
+          "translation": "N·umba. Ka·banda",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -35391,6 +36291,102 @@
           "translation": "Yuya",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 391 · Verbs / Adjectives · POS: v. | n. See Muvuye ; Niuya. To be light. Der., Kiyuya ; Muyuya ; Niuya."
+        },
+        {
+          "english": "(1) v.a. (=Ku henda hiroka), to hasten. (2) v.n., to be quick.",
+          "translation": "Idirika",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 130 · Verbs · https://archive.org/details/anikaenglishdic00rebmgoog/page/n142/mode/1up"
+        },
+        {
+          "english": "to be / to stay, sit, dwell",
+          "translation": "ku-kala",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, 12 · Verb (close vs. open vowel distinguishes sense) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to give",
+          "translation": "ku-p'a",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, 46 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to do / act",
+          "translation": "ku-henda",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, 3, 33 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to know, recognize",
+          "translation": "ku-manya",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. xvii · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to like / love",
+          "translation": "ku-hendza",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, 8 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to cultivate",
+          "translation": "ku-rima",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 30 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to build",
+          "translation": "ku-aka",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 21 · Verb (mwaki, builder) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to ask / enquire",
+          "translation": "ku-uza",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 9, 37 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to behold / look at",
+          "translation": "ku-lola",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xxvii, 17 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to bite",
+          "translation": "ku-luma",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 19 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to dig",
+          "translation": "ku-tsimba",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 32 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to cry",
+          "translation": "ku-rira",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 30 · Verb (kiriro, cry) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to grind",
+          "translation": "ku-saga",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 48 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to dream",
+          "translation": "ku-loha",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 34 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "to bury",
+          "translation": "ku-zika",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 22 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
         }
       ]
     },
@@ -36603,6 +37599,24 @@
           "translation": "vidso",
           "pronunciation": "",
           "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+        },
+        {
+          "english": "lit. \"white white!\"",
+          "translation": "Mwaruhe ts'!",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. xiv · Idiom / Intensive ideophone (high singing note) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "lit. \"black black!\"",
+          "translation": "Mwiru pi!",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. xiv · Idiom / Intensive ideophone · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Cold",
+          "translation": "Pehω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -39067,6 +40081,30 @@
           "translation": "Yongoya",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 390 · Verbs · POS: v."
+        },
+        {
+          "english": "to go",
+          "translation": "kw-enda",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. xvii, 46 · Verb (old perf. wandzire, he went) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "God, s.",
+          "translation": "Mulungu",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 17 · Religion · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Road, s.",
+          "translation": "njira",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 40 · Travel / Spatial · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Chief of the Wadigo",
+          "translation": "Kubo",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kidigo) · Hollis (1900), JRAI Vol. 30, pp. 276, 289, 291 · Royal / chieftaincy title (e.g., Kubo Mwacholozi, Kubo Mwakikonga) · https://zenodo.org/records/1952797/files/article.pdf"
         }
       ]
     },
@@ -39784,6 +40822,12 @@
           "translation": "Riva",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 333 · Verbs / Trade · POS: v."
+        },
+        {
+          "english": "to buy",
+          "translation": "ku-gula",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 22 · Verb · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
         }
       ]
     },
@@ -41722,6 +42766,42 @@
           "translation": "Wari",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 387 · Food · POS: n. | (wa), food made of rice or of ground Indian or Caffre corn, which constitutes the chief meal of the day, and is eaten in the evening."
+        },
+        {
+          "english": "(ya, za), the fruit of the tree mukuva, eaten in time of famine.",
+          "translation": "Kuva, 3",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 205 · Food / Nature · https://archive.org/details/anikaenglishdic00rebmgoog/page/n217/mode/1up · POS: n."
+        },
+        {
+          "english": "(lua, pl. Tigo, Tshigo), a hedge. Ku piga luchigo, To make",
+          "translation": "Luchigo, Lukigo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 218 · Agriculture · https://archive.org/details/anikaenglishdic00rebmgoog/page/n230/mode/1up · POS: n. | (lua, pl. Tigo, Tshigo), a hedge. Ku piga luchigo, To make a hedge. Sometimes made to keep the cattle from getting into a plantation. Luchigo lua ku mera, A hedge which grows. Dim., Kachigo."
+        },
+        {
+          "english": "(wa), food made of rice or of ground Indian or Caffre corn",
+          "translation": "Wari",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 387 · Food · https://archive.org/details/anikaenglishdic00rebmgoog/page/n399/mode/1up · POS: n. | (wa), food made of rice or of ground Indian or Caffre corn, which constitutes the chief meal of the day, and is eaten in the evening."
+        },
+        {
+          "english": "Day, s.",
+          "translation": "ziku",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 9 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Month, s. / Moon, s.",
+          "translation": "mesi",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 29 · Time / Nature · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Night, s.",
+          "translation": "usiku",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 30 · Time · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
         }
       ]
     },
@@ -74489,6 +75569,126 @@
           "translation": "Za",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kiravai (base)) · Krapf & Rebmann (1887), p. 391 · Grammar / Letter Z · POS: gen. part. | , of. It denotes the pl. of nouns which have their sing. and pl. the same. Gnombe za, An ox of. Gnombe za, Oxen of."
+        },
+        {
+          "english": "deaf and dumb / gratis, nothing / clod, swarm / cultivate /",
+          "translation": "Buibui / Bule / Bumba / Buruga / Busa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 17–19 · Mixed · https://archive.org/stream/anikaenglishdic00rebmgoog/anikaenglishdic00rebmgoog_djvu.txt · deaf and dumb / gratis, nothing / clod, swarm / cultivate / kindle"
+        },
+        {
+          "english": "white / thigh / morning / black, thirst / mushroom / cock /",
+          "translation": "Cheruve / Chiga / Chiramuko / Chiru / Choga / Chokolo / Chomu / Choyo",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 25–29 · Nouns & Adj · https://archive.org/stream/anikaenglishdic00rebmgoog/anikaenglishdic00rebmgoog_djvu.txt · white / thigh / morning / black, thirst / mushroom / cock / hard, expensive / stinginess"
+        },
+        {
+          "english": "small / thunder / Digo country / kiss / lead way / uncharm",
+          "translation": "Dide (Tite) / Didimiza / Digo / Dona / Dora / Dovola / Dumbu / Dume / Dune / Duruma",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kinyika (Kiravai)) · Krapf & Rebmann (1887), pp. 41–52 · Mixed · https://archive.org/stream/anikaenglishdic00rebmgoog/anikaenglishdic00rebmgoog_djvu.txt · small / thunder / Digo country / kiss / lead way / uncharm / millet beer / male / red / Duruma"
+        },
+        {
+          "english": "fifteen",
+          "translation": "kumi na-tsano",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 41 · Numerals · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "forty",
+          "translation": "makumi mane / mirongo mine",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 43 · Numerals · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "fifty",
+          "translation": "mirongo mitsano / makumi matsano",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 41 · Numerals · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Farewell! / Adieu!",
+          "translation": "Kala uworo! / Kala m'zima!",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 3, 39 · Salutation (Answer: Haya, enda matsiya! or Enda muzima!) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "A pit of words",
+          "translation": "Simo ra maneno / Wina wa maneno",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 36 · Idiom (for an eloquent person) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "system of initiation constituting the Giryama state /",
+          "translation": "k'ambi",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 43–44 · Cultural / Social · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt · system of initiation constituting the Giryama state / second degree"
+        },
+        {
+          "english": "Name, s.",
+          "translation": "zina",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 30 · Social / Lexical · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Twelve, num.",
+          "translation": "kumi na mbiri",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 55 · Numerals · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "Word, s.",
+          "translation": "neno",
+          "pronunciation": "",
+          "context": "Krapf (1850) Six East-African Languages (Kinika (Mijikenda)) · Krapf (1850), p. 62 · Language · https://archive.org/stream/cu31924026933139/cu31924026933139_djvu.txt"
+        },
+        {
+          "english": "fortified village on a hill-top",
+          "translation": "kaya (Kaya Bomu / Kaya Fungo)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Nyika / Giryama) · Werner (1915), JRAI 45, pp. 341–342 · Cultural Term · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "Arrow",
+          "translation": "Mu·vwi, Mu·fwi, Lu·wi. C·embe. Gumba",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Chief",
+          "translation": "M·vieri. Mu·tumia. Mu·zere",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 99 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Eye",
+          "translation": "Dz·itsω, Dzi·dzω ; ma·dzω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 100 · Noun (M·bωni = pupil) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Man",
+          "translation": "Mu·tu ; a·tu, also M·thu and Mu·thu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 103 · Noun (fn. 1: Ka·dzi·tu = little person) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "Mweñga, ·mwe. M·ωsi / H·iri, ·iri / ·hahu, ·tahu / I·nne, ·ne / Tsanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 107 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Six / Seven / Eight / Nine / Ten",
+          "translation": "Handahu / Fuñgahe / H·nane / C·enda / Kumi. Mu·roñgω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, p. 107 · Numerals 6–10 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·rya / ·fa / ·manya / ·hendza. ·kunda / ·ōna. ·lωla",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (16. Nika (Giryama - Duruma - Digω)) · Johnston (1919), Vol. I, pp. 110–111 · Verb roots (prefix Ku·) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -95205,6 +96405,144 @@
           "translation": "Yunchu",
           "pronunciation": "",
           "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kij.)) · Krapf & Rebmann (1887), p. 391 · General / Dialect form · POS: n."
+        },
+        {
+          "english": "Ethnonyms of Mombasa Sub-District tribes (Wa-Ribe parent tribe)",
+          "translation": "Wa-Duruma, Wa-Digo, Wa-Rabai, Wa-Kambe, Wa-Jibana, Wa-Ribe, Wa-Giryama",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), pp. 263–272 · Ethnonyms · https://zenodo.org/record/2252150/files/article.pdf"
+        },
+        {
+          "english": "Hyena (highest secret society) / Sacred 6-ft hollow-trunk drum",
+          "translation": "Fisi / Mwanza",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), pp. 265–266 · Governance / Ritual · https://zenodo.org/record/2252150/files/article.pdf"
+        },
+        {
+          "english": "Smallpox / \"Grains of corn\" & \"bad disease\" (epidemic euphemisms)",
+          "translation": "Ndui / Tete / Ugonjwa Ubaya",
+          "pronunciation": "",
+          "context": "Johnstone (1902) Tribes of Mombasa Sub-District · Johnstone (1902), p. 268 · Health / Taboo · https://zenodo.org/record/2252150/files/article.pdf"
+        },
+        {
+          "english": "a., to fletch arrows. Radically, to let be upon. Ku ekerera",
+          "translation": "Ekerera",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.)) · Krapf & Rebmann (1887), p. 71 · Verbs / Tools / Dialect form · https://archive.org/details/anikaenglishdic00rebmgoog/page/n83/mode/1up · POS: v. | a., to fletch arrows. Radically, to let be upon. Ku ekerera mifui."
+        },
+        {
+          "english": "a. (= Ondosa in Kir.). See Fumbulusa. To startle, to drive away.",
+          "translation": "Husa",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kid.) (cross-ref Kir.)) · Krapf & Rebmann (1887), p. 130 · Verbs / Dialect form · https://archive.org/details/anikaenglishdic00rebmgoog/page/n142/mode/1up · POS: v."
+        },
+        {
+          "english": "(ra), a dish made of the flour of dried cassava. Wari wa",
+          "translation": "Jora",
+          "pronunciation": "",
+          "context": "Krapf & Rebmann (1887) Nika-English Dict (Kidigo (Kidigo)) · Krapf & Rebmann (1887), p. 136 · Food / Dialect form · https://archive.org/details/anikaenglishdic00rebmgoog/page/n148/mode/1up · POS: n. | (ra), a dish made of the flour of dried cassava. Wari wa jora. Formerly the Rabais simply called it Wari wa mugazija."
+        },
+        {
+          "english": "grandfather",
+          "translation": "ts'awe",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 6, 47 · Kinship (ano ts'awe, male ancestors, p. 6) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "grandmother",
+          "translation": "hawe",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 6, xiv, 47 · Kinship (ano hawe, female ancestors, p. 6) · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "abdomen / belly",
+          "translation": "ndani",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 1, 17 · Body Parts · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Let us go! let us go! depends on mutual arrangement.",
+          "translation": "Hinde! hinde! ni kuikana",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 8 · Proverb / Idiom · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "Chip, chip, the block was finished!",
+          "translation": "Bandzu, bandzu, ramala gogo!",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), p. 25 · Proverb / Idiom · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "dwarf jinn / goblin",
+          "translation": "katsumbakazi",
+          "pronunciation": "",
+          "context": "Taylor (1891) Giryama Vocabulary & Collections · Taylor (1891), pp. 32, 47 · Cultural / Folklore · https://archive.org/stream/giryamavocabula01taylgoog/giryamavocabula01taylgoog_djvu.txt"
+        },
+        {
+          "english": "figure who came from the south, from whom the Wapokomo",
+          "translation": "Malande",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Kipokomo / Rabai oral history) · Werner (1915), JRAI 45, pp. 329–330 · Oral History Name · https://zenodo.org/records/1518320/files/article.pdf · figure who came from the south, from whom the Wapokomo derived their \"great Ngadzi\""
+        },
+        {
+          "english": "ancestral homeland north of the Tana from which the Wanyika",
+          "translation": "Sungwaya",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Coastal Bantu / Nyika oral history) · Werner (1915), JRAI 45, pp. 327–328, 330 · Oral History Toponym · https://zenodo.org/records/1518320/files/article.pdf · ancestral homeland north of the Tana from which the Wanyika and Wapokomo migrated"
+        },
+        {
+          "english": "ancestral pair at Sungwaya from whom all the Wanyika are",
+          "translation": "Mbodze and Matsezi",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Giryama / Kauma oral history) · Werner (1915), JRAI 45, pp. 330, 331, 338 · Oral History Names · https://zenodo.org/records/1518320/files/article.pdf · ancestral pair at Sungwaya from whom all the Wanyika are descended"
+        },
+        {
+          "english": "\"council chamber\" / sacred central meeting space inside a kaya",
+          "translation": "moro",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Nyika (Kauma / Rabai / Ribe)) · Werner (1915), JRAI 45, pp. 342, 344 · Cultural Term · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "friction-drum kept in the spirit-hut",
+          "translation": "mwanza",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Nyika (Rabai / Kauma)) · Werner (1915), JRAI 45, pp. 342, 344 · Cultural Term · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "male clans / female clans",
+          "translation": "mbari za kuume / mbari za kuke",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Rabai / Duruma) · Werner (1915), JRAI 45, pp. 338, 348–349 · Social Organization · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "small blue and grey finch reverenced/avoided (zira) as a totem",
+          "translation": "kasiji (tsiji, chiji)",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Giryama / Nyika) · Werner (1915), JRAI 45, p. 345 · Totem / Fauna · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "very small grey finch with a crimson spot at the back of",
+          "translation": "katsendzere",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Giryama / Nyika) · Werner (1915), JRAI 45, p. 345 · Totem / Fauna · https://zenodo.org/records/1518320/files/article.pdf · very small grey finch with a crimson spot at the back of the head, avoided as a totem"
+        },
+        {
+          "english": "ant-bear (avoided as zira; called godzo when digging for it)",
+          "translation": "loma / godzo",
+          "pronunciation": "",
+          "context": "Werner (1915) Bantu Coast Tribes (Nyika / Chonyi) · Werner (1915), JRAI 45, p. 345 · Totem / Fauna · https://zenodo.org/records/1518320/files/article.pdf"
+        },
+        {
+          "english": "some thing, the name of which is unknown",
+          "translation": "Hunde",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kidigo) · Hollis (1900), JRAI Vol. 30, p. 281 · Component of royal nickname Hundekuu · https://zenodo.org/records/1952797/files/article.pdf"
+        },
+        {
+          "english": "tether",
+          "translation": "Kikambala",
+          "pronunciation": "",
+          "context": "Hollis (1900) History of Vumba (Kidigo) · Hollis (1900), JRAI Vol. 30, pp. 291, 296 · Royal nickname of 3rd Diwan of Wasin (Seyyid Ahmed bin Alaui) · https://zenodo.org/records/1952797/files/article.pdf"
         }
       ]
     }
@@ -95212,5 +96550,5 @@
   "source": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "nyf",
   "glottocode": "miji1238",
-  "totalEntries": 17081
+  "totalEntries": 17304
 }

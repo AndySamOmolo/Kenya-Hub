@@ -11,7 +11,7 @@
   ],
   "hasAudio": false,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria). Expanded and cross-verified with Commercially Permissive Datasets (DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0)).",
   "categories": [
     {
@@ -2591,6 +2591,12 @@
           "english": "Tooth",
           "translation": "gam-eno",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
+        },
+        {
+          "english": "Arm",
+          "translation": "Ωmω·kωnω ; ama·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7. Ki-guzii (Ekegusii / 'Kω-sωva')) · Johnston (1919), Vol. I, p. 73 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -7609,6 +7615,54 @@
           "translation": "amanche",
           "pronunciation": "",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "'my mother', 'my father', 'your father', 'your mother', 'my",
+          "translation": "baba, mama, tata, iso, nyoko, magokoro, sokoro; o-mosaacha one",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (8b–c) · Kinship Terms (Bare vs. Augmented + Possessive) · https://zenodo.org/record/6393740/files/306-Sibanda-2022-4.pdf?download=1 · 'my mother', 'my father', 'your father', 'your mother', 'my grandma', 'my grandpa'; 'my husband'"
+        },
+        {
+          "english": "'He/she a king.'; 'Sese is a man.'; 'The children are visitors.'",
+          "translation": "Ere n'o-morwoti.; Sese n'o-mosaacha.; Abaana n'a-bageni",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (11d–f) · Predicative Constructions (Latent Augment) · https://zenodo.org/record/6393740/files/306-Sibanda-2022-4.pdf?download=1"
+        },
+        {
+          "english": "'Sleeping is good.' (gerund) / 'to sleep is good' (infinitive)",
+          "translation": "o-korara n'okuya. / korara mbuya",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (16d), (17e) · Subject Gerund (o-) vs. Infinitive (Bare) · https://zenodo.org/record/6393740/files/306-Sibanda-2022-4.pdf?download=1"
+        },
+        {
+          "english": "'one who braves the dew is incomparable with one who stirs",
+          "translation": "mominchoria imi tang'ana mosera ibu; mwana obande mmamiria makendu",
+          "pronunciation": "",
+          "context": "LangSci #306 ACAL 49 (2022) Ekegusii (CC-BY-4.0) · LangSci #306, Ch. 4, Ex. (29c–d) · Augment Omission in Proverbs · https://zenodo.org/record/6393740/files/306-Sibanda-2022-4.pdf?download=1 · 'one who braves the dew is incomparable with one who stirs ash'; 'someone's child is cold mucus'"
+        },
+        {
+          "english": "Fire",
+          "translation": "Ωmu·rirω, Ωmω·rerω ; emi·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7. Ki-guzii (Ekegusii / 'Kω-sωva')) · Johnston (1919), Vol. I, p. 76 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Man",
+          "translation": "Ωmu·ntu ; aba·, ava·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7. Ki-guzii (Ekegusii / 'Kω-sωva')) · Johnston (1919), Vol. I, p. 78 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "·mu, ·mω / ·beri, ·viri / ·satu, ·tatu / ·nye, ·nne / ·sanω, ·tanω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7. Ki-guzii (Ekegusii / 'Kω-sωva')) · Johnston (1919), Vol. I, p. 81 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·lia / ·kwa, ·gu·kwa / ·manya / ·e·tera. ·mwanca, ·hanca·na / ·rωra",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7. Ki-guzii (Ekegusii / 'Kω-sωva')) · Johnston (1919), Vol. I, p. 84 · Verb roots (prefix Ωku·) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -8990,6 +9044,12 @@
           "english": "White",
           "translation": "lafu",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
+        },
+        {
+          "english": "Chief",
+          "translation": "Omw·ami ; av·. Ωmu·nda ; ava·nda. Umw·isia, Umw·isiki",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (7. Ki-guzii (Ekegusii / 'Kω-sωva')) · Johnston (1919), Vol. I, p. 74 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     }
@@ -8997,5 +9057,5 @@
   "source": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
   "isoCode": "guz",
   "glottocode": "gusi1247",
-  "totalEntries": 1576
+  "totalEntries": 1586
 }

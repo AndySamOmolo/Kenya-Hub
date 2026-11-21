@@ -234,6 +234,22 @@
           "url": "https://huggingface.co/datasets/google/WaxalNLP"
         },
         {
+          "id": "bibletts-luo-mdc",
+          "repo": "mozilla-data-collective/cmvi269po002607mi7oaodk1z",
+          "config": "luo",
+          "gated": true,
+          "license": "CC-BY-SA-4.0",
+          "url": "https://mozilladatacollective.com/datasets/cmvi269po002607mi7oaodk1z"
+        },
+        {
+          "id": "ia-kavirondo3-dholuo-1920",
+          "repo": "archive.org/handbook_kavirondo3_1203",
+          "config": "luo",
+          "gated": false,
+          "license": "Public Domain Mark 1.0",
+          "url": "https://archive.org/details/handbook_kavirondo3_1203"
+        },
+        {
           "id": "bibletts-luo",
           "repo": "CLEAR-Global/BibleTTS-Luo",
           "config": "read",
@@ -447,6 +463,14 @@
           "url": "https://data.mendeley.com/datasets/rbn6nmygcn/1"
         },
         {
+          "id": "tatoeba-audio-swh",
+          "repo": "tatoeba/audio-filtered",
+          "config": "swh",
+          "gated": false,
+          "license": "CC-BY-2.0-FR / CC0-1.0",
+          "url": "https://tatoeba.org/en/downloads"
+        },
+        {
           "id": "lingua-libre-swa",
           "repo": "wikimedia-commons/lingua-libre-swa",
           "config": "swa",
@@ -534,6 +558,14 @@
         "gated": false,
         "license": "CC-BY-4.0",
         "url": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "ishara-ksl-hand-landmarks",
+        "repo": "ishara/ksl-hand-landmarks",
+        "config": "xki",
+        "gated": false,
+        "license": "CC-BY-4.0",
+        "url": "https://www.ishara.io/collect"
       },
       {
         "id": "open-sign-bibles-xki",

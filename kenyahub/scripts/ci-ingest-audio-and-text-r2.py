@@ -239,7 +239,7 @@ def upload_bytes_to_r2(s3_client, r2_key: str, opus_bytes: bytes) -> bool:
                     "Content-Type": "audio/ogg; codecs=opus",
                     "Cache-Control": "public, max-age=31536000, immutable",
                 },
-                timeout=15,
+                timeout=60,
             )
             if resp.ok:
                 return True
@@ -628,7 +628,11 @@ def ingest_common_voice_27_mdc(s3_client, uploaded_keys: dict, dataset_status: d
     ]
     for lang_id, iso, mdc_id in mdc_targets:
         job_key = f"mozilla-data-collective/cv-27.0::{iso}::{lang_id}"
-        if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") == "completed":
+        if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") in ("completed", "completed_no_new_clips"):
+            continue
+        if job_key == "openslr/slr25-alffa::sw::swahili" and len(uploaded_keys.get("swahili", {})) >= 1500:
+            log("  [skip-fast] Swahili already has >=1,500 R2 clips; skipping 2.5GB OpenSLR SLR25 tarball to save CI time.")
+            dataset_status[job_key] = {"status": "completed_no_new_clips", "clipsUploaded": 0, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
             continue
         if not MDC_API_KEY:
             dataset_status[job_key] = {
@@ -1173,7 +1177,7 @@ def ingest_ksl_pose_metadata(dataset_status: dict):
     }
     try:
         headers = {"Authorization": f"Bearer {ZENODO_TOKEN}"} if ZENODO_TOKEN else {}
-        z_resp = HTTP_SESSION.get("https://zenodo.org/api/records/14338329", headers=headers, timeout=20)
+        z_resp = HTTP_SESSION.get("https://zenodo.org/api/records/14338329", headers=headers, timeout=45)
         if z_resp.ok:
             z_files = z_resp.json().get("files", [])
             ksl_payload["zenodoFiles"] = [
@@ -1189,7 +1193,7 @@ def ingest_ksl_pose_metadata(dataset_status: dict):
         log(f"  [warn] Maseno Zenodo 14338329 API notice: {exc}")
 
     try:
-        ds = load_hf_stream("bible-nlp/sign-bibles", "default", split="train")
+        ds = load_hf_stream("bible-nlp/sign-bibles", "xki", split="train")
         for idx, row in enumerate(ds):
             if idx >= 1000:
                 break

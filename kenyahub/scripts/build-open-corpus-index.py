@@ -147,7 +147,7 @@ def main() -> None:
             lic = rd.get("license", "CC-BY-4.0")
             src_name = rd.get("source") or rf.stem.replace("-", " ").title()
             for s in sents:
-                if len(rec["sampleReadings"]) >= 8:
+                if len(rec["sampleReadings"]) >= 12:
                     break
                 if isinstance(s, str) and 8 <= len(s.strip()) <= 160:
                     rec["sampleReadings"].append({"text": s.strip(), "source": src_name, "license": lic})
@@ -243,7 +243,7 @@ def main() -> None:
                 ents = cat.get("entries", [])
                 total_entries += len(ents)
                 for e in ents:
-                    if len(entries_preview) < 18:
+                    if len(entries_preview) < 60:
                         entries_preview.append({
                             "english": str(e.get("english", ""))[:80],
                             "translation": str(e.get("translation", ""))[:80],

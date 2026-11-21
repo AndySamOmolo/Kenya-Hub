@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-20T21:08:02.012Z",
-  "mobileTsxFilesScanned": 45,
+  "generatedAt": "2026-11-21T16:18:42.462Z",
+  "mobileTsxFilesScanned": 46,
   "toolsWired": "33/33",
   "languagesWired": 23,
-  "statutoryJsonParity": "56/56",
+  "statutoryJsonParity": "57/57",
   "maestroFlows": [
     "01-smoke-tabs-and-theme-switch.yaml",
     "02-learn-courses-lessons-and-games.yaml",
@@ -365,9 +365,9 @@
     },
     {
       "domain": "hooks",
-      "name": "Zero Rules of Hooks violations across all 45 mobile .tsx files",
+      "name": "Zero Rules of Hooks violations across all 46 mobile .tsx files",
       "status": "pass",
-      "detail": "Scanned 45 .tsx files; found 0 violations"
+      "detail": "Scanned 46 .tsx files; found 0 violations"
     },
     {
       "domain": "theme",
@@ -445,7 +445,7 @@
       "domain": "ergonomics",
       "name": "No overlong static TextInput placeholders (>48ch) across mobile screens",
       "status": "pass",
-      "detail": "Scanned 45 .tsx files; 0 placeholders exceed 48 chars"
+      "detail": "Scanned 46 .tsx files; 0 placeholders exceed 48 chars"
     },
     {
       "domain": "mobile-ux",
@@ -511,7 +511,7 @@
       "domain": "data-parity",
       "name": "Web <-> Mobile statutory JSON SHA-256 hash parity",
       "status": "pass",
-      "detail": "100% SHA-256 match across all 56/56 statutory JSON datasets"
+      "detail": "100% SHA-256 match across all 57/57 statutory JSON datasets"
     },
     {
       "domain": "e2e",

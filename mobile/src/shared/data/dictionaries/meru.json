@@ -11,7 +11,7 @@
   ],
   "hasAudio": true,
   "dictionaryVersion": "4.0",
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-21",
   "contributorNote": "Meru (Kĩmĩĩrũ / Kĩtharaka / Kĩcuka / Kĩmwimbi) vocabulary compiled from C. W. Hobley (1910), Arthur M. Champion (1912 \"The Atharaka\"), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11–11a), Prof. Kithaka wa Mberia (2004 \"The Phonology of Borrowed Words in Kitharaka\"), and Unicode CLDR (mer.xml). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0).",
   "categories": [
     {
@@ -323,6 +323,18 @@
           "english": "Bone",
           "translation": "fuwa",
           "context": "CLDF ASJP v20 Wordlist (MERU, CC-BY-4.0)"
+        },
+        {
+          "english": "Half-moon-shaped piece of wood extending round the back of",
+          "translation": "marengo",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 75 · Ornament · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Half-moon-shaped piece of wood extending round the back of the neck from one ear-lobe to the other"
+        },
+        {
+          "english": "Leather strap worn between calf and knee with two hanging",
+          "translation": "ikuli",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 76 · Ornament/Legwear · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Leather strap worn between calf and knee with two hanging leather tails"
         }
       ]
     },
@@ -720,6 +732,108 @@
           "english": "Person",
           "translation": "ndu",
           "context": "CLDF ASJP v20 Wordlist (MERU, CC-BY-4.0)"
+        },
+        {
+          "english": "Fringe of baobab",
+          "translation": "ngigi",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 74–75, 82 · Dress · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Fringe of baobab (mbuyu) threads worn by men and boys over genitals"
+        },
+        {
+          "english": "Small wooden shield",
+          "translation": "ngao",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 78 · Weapons/Dance · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Small wooden shield (2 ft 6 in. long) used in dances and boys' practice"
+        },
+        {
+          "english": "Elastic elders' dispute-settlement council",
+          "translation": "Chiama",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 86–87 · Governance/Law · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Elastic elders' dispute-settlement council (Mukuru ya Chiama, Akuru ya Chiama, Ngoromo ya Chiama, and inner decision-making elders Akuru ya Nthuli)"
+        },
+        {
+          "english": "Notched fire-stick",
+          "translation": "girika / urindi",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 90 · Fire-making · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Notched fire-stick (wood of mruranguti tree) / hard rubbing-stick (wood of murindi tree)"
+        },
+        {
+          "english": "Chief of Janjai sub-tribe (1)",
+          "translation": "Kamuru",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Janjai sub-tribe (1) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Oringo sub-tribe (2)",
+          "translation": "Njoo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Oringo sub-tribe (2) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Kunati sub-tribe (3)",
+          "translation": "Waikaiwa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Kunati sub-tribe (3) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Mbuya sub-tribe (4)",
+          "translation": "Waivori",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Mbuya sub-tribe (4) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Akithii sub-tribe (5)",
+          "translation": "Mutwiarando",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Akithii sub-tribe (5) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Athwana sub-tribe (6)",
+          "translation": "Kirigwa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Athwana sub-tribe (6) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Muthara sub-tribe (7)",
+          "translation": "Ndaminuki",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Muthara sub-tribe (7) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Iembe sub-tribe (9)",
+          "translation": "Kiliungu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Iembe sub-tribe (9) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Muchi Muguru sub-tribe (10)",
+          "translation": "Njaiili",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Muchi Muguru sub-tribe (10) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Kithio sub-tribe (11)",
+          "translation": "Mutiarando",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Kithio sub-tribe (11) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Mnithu sub-tribe (13)",
+          "translation": "Paimwisu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Mnithu sub-tribe (13) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "Chief of Thaicho sub-tribe (22)",
+          "translation": "Paratobi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Personal name — Chief of Thaicho sub-tribe (22) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Personal name"
+        },
+        {
+          "english": "medicine man",
+          "translation": "laibon",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru) / Masai loan) · Hobley (1910), p. 158 · Vocabulary — \"consult their laibon or medicine man\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/158/mode/1up"
         }
       ]
     },
@@ -1396,6 +1510,54 @@
           "english": "To hear",
           "translation": "ita",
           "context": "CLDF ASJP v20 Wordlist (MERU, CC-BY-4.0)"
+        },
+        {
+          "english": "Little brass wire discs fastened on the rim of the ear",
+          "translation": "ndugira",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 75 · Ornament (Fig. 3.2) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Circular wooden ear-lobe pegs resembling spinning tops worn",
+          "translation": "mituitu",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 75 · Ornament (Fig. 3.3) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Circular wooden ear-lobe pegs resembling spinning tops worn by young men"
+        },
+        {
+          "english": "Thin needle-like wooden spikes",
+          "translation": "ndorira",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 75 · Ornament · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Thin needle-like wooden spikes (2–3 in.) stuck through the rim of the ear"
+        },
+        {
+          "english": "Small round piece of wood inserted in ear-lobe by unmarried girls",
+          "translation": "ndingi",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 75, 77 · Ornament (Fig. 3.5) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Blacksmith's hammer fitted with a wooden handle",
+          "translation": "kiriba",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 79 · Metallurgy (Fig. 5.1) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Blood",
+          "translation": "Sakamé. N·ŧakame",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "ears",
+          "translation": "Matu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Vocabulary — \"Matu = ears in Mweru\" (note on Amatu) · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "to cut",
+          "translation": "ku-ita",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 158 · Vocabulary — \"ku-ita in Mweru tongue means 'to cut.'\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/158/mode/1up"
         }
       ]
     },
@@ -1721,6 +1883,54 @@
           "english": "Louse",
           "translation": "nda",
           "context": "CLDF ASJP v20 Wordlist (MERU, CC-BY-4.0)"
+        },
+        {
+          "english": "Married woman's leather apron fastened over the shoulders",
+          "translation": "kathari",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 75, 77 · Dress · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Married woman's leather apron fastened over the shoulders, studded with beads and cowrie shells"
+        },
+        {
+          "english": "Goat's hair brushes stuck through the rim of the ear by",
+          "translation": "ndiro",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 75, 77 · Ornament (Fig. 3.5) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Goat's hair brushes stuck through the rim of the ear by unmarried girls"
+        },
+        {
+          "english": "Beer brewed from muweli grain in large earthenware jars (ikura)",
+          "translation": "uki",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 80–81 · Food/Drink · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Honey barrel placed in Mbuyu",
+          "translation": "mwatu",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 81, 84–85 · Beekeeping (kithembi = wooden drum for storing extracted honey, pp. 84–85) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Honey barrel placed in Mbuyu (baobab) trees, often made from Mekoma palm or Movinga tree (p. 85)"
+        },
+        {
+          "english": "Branding iron for marking honey barrels",
+          "translation": "choro",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 85 · Law/Beekeeping · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Branding iron for marking honey barrels (included in murder compensation)"
+        },
+        {
+          "english": "Animal, wild beast",
+          "translation": "Ny·amω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 98 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Elephant",
+          "translation": "N·jωgu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "people",
+          "translation": "Antu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Vocabulary — \"Antu in Mweru language means people\" (note on Antuanthama) · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
         }
       ]
     },
@@ -2126,6 +2336,18 @@
           "translation": "Ngunga",
           "pronunciation": "",
           "context": "Arthur H. Neumann (1898) Elephant-Hunting in East Equatorial Africa (Public Domain), p. 63"
+        },
+        {
+          "english": "Lower grinding stone / upper rubbing stone (gneiss or granite)",
+          "translation": "iiga / intheo",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 80 · Domestic Tools · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Fire",
+          "translation": "Mω·aki",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 100 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -2472,6 +2694,36 @@
           "english": "To eat",
           "translation": "ila",
           "context": "CLDF ASJP v20 Wordlist (MERU, CC-BY-4.0)"
+        },
+        {
+          "english": "Domestic eating/receiving utensil (placed under grinding stone",
+          "translation": "nzelis / nzeli",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 73, 80, 81 · Domestic Utensil · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Domestic eating/receiving utensil (placed under grinding stone; individual eating dish)"
+        },
+        {
+          "english": "Grain storage baskets/containers for threshed grain",
+          "translation": "kingas",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 73, 80 · Agriculture/Storage · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Tharaka double-edged sword",
+          "translation": "luiyo",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 78 · Weapons · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Tharaka double-edged sword (28–32 in.) worn on right side in red leather sheath"
+        },
+        {
+          "english": "Bulrush millet (staple grain crop)",
+          "translation": "muweli / Mweli",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 73, 80 · Agriculture/Food · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Wooden sounding board of Mukonguu tree / tightly bound",
+          "translation": "lukongoro / keusia",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 82 · Music/Dance · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Wooden sounding board of Mukonguu tree / tightly bound bundle of kianduli twigs used to beat it in the men's dance"
         }
       ]
     },
@@ -3084,6 +3336,36 @@
           "english": "mattress (Kĩĩtharaka)",
           "translation": "mokɔndɔrɔ",
           "context": "Kithaka wa Mberia, The Phonology of Borrowed Words in Kitharaka"
+        },
+        {
+          "english": "Woven baskets (traded to Akamba for beads)",
+          "translation": "chiondos",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 73, 89, 90 · Domestic Utensil · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Axe (22-inch shaft) carried on the belt",
+          "translation": "ithoka",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 78 · Weapons/Tools · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Tobacco pipes smoked by old men",
+          "translation": "morangi",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 90 · Material Culture · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "House",
+          "translation": "Ny·umba. Ka·ŧunω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 102 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Francolin",
+          "translation": "Kiringende",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Swahili (in Mweru table)) · Hobley (1910), p. 157 · Comparative lexical gloss — \"Swa. = Kiringende\" (note on Amatu) · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
         }
       ]
     },
@@ -3365,6 +3647,12 @@
           "english": "White (Kitharaka dialect)",
           "translation": "mosoŋko",
           "context": "Kitharaka Phonology Corpus (wa Mberia, Open Access; cf. mzungu)"
+        },
+        {
+          "english": "Cold",
+          "translation": "Hehω Bebω (11a)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 99 · Noun (11a = Meru) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -3514,6 +3802,12 @@
           "english": "Good",
           "translation": "ēga",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
+        },
+        {
+          "english": "God",
+          "translation": "Ŋ·gai ; ma·kai",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 101 · Noun · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -4054,6 +4348,12 @@
           "translation": "Dicemba",
           "pronunciation": "",
           "context": "Unicode CLDR JSON (Unicode-3.0, https://github.com/unicode-org/cldr-json)"
+        },
+        {
+          "english": "Hour-glass-shaped cylinder of spirally wound brass wire",
+          "translation": "ngotonggi",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 75–76 · Ornament (Fig. 3.1) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Hour-glass-shaped cylinder of spirally wound brass wire worn by old men in extended ear-lobe"
         }
       ]
     },
@@ -20750,6 +21050,84 @@
           "translation": "mwarĩki",
           "pronunciation": "mwareki",
           "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+        },
+        {
+          "english": "Pigeon peas / sorghum / cowpeas / small beans in a long",
+          "translation": "mbazi / matama / kundi / ngenna / mobia",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 80, 88 · Agriculture/Crops · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Pigeon peas / sorghum / cowpeas / small beans in a long thin pod (also Nginna, p. 88) / black beans"
+        },
+        {
+          "english": "Arm",
+          "translation": "U·ωkω ; m·ωkω. Ku·ωkω or Gu·ωkω ; m·ωkω",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 98 · Noun (sg. ; pl.) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Arrow",
+          "translation": "Mω·gue ; pl. me·gue. Mŭ·gūi, Mu·gwe (11a)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 98 · Noun (11a = Meru) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Bow",
+          "translation": "Ω·ttá, U·ta, U·taa (11a)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 99 · Noun (11a = Meru) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Chief",
+          "translation": "Mo·zamaki. Mu·ŧamaki",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 99 · Noun / Title · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Child",
+          "translation": "Mw·ana ; pl. ci·ana or si·ana. K·ana ; tw·ana. Ka·regω ; tω- ♀",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 99 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Eye",
+          "translation": "Di·zω or Ri·ŧω ; ma·",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 100 · Noun (Ki·mωne = eyelid) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Man",
+          "translation": "Mu·ndu ; pl. a·ndu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 103 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Sun",
+          "translation": "Li·yūa, Ri·ua ; ma-. N·jua",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 105 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Water",
+          "translation": "Ma·e. Rω·e, Ru·gi (11 a)",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 106 · Noun (11a = Meru) · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "One / Two / Three / Four / Five",
+          "translation": "E·müĕ / I·hiri (·iri) / I·zatu or I·ŧatu / I·nya, ·nna / I·zanω. I·ŧanu",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 107 · Numerals 1–5 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "Six / Seven / Eight / Nine / Ten",
+          "translation": "Sasatω. I·tandatu / Ŋ·gūānja, Mu·guanja / Nyanya, ·nana / K·enda / I·kumi",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, p. 107 · Numerals 6–10 · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "To eat / die / know / love, want / see",
+          "translation": "·ria / ·kua / ·menya / ·enda / ·ōna",
+          "pronunciation": "",
+          "context": "Johnston (1919) Bantu Comparative Vol. I (11. Kikuyu / 11a. Meru) · Johnston (1919), Vol. I, pp. 110–111 · Verb roots (prefix Kω·, Ku·, Gu·) · https://archive.org/details/comparativestudy01johnuoft"
         }
       ]
     },
@@ -22677,6 +23055,426 @@
           "translation": "Limeru",
           "pronunciation": "lee-meh-roo",
           "context": "pp. 57, 81 ('Limeru, as the district north-east of Kenia is called... comprises the whole of North-East Kenia') — A. Arkell-Hardwick (1903), An Ivory Trader in North Kenia (Longmans, Green & Co., Project Gutenberg #71971, Public Domain) — https://www.gutenberg.org/cache/epub/71971/pg71971-images.html"
+        },
+        {
+          "english": "Male grade up to circumcision",
+          "translation": "Kaegi",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 71 · Life/Age Grade · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Female grade up to circumcision",
+          "translation": "Kali",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 71 · Life/Age Grade · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Warrior up to marriage",
+          "translation": "Ngoromo",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 71, 74, 77, 84 · Life/Age Grade (paired with Ntheka — see p. 84) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Warrior up to marriage / Married man up to circumcision of",
+          "translation": "Ntheka / Ntheka Nguru",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 71, 84 · Life/Age Grade (Nthekla on p. 71 is OCR for Ntheka, verified as Ntheka on p. 84) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Warrior up to marriage / Married man up to circumcision of first-born"
+        },
+        {
+          "english": "Female grade: married but not yet given birth to a child",
+          "translation": "Mwiki",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 71 · Life/Age Grade · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Male grade: having a circumcised child",
+          "translation": "Kisungi / Kisungu",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 71, 84, 86 · Life/Age Grade (spelled Kisungi pp. 71, 84; Kisungu p. 86) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Female grade: having a circumcised child",
+          "translation": "Mwekuru",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 71 · Life/Age Grade · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "Elder (man with circumcised child",
+          "translation": "Mukuru (pl. Akuru)",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 71, 84–89 · Life/Age Grade (Mundu Mukuru p. 71; Akuru pp. 84–89) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Elder (man with circumcised child; Mbabu and Mkilamana are circumcision-year grades)"
+        },
+        {
+          "english": "Unmarried girl / young woman (must leave the presence of Akuru",
+          "translation": "Matika",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 83, 89 · Social Grade · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Unmarried girl / young woman (must leave the presence of Akuru; addressed in Mboboi dance song)"
+        },
+        {
+          "english": "Short leather kilt worn by women",
+          "translation": "nguo",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 75, 77 · Dress · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "3–4 coils of brass or iron wire",
+          "translation": "matulutia",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 75–77 · Ornament (Fig. 3.4) · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · 3–4 coils of brass or iron wire (~3 in. diameter) worn by married women in extended ear-lobes"
+        },
+        {
+          "english": "Slightly fermented fine flour pap / gruel",
+          "translation": "usuu",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 80, 84 · Food/Ritual · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Slightly fermented fine flour pap / gruel (also used in first head-shaving ceremony, p. 84)"
+        },
+        {
+          "english": "Hindquarters",
+          "translation": "muliro / kwoko / kuuru / lutu",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 81 · Anatomy/Meat Distribution (spleen = wengo, \"as in Kiswahili\") · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Hindquarters (eldest wife's meat share) / foreleg (elder's brother's share) / hind leg (brother's wife's share) / chest (Ngoromo & boys' share)"
+        },
+        {
+          "english": "Circle-and-partner dance / double-time partner or shield",
+          "translation": "Nzungo / Mungeri / Mboboi",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 82–83 · Dances · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Circle-and-partner dance / double-time partner or shield dance / circumcision & great-occasion dance"
+        },
+        {
+          "english": "Small gazelle",
+          "translation": "Nthia",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), pp. 88–89 · Clans/Fauna · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Small gazelle (clan totem/forbidden thing of Utonga, Kandi, Mululu, Nginna, Kamurigi, Kanzero clans)"
+        },
+        {
+          "english": "Clan named after legendary seeker of rain",
+          "translation": "Mbula / kueni",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 88 · Clans/Mythology · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf · Clan named after legendary seeker of rain (totem: rain spirit) / thunder (\"God brings down the rain by beating his drum\")"
+        },
+        {
+          "english": "Clan name meaning \"blood\" (name of original head of clan)",
+          "translation": "Kanthakami",
+          "pronunciation": "",
+          "context": "Champion (1912) The Atharaka (Kitharaka) · Champion (1912), p. 89 · Clans/Anatomy · https://archive.org/download/crossref-pre-1923-scholarly-works/10.2307%252F2840643.zip/10.2307%252F2843233.pdf"
+        },
+        {
+          "english": "large tribe on the North and N.E. slopes of Kenia and on",
+          "translation": "Mweru",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Ethnonym / Toponym — large tribe on the North and N.E. slopes of Kenia and on the Jombeni range · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Ethnonym / Toponym | large tribe on the North and N.E. slopes of Kenia and on the Jombeni range"
+        },
+        {
+          "english": "mountain (\"North and N.E. slopes of Kenia\")",
+          "translation": "Kenia",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Mweru section)) · Hobley (1910), p. 156 · Toponym — mountain (\"North and N.E. slopes of Kenia\") · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Toponym"
+        },
+        {
+          "english": "range running N.E. towards the Euaso Nyiro",
+          "translation": "Jombeni",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Mweru section)) · Hobley (1910), p. 156 · Toponym — range running N.E. towards the Euaso Nyiro · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Toponym"
+        },
+        {
+          "english": "river/waterway",
+          "translation": "Euaso Nyiro",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional / Toponym (Mweru section)) · Hobley (1910), p. 156 · Toponym — river/waterway · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Toponym"
+        },
+        {
+          "english": "mentioned in comparison (\"They are not pure A-Kikuyu\")",
+          "translation": "A-Kikuyu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Comparative Ethnonym (Mweru section)) · Hobley (1910), p. 156 · Ethnonym — mentioned in comparison (\"They are not pure A-Kikuyu\") · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Ethnonym"
+        },
+        {
+          "english": "noted for intermarriage (\"strong strain of Masai blood\")",
+          "translation": "Masai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Comparative Ethnonym (Mweru section)) · Hobley (1910), p. 156 · Ethnonym — noted for intermarriage (\"strong strain of Masai blood\") · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Ethnonym"
+        },
+        {
+          "english": "noted as having settled among and intermarried with the Mweru",
+          "translation": "Laikipiak",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Laikipiak (in Mweru section)) · Hobley (1910), p. 156 · Ethnonym — noted as having settled among and intermarried with the Mweru · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Gloss: Ethnonym"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (1); Chief: Kamuru",
+          "translation": "Janjai",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (1); Chief: Kamuru · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (2); Chief: Njoo",
+          "translation": "Oringo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (2); Chief: Njoo · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (3); Chief: Waikaiwa",
+          "translation": "Kunati",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (3); Chief: Waikaiwa · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (4); Chief: Waivori",
+          "translation": "Mbuya",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (4); Chief: Waivori · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (5); Chief: Mutwiarando",
+          "translation": "Akithii",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (5); Chief: Mutwiarando · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (6)",
+          "translation": "Athwana",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (6); Chief: Kirigwa (spelled Atwana on p. 158) · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Geographical division / Sub-tribe (6); Chief: Kirigwa (spelled Atwana on p. 158)"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (7); Chief: Ndaminuki",
+          "translation": "Muthara",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (7); Chief: Ndaminuki · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (8); no chief listed",
+          "translation": "Karama",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (8); no chief listed · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (9); Chief: Kiliungu",
+          "translation": "Iembe",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (9); Chief: Kiliungu · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (10); Chief: Njaiili",
+          "translation": "Muchi Muguru",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (10); Chief: Njaiili · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (11); Chief: Mutiarando",
+          "translation": "Kithio",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (11); Chief: Mutiarando · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (12); no chief listed",
+          "translation": "Amwa",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (12); no chief listed · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (13); Chief: Paimwisu",
+          "translation": "Mnithu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (13); Chief: Paimwisu · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (14); chief blank",
+          "translation": "Nyangini",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (14); chief blank · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (15); chief blank",
+          "translation": "Tera",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (15); chief blank · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (16); chief blank",
+          "translation": "Ntagira",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (16); chief blank · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (17); chief blank",
+          "translation": "Karuanjoi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (17); chief blank · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (18); chief blank",
+          "translation": "Kithironi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (18); chief blank · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (19); chief blank",
+          "translation": "Rukho",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (19); chief blank · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (20); chief blank",
+          "translation": "Iokhi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (20); chief blank · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (21)",
+          "translation": "Ameng̃nendi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (21); tilde over g (g̃); chief blank · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up · Geographical division / Sub-tribe (21); tilde over g (g̃); chief blank"
+        },
+        {
+          "english": "Geographical division / Sub-tribe (22); Chief: Paratobi",
+          "translation": "Thaicho",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 156 · Geographical division / Sub-tribe (22); Chief: Paratobi · https://archive.org/details/ethnologyofakamb00hobluoft/page/156/mode/1up"
+        },
+        {
+          "english": "(clan/division term)",
+          "translation": "gilat",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru) / Masai comparison) · Hobley (1910), p. 157 · Vocabulary — \"The Mweru also have gilat like the Masai\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "clan / totemistic divisions",
+          "translation": "Mwiria",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Vocabulary — \"these divisions have a totemistic basis and are called 'Mwiria'\"; also glossed as \"clan\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "totem; the \"forbidden thing\"",
+          "translation": "Netiri",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Vocabulary — table header Totem or Netiri; prose: \"The totem is called Netiri or the 'forbidden thing.'\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "baskets",
+          "translation": "vyondo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Vocabulary — \"their 'vyondo' or baskets\" (in Athanya totem entry) · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "a plant which has an edible root",
+          "translation": "Mukui",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Botanical term — totem of Mwiria Amakui · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "louse",
+          "translation": "Anda",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Vocabulary — \"Anda is Mweru word for louse\" (note on Mwianda) · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "(totem blank)",
+          "translation": "Ntowaita",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (1) — noted in prose as \"the dominant Mwiria or clan\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "The twine with which their \"vyondo\" or baskets are made",
+          "translation": "Athanya",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (2) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "White cattle",
+          "translation": "Njaru",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (3) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Speckled or mottled cattle",
+          "translation": "Nthia",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (4) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Red cattle",
+          "translation": "Ntuni",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (5) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "A plant called Mukui which has an edible root",
+          "translation": "Amakui",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (6) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Giraffe",
+          "translation": "Athinga",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (7) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Mpala",
+          "translation": "Antuanthama",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (8) & Totem/Netiri — note: \"Antu in Mweru language means people\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Goats",
+          "translation": "Singamburi",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (9) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Neotragus (dik dik); means the greedy people",
+          "translation": "Antwa mwakia",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (10) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Black cattle",
+          "translation": "Angilo",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (11) & Totem/Netiri · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Lice",
+          "translation": "Mwianda",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (12) & Totem/Netiri — note: \"Anda is Mweru word for louse\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "Francolin",
+          "translation": "Amatu",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 157 · Clan (Mwiria) (13) & Totem/Netiri — note: \"Matu = ears in Mweru\"; \"Swa. = Kiringende\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/157/mode/1up"
+        },
+        {
+          "english": "former name of the Ntowaita clan",
+          "translation": "Njiru",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 158 · Clan / former name — former name of the Ntowaita clan (\"they were called Njiru in those days\") · https://archive.org/details/ethnologyofakamb00hobluoft/page/158/mode/1up · Gloss: Clan / former name | former name of the Ntowaita clan (\"they were called Njiru in those days\")"
+        },
+        {
+          "english": "came to Mweru and settled there",
+          "translation": "Mweru",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 158 · Toponym / Tribe — \"came to Mweru and settled there\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/158/mode/1up · Gloss: Toponym / Tribe"
+        },
+        {
+          "english": "(derived from ku-ita)",
+          "translation": "NTOWAITA / Ntowaita",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 158 · Clan / family name — derived from ku-ita · https://archive.org/details/ethnologyofakamb00hobluoft/page/158/mode/1up"
+        },
+        {
+          "english": "The Ntowaita are mostly located among the Atwana sub-tribe\"",
+          "translation": "Atwana",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Mweru (Meru)) · Hobley (1910), p. 158 · Sub-tribe — \"The Ntowaita are mostly located among the Atwana sub-tribe\" (spelled Athwana on p. 156) · https://archive.org/details/ethnologyofakamb00hobluoft/page/158/mode/1up · Gloss: Sub-tribe | The Ntowaita are mostly located among the Atwana sub-tribe\" (spelled Athwana on p. 156)"
+        },
+        {
+          "english": "filtered down from the Semitic races of Bworana",
+          "translation": "Bworana",
+          "pronunciation": "",
+          "context": "Hobley (1910) Ethnology Appendix (Regional Ethnonym / Toponym (Mweru section)) · Hobley (1910), p. 159 · Toponym / People — \"filtered down from the Semitic races of Bworana\" · https://archive.org/details/ethnologyofakamb00hobluoft/page/159/mode/1up · Gloss: Toponym / People"
         }
       ]
     }
@@ -22684,5 +23482,5 @@
   "source": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml); Arthur M. Champion (1912) The Atharaka (JRAI Vol. 42, Public Domain)",
   "isoCode": "mer",
   "glottocode": "meru1245",
-  "totalEntries": 4304
+  "totalEntries": 4437
 }

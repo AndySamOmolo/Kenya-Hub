@@ -57,6 +57,20 @@ HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
 HTTP_SESSION = requests.Session()
 HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-Permissive-Ingestor/3.1"})
 
+def load_hf_stream(repo: str, config: str | None = None, split: str = "train"):
+    """Load a Hugging Face dataset in streaming mode with trust_remote_code=True and safe fallback."""
+    assert_repo_allowed(repo)
+    from datasets import load_dataset
+
+    kwargs: dict[str, Any] = {"split": split, "streaming": True, "token": HF_TOKEN, "trust_remote_code": True}
+    args = (repo, config) if config else (repo,)
+    try:
+        return load_dataset(*args, **kwargs)
+    except (TypeError, ValueError):
+        kwargs.pop("trust_remote_code", None)
+        return load_dataset(*args, **kwargs)
+
+
 ISO_TO_KENYAHUB_LANG: dict[str, str] = {
     "sw": "swahili", "swa": "swahili", "swh": "swahili",
     "ki": "kikuyu", "kik": "kikuyu",
@@ -125,7 +139,7 @@ HF_PERMISSIVE_TEXT_JOBS: list[dict[str, Any]] = [
         "id": "english-to-luo-opus-secular",
         "lang_id": "luo",
         "repo": "BrianMwangi/english-to-luo-opus",
-        "config": "default",
+        "config": "v1.0",
         "split": "train",
         "en_cols": ("english", "en", "source", "src"),
         "tr_cols": ("luo", "dholuo", "target", "tgt"),
@@ -188,22 +202,6 @@ HF_PERMISSIVE_TEXT_JOBS: list[dict[str, Any]] = [
     },
     *[
         {
-            "id": f"opus-ubuntu-en-{lc}",
-            "lang_id": lid,
-            "repo": "Helsinki-NLP/opus_ubuntu",
-            "config": f"en-{lc}",
-            "split": "train",
-            "en_cols": ("en", "english"),
-            "tr_cols": (lc, lid),
-            "target_cat": "phrases",
-            "license": "BSD-3-Clause",
-            "gated": False,
-            "citation": f"OPUS Ubuntu en-{lc} UI Localization (BSD-3-Clause, https://huggingface.co/datasets/Helsinki-NLP/opus_ubuntu)",
-        }
-        for lc, lid in (("sw", "swahili"), ("so", "somali"), ("om", "borana"), ("ki", "kikuyu"), ("luo", "luo"))
-    ],
-    *[
-        {
             "id": f"allenai-nllb-eng-{nc.split('_')[0]}",
             "lang_id": lid,
             "repo": "allenai/nllb",
@@ -230,13 +228,16 @@ HF_BENCHMARK_JOBS: list[dict[str, Any]] = [
     {"id": "masakhane-injongointent", "repo": "masakhane/InjongoIntent", "config": "swa", "splits": ("test",), "license": "CC-BY-4.0", "langs": ["swahili"]},
     {"id": "masakhane-afrifact", "repo": "masakhane/AfrIFact", "config": "default", "splits": ("test",), "license": "Apache-2.0", "langs": ["swahili", "borana"]},
     {"id": "masakhane-uhura-truthfulqa", "repo": "masakhane/uhura-truthfulqa", "config": "sw_multiple_choice", "splits": ("test",), "license": "Apache-2.0", "langs": ["swahili"]},
-    {"id": "masakhane-uhura-arc-easy", "repo": "masakhane/uhura-arc-easy", "config": "sw", "splits": ("test",), "license": "Apache-2.0", "langs": ["swahili"]},
+    {"id": "masakhane-uhura-arc-easy", "repo": "masakhane/uhura-arc-easy", "config": "sw_multiple_choice", "splits": ("test",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "cohere-aya-ke", "repo": "CohereLabs/aya_dataset", "config": "default", "splits": ("train",), "license": "Apache-2.0", "lang_col": "language_code", "allow_langs": {"swh", "som", "orm"}},
     {"id": "afrihate-ke", "repo": "afrihate/afrihate", "config": "swa", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili", "somali", "borana"]},
     {"id": "tabularis-swahili-sentiment", "repo": "tabularisai/swahili-sentiment-dataset", "config": "default", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "swahili-finetome-20k", "repo": "ngusadeep/Swahili-FineTome-20k", "config": "default", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "ea-mobile-money-safety-audit", "repo": "LeoCleinte/east-africa-mobile-money-safety-audit", "config": "default", "splits": ("train",), "license": "CC-BY-4.0", "langs": ["swahili"]},
-    {"id": "facebook-belebele-ke", "repo": "facebook/belebele", "config": "default", "splits": ("swh_Latn", "luo_Latn", "som_Latn", "gaz_Latn"), "license": "CC-BY-SA-4.0", "langs": ["swahili", "luo", "somali", "borana"]},
+    {"id": "facebook-belebele-swh", "repo": "facebook/belebele", "config": "swh_Latn", "splits": ("test",), "license": "CC-BY-SA-4.0", "langs": ["swahili"]},
+    {"id": "facebook-belebele-luo", "repo": "facebook/belebele", "config": "luo_Latn", "splits": ("test",), "license": "CC-BY-SA-4.0", "langs": ["luo"]},
+    {"id": "facebook-belebele-som", "repo": "facebook/belebele", "config": "som_Latn", "splits": ("test",), "license": "CC-BY-SA-4.0", "langs": ["somali"]},
+    {"id": "facebook-belebele-gaz", "repo": "facebook/belebele", "config": "gaz_Latn", "splits": ("test",), "license": "CC-BY-SA-4.0", "langs": ["borana"]},
     {"id": "bigscience-xp3-sw", "repo": "bigscience/xP3", "config": "sw", "splits": ("train",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "bigscience-xp3-ki", "repo": "bigscience/xP3", "config": "ki", "splits": ("train",), "license": "Apache-2.0", "langs": ["kikuyu"]}
 ]
@@ -247,9 +248,7 @@ OER_STORYBOOK_JOBS: list[dict[str, Any]] = [
 ]
 
 WEB_FREQ_CORPORA: list[dict[str, Any]] = [
-    {"id": "fineweb-2", "repo": "HuggingFaceFW/fineweb-2", "configs": ["swh_Latn", "som_Latn", "orm_Latn", "guz_Latn", "mas_Latn", "teo_Latn", "kam_Latn"], "license": "ODC-By"},
-    {"id": "madlad-400", "repo": "allenai/MADLAD-400", "configs": ["sw", "so", "om", "ki", "luo", "kam", "guz", "mas", "teo"], "license": "ODC-By"},
-    {"id": "hplt-v3", "repo": "HPLT/HPLT3.0", "configs": ["swh_Latn", "som_Latn", "orm_Latn", "kik_Latn", "luo_Latn", "kam_Latn"], "license": "CC0-1.0"},
+    {"id": "fineweb-2", "repo": "HuggingFaceFW/fineweb-2", "configs": ["swh_Latn", "som_Latn", "gaz_Latn", "kik_Latn", "luo_Latn", "mer_Latn", "guz_Latn", "mas_Latn", "teo_Latn", "kam_Latn", "tuv_Latn"], "license": "ODC-By"},
     {"id": "wura", "repo": "castorini/wura", "configs": ["swa", "som", "orm", "kik", "luo"], "license": "Apache-2.0"},
     {"id": "culturax", "repo": "uonlp/CulturaX", "configs": ["sw", "so"], "license": "ODC-By"},
     {"id": "glotcc-v1", "repo": "cis-lmu/GlotCC-V1", "configs": ["swh-Latn", "som-Latn", "orm-Latn", "luo-Latn", "teo-Latn", "kik-Latn", "guz-Latn", "mas-Latn", "kam-Latn"], "license": "CC0-1.0"}
@@ -372,13 +371,22 @@ def ingest_hf_jobs(lang_filter: str, max_rows: int, only_ungated: bool, dry_run:
         if dry_run:
             continue
         try:
-            ds = load_dataset(job["repo"], job["config"], split=job["split"], streaming=True, token=HF_TOKEN)
+            ds = load_hf_stream(job["repo"], job["config"], split=job["split"])
             batch = []
             for idx, row in enumerate(ds):
                 if idx >= max_rows:
                     break
-                en_val = next((row.get(c) for c in job["en_cols"] if row.get(c)), None)
-                tr_val = next((row.get(c) for c in job["tr_cols"] if row.get(c)), None)
+                row_ci = {str(k).lower(): v for k, v in row.items()}
+                tr_dict = row.get("translation") if isinstance(row.get("translation"), dict) else {}
+                tr_dict_ci = {str(k).lower(): v for k, v in tr_dict.items()}
+                en_val = next(
+                    (v for c in job["en_cols"] for v in (row.get(c), row_ci.get(c.lower()), tr_dict.get(c), tr_dict_ci.get(c.lower())) if v),
+                    None,
+                )
+                tr_val = next(
+                    (v for c in job["tr_cols"] for v in (row.get(c), row_ci.get(c.lower()), tr_dict.get(c), tr_dict_ci.get(c.lower())) if v),
+                    None,
+                )
                 if isinstance(tr_val, list):
                     tr_val = ", ".join(str(x) for x in tr_val if x)
                 if not (en_val and tr_val):
@@ -403,9 +411,7 @@ def ingest_panlex_cc0(lang_filter: str, max_rows: int, dry_run: bool) -> dict[st
         return {}
     added_by_lang: dict[str, int] = {}
     try:
-        from datasets import load_dataset
-
-        ds = load_dataset(repo, split="train", streaming=True, token=HF_TOKEN)
+        ds = load_hf_stream(repo, None, split="train")
         citation = "PanLex CC0 Lexicon (CC0-1.0, https://huggingface.co/datasets/cointegrated/panlex-meanings)"
         buckets: dict[str, list[dict[str, Any]]] = {}
         staging_buckets: dict[str, list[dict[str, Any]]] = {}
@@ -571,7 +577,7 @@ def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool) -> dic
                         for e, t in list(zip(eng_lines, tr_lines))[:max_rows]
                         if e.strip() and t.strip()
                     ]
-                    added[lid] = added.get(lid, 0) + merge_entries_into_dictionary(lid, batch, "phrases")
+                    added_by_lang[lid] = added_by_lang.get(lid, 0) + merge_entries_into_dictionary(lid, batch, "phrases")
                 BENCHMARKS_DIR.mkdir(parents=True, exist_ok=True)
                 (BENCHMARKS_DIR / "hornmt-orm-som.jsonl").write_text(
                     "\n".join(json.dumps({"eng": e}, ensure_ascii=False) for e in eng_lines[:max_rows]) + "\n",
@@ -610,7 +616,7 @@ def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool) -> dic
                                 for e, s in list(zip(en_l, sw_l))[:max_rows]
                                 if e.strip() and s.strip()
                             ]
-                            added["swahili"] = added.get("swahili", 0) + merge_entries_into_dictionary("swahili", batch, "phrases")
+                            added_by_lang["swahili"] = added_by_lang.get("swahili", 0) + merge_entries_into_dictionary("swahili", batch, "phrases")
             elif src["id"] == "tatoeba-text-only":
                 # Strictly text-only exports (never audio) for Swahili, Somali, Oromo, Rendille
                 for iso, lang_id in (("swh", "swahili"), ("som", "somali"), ("orm", "borana"), ("rel", "rendille")):
@@ -681,12 +687,10 @@ def ingest_benchmarks(max_rows: int, dry_run: bool) -> None:
         if dry_run:
             continue
         try:
-            from datasets import load_dataset
-
             BENCHMARKS_DIR.mkdir(parents=True, exist_ok=True)
             rows_out = []
             for split in job["splits"]:
-                ds = load_dataset(job["repo"], job["config"], split=split, streaming=True, token=HF_TOKEN)
+                ds = load_hf_stream(job["repo"], job["config"], split=split)
                 for idx, row in enumerate(ds):
                     if len(rows_out) >= max_rows or idx >= max_rows * 4:
                         break
@@ -709,10 +713,8 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool) -> None:
         if dry_run:
             continue
         try:
-            from datasets import load_dataset
-
             READERS_DIR.mkdir(parents=True, exist_ok=True)
-            ds = load_dataset(job["repo"], job["config"], split=job["split"], streaming=True, token=HF_TOKEN)
+            ds = load_hf_stream(job["repo"], job["config"], split=job["split"])
             kept = []
             for idx, row in enumerate(ds):
                 if len(kept) >= max_rows or idx >= max_rows * 10:
@@ -731,20 +733,7 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool) -> None:
         except Exception as exc:
             print(f"  [warn] OER Storybook {job['id']} skipped: {exc}")
 
-    # Also query Global ASP (African Storybook mirror) & Global Digital Library APIs
-    print("[OER Storybook] Global ASP / African Storybook & Global Digital Library (filtered CC-BY-4.0)")
-    if not dry_run:
-        READERS_DIR.mkdir(parents=True, exist_ok=True)
-        try:
-            gdl_resp = HTTP_SESSION.get("https://api.digitallibrary.io/book-api/v1/books/sw?page=1&page-size=50", timeout=20)
-            if gdl_resp.ok:
-                books = [
-                    b for b in gdl_resp.json().get("results", [])
-                    if is_permissive_oer_row(b.get("license", {}).get("name", "CC-BY-4.0"), b.get("publisher", {}).get("name", ""))
-                ]
-                (READERS_DIR / "global-digital-library-sw.json").write_text(json.dumps(books, indent=2, ensure_ascii=False), encoding="utf-8")
-        except Exception as exc:
-            print(f"  [warn] Global Digital Library notice: {exc}")
+    # Global Digital Library KSL (xki) & Kenyan web storybooks are linked directly in public/ksl-index.json
 
 
 def build_web_frequency_lists(max_rows: int, dry_run: bool) -> None:
@@ -753,12 +742,10 @@ def build_web_frequency_lists(max_rows: int, dry_run: bool) -> None:
         print(f"[Web Freq-Only] {corp['id']} ({corp['repo']}) [{corp['license']}] — strips jw.org/bible.com")
         if dry_run:
             continue
-        try:
-            from datasets import load_dataset
-
-            FREQ_DIR.mkdir(parents=True, exist_ok=True)
-            for cfg in corp["configs"]:
-                ds = load_dataset(corp["repo"], cfg, split="train", streaming=True, token=HF_TOKEN)
+        FREQ_DIR.mkdir(parents=True, exist_ok=True)
+        for cfg in corp["configs"]:
+            try:
+                ds = load_hf_stream(corp["repo"], cfg, split="train")
                 counts: Counter[str] = Counter()
                 for idx, row in enumerate(ds):
                     if idx >= max_rows:
@@ -771,8 +758,8 @@ def build_web_frequency_lists(max_rows: int, dry_run: bool) -> None:
                     json.dumps({"corpus": corp["repo"], "config": cfg, "license": corp["license"], "topWords": counts.most_common(2000)}, indent=2, ensure_ascii=False),
                     encoding="utf-8",
                 )
-        except Exception as exc:
-            print(f"  [warn] Freq corpus {corp['id']} skipped: {exc}")
+            except Exception as exc:
+                print(f"  [warn] Freq corpus {corp['id']} ({cfg}) skipped: {exc}")
 
 
 def main() -> None:
