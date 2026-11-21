@@ -1,0 +1,60 @@
+appId: ke.co.kenyahub.app
+name: "04 - 47 Counties Hub (All Tabs), Matatu Routes & Saved Tools"
+---
+# 1. 47 Counties Hub: Directory, Budgets, Constituencies, County Detail
+- openLink: "kenyahub://county"
+- extendedWaitUntil:
+    visible: "47 Counties Hub"
+    timeout: 15000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-counties-directory"
+
+- tapOn: "Budgets (FY 25/26)"
+- extendedWaitUntil:
+    visible: ".*Absorbed.*"
+    timeout: 10000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-counties-budgets"
+
+- tapOn:
+    text: ".*Constituencies.*"
+    optional: true
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-counties-constituencies"
+
+- openLink: "kenyahub://county/mombasa"
+- extendedWaitUntil:
+    visible: ".*Mombasa.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-county-mombasa"
+
+- openLink: "kenyahub://county/nairobi"
+- extendedWaitUntil:
+    visible: ".*Nairobi.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-county-nairobi"
+
+# 2. Matatu Routes Hub & Detail
+- openLink: "kenyahub://matatu"
+- extendedWaitUntil:
+    visible: ".*Matatu.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-matatu-hub"
+
+- openLink: "kenyahub://matatu/route-2-cbd-karen"
+- extendedWaitUntil:
+    visible: ".*Karen.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-matatu-karen"
+
+# 3. Saved Tools Tab
+- openLink: "kenyahub://saved"
+- extendedWaitUntil:
+    visible: ".*Saved.*|.*Pinned.*"
+    timeout: 12000
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "04-saved-tab"

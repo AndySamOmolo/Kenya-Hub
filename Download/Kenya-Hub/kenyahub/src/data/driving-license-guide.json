@@ -1,0 +1,156 @@
+{
+  "source": "National Transport and Safety Authority (NTSA) & Traffic Act (Cap 403)",
+  "lastUpdated": "2026-11-20",
+  "licenseClasses": [
+    {
+      "class": "A",
+      "name": "Motorcycles & Tricycles (A1, A2, A3)",
+      "description": "Mopeds, boda boda motorcycles, and three-wheeled tuk-tuks",
+      "minimumAge": 18,
+      "fee": 1750,
+      "requirements": [
+        "Valid medical (DL Form 1)",
+        "Driving school certificate (min 10 hours)",
+        "Theory test pass",
+        "Practical test pass"
+      ]
+    },
+    {
+      "class": "B",
+      "name": "Light Motor Vehicles (B1, B2, B3)",
+      "description": "Saloon cars, SUVs, pick-ups, and professional light vehicles not exceeding 3,500 kg GVW",
+      "minimumAge": 18,
+      "fee": 1750,
+      "requirements": [
+        "Valid medical (DL Form 1)",
+        "Driving school certificate (min 40 hours)",
+        "Theory test pass",
+        "Practical test pass"
+      ]
+    },
+    {
+      "class": "C",
+      "name": "Heavy Commercial Vehicles (C1, C2, CE)",
+      "description": "Light/heavy trucks, lorries, and articulated commercial combinations exceeding 3,500 kg GVW",
+      "minimumAge": 21,
+      "fee": 1750,
+      "requirements": [
+        "Must already hold Class B for 2+ years",
+        "Driving school certificate for Class C",
+        "Theory test pass",
+        "Practical test pass"
+      ]
+    },
+    {
+      "class": "D",
+      "name": "Public Service Vehicles — PSV (D1, D2, D3)",
+      "description": "Matatus (up to 14 passengers — D1), minibuses/buses (15–33 passengers — D2), and large buses/coaches (33+ passengers — D3)",
+      "minimumAge": 24,
+      "fee": 1750,
+      "requirements": [
+        "Must hold Class B or C for 3+ years (depends on D1/D2/D3)",
+        "Valid Police Clearance Certificate (Certificate of Good Conduct)",
+        "NTSA PSV badge & medical clearance (DL Form 1)",
+        "PSV driving school endorsement & practical test pass"
+      ]
+    },
+    {
+      "class": "E",
+      "name": "Special Professional / Hazardous & Heavy Trailers",
+      "description": "Heavy articulated trailers, fuel tankers, and hazardous-material (HazMat) commercial transport",
+      "minimumAge": 24,
+      "fee": 1750,
+      "requirements": [
+        "Must hold Class C / CE for 2+ years",
+        "Specialized HazMat / articulated trailer training certificate",
+        "Valid medical (DL Form 1) & Police Clearance",
+        "NTSA theory and practical test pass"
+      ]
+    },
+    {
+      "class": "F",
+      "name": "Persons Living with Disability (Adapted Vehicles)",
+      "description": "Specially modified / adapted light motor vehicles for drivers with physical disabilities",
+      "minimumAge": 18,
+      "fee": 1750,
+      "requirements": [
+        "Medical fitness & vehicle adaptation assessment",
+        "Driving school training on adapted vehicle",
+        "NTSA theory and practical test pass"
+      ]
+    },
+    {
+      "class": "G",
+      "name": "Industrial, Agricultural & Earth-Moving Plant",
+      "description": "Agricultural tractors, forklifts, cranes, graders, and special-purpose plant",
+      "minimumAge": 18,
+      "fee": 1750,
+      "requirements": [
+        "Valid medical (DL Form 1)",
+        "Plant operator training certificate",
+        "Practical test pass"
+      ]
+    }
+  ],
+  "applicationProcess": [
+    {
+      "step": 1,
+      "title": "Medical Examination (DL Form 1)",
+      "description": "Visit any registered medical practitioner for eyesight and general fitness examination",
+      "cost": "KES 500 – 1,500 (doctor's fee)",
+      "documents": ["National ID", "Passport photo"]
+    },
+    {
+      "step": 2,
+      "title": "Enrol at a Driving School",
+      "description": "Attend an NTSA-licensed driving school for practical training",
+      "cost": "KES 8,000 – 25,000 (depending on class and school)",
+      "documents": ["Medical form (DL Form 1)", "National ID"]
+    },
+    {
+      "step": 3,
+      "title": "Apply for Provisional License (PDL)",
+      "description": "Apply on eCitizen for an Interim Driving License / provisional license (PDL)",
+      "cost": "KES 650",
+      "documents": ["DL Form 1", "Driving school enrollment letter", "National ID"]
+    },
+    {
+      "step": 4,
+      "title": "Theory Test (Highway Code)",
+      "description": "Computer-based theory test at NTSA testing centre. Covers road signs, rules, and safety",
+      "cost": "KES 650",
+      "documents": ["Provisional license", "National ID"]
+    },
+    {
+      "step": 5,
+      "title": "Practical Test",
+      "description": "Driving test at NTSA-designated testing ground. Includes road driving, parking, reversing",
+      "cost": "KES 1,050",
+      "documents": ["Theory test pass certificate", "Provisional license", "Driving school completion certificate"]
+    },
+    {
+      "step": 6,
+      "title": "Collect Smart Driving License",
+      "description": "Pay for and collect your biometric NTSA Smart Driving License (valid for 3 years)",
+      "cost": "KES 3,050",
+      "documents": ["Practical test pass certificate", "All previous documents"]
+    }
+  ],
+  "renewalProcess": {
+    "renewalPeriod": "Every 3 years from date of issue",
+    "renewalFee": 3050,
+    "lateRenewalPenalty": "KES 100 per month of delay",
+    "requirements": [
+      "Valid National ID",
+      "Current driving license",
+      "Recent passport photo",
+      "Medical form (DL Form 1) for Class C/D/E and above"
+    ]
+  },
+  "totalEstimatedCost": {
+    "classA": { "min": 5000, "max": 12000, "label": "Class A (Motorcycle)" },
+    "classB": { "min": 12000, "max": 30000, "label": "Class B (Car)" },
+    "classC": { "min": 15000, "max": 35000, "label": "Class C (Heavy Vehicle)" },
+    "classD": { "min": 18000, "max": 40000, "label": "Class D (PSV)" }
+  }
+}

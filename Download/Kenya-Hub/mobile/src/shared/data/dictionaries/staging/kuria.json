@@ -1,0 +1,305 @@
+{
+  "languageId": "kuria",
+  "languageName": "Kuria",
+  "nativeName": "Igikuria",
+  "isoCode": "kuj",
+  "family": "Niger-Congo (Bantu)",
+  "script": "Latin",
+  "counties": [
+    "Migori County (Kuria East & West)"
+  ],
+  "staging": true,
+  "dictionaryVersion": "1.0",
+  "lastUpdated": "2026-11-21",
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings & Farewells",
+      "icon": "👋",
+      "entries": []
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "icon": "🔢",
+      "entries": []
+    },
+    {
+      "id": "family",
+      "name": "Family & Relationships",
+      "icon": "👨‍👩‍👧‍👦",
+      "entries": []
+    },
+    {
+      "id": "food",
+      "name": "Food & Dining",
+      "icon": "🍲",
+      "entries": []
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Directions",
+      "icon": "🧭",
+      "entries": []
+    },
+    {
+      "id": "time",
+      "name": "Time, Seasons & Calendar",
+      "icon": "⏰",
+      "entries": []
+    },
+    {
+      "id": "body",
+      "name": "Body & Health",
+      "icon": "🫀",
+      "entries": []
+    },
+    {
+      "id": "animals",
+      "name": "Animals & Wildlife",
+      "icon": "🦁",
+      "entries": []
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "icon": "🌿",
+      "entries": []
+    },
+    {
+      "id": "home",
+      "name": "Home & Everyday Objects",
+      "icon": "🏠",
+      "entries": []
+    },
+    {
+      "id": "verbs",
+      "name": "Common Verbs & Actions",
+      "icon": "🏃",
+      "entries": []
+    },
+    {
+      "id": "adjectives",
+      "name": "Descriptive Adjectives",
+      "icon": "✨",
+      "entries": []
+    },
+    {
+      "id": "shopping",
+      "name": "Trade, Money & Measures",
+      "icon": "🛒",
+      "entries": []
+    },
+    {
+      "id": "emergency",
+      "name": "Health, Safety, Law & Conflict",
+      "icon": "🚨",
+      "entries": []
+    },
+    {
+      "id": "phrases",
+      "name": "Common Expressions & Vocabulary",
+      "icon": "💬",
+      "entries": [
+        {
+          "english": "The hyenas killed the rabbit.",
+          "translation": "Ichi-ng'iti (n-)cha-a-it-ir-e ege-toocho",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (1) · Pre-verbal Focus /ne-/ in Declarative · Gloss: 10-hyena (foc-)10sa-pst-kill-prf-fv 7-rabbit"
+        },
+        {
+          "english": "Who said that Gati gave the teacher a book?",
+          "translation": "N-eng'we a-a-gamb-er-e iga gati (n-)a-a-ha-y-e umw-igia ege-tabo",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, fn. 4 (i) · Embedded Declarative /ne-/ · Gloss: foc-who sa-pst-say-prf-fv comp 1.Gati foc-3sg.sa-pst-give-appl.prf-fv 1-teacher 5-book"
+        },
+        {
+          "english": "What killed the rabbits?",
+          "translation": "(N-)ke (n-)ge-it-ir-e ege-toocho?",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (2a) · Subject Wh-Question · Gloss: (foc-)what (foc-)sa-kill-prf-fv 7-rabbit"
+        },
+        {
+          "english": "What did the hyenas kill?",
+          "translation": "(N-)ke ichi-ng'iti (n-)cha-a-it-ir-e?",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (2b) · Object Wh-Question · Gloss: (foc-)what 10-hyena (foc-)10sa-pst-kill-prf-fv"
+        },
+        {
+          "english": "THE HYENAS killed the rabbit.",
+          "translation": "(N-)ichi-ng'iti (n-)cha-a-it-ir-e ege-toocho",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (3a) · Subject Focus · Gloss: (foc-)10-hyena (foc-)10sa-pst-kill-prf-fv 7-rabbit"
+        },
+        {
+          "english": "The hyenas killed THE RABBIT.",
+          "translation": "(N-)ege-toocho ichi-ng'iti (n-)cha-a-it-ir-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (3b) · Fronted Object Focus · Gloss: (foc-)7-rabbit 10-hyena (foc-)10sa-pst-kill-prf-fv"
+        },
+        {
+          "english": "The hyenas killed THE RABBIT.",
+          "translation": "Ichi-ng'iti (n-)ege-toocho (n-)cha-a-it-ir-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (4) · Topicalized Subject + Object Focus · Gloss: 10-hyena (foc-)7-rabbit (foc-)10sa-pst-kill-prf-fv"
+        },
+        {
+          "english": "1.Gati n-1-doctor 'Gati is a doctor.' / 1.Gati",
+          "translation": "Gati n-omo-reri. / Gati t-omo-reri",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, fn. 6 (i)–(ii) · Affirmative & Negative Copula · 1.Gati n-1-doctor 'Gati is a doctor.' / 1.Gati t-1-doctor 'Gati is not a doctor.'"
+        },
+        {
+          "english": "SOMEONE ate mangoes.",
+          "translation": "N-omo-onto a-a-rey-e ama-yembe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (9) A1 · Subject Q-A Congruence · Gloss: foc-1-person 1sa-pst-eat.prf-fv 6-mango"
+        },
+        {
+          "english": "Gati will see the owl ON THE TABLE.",
+          "translation": "N-ko-mesa gati umw-iti a-ra-maah-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (11) A · Focused PP Adjunct · Gloss: foc-on-17.table 1.Gati 3-owl 3sg.sa-fut-see-fv"
+        },
+        {
+          "english": "Chacha drank the chai QUICKLY.",
+          "translation": "M-bongo chacha a-a-nyoy-e i-chaahe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (12) A · Focused Manner Adverb · Gloss: foc-quickly 1.Chacha 3sg.sa-pst-drink.prf-fv 8-chai"
+        },
+        {
+          "english": "foc-what 1.Gati 3sg.sa-pst-do.prf-fv 'What did Gati",
+          "translation": "N-ke gati a-a-korr-e. / N-a-a-nyoy-e i-chaahe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (13)–(14) · VP Focus Q-A Pair · foc-what 1.Gati 3sg.sa-pst-do.prf-fv 'What did Gati do?' / foc-3sg.sa-pst-drink.prf-fv 8-chai 'He DRANK CHAI.'"
+        },
+        {
+          "english": "Gati killed ants.",
+          "translation": "Gati n-a-a-it-ir-e ama-siisi",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (15) A1 · Sentential Focus · Gloss: Gati foc-3sg.sa-pst-kill-prf-fv 6-ant"
+        },
+        {
+          "english": "foc-3pl.sa-pst-sell.prf-fv 9-cat 'They sold the cat.'",
+          "translation": "M-ba-a-gurr-i i-nyamu. / Aʔa, m-ba-a-gi-sirr-i",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (17)–(18) · Corrective VP Focus · foc-3pl.sa-pst-sell.prf-fv 9-cat 'They sold the cat.' / no, foc-3pl.sa-pst-9om-lose.prf-fv 'No, they LOST it.'"
+        },
+        {
+          "english": "No, they killed the ZEBRA.",
+          "translation": "Aʔa, n-in-chage cha-a-it-ir-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (21) B · Corrective Object Focus · Gloss: no, foc-9-zebra 10sa-pst-kill-prf-fv"
+        },
+        {
+          "english": "Chacha bought a lion and Gati SOLD a lion.",
+          "translation": "Chacha n-a-a-gorr-e i-indwi, na gati n-a-a-gurr-i i-indwi",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (22) · Contrastive VP Focus · Gloss: 1.Chacha foc-3sg.sa-pst-buy.prf-fv 9-lion, and 1.Gati foc-3sg.sa-pst-sell.prf-fv 9-lion"
+        },
+        {
+          "english": "Chacha bought a cat and Gati bought a LION.",
+          "translation": "Chacha n-a-a-gorr-e i-nyamu, na gati n-i-indwi a-a-gorr-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (23) · Contrastive DP Focus · Gloss: 1.Chacha foc-3sg.sa-pst-buy.prf-fv 9-cat, and 1.Gati foc-9-lion 3sg.sa-pst-buy.prf-fv"
+        },
+        {
+          "english": "They only PROTESTED BY THROWING ROCKS.",
+          "translation": "M-ba-a-tan-er-a g-oko-rekeera ama-geena bene",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (24) · Focus-Sensitive Operator bene · Gloss: foc-3pl.sa-pst-protest-prf-fv by-15-throw 6-stone only"
+        },
+        {
+          "english": "They only didn't eat FISH.",
+          "translation": "N-i-nswi i-nyene ba-a-ta-rey-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (25) · Agreeing Focus Operator i-nyene · Gloss: foc-9-fish 9-only 3pl.sa-pst-neg-eat.prf-fv"
+        },
+        {
+          "english": "Johnes went INTO THE WILD.' ~ 'Johnes did something",
+          "translation": "N-i-bara chonesi a-a-gey-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, fn. 22 (i) · Idiom Preservation under Focus · Gloss: foc-9-wild 1.Johnes 3sa-pst-go.prf-fv | Johnes went INTO THE WILD.' ~ 'Johnes did something completely unexpected."
+        },
+        {
+          "english": "Johnes saw THESE OWLS.",
+          "translation": "N-imi-iti ge-no chonesi a-a-roch-e. / Imi-iti n-ge-no chonesi a-a-roch-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (30)–(31) · Phrase-Internal Focus (Head vs. Demonstrative) · Gloss: foc-4-owl 4-this 1.Johnes 3sg.sa-pst-see.prf-fv / 4-owl foc-4-this ..."
+        },
+        {
+          "english": "They liked this RHINOCEROS.",
+          "translation": "N-i-huuburia e-no b-a-tanch-er-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (32) A1 · Head Noun Contrastive Focus · Gloss: foc-9-rhino 9-this 3pl.sa-pst-like-prf-fv"
+        },
+        {
+          "english": "He ate Gati's CHAPATI.",
+          "translation": "N-iri-chabati re gati a-a-rey-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (35) A1 · Possessed DP Focus · Gloss: foc-5-chapati 5.assoc 1.Gati 3sg.sa-pst-eat.prf-fv"
+        },
+        {
+          "english": "He ate GATI'S ugali.",
+          "translation": "Ubu-kima n-obo gati a-a-rey-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (38) A2 · Phrase-Internal Focus on Associative Marker · Gloss: 14-ugali foc-14.assoc 1.Gati 3sg.sa-pst-eat.prf-fv"
+        },
+        {
+          "english": "Yes, they DID eat fruits.",
+          "translation": "E, n-oko-ria ama-ako ba-a-rey-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (43) A · Verum Focus (Infinitive Fronting + Predicate Doubling) · Gloss: yes, foc-15-eat 6-fruit 3pl.sa-pst-eat.prf-fv"
+        },
+        {
+          "english": "3pl.sa-eat.prf-fv 3-bread 'They just ATE BREAD.' /",
+          "translation": "Ba-rey-e omo-gate. / M-ba-rey-e omo-gate",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (44)–(45) · Immediate Past vs. Verum Focus · 3pl.sa-eat.prf-fv 3-bread 'They just ATE BREAD.' / foc-3pl.sa-eat-prf.fv 3-bread 'They DID just eat bread.'"
+        },
+        {
+          "english": "The teacher who MARCHED.",
+          "translation": "Umw-arimu ora (n-)a-a-giy-er-e",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (46) A · Absence of /ne-/ in Relative Clauses · Gloss: 1-teacher 1.who (foc-)3sg.sa-pst-march-prf-fv"
+        },
+        {
+          "english": "foc-who sa-kill-prf-fv",
+          "translation": "N-eng'we a-it-ir-e (n-)ke? / M-boke a-it-ir-e igi-siisi",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (47)–(48) · Multiple Wh-Question & Answer · foc-who sa-kill-prf-fv (foc-)what 'Who killed what?' / foc-1.Boke 3sg.sa-kill-prf-fv 7-ant 'Boke killed ANTS.'"
+        },
+        {
+          "english": "The men did not SEE THE COW.",
+          "translation": "Aba-saacha te-ba-a-mah-er-e eng'-ombe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (50) · Negative Focus Marker /te-/ · Gloss: 2-man neg.foc-3pl.sa-pst-see-prf-fv 9-cow"
+        },
+        {
+          "english": "It was not THE MEN who saw the cow.",
+          "translation": "A:, (t-)aba-saacha (m-)ba-a-mah-er-e eng'-ombe",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (51) A · Fronted Negative Focus /te-/ · Gloss: no, neg.foc-2-man (foc-)3pl.sa-pst-see-prf-fv 9-cow"
+        },
+        {
+          "english": "They did not only MARCH.",
+          "translation": "Te-ba-a-giy-ir-e bene",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (52) · /te-/ + Focus Operator bene · Gloss: neg-foc-3pl.sa-pst-march-prf-fv only"
+        },
+        {
+          "english": "They will not EAT THE CAKE.",
+          "translation": "M-ba-taa-r-e ege-eki",
+          "pronunciation": "",
+          "context": "LangSci #120 ACAL 45 (2018) Kuria (CC-BY-4.0) · LangSci #120, Ch. 24, Ex. (53) A · Co-occurrence of /ne-/ with Negative /ta-/ · Gloss: foc-3pl.sa-neg.fut-eat-fv 5-cake"
+        }
+      ]
+    },
+    {
+      "id": "culture-history",
+      "name": "Culture, Clans & Historical Corpus",
+      "icon": "📖",
+      "entries": []
+    }
+  ]
+}

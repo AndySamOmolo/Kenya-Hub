@@ -1,0 +1,42 @@
+appId: ke.co.kenyahub.app
+name: "06 - Finance, Tax, Utilities & Construction Mobile Tools Audit"
+---
+- openLink: "kenyahub://tools/paye-calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-paye"
+
+- openLink: "kenyahub://tools/mpesa-fee-calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-mpesa"
+
+- openLink: "kenyahub://tools/sacco-chama-calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-sacco-chama"
+
+- openLink: "kenyahub://tools/helb-calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-helb"
+
+- openLink: "kenyahub://tools/stamp-duty-calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-stamp-duty"
+
+- openLink: "kenyahub://tools/eudr-coop-geojson-packager"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-eudr"
+
+- openLink: "kenyahub://tools/mjengo-construction-calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-mjengo"
+
+- openLink: "kenyahub://tools/ardhisasa-cad-title-auditor"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-ardhisasa"
+
+- openLink: "kenyahub://tools/kplc-token-calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-kplc"
+
+- openLink: "kenyahub://tools/water-bill-calculator"
+- assertNotVisible: "Something went wrong"
+- takeScreenshot: "06-water-bill"

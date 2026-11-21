@@ -1,0 +1,19 @@
+{
+  "lastUpdated": "2026-10-21",
+  "source": "Rent Restriction Act (Cap 296), Distress for Rent Act (Cap 293) & Small Claims Court Precedents",
+  "sourceUrl": "https://www.kenyalaw.org/lex/",
+  "statutoryRefundDays": 30,
+  "depositInterestRequired": false,
+  "illegalActions": [
+    "Locking the tenant's house or tampering with padlocks without a valid court decree",
+    "Disconnecting water, electricity, or essential amenities to enforce rent collection",
+    "Confiscating household items without proclamation by a licensed Court Auctioneer",
+    "Evicting tenants without issuing minimum statutory notice (typically 1 to 3 months)",
+    "Deducting standard wear-and-tear repainting costs from the tenant's deposit"
+  ],
+  "lawfulDeductions": [
+    "Documented rent or utility arrears unpaid at the date of vacating",
+    "Physical damage beyond normal wear and tear (broken tiles, damaged plumbing fixtures, hole in wall)",
+    "Failure to issue agreed contractual written notice prior to vacating"
+  ]
+}

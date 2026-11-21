@@ -1,0 +1,245 @@
+{
+    "organizationId": "69f5ea1f13f0eaf1a651",
+    "projectId": "6a3290500003e21b7fe1",
+    "projectName": "Kenya Hub",
+    "endpoint": "https://fra.cloud.appwrite.io/v1",
+    "settings": {
+        "services": {
+            "account": true,
+            "avatars": true,
+            "databases": true,
+            "locale": true,
+            "health": true,
+            "storage": true,
+            "teams": true,
+            "users": true,
+            "sites": true,
+            "functions": true,
+            "graphql": true,
+            "messaging": true
+        },
+        "protocols": {
+            "rest": true,
+            "graphql": true,
+            "websocket": true
+        },
+        "auth": {
+            "methods": {
+                "jwt": false,
+                "phone": false,
+                "invites": true,
+                "anonymous": false,
+                "email-otp": false,
+                "magic-url": false,
+                "email-password": true
+            },
+            "security": {
+                "duration": 2592000,
+                "limit": 2,
+                "sessionsLimit": 5,
+                "passwordHistory": 3,
+                "passwordDictionary": true,
+                "personalDataCheck": true,
+                "sessionAlerts": true,
+                "mockNumbers": []
+            }
+        }
+    },
+    "tablesDB": [
+        {
+            "$id": "kenyahub-db",
+            "name": "KenyaHub Database",
+            "enabled": true
+        }
+    ],
+    "tables": [
+        {
+            "$id": "blogs",
+            "$permissions": [
+                "read(\"any\")",
+                "create(\"team:admins\")",
+                "update(\"team:admins\")",
+                "delete(\"team:admins\")",
+                "create(\"label:admin\")",
+                "update(\"label:admin\")",
+                "delete(\"label:admin\")"
+            ],
+            "databaseId": "kenyahub-db",
+            "name": "Blogs",
+            "enabled": true,
+            "rowSecurity": false,
+            "columns": [
+                {
+                    "key": "title",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 255
+                },
+                {
+                    "key": "slug",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 255
+                },
+                {
+                    "key": "excerpt",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 500
+                },
+                {
+                    "key": "author",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 255
+                },
+                {
+                    "key": "content",
+                    "type": "longtext",
+                    "required": true
+                },
+                {
+                    "key": "coverImage",
+                    "type": "url",
+                    "required": false
+                },
+                {
+                    "key": "publishedAt",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 50
+                },
+                {
+                    "key": "updatedAt",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 50
+                },
+                {
+                    "key": "tags",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 50,
+                    "array": true
+                },
+                {
+                    "key": "readTime",
+                    "type": "integer",
+                    "required": true
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_slug",
+                    "type": "unique",
+                    "status": "available",
+                    "attributes": ["slug"]
+                },
+                {
+                    "key": "idx_published_at",
+                    "type": "key",
+                    "status": "available",
+                    "attributes": ["publishedAt"]
+                }
+            ]
+        },
+        {
+            "$id": "contributions",
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"team:admins\")",
+                "update(\"team:admins\")",
+                "delete(\"team:admins\")",
+                "read(\"label:admin\")",
+                "update(\"label:admin\")",
+                "delete(\"label:admin\")"
+            ],
+            "databaseId": "kenyahub-db",
+            "name": "Language Contributions",
+            "enabled": true,
+            "rowSecurity": false,
+            "columns": [
+                {
+                    "key": "language",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 64
+                },
+                {
+                    "key": "type",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 32
+                },
+                {
+                    "key": "english",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 500
+                },
+                {
+                    "key": "translation",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 500
+                },
+                {
+                    "key": "pronunciation",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 255
+                },
+                {
+                    "key": "context",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 1000
+                },
+                {
+                    "key": "category",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 64
+                },
+                {
+                    "key": "contributorName",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 120
+                },
+                {
+                    "key": "contributorEmail",
+                    "type": "varchar",
+                    "required": false,
+                    "size": 255
+                },
+                {
+                    "key": "submittedAt",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 50
+                },
+                {
+                    "key": "status",
+                    "type": "varchar",
+                    "required": true,
+                    "size": 32
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_status",
+                    "type": "key",
+                    "status": "available",
+                    "attributes": ["status"]
+                },
+                {
+                    "key": "idx_language",
+                    "type": "key",
+                    "status": "available",
+                    "attributes": ["language"]
+                }
+            ]
+        }
+    ]
+}

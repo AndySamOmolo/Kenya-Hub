@@ -1,0 +1,45 @@
+{
+  "lastUpdated": "2026-11-20",
+  "source": "Regulation of Wages (General) (Amendment) Order, 2026 — Legal Notice No. 108 of 2026",
+  "sourceUrl": "https://www.labour.go.ke/",
+  "zones": [
+    {
+      "id": "cities",
+      "name": "Cities (Nairobi, Mombasa, Kisumu, Nakuru, Eldoret)",
+      "monthlyMinimum": 18047.4,
+      "dailyRate": 866,
+      "hourlyRate": 104,
+      "dailyMinimum": 868.44,
+      "hourlyMinimum": 161.34
+    },
+    {
+      "id": "municipalities",
+      "name": "Former Municipalities & Town Councils (Thika, Nyeri, Kisii, Malindi, Kakamega, Machakos)",
+      "monthlyMinimum": 16650.95,
+      "dailyRate": 799,
+      "hourlyRate": 96,
+      "dailyMinimum": 797.8,
+      "hourlyMinimum": 147.45
+    },
+    {
+      "id": "rural",
+      "name": "All Other Areas / Rural Counties",
+      "monthlyMinimum": 9628.07,
+      "dailyRate": 551,
+      "hourlyRate": 66,
+      "dailyMinimum": 487.94,
+      "hourlyMinimum": 90.17
+    }
+  ],
+  "statutoryDeductions": {
+    "shaEmployeePercent": 0.0275,
+    "nssfRate": 0.06,
+    "nssfMaxMonthly": 6480,
+    "nssfTier1Matching": 540,
+    "leaveDaysAnnual": 21,
+    "paidMaternityMonths": 3,
+    "paidPaternityDays": 14,
+    "ahlRate": 0.015
+  },
+  "effectiveDate": "2026-05-01"
+}

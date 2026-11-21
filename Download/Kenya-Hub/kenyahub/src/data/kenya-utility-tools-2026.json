@@ -1,0 +1,413 @@
+{
+  "lastUpdated": "2026-11-19",
+  "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)",
+  "etims": {
+    "corporateTaxPenaltyRate": 0.3,
+    "statutoryExemptions": [
+      "Emoluments / Payroll Salaries",
+      "Imports (KRA iCMS Customs Entry)",
+      "Airline Tickets & International Air Travel",
+      "Investment Allowances & Depreciation",
+      "Interest & Regulated Bank Fees"
+    ],
+    "sampleMpesaRows": [
+      {
+        "date": "2026-11-02",
+        "ref": "UK29A81PLM",
+        "counterparty": "Nairobi Hardware Supply Ltd",
+        "phone": "0712345678",
+        "amount": 285000,
+        "category": "Supplies"
+      },
+      {
+        "date": "2026-11-05",
+        "ref": "UK51B42QRT",
+        "counterparty": "Mombasa Freight Logistics",
+        "phone": "0722987654",
+        "amount": 420000,
+        "category": "Logistics"
+      },
+      {
+        "date": "2026-11-09",
+        "ref": "UK94C19WXY",
+        "counterparty": "Staff Payroll (October)",
+        "phone": "0700112233",
+        "amount": 310000,
+        "category": "Emoluments"
+      },
+      {
+        "date": "2026-11-12",
+        "ref": "UL18D77ZAB",
+        "counterparty": "Machakos Packaging Co",
+        "phone": "0733445566",
+        "amount": 195000,
+        "category": "Packaging"
+      },
+      {
+        "date": "2026-11-15",
+        "ref": "UL42E03CDE",
+        "counterparty": "Kenya Airways Ticket",
+        "phone": "0711009988",
+        "amount": 68000,
+        "category": "Airline Tickets"
+      },
+      {
+        "date": "2026-11-18",
+        "ref": "UL76F55FGH",
+        "counterparty": "Rift Valley Office Furniture",
+        "phone": "0799887766",
+        "amount": 520000,
+        "category": "Equipment"
+      }
+    ],
+    "sampleEtimsRows": [
+      {
+        "date": "2026-11-02",
+        "cuInvoice": "KRA0120260088123",
+        "supplier": "Nairobi Hardware Supply Ltd",
+        "pin": "P051234567A",
+        "amount": 285000
+      }
+    ]
+  },
+  "odpc": {
+    "staffThreshold": 10,
+    "turnoverThresholdKes": 5000000,
+    "maxFineKes": 5000000,
+    "maxFineTurnoverPct": 0.01,
+    "dailyPenaltyKes": 10000,
+    "precedents": [
+      {
+        "caseName": "Alston v Liquid Telecom",
+        "payoutKes": 700000,
+        "trigger": "Unconsented exit interview call recording retained without legal basis"
+      },
+      {
+        "caseName": "Kirima v Solar Panda",
+        "payoutKes": 500000,
+        "trigger": "Unconsented use of employee photograph for commercial marketing"
+      }
+    ],
+    "retentionRules": [
+      {
+        "record": "Employment Contracts & Signed Offer Letters",
+        "statute": "Employment Act 2007 s.10(6)",
+        "action": "LOCK",
+        "duration": "5 years post-termination"
+      },
+      {
+        "record": "Payroll, PAYE, SHA, NSSF & Housing Levy Ledgers",
+        "statute": "Tax Procedures Act / Employment Act",
+        "action": "LOCK",
+        "duration": "5 years post-termination"
+      },
+      {
+        "record": "Rejected Job Applicant CVs & Interview Notes",
+        "statute": "Data Protection Act 2019 (Storage Limitation)",
+        "action": "AUTO-PURGE",
+        "duration": "6 months after recruitment closes"
+      },
+      {
+        "record": "Exit Interview Audio / Call Recordings",
+        "statute": "Data Protection Act 2019 (Alston v Liquid Telecom)",
+        "action": "AUTO-PURGE",
+        "duration": "30 days unless explicit consent / active dispute"
+      },
+      {
+        "record": "Staff Marketing Photos & Video Consent Forms",
+        "statute": "Data Protection Act 2019 (Kirima v Solar Panda)",
+        "action": "CONSENT-GATED",
+        "duration": "Delete immediately upon consent withdrawal"
+      },
+      {
+        "record": "CCTV & Biometric Clock-In Logs",
+        "statute": "Data Protection Act 2019 (Data Minimization)",
+        "action": "AUTO-PURGE",
+        "duration": "90 days rolling overwrite"
+      }
+    ]
+  },
+  "eudr": {
+    "largeOperatorDeadline": "2026-12-30",
+    "smallCoopDeadline": "2027-06-30",
+    "cutoffDate": "2020-12-31",
+    "polygonThresholdHa": 4.0,
+    "maxGnssAccuracyMeters": 10.0,
+    "samplePolygonCoords": [
+      [
+        -0.4167,
+        36.95
+      ],
+      [
+        -0.4167,
+        36.9525
+      ],
+      [
+        -0.419,
+        36.9525
+      ],
+      [
+        -0.419,
+        36.95
+      ],
+      [
+        -0.4167,
+        36.95
+      ]
+    ]
+  },
+  "icms": {
+    "vatRate": 0.16,
+    "idfRate": 0.025,
+    "rdlRate": 0.02,
+    "seaConsolidatorRatePerCbmKes": 65000,
+    "airConsolidatorRatePerKgKes": 1700,
+    "defaultClearingFeeKes": 35000,
+    "hsPresets": [
+      {
+        "label": "Mobile Phones (EAC Gazette No. 19 of 2025)",
+        "hs": "8517.13",
+        "dutyRate": 0.35
+      },
+      {
+        "label": "Finished Consumer Electronics & Accessories",
+        "hs": "8543.70",
+        "dutyRate": 0.25
+      },
+      {
+        "label": "Apparel, Footwear & Textiles",
+        "hs": "6204.62",
+        "dutyRate": 0.35
+      },
+      {
+        "label": "Intermediate Industrial Parts / Semi-Finished",
+        "hs": "8483.40",
+        "dutyRate": 0.1
+      },
+      {
+        "label": "Capital Machinery, Solar & Raw Materials",
+        "hs": "8541.43",
+        "dutyRate": 0.0
+      }
+    ]
+  },
+  "sha": {
+    "rejectionRatePct": 20,
+    "declinedTotalBillionKes": 3.43,
+    "paybill": "200222",
+    "ussd": "*147#",
+    "contractPortal": "https://sha.go.ke/contracted-facilities",
+    "submissionWindowDays": 30
+  },
+  "ppra": {
+    "egpPortal": "https://e-gp.go.ke",
+    "defaultBidValidityDays": 300,
+    "mandatoryDocs": [
+      {
+        "code": "MR1",
+        "title": "Certificate of Incorporation / Business Registration",
+        "defaultPages": 2,
+        "critical": true
+      },
+      {
+        "code": "MR2",
+        "title": "Valid KRA Tax Compliance Certificate (TCC)",
+        "defaultPages": 1,
+        "critical": true
+      },
+      {
+        "code": "MR3",
+        "title": "CR12 / CR13 (Issued within last 6 months) + Director IDs",
+        "defaultPages": 4,
+        "critical": true
+      },
+      {
+        "code": "MR4",
+        "title": "Valid NCA Registration & Annual Practicing License",
+        "defaultPages": 2,
+        "critical": true
+      },
+      {
+        "code": "MR5",
+        "title": "AGPO Certificate (Youth / Women / PWDs) if reserved",
+        "defaultPages": 1,
+        "critical": false
+      },
+      {
+        "code": "MR6",
+        "title": "Form of Tender (Signed, Stamped & 300-Day Validity)",
+        "defaultPages": 3,
+        "critical": true
+      },
+      {
+        "code": "MR7",
+        "title": "Forms SD1 & SD2 (Self-Declaration & Anti-Corruption)",
+        "defaultPages": 4,
+        "critical": true
+      },
+      {
+        "code": "MR8",
+        "title": "Power of Attorney / Commissioner of Oaths Sign-Off",
+        "defaultPages": 2,
+        "critical": true
+      },
+      {
+        "code": "MR9",
+        "title": "Tender Security / Bid Bond (Valid 30 days beyond Bid Validity)",
+        "defaultPages": 2,
+        "critical": true
+      },
+      {
+        "code": "MR10",
+        "title": "Audited Financial Statements (Last 2–3 Years) & Bank Reference",
+        "defaultPages": 18,
+        "critical": true
+      },
+      {
+        "code": "MR11",
+        "title": "Bill of Quantities (BoQ) / Price Schedule (Priced & Signed)",
+        "defaultPages": 12,
+        "critical": true
+      }
+    ]
+  },
+  "kjsea": {
+    "weights": {
+      "kpsea": 0.2,
+      "sba": 0.2,
+      "kjsea": 0.6
+    },
+    "rubricTiers": [
+      {
+        "code": "EE1",
+        "label": "Exceeding Expectations (EE1)",
+        "min": 90,
+        "max": 100,
+        "points": 8
+      },
+      {
+        "code": "EE2",
+        "label": "Exceeding Expectations (EE2)",
+        "min": 75,
+        "max": 89,
+        "points": 7
+      },
+      {
+        "code": "ME1",
+        "label": "Meeting Expectations (ME1)",
+        "min": 58,
+        "max": 74,
+        "points": 6
+      },
+      {
+        "code": "ME2",
+        "label": "Meeting Expectations (ME2)",
+        "min": 41,
+        "max": 57,
+        "points": 5
+      },
+      {
+        "code": "AE1",
+        "label": "Approaching Expectations (AE1)",
+        "min": 31,
+        "max": 40,
+        "points": 4
+      },
+      {
+        "code": "AE2",
+        "label": "Approaching Expectations (AE2)",
+        "min": 21,
+        "max": 30,
+        "points": 3
+      },
+      {
+        "code": "BE1",
+        "label": "Below Expectations (BE1)",
+        "min": 11,
+        "max": 20,
+        "points": 2
+      },
+      {
+        "code": "BE2",
+        "label": "Below Expectations (BE2)",
+        "min": 0,
+        "max": 10,
+        "points": 1
+      }
+    ],
+    "pathways": [
+      {
+        "id": "stem",
+        "name": "STEM Pathway",
+        "sharePct": 49,
+        "tracks": [
+          "Pure Sciences",
+          "Applied Sciences",
+          "Technical & Engineering"
+        ],
+        "kuccps": [
+          "Medicine & Surgery",
+          "Civil / Electrical / Software Engineering",
+          "Actuarial Science & Data Science",
+          "Architecture & Quantity Surveying"
+        ]
+      },
+      {
+        "id": "social",
+        "name": "Social Sciences Pathway",
+        "sharePct": 40,
+        "tracks": [
+          "Languages & Literature",
+          "Humanities & Business Studies"
+        ],
+        "kuccps": [
+          "Bachelor of Laws (LLB)",
+          "Commerce, Accounting & Finance",
+          "Economics & Statistics",
+          "International Relations & Journalism"
+        ]
+      },
+      {
+        "id": "arts",
+        "name": "Arts & Sports Science Pathway",
+        "sharePct": 11,
+        "tracks": [
+          "Performing & Visual Arts",
+          "Sports Science & Recreation"
+        ],
+        "kuccps": [
+          "Film, Design & Media Production",
+          "Fine Arts & Music",
+          "Sports Management & Exercise Science",
+          "Hospitality & Tourism"
+        ]
+      }
+    ]
+  },
+  "ardhisasa": {
+    "urbanNonComplianceRangePct": "85-87%",
+    "areaTolerancePct": 2.0,
+    "sampleUtmCoords": [
+      [
+        255100.0,
+        9856200.0
+      ],
+      [
+        255150.0,
+        9856200.0
+      ],
+      [
+        255150.0,
+        9856240.0
+      ],
+      [
+        255100.0,
+        9856240.0
+      ],
+      [
+        255100.0,
+        9856200.0
+      ]
+    ]
+  }
+}

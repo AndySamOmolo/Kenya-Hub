@@ -1,0 +1,439 @@
+{
+  "fiscalYear": "2025/26",
+  "source": "County Allocation of Revenue Act (CARA) & Office of the Controller of Budget (cob.go.ke) — County Governments Budget Implementation Review Report",
+  "budgets": [
+    {
+      "code": 1,
+      "county": "Mombasa",
+      "allocation": 7865,
+      "ownSourceRevenue": 4120,
+      "totalRevenue": 11985,
+      "expenditure": 9840,
+      "absorptionRate": 82.1
+    },
+    {
+      "code": 2,
+      "county": "Kwale",
+      "allocation": 8584,
+      "ownSourceRevenue": 465,
+      "totalRevenue": 9049,
+      "expenditure": 7384,
+      "absorptionRate": 81.6
+    },
+    {
+      "code": 3,
+      "county": "Kilifi",
+      "allocation": 12109,
+      "ownSourceRevenue": 1085,
+      "totalRevenue": 13194,
+      "expenditure": 10727,
+      "absorptionRate": 81.3
+    },
+    {
+      "code": 4,
+      "county": "Tana River",
+      "allocation": 6802,
+      "ownSourceRevenue": 92,
+      "totalRevenue": 6894,
+      "expenditure": 5460,
+      "absorptionRate": 79.2
+    },
+    {
+      "code": 5,
+      "county": "Lamu",
+      "allocation": 3245,
+      "ownSourceRevenue": 186,
+      "totalRevenue": 3431,
+      "expenditure": 2748,
+      "absorptionRate": 80.1
+    },
+    {
+      "code": 6,
+      "county": "Taita Taveta",
+      "allocation": 5047,
+      "ownSourceRevenue": 394,
+      "totalRevenue": 5441,
+      "expenditure": 4483,
+      "absorptionRate": 82.4
+    },
+    {
+      "code": 7,
+      "county": "Garissa",
+      "allocation": 8276,
+      "ownSourceRevenue": 168,
+      "totalRevenue": 8444,
+      "expenditure": 6620,
+      "absorptionRate": 78.4
+    },
+    {
+      "code": 8,
+      "county": "Wajir",
+      "allocation": 9868,
+      "ownSourceRevenue": 142,
+      "totalRevenue": 10010,
+      "expenditure": 7688,
+      "absorptionRate": 76.8
+    },
+    {
+      "code": 9,
+      "county": "Mandera",
+      "allocation": 11634,
+      "ownSourceRevenue": 175,
+      "totalRevenue": 11809,
+      "expenditure": 9022,
+      "absorptionRate": 76.4
+    },
+    {
+      "code": 10,
+      "county": "Marsabit",
+      "allocation": 7577,
+      "ownSourceRevenue": 170,
+      "totalRevenue": 7747,
+      "expenditure": 6143,
+      "absorptionRate": 79.3
+    },
+    {
+      "code": 11,
+      "county": "Isiolo",
+      "allocation": 4899,
+      "ownSourceRevenue": 238,
+      "totalRevenue": 5137,
+      "expenditure": 4223,
+      "absorptionRate": 82.2
+    },
+    {
+      "code": 12,
+      "county": "Meru",
+      "allocation": 9894,
+      "ownSourceRevenue": 945,
+      "totalRevenue": 10839,
+      "expenditure": 9072,
+      "absorptionRate": 83.7
+    },
+    {
+      "code": 13,
+      "county": "Tharaka-Nithi",
+      "allocation": 4369,
+      "ownSourceRevenue": 265,
+      "totalRevenue": 4634,
+      "expenditure": 3855,
+      "absorptionRate": 83.2
+    },
+    {
+      "code": 14,
+      "county": "Embu",
+      "allocation": 5342,
+      "ownSourceRevenue": 562,
+      "totalRevenue": 5904,
+      "expenditure": 4948,
+      "absorptionRate": 83.8
+    },
+    {
+      "code": 15,
+      "county": "Kitui",
+      "allocation": 10824,
+      "ownSourceRevenue": 518,
+      "totalRevenue": 11342,
+      "expenditure": 9176,
+      "absorptionRate": 80.9
+    },
+    {
+      "code": 16,
+      "county": "Machakos",
+      "allocation": 9547,
+      "ownSourceRevenue": 1612,
+      "totalRevenue": 11159,
+      "expenditure": 9318,
+      "absorptionRate": 83.5
+    },
+    {
+      "code": 17,
+      "county": "Makueni",
+      "allocation": 8455,
+      "ownSourceRevenue": 612,
+      "totalRevenue": 9067,
+      "expenditure": 7716,
+      "absorptionRate": 85.1
+    },
+    {
+      "code": 18,
+      "county": "Nyandarua",
+      "allocation": 5908,
+      "ownSourceRevenue": 546,
+      "totalRevenue": 6454,
+      "expenditure": 5428,
+      "absorptionRate": 84.1
+    },
+    {
+      "code": 19,
+      "county": "Nyeri",
+      "allocation": 6486,
+      "ownSourceRevenue": 842,
+      "totalRevenue": 7328,
+      "expenditure": 6207,
+      "absorptionRate": 84.7
+    },
+    {
+      "code": 20,
+      "county": "Kirinyaga",
+      "allocation": 5412,
+      "ownSourceRevenue": 534,
+      "totalRevenue": 5946,
+      "expenditure": 5066,
+      "absorptionRate": 85.2
+    },
+    {
+      "code": 21,
+      "county": "Murang'a",
+      "allocation": 7472,
+      "ownSourceRevenue": 768,
+      "totalRevenue": 8240,
+      "expenditure": 6930,
+      "absorptionRate": 84.1
+    },
+    {
+      "code": 22,
+      "county": "Kiambu",
+      "allocation": 12229,
+      "ownSourceRevenue": 4185,
+      "totalRevenue": 16414,
+      "expenditure": 14034,
+      "absorptionRate": 85.5
+    },
+    {
+      "code": 23,
+      "county": "Turkana",
+      "allocation": 13143,
+      "ownSourceRevenue": 214,
+      "totalRevenue": 13357,
+      "expenditure": 10044,
+      "absorptionRate": 75.2
+    },
+    {
+      "code": 24,
+      "county": "West Pokot",
+      "allocation": 6562,
+      "ownSourceRevenue": 196,
+      "totalRevenue": 6758,
+      "expenditure": 5433,
+      "absorptionRate": 80.4
+    },
+    {
+      "code": 25,
+      "county": "Samburu",
+      "allocation": 5594,
+      "ownSourceRevenue": 245,
+      "totalRevenue": 5839,
+      "expenditure": 4770,
+      "absorptionRate": 81.7
+    },
+    {
+      "code": 26,
+      "county": "Trans Nzoia",
+      "allocation": 7491,
+      "ownSourceRevenue": 492,
+      "totalRevenue": 7983,
+      "expenditure": 6674,
+      "absorptionRate": 83.6
+    },
+    {
+      "code": 27,
+      "county": "Uasin Gishu",
+      "allocation": 8411,
+      "ownSourceRevenue": 1380,
+      "totalRevenue": 9791,
+      "expenditure": 8264,
+      "absorptionRate": 84.4
+    },
+    {
+      "code": 28,
+      "county": "Elgeyo Marakwet",
+      "allocation": 4796,
+      "ownSourceRevenue": 235,
+      "totalRevenue": 5031,
+      "expenditure": 4216,
+      "absorptionRate": 83.8
+    },
+    {
+      "code": 29,
+      "county": "Nandi",
+      "allocation": 7308,
+      "ownSourceRevenue": 412,
+      "totalRevenue": 7720,
+      "expenditure": 6438,
+      "absorptionRate": 83.4
+    },
+    {
+      "code": 30,
+      "county": "Baringo",
+      "allocation": 6648,
+      "ownSourceRevenue": 342,
+      "totalRevenue": 6990,
+      "expenditure": 5788,
+      "absorptionRate": 82.8
+    },
+    {
+      "code": 31,
+      "county": "Laikipia",
+      "allocation": 5351,
+      "ownSourceRevenue": 915,
+      "totalRevenue": 6266,
+      "expenditure": 5320,
+      "absorptionRate": 84.9
+    },
+    {
+      "code": 32,
+      "county": "Nakuru",
+      "allocation": 13626,
+      "ownSourceRevenue": 3340,
+      "totalRevenue": 16966,
+      "expenditure": 14387,
+      "absorptionRate": 84.8
+    },
+    {
+      "code": 33,
+      "county": "Narok",
+      "allocation": 9176,
+      "ownSourceRevenue": 3890,
+      "totalRevenue": 13066,
+      "expenditure": 11106,
+      "absorptionRate": 85.0
+    },
+    {
+      "code": 34,
+      "county": "Kajiado",
+      "allocation": 8299,
+      "ownSourceRevenue": 1460,
+      "totalRevenue": 9759,
+      "expenditure": 8217,
+      "absorptionRate": 84.2
+    },
+    {
+      "code": 35,
+      "county": "Kericho",
+      "allocation": 6703,
+      "ownSourceRevenue": 645,
+      "totalRevenue": 7348,
+      "expenditure": 6165,
+      "absorptionRate": 83.9
+    },
+    {
+      "code": 36,
+      "county": "Bomet",
+      "allocation": 6977,
+      "ownSourceRevenue": 318,
+      "totalRevenue": 7295,
+      "expenditure": 6113,
+      "absorptionRate": 83.8
+    },
+    {
+      "code": 37,
+      "county": "Kakamega",
+      "allocation": 12913,
+      "ownSourceRevenue": 1320,
+      "totalRevenue": 14233,
+      "expenditure": 11785,
+      "absorptionRate": 82.8
+    },
+    {
+      "code": 38,
+      "county": "Vihiga",
+      "allocation": 5279,
+      "ownSourceRevenue": 248,
+      "totalRevenue": 5527,
+      "expenditure": 4582,
+      "absorptionRate": 82.9
+    },
+    {
+      "code": 39,
+      "county": "Bungoma",
+      "allocation": 11110,
+      "ownSourceRevenue": 685,
+      "totalRevenue": 11795,
+      "expenditure": 9766,
+      "absorptionRate": 82.8
+    },
+    {
+      "code": 40,
+      "county": "Busia",
+      "allocation": 7475,
+      "ownSourceRevenue": 395,
+      "totalRevenue": 7870,
+      "expenditure": 6501,
+      "absorptionRate": 82.6
+    },
+    {
+      "code": 41,
+      "county": "Siaya",
+      "allocation": 7263,
+      "ownSourceRevenue": 482,
+      "totalRevenue": 7745,
+      "expenditure": 6421,
+      "absorptionRate": 82.9
+    },
+    {
+      "code": 42,
+      "county": "Kisumu",
+      "allocation": 8368,
+      "ownSourceRevenue": 1425,
+      "totalRevenue": 9793,
+      "expenditure": 8246,
+      "absorptionRate": 84.2
+    },
+    {
+      "code": 43,
+      "county": "Homa Bay",
+      "allocation": 8126,
+      "ownSourceRevenue": 490,
+      "totalRevenue": 8616,
+      "expenditure": 7117,
+      "absorptionRate": 82.6
+    },
+    {
+      "code": 44,
+      "county": "Migori",
+      "allocation": 8335,
+      "ownSourceRevenue": 475,
+      "totalRevenue": 8810,
+      "expenditure": 7198,
+      "absorptionRate": 81.7
+    },
+    {
+      "code": 45,
+      "county": "Kisii",
+      "allocation": 9258,
+      "ownSourceRevenue": 640,
+      "totalRevenue": 9898,
+      "expenditure": 8265,
+      "absorptionRate": 83.5
+    },
+    {
+      "code": 46,
+      "county": "Nyamira",
+      "allocation": 5334,
+      "ownSourceRevenue": 248,
+      "totalRevenue": 5582,
+      "expenditure": 4639,
+      "absorptionRate": 83.1
+    },
+    {
+      "code": 47,
+      "county": "Nairobi",
+      "allocation": 20072,
+      "ownSourceRevenue": 12840,
+      "totalRevenue": 32912,
+      "expenditure": 28469,
+      "absorptionRate": 86.5
+    }
+  ],
+  "allocationUnit": "KES Millions",
+  "notes": [
+    "All figures are in KES millions based on the County Allocation of Revenue Act (CARA) equitable share schedule and Office of the Controller of Budget (OCOB) annual implementation reports.",
+    "Equitable Share Allocation reflects the statutory formula developed by the Commission on Revenue Allocation (CRA) and approved by Parliament under Article 217 of the Constitution.",
+    "Own-Source Revenue (OSR) includes locally collected property rates, single business permits, parking fees, market cess, hospital user fees, and park entry revenues (such as Maasai Mara in Narok County).",
+    "Absorption rate = (actual total recurrent and development expenditure / total available revenue) × 100.",
+    "Nairobi City County (#047), Nakuru (#032), Turkana (#023), Kakamega (#037), Kiambu (#022), and Kilifi (#003) receive the largest equitable share allocations due to population, land area, and poverty index weights.",
+    "Data sourced from the Commission on Revenue Allocation (CRA), County Allocation of Revenue Act, and Office of the Controller of Budget (cob.go.ke)."
+  ],
+  "lastUpdated": "2026-10-20"
+}

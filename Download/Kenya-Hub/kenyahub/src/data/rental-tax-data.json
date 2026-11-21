@@ -1,0 +1,11 @@
+{
+  "lastUpdated": "2026-11-20",
+  "source": "KRA Income Tax Act (Cap 470, Section 6A) — Monthly Rental Income (MRI) & Net Graduated Income Tax via KRA iTax",
+  "sourceUrl": "https://itax.kra.go.ke/",
+  "mriRate": 0.075,
+  "mriMinAnnual": 288000,
+  "mriThresholdAnnual": 15000000,
+  "dueDayOfMonth": 20,
+  "lateFilingPenalty": 2000,
+  "latePaymentInterestMonthly": 0.01
+}

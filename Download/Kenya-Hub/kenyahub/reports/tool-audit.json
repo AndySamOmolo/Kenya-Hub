@@ -1,0 +1,1405 @@
+{
+  "generatedAt": "2026-11-21T12:13:51.270Z",
+  "registryCount": 33,
+  "routeCount": 33,
+  "courseCount": 23,
+  "totalFaqs": 146,
+  "totalDictEntries": 208391,
+  "totalAudioLinked": 1692,
+  "checksPassed": 74,
+  "checksTotal": 74,
+  "okCount": 33,
+  "reviewCount": 0,
+  "staleCount": 0,
+  "errorCount": 0,
+  "warningCount": 0,
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    {
+      "domain": "guides",
+      "name": "No misplaced top-level guides in tool-guides.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "guides",
+      "name": "etims-mpesa-reconciler has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "odpc-hr-retention-vault has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "eudr-coop-geojson-packager has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "icms-landed-cost-arbitrage has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "sha-claim-scrubber has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "ppra-egp-tender-serializer has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kjsea-pathway-engine has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "ardhisasa-cad-title-auditor has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "learn has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kenyan-translator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "paye-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "mpesa-fee-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "sacco-chama-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "helb-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "stamp-duty-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "cbc-curriculum has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kuccps-cluster-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kcse-grade-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 3 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kra-car-import-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "number-plate-decoder has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "traffic-fines has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "mjengo-construction-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "kplc-token-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "water-bill-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 5 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "sha-benefit-estimator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "small-claims-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "ntsa-transfer-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "boma-yangu-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "rental-tax-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "landlord-tenant-rights has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "domestic-wage-calculator has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "airtime-drain-guide has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "guides",
+      "name": "mobile-number-prefix has guide & >= 3 FAQs",
+      "status": "pass",
+      "detail": "found 4 FAQs"
+    },
+    {
+      "domain": "license",
+      "name": "Zero CC-BY-NC / JW300 leakage across all 23 dictionaries",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/lib/tools-registry.ts synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/lib/learn-engine.ts synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/data/tool-guides.json synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/data/courses/catalog-summary.ts synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "parity",
+      "name": "src/data/blog-posts.ts synced 1:1 to mobile",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "hooks",
+      "name": "LanguageCourseTool.tsx has zero hooks after early return",
+      "status": "pass",
+      "detail": "0 misplaced hooks"
+    },
+    {
+      "domain": "hooks",
+      "name": "learn-engine.ts exports isSingleWordLexical (Word Scramble & Wordle)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android",
+      "name": "Android Speed Match filters out 'none' distractors",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android",
+      "name": "Android Learn tracks lastVisitedLangId for Resume CTA",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "Navbar elevated z-[80] & Tools dropdown z-[90]",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "Navbar Command-K dialog sits above backdrop (z-[121])",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "Navbar search ranks title prefix ahead of description",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "CustomSelect uses opaque surface & skips touch keyboard auto-focus",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "ExpandablePillRow disables scroll mask & stagger fade when expanded",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "ui-overlay",
+      "name": "ScrollReset hides floating ↑ button in focus mode (Wordle / LessonPlayer)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "contrast",
+      "name": "ODPC warning banners use high-contrast Light/Dark text",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "Ardhisasa has no literal backticks in UTM label",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android-theme",
+      "name": "Mobile ThemeProvider syncs Appearance.setColorScheme",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android-theme",
+      "name": "Android bottom tab bar uses atomic theme tabBarBackground",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android-ux",
+      "name": "Matatu Routes not permanently pinned above Most used in All Tools",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "android-ux",
+      "name": "Android KPLC Token Calculator has no duplicate preset row",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/app/matatu/page.tsx: Remove developer library name 'Leaflet'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/app/about/page.tsx: Use unified 208,776+ corpus count",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/data/tool-guides.json: Use 23-Language heading",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/data/tool-guides.json: Use KES 550 NTSA search fee",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/data/tool-guides.json: Use WRA Levy consistently",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/app/tools/airtime-drain-guide/page.tsx: Remove non-existent Dial Now instruction",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "copy",
+      "name": "src/app/tools/mobile-number-prefix/page.tsx: Use 'Calling Kenya from Abroad:'",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "jsx",
+      "name": "All 33 Web tool pages have balanced <div> tags",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "Plate Decoder supports diplomatic CD/CC/UN plates with populated county, plateType & yearRange",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "KPLC Token Calculator includes EPRA tariff selector",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "Water Bill Calculator includes county sewer toggle",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "PAYE Benchmark Table computes live rows via calculatePAYE",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "Small Claims Court removes leaked Passport/KIPI tables & handles >1M disposal",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "M-Pesa Calculator has single Transaction Type control",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "EUDR Packager syncs 7.08 ha default & checks >10% variance",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "PPRA e-GP uses MR1–MR11 & dynamic bidValidityDays (across page, registry & guides)",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "calc",
+      "name": "LanguageClientPage scopes vocab table out of Mini-Games & fixes 3rd column",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "domain": "datasets",
+      "name": "CI audio ingestion script sets trust_remote_code=True & maps mas_asr -> luhya",
+      "status": "pass",
+      "detail": ""
+    }
+  ],
+  "tools": [
+    {
+      "slug": "etims-mpesa-reconciler",
+      "routeExists": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 2,
+      "data": [
+        {
+          "file": "src/data/kenya-utility-tools-2026.json",
+          "lastUpdated": "2026-11-19",
+          "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "odpc-hr-retention-vault",
+      "routeExists": true,
+      "sourceUrl": "https://www.odpc.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 2,
+      "data": [
+        {
+          "file": "src/data/kenya-utility-tools-2026.json",
+          "lastUpdated": "2026-11-19",
+          "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "eudr-coop-geojson-packager",
+      "routeExists": true,
+      "sourceUrl": "https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en",
+      "maxAgeDays": 90,
+      "ageDays": 2,
+      "data": [
+        {
+          "file": "src/data/kenya-utility-tools-2026.json",
+          "lastUpdated": "2026-11-19",
+          "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "icms-landed-cost-arbitrage",
+      "routeExists": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 2,
+      "data": [
+        {
+          "file": "src/data/kenya-utility-tools-2026.json",
+          "lastUpdated": "2026-11-19",
+          "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "sha-claim-scrubber",
+      "routeExists": true,
+      "sourceUrl": "https://sha.go.ke/contracted-facilities",
+      "maxAgeDays": 90,
+      "ageDays": 2,
+      "data": [
+        {
+          "file": "src/data/kenya-utility-tools-2026.json",
+          "lastUpdated": "2026-11-19",
+          "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "ppra-egp-tender-serializer",
+      "routeExists": true,
+      "sourceUrl": "https://e-gp.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 2,
+      "data": [
+        {
+          "file": "src/data/kenya-utility-tools-2026.json",
+          "lastUpdated": "2026-11-19",
+          "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kjsea-pathway-engine",
+      "routeExists": true,
+      "sourceUrl": "https://www.knec.ac.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 2,
+      "data": [
+        {
+          "file": "src/data/kenya-utility-tools-2026.json",
+          "lastUpdated": "2026-11-19",
+          "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "ardhisasa-cad-title-auditor",
+      "routeExists": true,
+      "sourceUrl": "https://ardhisasa.lands.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 2,
+      "data": [
+        {
+          "file": "src/data/kenya-utility-tools-2026.json",
+          "lastUpdated": "2026-11-19",
+          "source": "KenyaHub 2026-2027 Statutory & Market Utility Reference (KRA, ODPC, EUDR, SHA, PPRA, KNEC, ISK)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "learn",
+      "routeExists": true,
+      "sourceUrl": "https://archive.org/",
+      "maxAgeDays": 365,
+      "ageDays": 21,
+      "data": [
+        {
+          "file": "src/data/courses/types.ts",
+          "lastUpdated": "2026-10-31",
+          "source": "https://archive.org/"
+        },
+        {
+          "file": "src/data/courses/catalog-summary.ts",
+          "lastUpdated": "2026-10-31",
+          "source": "https://archive.org/"
+        },
+        {
+          "file": "src/data/language-identity.ts",
+          "lastUpdated": "2026-10-31",
+          "source": "https://archive.org/"
+        },
+        {
+          "file": "src/data/dictionaries/metadata.ts",
+          "lastUpdated": "2026-10-31",
+          "source": "https://archive.org/"
+        },
+        {
+          "file": "src/data/dictionaries/borana.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/daasanach.json",
+          "lastUpdated": "2026-11-19",
+          "source": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons"
+        },
+        {
+          "file": "src/data/dictionaries/embu.json",
+          "lastUpdated": "2026-11-19",
+          "source": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)"
+        },
+        {
+          "file": "src/data/dictionaries/ilchamus.json",
+          "lastUpdated": "2026-11-19",
+          "source": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/kalenjin.json",
+          "lastUpdated": "2026-11-19",
+          "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024); Zwarts, Chelimo & Jerono (2024) LSP #438 Ch. 21 Kalenjin Reflexives & Diercks/Kouneli (2019) LSP #190 Kipsigis Syntax (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Kipsigis & Sengwer Corpus (Bossi & Diercks 2019; Kouneli 2022; Blix 2022; Falletti & Remijsen 2025, CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/kamba.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019); Roberts-Kohno & Bickmore (2019) LSP #190 Ch. 10 Kikamba Melodic Tone (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/kikuyu.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/kisii.json",
+          "lastUpdated": "2026-11-17",
+          "source": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)"
+        },
+        {
+          "file": "src/data/dictionaries/luhya.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016); Johnson & Diercks (2026) LSP #491 Ch. 18 Tiriki Perception Verbs & Liu (2024) LSP #438 Ch. 15 Tiriki Double Objects (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Lubukusu Corpus (Baker 2022, CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/luo.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921); Rev. John Roscoe & Bishop J. J. Willis (1915) The Northern Bantu — Nilotic Kavirondo Kinship & Clans (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Dholuo Corpus (Mackenzie 2016, CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/maasai.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/meru.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml); Arthur M. Champion (1912) The Atharaka (JRAI Vol. 42, Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/mijikenda.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/pokomo.json",
+          "lastUpdated": "2026-11-19",
+          "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/pokot.json",
+          "lastUpdated": "2026-11-19",
+          "source": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)"
+        },
+        {
+          "file": "src/data/dictionaries/rendille.json",
+          "lastUpdated": "2026-11-18",
+          "source": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)"
+        },
+        {
+          "file": "src/data/dictionaries/samburu.json",
+          "lastUpdated": "2026-11-19",
+          "source": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/somali.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019); Green & Smith (2024) LSP #427 Ch. 13 Kenyan Maay Tone, Di Maio (2023) Kenyan Maay Focus, & LSP #190/#96 Somali Studies (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); Major H. Rayne (1921) Sun, Sand and Somals (Project Gutenberg #48598, US Public Domain, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm)"
+        },
+        {
+          "file": "src/data/dictionaries/swahili.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022); Goldsmith & Mpiranya (2022) LSP #306 Ch. 5, Mwamzandi (2022) Ch. 13, Nurse (2019) LSP #190 Ch. 33, Ustadh Mau (2013) Kiamu Poetics, Beech (1918), TICO-19 & Stanford PACS (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); C. H. & N. Y. Stigand (1914) Black Tales for White Children (Project Gutenberg #38992, US Public Domain, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm); Wikiquote Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "file": "src/data/dictionaries/taita.json",
+          "lastUpdated": "2026-11-19",
+          "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/taveta.json",
+          "lastUpdated": "2026-11-18",
+          "source": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/teso.json",
+          "lastUpdated": "2026-11-17",
+          "source": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921); Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Bateso Kinship & Ethnography (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/turkana.json",
+          "lastUpdated": "2026-11-17",
+          "source": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kenyan-translator",
+      "routeExists": true,
+      "sourceUrl": "https://cldr.unicode.org/",
+      "maxAgeDays": 365,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/dictionaries/metadata.ts",
+          "lastUpdated": "2026-10-20",
+          "source": "https://cldr.unicode.org/"
+        },
+        {
+          "file": "src/data/language-identity.ts",
+          "lastUpdated": "2026-10-20",
+          "source": "https://cldr.unicode.org/"
+        },
+        {
+          "file": "src/data/dictionaries/borana.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/daasanach.json",
+          "lastUpdated": "2026-11-19",
+          "source": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons"
+        },
+        {
+          "file": "src/data/dictionaries/embu.json",
+          "lastUpdated": "2026-11-19",
+          "source": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)"
+        },
+        {
+          "file": "src/data/dictionaries/ilchamus.json",
+          "lastUpdated": "2026-11-19",
+          "source": "African Next Voices Maa-Samburu-Chamus Corpus (CC-BY-4.0), CLDF ASJP v20 Maa-Chamus (CC-BY-4.0) & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Beech 1911 & Heine 1980); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/kalenjin.json",
+          "lastUpdated": "2026-11-19",
+          "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024); Zwarts, Chelimo & Jerono (2024) LSP #438 Ch. 21 Kalenjin Reflexives & Diercks/Kouneli (2019) LSP #190 Kipsigis Syntax (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Kipsigis & Sengwer Corpus (Bossi & Diercks 2019; Kouneli 2022; Blix 2022; Falletti & Remijsen 2025, CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/kamba.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019); Roberts-Kohno & Bickmore (2019) LSP #190 Ch. 10 Kikamba Melodic Tone (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/kikuyu.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/kisii.json",
+          "lastUpdated": "2026-11-17",
+          "source": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)"
+        },
+        {
+          "file": "src/data/dictionaries/luhya.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902/1903, Johnston 1902/1919, Purvis 1909, Roscoe 1915, Stam 1929 & Payne et al. 2016); Johnson & Diercks (2026) LSP #491 Ch. 18 Tiriki Perception Verbs & Liu (2024) LSP #438 Ch. 15 Tiriki Double Objects (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Lubukusu Corpus (Baker 2022, CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/luo.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921); Rev. John Roscoe & Bishop J. J. Willis (1915) The Northern Bantu — Nilotic Kavirondo Kinship & Clans (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Dholuo Corpus (Mackenzie 2016, CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/maasai.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/meru.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset Kimeru (CC-BY-4.0), Sunbird AI SALT-31 Kimeru (CC-BY-4.0), Open-Access Kitharaka Phonology Corpus (wa Mberia), CLDF ASJP v20 THARAKA & BantuBVD (CC-BY-4.0), SIL Bloom CC-BY-4.0 & Public Domain & Peer-Reviewed Linguistic Lexicons (Hobley 1910, Champion 1912, Dundas 1915, Johnston 1919, Mberia 2004 & Unicode CLDR mer.xml); Arthur M. Champion (1912) The Atharaka (JRAI Vol. 42, Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/mijikenda.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/pokomo.json",
+          "lastUpdated": "2026-11-19",
+          "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/pokot.json",
+          "lastUpdated": "2026-11-19",
+          "source": "CLDF ASJP v20 POKOT (Crazzolara 1978 / Wichmann et al., CC-BY-4.0), SIL Bloom Pökoot CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Johnston 1902, Dundas 1910, Beech 1911 & Barton 1921)"
+        },
+        {
+          "file": "src/data/dictionaries/rendille.json",
+          "lastUpdated": "2026-11-18",
+          "source": "CLDF ASJP v20 RENDILLE & RENDILLE_2 (Bender 1971 / Wichmann et al., CC-BY-4.0), East Cushitic Comparative Lexicon (Blažek 2011 / Sasse 1979), SIL Bloom Rendille CC-BY-4.0 & Public Domain & Academic Lexicons (Wakefield 1882, Höhnel 1894, Dundas 1910, Hobley 1910, Fleming 1964 & Heine 1976)"
+        },
+        {
+          "file": "src/data/dictionaries/samburu.json",
+          "lastUpdated": "2026-11-19",
+          "source": "African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Höhnel 1894, Johnston 1902, Dundas 1910, Hobley 1910 & Vossen 1982); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0)"
+        },
+        {
+          "file": "src/data/dictionaries/somali.json",
+          "lastUpdated": "2026-11-19",
+          "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019); Green & Smith (2024) LSP #427 Ch. 13 Kenyan Maay Tone, Di Maio (2023) Kenyan Maay Focus, & LSP #190/#96 Somali Studies (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); Major H. Rayne (1921) Sun, Sand and Somals (Project Gutenberg #48598, US Public Domain, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm)"
+        },
+        {
+          "file": "src/data/dictionaries/swahili.json",
+          "lastUpdated": "2026-11-19",
+          "source": "Kencorpus (KenCorpus_text, KenPOS, KenTrans, KenSwQuAD, KenSpeech Lexicon, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (CC-BY-4.0), LughaGen (CC-BY-SA-4.0), Common Voice 25.0 (CC0-1.0), CLDF WOLD & Tsammalex (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0), Language Science Press (2016/2019/2022, CC-BY-4.0) & Public Domain & Peer-Reviewed Linguistic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Steere 1870/1894/1918, Taylor 1891, Bateman 1901, Madan 1903/1917, Hinde 1904, Burt 1910, Stigand 1915, Beech 1918, Werner 1918/1919/1933, Johnston 1919, Ngonyani & Ngowa 2016, Mwamzandi 2022 & Goldsmith/Mpiranya 2022); Goldsmith & Mpiranya (2022) LSP #306 Ch. 5, Mwamzandi (2022) Ch. 13, Nurse (2019) LSP #190 Ch. 33, Ustadh Mau (2013) Kiamu Poetics, Beech (1918), TICO-19 & Stanford PACS (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); C. H. & N. Y. Stigand (1914) Black Tales for White Children (Project Gutenberg #38992, US Public Domain, https://www.gutenberg.org/files/38992/38992-h/38992-h.htm); Wikiquote Swahili proverbs (CC-BY-SA-4.0, https://en.wikiquote.org/wiki/Swahili_proverbs)"
+        },
+        {
+          "file": "src/data/dictionaries/taita.json",
+          "lastUpdated": "2026-11-19",
+          "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/taveta.json",
+          "lastUpdated": "2026-11-18",
+          "source": "CLDF ASJP v20 TAVETA, TAVETA_2 & TAVETA_3 (CC-BY-4.0), CLDF BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Steggall 1892–1906, Höhnel 1894, Hollis 1910–1911, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/teso.json",
+          "lastUpdated": "2026-11-17",
+          "source": "Sunbird AI SALT & SALT-31 Ateso (CC-BY-4.0), CLDF ASJP v20 TESO (Vossen 1982, CC-BY-4.0), Language Science Press Eastern Nilotic Corpus (2016, CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902, Johnston 1902, Purvis 1909, Kitching 1915, Roscoe 1915 & BFBS 1921); Rev. John Roscoe & Rev. L. Kitching (1915) The Northern Bantu — Bateso Kinship & Ethnography (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)"
+        },
+        {
+          "file": "src/data/dictionaries/turkana.json",
+          "lastUpdated": "2026-11-17",
+          "source": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "paye-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/paye-bands.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Revenue Authority (KRA) — Finance Act 2023, Tax Laws (Amendment) Act 2024 & NSSF Year 4 Schedule (Feb 2026)"
+        },
+        {
+          "file": "src/data/housing-levy-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Affordable Housing Act, 2024 & Tax Laws (Amendment) Act, 2024"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "mpesa-fee-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/tariffs-limits/consumer-tariffs-limits",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/mpesa-tariffs.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Safaricom PLC — Official M-Pesa Consumer Tariff Schedule (2026)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "sacco-chama-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.sasra.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 51,
+      "data": [
+        {
+          "file": "src/data/sacco-chama-rates.json",
+          "lastUpdated": "2026-10-01",
+          "source": "SASRA (SACCO Societies Regulatory Authority) Annual Supervision Report"
+        },
+        {
+          "file": "src/data/economic-calendar.json",
+          "lastUpdated": "2026-10-20",
+          "source": "KNBS, Central Bank of Kenya (CBK) & National Treasury (2026 Schedule)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "helb-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.helb.co.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/helb-rates.json",
+          "lastUpdated": "2026-11-20",
+          "source": "Higher Education Loans Board (HELB Act Cap 213A & helb.co.ke)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "stamp-duty-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/stamp-duty-rates.json",
+          "lastUpdated": "2026-11-20",
+          "source": "Stamp Duty Act (Cap 480) & LSK Advocates Remuneration Order (ARO 2014 Scale 1)"
+        },
+        {
+          "file": "src/data/real-estate-agents.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Estate Agents Registration Board (EARB — Cap 533)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "cbc-curriculum",
+      "routeExists": true,
+      "sourceUrl": "https://kicd.ac.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/cbc-curriculum.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Institute of Curriculum Development (KICD)"
+        },
+        {
+          "file": "src/data/school-terms.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Ministry of Education, Kenya — Official School Calendar (2025–2027)"
+        },
+        {
+          "file": "src/data/public-holidays.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Public Holidays Act (Cap 110) & Kenya Gazette Notices"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kuccps-cluster-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://students.kuccps.net/",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/kuccps-clusters.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Universities and Colleges Central Placement Service (KUCCPS 2026 Placement Cycle)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kcse-grade-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.knec.ac.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 1,
+      "data": [],
+      "status": "ok"
+    },
+    {
+      "slug": "kra-car-import-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kra.go.ke/individual/import-export/import-duty-on-motor-vehicles",
+      "maxAgeDays": 90,
+      "ageDays": 51,
+      "data": [
+        {
+          "file": "src/data/kra-car-import-crsp.json",
+          "lastUpdated": "2026-10-01",
+          "source": "KRA Customs & Border Control Valuation Schedule (CRSP) & Finance Act"
+        },
+        {
+          "file": "src/data/vehicle-insurance-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Insurance Regulatory Authority (IRA) — Motor Insurance Guidelines"
+        },
+        {
+          "file": "src/data/customs-restricted-items.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Revenue Authority (KRA) Customs & EAC Customs Management Act"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "number-plate-decoder",
+      "routeExists": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/number-plate-prefixes.json",
+          "lastUpdated": "2026-10-20",
+          "source": "National Transport and Safety Authority (NTSA) / Registrar of Motor Vehicles"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "traffic-fines",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/traffic-fines.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Traffic Act (Cap 403) & NTSA Instant Fines Schedule"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "mjengo-construction-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://nca.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 51,
+      "data": [
+        {
+          "file": "src/data/mjengo-construction-rates.json",
+          "lastUpdated": "2026-10-01",
+          "source": "Kenya National Bureau of Statistics (KNBS) Construction Input Price Index & National Construction Authority (NCA)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "kplc-token-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://kplc.co.ke/faq/tariff",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/kplc-tariff.json",
+          "lastUpdated": "2026-10-20",
+          "source": "EPRA Approved Retail Electricity Tariff (2023/24 – 2025/26) — Domestic Consumer (DC1 / DC2 / DC3)"
+        },
+        {
+          "file": "src/data/solar-irradiance.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Kenya Meteorological Department & EPRA Solar PV Guidelines"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "water-bill-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://wasreb.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/water-tariffs.json",
+          "lastUpdated": "2026-11-20",
+          "source": "Water Services Regulatory Board (WASREB) Approved Utility Tariffs"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "sha-benefit-estimator",
+      "routeExists": true,
+      "sourceUrl": "https://sha.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/sha-benefit-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Social Health Authority (SHA) Gazetted Tariffs & Benefit Packages 2024/2026"
+        },
+        {
+          "file": "src/data/vaccination-schedule.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Ministry of Health KEPI & WHO Child Growth Standards"
+        },
+        {
+          "file": "src/data/kenyan-foods-nutrition.json",
+          "lastUpdated": "2026-10-20",
+          "source": "FAO/WHO Food Composition Tables for Sub-Saharan Africa & KEMRI"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "small-claims-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://judiciary.go.ke/small-claims-court/",
+      "maxAgeDays": 90,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/small-claims-data.json",
+          "lastUpdated": "2026-11-20",
+          "source": "Judiciary of Kenya Small Claims Court Act (No. 2 of 2016) s.34 & Court Fees Rules"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "ntsa-transfer-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://ntsa.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 31,
+      "data": [
+        {
+          "file": "src/data/ntsa-transfer-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "National Transport and Safety Authority (NTSA) & Traffic Act Cap 403"
+        },
+        {
+          "file": "src/data/driving-license-guide.json",
+          "lastUpdated": "2026-11-20",
+          "source": "National Transport and Safety Authority (NTSA) & Traffic Act (Cap 403)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "boma-yangu-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://bomayangu.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 32,
+      "data": [
+        {
+          "file": "src/data/boma-yangu-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Affordable Housing Act 2024 & Boma Yangu Statutory Portal"
+        },
+        {
+          "file": "src/data/housing-levy-rates.json",
+          "lastUpdated": "2026-10-20",
+          "source": "Affordable Housing Act, 2024 & Tax Laws (Amendment) Act, 2024"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "rental-tax-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.kra.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/rental-tax-data.json",
+          "lastUpdated": "2026-11-20",
+          "source": "KRA Income Tax Act (Cap 470, Section 6A) — Monthly Rental Income (MRI) & Net Graduated Income Tax via KRA iTax"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "landlord-tenant-rights",
+      "routeExists": true,
+      "sourceUrl": "https://www.kenyalaw.org/lex/",
+      "maxAgeDays": 90,
+      "ageDays": 31,
+      "data": [
+        {
+          "file": "src/data/tenant-rights-data.json",
+          "lastUpdated": "2026-10-21",
+          "source": "Rent Restriction Act (Cap 296), Distress for Rent Act (Cap 293) & Small Claims Court Precedents"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "domestic-wage-calculator",
+      "routeExists": true,
+      "sourceUrl": "https://www.labour.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/domestic-wage-data.json",
+          "lastUpdated": "2026-11-20",
+          "source": "Regulation of Wages (General) (Amendment) Order, 2026 — Legal Notice No. 108 of 2026"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "airtime-drain-guide",
+      "routeExists": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/airtime-drain-data.json",
+          "lastUpdated": "2026-11-20",
+          "source": "Communications Authority of Kenya (CA) Consumer Guidelines & MNO USSD Protocols"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "slug": "mobile-number-prefix",
+      "routeExists": true,
+      "sourceUrl": "https://www.ca.go.ke/",
+      "maxAgeDays": 90,
+      "ageDays": 1,
+      "data": [
+        {
+          "file": "src/data/mobile-prefixes.json",
+          "lastUpdated": "2026-11-20",
+          "source": "Communications Authority of Kenya (CA) — National Numbering Plan"
+        }
+      ],
+      "status": "ok"
+    }
+  ],
+  "courses": [
+    {
+      "languageId": "swahili",
+      "dictionaryEntries": 51658,
+      "audioLinked": 391,
+      "status": "ok"
+    },
+    {
+      "languageId": "kikuyu",
+      "dictionaryEntries": 22283,
+      "audioLinked": 253,
+      "status": "ok"
+    },
+    {
+      "languageId": "luo",
+      "dictionaryEntries": 14852,
+      "audioLinked": 257,
+      "status": "ok"
+    },
+    {
+      "languageId": "luhya",
+      "dictionaryEntries": 6997,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "kamba",
+      "dictionaryEntries": 10134,
+      "audioLinked": 250,
+      "status": "ok"
+    },
+    {
+      "languageId": "kalenjin",
+      "dictionaryEntries": 8023,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "kisii",
+      "dictionaryEntries": 1573,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "meru",
+      "dictionaryEntries": 4294,
+      "audioLinked": 248,
+      "status": "ok"
+    },
+    {
+      "languageId": "somali",
+      "dictionaryEntries": 14347,
+      "audioLinked": 293,
+      "status": "ok"
+    },
+    {
+      "languageId": "maasai",
+      "dictionaryEntries": 4871,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "turkana",
+      "dictionaryEntries": 3236,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "mijikenda",
+      "dictionaryEntries": 17081,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "teso",
+      "dictionaryEntries": 806,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "embu",
+      "dictionaryEntries": 890,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "taita",
+      "dictionaryEntries": 7571,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "taveta",
+      "dictionaryEntries": 667,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "pokomo",
+      "dictionaryEntries": 3070,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "borana",
+      "dictionaryEntries": 27659,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "rendille",
+      "dictionaryEntries": 299,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "samburu",
+      "dictionaryEntries": 832,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "ilchamus",
+      "dictionaryEntries": 781,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "pokot",
+      "dictionaryEntries": 5629,
+      "audioLinked": 0,
+      "status": "ok"
+    },
+    {
+      "languageId": "daasanach",
+      "dictionaryEntries": 838,
+      "audioLinked": 0,
+      "status": "ok"
+    }
+  ]
+}
