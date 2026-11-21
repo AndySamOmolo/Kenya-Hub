@@ -417,6 +417,7 @@ export function AndroidTopAppBar({
 
   return (
     <View
+      key={isDark ? "appbar-dark" : "appbar-light"}
       style={[
         appBarStyles.container,
         {

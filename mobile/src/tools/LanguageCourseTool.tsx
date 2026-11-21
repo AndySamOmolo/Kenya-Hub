@@ -4757,6 +4757,9 @@ export default function LanguageCourseTool({
                   cldr?: { locale?: string; months?: string[]; days?: string[] } | null;
                   sampleReadings?: { text: string; english?: string; source: string }[];
                   topFrequencyWords?: { word: string }[];
+                  phonemes?: string[];
+                  morphologySamples?: { lemma: string; form: string; features: string }[];
+                  wikimediaArticles?: { title: string; url: string; source: string }[];
                   audioChapters?: { id: string; title: string; audioUrl: string; fallbackUrl?: string; license: string }[];
                 }
               >
@@ -4794,13 +4797,64 @@ export default function LanguageCourseTool({
                 )}
                 {corpusLang.topFrequencyWords && corpusLang.topFrequencyWords.length > 0 && (
                   <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>
-                    Everyday words: {corpusLang.topFrequencyWords.slice(0, 12).map((w) => w.word).join(", ")}
+                    Everyday words ({corpusLang.topFrequencyWords.length}): {corpusLang.topFrequencyWords.slice(0, 24).map((w) => w.word).join(", ")}
                   </Text>
                 )}
                 {corpusLang.sampleReadings && corpusLang.sampleReadings.length > 0 && (
-                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textMuted }}>
-                    Reading practice: &ldquo;{corpusLang.sampleReadings[0].text}&rdquo;
+                  <View style={{ gap: 4, marginTop: 2 }}>
+                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11, color: colors.kenyaGreen }}>
+                      READING PRACTICE ({corpusLang.sampleReadings.length})
+                    </Text>
+                    {corpusLang.sampleReadings.slice(0, 6).map((rd, rIdx) => (
+                      <View key={`rd-${rIdx}`} style={{ backgroundColor: colors.surface, borderRadius: 8, padding: 8, borderWidth: 1, borderColor: colors.outlineVariant }}>
+                        <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11.5, color: colors.text, lineHeight: 16 }}>
+                          {rd.text}
+                        </Text>
+                        {Boolean(rd.english) && (
+                          <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11, color: colors.textSecondary, marginTop: 2 }}>
+                            {rd.english}
+                          </Text>
+                        )}
+                      </View>
+                    ))}
+                  </View>
+                )}
+                {corpusLang.phonemes && corpusLang.phonemes.length > 0 && (
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary, marginTop: 2 }}>
+                    Sound Inventory (IPA · {corpusLang.phonemes.length}): {corpusLang.phonemes.map((p) => `/${p}/`).join(" ")}
                   </Text>
+                )}
+                {corpusLang.morphologySamples && corpusLang.morphologySamples.length > 0 && (
+                  <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary, marginTop: 2 }}>
+                    Word Formation: {corpusLang.morphologySamples.slice(0, 10).map((m) => `${m.form} (${m.lemma})`).join(" · ")}
+                  </Text>
+                )}
+                {corpusLang.wikimediaArticles && corpusLang.wikimediaArticles.length > 0 && (
+                  <View style={{ gap: 4, marginTop: 4 }}>
+                    <Text style={{ fontFamily: "Inter_700Bold", fontSize: 11, color: colors.kenyaGreen }}>
+                      OPEN-ACCESS ARTICLES ({corpusLang.wikimediaArticles[0]?.source})
+                    </Text>
+                    <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+                      {corpusLang.wikimediaArticles.map((art, aIdx) => (
+                        <Pressable
+                          key={`wa-${aIdx}`}
+                          onPress={() => Linking.openURL(art.url).catch(() => {})}
+                          style={{
+                            paddingHorizontal: 9,
+                            paddingVertical: 4,
+                            borderRadius: 999,
+                            borderWidth: 1,
+                            borderColor: `${colors.kenyaGreen}45`,
+                            backgroundColor: `${colors.kenyaGreen}12`,
+                          }}
+                        >
+                          <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11, color: colors.kenyaGreen }}>
+                            {art.title}
+                          </Text>
+                        </Pressable>
+                      ))}
+                    </View>
+                  </View>
                 )}
                 {corpusLang.audioChapters && corpusLang.audioChapters.length > 0 && (
                   <View style={{ marginTop: 6, gap: 6 }}>

@@ -134,6 +134,34 @@ def main() -> None:
     if readers_dir.is_dir():
         for rf in sorted(readers_dir.glob("*.json")):
             rd = load_json_safe(rf)
+            if isinstance(rd, list):
+                # OER Storybooks format: list of {lang_id, license, title, text}
+                total_reader_sentences += len(rd)
+                src_name = rf.stem.replace("-", " ").title()
+                for row in rd:
+                    if not isinstance(row, dict):
+                        continue
+                    lid = row.get("lang_id") or row.get("languageId")
+                    if not lid:
+                        for token in rf.stem.lower().split("-"):
+                            if token in ISO_TO_LANG:
+                                lid = ISO_TO_LANG[token]
+                                break
+                    if not lid:
+                        continue
+                    rec = ensure_lang(lid)
+                    if len(rec["sampleReadings"]) >= 12:
+                        continue
+                    raw_t = " ".join(str(row.get("text") or "").split())
+                    if len(raw_t) > 180:
+                        raw_t = raw_t[:175].rsplit(" ", 1)[0].rstrip(",;:") + "."
+                    if len(raw_t) >= 12:
+                        rec["sampleReadings"].append({
+                            "text": raw_t,
+                            "source": str(row.get("title") or src_name)[:80],
+                            "license": str(row.get("license") or "CC-BY-4.0"),
+                        })
+                continue
             if not isinstance(rd, dict):
                 continue
             lid = rd.get("languageId")
@@ -303,17 +331,28 @@ def main() -> None:
                 continue
             entries_preview: list[dict] = []
             total_entries = 0
-            for cat in sd.get("categories", []):
-                ents = cat.get("entries", [])
+            if sd.get("categories"):
+                for cat in sd.get("categories", []):
+                    ents = cat.get("entries", [])
+                    total_entries += len(ents)
+                    for e in ents:
+                        if len(entries_preview) < 300:
+                            entries_preview.append({
+                                "english": str(e.get("english", ""))[:80],
+                                "translation": str(e.get("translation", ""))[:80],
+                                "context": str(e.get("context", ""))[:120],
+                                "category": cat.get("id", "phrases"),
+                            })
+            elif isinstance(sd.get("entries"), list):
+                ents = sd.get("entries", [])
                 total_entries += len(ents)
-                for e in ents:
-                    if len(entries_preview) < 300:
-                        entries_preview.append({
-                            "english": str(e.get("english", ""))[:80],
-                            "translation": str(e.get("translation", ""))[:80],
-                            "context": str(e.get("context", ""))[:120],
-                            "category": cat.get("id", "phrases"),
-                        })
+                for e in ents[:300]:
+                    entries_preview.append({
+                        "english": str(e.get("english", ""))[:80],
+                        "translation": str(e.get("translation", ""))[:80],
+                        "context": str(e.get("context", ""))[:120],
+                        "category": "phrases",
+                    })
             staged_varieties.append({
                 "id": sd.get("languageId", sf.stem),
                 "name": sd.get("languageName", sf.stem.title()),

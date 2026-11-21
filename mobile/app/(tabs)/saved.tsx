@@ -30,6 +30,7 @@ import {
   getCategoryInfo,
 } from "../../src/shared/lib/tools-registry";
 import { DynamicIcon } from "../../src/components/DynamicIcon";
+import { getMobileAdsModule } from "../../src/lib/mobile-ads";
 
 function SavedToolCard({
   tool,
@@ -161,6 +162,30 @@ export default function SavedScreen() {
             setSaved([]);
             await AsyncStorage.removeItem("kh-saved-tools");
           },
+        },
+      ]
+    );
+  };
+
+  const handleManageAdPrivacy = async () => {
+    triggerHaptic(8);
+    try {
+      const mod = getMobileAdsModule();
+      if (mod?.AdsConsent?.showPrivacyOptionsForm) {
+        await mod.AdsConsent.showPrivacyOptionsForm();
+        return;
+      }
+    } catch {
+      // Fall back to privacy portal notice below
+    }
+    Alert.alert(
+      "Ad & Privacy Preferences",
+      "KenyaHub stores your saved tools and language progress locally on your device. You can review our full Kenya DPA 2019 privacy policy online.",
+      [
+        { text: "Close", style: "cancel" },
+        {
+          text: "Open Privacy Policy",
+          onPress: () => Linking.openURL("https://kenyahub.me/privacy/").catch(() => {}),
         },
       ]
     );

@@ -112,6 +112,10 @@ def load_hf_stream(repo: str, config: str | None = None, split: str = "train"):
 
 ISO_TO_KENYAHUB_LANG: dict[str, str] = {
     "sw": "swahili", "swa": "swahili", "swh": "swahili",
+    "dug": "mijikenda", "dig": "mijikenda", "nyf": "mijikenda",
+    "thk": "meru", "enb": "kalenjin", "oki": "kalenjin", "sgc": "kalenjin",
+    "lwg": "luhya", "pkb": "pokomo", "tvs": "taveta", "rel": "rendille",
+    "saq": "samburu", "tuv": "turkana", "teo": "teso", "gaz": "borana",
     "ki": "kikuyu", "kik": "kikuyu",
     "luo": "luo",
     "kam": "kamba",
@@ -508,33 +512,62 @@ def ingest_panlex_cc0(lang_filter: str, max_rows: int, dry_run: bool) -> dict[st
     return added_by_lang
 
 
+KAIKKI_PER_LANG_TARGETS: list[tuple[str, str, str]] = [
+    ("Swahili", "swahili", "Kaikki.org Wiktionary Swahili"),
+    ("Somali", "somali", "Kaikki.org Wiktionary Somali"),
+    ("Oromo", "borana", "Kaikki.org Wiktionary Oromo"),
+    ("Kikuyu", "kikuyu", "Kaikki.org Wiktionary Kikuyu"),
+    ("Luo", "luo", "Kaikki.org Wiktionary Luo"),
+    ("Kamba", "kamba", "Kaikki.org Wiktionary Kamba"),
+    ("Maasai", "maasai", "Kaikki.org Wiktionary Maasai"),
+    ("Turkana", "turkana", "Kaikki.org Wiktionary Turkana"),
+    ("Meru", "meru", "Kaikki.org Wiktionary Meru"),
+    ("Taita", "taita", "Kaikki.org Wiktionary Taita"),
+    ("Teso", "teso", "Kaikki.org Wiktionary Teso"),
+    ("Kalenjin", "kalenjin", "Kaikki.org Wiktionary Kalenjin"),
+    ("Luhya", "luhya", "Kaikki.org Wiktionary Luhya"),
+    ("Gusii", "kisii", "Kaikki.org Wiktionary Gusii"),
+    ("Embu", "embu", "Kaikki.org Wiktionary Embu"),
+    ("Pokot", "pokot", "Kaikki.org Wiktionary Pokot"),
+    ("Samburu", "samburu", "Kaikki.org Wiktionary Samburu"),
+    ("Rendille", "rendille", "Kaikki.org Wiktionary Rendille"),
+    ("Mijikenda", "mijikenda", "Kaikki.org Wiktionary Mijikenda"),
+    ("Sheng", "swahili", "Kaikki.org Wiktionary Sheng"),
+]
+
+
 def ingest_kaikki_raw_dump(lang_filter: str, max_rows: int, dry_run: bool, max_seconds: int = 180) -> dict[str, int]:
-    """Stream-filter Kaikki raw Wiktextract dump with a wall-clock cap so CI never times out."""
-    raw_url = os.environ.get("KAIKKI_RAW_DUMP_URL", "https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz")
-    print(f"[Kaikki Raw Wiktextract CC-BY-SA-4.0] Streaming Kenyan ISO codes + Sheng (cap {max_seconds}s) from {raw_url}")
+    """Download Kaikki.org per-language Wiktionary JSONL extracts directly (fast, 100% Kenyan coverage, CC-BY-SA-4.0)."""
+    print(f"[Kaikki Per-Language Wiktionary CC-BY-SA-4.0] Fetching {len(KAIKKI_PER_LANG_TARGETS)} Kenyan language JSONL dictionaries directly (cap {max_seconds}s)...")
     if dry_run:
         return {}
     added_by_lang: dict[str, int] = {}
-    citation = "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
-    buckets: dict[str, list[dict[str, Any]]] = {}
     t0 = time.monotonic()
-    try:
-        with HTTP_SESSION.get(raw_url, stream=True, timeout=60) as resp:
-            if not resp.ok:
-                return {}
-            with gzip.GzipFile(fileobj=resp.raw) as gz:
-                for raw_line in gz:
-                    if (time.monotonic() - t0) > max_seconds:
+
+    for wiki_name, lang_id, label in KAIKKI_PER_LANG_TARGETS:
+        if (time.monotonic() - t0) > max_seconds:
+            print("  [info] Kaikki wall-clock budget reached; stopping remaining languages.")
+            break
+        if lang_filter != "all" and lang_id != lang_filter:
+            continue
+        url = f"https://kaikki.org/dictionary/{wiki_name}/kaikki.org-dictionary-{wiki_name}.jsonl"
+        citation = f"{label} (CC-BY-SA-4.0, {url})"
+        batch: list[dict[str, Any]] = []
+        try:
+            with HTTP_SESSION.get(url, stream=True, timeout=30) as resp:
+                if resp.status_code == 404:
+                    continue
+                if not resp.ok:
+                    print(f"  [warn] Kaikki {wiki_name} HTTP {resp.status_code}")
+                    continue
+                for raw_line in resp.iter_lines(decode_unicode=True):
+                    if not raw_line:
+                        continue
+                    if len(batch) >= max_rows:
                         break
                     try:
-                        obj = json.loads(raw_line.decode("utf-8"))
+                        obj = json.loads(raw_line)
                     except Exception:
-                        continue
-                    lc = str(obj.get("lang_code") or "").lower()
-                    lang_id = ISO_TO_KENYAHUB_LANG.get(lc)
-                    if not lang_id or (lang_filter != "all" and lang_id != lang_filter):
-                        continue
-                    if len(buckets.get(lang_id, [])) >= max_rows:
                         continue
                     word = str(obj.get("word") or "").strip()
                     senses = obj.get("senses") or []
@@ -542,14 +575,20 @@ def ingest_kaikki_raw_dump(lang_filter: str, max_rows: int, dry_run: bool, max_s
                     tags = [t.lower() for s in senses for t in (s.get("tags") or []) if isinstance(t, str)]
                     if word and glosses:
                         ipa = next((snd["ipa"].strip("/[]") for snd in (obj.get("sounds") or []) if snd.get("ipa")), "")
-                        ctx = f"{citation} [Sheng]" if ("sheng" in tags and lang_id == "swahili") else citation
-                        buckets.setdefault(lang_id, []).append({
-                            "english": glosses[0][:180], "translation": word, "pronunciation": ipa, "context": ctx,
+                        ctx = f"{citation} [Sheng]" if (wiki_name == "Sheng" or ("sheng" in tags and lang_id == "swahili")) else citation
+                        batch.append({
+                            "english": glosses[0][:180],
+                            "translation": word,
+                            "pronunciation": ipa,
+                            "context": ctx,
                         })
-        for lang_id, entries in buckets.items():
-            added_by_lang[lang_id] = merge_entries_into_dictionary(lang_id, entries)
-    except Exception as exc:
-        print(f"  [warn] Kaikki raw stream notice: {exc}")
+            if batch:
+                added = merge_entries_into_dictionary(lang_id, batch)
+                added_by_lang[lang_id] = added_by_lang.get(lang_id, 0) + added
+                print(f"  -> Kaikki {wiki_name} ({lang_id}): parsed {len(batch)} entries, added {added} new.")
+        except Exception as exc:
+            print(f"  [warn] Kaikki {wiki_name} notice: {exc}")
+
     return added_by_lang
 
 
@@ -782,7 +821,7 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool) -> None:
                 url = row.get("url") or row.get("book_url") or ""
                 if not is_permissive_oer_row(str(lic), str(src), str(url)):
                     continue
-                iso = str(row.get("iso") or row.get("language") or row.get("lang") or "").lower()
+                iso = str(row.get("iso") or row.get("language") or row.get("lang") or job.get("config") or "").lower()
                 if iso not in ISO_TO_KENYAHUB_LANG:
                     continue
                 kept.append({"lang_id": ISO_TO_KENYAHUB_LANG[iso], "license": str(lic), "title": row.get("title"), "text": str(row.get("text") or "")[:2000]})

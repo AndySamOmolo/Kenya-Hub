@@ -654,22 +654,43 @@ export default function ToolDetailScreen() {
                     {tool.title}
                   </Text>
                 )}
-                <Text
-                  numberOfLines={2}
-                  style={[
-                    styles.heroDescription,
-                    {
-                      color: theme.textSecondary,
-                      marginTop:
-                        tool.title.trim().toLowerCase() !==
-                        tool.shortTitle.trim().toLowerCase()
-                          ? 2
-                          : 0,
-                    },
-                  ]}
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={descriptionExpanded ? "Collapse tool description" : "Expand full tool description"}
+                  onPress={() => {
+                    triggerHaptic(6);
+                    setDescriptionExpanded((prev) => !prev);
+                  }}
                 >
-                  {tool.description}
-                </Text>
+                  <Text
+                    numberOfLines={descriptionExpanded ? undefined : 2}
+                    style={[
+                      styles.heroDescription,
+                      {
+                        color: theme.textSecondary,
+                        marginTop:
+                          tool.title.trim().toLowerCase() !==
+                          tool.shortTitle.trim().toLowerCase()
+                            ? 2
+                            : 0,
+                      },
+                    ]}
+                  >
+                    {tool.description}
+                  </Text>
+                  {tool.description.length > 75 && (
+                    <View style={{ flexDirection: "row", alignItems: "center", gap: 4, marginTop: 4 }}>
+                      <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: theme.gold }}>
+                        {descriptionExpanded ? "Show less" : "Full description"}
+                      </Text>
+                      <Ionicons
+                        name={descriptionExpanded ? "chevron-up" : "chevron-down"}
+                        size={13}
+                        color={theme.gold}
+                      />
+                    </View>
+                  )}
+                </Pressable>
               </View>
             </View>
 
@@ -1568,11 +1589,13 @@ const styles = StyleSheet.create({
   sourceTag: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 4,
+    gap: 5,
     paddingHorizontal: 8,
-    paddingVertical: 3,
+    paddingVertical: 4,
     borderRadius: 8,
     borderWidth: 1,
+    maxWidth: "100%",
+    flexShrink: 1,
   },
   govDisclaimerBox: {
     flexDirection: "row",
@@ -1596,6 +1619,7 @@ const styles = StyleSheet.create({
   sourceText: {
     fontFamily: "Inter_500Medium",
     fontSize: 11,
+    flexShrink: 1,
   },
   toolContentWrap: { marginBottom: 20 },
   notesSectionCard: {
