@@ -2,6 +2,7 @@
 "use client";
 
 import ExpandablePillRow from "@/components/ui/ExpandablePillRow";
+import StagedVarietiesPanel from "@/components/learn/StagedVarietiesPanel";
 import SearchInput from "@/components/ui/SearchInput";
 import { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
