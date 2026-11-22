@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T14:00:49.223527+00:00",
+  "updatedAt": "2026-11-22T17:57:25.903737+00:00",
   "external": {
     "ipa-dict-sw": {
       "status": "completed",
@@ -56,22 +56,22 @@
     "kalenjin-parallel-eng-kln": {
       "status": "pending_gated_approval",
       "reason": "Dataset 'Tonykip/kalenjin-parallel-corpus' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Tonykip/kalenjin-parallel-corpus to ask for access.",
-      "updatedAt": "2026-11-22T14:00:15.849450+00:00"
+      "updatedAt": "2026-11-22T17:56:45.716428+00:00"
     },
     "ai4agric-mt-eng-swa": {
       "status": "pending_gated_approval",
       "reason": "Dataset 'AI4Agric/MT-Eng-Swa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/AI4Agric/MT-Eng-Swa to ask for access.",
-      "updatedAt": "2026-11-22T14:00:16.237986+00:00"
+      "updatedAt": "2026-11-22T17:56:45.886654+00:00"
     },
     "ai4agric-mt-eng-kik": {
       "status": "pending_gated_approval",
       "reason": "Dataset 'AI4Agric/MT-Eng-Kik' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/AI4Agric/MT-Eng-Kik to ask for access.",
-      "updatedAt": "2026-11-22T14:00:16.381953+00:00"
+      "updatedAt": "2026-11-22T17:56:46.101697+00:00"
     },
     "ai4agric-mt-eng-kln": {
       "status": "pending_gated_approval",
       "reason": "Dataset 'AI4Agric/MT-Eng-Kln' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/AI4Agric/MT-Eng-Kln to ask for access.",
-      "updatedAt": "2026-11-22T14:00:16.571080+00:00"
+      "updatedAt": "2026-11-22T17:56:46.272669+00:00"
     }
   },
   "directSources": {
@@ -270,7 +270,9 @@
     "glotstorybook": {
       "status": "completed",
       "count": 442,
-      "updatedAt": "2026-11-22T14:00:48.843259+00:00"
+      "withEnglish": 441,
+      "englishAlignedV2": true,
+      "updatedAt": "2026-11-22T17:57:25.342374+00:00"
     }
   }
 }
