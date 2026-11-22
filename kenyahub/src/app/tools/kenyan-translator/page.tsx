@@ -138,6 +138,8 @@ export default function KenyanTranslatorPage() {
 
   useEffect(() => {
     setSearchPage(1);
+    if (targetLang && targetLang !== 'english') preloadLanguageAudioIndex(targetLang);
+    if (sourceLang && sourceLang !== 'english') preloadLanguageAudioIndex(sourceLang);
   }, [searchQuery, sourceLanguage, targetLanguage]);
 
   const openContributeModal = useCallback((langName?: string, defaultEnglish?: string) => {
@@ -529,7 +531,7 @@ export default function KenyanTranslatorPage() {
     () => ({
       notesTitle: `${ALL_DICT_METAS.length}-Language Kenyan Dictionary & Cross-Dialect Translator Guide`,
       overview: [
-        `Unlike generic machine translation tools that frequently conflate East African languages, the KenyaHub ${ALL_DICT_METAS.length}-Language Translator searches ${totalEntries.toLocaleString("en-KE")}+ verified entries across ${ALL_DICT_METAS.length} Kenyan languages grounded in public-domain monographs and open lexical corpora.`,
+        `Unlike generic machine translation tools that frequently conflate East African languages, the KenyaHub ${ALL_DICT_METAS.length}-Language Translator searches ${totalEntries.toLocaleString("en-KE")}+ verified entries across ${ALL_DICT_METAS.length} Kenyan languages grounded in verified Kenyan dictionaries and historical wordlists.`,
         `Translate directly between English and any Kenyan language, compare cognates side by side across all ${ALL_DICT_METAS.length} languages, or translate between any two Kenyan languages using English as a semantic bridge.`,
       ],
       howItWorks: [],

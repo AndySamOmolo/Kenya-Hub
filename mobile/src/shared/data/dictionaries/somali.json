@@ -1344,7 +1344,8 @@
           "english": "Child",
           "translation": "cunug / ilmo",
           "pronunciation": "cunug",
-          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/ilmo.opus"
         },
         {
           "english": "Uncle",
@@ -3084,7 +3085,8 @@
           "english": "Tooth",
           "translation": "Ilik, Ilko",
           "pronunciation": "i-lik il-koh",
-          "context": "Somali — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+          "context": "Somali — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/ilko.opus"
         },
         {
           "english": "Breast",
@@ -6780,7 +6782,8 @@
           "english": "River",
           "translation": "Dōh'; Webi (wide one)",
           "pronunciation": "doh-h'",
-          "context": "Somali — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+          "context": "Somali — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/webi.opus"
         },
         {
           "english": "Smoke",
@@ -14357,7 +14360,8 @@
           "english": "Road",
           "translation": "Wăḍḍo, Jīd",
           "pronunciation": "waddo jid",
-          "context": "Somali — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+          "context": "Somali — Sir H. H. Johnston, The Uganda Protectorate Vol. II (1902, pp. 903–912) • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/waddo.opus"
         },
         {
           "english": "Track",
@@ -15192,7 +15196,7 @@
         {
           "english": "how far is B.?",
           "translation": "B. intè jirta?",
-          "context": "Lt. J. W. C. Kirk, Notes on the Somali Language (1903)"
+          "context": "Somali Grammar & Lexicon (Kirk 1903) • Cross-verified with The Thiomi Dataset & Kaikki.org Somali (CC-BY-4.0)"
         },
         {
           "english": "how far is B. from D.?",
@@ -15202,7 +15206,8 @@
         {
           "english": "when did you go to B.?",
           "translation": "B. gormad ku takté?",
-          "context": "Lt. J. W. C. Kirk, Notes on the Somali Language (1903)"
+          "context": "Somali Grammar & Lexicon (Kirk 1903) • Cross-verified with The Thiomi Dataset & Kaikki.org Somali (CC-BY-4.0)",
+          "pronunciation": "b gormad ku takté"
         },
         {
           "english": "umban / hababi donna, if we go far, we shall be lost",
@@ -17606,7 +17611,8 @@
           "english": "Where?",
           "translation": "xaggee? / halkee?",
           "pronunciation": "xaggee",
-          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/halkee.opus"
         },
         {
           "english": "Narrow",
@@ -18208,7 +18214,8 @@
           "english": "Road / path",
           "translation": "jid / waddo",
           "pronunciation": "jid",
-          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/waddo.opus"
         },
         {
           "english": "Good / fine",
@@ -18322,7 +18329,8 @@
           "english": "Earth / soil",
           "translation": "carro / dhul",
           "pronunciation": "carro",
-          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)"
+          "context": "Wiktionary Appendix:Somali Swadesh list & Wikipedia Somali grammar • Cross-verified with The Thiomi Dataset Somali (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/dhul.opus"
         },
         {
           "english": "Right (side)",
@@ -24932,12 +24940,6 @@
           "context": "Somali Grammar & Lexicon (Kirk 1903) • Cross-verified with The Thiomi Dataset & Kaikki.org Somali (CC-BY-4.0)"
         },
         {
-          "english": "When did you go to B",
-          "translation": "B. gormad ku takté?",
-          "pronunciation": "b gormad ku takté",
-          "context": "Somali Grammar & Lexicon (Kirk 1903) • Cross-verified with The Thiomi Dataset & Kaikki.org Somali (CC-BY-4.0)"
-        },
-        {
           "english": "What are you doing it for?",
           "translation": "mahád u fálisa?",
           "pronunciation": "mahád u fálisa",
@@ -25857,11 +25859,6 @@
         {
           "english": "have you got it?",
           "translation": "ma haïsta?",
-          "context": "Somali Grammar & Lexicon (Kirk 1903) • Cross-verified with The Thiomi Dataset & Kaikki.org Somali (CC-BY-4.0)"
-        },
-        {
-          "english": "how far is B",
-          "translation": "B. intè jirta?",
           "context": "Somali Grammar & Lexicon (Kirk 1903) • Cross-verified with The Thiomi Dataset & Kaikki.org Somali (CC-BY-4.0)"
         },
         {
@@ -31092,7 +31089,8 @@
         {
           "english": "“Mum, what’s wrong?” She takes a deep breath and turns to face me.",
           "translation": "\"Hooyo, maxa qaldan?\" Waxay jiiday neefta oona soo jeesatay si ay ii aragto.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/hooyo.opus"
         },
         {
           "english": "Her eyes are wide and filled with fear.",
@@ -33567,7 +33565,8 @@
         {
           "english": "\"Mommy, what are those?\" the toddler asked, pointing at the plants in the living room.",
           "translation": "\"Hooyo, waa maxay waxaas?\" socod baradka ayaa weydiiyey, isaga oo farta ku fiiqaya dhirta qolka fadhiga.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/hooyo.opus"
         },
         {
           "english": "\"Those are plants,\" Mommy replied \"They're living things, just like you and me.\"",
@@ -37017,7 +37016,8 @@
         {
           "english": "When I was a child, we had a dog, a cat, and a few fish.",
           "translation": "Markii aan yaraa, waxaan haysanay eey, bisad, iyo kalluun yar.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/bisad.opus"
         },
         {
           "english": "As I got older, we added a few more animals to the mix, including a rabbit, a guinea pig, and a hamster.",
@@ -43702,7 +43702,8 @@
         {
           "english": "\"Yes, they are,\" Ms. Smith replied.",
           "translation": "\"Haa, way jiraan,\" ayay ku jawaabtay Ms. Smith.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/way-jiraan.opus"
         },
         {
           "english": "\"But be careful not to overdo it. You don't want to get too full or too tipsy!\"",
@@ -43882,7 +43883,8 @@
         {
           "english": "It is expressed through acts of kindness, compassion, and forgiveness.",
           "translation": "Waxaa lagu muujiyaa ficillo naxariis, naxariis, iyo cafis.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/naxariis.opus"
         },
         {
           "english": "When we love Jesus, we are not only showing our love for him, but we are also showing our love for God.",
@@ -45402,7 +45404,8 @@
         {
           "english": "\"Thank you,\" the man said \"You're a kind girl.\" He took the match and lit it.",
           "translation": "\"Mahadsanid,\" ayuu ninkii yiri \"Waxaad tahay gabar naxariis badan.\" Kabriidkii ayuu qaaday oo shiday.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/mahadsanid.opus"
         },
         {
           "english": "As the flame grew, the little girl saw that it was a magic match.",
@@ -47907,7 +47910,8 @@
         {
           "english": "Thank you, doctor. I appreciate that.",
           "translation": "Mahadsanid, dhakhtar. Waan mahadnaqayaa taas .",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/mahadsanid.opus"
         },
         {
           "english": "Sure, here's a dialogue discussing the lab results:",
@@ -48862,7 +48866,8 @@
         {
           "english": "Ms. Barbosa: I will, thank you.",
           "translation": "Ms. Barbosa: Waan sammeyn doonaa, mahadsanid.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/mahadsanid.opus"
         },
         {
           "english": "Nurse: Also, do you have someone at home to help you out for a bit?",
@@ -49152,7 +49157,8 @@
         {
           "english": "\"Okay, thanks,\" Mr. Durand said, looking relieved. \"I appreciate it.\"",
           "translation": "\"Hagaag, mahadsanid,\" ayuu yiri Mr. Durand, isagoo u muuqda mid nafis dareemay. \"Waan ka mahadnaqayaa.\"",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_so, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/mahadsanid.opus"
         },
         {
           "english": "\"No problem,\" the nurse practitioner smiled. \"Just take it easy out there, and try to avoid getting stung again if you can help it.\"",
@@ -66681,13 +66687,6 @@
           "context": "Kaikki.org Somali Wiktionary Extract (CC-BY-SA-4.0, https://kaikki.org/dictionary/Somali/index.html)"
         },
         {
-          "english": "thank you",
-          "translation": "mahadsanid",
-          "pronunciation": "",
-          "context": "Kaikki.org Somali Wiktionary Extract (CC-BY-SA-4.0, https://kaikki.org/dictionary/Somali/index.html)",
-          "audioFile": "https://audio.kenyahub.me/audio/somali/mahadsanid.opus"
-        },
-        {
           "english": "hold",
           "translation": "qab",
           "pronunciation": "ˈqɑ̄b",
@@ -67738,12 +67737,6 @@
           "context": "Kaikki.org Somali Wiktionary Extract (CC-BY-SA-4.0, https://kaikki.org/dictionary/Somali/index.html)"
         },
         {
-          "english": "what",
-          "translation": "maxaa",
-          "pronunciation": "",
-          "context": "Kaikki.org Somali Wiktionary Extract (CC-BY-SA-4.0, https://kaikki.org/dictionary/Somali/index.html)"
-        },
-        {
           "english": "indicating their reaction at new information, analogous to Really?",
           "translation": "miyaa",
           "pronunciation": "",
@@ -68024,12 +68017,6 @@
         {
           "english": "create, cultivate",
           "translation": "abuur",
-          "pronunciation": "",
-          "context": "Kaikki.org Somali Wiktionary Extract (CC-BY-SA-4.0, https://kaikki.org/dictionary/Somali/index.html)"
-        },
-        {
-          "english": "answer",
-          "translation": "jawaab",
           "pronunciation": "",
           "context": "Kaikki.org Somali Wiktionary Extract (CC-BY-SA-4.0, https://kaikki.org/dictionary/Somali/index.html)"
         },
@@ -71059,7 +71046,8 @@
           "english": "1st, 2nd & 3rd Regular Verb Models",
           "translation": "sheg (tell), gurso (marry), samei (make), hel (get), so'o (walk), si (give), arag (see), tag (go)",
           "pronunciation": "",
-          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 43–56 · Regular Conjugations"
+          "context": "Kirk (1905) Somali Grammar (Somali (Ishhak)) · Kirk (1905), pp. 43–56 · Regular Conjugations",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/hel.opus"
         },
         {
           "english": "Irregular Prefix & Defective Verbs",
@@ -71582,12 +71570,6 @@
         {
           "english": "Cold water",
           "translation": "Biyo qabow",
-          "pronunciation": "",
-          "context": "en-so Parallel Clean 8k (CC-BY-4.0, https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k)"
-        },
-        {
-          "english": "Can I help you",
-          "translation": "Ma ku caawin karaa",
           "pronunciation": "",
           "context": "en-so Parallel Clean 8k (CC-BY-4.0, https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k)"
         },
@@ -72354,12 +72336,6 @@
           "context": "en-so Parallel Clean 8k (CC-BY-4.0, https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k)"
         },
         {
-          "english": "What happened",
-          "translation": "Maxaa dhacay",
-          "pronunciation": "",
-          "context": "en-so Parallel Clean 8k (CC-BY-4.0, https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k)"
-        },
-        {
           "english": "Nothing happened",
           "translation": "Waxba ma dhacin",
           "pronunciation": "",
@@ -72386,12 +72362,6 @@
         {
           "english": "Remind me tomorrow",
           "translation": "Berri i xusuusi",
-          "pronunciation": "",
-          "context": "en-so Parallel Clean 8k (CC-BY-4.0, https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k)"
-        },
-        {
-          "english": "Are you sure",
-          "translation": "Ma hubtaa",
           "pronunciation": "",
           "context": "en-so Parallel Clean 8k (CC-BY-4.0, https://huggingface.co/datasets/tufaax/en-so-parallel-clean-8k)"
         },
@@ -87139,12 +87109,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Such is the chastisement; and the chastisement of the Hereafter is assuredly even greater, if only they knew.",
-          "translation": "Somali / Somalice Caddibaaddu waa saas Caddibaadda Aakharaase ka weyn haddii ay wax ogyihiin.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "(But I have seen all the signs.)",
           "translation": "Kulli dadkii ammaantayda arkay, oo arkay calaamooyinkii aan ku",
           "pronunciation": "",
@@ -87853,12 +87817,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Or speak to the earth, and it will teach you;",
-          "translation": "8 Amase bal dhulka la hadal, oo isna wax buu ku bari doonaa,",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "you shall not be ashamed or disgraced forever and ever.",
           "translation": "Waxaad ma ceeboobi doono, oo ma aad ceeboobi doontid, xataa weligood iyo weligoodba.",
           "pronunciation": "",
@@ -88383,12 +88341,6 @@
         {
           "english": "(See various Scriptures).",
           "translation": "Ku Soo oogay Dacwada Ahok ayaa waxaa lagu eedeeyey inuu aflgaadeeyey kitaabka qur'aanka kariimka ah, Asigoo eedeymahaasi  uu beeniyey.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "(See various Scriptures).",
-          "translation": "Ku Soo oogay Dacwada Ahok ayaa waxaa lagu eedeeyey inuu aflgaadeeyey kitaabka qur'aanka kariimka ah, Asigoo eedeymahaasi uu beeniyey.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -90043,12 +89995,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "And now I'm staring at the bodies as they're dancing so slow.",
-          "translation": "And now I'm staring at the bodies as they dancin' so slow ah ah ah ah ah ah ah ah",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "I found a woman ruling over them, she has been given all things, and she has a great throne.",
           "translation": "\"Waxaan soo helay haweenay boqorad u ah oo la siiyay wax walba [uu lahaan karo boqor kasta oo ka taliya arlo], oo waxay leedahay carshi wayn.\"",
           "pronunciation": "",
@@ -90567,12 +90513,6 @@
         {
           "english": "Here in the Great White North it is Remembrance Day for those who served.",
           "translation": "Dadka ka so jeeda gobolada waqooyiga ayaa ee aan ahayn dadka sare ku xusan ayaa iyagu maalintaas waxay u tahay maalin taariikhmudan allow an waaga wagaabe cunin.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "And they differed about their Command (i.e., broken themselves into sects) among themselves; all are returning to Us.",
-          "translation": "21|93|waxayse isku Khilaafeen Amarkoodii Dhexdooda Dhammaanna Xagaygaa loo soo Celin.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -91549,12 +91489,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "My wealth is in the hearts of people.\"",
-          "translation": "xoolahaygiina waxay u tagi doonaan ayagoo xalaal u ah  dadkii dhaxlayay .",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "We express the same to our near ones.",
           "translation": "Waxaan ka fileynaa anshax isku mid ah walaalaheena kale.",
           "pronunciation": "",
@@ -91767,12 +91701,6 @@
         {
           "english": "Although I remember, this is true for others.",
           "translation": "In kastoo aan xasuusto, tani waa run dadka kale.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "And they differed about their Command (i.e., broken themselves into sects) among themselves; all are returning to Us.",
-          "translation": "(93) waxayse isku Khilaafeen Amarkoodii Dhexdooda Dhammaanna Xagaygaa loo soo Celin.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -94405,12 +94333,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "And most surely it is a knowledge of the hour, therefore have no doubt about it and follow me: this is the right path",
-          "translation": "Somali / Somalice Nabi Ciisana waa calaamadda Saacadda (Qiyaame) ee ha shakiyina, ina raaca kaasaa ah jidka toosane.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "so it is easy to burn them.[106]",
           "translation": "Oo duunyo waa fududdahee, dadab laguu heelay,",
           "pronunciation": "",
@@ -95215,12 +95137,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "And we saved him and his family out of the great distress",
-          "translation": "37|76|Waxaana Ka korinay isaga iyo ehelkiisiiba shidadii waynayd (maanshayntii).",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "That's what people do (for others) when they have fires.\"",
           "translation": "Arrintaana waa mid kale oo jahwareer leh balse waa wax qosol leh oo ragga ay sameeyaan marka ay gabar jevelyihiin.",
           "pronunciation": "",
@@ -95865,12 +95781,6 @@
         {
           "english": "son of a lord of a certain town or province to go with him; the",
           "translation": "Waxaa Shalay magaalada Kismaayo Gaaray Maxamuud Siraaji oo ah wiil la dhashay ama da'dii  ka yaraa Allaha u naxariistee marxuun...",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "son of a lord of a certain town or province to go with him; the",
-          "translation": "Waxaa Shalay magaalada Kismaayo Gaaray Maxamuud Siraaji oo ah wiil la dhashay ama da'dii ka yaraa Allaha u naxariistee marxuun...",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -96867,12 +96777,6 @@
         {
           "english": "they would be a hard-working,",
           "translation": "Waxayna qaban Shaqo dhib ah.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "and those whose scales are light will be the losers, for they, are the ones who have been unjust to Our signs.",
-          "translation": "7|9|Cidduu Fududaado Miisaankiisuna kuwaasuna waa kuwa Khasaariyey Naftooda Dulmigay ku Falayeen Aayaadkanaga Dartiis.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-som_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -104674,7 +104578,8 @@
           "english": "Tropical depression Harvey becomes a hurricane, expected to make landfall on the Texas coast at Category 3, bringing life-threatening storm surge, rainfall, and wind hazards.",
           "translation": "Niyad jabka kulaylaha Harvey ayaa noqonaya duufaan, oo la filayo inuu ku soo dhaco xeebta Texas ee Qaybta 3, taasoo keeni karta duufaan halis gelisa nolosha, roobabka, iyo khataraha dabaysha.",
           "pronunciation": "",
-          "context": "Lesan AI HornMT Parallel News Benchmark (CC-BY-4.0, https://github.com/asmelashteka/HornMT)"
+          "context": "Lesan AI HornMT Parallel News Benchmark (CC-BY-4.0, https://github.com/asmelashteka/HornMT)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/roobabka.opus"
         },
         {
           "english": "The opposition movement in Venezuela seeks help from France.",
@@ -107338,7 +107243,8 @@
           "english": "For many, Ababa Tesfaye was a father figure, a teacher, an educator, an entertainer and a patron of good will in society, writes Samuel Getachew.",
           "translation": "Dad badan, Ababa Tesfaye wuxuu u ahaa aabbe, macallin, bare, maaweeliye, iyo hormuudka wanaagga bulshada dhexdeeda, ayuu qoray Samuel Getachew.",
           "pronunciation": "",
-          "context": "Lesan AI HornMT Parallel News Benchmark (CC-BY-4.0, https://github.com/asmelashteka/HornMT)"
+          "context": "Lesan AI HornMT Parallel News Benchmark (CC-BY-4.0, https://github.com/asmelashteka/HornMT)",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/bare.opus"
         },
         {
           "english": "Eyob, a 9th grader, who has been skating for the past five years, is a daredevil who tries various tricks.",
@@ -114936,7 +114842,8 @@
           "english": "give birth to, beget",
           "translation": "fin, or finfin",
           "pronunciation": "",
-          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.t."
+          "context": "Kirk (1905) Somali Grammar (Midgan (M)) · Kirk (1905), p. 202 · v.t.",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/fin.opus"
         },
         {
           "english": "be born",
@@ -117318,7 +117225,8 @@
           "english": "Poor",
           "translation": "Mas,keen",
           "pronunciation": "",
-          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55"
+          "context": "Smee (1844, p. 55) Soomallie (Somali) · Smee (1844), p. 55",
+          "audioFile": "https://audio.kenyahub.me/audio/somali/keen.opus"
         },
         {
           "english": "Dark",
@@ -117513,5 +117421,5 @@
   "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019); Green & Smith (2024) LSP #427 Ch. 13 Kenyan Maay Tone, Di Maio (2023) Kenyan Maay Focus, & LSP #190/#96 Somali Studies (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); Major H. Rayne (1921) Sun, Sand and Somals (Project Gutenberg #48598, US Public Domain, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm)",
   "isoCode": "som",
   "glottocode": "soma1255",
-  "totalEntries": 20914
+  "totalEntries": 20895
 }

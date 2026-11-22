@@ -492,7 +492,7 @@ export default function ProverbsView({
               {filteredKikuyu.length} Gĩkũyũ proverbs
             </span>
             <span className="inline-flex items-center gap-1">
-              <BookOpen className="w-3.5 h-3.5" /> Source: Public Domain Oral Wisdom Corpus
+              <BookOpen className="w-3.5 h-3.5" /> Source: Traditional Oral Wisdom Collection
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">

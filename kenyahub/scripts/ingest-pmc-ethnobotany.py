@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 """
 KenyaHub Wave 2 — Open-Access PMC/JEET/MDPI/eCAM/BMC CC-BY Ethnobotany Lexicon Extractor.
-Fetches JATS XML tables from Europe PMC (with NCBI E-utilities fallback) for 18 verified
+Fetches JATS XML tables from Europe PMC (with NCBI E-utilities fallback) for 16 verified
 commercially permissive (CC-BY-2.0 / CC-BY-4.0 / CC0-1.0) Kenyan ethnobotany articles,
 verifies JATS <license> at runtime, and merges vernacular plant names into `nature` and
 vernacular disease/medical terms into `emergency` across KenyaHub dictionaries.
+
+Includes:
+  - Per-paper completion tracking in `public/.text-ingested-lock.json` (skips already-ingested
+    papers when RETRY_PENDING_ONLY=true and FORCE_REINGEST!=true).
+  - Normalized deduplication across categories.
+  - Separate Language-column & continuation-row parsing for PMC4658748 (Kenyan Aloes).
+  - Bare `Plant` + `Preparation` + trailing `(Kamba name)` parsing for PMC1409767 (Antivenin Plants).
 """
 from __future__ import annotations
 
@@ -15,6 +22,7 @@ import re
 import sys
 import time
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -25,33 +33,56 @@ from lib.license_guard import assert_repo_allowed
 ROOT = Path(__file__).resolve().parents[1]
 DICT_DIR = ROOT / "src/data/dictionaries"
 STAGING_DIR = DICT_DIR / "staging"
+TEXT_LOCK_PATH = ROOT / "public/.text-ingested-lock.json"
 
 HTTP_SESSION = requests.Session()
-HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-PMC-Ethnobotany-Ingestor/1.0 (https://kenyahub.me)"})
+HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-PMC-Ethnobotany-Ingestor/2.0 (https://kenyahub.me; contact@kenyahub.me)"})
 
 ETHNOBOTANY_PAPERS = [
-    {"pmcid": "PMC1570449", "citation": "Bussmann (2006) Samburu Ethnobotany Mt. Nyiru", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1570449/", "default_lang": "samburu", "lang_map": {}},
+    {"pmcid": "PMC1570449", "citation": "Bussmann (2006) Samburu Ethnobotany Mt. Nyiru", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1570449/", "default_lang": "samburu", "lang_map": {}, "supplementary_only": True},
     {"pmcid": "PMC2412850", "citation": "Nanyingi et al. (2008) Samburu Ethnopharmacology", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2412850/", "default_lang": "samburu", "lang_map": {"samburu": "samburu", "turkana": "turkana", "maasai": "maasai", "masai": "maasai"}},
-    {"pmcid": "PMC4658748", "citation": "Bjorå et al. (2015) Uses of Kenyan Aloes", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/", "default_lang": None, "lang_map": {"kamba": "kamba", "kikuyu": "kikuyu", "gusii": "kisii", "ekegusii": "kisii", "maasai": "maasai", "mbeere": "embu", "taita": "taita", "tugen": "kalenjin", "samburu": "samburu", "somali": "somali"}},
+    {"pmcid": "PMC4658748", "citation": "Bjorå et al. (2015) Uses of Kenyan Aloes", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/", "default_lang": None, "lang_map": {"kamba": "kamba", "kikuyu": "kikuyu", "gusii": "kisii", "ekegusii": "kisii", "kisii": "kisii", "maasai": "maasai", "masai": "maasai", "mbeere": "embu", "mberee": "embu", "embu": "embu", "taita": "taita", "tugen": "kalenjin", "tugen-aror": "kalenjin", "kalenjin": "kalenjin", "samburu": "samburu", "somali": "somali", "turkana": "turkana", "pokot": "pokot", "borana": "borana", "luo": "luo", "swahili": "swahili", "luhya": "luhya", "meru": "meru", "rendille": "rendille"}},
     {"pmcid": "PMC3974104", "citation": "Kipkore et al. (2014) Marakwet Medicinal Plants", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3974104/", "default_lang": "kalenjin", "lang_map": {}},
     {"pmcid": "PMC1397805", "citation": "Njoroge & Bussmann (2006a) Kikuyu Antimalarial Plants", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1397805/", "default_lang": "kikuyu", "lang_map": {}},
     {"pmcid": "PMC1770906", "citation": "Njoroge & Bussmann (2006b) Kikuyu ENT Medicinal Plants", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1770906/", "default_lang": "kikuyu", "lang_map": {}},
-    {"pmcid": "PMC1409767", "citation": "Owuor & Kisangau (2006) Kenyan Antivenin Plants", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1409767/", "default_lang": None, "lang_map": {"kamba": "kamba", "luo": "luo", "dholuo": "luo"}},
+    {"pmcid": "PMC1409767", "citation": "Owuor & Kisangau (2006) Kenyan Antivenin Plants", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1409767/", "default_lang": None, "lang_map": {"kamba": "kamba", "luo": "luo", "dholuo": "luo", "swahili": "swahili"}},
     {"pmcid": "PMC3539861", "citation": "Gakuubi & Wanzala (2012) Buuri Meru Livestock Plants", "license": "CC-BY-2.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3539861/", "default_lang": "meru", "lang_map": {}},
     {"pmcid": "PMC7154930", "citation": "Mbuni et al. (2020) Cherangani Hills Medicinal Plants", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7154930/", "default_lang": None, "lang_map": {"m": "kalenjin", "marakwet": "kalenjin", "p": "pokot", "pokot": "pokot", "l": "luhya", "luhya": "luhya"}},
-    {"pmcid": "PMC7020225", "citation": "Nankaya et al. (2020) Maasai Medicinal Plants", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7020225/", "default_lang": "maasai", "lang_map": {}},
+    {"pmcid": "PMC7020225", "citation": "Nankaya et al. (2020) Maasai Medicinal Plants", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7020225/", "default_lang": "maasai", "lang_map": {}, "supplementary_only": True},
     {"pmcid": "PMC7306085", "citation": "Omara (2020) Kenyan Antimalarial Plants", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/", "default_lang": None, "lang_map": {"digo": "mijikenda", "giriama": "mijikenda", "kamba": "kamba", "kikuyu": "kikuyu", "kipsigis": "kalenjin", "kuria": "staging:kuria", "luo": "luo", "marakwet": "kalenjin", "maasai": "maasai", "nandi": "kalenjin", "swahili": "swahili", "tugen": "kalenjin"}},
-    {"pmcid": "PMC7149339", "citation": "Wanjohi et al. (2020) Marakwet Medicinal Wild Plants", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7149339/", "default_lang": "kalenjin", "lang_map": {}},
+    {"pmcid": "PMC7149339", "citation": "Wanjohi et al. (2020) Marakwet Medicinal Wild Plants", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7149339/", "default_lang": "kalenjin", "lang_map": {}, "supplementary_only": True},
     {"pmcid": "PMC7103046", "citation": "Mutie et al. (2020) Mutomo Hill Kitui Kamba Survey", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7103046/", "default_lang": "kamba", "lang_map": {}},
     {"pmcid": "PMC7469313", "citation": "Mailu et al. (2020) Kisumu East Luo Respiratory Plants", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7469313/", "default_lang": "luo", "lang_map": {"luo": "luo", "swahili": "swahili"}},
     {"pmcid": "PMC3954169", "citation": "Otieno & Analo (2012) Kakamega Forest Luhya Plants", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954169/", "default_lang": "luhya", "lang_map": {}},
-    {"pmcid": None, "doi": "10.1186/1746-4269-2-22", "citation": "Bussmann et al. (2006) Sekenani Valley Maasai Plants", "license": "CC-BY-2.0", "url": "https://doi.org/10.1186/1746-4269-2-22", "default_lang": "maasai", "lang_map": {}},
+    {"pmcid": "PMC1475560", "doi": "10.1186/1746-4269-2-22", "citation": "Bussmann et al. (2006) Sekenani Valley Maasai Plants", "license": "CC-BY-2.0", "url": "https://doi.org/10.1186/1746-4269-2-22", "default_lang": "maasai", "lang_map": {}, "supplementary_only": True},
 ]
 
-SCIENTIFIC_COL_RE = re.compile(r"(botanical|scientific|species|taxon|plant\s*name|latin)", re.I)
+SCIENTIFIC_COL_RE = re.compile(r"(botanical|scientific|species|taxon|plant\s*name|latin|^plant$)", re.I)
 VERNACULAR_COL_RE = re.compile(r"(local|vernacular|indigenous|common|samburu|maasai|marakwet|kikuyu|kamba|luo|luhya|meru|pokot|swahili)\s*name", re.I)
-DISEASE_COL_RE = re.compile(r"(disease|ailment|condition|indication|therapeutic|uses?|treatment|symptom|ethnoveterinary)", re.I)
+LANG_COL_RE = re.compile(r"(^language|ethnic|community|tribe)", re.I)
+DISEASE_COL_RE = re.compile(r"(disease|ailment|condition|indication|therapeutic|uses?|treatment|symptom|ethnoveterinary|preparation|translation)", re.I)
 VOUCHER_RE = re.compile(r"\[[^\]]*\]|\(voucher[^)]*\)", re.I)
+
+
+def norm_key(en: str, tr: str) -> tuple[str, str]:
+    en_n = " ".join(str(en or "").strip().lower().split()).strip(".,;:!?")
+    tr_n = " ".join(str(tr or "").strip().lower().split()).strip(".,;:!?")
+    return en_n, tr_n
+
+
+def load_text_lock() -> dict:
+    if TEXT_LOCK_PATH.exists():
+        try:
+            return json.loads(TEXT_LOCK_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
+def save_text_lock(lock: dict) -> None:
+    TEXT_LOCK_PATH.parent.mkdir(parents=True, exist_ok=True)
+    lock["updatedAt"] = datetime.now(timezone.utc).isoformat()
+    TEXT_LOCK_PATH.write_text(json.dumps(lock, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def clean_xml_text(elem: ET.Element) -> str:
@@ -116,10 +147,24 @@ def verify_jats_commercial_license(root: ET.Element) -> bool:
                 lic_blobs.append(str(v).lower())
     blob = " ".join(lic_blobs)
     if not blob:
-        return True  # Manifest-verified CC-BY when JATS omits <permissions>
+        return True
     if any(bad in blob for bad in ("noncommercial", "non-commercial", "by-nc", "by-nd", "-nc-", "-nd-")):
         return False
     return any(ok in blob for ok in ("creativecommons.org/licenses/by", "cc-by", "cc by", "cc0", "publicdomain/zero"))
+
+
+def _resolve_lang_from_cell(raw: str, lang_map: dict[str, str]) -> str | None:
+    if not raw:
+        return None
+    # Strip linguistic classification suffixes like "(B)", "(N)", "(C)" or "name"
+    cleaned = re.sub(r"\([^)]*\)", "", raw).strip().lower()
+    cleaned = re.sub(r"\s+name$", "", cleaned).strip()
+    if cleaned in lang_map:
+        return lang_map[cleaned]
+    for k, v in lang_map.items():
+        if len(k) >= 3 and k in cleaned:
+            return v
+    return None
 
 
 def extract_rows_from_xml(xml_text: str, paper: dict) -> list[tuple[str, str, dict]]:
@@ -150,9 +195,13 @@ def extract_rows_from_xml(xml_text: str, paper: dict) -> list[tuple[str, str, di
         headers = [clean_xml_text(th) for th in header_rows[-1]]
         sci_idx = next((i for i, h in enumerate(headers) if SCIENTIFIC_COL_RE.search(h)), None)
         vern_idx = next((i for i, h in enumerate(headers) if VERNACULAR_COL_RE.search(h)), None)
+        lang_idx = next((i for i, h in enumerate(headers) if LANG_COL_RE.search(h)), None)
         use_idx = next((i for i, h in enumerate(headers) if DISEASE_COL_RE.search(h)), None)
         if vern_idx is None:
             continue
+
+        last_sci = ""
+        last_lang_cell = ""
 
         for tr in tbody:
             if tr.tag.split("}")[-1].lower() != "tr":
@@ -162,25 +211,47 @@ def extract_rows_from_xml(xml_text: str, paper: dict) -> list[tuple[str, str, di
                 continue
             vern_raw = cells[vern_idx]
             sci_raw = cells[sci_idx] if (sci_idx is not None and sci_idx < len(cells)) else ""
+            lang_cell = cells[lang_idx] if (lang_idx is not None and lang_idx < len(cells)) else ""
             use_raw = cells[use_idx] if (use_idx is not None and use_idx < len(cells)) else ""
+
+            # Forward-fill blank continuation cells (e.g. PMC4658748 Kenyan Aloes Table 1)
+            if sci_raw:
+                last_sci = sci_raw
+            elif lang_idx is not None and last_sci:
+                sci_raw = last_sci
+            if lang_cell:
+                last_lang_cell = lang_cell
+            elif lang_idx is not None and last_lang_cell:
+                lang_cell = last_lang_cell
+
             if not vern_raw or vern_raw.lower() in ("-", "—", "n/a", "none", "unknown"):
                 continue
 
-            # Split multi-synonym cells on comma/semicolon/slash
+            # Extract cell-level language from separate Language column OR trailing "(Kamba name)" before splitting synonyms
+            row_lang = _resolve_lang_from_cell(lang_cell, lang_map) or default_lang
+            m_cell_paren = re.search(r"\(([^()]{1,25})\)\s*$", vern_raw)
+            if m_cell_paren:
+                cand_lang = _resolve_lang_from_cell(m_cell_paren.group(1), lang_map)
+                if cand_lang:
+                    row_lang = cand_lang
+                    vern_raw = vern_raw[: m_cell_paren.start()].strip()
+
             for token in re.split(r"[;,/]+", vern_raw):
                 token = token.strip()
                 if len(token) < 2 or len(token) > 65:
                     continue
-                target_lang = default_lang
-                # Detect inline language tag like "Oloirien (Maasai)" or "M: Chepkomon"
-                m_paren = re.search(r"\(([^()]{1,20})\)\s*$", token)
-                if m_paren and m_paren.group(1).strip().lower() in lang_map:
-                    target_lang = lang_map[m_paren.group(1).strip().lower()]
-                    token = token[: m_paren.start()].strip()
+                target_lang = row_lang
+                m_paren = re.search(r"\(([^()]{1,25})\)\s*$", token)
+                if m_paren:
+                    cand_lang = _resolve_lang_from_cell(m_paren.group(1), lang_map)
+                    if cand_lang:
+                        target_lang = cand_lang
+                        token = token[: m_paren.start()].strip()
                 elif ":" in token:
                     prefix, rest = token.split(":", 1)
-                    if prefix.strip().lower() in lang_map:
-                        target_lang = lang_map[prefix.strip().lower()]
+                    cand_lang = _resolve_lang_from_cell(prefix, lang_map)
+                    if cand_lang:
+                        target_lang = cand_lang
                         token = rest.strip()
                 if not target_lang or len(token) < 2:
                     continue
@@ -219,7 +290,7 @@ def merge_entries(grouped: dict[str, dict[str, list[dict]]]) -> dict[str, int]:
             continue
         data = json.loads(path.read_text(encoding="utf-8"))
         existing = {
-            (e.get("english", "").strip().lower(), e.get("translation", "").strip().lower())
+            norm_key(e.get("english", ""), e.get("translation", ""))
             for c in data.get("categories", [])
             for e in c.get("entries", [])
         }
@@ -229,8 +300,8 @@ def merge_entries(grouped: dict[str, dict[str, list[dict]]]) -> dict[str, int]:
             if cat_obj is None:
                 cat_obj = data["categories"][-1]
             for entry in entries:
-                key = (entry["english"].lower(), entry["translation"].lower())
-                if key in existing:
+                key = norm_key(entry["english"], entry["translation"])
+                if key in existing or not key[0] or not key[1]:
                     continue
                 existing.add(key)
                 cat_obj["entries"].append(entry)
@@ -245,9 +316,13 @@ def merge_entries(grouped: dict[str, dict[str, list[dict]]]) -> dict[str, int]:
 def main() -> None:
     parser = argparse.ArgumentParser(description="KenyaHub PMC CC-BY Ethnobotany Lexicon Extractor")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true")
     parser.add_argument("--cache-dir", default="")
     parser.add_argument("--max-per-paper", type=int, default=250)
     args = parser.parse_args()
+
+    force = args.force or os.environ.get("FORCE_REINGEST", "").strip().lower() in {"1", "true", "yes"}
+    retry_pending_only = os.environ.get("RETRY_PENDING_ONLY", "true").strip().lower() in {"1", "true", "yes"}
 
     print(f"=== KenyaHub PMC CC-BY Ethnobotany Extractor ({len(ETHNOBOTANY_PAPERS)} verified papers) ===")
     for p in ETHNOBOTANY_PAPERS:
@@ -256,22 +331,39 @@ def main() -> None:
         print(f"DRY RUN: Verified {len(ETHNOBOTANY_PAPERS)} CC-BY ethnobotany papers against license_guard.py.")
         return
 
+    lock = load_text_lock()
+    pmc_status = lock.setdefault("pmcEthnobotany", {})
     cache_dir = Path(args.cache_dir) if args.cache_dir else None
     grouped: dict[str, dict[str, list[dict]]] = {}
+
     for paper in ETHNOBOTANY_PAPERS:
         pmcid = paper.get("pmcid") or (resolve_pmcid(paper["doi"]) if paper.get("doi") else None)
         if not pmcid:
             continue
+        if paper.get("supplementary_only"):
+            pmc_status[pmcid] = {"status": "supplementary_only", "citation": paper["citation"]}
+            continue
+        if not force and retry_pending_only and pmc_status.get(pmcid, {}).get("status") == "completed":
+            print(f"  [skip-done] {pmcid} already ingested ({paper['citation']}).")
+            continue
         xml_text = fetch_jats_xml(pmcid, cache_dir)
         time.sleep(0.35)
         if not xml_text:
+            pmc_status[pmcid] = {"status": "failed", "citation": paper["citation"], "updatedAt": datetime.now(timezone.utc).isoformat()}
             continue
         rows = extract_rows_from_xml(xml_text, paper)[: args.max_per_paper]
         for lang_id, cat_id, entry in rows:
             grouped.setdefault(lang_id, {}).setdefault(cat_id, []).append(entry)
+        pmc_status[pmcid] = {
+            "status": "completed" if rows else "completed_no_rows",
+            "extracted": len(rows),
+            "citation": paper["citation"],
+            "updatedAt": datetime.now(timezone.utc).isoformat(),
+        }
         print(f"  [{pmcid}] Extracted {len(rows)} vernacular ethnobotany entries ({paper['citation']}).")
 
     added = merge_entries(grouped)
+    save_text_lock(lock)
     print(f"Completed PMC ethnobotany ingestion: {json.dumps(added)}")
 
 

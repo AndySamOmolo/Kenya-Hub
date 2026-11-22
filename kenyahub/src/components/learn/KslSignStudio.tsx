@@ -7,11 +7,13 @@ import {
   BookOpen,
   CheckCircle2,
   ExternalLink,
+  Film,
   Hand,
   HelpCircle,
   Pause,
   Play,
   RotateCcw,
+  Search,
   Sparkles,
   XCircle,
 } from "lucide-react";
@@ -21,6 +23,7 @@ import {
   KSL_STARTER_SIGNS,
   type KslStarterSign,
 } from "@/data/ksl-starter";
+import { OPEN_CORPUS_INDEX, type KslVideoItem } from "@/lib/open-corpus";
 
 interface R2KslSignMeta {
   id: string;
@@ -41,7 +44,6 @@ interface R2PoseSequence {
 
 // MediaPipe upper-body bone pairs mapped onto UPPER_BODY_INDICES:
 // [0, 2, 5, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 23, 24]
-//  0  1  2  3  4   5   6   7   8   9  10  11  12  13  14  15  16
 const UPPER_BONES: [number, number][] = [
   [5, 6],   // shoulders
   [5, 7],   // left upper arm
@@ -66,7 +68,6 @@ function drawProceduralSkeleton(
 ) {
   ctx.clearRect(0, 0, w, h);
 
-  // Subtle signing-space grid
   ctx.strokeStyle = "rgba(212, 175, 55, 0.10)";
   ctx.lineWidth = 1;
   ctx.beginPath();
@@ -77,11 +78,9 @@ function drawProceduralSkeleton(
   const sin = Math.sin(phase);
   const cos = Math.cos(phase);
 
-  // Head & torso base coordinates
   const headX = w * 0.5 + (motion === "head-shake" ? sin * 10 : 0);
   const headY = h * 0.24 + (motion === "head-nod" ? Math.abs(sin) * 8 : 0);
   const neckX = w * 0.5;
-  const neckY = h * 0.35;
   const lShX = w * 0.34;
   const rShX = w * 0.66;
   const shY = h * 0.38;
@@ -89,7 +88,6 @@ function drawProceduralSkeleton(
   const rHipX = w * 0.61;
   const hipY = h * 0.78;
 
-  // Default relaxed arms
   let lElbX = w * 0.27, lElbY = h * 0.56, lWriX = w * 0.32, lWriY = h * 0.70;
   let rElbX = w * 0.73, rElbY = h * 0.56, rWriX = w * 0.68, rWriY = h * 0.70;
 
@@ -141,7 +139,6 @@ function drawProceduralSkeleton(
     rWriY = h * 0.49;
   }
 
-  // Draw torso & bones
   const line = (x1: number, y1: number, x2: number, y2: number, color: string, width = 4) => {
     ctx.strokeStyle = color;
     ctx.lineWidth = width;
@@ -152,22 +149,16 @@ function drawProceduralSkeleton(
     ctx.stroke();
   };
 
-  // Torso frame
   line(lShX, shY, rShX, shY, "#94a3b8", 4);
   line(lShX, shY, lHipX, hipY, "#64748b", 3.5);
   line(rShX, shY, rHipX, hipY, "#64748b", 3.5);
   line(lHipX, hipY, rHipX, hipY, "#64748b", 3.5);
   line(neckX, headY + 22, neckX, shY, "#94a3b8", 3.5);
-
-  // Left arm (non-dominant)
   line(lShX, shY, lElbX, lElbY, "#38bdf8", 4.5);
   line(lElbX, lElbY, lWriX, lWriY, "#38bdf8", 4.5);
-
-  // Right arm (dominant, gold highlight)
   line(rShX, shY, rElbX, rElbY, "#eab308", 5);
   line(rElbX, rElbY, rWriX, rWriY, "#eab308", 5);
 
-  // Head circle
   ctx.strokeStyle = "#e2e8f0";
   ctx.fillStyle = "rgba(30, 41, 59, 0.7)";
   ctx.lineWidth = 3;
@@ -176,7 +167,6 @@ function drawProceduralSkeleton(
   ctx.fill();
   ctx.stroke();
 
-  // Joints & glowing hand markers
   const dot = (x: number, y: number, r: number, color: string) => {
     ctx.fillStyle = color;
     ctx.beginPath();
@@ -218,14 +208,28 @@ function drawR2PoseFrame(
   });
 }
 
+type VideoFilterTab = "all" | "maseno-stickman" | "human-sign-bible";
+const VIDEOS_PER_PAGE = 40;
+
 export default function KslSignStudio() {
-  const [tab, setTab] = useState<"signs" | "quiz" | "alphabet" | "grammar">("signs");
+  const initialVideos: KslVideoItem[] = OPEN_CORPUS_INDEX.ksl.videos ?? [];
+  const [tab, setTab] = useState<"videos" | "signs" | "quiz" | "alphabet" | "grammar">(
+    initialVideos.length > 0 ? "videos" : "signs"
+  );
   const [selectedId, setSelectedId] = useState<string>(KSL_STARTER_SIGNS[0].id);
   const [playing, setPlaying] = useState(true);
   const [slowMo, setSlowMo] = useState(false);
   const [progress, setProgress] = useState(0);
 
-  // Live Maseno Zenodo 14338329 extracted R2 pose catalog (loaded dynamically when CI populates ksl-index.json)
+  // Live full KSL video & pose catalog loaded from /ksl-index.json
+  const [kslVideos, setKslVideos] = useState<KslVideoItem[]>(initialVideos);
+  const [videoTab, setVideoTab] = useState<VideoFilterTab>("all");
+  const [videoQuery, setVideoQuery] = useState("");
+  const [videoVisibleCount, setVideoVisibleCount] = useState(VIDEOS_PER_PAGE);
+  const [activeVideoId, setActiveVideoId] = useState<string>(initialVideos[0]?.id ?? "");
+  const [playbackRate, setPlaybackRate] = useState<number>(1);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
   const [r2Signs, setR2Signs] = useState<R2KslSignMeta[]>([]);
   const [activeR2Pose, setActiveR2Pose] = useState<R2PoseSequence | null>(null);
 
@@ -243,12 +247,48 @@ export default function KslSignStudio() {
     fetch("/ksl-index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => {
+        if (d && Array.isArray(d.videos) && d.videos.length > 0) {
+          setKslVideos(d.videos as KslVideoItem[]);
+          setActiveVideoId((prev) => prev || d.videos[0].id);
+        }
         if (d && Array.isArray(d.signs)) {
           setR2Signs(d.signs as R2KslSignMeta[]);
         }
       })
       .catch(() => {});
   }, []);
+
+  const filteredVideos = useMemo(() => {
+    const q = videoQuery.trim().toLowerCase();
+    return kslVideos.filter((v) => {
+      if (videoTab !== "all" && v.category !== videoTab) return false;
+      if (!q) return true;
+      return (
+        v.title.toLowerCase().includes(q) ||
+        v.gloss.toLowerCase().includes(q) ||
+        (v.reference ?? "").toLowerCase().includes(q) ||
+        (v.transcript ?? "").toLowerCase().includes(q)
+      );
+    });
+  }, [kslVideos, videoTab, videoQuery]);
+
+  const activeVideo =
+    filteredVideos.find((v) => v.id === activeVideoId) ?? filteredVideos[0] ?? null;
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = playbackRate;
+    }
+  }, [playbackRate, activeVideo?.id]);
+
+  const masenoCount = useMemo(
+    () => kslVideos.filter((v) => v.category === "maseno-stickman").length,
+    [kslVideos]
+  );
+  const humanCount = useMemo(
+    () => kslVideos.filter((v) => v.category === "human-sign-bible").length,
+    [kslVideos]
+  );
 
   const activeStarter = useMemo(
     () => KSL_STARTER_SIGNS.find((s) => s.id === selectedId) ?? KSL_STARTER_SIGNS[0],
@@ -278,7 +318,6 @@ export default function KslSignStudio() {
     }
   };
 
-  // Animation loop for Canvas Skeletal Signer
   useEffect(() => {
     if (tab !== "signs" && tab !== "quiz") return;
     let lastTs = performance.now();
@@ -336,10 +375,11 @@ export default function KslSignStudio() {
         </Link>
         <div className="flex flex-wrap gap-2 text-xs">
           <span className="rounded-lg border border-kenya-green/30 bg-kenya-green/10 px-2.5 py-1 font-semibold text-kenya-green">
-            ISO 639-3: xki · Constitution Art. 7(3)(b)
+            Official Kenyan Sign Language · Constitution Art. 7(3)(b)
           </span>
           <span className="rounded-lg border border-gold/30 bg-gold/10 px-2.5 py-1 font-semibold text-gold">
-            {KSL_STARTER_SIGNS.length} Interactive Signs{r2Signs.length > 0 ? ` + ${r2Signs.length} Maseno R2 Poses` : ""}
+            {kslVideos.length.toLocaleString()} Real KSL Videos · {KSL_STARTER_SIGNS.length} Guided Signs
+            {r2Signs.length > 0 ? ` · ${r2Signs.length} Motion Poses` : ""}
           </span>
         </div>
       </div>
@@ -347,6 +387,7 @@ export default function KslSignStudio() {
       {/* Mode Tabs */}
       <div className="flex flex-wrap gap-2 border-b border-border pb-3">
         {[
+          { id: "videos" as const, label: `KSL Video Library (${kslVideos.length})`, icon: Film },
           { id: "signs" as const, label: "Sign Studio", icon: Hand },
           { id: "quiz" as const, label: "Visual Sign Quiz", icon: Sparkles },
           { id: "alphabet" as const, label: "Fingerspelling (A–Z)", icon: BookOpen },
@@ -372,6 +413,156 @@ export default function KslSignStudio() {
         })}
       </div>
 
+      {/* TAB 0: REAL KSL VIDEO LIBRARY */}
+      {tab === "videos" && (
+        <div className="space-y-4">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex flex-wrap gap-1.5">
+              {[
+                { id: "all" as const, label: `All Videos (${kslVideos.length})` },
+                { id: "maseno-stickman" as const, label: `Sign Vocabulary (${masenoCount})` },
+                { id: "human-sign-bible" as const, label: `Signed Passages (${humanCount})` },
+              ].map((ft) => (
+                <button
+                  key={ft.id}
+                  type="button"
+                  onClick={() => {
+                    setVideoTab(ft.id);
+                    setVideoVisibleCount(VIDEOS_PER_PAGE);
+                  }}
+                  className={`rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition-all cursor-pointer ${
+                    videoTab === ft.id
+                      ? "border-kenya-green bg-kenya-green text-white"
+                      : "border-border bg-bg-card text-text-secondary hover:border-kenya-green/50"
+                  }`}
+                >
+                  {ft.label}
+                </button>
+              ))}
+            </div>
+            <div className="relative w-full sm:w-64">
+              <Search className="h-3.5 w-3.5 text-text-muted absolute left-2.5 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                value={videoQuery}
+                onChange={(e) => {
+                  setVideoQuery(e.target.value);
+                  setVideoVisibleCount(VIDEOS_PER_PAGE);
+                }}
+                placeholder="Search KSL gloss, passage, transcript..."
+                className="w-full rounded-lg border border-border bg-bg-card pl-8 pr-3 py-1.5 text-xs text-text-primary placeholder:text-text-muted focus:outline-none focus:border-kenya-green"
+              />
+            </div>
+          </div>
+
+          {activeVideo ? (
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 rounded-2xl border border-kenya-green/30 bg-bg-card p-4">
+              <div className="lg:col-span-7 space-y-3">
+                <video
+                  ref={videoRef}
+                  key={activeVideo.id}
+                  src={activeVideo.videoUrl}
+                  controls
+                  playsInline
+                  loop
+                  preload="metadata"
+                  className="w-full max-h-96 rounded-xl bg-black object-contain"
+                />
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div>
+                    <h2 className="text-base font-bold text-text-primary">{activeVideo.title}</h2>
+                    <a
+                      href={activeVideo.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[0.72rem] text-gold hover:underline"
+                    >
+                      {activeVideo.source} <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-[0.68rem] text-text-muted mr-1">Speed:</span>
+                    {[0.5, 0.75, 1].map((spd) => (
+                      <button
+                        key={spd}
+                        type="button"
+                        onClick={() => setPlaybackRate(spd)}
+                        className={`rounded-md border px-2 py-0.5 text-[0.7rem] font-mono cursor-pointer ${
+                          playbackRate === spd
+                            ? "border-kenya-green bg-kenya-green/15 text-kenya-green font-bold"
+                            : "border-border bg-bg-elevated text-text-secondary"
+                        }`}
+                      >
+                        {spd}x
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                {(activeVideo.reference || activeVideo.transcript) && (
+                  <div className="rounded-xl border border-border bg-bg-elevated/50 p-3 space-y-1">
+                    {activeVideo.reference && (
+                      <p className="text-[0.68rem] font-bold uppercase tracking-wider text-kenya-green">
+                        Passage Context · {activeVideo.reference}
+                      </p>
+                    )}
+                    {activeVideo.transcript && (
+                      <p className="text-xs text-text-secondary leading-relaxed">{activeVideo.transcript}</p>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              <div className="lg:col-span-5 flex flex-col max-h-[28rem]">
+                <div className="overflow-y-auto space-y-1.5 pr-1 flex-1">
+                  {filteredVideos.slice(0, videoVisibleCount).map((vid) => {
+                    const isCurrent = vid.id === activeVideo.id;
+                    return (
+                      <button
+                        key={vid.id}
+                        type="button"
+                        onClick={() => setActiveVideoId(vid.id)}
+                        className={`w-full text-left rounded-lg border p-2.5 transition-all cursor-pointer ${
+                          isCurrent
+                            ? "border-kenya-green bg-kenya-green/10"
+                            : "border-border bg-bg-elevated/40 hover:border-kenya-green/40"
+                        }`}
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-xs font-bold text-text-primary line-clamp-1">{vid.title}</span>
+                          <span className="text-[0.62rem] font-semibold uppercase text-kenya-green shrink-0">
+                            {vid.category === "maseno-stickman" ? "Stickman" : "Human"}
+                          </span>
+                        </div>
+                        {(vid.reference || vid.transcript) && (
+                          <p className="text-[0.68rem] text-text-muted line-clamp-1 mt-0.5">
+                            {vid.transcript || vid.reference}
+                          </p>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+                {videoVisibleCount < filteredVideos.length && (
+                  <div className="pt-2 flex gap-2 border-t border-border/60 mt-2">
+                    <button
+                      type="button"
+                      onClick={() => setVideoVisibleCount((n) => n + VIDEOS_PER_PAGE)}
+                      className="flex-1 rounded-lg border border-kenya-green/40 bg-kenya-green/10 py-1.5 text-xs font-semibold text-kenya-green hover:bg-kenya-green/20 cursor-pointer"
+                    >
+                      Load More ({Math.min(VIDEOS_PER_PAGE, filteredVideos.length - videoVisibleCount)} of {filteredVideos.length - videoVisibleCount} remaining)
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-xl border border-dashed border-border p-6 text-center text-xs text-text-muted">
+              No KSL videos match your search filter.
+            </div>
+          )}
+        </div>
+      )}
+
       {/* TAB 1: SIGN STUDIO */}
       {tab === "signs" && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
@@ -379,7 +570,7 @@ export default function KslSignStudio() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-[0.68rem] uppercase tracking-wider font-bold text-gold">
-                  {activeR2Pose ? "Maseno Zenodo 14338329 Pose" : activeStarter.category}
+                  {activeR2Pose ? "Maseno University Motion Sign" : activeStarter.category}
                 </p>
                 <h2 className="text-lg font-bold text-text-primary font-[family-name:var(--font-outfit)]">
                   {activeR2Pose ? activeR2Pose.gloss : activeStarter.gloss}
@@ -488,7 +679,7 @@ export default function KslSignStudio() {
               <div className="rounded-2xl border border-kenya-green/30 bg-bg-card p-4 space-y-3">
                 <div className="flex items-center justify-between gap-2">
                   <h3 className="text-sm font-bold text-kenya-green">
-                    Maseno University Live Motion-Capture Signs ({r2Signs.length} on R2)
+                    Maseno University Live Motion-Capture Signs ({r2Signs.length})
                   </h3>
                   <a
                     href="https://zenodo.org/records/14338329"
@@ -496,7 +687,7 @@ export default function KslSignStudio() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-[0.7rem] text-gold hover:underline"
                   >
-                    Zenodo 14338329 (CC-BY-4.0) <ExternalLink className="h-3 w-3" />
+                    Maseno University Sign Library <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto">

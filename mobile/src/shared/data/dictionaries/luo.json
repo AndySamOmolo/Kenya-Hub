@@ -557,7 +557,8 @@
         {
           "english": "I give you five florins a month?",
           "translation": "Namii florin abich dwe achiel",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+          "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)",
+          "pronunciation": "namii florin abich dwe achiel"
         },
         {
           "english": "Five hundred",
@@ -5020,7 +5021,8 @@
         {
           "english": "Do you know how to cut trees?",
           "translation": "Ing'eyo tong'o yien",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
+          "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)",
+          "pronunciation": "ing'eyo tong'o yien?"
         },
         {
           "english": "You can rest a little in the middle of the day",
@@ -8014,12 +8016,6 @@
           "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
         },
         {
-          "english": "Good-bye!",
-          "translation": "Inindi!",
-          "pronunciation": "i-nin-di",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
-        },
-        {
           "english": "Who is there?",
           "translation": "In ng'a?",
           "pronunciation": "in ng'a",
@@ -8047,7 +8043,7 @@
           "english": "Who are you?",
           "translation": "In ng'a?",
           "pronunciation": "who are you",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
           "english": "Nyingi ng'a?",
@@ -8359,7 +8355,7 @@
           "english": "I have a bath every day?",
           "translation": "Alwokora pile",
           "pronunciation": "i have a bath every day",
-          "context": "Dholuo Grammar & Sentence Handbook (1921) • Cross-verified with Kencorpus Dholuo (CC-BY-4.0)"
+          "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
         },
         {
           "english": "Mani okolwoki maber",
@@ -13027,11 +13023,6 @@
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
         },
         {
-          "english": "Good-bye",
-          "translation": "Inindi",
-          "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
-        },
-        {
           "english": "Is tt very far?",
           "translation": "Dalau bor?",
           "context": "Mill-Hill Fathers, A Handbook of the Kavirondo Language (1921)"
@@ -15010,7 +15001,7 @@
           "english": "Where?",
           "translation": "Kanye?",
           "pronunciation": "kah-nyeh",
-          "context": "Verified in Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
+          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "Knives",
@@ -16960,7 +16951,7 @@
           "english": "What is your name?",
           "translation": "Nyingi ng'a?",
           "pronunciation": "nyeen-gee ng'ah",
-          "context": "Verified in Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
+          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "I don't understand",
@@ -18649,12 +18640,6 @@
           "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
         },
         {
-          "english": "I have a bath every day",
-          "translation": "Alwokora pile",
-          "pronunciation": "alwokora pile.",
-          "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
           "english": "Do not be afraid. I come to visit the people",
           "translation": "Kik iluor. Abiro neno jo dalani",
           "pronunciation": "kik iluor. abiro neno jo dalani",
@@ -18823,21 +18808,9 @@
           "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
         },
         {
-          "english": "Do you know how to cut trees?",
-          "translation": "Ing'eyo tong'o yien?",
-          "pronunciation": "ing'eyo tong'o yien?",
-          "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
           "english": "Are you a strong man?",
           "translation": "In ng'ato matek?",
           "pronunciation": "in ng'ato matek?",
-          "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
-          "english": "I give you five florins a month",
-          "translation": "Namii florin abich dwe achiel",
-          "pronunciation": "namii florin abich dwe achiel",
           "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language (Phraseology pp. 102–117) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
         },
         {
@@ -22396,11 +22369,6 @@
           "context": "Dholuo — GitHub unicode-org/cldr (luo.xml) & PanLex CC0 (huggingface.co/datasets/cointegrated/panlex-meanings)"
         },
         {
-          "english": "what?",
-          "translation": "Ang'o",
-          "context": "Mill-Hill Fathers (1920–1921) A Handbook of the Kavirondo Language • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
           "english": "How can I pass variables between functions in Python?",
           "translation": "Ere kaka anyalo kalo gik ma opogore opogore e kind tije mopogore opogore e Python?",
           "context": "Code-170k-luo Programming Corpus (huggingface.co/datasets/michsethowusu/Code-170k-luo, CC-BY-4.0)"
@@ -23133,16 +23101,11 @@
         {
           "english": "thank you",
           "translation": "Erokamano",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
           "english": "you",
           "translation": "In",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "what",
-          "translation": "ang'o",
           "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -23208,7 +23171,7 @@
         {
           "english": "thanks",
           "translation": "erokamano",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "do",
@@ -23263,11 +23226,6 @@
         {
           "english": "have",
           "translation": "gi",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "where",
-          "translation": "kanye",
           "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -23880,7 +23838,8 @@
         {
           "english": "here",
           "translation": "ka, kae, kaendi",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ka.opus"
         },
         {
           "english": "experience",
@@ -24400,11 +24359,6 @@
         {
           "english": "sick",
           "translation": "tuo",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "what is your name",
-          "translation": "nyingi ng'a",
           "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -25645,7 +25599,7 @@
         {
           "english": "answer",
           "translation": "duoko",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "say",
@@ -28059,11 +28013,6 @@
           "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
-          "english": "who are you",
-          "translation": "in ng'a",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
           "english": "efficient",
           "translation": "tiyo maber, tich maber",
           "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
@@ -28251,7 +28200,8 @@
         {
           "english": "bite",
           "translation": "kayo, ka",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ka.opus"
         },
         {
           "english": "nature",
@@ -37411,7 +37361,7 @@
         {
           "english": "lies",
           "translation": "miriambo",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
           "english": "castle",
@@ -57704,11 +57654,6 @@
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
-          "english": "Answer:",
-          "translation": "Duoko:",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
           "english": "Typhoid fever is a serious bacterial infection that can spread easily to others through contaminated food and water or close contact.",
           "translation": "Liet mar taifoid en tuo marach ma ikelo gi kute manyalo landore mayot kuom jomoko kokalo kuom chiemo gi pi manigi kute kata joma in go machiegni.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
@@ -59496,7 +59441,8 @@
         {
           "english": "\"Great,\" Dr. Kinsley says. \"Let's start by getting some basic information from you, and then we can discuss the best treatment plan for your specific needs.\"",
           "translation": "\"Ber ahinya,\" Laktar Kinsley wacho. \"We wachak gi yudo weche moko kuomi, kae to wanyalo wuoyo kuom chenro maber mar thieth maber kodi.\"",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ber-ahinya.opus"
         },
         {
           "english": "As I answer Dr. Kinsley's questions, I feel a sense of relief wash over me. I'm not alone in this anymore. I have a plan, and I have support. And maybe, just maybe, I can finally breathe easy again.",
@@ -59916,11 +59862,6 @@
         {
           "english": "Given her symptoms and family history, I thought it would be best to discuss her case with you. She's eager to get some answers and reassurance. What would you recommend as the next steps for her evaluation?",
           "translation": "Kaluwore gi ranyisi mage kod chal mar tuoche e anywola margi, ne aparo ni ber ka awuoyo kodi e wi wachne. Odwaro yudo dwoko moko kod kony. Ang’o ma diyal ne kaka okang’ ma luwo ne nonro mare?",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "Thanks,",
-          "translation": "Erokamano,",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -61583,8 +61524,9 @@
         {
           "english": "Here.",
           "translation": "ka",
-          "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "https://audio.kenyahub.me/audio/luo/ka.opus"
+          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/luo/ka.opus",
+          "pronunciation": "ka"
         },
         {
           "english": "Seen another way, Oparanya doesn’t seem to have been consulted. He is offering his views in an open letter.",
@@ -63235,11 +63177,6 @@
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
-          "english": "Who are you?",
-          "translation": "in ng'a",
-          "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
-        },
-        {
           "english": "KK must immediately make it possible for county governments to employ these doctors as part of the process to achieve UHC.",
           "translation": "kk nyaka mi sirkande mag gwenge thuolo mar tiyo gi lakteche kaka achiel kuom yore mag chopo uhc",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
@@ -64207,11 +64144,6 @@
         {
           "english": "X... and Y... roll their eyes.",
           "translation": "xkod ymoro wenge gi",
-          "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
-        },
-        {
-          "english": "Thank you.",
-          "translation": "erokamano",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
@@ -65687,11 +65619,6 @@
         {
           "english": "So it means future societies will want to eliminate this pollution or reduce it as much as possible because it carries a real risk.",
           "translation": "mano nyiso ni e kinde mabiro dhano biro dwaro tieko kata dwoko chien gik maketho ler mar kor lwasi nikech gik ma kamago kelo hinyruok",
-          "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
-        },
-        {
-          "english": "Lies.",
-          "translation": "miriambo",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (luo_Latn Dholuo, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
@@ -76541,12 +76468,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Naomi decided to return home. - Ruth 1:6.",
-          "translation": "Naomi nong'ado mar dok thurgi. - Ruth 1:6.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "Isaac said to his father Abraham, \"Father.\"",
           "translation": "Isaka notingʼo dwonde mopenjo wuon-gi Ibrahim niya, \"Wuora?\"",
           "pronunciation": "",
@@ -77480,12 +77401,6 @@
         {
           "english": "and dirt-destination; by the woman who forgets the date of her birth;",
           "translation": "[15] \"To bende dhako wiye diwil gi nyathi modhodho mi ok obedo gi kech e kothe mane onywolo.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "This then is how we know that we belong to the truth, and how we set our hearts at rest in His Presence.",
-          "translation": "19Man bimiyo waŋeyo ni wan jo ma tye ki ada; ci bimiyo cwinywa kwe i nyime; 20ka ce cwinywa ŋolo kop loyowa, ci waŋeyo ni Lubaŋa dit kato cwinywa woko, dok ŋeyo lok ducu.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -78492,12 +78407,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Can you tell what the little girl and her friends are reading.",
-          "translation": "BE INYALO ng'eyo gima nyako matinno kod osiepenego somo?",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "It'll be a most suitable punishment.\"",
           "translation": "ibiro kum malit mokalo.\" muoch ma nobedie.",
           "pronunciation": "",
@@ -79236,12 +79145,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Why do we die? - Romans 5:12.",
-          "translation": "Ang'o momiyo watho? - Jo Rumi 5:12.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "It preserves the righteous.",
           "translation": "en laro jo ma cwinygi atir.",
           "pronunciation": "",
@@ -79736,12 +79639,6 @@
         {
           "english": "Yet some of you do not believe.\"",
           "translation": "64. to ji moko kuomu pod ok oyie.\"",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "Then I said,  My lord, what shall be the end of these things?",
-          "translation": "Mumiyo awaco ni, \"Ai rwoda, agikki me jami magi bibedo niŋniŋ?\"",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -81356,12 +81253,6 @@
         {
           "english": "She said to him, \"My father, you have made a promise to the Lord.",
           "translation": "Nodwoko niya, \"Wuonwa, isechiwo wachni ne Jehova Nyasaye.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "If satan is divided against himself, how can his kingdom stand.",
-          "translation": "Ka Satan opogore kende owuon, ere kaka pinyruodhe nyalo chungo?",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -85094,12 +84985,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "So do not hesitate to talk to them.",
-          "translation": "Omiyo, kik iluor wuoyo kodgi.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "I have seen the burden God has laid on people.",
           "translation": "Aseneno tingʼ mapek ma Nyasaye oseketo kuom ji.",
           "pronunciation": "",
@@ -86318,12 +86203,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "The messenger of the covenant in whom you delight - indeed, he is coming, says the LORD of hosts.",
-          "translation": "Lakwena me gicikke ma cwinywu yom i kome, nen, en bibino, man lok ma Rwot me mony owaco.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "When the Angels were made.",
           "translation": "Raso malaikaik mancabuik nyawo",
           "pronunciation": "",
@@ -86900,12 +86779,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "\"I'm not ready to be anyone's 7th wife\" - Chika Ike",
-          "translation": "\"I'm Not About To Be Anyone's 7th Wife\" - Chika Ike...",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "As the prayer increased, so did the crowds.",
           "translation": "To paka omedo chiko jo, apaka bende jomedo nyayo wach no iye jye.",
           "pronunciation": "",
@@ -87118,12 +86991,6 @@
         {
           "english": "If you are the Messiah, tell us so straight out.\"",
           "translation": "Ka in e Mesia to nyiswa ane malongo!\"",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "This is the Qur'an",
-          "translation": "(fweny mar Quran) en puonj.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -87376,12 +87243,6 @@
         {
           "english": "22 Because they (Y) did not believe in God,",
           "translation": "(Jakobo 2:19) Nga u noto, ko mayae icheget magetab Kamuktaindet, amu noto ko ma iyani Kamuktaindet icheget.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "(John 11:11-14) God can awaken the dead, just as we can awaken a person from sleep.  - Job 14:13-15.",
-          "translation": "(Johana 11:11-14) Nyasaye nyalo chiewo jomotho, mana kaka wan bende wanyalo chiewo ng'at monindo. - Ayub 14:13-15.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -89444,12 +89305,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Never be rude to an Arab.",
-          "translation": "Never Be Rude To An Arab....",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "The UK/US thing now makes some sense.",
           "translation": "ah ok the uk thing make sense now.",
           "pronunciation": "",
@@ -89750,12 +89605,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "But a samaritan, as he traveled, came  where the man was; and when he saw him, he took pity on him.",
-          "translation": "To kane ja-Samaria moro ma bende noyudo nie wuoth ochopo kanyo, moneno ng'atno, nokeche.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "[24] And all the earth sought to Solomon, to hear his wisdom, which God had put in his heart.",
           "translation": "24Dano me lobo ducu gubedo ka yenyo kit yo me neno wan Solomon, ki pi winyo kit ryekone ma Lubaŋa oketo i cwinye-ni.",
           "pronunciation": "",
@@ -89888,12 +89737,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "I  think we'll be OK here, Leon.",
-          "translation": "I Think We Will Be Ok Here Leon...",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "22 In the congregation.",
           "translation": "22 E kanyakla.",
           "pronunciation": "",
@@ -90010,12 +89853,6 @@
         {
           "english": "This is God's work, and his plan.",
           "translation": "Ma en tich Nyasaye kendo en e wiye.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "What happened to the third girl.",
-          "translation": "Aŋo m'otimere ri nyako mar'adek?",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-luo_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -90356,13 +90193,6 @@
           "translation": "alot-th",
           "pronunciation": "alot-th",
           "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)"
-        },
-        {
-          "english": "Here",
-          "translation": "ka",
-          "pronunciation": "ka",
-          "context": "C. W. Hobley (1902) Eastern Uganda: An Ethnological Survey (Tho-Luo) • Cross-verified with Kencorpus Dholuo (KenCorpus_text, CC-BY-4.0)",
-          "audioFile": "https://audio.kenyahub.me/audio/luo/ka.opus"
         },
         {
           "english": "Husk",
@@ -93141,5 +92971,5 @@
   "source": "Kencorpus Dholuo (KenCorpus_text, KenPOS, KenTrans, CC-BY-4.0), Thiomi (CC-BY-4.0), Google SMOL/GATITOS (en_luo, CC-BY-4.0), LughaGen Dholuo (CC-BY-SA-4.0), ThinkKenya/Waleghwa & Common Voice 25.0 (CC-BY-4.0/CC0-1.0), African Next Voices Dholuo (CC-BY-4.0), Sunbird SALT (CC-BY-4.0), Code-170k-luo (CC-BY-4.0), SDTC (CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902/1903, Johnston 1902, Northcote 1907, Roscoe & Willis 1915, Mill-Hill Fathers 1920 & BFBS 1921); Rev. John Roscoe & Bishop J. J. Willis (1915) The Northern Bantu — Nilotic Kavirondo Kinship & Clans (Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Dholuo Corpus (Mackenzie 2016, CC-BY-4.0)",
   "isoCode": "luo",
   "glottocode": "luoo1235",
-  "totalEntries": 17313
+  "totalEntries": 17282
 }

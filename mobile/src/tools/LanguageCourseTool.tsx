@@ -27,6 +27,7 @@ import { getSourcesForLanguage, DICT_META_MAP, type Dictionary } from '../shared
 import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
 import openCorpusIndex from '../shared/data/open-corpus-index.json';
+import kslIndexData from '../shared/data/ksl-index.json';
 import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from '../shared/data/courses/proverbs';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
@@ -2646,7 +2647,7 @@ export default function LanguageCourseTool({
                       mediaPlaybackRequiresUserAction={false}
                       javaScriptEnabled
                       domStorageEnabled
-                      originWhitelist={['*']}
+                      originWhitelist={['https://*', 'about:blank']}
                       style={{ flex: 1, backgroundColor: '#000000' }}
                     />
                   </View>
@@ -4753,6 +4754,7 @@ export default function LanguageCourseTool({
                 string,
                 {
                   r2AudioClips?: number;
+                  nativeAudioSamples?: { slug: string; label: string; audioUrl: string }[];
                   typology?: { iso639_3?: string; glottocode?: string; familyPath?: string[] } | null;
                   cldr?: { locale?: string; months?: string[]; days?: string[] } | null;
                   sampleReadings?: { text: string; english?: string; source: string }[];
@@ -4781,9 +4783,37 @@ export default function LanguageCourseTool({
                   LISTENING, CALENDAR &amp; READING PRACTICE
                 </Text>
                 {corpusLang.r2AudioClips ? (
-                  <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.kenyaGreen }}>
-                    {corpusLang.r2AudioClips.toLocaleString()} native speaker audio clips available
-                  </Text>
+                  <View style={{ gap: 6 }}>
+                    <Text style={{ fontFamily: "Inter_600SemiBold", fontSize: 11.5, color: colors.kenyaGreen }}>
+                      {corpusLang.r2AudioClips.toLocaleString()} native speaker audio clips available
+                    </Text>
+                    {corpusLang.nativeAudioSamples && corpusLang.nativeAudioSamples.length > 0 && (
+                      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
+                        {corpusLang.nativeAudioSamples.slice(0, 12).map((sample) => (
+                          <Pressable
+                            key={sample.slug}
+                            onPress={() => playVerifiedAudio({ translation: sample.label, audioFile: sample.audioUrl })}
+                            style={{
+                              flexDirection: "row",
+                              alignItems: "center",
+                              gap: 4,
+                              paddingHorizontal: 9,
+                              paddingVertical: 5,
+                              borderRadius: 999,
+                              borderWidth: 1,
+                              borderColor: `${colors.kenyaGreen}55`,
+                              backgroundColor: colors.surface,
+                            }}
+                          >
+                            <MaterialCommunityIcons name="volume-high" size={13} color={colors.kenyaGreen} />
+                            <Text style={{ fontFamily: "Inter_500Medium", fontSize: 11, color: colors.text }} numberOfLines={1}>
+                              {sample.label}
+                            </Text>
+                          </Pressable>
+                        ))}
+                      </View>
+                    )}
+                  </View>
                 ) : null}
                 {corpusLang.cldr && corpusLang.cldr.days && corpusLang.cldr.days.length > 0 && (
                   <Text style={{ fontFamily: "Inter_400Regular", fontSize: 11.5, color: colors.textSecondary }}>

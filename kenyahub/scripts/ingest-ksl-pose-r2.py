@@ -1,23 +1,29 @@
 #!/usr/bin/env python3
 """
-Ingests commercially permissive Kenyan Sign Language (KSL, ISO xki) real videos & pose data to Cloudflare R2:
+Ingests ALL commercially permissive Kenyan Sign Language (KSL, ISO xki) real videos & pose data to Cloudflare R2:
   1. Maseno University KSL Dataset (Zenodo Record 14338329, CC-BY-4.0, Pose Data.zip ~1.54 GB):
-     - Extracts real anonymized stickman .mp4/.webm/.avi/.mov videos directly when present in the archive,
-       transcodes to compact mobile-ready H.264 .mp4 (-movflags +faststart), and uploads to R2 `ksl/videos/maseno-<slug>.mp4`.
-     - Also extracts MediaPipe Holistic .npy pose sequences to compact JSON (`ksl/signs/<slug>.json`) and, if no pre-rendered
-       stickman videos exist inside Pose Data.zip, renders real MP4 stickman videos directly from the real Maseno MediaPipe
-       pose keypoints using ffmpeg so learners watch authentic Maseno KSL sign motion as standard HTML5 <video>.
+     - Extracts ALL real anonymized stickman .mp4/.webm/.avi/.mov videos directly when present in the archive,
+       transcodes to compact mobile-ready H.264 .mp4 (-movflags +faststart), and uploads to R2 `ksl/videos/<vid_id>.mp4`.
+     - Uses deterministic per-member unique IDs so multiple recordings of the same gloss are all ingested without
+       overwriting or duplicating previously uploaded clips.
+     - Also extracts MediaPipe Holistic .npy pose sequences to compact JSON (`ksl/signs/<slug>.json`).
   2. Open Sign Bibles (`bible-nlp/sign-bibles`, CC-BY-SA-4.0, Hugging Face):
-     - Streams rows filtered strictly to `language == "xki"` (Kenyan Sign Language).
-     - Extracts real human KSL .mp4 signing videos + aligned verse transcripts, transcodes to compact 360p H.264 .mp4
-       (15s cap for fast web/mobile playback), and uploads to R2 `ksl/human/sign-bible-<slug>.mp4`.
-  3. Global Digital Library (`content.digitallibrary.io/xki/`, CC-BY-4.0):
-     - Preserves verified human KSL video storybook cards inside `public/ksl-index.json`.
+     - Streams ALL rows for `language == "xki"` (Kenyan Sign Language).
+     - Enriches existing `KSL Passage #N` metadata in place with USFM passage references & `transcripts.json`
+       without re-uploading already-uploaded `.mp4` files, and uploads all remaining human KSL `.mp4` clips.
 
-Writes `kenyahub/public/ksl-index.json` consumed by `build-open-corpus-index.py` for Web & Android.
+Features:
+  - Per-source completion tracking (`ingestionState` in `public/ksl-index.json`) so already-completed sources
+    are skipped cleanly on subsequent CI runs while incomplete sources resume right where they left off.
+  - Incremental checkpoint saves every 25 uploads + graceful wall-clock budget (`KSL_TIME_BUDGET_SEC`) so
+    large multi-thousand-video runs never lose progress.
+  - Deduplication by both `id` and `videoUrl`.
+
+Writes `kenyahub/public/ksl-index.json` consumed by `build-open-corpus-index.py` and fetched live by Web & Android.
 """
 from __future__ import annotations
 
+import hashlib
 import io
 import json
 import os
@@ -25,6 +31,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import time
 import unicodedata
 import zipfile
 from datetime import datetime, timezone
@@ -37,6 +44,9 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from lib.license_guard import assert_repo_allowed
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = ROOT / "public"
@@ -52,6 +62,8 @@ CF_API_TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
 R2_ACCESS_KEY_ID = os.environ.get("R2_ACCESS_KEY_ID", "").strip()
 R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY", "").strip()
 R2_BUCKET = os.environ.get("R2_BUCKET_NAME", "kenyahub-audio").strip() or "kenyahub-audio"
+
+
 def sanitize_cdn_base(raw: str) -> str:
     val = (raw or "").strip()
     m = re.match(r"^\[[^\]]+\]\((https?://[^)]+)\)(.*)$", val)
@@ -62,16 +74,24 @@ def sanitize_cdn_base(raw: str) -> str:
 
 CDN_BASE = sanitize_cdn_base(os.environ.get("NEXT_PUBLIC_AUDIO_CDN_URL", "https://audio.kenyahub.me"))
 HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
+FORCE_REINGEST = os.environ.get("FORCE_REINGEST", "").strip().lower() in {"1", "true", "yes"}
 
-MAX_MASENO_VIDEOS = int(os.environ.get("MAX_KSL_MASENO_VIDEOS", os.environ.get("MAX_KSL_SIGNS", "2000")))
-MAX_HUMAN_KSL_VIDEOS = int(os.environ.get("MAX_KSL_HUMAN_VIDEOS", "1000"))
+# 0 means UNLIMITED (ingest ALL available KSL videos)
+MAX_MASENO_VIDEOS = int(os.environ.get("MAX_KSL_MASENO_VIDEOS", os.environ.get("MAX_KSL_SIGNS", "0")) or "0")
+MAX_HUMAN_KSL_VIDEOS = int(os.environ.get("MAX_KSL_HUMAN_VIDEOS", "0") or "0")
+KSL_TIME_BUDGET_SEC = int(os.environ.get("KSL_TIME_BUDGET_SEC", "3600") or "3600")
+START_MONOTONIC = time.monotonic()
 
 # Upper-body MediaPipe Pose landmark indices (head, shoulders, elbows, wrists, hands, hips)
 UPPER_BODY_INDICES = [0, 2, 5, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 23, 24]
 VIDEO_EXTS = {".mp4", ".webm", ".avi", ".mov", ".mkv"}
 
 SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": "KenyaHub-KSL-Video-Ingestor/2.0 (https://kenyahub.me)"})
+SESSION.headers.update({"User-Agent": "KenyaHub-KSL-Video-Ingestor/3.0 (https://kenyahub.me; contact@kenyahub.me)"})
+
+
+def time_budget_exceeded() -> bool:
+    return KSL_TIME_BUDGET_SEC > 0 and (time.monotonic() - START_MONOTONIC) >= KSL_TIME_BUDGET_SEC
 
 
 def slugify(text: str) -> str:
@@ -224,9 +244,60 @@ def clean_gloss_from_member(member_name: str, prefer_stem: bool = False) -> str:
     return candidate.title() if candidate else stem.title()
 
 
-def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict]) -> None:
-    """Download Maseno Zenodo 14338329 Pose Data.zip (CC-BY-4.0) and upload stickman .mp4 videos + pose JSONs."""
+def deduplicate_videos(videos: list[dict]) -> list[dict]:
+    """Deduplicate KSL videos by id and videoUrl, keeping the richer metadata entry."""
+    by_id: dict[str, dict] = {}
+    seen_urls: set[str] = set()
+    result: list[dict] = []
+    for v in videos:
+        vid_id = str(v.get("id") or "").strip()
+        url = str(v.get("videoUrl") or "").strip()
+        if not vid_id or not url:
+            continue
+        if vid_id in by_id:
+            prev = by_id[vid_id]
+            if not prev.get("transcript") and v.get("transcript"):
+                prev["transcript"] = v["transcript"]
+            if not prev.get("reference") and v.get("reference"):
+                prev["reference"] = v["reference"]
+            continue
+        if url in seen_urls:
+            continue
+        by_id[vid_id] = v
+        seen_urls.add(url)
+        result.append(v)
+    return result
+
+
+def save_ksl_index(existing: dict, videos_out: list[dict], signs_out: list[dict], ingestion_state: dict) -> None:
+    deduped_videos = deduplicate_videos(videos_out)
+    existing["updatedAt"] = datetime.now(timezone.utc).isoformat()
+    existing["videos"] = sorted(deduped_videos, key=lambda x: (x.get("category", ""), x.get("title", ""), x.get("id", "")))
+    existing["videoCount"] = len(existing["videos"])
+    existing["ingestionState"] = ingestion_state
+    if signs_out:
+        seen_signs: dict[str, dict] = {}
+        for s in signs_out:
+            sid = str(s.get("id") or "").strip()
+            if sid and sid not in seen_signs:
+                seen_signs[sid] = s
+        existing["signs"] = sorted(seen_signs.values(), key=lambda x: (x.get("gloss", ""), x.get("id", "")))
+        existing["extractedSignCount"] = len(existing["signs"])
+    KSL_INDEX_PATH.write_text(json.dumps(existing, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def ingest_maseno_zenodo(s3_client, existing: dict, videos_out: list[dict], signs_out: list[dict], ingestion_state: dict) -> None:
+    """Download Maseno Zenodo 14338329 Pose Data.zip (CC-BY-4.0) and upload ALL stickman .mp4 videos + pose JSONs."""
     assert_repo_allowed(ZENODO_HTML_URL)
+    maseno_state = ingestion_state.get("maseno") or {}
+    if maseno_state.get("completed") and not FORCE_REINGEST:
+        print(
+            f"[skip-done] Maseno Zenodo {ZENODO_RECORD_ID} already fully ingested "
+            f"({maseno_state.get('uploadedVideos', 0)}/{maseno_state.get('totalVideosFound', 0)} videos, "
+            f"{maseno_state.get('uploadedPoses', 0)}/{maseno_state.get('totalPosesFound', 0)} poses)."
+        )
+        return
+
     try:
         meta_resp = SESSION.get(ZENODO_API_URL, timeout=25)
         meta_resp.raise_for_status()
@@ -245,13 +316,21 @@ def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict
         return
 
     print(f"[Maseno CC-BY-4.0] Downloading {zip_entry.get('key')} ({zip_entry.get('size', 0) / (1024**3):.2f} GB)...")
-    seen_video_slugs: set[str] = {v["id"] for v in videos_out}
-    seen_pose_slugs: set[str] = {s["id"] for s in signs_out}
+    seen_video_ids: set[str] = {v["id"] for v in videos_out}
+    seen_member_paths: set[str] = {str(v.get("archivePath") or "") for v in videos_out if v.get("archivePath")}
+    seen_pose_ids: set[str] = {s["id"] for s in signs_out}
+    # Count existing Maseno glosses so the first clip keeps clean `maseno-<slug>` and additional clips get unique IDs
+    gloss_counts: dict[str, int] = {}
+    for v in videos_out:
+        if v.get("category") == "maseno-stickman":
+            g_slug = slugify(v.get("gloss") or v.get("title") or "")
+            if g_slug:
+                gloss_counts[g_slug] = gloss_counts.get(g_slug, 0) + 1
 
     with tempfile.TemporaryDirectory() as tmpdir:
         zip_path = os.path.join(tmpdir, "pose_data.zip")
         try:
-            with SESSION.get(dl_url, stream=True, timeout=240) as resp:
+            with SESSION.get(dl_url, stream=True, timeout=300) as resp:
                 resp.raise_for_status()
                 with open(zip_path, "wb") as f:
                     for chunk in resp.iter_content(chunk_size=2 * 1024 * 1024):
@@ -261,7 +340,13 @@ def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict
             return
 
         with zipfile.ZipFile(zip_path, "r") as zf:
-            names = [m for m in zf.namelist() if not m.startswith("__MACOSX") and not m.endswith("/") and not Path(m).name.startswith(".") and Path(m).stem.strip(". ").lower() not in ("", "mp4")]
+            names = [
+                m for m in zf.namelist()
+                if not m.startswith("__MACOSX")
+                and not m.endswith("/")
+                and not Path(m).name.startswith(".")
+                and Path(m).stem.strip(". ").lower() not in ("", "mp4")
+            ]
             vid_members = sorted([m for m in names if Path(m).suffix.lower() in VIDEO_EXTS])
             npy_members = sorted([m for m in names if m.lower().endswith(".npy")])
             distinct_vid_parents = {Path(m).parent.name.strip().lower() for m in vid_members}
@@ -276,45 +361,93 @@ def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict
                 print(f"  Sample video paths: {vid_members[:3]}")
 
             maseno_vids_added = 0
+            hit_budget_or_cap = False
+            first_seen_gloss_in_archive: set[str] = set()
+
             for m in vid_members:
-                if maseno_vids_added >= MAX_MASENO_VIDEOS:
+                if time_budget_exceeded():
+                    print("  [checkpoint] Time budget reached during Maseno video ingestion; saving progress to resume on next run.")
+                    hit_budget_or_cap = True
                     break
-                gloss = clean_gloss_from_member(m, prefer_stem=prefer_vid_stem)
-                slug = slugify(gloss)
-                vid_id = f"maseno-{slug}"
-                if not slug or vid_id in seen_video_slugs:
+                if MAX_MASENO_VIDEOS > 0 and maseno_vids_added >= MAX_MASENO_VIDEOS:
+                    hit_budget_or_cap = True
+                    break
+                if m in seen_member_paths:
                     continue
+
+                gloss = clean_gloss_from_member(m, prefer_stem=prefer_vid_stem)
+                g_slug = slugify(gloss)
+                if not g_slug:
+                    continue
+
+                base_id = f"maseno-{g_slug}"
+                if g_slug not in first_seen_gloss_in_archive:
+                    first_seen_gloss_in_archive.add(g_slug)
+                    if base_id in seen_video_ids:
+                        # First clip for this gloss was already uploaded in a prior run
+                        continue
+                    vid_id = base_id
+                    title = gloss
+                else:
+                    member_hash = hashlib.sha1(m.encode("utf-8")).hexdigest()[:6]
+                    vid_id = f"maseno-{g_slug}-{member_hash}"
+                    if vid_id in seen_video_ids:
+                        continue
+                    variant_num = gloss_counts.get(g_slug, 1) + 1
+                    title = f"{gloss} (Clip {variant_num})"
+
                 mp4_bytes = transcode_to_compact_mp4(zf.read(m), Path(m).suffix.lower(), max_seconds=12)
                 if not mp4_bytes:
                     continue
                 video_url = upload_bytes_to_r2(s3_client, f"ksl/videos/{vid_id}.mp4", mp4_bytes, "video/mp4")
                 if video_url:
-                    seen_video_slugs.add(vid_id)
+                    seen_video_ids.add(vid_id)
+                    seen_member_paths.add(m)
+                    gloss_counts[g_slug] = gloss_counts.get(g_slug, 0) + 1
                     maseno_vids_added += 1
                     videos_out.append({
                         "id": vid_id,
-                        "title": gloss,
+                        "title": title,
                         "gloss": gloss,
                         "videoUrl": video_url,
+                        "archivePath": m,
                         "category": "maseno-stickman",
                         "license": "CC-BY-4.0",
                         "source": f"Maseno University KSL Dataset (Zenodo {ZENODO_RECORD_ID})",
                         "sourceUrl": ZENODO_HTML_URL,
                     })
+                    if maseno_vids_added % 25 == 0:
+                        ingestion_state["maseno"] = {
+                            "completed": False,
+                            "uploadedVideos": sum(1 for v in videos_out if v.get("category") == "maseno-stickman"),
+                            "totalVideosFound": len(vid_members),
+                            "uploadedPoses": len(signs_out),
+                            "totalPosesFound": len(npy_members),
+                            "updatedAt": datetime.now(timezone.utc).isoformat(),
+                        }
+                        save_ksl_index(existing, videos_out, signs_out, ingestion_state)
+                        print(f"  [checkpoint] Maseno: +{maseno_vids_added} new videos uploaded ({ingestion_state['maseno']['uploadedVideos']}/{len(vid_members)} total).")
 
             pose_added = 0
             for m in npy_members:
-                if pose_added >= MAX_MASENO_VIDEOS:
+                if time_budget_exceeded():
+                    hit_budget_or_cap = True
+                    break
+                if MAX_MASENO_VIDEOS > 0 and pose_added >= MAX_MASENO_VIDEOS:
+                    hit_budget_or_cap = True
                     break
                 gloss = clean_gloss_from_member(m, prefer_stem=prefer_npy_stem)
                 slug = slugify(gloss)
-                if not slug or slug in seen_pose_slugs:
+                if not slug:
+                    continue
+                pose_id = slug if slug not in seen_pose_ids else f"{slug}-{hashlib.sha1(m.encode('utf-8')).hexdigest()[:6]}"
+                if pose_id in seen_pose_ids:
                     continue
                 frames = extract_compact_frames(zf.read(m))
                 if not frames:
                     continue
                 pose_payload = {
-                    "id": slug,
+                    "id": pose_id,
                     "gloss": gloss,
                     "fps": 15,
                     "landmarks": UPPER_BODY_INDICES,
@@ -322,19 +455,33 @@ def ingest_maseno_zenodo(s3_client, videos_out: list[dict], signs_out: list[dict
                     "source": f"Maseno University KSL Pose Dataset (Zenodo {ZENODO_RECORD_ID}, CC-BY-4.0)",
                 }
                 body = json.dumps(pose_payload, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
-                pose_url = upload_bytes_to_r2(s3_client, f"ksl/signs/{slug}.json", body, "application/json; charset=utf-8")
+                pose_url = upload_bytes_to_r2(s3_client, f"ksl/signs/{pose_id}.json", body, "application/json; charset=utf-8")
                 if pose_url:
-                    seen_pose_slugs.add(slug)
+                    seen_pose_ids.add(pose_id)
                     pose_added += 1
                     signs_out.append({
-                        "id": slug,
+                        "id": pose_id,
                         "gloss": gloss,
                         "frameCount": len(frames),
                         "fps": 15,
                         "poseUrl": pose_url,
                         "source": f"zenodo/{ZENODO_RECORD_ID}",
                     })
-            print(f"  -> Uploaded {maseno_vids_added} Maseno stickman .mp4 videos and {pose_added} .npy pose JSONs.")
+
+            total_maseno_vids = sum(1 for v in videos_out if v.get("category") == "maseno-stickman")
+            ingestion_state["maseno"] = {
+                "completed": not hit_budget_or_cap,
+                "uploadedVideos": total_maseno_vids,
+                "totalVideosFound": len(vid_members),
+                "uploadedPoses": len(signs_out),
+                "totalPosesFound": len(npy_members),
+                "updatedAt": datetime.now(timezone.utc).isoformat(),
+            }
+            save_ksl_index(existing, videos_out, signs_out, ingestion_state)
+            print(
+                f"  -> Uploaded {maseno_vids_added} new Maseno stickman .mp4 videos ({total_maseno_vids}/{len(vid_members)} total) "
+                f"and {pose_added} .npy pose JSONs (completed={not hit_budget_or_cap})."
+            )
 
 
 USFM_BOOK_NAMES = {
@@ -374,7 +521,6 @@ def _extract_sign_bible_context(row: dict, meta: dict, idx: int) -> tuple[str, s
     chapter = str(meta.get("chapter") or "").strip()
     verse = str(meta.get("verse") or meta.get("verses") or "").strip()
 
-    # Fallback: parse USFM book/chapter/verse from __key__ (e.g. "xki/MAT_005_001" or "GEN-01")
     if not book and key_str:
         m = re.search(r"([1-3]?[A-Za-z]{3})[/_\-]?(\d{1,3})(?:[/_\-:](\d{1,3}))?", key_str)
         if m:
@@ -397,9 +543,8 @@ def _extract_sign_bible_context(row: dict, meta: dict, idx: int) -> tuple[str, s
 
     title_core = ref if ref else f"KSL Passage #{idx + 1}"
 
-    # Extract transcript/subtitles from any text/vtt/srt/json field
     transcript_text = ""
-    for col in ("vtt", "srt", "txt", "transcripts.json", "transcript", "subtitles", "text", "captions"):
+    for col in ("transcripts.json", "vtt", "srt", "txt", "transcript", "subtitles", "text", "captions"):
         val = row.get(col)
         if not val:
             continue
@@ -421,6 +566,11 @@ def _extract_sign_bible_context(row: dict, meta: dict, idx: int) -> tuple[str, s
                 transcript_text = _strip_vtt_srt(decoded)
         elif isinstance(val, str):
             transcript_text = _strip_vtt_srt(val)
+        elif isinstance(val, list):
+            transcript_text = " ".join(
+                (str(x.get("text") or x.get("transcript") or "") if isinstance(x, dict) else str(x))
+                for x in val[:5]
+            )[:320]
         elif isinstance(val, dict):
             transcript_text = " ".join(str(v) for v in list(val.values())[:5] if v)[:320]
         if transcript_text:
@@ -442,10 +592,22 @@ def _extract_sign_bible_context(row: dict, meta: dict, idx: int) -> tuple[str, s
     return title_core, ref, transcript_text
 
 
-def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
-    """Stream real human KSL (xki) .mp4 signing videos + passage context from bible-nlp/sign-bibles (CC-BY-SA-4.0) to R2."""
+def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict], signs_out: list[dict], ingestion_state: dict) -> None:
+    """Stream ALL real human KSL (xki) .mp4 signing videos + passage context from bible-nlp/sign-bibles (CC-BY-SA-4.0) to R2."""
     assert_repo_allowed(SIGN_BIBLES_REPO)
-    print(f"[Open Sign Bibles CC-BY-SA-4.0] Streaming human KSL (xki) .mp4 videos from {SIGN_BIBLES_REPO}...")
+    osb_state = ingestion_state.get("openSignBibles") or {}
+    has_generic_titles = any(
+        v.get("category") == "human-sign-bible" and str(v.get("title", "")).startswith("KSL Passage #")
+        for v in videos_out
+    )
+    if osb_state.get("completed") and not has_generic_titles and not FORCE_REINGEST:
+        print(
+            f"[skip-done] Open Sign Bibles (xki) already fully ingested "
+            f"({osb_state.get('uploadedVideos', 0)} videos across {osb_state.get('totalScanned', 0)} rows)."
+        )
+        return
+
+    print(f"[Open Sign Bibles CC-BY-SA-4.0] Streaming ALL human KSL (xki) .mp4 videos from {SIGN_BIBLES_REPO}...")
     try:
         from datasets import load_dataset
     except ImportError:
@@ -455,10 +617,19 @@ def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
     by_id = {v["id"]: v for v in videos_out}
     added = 0
     enriched = 0
+    total_scanned = 0
+    hit_budget_or_cap = False
+
     try:
         ds = load_dataset(SIGN_BIBLES_REPO, "xki", split="train", streaming=True, token=HF_TOKEN)
         for idx, row in enumerate(ds):
-            if added >= MAX_HUMAN_KSL_VIDEOS or idx >= MAX_HUMAN_KSL_VIDEOS * 10:
+            total_scanned = idx + 1
+            if time_budget_exceeded():
+                print("  [checkpoint] Time budget reached during Open Sign Bibles streaming; saving progress to resume on next run.")
+                hit_budget_or_cap = True
+                break
+            if MAX_HUMAN_KSL_VIDEOS > 0 and added >= MAX_HUMAN_KSL_VIDEOS:
+                hit_budget_or_cap = True
                 break
             if idx == 0:
                 print(f"  Open Sign Bibles xki row[0] keys: {list(row.keys())} | __key__={row.get('__key__')!r}")
@@ -477,15 +648,15 @@ def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
             vid_id = f"sign-bible-{vid_slug}"
 
             # Enrich existing clip metadata in place without re-uploading .mp4
-            existing = by_id.get(vid_id) or by_id.get(legacy_id)
-            if existing is not None:
-                if (not existing.get("transcript") and transcript_text) or (ref and existing.get("title", "").startswith("KSL Passage")):
-                    existing["title"] = f"{title_core} (Human KSL)"
-                    existing["gloss"] = title_core
+            existing_item = by_id.get(vid_id) or by_id.get(legacy_id)
+            if existing_item is not None:
+                if (not existing_item.get("transcript") and transcript_text) or (ref and existing_item.get("title", "").startswith("KSL Passage")):
+                    existing_item["title"] = f"{title_core} (Human KSL)"
+                    existing_item["gloss"] = title_core
                     if ref:
-                        existing["reference"] = ref
+                        existing_item["reference"] = ref
                     if transcript_text:
-                        existing["transcript"] = transcript_text
+                        existing_item["transcript"] = transcript_text
                     enriched += 1
                 continue
 
@@ -516,7 +687,28 @@ def ingest_open_sign_bibles_xki(s3_client, videos_out: list[dict]) -> None:
                 by_id[vid_id] = item
                 videos_out.append(item)
                 added += 1
-        print(f"  -> Uploaded {added} new and enriched {enriched} existing human KSL (xki) .mp4 clips from Open Sign Bibles.")
+                if added % 25 == 0:
+                    ingestion_state["openSignBibles"] = {
+                        "completed": False,
+                        "uploadedVideos": sum(1 for v in videos_out if v.get("category") == "human-sign-bible"),
+                        "totalScanned": total_scanned,
+                        "updatedAt": datetime.now(timezone.utc).isoformat(),
+                    }
+                    save_ksl_index(existing, videos_out, signs_out, ingestion_state)
+                    print(f"  [checkpoint] Open Sign Bibles xki: +{added} new, {enriched} enriched (scanned {total_scanned} rows).")
+
+        total_human = sum(1 for v in videos_out if v.get("category") == "human-sign-bible")
+        ingestion_state["openSignBibles"] = {
+            "completed": not hit_budget_or_cap,
+            "uploadedVideos": total_human,
+            "totalScanned": total_scanned,
+            "updatedAt": datetime.now(timezone.utc).isoformat(),
+        }
+        save_ksl_index(existing, videos_out, signs_out, ingestion_state)
+        print(
+            f"  -> Uploaded {added} new and enriched {enriched} existing human KSL (xki) .mp4 clips "
+            f"({total_human} total, completed={not hit_budget_or_cap})."
+        )
     except Exception as exc:
         print(f"  [warn] Open Sign Bibles xki video stream notice: {exc}")
 
@@ -527,9 +719,11 @@ def main() -> None:
     if dry_run:
         assert_repo_allowed(ZENODO_HTML_URL)
         assert_repo_allowed(SIGN_BIBLES_REPO)
+        m_cap = "ALL" if MAX_MASENO_VIDEOS == 0 else str(MAX_MASENO_VIDEOS)
+        h_cap = "ALL" if MAX_HUMAN_KSL_VIDEOS == 0 else str(MAX_HUMAN_KSL_VIDEOS)
         print(
-            f"DRY RUN: Would ingest up to {MAX_MASENO_VIDEOS} Maseno stickman .mp4 videos + poses from {ZENODO_API_URL} "
-            f"and up to {MAX_HUMAN_KSL_VIDEOS} human KSL .mp4 videos from {SIGN_BIBLES_REPO} to R2."
+            f"DRY RUN: Would ingest {m_cap} Maseno stickman .mp4 videos + poses from {ZENODO_API_URL} "
+            f"and {h_cap} human KSL .mp4 videos from {SIGN_BIBLES_REPO} to R2."
         )
         return
 
@@ -542,29 +736,20 @@ def main() -> None:
 
     r2_ready = bool(CF_ACCOUNT_ID and (CF_API_TOKEN or (R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY)))
     if not r2_ready:
-        print("[info] R2 credentials not set; keeping existing ksl-index.json metadata & storybook links.")
+        print("[info] R2 credentials not set; keeping existing ksl-index.json metadata & video links.")
         return
 
-    if existing.get("videos") and len(existing["videos"]) >= 25 and os.environ.get("FORCE_REINGEST", "").lower() != "true":
-        print(f"[skip-done] ksl-index.json already has {len(existing['videos'])} uploaded KSL videos.")
-        return
-
-    s3_client = get_s3_client()
-    videos_out: list[dict] = list(existing.get("videos") or [])
+    ingestion_state: dict = dict(existing.get("ingestionState") or {})
+    videos_out: list[dict] = deduplicate_videos(list(existing.get("videos") or []))
     signs_out: list[dict] = list(existing.get("signs") or [])
 
-    ingest_maseno_zenodo(s3_client, videos_out, signs_out)
-    ingest_open_sign_bibles_xki(s3_client, videos_out)
+    s3_client = get_s3_client()
 
-    existing["updatedAt"] = datetime.now(timezone.utc).isoformat()
-    existing["videos"] = sorted(videos_out, key=lambda x: (x.get("category", ""), x.get("title", "")))
-    existing["videoCount"] = len(videos_out)
-    if signs_out:
-        existing["signs"] = sorted(signs_out, key=lambda x: x.get("gloss", ""))
-        existing["extractedSignCount"] = len(signs_out)
+    ingest_maseno_zenodo(s3_client, existing, videos_out, signs_out, ingestion_state)
+    ingest_open_sign_bibles_xki(s3_client, existing, videos_out, signs_out, ingestion_state)
 
-    KSL_INDEX_PATH.write_text(json.dumps(existing, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"[OK] Updated {KSL_INDEX_PATH} ({len(videos_out)} KSL videos, {len(signs_out)} pose JSONs).")
+    save_ksl_index(existing, videos_out, signs_out, ingestion_state)
+    print(f"[OK] Updated {KSL_INDEX_PATH} ({existing['videoCount']} KSL videos, {len(signs_out)} pose JSONs).")
 
 
 if __name__ == "__main__":

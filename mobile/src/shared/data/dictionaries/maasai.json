@@ -23602,7 +23602,7 @@
         {
           "english": "Where?",
           "translation": "kore",
-          "context": "Sir Harry Johnston, The Uganda Protectorate Vol. II (1902) — Masai."
+          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         },
         {
           "english": "That's so!",
@@ -25563,12 +25563,6 @@
         {
           "english": "Beads",
           "translation": "saien",
-          "pronunciation": "",
-          "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
-        },
-        {
-          "english": "Where",
-          "translation": "kore",
           "pronunciation": "",
           "context": "Lt.-Col. J. R. L. Macdonald, R.E. (1899) JRAI Vol. 29, Central African Vocabularies (Public Domain), p. 244"
         },
@@ -30325,5 +30319,5 @@
   "source": "The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0 & Public Domain Historical Lexicons (Farler 1882, Cust 1883, Höhnel 1894, Hinde 1901, Johnston 1902, Hollis 1905, Dundas 1910, Hobley 1910/1922, Routledge 1910 & BFBS 1921); Doris L. Payne (2026) LSP #491 Ch. 12 Maa Middle Verbs (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "mas",
   "glottocode": "masa1300",
-  "totalEntries": 5081
+  "totalEntries": 5080
 }

@@ -1,24 +1,147 @@
 {
-  "generatedAt": "2026-11-21T20:07:14.558874+00:00",
+  "generatedAt": "2026-11-22T10:47:50.664011+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 5269,
+    "totalR2AudioClips": 5871,
     "totalAudioChapters": 5,
     "totalKslVideos": 99,
     "totalStagedVarieties": 4,
     "totalStagedEntries": 650,
-    "totalBenchmarkRows": 26564,
-    "totalReaderSentences": 2666,
-    "totalCivicDatasets": 8,
+    "totalBenchmarkRows": 26618,
+    "totalReaderSentences": 2712,
+    "totalQuizQuestions": 470,
+    "totalCivicDatasets": 10,
     "totalWikimediaDatasets": 6,
     "pendingGatedCount": 9
   },
   "languages": {
     "swahili": {
       "languageId": "swahili",
-      "r2AudioClips": 1221,
+      "r2AudioClips": 1485,
+      "nativeAudioSamples": [
+        {
+          "slug": "hao",
+          "label": "Hao",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hao.opus"
+        },
+        {
+          "slug": "ili",
+          "label": "Ili",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/ili.opus"
+        },
+        {
+          "slug": "juu",
+          "label": "Juu",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/juu.opus"
+        },
+        {
+          "slug": "kwa",
+          "label": "Kwa",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kwa.opus"
+        },
+        {
+          "slug": "mji",
+          "label": "Mji",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mji.opus"
+        },
+        {
+          "slug": "mno",
+          "label": "Mno",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mno.opus"
+        },
+        {
+          "slug": "mto",
+          "label": "Mto",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mto.opus"
+        },
+        {
+          "slug": "nao",
+          "label": "Nao",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/nao.opus"
+        },
+        {
+          "slug": "uso",
+          "label": "Uso",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/uso.opus"
+        },
+        {
+          "slug": "uwe",
+          "label": "Uwe",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/uwe.opus"
+        },
+        {
+          "slug": "yao",
+          "label": "Yao",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/yao.opus"
+        },
+        {
+          "slug": "basi",
+          "label": "Basi",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/basi.opus"
+        },
+        {
+          "slug": "elfu",
+          "label": "Elfu",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/elfu.opus"
+        },
+        {
+          "slug": "hata",
+          "label": "Hata",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hata.opus"
+        },
+        {
+          "slug": "hayo",
+          "label": "Hayo",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hayo.opus"
+        },
+        {
+          "slug": "kuku",
+          "label": "Kuku",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kuku.opus"
+        },
+        {
+          "slug": "kuwa",
+          "label": "Kuwa",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kuwa.opus"
+        },
+        {
+          "slug": "leso",
+          "label": "Leso",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/leso.opus"
+        },
+        {
+          "slug": "mema",
+          "label": "Mema",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mema.opus"
+        },
+        {
+          "slug": "miji",
+          "label": "Miji",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/miji.opus"
+        },
+        {
+          "slug": "mimi",
+          "label": "Mimi",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mimi.opus"
+        },
+        {
+          "slug": "moyo",
+          "label": "Moyo",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/moyo.opus"
+        },
+        {
+          "slug": "naye",
+          "label": "Naye",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/naye.opus"
+        },
+        {
+          "slug": "nchi",
+          "label": "Nchi",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/nchi.opus"
+        }
+      ],
       "cldr": {
-        "locale": "sw",
+        "locale": "sw-KE",
         "months": [
           "Januari",
           "Februari",
@@ -42,6 +165,7 @@
           "Ijumaa",
           "Jumamosi"
         ],
+        "currencyName": "Shilingi ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -87,167 +211,173 @@
         "phoibleSegments": null,
         "unimorphEntries": 14130
       },
+      "grambankFeatures": 195,
       "sampleReadings": [
         {
-          "text": "Ninakupenda.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Baba na Mama Opio wamepanda mahindi na mihogo. Mazao haya yatalisha familia. Mazao yatakayo baki yatauzwa ili kupata pesa za matumizi ya familia. Baba na Mama Opio wamepeleka.",
+          "source": "Working Better Together",
+          "license": "cc-by"
         },
         {
-          "text": "Watu wote wamezaliwa huru, hadhi na haki zao ni sawa. Wote wamejaliwa akili na dhamiri, hivyo yapasa watendeane kindugu.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Kato, Ronald na Teddy huweka nguo na miili yao safi, lakini hawajui kuhusu vijidudu amba vyo havioneka ni. Siku moja Kato alitoka chooni. Wakati anarudi darasani alisimama.",
+          "source": "SABUNI NA MAJI KWA KUONDOA VIJIDUDU",
+          "license": "cc-by"
         },
         {
-          "text": "Hutusahau!",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Walikuwa na majivuno na hawakujali kama Mungu alivyosema. Wakajenga mji wakaweka mnara mrefu uliokaribia kufika mbinguni. Mungu akaona watu hawa wakiendelea kufanya uovu.",
+          "source": "04",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Swali nzuri.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Lakini hapo kale, pua la tembo lilikuwa fupi na nono. Lilikuwa kama kiatu kilichowekwa katikati mwa uso wake. Siku moja tembo akazaa mtoto aliyekuwa mdadisi. Alikuwa na swali.",
+          "source": "Пилдин тентек баласы",
+          "license": "cc-by"
         },
         {
-          "text": "Unakumbuka?",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Yesu akasema, \" Ufalme wa Mungu unafananishwa na mfalme alie taka kukusanya madeni yake kutoka kwa watumishi wake. Mmoja wa watumishi wake alikua anadaiwa deni kubwa lenye.",
+          "source": "ŊKHAŊ ƏTYO ŊWAY FƏG KUNAG KPƏNDAŊ NTƏM",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Kwenda kwa teksi hotelini.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Lakini hapo kale, pua la tembo lilikuwa fupi na nono. Lilikuwa kama kiatu kilichowekwa katikati mwa uso wake. Siku moja tembo akazaa mtoto aliyekuwa mdadisi. Alikuwa na swali.",
+          "source": "Curious  baby elephant",
+          "license": "cc-by"
         },
         {
-          "text": "Usisahau kupeleka barua",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Kila mwaka baada ya siku 50 za Pasaka, Wayahudi walisheherekea siku muhimu ya Pentekosti. Pentekosti ni kipindi ambacho wayahudi walisheherekea mavuno ya ngano, Wayahudi.",
+          "source": "Kaanaametaap Kaniisa",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Nitarudi.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Ndipo Mungu aliadhibu falme zote kwa kuruhusu maadui zao kuwapiga. Ufame wa Ashuru ulikua ni ufalme wenye nguvu, taifa korofi likaharibu ufalme wa Israel. katika ufalme wa.",
+          "source": "NAD SWAD NHWO KU BU BWWOG KU",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Nina swali.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "\"Lakini wakati punje ya haradali inapokuwa, inakuwa kubwa kuliko mimea yote bustanini, inakuwa na ukubwa wa kutosha hata ndege huja na kutua kwenye matawi yake,\" Yesu.",
+          "source": "येसुङा आरु चा मुन्‍डुम्‌चि हिसिक्‍टुचे",
+          "license": "cc-by"
         },
         {
-          "text": "Nakupenda.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Kwakuwa Yusufu alikuwa anapendwa sana na baba yake, na kwamba siku moja aliwahi kuota ndoto na akawasimulia kaka zake kwamba yeye atakuwa mtawala wao hapo baadae, kaka zake.",
+          "source": "ƏGWAZA U Ə COG ISÛ MBYYAŊ KYAŊ BWAG GU KU",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Usisahau kupeleka barua.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Petro akamtazama yule kiwete na kumwambia, \"Sina fedha za kukupa. Japo nitakupa kile nilichonacho. Kwa jina la Yesu Kristo, simama na utembee!\" Mara tu, Mungu akamponya yule.",
+          "source": "पाट्‌रुस लोक् युहान्‍नाङा लोङ्‌लेन् याप्‌मि नुमानि",
+          "license": "cc-by"
         },
         {
-          "text": "Penye nia, pana njia.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Mmoja wa wanafunzi wa Yesu aliitwa Yuda. Yuda alikuwa mtunza mfuko wa fedha wa mitume, lakini alikuwa mpenda fedha na mara nyingi aliiba fedha kutoka mfuko huo. Baada ya Yesu.",
+          "source": "येसु बिस्‍वास घातङि ठायाना",
+          "license": "cc-by"
         }
       ],
       "topFrequencyWords": [
         {
-          "word": "na",
-          "count": 54387
+          "word": "ya",
+          "count": 136095
         },
         {
-          "word": "ya",
-          "count": 50686
+          "word": "na",
+          "count": 110352
         },
         {
           "word": "wa",
-          "count": 35328
+          "count": 97935
         },
         {
           "word": "kwa",
-          "count": 25663
-        },
-        {
-          "word": "ni",
-          "count": 14536
+          "count": 60433
         },
         {
           "word": "katika",
-          "count": 13458
+          "count": 33953
+        },
+        {
+          "word": "ni",
+          "count": 27945
         },
         {
           "word": "za",
-          "count": 10146
-        },
-        {
-          "word": "kuwa",
-          "count": 8071
+          "count": 24538
         },
         {
           "word": "la",
-          "count": 8042
+          "count": 18499
         },
         {
-          "word": "kama",
-          "count": 6638
+          "word": "kuwa",
+          "count": 15828
         },
         {
           "word": "cha",
-          "count": 5148
+          "count": 12806
         },
         {
-          "word": "yake",
-          "count": 4775
-        },
-        {
-          "word": "kwamba",
-          "count": 4350
-        },
-        {
-          "word": "kwenye",
-          "count": 4282
+          "word": "kama",
+          "count": 11179
         },
         {
           "word": "hiyo",
-          "count": 4227
+          "count": 9327
         },
         {
-          "word": "watu",
-          "count": 3663
-        },
-        {
-          "word": "au",
-          "count": 3557
-        },
-        {
-          "word": "wake",
-          "count": 3468
-        },
-        {
-          "word": "hii",
-          "count": 3340
-        },
-        {
-          "word": "wakati",
-          "count": 3111
-        },
-        {
-          "word": "hivyo",
-          "count": 3048
-        },
-        {
-          "word": "lakini",
-          "count": 2855
-        },
-        {
-          "word": "ili",
-          "count": 2701
+          "word": "kwenye",
+          "count": 9277
         },
         {
           "word": "vya",
-          "count": 2693
+          "count": 7784
+        },
+        {
+          "word": "wakati",
+          "count": 7404
+        },
+        {
+          "word": "yake",
+          "count": 7249
+        },
+        {
+          "word": "kwamba",
+          "count": 7012
+        },
+        {
+          "word": "watu",
+          "count": 6745
+        },
+        {
+          "word": "au",
+          "count": 6609
+        },
+        {
+          "word": "hii",
+          "count": 6536
+        },
+        {
+          "word": "kutoka",
+          "count": 6526
+        },
+        {
+          "word": "mwaka",
+          "count": 6410
+        },
+        {
+          "word": "zaidi",
+          "count": 6382
+        },
+        {
+          "word": "kazi",
+          "count": 6274
         }
       ],
       "wikimedia": [
+        {
+          "id": "wikidata-lexemes-kenya",
+          "count": 491,
+          "license": "CC0-1.0"
+        },
         {
           "id": "wikisource-sw",
           "count": 48,
@@ -258,43 +388,59 @@
         {
           "title": "(Usiku wa cheo)Lailatu Al-qadr",
           "url": "https://wikisource.org/wiki/(Usiku_wa_cheo)Lailatu_Al-qadr",
-          "source": "Swahili Wikisource"
+          "source": "Swahili Classic Texts"
         },
         {
           "title": "Al-Inkishafi",
           "url": "https://wikisource.org/wiki/Al-Inkishafi",
-          "source": "Swahili Wikisource"
+          "source": "Swahili Classic Texts"
         },
         {
           "title": "Baba yetu",
           "url": "https://wikisource.org/wiki/Baba_yetu",
-          "source": "Swahili Wikisource"
+          "source": "Swahili Classic Texts"
         },
         {
           "title": "Commedia ya Kimungu/Jahannamu/Surah I",
           "url": "https://wikisource.org/wiki/Commedia_ya_Kimungu/Jahannamu/Surah_I",
-          "source": "Swahili Wikisource"
+          "source": "Swahili Classic Texts"
         },
         {
           "title": "Ee Mungu Nguvu Yetu",
           "url": "https://wikisource.org/wiki/Ee_Mungu_Nguvu_Yetu",
-          "source": "Swahili Wikisource"
+          "source": "Swahili Classic Texts"
         },
         {
           "title": "Hotuba ya Rais Barack Obama Wakati Mpya wa Matumaini",
           "url": "https://wikisource.org/wiki/Hotuba_ya_Rais_Barack_Obama_Wakati_Mpya_wa_Matumaini",
-          "source": "Swahili Wikisource"
-        },
-        {
-          "title": "Itikafu(kukaa ndani ya msikiti)",
-          "url": "https://wikisource.org/wiki/Itikafu(kukaa_ndani_ya_msikiti)",
-          "source": "Swahili Wikisource"
-        },
-        {
-          "title": "Majina ya mji wa Mtume wa Madina",
-          "url": "https://wikisource.org/wiki/Majina_ya_mji_wa_Mtume_wa_Madina",
-          "source": "Swahili Wikisource"
+          "source": "Swahili Classic Texts"
         }
+      ],
+      "wikidataLexemes": [
+        "futa",
+        "فُوتَ",
+        "boga",
+        "بٗوڠَ",
+        "askari",
+        "عَسكَارِ",
+        "kisu",
+        "كِيسُ",
+        "ndizi",
+        "نْڈِيزِ",
+        "rafu",
+        "رَافُ",
+        "godoro",
+        "ڠٗدٗورٗ",
+        "fagia",
+        "فَڠِئَ",
+        "pya",
+        "پْيَ",
+        "mahali",
+        "مَحَالِ",
+        "ema",
+        "إٖيمَ",
+        "kufagia",
+        "كُفَڠِئَ"
       ],
       "phonemes": [
         "f",
@@ -338,82 +484,82 @@
         {
           "lemma": "fua",
           "form": "amefua",
-          "features": "V;FIN;IND;PST;PRF;3;SG;LGSPEC1"
+          "features": "Verb · FIN · Indicative · Past"
         },
         {
           "lemma": "fuliwa",
           "form": "amefuliwa",
-          "features": "V;FIN;IND;PST;PRF;3;SG;LGSPEC1"
+          "features": "Verb · FIN · Indicative · Past"
         },
         {
           "lemma": "fupi",
           "form": "wafupi",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "gonjwa",
           "form": "wagonjwa",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "gumu",
           "form": "wagumu",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "afiki",
           "form": "ameafiki",
-          "features": "V;FIN;IND;PST;PRF;3;SG;LGSPEC1"
+          "features": "Verb · FIN · Indicative · Past"
         },
         {
           "lemma": "heshimiwa",
           "form": "waheshimiwa",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "hii",
           "form": "hawa",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "hiyo",
           "form": "hao",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "imba",
           "form": "amekwimba",
-          "features": "V;FIN;IND;PST;PRF;3;SG;LGSPEC1"
+          "features": "Verb · FIN · Indicative · Past"
         },
         {
           "lemma": "ingi",
           "form": "wengi",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "ingine",
           "form": "wengine",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "ja",
           "form": "amekuja",
-          "features": "V;FIN;IND;PST;PRF;3;SG;LGSPEC1"
+          "features": "Verb · FIN · Indicative · Past"
         },
         {
           "lemma": "jeuri",
           "form": "wajeuri",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         },
         {
           "lemma": "jibu",
           "form": "amejibu",
-          "features": "V;FIN;IND;PST;PRF;3;SG;LGSPEC1"
+          "features": "Verb · FIN · Indicative · Past"
         },
         {
           "lemma": "jinga",
           "form": "wajinga",
-          "features": "ADJ;PL;LGSPEC1"
+          "features": "Adjective · Plural · LGSPEC1"
         }
       ],
       "benchmarks": [
@@ -470,11 +616,142 @@
           "rows": 2500
         }
       ],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 1485,
+        "storiesCount": 38,
+        "sentencesCount": 150,
+        "articlesCount": 72,
+        "quizCount": 180,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "kikuyu": {
       "languageId": "kikuyu",
       "r2AudioClips": 450,
+      "nativeAudioSamples": [
+        {
+          "slug": "haha",
+          "label": "Haha",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/haha.opus"
+        },
+        {
+          "slug": "https",
+          "label": "Https",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/https.opus"
+        },
+        {
+          "slug": "murango",
+          "label": "Murango",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/murango.opus"
+        },
+        {
+          "slug": "ikara-thi",
+          "label": "Ikara thi",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/ikara-thi.opus"
+        },
+        {
+          "slug": "reke-thii",
+          "label": "Reke thii",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/reke-thii.opus"
+        },
+        {
+          "slug": "nguo-njeru",
+          "label": "Nguo njeru",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/nguo-njeru.opus"
+        },
+        {
+          "slug": "tumuteithie",
+          "label": "Tumuteithie",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/tumuteithie.opus"
+        },
+        {
+          "slug": "ni-wega-muno",
+          "label": "Ni wega muno",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/ni-wega-muno.opus"
+        },
+        {
+          "slug": "watho-ni-kii",
+          "label": "Watho ni kii",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/watho-ni-kii.opus"
+        },
+        {
+          "slug": "turi-na-thina",
+          "label": "Turi na thina",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/turi-na-thina.opus"
+        },
+        {
+          "slug": "tarora-tai-ino",
+          "label": "Tarora tai ino",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/tarora-tai-ino.opus"
+        },
+        {
+          "slug": "ii-twina-ngatho",
+          "label": "Ii twina ngatho",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/ii-twina-ngatho.opus"
+        },
+        {
+          "slug": "atari-na-mahitia",
+          "label": "Atari na mahitia",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/atari-na-mahitia.opus"
+        },
+        {
+          "slug": "ni-makoragwo-kuo",
+          "label": "Ni makoragwo kuo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/ni-makoragwo-kuo.opus"
+        },
+        {
+          "slug": "reke-tuurie-jira",
+          "label": "Reke tuurie jira",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/reke-tuurie-jira.opus"
+        },
+        {
+          "slug": "ndi-murimi-munini",
+          "label": "Ndi murimi munini",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/ndi-murimi-munini.opus"
+        },
+        {
+          "slug": "tugatuika-a-thoni",
+          "label": "Tugatuika a thoni",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/tugatuika-a-thoni.opus"
+        },
+        {
+          "slug": "uyu-wamurutire-ku",
+          "label": "Uyu wamurutire ku",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/uyu-wamurutire-ku.opus"
+        },
+        {
+          "slug": "jumaa-ino-ningaina",
+          "label": "Jumaa ino ningaina",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/jumaa-ino-ningaina.opus"
+        },
+        {
+          "slug": "kahinda-gaka-gothe",
+          "label": "Kahinda gaka gothe",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/kahinda-gaka-gothe.opus"
+        },
+        {
+          "slug": "micemanio-gukanjwo",
+          "label": "Micemanio gukanjwo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/micemanio-gukanjwo.opus"
+        },
+        {
+          "slug": "mundu-witagwo-mike",
+          "label": "Mundu witagwo mike",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/mundu-witagwo-mike.opus"
+        },
+        {
+          "slug": "mwari-ni-anduiriire",
+          "label": "Mwari ni anduiriire",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/mwari-ni-anduiriire.opus"
+        },
+        {
+          "slug": "ninjui-muthako-ucio",
+          "label": "Ninjui muthako ucio",
+          "audioUrl": "https://audio.kenyahub.me/audio/kikuyu/ninjui-muthako-ucio.opus"
+        }
+      ],
       "cldr": {
         "locale": "ki",
         "months": [
@@ -500,6 +777,7 @@
           "Wetano",
           "Njuuma"
         ],
+        "currencyName": "Ciringi ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -537,65 +815,66 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 195,
       "sampleReadings": [
         {
           "text": "Thuutha wa mĩaka ĩĩri ya mbaara gũthira, arĩa maarĩ arata magĩtuĩka thũ na mbaara ya heho ĩkĩambĩrĩria.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Ona angĩkorwo Wagonways ciakitwo na mbaũ, nĩciatũmaga mbarathi ithiĩ ihenya inene na kũgucia mĩrigo mĩritũ gũkĩra barabara irĩa cia hĩndĩ iyo iria citaarĩ nyoroku.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Ndĩrĩ ĩ ika ona kũrĩ o ũguo, gwĩka ngerekano cia gũthuthuria maũndũ merũ, na kũgerekania gũkũ nĩ igeria rĩrĩa rĩtũmĩkaga kweheria woni ũmwe kana mawoni maingĩ mena ũhoteteku.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Michael Schumacher agĩtiga gũthiĩ na mbere na ihenya rĩu kahinda kanini thutha wa Alonso, nĩ ũndũ wa gũthũkĩrio nĩ kũrũgamio kũingĩ gĩcindano-inĩ hĩndĩ ya ihenya rĩu.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Perry akiuga atĩ we \"Nĩ egũcoka Texas kũrora maumĩrĩra ma mũcemanio wa atangoria ũtukũ ũcio, kũrora kana kwĩna gacĩra gakwa ga kũhotithia gũthiĩ na mbere gĩcindano-inĩ kĩu\".",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Gũgĩkinya Septemba 17, 1939, arangĩri a Poland nĩmahotetwo, na mwihoko ũrĩa waarĩ ho nĩ gũcoka thuutha nginya Romanian bridgehead na gwĩbanga rĩngĩ.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Nĩ ũkũrio ũririkane atĩ ũraceerera handũ harĩ na kabuuri cia andũ aingĩ hamwe, na ningĩ handũ harĩ na ũndũ mũnene haugaga ũtangĩgereka kũrĩ gĩcunjĩ kĩnene kĩa mũigĩ wa thĩ.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Kĩganda kĩrĩa gĩa bata mũno thĩiniĩ wa Venezuela nĩ maguta, kũrĩa bũrũri ũyũ wendagia maguta na nja, ona o korwo nĩ gĩcunjĩ kĩa imwe harĩ igana marutaga wĩra iganda-inĩ cia.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Keki irĩ na matunda nĩcionekaga, irĩ na apples irugĩirwo keki-inĩ hĩndĩ ya mwaka wothe gũthiũrũrũka, na cherries na plums ikĩoneka hĩndĩ ya kĩmera kĩa ũrugarĩ.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "rĩu cia Japan.Japan warĩ bũrũri ũrĩ gĩcigĩrĩra-inĩ o ta Britain",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Subsistence nĨ ũrĨmi ũrĨa ũkoragwo wĨ wa gũkũria irio njiganu nĨ ũndũ wa mahũthĨro ma mũrĨmi na bamĨrĨ yake.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         },
         {
           "text": "Kũhota gũkinyĩra mootungata maya kaingĩ nĩ kũhĩtũkĩra namba ya thimũ ĩtarĩ marĩhi ĩrĩa ĩngĩhũũrwo kuuma thimu-inĩ nyingĩ hatarĩ marĩhi.",
-          "source": "BigScience xP3 (Apache-2.0)",
+          "source": "Practice Sentence",
           "license": "Apache-2.0"
         }
       ],
@@ -697,8 +976,19 @@
           "count": 755
         }
       ],
-      "wikimedia": [],
+      "wikimedia": [
+        {
+          "id": "wikidata-lexemes-kenya",
+          "count": 3,
+          "license": "CC0-1.0"
+        }
+      ],
       "wikimediaArticles": [],
+      "wikidataLexemes": [
+        "bundũki",
+        "Ramathani",
+        "maĩ"
+      ],
       "phonemes": [
         "h",
         "j",
@@ -740,11 +1030,142 @@
           "rows": 2500
         }
       ],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 450,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "luo": {
       "languageId": "luo",
-      "r2AudioClips": 912,
+      "r2AudioClips": 1174,
+      "nativeAudioSamples": [
+        {
+          "slug": "ne-tek",
+          "label": "Ne tek",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/ne-tek.opus"
+        },
+        {
+          "slug": "dhootno",
+          "label": "Dhootno",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/dhootno.opus"
+        },
+        {
+          "slug": "kaw-kom",
+          "label": "Kaw kom",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/kaw-kom.opus"
+        },
+        {
+          "slug": "goyo-gono",
+          "label": "Goyo gono",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/goyo-gono.opus"
+        },
+        {
+          "slug": "wapenj-yo",
+          "label": "Wapenj yo",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/wapenj-yo.opus"
+        },
+        {
+          "slug": "ber-ahinya",
+          "label": "Ber ahinya",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/ber-ahinya.opus"
+        },
+        {
+          "slug": "joel-ariyo",
+          "label": "Joel ariyo",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/joel-ariyo.opus"
+        },
+        {
+          "slug": "nyaka-adhi",
+          "label": "Nyaka adhi",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/nyaka-adhi.opus"
+        },
+        {
+          "slug": "onge-ketho",
+          "label": "Onge ketho",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/onge-ketho.opus"
+        },
+        {
+          "slug": "sigand-luo",
+          "label": "Sigand luo",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/sigand-luo.opus"
+        },
+        {
+          "slug": "ayub-ochiko",
+          "label": "Ayub ochiko",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/ayub-ochiko.opus"
+        },
+        {
+          "slug": "an-gi-adieri",
+          "label": "An gi adieri",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/an-gi-adieri.opus"
+        },
+        {
+          "slug": "gikwalo-pesa",
+          "label": "Gikwalo pesa",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/gikwalo-pesa.opus"
+        },
+        {
+          "slug": "gintie-adier",
+          "label": "Gintie adier",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/gintie-adier.opus"
+        },
+        {
+          "slug": "mika-ang-wen",
+          "label": "Mika ang wen",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/mika-ang-wen.opus"
+        },
+        {
+          "slug": "muma-en-ango",
+          "label": "Muma en ango",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/muma-en-ango.opus"
+        },
+        {
+          "slug": "punda-achiel",
+          "label": "Punda achiel",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/punda-achiel.opus"
+        },
+        {
+          "slug": "range-tai-ni",
+          "label": "Range tai ni",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/range-tai-ni.opus"
+        },
+        {
+          "slug": "we-yuak-mama",
+          "label": "We yuak mama",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/we-yuak-mama.opus"
+        },
+        {
+          "slug": "dak-ne-inyisa",
+          "label": "Dak ne inyisa",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/dak-ne-inyisa.opus"
+        },
+        {
+          "slug": "ee-ero-kamano",
+          "label": "Ee ero kamano",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/ee-ero-kamano.opus"
+        },
+        {
+          "slug": "lewni-manyien",
+          "label": "Lewni manyien",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/lewni-manyien.opus"
+        },
+        {
+          "slug": "lokuru-chunyu",
+          "label": "Lokuru chunyu",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/lokuru-chunyu.opus"
+        },
+        {
+          "slug": "onego-wakonye",
+          "label": "Onego wakonye",
+          "audioUrl": "https://audio.kenyahub.me/audio/luo/onego-wakonye.opus"
+        }
+      ],
       "cldr": {
         "locale": "luo",
         "months": [
@@ -770,6 +1191,7 @@
           "Tich Abich",
           "Ngeso"
         ],
+        "currencyName": "Siling mar Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -805,65 +1227,66 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 195,
       "sampleReadings": [
         {
           "text": "Tem matek inee ni lweteni ogonyore kaka nyalore e seche ma pod idiyo dwonde go e yo ma kare - bende tem kik ichap lith lweteni e yore ma ok owinjore. Kitimo kamano, to idhi.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Achiel kwom chandruoge ma kinde ka kinde sama itemo loko sinema obedi e yor DVD en overscan. Thoth wang' jowi olosi e yo mamoro oganda duto. Nikech mano, gik moko duto ma.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Pach jo Amerka notenore kwom timo monj mochan ni itimo dichiel maromre kowuok kwonde adek mopogore. Jeneral John Cadwalder ne nyalo tiao monj kochimo jolwenj Britain mane.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Bang' ka nosekale kaka chik gi Od Bura Maduong' e dwe mar Julai tarik 4, otas manondikee gi lwedo manoketie sei kod Ker mar Od Bura Maduong' John Hancock kod Jagoro Charles.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Jo-Koloni, ka noneno timbe go, to gin bende ne giluongo jolweny mamoko. Jolweny mane omako thuolo ma nyime noriwo kidieny mar 1 kod mar 3 mar New Hampshire manoting'o chuo.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "China machon ne nitiere kod yore moko makende mag nyiso ndalo mopogore opogore; okang' ka okang' mar China kata anyuola ka anyuola mane nitiere e loch ne gin dhoudi mag loch.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Ochunglo makanyo achiel wuotho tokendo gigedo kanyakla bende, ekinde mopogore. E okang' mar dar, thomorni wuothoga e seche mag otieno to gibuoro e seche mag odiechieng'.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "ji mathoth fwenyo kaka gikmoko sudo kod timgi seche mathoth kaluore kod kaka gikmoko nitiere mawuok e del kaluoro gi biology mar del Gwecho leche mochanore, ma ok gin agina.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Kwan mar oganda en chokruok mar gik ma ngima ma chalre mayudore e aluora achiel. Ka ji duto manitiere ei oganda chalre koluwore gi kido mar phenotype moro achiel, to mano.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Timo limbe mar neno chwech mag piny mapile ywayo ga mana ji mohero limo kwonde mapile mana ne mor mar neno kwondego, koriwo nyaka gi neno yiende kod lee mag bungu. Ranyisi.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Okinyi kokinyi, ji wuok e bombe matindo tindo mag piny gi mtokni mondo gidhiyo kwondegi mag tich kendo gigwenyore bende gi ji mamoko ma kwondegi mag tich nitiere e kwonde ma.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Gino matin mogik inyalo wachi nien achiel kuom gigo madongo magero dend gikmoko duto. En gino ma iye yoreyore moting'o, kaluwore kod model molos mayot mar Bohr, nyuklia mae.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         }
       ],
@@ -970,49 +1393,47 @@
           "id": "incubator-luo",
           "count": 41,
           "license": "CC-BY-SA-4.0"
+        },
+        {
+          "id": "wikidata-lexemes-kenya",
+          "count": 1,
+          "license": "CC0-1.0"
         }
       ],
       "wikimediaArticles": [
         {
           "title": "Akothee",
           "url": "https://incubator.wikimedia.org/wiki/Wp/luo/Akothee",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Alode",
           "url": "https://incubator.wikimedia.org/wiki/Wp/luo/Alode",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Anyang' Nyong'o",
           "url": "https://incubator.wikimedia.org/wiki/Wp/luo/Anyang'_Nyong'o",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Awendo",
           "url": "https://incubator.wikimedia.org/wiki/Wp/luo/Awendo",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Ayaki",
           "url": "https://incubator.wikimedia.org/wiki/Wp/luo/Ayaki",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Bondo",
           "url": "https://incubator.wikimedia.org/wiki/Wp/luo/Bondo",
-          "source": "Wikimedia Incubator"
-        },
-        {
-          "title": "Chiemb Luo Ma Ong'ere",
-          "url": "https://incubator.wikimedia.org/wiki/Wp/luo/Chiemb_Luo_Ma_Ong'ere",
-          "source": "Wikimedia Incubator"
-        },
-        {
-          "title": "DOHO",
-          "url": "https://incubator.wikimedia.org/wiki/Wp/luo/DOHO",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         }
+      ],
+      "wikidataLexemes": [
+        "Ramadhani"
       ],
       "phonemes": [
         "b",
@@ -1150,11 +1571,142 @@
           "license": "Public Domain Mark 1.0",
           "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
         }
-      ]
+      ],
+      "shards": {
+        "audioCount": 1174,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 41,
+        "quizCount": 80,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "luhya": {
       "languageId": "luhya",
-      "r2AudioClips": 250,
+      "r2AudioClips": 323,
+      "nativeAudioSamples": [
+        {
+          "slug": "n-a",
+          "label": "N a",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/n-a.opus"
+        },
+        {
+          "slug": "shop",
+          "label": "Shop",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/shop.opus"
+        },
+        {
+          "slug": "skip",
+          "label": "Skip",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/skip.opus"
+        },
+        {
+          "slug": "kukhu",
+          "label": "Kukhu",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/kukhu.opus"
+        },
+        {
+          "slug": "abasomi",
+          "label": "Abasomi",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/abasomi.opus"
+        },
+        {
+          "slug": "makendo",
+          "label": "Makendo",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/makendo.opus"
+        },
+        {
+          "slug": "riddles",
+          "label": "Riddles",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/riddles.opus"
+        },
+        {
+          "slug": "ojolijoli",
+          "label": "Ojolijoli",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/ojolijoli.opus"
+        },
+        {
+          "slug": "kona-ndolo",
+          "label": "Kona ndolo",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/kona-ndolo.opus"
+        },
+        {
+          "slug": "mchongoano",
+          "label": "Mchongoano",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/mchongoano.opus"
+        },
+        {
+          "slug": "nakhatandi",
+          "label": "Nakhatandi",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/nakhatandi.opus"
+        },
+        {
+          "slug": "church-song",
+          "label": "Church song",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/church-song.opus"
+        },
+        {
+          "slug": "mbele-mbira",
+          "label": "Mbele mbira",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/mbele-mbira.opus"
+        },
+        {
+          "slug": "omwene-dala",
+          "label": "Omwene dala",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/omwene-dala.opus"
+        },
+        {
+          "slug": "ajiambo-hiha",
+          "label": "Ajiambo hiha",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/ajiambo-hiha.opus"
+        },
+        {
+          "slug": "bukusu-clans",
+          "label": "Bukusu clans",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-clans.opus"
+        },
+        {
+          "slug": "introduction",
+          "label": "Introduction",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/introduction.opus"
+        },
+        {
+          "slug": "market-place",
+          "label": "Market place",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/market-place.opus"
+        },
+        {
+          "slug": "sindu-silala",
+          "label": "Sindu silala",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/sindu-silala.opus"
+        },
+        {
+          "slug": "wangoye-wase",
+          "label": "Wangoye wase",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/wangoye-wase.opus"
+        },
+        {
+          "slug": "bukusu-sayings",
+          "label": "Bukusu sayings",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/bukusu-sayings.opus"
+        },
+        {
+          "slug": "lukongo-lwefwe",
+          "label": "Lukongo lwefwe",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/lukongo-lwefwe.opus"
+        },
+        {
+          "slug": "nachile-engaki",
+          "label": "Nachile engaki",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/nachile-engaki.opus"
+        },
+        {
+          "slug": "story-of-areba",
+          "label": "Story of areba",
+          "audioUrl": "https://audio.kenyahub.me/audio/luhya/story-of-areba.opus"
+        }
+      ],
       "cldr": {
         "locale": "luy",
         "months": [
@@ -1180,6 +1732,7 @@
           "Murwa wa Katano",
           "Jumamosi"
         ],
+        "currencyName": "Sirinji ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -1212,18 +1765,167 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
-      "sampleReadings": [],
+      "grambankFeatures": 0,
+      "sampleReadings": [
+        {
+          "text": "Yosia yamenya khale khale weene. Paapa wuwe yali omuruchi. Nabutswa obwatoto bubeere buri, Yosia yali wayanza okhukhola ka abasiani ba emiyika chichie bayanza okhukhola..",
+          "source": "Omwana omusiani aba omuruchi",
+          "license": "cc-by"
+        },
+        {
+          "text": "Mayi wuwe wumureerekho okhusiinga. Alabukulanga omuswaki kwa ameno. Mayi wuwe wumuleerere amachi khu lipeseni. Alasinganga amoni wuwe. Wuchiile okhukona chindolo ahambi nende.",
+          "source": "Joy achiichanga esisomelo",
+          "license": "cc-by"
+        },
+        {
+          "text": "Wangwe acha esikuli. Kasiima sikuli. Wangwe ali mukilasi ya khanne. Wangwe ali mukilaasi. Mwalimu Wamalwa asomia. Asomia Wangwe esabu. Wangwe kama esikuli. Ali nende.",
+          "source": "Endalo ya Wangwe",
+          "license": "cc-by"
+        }
+      ],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 323,
+        "storiesCount": 3,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     },
     "kamba": {
       "languageId": "kamba",
       "r2AudioClips": 449,
+      "nativeAudioSamples": [
+        {
+          "slug": "vaa",
+          "label": "Vaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/vaa.opus"
+        },
+        {
+          "slug": "muomo",
+          "label": "Muomo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/muomo.opus"
+        },
+        {
+          "slug": "ngua-nzau",
+          "label": "Ngua nzau",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/ngua-nzau.opus"
+        },
+        {
+          "slug": "wai-vinya",
+          "label": "Wai vinya",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/wai-vinya.opus"
+        },
+        {
+          "slug": "ikala-nthi",
+          "label": "Ikala nthi",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/ikala-nthi.opus"
+        },
+        {
+          "slug": "sisya-ta-no",
+          "label": "Sisya ta no",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/sisya-ta-no.opus"
+        },
+        {
+          "slug": "twina-thina",
+          "label": "Twina thina",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/twina-thina.opus"
+        },
+        {
+          "slug": "miao-ni-kyau",
+          "label": "Miao ni kyau",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/miao-ni-kyau.opus"
+        },
+        {
+          "slug": "tukulye-nzia",
+          "label": "Tukulye nzia",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/tukulye-nzia.opus"
+        },
+        {
+          "slug": "ninaile-kuthi",
+          "label": "Ninaile kuthi",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/ninaile-kuthi.opus"
+        },
+        {
+          "slug": "nyie-ni-muimi",
+          "label": "Nyie ni muimi",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/nyie-ni-muimi.opus"
+        },
+        {
+          "slug": "in-unaumisye-va",
+          "label": "In unaumisye va",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/in-unaumisye-va.opus"
+        },
+        {
+          "slug": "ndesi-iteewa-ata",
+          "label": "Ndesi iteewa ata",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/ndesi-iteewa-ata.opus"
+        },
+        {
+          "slug": "ninisi-ithau-yiu",
+          "label": "Ninisi ithau yiu",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/ninisi-ithau-yiu.opus"
+        },
+        {
+          "slug": "ivinda-yonthe-yiu",
+          "label": "Ivinda yonthe yiu",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/ivinda-yonthe-yiu.opus"
+        },
+        {
+          "slug": "mndme-witawa-mike",
+          "label": "Mndme witawa mike",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/mndme-witawa-mike.opus"
+        },
+        {
+          "slug": "niki-utanaandavya",
+          "label": "Niki utanaandavya",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/niki-utanaandavya.opus"
+        },
+        {
+          "slug": "na-we-kevin-eteela",
+          "label": "Na we kevin eteela",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/na-we-kevin-eteela.opus"
+        },
+        {
+          "slug": "ni-undu-museo-muno",
+          "label": "Ni undu museo muno",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/ni-undu-museo-muno.opus"
+        },
+        {
+          "slug": "nuu-ula-wi-muomoni",
+          "label": "Nuu ula wi muomoni",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/nuu-ula-wi-muomoni.opus"
+        },
+        {
+          "slug": "usu-ni-uvungu-wiva",
+          "label": "Usu ni uvungu wiva",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/usu-ni-uvungu-wiva.opus"
+        },
+        {
+          "slug": "nitwaile-kumutethya",
+          "label": "Nitwaile kumutethya",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/nitwaile-kumutethya.opus"
+        },
+        {
+          "slug": "maundu-ala-mavetetwe",
+          "label": "Maundu ala mavetetwe",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/maundu-ala-mavetetwe.opus"
+        },
+        {
+          "slug": "ni-nyumba-ya-musumbi",
+          "label": "Ni nyumba ya musumbi",
+          "audioUrl": "https://audio.kenyahub.me/audio/kamba/ni-nyumba-ya-musumbi.opus"
+        }
+      ],
       "cldr": {
         "locale": "kam",
         "months": [
@@ -1249,6 +1951,7 @@
           "Wa katano",
           "Wa thanthatũ"
         ],
+        "currencyName": "Silingi ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -1281,6 +1984,7 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 195,
       "sampleReadings": [],
       "topFrequencyWords": [
         {
@@ -1382,6 +2086,7 @@
       ],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [
         "j",
         "k",
@@ -1417,11 +2122,21 @@
       ],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 449,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "kalenjin": {
       "languageId": "kalenjin",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "kln",
         "months": [
@@ -1447,6 +2162,7 @@
           "Komuut",
           "Kolo"
         ],
+        "currencyName": "Silingitab ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -1474,7 +2190,19 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
-      "sampleReadings": [],
+      "grambankFeatures": 0,
+      "sampleReadings": [
+        {
+          "text": "Isomitit kō otēpto nē punēy chiito agetōgōl ēn kāsārwēēk alak ēn sopēēnyuwaan. Imuuchēy konaam isomitit kōsērpēn ōtkō ōwiit. Yā-iitu kiit kaigaa-ey keey chiito ēn katyaat nē.",
+          "source": "ISOMITIT",
+          "license": "cc-by"
+        },
+        {
+          "text": "Kiintē koymuutik chē yuu kiyoon tōtoonik alak, kōyookto :sirkaliit konēētiintētoop myēyntaap pōōrto. Kiineet Pwaari piik chē kiimochēy konay kēy ōpu miyoni, ak kēy kiyoyēy si.",
+          "source": "TYPŌYT",
+          "license": "cc-by"
+        }
+      ],
       "topFrequencyWords": [],
       "wikimedia": [
         {
@@ -1492,52 +2220,83 @@
         {
           "title": "Aalborg",
           "url": "https://incubator.wikimedia.org/wiki/Wp/niq/Aalborg",
-          "source": "Wikimedia Incubator"
+          "source": "Nandi Reading Archive"
         },
         {
           "title": "Abeokuta",
           "url": "https://incubator.wikimedia.org/wiki/Wp/niq/Abeokuta",
-          "source": "Wikimedia Incubator"
+          "source": "Nandi Reading Archive"
         },
         {
           "title": "Aberdeen",
           "url": "https://incubator.wikimedia.org/wiki/Wp/niq/Aberdeen",
-          "source": "Wikimedia Incubator"
+          "source": "Nandi Reading Archive"
         },
         {
           "title": "Abuja",
           "url": "https://incubator.wikimedia.org/wiki/Wp/niq/Abuja",
-          "source": "Wikimedia Incubator"
+          "source": "Nandi Reading Archive"
         },
         {
           "title": "Accra",
           "url": "https://incubator.wikimedia.org/wiki/Wp/niq/Accra",
-          "source": "Wikimedia Incubator"
+          "source": "Nandi Reading Archive"
         },
         {
           "title": "Aden",
           "url": "https://incubator.wikimedia.org/wiki/Wp/niq/Aden",
-          "source": "Wikimedia Incubator"
+          "source": "Nandi Reading Archive"
         },
         {
-          "title": "Algiers",
-          "url": "https://incubator.wikimedia.org/wiki/Wp/niq/Algiers",
-          "source": "Wikimedia Incubator"
+          "title": "Bukuit ne Tilil",
+          "url": "https://incubator.wikimedia.org/wiki/Wp/sgc/Bukuit_ne_Tilil",
+          "source": "Kipsigis Reading Archive"
         },
         {
-          "title": "Ambriz",
-          "url": "https://incubator.wikimedia.org/wiki/Wp/niq/Ambriz",
-          "source": "Wikimedia Incubator"
+          "title": "Jesu Kristo",
+          "url": "https://incubator.wikimedia.org/wiki/Wp/sgc/Jesu_Kristo",
+          "source": "Kipsigis Reading Archive"
+        },
+        {
+          "title": "Kaniset Nebo Iman nebo Jesu Kristo",
+          "url": "https://incubator.wikimedia.org/wiki/Wp/sgc/Kaniset_Nebo_Iman_nebo_Jesu_Kristo",
+          "source": "Kipsigis Reading Archive"
+        },
+        {
+          "title": "Kipsigis-English Dictionary",
+          "url": "https://incubator.wikimedia.org/wiki/Wp/sgc/Kipsigis-English_Dictionary",
+          "source": "Kipsigis Reading Archive"
+        },
+        {
+          "title": "Lord's Prayer",
+          "url": "https://incubator.wikimedia.org/wiki/Wp/sgc/Lord's_Prayer",
+          "source": "Kipsigis Reading Archive"
+        },
+        {
+          "title": "Yesu Kristo",
+          "url": "https://incubator.wikimedia.org/wiki/Wp/sgc/Yesu_Kristo",
+          "source": "Kipsigis Reading Archive"
         }
       ],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 2,
+        "sentencesCount": 0,
+        "articlesCount": 108,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     },
     "kisii": {
       "languageId": "kisii",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "guz",
         "months": [
@@ -1563,6 +2322,7 @@
           "Ichuma",
           "Esabato"
         ],
+        "currencyName": "Shilingi ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -1593,7 +2353,14 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
-      "sampleReadings": [],
+      "grambankFeatures": 195,
+      "sampleReadings": [
+        {
+          "text": "Rituko erimo inkarora egekabu ki’amakendo kebekire ase omogaso isiko mwa’baba. Ekero namoboretie buna negiaki, richibu nanyorete ndiria buna: “Ekio negekabu kiane kiogokorera.",
+          "source": "Grandma's bananas",
+          "license": "cc-by"
+        }
+      ],
       "topFrequencyWords": [
         {
           "word": "ase",
@@ -1694,14 +2461,146 @@
       ],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 1,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "meru": {
       "languageId": "meru",
       "r2AudioClips": 250,
+      "nativeAudioSamples": [
+        {
+          "slug": "bario",
+          "label": "Bario",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/bario.opus"
+        },
+        {
+          "slug": "ibwomi",
+          "label": "Ibwomi",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/ibwomi.opus"
+        },
+        {
+          "slug": "mulango",
+          "label": "Mulango",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/mulango.opus"
+        },
+        {
+          "slug": "buthongi",
+          "label": "Buthongi",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/buthongi.opus"
+        },
+        {
+          "slug": "kara-nthi",
+          "label": "Kara nthi",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/kara-nthi.opus"
+        },
+        {
+          "slug": "tiga-mbite",
+          "label": "Tiga mbite",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/tiga-mbite.opus"
+        },
+        {
+          "slug": "nguo-injeru",
+          "label": "Nguo injeru",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/nguo-injeru.opus"
+        },
+        {
+          "slug": "tega-tai-iji",
+          "label": "Tega tai iji",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/tega-tai-iji.opus"
+        },
+        {
+          "slug": "tumutetherie",
+          "label": "Tumutetherie",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/tumutetherie.opus"
+        },
+        {
+          "slug": "twi-na-thina",
+          "label": "Twi na thina",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/twi-na-thina.opus"
+        },
+        {
+          "slug": "ati-na-maitia",
+          "label": "Ati na maitia",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/ati-na-maitia.opus"
+        },
+        {
+          "slug": "utue-tucokothete",
+          "label": "Utue tucokothete",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/utue-tucokothete.opus"
+        },
+        {
+          "slug": "imbiji-itinda-riu",
+          "label": "Imbiji itinda riu",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/imbiji-itinda-riu.opus"
+        },
+        {
+          "slug": "inaa-waitire-bubu",
+          "label": "Inaa waitire bubu",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/inaa-waitire-bubu.opus"
+        },
+        {
+          "slug": "nuu-ari-murangone",
+          "label": "Nuu ari murangone",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/nuu-ari-murangone.opus"
+        },
+        {
+          "slug": "atiiji-yumaga-atia",
+          "label": "Atiiji yumaga atia",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/atiiji-yumaga-atia.opus"
+        },
+        {
+          "slug": "biatho-gutejanirua",
+          "label": "Biatho gutejanirua",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/biatho-gutejanirua.opus"
+        },
+        {
+          "slug": "ena-murutiira-mono",
+          "label": "Ena murutiira mono",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/ena-murutiira-mono.opus"
+        },
+        {
+          "slug": "kagita-gaka-konthe",
+          "label": "Kagita gaka konthe",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/kagita-gaka-konthe.opus"
+        },
+        {
+          "slug": "muntu-witagwa-mike",
+          "label": "Muntu witagwa mike",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/muntu-witagwa-mike.opus"
+        },
+        {
+          "slug": "nagwe-kevin-wetere",
+          "label": "Nagwe kevin wetere",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/nagwe-kevin-wetere.opus"
+        },
+        {
+          "slug": "ndi-murimi-umunini",
+          "label": "Ndi murimi umunini",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/ndi-murimi-umunini.opus"
+        },
+        {
+          "slug": "ndugu-ciaku-niriku",
+          "label": "Ndugu ciaku niriku",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/ndugu-ciaku-niriku.opus"
+        },
+        {
+          "slug": "nyomba-e-thirikari",
+          "label": "Nyomba e thirikari",
+          "audioUrl": "https://audio.kenyahub.me/audio/meru/nyomba-e-thirikari.opus"
+        }
+      ],
       "cldr": {
         "locale": "mer",
         "months": [
@@ -1727,6 +2626,7 @@
           "Wetano",
           "Jumamosi"
         ],
+        "currencyName": "Shilingi ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -1756,10 +2656,109 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 195,
       "sampleReadings": [],
-      "topFrequencyWords": [],
+      "topFrequencyWords": [
+        {
+          "word": "jacinthe",
+          "count": 15492
+        },
+        {
+          "word": "na",
+          "count": 8608
+        },
+        {
+          "word": "ya",
+          "count": 6978
+        },
+        {
+          "word": "mpy",
+          "count": 6663
+        },
+        {
+          "word": "wa",
+          "count": 5684
+        },
+        {
+          "word": "areejaljazeera",
+          "count": 2806
+        },
+        {
+          "word": "jesusinthecity",
+          "count": 2803
+        },
+        {
+          "word": "cynthia",
+          "count": 2326
+        },
+        {
+          "word": "ni",
+          "count": 2229
+        },
+        {
+          "word": "cia",
+          "count": 2205
+        },
+        {
+          "word": "kia",
+          "count": 1872
+        },
+        {
+          "word": "bwa",
+          "count": 1819
+        },
+        {
+          "word": "ba",
+          "count": 1788
+        },
+        {
+          "word": "com",
+          "count": 1719
+        },
+        {
+          "word": "best",
+          "count": 1567
+        },
+        {
+          "word": "bedroom",
+          "count": 1514
+        },
+        {
+          "word": "jwa",
+          "count": 1429
+        },
+        {
+          "word": "kiri",
+          "count": 1350
+        },
+        {
+          "word": "uri",
+          "count": 1165
+        },
+        {
+          "word": "uria",
+          "count": 1123
+        },
+        {
+          "word": "language",
+          "count": 1103
+        },
+        {
+          "word": "thirikari",
+          "count": 1081
+        },
+        {
+          "word": "iu",
+          "count": 1028
+        },
+        {
+          "word": "idea",
+          "count": 1001
+        }
+      ],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [
         "b",
         "d",
@@ -1791,11 +2790,142 @@
       ],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 250,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "somali": {
       "languageId": "somali",
       "r2AudioClips": 685,
+      "nativeAudioSamples": [
+        {
+          "slug": "bad",
+          "label": "Bad",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/bad.opus"
+        },
+        {
+          "slug": "fin",
+          "label": "Fin",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/fin.opus"
+        },
+        {
+          "slug": "hel",
+          "label": "Hel",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/hel.opus"
+        },
+        {
+          "slug": "lix",
+          "label": "Lix",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/lix.opus"
+        },
+        {
+          "slug": "bare",
+          "label": "Bare",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/bare.opus"
+        },
+        {
+          "slug": "dhis",
+          "label": "Dhis",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/dhis.opus"
+        },
+        {
+          "slug": "dhul",
+          "label": "Dhul",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/dhul.opus"
+        },
+        {
+          "slug": "eber",
+          "label": "Eber",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/eber.opus"
+        },
+        {
+          "slug": "ilko",
+          "label": "Ilko",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/ilko.opus"
+        },
+        {
+          "slug": "ilmo",
+          "label": "Ilmo",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/ilmo.opus"
+        },
+        {
+          "slug": "keen",
+          "label": "Keen",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/keen.opus"
+        },
+        {
+          "slug": "qare",
+          "label": "Qare",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/qare.opus"
+        },
+        {
+          "slug": "reer",
+          "label": "Reer",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/reer.opus"
+        },
+        {
+          "slug": "roob",
+          "label": "Roob",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/roob.opus"
+        },
+        {
+          "slug": "suul",
+          "label": "Suul",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/suul.opus"
+        },
+        {
+          "slug": "webi",
+          "label": "Webi",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/webi.opus"
+        },
+        {
+          "slug": "yiri",
+          "label": "Yiri",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/yiri.opus"
+        },
+        {
+          "slug": "aadan",
+          "label": "Aadan",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/aadan.opus"
+        },
+        {
+          "slug": "afkee",
+          "label": "Afkee",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/afkee.opus"
+        },
+        {
+          "slug": "bisad",
+          "label": "Bisad",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/bisad.opus"
+        },
+        {
+          "slug": "caaro",
+          "label": "Caaro",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/caaro.opus"
+        },
+        {
+          "slug": "daaco",
+          "label": "Daaco",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/daaco.opus"
+        },
+        {
+          "slug": "gabar",
+          "label": "Gabar",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/gabar.opus"
+        },
+        {
+          "slug": "hodan",
+          "label": "Hodan",
+          "audioUrl": "https://audio.kenyahub.me/audio/somali/hodan.opus"
+        }
+      ],
       "cldr": {
         "locale": "so-KE",
         "months": [
@@ -1821,6 +2951,7 @@
           "Jimco",
           "Sabti"
         ],
+        "currencyName": "Shilingka Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -1852,6 +2983,7 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 113,
       "sampleReadings": [
         {
           "text": "Burj Khalifa waa dhismaha hadda adduunka ugu dheer.",
@@ -2014,6 +3146,7 @@
       ],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [
         "b",
         "bː",
@@ -2055,15 +3188,29 @@
       "morphologySamples": [],
       "benchmarks": [
         {
+          "id": "cohere-aya-ke",
+          "rows": 396
+        },
+        {
           "id": "facebook-belebele-som",
           "rows": 900
         }
       ],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 685,
+        "storiesCount": 0,
+        "sentencesCount": 150,
+        "articlesCount": 0,
+        "quizCount": 80,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "maasai": {
       "languageId": "maasai",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "mas",
         "months": [
@@ -2089,6 +3236,7 @@
           "Jumáa",
           "Jumamósi"
         ],
+        "currencyName": "Iropiyianí e Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -2117,6 +3265,7 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 85,
       "sampleReadings": [],
       "topFrequencyWords": [
         {
@@ -2218,6 +3367,7 @@
       ],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [
         "j",
         "jː",
@@ -2258,11 +3408,21 @@
       ],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "turkana": {
       "languageId": "turkana",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": null,
       "typology": {
         "iso639_3": "tuv",
@@ -2286,6 +3446,7 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 104,
       "sampleReadings": [],
       "topFrequencyWords": [
         {
@@ -2337,23 +3498,23 @@
           "count": 23
         },
         {
-          "word": "kotere",
-          "count": 21
-        },
-        {
           "word": "iyong",
           "count": 21
         },
         {
-          "word": "apoo",
-          "count": 20
+          "word": "kotere",
+          "count": 21
         },
         {
           "word": "akimuj",
           "count": 20
         },
         {
-          "word": "tani",
+          "word": "apoo",
+          "count": 20
+        },
+        {
+          "word": "akimat",
           "count": 19
         },
         {
@@ -2361,7 +3522,7 @@
           "count": 19
         },
         {
-          "word": "akimat",
+          "word": "tani",
           "count": 19
         },
         {
@@ -2373,28 +3534,39 @@
           "count": 18
         },
         {
+          "word": "ayong",
+          "count": 17
+        },
+        {
           "word": "daang",
           "count": 17
         },
         {
-          "word": "the",
-          "count": 17
-        },
-        {
-          "word": "ayong",
+          "word": "kechi",
           "count": 17
         }
       ],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 500,
+        "hasGrammarShard": false
+      }
     },
     "mijikenda": {
       "languageId": "mijikenda",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": null,
       "typology": {
         "iso639_3": "nyf",
@@ -2420,10 +3592,12 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 195,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [
         "b",
         "d",
@@ -2464,11 +3638,142 @@
       ],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     },
     "teso": {
       "languageId": "teso",
       "r2AudioClips": 662,
+      "nativeAudioSamples": [
+        {
+          "slug": "eraas-nu-eumokina",
+          "label": "Eraas nu eumokina",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/eraas-nu-eumokina.opus"
+        },
+        {
+          "slug": "ipedori-ijo-ailajar",
+          "label": "Ipedori ijo ailajar",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/ipedori-ijo-ailajar.opus"
+        },
+        {
+          "slug": "mam-atubon-edolunit",
+          "label": "Mam atubon edolunit",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/mam-atubon-edolunit.opus"
+        },
+        {
+          "slug": "ekot-ijo-aseun-ilolo",
+          "label": "Ekot ijo aseun ilolo",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/ekot-ijo-aseun-ilolo.opus"
+        },
+        {
+          "slug": "eurok-agasia-kebosata",
+          "label": "Eurok agasia kebosata",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/eurok-agasia-kebosata.opus"
+        },
+        {
+          "slug": "inerit-iso-noi-kosimu",
+          "label": "Inerit iso noi kosimu",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/inerit-iso-noi-kosimu.opus"
+        },
+        {
+          "slug": "ingalauni-agasia-icuc",
+          "label": "Ingalauni agasia icuc",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/ingalauni-agasia-icuc.opus"
+        },
+        {
+          "slug": "iyata-akoko-ko-kampala",
+          "label": "Iyata akoko ko kampala",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/iyata-akoko-ko-kampala.opus"
+        },
+        {
+          "slug": "abeit-nes-ilacakini-ijo",
+          "label": "Abeit nes ilacakini ijo",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/abeit-nes-ilacakini-ijo.opus"
+        },
+        {
+          "slug": "inyobo-apolouke-asiepai",
+          "label": "Inyobo apolouke asiepai",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/inyobo-apolouke-asiepai.opus"
+        },
+        {
+          "slug": "kuju-ke-anyama-ekutelek",
+          "label": "Kuju ke anyama ekutelek",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/kuju-ke-anyama-ekutelek.opus"
+        },
+        {
+          "slug": "ija-oni-apakio-nu-epagal",
+          "label": "Ija oni apakio nu epagal",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/ija-oni-apakio-nu-epagal.opus"
+        },
+        {
+          "slug": "itakadikinete-ido-epipil",
+          "label": "Itakadikinete ido epipil",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/itakadikinete-ido-epipil.opus"
+        },
+        {
+          "slug": "ecie-emaido-anyamasi-ikok",
+          "label": "Ecie emaido anyamasi ikok",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/ecie-emaido-anyamasi-ikok.opus"
+        },
+        {
+          "slug": "iyata-akoko-na-isolosinei",
+          "label": "Iyata akoko na isolosinei",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/iyata-akoko-na-isolosinei.opus"
+        },
+        {
+          "slug": "asuroki-ekutelek-ekirididi",
+          "label": "Asuroki ekutelek ekirididi",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/asuroki-ekutelek-ekirididi.opus"
+        },
+        {
+          "slug": "aswamusinei-ikeuni-eiriago",
+          "label": "Aswamusinei ikeuni eiriago",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/aswamusinei-ikeuni-eiriago.opus"
+        },
+        {
+          "slug": "ekot-auriak-aidar-idwe-kec",
+          "label": "Ekot auriak aidar idwe kec",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/ekot-auriak-aidar-idwe-kec.opus"
+        },
+        {
+          "slug": "acie-akwi-nu-edekasi-aokoto",
+          "label": "Acie akwi nu edekasi aokoto",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/acie-akwi-nu-edekasi-aokoto.opus"
+        },
+        {
+          "slug": "ejular-epulida-adieket-acie",
+          "label": "Ejular epulida adieket acie",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/ejular-epulida-adieket-acie.opus"
+        },
+        {
+          "slug": "epatana-kanginiberu-apotuun",
+          "label": "Epatana kanginiberu apotuun",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/epatana-kanginiberu-apotuun.opus"
+        },
+        {
+          "slug": "icie-itunga-mam-itisilanaro",
+          "label": "Icie itunga mam itisilanaro",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/icie-itunga-mam-itisilanaro.opus"
+        },
+        {
+          "slug": "kangin-ibore-itelemio-esolo",
+          "label": "Kangin ibore itelemio esolo",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/kangin-ibore-itelemio-esolo.opus"
+        },
+        {
+          "slug": "aimorikikina-eyangauni-apolo",
+          "label": "Aimorikikina eyangauni apolo",
+          "audioUrl": "https://audio.kenyahub.me/audio/teso/aimorikikina-eyangauni-apolo.opus"
+        }
+      ],
       "cldr": {
         "locale": "teo",
         "months": [
@@ -2494,6 +3799,7 @@
           "Nakakany",
           "Nakasabiti"
         ],
+        "currencyName": "Ango’otol lok’ Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -2521,7 +3827,19 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
-      "sampleReadings": [],
+      "grambankFeatures": 0,
+      "sampleReadings": [
+        {
+          "text": "Edoloto kesi osokoni,obu ederepa olimok kesi aitac isirigin lu erot.Obu aite otac luke. Obu ekingok da otac konye,apol anooti ke. Nepe elosi ederepa ayinakin ekingok eke.",
+          "source": "Goat, Dog and Cow",
+          "license": "cc-by"
+        },
+        {
+          "text": "Edoloto kesi osokoni,obu ederepa olimok kesi aitac isirigin lu erot.Obu aite otac luke. Obu ekingok da otac konye,apol anooti ke. Nepe elosi ederepa ayinakin ekingok eke.",
+          "source": "Корова  Пёс и Коза",
+          "license": "cc-by"
+        }
+      ],
       "topFrequencyWords": [
         {
           "word": "ebe",
@@ -2622,14 +3940,25 @@
       ],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 662,
+        "storiesCount": 2,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "embu": {
       "languageId": "embu",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "ebu",
         "months": [
@@ -2655,6 +3984,7 @@
           "Njumaa",
           "NJumamothii"
         ],
+        "currencyName": "Shilingi ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -2681,18 +4011,30 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 0,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     },
     "taita": {
       "languageId": "taita",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "dav",
         "months": [
@@ -2718,6 +4060,7 @@
           "Kuramuka kasanu",
           "Kifula nguwo"
         ],
+        "currencyName": "Shilingi ya Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -2747,18 +4090,30 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 0,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     },
     "taveta": {
       "languageId": "taveta",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": null,
       "typology": {
         "iso639_3": "tvs",
@@ -2784,18 +4139,30 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 0,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": false
+      }
     },
     "pokomo": {
       "languageId": "pokomo",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": null,
       "typology": {
         "iso639_3": "pkb",
@@ -2822,18 +4189,151 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 0,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": false
+      }
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 389,
+      "r2AudioClips": 392,
+      "nativeAudioSamples": [
+        {
+          "slug": "gaala",
+          "label": "Gaala",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/gaala.opus"
+        },
+        {
+          "slug": "hubadhu",
+          "label": "Hubadhu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/hubadhu.opus"
+        },
+        {
+          "slug": "lalisee",
+          "label": "Lalisee",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/lalisee.opus"
+        },
+        {
+          "slug": "m-mixxii",
+          "label": "M mixxii",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/m-mixxii.opus"
+        },
+        {
+          "slug": "ch-letter",
+          "label": "Ch letter",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/ch-letter.opus"
+        },
+        {
+          "slug": "dh-letter",
+          "label": "Dh letter",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/dh-letter.opus"
+        },
+        {
+          "slug": "kanariyaan",
+          "label": "Kanariyaan",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/kanariyaan.opus"
+        },
+        {
+          "slug": "kun-fedhiin",
+          "label": "Kun fedhiin",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/kun-fedhiin.opus"
+        },
+        {
+          "slug": "iddoo-kanarratti-kan-argamummoo",
+          "label": "Iddoo kanarratti kan argamummoo",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/iddoo-kanarratti-kan-argamummoo.opus"
+        },
+        {
+          "slug": "turkii-awurooppaa-3-biyyattii-qabaata",
+          "label": "Turkii awurooppaa 3 biyyattii qabaata",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/turkii-awurooppaa-3-biyyattii-qabaata.opus"
+        },
+        {
+          "slug": "suuraa-armaan-olitti-argamu-irraa-waanti-mul-atu",
+          "label": "Suuraa armaan olitti argamu irraa waanti mul atu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/suuraa-armaan-olitti-argamu-irraa-waanti-mul-atu.opus"
+        },
+        {
+          "slug": "nuti-hundi-salphaamatti-naasuu-keessa-turre-jette-haati",
+          "label": "Nuti hundi salphaamatti naasuu keessa turre jette haati",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/nuti-hundi-salphaamatti-naasuu-keessa-turre-jette-haati.opus"
+        },
+        {
+          "slug": "namni-tokko-illee-mana-waliin-jireenyaa-keessa-hin-turre",
+          "label": "Namni tokko illee mana waliin jireenyaa keessa hin turre",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/namni-tokko-illee-mana-waliin-jireenyaa-keessa-hin-turre.opus"
+        },
+        {
+          "slug": "liigiins-daandii-abbaasaa-hordofuun-hojii-fayyaa-keessa-gale",
+          "label": "Liigiins daandii abbaasaa hordofuun hojii fayyaa keessa gale",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/liigiins-daandii-abbaasaa-hordofuun-hojii-fayyaa-keessa-gale.opus"
+        },
+        {
+          "slug": "afuuffeen-waantota-dhala-namaatiif-gammachuu-laatan-keessaa-isa-",
+          "label": "Afuuffeen waantota dhala namaatiif gammachuu laatan keessaa isa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/afuuffeen-waantota-dhala-namaatiif-gammachuu-laatan-keessaa-isa-.opus"
+        },
+        {
+          "slug": "atileetonni-itoophiyaa-yeroo-biyya-bakka-bu-anii-biyyaaf-fiigan-",
+          "label": "Atileetonni itoophiyaa yeroo biyya bakka bu anii biyyaaf fiigan",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/atileetonni-itoophiyaa-yeroo-biyya-bakka-bu-anii-biyyaaf-fiigan-.opus"
+        },
+        {
+          "slug": "baandiin-muuziqaa-rookii-hanga-fulbaana-16tti-yunaayitid-steets-",
+          "label": "Baandiin muuziqaa rookii hanga fulbaana 16tti yunaayitid steets",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/baandiin-muuziqaa-rookii-hanga-fulbaana-16tti-yunaayitid-steets-.opus"
+        },
+        {
+          "slug": "bakka-kanatti-kan-argamu-dhagaadha-dhagaan-kunis-bakka-tokkotti-",
+          "label": "Bakka kanatti kan argamu dhagaadha dhagaan kunis bakka tokkotti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/bakka-kanatti-kan-argamu-dhagaadha-dhagaan-kunis-bakka-tokkotti-.opus"
+        },
+        {
+          "slug": "bineensonni-seeloota-baay-ee-irraa-umaman-wantoota-nyaatanii-of-",
+          "label": "Bineensonni seeloota baay ee irraa umaman wantoota nyaatanii of",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/bineensonni-seeloota-baay-ee-irraa-umaman-wantoota-nyaatanii-of-.opus"
+        },
+        {
+          "slug": "bishaan-keessa-lubbu-qabeeyyii-adda-addaatu-jiraata-fakkeenyaaf-",
+          "label": "Bishaan keessa lubbu qabeeyyii adda addaatu jiraata fakkeenyaaf",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/bishaan-keessa-lubbu-qabeeyyii-adda-addaatu-jiraata-fakkeenyaaf-.opus"
+        },
+        {
+          "slug": "biyyoonni-addunyaa-baayyeen-afaan-ingiliiziii-sirriitti-dubbatu-",
+          "label": "Biyyoonni addunyaa baayyeen afaan ingiliiziii sirriitti dubbatu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/biyyoonni-addunyaa-baayyeen-afaan-ingiliiziii-sirriitti-dubbatu-.opus"
+        },
+        {
+          "slug": "cireen-nyaata-naannichi-waqtiidhaanii-naannichaa-yookaan-nyaata-",
+          "label": "Cireen nyaata naannichi waqtiidhaanii naannichaa yookaan nyaata",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/cireen-nyaata-naannichi-waqtiidhaanii-naannichaa-yookaan-nyaata-.opus"
+        },
+        {
+          "slug": "daandiiwwan-konkolaataa-irratti-yeroo-baay-ee-mukkeen-ni-argamu-",
+          "label": "Daandiiwwan konkolaataa irratti yeroo baay ee mukkeen ni argamu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/daandiiwwan-konkolaataa-irratti-yeroo-baay-ee-mukkeen-ni-argamu-.opus"
+        },
+        {
+          "slug": "daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-",
+          "label": "Daldalaan nama hojii daldalummaa yookiis bittaa fi gurgurtummaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-.opus"
+        }
+      ],
       "cldr": {
         "locale": "om-KE",
         "months": [
@@ -2859,6 +4359,7 @@
           "Jimaata",
           "Sanbata"
         ],
+        "currencyName": "Ksh",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -2888,65 +4389,66 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 80,
       "sampleReadings": [
         {
           "text": "Yeroo talaalliin yaalii tokko dhufee du’a Eboladhan dhufu hir’isu, amma yoonatti, qoriichii dhukkuba kan yaaluuf mijataa ta’uun agarsiifame hin jiru. Cuunfaan farra-qaamaa.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Wixata, saayintistootni yuunivasitii Stanfordii kan kutaa barnoota fayyaa meeshaa haaraa yaaliif ta’uu kan seelii gosa gosaan adda addaa baasu beeksisan: waan xiqqaa.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Saayintiistootni teessumaa lafa kan ji’aatti naannoftuu kan maqaanshee loobeet iskaarpis jedhamu argatan kan sababa ji’i suuta suutaan caccabduuf kan suuta uumamee dha.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Adekooyaan erga sanaa Mana Murtii Waliigalaa Eedinbargi keessa jirti ilma isii ajjeesuudhaan himatamtee. To’annaa jala teessee murtiifi qorannaa eeggachaa jirti, garuu.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Cabbii isa nama cabsu irratti dabalee, haaloonni qilleensaa hamoon tattaaffiiwwan lubbuu baraaruu danqanii jiru. Hanga torban dhufu keessaa yeroo tokkootti haalonni waan.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "\"Roobertis waa’ee yeroo itti jireenya jalqabee yeroo gafaatamee dubbachuu dide, gaaffii murteessaa yeroo waa’ee ulfa ofiirra baasuuf seera yeroo gaafatamee, akkas jechuudhan.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Sa’aatii 8:46 a.m. irratti cal’isuun magaalaa, yeroo murteessaa jeetiin galma isaa itti rukuteedha. Xiyyaan ifaa lama halkan tokkoon gara iddoo samii kessatti diriiraniiru.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "\"Seensi holqichaa hundi, “obbooleettiiwan torban” kan jedhaman, xiqqeenyaan diyaametiridhaan meetiira 100 hanga 250 (taakkuu 328-820). Suuraan infiraareedii akka agarsiisutti.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Namtichi meeshaa dhoohu hidhatee jedhame himamu konkolaataa miila sadi’iinilalama gara tuutaatti konkolaachise. Namichii boombicha dhoosuun shakkame, ergaa midhaan sababa.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Afriikaan Kibbaa dorgommii raagbii Tiraay Neeshinsi istaadiyeemii Rooyaal Baafokeengi isa Rastenbergi, Afriikaa Kibbaa keessaatti Ool Bilaaksi (Niiwu Ziilaandi) mo’ataniiru.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Hamma dhuma deemsa hawaatti buufatichi jiirooskooppii dursa ergama buufataa hawaa irratti dhabu iyyuu bakka isaa tursiiseera. Chi’aawoo fi Shariipov furgugistoota sirreessa.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         },
         {
           "text": "Dhimmichi, bakka itti argama kaampaanii himaticha banee, dhiyeessaa tajaajila intarneetii beekamaa AOL waan ta’eef Verjiiniyaatti mana murtiitti dhiyaate. Kuni murtoo.",
-          "source": "FLORES / Belebele (CC-BY-SA-4.0)",
+          "source": "Reading Passage",
           "license": "CC-BY-SA-4.0"
         }
       ],
@@ -3050,6 +4552,7 @@
       ],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [
         "b",
         "c",
@@ -3111,11 +4614,21 @@
           "rows": 1050
         }
       ],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 392,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 130,
+        "freqCount": 500,
+        "hasGrammarShard": true
+      }
     },
     "rendille": {
       "languageId": "rendille",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": null,
       "typology": {
         "iso639_3": "rel",
@@ -3141,6 +4654,7 @@
         "phoibleSegments": 33,
         "unimorphEntries": null
       },
+      "grambankFeatures": 47,
       "sampleReadings": [
         {
           "text": "Nebey barite.",
@@ -3156,6 +4670,7 @@
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [
         "b",
         "d̠ʒ",
@@ -3193,11 +4708,21 @@
       ],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 2,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     },
     "samburu": {
       "languageId": "samburu",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "saq",
         "months": [
@@ -3223,6 +4748,7 @@
           "Mderot ee sapa",
           "Mderot ee kwe"
         ],
+        "currencyName": "Njilingi eel Kenya",
         "license": "Unicode-3.0"
       },
       "typology": {
@@ -3248,18 +4774,30 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 0,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     },
     "ilchamus": {
       "languageId": "ilchamus",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": null,
       "typology": {
         "iso639_3": "saq",
@@ -3281,18 +4819,30 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 0,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": false
+      }
     },
     "pokot": {
       "languageId": "pokot",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": null,
       "typology": {
         "iso639_3": "pko",
@@ -3314,6 +4864,7 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 174,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [
@@ -3327,44 +4878,35 @@
         {
           "title": "Apaa",
           "url": "https://incubator.wikimedia.org/wiki/Wp/pko/Apaa",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Chepareria",
           "url": "https://incubator.wikimedia.org/wiki/Wp/pko/Chepareria",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Kaa",
           "url": "https://incubator.wikimedia.org/wiki/Wp/pko/Kaa",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Kapenguria",
           "url": "https://incubator.wikimedia.org/wiki/Wp/pko/Kapenguria",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Kapsait",
           "url": "https://incubator.wikimedia.org/wiki/Wp/pko/Kapsait",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         },
         {
           "title": "Kasangiy",
           "url": "https://incubator.wikimedia.org/wiki/Wp/pko/Kasangiy",
-          "source": "Wikimedia Incubator"
-        },
-        {
-          "title": "Morpus",
-          "url": "https://incubator.wikimedia.org/wiki/Wp/pko/Morpus",
-          "source": "Wikimedia Incubator"
-        },
-        {
-          "title": "Nasokol",
-          "url": "https://incubator.wikimedia.org/wiki/Wp/pko/Nasokol",
-          "source": "Wikimedia Incubator"
+          "source": "Community Encyclopedia"
         }
       ],
+      "wikidataLexemes": [],
       "phonemes": [
         "b",
         "d",
@@ -3405,11 +4947,21 @@
       ],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 12,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     },
     "daasanach": {
       "languageId": "daasanach",
       "r2AudioClips": 0,
+      "nativeAudioSamples": [],
       "cldr": null,
       "typology": {
         "iso639_3": "dsh",
@@ -3434,18 +4986,30 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
+      "grambankFeatures": 195,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 0,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": false
+      }
     },
     "english-ke": {
       "languageId": "english-ke",
       "r2AudioClips": 1,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "en-KE",
         "months": [
@@ -3471,17 +5035,29 @@
           "Friday",
           "Saturday"
         ],
+        "currencyName": "Kenyan Shilling",
         "license": "Unicode-3.0"
       },
       "typology": null,
+      "grambankFeatures": 0,
       "sampleReadings": [],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
+      "wikidataLexemes": [],
       "phonemes": [],
       "morphologySamples": [],
       "benchmarks": [],
-      "audioChapters": []
+      "audioChapters": [],
+      "shards": {
+        "audioCount": 1,
+        "storiesCount": 0,
+        "sentencesCount": 0,
+        "articlesCount": 0,
+        "quizCount": 0,
+        "freqCount": 0,
+        "hasGrammarShard": true
+      }
     }
   },
   "stagedVarieties": [
@@ -5627,7 +7203,8 @@
           "context": "Amery (1905) Sudan Arabic (Kinubi lexical parent) · Amery (1905), p. 440, Specimens · Colloquial narrative · https://arc",
           "category": "phrases"
         }
-      ]
+      ],
+      "grammarFeatureCount": 448
     },
     {
       "id": "yaaku",
@@ -7482,486 +9059,6 @@
     ],
     "videos": [
       {
-        "id": "sign-bible-xki-ksl-passage-0",
-        "title": "KSL Passage #1 (Human KSL)",
-        "gloss": "KSL Passage #1",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-0.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-1",
-        "title": "KSL Passage #2 (Human KSL)",
-        "gloss": "KSL Passage #2",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-1.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-2",
-        "title": "KSL Passage #3 (Human KSL)",
-        "gloss": "KSL Passage #3",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-2.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-3",
-        "title": "KSL Passage #4 (Human KSL)",
-        "gloss": "KSL Passage #4",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-3.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-4",
-        "title": "KSL Passage #5 (Human KSL)",
-        "gloss": "KSL Passage #5",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-4.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-5",
-        "title": "KSL Passage #6 (Human KSL)",
-        "gloss": "KSL Passage #6",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-5.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-6",
-        "title": "KSL Passage #7 (Human KSL)",
-        "gloss": "KSL Passage #7",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-6.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-7",
-        "title": "KSL Passage #8 (Human KSL)",
-        "gloss": "KSL Passage #8",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-7.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-8",
-        "title": "KSL Passage #9 (Human KSL)",
-        "gloss": "KSL Passage #9",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-8.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-9",
-        "title": "KSL Passage #10 (Human KSL)",
-        "gloss": "KSL Passage #10",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-9.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-10",
-        "title": "KSL Passage #11 (Human KSL)",
-        "gloss": "KSL Passage #11",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-10.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-11",
-        "title": "KSL Passage #12 (Human KSL)",
-        "gloss": "KSL Passage #12",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-11.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-12",
-        "title": "KSL Passage #13 (Human KSL)",
-        "gloss": "KSL Passage #13",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-12.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-13",
-        "title": "KSL Passage #14 (Human KSL)",
-        "gloss": "KSL Passage #14",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-13.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-14",
-        "title": "KSL Passage #15 (Human KSL)",
-        "gloss": "KSL Passage #15",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-14.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-15",
-        "title": "KSL Passage #16 (Human KSL)",
-        "gloss": "KSL Passage #16",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-15.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-16",
-        "title": "KSL Passage #17 (Human KSL)",
-        "gloss": "KSL Passage #17",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-16.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-17",
-        "title": "KSL Passage #18 (Human KSL)",
-        "gloss": "KSL Passage #18",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-17.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-18",
-        "title": "KSL Passage #19 (Human KSL)",
-        "gloss": "KSL Passage #19",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-18.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-19",
-        "title": "KSL Passage #20 (Human KSL)",
-        "gloss": "KSL Passage #20",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-19.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-20",
-        "title": "KSL Passage #21 (Human KSL)",
-        "gloss": "KSL Passage #21",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-20.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-21",
-        "title": "KSL Passage #22 (Human KSL)",
-        "gloss": "KSL Passage #22",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-21.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-22",
-        "title": "KSL Passage #23 (Human KSL)",
-        "gloss": "KSL Passage #23",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-22.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-23",
-        "title": "KSL Passage #24 (Human KSL)",
-        "gloss": "KSL Passage #24",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-23.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-24",
-        "title": "KSL Passage #25 (Human KSL)",
-        "gloss": "KSL Passage #25",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-24.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-25",
-        "title": "KSL Passage #26 (Human KSL)",
-        "gloss": "KSL Passage #26",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-25.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-26",
-        "title": "KSL Passage #27 (Human KSL)",
-        "gloss": "KSL Passage #27",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-26.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-27",
-        "title": "KSL Passage #28 (Human KSL)",
-        "gloss": "KSL Passage #28",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-27.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-28",
-        "title": "KSL Passage #29 (Human KSL)",
-        "gloss": "KSL Passage #29",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-28.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-29",
-        "title": "KSL Passage #30 (Human KSL)",
-        "gloss": "KSL Passage #30",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-29.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-30",
-        "title": "KSL Passage #31 (Human KSL)",
-        "gloss": "KSL Passage #31",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-30.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-31",
-        "title": "KSL Passage #32 (Human KSL)",
-        "gloss": "KSL Passage #32",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-31.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-32",
-        "title": "KSL Passage #33 (Human KSL)",
-        "gloss": "KSL Passage #33",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-32.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-33",
-        "title": "KSL Passage #34 (Human KSL)",
-        "gloss": "KSL Passage #34",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-33.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-34",
-        "title": "KSL Passage #35 (Human KSL)",
-        "gloss": "KSL Passage #35",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-34.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-35",
-        "title": "KSL Passage #36 (Human KSL)",
-        "gloss": "KSL Passage #36",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-35.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-36",
-        "title": "KSL Passage #37 (Human KSL)",
-        "gloss": "KSL Passage #37",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-36.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-37",
-        "title": "KSL Passage #38 (Human KSL)",
-        "gloss": "KSL Passage #38",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-37.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-38",
-        "title": "KSL Passage #39 (Human KSL)",
-        "gloss": "KSL Passage #39",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-38.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-39",
-        "title": "KSL Passage #40 (Human KSL)",
-        "gloss": "KSL Passage #40",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-39.mp4",
-        "category": "human-sign-bible",
-        "register": "religious_liturgical",
-        "transcript": "",
-        "license": "CC-BY-SA-4.0",
-        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
-        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
-      },
-      {
         "id": "maseno-adult",
         "title": "Adult",
         "gloss": "Adult",
@@ -8550,9 +9647,496 @@
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-0",
+        "title": "KSL Passage #1 (Human KSL)",
+        "gloss": "KSL Passage #1",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-0.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-1",
+        "title": "KSL Passage #2 (Human KSL)",
+        "gloss": "KSL Passage #2",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-1.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-2",
+        "title": "KSL Passage #3 (Human KSL)",
+        "gloss": "KSL Passage #3",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-2.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-3",
+        "title": "KSL Passage #4 (Human KSL)",
+        "gloss": "KSL Passage #4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-3.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-4",
+        "title": "KSL Passage #5 (Human KSL)",
+        "gloss": "KSL Passage #5",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-4.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-5",
+        "title": "KSL Passage #6 (Human KSL)",
+        "gloss": "KSL Passage #6",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-5.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-6",
+        "title": "KSL Passage #7 (Human KSL)",
+        "gloss": "KSL Passage #7",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-6.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-7",
+        "title": "KSL Passage #8 (Human KSL)",
+        "gloss": "KSL Passage #8",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-7.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-8",
+        "title": "KSL Passage #9 (Human KSL)",
+        "gloss": "KSL Passage #9",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-8.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-9",
+        "title": "KSL Passage #10 (Human KSL)",
+        "gloss": "KSL Passage #10",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-9.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-10",
+        "title": "KSL Passage #11 (Human KSL)",
+        "gloss": "KSL Passage #11",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-10.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-11",
+        "title": "KSL Passage #12 (Human KSL)",
+        "gloss": "KSL Passage #12",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-11.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-12",
+        "title": "KSL Passage #13 (Human KSL)",
+        "gloss": "KSL Passage #13",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-12.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-13",
+        "title": "KSL Passage #14 (Human KSL)",
+        "gloss": "KSL Passage #14",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-13.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-14",
+        "title": "KSL Passage #15 (Human KSL)",
+        "gloss": "KSL Passage #15",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-14.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-15",
+        "title": "KSL Passage #16 (Human KSL)",
+        "gloss": "KSL Passage #16",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-15.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-16",
+        "title": "KSL Passage #17 (Human KSL)",
+        "gloss": "KSL Passage #17",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-16.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-17",
+        "title": "KSL Passage #18 (Human KSL)",
+        "gloss": "KSL Passage #18",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-17.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-18",
+        "title": "KSL Passage #19 (Human KSL)",
+        "gloss": "KSL Passage #19",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-18.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-19",
+        "title": "KSL Passage #20 (Human KSL)",
+        "gloss": "KSL Passage #20",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-19.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-20",
+        "title": "KSL Passage #21 (Human KSL)",
+        "gloss": "KSL Passage #21",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-20.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-21",
+        "title": "KSL Passage #22 (Human KSL)",
+        "gloss": "KSL Passage #22",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-21.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-22",
+        "title": "KSL Passage #23 (Human KSL)",
+        "gloss": "KSL Passage #23",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-22.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-23",
+        "title": "KSL Passage #24 (Human KSL)",
+        "gloss": "KSL Passage #24",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-23.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-24",
+        "title": "KSL Passage #25 (Human KSL)",
+        "gloss": "KSL Passage #25",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-24.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-25",
+        "title": "KSL Passage #26 (Human KSL)",
+        "gloss": "KSL Passage #26",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-25.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-26",
+        "title": "KSL Passage #27 (Human KSL)",
+        "gloss": "KSL Passage #27",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-26.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-27",
+        "title": "KSL Passage #28 (Human KSL)",
+        "gloss": "KSL Passage #28",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-27.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-28",
+        "title": "KSL Passage #29 (Human KSL)",
+        "gloss": "KSL Passage #29",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-28.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-29",
+        "title": "KSL Passage #30 (Human KSL)",
+        "gloss": "KSL Passage #30",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-29.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-30",
+        "title": "KSL Passage #31 (Human KSL)",
+        "gloss": "KSL Passage #31",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-30.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-31",
+        "title": "KSL Passage #32 (Human KSL)",
+        "gloss": "KSL Passage #32",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-31.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-32",
+        "title": "KSL Passage #33 (Human KSL)",
+        "gloss": "KSL Passage #33",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-32.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-33",
+        "title": "KSL Passage #34 (Human KSL)",
+        "gloss": "KSL Passage #34",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-33.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-34",
+        "title": "KSL Passage #35 (Human KSL)",
+        "gloss": "KSL Passage #35",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-34.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-35",
+        "title": "KSL Passage #36 (Human KSL)",
+        "gloss": "KSL Passage #36",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-35.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-36",
+        "title": "KSL Passage #37 (Human KSL)",
+        "gloss": "KSL Passage #37",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-36.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-37",
+        "title": "KSL Passage #38 (Human KSL)",
+        "gloss": "KSL Passage #38",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-37.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-38",
+        "title": "KSL Passage #39 (Human KSL)",
+        "gloss": "KSL Passage #39",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-38.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
+      },
+      {
+        "id": "sign-bible-xki-ksl-passage-39",
+        "title": "KSL Passage #40 (Human KSL)",
+        "gloss": "KSL Passage #40",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-39.mp4",
+        "category": "human-sign-bible",
+        "register": "religious_liturgical",
+        "transcript": "",
+        "license": "CC-BY-SA-4.0",
+        "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
+        "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       }
     ],
     "storybooks": [],
+    "wikidataLexemes": [
+      "M507x515S10020492x485",
+      "M543x549S10010528x451S20312511x534S22c03485x486S26832469x541S26830535x483S20500458x525",
+      "M541x530S31400482x482S10e00491x500S26700525x484",
+      "M537x543S14250507x458S14258462x513S2e800506x488S2e810487x489S2fc04496x527",
+      "M532x519S10050467x489S26806482x481"
+    ],
     "videoCount": 99,
     "extractedSignCount": 0,
     "glossCount": 0
@@ -8577,6 +10161,10 @@
     {
       "id": "cohere-aya-ke",
       "rows": 396
+    },
+    {
+      "id": "ea-mobile-money-safety-audit",
+      "rows": 54
     },
     {
       "id": "facebook-belebele-gaz",
@@ -8723,6 +10311,18 @@
       "license": "Open Access",
       "source": "",
       "pageCount": null
+    },
+    {
+      "id": "kenya-geo-index",
+      "license": "Open Access",
+      "source": "",
+      "pageCount": 33
+    },
+    {
+      "id": "rkenyacensus-index",
+      "license": "Open Access",
+      "source": "",
+      "pageCount": 13
     }
   ]
 }

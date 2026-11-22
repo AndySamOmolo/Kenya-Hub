@@ -5155,5 +5155,7 @@
     }
   ],
   "totalEntries": 838,
-  "source": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons"
+  "source": "CLDF ASJP v20 DAASANACH (Black 1974 / Wichmann et al., CC-BY-4.0), OUKA Daasanach Phonology & Morphology Corpus (Nishiguchi 2004, DOI:10.18910/70792), Dasanech Lexical Corpus (Tosco 2001 / Blažek 2011), SIL Bloom Daasanach CC-BY-4.0 & Public Domain Historical Lexicons",
+  "isoCode": "dsh",
+  "glottocode": "daas1238"
 }

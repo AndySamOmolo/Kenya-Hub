@@ -1,14 +1,14 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-11-21",
+  "generatedAt": "2026-11-22",
   "storageArchitecture": "Cloudflare R2 Free Tier (10 GB free storage, 10M free Class B reads/mo, $0.00 egress)",
   "codec": "Opus 24kbps mono 24kHz (.opus)",
   "estimatedCapacityHours": 925,
   "languages": {
     "borana": {
       "languageName": "Borana (Oromo)",
-      "totalEntries": 31859,
-      "addressableR2Keys": 31844,
+      "totalEntries": 31845,
+      "addressableR2Keys": 31830,
       "r2Prefix": "audio/borana/",
       "directAudioEntries": 1,
       "openAccessDatasets": [
@@ -64,8 +64,8 @@
     },
     "kalenjin": {
       "languageName": "Kalenjin",
-      "totalEntries": 8411,
-      "addressableR2Keys": 8409,
+      "totalEntries": 8410,
+      "addressableR2Keys": 8408,
       "r2Prefix": "audio/kalenjin/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -89,8 +89,8 @@
     },
     "kamba": {
       "languageName": "Kamba (Kĩkamba)",
-      "totalEntries": 12910,
-      "addressableR2Keys": 12900,
+      "totalEntries": 12897,
+      "addressableR2Keys": 12887,
       "r2Prefix": "audio/kamba/",
       "directAudioEntries": 250,
       "openAccessDatasets": [
@@ -114,8 +114,8 @@
     },
     "kikuyu": {
       "languageName": "Kikuyu (Gĩkũyũ)",
-      "totalEntries": 25764,
-      "addressableR2Keys": 25755,
+      "totalEntries": 26126,
+      "addressableR2Keys": 26117,
       "r2Prefix": "audio/kikuyu/",
       "directAudioEntries": 254,
       "openAccessDatasets": [
@@ -188,10 +188,10 @@
     },
     "luo": {
       "languageName": "Dholuo (Luo)",
-      "totalEntries": 17313,
-      "addressableR2Keys": 17305,
+      "totalEntries": 17282,
+      "addressableR2Keys": 17274,
       "r2Prefix": "audio/luo/",
-      "directAudioEntries": 260,
+      "directAudioEntries": 262,
       "openAccessDatasets": [
         {
           "id": "anv-ke-luo",
@@ -269,8 +269,8 @@
     },
     "maasai": {
       "languageName": "Maasai (Maa)",
-      "totalEntries": 5081,
-      "addressableR2Keys": 5077,
+      "totalEntries": 5080,
+      "addressableR2Keys": 5076,
       "r2Prefix": "audio/maasai/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -303,16 +303,16 @@
     },
     "mijikenda": {
       "languageName": "Mijikenda (Giriama)",
-      "totalEntries": 17325,
-      "addressableR2Keys": 17315,
+      "totalEntries": 17323,
+      "addressableR2Keys": 17313,
       "r2Prefix": "audio/mijikenda/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
     },
     "pokomo": {
       "languageName": "Pokomo (Kipfokomo)",
-      "totalEntries": 3182,
-      "addressableR2Keys": 3182,
+      "totalEntries": 3181,
+      "addressableR2Keys": 3181,
       "r2Prefix": "audio/pokomo/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
@@ -352,10 +352,10 @@
     },
     "somali": {
       "languageName": "Somali",
-      "totalEntries": 20914,
-      "addressableR2Keys": 20896,
+      "totalEntries": 20895,
+      "addressableR2Keys": 20877,
       "r2Prefix": "audio/somali/",
-      "directAudioEntries": 298,
+      "directAudioEntries": 318,
       "openAccessDatasets": [
         {
           "id": "anv-ke-somali",
@@ -385,10 +385,10 @@
     },
     "swahili": {
       "languageName": "Swahili (Kiswahili)",
-      "totalEntries": 61107,
-      "addressableR2Keys": 61085,
+      "totalEntries": 61075,
+      "addressableR2Keys": 61053,
       "r2Prefix": "audio/swahili/",
-      "directAudioEntries": 457,
+      "directAudioEntries": 798,
       "openAccessDatasets": [
         {
           "id": "cv27-sw",
@@ -532,8 +532,8 @@
     },
     "turkana": {
       "languageName": "Turkana",
-      "totalEntries": 3237,
-      "addressableR2Keys": 3237,
+      "totalEntries": 3235,
+      "addressableR2Keys": 3235,
       "r2Prefix": "audio/turkana/",
       "directAudioEntries": 0,
       "openAccessDatasets": []

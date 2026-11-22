@@ -286,4 +286,37 @@ test("PARITY-01: Both Web and Android persist and prioritize last visited langua
   assert.ok(mobLct.includes("kenyahub_last_visited_lang_v1"));
 });
 
+
+// 16. DATA-01..03: catalog.ts exact parity, linked audio floor & lazy learning shards
+test("DATA-01..03: catalog.ts matches all 23 dictionaries, audio floor >= 2000, and learning shards exist", () => {
+  const catalogSrc = fs.readFileSync(path.join(WEB_ROOT, "src/data/dictionaries/catalog.ts"), "utf8");
+  const dictDirPath = path.join(WEB_ROOT, "src/data/dictionaries");
+  let dictTotalSum = 0;
+  let linkedAudioSum = 0;
+  const catalogDrift = [];
+  for (const fname of fs.readdirSync(dictDirPath).filter((f) => f.endsWith(".json")).sort()) {
+    const dj = JSON.parse(fs.readFileSync(path.join(dictDirPath, fname), "utf8"));
+    const actualCount = (dj.categories || []).reduce((acc, c) => acc + (c.entries || []).length, 0);
+    const audioCount = (dj.categories || []).reduce((acc, c) => acc + (c.entries || []).filter((e) => e.audioFile).length, 0);
+    dictTotalSum += actualCount;
+    linkedAudioSum += audioCount;
+    const blkMatch = catalogSrc.match(new RegExp(`"languageId":\\s*"${dj.languageId}"[\\s\\S]*?"totalEntries":\\s*(\\d+)`));
+    if (!blkMatch || Number(blkMatch[1]) !== actualCount) {
+      catalogDrift.push(`${dj.languageId}:${blkMatch ? blkMatch[1] : "missing"}!=${actualCount}`);
+    }
+  }
+  assert.equal(catalogDrift.length, 0, `catalog.ts drift: ${catalogDrift.join(", ")}`);
+  assert.ok(linkedAudioSum >= 2000, `Expected >= 2000 audio-linked entries, got ${linkedAudioSum}`);
+  assert.ok(dictTotalSum >= 230000, `Expected >= 230000 dict entries, got ${dictTotalSum}`);
+  assert.ok(fs.existsSync(path.join(WEB_ROOT, "public/data/learning/quizzes/swahili.json")), "Missing swahili quiz shard");
+  assert.ok(fs.existsSync(path.join(WEB_ROOT, "public/data/learning/audio/swahili.json")), "Missing swahili audio shard");
+  assert.ok(fs.existsSync(path.join(WEB_ROOT, "public/data/learning/grammar/swahili.json")), "Missing swahili grammar shard");
+});
+
+// 17. SEC-05: No wildcard originWhitelist={['*']} in mobile KSL WebView
+test("SEC-05: Mobile LanguageCourseTool restricts WebView originWhitelist (no wildcard '*')", () => {
+  const mobLctSrc = fs.readFileSync(path.join(MOBILE_ROOT, "src/tools/LanguageCourseTool.tsx"), "utf8");
+  assert.ok(!mobLctSrc.includes("originWhitelist={['*']}") && !mobLctSrc.includes('originWhitelist={["*"]}'));
+});
+
 console.log(`\nAll ${passed} core verification test suites passed!`);

@@ -15,7 +15,10 @@ import {
   Volume2,
 } from "lucide-react";
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
-import { playLanguageAudio, hasVerifiedAudio } from "@/lib/language-audio";
+import { playLanguageAudio, hasVerifiedAudio, preloadLanguageAudioIndex } from "@/lib/language-audio";
+import { loadFreqShard } from "@/lib/learning-shards";
+import { getLanguageOpenCorpus } from "@/lib/open-corpus";
+import ListenReadView from "@/components/learn/ListenReadView";
 import SkillTree from "@/components/learn/SkillTree";
 import GamesHub from "@/components/learn/GamesHub";
 import GrammarView from "@/components/learn/GrammarView";
@@ -78,7 +81,7 @@ const LEARN_TOOL = TOOLS.find((t) => t.slug === "learn")!;
 const MODULES_PAGE_SIZE = 8;
 const REF_TABLE_PAGE_SIZE = 25;
 
-type PageView = "lessons" | "flashcards" | "modules" | "games" | "playing" | "grammar" | "proverbs";
+type PageView = "lessons" | "listen-read" | "flashcards" | "modules" | "games" | "playing" | "grammar" | "proverbs";
 
 function resetLanguageProgress(languageId: string): UserProgress {
   const fresh = createDefaultProgress(languageId);
@@ -107,6 +110,23 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   const [selectedUnitFilter, setSelectedUnitFilter] = useState<string>("all");
   const [modulesPage, setModulesPage] = useState(1);
   const [refTablePage, setRefTablePage] = useState(1);
+  const [flashcardFilter, setFlashcardFilter] = useState<"all" | "common" | "audio" | "nature">("all");
+  const [freqRankMap, setFreqRankMap] = useState<Map<string, number>>(() => new Map());
+  const [audioIndexReady, setAudioIndexReady] = useState(0);
+
+  useEffect(() => {
+    let active = true;
+    preloadLanguageAudioIndex(languageId).then((cnt) => {
+      if (active && cnt > 0) setAudioIndexReady((n) => n + 1);
+    });
+    loadFreqShard(languageId).then((shard) => {
+      if (!active || !shard?.words?.length) return;
+      const m = new Map<string, number>();
+      shard.words.forEach((w, i) => m.set(w.toLowerCase(), i));
+      setFreqRankMap(m);
+    });
+    return () => { active = false; };
+  }, [languageId]);
 
   useEffect(() => {
     setRefTablePage(1);
@@ -299,19 +319,48 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
   }, [course, combinedUnits]);
 
   const flashcardDeck = useMemo(() => {
-    if (flashcardSkillId === "all") {
-      return allSkillsFlat
-        .flatMap((s) =>
-          s.skill.words.map((w) => ({ ...w, skillTitle: s.skill.title }))
-        )
-        .slice(0, 300);
+    void audioIndexReady;
+    const base =
+      flashcardSkillId === "all"
+        ? allSkillsFlat.flatMap((s) =>
+            s.skill.words.map((w) => ({ ...w, skillTitle: s.skill.title }))
+          )
+        : (allSkillsFlat.find((s) => s.skill.id === flashcardSkillId)?.skill.words ?? []).map(
+            (w) => ({
+              ...w,
+              skillTitle:
+                allSkillsFlat.find((s) => s.skill.id === flashcardSkillId)?.skill.title ?? "",
+            })
+          );
+
+    if (flashcardFilter === "audio") {
+      return base
+        .filter((w) => hasVerifiedAudio({ translation: w.target, audioFile: w.audioFile || w.audio }, languageId))
+        .slice(0, 600);
     }
-    const found = allSkillsFlat.find((s) => s.skill.id === flashcardSkillId);
-    if (!found) return [];
-    return found.skill.words
-      .slice(0, 300)
-      .map((w) => ({ ...w, skillTitle: found.skill.title }));
-  }, [allSkillsFlat, flashcardSkillId]);
+    if (flashcardFilter === "nature") {
+      return base
+        .filter(
+          (w) =>
+            (w.example && /ethnobotany|medicinal|plant|tree|herb|botanical/i.test(w.example)) ||
+            /nature|plant|animal|food/i.test(w.skillTitle)
+        )
+        .slice(0, 600);
+    }
+    if (flashcardFilter === "common" && freqRankMap.size > 0) {
+      const scored = base
+        .map((w) => {
+          const primary = w.target.toLowerCase().split(/[,;/(\s]+/)[0] || "";
+          const rank = freqRankMap.get(primary);
+          return { w, rank: rank !== undefined ? rank : 99999 };
+        })
+        .filter((x) => x.rank < 99999)
+        .sort((a, b) => a.rank - b.rank)
+        .map((x) => x.w);
+      if (scored.length > 0) return scored.slice(0, 500);
+    }
+    return base.slice(0, 600);
+  }, [allSkillsFlat, flashcardSkillId, flashcardFilter, freqRankMap, languageId, audioIndexReady]);
 
   const currentFlashcard =
     flashcardDeck[flashcardIndex] || flashcardDeck[0] || null;
@@ -534,7 +583,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
     title: `Learn ${langHeading} — Free Interactive Course`,
     shortTitle: `Learn ${course.config.name}`,
     description: course.config.description,
-    dataSource: `Verified ${course.config.name} Linguistic Corpus & Lexicons`,
+    dataSource: `Verified ${course.config.name} Verified Dictionaries & Courses`,
   };
 
   const courseFaq = [
@@ -550,8 +599,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       question: `What primary linguistic sources are used for the ${course.config.name} lessons and grammar reference?`,
       answer:
         sources.length > 0
-          ? `The ${course.config.name} curriculum is compiled from ${sources.length} verified public-domain monographs and open lexical datasets, including ${sources.slice(0, 4).map((s) => `${s.title} (${s.published})`).join("; ")}.`
-          : `The ${course.config.name} curriculum is compiled from verified Kenyan linguistic monographs and open lexical corpora.`,
+          ? `The ${course.config.name} curriculum is compiled from ${sources.length} verified public-domain monographs and verified Kenyan dictionaries, including ${sources.slice(0, 4).map((s) => `${s.title} (${s.published})`).join("; ")}.`
+          : `The ${course.config.name} curriculum is compiled from verified Kenyan linguistic monographs and verified Kenyan dictionaries.`,
     },
     {
       question: `Is the ${course.config.name} language course completely free to use?`,
@@ -672,14 +721,28 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
       {/* Horizontal Scrolling Pill Tabs */}
       {view !== "playing" && (
         <ExpandablePillRow className="mb-3 sm:mb-5 [&>button]:!h-7 [&>button]:!w-7 sm:[&>button]:!h-8 sm:[&>button]:!w-8 [&>button]:rounded-full [&_.expandable-pill-row]:px-1 [&_.expandable-pill-row]:scroll-pl-1">
-          {[
-            { id: "lessons" as const, label: "Skill Path" },
-            { id: "flashcards" as const, label: `Flashcards (${totalWords.toLocaleString("en-KE")})` },
-            { id: "modules" as const, label: `All Vocab & Dictionary (${totalWords.toLocaleString("en-KE")})` },
-            { id: "games" as const, label: "Mini-Games (12)" },
-            ...(hasGrammar ? [{ id: "grammar" as const, label: "Grammar" }] : []),
-            { id: "proverbs" as const, label: "Proverbs & Wisdom" },
-          ].map((tab) => {
+          {(() => {
+            const langCorpus = getLanguageOpenCorpus(course.config.id);
+            const hasListenRead = Boolean(
+              langCorpus &&
+                ((langCorpus.r2AudioClips ?? 0) > 0 ||
+                  (langCorpus.audioChapters?.length ?? 0) > 0 ||
+                  (langCorpus.shards?.storiesCount ?? 0) > 0 ||
+                  (langCorpus.shards?.sentencesCount ?? 0) > 0 ||
+                  (langCorpus.shards?.quizCount ?? 0) > 0 ||
+                  (langCorpus.sampleReadings?.length ?? 0) > 0 ||
+                  (langCorpus.wikimediaArticles?.length ?? 0) > 0)
+            );
+            return [
+              { id: "lessons" as const, label: "Skill Path" },
+              ...(hasListenRead ? [{ id: "listen-read" as const, label: "Listen & Read" }] : []),
+              { id: "flashcards" as const, label: `Flashcards (${totalWords.toLocaleString("en-KE")})` },
+              { id: "modules" as const, label: `All Vocab & Dictionary (${totalWords.toLocaleString("en-KE")})` },
+              { id: "games" as const, label: "Mini-Games (12)" },
+              ...(hasGrammar ? [{ id: "grammar" as const, label: "Grammar" }] : []),
+              { id: "proverbs" as const, label: "Proverbs & Wisdom" },
+            ];
+          })().map((tab) => {
             const active = view === tab.id;
             return (
               <button
@@ -714,6 +777,8 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             reviewOnly={activeLesson.reviewOnly}
           />
         </div>
+      ) : view === "listen-read" ? (
+        <ListenReadView languageId={course.config.id} languageName={course.config.name} />
       ) : view === "flashcards" ? (
         /* ── Interactive 3D Flashcards Deck View (No Audio Buttons) ── */
         <div data-adsense-pause="true" className="mx-auto max-w-2xl space-y-5 pb-8">
@@ -743,6 +808,34 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
               ]}
               className="w-full sm:w-64 text-xs sm:text-sm"
             />
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            {(
+              [
+                { id: "all", label: "All Cards" },
+                ...(freqRankMap.size > 0 ? [{ id: "common", label: "Most Common" }] : []),
+                { id: "audio", label: "With Audio" },
+                { id: "nature", label: "Plants & Nature" },
+              ] as const
+            ).map((f) => (
+              <button
+                key={f.id}
+                type="button"
+                onClick={() => {
+                  setFlashcardFilter(f.id);
+                  setFlashcardIndex(0);
+                  setIsCardFlipped(false);
+                }}
+                className={`rounded-full border px-3 py-1 text-xs font-semibold transition-colors cursor-pointer ${
+                  flashcardFilter === f.id
+                    ? "border-gold/50 bg-gold/15 text-gold"
+                    : "border-border bg-bg-card text-text-secondary hover:text-text-primary"
+                }`}
+              >
+                {f.label}
+              </button>
+            ))}
           </div>
 
           {currentFlashcard && (
@@ -1021,7 +1114,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                             <span className="text-sm font-bold text-gold break-words">
                               {w.target}
                             </span>
-                            {hasVerifiedAudio({ translation: w.target, audioFile: w.audioFile || w.audio }) && (
+                            {hasVerifiedAudio({ translation: w.target, audioFile: w.audioFile || w.audio }, course.config.id) && (
                               <button
                                 type="button"
                                 onClick={() =>
@@ -1211,7 +1304,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-5 h-5 rounded-full bg-gold/15 text-gold text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
-                  <span className="leading-relaxed">Reinforce recall with the Spaced Repetition (SRS) queue, 3D Flashcards, Grammar Reference, Proverbs &amp; Wisdom, and 12 Mini-Games.</span>
+                  <span className="leading-relaxed">Reinforce recall with the Smart Review Queue, 3D Flashcards, Grammar Reference, Proverbs &amp; Wisdom, and 12 Mini-Games.</span>
                 </li>
               </ol>
             </div>

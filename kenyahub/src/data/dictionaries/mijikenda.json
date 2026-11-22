@@ -42839,11 +42839,6 @@
           "context": "Mijikenda / Kinika Dictionary (Krapf, Rebmann & Sparshott 1887) • Cross-verified with Lingua-Connect Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "When?",
-          "translation": "rini?",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Time, an hour, a clock, a watch",
           "translation": "Saa",
           "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0"
@@ -71226,11 +71221,6 @@
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kiníka s.) • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
         },
         {
-          "english": "Begone!",
-          "translation": "Uka!",
-          "context": "Rev. W. E. Taylor (1891) Giryama Vocabulary and Collections • Cross-verified with Lingua-Connect English–Giriama Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Diligence",
           "translation": "Chadi",
           "context": "Kidaw'ida (Coastal Bantu) — GitHub unicode-org/cldr (dav.xml) & PanLex CC0"
@@ -96676,5 +96666,5 @@
   "source": "Lingua-Connect English–Giriama Dataset (CC-BY-4.0), Language Science Press Digo/Mijikenda Corpus (Nicolle 2016, CC-BY-4.0), CLDF ASJP v20 GIRYAMA/DIGO & BantuBVD (CC-BY-4.0), SIL Bloom Mijikenda CC-BY-4.0 & Public Domain & Academic Lexicons (Krapf 1850/1882, Krapf, Rebmann & Sparshott 1887, Taylor 1891, Werner 1915, Johnston 1919, BFBS 1921 & Nicolle 2016); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "nyf",
   "glottocode": "miji1238",
-  "totalEntries": 17325
+  "totalEntries": 17323
 }

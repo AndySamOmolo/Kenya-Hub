@@ -56934,7 +56934,7 @@
           "english": "Here",
           "translation": "haha",
           "pronunciation": "ha-ha",
-          "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini) • Cross-verified with The Thiomi Dataset (CC-BY-4.0)",
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
           "audioFile": "https://audio.kenyahub.me/audio/kikuyu/haha.opus"
         },
         {
@@ -74222,11 +74222,6 @@
           "context": "Rev. A. W. McGregor (1904) English-Kikuyu Vocabulary (CMS, London) • Cross-verified with The Thiomi Dataset (CC-BY-4.0)"
         },
         {
-          "english": "What is this?",
-          "translation": "nikkigekki?",
-          "context": "Hildegarde Hinde (1904) — Kikuyu (Jogowini) • Cross-verified with The Thiomi Dataset (CC-BY-4.0)"
-        },
-        {
           "english": "Amazed (to be)",
           "translation": "Komaka",
           "context": "Rev. Fr. A. Hémery (1903) English-Kikuyu Hand-Book (Zanzibar/Nairobi) • Cross-verified with The Thiomi Dataset (CC-BY-4.0)"
@@ -76124,7 +76119,7 @@
         {
           "english": "why",
           "translation": "nĩkĩ",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
           "english": "good",
@@ -76139,11 +76134,6 @@
         {
           "english": "how are you doing",
           "translation": "uhaana atĩa",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "how",
-          "translation": "atĩa",
           "context": "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -76204,11 +76194,6 @@
         {
           "english": "on",
           "translation": "iguru",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "when",
-          "translation": "rĩ",
           "context": "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -88970,7 +88955,7 @@
         {
           "english": "instructions",
           "translation": "motaaro",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "rule",
@@ -89130,7 +89115,7 @@
         {
           "english": "right now",
           "translation": "o rĩu",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
           "english": "discussion",
@@ -92395,7 +92380,8 @@
         {
           "english": "Congratulations, you’ve just changed your default email signature!",
           "translation": "Nĩ wega mũno, nĩ wahota gũcenjia thairi kĩumbe ya email yaku!",
-          "context": "Google Research SMOLSent Parallel Sentences (smolsent__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLSent Parallel Sentences (smolsent__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/kikuyu/ni-wega-muno.opus"
         },
         {
           "english": "To solve your query, I am explaining the difference between the kitchen chimney and exhaust fan.",
@@ -95440,11 +95426,6 @@
         {
           "english": "* 1/2 cup milk",
           "translation": "* 1/2 gĩkombe kĩa iriya",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "Instructions:",
-          "translation": "Motaaro:",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -103846,12 +103827,6 @@
           "audioFile": "https://audio.kenyahub.me/audio/kikuyu/o-kiumia-ni-hari-kindu-kieru-kionanagia-uhoro-wake-ni-njata-ya-t.opus"
         },
         {
-          "english": "Here.",
-          "translation": "haha",
-          "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
-          "audioFile": "https://audio.kenyahub.me/audio/kikuyu/haha.opus"
-        },
-        {
           "english": "Seen another way, Oparanya doesn’t seem to have been consulted. He is offering his views in an open letter.",
           "translation": "nĩ ndona njĩra ĩngĩ oparanya ndaroneka ta ahoirwo kĩrĩra araheana mawoni make atekũhitha",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)",
@@ -104687,11 +104662,6 @@
         {
           "english": "He dances on the table.",
           "translation": "athũngũthaga igũrũ rĩa metha",
-          "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
-        },
-        {
-          "english": "Right now!",
-          "translation": "o rĩu",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
@@ -113938,11 +113908,6 @@
         {
           "english": "This drama has led me to think big on that NIS dossier. What is this that NIS knows about them that is so crucial to national security?",
           "translation": "mũthaako ũyũ ũratũma ndĩcirie mũno igũrũ rĩa maratathi macio ma nis nĩ kĩĩ gĩkĩ nis mooĩ igũrũ rĩao kĩa bata mũno kũrĩ ũgitĩri wa bũrũri",
-          "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
-        },
-        {
-          "english": "Why?",
-          "translation": "nĩkĩ",
           "context": "The Thiomi-5K Parallel Speech & Text Corpus (kik_Latn Gĩkũyũ, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         },
         {
@@ -124506,12 +124471,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "those who love it will eat its fruit.",
-          "translation": "no arĩa marwendete no marĩĩage maciaro maaruo.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "And great fear came on all those who heard about it.",
           "translation": "Nao andũ arĩa othe maiguire ũrĩa kwahaana makĩiyũrwo nĩ guoya.",
           "pronunciation": "",
@@ -127302,12 +127261,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Do not associate with him, so that he may be ashamed.",
-          "translation": "Mũtikanagĩe ngwatanĩro nake, nĩgeetha aigue aconokete.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "allude to the day of judgment, and the calamities which precede that day.",
           "translation": "au ! gokuaku chuugakusei wa MABUDACHI na no da no maki",
           "pronunciation": "",
@@ -129660,12 +129613,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Wives of Lamech, hear what I say!",
-          "translation": "inyuĩ atumia a Lameku, ta iguai ciugo ciakwa.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "began to seize the war spoils the unbelievers upon us, but the Messenger",
           "translation": "Marakarania makabutwo magacoka kuria mundu athukumaga na nigetha ajumbe aitu ri mamoragie ciuria makimoragia muratuarithia atia.",
           "pronunciation": "",
@@ -130214,18 +130161,6 @@
         {
           "english": "the one who loves wine and oil will never be rich.",
           "translation": "ũrĩa wothe mwendi ndibei na maguta-rĩ, gũtirĩ hĩndĩ agaatonga.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "And to some extent we have discussed God's will - what he has done and will yet do for mankind.",
-          "translation": "Na nĩ twarĩrĩirie hanini igũrũ rĩgiĩ wendi wa Ngai, ũrĩa ekĩte na ũrĩa arĩĩkĩra andũ.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "4 Blessed are those who dwell in your house.",
-          "translation": "4Kũrathimwo-rĩ, nĩ andũ arĩa matũũraga nyũmba yaku;",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -133596,12 +133531,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "11 \"But My people did not listen to Me;",
-          "translation": "11\"No andũ akwa matiigana gũũthikĩrĩria;",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "He asked them, 'why have you been standing here all day long doing nothing?'",
           "translation": "Akĩmooria atĩrĩ, 'Nĩ kĩĩ gĩtũmĩte mũtinde mũrũngiĩ haha mũthenya mũgima mũtarĩ ũndũ mũreka?'",
           "pronunciation": "",
@@ -134078,12 +134007,6 @@
         {
           "english": "\"And when you are converted, strengthen your brothers.\"",
           "translation": "Na warĩkia kũnjookerera, ũũmagĩrĩrie ariũ na aarĩ a thoguo.\"",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "14 You are the God who performs miracles.",
-          "translation": "14Wee nĩwe Mũrungu ũrĩa ũringaga ciama;",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -136170,12 +136093,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "14 For He knows what we are made of,",
-          "translation": "14nĩgũkorwo we nĩoĩ ũrĩa tuombirwo,",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "Death and the grave had and have no power over Him.",
           "translation": "Gĩkuũ na kwa ngoma itirĩ na hinya,",
           "pronunciation": "",
@@ -136266,20 +136183,8 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "I miss my bird.",
-          "translation": "njĩrirũo nĩ kanyoni gakwa",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "Moses, so will I be with you; I will not fail you nor forsake you.\"",
           "translation": "O ta ũrĩa ndaarĩ na Musa, ũguo noguo ngũkorwo hamwe nawe; ndigagũtiganĩria kana ngũtirike.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "And who is a rock, besides our God.",
-          "translation": "Na nũũ Rwaro rwa Ihiga tiga Ngai witũ?",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -136536,12 +136441,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "11  And that is what some of you were.",
-          "translation": "11Na ũguo nĩguo amwe anyu mwatariĩ.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "Thereafter he attended the King,",
           "translation": "na agatũma mothamaki mainaine,",
           "pronunciation": "",
@@ -136616,12 +136515,6 @@
         {
           "english": "For now I know that you fear God, for you did not withhold your only son.'\"",
           "translation": "Rĩu nĩndamenya atĩ nĩwĩtigĩrĩte Ngai, tondũ ndũnarega kũruta mũrũguo, o we mũrũguo waku wa mũmwe, arĩ igongona.\"",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "14 For He knows what we are made of.",
-          "translation": "14nĩgũkorwo we nĩoĩ ũrĩa tuombirwo,",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -136712,12 +136605,6 @@
         {
           "english": "\" Father, save me from this hour....\"",
           "translation": "Njuge, 'Baba honokia harĩ ihinda rĩĩrĩ'?",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "3  Praise him, sun and moon.",
-          "translation": "3Mũgoocei, inyuĩ riũa na mweri,",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -137290,6 +137177,2298 @@
           "translation": "No kwahanĩkire ũguo nĩguo tũtikae kwĩĩhoka ithuĩ ene, no twĩhoke Ngai, ũrĩa ũriũkagia arĩa akuũ.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kik_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+        },
+        {
+          "english": "African sandalwood (Osyris lanceolata, syn. O. abyssinica)",
+          "translation": "mũthithe",
+          "pronunciation": "mòðìðɛ́",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of rũthĩa",
+          "translation": "thĩa",
+          "pronunciation": "ðè.à",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to tell",
+          "translation": "ĩra",
+          "pronunciation": "eɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to kindle, to light",
+          "translation": "akia",
+          "pronunciation": "akia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to lead the chorus in song",
+          "translation": "kũya",
+          "pronunciation": "koja",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to wash",
+          "translation": "thambia",
+          "pronunciation": "ðaᵐbia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to beseech",
+          "translation": "thaitha",
+          "pronunciation": "ðaiða",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be beautiful",
+          "translation": "thakara",
+          "pronunciation": "ðakaɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Kikuyu people",
+          "translation": "Gĩkũyũ",
+          "pronunciation": "ɣèkòjóꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "manure, fertilizer, obtained chiefly from cattle or sheep dung",
+          "translation": "thumu",
+          "pronunciation": "ðùmù(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "venom",
+          "translation": "thumu",
+          "pronunciation": "ðùmù(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "I",
+          "translation": "niĩ",
+          "pronunciation": "nie",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of bũrũri",
+          "translation": "mabũrũri",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "joint, section",
+          "translation": "irũngo",
+          "pronunciation": "ìɾòᵑɡɔ̀(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of thoguo",
+          "translation": "mathoguo",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to bite",
+          "translation": "rũma",
+          "pronunciation": "ɾoma",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "hail!",
+          "translation": "kũngũ",
+          "pronunciation": "kòᵑɡóꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mwatũ",
+          "translation": "mĩatũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "market, marketplace",
+          "translation": "thoko",
+          "pronunciation": "ðɔ̀kɔ̀(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "trade, commerce, business",
+          "translation": "biacara",
+          "pronunciation": "βiaɕaɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "alternative form of biacara",
+          "translation": "mbiacara",
+          "pronunciation": "ᵐbiaɕaɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "shilling",
+          "translation": "ciringi",
+          "pronunciation": "ʃì.ɾì.ᵑɡìꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "ten",
+          "translation": "kenda mũiyũru",
+          "pronunciation": "kɛ́ⁿdáꜜ moìjóɾù(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to reduce, to diminish",
+          "translation": "nyiha",
+          "pronunciation": "ɳì.há",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Mussaenda microdonta subsp. odorata (syn. M. odorata); tree or shrub of the family Rubiaceae",
+          "translation": "mũringathinga",
+          "pronunciation": "mòɾìᵑɡáðìŋɡáꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Canthium oligocarpum subsp. friesiorum (syn. Rytigynia friesiorum), shrub or tree species of the family Rubiaceae",
+          "translation": "mũrera-kĩĩmbu",
+          "pronunciation": "mòɾɛ̀ɾà(ꜜ)keèᵐbú",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Galiniera saxifraga (syn. G. coffeoides); shrub or tree of the family Rubiaceae",
+          "translation": "mũtĩ-mũirũ",
+          "pronunciation": "mòtě moìɾóꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "nightjar",
+          "translation": "kiugũigũ",
+          "pronunciation": "kiuɣoiɣo",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "species of warbler, especially grass warbler",
+          "translation": "ndete",
+          "pronunciation": "ⁿdɛ́ːtɛ̌ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "season (for agriculture)",
+          "translation": "kĩmera",
+          "pronunciation": "kèmɛ̀ɾà(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "dot, spot",
+          "translation": "gaturumo",
+          "pronunciation": "ɣàtùɾúmɔ̀(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "your",
+          "translation": "-aku",
+          "pronunciation": "a.ku",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "scorpion",
+          "translation": "kang'aurũ",
+          "pronunciation": "kà.ŋà.ú.ɾóꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũgogo",
+          "translation": "mĩgogo",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to inflict suffering upon, to afflict, to distress, to plague, to pester, to persecute, to worry",
+          "translation": "nyamaria",
+          "pronunciation": "ɲamaːɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Mauritius thorn (Biancaea decapetala, syn. Caesalpinia decapetala, C. sepiaria); native to Asia, but naturalized to Kenya for a very long time; traditionally used for hedge.",
+          "translation": "mũbaage",
+          "pronunciation": "mòβaːɣɛ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "A species of nettle, Urtica massaica Mildbr.; leaves traditionally used as vegetable among Gĩkũyũ people.",
+          "translation": "thabai",
+          "pronunciation": "ða.βa.i",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Fruit and seeds of plants of species Biancaea decapetala (Mauritius thorn) (mũbaage); seeds were used for divination.",
+          "translation": "mbaage",
+          "pronunciation": "ᵐbaːɣɛ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to divide up, to portion out",
+          "translation": "gayania",
+          "pronunciation": "ɣajania",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Hard crystalline stone, granite used as scraping stones and burnishing weapons.",
+          "translation": "nyaigĩ",
+          "pronunciation": "ɲàì.ɣě",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of inyota",
+          "translation": "manyota",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "present imperfect marker.",
+          "translation": "-ra-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mwanake.",
+          "translation": "aanake",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũndũ.",
+          "translation": "andũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of rũrĩmĩ.",
+          "translation": "nĩmĩ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of riitho.",
+          "translation": "maitho",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mweri.",
+          "translation": "mĩeri",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũromo.",
+          "translation": "mĩromo",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mwaka.",
+          "translation": "mĩaka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of -rĩa.",
+          "translation": "kũrĩa",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "witchcraft",
+          "translation": "ũrogi",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of -roga.",
+          "translation": "kũroga",
+          "pronunciation": "ko.ɾɔ̀.ɣàꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũtwe.",
+          "translation": "mĩtwe",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũkũyũ (“fig tree”).",
+          "translation": "mĩkũyũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of kameme",
+          "translation": "tũmeme",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of gũtũ",
+          "translation": "matũ",
+          "pronunciation": "matòꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "point at",
+          "translation": "orota",
+          "pronunciation": "ɔ̀ɾɔ̀tá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of -orota",
+          "translation": "kuorota",
+          "pronunciation": "kuɔ̀.ɾɔ̀.tá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "grow up, mature",
+          "translation": "kũra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "old",
+          "translation": "-kũrũ",
+          "pronunciation": "kò.ɾó",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of kĩũria",
+          "translation": "ciũria",
+          "pronunciation": "ʃiò.ɾiá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "inquirer",
+          "translation": "mũũria",
+          "pronunciation": "mòː.ɾiá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of -ũria",
+          "translation": "kũũria",
+          "pronunciation": "kòː.ɾiá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of -rũgama",
+          "translation": "kũrũgama",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "stand in for",
+          "translation": "rũgamĩrĩra",
+          "pronunciation": "ɾòː.ɣà.mè.ɾè.ɾà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "cashier",
+          "translation": "mũrĩhia",
+          "pronunciation": "mo.ɾè.hiǎ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "method of paying",
+          "translation": "mũrĩhĩre",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũrĩhĩre (“method of paying”)",
+          "translation": "mĩrĩhĩre",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Infinitive of kũrĩha (“to pay”)",
+          "translation": "kũrĩha",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "charge money",
+          "translation": "rĩhia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of -rĩhia",
+          "translation": "kũrĩhia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "end, conclude",
+          "translation": "rĩka",
+          "pronunciation": "ɾè.kà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of -aga",
+          "translation": "kwaga",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "needy person",
+          "translation": "mwagi",
+          "pronunciation": "mwa.ɣi",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "whisper",
+          "translation": "heeha",
+          "pronunciation": "hɛ̀ː.hà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "bless",
+          "translation": "rathima",
+          "pronunciation": "ɾà.ðì.mà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "slaughter",
+          "translation": "thĩnja",
+          "pronunciation": "ðè.ⁿd͡ʒá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "poverty",
+          "translation": "thĩna",
+          "pronunciation": "ðè.nǎ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to bother, to annoy",
+          "translation": "thĩnia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to chase away",
+          "translation": "ingata",
+          "pronunciation": "ì.ᵑɡà.tà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "increase",
+          "translation": "ingĩha",
+          "pronunciation": "ì.ᵑɡè.há",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to enter",
+          "translation": "ingĩra",
+          "pronunciation": "ì.ᵑɡè.ɾá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to shed skin",
+          "translation": "ĩũa",
+          "pronunciation": "è.oà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "large flame",
+          "translation": "kĩrĩrĩmbĩ",
+          "pronunciation": "ke.ɾè.ɾè.ᵐbé",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "hand over",
+          "translation": "nengera",
+          "pronunciation": "nɛ̀.ᵑɡɛ̀.ɾá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "think",
+          "translation": "ĩciria",
+          "pronunciation": "è.ʃì.ɾià",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "remonstrate",
+          "translation": "ciria",
+          "pronunciation": "ʃì.ɾià",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "thought",
+          "translation": "rĩciria",
+          "pronunciation": "ɾèː.ʃí.ɾiàꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to squeak, to squeal, to whimper",
+          "translation": "nyingira",
+          "pronunciation": "ɳì.ᵑɡì.ɾá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "expression of discontent",
+          "translation": "mũnyingiri",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to squeak, squeal",
+          "translation": "nyinyira",
+          "pronunciation": "ɳì.ɳì.ɾá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "dry, dried out",
+          "translation": "-nyotu",
+          "pronunciation": "ɳɔ̀.tú",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "time of thirst, drought",
+          "translation": "inyota",
+          "pronunciation": "i.ɳɔ̀.táꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "sheath, sheathed sword",
+          "translation": "njora",
+          "pronunciation": "ᶯdʒɔ̀.ɾáꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "diminutive of njora",
+          "translation": "gacora",
+          "pronunciation": "ɣa.ʃɔ̀.ɾáꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "a female given name",
+          "translation": "Njoki",
+          "pronunciation": "ᶯdʒɔ̀.kí",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "a female given name (diminutive of Njoki)",
+          "translation": "Gacoki",
+          "pronunciation": "ɣa.ʃɔ̀.kí",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "noun class 7 form of of -a",
+          "translation": "kĩa",
+          "pronunciation": "keà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to dry, to harden",
+          "translation": "ũma",
+          "pronunciation": "ò.má",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "expression of shock or dismay",
+          "translation": "wũi",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to harden excessively",
+          "translation": "ũmagara",
+          "pronunciation": "ò.mà.ɣá.ɾà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "hardness, dryness",
+          "translation": "ũũmũ",
+          "pronunciation": "òːmóꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "bravery",
+          "translation": "ũũmĩrĩru",
+          "pronunciation": "òːméɾèɾùꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "dry out",
+          "translation": "ũmĩrĩra",
+          "pronunciation": "ò.mé.ɾè.ɾà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "dry, hard",
+          "translation": "-ũmũ",
+          "pronunciation": "ò.móꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "firm, stiff",
+          "translation": "-ũmĩrĩru",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be hard-hearted",
+          "translation": "ũma ngoro",
+          "pronunciation": "ò.má ᵑɡɔ̀.ɾɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "give up, despair",
+          "translation": "ũma tha",
+          "pronunciation": "ò.má ðàꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "callous person",
+          "translation": "mũũma tha",
+          "pronunciation": "mòː.máꜜ ðàꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "one who loses",
+          "translation": "mũũma",
+          "pronunciation": "mòː.máꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "callousness",
+          "translation": "ũũma tha",
+          "pronunciation": "òː.máꜜ ðàꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "daredevil",
+          "translation": "mũũma ihu",
+          "pronunciation": "mòː.máꜜ i.húꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "daredevil",
+          "translation": "mũũma rũhu",
+          "pronunciation": "mòː.máꜜ ɾo.húꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ũma",
+          "translation": "kũũma",
+          "pronunciation": "kòː.máꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ũmagara",
+          "translation": "kũũmagara",
+          "pronunciation": "kòː.mà.ɣá.ɾà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of ũũmũ class 14",
+          "translation": "maũũmũ",
+          "pronunciation": "ma.òː.móꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to blow",
+          "translation": "huha",
+          "pronunciation": "hù.hà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "whistle using fingers",
+          "translation": "huha kĩũbĩ",
+          "pronunciation": "hù.hà keò.βě",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of kĩũbĩ class 7",
+          "translation": "ciũbĩ",
+          "pronunciation": "ʃiò.βě",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to sound, sound out",
+          "translation": "ugia",
+          "pronunciation": "ù.ɣiá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "my",
+          "translation": "-akwa",
+          "pronunciation": "a.kʷa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "your",
+          "translation": "-itũ",
+          "pronunciation": "i.to",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to set apart",
+          "translation": "amũra",
+          "pronunciation": "à.mò.ɾá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to detach oneself, to separate oneself",
+          "translation": "ĩamũra",
+          "pronunciation": "è.à.mò.ɾá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩamũra",
+          "translation": "kwĩamũra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of amũra",
+          "translation": "kwamũra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to apportion, to distribute",
+          "translation": "amũrana",
+          "pronunciation": "à.mò.ɾá.nà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "segregate",
+          "translation": "amũrania",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to lay eggs",
+          "translation": "rekia",
+          "pronunciation": "ɾɛ̀.kià",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to dispatch",
+          "translation": "rekia",
+          "pronunciation": "ɾɛ̀.kià",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "messenger",
+          "translation": "mũrekio",
+          "pronunciation": "mo.ɾɛ̀.kjɔ̌",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũrekio (“messenger, ambassador”)",
+          "translation": "arekio",
+          "pronunciation": "a.ɾɛ̀.kjɔ̌",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of reka",
+          "translation": "kũreka",
+          "pronunciation": "ko.ɾɛ̀.kǎ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to forgive",
+          "translation": "rekera",
+          "pronunciation": "ɾɛ̀.kɛ̀.ɾà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of rekera",
+          "translation": "kũrekera",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "know innermost thoughts",
+          "translation": "una kĩrĩti kĩa ngoro",
+          "pronunciation": "ù.ná ké.ɾè.tìꜜ keà ᵑɡɔ̀.ɾɔ́(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "talk about someone (who is present) in proverbs, find fault with someone",
+          "translation": "una mũndũ thimo",
+          "pronunciation": "ù.ná mó.ⁿdòꜜ ðìmɔ́(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "put half of the beer into a second container",
+          "translation": "una njohi",
+          "pronunciation": "ù.ná ᶯdʒɔ̀.hǐ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to leave very early in the morning",
+          "translation": "unithia",
+          "pronunciation": "ù.ní.ðja",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unithia",
+          "translation": "kuunithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to divide among",
+          "translation": "unana",
+          "pronunciation": "ù.ná.na",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unana",
+          "translation": "kuunana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to fold, bend over or upon",
+          "translation": "unanĩra",
+          "pronunciation": "ù.ná.ne.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "causative of unanĩra",
+          "translation": "unanĩria",
+          "pronunciation": "ù.ná.ne.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unanĩra",
+          "translation": "kuunanĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to break, to divide, in two",
+          "translation": "unania",
+          "pronunciation": "ù.ná.nia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unania",
+          "translation": "kuunania",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "break for, at",
+          "translation": "unĩra",
+          "pronunciation": "ù.né.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩra",
+          "translation": "kuunĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "fold one upon another for",
+          "translation": "unanĩrĩra",
+          "pronunciation": "ù.ná.ne.ɾe.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unanĩrĩra",
+          "translation": "kuunanĩrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to break up additionally",
+          "translation": "unĩrĩra",
+          "pronunciation": "ù.né.ɾe.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩrĩra",
+          "translation": "kuunĩrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to break, to be breakable",
+          "translation": "unĩka",
+          "pronunciation": "ù.né.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩka",
+          "translation": "kuunĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to flee to for safety",
+          "translation": "unĩkĩra",
+          "pronunciation": "ù.né.ke.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩkĩra",
+          "translation": "kuunĩkĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to cause someone to flee",
+          "translation": "unĩkĩria",
+          "pronunciation": "ù.né.ke.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩkĩria",
+          "translation": "kuunĩkĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be broken entirely",
+          "translation": "unĩkana",
+          "pronunciation": "ù.né.ka.na",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩkana",
+          "translation": "kuunĩkana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to break at the same time",
+          "translation": "unĩkanĩra",
+          "pronunciation": "ù.né.ka.ne.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩkanĩra",
+          "translation": "kuunĩkanĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to take safety together for, at",
+          "translation": "unĩkanĩria",
+          "pronunciation": "ù.né.ka.ne.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩkanĩria",
+          "translation": "kuunĩkanĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to break off completely",
+          "translation": "unĩkania",
+          "pronunciation": "ù.né.ka.nia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩkania",
+          "translation": "kuunĩkania",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be breakable",
+          "translation": "unĩkĩka",
+          "pronunciation": "ù.né.ke.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unĩkĩka",
+          "translation": "kuunĩkĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to abbreviate",
+          "translation": "unoina",
+          "pronunciation": "ù.nɔí.ná",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unoina",
+          "translation": "kuunoina",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to unfold a little",
+          "translation": "unoinũra",
+          "pronunciation": "ù.nɔí.nó.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unoinũra",
+          "translation": "kuunoinũra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unauna",
+          "translation": "kuunauna",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to unfold a little",
+          "translation": "unaunũra",
+          "pronunciation": "ù.naú.nó.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unaunũra",
+          "translation": "kuunaunũra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to unfold",
+          "translation": "unũra",
+          "pronunciation": "ù.nó.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to unfold, straighten, for",
+          "translation": "unũrĩra",
+          "pronunciation": "ù.nó.ɾe.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unũrĩra",
+          "translation": "kuunũrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unũra",
+          "translation": "kuunũra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to unroll, stretch, in addition to what has already been unfolded",
+          "translation": "unũrĩrĩra",
+          "pronunciation": "ù.nó.ɾe.ɾe.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of unũrĩrĩra",
+          "translation": "kuunũrĩrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "broken",
+          "translation": "-unĩku",
+          "pronunciation": "ù.nè.kú",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to cut down forest or virgin land to settle",
+          "translation": "una kĩrĩti",
+          "pronunciation": "ù.ná ké.ɾè.tì(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "virgin forest, virgin field",
+          "translation": "kĩrĩti",
+          "pronunciation": "ke.ɾè.tì(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of kĩrĩti (“virgin forest, virgin land”)",
+          "translation": "irĩti",
+          "pronunciation": "i.ɾè.tì(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "first occupant of land claimed from forest",
+          "translation": "muuni",
+          "pronunciation": "mùː.nǐ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of muuni (“breaker”)",
+          "translation": "oini",
+          "pronunciation": "ɔì.nǐ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "lawbreaker",
+          "translation": "muuni-watho",
+          "pronunciation": "mùː.nì wá.ðɔ̀(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of muuni-watho (“lawbreaker”)",
+          "translation": "oini-watho",
+          "pronunciation": "ɔì.nì wá.ðɔ̀(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of muuni-watho (“lawbreaker”)",
+          "translation": "auni-watho",
+          "pronunciation": "aù.nì wá.ðɔ̀(ꜜ)",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "migration, dispersal of a community (especially in hardship)",
+          "translation": "muunĩko",
+          "pronunciation": "mùː.nè.kɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of muunĩko (“migration, dispersal”)",
+          "translation": "miunĩko",
+          "pronunciation": "miù.nè.kɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "flood, inundation",
+          "translation": "muunĩko wa maĩ",
+          "pronunciation": "mùː.nè.kɔ́ꜜ wà màː.éꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "turn-up, hem",
+          "translation": "ruuno",
+          "pronunciation": "ɾùː.nɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of ruuno",
+          "translation": "nyuno",
+          "pronunciation": "ɳù.nɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "point of breaking, folding",
+          "translation": "kiunĩro",
+          "pronunciation": "kiù.nè.ɾɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "a breaking",
+          "translation": "uunĩro",
+          "pronunciation": "ùː.nè.ɾɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "time of breaking",
+          "translation": "riunĩro",
+          "pronunciation": "riù.nè.ɾɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to stick something into something",
+          "translation": "umbĩka",
+          "pronunciation": "ù.ᵐbè.kà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbĩka",
+          "translation": "kuumbĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to stick into, for, at",
+          "translation": "umbĩkĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbĩkĩra",
+          "translation": "kuumbĩkĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to stick into for oneself",
+          "translation": "ĩumbĩkĩra",
+          "pronunciation": "è.ú.ᵐbè.kè.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩumbĩkĩra",
+          "translation": "kwĩumbĩkĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to help cover",
+          "translation": "umbĩkithia",
+          "pronunciation": "ù.ᵐbè.kì.ðjà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to thrust or inject into someone",
+          "translation": "umbĩkana",
+          "pronunciation": "ù.ᵐbè.kà.na",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbĩkana",
+          "translation": "kuumbĩkana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to cover a little by sticking under",
+          "translation": "umboimbĩka",
+          "pronunciation": "ù.ᵐbɔì.ᵐbè.kà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to cover a little by sticking under",
+          "translation": "umbaumbĩka",
+          "pronunciation": "ù.ᵐbaù.ᵐbè.kà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to stick additional things into",
+          "translation": "umbĩkĩrĩra",
+          "pronunciation": "ù.ᵐbè.kè.ɾe.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "thrust into to conceal",
+          "translation": "umbĩkĩrĩria",
+          "pronunciation": "ù.ᵐbè.kè.ɾè.ɾà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to dig oneself into something to hide",
+          "translation": "ĩumbĩkĩrĩria",
+          "pronunciation": "è.ú.ᵐbè.kè.ɾè.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbĩkĩrĩria",
+          "translation": "kuumbĩkĩrĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩumbĩkĩrĩria",
+          "translation": "kwĩumbĩkĩrĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbĩkĩrĩra",
+          "translation": "kuumbĩkĩrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to thrust into oneself",
+          "translation": "ĩumbĩka",
+          "pronunciation": "è.ú.ᵐbè.kà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩumbĩka",
+          "translation": "kwĩumbĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbĩkithia",
+          "translation": "kuumbĩkithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umboimbĩka",
+          "translation": "kuumboimbĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbaumbĩka",
+          "translation": "kuumbaumbĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to emerge, to surface from something",
+          "translation": "umbũka",
+          "pronunciation": "ù.ᵐbò.kà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũka",
+          "translation": "kuumbũka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to reveal, to make seen",
+          "translation": "umbũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũkia",
+          "translation": "kuumbũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to bring out oneself, to reveal oneself",
+          "translation": "ĩumbũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩumbũkia",
+          "translation": "kwĩumbũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to surface, emerge entirely and suddenly",
+          "translation": "umbũkana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũkana",
+          "translation": "kuumbũkana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be known, leak out simultaneously",
+          "translation": "umbũkanĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũkanĩra",
+          "translation": "kuumbũkanĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to confess, to divulge",
+          "translation": "umbũra",
+          "pronunciation": "ù.ᵐbò.ɾà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũra",
+          "translation": "kuumbũra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to reveal for, at",
+          "translation": "umbũrĩra",
+          "pronunciation": "ù.ᵐbò.ɾè.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to unearth, dig up for, at",
+          "translation": "umbũrĩria",
+          "pronunciation": "ù.ᵐbò.ɾè.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũrĩria",
+          "translation": "kuumbũrĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũrĩra",
+          "translation": "kuumbũrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to dig up, to turn up",
+          "translation": "umbũria",
+          "pronunciation": "ù.ᵐbò.ɾè.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũria",
+          "translation": "kuumbũria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to come out of hiding",
+          "translation": "ĩumbũria",
+          "pronunciation": "è.ú.ᵐbò.ɾià",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩumbũria",
+          "translation": "kwĩumbũria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be revealable",
+          "translation": "umbũrĩka",
+          "pronunciation": "ù.ᵐbò.ɾè.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũrĩka",
+          "translation": "kuumbũrĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to dig up out",
+          "translation": "umbũrũria",
+          "pronunciation": "ù.ᵐbò.ɾò.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũrũria",
+          "translation": "kuumbũrũria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be dug up and dispersed over a wide area",
+          "translation": "umbũrũrũka",
+          "pronunciation": "ù.ᵐbò.ɾò.ɾo.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũrũrũka",
+          "translation": "kuumbũrũrũka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to bring every little detail to light",
+          "translation": "umbũrũrũkia",
+          "pronunciation": "ù.ᵐbò.ɾò.ɾo.kja",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of umbũrũrũkia",
+          "translation": "kuumbũrũrũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "openly, without reserve",
+          "translation": "kiumbũro",
+          "pronunciation": "kiu.ᵐbo.ɾɔ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "revealer, confessor",
+          "translation": "muumbũri",
+          "pronunciation": "mùːᵐbò.ɾìꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of muumbũri",
+          "translation": "oimbũri",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of muumbũri",
+          "translation": "aumbũri",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "killer",
+          "translation": "mũũragani",
+          "pronunciation": "mòː.ɾá.ɣà.nìꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũũragani",
+          "translation": "oragani",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to kill one another",
+          "translation": "ũragana",
+          "pronunciation": "ò.ɾà.ɣá.na",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ũragana",
+          "translation": "kũũragana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ũraga",
+          "translation": "kũũraga",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to kill for, at",
+          "translation": "ũragĩra",
+          "pronunciation": "ò.ɾà.ɣé.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ũragĩra",
+          "translation": "kũũragĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to have, help someone killed",
+          "translation": "ũragithia",
+          "pronunciation": "ò.ɾà.ɣí.ðia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ũragithia",
+          "translation": "kũũragithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to have someone killed for, at",
+          "translation": "ũragithĩria",
+          "pronunciation": "ò.ɾà.ɣí.ðè.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ũragithĩria",
+          "translation": "kũũragithĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be killable",
+          "translation": "ũragĩka",
+          "pronunciation": "ò.ɾà.ɣé.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to break additionally",
+          "translation": "ũragĩrĩra",
+          "pronunciation": "ò.ɾà.ɣé.ɾe.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ũragĩrĩra",
+          "translation": "kũũragĩrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to commit suicide",
+          "translation": "ĩũraga",
+          "pronunciation": "è.ó.ɾà.ɣá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩũraga",
+          "translation": "kwĩũraga",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to commit suicide for",
+          "translation": "ĩũragĩra",
+          "pronunciation": "è.ó.ɾà.ɣé.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩũragĩra",
+          "translation": "kwĩũragĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "killing, murder",
+          "translation": "kĩũrago",
+          "pronunciation": "keò.ɾà.ɣɔ́ꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of kĩũrago",
+          "translation": "ciũrago",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "god killer",
+          "translation": "mũũraga-Ngai",
+          "pronunciation": "mòː.ɾà.ɣáꜜ ᵑɡà.ǐ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinya",
+          "translation": "gũkinya",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "arrived",
+          "translation": "-kinyu",
+          "pronunciation": "kì.ɲǔ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to step on, at",
+          "translation": "kinyĩra",
+          "pronunciation": "kì.ɲé.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyĩra",
+          "translation": "gũkinyĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to step on, tread on with",
+          "translation": "kinyĩria",
+          "pronunciation": "kì.ɲé.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyĩria",
+          "translation": "gũkinyĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to take a firm stance in defending oneself, to plant one's feet",
+          "translation": "ĩkinyĩra",
+          "pronunciation": "è.kí.ɲé.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩkinyĩra",
+          "translation": "gwĩkinyĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to make step onto the ground",
+          "translation": "kinyithia",
+          "pronunciation": "kì.ɲí.ðja",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyithia",
+          "translation": "gũkinyithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to step on one another",
+          "translation": "kinyana",
+          "pronunciation": "kì.ɲá.na",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyana",
+          "translation": "gũkinyana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be the cause of complication, slow progress",
+          "translation": "kinyanĩra",
+          "pronunciation": "kì.ɲá.ne.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyanĩra",
+          "translation": "gũkinyanĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to make step on one another",
+          "translation": "kinyania",
+          "pronunciation": "kì.ɲá.nia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyania",
+          "translation": "gũkinyania",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to step, tread a little",
+          "translation": "kinyakinya",
+          "pronunciation": "kì.ɲá.kì.ɲá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyakinya",
+          "translation": "gũkinyakinya",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to stomp, make step, a little",
+          "translation": "kinyakinyithia",
+          "pronunciation": "kì.ɲá.kì.ɲí.ðja",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyakinyithia",
+          "translation": "gũkinyakinyithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be steppable, treadable a little",
+          "translation": "kinyakinyĩka",
+          "pronunciation": "kì.ɲá.kì.ɲé.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyakinyĩka",
+          "translation": "gũkinyakinyĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to walk smartly a little",
+          "translation": "kinyakinyũka",
+          "pronunciation": "kì.ɲá.kì.ɲó.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyakinyũka",
+          "translation": "gũkinyakinyũka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to take foot off a little",
+          "translation": "kinyakinyũkia",
+          "pronunciation": "kì.ɲá.kì.ɲó.kja",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyakinyũkia",
+          "translation": "gũkinyakinyũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be, become, bold",
+          "translation": "ĩkinyakinya",
+          "pronunciation": "è.kí.ɲá.kì.ɲá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩkinyakinya",
+          "translation": "gwĩkinyakinya",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be steppable",
+          "translation": "kinyĩka",
+          "pronunciation": "kì.ɲé.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyĩka",
+          "translation": "gũkinyĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to walk smartly",
+          "translation": "kinyũka",
+          "pronunciation": "kì.ɲó.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to walk smartly at, for",
+          "translation": "kinyũkĩra",
+          "pronunciation": "kì.ɲó.ke.ɾa",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to walk smartly through",
+          "translation": "kinyũkĩria",
+          "pronunciation": "kì.ɲó.ke.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyũkĩria",
+          "translation": "gũkinyũkĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to lift off foot",
+          "translation": "kinyũkia",
+          "pronunciation": "kì.ɲó.kja",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyũkia",
+          "translation": "gũkinyũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to assist, cause someone to walk smartly",
+          "translation": "kinyũkithia",
+          "pronunciation": "kì.ɲó.ki.ðja",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyũkithia",
+          "translation": "gũkinyũkithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to walk smartly with, after",
+          "translation": "kinyũkania",
+          "pronunciation": "kì.ɲó.ka.nia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyũkania",
+          "translation": "gũkinyũkania",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to walk in step, in tandem",
+          "translation": "kinyũkanĩria",
+          "pronunciation": "kì.ɲó.ka.ne.ɾia",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyũkanĩria",
+          "translation": "gũkinyũkanĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to be capable of being walked on, walked across smartly",
+          "translation": "kinyũkĩka",
+          "pronunciation": "kì.ɲó.ke.ka",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyũkĩka",
+          "translation": "gũkinyũkĩka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of kinyũka",
+          "translation": "gũkinyũka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to exercise self-control",
+          "translation": "ĩkinya",
+          "pronunciation": "è.kí.ɲá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩkinya",
+          "translation": "gwĩkinya",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "confidence, sureness",
+          "translation": "kinyi",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "slowly, lightly, with exaggerated care",
+          "translation": "kinyi",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũtĩ (“tree, stick, arrow shaft”).",
+          "translation": "mĩtĩ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "herbal medicine",
+          "translation": "mĩtĩ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "a hunt",
+          "translation": "iguĩma",
+          "pronunciation": "i.ɣuè.máꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of iguĩma (“a hunt”)",
+          "translation": "maguĩma",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of guĩma",
+          "translation": "kũguĩma",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũguĩmi",
+          "translation": "aguĩmi",
+          "pronunciation": "aɣuèmíꜜ",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to kindle a fire, to revive a fire",
+          "translation": "ciringa",
+          "pronunciation": "cìɾìᵑɡá",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to assist someone in kindling or reviving",
+          "translation": "ciringithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ciringithia",
+          "translation": "gũciringithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ciringa",
+          "translation": "gũciringa",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to redouble one's efforts",
+          "translation": "ĩciringa",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of ĩciringa",
+          "translation": "gwĩciringa",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Perfect aspect marker for hodiernal and hesternal past",
+          "translation": "-ĩte",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Perfect aspect marker for pre-hesternal past",
+          "translation": "-ĩte",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "Negative form of second person singular, noun class 14, and the relative noun class 1 verbal affixes.",
+          "translation": "ndũ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "second person plural marker",
+          "translation": "-mũ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "reflexive marker",
+          "translation": "-ĩ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "noun class 14 marker on nouns and the preposition -a",
+          "translation": "ũ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "hodiernal future marker",
+          "translation": "-kũ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "second person object marker",
+          "translation": "-kũ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "noun class 7 marker on nouns, adjectives, and -a.",
+          "translation": "-kĩ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "noun class 7 marker in verbs",
+          "translation": "-kĩ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "first person marker",
+          "translation": "-N-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "noun class 9/10 and 8 noun and adjective concord",
+          "translation": "-N-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to come together, congregate",
+          "translation": "cokanĩrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "noun class 2 of -itũ",
+          "translation": "aitũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "first person plural marker on verbs",
+          "translation": "-tũ-",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of ũcũrũ",
+          "translation": "macũrũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to smear with porridge",
+          "translation": "haka macũrũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to ooze",
+          "translation": "cũrũrũka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of cũrũrũka",
+          "translation": "gũcũrũka",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to make trickle down, to make ooze",
+          "translation": "cũrũrũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of cũrũrũkia",
+          "translation": "gũcũrũrũkia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to flow, ooze, down along",
+          "translation": "cũrũrũkĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of cũrũrũkĩra",
+          "translation": "gũcũrũrũkĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to weep for, at",
+          "translation": "cũrũrũkĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of cũrũrũkĩria",
+          "translation": "gũcũrũrũkĩria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "description of liquids oozing, trickling, flowing down",
+          "translation": "cũrũrũrũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to look at something in the distance",
+          "translation": "cũũtha",
+          "pronunciation": "ʃòːðà",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to caress, to play with",
+          "translation": "meema",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "infinitive of meema",
+          "translation": "kũmeema",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to play with, tease",
+          "translation": "meemia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "one who, by their action, provokes others to take action",
+          "translation": "kĩmeemia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to spar, fence, feint",
+          "translation": "meemania",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "reciprocal of meema",
+          "translation": "meemana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of mũthũngũ",
+          "translation": "athũngũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "alternative form of Mũthũngũ",
+          "translation": "mũthũngũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "the English language",
+          "translation": "Gĩthũngũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "applicative of twara",
+          "translation": "twarĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to assist someone in taking something somewhere",
+          "translation": "twaria",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to help one another in delivering, taking something somewhere",
+          "translation": "twarania",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to accompany one another (in going, taking something somewhere)",
+          "translation": "twarana",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "transitive of twara",
+          "translation": "twarithia",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to push towards",
+          "translation": "twarĩrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to push one's way onto/into",
+          "translation": "ĩtwarĩrĩra",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "plural of ũndũ (“affair, matter”)",
+          "translation": "maũndũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "act, deed, event",
+          "translation": "ũndũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "to take oneself somewhere, to go alone",
+          "translation": "ĩtwara",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
+        },
+        {
+          "english": "wet",
+          "translation": "-igũ",
+          "pronunciation": "",
+          "context": "Kaikki.org Wiktionary Kikuyu (CC-BY-SA-4.0, https://kaikki.org/dictionary/Kikuyu/kaikki.org-dictionary-Kikuyu.jsonl)"
         }
       ]
     },
@@ -144905,5 +147084,5 @@
   "source": "The Thiomi Dataset (CC-BY-4.0), Google SMOL/GATITOS (en_kik, CC-BY-4.0), African Next Voices Kenya (5 Gikuyu dialects, CC-BY-4.0), CGIAR Kikuyu–English (Apache-2.0), LughaGen (CC-BY-SA-4.0), Mich-Seth Owusu Emotion & Parallel Corpora (MIT/CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (Höhnel 1894, Hémery 1903, Hinde 1904, McGregor 1904/1905, Routledge 1910, Hobley 1910/1922, Barlow 1914/1951, Dundas 1915, Werner 1915, Johnston 1919, Beech 1920 & Kencorpus/ANV 2022–2026); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kik",
   "glottocode": "kiku1240",
-  "totalEntries": 25764
+  "totalEntries": 26126
 }

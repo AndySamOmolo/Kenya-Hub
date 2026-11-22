@@ -2,7 +2,8 @@
 "use client";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Flame, Heart, RotateCcw, Zap } from "lucide-react";
+import { Flame, Heart, RotateCcw, Volume2, Zap } from "lucide-react";
+import { hasVerifiedAudio, playLanguageAudio } from "@/lib/language-audio";
 import {
   playCorrectSfx,
   playWrongSfx,
@@ -14,6 +15,7 @@ import { type GameProps, shuffle, cleanQuizGloss, isValidQuizPair, pickBalancedD
 export function VocabQuizGame({
   allWords,
   languageName,
+  languageId,
   onAwardXp,
   onRecordWordResult,
   onUpdateGameStats,

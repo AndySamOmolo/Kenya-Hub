@@ -20,6 +20,11 @@ const EXCLUDED_DATA_DIRS = new Set([
   "cldf-cache",
   "benchmarks",
   "frequency-lists",
+  "civic",
+  "readers",
+  "wikimedia",
+  "locales",
+  "staging",
 ]);
 
 function ensureDir(dir) {
@@ -50,6 +55,9 @@ function copyDirFiltered(srcDir, destDir) {
 }
 
 rmSync(resolve(destination, "data/language-sources/raw"), { recursive: true, force: true });
+for (const unusedDir of ["civic", "readers", "wikimedia", "locales", "dictionaries/staging"]) {
+  rmSync(resolve(destination, "data", unusedDir), { recursive: true, force: true });
+}
 rmSync(resolve(destination, "data/language-sources/ocr-review.ts"), { force: true });
 rmSync(resolve(destination, "lib/dictionary-loader.ts"), { force: true });
 copyDirFiltered(resolve(source, "data"), resolve(destination, "data"));
@@ -88,11 +96,6 @@ if (existsSync(registryPath)) {
 }
 
 // Sync verified audio & KSL manifest metadata from kenyahub/public/
-const openCorpusSrc = resolve(root, "kenyahub/src/data/open-corpus-index.json");
-if (existsSync(openCorpusSrc)) {
-  writeFileSync(resolve(destination, "data/open-corpus-index.json"), readFileSync(openCorpusSrc));
-}
-
 const audioManifestSrc = resolve(root, "kenyahub/public/audio-manifest.json");
 if (existsSync(audioManifestSrc)) {
   writeFileSync(resolve(destination, "data/audio-manifest.json"), readFileSync(audioManifestSrc));
@@ -106,11 +109,15 @@ if (existsSync(kslIndexSrc)) {
 const webDataDir = resolve(source, "data");
 const mobDataDir = resolve(destination, "data");
 const jsonFiles = readdirSync(webDataDir).filter((f) => f.endsWith(".json"));
+const dictJsonFiles = readdirSync(join(webDataDir, "dictionaries"))
+  .filter((f) => f.endsWith(".json"))
+  .map((f) => `dictionaries/${f}`);
 const extraParityFiles = [
   "language-sources/index.ts",
   "language-typology/profiles.json",
   "open-corpus-index.json",
   "dictionaries/catalog.ts",
+  ...dictJsonFiles,
 ];
 
 let verifiedCount = 0;

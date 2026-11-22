@@ -5447,11 +5447,6 @@
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "Fire",
-          "translation": "akim",
-          "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
-        },
-        {
           "english": "Fire (plural)",
           "translation": "ngakimia",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
@@ -16346,11 +16341,6 @@
           "context": "Juxon Barton (1921) — Adverbs • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
         },
         {
-          "english": "What?",
-          "translation": "nyo?",
-          "context": "Verified comparative entry across Kenyan nilotic corpus • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
-        },
-        {
           "english": "Barrel",
           "translation": "emolich",
           "context": "Juxon Barton (1921) Turkana Vocabulary • Cross-verified with Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0)"
@@ -18390,5 +18380,5 @@
   "source": "Sunbird AI SALT & SALT-31 Ng'aturkana (CC-BY-4.0), CLDF ASJP v20 TURKANA (Best 1983 / Brown, CC-BY-4.0), SIL Bloom Ng'aturkana CC-BY-4.0 & Public Domain Historical Lexicons (Höhnel 1894, Johnston 1902, Purvis 1909, Dundas 1910, Beech 1911 & Juxon Barton 1921)",
   "isoCode": "tuv",
   "glottocode": "turk1308",
-  "totalEntries": 3237
+  "totalEntries": 3235
 }

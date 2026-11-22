@@ -6,7 +6,7 @@ on:
       force_reingest:
         description: "Re-run ingestion even if scriptsHash in .audio-ingested-lock.json matches"
         required: false
-        default: "true"
+        default: "false"
         type: string
       max_clips_per_dataset:
         description: "Maximum audio clips to transcode & upload per dataset split (default 250)"
@@ -65,6 +65,8 @@ on:
       - "kenyahub/scripts/ingest-pmc-ethnobotany.py"
       - "kenyahub/scripts/ingest-external-datasets.mjs"
       - "kenyahub/scripts/sync-cloudflare-r2-audio.mjs"
+      - "kenyahub/scripts/build-open-corpus-index.py"
+      - "mobile/scripts/sync-data.mjs"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -74,7 +76,7 @@ jobs:
   ingest-datasets:
     name: Stream Open-Access Text, CLDF, KSL & Audio Datasets -> Repo & Cloudflare R2
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     permissions:
       contents: write
 
@@ -96,6 +98,8 @@ jobs:
             kenyahub/scripts/ingest-pmc-ethnobotany.py \
             kenyahub/scripts/ingest-external-datasets.mjs \
             kenyahub/scripts/sync-cloudflare-r2-audio.mjs \
+            kenyahub/scripts/build-open-corpus-index.py \
+            mobile/scripts/sync-data.mjs \
             | sha256sum | awk '{print $1}')
           echo "scripts_hash=$CURRENT_HASH" >> "$GITHUB_OUTPUT"
 
@@ -150,7 +154,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg libsndfile1
           pip install --upgrade pip
-          pip install "datasets>=2.19.0,<4.0.0" soundfile librosa boto3 requests pyarrow huggingface_hub pypdf datacollective
+          pip install "datasets>=2.19.0,<4.0.0" numpy soundfile librosa boto3 requests pyarrow huggingface_hub pypdf "datacollective>=0.7.1"
 
       - name: Install Web Dependencies
         if: steps.lock_check.outputs.skip != 'true'
@@ -166,6 +170,8 @@ jobs:
           INCLUDE_CLDF: ${{ inputs.include_cldf_wikimedia_civic || 'true' }}
           INCLUDE_KAIKKI: ${{ inputs.include_kaikki_raw || 'true' }}
           INCLUDE_FREQ: ${{ inputs.include_freq_lists || 'true' }}
+          FORCE_REINGEST: ${{ inputs.force_reingest || 'false' }}
+          RETRY_PENDING_ONLY: ${{ inputs.retry_pending_only || 'true' }}
         run: |
           node scripts/ingest-external-datasets.mjs
           TEXT_FLAGS="--max-rows=2500 --include-oer --include-benchmarks"
@@ -199,8 +205,9 @@ jobs:
           INCLUDE_MDC_COMMON_VOICE: ${{ inputs.include_mdc_common_voice || 'true' }}
           INCLUDE_LINGUA_LIBRE: ${{ inputs.include_lingua_libre || 'true' }}
           INCLUDE_KSL_METADATA: ${{ inputs.include_ksl_metadata || 'true' }}
-          MAX_KSL_MASENO_VIDEOS: "2000"
-          MAX_KSL_HUMAN_VIDEOS: "1000"
+          MAX_KSL_MASENO_VIDEOS: "0"
+          MAX_KSL_HUMAN_VIDEOS: "0"
+          KSL_TIME_BUDGET_SEC: "3600"
           PER_DATASET_TIMEOUT_SEC: "150"
           GLOBAL_TIME_BUDGET_SEC: "4800"
           INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
@@ -215,6 +222,7 @@ jobs:
         if: steps.lock_check.outputs.skip != 'true'
         run: |
           node kenyahub/scripts/clean-removed-tools.mjs
+          python3 -u kenyahub/scripts/ci-ingest-audio-and-text-r2.py --sync-only
           python3 -u kenyahub/scripts/build-open-corpus-index.py
           node mobile/scripts/sync-data.mjs
           npm --prefix kenyahub run audit:tools:strict
@@ -225,10 +233,55 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A kenyahub/src/data/dictionaries kenyahub/src/data/language-sources kenyahub/src/data/courses/proverbs kenyahub/src/data/language-typology kenyahub/src/data/open-corpus-index.json kenyahub/src/data/locales kenyahub/src/data/readers kenyahub/src/data/benchmarks kenyahub/src/data/frequency-lists kenyahub/src/data/civic kenyahub/src/data/wikimedia kenyahub/public/audio-manifest.json kenyahub/public/.audio-ingested-lock.json kenyahub/public/r2-audio-index.json kenyahub/public/ksl-index.json kenyahub/public/dholuo-audio-chapters.json kenyahub/reports/tool-audit.json mobile/src/shared/ || true
+          for p in \
+            kenyahub/src/data/dictionaries \
+            kenyahub/src/data/language-sources \
+            kenyahub/src/data/courses/proverbs \
+            kenyahub/src/data/language-typology \
+            kenyahub/src/data/open-corpus-index.json \
+            kenyahub/src/data/locales \
+            kenyahub/src/data/readers \
+            kenyahub/src/data/benchmarks \
+            kenyahub/src/data/frequency-lists \
+            kenyahub/src/data/civic \
+            kenyahub/src/data/wikimedia \
+            kenyahub/public/data/learning \
+            kenyahub/public/audio-manifest.json \
+            kenyahub/public/.audio-ingested-lock.json \
+            kenyahub/public/.text-ingested-lock.json \
+            kenyahub/public/r2-audio-index.json \
+            kenyahub/public/ksl-index.json \
+            kenyahub/public/dholuo-audio-chapters.json \
+            kenyahub/reports/tool-audit.json \
+            mobile/src/shared; do
+            [ -e "$p" ] && git add -A -- "$p"
+          done
           if ! git diff --staged --quiet; then
             git commit -m "feat(data): ingest commercially permissive audio, KSL, text, PanLex, CLDR 49, Kaikki & CLDF datasets"
-            git pull --rebase --autostash origin ${GITHUB_REF_NAME}
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin "${GITHUB_REF_NAME}"
+            if ! git rebase "origin/${GITHUB_REF_NAME}"; then
+              mapfile -t conflicted < <(git diff --name-only --diff-filter=U)
+              unexpected_conflict=false
+              for file in "${conflicted[@]}"; do
+                case "$file" in
+                  kenyahub/src/data/dictionaries/*|kenyahub/src/data/language-sources/*|kenyahub/src/data/courses/proverbs/*|kenyahub/src/data/language-typology/*|kenyahub/src/data/open-corpus-index.json|kenyahub/src/data/locales/*|kenyahub/src/data/readers/*|kenyahub/src/data/benchmarks/*|kenyahub/src/data/frequency-lists/*|kenyahub/src/data/civic/*|kenyahub/src/data/wikimedia/*|kenyahub/public/data/learning/*|kenyahub/public/audio-manifest.json|kenyahub/public/.audio-ingested-lock.json|kenyahub/public/.text-ingested-lock.json|kenyahub/public/r2-audio-index.json|kenyahub/public/ksl-index.json|kenyahub/public/dholuo-audio-chapters.json|kenyahub/reports/tool-audit.json|mobile/src/shared/*)
+                    git checkout --theirs -- "$file"
+                    git add -- "$file"
+                    ;;
+                  *)
+                    echo "::error::Unexpected conflict in $file; refusing to overwrite repository changes."
+                    unexpected_conflict=true
+                    ;;
+                esac
+              done
+              if [ "$unexpected_conflict" = "true" ]; then
+                git rebase --abort
+                exit 1
+              fi
+              GIT_EDITOR=true git rebase --continue
+            fi
             git push origin HEAD:${GITHUB_REF_NAME}
           else
             echo "No dictionary or manifest changes to commit."

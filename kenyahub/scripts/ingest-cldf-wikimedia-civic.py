@@ -3,19 +3,12 @@
 kenyahub/scripts/ingest-cldf-wikimedia-civic.py
 
 Complete Ingestion Pipeline for Kenya-Hub's Commercially Permissive:
-  1. CLDF, Typology & Morphology Databases (14 sources):
-     Glottolog 5.4, Grambank, WALS, PHOIBLE 2.0, Numeralbank (Chan),
-     Lexibank 2 (filtering out NC `grollemundbantu` & `tls`), APiCS Kinubi (#63),
-     IDS, CLICS3, D-PLACE, Concepticon 3.4.1, AfBo 2.0, UniMorph Swahili (`swc`),
-     Tsammalex.
-  2. Wikimedia & Open Lexicons:
-     Wikidata Lexemes (SPARQL), Wikimedia Incubator (`Wp/luo`, `Wp/niq`),
-     Swahili Wikisource, Kenyan Wikipedias, Native Wiktionaries, FreeDict TEI.
-     (Apertium `apertium-swa` GPL-3.0 remains an isolated microservice.)
-  3. Civic, Demographic & Agricultural Reference Datasets:
-     CLEAR Global Kenya Languages (HDX API), rKenyaCensus, kenya-geo,
-     Constitution of Kenya 2010 (raw statutory text from Parliament PDF ONLY),
-     Helmets Kenya Crop v2 (Zenodo 15467063), CGIAR CGSpace.
+  1. CLDF, Typology & Morphology Databases (14 sources)
+  2. Wikimedia & Open Lexicons (6 sources)
+  3. Civic, Demographic & Agricultural Reference Datasets (14 sources)
+
+Supports idempotent skipping: existing non-empty output JSON files are skipped when
+RETRY_PENDING_ONLY=true and FORCE_REINGEST!=true (unless --force is passed).
 """
 
 from __future__ import annotations
@@ -24,6 +17,7 @@ import argparse
 import csv
 import io
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -48,7 +42,7 @@ CIVIC_DIR = ROOT_DIR / "src" / "data" / "civic"
 WIKIMEDIA_DIR = ROOT_DIR / "src" / "data" / "wikimedia"
 
 HTTP_SESSION = requests.Session()
-HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-CLDF-Wikimedia-Civic-Ingestor/2.0"})
+HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-CLDF-Wikimedia-Civic-Ingestor/2.1 (https://kenyahub.me; contact@kenyahub.me)"})
 
 KENYAN_GLOTTOCODES = frozenset({
     "swah1253", "kiku1240", "luok1236", "luyi1234", "kamb1297", "kale1246", "gusi1247",
@@ -97,38 +91,53 @@ CIVIC_AGRI_SOURCES: list[dict[str, Any]] = [
     {"id": "osm-geofabrik-kenya", "name": "OpenStreetMap (Geofabrik Kenya Extract)", "license": "ODbL-1.0", "url": "https://download.geofabrik.de/africa/kenya.html"},
     {"id": "gbif-kenya-filtered", "name": "GBIF Kenya Occurrences (CC0_1_0 / CC_BY_4_0 only)", "license": "CC0-1.0 / CC-BY-4.0", "url": "https://api.gbif.org/v1/occurrence/search?country=KE&license=CC0_1_0&license=CC_BY_4_0&limit=300"},
     {"id": "vascular-flora-kenya-mdpi", "name": "Vascular Flora of Kenya & FTEA Checklists (MDPI Plants 12/6/1336)", "license": "CC-BY-4.0", "url": "https://www.mdpi.com/2223-7747/12/6/1336"},
-    {"id": "global-useful-native-trees-globunt", "name": "GlobalUsefulNativeTrees (GlobUNT, CIFOR-ICRAF, PMC10400654)", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10400654/"}
+    {"id": "global-useful-native-trees-globunt", "name": "GlobalUsefulNativeTrees (GlobUNT, CIFOR-ICRAF, PMC10400654)", "license": "CC-BY-4.0", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10400654/"},
 ]
 
 
-def ingest_cldf_databases(dry_run: bool) -> None:
+def should_skip_existing(path: Path, force: bool, retry_pending_only: bool) -> bool:
+    if force or not retry_pending_only:
+        return False
+    return path.exists() and path.stat().st_size > 200
+
+
+def ingest_cldf_databases(dry_run: bool, force: bool = False, retry_pending_only: bool = True) -> None:
     print(f"[CLDF] Ingesting Grambank, WALS, PHOIBLE, APiCS #63, Numeralbank, Concepticon & UniMorph swc -> {TYPOLOGY_DIR}")
     if dry_run:
         return
     TYPOLOGY_DIR.mkdir(parents=True, exist_ok=True)
 
     # 1. UniMorph Swahili (swc)
-    try:
-        r = HTTP_SESSION.get("https://raw.githubusercontent.com/unimorph/swc/master/swc", timeout=30)
-        if r.ok:
-            rows = [{"lemma": p[0], "form": p[1], "features": p[2]} for ln in r.text.splitlines() if len(p := ln.split("\t")) >= 3]
-            (TYPOLOGY_DIR / "unimorph-swc.json").write_text(json.dumps({"license": "CC-BY-SA-3.0", "count": len(rows), "entries": rows[:5000]}, indent=2, ensure_ascii=False), encoding="utf-8")
-    except Exception as exc:
-        print(f"  [warn] UniMorph swc: {exc}")
+    out_p = TYPOLOGY_DIR / "unimorph-swc.json"
+    if should_skip_existing(out_p, force, retry_pending_only):
+        print(f"  [skip-done] {out_p.name} already ingested.")
+    else:
+        try:
+            r = HTTP_SESSION.get("https://raw.githubusercontent.com/unimorph/swc/master/swc", timeout=30)
+            if r.ok:
+                rows = [{"lemma": p[0], "form": p[1], "features": p[2]} for ln in r.text.splitlines() if len(p := ln.split("\t")) >= 3]
+                out_p.write_text(json.dumps({"license": "CC-BY-SA-3.0", "count": len(rows), "entries": rows[:5000]}, indent=2, ensure_ascii=False), encoding="utf-8")
+        except Exception as exc:
+            print(f"  [warn] UniMorph swc: {exc}")
 
     # 2. Numeralbank (Chan)
-    try:
-        r = HTTP_SESSION.get("https://raw.githubusercontent.com/numeralbank/channumerals/main/cldf/forms.csv", timeout=45)
-        if r.ok:
-            kept = [
-                {"languageId": row.get("Language_ID"), "parameter": row.get("Parameter_ID"), "form": row.get("Form")}
-                for row in csv.DictReader(io.StringIO(r.text))
-                if is_allowed_cldf_constituent(row.get("Contribution_ID") or row.get("Dataset"))
-                and any(g in (row.get("Language_ID") or "").lower() for g in KENYAN_GLOTTOCODES)
-            ]
-            (TYPOLOGY_DIR / "numeralbank-kenya.json").write_text(json.dumps({"license": "CC-BY-4.0", "count": len(kept), "entries": kept}, indent=2, ensure_ascii=False), encoding="utf-8")
-    except Exception as exc:
-        print(f"  [warn] Numeralbank: {exc}")
+    out_p = TYPOLOGY_DIR / "numeralbank-kenya.json"
+    if should_skip_existing(out_p, force, retry_pending_only):
+        print(f"  [skip-done] {out_p.name} already ingested.")
+    else:
+        try:
+            r = HTTP_SESSION.get("https://raw.githubusercontent.com/numeralbank/channumerals/main/cldf/forms.csv", timeout=45)
+            if r.ok:
+                kept = [
+                    {"languageId": row.get("Language_ID"), "parameter": row.get("Parameter_ID"), "form": row.get("Form")}
+                    for row in csv.DictReader(io.StringIO(r.text))
+                    if is_allowed_cldf_constituent(row.get("Contribution_ID") or row.get("Dataset"))
+                    and any(g in (row.get("Language_ID") or "").lower() for g in KENYAN_GLOTTOCODES)
+                ]
+                if kept:
+                    out_p.write_text(json.dumps({"license": "CC-BY-4.0", "count": len(kept), "entries": kept}, indent=2, ensure_ascii=False), encoding="utf-8")
+        except Exception as exc:
+            print(f"  [warn] Numeralbank: {exc}")
 
     # 3. Grambank & APiCS #63 (Kinubi) & PHOIBLE 2.0 (streaming CSV line-by-line)
     for fname, url, out_name, match_col, match_vals in (
@@ -136,6 +145,10 @@ def ingest_cldf_databases(dry_run: bool) -> None:
         ("APiCS #63 Kinubi", "https://raw.githubusercontent.com/cldf-datasets/apics/master/cldf/values.csv", "apics-kinubi-63.json", "Language_ID", frozenset({"63"})),
         ("PHOIBLE 2.0", "https://raw.githubusercontent.com/phoible/dev/master/data/phoible.csv", "phoible-kenya.json", "Glottocode", KENYAN_GLOTTOCODES),
     ):
+        out_p = TYPOLOGY_DIR / out_name
+        if should_skip_existing(out_p, force, retry_pending_only):
+            print(f"  [skip-done] {out_name} already ingested.")
+            continue
         try:
             with HTTP_SESSION.get(url, stream=True, timeout=60) as resp:
                 if not resp.ok:
@@ -148,34 +161,40 @@ def ingest_cldf_databases(dry_run: bool) -> None:
                         kept.append(row)
                     if len(kept) >= 8000:
                         break
-                (TYPOLOGY_DIR / out_name).write_text(json.dumps({"source": url, "count": len(kept), "rows": kept}, indent=2, ensure_ascii=False), encoding="utf-8")
+                if kept:
+                    out_p.write_text(json.dumps({"source": url, "count": len(kept), "rows": kept}, indent=2, ensure_ascii=False), encoding="utf-8")
         except Exception as exc:
             print(f"  [warn] {fname}: {exc}")
 
 
-def ingest_wikimedia_sources(dry_run: bool) -> None:
+def ingest_wikimedia_sources(dry_run: bool, force: bool = False, retry_pending_only: bool = True) -> None:
     print(f"[Wikimedia] Ingesting Wikidata Lexemes, Incubator (Wp/luo, Wp/niq), Swahili Wikisource & Kenyan Wikipedias -> {WIKIMEDIA_DIR}")
     if dry_run:
         return
     WIKIMEDIA_DIR.mkdir(parents=True, exist_ok=True)
 
     # 1. Wikidata Lexemes SPARQL (CC0-1.0)
-    try:
-        sparql = """
-        SELECT ?lexeme ?lemma ?langLabel WHERE {
-          VALUES ?lang { wd:Q7838 wd:Q33620 wd:Q6392859 wd:Q33587 wd:Q5414796 }
-          ?lexeme dct:language ?lang ; wikibase:lemma ?lemma .
-          SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
-        } LIMIT 500
-        """
-        r = HTTP_SESSION.get("https://query.wikidata.org/sparql", params={"query": sparql, "format": "json"}, headers={"Accept": "application/sparql-results+json"}, timeout=30)
-        if r.ok:
-            items = [{"lexeme": b["lexeme"]["value"], "lemma": b["lemma"]["value"], "language": b.get("langLabel", {}).get("value", "")} for b in r.json().get("results", {}).get("bindings", [])]
-            (WIKIMEDIA_DIR / "wikidata-lexemes-kenya.json").write_text(json.dumps({"license": "CC0-1.0", "count": len(items), "lexemes": items}, indent=2, ensure_ascii=False), encoding="utf-8")
-    except Exception as exc:
-        print(f"  [warn] Wikidata Lexemes: {exc}")
+    out_p = WIKIMEDIA_DIR / "wikidata-lexemes-kenya.json"
+    if should_skip_existing(out_p, force, retry_pending_only):
+        print(f"  [skip-done] {out_p.name} already ingested.")
+    else:
+        try:
+            sparql = """
+            SELECT ?lexeme ?lemma ?langLabel WHERE {
+              VALUES ?lang { wd:Q7838 wd:Q33620 wd:Q6392859 wd:Q33587 wd:Q5414796 }
+              ?lexeme dct:language ?lang ; wikibase:lemma ?lemma .
+              SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+            } LIMIT 500
+            """
+            r = HTTP_SESSION.get("https://query.wikidata.org/sparql", params={"query": sparql, "format": "json"}, headers={"Accept": "application/sparql-results+json"}, timeout=30)
+            if r.ok:
+                items = [{"lexeme": b["lexeme"]["value"], "lemma": b["lemma"]["value"], "language": b.get("langLabel", {}).get("value", "")} for b in r.json().get("results", {}).get("bindings", [])]
+                if items:
+                    out_p.write_text(json.dumps({"license": "CC0-1.0", "count": len(items), "lexemes": items}, indent=2, ensure_ascii=False), encoding="utf-8")
+        except Exception as exc:
+            print(f"  [warn] Wikidata Lexemes: {exc}")
 
-    # 2. Wikimedia Incubator (Wp/luo, Wp/niq) & Swahili Wikisource
+    # 2. Wikimedia Incubator (Wp/luo, Wp/niq, Wp/sgc, Wp/pko) & Swahili Wikisource
     for name, api, params, out_name in (
         ("Incubator Wp/luo", "https://incubator.wikimedia.org/w/api.php", {"action": "query", "list": "allpages", "apprefix": "Wp/luo/", "aplimit": 200, "format": "json"}, "incubator-luo.json"),
         ("Incubator Wp/niq", "https://incubator.wikimedia.org/w/api.php", {"action": "query", "list": "allpages", "apprefix": "Wp/niq/", "aplimit": 200, "format": "json"}, "incubator-niq.json"),
@@ -183,59 +202,72 @@ def ingest_wikimedia_sources(dry_run: bool) -> None:
         ("Incubator Wp/pko", "https://incubator.wikimedia.org/w/api.php", {"action": "query", "list": "allpages", "apprefix": "Wp/pko/", "aplimit": 200, "format": "json"}, "incubator-pko.json"),
         ("Swahili Wikisource", "https://wikisource.org/w/api.php", {"action": "query", "list": "categorymembers", "cmtitle": "Category:Kiswahili", "cmlimit": 200, "format": "json"}, "wikisource-sw.json"),
     ):
+        out_p = WIKIMEDIA_DIR / out_name
+        if should_skip_existing(out_p, force, retry_pending_only):
+            print(f"  [skip-done] {out_name} already ingested.")
+            continue
         try:
             r = HTTP_SESSION.get(api, params=params, timeout=20)
             if r.ok:
-                (WIKIMEDIA_DIR / out_name).write_text(json.dumps({"license": "CC-BY-SA-4.0", "data": r.json().get("query", {})}, indent=2, ensure_ascii=False), encoding="utf-8")
+                out_p.write_text(json.dumps({"license": "CC-BY-SA-4.0", "data": r.json().get("query", {})}, indent=2, ensure_ascii=False), encoding="utf-8")
         except Exception as exc:
             print(f"  [warn] {name}: {exc}")
 
 
-def ingest_civic_agri_sources(dry_run: bool) -> None:
+def ingest_civic_agri_sources(dry_run: bool, force: bool = False, retry_pending_only: bool = True) -> None:
     print(f"[Civic & Agri] Ingesting HDX CLEAR Kenya Languages, rKenyaCensus, kenya-geo, Constitution 2010 raw text & Helmets Crop v2 -> {CIVIC_DIR}")
     if dry_run:
         return
     CIVIC_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 1. CLEAR Global HDX Kenya Languages + Helmets Kenya Crop v2 Zenodo metadata
     for label, url, out_name in (
         ("HDX Kenya Languages", "https://data.humdata.org/api/3/action/package_show?id=kenya-languages", "hdx-kenya-languages.json"),
         ("Helmets Crop v2", "https://zenodo.org/api/records/15467063", "helmets-kenya-crop-v2.json"),
         ("rKenyaCensus", "https://api.github.com/repos/Shelmith-Kariuki/rKenyaCensus/contents", "rkenyacensus-index.json"),
         ("kenya-geo", "https://api.github.com/repos/rmiyoyo/kenya-geo/contents", "kenya-geo-index.json"),
     ):
+        out_p = CIVIC_DIR / out_name
+        if should_skip_existing(out_p, force, retry_pending_only):
+            print(f"  [skip-done] {out_name} already ingested.")
+            continue
         try:
             r = HTTP_SESSION.get(url, timeout=25)
             if r.ok:
-                (CIVIC_DIR / out_name).write_text(json.dumps(r.json(), indent=2, ensure_ascii=False), encoding="utf-8")
+                out_p.write_text(json.dumps(r.json(), indent=2, ensure_ascii=False), encoding="utf-8")
         except Exception as exc:
             print(f"  [warn] {label}: {exc}")
 
-    # 2. Constitution of Kenya 2010 raw statutory text from Parliament PDF (NEVER Kenya Law / Laws.Africa NC-SA PDFs)
-    try:
-        pdf_url = "https://www.parliament.go.ke/sites/default/files/2017-05/The_Constitution_of_Kenya_2010.pdf"
-        assert_repo_allowed(pdf_url)
-        r = HTTP_SESSION.get(pdf_url, timeout=45)
-        if r.ok:
-            from pypdf import PdfReader
+    # Constitution of Kenya 2010 raw statutory text from Parliament PDF
+    out_p = CIVIC_DIR / "constitution-of-kenya-2010-raw.json"
+    if should_skip_existing(out_p, force, retry_pending_only):
+        print(f"  [skip-done] {out_p.name} already ingested.")
+    else:
+        try:
+            pdf_url = "https://www.parliament.go.ke/sites/default/files/2017-05/The_Constitution_of_Kenya_2010.pdf"
+            assert_repo_allowed(pdf_url)
+            r = HTTP_SESSION.get(pdf_url, timeout=45)
+            if r.ok:
+                from pypdf import PdfReader
 
-            reader = PdfReader(io.BytesIO(r.content))
-            pages = [p.extract_text() or "" for p in reader.pages]
-            (CIVIC_DIR / "constitution-of-kenya-2010-raw.json").write_text(
-                json.dumps({"source": pdf_url, "license": "No Copyright (Statutory)", "pageCount": len(pages), "textPreview": "\n".join(pages)[:50000]}, indent=2, ensure_ascii=False),
-                encoding="utf-8",
-            )
-    except Exception as exc:
-        print(f"  [warn] Constitution 2010 raw PDF extraction: {exc}")
+                reader = PdfReader(io.BytesIO(r.content))
+                pages = [p.extract_text() or "" for p in reader.pages]
+                out_p.write_text(
+                    json.dumps({"source": pdf_url, "license": "No Copyright (Statutory)", "pageCount": len(pages), "textPreview": "\n".join(pages)[:50000]}, indent=2, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+        except Exception as exc:
+            print(f"  [warn] Constitution 2010 raw PDF extraction: {exc}")
 
-
-
-    # Wave 2: HDX Kenya CC-BY-4.0 (WorldPop v2.0, FSD Markets, DLP Schools)
+    # Wave 2: HDX Kenya CC-BY-4.0
     for label, url, out_name in (
         ("HDX WorldPop v2.0", "https://data.humdata.org/api/3/action/package_show?id=gridded-disaggregated-population-estimates-for-kenya-version-2-0", "hdx-kenya-worldpop-v2.json"),
         ("HDX FSD Markets", "https://data.humdata.org/api/3/action/package_search?q=fsd+kenya+markets", "hdx-kenya-fsd-markets.json"),
         ("HDX DLP Schools", "https://data.humdata.org/api/3/action/package_search?q=kenya+dlp+primary+schools", "hdx-kenya-dlp-schools.json"),
     ):
+        out_p = CIVIC_DIR / out_name
+        if should_skip_existing(out_p, force, retry_pending_only):
+            print(f"  [skip-done] {out_name} already ingested.")
+            continue
         try:
             r = HTTP_SESSION.get(url, timeout=25)
             if r.ok:
@@ -245,49 +277,58 @@ def ingest_civic_agri_sources(dry_run: bool) -> None:
                         p for p in payload["result"]["results"]
                         if "cc-by" in str(p.get("license_id") or "").lower() and "nc" not in str(p.get("license_id") or "").lower()
                     ]
-                (CIVIC_DIR / out_name).write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+                out_p.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
         except Exception as exc:
             print(f"  [warn] {label}: {exc}")
 
-    # Wave 2: GeoNames KE.zip (CC-BY-4.0) & GBIF Kenya (strictly CC0_1_0 / CC_BY_4_0)
-    try:
-        import zipfile
-        r = HTTP_SESSION.get("https://download.geonames.org/export/dump/KE.zip", timeout=60)
-        if r.ok:
-            with zipfile.ZipFile(io.BytesIO(r.content)) as zf:
-                raw_tsv = zf.read("KE.txt").decode("utf-8", errors="ignore")
-            places = [
-                {"geonameid": c[0], "name": c[1], "asciiname": c[2], "lat": c[4], "lon": c[5], "featureClass": c[6]}
-                for ln in raw_tsv.splitlines()
-                for c in [ln.split("\t")]
-                if len(c) >= 15
-            ]
-            (CIVIC_DIR / "geonames-ke.json").write_text(
-                json.dumps({"source": "https://download.geonames.org/export/dump/KE.zip", "license": "CC-BY-4.0", "count": len(places), "places": places[:5000]}, indent=2, ensure_ascii=False),
-                encoding="utf-8",
-            )
-    except Exception as exc:
-        print(f"  [warn] GeoNames KE.zip: {exc}")
+    # Wave 2: GeoNames KE.zip (CC-BY-4.0)
+    out_p = CIVIC_DIR / "geonames-ke.json"
+    if should_skip_existing(out_p, force, retry_pending_only):
+        print(f"  [skip-done] {out_p.name} already ingested.")
+    else:
+        try:
+            import zipfile
+            r = HTTP_SESSION.get("https://download.geonames.org/export/dump/KE.zip", timeout=60)
+            if r.ok:
+                with zipfile.ZipFile(io.BytesIO(r.content)) as zf:
+                    raw_tsv = zf.read("KE.txt").decode("utf-8", errors="ignore")
+                places = [
+                    {"geonameid": c[0], "name": c[1], "asciiname": c[2], "lat": c[4], "lon": c[5], "featureClass": c[6]}
+                    for ln in raw_tsv.splitlines()
+                    for c in [ln.split("\t")]
+                    if len(c) >= 15
+                ]
+                out_p.write_text(
+                    json.dumps({"source": "https://download.geonames.org/export/dump/KE.zip", "license": "CC-BY-4.0", "count": len(places), "places": places[:5000]}, indent=2, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+        except Exception as exc:
+            print(f"  [warn] GeoNames KE.zip: {exc}")
 
-    try:
-        gbif_allowed = frozenset({"CC0_1_0", "CC_BY_4_0", "http://creativecommons.org/publicdomain/zero/1.0/legalcode", "http://creativecommons.org/licenses/by/4.0/legalcode"})
-        r = HTTP_SESSION.get(
-            "https://api.gbif.org/v1/occurrence/search",
-            params=[("country", "KE"), ("license", "CC0_1_0"), ("license", "CC_BY_4_0"), ("limit", "300")],
-            timeout=30,
-        )
-        if r.ok:
-            rows = [
-                {"key": rec.get("key"), "scientificName": rec.get("scientificName"), "vernacularName": rec.get("vernacularName"), "locality": rec.get("locality"), "license": rec.get("license")}
-                for rec in r.json().get("results", [])
-                if rec.get("license") in gbif_allowed
-            ]
-            (CIVIC_DIR / "gbif-kenya-filtered.json").write_text(
-                json.dumps({"source": "https://api.gbif.org/v1/occurrence/search?country=KE", "license": "CC0-1.0 / CC-BY-4.0", "count": len(rows), "records": rows}, indent=2, ensure_ascii=False),
-                encoding="utf-8",
+    # Wave 2: GBIF Kenya (strictly CC0_1_0 / CC_BY_4_0)
+    out_p = CIVIC_DIR / "gbif-kenya-filtered.json"
+    if should_skip_existing(out_p, force, retry_pending_only):
+        print(f"  [skip-done] {out_p.name} already ingested.")
+    else:
+        try:
+            gbif_allowed = frozenset({"CC0_1_0", "CC_BY_4_0", "http://creativecommons.org/publicdomain/zero/1.0/legalcode", "http://creativecommons.org/licenses/by/4.0/legalcode"})
+            r = HTTP_SESSION.get(
+                "https://api.gbif.org/v1/occurrence/search",
+                params=[("country", "KE"), ("license", "CC0_1_0"), ("license", "CC_BY_4_0"), ("limit", "300")],
+                timeout=30,
             )
-    except Exception as exc:
-        print(f"  [warn] GBIF Kenya: {exc}")
+            if r.ok:
+                rows = [
+                    {"key": rec.get("key"), "scientificName": rec.get("scientificName"), "vernacularName": rec.get("vernacularName"), "locality": rec.get("locality"), "license": rec.get("license")}
+                    for rec in r.json().get("results", [])
+                    if rec.get("license") in gbif_allowed
+                ]
+                out_p.write_text(
+                    json.dumps({"source": "https://api.gbif.org/v1/occurrence/search?country=KE", "license": "CC0-1.0 / CC-BY-4.0", "count": len(rows), "records": rows}, indent=2, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+        except Exception as exc:
+            print(f"  [warn] GBIF Kenya: {exc}")
 
 
 def write_catalog_manifest() -> None:
@@ -306,8 +347,12 @@ def write_catalog_manifest() -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="KenyaHub CLDF, Wikimedia & Civic/Agri Commercially-Permissive Ingestor")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true")
     parser.add_argument("--track", choices=("all", "cldf", "wikimedia", "civic"), default="all")
     args = parser.parse_args()
+
+    force = args.force or os.environ.get("FORCE_REINGEST", "").strip().lower() in {"1", "true", "yes"}
+    retry_pending_only = os.environ.get("RETRY_PENDING_ONLY", "true").strip().lower() in {"1", "true", "yes"}
 
     print("=== KenyaHub CLDF, Wikimedia & Civic/Agri Ingestor ===")
     for src in CLDF_SOURCES + WIKIMEDIA_SOURCES + CIVIC_AGRI_SOURCES:
@@ -323,11 +368,11 @@ def main() -> None:
 
     write_catalog_manifest()
     if args.track in ("all", "cldf"):
-        ingest_cldf_databases(dry_run=False)
+        ingest_cldf_databases(dry_run=False, force=force, retry_pending_only=retry_pending_only)
     if args.track in ("all", "wikimedia"):
-        ingest_wikimedia_sources(dry_run=False)
+        ingest_wikimedia_sources(dry_run=False, force=force, retry_pending_only=retry_pending_only)
     if args.track in ("all", "civic"):
-        ingest_civic_agri_sources(dry_run=False)
+        ingest_civic_agri_sources(dry_run=False, force=force, retry_pending_only=retry_pending_only)
     print("Completed CLDF, Wikimedia & Civic/Agri ingestion.")
 
 

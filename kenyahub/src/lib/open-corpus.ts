@@ -12,6 +12,12 @@ export interface OpenCorpusFrequencyWord {
   count?: number | null;
 }
 
+export interface OpenCorpusNativeAudioSample {
+  slug: string;
+  label: string;
+  audioUrl: string;
+}
+
 export interface OpenCorpusAudioChapter {
   id: string;
   number: number;
@@ -50,13 +56,25 @@ export interface KslStorybookItem {
   description: string;
 }
 
+export interface LanguageShardSummary {
+  audioCount: number;
+  storiesCount: number;
+  sentencesCount: number;
+  articlesCount: number;
+  quizCount: number;
+  freqCount: number;
+  hasGrammarShard: boolean;
+}
+
 export interface OpenCorpusLanguageData {
   languageId: string;
   r2AudioClips: number;
+  nativeAudioSamples?: OpenCorpusNativeAudioSample[];
   cldr: {
     locale: string;
     months: string[];
     days: string[];
+    currencyName?: string | null;
     license: string;
   } | null;
   typology: {
@@ -70,6 +88,7 @@ export interface OpenCorpusLanguageData {
     phoibleSegments?: number | null;
     unimorphEntries?: number | null;
   } | null;
+  grambankFeatures?: number;
   sampleReadings: OpenCorpusReading[];
   topFrequencyWords: OpenCorpusFrequencyWord[];
   wikimedia: { id: string; count: number; license: string }[];
@@ -78,6 +97,8 @@ export interface OpenCorpusLanguageData {
   phonemes?: string[];
   morphologySamples?: { lemma: string; form: string; features: string }[];
   wikimediaArticles?: { title: string; url: string; source: string }[];
+  wikidataLexemes?: string[];
+  shards?: LanguageShardSummary;
 }
 
 export interface StagedVariety {
@@ -88,6 +109,7 @@ export interface StagedVariety {
   family: string;
   counties: string[];
   totalEntries: number;
+  grammarFeatureCount?: number;
   sampleEntries: {
     english: string;
     translation: string;
@@ -107,6 +129,7 @@ export interface OpenCorpusIndex {
     totalStagedEntries: number;
     totalBenchmarkRows: number;
     totalReaderSentences: number;
+    totalQuizQuestions?: number;
     totalCivicDatasets: number;
     totalWikimediaDatasets: number;
     pendingGatedCount: number;
@@ -133,6 +156,7 @@ export interface OpenCorpusIndex {
     }[];
     videos?: KslVideoItem[];
     storybooks?: KslStorybookItem[];
+    wikidataLexemes?: string[];
     videoCount?: number;
     extractedSignCount?: number;
     glossCount: number;

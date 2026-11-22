@@ -127,7 +127,7 @@ export const TOOLS: Tool[] = [
     category: 'language-learning',
     keywords: ['learn Kenyan languages', 'Kikuyu proverbs Thimo cia Gikuyu', 'Dholuo proverbs and riddles', 'jifunze lugha za Kenya', 'methali za Kiswahili', 'Swahili Kikuyu Luo Luhya Kamba Kisii Maasai Kalenjin lessons'],
     updateFrequency: 'periodic',
-    dataSource: 'Verified East African Linguistic Corpus & Unicode CLDR',
+    dataSource: 'Verified Kenyan Language Dictionaries',
     isLive: true,
     icon: '🗣️',
   },

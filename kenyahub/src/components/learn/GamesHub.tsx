@@ -460,7 +460,7 @@ export default function GamesHub({
   );
 
   const sharedGameProps = {
-    allWords: scopedWords,
+    allWords: gameWords,
     courseUnits: effectiveCourseUnits,
     allUnits: units,
     languageName,

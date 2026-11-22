@@ -89,7 +89,7 @@ MAX_CLIPS = int(os.environ.get("MAX_CLIPS_PER_DATASET") or "250")
 MAX_TEXT_ROWS = int(os.environ.get("MAX_TEXT_ROWS_PER_DATASET") or "3000")
 
 HTTP_SESSION = requests.Session()
-HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-R2-Audio-Ingestor/2.2"})
+HTTP_SESSION.headers.update({"User-Agent": "KenyaHubBot/2.3 (https://kenyahub.me; contact@kenyahub.me)"})
 R2_UPLOAD_DISABLED = os.environ.get("R2_READY", "true").strip().lower() in {"0", "false", "no"}
 R2_FAILURE_COUNT = 0
 
@@ -312,40 +312,66 @@ def add_verified_text_entries_to_dict(lang_id: str, new_entries: list) -> int:
     if not dict_path.exists():
         return 0
     data = json.loads(dict_path.read_text(encoding="utf-8"))
-    existing = set()
+    def _nk(a: str, b: str) -> tuple[str, str]:
+        return (
+            " ".join(str(a or "").strip().lower().split()).strip(".,;:!?"),
+            " ".join(str(b or "").strip().lower().split()).strip(".,;:!?"),
+        )
+
+    existing: dict[tuple[str, str], dict] = {}
     phrases_cat = None
     for cat in data.get("categories", []):
         if cat.get("id") == "phrases":
             phrases_cat = cat
         for e in cat.get("entries", []):
-            existing.add((e.get("english", "").strip().lower(), e.get("translation", "").strip().lower()))
+            existing[_nk(e.get("english", ""), e.get("translation", ""))] = e
     if phrases_cat is None:
         phrases_cat = data["categories"][-1]
 
     added = 0
+    enriched = 0
     for item in new_entries:
         en = str(item.get("english", "")).strip()
         tr = str(item.get("translation", "")).strip()
         if not en or not tr or len(en) > 220 or len(tr) > 220 or en.lower() == tr.lower():
             continue
-        key = (en.lower(), tr.lower())
-        if key in existing:
+        key = _nk(en, tr)
+        if not key[0] or not key[1]:
             continue
-        existing.add(key)
+        if key in existing:
+            if item.get("audioFile") and not existing[key].get("audioFile"):
+                existing[key]["audioFile"] = item["audioFile"]
+                enriched += 1
+            continue
         entry_obj = {"english": en, "translation": tr, "context": item["context"]}
         if item.get("audioFile"):
             entry_obj["audioFile"] = item["audioFile"]
+        existing[key] = entry_obj
         phrases_cat["entries"].append(entry_obj)
         added += 1
 
-    if added > 0:
+    if added > 0 or enriched > 0:
         data["totalEntries"] = sum(len(c.get("entries", [])) for c in data.get("categories", []))
-        dict_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        dict_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return added
 
 
-def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, text_counts: dict):
+def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, text_counts: dict, dataset_status: dict):
     if global_budget_exceeded():
+        return
+    thiomi_targets = [
+        ("kikuyu", "kik_Latn", "Gĩkũyũ"),
+        ("kamba", "kam_Latn", "Kikamba"),
+        ("luo", "luo_Latn", "Dholuo"),
+        ("meru", "mer_Latn", "Kĩmĩĩrũ"),
+        ("somali", "som_Latn", "Af-Soomaali"),
+    ]
+    pending_targets = [
+        t for t in thiomi_targets
+        if FORCE_REINGEST or not RETRY_PENDING_ONLY or dataset_status.get(f"thiomi/thiomi-5k::{t[1]}::{t[0]}", {}).get("status") != "completed"
+    ]
+    if not pending_targets:
+        log("  [skip-done] All 5 Thiomi-5K speech/text targets already ingested in prior run.")
         return
     log("[Thiomi-5K] Streaming English reference sentences from thiomi/thiomi-5k (eng_Latn)...")
     eng_by_id = {}
@@ -365,15 +391,7 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
         except Exception as exc:
             log(f"  [warn] thiomi/thiomi-5k eng_Latn ({split_name}) skipped: {exc}")
 
-    thiomi_targets = [
-        ("kikuyu", "kik_Latn", "Gĩkũyũ"),
-        ("kamba", "kam_Latn", "Kikamba"),
-        ("luo", "luo_Latn", "Dholuo"),
-        ("meru", "mer_Latn", "Kĩmĩĩrũ"),
-        ("somali", "som_Latn", "Af-Soomaali"),
-    ]
-
-    for lang_id, cfg, lang_label in thiomi_targets:
+    for lang_id, cfg, lang_label in pending_targets:
         if global_budget_exceeded():
             break
         log(f"[Thiomi-5K] Streaming thiomi/thiomi-5k ({cfg}) -> {lang_id} (max {MAX_CLIPS} audio clips)...")
@@ -396,7 +414,7 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
                     en_txt = eng_by_id.get(sid, "")
                     slug = to_audio_slug(tr_txt)
 
-                    if not R2_UPLOAD_DISABLED and len(futures) < MAX_CLIPS and slug:
+                    if not R2_UPLOAD_DISABLED and len(futures) < MAX_CLIPS and slug and slug not in uploaded_keys.get(lang_id, {}):
                         audio_obj = row.get("audio")
                         if isinstance(audio_obj, dict):
                             arr = audio_obj.get("array")
@@ -422,12 +440,20 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
 
             added = add_verified_text_entries_to_dict(lang_id, batch_entries)
             text_counts[lang_id] = text_counts.get(lang_id, 0) + added
+            dataset_status[f"thiomi/thiomi-5k::{cfg}::{lang_id}"] = {
+                "status": "completed",
+                "clipsUploaded": audio_count,
+                "textAdded": added,
+                "gated": False,
+                "lang_id": lang_id,
+                "updatedAt": datetime.now(timezone.utc).isoformat(),
+            }
             log(f"  -> Added {added} parallel text pairs and uploaded {audio_count} Opus clips for {lang_id} from thiomi/thiomi-5k ({cfg}).")
         except Exception as exc:
             log(f"  [warn] thiomi/thiomi-5k ({cfg}) skipped or partial: {exc}")
 
 
-def ingest_hf_text_repositories(text_counts: dict):
+def ingest_hf_text_repositories(text_counts: dict, dataset_status: dict):
     text_jobs = [
         ("kikuyu", "google/smol", "gatitos__en_ki", "train", "src", "trgs", "Google Research GATITOS Lexicon (gatitos__en_ki, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"),
         ("luo", "google/smol", "gatitos__en_luo", "train", "src", "trgs", "Google Research GATITOS Lexicon (gatitos__en_luo, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"),
@@ -449,6 +475,10 @@ def ingest_hf_text_repositories(text_counts: dict):
     for lang_id, repo, cfg, split, en_col, tr_col, citation in text_jobs:
         if global_budget_exceeded():
             break
+        job_key = f"text::{repo}::{cfg}::{lang_id}"
+        if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") == "completed":
+            log(f"  [skip-done] Already ingested {job_key} in prior run.")
+            continue
         log(f"[HF Text Stream] {repo} ({cfg}) -> {lang_id} (max {MAX_TEXT_ROWS} rows)...")
         ds_start = time.monotonic()
         try:
@@ -470,9 +500,12 @@ def ingest_hf_text_repositories(text_counts: dict):
                     batch.append({"english": str(en_val), "translation": str(tr_val), "context": citation})
             added = add_verified_text_entries_to_dict(lang_id, batch)
             text_counts[lang_id] = text_counts.get(lang_id, 0) + added
+            dataset_status[job_key] = {"status": "completed", "textAdded": added, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
             log(f"  -> Added {added} new verified entries to {lang_id}.json from {repo}/{cfg}.")
         except Exception as exc:
-            log(f"  [warn] HF text stream {repo}/{cfg} skipped or gated: {exc}")
+            st = "pending_gated_approval" if is_gated_error(exc) else "failed"
+            dataset_status[job_key] = {"status": st, "lang_id": lang_id, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
+            log(f"  [warn] HF text stream {repo}/{cfg} skipped ({st}): {exc}")
 
 
 def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: dict, text_counts: dict):
@@ -506,11 +539,12 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
         {"lang_id": "somali", "repo": "MCAA1-MSU/anv_data_ke", "config": "somali", "split": "train", "text_col": "transcription", "gated": True},
         {"lang_id": "swahili", "repo": "stem-content-ai-project/swahili-speech", "config": "default", "split": "train", "text_col": "sentence", "decode_audio": False},
         {"lang_id": "somali", "repo": "skydheere/soomali-asr-dataset", "config": "default", "split": "train", "text_col": "sentence", "decode_audio": False},
-        {"lang_id": "kalenjin", "repo": "kln001/kalenjin-asr-data", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
+        {"lang_id": "kalenjin", "repo": "kln001/kalenjin-asr-data", "config": "default", "split": "train", "text_col": "text", "gated": True, "decode_audio": False},
         {"lang_id": "luhya", "repo": "Digital-Divide-Data/Luhya-ASR-Data-subset-642H", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
         {"lang_id": "kamba", "repo": "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
         {"lang_id": "kisii", "repo": "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H", "config": "default", "split": "train", "text_col": "transcription", "gated": True, "decode_audio": False},
-        {"lang_id": "english-ke", "repo": "edinburghcstr/edacc", "config": "default", "split": "validation", "text_col": "text", "row_filter": ("accent", "kenyan"), "decode_audio": False},
+        {"lang_id": "english-ke", "repo": "edinburghcstr/edacc", "config": "default", "split": "validation", "text_col": "text", "row_filter": (("accent", "raw_accent", "l1"), "kenyan"), "decode_audio": False},
+        {"lang_id": "english-ke", "repo": "edinburghcstr/edacc", "config": "default", "split": "test", "text_col": "text", "row_filter": (("accent", "raw_accent", "l1"), "kenyan"), "decode_audio": False},
     ]
 
     for job in hf_jobs:
@@ -554,8 +588,9 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
                         break
                     if row_filter:
                         col, expected = row_filter
-                        actual = str(row.get(col) or "").strip().lower()
-                        if expected.lower() not in actual:
+                        cols_to_check = col if isinstance(col, (tuple, list)) else (col,)
+                        matched = any(expected.lower() in str(row.get(c) or "").strip().lower() for c in cols_to_check)
+                        if not matched:
                             continue
                     transcript = (
                         row.get(job["text_col"])
@@ -571,8 +606,10 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
                             log(f"  [skip] {repo}/{cfg} has no transcript column (columns: {list(row.keys())}).")
                             break
                         continue
-                    audio_obj = row.get("audio")
+                    audio_obj = row.get("audio") or row.get("audio_filepath")
                     if not isinstance(audio_obj, dict):
+                        if idx == 0:
+                            log(f"  [info] {repo}/{cfg} audio column is {type(audio_obj).__name__} (columns: {list(row.keys())}).")
                         continue
                     slug = to_audio_slug(transcript)
                     if not slug or slug in uploaded_keys.get(lang_id, {}):
@@ -630,10 +667,7 @@ def ingest_common_voice_27_mdc(s3_client, uploaded_keys: dict, dataset_status: d
         job_key = f"mozilla-data-collective/cv-27.0::{iso}::{lang_id}"
         if not FORCE_REINGEST and RETRY_PENDING_ONLY and dataset_status.get(job_key, {}).get("status") in ("completed", "completed_no_new_clips"):
             continue
-        if job_key == "openslr/slr25-alffa::sw::swahili" and len(uploaded_keys.get("swahili", {})) >= 1500:
-            log("  [skip-fast] Swahili already has >=1,500 R2 clips; skipping 2.5GB OpenSLR SLR25 tarball to save CI time.")
-            dataset_status[job_key] = {"status": "completed_no_new_clips", "clipsUploaded": 0, "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
-            continue
+
         if not MDC_API_KEY:
             dataset_status[job_key] = {
                 "status": "pending_mdc_api_key",
@@ -662,10 +696,14 @@ def ingest_common_voice_27_mdc(s3_client, uploaded_keys: dict, dataset_status: d
 
                 if not downloaded_via_sdk:
                     # Fallback: POST create-download to get presigned URL
-                    dl_url = f"https://datacollective.mozillafoundation.org/api/datasets/{mdc_id}/download"
+                    dl_url = f"https://mozilladatacollective.com/api/datasets/{mdc_id}/download"
                     resp = HTTP_SESSION.post(dl_url, headers={"Authorization": f"Bearer {MDC_API_KEY}"}, timeout=60)
                     if not resp.ok:
-                        dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"MDC HTTP {resp.status_code} (ensure terms accepted on mozilladatacollective.com)", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                        st = "pending_rate_limited" if resp.status_code == 429 else "failed"
+                        dataset_status[job_key] = {"status": st, "lang_id": lang_id, "reason": f"MDC HTTP {resp.status_code} (ensure terms accepted / daily 7-download quota on mozilladatacollective.com)", "updatedAt": datetime.now(timezone.utc).isoformat()}
+                        if resp.status_code == 429:
+                            log("  [rate-limit] MDC daily quota reached; pausing remaining MDC downloads until next UTC day.")
+                            break
                         continue
                     presigned = (resp.json() or {}).get("downloadUrl") or (resp.json() or {}).get("url")
                     if not presigned:
@@ -725,7 +763,7 @@ def ingest_lingua_libre_commons(s3_client, uploaded_keys: dict, dataset_status: 
             "cmtype": "file", "cmlimit": min(MAX_CLIPS, 250), "format": "json",
         }
         resp = HTTP_SESSION.get(api_url, params=params, timeout=20)
-        if not resp.ok:
+        if not resp.ok or "json" not in (resp.headers.get("content-type") or "").lower():
             return
         members = resp.json().get("query", {}).get("categorymembers", [])
         count = 0
@@ -733,7 +771,7 @@ def ingest_lingua_libre_commons(s3_client, uploaded_keys: dict, dataset_status: 
             if count >= MAX_CLIPS or global_budget_exceeded():
                 break
             title = item.get("title", "")
-            m = re.search(r"LL-Q\d+_\(swa\)-[^-]+-(.+)\.(wav|ogg|flac|mp3)$", title, re.IGNORECASE)
+            m = re.search(r"LL-Q\d+[\s_]\(swa\)-[^-]+-(.+)\.(wav|ogg|flac|mp3)$", title, re.IGNORECASE)
             if not m:
                 continue
             word = m.group(1).replace("_", " ").strip()
@@ -741,7 +779,13 @@ def ingest_lingua_libre_commons(s3_client, uploaded_keys: dict, dataset_status: 
             slug = to_audio_slug(word)
             if not slug or slug in uploaded_keys.get("swahili", {}):
                 continue
+            time.sleep(0.15)
             info_resp = HTTP_SESSION.get(api_url, params={"action": "query", "titles": title, "prop": "imageinfo", "iiprop": "url", "format": "json"}, timeout=15)
+            if info_resp.status_code in (429, 503):
+                log(f"  [rate-limit] Wikimedia Commons HTTP {info_resp.status_code}; stopping Lingua Libre batch cleanly.")
+                break
+            if not info_resp.ok or "json" not in (info_resp.headers.get("content-type") or "").lower():
+                continue
             pages = info_resp.json().get("query", {}).get("pages", {})
             file_url = next((p["imageinfo"][0]["url"] for p in pages.values() if p.get("imageinfo")), None)
             if not file_url:
@@ -792,7 +836,7 @@ def _ingest_tar_or_zip_audio(s3_client, uploaded_keys: dict, lang_id: str, archi
         with tarfile.open(archive_path, "r:*") as tf:
             members = tf.getmembers()
             for m in members:
-                if m.isfile() and m.name.lower().endswith((".txt", ".tsv", ".csv")) and "text" in m.name.lower():
+                if m.isfile() and (Path(m.name).name.lower() == "text" or (m.name.lower().endswith((".txt", ".tsv", ".csv")) and ("text" in m.name.lower() or "metadata" in m.name.lower() or "transcript" in m.name.lower()))):
                     raw = tf.extractfile(m).read().decode("utf-8", errors="ignore")
                     for line in raw.splitlines():
                         parts = line.strip().split(None, 1)
@@ -867,7 +911,20 @@ def ingest_direct_archive_audio(s3_client, uploaded_keys: dict, dataset_status: 
                     dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"Mendeley API HTTP {meta.status_code}", "updatedAt": datetime.now(timezone.utc).isoformat()}
                     continue
                 files = meta.json() if isinstance(meta.json(), list) else meta.json().get("data", [])
+                # Recurse into Mendeley subfolders (e.g. Kiswahili/wavs.zip) if no root archive found
                 zip_file = next((f for f in files if str(f.get("filename", "")).lower().endswith((".zip", ".tar.gz", ".tgz"))), None)
+                if not zip_file:
+                    base_files_url = f"https://data.mendeley.com/public-api/datasets/{item['dataset_id']}/files"
+                    for entry in files:
+                        fid = entry.get("id")
+                        fname = str(entry.get("filename") or entry.get("name") or "").lower()
+                        if fid and (not entry.get("content_details")) and ("swahili" in fname or "kiswahili" in fname or "." not in fname):
+                            sub_r = HTTP_SESSION.get(base_files_url, params={"version": item["version"], "folder_id": fid}, timeout=20)
+                            if sub_r.ok:
+                                sub_files = sub_r.json() if isinstance(sub_r.json(), list) else sub_r.json().get("data", [])
+                                zip_file = next((sf for sf in sub_files if str(sf.get("filename", "")).lower().endswith((".zip", ".tar.gz", ".tgz"))), None)
+                                if zip_file:
+                                    break
                 if not zip_file:
                     dataset_status[job_key] = {"status": "completed_no_new_clips", "lang_id": lang_id, "updatedAt": datetime.now(timezone.utc).isoformat()}
                     continue
@@ -933,7 +990,7 @@ def ingest_mdc_aligned_speech(s3_client, uploaded_keys: dict, dataset_status: di
                 except Exception as sdk_exc:
                     log(f"  [info] datacollective SDK fallback for {mdc_id}: {sdk_exc}")
                 if not downloaded_via_sdk:
-                    dl_url = f"https://datacollective.mozillafoundation.org/api/datasets/{mdc_id}/download"
+                    dl_url = f"https://mozilladatacollective.com/api/datasets/{mdc_id}/download"
                     resp = HTTP_SESSION.post(dl_url, headers={"Authorization": f"Bearer {MDC_API_KEY}"}, timeout=60)
                     if not resp.ok:
                         dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"MDC HTTP {resp.status_code}", "updatedAt": datetime.now(timezone.utc).isoformat()}
@@ -984,7 +1041,13 @@ def ingest_wikimedia_oromo_pronunciation(s3_client, uploaded_keys: dict, dataset
             slug = to_audio_slug(word)
             if not slug or slug in uploaded_keys.get("borana", {}):
                 continue
+            time.sleep(0.15)
             info_resp = HTTP_SESSION.get(api_url, params={"action": "query", "titles": title, "prop": "imageinfo", "iiprop": "url|extmetadata", "format": "json"}, timeout=15)
+            if info_resp.status_code in (429, 503):
+                log(f"  [rate-limit] Wikimedia Commons HTTP {info_resp.status_code}; stopping Oromo batch cleanly.")
+                break
+            if not info_resp.ok or "json" not in (info_resp.headers.get("content-type") or "").lower():
+                continue
             pages = info_resp.json().get("query", {}).get("pages", {})
             ii = next((p["imageinfo"][0] for p in pages.values() if p.get("imageinfo")), None)
             if not ii:
@@ -1198,7 +1261,7 @@ def ingest_ksl_pose_metadata(dataset_status: dict):
     if KSL_INDEX_PATH.exists():
         try:
             prev_ksl = json.loads(KSL_INDEX_PATH.read_text(encoding="utf-8"))
-            for keep_key in ("videos", "videoCount", "storybooks", "signs", "extractedSignCount"):
+            for keep_key in ("videos", "videoCount", "storybooks", "signs", "extractedSignCount", "ingestionState"):
                 if keep_key in prev_ksl and prev_ksl[keep_key]:
                     ksl_payload[keep_key] = prev_ksl[keep_key]
             existing_src_ids = {s.get("id") for s in ksl_payload.get("sources", [])}
@@ -1236,18 +1299,33 @@ def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
             cats_map[cat["id"]] = len(entries)
             tot += len(entries)
             for entry in entries:
-                slug = to_audio_slug(entry.get("translation", ""))
+                tr_raw = entry.get("translation", "")
+                matched_url = None
+                slug = to_audio_slug(tr_raw)
                 if slug and slug in lang_map:
-                    entry["audioFile"] = lang_map[slug]
+                    matched_url = lang_map[slug]
+                else:
+                    for part in re.split(r"[,;/|]", str(tr_raw or "")):
+                        ps = to_audio_slug(part)
+                        if ps and ps in lang_map:
+                            matched_url = lang_map[ps]
+                            break
+                if matched_url:
+                    if entry.get("audioFile") != matched_url:
+                        entry["audioFile"] = matched_url
+                        modified = True
                     total_attached += 1
-                    modified = True
+        audio_cnt = sum(1 for c in data.get("categories", []) for e in c.get("entries", []) if (e.get("audioFile") or "").strip())
+        lang_has_audio = audio_cnt > 0 or len(lang_map) > 0
         if data.get("totalEntries") != tot:
             data["totalEntries"] = tot
             modified = True
+        if data.get("hasAudio") != lang_has_audio:
+            data["hasAudio"] = lang_has_audio
+            modified = True
         if modified:
-            dict_file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-        audio_cnt = sum(1 for c in data.get("categories", []) for e in c.get("entries", []) if (e.get("audioFile") or "").strip())
-        exact_stats[lang_id] = {"total": tot, "cats": cats_map, "audio": audio_cnt}
+            dict_file.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        exact_stats[lang_id] = {"total": tot, "cats": cats_map, "audio": audio_cnt, "hasAudio": lang_has_audio}
         grand_total += tot
 
     cat_path = DICT_DIR / "catalog.ts"
@@ -1263,7 +1341,7 @@ def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
         for lid, st in exact_stats.items():
             if not lid:
                 continue
-            has_aud = "true" if st.get("audio", 0) > 0 else "false"
+            has_aud = "true" if st.get("hasAudio") else "false"
             # Update totalEntries & hasAudio & lastUpdated inside the matching languageId block
             def _update_lang_block(m: re.Match) -> str:
                 blk = m.group(0)
@@ -1279,7 +1357,7 @@ def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
                     )
                 return blk
             cat_txt = re.sub(
-                rf'\{{\s*"languageId":\s*"{re.escape(lid)}"[\s\S]*?"categories":\s*\[[\s\S]*?\]\s*\}}',
+                rf'\{{\s*"languageId":\s*"{re.escape(lid)}"[\s\S]*?"categories":\s*\[[\s\S]*?\]\s*(?:,[\s\S]*?)?\n  \}}',
                 _update_lang_block,
                 cat_txt,
                 count=1,
@@ -1291,11 +1369,19 @@ def attach_audio_urls_and_sync_catalog(uploaded_keys: dict) -> int:
 
 def main():
     dry_run = "--dry-run" in sys.argv
+    sync_only = "--sync-only" in sys.argv
     log("=== KenyaHub CI Audio, KSL & Text Dataset Ingestor (Cloudflare R2 + HF_TOKEN + MDC + Zenodo) ===")
     log(
         f"Dry Run: {dry_run} | R2 Bucket: {R2_BUCKET} | Blocked Watchlist Entries: {len(BLOCKED_NON_COMMERCIAL_REPOS)} "
         f"| HF_TOKEN: {'Set' if HF_TOKEN else 'Unset'} | MDC_API_KEY: {'Set' if MDC_API_KEY else 'Unset'} | ZENODO_TOKEN: {'Set' if ZENODO_TOKEN else 'Unset'}"
     )
+
+    if sync_only:
+        uploaded_keys = load_existing_audio_index()
+        attached = attach_audio_urls_and_sync_catalog(uploaded_keys)
+        subprocess.run(["node", str(ROOT_DIR / "scripts" / "sync-cloudflare-r2-audio.mjs"), "--dry-run"], check=True)
+        log(f"Sync-only completed: {attached} dictionary entries linked to verified audio and catalog.ts synced.")
+        return
 
     if dry_run:
         subprocess.run(["node", str(ROOT_DIR / "scripts" / "sync-cloudflare-r2-audio.mjs"), "--dry-run"], check=True)
@@ -1307,8 +1393,8 @@ def main():
     dataset_status = load_existing_dataset_status()
     text_counts = {}
 
-    ingest_hf_text_repositories(text_counts)
-    ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys, text_counts)
+    ingest_hf_text_repositories(text_counts, dataset_status)
+    ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys, text_counts, dataset_status)
     ingest_hf_streaming_audio(s3_client, uploaded_keys, dataset_status, text_counts)
     ingest_common_voice_27_mdc(s3_client, uploaded_keys, dataset_status)
     ingest_lingua_libre_commons(s3_client, uploaded_keys, dataset_status)

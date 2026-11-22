@@ -248,7 +248,52 @@ const VERIFIED_AUDIO_HOSTS = [
   "cdn-lfs.huggingface.co",
   "cdn-lfs-us-1.huggingface.co",
   "kenyahub.me",
+  "archive.org",
 ];
+
+// Lazy in-memory per-language slug -> verified R2 URL index loaded from /data/learning/audio/<langId>.json
+const languageAudioIndexCache = new Map<string, Map<string, string>>();
+const languageAudioLoading = new Set<string>();
+
+export async function preloadLanguageAudioIndex(langId?: string | null): Promise<number> {
+  if (typeof window === "undefined" || !langId) return 0;
+  const lid = langId.trim().toLowerCase();
+  const existing = languageAudioIndexCache.get(lid);
+  if (existing) return existing.size;
+  if (languageAudioLoading.has(lid)) return 0;
+  languageAudioLoading.add(lid);
+  try {
+    const res = await fetch(`/data/learning/audio/${encodeURIComponent(lid)}.json`);
+    if (!res.ok) return 0;
+    const data = await res.json();
+    const map = new Map<string, string>();
+    for (const clip of data?.clips ?? []) {
+      if (clip?.slug && typeof clip?.audioUrl === "string") {
+        map.set(String(clip.slug), clip.audioUrl);
+      }
+    }
+    languageAudioIndexCache.set(lid, map);
+    return map.size;
+  } catch {
+    return 0;
+  } finally {
+    languageAudioLoading.delete(lid);
+  }
+}
+
+function lookupDynamicAudioUrl(entry?: AudioPlayableEntry | null, langId?: string | null): string | null {
+  if (!entry || !langId) return null;
+  const map = languageAudioIndexCache.get(langId.trim().toLowerCase());
+  if (!map || map.size === 0) return null;
+  const raw = entry.translation || "";
+  const fullSlug = toAudioSlug(raw);
+  if (fullSlug && map.has(fullSlug)) return map.get(fullSlug) || null;
+  for (const part of raw.split(/[,;/|]/)) {
+    const ps = toAudioSlug(part);
+    if (ps && map.has(ps)) return map.get(ps) || null;
+  }
+  return null;
+}
 
 /**
  * Normalizes a dictionary headword or phrase into a deterministic Cloudflare R2 slug
@@ -287,11 +332,15 @@ export function extractSpeakableText(rawTranslation: string): string {
  * present and points to a trusted audio source. Returns `null` when no verified
  * recording exists (never guesses unverified URLs and never falls back to TTS).
  */
-export function getVerifiedAudioUrl(entry?: AudioPlayableEntry | null): string | null {
-  if (!entry || !entry.audioFile || typeof entry.audioFile !== "string") {
-    return null;
+export function getVerifiedAudioUrl(
+  entry?: AudioPlayableEntry | null,
+  langId?: string | null
+): string | null {
+  if (!entry) return null;
+  let raw = typeof entry.audioFile === "string" ? entry.audioFile.trim() : "";
+  if (!raw && langId) {
+    raw = lookupDynamicAudioUrl(entry, langId) || "";
   }
-  let raw = entry.audioFile.trim();
   if (!raw) return null;
 
   // Guard against accidental Markdown link syntax `[url](url)/path`
@@ -319,8 +368,11 @@ export function getVerifiedAudioUrl(entry?: AudioPlayableEntry | null): string |
 /**
  * Returns true if the entry has a verified native-speaker recording available.
  */
-export function hasVerifiedAudio(entry?: AudioPlayableEntry | null): boolean {
-  return getVerifiedAudioUrl(entry) !== null;
+export function hasVerifiedAudio(
+  entry?: AudioPlayableEntry | null,
+  langId?: string | null
+): boolean {
+  return getVerifiedAudioUrl(entry, langId) !== null;
 }
 
 /**
@@ -357,14 +409,17 @@ export function stopLanguageAudio(): void {
  */
 export function playLanguageAudio(
   entry: AudioPlayableEntry,
-  _langId: string | null = null,
-  onEnd?: () => void
+  langId: string | null = null,
+  onEndOrOpts?: (() => void) | { onEnd?: () => void; rate?: number }
 ): boolean {
   if (typeof window === "undefined") return false;
 
+  const onEnd = typeof onEndOrOpts === "function" ? onEndOrOpts : onEndOrOpts?.onEnd;
+  const rate = typeof onEndOrOpts === "object" && onEndOrOpts?.rate ? onEndOrOpts.rate : 1.0;
+
   stopLanguageAudio();
 
-  const verifiedUrl = getVerifiedAudioUrl(entry);
+  const verifiedUrl = getVerifiedAudioUrl(entry, langId);
   if (!verifiedUrl) {
     onEnd?.();
     return false;
@@ -372,6 +427,7 @@ export function playLanguageAudio(
 
   try {
     const audio = new Audio(verifiedUrl);
+    audio.playbackRate = rate;
     activeHtmlAudio = audio;
     audio.onended = () => {
       activeHtmlAudio = null;

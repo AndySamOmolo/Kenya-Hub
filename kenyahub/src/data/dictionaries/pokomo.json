@@ -14505,11 +14505,6 @@
           "context": "Kipokómo Comparative Lexicon (Krapf 1850)"
         },
         {
-          "english": "Good morning!",
-          "translation": "múya nágaia",
-          "context": "Rev. Dr. J. L. Krapf (1850) \"Vocabulary of Six East-African Languages\", p. 29 • Cross-verified with CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0)"
-        },
-        {
           "english": "Day, s.",
           "translation": "siku",
           "pronunciation": "",
@@ -18708,5 +18703,5 @@
   "source": "CLDF ASJP v20 UPPER_POKOMO & BantuBVD (CC-BY-4.0), Language Science Press Northern Swahili/Pokomo Contact Corpus (Nurse 2019, CC-BY-4.0), SIL Bloom Kipokomo CC-BY-4.0 & Public Domain Historical Lexicons (Krapf 1850, Würtz 1895, Werner 1915/1933, Johnston 1919, BFBS 1921 & Mikael Samson 1944); Alice Werner (1915) The Bantu Coast Tribes of the East Africa Protectorate (JRAI Vol. 45, Public Domain); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "pkb",
   "glottocode": "poko1261",
-  "totalEntries": 3182
+  "totalEntries": 3181
 }

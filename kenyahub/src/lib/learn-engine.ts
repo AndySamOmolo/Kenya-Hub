@@ -725,14 +725,17 @@ const LEVEL_EXERCISE_WEIGHTS: Record<
   { type: ExerciseType; weight: number; minWords: number }[]
 > = {
   1: [
-    { type: 'multiple_choice', weight: 3.4, minWords: 4 },
+    { type: 'multiple_choice', weight: 3.2, minWords: 4 },
+    { type: 'tap_what_you_hear', weight: 1.6, minWords: 4 },
     { type: 'match_pairs', weight: 2.0, minWords: 4 },
     { type: 'fill_blank', weight: 2.0, minWords: 4 },
     { type: 'translate_to_english', weight: 1.2, minWords: 1 },
     { type: 'word_bank', weight: 0.8, minWords: 1 },
   ],
   2: [
-    { type: 'translate_to_english', weight: 2.6, minWords: 1 },
+    { type: 'translate_to_english', weight: 2.4, minWords: 1 },
+    { type: 'tap_what_you_hear', weight: 1.5, minWords: 4 },
+    { type: 'listen_type', weight: 1.0, minWords: 1 },
     { type: 'fill_blank', weight: 2.4, minWords: 4 },
     { type: 'word_bank', weight: 2.2, minWords: 1 },
     { type: 'match_pairs', weight: 1.5, minWords: 4 },
@@ -740,7 +743,8 @@ const LEVEL_EXERCISE_WEIGHTS: Record<
     { type: 'reorder', weight: 1.2, minWords: 1 },
   ],
   3: [
-    { type: 'word_bank', weight: 2.6, minWords: 1 },
+    { type: 'word_bank', weight: 2.4, minWords: 1 },
+    { type: 'listen_type', weight: 1.5, minWords: 1 },
     { type: 'reorder', weight: 2.4, minWords: 1 },
     { type: 'translate_to_target', weight: 2.2, minWords: 1 },
     { type: 'fill_blank', weight: 1.8, minWords: 4 },
@@ -915,6 +919,32 @@ export function generateExercises(
         case 'reorder':
           if (getPrimaryForm(word.target).split(/\s+/).length >= 2) {
             exercise = generateReorder(word, sameTierPool);
+          }
+          break;
+        case 'tap_what_you_hear':
+          if (word.audioFile || word.audio) {
+            const mc = generateMultipleChoice(word, sameTierPool);
+            if (mc && mc.options && mc.options.length >= 2) {
+              exercise = {
+                ...mc,
+                type: 'tap_what_you_hear',
+                prompt: word.target,
+                hint: 'Listen to the recording and select the matching meaning',
+              };
+            }
+          }
+          break;
+        case 'listen_type':
+          if (word.audioFile || word.audio) {
+            const tt = generateTranslateToTarget(word);
+            if (tt) {
+              exercise = {
+                ...tt,
+                type: 'listen_type',
+                prompt: word.source,
+                hint: 'Listen carefully and type what you hear',
+              };
+            }
           }
           break;
       }

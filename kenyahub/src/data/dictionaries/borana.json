@@ -12,7 +12,7 @@
     "Tana River (Orma)",
     "Garissa"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-21",
   "contributorNote": "Borana / Oromo (Afaan Borana / Orma / Kigalla) vocabulary compiled from Rev. J. L. Krapf & Rev. C. W. Isenberg (1840 \"An Imperfect Outline of the Elements of the Galla Language\", 1842 \"Vocabulary of the Galla Language\", 1850 \"Vocabulary of Six East-African Languages\"), Karl & Lawrence Tutschek (1844–1845), R. N. Cust (1883), E. C. Foot (1913), Prof. Alice Werner (1915), BFBS (1921), and Catherine Griefenow-Mewis (1996). Expanded and cross-verified with Commercially Permissive Datasets (Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0)).",
@@ -76682,7 +76682,7 @@
         {
           "english": "answer",
           "translation": "deebii",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "say",
@@ -76822,11 +76822,6 @@
         {
           "english": "disease",
           "translation": "dhukkuba",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "without",
-          "translation": ".ala",
           "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -77097,7 +77092,7 @@
         {
           "english": "assessment",
           "translation": "gamaaggama",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "currently",
@@ -80077,7 +80072,7 @@
         {
           "english": "plan",
           "translation": "karoora",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "lonely",
@@ -86730,11 +86725,6 @@
           "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
-          "english": "how many",
-          "translation": "meeqa",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
           "english": "shine",
           "translation": "ifuu",
           "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
@@ -87137,7 +87127,7 @@
         {
           "english": "instructions",
           "translation": "qajeelfamoota",
-          "context": "Google Research GATITOS Lexicon (gatitos__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
           "english": "rule",
@@ -93667,11 +93657,6 @@
         {
           "english": "* 1/2 cup milk",
           "translation": "* aannan finjaala 1/2",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "Instructions:",
-          "translation": "Qajeelfamoota:",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -116505,11 +116490,6 @@
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
-          "english": "Answer:",
-          "translation": "Deebii:",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
           "english": "Typhoid fever is a serious bacterial infection that can spread easily to others through contaminated food and water or close contact.",
           "translation": "Ho'i qaamaa taayifooyidii dhukkuba baakteeriyaa cimaa kana karaa nyaata fi bishaan faalamee namoota dhiyootti darbuu danda'u dha.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
@@ -117445,11 +117425,6 @@
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
-          "english": "Assessment:",
-          "translation": "Gamaaggama:",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
           "english": "1. Chronic low back pain likely due to occupational factors and poor ergonomics.",
           "translation": "1. Dhukkubbii dugdaa gadii yeroo dheeraaf ture, tarii sababa haala hojii fi haala taa'umsaa gadhee ta'uu danda'a.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
@@ -117472,11 +117447,6 @@
         {
           "english": "5. Obesity.",
           "translation": "5. Furdina garmalee.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
-        },
-        {
-          "english": "Plan:",
-          "translation": "Karoora:",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_om, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
         },
         {
@@ -125324,12 +125294,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "the Hereafter, are disbelievers.",
-          "translation": "aaKhir gunaahagaar huu.N, kaafir nahii.n huu.N mai.n",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "in a house with a snake (in it, is) death, without doubt.",
           "translation": "Hammam illee mana tokko keessa jiraaachuun mataa isaatti cubbuu yoo ta'uu baatellee, kallattiin cubbuu garuu achi jira.",
           "pronunciation": "",
@@ -125362,12 +125326,6 @@
         {
           "english": "AssuS; a township of Troas, whence it derived its name.",
           "translation": "Nama magaala cululuqaan cuqilisa fakkaata jedhama; bifti see magariisa cululuqaa buleeti siqu.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "in the Hereafter, are disbelievers.",
-          "translation": "aaKhir gunaahagaar huu.N, kaafir nahii.n huu.N mai.n",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -127058,12 +127016,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "and they are disbelievers in the Hereafter.",
-          "translation": "aaKhir gunaahagaar huu.N, kaafir nahii.n huu.N mai.n.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "O you who have believed, be persistently standing firm in...",
           "translation": "iii jotiriiiy to tiie lain! of Sold.",
           "pronunciation": "",
@@ -127156,12 +127108,6 @@
         {
           "english": "(He replied): 'Yes, I have embraced the religious life.'",
           "translation": "har ma (n) dhar mehi naam nidhhaan hai naa boojhehi mugadhh gavaar __",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "Some claim that there is no such thing as free will  - that all our actions are predetermined by God.",
-          "translation": "Warri tokko tokko, gochi keenya hundi dursee Waaqayyoon kan murteeffame waan taʼeef, wanti mirga filannoo jedhamu hin jiru jedhu.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -128554,12 +128500,6 @@
         {
           "english": "Will it produce fruit that will be a nuisance to you?",
           "translation": "Sab kaa hey too Khudaa, kyoon naa meraa huaa?",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "On that day all humans will come forth in different companies, to be shown their deeds (that they did in the world).",
-          "translation": "Guyyaa Qiyaamaa ilmaan namaa hundii gara Isaatti deebifamuun wanta hojjataa turaniif ni qoratamu.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -131156,12 +131096,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "(which we sent).",
-          "translation": "Inaa Lillaahi Waa Inaa Ilayhi Raajicuun.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "\"Do you know anything about the [Harbinger] class?\"",
           "translation": "Maa lakum laa tarjuuna lillahi waqaaraa (n)",
           "pronunciation": "",
@@ -133168,12 +133102,6 @@
         {
           "english": "He looked to the right,",
           "translation": "Bitaa mirga isaa ijaan firraa laalee,",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "you are on the straight path.",
-          "translation": "Jidkoo toosan baad mari jirteen toobiyii fudude",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -136456,12 +136384,6 @@
         {
           "english": "the one who asks you, and do not turn away from the one who wants to borrow",
           "translation": "unni uniii, aku request yaaaa;~;",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "But the Bear began to speak and said, \"Do not be afraid.",
-          "translation": "Yeroo kanattis Qulqulluun Mikaa'eel dhufee \"Yaa Aragaawwii! hin sodaatiin aangoo siif kennameera waan ta'eef.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-gaz_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -174020,5 +173942,5 @@
   "source": "Google Research SMOL/GATITOS Oromo/Borana (en_orm, CC-BY-4.0), Kaikki.org Oromo Machine-Readable Dictionary (1,245 headwords, CC-BY-SA-4.0), CLDF ASJP v20 BORANA_OROMO & WAATA (CC-BY-4.0), OLDI FLORES+ & SIB-200 (CC-BY-SA-4.0) & Public Domain & Academic Lexicons (Krapf 1840, 1842, 1850, Tutschek 1844–1845 [Part I Galla–English–German & Part II English–Galla & Grammar], Foot 1913, BFBS 1921 & Griefenow-Mewis 1996); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "gax",
   "glottocode": "bora1271",
-  "totalEntries": 31859
+  "totalEntries": 31845
 }

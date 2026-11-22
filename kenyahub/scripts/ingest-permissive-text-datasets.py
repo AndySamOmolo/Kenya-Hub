@@ -25,6 +25,7 @@ import sys
 import time
 import zipfile
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -52,12 +53,42 @@ LOCALES_DIR = ROOT_DIR / "src" / "data" / "locales"
 BENCHMARKS_DIR = ROOT_DIR / "src" / "data" / "benchmarks"
 READERS_DIR = ROOT_DIR / "src" / "data" / "readers"
 FREQ_DIR = ROOT_DIR / "src" / "data" / "frequency-lists"
+TEXT_LOCK_PATH = ROOT_DIR / "public" / ".text-ingested-lock.json"
+FORCE_REINGEST = os.environ.get("FORCE_REINGEST", "").strip().lower() in {"1", "true", "yes"}
+RETRY_PENDING_ONLY = os.environ.get("RETRY_PENDING_ONLY", "true").strip().lower() in {"1", "true", "yes"}
+
+
+def _norm_key(en: str, tr: str) -> tuple[str, str]:
+    return (
+        " ".join(str(en or "").strip().lower().split()).strip(".,;:!?"),
+        " ".join(str(tr or "").strip().lower().split()).strip(".,;:!?"),
+    )
+
+
+def _is_gated_error(exc: Exception) -> bool:
+    msg = str(exc).lower()
+    return any(tok in msg for tok in ("gated", "401", "403", "forbidden", "access to dataset", "authorized", "must be authenticated"))
+
+
+def load_text_lock() -> dict:
+    if TEXT_LOCK_PATH.exists():
+        try:
+            return json.loads(TEXT_LOCK_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
+def save_text_lock(lock: dict) -> None:
+    TEXT_LOCK_PATH.parent.mkdir(parents=True, exist_ok=True)
+    lock["updatedAt"] = datetime.now(timezone.utc).isoformat()
+    TEXT_LOCK_PATH.write_text(json.dumps(lock, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
 HTTP_SESSION = requests.Session()
 HTTP_SESSION.headers.update({"User-Agent": "KenyaHub-Permissive-Ingestor/3.1"})
 
-def _stream_hf_parquet_fallback(repo: str, config: str | None = None, split: str = "train"):
+def _stream_hf_parquet_fallback(repo: str, config: str | None = None, split: str = "train", columns: list[str] | None = None):
     """Direct pyarrow/huggingface_hub parquet row generator when datasets hits schema CastError across shards."""
     import pyarrow.parquet as pq
     from huggingface_hub import HfApi, hf_hub_download
@@ -75,26 +106,34 @@ def _stream_hf_parquet_fallback(repo: str, config: str | None = None, split: str
     for rel_path in pq_files[:3]:
         local_p = hf_hub_download(repo_id=repo, filename=rel_path, repo_type="dataset", token=HF_TOKEN)
         pf = pq.ParquetFile(local_p)
-        for batch in pf.iter_batches(batch_size=500):
+        avail = set(pf.schema_arrow.names)
+        proj = [c for c in (columns or []) if c in avail] or None
+        for batch in pf.iter_batches(batch_size=500, columns=proj):
             for row in batch.to_pylist():
                 yield row
 
 
-def load_hf_stream(repo: str, config: str | None = None, split: str = "train"):
-    """Load a Hugging Face dataset in streaming mode with trust_remote_code=True and parquet CastError fallback."""
+def load_hf_stream(repo: str, config: str | None = None, split: str = "train", columns: list[str] | None = None):
+    """Load a Hugging Face dataset in streaming mode with trust_remote_code=True, optional column projection, and parquet CastError fallback."""
     assert_repo_allowed(repo)
     from datasets import load_dataset
 
     kwargs: dict[str, Any] = {"split": split, "streaming": True, "token": HF_TOKEN, "trust_remote_code": True}
+    if columns:
+        kwargs["columns"] = columns
     args = (repo, config) if config else (repo,)
     try:
         ds = load_dataset(*args, **kwargs)
     except (TypeError, ValueError):
         kwargs.pop("trust_remote_code", None)
-        ds = load_dataset(*args, **kwargs)
+        try:
+            ds = load_dataset(*args, **kwargs)
+        except (TypeError, ValueError):
+            kwargs.pop("columns", None)
+            ds = load_dataset(*args, **kwargs)
     except Exception as exc:
         if "CastError" in type(exc).__name__ or "Couldn't cast" in str(exc):
-            return _stream_hf_parquet_fallback(repo, config, split)
+            return _stream_hf_parquet_fallback(repo, config, split, columns=columns)
         raise
 
     def _safe_iter():
@@ -103,7 +142,7 @@ def load_hf_stream(repo: str, config: str | None = None, split: str = "train"):
                 yield item
         except Exception as exc:
             if "CastError" in type(exc).__name__ or "Couldn't cast" in str(exc):
-                yield from _stream_hf_parquet_fallback(repo, config, split)
+                yield from _stream_hf_parquet_fallback(repo, config, split, columns=columns)
             else:
                 raise
 
@@ -269,7 +308,6 @@ HF_BENCHMARK_JOBS: list[dict[str, Any]] = [
     {"id": "masakhane-afrimgsm-swa", "repo": "masakhane/afrimgsm", "config": "swa", "splits": ("test",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "masakhane-afrimgsm-orm", "repo": "masakhane/afrimgsm", "config": "orm", "splits": ("test",), "license": "Apache-2.0", "langs": ["borana"]},
     {"id": "masakhane-injongointent", "repo": "masakhane/InjongoIntent", "config": "swa", "splits": ("test",), "license": "CC-BY-4.0", "langs": ["swahili"]},
-    {"id": "masakhane-afrifact", "repo": "masakhane/AfrIFact", "config": "default", "splits": ("test",), "license": "Apache-2.0", "langs": ["swahili", "borana"]},
     {"id": "masakhane-uhura-truthfulqa", "repo": "masakhane/uhura-truthfulqa", "config": "sw_multiple_choice", "splits": ("test",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "masakhane-uhura-arc-easy", "repo": "masakhane/uhura-arc-easy", "config": "sw_multiple_choice", "splits": ("test",), "license": "Apache-2.0", "langs": ["swahili"]},
     {"id": "cohere-aya-ke", "repo": "CohereLabs/aya_dataset", "config": "default", "splits": ("train",), "license": "Apache-2.0", "lang_col": "language_code", "allow_langs": {"swh", "som", "orm"}},
@@ -383,51 +421,61 @@ def merge_entries_into_dictionary(lang_id: str, new_entries: list[dict[str, Any]
     if not dict_path.exists() or not new_entries:
         return 0
     data = json.loads(dict_path.read_text(encoding="utf-8"))
-    existing = set()
+    existing: dict[tuple[str, str], dict] = {}
     target_cat = None
     for cat in data.get("categories", []):
         if cat.get("id") == target_cat_id:
             target_cat = cat
         for e in cat.get("entries", []):
-            existing.add((str(e.get("english", "")).strip().lower(), str(e.get("translation", "")).strip().lower()))
+            existing[_norm_key(e.get("english", ""), e.get("translation", ""))] = e
     if target_cat is None:
         target_cat = data["categories"][-1]
 
     added = 0
+    enriched = 0
     for item in new_entries:
         en = str(item.get("english", "")).strip()
         tr = str(item.get("translation", "")).strip()
         if not en or not tr or len(en) > 220 or len(tr) > 220 or en.lower() == tr.lower():
             continue
-        key = (en.lower(), tr.lower())
-        if key in existing:
+        key = _norm_key(en, tr)
+        if not key[0] or not key[1]:
             continue
-        existing.add(key)
-        target_cat["entries"].append({
+        if key in existing:
+            pron = str(item.get("pronunciation") or "").strip()
+            if pron and not existing[key].get("pronunciation"):
+                existing[key]["pronunciation"] = pron
+                enriched += 1
+            continue
+        entry_obj = {
             "english": en,
             "translation": tr,
             "pronunciation": str(item.get("pronunciation") or "").strip(),
             "context": item["context"],
-        })
+        }
+        existing[key] = entry_obj
+        target_cat["entries"].append(entry_obj)
         added += 1
 
-    if added > 0:
+    if added > 0 or enriched > 0:
         data["totalEntries"] = sum(len(c.get("entries", [])) for c in data.get("categories", []))
-        dict_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        dict_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return added
 
 
-def ingest_hf_jobs(lang_filter: str, max_rows: int, only_ungated: bool, dry_run: bool) -> dict[str, int]:
+def ingest_hf_jobs(lang_filter: str, max_rows: int, only_ungated: bool, dry_run: bool, lock: dict | None = None) -> dict[str, int]:
     added_by_lang: dict[str, int] = {}
-    load_dataset = None
-    if not dry_run:
-        from datasets import load_dataset
+    hf_status = (lock or {}).setdefault("hfText", {})
     for job in HF_PERMISSIVE_TEXT_JOBS:
         assert_repo_allowed(job["repo"])
         if lang_filter != "all" and job["lang_id"] != lang_filter:
             continue
         if only_ungated and job.get("gated"):
             print(f"[skip-gated] {job['repo']} ({job['config']})")
+            continue
+        job_id = job["id"]
+        if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and hf_status.get(job_id, {}).get("status") == "completed":
+            print(f"  [skip-done] HF Text {job['repo']} ({job['config']}) already ingested.")
             continue
         print(f"[HF Text] {job['repo']} ({job['config']}) [{job['license']}] -> {job['lang_id']}")
         if dry_run:
@@ -459,15 +507,22 @@ def ingest_hf_jobs(lang_filter: str, max_rows: int, only_ungated: bool, dry_run:
                 batch.append({"english": str(en_val), "translation": str(tr_val), "context": job["citation"]})
             added = merge_entries_into_dictionary(job["lang_id"], batch, target_cat_id=job.get("target_cat", "phrases"))
             added_by_lang[job["lang_id"]] = added_by_lang.get(job["lang_id"], 0) + added
+            hf_status[job_id] = {"status": "completed", "scanned": len(batch), "added": added, "updatedAt": datetime.now(timezone.utc).isoformat()}
             print(f"  -> Added {added} verified entries to {job['lang_id']}.json")
         except Exception as exc:
-            print(f"  [warn] Skipped {job['repo']}: {exc}")
+            st = "pending_gated_approval" if (job.get("gated") or _is_gated_error(exc)) else "failed"
+            hf_status[job_id] = {"status": st, "reason": str(exc)[:220], "updatedAt": datetime.now(timezone.utc).isoformat()}
+            print(f"  [warn] Skipped {job['repo']} ({st}): {exc}")
     return added_by_lang
 
 
-def ingest_panlex_cc0(lang_filter: str, max_rows: int, dry_run: bool) -> dict[str, int]:
+def ingest_panlex_cc0(lang_filter: str, max_rows: int, dry_run: bool, lock: dict | None = None) -> dict[str, int]:
     repo = "cointegrated/panlex-meanings"
     assert_repo_allowed(repo)
+    stages = (lock or {}).setdefault("stages", {})
+    if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and stages.get("panlex-cc0", {}).get("status") == "completed":
+        print("  [skip-done] PanLex CC0-1.0 already ingested in prior run.")
+        return {}
     print(f"[PanLex CC0-1.0] {repo} -> 23 core dictionaries + staging varieties")
     if dry_run:
         return {}
@@ -502,12 +557,36 @@ def ingest_panlex_cc0(lang_filter: str, max_rows: int, dry_run: bool) -> dict[st
             added_by_lang[lang_id] = added_by_lang.get(lang_id, 0) + merge_entries_into_dictionary(lang_id, entries[:max_rows])
         if staging_buckets:
             STAGING_DICT_DIR.mkdir(parents=True, exist_ok=True)
+            iso_to_stage_file = {"kcn": "nubi", "kuj": "kuria", "ymm": "maay", "muu": "yaaku"}
             for iso, entries in staging_buckets.items():
-                (STAGING_DICT_DIR / f"{iso}.json").write_text(
-                    json.dumps({"iso639_3": iso, "source": citation, "entries": entries[:max_rows]}, indent=2, ensure_ascii=False),
+                stage_slug = iso_to_stage_file.get(iso, iso)
+                stage_path = STAGING_DICT_DIR / f"{stage_slug}.json"
+                if stage_path.exists():
+                    try:
+                        existing_obj = json.loads(stage_path.read_text(encoding="utf-8"))
+                        if isinstance(existing_obj, dict) and isinstance(existing_obj.get("categories"), list) and existing_obj["categories"]:
+                            seen_pairs = {
+                                (str(e.get("english", "")).strip().lower(), str(e.get("translation", "")).strip().lower())
+                                for c in existing_obj["categories"] for e in c.get("entries", [])
+                            }
+                            target_cat = next((c for c in existing_obj["categories"] if c.get("id") == "phrases"), existing_obj["categories"][0])
+                            for ent in entries[:max_rows]:
+                                key = (ent["english"].strip().lower(), ent["translation"].strip().lower())
+                                if key not in seen_pairs:
+                                    seen_pairs.add(key)
+                                    target_cat.setdefault("entries", []).append({"english": ent["english"], "translation": ent["translation"], "context": ent.get("context", citation)})
+                            existing_obj["totalEntries"] = sum(len(c.get("entries", [])) for c in existing_obj["categories"])
+                            stage_path.write_text(json.dumps(existing_obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                            continue
+                    except Exception:
+                        pass
+                stage_path.write_text(
+                    json.dumps({"languageId": stage_slug, "isoCode": iso, "iso639_3": iso, "staging": True, "source": citation, "entries": entries[:max_rows]}, indent=2, ensure_ascii=False) + "\n",
                     encoding="utf-8",
                 )
+        stages["panlex-cc0"] = {"status": "completed", "added": sum(added_by_lang.values()), "updatedAt": datetime.now(timezone.utc).isoformat()}
     except Exception as exc:
+        stages["panlex-cc0"] = {"status": "failed", "reason": str(exc)[:200]}
         print(f"  [warn] PanLex CC0 stream skipped: {exc}")
     return added_by_lang
 
@@ -536,15 +615,18 @@ KAIKKI_PER_LANG_TARGETS: list[tuple[str, str, str]] = [
 ]
 
 
-def ingest_kaikki_raw_dump(lang_filter: str, max_rows: int, dry_run: bool, max_seconds: int = 180) -> dict[str, int]:
+def ingest_kaikki_raw_dump(lang_filter: str, max_rows: int, dry_run: bool, max_seconds: int = 180, lock: dict | None = None) -> dict[str, int]:
     """Download Kaikki.org per-language Wiktionary JSONL extracts directly (fast, 100% Kenyan coverage, CC-BY-SA-4.0)."""
     print(f"[Kaikki Per-Language Wiktionary CC-BY-SA-4.0] Fetching {len(KAIKKI_PER_LANG_TARGETS)} Kenyan language JSONL dictionaries directly (cap {max_seconds}s)...")
     if dry_run:
         return {}
+    kaikki_st = (lock or {}).setdefault("kaikki", {})
     added_by_lang: dict[str, int] = {}
     t0 = time.monotonic()
 
     for wiki_name, lang_id, label in KAIKKI_PER_LANG_TARGETS:
+        if not FORCE_REINGEST and RETRY_PENDING_ONLY and kaikki_st.get(wiki_name, {}).get("status") == "completed":
+            continue
         if (time.monotonic() - t0) > max_seconds:
             print("  [info] Kaikki wall-clock budget reached; stopping remaining languages.")
             break
@@ -585,19 +667,26 @@ def ingest_kaikki_raw_dump(lang_filter: str, max_rows: int, dry_run: bool, max_s
             if batch:
                 added = merge_entries_into_dictionary(lang_id, batch)
                 added_by_lang[lang_id] = added_by_lang.get(lang_id, 0) + added
+                kaikki_st[wiki_name] = {"status": "completed", "parsed": len(batch), "added": added, "updatedAt": datetime.now(timezone.utc).isoformat()}
                 print(f"  -> Kaikki {wiki_name} ({lang_id}): parsed {len(batch)} entries, added {added} new.")
+            else:
+                kaikki_st[wiki_name] = {"status": "completed", "parsed": 0, "added": 0, "updatedAt": datetime.now(timezone.utc).isoformat()}
         except Exception as exc:
             print(f"  [warn] Kaikki {wiki_name} notice: {exc}")
 
     return added_by_lang
 
 
-def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool) -> dict[str, int]:
+def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool, lock: dict | None = None) -> dict[str, int]:
     """Actively download & parse Kamusi, OPUS Wikimedia en-sw, Mbogho Zenodo, Strathmore Sheng & Tatoeba text-only."""
+    direct_st = (lock or {}).setdefault("directSources", {})
     added_by_lang: dict[str, int] = {}
     for src in DIRECT_PERMISSIVE_SOURCES:
         assert_repo_allowed(src["url"])
         if lang_filter != "all" and src["lang_id"] not in (lang_filter, "all"):
+            continue
+        if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and direct_st.get(src["id"], {}).get("status") == "completed":
+            print(f"  [skip-done] Direct {src['id']} already ingested.")
             continue
         print(f"[Direct] {src['id']} [{src['license']}] -> {src['lang_id']}")
         if dry_run:
@@ -662,13 +751,15 @@ def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool) -> dic
 
             elif src["id"] == "hornmt-orm-som":
                 eng_lines = HTTP_SESSION.get(f"{src['url']}/eng.txt", timeout=30).text.splitlines()
+                fetched_parallel: dict[str, list[str]] = {}
                 for code, lid in (("orm", "borana"), ("som", "somali")):
-                    if lang_filter not in ("all", lid):
-                        continue
                     tr_resp = HTTP_SESSION.get(f"{src['url']}/{code}.txt", timeout=30)
                     if not tr_resp.ok:
                         continue
                     tr_lines = tr_resp.text.splitlines()
+                    fetched_parallel[code] = tr_lines
+                    if lang_filter not in ("all", lid):
+                        continue
                     batch = [
                         {"english": e.strip(), "translation": t.strip(), "context": src["citation"]}
                         for e, t in list(zip(eng_lines, tr_lines))[:max_rows]
@@ -676,10 +767,17 @@ def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool) -> dic
                     ]
                     added_by_lang[lid] = added_by_lang.get(lid, 0) + merge_entries_into_dictionary(lid, batch, "phrases")
                 BENCHMARKS_DIR.mkdir(parents=True, exist_ok=True)
-                (BENCHMARKS_DIR / "hornmt-orm-som.jsonl").write_text(
-                    "\n".join(json.dumps({"eng": e}, ensure_ascii=False) for e in eng_lines[:max_rows]) + "\n",
-                    encoding="utf-8",
-                )
+                orm_l = fetched_parallel.get("orm", [])
+                som_l = fetched_parallel.get("som", [])
+                rows_out = []
+                for idx, e in enumerate(eng_lines[:max_rows]):
+                    row_obj = {"eng": e.strip()}
+                    if idx < len(orm_l) and orm_l[idx].strip():
+                        row_obj["orm"] = orm_l[idx].strip()
+                    if idx < len(som_l) and som_l[idx].strip():
+                        row_obj["som"] = som_l[idx].strip()
+                    rows_out.append(json.dumps(row_obj, ensure_ascii=False))
+                (BENCHMARKS_DIR / "hornmt-orm-som.jsonl").write_text("\n".join(rows_out) + "\n", encoding="utf-8")
             elif src["id"] == "ai4d-zindi-swahili-news-4300294":
                 r = HTTP_SESSION.get(src["url"], timeout=30)
                 if r.ok:
@@ -726,13 +824,18 @@ def ingest_direct_sources(lang_filter: str, max_rows: int, dry_run: bool) -> dic
                             json.dumps({"license": "CC-BY-2.0", "languageId": lang_id, "sentences": [ln.split("\t")[-1] for ln in lines if "\t" in ln]}, indent=2, ensure_ascii=False),
                             encoding="utf-8",
                         )
+            direct_st[src["id"]] = {"status": "completed", "updatedAt": datetime.now(timezone.utc).isoformat()}
         except Exception as exc:
+            direct_st[src["id"]] = {"status": "failed", "reason": str(exc)[:200]}
             print(f"  [warn] Skipped {src['id']}: {exc}")
     return added_by_lang
 
 
-def ingest_cldr_49_kenyan_locales(lang_filter: str, dry_run: bool) -> dict[str, int]:
+def ingest_cldr_49_kenyan_locales(lang_filter: str, dry_run: bool, lock: dict | None = None) -> dict[str, int]:
     added_by_lang: dict[str, int] = {}
+    if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and (LOCALES_DIR / "cldr-49-kenya.json").exists() and (LOCALES_DIR / "cldr-49-kenya.json").stat().st_size > 1000:
+        print("  [skip-done] CLDR 49 Kenyan locales already ingested.")
+        return added_by_lang
     en_days = {"sun": "Sunday", "mon": "Monday", "tue": "Tuesday", "wed": "Wednesday", "thu": "Thursday", "fri": "Friday", "sat": "Saturday"}
     en_months = {
         "1": "January", "2": "February", "3": "March", "4": "April", "5": "May", "6": "June",
@@ -777,9 +880,13 @@ def ingest_cldr_49_kenyan_locales(lang_filter: str, dry_run: bool) -> dict[str, 
     return added_by_lang
 
 
-def ingest_benchmarks(max_rows: int, dry_run: bool) -> None:
+def ingest_benchmarks(max_rows: int, dry_run: bool, lock: dict | None = None) -> None:
     for job in HF_BENCHMARK_JOBS:
         assert_repo_allowed(job["repo"])
+        out_file = BENCHMARKS_DIR / f"{job['id']}.jsonl"
+        if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and out_file.exists() and out_file.stat().st_size > 100:
+            print(f"  [skip-done] Benchmark {job['id']} already ingested.")
+            continue
         print(f"[HF Benchmark] {job['id']} ({job['repo']}) [{job['license']}]")
         if dry_run:
             continue
@@ -802,10 +909,18 @@ def ingest_benchmarks(max_rows: int, dry_run: bool) -> None:
             print(f"  [warn] Benchmark {job['id']} skipped: {exc}")
 
 
-def ingest_oer_storybooks(max_rows: int, dry_run: bool) -> None:
-    """Ingest SIL-AI Bloom, GlotStoryBook, Global ASP / African Storybook, StoryWeaver & Global Digital Library (CC-BY/CC0 only)."""
+def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None) -> None:
+    """Ingest SIL-AI Bloom & GlotStoryBook (CC-BY/CC-BY-SA/CC0 only)."""
+    oer_st = (lock or {}).setdefault("oerStorybooks", {})
     for job in OER_STORYBOOK_JOBS:
         assert_repo_allowed(job["repo"])
+        out_file = READERS_DIR / f"{job['id']}.json"
+        if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and (
+            (out_file.exists() and out_file.stat().st_size > 100)
+            or oer_st.get(job["id"], {}).get("status") == "completed"
+        ):
+            print(f"  [skip-done] OER Storybook {job['id']} already ingested.")
+            continue
         print(f"[OER Storybook] {job['id']} ({job['repo']}) [{job['license']}]")
         if dry_run:
             continue
@@ -813,48 +928,78 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool) -> None:
             READERS_DIR.mkdir(parents=True, exist_ok=True)
             ds = load_hf_stream(job["repo"], job["config"], split=job["split"])
             kept = []
+            # GlotStoryBook is ordered alphabetically by ISO639-3 across ~79k rows; scan up to 100k rows
+            scan_cap = 100000 if job["id"] == "glotstorybook" else max_rows * 10
             for idx, row in enumerate(ds):
-                if len(kept) >= max_rows or idx >= max_rows * 10:
+                if len(kept) >= max_rows or idx >= scan_cap:
                     break
-                lic = row.get("license") or row.get("copyright") or ""
-                src = row.get("publisher") or row.get("source") or row.get("credits") or ""
+                lic = row.get("license") or row.get("License") or row.get("copyright") or ""
+                src = row.get("publisher") or row.get("source") or row.get("Source") or row.get("credits") or ""
                 url = row.get("url") or row.get("book_url") or ""
                 if not is_permissive_oer_row(str(lic), str(src), str(url)):
                     continue
-                iso = str(row.get("iso") or row.get("language") or row.get("lang") or job.get("config") or "").lower()
+                iso_raw = row.get("ISO639-3") or row.get("iso") or row.get("language") or row.get("Language") or row.get("lang") or job.get("config") or ""
+                iso = str(iso_raw).strip().lower()
                 if iso not in ISO_TO_KENYAHUB_LANG:
                     continue
-                kept.append({"lang_id": ISO_TO_KENYAHUB_LANG[iso], "license": str(lic), "title": row.get("title"), "text": str(row.get("text") or "")[:2000]})
+                body_txt = str(row.get("text") or row.get("Text") or "").strip()[:2000]
+                if not body_txt:
+                    continue
+                title_val = row.get("title") or row.get("File Name") or row.get("Story Category") or job["id"]
+                kept.append({"lang_id": ISO_TO_KENYAHUB_LANG[iso], "license": str(lic), "title": str(title_val), "text": body_txt})
             if kept:
-                (READERS_DIR / f"{job['id']}.json").write_text(json.dumps(kept, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                out_file.write_text(json.dumps(kept, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            oer_st[job["id"]] = {"status": "completed", "count": len(kept), "updatedAt": datetime.now(timezone.utc).isoformat()}
+            print(f"  -> Kept {len(kept)} permissive stories for {job['id']}.")
         except Exception as exc:
-            print(f"  [warn] OER Storybook {job['id']} skipped: {exc}")
+            st = "pending_gated_approval" if _is_gated_error(exc) else "failed"
+            oer_st[job["id"]] = {"status": st, "reason": str(exc)[:200], "updatedAt": datetime.now(timezone.utc).isoformat()}
+            print(f"  [warn] OER Storybook {job['id']} skipped ({st}): {exc}")
 
     # Global Digital Library KSL (xki) & Kenyan web storybooks are linked directly in public/ksl-index.json
 
 
-def build_web_frequency_lists(max_rows: int, dry_run: bool) -> None:
+def build_web_frequency_lists(max_rows: int, dry_run: bool, lock: dict | None = None) -> None:
     for corp in WEB_FREQ_CORPORA:
         assert_repo_allowed(corp["repo"])
         print(f"[Web Freq-Only] {corp['id']} ({corp['repo']}) [{corp['license']}] — strips jw.org/bible.com")
         if dry_run:
             continue
         FREQ_DIR.mkdir(parents=True, exist_ok=True)
+        proj_cols = ["text", "url"] if corp["id"] == "fineweb-2" else None
         for cfg in corp["configs"]:
+            out_file = FREQ_DIR / f"{corp['id']}-{cfg}.json"
+            if not FORCE_REINGEST and RETRY_PENDING_ONLY and out_file.exists() and out_file.stat().st_size > 200:
+                try:
+                    existing_fd = json.loads(out_file.read_text(encoding="utf-8"))
+                    if existing_fd.get("topWords"):
+                        continue
+                except Exception:
+                    pass
             try:
-                ds = load_hf_stream(corp["repo"], cfg, split="train")
+                ds = load_hf_stream(corp["repo"], cfg, split="train", columns=proj_cols)
                 counts: Counter[str] = Counter()
                 for idx, row in enumerate(ds):
                     if idx >= max_rows:
                         break
-                    if is_blocked_url(row.get("url") or row.get("source_url")):
+                    row_url = row.get("url") or row.get("source_url") or row.get("warc-target-uri")
+                    if is_blocked_url(row_url):
                         continue
-                    tokens = re.findall(r"[A-Za-zÀ-ỹ']{2,32}", str(row.get("text") or "").lower())
+                    cats = str(row.get("categories") or "").lower()
+                    if "religious" in cats:
+                        continue
+                    raw_text = row.get("text") or row.get("content") or row.get("headline") or ""
+                    tokens = re.findall(r"[A-Za-zÀ-ỹ']{2,32}", str(raw_text).lower())
                     counts.update(tokens)
-                (FREQ_DIR / f"{corp['id']}-{cfg}.json").write_text(
-                    json.dumps({"corpus": corp["repo"], "config": cfg, "license": corp["license"], "topWords": counts.most_common(2000)}, indent=2, ensure_ascii=False),
-                    encoding="utf-8",
-                )
+                top_words = counts.most_common(2000)
+                if top_words:
+                    out_file.write_text(
+                        json.dumps({"corpus": corp["repo"], "config": cfg, "license": corp["license"], "topWords": top_words}, indent=2, ensure_ascii=False) + "\n",
+                        encoding="utf-8",
+                    )
+                    print(f"  -> Built {out_file.name} ({len(top_words)} unique words).")
+                else:
+                    print(f"  [warn] Freq corpus {corp['id']} ({cfg}) yielded 0 tokens; not writing empty file.")
             except Exception as exc:
                 print(f"  [warn] Freq corpus {corp['id']} ({cfg}) skipped: {exc}")
 
@@ -888,25 +1033,27 @@ def main() -> None:
         print("Dry-run license & manifest verification PASSED.")
         return
 
+    lock = load_text_lock()
     totals: dict[str, int] = {}
     stages = [
-        ingest_hf_jobs(args.lang, args.max_rows, args.only_ungated, dry_run=False),
-        ingest_panlex_cc0(args.lang, args.max_rows, dry_run=False),
-        ingest_direct_sources(args.lang, args.max_rows, dry_run=False),
-        ingest_cldr_49_kenyan_locales(args.lang, dry_run=False),
+        ingest_hf_jobs(args.lang, args.max_rows, args.only_ungated, dry_run=False, lock=lock),
+        ingest_panlex_cc0(args.lang, args.max_rows, dry_run=False, lock=lock),
+        ingest_direct_sources(args.lang, args.max_rows, dry_run=False, lock=lock),
+        ingest_cldr_49_kenyan_locales(args.lang, dry_run=False, lock=lock),
     ]
     if args.include_kaikki_raw:
-        stages.append(ingest_kaikki_raw_dump(args.lang, args.max_rows, dry_run=False))
+        stages.append(ingest_kaikki_raw_dump(args.lang, args.max_rows, dry_run=False, lock=lock))
     for res in stages:
         for k, v in res.items():
             totals[k] = totals.get(k, 0) + v
 
     if args.include_benchmarks:
-        ingest_benchmarks(args.max_rows, dry_run=False)
+        ingest_benchmarks(args.max_rows, dry_run=False, lock=lock)
     if args.include_oer:
-        ingest_oer_storybooks(args.max_rows, dry_run=False)
+        ingest_oer_storybooks(args.max_rows, dry_run=False, lock=lock)
     if args.build_freq_lists:
-        build_web_frequency_lists(args.max_rows, dry_run=False)
+        build_web_frequency_lists(args.max_rows, dry_run=False, lock=lock)
+    save_text_lock(lock)
 
     print(f"Completed permissive text ingestion: {json.dumps(totals)}")
 

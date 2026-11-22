@@ -28746,7 +28746,8 @@
           "english": "Here",
           "translation": "baa (Ulu) / vaa (Nganyawa)",
           "pronunciation": "baa",
-          "context": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)"
+          "context": "Hildegarde Hinde (1904) — Kamba (Ulu & Nganyawa dialects) • Cross-verified with The Thiomi Dataset Kikamba (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/kamba/vaa.opus"
         },
         {
           "english": "Hips",
@@ -51952,12 +51953,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "Smokers are grown-ups - with or without arms.'",
-          "translation": "Sikala ĩnyusawa nĩ andũ aima, methĩwe me na moko kana mai na moko.'",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "Then he replied, saying: \"I am elder brother to the",
           "translation": "Kyambĩaa, 'Vayingwa mbosi mũseo ta ũla nthũkũmaa!'",
           "pronunciation": "",
@@ -52728,12 +52723,6 @@
         {
           "english": "It will replace all other governments and will cause God's will to be done in heaven and on earth.",
           "translation": "Ũkavetanga silikalĩ ila ingĩ syonthe na ũkatuma kwenda kwa Ngai kwĩkwa ĩtunĩ na kũũ nthĩ.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "They are unable [even] to help themselves, nor can they be protected from Us?",
-          "translation": "Tũitonya ũmatethya, nao maitonya kũtũtethya.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -53938,12 +53927,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "The Good News of God!",
-          "translation": "Ũvoo Mũseo Kuma kwa Ngai!",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "as well as its people,",
           "translation": "Hamwe na andũ ake,",
           "pronunciation": "",
@@ -54516,12 +54499,6 @@
         {
           "english": "Will the Judge of all the earth not do what is right?\"",
           "translation": "AVALAAMU akũlilye atĩĩ: \"Mũsili wa nthĩ yonthe ndakeka ũlũngalu?\"",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "If it was written by men, can it rightly be called the Word of God.",
-          "translation": "Ethĩwa Mbivilia yaandĩkiwe nĩ andũ, kwa w'o no yĩtwe Ndeto ya Ngai?",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -56250,12 +56227,6 @@
         {
           "english": "and brought back the captivity of Jacob.",
           "translation": "nĩwacookeirie Jakubu ũtonga wake.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "But God's friends will be preserved, as were Noah and his family. - Matthew 24:37-42.",
-          "translation": "Ĩndĩ anyanyae ma Ngai makatangĩĩwa o ta Noa na mũsyĩ wake. - Mathayo 24:37-42.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -59326,12 +59297,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "The Bible says: \"A word spoken at the right time - how good it is!\"",
-          "translation": "Mbivilia yaĩtye atĩĩ: \"Ndeto ĩvindanĩ yayo, kote nzeo!\"",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "That's what God did for Ruth.",
           "translation": "Ũu now'o Ngai wamũtetheeisye Luthi.",
           "pronunciation": "",
@@ -61024,12 +60989,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "He sent one of his perfect spirit sons to the earth....",
-          "translation": "Atũmie ũmwe wa ana make eanĩu ma veva ooka kũũ nthĩ.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "This is the great and glorious day.",
           "translation": "tere liye kya kya na kia humne,",
           "pronunciation": "",
@@ -61710,12 +61669,6 @@
         {
           "english": "Even so-called peacekeeping organizations, such as the United Nations, have not been able to stop the rider of the red horse.",
           "translation": "O na ngwatanĩo ila isũvĩaa mũuo ĩũlũ wa nthĩ, ta Ngwatanĩo ya Nthĩ (UN), niemetwe nĩ kũsiĩĩa mũtwai wa mbalasi ndune.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "What do you think?  - Read 1 John 3:10-12.",
-          "translation": "We wĩona ata? - Soma 1 Yoana 3:10-12.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -62698,12 +62651,6 @@
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
         {
-          "english": "The woman answered the call and explained that her husband was at work",
-          "translation": "Kĩveti kĩu nĩkyoosie simũ na kyasya kana mũũme e wĩanĩ.",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
           "english": "Consider the case of Naboth.",
           "translation": "Kwasũanĩa ngelekany'o ya Navothi.",
           "pronunciation": "",
@@ -62826,12 +62773,6 @@
         {
           "english": "b) How many people live in your city?",
           "translation": "(e) Kwenyu mwĩ andũ meana?",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "Some claim that there is no such thing as free will  - that all our actions are predetermined by God.",
-          "translation": "Amwe masasya atĩ vai kĩndũ kĩtawa ũthasyo wa kwĩnyuvĩa aĩ nũndũ Ngai nĩwe ũtũvangĩaa maũndũ maitũ onthe.",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -63294,12 +63235,6 @@
         {
           "english": "\"Instead, he remained positive and expressed a sincere desire to help.\"",
           "translation": "Vandũ va ũu, aĩ na woni ũla waĩlĩte na nĩwambonisye kuma ngoonĩ kana nĩwendaa kũndetheesya.\"",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "The Road to Everlasting Life - Have You Found It?",
-          "translation": "Nzĩa ya Kũthi Thayũnĩ Ũtathela - We Nũmyonete?",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -64470,12 +64405,6 @@
         {
           "english": "when we make judgments about",
           "translation": "ĩla twakwatwa nĩ motato,",
-          "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
-        },
-        {
-          "english": "I love your Light.",
-          "translation": "Nĩngwenda ũtheri waku,",
           "pronunciation": "",
           "context": "OPUS NLLB Mined Bitext eng_Latn-kam_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
         },
@@ -67758,12 +67687,6 @@
           "english": "here",
           "translation": "baa",
           "context": "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages (1904) — Kamba (Ulu dialect)"
-        },
-        {
-          "english": "here",
-          "translation": "vaa",
-          "context": "Hildegarde Hinde, Vocabularies of the Kamba and Kikuyu Languages (1904) — Kamba (Nganyawa dialect)",
-          "audioFile": "https://audio.kenyahub.me/audio/kamba/vaa.opus"
         },
         {
           "english": "hide (v.)",
@@ -72778,5 +72701,5 @@
   "source": "The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Krapf 1850, Last 1885, Krapf, Rebmann & Sparshott 1887, Hinde 1904, Hobley 1910/1922, Dundas 1915, Johnston 1919, Lindblom 1920 & Jones/Freyer 2019); Roberts-Kohno & Bickmore (2019) LSP #190 Ch. 10 Kikamba Melodic Tone (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "kam",
   "glottocode": "kamb1297",
-  "totalEntries": 12910
+  "totalEntries": 12897
 }

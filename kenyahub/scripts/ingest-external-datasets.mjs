@@ -43,6 +43,7 @@ export const BLOCKED_NON_COMMERCIAL_REPOS = new Set([
   "masakhane/afriqa-gold-passages",
   "masakhane/mafand",
   "masakhane/afridocmt",
+  "masakhane/afrifact",
   "masakhane/afrisenti",
   "hausanlp/afrisenti-twitter",
   "afrisenti-semeval/afrisent-semeval-2023",
@@ -260,7 +261,7 @@ export const EXTERNAL_DATASET_MANIFEST = [
   },
   {
     id: "masakhane-clean-suite",
-    name: "Masakhane Clean Commercial 7 (AfriMMLU, AfriMGSM, AfriXNLI, InjongoIntent, AfrIFact, Uhura-TruthfulQA, Uhura-ARC-Easy)",
+    name: "Masakhane Clean Commercial 6 (AfriMMLU, AfriMGSM, AfriXNLI, InjongoIntent, Uhura-TruthfulQA, Uhura-ARC-Easy)",
     license: "Apache-2.0 / CC-BY-4.0",
     gated: false,
     pipeline: "ingest-permissive-text-datasets.py",
@@ -303,6 +304,17 @@ async function main() {
     }
     try {
       if (ds.id === "ipa-dict-sw" && ds.directUrl) {
+        const forceReingest = /^(1|true|yes)$/i.test(process.env.FORCE_REINGEST || "");
+        const retryPendingOnly = !/^(0|false|no)$/i.test(process.env.RETRY_PENDING_ONLY || "true");
+        const lockPath = path.resolve(__dirname, "../public/.text-ingested-lock.json");
+        let textLock = {};
+        if (fs.existsSync(lockPath)) {
+          try { textLock = JSON.parse(fs.readFileSync(lockPath, "utf8")); } catch {}
+        }
+        if (!forceReingest && retryPendingOnly && textLock?.external?.["ipa-dict-sw"]?.status === "completed") {
+          console.log("  -> [skip-done] ipa-dict-sw already enriched in prior run.");
+          continue;
+        }
         const payload = await fetchWithTimeout(ds.directUrl, 20000);
         if (typeof payload === "string") {
           const swPath = path.join(DICT_DIR, "swahili.json");
@@ -322,7 +334,10 @@ async function main() {
               }
             }
           }
-          fs.writeFileSync(swPath, JSON.stringify(swDict, null, 2));
+          fs.writeFileSync(swPath, JSON.stringify(swDict, null, 2) + "\n");
+          textLock.external = textLock.external || {};
+          textLock.external["ipa-dict-sw"] = { status: "completed", enriched, updatedAt: new Date().toISOString() };
+          fs.writeFileSync(lockPath, JSON.stringify(textLock, null, 2) + "\n");
           console.log(`  -> Enriched ${enriched} Swahili entries with IPA transcriptions from ipa-dict.`);
         }
       } else {

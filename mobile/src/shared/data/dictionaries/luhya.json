@@ -11,7 +11,7 @@
     "Vihiga",
     "Busia"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-21",
   "contributorNote": "Luhya (Oluluyia: Luwanga, Lubukusu, Lumasaba, Lulogooli) vocabulary compiled from C. W. Hobley (1902, 1903), Sir Harry H. Johnston (1902, 1919 #5–6a), Rev. J. B. Purvis (1907, 1909 \"Through Uganda to Mount Elgon\"), Rev. John Roscoe (1915 \"The Northern Bantu\"), BFBS (1921), Rev. N. Stam (1929 \"The Bahanga\"), and Payne, Pacchiarotti & Bosire eds. (2016 \"Diversity in African Languages\", Chs. 9, 11, 12, 15). Expanded and cross-verified with Commercially Permissive Datasets (Kencorpus Lumarachi, Logooli & Lubukusu (KenCorpus_text, KenPOS, KenTrans, KenLumachiQuAD, CC-BY-4.0), Project Tafsiri v2.0 (9 Luhya dialects, CC-BY-4.0), Language Science Press Logoori & Lubukusu Corpora (2016/2019, CC-BY-4.0), Marconi Lumasaba (CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",

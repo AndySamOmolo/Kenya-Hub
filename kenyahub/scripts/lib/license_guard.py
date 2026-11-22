@@ -42,6 +42,7 @@ BLOCKED_NON_COMMERCIAL_REPOS: frozenset[str] = frozenset({
     "masakhane/afriqa-gold-passages",          # AfriQA Gold Passages (CC-BY-NC)
     "masakhane/mafand",                        # MAFAND-MT (CC-BY-NC)
     "masakhane/afridocmt",                     # AfriDocMT (CC-BY-NC)
+    "masakhane/afrifact",                      # AfrIFact (upstream AfriDocMT/XL-Sum NC)
     "masakhane/afrisenti",                     # AfriSenti (CC-BY-NC)
     "hausanlp/afrisenti-twitter",              # AfriSenti Twitter (CC-BY-NC)
     "afrisenti-semeval/afrisent-semeval-2023", # AfriSenti SemEval (CC-BY-NC)
