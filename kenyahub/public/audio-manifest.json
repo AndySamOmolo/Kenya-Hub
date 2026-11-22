@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-11-21",
+  "generatedAt": "2026-11-22",
   "storageArchitecture": "Cloudflare R2 Free Tier (10 GB free storage, 10M free Class B reads/mo, $0.00 egress)",
   "codec": "Opus 24kbps mono 24kHz (.opus)",
   "estimatedCapacityHours": 925,
@@ -114,8 +114,8 @@
     },
     "kikuyu": {
       "languageName": "Kikuyu (Gĩkũyũ)",
-      "totalEntries": 25764,
-      "addressableR2Keys": 25755,
+      "totalEntries": 26146,
+      "addressableR2Keys": 26137,
       "r2Prefix": "audio/kikuyu/",
       "directAudioEntries": 254,
       "openAccessDatasets": [
@@ -385,10 +385,10 @@
     },
     "swahili": {
       "languageName": "Swahili (Kiswahili)",
-      "totalEntries": 61107,
-      "addressableR2Keys": 61085,
+      "totalEntries": 61108,
+      "addressableR2Keys": 61086,
       "r2Prefix": "audio/swahili/",
-      "directAudioEntries": 457,
+      "directAudioEntries": 480,
       "openAccessDatasets": [
         {
           "id": "cv27-sw",

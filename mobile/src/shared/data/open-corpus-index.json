@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-21T20:07:14.558874+00:00",
+  "generatedAt": "2026-11-22T09:05:04.221260+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 5269,
+    "totalR2AudioClips": 5871,
     "totalAudioChapters": 5,
     "totalKslVideos": 99,
     "totalStagedVarieties": 4,
     "totalStagedEntries": 650,
-    "totalBenchmarkRows": 26564,
-    "totalReaderSentences": 2666,
+    "totalBenchmarkRows": 26618,
+    "totalReaderSentences": 2712,
     "totalCivicDatasets": 8,
     "totalWikimediaDatasets": 6,
     "pendingGatedCount": 9
@@ -16,7 +16,7 @@
   "languages": {
     "swahili": {
       "languageId": "swahili",
-      "r2AudioClips": 1221,
+      "r2AudioClips": 1485,
       "cldr": {
         "locale": "sw",
         "months": [
@@ -89,64 +89,64 @@
       },
       "sampleReadings": [
         {
-          "text": "Ninakupenda.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Baba na Mama Opio wamepanda mahindi na mihogo. Mazao haya yatalisha familia. Mazao yatakayo baki yatauzwa ili kupata pesa za matumizi ya familia. Baba na Mama Opio wamepeleka.",
+          "source": "Working Better Together",
+          "license": "cc-by"
         },
         {
-          "text": "Watu wote wamezaliwa huru, hadhi na haki zao ni sawa. Wote wamejaliwa akili na dhamiri, hivyo yapasa watendeane kindugu.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Kato, Ronald na Teddy huweka nguo na miili yao safi, lakini hawajui kuhusu vijidudu amba vyo havioneka ni. Siku moja Kato alitoka chooni. Wakati anarudi darasani alisimama.",
+          "source": "SABUNI NA MAJI KWA KUONDOA VIJIDUDU",
+          "license": "cc-by"
         },
         {
-          "text": "Hutusahau!",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Walikuwa na majivuno na hawakujali kama Mungu alivyosema. Wakajenga mji wakaweka mnara mrefu uliokaribia kufika mbinguni. Mungu akaona watu hawa wakiendelea kufanya uovu.",
+          "source": "04",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Swali nzuri.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Lakini hapo kale, pua la tembo lilikuwa fupi na nono. Lilikuwa kama kiatu kilichowekwa katikati mwa uso wake. Siku moja tembo akazaa mtoto aliyekuwa mdadisi. Alikuwa na swali.",
+          "source": "Пилдин тентек баласы",
+          "license": "cc-by"
         },
         {
-          "text": "Unakumbuka?",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Yesu akasema, \" Ufalme wa Mungu unafananishwa na mfalme alie taka kukusanya madeni yake kutoka kwa watumishi wake. Mmoja wa watumishi wake alikua anadaiwa deni kubwa lenye.",
+          "source": "ŊKHAŊ ƏTYO ŊWAY FƏG KUNAG KPƏNDAŊ NTƏM",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Kwenda kwa teksi hotelini.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Lakini hapo kale, pua la tembo lilikuwa fupi na nono. Lilikuwa kama kiatu kilichowekwa katikati mwa uso wake. Siku moja tembo akazaa mtoto aliyekuwa mdadisi. Alikuwa na swali.",
+          "source": "Curious  baby elephant",
+          "license": "cc-by"
         },
         {
-          "text": "Usisahau kupeleka barua",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Kila mwaka baada ya siku 50 za Pasaka, Wayahudi walisheherekea siku muhimu ya Pentekosti. Pentekosti ni kipindi ambacho wayahudi walisheherekea mavuno ya ngano, Wayahudi.",
+          "source": "Kaanaametaap Kaniisa",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Nitarudi.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Ndipo Mungu aliadhibu falme zote kwa kuruhusu maadui zao kuwapiga. Ufame wa Ashuru ulikua ni ufalme wenye nguvu, taifa korofi likaharibu ufalme wa Israel. katika ufalme wa.",
+          "source": "NAD SWAD NHWO KU BU BWWOG KU",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Nina swali.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "\"Lakini wakati punje ya haradali inapokuwa, inakuwa kubwa kuliko mimea yote bustanini, inakuwa na ukubwa wa kutosha hata ndege huja na kutua kwenye matawi yake,\" Yesu.",
+          "source": "येसुङा आरु चा मुन्‍डुम्‌चि हिसिक्‍टुचे",
+          "license": "cc-by"
         },
         {
-          "text": "Nakupenda.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Kwakuwa Yusufu alikuwa anapendwa sana na baba yake, na kwamba siku moja aliwahi kuota ndoto na akawasimulia kaka zake kwamba yeye atakuwa mtawala wao hapo baadae, kaka zake.",
+          "source": "ƏGWAZA U Ə COG ISÛ MBYYAŊ KYAŊ BWAG GU KU",
+          "license": "cc-by-sa"
         },
         {
-          "text": "Usisahau kupeleka barua.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Petro akamtazama yule kiwete na kumwambia, \"Sina fedha za kukupa. Japo nitakupa kile nilichonacho. Kwa jina la Yesu Kristo, simama na utembee!\" Mara tu, Mungu akamponya yule.",
+          "source": "पाट्‌रुस लोक् युहान्‍नाङा लोङ्‌लेन् याप्‌मि नुमानि",
+          "license": "cc-by"
         },
         {
-          "text": "Penye nia, pana njia.",
-          "source": "Tatoeba Swh Text",
-          "license": "CC-BY-2.0"
+          "text": "Mmoja wa wanafunzi wa Yesu aliitwa Yuda. Yuda alikuwa mtunza mfuko wa fedha wa mitume, lakini alikuwa mpenda fedha na mara nyingi aliiba fedha kutoka mfuko huo. Baada ya Yesu.",
+          "source": "येसु बिस्‍वास घातङि ठायाना",
+          "license": "cc-by"
         }
       ],
       "topFrequencyWords": [
@@ -432,6 +432,10 @@
         {
           "id": "cohere-aya-ke",
           "rows": 396
+        },
+        {
+          "id": "ea-mobile-money-safety-audit",
+          "rows": 54
         },
         {
           "id": "facebook-belebele-swh",
@@ -744,7 +748,7 @@
     },
     "luo": {
       "languageId": "luo",
-      "r2AudioClips": 912,
+      "r2AudioClips": 1174,
       "cldr": {
         "locale": "luo",
         "months": [
@@ -1154,7 +1158,7 @@
     },
     "luhya": {
       "languageId": "luhya",
-      "r2AudioClips": 250,
+      "r2AudioClips": 323,
       "cldr": {
         "locale": "luy",
         "months": [
@@ -1212,7 +1216,23 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
-      "sampleReadings": [],
+      "sampleReadings": [
+        {
+          "text": "Yosia yamenya khale khale weene. Paapa wuwe yali omuruchi. Nabutswa obwatoto bubeere buri, Yosia yali wayanza okhukhola ka abasiani ba emiyika chichie bayanza okhukhola..",
+          "source": "Omwana omusiani aba omuruchi",
+          "license": "cc-by"
+        },
+        {
+          "text": "Mayi wuwe wumureerekho okhusiinga. Alabukulanga omuswaki kwa ameno. Mayi wuwe wumuleerere amachi khu lipeseni. Alasinganga amoni wuwe. Wuchiile okhukona chindolo ahambi nende.",
+          "source": "Joy achiichanga esisomelo",
+          "license": "cc-by"
+        },
+        {
+          "text": "Wangwe acha esikuli. Kasiima sikuli. Wangwe ali mukilasi ya khanne. Wangwe ali mukilaasi. Mwalimu Wamalwa asomia. Asomia Wangwe esabu. Wangwe kama esikuli. Ali nende.",
+          "source": "Endalo ya Wangwe",
+          "license": "cc-by"
+        }
+      ],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
@@ -1474,7 +1494,18 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
-      "sampleReadings": [],
+      "sampleReadings": [
+        {
+          "text": "Isomitit kō otēpto nē punēy chiito agetōgōl ēn kāsārwēēk alak ēn sopēēnyuwaan. Imuuchēy konaam isomitit kōsērpēn ōtkō ōwiit. Yā-iitu kiit kaigaa-ey keey chiito ēn katyaat nē.",
+          "source": "ISOMITIT",
+          "license": "cc-by"
+        },
+        {
+          "text": "Kiintē koymuutik chē yuu kiyoon tōtoonik alak, kōyookto :sirkaliit konēētiintētoop myēyntaap pōōrto. Kiineet Pwaari piik chē kiimochēy konay kēy ōpu miyoni, ak kēy kiyoyēy si.",
+          "source": "TYPŌYT",
+          "license": "cc-by"
+        }
+      ],
       "topFrequencyWords": [],
       "wikimedia": [
         {
@@ -1593,7 +1624,13 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
-      "sampleReadings": [],
+      "sampleReadings": [
+        {
+          "text": "Rituko erimo inkarora egekabu ki’amakendo kebekire ase omogaso isiko mwa’baba. Ekero namoboretie buna negiaki, richibu nanyorete ndiria buna: “Ekio negekabu kiane kiogokorera.",
+          "source": "Grandma's bananas",
+          "license": "cc-by"
+        }
+      ],
       "topFrequencyWords": [
         {
           "word": "ase",
@@ -1757,7 +1794,104 @@
         "unimorphEntries": null
       },
       "sampleReadings": [],
-      "topFrequencyWords": [],
+      "topFrequencyWords": [
+        {
+          "word": "jacinthe",
+          "count": 15492
+        },
+        {
+          "word": "na",
+          "count": 8608
+        },
+        {
+          "word": "ya",
+          "count": 6978
+        },
+        {
+          "word": "mpy",
+          "count": 6663
+        },
+        {
+          "word": "wa",
+          "count": 5684
+        },
+        {
+          "word": "areejaljazeera",
+          "count": 2806
+        },
+        {
+          "word": "jesusinthecity",
+          "count": 2803
+        },
+        {
+          "word": "cynthia",
+          "count": 2326
+        },
+        {
+          "word": "ni",
+          "count": 2229
+        },
+        {
+          "word": "cia",
+          "count": 2205
+        },
+        {
+          "word": "kia",
+          "count": 1872
+        },
+        {
+          "word": "bwa",
+          "count": 1819
+        },
+        {
+          "word": "ba",
+          "count": 1788
+        },
+        {
+          "word": "com",
+          "count": 1719
+        },
+        {
+          "word": "best",
+          "count": 1567
+        },
+        {
+          "word": "bedroom",
+          "count": 1514
+        },
+        {
+          "word": "jwa",
+          "count": 1429
+        },
+        {
+          "word": "kiri",
+          "count": 1350
+        },
+        {
+          "word": "uri",
+          "count": 1165
+        },
+        {
+          "word": "uria",
+          "count": 1123
+        },
+        {
+          "word": "language",
+          "count": 1103
+        },
+        {
+          "word": "thirikari",
+          "count": 1081
+        },
+        {
+          "word": "iu",
+          "count": 1028
+        },
+        {
+          "word": "iria",
+          "count": 1001
+        }
+      ],
       "wikimedia": [],
       "wikimediaArticles": [],
       "phonemes": [
@@ -2521,7 +2655,18 @@
         "phoibleSegments": null,
         "unimorphEntries": null
       },
-      "sampleReadings": [],
+      "sampleReadings": [
+        {
+          "text": "Edoloto kesi osokoni,obu ederepa olimok kesi aitac isirigin lu erot.Obu aite otac luke. Obu ekingok da otac konye,apol anooti ke. Nepe elosi ederepa ayinakin ekingok eke.",
+          "source": "Goat, Dog and Cow",
+          "license": "cc-by"
+        },
+        {
+          "text": "Edoloto kesi osokoni,obu ederepa olimok kesi aitac isirigin lu erot.Obu aite otac luke. Obu ekingok da otac konye,apol anooti ke. Nepe elosi ederepa ayinakin ekingok eke.",
+          "source": "Корова  Пёс и Коза",
+          "license": "cc-by"
+        }
+      ],
       "topFrequencyWords": [
         {
           "word": "ebe",
@@ -2833,7 +2978,7 @@
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 389,
+      "r2AudioClips": 392,
       "cldr": {
         "locale": "om-KE",
         "months": [
@@ -8577,6 +8722,10 @@
     {
       "id": "cohere-aya-ke",
       "rows": 396
+    },
+    {
+      "id": "ea-mobile-money-safety-audit",
+      "rows": 54
     },
     {
       "id": "facebook-belebele-gaz",

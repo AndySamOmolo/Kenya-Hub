@@ -1,7 +1,7 @@
 {
   "languageId": "ksl",
   "iso639_3": "xki",
-  "updatedAt": "2026-11-21T17:54:58.555534+00:00",
+  "updatedAt": "2026-11-22T09:04:58.077671+00:00",
   "sources": [
     {
       "id": "maseno-ksl-pose-14338329",
@@ -37,7 +37,6 @@
     }
   ],
   "glosses": [],
-  "storybooks": [],
   "videos": [
     {
       "id": "sign-bible-xki-ksl-passage-0",
