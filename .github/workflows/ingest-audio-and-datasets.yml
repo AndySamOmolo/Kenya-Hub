@@ -228,7 +228,28 @@ jobs:
           git add -A kenyahub/src/data/dictionaries kenyahub/src/data/language-sources kenyahub/src/data/courses/proverbs kenyahub/src/data/language-typology kenyahub/src/data/open-corpus-index.json kenyahub/src/data/locales kenyahub/src/data/readers kenyahub/src/data/benchmarks kenyahub/src/data/frequency-lists kenyahub/src/data/civic kenyahub/src/data/wikimedia kenyahub/public/audio-manifest.json kenyahub/public/.audio-ingested-lock.json kenyahub/public/r2-audio-index.json kenyahub/public/ksl-index.json kenyahub/public/dholuo-audio-chapters.json kenyahub/reports/tool-audit.json mobile/src/shared/ || true
           if ! git diff --staged --quiet; then
             git commit -m "feat(data): ingest commercially permissive audio, KSL, text, PanLex, CLDR 49, Kaikki & CLDF datasets"
-            git pull --rebase --autostash origin ${GITHUB_REF_NAME}
+            git fetch origin "${GITHUB_REF_NAME}"
+            if ! git rebase "origin/${GITHUB_REF_NAME}"; then
+              mapfile -t conflicted < <(git diff --name-only --diff-filter=U)
+              unexpected_conflict=false
+              for file in "${conflicted[@]}"; do
+                case "$file" in
+                  kenyahub/src/data/dictionaries/*|kenyahub/src/data/language-sources/*|kenyahub/src/data/courses/proverbs/*|kenyahub/src/data/language-typology/*|kenyahub/src/data/open-corpus-index.json|kenyahub/src/data/locales/*|kenyahub/src/data/readers/*|kenyahub/src/data/benchmarks/*|kenyahub/src/data/frequency-lists/*|kenyahub/src/data/civic/*|kenyahub/src/data/wikimedia/*|kenyahub/public/audio-manifest.json|kenyahub/public/.audio-ingested-lock.json|kenyahub/public/r2-audio-index.json|kenyahub/public/ksl-index.json|kenyahub/public/dholuo-audio-chapters.json|kenyahub/reports/tool-audit.json|mobile/src/shared/*)
+                    git checkout --theirs -- "$file"
+                    git add -- "$file"
+                    ;;
+                  *)
+                    echo "::error::Unexpected conflict in $file; refusing to overwrite repository changes."
+                    unexpected_conflict=true
+                    ;;
+                esac
+              done
+              if [ "$unexpected_conflict" = "true" ]; then
+                git rebase --abort
+                exit 1
+              fi
+              GIT_EDITOR=true git rebase --continue
+            fi
             git push origin HEAD:${GITHUB_REF_NAME}
           else
             echo "No dictionary or manifest changes to commit."
