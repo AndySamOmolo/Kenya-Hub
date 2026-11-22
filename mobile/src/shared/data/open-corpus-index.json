@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:22:13.782594+00:00",
+  "generatedAt": "2026-11-22T13:54:33.699620+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
     "totalR2AudioClips": 8037,
@@ -819,62 +819,62 @@
       "sampleReadings": [
         {
           "text": "Nĩ ndĩraina.",
-          "source": "0008_nĩkĩĩ-ureka.md",
+          "source": "Nĩkĩĩ Ureka",
           "license": "CC-BY"
         },
         {
           "text": "Nĩ arainia gwoko",
-          "source": "0008_nĩkĩĩ-ureka.md",
+          "source": "Nĩkĩĩ Ureka",
           "license": "CC-BY"
         },
         {
           "text": "Nĩ ndĩrahũra hĩ.",
-          "source": "0008_nĩkĩĩ-ureka.md",
+          "source": "Nĩkĩĩ Ureka",
           "license": "CC-BY"
         },
         {
           "text": "Nĩ arenogora.",
-          "source": "0008_nĩkĩĩ-ureka.md",
+          "source": "Nĩkĩĩ Ureka",
           "license": "CC-BY"
         },
         {
           "text": "Nĩ ndĩracokia.",
-          "source": "0008_nĩkĩĩ-ureka.md",
+          "source": "Nĩkĩĩ Ureka",
           "license": "CC-BY"
         },
         {
           "text": "Nĩ arathikĩrĩria.",
-          "source": "0008_nĩkĩĩ-ureka.md",
+          "source": "Nĩkĩĩ Ureka",
           "license": "CC-BY"
         },
         {
           "text": "Nĩ kĩĩ ũreka?",
-          "source": "0008_nĩkĩĩ-ureka.md",
+          "source": "Nĩkĩĩ Ureka",
           "license": "CC-BY"
         },
         {
           "text": "Ŭyŭ nȋ Azizi. Azizi nȋ dolli yakwa.",
-          "source": "0099_azizi-dolli-yakwa.md",
+          "source": "Azizi Dolli Yakwa",
           "license": "CC-BY"
         },
         {
           "text": "Nȋnyedete Azizi tondŭ aikaraga akenete hindi ciothe.",
-          "source": "0099_azizi-dolli-yakwa.md",
+          "source": "Azizi Dolli Yakwa",
           "license": "CC-BY"
         },
         {
           "text": "Ndokira kiroko ni ndi thambaga uthiu. Gacoka gamwetha Azizi.",
-          "source": "0099_azizi-dolli-yakwa.md",
+          "source": "Azizi Dolli Yakwa",
           "license": "CC-BY"
         },
         {
           "text": "Ndamŭona Azizi nȋ njanŭraga juere yake.",
-          "source": "0099_azizi-dolli-yakwa.md",
+          "source": "Azizi Dolli Yakwa",
           "license": "CC-BY"
         },
         {
           "text": "Ngȋria kȋroko nȋ ndi mŭheyaga Azizi.",
-          "source": "0099_azizi-dolli-yakwa.md",
+          "source": "Azizi Dolli Yakwa",
           "license": "CC-BY"
         }
       ],
@@ -1033,7 +1033,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 450,
-        "storiesCount": 17,
+        "storiesCount": 2,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -1231,62 +1231,62 @@
       "sampleReadings": [
         {
           "text": "Chon chon gi lala, e gweng' Busolwe nenitiere nyako mane iluongo ni Namagunga.",
-          "source": "0061_mafua.md",
+          "source": "Mafua",
           "license": "CC-BY"
         },
         {
           "text": "Nohero mafua ahinya. Chieng' moro nodhi kulo e aora miluongo ni Nakwiga.",
-          "source": "0061_mafua.md",
+          "source": "Mafua",
           "license": "CC-BY"
         },
         {
           "text": "Kane odhi kulo, ne oyudo mafua mane ogombo ahinya, waooooo! ne owacho.",
-          "source": "0061_mafua.md",
+          "source": "Mafua",
           "license": "CC-BY"
         },
         {
           "text": "Kane odok dala ne okono min gi mondo enbe opidhie mafua e dala gi nikech...............",
-          "source": "0061_mafua.md",
+          "source": "Mafua",
           "license": "CC-BY"
         },
         {
           "text": "E kanisni wayudo mafua.",
-          "source": "0061_mafua.md",
+          "source": "Mafua",
           "license": "CC-BY"
         },
         {
           "text": "E rinda wa be wayudo mafua.",
-          "source": "0061_mafua.md",
+          "source": "Mafua",
           "license": "CC-BY"
         },
         {
           "text": "E wuoch wa be wayudo mafua.",
-          "source": "0061_mafua.md",
+          "source": "Mafua",
           "license": "CC-BY"
         },
         {
           "text": "Wa duto wahero mafua.",
-          "source": "0061_mafua.md",
+          "source": "Mafua",
           "license": "CC-BY"
         },
         {
           "text": "Maniendi en Azizi. Azizi en doli mara.",
-          "source": "0099_doli-na-manyinge-azizi.md",
+          "source": "Doli Na Manyinge Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Ahere kinde duko nimar kinde duko osiko ka obunjo.",
-          "source": "0099_doli-na-manyinge-azizi.md",
+          "source": "Doli Na Manyinge Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Bang' ka achiweo, alwoko wang'a bang'e amanyo. Kama Azizi nitiere.",
-          "source": "0099_doli-na-manyinge-azizi.md",
+          "source": "Doli Na Manyinge Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Banye ka ayude, aywoyone wiye.",
-          "source": "0099_doli-na-manyinge-azizi.md",
+          "source": "Doli Na Manyinge Azizi",
           "license": "CC-BY"
         }
       ],
@@ -1579,7 +1579,7 @@
       ],
       "shards": {
         "audioCount": 1174,
-        "storiesCount": 27,
+        "storiesCount": 5,
         "sentencesCount": 0,
         "articlesCount": 41,
         "quizCount": 80,
@@ -1774,62 +1774,62 @@
       "sampleReadings": [
         {
           "text": "Khusina elikulu niliba buluu?",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Silibechanga buluu buli lwosi dawe. Libechanga lirio?",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Khusina amsafu kabechanga majani?",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Sikabechanga buli lwosi majani dawe. Kabechanga kario?",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Khulwa sina amaremwa kabechanga namuki?",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Amaremwa amengu ni namuki. Amaremwa amabisi ni majani.",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Khu sina amnyinya nikaba rateng’i?",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Amanyinya kosi sikaraten’I dawe.",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Khu sina amabanga nikaba ranjayi?",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Khuli nende ebikeke. Ebikiranga amabanga nikaba ranjayi.",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Khu sina chumbi niba indafu? Engorwa.",
-          "source": "0073_mbolela-bulano-echirangi.md",
+          "source": "Mbolela Bulano Echirangi",
           "license": "CC-BY"
         },
         {
           "text": "Ino ni Manyatta. Niyo ingo wange. Ingo wange iri mudala Lihongo lia Turkana.",
-          "source": "0348_ebindu-bindmanya.md",
+          "source": "Ebindu Bindmanya",
           "license": "CC-BY"
         }
       ],
@@ -1940,7 +1940,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 323,
-        "storiesCount": 549,
+        "storiesCount": 40,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -2135,62 +2135,62 @@
       "sampleReadings": [
         {
           "text": "Mbui, Ngiti na Ng'ombe mai anyanyae anene. Muthenyia umwe maendie kyalo na ngali.",
-          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "source": "Mbui Ngiti Na Ngombe",
           "license": "CC-BY"
         },
         {
           "text": "Mavika kwisho wa kyaloi, Ndeleva amea maive tikiti. Ng'ombe aiva tikiti wake.",
-          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "source": "Mbui Ngiti Na Ngombe",
           "license": "CC-BY"
         },
         {
           "text": "Ngiti aiva tikiti umwingaingi, nundu ndaii na mbesa ila syailite.",
-          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "source": "Mbui Ngiti Na Ngombe",
           "license": "CC-BY"
         },
         {
           "text": "Ndeleva akwenda utungia Ngiti mbesa sya uluui, Mbui aumela asembete ataivite kindu!",
-          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "source": "Mbui Ngiti Na Ngombe",
           "license": "CC-BY"
         },
         {
           "text": "Ndeleva athata muno. Atwaa ngali atanatungia Ngiti mbesa sya yuulu.",
-          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "source": "Mbui Ngiti Na Ngombe",
           "license": "CC-BY"
         },
         {
           "text": "Ni kwio kitumi ona umunze Ngiti usembea ngali akunikile nzini aimaza Ndeleva ula utamutungia mbesa syake sya yuulu.",
-          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "source": "Mbui Ngiti Na Ngombe",
           "license": "CC-BY"
         },
         {
           "text": "Mbui nake asembaa aitoloka muumo wa ngali. Ethia aikia ndakakwatwe nundu wa ulea iva tikiti wake.",
-          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "source": "Mbui Ngiti Na Ngombe",
           "license": "CC-BY"
         },
         {
           "text": "Na Ng'ombe ndatelemaa ngali yukite. Ng'ombe osaa ivinda yake kukilanilia nzia nundu niwaivie tikiti wake wonze!",
-          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "source": "Mbui Ngiti Na Ngombe",
           "license": "CC-BY"
         },
         {
           "text": "Muthenya umwe, mbuavui Anansi niwosie ikwa kuma muundani wake. Mai maseo kuvituka kwou amaumbika mwakini mavye. Na ekala nthi amaye.",
-          "source": "0005_anansi-na-nguu.md",
+          "source": "Anansi Na Nguu",
           "license": "CC-BY"
         },
         {
           "text": "Kavinda ukwenda kuuma yambee, ew’a mwango wake wakunangwa. “ Ai ekai”, avindisya Anansi. “ Nuu usu” ateo avingua muango. Vai nguu ula wonekaa emunou muno. Nguu asya, “Anansi.",
-          "source": "0005_anansi-na-nguu.md",
+          "source": "Anansi Na Nguu",
           "license": "CC-BY"
         },
         {
           "text": "Ateo Anansi ai mutoonu muno kwithiwa atatonya kwisiania na mundu ikwa syake onethia ni mueni. Kwou aseuvya muvango. Saa ila nguu wekalile nthi na ambiia kwenda kuya ikwa syai.",
-          "source": "0005_anansi-na-nguu.md",
+          "source": "Anansi Na Nguu",
           "license": "CC-BY"
         },
         {
           "text": "Na kavinda kau Anansi ambiia kumelya ikwa kumelya. Ivinda ila nguu wasyokaa niwonie kana vayai ikwa. Nguu alilya Anansi na amwia “ Nimuvea muno nundu wa kumbaalika liuni wa.",
-          "source": "0005_anansi-na-nguu.md",
+          "source": "Anansi Na Nguu",
           "license": "CC-BY"
         }
       ],
@@ -2333,7 +2333,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 449,
-        "storiesCount": 270,
+        "storiesCount": 28,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -2523,62 +2523,62 @@
       "sampleReadings": [
         {
           "text": "Kikichopkei Zama kuwo sukul karon.",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Mi kichobe aboo musarek ab karon.",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Kimwa Zama kile, \"Nget iyoo kichob musar cho koromen kisir aboo!\"",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Torete musar Zama mu sukul simaam ruba.",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Ochu musarek kikururyo.",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Rong'u aboo cheko mu chomnyot nyo wou.",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Kimwa Zama kile, \"Aboo, Bere chii tikimeche musarechu sukaru keny.\"",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Kipkaat Zama mi metinyi kile, \"Anyinyen musarekab iyoo kisir chobo aboo.\"",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Kisom Zama sukaru kile \"Aboo kono sukaruk atesyi musarek amu mayem.\"",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Mi kukochinii aboto Zama sukaruk kamining kitesyi musarekchi.",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "\"Woo! Aboo! Ketesyi chumbi musarekchu!\"",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         },
         {
           "text": "Kiteb Zama abonyii kile \"Chone ayu iyoo kaa keny.\"",
-          "source": "0121_musar.md",
+          "source": "Musar",
           "license": "CC-BY"
         }
       ],
@@ -2761,7 +2761,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 2166,
-        "storiesCount": 9,
+        "storiesCount": 4,
         "sentencesCount": 0,
         "articlesCount": 108,
         "quizCount": 0,
@@ -2833,62 +2833,62 @@
       "sampleReadings": [
         {
           "text": "Igabwo kare kare banto tibamanyete kende. Tibamanyete gosimeka endagera, gose gosona yanga, gose korosia ebinto korua ase chichuma. Nonya nigo nyasaye orenge korokwa Nyame.",
-          "source": "0006_anansi-nobongaini.md",
+          "source": "Anansi Nobongaini",
           "license": "CC-BY"
         },
         {
           "text": "Rituko erimo, Nyame akaamua koenana enyongo eria y’obong’aini gosia ase Anansi. Kera engaki Anansi arigereretie enyongo eria, nigo arenge kweegeria egento ekeyia. Nero nigo.",
-          "source": "0006_anansi-nobongaini.md",
+          "source": "Anansi Nobongaini",
           "license": "CC-BY"
         },
         {
           "text": "Rakini Anansi nigo arenge omong’iti nokoba igo akarengereria, “Tiga nkache enyongo eye igoro y’omote omotaambe, ase onde bwensi atayenyore. Erio nario ndanyore enyongo eye.",
-          "source": "0006_anansi-nobongaini.md",
+          "source": "Anansi Nobongaini",
           "license": "CC-BY"
         },
         {
           "text": "Rakini korina omote oria n’enyongo eria ekaba obokongu asengencho enyongo nigo yarenge konyakomotwomera amaru aye kera engaki. Anansi agachaka kogechiwa mono nenyongo eria.",
-          "source": "0006_anansi-nobongaini.md",
+          "source": "Anansi Nobongaini",
           "license": "CC-BY"
         },
         {
           "text": "Eyio ekagera akairina omote oria mbaka igoro bwango sana. Rakini agatenena nakorengereria, “Ninche bweka mbwenerete gotwara obong’aini bwensi, na igaa omwawa oyo one nigo.",
-          "source": "0006_anansi-nobongaini.md",
+          "source": "Anansi Nobongaini",
           "license": "CC-BY"
         },
         {
           "text": "Enyongo erai egaateka ebisanda ekaba ebiminyore ebinge nse yomote oria. Nabo igo bono abanto besometie okorema, ogosona chiyanga n’ebinto bionsi abanto bamanyete rero.",
-          "source": "0006_anansi-nobongaini.md",
+          "source": "Anansi Nobongaini",
           "license": "CC-BY"
         },
         {
           "text": "Abwo kare kare ekero riroba riarenge rinyia, ebitunwa ebinge nigo biatubete ense eye buna oborangeti, nemete emetambe nigo yabetete erioba.",
-          "source": "0039_omosacha-omotangani.md",
+          "source": "Omosacha Omotangani",
           "license": "CC-BY"
         },
         {
           "text": "Ase ense eye, engoro nere yabwate amache, amatoereru, naende amakendu.",
-          "source": "0039_omosacha-omotangani.md",
+          "source": "Omosacha Omotangani",
           "license": "CC-BY"
         },
         {
           "text": "NSe yamache aya, ching’iti ibere inchiamenyete aroro. Eyemo nigo yabwate emeringori emekong’u, neria yende nigo yarenge enke naende engusu.",
-          "source": "0039_omosacha-omotangani.md",
+          "source": "Omosacha Omotangani",
           "license": "CC-BY"
         },
         {
           "text": "Bono rituko erimo, embura enene egatwu. Enkoba akabara mbaka nse yengoro eria yarenge namache. Amache akabagana ase chingaki nke igo. Ching’iti chiria chikarora riroba igoro.",
-          "source": "0039_omosacha-omotangani.md",
+          "source": "Omosacha Omotangani",
           "license": "CC-BY"
         },
         {
           "text": "“Titokegenderera kemenya ase egesunte eke iga namache aya amakendu goetani rero.” ching’iti chiria chigetebia. “Tiga togende igoro ase ense torore riroba riria. “Inaki.",
-          "source": "0039_omosacha-omotangani.md",
+          "source": "Omosacha Omotangani",
           "license": "CC-BY"
         },
         {
           "text": "Chinyoni chiria chikoiruruka tichigotosekerera kobera nse,” mosani oye agateba. “ekiagera titokouagura, nigo naintwe torabe togotara!” Ng’ora ng’ora hing’iti ciria chigachaka.",
-          "source": "0039_omosacha-omotangani.md",
+          "source": "Omosacha Omotangani",
           "license": "CC-BY"
         }
       ],
@@ -2999,7 +2999,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 0,
-        "storiesCount": 178,
+        "storiesCount": 17,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -3191,62 +3191,62 @@
       "sampleReadings": [
         {
           "text": "Ữjῦ ni Azizi. Azizi ni doli yakwa.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Nῖmpendete Azizi tontῦ niakaraga akithokaga.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Nyuuma ya gῦkiira nthambagia ῦthiῦ bwakwa na ngacwaa Azizi.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Ndamwona mpambagiria kῦmῦthithia nciuri ciawe.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Ndῦmagia Azizi irio riria nkῦnyua caai.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Riria nkῦria nteremente ῖ mῦrῦmagia.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Indi Azizi atῖrῖjaga nteremente ciawe. Ntῖmenya nῖkῖ!",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Nthiurukaga muundene ngituja maua.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Ndathiria nkanenkera Azizi yua rimwe. Indῖ atῖcokagia, “Nkaatho.”",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Ithambagia Azizi mbere ya ntii anthambia.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Mbῖkagira Azizi ngῦo intune tontu niyo rangi mpendete mono.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         },
         {
           "text": "Igiita ria kῦmaama Azizi omamaga rῦtere rwakwa.",
-          "source": "0099_doli-azizi.md",
+          "source": "Doli Azizi",
           "license": "CC-BY"
         }
       ],
@@ -3385,7 +3385,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 250,
-        "storiesCount": 23,
+        "storiesCount": 3,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -3579,62 +3579,62 @@
       "sampleReadings": [
         {
           "text": "Yaanbadiisa waxay ahayd mid aad u gaaban.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Albaabkiisa waxuu ahaa mid aad u hooseeyo.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Sariirtiisa waxay ahayd mid aad u gaaban.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Baaskiilkiisa waxuu ahaa mid aad u gaaban.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Ninkan aad ayuu u dheeraa!",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Waxuu sameeyay daab yaanbo aad u dheer.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Waxuu sameeyay gidaaro albaab oo aad u sareeyo.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Waxuu sameeyay sariir aad u dheer.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Waxuu soo iibsaday baaskiil aad u sareeyo.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Waxuu ku fadhiistay kursi aad u sareeyo. Waxuu kucunay fargeeto aad u dheer.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Waxuu ka tagay gurigiisa waxuuna ku noolaa kayn weyn. Waxuu ku noolaa sanado badan.",
-          "source": "0001_nin-aad-u-dheer.md",
+          "source": "Nin Aad U Dheer",
           "license": "CC-BY"
         },
         {
           "text": "Alisha waxay u baahan tahay inay shaqo hesho, waayo qoyskeedu waxay u baahan yihiin lacag ay ku iibsadaan cunto iyo dhar.",
-          "source": "0001_shaqo-raadin.md",
+          "source": "Shaqo Raadin",
           "license": "CC BY"
         }
       ],
@@ -3791,7 +3791,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 685,
-        "storiesCount": 233,
+        "storiesCount": 27,
         "sentencesCount": 150,
         "articlesCount": 0,
         "quizCount": 80,
@@ -3861,62 +3861,62 @@
       "sampleReadings": [
         {
           "text": "Ilchoréta apá enkíne, oldía ó enkíténg. Óre enkolóng nabô népuo páran te engárrî.",
-          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "source": "Enkine Oldia O Enkiteng",
           "license": "CC-BY"
         },
         {
           "text": "Óre peê ebayá, néjokí oláréwání lé engárri peê élâk iropiyianí enyê. Nélak enkíteng inenyéna.",
-          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "source": "Enkine Oldia O Enkiteng",
           "license": "CC-BY"
         },
         {
           "text": "Nélak oldía aitulusoó, amû meáta esíáná oó iropiyianí naáíririkíno.",
-          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "source": "Enkine Oldia O Enkiteng",
           "license": "CC-BY"
         },
         {
           "text": "Néjo oláréwání áshúkóki oldía iropiyianí enyéna naátelekutúa, nédol enkíné peê eisík aló éítû élâk.",
-          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "source": "Enkine Oldia O Enkiteng",
           "license": "CC-BY"
         },
         {
           "text": "Négoro naléng oláréwání. Néreu engárri aló éítû eshukokí oldía iropiyianí enyéna naáshukokíno.",
-          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "source": "Enkine Oldia O Enkiteng",
           "license": "CC-BY"
         },
         {
           "text": "Náa ínâ peê óre o táatá kémir oldía engárri aing'orú olaréwani leitú éíshô iropiyianí enyéna naáshukúnye.",
-          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "source": "Enkine Oldia O Enkiteng",
           "license": "CC-BY"
         },
         {
           "text": "Néísik enkíne tenéning engárri nalotú. Kéuré ajó kéíbung'í amû eitú élâk iropiyianí enyéna.",
-          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "source": "Enkine Oldia O Enkiteng",
           "license": "CC-BY"
         },
         {
           "text": "Néméírut nínye enkíteng tenéning engárri nalotú. Kédeenyári tenélang enkóítói. Kéyíólo ajó étáláá iropiyianí enyéna te lulúng'ata.",
-          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "source": "Enkine Oldia O Enkiteng",
           "license": "CC-BY"
         },
         {
           "text": "Óre enkolóng nabô, néíkesu Anansi inkosikosí te enkúrma énye. Náa kémelók olêng nená kósikosí. Néton apéj te enkíma aitobirakí. Óre peê ekú néítayu anyá.",
-          "source": "0005_anansi-o-oloikuma.md",
+          "source": "Anansi O Oloikuma",
           "license": "CC-BY"
         },
         {
           "text": "Óre etaá kéjó Anansi ápík enedukúya enkútúk, néning peê éóshí kútúk ají. Néírriang Anansi néjo, “kéng'ai pasá inâ?” Nélo aból kútúk ají. Némanikí olóíkúmá onaúre olêng..",
-          "source": "0005_anansi-o-oloikuma.md",
+          "source": "Anansi O Oloikuma",
           "license": "CC-BY"
         },
         {
           "text": "Káke képiak olêng Anansi. Némeyieu néng'arie likái tung'áni inkosikosí enyéna. Néesêk olóíkúmá. Óre etotoná oloikumá ajó áítéru anyá inkosikosí, nébuaakí Anansi ajokí.",
-          "source": "0005_anansi-o-oloikuma.md",
+          "source": "Anansi O Oloikuma",
           "license": "CC-BY"
         },
         {
           "text": "Óre métíi oloikumá, nényok Anansi amút inadúóó kosikosí. Néjo oloikumá áshúkúnye, nélau inkosikosí naanyâ. Néjokí oloikumá Anansi, “ashê naléng te enkitoomóno íno. Óre peê.",
-          "source": "0005_anansi-o-oloikuma.md",
+          "source": "Anansi O Oloikuma",
           "license": "CC-BY"
         }
       ],
@@ -4064,7 +4064,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 0,
-        "storiesCount": 355,
+        "storiesCount": 38,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -5046,62 +5046,62 @@
       "sampleReadings": [
         {
           "text": "Alishaan maatiin ishee nyaataafi uffataaf qarshii waan barbaadaniif hojii argachuu qabdi.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Alishaan biyya ishee keessatti hin hojjenne, garuu nyaata bilcheessuuf dandeettii qabdi, namoota waliin haasa'uus ni jaallatti.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Tarii mana nyaataa keessatti hojjechuu dandeessi ta'aa? Alishaan maxxansa hojii toora interneetii irratti barbaaddi.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Beeksisa sheefii tokko argite. Sunis nama mana nyaataa keessatti nyaata bilcheessuudha.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Gaaffii fi deebii hojiitiif deemte. Hogganaan mana nyaataa nama Sheefii ta’uuf leenji'e akka isaan barbaachisu itti hima.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Alishaan ni mufatte, garuu koorsii \"Nyaataa fi keessummeessituu\" jedhu fudhatti. Kunis mana nyaataa keessatti hojii akka argattu akka ishee gargaaru abdii qabdi.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Alishaan akka qaama leenjii ishee ta'utti mana nyaataa keessatti hojjechuu qabdi. Mindaa hin argattu, garuu muuxannoo hojii ni argatti.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Bal'ina koorsii kanaa \"CV\" ishee irratti dabalti. \"CV\" jechuun hojii isheen hojjettee fi koorsii fudhatte hunda kan ibsuudha.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Yeroo itti aanutti Alishaan mana nyaataa tokkotti gaaffii fi deebii hojiif deemte, hojiin sun ni kennameef. Hojii cimaadha. Yeroo baayʼee galgala, yeroo ijoolleenshee mana.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Maallaqa mataa isheetiin nyaata fi uffata maatii isheef bitachuu akka dandeessuuf hojii argachuu isheetiin boonteetti.",
-          "source": "0001_hojii-argachuu.md",
+          "source": "Hojii Argachuu",
           "license": "CC BY"
         },
         {
           "text": "Qottoon isaa bayyee gabaabdu dha.",
-          "source": "0001_namicha-baayyee-dheeraa.md",
+          "source": "Namicha Baayyee Dheeraa",
           "license": "CC-BY"
         },
         {
           "text": "Balballi mana isaa bayyee gabaabdu dha.",
-          "source": "0001_namicha-baayyee-dheeraa.md",
+          "source": "Namicha Baayyee Dheeraa",
           "license": "CC-BY"
         }
       ],
@@ -5270,7 +5270,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 392,
-        "storiesCount": 400,
+        "storiesCount": 40,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 130,
@@ -5431,42 +5431,42 @@
       "sampleReadings": [
         {
           "text": "Ng'ura, nkima!",
-          "source": "0302_nkima.md",
+          "source": "Nkima",
           "license": "CC-BY"
         },
         {
           "text": "Kepejisho nkima.",
-          "source": "0302_nkima.md",
+          "source": "Nkima",
           "license": "CC-BY"
         },
         {
           "text": "Keyerisho nkima.",
-          "source": "0302_nkima.md",
+          "source": "Nkima",
           "license": "CC-BY"
         },
         {
           "text": "Keysheru nkima nkirewaj.",
-          "source": "0302_nkima.md",
+          "source": "Nkima",
           "license": "CC-BY"
         },
         {
           "text": "Keysheru nkima ong'an.",
-          "source": "0302_nkima.md",
+          "source": "Nkima",
           "license": "CC-BY"
         },
         {
           "text": "Ng'ura, nkima!",
-          "source": "0302_nkima.md",
+          "source": "Nkima",
           "license": "CC-BY"
         },
         {
           "text": "Kesupat oleng' nkima.",
-          "source": "0302_nkima.md",
+          "source": "Nkima",
           "license": "CC-BY"
         },
         {
           "text": "Naa keata ngupu.",
-          "source": "0302_nkima.md",
+          "source": "Nkima",
           "license": "CC-BY"
         }
       ],
@@ -10344,12 +10344,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-100",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Meanwhile, Joshua sent men from Jericho to Ai, which is near…",
+        "gloss": "Meanwhile, Joshua sent men from Jericho to Ai, which is near…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-100.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Meanwhile, Joshua sent men from Jericho to Ai, which is near Beth-aven to the east of Bethel, and told them, “Go up and spy out the land.” So the men went up and spied out Ai. On returning to Joshua, they reported, “There is no need to send all the people; two or three thousand men are enough to go up and attack Ai. Si",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10357,12 +10357,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-101",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Meanwhile, Joshua sent men from Jericho to Ai, which is near…",
+        "gloss": "Meanwhile, Joshua sent men from Jericho to Ai, which is near…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-101.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Meanwhile, Joshua sent men from Jericho to Ai, which is near Beth-aven to the east of Bethel, and told them, “Go up and spy out the land.” So the men went up and spied out Ai. On returning to Joshua, they reported, “There is no need to send all the people; two or three thousand men are enough to go up and attack Ai. Si",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10370,12 +10370,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-102",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now there was a man named Elkanah who was from…",
+        "gloss": "Now there was a man named Elkanah who was from…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-102.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now there was a man named Elkanah who was from Ramathaim-zophim in the hill country of Ephraim. He was the son of Jeroham, the son of Elihu, the son of Tohu, the son of Zuph, an Ephraimite. He had two wives, one named Hannah and the other Peninnah. And Peninnah had children, but Hannah had none. Year after year Elkanah",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10383,12 +10383,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-103",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now there was a man named Elkanah who was from…",
+        "gloss": "Now there was a man named Elkanah who was from…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-103.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now there was a man named Elkanah who was from Ramathaim-zophim in the hill country of Ephraim. He was the son of Jeroham, the son of Elihu, the son of Tohu, the son of Zuph, an Ephraimite. He had two wives, one named Hannah and the other Peninnah. And Peninnah had children, but Hannah had none. Year after year Elkanah",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10396,12 +10396,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-104",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now there was a man named Elkanah who was from…",
+        "gloss": "Now there was a man named Elkanah who was from…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-104.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now there was a man named Elkanah who was from Ramathaim-zophim in the hill country of Ephraim. He was the son of Jeroham, the son of Elihu, the son of Tohu, the son of Zuph, an Ephraimite. He had two wives, one named Hannah and the other Peninnah. And Peninnah had children, but Hannah had none. Year after year Elkanah",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10409,12 +10409,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-105",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "In the spring, at the time when kings march out to war, David…",
+        "gloss": "In the spring, at the time when kings march out to war, David…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-105.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In the spring, at the time when kings march out to war, David sent out Joab and his servants with the whole army of Israel. They destroyed the Ammonites and besieged Rabbah, but David remained in Jerusalem. One evening David got up from his bed and strolled around on the roof of the palace. And from the roof he saw a w",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10422,12 +10422,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-106",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "In the spring, at the time when kings march out to war, David…",
+        "gloss": "In the spring, at the time when kings march out to war, David…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-106.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In the spring, at the time when kings march out to war, David sent out Joab and his servants with the whole army of Israel. They destroyed the Ammonites and besieged Rabbah, but David remained in Jerusalem. One evening David got up from his bed and strolled around on the roof of the palace. And from the roof he saw a w",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10435,12 +10435,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-107",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now the king of Aram was at war against Israel",
+        "gloss": "Now the king of Aram was at war against Israel",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-107.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10448,12 +10448,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-108",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now the king of Aram was at war against Israel",
+        "gloss": "Now the king of Aram was at war against Israel",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-108.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10461,12 +10461,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-109",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now the king of Aram was at war against Israel",
+        "gloss": "Now the king of Aram was at war against Israel",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-109.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10474,12 +10474,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-110",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now the king of Aram was at war against Israel",
+        "gloss": "Now the king of Aram was at war against Israel",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-110.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10487,12 +10487,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-111",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now the king of Aram was at war against Israel",
+        "gloss": "Now the king of Aram was at war against Israel",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-111.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10500,12 +10500,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-112",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Therefore the Lord Himself will give you a sign: Behold, the…",
+        "gloss": "Therefore the Lord Himself will give you a sign: Behold, the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-112.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel. He grew up before Him like a tender shoot, and like a root out of dry ground. He had no stately form or majesty to attract us, no beauty that we should desire Him. He was desp",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10513,12 +10513,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-113",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Therefore the Lord Himself will give you a sign: Behold, the…",
+        "gloss": "Therefore the Lord Himself will give you a sign: Behold, the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-113.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel. He grew up before Him like a tender shoot, and like a root out of dry ground. He had no stately form or majesty to attract us, no beauty that we should desire Him. He was desp",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10526,12 +10526,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-114",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Therefore the Lord Himself will give you a sign: Behold, the…",
+        "gloss": "Therefore the Lord Himself will give you a sign: Behold, the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-114.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel. He grew up before Him like a tender shoot, and like a root out of dry ground. He had no stately form or majesty to attract us, no beauty that we should desire Him. He was desp",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10539,12 +10539,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-115",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Therefore the Lord Himself will give you a sign: Behold, the…",
+        "gloss": "Therefore the Lord Himself will give you a sign: Behold, the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-115.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel. He grew up before Him like a tender shoot, and like a root out of dry ground. He had no stately form or majesty to attract us, no beauty that we should desire Him. He was desp",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10552,12 +10552,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-116",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "King Nebuchadnezzar made a golden statue sixty cubits high…",
+        "gloss": "King Nebuchadnezzar made a golden statue sixty cubits high…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-116.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10565,12 +10565,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-117",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "King Nebuchadnezzar made a golden statue sixty cubits high…",
+        "gloss": "King Nebuchadnezzar made a golden statue sixty cubits high…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-117.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10578,12 +10578,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-118",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "King Nebuchadnezzar made a golden statue sixty cubits high…",
+        "gloss": "King Nebuchadnezzar made a golden statue sixty cubits high…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-118.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10591,12 +10591,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-119",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "King Nebuchadnezzar made a golden statue sixty cubits high…",
+        "gloss": "King Nebuchadnezzar made a golden statue sixty cubits high…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-119.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10604,12 +10604,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-120",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "King Nebuchadnezzar made a golden statue sixty cubits high…",
+        "gloss": "King Nebuchadnezzar made a golden statue sixty cubits high…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-120.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10617,12 +10617,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-121",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now it pleased Darius to appoint 120 satraps to rule…",
+        "gloss": "Now it pleased Darius to appoint 120 satraps to rule…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-121.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10630,12 +10630,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-122",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now it pleased Darius to appoint 120 satraps to rule…",
+        "gloss": "Now it pleased Darius to appoint 120 satraps to rule…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-122.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10643,12 +10643,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-123",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now it pleased Darius to appoint 120 satraps to rule…",
+        "gloss": "Now it pleased Darius to appoint 120 satraps to rule…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-123.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10656,12 +10656,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-124",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now it pleased Darius to appoint 120 satraps to rule…",
+        "gloss": "Now it pleased Darius to appoint 120 satraps to rule…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-124.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10669,12 +10669,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-125",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Now it pleased Darius to appoint 120 satraps to rule…",
+        "gloss": "Now it pleased Darius to appoint 120 satraps to rule…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-125.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10682,12 +10682,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-126",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "This is how the birth of Jesus Christ came about: His mother…",
+        "gloss": "This is how the birth of Jesus Christ came about: His mother…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-126.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "This is how the birth of Jesus Christ came about: His mother Mary was pledged in marriage to Joseph, but before they came together, she was found to be with child through the Holy Spirit. Because Joseph her husband was a righteous man and was unwilling to disgrace her publicly, he resolved to divorce her quietly. But a",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10695,12 +10695,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-127",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "This is how the birth of Jesus Christ came about: His mother…",
+        "gloss": "This is how the birth of Jesus Christ came about: His mother…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-127.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "This is how the birth of Jesus Christ came about: His mother Mary was pledged in marriage to Joseph, but before they came together, she was found to be with child through the Holy Spirit. Because Joseph her husband was a righteous man and was unwilling to disgrace her publicly, he resolved to divorce her quietly. But a",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10708,12 +10708,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-128",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "This is how the birth of Jesus Christ came about: His mother…",
+        "gloss": "This is how the birth of Jesus Christ came about: His mother…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-128.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "This is how the birth of Jesus Christ came about: His mother Mary was pledged in marriage to Joseph, but before they came together, she was found to be with child through the Holy Spirit. Because Joseph her husband was a righteous man and was unwilling to disgrace her publicly, he resolved to divorce her quietly. But a",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10721,12 +10721,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-129",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "This is how the birth of Jesus Christ came about: His mother…",
+        "gloss": "This is how the birth of Jesus Christ came about: His mother…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-129.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "This is how the birth of Jesus Christ came about: His mother Mary was pledged in marriage to Joseph, but before they came together, she was found to be with child through the Holy Spirit. Because Joseph her husband was a righteous man and was unwilling to disgrace her publicly, he resolved to divorce her quietly. But a",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10734,12 +10734,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-130",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "In those days John the Baptist came, preaching in the…",
+        "gloss": "In those days John the Baptist came, preaching in the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-130.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10747,12 +10747,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-131",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "In those days John the Baptist came, preaching in the…",
+        "gloss": "In those days John the Baptist came, preaching in the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-131.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10760,12 +10760,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-132",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "In those days John the Baptist came, preaching in the…",
+        "gloss": "In those days John the Baptist came, preaching in the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-132.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10773,12 +10773,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-133",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "In those days John the Baptist came, preaching in the…",
+        "gloss": "In those days John the Baptist came, preaching in the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-133.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10786,12 +10786,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-134",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "In those days John the Baptist came, preaching in the…",
+        "gloss": "In those days John the Baptist came, preaching in the…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-134.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10799,12 +10799,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-135",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Then Jesus was led by the Spirit into the wilderness to be…",
+        "gloss": "Then Jesus was led by the Spirit into the wilderness to be…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-135.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Then Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry. The tempter came to Him and said, “If You are the Son of God, tell these stones to become bread.” But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on ever",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10812,12 +10812,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-136",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Then Jesus was led by the Spirit into the wilderness to be…",
+        "gloss": "Then Jesus was led by the Spirit into the wilderness to be…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-136.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Then Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry. The tempter came to Him and said, “If You are the Son of God, tell these stones to become bread.” But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on ever",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10825,12 +10825,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-137",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Then Jesus was led by the Spirit into the wilderness to be…",
+        "gloss": "Then Jesus was led by the Spirit into the wilderness to be…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-137.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Then Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry. The tempter came to Him and said, “If You are the Son of God, tell these stones to become bread.” But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on ever",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10838,12 +10838,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-138",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "Then Jesus was led by the Spirit into the wilderness to be…",
+        "gloss": "Then Jesus was led by the Spirit into the wilderness to be…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-138.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "Then Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry. The tempter came to Him and said, “If You are the Son of God, tell these stones to become bread.” But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on ever",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
@@ -10851,12 +10851,12 @@
       },
       {
         "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-139",
-        "title": "chronological bible translation in kenyan sign l (Human KSL)",
-        "gloss": "chronological bible translation in kenyan sign l",
+        "title": "The next day John saw Jesus coming toward him and said…",
+        "gloss": "The next day John saw Jesus coming toward him and said…",
         "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-139.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "reference": "chronological bible translation in kenyan sign l",
+        "reference": "Kenyan Sign Language Signed Passage",
         "transcript": "The next day John saw Jesus coming toward him and said, “Look, the Lamb of God, who takes away the sin of the world! This is He of whom I said, ‘A man who comes after me has surpassed me because He was before me.’ I myself did not know Him, but the reason I came baptizing with water was that He might be revealed to Isr",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
