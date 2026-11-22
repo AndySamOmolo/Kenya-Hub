@@ -348,15 +348,36 @@ def main() -> None:
                         continue
                     rec = ensure_lang(lid)
                     full_text = str(row.get("text") or "").strip()
-                    title = str(row.get("title") or src_name).strip()[:100]
+                    raw_title = str(row.get("title") or src_name).strip()
+                    title = re.sub(r"^\d{3,5}[_\-]+", "", raw_title)
+                    title = re.sub(r"\.(?:md|txt|json)$", "", title, flags=re.I).replace("-", " ").replace("_", " ").strip()
+                    title = (title.title() if title and title.islower() else title)[:100] or src_name
+                    eng_text = str(row.get("english") or "").strip()
+                    raw_en_title = str(row.get("englishTitle") or "").strip()
+                    en_title = re.sub(r"^\d{3,5}[_\-]+", "", raw_en_title)
+                    en_title = re.sub(r"\.(?:md|txt|json)$", "", en_title, flags=re.I).replace("-", " ").replace("_", " ").strip().title()[:100] if raw_en_title else ""
                     if len(full_text) >= 40:
                         rshard = ensure_reader_shard(lid)
-                        if not any(st["title"] == title and st["text"][:60] == full_text[:60] for st in rshard["stories"]):
-                            rshard["stories"].append({
-                                "title": title,
-                                "text": full_text,
-                                "wordCount": len(full_text.split()),
-                            })
+                        if eng_text:
+                            if not any(bi["title"] == title for bi in rshard["bilingualReadings"]):
+                                rshard["bilingualReadings"].append({
+                                    "title": title,
+                                    "englishTitle": en_title or title,
+                                    "text": full_text,
+                                    "english": eng_text,
+                                })
+                        else:
+                            existing_st = next((st for st in rshard["stories"] if st["title"] == title), None)
+                            if existing_st is not None:
+                                if full_text[:60] not in existing_st["text"] and len(existing_st["text"]) < 4000:
+                                    existing_st["text"] = existing_st["text"] + "\n\n" + full_text
+                                    existing_st["wordCount"] = len(existing_st["text"].split())
+                            elif len(rshard["stories"]) < 40:
+                                rshard["stories"].append({
+                                    "title": title,
+                                    "text": full_text,
+                                    "wordCount": len(full_text.split()),
+                                })
                     if len(rec["sampleReadings"]) < 12:
                         raw_t = " ".join(full_text.split())
                         if len(raw_t) > 180:

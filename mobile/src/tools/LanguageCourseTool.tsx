@@ -28,6 +28,8 @@ import { loadDictionary, LOADED_DICTS_CACHE } from './translator/loader';
 import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
 import openCorpusIndex from '../shared/data/open-corpus-index.json';
 import kslIndexData from '../shared/data/ksl-index.json';
+import dholuoChaptersData from '../shared/data/dholuo-audio-chapters.json';
+import { KSL_ALPHABET } from '../shared/data/ksl-starter';
 import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from '../shared/data/courses/proverbs';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
 import { luoRiddles } from '../shared/data/courses/luo/riddles';
@@ -183,6 +185,15 @@ export default function LanguageCourseTool({
     ((kslIndexData as any)?.videos?.[0]?.id as string) || ((openCorpusIndex as any).ksl?.videos?.[0]?.id as string) || ''
   );
   const [kslPlaybackRate, setKslPlaybackRate] = useState<number>(1);
+  const [kslStudioMode, setKslStudioMode] = useState<'browse' | 'quiz' | 'spell'>('browse');
+  const [kslQuizIdx, setKslQuizIdx] = useState<number>(0);
+  const [kslQuizPicked, setKslQuizPicked] = useState<string | null>(null);
+  const [kslQuizScore, setKslQuizScore] = useState<{ right: number; total: number }>({ right: 0, total: 0 });
+  const [kslSpellWord, setKslSpellWord] = useState<string>('JAMBO');
+  const [kslSpellIdx, setKslSpellIdx] = useState<number>(0);
+  const [dholuoTranscriptChapterId, setDholuoTranscriptChapterId] = useState<string | null>(null);
+  const [dholuoTranscriptPage, setDholuoTranscriptPage] = useState<number>(1);
+  const [dholuoShowEnglish, setDholuoShowEnglish] = useState<boolean>(true);
   const [emergingSearchQuery, setEmergingSearchQuery] = useState<string>('');
   const [emergingVisibleCount, setEmergingVisibleCount] = useState<number>(30);
 
@@ -2619,6 +2630,140 @@ export default function LanguageCourseTool({
                 </Text>
               </View>
 
+              {/* Web-Parity KSL Studio Mode Switcher */}
+              <View style={{ flexDirection: 'row', gap: 6 }}>
+                {(
+                  [
+                    { id: 'browse', label: 'Browse Signs' },
+                    { id: 'quiz', label: 'Sign Quiz' },
+                    { id: 'spell', label: 'A–Z Speller' },
+                  ] as const
+                ).map((md) => {
+                  const act = kslStudioMode === md.id;
+                  return (
+                    <Pressable
+                      key={md.id}
+                      onPress={() => setKslStudioMode(md.id)}
+                      style={{
+                        flex: 1,
+                        paddingVertical: 7,
+                        borderRadius: 9,
+                        alignItems: 'center',
+                        borderWidth: 1,
+                        borderColor: act ? colors.gold : colors.outlineVariant,
+                        backgroundColor: act ? `${colors.gold}22` : colors.surface,
+                      }}
+                    >
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: act ? colors.gold : colors.textSecondary }}>
+                        {md.label}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+
+              {kslStudioMode === 'quiz' && (() => {
+                const vocabPool = allKslVideos.filter((v) => v.category === 'maseno-stickman' && v.videoUrl);
+                const pool = vocabPool.length >= 4 ? vocabPool : allKslVideos;
+                const qVid = pool[kslQuizIdx % Math.max(1, pool.length)];
+                if (!qVid || pool.length < 4) return null;
+                const qUrl = qVid.videoUrl.replace(/["'<>]/g, '');
+                const qHtml = `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video src="${qUrl}" controls autoplay muted playsinline loop></video></body></html>`;
+                const targetLbl = (qVid.gloss || qVid.title).trim().toLowerCase();
+                const others = pool.filter((v) => (v.gloss || v.title).trim().toLowerCase() !== targetLbl);
+                const start = others.length > 3 ? (kslQuizIdx * 5) % (others.length - 3) : 0;
+                const opts = [qVid, ...others.slice(start, start + 3)].sort((a, b) => (a.gloss || a.title).localeCompare(b.gloss || b.title));
+                return (
+                  <View style={{ gap: 8, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>WATCH &amp; MATCH SIGN</Text>
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11.5, color: colors.kenyaGreen }}>Score: {kslQuizScore.right}/{kslQuizScore.total}</Text>
+                    </View>
+                    <View style={{ height: 200, borderRadius: 10, overflow: 'hidden', backgroundColor: '#000000' }}>
+                      <WebView
+                        key={`quiz-${qVid.id}`}
+                        source={{ html: qHtml, baseUrl: 'https://audio.kenyahub.me' }}
+                        allowsInlineMediaPlayback
+                        mediaPlaybackRequiresUserAction={false}
+                        javaScriptEnabled
+                        originWhitelist={['https://*', 'about:blank']}
+                        style={{ flex: 1, backgroundColor: '#000000' }}
+                      />
+                    </View>
+                    <View style={{ gap: 6 }}>
+                      {opts.map((opt) => {
+                        const isCorrect = opt.id === qVid.id;
+                        const isPicked = kslQuizPicked === opt.id;
+                        const borderColor = kslQuizPicked
+                          ? isCorrect ? colors.kenyaGreen : isPicked ? '#DC2626' : colors.outlineVariant
+                          : colors.outlineVariant;
+                        return (
+                          <Pressable
+                            key={opt.id}
+                            disabled={Boolean(kslQuizPicked)}
+                            onPress={() => {
+                              setKslQuizPicked(opt.id);
+                              setKslQuizScore((s) => ({ right: s.right + (isCorrect ? 1 : 0), total: s.total + 1 }));
+                            }}
+                            style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 10, borderWidth: 1, borderColor, backgroundColor: colors.surfaceContainer }}
+                          >
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12.5, color: colors.text }} numberOfLines={1}>
+                              {opt.gloss || opt.title}
+                            </Text>
+                          </Pressable>
+                        );
+                      })}
+                    </View>
+                    {Boolean(kslQuizPicked) && (
+                      <Pressable
+                        onPress={() => { setKslQuizPicked(null); setKslQuizIdx((i) => i + 1); }}
+                        style={{ backgroundColor: colors.gold, borderRadius: 10, paddingVertical: 10, alignItems: 'center' }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12.5, color: '#000000' }}>Next KSL Sign →</Text>
+                      </Pressable>
+                    )}
+                  </View>
+                );
+              })()}
+
+              {kslStudioMode === 'spell' && (() => {
+                const letters = kslSpellWord.toUpperCase().split('').filter((c) => c >= 'A' && c <= 'Z');
+                const safeI = letters.length > 0 ? Math.min(kslSpellIdx, letters.length - 1) : 0;
+                const activeLtr = letters[safeI];
+                const cueItem = KSL_ALPHABET.find((a) => a.letter === activeLtr);
+                return (
+                  <View style={{ gap: 8, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
+                    <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>FINGERSPELL ANY NAME OR WORD</Text>
+                    <TextInput
+                      value={kslSpellWord}
+                      onChangeText={(t) => { setKslSpellWord(t.replace(/[^a-zA-Z\s]/g, '').slice(0, 20)); setKslSpellIdx(0); }}
+                      placeholder="Type a word (e.g. NAIROBI)..."
+                      placeholderTextColor={colors.textMuted}
+                      style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 9, paddingHorizontal: 10, paddingVertical: 7, fontFamily: 'Inter_700Bold', fontSize: 13, color: colors.gold }}
+                    />
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
+                      {letters.map((ch, idx) => (
+                        <Pressable
+                          key={`${ch}-${idx}`}
+                          onPress={() => setKslSpellIdx(idx)}
+                          style={{ width: 34, height: 34, borderRadius: 8, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: idx === safeI ? colors.gold : colors.outlineVariant, backgroundColor: idx === safeI ? colors.gold : colors.surfaceContainer }}
+                        >
+                          <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: idx === safeI ? '#000000' : colors.text }}>{ch}</Text>
+                        </Pressable>
+                      ))}
+                    </View>
+                    {cueItem && (
+                      <View style={{ backgroundColor: colors.surfaceContainer, borderRadius: 9, padding: 10, gap: 4 }}>
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>Letter {cueItem.letter}</Text>
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>{cueItem.cue}</Text>
+                      </View>
+                    )}
+                  </View>
+                );
+              })()}
+
+              {kslStudioMode === 'browse' && (
+              <>
               {/* Category Filter Tabs */}
               <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
                 {(
@@ -2885,6 +3030,8 @@ export default function LanguageCourseTool({
                   </View>
                 )}
               </View>
+              </>
+              )}
             </View>
           );
         })()}
@@ -5010,6 +5157,58 @@ export default function LanguageCourseTool({
                         <Feather name="volume-2" size={14} color={colors.kenyaGreen} />
                       </Pressable>
                     ))}
+                    {selectedLangId === 'luo' && (() => {
+                      const fullChs = (dholuoChaptersData as any)?.chapters || [];
+                      const activeCh = fullChs.find((c: any) => c.id === dholuoTranscriptChapterId) || fullChs[0];
+                      const phrases: { english: string; dholuo: string }[] = activeCh?.phrases || [];
+                      if (phrases.length === 0) return null;
+                      const TX_PAGE = 10;
+                      const txPages = Math.max(1, Math.ceil(phrases.length / TX_PAGE));
+                      const safeTxP = Math.min(dholuoTranscriptPage, txPages);
+                      const slice = phrases.slice((safeTxP - 1) * TX_PAGE, safeTxP * TX_PAGE);
+                      return (
+                        <View style={{ marginTop: 6, backgroundColor: colors.surface, borderRadius: 10, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10, gap: 6 }}>
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 6 }}>
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.gold, flex: 1 }} numberOfLines={1}>
+                              TRANSCRIPT: {activeCh.title} ({phrases.length})
+                            </Text>
+                            <Pressable onPress={() => setDholuoShowEnglish((v) => !v)} style={{ paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6, borderWidth: 1, borderColor: colors.outlineVariant }}>
+                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 10.5, color: colors.textSecondary }}>
+                                {dholuoShowEnglish ? 'Hide EN' : 'Show EN'}
+                              </Text>
+                            </Pressable>
+                          </View>
+                          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 5 }}>
+                            {fullChs.map((c: any) => (
+                              <Pressable
+                                key={c.id}
+                                onPress={() => { setDholuoTranscriptChapterId(c.id); setDholuoTranscriptPage(1); }}
+                                style={{ paddingHorizontal: 8, paddingVertical: 4, borderRadius: 7, borderWidth: 1, borderColor: c.id === activeCh.id ? colors.gold : colors.outlineVariant, backgroundColor: c.id === activeCh.id ? `${colors.gold}20` : colors.surfaceContainer }}
+                              >
+                                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 10.5, color: c.id === activeCh.id ? colors.gold : colors.textSecondary }}>Ch. {c.number}</Text>
+                              </Pressable>
+                            ))}
+                          </ScrollView>
+                          {slice.map((ph, idx) => (
+                            <View key={idx} style={{ paddingVertical: 4, borderBottomWidth: 1, borderBottomColor: colors.outlineVariant }}>
+                              <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>{ph.dholuo}</Text>
+                              {dholuoShowEnglish && <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary }}>{ph.english}</Text>}
+                            </View>
+                          ))}
+                          {txPages > 1 && (
+                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 4 }}>
+                              <Pressable disabled={safeTxP <= 1} onPress={() => setDholuoTranscriptPage((p) => Math.max(1, p - 1))} style={{ paddingHorizontal: 10, paddingVertical: 5, borderRadius: 7, borderWidth: 1, borderColor: colors.outlineVariant, opacity: safeTxP <= 1 ? 0.4 : 1 }}>
+                                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.text }}>← Prev</Text>
+                              </Pressable>
+                              <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted }}>Page {safeTxP} / {txPages}</Text>
+                              <Pressable disabled={safeTxP >= txPages} onPress={() => setDholuoTranscriptPage((p) => Math.min(txPages, p + 1))} style={{ paddingHorizontal: 10, paddingVertical: 5, borderRadius: 7, borderWidth: 1, borderColor: colors.kenyaGreen, opacity: safeTxP >= txPages ? 0.4 : 1 }}>
+                                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.kenyaGreen }}>Next →</Text>
+                              </Pressable>
+                            </View>
+                          )}
+                        </View>
+                      );
+                    })()}
                   </View>
                 )}
               </View>

@@ -220,7 +220,7 @@ export default function GrammarView({
   }
 
   return (
-    <div className="mx-auto max-w-4xl space-y-6 px-1 sm:px-4">
+    <div className="mx-auto max-w-4xl w-full min-w-0 overflow-x-hidden space-y-6 px-1 sm:px-4">
       {(sections ?? []).map((section) => (
         <section
           key={section.id}
@@ -386,7 +386,7 @@ export default function GrammarView({
                 ).map((d, idx) => (
                   <div
                     key={`day-${idx}`}
-                    className="rounded-xl border border-border bg-bg-elevated px-3 py-2 text-xs"
+                    className="rounded-xl border border-border bg-bg-elevated px-3 py-2 text-xs min-w-0 break-words"
                   >
                     <p className="text-[10px] font-medium uppercase tracking-wide text-text-muted">{d.english}</p>
                     <p className="font-bold text-text-primary mt-0.5">{d.local}</p>
@@ -408,7 +408,7 @@ export default function GrammarView({
                 ).map((m, idx) => (
                   <div
                     key={`mo-${idx}`}
-                    className="rounded-xl border border-gold/25 bg-gold/5 px-3 py-2 text-xs"
+                    className="rounded-xl border border-gold/25 bg-gold/5 px-3 py-2 text-xs min-w-0 break-words"
                   >
                     <p className="text-[10px] font-medium text-text-muted">{idx + 1}. {m.english}</p>
                     <p className="font-semibold text-text-primary mt-0.5">{m.local}</p>
@@ -526,7 +526,7 @@ export default function GrammarView({
                 <select
                   value={selectedVerbLemma}
                   onChange={(e) => setSelectedVerbLemma(e.target.value)}
-                  className="rounded-xl border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-primary focus:border-gold/60 focus:outline-none"
+                  className="w-full sm:w-auto max-w-full min-w-0 rounded-xl border border-border bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-text-primary focus:border-gold/60 focus:outline-none"
                 >
                   {grammarShard.conjugations.map((g) => (
                     <option key={g.lemma} value={g.lemma}>

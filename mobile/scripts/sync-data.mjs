@@ -104,6 +104,10 @@ const kslIndexSrc = resolve(root, "kenyahub/public/ksl-index.json");
 if (existsSync(kslIndexSrc)) {
   writeFileSync(resolve(destination, "data/ksl-index.json"), readFileSync(kslIndexSrc));
 }
+const dholuoChSrc = resolve(root, "kenyahub/public/dholuo-audio-chapters.json");
+if (existsSync(dholuoChSrc)) {
+  writeFileSync(resolve(destination, "data/dholuo-audio-chapters.json"), readFileSync(dholuoChSrc));
+}
 
 // Verify SHA-256 parity across all top-level statutory JSON datasets + key language provenance & typology files
 const webDataDir = resolve(source, "data");

@@ -217,42 +217,61 @@ def upload_bytes_to_r2(s3_client, r2_key: str, opus_bytes: bytes) -> bool:
         return False
 
     if s3_client is not None:
-        try:
-            s3_client.put_object(
-                Bucket=R2_BUCKET,
-                Key=r2_key,
-                Body=opus_bytes,
-                ContentType="audio/ogg; codecs=opus",
-                CacheControl="public, max-age=31536000, immutable",
-            )
-            return True
-        except Exception as exc:
-            R2_FAILURE_COUNT += 1
-            if R2_FAILURE_COUNT <= 3:
-                log(f"  [warn] S3 R2 put_object notice for {r2_key}: {exc}")
+        for attempt in range(4):
+            try:
+                s3_client.put_object(
+                    Bucket=R2_BUCKET,
+                    Key=r2_key,
+                    Body=opus_bytes,
+                    ContentType="audio/ogg; codecs=opus",
+                    CacheControl="public, max-age=31536000, immutable",
+                )
+                R2_FAILURE_COUNT = 0
+                return True
+            except Exception as exc:
+                if "429" in str(exc) or "SlowDown" in str(exc) or "503" in str(exc):
+                    time.sleep(min(20, 2 ** (attempt + 1)))
+                    continue
+                R2_FAILURE_COUNT += 1
+                if R2_FAILURE_COUNT <= 3:
+                    log(f"  [warn] S3 R2 put_object notice for {r2_key}: {exc}")
+                break
 
     if CF_API_TOKEN and CF_ACCOUNT_ID:
         url = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/r2/buckets/{R2_BUCKET}/objects/{r2_key}"
-        try:
-            resp = HTTP_SESSION.put(
-                url,
-                data=opus_bytes,
-                headers={
-                    "Authorization": f"Bearer {CF_API_TOKEN}",
-                    "Content-Type": "audio/ogg; codecs=opus",
-                    "Cache-Control": "public, max-age=31536000, immutable",
-                },
-                timeout=60,
-            )
-            if resp.ok:
-                return True
-            R2_FAILURE_COUNT += 1
-            if R2_FAILURE_COUNT <= 3:
-                log(f"  [warn] Cloudflare REST R2 upload HTTP {resp.status_code} for {r2_key}: {resp.text[:180]}")
-        except Exception as exc:
-            R2_FAILURE_COUNT += 1
-            if R2_FAILURE_COUNT <= 3:
-                log(f"  [warn] Cloudflare REST R2 upload failed for {r2_key}: {exc}")
+        for attempt in range(5):
+            try:
+                resp = HTTP_SESSION.put(
+                    url,
+                    data=opus_bytes,
+                    headers={
+                        "Authorization": f"Bearer {CF_API_TOKEN}",
+                        "Content-Type": "audio/ogg; codecs=opus",
+                        "Cache-Control": "public, max-age=31536000, immutable",
+                    },
+                    timeout=60,
+                )
+                if resp.ok:
+                    R2_FAILURE_COUNT = 0
+                    return True
+                if resp.status_code in (429, 502, 503, 504):
+                    retry_after = resp.headers.get("Retry-After")
+                    wait_s = min(30, int(retry_after)) if (retry_after and retry_after.isdigit()) else min(24, 2 ** (attempt + 1))
+                    if attempt == 0:
+                        log(f"  [rate-limit] Cloudflare R2 HTTP {resp.status_code}; backing off {wait_s}s...")
+                    time.sleep(wait_s)
+                    continue
+                R2_FAILURE_COUNT += 1
+                if R2_FAILURE_COUNT <= 3:
+                    log(f"  [warn] Cloudflare REST R2 upload HTTP {resp.status_code} for {r2_key}: {resp.text[:180]}")
+                break
+            except Exception as exc:
+                if attempt < 2:
+                    time.sleep(2 ** (attempt + 1))
+                    continue
+                R2_FAILURE_COUNT += 1
+                if R2_FAILURE_COUNT <= 3:
+                    log(f"  [warn] Cloudflare REST R2 upload failed for {r2_key}: {exc}")
 
     if R2_FAILURE_COUNT >= 10:
         log("  [warn] 10 consecutive R2 uploads failed. Continuing in manifest + text-ingestion mode.")
@@ -404,7 +423,7 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
         citation = f"The Thiomi-5K Parallel Speech & Text Corpus ({cfg} {lang_label}, CC-BY-4.0, https://huggingface.co/datasets/thiomi/thiomi-5k)"
         try:
             ds = load_hf_stream("thiomi/thiomi-5k", cfg, split="train")
-            with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
                 for idx, row in enumerate(ds):
                     if (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded():
                         break
@@ -586,7 +605,7 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
 
             futures = []
             hit_budget = False
-            with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
                 for idx, row in enumerate(ds):
                     if clip_cap_reached(len(futures)) or (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded() or R2_UPLOAD_DISABLED:
                         hit_budget = True

@@ -147,7 +147,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
   }
 
   return (
-    <div className="mx-auto max-w-4xl space-y-5 pb-10">
+    <div className="mx-auto max-w-4xl w-full min-w-0 overflow-x-hidden space-y-6 px-1 sm:px-4 pb-10">
       {/* Sub-navigation pills */}
       <div className="flex flex-wrap items-center gap-2">
         {hasListen && (
@@ -206,10 +206,10 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
       {subTab === "listen" && hasListen && (
         <div className="space-y-5">
           {chapters.length > 0 && activeChapter && (
-            <div className="rounded-2xl border border-border bg-bg-card p-5 space-y-4">
+            <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-4">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div>
-                  <h3 className="text-base font-bold text-text-primary flex items-center gap-2">
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
                     <Headphones className="h-4 w-4 text-gold" />
                     <span>{languageName} Spoken Phrasebook Chapters</span>
                   </h3>
@@ -292,7 +292,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                             value={chapterSearch}
                             onChange={(e) => setChapterSearch(e.target.value)}
                             placeholder="Search chapter phrases..."
-                            className="w-40 sm:w-48 rounded-lg border border-border bg-bg-card px-2.5 py-1 text-xs text-text-primary placeholder:text-text-muted focus:border-gold focus:outline-none"
+                            className="w-full sm:w-52 min-w-0 rounded-lg border border-border bg-bg-card px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-muted focus:border-gold focus:outline-none"
                           />
                         </div>
                       </div>
@@ -317,11 +317,11 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
           )}
 
           {audioClips.length > 0 && (
-            <div className="rounded-2xl border border-border bg-bg-card p-5 space-y-4">
+            <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div>
-                  <h3 className="text-base font-bold text-text-primary flex items-center gap-2">
-                    <Volume2 className="h-4 w-4 text-sky" />
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
+                    <Volume2 className="h-4 w-4 text-kenya-green" />
                     <span>Native Speaker Listening Deck</span>
                   </h3>
                   <p className="text-xs text-text-muted mt-0.5">
@@ -334,7 +334,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                     onClick={() => setSlowMode((s) => !s)}
                     className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors cursor-pointer ${
                       slowMode
-                        ? "border-sky bg-sky/15 text-sky"
+                        ? "border-kenya-green bg-kenya-green/15 text-kenya-green"
                         : "border-border bg-bg-elevated text-text-secondary hover:text-text-primary"
                     }`}
                   >
@@ -368,14 +368,14 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                       key={clip.slug}
                       type="button"
                       onClick={() => handlePlayClip(clip)}
-                      className={`flex items-center justify-between gap-2 rounded-xl border px-3.5 py-2.5 text-left transition-all cursor-pointer ${
+                      className={`flex items-center justify-between gap-2 min-w-0 overflow-hidden rounded-xl border px-3.5 py-2.5 text-left transition-all cursor-pointer ${
                         isPlaying
-                          ? "border-sky bg-sky/15 text-sky"
+                          ? "border-kenya-green bg-kenya-green/15 text-kenya-green"
                           : "border-border/70 bg-bg-elevated/60 hover:border-gold/50 text-text-primary"
                       }`}
                     >
                       <span className="text-xs sm:text-sm font-medium truncate">{clip.label}</span>
-                      <Volume2 className={`h-4 w-4 shrink-0 ${isPlaying ? "text-sky animate-pulse" : "text-gold"}`} />
+                      <Volume2 className={`h-4 w-4 shrink-0 ${isPlaying ? "text-kenya-green animate-pulse" : "text-gold"}`} />
                     </button>
                   );
                 })}
@@ -402,10 +402,10 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
         <div className="space-y-5">
           {/* Full Stories */}
           {readers && readers.stories.length > 0 && (
-            <div className="rounded-2xl border border-border bg-bg-card p-5 space-y-3">
+            <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-3">
               <div className="flex items-center justify-between gap-2">
                 <div>
-                  <h3 className="text-base font-bold text-text-primary flex items-center gap-2">
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
                     <BookOpen className="h-4 w-4 text-gold" />
                     <span>{languageName} Short Stories</span>
                   </h3>
@@ -454,10 +454,10 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
 
           {/* Bilingual Passages with English Translations */}
           {readers?.bilingualReadings && readers.bilingualReadings.length > 0 && (
-            <div className="rounded-2xl border border-gold/25 bg-bg-card p-5 space-y-3">
+            <div className="rounded-2xl border border-gold/25 bg-bg-card p-4 sm:p-6 shadow-sm space-y-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div>
-                  <h3 className="text-base font-bold text-text-primary flex items-center gap-2">
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
                     <BookOpen className="h-4 w-4 text-kenya-green" />
                     <span>Bilingual {languageName} &amp; English Readings</span>
                   </h3>
@@ -503,7 +503,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                           </div>
                           {showBiEnglish && (
                             <div className="border-t md:border-t-0 md:border-l border-border/50 pt-3 md:pt-0 md:pl-4">
-                              <p className="text-[10px] font-bold uppercase tracking-wider text-sky mb-1">English Translation</p>
+                              <p className="text-[10px] font-bold uppercase tracking-wider text-kenya-green mb-1">English Translation</p>
                               <p className="text-text-secondary whitespace-pre-line">{item.english}</p>
                             </div>
                           )}
@@ -518,11 +518,11 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
 
           {/* Everyday Practice Sentences */}
           {((readers?.sentences?.length ?? 0) > 0 || (langMeta?.sampleReadings?.length ?? 0) > 0) && (
-            <div className="rounded-2xl border border-border bg-bg-card p-5 space-y-3">
+            <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-3">
               <div className="flex items-center justify-between gap-2">
                 <div>
-                  <h3 className="text-base font-bold text-text-primary flex items-center gap-2">
-                    <Sparkles className="h-4 w-4 text-sky" />
+                  <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
+                    <Sparkles className="h-4 w-4 text-kenya-green" />
                     <span>Everyday Reading Sentences</span>
                   </h3>
                   <p className="text-xs text-text-muted mt-0.5">
@@ -540,7 +540,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                   .map((item, idx) => (
                     <div
                       key={idx}
-                      className="rounded-xl border border-border/70 bg-bg-elevated/50 p-3.5 space-y-1"
+                      className="rounded-xl border border-border/70 bg-bg-elevated/50 p-3.5 space-y-1 min-w-0 break-words"
                     >
                       <p className="text-sm font-medium text-text-primary leading-relaxed">{item.text}</p>
                       {item.english && (
@@ -566,10 +566,10 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
 
           {/* News Articles (Swahili) */}
           {readers && readers.newsArticles.length > 0 && (
-            <div className="rounded-2xl border border-border bg-bg-card p-5 space-y-3">
+            <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-3">
               <div className="flex items-center justify-between gap-2">
-                <h3 className="text-base font-bold text-text-primary flex items-center gap-2">
-                  <Newspaper className="h-4 w-4 text-emerald-400" />
+                <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
+                  <Newspaper className="h-4 w-4 text-kenya-green" />
                   <span>{languageName} News Reading Practice</span>
                 </h3>
                 <span className="text-xs text-text-muted">{readers.newsArticles.length} articles</span>
@@ -585,7 +585,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                         className="w-full flex items-center justify-between gap-2 px-4 py-3 text-left cursor-pointer"
                       >
                         <div className="min-w-0">
-                          <span className="inline-block rounded bg-emerald-500/15 px-2 py-0.5 text-[10px] font-semibold text-emerald-400 mb-1">
+                          <span className="inline-block rounded bg-kenya-green/15 px-2 py-0.5 text-[10px] font-semibold text-kenya-green mb-1">
                             {art.category}
                           </span>
                           <p className="text-sm font-medium text-text-primary truncate">{art.title}</p>
@@ -610,7 +610,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
 
           {/* Further Reading Links */}
           {((readers?.externalLinks?.length ?? 0) > 0 || (langMeta?.wikimediaArticles?.length ?? 0) > 0) && (
-            <div className="rounded-2xl border border-border bg-bg-card p-5 space-y-3">
+            <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-3">
               <h3 className="text-base font-bold text-text-primary">Further Reading</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {(readers?.externalLinks?.length ? readers.externalLinks : langMeta?.wikimediaArticles ?? [])
@@ -621,7 +621,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                       href={lk.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-between gap-2 rounded-xl border border-border/70 bg-bg-elevated/50 px-3.5 py-2.5 text-xs sm:text-sm text-text-primary hover:border-gold/50 transition-colors"
+                      className="flex items-center justify-between gap-2 min-w-0 overflow-hidden rounded-xl border border-border/70 bg-bg-elevated/50 px-3.5 py-2.5 text-xs sm:text-sm text-text-primary hover:border-gold/50 transition-colors"
                     >
                       <span className="truncate font-medium">{lk.title}</span>
                       <span className="inline-flex items-center gap-1 text-[11px] text-text-muted shrink-0">
@@ -649,10 +649,10 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
 
       {/* 3. READING COMPREHENSION & KNOWLEDGE QUIZ */}
       {subTab === "quiz" && hasQuiz && (
-        <div className="rounded-2xl border border-border bg-bg-card p-5 space-y-4">
+        <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <h3 className="text-base font-bold text-text-primary flex items-center gap-2">
+              <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
                 <HelpCircle className="h-4 w-4 text-gold" />
                 <span>{languageName} Reading &amp; Knowledge Challenge</span>
               </h3>
@@ -706,7 +706,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
               </div>
 
               {currentQuestion.passage && (
-                <div className="rounded-xl border border-gold/25 bg-bg-elevated/70 p-4 text-sm leading-relaxed text-text-primary">
+                <div className="rounded-xl border border-gold/25 bg-bg-elevated/70 p-4 text-sm leading-relaxed text-text-primary break-words">
                   {currentQuestion.passage}
                 </div>
               )}
@@ -722,9 +722,9 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                   let style = "border-border bg-bg-elevated/60 hover:border-gold/50 text-text-primary";
                   if (selectedChoice !== null) {
                     if (isCorrect) {
-                      style = "border-emerald-500/60 bg-emerald-500/15 text-emerald-300";
+                      style = "border-kenya-green bg-kenya-green/15 text-kenya-green";
                     } else if (isSelected) {
-                      style = "border-rose-500/60 bg-rose-500/15 text-rose-300";
+                      style = "border-kenya-red bg-kenya-red/15 text-kenya-red";
                     } else {
                       style = "border-border/50 bg-bg-elevated/30 text-text-muted";
                     }
@@ -735,14 +735,14 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                       type="button"
                       disabled={selectedChoice !== null}
                       onClick={() => handleSelectChoice(idx)}
-                      className={`flex items-center justify-between gap-3 rounded-xl border px-4 py-3 text-left text-sm font-medium transition-all cursor-pointer disabled:cursor-default ${style}`}
+                      className={`flex items-center justify-between gap-3 min-w-0 break-words rounded-xl border px-4 py-3 text-left text-sm font-medium transition-all cursor-pointer disabled:cursor-default ${style}`}
                     >
                       <span>{choice}</span>
                       {selectedChoice !== null && isCorrect && (
-                        <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-kenya-green shrink-0" />
                       )}
                       {selectedChoice !== null && isSelected && !isCorrect && (
-                        <XCircle className="h-4 w-4 text-rose-400 shrink-0" />
+                        <XCircle className="h-4 w-4 text-kenya-red shrink-0" />
                       )}
                     </button>
                   );
@@ -754,7 +754,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                   <button
                     type="button"
                     onClick={handleNextQuestion}
-                    className="rounded-xl bg-gold px-5 py-2.5 text-sm font-bold text-bg-primary hover:bg-gold-light transition-colors cursor-pointer"
+                    className="rounded-xl bg-gold px-5 py-2.5 text-sm font-bold text-black hover:bg-gold-light transition-colors cursor-pointer"
                   >
                     Next Question
                   </button>

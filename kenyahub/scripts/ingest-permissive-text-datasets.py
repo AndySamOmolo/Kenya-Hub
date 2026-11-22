@@ -915,7 +915,13 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
     for job in OER_STORYBOOK_JOBS:
         assert_repo_allowed(job["repo"])
         out_file = READERS_DIR / f"{job['id']}.json"
-        if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and (
+        needs_gsb_en = False
+        if job["id"] == "glotstorybook" and out_file.exists():
+            try:
+                needs_gsb_en = '"english"' not in out_file.read_text(encoding="utf-8", errors="ignore")[:8000]
+            except Exception:
+                needs_gsb_en = False
+        if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and not needs_gsb_en and (
             (out_file.exists() and out_file.stat().st_size > 100)
             or oer_st.get(job["id"], {}).get("status") == "completed"
         ):
@@ -928,10 +934,12 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
             READERS_DIR.mkdir(parents=True, exist_ok=True)
             ds = load_hf_stream(job["repo"], job["config"], split=job["split"])
             kept = []
+            eng_by_story_id: dict[str, dict[str, Any]] = {}
             # GlotStoryBook is ordered alphabetically by ISO639-3 across ~79k rows; scan up to 100k rows
             scan_cap = 100000 if job["id"] == "glotstorybook" else max_rows * 10
+            is_gsb = job["id"] == "glotstorybook"
             for idx, row in enumerate(ds):
-                if len(kept) >= max_rows or idx >= scan_cap:
+                if (not is_gsb and len(kept) >= max_rows) or (is_gsb and len(kept) >= max_rows * 2) or idx >= scan_cap:
                     break
                 lic = row.get("license") or row.get("License") or row.get("copyright") or ""
                 src = row.get("publisher") or row.get("source") or row.get("Source") or row.get("credits") or ""
@@ -940,13 +948,46 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
                     continue
                 iso_raw = row.get("ISO639-3") or row.get("iso") or row.get("language") or row.get("Language") or row.get("lang") or job.get("config") or ""
                 iso = str(iso_raw).strip().lower()
-                if iso not in ISO_TO_KENYAHUB_LANG:
-                    continue
                 body_txt = str(row.get("text") or row.get("Text") or "").strip()[:2000]
                 if not body_txt:
                     continue
-                title_val = row.get("title") or row.get("File Name") or row.get("Story Category") or job["id"]
-                kept.append({"lang_id": ISO_TO_KENYAHUB_LANG[iso], "license": str(lic), "title": str(title_val), "text": body_txt})
+                title_val = str(row.get("title") or row.get("File Name") or row.get("Story Category") or job["id"]).strip()
+                sid_m = re.match(r"^(\d{3,5})[_\-]", title_val)
+                story_num = sid_m.group(1) if sid_m else ""
+                if is_gsb and iso == "eng" and story_num:
+                    eb = eng_by_story_id.setdefault(story_num, {"title": title_val, "pages": []})
+                    if len(eb["pages"]) < 16:
+                        eb["pages"].append(body_txt)
+                    continue
+                if iso not in ISO_TO_KENYAHUB_LANG:
+                    continue
+                item: dict[str, Any] = {"lang_id": ISO_TO_KENYAHUB_LANG[iso], "license": str(lic), "title": title_val, "text": body_txt}
+                if story_num:
+                    item["story_id"] = story_num
+                kept.append(item)
+            if is_gsb and kept:
+                # Group multi-page GlotStoryBook rows into complete stories and attach matching English translations!
+                grouped: dict[tuple[str, str], dict[str, Any]] = {}
+                for r in kept:
+                    gk = (r["lang_id"], r["title"])
+                    if gk not in grouped:
+                        grouped[gk] = {"lang_id": r["lang_id"], "license": r["license"], "title": r["title"], "story_id": r.get("story_id", ""), "pages": []}
+                    if len(grouped[gk]["pages"]) < 16:
+                        grouped[gk]["pages"].append(r["text"])
+                merged_stories = []
+                for g in grouped.values():
+                    st_obj: dict[str, Any] = {
+                        "lang_id": g["lang_id"],
+                        "license": g["license"],
+                        "title": g["title"],
+                        "text": "\n\n".join(g["pages"])[:4500],
+                    }
+                    eng_match = eng_by_story_id.get(g["story_id"])
+                    if eng_match and eng_match.get("pages"):
+                        st_obj["englishTitle"] = eng_match["title"]
+                        st_obj["english"] = "\n\n".join(eng_match["pages"])[:4500]
+                    merged_stories.append(st_obj)
+                kept = merged_stories
             if kept:
                 out_file.write_text(json.dumps(kept, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
             oer_st[job["id"]] = {"status": "completed", "count": len(kept), "updatedAt": datetime.now(timezone.utc).isoformat()}

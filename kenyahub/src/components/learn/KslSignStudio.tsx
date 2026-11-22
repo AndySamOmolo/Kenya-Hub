@@ -454,7 +454,7 @@ export default function KslSignStudio() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="w-full min-w-0 overflow-x-hidden space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <Link
           href="/tools/learn/"
@@ -585,8 +585,8 @@ export default function KslSignStudio() {
                   className="w-full max-h-96 rounded-xl bg-black object-contain"
                 />
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <div>
-                    <h2 className="text-base font-bold text-text-primary">{activeVideo.title}</h2>
+                  <div className="min-w-0 flex-1">
+                    <h2 className="text-base font-bold text-text-primary break-words">{activeVideo.title}</h2>
                     <a
                       href={activeVideo.sourceUrl}
                       target="_blank"
@@ -1089,7 +1089,7 @@ export default function KslSignStudio() {
                     ))}
                   </div>
                   {cueObj && (
-                    <div className="rounded-xl border border-border bg-bg-elevated/60 p-3 flex items-center justify-between gap-3">
+                    <div className="rounded-xl border border-border bg-bg-elevated/60 p-3 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 min-w-0">
                       <div className="text-xs">
                         <span className="font-bold text-gold">Letter {cueObj.letter}:</span>{" "}
                         <span className="text-text-secondary">{cueObj.cue}</span>

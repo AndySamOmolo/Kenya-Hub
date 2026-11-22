@@ -329,14 +329,36 @@ def ingest_maseno_zenodo(s3_client, existing: dict, videos_out: list[dict], sign
 
     with tempfile.TemporaryDirectory() as tmpdir:
         zip_path = os.path.join(tmpdir, "pose_data.zip")
-        try:
-            with SESSION.get(dl_url, stream=True, timeout=300) as resp:
-                resp.raise_for_status()
-                with open(zip_path, "wb") as f:
-                    for chunk in resp.iter_content(chunk_size=2 * 1024 * 1024):
-                        f.write(chunk)
-        except Exception as exc:
-            print(f"[warn] Pose Data.zip download interrupted: {exc}")
+        expected_size = int(zip_entry.get("size") or 0)
+        dl_ok = False
+        for dl_attempt in range(8):
+            existing_bytes = os.path.getsize(zip_path) if os.path.exists(zip_path) else 0
+            if expected_size > 0 and existing_bytes >= expected_size:
+                dl_ok = True
+                break
+            headers = {"Range": f"bytes={existing_bytes}-"} if existing_bytes > 0 else {}
+            try:
+                with SESSION.get(dl_url, stream=True, headers=headers, timeout=(30, 120)) as resp:
+                    if resp.status_code == 416:
+                        dl_ok = True
+                        break
+                    resp.raise_for_status()
+                    mode = "ab" if (existing_bytes > 0 and resp.status_code == 206) else "wb"
+                    with open(zip_path, mode) as f:
+                        for chunk in resp.iter_content(chunk_size=2 * 1024 * 1024):
+                            if chunk:
+                                f.write(chunk)
+                final_sz = os.path.getsize(zip_path) if os.path.exists(zip_path) else 0
+                if expected_size == 0 or final_sz >= expected_size:
+                    dl_ok = True
+                    break
+                print(f"  [resume] Pose Data.zip partial ({final_sz / (1024**2):.1f} MB / {expected_size / (1024**2):.1f} MB), resuming (attempt {dl_attempt + 2}/8)...")
+            except Exception as exc:
+                cur_sz = os.path.getsize(zip_path) if os.path.exists(zip_path) else 0
+                print(f"  [resume] Pose Data.zip interrupted at {cur_sz / (1024**2):.1f} MB ({exc}); retrying in 5s...")
+                time.sleep(5)
+        if not dl_ok:
+            print("[warn] Pose Data.zip could not finish downloading after 8 resumable attempts.")
             return
 
         with zipfile.ZipFile(zip_path, "r") as zf:
@@ -514,34 +536,82 @@ def _strip_vtt_srt(raw_text: str) -> str:
     return " ".join(lines)[:320].strip()
 
 
+def _extract_clean_transcript_from_obj(obj) -> str:
+    if isinstance(obj, str):
+        cleaned = _strip_vtt_srt(obj)
+        return "" if cleaned.startswith(("{", "[")) else cleaned
+    if isinstance(obj, list):
+        parts = []
+        for item in obj[:8]:
+            if isinstance(item, dict):
+                t = str(item.get("text") or item.get("transcript") or item.get("english") or "").strip()
+                if t and not t.startswith(("{", "[")):
+                    parts.append(t)
+            elif isinstance(item, str) and item.strip() and not item.strip().startswith(("{", "[")):
+                parts.append(item.strip())
+        return " ".join(parts)[:320].strip()
+    if isinstance(obj, dict):
+        # Prefer explicit English/Swahili text keys before falling back
+        for k in ("eng", "en", "english", "text", "transcript", "swh", "swa", "sw", "segments"):
+            if k in obj and obj[k]:
+                res = _extract_clean_transcript_from_obj(obj[k])
+                if res:
+                    return res
+        for v in obj.values():
+            if isinstance(v, (str, list)):
+                res = _extract_clean_transcript_from_obj(v)
+                if res and len(res) >= 8:
+                    return res
+    return ""
+
+
 def _extract_sign_bible_context(row: dict, meta: dict, idx: int) -> tuple[str, str, str]:
-    """Return (title, reference, transcript) from all WebDataset metadata/subtitle fields."""
+    """Return exact (title, reference, transcript) matched strictly to this WebDataset row's __key__."""
     key_str = str(row.get("__key__") or meta.get("id") or meta.get("name") or "").strip()
-    book = str(meta.get("book") or meta.get("book_name") or meta.get("book_id") or meta.get("title") or "").strip()
+    book = str(meta.get("book") or meta.get("book_name") or meta.get("book_id") or "").strip()
     chapter = str(meta.get("chapter") or "").strip()
     verse = str(meta.get("verse") or meta.get("verses") or "").strip()
+    meta_title = str(meta.get("title") or "").strip()
 
+    # Check for explicit topic slug in __key__ (e.g. '...-topic _ man and woman disobey god')
+    topic_title = ""
+    topic_m = re.search(r"topic\s*[/_\-]+\s*(.+)$", key_str, flags=re.I)
+    if topic_m:
+        topic_title = re.sub(r"[_\-]+", " ", topic_m.group(1)).strip()
+        topic_title = re.sub(r"\s+", " ", topic_title).title()
+
+    # Strict token-bounded USFM book/chapter match so substrings inside normal words never false-match
     if not book and key_str:
-        m = re.search(r"([1-3]?[A-Za-z]{3})[/_\-]?(\d{1,3})(?:[/_\-:](\d{1,3}))?", key_str)
-        if m:
+        for m in re.finditer(r"(?:^|[/_\-\s])([1-3]?[A-Za-z]{3})[/_\-\s](\d{1,3})(?:[/_\-:](\d{1,3}))?(?:$|[/_\-\s])", key_str):
             code = m.group(1).upper()
             if code in USFM_BOOK_NAMES:
                 book = USFM_BOOK_NAMES[code]
                 chapter = chapter or str(int(m.group(2)))
                 if m.group(3):
                     verse = verse or str(int(m.group(3)))
+                break
     if book.upper() in USFM_BOOK_NAMES:
         book = USFM_BOOK_NAMES[book.upper()]
 
     ref = ""
     if book:
         ref = f"{book} {chapter}:{verse}".strip(": ") if (chapter and verse) else (f"{book} {chapter}".strip() if chapter else book)
-    elif key_str:
-        cleaned_key = re.sub(r"^(?:xki|ksl)[/_\-]+", "", key_str, flags=re.I).replace("_", " ").replace("-", " ").strip()
-        if cleaned_key:
-            ref = cleaned_key[:48]
+    elif topic_title:
+        ref = topic_title[:64]
 
-    title_core = ref if ref else f"KSL Passage #{idx + 1}"
+    if topic_title:
+        title_core = topic_title[:72]
+    elif meta_title:
+        title_core = meta_title[:72]
+    elif ref:
+        title_core = ref[:72]
+    elif key_str:
+        cleaned = re.sub(r"^(?:xki|ksl)[/_\-]+", "", key_str, flags=re.I)
+        cleaned = re.sub(r"chronological[/_\-]+bible[/_\-]+translation[/_\-]+in[/_\-]+kenyan[/_\-]+sign[/_\-]+language[/_\-]*", "", cleaned, flags=re.I)
+        cleaned = re.sub(r"[_\-]+", " ", cleaned).strip()
+        title_core = cleaned[:72].title() if cleaned else f"KSL Signed Passage #{idx + 1}"
+    else:
+        title_core = f"KSL Signed Passage #{idx + 1}"
 
     transcript_text = ""
     for col in ("transcripts.json", "vtt", "srt", "txt", "transcript", "subtitles", "text", "captions"):
@@ -552,42 +622,23 @@ def _extract_sign_bible_context(row: dict, meta: dict, idx: int) -> tuple[str, s
             decoded = val.decode("utf-8", errors="ignore").strip()
             if col.endswith(".json") or decoded.startswith(("{", "[")):
                 try:
-                    parsed = json.loads(decoded)
-                    if isinstance(parsed, dict):
-                        transcript_text = " ".join(str(v) for v in list(parsed.values())[:5] if v)[:320]
-                    elif isinstance(parsed, list):
-                        transcript_text = " ".join(
-                            (str(x.get("text") or x.get("transcript") or "") if isinstance(x, dict) else str(x))
-                            for x in parsed[:5]
-                        )[:320]
+                    transcript_text = _extract_clean_transcript_from_obj(json.loads(decoded))
                 except Exception:
                     transcript_text = _strip_vtt_srt(decoded)
             else:
                 transcript_text = _strip_vtt_srt(decoded)
-        elif isinstance(val, str):
-            transcript_text = _strip_vtt_srt(val)
-        elif isinstance(val, list):
-            transcript_text = " ".join(
-                (str(x.get("text") or x.get("transcript") or "") if isinstance(x, dict) else str(x))
-                for x in val[:5]
-            )[:320]
-        elif isinstance(val, dict):
-            transcript_text = " ".join(str(v) for v in list(val.values())[:5] if v)[:320]
+        else:
+            transcript_text = _extract_clean_transcript_from_obj(val)
         if transcript_text:
             break
 
     if not transcript_text:
-        for mk in ("transcript", "text", "english", "gloss", "description", "verses_text", "caption"):
+        for mk in ("transcript", "text", "english", "description", "verses_text", "caption"):
             mv = meta.get(mk)
-            if isinstance(mv, str) and mv.strip():
-                transcript_text = mv.strip()[:320]
-                break
-            elif isinstance(mv, list) and mv:
-                transcript_text = " ".join(str(x) for x in mv[:4])[:320]
-                break
-
-    if not transcript_text and ref:
-        transcript_text = f"Kenyan Sign Language (KSL) human-signed passage for {ref} (Open Sign Bibles, CC-BY-SA-4.0)."
+            if mv:
+                transcript_text = _extract_clean_transcript_from_obj(mv)
+                if transcript_text:
+                    break
 
     return title_core, ref, transcript_text
 
@@ -643,20 +694,26 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
                 meta = {}
 
             title_core, ref, transcript_text = _extract_sign_bible_context(row, meta, idx)
-            legacy_id = f"sign-bible-xki-ksl-passage-{idx}"
-            vid_slug = slugify(f"xki-{title_core}-{idx}")
-            vid_id = f"sign-bible-{vid_slug}"
+            key_raw = str(row.get("__key__") or f"row-{idx}").strip()
+            key_hash = hashlib.sha1(key_raw.encode("utf-8")).hexdigest()[:10]
+            vid_id = f"sign-bible-xki-{key_hash}"
+            prev_slug_id = f"sign-bible-{slugify(f'xki-{title_core}-{idx}')}"
 
-            # Enrich existing clip metadata in place without re-uploading .mp4
-            existing_item = by_id.get(vid_id) or by_id.get(legacy_id)
+            # Match ONLY by deterministic row key or exact previous slug — never by unstable legacy stream idx!
+            existing_item = by_id.get(vid_id) or by_id.get(prev_slug_id)
             if existing_item is not None:
-                if (not existing_item.get("transcript") and transcript_text) or (ref and existing_item.get("title", "").startswith("KSL Passage")):
-                    existing_item["title"] = f"{title_core} (Human KSL)"
+                updated = False
+                if existing_item.get("title") != title_core:
+                    existing_item["title"] = title_core
                     existing_item["gloss"] = title_core
-                    if ref:
-                        existing_item["reference"] = ref
-                    if transcript_text:
-                        existing_item["transcript"] = transcript_text
+                    updated = True
+                if ref and existing_item.get("reference") != ref:
+                    existing_item["reference"] = ref
+                    updated = True
+                if transcript_text and existing_item.get("transcript") != transcript_text:
+                    existing_item["transcript"] = transcript_text
+                    updated = True
+                if updated:
                     enriched += 1
                 continue
 
@@ -673,7 +730,7 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
             if video_url:
                 item = {
                     "id": vid_id,
-                    "title": f"{title_core} (Human KSL)",
+                    "title": title_core,
                     "gloss": title_core,
                     "videoUrl": video_url,
                     "category": "human-sign-bible",
