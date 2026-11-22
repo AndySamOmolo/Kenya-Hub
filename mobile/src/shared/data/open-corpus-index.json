@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T10:47:50.664011+00:00",
+  "generatedAt": "2026-11-22T11:40:29.916659+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
     "totalR2AudioClips": 5871,
@@ -619,7 +619,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 1485,
-        "storiesCount": 38,
+        "storiesCount": 78,
         "sentencesCount": 150,
         "articlesCount": 72,
         "quizCount": 180,
@@ -1497,7 +1497,8 @@
             "basic conversation"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 66
         },
         {
           "id": "kavirondo-ch-02",
@@ -1515,7 +1516,8 @@
             "hospitality"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 115
         },
         {
           "id": "kavirondo-ch-03",
@@ -1533,7 +1535,8 @@
             "agriculture & building"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 43
         },
         {
           "id": "kavirondo-ch-04",
@@ -1551,7 +1554,8 @@
             "camping & rivers"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 19
         },
         {
           "id": "kavirondo-ch-05",
@@ -1569,7 +1573,8 @@
             "community dialogue"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 254
         }
       ],
       "shards": {
