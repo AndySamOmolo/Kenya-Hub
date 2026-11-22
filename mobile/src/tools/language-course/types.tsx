@@ -138,7 +138,7 @@ export function renderFormattedText(
   return <Text style={baseStyle}>{parts}</Text>;
 }
 
-export type MainTab = 'learn' | 'cards' | 'games' | 'grammar' | 'proverbs';
+export type MainTab = 'learn' | 'listen-read' | 'cards' | 'games' | 'grammar' | 'proverbs';
 export type LessonStage = 'idle' | 'learn' | 'practice' | 'complete';
 
 export type ExtraGameId =

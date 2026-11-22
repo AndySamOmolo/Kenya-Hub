@@ -384,6 +384,21 @@ export default function KenyanTranslatorPage() {
     });
   }, [searchResults]);
 
+  const stagedMatches = useMemo(() => {
+    const q = deferredSearchQuery.trim().toLowerCase();
+    if (q.length < 2 || targetLanguage !== "all") return [];
+    const hits: { varietyName: string; translation: string; english: string; context?: string }[] = [];
+    for (const v of OPEN_CORPUS_INDEX.stagedVarieties || []) {
+      for (const e of v.sampleEntries || []) {
+        if (e.english.toLowerCase().includes(q) || e.translation.toLowerCase().includes(q)) {
+          hits.push({ varietyName: v.name, translation: e.translation, english: e.english, context: e.context });
+          if (hits.length >= 12) return hits;
+        }
+      }
+    }
+    return hits;
+  }, [deferredSearchQuery, targetLanguage]);
+
   const audioSearchCount = useMemo(
     () => { void audioIndexTick; return dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry, r.languageId)).length; },
     [dedupedSearchResults, audioIndexTick]

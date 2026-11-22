@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:54:33.699620+00:00",
+  "generatedAt": "2026-11-22T14:26:01.184589+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
     "totalR2AudioClips": 8037,
@@ -9,7 +9,7 @@
     "totalStagedEntries": 650,
     "totalBenchmarkRows": 26618,
     "totalReaderSentences": 5212,
-    "totalQuizQuestions": 470,
+    "totalQuizQuestions": 520,
     "totalCivicDatasets": 10,
     "totalWikimediaDatasets": 6,
     "pendingGatedCount": 15
@@ -619,10 +619,10 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 1485,
-        "storiesCount": 78,
-        "sentencesCount": 150,
+        "storiesCount": 94,
+        "sentencesCount": 180,
         "articlesCount": 72,
-        "quizCount": 180,
+        "quizCount": 230,
         "freqCount": 500,
         "hasGrammarShard": true
       }
@@ -1034,7 +1034,7 @@
       "shards": {
         "audioCount": 450,
         "storiesCount": 2,
-        "sentencesCount": 0,
+        "sentencesCount": 60,
         "articlesCount": 0,
         "quizCount": 0,
         "freqCount": 500,
@@ -3791,7 +3791,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 685,
-        "storiesCount": 27,
+        "storiesCount": 52,
         "sentencesCount": 150,
         "articlesCount": 0,
         "quizCount": 80,
@@ -4213,7 +4213,7 @@
         "articlesCount": 0,
         "quizCount": 0,
         "freqCount": 500,
-        "hasGrammarShard": false
+        "hasGrammarShard": true
       }
     },
     "mijikenda": {
@@ -4809,7 +4809,7 @@
         "articlesCount": 0,
         "quizCount": 0,
         "freqCount": 0,
-        "hasGrammarShard": false
+        "hasGrammarShard": true
       }
     },
     "pokomo": {
@@ -4859,7 +4859,7 @@
         "articlesCount": 0,
         "quizCount": 0,
         "freqCount": 0,
-        "hasGrammarShard": false
+        "hasGrammarShard": true
       }
     },
     "borana": {
@@ -5530,7 +5530,7 @@
         "articlesCount": 0,
         "quizCount": 0,
         "freqCount": 0,
-        "hasGrammarShard": false
+        "hasGrammarShard": true
       }
     },
     "pokot": {
@@ -5697,7 +5697,7 @@
         "articlesCount": 0,
         "quizCount": 0,
         "freqCount": 0,
-        "hasGrammarShard": false
+        "hasGrammarShard": true
       }
     },
     "english-ke": {
@@ -7898,7 +7898,15 @@
           "category": "phrases"
         }
       ],
-      "grammarFeatureCount": 448
+      "grammarFeatureCount": 448,
+      "grammarNotes": [
+        "The indefinite article does not occur systematically.",
+        "In Kenya, the negation is mainly preverbal and in Uganda, it is mainly postverbal.",
+        "In Kenya, the negation is mainly preverbal and in Uganda mainly postverbal. However, some few Kenyan informants in Mombasa also use postverbal negation.",
+        "The question particle (meš?) always stands at the end of the sentence; but intonation may be used alone, without particle.",
+        "There are no real clicks, but onomatopoeias and ideophones like wawawa, a-a ...",
+        "The adverb may also appear in a left-detached position."
+      ]
     },
     {
       "id": "yaaku",

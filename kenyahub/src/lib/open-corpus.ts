@@ -110,6 +110,7 @@ export interface StagedVariety {
   counties: string[];
   totalEntries: number;
   grammarFeatureCount?: number;
+  grammarNotes?: string[];
   sampleEntries: {
     english: string;
     translation: string;

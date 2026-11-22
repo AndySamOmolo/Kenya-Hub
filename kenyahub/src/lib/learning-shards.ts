@@ -98,6 +98,8 @@ export interface GrammarShard {
   months: { english: string; local: string }[];
   currencyName?: string | null;
   orthographyLetters: string[];
+  familyPath?: string[];
+  structureHighlights?: { label: string; detail: string }[];
   phonology: {
     consonants: PhonemeEntry[];
     vowels: PhonemeEntry[];

@@ -916,11 +916,14 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
         assert_repo_allowed(job["repo"])
         out_file = READERS_DIR / f"{job['id']}.json"
         needs_gsb_en = False
-        if job["id"] == "glotstorybook" and out_file.exists():
-            try:
-                needs_gsb_en = '"english"' not in out_file.read_text(encoding="utf-8", errors="ignore")[:8000]
-            except Exception:
-                needs_gsb_en = False
+        if job["id"] == "glotstorybook":
+            if not out_file.exists() or oer_st.get("glotstorybook", {}).get("englishAlignedV2") is not True:
+                needs_gsb_en = True
+            else:
+                try:
+                    needs_gsb_en = '"english"' not in out_file.read_text(encoding="utf-8", errors="ignore")
+                except Exception:
+                    needs_gsb_en = True
         if not dry_run and not FORCE_REINGEST and RETRY_PENDING_ONLY and not needs_gsb_en and (
             (out_file.exists() and out_file.stat().st_size > 100)
             or oer_st.get(job["id"], {}).get("status") == "completed"
@@ -936,10 +939,10 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
             kept = []
             eng_by_story_id: dict[str, dict[str, Any]] = {}
             # GlotStoryBook is ordered alphabetically by ISO639-3 across ~79k rows; scan up to 100k rows
-            scan_cap = 100000 if job["id"] == "glotstorybook" else max_rows * 10
+            scan_cap = 250000 if job["id"] == "glotstorybook" else max_rows * 10
             is_gsb = job["id"] == "glotstorybook"
             for idx, row in enumerate(ds):
-                if (not is_gsb and len(kept) >= max_rows) or (is_gsb and len(kept) >= max_rows * 2) or idx >= scan_cap:
+                if (not is_gsb and len(kept) >= max_rows) or idx >= scan_cap:
                     break
                 lic = row.get("license") or row.get("License") or row.get("copyright") or ""
                 src = row.get("publisher") or row.get("source") or row.get("Source") or row.get("credits") or ""
@@ -954,7 +957,7 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
                 title_val = str(row.get("title") or row.get("File Name") or row.get("Story Category") or job["id"]).strip()
                 sid_m = re.match(r"^(\d{3,5})[_\-]", title_val)
                 story_num = sid_m.group(1) if sid_m else ""
-                if is_gsb and iso == "eng" and story_num:
+                if is_gsb and iso in ("eng", "en", "english") and story_num:
                     eb = eng_by_story_id.setdefault(story_num, {"title": title_val, "pages": []})
                     if len(eb["pages"]) < 16:
                         eb["pages"].append(body_txt)
@@ -990,8 +993,18 @@ def ingest_oer_storybooks(max_rows: int, dry_run: bool, lock: dict | None = None
                 kept = merged_stories
             if kept:
                 out_file.write_text(json.dumps(kept, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-            oer_st[job["id"]] = {"status": "completed", "count": len(kept), "updatedAt": datetime.now(timezone.utc).isoformat()}
-            print(f"  -> Kept {len(kept)} permissive stories for {job['id']}.")
+            with_en = sum(1 for x in kept if isinstance(x, dict) and x.get("english"))
+            oer_st[job["id"]] = {
+                "status": "completed",
+                "count": len(kept),
+                "withEnglish": with_en,
+                "englishAlignedV2": True if job["id"] == "glotstorybook" else None,
+                "updatedAt": datetime.now(timezone.utc).isoformat(),
+            }
+            if job["id"] == "glotstorybook":
+                print(f"  -> Kept {len(kept)} complete merged stories for glotstorybook ({with_en} with English translations, {len(eng_by_story_id)} English reference stories indexed).")
+            else:
+                print(f"  -> Kept {len(kept)} permissive stories for {job['id']}.")
         except Exception as exc:
             st = "pending_gated_approval" if _is_gated_error(exc) else "failed"
             oer_st[job["id"]] = {"status": st, "reason": str(exc)[:200], "updatedAt": datetime.now(timezone.utc).isoformat()}

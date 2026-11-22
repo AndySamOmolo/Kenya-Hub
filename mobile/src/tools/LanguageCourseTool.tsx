@@ -29,6 +29,8 @@ import kikuyuProverbsData from '../shared/data/kikuyu-proverbs.json';
 import openCorpusIndex from '../shared/data/open-corpus-index.json';
 import kslIndexData from '../shared/data/ksl-index.json';
 import dholuoChaptersData from '../shared/data/dholuo-audio-chapters.json';
+import learningQuizzesData from '../shared/data/learning-quizzes.json';
+import learningReadersData from '../shared/data/learning-readers.json';
 import { KSL_ALPHABET } from '../shared/data/ksl-starter';
 import { KIKUYU_PROVERBS as KIKUYU_CW_ITEMS, LUO_PROVERBS as LUO_CW_ITEMS } from '../shared/data/courses/proverbs';
 import { luoProverbs } from '../shared/data/courses/luo/proverbs';
@@ -194,6 +196,12 @@ export default function LanguageCourseTool({
   const [dholuoTranscriptChapterId, setDholuoTranscriptChapterId] = useState<string | null>(null);
   const [dholuoTranscriptPage, setDholuoTranscriptPage] = useState<number>(1);
   const [dholuoShowEnglish, setDholuoShowEnglish] = useState<boolean>(true);
+  const [lrSubTab, setLrSubTab] = useState<'listen' | 'read' | 'quiz'>('listen');
+  const [lrQuizIdx, setLrQuizIdx] = useState<number>(0);
+  const [lrQuizChoice, setLrQuizChoice] = useState<number | null>(null);
+  const [lrQuizScore, setLrQuizScore] = useState<{ right: number; total: number }>({ right: 0, total: 0 });
+  const [lrExpandedStory, setLrExpandedStory] = useState<number | null>(0);
+  const [lrShowBiEn, setLrShowBiEn] = useState<boolean>(true);
   const [emergingSearchQuery, setEmergingSearchQuery] = useState<string>('');
   const [emergingVisibleCount, setEmergingVisibleCount] = useState<number>(30);
 
@@ -3382,6 +3390,7 @@ export default function LanguageCourseTool({
         {(
           [
             { id: 'learn', label: 'Path' },
+            { id: 'listen-read', label: 'Listen & Read' },
             { id: 'cards', label: 'Vocab' },
             { id: 'games', label: 'Games' },
             { id: 'grammar', label: 'Grammar' },
@@ -4982,6 +4991,286 @@ export default function LanguageCourseTool({
           )}
         </View>
       )}
+
+      {/* ========================================================================
+          TAB 1B: LISTEN & READ (1:1 WEB PARITY — AUDIO, STORIES & COMPREHENSION QUIZ)
+         ======================================================================== */}
+      {activeTab === 'listen-read' && (() => {
+        const corpusLang = (openCorpusIndex.languages as Record<string, any>)[selectedLangId] || {};
+        const readerShard = (learningReadersData as Record<string, any>)[selectedLangId] || null;
+        const quizShard = (learningQuizzesData as Record<string, any>)[selectedLangId] || null;
+        const samples: { slug: string; label: string; audioUrl: string }[] = corpusLang.nativeAudioSamples || [];
+        const chapters: any[] = selectedLangId === 'luo' ? ((dholuoChaptersData as any)?.chapters || []) : (corpusLang.audioChapters || []);
+        const stories: { title: string; text: string; wordCount?: number }[] = readerShard?.stories || [];
+        const bilinguals: { title: string; englishTitle?: string; text: string; english: string }[] = readerShard?.bilingualReadings || [];
+        const sentences: { text: string; english?: string }[] = readerShard?.sentences || corpusLang.sampleReadings || [];
+        const questions: { type: string; passage?: string; subject?: string; question: string; choices: string[]; correctIndex: number }[] = quizShard?.questions || [];
+        const currentQ = questions.length > 0 ? questions[lrQuizIdx % questions.length] : null;
+
+        return (
+          <View style={{ gap: 12, paddingBottom: 20 }}>
+            {/* Sub-Tab Selector */}
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+              {(
+                [
+                  { id: 'listen', label: `Listening (${(corpusLang.r2AudioClips || samples.length).toLocaleString()})` },
+                  { id: 'read', label: `Stories (${stories.length + bilinguals.length})` },
+                  ...(questions.length > 0 ? [{ id: 'quiz', label: `Quiz (${questions.length})` }] : []),
+                ] as { id: 'listen' | 'read' | 'quiz'; label: string }[]
+              ).map((st) => {
+                const act = lrSubTab === st.id;
+                return (
+                  <Pressable
+                    key={st.id}
+                    onPress={() => setLrSubTab(st.id)}
+                    style={{
+                      paddingHorizontal: 14,
+                      paddingVertical: 8,
+                      borderRadius: 999,
+                      borderWidth: 1,
+                      borderColor: act ? colors.gold : colors.outlineVariant,
+                      backgroundColor: act ? `${colors.gold}22` : colors.surfaceContainerLow,
+                    }}
+                  >
+                    <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: act ? colors.gold : colors.textSecondary }}>
+                      {st.label}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </View>
+
+            {/* 1. LISTENING */}
+            {lrSubTab === 'listen' && (
+              <View style={{ gap: 12 }}>
+                {chapters.length > 0 && (
+                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 8 }}>
+                    <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text }}>
+                      Spoken Phrasebook Chapters ({chapters.length})
+                    </Text>
+                    {chapters.map((ch: any) => {
+                      const cleanTitle = String(ch.title || '').replace(/^\d+\s*[—–-]\s*/, '');
+                      return (
+                        <Pressable
+                          key={ch.id}
+                          onPress={() => {
+                            setDholuoTranscriptChapterId(ch.id);
+                            setDholuoTranscriptPage(1);
+                            const ok = playVerifiedAudio({ translation: cleanTitle, audioFile: ch.audioUrl });
+                            if (!ok) Linking.openURL(ch.audioUrl).catch(() => {});
+                          }}
+                          style={{
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            backgroundColor: colors.surface,
+                            borderWidth: 1,
+                            borderColor: dholuoTranscriptChapterId === ch.id ? colors.gold : colors.outlineVariant,
+                            borderRadius: 12,
+                            paddingHorizontal: 12,
+                            paddingVertical: 10,
+                            gap: 8,
+                          }}
+                        >
+                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12.5, color: colors.text, flex: 1 }} numberOfLines={2}>
+                            Ch. {ch.number}: {cleanTitle}
+                          </Text>
+                          <MaterialCommunityIcons name="play-circle" size={20} color={colors.kenyaGreen} />
+                        </Pressable>
+                      );
+                    })}
+                  </View>
+                )}
+
+                {samples.length > 0 ? (
+                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 8 }}>
+                    <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text }}>
+                      Native Speaker Listening Deck
+                    </Text>
+                    <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary }}>
+                      Tap any phrase to hear authentic pronunciation.
+                    </Text>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 7 }}>
+                      {samples.map((s) => (
+                        <Pressable
+                          key={s.slug}
+                          onPress={() => playVerifiedAudio({ translation: s.label, audioFile: s.audioUrl })}
+                          style={{
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: 5,
+                            paddingHorizontal: 10,
+                            paddingVertical: 7,
+                            borderRadius: 10,
+                            borderWidth: 1,
+                            borderColor: colors.outlineVariant,
+                            backgroundColor: colors.surface,
+                          }}
+                        >
+                          <MaterialCommunityIcons name="volume-high" size={14} color={colors.kenyaGreen} />
+                          <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12, color: colors.text }} numberOfLines={1}>
+                            {s.label}
+                          </Text>
+                        </Pressable>
+                      ))}
+                    </View>
+                  </View>
+                ) : chapters.length === 0 ? (
+                  <View style={{ backgroundColor: colors.surfaceContainer, borderRadius: 14, padding: 16 }}>
+                    <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12.5, color: colors.textSecondary }}>
+                      Native listening recordings for this language are being prepared.
+                    </Text>
+                  </View>
+                ) : null}
+              </View>
+            )}
+
+            {/* 2. STORIES & BILINGUAL READINGS */}
+            {lrSubTab === 'read' && (
+              <View style={{ gap: 12 }}>
+                {bilinguals.length > 0 && (
+                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: `${colors.gold}45`, borderRadius: 16, padding: 14, gap: 8 }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                      <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text, flex: 1 }}>
+                        Bilingual Readings ({bilinguals.length})
+                      </Text>
+                      <Pressable
+                        onPress={() => setLrShowBiEn((v) => !v)}
+                        style={{ paddingHorizontal: 10, paddingVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: colors.gold }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.gold }}>
+                          {lrShowBiEn ? 'Hide English' : 'Show English'}
+                        </Text>
+                      </Pressable>
+                    </View>
+                    {bilinguals.slice(0, 12).map((bi, idx) => (
+                      <View key={idx} style={{ backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 12, gap: 6 }}>
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: colors.gold }}>{bi.title}</Text>
+                        <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12.5, color: colors.text, lineHeight: 19 }}>{bi.text}</Text>
+                        {lrShowBiEn && (
+                          <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 18, borderTopWidth: 1, borderTopColor: colors.outlineVariant, paddingTop: 6 }}>
+                            {bi.english}
+                          </Text>
+                        )}
+                      </View>
+                    ))}
+                  </View>
+                )}
+
+                {stories.length > 0 && (
+                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 8 }}>
+                    <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text }}>
+                      Short Stories ({stories.length})
+                    </Text>
+                    {stories.slice(0, 20).map((st, idx) => {
+                      const open = lrExpandedStory === idx;
+                      return (
+                        <Pressable
+                          key={idx}
+                          onPress={() => setLrExpandedStory(open ? null : idx)}
+                          style={{ backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: open ? colors.gold : colors.outlineVariant, padding: 12, gap: 6 }}
+                        >
+                          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                            <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: colors.text, flex: 1 }}>{st.title}</Text>
+                            <Feather name={open ? 'chevron-up' : 'chevron-down'} size={16} color={colors.gold} />
+                          </View>
+                          {open && (
+                            <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12.5, color: colors.textSecondary, lineHeight: 19 }}>
+                              {st.text}
+                            </Text>
+                          )}
+                        </Pressable>
+                      );
+                    })}
+                  </View>
+                )}
+
+                {sentences.length > 0 && (
+                  <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 6 }}>
+                    <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text }}>
+                      Everyday Sentences
+                    </Text>
+                    {sentences.slice(0, 12).map((s, idx) => (
+                      <View key={idx} style={{ backgroundColor: colors.surface, borderRadius: 10, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
+                        <Text style={{ fontFamily: 'Inter_500Medium', fontSize: 12.5, color: colors.text }}>{s.text}</Text>
+                        {Boolean(s.english) && (
+                          <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11.5, color: colors.textSecondary, marginTop: 3 }}>{s.english}</Text>
+                        )}
+                      </View>
+                    ))}
+                  </View>
+                )}
+              </View>
+            )}
+
+            {/* 3. READING & KNOWLEDGE COMPREHENSION QUIZ */}
+            {lrSubTab === 'quiz' && currentQ && (
+              <View style={{ backgroundColor: colors.surfaceContainer, borderWidth: 1, borderColor: colors.outlineVariant, borderRadius: 16, padding: 14, gap: 10 }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <Text style={{ fontFamily: 'Outfit_700Bold', fontSize: 15, color: colors.text }}>
+                    Reading &amp; Knowledge Quiz
+                  </Text>
+                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.gold }}>
+                    Score: {lrQuizScore.right} / {lrQuizScore.total}
+                  </Text>
+                </View>
+                <Text style={{ fontFamily: 'Inter_500Medium', fontSize: 11.5, color: colors.textMuted }}>
+                  Question {(lrQuizIdx % questions.length) + 1} of {questions.length}
+                </Text>
+                {Boolean(currentQ.passage) && (
+                  <View style={{ backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: `${colors.gold}40`, padding: 12 }}>
+                    <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 13, color: colors.text, lineHeight: 20 }}>
+                      {currentQ.passage}
+                    </Text>
+                  </View>
+                )}
+                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13.5, color: colors.text }}>
+                  {currentQ.question}
+                </Text>
+                <View style={{ gap: 8 }}>
+                  {currentQ.choices.map((ch, idx) => {
+                    const isPicked = lrQuizChoice === idx;
+                    const isCorrect = idx === currentQ.correctIndex;
+                    const bColor = lrQuizChoice !== null
+                      ? isCorrect ? colors.kenyaGreen : isPicked ? '#DC2626' : colors.outlineVariant
+                      : colors.outlineVariant;
+                    return (
+                      <Pressable
+                        key={idx}
+                        disabled={lrQuizChoice !== null}
+                        onPress={() => {
+                          setLrQuizChoice(idx);
+                          setLrQuizScore((sc) => ({ right: sc.right + (isCorrect ? 1 : 0), total: sc.total + 1 }));
+                        }}
+                        style={{
+                          paddingHorizontal: 12,
+                          paddingVertical: 10,
+                          borderRadius: 11,
+                          borderWidth: 1,
+                          borderColor: bColor,
+                          backgroundColor: colors.surface,
+                        }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 12.5, color: colors.text }}>
+                          {ch}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+                {lrQuizChoice !== null && (
+                  <Pressable
+                    onPress={() => { setLrQuizChoice(null); setLrQuizIdx((i) => i + 1); }}
+                    style={{ backgroundColor: colors.gold, borderRadius: 12, paddingVertical: 11, alignItems: 'center' }}
+                  >
+                    <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 13, color: '#000000' }}>Next Question →</Text>
+                  </Pressable>
+                )}
+              </View>
+            )}
+          </View>
+        );
+      })()}
 
       {/* ========================================================================
           TAB 4: GRAMMAR REFERENCE (WITH MARKDOWN BOLD/ITALIC/BULLET FORMATTING)

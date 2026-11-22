@@ -320,6 +320,17 @@ export default function StagedVarietiesPanel() {
                 </div>
               </div>
 
+              {activeVariety.grammarNotes && activeVariety.grammarNotes.length > 0 && (
+                <div className="rounded-lg border border-gold/25 bg-bg-card p-3 space-y-1.5">
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-gold">Grammar &amp; Usage Notes</p>
+                  <ul className="space-y-1 text-xs text-text-secondary list-disc pl-4">
+                    {activeVariety.grammarNotes.slice(0, 4).map((note, nIdx) => (
+                      <li key={nIdx}>{note}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 max-h-96 overflow-y-auto pr-1">
                 {filteredEntries.map((entry, idx) => (
                   <div

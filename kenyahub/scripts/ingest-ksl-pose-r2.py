@@ -418,10 +418,19 @@ def ingest_maseno_zenodo(s3_client, existing: dict, videos_out: list[dict], sign
                     variant_num = gloss_counts.get(g_slug, 1) + 1
                     title = f"{gloss} (Clip {variant_num})"
 
-                mp4_bytes = transcode_to_compact_mp4(zf.read(m), Path(m).suffix.lower(), max_seconds=12)
-                if not mp4_bytes:
-                    continue
-                video_url = upload_bytes_to_r2(s3_client, f"ksl/videos/{vid_id}.mp4", mp4_bytes, "video/mp4")
+                expected_url = f"{CDN_BASE}/ksl/videos/{vid_id}.mp4"
+                video_url = None
+                try:
+                    head_r = SESSION.head(expected_url, timeout=8)
+                    if head_r.status_code == 200:
+                        video_url = expected_url
+                except Exception:
+                    pass
+                if not video_url:
+                    mp4_bytes = transcode_to_compact_mp4(zf.read(m), Path(m).suffix.lower(), max_seconds=12)
+                    if not mp4_bytes:
+                        continue
+                    video_url = upload_bytes_to_r2(s3_client, f"ksl/videos/{vid_id}.mp4", mp4_bytes, "video/mp4")
                 if video_url:
                     seen_video_ids.add(vid_id)
                     seen_member_paths.add(m)
@@ -524,6 +533,17 @@ USFM_BOOK_NAMES = {
 }
 
 
+def _trim_clean_sentence(text: str, max_chars: int = 2400) -> str:
+    txt = " ".join(str(text or "").split()).strip()
+    if len(txt) <= max_chars:
+        return txt
+    cut = txt[:max_chars]
+    last_sent = max(cut.rfind("."), cut.rfind("!"), cut.rfind("?"))
+    if last_sent >= max_chars // 2:
+        return cut[: last_sent + 1].strip()
+    return cut.rsplit(" ", 1)[0].rstrip(",;:-") + "…"
+
+
 def _strip_vtt_srt(raw_text: str) -> str:
     lines = []
     for ln in raw_text.splitlines():
@@ -533,7 +553,7 @@ def _strip_vtt_srt(raw_text: str) -> str:
         s = re.sub(r"<[^>]+>", "", s).strip()
         if s:
             lines.append(s)
-    return " ".join(lines)[:320].strip()
+    return _trim_clean_sentence(" ".join(lines), 2400)
 
 
 def _extract_clean_transcript_from_obj(obj) -> str:
@@ -542,14 +562,14 @@ def _extract_clean_transcript_from_obj(obj) -> str:
         return "" if cleaned.startswith(("{", "[")) else cleaned
     if isinstance(obj, list):
         parts = []
-        for item in obj[:8]:
+        for item in obj[:60]:
             if isinstance(item, dict):
                 t = str(item.get("text") or item.get("transcript") or item.get("english") or "").strip()
                 if t and not t.startswith(("{", "[")):
                     parts.append(t)
             elif isinstance(item, str) and item.strip() and not item.strip().startswith(("{", "[")):
                 parts.append(item.strip())
-        return " ".join(parts)[:320].strip()
+        return _trim_clean_sentence(" ".join(parts), 2400)
     if isinstance(obj, dict):
         # Prefer explicit English/Swahili text keys before falling back
         for k in ("eng", "en", "english", "text", "transcript", "swh", "swa", "sw", "segments"):
@@ -647,11 +667,15 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
     """Stream ALL real human KSL (xki) .mp4 signing videos + passage context from bible-nlp/sign-bibles (CC-BY-SA-4.0) to R2."""
     assert_repo_allowed(SIGN_BIBLES_REPO)
     osb_state = ingestion_state.get("openSignBibles") or {}
-    has_generic_titles = any(
-        v.get("category") == "human-sign-bible" and str(v.get("title", "")).startswith("KSL Passage #")
+    has_incomplete_context = any(
+        v.get("category") == "human-sign-bible" and (
+            str(v.get("title", "")).startswith("KSL Passage #")
+            or "chronological bible translation" in str(v.get("title", "")).lower()
+            or (315 <= len(str(v.get("transcript") or "")) <= 325 and not str(v.get("transcript") or "").endswith((".", "!", "?", "”", '"')))
+        )
         for v in videos_out
     )
-    if osb_state.get("completed") and not has_generic_titles and not FORCE_REINGEST:
+    if osb_state.get("completed") and not has_incomplete_context and not FORCE_REINGEST:
         print(
             f"[skip-done] Open Sign Bibles (xki) already fully ingested "
             f"({osb_state.get('uploadedVideos', 0)} videos across {osb_state.get('totalScanned', 0)} rows)."
@@ -698,9 +722,14 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
             key_hash = hashlib.sha1(key_raw.encode("utf-8")).hexdigest()[:10]
             vid_id = f"sign-bible-xki-{key_hash}"
             prev_slug_id = f"sign-bible-{slugify(f'xki-{title_core}-{idx}')}"
+            old_cbt_id = (
+                f"sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-{idx}"
+                if "chronological_bible_translation_in_kenyan_sign_language" in key_raw.lower()
+                else ""
+            )
 
-            # Match ONLY by deterministic row key or exact previous slug — never by unstable legacy stream idx!
-            existing_item = by_id.get(vid_id) or by_id.get(prev_slug_id)
+            # Match by deterministic row key, exact previous slug, or verified CBT row ID
+            existing_item = by_id.get(vid_id) or by_id.get(prev_slug_id) or (by_id.get(old_cbt_id) if old_cbt_id else None)
             if existing_item is not None:
                 updated = False
                 if existing_item.get("title") != title_core:
@@ -723,10 +752,19 @@ def ingest_open_sign_bibles_xki(s3_client, existing: dict, videos_out: list[dict
             if not isinstance(mp4_raw, (bytes, bytearray)) or len(mp4_raw) < 1024:
                 continue
 
-            mp4_bytes = transcode_to_compact_mp4(bytes(mp4_raw), ".mp4", max_seconds=15)
-            if not mp4_bytes:
-                continue
-            video_url = upload_bytes_to_r2(s3_client, f"ksl/human/{vid_id}.mp4", mp4_bytes, "video/mp4")
+            expected_h_url = f"{CDN_BASE}/ksl/human/{vid_id}.mp4"
+            video_url = None
+            try:
+                hr = SESSION.head(expected_h_url, timeout=8)
+                if hr.status_code == 200:
+                    video_url = expected_h_url
+            except Exception:
+                pass
+            if not video_url:
+                mp4_bytes = transcode_to_compact_mp4(bytes(mp4_raw), ".mp4", max_seconds=15)
+                if not mp4_bytes:
+                    continue
+                video_url = upload_bytes_to_r2(s3_client, f"ksl/human/{vid_id}.mp4", mp4_bytes, "video/mp4")
             if video_url:
                 item = {
                     "id": vid_id,

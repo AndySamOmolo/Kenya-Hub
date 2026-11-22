@@ -98,6 +98,20 @@ UNIMORPH_LABELS = {
 }
 
 
+
+GRAMBANK_LEARNER_FEATURES = {
+    "GB020": ("Definite articles", {"1": "Uses definite articles ('the')", "0": "No separate definite article ('the')"}),
+    "GB021": ("Indefinite articles", {"1": "Uses indefinite articles ('a/an')", "0": "No separate indefinite article ('a/an')"}),
+    "GB042": ("Plural marking", {"1": "Marks plural nouns with affixes/prefixes", "0": "Does not require morphological plural marking"}),
+    "GB051": ("Noun classes / gender", {"1": "Organizes nouns into grammatical classes/genders", "0": "No grammatical noun-class gender system"}),
+    "GB082": ("Present tense", {"1": "Marks present tense directly on verbs", "0": "Present tense is unmarked or shown by context"}),
+    "GB083": ("Past tense", {"1": "Marks past tense directly on verbs", "0": "Past time shown via aspect or time adverbs"}),
+    "GB084": ("Future tense", {"1": "Marks future tense directly on verbs", "0": "Future time shown via auxiliaries or time words"}),
+    "GB107": ("Verb negation", {"1": "Uses negative verb affixes/markers", "0": "Uses a separate negation word"}),
+    "GB130": ("Basic word order", {"1": "Subject precedes object (SVO / SOV)", "0": "Object precedes subject"}),
+    "GB131": ("Verb-initial clauses", {"1": "Can place the verb at the start of a clause (VSO)", "0": "Subject normally comes before the verb"}),
+}
+
 def load_json_safe(path: Path):
     if not path.exists():
         return None
@@ -216,6 +230,8 @@ def main() -> None:
             "months": [],
             "currencyName": None,
             "orthographyLetters": [],
+            "familyPath": [],
+            "structureHighlights": [],
             "phonology": {"consonants": [], "vowels": [], "tones": []},
             "conjugations": [],
         })
@@ -225,6 +241,8 @@ def main() -> None:
         if prof.get("staging"):
             continue
         rec = ensure_lang(lid)
+        if prof.get("familyPath"):
+            ensure_grammar_shard(lid)["familyPath"] = list(prof.get("familyPath") or [])
         rec["typology"] = {
             "iso639_3": prof.get("iso639_3", ""),
             "glottocode": prof.get("glottocode", ""),
@@ -240,11 +258,21 @@ def main() -> None:
     # 1b. Grambank grammatical feature counts (including nubi, burji, dahalo)
     gb_raw = load_json_safe(DATA_DIR / "language-typology/grambank-kenya.json") or {}
     gb_counts: dict[str, int] = {}
+    gb_highlights_seen: dict[str, set[str]] = {}
     for row in gb_raw.get("rows") or []:
         gc = str(row.get("Language_ID") or "").strip().lower()
         lid = GLOTTO_TO_LANG.get(gc)
         if lid:
             gb_counts[lid] = gb_counts.get(lid, 0) + 1
+            pid = str(row.get("Parameter_ID") or "").strip()
+            val = str(row.get("Value") or "").strip()
+            if pid in GRAMBANK_LEARNER_FEATURES and lid not in ("nubi", "burji", "dahalo"):
+                lbl, val_map = GRAMBANK_LEARNER_FEATURES[pid]
+                detail = val_map.get(val)
+                seen_set = gb_highlights_seen.setdefault(lid, set())
+                if detail and lbl not in seen_set:
+                    seen_set.add(lbl)
+                    ensure_grammar_shard(lid)["structureHighlights"].append({"label": lbl, "detail": detail})
     for lid, cnt in gb_counts.items():
         if lid in ("nubi", "burji", "dahalo"):
             continue
@@ -575,10 +603,27 @@ def main() -> None:
             elif "injongo" in stem_l or "uhura" in stem_l or "afrihate" in stem_l:
                 target_lid = "swahili"
 
-            # Handle cohere-aya-ke by inspecting language_code per row
+            # Handle cohere-aya-ke by inspecting language_code per row (Somali & Swahili Q&A readings)
             if "cohere-aya-ke" in stem_l:
                 ensure_lang("somali")["benchmarks"].append({"id": bf.stem, "rows": line_count})
                 ensure_lang("swahili")["benchmarks"].append({"id": bf.stem, "rows": line_count})
+                try:
+                    with bf.open("r", encoding="utf-8", errors="ignore") as fh:
+                        added_aya = {"somali": 0, "swahili": 0}
+                        for line in fh:
+                            obj = json.loads(line)
+                            lc = str(obj.get("language_code") or obj.get("language") or "").lower()
+                            alid = "somali" if ("som" in lc or "so" == lc) else ("swahili" if ("swh" in lc or "swa" in lc or "sw" == lc) else None)
+                            if not alid or added_aya[alid] >= 25:
+                                continue
+                            inp = " ".join(str(obj.get("inputs") or "").split())
+                            tgt = " ".join(str(obj.get("targets") or "").split())
+                            if 12 <= len(inp) <= 140 and 30 <= len(tgt) <= 600:
+                                rsh = ensure_reader_shard(alid)
+                                rsh["stories"].append({"title": inp[:90], "text": tgt, "wordCount": len(tgt.split())})
+                                added_aya[alid] += 1
+                except Exception:
+                    pass
                 continue
 
             if not target_lid:
@@ -676,6 +721,67 @@ def main() -> None:
                                     "correctIndex": ans_idx,
                                 })
                                 added_q += 1
+                except Exception:
+                    pass
+
+            elif "uhura-truthfulqa" in stem_l:
+                q_bucket = quiz_shards.setdefault(target_lid, [])
+                added_q = 0
+                try:
+                    with bf.open("r", encoding="utf-8", errors="ignore") as fh:
+                        for line in fh:
+                            if added_q >= 50:
+                                break
+                            obj = json.loads(line)
+                            question = " ".join(str(obj.get("question") or "").split())
+                            mc1 = obj.get("mc1_targets") or {}
+                            choices_raw = mc1.get("choices") if isinstance(mc1, dict) else []
+                            labels_raw = mc1.get("labels") if isinstance(mc1, dict) else []
+                            if question and isinstance(choices_raw, list) and len(choices_raw) >= 3 and isinstance(labels_raw, list) and 1 in labels_raw:
+                                ans_idx = labels_raw.index(1)
+                                clean_ch = [" ".join(str(c).split())[:180] for c in choices_raw[:4]]
+                                if ans_idx < len(clean_ch):
+                                    q_bucket.append({
+                                        "type": "knowledge",
+                                        "subject": "Everyday Facts",
+                                        "question": question,
+                                        "choices": clean_ch,
+                                        "correctIndex": ans_idx,
+                                    })
+                                    added_q += 1
+                except Exception:
+                    pass
+
+            elif "injongointent" in stem_l:
+                rshard = ensure_reader_shard(target_lid)
+                added_inj = 0
+                try:
+                    with bf.open("r", encoding="utf-8", errors="ignore") as fh:
+                        for line in fh:
+                            if added_inj >= 40:
+                                break
+                            obj = json.loads(line)
+                            txt = " ".join(str(obj.get("text") or "").split())
+                            intent = str(obj.get("intent") or "").replace("_", " ").strip().title()
+                            if 10 <= len(txt) <= 140 and len(rshard["sentences"]) < 180:
+                                rshard["sentences"].append({"text": txt, "english": f"Everyday request ({intent})" if intent else ""})
+                                added_inj += 1
+                except Exception:
+                    pass
+
+            elif "xp3-ki" in stem_l:
+                rshard = ensure_reader_shard(target_lid)
+                added_ki = 0
+                try:
+                    with bf.open("r", encoding="utf-8", errors="ignore") as fh:
+                        for line in fh:
+                            if added_ki >= 60:
+                                break
+                            obj = json.loads(line)
+                            txt = " ".join(str(obj.get("targets") or "").split())
+                            if 15 <= len(txt) <= 220 and not any(x["text"] == txt for x in rshard["sentences"]):
+                                rshard["sentences"].append({"text": txt})
+                                added_ki += 1
                 except Exception:
                     pass
 
@@ -793,6 +899,15 @@ def main() -> None:
             }
             if vid == "nubi" and apics_feature_count > 0:
                 var_obj["grammarFeatureCount"] = apics_feature_count + gb_counts.get("nubi", 0)
+                apics_notes = []
+                for ar in (apics_raw.get("rows") or []):
+                    cm = " ".join(str(ar.get("Comment") or "").split())
+                    if 24 <= len(cm) <= 180 and cm not in apics_notes:
+                        apics_notes.append(cm)
+                    if len(apics_notes) >= 6:
+                        break
+                if apics_notes:
+                    var_obj["grammarNotes"] = apics_notes
             staged_varieties.append(var_obj)
 
     # 9. Civic & Agricultural Open Datasets (src/data/civic/)
@@ -934,7 +1049,7 @@ def main() -> None:
 
     for lid, gshard in grammar_shards.items():
         has_any = bool(
-            gshard["days"] or gshard["months"] or gshard["orthographyLetters"]
+            gshard["days"] or gshard["months"] or gshard["orthographyLetters"] or gshard["structureHighlights"] or gshard["familyPath"]
             or gshard["phonology"]["consonants"] or gshard["phonology"]["vowels"]
             or gshard["conjugations"]
         )

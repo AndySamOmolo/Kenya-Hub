@@ -108,6 +108,22 @@ const dholuoChSrc = resolve(root, "kenyahub/public/dholuo-audio-chapters.json");
 if (existsSync(dholuoChSrc)) {
   writeFileSync(resolve(destination, "data/dholuo-audio-chapters.json"), readFileSync(dholuoChSrc));
 }
+// Sync compact learning readers & comprehension quizzes for 1:1 Web-Mobile Listen & Read parity
+for (const shardKind of ["quizzes", "readers"]) {
+  const srcShardDir = resolve(root, `kenyahub/public/data/learning/${shardKind}`);
+  const dstShardDir = resolve(destination, `data/learning/${shardKind}`);
+  if (existsSync(srcShardDir)) {
+    ensureDir(dstShardDir);
+    const merged = {};
+    for (const f of readdirSync(srcShardDir).filter((x) => x.endsWith(".json"))) {
+      const lid = f.replace(/\.json$/, "");
+      try {
+        merged[lid] = JSON.parse(readFileSync(join(srcShardDir, f), "utf8"));
+      } catch {}
+    }
+    writeFileSync(resolve(destination, `data/learning-${shardKind}.json`), JSON.stringify(merged));
+  }
+}
 
 // Verify SHA-256 parity across all top-level statutory JSON datasets + key language provenance & typology files
 const webDataDir = resolve(source, "data");

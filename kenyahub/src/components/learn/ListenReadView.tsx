@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   BookOpen,
   CheckCircle2,
@@ -10,6 +10,10 @@ import {
   Headphones,
   HelpCircle,
   Newspaper,
+  Pause,
+  Play,
+  RotateCcw,
+  RotateCw,
   Search,
   Sparkles,
   Volume2,
@@ -57,6 +61,19 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
   const [playingSlug, setPlayingSlug] = useState<string | null>(null);
   const [slowMode, setSlowMode] = useState(false);
   const [activeChapterId, setActiveChapterId] = useState<string>(chapters[0]?.id ?? "");
+  const chapterAudioRef = useRef<HTMLAudioElement | null>(null);
+  const [chPlaying, setChPlaying] = useState(false);
+  const [chLoading, setChLoading] = useState(false);
+  const [chCurrentTime, setChCurrentTime] = useState(0);
+  const [chDuration, setChDuration] = useState(0);
+  const [chRate, setChRate] = useState<number>(1.0);
+
+  const formatAudioTime = (sec: number) => {
+    if (!Number.isFinite(sec) || sec < 0) return "0:00";
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${m}:${s < 10 ? "0" : ""}${s}`;
+  };
 
   // Reading state
   const [readers, setReaders] = useState<ReadersShard | null>(null);
@@ -111,6 +128,55 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
 
   const currentQuestion = filteredQuestions[qIndex] ?? null;
   const activeChapter = chapters.find((c) => c.id === activeChapterId) ?? chapters[0];
+
+  useEffect(() => {
+    const el = chapterAudioRef.current;
+    if (el) {
+      el.pause();
+      el.currentTime = 0;
+      el.playbackRate = chRate;
+    }
+    setChPlaying(false);
+    setChLoading(false);
+    setChCurrentTime(0);
+    setChDuration(0);
+  }, [activeChapter?.id]);
+
+  useEffect(() => {
+    if (chapterAudioRef.current) {
+      chapterAudioRef.current.playbackRate = chRate;
+    }
+  }, [chRate]);
+
+  const toggleChapterPlay = () => {
+    const el = chapterAudioRef.current;
+    if (!el) return;
+    if (chPlaying) {
+      el.pause();
+      setChPlaying(false);
+    } else {
+      setChLoading(true);
+      el.playbackRate = chRate;
+      el.play()
+        .then(() => {
+          setChPlaying(true);
+          setChLoading(false);
+        })
+        .catch(() => {
+          setChPlaying(false);
+          setChLoading(false);
+        });
+    }
+  };
+
+  const skipChapterTime = (delta: number) => {
+    const el = chapterAudioRef.current;
+    if (!el) return;
+    const dur = Number.isFinite(el.duration) && el.duration > 0 ? el.duration : chDuration;
+    const next = Math.max(0, Math.min(dur || el.currentTime + delta, el.currentTime + delta));
+    el.currentTime = next;
+    setChCurrentTime(next);
+  };
 
   const handlePlayClip = (clip: AudioShardClip) => {
     setPlayingSlug(clip.slug);
@@ -207,61 +273,166 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
         <div className="space-y-5">
           {chapters.length > 0 && activeChapter && (
             <div className="rounded-2xl border border-border bg-bg-card p-4 sm:p-6 shadow-sm space-y-4">
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <div>
+              {/* Header */}
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0 flex-1">
                   <h3 className="font-[family-name:var(--font-outfit)] text-base sm:text-lg font-bold text-text-primary flex items-center gap-2">
-                    <Headphones className="h-4 w-4 text-gold" />
-                    <span>{languageName} Spoken Phrasebook Chapters</span>
+                    <Headphones className="h-4 w-4 text-gold shrink-0" />
+                    <span>{languageName} Spoken Phrasebook</span>
                   </h3>
                   <p className="text-xs text-text-muted mt-0.5">
-                    Full guided audio chapters for natural rhythm and pronunciation.
+                    Listen to full guided audio chapters with synchronized follow-along phrases.
                   </p>
                 </div>
-                <span className="rounded-full bg-gold/15 border border-gold/30 px-2.5 py-0.5 text-xs font-semibold text-gold">
+                <span className="whitespace-nowrap shrink-0 rounded-full bg-gold/15 border border-gold/30 px-3 py-1 text-xs font-semibold text-gold">
                   {chapters.length} chapters
                 </span>
               </div>
 
-              <div className="flex flex-wrap gap-2">
-                {chapters.map((ch) => (
-                  <button
-                    key={ch.id}
-                    type="button"
-                    onClick={() => setActiveChapterId(ch.id)}
-                    className={`rounded-full px-3 py-1.5 text-xs font-semibold border transition-colors cursor-pointer ${
-                      ch.id === activeChapter.id
-                        ? "border-gold bg-gold/15 text-gold"
-                        : "border-border bg-bg-elevated/60 text-text-secondary hover:text-text-primary"
-                    }`}
-                  >
-                    Ch. {ch.number}: {ch.title}
-                  </button>
-                ))}
+              {/* Compact Horizontal Chapter Selector */}
+              <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+                {chapters.map((ch) => {
+                  const cleanT = ch.title.replace(/^\d+\s*[—–-]\s*/, "");
+                  const active = ch.id === activeChapter.id;
+                  return (
+                    <button
+                      key={ch.id}
+                      type="button"
+                      onClick={() => setActiveChapterId(ch.id)}
+                      className={`shrink-0 rounded-xl px-3 py-2 text-left border transition-all cursor-pointer max-w-[210px] ${
+                        active
+                          ? "border-gold bg-gold/15 text-text-primary shadow-sm"
+                          : "border-border bg-bg-elevated/60 text-text-secondary hover:border-gold/40 hover:text-text-primary"
+                      }`}
+                    >
+                      <p className={`text-[10px] font-bold uppercase tracking-wider ${active ? "text-gold" : "text-text-muted"}`}>
+                        Chapter {ch.number}
+                      </p>
+                      <p className="text-xs font-semibold truncate mt-0.5">{cleanT}</p>
+                    </button>
+                  );
+                })}
               </div>
 
-              <div className="rounded-xl border border-border/70 bg-bg-elevated/60 p-4 space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <p className="text-sm font-semibold text-text-primary">
-                    Chapter {activeChapter.number}: {activeChapter.title}
-                  </p>
+              {/* Active Chapter Card + Custom KenyaHub Audio Player */}
+              <div className="rounded-2xl border border-gold/25 bg-bg-elevated/50 p-4 space-y-4">
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <div className="min-w-0 flex-1">
+                    <p className="font-[family-name:var(--font-outfit)] text-sm sm:text-base font-bold text-text-primary break-words">
+                      Chapter {activeChapter.number}: {activeChapter.title.replace(/^\d+\s*[—–-]\s*/, "")}
+                    </p>
+                    {activeChapter.topics && activeChapter.topics.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 mt-2">
+                        {activeChapter.topics.map((topic, idx) => (
+                          <span
+                            key={idx}
+                            className="whitespace-nowrap rounded-full border border-border/80 bg-bg-card px-2.5 py-0.5 text-[11px] font-medium text-text-secondary"
+                          >
+                            {topic}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                   {activeChapter.sizeMb && (
-                    <span className="text-[11px] text-text-muted">{activeChapter.sizeMb} MB audio</span>
+                    <span className="whitespace-nowrap shrink-0 rounded-full border border-border bg-bg-card px-2.5 py-0.5 text-[11px] font-medium text-text-muted">
+                      {activeChapter.sizeMb} MB
+                    </span>
                   )}
                 </div>
-                {activeChapter.topics && activeChapter.topics.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5">
-                    {activeChapter.topics.map((topic, idx) => (
-                      <span
-                        key={idx}
-                        className="rounded-md border border-border/70 bg-bg-card px-2 py-0.5 text-[11px] text-text-secondary"
-                      >
-                        {topic}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                <audio controls preload="none" src={activeChapter.audioUrl} className="w-full h-10" />
 
+                {/* Hidden native audio element driven by custom styled player */}
+                <audio
+                  ref={chapterAudioRef}
+                  src={activeChapter.audioUrl}
+                  preload="metadata"
+                  onLoadedMetadata={(e) => setChDuration(e.currentTarget.duration || 0)}
+                  onTimeUpdate={(e) => setChCurrentTime(e.currentTarget.currentTime || 0)}
+                  onEnded={() => setChPlaying(false)}
+                  onPause={() => setChPlaying(false)}
+                  onPlay={() => {
+                    setChPlaying(true);
+                    setChLoading(false);
+                  }}
+                />
+
+                {/* Custom Styled Audio Player Bar */}
+                <div className="rounded-xl border border-border bg-bg-card p-3 sm:p-3.5 space-y-2.5 shadow-sm">
+                  <div className="flex items-center gap-2.5 sm:gap-3">
+                    <button
+                      type="button"
+                      onClick={toggleChapterPlay}
+                      aria-label={chPlaying ? "Pause chapter audio" : "Play chapter audio"}
+                      className="h-10 w-10 shrink-0 rounded-full bg-gold text-black flex items-center justify-center shadow-sm hover:bg-gold-light transition-colors cursor-pointer"
+                    >
+                      {chPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4 ml-0.5" />}
+                    </button>
+
+                    <div className="flex items-center gap-1 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => skipChapterTime(-10)}
+                        title="Back 10 seconds"
+                        className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
+                      >
+                        <RotateCcw className="h-3 w-3" />
+                        <span>10s</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => skipChapterTime(10)}
+                        title="Forward 10 seconds"
+                        className="inline-flex items-center gap-0.5 rounded-lg border border-border bg-bg-elevated px-2 py-1 text-[11px] font-semibold text-text-secondary hover:border-gold/50 hover:text-gold cursor-pointer"
+                      >
+                        <span>10s</span>
+                        <RotateCw className="h-3 w-3" />
+                      </button>
+                    </div>
+
+                    <div className="ml-auto flex items-center gap-1 shrink-0">
+                      {[0.75, 1, 1.25].map((r) => (
+                        <button
+                          key={r}
+                          type="button"
+                          onClick={() => setChRate(r)}
+                          className={`rounded-lg border px-2 py-1 text-[11px] font-bold transition-colors cursor-pointer ${
+                            chRate === r
+                              ? "border-gold bg-gold/15 text-gold"
+                              : "border-border bg-bg-elevated text-text-muted hover:text-text-primary"
+                          }`}
+                        >
+                          {r}x
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Interactive Seek Scrubber + Time Readout */}
+                  <div className="flex items-center gap-2.5">
+                    <span className="text-[11px] font-mono text-text-muted w-9 shrink-0">
+                      {formatAudioTime(chCurrentTime)}
+                    </span>
+                    <input
+                      type="range"
+                      min={0}
+                      max={chDuration || 100}
+                      step={0.5}
+                      value={Math.min(chCurrentTime, chDuration || 100)}
+                      onChange={(e) => {
+                        const t = Number(e.target.value);
+                        if (chapterAudioRef.current) chapterAudioRef.current.currentTime = t;
+                        setChCurrentTime(t);
+                      }}
+                      aria-label="Audio playback position"
+                      className="flex-1 h-1.5 accent-gold cursor-pointer"
+                    />
+                    <span className="text-[11px] font-mono text-text-muted w-9 text-right shrink-0">
+                      {chLoading ? "…" : formatAudioTime(chDuration)}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Follow-Along Numbered Phrasebook Transcript */}
                 {(() => {
                   const rawPhrases = readers?.chapterTranscripts?.[activeChapter.id] ?? [];
                   if (rawPhrases.length === 0) return null;
@@ -274,37 +445,45 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                       )
                     : rawPhrases;
                   return (
-                    <div className="pt-2 border-t border-border/60 space-y-2.5">
-                      <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="pt-3 border-t border-border/60 space-y-3">
+                      <div className="flex items-center justify-between gap-2">
                         <p className="text-xs font-bold uppercase tracking-wider text-gold">
-                          Follow-Along Phrasebook Transcript ({rawPhrases.length} phrases)
+                          Follow-Along Phrasebook ({rawPhrases.length})
                         </p>
-                        <div className="flex items-center gap-2">
-                          <button
-                            type="button"
-                            onClick={() => setShowChapterEnglish((v) => !v)}
-                            className="rounded-lg border border-border bg-bg-card px-2.5 py-1 text-[11px] font-semibold text-text-secondary hover:text-gold cursor-pointer"
-                          >
-                            {showChapterEnglish ? "Hide English" : "Show English"}
-                          </button>
-                          <input
-                            type="text"
-                            value={chapterSearch}
-                            onChange={(e) => setChapterSearch(e.target.value)}
-                            placeholder="Search chapter phrases..."
-                            className="w-full sm:w-52 min-w-0 rounded-lg border border-border bg-bg-card px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-muted focus:border-gold focus:outline-none"
-                          />
-                        </div>
+                        <button
+                          type="button"
+                          onClick={() => setShowChapterEnglish((v) => !v)}
+                          className="whitespace-nowrap shrink-0 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[11px] font-semibold text-gold hover:bg-gold/20 transition-colors cursor-pointer"
+                        >
+                          {showChapterEnglish ? "Hide English" : "Show English"}
+                        </button>
                       </div>
-                      <div className="max-h-72 overflow-y-auto grid grid-cols-1 sm:grid-cols-2 gap-2 pr-1">
+
+                      <div className="relative">
+                        <Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-text-muted" />
+                        <input
+                          type="text"
+                          value={chapterSearch}
+                          onChange={(e) => setChapterSearch(e.target.value)}
+                          placeholder={`Search ${rawPhrases.length} phrases in Chapter ${activeChapter.number}...`}
+                          className="w-full min-w-0 rounded-xl border border-border bg-bg-card pl-9 pr-3 py-2 text-xs text-text-primary placeholder:text-text-muted focus:border-gold focus:outline-none"
+                        />
+                      </div>
+
+                      <div className="max-h-80 overflow-y-auto grid grid-cols-1 sm:grid-cols-2 gap-2 pr-1">
                         {visiblePhrases.map((ph, idx) => (
                           <div
                             key={idx}
-                            className="rounded-lg border border-border/60 bg-bg-card px-3 py-2 text-xs space-y-0.5"
+                            className="rounded-xl border border-border/70 border-l-2 border-l-gold/60 bg-bg-card px-3 py-2.5 text-xs space-y-1 min-w-0 break-words"
                           >
-                            <p className="font-bold text-gold">{ph.dholuo}</p>
+                            <div className="flex items-baseline gap-2">
+                              <span className="text-[10px] font-mono font-bold text-text-muted shrink-0">
+                                {String(idx + 1).padStart(2, "0")}
+                              </span>
+                              <p className="font-bold text-text-primary leading-snug">{ph.dholuo}</p>
+                            </div>
                             {showChapterEnglish && (
-                              <p className="text-text-secondary">{ph.english}</p>
+                              <p className="text-text-secondary pl-5 leading-snug">{ph.english}</p>
                             )}
                           </div>
                         ))}
@@ -340,7 +519,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                   >
                     {slowMode ? "0.75x Slow On" : "1.0x Normal Speed"}
                   </button>
-                  <span className="rounded-full border border-border bg-bg-elevated px-2.5 py-1 text-xs font-medium text-text-secondary">
+                  <span className="whitespace-nowrap shrink-0 rounded-full border border-border bg-bg-elevated px-3 py-1 text-xs font-medium text-text-secondary">
                     {filteredClips.length.toLocaleString("en-KE")} clips
                   </span>
                 </div>
@@ -413,7 +592,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                     Tap any story to read the full text in {languageName}.
                   </p>
                 </div>
-                <span className="rounded-full bg-gold/15 border border-gold/30 px-2.5 py-0.5 text-xs font-semibold text-gold">
+                <span className="whitespace-nowrap shrink-0 rounded-full bg-gold/15 border border-gold/30 px-3 py-1 text-xs font-semibold text-gold">
                   {readers.stories.length} {readers.stories.length === 1 ? "story" : "stories"}
                 </span>
               </div>
@@ -529,7 +708,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
                     Real-world {languageName} sentences to build reading fluency.
                   </p>
                 </div>
-                <span className="rounded-full border border-border bg-bg-elevated px-2.5 py-0.5 text-xs text-text-secondary">
+                <span className="whitespace-nowrap shrink-0 rounded-full border border-border bg-bg-elevated px-3 py-1 text-xs font-medium text-text-secondary">
                   {(readers?.sentences?.length || langMeta?.sampleReadings?.length || 0).toLocaleString("en-KE")} sentences
                 </span>
               </div>
@@ -661,7 +840,7 @@ export default function ListenReadView({ languageId, languageName }: ListenReadV
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <span className="rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-bold text-gold">
+              <span className="whitespace-nowrap shrink-0 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-bold text-gold">
                 Score: {score.correct} / {score.answered}
               </span>
             </div>

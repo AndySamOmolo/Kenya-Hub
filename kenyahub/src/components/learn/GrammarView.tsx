@@ -221,6 +221,31 @@ export default function GrammarView({
 
   return (
     <div className="mx-auto max-w-4xl w-full min-w-0 overflow-x-hidden space-y-6 px-1 sm:px-4">
+      {grammarShard && ((grammarShard.familyPath?.length ?? 0) > 0 || (grammarShard.structureHighlights?.length ?? 0) > 0) && (
+        <section className="rounded-2xl border border-gold/25 bg-bg-card p-4 shadow-sm sm:p-6 space-y-3">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 className="font-[family-name:var(--font-outfit)] text-base sm:text-xl font-bold text-text-primary">
+              {languageName} Language Structure at a Glance
+            </h2>
+            {(grammarShard.familyPath?.length ?? 0) > 0 && (
+              <span className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-[11px] font-semibold text-gold break-words max-w-full">
+                {grammarShard.familyPath!.slice(-3).join(" › ")}
+              </span>
+            )}
+          </div>
+          {(grammarShard.structureHighlights?.length ?? 0) > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {grammarShard.structureHighlights!.map((item, idx) => (
+                <div key={`sh-${idx}`} className="rounded-xl border border-border bg-bg-elevated/60 px-3 py-2 text-xs min-w-0 break-words">
+                  <p className="font-bold text-text-primary">{item.label}</p>
+                  <p className="text-text-secondary mt-0.5">{item.detail}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      )}
+
       {(sections ?? []).map((section) => (
         <section
           key={section.id}
