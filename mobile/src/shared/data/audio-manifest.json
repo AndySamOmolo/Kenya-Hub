@@ -67,7 +67,7 @@
       "totalEntries": 8414,
       "addressableR2Keys": 8412,
       "r2Prefix": "audio/kalenjin/",
-      "directAudioEntries": 0,
+      "directAudioEntries": 4,
       "openAccessDatasets": [
         {
           "id": "anv-ke-kalenjin",

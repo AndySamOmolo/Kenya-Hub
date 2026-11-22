@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T10:58:57.605661+00:00",
+  "updatedAt": "2026-11-22T12:17:34.977058+00:00",
   "external": {
     "ipa-dict-sw": {
       "status": "completed",
@@ -56,22 +56,22 @@
     "kalenjin-parallel-eng-kln": {
       "status": "pending_gated_approval",
       "reason": "Dataset 'Tonykip/kalenjin-parallel-corpus' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Tonykip/kalenjin-parallel-corpus to ask for access.",
-      "updatedAt": "2026-11-22T10:56:25.966738+00:00"
+      "updatedAt": "2026-11-22T12:15:17.347686+00:00"
     },
     "ai4agric-mt-eng-swa": {
       "status": "pending_gated_approval",
       "reason": "Dataset 'AI4Agric/MT-Eng-Swa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/AI4Agric/MT-Eng-Swa to ask for access.",
-      "updatedAt": "2026-11-22T10:56:26.038389+00:00"
+      "updatedAt": "2026-11-22T12:15:17.450707+00:00"
     },
     "ai4agric-mt-eng-kik": {
       "status": "pending_gated_approval",
       "reason": "Dataset 'AI4Agric/MT-Eng-Kik' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/AI4Agric/MT-Eng-Kik to ask for access.",
-      "updatedAt": "2026-11-22T10:56:26.133964+00:00"
+      "updatedAt": "2026-11-22T12:15:17.540718+00:00"
     },
     "ai4agric-mt-eng-kln": {
       "status": "pending_gated_approval",
       "reason": "Dataset 'AI4Agric/MT-Eng-Kln' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/AI4Agric/MT-Eng-Kln to ask for access.",
-      "updatedAt": "2026-11-22T10:56:26.208301+00:00"
+      "updatedAt": "2026-11-22T12:15:17.621763+00:00"
     }
   },
   "directSources": {
@@ -197,80 +197,80 @@
       "status": "completed",
       "extracted": 67,
       "citation": "Bjorå et al. (2015) Uses of Kenyan Aloes",
-      "updatedAt": "2026-11-22T10:58:24.505557+00:00"
+      "updatedAt": "2026-11-22T12:17:01.992577+00:00"
     },
     "PMC1409767": {
       "status": "completed",
       "extracted": 42,
       "citation": "Owuor & Kisangau (2006) Kenyan Antivenin Plants",
-      "updatedAt": "2026-11-22T10:58:56.333346+00:00"
+      "updatedAt": "2026-11-22T12:17:33.739771+00:00"
     }
   },
   "oerStorybooks": {
     "sil-ai-bloom-lm-kik": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:33.043001+00:00"
+      "updatedAt": "2026-11-22T12:15:24.513646+00:00"
     },
     "sil-ai-bloom-lm-kam": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:33.603322+00:00"
+      "updatedAt": "2026-11-22T12:15:25.074070+00:00"
     },
     "sil-ai-bloom-lm-dig": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:34.167738+00:00"
+      "updatedAt": "2026-11-22T12:15:25.630121+00:00"
     },
     "sil-ai-bloom-lm-dug": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:34.793399+00:00"
+      "updatedAt": "2026-11-22T12:15:26.184045+00:00"
     },
     "sil-ai-bloom-lm-pkb": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:35.479985+00:00"
+      "updatedAt": "2026-11-22T12:15:26.715212+00:00"
     },
     "sil-ai-bloom-lm-rel": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:36.050979+00:00"
+      "updatedAt": "2026-11-22T12:15:27.369425+00:00"
     },
     "sil-ai-bloom-lm-saq": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:36.601693+00:00"
+      "updatedAt": "2026-11-22T12:15:27.886072+00:00"
     },
     "sil-ai-bloom-lm-som": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:37.175702+00:00"
+      "updatedAt": "2026-11-22T12:15:28.398443+00:00"
     },
     "sil-ai-bloom-lm-tuv": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:37.749944+00:00"
+      "updatedAt": "2026-11-22T12:15:28.928453+00:00"
     },
     "sil-ai-bloom-lm-tvs": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:38.336789+00:00"
+      "updatedAt": "2026-11-22T12:15:29.444941+00:00"
     },
     "sil-ai-bloom-lm-thk": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:38.893447+00:00"
+      "updatedAt": "2026-11-22T12:15:29.966168+00:00"
     },
     "sil-ai-bloom-lm-enb": {
       "status": "completed",
       "count": 0,
-      "updatedAt": "2026-11-22T10:56:39.518267+00:00"
+      "updatedAt": "2026-11-22T12:15:30.491743+00:00"
     },
     "glotstorybook": {
       "status": "completed",
       "count": 2500,
-      "updatedAt": "2026-11-22T10:57:17.639849+00:00"
+      "updatedAt": "2026-11-22T12:16:08.562719+00:00"
     }
   }
 }

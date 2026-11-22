@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-22T12:13:47.743633+00:00",
+  "generatedAt": "2026-11-22T13:22:13.782594+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 6732,
+    "totalR2AudioClips": 8037,
     "totalAudioChapters": 5,
-    "totalKslVideos": 1765,
+    "totalKslVideos": 628,
     "totalStagedVarieties": 4,
     "totalStagedEntries": 650,
     "totalBenchmarkRows": 26618,
@@ -12,32 +12,17 @@
     "totalQuizQuestions": 470,
     "totalCivicDatasets": 10,
     "totalWikimediaDatasets": 6,
-    "pendingGatedCount": 12
+    "pendingGatedCount": 15
   },
   "languages": {
     "swahili": {
       "languageId": "swahili",
-      "r2AudioClips": 1816,
+      "r2AudioClips": 1485,
       "nativeAudioSamples": [
-        {
-          "slug": "cha",
-          "label": "Cha",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/cha.opus"
-        },
-        {
-          "slug": "eau",
-          "label": "Eau",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/eau.opus"
-        },
         {
           "slug": "hao",
           "label": "Hao",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/hao.opus"
-        },
-        {
-          "slug": "huo",
-          "label": "Huo",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/huo.opus"
         },
         {
           "slug": "ili",
@@ -70,24 +55,9 @@
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/mto.opus"
         },
         {
-          "slug": "mwa",
-          "label": "Mwa",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mwa.opus"
-        },
-        {
           "slug": "nao",
           "label": "Nao",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/nao.opus"
-        },
-        {
-          "slug": "pia",
-          "label": "Pia",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/pia.opus"
-        },
-        {
-          "slug": "unk",
-          "label": "Unk",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/unk.opus"
         },
         {
           "slug": "uso",
@@ -98,11 +68,6 @@
           "slug": "uwe",
           "label": "Uwe",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/uwe.opus"
-        },
-        {
-          "slug": "vya",
-          "label": "Vya",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/vya.opus"
         },
         {
           "slug": "yao",
@@ -130,14 +95,49 @@
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/hayo.opus"
         },
         {
-          "slug": "hilo",
-          "label": "Hilo",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hilo.opus"
+          "slug": "kuku",
+          "label": "Kuku",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kuku.opus"
         },
         {
-          "slug": "hiyo",
-          "label": "Hiyo",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hiyo.opus"
+          "slug": "kuwa",
+          "label": "Kuwa",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kuwa.opus"
+        },
+        {
+          "slug": "leso",
+          "label": "Leso",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/leso.opus"
+        },
+        {
+          "slug": "mema",
+          "label": "Mema",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mema.opus"
+        },
+        {
+          "slug": "miji",
+          "label": "Miji",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/miji.opus"
+        },
+        {
+          "slug": "mimi",
+          "label": "Mimi",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mimi.opus"
+        },
+        {
+          "slug": "moyo",
+          "label": "Moyo",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/moyo.opus"
+        },
+        {
+          "slug": "naye",
+          "label": "Naye",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/naye.opus"
+        },
+        {
+          "slug": "nchi",
+          "label": "Nchi",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/nchi.opus"
         }
       ],
       "cldr": {
@@ -618,8 +618,8 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 1816,
-        "storiesCount": 38,
+        "audioCount": 1485,
+        "storiesCount": 78,
         "sentencesCount": 150,
         "articlesCount": 72,
         "quizCount": 180,
@@ -1497,7 +1497,8 @@
             "basic conversation"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 66
         },
         {
           "id": "kavirondo-ch-02",
@@ -1515,7 +1516,8 @@
             "hospitality"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 115
         },
         {
           "id": "kavirondo-ch-03",
@@ -1533,7 +1535,8 @@
             "agriculture & building"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 43
         },
         {
           "id": "kavirondo-ch-04",
@@ -1551,7 +1554,8 @@
             "camping & rivers"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 19
         },
         {
           "id": "kavirondo-ch-05",
@@ -1569,7 +1573,8 @@
             "community dialogue"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
+          "phraseCount": 254
         }
       ],
       "shards": {
@@ -2338,127 +2343,127 @@
     },
     "kalenjin": {
       "languageId": "kalenjin",
-      "r2AudioClips": 250,
+      "r2AudioClips": 2166,
       "nativeAudioSamples": [
+        {
+          "slug": "kongoi",
+          "label": "Kongoi",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kongoi.opus"
+        },
+        {
+          "slug": "obwa-yu",
+          "label": "Obwa yu",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/obwa-yu.opus"
+        },
+        {
+          "slug": "ketestai",
+          "label": "Ketestai",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/ketestai.opus"
+        },
+        {
+          "slug": "miten-gaa",
+          "label": "Miten gaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/miten-gaa.opus"
+        },
+        {
+          "slug": "aite-bolik",
+          "label": "Aite bolik",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/aite-bolik.opus"
+        },
+        {
+          "slug": "kikee-tuga",
+          "label": "Kikee tuga",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kikee-tuga.opus"
+        },
+        {
+          "slug": "kirat-usit",
+          "label": "Kirat usit",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kirat-usit.opus"
+        },
+        {
+          "slug": "lany-anyun",
+          "label": "Lany anyun",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/lany-anyun.opus"
+        },
+        {
+          "slug": "taach-toek",
+          "label": "Taach toek",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/taach-toek.opus"
+        },
+        {
+          "slug": "tai-mining",
+          "label": "Tai mining",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/tai-mining.opus"
+        },
+        {
+          "slug": "betut-ne-oo",
+          "label": "Betut ne oo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/betut-ne-oo.opus"
+        },
+        {
+          "slug": "kerat-sukul",
+          "label": "Kerat sukul",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kerat-sukul.opus"
+        },
+        {
+          "slug": "oroek-sogol",
+          "label": "Oroek sogol",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/oroek-sogol.opus"
+        },
+        {
+          "slug": "tuch-lakwet",
+          "label": "Tuch lakwet",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/tuch-lakwet.opus"
+        },
+        {
+          "slug": "kiomis-tugul",
+          "label": "Kiomis tugul",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kiomis-tugul.opus"
+        },
+        {
+          "slug": "chechuk-tugul",
+          "label": "Chechuk tugul",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/chechuk-tugul.opus"
+        },
+        {
+          "slug": "kaketeb-tebut",
+          "label": "Kaketeb tebut",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kaketeb-tebut.opus"
+        },
         {
           "slug": "keturek-ketik",
           "label": "Keturek ketik",
           "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/keturek-ketik.opus"
         },
         {
-          "slug": "achame-kamennyu",
-          "label": "Achame kamennyu",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/achame-kamennyu.opus"
+          "slug": "mornoguk-chuu",
+          "label": "Mornoguk chuu",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/mornoguk-chuu.opus"
         },
         {
-          "slug": "amune-komuti-pik",
-          "label": "Amune komuti pik",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/amune-komuti-pik.opus"
+          "slug": "ram-samakinik",
+          "label": "Ram samakinik",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/ram-samakinik.opus"
         },
         {
-          "slug": "kamukta-indennyo",
-          "label": "Kamukta indennyo",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kamukta-indennyo.opus"
+          "slug": "kagomwei-maria",
+          "label": "Kagomwei maria",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kagomwei-maria.opus"
         },
         {
-          "slug": "mamoche-tangoita",
-          "label": "Mamoche tangoita",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/mamoche-tangoita.opus"
+          "slug": "karik-ab-luket",
+          "label": "Karik ab luket",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/karik-ab-luket.opus"
         },
         {
-          "slug": "enkai-nabo-te-uni",
-          "label": "Enkai nabo te uni",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/enkai-nabo-te-uni.opus"
+          "slug": "kas-che-amwaun",
+          "label": "Kas che amwaun",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kas-che-amwaun.opus"
         },
         {
-          "slug": "ak-ki-imige-mising",
-          "label": "Ak ki imige mising",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/ak-ki-imige-mising.opus"
-        },
-        {
-          "slug": "kiuchi-taunit-neoo",
-          "label": "Kiuchi taunit neoo",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kiuchi-taunit-neoo.opus"
-        },
-        {
-          "slug": "mo-urerie-bondenyu",
-          "label": "Mo urerie bondenyu",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/mo-urerie-bondenyu.opus"
-        },
-        {
-          "slug": "mi-kokwerie-karinyi",
-          "label": "Mi kokwerie karinyi",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/mi-kokwerie-karinyi.opus"
-        },
-        {
-          "slug": "nyoiwakat-kabar-chi",
-          "label": "Nyoiwakat kabar chi",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/nyoiwakat-kabar-chi.opus"
-        },
-        {
-          "slug": "matarotin-eng-koindo",
-          "label": "Matarotin eng koindo",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/matarotin-eng-koindo.opus"
-        },
-        {
-          "slug": "arue-raini-sait-somok",
-          "label": "Arue raini sait somok",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/arue-raini-sait-somok.opus"
-        },
-        {
-          "slug": "kandoinatet-nekararan",
-          "label": "Kandoinatet nekararan",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kandoinatet-nekararan.opus"
-        },
-        {
-          "slug": "ne-tieni-che-mi-barak",
-          "label": "Ne tieni che mi barak",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/ne-tieni-che-mi-barak.opus"
-        },
-        {
-          "slug": "tinye-kebeberta-ne-ya",
-          "label": "Tinye kebeberta ne ya",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/tinye-kebeberta-ne-ya.opus"
-        },
-        {
-          "slug": "amune-si-irire-ag-inye",
-          "label": "Amune si irire ag inye",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/amune-si-irire-ag-inye.opus"
-        },
-        {
-          "slug": "kicham-inendet-eng-tai",
-          "label": "Kicham inendet eng tai",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kicham-inendet-eng-tai.opus"
-        },
-        {
-          "slug": "imiten-ano-raa-ooh-weri",
-          "label": "Imiten ano raa ooh weri",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/imiten-ano-raa-ooh-weri.opus"
-        },
-        {
-          "slug": "kiripei-tupcheshek-choo",
-          "label": "Kiripei tupcheshek choo",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kiripei-tupcheshek-choo.opus"
-        },
-        {
-          "slug": "rirei-lakwet-amu-kaibut",
-          "label": "Rirei lakwet amu kaibut",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/rirei-lakwet-amu-kaibut.opus"
-        },
-        {
-          "slug": "teret-nigiteer-ko-nenyu",
-          "label": "Teret nigiteer ko nenyu",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/teret-nigiteer-ko-nenyu.opus"
-        },
-        {
-          "slug": "gaigai-much-igetyi-mutyo",
-          "label": "Gaigai much igetyi mutyo",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/gaigai-much-igetyi-mutyo.opus"
-        },
-        {
-          "slug": "inye-koi-chomyet-ap-iman",
-          "label": "Inye koi chomyet ap iman",
-          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/inye-koi-chomyet-ap-iman.opus"
+          "slug": "katyech-pelyot",
+          "label": "Katyech pelyot",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/katyech-pelyot.opus"
         }
       ],
       "cldr": {
@@ -2755,7 +2760,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 250,
+        "audioCount": 2166,
         "storiesCount": 9,
         "sentencesCount": 0,
         "articlesCount": 108,
@@ -4859,127 +4864,127 @@
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 459,
+      "r2AudioClips": 392,
       "nativeAudioSamples": [
-        {
-          "slug": "a-a",
-          "label": "A a",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-a.opus"
-        },
-        {
-          "slug": "dha",
-          "label": "Dha",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/dha.opus"
-        },
-        {
-          "slug": "fii",
-          "label": "Fii",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/fii.opus"
-        },
-        {
-          "slug": "kaa",
-          "label": "Kaa",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/kaa.opus"
-        },
-        {
-          "slug": "nis",
-          "label": "Nis",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/nis.opus"
-        },
-        {
-          "slug": "noo",
-          "label": "Noo",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/noo.opus"
-        },
-        {
-          "slug": "nuu",
-          "label": "Nuu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/nuu.opus"
-        },
-        {
-          "slug": "tii",
-          "label": "Tii",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/tii.opus"
-        },
-        {
-          "slug": "tti",
-          "label": "Tti",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/tti.opus"
-        },
-        {
-          "slug": "a-aa",
-          "label": "A aa",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-aa.opus"
-        },
-        {
-          "slug": "a-oo",
-          "label": "A oo",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-oo.opus"
-        },
-        {
-          "slug": "a-uu",
-          "label": "A uu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-uu.opus"
-        },
-        {
-          "slug": "aada",
-          "label": "Aada",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/aada.opus"
-        },
-        {
-          "slug": "ffaa",
-          "label": "Ffaa",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/ffaa.opus"
-        },
-        {
-          "slug": "icha",
-          "label": "Icha",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/icha.opus"
-        },
-        {
-          "slug": "tama",
-          "label": "Tama",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/tama.opus"
-        },
-        {
-          "slug": "yyuu",
-          "label": "Yyuu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/yyuu.opus"
-        },
-        {
-          "slug": "a-ama",
-          "label": "A ama",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-ama.opus"
-        },
-        {
-          "slug": "aa-ee",
-          "label": "Aa ee",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/aa-ee.opus"
-        },
-        {
-          "slug": "aabba",
-          "label": "Aabba",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/aabba.opus"
-        },
-        {
-          "slug": "aabbo",
-          "label": "Aabbo",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/aabbo.opus"
-        },
-        {
-          "slug": "aaboo",
-          "label": "Aaboo",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/aaboo.opus"
-        },
-        {
-          "slug": "aadaa",
-          "label": "Aadaa",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/aadaa.opus"
-        },
         {
           "slug": "gaala",
           "label": "Gaala",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/gaala.opus"
+        },
+        {
+          "slug": "hubadhu",
+          "label": "Hubadhu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/hubadhu.opus"
+        },
+        {
+          "slug": "lalisee",
+          "label": "Lalisee",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/lalisee.opus"
+        },
+        {
+          "slug": "m-mixxii",
+          "label": "M mixxii",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/m-mixxii.opus"
+        },
+        {
+          "slug": "ch-letter",
+          "label": "Ch letter",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/ch-letter.opus"
+        },
+        {
+          "slug": "dh-letter",
+          "label": "Dh letter",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/dh-letter.opus"
+        },
+        {
+          "slug": "kanariyaan",
+          "label": "Kanariyaan",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/kanariyaan.opus"
+        },
+        {
+          "slug": "kun-fedhiin",
+          "label": "Kun fedhiin",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/kun-fedhiin.opus"
+        },
+        {
+          "slug": "iddoo-kanarratti-kan-argamummoo",
+          "label": "Iddoo kanarratti kan argamummoo",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/iddoo-kanarratti-kan-argamummoo.opus"
+        },
+        {
+          "slug": "turkii-awurooppaa-3-biyyattii-qabaata",
+          "label": "Turkii awurooppaa 3 biyyattii qabaata",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/turkii-awurooppaa-3-biyyattii-qabaata.opus"
+        },
+        {
+          "slug": "suuraa-armaan-olitti-argamu-irraa-waanti-mul-atu",
+          "label": "Suuraa armaan olitti argamu irraa waanti mul atu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/suuraa-armaan-olitti-argamu-irraa-waanti-mul-atu.opus"
+        },
+        {
+          "slug": "nuti-hundi-salphaamatti-naasuu-keessa-turre-jette-haati",
+          "label": "Nuti hundi salphaamatti naasuu keessa turre jette haati",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/nuti-hundi-salphaamatti-naasuu-keessa-turre-jette-haati.opus"
+        },
+        {
+          "slug": "namni-tokko-illee-mana-waliin-jireenyaa-keessa-hin-turre",
+          "label": "Namni tokko illee mana waliin jireenyaa keessa hin turre",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/namni-tokko-illee-mana-waliin-jireenyaa-keessa-hin-turre.opus"
+        },
+        {
+          "slug": "liigiins-daandii-abbaasaa-hordofuun-hojii-fayyaa-keessa-gale",
+          "label": "Liigiins daandii abbaasaa hordofuun hojii fayyaa keessa gale",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/liigiins-daandii-abbaasaa-hordofuun-hojii-fayyaa-keessa-gale.opus"
+        },
+        {
+          "slug": "afuuffeen-waantota-dhala-namaatiif-gammachuu-laatan-keessaa-isa-",
+          "label": "Afuuffeen waantota dhala namaatiif gammachuu laatan keessaa isa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/afuuffeen-waantota-dhala-namaatiif-gammachuu-laatan-keessaa-isa-.opus"
+        },
+        {
+          "slug": "atileetonni-itoophiyaa-yeroo-biyya-bakka-bu-anii-biyyaaf-fiigan-",
+          "label": "Atileetonni itoophiyaa yeroo biyya bakka bu anii biyyaaf fiigan",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/atileetonni-itoophiyaa-yeroo-biyya-bakka-bu-anii-biyyaaf-fiigan-.opus"
+        },
+        {
+          "slug": "baandiin-muuziqaa-rookii-hanga-fulbaana-16tti-yunaayitid-steets-",
+          "label": "Baandiin muuziqaa rookii hanga fulbaana 16tti yunaayitid steets",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/baandiin-muuziqaa-rookii-hanga-fulbaana-16tti-yunaayitid-steets-.opus"
+        },
+        {
+          "slug": "bakka-kanatti-kan-argamu-dhagaadha-dhagaan-kunis-bakka-tokkotti-",
+          "label": "Bakka kanatti kan argamu dhagaadha dhagaan kunis bakka tokkotti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/bakka-kanatti-kan-argamu-dhagaadha-dhagaan-kunis-bakka-tokkotti-.opus"
+        },
+        {
+          "slug": "bineensonni-seeloota-baay-ee-irraa-umaman-wantoota-nyaatanii-of-",
+          "label": "Bineensonni seeloota baay ee irraa umaman wantoota nyaatanii of",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/bineensonni-seeloota-baay-ee-irraa-umaman-wantoota-nyaatanii-of-.opus"
+        },
+        {
+          "slug": "bishaan-keessa-lubbu-qabeeyyii-adda-addaatu-jiraata-fakkeenyaaf-",
+          "label": "Bishaan keessa lubbu qabeeyyii adda addaatu jiraata fakkeenyaaf",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/bishaan-keessa-lubbu-qabeeyyii-adda-addaatu-jiraata-fakkeenyaaf-.opus"
+        },
+        {
+          "slug": "biyyoonni-addunyaa-baayyeen-afaan-ingiliiziii-sirriitti-dubbatu-",
+          "label": "Biyyoonni addunyaa baayyeen afaan ingiliiziii sirriitti dubbatu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/biyyoonni-addunyaa-baayyeen-afaan-ingiliiziii-sirriitti-dubbatu-.opus"
+        },
+        {
+          "slug": "cireen-nyaata-naannichi-waqtiidhaanii-naannichaa-yookaan-nyaata-",
+          "label": "Cireen nyaata naannichi waqtiidhaanii naannichaa yookaan nyaata",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/cireen-nyaata-naannichi-waqtiidhaanii-naannichaa-yookaan-nyaata-.opus"
+        },
+        {
+          "slug": "daandiiwwan-konkolaataa-irratti-yeroo-baay-ee-mukkeen-ni-argamu-",
+          "label": "Daandiiwwan konkolaataa irratti yeroo baay ee mukkeen ni argamu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/daandiiwwan-konkolaataa-irratti-yeroo-baay-ee-mukkeen-ni-argamu-.opus"
+        },
+        {
+          "slug": "daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-",
+          "label": "Daldalaan nama hojii daldalummaa yookiis bittaa fi gurgurtummaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-.opus"
         }
       ],
       "cldr": {
@@ -5264,7 +5269,7 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 459,
+        "audioCount": 392,
         "storiesCount": 400,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -5697,129 +5702,8 @@
     },
     "english-ke": {
       "languageId": "english-ke",
-      "r2AudioClips": 214,
-      "nativeAudioSamples": [
-        {
-          "slug": "aku",
-          "label": "Aku",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/aku.opus"
-        },
-        {
-          "slug": "hmm",
-          "label": "Hmm",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/hmm.opus"
-        },
-        {
-          "slug": "wow",
-          "label": "Wow",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/wow.opus"
-        },
-        {
-          "slug": "yes",
-          "label": "Yes",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/yes.opus"
-        },
-        {
-          "slug": "okay",
-          "label": "Okay",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/okay.opus"
-        },
-        {
-          "slug": "what",
-          "label": "What",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/what.opus"
-        },
-        {
-          "slug": "yeah",
-          "label": "Yeah",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/yeah.opus"
-        },
-        {
-          "slug": "laugh",
-          "label": "Laugh",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/laugh.opus"
-        },
-        {
-          "slug": "uh-so",
-          "label": "Uh so",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/uh-so.opus"
-        },
-        {
-          "slug": "avatar",
-          "label": "Avatar",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/avatar.opus"
-        },
-        {
-          "slug": "mm-hmm",
-          "label": "Mm hmm",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/mm-hmm.opus"
-        },
-        {
-          "slug": "no-yes",
-          "label": "No yes",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/no-yes.opus"
-        },
-        {
-          "slug": "oh-god",
-          "label": "Oh god",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/oh-god.opus"
-        },
-        {
-          "slug": "uh-huh",
-          "label": "Uh huh",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/uh-huh.opus"
-        },
-        {
-          "slug": "ben-ten",
-          "label": "Ben ten",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/ben-ten.opus"
-        },
-        {
-          "slug": "eh-okay",
-          "label": "Eh okay",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/eh-okay.opus"
-        },
-        {
-          "slug": "uh-okay",
-          "label": "Uh okay",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/uh-okay.opus"
-        },
-        {
-          "slug": "yes-and",
-          "label": "Yes and",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/yes-and.opus"
-        },
-        {
-          "slug": "okay-wow",
-          "label": "Okay wow",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/okay-wow.opus"
-        },
-        {
-          "slug": "or-laugh",
-          "label": "Or laugh",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/or-laugh.opus"
-        },
-        {
-          "slug": "was-that",
-          "label": "Was that",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/was-that.opus"
-        },
-        {
-          "slug": "wildmutt",
-          "label": "Wildmutt",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/wildmutt.opus"
-        },
-        {
-          "slug": "y-yes-hi",
-          "label": "Y yes hi",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/y-yes-hi.opus"
-        },
-        {
-          "slug": "oh-my-god",
-          "label": "Oh my god",
-          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/oh-my-god.opus"
-        }
-      ],
+      "r2AudioClips": 1,
+      "nativeAudioSamples": [],
       "cldr": {
         "locale": "en-KE",
         "months": [
@@ -5860,7 +5744,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 214,
+        "audioCount": 1,
         "storiesCount": 0,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -9869,153 +9753,10 @@
     ],
     "videos": [
       {
-        "id": "maseno-0",
-        "title": "0",
-        "gloss": "0",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-0.mp4",
-        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/0.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-10",
-        "title": "10",
-        "gloss": "10",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-10.mp4",
-        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/10.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-24",
-        "title": "24",
-        "gloss": "24",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-24.mp4",
-        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/24.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-4",
-        "title": "4",
-        "gloss": "4",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-4.mp4",
-        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/4.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-accept",
-        "title": "Accept",
-        "gloss": "Accept",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-accept.mp4",
-        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/ACCEPT.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-across",
-        "title": "Across",
-        "gloss": "Across",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-across.mp4",
-        "archivePath": "Pose Data/Batch 2/129/Extract/Stickmans/ACROSS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-action",
-        "title": "Action",
-        "gloss": "Action",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-action.mp4",
-        "archivePath": "Pose Data/Batch 2/166/Extract/Stickmans/ACTION.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-active",
-        "title": "Active",
-        "gloss": "Active",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-active.mp4",
-        "archivePath": "Pose Data/Batch 1/208/Extract/Stickmans/ACTIVE.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-active-571fae",
-        "title": "Active (Clip 2)",
-        "gloss": "Active",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-active-571fae.mp4",
-        "archivePath": "Pose Data/Batch 2/174/Extract/Stickmans/ACTIVE.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-add",
-        "title": "Add",
-        "gloss": "Add",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-add.mp4",
-        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/ADD.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
         "id": "maseno-adult",
         "title": "Adult",
         "gloss": "Adult",
         "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-adult.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-advocate",
-        "title": "Advocate",
-        "gloss": "Advocate",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-advocate.mp4",
-        "archivePath": "Pose Data/Batch 2/91/Extract/Stickmans/ADVOCATE.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-affect",
-        "title": "Affect",
-        "gloss": "Affect",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-affect.mp4",
-        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/AFFECT.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-affect-5417e3",
-        "title": "Affect (Clip 2)",
-        "gloss": "Affect",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-affect-5417e3.mp4",
-        "archivePath": "Pose Data/Batch 2/166/Extract/Stickmans/AFFECT.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
@@ -10032,197 +9773,10 @@
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-africa-cfdf48",
-        "title": "Africa (Clip 2)",
-        "gloss": "Africa",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-africa-cfdf48.mp4",
-        "archivePath": "Pose Data/Batch 2/91/Extract/Stickmans/AFRICA.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
         "id": "maseno-age",
         "title": "Age",
         "gloss": "Age",
         "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-age.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-ago",
-        "title": "Ago",
-        "gloss": "Ago",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ago.mp4",
-        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/AGO.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-ahead",
-        "title": "Ahead",
-        "gloss": "Ahead",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ahead.mp4",
-        "archivePath": "Pose Data/Batch 2/129/Extract/Stickmans/AHEAD.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-all",
-        "title": "All",
-        "gloss": "All",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all.mp4",
-        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/ALL.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-all-59e140",
-        "title": "All (Clip 2)",
-        "gloss": "All",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-59e140.mp4",
-        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/ALL.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-all-554815",
-        "title": "All (Clip 3)",
-        "gloss": "All",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-554815.mp4",
-        "archivePath": "Pose Data/Batch 2/129/Extract/Stickmans/ALL.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-all-210434",
-        "title": "All (Clip 4)",
-        "gloss": "All",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-210434.mp4",
-        "archivePath": "Pose Data/Batch 2/146/Extract/Stickmans/ALL.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-all-d0779f",
-        "title": "All (Clip 5)",
-        "gloss": "All",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-d0779f.mp4",
-        "archivePath": "Pose Data/Batch 2/161/Extract/Stickmans/ALL.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-all-45b75b",
-        "title": "All (Clip 6)",
-        "gloss": "All",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-45b75b.mp4",
-        "archivePath": "Pose Data/Batch 2/167/Extract/Stickmans/ALL.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-all-eaa392",
-        "title": "All (Clip 7)",
-        "gloss": "All",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-eaa392.mp4",
-        "archivePath": "Pose Data/Batch 2/65/Extract/Stickmans/ALL.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-all-29fa9a",
-        "title": "All (Clip 8)",
-        "gloss": "All",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-29fa9a.mp4",
-        "archivePath": "Pose Data/Batch 2/91/Extract/Stickmans/ALL.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-alot",
-        "title": "Alot",
-        "gloss": "Alot",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot.mp4",
-        "archivePath": "Pose Data/Batch 1/205/Extract/Stickmans/ALOT.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-alot-38498d",
-        "title": "Alot (Clip 2)",
-        "gloss": "Alot",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot-38498d.mp4",
-        "archivePath": "Pose Data/Batch 1/235/Extract/Stickmans/ALOT.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-alot-5a5124",
-        "title": "Alot (Clip 3)",
-        "gloss": "Alot",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot-5a5124.mp4",
-        "archivePath": "Pose Data/Batch 2/119/Extract/Stickmans/ALOT.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-alot-08ab7b",
-        "title": "Alot (Clip 4)",
-        "gloss": "Alot",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot-08ab7b.mp4",
-        "archivePath": "Pose Data/Batch 2/131/Extract/Stickmans/ALOT.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-alot-2f97d7",
-        "title": "Alot (Clip 5)",
-        "gloss": "Alot",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot-2f97d7.mp4",
-        "archivePath": "Pose Data/Batch 2/76/Extract/Stickmans/ALOT.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-also",
-        "title": "Also",
-        "gloss": "Also",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-also.mp4",
-        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/ALSO.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
@@ -10239,127 +9793,6 @@
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-always-54a4e7",
-        "title": "Always (Clip 10)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-54a4e7.mp4",
-        "archivePath": "Pose Data/Batch 2/166/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-2986d1",
-        "title": "Always (Clip 11)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-2986d1.mp4",
-        "archivePath": "Pose Data/Batch 2/167/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-b467f1",
-        "title": "Always (Clip 2)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-b467f1.mp4",
-        "archivePath": "Pose Data/Batch 1/201/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-900937",
-        "title": "Always (Clip 3)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-900937.mp4",
-        "archivePath": "Pose Data/Batch 1/203/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-20f6df",
-        "title": "Always (Clip 4)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-20f6df.mp4",
-        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-d2243c",
-        "title": "Always (Clip 5)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-d2243c.mp4",
-        "archivePath": "Pose Data/Batch 1/206/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-5c4e87",
-        "title": "Always (Clip 6)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-5c4e87.mp4",
-        "archivePath": "Pose Data/Batch 1/208/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-f82401",
-        "title": "Always (Clip 7)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-f82401.mp4",
-        "archivePath": "Pose Data/Batch 1/234/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-1b45ca",
-        "title": "Always (Clip 8)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-1b45ca.mp4",
-        "archivePath": "Pose Data/Batch 1/264/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-always-d2c9c0",
-        "title": "Always (Clip 9)",
-        "gloss": "Always",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-d2c9c0.mp4",
-        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/ALWAYS.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-america",
-        "title": "America",
-        "gloss": "America",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-america.mp4",
-        "archivePath": "Pose Data/Batch 2/103/Extract/Stickmans/AMERICA.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
         "id": "maseno-ancestors",
         "title": "Ancestors",
         "gloss": "Ancestors",
@@ -10370,374 +9803,540 @@
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-animal",
-        "title": "Animal",
-        "gloss": "Animal",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-animal.mp4",
-        "archivePath": "Pose Data/Batch 2/149/Extract/Stickmans/ANIMAL.mp4",
+        "id": "maseno-berret",
+        "title": "Berret",
+        "gloss": "Berret",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-berret.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-announce",
-        "title": "Announce",
-        "gloss": "Announce",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-announce.mp4",
-        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/ANNOUNCE.mp4",
+        "id": "maseno-better",
+        "title": "Better",
+        "gloss": "Better",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-better.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-another",
-        "title": "Another",
-        "gloss": "Another",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-another.mp4",
-        "archivePath": "Pose Data/Batch 2/149/Extract/Stickmans/ANOTHER.mp4",
+        "id": "maseno-black",
+        "title": "Black",
+        "gloss": "Black",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-black.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-answer",
-        "title": "Answer",
-        "gloss": "Answer",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-answer.mp4",
-        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/ANSWER.mp4",
+        "id": "maseno-blazer",
+        "title": "Blazer",
+        "gloss": "Blazer",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-blazer.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-answer-72632a",
-        "title": "Answer (Clip 2)",
-        "gloss": "Answer",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-answer-72632a.mp4",
-        "archivePath": "Pose Data/Batch 2/119/Extract/Stickmans/ANSWER.mp4",
+        "id": "maseno-born",
+        "title": "Born",
+        "gloss": "Born",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-born.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-antonio",
-        "title": "Antonio",
-        "gloss": "Antonio",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-antonio.mp4",
-        "archivePath": "Pose Data/Batch 2/135/Extract/Stickmans/ANTONIO.mp4",
+        "id": "maseno-boys",
+        "title": "Boys",
+        "gloss": "Boys",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-boys.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-any",
-        "title": "Any",
-        "gloss": "Any",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-any.mp4",
-        "archivePath": "Pose Data/Batch 2/140/Extract/Stickmans/ANY.mp4",
+        "id": "maseno-break",
+        "title": "Break",
+        "gloss": "Break",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-break.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-appear",
-        "title": "Appear",
-        "gloss": "Appear",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-appear.mp4",
-        "archivePath": "Pose Data/Batch 1/251/Extract/Stickmans/APPEAR.mp4",
+        "id": "maseno-carry",
+        "title": "Carry",
+        "gloss": "Carry",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-carry.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-appointment",
-        "title": "Appointment",
-        "gloss": "Appointment",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-appointment.mp4",
-        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/APPOINTMENT.mp4",
+        "id": "maseno-celebrate",
+        "title": "Celebrate",
+        "gloss": "Celebrate",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-celebrate.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-are",
-        "title": "Are",
-        "gloss": "Are",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-are.mp4",
-        "archivePath": "Pose Data/Batch 1/251/Extract/Stickmans/ARE.mp4",
+        "id": "maseno-chinese",
+        "title": "Chinese",
+        "gloss": "Chinese",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-chinese.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-are-ab7c96",
-        "title": "Are (Clip 2)",
-        "gloss": "Are",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-are-ab7c96.mp4",
-        "archivePath": "Pose Data/Batch 2/132/Extract/Stickmans/ARE.mp4",
+        "id": "maseno-coat",
+        "title": "Coat",
+        "gloss": "Coat",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-coat.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-are-035bcf",
-        "title": "Are (Clip 3)",
-        "gloss": "Are",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-are-035bcf.mp4",
-        "archivePath": "Pose Data/Batch 2/149/Extract/Stickmans/ARE.mp4",
+        "id": "maseno-come",
+        "title": "Come",
+        "gloss": "Come",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-come.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-are-7425bf",
-        "title": "Are (Clip 4)",
-        "gloss": "Are",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-are-7425bf.mp4",
-        "archivePath": "Pose Data/Batch 2/174/Extract/Stickmans/ARE.mp4",
+        "id": "maseno-cross",
+        "title": "Cross",
+        "gloss": "Cross",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-cross.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-arm",
-        "title": "Arm",
-        "gloss": "Arm",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-arm.mp4",
-        "archivePath": "Pose Data/Batch 2/103/Extract/Stickmans/ARM.mp4",
+        "id": "maseno-date",
+        "title": "Date",
+        "gloss": "Date",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-date.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-arm-15a4bc",
-        "title": "Arm (Clip 2)",
-        "gloss": "Arm",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-arm-15a4bc.mp4",
-        "archivePath": "Pose Data/Batch 2/174/Extract/Stickmans/ARM.mp4",
+        "id": "maseno-daughter",
+        "title": "Daughter",
+        "gloss": "Daughter",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-daughter.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-arrange",
-        "title": "Arrange",
-        "gloss": "Arrange",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-arrange.mp4",
-        "archivePath": "Pose Data/Batch 2/91/Extract/Stickmans/ARRANGE.mp4",
+        "id": "maseno-day",
+        "title": "Day",
+        "gloss": "Day",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-day.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-arreas",
-        "title": "Arreas",
-        "gloss": "Arreas",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-arreas.mp4",
-        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/ARREAS.mp4",
+        "id": "maseno-dress",
+        "title": "Dress",
+        "gloss": "Dress",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-dress.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-ask",
-        "title": "Ask",
-        "gloss": "Ask",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ask.mp4",
-        "archivePath": "Pose Data/Batch 1/234/Extract/Stickmans/ASK.mp4",
+        "id": "maseno-evening",
+        "title": "Evening",
+        "gloss": "Evening",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-evening.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-ask-ce8a98",
-        "title": "Ask (Clip 2)",
-        "gloss": "Ask",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ask-ce8a98.mp4",
-        "archivePath": "Pose Data/Batch 2/119/Extract/Stickmans/ASK.mp4",
+        "id": "maseno-father",
+        "title": "Father",
+        "gloss": "Father",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-father.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-ask-1feb5f",
-        "title": "Ask (Clip 3)",
-        "gloss": "Ask",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ask-1feb5f.mp4",
-        "archivePath": "Pose Data/Batch 2/65/Extract/Stickmans/ASK.mp4",
+        "id": "maseno-felix",
+        "title": "Felix",
+        "gloss": "Felix",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-felix.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-atieno",
-        "title": "Atieno",
-        "gloss": "Atieno",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-atieno.mp4",
-        "archivePath": "Pose Data/Batch 2/135/Extract/Stickmans/ATIENO.mp4",
+        "id": "maseno-fiancee",
+        "title": "Fiancee",
+        "gloss": "Fiancee",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-fiancee.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-aunt",
-        "title": "Aunt",
-        "gloss": "Aunt",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-aunt.mp4",
-        "archivePath": "Pose Data/Batch 1/205/Extract/Stickmans/AUNT.mp4",
+        "id": "maseno-go",
+        "title": "Go",
+        "gloss": "Go",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-go.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-avoid",
-        "title": "Avoid",
-        "gloss": "Avoid",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-avoid.mp4",
-        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/AVOID.mp4",
+        "id": "maseno-good",
+        "title": "Good",
+        "gloss": "Good",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-good.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-baby",
-        "title": "Baby",
-        "gloss": "Baby",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-baby.mp4",
-        "archivePath": "Pose Data/Batch 1/235/Extract/Stickmans/BABY.mp4",
+        "id": "maseno-have",
+        "title": "Have",
+        "gloss": "Have",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-have.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-baby-005ea0",
-        "title": "Baby (Clip 2)",
-        "gloss": "Baby",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-baby-005ea0.mp4",
-        "archivePath": "Pose Data/Batch 2/119/Extract/Stickmans/BABY.mp4",
+        "id": "maseno-her",
+        "title": "Her",
+        "gloss": "Her",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-her.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-back",
-        "title": "Back",
-        "gloss": "Back",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-back.mp4",
-        "archivePath": "Pose Data/Batch 1/233/Extract/Stickmans/BACK.mp4",
+        "id": "maseno-lab",
+        "title": "Lab",
+        "gloss": "Lab",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-lab.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-back-4698a2",
-        "title": "Back (Clip 2)",
-        "gloss": "Back",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-back-4698a2.mp4",
-        "archivePath": "Pose Data/Batch 2/65/Extract/Stickmans/BACK.mp4",
+        "id": "maseno-leg",
+        "title": "Leg",
+        "gloss": "Leg",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-leg.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-bad",
-        "title": "Bad",
-        "gloss": "Bad",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-bad.mp4",
-        "archivePath": "Pose Data/Batch 2/140/Extract/Stickmans/BAD.mp4",
+        "id": "maseno-legumes",
+        "title": "Legumes",
+        "gloss": "Legumes",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-legumes.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-bag",
-        "title": "Bag",
-        "gloss": "Bag",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-bag.mp4",
-        "archivePath": "Pose Data/Batch 1/208/Extract/Stickmans/BAG.mp4",
+        "id": "maseno-like",
+        "title": "Like",
+        "gloss": "Like",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-like.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-bag-7f3b8e",
-        "title": "Bag (Clip 2)",
-        "gloss": "Bag",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-bag-7f3b8e.mp4",
-        "archivePath": "Pose Data/Batch 2/149/Extract/Stickmans/BAG.mp4",
+        "id": "maseno-love",
+        "title": "Love",
+        "gloss": "Love",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-love.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-basic",
-        "title": "Basic",
-        "gloss": "Basic",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-basic.mp4",
-        "archivePath": "Pose Data/Batch 2/132/Extract/Stickmans/BASIC.mp4",
+        "id": "maseno-make",
+        "title": "Make",
+        "gloss": "Make",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-make.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-beautiful",
-        "title": "Beautiful",
-        "gloss": "Beautiful",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-beautiful.mp4",
-        "archivePath": "Pose Data/Batch 1/205/Extract/Stickmans/BEAUTIFUL.mp4",
+        "id": "maseno-maurine",
+        "title": "Maurine",
+        "gloss": "Maurine",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-maurine.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-beautiful-bc78d0",
-        "title": "Beautiful (Clip 2)",
-        "gloss": "Beautiful",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-beautiful-bc78d0.mp4",
-        "archivePath": "Pose Data/Batch 1/251/Extract/Stickmans/BEAUTIFUL.mp4",
+        "id": "maseno-mine",
+        "title": "Mine",
+        "gloss": "Mine",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-mine.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-because",
-        "title": "Because",
-        "gloss": "Because",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-because.mp4",
-        "archivePath": "Pose Data/Batch 2/129/Extract/Stickmans/BECAUSE.mp4",
+        "id": "maseno-mother",
+        "title": "Mother",
+        "gloss": "Mother",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-mother.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-must",
+        "title": "Must",
+        "gloss": "Must",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-must.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-night",
+        "title": "Night",
+        "gloss": "Night",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-night.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-nothing",
+        "title": "Nothing",
+        "gloss": "Nothing",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-nothing.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-people",
+        "title": "People",
+        "gloss": "People",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-people.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-science",
+        "title": "Science",
+        "gloss": "Science",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-science.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-scout",
+        "title": "Scout",
+        "gloss": "Scout",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-scout.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-smart",
+        "title": "Smart",
+        "gloss": "Smart",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-smart.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-strong",
+        "title": "Strong",
+        "gloss": "Strong",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-strong.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-sweet",
+        "title": "Sweet",
+        "gloss": "Sweet",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-sweet.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-teacher",
+        "title": "Teacher",
+        "gloss": "Teacher",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-teacher.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-tie",
+        "title": "Tie",
+        "gloss": "Tie",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-tie.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-tree",
+        "title": "Tree",
+        "gloss": "Tree",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-tree.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-true",
+        "title": "True",
+        "gloss": "True",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-true.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-tshirt",
+        "title": "Tshirt",
+        "gloss": "Tshirt",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-tshirt.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-type",
+        "title": "Type",
+        "gloss": "Type",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-type.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-ugali",
+        "title": "Ugali",
+        "gloss": "Ugali",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ugali.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-wear",
+        "title": "Wear",
+        "gloss": "Wear",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-wear.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-white",
+        "title": "White",
+        "gloss": "White",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-white.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-wish",
+        "title": "Wish",
+        "gloss": "Wish",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-wish.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-you",
+        "title": "You",
+        "gloss": "You",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-you.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
@@ -11272,7 +10871,7 @@
       "M537x543S14250507x458S14258462x513S2e800506x488S2e810487x489S2fc04496x527",
       "M532x519S10050467x489S26806482x481"
     ],
-    "videoCount": 1765,
+    "videoCount": 628,
     "extractedSignCount": 0,
     "glossCount": 0
   },
