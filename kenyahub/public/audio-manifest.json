@@ -10,7 +10,7 @@
       "totalEntries": 31845,
       "addressableR2Keys": 31830,
       "r2Prefix": "audio/borana/",
-      "directAudioEntries": 1,
+      "directAudioEntries": 114,
       "openAccessDatasets": [
         {
           "id": "cv27-om",
@@ -48,8 +48,8 @@
     },
     "embu": {
       "languageName": "Embu (Kĩembu)",
-      "totalEntries": 891,
-      "addressableR2Keys": 891,
+      "totalEntries": 895,
+      "addressableR2Keys": 895,
       "r2Prefix": "audio/embu/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
@@ -64,10 +64,10 @@
     },
     "kalenjin": {
       "languageName": "Kalenjin",
-      "totalEntries": 8410,
-      "addressableR2Keys": 8408,
+      "totalEntries": 8414,
+      "addressableR2Keys": 8412,
       "r2Prefix": "audio/kalenjin/",
-      "directAudioEntries": 0,
+      "directAudioEntries": 4,
       "openAccessDatasets": [
         {
           "id": "anv-ke-kalenjin",
@@ -89,8 +89,8 @@
     },
     "kamba": {
       "languageName": "Kamba (Kĩkamba)",
-      "totalEntries": 12897,
-      "addressableR2Keys": 12887,
+      "totalEntries": 12915,
+      "addressableR2Keys": 12905,
       "r2Prefix": "audio/kamba/",
       "directAudioEntries": 250,
       "openAccessDatasets": [
@@ -114,8 +114,8 @@
     },
     "kikuyu": {
       "languageName": "Kikuyu (Gĩkũyũ)",
-      "totalEntries": 26126,
-      "addressableR2Keys": 26117,
+      "totalEntries": 26131,
+      "addressableR2Keys": 26122,
       "r2Prefix": "audio/kikuyu/",
       "directAudioEntries": 254,
       "openAccessDatasets": [
@@ -155,8 +155,8 @@
     },
     "kisii": {
       "languageName": "Kisii (Ekegusii)",
-      "totalEntries": 1586,
-      "addressableR2Keys": 1586,
+      "totalEntries": 1588,
+      "addressableR2Keys": 1588,
       "r2Prefix": "audio/kisii/",
       "directAudioEntries": 0,
       "openAccessDatasets": []
@@ -188,8 +188,8 @@
     },
     "luo": {
       "languageName": "Dholuo (Luo)",
-      "totalEntries": 17282,
-      "addressableR2Keys": 17274,
+      "totalEntries": 17313,
+      "addressableR2Keys": 17305,
       "r2Prefix": "audio/luo/",
       "directAudioEntries": 262,
       "openAccessDatasets": [
@@ -269,8 +269,8 @@
     },
     "maasai": {
       "languageName": "Maasai (Maa)",
-      "totalEntries": 5080,
-      "addressableR2Keys": 5076,
+      "totalEntries": 5101,
+      "addressableR2Keys": 5097,
       "r2Prefix": "audio/maasai/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -335,8 +335,8 @@
     },
     "samburu": {
       "languageName": "Samburu (Sampur)",
-      "totalEntries": 921,
-      "addressableR2Keys": 919,
+      "totalEntries": 937,
+      "addressableR2Keys": 935,
       "r2Prefix": "audio/samburu/",
       "directAudioEntries": 0,
       "openAccessDatasets": [
@@ -352,8 +352,8 @@
     },
     "somali": {
       "languageName": "Somali",
-      "totalEntries": 20895,
-      "addressableR2Keys": 20877,
+      "totalEntries": 20897,
+      "addressableR2Keys": 20879,
       "r2Prefix": "audio/somali/",
       "directAudioEntries": 318,
       "openAccessDatasets": [
@@ -388,7 +388,7 @@
       "totalEntries": 61075,
       "addressableR2Keys": 61053,
       "r2Prefix": "audio/swahili/",
-      "directAudioEntries": 798,
+      "directAudioEntries": 1098,
       "openAccessDatasets": [
         {
           "id": "cv27-sw",
@@ -482,8 +482,8 @@
     },
     "taita": {
       "languageName": "Taita (Kidawida)",
-      "totalEntries": 7644,
-      "addressableR2Keys": 7644,
+      "totalEntries": 7650,
+      "addressableR2Keys": 7650,
       "r2Prefix": "audio/taita/",
       "directAudioEntries": 0,
       "openAccessDatasets": [

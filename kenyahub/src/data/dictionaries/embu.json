@@ -2156,6 +2156,30 @@
           "english": "Well, source",
           "translation": "I-thīma",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 11. Kikuyu"
+        },
+        {
+          "english": "A. ballyi (aloe)",
+          "translation": "kithunju",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. chrysostachys (aloe)",
+          "translation": "kithunju",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. secundiflora (aloe)",
+          "translation": "githunju",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. secundiflora (aloe)",
+          "translation": "kithunju",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
         }
       ]
     },
@@ -5214,5 +5238,5 @@
   "source": "CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0 & Public Domain Historical Lexicons (Hobley 1910/1922, Dundas 1915, Johnston 1919 & CLDR ebu.xml)",
   "isoCode": "ebu",
   "glottocode": "embu1242",
-  "totalEntries": 891
+  "totalEntries": 895
 }

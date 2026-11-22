@@ -152,7 +152,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Gĩkũyũ (Kikuyu) vocabulary compiled from Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\", Vol. I, Chs. V–VI, pp. 220–221, 234–236, 286–309 [361], 362–375), Sir Harry H. Johnston (1902, 1919), Rev. Fr. A. Hémery, C.S.Sp. (1903 \"English-Kikuyu Hand-Book\", Zanzibar—Nairobi: Roman Catholic Mission, pp. 1–87 [PDF pp. 1–92]), Hildegarde Hinde (1904 \"Vocabularies of the Kamba and Kikuyu Languages of East Africa\"), Rev. A. W. McGregor (1904 \"English-Kikuyu Vocabulary: Compiled for the Use of the C.M.S. Missions in East Africa\", C.M.S. / SPCK London, printed by Richard Clay & Sons, Limited, London and Bungay, Fort Smith / Kabeti 1901–1902, Preface dated London, May 1903, pp. [i]–iv, 5–192 [PDF pp. 1–201, Stanford University Libraries Copy PL 8379.4 .M3 C.1, Dr. & Mrs. Robert A. Rennie bookplate] — audited 100% line-by-line across all 7,094 Markdown lines, Front Matter & Stanford provenance, Preface on Fort Smith/Kabeti, Uganda Railway miles 326–360, Mount Kenia = Kirinyaga/Kilinyatha/Kireira [4,000–18,000 ft] & 200,000–300,000 population, R.G.S. Note on Th for S/Z, L/R interchangeability, ng' vs. ng'g, 9 Abbreviations, Observe A–B across 10 noun classes, suppletive kinship, 7-day relative time sequence, agricultural seasons Kathano, Kehu, Njahi, Mweri, Mohea, customary law Chira, Magambo, Konyua muma, Oramati, and all 3 printing gaps, 9 printer's errata & 30 edge-reconstructed pages), W. Scoresby & Katherine Routledge (1910 \"With a Prehistoric People: The Akikúyu of British East Africa\", Edward Arnold London, pp. i–xxxii, 1–392, Plates I–CXXXVI), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), and BFBS (1921). Also integrates Tsammalex Kikuyu Ethnobiology Lexicon (CC-BY-4.0), Kaikki.org / Wiktextract Kikuyu Dictionary (1,497 word forms, CC-BY-SA-4.0), Google Research SMOL & GATITOS (en_kik: 130 SmolDoc documents, 863 SmolSent sentences & 3,994 GATITOS lexical items, CC-BY-4.0), The Thiomi Dataset (102,294 approved Kikuyu–English sentences, CC-BY-4.0), CGIAR/KikuyuEnglish_translation (Vineet Singh 2024, Apache-2.0), and FLORES+ / SIB-200 (kik_Latn, CC-BY-SA-4.0 / CC-BY-4.0).",
-    "totalEntries": 26126,
+    "totalEntries": 26131,
     "categories": [
       {
         "id": "greetings",
@@ -188,7 +188,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 841
+        "count": 846
       },
       {
         "id": "food",
@@ -272,7 +272,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Dholuo (Luo / Kavirondo) vocabulary compiled from Rev. Charles New (1873 \"Life, Wanderings, and Labours in Eastern Africa\"), Rev. Thomas Wakefield & Robert Needham Cust (1883 \"A Sketch of the Modern Languages of Africa\", Vol. I, Ch. XI.D \"Nile Sub-Group\", pp. 273–287: XXI. Kavirondo on Victoria Nyanza pp. 284–285, Wakefield's MS Kavirondo Vocabulary from a Swahíli caravan traveller, and comparative proof of marked affinity with I. Shilluk/Dyur [Luoh/Lwo, Bellanda & Dembo] pp. 275–276, XVIII. Lúr [Luoh] pp. 282–283 & XX. Shúli [Gani/Shefalu] pp. 283–284), C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 1–96 & 1903 \"Anthropological Studies in Kavirondo and Nandi\"), Sir Harry H. Johnston (1902), G. A. S. Northcote (1907), Rev. John Roscoe & Archdeacon J. J. Willis (1915 \"The Northern Bantu\", Ch. XXV & Kinship Table pp. 275–293), Some Fathers of St. Joseph's Society / Mill-Hill Fathers (1920–1921 \"A Handbook of the Kavirondo Language\"), and BFBS (1921). Also integrates Google Research SMOL & GATITOS (en_luo: 342 SmolDoc documents, 863 SmolSent sentences & 3,941 GATITOS lexical items, CC-BY-4.0), The Thiomi Dataset (101,367 approved Dholuo–English sentences, CC-BY-4.0), Kencorpus/KenPOS (54.7k UD POS-tagged Dholuo tokens) & KenTrans (4,222 Dholuo–Swahili pairs, CC-BY-4.0), ThinkKenya / Waleghwa (29,308 Dholuo–Swahili pairs, CC-BY-4.0), and FLORES+ / SIB-200 (luo_Latn, CC-BY-SA-4.0 / CC-BY-4.0).",
-    "totalEntries": 17282,
+    "totalEntries": 17313,
     "categories": [
       {
         "id": "greetings",
@@ -308,7 +308,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 254
+        "count": 285
       },
       {
         "id": "food",
@@ -392,11 +392,11 @@ export const ALL_DICT_METAS: DictMeta[] = [
       "Trans Nzoia",
       "West Pokot"
     ],
-    "hasAudio": false,
+    "hasAudio": true,
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Kalenjin (Nandi / Kipsigis [Lumbwa / Il Kakesan] / Keiyo / Tugen [Kamasia: Kapteberewa & Nderois] / Marakwet & Endo [Chebleng] / Cherang'any / Kabkamat [Olmo] / Sangwirr / Uasin Gishu [Moiven / Muttia / Il-Mokwan / I-Sirikwa] / Sabaot / Pökoot / Ogiek) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda: An Ethnological Survey\" pp. 1–96, 1903 \"Anthropological Studies in Kavirondo and Nandi\", 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–72 — audited 100% line-by-line across all 13 Maragwetta/Ndo sections, 14 Kapteberewa & 6 Nderois Kamasia clans & totems, 5 hill-tribe calendars, irrigation & land-sale laws, and Plate XVII), Mervyn W. H. Beech (1911), BFBS (1921), Franz Rottland (1982), Chet A. Creider & Jane Tapsubei Creider (1983, 1989), Taaitta Toweett (1979), Angelika Mietzner (2016), Prisca Jerono (2018), Dinah Jepkorir Sitienei Jepkoech (2018), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), Maria Kouneli (2021), and Joost Zwarts, Andrew Chelimo & Prisca Jerono (2023, 2024 \"The reflexive in Kalenjin: Its syntactic status and semantic functions\", in Yaqian Huang, Nina Hagen Kaldhol, Jun Jie Lim, Sharon Rose & Anthony Struthers-Young, eds., ACAL in SoCAL: Selected papers from the 53rd Annual Conference on African Linguistics, Berlin: Language Science Press, Ch. 21, pp. 539–556, DOI: 10.5281/zenodo.11210482 — 1,815 Endo-Marakwet NT occurrences of keey, Examples 1–24, Footnotes 1–12, 5 Abbreviations & 17 References). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0)).",
-    "totalEntries": 8410,
+    "totalEntries": 8414,
     "categories": [
       {
         "id": "greetings",
@@ -432,7 +432,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 568
+        "count": 572
       },
       {
         "id": "food",
@@ -635,7 +635,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Kamba (Kĩkamba) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), J. T. Last (1885), Hildegarde Hinde (1904), C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915), Sir Harry H. Johnston (1919 #12), Gerhard Lindblom (1920), BFBS (1921), and Patrick Jones & Jeremy Freyer (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Kikamba (CC-BY-4.0), Kikamba First Corpus (CC-BY-4.0), LughaGen Kikamba (CC-BY-SA-4.0), Mich-Seth Owusu Kamba Emotions & Kamba–Kikuyu Parallel Corpora (MIT/CC-BY-4.0), Language Science Press Kikamba Tone Corpus (2019, CC-BY-4.0), CLDF ASJP v20 & BantuBVD (CC-BY-4.0)).",
-    "totalEntries": 12897,
+    "totalEntries": 12915,
     "categories": [
       {
         "id": "greetings",
@@ -671,7 +671,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 432
+        "count": 450
       },
       {
         "id": "food",
@@ -872,7 +872,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Maasai (ɔl Maa) vocabulary compiled from Rev. Dr. J. L. Krapf (1854 \"Vocabulary of the Engútuk Eloikób, or the Language of the Khwáfi Tribe in East Africa\", Tübingen), Rev. J. Erhardt & Dr. L. Krapf (1857 \"Vocabulary of the Enguduk Iloigob\", Württemberg), Ven. J. P. Farler & Rev. T. Wakefield (1882), Robert Needham Cust (1883 \"A Sketch of the Modern Languages of Africa\", Vol. I, Ch. X.A.V–VI \"Kwáfi\" & \"Masai\", pp. 149–152: autonyms Loikób/Eloikób \"Men\", J. T. Last's 6,000-word Humba vocabulary at Mamboia, Arúsha & Ndorobo \"Helot Races\", Joseph Thomson's 1883 RGS expedition supplied by Cust, and Lepsius's 1880 6 structural features), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Hildegarde Hinde (1901 \"The Masai Language: Grammatical Notes Together with a Vocabulary\", Cambridge University Press, pp. i–xii, 1–75 [PDF pp. 1–98]), Sir Harry H. Johnston (1902), A. C. Hollis (1905 \"The Masai: Their Language and Folklore\", Oxford: Clarendon Press, pp. i–xxviii, 1–359), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–57), C. W. Hobley (1910, 1922), W. Scoresby & Katherine Routledge (1910, Appendix II pp. 344–349 & Plate CXXXVI), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Maa (CC-BY-4.0), African Next Voices Kenya Kimasaai (CC-BY-4.0), CLDF ASJP v20 MAASAI & Tsammalex (CC-BY-4.0), SIL Bloom Maa CC-BY-4.0).",
-    "totalEntries": 5080,
+    "totalEntries": 5101,
     "categories": [
       {
         "id": "greetings",
@@ -908,7 +908,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 368
+        "count": 389
       },
       {
         "id": "food",
@@ -990,7 +990,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Kisii (Ekegusii) vocabulary compiled from C. W. Hobley (1902 \"Eastern Uganda\") and Sir Harry H. Johnston (1902 \"The Uganda Protectorate, Vol. II\", 1919–1922 \"A Comparative Study of the Bantu and Semi-Bantu Languages\" #7 Ki-guzii & #7a Ki-koria). Expanded and cross-verified with Commercially Permissive Datasets (DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0)).",
-    "totalEntries": 1586,
+    "totalEntries": 1588,
     "categories": [
       {
         "id": "greetings",
@@ -1026,7 +1026,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 131
+        "count": 133
       },
       {
         "id": "food",
@@ -1110,7 +1110,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Somali (Af-Soomaali) vocabulary compiled from Robert Needham Cust (1883 \"A Sketch of the Modern Languages of Africa\", Vol. I, Ch. IX.C.I \"Somáli\", pp. 119, 121: Reinisch's First Hamitic Cluster [Bishári, Saho, Dankálí, Somáli, Galla], Regio Aromatifera from Bab el Mandal & Cape Guardafui to the Bantu frontier, Rigby 1850/1866, Burton 1856, Hunter 1880, Van der Decken, Prætorius, Revoil & Krapf), Rev. Fr. Evangelist de Larajasse (1897 \"Somali-English and English-Somali Dictionary\", Kegan Paul, Trench, Trübner & Co., London — audited 100% line-by-line across Front Matter, Preface pp. v–xiii, 44 Abbreviations, 20-row Kenya Reference Table [Swahili sawaheli/sawahili, Ogaden & Darod dialect wa debai, Galla daba galla, East African antelopes si‘g, garanug/lig, adéryo/adéryo ‘ari/godir, b‘e‘id/bi‘‘id, sagaro/sakaro, and rubiad/rubod/rubi currency], and Full Two-Column Page Transcriptions of Book pp. 26, 123, 127, 242, 266 & 293), Sir Harry H. Johnston (1902), Lt. J. W. C. Kirk (1903 \"Notes on the Somali Language\", 1905 \"A Grammar of the Somali Language with Examples in Prose and Verse and an Account of the Yibir and Midgan Dialects\" — audited 100% line-by-line across §§ 1–289, Appendices I–III, Prose Stories I–XI, Songs I–XIV, and Yibir/Midgan Vocabularies), BFBS (1921), Morgan Nilsson (2016), Wendell Kimper et al. (2019), and Anna M. DiGarbo & Rose Stamp (2019). Expanded and cross-verified with Commercially Permissive Datasets (The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0)).",
-    "totalEntries": 20895,
+    "totalEntries": 20897,
     "categories": [
       {
         "id": "greetings",
@@ -1146,7 +1146,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 216
+        "count": 218
       },
       {
         "id": "food",
@@ -1580,7 +1580,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Embu & Mbeere (Kĩembu / Kĩmbeere) vocabulary compiled from C. W. Hobley (1910, 1922), Hon. Charles Dundas (1915 \"The Organization and Laws of Some Bantu Tribes in East Africa\"), Sir Harry H. Johnston (1919 #11), and Unicode CLDR (ebu.xml). Expanded and cross-verified with Commercially Permissive Datasets (CLDF ASJP v20 EMBU & BantuBVD (CC-BY-4.0), Unicode CLDR ebu (MIT/Unicode), SIL Bloom Kiembu CC-BY-4.0).",
-    "totalEntries": 891,
+    "totalEntries": 895,
     "categories": [
       {
         "id": "greetings",
@@ -1616,7 +1616,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 110
+        "count": 114
       },
       {
         "id": "food",
@@ -1697,7 +1697,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Taita (Kidawida / Kisagala / Kikasigau) vocabulary compiled from Rev. Dr. J. L. Krapf (1850), Rev. A. Downes Shaw (1885), Rev. W. E. Taylor (1891), Rev. J. Alfred Wray (1894 \"An Elementary Introduction to the Taita Language, Eastern Equatorial Africa: Sagalla Dialect\", SPCK London), Prof. Alice Werner (1915), Sir Harry H. Johnston (1919 #14), and BFBS (1921). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0)).",
-    "totalEntries": 7644,
+    "totalEntries": 7650,
     "categories": [
       {
         "id": "greetings",
@@ -1733,7 +1733,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 381
+        "count": 387
       },
       {
         "id": "food",
@@ -2289,7 +2289,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
     "dictionaryVersion": "4.0",
     "lastUpdated": "2026-11-22",
     "contributorNote": "Samburu (Sampur / Northern Maa) vocabulary compiled from Ven. J. P. Farler & Rev. T. Wakefield (1882), Lieut. Ludwig von Höhnel (1894 \"Discovery of Lakes Rudolf and Stefanie\"), Sir Harry H. Johnston (1902), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–55), C. W. Hobley (1910), and Rainer Vossen (1982). Expanded and cross-verified with Commercially Permissive Datasets (African Next Voices Kenya Kisamburu Dialect Corpus (MCAA1-MSU/anv_data_ke, CC-BY-4.0), CLDF ASJP v20 Maa-Samburu (CC-BY-4.0), SIL Bloom Samburu CC-BY-4.0).",
-    "totalEntries": 921,
+    "totalEntries": 937,
     "categories": [
       {
         "id": "greetings",
@@ -2325,7 +2325,7 @@ export const ALL_DICT_METAS: DictMeta[] = [
         "id": "nature",
         "name": "Nature, Environment & Geography",
         "icon": "Leaf",
-        "count": 135
+        "count": 151
       },
       {
         "id": "food",
@@ -2833,4 +2833,4 @@ export const ALL_CATEGORY_IDS: { id: string; name: string; icon: string }[] = [
   }
 ];
 
-export const TOTAL_DICTIONARY_ENTRIES: number = 239102;
+export const TOTAL_DICTIONARY_ENTRIES: number = 239211;

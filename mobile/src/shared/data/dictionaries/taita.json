@@ -8114,6 +8114,42 @@
           "translation": "I·jūa or I·ruwa",
           "pronunciation": "",
           "context": "Johnston (1919) Bantu Comparative Vol. I (14. Taita (Ki-dabida - Ki-sagala)) · Johnston (1919), Vol. I, p. 105 · Noun · https://archive.org/details/comparativestudy01johnuoft"
+        },
+        {
+          "english": "A. ballyi (aloe)",
+          "translation": "kipapa",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. classenii (aloe)",
+          "translation": "kipapa",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. lateritia (aloe)",
+          "translation": "kipapa",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. ngongensis (cont.) (aloe)",
+          "translation": "kipapa",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. penduliflora (aloe)",
+          "translation": "kipapa",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. secundiflora (aloe)",
+          "translation": "kipapa",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
         }
       ]
     },
@@ -42639,5 +42675,5 @@
   "source": "ThinkKenya/Waleghwa Kidaw'ida Parallel Corpus (26,662 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kidaw'ida (CC0-1.0), CLDF ASJP v20 TAITA & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Krapf 1850, Shaw 1885, Taylor 1891, Wray 1894, Werner 1915, Johnston 1919 & BFBS 1921); BFBS (1921) The Gospel in Many Tongues (Public Domain)",
   "isoCode": "dav",
   "glottocode": "tait1250",
-  "totalEntries": 7644
+  "totalEntries": 7650
 }

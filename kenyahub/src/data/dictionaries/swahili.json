@@ -26,7 +26,8 @@
           "english": "Hello",
           "translation": "Hujambo / Jambo (pl. Hamjambo)",
           "pronunciation": "hoo-jahm-boh",
-          "context": "Steere 1894 & Burt 1910 coastal salutation (Reply: Sijambo) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Steere 1894 & Burt 1910 coastal salutation (Reply: Sijambo) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Peace",
@@ -159,7 +160,8 @@
           "english": "Welcome",
           "translation": "Karibu (pl. Karibuni)",
           "pronunciation": "kah-ree-boo",
-          "context": "Steere 1894 & Madan 1903 hospitality greeting • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Steere 1894 & Madan 1903 hospitality greeting • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Forgive",
@@ -195,7 +197,8 @@
           "english": "Salutation",
           "translation": "Jambo",
           "pronunciation": "jambo",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Salute of cannon",
@@ -255,7 +258,8 @@
           "english": "A greeting",
           "translation": "Jambo !",
           "pronunciation": "jambo",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Bid Farewell",
@@ -418,7 +422,8 @@
           "english": "Boss / Respected friend (Sheng)",
           "translation": "Bazenga / Mkuu",
           "pronunciation": "bah-zehn-gah",
-          "context": "LughaGen Sheng Code-Switching Corpus (JHUB Africa / JKUAT, CC-BY-SA-4.0)"
+          "context": "LughaGen Sheng Code-Switching Corpus (JHUB Africa / JKUAT, CC-BY-SA-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mkuu.opus"
         },
         {
           "english": "Work / Side hustle / Job (Sheng)",
@@ -735,7 +740,8 @@
           "english": "Good morning",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Good morning",
@@ -1077,7 +1083,8 @@
           "english": "Salutation / Reply",
           "translation": "Jambo",
           "pronunciation": "ʄaᵐɓo",
-          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 74–75 · Greeting · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt"
+          "context": "Hinde (1904) Kamba & Kikuyu Vocabularies (Swahili) · Hinde (1904), pp. 74–75 · Greeting · https://archive.org/stream/cu31924026919815/cu31924026919815_djvu.txt",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         }
       ]
     },
@@ -2378,7 +2385,8 @@
           "english": "All",
           "translation": "óthe; pía; kúlla",
           "pronunciation": "óthe",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Few",
@@ -4511,7 +4519,8 @@
           "english": "this or that before mentioned, referring to singular nouns which make their plural in ma",
           "translation": "Hilo",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "hilo"
+          "pronunciation": "hilo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/hilo.opus"
         },
         {
           "english": "to hasten",
@@ -4545,7 +4554,8 @@
           "english": "this mentioned before, referring to singular nouns which do not change to form the plural",
           "translation": "Hiyo",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "hijo"
+          "pronunciation": "hijo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/hiyo.opus"
         },
         {
           "english": "a cry made by way of inquiry whether any one is within",
@@ -4568,7 +4578,8 @@
           "english": "this or that before mentioned, referring to singular nouns in u- or w-, or which make their plural in mi",
           "translation": "Huo",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "huo"
+          "pronunciation": "huo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/huo.opus"
         },
         {
           "english": "to divide into shares, to put each one's share separate",
@@ -6404,7 +6415,8 @@
           "english": "oneness",
           "translation": "Umoja",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "umoʄa"
+          "pronunciation": "umoʄa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/umoja.opus"
         },
         {
           "english": "to take honey from the hive",
@@ -10431,7 +10443,8 @@
           "english": "Chief, great man",
           "translation": "Mkuu",
           "pronunciation": "mkuu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 1] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 1] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mkuu.opus"
         },
         {
           "english": "Chief, great man",
@@ -11263,7 +11276,8 @@
           "english": "Europe, mother-country",
           "translation": "Ulaya",
           "pronunciation": "u-la-ya",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. prop.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. prop.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/ulaya.opus"
         },
         {
           "english": "For mke wake, his wife",
@@ -14750,7 +14764,8 @@
           "english": "time, season",
           "translation": "Wakati",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "wakati"
+          "pronunciation": "wakati",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "a clever dhow-builder, a clever man at any business",
@@ -15235,7 +15250,8 @@
           "english": "near relation, kinsman",
           "translation": "Karibu",
           "context": "A. C. Madan, Swahili-English Dictionary (1903)",
-          "pronunciation": "kaɾiɓu"
+          "pronunciation": "kaɾiɓu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "undersized creature (man, beast, bird), a dwarf, a bantam, &c",
@@ -15506,7 +15522,8 @@
           "english": "Chief",
           "translation": "mkuu",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "mkuu"
+          "pronunciation": "mkuu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mkuu.opus"
         },
         {
           "english": "Chief",
@@ -18737,7 +18754,8 @@
           "english": "Near, close, at hand",
           "translation": "Karibu",
           "pronunciation": "ka-ri-bu",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Bent or crooked legs",
@@ -21606,7 +21624,8 @@
           "english": "near, a near relative",
           "translation": "Karibu",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "kaɾiɓu"
+          "pronunciation": "kaɾiɓu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "or ya, near to, near",
@@ -22213,7 +22232,8 @@
           "english": "the shore, on the beach, near the shore",
           "translation": "Pwani",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "pwani"
+          "pronunciation": "pwani",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pwani.opus"
         },
         {
           "english": "to be quite clear of husks, dirt, and dust",
@@ -22330,7 +22350,8 @@
           "english": "the electric telegraph",
           "translation": "Simu",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "simu"
+          "pronunciation": "simu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/simu.opus"
         },
         {
           "english": "hair of an animal",
@@ -22877,7 +22898,8 @@
           "english": "fearing, having fear (awe, reverence), esp",
           "translation": "cha",
           "context": "A. C. Madan, Swahili-English Dictionary (1903)",
-          "pronunciation": "tʃa"
+          "pronunciation": "tʃa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "part of bedstead on which the head rests",
@@ -23827,7 +23849,8 @@
           "english": "Fear",
           "translation": "cha",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "tʃa"
+          "pronunciation": "tʃa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "Fearful",
@@ -23930,7 +23953,8 @@
           "english": "Nearly",
           "translation": "karibu",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kaɾiɓu"
+          "pronunciation": "kaɾiɓu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Nearly",
@@ -24021,7 +24045,8 @@
           "english": "Year",
           "translation": "mwaka",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "mwaka"
+          "pronunciation": "mwaka",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mwaka.opus"
         },
         {
           "english": "to save, deliver, preserve, rescue",
@@ -24152,7 +24177,8 @@
           "english": "near, close, at hand ; (adv. time), soon",
           "translation": "Karibu",
           "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (1910)",
-          "pronunciation": "kaɾiɓu"
+          "pronunciation": "kaɾiɓu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "to gnash or grind the teeth",
@@ -25130,7 +25156,8 @@
         {
           "english": "Near",
           "translation": "Karībū",
-          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)"
+          "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 21. Swahili (*with* **h.** = Ki-hadimu, **g.** = Ki-ṅgωzi)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Handful (amount that can be grasped in the hand)",
@@ -33491,7 +33518,8 @@
           "english": "Weather",
           "translation": "wakati",
           "pronunciation": "wa-ka-ti",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "Darkness",
@@ -34223,7 +34251,8 @@
           "english": "Shore, beach, coast",
           "translation": "Pwani",
           "pronunciation": "pwa-ni",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pwani.opus"
         },
         {
           "english": "Crow (white necked)",
@@ -37076,7 +37105,8 @@
           "english": "The mount Njáro, a snowy mountain in the Kijagga country",
           "translation": "kilimanjaro",
           "pronunciation": "ki-li-manja-ro",
-          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Rev. Dr. L. Krapf (1882) A Dictionary of the Suahili Language • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kilimanjaro.opus"
         },
         {
           "english": "The large shoots of a tree, &c., which has been cut. The",
@@ -37424,7 +37454,8 @@
           "english": "Top, spinning-top ; (conj.), also, too, as well as",
           "translation": "Pia",
           "pronunciation": "pia",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "To throw into the air, throw over, desert, cast off ; (Ku)rusha maji, to splash",
@@ -43361,7 +43392,8 @@
           "english": "Milk",
           "translation": "káma",
           "pronunciation": "kama",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Rice",
@@ -50731,7 +50763,8 @@
           "english": "Milk",
           "translation": "kama",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Millet",
@@ -52652,7 +52685,8 @@
           "english": "Your home",
           "translation": "kwako, kwenu, etc., (of Europeans) Ulaya",
           "pronunciation": "kwa-ko kwe-nu et",
-          "context": "Madan (1917) English-Swahili Vocabulary (under Home) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (under Home) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/ulaya.opus"
         },
         {
           "english": "Stick out",
@@ -53411,7 +53445,8 @@
           "english": "Kettle-drum, small drum",
           "translation": "Kigoma",
           "pronunciation": "ki-go-ma",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 4] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 4] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kigoma.opus"
         },
         {
           "english": "String, linen (n. flax)",
@@ -54012,7 +54047,8 @@
           "english": "Electric wire, telephone, telegraph, cable",
           "translation": "Simu",
           "pronunciation": "si-mu",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/simu.opus"
         },
         {
           "english": "Traditional drum, dance, or spirit ceremony",
@@ -54709,7 +54745,8 @@
           "english": "Squeeze",
           "translation": "kama",
           "pronunciation": "kama",
-          "context": "Standard Swahili Reversive Corpus (Ngonyani & Ngowa 2016, Diversity in African Languages Ch. 14, CC-BY-4.0, https://langsci-press.org/catalog/book/121)"
+          "context": "Standard Swahili Reversive Corpus (Ngonyani & Ngowa 2016, Diversity in African Languages Ch. 14, CC-BY-4.0, https://langsci-press.org/catalog/book/121)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Squeeze out",
@@ -56347,7 +56384,8 @@
           "english": "Disposition",
           "translation": "háli; jámbo; tabía",
           "pronunciation": "háli",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Dissolve",
@@ -57706,7 +57744,8 @@
           "english": "Into",
           "translation": "ndáni ya-; káti",
           "pronunciation": "ndáni ya-",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli prep.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli prep.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "Intoxicated",
@@ -58302,7 +58341,8 @@
           "english": "Middle",
           "translation": "káti",
           "pronunciation": "káti",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "Midwife",
@@ -58639,7 +58679,8 @@
           "english": "Object",
           "translation": "kitu; jámbo; sebabu",
           "pronunciation": "kitu",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Oblige",
@@ -59535,7 +59576,8 @@
           "english": "Relinquish",
           "translation": "áta; sása",
           "pronunciation": "áta",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli v. a.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Remain",
@@ -60548,7 +60590,8 @@
           "english": "State",
           "translation": "jámbo; ufalme; déraja kú",
           "pronunciation": "jámbo",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Step",
@@ -61168,7 +61211,8 @@
           "english": "Total",
           "translation": "wothe; pia; kulla",
           "pronunciation": "wothe",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Totally",
@@ -62089,7 +62133,8 @@
           "english": "Of",
           "translation": "Cha",
           "pronunciation": "cha",
-          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)"
+          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "Intestines, bowels",
@@ -62347,7 +62392,8 @@
           "english": "Instrument of witchcraft",
           "translation": "Mwanza",
           "pronunciation": "mwanza",
-          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)"
+          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mwanza.opus"
         },
         {
           "english": "Baptizer",
@@ -62570,7 +62616,8 @@
           "english": "Of",
           "translation": "Vya",
           "pronunciation": "vya",
-          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)"
+          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/vya.opus"
         },
         {
           "english": "Those",
@@ -63775,7 +63822,8 @@
           "english": "inside, middle, the court within a house",
           "translation": "Kati",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "kati"
+          "pronunciation": "kati",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "mildew, spots of mould",
@@ -64505,7 +64553,8 @@
           "english": "or Wilaya, home",
           "translation": "Ulaya",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "Ulaja"
+          "pronunciation": "Ulaja",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/ulaya.opus"
         },
         {
           "english": "European, inferior calico",
@@ -65010,7 +65059,8 @@
           "english": "matter, affair, circumstance, business, thing (never of a concrete kind, which is kitu)",
           "translation": "Jambo",
           "context": "A. C. Madan, Swahili-English Dictionary (1903)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "drag-net, seine,—of European make",
@@ -65378,7 +65428,8 @@
           "english": "Europe",
           "translation": "Ulaya",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "Ulaja"
+          "pronunciation": "Ulaja",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/ulaya.opus"
         },
         {
           "english": "Europe",
@@ -65456,7 +65507,8 @@
           "english": "Your home",
           "translation": "Ulaya",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "Ulaja"
+          "pronunciation": "Ulaja",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/ulaya.opus"
         },
         {
           "english": "Information",
@@ -65504,7 +65556,8 @@
           "english": "Matter",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Matter",
@@ -66638,7 +66691,8 @@
           "english": "Rise",
           "translation": "(ascend) paa, panda, (of the sun) cha, panda, (get up) ondoka, (stand up) simama",
           "pronunciation": "paa",
-          "context": "Madan (1917) English-Swahili Vocabulary (v.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (v.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "Send",
@@ -69833,7 +69887,8 @@
           "english": "To split (as wood)",
           "translation": "(Ku)tanga",
           "pronunciation": "ku tang-a",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/tanga.opus"
         },
         {
           "english": "To reap, gather in",
@@ -69947,7 +70002,8 @@
           "english": "To dawn",
           "translation": "(Ku)cha",
           "pronunciation": "ku cha",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "To build, construct",
@@ -71003,7 +71059,8 @@
           "english": "To fear, to be afraid of",
           "translation": "(Ku)cha",
           "pronunciation": "ku cha",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "To arrive, attain, reach",
@@ -74124,7 +74181,8 @@
           "english": "Agreeing with D 3 (prep. form of -a ())",
           "translation": "Cha",
           "pronunciation": "cha",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "To make, do, perform, act towards (unfavourably)",
@@ -75823,7 +75881,8 @@
           "english": "To milk",
           "translation": "(Ku)kama",
           "pronunciation": "ku ka-ma",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "To feed",
@@ -82636,7 +82695,8 @@
           "english": "As, conj. \"like as\"",
           "translation": "kama",
           "pronunciation": "kama",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Begin",
@@ -96711,7 +96771,8 @@
           "english": "Fresh",
           "translation": "kípia; kibíti; sása",
           "pronunciation": "kípia",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Good",
@@ -96802,7 +96863,8 @@
           "english": "Whole",
           "translation": "pía; óthe",
           "pronunciation": "pía",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Crooked, bent, curved",
@@ -97165,7 +97227,8 @@
           "english": "Sail",
           "translation": "Tanga",
           "pronunciation": "tang-a",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/tanga.opus"
         },
         {
           "english": "Dhow",
@@ -97189,7 +97252,8 @@
           "english": "Sail",
           "translation": "tanga, plur. ma-, (of a dhow) duumi",
           "pronunciation": "tanga",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/tanga.opus"
         },
         {
           "english": "Ship",
@@ -97273,7 +97337,8 @@
           "english": "Near",
           "translation": "karibu",
           "pronunciation": "ka-ri-bu",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Camp",
@@ -97303,7 +97368,8 @@
           "english": "Near",
           "translation": "káribu",
           "pronunciation": "karibu",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Tent",
@@ -97472,7 +97538,8 @@
           "english": "Coast",
           "translation": "pwani",
           "pronunciation": "pwa-ni",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pwani.opus"
         },
         {
           "english": "Guide",
@@ -97484,7 +97551,8 @@
           "english": "Shore",
           "translation": "pwani",
           "pronunciation": "pwa-ni",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pwani.opus"
         },
         {
           "english": "Track",
@@ -98278,7 +98346,8 @@
           "english": "Near to, close by",
           "translation": "Karibu",
           "pronunciation": "ka-ri-bu",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Journey / Caravan",
@@ -98494,7 +98563,8 @@
           "english": "Near relative, kinsman",
           "translation": "Karibu",
           "pronunciation": "ka-ri-bu",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Mariner's Compass: N.E",
@@ -98788,7 +98858,8 @@
           "english": "Kinsman (n. near relation)",
           "translation": "Karibu",
           "pronunciation": "ka-ri-bu",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Mariner's Compass: N. by E",
@@ -99065,7 +99136,8 @@
           "english": "Germany (Country / Territory)",
           "translation": "Ujerumani",
           "pronunciation": "u-je-ru-ma-ni",
-          "context": "Kiswahili — GitHub unicode-org/cldr (sw_KE.xml), Common Voice CC0 & PanLex CC0"
+          "context": "Kiswahili — GitHub unicode-org/cldr (sw_KE.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/ujerumani.opus"
         },
         {
           "english": "Belgium (Country / Territory)",
@@ -99383,7 +99455,8 @@
           "english": "United States (Country / Territory)",
           "translation": "Marekani",
           "pronunciation": "ma-re-ka-ni",
-          "context": "Kiswahili — GitHub unicode-org/cldr (sw_KE.xml), Common Voice CC0 & PanLex CC0"
+          "context": "Kiswahili — GitHub unicode-org/cldr (sw_KE.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/marekani.opus"
         },
         {
           "english": "I had almost left off expecting you",
@@ -100049,7 +100122,8 @@
           "english": "Sail ; Tanga mbili ; period of variable winds between SW. and NE. Monsoon after Demani",
           "translation": "Tanga",
           "pronunciation": "tanga",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 5] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 5] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/tanga.opus"
         },
         {
           "english": "Be allowable, be suitable, be fitting for, be right for, be duty of (v. be permissible)",
@@ -100966,7 +101040,8 @@
         {
           "english": "ngoma",
           "translation": "Music",
-          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)"
+          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/music.opus"
         },
         {
           "english": "kijogoo",
@@ -108050,7 +108125,8 @@
           "english": "Electric wire, telephone, telegraph, cable ; Kupiga simu, to telephone, etc",
           "translation": "Simu",
           "pronunciation": "si-mu",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/simu.opus"
         },
         {
           "english": "Score of poles (20) / Stone heap (4–5 cwt) / Lime clamp / 35-yard calico piece",
@@ -110570,7 +110646,8 @@
           "english": "Fearing, having fear",
           "translation": "cha",
           "pronunciation": "cha",
-          "context": "A. C. Madan (1903) Swahili-English Dictionary [a.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan (1903) Swahili-English Dictionary [a.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "Be lame, walk lamely",
@@ -110666,7 +110743,8 @@
           "english": "Having fear (a. fearing)",
           "translation": "cha",
           "pronunciation": "cha",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "He (or she) is ill, sick",
@@ -113606,7 +113684,8 @@
           "english": "afterwards",
           "translation": "Baada",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "ɓaaɗa"
+          "pronunciation": "ɓaaɗa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/baada.opus"
         },
         {
           "english": "or baada yake, after it, then, afterwards",
@@ -115443,13 +115522,15 @@
           "english": "Now",
           "translation": "sása",
           "pronunciation": "sasa",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Now",
           "translation": "sasa",
           "pronunciation": "sa-sa",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Day",
@@ -115509,7 +115590,8 @@
           "english": "Time",
           "translation": "wakati, majira",
           "pronunciation": "wa-ka-ti ma-ji-ra",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "Week",
@@ -115551,7 +115633,8 @@
           "english": "Time",
           "translation": "wakáti",
           "pronunciation": "wakati",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "Week",
@@ -115599,7 +115682,8 @@
           "english": "Year",
           "translation": "mwaka (pl. miaka)",
           "pronunciation": "mwaka",
-          "context": "Wiktionary Appendix:Swahili Swadesh list • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Wiktionary Appendix:Swahili Swadesh list • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mwaka.opus"
         },
         {
           "english": "Then",
@@ -115737,7 +115821,8 @@
           "english": "Season",
           "translation": "wakati",
           "pronunciation": "wa-ka-ti",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "Sunset",
@@ -116033,7 +116118,8 @@
           "english": "Time, occasion",
           "translation": "Mara",
           "pronunciation": "ma-ra",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mara.opus"
         },
         {
           "english": "Day (24 hours)",
@@ -116261,7 +116347,8 @@
           "english": "Year (calendar unit)",
           "translation": "mwaka",
           "pronunciation": "mwa-ka",
-          "context": "Kiswahili — GitHub unicode-org/cldr (sw_KE.xml), Common Voice CC0 & PanLex CC0"
+          "context": "Kiswahili — GitHub unicode-org/cldr (sw_KE.xml), Common Voice CC0 & PanLex CC0",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mwaka.opus"
         },
         {
           "english": "Week (calendar unit)",
@@ -116441,7 +116528,8 @@
           "english": "Now, at this time, at present",
           "translation": "Sasa",
           "pronunciation": "sa-sa",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Never mind, it does not matter",
@@ -116489,7 +116577,8 @@
           "english": "Time, occasion ; (adv.) immediately",
           "translation": "Mara",
           "pronunciation": "ma-ra",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mara.opus"
         },
         {
           "english": "Before Christ (BC / Historical Era)",
@@ -116675,7 +116764,8 @@
           "english": "This time",
           "translation": "wakáti hu; sasa",
           "pronunciation": "wakati hu",
-          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Last year",
@@ -118136,13 +118226,15 @@
           "english": "If",
           "translation": "kama / ikiwa",
           "pronunciation": "kama",
-          "context": "Wiktionary Appendix:Swahili Swadesh list • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Wiktionary Appendix:Swahili Swadesh list • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "As",
           "translation": "kama; with a verb, -vyo, -vyo-. See While, Because, etc",
           "pronunciation": "ka-ma",
-          "context": "Madan (1917) English-Swahili Vocabulary (conj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (conj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "At",
@@ -118890,13 +118982,15 @@
           "english": "Dem",
           "translation": "hiyo",
           "pronunciation": "hi-yo",
-          "context": "A. C. Madan (1903) Swahili-English Dictionary [a.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan (1903) Swahili-English Dictionary [a.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/hiyo.opus"
         },
         {
           "english": "Dem",
           "translation": "huo",
           "pronunciation": "huo",
-          "context": "A. C. Madan (1903) Swahili-English Dictionary [a.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan (1903) Swahili-English Dictionary [a.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/huo.opus"
         },
         {
           "english": "Dem",
@@ -120859,7 +120953,8 @@
           "english": "Case",
           "translation": "(condition) hali, (affair) jambo, (box) kasha",
           "pronunciation": "hali",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Cask",
@@ -121198,7 +121293,8 @@
           "english": "Like",
           "translation": "kama, sawasawa na",
           "pronunciation": "ka-ma sa-wa-sa-wa na",
-          "context": "Madan (1917) English-Swahili Vocabulary (conj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (conj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Loaf",
@@ -123542,7 +123638,8 @@
           "english": "Close",
           "translation": "adj., karibu",
           "pronunciation": "ad ka-ri-bu",
-          "context": "Madan (1917) English-Swahili Vocabulary • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Clove",
@@ -124340,7 +124437,8 @@
           "english": "Unity",
           "translation": "umoja",
           "pronunciation": "u-mo-ja",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/umoja.opus"
         },
         {
           "english": "Until",
@@ -124401,7 +124499,8 @@
           "english": "Whole",
           "translation": "zima, pia, -ote",
           "pronunciation": "zi-ma pia o-te",
-          "context": "Madan (1917) English-Swahili Vocabulary (a.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (a.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Width",
@@ -125894,7 +125993,8 @@
           "english": "Quite",
           "translation": "kabisa, pia",
           "pronunciation": "ka-bi-sa pia",
-          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Truly",
@@ -126014,7 +126114,8 @@
           "english": "Nearly",
           "translation": "karibu, bado kidogo",
           "pronunciation": "ka-ri-bu ba-do ki-do-go",
-          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Relate",
@@ -126219,7 +126320,8 @@
           "english": "Middle",
           "translation": "kati",
           "pronunciation": "ka-ti",
-          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Hildegarde Hinde (1904) — Zanzibar/Coast Swahili • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "Mimosa",
@@ -126382,7 +126484,8 @@
           "english": "Affair",
           "translation": "jambo, plur. mambo, shughuli",
           "pronunciation": "jambo",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Almond",
@@ -126744,7 +126847,8 @@
           "english": "Entire",
           "translation": "zima, pia, -ote",
           "pronunciation": "zi-ma pia o-te",
-          "context": "Madan (1917) English-Swahili Vocabulary (a.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (a.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Eunuch",
@@ -126756,7 +126860,8 @@
           "english": "Europe",
           "translation": "Ulaya, Europa",
           "pronunciation": "u-la-ya eu-ro-pa",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/ulaya.opus"
         },
         {
           "english": "Except",
@@ -127008,7 +127113,8 @@
           "english": "Matter",
           "translation": "jambo, plur. mambo, (discharge) uzaha",
           "pronunciation": "jambo",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Mature",
@@ -127104,7 +127210,8 @@
           "english": "Period",
           "translation": "muda, wakati",
           "pronunciation": "mu-da wa-ka-ti",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "Pickle",
@@ -127622,7 +127729,8 @@
           "english": "Vizier",
           "translation": "waziri, plur. ma",
           "pronunciation": "waziri",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/waziri.opus"
         },
         {
           "english": "Vulgar",
@@ -129443,7 +129551,8 @@
           "english": "Almost",
           "translation": "karibu",
           "pronunciation": "ka-ri-bu",
-          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Around",
@@ -130808,7 +130917,8 @@
           "english": "Subject",
           "translation": "jambo, neno, (of a king) rayia",
           "pronunciation": "jamb-o ne-no",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Sulphur",
@@ -130925,7 +131035,7 @@
           "translation": "kama, kwamba",
           "pronunciation": "ka-ma kwamb-a",
           "context": "Madan (1917) English-Swahili Vocabulary (conj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
-          "audioFile": "https://audio.kenyahub.me/audio/swahili/kwamba.opus"
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Whoever",
@@ -132053,7 +132163,8 @@
           "english": "Necklet",
           "translation": "Kama",
           "pronunciation": "ka-ma",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Auction",
@@ -133140,7 +133251,8 @@
           "english": "Utterly",
           "translation": "kabisa, pia, yote",
           "pronunciation": "ka-bi-sa pia yo-te",
-          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Which ?",
@@ -133587,7 +133699,8 @@
           "english": "Come in!",
           "translation": "karibu!",
           "pronunciation": "ka-ri-bu",
-          "context": "Madan (1917) English-Swahili Vocabulary (under Come) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (under Come) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Commerce",
@@ -139290,7 +139403,8 @@
           "english": "Altogether",
           "translation": "kabisa, pia",
           "pronunciation": "ka-bi-sa pia",
-          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Frequently",
@@ -139315,7 +139429,8 @@
           "english": "Throughout",
           "translation": "pia, kabisa",
           "pronunciation": "pia ka-bi-sa",
-          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (adv.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Ultimately",
@@ -140335,7 +140450,8 @@
           "english": "Of (4th cl)",
           "translation": "Cha",
           "pronunciation": "cha",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "Your, yours",
@@ -140414,7 +140530,8 @@
           "english": "Of (4th cl)",
           "translation": "Vya",
           "pronunciation": "vya",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/vya.opus"
         },
         {
           "english": "Spread news",
@@ -140432,7 +140549,8 @@
           "english": "Undertaking",
           "translation": "jambo, shughuli",
           "pronunciation": "jamb-o shugh-u-li",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Decorations",
@@ -140932,7 +141050,8 @@
           "english": "Circumstance",
           "translation": "jambo, plur. mambo, hali",
           "pronunciation": "jambo",
-          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (s.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Civilization",
@@ -143124,7 +143243,8 @@
           "english": "The government",
           "translation": "Serikali",
           "pronunciation": "se-ri-ka-li",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 3] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/serikali.opus"
         },
         {
           "english": "Constantinople",
@@ -143526,7 +143646,8 @@
           "english": "That, how That",
           "translation": "kama, ya kwamba, (in order that) illi",
           "pronunciation": "ka-ma ya kwamb-a",
-          "context": "Madan (1917) English-Swahili Vocabulary (conj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Madan (1917) English-Swahili Vocabulary (conj.) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "What nonsense!",
@@ -144637,7 +144758,8 @@
           "english": "Depth, hole, pit",
           "translation": "Lindi",
           "pronunciation": "lindi",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 5] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 5] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/lindi.opus"
         },
         {
           "english": "Division, schism",
@@ -144763,7 +144885,8 @@
           "english": "Of (4th cl. pl.)",
           "translation": "Vya",
           "pronunciation": "vya",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [var. prep.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [var. prep.] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/vya.opus"
         },
         {
           "english": "A kind of chisel",
@@ -146030,7 +146153,8 @@
           "english": "Top, spinning-top",
           "translation": "Pia",
           "pronunciation": "pia",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Aim, mark, target",
@@ -147891,7 +148015,8 @@
           "english": "In, within, to, into",
           "translation": "Mwa",
           "pronunciation": "mwa",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [var. prep. cl. 10, following locative] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [var. prep. cl. 10, following locative] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mwa.opus"
         },
         {
           "english": "Lamp-stand, luminary",
@@ -148149,7 +148274,8 @@
           "english": "But esp (v. squeeze)",
           "translation": "Kama",
           "pronunciation": "ka-ma",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "A reproach, a threat",
@@ -148797,7 +148923,8 @@
           "english": "Matter, affair, thing",
           "translation": "Jambo",
           "pronunciation": "jamb-o",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Sum, total, the whole",
@@ -148845,7 +148972,8 @@
           "english": "Union, oneness, unity",
           "translation": "Umoja",
           "pronunciation": "u-mo-ja",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/umoja.opus"
         },
         {
           "english": "Whiteness, brightness",
@@ -149395,7 +149523,8 @@
           "english": "In the middle, through",
           "translation": "Kati",
           "pronunciation": "ka-ti",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "Blessedness, happiness",
@@ -152099,7 +152228,8 @@
           "english": "That (a. dem. of reference)",
           "translation": "Hiyo",
           "pronunciation": "hi-yo",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/hiyo.opus"
         },
         {
           "english": "In a rush (adv. in a hurry)",
@@ -155881,7 +156011,8 @@
           "english": "As, like, as if, such as, rather than",
           "translation": "Kama",
           "pronunciation": "ka-ma",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Quail, a very large kind of partridge",
@@ -157789,7 +157920,8 @@
           "english": "Probably understanding kisa, anecdote, tale",
           "translation": "cha",
           "pronunciation": "cha",
-          "context": "Taylor (1891) African Aphorisms, Note [561_1] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Taylor (1891) African Aphorisms, Note [561_1] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "Not (with verb, as prefix, infix, or suffix)",
@@ -158420,7 +158552,8 @@
           "english": "Prime minister, overseer, superintendent, vizier",
           "translation": "Waziri",
           "pronunciation": "wa-zi-ri",
-          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 5] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 5] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/waziri.opus"
         },
         {
           "english": "Read the Coran publicly, preach, give an address",
@@ -159377,7 +159510,8 @@
           "english": "Also, too (stands at the end of a phrase or sentence)",
           "translation": "pia",
           "pronunciation": "pia",
-          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (SPCK London, 1910 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Contracted prefix, from niki- (Niki = nki = k’i = hi)",
@@ -160921,7 +161055,8 @@
           "english": "Swahili conditional and hypothetical verbal markers (if / would / had)",
           "translation": "ki-, -ka-, -nge-, -ngeli-, -ngali-, ikiwa, kama",
           "pronunciation": "ki",
-          "context": "Kiswahili — Mozilla Common Voice 27.0 CC0-1.0 (huggingface.co/datasets/geraldamasi/common-voice-27-swahili)"
+          "context": "Kiswahili — Mozilla Common Voice 27.0 CC0-1.0 (huggingface.co/datasets/geraldamasi/common-voice-27-swahili)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Reciprocal (v. rec.): to be intimately connected with each other, to be joined together",
@@ -161679,7 +161814,8 @@
           "english": "Among, between, inside, in the middle of, amidst, surrounded by (adv. and (with ya) prep)",
           "translation": "Kati",
           "pronunciation": "ka-ti",
-          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)"
+          "context": "A. C. Madan, Swahili-English Dictionary (Clarendon Press, Oxford, 1903 — Public Domain) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "Proverb, parable by word. Also verb to be with suffix I am not in it, or connected with it",
@@ -178716,7 +178852,8 @@
           "english": "In the middle, through ; Mt’u wa kati, mediator",
           "translation": "Kati",
           "pronunciation": "kati",
-          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)"
+          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "Dry ; Nyama ndavu, stale meat",
@@ -179577,7 +179714,8 @@
           "english": "Now, at this time, at present ; Sasa hivi",
           "translation": "Sasa",
           "pronunciation": "sasa",
-          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)"
+          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "To leave over, cause to remain ; Kusaza ku (fa), to be almost (dead) ; Kusaza ikdogo na, to",
@@ -179685,7 +179823,8 @@
           "english": "Sail ; Tanga mbili ; period of variable winds between SW",
           "translation": "Tanga",
           "pronunciation": "tanga",
-          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)"
+          "context": "Swahili Grammar & Vocabulary (Burt 1910) • Cross-verified with Kencorpus Swahili (CC-BY-4.0)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/tanga.opus"
         },
         {
           "english": "Hope, expectation ; *Kutaraji",
@@ -180342,7 +180481,8 @@
           "english": "Close",
           "translation": "karibu",
           "context": "Madan (1917) English-Swahili Vocabulary • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
-          "pronunciation": "kaɾiɓu"
+          "pronunciation": "kaɾiɓu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Shark",
@@ -180611,7 +180751,8 @@
           "english": "As, conj. like as",
           "translation": "kama",
           "context": "Krapf (1850) Vocabulary of Six East-African Languages (Kisuáheli) • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Conqueror",
@@ -180739,7 +180880,8 @@
           "english": "Prime minister, overseer, superintendent",
           "translation": "Waziri",
           "context": "Mrs. F. Burt (1910) — Mombasa (Kimvita) Vocabulary [n. 5] • Cross-verified with Kencorpus (KenCorpus_text, CC-BY-4.0)",
-          "pronunciation": "waziɾi"
+          "pronunciation": "waziɾi",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/waziri.opus"
         },
         {
           "english": "p., from the town Shiraz in Persia, hence shirazi, Persian work",
@@ -185436,7 +185578,8 @@
           "english": "or Kwamba, as, as if, like, if, supposing",
           "translation": "Kama, Kamma, Kana",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "royal robes",
@@ -187420,7 +187563,8 @@
           "english": "How do you do?",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "How do you do?",
@@ -191099,7 +191243,8 @@
         {
           "english": "Very fine article though, sir, and I do admire the long reply.",
           "translation": "Makala mazuri sana, mkuu, na nimevutiwa na jibu hilo refu.",
-          "context": "Google Research SMOLSent Parallel Sentences (smolsent__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLSent Parallel Sentences (smolsent__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mkuu.opus"
         },
         {
           "english": "Vase painting scenes suggest that girls played ball, received dance instruction, and perhaps engaged in swimming races.",
@@ -191295,7 +191440,8 @@
           "english": "Also, affirm if the mole trap supplier will be swift, prompt and punctual in their activities.",
           "translation": "Pia, thibitisha ikiwa muuzaji wa kifaa cha kunasa panya atakuwa mwepesi na kufanya mambo kwa wakati ufaao katika shughuli zake.",
           "context": "Google Research SMOLSent Parallel Sentences (smolsent__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Thank you so much for all your help and for being so dedicated, helpful, cheerful, and energetic.",
@@ -192759,7 +192905,8 @@
         {
           "english": "Jones said that the institute was in major cities like Los Angeles, USA; New York, USA; and New Delhi, India.",
           "translation": "John alisema kwamba taasisi ilikuwa katika majiji makubwa kama vile Los Angeles, Marekani; New York, Marekani; na NEw Delhi, India.",
-          "context": "Google Research SMOLSent Parallel Sentences (smolsent__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLSent Parallel Sentences (smolsent__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/marekani.opus"
         },
         {
           "english": "Strengthening families through biblical principles and Kingdom values.",
@@ -193988,7 +194135,8 @@
           "english": "Kosher foods are also subject to a number of other regulations, such as the separation of dairy and meat products.",
           "translation": "Pia, vyakula vya kosha vinategemea kanuni nyingine kadhaa, kama vile kutojumuisha bidhaa za maziwa na nyama.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Kosher food is prepared in a way that ensures that it is fit for consumption according to Jewish law.",
@@ -194746,7 +194894,8 @@
           "english": "The German Luftwaffe also developed a number of high-altitude bombers, including the Heinkel He 177 Greif and the Messerschmitt Me 264 Amerika Bomber.",
           "translation": "Pia, German Luftwaffe iliunda ndege kadhaa za makomboza za miinuko ya juu, ikijumuisha Heinkel He 177 Greif na Messerschmitt Me 264 Amerika Bomber.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "These aircraft were not as successful as their American counterparts, however, due to a number of technical problems.",
@@ -195595,7 +195744,8 @@
           "english": "The study also found that the patients who received personalized therapy were more likely to stay in treatment for longer periods of time.",
           "translation": "Pia, utafiti huo ulibaini kuwa wagonjwa waliopokea matibabu yaliyobinafsishwa walikuwa na uwezekano zaidi wa kuendelea kupata matibabu kwa muda mrefu.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "This study is just one example of how data can be used to improve mental health care.",
@@ -195651,7 +195801,8 @@
           "english": "The fauna of freshwater lakes is also diverse, and includes a wide variety of fish, amphibians, reptiles, birds, and mammals.",
           "translation": "Pia, wapo wanyama tofautitofauti katika maziwa ya maji safi, na wanajumuisha aina mbalimbali za samaki, amfibia, wanyama wanaotambaa, ndege, na mamalia.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Fish are the most abundant vertebrates in freshwater lakes, and they play a vital role in the food chain.",
@@ -195667,7 +195818,8 @@
           "english": "In addition, the storage area is also equipped with a fire alarm system, so that if there is a fire, the alarm will sound and the fire department will be notified.",
           "translation": "Pia, eneo la hifadhi lina king'ora cha moto, ili moto unapotokea, king'ora kinalia na idara ya wazima moto itaarifiwa.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "The storage area is also regularly inspected by the fire department, so that any potential fire hazards can be identified and addressed before they become a problem.",
@@ -196131,7 +196283,8 @@
           "english": "Like, in one movie, the couple broke up because the guy's best friend was in love with the girl.",
           "translation": "Kama, katika filamu moja, wanandoa waliachana kwa sababu rafiki wa karibu wa mume alimpenda mke wa rafikiye.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Person 2: That's so ridiculous. It's not like that happens in real life.",
@@ -196359,7 +196512,8 @@
           "english": "Injuries can also cause inflammation.",
           "translation": "Pia, majeraha yanaweza kusababisha uvimbe.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "When tissue is damaged, it releases chemicals that attract white blood cells and other immune cells to the area.",
@@ -196411,7 +196565,8 @@
           "english": "Chronic inflammation can also be caused by obesity, smoking, and air pollution.",
           "translation": "Pia, uvimbe sugu unaweza kusababishwa na kunenepa kupita kiasi, uvutaji sigara, na uchafuzi wa hewa.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "There is no cure for chronic inflammation, but it can be managed with medication, lifestyle changes, and physical therapy.",
@@ -197287,7 +197442,8 @@
           "english": "He may also be ordered to pay restitution to the victim of the theft.",
           "translation": "Pia, anaweza kuamriwa kumfidia mhasiriwa wa wizi.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "In some cases, the person may be able to avoid criminal charges by entering into a diversion program.",
@@ -197402,7 +197558,8 @@
         {
           "english": "Hockey is a popular sport in Canada, the United States, and Europe.",
           "translation": "Magongo ni spoti maarufu nchini Kanada, Marekani, na Ulaya.",
-          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)"
+          "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/marekani.opus"
         },
         {
           "english": "It is also an Olympic sport.",
@@ -198629,7 +198786,8 @@
           "english": "You should also make sure that you have the proper equipment, such as a harness and a leash.",
           "translation": "Pia, unapaswa kuhakikisha kuwa una vifaa vinavyohitajika, kama vile kamba na kishikilio.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Once you are properly prepared, you can begin your journey by finding a suitable giant wolf spider.",
@@ -198730,7 +198888,8 @@
           "english": "In addition, translation can help to build relationships with customers in other countries and cultures.",
           "translation": "Pia, tafsiri inaweza kusaidia kujenga uhusiano na wateja katika nchi na tamaduni mbalimbali.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "By displaying content in multiple languages, businesses can show that they are committed to reaching a global audience.",
@@ -199426,7 +199585,8 @@
           "english": "Rainstorms can also be a source of entertainment, as people enjoy watching the rain and listening to the thunder.",
           "translation": "Pia, dhoruba za mvua zinaweza kuwa chanzo cha burudani, kwani watu hufurahia kuona mvua na kusikiliza ngurumo.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Eyes are complex organs that allow us to see.",
@@ -200306,7 +200466,8 @@
           "english": "We must also support independent media outlets, and we must encourage people to read and share news from a variety of sources.",
           "translation": "Pia, sharti tuunge mkono vyombo huru vya habari, na tuwahimize watu kusoma na kusambaza habari kutoka vyanzo mbalimbali.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Freedom of the press is a precious right.",
@@ -201105,7 +201266,8 @@
           "english": "You should also take pictures of the car before you drive it away.",
           "translation": "Pia, unapaswa kupiga gari hilo picha kabla ya kuliendesha.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "The Uganda Martyrs are a group of 23 Anglican and 22 Roman Catholic Christians who were killed between 1885 and 1887.",
@@ -202388,7 +202550,8 @@
           "english": "Working as worship can also help us to connect with our families and communities.",
           "translation": "Pia, mtazamo wa kuchukulia kazi kuwa ibada unaweza kutusaidia kuungana na familia na jumuiya zetu.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "When we cook dinner for our children, we are not only providing them with nourishment, but we are also spending time with them and teaching them about the importance of food and family.",
@@ -202734,13 +202897,15 @@
           "english": "Acid rain can also kill fish and other aquatic life by making the water too acidic.",
           "translation": "Pia, mvua ya asidi inaweza kuua samaki na viumbe wengine wa majini kwa kufanya maji kuwa ya asidi sana.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "In addition, acid rain can damage buildings and statues by corroding the materials they're made of.",
           "translation": "Pia, mvua ya asidi inaweza kuharibu mijengo na sanamu kwa kutia kutu kwenye nyenzo zake.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "There are a number of things that can be done to reduce acid rain.",
@@ -205760,7 +205925,8 @@
           "english": "In addition, recycling can save money, as it can reduce the need to extract and process raw materials.",
           "translation": "Pia, urejelezaji unaweza kuokoa pesa, kwa kuwa unaweza kupunguza hitaji la kuopoa na kusafisha nyenzo ghafi.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "The launch of new recycling programs in most countries has ended the color-coded recycling system.",
@@ -210282,7 +210448,8 @@
           "english": "Additionally, dark places can make people feel vulnerable and afraid.",
           "translation": "Pia, maeneo yenye giza yanaweza kuwafanya watu wajihisi wadhaifu na wenye uoga.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "For this reason, it is important to be aware of your surroundings and to take precautions when entering a dark or dimly lit area.",
@@ -216277,7 +216444,8 @@
           "english": "They also provide a home for a variety of plants and animals.",
           "translation": "Pia, huwa makao kwa wanyama fulani na huwezesha mimea mbalimbali kustawi.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "The young engineer, Erica, was excited to start her new job at the automotive recruitment center.",
@@ -217774,7 +217942,8 @@
           "english": "It was also very expensive, and we had to save up for several months to be able to afford it.",
           "translation": "Pia, ilikuwa ghali mno na tulilazimika kuweka akiba kwa miezi kadhaa ili kueza kuinunua.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "My husband was very excited about his new computer, and he spent hours learning how to use it.",
@@ -217800,7 +217969,8 @@
           "english": "They also became smaller and more powerful.",
           "translation": "Pia, zilikuwa ndogo na zenye nguvu zaidi.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "This made them more popular with people of all ages, including women.",
@@ -218099,7 +218269,8 @@
           "english": "She is also working hard to improve her farming practices and learn new ways to grow crops that are more resistant to drought.",
           "translation": "Pia, anafanya kazi kwa bidii ili kuboresha njia zake za kufanya ukulima na anajifunza njia mpya za kupanda mazao ambayo yanaweza kustahimili ukame.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Abebech is an inspiration to all Ethiopian farmers.",
@@ -218772,7 +218943,8 @@
           "english": "He also became a dictator, who suppressed dissent and human rights.",
           "translation": "Pia, alikuwa dikteta ambaye alikandamiza kumpinga na haki za kibinadamu.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "In 1997, Mobutu was overthrown by Laurent Kabila.",
@@ -219440,7 +219612,8 @@
           "english": "Now, let's make another one so we can share it with your parents.\" The little girl and her grandmother made many more chocolate cakes together and they always had a lot of fun.",
           "translation": "Sasa, tutengeneze nyingine ili tuweze kuishiriki na wazazi wako.\" Msichana huyo na bibi yake walitengeneza keki nyingi zaidi za chokoleti pamoja na daima walikuwa na furaha nyingi.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "sasa"
+          "pronunciation": "sasa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "The little girl learned a lot from her grandmother, not just about how to make desserts, but also about the importance of sharing and caring for others.",
@@ -228297,7 +228470,8 @@
           "english": "Also, wearing long sleeves and pants, particularly during dawn and dusk when mosquitoes are most active, can help.",
           "translation": "Pia, kuvaa nguo zenye mikono mirefu na suruali ndefu, hasa wakati wa mapambazuko na machweo wakati mbu wanazunguka zaidi kunaweza kusaidia.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "There are also insect repellents containing DEET or picaridin that are effective.",
@@ -228408,7 +228582,8 @@
           "english": "Also, if he suspects he has RVF, he needs to inform local health authorities so they can monitor the situation and take appropriate public health measures.",
           "translation": "Pia, ikiwa anashuku kwamba ana RVF, anahitaji kujulisha mamlaka za afya za eneo lake ili waweze kufuatilia hali hiyo na kuchukua hatua zinazofaa za afya ya umma.",
           "context": "Google Research SMOLDoc Parallel Corpus (smoldoc__en_sw, CC-BY-4.0, https://huggingface.co/datasets/google/smol)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Answer: Yes, absolutely.",
@@ -232358,7 +232533,8 @@
           "english": "Chief",
           "translation": "sheikh, mkuu",
           "pronunciation": "",
-          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526"
+          "context": "Charles New (1873) Life, Wanderings, and Labours in Eastern Africa (Public Domain), Appendix II p. 526",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mkuu.opus"
         },
         {
           "english": "Cold",
@@ -237196,7 +237372,8 @@
           "english": "Electricity support has backup systems in case of a black-out.",
           "translation": "Pia, vina mfumo msaada wa kando wa umeme iwapo umeme utapotea.",
           "pronunciation": "pia",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Rooms are supplied with wall suction, oxygen, and possibly other anesthetic gases.",
@@ -238648,7 +238825,8 @@
           "english": "They would also provide RAF and Army units to support internal security in the north-east.",
           "translation": "Pia, ilikuwa itoe vitengo vya Jeshi la Kifalme la Hewani na vya Jeshi la ardhi kuongeza usalama katika eneo la Mashariki Kaskazini.",
           "pronunciation": "pia",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Significant military loans would be cancelled, and much military property made over to the Kenyan Government.",
@@ -239266,7 +239444,8 @@
           "english": "With the musical fusion that she generates, Monique Seka's Afro-zouk music is popular across Ivory Coast, Africa, the Caribbean and the Indian Ocean.[1][2]",
           "translation": "Kwa muziki mchanganyiko ambao anautengeneza, muziki wa Afro-zouk wa Monique Seka ni maarufu sana huko nchini kwake - Ivory Coast, Afrika, Caribbean na Bahari ya Hindi.[1][2]",
           "pronunciation": "",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/afrika.opus"
         },
         {
           "english": "Séka developed an interest for music from childhood.",
@@ -239506,7 +239685,8 @@
           "english": "Recreational-only Kupferbach reservoir near Aachen/Germany.",
           "translation": "Bwawa la mapumziko tu karibu na Aachen, Ujerumani.",
           "pronunciation": "",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/ujerumani.opus"
         },
         {
           "english": "Downstream water supply – water may be released from an upland reservoir so that it can be abstracted for drinking water lower down the system, sometimes hundred of miles further downstream.",
@@ -240034,7 +240214,8 @@
           "english": "He also visited Lake Albert and brought away some thousands of Sudanese who had been left there by Emin Pasha and H. M. Stanley during the Emin Pasha Relief Expedition.",
           "translation": "Pia, alisafiri hadi Ziwa Albert na akarudi na maelfu ya Wasudani ambao walikuwa wameachwa na Emin Pasha na H. M. Stanley wakati wa ziara yao.",
           "pronunciation": "pia",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "In August 1897, Lugard organised the West African Frontier Force and commanded it until the end of December 1899, when the disputes with France were settled.",
@@ -240179,13 +240360,15 @@
           "english": "A person seeking refuge from political, religious, or other forms of persecution is usually described as an asylum seeker.",
           "translation": "Pia, kuna watu ambao hutafuta kimbilio kutokana na kuteswa kwa ajili ya msimamo wa kisiasa au dini.",
           "pronunciation": "pia",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Also, the temporary movement of people for the purpose of travel, tourism, pilgrimages, or the commute is not regarded as migration, in the absence of an intention to live and settle in the visited places.",
           "translation": "Pia, shughuli za watu kusafiri kwa madhumuni ya utalii, usafiri au hija sio uhamiaji.",
           "pronunciation": "pia",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "The share of migrants in each country of the world in 2015.[2]",
@@ -241452,7 +241635,8 @@
           "english": "Telephones",
           "translation": "Simu",
           "pronunciation": "simu",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/simu.opus"
         },
         {
           "english": "Internet",
@@ -242827,7 +243011,8 @@
           "english": "The highlands include portions of Mbeya, Njombe, Rukwa, Ruvuma, and Songwe regions, bordering Malawi, Mozambique, and Zambia.[1] Mbeya is the largest city in the highlands.",
           "translation": "Nyanda za juu ni pamoja na sehemu za mikoa ya Mbeya, Njombe, Rukwa, Ruvuma, na Songwe, zikipakana na Malawi, Msumbiji na Zambia . [1] Mbeya ndio mji mkubwa katika nyanda za juu.",
           "pronunciation": "",
-          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)"
+          "context": "OPUS Wikimedia en-sw Parallel Corpus (CC-BY-SA-4.0, https://opus.nlpl.eu/datasets/wikimedia?pair=en&sw)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/njombe.opus"
         },
         {
           "english": "Rainfall ranges from 823 mm on the Ufipa Plateau up to 2,850 mm on the slopes of Mount Rungwe and the Livingstone and Poroto mountains facing Lake Malawi.",
@@ -244094,7 +244279,8 @@
           "english": "Tanzania (a country in East Africa)",
           "translation": "Tanzania",
           "pronunciation": "tɑ.ⁿzɑˈni.ɑ",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/tanzania.opus"
         },
         {
           "english": "Ukraine (a country in Eastern Europe, bordering on the north shore of the Black Sea)",
@@ -244772,7 +244958,8 @@
           "english": "Zanzibar (an island off the coast of Tanzania)",
           "translation": "Zanzibar",
           "pronunciation": "",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/zanzibar.opus"
         },
         {
           "english": "Pakistan (a country in South Asia)",
@@ -245472,13 +245659,15 @@
           "english": "like, as",
           "translation": "kama",
           "pronunciation": "kama",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "to milk",
           "translation": "kama",
           "pronunciation": "kama",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "kick (football)",
@@ -246413,7 +246602,8 @@
           "english": "Africa (the continent south of Europe and between the Atlantic and Indian Oceans)",
           "translation": "Afrika",
           "pronunciation": "ɑfˈɾi.kɑ",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/afrika.opus"
         },
         {
           "english": "quiet",
@@ -246612,7 +246802,8 @@
           "english": "to wander, to loiter",
           "translation": "tanga",
           "pronunciation": "ˈtɑ.ᵑɡɑ",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/tanga.opus"
         },
         {
           "english": "each, every",
@@ -246780,13 +246971,15 @@
           "english": "Kilimanjaro (a volcano in Tanzania)",
           "translation": "Kilimanjaro",
           "pronunciation": "ki.li.mɑˈⁿdʒɑ.ɾɔ",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kilimanjaro.opus"
         },
         {
           "english": "[[Appendix:Swahili_noun_classes#Ji-ma class|ji class_((V))]] inflected form of hiyo",
           "translation": "hilo",
           "pronunciation": "hilo",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/hilo.opus"
         },
         {
           "english": "the abyss",
@@ -247859,19 +248052,22 @@
           "english": "to dawn, (of the sun) to rise",
           "translation": "cha",
           "pronunciation": "tʃa",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "to fear, be afraid",
           "translation": "cha",
           "pronunciation": "tʃa",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "[[Appendix:Swahili_noun_classes#Ki-vi class|ki class_((VII))]] inflected form of -a",
           "translation": "cha",
           "pronunciation": "tʃa",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "to be obliged (under an obligation to do something)",
@@ -248306,7 +248502,8 @@
           "english": "also",
           "translation": "pia",
           "pronunciation": "pia",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "to hit, to strike",
@@ -248669,19 +248866,22 @@
           "english": "time (used to form adverbial numbers, as in \"one time\" (i.e. once))",
           "translation": "mara",
           "pronunciation": "maɾa",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mara.opus"
         },
         {
           "english": "times, multiplied by",
           "translation": "mara",
           "pronunciation": "maɾa",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mara.opus"
         },
         {
           "english": "suddenly",
           "translation": "mara",
           "pronunciation": "maɾa",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mara.opus"
         },
         {
           "english": "augmentative of kikapu: large basket",
@@ -249499,7 +249699,8 @@
           "english": "alternative form of katikati",
           "translation": "kati",
           "pronunciation": "kati",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "eye (organ of vision)",
@@ -250226,7 +250427,8 @@
           "english": "[[Appendix:Swahili_noun_classes#M-mi class|m class_((III))]]/[[Appendix:Swahili_noun_classes#U class|u class_((XI))]] inflected form of hiyo",
           "translation": "huo",
           "pronunciation": "huo",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/huo.opus"
         },
         {
           "english": "Applicative form of -ja",
@@ -250394,7 +250596,8 @@
           "english": "welcome!",
           "translation": "karibu",
           "pronunciation": "kaɾiɓu",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Passive form of -pa",
@@ -250480,13 +250683,15 @@
           "english": "Dodoma (the capital city of Tanzania)",
           "translation": "Dodoma",
           "pronunciation": "",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/dodoma.opus"
         },
         {
           "english": "Dar es Salaam (the largest city in Tanzania)",
           "translation": "Dar es Salaam",
           "pronunciation": "ɗɑɾ ɛs sɑˈlɑːm",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/dar-es-salaam.opus"
         },
         {
           "english": "a condemnation or criticism",
@@ -251522,7 +251727,8 @@
           "english": "pilaf, a spiced rice",
           "translation": "pilau",
           "pronunciation": "pilau",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pilau.opus"
         },
         {
           "english": "winnower (fan for winnowing)",
@@ -252395,13 +252601,15 @@
           "english": "locative of pwa: at the coastline",
           "translation": "pwani",
           "pronunciation": "ˈpʷɑ.ni",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pwani.opus"
         },
         {
           "english": "coast, shore",
           "translation": "pwani",
           "pronunciation": "ˈpʷɑ.ni",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pwani.opus"
         },
         {
           "english": "plural of rais",
@@ -252710,7 +252918,8 @@
           "english": "a hole or pit, a drain",
           "translation": "lindi",
           "pronunciation": "ˈli.ⁿdi",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/lindi.opus"
         },
         {
           "english": "diminutive of mlima: small hill",
@@ -253106,7 +253315,8 @@
           "english": "Andromeda",
           "translation": "Mara",
           "pronunciation": "maɾa",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mara.opus"
         },
         {
           "english": "cover, binding (e.g. of a book)",
@@ -253682,7 +253892,8 @@
           "english": "United States of America (a country in North America)",
           "translation": "Marekani",
           "pronunciation": "Maɾekani",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/marekani.opus"
         },
         {
           "english": "remainder, leftover, balance",
@@ -253880,7 +254091,8 @@
           "english": "president (the head of state of a republic)",
           "translation": "rais",
           "pronunciation": "ɾais",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/rais.opus"
         },
         {
           "english": "thing (a separate entity)",
@@ -254679,7 +254891,8 @@
           "english": "unity, oneness (the state of being one or undivided)",
           "translation": "umoja",
           "pronunciation": "uˈmɔ.ʄɑ",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/umoja.opus"
         },
         {
           "english": "photocopy",
@@ -254895,13 +255108,15 @@
           "english": "thing, affair, issue, matter",
           "translation": "jambo",
           "pronunciation": "ˈʄɑ.ᵐbɔ",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "hello",
           "translation": "jambo",
           "pronunciation": "ˈʄɑ.ᵐbɔ",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "morning",
@@ -255309,7 +255524,8 @@
           "english": "government",
           "translation": "serikali",
           "pronunciation": "seɾikali",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/serikali.opus"
         },
         {
           "english": "[[Appendix:Swahili_noun_classes#M-wa class|m class_((I))]]/[[Appendix:Swahili_noun_classes#M-mi class|m class_((III))]]/[[Appendix:Swahili_noun_classes#U class|u class_((XI))]] inf",
@@ -255502,7 +255718,8 @@
           "english": "after (later than)",
           "translation": "baada",
           "pronunciation": "ˈɓɑː.ɗɑ",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/baada.opus"
         },
         {
           "english": "aside, along",
@@ -255982,7 +256199,8 @@
           "english": "minister (person who is commissioned by the government for public service)",
           "translation": "waziri",
           "pronunciation": "waziɾi",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/waziri.opus"
         },
         {
           "english": "alternative form of dimu",
@@ -257077,7 +257295,8 @@
           "english": "selection",
           "translation": "uchaguzi",
           "pronunciation": "Utʃaɠuzi",
-          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)"
+          "context": "Kaikki.org Raw Wiktextract Dump (CC-BY-SA-4.0, https://kaikki.org/dictionary/rawdata.html)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/uchaguzi.opus"
         },
         {
           "english": "communism",
@@ -257534,7 +257753,8 @@
           "english": "Hello! (said to a man) / Hello!",
           "translation": "Jambo, bwana. / Jambo",
           "pronunciation": "ʄaᵐɓo",
-          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 1, p. 1 · Everyday greeting dialogue (Unit 1) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 1, p. 1 · Everyday greeting dialogue (Unit 1) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "How are you this morning? / Fine. ('good news')",
@@ -257584,7 +257804,8 @@
           "english": "Come in. / Don't trouble. Thank you.",
           "translation": "Karibu. / Starehe, starehe, asante",
           "pronunciation": "",
-          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 10, p. 14 · Hospitality idiom (karibu = near; -starehe = be at rest) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt"
+          "context": "FSI (1963, US Gov PD) Swahili Basic Course · FSI Swahili Basic Course (1963), Unit 10, p. 14 · Hospitality idiom (karibu = near; -starehe = be at rest) · https://archive.org/stream/swahilibasiccour00fore/swahilibasiccour00fore_djvu.txt",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "My children are hungry.",
@@ -258896,7 +259117,8 @@
           "english": "Ok, so during the day I hung up the new nesting box. This is what It looks like in its net place in the garden.",
           "translation": "Sasa, mchana nilitundika kisanduku kipya cha kiota. Kinakaa hivi mahali pake penye neti kwenye bustani.",
           "pronunciation": "sasa",
-          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)"
+          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "But let's rewind a bit. \"What's actually in there?\" I hear nobody ask.",
@@ -258962,7 +259184,8 @@
           "english": "Now, for reasons I'm not sure about yet, the camera is offline. It went out only one hour after sunset.",
           "translation": "Sasa, kwa sababu ambazo bado sizijui, kamera imezimika. Ilizimika saa moja tu baada ya jua kutua.",
           "pronunciation": "sasa",
-          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)"
+          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Maybe it stopped charging the battery 3 hours before sunset due to insufficient light.",
@@ -259911,7 +260134,8 @@
           "english": "Also, I found a pink logbook.",
           "translation": "Pia, nilipata shajara ya rangi ya waridi.",
           "pronunciation": "pia",
-          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)"
+          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Happy Saturday morning. I did this today ^_^",
@@ -260211,7 +260435,8 @@
           "english": "“brb just updating the padding on paragraphs boss”",
           "translation": "mkuu, ninarejea baada ya muda mfupi, ninaenda kusasisha tu nafasi kati ya aya na mipaka ya sehemu hiyo ya wavuti\"",
           "pronunciation": "mkuu",
-          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)"
+          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mkuu.opus"
         },
         {
           "english": "@user47 noooooOOOOooOoOooooo 🤣",
@@ -261160,7 +261385,8 @@
           "english": "“Sorry, princey,” They said, partially ignoring him and searching for the things that their silent friend wanted. “I’m just here to get art supplies.”",
           "translation": "Pole, mkuu,” walisema, wakimpuuza kidogo na kutafuta vitu ambavyo rafiki yao mtulivu alitamani. “Nimekuja kutafuta vifaa vya sanaa.”",
           "pronunciation": "pole",
-          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)"
+          "context": "Google WMT24++ en-sw_KE (Apache-2.0, https://huggingface.co/datasets/google/wmt24pp)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mkuu.opus"
         },
         {
           "english": "“Aw baby girl’s gonna leave so soon?” Aquilo asked, “But I wanted to see you!”",
@@ -261837,7 +262063,8 @@
           "english": "Roger has his own blog, too!",
           "translation": "Roger ana yake blog mwenyewe, pia!",
           "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "\"The time is near when the large cities will be visited by the judgments of God.",
@@ -263495,7 +263722,8 @@
           "english": "What would happen to my children?\" - Janet, United States.",
           "translation": "Nitafanya nini na watoto wangu?\" - Janet, Marekani.",
           "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/marekani.opus"
         },
         {
           "english": "You see the ships flowing through it, so that you may seek from His bounty, and that you may be thankful.",
@@ -264222,7 +264450,8 @@
           "english": "Roberto also felt that he needed God's spirit but for different reasons.",
           "translation": "Pia, Roberto alihisi kwamba anahitaji roho ya Mungu lakini kwa sababu tofauti.",
           "pronunciation": "pia",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "[18:15] These people of ours have taken up gods besides Him.",
@@ -265530,7 +265759,8 @@
           "english": "He also likely wrote the book of Job and Psalm 90.",
           "translation": "Pia, inaelekea kwamba aliandika kitabu cha Ayubu na Zaburi ya 90.",
           "pronunciation": "pia",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Some of them are new to the faith.",
@@ -266812,7 +267042,8 @@
           "english": "Aaron also made atonement for them to cleanse.",
           "translation": "Pia, Aroni alifanya upatanisho kwa ajili yao ili kuwatakasa.",
           "pronunciation": "pia",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "[54:1-5] The Hour has come closer, and the moon has split.",
@@ -267757,7 +267988,8 @@
           "english": "Of course, since the internet age, too.",
           "translation": "Bila shaka, tangu umri wa mtandao, pia.",
           "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "I feel very lonely here, for I have seen a better land.",
@@ -269409,7 +269641,8 @@
           "english": "\"Now, you have many months without a drop of water.\"",
           "translation": "\"Sasa, una miezi mingi bila tone la maji.\"",
           "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "You don't even need to use rm in this case if you are afraid.",
@@ -269597,7 +269830,8 @@
           "english": "(Sure... and I'll have published 5 books by then, too!)",
           "translation": "(Hakika... na nitakuwa nimechapisha vitabu 5 wakati huo, pia!)",
           "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "her father's house: and thou shalt take away the evil out of the midst",
@@ -270518,7 +270752,8 @@
           "english": "Why don't we talk about bringing King David back again?\"",
           "translation": "Sasa, kwa nini hatuzungumzii juu ya kumrudisha mfalme Daudi?\"",
           "pronunciation": "sasa",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "People before you asked such questions, and then, as a result, became disbelievers",
@@ -270857,7 +271092,8 @@
           "english": "Also, making the final decision may not need a lot of effort now.",
           "translation": "Pia, kufanya uamuzi wa mwisho huenda usihitaji jitihada nyingi sasa.",
           "pronunciation": "pia",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "30:28 He presents to you an example from yourselves.",
@@ -273537,7 +273773,8 @@
           "english": "At this point, the disciples were much like many today - perhaps like you, too.",
           "translation": "Mahali hapa, wanafunzi walikuwa kama walivyo wengi leo - pengine kama wewe, pia.",
           "pronunciation": "",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "I am learning to learn. - two spheres.",
@@ -275213,7 +275450,8 @@
           "english": "She also spends 70 hours each month teaching others about the Bible.",
           "translation": "Pia, yeye hutumia saa 70 kila mwezi kuwafundisha wengine kuhusu Biblia.",
           "pronunciation": "pia",
-          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)"
+          "context": "OPUS NLLB Mined Bitext eng_Latn-swh_Latn (ODC-By-1.0, https://huggingface.co/datasets/allenai/nllb)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Of course, you got all wet... Your body was not ready.",
@@ -277740,7 +277978,8 @@
           "english": "In addition we run programming that challenges the taboos of Iranian society such as relationships and sex.",
           "translation": "Pia, sisi huendesha programu ambazo huchachafya miiko ya jamii ya Irani kama ile inayohusiana na mahusiano na ngono.",
           "pronunciation": "pia",
-          "context": "OPUS GlobalVoices en-sw Parallel Corpus (CC-BY-3.0/4.0, https://opus.nlpl.eu/)"
+          "context": "OPUS GlobalVoices en-sw Parallel Corpus (CC-BY-3.0/4.0, https://opus.nlpl.eu/)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Sometimes, the challenge is with the official reading of politics and news; sometimes it is with the dogmatic views held by many inside and outside Iran.",
@@ -281834,7 +282073,8 @@
           "english": "MINISTRY; HERE'S A SPECIAL MESSAGE FOR YOU.",
           "translation": "WAZIRI; HUU NI UJUMBE MAALUM KWAKO.",
           "pronunciation": "waziɾi",
-          "context": "OPUS GlobalVoices en-sw Parallel Corpus (CC-BY-3.0/4.0, https://opus.nlpl.eu/)"
+          "context": "OPUS GlobalVoices en-sw Parallel Corpus (CC-BY-3.0/4.0, https://opus.nlpl.eu/)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/waziri.opus"
         },
         {
           "english": "YOU CAN BLOCK A DOOR, YOU CAN BLOCK TWO, BUT YOU'LL NEVER BE ABLE TO CENSOR THE INTERNET, WHETHER YOU LIKE IT OR NOT.",
@@ -289765,7 +290005,8 @@
           "english": "genitive particle, of",
           "translation": "cha",
           "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
-          "pronunciation": "tʃa"
+          "pronunciation": "tʃa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "pass",
@@ -290235,7 +290476,8 @@
           "english": "those",
           "translation": "hiyo",
           "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
-          "pronunciation": "hijo"
+          "pronunciation": "hijo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/hiyo.opus"
         },
         {
           "english": "those",
@@ -292558,7 +292800,8 @@
           "english": "Secretary of State",
           "translation": "waziri",
           "context": "Rev. Dr. L. Krapf, A Dictionary of the Suahili Language (1882)",
-          "pronunciation": "waziɾi"
+          "pronunciation": "waziɾi",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/waziri.opus"
         },
         {
           "english": "razor",
@@ -300222,7 +300465,8 @@
           "english": "Time",
           "translation": "wakati, wakti, majira",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "wakati"
+          "pronunciation": "wakati",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "bati",
@@ -301040,7 +301284,8 @@
         {
           "english": "Unguja",
           "translation": "Zanzibar",
-          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)"
+          "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/zanzibar.opus"
         },
         {
           "english": "juhudi",
@@ -307202,7 +307447,8 @@
           "english": "Like",
           "translation": "kama, methili, hesabu ya",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "tu, bassi",
@@ -307574,7 +307820,8 @@
           "english": "a vizier",
           "translation": "Waziri",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "waziɾi"
+          "pronunciation": "waziɾi",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/waziri.opus"
         },
         {
           "english": "His, hers",
@@ -308400,7 +308647,8 @@
           "english": "or Chayi, tea",
           "translation": "Cha",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "tʃa"
+          "pronunciation": "tʃa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "the dawn (it has dawned)",
@@ -309995,7 +310243,8 @@
           "english": "for si jambo, hu jambo, ha jambo, &c",
           "translation": "Jambo",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "paradise",
@@ -312202,7 +312451,8 @@
           "english": "a time, sometimes, at once",
           "translation": "Mara",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "maɾa"
+          "pronunciation": "maɾa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mara.opus"
         },
         {
           "english": "once, at once",
@@ -313278,7 +313528,8 @@
           "english": "of",
           "translation": "Mwa",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "mwa"
+          "pronunciation": "mwa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mwa.opus"
         },
         {
           "english": "a conspiracy, an agreement, a bargain",
@@ -314106,19 +314357,22 @@
           "english": "or -pya, new",
           "translation": "pia",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "all, the whole, entirely",
           "translation": "Pia",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "a top, a humming-top",
           "translation": "Pia",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "common pepper",
@@ -316649,7 +316903,8 @@
           "english": "or Zayidi, more",
           "translation": "Zaidi",
           "context": "Bishop Edward Steere, A Handbook of the Swahili Language (1894)",
-          "pronunciation": "zaiɗi"
+          "pronunciation": "zaiɗi",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/zaidi.opus"
         },
         {
           "english": "tithes",
@@ -318117,7 +318372,8 @@
           "english": "form of -a (), agreeing with D 3 (S), meaning 'of,' &c",
           "translation": "Cha",
           "context": "A. C. Madan, Swahili-English Dictionary (1903)",
-          "pronunciation": "tʃa"
+          "pronunciation": "tʃa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "turn sour, ferment",
@@ -319950,7 +320206,8 @@
           "english": "squeeze, but esp",
           "translation": "Kama",
           "context": "A. C. Madan, Swahili-English Dictionary (1903)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "complete, finish, make perfect, also be complete, be finished",
@@ -320077,7 +320334,8 @@
           "english": "and (with ya) prep",
           "translation": "Kati",
           "context": "A. C. Madan, Swahili-English Dictionary (1903)",
-          "pronunciation": "kati"
+          "pronunciation": "kati",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "and (with ya) prep",
@@ -321227,7 +321485,8 @@
           "english": "a deep place, deep channel, hole,—esp",
           "translation": "Lindi",
           "context": "A. C. Madan, Swahili-English Dictionary (1903)",
-          "pronunciation": "liⁿɗi"
+          "pronunciation": "liⁿɗi",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/lindi.opus"
         },
         {
           "english": "a watching-place, station, post (to guard)",
@@ -322136,7 +322395,8 @@
           "english": "About",
           "translation": "karibu",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kaɾiɓu"
+          "pronunciation": "kaɾiɓu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "About",
@@ -322147,7 +322407,8 @@
           "english": "About",
           "translation": "kama",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "About",
@@ -322426,7 +322687,8 @@
           "english": "Affair",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Affair",
@@ -322496,7 +322758,8 @@
           "english": "After",
           "translation": "baada",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ɓaaɗa"
+          "pronunciation": "ɓaaɗa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/baada.opus"
         },
         {
           "english": "After",
@@ -322554,7 +322817,8 @@
           "english": "All",
           "translation": "pia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Allotment",
@@ -322606,7 +322870,8 @@
           "english": "Already",
           "translation": "sasa",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "sasa"
+          "pronunciation": "sasa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Alter",
@@ -322661,7 +322926,8 @@
           "english": "Altogether",
           "translation": "pia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Amaze",
@@ -322932,7 +323198,8 @@
           "english": "As",
           "translation": "kama",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "As",
@@ -323863,7 +324130,8 @@
           "english": "By",
           "translation": "karibu",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kaɾiɓu"
+          "pronunciation": "kaɾiɓu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "By",
@@ -324015,7 +324283,8 @@
           "english": "Case",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Case",
@@ -324257,7 +324526,8 @@
           "english": "Circumstance",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Circumstance",
@@ -326321,7 +326591,8 @@
           "english": "Entire",
           "translation": "pia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Entire",
@@ -326333,7 +326604,8 @@
           "english": "Entirely",
           "translation": "pia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Entrust",
@@ -328122,7 +328394,8 @@
           "english": "If",
           "translation": "kama",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "If",
@@ -328789,7 +329062,8 @@
           "english": "King",
           "translation": "mkuu",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "mkuu"
+          "pronunciation": "mkuu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/mkuu.opus"
         },
         {
           "english": "Kite",
@@ -329189,7 +329463,8 @@
           "english": "Like",
           "translation": "kama",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Like",
@@ -331098,7 +331373,8 @@
           "english": "Period",
           "translation": "wakati",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "wakati"
+          "pronunciation": "wakati",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "Perish",
@@ -332119,7 +332395,8 @@
           "english": "Quite",
           "translation": "pia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Quiver",
@@ -333095,7 +333372,8 @@
           "english": "Rise",
           "translation": "cha",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "tʃa"
+          "pronunciation": "tʃa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "Rise",
@@ -334411,7 +334689,8 @@
           "english": "Soon",
           "translation": "karibu",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kaɾiɓu"
+          "pronunciation": "kaɾiɓu",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/karibu.opus"
         },
         {
           "english": "Soon",
@@ -335129,7 +335408,8 @@
           "english": "Subject",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Subject",
@@ -335604,7 +335884,8 @@
           "english": "That, how That",
           "translation": "kama",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "That, how That",
@@ -335838,7 +336119,8 @@
           "english": "Thing",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Thing",
@@ -335965,7 +336247,8 @@
           "english": "Throughout",
           "translation": "pia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Throughout",
@@ -336042,7 +336325,8 @@
           "english": "Time",
           "translation": "wakati",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "wakati"
+          "pronunciation": "wakati",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/wakati.opus"
         },
         {
           "english": "Times",
@@ -336598,7 +336882,8 @@
           "english": "Undertaking",
           "translation": "jambo",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "ʄaᵐɓo"
+          "pronunciation": "ʄaᵐɓo",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Undertaking",
@@ -336711,7 +336996,8 @@
           "english": "Utterly",
           "translation": "pia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Utterly",
@@ -337109,7 +337395,8 @@
           "english": "Whether",
           "translation": "kama",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "kama"
+          "pronunciation": "kama",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "Whether",
@@ -337195,7 +337482,8 @@
           "english": "Whole",
           "translation": "pia",
           "context": "A. C. Madan, English-Swahili Vocabulary (1917)",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Whole",
@@ -337730,7 +338018,8 @@
           "english": "of (4th cl. concord)",
           "translation": "Cha",
           "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (1910)",
-          "pronunciation": "tʃa"
+          "pronunciation": "tʃa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/cha.opus"
         },
         {
           "english": "cunning, clever, etc., subtle, shrewd",
@@ -337858,7 +338147,8 @@
           "english": "now, at this time, at present ; Sasa hivi (adv.), immediately, directly, at once, presently, just now",
           "translation": "Sasa",
           "context": "Mrs. F. Burt, Swahili Grammar and Vocabulary (1910)",
-          "pronunciation": "sasa"
+          "pronunciation": "sasa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "sew, mend",
@@ -338025,7 +338315,8 @@
         {
           "english": "According",
           "translation": "káma",
-          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli"
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kama.opus"
         },
         {
           "english": "According",
@@ -338836,7 +339127,8 @@
         {
           "english": "Disposition",
           "translation": "jámbo",
-          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli"
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Disposition",
@@ -339294,7 +339586,8 @@
         {
           "english": "Fresh",
           "translation": "sása",
-          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli"
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "From",
@@ -339762,7 +340055,8 @@
         {
           "english": "Into",
           "translation": "káti",
-          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli"
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/kati.opus"
         },
         {
           "english": "Invent",
@@ -340399,7 +340693,8 @@
         {
           "english": "Object",
           "translation": "jámbo",
-          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli"
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "Object",
@@ -341326,7 +341621,8 @@
         {
           "english": "Relinquish",
           "translation": "sása",
-          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli"
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Remove",
@@ -342321,7 +342617,8 @@
         {
           "english": "State",
           "translation": "jámbo",
-          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli"
+          "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "State",
@@ -342852,7 +343149,8 @@
           "english": "This time",
           "translation": "sasa",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
-          "pronunciation": "sasa"
+          "pronunciation": "sasa",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/sasa.opus"
         },
         {
           "english": "Tired",
@@ -342904,7 +343202,8 @@
           "english": "Total",
           "translation": "pia",
           "context": "Rev. Dr. J. L. Krapf, Vocabulary of Six East-African Languages (1850) — Kisuáheli",
-          "pronunciation": "pia"
+          "pronunciation": "pia",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/pia.opus"
         },
         {
           "english": "Total",
@@ -345002,7 +345301,8 @@
           "english": "Answer",
           "translation": "Jambo,salmeen",
           "pronunciation": "ʄaᵐɓo",
-          "context": "Smee (1844) East Coast Vocab (Swahili, 1844 orthography) · Smee (1844), p. 53"
+          "context": "Smee (1844) East Coast Vocab (Swahili, 1844 orthography) · Smee (1844), p. 53",
+          "audioFile": "https://audio.kenyahub.me/audio/swahili/jambo.opus"
         },
         {
           "english": "A charm placed at cross-roads to avert misfortune",
