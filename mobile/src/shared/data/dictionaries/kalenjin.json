@@ -15,7 +15,7 @@
     "Trans Nzoia",
     "West Pokot"
   ],
-  "hasAudio": false,
+  "hasAudio": true,
   "dictionaryVersion": "4.0",
   "lastUpdated": "2026-11-21",
   "contributorNote": "Kalenjin (Nandi / Kipsigis [Lumbwa / Il Kakesan] / Keiyo / Tugen [Kamasia: Kapteberewa & Nderois] / Marakwet & Endo [Chebleng] / Kabkamat [Olmo] / Sangwirr / Uasin Gishu [Moiven / Muttia / Il-Mokwan / I-Sirikwa]) vocabulary compiled from C. W. Hobley (1902, 1903, 1910), Sir Harry H. Johnston (1902), A. C. Hollis (1909 \"The Nandi: Their Language and Folk-Lore\"), Hon. K. R. Dundas (1910 \"Notes on the Tribes Inhabiting the Baringo District\", JRAI Vol. 40, pp. 49–72 — audited 100% line-by-line across all 13 Maragwetta/Ndo sections, 14 Kapteberewa & 6 Nderois Kamasia clans & totems, 5 hill-tribe calendars, irrigation & land-sale laws, and Plate XVII), BFBS (1921), Michael Diercks & Meghana Rao (2019), Meredith Landman (2019), and Joost Zwarts, Andrew Kipkosgei Chelimo & Prisca Jerono (2024). Expanded and cross-verified with Commercially Permissive Datasets (ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0)).",
@@ -12452,6 +12452,30 @@
           "translation": "Lolwet",
           "pronunciation": "",
           "context": "Omara (2020) Kenyan Antimalarial Plants (PMC7306085, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC7306085/) [Ethnobotany]"
+        },
+        {
+          "english": "A. kedongensis (aloe)",
+          "translation": "cheretwo",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. lateritia (aloe)",
+          "translation": "tangaratweti",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. lateritia (aloe)",
+          "translation": "cheretwo",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. secundiflora (aloe)",
+          "translation": "cheretwo",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
         }
       ]
     },
@@ -47574,5 +47598,5 @@
   "source": "ThinkKenya/Waleghwa Kalenjin (35,127 pairs, CC-BY-4.0), Mozilla Common Voice 25.0 Kalenjin (CC0-1.0), Thiomi Kipsigis (CC-BY-4.0), African Next Voices Nandi & Kipsigis (CC-BY-4.0), Language Science Press Kipsigis & Endo-Marakwet Corpora (2019/2024, CC-BY-4.0), CLDF ASJP v20 (CC-BY-4.0) & Public Domain & Peer-Reviewed Lexicons (Hobley 1902–1910, Johnston 1902, Hollis 1909, Dundas 1910, Landman 2019, Diercks & Rao 2019 & Zwarts et al. 2024); Zwarts, Chelimo & Jerono (2024) LSP #438 Ch. 21 Kalenjin Reflexives & Diercks/Kouneli (2019) LSP #190 Kipsigis Syntax (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain), Glossa Journal Open-Access Kipsigis & Sengwer Corpus (Bossi & Diercks 2019; Kouneli 2022; Blix 2022; Falletti & Remijsen 2025, CC-BY-4.0)",
   "isoCode": "kln",
   "glottocode": "kale1246",
-  "totalEntries": 8410
+  "totalEntries": 8414
 }

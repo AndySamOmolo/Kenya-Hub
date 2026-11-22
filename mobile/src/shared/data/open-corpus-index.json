@@ -1,28 +1,43 @@
 {
-  "generatedAt": "2026-11-22T11:40:29.916659+00:00",
+  "generatedAt": "2026-11-22T12:13:47.743633+00:00",
   "cldrVersion": "49.0.0",
   "stats": {
-    "totalR2AudioClips": 5871,
+    "totalR2AudioClips": 6732,
     "totalAudioChapters": 5,
-    "totalKslVideos": 99,
+    "totalKslVideos": 1765,
     "totalStagedVarieties": 4,
     "totalStagedEntries": 650,
     "totalBenchmarkRows": 26618,
-    "totalReaderSentences": 2712,
+    "totalReaderSentences": 5212,
     "totalQuizQuestions": 470,
     "totalCivicDatasets": 10,
     "totalWikimediaDatasets": 6,
-    "pendingGatedCount": 9
+    "pendingGatedCount": 12
   },
   "languages": {
     "swahili": {
       "languageId": "swahili",
-      "r2AudioClips": 1485,
+      "r2AudioClips": 1816,
       "nativeAudioSamples": [
+        {
+          "slug": "cha",
+          "label": "Cha",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/cha.opus"
+        },
+        {
+          "slug": "eau",
+          "label": "Eau",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/eau.opus"
+        },
         {
           "slug": "hao",
           "label": "Hao",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/hao.opus"
+        },
+        {
+          "slug": "huo",
+          "label": "Huo",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/huo.opus"
         },
         {
           "slug": "ili",
@@ -55,9 +70,24 @@
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/mto.opus"
         },
         {
+          "slug": "mwa",
+          "label": "Mwa",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mwa.opus"
+        },
+        {
           "slug": "nao",
           "label": "Nao",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/nao.opus"
+        },
+        {
+          "slug": "pia",
+          "label": "Pia",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/pia.opus"
+        },
+        {
+          "slug": "unk",
+          "label": "Unk",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/unk.opus"
         },
         {
           "slug": "uso",
@@ -68,6 +98,11 @@
           "slug": "uwe",
           "label": "Uwe",
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/uwe.opus"
+        },
+        {
+          "slug": "vya",
+          "label": "Vya",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/vya.opus"
         },
         {
           "slug": "yao",
@@ -95,49 +130,14 @@
           "audioUrl": "https://audio.kenyahub.me/audio/swahili/hayo.opus"
         },
         {
-          "slug": "kuku",
-          "label": "Kuku",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kuku.opus"
+          "slug": "hilo",
+          "label": "Hilo",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hilo.opus"
         },
         {
-          "slug": "kuwa",
-          "label": "Kuwa",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/kuwa.opus"
-        },
-        {
-          "slug": "leso",
-          "label": "Leso",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/leso.opus"
-        },
-        {
-          "slug": "mema",
-          "label": "Mema",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mema.opus"
-        },
-        {
-          "slug": "miji",
-          "label": "Miji",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/miji.opus"
-        },
-        {
-          "slug": "mimi",
-          "label": "Mimi",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/mimi.opus"
-        },
-        {
-          "slug": "moyo",
-          "label": "Moyo",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/moyo.opus"
-        },
-        {
-          "slug": "naye",
-          "label": "Naye",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/naye.opus"
-        },
-        {
-          "slug": "nchi",
-          "label": "Nchi",
-          "audioUrl": "https://audio.kenyahub.me/audio/swahili/nchi.opus"
+          "slug": "hiyo",
+          "label": "Hiyo",
+          "audioUrl": "https://audio.kenyahub.me/audio/swahili/hiyo.opus"
         }
       ],
       "cldr": {
@@ -277,99 +277,99 @@
       "topFrequencyWords": [
         {
           "word": "ya",
-          "count": 136095
+          "count": 273189
         },
         {
           "word": "na",
-          "count": 110352
+          "count": 234695
         },
         {
           "word": "wa",
-          "count": 97935
+          "count": 190390
         },
         {
           "word": "kwa",
-          "count": 60433
+          "count": 118324
         },
         {
           "word": "katika",
-          "count": 33953
+          "count": 62481
         },
         {
           "word": "ni",
-          "count": 27945
+          "count": 54326
         },
         {
           "word": "za",
-          "count": 24538
+          "count": 53222
         },
         {
           "word": "la",
-          "count": 18499
-        },
-        {
-          "word": "kuwa",
-          "count": 15828
+          "count": 41584
         },
         {
           "word": "cha",
-          "count": 12806
+          "count": 32205
         },
         {
-          "word": "kama",
-          "count": 11179
-        },
-        {
-          "word": "hiyo",
-          "count": 9327
+          "word": "kuwa",
+          "count": 29508
         },
         {
           "word": "kwenye",
-          "count": 9277
+          "count": 22135
+        },
+        {
+          "word": "kama",
+          "count": 20626
+        },
+        {
+          "word": "hiyo",
+          "count": 19426
         },
         {
           "word": "vya",
-          "count": 7784
+          "count": 18768
+        },
+        {
+          "word": "alisema",
+          "count": 17342
         },
         {
           "word": "wakati",
-          "count": 7404
-        },
-        {
-          "word": "yake",
-          "count": 7249
-        },
-        {
-          "word": "kwamba",
-          "count": 7012
-        },
-        {
-          "word": "watu",
-          "count": 6745
+          "count": 15241
         },
         {
           "word": "au",
-          "count": 6609
-        },
-        {
-          "word": "hii",
-          "count": 6536
+          "count": 14438
         },
         {
           "word": "kutoka",
-          "count": 6526
-        },
-        {
-          "word": "mwaka",
-          "count": 6410
+          "count": 14373
         },
         {
           "word": "zaidi",
-          "count": 6382
+          "count": 13875
+        },
+        {
+          "word": "yake",
+          "count": 13252
+        },
+        {
+          "word": "watu",
+          "count": 13140
         },
         {
           "word": "kazi",
-          "count": 6274
+          "count": 12763
+        },
+        {
+          "word": "ili",
+          "count": 12588
+        },
+        {
+          "word": "hii",
+          "count": 12297
         }
       ],
       "wikimedia": [
@@ -618,8 +618,8 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 1485,
-        "storiesCount": 78,
+        "audioCount": 1816,
+        "storiesCount": 38,
         "sentencesCount": 150,
         "articlesCount": 72,
         "quizCount": 180,
@@ -818,94 +818,94 @@
       "grambankFeatures": 195,
       "sampleReadings": [
         {
-          "text": "Thuutha wa mĩaka ĩĩri ya mbaara gũthira, arĩa maarĩ arata magĩtuĩka thũ na mbaara ya heho ĩkĩambĩrĩria.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Nĩ ndĩraina.",
+          "source": "0008_nĩkĩĩ-ureka.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Ona angĩkorwo Wagonways ciakitwo na mbaũ, nĩciatũmaga mbarathi ithiĩ ihenya inene na kũgucia mĩrigo mĩritũ gũkĩra barabara irĩa cia hĩndĩ iyo iria citaarĩ nyoroku.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Nĩ arainia gwoko",
+          "source": "0008_nĩkĩĩ-ureka.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Ndĩrĩ ĩ ika ona kũrĩ o ũguo, gwĩka ngerekano cia gũthuthuria maũndũ merũ, na kũgerekania gũkũ nĩ igeria rĩrĩa rĩtũmĩkaga kweheria woni ũmwe kana mawoni maingĩ mena ũhoteteku.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Nĩ ndĩrahũra hĩ.",
+          "source": "0008_nĩkĩĩ-ureka.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Michael Schumacher agĩtiga gũthiĩ na mbere na ihenya rĩu kahinda kanini thutha wa Alonso, nĩ ũndũ wa gũthũkĩrio nĩ kũrũgamio kũingĩ gĩcindano-inĩ hĩndĩ ya ihenya rĩu.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Nĩ arenogora.",
+          "source": "0008_nĩkĩĩ-ureka.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Perry akiuga atĩ we \"Nĩ egũcoka Texas kũrora maumĩrĩra ma mũcemanio wa atangoria ũtukũ ũcio, kũrora kana kwĩna gacĩra gakwa ga kũhotithia gũthiĩ na mbere gĩcindano-inĩ kĩu\".",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Nĩ ndĩracokia.",
+          "source": "0008_nĩkĩĩ-ureka.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Gũgĩkinya Septemba 17, 1939, arangĩri a Poland nĩmahotetwo, na mwihoko ũrĩa waarĩ ho nĩ gũcoka thuutha nginya Romanian bridgehead na gwĩbanga rĩngĩ.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Nĩ arathikĩrĩria.",
+          "source": "0008_nĩkĩĩ-ureka.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Nĩ ũkũrio ũririkane atĩ ũraceerera handũ harĩ na kabuuri cia andũ aingĩ hamwe, na ningĩ handũ harĩ na ũndũ mũnene haugaga ũtangĩgereka kũrĩ gĩcunjĩ kĩnene kĩa mũigĩ wa thĩ.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Nĩ kĩĩ ũreka?",
+          "source": "0008_nĩkĩĩ-ureka.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Kĩganda kĩrĩa gĩa bata mũno thĩiniĩ wa Venezuela nĩ maguta, kũrĩa bũrũri ũyũ wendagia maguta na nja, ona o korwo nĩ gĩcunjĩ kĩa imwe harĩ igana marutaga wĩra iganda-inĩ cia.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Ŭyŭ nȋ Azizi. Azizi nȋ dolli yakwa.",
+          "source": "0099_azizi-dolli-yakwa.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Keki irĩ na matunda nĩcionekaga, irĩ na apples irugĩirwo keki-inĩ hĩndĩ ya mwaka wothe gũthiũrũrũka, na cherries na plums ikĩoneka hĩndĩ ya kĩmera kĩa ũrugarĩ.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Nȋnyedete Azizi tondŭ aikaraga akenete hindi ciothe.",
+          "source": "0099_azizi-dolli-yakwa.md",
+          "license": "CC-BY"
         },
         {
-          "text": "rĩu cia Japan.Japan warĩ bũrũri ũrĩ gĩcigĩrĩra-inĩ o ta Britain",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Ndokira kiroko ni ndi thambaga uthiu. Gacoka gamwetha Azizi.",
+          "source": "0099_azizi-dolli-yakwa.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Subsistence nĨ ũrĨmi ũrĨa ũkoragwo wĨ wa gũkũria irio njiganu nĨ ũndũ wa mahũthĨro ma mũrĨmi na bamĨrĨ yake.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Ndamŭona Azizi nȋ njanŭraga juere yake.",
+          "source": "0099_azizi-dolli-yakwa.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Kũhota gũkinyĩra mootungata maya kaingĩ nĩ kũhĩtũkĩra namba ya thimũ ĩtarĩ marĩhi ĩrĩa ĩngĩhũũrwo kuuma thimu-inĩ nyingĩ hatarĩ marĩhi.",
-          "source": "Practice Sentence",
-          "license": "Apache-2.0"
+          "text": "Ngȋria kȋroko nȋ ndi mŭheyaga Azizi.",
+          "source": "0099_azizi-dolli-yakwa.md",
+          "license": "CC-BY"
         }
       ],
       "topFrequencyWords": [
         {
           "word": "wa",
-          "count": 11570
+          "count": 12090
         },
         {
           "word": "na",
-          "count": 9536
+          "count": 10555
         },
         {
           "word": "ya",
-          "count": 6021
+          "count": 6112
         },
         {
           "word": "ini",
-          "count": 5100
+          "count": 5108
         },
         {
           "word": "ni",
-          "count": 3743
+          "count": 3788
         },
         {
           "word": "cia",
-          "count": 2171
+          "count": 2228
         },
         {
           "word": "uria",
-          "count": 1776
+          "count": 1790
         },
         {
           "word": "bururi",
@@ -917,15 +917,15 @@
         },
         {
           "word": "iria",
-          "count": 1488
-        },
-        {
-          "word": "ria",
-          "count": 1426
+          "count": 1539
         },
         {
           "word": "ma",
-          "count": 1353
+          "count": 1455
+        },
+        {
+          "word": "ria",
+          "count": 1436
         },
         {
           "word": "kaunti",
@@ -933,19 +933,19 @@
         },
         {
           "word": "aria",
-          "count": 1251
+          "count": 1263
         },
         {
           "word": "thutha",
-          "count": 1113
+          "count": 1124
         },
         {
           "word": "thirikari",
-          "count": 1035
+          "count": 1037
         },
         {
           "word": "mwena",
-          "count": 1001
+          "count": 1008
         },
         {
           "word": "ucio",
@@ -964,16 +964,16 @@
           "count": 807
         },
         {
+          "word": "kuuma",
+          "count": 805
+        },
+        {
           "word": "mutongoria",
           "count": 798
         },
         {
           "word": "ino",
           "count": 787
-        },
-        {
-          "word": "kuuma",
-          "count": 755
         }
       ],
       "wikimedia": [
@@ -1033,7 +1033,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 450,
-        "storiesCount": 0,
+        "storiesCount": 17,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -1230,162 +1230,162 @@
       "grambankFeatures": 195,
       "sampleReadings": [
         {
-          "text": "Tem matek inee ni lweteni ogonyore kaka nyalore e seche ma pod idiyo dwonde go e yo ma kare - bende tem kik ichap lith lweteni e yore ma ok owinjore. Kitimo kamano, to idhi.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Chon chon gi lala, e gweng' Busolwe nenitiere nyako mane iluongo ni Namagunga.",
+          "source": "0061_mafua.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Achiel kwom chandruoge ma kinde ka kinde sama itemo loko sinema obedi e yor DVD en overscan. Thoth wang' jowi olosi e yo mamoro oganda duto. Nikech mano, gik moko duto ma.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Nohero mafua ahinya. Chieng' moro nodhi kulo e aora miluongo ni Nakwiga.",
+          "source": "0061_mafua.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Pach jo Amerka notenore kwom timo monj mochan ni itimo dichiel maromre kowuok kwonde adek mopogore. Jeneral John Cadwalder ne nyalo tiao monj kochimo jolwenj Britain mane.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Kane odhi kulo, ne oyudo mafua mane ogombo ahinya, waooooo! ne owacho.",
+          "source": "0061_mafua.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Bang' ka nosekale kaka chik gi Od Bura Maduong' e dwe mar Julai tarik 4, otas manondikee gi lwedo manoketie sei kod Ker mar Od Bura Maduong' John Hancock kod Jagoro Charles.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Kane odok dala ne okono min gi mondo enbe opidhie mafua e dala gi nikech...............",
+          "source": "0061_mafua.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Jo-Koloni, ka noneno timbe go, to gin bende ne giluongo jolweny mamoko. Jolweny mane omako thuolo ma nyime noriwo kidieny mar 1 kod mar 3 mar New Hampshire manoting'o chuo.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "E kanisni wayudo mafua.",
+          "source": "0061_mafua.md",
+          "license": "CC-BY"
         },
         {
-          "text": "China machon ne nitiere kod yore moko makende mag nyiso ndalo mopogore opogore; okang' ka okang' mar China kata anyuola ka anyuola mane nitiere e loch ne gin dhoudi mag loch.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "E rinda wa be wayudo mafua.",
+          "source": "0061_mafua.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Ochunglo makanyo achiel wuotho tokendo gigedo kanyakla bende, ekinde mopogore. E okang' mar dar, thomorni wuothoga e seche mag otieno to gibuoro e seche mag odiechieng'.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "E wuoch wa be wayudo mafua.",
+          "source": "0061_mafua.md",
+          "license": "CC-BY"
         },
         {
-          "text": "ji mathoth fwenyo kaka gikmoko sudo kod timgi seche mathoth kaluore kod kaka gikmoko nitiere mawuok e del kaluoro gi biology mar del Gwecho leche mochanore, ma ok gin agina.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Wa duto wahero mafua.",
+          "source": "0061_mafua.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Kwan mar oganda en chokruok mar gik ma ngima ma chalre mayudore e aluora achiel. Ka ji duto manitiere ei oganda chalre koluwore gi kido mar phenotype moro achiel, to mano.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Maniendi en Azizi. Azizi en doli mara.",
+          "source": "0099_doli-na-manyinge-azizi.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Timo limbe mar neno chwech mag piny mapile ywayo ga mana ji mohero limo kwonde mapile mana ne mor mar neno kwondego, koriwo nyaka gi neno yiende kod lee mag bungu. Ranyisi.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Ahere kinde duko nimar kinde duko osiko ka obunjo.",
+          "source": "0099_doli-na-manyinge-azizi.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Okinyi kokinyi, ji wuok e bombe matindo tindo mag piny gi mtokni mondo gidhiyo kwondegi mag tich kendo gigwenyore bende gi ji mamoko ma kwondegi mag tich nitiere e kwonde ma.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Bang' ka achiweo, alwoko wang'a bang'e amanyo. Kama Azizi nitiere.",
+          "source": "0099_doli-na-manyinge-azizi.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Gino matin mogik inyalo wachi nien achiel kuom gigo madongo magero dend gikmoko duto. En gino ma iye yoreyore moting'o, kaluwore kod model molos mayot mar Bohr, nyuklia mae.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Banye ka ayude, aywoyone wiye.",
+          "source": "0099_doli-na-manyinge-azizi.md",
+          "license": "CC-BY"
         }
       ],
       "topFrequencyWords": [
         {
           "word": "ma",
-          "count": 19813
-        },
-        {
-          "word": "mar",
-          "count": 17453
+          "count": 21237
         },
         {
           "word": "gi",
-          "count": 17180
+          "count": 18986
         },
         {
-          "word": "ne",
-          "count": 14703
+          "word": "mar",
+          "count": 18504
         },
         {
           "word": "to",
-          "count": 14581
+          "count": 16699
+        },
+        {
+          "word": "ne",
+          "count": 15621
         },
         {
           "word": "ni",
-          "count": 13265
+          "count": 14786
         },
         {
           "word": "kendo",
-          "count": 12806
+          "count": 14394
         },
         {
           "word": "ka",
-          "count": 11885
+          "count": 13168
         },
         {
           "word": "kod",
-          "count": 8584
+          "count": 9028
         },
         {
           "word": "mondo",
-          "count": 7848
+          "count": 8792
         },
         {
           "word": "nyasaye",
-          "count": 7437
+          "count": 8689
         },
         {
           "word": "ok",
-          "count": 7107
+          "count": 8228
         },
         {
           "word": "kuom",
-          "count": 6294
+          "count": 7071
         },
         {
           "word": "en",
-          "count": 6027
-        },
-        {
-          "word": "mag",
-          "count": 5915
+          "count": 6724
         },
         {
           "word": "duto",
-          "count": 5688
+          "count": 6489
         },
         {
-          "word": "mane",
-          "count": 5309
-        },
-        {
-          "word": "kaka",
-          "count": 5286
+          "word": "mag",
+          "count": 6264
         },
         {
           "word": "kata",
-          "count": 5131
+          "count": 5869
         },
         {
-          "word": "piny",
-          "count": 4186
+          "word": "kaka",
+          "count": 5831
+        },
+        {
+          "word": "mane",
+          "count": 5629
         },
         {
           "word": "bende",
-          "count": 4081
+          "count": 4617
         },
         {
-          "word": "jo",
-          "count": 3706
+          "word": "piny",
+          "count": 4535
         },
         {
           "word": "nyaka",
-          "count": 3645
+          "count": 4116
         },
         {
-          "word": "mana",
-          "count": 3398
+          "word": "nikech",
+          "count": 3924
+        },
+        {
+          "word": "jo",
+          "count": 3888
         }
       ],
       "wikimedia": [
@@ -1497,8 +1497,7 @@
             "basic conversation"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
-          "phraseCount": 66
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
         },
         {
           "id": "kavirondo-ch-02",
@@ -1516,8 +1515,7 @@
             "hospitality"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
-          "phraseCount": 115
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
         },
         {
           "id": "kavirondo-ch-03",
@@ -1535,8 +1533,7 @@
             "agriculture & building"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
-          "phraseCount": 43
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
         },
         {
           "id": "kavirondo-ch-04",
@@ -1554,8 +1551,7 @@
             "camping & rivers"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
-          "phraseCount": 19
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
         },
         {
           "id": "kavirondo-ch-05",
@@ -1573,13 +1569,12 @@
             "community dialogue"
           ],
           "license": "Public Domain Mark 1.0",
-          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203",
-          "phraseCount": 254
+          "sourceUrl": "https://archive.org/details/handbook_kavirondo3_1203"
         }
       ],
       "shards": {
         "audioCount": 1174,
-        "storiesCount": 0,
+        "storiesCount": 27,
         "sentencesCount": 0,
         "articlesCount": 41,
         "quizCount": 80,
@@ -1773,22 +1768,164 @@
       "grambankFeatures": 0,
       "sampleReadings": [
         {
-          "text": "Yosia yamenya khale khale weene. Paapa wuwe yali omuruchi. Nabutswa obwatoto bubeere buri, Yosia yali wayanza okhukhola ka abasiani ba emiyika chichie bayanza okhukhola..",
-          "source": "Omwana omusiani aba omuruchi",
-          "license": "cc-by"
+          "text": "Khusina elikulu niliba buluu?",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Mayi wuwe wumureerekho okhusiinga. Alabukulanga omuswaki kwa ameno. Mayi wuwe wumuleerere amachi khu lipeseni. Alasinganga amoni wuwe. Wuchiile okhukona chindolo ahambi nende.",
-          "source": "Joy achiichanga esisomelo",
-          "license": "cc-by"
+          "text": "Silibechanga buluu buli lwosi dawe. Libechanga lirio?",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Wangwe acha esikuli. Kasiima sikuli. Wangwe ali mukilasi ya khanne. Wangwe ali mukilaasi. Mwalimu Wamalwa asomia. Asomia Wangwe esabu. Wangwe kama esikuli. Ali nende.",
-          "source": "Endalo ya Wangwe",
-          "license": "cc-by"
+          "text": "Khusina amsafu kabechanga majani?",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Sikabechanga buli lwosi majani dawe. Kabechanga kario?",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Khulwa sina amaremwa kabechanga namuki?",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Amaremwa amengu ni namuki. Amaremwa amabisi ni majani.",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Khu sina amnyinya nikaba rateng’i?",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Amanyinya kosi sikaraten’I dawe.",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Khu sina amabanga nikaba ranjayi?",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Khuli nende ebikeke. Ebikiranga amabanga nikaba ranjayi.",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Khu sina chumbi niba indafu? Engorwa.",
+          "source": "0073_mbolela-bulano-echirangi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ino ni Manyatta. Niyo ingo wange. Ingo wange iri mudala Lihongo lia Turkana.",
+          "source": "0348_ebindu-bindmanya.md",
+          "license": "CC-BY"
         }
       ],
-      "topFrequencyWords": [],
+      "topFrequencyWords": [
+        {
+          "word": "ne",
+          "count": 11
+        },
+        {
+          "word": "hano",
+          "count": 7
+        },
+        {
+          "word": "nende",
+          "count": 7
+        },
+        {
+          "word": "khu",
+          "count": 6
+        },
+        {
+          "word": "mu",
+          "count": 5
+        },
+        {
+          "word": "onyala",
+          "count": 5
+        },
+        {
+          "word": "wenya",
+          "count": 5
+        },
+        {
+          "word": "abatachoni",
+          "count": 4
+        },
+        {
+          "word": "okhumanya",
+          "count": 4
+        },
+        {
+          "word": "sia",
+          "count": 4
+        },
+        {
+          "word": "wele",
+          "count": 4
+        },
+        {
+          "word": "abundu",
+          "count": 3
+        },
+        {
+          "word": "amakali",
+          "count": 3
+        },
+        {
+          "word": "ba",
+          "count": 3
+        },
+        {
+          "word": "babeele",
+          "count": 3
+        },
+        {
+          "word": "cha",
+          "count": 3
+        },
+        {
+          "word": "emilimo",
+          "count": 3
+        },
+        {
+          "word": "kho",
+          "count": 3
+        },
+        {
+          "word": "omwima",
+          "count": 3
+        },
+        {
+          "word": "ya",
+          "count": 3
+        },
+        {
+          "word": "ababukusu",
+          "count": 2
+        },
+        {
+          "word": "abakabarasi",
+          "count": 2
+        },
+        {
+          "word": "abaluya",
+          "count": 2
+        },
+        {
+          "word": "abandu",
+          "count": 2
+        }
+      ],
       "wikimedia": [],
       "wikimediaArticles": [],
       "wikidataLexemes": [],
@@ -1798,11 +1935,11 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 323,
-        "storiesCount": 3,
+        "storiesCount": 549,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
-        "freqCount": 0,
+        "freqCount": 167,
         "hasGrammarShard": true
       }
     },
@@ -1990,59 +2127,120 @@
         "unimorphEntries": null
       },
       "grambankFeatures": 195,
-      "sampleReadings": [],
+      "sampleReadings": [
+        {
+          "text": "Mbui, Ngiti na Ng'ombe mai anyanyae anene. Muthenyia umwe maendie kyalo na ngali.",
+          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Mavika kwisho wa kyaloi, Ndeleva amea maive tikiti. Ng'ombe aiva tikiti wake.",
+          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ngiti aiva tikiti umwingaingi, nundu ndaii na mbesa ila syailite.",
+          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ndeleva akwenda utungia Ngiti mbesa sya uluui, Mbui aumela asembete ataivite kindu!",
+          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ndeleva athata muno. Atwaa ngali atanatungia Ngiti mbesa sya yuulu.",
+          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ni kwio kitumi ona umunze Ngiti usembea ngali akunikile nzini aimaza Ndeleva ula utamutungia mbesa syake sya yuulu.",
+          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Mbui nake asembaa aitoloka muumo wa ngali. Ethia aikia ndakakwatwe nundu wa ulea iva tikiti wake.",
+          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Na Ng'ombe ndatelemaa ngali yukite. Ng'ombe osaa ivinda yake kukilanilia nzia nundu niwaivie tikiti wake wonze!",
+          "source": "0004_mbui-ngiti-na-ngombe.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Muthenya umwe, mbuavui Anansi niwosie ikwa kuma muundani wake. Mai maseo kuvituka kwou amaumbika mwakini mavye. Na ekala nthi amaye.",
+          "source": "0005_anansi-na-nguu.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Kavinda ukwenda kuuma yambee, ew’a mwango wake wakunangwa. “ Ai ekai”, avindisya Anansi. “ Nuu usu” ateo avingua muango. Vai nguu ula wonekaa emunou muno. Nguu asya, “Anansi.",
+          "source": "0005_anansi-na-nguu.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ateo Anansi ai mutoonu muno kwithiwa atatonya kwisiania na mundu ikwa syake onethia ni mueni. Kwou aseuvya muvango. Saa ila nguu wekalile nthi na ambiia kwenda kuya ikwa syai.",
+          "source": "0005_anansi-na-nguu.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Na kavinda kau Anansi ambiia kumelya ikwa kumelya. Ivinda ila nguu wasyokaa niwonie kana vayai ikwa. Nguu alilya Anansi na amwia “ Nimuvea muno nundu wa kumbaalika liuni wa.",
+          "source": "0005_anansi-na-nguu.md",
+          "license": "CC-BY"
+        }
+      ],
       "topFrequencyWords": [
         {
           "word": "wa",
-          "count": 5409
+          "count": 5462
         },
         {
           "word": "na",
-          "count": 3965
+          "count": 4113
         },
         {
           "word": "ya",
-          "count": 2926
+          "count": 2942
         },
         {
           "word": "ni",
-          "count": 1395
+          "count": 1418
         },
         {
           "word": "ma",
-          "count": 1141
+          "count": 1156
         },
         {
           "word": "kya",
-          "count": 1089
+          "count": 1101
         },
         {
           "word": "kana",
-          "count": 879
+          "count": 899
         },
         {
           "word": "kwa",
-          "count": 848
+          "count": 864
         },
         {
           "word": "sya",
-          "count": 792
+          "count": 804
         },
         {
           "word": "ula",
-          "count": 694
+          "count": 704
         },
         {
           "word": "ila",
-          "count": 607
+          "count": 627
         },
         {
           "word": "ala",
-          "count": 604
+          "count": 615
         },
         {
           "word": "nthi",
-          "count": 560
+          "count": 570
         },
         {
           "word": "isu",
@@ -2050,43 +2248,43 @@
         },
         {
           "word": "vala",
-          "count": 538
+          "count": 541
         },
         {
           "word": "usu",
-          "count": 498
+          "count": 502
         },
         {
           "word": "ngai",
-          "count": 441
+          "count": 446
         },
         {
           "word": "itina",
-          "count": 432
+          "count": 438
+        },
+        {
+          "word": "andu",
+          "count": 402
         },
         {
           "word": "masaku",
           "count": 399
         },
         {
-          "word": "andu",
-          "count": 397
+          "word": "kuma",
+          "count": 380
         },
         {
           "word": "ta",
-          "count": 370
-        },
-        {
-          "word": "kuma",
-          "count": 368
+          "count": 379
         },
         {
           "word": "uu",
-          "count": 357
+          "count": 371
         },
         {
           "word": "kenya",
-          "count": 333
+          "count": 336
         }
       ],
       "wikimedia": [],
@@ -2130,7 +2328,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 449,
-        "storiesCount": 0,
+        "storiesCount": 270,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -2140,8 +2338,129 @@
     },
     "kalenjin": {
       "languageId": "kalenjin",
-      "r2AudioClips": 0,
-      "nativeAudioSamples": [],
+      "r2AudioClips": 250,
+      "nativeAudioSamples": [
+        {
+          "slug": "keturek-ketik",
+          "label": "Keturek ketik",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/keturek-ketik.opus"
+        },
+        {
+          "slug": "achame-kamennyu",
+          "label": "Achame kamennyu",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/achame-kamennyu.opus"
+        },
+        {
+          "slug": "amune-komuti-pik",
+          "label": "Amune komuti pik",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/amune-komuti-pik.opus"
+        },
+        {
+          "slug": "kamukta-indennyo",
+          "label": "Kamukta indennyo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kamukta-indennyo.opus"
+        },
+        {
+          "slug": "mamoche-tangoita",
+          "label": "Mamoche tangoita",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/mamoche-tangoita.opus"
+        },
+        {
+          "slug": "enkai-nabo-te-uni",
+          "label": "Enkai nabo te uni",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/enkai-nabo-te-uni.opus"
+        },
+        {
+          "slug": "ak-ki-imige-mising",
+          "label": "Ak ki imige mising",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/ak-ki-imige-mising.opus"
+        },
+        {
+          "slug": "kiuchi-taunit-neoo",
+          "label": "Kiuchi taunit neoo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kiuchi-taunit-neoo.opus"
+        },
+        {
+          "slug": "mo-urerie-bondenyu",
+          "label": "Mo urerie bondenyu",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/mo-urerie-bondenyu.opus"
+        },
+        {
+          "slug": "mi-kokwerie-karinyi",
+          "label": "Mi kokwerie karinyi",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/mi-kokwerie-karinyi.opus"
+        },
+        {
+          "slug": "nyoiwakat-kabar-chi",
+          "label": "Nyoiwakat kabar chi",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/nyoiwakat-kabar-chi.opus"
+        },
+        {
+          "slug": "matarotin-eng-koindo",
+          "label": "Matarotin eng koindo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/matarotin-eng-koindo.opus"
+        },
+        {
+          "slug": "arue-raini-sait-somok",
+          "label": "Arue raini sait somok",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/arue-raini-sait-somok.opus"
+        },
+        {
+          "slug": "kandoinatet-nekararan",
+          "label": "Kandoinatet nekararan",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kandoinatet-nekararan.opus"
+        },
+        {
+          "slug": "ne-tieni-che-mi-barak",
+          "label": "Ne tieni che mi barak",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/ne-tieni-che-mi-barak.opus"
+        },
+        {
+          "slug": "tinye-kebeberta-ne-ya",
+          "label": "Tinye kebeberta ne ya",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/tinye-kebeberta-ne-ya.opus"
+        },
+        {
+          "slug": "amune-si-irire-ag-inye",
+          "label": "Amune si irire ag inye",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/amune-si-irire-ag-inye.opus"
+        },
+        {
+          "slug": "kicham-inendet-eng-tai",
+          "label": "Kicham inendet eng tai",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kicham-inendet-eng-tai.opus"
+        },
+        {
+          "slug": "imiten-ano-raa-ooh-weri",
+          "label": "Imiten ano raa ooh weri",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/imiten-ano-raa-ooh-weri.opus"
+        },
+        {
+          "slug": "kiripei-tupcheshek-choo",
+          "label": "Kiripei tupcheshek choo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/kiripei-tupcheshek-choo.opus"
+        },
+        {
+          "slug": "rirei-lakwet-amu-kaibut",
+          "label": "Rirei lakwet amu kaibut",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/rirei-lakwet-amu-kaibut.opus"
+        },
+        {
+          "slug": "teret-nigiteer-ko-nenyu",
+          "label": "Teret nigiteer ko nenyu",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/teret-nigiteer-ko-nenyu.opus"
+        },
+        {
+          "slug": "gaigai-much-igetyi-mutyo",
+          "label": "Gaigai much igetyi mutyo",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/gaigai-much-igetyi-mutyo.opus"
+        },
+        {
+          "slug": "inye-koi-chomyet-ap-iman",
+          "label": "Inye koi chomyet ap iman",
+          "audioUrl": "https://audio.kenyahub.me/audio/kalenjin/inye-koi-chomyet-ap-iman.opus"
+        }
+      ],
       "cldr": {
         "locale": "kln",
         "months": [
@@ -2198,17 +2517,164 @@
       "grambankFeatures": 0,
       "sampleReadings": [
         {
-          "text": "Isomitit kō otēpto nē punēy chiito agetōgōl ēn kāsārwēēk alak ēn sopēēnyuwaan. Imuuchēy konaam isomitit kōsērpēn ōtkō ōwiit. Yā-iitu kiit kaigaa-ey keey chiito ēn katyaat nē.",
-          "source": "ISOMITIT",
-          "license": "cc-by"
+          "text": "Kikichopkei Zama kuwo sukul karon.",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Kiintē koymuutik chē yuu kiyoon tōtoonik alak, kōyookto :sirkaliit konēētiintētoop myēyntaap pōōrto. Kiineet Pwaari piik chē kiimochēy konay kēy ōpu miyoni, ak kēy kiyoyēy si.",
-          "source": "TYPŌYT",
-          "license": "cc-by"
+          "text": "Mi kichobe aboo musarek ab karon.",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Kimwa Zama kile, \"Nget iyoo kichob musar cho koromen kisir aboo!\"",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Torete musar Zama mu sukul simaam ruba.",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ochu musarek kikururyo.",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Rong'u aboo cheko mu chomnyot nyo wou.",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Kimwa Zama kile, \"Aboo, Bere chii tikimeche musarechu sukaru keny.\"",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Kipkaat Zama mi metinyi kile, \"Anyinyen musarekab iyoo kisir chobo aboo.\"",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Kisom Zama sukaru kile \"Aboo kono sukaruk atesyi musarek amu mayem.\"",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Mi kukochinii aboto Zama sukaruk kamining kitesyi musarekchi.",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "\"Woo! Aboo! Ketesyi chumbi musarekchu!\"",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Kiteb Zama abonyii kile \"Chone ayu iyoo kaa keny.\"",
+          "source": "0121_musar.md",
+          "license": "CC-BY"
         }
       ],
-      "topFrequencyWords": [],
+      "topFrequencyWords": [
+        {
+          "word": "ak",
+          "count": 90
+        },
+        {
+          "word": "en",
+          "count": 88
+        },
+        {
+          "word": "ko",
+          "count": 46
+        },
+        {
+          "word": "ne",
+          "count": 41
+        },
+        {
+          "word": "ng",
+          "count": 35
+        },
+        {
+          "word": "kelyek",
+          "count": 34
+        },
+        {
+          "word": "che",
+          "count": 31
+        },
+        {
+          "word": "eunek",
+          "count": 31
+        },
+        {
+          "word": "tugul",
+          "count": 29
+        },
+        {
+          "word": "borto",
+          "count": 27
+        },
+        {
+          "word": "kole",
+          "count": 25
+        },
+        {
+          "word": "anyun",
+          "count": 23
+        },
+        {
+          "word": "ole",
+          "count": 19
+        },
+        {
+          "word": "asi",
+          "count": 18
+        },
+        {
+          "word": "ki",
+          "count": 16
+        },
+        {
+          "word": "ago",
+          "count": 15
+        },
+        {
+          "word": "kipsigis",
+          "count": 14
+        },
+        {
+          "word": "amun",
+          "count": 11
+        },
+        {
+          "word": "in",
+          "count": 11
+        },
+        {
+          "word": "nebo",
+          "count": 11
+        },
+        {
+          "word": "age",
+          "count": 10
+        },
+        {
+          "word": "agot",
+          "count": 10
+        },
+        {
+          "word": "alak",
+          "count": 10
+        },
+        {
+          "word": "chebo",
+          "count": 10
+        }
+      ],
       "wikimedia": [
         {
           "id": "incubator-niq",
@@ -2289,12 +2755,12 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 0,
-        "storiesCount": 2,
+        "audioCount": 250,
+        "storiesCount": 9,
         "sentencesCount": 0,
         "articlesCount": 108,
         "quizCount": 0,
-        "freqCount": 0,
+        "freqCount": 500,
         "hasGrammarShard": true
       }
     },
@@ -2361,107 +2827,162 @@
       "grambankFeatures": 195,
       "sampleReadings": [
         {
-          "text": "Rituko erimo inkarora egekabu ki’amakendo kebekire ase omogaso isiko mwa’baba. Ekero namoboretie buna negiaki, richibu nanyorete ndiria buna: “Ekio negekabu kiane kiogokorera.",
-          "source": "Grandma's bananas",
-          "license": "cc-by"
+          "text": "Igabwo kare kare banto tibamanyete kende. Tibamanyete gosimeka endagera, gose gosona yanga, gose korosia ebinto korua ase chichuma. Nonya nigo nyasaye orenge korokwa Nyame.",
+          "source": "0006_anansi-nobongaini.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Rituko erimo, Nyame akaamua koenana enyongo eria y’obong’aini gosia ase Anansi. Kera engaki Anansi arigereretie enyongo eria, nigo arenge kweegeria egento ekeyia. Nero nigo.",
+          "source": "0006_anansi-nobongaini.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Rakini Anansi nigo arenge omong’iti nokoba igo akarengereria, “Tiga nkache enyongo eye igoro y’omote omotaambe, ase onde bwensi atayenyore. Erio nario ndanyore enyongo eye.",
+          "source": "0006_anansi-nobongaini.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Rakini korina omote oria n’enyongo eria ekaba obokongu asengencho enyongo nigo yarenge konyakomotwomera amaru aye kera engaki. Anansi agachaka kogechiwa mono nenyongo eria.",
+          "source": "0006_anansi-nobongaini.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Eyio ekagera akairina omote oria mbaka igoro bwango sana. Rakini agatenena nakorengereria, “Ninche bweka mbwenerete gotwara obong’aini bwensi, na igaa omwawa oyo one nigo.",
+          "source": "0006_anansi-nobongaini.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Enyongo erai egaateka ebisanda ekaba ebiminyore ebinge nse yomote oria. Nabo igo bono abanto besometie okorema, ogosona chiyanga n’ebinto bionsi abanto bamanyete rero.",
+          "source": "0006_anansi-nobongaini.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Abwo kare kare ekero riroba riarenge rinyia, ebitunwa ebinge nigo biatubete ense eye buna oborangeti, nemete emetambe nigo yabetete erioba.",
+          "source": "0039_omosacha-omotangani.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ase ense eye, engoro nere yabwate amache, amatoereru, naende amakendu.",
+          "source": "0039_omosacha-omotangani.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "NSe yamache aya, ching’iti ibere inchiamenyete aroro. Eyemo nigo yabwate emeringori emekong’u, neria yende nigo yarenge enke naende engusu.",
+          "source": "0039_omosacha-omotangani.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Bono rituko erimo, embura enene egatwu. Enkoba akabara mbaka nse yengoro eria yarenge namache. Amache akabagana ase chingaki nke igo. Ching’iti chiria chikarora riroba igoro.",
+          "source": "0039_omosacha-omotangani.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "“Titokegenderera kemenya ase egesunte eke iga namache aya amakendu goetani rero.” ching’iti chiria chigetebia. “Tiga togende igoro ase ense torore riroba riria. “Inaki.",
+          "source": "0039_omosacha-omotangani.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Chinyoni chiria chikoiruruka tichigotosekerera kobera nse,” mosani oye agateba. “ekiagera titokouagura, nigo naintwe torabe togotara!” Ng’ora ng’ora hing’iti ciria chigachaka.",
+          "source": "0039_omosacha-omotangani.md",
+          "license": "CC-BY"
         }
       ],
       "topFrequencyWords": [
         {
           "word": "ase",
-          "count": 3445
+          "count": 3993
         },
         {
           "word": "nigo",
-          "count": 2604
+          "count": 2858
         },
         {
           "word": "na",
-          "count": 2139
+          "count": 2419
         },
         {
           "word": "buna",
-          "count": 1470
+          "count": 1617
         },
         {
           "word": "ya",
-          "count": 898
+          "count": 1024
         },
         {
           "word": "korwa",
-          "count": 809
-        },
-        {
-          "word": "bono",
-          "count": 621
-        },
-        {
-          "word": "oyo",
-          "count": 597
+          "count": 907
         },
         {
           "word": "amo",
-          "count": 580
+          "count": 653
         },
         {
-          "word": "aya",
-          "count": 565
+          "word": "bono",
+          "count": 644
         },
         {
           "word": "korende",
-          "count": 521
+          "count": 644
         },
         {
-          "word": "naende",
-          "count": 507
-        },
-        {
-          "word": "ime",
-          "count": 505
-        },
-        {
-          "word": "ekero",
-          "count": 490
+          "word": "oyo",
+          "count": 638
         },
         {
           "word": "igoro",
-          "count": 466
+          "count": 610
         },
         {
-          "word": "gose",
-          "count": 394
+          "word": "naende",
+          "count": 602
+        },
+        {
+          "word": "aya",
+          "count": 590
+        },
+        {
+          "word": "ekero",
+          "count": 575
+        },
+        {
+          "word": "ime",
+          "count": 555
         },
         {
           "word": "nere",
-          "count": 387
+          "count": 475
+        },
+        {
+          "word": "gose",
+          "count": 469
         },
         {
           "word": "mono",
-          "count": 383
-        },
-        {
-          "word": "nabo",
-          "count": 374
+          "count": 452
         },
         {
           "word": "abanto",
-          "count": 361
+          "count": 428
         },
         {
-          "word": "abwo",
-          "count": 345
+          "word": "ere",
+          "count": 416
         },
         {
-          "word": "gochia",
-          "count": 343
+          "word": "nabo",
+          "count": 414
         },
         {
-          "word": "ne",
-          "count": 340
+          "word": "yesu",
+          "count": 394
         },
         {
-          "word": "eye",
-          "count": 330
+          "word": "omonene",
+          "count": 386
+        },
+        {
+          "word": "nyasaye",
+          "count": 381
         }
       ],
       "wikimedia": [],
@@ -2473,7 +2994,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 0,
-        "storiesCount": 1,
+        "storiesCount": 178,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -2662,7 +3183,68 @@
         "unimorphEntries": null
       },
       "grambankFeatures": 195,
-      "sampleReadings": [],
+      "sampleReadings": [
+        {
+          "text": "Ữjῦ ni Azizi. Azizi ni doli yakwa.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Nῖmpendete Azizi tontῦ niakaraga akithokaga.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Nyuuma ya gῦkiira nthambagia ῦthiῦ bwakwa na ngacwaa Azizi.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ndamwona mpambagiria kῦmῦthithia nciuri ciawe.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ndῦmagia Azizi irio riria nkῦnyua caai.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Riria nkῦria nteremente ῖ mῦrῦmagia.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Indi Azizi atῖrῖjaga nteremente ciawe. Ntῖmenya nῖkῖ!",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Nthiurukaga muundene ngituja maua.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ndathiria nkanenkera Azizi yua rimwe. Indῖ atῖcokagia, “Nkaatho.”",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ithambagia Azizi mbere ya ntii anthambia.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Mbῖkagira Azizi ngῦo intune tontu niyo rangi mpendete mono.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Igiita ria kῦmaama Azizi omamaga rῦtere rwakwa.",
+          "source": "0099_doli-azizi.md",
+          "license": "CC-BY"
+        }
+      ],
       "topFrequencyWords": [
         {
           "word": "jacinthe",
@@ -2798,7 +3380,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 250,
-        "storiesCount": 0,
+        "storiesCount": 23,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -2991,162 +3573,162 @@
       "grambankFeatures": 113,
       "sampleReadings": [
         {
-          "text": "Burj Khalifa waa dhismaha hadda adduunka ugu dheer.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Yaanbadiisa waxay ahayd mid aad u gaaban.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Burj Khalifa waa sarta hadda adduunka ugu dheer.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Albaabkiisa waxuu ahaa mid aad u hooseeyo.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Guri waan leeyahay.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Sariirtiisa waxay ahayd mid aad u gaaban.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Noloshaydu waa xuntahay.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Baaskiilkiisa waxuu ahaa mid aad u gaaban.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Waan wanaagsanahay.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Ninkan aad ayuu u dheeraa!",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Ingiriis miyaad ku hadashaa?",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Waxuu sameeyay daab yaanbo aad u dheer.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Waan quruxsanahay.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Waxuu sameeyay gidaaro albaab oo aad u sareeyo.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Magacaygu waa Maxamed.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Waxuu sameeyay sariir aad u dheer.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Waan akhrin doonaa buugga.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Waxuu soo iibsaday baaskiil aad u sareeyo.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Ku soo dhawaada Tatoeba!",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Waxuu ku fadhiistay kursi aad u sareeyo. Waxuu kucunay fargeeto aad u dheer.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Ku soo dhawoow Tatoeba!",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Waxuu ka tagay gurigiisa waxuuna ku noolaa kayn weyn. Waxuu ku noolaa sanado badan.",
+          "source": "0001_nin-aad-u-dheer.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Diidiinka ilko ma leh.",
-          "source": "Tatoeba Som Text",
-          "license": "CC-BY-2.0"
+          "text": "Alisha waxay u baahan tahay inay shaqo hesho, waayo qoyskeedu waxay u baahan yihiin lacag ay ku iibsadaan cunto iyo dhar.",
+          "source": "0001_shaqo-raadin.md",
+          "license": "CC BY"
         }
       ],
       "topFrequencyWords": [
         {
           "word": "oo",
-          "count": 25787
+          "count": 71602
         },
         {
           "word": "ka",
-          "count": 23621
+          "count": 63088
         },
         {
           "word": "ku",
-          "count": 19571
+          "count": 52396
         },
         {
           "word": "ay",
-          "count": 18368
+          "count": 49493
         },
         {
           "word": "iyo",
-          "count": 17467
+          "count": 47892
         },
         {
           "word": "ah",
-          "count": 15126
+          "count": 46933
         },
         {
           "word": "ee",
-          "count": 15092
+          "count": 45814
         },
         {
           "word": "in",
-          "count": 14235
-        },
-        {
-          "word": "uu",
-          "count": 11592
+          "count": 38984
         },
         {
           "word": "ayaa",
-          "count": 11053
+          "count": 33176
         },
         {
           "word": "la",
-          "count": 10726
+          "count": 29569
+        },
+        {
+          "word": "uu",
+          "count": 29013
         },
         {
           "word": "soo",
-          "count": 9971
+          "count": 26608
         },
         {
           "word": "waxaa",
-          "count": 5431
+          "count": 15466
         },
         {
           "word": "lagu",
-          "count": 5173
-        },
-        {
-          "word": "waxa",
-          "count": 4938
-        },
-        {
-          "word": "waa",
-          "count": 4876
+          "count": 14674
         },
         {
           "word": "ugu",
-          "count": 4864
-        },
-        {
-          "word": "aan",
-          "count": 4382
-        },
-        {
-          "word": "mid",
-          "count": 4197
-        },
-        {
-          "word": "kale",
-          "count": 4130
-        },
-        {
-          "word": "loo",
-          "count": 4070
+          "count": 13545
         },
         {
           "word": "si",
-          "count": 4027
+          "count": 13366
+        },
+        {
+          "word": "waa",
+          "count": 12767
         },
         {
           "word": "aad",
-          "count": 3936
+          "count": 12163
         },
         {
-          "word": "waxay",
-          "count": 3392
+          "word": "waxa",
+          "count": 11897
+        },
+        {
+          "word": "kale",
+          "count": 11874
+        },
+        {
+          "word": "loo",
+          "count": 11708
+        },
+        {
+          "word": "aan",
+          "count": 11484
+        },
+        {
+          "word": "mid",
+          "count": 10933
+        },
+        {
+          "word": "soomaaliya",
+          "count": 10100
         }
       ],
       "wikimedia": [],
@@ -3204,7 +3786,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 685,
-        "storiesCount": 0,
+        "storiesCount": 233,
         "sentencesCount": 150,
         "articlesCount": 0,
         "quizCount": 80,
@@ -3271,23 +3853,84 @@
         "unimorphEntries": null
       },
       "grambankFeatures": 85,
-      "sampleReadings": [],
+      "sampleReadings": [
+        {
+          "text": "Ilchoréta apá enkíne, oldía ó enkíténg. Óre enkolóng nabô népuo páran te engárrî.",
+          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Óre peê ebayá, néjokí oláréwání lé engárri peê élâk iropiyianí enyê. Nélak enkíteng inenyéna.",
+          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Nélak oldía aitulusoó, amû meáta esíáná oó iropiyianí naáíririkíno.",
+          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Néjo oláréwání áshúkóki oldía iropiyianí enyéna naátelekutúa, nédol enkíné peê eisík aló éítû élâk.",
+          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Négoro naléng oláréwání. Néreu engárri aló éítû eshukokí oldía iropiyianí enyéna naáshukokíno.",
+          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Náa ínâ peê óre o táatá kémir oldía engárri aing'orú olaréwani leitú éíshô iropiyianí enyéna naáshukúnye.",
+          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Néísik enkíne tenéning engárri nalotú. Kéuré ajó kéíbung'í amû eitú élâk iropiyianí enyéna.",
+          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Néméírut nínye enkíteng tenéning engárri nalotú. Kédeenyári tenélang enkóítói. Kéyíólo ajó étáláá iropiyianí enyéna te lulúng'ata.",
+          "source": "0004_enkine-oldia-o-enkiteng.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Óre enkolóng nabô, néíkesu Anansi inkosikosí te enkúrma énye. Náa kémelók olêng nená kósikosí. Néton apéj te enkíma aitobirakí. Óre peê ekú néítayu anyá.",
+          "source": "0005_anansi-o-oloikuma.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Óre etaá kéjó Anansi ápík enedukúya enkútúk, néning peê éóshí kútúk ají. Néírriang Anansi néjo, “kéng'ai pasá inâ?” Nélo aból kútúk ají. Némanikí olóíkúmá onaúre olêng..",
+          "source": "0005_anansi-o-oloikuma.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Káke képiak olêng Anansi. Némeyieu néng'arie likái tung'áni inkosikosí enyéna. Néesêk olóíkúmá. Óre etotoná oloikumá ajó áítéru anyá inkosikosí, nébuaakí Anansi ajokí.",
+          "source": "0005_anansi-o-oloikuma.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Óre métíi oloikumá, nényok Anansi amút inadúóó kosikosí. Néjo oloikumá áshúkúnye, nélau inkosikosí naanyâ. Néjokí oloikumá Anansi, “ashê naléng te enkitoomóno íno. Óre peê.",
+          "source": "0005_anansi-o-oloikuma.md",
+          "license": "CC-BY"
+        }
+      ],
       "topFrequencyWords": [
         {
           "word": "naa",
-          "count": 1769
-        },
-        {
-          "word": "le",
-          "count": 1418
+          "count": 1807
         },
         {
           "word": "ore",
-          "count": 1414
+          "count": 1533
+        },
+        {
+          "word": "le",
+          "count": 1426
         },
         {
           "word": "te",
-          "count": 1029
+          "count": 1032
         },
         {
           "word": "kaunti",
@@ -3295,51 +3938,63 @@
         },
         {
           "word": "apa",
-          "count": 622
-        },
-        {
-          "word": "ina",
-          "count": 571
+          "count": 680
         },
         {
           "word": "ajo",
-          "count": 561
+          "count": 590
         },
         {
-          "word": "enye",
-          "count": 511
+          "word": "ina",
+          "count": 582
         },
         {
           "word": "ake",
-          "count": 473
+          "count": 558
         },
         {
-          "word": "ole",
-          "count": 430
+          "word": "enye",
+          "count": 526
         },
         {
           "word": "pee",
-          "count": 421
+          "count": 449
+        },
+        {
+          "word": "ole",
+          "count": 438
         },
         {
           "word": "ejo",
-          "count": 412
-        },
-        {
-          "word": "by",
-          "count": 398
+          "count": 429
         },
         {
           "word": "the",
-          "count": 382
+          "count": 422
         },
         {
           "word": "pooki",
-          "count": 376
+          "count": 418
+        },
+        {
+          "word": "by",
+          "count": 417
         },
         {
           "word": "sii",
-          "count": 373
+          "count": 399
+        },
+        {
+          "word": "peyie",
+          "count": 390
+        },
+        {
+          "word": "ninye",
+          "count": 378
+        },
+        {
+          "word": "maasai",
+          "count": 368
         },
         {
           "word": "narok",
@@ -3350,24 +4005,12 @@
           "count": 367
         },
         {
-          "word": "teina",
-          "count": 345
-        },
-        {
           "word": "oo",
-          "count": 341
+          "count": 351
         },
         {
-          "word": "ninye",
-          "count": 335
-        },
-        {
-          "word": "reading",
-          "count": 319
-        },
-        {
-          "word": "continue",
-          "count": 308
+          "word": "teina",
+          "count": 346
         }
       ],
       "wikimedia": [],
@@ -3416,7 +4059,7 @@
       "audioChapters": [],
       "shards": {
         "audioCount": 0,
-        "storiesCount": 0,
+        "storiesCount": 355,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 0,
@@ -3848,99 +4491,99 @@
       "topFrequencyWords": [
         {
           "word": "ebe",
-          "count": 2918
+          "count": 3393
         },
         {
           "word": "lo",
-          "count": 2357
+          "count": 2848
         },
         {
           "word": "na",
-          "count": 2047
+          "count": 2458
         },
         {
           "word": "ka",
-          "count": 2003
+          "count": 2185
         },
         {
           "word": "lu",
-          "count": 1746
+          "count": 2050
         },
         {
           "word": "ngesi",
-          "count": 1548
+          "count": 1875
         },
         {
           "word": "nu",
-          "count": 1474
+          "count": 1787
         },
         {
           "word": "mam",
-          "count": 1462
+          "count": 1627
         },
         {
           "word": "abu",
-          "count": 1230
-        },
-        {
-          "word": "konye",
-          "count": 1180
-        },
-        {
-          "word": "da",
-          "count": 1167
+          "count": 1431
         },
         {
           "word": "kesi",
-          "count": 1167
+          "count": 1404
+        },
+        {
+          "word": "konye",
+          "count": 1319
+        },
+        {
+          "word": "da",
+          "count": 1257
         },
         {
           "word": "kanu",
-          "count": 947
-        },
-        {
-          "word": "ido",
-          "count": 889
-        },
-        {
-          "word": "kere",
-          "count": 878
+          "count": 1145
         },
         {
           "word": "itunga",
-          "count": 875
+          "count": 1078
         },
         {
-          "word": "naarai",
-          "count": 850
-        },
-        {
-          "word": "naka",
-          "count": 806
+          "word": "ido",
+          "count": 1055
         },
         {
           "word": "abala",
-          "count": 792
-        },
-        {
-          "word": "kotoma",
-          "count": 790
-        },
-        {
-          "word": "loka",
-          "count": 779
+          "count": 1006
         },
         {
           "word": "ko",
-          "count": 771
+          "count": 962
+        },
+        {
+          "word": "kere",
+          "count": 952
+        },
+        {
+          "word": "naarai",
+          "count": 942
         },
         {
           "word": "ke",
-          "count": 768
+          "count": 939
         },
         {
-          "word": "ŋes",
-          "count": 761
+          "word": "kotoma",
+          "count": 909
+        },
+        {
+          "word": "loka",
+          "count": 864
+        },
+        {
+          "word": "naka",
+          "count": 861
+        },
+        {
+          "word": "kwape",
+          "count": 838
         }
       ],
       "wikimedia": [],
@@ -4216,127 +4859,127 @@
     },
     "borana": {
       "languageId": "borana",
-      "r2AudioClips": 392,
+      "r2AudioClips": 459,
       "nativeAudioSamples": [
+        {
+          "slug": "a-a",
+          "label": "A a",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-a.opus"
+        },
+        {
+          "slug": "dha",
+          "label": "Dha",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/dha.opus"
+        },
+        {
+          "slug": "fii",
+          "label": "Fii",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/fii.opus"
+        },
+        {
+          "slug": "kaa",
+          "label": "Kaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/kaa.opus"
+        },
+        {
+          "slug": "nis",
+          "label": "Nis",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/nis.opus"
+        },
+        {
+          "slug": "noo",
+          "label": "Noo",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/noo.opus"
+        },
+        {
+          "slug": "nuu",
+          "label": "Nuu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/nuu.opus"
+        },
+        {
+          "slug": "tii",
+          "label": "Tii",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/tii.opus"
+        },
+        {
+          "slug": "tti",
+          "label": "Tti",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/tti.opus"
+        },
+        {
+          "slug": "a-aa",
+          "label": "A aa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-aa.opus"
+        },
+        {
+          "slug": "a-oo",
+          "label": "A oo",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-oo.opus"
+        },
+        {
+          "slug": "a-uu",
+          "label": "A uu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-uu.opus"
+        },
+        {
+          "slug": "aada",
+          "label": "Aada",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aada.opus"
+        },
+        {
+          "slug": "ffaa",
+          "label": "Ffaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/ffaa.opus"
+        },
+        {
+          "slug": "icha",
+          "label": "Icha",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/icha.opus"
+        },
+        {
+          "slug": "tama",
+          "label": "Tama",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/tama.opus"
+        },
+        {
+          "slug": "yyuu",
+          "label": "Yyuu",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/yyuu.opus"
+        },
+        {
+          "slug": "a-ama",
+          "label": "A ama",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/a-ama.opus"
+        },
+        {
+          "slug": "aa-ee",
+          "label": "Aa ee",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aa-ee.opus"
+        },
+        {
+          "slug": "aabba",
+          "label": "Aabba",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aabba.opus"
+        },
+        {
+          "slug": "aabbo",
+          "label": "Aabbo",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aabbo.opus"
+        },
+        {
+          "slug": "aaboo",
+          "label": "Aaboo",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aaboo.opus"
+        },
+        {
+          "slug": "aadaa",
+          "label": "Aadaa",
+          "audioUrl": "https://audio.kenyahub.me/audio/borana/aadaa.opus"
+        },
         {
           "slug": "gaala",
           "label": "Gaala",
           "audioUrl": "https://audio.kenyahub.me/audio/borana/gaala.opus"
-        },
-        {
-          "slug": "hubadhu",
-          "label": "Hubadhu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/hubadhu.opus"
-        },
-        {
-          "slug": "lalisee",
-          "label": "Lalisee",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/lalisee.opus"
-        },
-        {
-          "slug": "m-mixxii",
-          "label": "M mixxii",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/m-mixxii.opus"
-        },
-        {
-          "slug": "ch-letter",
-          "label": "Ch letter",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/ch-letter.opus"
-        },
-        {
-          "slug": "dh-letter",
-          "label": "Dh letter",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/dh-letter.opus"
-        },
-        {
-          "slug": "kanariyaan",
-          "label": "Kanariyaan",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/kanariyaan.opus"
-        },
-        {
-          "slug": "kun-fedhiin",
-          "label": "Kun fedhiin",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/kun-fedhiin.opus"
-        },
-        {
-          "slug": "iddoo-kanarratti-kan-argamummoo",
-          "label": "Iddoo kanarratti kan argamummoo",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/iddoo-kanarratti-kan-argamummoo.opus"
-        },
-        {
-          "slug": "turkii-awurooppaa-3-biyyattii-qabaata",
-          "label": "Turkii awurooppaa 3 biyyattii qabaata",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/turkii-awurooppaa-3-biyyattii-qabaata.opus"
-        },
-        {
-          "slug": "suuraa-armaan-olitti-argamu-irraa-waanti-mul-atu",
-          "label": "Suuraa armaan olitti argamu irraa waanti mul atu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/suuraa-armaan-olitti-argamu-irraa-waanti-mul-atu.opus"
-        },
-        {
-          "slug": "nuti-hundi-salphaamatti-naasuu-keessa-turre-jette-haati",
-          "label": "Nuti hundi salphaamatti naasuu keessa turre jette haati",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/nuti-hundi-salphaamatti-naasuu-keessa-turre-jette-haati.opus"
-        },
-        {
-          "slug": "namni-tokko-illee-mana-waliin-jireenyaa-keessa-hin-turre",
-          "label": "Namni tokko illee mana waliin jireenyaa keessa hin turre",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/namni-tokko-illee-mana-waliin-jireenyaa-keessa-hin-turre.opus"
-        },
-        {
-          "slug": "liigiins-daandii-abbaasaa-hordofuun-hojii-fayyaa-keessa-gale",
-          "label": "Liigiins daandii abbaasaa hordofuun hojii fayyaa keessa gale",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/liigiins-daandii-abbaasaa-hordofuun-hojii-fayyaa-keessa-gale.opus"
-        },
-        {
-          "slug": "afuuffeen-waantota-dhala-namaatiif-gammachuu-laatan-keessaa-isa-",
-          "label": "Afuuffeen waantota dhala namaatiif gammachuu laatan keessaa isa",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/afuuffeen-waantota-dhala-namaatiif-gammachuu-laatan-keessaa-isa-.opus"
-        },
-        {
-          "slug": "atileetonni-itoophiyaa-yeroo-biyya-bakka-bu-anii-biyyaaf-fiigan-",
-          "label": "Atileetonni itoophiyaa yeroo biyya bakka bu anii biyyaaf fiigan",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/atileetonni-itoophiyaa-yeroo-biyya-bakka-bu-anii-biyyaaf-fiigan-.opus"
-        },
-        {
-          "slug": "baandiin-muuziqaa-rookii-hanga-fulbaana-16tti-yunaayitid-steets-",
-          "label": "Baandiin muuziqaa rookii hanga fulbaana 16tti yunaayitid steets",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/baandiin-muuziqaa-rookii-hanga-fulbaana-16tti-yunaayitid-steets-.opus"
-        },
-        {
-          "slug": "bakka-kanatti-kan-argamu-dhagaadha-dhagaan-kunis-bakka-tokkotti-",
-          "label": "Bakka kanatti kan argamu dhagaadha dhagaan kunis bakka tokkotti",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/bakka-kanatti-kan-argamu-dhagaadha-dhagaan-kunis-bakka-tokkotti-.opus"
-        },
-        {
-          "slug": "bineensonni-seeloota-baay-ee-irraa-umaman-wantoota-nyaatanii-of-",
-          "label": "Bineensonni seeloota baay ee irraa umaman wantoota nyaatanii of",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/bineensonni-seeloota-baay-ee-irraa-umaman-wantoota-nyaatanii-of-.opus"
-        },
-        {
-          "slug": "bishaan-keessa-lubbu-qabeeyyii-adda-addaatu-jiraata-fakkeenyaaf-",
-          "label": "Bishaan keessa lubbu qabeeyyii adda addaatu jiraata fakkeenyaaf",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/bishaan-keessa-lubbu-qabeeyyii-adda-addaatu-jiraata-fakkeenyaaf-.opus"
-        },
-        {
-          "slug": "biyyoonni-addunyaa-baayyeen-afaan-ingiliiziii-sirriitti-dubbatu-",
-          "label": "Biyyoonni addunyaa baayyeen afaan ingiliiziii sirriitti dubbatu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/biyyoonni-addunyaa-baayyeen-afaan-ingiliiziii-sirriitti-dubbatu-.opus"
-        },
-        {
-          "slug": "cireen-nyaata-naannichi-waqtiidhaanii-naannichaa-yookaan-nyaata-",
-          "label": "Cireen nyaata naannichi waqtiidhaanii naannichaa yookaan nyaata",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/cireen-nyaata-naannichi-waqtiidhaanii-naannichaa-yookaan-nyaata-.opus"
-        },
-        {
-          "slug": "daandiiwwan-konkolaataa-irratti-yeroo-baay-ee-mukkeen-ni-argamu-",
-          "label": "Daandiiwwan konkolaataa irratti yeroo baay ee mukkeen ni argamu",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/daandiiwwan-konkolaataa-irratti-yeroo-baay-ee-mukkeen-ni-argamu-.opus"
-        },
-        {
-          "slug": "daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-",
-          "label": "Daldalaan nama hojii daldalummaa yookiis bittaa fi gurgurtummaa",
-          "audioUrl": "https://audio.kenyahub.me/audio/borana/daldalaan-nama-hojii-daldalummaa-yookiis-bittaa-fi-gurgurtummaa-.opus"
         }
       ],
       "cldr": {
@@ -4397,162 +5040,162 @@
       "grambankFeatures": 80,
       "sampleReadings": [
         {
-          "text": "Yeroo talaalliin yaalii tokko dhufee du’a Eboladhan dhufu hir’isu, amma yoonatti, qoriichii dhukkuba kan yaaluuf mijataa ta’uun agarsiifame hin jiru. Cuunfaan farra-qaamaa.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Alishaan maatiin ishee nyaataafi uffataaf qarshii waan barbaadaniif hojii argachuu qabdi.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "Wixata, saayintistootni yuunivasitii Stanfordii kan kutaa barnoota fayyaa meeshaa haaraa yaaliif ta’uu kan seelii gosa gosaan adda addaa baasu beeksisan: waan xiqqaa.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Alishaan biyya ishee keessatti hin hojjenne, garuu nyaata bilcheessuuf dandeettii qabdi, namoota waliin haasa'uus ni jaallatti.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "Saayintiistootni teessumaa lafa kan ji’aatti naannoftuu kan maqaanshee loobeet iskaarpis jedhamu argatan kan sababa ji’i suuta suutaan caccabduuf kan suuta uumamee dha.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Tarii mana nyaataa keessatti hojjechuu dandeessi ta'aa? Alishaan maxxansa hojii toora interneetii irratti barbaaddi.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "Adekooyaan erga sanaa Mana Murtii Waliigalaa Eedinbargi keessa jirti ilma isii ajjeesuudhaan himatamtee. To’annaa jala teessee murtiifi qorannaa eeggachaa jirti, garuu.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Beeksisa sheefii tokko argite. Sunis nama mana nyaataa keessatti nyaata bilcheessuudha.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "Cabbii isa nama cabsu irratti dabalee, haaloonni qilleensaa hamoon tattaaffiiwwan lubbuu baraaruu danqanii jiru. Hanga torban dhufu keessaa yeroo tokkootti haalonni waan.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Gaaffii fi deebii hojiitiif deemte. Hogganaan mana nyaataa nama Sheefii ta’uuf leenji'e akka isaan barbaachisu itti hima.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "\"Roobertis waa’ee yeroo itti jireenya jalqabee yeroo gafaatamee dubbachuu dide, gaaffii murteessaa yeroo waa’ee ulfa ofiirra baasuuf seera yeroo gaafatamee, akkas jechuudhan.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Alishaan ni mufatte, garuu koorsii \"Nyaataa fi keessummeessituu\" jedhu fudhatti. Kunis mana nyaataa keessatti hojii akka argattu akka ishee gargaaru abdii qabdi.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "Sa’aatii 8:46 a.m. irratti cal’isuun magaalaa, yeroo murteessaa jeetiin galma isaa itti rukuteedha. Xiyyaan ifaa lama halkan tokkoon gara iddoo samii kessatti diriiraniiru.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Alishaan akka qaama leenjii ishee ta'utti mana nyaataa keessatti hojjechuu qabdi. Mindaa hin argattu, garuu muuxannoo hojii ni argatti.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "\"Seensi holqichaa hundi, “obbooleettiiwan torban” kan jedhaman, xiqqeenyaan diyaametiridhaan meetiira 100 hanga 250 (taakkuu 328-820). Suuraan infiraareedii akka agarsiisutti.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Bal'ina koorsii kanaa \"CV\" ishee irratti dabalti. \"CV\" jechuun hojii isheen hojjettee fi koorsii fudhatte hunda kan ibsuudha.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "Namtichi meeshaa dhoohu hidhatee jedhame himamu konkolaataa miila sadi’iinilalama gara tuutaatti konkolaachise. Namichii boombicha dhoosuun shakkame, ergaa midhaan sababa.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Yeroo itti aanutti Alishaan mana nyaataa tokkotti gaaffii fi deebii hojiif deemte, hojiin sun ni kennameef. Hojii cimaadha. Yeroo baayʼee galgala, yeroo ijoolleenshee mana.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "Afriikaan Kibbaa dorgommii raagbii Tiraay Neeshinsi istaadiyeemii Rooyaal Baafokeengi isa Rastenbergi, Afriikaa Kibbaa keessaatti Ool Bilaaksi (Niiwu Ziilaandi) mo’ataniiru.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Maallaqa mataa isheetiin nyaata fi uffata maatii isheef bitachuu akka dandeessuuf hojii argachuu isheetiin boonteetti.",
+          "source": "0001_hojii-argachuu.md",
+          "license": "CC BY"
         },
         {
-          "text": "Hamma dhuma deemsa hawaatti buufatichi jiirooskooppii dursa ergama buufataa hawaa irratti dhabu iyyuu bakka isaa tursiiseera. Chi’aawoo fi Shariipov furgugistoota sirreessa.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Qottoon isaa bayyee gabaabdu dha.",
+          "source": "0001_namicha-baayyee-dheeraa.md",
+          "license": "CC-BY"
         },
         {
-          "text": "Dhimmichi, bakka itti argama kaampaanii himaticha banee, dhiyeessaa tajaajila intarneetii beekamaa AOL waan ta’eef Verjiiniyaatti mana murtiitti dhiyaate. Kuni murtoo.",
-          "source": "Reading Passage",
-          "license": "CC-BY-SA-4.0"
+          "text": "Balballi mana isaa bayyee gabaabdu dha.",
+          "source": "0001_namicha-baayyee-dheeraa.md",
+          "license": "CC-BY"
         }
       ],
       "topFrequencyWords": [
         {
           "word": "fi",
-          "count": 20186
-        },
-        {
-          "word": "kan",
-          "count": 16228
+          "count": 63165
         },
         {
           "word": "akka",
-          "count": 15193
+          "count": 56984
+        },
+        {
+          "word": "kan",
+          "count": 54695
         },
         {
           "word": "hin",
-          "count": 13901
+          "count": 43306
         },
         {
           "word": "ta",
-          "count": 9724
-        },
-        {
-          "word": "oromoo",
-          "count": 9488
+          "count": 26484
         },
         {
           "word": "kana",
-          "count": 6981
+          "count": 21757
         },
         {
           "word": "irratti",
-          "count": 6437
+          "count": 20851
         },
         {
           "word": "itti",
-          "count": 6243
-        },
-        {
-          "word": "isaa",
-          "count": 6008
-        },
-        {
-          "word": "jiru",
-          "count": 5854
-        },
-        {
-          "word": "irraa",
-          "count": 5793
-        },
-        {
-          "word": "waan",
-          "count": 5701
+          "count": 20257
         },
         {
           "word": "keessatti",
-          "count": 5491
+          "count": 19603
         },
         {
-          "word": "yoo",
-          "count": 4715
+          "word": "isaa",
+          "count": 17770
+        },
+        {
+          "word": "irraa",
+          "count": 17452
+        },
+        {
+          "word": "jiru",
+          "count": 16486
         },
         {
           "word": "yeroo",
-          "count": 4661
+          "count": 16421
+        },
+        {
+          "word": "yoo",
+          "count": 16146
         },
         {
           "word": "kun",
-          "count": 4492
+          "count": 15691
         },
         {
-          "word": "jira",
-          "count": 4192
+          "word": "waan",
+          "count": 15489
         },
         {
           "word": "keessa",
-          "count": 4163
+          "count": 14294
         },
         {
-          "word": "tokko",
-          "count": 4087
+          "word": "ni",
+          "count": 14153
+        },
+        {
+          "word": "oromoo",
+          "count": 13483
+        },
+        {
+          "word": "ture",
+          "count": 13408
         },
         {
           "word": "isaanii",
-          "count": 3716
+          "count": 13179
         },
         {
-          "word": "ee",
-          "count": 3533
+          "word": "gara",
+          "count": 12834
         },
         {
-          "word": "nama",
-          "count": 3434
+          "word": "tokko",
+          "count": 12419
         },
         {
-          "word": "of",
-          "count": 3408
+          "word": "keessaa",
+          "count": 11909
         }
       ],
       "wikimedia": [],
@@ -4621,8 +5264,8 @@
       ],
       "audioChapters": [],
       "shards": {
-        "audioCount": 392,
-        "storiesCount": 0,
+        "audioCount": 459,
+        "storiesCount": 400,
         "sentencesCount": 0,
         "articlesCount": 0,
         "quizCount": 130,
@@ -4780,7 +5423,48 @@
         "unimorphEntries": null
       },
       "grambankFeatures": 0,
-      "sampleReadings": [],
+      "sampleReadings": [
+        {
+          "text": "Ng'ura, nkima!",
+          "source": "0302_nkima.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Kepejisho nkima.",
+          "source": "0302_nkima.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Keyerisho nkima.",
+          "source": "0302_nkima.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Keysheru nkima nkirewaj.",
+          "source": "0302_nkima.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Keysheru nkima ong'an.",
+          "source": "0302_nkima.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Ng'ura, nkima!",
+          "source": "0302_nkima.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Kesupat oleng' nkima.",
+          "source": "0302_nkima.md",
+          "license": "CC-BY"
+        },
+        {
+          "text": "Naa keata ngupu.",
+          "source": "0302_nkima.md",
+          "license": "CC-BY"
+        }
+      ],
       "topFrequencyWords": [],
       "wikimedia": [],
       "wikimediaArticles": [],
@@ -5013,8 +5697,129 @@
     },
     "english-ke": {
       "languageId": "english-ke",
-      "r2AudioClips": 1,
-      "nativeAudioSamples": [],
+      "r2AudioClips": 214,
+      "nativeAudioSamples": [
+        {
+          "slug": "aku",
+          "label": "Aku",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/aku.opus"
+        },
+        {
+          "slug": "hmm",
+          "label": "Hmm",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/hmm.opus"
+        },
+        {
+          "slug": "wow",
+          "label": "Wow",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/wow.opus"
+        },
+        {
+          "slug": "yes",
+          "label": "Yes",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/yes.opus"
+        },
+        {
+          "slug": "okay",
+          "label": "Okay",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/okay.opus"
+        },
+        {
+          "slug": "what",
+          "label": "What",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/what.opus"
+        },
+        {
+          "slug": "yeah",
+          "label": "Yeah",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/yeah.opus"
+        },
+        {
+          "slug": "laugh",
+          "label": "Laugh",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/laugh.opus"
+        },
+        {
+          "slug": "uh-so",
+          "label": "Uh so",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/uh-so.opus"
+        },
+        {
+          "slug": "avatar",
+          "label": "Avatar",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/avatar.opus"
+        },
+        {
+          "slug": "mm-hmm",
+          "label": "Mm hmm",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/mm-hmm.opus"
+        },
+        {
+          "slug": "no-yes",
+          "label": "No yes",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/no-yes.opus"
+        },
+        {
+          "slug": "oh-god",
+          "label": "Oh god",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/oh-god.opus"
+        },
+        {
+          "slug": "uh-huh",
+          "label": "Uh huh",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/uh-huh.opus"
+        },
+        {
+          "slug": "ben-ten",
+          "label": "Ben ten",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/ben-ten.opus"
+        },
+        {
+          "slug": "eh-okay",
+          "label": "Eh okay",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/eh-okay.opus"
+        },
+        {
+          "slug": "uh-okay",
+          "label": "Uh okay",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/uh-okay.opus"
+        },
+        {
+          "slug": "yes-and",
+          "label": "Yes and",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/yes-and.opus"
+        },
+        {
+          "slug": "okay-wow",
+          "label": "Okay wow",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/okay-wow.opus"
+        },
+        {
+          "slug": "or-laugh",
+          "label": "Or laugh",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/or-laugh.opus"
+        },
+        {
+          "slug": "was-that",
+          "label": "Was that",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/was-that.opus"
+        },
+        {
+          "slug": "wildmutt",
+          "label": "Wildmutt",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/wildmutt.opus"
+        },
+        {
+          "slug": "y-yes-hi",
+          "label": "Y yes hi",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/y-yes-hi.opus"
+        },
+        {
+          "slug": "oh-my-god",
+          "label": "Oh my god",
+          "audioUrl": "https://audio.kenyahub.me/audio/english-ke/oh-my-god.opus"
+        }
+      ],
       "cldr": {
         "locale": "en-KE",
         "months": [
@@ -5055,7 +5860,7 @@
       "benchmarks": [],
       "audioChapters": [],
       "shards": {
-        "audioCount": 1,
+        "audioCount": 214,
         "storiesCount": 0,
         "sentencesCount": 0,
         "articlesCount": 0,
@@ -9064,10 +9869,153 @@
     ],
     "videos": [
       {
+        "id": "maseno-0",
+        "title": "0",
+        "gloss": "0",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-0.mp4",
+        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/0.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-10",
+        "title": "10",
+        "gloss": "10",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-10.mp4",
+        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/10.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-24",
+        "title": "24",
+        "gloss": "24",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-24.mp4",
+        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/24.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-4",
+        "title": "4",
+        "gloss": "4",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-4.mp4",
+        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/4.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-accept",
+        "title": "Accept",
+        "gloss": "Accept",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-accept.mp4",
+        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/ACCEPT.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-across",
+        "title": "Across",
+        "gloss": "Across",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-across.mp4",
+        "archivePath": "Pose Data/Batch 2/129/Extract/Stickmans/ACROSS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-action",
+        "title": "Action",
+        "gloss": "Action",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-action.mp4",
+        "archivePath": "Pose Data/Batch 2/166/Extract/Stickmans/ACTION.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-active",
+        "title": "Active",
+        "gloss": "Active",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-active.mp4",
+        "archivePath": "Pose Data/Batch 1/208/Extract/Stickmans/ACTIVE.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-active-571fae",
+        "title": "Active (Clip 2)",
+        "gloss": "Active",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-active-571fae.mp4",
+        "archivePath": "Pose Data/Batch 2/174/Extract/Stickmans/ACTIVE.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-add",
+        "title": "Add",
+        "gloss": "Add",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-add.mp4",
+        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/ADD.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
         "id": "maseno-adult",
         "title": "Adult",
         "gloss": "Adult",
         "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-adult.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-advocate",
+        "title": "Advocate",
+        "gloss": "Advocate",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-advocate.mp4",
+        "archivePath": "Pose Data/Batch 2/91/Extract/Stickmans/ADVOCATE.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-affect",
+        "title": "Affect",
+        "gloss": "Affect",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-affect.mp4",
+        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/AFFECT.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-affect-5417e3",
+        "title": "Affect (Clip 2)",
+        "gloss": "Affect",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-affect-5417e3.mp4",
+        "archivePath": "Pose Data/Batch 2/166/Extract/Stickmans/AFFECT.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
@@ -9084,10 +10032,197 @@
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
+        "id": "maseno-africa-cfdf48",
+        "title": "Africa (Clip 2)",
+        "gloss": "Africa",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-africa-cfdf48.mp4",
+        "archivePath": "Pose Data/Batch 2/91/Extract/Stickmans/AFRICA.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
         "id": "maseno-age",
         "title": "Age",
         "gloss": "Age",
         "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-age.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-ago",
+        "title": "Ago",
+        "gloss": "Ago",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ago.mp4",
+        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/AGO.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-ahead",
+        "title": "Ahead",
+        "gloss": "Ahead",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ahead.mp4",
+        "archivePath": "Pose Data/Batch 2/129/Extract/Stickmans/AHEAD.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-all",
+        "title": "All",
+        "gloss": "All",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all.mp4",
+        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/ALL.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-all-59e140",
+        "title": "All (Clip 2)",
+        "gloss": "All",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-59e140.mp4",
+        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/ALL.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-all-554815",
+        "title": "All (Clip 3)",
+        "gloss": "All",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-554815.mp4",
+        "archivePath": "Pose Data/Batch 2/129/Extract/Stickmans/ALL.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-all-210434",
+        "title": "All (Clip 4)",
+        "gloss": "All",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-210434.mp4",
+        "archivePath": "Pose Data/Batch 2/146/Extract/Stickmans/ALL.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-all-d0779f",
+        "title": "All (Clip 5)",
+        "gloss": "All",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-d0779f.mp4",
+        "archivePath": "Pose Data/Batch 2/161/Extract/Stickmans/ALL.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-all-45b75b",
+        "title": "All (Clip 6)",
+        "gloss": "All",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-45b75b.mp4",
+        "archivePath": "Pose Data/Batch 2/167/Extract/Stickmans/ALL.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-all-eaa392",
+        "title": "All (Clip 7)",
+        "gloss": "All",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-eaa392.mp4",
+        "archivePath": "Pose Data/Batch 2/65/Extract/Stickmans/ALL.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-all-29fa9a",
+        "title": "All (Clip 8)",
+        "gloss": "All",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-all-29fa9a.mp4",
+        "archivePath": "Pose Data/Batch 2/91/Extract/Stickmans/ALL.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-alot",
+        "title": "Alot",
+        "gloss": "Alot",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot.mp4",
+        "archivePath": "Pose Data/Batch 1/205/Extract/Stickmans/ALOT.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-alot-38498d",
+        "title": "Alot (Clip 2)",
+        "gloss": "Alot",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot-38498d.mp4",
+        "archivePath": "Pose Data/Batch 1/235/Extract/Stickmans/ALOT.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-alot-5a5124",
+        "title": "Alot (Clip 3)",
+        "gloss": "Alot",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot-5a5124.mp4",
+        "archivePath": "Pose Data/Batch 2/119/Extract/Stickmans/ALOT.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-alot-08ab7b",
+        "title": "Alot (Clip 4)",
+        "gloss": "Alot",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot-08ab7b.mp4",
+        "archivePath": "Pose Data/Batch 2/131/Extract/Stickmans/ALOT.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-alot-2f97d7",
+        "title": "Alot (Clip 5)",
+        "gloss": "Alot",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-alot-2f97d7.mp4",
+        "archivePath": "Pose Data/Batch 2/76/Extract/Stickmans/ALOT.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-also",
+        "title": "Also",
+        "gloss": "Also",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-also.mp4",
+        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/ALSO.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
@@ -9104,6 +10239,127 @@
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
+        "id": "maseno-always-54a4e7",
+        "title": "Always (Clip 10)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-54a4e7.mp4",
+        "archivePath": "Pose Data/Batch 2/166/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-2986d1",
+        "title": "Always (Clip 11)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-2986d1.mp4",
+        "archivePath": "Pose Data/Batch 2/167/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-b467f1",
+        "title": "Always (Clip 2)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-b467f1.mp4",
+        "archivePath": "Pose Data/Batch 1/201/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-900937",
+        "title": "Always (Clip 3)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-900937.mp4",
+        "archivePath": "Pose Data/Batch 1/203/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-20f6df",
+        "title": "Always (Clip 4)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-20f6df.mp4",
+        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-d2243c",
+        "title": "Always (Clip 5)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-d2243c.mp4",
+        "archivePath": "Pose Data/Batch 1/206/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-5c4e87",
+        "title": "Always (Clip 6)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-5c4e87.mp4",
+        "archivePath": "Pose Data/Batch 1/208/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-f82401",
+        "title": "Always (Clip 7)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-f82401.mp4",
+        "archivePath": "Pose Data/Batch 1/234/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-1b45ca",
+        "title": "Always (Clip 8)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-1b45ca.mp4",
+        "archivePath": "Pose Data/Batch 1/264/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-always-d2c9c0",
+        "title": "Always (Clip 9)",
+        "gloss": "Always",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-always-d2c9c0.mp4",
+        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/ALWAYS.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
+        "id": "maseno-america",
+        "title": "America",
+        "gloss": "America",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-america.mp4",
+        "archivePath": "Pose Data/Batch 2/103/Extract/Stickmans/AMERICA.mp4",
+        "category": "maseno-stickman",
+        "license": "CC-BY-4.0",
+        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
+        "sourceUrl": "https://zenodo.org/records/14338329"
+      },
+      {
         "id": "maseno-ancestors",
         "title": "Ancestors",
         "gloss": "Ancestors",
@@ -9114,1021 +10370,895 @@
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-berret",
-        "title": "Berret",
-        "gloss": "Berret",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-berret.mp4",
+        "id": "maseno-animal",
+        "title": "Animal",
+        "gloss": "Animal",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-animal.mp4",
+        "archivePath": "Pose Data/Batch 2/149/Extract/Stickmans/ANIMAL.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-better",
-        "title": "Better",
-        "gloss": "Better",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-better.mp4",
+        "id": "maseno-announce",
+        "title": "Announce",
+        "gloss": "Announce",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-announce.mp4",
+        "archivePath": "Pose Data/Batch 1/204/Extract/Stickmans/ANNOUNCE.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-black",
-        "title": "Black",
-        "gloss": "Black",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-black.mp4",
+        "id": "maseno-another",
+        "title": "Another",
+        "gloss": "Another",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-another.mp4",
+        "archivePath": "Pose Data/Batch 2/149/Extract/Stickmans/ANOTHER.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-blazer",
-        "title": "Blazer",
-        "gloss": "Blazer",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-blazer.mp4",
+        "id": "maseno-answer",
+        "title": "Answer",
+        "gloss": "Answer",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-answer.mp4",
+        "archivePath": "Pose Data/Batch 2/112/Extract/Stickmans/ANSWER.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-born",
-        "title": "Born",
-        "gloss": "Born",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-born.mp4",
+        "id": "maseno-answer-72632a",
+        "title": "Answer (Clip 2)",
+        "gloss": "Answer",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-answer-72632a.mp4",
+        "archivePath": "Pose Data/Batch 2/119/Extract/Stickmans/ANSWER.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-boys",
-        "title": "Boys",
-        "gloss": "Boys",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-boys.mp4",
+        "id": "maseno-antonio",
+        "title": "Antonio",
+        "gloss": "Antonio",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-antonio.mp4",
+        "archivePath": "Pose Data/Batch 2/135/Extract/Stickmans/ANTONIO.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-break",
-        "title": "Break",
-        "gloss": "Break",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-break.mp4",
+        "id": "maseno-any",
+        "title": "Any",
+        "gloss": "Any",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-any.mp4",
+        "archivePath": "Pose Data/Batch 2/140/Extract/Stickmans/ANY.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-carry",
-        "title": "Carry",
-        "gloss": "Carry",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-carry.mp4",
+        "id": "maseno-appear",
+        "title": "Appear",
+        "gloss": "Appear",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-appear.mp4",
+        "archivePath": "Pose Data/Batch 1/251/Extract/Stickmans/APPEAR.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-celebrate",
-        "title": "Celebrate",
-        "gloss": "Celebrate",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-celebrate.mp4",
+        "id": "maseno-appointment",
+        "title": "Appointment",
+        "gloss": "Appointment",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-appointment.mp4",
+        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/APPOINTMENT.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-chinese",
-        "title": "Chinese",
-        "gloss": "Chinese",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-chinese.mp4",
+        "id": "maseno-are",
+        "title": "Are",
+        "gloss": "Are",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-are.mp4",
+        "archivePath": "Pose Data/Batch 1/251/Extract/Stickmans/ARE.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-coat",
-        "title": "Coat",
-        "gloss": "Coat",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-coat.mp4",
+        "id": "maseno-are-ab7c96",
+        "title": "Are (Clip 2)",
+        "gloss": "Are",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-are-ab7c96.mp4",
+        "archivePath": "Pose Data/Batch 2/132/Extract/Stickmans/ARE.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-come",
-        "title": "Come",
-        "gloss": "Come",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-come.mp4",
+        "id": "maseno-are-035bcf",
+        "title": "Are (Clip 3)",
+        "gloss": "Are",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-are-035bcf.mp4",
+        "archivePath": "Pose Data/Batch 2/149/Extract/Stickmans/ARE.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-cross",
-        "title": "Cross",
-        "gloss": "Cross",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-cross.mp4",
+        "id": "maseno-are-7425bf",
+        "title": "Are (Clip 4)",
+        "gloss": "Are",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-are-7425bf.mp4",
+        "archivePath": "Pose Data/Batch 2/174/Extract/Stickmans/ARE.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-date",
-        "title": "Date",
-        "gloss": "Date",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-date.mp4",
+        "id": "maseno-arm",
+        "title": "Arm",
+        "gloss": "Arm",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-arm.mp4",
+        "archivePath": "Pose Data/Batch 2/103/Extract/Stickmans/ARM.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-daughter",
-        "title": "Daughter",
-        "gloss": "Daughter",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-daughter.mp4",
+        "id": "maseno-arm-15a4bc",
+        "title": "Arm (Clip 2)",
+        "gloss": "Arm",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-arm-15a4bc.mp4",
+        "archivePath": "Pose Data/Batch 2/174/Extract/Stickmans/ARM.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-day",
-        "title": "Day",
-        "gloss": "Day",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-day.mp4",
+        "id": "maseno-arrange",
+        "title": "Arrange",
+        "gloss": "Arrange",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-arrange.mp4",
+        "archivePath": "Pose Data/Batch 2/91/Extract/Stickmans/ARRANGE.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-dress",
-        "title": "Dress",
-        "gloss": "Dress",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-dress.mp4",
+        "id": "maseno-arreas",
+        "title": "Arreas",
+        "gloss": "Arreas",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-arreas.mp4",
+        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/ARREAS.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-evening",
-        "title": "Evening",
-        "gloss": "Evening",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-evening.mp4",
+        "id": "maseno-ask",
+        "title": "Ask",
+        "gloss": "Ask",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ask.mp4",
+        "archivePath": "Pose Data/Batch 1/234/Extract/Stickmans/ASK.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-father",
-        "title": "Father",
-        "gloss": "Father",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-father.mp4",
+        "id": "maseno-ask-ce8a98",
+        "title": "Ask (Clip 2)",
+        "gloss": "Ask",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ask-ce8a98.mp4",
+        "archivePath": "Pose Data/Batch 2/119/Extract/Stickmans/ASK.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-felix",
-        "title": "Felix",
-        "gloss": "Felix",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-felix.mp4",
+        "id": "maseno-ask-1feb5f",
+        "title": "Ask (Clip 3)",
+        "gloss": "Ask",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ask-1feb5f.mp4",
+        "archivePath": "Pose Data/Batch 2/65/Extract/Stickmans/ASK.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-fiancee",
-        "title": "Fiancee",
-        "gloss": "Fiancee",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-fiancee.mp4",
+        "id": "maseno-atieno",
+        "title": "Atieno",
+        "gloss": "Atieno",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-atieno.mp4",
+        "archivePath": "Pose Data/Batch 2/135/Extract/Stickmans/ATIENO.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-go",
-        "title": "Go",
-        "gloss": "Go",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-go.mp4",
+        "id": "maseno-aunt",
+        "title": "Aunt",
+        "gloss": "Aunt",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-aunt.mp4",
+        "archivePath": "Pose Data/Batch 1/205/Extract/Stickmans/AUNT.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-good",
-        "title": "Good",
-        "gloss": "Good",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-good.mp4",
+        "id": "maseno-avoid",
+        "title": "Avoid",
+        "gloss": "Avoid",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-avoid.mp4",
+        "archivePath": "Pose Data/Batch 1/238/Extract/Stickmans/AVOID.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-have",
-        "title": "Have",
-        "gloss": "Have",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-have.mp4",
+        "id": "maseno-baby",
+        "title": "Baby",
+        "gloss": "Baby",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-baby.mp4",
+        "archivePath": "Pose Data/Batch 1/235/Extract/Stickmans/BABY.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-her",
-        "title": "Her",
-        "gloss": "Her",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-her.mp4",
+        "id": "maseno-baby-005ea0",
+        "title": "Baby (Clip 2)",
+        "gloss": "Baby",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-baby-005ea0.mp4",
+        "archivePath": "Pose Data/Batch 2/119/Extract/Stickmans/BABY.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-lab",
-        "title": "Lab",
-        "gloss": "Lab",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-lab.mp4",
+        "id": "maseno-back",
+        "title": "Back",
+        "gloss": "Back",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-back.mp4",
+        "archivePath": "Pose Data/Batch 1/233/Extract/Stickmans/BACK.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-leg",
-        "title": "Leg",
-        "gloss": "Leg",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-leg.mp4",
+        "id": "maseno-back-4698a2",
+        "title": "Back (Clip 2)",
+        "gloss": "Back",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-back-4698a2.mp4",
+        "archivePath": "Pose Data/Batch 2/65/Extract/Stickmans/BACK.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-legumes",
-        "title": "Legumes",
-        "gloss": "Legumes",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-legumes.mp4",
+        "id": "maseno-bad",
+        "title": "Bad",
+        "gloss": "Bad",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-bad.mp4",
+        "archivePath": "Pose Data/Batch 2/140/Extract/Stickmans/BAD.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-like",
-        "title": "Like",
-        "gloss": "Like",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-like.mp4",
+        "id": "maseno-bag",
+        "title": "Bag",
+        "gloss": "Bag",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-bag.mp4",
+        "archivePath": "Pose Data/Batch 1/208/Extract/Stickmans/BAG.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-love",
-        "title": "Love",
-        "gloss": "Love",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-love.mp4",
+        "id": "maseno-bag-7f3b8e",
+        "title": "Bag (Clip 2)",
+        "gloss": "Bag",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-bag-7f3b8e.mp4",
+        "archivePath": "Pose Data/Batch 2/149/Extract/Stickmans/BAG.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-make",
-        "title": "Make",
-        "gloss": "Make",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-make.mp4",
+        "id": "maseno-basic",
+        "title": "Basic",
+        "gloss": "Basic",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-basic.mp4",
+        "archivePath": "Pose Data/Batch 2/132/Extract/Stickmans/BASIC.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-maurine",
-        "title": "Maurine",
-        "gloss": "Maurine",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-maurine.mp4",
+        "id": "maseno-beautiful",
+        "title": "Beautiful",
+        "gloss": "Beautiful",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-beautiful.mp4",
+        "archivePath": "Pose Data/Batch 1/205/Extract/Stickmans/BEAUTIFUL.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-mine",
-        "title": "Mine",
-        "gloss": "Mine",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-mine.mp4",
+        "id": "maseno-beautiful-bc78d0",
+        "title": "Beautiful (Clip 2)",
+        "gloss": "Beautiful",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-beautiful-bc78d0.mp4",
+        "archivePath": "Pose Data/Batch 1/251/Extract/Stickmans/BEAUTIFUL.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-mother",
-        "title": "Mother",
-        "gloss": "Mother",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-mother.mp4",
+        "id": "maseno-because",
+        "title": "Because",
+        "gloss": "Because",
+        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-because.mp4",
+        "archivePath": "Pose Data/Batch 2/129/Extract/Stickmans/BECAUSE.mp4",
         "category": "maseno-stickman",
         "license": "CC-BY-4.0",
         "source": "Maseno University KSL Dataset (Zenodo 14338329)",
         "sourceUrl": "https://zenodo.org/records/14338329"
       },
       {
-        "id": "maseno-must",
-        "title": "Must",
-        "gloss": "Must",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-must.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-night",
-        "title": "Night",
-        "gloss": "Night",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-night.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-nothing",
-        "title": "Nothing",
-        "gloss": "Nothing",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-nothing.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-people",
-        "title": "People",
-        "gloss": "People",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-people.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-science",
-        "title": "Science",
-        "gloss": "Science",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-science.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-scout",
-        "title": "Scout",
-        "gloss": "Scout",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-scout.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-smart",
-        "title": "Smart",
-        "gloss": "Smart",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-smart.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-strong",
-        "title": "Strong",
-        "gloss": "Strong",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-strong.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-sweet",
-        "title": "Sweet",
-        "gloss": "Sweet",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-sweet.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-teacher",
-        "title": "Teacher",
-        "gloss": "Teacher",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-teacher.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-tie",
-        "title": "Tie",
-        "gloss": "Tie",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-tie.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-tree",
-        "title": "Tree",
-        "gloss": "Tree",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-tree.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-true",
-        "title": "True",
-        "gloss": "True",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-true.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-tshirt",
-        "title": "Tshirt",
-        "gloss": "Tshirt",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-tshirt.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-type",
-        "title": "Type",
-        "gloss": "Type",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-type.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-ugali",
-        "title": "Ugali",
-        "gloss": "Ugali",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-ugali.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-wear",
-        "title": "Wear",
-        "gloss": "Wear",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-wear.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-white",
-        "title": "White",
-        "gloss": "White",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-white.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-wish",
-        "title": "Wish",
-        "gloss": "Wish",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-wish.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "maseno-you",
-        "title": "You",
-        "gloss": "You",
-        "videoUrl": "https://audio.kenyahub.me/ksl/videos/maseno-you.mp4",
-        "category": "maseno-stickman",
-        "license": "CC-BY-4.0",
-        "source": "Maseno University KSL Dataset (Zenodo 14338329)",
-        "sourceUrl": "https://zenodo.org/records/14338329"
-      },
-      {
-        "id": "sign-bible-xki-ksl-passage-0",
-        "title": "KSL Passage #1 (Human KSL)",
-        "gloss": "KSL Passage #1",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-0.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-100",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-100.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Meanwhile, Joshua sent men from Jericho to Ai, which is near Beth-aven to the east of Bethel, and told them, “Go up and spy out the land.” So the men went up and spied out Ai. On returning to Joshua, they reported, “There is no need to send all the people; two or three thousand men are enough to go up and attack Ai. Si",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-1",
-        "title": "KSL Passage #2 (Human KSL)",
-        "gloss": "KSL Passage #2",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-1.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-101",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-101.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Meanwhile, Joshua sent men from Jericho to Ai, which is near Beth-aven to the east of Bethel, and told them, “Go up and spy out the land.” So the men went up and spied out Ai. On returning to Joshua, they reported, “There is no need to send all the people; two or three thousand men are enough to go up and attack Ai. Si",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-2",
-        "title": "KSL Passage #3 (Human KSL)",
-        "gloss": "KSL Passage #3",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-2.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-102",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-102.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now there was a man named Elkanah who was from Ramathaim-zophim in the hill country of Ephraim. He was the son of Jeroham, the son of Elihu, the son of Tohu, the son of Zuph, an Ephraimite. He had two wives, one named Hannah and the other Peninnah. And Peninnah had children, but Hannah had none. Year after year Elkanah",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-3",
-        "title": "KSL Passage #4 (Human KSL)",
-        "gloss": "KSL Passage #4",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-3.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-103",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-103.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now there was a man named Elkanah who was from Ramathaim-zophim in the hill country of Ephraim. He was the son of Jeroham, the son of Elihu, the son of Tohu, the son of Zuph, an Ephraimite. He had two wives, one named Hannah and the other Peninnah. And Peninnah had children, but Hannah had none. Year after year Elkanah",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-4",
-        "title": "KSL Passage #5 (Human KSL)",
-        "gloss": "KSL Passage #5",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-4.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-104",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-104.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now there was a man named Elkanah who was from Ramathaim-zophim in the hill country of Ephraim. He was the son of Jeroham, the son of Elihu, the son of Tohu, the son of Zuph, an Ephraimite. He had two wives, one named Hannah and the other Peninnah. And Peninnah had children, but Hannah had none. Year after year Elkanah",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-5",
-        "title": "KSL Passage #6 (Human KSL)",
-        "gloss": "KSL Passage #6",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-5.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-105",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-105.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "In the spring, at the time when kings march out to war, David sent out Joab and his servants with the whole army of Israel. They destroyed the Ammonites and besieged Rabbah, but David remained in Jerusalem. One evening David got up from his bed and strolled around on the roof of the palace. And from the roof he saw a w",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-6",
-        "title": "KSL Passage #7 (Human KSL)",
-        "gloss": "KSL Passage #7",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-6.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-106",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-106.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "In the spring, at the time when kings march out to war, David sent out Joab and his servants with the whole army of Israel. They destroyed the Ammonites and besieged Rabbah, but David remained in Jerusalem. One evening David got up from his bed and strolled around on the roof of the palace. And from the roof he saw a w",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-7",
-        "title": "KSL Passage #8 (Human KSL)",
-        "gloss": "KSL Passage #8",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-7.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-107",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-107.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-8",
-        "title": "KSL Passage #9 (Human KSL)",
-        "gloss": "KSL Passage #9",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-8.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-108",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-108.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-9",
-        "title": "KSL Passage #10 (Human KSL)",
-        "gloss": "KSL Passage #10",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-9.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-109",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-109.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-10",
-        "title": "KSL Passage #11 (Human KSL)",
-        "gloss": "KSL Passage #11",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-10.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-110",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-110.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-11",
-        "title": "KSL Passage #12 (Human KSL)",
-        "gloss": "KSL Passage #12",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-11.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-111",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-111.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now the king of Aram was at war against Israel. After consulting with his servants, he said, “My camp will be in such and such a place.” Then the man of God sent word to the king of Israel: “Be careful passing by this place, for the Arameans are going down there.” So the king of Israel sent word to the place the man of",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-12",
-        "title": "KSL Passage #13 (Human KSL)",
-        "gloss": "KSL Passage #13",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-12.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-112",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-112.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel. He grew up before Him like a tender shoot, and like a root out of dry ground. He had no stately form or majesty to attract us, no beauty that we should desire Him. He was desp",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-13",
-        "title": "KSL Passage #14 (Human KSL)",
-        "gloss": "KSL Passage #14",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-13.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-113",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-113.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel. He grew up before Him like a tender shoot, and like a root out of dry ground. He had no stately form or majesty to attract us, no beauty that we should desire Him. He was desp",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-14",
-        "title": "KSL Passage #15 (Human KSL)",
-        "gloss": "KSL Passage #15",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-14.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-114",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-114.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel. He grew up before Him like a tender shoot, and like a root out of dry ground. He had no stately form or majesty to attract us, no beauty that we should desire Him. He was desp",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-15",
-        "title": "KSL Passage #16 (Human KSL)",
-        "gloss": "KSL Passage #16",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-15.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-115",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-115.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel. He grew up before Him like a tender shoot, and like a root out of dry ground. He had no stately form or majesty to attract us, no beauty that we should desire Him. He was desp",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-16",
-        "title": "KSL Passage #17 (Human KSL)",
-        "gloss": "KSL Passage #17",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-16.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-116",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-116.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-17",
-        "title": "KSL Passage #18 (Human KSL)",
-        "gloss": "KSL Passage #18",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-17.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-117",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-117.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-18",
-        "title": "KSL Passage #19 (Human KSL)",
-        "gloss": "KSL Passage #19",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-18.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-118",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-118.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-19",
-        "title": "KSL Passage #20 (Human KSL)",
-        "gloss": "KSL Passage #20",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-19.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-119",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-119.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-20",
-        "title": "KSL Passage #21 (Human KSL)",
-        "gloss": "KSL Passage #21",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-20.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-120",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-120.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "King Nebuchadnezzar made a golden statue sixty cubits high and six cubits wide, and he set it up on the plain of Dura in the province of Babylon. Then King Nebuchadnezzar sent word to assemble the satraps, prefects, governors, advisers, treasurers, judges, magistrates, and all the other officials of the provinces to at",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-21",
-        "title": "KSL Passage #22 (Human KSL)",
-        "gloss": "KSL Passage #22",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-21.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-121",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-121.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-22",
-        "title": "KSL Passage #23 (Human KSL)",
-        "gloss": "KSL Passage #23",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-22.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-122",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-122.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-23",
-        "title": "KSL Passage #24 (Human KSL)",
-        "gloss": "KSL Passage #24",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-23.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-123",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-123.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-24",
-        "title": "KSL Passage #25 (Human KSL)",
-        "gloss": "KSL Passage #25",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-24.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-124",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-124.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-25",
-        "title": "KSL Passage #26 (Human KSL)",
-        "gloss": "KSL Passage #26",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-25.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-125",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-125.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Now it pleased Darius to appoint 120 satraps to rule throughout the kingdom, and over them three administrators, including Daniel, to whom these satraps were accountable so that the king would not suffer loss. Soon, by his extraordinary spirit, Daniel distinguished himself among the administrators and satraps. So the k",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-26",
-        "title": "KSL Passage #27 (Human KSL)",
-        "gloss": "KSL Passage #27",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-26.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-126",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-126.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "This is how the birth of Jesus Christ came about: His mother Mary was pledged in marriage to Joseph, but before they came together, she was found to be with child through the Holy Spirit. Because Joseph her husband was a righteous man and was unwilling to disgrace her publicly, he resolved to divorce her quietly. But a",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-27",
-        "title": "KSL Passage #28 (Human KSL)",
-        "gloss": "KSL Passage #28",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-27.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-127",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-127.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "This is how the birth of Jesus Christ came about: His mother Mary was pledged in marriage to Joseph, but before they came together, she was found to be with child through the Holy Spirit. Because Joseph her husband was a righteous man and was unwilling to disgrace her publicly, he resolved to divorce her quietly. But a",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-28",
-        "title": "KSL Passage #29 (Human KSL)",
-        "gloss": "KSL Passage #29",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-28.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-128",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-128.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "This is how the birth of Jesus Christ came about: His mother Mary was pledged in marriage to Joseph, but before they came together, she was found to be with child through the Holy Spirit. Because Joseph her husband was a righteous man and was unwilling to disgrace her publicly, he resolved to divorce her quietly. But a",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-29",
-        "title": "KSL Passage #30 (Human KSL)",
-        "gloss": "KSL Passage #30",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-29.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-129",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-129.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "This is how the birth of Jesus Christ came about: His mother Mary was pledged in marriage to Joseph, but before they came together, she was found to be with child through the Holy Spirit. Because Joseph her husband was a righteous man and was unwilling to disgrace her publicly, he resolved to divorce her quietly. But a",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-30",
-        "title": "KSL Passage #31 (Human KSL)",
-        "gloss": "KSL Passage #31",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-30.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-130",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-130.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-31",
-        "title": "KSL Passage #32 (Human KSL)",
-        "gloss": "KSL Passage #32",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-31.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-131",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-131.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-32",
-        "title": "KSL Passage #33 (Human KSL)",
-        "gloss": "KSL Passage #33",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-32.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-132",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-132.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-33",
-        "title": "KSL Passage #34 (Human KSL)",
-        "gloss": "KSL Passage #34",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-33.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-133",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-133.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-34",
-        "title": "KSL Passage #35 (Human KSL)",
-        "gloss": "KSL Passage #35",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-34.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-134",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-134.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "In those days John the Baptist came, preaching in the wilderness of Judea and saying, “Repent, for the kingdom of heaven is near.” This is he who was spoken of through the prophet Isaiah: “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’” John wore a garment of came",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-35",
-        "title": "KSL Passage #36 (Human KSL)",
-        "gloss": "KSL Passage #36",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-35.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-135",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-135.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Then Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry. The tempter came to Him and said, “If You are the Son of God, tell these stones to become bread.” But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on ever",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-36",
-        "title": "KSL Passage #37 (Human KSL)",
-        "gloss": "KSL Passage #37",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-36.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-136",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-136.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Then Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry. The tempter came to Him and said, “If You are the Son of God, tell these stones to become bread.” But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on ever",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-37",
-        "title": "KSL Passage #38 (Human KSL)",
-        "gloss": "KSL Passage #38",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-37.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-137",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-137.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Then Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry. The tempter came to Him and said, “If You are the Son of God, tell these stones to become bread.” But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on ever",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-38",
-        "title": "KSL Passage #39 (Human KSL)",
-        "gloss": "KSL Passage #39",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-38.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-138",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-138.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "Then Jesus was led by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry. The tempter came to Him and said, “If You are the Son of God, tell these stones to become bread.” But Jesus answered, “It is written: ‘Man shall not live on bread alone, but on ever",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
       },
       {
-        "id": "sign-bible-xki-ksl-passage-39",
-        "title": "KSL Passage #40 (Human KSL)",
-        "gloss": "KSL Passage #40",
-        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-ksl-passage-39.mp4",
+        "id": "sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-139",
+        "title": "chronological bible translation in kenyan sign l (Human KSL)",
+        "gloss": "chronological bible translation in kenyan sign l",
+        "videoUrl": "https://audio.kenyahub.me/ksl/human/sign-bible-xki-chronological-bible-translation-in-kenyan-sign-l-139.mp4",
         "category": "human-sign-bible",
         "register": "religious_liturgical",
-        "transcript": "",
+        "reference": "chronological bible translation in kenyan sign l",
+        "transcript": "The next day John saw Jesus coming toward him and said, “Look, the Lamb of God, who takes away the sin of the world! This is He of whom I said, ‘A man who comes after me has surpassed me because He was before me.’ I myself did not know Him, but the reason I came baptizing with water was that He might be revealed to Isr",
         "license": "CC-BY-SA-4.0",
         "source": "Open Sign Bibles (bible-nlp/sign-bibles)",
         "sourceUrl": "https://huggingface.co/datasets/bible-nlp/sign-bibles"
@@ -10142,7 +11272,7 @@
       "M537x543S14250507x458S14258462x513S2e800506x488S2e810487x489S2fc04496x527",
       "M532x519S10050467x489S26806482x481"
     ],
-    "videoCount": 99,
+    "videoCount": 1765,
     "extractedSignCount": 0,
     "glossCount": 0
   },

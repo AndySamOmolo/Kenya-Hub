@@ -4364,6 +4364,18 @@
           "english": "Wood",
           "translation": "ciṅ-ku",
           "context": "Sir Harry H. Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages (1919) — 7. Ki-guzii (Ki-suba or 'Kω-sωva')"
+        },
+        {
+          "english": "A. kedongensis (aloe)",
+          "translation": "omugaka",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. lateritia (aloe)",
+          "translation": "Omugaka",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
         }
       ]
     },
@@ -9057,5 +9069,5 @@
   "source": "DDD Kenya Ekegusii Intent & 470H ASR Corpora (CC-BY-4.0), Sunbird AI SALT-31 Ekegusii (CC-BY-4.0), CLDF ASJP v20 GUSII & BantuBVD (CC-BY-4.0) & Public Domain Historical Lexicons (Hobley 1902 & Johnston 1902, 1919–1922)",
   "isoCode": "guz",
   "glottocode": "gusi1247",
-  "totalEntries": 1586
+  "totalEntries": 1588
 }

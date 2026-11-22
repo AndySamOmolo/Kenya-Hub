@@ -1,33 +1,25 @@
 {
-  "ingestedAt": "2026-11-22T09:05:03.137113+00:00",
-  "scriptsHash": "",
+  "ingestedAt": "2026-11-22T11:13:38.869882+00:00",
+  "scriptsHash": "f152316371870b814e1b0cc04c38473c0ae49bba2d246fc8d99c77e9c88cb6c7",
   "bucket": "kenyahub-audio",
   "cdnBase": "https://audio.kenyahub.me",
-  "elapsedSeconds": 3379,
-  "textEntriesAddedByLanguage": {
-    "kikuyu": 0,
-    "luo": 0,
-    "borana": 0,
-    "swahili": 0,
-    "somali": 0,
-    "teso": 0,
-    "kamba": 0,
-    "meru": 0
-  },
+  "elapsedSeconds": 881,
+  "textEntriesAddedByLanguage": {},
   "uploadedAudioLanguageCounts": {
     "kikuyu": 450,
     "kamba": 449,
     "luo": 1174,
     "meru": 250,
     "somali": 685,
-    "swahili": 1485,
+    "swahili": 1816,
     "maasai": 0,
-    "borana": 392,
+    "borana": 459,
     "teso": 662,
     "luhya": 323,
-    "english-ke": 1
+    "english-ke": 214,
+    "kalenjin": 250
   },
-  "dictionaryEntriesLinked": 1779,
+  "dictionaryEntriesLinked": 2532,
   "pendingGatedDatasets": [
     "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H::default::kisii",
     "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H::default::kamba",
@@ -37,7 +29,10 @@
     "MCAA1-MSU/anv_data_ke::luo::luo",
     "MCAA1-MSU/anv_data_ke::maasai::maasai",
     "MCAA1-MSU/anv_data_ke::maasai::samburu",
-    "MCAA1-MSU/anv_data_ke::somali::somali"
+    "MCAA1-MSU/anv_data_ke::somali::somali",
+    "mozilla-data-collective/cv-27.0::dav::taita",
+    "mozilla-data-collective/cv-27.0::kln::kalenjin",
+    "mozilla-data-collective/cv-27.0::om::borana"
   ],
   "datasetStatus": {
     "google/WaxalNLP::swa_tts::swahili": {
@@ -167,53 +162,53 @@
       "updatedAt": "2026-11-19T15:33:58.584421+00:00"
     },
     "kln001/kalenjin-asr-data::default::kalenjin": {
-      "status": "pending_retry",
-      "clipsUploaded": 0,
+      "status": "completed",
+      "clipsUploaded": 250,
       "gated": true,
       "lang_id": "kalenjin",
-      "updatedAt": "2026-11-22T08:33:22.400506+00:00"
+      "updatedAt": "2026-11-22T10:59:43.908416+00:00"
     },
     "MCAA1-MSU/anv_data_ke::kalenjin::kalenjin": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kalenjin",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-22T08:31:29.187038+00:00"
+      "updatedAt": "2026-11-22T10:58:58.666936+00:00"
     },
     "MCAA1-MSU/anv_data_ke::maasai::maasai": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "maasai",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-22T08:31:29.353679+00:00"
+      "updatedAt": "2026-11-22T10:58:58.703831+00:00"
     },
     "MCAA1-MSU/anv_data_ke::somali::somali": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "somali",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-22T08:31:29.679823+00:00"
+      "updatedAt": "2026-11-22T10:58:58.779192+00:00"
     },
     "Digital-Divide-Data/Luhya-ASR-Data-subset-642H::default::luhya": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "luhya",
       "reason": "Dataset 'Digital-Divide-Data/Luhya-ASR-Data-subset-642H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Luhya-ASR-Data-subset-642H to ask for access.",
-      "updatedAt": "2026-11-22T08:33:22.645696+00:00"
+      "updatedAt": "2026-11-22T10:59:43.988027+00:00"
     },
     "Digital-Divide-Data/Kamba-ASR-Data-Subset-484H::default::kamba": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kamba",
       "reason": "Dataset 'Digital-Divide-Data/Kamba-ASR-Data-Subset-484H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Kamba-ASR-Data-Subset-484H to ask for access.",
-      "updatedAt": "2026-11-22T08:33:22.886558+00:00"
+      "updatedAt": "2026-11-22T10:59:44.065612+00:00"
     },
     "Digital-Divide-Data/Gusii-ASR-Data-Subset-470H::default::kisii": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "kisii",
       "reason": "Dataset 'Digital-Divide-Data/Gusii-ASR-Data-Subset-470H' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Digital-Divide-Data/Gusii-ASR-Data-Subset-470H to ask for access.",
-      "updatedAt": "2026-11-22T08:33:23.150907+00:00"
+      "updatedAt": "2026-11-22T10:59:44.143953+00:00"
     },
     "google/WaxalNLP::mas_asr::luhya": {
       "status": "completed",
@@ -248,28 +243,28 @@
       "gated": true,
       "lang_id": "kikuyu",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-22T08:31:28.867554+00:00"
+      "updatedAt": "2026-11-22T10:58:58.586076+00:00"
     },
     "MCAA1-MSU/anv_data_ke::luo::luo": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "luo",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-22T08:31:29.031901+00:00"
+      "updatedAt": "2026-11-22T10:58:58.623906+00:00"
     },
     "MCAA1-MSU/anv_data_ke::maasai::samburu": {
       "status": "pending_gated_approval",
       "gated": true,
       "lang_id": "samburu",
       "reason": "Dataset 'MCAA1-MSU/anv_data_ke' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/MCAA1-MSU/anv_data_ke to ask for access.",
-      "updatedAt": "2026-11-22T08:31:29.519343+00:00"
+      "updatedAt": "2026-11-22T10:58:58.740737+00:00"
     },
     "edinburghcstr/edacc::default::english-ke": {
-      "status": "pending_retry",
-      "clipsUploaded": 0,
+      "status": "completed",
+      "clipsUploaded": 250,
       "gated": false,
       "lang_id": "english-ke",
-      "updatedAt": "2026-11-22T08:35:53.816107+00:00"
+      "updatedAt": "2026-11-22T11:01:03.699416+00:00"
     },
     "mozilla-data-collective/cv-27.0::sw::swahili": {
       "status": "completed",
@@ -284,10 +279,10 @@
       "updatedAt": "2026-11-22T08:49:13.046109+00:00"
     },
     "mozilla-data-collective/cv-27.0::kln::kalenjin": {
-      "status": "pending_retry",
+      "status": "pending_rate_limited",
       "lang_id": "kalenjin",
-      "reason": "MDC HTTP 405 (ensure terms accepted on mozilladatacollective.com)",
-      "updatedAt": "2026-11-22T08:49:13.902639+00:00"
+      "reason": "MDC HTTP 429 (ensure terms accepted / daily 7-download quota on mozilladatacollective.com)",
+      "updatedAt": "2026-11-22T11:01:05.086525+00:00"
     },
     "mozilla-data-collective/cv-27.0::dav::taita": {
       "status": "pending_retry",
@@ -302,57 +297,57 @@
       "updatedAt": "2026-11-22T08:49:15.315962+00:00"
     },
     "wikimedia-commons/lingua-libre::swa::swahili": {
-      "status": "pending_retry",
-      "clipsUploaded": 0,
+      "status": "completed",
+      "clipsUploaded": 81,
       "lang_id": "swahili",
-      "updatedAt": "2026-11-22T08:49:15.441461+00:00"
+      "updatedAt": "2026-11-22T11:02:34.210815+00:00"
     },
     "openslr/slr25-alffa::sw::swahili": {
-      "status": "pending_retry",
-      "clipsUploaded": 0,
+      "status": "completed",
+      "clipsUploaded": 250,
       "lang_id": "swahili",
-      "updatedAt": "2026-11-22T09:04:47.086939+00:00"
+      "updatedAt": "2026-11-22T11:11:27.771742+00:00"
     },
     "mendeley/makerere-swahili-tts::sw::swahili": {
-      "status": "pending_retry",
+      "status": "completed_no_new_clips",
       "lang_id": "swahili",
-      "updatedAt": "2026-11-22T09:04:47.383532+00:00"
+      "updatedAt": "2026-11-22T11:11:28.709141+00:00"
     },
     "mendeley/rono-swahili-tts::sw::swahili": {
-      "status": "pending_retry",
+      "status": "completed_no_new_clips",
       "lang_id": "swahili",
-      "updatedAt": "2026-11-22T09:04:47.581278+00:00"
+      "updatedAt": "2026-11-22T11:11:29.761950+00:00"
     },
     "ksl/xki::metadata::ksl": {
       "status": "completed",
       "glossCount": 0,
       "zenodoFileCount": 1,
       "lang_id": "ksl",
-      "updatedAt": "2026-11-22T09:04:58.675750+00:00"
+      "updatedAt": "2026-11-22T11:13:33.382229+00:00"
     },
     "mozilla-data-collective/bibletts-luo-mdc::cmvi269po002607mi7oaodk1z::luo": {
-      "status": "pending_retry",
+      "status": "failed",
       "lang_id": "luo",
-      "reason": "MDC HTTP 405",
-      "updatedAt": "2026-11-22T09:04:49.155357+00:00"
+      "reason": "MDC HTTP 429",
+      "updatedAt": "2026-11-22T11:11:31.022042+00:00"
     },
     "wikimedia-commons/oromo-pronunciation::orm::borana": {
-      "status": "pending_retry",
+      "status": "completed",
+      "clipsUploaded": 67,
       "lang_id": "borana",
-      "reason": "Expecting value: line 1 column 1 (char 0)",
-      "updatedAt": "2026-11-22T09:04:52.929826+00:00"
+      "updatedAt": "2026-11-22T11:13:27.030709+00:00"
     },
     "tatoeba/audio::swh::swahili": {
       "status": "completed_no_new_clips",
       "clipsUploaded": 0,
       "lang_id": "swahili",
-      "updatedAt": "2026-11-22T09:04:57.923065+00:00"
+      "updatedAt": "2026-11-22T11:13:32.893148+00:00"
     },
     "tatoeba/audio::som::somali": {
       "status": "completed_no_new_clips",
       "clipsUploaded": 0,
       "lang_id": "somali",
-      "updatedAt": "2026-11-22T09:04:58.076781+00:00"
+      "updatedAt": "2026-11-22T11:13:32.991323+00:00"
     },
     "archive.org/handbook_kavirondo3_1203::luo::luo": {
       "status": "completed",

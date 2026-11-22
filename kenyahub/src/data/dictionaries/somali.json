@@ -7903,6 +7903,18 @@
           "translation": "as",
           "pronunciation": "",
           "context": "Larajasse (1897) Somali-English Dictionary (Berbera) · Larajasse (1897), Part I, p. 11 · Verbs (v.tr.) · https://archive.org/stream/cu31924026888820/cu31924026888820_djvu.txt"
+        },
+        {
+          "english": "A. lateritia (aloe)",
+          "translation": "warabe",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
+        },
+        {
+          "english": "A. secundiflora (aloe)",
+          "translation": "dahr",
+          "pronunciation": "",
+          "context": "Bjorå et al. (2015) Uses of Kenyan Aloes (PMC4658748, CC-BY-4.0, https://pmc.ncbi.nlm.nih.gov/articles/PMC4658748/) [Ethnobotany]"
         }
       ]
     },
@@ -117421,5 +117433,5 @@
   "source": "The Thiomi Dataset Somali (CC-BY-4.0), Google SMOL/GATITOS (en_som, CC-BY-4.0), African Next Voices Maxatire Somali (CC-BY-4.0), DDD Kenyan Somali (CC-BY-4.0), Language Science Press Somali & Marka Corpora (2016/2019, CC-BY-4.0), CLDF Tsammalex & ASJP v20 (CC-BY-4.0), Kaikki.org Somali (CC-BY-SA-4.0) & Public Domain & Peer-Reviewed Lexicons (de Larajasse 1897, Johnston 1902, Kirk 1903/1905, Nilsson 2016 & Kimper et al. 2019); Green & Smith (2024) LSP #427 Ch. 13 Kenyan Maay Tone, Di Maio (2023) Kenyan Maay Focus, & LSP #190/#96 Somali Studies (CC-BY-4.0); BFBS (1921) The Gospel in Many Tongues (Public Domain); Major H. Rayne (1921) Sun, Sand and Somals (Project Gutenberg #48598, US Public Domain, https://www.gutenberg.org/files/48598/48598-h/48598-h.htm)",
   "isoCode": "som",
   "glottocode": "soma1255",
-  "totalEntries": 20895
+  "totalEntries": 20897
 }
