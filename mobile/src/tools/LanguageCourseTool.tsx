@@ -126,11 +126,63 @@ export default function LanguageCourseTool({
   );
   const [kslTab, setKslTab] = useState<'all' | 'maseno-stickman' | 'human-sign-bible'>('all');
   const [kslSearchQuery, setKslSearchQuery] = useState<string>('');
+  const deferredKslSearchQuery = useDeferredValue(kslSearchQuery);
+  const [kslLetter, setKslLetter] = useState<string>('ALL');
+  const [kslPage, setKslPage] = useState<number>(1);
+  const kslWebViewRef = useRef<any>(null);
+  const allKslVideos = useMemo(() => {
+    const full = (kslIndexData as any)?.videos;
+    const list: {
+      id: string;
+      title: string;
+      gloss?: string;
+      videoUrl: string;
+      category?: string;
+      source?: string;
+      reference?: string;
+      transcript?: string;
+    }[] = Array.isArray(full) && full.length > 0 ? full : ((openCorpusIndex as any).ksl?.videos || []);
+    return list;
+  }, []);
+  const kslCategoryCounts = useMemo(() => {
+    let maseno = 0;
+    let human = 0;
+    for (const v of allKslVideos) {
+      if (v.category === 'maseno-stickman') maseno++;
+      else if (v.category === 'human-sign-bible') human++;
+    }
+    return { total: allKslVideos.length, maseno, human };
+  }, [allKslVideos]);
+  const kslAvailableLetters = useMemo(() => {
+    const set = new Set<string>();
+    for (const v of allKslVideos) {
+      if (kslTab !== 'all' && v.category !== kslTab) continue;
+      const ch = ((v.gloss || v.title || '').trim()[0] || '').toUpperCase();
+      if (ch >= 'A' && ch <= 'Z') set.add(ch);
+    }
+    return Array.from(set).sort();
+  }, [allKslVideos, kslTab]);
+  const filteredKslVideos = useMemo(() => {
+    const q = deferredKslSearchQuery.trim().toLowerCase();
+    return allKslVideos.filter((v) => {
+      if (kslTab !== 'all' && v.category !== kslTab) return false;
+      if (kslLetter !== 'ALL') {
+        const ch = ((v.gloss || v.title || '').trim()[0] || '').toUpperCase();
+        if (ch !== kslLetter) return false;
+      }
+      if (!q) return true;
+      return (
+        v.title.toLowerCase().includes(q) ||
+        (v.gloss || '').toLowerCase().includes(q) ||
+        (v.reference || '').toLowerCase().includes(q) ||
+        (v.transcript || '').toLowerCase().includes(q)
+      );
+    });
+  }, [allKslVideos, kslTab, kslLetter, deferredKslSearchQuery]);
   const [activeKslVideoId, setActiveKslVideoId] = useState<string>(
-    ((openCorpusIndex as any).ksl?.videos?.[0]?.id as string) || ''
+    ((kslIndexData as any)?.videos?.[0]?.id as string) || ((openCorpusIndex as any).ksl?.videos?.[0]?.id as string) || ''
   );
   const [kslPlaybackRate, setKslPlaybackRate] = useState<number>(1);
-  const [kslVisibleCount, setKslVisibleCount] = useState<number>(24);
   const [emergingSearchQuery, setEmergingSearchQuery] = useState<string>('');
   const [emergingVisibleCount, setEmergingVisibleCount] = useState<number>(30);
 
@@ -2521,40 +2573,27 @@ export default function LanguageCourseTool({
           })}
         </View>
 
-        {/* Kenyan Sign Language (KSL) — In-App Video Studio (1:1 Web Parity) */}
+        {/* Kenyan Sign Language (KSL) — Fast, Paginated In-App Video Studio */}
         {(() => {
-          const kslData = (openCorpusIndex as any).ksl || {};
-          const kslVideos: {
-            id: string;
-            title: string;
-            gloss?: string;
-            videoUrl: string;
-            category?: string;
-            source?: string;
-            reference?: string;
-            transcript?: string;
-          }[] = kslData.videos || [];
-          if (kslVideos.length === 0) return null;
-
-          const masenoCount = kslVideos.filter((v) => v.category === 'maseno-stickman').length;
-          const humanCount = kslVideos.filter((v) => v.category === 'human-sign-bible').length;
-          const q = kslSearchQuery.trim().toLowerCase();
-          const filteredKsl = kslVideos.filter((v) => {
-            if (kslTab !== 'all' && v.category !== kslTab) return false;
-            if (!q) return true;
-            return (
-              v.title.toLowerCase().includes(q) ||
-              (v.gloss || '').toLowerCase().includes(q) ||
-              (v.reference || '').toLowerCase().includes(q) ||
-              (v.transcript || '').toLowerCase().includes(q)
-            );
-          });
-          const activeKsl =
-            filteredKsl.find((v) => v.id === activeKslVideoId) || filteredKsl[0] || null;
+          if (allKslVideos.length === 0) return null;
+          const KSL_PAGE_SIZE = 15;
+          const totalPages = Math.max(1, Math.ceil(filteredKslVideos.length / KSL_PAGE_SIZE));
+          const safePage = Math.min(kslPage, totalPages);
+          const pageStart = (safePage - 1) * KSL_PAGE_SIZE;
+          const pageVideos = filteredKslVideos.slice(pageStart, pageStart + KSL_PAGE_SIZE);
+          const activeIdx = filteredKslVideos.findIndex((v) => v.id === activeKslVideoId);
+          const activeKsl = (activeIdx >= 0 ? filteredKslVideos[activeIdx] : filteredKslVideos[0]) || null;
           const safeVideoUrl = activeKsl ? activeKsl.videoUrl.replace(/["'<>]/g, '') : '';
           const playerHtml = activeKsl
             ? `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden}video{width:100%;height:100%;object-fit:contain;background:#000}</style></head><body><video id="v" src="${safeVideoUrl}" controls playsinline loop preload="metadata"></video><script>var v=document.getElementById('v');if(v){v.playbackRate=${kslPlaybackRate};v.addEventListener('loadedmetadata',function(){v.playbackRate=${kslPlaybackRate};});}</script></body></html>`
             : '';
+
+          const handleSpeedChange = (spd: number) => {
+            setKslPlaybackRate(spd);
+            try {
+              kslWebViewRef.current?.injectJavaScript(`var v=document.getElementById('v');if(v){v.playbackRate=${spd};}true;`);
+            } catch {}
+          };
 
           return (
             <View
@@ -2570,13 +2609,13 @@ export default function LanguageCourseTool({
             >
               <View style={{ gap: 2 }}>
                 <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.kenyaGreen, letterSpacing: 0.6 }}>
-                  KENYAN SIGN LANGUAGE (KSL · XKI)
+                  KENYAN SIGN LANGUAGE (KSL)
                 </Text>
                 <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 15, color: colors.text }}>
-                  In-App KSL Video Studio ({kslVideos.length} videos)
+                  In-App KSL Video Studio ({kslCategoryCounts.total.toLocaleString()} signs)
                 </Text>
                 <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 12, color: colors.textSecondary, lineHeight: 17 }}>
-                  Watch Maseno stickman signs and human KSL signers right inside the app with slow-motion controls and passage context.
+                  Browse KSL signs by letter, category, or search with instant slow-motion playback.
                 </Text>
               </View>
 
@@ -2584,9 +2623,9 @@ export default function LanguageCourseTool({
               <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
                 {(
                   [
-                    { id: 'all', label: `All (${kslVideos.length})` },
-                    { id: 'maseno-stickman', label: `Stickman (${masenoCount})` },
-                    { id: 'human-sign-bible', label: `Human KSL (${humanCount})` },
+                    { id: 'all', label: `All (${kslCategoryCounts.total})` },
+                    { id: 'maseno-stickman', label: `Sign Vocabulary (${kslCategoryCounts.maseno})` },
+                    { id: 'human-sign-bible', label: `Signed Passages (${kslCategoryCounts.human})` },
                   ] as const
                 ).map((t) => {
                   const isAct = kslTab === t.id;
@@ -2595,7 +2634,8 @@ export default function LanguageCourseTool({
                       key={t.id}
                       onPress={() => {
                         setKslTab(t.id);
-                        setKslVisibleCount(24);
+                        setKslLetter('ALL');
+                        setKslPage(1);
                       }}
                       style={{
                         paddingHorizontal: 10,
@@ -2614,14 +2654,14 @@ export default function LanguageCourseTool({
                 })}
               </View>
 
-              {/* Search KSL Signs */}
+              {/* Search KSL Signs (deferred for zero typing lag) */}
               <TextInput
                 value={kslSearchQuery}
                 onChangeText={(txt) => {
                   setKslSearchQuery(txt);
-                  setKslVisibleCount(24);
+                  setKslPage(1);
                 }}
-                placeholder="Search KSL signs, books, or passage context..."
+                placeholder="Search KSL signs, words, or passages..."
                 placeholderTextColor={colors.textMuted}
                 style={{
                   backgroundColor: colors.surface,
@@ -2636,12 +2676,45 @@ export default function LanguageCourseTool({
                 }}
               />
 
-              {/* In-App HTML5 Video Player */}
+              {/* Horizontal A-Z Quick-Jump Bar */}
+              {kslAvailableLetters.length > 1 && (
+                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 5, paddingVertical: 2 }}>
+                  {['ALL', ...kslAvailableLetters].map((ltr) => {
+                    const isAct = kslLetter === ltr;
+                    return (
+                      <Pressable
+                        key={ltr}
+                        onPress={() => {
+                          setKslLetter(ltr);
+                          setKslPage(1);
+                        }}
+                        style={{
+                          minWidth: ltr === 'ALL' ? 40 : 28,
+                          paddingHorizontal: 8,
+                          paddingVertical: 5,
+                          borderRadius: 8,
+                          alignItems: 'center',
+                          borderWidth: 1,
+                          borderColor: isAct ? colors.gold : colors.outlineVariant,
+                          backgroundColor: isAct ? `${colors.gold}22` : colors.surface,
+                        }}
+                      >
+                        <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: isAct ? colors.gold : colors.textSecondary }}>
+                          {ltr === 'ALL' ? 'All' : ltr}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </ScrollView>
+              )}
+
+              {/* In-App HTML5 Video Player (no WebView remount on speed change) */}
               {activeKsl && (
                 <View style={{ gap: 8, backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1, borderColor: colors.outlineVariant, padding: 10 }}>
                   <View style={{ height: 220, borderRadius: 10, overflow: 'hidden', backgroundColor: '#000000' }}>
                     <WebView
-                      key={`${activeKsl.id}-${kslPlaybackRate}`}
+                      ref={kslWebViewRef}
+                      key={activeKsl.id}
                       source={{ html: playerHtml, baseUrl: 'https://audio.kenyahub.me' }}
                       allowsInlineMediaPlayback
                       mediaPlaybackRequiresUserAction={false}
@@ -2658,18 +2731,34 @@ export default function LanguageCourseTool({
                         {activeKsl.title}
                       </Text>
                       <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11, color: colors.textMuted }}>
-                        {activeKsl.source || (activeKsl.category === 'maseno-stickman' ? 'Maseno University KSL' : 'Open Sign Bibles')}
+                        {activeKsl.source || (activeKsl.category === 'maseno-stickman' ? 'Maseno University KSL' : 'Signed Passages')}
                       </Text>
                     </View>
-                    <Pressable
-                      onPress={() => Linking.openURL(activeKsl.videoUrl).catch(() => {})}
-                      style={{ paddingHorizontal: 8, paddingVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant }}
-                    >
-                      <Feather name="external-link" size={14} color={colors.kenyaGreen} />
-                    </Pressable>
+                    <View style={{ flexDirection: 'row', gap: 6 }}>
+                      <Pressable
+                        disabled={activeIdx <= 0}
+                        onPress={() => {
+                          if (activeIdx > 0) setActiveKslVideoId(filteredKslVideos[activeIdx - 1].id);
+                        }}
+                        style={{ paddingHorizontal: 8, paddingVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, opacity: activeIdx <= 0 ? 0.4 : 1 }}
+                      >
+                        <Feather name="chevron-left" size={14} color={colors.text} />
+                      </Pressable>
+                      <Pressable
+                        disabled={activeIdx < 0 || activeIdx + 1 >= filteredKslVideos.length}
+                        onPress={() => {
+                          if (activeIdx >= 0 && activeIdx + 1 < filteredKslVideos.length) {
+                            setActiveKslVideoId(filteredKslVideos[activeIdx + 1].id);
+                          }
+                        }}
+                        style={{ paddingHorizontal: 8, paddingVertical: 5, borderRadius: 8, borderWidth: 1, borderColor: colors.outlineVariant, opacity: activeIdx < 0 || activeIdx + 1 >= filteredKslVideos.length ? 0.4 : 1 }}
+                      >
+                        <Feather name="chevron-right" size={14} color={colors.text} />
+                      </Pressable>
+                    </View>
                   </View>
 
-                  {/* Playback Speed Pills */}
+                  {/* Instant Playback Speed Pills */}
                   <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
                     <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.textMuted }}>Speed:</Text>
                     {[0.5, 0.75, 1].map((spd) => {
@@ -2677,7 +2766,7 @@ export default function LanguageCourseTool({
                       return (
                         <Pressable
                           key={spd}
-                          onPress={() => setKslPlaybackRate(spd)}
+                          onPress={() => handleSpeedChange(spd)}
                           style={{
                             paddingHorizontal: 9,
                             paddingVertical: 4,
@@ -2712,12 +2801,22 @@ export default function LanguageCourseTool({
                 </View>
               )}
 
-              {/* Full Browsable KSL Video List */}
+              {/* Fixed-Window Paginated KSL Video List (max 15 rows mounted -> 60fps zero lag) */}
               <View style={{ gap: 6 }}>
-                <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
-                  SHOWING {Math.min(kslVisibleCount, filteredKsl.length)} OF {filteredKsl.length} VIDEOS
-                </Text>
-                {filteredKsl.slice(0, kslVisibleCount).map((vid) => {
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 11, color: colors.textMuted }}>
+                    {filteredKslVideos.length === 0
+                      ? '0 MATCHING SIGNS'
+                      : `SHOWING ${pageStart + 1}–${Math.min(pageStart + KSL_PAGE_SIZE, filteredKslVideos.length)} OF ${filteredKslVideos.length}`}
+                  </Text>
+                  {totalPages > 1 && (
+                    <Text style={{ fontFamily: 'Inter_600SemiBold', fontSize: 11, color: colors.gold }}>
+                      Page {safePage} / {totalPages}
+                    </Text>
+                  )}
+                </View>
+
+                {pageVideos.map((vid) => {
                   const isPlaying = activeKsl?.id === vid.id;
                   return (
                     <Pressable
@@ -2741,53 +2840,47 @@ export default function LanguageCourseTool({
                           {vid.title}
                         </Text>
                         <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 10.5, color: colors.textMuted }}>
-                          {vid.category === 'maseno-stickman' ? 'Maseno Stickman Video' : (vid.reference ? `Human KSL · ${vid.reference}` : 'Human KSL Signer')}
+                          {vid.category === 'maseno-stickman' ? 'Sign Vocabulary' : (vid.reference ? `Signed Passage · ${vid.reference}` : 'Signed Passage')}
                         </Text>
-                        {Boolean(vid.transcript) && (
-                          <Text style={{ fontFamily: 'Inter_400Regular', fontSize: 11, color: colors.textSecondary, marginTop: 2 }} numberOfLines={2}>
-                            {vid.transcript}
-                          </Text>
-                        )}
                       </View>
                       <Feather name={isPlaying ? 'volume-2' : 'play-circle'} size={16} color={colors.kenyaGreen} />
                     </Pressable>
                   );
                 })}
 
-                {kslVisibleCount < filteredKsl.length && (
+                {totalPages > 1 && (
                   <View style={{ flexDirection: 'row', gap: 8, marginTop: 4 }}>
                     <Pressable
-                      onPress={() => setKslVisibleCount((c) => c + 30)}
+                      disabled={safePage <= 1}
+                      onPress={() => setKslPage((p) => Math.max(1, p - 1))}
                       style={{
                         flex: 1,
-                        alignItems: 'center',
-                        paddingVertical: 9,
-                        borderRadius: 10,
-                        borderWidth: 1,
-                        borderColor: colors.kenyaGreen,
-                        backgroundColor: `${colors.kenyaGreen}14`,
-                      }}
-                    >
-                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.kenyaGreen }}>
-                        Load 30 More ({filteredKsl.length - kslVisibleCount} left)
-                      </Text>
-                    </Pressable>
-                    <Pressable
-                      onPress={() => setKslVisibleCount(filteredKsl.length)}
-                      style={{
-                        paddingHorizontal: 14,
-                        alignItems: 'center',
-                        justifyContent: 'center',
                         paddingVertical: 9,
                         borderRadius: 10,
                         borderWidth: 1,
                         borderColor: colors.outlineVariant,
                         backgroundColor: colors.surface,
+                        alignItems: 'center',
+                        opacity: safePage <= 1 ? 0.4 : 1,
                       }}
                     >
-                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.text }}>
-                        Show All
-                      </Text>
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.text }}>← Previous</Text>
+                    </Pressable>
+                    <Pressable
+                      disabled={safePage >= totalPages}
+                      onPress={() => setKslPage((p) => Math.min(totalPages, p + 1))}
+                      style={{
+                        flex: 1,
+                        paddingVertical: 9,
+                        borderRadius: 10,
+                        borderWidth: 1,
+                        borderColor: colors.kenyaGreen,
+                        backgroundColor: `${colors.kenyaGreen}18`,
+                        alignItems: 'center',
+                        opacity: safePage >= totalPages ? 0.4 : 1,
+                      }}
+                    >
+                      <Text style={{ fontFamily: 'Inter_700Bold', fontSize: 12, color: colors.kenyaGreen }}>Next Page →</Text>
                     </Pressable>
                   </View>
                 )}

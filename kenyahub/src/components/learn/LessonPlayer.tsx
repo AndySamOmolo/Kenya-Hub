@@ -45,6 +45,7 @@ interface LessonPlayerProps {
   level: number;
   progress: UserProgress;
   languageName: string;
+  languageId?: string;
   onComplete: (result: LessonResult) => void;
   onQuit: () => void;
   reviewItems?: ReviewItem[];
@@ -56,6 +57,7 @@ export default function LessonPlayer({
   level,
   progress,
   languageName,
+  languageId,
   onComplete,
   onQuit,
   reviewItems = [],

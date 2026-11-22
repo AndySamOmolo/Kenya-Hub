@@ -48,8 +48,8 @@ if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(line_buffering=True)
 
 START_MONOTONIC = time.monotonic()
-GLOBAL_TIME_BUDGET_SEC = int(os.environ.get("GLOBAL_TIME_BUDGET_SEC") or str(45 * 60))
-PER_DATASET_TIMEOUT_SEC = int(os.environ.get("PER_DATASET_TIMEOUT_SEC") or "120")
+GLOBAL_TIME_BUDGET_SEC = int(os.environ.get("GLOBAL_TIME_BUDGET_SEC") or str(240 * 60))
+PER_DATASET_TIMEOUT_SEC = int(os.environ.get("PER_DATASET_TIMEOUT_SEC") or "900")
 
 ROOT_DIR = SCRIPT_DIR.parent
 DICT_DIR = ROOT_DIR / "src" / "data" / "dictionaries"
@@ -85,7 +85,10 @@ INCLUDE_KSL_METADATA = os.environ.get("INCLUDE_KSL_METADATA", "true").strip().lo
 HF_TOKEN = os.environ.get("HF_TOKEN", "").strip() or None
 MDC_API_KEY = os.environ.get("MDC_API_KEY", "").strip() or None
 ZENODO_TOKEN = os.environ.get("ZENODO_TOKEN", "").strip() or None
-MAX_CLIPS = int(os.environ.get("MAX_CLIPS_PER_DATASET") or "250")
+MAX_CLIPS = int(os.environ.get("MAX_CLIPS_PER_DATASET") or "0")
+
+def clip_cap_reached(count: int) -> bool:
+    return MAX_CLIPS > 0 and clip_cap_reached(count)
 MAX_TEXT_ROWS = int(os.environ.get("MAX_TEXT_ROWS_PER_DATASET") or "3000")
 
 HTTP_SESSION = requests.Session()
@@ -405,7 +408,7 @@ def ingest_thiomi_5k_parallel_text_and_audio(s3_client, uploaded_keys: dict, tex
                 for idx, row in enumerate(ds):
                     if (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded():
                         break
-                    if idx >= MAX_TEXT_ROWS and len(futures) >= MAX_CLIPS:
+                    if idx >= MAX_TEXT_ROWS and clip_cap_reached(len(futures)):
                         break
                     sid = str(row.get("sentenceId", "")).strip()
                     tr_txt = str(row.get("transcription", "")).strip()
@@ -570,7 +573,7 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
         rev = job.get("revision")
         decode_audio = job.get("decode_audio", False)
         row_filter = job.get("row_filter")
-        log(f"[HF Audio Stream] {repo} ({cfg}) -> {lang_id} (decode={decode_audio}, max {MAX_CLIPS} clips)...")
+        log(f"[HF Audio Stream] {repo} ({cfg}) -> {lang_id} (decode={decode_audio}, max {'unlimited' if MAX_CLIPS <= 0 else MAX_CLIPS} clips)...")
         ds_start = time.monotonic()
         try:
             try:
@@ -582,9 +585,11 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
                     raise
 
             futures = []
+            hit_budget = False
             with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
                 for idx, row in enumerate(ds):
-                    if len(futures) >= MAX_CLIPS or (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded() or R2_UPLOAD_DISABLED:
+                    if clip_cap_reached(len(futures)) or (time.monotonic() - ds_start) > PER_DATASET_TIMEOUT_SEC or global_budget_exceeded() or R2_UPLOAD_DISABLED:
+                        hit_budget = True
                         break
                     if row_filter:
                         col, expected = row_filter
@@ -632,13 +637,16 @@ def ingest_hf_streaming_audio(s3_client, uploaded_keys: dict, dataset_status: di
                         uploaded_keys.setdefault(lang_id, {})[s_key] = a_url
                         count += 1
 
+            prev_uploaded = int(dataset_status.get(job_key, {}).get("clipsUploaded") or 0)
             dataset_status[job_key] = {
-                "status": "completed" if count > 0 else "completed_no_new_clips",
-                "clipsUploaded": count,
+                "status": "in_progress" if hit_budget else ("completed" if (prev_uploaded + count) > 0 else "completed_no_new_clips"),
+                "clipsUploaded": prev_uploaded + count,
                 "gated": bool(job.get("gated")),
                 "lang_id": lang_id,
                 "updatedAt": datetime.now(timezone.utc).isoformat(),
             }
+            if count > 0:
+                AUDIO_INDEX_PATH.write_text(json.dumps(uploaded_keys, ensure_ascii=False, indent=2), encoding="utf-8")
             log(f"  -> Uploaded {count} Opus 24kbps clips for {lang_id} from {repo}/{cfg} in {int(time.monotonic() - ds_start)}s.")
         except Exception as exc:
             st = "pending_gated_approval" if (job.get("gated") or is_gated_error(exc)) else "failed"
@@ -729,7 +737,7 @@ def ingest_common_voice_27_mdc(s3_client, uploaded_keys: dict, dataset_status: d
                             if len(clip_map) >= MAX_CLIPS * 2:
                                 break
                         for m in tf.getmembers():
-                            if count >= MAX_CLIPS or global_budget_exceeded():
+                            if clip_cap_reached(count) or global_budget_exceeded():
                                 break
                             base = os.path.basename(m.name)
                             if base in clip_map:
@@ -768,7 +776,7 @@ def ingest_lingua_libre_commons(s3_client, uploaded_keys: dict, dataset_status: 
         members = resp.json().get("query", {}).get("categorymembers", [])
         count = 0
         for item in members:
-            if count >= MAX_CLIPS or global_budget_exceeded():
+            if clip_cap_reached(count) or global_budget_exceeded():
                 break
             title = item.get("title", "")
             m = re.search(r"LL-Q\d+[\s_]\(swa\)-[^-]+-(.+)\.(wav|ogg|flac|mp3)$", title, re.IGNORECASE)
@@ -818,7 +826,7 @@ def _ingest_tar_or_zip_audio(s3_client, uploaded_keys: dict, lang_id: str, archi
                         if len(parts) >= 2:
                             transcripts[Path(parts[0].strip()).stem] = parts[-1].strip()
             for name in zf.namelist():
-                if count >= MAX_CLIPS or global_budget_exceeded():
+                if clip_cap_reached(count) or global_budget_exceeded():
                     break
                 ext = Path(name).suffix.lower()
                 if ext not in audio_exts:
@@ -843,7 +851,7 @@ def _ingest_tar_or_zip_audio(s3_client, uploaded_keys: dict, lang_id: str, archi
                         if len(parts) == 2:
                             transcripts[Path(parts[0]).stem] = parts[1].strip()
             for m in members:
-                if count >= MAX_CLIPS or global_budget_exceeded():
+                if clip_cap_reached(count) or global_budget_exceeded():
                     break
                 if not m.isfile():
                     continue
@@ -1030,7 +1038,7 @@ def ingest_wikimedia_oromo_pronunciation(s3_client, uploaded_keys: dict, dataset
         members = resp.json().get("query", {}).get("categorymembers", [])
         count = 0
         for item in members:
-            if count >= MAX_CLIPS or global_budget_exceeded():
+            if clip_cap_reached(count) or global_budget_exceeded():
                 break
             title = item.get("title", "")
             m = re.search(r"File:(?:Om-|LL-Q\d+_\(orm\)-[^-]+-)?(.+)\.(ogg|wav|flac|mp3)$", title, re.IGNORECASE)
@@ -1105,7 +1113,7 @@ def ingest_tatoeba_filtered_audio(s3_client, uploaded_keys: dict, dataset_status
                     dataset_status[job_key] = {"status": "failed", "lang_id": lang_id, "reason": f"HTTP {s_resp.status_code}", "updatedAt": datetime.now(timezone.utc).isoformat()}
                     continue
                 for line in bz2.decompress(s_resp.content).decode("utf-8", errors="ignore").splitlines():
-                    if count >= MAX_CLIPS or global_budget_exceeded():
+                    if clip_cap_reached(count) or global_budget_exceeded():
                         break
                     parts = line.split("\t")
                     if len(parts) < 3 or parts[0] not in permissive_audio:

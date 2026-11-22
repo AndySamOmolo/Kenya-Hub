@@ -130,6 +130,12 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
 
   useEffect(() => {
     setRefTablePage(1);
+    if (typeof window !== "undefined") {
+      const tabParam = new URLSearchParams(window.location.search).get("tab");
+      if (tabParam === "listen-read" || tabParam === "flashcards" || tabParam === "grammar" || tabParam === "games" || tabParam === "proverbs") {
+        setView(tabParam);
+      }
+    }
   }, [languageId]);
 
   useEffect(() => {
@@ -771,6 +777,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
             level={activeLesson.level}
             progress={progress}
             languageName={course.config.name}
+            languageId={course.config.id}
             onComplete={handleLessonComplete}
             onQuit={handleQuitLesson}
             reviewItems={activeLesson.reviewItems}
@@ -813,11 +820,11 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
           <div className="flex flex-wrap items-center gap-2">
             {(
               [
-                { id: "all", label: "All Cards" },
-                ...(freqRankMap.size > 0 ? [{ id: "common", label: "Most Common" }] : []),
-                { id: "audio", label: "With Audio" },
-                { id: "nature", label: "Plants & Nature" },
-              ] as const
+                { id: "all" as const, label: "All Cards" },
+                ...(freqRankMap.size > 0 ? [{ id: "common" as const, label: "Most Common" }] : []),
+                { id: "audio" as const, label: "With Audio" },
+                { id: "nature" as const, label: "Plants & Nature" },
+              ] satisfies { id: "all" | "common" | "audio" | "nature"; label: string }[]
             ).map((f) => (
               <button
                 key={f.id}
@@ -909,7 +916,7 @@ export default function LanguageClientPage({ languageId }: { languageId: string 
                     hasVerifiedAudio({
                       translation: currentFlashcard.target,
                       audioFile: currentFlashcard.audioFile || currentFlashcard.audio,
-                    }) && (
+                    }, course.config.id) && (
                       <div className="pt-1 flex justify-center">
                         <button
                           type="button"

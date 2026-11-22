@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { BookOpen, Calendar, ExternalLink, Headphones, Pause, Play, Sparkles, Volume2 } from "lucide-react";
 import type { GrammarSection } from "@/data/courses/types";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 import { getLanguageOpenCorpus } from "@/lib/open-corpus";
+import { loadGrammarShard, type GrammarShard } from "@/lib/learning-shards";
 
 /**
  * Renders grammar section content supporting headings, bulleted/numbered lists,

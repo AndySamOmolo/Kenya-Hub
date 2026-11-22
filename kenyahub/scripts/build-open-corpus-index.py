@@ -202,9 +202,11 @@ def main() -> None:
         return reader_shards.setdefault(lid, {
             "languageId": lid,
             "stories": [],
+            "bilingualReadings": [],
             "sentences": [],
             "newsArticles": [],
             "externalLinks": [],
+            "chapterTranscripts": {},
         })
 
     def ensure_grammar_shard(lid: str) -> dict:
@@ -678,6 +680,30 @@ def main() -> None:
                 except Exception:
                     pass
 
+            elif "swahili-finetome" in stem_l:
+                rshard = ensure_reader_shard(target_lid)
+                added_bi = 0
+                try:
+                    with bf.open("r", encoding="utf-8", errors="ignore") as fh:
+                        for line in fh:
+                            if added_bi >= 40:
+                                break
+                            obj = json.loads(line)
+                            sw_q = " ".join(str(obj.get("instruction") or "").split())
+                            en_q = " ".join(str(obj.get("instruction_en") or "").split())
+                            sw_a = " ".join(str(obj.get("output") or "").split())
+                            en_a = " ".join(str(obj.get("output_en") or "").split())
+                            if 15 <= len(sw_q) <= 140 and 40 <= len(sw_a) <= 700 and en_a and "```" not in sw_a:
+                                rshard["bilingualReadings"].append({
+                                    "title": sw_q[:90],
+                                    "englishTitle": en_q[:90],
+                                    "text": sw_a,
+                                    "english": en_a[:750],
+                                })
+                                added_bi += 1
+                except Exception:
+                    pass
+
             if len(rec["sampleReadings"]) < 12 and any(k in stem_l for k in ("belebele", "xp3-ki", "zindi-swahili-news")):
                 seen_txt = {r["text"] for r in rec["sampleReadings"]}
                 src_label = "Reading Passage" if "belebele" in stem_l else ("Practice Sentence" if "xp3" in stem_l else "Swahili News")
@@ -768,10 +794,19 @@ def main() -> None:
                 "pageCount": cd.get("pageCount"),
             })
 
-    # 10. Dholuo 1920 Kavirondo Phrase Book Spoken Chapters
+    # 10. Dholuo 1920 Kavirondo Phrase Book Spoken Chapters (keep compact metadata in index, full phrases in readers/luo.json)
     dholuo_chapters = dholuo_ch_raw.get("chapters") or []
     if dholuo_chapters:
-        ensure_lang("luo")["audioChapters"] = dholuo_chapters
+        compact_chapters = []
+        luo_rshard = ensure_reader_shard("luo")
+        for ch in dholuo_chapters:
+            ch_copy = {k: v for k, v in ch.items() if k != "phrases"}
+            phrases = ch.get("phrases") or []
+            if phrases:
+                ch_copy["phraseCount"] = len(phrases)
+                luo_rshard["chapterTranscripts"][ch.get("id", "")] = phrases
+            compact_chapters.append(ch_copy)
+        ensure_lang("luo")["audioChapters"] = compact_chapters
 
     # 11. KSL (xki) video, storybook & pose index
     ksl_videos = ksl_raw.get("videos") or []
@@ -860,10 +895,10 @@ def main() -> None:
         _write_shard("audio", lid, {"languageId": lid, "total": len(clips), "clips": clips})
 
     for lid, rshard in reader_shards.items():
-        if rshard["stories"] or rshard["sentences"] or rshard["newsArticles"] or rshard["externalLinks"]:
+        if rshard["stories"] or rshard["bilingualReadings"] or rshard["sentences"] or rshard["newsArticles"] or rshard["externalLinks"] or rshard["chapterTranscripts"]:
             _write_shard("readers", lid, rshard)
             rec = ensure_lang(lid)
-            rec["shards"]["storiesCount"] = len(rshard["stories"])
+            rec["shards"]["storiesCount"] = len(rshard["stories"]) + len(rshard["bilingualReadings"])
             rec["shards"]["sentencesCount"] = len(rshard["sentences"])
             rec["shards"]["articlesCount"] = len(rshard["newsArticles"]) + len(rshard["externalLinks"])
 

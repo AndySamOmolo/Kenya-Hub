@@ -1,17 +1,22 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
+  Bookmark,
   BookOpen,
   CheckCircle2,
+  ChevronLeft,
+  ChevronRight,
   ExternalLink,
   Film,
+  Flame,
   Hand,
   HelpCircle,
   Pause,
   Play,
+  Repeat,
   RotateCcw,
   Search,
   Sparkles,
@@ -23,7 +28,7 @@ import {
   KSL_STARTER_SIGNS,
   type KslStarterSign,
 } from "@/data/ksl-starter";
-import { OPEN_CORPUS_INDEX, type KslVideoItem } from "@/lib/open-corpus";
+import { OPEN_CORPUS_INDEX, type KslStorybookItem, type KslVideoItem } from "@/lib/open-corpus";
 
 interface R2KslSignMeta {
   id: string;
@@ -208,7 +213,7 @@ function drawR2PoseFrame(
   });
 }
 
-type VideoFilterTab = "all" | "maseno-stickman" | "human-sign-bible";
+type VideoFilterTab = "all" | "maseno-stickman" | "human-sign-bible" | "saved";
 const VIDEOS_PER_PAGE = 40;
 
 export default function KslSignStudio() {
@@ -225,19 +230,57 @@ export default function KslSignStudio() {
   const [kslVideos, setKslVideos] = useState<KslVideoItem[]>(initialVideos);
   const [videoTab, setVideoTab] = useState<VideoFilterTab>("all");
   const [videoQuery, setVideoQuery] = useState("");
-  const [videoVisibleCount, setVideoVisibleCount] = useState(VIDEOS_PER_PAGE);
+  const deferredVideoQuery = useDeferredValue(videoQuery);
+  const [videoLetter, setVideoLetter] = useState<string>("ALL");
+  const [videoPage, setVideoPage] = useState<number>(1);
   const [activeVideoId, setActiveVideoId] = useState<string>(initialVideos[0]?.id ?? "");
   const [playbackRate, setPlaybackRate] = useState<number>(1);
+  const [loopVideo, setLoopVideo] = useState<boolean>(true);
+  const [savedVideoIds, setSavedVideoIds] = useState<string[]>([]);
+  const [kslStorybooks, setKslStorybooks] = useState<KslStorybookItem[]>(
+    (OPEN_CORPUS_INDEX.ksl?.storybooks ?? []) as KslStorybookItem[]
+  );
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const quizVideoRef = useRef<HTMLVideoElement | null>(null);
 
   const [r2Signs, setR2Signs] = useState<R2KslSignMeta[]>([]);
   const [activeR2Pose, setActiveR2Pose] = useState<R2PoseSequence | null>(null);
 
-  // Visual Quiz state
+  // Visual Quiz state (supports both Real KSL Video Quiz and Guided Skeleton Quiz)
+  const [quizMode, setQuizMode] = useState<"video" | "skeleton">(initialVideos.length >= 4 ? "video" : "skeleton");
   const [quizIdx, setQuizIdx] = useState(0);
   const [quizPicked, setQuizPicked] = useState<string | null>(null);
   const [quizScore, setQuizScore] = useState(0);
   const [quizTotal, setQuizTotal] = useState(0);
+  const [quizStreak, setQuizStreak] = useState(0);
+
+  // Interactive Word-to-Fingerspelling Speller state
+  const [spellInput, setSpellInput] = useState("JAMBO");
+  const [spellStep, setSpellStep] = useState(0);
+
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem("kenyahub_ksl_saved_v1");
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) setSavedVideoIds(parsed.filter((x): x is string => typeof x === "string"));
+      }
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  const toggleSaveVideo = (id: string) => {
+    setSavedVideoIds((prev) => {
+      const next = prev.includes(id) ? prev.filter((x) => x !== id) : [id, ...prev];
+      try {
+        window.localStorage.setItem("kenyahub_ksl_saved_v1", JSON.stringify(next));
+      } catch {
+        // ignore
+      }
+      return next;
+    });
+  };
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const rafRef = useRef<number | null>(null);
@@ -254,14 +297,33 @@ export default function KslSignStudio() {
         if (d && Array.isArray(d.signs)) {
           setR2Signs(d.signs as R2KslSignMeta[]);
         }
+        if (d && Array.isArray(d.storybooks) && d.storybooks.length > 0) {
+          setKslStorybooks(d.storybooks as KslStorybookItem[]);
+        }
       })
       .catch(() => {});
   }, []);
 
+  const availableVideoLetters = useMemo(() => {
+    const set = new Set<string>();
+    for (const v of kslVideos) {
+      if (videoTab === "saved" && !savedVideoIds.includes(v.id)) continue;
+      if (videoTab !== "all" && videoTab !== "saved" && v.category !== videoTab) continue;
+      const ch = ((v.gloss || v.title || "").trim()[0] || "").toUpperCase();
+      if (ch >= "A" && ch <= "Z") set.add(ch);
+    }
+    return Array.from(set).sort();
+  }, [kslVideos, videoTab, savedVideoIds]);
+
   const filteredVideos = useMemo(() => {
-    const q = videoQuery.trim().toLowerCase();
+    const q = deferredVideoQuery.trim().toLowerCase();
     return kslVideos.filter((v) => {
-      if (videoTab !== "all" && v.category !== videoTab) return false;
+      if (videoTab === "saved" && !savedVideoIds.includes(v.id)) return false;
+      if (videoTab !== "all" && videoTab !== "saved" && v.category !== videoTab) return false;
+      if (videoLetter !== "ALL") {
+        const ch = ((v.gloss || v.title || "").trim()[0] || "").toUpperCase();
+        if (ch !== videoLetter) return false;
+      }
       if (!q) return true;
       return (
         v.title.toLowerCase().includes(q) ||
@@ -270,7 +332,7 @@ export default function KslSignStudio() {
         (v.transcript ?? "").toLowerCase().includes(q)
       );
     });
-  }, [kslVideos, videoTab, videoQuery]);
+  }, [kslVideos, videoTab, videoLetter, deferredVideoQuery, savedVideoIds]);
 
   const activeVideo =
     filteredVideos.find((v) => v.id === activeVideoId) ?? filteredVideos[0] ?? null;
@@ -302,6 +364,30 @@ export default function KslSignStudio() {
     const pool = [quizSign, ...distractors];
     return pool.sort((a, b) => a.gloss.localeCompare(b.gloss));
   }, [quizIdx, quizSign]);
+
+  const quizVideoPool = useMemo(() => {
+    const clean = kslVideos.filter((v) => v.videoUrl && (v.gloss || v.title).trim().length >= 2);
+    const vocabFirst = clean.filter((v) => v.category === "maseno-stickman");
+    return vocabFirst.length >= 4 ? vocabFirst : clean;
+  }, [kslVideos]);
+
+  const activeQuizVideo = quizVideoPool.length > 0 ? quizVideoPool[quizIdx % quizVideoPool.length] : null;
+  const quizVideoOptions = useMemo(() => {
+    if (!activeQuizVideo || quizVideoPool.length < 4) return [];
+    const targetLabel = (activeQuizVideo.gloss || activeQuizVideo.title).trim();
+    const others = quizVideoPool.filter((v) => (v.gloss || v.title).trim().toLowerCase() !== targetLabel.toLowerCase());
+    const start = others.length > 3 ? (quizIdx * 5) % (others.length - 3) : 0;
+    const distractors = others.slice(start, start + 3);
+    return [activeQuizVideo, ...distractors].sort((a, b) =>
+      (a.gloss || a.title).localeCompare(b.gloss || b.title)
+    );
+  }, [activeQuizVideo, quizVideoPool, quizIdx]);
+
+  useEffect(() => {
+    if (quizVideoRef.current) {
+      quizVideoRef.current.playbackRate = playbackRate;
+    }
+  }, [playbackRate, activeQuizVideo?.id]);
 
   const loadR2Sign = async (meta: R2KslSignMeta) => {
     try {
@@ -358,8 +444,12 @@ export default function KslSignStudio() {
     if (quizPicked) return;
     setQuizPicked(pickedId);
     setQuizTotal((n) => n + 1);
-    if (pickedId === quizSign.id) {
+    const expectedId = quizMode === "video" && activeQuizVideo ? activeQuizVideo.id : quizSign.id;
+    if (pickedId === expectedId) {
       setQuizScore((s) => s + 1);
+      setQuizStreak((st) => st + 1);
+    } else {
+      setQuizStreak(0);
     }
   };
 
@@ -422,13 +512,14 @@ export default function KslSignStudio() {
                 { id: "all" as const, label: `All Videos (${kslVideos.length})` },
                 { id: "maseno-stickman" as const, label: `Sign Vocabulary (${masenoCount})` },
                 { id: "human-sign-bible" as const, label: `Signed Passages (${humanCount})` },
+                { id: "saved" as const, label: `Saved (${savedVideoIds.length})` },
               ].map((ft) => (
                 <button
                   key={ft.id}
                   type="button"
                   onClick={() => {
                     setVideoTab(ft.id);
-                    setVideoVisibleCount(VIDEOS_PER_PAGE);
+                    setVideoPage(1); setVideoLetter('ALL');
                   }}
                   className={`rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition-all cursor-pointer ${
                     videoTab === ft.id
@@ -447,13 +538,38 @@ export default function KslSignStudio() {
                 value={videoQuery}
                 onChange={(e) => {
                   setVideoQuery(e.target.value);
-                  setVideoVisibleCount(VIDEOS_PER_PAGE);
+                  setVideoPage(1);
                 }}
                 placeholder="Search KSL gloss, passage, transcript..."
                 className="w-full rounded-lg border border-border bg-bg-card pl-8 pr-3 py-1.5 text-xs text-text-primary placeholder:text-text-muted focus:outline-none focus:border-kenya-green"
               />
             </div>
           </div>
+
+          {availableVideoLetters.length > 1 && (
+            <div className="flex flex-wrap items-center gap-1">
+              {["ALL", ...availableVideoLetters].map((ltr) => {
+                const active = videoLetter === ltr;
+                return (
+                  <button
+                    key={ltr}
+                    type="button"
+                    onClick={() => {
+                      setVideoLetter(ltr);
+                      setVideoPage(1);
+                    }}
+                    className={`min-w-[28px] rounded-md border px-2 py-1 text-[11px] font-bold transition-colors cursor-pointer ${
+                      active
+                        ? "border-gold bg-gold/15 text-gold"
+                        : "border-border bg-bg-card text-text-secondary hover:border-gold/50 hover:text-text-primary"
+                    }`}
+                  >
+                    {ltr === "ALL" ? "All" : ltr}
+                  </button>
+                );
+              })}
+            </div>
+          )}
 
           {activeVideo ? (
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 rounded-2xl border border-kenya-green/30 bg-bg-card p-4">
@@ -464,7 +580,7 @@ export default function KslSignStudio() {
                   src={activeVideo.videoUrl}
                   controls
                   playsInline
-                  loop
+                  loop={loopVideo}
                   preload="metadata"
                   className="w-full max-h-96 rounded-xl bg-black object-contain"
                 />
@@ -480,8 +596,54 @@ export default function KslSignStudio() {
                       {activeVideo.source} <ExternalLink className="h-3 w-3" />
                     </a>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <span className="text-[0.68rem] text-text-muted mr-1">Speed:</span>
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <button
+                      type="button"
+                      onClick={() => toggleSaveVideo(activeVideo.id)}
+                      className={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[0.7rem] font-semibold cursor-pointer ${
+                        savedVideoIds.includes(activeVideo.id)
+                          ? "border-gold bg-gold/15 text-gold"
+                          : "border-border bg-bg-elevated text-text-secondary hover:text-gold"
+                      }`}
+                    >
+                      <Bookmark className="h-3 w-3" />
+                      {savedVideoIds.includes(activeVideo.id) ? "Saved" : "Save"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setLoopVideo((l) => !l)}
+                      className={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[0.7rem] font-semibold cursor-pointer ${
+                        loopVideo
+                          ? "border-kenya-green bg-kenya-green/15 text-kenya-green"
+                          : "border-border bg-bg-elevated text-text-secondary"
+                      }`}
+                    >
+                      <Repeat className="h-3 w-3" />
+                      Loop
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const idx = filteredVideos.findIndex((v) => v.id === activeVideo.id);
+                        if (idx > 0) setActiveVideoId(filteredVideos[idx - 1].id);
+                      }}
+                      className="rounded-md border border-border bg-bg-elevated p-1 text-text-secondary hover:text-gold cursor-pointer"
+                      aria-label="Previous sign video"
+                    >
+                      <ChevronLeft className="h-3.5 w-3.5" />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const idx = filteredVideos.findIndex((v) => v.id === activeVideo.id);
+                        if (idx >= 0 && idx + 1 < filteredVideos.length) setActiveVideoId(filteredVideos[idx + 1].id);
+                      }}
+                      className="rounded-md border border-border bg-bg-elevated p-1 text-text-secondary hover:text-gold cursor-pointer"
+                      aria-label="Next sign video"
+                    >
+                      <ChevronRight className="h-3.5 w-3.5" />
+                    </button>
+                    <span className="text-[0.68rem] text-text-muted ml-1 mr-0.5">Speed:</span>
                     {[0.5, 0.75, 1].map((spd) => (
                       <button
                         key={spd}
@@ -514,7 +676,9 @@ export default function KslSignStudio() {
 
               <div className="lg:col-span-5 flex flex-col max-h-[28rem]">
                 <div className="overflow-y-auto space-y-1.5 pr-1 flex-1">
-                  {filteredVideos.slice(0, videoVisibleCount).map((vid) => {
+                  {filteredVideos
+                    .slice((videoPage - 1) * VIDEOS_PER_PAGE, videoPage * VIDEOS_PER_PAGE)
+                    .map((vid) => {
                     const isCurrent = vid.id === activeVideo.id;
                     return (
                       <button
@@ -542,14 +706,26 @@ export default function KslSignStudio() {
                     );
                   })}
                 </div>
-                {videoVisibleCount < filteredVideos.length && (
-                  <div className="pt-2 flex gap-2 border-t border-border/60 mt-2">
+                {filteredVideos.length > VIDEOS_PER_PAGE && (
+                  <div className="pt-2 flex items-center justify-between gap-2 border-t border-border/60 mt-2 text-xs">
                     <button
                       type="button"
-                      onClick={() => setVideoVisibleCount((n) => n + VIDEOS_PER_PAGE)}
-                      className="flex-1 rounded-lg border border-kenya-green/40 bg-kenya-green/10 py-1.5 text-xs font-semibold text-kenya-green hover:bg-kenya-green/20 cursor-pointer"
+                      disabled={videoPage <= 1}
+                      onClick={() => setVideoPage((p) => Math.max(1, p - 1))}
+                      className="rounded-lg border border-border bg-bg-elevated px-3 py-1.5 font-semibold text-text-primary disabled:opacity-40 cursor-pointer"
                     >
-                      Load More ({Math.min(VIDEOS_PER_PAGE, filteredVideos.length - videoVisibleCount)} of {filteredVideos.length - videoVisibleCount} remaining)
+                      ← Prev
+                    </button>
+                    <span className="text-text-muted font-medium">
+                      Page {videoPage} of {Math.max(1, Math.ceil(filteredVideos.length / VIDEOS_PER_PAGE))}
+                    </span>
+                    <button
+                      type="button"
+                      disabled={videoPage * VIDEOS_PER_PAGE >= filteredVideos.length}
+                      onClick={() => setVideoPage((p) => p + 1)}
+                      className="rounded-lg border border-kenya-green/40 bg-kenya-green/10 px-3 py-1.5 font-semibold text-kenya-green disabled:opacity-40 cursor-pointer"
+                    >
+                      Next →
                     </button>
                   </div>
                 )}
@@ -712,45 +888,145 @@ export default function KslSignStudio() {
         </div>
       )}
 
-      {/* TAB 2: VISUAL SIGN QUIZ */}
+      {/* TAB 2: VISUAL SIGN QUIZ (Real KSL Video Quiz + Guided Skeleton Quiz) */}
       {tab === "quiz" && (
         <div className="max-w-xl mx-auto rounded-2xl border border-gold/25 bg-bg-card p-5 space-y-4">
-          <div className="flex items-center justify-between text-xs">
-            <span className="font-bold text-gold uppercase tracking-wider">Watch the Sign &amp; Match</span>
-            <span className="font-mono text-text-secondary">Score: {quizScore}/{quizTotal}</span>
-          </div>
-
-          <div className="rounded-xl border border-border bg-[#0b1120] p-2 flex items-center justify-center">
-            <canvas ref={canvasRef} width={340} height={260} className="w-full max-w-[340px] h-auto" />
-          </div>
-
-          <p className="text-xs text-text-muted text-center">
-            Cue: <strong className="text-text-secondary">{quizSign.handshape}</strong> · {quizSign.location}
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-            {quizOptions.map((opt) => {
-              const isCorrect = opt.id === quizSign.id;
-              const isPicked = quizPicked === opt.id;
-              let cls = "border-border bg-bg-elevated/60 text-text-primary hover:border-gold";
-              if (quizPicked) {
-                if (isCorrect) cls = "border-kenya-green bg-kenya-green/15 text-kenya-green";
-                else if (isPicked) cls = "border-kenya-red bg-kenya-red/15 text-kenya-red";
-              }
-              return (
+          <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+            <div className="flex items-center gap-1.5">
+              {quizVideoPool.length >= 4 && (
                 <button
-                  key={opt.id}
                   type="button"
-                  onClick={() => handleQuizAnswer(opt.id)}
-                  className={`rounded-xl border p-3 text-left text-xs font-bold flex items-center justify-between cursor-pointer ${cls}`}
+                  onClick={() => {
+                    setQuizMode("video");
+                    setQuizPicked(null);
+                  }}
+                  className={`rounded-lg border px-2.5 py-1 font-bold cursor-pointer ${
+                    quizMode === "video"
+                      ? "border-kenya-green bg-kenya-green/15 text-kenya-green"
+                      : "border-border bg-bg-elevated text-text-secondary"
+                  }`}
                 >
-                  <span>{opt.gloss}</span>
-                  {quizPicked && isCorrect && <CheckCircle2 className="h-4 w-4 shrink-0" />}
-                  {quizPicked && isPicked && !isCorrect && <XCircle className="h-4 w-4 shrink-0" />}
+                  Real Video Quiz ({quizVideoPool.length})
                 </button>
-              );
-            })}
+              )}
+              <button
+                type="button"
+                onClick={() => {
+                  setQuizMode("skeleton");
+                  setQuizPicked(null);
+                }}
+                className={`rounded-lg border px-2.5 py-1 font-bold cursor-pointer ${
+                  quizMode === "skeleton"
+                    ? "border-gold bg-gold/15 text-gold"
+                    : "border-border bg-bg-elevated text-text-secondary"
+                }`}
+              >
+                Guided Signs ({KSL_STARTER_SIGNS.length})
+              </button>
+            </div>
+            <div className="flex items-center gap-2 font-mono text-text-secondary">
+              {quizStreak >= 2 && (
+                <span className="inline-flex items-center gap-0.5 text-gold font-bold">
+                  <Flame className="h-3.5 w-3.5" /> {quizStreak}
+                </span>
+              )}
+              <span>Score: {quizScore}/{quizTotal}</span>
+            </div>
           </div>
+
+          {quizMode === "video" && activeQuizVideo && quizVideoOptions.length >= 4 ? (
+            <>
+              <div className="rounded-xl border border-border bg-black overflow-hidden">
+                <video
+                  ref={quizVideoRef}
+                  key={activeQuizVideo.id}
+                  src={activeQuizVideo.videoUrl}
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full max-h-72 object-contain"
+                />
+              </div>
+              <div className="flex items-center justify-between text-xs text-text-muted">
+                <span>Watch the KSL sign and pick the matching word:</span>
+                <div className="flex items-center gap-1">
+                  {[0.5, 0.75, 1].map((spd) => (
+                    <button
+                      key={spd}
+                      type="button"
+                      onClick={() => setPlaybackRate(spd)}
+                      className={`rounded border px-1.5 py-0.5 text-[10px] font-mono cursor-pointer ${
+                        playbackRate === spd
+                          ? "border-kenya-green bg-kenya-green/15 text-kenya-green font-bold"
+                          : "border-border bg-bg-elevated text-text-secondary"
+                      }`}
+                    >
+                      {spd}x
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {quizVideoOptions.map((opt) => {
+                  const isCorrect = opt.id === activeQuizVideo.id;
+                  const isPicked = quizPicked === opt.id;
+                  let cls = "border-border bg-bg-elevated/60 text-text-primary hover:border-gold";
+                  if (quizPicked) {
+                    if (isCorrect) cls = "border-kenya-green bg-kenya-green/15 text-kenya-green";
+                    else if (isPicked) cls = "border-kenya-red bg-kenya-red/15 text-kenya-red";
+                  }
+                  return (
+                    <button
+                      key={opt.id}
+                      type="button"
+                      onClick={() => handleQuizAnswer(opt.id)}
+                      className={`rounded-xl border p-3 text-left text-xs font-bold flex items-center justify-between cursor-pointer ${cls}`}
+                    >
+                      <span className="truncate">{opt.gloss || opt.title}</span>
+                      {quizPicked && isCorrect && <CheckCircle2 className="h-4 w-4 shrink-0" />}
+                      {quizPicked && isPicked && !isCorrect && <XCircle className="h-4 w-4 shrink-0" />}
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="rounded-xl border border-border bg-[#0b1120] p-2 flex items-center justify-center">
+                <canvas ref={canvasRef} width={340} height={260} className="w-full max-w-[340px] h-auto" />
+              </div>
+
+              <p className="text-xs text-text-muted text-center">
+                Cue: <strong className="text-text-secondary">{quizSign.handshape}</strong> · {quizSign.location}
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {quizOptions.map((opt) => {
+                  const isCorrect = opt.id === quizSign.id;
+                  const isPicked = quizPicked === opt.id;
+                  let cls = "border-border bg-bg-elevated/60 text-text-primary hover:border-gold";
+                  if (quizPicked) {
+                    if (isCorrect) cls = "border-kenya-green bg-kenya-green/15 text-kenya-green";
+                    else if (isPicked) cls = "border-kenya-red bg-kenya-red/15 text-kenya-red";
+                  }
+                  return (
+                    <button
+                      key={opt.id}
+                      type="button"
+                      onClick={() => handleQuizAnswer(opt.id)}
+                      className={`rounded-xl border p-3 text-left text-xs font-bold flex items-center justify-between cursor-pointer ${cls}`}
+                    >
+                      <span>{opt.gloss}</span>
+                      {quizPicked && isCorrect && <CheckCircle2 className="h-4 w-4 shrink-0" />}
+                      {quizPicked && isPicked && !isCorrect && <XCircle className="h-4 w-4 shrink-0" />}
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
 
           {quizPicked && (
             <button
@@ -768,9 +1044,71 @@ export default function KslSignStudio() {
         </div>
       )}
 
-      {/* TAB 3: MANUAL ALPHABET A-Z */}
+      {/* TAB 3: MANUAL ALPHABET A-Z + INTERACTIVE WORD SPELLER */}
       {tab === "alphabet" && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+        <div className="space-y-4">
+          <div className="rounded-2xl border border-gold/25 bg-bg-card p-4 space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 className="text-sm font-bold text-text-primary">Practice Fingerspelling Any Name or Word</h3>
+                <p className="text-xs text-text-muted">Type a word (e.g. NAIROBI, JAMBO, or your name) to see each KSL handshape step by step.</p>
+              </div>
+              <input
+                type="text"
+                value={spellInput}
+                onChange={(e) => {
+                  setSpellInput(e.target.value.replace(/[^a-zA-Z\s]/g, "").slice(0, 24));
+                  setSpellStep(0);
+                }}
+                placeholder="Type a word..."
+                className="w-full sm:w-56 rounded-xl border border-border bg-bg-elevated px-3 py-1.5 text-sm font-bold uppercase tracking-wider text-gold focus:border-gold focus:outline-none"
+              />
+            </div>
+            {(() => {
+              const letters = spellInput.toUpperCase().split("").filter((ch) => /[A-Z]/.test(ch));
+              const safeIdx = letters.length > 0 ? Math.min(spellStep, letters.length - 1) : 0;
+              const activeLetter = letters[safeIdx];
+              const cueObj = KSL_ALPHABET.find((a) => a.letter === activeLetter);
+              if (letters.length === 0) return null;
+              return (
+                <div className="space-y-2.5">
+                  <div className="flex flex-wrap gap-1.5">
+                    {letters.map((ch, idx) => (
+                      <button
+                        key={`${ch}-${idx}`}
+                        type="button"
+                        onClick={() => setSpellStep(idx)}
+                        className={`h-9 w-9 rounded-lg border font-bold text-sm transition-all cursor-pointer ${
+                          idx === safeIdx
+                            ? "border-gold bg-gold text-black scale-105"
+                            : "border-border bg-bg-elevated text-text-primary hover:border-gold/60"
+                        }`}
+                      >
+                        {ch}
+                      </button>
+                    ))}
+                  </div>
+                  {cueObj && (
+                    <div className="rounded-xl border border-border bg-bg-elevated/60 p-3 flex items-center justify-between gap-3">
+                      <div className="text-xs">
+                        <span className="font-bold text-gold">Letter {cueObj.letter}:</span>{" "}
+                        <span className="text-text-secondary">{cueObj.cue}</span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => setSpellStep((i) => (i + 1) % letters.length)}
+                        className="shrink-0 rounded-lg border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-bold text-gold hover:bg-gold/20 cursor-pointer"
+                      >
+                        Next Letter →
+                      </button>
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
           {KSL_ALPHABET.map((item) => (
             <div key={item.letter} className="rounded-xl border border-border bg-bg-card p-3 flex items-start gap-3">
               <div className="h-9 w-9 rounded-lg bg-gold/15 border border-gold/30 flex items-center justify-center font-bold text-gold shrink-0">
@@ -779,18 +1117,43 @@ export default function KslSignStudio() {
               <p className="text-xs text-text-secondary leading-relaxed">{item.cue}</p>
             </div>
           ))}
+          </div>
         </div>
       )}
 
-      {/* TAB 4: GRAMMAR & DEAF CULTURE */}
+      {/* TAB 4: GRAMMAR, STORYBOOKS & DEAF CULTURE */}
       {tab === "grammar" && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {KSL_GRAMMAR_NOTES.map((note) => (
-            <div key={note.title} className="rounded-2xl border border-border bg-bg-card p-4 space-y-2">
-              <h3 className="text-sm font-bold text-gold font-[family-name:var(--font-outfit)]">{note.title}</h3>
-              <p className="text-xs text-text-secondary leading-relaxed">{note.body}</p>
+        <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {KSL_GRAMMAR_NOTES.map((note) => (
+              <div key={note.title} className="rounded-2xl border border-border bg-bg-card p-4 space-y-2">
+                <h3 className="text-sm font-bold text-gold font-[family-name:var(--font-outfit)]">{note.title}</h3>
+                <p className="text-xs text-text-secondary leading-relaxed">{note.body}</p>
+              </div>
+            ))}
+          </div>
+          {kslStorybooks.length > 0 && (
+            <div className="rounded-2xl border border-kenya-green/30 bg-bg-card p-4 space-y-3">
+              <h3 className="text-sm font-bold text-kenya-green">Kenyan Sign Language Storybooks</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {kslStorybooks.map((sb) => (
+                  <a
+                    key={sb.id}
+                    href={sb.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-xl border border-border bg-bg-elevated/50 p-3 hover:border-kenya-green/60 transition-colors space-y-1"
+                  >
+                    <p className="text-xs font-bold text-text-primary flex items-center justify-between gap-2">
+                      <span>{sb.title}</span>
+                      <ExternalLink className="h-3 w-3 text-gold shrink-0" />
+                    </p>
+                    <p className="text-[11px] text-text-secondary line-clamp-2">{sb.description}</p>
+                  </a>
+                ))}
+              </div>
             </div>
-          ))}
+          )}
         </div>
       )}
     </div>

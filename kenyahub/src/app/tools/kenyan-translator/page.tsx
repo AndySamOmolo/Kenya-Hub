@@ -8,7 +8,7 @@ import { useState, useMemo, useCallback, useEffect, useDeferredValue } from "rea
 import ToolShell, { type RichGuideEntry } from "@/components/tools/ToolShell";
 import { TOOLS } from "@/lib/tools-registry";
 import CustomSelect from "@/components/ui/CustomSelect";
-import { BarChart, BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight, Volume2 } from "lucide-react";
+import { BookOpen, Dices, Folder, Hash, Plus, X, Check, Send, ArrowRight, ChevronLeft, ChevronRight, Volume2 } from "lucide-react";
 
 import {
   ALL_DICT_METAS,
@@ -17,12 +17,12 @@ import {
   TOTAL_DICTIONARY_ENTRIES,
   INITIAL_RANDOM_WORDS,
   type DictEntry,
-  type DictCategory,
   type Dictionary,
 } from "@/data/dictionaries/metadata";
 import { getLanguageIdentity } from "@/data/language-identity";
 import { addContribution, subscribeContributions } from "@/lib/contributions";
-import { playLanguageAudio, hasVerifiedAudio } from "@/lib/language-audio";
+import { playLanguageAudio, hasVerifiedAudio, preloadLanguageAudioIndex } from "@/lib/language-audio";
+import { OPEN_CORPUS_INDEX } from "@/lib/open-corpus";
 import { renderInlineMarkdown } from "@/lib/render-markdown";
 import { scrollToTopIfScrolled, scrollToSectionIfNeeded } from "@/lib/scroll";
 import {
@@ -37,7 +37,6 @@ import {
   CATEGORY_PAGE_SIZE,
   SEARCH_PAGE_SIZE,
   CONTACT_EMAIL,
-  COMING_SOON_LANGUAGES,
   ALL_CONTRIBUTE_LANGUAGES,
   TRANSLATOR_FAQ as faq,
   DICT_CACHE,
@@ -64,6 +63,7 @@ export default function KenyanTranslatorPage() {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [loadedDicts, setLoadedDicts] = useState<Record<string, Dictionary>>(() => ({ ...DICT_CACHE }));
   const [isLoadingDicts, setIsLoadingDicts] = useState(false);
+  const [audioIndexTick, setAudioIndexTick] = useState(0);
 
   // ─── Contribute Modal State ───
   const [isContributeOpen, setIsContributeOpen] = useState(false);
@@ -138,8 +138,14 @@ export default function KenyanTranslatorPage() {
 
   useEffect(() => {
     setSearchPage(1);
-    if (targetLang && targetLang !== 'english') preloadLanguageAudioIndex(targetLang);
-    if (sourceLang && sourceLang !== 'english') preloadLanguageAudioIndex(sourceLang);
+    const r2Langs = Object.values(OPEN_CORPUS_INDEX.languages).filter((l) => (l.r2AudioClips ?? 0) > 0).map((l) => l.languageId);
+    const toPreload =
+      targetLanguage === "all"
+        ? r2Langs
+        : [targetLanguage, sourceLanguage].filter((l) => l && l !== "english" && l !== "all");
+    Promise.all(toPreload.map((l) => preloadLanguageAudioIndex(l))).then((counts) => {
+      if (counts.some((c) => c > 0)) setAudioIndexTick((t) => t + 1);
+    });
   }, [searchQuery, sourceLanguage, targetLanguage]);
 
   const openContributeModal = useCallback((langName?: string, defaultEnglish?: string) => {
@@ -379,12 +385,12 @@ export default function KenyanTranslatorPage() {
   }, [searchResults]);
 
   const audioSearchCount = useMemo(
-    () => dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry)).length,
-    [dedupedSearchResults]
+    () => { void audioIndexTick; return dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry, r.languageId)).length; },
+    [dedupedSearchResults, audioIndexTick]
   );
 
   const filteredSearchResults = useMemo(
-    () => (audioOnly ? dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry)) : dedupedSearchResults),
+    () => { void audioIndexTick; return audioOnly ? dedupedSearchResults.filter((r) => hasVerifiedAudio(r.entry, r.languageId)) : dedupedSearchResults; },
     [dedupedSearchResults, audioOnly]
   );
 
@@ -409,7 +415,7 @@ export default function KenyanTranslatorPage() {
     const list: DictEntry[] = [];
     for (const c of browseDict.categories) {
       for (const e of c.entries) {
-        if (!hasVerifiedAudio(e)) continue;
+        if (!hasVerifiedAudio(e, browseDict.languageId)) continue;
         const k = `${e.english.trim().toLowerCase()}|${e.translation.trim().toLowerCase()}`;
         if (seen.has(k)) continue;
         seen.add(k);
@@ -556,12 +562,12 @@ export default function KenyanTranslatorPage() {
                 <span className="text-gold font-medium">{randomWord.entry.translation}</span>
                 <span className="text-text-muted"> — {randomWord.langName}</span>
               </p>
-              {(randomWord.entry.pronunciation || hasVerifiedAudio(randomWord.entry)) && (
+              {(randomWord.entry.pronunciation || hasVerifiedAudio(randomWord.entry, randomWord.langId)) && (
                 <div className="flex items-center gap-2 mt-0.5 flex-wrap">
                   {randomWord.entry.pronunciation && (
                     <p className="text-[0.65rem] text-text-muted italic">/{randomWord.entry.pronunciation}/</p>
                   )}
-                  {hasVerifiedAudio(randomWord.entry) && (
+                  {hasVerifiedAudio(randomWord.entry, randomWord.langId) && (
                     <button
                       type="button"
                       onClick={() => playAudio(randomWord.entry, randomWord.langId)}
@@ -865,7 +871,7 @@ export default function KenyanTranslatorPage() {
                                           {result.entry.pronunciation && (
                                             <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
                                           )}
-                                          {hasVerifiedAudio(result.entry) && (
+                                          {hasVerifiedAudio(result.entry, result.languageId) && (
                                             <button
                                               type="button"
                                               onClick={() => playAudio(result.entry, result.languageId)}
@@ -896,7 +902,7 @@ export default function KenyanTranslatorPage() {
                                           {result.entry.pronunciation && (
                                             <p className="text-[0.65rem] text-text-muted italic">/{result.entry.pronunciation}/</p>
                                           )}
-                                          {hasVerifiedAudio(result.entry) && (
+                                          {hasVerifiedAudio(result.entry, result.languageId) && (
                                             <button
                                               type="button"
                                               onClick={() => playAudio(result.entry, result.languageId)}
@@ -1084,7 +1090,7 @@ export default function KenyanTranslatorPage() {
                                           {entry.pronunciation && (
                                             <p className="text-[0.75rem] text-text-muted italic break-words">/{entry.pronunciation}/</p>
                                           )}
-                                          {hasVerifiedAudio(entry) && (
+                                          {hasVerifiedAudio(entry, browseDict.languageId) && (
                                             <button
                                               type="button"
                                               onClick={() => playAudio(entry, browseDict.languageId)}
@@ -1325,7 +1331,7 @@ export default function KenyanTranslatorPage() {
                           {item.entry.pronunciation && (
                             <p className="text-[0.65rem] text-text-muted italic">/{item.entry.pronunciation}/</p>
                           )}
-                          {hasVerifiedAudio(item.entry) && (
+                          {hasVerifiedAudio(item.entry, item.languageId) && (
                             <button
                               type="button"
                               onClick={() => playAudio(item.entry, item.languageId)}

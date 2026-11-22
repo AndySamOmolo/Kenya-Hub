@@ -11,7 +11,7 @@ on:
       max_clips_per_dataset:
         description: "Maximum audio clips to transcode & upload per dataset split (default 250)"
         required: false
-        default: "250"
+        default: "0"
         type: string
       retry_pending_only:
         description: "Skip already-completed datasets and only retry pending gated/failed ones"
@@ -76,7 +76,7 @@ jobs:
   ingest-datasets:
     name: Stream Open-Access Text, CLDF, KSL & Audio Datasets -> Repo & Cloudflare R2
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 330
     permissions:
       contents: write
 
@@ -198,7 +198,7 @@ jobs:
           HF_DATASETS_TRUST_REMOTE_CODE: "1"
           MDC_API_KEY: ${{ secrets.MDC_API_KEY }}
           ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
-          MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '250' }}
+          MAX_CLIPS_PER_DATASET: ${{ inputs.max_clips_per_dataset || '0' }}
           ONLY_UNGATED: ${{ inputs.only_ungated || 'false' }}
           FORCE_REINGEST: ${{ inputs.force_reingest || 'false' }}
           RETRY_PENDING_ONLY: ${{ inputs.retry_pending_only || 'true' }}
@@ -208,8 +208,8 @@ jobs:
           MAX_KSL_MASENO_VIDEOS: "0"
           MAX_KSL_HUMAN_VIDEOS: "0"
           KSL_TIME_BUDGET_SEC: "3600"
-          PER_DATASET_TIMEOUT_SEC: "150"
-          GLOBAL_TIME_BUDGET_SEC: "4800"
+          PER_DATASET_TIMEOUT_SEC: "900"
+          GLOBAL_TIME_BUDGET_SEC: "14400"
           INGESTION_SCRIPTS_HASH: ${{ steps.lock_check.outputs.scripts_hash }}
           R2_READY: ${{ steps.secrets_check.outputs.r2_ready }}
         run: |

@@ -39,12 +39,26 @@ export interface ReaderExternalLink {
   source: string;
 }
 
+export interface BilingualReadingItem {
+  title: string;
+  englishTitle?: string;
+  text: string;
+  english: string;
+}
+
+export interface ChapterTranscriptPhrase {
+  english: string;
+  dholuo: string;
+}
+
 export interface ReadersShard {
   languageId: string;
   stories: ReaderStory[];
+  bilingualReadings?: BilingualReadingItem[];
   sentences: ReaderSentence[];
   newsArticles: ReaderNewsArticle[];
   externalLinks: ReaderExternalLink[];
+  chapterTranscripts?: Record<string, ChapterTranscriptPhrase[]>;
 }
 
 export interface QuizQuestionItem {
