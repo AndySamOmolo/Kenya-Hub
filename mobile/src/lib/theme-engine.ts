@@ -2380,11 +2380,11 @@ export function resolveThemeColors(
   if (config.readingTint && config.readingTint !== "none") {
     const tintTarget =
       config.readingTint === "warm-paper"
-        ? isDark ? "#2A1F14" : "#F6EBD8"
+        ? resolvedIsDark ? "#2A1F14" : "#F6EBD8"
         : config.readingTint === "soft-sepia"
-        ? isDark ? "#2E2216" : "#EFE2C6"
-        : isDark ? "#111A26" : "#EBF2F7";
-    const tintAmt = isDark ? 0.16 : 0.22;
+        ? resolvedIsDark ? "#2E2216" : "#EFE2C6"
+        : resolvedIsDark ? "#111A26" : "#EBF2F7";
+    const tintAmt = resolvedIsDark ? 0.16 : 0.22;
     resolved.bgPrimary = mixHex(resolved.bgPrimary, tintTarget, tintAmt);
     resolved.bgSecondary = mixHex(resolved.bgSecondary, tintTarget, tintAmt);
     resolved.bgCard = mixHex(resolved.bgCard, tintTarget, tintAmt * 0.7);
@@ -2392,7 +2392,7 @@ export function resolveThemeColors(
     resolved.surfaceContainer = mixHex(resolved.surfaceContainer, tintTarget, tintAmt * 0.85);
   }
 
-  if (isDark && config.oledBlack) {
+  if (resolvedIsDark && config.oledBlack) {
     resolved.bgPrimary = "#000000";
     resolved.surfaceContainerLowest = "#000000";
     resolved.bgSecondary = "#070707";
@@ -2407,9 +2407,9 @@ export function resolveThemeColors(
     const adjustAccent = (hex: string): string => {
       if (!isValidHexColor(hex)) return hex;
       if (config.accentIntensity === "muted") {
-        return mixHex(hex, isDark ? "#888888" : "#777777", 0.24);
+        return mixHex(hex, resolvedIsDark ? "#888888" : "#777777", 0.24);
       }
-      return mixHex(hex, isDark ? "#FFFFFF" : "#000000", 0.10);
+      return mixHex(hex, resolvedIsDark ? "#FFFFFF" : "#000000", 0.10);
     };
     resolved.gold = adjustAccent(resolved.gold);
     resolved.goldLight = adjustAccent(resolved.goldLight);
